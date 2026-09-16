@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Hızlı Bakış · Onkoloji · Deneme bölümü</title>
+<link rel="stylesheet" href="../sablon/hizli-bakis.css">
+<style>
+/* bu bölüme özgü şekiller */
+.agac { margin-bottom: 4.5mm; }
+.agac .kok { background: var(--murekkep); color: #fff; padding: 2.4mm 4mm; text-align: center; width: 100mm; margin: 0 auto; }
+.agac .kok b { display: block; font: 700 10pt/1.2 var(--serif); }
+.agac .kok span { font-size: 7.2pt; opacity: .8; }
+.agac .test { width: 62mm; margin: 0 auto; text-align: center; border: .8pt solid var(--murekkep); padding: 1.6mm; font: 600 7.4pt/1.2 var(--dar); letter-spacing: .06em; text-transform: uppercase; position: relative; background: #fff; }
+.agac .dikey { width: .8pt; height: 3mm; background: var(--murekkep); margin: 0 auto; }
+.agac .catal { height: 4mm; margin: 0 44mm; border: .8pt solid var(--murekkep); border-bottom: 0; }
+.agac .dallar { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+.dal { border-top: 2.2mm solid var(--brans); background: var(--brans-acik); padding: 2.6mm 3mm 2.4mm; }
+.dal.yikim { border-top-color: #56687A; background: #EBEFF3; }
+.dal .dal-ad { font: 700 7pt/1.2 var(--dar); letter-spacing: .1em; text-transform: uppercase; color: var(--brans-koyu); }
+.dal.yikim .dal-ad { color: #3C4C5C; }
+.dal .dal-ozet { font: 600 9.5pt/1.2 var(--serif); margin: .8mm 0 2mm; }
+.dal dl { margin: 0; display: grid; gap: 1.4mm; }
+.dal dt { font-weight: 600; font-size: 7.9pt; }
+.dal dd { margin: 0; font-size: 7.3pt; color: var(--murekkep-2); line-height: 1.3; }
+.dal .oran { margin-top: 2.2mm; padding-top: 1.8mm; border-top: .5pt solid rgba(0,0,0,.18); font-size: 7.3pt; }
+.dal .oran b { font-family: var(--mono); font-size: 8pt; }
+
+.yolak { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; margin: 1mm 0 2mm; }
+.yolak .ist { position: relative; padding: 0 2.4mm; }
+.yolak .ist .kap { background: var(--brans-acik); border-top: 1.4mm solid var(--brans); padding: 2mm 2.2mm; min-height: 15mm; }
+.yolak .ist .kap b { display: block; font: 700 7.8pt/1.2 var(--dar); letter-spacing: .04em; }
+.yolak .ist .kap span { font-size: 7pt; color: var(--murekkep-2); line-height: 1.25; display: block; margin-top: .6mm; }
+.yolak .ist:not(:last-child)::after { content: ""; position: absolute; right: -1.6mm; top: 7mm; border-left: 2.4mm solid var(--brans); border-top: 1.8mm solid transparent; border-bottom: 1.8mm solid transparent; z-index: 1; }
+.yolak .ilac { margin-top: 1.8mm; display: grid; gap: 1mm; }
+.yolak .ilac i { font-style: normal; display: block; background: var(--murekkep); color: #fff; font: 600 7pt/1.2 var(--dar); padding: 1mm 1.6mm; letter-spacing: .02em; }
+.yolak .ilac i.sure { background: var(--spot); }
+
+.zaman { display: grid; grid-template-columns: 40mm 1fr 52mm; align-items: center; gap: 0; margin: 3mm 0 1mm; }
+.zaman .uc { background: var(--murekkep); color: #fff; padding: 2mm 3mm; font-size: 7.6pt; }
+.zaman .uc b { display: block; font: 700 8pt/1.2 var(--dar); letter-spacing: .06em; text-transform: uppercase; }
+.zaman .uc.iyot { background: var(--inci); }
+.zaman .ara { position: relative; height: 12mm; }
+.zaman .ara::before { content: ""; position: absolute; left: 0; right: 2.4mm; top: 50%; height: .9mm; background: repeating-linear-gradient(90deg, var(--spot) 0 2.2mm, transparent 2.2mm 3.4mm); }
+.zaman .ara::after { content: ""; position: absolute; right: 0; top: calc(50% - 1.8mm); border-left: 2.6mm solid var(--spot); border-top: 1.8mm solid transparent; border-bottom: 1.8mm solid transparent; }
+.zaman .ara span { position: absolute; left: 0; right: 0; top: -.4mm; text-align: center; font: 700 8pt/1 var(--dar); letter-spacing: .08em; color: var(--spot); text-transform: uppercase; }
+
+.bw { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2mm; }
+.bw div { border: .6pt solid var(--ince); padding: 2mm; }
+.bw b { display: block; font: 700 7pt/1.2 var(--dar); letter-spacing: .1em; text-transform: uppercase; color: var(--brans-koyu); margin-bottom: .8mm; }
+.bw span { font-size: 7.4pt; line-height: 1.3; display: block; }
+
+.protokol { display: grid; gap: 1.6mm; }
+.protokol .p { display: grid; grid-template-columns: 7mm 34mm 1fr; gap: 3mm; align-items: start; padding: 2mm 0; border-bottom: .5pt solid var(--ince); }
+.adim .protokol .p .no { width: auto; height: auto; border-radius: 0; background: none; text-align: left; font: 700 13pt/1 var(--serif); color: var(--brans); }
+.organ { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2.4mm; margin-top: 4.5mm; }
+.organ div { border-top: .8pt solid var(--murekkep); padding-top: 1.6mm; font-size: 7.4pt; line-height: 1.3; }
+.organ b { display: block; font: 700 7pt/1.2 var(--dar); letter-spacing: .1em; text-transform: uppercase; color: var(--brans-koyu); margin-bottom: .8mm; }
+.protokol .p .ne { font: 700 7.4pt/1.25 var(--dar); letter-spacing: .06em; text-transform: uppercase; }
+.protokol .p .doz { font-size: 8pt; }
+.protokol .p .doz em { display: block; font-style: normal; font-size: 7.3pt; color: var(--murekkep-2); margin-top: .6mm; }
+.protokol .p .doz .kritik { color: var(--spot); font-weight: 600; }
+
+.karar-izgara { display: grid; grid-template-columns: 1fr 50mm; gap: 6mm; }
+.kenar-sutun { background: var(--spot-acik); padding: 3mm; align-self: start; }
+.kenar-sutun .ad { font: 700 7pt/1 var(--dar); letter-spacing: .14em; text-transform: uppercase; color: var(--spot); margin-bottom: 2.4mm; }
+.kenar-sutun .spotlar p { font-size: 7.8pt; padding-bottom: 1.8mm; border-bottom: .5pt solid rgba(184,24,90,.2); }
+.kenar-sutun .spotlar p:last-child { border: 0; padding-bottom: 0; }
+
+.serit { display: grid; grid-template-columns: repeat(4, 1fr); border-top: .6pt solid var(--murekkep); border-bottom: .6pt solid var(--murekkep); margin-bottom: 4.5mm; }
+.serit div { padding: 1.8mm 2.4mm; font-size: 8pt; line-height: 1.3; }
+.serit div + div { border-left: .5pt solid var(--ince); }
+.serit b { display: block; font: 700 6.4pt/1.3 var(--dar); letter-spacing: .12em; text-transform: uppercase; color: var(--brans); margin-bottom: .4mm; }
+
+
+/* ---- notlar sayfası ---- */
+.notlar-sayfa .cizgili { position: absolute; left: 14mm; right: 20mm; top: 52mm; bottom: 22mm; background: repeating-linear-gradient(to bottom, transparent 0 8.4mm, var(--ince) 8.4mm 8.7mm); }
+
+/* ---- gebelik haftası şekli ---- */
+.hafta-sekil { margin-bottom: 4.5mm; }
+.hs-satir { display: grid; grid-template-columns: 30mm 1fr; align-items: center; min-height: 6.6mm; }
+.hs-satir + .hs-satir { border-top: .4pt solid var(--ince); }
+.hs-ad { font: 700 6.8pt/1.1 var(--dar); letter-spacing: .06em; text-transform: uppercase; color: var(--murekkep-2); padding-right: 2mm; }
+.hs-iz { position: relative; height: 6.6mm; background: linear-gradient(to right, transparent calc(32.5% - .3pt), var(--ince) calc(32.5% - .3pt) calc(32.5% + .3pt), transparent calc(32.5% + .3pt) calc(67.5% - .3pt), var(--ince) calc(67.5% - .3pt) calc(67.5% + .3pt), transparent calc(67.5% + .3pt)); }
+.hs-iz .bar { position: absolute; top: 1.2mm; height: 4.2mm; background: var(--brans); color: #fff; font: 600 6.4pt/4.2mm var(--dar); font-style: normal; padding: 0 1.4mm; white-space: nowrap; overflow: hidden; }
+.hs-iz .bar.acik { background: var(--brans-orta); color: var(--brans-koyu); }
+.hs-iz .bar.koyu { background: var(--brans-koyu); }
+.hs-iz .bar.kirmizi { background: var(--spot); }
+.hs-iz .bar.mavi { background: var(--inci); }
+.hs-iz .nokta { position: absolute; top: 2.1mm; width: 2.4mm; height: 2.4mm; margin-left: -1.2mm; border-radius: 50%; background: var(--spot); }
+.hs-iz .not { position: absolute; top: 0; font: italic 400 6.8pt/6.6mm var(--sans); color: var(--murekkep-2); white-space: nowrap; }
+.hs-eksen .hs-iz .tri { position: absolute; top: 0; text-align: center; font: 700 6.6pt/6.6mm var(--dar); letter-spacing: .1em; text-transform: uppercase; color: var(--brans-koyu); background: var(--brans-acik); }
+.hs-eksen .hs-iz .tri + .tri { border-left: .6pt solid #fff; }
+.hs-olcek .hs-iz span { position: absolute; top: 0; transform: translateX(-50%); font: 500 6.4pt/6.6mm var(--mono); color: var(--murekkep-2); }
+.hs-olcek .hs-iz span:first-child { transform: none; }
+.hs-olcek .hs-iz span:last-child { transform: translateX(-100%); }
+
+/* ---- postpartum tiroidit fazları ---- */
+.ppt { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5mm; margin: 1mm 0 2.6mm; font-family: var(--sans); font-size: 7.6pt; line-height: 1.3; }
+.ppt div { padding: 2mm 2.4mm; }
+.ppt b { display: block; font: 700 7.2pt/1.2 var(--dar); letter-spacing: .06em; text-transform: uppercase; }
+.ppt .f1 { background: var(--spot-acik); color: var(--spot); }
+.ppt .f2 { background: var(--brans-orta); color: var(--brans-koyu); }
+.ppt .f3 { background: var(--brans-acik); color: var(--brans-koyu); }
+
+
+/* ---- penetrans şekli ---- */
+.penetrans { margin-bottom: 4.5mm; }
+.pn-baslik, .pn-satir { display: grid; grid-template-columns: 40mm 1fr; align-items: center; }
+.pn-satir { min-height: 6mm; border-top: .4pt solid var(--ince); }
+.pn-satir > span { font: 600 7.4pt/1.15 var(--sans); color: var(--murekkep); padding-right: 2mm; }
+.pn-satir.alt > span { font-weight: 400; color: var(--murekkep-2); padding-left: 3mm; }
+.pn-olcek, .pn-iz { position: relative; height: 6mm; }
+.pn-iz { background: linear-gradient(to right, transparent calc(25% - .3pt), var(--ince) calc(25% - .3pt) calc(25% + .3pt), transparent calc(25% + .3pt) calc(50% - .3pt), var(--ince) calc(50% - .3pt) calc(50% + .3pt), transparent calc(50% + .3pt) calc(75% - .3pt), var(--ince) calc(75% - .3pt) calc(75% + .3pt), transparent calc(75% + .3pt)); }
+.pn-olcek i { position: absolute; top: 1.4mm; font: 500 6.4pt/1 var(--mono); font-style: normal; color: var(--murekkep-2); transform: translateX(-50%); }
+.pn-olcek i:first-child { transform: none; } .pn-olcek i:last-child { transform: translateX(-100%); }
+.pn-iz b { position: absolute; top: 1.5mm; height: 3mm; min-width: 1.4mm; background: var(--brans); }
+.pn-iz b.k { background: var(--brans-koyu); }
+.pn-iz b.a { background: var(--brans-orta); }
+.pn-iz b.s { background: var(--spot); }
+.pn-iz em { position: absolute; top: 0; margin-left: 1mm; font: 600 6.8pt/6mm var(--dar); font-style: normal; color: var(--murekkep-2); white-space: nowrap; }
+
+/* ---- süre şekli ---- */
+.sure-sekil { margin-bottom: 4.5mm; }
+.ss-satir { display: grid; grid-template-columns: 40mm 1fr; align-items: center; min-height: 6.4mm; }
+.ss-satir + .ss-satir { border-top: .4pt solid var(--ince); }
+.ss-satir > span { font: 600 7.4pt/1.15 var(--sans); padding-right: 2mm; }
+.ss-iz { position: relative; height: 6.4mm; background: linear-gradient(to right, transparent calc(20% - .3pt), var(--ince) calc(20% - .3pt) calc(20% + .3pt), transparent calc(20% + .3pt) calc(40% - .3pt), var(--ince) calc(40% - .3pt) calc(40% + .3pt), transparent calc(40% + .3pt) calc(60% - .3pt), var(--ince) calc(60% - .3pt) calc(60% + .3pt), transparent calc(60% + .3pt) calc(80% - .3pt), var(--ince) calc(80% - .3pt) calc(80% + .3pt), transparent calc(80% + .3pt)); }
+.ss-iz b { position: absolute; top: 1.2mm; height: 4mm; left: 0; background: var(--brans); }
+.ss-iz b.acik { background: var(--brans-orta); }
+.ss-iz b.an { background: var(--inci); }
+.ss-iz b.an.acik { background: var(--inci-acik); border: .5pt solid var(--inci); }
+.ss-iz b.dn { background: var(--murekkep); }
+.ss-iz em { position: absolute; top: 0; margin-left: 1mm; font: 600 6.8pt/6.4mm var(--dar); font-style: normal; color: var(--murekkep-2); white-space: nowrap; }
+.ss-olcek .ss-iz { background: none; }
+.ss-olcek .ss-iz i { position: absolute; top: 1.2mm; font: 500 6.4pt/1 var(--mono); font-style: normal; color: var(--murekkep-2); transform: translateX(-50%); }
+.ss-olcek .ss-iz i:first-child { transform: none; } .ss-olcek .ss-iz i:last-child { transform: translateX(-100%); }
+ol.madde-no { margin: 0; padding-left: 4.5mm; }
+ol.madde-no li { margin-bottom: 1.2mm; padding-left: .5mm; }
+ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
+
+/* ---- sayfa 1: içindekiler iki sütun, kutu kılavuzu üstte şerit ---- */
+.acilis .govde { grid-template-columns: 1fr !important; grid-template-rows: auto 1fr; gap: 5mm !important; padding-top: 7mm !important; }
+.acilis .okuma-kilavuzu { order: -1; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.4mm; align-items: stretch; }
+.acilis .okuma-kilavuzu > h2 { grid-column: 1 / -1; margin-bottom: 0; }
+.acilis .okuma-kilavuzu .kutu { margin: 0; padding: 1.8mm 2.2mm; font-size: 7.2pt; line-height: 1.3; }
+.acilis .okuma-kilavuzu > p { display: none; }
+.acilis .icindekiler { columns: 2; column-gap: 9mm; }
+.acilis .icindekiler li { break-inside: avoid; }
+.acilis .icindekiler li.grup { break-after: avoid; }
+.sekil-baslik { font: 700 6.8pt/1 var(--dar); letter-spacing: .12em; text-transform: uppercase; color: var(--murekkep-2); margin-bottom: 1.6mm; }
+
+/* ---- tirzepatid şekli ---- */
+.tirz-sekil { display: grid; grid-template-columns: 1fr 1.35fr; gap: 6mm; margin-bottom: 4.5mm; }
+.tirz-sekil .sekil-alt { grid-column: 1 / -1; margin-top: 0; }
+.basamak { display: grid; grid-template-columns: repeat(6, 1fr); align-items: end; gap: 1.2mm; height: 31mm; border-bottom: .8pt solid var(--murekkep); }
+.basamak div { position: relative; background: var(--brans); display: flex; align-items: flex-start; justify-content: center; }
+.basamak div:first-child { background: var(--brans-orta); }
+.basamak b { font: 700 7.4pt/1 var(--dar); color: #fff; margin-top: 1mm; }
+.basamak div:first-child b { color: var(--brans-koyu); }
+.basamak span { position: absolute; bottom: -4mm; left: 0; right: 0; text-align: center; font: 500 6.2pt/1 var(--mono); color: var(--murekkep-2); }
+.ts-not { margin-top: 5mm; font-size: 7pt; line-height: 1.3; color: var(--murekkep-2); }
+.kk-s, .kk-olcek { display: grid; grid-template-columns: 38mm 1fr; align-items: center; min-height: 6.4mm; }
+.kk-s + .kk-s { border-top: .4pt solid var(--ince); }
+.kk-s > span { font-size: 7pt; line-height: 1.2; padding-right: 1.5mm; }
+.kk-iz { position: relative; height: 6.4mm; background: linear-gradient(to right, transparent calc(40% - .3pt), var(--ince) calc(40% - .3pt) calc(40% + .3pt), transparent calc(40% + .3pt) calc(80% - .3pt), var(--ince) calc(80% - .3pt) calc(80% + .3pt), transparent calc(80% + .3pt)); display: flex; align-items: center; }
+.kk-iz b { height: 3.6mm; background: var(--brans); }
+.kk-iz b.gri { background: var(--murekkep-2); }
+.kk-iz em { font: 700 6.8pt/1 var(--dar); font-style: normal; margin-left: 1mm; color: var(--murekkep); }
+.kk-olcek > div { position: relative; height: 4mm; }
+.kk-olcek i { position: absolute; top: 1mm; font: 500 6.2pt/1 var(--mono); font-style: normal; color: var(--murekkep-2); transform: translateX(-50%); }
+.serit-zincir { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5mm; }
+.serit-zincir div { position: relative; background: var(--brans-acik); border-top: 1.2mm solid var(--brans); padding: 2mm 2.4mm; }
+.serit-zincir div:not(:last-child)::after { content: "→"; position: absolute; right: -4.2mm; top: 50%; transform: translateY(-50%); font: 700 10pt/1 var(--sans); color: var(--brans); }
+.serit-zincir div.son { background: var(--murekkep); border-top-color: var(--spot); color: #fff; }
+.serit-zincir b { display: block; font: 700 9pt/1.2 var(--dar); color: var(--brans-koyu); }
+.serit-zincir div.son b { color: #F6B8D0; }
+.serit-zincir span { display: block; font-size: 7.4pt; line-height: 1.3; margin-top: .6mm; }
+.kk-olcek i:first-child { transform: none; } .kk-olcek i:last-child { transform: translateX(-100%); }
+.acilis { grid-template-rows: 112mm 1fr !important; }
+.acilis .renk { padding-bottom: 12mm !important; }
+
+.acilis .icindekiler li { padding: .9mm 0; grid-template-columns: 1fr auto; }
+.acilis .icindekiler li > div { display: flex; align-items: baseline; gap: 2mm; flex-wrap: wrap; }
+.acilis .icindekiler li span { font-size: 9.2pt; }
+.acilis .icindekiler li small { margin-top: 0; font-size: 6pt; }
+.acilis .icindekiler li em { font-size: 8.6pt; }
+.acilis .okuma-kilavuzu .kutu { padding: 2mm 2.6mm; }
+.icindekiler li.grup { display: block; border: 0; padding: 3mm 0 0; font: 700 6.6pt/1 var(--dar); letter-spacing: .14em; text-transform: uppercase; color: var(--murekkep-2); }
+.oklu { font-family: var(--mono); font-weight: 600; font-size: 7.6pt; }
+
+/* ---- kısım kapağı ---- */
+.kisim { padding: 0 !important; display: grid; grid-template-rows: 96mm 1fr; }
+.kisim .bant { background: var(--brans-koyu); color: #fff; padding: 20mm 22mm 12mm 26mm; display: flex; flex-direction: column; justify-content: flex-end; }
+.kisim .kisim-no { font: 600 8pt/1 var(--mono); letter-spacing: .2em; text-transform: uppercase; opacity: .8; margin-bottom: 5mm; }
+.kisim .bant h1 { font: 700 34pt/1.02 var(--serif); letter-spacing: -.015em; margin: 0; text-wrap: balance; }
+.kisim .bant .alt { font: italic 400 12pt/1.3 var(--serif); margin-top: 3mm; opacity: .9; }
+.kisim .govde { padding: 11mm 18mm 22mm 26mm; display: grid; grid-template-columns: 1.1fr 1fr; gap: 10mm; }
+.kurallar ol { list-style: none; counter-reset: k; margin: 0; padding: 0; }
+.kurallar li { counter-increment: k; display: grid; grid-template-columns: 9mm 1fr; gap: 2.4mm; padding: 2.4mm 0; border-bottom: .5pt solid var(--ince); font: 400 9.6pt/1.38 var(--serif); }
+.kurallar li::before { content: counter(k); font: 700 19pt/1 var(--serif); color: var(--brans); }
+.kisim .icindekiler li { padding: 1.7mm 0; }
+.kisim .icindekiler li span { font-size: 10pt; }
+
+/* ---- doğal seyir şekli ---- */
+.seyir-sekil { margin-bottom: 4.5mm; }
+.seyir { display: grid; grid-template-columns: 1fr 13mm 1fr 13mm 1fr; align-items: stretch; }
+.seyir .evre { padding: 2.4mm 2.8mm; font-size: 7.6pt; line-height: 1.3; }
+.seyir .evre b { display: block; font: 700 7.6pt/1.2 var(--dar); letter-spacing: .06em; text-transform: uppercase; margin-bottom: .8mm; }
+.seyir .e1 { background: var(--brans-acik); border-top: 1.6mm solid var(--brans-orta); }
+.seyir .e2 { background: var(--brans-orta); border-top: 1.6mm solid var(--brans); }
+.seyir .e3 { background: var(--brans-koyu); border-top: 1.6mm solid var(--murekkep); color: #fff; }
+.seyir .gecis { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1mm; }
+.seyir .gecis i { display: block; width: 0; height: 0; border-left: 3mm solid var(--brans); border-top: 2.2mm solid transparent; border-bottom: 2.2mm solid transparent; }
+.seyir .gecis em { font: 700 6.6pt/1.1 var(--dar); font-style: normal; color: var(--spot); text-align: center; white-space: nowrap; }
+.seyir-dal { display: grid; grid-template-columns: 1.55fr 1fr; gap: 3mm; margin-top: 2.4mm; }
+.dal-kutu { border: .8pt dashed var(--brans); padding: 2mm 2.6mm; font-size: 7.3pt; line-height: 1.3; color: var(--murekkep-2); }
+.dal-kutu b { display: block; font: 700 7pt/1.2 var(--dar); letter-spacing: .06em; text-transform: uppercase; color: var(--brans-koyu); margin-bottom: .6mm; }
+.dal-kutu.son { border-color: var(--spot); }
+.dal-kutu.son b { color: var(--spot); }
+.adim .protokol .p .no { font-size: 11pt; }
+
+
+/* ---- onkoloji branş rengi ---- */
+:root { --brans: #7A4B12; --brans-koyu: #5A360B; --brans-acik: #F5EBDD; --brans-orta: #DFC49B; }
+.sekil-blok { margin-bottom: 4.5mm; }
+.acilis .icindekiler { columns: 1 !important; }
+</style>
+</head>
+<body>
+
+<!-- ================= 1 · BÖLÜM AÇILIŞI (sağ sayfa) ================= -->
+<section class="sayfa sag acilis">
+  <div class="renk">
+    <div class="seri">MediSea · Hızlı Bakış</div>
+    <div class="bolum-no">Bölüm 6 · Deneme baskısı</div>
+    <h1>Onkoloji</h1>
+    <div class="alt">Febril nötropeni</div>
+  </div>
+  <div class="govde">
+    <div>
+      <h2>Bu bölümde</h2>
+      <ol class="icindekiler">
+        <li class="grup">Kısım 1 · Febril nötropeni</li>
+        <li><div><span>Febril nötropeni</span><small>Açık sayfa + anlatı</small></div><em>2</em></li>
+        <li><div><span>İlk 60 dakika</span><small>Karar yolu</small></div><em>5</em></li>
+        <li><div><span>MASCC ve CISNE</span><small>Başvuru</small></div><em>6</em></li>
+        <li><div><span>Ampirik tedavi</span><small>Karar yolu</small></div><em>7</em></li>
+        <li><div><span>Dirençli ateş ve antifungal</span><small>Başvuru</small></div><em>8</em></li>
+        <li><div><span>Profilaksi ve G-CSF</span><small>Başvuru</small></div><em>9</em></li>
+        <li><div><span>Vakadan karara</span><small>Başvuru</small></div><em>10</em></li>
+      </ol>
+    </div>
+    <div class="okuma-kilavuzu">
+      <h2>Kutuların anlamı</h2>
+      <div class="kutu spot"><div class="ad">Sınav spotu</div><p>Sınavda soru kökü ya da doğru şık olarak karşınıza çıkan tek cümle.</p></div>
+      <div class="kutu inci"><div class="ad">Klinik inci</div><p>Yatak başında kararı değiştiren çıkarım.</p></div>
+      <div class="kutu tuzak"><div class="ad">Tuzak</div><p>Sık yapılan, bedeli olan yanlış.</p></div>
+      <div class="kutu kural"><div class="ad">Altın kural</div><p>Atlanırsa hastaya zarar veren adım.</p></div>
+      <p>Her konu önce bir ya da iki sayfalık özetle açılır.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2 · FN — AÇIK SAYFA SOL ================= -->
+<section class="sayfa sol tur-acik">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>Onkolojik acil</span></div>
+  <div class="ust-etiket">Onkolojik acil · Açık sayfa</div>
+  <h1 class="konu">Febril nötropeni</h1>
+  <p class="giris">Nötrofil yoksa iltihap da yok: püy, eritem, infiltrasyon silinir; geriye çoğu zaman tek bulgu olarak ateş kalır. Bu yüzden febril nötropeni tanı beklenmeden tedavi edilen bir acildir.</p>
+
+  <div class="bakis">
+    <div class="ad">30 saniyede</div>
+    <ul class="madde">
+      <li>Ateş: tek ölçümde <b>≥38,3 °C</b> ya da <b>≥38,0 °C</b>’nin 1 saat sürmesi.</li>
+      <li>Nötropeni <b>ANC &lt;500/µL</b>; <b>&lt;100/µL</b> derin nötropeni.</li>
+      <li>Kültürler <b>ilk dozdan önce</b>: periferik + kateterin her lümeninden.</li>
+      <li><b>60 dakika</b> içinde geniş spektrumlu ampirik antibiyotik.</li>
+      <li><b>Rektal tuşe ve rektal ateş ölçümü yasak.</b></li>
+      <li>Ampirik hedef <i>Pseudomonas</i> dahil gram-negatifler; vankomisin rutin değil.</li>
+    </ul>
+  </div>
+
+  <div class="sekil-blok">
+    <div class="sekil-baslik">Mukozadan sepsise</div>
+    <div class="yolak" style="grid-template-columns:repeat(4,1fr)">
+      <div class="ist"><div class="kap"><b>Sitotoksik hasar</b><span>Kemoterapi mukozal bariyeri bozar</span></div><div class="ilac"><i>G-CSF profilaksisi</i></div></div>
+      <div class="ist"><div class="kap"><b>Translokasyon</b><span>Endojen mikrobiyota GİS ve solunum yolundan dolaşıma geçer</span></div><div class="ilac"><i>Florokinolon profilaksisi (yüksek risk)</i></div></div>
+      <div class="ist"><div class="kap"><b>Sessiz enfeksiyon</b><span>Nötrofil yok: püy, eritem, infiltrasyon maskelenir; ateş tek bulgu</span></div><div class="ilac"><i>Günlük tepeden tırnağa muayene</i></div></div>
+      <div class="ist"><div class="kap"><b>Hızlı sepsis</b><span>Gram-negatifler fulminan seyredebilir</span></div><div class="ilac"><i class="sure">60 dakikada ampirik antibiyotik</i></div></div>
+    </div>
+    <div class="sekil-alt"><b>Şekil 1.</b> Atakların yalnız %20–30’unda mikrobiyolojik etken saptanır, %10–25’inde bakteriyemi gösterilir. Nötropeni 7 günü aşınca <i>Candida</i> ve <i>Aspergillus</i> riski belirgin artar.</div>
+  </div>
+
+  <div class="sayilar">
+    <div class="bas-etiket">Sayılarla</div>
+    <div><strong>≥38,3 °C</strong><span>tek ölçüm ateş eşiği</span></div>
+    <div><strong>&lt;500</strong><span>/µL · şiddetli nötropeni</span></div>
+    <div><strong>&lt;100</strong><span>/µL · derin nötropeni</span></div>
+    <div><strong>60 dk</strong><span>ampirik antibiyotik</span></div>
+    <div><strong>4–5 gün</strong><span>medyan ateş düşme süresi</span></div>
+    <div><strong>≥%20</strong><span>G-CSF birincil profilaksi eşiği</span></div>
+  </div>
+
+  <div class="blok" style="margin-top:4mm">
+    <h2>Tanımlar</h2>
+    <table class="tb">
+      <thead><tr><th style="width:36mm">Terim</th><th>Tanım</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Ateş</td><td>Tek oral ölçümde ≥38,3 °C (101 °F) <b>ya da</b> ≥38,0 °C (100,4 °F) ateşin bir saat sürmesi</td></tr>
+        <tr><td class="bas">Şiddetli nötropeni</td><td>ANC &lt;500/µL ya da önümüzdeki 48 saatte bu değerin altına düşmesinin öngörülmesi</td></tr>
+        <tr><td class="bas">Derin nötropeni</td><td>ANC &lt;100/µL: invaziv enfeksiyon ve bakteriyemi riski dramatik artar; şiddetli nötropeniden ayrı ve daha ağır bir kategoridir</td></tr>
+        <tr><td class="bas">Acil durum</td><td>Tanısal işlemler ve yatış beklenmeden 60 dakika içinde ampirik antibiyotik</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · kültür ≠ gecikme</div><p>Kültür alınması antibiyotiği geciktirmez; ikisi aynı 60 dakikanın içinde, kültür önce olacak biçimde planlanır.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Ateş ölçümü aksiller ya da oral; rektal yol kapalı.</p>
+        <p>Hemodinamik stabilite 60 dakika kuralını değiştirmez.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>2</b><span>MediSea Hızlı Bakış · Onkoloji</span></div>
+</section>
+
+<!-- ================= 3 · FN — AÇIK SAYFA SAĞ ================= -->
+<section class="sayfa sag tur-acik">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Febril nötropeni</span><span>Onkolojik acil</span></div>
+
+  <div class="blok">
+    <h2>Mikrobiyoloji: kim sık, kim tehlikeli?</h2>
+    <table class="tb">
+      <thead><tr><th style="width:36mm">Grup</th><th style="width:56mm">Etkenler</th><th>Klinik anlamı</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Gram-pozitif kok</td><td>Koagülaz-negatif stafilokoklar, <i>S. aureus</i>, enterokok, viridans streptokoklar</td><td>Bugün en sık dökümante edilen grup: kateter, mukozit ve kinolon profilaksisi etkisi</td></tr>
+        <tr><td class="bas">Gram-negatif basil</td><td><i>P. aeruginosa</i>, <i>E. coli</i>, <i>Klebsiella</i>, <i>Enterobacter</i></td><td>Fulminan sepsise ilerleyebildiği için <b>ampirik tedavinin ana hedefi</b></td></tr>
+        <tr><td class="bas">Mantar</td><td><i>Candida</i>, <i>Aspergillus</i></td><td>İlk atakta değil; derin ve uzamış (&gt;7 gün) nötropenide, dirençli ya da yineleyen ateşte</td></tr>
+        <tr><td class="bas">Virüs</td><td>HSV, VZV, solunum virüsleri</td><td>Reaktivasyon ya da primer enfeksiyon; ciddi morbidite</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Risk: yüksek</h2>
+      <ul class="madde">
+        <li>Beklenen nötropeni <b>&gt;7 gün</b> (akut lösemi indüksiyonu, allojenik nakil)</li>
+        <li><b>MASCC &lt;21</b> ya da solid tümörde <b>CISNE ≥3</b></li>
+        <li>Hemodinamik instabilite, yeni konfüzyon, solunum yetmezliği, oligüri</li>
+        <li>Şiddetli oral ya da GİS mukoziti</li>
+        <li>Kreatinin klirensi &lt;30 mL/dk, karaciğer enzimlerinde &gt;5 kat artış</li>
+      </ul>
+    </div>
+    <div class="blok">
+      <h2>Risk: düşük</h2>
+      <ul class="madde">
+        <li>Beklenen şiddetli nötropeni <b>≤7 gün</b></li>
+        <li>Komorbidite ve organ disfonksiyonu yok, hasta stabil</li>
+        <li><b>MASCC ≥21</b> ya da <b>CISNE 0</b></li>
+        <li>Çoğu solid tümör olgusu bu gruptadır</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="iki-sutun">
+    <div>
+      <div class="kutu kural"><div class="ad">Altın kural · yasak muayene</div><p>Dijital rektal muayene ve rektal ateş ölçümü <b>kesinlikle yapılmaz</b>: frajil mukozada travma, bakteriyel translokasyon ve tiflitin kötüleşmesi riski.</p></div>
+      <div class="kutu tuzak"><div class="ad">Tuzak · normal akciğer grafisi</div><p>Nötropenide pnömoni ya da fungal nodül varken bile PA grafi normal olabilir. Solunum yakınması varsa yüksek çözünürlüklü toraks BT çek.</p></div>
+    </div>
+    <div>
+      <div class="kutu inci"><div class="ad">Klinik inci · sessiz bulgular</div><p>Tünel enfeksiyonunda tek bulgu minimal eritem ya da hassasiyet olabilir; perianal bölgede akıntı olmadan yalnız ağrı, acil müdahale gerektiren anaerobik enfeksiyonun habercisidir.</p></div>
+      <div class="kutu spot"><div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>Nötropenik idrarda piyüri olmadan da idrar yolu enfeksiyonu olabilir.</p>
+          <p>İshalde gecikmeden <i>C. difficile</i> toksini gönder.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Görüntüleme ve biyobelirteç</h2>
+    <table class="tb">
+      <thead><tr><th style="width:44mm">Yöntem</th><th>Endikasyon</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Toraks BT (yüksek çözünürlüklü ya da kontrastsız)</td><td>Solunum yakınması ya da risk faktörü varsa; PA grafi normal olsa bile pnömoni ve aspergillozun erken tanısı için</td></tr>
+        <tr><td class="bas">Kontrastlı batın BT</td><td>Karın ağrısı, asit, ishal, sağ alt kadran hassasiyeti: nötropenik enterokolit (tiflit), <i>C. difficile</i> koliti ve cerrahi acillerin ayrımı</td></tr>
+        <tr><td class="bas">Galaktomannan ve (1,3)-beta-D-glukan</td><td>Uzun süreli derin nötropenili yüksek riskli hastada haftada 1–2 kez tarama</td></tr>
+        <tr><td class="bas">Bronkoalveoler lavaj</td><td>Dirençli ya da atipik pulmoner nodül: kültür, direkt mikroskopi ve PCR</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Onkoloji</span><b>3</b></div>
+</section>
+
+<!-- ================= 4 · ANLATI (sol) ================= -->
+<section class="sayfa sol tur-anlati">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>FN · Anlatı</span></div>
+  <div class="ust-etiket">FN · Anlatı</div>
+  <h1 class="konu orta">Nötrofil yokken enfeksiyonu görmek</h1>
+
+  <div class="anlati">
+    <div class="metin">
+      <h2>Bariyer çöker</h2>
+      <p>Kemoterapinin sitotoksik hasarı mukozal bariyer bütünlüğünü bozar; endojen mikrobiyota sindirim ve solunum yolu mukozasından sistemik dolaşıma geçer. Buna immün defisit eklenince tablo tamamlanır. Buna rağmen atakların yalnız %20–30’unda etken mikrobiyolojik olarak gösterilebilir, %10–25’inde bakteriyemi saptanır: yani çoğu hastada tedaviye kültür sonucu olmadan başlanır.</p>
+
+      <h2>Etken profili değişti</h2>
+      <p>Tarihsel olarak gram-negatifler baskındı. Bugün intravasküler kateter kullanımı, ağır mukozitler ve kinolon profilaksisi nedeniyle dökümante enfeksiyonların çoğundan gram-pozitifler sorumlu. Ama ampirik tedavinin hedefi değişmedi: <i>Pseudomonas aeruginosa</i>, <i>E. coli</i> ve <i>Klebsiella</i> gibi basiller saatler içinde fulminan sepsise ilerleyebildiği için kapsam hep onlara göre kurulur.</p>
+
+      <h2>İnflamasyon maskeleniyor</h2>
+      <p>Hücresel inflamasyon baskılandığı için püy, lokalize eritem, ısı artışı ve doku infiltrasyonu silikleşir ya da hiç görünmez. Bu yüzden lokal bulgu olmaması enfeksiyonu dışlamaz; ateş çoğu zaman tek belirtidir. Günlük muayene cilt, mukoza, dişler, diş eti, orofarinks, paranazal sinüsler, akciğerler, batın, genital bölge, perianal alan, kateter giriş yeri ve tünel trasesi ile kemik iliği girişim alanlarını kapsamalıdır. Aynı nedenle görüntülemede de eşik düşüktür: nötropenik hastada PA akciğer grafisi pnömoniye rağmen normal olabilir, toraks BT kavitasyonu ve milimetrik infiltrasyonu günler önce gösterir.</p>
+
+      <h2>Neden 60 dakika?</h2>
+      <p>Febril nötropeni, tanısal işlemler ve yatış beklenmeden yönetilmesi gereken bir acildir. Triyajdan sonraki en geç 60 dakika içinde geniş spektrumlu ampirik antibiyotik başlanmalıdır. Ama bir koşulla: ilk dozdan hemen önce kan kültürleri alınmış olmalı — periferik venden ve santral kateterin her lümeninden, en az iki set.</p>
+
+      <h2>Ateş hemen düşmez</h2>
+      <p>Geniş spektrumlu tedavi alan hematolojik malignite ya da nakil hastasında ateşin düşmesi ortalama 4–5 gün sürer. Hasta stabilse yalnızca ateşin sürmesi rejim değiştirmeyi gerektirmez. Karar noktası klinik kötüleşme ve sürenin uzamasıdır: nötropenisi 7 günü aşan yüksek riskli hastada 4–7 gün süren dirençli ateş, invaziv mantar enfeksiyonu için harekete geçme zamanıdır.</p>
+    </div>
+
+    <div class="kenar">
+      <div class="kenar-baslik">Örnekleme kuralları</div>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">Kan kültürü</td><td>İlk dozdan önce; periferik + kateterin her lümeni, en az 2 set, şişe başına ~20 mL</td></tr>
+          <tr><td class="bas">Dirençli ateş</td><td>İlk günlerde kültürleri günlük tekrarla</td></tr>
+          <tr><td class="bas">İdrar</td><td>Semptom varsa; piyüri olmayabilir</td></tr>
+          <tr><td class="bas">Dışkı</td><td>İshalde <i>C. difficile</i> toksini</td></tr>
+          <tr><td class="bas">Cilt</td><td>Yeni lezyonda iğne aspiratı ya da biyopsi: bakteri ve mantar</td></tr>
+        </tbody>
+      </table>
+      <div class="kutu spot"><div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>Ampirik aminoglikozit eklemek komplikasyonsuz hastada yararsız ve nefrotoksiktir.</p>
+          <p>Nötrofiller geri gelirken ortaya çıkan kaviter lezyon <i>Aspergillus</i> ya da <i>Fusarium</i> invazyonunu düşündürür.</p>
+        </div>
+      </div>
+      <div class="kutu inci"><div class="ad">Klinik inci</div><p>Ateş tek bulgu olabildiği için “muayene normal” demek yerine hangi bölgelerin bakıldığını yazmak, ertesi gün karşılaştırma yapmayı sağlar.</p></div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>4</b><span>MediSea Hızlı Bakış · Onkoloji</span></div>
+</section>
+
+<!-- ================= 5 · KARAR YOLU: İLK 60 DAKİKA (sağ) ================= -->
+<section class="sayfa sag tur-karar">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>FN · Yaklaşım</span></div>
+  <div class="ust-etiket">Febril nötropeni · Karar yolu</div>
+  <h1 class="konu orta">İlk 60 dakika</h1>
+  <p class="giris">Kemoterapi alan hasta ateşle geldi. Sıra bellidir: tanı koy, örnekle, tedaviyi başlat, riski hesapla.</p>
+
+  <div class="karar-izgara">
+    <div>
+      <div class="adim"><div class="no">1</div><div>
+        <h3>Tanımı doğrula</h3>
+        <p>Ateş: tek oral ölçümde <b>≥38,3 °C</b> ya da <b>≥38,0 °C</b>’nin bir saat sürmesi. Nötropeni: <b>ANC &lt;500/µL</b> ya da 48 saat içinde bu değerin altına düşmesinin beklenmesi. <b>ANC &lt;100/µL</b> derin nötropenidir.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">2</div><div>
+        <h3>Muayene: tepeden tırnağa, ama tuşe yok</h3>
+        <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+          <div><b>Bak</b><span>Cilt, mukoza, dişler ve diş eti, orofarinks, sinüsler, akciğer, batın, genital ve perianal bölge</span></div>
+          <div><b>Kateter</b><span>Giriş yeri ve tünel trasesi: minimal eritem bile anlamlı</span></div>
+          <div><b>Yapma</b><span>Rektal tuşe ve rektal ateş ölçümü kesinlikle yasak</span></div>
+        </div>
+      </div></div>
+
+      <div class="adim"><div class="no">3</div><div>
+        <h3>Örnekle</h3>
+        <p>İlk antibiyotik dozundan <b>önce</b>: periferik venden ve kateterin her lümeninden eş zamanlı, en az iki set aerobik ve anaerobik kan kültürü. Semptoma göre idrar, dışkı (<i>C. difficile</i>), balgam, cilt örneklemesi.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">4</div><div>
+        <h3>Antibiyotiği başlat</h3>
+        <p>Triyajdan sonraki en geç <b>60 dakika</b> içinde geniş spektrumlu ampirik tedavi. Yüksek riskte IV antipsödomonal beta-laktam monoterapisi (s. 7).</p>
+      </div></div>
+
+      <div class="adim"><div class="no">5</div><div>
+        <h3>Görüntüle</h3>
+        <div class="bw" style="grid-template-columns:1fr 1fr">
+          <div><b>Solunum yakınması</b><span>Yüksek çözünürlüklü ya da kontrastsız toraks BT: PA grafi normal olsa bile</span></div>
+          <div><b>Karın ağrısı</b><span>Kontrastlı batın BT: nötropenik enterokolit (tiflit) ve <i>C. difficile</i> koliti</span></div>
+        </div>
+      </div></div>
+
+      <div class="adim"><div class="no">6</div><div>
+        <h3>Nerede izlenecek?</h3>
+        <div class="bw" style="grid-template-columns:1fr 1fr">
+          <div><b>Yatış</b><span>Yüksek risk; ayrıca MASCC ≥21 olsa bile uzak mesafe, refakatçi ya da ulaşım yokluğu, oral ilacı engelleyen mukozit, pulmoner infiltrasyon, açıklanamayan şiddetli karın ağrısı, aktif kateter tünel enfeksiyonu</span></div>
+          <div><b>Ayaktan</b><span>Stabil, MASCC ≥21 (ve mümkünse CISNE 0), odaksal ciddi semptom yok, en az 4 saat gözlem sonrası</span></div>
+        </div>
+      </div></div>
+
+      <div class="adim"><div class="no">7</div><div>
+        <h3>Riski hesapla</h3>
+        <p>MASCC ve solid tümörde CISNE ile düşük-yüksek risk ayrımı yap (s. 6); yatış ya da ayaktan izlem kararı buradan çıkar.</p>
+      </div></div>
+    </div>
+
+    <aside>
+      <div class="kenar-sutun">
+        <div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>Kültür ilk dozdan önce alınır ama antibiyotik geciktirilmez.</p>
+          <p>Derin nötropeni ANC &lt;100.</p>
+          <p>Ateşin tek bulgu olması kuraldır, istisna değil.</p>
+        </div>
+      </div>
+      <div class="kutu kural" style="margin-top:3mm"><div class="ad">Altın kural</div><p>Febril nötropeni onkolojik acildir: yatış ve tetkik süreci antibiyotiği geciktirmez.</p></div>
+      <div class="kutu inci" style="margin-top:3mm"><div class="ad">Klinik inci</div><p>Uzun süreli derin nötropenide galaktomannan ve beta-D-glukan haftada 1–2 kez izlenir; hasta küf etkili azol ya da ekinokandin alıyorsa bu testler yalancı negatif olabilir.</p></div>
+    </aside>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Onkoloji</span><b>5</b></div>
+</section>
+
+<!-- ================= 6 · BAŞVURU: MASCC VE CISNE (sol) ================= -->
+<section class="sayfa sol tur-basvuru">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>FN · Başvuru</span></div>
+  <div class="ust-etiket">Febril nötropeni · Başvuru</div>
+  <h1 class="konu orta">MASCC ve CISNE</h1>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>MASCC · en çok 26 puan</h2>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">Hastalık yükü: yok ya da çok hafif</td><td>5</td></tr>
+          <tr><td class="bas">Hastalık yükü: orta</td><td>3</td></tr>
+          <tr><td class="bas">Hastalık yükü: ağır, moribund</td><td>0</td></tr>
+          <tr><td class="bas">Hipotansiyon yok (SKB &gt;90 mmHg)</td><td>5</td></tr>
+          <tr><td class="bas">KOAH öyküsü yok</td><td>4</td></tr>
+          <tr><td class="bas">Solid tümör ya da fungal enfeksiyon öyküsü olmayan hematolojik malignite</td><td>4</td></tr>
+          <tr><td class="bas">Parenteral sıvı gerektiren dehidratasyon yok</td><td>3</td></tr>
+          <tr><td class="bas">Ateş başlarken ayaktan hasta</td><td>3</td></tr>
+          <tr><td class="bas">Yaş &lt;60</td><td>2</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:1.4mm;font-size:7.4pt;color:var(--murekkep-2)">Hastalık yükü seçeneklerinden yalnız biri işaretlenir. Yüksek puan = düşük risk.</p>
+    </div>
+    <div class="blok">
+      <h2>CISNE · stabil solid tümör hastası</h2>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">ECOG ≥2</td><td>2</td></tr>
+          <tr><td class="bas">Strese bağlı hiperglisemi</td><td>2</td></tr>
+          <tr><td class="bas">KOAH</td><td>1</td></tr>
+          <tr><td class="bas">Kronik kardiyovasküler hastalık</td><td>1</td></tr>
+          <tr><td class="bas">Mukozit (NCI evre ≥2)</td><td>1</td></tr>
+          <tr><td class="bas">Mutlak monosit &lt;200/µL</td><td>1</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:1.4mm;font-size:7.6pt">0 puan: komplikasyon %1,1 · 1–2 puan: %6,2 · ≥3 puan: %36,0. Mutlak monosit sayısını ve strese bağlı hiperglisemiyi kullanan tek indeks CISNE’dir.</p>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>MASCC sonuçları ne söyler?</h2>
+    <table class="tb">
+      <thead><tr><th style="width:36mm">Skor</th><th style="width:34mm">Risk</th><th>Komplikasyon ve mortalite</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">≥21</td><td>Düşük</td><td>Ciddi komplikasyon ~%8 (bazı serilerde &lt;%5), ölüm ~%2</td></tr>
+        <tr><td class="bas">15–20</td><td>Yüksek</td><td>Komplikasyon %23, mortalite %9</td></tr>
+        <tr><td class="bas">&lt;15</td><td>Çok yüksek</td><td>Komplikasyon %37, mortalite %29</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>Skor ≥21 olsa bile yatır</h2>
+    <div class="bw" style="grid-template-columns:repeat(4,1fr)">
+      <div><b>Lojistik</b><span>Merkeze &gt;1 saat ya da 48 km uzaklık</span></div>
+      <div><b>Destek</b><span>Evde sürekli refakatçi yok</span></div>
+      <div><b>İletişim</b><span>24 saat ulaşım ya da telefon imkânı yok</span></div>
+      <div><b>Klinik</b><span>Oral ilacı engelleyen şiddetli mukozit, radyolojik pulmoner infiltrasyon</span></div>
+    </div>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · ikisini birlikte kullan</div><p>MASCC bazı instabilleşmeye yatkın solid tümör hastasını yanlışlıkla düşük riskli sayabilir; CISNE bu kohortta daha iyi ayırır. İkisini birlikte kullanmak gereksiz yatışları da gereksiz taburculukları da azaltır.</p></div>
+    <div class="kutu kural"><div class="ad">Altın kural</div><p>Skor hekim muhakemesinin yerine geçmez: kateter enfeksiyonu şüphesi, ağır mukozit ve pulmoner infiltrasyon skordan önce gelir.</p></div>
+  </div>
+
+  <div class="folyo"><b>6</b><span>MediSea Hızlı Bakış · Onkoloji</span></div>
+</section>
+
+<!-- ================= 7 · KARAR YOLU: AMPİRİK TEDAVİ (sağ) ================= -->
+<section class="sayfa sag tur-karar">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>FN · Yaklaşım</span></div>
+  <div class="ust-etiket">Ampirik tedavi · Karar yolu</div>
+  <h1 class="konu orta">Hangi rejim, nerede?</h1>
+
+  <div class="karar-izgara">
+    <div>
+      <div class="adim"><div class="no">1</div><div>
+        <h3>Yüksek risk: yatır, IV monoterapi</h3>
+        <p>IV antipsödomonal beta-laktam <b>monoterapisi</b>: sefepim, meropenem, imipenem-silastatin ya da piperasilin-tazobaktam. Komplikasyonsuz hastada ampirik aminoglikozit eklemek yararsız ve nefrotoksiktir.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">2</div><div>
+        <h3>Ne zaman ikinci ajan?</h3>
+        <div class="bw" style="grid-template-columns:1fr 1fr">
+          <div><b>İnstabilite ya da dirençli patojen şüphesi</b><span>Beta-laktama ikinci gram-negatif ajan (aminoglikozid ya da kinolon) eklenir</span></div>
+          <div><b>Penisilin alerjisi</b><span>Aztreonam + vankomisin; alternatif siprofloksasin + klindamisin</span></div>
+        </div>
+      </div></div>
+
+      <div class="adim"><div class="no">3</div><div>
+        <h3>Vankomisin: rutin değil</h3>
+        <table class="tb">
+          <thead><tr><th style="width:40mm">Ekle</th><th>Gerekçe</th></tr></thead>
+          <tbody>
+            <tr><td class="bas">Hemodinamik instabilite</td><td>Sepsis ya da septik şok</td></tr>
+            <tr><td class="bas">Ağır mukozit + kinolon profilaksisi</td><td>Viridans streptokok bakteriyemisi riski</td></tr>
+            <tr><td class="bas">Kültürde MRSA ya da sefalosporin dirençli pnömokok</td><td>Bilinen kolonizasyon da sayılır</td></tr>
+            <tr><td class="bas">Kateter ilişkili enfeksiyon</td><td>Klinik olarak belirgin</td></tr>
+            <tr><td class="bas">Radyolojik pnömoni ya da cilt-yumuşak doku enfeksiyonu</td><td>Dökümante odak</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:1.4mm">İlk 48–72 saatte dirençli gram-pozitif üremezse <b>kesilir</b>.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">4</div><div>
+        <h3>Düşük risk: oral, ayaktan</h3>
+        <p>Stabil, MASCC ≥21, ciddi odaksal semptomu olmayan hasta ilk dozdan sonra en az <b>4 saat</b> gözlenir. Rejim: <b>oral siprofloksasin ya da levofloksasin + amoksisilin-klavulanat</b> (penisilin alerjisinde klindamisin). Şart: evde refakatçi, ulaşım imkânı, nozokomiyal kinolon direncinin olmaması.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">5</div><div>
+        <h3>İstisna</h3>
+        <p>Daha önce profilaktik kinolon kullanan düşük riskli hastaya oral rejim verilmez: direnç riski nedeniyle yatırılıp IV antipsödomonal tedavi başlanır.</p>
+      </div></div>
+    </div>
+
+    <aside>
+      <div class="kutu kural"><div class="ad">Altın kural</div><p>Ampirik kapsam gram-negatiflere göre kurulur; gram-pozitif eklemesi endikasyonla yapılır ve kültür negatifse 48–72 saatte kesilir.</p></div>
+      <div class="kenar-sutun" style="margin-top:3mm">
+        <div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>Monoterapi yeter; rutin aminoglikozit yok.</p>
+          <p>Ayaktan tedavi öncesi en az 4 saat gözlem.</p>
+          <p>Kinolon profilaksisi alan hastada oral kinolon rejimi kullanılmaz.</p>
+        </div>
+      </div>
+      <div class="kutu tuzak" style="margin-top:3mm"><div class="ad">Tuzak</div><p>Ateş düşmüyor diye 48. saatte rejimi değiştirmek: stabil hastada medyan defervesans 4–5 gündür.</p></div>
+    </aside>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Onkoloji</span><b>7</b></div>
+</section>
+
+<!-- ================= 8 · BAŞVURU: DİRENÇLİ ATEŞ (sol) ================= -->
+<section class="sayfa sol tur-basvuru">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>FN · Başvuru</span></div>
+  <div class="ust-etiket">Febril nötropeni · Başvuru</div>
+  <h1 class="konu orta">Dirençli ateş ve antifungal</h1>
+
+  <div class="blok">
+    <table class="tb">
+      <thead><tr><th style="width:40mm">Durum</th><th>Yaklaşım</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Stabil hasta, ateş sürüyor</td><td>Medyan defervesans 4–5 gün: rejimi değiştirme, izlemeye devam et</td></tr>
+        <tr><td class="bas">Klinik kötüleşme</td><td>Dozları optimize et; ESBL üreten enterobakteriler ya da karbapenemaz üreten suşları hedefleyen üst basamak ajanları ekle</td></tr>
+        <tr><td class="bas">&gt;7 gün nötropeni + 4–7 gündür süren ateş</td><td>İnvaziv mantar şüphesi: ekinokandin (kaspofungin), lipozomal amfoterisin B ya da vorikonazol</td></tr>
+        <tr><td class="bas">Toraks BT’de nodül ya da kavitasyon</td><td>Küf ön planda: bronkoalveoler lavaj + seri galaktomannan, küf etkili azol</td></tr>
+        <tr><td class="bas">Nötrofiller geri gelirken çıkan kaviter lezyon</td><td><i>Aspergillus</i> ya da <i>Fusarium</i> invazyonunun güçlü işareti</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>Tedaviyi daraltmak ve sürdürmek</h2>
+    <table class="tb">
+      <thead><tr><th style="width:44mm">Durum</th><th>Karar</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Vankomisin başlandı, 48–72 saatte dirençli gram-pozitif yok</td><td>Kes</td></tr>
+        <tr><td class="bas">Etken izole edildi</td><td>Duyarlılığa göre daralt; kapsam gram-negatifleri bırakmadan</td></tr>
+        <tr><td class="bas">Ateş ve titreme sürüyor</td><td>İlk günlerde kan kültürlerini günlük tekrarla</td></tr>
+        <tr><td class="bas">Klinik kötüleşme</td><td>Dozları optimize et, dirençli suşları hedefleyen ajan ekle</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Biyobelirteçler</h2>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">Galaktomannan</td><td><i>Aspergillus</i> için özgüllüğü yüksek</td></tr>
+          <tr><td class="bas">(1,3)-Beta-D-glukan</td><td>Aspergilloz, kandidiyaz ve PJP dahil geniş kapsam; özgül değil ama duyarlı</td></tr>
+          <tr><td class="bas">Sıklık</td><td>Uzun süreli derin nötropenide haftada 1–2 kez</td></tr>
+          <tr><td class="bas">Yalancı negatiflik</td><td>Hasta ekinokandin ya da küf etkili azol profilaksisi alıyorsa duyarlılık düşer</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="blok">
+      <h2>Ampirik mi, preemptif mi?</h2>
+      <p><b>Ampirik:</b> dirençli ateşe dayanarak antifungal başlamak. <b>Preemptif:</b> biyobelirteç ve görüntüleme bulgularıyla, belirgin pulmoner odak olmadan erken başlamak. İkincisi gereksiz antifungal maruziyetini azaltmayı hedefler.</p>
+      <p style="margin-top:1.6mm">Dirençli ya da atipik pulmoner nodülde periferik testlerle yetinme: bronkoskopi ile BAL, fungal kültür, direkt mikroskopi ve PCR tanı olasılığını belirgin artırır.</p>
+    </div>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu tuzak"><div class="ad">Tuzak · profilaksi altında tarama</div><p>Küf etkili profilaksi alan hastada galaktomannan ve beta-D-glukanı rutin tarama amacıyla kullanmak yanıltıcıdır.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Mantar riski nötropeni 7 günü aşınca belirginleşir.</p>
+        <p>Kaviter lezyon nötrofil geri dönüşünde ortaya çıkabilir.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>8</b><span>MediSea Hızlı Bakış · Onkoloji</span></div>
+</section>
+
+<!-- ================= 9 · BAŞVURU: PROFİLAKSİ (sağ) ================= -->
+<section class="sayfa sag tur-basvuru">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>FN · Başvuru</span></div>
+  <div class="ust-etiket">Febril nötropeni · Başvuru</div>
+  <h1 class="konu orta">Profilaksi ve G-CSF</h1>
+
+  <div class="blok">
+    <h2>Antimikrobiyal profilaksi</h2>
+    <table class="tb">
+      <thead><tr><th style="width:34mm">Sınıf</th><th style="width:52mm">Kime?</th><th>Ajan</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Antibakteriyel</td><td>Nötropenisi &gt;7 gün beklenen yüksek riskli hasta (akut lösemi, kök hücre nakli)</td><td>Levofloksasin ya da siprofloksasin</td></tr>
+        <tr><td class="bas">Antibakteriyel · yapılmaz</td><td>Düşük riskli solid tümör hastası</td><td>Rasyonel endikasyon yok; kinolon direnci riski</td></tr>
+        <tr><td class="bas">Antifungal</td><td>AML ve MDS indüksiyonu, uzun derin nötropeni</td><td>Küf kapsamı için posakonazol; rehbere göre flukonazol ya da ekinokandin</td></tr>
+        <tr><td class="bas">Antiviral</td><td>HSV ya da VZV seropozitif hasta</td><td>Asiklovir ya da valasiklovir</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>G-CSF</h2>
+    <table class="tb">
+      <thead><tr><th style="width:40mm">Kullanım</th><th>Kural</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Birincil profilaksi</td><td>Rejimin febril nötropeni riski <b>≥%20</b> ise her kürde filgrastim ya da pegfilgrastim</td></tr>
+        <tr><td class="bas">Orta risk (%10–20)</td><td>65 yaş üstü, ileri evre, önceki yoğun kemoterapi ya da radyoterapi, kemik iliği tutulumu, ciddi komorbidite varsa yine uygulanır</td></tr>
+        <tr><td class="bas">İkincil profilaksi</td><td>Daha önce febril nötropeni atağı geçiren hastada sonraki kürlerde</td></tr>
+        <tr><td class="bas">Atak sırasında (terapötik)</td><td>Rutin <b>önerilmez</b>: genel prognozu ve mortaliteyi iyileştirmiyor</td></tr>
+        <tr><td class="bas">Terapötik istisna</td><td>ANC &lt;100/µL ve &gt;10 gün beklenen derin nötropeni, radyolojik pnömoni, dökümante ağır invaziv fungal enfeksiyon, yerleşmiş sepsis ya da septik şok</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>Kim yüksek riskli sayılır?</h2>
+    <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+      <div><b>Hastalık ve tedavi</b><span>Akut lösemi indüksiyonu, allojenik kök hücre nakli: nötropeni &gt;7 gün</span></div>
+      <div><b>Skor</b><span>MASCC &lt;21 ya da solid tümörde CISNE ≥3</span></div>
+      <div><b>Organ</b><span>Hemodinamik instabilite, konfüzyon, solunum yetmezliği, oligüri, ağır mukozit, CrCl &lt;30, transaminazlarda &gt;5 kat artış</span></div>
+    </div>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · profilaksinin bedeli</div><p>Kinolon profilaksisi gram-negatif bakteriyemiyi azaltırken direnç baskısı yaratır ve etken profilini gram-pozitiflere kaydırır: bu yüzden yalnız yüksek riskli gruba verilir.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Birincil G-CSF eşiği %20.</p>
+        <p>Ateş başladıktan sonra rutin G-CSF yok.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Onkoloji</span><b>9</b></div>
+</section>
+
+<!-- ================= 10 · BAŞVURU: VAKADAN KARARA (sol) ================= -->
+<section class="sayfa sol tur-basvuru">
+  <div class="tirnak">Onkoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Onkoloji</span><span>FN · Başvuru</span></div>
+  <div class="ust-etiket">Febril nötropeni · Başvuru</div>
+  <h1 class="konu orta">Vakadan karara</h1>
+
+  <div class="blok">
+    <table class="tb">
+      <thead><tr><th style="width:84mm">Senaryo</th><th>Doğru yaklaşım</th></tr></thead>
+      <tbody>
+        <tr><td>Meme kanseri, ANC 300, ateş 38,5 °C, stabil, MASCC 23, CISNE 0, evde refakatçi var</td><td>Düşük risk: 4 saat gözlem, oral kinolon + amoksisilin-klavulanat, ayaktan izlem</td></tr>
+        <tr><td>Aynı hasta kinolon profilaksisi alıyordu</td><td>Oral rejim verilmez: yatış ve IV antipsödomonal tedavi</td></tr>
+        <tr><td>AML indüksiyonu, ANC 50, tansiyon 80/50</td><td>Yüksek risk + şok: beta-laktama ikinci gram-negatif ajan ve vankomisin eklenebilir</td></tr>
+        <tr><td>Ateşli hastada rektal ısı ölçümü isteniyor</td><td>Yapılmaz; aksiller ya da oral ölçüm</td></tr>
+        <tr><td>Kateterli hastada kızarıklık ve hassasiyet</td><td>Kateter ilişkili enfeksiyon: vankomisin endikasyonu; kültürleri her lümenden al</td></tr>
+        <tr><td>Üç gündür ateşi süren, stabil, nötropenisi 5 gün sürmesi beklenen hasta</td><td>Rejimi değiştirme: defervesans 4–5 günü bulabilir</td></tr>
+        <tr><td>Allojenik nakil, 6 gündür ateş, nötropeni sürüyor, BT’de nodül</td><td>İnvaziv mantar: küf etkili tedavi, BAL ve galaktomannan</td></tr>
+        <tr><td>Öksürüğü olan hastada PA grafi normal</td><td>Toraks BT çek: grafi nötropenide yanıltır</td></tr>
+        <tr><td>Karın ağrısı ve ishal</td><td>Kontrastlı batın BT + <i>C. difficile</i> toksini; tiflit ayırıcı tanıda</td></tr>
+        <tr><td>Kültürlerde üreme yok, hasta 72 saattir vankomisin alıyor</td><td>Gram-pozitif üremediyse vankomisini kes</td></tr>
+        <tr><td>FN riski %25 olan rejim planlanıyor</td><td>Her kürde birincil G-CSF profilaksisi</td></tr>
+        <tr><td>Ateşi başlamış hastada G-CSF isteniyor</td><td>Rutin önerilmez; yalnız tanımlı yüksek riskli durumlarda</td></tr>
+        <tr><td>ANC 80/µL ölçülen AML hastası</td><td>Derin nötropeni: ayrı ve daha ağır kategori</td></tr>
+        <tr><td>Penisilin anafilaksisi olan yüksek riskli hasta</td><td>Aztreonam + vankomisin</td></tr>
+        <tr><td>Solid tümör, ECOG 2, monosit 150/µL, mukozit evre 2</td><td>CISNE ≥3: yüksek risk, yatır</td></tr>
+        <tr><td>MASCC 22 ama hasta merkeze 90 dakika uzakta yaşıyor</td><td>Skor düşük risk dese de yatış: lojistik kırmızı bayrak</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu kural"><div class="ad">Altın kural · beş cümlede FN</div><p>Ateş tek bulgudur · kültür önce, antibiyotik 60 dakikada · hedef gram-negatifler · vankomisin endikasyonla ve 48–72 saatte gözden geçirilir · 7 günü aşan nötropenide mantarı düşün.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>MASCC ≥21 düşük risk; CISNE ≥3 yüksek risk.</p>
+        <p>Atakların %20–30’unda etken bulunur.</p>
+        <p>Rektal tuşe ve ısı ölçümü yasak.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>10</b><span>MediSea Hızlı Bakış · Onkoloji</span></div>
+</section>
+
+<script>
+/* önizleme: ?s=N yalnızca N. sayfayı gösterir; ayrıca taşan sayfaları konsola yazar */
+(function () {
+  var s = new URLSearchParams(location.search).get("s");
+  var sayfalar = document.querySelectorAll(".sayfa");
+  if (s) {
+    document.body.style.cssText = "padding:0;background:#fff";
+    sayfalar.forEach(function (el, i) { el.style.display = i + 1 === +s ? "" : "none"; el.style.margin = "0"; el.style.boxShadow = "none"; });
+  }
+})();
+</script>
+</body>
+</html>

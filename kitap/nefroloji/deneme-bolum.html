@@ -1,0 +1,2690 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Hızlı Bakış · Nefroloji · Deneme bölümü</title>
+<link rel="stylesheet" href="../sablon/hizli-bakis.css">
+<style>
+/* bu bölüme özgü şekiller */
+.agac { margin-bottom: 4.5mm; }
+.agac .kok { background: var(--murekkep); color: #fff; padding: 2.4mm 4mm; text-align: center; width: 100mm; margin: 0 auto; }
+.agac .kok b { display: block; font: 700 10pt/1.2 var(--serif); }
+.agac .kok span { font-size: 7.2pt; opacity: .8; }
+.agac .test { width: 62mm; margin: 0 auto; text-align: center; border: .8pt solid var(--murekkep); padding: 1.6mm; font: 600 7.4pt/1.2 var(--dar); letter-spacing: .06em; text-transform: uppercase; position: relative; background: #fff; }
+.agac .dikey { width: .8pt; height: 3mm; background: var(--murekkep); margin: 0 auto; }
+.agac .catal { height: 4mm; margin: 0 44mm; border: .8pt solid var(--murekkep); border-bottom: 0; }
+.agac .dallar { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+.dal { border-top: 2.2mm solid var(--brans); background: var(--brans-acik); padding: 2.6mm 3mm 2.4mm; }
+.dal.yikim { border-top-color: #56687A; background: #EBEFF3; }
+.dal .dal-ad { font: 700 7pt/1.2 var(--dar); letter-spacing: .1em; text-transform: uppercase; color: var(--brans-koyu); }
+.dal.yikim .dal-ad { color: #3C4C5C; }
+.dal .dal-ozet { font: 600 9.5pt/1.2 var(--serif); margin: .8mm 0 2mm; }
+.dal dl { margin: 0; display: grid; gap: 1.4mm; }
+.dal dt { font-weight: 600; font-size: 7.9pt; }
+.dal dd { margin: 0; font-size: 7.3pt; color: var(--murekkep-2); line-height: 1.3; }
+.dal .oran { margin-top: 2.2mm; padding-top: 1.8mm; border-top: .5pt solid rgba(0,0,0,.18); font-size: 7.3pt; }
+.dal .oran b { font-family: var(--mono); font-size: 8pt; }
+
+.yolak { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; margin: 1mm 0 2mm; }
+.yolak .ist { position: relative; padding: 0 2.4mm; }
+.yolak .ist .kap { background: var(--brans-acik); border-top: 1.4mm solid var(--brans); padding: 2mm 2.2mm; min-height: 15mm; }
+.yolak .ist .kap b { display: block; font: 700 7.8pt/1.2 var(--dar); letter-spacing: .04em; }
+.yolak .ist .kap span { font-size: 7pt; color: var(--murekkep-2); line-height: 1.25; display: block; margin-top: .6mm; }
+.yolak .ist:not(:last-child)::after { content: ""; position: absolute; right: -1.6mm; top: 7mm; border-left: 2.4mm solid var(--brans); border-top: 1.8mm solid transparent; border-bottom: 1.8mm solid transparent; z-index: 1; }
+.yolak .ilac { margin-top: 1.8mm; display: grid; gap: 1mm; }
+.yolak .ilac i { font-style: normal; display: block; background: var(--murekkep); color: #fff; font: 600 7pt/1.2 var(--dar); padding: 1mm 1.6mm; letter-spacing: .02em; }
+.yolak .ilac i.sure { background: var(--spot); }
+
+.zaman { display: grid; grid-template-columns: 40mm 1fr 52mm; align-items: center; gap: 0; margin: 3mm 0 1mm; }
+.zaman .uc { background: var(--murekkep); color: #fff; padding: 2mm 3mm; font-size: 7.6pt; }
+.zaman .uc b { display: block; font: 700 8pt/1.2 var(--dar); letter-spacing: .06em; text-transform: uppercase; }
+.zaman .uc.iyot { background: var(--inci); }
+.zaman .ara { position: relative; height: 12mm; }
+.zaman .ara::before { content: ""; position: absolute; left: 0; right: 2.4mm; top: 50%; height: .9mm; background: repeating-linear-gradient(90deg, var(--spot) 0 2.2mm, transparent 2.2mm 3.4mm); }
+.zaman .ara::after { content: ""; position: absolute; right: 0; top: calc(50% - 1.8mm); border-left: 2.6mm solid var(--spot); border-top: 1.8mm solid transparent; border-bottom: 1.8mm solid transparent; }
+.zaman .ara span { position: absolute; left: 0; right: 0; top: -.4mm; text-align: center; font: 700 8pt/1 var(--dar); letter-spacing: .08em; color: var(--spot); text-transform: uppercase; }
+
+.bw { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2mm; }
+.bw div { border: .6pt solid var(--ince); padding: 2mm; }
+.bw b { display: block; font: 700 7pt/1.2 var(--dar); letter-spacing: .1em; text-transform: uppercase; color: var(--brans-koyu); margin-bottom: .8mm; }
+.bw span { font-size: 7.4pt; line-height: 1.3; display: block; }
+
+.protokol { display: grid; gap: 1.6mm; }
+.protokol .p { display: grid; grid-template-columns: 7mm 34mm 1fr; gap: 3mm; align-items: start; padding: 2mm 0; border-bottom: .5pt solid var(--ince); }
+.adim .protokol .p .no { width: auto; height: auto; border-radius: 0; background: none; text-align: left; font: 700 13pt/1 var(--serif); color: var(--brans); }
+.organ { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2.4mm; margin-top: 4.5mm; }
+.organ div { border-top: .8pt solid var(--murekkep); padding-top: 1.6mm; font-size: 7.4pt; line-height: 1.3; }
+.organ b { display: block; font: 700 7pt/1.2 var(--dar); letter-spacing: .1em; text-transform: uppercase; color: var(--brans-koyu); margin-bottom: .8mm; }
+.protokol .p .ne { font: 700 7.4pt/1.25 var(--dar); letter-spacing: .06em; text-transform: uppercase; }
+.protokol .p .doz { font-size: 8pt; }
+.protokol .p .doz em { display: block; font-style: normal; font-size: 7.3pt; color: var(--murekkep-2); margin-top: .6mm; }
+.protokol .p .doz .kritik { color: var(--spot); font-weight: 600; }
+
+.karar-izgara { display: grid; grid-template-columns: 1fr 50mm; gap: 6mm; }
+.kenar-sutun { background: var(--spot-acik); padding: 3mm; align-self: start; }
+.kenar-sutun .ad { font: 700 7pt/1 var(--dar); letter-spacing: .14em; text-transform: uppercase; color: var(--spot); margin-bottom: 2.4mm; }
+.kenar-sutun .spotlar p { font-size: 7.8pt; padding-bottom: 1.8mm; border-bottom: .5pt solid rgba(184,24,90,.2); }
+.kenar-sutun .spotlar p:last-child { border: 0; padding-bottom: 0; }
+
+.serit { display: grid; grid-template-columns: repeat(4, 1fr); border-top: .6pt solid var(--murekkep); border-bottom: .6pt solid var(--murekkep); margin-bottom: 4.5mm; }
+.serit div { padding: 1.8mm 2.4mm; font-size: 8pt; line-height: 1.3; }
+.serit div + div { border-left: .5pt solid var(--ince); }
+.serit b { display: block; font: 700 6.4pt/1.3 var(--dar); letter-spacing: .12em; text-transform: uppercase; color: var(--brans); margin-bottom: .4mm; }
+
+
+/* ---- notlar sayfası ---- */
+.notlar-sayfa .cizgili { position: absolute; left: 14mm; right: 20mm; top: 52mm; bottom: 22mm; background: repeating-linear-gradient(to bottom, transparent 0 8.4mm, var(--ince) 8.4mm 8.7mm); }
+
+/* ---- gebelik haftası şekli ---- */
+.hafta-sekil { margin-bottom: 4.5mm; }
+.hs-satir { display: grid; grid-template-columns: 30mm 1fr; align-items: center; min-height: 6.6mm; }
+.hs-satir + .hs-satir { border-top: .4pt solid var(--ince); }
+.hs-ad { font: 700 6.8pt/1.1 var(--dar); letter-spacing: .06em; text-transform: uppercase; color: var(--murekkep-2); padding-right: 2mm; }
+.hs-iz { position: relative; height: 6.6mm; background: linear-gradient(to right, transparent calc(32.5% - .3pt), var(--ince) calc(32.5% - .3pt) calc(32.5% + .3pt), transparent calc(32.5% + .3pt) calc(67.5% - .3pt), var(--ince) calc(67.5% - .3pt) calc(67.5% + .3pt), transparent calc(67.5% + .3pt)); }
+.hs-iz .bar { position: absolute; top: 1.2mm; height: 4.2mm; background: var(--brans); color: #fff; font: 600 6.4pt/4.2mm var(--dar); font-style: normal; padding: 0 1.4mm; white-space: nowrap; overflow: hidden; }
+.hs-iz .bar.acik { background: var(--brans-orta); color: var(--brans-koyu); }
+.hs-iz .bar.koyu { background: var(--brans-koyu); }
+.hs-iz .bar.kirmizi { background: var(--spot); }
+.hs-iz .bar.mavi { background: var(--inci); }
+.hs-iz .nokta { position: absolute; top: 2.1mm; width: 2.4mm; height: 2.4mm; margin-left: -1.2mm; border-radius: 50%; background: var(--spot); }
+.hs-iz .not { position: absolute; top: 0; font: italic 400 6.8pt/6.6mm var(--sans); color: var(--murekkep-2); white-space: nowrap; }
+.hs-eksen .hs-iz .tri { position: absolute; top: 0; text-align: center; font: 700 6.6pt/6.6mm var(--dar); letter-spacing: .1em; text-transform: uppercase; color: var(--brans-koyu); background: var(--brans-acik); }
+.hs-eksen .hs-iz .tri + .tri { border-left: .6pt solid #fff; }
+.hs-olcek .hs-iz span { position: absolute; top: 0; transform: translateX(-50%); font: 500 6.4pt/6.6mm var(--mono); color: var(--murekkep-2); }
+.hs-olcek .hs-iz span:first-child { transform: none; }
+.hs-olcek .hs-iz span:last-child { transform: translateX(-100%); }
+
+/* ---- postpartum tiroidit fazları ---- */
+.ppt { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5mm; margin: 1mm 0 2.6mm; font-family: var(--sans); font-size: 7.6pt; line-height: 1.3; }
+.ppt div { padding: 2mm 2.4mm; }
+.ppt b { display: block; font: 700 7.2pt/1.2 var(--dar); letter-spacing: .06em; text-transform: uppercase; }
+.ppt .f1 { background: var(--spot-acik); color: var(--spot); }
+.ppt .f2 { background: var(--brans-orta); color: var(--brans-koyu); }
+.ppt .f3 { background: var(--brans-acik); color: var(--brans-koyu); }
+
+
+/* ---- penetrans şekli ---- */
+.penetrans { margin-bottom: 4.5mm; }
+.pn-baslik, .pn-satir { display: grid; grid-template-columns: 40mm 1fr; align-items: center; }
+.pn-satir { min-height: 6mm; border-top: .4pt solid var(--ince); }
+.pn-satir > span { font: 600 7.4pt/1.15 var(--sans); color: var(--murekkep); padding-right: 2mm; }
+.pn-satir.alt > span { font-weight: 400; color: var(--murekkep-2); padding-left: 3mm; }
+.pn-olcek, .pn-iz { position: relative; height: 6mm; }
+.pn-iz { background: linear-gradient(to right, transparent calc(25% - .3pt), var(--ince) calc(25% - .3pt) calc(25% + .3pt), transparent calc(25% + .3pt) calc(50% - .3pt), var(--ince) calc(50% - .3pt) calc(50% + .3pt), transparent calc(50% + .3pt) calc(75% - .3pt), var(--ince) calc(75% - .3pt) calc(75% + .3pt), transparent calc(75% + .3pt)); }
+.pn-olcek i { position: absolute; top: 1.4mm; font: 500 6.4pt/1 var(--mono); font-style: normal; color: var(--murekkep-2); transform: translateX(-50%); }
+.pn-olcek i:first-child { transform: none; } .pn-olcek i:last-child { transform: translateX(-100%); }
+.pn-iz b { position: absolute; top: 1.5mm; height: 3mm; min-width: 1.4mm; background: var(--brans); }
+.pn-iz b.k { background: var(--brans-koyu); }
+.pn-iz b.a { background: var(--brans-orta); }
+.pn-iz b.s { background: var(--spot); }
+.pn-iz em { position: absolute; top: 0; margin-left: 1mm; font: 600 6.8pt/6mm var(--dar); font-style: normal; color: var(--murekkep-2); white-space: nowrap; }
+
+/* ---- süre şekli ---- */
+.sure-sekil { margin-bottom: 4.5mm; }
+.ss-satir { display: grid; grid-template-columns: 40mm 1fr; align-items: center; min-height: 6.4mm; }
+.ss-satir + .ss-satir { border-top: .4pt solid var(--ince); }
+.ss-satir > span { font: 600 7.4pt/1.15 var(--sans); padding-right: 2mm; }
+.ss-iz { position: relative; height: 6.4mm; background: linear-gradient(to right, transparent calc(20% - .3pt), var(--ince) calc(20% - .3pt) calc(20% + .3pt), transparent calc(20% + .3pt) calc(40% - .3pt), var(--ince) calc(40% - .3pt) calc(40% + .3pt), transparent calc(40% + .3pt) calc(60% - .3pt), var(--ince) calc(60% - .3pt) calc(60% + .3pt), transparent calc(60% + .3pt) calc(80% - .3pt), var(--ince) calc(80% - .3pt) calc(80% + .3pt), transparent calc(80% + .3pt)); }
+.ss-iz b { position: absolute; top: 1.2mm; height: 4mm; left: 0; background: var(--brans); }
+.ss-iz b.acik { background: var(--brans-orta); }
+.ss-iz b.an { background: var(--inci); }
+.ss-iz b.an.acik { background: var(--inci-acik); border: .5pt solid var(--inci); }
+.ss-iz b.dn { background: var(--murekkep); }
+.ss-iz em { position: absolute; top: 0; margin-left: 1mm; font: 600 6.8pt/6.4mm var(--dar); font-style: normal; color: var(--murekkep-2); white-space: nowrap; }
+.ss-olcek .ss-iz { background: none; }
+.ss-olcek .ss-iz i { position: absolute; top: 1.2mm; font: 500 6.4pt/1 var(--mono); font-style: normal; color: var(--murekkep-2); transform: translateX(-50%); }
+.ss-olcek .ss-iz i:first-child { transform: none; } .ss-olcek .ss-iz i:last-child { transform: translateX(-100%); }
+ol.madde-no { margin: 0; padding-left: 4.5mm; }
+ol.madde-no li { margin-bottom: 1.2mm; padding-left: .5mm; }
+ol.madde-no li::marker { font: 700 8pt var(--serif); color: var(--brans); }
+
+/* ---- sayfa 1: içindekiler iki sütun, kutu kılavuzu üstte şerit ---- */
+.acilis .govde { grid-template-columns: 1fr !important; grid-template-rows: auto 1fr; gap: 5mm !important; padding-top: 7mm !important; }
+.acilis .okuma-kilavuzu { order: -1; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.4mm; align-items: stretch; }
+.acilis .okuma-kilavuzu > h2 { grid-column: 1 / -1; margin-bottom: 0; }
+.acilis .okuma-kilavuzu .kutu { margin: 0; padding: 1.8mm 2.2mm; font-size: 7.2pt; line-height: 1.3; }
+.acilis .okuma-kilavuzu > p { display: none; }
+.acilis .icindekiler { columns: 2; column-gap: 9mm; }
+.acilis .icindekiler li { break-inside: avoid; }
+.acilis .icindekiler li.grup { break-after: avoid; }
+.sekil-baslik { font: 700 6.8pt/1 var(--dar); letter-spacing: .12em; text-transform: uppercase; color: var(--murekkep-2); margin-bottom: 1.6mm; }
+
+/* ---- tirzepatid şekli ---- */
+.tirz-sekil { display: grid; grid-template-columns: 1fr 1.35fr; gap: 6mm; margin-bottom: 4.5mm; }
+.tirz-sekil .sekil-alt { grid-column: 1 / -1; margin-top: 0; }
+.basamak { display: grid; grid-template-columns: repeat(6, 1fr); align-items: end; gap: 1.2mm; height: 31mm; border-bottom: .8pt solid var(--murekkep); }
+.basamak div { position: relative; background: var(--brans); display: flex; align-items: flex-start; justify-content: center; }
+.basamak div:first-child { background: var(--brans-orta); }
+.basamak b { font: 700 7.4pt/1 var(--dar); color: #fff; margin-top: 1mm; }
+.basamak div:first-child b { color: var(--brans-koyu); }
+.basamak span { position: absolute; bottom: -4mm; left: 0; right: 0; text-align: center; font: 500 6.2pt/1 var(--mono); color: var(--murekkep-2); }
+.ts-not { margin-top: 5mm; font-size: 7pt; line-height: 1.3; color: var(--murekkep-2); }
+.kk-s, .kk-olcek { display: grid; grid-template-columns: 38mm 1fr; align-items: center; min-height: 6.4mm; }
+.kk-s + .kk-s { border-top: .4pt solid var(--ince); }
+.kk-s > span { font-size: 7pt; line-height: 1.2; padding-right: 1.5mm; }
+.kk-iz { position: relative; height: 6.4mm; background: linear-gradient(to right, transparent calc(40% - .3pt), var(--ince) calc(40% - .3pt) calc(40% + .3pt), transparent calc(40% + .3pt) calc(80% - .3pt), var(--ince) calc(80% - .3pt) calc(80% + .3pt), transparent calc(80% + .3pt)); display: flex; align-items: center; }
+.kk-iz b { height: 3.6mm; background: var(--brans); }
+.kk-iz b.gri { background: var(--murekkep-2); }
+.kk-iz em { font: 700 6.8pt/1 var(--dar); font-style: normal; margin-left: 1mm; color: var(--murekkep); }
+.kk-olcek > div { position: relative; height: 4mm; }
+.kk-olcek i { position: absolute; top: 1mm; font: 500 6.2pt/1 var(--mono); font-style: normal; color: var(--murekkep-2); transform: translateX(-50%); }
+.serit-zincir { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5mm; }
+.serit-zincir div { position: relative; background: var(--brans-acik); border-top: 1.2mm solid var(--brans); padding: 2mm 2.4mm; }
+.serit-zincir div:not(:last-child)::after { content: "→"; position: absolute; right: -4.2mm; top: 50%; transform: translateY(-50%); font: 700 10pt/1 var(--sans); color: var(--brans); }
+.serit-zincir div.son { background: var(--murekkep); border-top-color: var(--spot); color: #fff; }
+.serit-zincir b { display: block; font: 700 9pt/1.2 var(--dar); color: var(--brans-koyu); }
+.serit-zincir div.son b { color: #F6B8D0; }
+.serit-zincir span { display: block; font-size: 7.4pt; line-height: 1.3; margin-top: .6mm; }
+.kk-olcek i:first-child { transform: none; } .kk-olcek i:last-child { transform: translateX(-100%); }
+.acilis { grid-template-rows: 112mm 1fr !important; }
+.acilis .renk { padding-bottom: 12mm !important; }
+
+.acilis .icindekiler li { padding: .9mm 0; grid-template-columns: 1fr auto; }
+.acilis .icindekiler li > div { display: flex; align-items: baseline; gap: 2mm; flex-wrap: wrap; }
+.acilis .icindekiler li span { font-size: 9.2pt; }
+.acilis .icindekiler li small { margin-top: 0; font-size: 6pt; }
+.acilis .icindekiler li em { font-size: 8.6pt; }
+.acilis .okuma-kilavuzu .kutu { padding: 2mm 2.6mm; }
+.icindekiler li.grup { display: block; border: 0; padding: 3mm 0 0; font: 700 6.6pt/1 var(--dar); letter-spacing: .14em; text-transform: uppercase; color: var(--murekkep-2); }
+.oklu { font-family: var(--mono); font-weight: 600; font-size: 7.6pt; }
+
+/* ---- kısım kapağı ---- */
+.kisim { padding: 0 !important; display: grid; grid-template-rows: 96mm 1fr; }
+.kisim .bant { background: var(--brans-koyu); color: #fff; padding: 20mm 22mm 12mm 26mm; display: flex; flex-direction: column; justify-content: flex-end; }
+.kisim .kisim-no { font: 600 8pt/1 var(--mono); letter-spacing: .2em; text-transform: uppercase; opacity: .8; margin-bottom: 5mm; }
+.kisim .bant h1 { font: 700 34pt/1.02 var(--serif); letter-spacing: -.015em; margin: 0; text-wrap: balance; }
+.kisim .bant .alt { font: italic 400 12pt/1.3 var(--serif); margin-top: 3mm; opacity: .9; }
+.kisim .govde { padding: 11mm 18mm 22mm 26mm; display: grid; grid-template-columns: 1.1fr 1fr; gap: 10mm; }
+.kurallar ol { list-style: none; counter-reset: k; margin: 0; padding: 0; }
+.kurallar li { counter-increment: k; display: grid; grid-template-columns: 9mm 1fr; gap: 2.4mm; padding: 2.4mm 0; border-bottom: .5pt solid var(--ince); font: 400 9.6pt/1.38 var(--serif); }
+.kurallar li::before { content: counter(k); font: 700 19pt/1 var(--serif); color: var(--brans); }
+.kisim .icindekiler li { padding: 1.7mm 0; }
+.kisim .icindekiler li span { font-size: 10pt; }
+
+/* ---- doğal seyir şekli ---- */
+.seyir-sekil { margin-bottom: 4.5mm; }
+.seyir { display: grid; grid-template-columns: 1fr 13mm 1fr 13mm 1fr; align-items: stretch; }
+.seyir .evre { padding: 2.4mm 2.8mm; font-size: 7.6pt; line-height: 1.3; }
+.seyir .evre b { display: block; font: 700 7.6pt/1.2 var(--dar); letter-spacing: .06em; text-transform: uppercase; margin-bottom: .8mm; }
+.seyir .e1 { background: var(--brans-acik); border-top: 1.6mm solid var(--brans-orta); }
+.seyir .e2 { background: var(--brans-orta); border-top: 1.6mm solid var(--brans); }
+.seyir .e3 { background: var(--brans-koyu); border-top: 1.6mm solid var(--murekkep); color: #fff; }
+.seyir .gecis { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1mm; }
+.seyir .gecis i { display: block; width: 0; height: 0; border-left: 3mm solid var(--brans); border-top: 2.2mm solid transparent; border-bottom: 2.2mm solid transparent; }
+.seyir .gecis em { font: 700 6.6pt/1.1 var(--dar); font-style: normal; color: var(--spot); text-align: center; white-space: nowrap; }
+.seyir-dal { display: grid; grid-template-columns: 1.55fr 1fr; gap: 3mm; margin-top: 2.4mm; }
+.dal-kutu { border: .8pt dashed var(--brans); padding: 2mm 2.6mm; font-size: 7.3pt; line-height: 1.3; color: var(--murekkep-2); }
+.dal-kutu b { display: block; font: 700 7pt/1.2 var(--dar); letter-spacing: .06em; text-transform: uppercase; color: var(--brans-koyu); margin-bottom: .6mm; }
+.dal-kutu.son { border-color: var(--spot); }
+.dal-kutu.son b { color: var(--spot); }
+.adim .protokol .p .no { font-size: 11pt; }
+
+
+/* ---- nefroloji branş rengi ---- */
+:root { --brans: #0E6E6E; --brans-koyu: #094F4F; --brans-acik: #E0F1F1; --brans-orta: #B2DDDD; }
+ol.tekrar { columns: 2; column-gap: 8mm; margin: 0; padding: 0; list-style: none; counter-reset: t; }
+ol.tekrar li { break-inside: avoid; counter-increment: t; display: grid; grid-template-columns: 6mm 1fr; column-gap: 1mm; padding: 1.7mm 0; border-bottom: .5pt solid var(--ince); font-size: 8pt; line-height: 1.3; }
+ol.tekrar li::before { content: counter(t); grid-row: span 2; font: 700 9pt/1.2 var(--serif); color: var(--brans); }
+ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--brans-koyu); margin-top: .5mm; }
+.sekil-blok { margin-bottom: 4.5mm; }
+.acilis .icindekiler { columns: 1 !important; }
+</style>
+</head>
+<body>
+
+<!-- ================= 1 · BÖLÜM AÇILIŞI (sağ sayfa) ================= -->
+<section class="sayfa sag acilis">
+  <div class="renk">
+    <div class="seri">MediSea · Hızlı Bakış</div>
+    <div class="bolum-no">Bölüm 5 · Deneme baskısı</div>
+    <h1>Nefroloji</h1>
+    <div class="alt">Polikistik böbrek, IgA nefropatisi, mineral-kemik, asit-baz</div>
+  </div>
+  <div class="govde">
+    <div>
+      <h2>Bu bölümde</h2>
+      <ol class="icindekiler">
+        <li class="grup">Kısım 1 · ADPKD</li>
+        <li><div><span>ADPKD</span><small>Açık sayfa + anlatı</small></div><em>2</em></li>
+        <li><div><span>Ekstrarenal tutulum</span><small>Başvuru</small></div><em>5</em></li>
+        <li><div><span>Tanı ve risk sınıflaması</span><small>Karar yolu</small></div><em>6</em></li>
+        <li><div><span>Tedavi kararı ve tolvaptan</span><small>Karar yolu</small></div><em>7</em></li>
+        <li><div><span>Komplikasyon yönetimi</span><small>Başvuru</small></div><em>8</em></li>
+        <li><div><span>Kardiyovasküler tutulum</span><small>Başvuru</small></div><em>9</em></li>
+        <li><div><span>Vakadan karara</span><small>Başvuru</small></div><em>10</em></li>
+        <li class="grup">Kısım 2 · Glomerüler hastalıklar</li>
+        <li><div><span>IgA nefropatisi</span><small>Kapak · açık sayfa · anlatı · iki karar yolu · dört başvuru</small></div><em>11</em></li>
+        <li class="grup">Kısım 3 · Mineral metabolizması</li>
+        <li><div><span>KBH’de hiperfosfatemi ve mineral-kemik bozukluğu</span><small>Kapak · açık sayfa · anlatı · iki karar yolu · üç başvuru · tekrar</small></div><em>21</em></li>
+        <li class="grup">Kısım 4 · Asit-baz</li>
+        <li><div><span>Asit-baz bozuklukları</span><small>Kapak · açık sayfa · anlatı · karar yolu · dört başvuru</small></div><em>31</em></li>
+      </ol>
+    </div>
+    <div class="okuma-kilavuzu">
+      <h2>Kutuların anlamı</h2>
+      <div class="kutu spot"><div class="ad">Sınav spotu</div><p>Sınavda soru kökü ya da doğru şık olarak karşınıza çıkan tek cümle.</p></div>
+      <div class="kutu inci"><div class="ad">Klinik inci</div><p>Yatak başında kararı değiştiren çıkarım.</p></div>
+      <div class="kutu tuzak"><div class="ad">Tuzak</div><p>Sık yapılan, bedeli olan yanlış.</p></div>
+      <div class="kutu kural"><div class="ad">Altın kural</div><p>Atlanırsa hastaya zarar veren adım.</p></div>
+      <p>Her konu önce bir ya da iki sayfalık özetle açılır.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2 · ADPKD — AÇIK SAYFA SOL ================= -->
+<section class="sayfa sol tur-acik">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>Kistik böbrek</span></div>
+  <div class="ust-etiket">Kistik böbrek · Açık sayfa</div>
+  <h1 class="konu">Otozomal dominant polikistik böbrek hastalığı</h1>
+  <p class="giris">En sık monogenik böbrek hastalığı. Silyumdaki mekanosensör bozulunca hücre içi kalsiyum düşer, cAMP fırlar; kist hem çoğalır hem sıvıyla dolar. Tedavinin tek doğrulanmış hedefi de bu yolaktır.</p>
+
+  <div class="bakis">
+    <div class="ad">30 saniyede</div>
+    <ul class="madde">
+      <li>Prevalans <b>1:400–1:1000</b>; son dönem böbrek yetmezliğinin <b>%5–10</b>’u.</li>
+      <li><b>PKD1</b> %78–85, ağır fenotip; <b>PKD2</b> %10–15, hafif.</li>
+      <li>Hipertansiyon <b>GFR normalken</b>, 30’lu yaşlarda başlar.</li>
+      <li>En sık taş <b>ürik asit</b> — genel popülasyondan farklı.</li>
+      <li>En sık ekstrarenal bulgu <b>polikistik karaciğer</b> (&gt;%80).</li>
+      <li>Hızlı ilerleyende (Mayo 1C–1E) <b>tolvaptan</b>; ilk 18 ay aylık transaminaz.</li>
+    </ul>
+  </div>
+
+  <div class="sekil-blok">
+    <div class="sekil-baslik">Kistogenezin motoru</div>
+    <div class="yolak" style="grid-template-columns:repeat(5,1fr)">
+      <div class="ist"><div class="kap"><b>PC1 + PC2</b><span>Primer silyumda mekanosensör; iki vuruş sonrası işlev kaybı</span></div><div class="ilac"><i>PKD1 · PKD2 mutasyonu</i></div></div>
+      <div class="ist"><div class="kap"><b>Ca²⁺ ↓</b><span>Kanal kompleksi çalışmaz</span></div></div>
+      <div class="ist"><div class="kap"><b>cAMP ↑↑</b><span>Adenilat siklaz (AC5, AC6) serbest kalır; PDE1 ve PDE4 azalır</span></div><div class="ilac"><i>Tolvaptan (V2R)</i><i>Somatostatin analoğu</i></div></div>
+      <div class="ist"><div class="kap"><b>PKA → B-Raf/ERK</b><span>Kontrolsüz proliferasyon; mTOR hiperaktivasyonu</span></div></div>
+      <div class="ist"><div class="kap"><b>CFTR</b><span>Kist lümenine klor ve ozmotik sıvı: kist büyür</span></div></div>
+    </div>
+    <div class="sekil-alt"><b>Şekil 1.</b> Otozomal dominant geçişe rağmen kist başlaması için normal alelde de somatik mutasyon gerekir (iki vuruş); eşik modeline göre PC1/PC2 aktivitesinin kritik düzeyin altına inmesi de yeterlidir. Kist epiteli oksidatif fosforilasyon yerine aerobik glikolizi seçer (Warburg etkisi).</div>
+  </div>
+
+  <div class="sayilar">
+    <div class="bas-etiket">Sayılarla</div>
+    <div><strong>1:400</strong><span>–1:1000 · prevalans</span></div>
+    <div><strong>%5–10</strong><span>tüm SDBY vakalarının payı</span></div>
+    <div><strong>55–58</strong><span>yaş · PKD1’de SDBY</span></div>
+    <div><strong>~70</strong><span>yaş · PKD2’de SDBY</span></div>
+    <div><strong>&gt;6</strong><span>PROPKD skoru · yüksek risk</span></div>
+    <div><strong>≥25</strong><span>mL/dk · tolvaptan için eGFR</span></div>
+  </div>
+
+  <div class="blok" style="margin-top:4mm">
+    <h2>Bozulan yolaklar ve karşılığı</h2>
+    <table class="tb">
+      <thead><tr><th style="width:38mm">Yolak</th><th>Ne olur?</th><th style="width:40mm">Klinik karşılığı</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">cAMP–PKA–MAPK</td><td>Düşük kalsiyum ortamında cAMP mitojenik karaktere bürünür; B-Raf, MEK, ERK aktive olur</td><td>Kistik epitelde kontrolsüz proliferasyon</td></tr>
+        <tr><td class="bas">CFTR (ve TMEM16A)</td><td>PKA apikal klor kanalını fosforile eder; klor ardından sodyum ve su</td><td>Kist sıvıyla dolar, büyür</td></tr>
+        <tr><td class="bas">mTORC1</td><td>PC1’in sitoplazmik kuyruğu TSC2 ile etkileşip mTOR’u baskılar; işlev kaybında bu fren kalkar</td><td>Hiperplazi, hacim artışı</td></tr>
+        <tr><td class="bas">Wnt ve planar hücre polaritesi</td><td>Yönelimli bölünme kaybolur</td><td>Tübül uzamak yerine çapını genişletir</td></tr>
+        <tr><td class="bas">Metabolik</td><td>Aerobik glikoliz, AMPK aktivitesi ↓, yağ asidi oksidasyonu bozuk, glutamin bağımlılığı</td><td>Metformin ve glikoliz inhibitörleri araştırma hedefi</td></tr>
+        <tr><td class="bas">İnflamasyon ve fibrozis</td><td>Hipoksi, MCP-1 ile M2 makrofaj birikimi, TNF-α ve TGF-β, epitel-mezenkimal geçiş</td><td>İnterstisyel fibrozis ve nefron kaybı</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="folyo"><b>2</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 3 · ADPKD — AÇIK SAYFA SAĞ ================= -->
+<section class="sayfa sag tur-acik">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>ADPKD</span><span>Kistik böbrek</span></div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Genetik</h2>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">PKD1 · 16p13.3</td><td>%78–85; polikistin-1. Truncating mutasyonda en ağır seyir</td></tr>
+          <tr><td class="bas">PKD2 · 4q21</td><td>%10–15; polikistin-2, TRP ailesinden katyon kanalı</td></tr>
+          <tr><td class="bas">Minör genler</td><td>GANAB, DNAJB11, ALG5/8/9, IFT140, NEK8: atipik fenotip, yalnız karaciğer tutulumu, geç başlangıç</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="blok">
+      <h2>Pei-Ravine · aile öyküsü varken</h2>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">15–39 yaş</td><td>İki böbrekte toplam ≥3 kist</td></tr>
+          <tr><td class="bas">40–59 yaş</td><td>Her böbrekte ≥2 (toplam ≥4)</td></tr>
+          <tr><td class="bas">≥60 yaş</td><td>Her böbrekte ≥4</td></tr>
+          <tr><td class="bas">Dışlama</td><td>40 yaş üstünde USG’de hiç kist yoksa hastalık dışlanır (NPV %100)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Böbrek bulguları</h2>
+    <table class="tb">
+      <thead><tr><th style="width:34mm">Bulgu</th><th style="width:22mm">Sıklık</th><th>Ayrıntı</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Hipertansiyon</td><td>%70–80</td><td>GFR henüz normalken, 30’lu yaşlarda. Kistlerin intrarenal damarlara basısı → lokal iskemi → RAAS aktivasyonu. Toplam böbrek hacmiyle doğrudan ilişkili</td></tr>
+        <tr><td class="bas">Konsantrasyon defekti</td><td>Erken</td><td>Poliüri ve noktüri; medüller gradiyentin bozulması ve vazopressin direnci</td></tr>
+        <tr><td class="bas">Ağrı, kanama, hematüri</td><td>En sık başvuru</td><td>Kist içi kanama, rüptür ya da gerilme; makroskopik hematüri atakları genellikle kendini sınırlar</td></tr>
+        <tr><td class="bas">Nefrolitiazis</td><td>%20–30</td><td>İdrar stazı ve düşük idrar sitratı: en sık <b>ürik asit</b>, ikinci sıklıkta kalsiyum oksalat</td></tr>
+        <tr><td class="bas">Kist enfeksiyonu</td><td>—</td><td>Dirençli ateş + lokalize yan ağrısı. Genellikle Gram-negatif (<i>E. coli</i>); yalnız lipid çözünürlüğü yüksek ajanlar (florokinolon, TMP-SMX) kiste girer</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div>
+      <div class="kutu kural"><div class="ad">Altın kural · GFR geç kalır</div><p>GFR yıllarca hiperfiltrasyonla korunur: progresyonu göstermek için geç bir ölçüttür. Erken karar htTKV (Mayo sınıfı) ve PROPKD ile verilir.</p></div>
+      <div class="kutu tuzak"><div class="ad">Tuzak · ampirik antibiyotik</div><p>Kist enfeksiyonunda kist duvarını geçmeyen ajanla tedavi: ateş sürer, tablo dirençli sanılır.</p></div>
+    </div>
+    <div>
+      <div class="kutu inci"><div class="ad">Klinik inci · kopeptin</div><p>Vazopressin öncüsü serum kopeptin yüksekliği, böbrek hacminde hızlı artış ve eGFR düşüşüyle en güçlü korelasyonu gösteren biyokimyasal parametredir.</p></div>
+      <div class="kutu spot"><div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>Aile öyküsü yoksa: her böbrekte ≥10 kist + hepatomegali ya da karaciğer kisti ADPKD’yi düşündürür.</p>
+          <p>Vakaların %50’si 60 yaşına kadar SDBY’ye ilerler.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · neden V2 reseptörü?</div><p>Vazopressin V2 reseptörü toplayıcı kanalda cAMP’yi zaten yükseltir; ADPKD’de bu artış daha da abartılır. Tolvaptanın onaylı tek hastalık modifiye edici ajan olmasının nedeni tam olarak bu basamağı kesmesidir.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Normal böbrek epitelinde cAMP proliferasyonu baskılar; ADPKD’de düşük kalsiyum onu mitojene çevirir.</p>
+        <p>Kist sıvı sekresyonuna TMEM16A da katkı verir.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Doğal seyir ve izlem</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:42mm">Kist yükü</td><td>Yıllar içinde artar; nefron kaybını hiperfiltrasyon uzun süre maskeler</td></tr>
+        <tr><td class="bas">Hipertansiyon</td><td>Genellikle ilk klinik bulgu; kardiyovasküler olayların zeminini hazırlar</td></tr>
+        <tr><td class="bas">SDBY</td><td>Vakaların yaklaşık yarısı 60 yaşına kadar ilerler; PKD1 truncating mutasyonda en erken</td></tr>
+        <tr><td class="bas">Yıllık izlem</td><td>Kan basıncı, eGFR, albüminüri, elektrolit; Mayo sınıfı için aralıklı görüntüleme</td></tr>
+        <tr><td class="bas">Hızlı ilerleme ölçütü</td><td>Mayo 1C–1E ya da yıllık eGFR kaybı ≥3 mL/dk</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>3</b></div>
+</section>
+
+<!-- ================= 4 · ANLATI (sol) ================= -->
+<section class="sayfa sol tur-anlati">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>ADPKD · Anlatı</span></div>
+  <div class="ust-etiket">ADPKD · Anlatı</div>
+  <h1 class="konu orta">Silyumdan kiste, kistten damara</h1>
+
+  <div class="anlati">
+    <div class="metin">
+      <h2>Antenin bozulması</h2>
+      <p>Polikistin-1, on bir transmembran bölgesi olan dev bir mekanosensör glikoproteindir; polikistin-2 ise TRP ailesinden kalsiyum geçiren bir katyon kanalıdır. İkisi tübül epitelinin apikal yüzeyindeki primer silyumda reseptör-kanal kompleksi kurar. Silyum, idrar akışını ve mekanik uyarıları algılayan hücresel antendir; bu yüzden ADPKD bir <b>siliyopatidir</b>. Polikistinler kaybolunca silyum üzerinden pro-kistojenik “silyum bağımlı kist aktivasyonu” yolağı da tetiklenir.</p>
+
+      <h2>İki vuruş, bir eşik</h2>
+      <p>Geçiş otozomal dominant olsa da kistogenezin başlaması için normal alelin de somatik mutasyona uğraması gerekir; buna iki vuruş modeli denir. Güncel veriler bir eşik modelini de destekler: PC1/PC2 kompleks aktivitesinin kritik düzeyin altına inmesi tek başına yeterlidir.</p>
+
+      <h2>Kalsiyum düşer, cAMP fırlar</h2>
+      <p>Kompleksin işlev kaybı hücre içi kalsiyumu düşürür. Kalsiyumun adenilat siklaz izoformları (AC5, AC6) üzerindeki inhibisyonu kalkar, kalsiyuma bağımlı fosfodiesterazların (PDE1, PDE4) aktivitesi azalır; sonuç cAMP’de devasa artıştır. cAMP protein kinaz A üzerinden B-Raf/MEK/ERK yolağını çalıştırıp proliferasyonu, apikal CFTR kanalını açarak kist lümenine klor ve su sekresyonunu başlatır. mTOR hiperaktivasyonu epitelde hiperplaziyi tamamlar. Kist epiteli metabolik olarak da yeniden programlanır: oksidatif fosforilasyon yerine aerobik glikoliz, yani kanser hücrelerini andıran bir profil.</p>
+
+      <h2>Damar da hasta</h2>
+      <p>Polikistinler yalnız tübül epitelinde değil, endotel ve vasküler düz kas hücrelerinde de bulunur. Endotelde silyum, kan akışının yarattığı kayma stresini algılar; kalsiyum girişi nitrik oksit sentezini uyarır. Mutasyonda bu mekanosensör işlev kaybolur, nitrik oksit üretimi körelir, endotele bağımlı gevşeme bozulur. Düz kasta ise basınca karşı koruyucu miyojenik tonus zayıflar; düşük kalsiyum ve yüksek cAMP hücreleri çoğaltıp tunika medyayı düzensiz kalınlaştırır. Anevrizma eğiliminin hücresel açıklaması budur.</p>
+
+      <h2>Neden erken hipertansiyon?</h2>
+      <p>Büyüyen kistler intrarenal damarlara bası yapar, lokal iskemi RAAS’ı aktive eder. Bu yüzden hipertansiyon GFR düşmeden, çoğu hastada otuzlu yaşlarda başlar ve toplam böbrek hacmiyle doğru orantılıdır. Sol ventrikül hipertrofisi normotansif çocuklarda bile görülebilir: kardiyovasküler hasar çok erken başlar.</p>
+    </div>
+
+    <div class="kenar">
+      <div class="kenar-baslik">Hedef ve ajan</div>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">V2 reseptörü</td><td>Tolvaptan: cAMP’yi baskılar</td></tr>
+          <tr><td class="bas">cAMP sentezi</td><td>Somatostatin analoğu: TKV ve karaciğer hacmi ↓, eGFR’yi korumaz</td></tr>
+          <tr><td class="bas">AMPK</td><td>Metformin: faz 2 güvenli, etkinlik kanıtlanmadı</td></tr>
+          <tr><td class="bas">mTOR</td><td>İnsan çalışmalarında başarısız, proteinüri yaptı</td></tr>
+        </tbody>
+      </table>
+      <div class="kutu spot"><div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>PC1 mekanosensör, PC2 TRP kanalı.</p>
+          <p>Minör genler sıklıkla PC1’in endoplazmik retikulumda olgunlaşmasını bozar.</p>
+          <p>DNAJB11 belirgin karaciğer kist yüküyle gidebilir.</p>
+        </div>
+      </div>
+      <div class="kutu inci"><div class="ad">Klinik inci</div><p>Susuz kalmak vazopressini artırır, vazopressin cAMP’yi: bol su içmek tedavinin parçasıdır.</p></div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>4</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 5 · BAŞVURU: EKSTRARENAL (sağ) ================= -->
+<section class="sayfa sag tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>ADPKD · Başvuru</span></div>
+  <div class="ust-etiket">ADPKD · Başvuru</div>
+  <h1 class="konu orta">Böbrek dışındaki hastalık</h1>
+
+  <div class="blok">
+    <h2>Polikistik karaciğer hastalığı</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:38mm">Sıklık</td><td>En sık ekstrarenal bulgu; 35–40 yaş üstünde %80–90. Kistler duktal plak malformasyonundan köken alır</td></tr>
+        <tr><td class="bas">Cinsiyet</td><td>Prevalans benzer ama kadında kistler erken gelişir ve masifleşir; çoklu gebelik, oral kontraseptif ve hormon tedavisi büyümeyi hızlandırır, menopozdan sonra büyüme genellikle durur</td></tr>
+        <tr><td class="bas">Laboratuvar</td><td>Karaciğer fonksiyon testleri devasa boyutta bile genellikle normal: sorun mekaniktir, parankim korunur</td></tr>
+        <tr><td class="bas">Semptom</td><td>Erken doyma, dispne, reflü, vena kava inferior basısına bağlı hipotansiyon</td></tr>
+        <tr><td class="bas">Karar</td><td>Cerrahi planlamada Gigot ve Schnelldorfer sınıflamaları; seçilmiş olguda fenestrasyon ya da rezeksiyon, somatostatin analoğu eşliğinde</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>İntrakraniyal anevrizma</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:38mm">Risk</td><td>Genel popülasyonun 4–5 katı; prevalans %8–12. Ailede anevrizma ya da subaraknoid kanama varsa %21–27</td></tr>
+        <tr><td class="bas">Tarama</td><td>Yüksek riskli grupta gadolinyumsuz MR anjiyografi ya da BT anjiyografi</td></tr>
+        <tr><td class="bas">Rüptür</td><td>Saniyeler içinde zirveye çıkan gök gürültüsü baş ağrısı; rüptür yaşı genel popülasyondan ~10 yıl erken (ortalama 41)</td></tr>
+        <tr><td class="bas">Diğer damar</td><td>Torasik aort anevrizması, servikoserebral diseksiyon, koroner arter anevrizması</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Karın duvarı ve bağırsak</h2>
+      <ul class="madde">
+        <li>Batın içi basınç artışıyla inguinal, umblikal ve insizyonel fıtıklar</li>
+        <li>Kolon divertikülleri: diyaliz ve nakil evresinde daha sık; divertikülit ve perforasyon insidansı yüksek</li>
+        <li>Erkeklerde %40–60 seminal vezikül kisti</li>
+      </ul>
+    </div>
+    <div class="blok">
+      <h2>Kalp</h2>
+      <ul class="madde">
+        <li>Mitral kapak prolapsusu ve aort kökü dilatasyonuna bağlı aort yetmezliği</li>
+        <li>Sol ventrikül hipertrofisi; normotansif çocukta bile görülebilir</li>
+        <li>Asemptomatik perikardiyal efüzyon (%20–35)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Diğer organlar</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:38mm">Pankreas ve dalak</td><td>Pankreas kisti %7–36, genellikle asemptomatik; nadiren pankreatit ya da IPMN birlikteliği. Dalak kisti ~%5</td></tr>
+        <tr><td class="bas">Genitoüriner</td><td>Erkeklerin %40–60’ında seminal vezikül kisti; doğurganlığı doğrudan engellemez ama motilite defekti ve nekrospermi olabilir. Kadınlarda over kisti artmaz</td></tr>
+        <tr><td class="bas">Santral sinir sistemi</td><td>Araknoid kist %8–12; genellikle asemptomatik, nadiren spontan subdural hematomla ilişkilendirilir</td></tr>
+        <tr><td class="bas">Akciğer</td><td>Radyografik bronşektazi %37: diğer KBH hastalarının üç katı, silyer disfonksiyona bağlanıyor</td></tr>
+        <tr><td class="bas">Karın duvarı</td><td>Fıtık sıklığı %45’e ulaşır: artmış karın içi basınç + bozuk hücre dışı matriks</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · fıtık ve periton diyalizi</div><p>Dev kistler ve karın içi basınç periton diyalizini zorlaştırır; yine de hem hemodiyaliz hem periton diyalizi uygulanabilir.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>PLD’de kitle etkisi var, sentetik işlev korunur.</p>
+        <p>Ailede kanama öyküsü olan ADPKD hastasında MRA taraması endike.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>5</b></div>
+</section>
+
+<!-- ================= 6 · KARAR YOLU: TANI VE RİSK (sol) ================= -->
+<section class="sayfa sol tur-karar">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>ADPKD · Yaklaşım</span></div>
+  <div class="ust-etiket">ADPKD · Karar yolu</div>
+  <h1 class="konu orta">Kistli böbrek: tanı ve risk</h1>
+  <p class="giris">Önce tanıyı koy, sonra kimin hızlı ilerleyeceğini belirle. İkinci soru tedaviyi seçtirir.</p>
+
+  <div class="karar-izgara">
+    <div>
+      <div class="adim"><div class="no">1</div><div>
+        <h3>Aile öyküsü var mı?</h3>
+        <div class="bw" style="grid-template-columns:1fr 1fr">
+          <div><b>Var</b><span>Pei-Ravine ultrason kriterleri: 15–39 yaş toplam ≥3 kist · 40–59 yaş her böbrekte ≥2 · ≥60 yaş her böbrekte ≥4</span></div>
+          <div><b>Yok</b><span>Klasik kriter uygulanmaz: her böbrekte ≥10 kist + hepatomegali ya da karaciğer kisti kuvvetle düşündürür; BT, MR ya da genetik test</span></div>
+        </div>
+      </div></div>
+
+      <div class="adim"><div class="no">2</div><div>
+        <h3>Genetik test kime?</h3>
+        <p>Görüntüleme şüpheli, aile öyküsü yok, atipik prezentasyon (belirgin asimetri, kist yüküyle uyumsuz hızlı yetmezlik), de-novo mutasyon şüphesi ve <b>30 yaş altı canlı donör adayı</b>.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">3</div><div>
+        <h3>Hacmi ölç: Mayo sınıflaması</h3>
+        <table class="tb">
+          <thead><tr><th style="width:26mm">Sınıf</th><th>Yıllık büyüme</th><th style="width:34mm">Anlamı</th></tr></thead>
+          <tbody>
+            <tr><td class="bas">1A–1B</td><td>—</td><td>Yavaş ilerleyen, düşük risk</td></tr>
+            <tr><td class="bas">1C</td><td>%2,6–3,9</td><td>Hızlı ilerleyici</td></tr>
+            <tr><td class="bas">1D</td><td>%3,9–5,0</td><td>Çok hızlı</td></tr>
+            <tr><td class="bas">1E</td><td>&gt;%5,0</td><td>Ekstrem risk</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:1.4mm">Yaş, boy ve MR ya da BT ile hesaplanan boya göre düzeltilmiş toplam böbrek hacmi (htTKV) kullanılır.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">4</div><div>
+        <h3>PROPKD skoru</h3>
+        <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+          <div><b>Klinik</b><span>Erkek cinsiyet 1 puan · ≤35 yaşta hipertansiyon 2 puan · ≤35 yaşta ilk ürolojik olay 2 puan</span></div>
+          <div><b>Genetik</b><span>PKD2 0 · PKD1 non-truncating 2 · PKD1 truncating 4 puan</span></div>
+          <div><b>Eşik</b><span>Toplam 0–9; &gt;6 ise 60 yaş öncesi SDBY’yi yüksek duyarlılıkla öngörür</span></div>
+        </div>
+      </div></div>
+
+      <div class="adim"><div class="no">5</div><div>
+        <h3>Biyobelirteç</h3>
+        <p>Serum <b>kopeptin</b> yüksekliği hızlı hacim artışı ve eGFR düşüşüyle en güçlü korele parametredir. GFR’nin kendisi geç kalan bir göstergedir.</p>
+      </div></div>
+    </div>
+
+    <aside>
+      <div class="kenar-sutun">
+        <div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>40 yaş üstünde hiç kist yoksa hastalık dışlanır.</p>
+          <p>15–39 yaşta üç kist, tek ya da çift taraflı olması fark etmez.</p>
+          <p>Tolvaptan endikasyonu Mayo 1C–1E.</p>
+        </div>
+      </div>
+      <div class="kutu tuzak" style="margin-top:3mm"><div class="ad">Tuzak</div><p>Donör adayı genç akrabada ultrasonun negatifliğine güvenmek: 30 yaş altında görüntüleme yetersizdir, genetik test gerekir.</p></div>
+      <div class="kutu inci" style="margin-top:3mm"><div class="ad">Klinik inci</div><p>Erken tanıda ve donör değerlendirmesinde MR, ultrasondan üstündür.</p></div>
+    </aside>
+  </div>
+
+  <div class="folyo"><b>6</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 7 · KARAR YOLU: TEDAVİ (sağ) ================= -->
+<section class="sayfa sag tur-karar">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>ADPKD · Yaklaşım</span></div>
+  <div class="ust-etiket">ADPKD · Karar yolu</div>
+  <h1 class="konu orta">Progresyonu yavaşlatmak</h1>
+  <p class="giris">Herkese konservatif zemin, hızlı ilerleyene tolvaptan. Gerisi ya etkisiz ya da yalnız karaciğer için.</p>
+
+  <div class="karar-izgara">
+    <div>
+      <div class="adim"><div class="no">1</div><div>
+        <h3>Kan basıncı</h3>
+        <table class="tb">
+          <tbody>
+            <tr><td class="bas" style="width:40mm">&lt;50 yaş, eGFR &gt;60</td><td>Agresif hedef ≤110/75 mmHg: toplam böbrek hacmi artışını, sol ventrikül kütle indeksini ve albümin atılımını azaltır (HALT-PKD)</td></tr>
+            <tr><td class="bas">≥50 yaş ya da eGFR 30–60</td><td>Hedef ≤120/80 mmHg</td></tr>
+            <tr><td class="bas">İlaç</td><td>Birinci basamak ACE inhibitörü <b>ya da</b> ARB; kombinasyon ek fayda sağlamaz, hiperkalemi ve akut böbrek hasarı riskini artırır</td></tr>
+          </tbody>
+        </table>
+      </div></div>
+
+      <div class="adim"><div class="no">2</div><div>
+        <h3>Su, tuz, kilo, protein</h3>
+        <div class="bw" style="grid-template-columns:repeat(4,1fr)">
+          <div><b>Su</b><span>&gt;2,5–3 L/gün; hedef idrar ozmolalitesi &lt;280 mOsm/kg (vazopressin baskısı)</span></div>
+          <div><b>Sodyum</b><span>&lt;2 g/gün sodyum (&lt;5 g tuz); yüksek tuz kist büyümesini tetikler</span></div>
+          <div><b>Kilo</b><span>Obezite bağımsız progresyon riski</span></div>
+          <div><b>Protein</b><span>0,8–1,0 g/kg/gün, tercihen bitkisel</span></div>
+        </div>
+      </div></div>
+
+      <div class="adim"><div class="no">3</div><div>
+        <h3>Tolvaptan: kime?</h3>
+        <p>Mayo <b>1C, 1D, 1E</b> ve eGFR <b>≥25 mL/dk/1,73 m²</b> olan erişkin (sıklıkla ≤55 yaş). V2 reseptör antagonisti; toplayıcı kanalda cAMP’yi baskılayıp proliferasyonu ve CFTR üzerinden sıvı sekresyonunu durdurur. TEMPO 3:4’te hacim artışı yıllık %5,5’ten %2,8’e indi, eGFR kaybı ~%30 yavaşladı; REPRISE ileri evrede doğruladı.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">4</div><div>
+        <h3>Tolvaptan: izlem</h3>
+        <div class="bw" style="grid-template-columns:1fr 1fr">
+          <div><b>Akuaretik etki</b><span>Masif poliüri, noktüri, polidipsi: kaçınılmaz, uyumu belirler</span></div>
+          <div><b>Hepatotoksisite</b><span>İdiyosenkrazik, ~%5, geri dönüşlü. İlk 18 ay <b>aylık</b>, sonra 3 ayda bir karaciğer testleri; ciddi karaciğer hastalığında (PLD hariç) kontrendike</span></div>
+        </div>
+      </div></div>
+
+      <div class="adim"><div class="no">5</div><div>
+        <h3>Diğer ajanlar</h3>
+        <table class="tb">
+          <tbody>
+            <tr><td class="bas" style="width:40mm">Somatostatin analoğu</td><td>TKV ve özellikle karaciğer hacmini yavaşlatır, eGFR’yi korumaz: böbrek için rutin önerilmez; devasa PLD’de seçilmiş olguda</td></tr>
+            <tr><td class="bas">Metformin</td><td>Faz 2’de güvenli ama koruyuculuk kanıtlanmadı; faz 3 sürüyor</td></tr>
+            <tr><td class="bas">mTOR inhibitörü</td><td>İnsanda başarısız, proteinüri yaptı: önerilmez</td></tr>
+            <tr><td class="bas">SGLT2 inhibitörü</td><td>Ozmotik diürezle vazopressini artırma kaygısı; başka endikasyon yoksa şimdilik kaçınılır</td></tr>
+          </tbody>
+        </table>
+      </div></div>
+    </div>
+
+    <aside>
+      <div class="kutu kural"><div class="ad">Altın kural</div><p>ACE inhibitörü + ARB kombinasyonu ADPKD’de <b>kontrendike</b>: ek fayda yok, zarar var.</p></div>
+      <div class="kenar-sutun" style="margin-top:3mm">
+        <div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>Tolvaptanın en sınırlayıcı riski hepatotoksisite; REMS protokolü aylık takip ister.</p>
+          <p>Somatostatin analoğu karaciğeri küçültür, böbreği kurtarmaz.</p>
+        </div>
+      </div>
+      <div class="kutu inci" style="margin-top:3mm"><div class="ad">Klinik inci</div><p>Su içme önerisi PREVENT-ADPKD’de hacim ve eGFR üzerinde anlamlı fark yaratmadı; yine de taş riskini azalttığı için standart kalır.</p></div>
+    </aside>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>7</b></div>
+</section>
+
+<!-- ================= 8 · BAŞVURU: KOMPLİKASYON (sol) ================= -->
+<section class="sayfa sol tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>ADPKD · Başvuru</span></div>
+  <div class="ust-etiket">ADPKD · Başvuru</div>
+  <h1 class="konu orta">Komplikasyon yönetimi</h1>
+
+  <div class="blok">
+    <table class="tb">
+      <thead><tr><th style="width:32mm">Sorun</th><th style="width:56mm">Yaklaşım</th><th>Not</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Akut ağrı</td><td>Asetaminofen ilk seçenek</td><td>Uzun süreli NSAİİ nefrotoksisite nedeniyle kesinlikle kaçınılır</td></tr>
+        <tr><td class="bas">Kist içi kanama · hematüri</td><td>İstirahat, hidrasyon, destek</td><td>Ataklar genellikle kendini sınırlar</td></tr>
+        <tr><td class="bas">Kist enfeksiyonu</td><td>Florokinolon (siprofloksasin) ya da TMP-SMX</td><td>Lipid çözünürlüğü yüksek ajan şart; etken sıklıkla <i>E. coli</i></td></tr>
+        <tr><td class="bas">Taş</td><td>Hidrasyon, metabolik değerlendirme</td><td>Anatomi nedeniyle ESWL başarısı düşük: perkütan nefrolitotomi ya da fleksibl üreteroskopi</td></tr>
+        <tr><td class="bas">Dirençli kitle etkisi</td><td>Köpük skleroterapisiyle aspirasyon, laparoskopik fenestrasyon</td><td>Kronik ağrıda çölyak pleksus blokajı</td></tr>
+        <tr><td class="bas">Son dönem böbrek yetmezliği</td><td>Nakil altın standart</td><td>Hem hemodiyaliz hem periton diyalizi uygulanabilir; dev kistler periton diyalizini zorlaştırır</td></tr>
+        <tr><td class="bas">Nefrektomi</td><td>Rutin önerilmez</td><td>Yalnız grefte yer kalmaması ya da yineleyen dirençli enfeksiyon veya kanamada</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>Girişim seçenekleri</h2>
+    <table class="tb">
+      <thead><tr><th style="width:44mm">Yöntem</th><th>Yeri</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Köpük skleroterapisiyle aspirasyon</td><td>Semptomatik dominant kist</td></tr>
+        <tr><td class="bas">Laparoskopik fenestrasyon</td><td>Dirençli kitle etkisi; karaciğerde Gigot ve Schnelldorfer sınıflamasına göre rezeksiyon</td></tr>
+        <tr><td class="bas">Çölyak pleksus blokajı</td><td>İlaca dirençli kronik ağrı</td></tr>
+        <tr><td class="bas">PCNL ya da fleksibl üreteroskopi</td><td>Taş; ADPKD anatomisinde ESWL başarısı düşük</td></tr>
+        <tr><td class="bas">Nefrektomi</td><td>Masif kanama, kronik enfeksiyon ya da grefte yer açmak için</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:1.4mm;font-size:7.4pt;color:var(--murekkep-2)">Beta-laktamlar kist duvarını yeterince geçemeyebilir; siprofloksasin ve levofloksasin tercih edilir.</p>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Kist enfeksiyonunu düşündüren</h2>
+      <ul class="madde">
+        <li>Dirençli ateş ve lokalize yan ağrısı</li>
+        <li>İdrar kültürü negatif olabilir: kist lümeni idrar yoluyla iletişimde olmayabilir</li>
+        <li>Standart antibiyotikle yanıtsızlık</li>
+      </ul>
+    </div>
+    <div class="blok">
+      <h2>Nakil öncesi düşün</h2>
+      <ul class="madde">
+        <li>Yerli böbrek hacmi grefte yer bırakıyor mu?</li>
+        <li>Divertikülit ve fıtık öyküsü var mı?</li>
+        <li>Ailede anevrizma öyküsü varsa tarama yapıldı mı?</li>
+        <li>Donör adayı akraba 30 yaşın altındaysa genetik test</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu tuzak"><div class="ad">Tuzak · NSAİİ</div><p>Kist ağrısına uzun süreli NSAİİ: zaten kırılgan olan böbrek işlevini hızla bozar.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>ADPKD’de ESWL başarısı düşüktür.</p>
+        <p>Nefrektomi rutin değil, endikasyona bağlıdır.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>8</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 9 · BAŞVURU: KARDİYOVASKÜLER (sağ) ================= -->
+<section class="sayfa sag tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>ADPKD · Başvuru</span></div>
+  <div class="ust-etiket">ADPKD · Başvuru</div>
+  <h1 class="konu orta">Kardiyovasküler tutulum</h1>
+  <p class="giris">Kardiyovasküler hastalık ADPKD’de morbidite ve mortalitenin başında gelir; zemininde erken hipertansiyon ve polikistinlerin damar duvarındaki işlevi vardır.</p>
+
+  <div class="blok">
+    <table class="tb">
+      <thead><tr><th style="width:34mm">Bulgu</th><th style="width:34mm">Sıklık</th><th>Ayrıntı</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Sol ventrikül hipertrofisi</td><td>ADPKD’li ileri evre KBH’de %65, ADPKD olmayanda %55</td><td>Kist basısı → lokal iskemi → RAAS; normotansif çocukta bile görülebilir. Sıkı kan basıncı kontrolü ve ACEi/ARB kütle indeksini geriletir</td></tr>
+        <tr><td class="bas">Kapak hastalığı</td><td>Eski çalışmalar %25–30; güncel katı ölçütlerle çocukta %1, erişkinde %3,4</td><td>En sık mitral kapak prolapsusu ve aort kökü dilatasyonuna bağlı aort yetmezliği. Histolojide kollajen bütünlüğü bozulmuş, miksoid dejenerasyon: Marfan ve Ehlers-Danlos’takine benzer</td></tr>
+        <tr><td class="bas">Perikardiyal efüzyon</td><td>%20–35</td><td>Genellikle asemptomatik, iyi tolere edilir; tamponad çok nadir</td></tr>
+        <tr><td class="bas">Anevrizma</td><td>İntrakraniyal %8–12</td><td>Torasik aort anevrizması, servikoserebral diseksiyon, koroner anevrizma da görülür</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>Damar duvarında ne oluyor?</h2>
+    <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+      <div><b>Endotel</b><span>Silyumdaki PC1/PC2 kayma stresini algılar; mutasyonda kalsiyum girişi ve nitrik oksit üretimi azalır, endotele bağımlı gevşeme bozulur</span></div>
+      <div><b>Düz kas</b><span>PC1, PC2’nin inhibitör etkisini baskılayarak basınca kasılma yanıtını serbest bırakır; kayıpta miyojenik tonus ve otoregülasyon bozulur</span></div>
+      <div><b>Duvar</b><span>Düşük kalsiyum ve yüksek cAMP düz kas hücrelerini çoğaltır, tunika medya düzensiz kalınlaşır: anevrizma zemini</span></div>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Kardiyovasküler riski azaltmak</h2>
+    <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+      <div><b>Kan basıncı</b><span>Genç ve eGFR &gt;60 olanda ≤110/75 mmHg hedefi sol ventrikül kütle indeksini geriletir</span></div>
+      <div><b>İlaç</b><span>ACE inhibitörü ya da ARB; kombinasyon kontrendike</span></div>
+      <div><b>Tarama</b><span>Üfürümde ekokardiyografi; ailede anevrizma öyküsünde MR ya da BT anjiyografi</span></div>
+    </div>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · kapak oranı</div><p>Kapak anormalliği sıklığı kaynağa göre değişiyor: eski seriler %25–30, katı ölçütlü güncel çalışmalar genel popülasyona yakın oranlar veriyor. Üfürüm duyulan hastada ekokardiyografi yine de gerekli.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Kardiyovasküler olaylar ADPKD’de birinci ölüm nedeni.</p>
+        <p>Hipertansiyon GFR düşmeden başlar ve TKV ile ilişkilidir.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>9</b></div>
+</section>
+
+<!-- ================= 10 · BAŞVURU: VAKADAN KARARA (sol) ================= -->
+<section class="sayfa sol tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>ADPKD · Başvuru</span></div>
+  <div class="ust-etiket">ADPKD · Başvuru</div>
+  <h1 class="konu orta">Vakadan karara</h1>
+
+  <div class="blok">
+    <table class="tb">
+      <thead><tr><th style="width:86mm">Senaryo</th><th>Doğru yaklaşım</th></tr></thead>
+      <tbody>
+        <tr><td>28 yaş, aile öyküsü var, ultrasonda toplam 3 kist</td><td>15–39 yaş kriteri karşılandı: tanı doğrulanır</td></tr>
+        <tr><td>44 yaş, aile öyküsü var, iki böbrekte toplam 5 kist (her birinde ≥2)</td><td>40–59 yaş kriteri karşılandı</td></tr>
+        <tr><td>46 yaş, aile öyküsü var, ultrasonda hiç kist yok</td><td>40 yaş üstünde kist yokluğu hastalığı dışlar</td></tr>
+        <tr><td>Yan ağrısı ve dirençli ateş; idrar kültürü negatif</td><td>Kist enfeksiyonu: florokinolon ya da TMP-SMX</td></tr>
+        <tr><td>Tekrarlayan taş; analizde ürat</td><td>Beklenen tip; idrar stazı ve düşük sitrat</td></tr>
+        <tr><td>38 yaş kadın, oral kontraseptif sonrası büyüyen karaciğer kistleri, KCFT normal</td><td>Östrojen etkisi; sentetik işlev korunur, karar kitle etkisine göre</td></tr>
+        <tr><td>Babası subaraknoid kanamadan ölmüş ADPKD hastası</td><td>Risk %21–27: MR ya da BT anjiyografiyle tarama</td></tr>
+        <tr><td>42 yaş, Mayo 1D, eGFR 48</td><td>Tolvaptan endikasyonu var; ilk 18 ay aylık karaciğer testi</td></tr>
+        <tr><td>Tolvaptan başlanan hastada 3. ayda ALT 4 kat yüksek</td><td>İdiyosenkrazik hepatotoksisite: protokol gereği yakın izlem ve ilacın gözden geçirilmesi</td></tr>
+        <tr><td>Devasa karaciğer kistleri, erken doyma ve dispne</td><td>Somatostatin analoğu ve seçilmiş cerrahi; böbrek progresyonu için değil</td></tr>
+        <tr><td>Kardeşi böbrek vermek istiyor, 27 yaşında, ultrasonu normal</td><td>30 yaş altı donör adayında genetik test</td></tr>
+        <tr><td>32 yaş, eGFR 95, kan basıncı 138/88</td><td>Genç ve eGFR &gt;60: hedef ≤110/75; ACEi ya da ARB tek başına</td></tr>
+        <tr><td>Hipertansiyonu kontrolsüz, hekim ACEi’ye ARB eklemeyi düşünüyor</td><td>Kombinasyon kontrendike: hiperkalemi ve akut böbrek hasarı riski</td></tr>
+        <tr><td>Kronik yan ağrısı için hasta düzenli NSAİİ kullanıyor</td><td>Kes: nefrotoksisite. Asetaminofen, gerekirse girişimsel seçenekler</td></tr>
+        <tr><td>Mayo 1B, eGFR 80, hasta tolvaptan istiyor</td><td>Endikasyon yok: yavaş ilerleyen grup, konservatif izlem</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu kural"><div class="ad">Altın kural · beş cümlede ADPKD</div><p>PKD1 ağır, PKD2 hafif · hipertansiyon GFR normalken başlar · en sık taş ürik asit · en sık ekstrarenal bulgu karaciğer kisti · hızlı ilerleyende tolvaptan.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>İki vuruş: dominant geçişe rağmen somatik ikinci mutasyon gerekir.</p>
+        <p>cAMP hem proliferasyonu hem sıvı sekresyonunu sürükler.</p>
+        <p>PROPKD &gt;6: 60 yaş öncesi SDBY riski yüksek.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>10</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 11 · KISIM 2 KAPAĞI — IgA NEFROPATİSİ (sağ) ================= -->
+<section class="sayfa sag kisim">
+  <div class="tirnak">Nefroloji</div>
+  <div class="bant">
+    <div class="kisim-no">Kısım 2 · Glomerüler hastalıklar</div>
+    <h1>IgA nefropatisi</h1>
+    <div class="alt">Dört vuruştan çoklu hedefli tedaviye</div>
+  </div>
+  <div class="govde">
+    <div class="kurallar">
+      <h2>Altı altın kural</h2>
+      <ol>
+        <li><span>Dünyada <b>en sık primer glomerülonefrit</b>; artık iyi huylu sayılmıyor.</span></li>
+        <li><span>Dört vuruş: <b>Gd-IgA1 → otoantikor → immün kompleks → mesangiyal birikim</b>.</span></li>
+        <li><span><b>T skoru</b> (tübülointerstisyel fibrozis) böbrek yetmezliğinin en güçlü bağımsız öngörücüsü.</span></li>
+        <li><span><b>Sinfarenjitik hematüri</b>: enfeksiyonla eş zamanlı; postenfeksiyöz GN’de 1–3 hafta sonra.</span></li>
+        <li><span>Proteinüri <b>0,44–0,88 g/gün</b> olsa bile 10 yılda %30 SDBY riski.</span></li>
+        <li><span>Temel tedavi <b>RAS blokajı + SGLT2 inhibitörü</b>; ilk spesifik ajan <b>TRF-budesonid</b>.</span></li>
+      </ol>
+    </div>
+    <div>
+      <h2>Bu kısımda</h2>
+      <ol class="icindekiler">
+        <li><div><span>IgA nefropatisi</span><small>Açık sayfa</small></div><em>12</em></li>
+        <li><div><span>Dört vuruş</span><small>Anlatı</small></div><em>14</em></li>
+        <li><div><span>MEST-C ve ISKDC</span><small>Başvuru</small></div><em>15</em></li>
+        <li><div><span>Riski hesapla</span><small>Karar yolu</small></div><em>16</em></li>
+        <li><div><span>Tedavi basamakları</span><small>Karar yolu</small></div><em>17</em></li>
+        <li><div><span>Yeni nesil ajanlar</span><small>Başvuru</small></div><em>18</em></li>
+        <li><div><span>Özel durumlar</span><small>Başvuru</small></div><em>19</em></li>
+        <li><div><span>Vakadan karara</span><small>Başvuru</small></div><em>20</em></li>
+      </ol>
+    </div>
+  </div>
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>11</b></div>
+</section>
+
+<!-- ================= 12 · IgAN — AÇIK SAYFA SOL ================= -->
+<section class="sayfa sol tur-acik">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>Glomerül</span></div>
+  <div class="ust-etiket">Glomerüler hastalık · Açık sayfa</div>
+  <h1 class="konu">IgA nefropatisi</h1>
+  <p class="giris">Hastalık mukozada başlar, böbrekte biter: galaktozdan yoksun IgA1’e karşı gelişen otoantikorlar mesangiumda birikir. Tedavi artık yalnız tansiyon ve steroid değil, bu zincirin her halkasını hedefliyor.</p>
+
+  <div class="bakis">
+    <div class="ad">30 saniyede</div>
+    <ul class="madde">
+      <li>Dünyada en sık primer glomerülonefrit; Doğu Asya’da en yüksek (Çin’de primer GN’lerin ~%45’i).</li>
+      <li>Genç erişkin; Kuzey Amerika ve Avrupa’da erkek:kadın <b>2:1</b>, Doğu Asya’da eşit.</li>
+      <li>Tanı <b>biyopsi</b>: mesangiumda baskın granüler <b>IgA</b>, &gt;%90 olguda C3 eşlik eder.</li>
+      <li>Klasik tablo: asemptomatik mikroskopik hematüri + proteinüri.</li>
+      <li><b>%30–45</b>’i (bazı kohortlarda %80) 20–30 yılda SDBY’ye ilerler.</li>
+      <li>Prognozu <b>Oxford MEST-C</b> ve <b>uluslararası IgAN tahmin aracı</b> verir.</li>
+    </ul>
+  </div>
+
+  <div class="sekil-blok">
+    <div class="sekil-baslik">Dört vuruş</div>
+    <div class="yolak" style="grid-template-columns:repeat(4,1fr)">
+      <div class="ist"><div class="kap"><b>1 · Gd-IgA1</b><span>Mukozal dokuda (GALT, NALT) menteşe bölgesindeki O-glikanlarda galaktoz eksikliği</span></div><div class="ilac"><i>TRF-budesonid</i><i>APRIL/BAFF inhibitörü</i></div></div>
+      <div class="ist"><div class="kap"><b>2 · Otoantikor</b><span>Yeni epitoplara karşı IgG ve IgA otoantikorları</span></div><div class="ilac"><i>Anti-CD38</i></div></div>
+      <div class="ist"><div class="kap"><b>3 · İmmün kompleks</b><span>Dolaşan nefrijenik kompleksler; C3 kovalent tiyoester bağıyla katılır</span></div><div class="ilac"><i>Kompleman blokerleri</i></div></div>
+      <div class="ist"><div class="kap"><b>4 · Mesangiyal hasar</b><span>Mesangiyal hücre aktivasyonu, kompleman, podosit kaybı, kresent, fibrozis</span></div><div class="ilac"><i>RAS blokajı · SGLT2i</i><i class="sure">Sparsentan</i></div></div>
+    </div>
+    <div class="sekil-alt"><b>Şekil 2.</b> Siyah etiketler o halkayı hedefleyen tedaviler. Kompleman ağırlıklı olarak alternatif ve lektin yolaklarından aktive olur; C5b-9 ve MASP-2 lezyon şiddetini artırır.</div>
+  </div>
+
+  <div class="sayilar">
+    <div class="bas-etiket">Sayılarla</div>
+    <div><strong>%30–45</strong><span>20–30 yılda SDBY</span></div>
+    <div><strong>~10 yıl</strong><span>yaşam beklentisinde kısalma</span></div>
+    <div><strong>&gt;%90</strong><span>biyopside C3 eşlik eder</span></div>
+    <div><strong>&gt;0,5 g</strong><span>gün · ek tedavi eşiği</span></div>
+    <div><strong>%71</strong><span>DAPA-CKD’de progresyon riskinde azalma</span></div>
+    <div><strong>+5,05</strong><span>mL/dk · NefIgArd’da eGFR farkı</span></div>
+  </div>
+
+  <div class="blok" style="margin-top:4mm">
+    <h2>Kimde, nerede?</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:44mm">Coğrafya</td><td>Doğu ve Pasifik Asya kökenlilerde en yüksek insidans (Çin’de primer glomerülonefritlerin ~%45’i); Kafkas ırkında orta; Afrika kökenlilerde nadir</td></tr>
+        <tr><td class="bas">Yaş</td><td>Genç erişkin, ikinci ve üçüncü dekat</td></tr>
+        <tr><td class="bas">Cinsiyet</td><td>Kuzey Amerika ve Avrupa’da erkek:kadın 2:1; Doğu Asya’da eşit</td></tr>
+        <tr><td class="bas">Tarihçe</td><td>1968’de Jean Berger ve Nicole Hinglais, tekrarlayan hematürili hastaların biyopsisinde mesangiyal IgA-IgG birikimini gösterdi</td></tr>
+        <tr><td class="bas">Seyir</td><td>Modern kohortlarda %30–45 (bazılarında %80) 20–30 yılda SDBY; yaşam beklentisi ~10 yıl kısalır</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · neden mukoza?</div><p>Patojenik IgA1 bağırsak ve solunum yolu lenfoid dokusunda üretilir. Enfeksiyonla eş zamanlı hematüri atağının ve ileuma yönlendirilmiş steroidin mantığı buradan gelir.</p></div>
+    <div class="kutu tuzak"><div class="ad">Tuzak · “iyi huylu”</div><p>Hastalığı hâlâ selim saymak: kohort verileri hastaların üçte birinden fazlasının böbrek yetmezliğine ilerlediğini gösteriyor.</p></div>
+  </div>
+
+  <div class="folyo"><b>12</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 13 · IgAN — AÇIK SAYFA SAĞ ================= -->
+<section class="sayfa sag tur-acik">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>IgA nefropatisi</span><span>Glomerül</span></div>
+
+  <div class="blok">
+    <h2>Klinik tablolar</h2>
+    <table class="tb">
+      <thead><tr><th style="width:40mm">Tablo</th><th>Özellik</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Asemptomatik hematüri ve proteinüri</td><td>En klasik bulgu; rutin taramada yakalanır</td></tr>
+        <tr><td class="bas">Sinfarenjitik makroskopik hematüri</td><td>Üst solunum yolu ya da sindirim sistemi enfeksiyonuyla <b>eş zamanlı</b>; postenfeksiyöz GN’de hematüri 1–3 hafta sonra gelir</td></tr>
+        <tr><td class="bas">Hızlı ilerleyen GN</td><td>&gt;%50 kresent + açıklanamayan hızlı eGFR kaybı</td></tr>
+        <tr><td class="bas">Nefrotik sendrom</td><td>Podositopatiye sekonder masif proteinüri</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Histopatoloji</h2>
+      <p style="font-size:8pt;line-height:1.35">İmmünofloresan ya da immünoperoksidazda mesangiumda <b>baskın veya eş-baskın granüler IgA</b>; sıklıkla C3 (&gt;%90), değişen oranda IgG ve IgM. Işık mikroskopisi yaygın mesangiyal proliferasyondan şiddetli kresentik glomerülonefrite kadar geniş bir yelpaze gösterir.</p>
+    </div>
+    <div class="blok">
+      <h2>Dışlanacaklar</h2>
+      <ul class="madde">
+        <li>IgA vasküliti (Henoch-Schönlein purpurası)</li>
+        <li>Stafilokok ilişkili IgA baskın enfeksiyon sonrası GN</li>
+        <li>IgA birikimiyle giden monoklonal gamopatiler</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Genetik ve kompleman</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:44mm">MHC sınıf II genleri</td><td>Yatkınlıkla ilişkili</td></tr>
+        <tr><td class="bas">CFHR1/CFHR3 delesyonu</td><td>Kompleman regülasyonu üzerinden <b>koruyucu</b></td></tr>
+        <tr><td class="bas">C1GALT1 polimorfizmleri</td><td>O-glikozilasyon yolağı; yatkınlık oluşturur</td></tr>
+        <tr><td class="bas">BAFF ve APRIL</td><td>Enfeksiyonlarda Peyer plaklarında Gd-IgA1 üreten plazma hücrelerinin sağkalımını ve sınıf değişimini uyarır</td></tr>
+        <tr><td class="bas">Kompleman yolakları</td><td>Alternatif ve lektin yolağı baskın; C5b-9 ve MASP-2 lezyon şiddetini artırır</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div>
+      <div class="kutu kural"><div class="ad">Altın kural · düşük proteinüri</div><p>Optimize RAS blokajı altında zaman ağırlıklı proteinürisi <b>0,44–0,88 g/gün</b> olan hastaların %30’u 10 yılda SDBY geliştirir: “az proteinüri” güvence değildir.</p></div>
+      <div class="kutu tuzak"><div class="ad">Tuzak · zamanlama</div><p>Enfeksiyondan 1–3 hafta sonra gelen hematüriyi IgA nefropatisi saymak: o tablo postenfeksiyöz glomerülonefrittir.</p></div>
+    </div>
+    <div>
+      <div class="kutu inci"><div class="ad">Klinik inci · aynı spektrum</div><p>IgA vasküliti ile IgA nefropatisi aynı patogenezi paylaşan iki klinik görünüm sayılıyor: biri sistemik purpura-artralji-karın ağrısı, diğeri izole böbrek hastalığı.</p></div>
+      <div class="kutu spot"><div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>Gd-IgA1 mukozal kaynaklıdır: GALT ve NALT.</p>
+          <p>Biyobelirteçler (Gd-IgA1, anti-Gd-IgA1 IgG, CD89, idrar podosit belirteçleri) henüz rutin değil.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Neyi izliyoruz?</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:44mm">Proteinüri</td><td>En önemli değiştirilebilir risk faktörü; zaman ağırlıklı değer tek ölçümden anlamlı</td></tr>
+        <tr><td class="bas">eGFR eğimi</td><td>Hızlı düşüş kresentik varyantı akla getirir</td></tr>
+        <tr><td class="bas">Kan basıncı</td><td>Destekleyici bakımın temel bileşeni</td></tr>
+        <tr><td class="bas">Hematüri</td><td>Persistan mikroskopik hematüri hastalık aktivitesiyle ilişkilendirilir</td></tr>
+        <tr><td class="bas">Histoloji</td><td>MEST-C skoru; tekrar biyopsi kararı klinik gidişe göre</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>13</b></div>
+</section>
+
+<!-- ================= 14 · ANLATI (sol) ================= -->
+<section class="sayfa sol tur-anlati">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>IgAN · Anlatı</span></div>
+  <div class="ust-etiket">IgAN · Anlatı</div>
+  <h1 class="konu orta">Mukozada başlayan hastalık</h1>
+
+  <div class="anlati">
+    <div class="metin">
+      <h2>Birinci vuruş</h2>
+      <p>IgA1’in menteşe bölgesindeki O-glikan zincirlerinde genetik, epigenetik ve mukozal etkenlerle galaktoz eksilir; ortaya galaktozdan yoksun IgA1 (Gd-IgA1) çıkar. Kaynak bağırsak ve burun-boğazla ilişkili lenfoid dokudur. Enfeksiyonlarda Peyer plaklarında BAFF ve APRIL, bu patojenik IgA1’i üreten plazma hücrelerinin sağkalımını ve sınıf değişimini destekler. Hastalığın mukozal kökeni, tedavinin neden ileuma yönlendirilmiş bir steroide kadar uzandığını açıklar.</p>
+
+      <h2>İkinci ve üçüncü vuruş</h2>
+      <p>Bağışıklık sistemi Gd-IgA1’deki yeni epitopları yabancı görür ve bunlara karşı IgG ile IgA tipi otoantikorlar üretir. Antikorlar antijenine bağlanınca dolaşan nefrijenik immün kompleksler oluşur; komplemanın C3 bileşeni kovalent tiyoester bağlarıyla bu komplekslere katılır.</p>
+
+      <h2>Dördüncü vuruş</h2>
+      <p>Kompleksler mesangiuma çöker ya da orada yerinde oluşur. Mesangiyal hücreler aktive olur: çoğalır, matriks üretir, sitokin ve kemokin salar. Kompleman ağırlıklı olarak alternatif ve lektin yolaklarından ilerler; C5b-9 ve MASP-2 lezyonun şiddetini belirler. Sonuçta podosit kaybı, kresent oluşumu ve ilerleyici tübülointerstisyel fibrozis gelişir. Glomerül ile podosit arasındaki çapraz iletişimin bozulması ağır proteinüriye ve tübülointerstisyel yıkıma zemin hazırlar.</p>
+
+      <h2>Podosit de kaybediliyor</h2>
+      <p>Mesangiyal hasar yalnız mesangiumda kalmaz. Glomerül ile podosit arasındaki çapraz iletişimin bozulması podosit kaybına, ağır proteinüriye ve tübülointerstisyel yıkıma zemin hazırlar. Bu yüzden bazı hastalar nefrotik düzeyde proteinüriyle başvurur ve bu tablo prognozu doğrudan kötüleştirir.</p>
+
+      <h2>Neden artık “iyi huylu” demiyoruz?</h2>
+      <p>Hastalık uzun yıllar selim kabul edildi. Modern kohortlar (UK RaDaR) tabloyu değiştirdi: hastaların %30–45’i, bazı serilerde %80’i, tanıdan 20–30 yıl içinde son dönem böbrek yetmezliğine ilerliyor ve yaşam beklentisi yaklaşık on yıl kısalıyor. Proteinürinin “kabul edilebilir” görünen düzeyleri bile riski taşıyor.</p>
+
+      <h2>Tedavi paradigması değişti</h2>
+      <p>Eskiden seçenek RAS blokajı ve sistemik steroiddi. Proteinüri düşüşünün onay sonlanımı kabul edilmesiyle alan hızla genişledi: hemodinamik modülatörler (SGLT2 inhibitörleri, endotelin reseptör antagonistleri) nefron kaybını yavaşlatıyor; mukozal, hücresel ve kompleman düzeyinde çalışan ajanlar patojenik antikor üretimini kaynağında kesmeyi hedefliyor. Yaklaşımın adı artık çoklu hedefli tedavi.</p>
+    </div>
+
+    <div class="kenar">
+      <div class="kenar-baslik">Hangi vuruşa hangi ajan?</div>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">1</td><td>TRF-budesonid; APRIL/BAFF inhibitörleri</td></tr>
+          <tr><td class="bas">2</td><td>Anti-CD38 (plazma hücresi)</td></tr>
+          <tr><td class="bas">3</td><td>Kompleman blokerleri</td></tr>
+          <tr><td class="bas">4</td><td>RAS blokajı, SGLT2i, sparsentan</td></tr>
+        </tbody>
+      </table>
+      <div class="kutu spot"><div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>CFHR1/CFHR3 delesyonu koruyucu, C1GALT1 yatkınlık verir.</p>
+          <p>Kompleman ağırlıklı olarak alternatif ve lektin yolağından aktive olur.</p>
+          <p>E lezyonu aktif ve geri döndürülebilir; T lezyonu kalıcı hasardır.</p>
+        </div>
+      </div>
+      <div class="kutu inci"><div class="ad">Klinik inci</div><p>Hastalık mukozada başladığı için sistemik immünsüpresyon yerine mukozaya yönlendirilmiş tedavi, aynı hedefi daha az bedelle vurur.</p></div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>14</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 15 · BAŞVURU: MEST-C (sağ) ================= -->
+<section class="sayfa sag tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>IgAN · Başvuru</span></div>
+  <div class="ust-etiket">IgAN · Başvuru</div>
+  <h1 class="konu orta">Oxford MEST-C ve ISKDC</h1>
+  <p class="giris">2009’da tanımlandı, 2016’da kresent eklendi. Değeri şu: tanı anındaki klinik özelliklerden bağımsız olarak böbrek yetmezliği riskini öngörebiliyor.</p>
+
+  <div class="blok">
+    <table class="tb">
+      <thead><tr><th style="width:26mm">Harf</th><th style="width:56mm">Tanım</th><th>Prognostik anlamı</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">M · mesangiyal hiperselülarite</td><td>Glomerüllerin yarısından fazlasında mesangiyal alanda &gt;4 hücre (M1)</td><td>Böbrek sağkalımında kötü gidişin bağımsız öngörücüsü</td></tr>
+        <tr><td class="bas">E · endokapiller hiperselülarite</td><td>Kapiller lümende hücresel artış (E1)</td><td>İmmünsüpresif almayanlarda hızlı GFR kaybı; tedavi alanlarda bu ilişki kaybolur — <b>aktif ve geri döndürülebilir</b> lezyon</td></tr>
+        <tr><td class="bas">S · segmental glomerüloskleroz</td><td>Segmental skar (S1)</td><td>Bağımsız kötü prognoz</td></tr>
+        <tr><td class="bas">T · tübülointerstisyel fibrozis</td><td>Kortikal fibrozis: T0 &lt;%25, T1 %26–50, T2 &gt;%50</td><td><b>SDBY riskinin en güçlü ve en tutarlı bağımsız belirleyicisi</b></td></tr>
+        <tr><td class="bas">C · kresent</td><td>C1: glomerüllerin %1–24’ü · C2: ≥%25</td><td>C1 yalnız immünsüpresyon almayanlarda; <b>C2 tedaviden bağımsız</b> kötü sonlanım</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Kısıtlılıklar</h2>
+      <ul class="madde">
+        <li>Özellikle E ve C için patologlar arası uyum görece düşük</li>
+        <li>Tek başına immünsüpresyon kararını yönlendiremez</li>
+        <li>Klinik verilerle birleşip uluslararası IgAN tahmin aracına girmelidir</li>
+      </ul>
+    </div>
+    <div class="blok">
+      <h2>Çocukta: ISKDC</h2>
+      <ul class="madde">
+        <li>IgA vasküliti nefritinde evre I–VI; mesangiyal proliferasyon ve kresent yüzdesine dayanır</li>
+        <li>Biyopside &gt;%50 kresent (evre IV–V) çok yüksek SDBY riski; SDBY’ye ilerleyenlerin %86’sında başlangıçta &gt;%50 kresent vardı</li>
+        <li>Kresenti olmayan ya da çok az olan yaklaşık %70’lik kesimde böbrek sağkalımı mükemmele yakın</li>
+        <li>Zayıf yanı: endokapiller hiperselülarite ve tübülointerstisyel fibrozisi hesaba katmaz</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Skoru klinikle birleştirmek</h2>
+    <table class="tb">
+      <thead><tr><th style="width:40mm">Bulgu</th><th>Ne yapılır?</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">T1 + C2</td><td>Hem kalıcı hasar hem yüksek aktivite: agresif izlem ve tedavi</td></tr>
+        <tr><td class="bas">E1, tedavi almıyor</td><td>Aktif lezyon; destekleyici bakımın yanında immünolojik tedavi gündeme gelir</td></tr>
+        <tr><td class="bas">T2</td><td>Kortikal fibrozis &gt;%50: hedefe yönelik ajandan beklenti sınırlı, nefroprotektif zemin şart</td></tr>
+        <tr><td class="bas">Yalnız M1 ya da S1</td><td>Bağımsız kötü prognoz göstergesi; risk aracına girer</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · E lezyonu</div><p>Tedavi alanlarda E’nin kötü prognozla ilişkisinin kaybolması, bu lezyonun tedaviye yanıt veren aktif inflamasyon olduğunun kanıtıdır.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>T2 = kortikal fibrozis &gt;%50.</p>
+        <p>C2 = glomerüllerin ≥%25’inde kresent.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>15</b></div>
+</section>
+
+<!-- ================= 16 · KARAR YOLU: RİSK (sol) ================= -->
+<section class="sayfa sol tur-karar">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>IgAN · Yaklaşım</span></div>
+  <div class="ust-etiket">IgAN · Karar yolu</div>
+  <h1 class="konu orta">Biyopsi geldi: risk ne?</h1>
+  <p class="giris">Tedaviyi seçtiren şey tek bir sayı değil; klinik, laboratuvar ve histoloji birlikte okunur.</p>
+
+  <div class="karar-izgara">
+    <div>
+      <div class="adim"><div class="no">1</div><div>
+        <h3>Sekonder nedenleri dışla</h3>
+        <p>IgA vasküliti, stafilokok ilişkili IgA baskın enfeksiyon sonrası glomerülonefrit ve IgA birikimiyle giden monoklonal gamopatiler ayrılmadan primer IgA nefropatisi denmez.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">2</div><div>
+        <h3>Histolojiyi oku</h3>
+        <p>MEST-C skorunu iste. <b>T</b> en güçlü bağımsız öngörücü; <b>C2</b> tedaviden bağımsız kötü gidiş; <b>E</b> aktif ve geri döndürülebilir lezyondur.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">3</div><div>
+        <h3>Tahmin aracını kullan</h3>
+        <p>Uluslararası IgAN tahmin aracı biyopsi anındaki <b>eGFR, yaş, ırk, kan basıncı, proteinüri, RAS inhibitörü kullanımı ve MEST skorunu</b> birleştirerek 5–7 yıllık böbrek yetmezliği ya da eGFR’de %50 düşüş riskini verir.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">4</div><div>
+        <h3>Proteinüriyi yorumla</h3>
+        <div class="bw" style="grid-template-columns:1fr 1fr">
+          <div><b>&gt;1 g/gün</b><span>Klasik yüksek risk eşiği</span></div>
+          <div><b>0,44–0,88 g/gün</b><span>Optimize RAS blokajına rağmen bu bantta olanların %30’u 10 yılda SDBY geliştirir</span></div>
+        </div>
+        <p style="margin-top:1.6mm">Zaman ağırlıklı proteinüri tek ölçümden daha anlamlıdır; ek tedavi eşiği &gt;0,5 g/gün.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">5</div><div>
+        <h3>Ne zaman acil karar?</h3>
+        <p>&gt;%50 kresent ve açıklanamayan hızlı eGFR kaybı varsa risk aracını beklemeden hızlı ilerleyen glomerülonefrit gibi davran: tedavi tamamen farklıdır (s. 19).</p>
+      </div></div>
+
+      <div class="adim"><div class="no">6</div><div>
+        <h3>Biyobelirteçler</h3>
+        <p>Gd-IgA1, anti-Gd-IgA1 IgG, CD89 ve idrar podosit ya da makrofaj belirteçleri umut verici; henüz rutin standart değil.</p>
+      </div></div>
+    </div>
+
+    <aside>
+      <div class="kenar-sutun">
+        <div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>Tanı biyopsiyle konur: mesangiumda baskın IgA.</p>
+          <p>MEST-C tek başına immünsüpresyon kararı verdirmez.</p>
+          <p>Prognozu belirleyen en güçlü histolojik ölçüt T.</p>
+        </div>
+      </div>
+      <div class="kutu tuzak" style="margin-top:3mm"><div class="ad">Tuzak</div><p>“Proteinüri 0,6 g, izleyelim” demek: bu bantta bile on yıllık SDBY riski %30’a çıkabiliyor.</p></div>
+      <div class="kutu inci" style="margin-top:3mm"><div class="ad">Klinik inci</div><p>Hızlı eGFR kaybı + ağır kresent varlığı, risk hesaplamasını beklemeden acil tedavi kararı gerektirir (s. 19).</p></div>
+    </aside>
+  </div>
+
+  <div class="folyo"><b>16</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 17 · KARAR YOLU: TEDAVİ (sağ) ================= -->
+<section class="sayfa sag tur-karar">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>IgAN · Yaklaşım</span></div>
+  <div class="ust-etiket">IgAN · Karar yolu</div>
+  <h1 class="konu orta">Tedavi basamakları</h1>
+  <p class="giris">Yeni ajanlar başlansa bile destekleyici bakım ömür boyu sürer: hiperfiltrasyonu azaltan zemin bırakılmaz.</p>
+
+  <div class="karar-izgara">
+    <div>
+      <div class="adim"><div class="no">1</div><div>
+        <h3>Zemin: optimize destekleyici bakım</h3>
+        <div class="bw" style="grid-template-columns:repeat(4,1fr)">
+          <div><b>RAS blokajı</b><span>Maksimum tolere edilen ACE inhibitörü ya da ARB</span></div>
+          <div><b>Kan basıncı</b><span>Hedefe ulaşana dek titre et</span></div>
+          <div><b>Yaşam tarzı</b><span>Tuz kısıtlaması, sigara bırakma, kilo kontrolü</span></div>
+          <div><b>Kime?</b><span>Proteinürisi &gt;0,5 g/gün olan tüm hastalar (KDIGO)</span></div>
+        </div>
+      </div></div>
+
+      <div class="adim"><div class="no">2</div><div>
+        <h3>Zeminin ayrıntısı</h3>
+        <table class="tb">
+          <tbody>
+            <tr><td class="bas" style="width:34mm">Kime?</td><td>KDIGO 2021/2025: proteinürisi &gt;0,5 g/gün olan tüm hastalar</td></tr>
+            <tr><td class="bas">Tuz</td><td>Sodyum kısıtlaması</td></tr>
+            <tr><td class="bas">Kilo ve risk</td><td>Kilo kontrolü, kardiyovasküler risk yönetimi</td></tr>
+            <tr><td class="bas">Süre</td><td>Hedefe yönelik ajan eklense bile ömür boyu sürer</td></tr>
+          </tbody>
+        </table>
+      </div></div>
+
+      <div class="adim"><div class="no">3</div><div>
+        <h3>SGLT2 inhibitörü ekle</h3>
+        <p>Mekanizma hastalığa özgü değil: tübüloglomerüler geri bildirimle glomerül içi basıncı düşürür. DAPA-CKD’nin IgAN kohortunda progresyon riski <b>%71</b> azaldı; EMPA-KIDNEY de destekledi. Optimal RAS blokajına rağmen proteinürisi &gt;0,5 g/gün olanda standardın parçası.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">4</div><div>
+        <h3>Endotelin yolağı</h3>
+        <p><b>Sparsentan</b>: ETA ve AT1 reseptörünü birlikte bloke eder (DEARA). PROTECT faz 3’te irbesartana göre proteinüride %40 daha fazla düşüş ve eGFR kaybında korunma; FDA onaylı. <b>Atrasentan</b> seçici ETA antagonisti olarak ALIGN çalışmasında benzer hedefi izliyor.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">5</div><div>
+        <h3>Mukozal hedef: TRF-budesonid</h3>
+        <p>Distal ileumdaki Peyer plaklarında patojenik B hücrelerini baskılar, Gd-IgA1’i düşürür: <b>ilk hastalığa özgü onaylı ajan</b>. NefIgArd’da 9 aylık tedaviden 15 ay sonra bile plaseboya göre <b>+5,05 mL/dk/1,73 m²</b> eGFR farkı korundu. Yüksek ilk geçiş metabolizması sistemik steroid yan etkilerini azaltır.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">6</div><div>
+        <h3>Sistemik steroid: dikkatli</h3>
+        <p>TESTING’de metilprednizolon böbrek sağkalımını iyileştirdi ama ciddi enfeksiyonlar (<i>Pneumocystis jirovecii</i> dahil) ve ölümcül yan etkiler nedeniyle çalışmaya ara verildi; düşük doz (0,4 mg/kg/gün) + profilaksiyle sürdürüldü. STOP-IgAN’de immünsüpresyonun uzun dönemde net faydası görülmedi. MMF, bazı Asya kohortlarında steroid azaltıcı; Kafkas popülasyonunda rutine girmedi.</p>
+      </div></div>
+    </div>
+
+    <aside>
+      <div class="kutu kural"><div class="ad">Altın kural</div><p>Hedefe yönelik ajan başlansa bile RAS blokajı ve SGLT2 inhibitörü kesilmez: ikisi hemodinamik zemini tutar.</p></div>
+      <div class="kenar-sutun" style="margin-top:3mm">
+        <div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>Ek tedavi eşiği: proteinüri &gt;0,5 g/gün.</p>
+          <p>Sparsentan dual ETA + AT1 antagonisti.</p>
+          <p>Nefecon ilk vuruşu hedefler.</p>
+        </div>
+      </div>
+      <div class="kutu tuzak" style="margin-top:3mm"><div class="ad">Tuzak</div><p>Yüksek doz sistemik steroidi refleks olarak başlamak: enfeksiyon riski faydayı götürebilir, profilaksisiz verilmez.</p></div>
+    </aside>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>17</b></div>
+</section>
+
+<!-- ================= 18 · BAŞVURU: YENİ AJANLAR (sol) ================= -->
+<section class="sayfa sol tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>IgAN · Başvuru</span></div>
+  <div class="ust-etiket">IgAN · Başvuru</div>
+  <h1 class="konu orta">Yeni nesil ajanlar</h1>
+
+  <div class="blok">
+    <table class="tb">
+      <thead><tr><th style="width:34mm">Sınıf</th><th style="width:52mm">Ajanlar</th><th>Hedef ve bulgu</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">APRIL/BAFF inhibitörleri</td><td>Sibeprenlimab, zigakibart (anti-APRIL); atasisept, telitasisept, povetasisept (APRIL + BAFF)</td><td>Gd-IgA1 üreten hücreler sağkalım sinyalini kaybeder; faz 2/3’te Gd-IgA1’de %50–60 düşüş ve eGFR stabilizasyonu, ciddi immünsüpresyon yaratmadan</td></tr>
+        <tr><td class="bas">Anti-CD38</td><td>Felzartamab, mezagitamab</td><td>Uzun ömürlü plazma hücrelerini doğrudan tüketir: otoantikor üretimini kaynağında durdurma</td></tr>
+        <tr><td class="bas">Kompleman blokerleri</td><td>İptakopan (Faktör B, APPLAUSE-IgAN, onaylı), avakopan (C5aR), ravulizumab ve semdisiran (terminal yol), narsoplimab (MASP-2)</td><td>Alternatif ve lektin yolağını baskılar; iptakopan eGFR stabilizasyonu ve proteinüride ~%38 düşüş. Narsoplimabın faz 3’ü durduruldu</td></tr>
+        <tr><td class="bas">Hemodinamik</td><td>Dapagliflozin, empagliflozin; sparsentan, atrasentan</td><td>Glomerül içi basınç ve fibrozis; hastalığa özgü değil ama temel</td></tr>
+        <tr><td class="bas">Mukozal</td><td>TRF-budesonid</td><td>İlk vuruş; onaylı ilk spesifik ajan</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Üç sınıfı karıştırma</h2>
+      <ul class="madde">
+        <li><b>APRIL/BAFF:</b> patojenik hücrenin sağkalım sinyalini keser</li>
+        <li><b>Anti-CD38:</b> plazma hücresini doğrudan tüketir</li>
+        <li><b>Kompleman blokerleri:</b> hasarın son ortak yolunu durdurur</li>
+      </ul>
+    </div>
+    <div class="blok">
+      <h2>Neyi ölçüyoruz?</h2>
+      <p>Proteinüri düşüşünün onay sonlanımı kabul edilmesi bu alanı hızlandırdı. Ajanlar Gd-IgA1 düzeyi, proteinüri ve eGFR eğimi üzerinden değerlendiriliyor; uzun dönem böbrek sağkalımı verileri birikiyor.</p>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Onay durumu ve kanıt düzeyi</h2>
+    <table class="tb">
+      <thead><tr><th style="width:38mm">Ajan</th><th style="width:30mm">Durum</th><th>Temel veri</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">TRF-budesonid</td><td>FDA onaylı, ilk spesifik ajan</td><td>NefIgArd: 9 ay tedavi, 15 ay ilaçsız izlemde bile +5,05 mL/dk/1,73 m² eGFR farkı</td></tr>
+        <tr><td class="bas">Sparsentan</td><td>FDA onaylı</td><td>PROTECT: irbesartana göre proteinüride %40 daha fazla düşüş</td></tr>
+        <tr><td class="bas">İptakopan</td><td>Onaylı</td><td>APPLAUSE-IgAN: eGFR stabilizasyonu, proteinüride ~%38 düşüş</td></tr>
+        <tr><td class="bas">SGLT2 inhibitörü</td><td>Standart bakımın parçası</td><td>DAPA-CKD alt grubunda %71 risk azalması; EMPA-KIDNEY destekler</td></tr>
+        <tr><td class="bas">APRIL/BAFF, anti-CD38</td><td>Faz 2/3</td><td>Gd-IgA1’de %50–60 düşüş, proteinüride belirgin azalma</td></tr>
+        <tr><td class="bas">Narsoplimab</td><td>Faz 3 durduruldu</td><td>MASP-2, lektin yolağı</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci</div><p>Yeni ajanların ortak çekiciliği, geniş immünsüpresyon yapmadan patojenik antikor üretimini azaltmaları.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>İptakopan alternatif yolakta Faktör B’yi inhibe eder.</p>
+        <p>Sefaxersen (siRNA) çalışmaları sürüyor.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>18</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 19 · BAŞVURU: ÖZEL DURUMLAR (sağ) ================= -->
+<section class="sayfa sag tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>IgAN · Başvuru</span></div>
+  <div class="ust-etiket">IgAN · Başvuru</div>
+  <h1 class="konu orta">Özel durumlar</h1>
+
+  <div class="blok">
+    <h2>Kresentik varyant · hızlı ilerleyen GN</h2>
+    <p style="font-size:8pt;line-height:1.35">Ağır kresentik tutulumda yeni nesil hedefe yönelik ajanlar <b>yetersiz kalır</b>. Bu tabloda hâlâ siklofosfamid destekli agresif kortikosteroid yaklaşımına acilen başvurulması gerekebilir. Tanı ölçütü: &gt;%50 kresent ve açıklanamayan hızlı eGFR kaybı.</p>
+  </div>
+
+  <div class="blok">
+    <h2>Hızlı ilerleyen tabloda sıra</h2>
+    <div class="bw" style="grid-template-columns:repeat(4,1fr)">
+      <div><b>Tanı</b><span>&gt;%50 kresent + hızlı eGFR kaybı; biyopsi gecikmez</span></div>
+      <div><b>Tedavi</b><span>Yüksek doz kortikosteroid + siklofosfamid</span></div>
+      <div><b>Yeni ajanlar</b><span>Bu tabloda yetersiz kalır</span></div>
+      <div><b>Profilaksi</b><span>Yoğun immünsüpresyonda fırsatçı enfeksiyon önlemi</span></div>
+    </div>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>IgA vasküliti</h2>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">Klinik</td><td>Palpabl purpura, artralji, karın ağrısı ve böbrek tutulumu tetradı</td></tr>
+          <tr><td class="bas">Patogenez</td><td>IgA nefropatisiyle ortak: anormal glikozile IgA1 içeren immün kompleksler</td></tr>
+          <tr><td class="bas">Çocuk</td><td>Histolojik derecelendirmede ISKDC tercih edilir</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="blok">
+      <h2>Nefrotik tablo</h2>
+      <p>Podositopatiye sekonder masif proteinüri; glomerüler-podositik çapraz iletişimin bozulması tübülointerstisyel yıkımı hızlandırır. Bu hastalarda ayırıcı tanı ve tedavi kararı histolojiyle birlikte verilir.</p>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Ayırıcı tanı hatırlatması</h2>
+    <table class="tb">
+      <thead><tr><th style="width:44mm">Tablo</th><th>Ayıran ipucu</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Postenfeksiyöz GN</td><td>Hematüri enfeksiyondan 1–3 hafta <b>sonra</b>; IgA nefropatisinde eş zamanlı</td></tr>
+        <tr><td class="bas">Stafilokok ilişkili IgA baskın GN</td><td>Aktif stafilokok enfeksiyonu zemininde; tedavi enfeksiyona yönelir</td></tr>
+        <tr><td class="bas">Monoklonal gamopati</td><td>IgA birikimiyle gidebilir: paraprotein araştırması</td></tr>
+        <tr><td class="bas">IgA vasküliti</td><td>Sistemik bulgular: purpura, artralji, karın ağrısı</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>Kompleman yolağının rolü</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:40mm">Alternatif yolak</td><td>Baskın yolaklardan biri; Faktör B inhibitörü iptakopanın hedefi</td></tr>
+        <tr><td class="bas">Lektin yolağı</td><td>MASP-2 lezyon şiddetini artırır; narsoplimab bu yolağı hedefliyordu, faz 3 durduruldu</td></tr>
+        <tr><td class="bas">Terminal yolak</td><td>C5b-9 doku hasarını büyütür; ravulizumab, semdisiran, avakopan araştırma aşamasında</td></tr>
+        <tr><td class="bas">C3 birikimi</td><td>Biyopside olguların &gt;%90’ında IgA’ya eşlik eder</td></tr>
+        <tr><td class="bas">Genetik</td><td>CFHR1/CFHR3 delesyonu kompleman regülasyonu üzerinden koruyucudur</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu kural"><div class="ad">Altın kural</div><p>Hızlı eGFR kaybında biyopsiyi geciktirme: kresentik varyantın tedavisi tamamen farklıdır ve zamana duyarlıdır.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>IgAV ve IgAN aynı spektrumun iki yüzü.</p>
+        <p>ISKDC evre IV–V (&gt;%50 kresent) çok yüksek SDBY riski.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>19</b></div>
+</section>
+
+<!-- ================= 20 · BAŞVURU: VAKADAN KARARA (sol) ================= -->
+<section class="sayfa sol tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>IgAN · Başvuru</span></div>
+  <div class="ust-etiket">IgAN · Başvuru</div>
+  <h1 class="konu orta">Vakadan karara</h1>
+
+  <div class="blok">
+    <table class="tb">
+      <thead><tr><th style="width:86mm">Senaryo</th><th>Doğru yaklaşım</th></tr></thead>
+      <tbody>
+        <tr><td>22 yaş erkek, üst solunum yolu enfeksiyonuyla <b>aynı gün</b> başlayan makroskopik hematüri</td><td>Sinfarenjitik hematüri: IgA nefropatisi düşün</td></tr>
+        <tr><td>Enfeksiyondan 2 hafta sonra hematüri, düşük C3</td><td>Postenfeksiyöz glomerülonefrit</td></tr>
+        <tr><td>Biyopside T2 ve C2</td><td>En güçlü kötü prognoz göstergeleri; agresif izlem ve tedavi</td></tr>
+        <tr><td>Biyopside E1, hasta immünsüpresif almıyor</td><td>Aktif, geri döndürülebilir lezyon: tedaviye yanıt beklenir</td></tr>
+        <tr><td>Optimize RAS blokajı altında zaman ağırlıklı proteinüri 0,6 g/gün</td><td>“Düşük” sayma: 10 yıllık SDBY riski %30’a varabilir, tedaviyi güçlendir</td></tr>
+        <tr><td>RAS blokajına rağmen proteinüri 1,2 g/gün</td><td>SGLT2 inhibitörü ekle; yetmezse sparsentan ya da TRF-budesonid</td></tr>
+        <tr><td>Hekim yüksek doz sistemik steroid planlıyor</td><td>TESTING ve STOP-IgAN’i hatırla: düşük doz + <i>P. jirovecii</i> profilaksisi, fayda-zarar tartışılmalı</td></tr>
+        <tr><td>&gt;%50 kresent, kreatinin hızla yükseliyor</td><td>Kresentik varyant: siklofosfamid destekli agresif steroid</td></tr>
+        <tr><td>Aile öyküsünde CFHR1/CFHR3 delesyonu</td><td>Koruyucu varyant; C1GALT1 polimorfizmi ise yatkınlık verir</td></tr>
+        <tr><td>Hasta Gd-IgA1 düzeyiyle takip istiyor</td><td>Umut verici ama henüz rutin standart değil</td></tr>
+        <tr><td>Purpura, artralji ve karın ağrısıyla gelen çocukta nefrit</td><td>IgA vasküliti nefriti: histolojide ISKDC evrelemesi</td></tr>
+        <tr><td>Aktif stafilokok enfeksiyonu olan hastada IgA baskın GN</td><td>Sekonder tablo: tedavi enfeksiyona yönelir</td></tr>
+        <tr><td>Yaşlı hastada IgA birikimi ve monoklonal bant</td><td>Monoklonal gamopati ilişkili böbrek hastalığını dışla</td></tr>
+        <tr><td>Biyopside T2, hasta yeni ajan istiyor</td><td>Kalıcı fibrozis baskın: beklentiyi konuş, nefroprotektif zemini güçlendir</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>Hasta ne sorar?</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:44mm">“Böbreğimi kaybeder miyim?”</td><td>Risk kişiye özgü: eGFR, proteinüri, kan basıncı ve MEST-C skoru tahmin aracına girer; hastaların %30–45’i uzun dönemde SDBY’ye ilerler</td></tr>
+        <tr><td class="bas">“İdrarım kanlı akıyor”</td><td>Enfeksiyonla eş zamanlı makroskopik hematüri atağı tipik ve genellikle kendini sınırlar; ama yeni ve kalıcı eGFR düşüşü varsa değerlendirilir</td></tr>
+        <tr><td class="bas">“Kortizon şart mı?”</td><td>Zemin RAS blokajı ve SGLT2 inhibitörüdür; sistemik steroid kararı fayda-zarar dengesiyle, düşük doz ve profilaksiyle verilir</td></tr>
+        <tr><td class="bas">“Çocuğuma geçer mi?”</td><td>Yatkınlık genetiktir (MHC sınıf II, C1GALT1) ama basit mendel geçişi yoktur</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu kural"><div class="ad">Altın kural · beş cümlede IgAN</div><p>Dört vuruş · T ve C2 en kötü histoloji · sinfarenjitik hematüri eş zamanlıdır · düşük proteinüri güvence değildir · zemin RAS blokajı ve SGLT2 inhibitörü.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>İlk spesifik onaylı ajan TRF-budesonid.</p>
+        <p>DAPA-CKD alt grubunda risk %71 azaldı.</p>
+        <p>PROTECT: sparsentan proteinüride %40 ek düşüş.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>20</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 21 · KISIM 3 KAPAĞI — KBH-MKB (sağ) ================= -->
+<section class="sayfa sag kisim">
+  <div class="tirnak">Nefroloji</div>
+  <div class="bant">
+    <div class="kisim-no">Kısım 3 · Mineral metabolizması</div>
+    <h1>KBH’de hiperfosfatemi ve mineral-kemik bozukluğu</h1>
+    <div class="alt">Laboratuvar, kemik ve damar: tek sendromun üç yüzü</div>
+  </div>
+  <div class="govde">
+    <div class="kurallar">
+      <h2>Altı altın kural</h2>
+      <ol>
+        <li><span>Erken KBH’de <b>FGF-23 ve PTH artar, fosfor normal görünür</b>; Klotho direnciyle kompanzasyon çöker.</span></li>
+        <li><span>Vasküler kalsifikasyon aktif bir süreçtir: <b>Pit-1/Pit-2 → Runx2</b> → osteoblast benzeri hücre.</span></li>
+        <li><span><b>PTH’yi aşırı baskılamak</b> adinamik kemik yapar; kemiğe giremeyen mineral damara gider.</span></li>
+        <li><span>En tehlikeli fosfor kaynağı <b>inorganik katkı maddeleri</b> (%80–100 emilim).</span></li>
+        <li><span>Kalsiyum bazlı bağlayıcılar <b>kısıtlanır</b>; sevelamer, lantan ve demir bazlı ajanlar tercih edilir.</span></li>
+        <li><span>Adinamik kemikte <b>bisfosfonat kontrendike</b>, teriparatid en uygun seçenektir.</span></li>
+      </ol>
+    </div>
+    <div>
+      <h2>Bu kısımda</h2>
+      <ol class="icindekiler">
+        <li><div><span>KBH’de hiperfosfatemi</span><small>Açık sayfa</small></div><em>22</em></li>
+        <li><div><span>Adaptasyondan maladaptasyona</span><small>Anlatı</small></div><em>24</em></li>
+        <li><div><span>Fosfor transport fizyolojisi</span><small>Başvuru</small></div><em>25</em></li>
+        <li><div><span>Fosforu düşürmek</span><small>Karar yolu</small></div><em>26</em></li>
+        <li><div><span>Bağlayıcılar ve tenapanor</span><small>Başvuru</small></div><em>27</em></li>
+        <li><div><span>Kemik: hangi döngü?</span><small>Karar yolu</small></div><em>28</em></li>
+        <li><div><span>Kalsifikasyon ve kemik ilaçları</span><small>Başvuru</small></div><em>29</em></li>
+        <li><div><span>Hızlı tekrar</span><small>Soru–cevap</small></div><em>30</em></li>
+      </ol>
+    </div>
+  </div>
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>21</b></div>
+</section>
+
+<!-- ================= 22 · AÇIK SAYFA SOL ================= -->
+<section class="sayfa sol tur-acik">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>Mineral metabolizması</span></div>
+  <div class="ust-etiket">Mineral metabolizması · Açık sayfa</div>
+  <h1 class="konu">KBH’de hiperfosfatemi</h1>
+  <p class="giris">Yüksek fosfor yalnız bir laboratuvar değeri değil; kemiği bozan, damarı kemikleştiren ve mortaliteyi artıran sistemik bir toksisitedir. Tablonun adı KBH-mineral ve kemik bozukluğudur.</p>
+
+  <div class="bakis">
+    <div class="ad">30 saniyede</div>
+    <ul class="madde">
+      <li>Sendromun üç ayağı: <b>laboratuvar · kemik · damar</b>.</li>
+      <li>Fosforun %85’i kemikte, %14’ü yumuşak dokuda, <b>%1’i</b> hücre dışı sıvıda.</li>
+      <li>Erken evrede <b>FGF-23 ve PTH yükselir</b>, fosfor normal kalabilir.</li>
+      <li>GFR <b>&lt;20–30 mL/dk</b>’da Klotho direnci: aşikâr hiperfosfatemi.</li>
+      <li>Hedef: hiperkalsemiden kaçın, fosforu normale çek, <b>PTH’yi aşırı baskılama</b>.</li>
+      <li>Diyalizde PTH hedefi normalin <b>2–9 katı</b>.</li>
+    </ul>
+  </div>
+
+  <div class="sekil-blok">
+    <div class="sekil-baslik">Adaptasyondan maladaptasyona</div>
+    <div class="yolak" style="grid-template-columns:repeat(4,1fr)">
+      <div class="ist"><div class="kap"><b>GFR ↓</b><span>Nefron kütlesi azalır, fosfor atma kapasitesi düşer</span></div></div>
+      <div class="ist"><div class="kap"><b>FGF-23 ↑</b><span>Osteositten salınır; α-Klotho ile FGFR1c’yi aktive eder, NaPi-IIa/IIc yıkılır</span></div><div class="ilac"><i>Fosfatüri</i></div></div>
+      <div class="ist"><div class="kap"><b>Kalsitriol ↓ · PTH ↑</b><span>1α-hidroksilaz baskılanır, hipokalsemi paratiroidi uyarır</span></div><div class="ilac"><i>Sekonder hiperparatiroidi</i></div></div>
+      <div class="ist"><div class="kap"><b>Klotho direnci</b><span>Böbrek kaynaklı α-Klotho tükenir; devasa FGF-23 ve PTH’ya rağmen atılım yetmez</span></div><div class="ilac"><i class="sure">Aşikâr hiperfosfatemi</i></div></div>
+    </div>
+    <div class="sekil-alt"><b>Şekil 3.</b> Erken evrede fosfor normal görünür; bedeli ağır bir endokrin bozukluktur. FGF-23 bu dönemin en erken biyobelirtecidir ve doğrudan sol ventrikül hipertrofisine de yol açar.</div>
+  </div>
+
+  <div class="sayilar">
+    <div class="bas-etiket">Sayılarla</div>
+    <div><strong>%80–85</strong><span>filtre fosforun proksimal geri emilimi</span></div>
+    <div><strong>800–1000</strong><span>mg/gün · KDIGO fosfor alımı</span></div>
+    <div><strong>%80–100</strong><span>inorganik fosforun emilimi</span></div>
+    <div><strong>%20–40</strong><span>fitat fosforunun emilimi</span></div>
+    <div><strong>~900 mg</strong><span>hemodiyaliz seansında uzaklaşan fosfor</span></div>
+    <div><strong>%18</strong><span>evre 3–5’te adinamik kemik sıklığı</span></div>
+  </div>
+
+  <div class="blok" style="margin-top:4mm">
+    <h2>KDIGO hedefleri · üç D</h2>
+    <table class="tb">
+      <thead><tr><th style="width:30mm">Alan</th><th>Hedef</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Kalsiyum</td><td>Hiperkalsemiden kaçın: kalsiyum bazlı bağlayıcı ve aktif D vitamini yüklemesini sınırla</td></tr>
+        <tr><td class="bas">Fosfor</td><td>Normal aralığa çek; diyette 800–1000 mg/gün ve kaynak kontrolü</td></tr>
+        <tr><td class="bas">PTH</td><td>Diyalizde normalin 2–9 katı bandında; aşırı baskılama adinamik kemik yapar</td></tr>
+        <tr><td class="bas">Diyaliz</td><td>Dirençli olguda süre ya da sıklık artışı</td></tr>
+        <tr><td class="bas">Kemik</td><td>Antiresorptif öncesi mineral parametrelerini düzelt, hipokalsemiyi dışla</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · sessiz dönem</div><p>Evre 3 hastada fosfor normal, FGF-23 ve PTH yüksekse kompanzasyon çalışıyor demektir: diyet ve kalsiyum yükünü şimdiden düzenlemek, maladaptif evreye daha az hasarla girmeyi sağlar.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Fosforun %85’i kemikte, yalnız %1’i hücre dışı sıvıda.</p>
+        <p>Haftalık diyalizle uzaklaşan fosfor 2,1–3,6 g: tipik diyet alımını dengelemekte yetersiz kalabilir.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>22</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 23 · AÇIK SAYFA SAĞ ================= -->
+<section class="sayfa sag tur-acik">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>KBH-MKB</span><span>Mineral metabolizması</span></div>
+
+  <div class="blok">
+    <h2>Diyet fosforu: kaynak her şeydir</h2>
+    <table class="tb">
+      <thead><tr><th style="width:44mm">Kaynak</th><th style="width:44mm">Örnek</th><th>Emilim</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">İnorganik fosfor</td><td>İşlenmiş gıda, kolalı içecek, koruyucu katkı maddeleri</td><td><b>%80–100</b> — en tehlikeli</td></tr>
+        <tr><td class="bas">Organik hayvansal</td><td>Et, süt ürünleri</td><td>%40–60</td></tr>
+        <tr><td class="bas">Organik bitkisel (fitat)</td><td>Baklagil, kuruyemiş</td><td>%20–40; insanda fitaz enzimi yok</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:1.4mm;font-size:7.6pt;color:var(--murekkep-2)">Aynı miktar fosfor işlenmiş gıdadan alındığında bitkisel kaynağa göre 2–4 kat fazla emilir. Bitki ağırlıklı düşük proteinli diyet (PLADO) asit yükünü, FGF-23’ü ve üremik toksinleri de azaltır.</p>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Vasküler kalsifikasyon</h2>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">Giriş</td><td>Yüksek fosfor, damar düz kas hücresine Pit-1 ve Pit-2 (tip III Na-fosfat taşıyıcıları) ile girer</td></tr>
+          <tr><td class="bas">Dönüşüm</td><td>Runx2, Msx2, osteriks ve BMP-2 aktive olur: osteoblast benzeri hücre</td></tr>
+          <tr><td class="bas">Yer</td><td>Medial kalsifikasyon (Mönckeberg sklerozu); intimal aterosklerozdan farklı</td></tr>
+          <tr><td class="bas">İnhibitörler</td><td>Fetuin-A, matriks Gla proteini, pirofosfat, Klotho tükenir</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="blok">
+      <h2>Kalsiprotein partikülleri</h2>
+      <p style="font-size:8pt;line-height:1.35">Kanda artan kalsiyum ve fosfor normalde karaciğer kaynaklı Fetuin-A ile bağlanıp zararsız <b>birincil CPP</b> olarak tutulur. İnhibitörler azalınca bu yapılar çözünmez, kristalize <b>ikincil CPP</b>’ye döner; makrofajları uyarıp TNF-α ve IL-1β ile masif inflamasyon yaratır ve kalsifikasyonu şiddetlendirir.</p>
+    </div>
+  </div>
+
+  <div class="iki-sutun">
+    <div>
+      <div class="kutu kural"><div class="ad">Altın kural · aşırı baskılama</div><p>Kalsiyum ve D vitamini yüklemesiyle PTH’yi aşırı baskılamak adinamik kemiğe yol açar. Kemik tamponlama yeteneğini kaybeder; mineral doğrudan damara gider.</p></div>
+      <div class="kutu tuzak"><div class="ad">Tuzak · normal fosfor</div><p>Erken evrede normal fosfor güvence değildir: FGF-23 ve PTH zaten yükselmiştir, hasar sessizce ilerler.</p></div>
+    </div>
+    <div>
+      <div class="kutu inci"><div class="ad">Klinik inci · FGF-23 ve kalp</div><p>FGF-23 yalnız fosfatüri yapmaz; miyokartta doğrudan sol ventrikül hipertrofisine yol açar. Yüksek düzeyi kardiyovasküler riskin habercisidir.</p></div>
+      <div class="kutu spot"><div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>Fosfor emiliminin paraselüler yolu NHE3 ile ilişkilidir; yüksek fosforlu diyette baskın yol budur.</p>
+          <p>Konvansiyonel hemodiyaliz seansı yalnız ~900 mg fosfor uzaklaştırır.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Renal osteodistrofi · iki uç</h2>
+    <table class="tb">
+      <thead><tr><th style="width:32mm">Tip</th><th style="width:44mm">Mekanizma</th><th>Bulgu ve risk</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Yüksek döngü · osteitis fibrosa sistika</td><td>İleri sekonder hiperparatiroidi; kontrolsüz yapım ve yıkım</td><td>PTH ve kemiğe özgü ALP yüksek, kemik iliğinde fibrozis</td></tr>
+        <tr><td class="bas">Düşük döngü · adinamik kemik</td><td>Kalsiyum bazlı bağlayıcı ve aktif D vitamini ile PTH’nin aşırı baskılanması; üremik toksinler</td><td>İnce osteoid, azalmış hücresellik; tamponlama kaybı ve vasküler kalsifikasyon</td></tr>
+        <tr><td class="bas">Osteomalazi</td><td>Mineralizasyon defekti</td><td>Adinamik kemikten farkı: osteoid oluşumunda artış vardır</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>23</b></div>
+</section>
+
+<!-- ================= 24 · ANLATI (sol) ================= -->
+<section class="sayfa sol tur-anlati">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>KBH-MKB · Anlatı</span></div>
+  <div class="ust-etiket">KBH-MKB · Anlatı</div>
+  <h1 class="konu orta">Kompanzasyonun bedeli</h1>
+
+  <div class="anlati">
+    <div class="metin">
+      <h2>Önce her şey yolunda görünür</h2>
+      <p>Nefron kütlesi azaldıkça böbreğin fosfat atma kapasitesi düşer. İlk devreye giren mekanizma osteositlerden salınan FGF-23’tür: böbrekte zorunlu ko-reseptörü α-Klotho ile birleşip FGFR1c’yi aktive eder, NaPi-IIa ve NaPi-IIc taşıyıcıları yıkılır ve fosfatüri sağlanır. Aynı FGF-23, 1α-hidroksilazı baskılayarak kalsitriolü düşürür; bağırsaktan kalsiyum emilimi azalır, hipokalsemi paratiroidi uyarır. PTH da fosfatüriyi artırır. Sonuç: serum fosforu bir süre normal kalır, ama bedeli devasa FGF-23 ve PTH düzeyleridir.</p>
+
+      <h2>Sonra kompanzasyon çöker</h2>
+      <p>Kronik tübülointerstisyel hasarla böbrek kaynaklı α-Klotho üretimi dramatik biçimde azalır. Ko-reseptör yoksa hormon işe yaramaz: hedef dokularda şiddetli FGF-23 direnci gelişir. GFR 20–30 mL/dk’nın altına indiğinde kalan nefronların atılım sınırı da tükenir ve aşikâr hiperfosfatemi ortaya çıkar.</p>
+
+      <h2>Damar kemikleşir</h2>
+      <p>Yüksek inorganik fosfor, damar düz kas hücresine Pit-1 ve Pit-2 taşıyıcılarıyla girer. Hücre içi fosfor artışı Runx2, Msx2 ve osteriks gibi osteojenik transkripsiyon faktörlerini açar; düz kas hücresi osteoblast benzeri bir hücreye dönüşür ve medyada hidroksiapatit çöker. Bu bir çökelme değil, hücre aracılı aktif kemikleşmedir. Süreci ölümcül kılan, Fetuin-A, matriks Gla proteini, pirofosfat ve Klotho gibi inhibitörlerin tükenmiş olmasıdır: birincil kalsiprotein partikülleri kristalize ikincil partiküllere döner ve inflamatuvar fırtınayı başlatır.</p>
+
+      <h2>Kemik iki uçta da bozulur</h2>
+      <p>Sürekli yüksek PTH kemik yapım ve yıkımını kontrolsüz artırır; kemik iliğinde fibrozisle giden osteitis fibrosa sistika, yani yüksek döngülü hastalık gelişir. Öte yandan kalsiyum bazlı bağlayıcılar ve aktif D vitamini analoglarıyla PTH aşırı baskılanırsa düşük döngülü adinamik kemik ortaya çıkar. İkincisi bugün diyaliz hastalarında, özellikle diyabetiklerde, en sık görülen tiptir.</p>
+
+      <h2>Ölümcül paradoks</h2>
+      <p>Adinamik kemiğin asıl tehlikesi kırık değil: kilitlenmiş kemik, kandaki kalsiyum ve fosforu tamponlama yeteneğini kaybeder. Kemiğe giremeyen mineraller doğrudan damar duvarına ve kapaklara yönelir. Yani PTH’yi “iyice düşürmek” hastayı korumaz, kalsifikasyonu hızlandırır.</p>
+    </div>
+
+    <div class="kenar">
+      <div class="kenar-baslik">Sendromun üç ayağı</div>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">Laboratuvar</td><td>Kalsiyum, fosfor, PTH, D vitamini anormallikleri</td></tr>
+          <tr><td class="bas">Kemik</td><td>Döngü, mineralizasyon, hacim ve güçte bozulma: renal osteodistrofi</td></tr>
+          <tr><td class="bas">Damar</td><td>Vasküler ve yumuşak doku kalsifikasyonu</td></tr>
+        </tbody>
+      </table>
+      <div class="kutu spot"><div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>FGF-23 en erken yükselen biyobelirteçtir.</p>
+          <p>Klotho direnci maladaptif evrenin anahtarıdır.</p>
+          <p>Kemik biyopsisi renal osteodistrofide altın standart; pratikte PTH ve kemiğe özgü ALP kullanılır.</p>
+        </div>
+      </div>
+      <div class="kutu inci"><div class="ad">Klinik inci</div><p>Üremik toksin indoksil sülfat düşük kemik yapım hızı ve anabolik PTH direnciyle ilişkilidir: adinamik kemikte yalnız tedavi değil üremi de rol oynar.</p></div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>24</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 25 · BAŞVURU: FİZYOLOJİ (sağ) ================= -->
+<section class="sayfa sag tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>KBH-MKB · Başvuru</span></div>
+  <div class="ust-etiket">Fosfor fizyolojisi · Başvuru</div>
+  <h1 class="konu orta">Fosfor nereden girer, nereden çıkar?</h1>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Bağırsak</h2>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">Transselüler</td><td>NaPi-2b (Npt2b); kalsitriol bu yolu artırır</td></tr>
+          <tr><td class="bas">Paraselüler</td><td>NHE3 ile ilişkili, gradiyente bağımlı; yüksek fosforlu diyette aktif yol doyduğu için baskın rota</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="blok">
+      <h2>Böbrek</h2>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">NaPi-IIa (SLC34A1)</td><td>Geri emilimin %70–80’i; inaktive edici mutasyon idiyopatik infantil hiperkalsemi, ağır hipofosfatemi ve taş yapar</td></tr>
+          <tr><td class="bas">NaPi-IIc (SLC34A3)</td><td>Erişkinde katkısı az; mutasyonu hiperkalsiürili herediter hipofosfatemik rikets</td></tr>
+          <tr><td class="bas">PiT-2 (SLC20A2)</td><td>Tip III eş taşıyıcı</td></tr>
+          <tr><td class="bas">XPR1</td><td>Bazolateral çıkış; eksikliği Fanconi benzeri sendrom</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Hormonal kontrol</h2>
+    <table class="tb">
+      <thead><tr><th style="width:34mm">Hormon</th><th style="width:52mm">Sinyal</th><th>Ortak son nokta</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">FGF-23</td><td>Osteositten salınır; bazolateral FGFR1c + zorunlu ko-reseptör α-Klotho, ERK1/2</td><td rowspan="2">Her iki kaskad da <b>NHERF1</b> iskele proteinini fosforile eder; NaPi-IIa/IIc taşıyıcıdan ayrılıp klatrin kaplı çukurlarla endositoza ve lizozomal yıkıma gider</td></tr>
+        <tr><td class="bas">PTH</td><td>PTH1R; hem adenilat siklaz (cAMP/PKA) hem fosfolipaz C (PKC)</td></tr>
+        <tr><td class="bas">Kalsitriol</td><td>Bağırsakta NaPi-2b’yi artırır</td><td>Emilimi yükseltir</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Yeni sensörler</h2>
+      <ul class="madde">
+        <li><b>Gliserol-3-fosfat:</b> proksimal tübülde glikolizin hız kısıtlayıcı adımı fosfordur; emilim artınca G-3-P üretimi artar, kemiğe gidip FGF-23 üretimini uyarır — kusursuz geri bildirim</li>
+        <li><b>İnozitol pirofosfatlar (IP6K1, IP6K2):</b> hücre içi fosfor sensörü; yokluklarında NaPi-IIa/IIc ekspresyonu kaybolur, ağır hiperfosfatüri gelişir</li>
+      </ul>
+    </div>
+    <div class="blok">
+      <h2>Modülatörler</h2>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">Asidoz</td><td>NaPi-IIa/IIc’yi inhibe eder, fosfatüri yapar: asidik ortamda kalsiyum-fosfat çökmesini ve nefrokalsinozu önleyen koruyucu mekanizma</td></tr>
+          <tr><td class="bas">Fosfatüri yapanlar</td><td>Dopamin, atriyal natriüretik peptid</td></tr>
+          <tr><td class="bas">Fosfor tutanlar</td><td>Tiroid hormonu, büyüme hormonu</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Taşıyıcı bozukluğu → sendrom</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:44mm">NaPi-IIa (SLC34A1) inaktive edici mutasyon</td><td>İdiyopatik infantil hiperkalsemi, ağır hipofosfatemi, böbrek taşı</td></tr>
+        <tr><td class="bas">NaPi-IIc (SLC34A3) mutasyonu</td><td>Hiperkalsiürili herediter hipofosfatemik rikets</td></tr>
+        <tr><td class="bas">XPR1 eksikliği</td><td>Fanconi benzeri sendrom</td></tr>
+        <tr><td class="bas">IP6K1 ve IP6K2 yokluğu</td><td>NaPi-IIa/IIc ekspresyonu kaybolur, ağır hiperfosfatüri</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>25</b></div>
+</section>
+
+<!-- ================= 26 · KARAR YOLU: FOSFORU DÜŞÜRMEK (sol) ================= -->
+<section class="sayfa sol tur-karar">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>KBH-MKB · Yaklaşım</span></div>
+  <div class="ust-etiket">Hiperfosfatemi · Karar yolu</div>
+  <h1 class="konu orta">Fosforu düşürmek: üç D</h1>
+  <p class="giris">Diyet, ilaç ve diyaliz. Üçü birlikte kurulur; biri eksikse diğer ikisi yetmez.</p>
+
+  <div class="karar-izgara">
+    <div>
+      <div class="adim"><div class="no">1</div><div>
+        <h3>Diyet: miktardan çok kaynak</h3>
+        <p>KDIGO günlük <b>800–1000 mg</b> fosfor önerir; ama aynı miktar işlenmiş gıdadan alındığında 2–4 kat fazla emilir. Katkı maddelerini kes, bitki ağırlıklı düşük proteinli modele yönlendir, diyetisyenle çalış.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">2</div><div>
+        <h3>Bağlayıcı seç</h3>
+        <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+          <div><b>Kalsiyum bazlı</b><span>Ucuz ama kalsiyum yükü kalsifikasyonu hızlandırır: KDIGO kısıtlamayı önerir</span></div>
+          <div><b>Kalsiyum dışı</b><span>Sevelamer karbonat, lantan karbonat</span></div>
+          <div><b>Demir bazlı</b><span>Ferrik sitrat ya da sukroferrik oksihidroksit; anemiye de katkı</span></div>
+        </div>
+      </div></div>
+
+      <div class="adim"><div class="no">3</div><div>
+        <h3>Yetmezse: tenapanor</h3>
+        <p>Bağırsakta NHE3’ü bloke eder; hücre içi proton artışı klaudinlerde yapısal değişiklik yaparak fosforun <b>paraselüler</b> geçişini keser, ayrıca NaPi-2b’yi baskılar. Günde iki küçük tablet: hap yükü çok düşük, bağlayıcıya dirençli olguda ekleme tedavisi. En sık yan etki yumuşak dışkı ve ishal — KBH’deki kabızlığa iyi gelebilir.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">4</div><div>
+        <h3>Diyalizi optimize et</h3>
+        <p>Konvansiyonel hemodiyaliz (haftada 3 gün, 4 saat) seans başına yalnız <b>~900 mg</b> fosfor uzaklaştırır. Dirençli olguda süreyi ya da sıklığı artır: kısa günlük veya uzamış gece diyalizi.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">5</div><div>
+        <h3>İzlem</h3>
+        <div class="bw" style="grid-template-columns:repeat(4,1fr)">
+          <div><b>Fosfor · kalsiyum</b><span>Trendi izle, tek ölçüme göre karar verme</span></div>
+          <div><b>PTH</b><span>Yönü önemli: hızlı düşüş aşırı baskılamanın habercisi</span></div>
+          <div><b>Kemiğe özgü ALP</b><span>Döngü hızının dolaylı göstergesi</span></div>
+          <div><b>Uyum</b><span>Hap yükü ve diyet kaynakları her vizitte sorgulanır</span></div>
+        </div>
+      </div></div>
+
+      <div class="adim"><div class="no">6</div><div>
+        <h3>Hedefleri birlikte tut</h3>
+        <p>Hiperkalsemiden kaçın, fosforu normal aralığa çek, PTH’yi (diyalizde normalin <b>2–9 katı</b>) aşırı baskılamadan kontrol et. Sinakalset kalsiyum duyarlılığını artırarak PTH, kalsiyum ve fosforu birlikte düşürür: hiperkalsemiye eğilimli hastada idealdir.</p>
+      </div></div>
+    </div>
+
+    <aside>
+      <div class="kenar-sutun">
+        <div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>İnorganik fosfor %80–100, fitat %20–40 emilir.</p>
+          <p>Sevelamerin hidroklorür formu metabolik asidoz yapar; karbonat tercih edilir.</p>
+          <p>Tenapanor bir bağlayıcı değildir: emilimi keser.</p>
+        </div>
+      </div>
+      <div class="kutu tuzak" style="margin-top:3mm"><div class="ad">Tuzak</div><p>Fosforu düşürmek için kalsiyum karbonatı yükseltmek: fosfor düşerken kalsiyum yükü damarı kireçlendirir.</p></div>
+      <div class="kutu inci" style="margin-top:3mm"><div class="ad">Klinik inci</div><p>Hap yükü uyumun en büyük düşmanıdır: çiğnenebilir lantan, sukroferrik oksihidroksit ve tenapanor bu yüzden değerlidir.</p></div>
+    </aside>
+  </div>
+
+  <div class="folyo"><b>26</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 27 · BAŞVURU: BAĞLAYICILAR (sağ) ================= -->
+<section class="sayfa sag tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>KBH-MKB · Başvuru</span></div>
+  <div class="ust-etiket">Fosfat bağlayıcılar · Başvuru</div>
+  <h1 class="konu orta">Bağlayıcılar ve tenapanor</h1>
+
+  <div class="blok">
+    <table class="tb">
+      <thead><tr><th style="width:36mm">Ajan</th><th style="width:56mm">Mekanizma ve avantaj</th><th>Kısıtlılık</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Kalsiyum asetat · karbonat</td><td>Ucuz ve etkili</td><td>Hiperkalsemi ve pozitif kalsiyum dengesi: vasküler kalsifikasyonu hızlandırır, adinamik kemik riski. KDIGO kısıtlar</td></tr>
+        <tr><td class="bas">Sevelamer</td><td>Kalsiyum ve metal içermeyen katyonik polimer; safra asitlerini de bağlayarak LDL, ürik asit ve CRP’yi düşürür. Meta-analizlerde kalsiyum bazlı ajanlara göre mortalite ve kalsifikasyon ilerlemesi daha az</td><td>Hidroklorür formu metabolik asidoz yapar (karbonat tercih); yüksek hap yükü, kabızlık, GİS intoleransı</td></tr>
+        <tr><td class="bas">Lantan karbonat</td><td>Çiğnenebilir, kalsiyum yükü yok, hap yükü düşük</td><td>GİS toleransı zayıf olabilir</td></tr>
+        <tr><td class="bas">Ferrik sitrat</td><td>Fosforu düşürürken ferritin ve transferrin satürasyonunu yükseltir, eritropoez uyarıcı ajan ihtiyacını azaltır</td><td>Siyah dışkı, ishal</td></tr>
+        <tr><td class="bas">Sukroferrik oksihidroksit</td><td>Sistemik demir emilimi minimal; çiğnenebilir, hap yükü çok düşük</td><td>İshal, koyu dışkı</td></tr>
+        <tr><td class="bas">Tenapanor</td><td>NHE3 inhibisyonu: paraselüler geçişi klaudinler üzerinden kapatır, NaPi-2b’yi baskılar; günde 2 tablet</td><td>Yumuşak dışkı ve ishal</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Sinakalset</h2>
+      <p>Kalsiyum duyarlı reseptörün duyarlılığını artırır: PTH’yi baskılarken kalsiyum ve fosforu da düşürür. Hiperkalsemiye eğilimli sekonder hiperparatiroidide idealdir. Karşı yüzü: PTH’yi dolaylı olarak aşırı baskılayıp adinamik kemiğe zemin hazırlayabilir.</p>
+    </div>
+    <div class="blok">
+      <h2>Seçim mantığı</h2>
+      <ul class="madde">
+        <li>Hiperkalsemi ya da kalsifikasyon varsa kalsiyum dışı ajan</li>
+        <li>Anemi ve demir eksikliği varsa demir bazlı ajan</li>
+        <li>Hap yükü uyumu bozuyorsa çiğnenebilir ajan ya da tenapanor</li>
+        <li>Asidoz varsa sevelamer karbonat</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Hangi hastaya hangi ajan?</h2>
+    <table class="tb">
+      <thead><tr><th style="width:56mm">Hasta</th><th>Tercih</th></tr></thead>
+      <tbody>
+        <tr><td>Kalsiyum karbonat altında hiperkalsemi ve ilerleyen kalsifikasyon</td><td>Sevelamer karbonat ya da lantan karbonat</td></tr>
+        <tr><td>Demir eksikliği ve eritropoez uyarıcı ajan ihtiyacı</td><td>Ferrik sitrat</td></tr>
+        <tr><td>Hap yükü nedeniyle uyumsuzluk</td><td>Sukroferrik oksihidroksit ya da tenapanor</td></tr>
+        <tr><td>Metabolik asidoz</td><td>Sevelamer karbonat (hidroklorür formundan kaçın)</td></tr>
+        <tr><td>Maksimum bağlayıcıya rağmen fosfor yüksek</td><td>Tenapanor ekle; diyaliz süresini gözden geçir</td></tr>
+        <tr><td>Hiperkalsemiye eğilimli sekonder hiperparatiroidi</td><td>Sinakalset</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · pleiotropi</div><p>Sevelamerin lipid ve CRP üzerindeki etkisi bir yan etki değil, safra asidi bağlamasının sonucudur.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Adinamik kemikte kalsiyum karbonat yerine sevelamer ya da lantan.</p>
+        <p>Diyalizat kalsiyumunu 2,5 mEq/L (1,25 mmol/L) düzeyine çekmek adinamik kemiği geri döndürmeye yardım eder.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>27</b></div>
+</section>
+
+<!-- ================= 28 · KARAR YOLU: KEMİK (sol) ================= -->
+<section class="sayfa sol tur-karar">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>KBH-MKB · Yaklaşım</span></div>
+  <div class="ust-etiket">Renal osteodistrofi · Karar yolu</div>
+  <h1 class="konu orta">Kemik hangi hızda dönüyor?</h1>
+  <p class="giris">Tedavi kararı kemik yoğunluğuna değil döngü hızına bakar. Yanlış tarafa müdahale hem kırık hem kalsifikasyon getirir.</p>
+
+  <div class="karar-izgara">
+    <div>
+      <div class="adim"><div class="no">1</div><div>
+        <h3>Döngüyü tahmin et</h3>
+        <div class="bw" style="grid-template-columns:1fr 1fr">
+          <div><b>Yüksek döngü</b><span>Osteitis fibrosa sistika: ileri sekonder hiperparatiroidi, PTH ve kemiğe özgü ALP yüksek, kemik iliğinde fibrozis</span></div>
+          <div><b>Düşük döngü</b><span>Adinamik kemik ve osteomalazi: ince osteoid, azalmış hücresellik, minimal döngü. Diyaliz hastasında, özellikle diyabetikte en sık</span></div>
+        </div>
+        <p style="margin-top:1.6mm">Altın standart kemik biyopsisidir; pratikte serum intakt PTH ve kemiğe özgü alkalen fosfataz trendi kullanılır.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">2</div><div>
+        <h3>Adinamik kemiği tanı</h3>
+        <p>Çoğu hasta asemptomatik; en sık yakınma kemik ağrısıdır. Alüminyum birikimi dışlanmalıdır. Sklerostin ve Dickkopf-1 gibi Wnt yolağı inhibitörleri patogenezde rol oynar. Periton diyalizinde hemodiyalizden daha sık görülür; evre 3–5’te sıklık yaklaşık <b>%18</b>.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">3</div><div>
+        <h3>Nedeni geri al</h3>
+        <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+          <div><b>İlaç</b><span>Aktif D vitamini analoğu ve kalsiyum bazlı bağlayıcıyı azalt: PTH’nin yükselmesine izin ver</span></div>
+          <div><b>Bağlayıcı</b><span>Sevelamer ya da lantan karbonata geç</span></div>
+          <div><b>Diyalizat</b><span>Kalsiyum konsantrasyonunu 2,5 mEq/L’ye indir</span></div>
+        </div>
+      </div></div>
+
+      <div class="adim"><div class="no">4</div><div>
+        <h3>Anabolik gerekirse</h3>
+        <p><b>Teriparatid (PTH 1-34)</b> osteoblastik aktiviteyi ve döngüyü yeniden başlattığı için düşük döngülü adinamik kemikte en uygun seçenektir. İzlem: PTH ve kemiğe özgü ALP trendleri.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">5</div><div>
+        <h3>Yüksek döngüde</h3>
+        <p>Sekonder hiperparatiroidiyi kontrol et: fosforu düşür, kalsitriol ya da analoglarını dengeli kullan, gerekirse sinakalset. Hedef PTH’yi sıfırlamak değil, diyalizde normalin 2–9 katı bandında tutmaktır.</p>
+      </div></div>
+    </div>
+
+    <aside>
+      <div class="kutu kural"><div class="ad">Altın kural</div><p>Antiresorptif başlamadan önce mineral parametrelerini düzelt ve <b>hipokalsemiyi dışla</b>; adinamik kemik şüphesini mutlaka değerlendir.</p></div>
+      <div class="kenar-sutun" style="margin-top:3mm">
+        <div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>Adinamik kemiğin osteomalaziden farkı: osteoid oluşumunda artış yoktur.</p>
+          <p>Kalsiyum yüklemesinden sonra hiperkalsemi gelişmesi tamponlama kapasitesinin kaybını gösterir.</p>
+        </div>
+      </div>
+      <div class="kutu tuzak" style="margin-top:3mm"><div class="ad">Tuzak</div><p>Adinamik kemikte sinakalset: PTH’yi daha da baskılayarak tabloyu derinleştirir.</p></div>
+    </aside>
+  </div>
+
+  <div class="folyo"><b>28</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 29 · BAŞVURU: KALSİFİKASYON VE İLAÇLAR (sağ) ================= -->
+<section class="sayfa sag tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>KBH-MKB · Başvuru</span></div>
+  <div class="ust-etiket">KBH-MKB · Başvuru</div>
+  <h1 class="konu orta">Kemik ilaçları ve kalsifikasyon</h1>
+
+  <div class="blok">
+    <h2>İleri evre KBH’de osteoporoz tedavisi</h2>
+    <table class="tb">
+      <thead><tr><th style="width:32mm">Ajan</th><th style="width:44mm">Konum</th><th>Gerekçe ve uyarı</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Bisfosfonat</td><td>Adinamik kemikte <b>kontrendike</b></td><td>Kemiğe geri dönüşümsüz birikir; durmuş döngüyü büsbütün dondurur, mikro hasar onarımı kalkar, atipik kırık ve vasküler kalsifikasyon artar</td></tr>
+        <tr><td class="bas">Denosumab</td><td>Renal klirensten bağımsız</td><td>Evre 4–5’te çok şiddetli ve uzun süreli hipokalsemi atakları: yakın kalsiyum takibi şart</td></tr>
+        <tr><td class="bas">Teriparatid</td><td>Anabolik</td><td>Düşük döngülü adinamik kemikte en ideal seçenek: döngüyü ve kemik mineral yoğunluğunu artırır</td></tr>
+        <tr><td class="bas">Romosozumab</td><td>Anti-sklerostin</td><td>Etkili ama kardiyovasküler olay riski nedeniyle ileri evre KBH’de çok dikkatli</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>Bisfosfonat neden yasak? Üç gerekçe</h2>
+    <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+      <div><b>Donma</b><span>Zaten minimal olan osteoklastik aktivite de silinir; ilaç atılamadığı için kemik biyolojik olarak durur</span></div>
+      <div><b>Mikro hasar</b><span>Günlük mekanik streslerin yarattığı çatlaklar onarılamaz: paradoksal atipik kırık riski</span></div>
+      <div><b>Tampon kaybı</b><span>Kilitlenen iskelet kalsiyum ve fosforu depolayamaz; mineraller damar duvarına ve kapaklara yönelir</span></div>
+    </div>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Klotho’nun öteki yüzü</h2>
+      <ul class="madde">
+        <li>FGF-23 için zorunlu ko-reseptör</li>
+        <li>NF-κB üzerinden inflamasyonu baskılar</li>
+        <li>TGF-β ve Wnt yolaklarını inhibe ederek fibrozisi azaltır</li>
+        <li>Reaktif oksijen türlerini temizler, mitokondriyal işlevi iyileştirir</li>
+        <li>Hücresel yaşlanmayı ve telomer yıpranmasını, sarkopeniyi azaltır</li>
+      </ul>
+    </div>
+    <div class="blok">
+      <h2>Fosfat fazlalığının bedeli</h2>
+      <ul class="madde">
+        <li>Endotel hasarı ve vasküler kalsifikasyon</li>
+        <li>FGF-23 üzerinden sol ventrikül hipertrofisi</li>
+        <li>Sekonder kalsiprotein partikülleriyle inflamasyon</li>
+        <li>Kemik döngüsünün iki uçta da bozulması</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Vakadan karara</h2>
+    <table class="tb">
+      <thead><tr><th style="width:80mm">Senaryo</th><th>Doğru yaklaşım</th></tr></thead>
+      <tbody>
+        <tr><td>Evre 3, eGFR 42, FGF-23 ve PTH yüksek, fosfor normal</td><td>Adaptif evre: kompanzasyon çalışıyor, diyet ve kalsiyum yükünü düzenle</td></tr>
+        <tr><td>Evre 5, eGFR 12, FGF-23 ve PTH çok yüksek, fosfor yüksek</td><td>Maladaptif evre: Klotho direnci, atılım kapasitesi tükendi</td></tr>
+        <tr><td>Koroner biyopside düz kas hücrelerinde osteoblastik belirteçler</td><td>Pit-1/Pit-2 girişi → Runx2, Msx2, osteriks</td></tr>
+        <tr><td>Kalsiyum-fosfor kompleksleri kristalize, makrofajlar aktif</td><td>Fetuin-A ve MGP azalmış: ikincil CPP</td></tr>
+        <tr><td>Yüksek doz aktif D vitaminiyle PTH agresif baskılanmış</td><td>Adinamik kemik: mineral damara yönelir</td></tr>
+        <tr><td>Kalsiyum karbonat altında hiperkalsemi</td><td>Kalsiyum dışı bağlayıcıya geç</td></tr>
+        <tr><td>Hemodiyaliz hastasında fosfor yüksek + demir eksikliği</td><td>Ferrik sitrat</td></tr>
+        <tr><td>Maksimum bağlayıcıya rağmen fosfor kontrolsüz</td><td>Tenapanor ekle</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci</div><p>Klotho eksikliği olan hayvan modellerinde yaşlanmayı hızlandıran temel bozukluk hiperfosfatemidir: fosfor yalnız böbrek değil, yaşlanma biyolojisinin de konusudur.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Medial kalsifikasyon = Mönckeberg sklerozu.</p>
+        <p>KBH ile ilişkili osteoporoz, renal osteodistrofiden ayrı bir kavram olarak tanımlanır.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>29</b></div>
+</section>
+
+<!-- ================= 30 · HIZLI TEKRAR (sol) ================= -->
+<section class="sayfa sol tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>KBH-MKB · Tekrar</span></div>
+  <div class="ust-etiket">KBH-MKB · Hızlı tekrar</div>
+  <h1 class="konu orta">Otuz soruda mineral-kemik bozukluğu</h1>
+  <p class="giris">Premium kart setlerinden seçildi. Koyu yazılı cevapları kapatıp kendinizi sınayın.</p>
+
+  <ol class="tekrar">
+    <li><span>Adinamik kemiğin histolojik imzası?</span><b>Düşük döngü, ince osteoid</b></li>
+    <li><span>En sık hangi grupta?</span><b>Diyabetik diyaliz hastaları</b></li>
+    <li><span>Tanı için dışlanması gereken metal?</span><b>Alüminyum</b></li>
+    <li><span>Evre 3–5’te sıklığı?</span><b>~%18</b></li>
+    <li><span>Hangi diyaliz türünde daha sık?</span><b>Periton diyalizi</b></li>
+    <li><span>Wnt yolağını baskılayan inhibitörler?</span><b>Sklerostin, Dickkopf-1</b></li>
+    <li><span>En sık iskelet yakınması?</span><b>Kemik ağrısı</b></li>
+    <li><span>Kırık riskini artıran mekanizma?</span><b>Mikro hasar onarımının bozulması</b></li>
+    <li><span>Kalsiyum yüklemesinden sonra hiperkalsemi neden olur?</span><b>Kemiğin tutma kapasitesi düşmüştür</b></li>
+    <li><span>Düşük döngünün damar sonucu?</span><b>Vasküler kalsifikasyon</b></li>
+    <li><span>Tanıda altın standart?</span><b>Kemik biyopsisi</b></li>
+    <li><span>Biyopsi yoksa hangi testler?</span><b>PTH ve kemiğe özgü ALP</b></li>
+    <li><span>Adinamik kemikte temel yaklaşım?</span><b>PTH’nin yükselmesine izin vermek</b></li>
+    <li><span>Kalsiyum karbonat yerine ne?</span><b>Sevelamer ya da lantan</b></li>
+    <li><span>Diyalizat kalsiyumu kaça çekilir?</span><b>2,5 mEq/L (1,25 mmol/L)</b></li>
+    <li><span>Adinamik kemikte yasak ilaç?</span><b>Bisfosfonatlar</b></li>
+    <li><span>Anabolik seçenek?</span><b>Teriparatid (PTH 1-34)</b></li>
+    <li><span>Sinakalsetin riski?</span><b>PTH’yi aşırı baskılamak</b></li>
+    <li><span>Takipte hangi iki değer?</span><b>PTH ve kemiğe özgü ALP</b></li>
+    <li><span>İndoksil sülfatın etkisi?</span><b>Düşük kemik yapım hızı</b></li>
+    <li><span>FGF-23’ün zorunlu ko-reseptörü?</span><b>α-Klotho</b></li>
+    <li><span>Klotho eksikliğinde temel bozukluk?</span><b>Hiperfosfatemi</b></li>
+    <li><span>Klotho hangi transkripsiyon faktörünü baskılar?</span><b>NF-κB</b></li>
+    <li><span>Klotho hangi yolakları inhibe eder?</span><b>TGF-β ve Wnt</b></li>
+    <li><span>Fosfat fazlalığının damardaki etkisi?</span><b>Endotel hasarı ve kalsifikasyon</b></li>
+    <li><span>Fosforun hücreye giriş taşıyıcıları?</span><b>Pit-1 ve Pit-2</b></li>
+    <li><span>Osteojenik transkripsiyon faktörleri?</span><b>Runx2, Msx2, osteriks</b></li>
+    <li><span>Koruyucu protein?</span><b>Fetuin-A</b></li>
+    <li><span>Diyalizde PTH hedef bandı?</span><b>Normalin 2–9 katı</b></li>
+    <li><span>Tenapanorun hedefi?</span><b>Bağırsakta NHE3</b></li>
+    <li><span>Fosforun bağırsakta aktif taşıyıcısı?</span><b>NaPi-2b</b></li>
+    <li><span>Böbrekte ana geri emilim taşıyıcısı?</span><b>NaPi-IIa (SLC34A1)</b></li>
+    <li><span>PTH ve FGF-23’ün ortak son hedefi?</span><b>NHERF1 iskele proteini</b></li>
+    <li><span>Asidozun fosfor üzerindeki etkisi?</span><b>Fosfatüri (taşıyıcı inhibisyonu)</b></li>
+    <li><span>Fosfatüri yapan diğer iki faktör?</span><b>Dopamin ve ANP</b></li>
+    <li><span>Fosfor tutan hormonlar?</span><b>Tiroid hormonu ve büyüme hormonu</b></li>
+    <li><span>Glikolizden kemiğe giden sinyal?</span><b>Gliserol-3-fosfat → FGF-23</b></li>
+    <li><span>Medial kalsifikasyonun adı?</span><b>Mönckeberg sklerozu</b></li>
+  </ol>
+
+  <div class="folyo"><b>30</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 31 · KISIM 4 KAPAĞI — ASİT-BAZ (sağ) ================= -->
+<section class="sayfa sag kisim">
+  <div class="tirnak">Nefroloji</div>
+  <div class="bant">
+    <div class="kisim-no">Kısım 4 · Asit-baz</div>
+    <h1>Asit-baz bozuklukları</h1>
+    <div class="alt">Beş adımda çözüm, formüllerle doğrulama</div>
+  </div>
+  <div class="govde">
+    <div class="kurallar">
+      <h2>Altı altın kural</h2>
+      <ol>
+        <li><span>Kompanzasyon primer bozuklukla <b>aynı yönde</b> gider ve pH’ı asla tam normale getirmez.</span></li>
+        <li><span>Akciğer <b>dakikalar</b> içinde, böbrek <b>3–5 günde</b> tam kompanze eder.</span></li>
+        <li><span>Beklenen kompanzasyondan sapma = <b>miks bozukluk</b>.</span></li>
+        <li><span>Anyon açığı <b>albümine göre düzeltilir</b>: her 1 g/dL düşüş için ~2,5 mEq/L.</span></li>
+        <li><span>Delta oranı <b>&lt;1</b> ek hiperkloremik asidoz, <b>&gt;1,6</b> ek alkaloz demektir.</span></li>
+        <li><span>İdrar anyon açığı <b>negatifse ishal</b>, <b>pozitifse RTA</b>.</span></li>
+      </ol>
+    </div>
+    <div>
+      <h2>Bu kısımda</h2>
+      <ol class="icindekiler">
+        <li><div><span>Asit-baz dengesi</span><small>Açık sayfa</small></div><em>32</em></li>
+        <li><div><span>Kompanzasyonun kuralları</span><small>Anlatı</small></div><em>34</em></li>
+        <li><div><span>Beş adımda kan gazı</span><small>Karar yolu</small></div><em>35</em></li>
+        <li><div><span>Kompanzasyon formülleri</span><small>Başvuru</small></div><em>36</em></li>
+        <li><div><span>Metabolik asidoz</span><small>Başvuru</small></div><em>37</em></li>
+        <li><div><span>Metabolik alkaloz ve solunumsal bozukluklar</span><small>Başvuru</small></div><em>38</em></li>
+        <li><div><span>Delta-delta ve ileri kavramlar</span><small>Başvuru</small></div><em>39</em></li>
+        <li><div><span>Vakadan karara</span><small>Başvuru</small></div><em>40</em></li>
+      </ol>
+    </div>
+  </div>
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>31</b></div>
+</section>
+
+<!-- ================= 32 · AÇIK SAYFA SOL ================= -->
+<section class="sayfa sol tur-acik">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>Asit-baz</span></div>
+  <div class="ust-etiket">Asit-baz · Açık sayfa</div>
+  <h1 class="konu">Asit-baz dengesi</h1>
+  <p class="giris">Kan gazı okumak sezgiyle değil sırayla yapılır: primer bozukluğu bul, kompanzasyonu hesapla, açıkları aç. Sapma gördüğün yerde ikinci bir bozukluk vardır.</p>
+
+  <div class="bakis">
+    <div class="ad">30 saniyede</div>
+    <ul class="madde">
+      <li>Normal pH <b>7,35–7,45</b>; H⁺ ~40 nEq/L.</li>
+      <li>Günde ~<b>15.000 mmol</b> uçucu asit (CO₂), ~<b>50–100 mEq</b> uçucu olmayan asit üretilir.</li>
+      <li>Kompanzasyon primer bozuklukla <b>aynı yönde</b>, aşırı kompanzasyon olmaz.</li>
+      <li>Metabolik asidozda <b>Winters</b>: beklenen pCO₂ = 1,5 × HCO₃⁻ + 8 ± 2.</li>
+      <li>Anyon açığı = Na − (Cl + HCO₃), normal ~<b>8–12</b> mEq/L.</li>
+      <li>Asidemi <b>hiperkalemi</b>, alkalemi <b>hipokalemi</b> eğilimi yaratır.</li>
+    </ul>
+  </div>
+
+  <div class="sekil-blok">
+    <div class="sekil-baslik">Üç savunma hattı</div>
+    <div class="yolak" style="grid-template-columns:repeat(3,1fr)">
+      <div class="ist"><div class="kap"><b>Kimyasal tampon · saniyeler</b><span>Hücre dışında HCO₃⁻/CO₂; hücre içinde proteinler, fosfat, hemoglobin (histidin, pH 5,7–7,7)</span></div></div>
+      <div class="ist"><div class="kap"><b>Akciğer · dakikalar–saatler</b><span>Santral ve periferik kemoreseptörler alveoler ventilasyonu ayarlar, pCO₂ değişir</span></div></div>
+      <div class="ist"><div class="kap"><b>Böbrek · 3–5 gün</b><span>Proksimalde bikarbonatın %80–90’ı geri emilir; distalde amonyagenez ve titre edilebilir asitle yeni bikarbonat üretilir</span></div><div class="ilac"><i>Tip A interkale hücre</i></div></div>
+    </div>
+    <div class="sekil-alt"><b>Şekil 4.</b> Tip A interkale hücrede luminal H⁺-ATPaz ve H⁺-K⁺-ATPaz proton salgılar, bazolateral AE1 (Band 3) Cl⁻/HCO₃⁻ değiştiricisi sistemik güçlü iyon farkını artırır. Henderson-Hasselbalch: pH = 6,10 + log([HCO₃⁻] / (0,03 × pCO₂)).</div>
+  </div>
+
+  <div class="sayilar">
+    <div class="bas-etiket">Sayılarla</div>
+    <div><strong>7,35–7,45</strong><span>normal arteriyel pH</span></div>
+    <div><strong>8–12</strong><span>mEq/L · normal anyon açığı</span></div>
+    <div><strong>2,5</strong><span>mEq/L · 1 g/dL albümin düşüşünün AG etkisi</span></div>
+    <div><strong>8–12</strong><span>mmHg · hiperventilasyon alt sınırı</span></div>
+    <div><strong>~55</strong><span>mmHg · hipoventilasyon tavanı</span></div>
+    <div><strong>3–5 gün</strong><span>tam renal kompanzasyon</span></div>
+  </div>
+
+  <div class="blok" style="margin-top:4mm">
+    <h2>Günlük asit yükü</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:44mm">Uçucu asit</td><td>Günde ~15.000 mmol CO₂; akciğer dakikalar içinde atar</td></tr>
+        <tr><td class="bas">Uçucu olmayan asit</td><td>Günde ~50–100 mEq; böbrek amonyum ve titre edilebilir asitle atar, yeni bikarbonat üretir</td></tr>
+        <tr><td class="bas">Proksimal tübül</td><td>Filtre bikarbonatın %80–90’ı burada geri emilir</td></tr>
+        <tr><td class="bas">Distal nefron</td><td>Tip A interkale hücre: H⁺-ATPaz, H⁺-K⁺-ATPaz, bazolateral AE1</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · net asit ekskresyonu</div><p>Geleneksel net asit ekskresyonu hesabının (NH₄⁺ + titre edilebilir asit − HCO₃⁻) deneysel olarak doğrulanmadığı, asidozda tutarsız sonuçlar verdiği belirtiliyor: böbreğin işi bikarbonat saymak değil, güçlü iyon taşımaktır.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Hemoglobin histidin kalıntılarıyla pH 5,7–7,7 aralığında tamponlar.</p>
+        <p>Hipokloremi alkalozu, salin resüsitasyonunun hiperkloremisi asidozu tetikler.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>32</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 33 · AÇIK SAYFA SAĞ ================= -->
+<section class="sayfa sag tur-acik">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Asit-baz</span><span>Nefroloji</span></div>
+
+  <div class="blok">
+    <h2>Dört temel bozukluk</h2>
+    <table class="tb">
+      <thead><tr><th style="width:36mm">Bozukluk</th><th style="width:34mm">Primer değişiklik</th><th>Kompanzasyon</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Metabolik asidoz</td><td>HCO₃⁻ ↓, pH ↓</td><td>Hiperventilasyon (Kussmaul) → pCO₂ ↓</td></tr>
+        <tr><td class="bas">Metabolik alkaloz</td><td>HCO₃⁻ ↑, pH ↑</td><td>Hipoventilasyon → pCO₂ ↑</td></tr>
+        <tr><td class="bas">Solunumsal asidoz</td><td>pCO₂ ↑, pH ↓</td><td>Böbrek: asit atılımı ve HCO₃⁻ geri emilimi ↑</td></tr>
+        <tr><td class="bas">Solunumsal alkaloz</td><td>pCO₂ ↓, pH ↑</td><td>Böbrek: HCO₃⁻ geri emilimi ↓, bikarbonatüri</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Solunumsal bozuklukların nedenleri</h2>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">Asidoz</td><td>SSS depresyonu (ilaç, anestezik, travma), nöromüsküler hastalık, ağır KOAH ya da astım krizi, hava yolu tıkanıklığı</td></tr>
+          <tr><td class="bas">Alkaloz</td><td>Hipoksi, anksiyete, ağrı, ateş, gram-negatif sepsis, salisilat zehirlenmesi, gebelik</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="blok">
+      <h2>Potasyumla ilişki</h2>
+      <p style="font-size:8pt;line-height:1.35">Asidemide fazla H⁺ hücre içine girer, elektronötralite için K⁺ dışarı çıkar: <b>hiperkalemi</b>. Alkalemide mekanizma tersine döner, K⁺ hücre içine girer: <b>hipokalemi</b>. Ağır hipokalemi ayrıca H⁺-K⁺-ATPaz aktivitesini artırarak metabolik alkalozu derinleştirir.</p>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Tedavinin ana hatları</h2>
+    <table class="tb">
+      <thead><tr><th style="width:40mm">Bozukluk</th><th>Yaklaşım</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Metabolik asidoz</td><td>Nedeni tedavi et: diyabetik ketoasidozda insülin ve sıvı, laktik asidozda perfüzyonu düzelt. pH &lt;7,1 ve hemodinamik bozulma varsa kontrollü sodyum bikarbonat. KBH’ye bağlı kronik asidozda kemik yıkımını, progresyonu ve kas katabolizmasını önlemek için oral alkali</td></tr>
+        <tr><td class="bas">Metabolik alkaloz</td><td>Klora duyarlı olguda izotonik NaCl + potasyum ile hacim ve klor açığını kapat</td></tr>
+        <tr><td class="bas">Solunumsal</td><td>Alveoler ventilasyonu optimize et. Akut solunumsal asidozda pCO₂’yi <b>hızlı düşürme</b>: post-hiperkapnik alkaloz riski. Böbrek yetmezliği eşlik ediyorsa akut hemodiyaliz</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu kural"><div class="ad">Altın kural</div><p>“Aşırı kompanzasyon” diye bir şey yoktur. Beklenenin ötesinde bir değer görüyorsan ikinci bir primer bozukluk ara.</p></div>
+    <div class="kutu inci"><div class="ad">Klinik inci · potansiyel bikarbonat</div><p>İshalde yalnız bikarbonat kaybedilmez: gaitadaki propiyonat ve bütirat gibi organik anyonlar da kaybolur. Bunlar geri emilseydi karaciğerde bikarbonata dönüşecekti.</p></div>
+  </div>
+
+  <div class="blok">
+    <h2>Bikarbonat ne zaman?</h2>
+    <table class="tb">
+      <thead><tr><th style="width:40mm">Durum</th><th>Karar</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Rutin kullanım</td><td>Akut organik asidozlarda tartışmalı: hücre içi asidifikasyonu derinleştirebilir, laktat üretimini uyarabilir, iyonize kalsiyumu düşürüp kontraktiliteyi bozabilir, rebound alkaloz yapabilir</td></tr>
+        <tr><td class="bas">pH &lt;7,10 (ya da HCO₃⁻ &lt;6)</td><td>Katekolamin yanıtı bozulur, aritmi riski artar: hemodinamiyi korumak için infüzyon</td></tr>
+        <tr><td class="bas">pH 7,10–7,20 + ağır akut böbrek hasarı</td><td>BICAR-ICU: diyaliz ihtiyacını ve 28 günlük mortaliteyi azaltır</td></tr>
+        <tr><td class="bas">Ağır hiperkloremik asidoz</td><td>Bikarbonat doğrudan kaybediliyor: pH &lt;7,20’de yerine koyma</td></tr>
+        <tr><td class="bas">Kronik asidoz (KBH, RTA)</td><td>Oral alkali: serum bikarbonatı &gt;22 mEq/L (ideal 23–29 ya da 24–26). Sodyum bikarbonat tableti ya da sitrat (Shohl)</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:1.4mm;font-size:7.6pt;color:var(--murekkep-2)">Kronik asidoz sessizce zarar verir: renal osteodistrofi, çocukta büyüme geriliği, kas katabolizması, endotelin ve aldosteron üzerinden hızlanan böbrek hasarı.</p>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>33</b></div>
+</section>
+
+<!-- ================= 34 · ANLATI (sol) ================= -->
+<section class="sayfa sol tur-anlati">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>Asit-baz · Anlatı</span></div>
+  <div class="ust-etiket">Asit-baz · Anlatı</div>
+  <h1 class="konu orta">Kompanzasyonun kuralları</h1>
+
+  <div class="anlati">
+    <div class="metin">
+      <h2>Oran korunmaya çalışılır</h2>
+      <p>pH, Henderson-Hasselbalch’a göre bikarbonatın pCO₂’ye oranıyla belirlenir. Primer bozukluk bu oranın payını (metabolik) ya da paydasını (solunumsal) bozar; kompanzasyon karşı değişkeni <b>aynı yöne</b> çekerek oranı normale yaklaştırır. Modern bakış bunu güçlü iyon farkı (SID), pCO₂ ve toplam zayıf asit üzerinden okur: albümin ve fosfat ikincil ama belirleyicidir.</p>
+
+      <h2>Aşırı kompanzasyon olmaz</h2>
+      <p>Santral ve periferik kemoreseptörler pH normale yaklaştıkça uyarılmayı azaltır. Bu negatif geri bildirim, kompanzasyonun pH’ı tam normale getirmesini ya da ters yöne geçirmesini engeller. “Aşırı kompanze görünen” bir tablo aslında ikinci bir primer bozukluğun kanıtıdır.</p>
+
+      <h2>Sınırlar nerede?</h2>
+      <p>Metabolik asidozda hiperventilasyonun mekanik sınırı vardır: pCO₂ 8–12 mmHg’nin altına genellikle inmez. Metabolik alkalozda hipoventilasyonu hipoksemi frenler; oda havasında soluyan hastada pCO₂ çoğunlukla 55 mmHg’yi aşamaz. Ağır hipokalemi hem H⁺-K⁺-ATPaz üzerinden alkalozu derinleştirir hem de solunum kası zayıflığıyla bu sınırları bozabilir.</p>
+
+      <h2>Böbrek yalnız bikarbonat emmez</h2>
+      <p>Renal yanıt elektrolit yönetimiyle iç içedir: sodyum ve klorür transportu üzerinden sistemik güçlü iyon farkı değiştirilir. Proksimal tübülde bikarbonatın %80–90’ı geri emilir; distal nefronda Tip A interkale hücreler H⁺-ATPaz ve H⁺-K⁺-ATPaz ile proton salgılar, bazolateral AE1 değiştiricisi bikarbonatı kana verir. Geleneksel net asit ekskresyonu hesabının (NH₄⁺ + titre edilebilir asit − HCO₃⁻) deneysel olarak doğrulanmadığı, asidozda tutarsız sonuçlar verdiği belirtiliyor.</p>
+
+      <h2>Delta neden 1:1 değil?</h2>
+      <p>Kimyasal modelde her 1 mmol güçlü asit 1 mmol bikarbonat tüketir ve 1 mmol anyon bırakır; oran 1,0 çıkmalıdır. Canlıda iki şey bunu bozar: laktat gibi anyonlar hücre dışında kalırken protonların yarıdan fazlası hücre içine girip proteinler ve kemik mineralleriyle tamponlanır. Yani hücre dışı bikarbonat düşüşü, giren toplam asit yükünden farklıdır. Sonuç: saf laktik asidoz ya da ketoasidozda oran 1–1,6 bandında dolaşır.</p>
+    </div>
+
+    <div class="kenar">
+      <div class="kenar-baslik">Sapma → tanı</div>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">pCO₂ beklenenden yüksek</td><td>Metabolik asidoz + solunumsal asidoz (sepsis + KOAH)</td></tr>
+          <tr><td class="bas">pCO₂ beklenenden düşük</td><td>Metabolik asidoz + solunumsal alkaloz (salisilat)</td></tr>
+          <tr><td class="bas">HCO₃⁻ beklenenden yüksek</td><td>Solunumsal asidoz + metabolik alkaloz (KOAH + diüretik)</td></tr>
+        </tbody>
+      </table>
+      <div class="kutu spot"><div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>Salisilat, eritrositte Band 3 (AE1) değiştiricisini de inhibe eder: düşük arteriyel pCO₂’ye rağmen dokuda solunumsal asidoz olabilir.</p>
+          <p>Çok yüksek lökositli lösemide tüpteki hücresel aktivite yalancı düşük pO₂ ve pH verir: lökosit hırsızlığı.</p>
+        </div>
+      </div>
+      <div class="kutu inci"><div class="ad">Klinik inci · SIG</div><p>Anyon açığı albümin ve fosfattan etkilenir; ölçülmemiş anyonları daha doğru göstermek için güçlü iyon açığı (SIG) hesaplanabilir.</p></div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>34</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 35 · KARAR YOLU: BEŞ ADIM (sağ) ================= -->
+<section class="sayfa sag tur-karar">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>Asit-baz · Yaklaşım</span></div>
+  <div class="ust-etiket">Kan gazı · Karar yolu</div>
+  <h1 class="konu orta">Beş adımda kan gazı</h1>
+
+  <div class="karar-izgara">
+    <div>
+      <div class="adim"><div class="no">1</div><div>
+        <h3>Primer bozukluğu belirle</h3>
+        <div class="bw" style="grid-template-columns:1fr 1fr">
+          <div><b>pH &lt;7,35 · asidemi</b><span>HCO₃⁻ düşükse metabolik asidoz; pCO₂ yüksekse solunumsal asidoz</span></div>
+          <div><b>pH &gt;7,45 · alkalemi</b><span>HCO₃⁻ yüksekse metabolik alkaloz; pCO₂ düşükse solunumsal alkaloz</span></div>
+        </div>
+      </div></div>
+
+      <div class="adim"><div class="no">2</div><div>
+        <h3>Kompanzasyonu hesapla</h3>
+        <p>Metabolik asidozda <b>Winters</b>: beklenen pCO₂ = 1,5 × HCO₃⁻ + 8 (±2). Metabolik alkalozda beklenen pCO₂ = 0,7 × HCO₃⁻ + 20 (±2). Solunumsal bozukluklarda akut ve kronik katsayılar (s. 36). Ölçülen değer beklenenden sapıyorsa <b>miks bozukluk</b> vardır.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">3</div><div>
+        <h3>Anyon açığını hesapla ve düzelt</h3>
+        <p>AG = Na − (Cl + HCO₃), normal ~8–12 mEq/L. Albümin ölçülmeyen anyonların en büyük bileşenidir: <b>Düzeltilmiş AG = ölçülen AG + 2,5 × (4,5 − albümin g/dL)</b>.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">4</div><div>
+        <h3>Yüksek AG varsa delta oranına bak</h3>
+        <table class="tb">
+          <thead><tr><th style="width:28mm">ΔAG/ΔHCO₃⁻</th><th>Yorum</th></tr></thead>
+          <tbody>
+            <tr><td class="bas">1–1,6</td><td>Saf yüksek anyon açıklı asidoz (böbrek işlevi normalse)</td></tr>
+            <tr><td class="bas">&lt;1</td><td>Eşlik eden normal anyon açıklı (hiperkloremik) asidoz: laktik asidoz + ishal</td></tr>
+            <tr><td class="bas">&gt;1,6</td><td>Eşlik eden metabolik alkaloz ya da kronik solunumsal asidoz kompanzasyonu: DKA + kusma</td></tr>
+          </tbody>
+        </table>
+      </div></div>
+
+      <div class="adim"><div class="no">5</div><div>
+        <h3>Normal AG ise idrar anyon açığı</h3>
+        <p>UAG = idrar (Na + K − Cl). <b>Negatif</b> (genelde −20 ile −50): böbrek amonyum atabiliyor → ekstrarenal kayıp, yani ishal. <b>Pozitif</b>: amonyum atılımı yetersiz → renal tübüler asidoz.</p>
+      </div></div>
+    </div>
+
+    <aside>
+      <div class="kutu kural"><div class="ad">Altın kural</div><p>Sırayı bozma: kompanzasyonu hesaplamadan “kompanze asidoz” deme; hesap yapmadan miks bozukluk görünmez.</p></div>
+      <div class="kenar-sutun" style="margin-top:3mm">
+        <div class="ad">Sınav spotları</div>
+        <div class="spotlar">
+          <p>Hipoalbüminemide AG düzeltilmezse yüksek AG asidoz atlanır.</p>
+          <p>İdrar klorürü metabolik alkalozu ikiye ayırır (s. 38).</p>
+          <p>Salisilat klasik miks tablodur: solunumsal alkaloz + yüksek AG asidoz.</p>
+        </div>
+      </div>
+      <div class="kutu tuzak" style="margin-top:3mm"><div class="ad">Tuzak</div><p>Normal pH’a bakıp “sorun yok” demek: iki zıt bozukluk pH’ı normale getirebilir.</p></div>
+    </aside>
+  </div>
+
+  <div class="blok">
+    <h2>Altıncı adım: klinik korelasyon</h2>
+    <div class="bw" style="grid-template-columns:repeat(4,1fr)">
+      <div><b>Hikâye</b><span>Kusma, ishal, diüretik, ilaç, zehirlenme, kronik akciğer hastalığı</span></div>
+      <div><b>Hacim</b><span>Hipovolemi klora duyarlı alkalozu idame ettirir</span></div>
+      <div><b>Elektrolit</b><span>Potasyum ve magnezyum açığı tabloyu hem yaratır hem sürdürür</span></div>
+      <div><b>Ölçüm</b><span>Sapma varsa örnekleme ve analiz hatalarını da düşün</span></div>
+    </div>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>35</b></div>
+</section>
+
+<!-- ================= 36 · BAŞVURU: FORMÜLLER (sol) ================= -->
+<section class="sayfa sol tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>Asit-baz · Başvuru</span></div>
+  <div class="ust-etiket">Asit-baz · Başvuru</div>
+  <h1 class="konu orta">Kompanzasyon formülleri</h1>
+
+  <div class="blok">
+    <table class="tb">
+      <thead><tr><th style="width:34mm">Bozukluk</th><th style="width:56mm">Beklenen yanıt</th><th>Sınır</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Metabolik asidoz</td><td>pCO₂ = 1,5 × HCO₃⁻ + 8 ± 2 (Winters)</td><td>Hiperventilasyon sınırı 8–12 mmHg</td></tr>
+        <tr><td class="bas">Metabolik alkaloz</td><td>pCO₂ = 0,7 × HCO₃⁻ + 20 ± 2</td><td>Genellikle pCO₂ &gt;55 mmHg olmaz (hipoksemi freni)</td></tr>
+        <tr><td class="bas">Solunumsal asidoz · akut</td><td>Her 10 mmHg pCO₂ artışında HCO₃⁻ +1 mEq/L</td><td>En çok 30–32 mEq/L</td></tr>
+        <tr><td class="bas">Solunumsal asidoz · kronik</td><td>Her 10 mmHg için HCO₃⁻ +3,5–4 mEq/L</td><td>En çok 45 mEq/L</td></tr>
+        <tr><td class="bas">Solunumsal alkaloz · akut</td><td>Her 10 mmHg pCO₂ düşüşünde HCO₃⁻ −2 mEq/L</td><td>Alt sınır 18 mEq/L</td></tr>
+        <tr><td class="bas">Solunumsal alkaloz · kronik</td><td>Her 10 mmHg için HCO₃⁻ −4–5 mEq/L</td><td>Alt sınır 12–15 mEq/L</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Pratik kısayollar</h2>
+      <ul class="madde">
+        <li>pH ondalık haneleri kuralı: pH 7,20 → pCO₂ ≈ 20</li>
+        <li>HCO₃⁻ + 15 kuralı</li>
+        <li>Base excess, laktik asidoz ve hacim resüsitasyonunda metabolik bileşeni izlemek için yedek parametre</li>
+      </ul>
+    </div>
+    <div class="blok">
+      <h2>Miks bozukluk imzaları</h2>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">pCO₂ &gt; beklenen</td><td>Metabolik asidoz + solunumsal asidoz</td></tr>
+          <tr><td class="bas">pCO₂ &lt; beklenen</td><td>Metabolik asidoz + solunumsal alkaloz</td></tr>
+          <tr><td class="bas">HCO₃⁻ &gt; beklenen</td><td>Solunumsal asidoz + metabolik alkaloz</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Güçlü iyon açığı (SIG)</h2>
+    <p style="font-size:8pt;line-height:1.35">SIG = [Na⁺] + [K⁺] + [Mg²⁺] + [Ca²⁺] − [Cl⁻] − [laktat⁻] − [albümin yükü] − [fosfat yükü] − [HCO₃⁻]. Anyon açığı albümin ve fosfattan etkilendiği için, karmaşık olguda gizli laktat, keton ya da toksini göstermede SIG tercih edilir.</p>
+  </div>
+
+  <div class="blok">
+    <h2>Stewart bakışı</h2>
+    <p style="font-size:8pt;line-height:1.35">Modern yaklaşımda pH’ı belirleyen üç bağımsız değişken vardır: <b>güçlü iyon farkı (SID)</b>, <b>pCO₂</b> ve <b>toplam zayıf asit (Atot: albümin ve fosfat)</b>. Böbreğin asit-baz işlevi bu çerçevede sodyum ve klorür transportuyla SID’i değiştirmektir. Bu yüzden hiperkloremik salin asidoz, hipokloremi ise alkaloz yaratır; hipoalbüminemi de ölçülen anyon açığını düşürerek tabloyu maskeler.</p>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · akut mu kronik mi?</div><p>Solunumsal bozuklukta bikarbonat yanıtının büyüklüğü süreyi söyler: 10 mmHg başına 1 mEq/L akut, 3,5–4 mEq/L kroniktir.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Kronik solunumsal asidozda bikarbonat 45 mEq/L’yi aşmaz.</p>
+        <p>Kronik solunumsal alkalozda 12–15 mEq/L’nin altına inmez.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>36</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 37 · BAŞVURU: METABOLİK ASİDOZ (sağ) ================= -->
+<section class="sayfa sag tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>Asit-baz · Başvuru</span></div>
+  <div class="ust-etiket">Metabolik asidoz · Başvuru</div>
+  <h1 class="konu orta">Yüksek ve normal anyon açığı</h1>
+
+  <div class="blok">
+    <h2>GOLDMARK</h2>
+    <table class="tb">
+      <thead><tr><th style="width:26mm">Harf</th><th>Neden ve ipucu</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">G · glikoller</td><td>Etilen, propilen, dietilen glikol; glikolat ve oksalat birikir, belirgin ozmolal açık eşlik eder</td></tr>
+        <tr><td class="bas">O · oksoprolin</td><td>5-oksoprolin; kritik hasta ve malnütrisyonlu kadında kronik parasetamolle glutatyon tükenmesi</td></tr>
+        <tr><td class="bas">L · L-laktat</td><td>Tip A doku hipoperfüzyonu (şok, sepsis, ağır anemi); tip B hipoksisiz (metformin, malignite, doğuştan metabolik hastalık)</td></tr>
+        <tr><td class="bas">D · D-laktat</td><td>Kısa bağırsak sendromu, jejunoileal baypas, obstrüksiyon; rutin test yalnız L-laktatı ölçer, stereospesifik test gerekir</td></tr>
+        <tr><td class="bas">M · metanol</td><td>Formik asit: asidoz ve optik nöropati</td></tr>
+        <tr><td class="bas">A · aspirin</td><td>Solunum merkezini uyarır (solunumsal alkaloz) + oksidatif fosforilasyonu ayırır (laktat ve keton birikimi)</td></tr>
+        <tr><td class="bas">R · renal yetmezlik</td><td>eGFR &lt;15–20 mL/dk: sülfat, fosfat ve ürat birikimi</td></tr>
+        <tr><td class="bas">K · ketoasidoz</td><td>Diyabetik, alkolik, açlık: beta-hidroksibütirat ve asetoasetat</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>Normal AG (hiperkloremik)</h2>
+      <ul class="madde">
+        <li>Ciddi ishal: bikarbonat ve potansiyel bikarbonat kaybı</li>
+        <li>Renal tübüler asidoz</li>
+        <li>Üreterosigmoidostomi</li>
+        <li>İzotonik salinle agresif resüsitasyon (dilüsyon asidozu)</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · UAG</div><p>UAG = idrar (Na + K) − Cl. Negatifse böbrek amonyumu klorla atabiliyordur (ishal); pozitifse atamıyordur (RTA).</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Tip 4 RTA hiperkalemiyle gider, diğerleri hipokalemiyle.</p>
+        <p>Metformin tip B laktik asidoz yapar: doku hipoksisi yoktur.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>37</b></div>
+</section>
+
+<!-- ================= 38 · BAŞVURU: ALKALOZ (sol) ================= -->
+<section class="sayfa sol tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>Asit-baz · Başvuru</span></div>
+  <div class="ust-etiket">Metabolik alkaloz · Başvuru</div>
+  <h1 class="konu orta">Oluşum, idame ve idrar klorürü</h1>
+
+  <div class="iki-sutun">
+    <div class="blok">
+      <h2>İki faz</h2>
+      <table class="tb">
+        <tbody>
+          <tr><td class="bas">Oluşum</td><td>Mide sıvısı kaybı (kusma, nazogastrik aspirasyon), kıvrım ya da tiyazid diüretiği, dışarıdan alkali alımı</td></tr>
+          <tr><td class="bas">İdame</td><td>Normalde böbrek fazla bikarbonatı atar; hipovolemi, klor eksikliği ve hipokalemi varsa atmak yerine geri emer ve alkaloz sürer</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="blok">
+      <h2>Neden idrar sodyumu değil klorürü?</h2>
+      <p style="font-size:8pt;line-height:1.35">Aktif kusmada filtre edilen bikarbonat yükü proksimal emilimi aşınca sodyum idrarla kaybedilebilir (idrar Na &gt;20). Klorür ise her iki fazda da maksimal geri emildiği için düşük kalır: hacim durumunun daha hassas göstergesidir.</p>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>İdrar klorürü algoritması</h2>
+    <table class="tb">
+      <thead><tr><th style="width:36mm">İdrar Cl</th><th style="width:34mm">Grup</th><th>Nedenler</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">&lt;20 mEq/L</td><td>Klora (saline) duyarlı</td><td>Kusma, nazogastrik drenaj, bulimia; uzak dönem diüretik kullanımı; kistik fibroziste terle NaCl kaybı; konjenital klorür diyaresi</td></tr>
+        <tr><td class="bas">&gt;20 mEq/L · normotansif</td><td>Klora dirençli</td><td>Aktif diüretik kullanımı, Bartter ve Gitelman sendromları, şiddetli potasyum eksikliği (&lt;2 mEq/L), magnezyum eksikliği</td></tr>
+        <tr><td class="bas">&gt;20 mEq/L · hipertansif</td><td>Klora dirençli</td><td>Primer aldosteronizm, Cushing sendromu, Liddle sendromu, meyan kökü</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:1.4mm;font-size:7.6pt;color:var(--murekkep-2)">Klora duyarlı grupta böbrek işlevi sağlamdır: izotonik NaCl proksimal bikarbonat geri emilimini azaltır, toplayıcı kanalda pendrin üzerinden bikarbonat sekresyonunu uyarır ve alkaloz hızla düzelir.</p>
+  </div>
+
+  <div class="blok">
+    <h2>Renal tübüler asidoz tipleri</h2>
+    <table class="tb">
+      <thead><tr><th style="width:26mm">Tip</th><th style="width:26mm">İdrar pH</th><th style="width:26mm">Potasyum</th><th>Ayrıntı</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">1 · distal</td><td>Daima &gt;5,5</td><td>Düşük</td><td>İnterkale hücre H⁺ salgılayamaz; idrar sitratı düşer, kalsiyum atılımı artar: nefrokalsinoz ve kalsiyum fosfat taşı. Sjögren, amfoterisin B, orak hücreli anemi. UAG pozitif</td></tr>
+        <tr><td class="bas">2 · proksimal</td><td>Başlangıçta alkali, eşiğe inince düşebilir</td><td>Düşük</td><td>Bikarbonat geri emilim eşiği düşer; glukozüri, fosfatüri ve aminoasidüri eşlik ederse Fanconi sendromu. Multipl miyelom, Wilson, asetazolamid, ifosfamid. UAG negatif ya da sıfır</td></tr>
+        <tr><td class="bas">4 · hiperkalemik</td><td>Genellikle düşük</td><td><b>Yüksek</b></td><td>Aldosteron eksikliği ya da direnci; hem H⁺ hem K⁺ atılımı bozulur. Diyabetik nefropati (hiporeninemik hipoaldosteronizm), ACE inhibitörü, ARB, spironolakton. Klinikte en sık. UAG pozitif</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu kural"><div class="ad">Altın kural</div><p>Klora dirençli alkalozda salin vermek çözmez, hatta hipertansifte zarar verir: hormonal nedeni ve potasyum-magnezyum açığını hedefle.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Klora duyarlıda idrar klorürü sıklıkla &lt;10 mEq/L.</p>
+        <p>Hipoksemi hipoventilasyonu frenler: pCO₂ genellikle 55 mmHg’yi aşmaz.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>38</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<!-- ================= 39 · BAŞVURU: DELTA-DELTA (sağ) ================= -->
+<section class="sayfa sag tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>Asit-baz · Başvuru</span></div>
+  <div class="ust-etiket">Delta-delta · Başvuru</div>
+  <h1 class="konu orta">Delta-delta ve ileri kavramlar</h1>
+
+  <div class="blok">
+    <h2>Hesap</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:44mm">Düzeltilmiş AG</td><td>Ölçülen AG + 2,5 × (4,5 − albümin g/dL)</td></tr>
+        <tr><td class="bas">ΔAG</td><td>Hastanın AG’si − normal kabul edilen AG</td></tr>
+        <tr><td class="bas">ΔHCO₃⁻</td><td>24 − ölçülen HCO₃⁻</td></tr>
+        <tr><td class="bas">Delta oranı</td><td>ΔAG / ΔHCO₃⁻</td></tr>
+        <tr><td class="bas">Normal AG aralığı</td><td>Analizöre göre 10 ± 2 ya da 12 ± 4 mEq/L</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>Neden tam 1:1 değil?</h2>
+    <div class="bw" style="grid-template-columns:1fr 1fr">
+      <div><b>Anyon hücre dışında kalır</b><span>Laktat gibi anyonlar zardan kolay geçemez; plazmada anyon açığını orantısız yükseltir</span></div>
+      <div><b>Proton hücre içine girer</b><span>Protonların yarıdan fazlası hücre içi proteinler ve kemik mineralleriyle tamponlanır; bikarbonat düşüşü toplam asit yükünü yansıtmaz</span></div>
+    </div>
+    <p style="margin-top:1.6mm;font-size:7.8pt">Bu yüzden saf yüksek anyon açıklı asidozda oran 1–1,6 bandındadır; şiddetli asidemide hücre dışı tamponlamanın payı daha da düşer.</p>
+  </div>
+
+  <div class="blok">
+    <h2>Yorum</h2>
+    <table class="tb">
+      <thead><tr><th style="width:34mm">Bulgu</th><th>Anlamı</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">AG artışı bikarbonat düşüşünü açıklıyor</td><td>Saf yüksek anyon açıklı metabolik asidoz</td></tr>
+        <tr><td class="bas">Bikarbonat fazla düşmüş (oran &lt;1)</td><td>Ek normal anyon açıklı (hiperkloremik) asidoz gizli</td></tr>
+        <tr><td class="bas">Bikarbonat az düşmüş (oran &gt;1,6)</td><td>Ek metabolik alkaloz ya da kronik solunumsal asidoz gizli</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>İdrar ozmolal açığı: UAG’nin sınırı</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:44mm">UAG’nin varsayımı</td><td>Amonyumun idrarla yalnız klorür tuzu olarak atıldığı</td></tr>
+        <tr><td class="bas">Yalancı pozitiflik</td><td>Ketoasidozda asetoasetat ve beta-hidroksibütirat, toluen zehirlenmesinde hipürat, proksimal RTA’nın alkali tedavisinde idrara kaçan bikarbonat: amonyum bu anyonlarla atılır, idrar klorürü yükselmez</td></tr>
+        <tr><td class="bas">Hesaplanan ozmolalite</td><td>2 × (Na + K) + üre + glukoz (mmol/L)</td></tr>
+        <tr><td class="bas">UOG</td><td>Ölçülen − hesaplanan ozmolalite; idrar NH₄⁺ ≈ UOG / 2</td></tr>
+        <tr><td class="bas">Yorum</td><td>Normal renal yanıtta NH₄⁺ &gt;75 mEq/L ve UOG &gt;400 mosmol/kg; RTA’da UOG &lt;150 mosmol/kg</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu inci"><div class="ad">Klinik inci · ölçüm tuzakları</div><p>Salisilat Band 3’ü inhibe eder: arteriyel pCO₂ düşükken dokuda asidoz olabilir. Çok yüksek lökositli örnekte pO₂ ve pH yalancı düşük çıkar.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Albümin düşükse AG mutlaka düzeltilir.</p>
+        <p>Delta oranı yalnız yüksek AG asidozda anlamlıdır.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Nefroloji</span><b>39</b></div>
+</section>
+
+<!-- ================= 40 · BAŞVURU: VAKADAN KARARA (sol) ================= -->
+<section class="sayfa sol tur-basvuru">
+  <div class="tirnak">Nefroloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Nefroloji</span><span>Asit-baz · Başvuru</span></div>
+  <div class="ust-etiket">Asit-baz · Başvuru</div>
+  <h1 class="konu orta">Vakadan karara</h1>
+
+  <div class="blok">
+    <table class="tb">
+      <thead><tr><th style="width:84mm">Senaryo</th><th>Doğru yaklaşım</th></tr></thead>
+      <tbody>
+        <tr><td>pH 7,28 · HCO₃⁻ 14 · pCO₂ 28</td><td>Winters: beklenen 29 ± 2 → uygun kompanzasyonlu metabolik asidoz</td></tr>
+        <tr><td>pH 7,20 · HCO₃⁻ 14 · pCO₂ 38</td><td>pCO₂ beklenenden yüksek: metabolik asidoz + solunumsal asidoz</td></tr>
+        <tr><td>Kulak çınlaması, takipne, pH 7,44 · pCO₂ 22 · HCO₃⁻ 15</td><td>Salisilat: solunumsal alkaloz + yüksek AG metabolik asidoz</td></tr>
+        <tr><td>Laktik asidoz, albümin 2,0 g/dL, AG 12</td><td>Düzeltilmiş AG ≈ 18: gizlenmiş yüksek AG asidoz</td></tr>
+        <tr><td>DKA, delta oranı 2,1</td><td>Ek metabolik alkaloz (kusma) düşün</td></tr>
+        <tr><td>Laktik asidoz, delta oranı 0,7</td><td>Ek hiperkloremik asidoz (ishal, salin) düşün</td></tr>
+        <tr><td>Kronik ishal, normal AG asidoz, UAG −30</td><td>Ekstrarenal kayıp: böbrek amonyum atabiliyor</td></tr>
+        <tr><td>Normal AG asidoz, UAG +15, idrar pH 6,0, hipokalemi</td><td>Distal (tip 1) RTA</td></tr>
+        <tr><td>Diyabetik nefropati, normal AG asidoz, hiperkalemi</td><td>Tip 4 RTA: aldosteron eksikliği ya da direnci</td></tr>
+        <tr><td>Kusma, alkaloz, idrar Cl 8 mEq/L</td><td>Klora duyarlı: izotonik NaCl + potasyum</td></tr>
+        <tr><td>Hipertansif hastada alkaloz, idrar Cl 40 mEq/L</td><td>Klora dirençli: primer aldosteronizm, Cushing, Liddle, meyan kökü</td></tr>
+        <tr><td>KOAH alevlenmesi, pCO₂ 70, HCO₃⁻ 34</td><td>Kronik solunumsal asidoz: 10 mmHg başına 3,5–4 mEq/L yanıtla uyumlu</td></tr>
+        <tr><td>Aynı hastada pCO₂ hızla düşürülüyor</td><td>Post-hiperkapnik alkaloz riski: yavaş düzelt</td></tr>
+        <tr><td>Kısa bağırsak sendromu, ensefalopati, laktat normal</td><td>D-laktik asidoz: stereospesifik test iste</td></tr>
+        <tr><td>pH 7,05 · HCO₃⁻ 5 · şokta</td><td>pH &lt;7,10: kontrollü bikarbonat infüzyonu; asıl tedavi perfüzyonu düzeltmek</td></tr>
+        <tr><td>pH 7,15, kreatinin iki katına çıkmış, oligürik</td><td>BICAR-ICU: bikarbonat diyaliz ihtiyacını ve mortaliteyi azaltır</td></tr>
+        <tr><td>KBH, serum bikarbonat 19 mEq/L</td><td>Kronik oral alkali: hedef &gt;22 mEq/L</td></tr>
+        <tr><td>Ketoasidozda UAG pozitif</td><td>Yalancı pozitiflik: amonyum keton anyonlarıyla atılıyor; UOG hesapla</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="iki-sutun">
+    <div class="kutu kural"><div class="ad">Altın kural · beş cümlede asit-baz</div><p>Primer bozukluğu bul · kompanzasyonu hesapla · AG’yi albümine göre düzelt · yüksek AG’de delta oranına bak · normal AG’de idrar anyon açığına bak.</p></div>
+    <div class="kutu spot"><div class="ad">Sınav spotları</div>
+      <div class="spotlar">
+        <p>Winters: 1,5 × HCO₃⁻ + 8 ± 2.</p>
+        <p>Metabolik alkalozda 0,7 × HCO₃⁻ + 20 ± 2.</p>
+        <p>UAG negatif ishal, pozitif RTA.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="folyo"><b>40</b><span>MediSea Hızlı Bakış · Nefroloji</span></div>
+</section>
+
+<script>
+/* önizleme: ?s=N yalnızca N. sayfayı gösterir; ayrıca taşan sayfaları konsola yazar */
+(function () {
+  var s = new URLSearchParams(location.search).get("s");
+  var sayfalar = document.querySelectorAll(".sayfa");
+  if (s) {
+    document.body.style.cssText = "padding:0;background:#fff";
+    sayfalar.forEach(function (el, i) { el.style.display = i + 1 === +s ? "" : "none"; el.style.margin = "0"; el.style.boxShadow = "none"; });
+  }
+})();
+</script>
+</body>
+</html>
