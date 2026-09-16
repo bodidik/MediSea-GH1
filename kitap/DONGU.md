@@ -1,9 +1,18 @@
-# Hızlı Bakış — konu döngüsü (16 Eylül 2026, 00:30 → 04:50)
+# Hızlı Bakış — konu döngüsü (16 Eylül 2026'da başladı, sürüyor)
 
-Kullanıcı isteği: 12 dakika aralıkla sıradaki konuyu kitaba ekle; **04:50'de döngüyü bitir** (kullanıcı 01:5x’te 03:50’den uzattı).
+Kullanıcı isteği: sıradaki konuyu kitaba ekle, **her turun arasında 5 dakika dinlen**; bitiş saati yok, kullanıcı söyleyene kadar sürer.
 Her tur bu dosyayı okur, ilk `SIRADA` konuyu işler, günlüğe yazar.
-Zamanlayıcı: CronCreate işi **210fae10** (01:5x’te d54fd27c yerine, bitiş 04:50) (`*/12 * * * *`). 04:50'yi geçen ilk turda `CronDelete 210fae10` ile sil ve özet ver.
+Zamanlayıcı: CronCreate işi **75d8b386** (`*/5 * * * *`). Durdurmak için `CronDelete 75d8b386`.
 Bir tur çalışırken bir sonraki tetik gelirse: konu `ÇALIŞIYOR` durumundaysa yeni konuya başlama, yarım kalanı bitir.
+Kuyruk boşalırsa aday taraması yap (hem premium hem açık sayfa eşleşmesi şart) ve kullanıcıya sor.
+
+## Önizleme kuralı (kullanıcı, 16 Eylül)
+
+Önizlemeyi tüm bölüm için basma; **yalnızca üzerinde çalışılan kısmı** göster.
+`node kitap/pdf.cjs <dosya> --onizleme --sayfa A-B` artık belgeden yalnız o aralığı
+içeren geçici bir kopya (`cikti/…-parca.html`) üretip PDF ve PNG'yi ondan basıyor.
+Tam belgeyi basmak gerekirse `--tam` eklenir. (80 sayfalık endokrin dosyasında
+tam basım 120 saniyeyi aşıyordu; parça kipinde tek sayfa ~10 saniye.)
 
 ## Kurallar (kullanıcının sözleri)
 
@@ -44,7 +53,18 @@ Bir tur çalışırken bir sonraki tetik gelirse: konu `ÇALIŞIYOR` durumundays
 | 17 | (nefro) KBH’de hiperfosfatemi ve MKB | kbh-hiperfosfatemi-yonetimi, kbh-mkb-kapsamli, bisfosfonat kontrendikasyonu, fosfor homeostazı | kbh-hiperfosfatemi + quiz + 2 kart seti | BİTTİ (nefro s. 21–30) |
 | 18 | (nefro) Asit-baz bozuklukları | asit-baz-denge-bozukluklari, fizyopatoloji, kompanzasyon, delta-delta, metabolik asidoz/alkaloz, RTA | asit-baz-dengesi + quiz + kart | BİTTİ (nefro s. 31–40) |
 | 19 | (gogus) Sarkoidoz | sarkoidoz-ana, ayırıcı tanı, hiperkalsemi | sarkoidoz + quiz + vaka | BİTTİ (gogus s. 1–10) |
-| 20 | (hemato) KLL | kll (+ hematolojik maligniteler) | kll + quiz | SIRADA |
+| 20 | (hemato) KLL | kll (+ hematolojik maligniteler) | kll + quiz + 88 kart | BİTTİ (hemato s. 1–10) |
+| 21 | (hemato) AML | aml, aml-tedavi-algoritmasi, aml-geriatrik-degerlendirme, aml-gilteritinib-* | aml-ana + quiz + 80 kart + 4 vaka + 10 inci | BİTTİ (hemato s. 11–22) |
+| 22 | (nefro) Membranöz nefropati | membranoz-nefropati-mn, -patofizyolojisi, -klinik, -tedavi-yonetimi | membranoz-nefropati + quiz | BİTTİ (nefro s. 41–50) |
+| 23 | (hemato) İmmün trombositopeni | immun-trombositopeni-itp, itp-tanisal-yaklasim, itp-tedavi, gebelikte-ITP | itp + quiz + 65 kart | BİTTİ (hemato s. 23–32) |
+| 24 | (hemato) Antikoagülasyon stratejileri | antikoagulasyon-stratejileri (28 KB) | antikoagulasyon-stratejileri + quiz (5 vaka) | BİTTİ (hemato s. 33–44) |
+| 25 | (enfeksiyon) Bruselloz | bruselloz (25 KB) — yeni branş | bruselloz + quiz (23 soru) | BİTTİ (enfeksiyon s. 1–12) |
+| 26 | (endokrin) Hipertiroidi ve Graves | hipertiroidi (37 KB), yaslida-hipertiroidizm (31 KB), gebelikte-hipertiroidi-kilavuz-karsilastirmasi (25 KB) | hipertiroidi + graves-hastaligi + quiz + kart | BİTTİ (endokrin s. 69–80) |
+| 27 | (enfeksiyon) İnvaziv fungal enfeksiyonlar | invazive-mantar-enfeksiyon (36 KB), mantar-enfeksiyon-ana-sayfa (13 KB) | invaziv-fungal-enfeksiyonlar + quiz | BİTTİ (enfeksiyon s. 13–24) |
+| 28 | (endokrin) Feokromositoma ve paraganglioma | feokromositoma-ve-paraganglioma (25 KB) | feokromositoma + quiz | BİTTİ (endokrin s. 81–92) |
+| 29 | (enfeksiyon) CRKP | crkp-enfeksiyonu (18 KB) | crkp + quiz + 80 kart | BİTTİ (enfeksiyon s. 25–36) |
+| 30 | (endokrin) Erkek osteoporozu | erkek-osteoporozu-ana-sayfa (25 KB), erkek-osteoporozu-testosteron (32 KB) | erkek-osteoporozu + transplantasyon-osteoporozu + quiz | BİTTİ (s. 93–104) |
+| 31 | (onko) Pankreas kanseri | pankreas-kanseri-ana-sayfa + 8 çocuk sayfa (KRAS, SMAD4, ileri tedaviler, RNA aşılar…) | pankreas-kanseri (onko + gastro) + quiz + kart | SIRADA |
 
 **İkinci aday taraması (16 Eyl 03:18):** kuyruk yine bitti; açık + premium eşleşmesi olan yeni konular eklendi. Göğüs hastalıkları premiumunda TKP, HKP, VİP ve akciğer kanseri var ama açık tarafta `canonical/gogus` yalnız sarkoidoz üçlüsünü taşıyor (akciğer kanseri açık sayfası onkolojide) — bu yüzden yalnız sarkoidoz kuyruğa alındı. Erişkin Still hastalığı ve HFpEF premiumda dolu, açık eşleşme yok: elendi.
 
@@ -288,3 +308,148 @@ Kaynak tutarsızlıkları ve kusurları:
 - **Löfgren’de HLA:** DRB1*0301+DQB1*0201 iyi prognoz, DRB1*15 yokluğu kötü prognoz — bu ikisi yalnız premium quizde birlikte veriliyor; açık sayfa yalnız birincisini anlatıyor.
 - **BAL referans bandı** (normal 1,5–3,5) yalnız premium quizde; açık ayırıcı tanı sayfası yalnız eşikleri (>3,5 / <2,0 / <1,0) veriyor.
 - **Hidroksiklorokin ve siklosporinin yeri** yalnız premium vakada geçiyor; premium konu sayfası bu iki ajanı saymıyor.
+
+### Tur 20 — (hemato) Kronik lenfositik lösemi · hemato s. 1–10 · bitti (kullanıcı isteğiyle; cron döngüsü kapalı)
+Yeni branş dosyası: `kitap/hematoloji/deneme-bolum.html`, branş rengi `#6E1E3C`.
+Sayfalar: 1 bölüm açılışı (Kısım 1 · KLL) · 2–3 açık sayfa (Şekil 1: MBL → KLL/SLL → Richter şeridi; klinik prezentasyon; epidemiyoloji; tanı ölçütleri ve morfoloji; immünofenotip; KLL↔MCL tablosu) · 4 anlatı (hücrenin kökeni ve BCR, IGHV paradoksu, miR15/16–BCL-2, mikroçevre bağımlılığı, iki yüzlü bağışıklık; kenarda prognozun moleküler ekseni) · 5 başvuru (Rai, Binet, KLL-IPI, IPS-E, Lugano; riske göre yol; hangi test neyi söyler) · 6 karar yolu (klonalite → KLL/SLL → taklitçiler → risk → sitopeni ayrımı; vakadan karara 6 senaryo) · 7 karar yolu (iwCLL tedavi endikasyonları, karar şeridi, vakadan karara 6 senaryo) · 8 başvuru (BTKi, pirtobrutinib, venetoklaks, anti-CD20, idelalisib, CAR-T/nakil; kemoterapinin bugünü; MRD, relaps ve refrakter tanımları; yan etki yönetimi) · 9 başvuru (enfeksiyon ve aşılar, otoimmün komplikasyonlar, ikincil malignite, Richter transformasyonu) · 10 hızlı tekrar (40 soru).
+Son ölçüm: taşma yok (en dolu s.9 −8,6 mm ve s.2 −8,7 mm; en boş s.4 −31,5 mm). Çift sayfa; sonraki kısım kapağı s. 11 (sağ).
+Kaynaklar: premium `topics/hematoloji/kll` + `quizzes/hematoloji/kll-quiz-1` (10 soru) + `flashcards/hematoloji/kll` (88 kart) · açık `canonical/hematoloji/kll` (çocuk sayfası yok).
+Kaynak tutarsızlıkları:
+- **Richter sıklığı:** açık sayfa “%2–10” · kart seti “yıllık ~%1”. İkisi de s.9’da yazıldı (biri kümülatif, biri yıllık olabilir ama kaynaklar bunu söylemiyor).
+- **Otoimmün komplikasyon sıklığı:** açık sayfa “%10–25” · premium yalnız “sık” diyor, sayı vermiyor. Kitapta açık sayfanın sayısı.
+- **Lenfosit katlanma zamanı:** açık sayfa “doubling time %50 artış” (süre belirtmiyor) · kart seti “&lt;6 ay” ve ayrıca “2 ayda %50 artış”. Kitapta kart setinin iki ölçütü birlikte.
+- **Masif splenomegali:** açık sayfa “kosta altını ≥6 cm geçen” · kart “sol kostal marjın ≥6 cm altında” — aynı ölçüt, farklı ifade.
+- **İkincil solid tümör:** premium konu ve quiz “en sık cilt kanserleri (melanom ve non-melanom)” · kart seti “en sık ikincil solid organ tümörü akciğer kanseri”. İkisi de s.9’da, ayrımıyla yazıldı — içerik sahibi karar vermeli.
+- **Kemik iliği infiltrasyon oranı %30** yalnız kart setinde; premium konu ve açık sayfa bu eşiği vermiyor.
+- Premium konu sayfası evreleme (Rai/Binet), tedavi endikasyonları ve tedavi ajanlarını **hiç içermiyor**; bu bölümün tamamı açık sayfa ve kart setinden geldi. Premium konu daha çok tanı-biyoloji ağırlıklı.
+
+---
+
+## Döngü durumu
+Cron döngüsü kapandı (pencere 16 Eylül 2026 04:50’de doldu; zamanlayıcıda iş kalmadı). Kuyruk boş — yeni konular kullanıcı onayıyla eklenecek.
+
+### Tur 21 — (hemato) Akut miyeloid lösemi · hemato s. 11–22 (Kısım 2)
+Sayfalar: 11 kısım kapağı (altı altın kural) · 12–13 açık sayfa (Şekil 2: CHIP → Tip 1 → Tip 2 → AML zinciri; sayılarla; tanıya giden sıra; klinik prezentasyon; tanının üç ayağı; tam remisyon ölçütleri; yanıt kategorileri CR/CRi/MRD/refrakter/relaps) · 14 anlatı (iki vuruş, klonal zemin ve CHIP, lösemik kök hücre, sınıflamanın değişme nedeni, yaş değil rezerv; kenarda zemin-yatkınlık ve MRD yöntemleri) · 15 başvuru (WHO5 ↔ ICC 2022 blast eşiği tablosu, temel genetik anormallikler, sekonder AML’nin moleküler imzası) · 16 başvuru (ELN 2022 üç grup, ELN 2024 güncellemeleri, riskten karara şeridi, vakadan karara 4 senaryo) · 17 karar yolu (dört onkolojik acil: lökostaz, APL koagülopatisi, diferansiyasyon sendromu, tümör lizis + özet tablo) · 18 karar yolu (7+3, genetiğe göre ekleme: midostaurin/quizartinib/GO/CPX-351, konsolidasyon, idame; vakadan karara 5 senaryo) · 19 karar yolu (kapsamlı geriatrik değerlendirme, üç kategori, unfit ilaçları, venetoklaks–azol etkileşimi) · 20 başvuru (midostaurin ↔ gilteritinib tablosu, relaps/refrakter, bypass direnci, gilteritinib QTc yönetimi) · 21 başvuru (APL indüksiyondan izleme, allo-HCT kime-ne zaman, hazırlık rejimleri) · 22 hızlı tekrar (40 soru).
+Son ölçüm: taşma yok (en dolu s.16 −8,5 mm ve s.22 −7,4 mm; en boş s.14 −49,8 mm). Kısım 11–22 = 12 sayfa, çift.
+Kaynaklar: premium `topics/hematoloji/aml-ana` + `quizzes/.../aml-ana-quiz-1` (9 soru) + `flashcards/.../aml-ana` (80 kart) + `pearls/.../aml-ana` (10 inci) + 4 vaka · açık `canonical/hematoloji/aml`, `aml-tedavi-algoritmasi`, `aml-geriatrik-degerlendirme`, `aml-gilteritinib-midostaurin`, `aml-gilteritinib-ds-yonetimi`.
+Kaynak tutarsızlıkları ve kusurları:
+- **CEBPA blast eşiği çelişkisi:** premium tablo “CEBPA mutasyonu — WHO5: ≥%20 blast şartı korunuyor · ICC: blasta bakılmaz” diyor; açık sayfa “WHO5, biallelik/bZIP mutant CEBPA için ≥%20 sınırını korumuştur” diyerek WHO5 tarafını doğruluyor ama ICC tarafını hiç vermiyor. Kitapta premium tablosu, altına açık sayfanın notu düşüldü (s.15).
+- **AML kart setinde başka hastalıkların kartları var:** 80 kartın bir bölümü ALL (t(9;22) p190/p210, t(4;11), common ALL CD10), Burkitt t(8;14) ve KML ile ilgili. Bunlar AML bölümüne alınmadı — kart seti içerik sahibi için ayıklama adayı.
+- **FLT3-ITD risk grubu:** premium genetik tablosu “Intermediate/Adverse” diyor; ELN 2022 tablosu ve kart seti “allelik orandan bağımsız Intermediate” diyor. Kitapta ELN tablosu ve kart (s.16).
+- **Lökostazda ilk hamle:** premium acil tablosu “acil lökoferez veya hidroksiüre”, kart seti “lökoferez yerine öncelikle hızlı sitoredüktif kemoterapi” diyor. Kitapta kart setinin vurgusu, lökoferez ikinci sırada (s.17).
+- **Karnofsky eşiği:** kart “≤%90 (bazen %70 eşiği)” — kaynak kendi içinde belirsiz; kitapta bu belirsizlikle yazıldı (s.21).
+- **Richter benzeri bir ayrım yok ama “sekonder AML gen listesi” iki yerde farklı:** premium ek bilgi kutusu RUNX1’i MDS ilişkili adverse mutasyonlar arasında sayıyor, kart seti “WHO5’te listeden çıkarılan gen RUNX1” diyor. İkisi de yazıldı (s.15 ve s.16 spot).
+- Premium quiz ve vakalar, açık sayfalarda bulunmayan iki pratik ayrıntıyı ekliyor: **venetoklaks–azol etkileşimi** (flukonazolle 400 → 100 mg ya da mikafungine geçiş) ve **gilteritinib QTc yönetimi** (elektrolit düzeltme, ilaç değişimi, geçici kesme, 80 mg ile yeniden başlama). İkisi de kitaba alındı (s.19 ve s.20).
+
+### Tur 22 — (nefro) Membranöz nefropati · nefro s. 41–50 (Kısım 5)
+Sayfalar: 41 kısım kapağı (altı altın kural) · 42–43 açık sayfa (Şekil 5: antikordan proteinüriye zinciri; sayılarla; paradigma değişimi; klinik başvuru; idrarda ne var ne yok; tanı anında istenecekler; başlangıç biçiminin ayırt ediciliği) · 44 anlatı (IgG4 paradoksu ve lektin yolağı, sublitik C5b-9, otofaji tıkanması, epitop yayılması, lipotoksisite; kenarda hiperkoagülabilite) · 45 başvuru (dokuz hedef antijenlik harita, IgG alt sınıfı ve birikim paterni, alt tipin değiştirdikleri) · 46 başvuru (tromboemboli, akut böbrek hasarı nedenleri, hiperlipidemi, pediyatrik MN, nefrotik sendromun sistemik yükü) · 47 karar yolu (altı adımlı tanı ve sekonderite; biyopside ne görülür) · 48 karar yolu (destekleyici bakım, KDIGO 2021 dört risk grubu, ajan seçiminde hasta faktörleri) · 49 başvuru (ajanlar ve kanıt: MENTOR, RI-CYCLO, STARMEN, yeni nesil anti-CD20, anti-CD38, kompleman/BAFF; direncin kaynakları; tedavi altında izlem) · 50 başvuru (21 senaryoluk vakadan karara).
+Son ölçüm: taşma yok (en dolu s.43 −17,8 mm; en boş s.45 −41,4 mm). Kısım 41–50 = 10 sayfa, çift.
+Kaynaklar: premium `topics/nefroloji/membranoz-nefropati` + `quizzes/nefroloji/membranoz-nefropati-quiz-1` (10 soru) · açık `canonical/nefroloji/membranoz-nefropati-mn`, `-patofizyolojisi`, `-klinik`, `-tedavi-yonetimi`.
+Kaynak tutarsızlıkları ve kusurları:
+- **Açık klinik sayfasında iki cümle yarım kalmış:** (1) “Kritik Eşik: VTE riski, serum albümin düzeyi  (veya” — eşik değeri yok; (2) “makroskobik hematüri erişkinlerde nadirdir (” — parantez kapanmamış. Kitapta VTE eşiği için tedavi sayfasının verdiği &lt;2,0–2,5 g/dL kullanıldı ve s.46’da bu not düşüldü.
+- **THSD7A sıklığı:** premium konu “küçük bir kısmı” diyor, sayı vermiyor; açık MN sayfası “%2–5”. Kitapta açık sayfanın sayısı.
+- **NELL-1 payı:** açık sayfa “PLA2R negatiflerin %10’u” · premium yalnız niteliksel anlatıyor.
+- **Spontan remisyon oranı** (~%30) yalnız açık tedavi sayfasında; premium bu sayıyı vermiyor.
+- **Renal ven trombozu prevalansı %5–63** çok geniş bir aralık olarak veriliyor (açık klinik sayfası); kaynak aralığın nereden geldiğini açıklamıyor, kitapta olduğu gibi aktarıldı.
+- **Epitop yayılması ve anti-rituksimab antikorları** premium ve açık sayfada birbirini destekliyor (%23–43) — çelişki yok, iki kaynak da kullanıldı.
+- Premium konu sayfası **evreleme/tedavi algoritması içermiyor**; KDIGO 2021 risk grupları, destekleyici bakım ve ajan kanıtları tamamen açık `-tedavi-yonetimi` sayfasından geldi. (AML turundaki kalıbın aynısı: premium biyoloji ağırlıklı, açık sayfa yönetim ağırlıklı.)
+
+### Tur 23 — (hemato) İmmün trombositopeni · hemato s. 23–32 (Kısım 3)
+Sayfalar: 23 kısım kapağı (altı altın kural) · 24–25 açık sayfa (Şekil 3: iki koldan trombositopeni şeridi; sayılarla; eşikler tablosu; evreleme ve tanımlar; klinik; İTP’de ne beklenir ne beklenmez) · 26 anlatı (antikor ve dalağın çifte rolü, kompleman ve Fc-bağımsız desialilasyon yolu, T hücre disregülasyonu, TPO’nun neden yükselmediği; kenarda yıkımın dört yolu, sekonderde mekanizma, makrofajın tarafı) · 27 karar yolu (beş adımlı dışlama tanısı + hangi test ne işe yarar) · 28 başvuru (sekonder İTP, ilaca bağlı İTP, vakadan karara) · 29 karar yolu (tedavi basamakları, eşikler, acil kanama paketi, IVIg mekanizması) · 30 başvuru (ajanlar tablosu, dirençli hastalıkta yeni hedefler, klasik immünsüpresanlar) · 31 başvuru (gebelik, yaşlı hasta, cerrahi köprüleme, gebelikte ayırıcı tanı) · 32 hızlı tekrar (40 soru).
+Son ölçüm: taşma yok (en dolu s.26 −5,4 mm ve s.32 −7,4 mm; en boş s.31 −57,0 mm). Kısım 23–32 = 10 sayfa, çift.
+Kaynaklar: premium `topics/hematoloji/itp` + `quizzes/hematoloji/itp-quiz-1` (10 soru) + `flashcards/hematoloji/itp` (65 kart) · açık `canonical/hematoloji/immun-trombositopeni-itp`, `itp-tanisal-yaklasim`, `itp-tedavi`, `gebelikte-immün-ITP-yonetimi`.
+Kaynak tutarsızlıkları:
+- **TPO düzeyi — doğrudan çelişki:** premium konu ve quiz “trombositopeni derecesine göre <b>uygunsuz normal ya da DÜŞÜK</b>” diyor; kart seti “İTP’de normal veya hafif YÜKSEK, aplastik anemide belirgin yüksek” diyor. Kitapta premium sürümü (kural gereği), ayrım s.26 ve s.27’de yazıldı — <b>kullanıcı kararı gerekiyor</b>.
+- **Kemik iliği endikasyonu:** açık tanısal sayfa “yaşa bakılmaksızın yalnız belirli endikasyonlarda (Çin kılavuzları hâlâ rutin öneriyor)” · kart seti “60 yaş üstünde daha kritik”. Kitapta açık sayfanın güncel kuralı, yaşlıda sitogenetik+NGS notu s.30’da.
+- **TPO-RA yanıt oranı:** açık `immun-trombositopeni-itp` “%70–80” · açık `itp-tedavi` “%70–90”. Kitapta geniş aralık (%70–90) kullanıldı.
+- **Rituksimab kalıcı yanıtı:** `immun-trombositopeni-itp` “kalıcı kür ihtimali %20–30” · `itp-tedavi` “5. yılda %21”. İkisi de uyumlu; kitapta ikinci sayfanın sayısı.
+- **Nöraksiyel anestezi eşiği:** `immun-trombositopeni-itp` “&gt;80” · gebelik sayfası “≥70–80”, kart “≥80”. Kitapta ≥70–80 aralığı ve “&lt;50’de kesinlikle yapılmaz” kuralı birlikte.
+- **Splenektomi erteleme süresi:** “en az 12–24 ay” (iki açık sayfa) · kart “en az 12 ay”. Kitapta 12–24 ay.
+- Premium konu sayfası yine **tedavi içermiyor** (saf patogenez); tanı, tedavi, gebelik ve yaşlı yönetimi tamamen açık sayfalardan geldi.
+
+### Tur 24 — (hemato) Antikoagülasyon stratejileri · hemato s. 33–44 (Kısım 4)
+Sayfalar: 33 kısım kapağı · 34–35 açık sayfa (Şekil 4: böbrek bağımlılığı ekseni; sayılarla; mekanizmalar; etkileşimler; düzey ölçümü; VKA↔DOAC karşılaştırma tablosu; warfarinden DOAC’a geçiş eşikleri) · 36 anlatı (ajan seçiminin dört ekseni: böbrek, emilim, kanama profili, geri dönüş planı + uyum) · 37 başvuru (CHA₂DS₂-VASc, tedavi eşikleri, subklinik AF sınıfları, kardiyoversiyon protokolü, DOAC ne zaman tercih edilir) · 38 karar yolu (akut VTE başlangıç fazı, doğrudan başlanabilenler ↔ ön tedavi zorunlu olanlar, warfarin örtüşmesi, geçiş pencereleri) · 39 başvuru (kanser ilişkili tromboz üç karar, Khorana skoru ve genişletilmiş modeller, trombositopenide akut VTE bandları, ek kanama risk faktörleri) · 40 başvuru (profilaksi eşikleri, obezite, kısa bağırsak sendromu, reprodüktif çağ kadın, DOAC kontrendike üç tablo) · 41 karar yolu (kesme süreleri tablosu, köprüleme, yeniden başlama, perioperatif akış şeridi) · 42 başvuru (kanama yönetimi, ajan ajan reversiyon, kanama profili sınıf farkları) · 43 başvuru (21 senaryoluk vakadan karara) · 44 hızlı tekrar (40 soru).
+Son ölçüm: taşma yok; hematoloji dosyasının tamamı (44 sayfa) yeniden ölçüldü, en dolu s.11/23/33 kısım kapakları (0,0 mm) ve s.26 (−5 mm).
+**Kendi hatam ve düzeltmesi:** Kısım 4 eklenince **bölüm açılışı içindekiler listesi 109 mm taştı** — dört kısmın tüm sayfaları tek tek listeleniyordu. Liste nefroloji dosyasındaki gibi kısım başına tek satıra indirildi (“Kapak · açık sayfa · anlatı · iki karar yolu · beş başvuru · tekrar”). Aynı taşma nefroloji Kısım 6 eklenirken de olacak; oradaki liste zaten kısım başına tek satır.
+Kaynaklar: premium `topics/hematoloji/antikoagulasyon-stratejileri` (yalnız kapsam metni) + `quizzes/.../antikoagulasyon-stratejileri-quiz-1` (5 ileri vaka) · açık `canonical/hematoloji/antikoagulasyon-stratejileri` (21 bölüm) + ileri okumalar `vka-doac-karsilastirma`, `kanser-iliskili-tromboz`, `trombositopenide-antikoagulasyon`. (`kisa-bagirsak-sendromunda-antikoagulasyon` sayfası açılmadı; ana sayfa ve quiz aynı içeriği veriyordu.)
+Kaynak tutarsızlıkları ve gözlemler:
+- **Premium “konu” sayfası bu kez gerçek bir konu metni değil:** yalnızca quizin kapsamını anlatan tek paragraf. Yani bu turda premium katkısı tamamen quizden geldi — içerik sahibi için not: bu dosya konu sayfası gibi görünüyor ama değil.
+- **Khorana yüksek risk kesimi:** ana sayfa “Khorana ≥2 olan orta-yüksek riskli hastada profilaksi düşünülür” diyor; CAT sayfası “yüksek risk ≥3, bazı güncel kılavuzlar ≥2” diyor. Kitapta ikisi de (s.39).
+- **Dabigatranın protein bağlanması:** reversiyon bölümü “~%35”, quiz açıklaması yalnız “düşük” diyor — çelişki yok, sayı ana sayfadan.
+- **Andeksanet alfa:** hem premium quiz hem açık sayfa Aralık 2025’te ABD pazarından çekildiğini söylüyor; kitapta bu tarih açıkça yazıldı (kaynak tarihli bilgi, sonradan güncellenmesi gerekebilir).
+- **Nöraksiyel/cerrahi eşikleri** ve **kardiyoversiyon süreleri** açık sayfa ile quiz arasında uyumlu.
+- Açık ana sayfa çok sayıda “Ayrıntı →” bağlantısıyla çocuk sayfalara gönderiyor; bu bölümde o çocuk sayfaların üçü de kitaba katıldı.
+
+### Tur 25 — (enfeksiyon) Bruselloz · enfeksiyon s. 1–12 (yeni branş)
+Yeni branş dosyası: `kitap/enfeksiyon/deneme-bolum.html`, branş rengi `#55671C` (zeytin yeşili). Dokuzuncu bölüm.
+Sayfalar: 1 bölüm açılışı · 2–3 açık sayfa (Şekil 1: makrofaj içinde dört evre eBCV→T4SS→rBCV→aBCV; sayılarla; “neden büyük taklitçi”; dört tür; bulaş; çevre direnci ve biyogüvenlik; klinik tablo ve laboratuvar sıklıkları) · 4 anlatı (silahsız patojen, vakuolü ele geçirmek, konağı yeniden programlamak, Truva atı çıkışı; kenarda efektörler ve metabolik kayma) · 5 başvuru (osteoartiküler, endokardit, nörobruselloz, genitoüriner, vasküler; tüberkülozla karışan üç nokta; karaciğerin patolojik yelpazesi) · 6 başvuru (sitopeni dört mekanizma, OİHA, HLH-2004 kriterleri, DİK/TAT-PAP, granülomatöz hepatit, CHSB, Brucella SBP) · 7 karar yolu (maruziyet, kültür, seroloji, moleküler; hangi örnek ne zaman; prozon) · 8 karar yolu (üç kardinal ilke, iki rejim ve relaps oranları, fokal tutulumda süreler, ikinci seçenekler, “neden bu ajanlar”) · 9 başvuru (gebelik, çocuk, organ yetmezliği, laboratuvar maruziyeti, RB51; pediatrik dozlar; hepatotoksisite şeridi) · 10 başvuru (takip, relaps, korunma, hangi test takipte) · 11 başvuru (22 senaryoluk vakadan karara) · 12 hızlı tekrar (40 soru).
+Son ölçüm: taşma yok (en dolu s.6 −2 mm ve s.12 −7 mm; en boş s.8 −59 mm).
+Kaynaklar: premium `topics/enfeksiyon/bruselloz` + `quizzes/enfeksiyon/bruselloz-quiz-1` (23 soru) · açık `canonical/enfeksiyon/bruselloz` + ileri okumalar `bruselloz-tedavi-algoritmasi`, `bruselloz-hematolojik-komplikasyonlar`, `bruselloz-hepatobiliyer-tutulum`, `bruselloz-intrasellular-patobiyoloji` (dördü de kullanıldı).
+Kaynak tutarsızlıkları ve gözlemler:
+- **Premium “konu” sayfası yine gerçek bir konu metni değil:** bir tedavi tablosu + quizin kapsamını anlatan tek paragraf. Bu, arka arkaya ikinci tur (antikoagülasyonda da aynıydı) — premium `topics` klasöründe “kapsam dosyası” diye ayrı bir tür var gibi görünüyor; içerik sahibi için not.
+- **Osteoartiküler tutulum sıklığı %10–85** olarak veriliyor; kaynak bu geniş aralığın popülasyon ve tanı ölçütü farkından geldiğini kendisi söylüyor. Kitapta aralık ve gerekçesi birlikte.
+- **Gentamisin süresi:** ana sayfa “ilk 7–10 gün”, tedavi algoritması sayfası spondilodiskitte “ilk 7–14 gün”. İkisi de bağlamıyla yazıldı (s.8).
+- **Rifampisin dozu** iki sayfada da 600–900 mg; tedavi algoritması ayrıca “15 mg/kg” diyor. Kitapta mg cinsinden doz.
+- **Pediatrik ≥8 yaş rejimi:** ana sayfa doksisiklin + rifampisin ya da aminoglikozid; tedavi algoritması doz ayrıntısını veriyor (4,4 mg/kg). Çelişki yok, ayrıntı çocuk sayfasından geldi.
+- **HLH tedavisi:** premium quiz “kemoterapiye gerek kalmadan antibrusellar tedaviyle kür”, açık ana sayfa “erken antibiyotik tedavisiyle steroid gerekmeyebilir” — aynı yönde.
+- Açık ana sayfa bu turda görülen **en eksiksiz kaynak**: mikrobiyolojiden korunmaya kadar 9 bölüm; premiumun katkısı esas olarak vaka temelli pekiştirme oldu.
+
+### Tur 26 — (endokrin) Hipertiroidi ve Graves · endokrin s. 69–80 (Kısım 9)
+Sayfalar: 69 kısım kapağı · 70–71 açık sayfa (Şekil 10: TSH → RAIU/Doppler → sentez mi sızıntı mı; sayılarla; süre/şiddet okuması; etiyoloji iki sütun; T3’ün hedef dokuları; yıkıcı tiroiditler) · 72 anlatı (Graves immünopatogenezi, genetik zemin, orbitada TSHR–IGF-1R sinerjisi, T3 neden her sistemi tutar, yaşlıda neden sessiz; kenarda Graves’in nadir yüzleri) · 73 karar yolu (TSH’den etiyolojiye dört adım + basamak tablosu) · 74 başvuru (tedavi modaliteleri, GREAT, pediatrik Graves, üç etiyoloji karşılaştırması) · 75 başvuru (orbitopati: CAS, risk faktörleri, EUGOGO algoritması, patogenez zinciri) · 76 başvuru (amiodaron Tip 1↔Tip 2, Jod-Basedow, iyot yükünün üç yüzü, diğer ilaç kaynaklı tablolar) · 77 karar yolu (beta bloker → tionamid → iyot → kalıcı çözüm; subklinik endikasyonları; dört kol tablosu) · 78 karar yolu (Burch-Wartofsky, beşli protokol, tetikleyiciler, “neden beş basamak”) · 79 başvuru (gebelik, laktasyon, yaşlı; gebelikte ayrıntılar) · 80 hızlı tekrar (49 soru).
+Son ölçüm: taşma yok (Kısım 9’da en dolu s.77 −30 mm, en boş s.73 −55 mm). Tüm dosya (80 sayfa) yeniden ölçüldü, taşma yok; bölüm açılışı listesi zaten kısım başına tek satır olduğu için Kısım 9 eklenince taşmadı.
+Kaynaklar: premium `topics/endokrinoloji/hipertiroidi` (çok kapsamlı) + `topics/endokrinoloji/graves-hastaligi` + quizler + kart · açık `canonical/endokrinoloji/hipertiroidi`, `yaslida-hipertiroidizm`, `gebelikte-hipertiroidi-kilavuz-karsilastirmasi`.
+Kaynak tutarsızlıkları ve gözlemler:
+- **Subklinik hipertiroidi tanımında TSH eşiği:** premium hipertiroidi konusu bir yerde “TSH &lt;0,5 mU/L”, tedavi tablosunda “&lt;0,1 (Grade 2)” ve “0,1–0,4 (Grade 1)” diyor; açık sayfa ve kitapta Grade ayrımı kullanıldı. “&lt;0,5” ifadesi diğer eşiklerle çelişiyor — **kullanıcı kararı**.
+- **sT3/sT4 oranı eşiği:** Graves premium konusu “sT3/sT4 &gt;0,3 veya T3/T4 &gt;20 ng/mcg”, hipertiroidi premium konusu yalnız “T3/T4 &gt;20 (ng/mcg)”. Kitapta ng/mcg eşiği (s.70, 73, 74).
+- **Gebelikte nöraksiyel değil ama ATD geçişi:** açık gebelik sayfası 1. trimesterde PTU, ≥16. haftada metimazol diyor; premium Graves konusu “sonraki trimesterlerde embriyopati/hepatotoksisite dengesine göre PTU ya da MMI” diyerek daha esnek. Kitapta ikisi birlikte (s.79).
+- **Gebelikte iyot desteği** yalnız açık kılavuz karşılaştırma sayfasında: ATA/ETA 150 µg/gün, TEMD 100–150 µg/gün (tuz kısıtlamasında 200). Premiumda yok.
+- **TSH referans aralığı:** eski ATA 2011 sabit eşikleri (2,5 / 3,0 mU/L) ile ATA 2017 sonrası yerel referans yaklaşımı yalnız açık sayfada; kitapta güncel yaklaşım.
+- **Yaşlıda metimazol başlangıç dozu (5–15 mg/gün)** ve **uzun süreli düşük doz (2,5–5 mg/gün)** yalnız açık yaşlı sayfasında.
+- Premium Graves konusu, orbitopati ve yeni ajanlar (teprotumumab, tosilizumab, rituksimab) açısından açık sayfalardan **belirgin daha zengin**; iki kaynak bu turda birbirini tamamladı, çelişmedi.
+
+### Tur 27 — (enfeksiyon) İnvaziv fungal enfeksiyonlar · enfeksiyon s. 13–24 (Kısım 2)
+Sayfalar: 13 kısım kapağı · 14–15 açık sayfa (Şekil 2: hücre duvarının dört katmanı ve dört antifungal hedefi; sayılarla; mikozların derinliğe göre sınıflaması; risk grupları; bulaş yolları; laboratuvar araçları; antifungal sınıfların kör noktaları) · 16 anlatı (kültürün sağırlığı, her biyobelirtecin kör noktası, kültürsüz teknolojiler, <i>C. auris</i>’in kural dışılığı, biyofilm ve persister hücreler; kenarda direnç mekanizmaları) · 17 başvuru (patojen–sendrom haritası, zemin→patojen refleksi, <i>C. auris</i> profili) · 18 başvuru (biyobelirteçler ve moleküler testler; testi yorumlarken üç soru) · 19 başvuru (halo, hava-hilal, ters halo, PET/BT; örnekleme kararı) · 20 karar yolu (kandemi: ekinokandin → kateter → fundoskopi → step-down → süre; 5 senaryo) · 21 karar yolu (aspergilloz, mukormikoz, fusariosis, kriptokok; 5 senaryo) · 22 başvuru (direnç mekanizmaları, yeni ajanlar, <i>C. auris</i>’te amfoterisin B dozlama paradoksu) · 23 başvuru (özel sendromlar, profilaksi, çevresel kontrol) · 24 hızlı tekrar (40 soru).
+Son ölçüm: taşma yok (Kısım 2’de en dolu s.13 kapak 0,0 ve s.24 −4 mm; en boş s.19 −64 mm). Bölüm açılışı listesi bu turda kısım başına tek satıra indirildi (hematolojideki taşmanın tekrarlanmaması için önceden).
+Kaynaklar: premium `topics/enfeksiyon/invaziv-fungal-enfeksiyonlar` + `quizzes/.../invaziv-fungal-enfeksiyonlar-quiz-1` (10 soru) · açık `canonical/enfeksiyon/invazive-mantar-enfeksiyon` (13 bölüm) + `mantar-enfeksiyon-ana-sayfa` (genel mikoloji).
+Kaynak tutarsızlıkları ve gözlemler:
+- **Fusarium’un kan kültüründe üreme gerekçesi iki kaynakta farklı:** premium “in vivo <b>sporülasyon</b> yapabildiği için”, açık sayfa “yüksek oranda <b>psödohif</b> ürettiği için (%40–60)”. Kitapta sporülasyon (premium kuralı) + %40–60 oranı (açık sayfa) birlikte; mekanizma farkı kullanıcı kararına bırakıldı.
+- **BDG duyarlılığı:** premium “%51–63’e düşer (maskeleme)”, açık sayfa genel duyarlılığı “%70–80” veriyor. Çelişki değil (biri tür bazlı, biri genel) ama yan yana okunduğunda karışabilir; kitapta ikisi ayrı satırda.
+- **T2Candida duyarlılığı:** premium “1 CFU/mL saptar”, açık sayfa “%90’ın üzerinde duyarlılık”. İkisi de yazıldı.
+- **EUCAST <i>C. auris</i> amfoterisin B kırılma noktası (S ≤0,001 mg/L, ECOFF 2 mg/L)** yalnız açık sayfanın final spot bölümünde; premiumda yok. Kitapta s.22’de.
+- **Endokardit rejimi** (kaspofungin 150 mg/gün, 6 hafta, protez kapakta ömür boyu supresyon) yalnız premiumda.
+- Premium bu kez gerçek bir konu metni (kapsam dosyası değil) — son iki turdaki kalıp kırıldı; iki kaynak birbirini tamamladı.
+
+### Tur 28 — (endokrin) Feokromositoma ve paraganglioma · endokrin s. 81–92 (Kısım 10)
+Sayfalar: 81 kısım kapağı · 82–83 açık sayfa (Şekil 11: üç moleküler küme ve fenotipleri; sayılarla; şüphe kimde doğar; terminoloji ve epidemiyoloji; klinik tablo ve tetikleyiciler; hangi kliniği taklit eder) · 84 anlatı (neden harika taklitçi, PNMT’nin fenotipi belirlemesi, kümelerin klinik karşılığı, hazırlığın gerekçesi, modern paradoks) · 85 karar yolu (beş adımlı biyokimyasal tanı: şüphe sınıflaması, test performansı, preanalitik kurallar, yalancı pozitiflik, klonidin; dışlama eşikleri) · 86 başvuru (BT/MRG ve dört fonksiyonel görüntüleme; görüntüleme sırası) · 87 başvuru (üç moleküler küme tablosu, üç genetik inci, genetik testin değiştirdikleri, soy ağacı spotu) · 88 karar yolu (alfa → tuz/hidrasyon → beta → kalsiyum kanal blokeri; dozlar; hazırlığın üç hedefi) · 89 karar yolu (cerrahi, kaçınılacak anestezikler, intraoperatif kriz ajanları, ilk 24–48 saat, izlem çizelgesi) · 90 başvuru (feokromositoma krizi, tetikleyiciler, ayırıcı tanı) · 91 başvuru (uzun dönem izlem + 21 senaryoluk vakadan karara) · 92 hızlı tekrar (49 soru).
+Son ölçüm: taşma yok (Kısım 10’da en dolu s.85 −23 mm, en boş s.91 −61 mm). Tüm dosya (92 sayfa) ölçüldü, taşma yok.
+Kaynaklar: premium `topics/endokrinoloji/feokromositoma` + `quizzes/endokrinoloji/feokromositoma-quiz-1` · açık `canonical/endokrinoloji/feokromositoma-ve-paraganglioma` (+ `adrenal-medulla-hastaliklari` çok kısa, katkısı sınırlı).
+Kaynak tutarsızlıkları ve gözlemler:
+- **Açık sayfa ile premium neredeyse birebir aynı:** küme tablosu, genetik inciler ve preoperatif protokol aynı cümlelerle iki kaynakta da var. Çelişki çıkmadı; premium birkaç ek ayrıntı taşıyor (Geroula skoru, klonidin protokol ayrıntısı, anestezi ajanları, rebound hipoglisemi oranı). İçerik sahibi için not: bu iki dosya birbirinin kopyası gibi — <b>tek kaynağa bağlanması</b> düşünülebilir.
+- **Premium quiz tek soruluk** görünüyor (SDHD maternal damgalama vakası); diğer premium konularda 7–23 soru vardı. Quiz dosyası eksik olabilir.
+- **Alfa blokaj paradoksu** (Wang ve ark. 2023 meta-analizi: intraoperatif fark yok, postoperatif vazopressör ihtiyacı 4,21 kat) hem premiumda hem açık sayfada var ve kılavuz önerisiyle çelişiyor — kitapta ikisi birlikte, “kılavuz yine de öneriyor” notuyla (s.84 ve s.88).
+- **Kontrastsız BT eşiği** (&lt;10 HU dışlar) ve **kontrast güvenliği** (alfa blokajsız hastada düşük ozmolariteli kontrast güvenli) iki kaynakta da aynı.
+- Ekstra: `adrenal-medulla-hastaliklari` sayfası yalnız birkaç cümlelik fizyoloji içeriyor; bu başlık altında ayrı bir ileri okuma sayfası gibi durmasına karşın içerik yok denecek kadar az.
+
+### Tur 29 — (enfeksiyon) CRKP · enfeksiyon s. 25–36 (Kısım 3)
+Sayfalar: 25 kısım kapağı · 26–27 açık sayfa (Şekil 3: enzimden ilaca şeridi; sayılarla; mikrobiyoloji notları; risk grupları; sessiz rezervuarlar; porin ve eflüks; risk ve mortalite sayıları) · 28 anlatı (direncin dört katmanı: enzim, porin, pompa, plazmit trafiği + virülans katmanı) · 29 başvuru (Ambler sınıfları, seftazidim-avibaktamın kapsamı, enzimlerin genetiği, ajan × enzim matrisi) · 30 başvuru (CR-hvKP virülans faktörleri, klasik ayrımın bozulması, moleküler imza) · 31 başvuru (metastatik yayılım, endoftalmi, üç suş karşılaştırması) · 32 karar yolu (enzimi tanımla → sınıfa göre ajan → eski ajanların yeri → kurtarma; ilaca göre direnç mekanizmaları) · 33 karar yolu (odağa göre ajan, kaynak kontrolü, karar sırası) · 34 başvuru (sürveyans yöntemleri, salgın kontrolü) · 35 başvuru (20 senaryoluk vakadan karara) · 36 hızlı tekrar (40 soru).
+Son ölçüm: taşma yok (Kısım 3’te en dolu s.29 −30 mm ve s.36 −7 mm; en boş s.34 −81 mm).
+Kaynaklar: premium `topics/enfeksiyon/crkp-karbapenem-direncli-klebsiella` + `quizzes/...-quiz-1` + `flashcards/...` (80 kart) · açık `canonical/enfeksiyon/crkp-enfeksiyonu` + ileri okumalar `cr-hvkp-hipervirulan-varyant`, `cr-hvkp-metastatik-yayilim`, `cr-hvkp-endoftalmi-komplikasyonu`.
+Kaynak tutarsızlıkları ve gözlemler:
+- **Mortalite oranı:** premium “kritik hastalarda %50–60”, kart seti “bildirilen mortalite ~%42”. İkisi de s.26’da ayrı ayrı yazıldı — hangi popülasyon olduğu kaynaklarda net değil, <b>kullanıcı kararı</b>.
+- **String testi:** premium “en tipik özellik, 5 mm’den uzun iplikçik”, kart seti “düşük duyarlılık ve özgüllük; her hipervirülan suş hipermukoviskoz değildir”. Kitapta premium tanımı + kartın uyarısı birlikte (s.30).
+- **Kolistin/tigesiklin:** premium “monoterapi olarak önerilmez”, açık sayfa menenjitte BOS geçişi nedeniyle kolistin ve tigesiklini seçenek olarak sayıyor. Kitapta ikisi de bağlamıyla (s.32 ve s.33).
+- **MBL tanımı:** premium “yalnız aztreonama dokunamaz”; kart seti aynı bilgiyi “seftazidim-avibaktam veya meropenem-vaborbaktam tarafından inhibe edilemez” diye veriyor. İki ifade birbirini tamamlıyor, kitapta ikisi de var.
+- **Bu bölüm kaynak hacmi bakımından 12 sayfaya görece zayıf kaldı:** premium konu ~20 KB, açık sayfa 18 KB, üç çocuk sayfa 5–6’şar KB. Boşluğu büyük ölçüde <b>80 kartlık flashcard seti</b> kapattı (Tn4401, IncL plazmit, mgrB/mcr-1, OqxAB, Xpert Carba-R, APACHE II, NDM-5, ST11-KL64, rmpA/iucA/pLVPK gibi ayrıntıların tamamı karttan geldi).
+
+### Tur 30 — (endokrin) Erkek ve transplantasyon osteoporozu · endokrinoloji s. 93–104 (Kısım 11)
+Sayfalar: 93 kısım kapağı · 94–95 açık sayfa (Şekil 12: testosteron → aromataz → östrojen → eşik zinciri; sayılarla; sessiz uyarılar; ilaç öyküsü incisi; tanısal eşikler; DXA endikasyonları; nonfarmakolojik temel; kadın–erkek karşılaştırması; izlem) · 96 anlatı (östrojenin erkekteki rolü, terapötik paradoks, Testosterone Trials ve paradoksu doğru okumak) · 97 başvuru (zorunlu laboratuvar paneli, sekonder nedenler sistemlere göre, hangi test neyi dışlar) · 98 karar yolu (tarama, doğru skor, sekonder neden, FRAX, izlem; üç sonuç üç yol) · 99 karar yolu (kemik ajanı dört ölçüt, TRT ayrı karar, tedaviye başlamadan önce, iki karar zinciri) · 100 başvuru (ajanlar, ardışık tedavi, anabolik ne zaman ilk seçenek) · 101 başvuru (ADT, denosumab rebound, ilaç tatili ve kime düşünülmez) · 102 karar yolu (transplantasyon: nakil öncesi değerlendirme, zamanlama, immünsüpresyon, böbreğe göre ajan, nonfarmakolojik zemin) · 103 başvuru (27 senaryoluk vakadan karara) · 104 hızlı tekrar (40 soru).
+Son ölçüm: **104 sayfanın hiçbirinde taşma yok.** Kısım 11'de en dolu s.97 (−16,9 mm) ve s.104 (−19,6 mm); en boş s.95 (−46,9 mm). Üç tur gerekti: ilk taslak −105…−135 mm boştu, iki doldurma turu + iki taşma düzeltmesi (s.96'daki "Sessizliğin bedeli" → s.94; s.97'deki ilaç öyküsü incisi → s.94).
+Bölüm açılışı (s.1) Kısım 11 eklenince +6,5 mm taştı → **içindekiler tümüyle kısım başına tek satıra indirildi** (Kısım 1–6 hâlâ sayfa sayfa listeleniyordu). Kural artık bu bölümde de uygulanıyor.
+Kaynaklar: premium `topics/endokrinoloji/erkek-osteoporozu` + `quizzes/…-quiz-1` · premium `topics/endokrinoloji/transplantasyon-osteoporozu` + quiz · açık `canonical/endokrinoloji/erkek-osteoporozu-ana-sayfa` + ileri okuma `erkek-osteoporozu-testosteron` · açık `osteoporoz-organ-nakli-kaynakli`.
+Kaynak tutarsızlıkları ve gözlemler:
+- **KULLANICI KARARI GEREKİYOR — bölüm içi tekrar:** Kısım 6'nın s.56'sı zaten "Erkek osteoporozu ve kılavuz farkları" başlıklı tam bir başvuru sayfası. DXA endikasyonları, sekonder neden listesi, testosteron eşikleri (&lt;200 ng/dL, T ≤−3,5, T ≤−2,5 + kırık) ve ajan tablosu Kısım 11 ile **büyük ölçüde örtüşüyor**. Kısım 11 bunların üstüne Testosterone Trials paradoksunu, denosumab reboundunu, ilaç tatilini, ADT'yi ve transplantasyonun tamamını ekliyor. Seçenekler: (a) s.56'yı yalnız **kılavuz farkları tablosuna** indirip erkek osteoporozunu tümüyle Kısım 11'e bırakmak, (b) s.56'yı olduğu gibi tutup Kısım 11'den çapraz gönderme yapmak, (c) s.56'yı kaldırıp Kısım 6'yı 12 → 10 sayfaya indirmek (sayfa paritesi bozulmaz). **Hiçbiri uygulanmadı.**
+- s.56'da bir eşik daha var: *"2 yıllık yeterli testosterona rağmen T ≤−2,5 ise kırık azaltıcı ilaç eklenir."* Premium konu ve quiz bu iki yıllık koşulu **hiç anmıyor** (yalnız T ≤−3,5 ve T ≤−2,5 + kırık). Kısım 11'e bilerek alınmadı — kaynağı belirsiz.
+- Premium "erkek osteoporozu" konusu ile açık ana sayfa **tarama endikasyonlarında ve nutrisyon hedeflerinde birebir örtüşüyor**; ayrım quiz açıklamalarında. 12 sayfanın yarısından fazlası quiz açıklamalarından çıktı (Testosterone Trials'ın dört metodolojik sınırı, rebound, ilaç tatili, ADT'de denosumab, anabolik→antirezorptif geçiş).
+- Transplantasyon kaynakları **renal eşikte iki ayrı sayı veriyor**: premium konu "kreatinin &gt;2 mg/dL ya da GFR &lt;%30 → doz yarıya indir/kes", quiz "GFR &lt;30–35 mL/dk → bisfosfonat kontrendike". İkisi ayrı satır olarak s.102'ye kondu; hangisinin hangi klinik durumda geçerli olduğu kaynaklarda net değil — **kullanıcı kararı**.
+- Transplantasyon premium konusu da (bruselloz ve antikoagülasyonda olduğu gibi) gerçek konu metni yerine **kapsam paragrafı** taşıyor; içeriğin tamamı quizden geldi.
+- Açık `erkek-osteoporozu-testosteron` sayfası neredeyse yalnız **başlıklardan** oluşuyor; Testosterone Trials bölümünün gövdesi premium quizde.

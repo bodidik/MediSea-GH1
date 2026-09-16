@@ -1,17 +1,40 @@
 // Kullanım: node kitap/pdf.cjs kitap/endokrinoloji/deneme-bolum.html [--onizleme]
 // PDF'i kitap/cikti/ altına basar (Microsoft Edge headless, @page A4).
 // --onizleme: her sayfanın PNG görüntüsünü de üretir (kontrol için).
-// --sayfa 13-21: önizlemeyi yalnızca bu aralıkla sınırla (PDF yine tamamını basar).
+// --sayfa 13-21: YALNIZCA bu aralığı bas. Belgeden geçici bir kopya (…-parca.html)
+//   üretilir; hem PDF hem PNG yalnız o aralığı içerir. Uzun dosyalarda (60+ sayfa)
+//   tam belgeyi basmak dakikalar sürdüğü için varsayılan davranış budur.
+// --tam: --sayfa verilse bile PDF'i belgenin tamamı için bas.
 const { execFileSync } = require("child_process");
 const fs = require("fs");
 const path = require("path");
 const { pathToFileURL } = require("url");
 
 const EDGE = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe";
-const girdi = path.resolve(process.argv[2] || "");
-if (!fs.existsSync(girdi)) { console.error("Girdi bulunamadı: " + girdi); process.exit(1); }
+const kaynak = path.resolve(process.argv[2] || "");
+if (!fs.existsSync(kaynak)) { console.error("Girdi bulunamadı: " + kaynak); process.exit(1); }
 const cikti = path.join(__dirname, "cikti");
 fs.mkdirSync(cikti, { recursive: true });
+
+// --sayfa verildiyse belgeden yalnız o aralığı içeren geçici bir kopya üret
+const ai0 = process.argv.indexOf("--sayfa");
+const aralik = ai0 > 0 ? process.argv[ai0 + 1].split("-").map(Number) : null;
+let girdi = kaynak;
+if (aralik && !process.argv.includes("--tam")) {
+  const metin = fs.readFileSync(kaynak, "utf8");
+  const parcalar = metin.split(/(?=<section class="sayfa)/);
+  const bas = parcalar[0];                       // <head> ve gövde başlangıcı
+  const sayfalar = parcalar.slice(1);
+  const sonParca = sayfalar[sayfalar.length - 1];
+  const kuyrukBas = sonParca.indexOf("</section>") + "</section>".length;
+  const kuyruk = sonParca.slice(kuyrukBas);      // kapanış script'i ve </html>
+  sayfalar[sayfalar.length - 1] = sonParca.slice(0, kuyrukBas);
+  const a = Math.max(1, aralik[0]);
+  const b = Math.min(aralik[1] || aralik[0], sayfalar.length);
+  girdi = path.join(cikti, path.basename(kaynak, ".html") + "-parca.html");
+  fs.writeFileSync(girdi, bas + sayfalar.slice(a - 1, b).join("") + kuyruk);
+  console.log("PARÇA " + a + "-" + b + " (" + (b - a + 1) + " sayfa) → " + path.basename(girdi));
+}
 const ad = path.basename(girdi, ".html");
 const url = pathToFileURL(girdi).href;
 const profil = path.join(require("os").tmpdir(), "medisea-kitap-edge");
@@ -53,10 +76,12 @@ console.log("PDF  " + pdf + "  (" + Math.round(boyut / 1024) + " KB)");
 
 if (process.argv.includes("--onizleme")) {
   const sayfaSayisi = (fs.readFileSync(girdi, "utf8").match(/<section class="sayfa/g) || []).length;
-  const ai = process.argv.indexOf("--sayfa");
-  const [bas, son] = ai > 0 ? process.argv[ai + 1].split("-").map(Number) : [1, sayfaSayisi];
+  // Parça kipinde belge 1'den başlar; dosya adında özgün sayfa numarasını koru
+  const kaydirma = girdi !== kaynak ? Math.max(1, aralik[0]) - 1 : 0;
+  const [bas, son] = girdi !== kaynak ? [1, sayfaSayisi]
+    : (aralik ? aralik : [1, sayfaSayisi]);
   for (let i = bas; i <= Math.min(son || bas, sayfaSayisi); i++) {
-    const png = path.join(cikti, `${ad}-s${i}.png`);
+    const png = path.join(cikti, `${path.basename(kaynak, ".html")}-s${i + kaydirma}.png`);
     execFileSync(EDGE, [...ortak.filter(a => !a.startsWith("--user-data-dir")).map(a => a === "--headless=new" ? "--headless" : a), "--force-device-scale-factor=1.6", "--window-size=794,1123", "--user-data-dir=" + profil + "-png" + i + "-" + process.pid, "--screenshot=" + png, url + "?s=" + i], { stdio: "ignore" });
     // Edge ekran görüntüsünü süreç döndükten sonra yazıyor: dosyayı bekle
     if (!dosyaBekle(png, 40000)) { console.error("PNG üretilemedi: " + png); process.exit(1); }

@@ -4,14 +4,60 @@
     {
       "name": "web-dev",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "web", "run", "dev"],
+      "runtimeArgs": [
+        "--prefix",
+        "web",
+        "run",
+        "dev"
+      ],
       "port": 3000
     },
     {
       "name": "muhasebem",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "C:\\Users\\hucig\\Muhasebem", "run", "dev", "--", "-p", "3050"],
+      "runtimeArgs": [
+        "--prefix",
+        "C:\\Users\\hucig\\Muhasebem",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3050"
+      ],
       "port": 3050
+    },
+    {
+      "name": "hukuk",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "C:\\Users\\hucig\\hukuk",
+        "run",
+        "dev"
+      ],
+      "port": 3100
+    },
+    {
+      "name": "icerik",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "C:/Users/hucig/Medknowledge-icerik/web",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3200"
+      ],
+      "port": 3200
+    },
+    {
+      "name": "kitap-duzenleyici",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "kitap/duzenleyici-sunucu.cjs"
+      ],
+      "port": 3400
     }
   ]
 }
