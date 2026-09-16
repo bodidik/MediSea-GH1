@@ -1,0 +1,488 @@
+{
+  "id": "fc-nef-igan-001",
+  "accessLevel": "premium",
+  "topic": "IgA Nefropatisi",
+  "description": "YDUS Nefroloji serisi: IgA nefropatisi ve IgA vasküliti — patogenez, Oxford MEST-C, tedavi ve nakil sonrası nüks; 80 kartlık hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "igan-001",
+      "front": "Johann Lukas Schönlein 1837 yılında hangi üç klinik bulgunun birlikteliğini ilk kez tanımlamıştır?",
+      "back": "Purpura, artralji ve artrit.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-002",
+      "front": "Eduard Henoch'un 1874'te Schönlein'in tanımlamasına eklediği sistemik semptomlar nelerdir?",
+      "back": "Karın ağrısı, kanlı diyare ve böbrek tutulumu.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-003",
+      "front": "IgA vasküliti (HSP) patogenezinde rol oynayan temel mekanizma nedir?",
+      "back": "Küçük kan damarlarında, renal glomerüllerde ve mezanjiyumda immün kompleks birikimi.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-004",
+      "front": "Dünya çapında primer glomerülonefritin en yaygın nedeni hangisidir?",
+      "back": "IgA nefropatisi (IgAN).",
+      "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
+    },
+    {
+      "id": "igan-005",
+      "front": "IgA vaskülitinin deri biyopsisindeki karakteristik histopatolojik bulgusu nedir?",
+      "back": "Papiller dermisteki postkapiller venülleri tutan lökositoklastik vaskülit.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-006",
+      "front": "IgA vasküliti tanısında immünfloresan incelemede damar duvarlarında IgA ile birlikte en sık hangi kompleman bileşeni saptanır?",
+      "back": "C3 (Kompleman 3).",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-007",
+      "front": "1990 yılında yedi tip sistemik vaskülit için sınıflandırma kriterlerini öneren kuruluş hangisidir?",
+      "back": "Amerikan Romatoloji Koleji (ACR).",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-008",
+      "front": "Childhood vasculitis (çocukluk çağı vasküliti) için 2006 ve 2010 yıllarında konsensüs kriterlerini güncelleyen kuruluşlar hangileridir?",
+      "back": "EULAR ve PReS.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-009",
+      "front": "Pediatrik IgA vasküliti tanı ve tedavisi için geliştirilen Avrupa tabanlı girişimsel kılavuzun adı nedir?",
+      "back": "SHARE (Single Hub and Access point for paediatric Rheumatology in Europe).",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-010",
+      "front": "IgA vasküliti vakalarının yaklaşık %90'ı hangi yaş grubunda görülür?",
+      "back": "3-15 yaş arası çocuklar.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-011",
+      "front": "IgA vasküliti insidansı Kuzey Yarımküre'de hangi aylarda zirve yapar?",
+      "back": "Kasım ve Ocak ayları arası.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-012",
+      "front": "IgA vaskülitine duyarlılıkla ilişkili olduğu bildirilen gen polimorfizmleri hangi enzimleri kodlar?",
+      "back": "eNOS (endotelyal nitrik oksit sentaz) ve ACE (anjiyotensin dönüştürücü enzim).",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-013",
+      "front": "Çocuklarda IgA vasküliti vakalarının yaklaşık %50'sinden önce görülen en yaygın tetikleyici faktör nedir?",
+      "back": "Üst solunum yolu enfeksiyonu (özellikle Streptococcus).",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-014",
+      "front": "IgA vasküliti ile güçlü bir klinik ilişkisi olan ve gastrointestinal tutulum riskini artıran otoinflamatuar hastalık hangisidir?",
+      "back": "Ailevi Akdeniz Ateşi (FMF).",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-015",
+      "front": "Erişkinlerde IgA vasküliti tanısı konduğunda, bilinen bir tetikleyici yoksa hangi patoloji mutlaka araştırılmalıdır?",
+      "back": "Solid organ maligniteleri.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-016",
+      "front": "IgA nefropatisinde prognozu öngörmek için kullanılan standart histopatolojik skorlama sistemi nedir?",
+      "back": "Oxford Sınıflandırması (MEST-C skoru).",
+      "tag": "Nefroloji / IgA Nefropatisi / Oxford MEST-C"
+    },
+    {
+      "id": "igan-017",
+      "front": "Oxford sınıflandırmasındaki 'M' parametresi neyi ifade eder?",
+      "back": "Mesanjiyal hiperhülarite.",
+      "tag": "Nefroloji / IgA Nefropatisi / Oxford MEST-C"
+    },
+    {
+      "id": "igan-018",
+      "front": "Oxford sınıflandırmasındaki 'E' parametresi neyi ifade eder?",
+      "back": "Endokapiller hiperhülarite.",
+      "tag": "Nefroloji / IgA Nefropatisi / Oxford MEST-C"
+    },
+    {
+      "id": "igan-019",
+      "front": "Oxford sınıflandırmasındaki 'T' parametresinin evrelendirilmesi neye dayanır?",
+      "back": "Tübüler atrofi ve interstisyel fibrozisin derecesine.",
+      "tag": "Nefroloji / IgA Nefropatisi / Oxford MEST-C"
+    },
+    {
+      "id": "igan-020",
+      "front": "IgA nefropatisi patogenezindeki 'Vuru 1' (Hit 1) aşaması nedir?",
+      "back": "Galaktoz-eksik IgA1 (Gd-IgA1) üretiminin artışı.",
+      "tag": "Nefroloji / IgA Nefropatisi / Patogenez"
+    },
+    {
+      "id": "igan-021",
+      "front": "IgA nefropatisi patogenezindeki 'Vuru 2' (Hit 2) aşaması nedir?",
+      "back": "Gd-IgA1 moleküllerine karşı otoantikor (IgG veya IgA) gelişimi.",
+      "tag": "Nefroloji / IgA Nefropatisi / Patogenez"
+    },
+    {
+      "id": "igan-022",
+      "front": "IgA nefropatisi patogenezindeki 'Vuru 4' (Hit 4) aşamasında böbrek hasarına yol açan olay nedir?",
+      "back": "İmmün komplekslerin mezanjiyumda birikmesi ve kompleman aktivasyonu.",
+      "tag": "Nefroloji / IgA Nefropatisi / Patogenez"
+    },
+    {
+      "id": "igan-023",
+      "front": "IgA nefropatisi olan hastalarda böbrek yetmezliği riskini hesaplayan güncel web tabanlı araç nedir?",
+      "back": "Uluslararası IgA Nefropatisi Tahmin Aracı (IIgANPT).",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-024",
+      "front": "Uluslararası IgA Nefropatisi Tahmin Aracı, biyopsiden sonraki hangi süreye kadar risk tahmini yapabilir?",
+      "back": "80 aya kadar.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-025",
+      "front": "IgA nefropatisinde hangi laboratuvar parametresindeki azalma, uzun dönem böbrek sağkalımı için en güvenilir surrogat markerdır?",
+      "back": "Proteinüri miktarındaki azalma.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-026",
+      "front": "Proteinüri seviyesi neyin üzerinde olan IgA nefropatili hastalar, progresif böbrek hastalığı açısından yüksek riskli kabul edilir?",
+      "back": ">1 g/gün.",
+      "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
+    },
+    {
+      "id": "igan-027",
+      "front": "IgA nefropatisi tedavisinde 'Sparsentan' hangi iki reseptörü aynı anda bloke eder?",
+      "back": "Endotelin tip A ve Anjiyotensin II tip 1 reseptörleri.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-028",
+      "front": "IgA nefropatisinde Sparsentan'ın etkinliğini araştıran Faz III çalışmanın adı nedir?",
+      "back": "PROTECT çalışması.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-029",
+      "front": "Hedeflenmiş salınımlı budesonid (Nefecon), IgA1 üretimini baskılamak için hangi anatomik bölgedeki Peyer plaklarını hedefler?",
+      "back": "Distal ileum.",
+      "tag": "Nefroloji / IgA Nefropatisi / Patogenez"
+    },
+    {
+      "id": "igan-030",
+      "front": "Kompleman sisteminin alternatif yolunu inhibe eden bir faktör B inhibitörü olan ilaç hangisidir?",
+      "back": "Iptacopan (LNP023).",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-031",
+      "front": "Lektin yolunu MASP-2 üzerinden bloke eden monoklonal antikor hangisidir?",
+      "back": "Narsoplimab.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-032",
+      "front": "B hücresi proliferasyonunu ve IgA üretimini azaltan APRIL inhibitörü monoklonal antikor hangisidir?",
+      "back": "Sibeprenlimab.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-033",
+      "front": "Hangi ilaç hem APRIL hem de BAFF (B-cell activating factor) sinyal yolaklarını çift yönlü inhibe eder?",
+      "back": "Atacicept.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-034",
+      "front": "IgA nefropatisinde 'destekleyici tedavi' (Supportive care) neleri kapsamalıdır?",
+      "back": "RAAS blokajı, kan basıncı kontrolü, yaşam tarzı değişiklikleri ve tuz kısıtlaması.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-035",
+      "front": "Hangi çalışma, IgA nefropatisinde yoğun destekleyici tedavinin (immünsupresyon eklenmeksizin) hastaların önemli bir kısmında yeterli olduğunu göstermiştir?",
+      "back": "STOP-IgAN çalışması.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-036",
+      "front": "Dapagliflozin'in IgA nefropatili hastalarda majör böbrek olaylarını azalttığını kanıtlayan geniş çaplı çalışma hangisidir?",
+      "back": "DAPA-CKD çalışması.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-037",
+      "front": "KDIGO 2021 kılavuzuna göre, IgA nefropatisi olan hastalarda RAAS inhibitörü ile tedavi hedef proteinüri seviyesi nedir?",
+      "back": "<0.5 g/gün.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-038",
+      "front": "IgA nefropatili hastalarda sistemik kortikosteroid tedavisine bağlı en ciddi yan etki riski nedir?",
+      "back": "Ağır enfeksiyonlar (özellikle Pneumocystis jirovecii pnömonisi).",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-039",
+      "front": "IgA nefropatisi tanısında böbrek biyopsisinde immünfloresan mikroskopide hangi immünglobulin birikimi tanı için zorunludur?",
+      "back": "IgA (genellikle dominant veya ko-dominant).",
+      "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
+    },
+    {
+      "id": "igan-040",
+      "front": "IgA nefropatisi ve IgA vasküliti arasındaki temel patolojik fark nedir?",
+      "back": "HSP'de vaskülitik purpurik döküntü ve sistemik (ekstrarenal) tutulum olmasıdır.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-041",
+      "front": "Böbrek nakli sonrası primer hastalığı IgA nefropatisi olanlarda rekürrens (nüks) oranı yaklaşık yüzde kaçtır?",
+      "back": "%30 ile %50 arası.",
+      "tag": "Nefroloji / IgA Nefropatisi / Transplantasyon Sonrası Nüks"
+    },
+    {
+      "id": "igan-042",
+      "front": "Böbrek nakli sonrası IgA nefropatisi nüksü için bağımsız bir risk faktörü olarak tanımlanan otoantikor hangisidir?",
+      "back": "Gd-IgA1 spesifik IgG otoantikorları.",
+      "tag": "Nefroloji / IgA Nefropatisi / Transplantasyon Sonrası Nüks"
+    },
+    {
+      "id": "igan-043",
+      "front": "Böbrek nakli sonrası gelişen IgA nefropatisi nüksünde prognozu kötüleştiren eşlikçi patoloji nedir?",
+      "back": "Kronik rejeksiyon (red).",
+      "tag": "Nefroloji / IgA Nefropatisi / Transplantasyon Sonrası Nüks"
+    },
+    {
+      "id": "igan-044",
+      "front": "Nakil sonrası IgA nüksünü azaltmada hangi immünsupresif ajanın kullanımının (çelişkili veriler olsa da) faydalı olabileceği bildirilmiştir?",
+      "back": "Mikofenolat mofetil (MMF).",
+      "tag": "Nefroloji / IgA Nefropatisi / Transplantasyon Sonrası Nüks"
+    },
+    {
+      "id": "igan-045",
+      "front": "IgA nefropatisinde mezanjiyal hücrelerden salınan hangi sitokin podosit hasarına yol açar?",
+      "back": "Pro-inflamatuar ve pro-fibrotik mediyatörler (örn. TGF-beta).",
+      "tag": "Nefroloji / IgA Nefropatisi / Patogenez"
+    },
+    {
+      "id": "igan-046",
+      "front": "IgA nefropatisinde 'synpharyngitic hematuria' (senfaranjitik hematüri) terimi neyi ifade eder?",
+      "back": "Üst solunum yolu enfeksiyonu sırasında veya hemen sonrasında (1-2 gün içinde) gelişen makroskobik hematüri.",
+      "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
+    },
+    {
+      "id": "igan-047",
+      "front": "IgA nefropatili bir hastada idrar sedimentinde görülen karakteristik bulgu nedir?",
+      "back": "Dismorfik eritrositler ve eritrosit silendirleri.",
+      "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
+    },
+    {
+      "id": "igan-048",
+      "front": "Sistemik lupus eritematozus (SLE) ile IgA nefropatisi ayırıcı tanısında biyopsideki en önemli ipucu nedir?",
+      "back": "Lupus nefritinde C1q birikimi görülürken, IgAN'de nadirdir.",
+      "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
+    },
+    {
+      "id": "igan-049",
+      "front": "Oxford sınıflandırmasında hücresel veya fibrohücresel 'kresent' varlığı hangi harf ile temsil edilir?",
+      "back": "C (C1: %1-25 glomerül, C2: >%25 glomerül).",
+      "tag": "Nefroloji / IgA Nefropatisi / Oxford MEST-C"
+    },
+    {
+      "id": "igan-050",
+      "front": "IgA nefropatisinde galaktoz eksikliği IgA1 molekülünün hangi bölgesinde görülür?",
+      "back": "Menteşe (Hinge) bölgesi.",
+      "tag": "Nefroloji / IgA Nefropatisi / Patogenez"
+    },
+    {
+      "id": "igan-051",
+      "front": "Erişkin IgA vasküliti hastalarında hangi kompleman bileşeninin düşük olması böbrek tutulumu için risk faktörüdür?",
+      "back": "Düşük C3 düzeyleri.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-052",
+      "front": "IgA vasküliti olan çocuklarda renal laboratuvar incelemeleri neyi içermelidir?",
+      "back": "Tam idrar tetkiki, idrar protein/kreatinin oranı ve serum kreatinin.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-053",
+      "front": "Pediatrik IgA vasküliti tedavisinde şiddetli olmayan karın ağrısı için önerilen ilk basamak ilaçlar nelerdir?",
+      "back": "Basit analjezikler (örn. asetaminofen).",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-054",
+      "front": "IgA nefropatisinde böbrek yetmezliğine gidiş hızını belirleyen en güçlü klinik marker nedir?",
+      "back": "Zamana yayılmış ortalama proteinüri seviyesi.",
+      "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
+    },
+    {
+      "id": "igan-055",
+      "front": "IgA nefropatisi tedavisinde 'selektif endotelin reseptör antagonisti' olan yeni ajan hangisidir?",
+      "back": "Atrasentan.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-056",
+      "front": "İlaçla tetiklenen IgA vasküliti vakalarında rapor edilen biyolojik ajanlardan biri hangisidir?",
+      "back": "Infliximab (veya Adalimumab).",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-057",
+      "front": "HSP'de gastrointestinal tutulumun ciddi komplikasyonları nelerdir?",
+      "back": "Gastrointestinal kanama, obstrüksiyon veya perforasyon.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-058",
+      "front": "IgA nefropatisi en çok hangi etnik grupta görülür?",
+      "back": "Doğu Asyalılar.",
+      "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
+    },
+    {
+      "id": "igan-059",
+      "front": "IgA nefropatisi hangi etnik grupta en nadir görülür?",
+      "back": "Afrika kökenli bireyler.",
+      "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
+    },
+    {
+      "id": "igan-060",
+      "front": "Hedeflenmiş salınımlı budesonid (TARPEYO/Nefecon) tedavisinin primer etki mekanizması nedir?",
+      "back": "Mukozal immün sistemdeki patojenik IgA üretimini kaynağında azaltmak.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-061",
+      "front": "IgA nefropatisi tanısında altın standart yöntem hangisidir?",
+      "back": "Böbrek biyopsisi.",
+      "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
+    },
+    {
+      "id": "igan-062",
+      "front": "IgA vaskülitinin skrotal tutulumunda klinik olarak ne ile karışabilir?",
+      "back": "Testis torsiyonu.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-063",
+      "front": "Oxford sınıflandırmasında 'S1' (segmental skleroz) alt sınıflamasında neyin varlığı immünsupresif tedaviye yanıtı etkileyebilir?",
+      "back": "Podositopatik özellikler.",
+      "tag": "Nefroloji / IgA Nefropatisi / Oxford MEST-C"
+    },
+    {
+      "id": "igan-064",
+      "front": "Hangi kompleman inhibitörü terminal yolu C3 üzerinden bloke eder?",
+      "back": "Pegcetacoplan (APL-2).",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-065",
+      "front": "IgA nefropatisi biyopsilerinde elektron mikroskobunda karakteristik elektron-dens birikimler nerede görülür?",
+      "back": "Mezanjiyal alanlar.",
+      "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
+    },
+    {
+      "id": "igan-066",
+      "front": "IgA nefropatili hastalarda hipertansiyon için ilk tercih edilen ilaç grupları hangileridir?",
+      "back": "ACE inhibitörleri ve ARB'ler.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-067",
+      "front": "Primer IgA nefropatisi olanlarda hangi 'menteşe bölgesi' glikoformu aşırı miktarda dolaşır?",
+      "back": "O-bağlı galaktozillenmesi azalmış IgA1.",
+      "tag": "Nefroloji / IgA Nefropatisi / Patogenez"
+    },
+    {
+      "id": "igan-068",
+      "front": "Erişkinlerde IgA vasküliti tanısı için biyopside lökositoklastik vaskülit ile birlikte hangi immünglobulin birikimi görülmelidir?",
+      "back": "IgA (damar duvarlarında).",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-069",
+      "front": "Hangi viral enfeksiyonun IgA vasküliti ve nefropatisi ile ilişkili olabileceği belirtilmiştir?",
+      "back": "SARS-CoV-2 (COVID-19).",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-070",
+      "front": "IgA nefropatisinde proteinüriyi azaltmak için kullanılan SGLT2 inhibitörlerinin renal hemodinamik etkisi nedir?",
+      "back": "Glomerüler hiperfiltrasyonu azaltmak.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-071",
+      "front": "Böbrek nakli sonrası IgA nüksü için 'canlı akraba donör' kullanımı ile ilgili tartışmalı bulgu nedir?",
+      "back": "Nüks riskinin kadavra donörlere göre daha yüksek olabileceği düşüncesi.",
+      "tag": "Nefroloji / IgA Nefropatisi / Transplantasyon Sonrası Nüks"
+    },
+    {
+      "id": "igan-072",
+      "front": "IgA nefropatisi olanlarda düşük C3 düzeyleri genellikle hangi kompleman yolunun aktivasyonunu gösterir?",
+      "back": "Alternatif yol.",
+      "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
+    },
+    {
+      "id": "igan-073",
+      "front": "IgA nefropatisinin 'minimal değişiklik hastalığı' (MCD) ile birlikte görüldüğü nadir durumlarda biyopsi bulgusu nasıldır?",
+      "back": "Işık mikroskobisi normaldir ancak immünfloresanda mezanjiyal IgA birikimi vardır.",
+      "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
+    },
+    {
+      "id": "igan-074",
+      "front": "IgA nefropatisinde 'remisyon' (proteinüri düşüşü) sağlandığında eGFR azalma hızı nasıl değişir?",
+      "back": "Böbrek fonksiyon kaybı hızı belirgin şekilde yavaşlar.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-075",
+      "front": "IgA vaskülitinin akciğer tutulumunda görülen en nadir ve ciddi komplikasyon nedir?",
+      "back": "Diffüz alveolar hemoraji.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-076",
+      "front": "IgA nefropatisi tedavisinde 'Bortezomib' hangi mekanizma ile proteinüriyi azaltmayı hedefler?",
+      "back": "Plazma hücrelerini hedef alarak IgA üretimini azaltmak.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-077",
+      "front": "IgA vaskülitinde purpuranın en sık görüldüğü vücut bölgeleri nerelerdir?",
+      "back": "Alt ekstremiteler ve kalçalar.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    },
+    {
+      "id": "igan-078",
+      "front": "Hangi biyobelirteç APRIL molekülüne bağlanan bir IgG2 monoklonal antikorudur?",
+      "back": "Sibeprenlimab.",
+      "tag": "Nefroloji / IgA Nefropatisi / Tedavi ve Prognoz"
+    },
+    {
+      "id": "igan-079",
+      "front": "IgA nefropatisinde IgA antikorlarının alt tipi hangisidir?",
+      "back": "Poliklonal IgA1.",
+      "tag": "Nefroloji / IgA Nefropatisi / Patogenez"
+    },
+    {
+      "id": "igan-080",
+      "front": "HSP (IgA vasküliti) olan çocuklarda böbrek hasarı gelişme riski yaklaşık yüzde kaçtır?",
+      "back": "%20 ile %54 arası.",
+      "tag": "Nefroloji / IgA Nefropatisi / IgA Vasküliti (HSP)"
+    }
+  ]
+}
