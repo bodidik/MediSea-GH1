@@ -247,7 +247,7 @@
     {
       "id": "igan-041",
       "front": "Böbrek nakli sonrası primer hastalığı IgA nefropatisi olanlarda rekürrens (nüks) oranı yaklaşık yüzde kaçtır?",
-      "back": "%30 ile %50 arası.",
+      "back": "%50 ile %60 arası.",
       "tag": "Nefroloji / IgA Nefropatisi / Transplantasyon Sonrası Nüks"
     },
     {
@@ -295,7 +295,7 @@
     {
       "id": "igan-049",
       "front": "Oxford sınıflandırmasında hücresel veya fibrohücresel 'kresent' varlığı hangi harf ile temsil edilir?",
-      "back": "C (C1: %1-25 glomerül, C2: >%25 glomerül).",
+      "back": "C (C1: %1-24 glomerül, C2: >%25 glomerül).",
       "tag": "Nefroloji / IgA Nefropatisi / Oxford MEST-C"
     },
     {
