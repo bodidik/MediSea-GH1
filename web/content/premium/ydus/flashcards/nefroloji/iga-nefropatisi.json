@@ -103,13 +103,13 @@
     {
       "id": "igan-017",
       "front": "Oxford sınıflandırmasındaki 'M' parametresi neyi ifade eder?",
-      "back": "Mesanjiyal hiperhülarite.",
+      "back": "Mesanjiyal hipersellülarite.",
       "tag": "Nefroloji / IgA Nefropatisi / Oxford MEST-C"
     },
     {
       "id": "igan-018",
       "front": "Oxford sınıflandırmasındaki 'E' parametresi neyi ifade eder?",
-      "back": "Endokapiller hiperhülarite.",
+      "back": "Endokapiller hipersellülarite.",
       "tag": "Nefroloji / IgA Nefropatisi / Oxford MEST-C"
     },
     {
@@ -120,19 +120,19 @@
     },
     {
       "id": "igan-020",
-      "front": "IgA nefropatisi patogenezindeki 'Vuru 1' (Hit 1) aşaması nedir?",
+      "front": "IgA nefropatisi patogenezindeki 'Vuruş 1' (Hit 1) aşaması nedir?",
       "back": "Galaktoz-eksik IgA1 (Gd-IgA1) üretiminin artışı.",
       "tag": "Nefroloji / IgA Nefropatisi / Patogenez"
     },
     {
       "id": "igan-021",
-      "front": "IgA nefropatisi patogenezindeki 'Vuru 2' (Hit 2) aşaması nedir?",
+      "front": "IgA nefropatisi patogenezindeki 'Vuruş 2' (Hit 2) aşaması nedir?",
       "back": "Gd-IgA1 moleküllerine karşı otoantikor (IgG veya IgA) gelişimi.",
       "tag": "Nefroloji / IgA Nefropatisi / Patogenez"
     },
     {
       "id": "igan-022",
-      "front": "IgA nefropatisi patogenezindeki 'Vuru 4' (Hit 4) aşamasında böbrek hasarına yol açan olay nedir?",
+      "front": "IgA nefropatisi patogenezindeki 'Vuruş 4' (Hit 4) aşamasında böbrek hasarına yol açan olay nedir?",
       "back": "İmmün komplekslerin mezanjiyumda birikmesi ve kompleman aktivasyonu.",
       "tag": "Nefroloji / IgA Nefropatisi / Patogenez"
     },
@@ -271,19 +271,19 @@
     {
       "id": "igan-045",
       "front": "IgA nefropatisinde mezanjiyal hücrelerden salınan hangi sitokin podosit hasarına yol açar?",
-      "back": "Pro-inflamatuar ve pro-fibrotik mediyatörler (örn. TGF-beta).",
+      "back": "Pro-inflamatuar ve pro-fibrotik mediyatörler (örn. TGF-β).",
       "tag": "Nefroloji / IgA Nefropatisi / Patogenez"
     },
     {
       "id": "igan-046",
-      "front": "IgA nefropatisinde 'synpharyngitic hematuria' (senfaranjitik hematüri) terimi neyi ifade eder?",
+      "front": "IgA nefropatisinde 'synpharyngitic hematuria' (sinfarenjitik hematüri) terimi neyi ifade eder?",
       "back": "Üst solunum yolu enfeksiyonu sırasında veya hemen sonrasında (1-2 gün içinde) gelişen makroskobik hematüri.",
       "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
     },
     {
       "id": "igan-047",
       "front": "IgA nefropatili bir hastada idrar sedimentinde görülen karakteristik bulgu nedir?",
-      "back": "Dismorfik eritrositler ve eritrosit silendirleri.",
+      "back": "Dismorfik eritrositler ve eritrosit silindirleri.",
       "tag": "Nefroloji / IgA Nefropatisi / Klinik ve Tanı"
     },
     {
