@@ -365,7 +365,7 @@
       "baslik": "Yalancı Düşüklük ve Yüksekliklerin Ekartasyonu",
       "satirlar": [
         {
-          "metin": "**Hook Effect (Kancalama Etkisi):** Dev makroprolaktinomalarda serum prolaktin düzeyleri aşırı yüksek olduğunda (>1000 ng/mL), kullanılan immünometrik sandviç assay kitlerindeki antikorlar doygunluğa ulaşır ve tüpte çökelerek prolaktin düzeyini **falsifiye şekilde düşük veya ılımlı yüksek** gösterebilir. Dev kitle varlığında serum PRL düzeyi beklenmedik şekilde düşük çıkarsa **serum 1:100 oranında seyreltilerek (serial dilution)** test tekrarlanmalıdır."
+          "metin": "**Hook Effect (Kancalama Etkisi):** Dev makroprolaktinomalarda serum prolaktin düzeyleri aşırı yüksek olduğunda (>1000 ng/mL), kullanılan immünometrik sandviç assay kitlerindeki antikorlar doygunluğa ulaşır ve tüpte çökelerek prolaktin düzeyini **yalancı şekilde düşük veya ılımlı yüksek** gösterebilir. Dev kitle varlığında serum PRL düzeyi beklenmedik şekilde düşük çıkarsa **serum 1:100 oranında seyreltilerek (serial dilution)** test tekrarlanmalıdır."
         },
         {
           "metin": "**Makroprolaktinemi:** Yüksek prolaktinin IgG antikorlarına bağlanarak (büyük moleküllü kompleksi) dolaşımda birikmesidir. Biyolojik olarak inaktiftir. Polietilen glikol (**PEG presipitasyonu**) yöntemi ile serbest prolaktin oranı (Geri kazanım / Recovery < %40) hesaplanarak asemptomatik hastalar gereksiz tedaviden korunmalıdır."
@@ -392,7 +392,7 @@
     },
     {
       "tip": "metin",
-      "baslik": "Ön Hipofiz Yetersizliği (Hipopitüitarizm) ve İleri Tanısal Kutof Değerleri",
+      "baslik": "Ön Hipofiz Yetersizliği (Hipopitüitarizm) ve İleri Tanısal Kesim Değerleri",
       "satirlar": [
         {
           "metin": "Yavaş ilerleyen hipofiz harabiyetinde tropik hormonların yetersizlik gelişme sırası:"
@@ -473,7 +473,7 @@
           "metin": "• 250 µg IV/IM sentetik ACTH (1-24) enjeksiyonu sonrası 30 ve 60. dakikalarda kortizol ölçülür. **Pik kortizol <18 µg/dL** ise yetersizlik kanıtlanır."
         },
         {
-          "metin": "• **Önemli Kısıtlama:** Akut hipofiz hasarlarında (örneğin cerrahi veya travmayı takip eden ilk 4-6 hafta içinde) adrenal korteks henüz atrofiye uğramadığı için Cosyntropin testi **falsifiye şekilde normal** sonuç verebilir."
+          "metin": "• **Önemli Kısıtlama:** Akut hipofiz hasarlarında (örneğin cerrahi veya travmayı takip eden ilk 4-6 hafta içinde) adrenal korteks henüz atrofiye uğramadığı için Cosyntropin testi **yalancı şekilde normal** sonuç verebilir."
         }
       ]
     },
