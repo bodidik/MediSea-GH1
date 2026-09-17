@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "ABCD² Skoru — TİA sonrası 2 günlük inme riski tahmini",
-  description: "ABCD² Skoru: TİA sonrası 2 günlük inme riski tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/abcd2" },
+  title: "WFNS SAK Derecesi — Subaraknoid kanamada GKS + motor",
+  description: "WFNS SAK Derecesi: Subaraknoid kanamada GKS + motor defisitle derece I–V. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/wfns" },
   openGraph: {
     type: "website",
-    title: "ABCD² Skoru — TİA sonrası 2 günlük inme riski tahmini",
-    description: "ABCD² Skoru: TİA sonrası 2 günlük inme riski tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/abcd2",
+    title: "WFNS SAK Derecesi — Subaraknoid kanamada GKS + motor",
+    description: "WFNS SAK Derecesi: Subaraknoid kanamada GKS + motor defisitle derece I–V. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/wfns",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "ABCD² Skoru",
-          aciklama: "ABCD² Skoru: TİA sonrası 2 günlük inme riski tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/abcd2",
+          ad: "WFNS SAK Derecesi",
+          aciklama: "WFNS SAK Derecesi: Subaraknoid kanamada GKS + motor defisitle derece I–V. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/wfns",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "ABCD² Skoru", yol: "/tools/abcd2" },
+          { ad: "WFNS SAK Derecesi", yol: "/tools/wfns" },
         ])}
       />
       {children}
@@ -42,6 +42,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Nöroloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/abc2-hematom" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ABC/2 Hematom Hacmi
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/abcd2" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ABCD² Skoru
+              </Link>
+            </li>
             <li>
               <Link href="/tools/aspects" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 ASPECTS
@@ -60,16 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/four" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 FOUR Skoru
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/hachinski" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Hachinski İskemik Skoru
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/hunt-hess" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Hunt-Hess
               </Link>
             </li>
           </ul>

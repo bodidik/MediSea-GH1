@@ -222,6 +222,16 @@ const TOOLS_DATABASE = [
       { slug: "four", name: "FOUR Skoru", desc: "Koma değerlendirmesi — entübe hastada GKS'nin yerini alır, locked-in ve apneyi yakalar" },
       { slug: "fisher", name: "Fisher Skalası", desc: "SAK'ta vazospazm riski — modifiye ve orijinal Fisher aynı BT bulgusundan" },
       { slug: "abcd2", name: "ABCD² Skoru", desc: "TİA sonrası 2 günlük inme riski tahmini" },
+      { slug: "rosier", name: "ROSIER", desc: "Acil serviste inmeyi taklitçilerinden ayırma — −2 ile +5, > 0 inme olası" },
+      { slug: "aspects", name: "ASPECTS", desc: "Kontrastsız BT'de MCA alanı erken iskemi skoru — 10 bölge, trombektomi değerlendirmesi" },
+      { slug: "abc2-hematom", name: "ABC/2 Hematom Hacmi", desc: "İntraserebral kanamada BT'den hacim — ağırlıklı kesit sayımıyla" },
+      { slug: "ottawa-sak", name: "Ottawa SAK Kuralı", desc: "Akut baş ağrısında subaraknoid kanama araştırma kararı — 6 ölçüt" },
+      { slug: "hunt-hess", name: "Hunt-Hess", desc: "Anevrizmal subaraknoid kanama klinik derecesi — 1–5" },
+      { slug: "wfns", name: "WFNS SAK Derecesi", desc: "Subaraknoid kanamada GKS + motor defisitle derece I–V" },
+      { slug: "stess", name: "STESS", desc: "Status epileptikus şiddet skoru — hastanede ölüm öngörüsü (≥ 3 olumsuz)" },
+      { slug: "egris", name: "EGRIS", desc: "Guillain-Barré'de ilk haftada mekanik ventilasyon riski — 0–7" },
+      { slug: "mrc-kas-gucu", name: "MRC Toplam Kas Gücü", desc: "12 kas grubu, 0–60 — YBÜ-kazanılmış güçsüzlük (< 48)" },
+      { slug: "hachinski", name: "Hachinski İskemik Skoru", desc: "Vasküler ve dejeneratif demans ayrımı — 13 madde, 0–18" },
     ]
   },
   {

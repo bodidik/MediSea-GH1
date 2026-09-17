@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "FOUR Skoru — Koma değerlendirmesi",
-  description: "FOUR Skoru: Koma değerlendirmesi — entübe hastada GKS'nin yerini alır, locked-in ve apneyi yakalar. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/four" },
+  title: "Hachinski İskemik Skoru — Vasküler ve dejeneratif",
+  description: "Hachinski İskemik Skoru: Vasküler ve dejeneratif demans ayrımı — 13 madde, 0–18. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/hachinski" },
   openGraph: {
     type: "website",
-    title: "FOUR Skoru — Koma değerlendirmesi",
-    description: "FOUR Skoru: Koma değerlendirmesi — entübe hastada GKS'nin yerini alır, locked-in ve apneyi yakalar. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/four",
+    title: "Hachinski İskemik Skoru — Vasküler ve dejeneratif",
+    description: "Hachinski İskemik Skoru: Vasküler ve dejeneratif demans ayrımı — 13 madde, 0–18. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/hachinski",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "FOUR Skoru",
-          aciklama: "FOUR Skoru: Koma değerlendirmesi — entübe hastada GKS'nin yerini alır, locked-in ve apneyi yakalar. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/four",
+          ad: "Hachinski İskemik Skoru",
+          aciklama: "Hachinski İskemik Skoru: Vasküler ve dejeneratif demans ayrımı — 13 madde, 0–18. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/hachinski",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "FOUR Skoru", yol: "/tools/four" },
+          { ad: "Hachinski İskemik Skoru", yol: "/tools/hachinski" },
         ])}
       />
       {children}
@@ -42,11 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Nöroloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/hachinski" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Hachinski İskemik Skoru
-              </Link>
-            </li>
             <li>
               <Link href="/tools/hunt-hess" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Hunt-Hess
@@ -70,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/ottawa-sak" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Ottawa SAK Kuralı
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/rosier" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ROSIER
               </Link>
             </li>
           </ul>

@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "FOUR Skoru — Koma değerlendirmesi",
-  description: "FOUR Skoru: Koma değerlendirmesi — entübe hastada GKS'nin yerini alır, locked-in ve apneyi yakalar. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/four" },
+  title: "EGRIS — Guillain-Barré'de ilk haftada mekanik",
+  description: "EGRIS: Guillain-Barré'de ilk haftada mekanik ventilasyon riski — 0–7. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/egris" },
   openGraph: {
     type: "website",
-    title: "FOUR Skoru — Koma değerlendirmesi",
-    description: "FOUR Skoru: Koma değerlendirmesi — entübe hastada GKS'nin yerini alır, locked-in ve apneyi yakalar. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/four",
+    title: "EGRIS — Guillain-Barré'de ilk haftada mekanik",
+    description: "EGRIS: Guillain-Barré'de ilk haftada mekanik ventilasyon riski — 0–7. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/egris",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "FOUR Skoru",
-          aciklama: "FOUR Skoru: Koma değerlendirmesi — entübe hastada GKS'nin yerini alır, locked-in ve apneyi yakalar. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/four",
+          ad: "EGRIS",
+          aciklama: "EGRIS: Guillain-Barré'de ilk haftada mekanik ventilasyon riski — 0–7. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/egris",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "FOUR Skoru", yol: "/tools/four" },
+          { ad: "EGRIS", yol: "/tools/egris" },
         ])}
       />
       {children}
@@ -42,6 +42,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Nöroloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/fisher" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Fisher Skalası
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/four" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                FOUR Skoru
+              </Link>
+            </li>
             <li>
               <Link href="/tools/hachinski" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Hachinski İskemik Skoru
@@ -60,16 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/mrc-kas-gucu" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 MRC Toplam Kas Gücü
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/nihss" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                NIHSS
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/ottawa-sak" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Ottawa SAK Kuralı
               </Link>
             </li>
           </ul>

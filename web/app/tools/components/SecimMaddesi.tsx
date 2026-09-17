@@ -20,6 +20,7 @@ export default function SecimMaddesi({
   secenekler,
   secili,
   onSec,
+  rozetGizle = false,
 }: {
   id: string;
   baslik: string;
@@ -27,6 +28,8 @@ export default function SecimMaddesi({
   secenekler: ReadonlyArray<Secenek>;
   secili: number | null;
   onSec: (sira: number | null) => void;
+  /** Şıklar puan değil sınıflama taşıyorsa (ör. glukoz eşiği) puan rozeti basılmaz. */
+  rozetGizle?: boolean;
 }) {
   const baslikId = `madde-${id.replace(/[^a-zA-Z0-9]+/g, "-")}`;
   return (
@@ -47,12 +50,12 @@ export default function SecimMaddesi({
               className={`flex items-center gap-2 min-h-[44px] px-3 py-2 rounded-xl border-2 text-left text-[11px] font-bold transition-all
                 ${aktif ? "border-blue-900 bg-blue-900 text-white" : "border-slate-200 bg-slate-50 text-slate-700 hover:border-blue-200"}`}
             >
-              <span
+              {!rozetGizle && <span
                 className={`min-w-[1.5rem] h-6 px-1 rounded-lg flex items-center justify-center text-[10px] font-black shrink-0
                   ${aktif ? "bg-amber-400 text-blue-900" : "bg-white border border-slate-200 text-slate-600"}`}
               >
                 {String(s.pts).replace(".", ",")}
-              </span>
+              </span>}
               {s.label}
             </button>
           );

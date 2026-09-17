@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Modifiye Rankin (mRS) — İnme sonrası işlevsel sonuç",
-  description: "Modifiye Rankin (mRS): İnme sonrası işlevsel sonuç — 0–6 derece, yapılandırılmış görüşme çapraz kontrolü. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/rankin" },
+  title: "MRC Toplam Kas Gücü — 12 kas grubu, 0–60",
+  description: "MRC Toplam Kas Gücü: 12 kas grubu, 0–60 — YBÜ-kazanılmış güçsüzlük (< 48). Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/mrc-kas-gucu" },
   openGraph: {
     type: "website",
-    title: "Modifiye Rankin (mRS) — İnme sonrası işlevsel sonuç",
-    description: "Modifiye Rankin (mRS): İnme sonrası işlevsel sonuç — 0–6 derece, yapılandırılmış görüşme çapraz kontrolü. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/rankin",
+    title: "MRC Toplam Kas Gücü — 12 kas grubu, 0–60",
+    description: "MRC Toplam Kas Gücü: 12 kas grubu, 0–60 — YBÜ-kazanılmış güçsüzlük (< 48). Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/mrc-kas-gucu",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Modifiye Rankin (mRS)",
-          aciklama: "Modifiye Rankin (mRS): İnme sonrası işlevsel sonuç — 0–6 derece, yapılandırılmış görüşme çapraz kontrolü. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/rankin",
+          ad: "MRC Toplam Kas Gücü",
+          aciklama: "MRC Toplam Kas Gücü: 12 kas grubu, 0–60 — YBÜ-kazanılmış güçsüzlük (< 48). Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/mrc-kas-gucu",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Modifiye Rankin (mRS)", yol: "/tools/rankin" },
+          { ad: "MRC Toplam Kas Gücü", yol: "/tools/mrc-kas-gucu" },
         ])}
       />
       {children}
@@ -42,11 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Nöroloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/mrc-kas-gucu" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                MRC Toplam Kas Gücü
-              </Link>
-            </li>
             <li>
               <Link href="/tools/nihss" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 NIHSS
@@ -70,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/wfns" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 WFNS SAK Derecesi
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/abc2-hematom" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ABC/2 Hematom Hacmi
               </Link>
             </li>
           </ul>

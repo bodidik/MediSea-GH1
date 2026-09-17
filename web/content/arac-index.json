@@ -10,6 +10,11 @@
   "desc": "Heparine bağlı trombositopeni klinik olasılık skoru (4 kriter, 0–8 puan)"
  },
  {
+  "slug": "abc2-hematom",
+  "name": "ABC/2 Hematom Hacmi",
+  "desc": "İntraserebral kanamada BT'den hacim — ağırlıklı kesit sayımıyla"
+ },
+ {
   "slug": "abcd2",
   "name": "ABCD² Skoru",
   "desc": "TİA sonrası 2 günlük inme riski tahmini"
@@ -73,6 +78,11 @@
   "slug": "asdas",
   "name": "ASDAS-CRP/ESR",
   "desc": "Ankilozan Spondilit Hastalık Aktivite Skoru"
+ },
+ {
+  "slug": "aspects",
+  "name": "ASPECTS",
+  "desc": "Kontrastsız BT'de MCA alanı erken iskemi skoru — 10 bölge, trombektomi değerlendirmesi"
  },
  {
   "slug": "bap65",
@@ -255,6 +265,11 @@
   "desc": "Race-free böbrek fonksiyon analizi"
  },
  {
+  "slug": "egris",
+  "name": "EGRIS",
+  "desc": "Guillain-Barré'de ilk haftada mekanik ventilasyon riski — 0–7"
+ },
+ {
   "slug": "endocarditis",
   "name": "Duke Kriterleri",
   "desc": "Enfektif Endokardit tanı deşifresi"
@@ -370,6 +385,11 @@
   "desc": "Çok boyutlu kırılganlık taraması — 15 madde (≥ 4)"
  },
  {
+  "slug": "hachinski",
+  "name": "Hachinski İskemik Skoru",
+  "desc": "Vasküler ve dejeneratif demans ayrımı — 13 madde, 0–18"
+ },
+ {
   "slug": "haq-di",
   "name": "HAQ-DI",
   "desc": "Sağlık Değerlendirme Anketi — Engellilik İndeksi"
@@ -408,6 +428,11 @@
   "slug": "hscore",
   "name": "HScore",
   "desc": "HLH olasılık skoru — 9 parametre, hemofagositik lenfohistiyositoz"
+ },
+ {
+  "slug": "hunt-hess",
+  "name": "Hunt-Hess",
+  "desc": "Anevrizmal subaraknoid kanama klinik derecesi — 1–5"
  },
  {
   "slug": "infusion",
@@ -515,6 +540,11 @@
   "desc": "Hastanede düşme riski değerlendirme skalası — 6 madde"
  },
  {
+  "slug": "mrc-kas-gucu",
+  "name": "MRC Toplam Kas Gücü",
+  "desc": "12 kas grubu, 0–60 — YBÜ-kazanılmış güçsüzlük (< 48)"
+ },
+ {
   "slug": "mrss",
   "name": "mRSS",
   "desc": "Modifiye Rodnan Deri Skoru — sistemik skleroz deri fibrozisi (17 bölge)"
@@ -568,6 +598,11 @@
   "slug": "osmolal-gap",
   "name": "Serum Osmolal Gap",
   "desc": "Ölçülen − hesaplanan osmolalite · toksik alkol taraması · tahmini madde düzeyleri"
+ },
+ {
+  "slug": "ottawa-sak",
+  "name": "Ottawa SAK Kuralı",
+  "desc": "Akut baş ağrısında subaraknoid kanama araştırma kararı — 6 ölçüt"
  },
  {
   "slug": "padua",
@@ -650,6 +685,11 @@
   "desc": "Üst GİS kanaması — yeniden kanama ve mortalite"
  },
  {
+  "slug": "rosier",
+  "name": "ROSIER",
+  "desc": "Acil serviste inmeyi taklitçilerinden ayırma — −2 ile +5, > 0 inme olası"
+ },
+ {
   "slug": "rts",
   "name": "RTS",
   "desc": "Revize Travma Skoru — GCS + SKB + Solunum hızı, tahmini sağkalım"
@@ -720,6 +760,11 @@
   "desc": "Kortikosteroid dönüşüm tablosu"
  },
  {
+  "slug": "stess",
+  "name": "STESS",
+  "desc": "Status epileptikus şiddet skoru — hastanede ölüm öngörüsü (≥ 3 olumsuz)"
+ },
+ {
   "slug": "tft",
   "name": "Tiroid Fonksiyon Testi (TFT)",
   "desc": "TSH / FT4 / FT3 patern tanıma — hipo, hiper, subklinik, santral"
@@ -783,5 +828,10 @@
   "slug": "wells-pe",
   "name": "Wells Skoru (PE)",
   "desc": "Pulmoner emboli klinik olasılığı"
+ },
+ {
+  "slug": "wfns",
+  "name": "WFNS SAK Derecesi",
+  "desc": "Subaraknoid kanamada GKS + motor defisitle derece I–V"
  }
 ]

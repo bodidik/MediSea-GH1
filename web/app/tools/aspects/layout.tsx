@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Fisher Skalası — SAK'ta vazospazm riski",
-  description: "Fisher Skalası: SAK'ta vazospazm riski — modifiye ve orijinal Fisher aynı BT bulgusundan. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/fisher" },
+  title: "ASPECTS — Kontrastsız BT'de MCA alanı erken iskemi skoru",
+  description: "ASPECTS: Kontrastsız BT'de MCA alanı erken iskemi skoru — 10 bölge, trombektomi değerlendirmesi. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/aspects" },
   openGraph: {
     type: "website",
-    title: "Fisher Skalası — SAK'ta vazospazm riski",
-    description: "Fisher Skalası: SAK'ta vazospazm riski — modifiye ve orijinal Fisher aynı BT bulgusundan. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/fisher",
+    title: "ASPECTS — Kontrastsız BT'de MCA alanı erken iskemi skoru",
+    description: "ASPECTS: Kontrastsız BT'de MCA alanı erken iskemi skoru — 10 bölge, trombektomi değerlendirmesi. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/aspects",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Fisher Skalası",
-          aciklama: "Fisher Skalası: SAK'ta vazospazm riski — modifiye ve orijinal Fisher aynı BT bulgusundan. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/fisher",
+          ad: "ASPECTS",
+          aciklama: "ASPECTS: Kontrastsız BT'de MCA alanı erken iskemi skoru — 10 bölge, trombektomi değerlendirmesi. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/aspects",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Fisher Skalası", yol: "/tools/fisher" },
+          { ad: "ASPECTS", yol: "/tools/aspects" },
         ])}
       />
       {children}
@@ -42,6 +42,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Nöroloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/egris" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                EGRIS
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/fisher" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Fisher Skalası
+              </Link>
+            </li>
             <li>
               <Link href="/tools/four" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 FOUR Skoru
@@ -60,16 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/rankin" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Modifiye Rankin (mRS)
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/mrc-kas-gucu" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                MRC Toplam Kas Gücü
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/nihss" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                NIHSS
               </Link>
             </li>
           </ul>
