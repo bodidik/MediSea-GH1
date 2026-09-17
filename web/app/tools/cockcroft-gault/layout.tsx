@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Asit-Baz Analizi (ABG) — Mikst bozukluk ayrımı · pH",
-  description: "Asit-Baz Analizi (ABG): Mikst bozukluk ayrımı · pH normalken bile gizli asidoz · kompansasyon · anyon açığı… Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/abg" },
+  title: "Cockcroft-Gault Kreatinin Klirensi — İlaç doz ayarı",
+  description: "Cockcroft-Gault Kreatinin Klirensi: İlaç doz ayarı için CrCl — gerçek, ideal ve ayarlanmış ağırlıkla. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/cockcroft-gault" },
   openGraph: {
     type: "website",
-    title: "Asit-Baz Analizi (ABG) — Mikst bozukluk ayrımı · pH",
-    description: "Asit-Baz Analizi (ABG): Mikst bozukluk ayrımı · pH normalken bile gizli asidoz · kompansasyon · anyon açığı… Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/abg",
+    title: "Cockcroft-Gault Kreatinin Klirensi — İlaç doz ayarı",
+    description: "Cockcroft-Gault Kreatinin Klirensi: İlaç doz ayarı için CrCl — gerçek, ideal ve ayarlanmış ağırlıkla. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/cockcroft-gault",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Asit-Baz Analizi (ABG)",
-          aciklama: "Asit-Baz Analizi (ABG): Mikst bozukluk ayrımı · pH normalken bile gizli asidoz · kompansasyon · anyon açığı… Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/abg",
+          ad: "Cockcroft-Gault Kreatinin Klirensi",
+          aciklama: "Cockcroft-Gault Kreatinin Klirensi: İlaç doz ayarı için CrCl — gerçek, ideal ve ayarlanmış ağırlıkla. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/cockcroft-gault",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Asit-Baz Analizi (ABG)", yol: "/tools/abg" },
+          { ad: "Cockcroft-Gault Kreatinin Klirensi", yol: "/tools/cockcroft-gault" },
         ])}
       />
       {children}
@@ -42,11 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Nefroloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/cockcroft-gault" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Cockcroft-Gault Kreatinin Klirensi
-              </Link>
-            </li>
             <li>
               <Link href="/tools/corrected-calcium" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Düzeltilmiş Kalsiyum
@@ -70,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/osmolal-gap" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Serum Osmolal Gap
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/sodium" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Sodyum Yönetimi
               </Link>
             </li>
           </ul>

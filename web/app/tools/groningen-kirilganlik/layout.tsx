@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "GDS-15 — Geriatrik Depresyon Ölçeği kısa form",
-  description: "GDS-15: Geriatrik Depresyon Ölçeği kısa form — 15 madde tarama aracı. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/gds-15" },
+  title: "Groningen Kırılganlık Göstergesi (GFI) — Çok boyutlu",
+  description: "Groningen Kırılganlık Göstergesi (GFI): Çok boyutlu kırılganlık taraması — 15 madde (≥ 4). Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/groningen-kirilganlik" },
   openGraph: {
     type: "website",
-    title: "GDS-15 — Geriatrik Depresyon Ölçeği kısa form",
-    description: "GDS-15: Geriatrik Depresyon Ölçeği kısa form — 15 madde tarama aracı. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/gds-15",
+    title: "Groningen Kırılganlık Göstergesi (GFI) — Çok boyutlu",
+    description: "Groningen Kırılganlık Göstergesi (GFI): Çok boyutlu kırılganlık taraması — 15 madde (≥ 4). Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/groningen-kirilganlik",
   },
 };
 
@@ -22,54 +22,26 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "GDS-15",
-          aciklama: "GDS-15: Geriatrik Depresyon Ölçeği kısa form — 15 madde tarama aracı. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/gds-15",
+          ad: "Groningen Kırılganlık Göstergesi (GFI)",
+          aciklama: "Groningen Kırılganlık Göstergesi (GFI): Çok boyutlu kırılganlık taraması — 15 madde (≥ 4). Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/groningen-kirilganlik",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "GDS-15", yol: "/tools/gds-15" },
+          { ad: "Groningen Kırılganlık Göstergesi (GFI)", yol: "/tools/groningen-kirilganlik" },
         ])}
       />
       {children}
-      <nav aria-label="Bu aracın geçtiği konular" className="bg-slate-50 px-4 pb-6 font-sans">
-        <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
-            Bu aracın geçtiği konular
-          </h2>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/topics/hematoloji/aml" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Akut Miyeloid Lösemi (AML)
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/hematoloji/aml-geriatrik-degerlendirme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/hematoloji/hct-ci-geriatrik-degerlendirme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                HCT-CI ve Kapsamlı Geriatrik Değerlendirme: Allo-HCT'de Hasta Seçimi
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+
       <nav aria-label="Aynı kategoriden araçlar" className="bg-slate-50 px-4 pb-10 font-sans">
         <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
             Geriatri kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/groningen-kirilganlik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Groningen Kırılganlık Göstergesi (GFI)
-              </Link>
-            </li>
             <li>
               <Link href="/tools/isar" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 ISAR
@@ -93,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/mini-cog" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Mini-Cog
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/morse-fall" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Morse Düşme Riski
               </Link>
             </li>
           </ul>

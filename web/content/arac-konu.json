@@ -429,9 +429,19 @@
         "eslesen": "Charlson Komorbidite İndeksi"
       },
       {
+        "slug": "edmonton-kirilganlik",
+        "name": "Edmonton Kırılganlık Ölçeği (EFS)",
+        "eslesen": "Edmonton Kırılganlık Ölçeği"
+      },
+      {
         "slug": "karnofsky",
         "name": "Karnofsky (KPS)",
         "eslesen": "Karnofsky"
+      },
+      {
+        "slug": "mini-cog",
+        "name": "Mini-Cog",
+        "eslesen": "Mini-Cog"
       },
       {
         "slug": "gds-15",
@@ -1268,6 +1278,20 @@
         "eslesen": "FLIPI"
       }
     ],
+    "edmonton-kirilganlik": [
+      {
+        "yol": "hematoloji/hct-ci-geriatrik-degerlendirme",
+        "baslik": "HCT-CI ve Kapsamlı Geriatrik Değerlendirme: Allo-HCT'de Hasta Seçimi",
+        "eslesen": "Edmonton Kırılganlık Ölçeği"
+      }
+    ],
+    "mini-cog": [
+      {
+        "yol": "hematoloji/hct-ci-geriatrik-degerlendirme",
+        "baslik": "HCT-CI ve Kapsamlı Geriatrik Değerlendirme: Allo-HCT'de Hasta Seçimi",
+        "eslesen": "Mini-Cog"
+      }
+    ],
     "4t-hit": [
       {
         "yol": "hematoloji/trombositopenide-antikoagulasyon",
@@ -1366,9 +1390,9 @@
   },
   "olcum": {
     "konu": 489,
-    "arac": 136,
+    "arac": 153,
     "araciOlanKonu": 102,
-    "konusuOlanArac": 33,
-    "bag": 123
+    "konusuOlanArac": 35,
+    "bag": 125
   }
 }

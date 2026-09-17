@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "FRAIL Skalası — Kırılganlık (frailty) tarama",
-  description: "FRAIL Skalası: Kırılganlık (frailty) tarama — Sağlıklı / Pre-kırılgan / Kırılgan. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/frail" },
+  title: "G8 Tarama Aracı — Onkogeriatri taraması",
+  description: "G8 Tarama Aracı: Onkogeriatri taraması — kapsamlı geriatrik değerlendirme gereksinimi (≤ 14). Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/g8" },
   openGraph: {
     type: "website",
-    title: "FRAIL Skalası — Kırılganlık (frailty) tarama",
-    description: "FRAIL Skalası: Kırılganlık (frailty) tarama — Sağlıklı / Pre-kırılgan / Kırılgan. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/frail",
+    title: "G8 Tarama Aracı — Onkogeriatri taraması",
+    description: "G8 Tarama Aracı: Onkogeriatri taraması — kapsamlı geriatrik değerlendirme gereksinimi (≤ 14). Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/g8",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "FRAIL Skalası",
-          aciklama: "FRAIL Skalası: Kırılganlık (frailty) tarama — Sağlıklı / Pre-kırılgan / Kırılgan. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/frail",
+          ad: "G8 Tarama Aracı",
+          aciklama: "G8 Tarama Aracı: Onkogeriatri taraması — kapsamlı geriatrik değerlendirme gereksinimi (≤ 14). Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/g8",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "FRAIL Skalası", yol: "/tools/frail" },
+          { ad: "G8 Tarama Aracı", yol: "/tools/g8" },
         ])}
       />
       {children}
@@ -42,16 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Geriatri kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/fried-fenotip" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Fried Kırılganlık Fenotipi
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/g8" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                G8 Tarama Aracı
-              </Link>
-            </li>
             <li>
               <Link href="/tools/gds-15" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 GDS-15
@@ -70,6 +60,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/klinik-kirilganlik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Klinik Kırılganlık Ölçeği (CFS)
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/lawton-iadl" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Lawton IADL
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/lee-indeksi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Lee Prognostik İndeksi
               </Link>
             </li>
           </ul>

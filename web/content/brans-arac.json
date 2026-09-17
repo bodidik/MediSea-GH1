@@ -38,6 +38,11 @@
     "icon": "🧪"
    },
    {
+    "slug": "cockcroft-gault",
+    "name": "Cockcroft-Gault Kreatinin Klirensi",
+    "icon": "🧪"
+   },
+   {
     "slug": "kdigo-aki",
     "name": "KDIGO AKI Evrelemesi",
     "icon": "💧"

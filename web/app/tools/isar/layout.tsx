@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Lawton IADL — Enstrümental günlük yaşam aktiviteleri",
-  description: "Lawton IADL: Enstrümental günlük yaşam aktiviteleri — 8 madde (alışveriş, ilaç, finans). Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/lawton-iadl" },
+  title: "ISAR — Acil serviste risk altındaki yaşlıyı tanımlama",
+  description: "ISAR: Acil serviste risk altındaki yaşlıyı tanımlama — 6 soru (≥ 2 yüksek risk). Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/isar" },
   openGraph: {
     type: "website",
-    title: "Lawton IADL — Enstrümental günlük yaşam aktiviteleri",
-    description: "Lawton IADL: Enstrümental günlük yaşam aktiviteleri — 8 madde (alışveriş, ilaç, finans). Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/lawton-iadl",
+    title: "ISAR — Acil serviste risk altındaki yaşlıyı tanımlama",
+    description: "ISAR: Acil serviste risk altındaki yaşlıyı tanımlama — 6 soru (≥ 2 yüksek risk). Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/isar",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Lawton IADL",
-          aciklama: "Lawton IADL: Enstrümental günlük yaşam aktiviteleri — 8 madde (alışveriş, ilaç, finans). Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/lawton-iadl",
+          ad: "ISAR",
+          aciklama: "ISAR: Acil serviste risk altındaki yaşlıyı tanımlama — 6 soru (≥ 2 yüksek risk). Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/isar",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Lawton IADL", yol: "/tools/lawton-iadl" },
+          { ad: "ISAR", yol: "/tools/isar" },
         ])}
       />
       {children}
@@ -42,6 +42,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Geriatri kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/klinik-kirilganlik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Klinik Kırılganlık Ölçeği (CFS)
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/lawton-iadl" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Lawton IADL
+              </Link>
+            </li>
             <li>
               <Link href="/tools/lee-indeksi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Lee Prognostik İndeksi
@@ -60,16 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/prisma-7" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 PRISMA-7
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/sarc-f" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                SARC-F
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/sof-kirilganlik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                SOF Kırılganlık İndeksi
               </Link>
             </li>
           </ul>

@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Lawton IADL — Enstrümental günlük yaşam aktiviteleri",
-  description: "Lawton IADL: Enstrümental günlük yaşam aktiviteleri — 8 madde (alışveriş, ilaç, finans). Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/lawton-iadl" },
+  title: "Lee Prognostik İndeksi — Toplumda yaşayan yaşlıda",
+  description: "Lee Prognostik İndeksi: Toplumda yaşayan yaşlıda 4 yıllık mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/lee-indeksi" },
   openGraph: {
     type: "website",
-    title: "Lawton IADL — Enstrümental günlük yaşam aktiviteleri",
-    description: "Lawton IADL: Enstrümental günlük yaşam aktiviteleri — 8 madde (alışveriş, ilaç, finans). Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/lawton-iadl",
+    title: "Lee Prognostik İndeksi — Toplumda yaşayan yaşlıda",
+    description: "Lee Prognostik İndeksi: Toplumda yaşayan yaşlıda 4 yıllık mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/lee-indeksi",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Lawton IADL",
-          aciklama: "Lawton IADL: Enstrümental günlük yaşam aktiviteleri — 8 madde (alışveriş, ilaç, finans). Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/lawton-iadl",
+          ad: "Lee Prognostik İndeksi",
+          aciklama: "Lee Prognostik İndeksi: Toplumda yaşayan yaşlıda 4 yıllık mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/lee-indeksi",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Lawton IADL", yol: "/tools/lawton-iadl" },
+          { ad: "Lee Prognostik İndeksi", yol: "/tools/lee-indeksi" },
         ])}
       />
       {children}
@@ -42,11 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Geriatri kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/lee-indeksi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Lee Prognostik İndeksi
-              </Link>
-            </li>
             <li>
               <Link href="/tools/mini-cog" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Mini-Cog
@@ -70,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/sof-kirilganlik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 SOF Kırılganlık İndeksi
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/tilburg-kirilganlik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Tilburg Kırılganlık Göstergesi (TFI)
               </Link>
             </li>
           </ul>

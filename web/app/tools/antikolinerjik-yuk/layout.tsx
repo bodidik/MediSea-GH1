@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Barthel ADL İndeksi — Günlük yaşam aktiviteleri",
-  description: "Barthel ADL İndeksi: Günlük yaşam aktiviteleri — fonksiyonel bağımsızlık değerlendirmesi (0–100). Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/barthel" },
+  title: "Antikolinerjik Yük (ACB) — İlaç listesinden",
+  description: "Antikolinerjik Yük (ACB): İlaç listesinden antikolinerjik bilişsel yük skoru — ≥ 3 klinik anlamlı. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/antikolinerjik-yuk" },
   openGraph: {
     type: "website",
-    title: "Barthel ADL İndeksi — Günlük yaşam aktiviteleri",
-    description: "Barthel ADL İndeksi: Günlük yaşam aktiviteleri — fonksiyonel bağımsızlık değerlendirmesi (0–100). Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/barthel",
+    title: "Antikolinerjik Yük (ACB) — İlaç listesinden",
+    description: "Antikolinerjik Yük (ACB): İlaç listesinden antikolinerjik bilişsel yük skoru — ≥ 3 klinik anlamlı. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/antikolinerjik-yuk",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Barthel ADL İndeksi",
-          aciklama: "Barthel ADL İndeksi: Günlük yaşam aktiviteleri — fonksiyonel bağımsızlık değerlendirmesi (0–100). Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/barthel",
+          ad: "Antikolinerjik Yük (ACB)",
+          aciklama: "Antikolinerjik Yük (ACB): İlaç listesinden antikolinerjik bilişsel yük skoru — ≥ 3 klinik anlamlı. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/antikolinerjik-yuk",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Barthel ADL İndeksi", yol: "/tools/barthel" },
+          { ad: "Antikolinerjik Yük (ACB)", yol: "/tools/antikolinerjik-yuk" },
         ])}
       />
       {children}
@@ -42,6 +42,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Geriatri kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/barthel" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Barthel ADL İndeksi
+              </Link>
+            </li>
             <li>
               <Link href="/tools/edmonton-kirilganlik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Edmonton Kırılganlık Ölçeği (EFS)
@@ -65,11 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/gds-15" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 GDS-15
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/groningen-kirilganlik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Groningen Kırılganlık Göstergesi (GFI)
               </Link>
             </li>
           </ul>
