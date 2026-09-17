@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Glasgow-Blatchford Skoru — Üst GİS kanaması",
-  description: "Glasgow-Blatchford Skoru: Üst GİS kanaması — endoskopi öncesi risk. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/glasgow-blatchford" },
+  title: "Lille Skoru — Alkolik hepatitte 7. gün kortikosteroid",
+  description: "Lille Skoru: Alkolik hepatitte 7. gün kortikosteroid yanıtı — ≥ 0,45 yanıtsız. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/lille" },
   openGraph: {
     type: "website",
-    title: "Glasgow-Blatchford Skoru — Üst GİS kanaması",
-    description: "Glasgow-Blatchford Skoru: Üst GİS kanaması — endoskopi öncesi risk. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/glasgow-blatchford",
+    title: "Lille Skoru — Alkolik hepatitte 7. gün kortikosteroid",
+    description: "Lille Skoru: Alkolik hepatitte 7. gün kortikosteroid yanıtı — ≥ 0,45 yanıtsız. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/lille",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Glasgow-Blatchford Skoru",
-          aciklama: "Glasgow-Blatchford Skoru: Üst GİS kanaması — endoskopi öncesi risk. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/glasgow-blatchford",
+          ad: "Lille Skoru",
+          aciklama: "Lille Skoru: Alkolik hepatitte 7. gün kortikosteroid yanıtı — ≥ 0,45 yanıtsız. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/lille",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Glasgow-Blatchford Skoru", yol: "/tools/glasgow-blatchford" },
+          { ad: "Lille Skoru", yol: "/tools/lille" },
         ])}
       />
       {children}
@@ -42,16 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Hepatoloji & Gastroenteroloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/harvey-bradshaw" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Harvey-Bradshaw İndeksi
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/lille" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Lille Skoru
-              </Link>
-            </li>
             <li>
               <Link href="/tools/maddrey" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Maddrey Diskriminan Fonksiyonu
@@ -70,6 +60,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/ranson" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Ranson Kriterleri
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/rockall" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Rockall Skoru
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/mayo-uc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Ülseratif Kolit Mayo Skoru
               </Link>
             </li>
           </ul>

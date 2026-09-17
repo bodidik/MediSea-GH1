@@ -254,6 +254,16 @@ const TOOLS_DATABASE = [
       { slug: "glasgow-blatchford", name: "Glasgow-Blatchford Skoru", desc: "Üst GİS kanaması — endoskopi öncesi risk" },
       { slug: "rockall", name: "Rockall Skoru", desc: "Üst GİS kanaması — yeniden kanama ve mortalite" },
       { slug: "ranson", name: "Ranson Kriterleri", desc: "Akut pankreatit şiddet değerlendirmesi" },
+      { slug: "bisap", name: "BISAP", desc: "Akut pankreatitte ilk 24 saatte yatak başı şiddet indeksi — 0–5, mortalite" },
+      { slug: "aims65", name: "AIMS65", desc: "Üst GİS kanamasında hastane mortalitesi — 0–5" },
+      { slug: "fib-4", name: "FIB-4 İndeksi", desc: "Karaciğer fibrozu taraması — yaşa göre eşik (MASLD, viral hepatit)" },
+      { slug: "apri", name: "APRI", desc: "AST/trombosit oranı — anlamlı fibroz ve siroz için ayrı eşikler" },
+      { slug: "nafld-fibrozis", name: "NAFLD Fibrozis Skoru", desc: "Yağlı karaciğerde ileri fibroz olasılığı — yaş, BKİ, glukoz, AST/ALT, trombosit, albümin" },
+      { slug: "maddrey", name: "Maddrey Diskriminan Fonksiyonu", desc: "Alkolik hepatitte şiddet — ≥ 32 kortikosteroid değerlendirmesi" },
+      { slug: "lille", name: "Lille Skoru", desc: "Alkolik hepatitte 7. gün kortikosteroid yanıtı — ≥ 0,45 yanıtsız" },
+      { slug: "asit-analizi", name: "Asit Sıvısı Analizi", desc: "SAAG, asit proteini ve PMN ile asit nedeni ve SBP" },
+      { slug: "harvey-bradshaw", name: "Harvey-Bradshaw İndeksi", desc: "Crohn hastalığı klinik aktivitesi — remisyon/hafif/orta/ağır" },
+      { slug: "mayo-uc", name: "Ülseratif Kolit Mayo Skoru", desc: "Tam (endoskopili) ya da parsiyel Mayo — hastalık aktivitesi" },
     ]
   },
   {

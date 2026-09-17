@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Glasgow-Blatchford Skoru — Üst GİS kanaması",
-  description: "Glasgow-Blatchford Skoru: Üst GİS kanaması — endoskopi öncesi risk. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/glasgow-blatchford" },
+  title: "FIB-4 İndeksi — Karaciğer fibrozu taraması",
+  description: "FIB-4 İndeksi: Karaciğer fibrozu taraması — yaşa göre eşik (MASLD, viral hepatit). Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/fib-4" },
   openGraph: {
     type: "website",
-    title: "Glasgow-Blatchford Skoru — Üst GİS kanaması",
-    description: "Glasgow-Blatchford Skoru: Üst GİS kanaması — endoskopi öncesi risk. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/glasgow-blatchford",
+    title: "FIB-4 İndeksi — Karaciğer fibrozu taraması",
+    description: "FIB-4 İndeksi: Karaciğer fibrozu taraması — yaşa göre eşik (MASLD, viral hepatit). Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/fib-4",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Glasgow-Blatchford Skoru",
-          aciklama: "Glasgow-Blatchford Skoru: Üst GİS kanaması — endoskopi öncesi risk. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/glasgow-blatchford",
+          ad: "FIB-4 İndeksi",
+          aciklama: "FIB-4 İndeksi: Karaciğer fibrozu taraması — yaşa göre eşik (MASLD, viral hepatit). Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/fib-4",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Glasgow-Blatchford Skoru", yol: "/tools/glasgow-blatchford" },
+          { ad: "FIB-4 İndeksi", yol: "/tools/fib-4" },
         ])}
       />
       {children}
@@ -42,6 +42,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Hepatoloji & Gastroenteroloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/glasgow-blatchford" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Glasgow-Blatchford Skoru
+              </Link>
+            </li>
             <li>
               <Link href="/tools/harvey-bradshaw" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Harvey-Bradshaw İndeksi
@@ -65,11 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/nafld-fibrozis" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 NAFLD Fibrozis Skoru
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/ranson" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Ranson Kriterleri
               </Link>
             </li>
           </ul>

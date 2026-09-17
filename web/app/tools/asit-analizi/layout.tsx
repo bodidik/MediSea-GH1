@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Child-Pugh Sınıflaması — Siroz şiddet ve prognozu",
-  description: "Child-Pugh Sınıflaması: Siroz şiddet ve prognozu. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/child-pugh" },
+  title: "Asit Sıvısı Analizi — SAAG, asit proteini ve PMN ile",
+  description: "Asit Sıvısı Analizi: SAAG, asit proteini ve PMN ile asit nedeni ve SBP. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/asit-analizi" },
   openGraph: {
     type: "website",
-    title: "Child-Pugh Sınıflaması — Siroz şiddet ve prognozu",
-    description: "Child-Pugh Sınıflaması: Siroz şiddet ve prognozu. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/child-pugh",
+    title: "Asit Sıvısı Analizi — SAAG, asit proteini ve PMN ile",
+    description: "Asit Sıvısı Analizi: SAAG, asit proteini ve PMN ile asit nedeni ve SBP. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/asit-analizi",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Child-Pugh Sınıflaması",
-          aciklama: "Child-Pugh Sınıflaması: Siroz şiddet ve prognozu. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/child-pugh",
+          ad: "Asit Sıvısı Analizi",
+          aciklama: "Asit Sıvısı Analizi: SAAG, asit proteini ve PMN ile asit nedeni ve SBP. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/asit-analizi",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Child-Pugh Sınıflaması", yol: "/tools/child-pugh" },
+          { ad: "Asit Sıvısı Analizi", yol: "/tools/asit-analizi" },
         ])}
       />
       {children}
@@ -42,23 +42,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/enfeksiyon/antibiyotikler-ana-sayfa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Antimikrobiyal Tedavi ve Direnç Mekanizmaları
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/kardiyoloji/aprocitentan-kbh-ve-yasli" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Aprocitentan: İleri Yaş ve KBH (İleri Okuma)
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/onkoloji/karaciger-kanserleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Karaciğer Kanserleri
+              <Link href="/topics/gastroenteroloji/ascit-sivisi-analizi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Asit Sıvısı Analizi: Parasentez, SAAG ve Ayırıcı Tanı Parametreleri
               </Link>
             </li>
           </ul>
@@ -70,6 +55,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Hepatoloji & Gastroenteroloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/bisap" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                BISAP
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/child-pugh" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Child-Pugh Sınıflaması
+              </Link>
+            </li>
             <li>
               <Link href="/tools/fib-4" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 FIB-4 İndeksi
@@ -88,16 +83,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/lille" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Lille Skoru
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/maddrey" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Maddrey Diskriminan Fonksiyonu
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/meld-na" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                MELD-Na Skoru
               </Link>
             </li>
           </ul>

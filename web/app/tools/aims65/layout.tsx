@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Rockall Skoru — Üst GİS kanaması",
-  description: "Rockall Skoru: Üst GİS kanaması — yeniden kanama ve mortalite. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/rockall" },
+  title: "AIMS65 — Üst GİS kanamasında hastane mortalitesi",
+  description: "AIMS65: Üst GİS kanamasında hastane mortalitesi — 0–5. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/aims65" },
   openGraph: {
     type: "website",
-    title: "Rockall Skoru — Üst GİS kanaması",
-    description: "Rockall Skoru: Üst GİS kanaması — yeniden kanama ve mortalite. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/rockall",
+    title: "AIMS65 — Üst GİS kanamasında hastane mortalitesi",
+    description: "AIMS65: Üst GİS kanamasında hastane mortalitesi — 0–5. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/aims65",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Rockall Skoru",
-          aciklama: "Rockall Skoru: Üst GİS kanaması — yeniden kanama ve mortalite. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/rockall",
+          ad: "AIMS65",
+          aciklama: "AIMS65: Üst GİS kanamasında hastane mortalitesi — 0–5. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/aims65",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Rockall Skoru", yol: "/tools/rockall" },
+          { ad: "AIMS65", yol: "/tools/aims65" },
         ])}
       />
       {children}
@@ -42,16 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Hepatoloji & Gastroenteroloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/mayo-uc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Ülseratif Kolit Mayo Skoru
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/aims65" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                AIMS65
-              </Link>
-            </li>
             <li>
               <Link href="/tools/apri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 APRI
@@ -70,6 +60,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/child-pugh" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Child-Pugh Sınıflaması
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/fib-4" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                FIB-4 İndeksi
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/glasgow-blatchford" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Glasgow-Blatchford Skoru
               </Link>
             </li>
           </ul>

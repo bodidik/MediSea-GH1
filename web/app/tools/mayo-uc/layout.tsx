@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Rockall Skoru — Üst GİS kanaması",
-  description: "Rockall Skoru: Üst GİS kanaması — yeniden kanama ve mortalite. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/rockall" },
+  title: "Ülseratif Kolit Mayo Skoru — Tam (endoskopili) ya da",
+  description: "Ülseratif Kolit Mayo Skoru: Tam (endoskopili) ya da parsiyel Mayo — hastalık aktivitesi. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/mayo-uc" },
   openGraph: {
     type: "website",
-    title: "Rockall Skoru — Üst GİS kanaması",
-    description: "Rockall Skoru: Üst GİS kanaması — yeniden kanama ve mortalite. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/rockall",
+    title: "Ülseratif Kolit Mayo Skoru — Tam (endoskopili) ya da",
+    description: "Ülseratif Kolit Mayo Skoru: Tam (endoskopili) ya da parsiyel Mayo — hastalık aktivitesi. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/mayo-uc",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Rockall Skoru",
-          aciklama: "Rockall Skoru: Üst GİS kanaması — yeniden kanama ve mortalite. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/rockall",
+          ad: "Ülseratif Kolit Mayo Skoru",
+          aciklama: "Ülseratif Kolit Mayo Skoru: Tam (endoskopili) ya da parsiyel Mayo — hastalık aktivitesi. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/mayo-uc",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Rockall Skoru", yol: "/tools/rockall" },
+          { ad: "Ülseratif Kolit Mayo Skoru", yol: "/tools/mayo-uc" },
         ])}
       />
       {children}
@@ -42,11 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Hepatoloji & Gastroenteroloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/mayo-uc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Ülseratif Kolit Mayo Skoru
-              </Link>
-            </li>
             <li>
               <Link href="/tools/aims65" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 AIMS65
@@ -70,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/child-pugh" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Child-Pugh Sınıflaması
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/fib-4" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                FIB-4 İndeksi
               </Link>
             </li>
           </ul>

@@ -35,6 +35,11 @@
   "desc": "250 μg / 1 μg protokol — adrenal yetmezlik kortizol yanıtı"
  },
  {
+  "slug": "aims65",
+  "name": "AIMS65",
+  "desc": "Üst GİS kanamasında hastane mortalitesi — 0–5"
+ },
+ {
   "slug": "anaphylaxis",
   "name": "Anafilaksi Kriterleri",
   "desc": "NIAID/FAAN 3 kriter — epinefrin endikasyonu"
@@ -65,6 +70,11 @@
   "desc": "Akut fizyoloji ve kronik sağlık değerlendirmesi — YBÜ mortalite tahmini"
  },
  {
+  "slug": "apri",
+  "name": "APRI",
+  "desc": "AST/trombosit oranı — anlamlı fibroz ve siroz için ayrı eşikler"
+ },
+ {
   "slug": "aria-rinit",
   "name": "ARIA Rinit Sınıflaması",
   "desc": "Allerjik rinit — intermitan/persistan × hafif/orta-ağır"
@@ -78,6 +88,11 @@
   "slug": "asdas",
   "name": "ASDAS-CRP/ESR",
   "desc": "Ankilozan Spondilit Hastalık Aktivite Skoru"
+ },
+ {
+  "slug": "asit-analizi",
+  "name": "Asit Sıvısı Analizi",
+  "desc": "SAAG, asit proteini ve PMN ile asit nedeni ve SBP"
  },
  {
   "slug": "aspects",
@@ -113,6 +128,11 @@
   "slug": "bikarbonat-infuzyon",
   "name": "Bikarbonat Açığı",
   "desc": "NaHCO₃ açık hesabı — ampul karşılığı ve izotonik infüzyon hacmi, dağılım katsayısı seçilebilir"
+ },
+ {
+  "slug": "bisap",
+  "name": "BISAP",
+  "desc": "Akut pankreatitte ilk 24 saatte yatak başı şiddet indeksi — 0–5, mortalite"
  },
  {
   "slug": "bmi",
@@ -310,6 +330,11 @@
   "desc": "Sjögren Hastalık Aktivite İndeksi — 12 ekstraglandüler domain"
  },
  {
+  "slug": "fib-4",
+  "name": "FIB-4 İndeksi",
+  "desc": "Karaciğer fibrozu taraması — yaşa göre eşik (MASLD, viral hepatit)"
+ },
+ {
   "slug": "fibromiyalji",
   "name": "Fibromiyalji 2016",
   "desc": "ACR 2016 — WPI + Semptom Şiddet Skalası tanı kriterleri"
@@ -423,6 +448,11 @@
   "slug": "haq-di",
   "name": "HAQ-DI",
   "desc": "Sağlık Değerlendirme Anketi — Engellilik İndeksi"
+ },
+ {
+  "slug": "harvey-bradshaw",
+  "name": "Harvey-Bradshaw İndeksi",
+  "desc": "Crohn hastalığı klinik aktivitesi — remisyon/hafif/orta/ağır"
  },
  {
   "slug": "has-bled",
@@ -550,9 +580,19 @@
   "desc": "Toplumda yaşayan yaşlıda 4 yıllık mortalite tahmini"
  },
  {
+  "slug": "lille",
+  "name": "Lille Skoru",
+  "desc": "Alkolik hepatitte 7. gün kortikosteroid yanıtı — ≥ 0,45 yanıtsız"
+ },
+ {
   "slug": "lipid-emulsiyon",
   "name": "Lipid Emülsiyon (LAST)",
   "desc": "Bolus, idame ve kümülatif tavan — idame DAKİKA başına yazılı, pompaya girecek saatlik sayı ayrıca basılıyor"
+ },
+ {
+  "slug": "maddrey",
+  "name": "Maddrey Diskriminan Fonksiyonu",
+  "desc": "Alkolik hepatitte şiddet — ≥ 32 kortikosteroid değerlendirmesi"
  },
  {
   "slug": "magnezyum-infuzyon",
@@ -563,6 +603,11 @@
   "slug": "mascc",
   "name": "MASCC Risk İndeksi",
   "desc": "Febril nötropenide komplikasyon riski"
+ },
+ {
+  "slug": "mayo-uc",
+  "name": "Ülseratif Kolit Mayo Skoru",
+  "desc": "Tam (endoskopili) ya da parsiyel Mayo — hastalık aktivitesi"
  },
  {
   "slug": "meld-na",
@@ -618,6 +663,11 @@
   "slug": "nac-infuzyon",
   "name": "NAC İnfüzyonu",
   "desc": "Parasetamol intoksikasyonunda IV N-asetilsistein — 3 torba ve SNAP rejimi, kiloya göre doz ve mL/saat"
+ },
+ {
+  "slug": "nafld-fibrozis",
+  "name": "NAFLD Fibrozis Skoru",
+  "desc": "Yağlı karaciğerde ileri fibroz olasılığı — yaş, BKİ, glukoz, AST/ALT, trombosit, albümin"
  },
  {
   "slug": "naloksan-infuzyon",

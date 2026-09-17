@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "MELD-Na Skoru — ESKH mortalite tahmini",
-  description: "MELD-Na Skoru: ESKH mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/meld-na" },
+  title: "Maddrey Diskriminan Fonksiyonu — Alkolik hepatitte",
+  description: "Maddrey Diskriminan Fonksiyonu: Alkolik hepatitte şiddet — ≥ 32 kortikosteroid değerlendirmesi. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/maddrey" },
   openGraph: {
     type: "website",
-    title: "MELD-Na Skoru — ESKH mortalite tahmini",
-    description: "MELD-Na Skoru: ESKH mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/meld-na",
+    title: "Maddrey Diskriminan Fonksiyonu — Alkolik hepatitte",
+    description: "Maddrey Diskriminan Fonksiyonu: Alkolik hepatitte şiddet — ≥ 32 kortikosteroid değerlendirmesi. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/maddrey",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "MELD-Na Skoru",
-          aciklama: "MELD-Na Skoru: ESKH mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/meld-na",
+          ad: "Maddrey Diskriminan Fonksiyonu",
+          aciklama: "Maddrey Diskriminan Fonksiyonu: Alkolik hepatitte şiddet — ≥ 32 kortikosteroid değerlendirmesi. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/maddrey",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "MELD-Na Skoru", yol: "/tools/meld-na" },
+          { ad: "Maddrey Diskriminan Fonksiyonu", yol: "/tools/maddrey" },
         ])}
       />
       {children}
@@ -42,6 +42,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Hepatoloji & Gastroenteroloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/meld-na" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                MELD-Na Skoru
+              </Link>
+            </li>
             <li>
               <Link href="/tools/nafld-fibrozis" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 NAFLD Fibrozis Skoru
@@ -65,11 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/aims65" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 AIMS65
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/apri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                APRI
               </Link>
             </li>
           </ul>

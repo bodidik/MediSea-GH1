@@ -236,6 +236,56 @@
     "slug": "ranson",
     "name": "Ranson Kriterleri",
     "icon": "🍺"
+   },
+   {
+    "slug": "bisap",
+    "name": "BISAP",
+    "icon": "🍺"
+   },
+   {
+    "slug": "aims65",
+    "name": "AIMS65",
+    "icon": "🍺"
+   },
+   {
+    "slug": "fib-4",
+    "name": "FIB-4 İndeksi",
+    "icon": "🍺"
+   },
+   {
+    "slug": "apri",
+    "name": "APRI",
+    "icon": "🍺"
+   },
+   {
+    "slug": "nafld-fibrozis",
+    "name": "NAFLD Fibrozis Skoru",
+    "icon": "🍺"
+   },
+   {
+    "slug": "maddrey",
+    "name": "Maddrey Diskriminan Fonksiyonu",
+    "icon": "🍺"
+   },
+   {
+    "slug": "lille",
+    "name": "Lille Skoru",
+    "icon": "🍺"
+   },
+   {
+    "slug": "asit-analizi",
+    "name": "Asit Sıvısı Analizi",
+    "icon": "🍺"
+   },
+   {
+    "slug": "harvey-bradshaw",
+    "name": "Harvey-Bradshaw İndeksi",
+    "icon": "🍺"
+   },
+   {
+    "slug": "mayo-uc",
+    "name": "Ülseratif Kolit Mayo Skoru",
+    "icon": "🍺"
    }
   ]
  },

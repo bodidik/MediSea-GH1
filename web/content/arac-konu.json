@@ -333,6 +333,13 @@
         "eslesen": "Child-Pugh"
       }
     ],
+    "gastroenteroloji/ascit-sivisi-analizi": [
+      {
+        "slug": "asit-analizi",
+        "name": "Asit Sıvısı Analizi",
+        "eslesen": "Asit Sıvısı Analizi"
+      }
+    ],
     "gastroenteroloji/ascit-yonetimi": [
       {
         "slug": "child-pugh",
@@ -352,6 +359,11 @@
         "slug": "ranson",
         "name": "Ranson Kriterleri",
         "eslesen": "Ranson Kriterleri"
+      },
+      {
+        "slug": "bisap",
+        "name": "BISAP",
+        "eslesen": "BISAP"
       }
     ],
     "gastroenteroloji/tips-hasta-secimi": [
@@ -1298,6 +1310,20 @@
         "eslesen": "qSOFA Skoru"
       }
     ],
+    "asit-analizi": [
+      {
+        "yol": "gastroenteroloji/ascit-sivisi-analizi",
+        "baslik": "Asit Sıvısı Analizi: Parasentez, SAAG ve Ayırıcı Tanı Parametreleri",
+        "eslesen": "Asit Sıvısı Analizi"
+      }
+    ],
+    "bisap": [
+      {
+        "yol": "gastroenteroloji/pankreas-hastaliklari",
+        "baslik": "Pankreas Hastalıkları: Akut, Kronik ve Neoplaziler",
+        "eslesen": "BISAP"
+      }
+    ],
     "ranson": [
       {
         "yol": "gastroenteroloji/pankreas-hastaliklari",
@@ -1623,9 +1649,9 @@
   },
   "olcum": {
     "konu": 496,
-    "arac": 187,
-    "araciOlanKonu": 111,
-    "konusuOlanArac": 45,
-    "bag": 144
+    "arac": 197,
+    "araciOlanKonu": 112,
+    "konusuOlanArac": 47,
+    "bag": 146
   }
 }

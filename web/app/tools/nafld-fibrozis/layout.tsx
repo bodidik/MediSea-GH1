@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Rockall Skoru — Üst GİS kanaması",
-  description: "Rockall Skoru: Üst GİS kanaması — yeniden kanama ve mortalite. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/rockall" },
+  title: "NAFLD Fibrozis Skoru — Yağlı karaciğerde ileri fibroz",
+  description: "NAFLD Fibrozis Skoru: Yağlı karaciğerde ileri fibroz olasılığı — yaş, BKİ, glukoz, AST/ALT, trombosit, albümin. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/nafld-fibrozis" },
   openGraph: {
     type: "website",
-    title: "Rockall Skoru — Üst GİS kanaması",
-    description: "Rockall Skoru: Üst GİS kanaması — yeniden kanama ve mortalite. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/rockall",
+    title: "NAFLD Fibrozis Skoru — Yağlı karaciğerde ileri fibroz",
+    description: "NAFLD Fibrozis Skoru: Yağlı karaciğerde ileri fibroz olasılığı — yaş, BKİ, glukoz, AST/ALT, trombosit, albümin. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/nafld-fibrozis",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Rockall Skoru",
-          aciklama: "Rockall Skoru: Üst GİS kanaması — yeniden kanama ve mortalite. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/rockall",
+          ad: "NAFLD Fibrozis Skoru",
+          aciklama: "NAFLD Fibrozis Skoru: Yağlı karaciğerde ileri fibroz olasılığı — yaş, BKİ, glukoz, AST/ALT, trombosit, albümin. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/nafld-fibrozis",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Rockall Skoru", yol: "/tools/rockall" },
+          { ad: "NAFLD Fibrozis Skoru", yol: "/tools/nafld-fibrozis" },
         ])}
       />
       {children}
@@ -42,6 +42,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Hepatoloji & Gastroenteroloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/ranson" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Ranson Kriterleri
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/rockall" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Rockall Skoru
+              </Link>
+            </li>
             <li>
               <Link href="/tools/mayo-uc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Ülseratif Kolit Mayo Skoru
@@ -60,16 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/asit-analizi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Asit Sıvısı Analizi
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/bisap" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                BISAP
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/child-pugh" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Child-Pugh Sınıflaması
               </Link>
             </li>
           </ul>
