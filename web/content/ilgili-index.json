@@ -19,16 +19,6 @@
    "brans": "endokrinoloji",
    "slug": "adrenal-korteks-hastaliklari",
    "baslik": "Adrenal Korteks Hastalıkları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "men-adrenal-kriz-yonetimi",
-   "baslik": "Akut Adrenal Kriz: Klinik Tablo ve Acil Müdahale Protokolü"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "santral-hipotiroidizm-lt4-adrenal-kriz",
-   "baslik": "Santral Hipotiroidizmde LT4 Öncesi Adrenal Güvenlik Kuralı (İleri Analiz)"
   }
  ],
  "endokrinoloji/adrenal-bez-hastaliklari": [
@@ -106,11 +96,6 @@
    "brans": "endokrinoloji",
    "slug": "adrenal-bez-hastaliklari",
    "baslik": "Adrenal (Sürrenal) Bez Hastalıkları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "santral-hipotiroidizm-lt4-adrenal-kriz",
-   "baslik": "Santral Hipotiroidizmde LT4 Öncesi Adrenal Güvenlik Kuralı (İleri Analiz)"
   }
  ],
  "endokrinoloji/adrenal-yetmezlik-tani": [
@@ -694,6 +679,11 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "sheehan-sendromu-postpartum-felaket",
+   "baslik": "Sheehan Sendromu"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "hipofiz-yetmezligi-hormon-replasman-tedavisi",
    "baslik": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri"
   },
@@ -701,11 +691,6 @@
    "brans": "endokrinoloji",
    "slug": "hipofiz-yetmezligi-klinik-tablo",
    "baslik": "Hipofiz Yetmezliği: Klinik Tablo ve Hormonal Kayıp Hiyerarşisi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipofiz-yetmezligi-tanisal-degerlendirme",
-   "baslik": "Hipofiz Yetmezliği: Tanısal Değerlendirme ve Biyokimyasal Testler"
   }
  ],
  "endokrinoloji/hipofiz-yetmezligi-hormon-replasman-tedavisi": [
@@ -736,8 +721,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "adrenal-kriz",
-   "baslik": "Akut Adrenal Kriz (Addison Krizi)"
+   "slug": "hipofiz-yetmezligi-ve-enfeksiyonlar",
+   "baslik": "Hipofiz Yetmezliği ve Enfeksiyonlar"
   }
  ],
  "endokrinoloji/hipofiz-yetmezligi-klinik-tablo": [
@@ -760,6 +745,11 @@
    "brans": "endokrinoloji",
    "slug": "hipofiz-yetmezligi-tanisal-degerlendirme",
    "baslik": "Hipofiz Yetmezliği: Tanısal Değerlendirme ve Biyokimyasal Testler"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-ve-enfeksiyonlar",
+   "baslik": "Hipofiz Yetmezliği ve Enfeksiyonlar"
   },
   {
    "brans": "endokrinoloji",
@@ -787,6 +777,11 @@
    "brans": "endokrinoloji",
    "slug": "hipofiz-yetmezligi-tanisal-degerlendirme",
    "baslik": "Hipofiz Yetmezliği: Tanısal Değerlendirme ve Biyokimyasal Testler"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-ve-enfeksiyonlar",
+   "baslik": "Hipofiz Yetmezliği ve Enfeksiyonlar"
   },
   {
    "brans": "endokrinoloji",
@@ -819,6 +814,38 @@
    "brans": "endokrinoloji",
    "slug": "hipofiz-yetmezligi-ozel-klinik-durumlar",
    "baslik": "Hipofiz Yetmezliği: Özel Klinik Durumlar"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-ve-enfeksiyonlar",
+   "baslik": "Hipofiz Yetmezliği ve Enfeksiyonlar"
+  }
+ ],
+ "endokrinoloji/hipofiz-yetmezligi-ve-enfeksiyonlar": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-etiyoloji-ve-patofizyoloji",
+   "baslik": "Hipofiz Yetmezliği: Etiyoloji ve Patofizyoloji"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-hormon-replasman-tedavisi",
+   "baslik": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-klinik-tablo",
+   "baslik": "Hipofiz Yetmezliği: Klinik Tablo ve Hormonal Kayıp Hiyerarşisi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-ozel-klinik-durumlar",
+   "baslik": "Hipofiz Yetmezliği: Özel Klinik Durumlar"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-tanisal-degerlendirme",
+   "baslik": "Hipofiz Yetmezliği: Tanısal Değerlendirme ve Biyokimyasal Testler"
   },
   {
    "brans": "endokrinoloji",
@@ -1027,11 +1054,6 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "addison",
-   "baslik": "Addison Hastalığı (Primer Adrenal Yetmezlik)"
-  },
-  {
-   "brans": "endokrinoloji",
    "slug": "adrenal-kriz",
    "baslik": "Akut Adrenal Kriz (Addison Krizi)"
   },
@@ -1039,6 +1061,11 @@
    "brans": "endokrinoloji",
    "slug": "hipofiz-yetmezligi-hormon-replasman-tedavisi",
    "baslik": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "miksodem-komasi-acil-yonetim",
+   "baslik": "Miksödem Koması: Klinik Tablo ve Acil Yönetim"
   }
  ],
  "endokrinoloji/men-bilateral-adrenalektomi": [
@@ -1303,13 +1330,13 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "hipofiz-hastaliklari-ana",
-   "baslik": "Hipofiz Hastalıkları"
+   "slug": "pbmah-genetik-temeller-ailevi-riskler",
+   "baslik": "PBMAH: Genetik Temeller ve Ailevi Riskler (İleri Okuma)"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
-   "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
+   "slug": "hipofiz-hastaliklari-ana",
+   "baslik": "Hipofiz Hastalıkları"
   }
  ],
  "endokrinoloji/men1-somatotropinoma-akromegali": [
@@ -1722,21 +1749,6 @@
    "brans": "endokrinoloji",
    "slug": "miksodem-komasi-acil-yonetim",
    "baslik": "Miksödem Koması: Klinik Tablo ve Acil Yönetim"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "addison",
-   "baslik": "Addison Hastalığı (Primer Adrenal Yetmezlik)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "adrenal-yetmezlik",
-   "baslik": "Adrenal Yetmezlik (Addison ve Santral)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "men-adrenal-kriz-yonetimi",
-   "baslik": "Akut Adrenal Kriz: Klinik Tablo ve Acil Müdahale Protokolü"
   }
  ],
  "endokrinoloji/sclc-paraneoplastik-siadh": [

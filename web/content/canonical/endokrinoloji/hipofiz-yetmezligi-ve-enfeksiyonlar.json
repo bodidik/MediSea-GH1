@@ -1,0 +1,44 @@
+{
+  "title": "Hipofiz Yetmezliği ve Enfeksiyonlar",
+  "meta": {
+    "updatedAt": "17 Eyl 2026",
+    "tags": [
+      "Endokrinoloji",
+      "Hipofiz",
+      "Hipopitüitarizm",
+      "Hipofiz Yetmezliği",
+      "Adrenal Kriz",
+      "Enfeksiyon",
+      "Hipofiz Apsesi",
+      "Sick-day Kuralları"
+    ],
+    "parent": "hipofiz-yetmezligi",
+    "order": 6
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Evet, hipofiz yetmezliği (hipopitüitarizm) ile enfeksiyonlara yatkınlık, enfeksiyon sıklığı, hastaneye yatış oranları ve enfeksiyon kaynaklı mortalite arasında doğrudan, çift yönlü ve klinik olarak hayati bir ilişki bulunmaktadır.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Bu ilişki; hormonal eksikliklerin immün sistem ve fizyolojik stres yanıtı üzerindeki etkileri, enfeksiyonların akut adrenal krizi tetikleme potansiyeli ve enfeksiyöz ajanların doğrudan hipofiz hasarı oluşturma kapasitesi olmak üzere üç ana başlık altında incelenir.</p>"
+    },
+    {
+      "heading": "Kortikotrop Aks (ACTH / Santral Adrenal Yetersizlik) ve Adrenal Krizler",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Kortikotrop aks eksikliğinde (santral adrenal yetmezlik) organizmanın enfeksiyöz süreçlere gösterdiği fizyolojik yanıt ciddi şekilde bozulur:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Artmış Hastaneye Yatış ve Mortalite:</strong> Santral adrenal yetmezliği olan hastaların enfeksiyonlar nedeniyle hastaneye yatış oranları sağlıklı kontrollere kıyasla 4 kattan fazla daha yüksektir. Dahası, sekonder adrenal yetmezlikte enfeksiyonlara bağlı ölüm riski genel popülasyona kıyasla 6 kat daha yüksektir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Akut Adrenal Krizin En Sık Tetikleyicisi (%63):</strong> Hipofiz yetmezliği olan hastalarda yılda her 100 hastanın yaklaşık 4'ünde akut adrenal kriz gelişmektedir. Bu hayatı tehdit eden krizlerin %63 gibi baskın bir çoğunluğu araya giren enfeksiyonlar (solunum yolu, gastrointestinal veya üriner sistem enfeksiyonları) tarafından tetiklenir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Fizyolojik Stres Yanıtının Kaybı:</strong> Normal şartlarda enfeksiyon anında salınan proinflamatuvar sitokinler (IL-1, IL-6, TNF-α) hipotalamo-hipofizer-adrenal (HPA) aksı uyararak kortizol salgısını artırır ve vücudu aşırı sitokin fırtınasından korur. ACTH/kortizol eksikliği durumunda ise enfeksiyöz strese karşı bu hemodinamik ve metabolik koruma sağlanamaz; sonuçta dirençli hipotansiyon, şok, hipoglisemi ve kollaps ortaya çıkar.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Hasta Gün Kuralları (Sick-day rules):</strong> Bu nedenle hipofiz yetmezliği olan hastalarda ateşli bir enfeksiyon geliştiğinde idame glukokortikoid (hidrokortizon/prednizolon) dozunun derhal 2 ila 3 katına çıkarılması hayati önem taşır.</li></ul></div>"
+    },
+    {
+      "heading": "Somatotrop Aks (GH / IGF-1 Eksikliği) ve İmmünomodülasyon",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Büyüme hormonu (GH) ve insülin benzeri büyüme faktörü-1 (IGF-1) yalnızca metabolik regülatörler değil, aynı zamanda etkili immünomodülatör hormonlardır:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>İmmün Hücre Fonksiyonları:</strong> GH ve IGF-1 reseptörleri timus, kemik iliği, B/T lenfositler, doğal öldürücü (NK) hücreler, makrofajlar ve nötrofillerde yaygın olarak eksprese edilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Hümoral ve Hücresel İmmünite:</strong> GH ve IGF-1; B lenfositlerinin antikor üretimini, T lenfosit fonksiyonlarını, NK hücre ve makrofaj aktivitesini ve nötrofillerin fagositoz kapasitesini destekler.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Hücresel Yanıtta Zayıflama:</strong> GH eksikliği durumunda bu hücresel ve hümoral savunma mekanizmalarında aksamalar meydana gelmektedir.</li></ul></div>"
+    },
+    {
+      "heading": "Diğer Akslar ve Lokal Savunma Bariyerleri",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Tirotrop (TSH) ve Gonadotrop (LH/FSH) Eksiklikleri:</strong> Santral hipotiroidizm ve seks steroidi eksikliği; cilt kuruluğuna, mukozal atrofiye (örneğin östrojen eksikliğine bağlı genitoüriner atrofi) ve epitel bütünlüğünün bozulmasına yol açarak lokal bakteriyel ve fungal enfeksiyonlar için zemin hazırlar.</li></ul></div>"
+    },
+    {
+      "heading": "Enfeksiyonların Hipofiz Yetersizliğine Yol Açması (Suyu Tersine Akıtan İlişki)",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">İlişki çift yönlüdür; enfeksiyonlar hipofiz yetmezliği olan hastalarda krize yol açabileceği gibi, sistemik veya lokal enfeksiyonların kendisi de hipofiz dokusunu ve sapını tahrip ederek primer/sekonder hipofiz yetmezliğine neden olabilir:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Bakteriyel Hipofiz Apseleri:</strong> Staphylococcus ve Streptococcus türlerinin hematojen yayılımı veya sinüzit/BOS sızıntısı sonrası komşuluk yoluyla yayılması hipofiz apselerine ve vakaların %80'inden fazlasında ön hipofiz yetmezliğine yol açar.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Diğer Patojenler:</strong> Tüberküloz (Mycobacterium tuberculosis), frengi (Treponema pallidum), fungal patojenler (Aspergillus, Candida, Pneumocystis jirovecii) ve viral enfeksiyonlar (HIV, CMV, viral menenjit/ensefalitler) hipofiz parankiminde enfarkt, nekroz veya granülomatöz iltihap oluşturarak kalıcı panhipopitüitarizme sebep olabilir.</li></ul></div>"
+    },
+    {
+      "heading": "Özet Akademik Değerlendirme",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Hipofiz yetmezliği olan hastalarda enfeksiyonlar; hem artan bir enfeksiyon sıklığı ve yatkınlığı (immünomodülasyon kaybı ve bariyer bozulması), hem de araya giren enfeksiyon anında hayatı tehdit eden akut adrenal kriz ve mortalite riskinde belirgin artış (4-6 kat yüksek yatış ve ölüm oranı) şeklinde klinik sahneye yansır.</p>"
+    }
+  ]
+}
