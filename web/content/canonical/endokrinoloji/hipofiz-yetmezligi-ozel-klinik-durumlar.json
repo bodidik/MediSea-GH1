@@ -1,0 +1,31 @@
+{
+  "title": "Hipofiz Yetmezliği: Özel Klinik Durumlar",
+  "meta": {
+    "updatedAt": "17 Eyl 2026",
+    "tags": [
+      "Endokrinoloji",
+      "Hipofiz",
+      "Hipopitüitarizm",
+      "Hipofiz Yetmezliği",
+      "Travmatik Beyin Hasarı",
+      "İmmün Kontrol Noktası İnhibitörleri",
+      "Gebelik"
+    ],
+    "parent": "hipofiz-yetmezligi",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "Travmatik Beyin Hasarı (TBI) ve Anevrizmal SAH",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Akut dönemde hayatı tehdit eden ACTH ve AVP (ADH) eksiklikleri taranmalı ve tedavi edilmelidir. Diğer akslar (tiroid, gonad, GH) akut hastalıktan etkilenebileceği için taburculuk sonrası <strong>3. ve 6. aylarda</strong> yeniden değerlendirilmelidir.</p>"
+    },
+    {
+      "heading": "İmmün Kontrol Noktası İnhibitörleri (ICI) İle Gelişen Hipofizit",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Kanser immünoterapisinde ortaya çıkan bu tabloda hipofiz büyümesi hafif olabilir ancak kalıcı ACTH eksikliği oranı yüksektir. Bu hastalarda fizyolojik hidrokortizon replasmanı yapılmalı ve onkolojik tedaviye endokrinoloji gözetiminde devam edilmelidir.</p>"
+    },
+    {
+      "heading": "Gebelikte Hipofiz Yetmezliği İzlemi",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Gebelik boyunca glukokortikoid, levotiroksin ve desmopressin tedavisi titizlikle sürdürülür. Gebelik sırasında östrojen, prolaktin ve IGF-1 düzeylerinin ölçülmesinin veya seks steroidi/GH replasmanının bir yararı yoktur.</p>"
+    }
+  ]
+}

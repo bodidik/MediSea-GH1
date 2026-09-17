@@ -1,0 +1,48 @@
+{
+  "title": "Hipofiz Yetmezliği: Etiyoloji ve Patofizyoloji",
+  "meta": {
+    "updatedAt": "17 Eyl 2026",
+    "tags": [
+      "Endokrinoloji",
+      "Hipofiz",
+      "Hipopitüitarizm",
+      "Hipofiz Yetmezliği",
+      "Hipofiz Adenomu",
+      "Sheehan Sendromu",
+      "Hipofizit",
+      "Travmatik Beyin Hasarı"
+    ],
+    "parent": "hipofiz-yetmezligi",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Sınıflandırma",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Hipofiz yetmezliği; lezyonun anatomik lokalizasyonuna göre <strong>primer (hipofiz kaynaklı)</strong> veya <strong>sekonder/tertiyer (hipotalamus veya hipofiz sapı kaynaklı)</strong>; mekanizmasına göre <strong>yapısal (strüktürel)</strong> veya <strong>fonksiyonel</strong>; ortaya çıkış zamanına göre ise <strong>edinsel (kazanılmış)</strong> veya <strong>kongenital (doğumsal)</strong> olarak sınıflandırılır.</p>"
+    },
+    {
+      "heading": "Neoplastik ve Kitle Lezyonları",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Erişkinlerde edinsel hipofiz yetmezliğinin en sık nedeni sellar ve suprasellar kitlelerdir.</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Hipofiz Adenomları:</strong> Sellar kitlelerin en yaygın nedenidir. Non-fonksiyonel makroadenomların %40-85'inde tanı anında en az bir hormonal eksiklik mevcuttur. Tümörün portal kan akımına bası yapması (hipotalamik hormon taşımasının engellenmesi) ve doğrudan hipofiz dokusunu tahrip etmesi temel mekanizmalardır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Diğer Suprasellar Kitleler:</strong> Kraniyofaringiyoma, meningiyoma, pituasitom, germinoma, kordoma, epidermoid/dermoid kistler ve uzak organ metastazları (meme, akciğer, prostat).</li></ul></div>"
+    },
+    {
+      "heading": "İatrojenik Nedenler",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Cerrahi Müdahale:</strong> Transsfenoidal cerrahi (TSS) sonrasında vakaların %1.4-19.4'ünde yeni veya ağırlaşmış hipofiz yetmezliği gelişebilir. Bununla birlikte, tümör dekompresyonu sağlanan vakaların yaklaşık %30'unda baskılanmış akslarda iyileşme görülebilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Radyoterapi ve Radyocerrahi:</strong> Eksternal radyoterapi veya stereotaktik radyocerrahi (Gamma Knife) sonrasında kademeli ve zamanla artan hipofiz yetmezliği gelişir; 5-10 yıl içinde hastaların %50'den fazlasında çoklu hormon eksikliği ortaya çıkar.</li></ul></div>"
+    },
+    {
+      "heading": "Vasküler Nedenler",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Hipofiz Apopleksisi:</strong> Var olan bir hipofiz adenomu içine aniden kanama veya enfarktüs gelişmesi durumudur. Şiddetli \"şimşek çakar tarzda\" baş ağrısı, ani görme kaybı, oftalmopleji ve akut hayatı tehdit eden ACTH eksikliği ile seyreder.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Sheehan Sendromu:</strong> Doğum sırasında gelişen masif postpartum kanama ve hipovolemik şok neticesinde, gebelikte büyümüş olan hipofiz bezinin iskemi ve nekroza uğramasıdır. İlk belirti sıklıkla laktasyon başarısızlığı (agalakti) ve menstruasyonun başlamamasıdır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>İntrasellar Karotid Anevrizması ve Subaraknoid Kanama</strong></li></ul></div>"
+    },
+    {
+      "heading": "İnfiltratif, Enflamatuvar ve Otoimmün Nedenler (Hipofizitler)",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Otoimmün Hipofizit:</strong> Lenfositik hipofizit (en sık gebelik ve peripartum dönemde kadınlarda), IgG4 ilişkili hipofizit, granülomatöz, ksantomatöz ve nekrotizan hipofizit.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>İmmün Kontrol Noktası İnhibitörleri (ICI):</strong> Kanser tedavisinde kullanılan anti-CTLA-4 (ipilimumab) ve anti-PD-1/PD-L1 (nivolumab, pembrolizumab) ajanlar %8-13 oranında hipofizite yol açar; belirgin şekilde baş ağrısı, halsizlik ve izole ACTH veya TSH eksikliği ile seyreder.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Sistemik İnfiltratif Hastalıklar:</strong> Sarkoidozis, Langerhans Hücreli Histiyositoz (LCH), Erdheim-Chester hastalığı, Granülomatöz Polianjitis (GPA) ve hemokromatozis.</li></ul></div>"
+    },
+    {
+      "heading": "Travmatik ve Enfeksiyöz Nedenler",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Travmatik Beyin Hasarı (TBI):</strong> Kafa travması geçiren hastaların %15-50'sinde akut veya kronik dönemde hipofiz yetmezliği saptanır. Akut evrede portobulber damarların kopması ve beyin ödemi etkenken, kronik evrede otoimmün mekanizmalar rol oynar.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Enfeksiyonlar:</strong> Bakteriyel hipofiz apseleri (<em>Staphylococcus</em>, <em>Streptococcus</em>), tüberküloz, frengi, fungal enfeksiyonlar ve viral/bakteriyel meningitler.</li></ul></div>"
+    },
+    {
+      "heading": "Kongenital ve Genetik Nedenler",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Gelişimsel / Orta Hat Anomalileri:</strong> Septo-optik displazi (septum pellucidum yokluğu, optik sinir hipoplazisi), ektopik posterior hipofiz, hipoplastik hipofiz bezi.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Transkripsiyon Faktör Mutasyonları:</strong> <em>PROP1</em> (kombine eksikliklerin en sık genetik nedeni), <em>POU1F1 (PIT1)</em> (GH, PRL, TSH eksikliği), <em>HESX1, LHX3, LHX4, TPIT</em> (izole ACTH eksikliği) ve <em>POMC</em> mutasyonları.</li></ul></div>"
+    }
+  ]
+}

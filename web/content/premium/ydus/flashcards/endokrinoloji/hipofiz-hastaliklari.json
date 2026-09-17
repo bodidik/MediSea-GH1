@@ -1,0 +1,488 @@
+{
+  "id": "fc-endo-hipofiz-hastaliklari-001",
+  "accessLevel": "premium",
+  "topic": "Hipofiz Hastalıkları — İleri Klinik ve Akademik Doküman",
+  "description": "YDUS Endokrinoloji serisi: akromegali, hipofiz yetmezliği, hipofiz apopleksisi, Sheehan sendromu ve hipofizitleri kapsayan 80 kartlık hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "hpf-001",
+      "front": "Akromegali tanısında kullanılan en hassas tarama testi nedir?",
+      "back": "Serum IGF-1 konsantrasyonu.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-002",
+      "front": "Akromegalide GH gen ekspresyonunu ve sekresyonunu baskılayan temel periferik inhibitör molekül hangisidir?",
+      "back": "İnsülin benzeri büyüme faktörü-1 (IGF-1).",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-003",
+      "front": "Akromegalide en sık görülen patogenetik olay nedir?",
+      "back": "Hipofiz ön lobunda somatotrof hücre proliferasyonu ve kontrolsüz GH hipersekresyonu.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-004",
+      "front": "Somatotrof adenomların yaklaşık %30-40'ında görülen ve konstitütif cAMP aktivasyonuna neden olan mutasyon hangisidir?",
+      "back": "gsp mutasyonu (Gs proteininin GTPaz aktivitesinin kaybı).",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-005",
+      "front": "Genç hastalarda daha agresif seyreden, yüksek GH seviyeleri ve T2-hiperintens MRI görüntüsü ile ilişkili adenom tipi hangisidir?",
+      "back": "Sparsely granulated (seyrek granüllü) somatotrof adenom.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-006",
+      "front": "Yaşlı hastalarda daha sık görülen ve yavaş ilerleyen akromegali ile ilişkili olan histolojik adenom tipi hangisidir?",
+      "back": "Densely granulated (yoğun granüllü) somatotrof adenom.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-007",
+      "front": "Büyüme hormonu (GH) geni hangi kromozomal lokusta yer alır?",
+      "back": "17q.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-008",
+      "front": "Akromegalide 75-g oral glukoz tolerans testi (OGTT) sonrası tanısal GH nadir değeri (cutoff) nedir?",
+      "back": ">0.4 µg/L (ultrasensitif assay ile).",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-009",
+      "front": "Akromegalik hastalarda mortaliteyi genel popülasyon seviyesine indiren GH düzeyi hedefi nedir?",
+      "back": "<2.5 µg/L.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-010",
+      "front": "Akromegalide cerrahi sonrası nüks oranı 10 yıl içinde yaklaşık yüzde kaçtır?",
+      "back": "%8.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-011",
+      "front": "Somatostatin reseptör ligandı (SRL) tedavisine dirençle ilişkili olan ve MRI'da görülen biyobelirteç nedir?",
+      "back": "T2-ağırlıklı MRI'da tümörün hiperintens olması.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-012",
+      "front": "Akromegalide kullanılan GH reseptör antagonisti (GHRA) hangisidir?",
+      "back": "Pegvisomant.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-013",
+      "front": "Pasireotid'in oktreotidden farkı, hangi reseptöre daha yüksek afinite ile bağlanmasıdır?",
+      "back": "Somatostatin reseptör alt tipi 5 (SST5).",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-014",
+      "front": "Akromegalik hastalarda en sık görülen uyku bozukluğu nedir?",
+      "back": "Uyku apnesi (vakaların %80'ine kadar).",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-015",
+      "front": "Akromegalide görülen artropatinin radyolojik karakteristiği nedir?",
+      "back": "Non-inflamatuar osteoartritik değişiklikler ve eklem boşluğu genişlemesi.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-016",
+      "front": "McCune-Albright sendromunda akromegaliye neden olan temel genetik mekanizma nedir?",
+      "back": "Somatik mozaisizm şeklinde görülen aktive edici GNAS mutasyonu.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-017",
+      "front": "Ektopik GHRH üretimi en sık hangi tümörlerle ilişkilidir?",
+      "back": "Nöroendokrin tümörler (özellikle pankreas ve akciğer karsinoidleri).",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-018",
+      "front": "Akromegalide kullanılan oral somatostatin analoğu (OOC) hangi mekanizma ile emilir?",
+      "back": "Bağırsak epiteli arasındaki sıkı bağlantıların (tight junctions) geçici açılması.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-019",
+      "front": "Hipofiz adenomları içinde GH salgılayan adenomların prevalansı yaklaşık yüzde kaçtır?",
+      "back": "Hormon salgılayan adenomların %30'u.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-020",
+      "front": "Akromegalide görülen hiperfosfateminin nedeni nedir?",
+      "back": "IGF-1'in renal tübüler fosfat reabsorpsiyonunu doğrudan stimüle etmesi.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-021",
+      "front": "Yavaş büyüyen bir hipofiz kitlesinde anterior hipofiz hormonlarının kaybı tipik olarak hangi sıra ile gerçekleşir?",
+      "back": "GH > LH/FSH > TSH > ACTH > PRL.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-022",
+      "front": "Hipofiz yetmezliği şüphesinde sekonder adrenal yetmezliği dışlamak için kullanılan sabah kortizolü eşik değeri nedir?",
+      "back": ">15 µg/dL (>400-450 nmol/L).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-023",
+      "front": "Hipofiz yetmezliği tanısında ACTH stimülasyon testinde yetersiz yanıt sınırı nedir?",
+      "back": "Pik kortizol değerinin <18 µg/dL olması.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-024",
+      "front": "İnsülin Tolerans Testi'nde (ITT) kortizol yanıtının değerlendirilebilmesi için gereken minimum hipoglisemi düzeyi nedir?",
+      "back": "<40 mg/dL.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-025",
+      "front": "Sheehan sendromunun tanımında yer alan temel fizyopatolojik olay nedir?",
+      "back": "Doğum sonrası şiddetli kanama ve hipovolemik şok sonrası hipofiz nekrozu.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-026",
+      "front": "Hipofiz apopleksisinin klasik semptom triadı nedir?",
+      "back": "Şiddetli baş ağrısı, görme kaybı ve hipopituitarizm.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-027",
+      "front": "Hipofiz apopleksisinde görülen en tehlikeli ve ani gelişen hormonal eksiklik hangisidir?",
+      "back": "ACTH eksikliği (akut adrenal yetmezlik).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-028",
+      "front": "Septo-optik displazi (De Morsier sendromu) hangi midline serebral malformasyonla karakterizedir?",
+      "back": "Septum pellucidum yokluğu ve optik sinir hipoplazisi.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-029",
+      "front": "X-linked Kallmann sendromunda görülen temel gelişimsel kusur nedir?",
+      "back": "GnRH nöronlarının nazal epitelyumdan hipotalamusa göçünün bozulması.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-030",
+      "front": "Hipofiz sapı kesisi (stalk section) sonrası hangi hormonun seviyesi artar?",
+      "back": "Prolaktin (dopamin inhibisyonunun kalkması nedeniyle).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-031",
+      "front": "Kombine hipofiz hormon eksikliğine neden olan ve GH, PRL, TSH eksikliği ile giden transkripsiyon faktörü mutasyonu nedir?",
+      "back": "POU1F1 (Pit-1).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-032",
+      "front": "PROP1 gen mutasyonunda ek olarak hangi hormonların eksikliği beklenir?",
+      "back": "LH, FSH ve bazen ACTH.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-033",
+      "front": "İmmün kontrol noktası inhibitörlerine (ICI) bağlı hipofizit en sık hangi ilaç grubuyla görülür?",
+      "back": "CTLA-4 blokörleri (örneğin İpilimumab).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-034",
+      "front": "Sekonder hipotiroidizm tanısında serbest T4 ve TSH değerleri nasıl beklenir?",
+      "back": "Düşük serbest T4 ile birlikte uygunsuz şekilde normal veya düşük TSH.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-035",
+      "front": "Postpartum bir kadında emzirememe (laktasyon yetersizliği) hangi durumun ilk bulgusu olabilir?",
+      "back": "Sheehan sendromu.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-036",
+      "front": "Hipofiz sapı lezyonlarında görülen ve ADH eksikliği ile karakterize klinik tablo nedir?",
+      "back": "Santral diyabetes insipidus.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-037",
+      "front": "Sellar kitlelerde optik kiazmanın inferior basısında görülen ilk görme alanı defekti nedir?",
+      "back": "Bilateral süperior kuadrantanopsi.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-038",
+      "front": "Parenteral hidrokortizon replasmanı yapılmadan önce hipofiz apopleksisi olan bir hastada hangi testin yapılması kontrendikedir?",
+      "back": "İnsülin tolerans testi (adrenal kriz riskini artırır).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-039",
+      "front": "Kraniofaringiomlarda en sık görülen radyolojik bulgu nedir?",
+      "back": "Sellar/suprasellar kistik kitle ve kalsifikasyon.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-040",
+      "front": "Hipofiz apopleksisi skorlamasında (PAS) en yüksek puanı alan değişken hangisidir?",
+      "back": "Bilinç düzeyi (Glasgow Koma Skalası <8).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-041",
+      "front": "Kanser immünoterapisinde kullanılan immün kontrol noktası inhibitörlerine (ICI) bağlı hipofiziti, lenfositik ve diğer sekonder hipofizitlerden ayıran en karakteristik arka hipofiz bulgusu nedir?",
+      "back": "İmmün kontrol noktası inhibitörü (ICI) ilişkili hipofizitte Vazopressin Eksikliği / Santral Diabetes Insipidus (AVP-D) gelişiminin neredeyse HİÇ görülmemesidir (<%2–3). Diğer tüm hipofizit türlerinde ve sellar infiltratif hastalıklarda ise erken dönemde vazopressin eksikliği / DI oranı oldukça yüksektir (>%50–80).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-042",
+      "front": "Cushing hastalığı tanısında düşük doz deksametazon supresyon testi (LDDST) sonrası kortizol supresyon eşiği nedir?",
+      "back": "<1.8 µg/dL.",
+      "tag": "Endokrinoloji / Hipofiz / Cushing Hastalığı"
+    },
+    {
+      "id": "hpf-043",
+      "front": "Sekonder hipogonadizmde serum LH ve FSH değerleri nasıldır?",
+      "back": "Düşük veya uygunsuz şekilde normal.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-044",
+      "front": "Hiperprolaktinemide görülen hipogonadizmin temel mekanizması nedir?",
+      "back": "Hipotalamik GnRH pulsativitesinin inhibisyonu.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-045",
+      "front": "Somatotrop karsinom tanısı koymak için gereken mutlak kriter nedir?",
+      "back": "Ekstrakraniyal metastazların kanıtlanması.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-046",
+      "front": "Akromegalide cerrahi öncesi somatostatin analoğu kullanımının temel amacı nedir?",
+      "back": "Makroadenomlarda cerrahi kür şansını artırmak ve cerrahiyi kolaylaştırmak.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-047",
+      "front": "Kavernöz sinüs invazyonu olan bir hipofiz adenomunda hangi kranial sinirlerin tutulumu beklenebilir?",
+      "back": "III, IV, V (oftalmik ve maksiller dallar) ve VI.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-048",
+      "front": "Chiari-Frommel sendromu nedir?",
+      "back": "Emzirmeyen kadınlarda görülen persistan postpartum galaktore ve amenore.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-049",
+      "front": "Hipofiz yetmezliği tedavisinde, tiroid hormonu replasmanı yapılmadan önce mutlaka hangi eksiklik dışlanmalıdır?",
+      "back": "Adrenal yetmezlik (tiroid hormonu metabolizmayı artırarak adrenal krizi tetikleyebilir).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-050",
+      "front": "Erişkin dönemde kazanılmış GH eksikliği tanısında 'altın standart' test hangisidir?",
+      "back": "İnsülin tolerans testi.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-051",
+      "front": "Hangi gen mutasyonu izole GnRH eksikliğine (Kallmann sendromu) neden olur?",
+      "back": "KAL1 (ANOS1).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-052",
+      "front": "Akromegalide görülen sodyum retansiyonunun moleküler mekanizması nedir?",
+      "back": "Büyüme hormonunun distal nefronda epitel sodyum kanallarını (ENaC) aktive etmesi.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-053",
+      "front": "Hipofiz apopleksisi olan bir hastada acil cerrahi endikasyonu nedir?",
+      "back": "Hızla ilerleyen görme kaybı veya bilinç bozukluğu.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-054",
+      "front": "Sheehan sendromu gelişmiş bir hastada MRI'da 'empty sella' görünümü ne zaman ortaya çıkar?",
+      "back": "Hastalığın kronik evresinde (yıllar sonra).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-055",
+      "front": "Boş sella (empty sella) sendromunda hipofiz fonksiyonları genellikle nasıldır?",
+      "back": "Çoğunlukla normaldir, ancak hafif hiperprolaktinemi görülebilir.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-056",
+      "front": "Akromegalide radyoterapinin en sık görülen uzun dönem komplikasyonu nedir?",
+      "back": "Hipopituitarizm (10 yıl içinde yaklaşık %50).",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-057",
+      "front": "Gonadotrop adenomları laboratuvar olarak genellikle hangi hormonun yüksekliği ile prezente olur?",
+      "back": "FSH.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-058",
+      "front": "Akromegalide pegvisomant tedavisi sırasında hangi organ fonksiyonları düzenli izlenmelidir?",
+      "back": "Karaciğer enzimleri (transaminaz artışı riski nedeniyle).",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-059",
+      "front": "Somatostatin analogları (SRL) hangi gastrointestinal yan etkiye sıklıkla neden olur?",
+      "back": "Safra çamuru ve kolelitiazis (vakaların %25'inde).",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-060",
+      "front": "Hipopituitarizmi olan bir çocukta ilk klinik prezentasyon genellikle nedir?",
+      "back": "Büyüme geriliği (kısa boy).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-061",
+      "front": "Hangi hipofiz hormonu eksikliği sadece laktasyon döneminde semptom verir?",
+      "back": "Prolaktin eksikliği.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-062",
+      "front": "Akromegalide görülen sol ventrikül hipertrofisi ne tür bir patoloji ile karakterizedir?",
+      "back": "İnterstisyel fibrozis ve lenfositik infiltrasyon.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-063",
+      "front": "Cushing hastalığı tanısında kullanılan desmopressin testi hangi reseptörün aberran ekspresyonuna dayanır?",
+      "back": "V2 reseptörü (V2R).",
+      "tag": "Endokrinoloji / Hipofiz / Cushing Hastalığı"
+    },
+    {
+      "id": "hpf-064",
+      "front": "Hipofiz sapı lezyonlarında prolaktin yüksekliği hangi seviyeyi nadiren geçer?",
+      "back": "200 ng/mL (üzeri genellikle gerçek prolaktinomayı düşündürür).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-065",
+      "front": "Akut hipofiz yetmezliği olan hemodinamik olarak instabil bir hastada yaklaşım ne olmalıdır?",
+      "back": "Biyokimyasal sonuçlar beklenmeden ampirik parenteral glukokortikoid başlanmalıdır.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-066",
+      "front": "Akromegalide erken tanı neden zordur?",
+      "back": "Semptomların (eklem ağrısı, yorgunluk, çene değişikliği) çok sinsi ve yavaş ilerlemesi.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-067",
+      "front": "Sekonder adrenal yetmezlikte pigmentasyon değişikliği görülmemesinin sebebi nedir?",
+      "back": "ACTH ve α-MSH seviyelerinin düşük veya normal olması.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-068",
+      "front": "Akromegali hastalarında mortaliteyi en güçlü öngören post-operatif parametre nedir?",
+      "back": "Cerrahi sonrası 24. saatteki GH düzeyi.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-069",
+      "front": "Yetişkinlerde hipopituitarizmin en yaygın nedeni nedir?",
+      "back": "Hipofiz adenomları (özellikle non-fonksiyone adenomlar).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-070",
+      "front": "Hipofiz sapı lezyonları hipotalamik dopaminin hipofize ulaşmasını engellediğinde oluşan duruma ne denir?",
+      "back": "Stalk etkisi (stalk effect).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-071",
+      "front": "Akromegalide cerrahi sonrası remisyon kriterleri nelerdir?",
+      "back": "Normal IGF-1 ve OGTT'de nadir GH'ın <0.4 ng/mL olması.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-072",
+      "front": "Pit-1 transkripsiyon faktörü hangi üç hücre tipinin farklılaşması için gereklidir?",
+      "back": "Somatotrof, laktotrof ve tirotrof.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-073",
+      "front": "Sekonder adrenal yetmezlikte mineralokortikoid (aldosteron) sekresyonu nasıldır?",
+      "back": "Genellikle korunmuştur (çünkü RAAS kontrolündedir).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-074",
+      "front": "Akromegalide kullanılan dopamin agonistleri (örn. Kabergolin) hangi hasta grubunda daha etkilidir?",
+      "back": "GH ve Prolaktini birlikte salgılayan (mamosomatotrof) tümörlerde.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-075",
+      "front": "Yetişkin GH eksikliğinde görülen metabolik değişikliklerden biri nedir?",
+      "back": "Abdominal obezite ve kas kütlesinde azalma.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-076",
+      "front": "Hipofiz apopleksisi tanısında BT'nin (BT) duyarlılığı kanama için ne kadardır?",
+      "back": "Yaklaşık üçte bir (%33).",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-077",
+      "front": "Akromegalide kolon kanseri riskinin yaklaşık ne kadar arttığı düşünülmektedir?",
+      "back": "İki kat.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-078",
+      "front": "Sekonder hipotiroidizmde TSH seviyeleri neden biyolojik olarak inaktif olabilir?",
+      "back": "Anormal glikozilasyon nedeniyle.",
+      "tag": "Endokrinoloji / Hipofiz / Hipofiz Yetmezliği"
+    },
+    {
+      "id": "hpf-079",
+      "front": "Akromegali tedavisinde SRL'lerin geri çekilmesi (withdrawal) neye neden olabilir?",
+      "back": "Tümör kütlesinin hızla yeniden genişlemesine.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    },
+    {
+      "id": "hpf-080",
+      "front": "X-linked acrogigantism (X-LAG) hangi genin duplikasyonu ile ilişkilidir?",
+      "back": "GPR101.",
+      "tag": "Endokrinoloji / Hipofiz / Akromegali"
+    }
+  ]
+}

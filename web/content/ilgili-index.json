@@ -75,6 +75,11 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-hormon-replasman-tedavisi",
+   "baslik": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "men-adrenal-kriz-yonetimi",
    "baslik": "Akut Adrenal Kriz: Klinik Tablo ve Acil Müdahale Protokolü"
   },
@@ -186,6 +191,11 @@
    "brans": "endokrinoloji",
    "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
    "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi",
+   "baslik": "Hipofiz Yetmezliği (Anterior Hipofiz Yetersizliği / Hipopitüitarizm) Klinik ve Akademik Rehberi"
   },
   {
    "brans": "endokrinoloji",
@@ -381,16 +391,6 @@
    "brans": "endokrinoloji",
    "slug": "gebelik-ve-tiroid-yonetimi",
    "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "gebelikte-immün-ITP-yonetimi",
-   "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "gebelikte-akut-koroner-sendrom",
-   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
   }
  ],
  "endokrinoloji/gebelikte-hipertiroidizm-yonetimi": [
@@ -433,8 +433,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "santral-hipotiroidizm-lt4-adrenal-kriz",
-   "baslik": "Santral Hipotiroidizmde LT4 Öncesi Adrenal Güvenlik Kuralı (İleri Analiz)"
+   "slug": "tiroid-yaslanmasi-fizyolojisi",
+   "baslik": "Tiroid Yaşlanması (Thyroid Aging): Fizyolojik TSH Yüksekliği"
   }
  ],
  "endokrinoloji/hashimoto-ensefaliti": [
@@ -582,6 +582,11 @@
  "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma": [
   {
    "brans": "endokrinoloji",
+   "slug": "men1-ektopik-cushing-sendromu",
+   "baslik": "MEN1'de Ektopik Cushing Sendromu: Diagnostik Kusursuz Fırtına"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "men1-meme-kanseri-tarama",
    "baslik": "MEN1'de Meme Kanseri Riski ve Tarama Protokolü"
   },
@@ -594,11 +599,6 @@
    "brans": "endokrinoloji",
    "slug": "men1-osilodrostat-block-replace",
    "baslik": "MEN1'de Osilodrostat: Block-and-Replace Protokolü ve Klinik Avantajları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "men1-osilodrostat-mineralokortikoid",
-   "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi"
   }
  ],
  "endokrinoloji/hipertiroidi": [
@@ -628,30 +628,15 @@
  "endokrinoloji/hipofiz-hastaliklari-ana": [
   {
    "brans": "endokrinoloji",
-   "slug": "men1-sendromu",
-   "baslik": "Multiple Endokrin Neoplazi Tip 1 (MEN1)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "men1-somatotropinoma-akromegali",
-   "baslik": "MEN1'de Akromegali ve Somatotropinoma: Tanısal Zorluklar ve Yönetim"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "santral-hipotiroidizm",
-   "baslik": "Santral Hipotiroidizm"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "osteoporoz-tedavisi",
-   "baslik": "Osteoporoz Tedavisi: Farmakoterapi Endikasyonları, Modaliteler ve Yönetim Stratejileri"
+   "slug": "hipofiz-yetmezligi-tanisal-degerlendirme",
+   "baslik": "Hipofiz Yetmezliği: Tanısal Değerlendirme ve Biyokimyasal Testler"
   }
  ],
  "endokrinoloji/hipofiz-hastaliklari-klinik-akademik-kilavuz": [
   {
    "brans": "endokrinoloji",
-   "slug": "hipopituitarizm-ve-sheehan-sendromu",
-   "baslik": "Hipopitüitarizm ve Sheehan Sendromu"
+   "slug": "hipofiz-yetmezligi-etiyoloji-ve-patofizyoloji",
+   "baslik": "Hipofiz Yetmezliği: Etiyoloji ve Patofizyoloji"
   },
   {
    "brans": "endokrinoloji",
@@ -662,6 +647,183 @@
    "brans": "endokrinoloji",
    "slug": "akromegali-ve-gigantizm",
    "baslik": "Büyüme Hormonu Patolojileri: Akromegali ve Gigantizm"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi",
+   "baslik": "Hipofiz Yetmezliği (Anterior Hipofiz Yetersizliği / Hipopitüitarizm) Klinik ve Akademik Rehberi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-hormon-replasman-tedavisi",
+   "baslik": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-klinik-tablo",
+   "baslik": "Hipofiz Yetmezliği: Klinik Tablo ve Hormonal Kayıp Hiyerarşisi"
+  }
+ ],
+ "endokrinoloji/hipofiz-yetmezligi": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipopituitarizm-ve-sheehan-sendromu",
+   "baslik": "Hipopitüitarizm ve Sheehan Sendromu"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
+   "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
+  }
+ ],
+ "endokrinoloji/hipofiz-yetmezligi-etiyoloji-ve-patofizyoloji": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
+   "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-ozel-klinik-durumlar",
+   "baslik": "Hipofiz Yetmezliği: Özel Klinik Durumlar"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipopituitarizm-ve-sheehan-sendromu",
+   "baslik": "Hipopitüitarizm ve Sheehan Sendromu"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-hormon-replasman-tedavisi",
+   "baslik": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-klinik-tablo",
+   "baslik": "Hipofiz Yetmezliği: Klinik Tablo ve Hormonal Kayıp Hiyerarşisi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-tanisal-degerlendirme",
+   "baslik": "Hipofiz Yetmezliği: Tanısal Değerlendirme ve Biyokimyasal Testler"
+  }
+ ],
+ "endokrinoloji/hipofiz-yetmezligi-hormon-replasman-tedavisi": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipopituitarizm-ve-sheehan-sendromu",
+   "baslik": "Hipopitüitarizm ve Sheehan Sendromu"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-etiyoloji-ve-patofizyoloji",
+   "baslik": "Hipofiz Yetmezliği: Etiyoloji ve Patofizyoloji"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-klinik-tablo",
+   "baslik": "Hipofiz Yetmezliği: Klinik Tablo ve Hormonal Kayıp Hiyerarşisi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-ozel-klinik-durumlar",
+   "baslik": "Hipofiz Yetmezliği: Özel Klinik Durumlar"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-tanisal-degerlendirme",
+   "baslik": "Hipofiz Yetmezliği: Tanısal Değerlendirme ve Biyokimyasal Testler"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "adrenal-kriz",
+   "baslik": "Akut Adrenal Kriz (Addison Krizi)"
+  }
+ ],
+ "endokrinoloji/hipofiz-yetmezligi-klinik-tablo": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-etiyoloji-ve-patofizyoloji",
+   "baslik": "Hipofiz Yetmezliği: Etiyoloji ve Patofizyoloji"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-hormon-replasman-tedavisi",
+   "baslik": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-ozel-klinik-durumlar",
+   "baslik": "Hipofiz Yetmezliği: Özel Klinik Durumlar"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-tanisal-degerlendirme",
+   "baslik": "Hipofiz Yetmezliği: Tanısal Değerlendirme ve Biyokimyasal Testler"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
+   "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
+  }
+ ],
+ "endokrinoloji/hipofiz-yetmezligi-ozel-klinik-durumlar": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-etiyoloji-ve-patofizyoloji",
+   "baslik": "Hipofiz Yetmezliği: Etiyoloji ve Patofizyoloji"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-hormon-replasman-tedavisi",
+   "baslik": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-klinik-tablo",
+   "baslik": "Hipofiz Yetmezliği: Klinik Tablo ve Hormonal Kayıp Hiyerarşisi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-tanisal-degerlendirme",
+   "baslik": "Hipofiz Yetmezliği: Tanısal Değerlendirme ve Biyokimyasal Testler"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
+   "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
+  }
+ ],
+ "endokrinoloji/hipofiz-yetmezligi-tanisal-degerlendirme": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-hastaliklari-ana",
+   "baslik": "Hipofiz Hastalıkları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-etiyoloji-ve-patofizyoloji",
+   "baslik": "Hipofiz Yetmezliği: Etiyoloji ve Patofizyoloji"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-hormon-replasman-tedavisi",
+   "baslik": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-klinik-tablo",
+   "baslik": "Hipofiz Yetmezliği: Klinik Tablo ve Hormonal Kayıp Hiyerarşisi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-ozel-klinik-durumlar",
+   "baslik": "Hipofiz Yetmezliği: Özel Klinik Durumlar"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
+   "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
   }
  ],
  "endokrinoloji/hipokalsemi-ve-hipoparatiroidi": [
@@ -679,16 +841,21 @@
  "endokrinoloji/hipopituitarizm-ve-sheehan-sendromu": [
   {
    "brans": "endokrinoloji",
-   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
-   "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
+   "slug": "hipofiz-yetmezligi",
+   "baslik": "Hipofiz Yetmezliği (Anterior Hipofiz Yetersizliği / Hipopitüitarizm) Klinik ve Akademik Rehberi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-etiyoloji-ve-patofizyoloji",
+   "baslik": "Hipofiz Yetmezliği: Etiyoloji ve Patofizyoloji"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-hormon-replasman-tedavisi",
+   "baslik": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri"
   }
  ],
  "endokrinoloji/hipotiroidi-hashimoto-miksoedem": [
-  {
-   "brans": "endokrinoloji",
-   "slug": "gebelikte-hipotiroidizm-yonetimi",
-   "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
-  },
   {
    "brans": "nefroloji",
    "slug": "glomeruler-hastaliklar",
@@ -696,18 +863,13 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "gebelikte-hipotiroidizm-yonetimi",
+   "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "gebelik-ve-tiroid-yonetimi",
    "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "izole-maternal-hipotiroksinemi-yonetimi",
-   "baslik": "İzole Maternal Hipotiroksinemi: Yönetim ve İyot Desteği"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "santral-hipotiroidizm-lt4-adrenal-kriz",
-   "baslik": "Santral Hipotiroidizmde LT4 Öncesi Adrenal Güvenlik Kuralı (İleri Analiz)"
   }
  ],
  "endokrinoloji/hipotiroidizm-anasayfa-sistemik-etkiler": [
@@ -746,16 +908,6 @@
    "brans": "endokrinoloji",
    "slug": "gebelikte-hipertiroidizm-yonetimi",
    "baslik": "Gebelikte Hipertiroidizm"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipotiroidi-hashimoto-miksoedem",
-   "baslik": "Hashimoto Tiroiditi (Kronik Lenfositik Tiroidit)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "santral-hipotiroidizm-lt4-adrenal-kriz",
-   "baslik": "Santral Hipotiroidizmde LT4 Öncesi Adrenal Güvenlik Kuralı (İleri Analiz)"
   }
  ],
  "endokrinoloji/kalsiyum-homeostazi-fizyoloji": [
@@ -865,18 +1017,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "adrenal-kriz",
-   "baslik": "Akut Adrenal Kriz (Addison Krizi)"
-  },
-  {
-   "brans": "endokrinoloji",
    "slug": "adrenal-tuberkuloz",
    "baslik": "Adrenal Tüberküloz (Tuberculous Adrenalitis)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "miksodem-komasi-acil-yonetim",
-   "baslik": "Miksödem Koması: Klinik Tablo ve Acil Yönetim"
   },
   {
    "brans": "endokrinoloji",
@@ -887,6 +1029,16 @@
    "brans": "endokrinoloji",
    "slug": "addison",
    "baslik": "Addison Hastalığı (Primer Adrenal Yetmezlik)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "adrenal-kriz",
+   "baslik": "Akut Adrenal Kriz (Addison Krizi)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-hormon-replasman-tedavisi",
+   "baslik": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri"
   }
  ],
  "endokrinoloji/men-bilateral-adrenalektomi": [
@@ -1141,6 +1293,16 @@
  "endokrinoloji/men1-sendromu": [
   {
    "brans": "endokrinoloji",
+   "slug": "cushing-sendromu-genetik-ve-inovasyonlar",
+   "baslik": "Cushing Sendromu: Genetik, Farmakoloji ve Tanıda Yenilikler"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "cushing-sendromu-patofizyoloji-klinik",
+   "baslik": "Cushing Sendromu: Patofizyoloji ve Klinik Prezantasyon"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "hipofiz-hastaliklari-ana",
    "baslik": "Hipofiz Hastalıkları"
   },
@@ -1148,16 +1310,6 @@
    "brans": "endokrinoloji",
    "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
    "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "on-hipofiz-hastaliklari-giris",
-   "baslik": "Ön Hipofiz Hastalıklarına Giriş"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "santral-hipotiroidizm",
-   "baslik": "Santral Hipotiroidizm"
   }
  ],
  "endokrinoloji/men1-somatotropinoma-akromegali": [
@@ -1202,18 +1354,23 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "santral-hipotiroidizm-lt4-adrenal-kriz",
+   "baslik": "Santral Hipotiroidizmde LT4 Öncesi Adrenal Güvenlik Kuralı (İleri Analiz)"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "adrenal-kriz",
    "baslik": "Akut Adrenal Kriz (Addison Krizi)"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men-adrenal-kriz-yonetimi",
-   "baslik": "Akut Adrenal Kriz: Klinik Tablo ve Acil Müdahale Protokolü"
+   "slug": "hipofiz-yetmezligi-hormon-replasman-tedavisi",
+   "baslik": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "santral-hipotiroidizm-lt4-adrenal-kriz",
-   "baslik": "Santral Hipotiroidizmde LT4 Öncesi Adrenal Güvenlik Kuralı (İleri Analiz)"
+   "slug": "men-adrenal-kriz-yonetimi",
+   "baslik": "Akut Adrenal Kriz: Klinik Tablo ve Acil Müdahale Protokolü"
   }
  ],
  "endokrinoloji/miksodem-psikozu": [
@@ -1265,6 +1422,11 @@
    "brans": "endokrinoloji",
    "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
    "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi",
+   "baslik": "Hipofiz Yetmezliği (Anterior Hipofiz Yetersizliği / Hipopitüitarizm) Klinik ve Akademik Rehberi"
   },
   {
    "brans": "endokrinoloji",
@@ -1573,8 +1735,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "gebelikte-hipotiroidizm-yonetimi",
-   "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
+   "slug": "men-adrenal-kriz-yonetimi",
+   "baslik": "Akut Adrenal Kriz: Klinik Tablo ve Acil Müdahale Protokolü"
   }
  ],
  "endokrinoloji/sclc-paraneoplastik-siadh": [
@@ -1667,23 +1829,8 @@
  "endokrinoloji/sheehan-sendromu-postpartum-felaket": [
   {
    "brans": "endokrinoloji",
-   "slug": "diabetes-mellitus-ana",
-   "baslik": "Diabetes Mellitus"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "diyabet-farmakolojik-tedavi",
-   "baslik": "Diyabet Farmakoterapisi: OAD ve Yeni Nesil Ajanlar"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "erkek-osteoporozu-ana-sayfa",
-   "baslik": "Erkek Osteoporozu"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "gebelik-ve-tiroid-yonetimi",
-   "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
+   "slug": "hipofiz-yetmezligi-etiyoloji-ve-patofizyoloji",
+   "baslik": "Hipofiz Yetmezliği: Etiyoloji ve Patofizyoloji"
   }
  ],
  "endokrinoloji/siadh-avp-fizyolojisi": [
@@ -1993,8 +2140,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "hipotiroidizm-anasayfa-sistemik-etkiler",
-   "baslik": "Hipotiroidizm"
+   "slug": "gebelikte-hipotiroidizm-yonetimi",
+   "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
   }
  ],
  "endokrinoloji/vitamin-d-bozukluklari": [
@@ -4088,21 +4235,6 @@
    "brans": "hematoloji",
    "slug": "itp-tedavi",
    "baslik": "İmmün Trombositopeni (İTP) Tedavi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
-   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "gebelikte-akut-koroner-sendrom",
-   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "spontan-koroner-arter-disseksiyonu-scad",
-   "baslik": "Spontan Koroner Arter Disseksiyonu (SCAD)"
   }
  ],
  "hematoloji/gilteritinib-flt3-aml": [
@@ -5325,16 +5457,6 @@
    "baslik": "ADPKD İleri Okuma: Kardiyovasküler Tutulum ve Tarama Kılavuzları"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
-   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "gebelikte-immün-ITP-yonetimi",
-   "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
-  },
-  {
    "brans": "kardiyoloji",
    "slug": "aks-oac-antitrombotik-yonetim",
    "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
@@ -5706,16 +5828,6 @@
    "brans": "nefroloji",
    "slug": "polikistik-bobrek-kardiyovaskuler",
    "baslik": "ADPKD İleri Okuma: Kardiyovasküler Tutulum ve Tarama Kılavuzları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
-   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "gebelikte-immün-ITP-yonetimi",
-   "baslik": "Gebelikte İmmün Trombositopeni (İTP) Yönetimi"
   }
  ],
  "kardiyoloji/statin-intolerans-ezetimibe": [

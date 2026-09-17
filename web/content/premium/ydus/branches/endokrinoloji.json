@@ -118,6 +118,15 @@
       "emoji": "🧠",
       "konular": [
         {
+          "id": "hipofiz-hastaliklari",
+          "baslik": "Hipofiz Hastalıkları — İleri Klinik ve Akademik Doküman",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        },
+        {
           "id": "hipopituitarizm",
           "baslik": "Hipopituitarizm",
           "rozetler": [
