@@ -48,6 +48,21 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
+              <Link href="/tools/stone-skoru" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                STONE Skoru
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/tmp-gfr" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                TmP/GFR ve FEPO₄
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/kreatinin-klirensi-24s" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                24 Saatlik Kreatinin Klirensi
+              </Link>
+            </li>
+            <li>
               <Link href="/tools/anion-gap" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Anyon Açığı
               </Link>
@@ -55,21 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/abg" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Asit-Baz Analizi (ABG)
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/cockcroft-gault" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Cockcroft-Gault Kreatinin Klirensi
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/corrected-calcium" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Düzeltilmiş Kalsiyum
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/egfr" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                eGFR (CKD-EPI 2021)
               </Link>
             </li>
           </ul>

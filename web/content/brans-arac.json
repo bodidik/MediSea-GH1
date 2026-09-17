@@ -131,6 +131,56 @@
     "slug": "anion-gap",
     "name": "Anyon Açığı",
     "icon": "🧬"
+   },
+   {
+    "slug": "kdigo-kbh",
+    "name": "KDIGO KBH Sınıflaması",
+    "icon": "🧪"
+   },
+   {
+    "slug": "egfr-sistatin",
+    "name": "Sistatin C ile eGFR",
+    "icon": "🧪"
+   },
+   {
+    "slug": "kreatinin-klirensi-24s",
+    "name": "24 Saatlik Kreatinin Klirensi",
+    "icon": "🧪"
+   },
+   {
+    "slug": "serbest-su-klirensi",
+    "name": "Elektrolitsiz Serbest Su Klirensi",
+    "icon": "🧪"
+   },
+   {
+    "slug": "hiponatremi-algoritma",
+    "name": "Hiponatremi Tanı Algoritması",
+    "icon": "🧪"
+   },
+   {
+    "slug": "tmp-gfr",
+    "name": "TmP/GFR ve FEPO₄",
+    "icon": "🧪"
+   },
+   {
+    "slug": "fraksiyonel-atilim",
+    "name": "Fraksiyonel Magnezyum ve Ürik Asit Atılımı",
+    "icon": "🧪"
+   },
+   {
+    "slug": "mehran-kin",
+    "name": "Mehran Kontrast Nefropatisi Skoru",
+    "icon": "🧪"
+   },
+   {
+    "slug": "hrs-aki",
+    "name": "Hepatorenal Sendrom (HRS-AKI)",
+    "icon": "🧪"
+   },
+   {
+    "slug": "stone-skoru",
+    "name": "STONE Skoru",
+    "icon": "🧪"
    }
   ]
  },
@@ -541,6 +591,56 @@
     "slug": "behcet",
     "name": "Behçet — ICBD 2014",
     "icon": "👁️"
+   },
+   {
+    "slug": "ra-2010",
+    "name": "ACR/EULAR 2010 RA Kriterleri",
+    "icon": "🦴"
+   },
+   {
+    "slug": "sle-2019",
+    "name": "EULAR/ACR 2019 SLE Kriterleri",
+    "icon": "🦴"
+   },
+   {
+    "slug": "dev-hucreli-arterit",
+    "name": "ACR/EULAR 2022 Dev Hücreli Arterit",
+    "icon": "🦴"
+   },
+   {
+    "slug": "pmr-2012",
+    "name": "EULAR/ACR 2012 PMR Kriterleri",
+    "icon": "🦴"
+   },
+   {
+    "slug": "asas-axspa",
+    "name": "ASAS Aksiyel SpA Kriterleri",
+    "icon": "🦴"
+   },
+   {
+    "slug": "caspar",
+    "name": "CASPAR Kriterleri",
+    "icon": "🦴"
+   },
+   {
+    "slug": "ssc-2013",
+    "name": "ACR/EULAR 2013 Sistemik Skleroz",
+    "icon": "🦴"
+   },
+   {
+    "slug": "sjogren-2016",
+    "name": "ACR/EULAR 2016 Sjögren Kriterleri",
+    "icon": "🦴"
+   },
+   {
+    "slug": "anca-vaskulit",
+    "name": "ACR/EULAR 2022 ANCA Vaskülitleri",
+    "icon": "🦴"
+   },
+   {
+    "slug": "yamaguchi",
+    "name": "Yamaguchi Kriterleri",
+    "icon": "🦴"
    }
   ]
  },

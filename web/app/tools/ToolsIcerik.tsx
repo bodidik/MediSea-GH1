@@ -40,6 +40,16 @@ const TOOLS_DATABASE = [
       { slug: "spot-urine", name: "Spot İdrar Hesaplamaları", desc: "PCR · ACR · FENa · FEÜre · TTKG · İdrar Anyon Açığı · İdrar Osmolal Gap" },
       { slug: "corrected-calcium", name: "Düzeltilmiş Kalsiyum", desc: "Albumin'e göre Ca+2 hesaplama" },
       { slug: "anion-gap", name: "Anyon Açığı", desc: "Metabolik asidoz ayırıcı tanısı (± albumin düzeltmesi)" },
+      { slug: "kdigo-kbh", name: "KDIGO KBH Sınıflaması", desc: "GFR × albüminüri risk ısı haritası — G/A evresi, izlem sıklığı, sevk" },
+      { slug: "egfr-sistatin", name: "Sistatin C ile eGFR", desc: "CKD-EPI 2012 sistatin ve 2021 kreatinin-sistatin denklemleri" },
+      { slug: "kreatinin-klirensi-24s", name: "24 Saatlik Kreatinin Klirensi", desc: "Ölçülmüş CrCl, 1,73 m² normalizasyonu ve toplama yeterliliği" },
+      { slug: "serbest-su-klirensi", name: "Elektrolitsiz Serbest Su Klirensi", desc: "Hiponatremide Furst oranı ve sıvı kısıtlaması hedefi" },
+      { slug: "hiponatremi-algoritma", name: "Hiponatremi Tanı Algoritması", desc: "Serum/idrar osmolalitesi, idrar Na ve hacim durumuyla basamaklı ayırıcı tanı" },
+      { slug: "tmp-gfr", name: "TmP/GFR ve FEPO₄", desc: "Fosfatın renal eşiği — hipofosfatemide renal kayıp ayrımı" },
+      { slug: "fraksiyonel-atilim", name: "Fraksiyonel Magnezyum ve Ürik Asit Atılımı", desc: "FEMg (renal/böbrek dışı Mg kaybı) ve FEUA (hiponatremide SIADH)" },
+      { slug: "mehran-kin", name: "Mehran Kontrast Nefropatisi Skoru", desc: "Koroner girişim sonrası kontrast ilişkili AKI ve diyaliz riski" },
+      { slug: "hrs-aki", name: "Hepatorenal Sendrom (HRS-AKI)", desc: "ICA tanı ölçütleri ve ICA-AKI evrelemesi" },
+      { slug: "stone-skoru", name: "STONE Skoru", desc: "Yan ağrısında üreter taşı olasılığı — 0–13" },
     ]
   },
   {
@@ -61,6 +71,16 @@ const TOOLS_DATABASE = [
       { slug: "essdai", name: "ESSDAI", desc: "Sjögren Hastalık Aktivite İndeksi — 12 ekstraglandüler domain" },
       { slug: "mrss", name: "mRSS", desc: "Modifiye Rodnan Deri Skoru — sistemik skleroz deri fibrozisi (17 bölge)" },
       { slug: "behcet", name: "Behçet — ICBD 2014", desc: "Behçet hastalığı tanı kriterleri — ağırlıklı puanlama (≥ 4 puan)" },
+      { slug: "ra-2010", name: "ACR/EULAR 2010 RA Kriterleri", desc: "Romatoid artrit sınıflaması — eklem, seroloji, akut faz, süre (≥ 6)" },
+      { slug: "sle-2019", name: "EULAR/ACR 2019 SLE Kriterleri", desc: "ANA giriş kriteri, ağırlıklı klinik ve immünolojik alanlar (≥ 10)" },
+      { slug: "dev-hucreli-arterit", name: "ACR/EULAR 2022 Dev Hücreli Arterit", desc: "GCA sınıflama kriterleri — klinik, laboratuvar, görüntüleme, biyopsi (≥ 6)" },
+      { slug: "pmr-2012", name: "EULAR/ACR 2012 PMR Kriterleri", desc: "Polimiyalji romatika sınıflaması — ultrasonsuz ≥ 4, ultrasonla ≥ 5" },
+      { slug: "asas-axspa", name: "ASAS Aksiyel SpA Kriterleri", desc: "Aksiyel spondiloartrit — görüntüleme kolu ve HLA-B27 klinik kolu" },
+      { slug: "caspar", name: "CASPAR Kriterleri", desc: "Psoriatik artrit sınıflaması — psoriazis, tırnak, RF, daktilit, yeni kemik (≥ 3)" },
+      { slug: "ssc-2013", name: "ACR/EULAR 2013 Sistemik Skleroz", desc: "SSc sınıflama kriterleri — alan başına en yüksek madde (≥ 9)" },
+      { slug: "sjogren-2016", name: "ACR/EULAR 2016 Sjögren Kriterleri", desc: "Primer Sjögren sınıflaması — biyopsi, anti-SSA, kuruluk testleri (≥ 4)" },
+      { slug: "anca-vaskulit", name: "ACR/EULAR 2022 ANCA Vaskülitleri", desc: "GPA, MPA ve EGPA sınıflama kriterleri aynı bulgulardan" },
+      { slug: "yamaguchi", name: "Yamaguchi Kriterleri", desc: "Erişkin başlangıçlı Still hastalığı — majör, minör ve dışlama kriterleri" },
     ]
   },
   {

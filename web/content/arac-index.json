@@ -50,6 +50,11 @@
   "desc": "Mutlak nötrofil sayısı ve nötropeni evrelemesi"
  },
  {
+  "slug": "anca-vaskulit",
+  "name": "ACR/EULAR 2022 ANCA Vaskülitleri",
+  "desc": "GPA, MPA ve EGPA sınıflama kriterleri aynı bulgulardan"
+ },
+ {
   "slug": "anion-gap",
   "name": "Anyon Açığı",
   "desc": "Metabolik asidoz ayırıcı tanısı (± albumin düzeltmesi)"
@@ -83,6 +88,11 @@
   "slug": "ariscat",
   "name": "ARISCAT",
   "desc": "Preoperatif pulmoner komplikasyon riski — 7 değişken, düzeltilebilir yük okuması"
+ },
+ {
+  "slug": "asas-axspa",
+  "name": "ASAS Aksiyel SpA Kriterleri",
+  "desc": "Aksiyel spondiloartrit — görüntüleme kolu ve HLA-B27 klinik kolu"
  },
  {
   "slug": "asdas",
@@ -180,6 +190,11 @@
   "desc": "Cerrahi hastada VTE risk modeli — skoru değiştirmeden kanama riskini ayrıca okur"
  },
  {
+  "slug": "caspar",
+  "name": "CASPAR Kriterleri",
+  "desc": "Psoriatik artrit sınıflaması — psoriazis, tırnak, RF, daktilit, yeni kemik (≥ 3)"
+ },
+ {
   "slug": "cat-copd",
   "name": "CAT Skoru",
   "desc": "KOAH Değerlendirme Testi — 8 Likert maddesi, semptom yükü"
@@ -260,6 +275,11 @@
   "desc": "Papül çapı ve kontrollerle pozitif/negatif — dermografizm ve histamin denetimi"
  },
  {
+  "slug": "dev-hucreli-arterit",
+  "name": "ACR/EULAR 2022 Dev Hücreli Arterit",
+  "desc": "GCA sınıflama kriterleri — klinik, laboratuvar, görüntüleme, biyopsi (≥ 6)"
+ },
+ {
   "slug": "digoksin-toksisitesi",
   "name": "Digoksin Toksisitesi",
   "desc": "Fab flakon sayısı — düzey, alınan miktar ve ampirik: üç ayrı formül; Fab sonrası düzey yorumlanamaz"
@@ -303,6 +323,11 @@
   "slug": "egfr",
   "name": "eGFR (CKD-EPI 2021)",
   "desc": "Race-free böbrek fonksiyon analizi"
+ },
+ {
+  "slug": "egfr-sistatin",
+  "name": "Sistatin C ile eGFR",
+  "desc": "CKD-EPI 2012 sistatin ve 2021 kreatinin-sistatin denklemleri"
  },
  {
   "slug": "egris",
@@ -373,6 +398,11 @@
   "slug": "frail",
   "name": "FRAIL Skalası",
   "desc": "Kırılganlık (frailty) tarama — Sağlıklı / Pre-kırılgan / Kırılgan"
+ },
+ {
+  "slug": "fraksiyonel-atilim",
+  "name": "Fraksiyonel Magnezyum ve Ürik Asit Atılımı",
+  "desc": "FEMg (renal/böbrek dışı Mg kaybı) ve FEUA (hiponatremide SIADH)"
  },
  {
   "slug": "fried-fenotip",
@@ -480,6 +510,11 @@
   "desc": "Kaydıran ile çıkaranı ayırır — kalsiyum ve insülin potasyumu DÜŞÜRMEZ, etkileri bitince geri çıkar"
  },
  {
+  "slug": "hiponatremi-algoritma",
+  "name": "Hiponatremi Tanı Algoritması",
+  "desc": "Serum/idrar osmolalitesi, idrar Na ve hacim durumuyla basamaklı ayırıcı tanı"
+ },
+ {
   "slug": "hodgkin-ips",
   "name": "Hodgkin IPS",
   "desc": "İleri evre Hodgkin lenfomada Hasenclever skoru — 5 yıllık progresyonsuz sağkalım"
@@ -488,6 +523,11 @@
   "slug": "homa-ir",
   "name": "HOMA-IR",
   "desc": "İnsülin direnci indeksi (açlık glukoz × insülin)"
+ },
+ {
+  "slug": "hrs-aki",
+  "name": "Hepatorenal Sendrom (HRS-AKI)",
+  "desc": "ICA tanı ölçütleri ve ICA-AKI evrelemesi"
  },
  {
   "slug": "hscore",
@@ -540,6 +580,11 @@
   "desc": "Akut böbrek hasarı evrelemesi (kreatinin + idrar çıkışı)"
  },
  {
+  "slug": "kdigo-kbh",
+  "name": "KDIGO KBH Sınıflaması",
+  "desc": "GFR × albüminüri risk ısı haritası — G/A evresi, izlem sıklığı, sevk"
+ },
+ {
   "slug": "khorana",
   "name": "Khorana Skoru",
   "desc": "Kemoterapi ilişkili VTE riski"
@@ -558,6 +603,11 @@
   "slug": "kml-risk",
   "name": "KML Risk Skoru (ELTS · Sokal)",
   "desc": "Kronik miyeloid löseminin tanı anı risk sınıflaması — iki denklem yan yana"
+ },
+ {
+  "slug": "kreatinin-klirensi-24s",
+  "name": "24 Saatlik Kreatinin Klirensi",
+  "desc": "Ölçülmüş CrCl, 1,73 m² normalizasyonu ve toplama yeterliliği"
  },
  {
   "slug": "ktv",
@@ -608,6 +658,11 @@
   "slug": "mayo-uc",
   "name": "Ülseratif Kolit Mayo Skoru",
   "desc": "Tam (endoskopili) ya da parsiyel Mayo — hastalık aktivitesi"
+ },
+ {
+  "slug": "mehran-kin",
+  "name": "Mehran Kontrast Nefropatisi Skoru",
+  "desc": "Koroner girişim sonrası kontrast ilişkili AKI ve diyaliz riski"
  },
  {
   "slug": "meld-na",
@@ -735,6 +790,11 @@
   "desc": "Trombotik mikroanjiyopatide TTP (ağır ADAMTS13 eksikliği) olasılığı — 0–7"
  },
  {
+  "slug": "pmr-2012",
+  "name": "EULAR/ACR 2012 PMR Kriterleri",
+  "desc": "Polimiyalji romatika sınıflaması — ultrasonsuz ≥ 4, ultrasonla ≥ 5"
+ },
+ {
   "slug": "pni",
   "name": "PNI",
   "desc": "Prognostik Nütrisyon İndeksi — albumin + lenfosit"
@@ -778,6 +838,11 @@
   "slug": "r-iss",
   "name": "R-ISS",
   "desc": "Multipl miyelom revize uluslararası evreleme — β2M, albümin, LDH, FISH"
+ },
+ {
+  "slug": "ra-2010",
+  "name": "ACR/EULAR 2010 RA Kriterleri",
+  "desc": "Romatoid artrit sınıflaması — eklem, seroloji, akut faz, süre (≥ 6)"
  },
  {
   "slug": "rankin",
@@ -850,6 +915,11 @@
   "desc": "Yedi ilaç — doz tabanı ilaca göre değişir; remifentanil tek dakika tabanlı olan"
  },
  {
+  "slug": "serbest-su-klirensi",
+  "name": "Elektrolitsiz Serbest Su Klirensi",
+  "desc": "Hiponatremide Furst oranı ve sıvı kısıtlaması hedefi"
+ },
+ {
   "slug": "sga",
   "name": "SGA",
   "desc": "Sübjektif Global Değerlendirme — klinik nütrisyon muayenesi"
@@ -860,9 +930,19 @@
   "desc": "Sol dal bloğu ya da pace ritminde akut MI — özgün ve Smith-modifiye"
  },
  {
+  "slug": "sjogren-2016",
+  "name": "ACR/EULAR 2016 Sjögren Kriterleri",
+  "desc": "Primer Sjögren sınıflaması — biyopsi, anti-SSA, kuruluk testleri (≥ 4)"
+ },
+ {
   "slug": "sle",
   "name": "SLEDAI-2K",
   "desc": "Lupus hastalık aktivite indeksi — 24 tanımlayıcı, 0–105"
+ },
+ {
+  "slug": "sle-2019",
+  "name": "EULAR/ACR 2019 SLE Kriterleri",
+  "desc": "ANA giriş kriteri, ağırlıklı klinik ve immünolojik alanlar (≥ 10)"
  },
  {
   "slug": "sodium",
@@ -890,6 +970,11 @@
   "desc": "PCR · ACR · FENa · FEÜre · TTKG · İdrar Anyon Açığı · İdrar Osmolal Gap"
  },
  {
+  "slug": "ssc-2013",
+  "name": "ACR/EULAR 2013 Sistemik Skleroz",
+  "desc": "SSc sınıflama kriterleri — alan başına en yüksek madde (≥ 9)"
+ },
+ {
   "slug": "status-epileptikus",
   "name": "Status Epileptikus",
   "desc": "Yükleme dozları ve HIZ sınırları — fenitoin 50 mg/dk aşılırsa hipotansiyon ve aritmi"
@@ -903,6 +988,11 @@
   "slug": "stess",
   "name": "STESS",
   "desc": "Status epileptikus şiddet skoru — hastanede ölüm öngörüsü (≥ 3 olumsuz)"
+ },
+ {
+  "slug": "stone-skoru",
+  "name": "STONE Skoru",
+  "desc": "Yan ağrısında üreter taşı olasılığı — 0–13"
  },
  {
   "slug": "tft",
@@ -933,6 +1023,11 @@
   "slug": "tirads",
   "name": "ACR TI-RADS",
   "desc": "Tiroid nodülü US değerlendirme — kompozisyon, ekojenite, şekil, sınır, odaklar + İİAB kararı"
+ },
+ {
+  "slug": "tmp-gfr",
+  "name": "TmP/GFR ve FEPO₄",
+  "desc": "Fosfatın renal eşiği — hipofosfatemide renal kayıp ayrımı"
  },
  {
   "slug": "tnss",
@@ -983,5 +1078,10 @@
   "slug": "wfns",
   "name": "WFNS SAK Derecesi",
   "desc": "Subaraknoid kanamada GKS + motor defisitle derece I–V"
+ },
+ {
+  "slug": "yamaguchi",
+  "name": "Yamaguchi Kriterleri",
+  "desc": "Erişkin başlangıçlı Still hastalığı — majör, minör ve dışlama kriterleri"
  }
 ]
