@@ -130,6 +130,11 @@
    "brans": "endokrinoloji",
    "slug": "men1-somatotropinoma-akromegali",
    "baslik": "MEN1'de Akromegali ve Somatotropinoma: Tanısal Zorluklar ve Yönetim"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
+   "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
   }
  ],
  "endokrinoloji/amenore-ve-kadin-hipogonadizmi": [
@@ -176,6 +181,11 @@
    "brans": "endokrinoloji",
    "slug": "hipofiz-adenomlari",
    "baslik": "Hipofiz Nöroendokrin Tümörleri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
+   "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
   },
   {
    "brans": "endokrinoloji",
@@ -637,6 +647,23 @@
    "baslik": "Osteoporoz Tedavisi: Farmakoterapi Endikasyonları, Modaliteler ve Yönetim Stratejileri"
   }
  ],
+ "endokrinoloji/hipofiz-hastaliklari-klinik-akademik-kilavuz": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipopituitarizm-ve-sheehan-sendromu",
+   "baslik": "Hipopitüitarizm ve Sheehan Sendromu"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "men1-somatotropinoma-akromegali",
+   "baslik": "MEN1'de Akromegali ve Somatotropinoma: Tanısal Zorluklar ve Yönetim"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "akromegali-ve-gigantizm",
+   "baslik": "Büyüme Hormonu Patolojileri: Akromegali ve Gigantizm"
+  }
+ ],
  "endokrinoloji/hipokalsemi-ve-hipoparatiroidi": [
   {
    "brans": "endokrinoloji",
@@ -652,18 +679,8 @@
  "endokrinoloji/hipopituitarizm-ve-sheehan-sendromu": [
   {
    "brans": "endokrinoloji",
-   "slug": "arka-hipofiz-bozukluklari-di-ve-siadh",
-   "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipofiz-adenomlari",
-   "baslik": "Hipofiz Nöroendokrin Tümörleri"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "on-hipofiz-hastaliklari-giris",
-   "baslik": "Ön Hipofiz Hastalıklarına Giriş"
+   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
+   "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
   }
  ],
  "endokrinoloji/hipotiroidi-hashimoto-miksoedem": [
@@ -1129,6 +1146,11 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
+   "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "on-hipofiz-hastaliklari-giris",
    "baslik": "Ön Hipofiz Hastalıklarına Giriş"
   },
@@ -1136,11 +1158,6 @@
    "brans": "endokrinoloji",
    "slug": "santral-hipotiroidizm",
    "baslik": "Santral Hipotiroidizm"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "cushing-sendromu-genetik-ve-inovasyonlar",
-   "baslik": "Cushing Sendromu: Genetik, Farmakoloji ve Tanıda Yenilikler"
   }
  ],
  "endokrinoloji/men1-somatotropinoma-akromegali": [
@@ -1153,6 +1170,11 @@
    "brans": "endokrinoloji",
    "slug": "hipofiz-adenomlari",
    "baslik": "Hipofiz Nöroendokrin Tümörleri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
+   "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
   }
  ],
  "endokrinoloji/men1-spironolakton-cift-mekanizma": [
@@ -1238,6 +1260,11 @@
    "brans": "endokrinoloji",
    "slug": "hipofiz-adenomlari",
    "baslik": "Hipofiz Nöroendokrin Tümörleri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
+   "baslik": "Hipofiz Hastalıkları Klinik ve Akademik Kılavuzu"
   },
   {
    "brans": "endokrinoloji",
