@@ -181,6 +181,11 @@ const TOOLS_DATABASE = [
       { slug: "uas7", name: "UAS7", desc: "Ürtikar Aktivite Skoru (7 gün) — 0–42, omalizumab eşiği" },
       { slug: "dlqi", name: "DLQI", desc: "Dermatoloji Yaşam Kalitesi İndeksi — 10 madde, 0–30" },
       { slug: "scorad", name: "SCORAD", desc: "Atopik dermatit şiddet skoru — alan + yoğunluk + subjektif" },
+      { slug: "act", name: "ACT", desc: "Astım Kontrol Testi — 5 soru, kontrolsüz/iyi kontrol/tam kontrol" },
+      { slug: "aria-rinit", name: "ARIA Rinit Sınıflaması", desc: "Allerjik rinit — intermitan/persistan × hafif/orta-ağır" },
+      { slug: "spesifik-ige", name: "Spesifik IgE Sınıfı", desc: "ImmunoCAP kU/L değerinden sınıf 0–6 — çoklu allerjen, ≥ 0,35 pozitif" },
+      { slug: "deri-prick-testi", name: "Deri Prick Testi", desc: "Papül çapı ve kontrollerle pozitif/negatif — dermografizm ve histamin denetimi" },
+      { slug: "eozinofil-sayisi", name: "Mutlak Eozinofil Sayısı", desc: "Lökosit × % — eozinofili şiddeti ve astımda tip 2 eşikleri (150/300)" },
     ]
   },
   {

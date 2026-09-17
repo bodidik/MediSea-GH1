@@ -463,6 +463,13 @@
         "eslesen": "Khorana Skoru"
       }
     ],
+    "hematoloji/kronik-eozinofilik-losemi-cel": [
+      {
+        "slug": "eozinofil-sayisi",
+        "name": "Mutlak Eozinofil Sayısı",
+        "eslesen": "Mutlak Eozinofil Sayısı"
+      }
+    ],
     "hematoloji/m7-flipi-ngs-paneli": [
       {
         "slug": "flipi",
@@ -1292,6 +1299,13 @@
         "eslesen": "Mini-Cog"
       }
     ],
+    "eozinofil-sayisi": [
+      {
+        "yol": "hematoloji/kronik-eozinofilik-losemi-cel",
+        "baslik": "Kronik Eozinofilik Lösemi (CEL)",
+        "eslesen": "Mutlak Eozinofil Sayısı"
+      }
+    ],
     "4t-hit": [
       {
         "yol": "hematoloji/trombositopenide-antikoagulasyon",
@@ -1390,9 +1404,9 @@
   },
   "olcum": {
     "konu": 489,
-    "arac": 153,
-    "araciOlanKonu": 102,
-    "konusuOlanArac": 35,
-    "bag": 125
+    "arac": 157,
+    "araciOlanKonu": 103,
+    "konusuOlanArac": 36,
+    "bag": 126
   }
 }

@@ -33,6 +33,7 @@ export default function SkorPaneli({
   aktif,
   eksikMetni,
   ek,
+  skorBasligi = "SKOR",
 }: {
   skor: number | null;
   payda?: number;
@@ -40,6 +41,8 @@ export default function SkorPaneli({
   aktif: Bant | null;
   eksikMetni: string;
   ek?: ReactNode;
+  /** Kutudaki üst etiket — skor olmayan sayılarda (CrCl, hücre sayısı) değiştirilir. */
+  skorBasligi?: string;
 }) {
   const c = aktif ? RENK[aktif.renk] : null;
   return (
@@ -49,8 +52,8 @@ export default function SkorPaneli({
         <div className={`p-6 rounded-[2rem] border-2 border-dashed ${c.border} ${c.bg} space-y-4`}>
           <div className="flex items-center gap-4">
             <div className="w-20 h-20 rounded-2xl bg-blue-900 flex flex-col items-center justify-center shadow-lg border-t-4 border-amber-400 shrink-0">
-              <span className="text-[9px] font-black text-blue-200 uppercase">SKOR</span>
-              <span className="text-3xl font-black text-white leading-none">{String(skor).replace(".", ",")}</span>
+              <span className="text-[9px] font-black text-blue-200 uppercase">{skorBasligi}</span>
+              <span className={`${String(skor).length > 4 ? "text-lg" : String(skor).length > 3 ? "text-2xl" : "text-3xl"} font-black text-white leading-none`}>{String(skor).replace(".", ",")}</span>
               {payda !== undefined && <span className="text-[9px] text-blue-200">/ {payda}</span>}
             </div>
             <div className="min-w-0">

@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "SCORAD — Atopik dermatit şiddet skoru",
-  description: "SCORAD: Atopik dermatit şiddet skoru — alan + yoğunluk + subjektif. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/scorad" },
+  title: "Spesifik IgE Sınıfı — ImmunoCAP kU/L değerinden sınıf",
+  description: "Spesifik IgE Sınıfı: ImmunoCAP kU/L değerinden sınıf 0–6 — çoklu allerjen, ≥ 0,35 pozitif. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/spesifik-ige" },
   openGraph: {
     type: "website",
-    title: "SCORAD — Atopik dermatit şiddet skoru",
-    description: "SCORAD: Atopik dermatit şiddet skoru — alan + yoğunluk + subjektif. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/scorad",
+    title: "Spesifik IgE Sınıfı — ImmunoCAP kU/L değerinden sınıf",
+    description: "Spesifik IgE Sınıfı: ImmunoCAP kU/L değerinden sınıf 0–6 — çoklu allerjen, ≥ 0,35 pozitif. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/spesifik-ige",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "SCORAD",
-          aciklama: "SCORAD: Atopik dermatit şiddet skoru — alan + yoğunluk + subjektif. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/scorad",
+          ad: "Spesifik IgE Sınıfı",
+          aciklama: "Spesifik IgE Sınıfı: ImmunoCAP kU/L değerinden sınıf 0–6 — çoklu allerjen, ≥ 0,35 pozitif. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/spesifik-ige",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "SCORAD", yol: "/tools/scorad" },
+          { ad: "Spesifik IgE Sınıfı", yol: "/tools/spesifik-ige" },
         ])}
       />
       {children}
@@ -42,11 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Allerji & İmmünoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/spesifik-ige" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Spesifik IgE Sınıfı
-              </Link>
-            </li>
             <li>
               <Link href="/tools/tnss" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 TNSS
@@ -70,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/aria-rinit" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 ARIA Rinit Sınıflaması
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/deri-prick-testi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Deri Prick Testi
               </Link>
             </li>
           </ul>

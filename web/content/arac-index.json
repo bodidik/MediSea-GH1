@@ -60,6 +60,11 @@
   "desc": "Akut fizyoloji ve kronik sağlık değerlendirmesi — YBÜ mortalite tahmini"
  },
  {
+  "slug": "aria-rinit",
+  "name": "ARIA Rinit Sınıflaması",
+  "desc": "Allerjik rinit — intermitan/persistan × hafif/orta-ağır"
+ },
+ {
   "slug": "ariscat",
   "name": "ARISCAT",
   "desc": "Preoperatif pulmoner komplikasyon riski — 7 değişken, düzeltilebilir yük okuması"
@@ -210,6 +215,11 @@
   "desc": "Romatoid artrit hastalık aktivite skoru"
  },
  {
+  "slug": "deri-prick-testi",
+  "name": "Deri Prick Testi",
+  "desc": "Papül çapı ve kontrollerle pozitif/negatif — dermografizm ve histamin denetimi"
+ },
+ {
   "slug": "digoksin-toksisitesi",
   "name": "Digoksin Toksisitesi",
   "desc": "Fab flakon sayısı — düzey, alınan miktar ve ampirik: üç ayrı formül; Fab sonrası düzey yorumlanamaz"
@@ -248,6 +258,11 @@
   "slug": "endocarditis",
   "name": "Duke Kriterleri",
   "desc": "Enfektif Endokardit tanı deşifresi"
+ },
+ {
+  "slug": "eozinofil-sayisi",
+  "name": "Mutlak Eozinofil Sayısı",
+  "desc": "Lökosit × % — eozinofili şiddeti ve astımda tip 2 eşikleri (150/300)"
  },
  {
   "slug": "esas",
@@ -683,6 +698,11 @@
   "slug": "sofa",
   "name": "SOFA Skoru",
   "desc": "Yoğun bakımda organ yetmezliği takibi"
+ },
+ {
+  "slug": "spesifik-ige",
+  "name": "Spesifik IgE Sınıfı",
+  "desc": "ImmunoCAP kU/L değerinden sınıf 0–6 — çoklu allerjen, ≥ 0,35 pozitif"
  },
  {
   "slug": "spot-urine",

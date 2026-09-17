@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "DLQI — Dermatoloji Yaşam Kalitesi İndeksi",
-  description: "DLQI: Dermatoloji Yaşam Kalitesi İndeksi — 10 madde, 0–30. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/dlqi" },
+  title: "Deri Prick Testi — Papül çapı ve kontrollerle",
+  description: "Deri Prick Testi: Papül çapı ve kontrollerle pozitif/negatif — dermografizm ve histamin denetimi. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/deri-prick-testi" },
   openGraph: {
     type: "website",
-    title: "DLQI — Dermatoloji Yaşam Kalitesi İndeksi",
-    description: "DLQI: Dermatoloji Yaşam Kalitesi İndeksi — 10 madde, 0–30. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/dlqi",
+    title: "Deri Prick Testi — Papül çapı ve kontrollerle",
+    description: "Deri Prick Testi: Papül çapı ve kontrollerle pozitif/negatif — dermografizm ve histamin denetimi. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/deri-prick-testi",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "DLQI",
-          aciklama: "DLQI: Dermatoloji Yaşam Kalitesi İndeksi — 10 madde, 0–30. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/dlqi",
+          ad: "Deri Prick Testi",
+          aciklama: "Deri Prick Testi: Papül çapı ve kontrollerle pozitif/negatif — dermografizm ve histamin denetimi. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/deri-prick-testi",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "DLQI", yol: "/tools/dlqi" },
+          { ad: "Deri Prick Testi", yol: "/tools/deri-prick-testi" },
         ])}
       />
       {children}
@@ -42,6 +42,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Allerji & İmmünoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/dlqi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                DLQI
+              </Link>
+            </li>
             <li>
               <Link href="/tools/eozinofil-sayisi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Mutlak Eozinofil Sayısı
@@ -65,11 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/uas7" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 UAS7
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/act" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ACT
               </Link>
             </li>
           </ul>

@@ -189,6 +189,7 @@ export default function CockcroftGaultPage() {
         skor={sonuc}
         bantlar={BANTLAR}
         aktif={bant}
+        skorBasligi="mL/dk"
         eksikMetni="Yaş, ağırlık ve kreatinin girin"
         ek={
           sonuc !== null ? (
