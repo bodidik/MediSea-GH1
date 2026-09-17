@@ -1,0 +1,40 @@
+{
+  "title": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri",
+  "meta": {
+    "updatedAt": "17 Eyl 2026",
+    "tags": [
+      "Endokrinoloji",
+      "Hipofiz",
+      "Hipopitüitarizm",
+      "Hipofiz Yetmezliği",
+      "Hormon Replasmanı",
+      "Hidrokortizon",
+      "Levotiroksin",
+      "Büyüme Hormonu"
+    ],
+    "parent": "hipofiz-yetmezligi",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "Temel Yaklaşım",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Hipofiz yetmezliğinde temel yaklaşım, eksik olan hedef bez hormonlarının fizyolojik dozlarda yerine konmasıdır.</p>"
+    },
+    {
+      "heading": "Glukokortikoid Replasmanı (ACTH Yetersizliği)",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Formülasyonlar:</strong> <strong>Hidrokortizon</strong> (15–20 mg/gün, 2-3 doza bölünerek; en yüksek doz sabah uyanırken verilmelidir) veya <strong>Prednizon/Prednisolon</strong> (2.5–5 mg/gün).</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Stres Dozlaması Eğitimi:</strong> Hafif ateşli hastalıklarda veya küçük cerrahi işlemlerde idame doz 2-3 katına çıkarılır. Major cerrahilerde veya travmada günlük 100–150 mg IV hidrokortizon uygulanır.</li><li class=\"bg-slate-50 p-2 rounded\">• ⚠️ <strong>HAYATİ ALTIN KURAL:</strong> Sekonder hipotiroidizm ve santral adrenal yetmezlik birlikte bulunuyorsa, <strong>Glukokortikoid tedavisi HER ZAMAN Levotiroksin tedavisinden en az 24-48 saat ÖNCE başlanmalıdır!</strong> Aksi takdirde, tiroid hormonunun metabolizmayı hızlandırması mevcut kortizol yıkımını artırarak <strong>akut adrenal krizi (şoku)</strong> tetikleyebilir.</li></ul></div>"
+    },
+    {
+      "heading": "Tiroid Hormon Replasmanı (TSH Yetersizliği)",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>İlaç:</strong> <strong>L-Tiroksin (Levotiroksin)</strong>.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Doz Titrasyonu:</strong> Tedavi takibinde <strong>TSH DÜZEYİ KULLANILAMAZ</strong> (çünkü TSH üretimi bozuktur). Doz titrasyonu, klinik yanıt ve serum <strong>Serbest T4 (fT4) seviyesinin referans aralığın üst-orta kısmında</strong> tutulması esasına göre yapılır.</li></ul></div>"
+    },
+    {
+      "heading": "Seks Steroid Replasmanı (LH/FSH Yetersizliği)",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Erkeklerde:</strong> Serum testosteron düzeyini normale getirmek için transdermal testosteron jelleri veya intramüsküler testosteron enjeksiyonları (Testosteron Enantat / Undekanoat).</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kadınlarda (Premenopozal):</strong> Uterusu olan kadınlarda endometrial hiperplaziyi önlemek için <strong>Östrojen + Siklik Progestin</strong> kombine tedavisi; histerektomili kadınlarda izole östrojen. Postmenopozal kadınlarda replasman gerekmez.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Fertilite İndüksiyonu:</strong> Çocuk istemi olan erkek ve kadınlarda östrojen/testosteron tedavisi kesilerek eksojen <strong>gonadotropinler (hCG + FSH/hMG)</strong> veya pulsatif <strong>GnRH</strong> tedavisi uygulanır.</li></ul></div>"
+    },
+    {
+      "heading": "Büyüme Hormonu (GH) Replasmanı",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Erişkin GHD vakalarında yaşam kalitesini, vücut kompozisyonunu ve kemik mineral yoğunluğunu düzeltmek için düşük doz <strong>rekombinant insan Büyüme Hormonu (rhGH)</strong> (başlangıç dozu 0.1–0.3 mg/gün) başlanır. Doz, serum IGF-1 düzeyleri yaş ve cinsiyete uygun aralıkta tutulacak şekilde aylık olarak titre edilir.</li></ul></div>"
+    }
+  ]
+}

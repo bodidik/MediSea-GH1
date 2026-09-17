@@ -1,0 +1,27 @@
+{
+  "title": "Hipofiz Yetmezliği: Tanısal Değerlendirme ve Biyokimyasal Testler",
+  "meta": {
+    "updatedAt": "17 Eyl 2026",
+    "tags": [
+      "Endokrinoloji",
+      "Hipofiz",
+      "Hipopitüitarizm",
+      "Hipofiz Yetmezliği",
+      "İnsülin Tolerans Testi",
+      "ACTH Uyarı Testi",
+      "Dinamik Testler"
+    ],
+    "parent": "hipofiz-yetmezligi",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "Hormonal Akslara Göre Testler",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Hipofiz hormonlarının salgılanma dinamikleri (pulsatif, sirkadiyen veya strese yanıtlı) göz önünde bulundurularak bazal veya dinamik uyarım testleri uygulanır.</p><p class=\"text-[10.5px] text-slate-500 mb-1\">Tablo geniştir — yatayda kaydırarak görebilirsin.</p><div class=\"overflow-x-auto mb-4\"><table class=\"w-full text-[11px] border-collapse\"><thead><tr class=\"bg-slate-100\"><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Hormonal Aks</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Bazal Değerlendirme</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Dinamik (Uyarım) Testleri</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Tanısal Eşik Değerler &amp; Yorum</th></tr></thead><tbody><tr><td class=\"border border-slate-200 p-2 font-bold\"><strong>Kortikotrop (ACTH)</strong></td><td class=\"border border-slate-200 p-2\">Sabah 08:00–09:00 Serum Kortizolü</td><td class=\"border border-slate-200 p-2\"><strong>1) İnsülin Tolerans Testi (ITT)</strong> (Altın Standart)<br><strong>2) Standart Doz ACTH Testi</strong> (250 µg Cosyntropin)</td><td class=\"border border-slate-200 p-2\">• Kortizol &gt;13-15 µg/dL (&gt;400-450 nmol/L): Yetersizlik dışlanır.<br>• Kortizol &lt;3-5 µg/dL (&lt;50-100 nmol/L): Yetersizlik doğrulanır.<br>• Uyarım testinde pik kortizol &lt;18.1 µg/dL: Adrenal Yetersizlik.</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\"><strong>Tirotrop (TSH)</strong></td><td class=\"border border-slate-200 p-2\">Serbest T4 (fT4) ve TSH</td><td class=\"border border-slate-200 p-2\">Dinamik test önerilmez / rutinde kullanılmaz.</td><td class=\"border border-slate-200 p-2\">• Düşük veya sınırda fT4 ile birlikte uygunsuz şekilde düşük/normal TSH: Santral Hipotiroidizm.<br><em>(TSH tek başına takipte kullanılamaz)</em>.</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\"><strong>Gonadotrop (FSH/LH)</strong></td><td class=\"border border-slate-200 p-2\"><strong>Erkek:</strong> Testosteron, LH, FSH<br><strong>Kadın:</strong> Östradiol, LH, FSH</td><td class=\"border border-slate-200 p-2\">GnRH testi (rutinde sınırlı değerdedir).</td><td class=\"border border-slate-200 p-2\">• <strong>Erkek:</strong> Düşük sabah testosteronu ile düşük/normal LH-FSH.<br>• <strong>Kadın (Premenopozal):</strong> Düşük östradiol ile düşük/normal LH-FSH.<br>• <strong>Kadın (Postmenopozal):</strong> LH/FSH'nin yüksek olmaması yetmezliktir.</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\"><strong>Somatotrop (GH)</strong></td><td class=\"border border-slate-200 p-2\">Serum IGF-1 (Yaş ve cinsiyete göre)</td><td class=\"border border-slate-200 p-2\"><strong>1) İnsülin Tolerans Testi (ITT)</strong><br><strong>2) GHRH + Arjinin Testi</strong><br><strong>3) Glukagon Testi / Makimorelin</strong></td><td class=\"border border-slate-200 p-2\">• ≥3 hipofiz aks eksikliği + Düşük IGF-1 varlığında uyarım testi gerekmez.<br>• ITT sırasında kan şekeri &lt;40 mg/dL iken pik GH &lt;3 µg/L: Ağır GH Eksikliği.</td></tr></tbody></table></div>"
+    },
+    {
+      "heading": "Görüntüleme Yöntemi",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kontrastlı Hipofiz MRG:</strong> Sellar ve suprasellar yapıların, gland kütlesinin, hipofiz sapı kalınlığının/bütünlüğünün, kistik komponentlerin ve posterior hipofiz T1 parlak sinyalinin (\"bright spot\") değerlendirilmesinde <strong>altın standarttır</strong>.</li></ul></div>"
+    }
+  ]
+}

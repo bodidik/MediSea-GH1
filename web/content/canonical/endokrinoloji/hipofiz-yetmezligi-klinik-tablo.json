@@ -1,0 +1,44 @@
+{
+  "title": "Hipofiz Yetmezliği: Klinik Tablo ve Hormonal Kayıp Hiyerarşisi",
+  "meta": {
+    "updatedAt": "17 Eyl 2026",
+    "tags": [
+      "Endokrinoloji",
+      "Hipofiz",
+      "Hipopitüitarizm",
+      "Hipofiz Yetmezliği",
+      "GH Eksikliği",
+      "Santral Hipogonadizm",
+      "Santral Hipotiroidizm",
+      "Santral Adrenal Yetmezlik"
+    ],
+    "parent": "hipofiz-yetmezligi",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Hormonal Kayıp Hiyerarşisi",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Yavaş büyüyen kitle lezyonlarına bağlı kademeli hipofiz dokusu hasarında tropik hormonların kaybolma sırası genellikle sabittir:</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">GH → FSH / LH → TSH → ACTH → PRL</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\"><em>(Kortikotrop hücreler kompresyon ve hasara en dirençli gruptur ve işlevini en son kaybeder).</em></p><p class=\"text-[10.5px] text-slate-500 mb-1\">Şema geniştir — yatayda kaydırarak görebilirsin.</p><div class=\"overflow-x-auto mb-4 border border-slate-200 rounded-xl bg-slate-50 p-3\"><pre class=\"text-[10px] leading-snug text-slate-700 font-mono\">                     [ Ön Hipofiz Yetersizliği ]\n                                  |\n    +-----------+-----------------+-----------------+-----------+\n    |           |                 |                 |           |\n [ ↓ GH ]   [ ↓ FSH/LH ]       [ ↓ TSH ]        [ ↓ ACTH ]   [ ↓ PRL ]\n    |           |                 |                 |           |\nAbdominal   Sekonder          Santral           Santral      Agalakti\nObezite,    Hipogonadizm      Hipotiroidizm     Adrenal      (Doğum\nKas Kaybı,  (Amenore /        (Soğuk            Yetersizliği  Sonrası)\nOsteopeni   Libido Kaybı)     İntoleransı)     (Hipotansiyon,\n                                               Hipoglisemi)</pre></div>"
+    },
+    {
+      "heading": "Büyüme Hormonu (GH) Eksikliği",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Erişkin Başlangıçlı GHD:</strong> Abdominal yağ kütlesinde artış, kas kütlesinde ve egzersiz kapasitesinde azalma, ciltte incelme/kuruma, dislipidemi, osteopeni/osteoporoz (kırık riskinde artış) ve yaşam kalitesinde belirgin bozulma (sosyal izolasyon, anksiyete).</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Çocukluk Başlangıçlı GHD:</strong> Büyüme hızında duraklama, orantılı boy kısalması, santral obezite; süt çocuklarında ise hayatı tehdit eden <strong>hipoglisemi</strong>.</li></ul></div>"
+    },
+    {
+      "heading": "Gonadotropik (LH/FSH) Eksikliği (Santral Hipogonadizm)",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Erişkin Kadınlar:</strong> Sekonder amenore, oligomenore, infertilite, sıcak basmaları, vajinal atrofi, libido kaybı ve osteoporoz.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Erişkin Erkekler:</strong> Libido kaybı, erektil disfonksiyon, sakal ve vücut kıllarında azalma, testis atrofisi, infertilite, kas kütlesinde azalma ve osteoporoz.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Adolesan ve Çocuklar:</strong> Primer amenore, puberte gecikmesi; infant erkeklerde <strong>mikropenis</strong> ve <strong>kriptorşidizm</strong>.</li></ul></div>"
+    },
+    {
+      "heading": "Tirotrop (TSH) Eksikliği (Santral Hipotiroidizm)",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Klinik Bulgular:</strong> Halsizlik, soğuk intoleransı, kabızlık, cilt kuruluğu, saç dökülmesi, bradikardi, kilo alımı ve zihinsel yavaşlama.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Önemli Nokta:</strong> Primer hipotiroidizmin aksine miksödem tablosu ve goatr nadirdir; klinik bulgular diğer hormon eksiklikleri tarafından maskelenebilir.</li></ul></div>"
+    },
+    {
+      "heading": "Kortikotrop (ACTH) Eksikliği (Santral Adrenal Yetersizlik)",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kronik Bulgular:</strong> Halsizlik, iştahsızlık, kilo kaybı, bulantı, karın ağrısı, kas/eklem ağrıları, postural hipotansiyon, hiponatremi ve hipoglisemi.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Akut Adrenal Kriz:</strong> Enfeksiyon, travma veya cerrahi stres durumunda gelişir; dirençli şok, kusma, konfüzyon ve hipovolemik kollaps ile seyreder.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Ayırıcı Tanı:</strong> Primer adrenal yetmezlikten (Addison) farklı olarak <strong>hiperpigmentasyon görülmez</strong> (ACTH düşüktür) ve <strong>renin-anjiyotensin-aldosteron aksı (RAAS) korunduğu için aldosteron salgısı devam eder</strong> (hiperkalemi görülmez). Kadınlarda adrenal androjen (DHEA-S) kaybına bağlı aksiller/pubik kıl kaybı ve libido düşüklüğü belirgindir.</li></ul></div>"
+    },
+    {
+      "heading": "Prolaktin (PRL) Eksikliği",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• İzole PRL eksikliği son derece nadirdir. En belirgin klinik bulgusu doğum sonrası kadınlarda yetersiz laktasyon veya agalaktidir.</li></ul></div>"
+    }
+  ]
+}

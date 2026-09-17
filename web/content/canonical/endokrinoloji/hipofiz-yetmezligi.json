@@ -1,0 +1,21 @@
+{
+  "title": "Hipofiz Yetmezliği (Anterior Hipofiz Yetersizliği / Hipopitüitarizm) Klinik ve Akademik Rehberi",
+  "meta": {
+    "updatedAt": "17 Eyl 2026",
+    "tags": [
+      "Endokrinoloji",
+      "Hipofiz",
+      "Hipopitüitarizm",
+      "Hipofiz Yetmezliği",
+      "Hormon Replasmanı"
+    ],
+    "parent": "hipofiz-hastaliklari-ana",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\"><strong>Hipofiz yetmezliği (hipopitüitarizm)</strong>; ön hipofiz bezi (adenohipofiz) tarafından sentezlenen bir veya daha fazla tropik hormonun salgılanmasının veya salınımının kısmi ya da tam kaybı ile karakterize kompleks bir endokrinolojik tablodur. Ön hipofiz hormonları (GH, TSH, ACTH, FSH, LH, PRL), hedef periferik endokrin bezlerin (tiroid, adrenal korteks, gonadlar) çalışmasını ve metabolik süreçleri düzenlediği için, merkezi uyarı kaybı periferik bez yetmezliğine ve çoklu sistemik bozukluklara yol açar.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Epidemiyolojik çalışmalarda hipofiz yetmezliğinin prevalansı yaklaşık <strong>milyonda 450 vaka</strong>, yıllık insidansı ise <strong>milyonda 40 yeni vaka</strong> olarak bildirilmiştir. Hipofiz yetmezliği olan hastalarda, özellikle kardiyovasküler hastalıklar, enfeksiyonlar ve yetersiz veya uygunsuz hormon replasman tedavilerine bağlı olarak genel popülasyona kıyasla <strong>mortalite oranı belirgin şekilde artmıştır</strong>.</p>"
+    }
+  ]
+}
