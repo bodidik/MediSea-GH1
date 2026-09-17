@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "FLIPI — Foliküler lenfoma prognoz indeksi",
-  description: "FLIPI: Foliküler lenfoma prognoz indeksi — 0–5 puan, 10 yıllık OS / PF. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/flipi" },
+  title: "DIPSS — Primer miyelofibrozda dinamik prognostik skor",
+  description: "DIPSS: Primer miyelofibrozda dinamik prognostik skor — medyan sağkalım. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/dipss" },
   openGraph: {
     type: "website",
-    title: "FLIPI — Foliküler lenfoma prognoz indeksi",
-    description: "FLIPI: Foliküler lenfoma prognoz indeksi — 0–5 puan, 10 yıllık OS / PF. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/flipi",
+    title: "DIPSS — Primer miyelofibrozda dinamik prognostik skor",
+    description: "DIPSS: Primer miyelofibrozda dinamik prognostik skor — medyan sağkalım. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/dipss",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "FLIPI",
-          aciklama: "FLIPI: Foliküler lenfoma prognoz indeksi — 0–5 puan, 10 yıllık OS / PF. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/flipi",
+          ad: "DIPSS",
+          aciklama: "DIPSS: Primer miyelofibrozda dinamik prognostik skor — medyan sağkalım. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/dipss",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "FLIPI", yol: "/tools/flipi" },
+          { ad: "DIPSS", yol: "/tools/dipss" },
         ])}
       />
       {children}
@@ -42,13 +42,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/hematoloji/folikuler-lenfoma" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Foliküler Lenfoma
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/hematoloji/m7-flipi-ngs-paneli" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri
+              <Link href="/topics/hematoloji/primer-miyelofibrozis" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Primer Miyelofibrozis (PMF)
               </Link>
             </li>
           </ul>
@@ -60,6 +55,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Hematoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/flipi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                FLIPI
+              </Link>
+            </li>
             <li>
               <Link href="/tools/ganzoni" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Ganzoni Demir Açığı
@@ -83,11 +83,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/ipss-r" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 IPSS-R
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/isth-dic" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ISTH DIC Skoru
               </Link>
             </li>
           </ul>

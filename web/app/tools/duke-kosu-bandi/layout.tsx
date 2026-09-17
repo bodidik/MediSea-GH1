@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Duke Kriterleri — Enfektif Endokardit tanı deşifresi",
-  description: "Duke Kriterleri: Enfektif Endokardit tanı deşifresi. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/endocarditis" },
+  title: "Duke Koşu Bandı Skoru — Egzersiz EKG testinde prognoz",
+  description: "Duke Koşu Bandı Skoru: Egzersiz EKG testinde prognoz — süre, ST sapması, angina indeksi. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/duke-kosu-bandi" },
   openGraph: {
     type: "website",
-    title: "Duke Kriterleri — Enfektif Endokardit tanı deşifresi",
-    description: "Duke Kriterleri: Enfektif Endokardit tanı deşifresi. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/endocarditis",
+    title: "Duke Koşu Bandı Skoru — Egzersiz EKG testinde prognoz",
+    description: "Duke Koşu Bandı Skoru: Egzersiz EKG testinde prognoz — süre, ST sapması, angina indeksi. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/duke-kosu-bandi",
   },
 };
 
@@ -22,39 +22,31 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Duke Kriterleri",
-          aciklama: "Duke Kriterleri: Enfektif Endokardit tanı deşifresi. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/endocarditis",
+          ad: "Duke Koşu Bandı Skoru",
+          aciklama: "Duke Koşu Bandı Skoru: Egzersiz EKG testinde prognoz — süre, ST sapması, angina indeksi. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/duke-kosu-bandi",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Duke Kriterleri", yol: "/tools/endocarditis" },
+          { ad: "Duke Koşu Bandı Skoru", yol: "/tools/duke-kosu-bandi" },
         ])}
       />
       {children}
-      <nav aria-label="Bu aracın geçtiği konular" className="bg-slate-50 px-4 pb-6 font-sans">
-        <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
-            Bu aracın geçtiği konular
-          </h2>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/topics/kardiyoloji/infektif-endokardit" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                İnfektif Endokardit
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+
       <nav aria-label="Aynı kategoriden araçlar" className="bg-slate-50 px-4 pb-10 font-sans">
         <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
             Kardiyoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/endocarditis" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Duke Kriterleri
+              </Link>
+            </li>
             <li>
               <Link href="/tools/grace" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 GRACE Skoru
@@ -78,11 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/ldl-hesaplama" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 LDL Kolesterol Hesaplama
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/orbit" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ORBIT Kanama Skoru
               </Link>
             </li>
           </ul>

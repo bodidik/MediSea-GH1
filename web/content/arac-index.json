@@ -190,6 +190,11 @@
   "desc": "Alkol yoksunluğu şiddeti — 10 madde, nöbet/deliryum riski değerlendirme"
  },
  {
+  "slug": "cll-ipi",
+  "name": "CLL-IPI",
+  "desc": "Kronik lenfositik lösemi prognostik indeksi — TP53, IGHV, β2M, evre, yaş"
+ },
+ {
   "slug": "cockcroft-gault",
   "name": "Cockcroft-Gault Kreatinin Klirensi",
   "desc": "İlaç doz ayarı için CrCl — gerçek, ideal ve ayarlanmış ağırlıkla"
@@ -208,6 +213,11 @@
   "slug": "corrected-sodium",
   "name": "Düzeltilmiş Sodyum",
   "desc": "Hiperglisemi düzeltmesi (Katz formülü)"
+ },
+ {
+  "slug": "crusade",
+  "name": "CRUSADE Kanama Skoru",
+  "desc": "NSTEMI'de hastane içi majör kanama riski — 8 değişken"
  },
  {
   "slug": "curb65",
@@ -235,6 +245,11 @@
   "desc": "Fab flakon sayısı — düzey, alınan miktar ve ampirik: üç ayrı formül; Fab sonrası düzey yorumlanamaz"
  },
  {
+  "slug": "dipss",
+  "name": "DIPSS",
+  "desc": "Primer miyelofibrozda dinamik prognostik skor — medyan sağkalım"
+ },
+ {
   "slug": "dka-infuzyon",
   "name": "DKA Kurulumu",
   "desc": "Diyabetik ketoasidozda sıvı, insülin ve potasyum sıralaması — potasyum düşükse insülini bekletir"
@@ -248,6 +263,11 @@
   "slug": "dst",
   "name": "Deksametazon Süpresyon Testi (DST)",
   "desc": "1 mg / 2 mg LDDST / 8 mg HDDST — Cushing tarama & lokalizasyon"
+ },
+ {
+  "slug": "duke-kosu-bandi",
+  "name": "Duke Koşu Bandı Skoru",
+  "desc": "Egzersiz EKG testinde prognoz — süre, ST sapması, angina indeksi"
  },
  {
   "slug": "ecog",
@@ -340,6 +360,11 @@
   "desc": "Onkogeriatri taraması — kapsamlı geriatrik değerlendirme gereksinimi (≤ 14)"
  },
  {
+  "slug": "ganzoni",
+  "name": "Ganzoni Demir Açığı",
+  "desc": "Parenteral demir için toplam demir açığı (mg) — Hb, kilo ve depo demiri"
+ },
+ {
   "slug": "gcs",
   "name": "Glasgow Koma Skalası",
   "desc": "Bilinç düzeyi değerlendirmesi (E+V+M)"
@@ -385,6 +410,11 @@
   "desc": "Çok boyutlu kırılganlık taraması — 15 madde (≥ 4)"
  },
  {
+  "slug": "h2fpef",
+  "name": "H₂FPEF Skoru",
+  "desc": "Korunmuş EF'li kalp yetmezliği (HFpEF) olasılığı — 0–9"
+ },
+ {
   "slug": "hachinski",
   "name": "Hachinski İskemik Skoru",
   "desc": "Vasküler ve dejeneratif demans ayrımı — 13 madde, 0–18"
@@ -418,6 +448,11 @@
   "slug": "hiperkalemi-tedavi",
   "name": "Hiperkalemi Tedavisi",
   "desc": "Kaydıran ile çıkaranı ayırır — kalsiyum ve insülin potasyumu DÜŞÜRMEZ, etkileri bitince geri çıkar"
+ },
+ {
+  "slug": "hodgkin-ips",
+  "name": "Hodgkin IPS",
+  "desc": "İleri evre Hodgkin lenfomada Hasenclever skoru — 5 yıllık progresyonsuz sağkalım"
  },
  {
   "slug": "homa-ir",
@@ -480,9 +515,19 @@
   "desc": "Kemoterapi ilişkili VTE riski"
  },
  {
+  "slug": "killip",
+  "name": "Killip Sınıflaması",
+  "desc": "Akut MI'da kalp yetmezliği bulgularına göre sınıf I–IV"
+ },
+ {
   "slug": "klinik-kirilganlik",
   "name": "Klinik Kırılganlık Ölçeği (CFS)",
   "desc": "Rockwood CFS 2.0 — 1–9 düzey, akut hastalık öncesi durum"
+ },
+ {
+  "slug": "kml-risk",
+  "name": "KML Risk Skoru (ELTS · Sokal)",
+  "desc": "Kronik miyeloid löseminin tanı anı risk sınıflaması — iki denklem yan yana"
  },
  {
   "slug": "ktv",
@@ -493,6 +538,11 @@
   "slug": "lawton-iadl",
   "name": "Lawton IADL",
   "desc": "Enstrümental günlük yaşam aktiviteleri — 8 madde (alışveriş, ilaç, finans)"
+ },
+ {
+  "slug": "ldl-hesaplama",
+  "name": "LDL Kolesterol Hesaplama",
+  "desc": "Friedewald ve Sampson (NIH) denklemleri, non-HDL ve ESC hedefleri"
  },
  {
   "slug": "lee-indeksi",
@@ -518,6 +568,11 @@
   "slug": "meld-na",
   "name": "MELD-Na Skoru",
   "desc": "ESKH mortalite tahmini"
+ },
+ {
+  "slug": "mentzer",
+  "name": "Mentzer İndeksi",
+  "desc": "Mikrositer anemide talasemi taşıyıcılığı ve demir eksikliği ayrımı — MCV / eritrosit"
  },
  {
   "slug": "mini-cog",
@@ -595,6 +650,11 @@
   "desc": "T2DM/prediyabet, gestasyonel diyabet (GDM), akromegali GH süpresyonu"
  },
  {
+  "slug": "orbit",
+  "name": "ORBIT Kanama Skoru",
+  "desc": "AF'de antikoagülasyon altında majör kanama riski — 0–7"
+ },
+ {
   "slug": "osmolal-gap",
   "name": "Serum Osmolal Gap",
   "desc": "Ölçülen − hesaplanan osmolalite · toksik alkol taraması · tahmini madde düzeyleri"
@@ -618,6 +678,11 @@
   "slug": "perc",
   "name": "PERC Kriterleri",
   "desc": "PE düşük risk dışlama protokolü"
+ },
+ {
+  "slug": "plasmic",
+  "name": "PLASMIC Skoru",
+  "desc": "Trombotik mikroanjiyopatide TTP (ağır ADAMTS13 eksikliği) olasılığı — 0–7"
  },
  {
   "slug": "pni",
@@ -655,6 +720,16 @@
   "desc": "Hızlı sepsis yatak başı değerlendirme"
  },
  {
+  "slug": "qtc",
+  "name": "QTc Hesaplayıcı",
+  "desc": "Bazett, Fridericia, Framingham, Hodges — cinsiyete göre uzun QT eşiği"
+ },
+ {
+  "slug": "r-iss",
+  "name": "R-ISS",
+  "desc": "Multipl miyelom revize uluslararası evreleme — β2M, albümin, LDH, FISH"
+ },
+ {
   "slug": "rankin",
   "name": "Modifiye Rankin (mRS)",
   "desc": "İnme sonrası işlevsel sonuç — 0–6 derece, yapılandırılmış görüşme çapraz kontrolü"
@@ -680,6 +755,11 @@
   "desc": "NICE kriterleri — beslenme başlatmada hipofosfatemi riski"
  },
  {
+  "slug": "retikulosit-indeksi",
+  "name": "Retikülosit Üretim İndeksi",
+  "desc": "Anemide kemik iliği yanıtı — hematokrit ve olgunlaşma düzeltmeli (RPI)"
+ },
+ {
   "slug": "rockall",
   "name": "Rockall Skoru",
   "desc": "Üst GİS kanaması — yeniden kanama ve mortalite"
@@ -693,6 +773,11 @@
   "slug": "rts",
   "name": "RTS",
   "desc": "Revize Travma Skoru — GCS + SKB + Solunum hızı, tahmini sağkalım"
+ },
+ {
+  "slug": "same-tt2r2",
+  "name": "SAMe-TT₂R₂",
+  "desc": "AF'de varfarinle iyi INR kontrolü olasılığı — VKA ya da DOAK seçimi"
  },
  {
   "slug": "sarc-f",
@@ -718,6 +803,11 @@
   "slug": "sga",
   "name": "SGA",
   "desc": "Sübjektif Global Değerlendirme — klinik nütrisyon muayenesi"
+ },
+ {
+  "slug": "sgarbossa",
+  "name": "Sgarbossa Kriterleri",
+  "desc": "Sol dal bloğu ya da pace ritminde akut MI — özgün ve Smith-modifiye"
  },
  {
   "slug": "sle",
@@ -775,6 +865,11 @@
   "desc": "Fiziksel, psikolojik ve sosyal boyut — 15 madde (≥ 5)"
  },
  {
+  "slug": "timi-stemi",
+  "name": "TIMI Risk Skoru (STEMI)",
+  "desc": "ST yükselmeli MI'da 30 günlük mortalite — 8 değişken, 0–14"
+ },
+ {
   "slug": "timi-ua",
   "name": "TIMI Skoru (UA/NSTEMI)",
   "desc": "Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter"
@@ -818,6 +913,11 @@
   "slug": "ves-13",
   "name": "VES-13",
   "desc": "Vulnerable Elders Survey — 13 soru, 2 yıllık ölüm/gerileme riski (≥ 3)"
+ },
+ {
+  "slug": "vte-bleed",
+  "name": "VTE-BLEED",
+  "desc": "Venöz tromboembolide antikoagülasyon altında majör kanama riski — ≥ 2 yüksek"
  },
  {
   "slug": "wells-dvt",

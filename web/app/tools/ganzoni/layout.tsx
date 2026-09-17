@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "HScore — HLH olasılık skoru",
-  description: "HScore: HLH olasılık skoru — 9 parametre, hemofagositik lenfohistiyositoz. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/hscore" },
+  title: "Ganzoni Demir Açığı — Parenteral demir için toplam",
+  description: "Ganzoni Demir Açığı: Parenteral demir için toplam demir açığı (mg) — Hb, kilo ve depo demiri. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/ganzoni" },
   openGraph: {
     type: "website",
-    title: "HScore — HLH olasılık skoru",
-    description: "HScore: HLH olasılık skoru — 9 parametre, hemofagositik lenfohistiyositoz. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/hscore",
+    title: "Ganzoni Demir Açığı — Parenteral demir için toplam",
+    description: "Ganzoni Demir Açığı: Parenteral demir için toplam demir açığı (mg) — Hb, kilo ve depo demiri. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/ganzoni",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "HScore",
-          aciklama: "HScore: HLH olasılık skoru — 9 parametre, hemofagositik lenfohistiyositoz. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/hscore",
+          ad: "Ganzoni Demir Açığı",
+          aciklama: "Ganzoni Demir Açığı: Parenteral demir için toplam demir açığı (mg) — Hb, kilo ve depo demiri. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/ganzoni",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "HScore", yol: "/tools/hscore" },
+          { ad: "Ganzoni Demir Açığı", yol: "/tools/ganzoni" },
         ])}
       />
       {children}
@@ -42,6 +42,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Hematoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/hodgkin-ips" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Hodgkin IPS
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/hscore" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                HScore
+              </Link>
+            </li>
             <li>
               <Link href="/tools/ipi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 IPI Skoru
@@ -60,16 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/kml-risk" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 KML Risk Skoru (ELTS · Sokal)
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/mentzer" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Mentzer İndeksi
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/plasmic" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                PLASMIC Skoru
               </Link>
             </li>
           </ul>

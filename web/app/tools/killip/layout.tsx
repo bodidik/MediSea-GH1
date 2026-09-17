@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "TIMI Skoru (UA/NSTEMI) — Kararsız angina/NSTEMI",
-  description: "TIMI Skoru (UA/NSTEMI): Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/timi-ua" },
+  title: "Killip Sınıflaması — Akut MI'da kalp yetmezliği",
+  description: "Killip Sınıflaması: Akut MI'da kalp yetmezliği bulgularına göre sınıf I–IV. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/killip" },
   openGraph: {
     type: "website",
-    title: "TIMI Skoru (UA/NSTEMI) — Kararsız angina/NSTEMI",
-    description: "TIMI Skoru (UA/NSTEMI): Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/timi-ua",
+    title: "Killip Sınıflaması — Akut MI'da kalp yetmezliği",
+    description: "Killip Sınıflaması: Akut MI'da kalp yetmezliği bulgularına göre sınıf I–IV. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/killip",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "TIMI Skoru (UA/NSTEMI)",
-          aciklama: "TIMI Skoru (UA/NSTEMI): Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/timi-ua",
+          ad: "Killip Sınıflaması",
+          aciklama: "Killip Sınıflaması: Akut MI'da kalp yetmezliği bulgularına göre sınıf I–IV. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/killip",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "TIMI Skoru (UA/NSTEMI)", yol: "/tools/timi-ua" },
+          { ad: "Killip Sınıflaması", yol: "/tools/killip" },
         ])}
       />
       {children}
@@ -56,33 +56,33 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/tools/chads-vasc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                CHA₂DS₂-VASc Skoru
+              <Link href="/tools/ldl-hesaplama" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                LDL Kolesterol Hesaplama
               </Link>
             </li>
             <li>
-              <Link href="/tools/crusade" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                CRUSADE Kanama Skoru
+              <Link href="/tools/orbit" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ORBIT Kanama Skoru
               </Link>
             </li>
             <li>
-              <Link href="/tools/duke-kosu-bandi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Duke Koşu Bandı Skoru
+              <Link href="/tools/qtc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                QTc Hesaplayıcı
               </Link>
             </li>
             <li>
-              <Link href="/tools/endocarditis" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Duke Kriterleri
+              <Link href="/tools/same-tt2r2" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                SAMe-TT₂R₂
               </Link>
             </li>
             <li>
-              <Link href="/tools/grace" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                GRACE Skoru
+              <Link href="/tools/sgarbossa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Sgarbossa Kriterleri
               </Link>
             </li>
             <li>
-              <Link href="/tools/h2fpef" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                H₂FPEF Skoru
+              <Link href="/tools/timi-stemi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                TIMI Risk Skoru (STEMI)
               </Link>
             </li>
           </ul>

@@ -26,6 +26,56 @@
     "slug": "endocarditis",
     "name": "Duke Kriterleri",
     "icon": "⚔️"
+   },
+   {
+    "slug": "timi-stemi",
+    "name": "TIMI Risk Skoru (STEMI)",
+    "icon": "❤️"
+   },
+   {
+    "slug": "killip",
+    "name": "Killip Sınıflaması",
+    "icon": "❤️"
+   },
+   {
+    "slug": "crusade",
+    "name": "CRUSADE Kanama Skoru",
+    "icon": "❤️"
+   },
+   {
+    "slug": "sgarbossa",
+    "name": "Sgarbossa Kriterleri",
+    "icon": "❤️"
+   },
+   {
+    "slug": "qtc",
+    "name": "QTc Hesaplayıcı",
+    "icon": "❤️"
+   },
+   {
+    "slug": "orbit",
+    "name": "ORBIT Kanama Skoru",
+    "icon": "❤️"
+   },
+   {
+    "slug": "same-tt2r2",
+    "name": "SAMe-TT₂R₂",
+    "icon": "❤️"
+   },
+   {
+    "slug": "h2fpef",
+    "name": "H₂FPEF Skoru",
+    "icon": "❤️"
+   },
+   {
+    "slug": "ldl-hesaplama",
+    "name": "LDL Kolesterol Hesaplama",
+    "icon": "❤️"
+   },
+   {
+    "slug": "duke-kosu-bandi",
+    "name": "Duke Koşu Bandı Skoru",
+    "icon": "❤️"
    }
   ]
  },
@@ -316,6 +366,56 @@
     "slug": "hscore",
     "name": "HScore",
     "icon": "🔥"
+   },
+   {
+    "slug": "retikulosit-indeksi",
+    "name": "Retikülosit Üretim İndeksi",
+    "icon": "🩸"
+   },
+   {
+    "slug": "mentzer",
+    "name": "Mentzer İndeksi",
+    "icon": "🩸"
+   },
+   {
+    "slug": "ganzoni",
+    "name": "Ganzoni Demir Açığı",
+    "icon": "🩸"
+   },
+   {
+    "slug": "plasmic",
+    "name": "PLASMIC Skoru",
+    "icon": "🩸"
+   },
+   {
+    "slug": "vte-bleed",
+    "name": "VTE-BLEED",
+    "icon": "🩸"
+   },
+   {
+    "slug": "kml-risk",
+    "name": "KML Risk Skoru (ELTS · Sokal)",
+    "icon": "🩸"
+   },
+   {
+    "slug": "dipss",
+    "name": "DIPSS",
+    "icon": "🩸"
+   },
+   {
+    "slug": "r-iss",
+    "name": "R-ISS",
+    "icon": "🩸"
+   },
+   {
+    "slug": "cll-ipi",
+    "name": "CLL-IPI",
+    "icon": "🩸"
+   },
+   {
+    "slug": "hodgkin-ips",
+    "name": "Hodgkin IPS",
+    "icon": "🩸"
    }
   ]
  },

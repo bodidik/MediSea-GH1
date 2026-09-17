@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "HAS-BLED Skoru — Antikoagülasyon kanama riski",
-  description: "HAS-BLED Skoru: Antikoagülasyon kanama riski. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/has-bled" },
+  title: "LDL Kolesterol Hesaplama — Friedewald ve Sampson (NIH)",
+  description: "LDL Kolesterol Hesaplama: Friedewald ve Sampson (NIH) denklemleri, non-HDL ve ESC hedefleri. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/ldl-hesaplama" },
   openGraph: {
     type: "website",
-    title: "HAS-BLED Skoru — Antikoagülasyon kanama riski",
-    description: "HAS-BLED Skoru: Antikoagülasyon kanama riski. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/has-bled",
+    title: "LDL Kolesterol Hesaplama — Friedewald ve Sampson (NIH)",
+    description: "LDL Kolesterol Hesaplama: Friedewald ve Sampson (NIH) denklemleri, non-HDL ve ESC hedefleri. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/ldl-hesaplama",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "HAS-BLED Skoru",
-          aciklama: "HAS-BLED Skoru: Antikoagülasyon kanama riski. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/has-bled",
+          ad: "LDL Kolesterol Hesaplama",
+          aciklama: "LDL Kolesterol Hesaplama: Friedewald ve Sampson (NIH) denklemleri, non-HDL ve ESC hedefleri. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/ldl-hesaplama",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "HAS-BLED Skoru", yol: "/tools/has-bled" },
+          { ad: "LDL Kolesterol Hesaplama", yol: "/tools/ldl-hesaplama" },
         ])}
       />
       {children}
@@ -42,16 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Kardiyoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/killip" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Killip Sınıflaması
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/ldl-hesaplama" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                LDL Kolesterol Hesaplama
-              </Link>
-            </li>
             <li>
               <Link href="/tools/orbit" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 ORBIT Kanama Skoru
@@ -70,6 +60,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/sgarbossa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Sgarbossa Kriterleri
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/timi-stemi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                TIMI Risk Skoru (STEMI)
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/timi-ua" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                TIMI Skoru (UA/NSTEMI)
               </Link>
             </li>
           </ul>

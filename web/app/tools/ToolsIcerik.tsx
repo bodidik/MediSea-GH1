@@ -103,6 +103,16 @@ const TOOLS_DATABASE = [
       { slug: "timi-ua", name: "TIMI Skoru (UA/NSTEMI)", desc: "Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter" },
       { slug: "grace", name: "GRACE Skoru", desc: "AKS/NSTEMI hastane içi mortalite — toplamsal puan (1.0)" },
       { slug: "endocarditis", name: "Duke Kriterleri", desc: "Enfektif Endokardit tanı deşifresi" },
+      { slug: "timi-stemi", name: "TIMI Risk Skoru (STEMI)", desc: "ST yükselmeli MI'da 30 günlük mortalite — 8 değişken, 0–14" },
+      { slug: "killip", name: "Killip Sınıflaması", desc: "Akut MI'da kalp yetmezliği bulgularına göre sınıf I–IV" },
+      { slug: "crusade", name: "CRUSADE Kanama Skoru", desc: "NSTEMI'de hastane içi majör kanama riski — 8 değişken" },
+      { slug: "sgarbossa", name: "Sgarbossa Kriterleri", desc: "Sol dal bloğu ya da pace ritminde akut MI — özgün ve Smith-modifiye" },
+      { slug: "qtc", name: "QTc Hesaplayıcı", desc: "Bazett, Fridericia, Framingham, Hodges — cinsiyete göre uzun QT eşiği" },
+      { slug: "orbit", name: "ORBIT Kanama Skoru", desc: "AF'de antikoagülasyon altında majör kanama riski — 0–7" },
+      { slug: "same-tt2r2", name: "SAMe-TT₂R₂", desc: "AF'de varfarinle iyi INR kontrolü olasılığı — VKA ya da DOAK seçimi" },
+      { slug: "h2fpef", name: "H₂FPEF Skoru", desc: "Korunmuş EF'li kalp yetmezliği (HFpEF) olasılığı — 0–9" },
+      { slug: "ldl-hesaplama", name: "LDL Kolesterol Hesaplama", desc: "Friedewald ve Sampson (NIH) denklemleri, non-HDL ve ESC hedefleri" },
+      { slug: "duke-kosu-bandi", name: "Duke Koşu Bandı Skoru", desc: "Egzersiz EKG testinde prognoz — süre, ST sapması, angina indeksi" },
     ]
   },
   {
@@ -305,6 +315,16 @@ const TOOLS_DATABASE = [
       { slug: "ipss-r",   name: "IPSS-R",            desc: "MDS Revize Prognostik Skorlama — sitogenetik + blast + CBC parametreleri" },
       { slug: "isth-dic", name: "ISTH DIC Skoru",    desc: "Yaygın damar içi pıhtılaşma — açık DIC tanı algoritması (≥ 5 puan)" },
       { slug: "hscore",   name: "HScore",             desc: "HLH olasılık skoru — 9 parametre, hemofagositik lenfohistiyositoz" },
+      { slug: "retikulosit-indeksi", name: "Retikülosit Üretim İndeksi", desc: "Anemide kemik iliği yanıtı — hematokrit ve olgunlaşma düzeltmeli (RPI)" },
+      { slug: "mentzer", name: "Mentzer İndeksi", desc: "Mikrositer anemide talasemi taşıyıcılığı ve demir eksikliği ayrımı — MCV / eritrosit" },
+      { slug: "ganzoni", name: "Ganzoni Demir Açığı", desc: "Parenteral demir için toplam demir açığı (mg) — Hb, kilo ve depo demiri" },
+      { slug: "plasmic", name: "PLASMIC Skoru", desc: "Trombotik mikroanjiyopatide TTP (ağır ADAMTS13 eksikliği) olasılığı — 0–7" },
+      { slug: "vte-bleed", name: "VTE-BLEED", desc: "Venöz tromboembolide antikoagülasyon altında majör kanama riski — ≥ 2 yüksek" },
+      { slug: "kml-risk", name: "KML Risk Skoru (ELTS · Sokal)", desc: "Kronik miyeloid löseminin tanı anı risk sınıflaması — iki denklem yan yana" },
+      { slug: "dipss", name: "DIPSS", desc: "Primer miyelofibrozda dinamik prognostik skor — medyan sağkalım" },
+      { slug: "r-iss", name: "R-ISS", desc: "Multipl miyelom revize uluslararası evreleme — β2M, albümin, LDH, FISH" },
+      { slug: "cll-ipi", name: "CLL-IPI", desc: "Kronik lenfositik lösemi prognostik indeksi — TP53, IGHV, β2M, evre, yaş" },
+      { slug: "hodgkin-ips", name: "Hodgkin IPS", desc: "İleri evre Hodgkin lenfomada Hasenclever skoru — 5 yıllık progresyonsuz sağkalım" },
     ]
   }
 ];

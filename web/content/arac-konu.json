@@ -6,6 +6,11 @@
         "slug": "egfr",
         "name": "eGFR (CKD-EPI 2021)",
         "eslesen": "eGFR"
+      },
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
       }
     ],
     "endokrinoloji/cushing-sendromu-patofizyoloji-klinik": [
@@ -102,6 +107,18 @@
         "slug": "potasyum-replasman",
         "name": "Potasyum Replasmanı",
         "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
+      }
+    ],
+    "endokrinoloji/men1-insulinoma": [
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
       }
     ],
     "endokrinoloji/men1-osilodrostat-mineralokortikoid": [
@@ -109,6 +126,11 @@
         "slug": "potasyum-replasman",
         "name": "Potasyum Replasmanı",
         "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
       }
     ],
     "endokrinoloji/men1-osilodrostat-protokol-adimlari": [
@@ -123,6 +145,18 @@
         "slug": "potasyum-replasman",
         "name": "Potasyum Replasmanı",
         "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
+      }
+    ],
+    "endokrinoloji/men1-spironolakton-cift-mekanizma": [
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
       }
     ],
     "endokrinoloji/miksodem-psikozu": [
@@ -165,6 +199,11 @@
         "slug": "potasyum-replasman",
         "name": "Potasyum Replasmanı",
         "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
       }
     ],
     "endokrinoloji/tiroid-nodullerine-yaklasim": [
@@ -363,6 +402,13 @@
         "eslesen": "GDS-15"
       }
     ],
+    "hematoloji/anemiler": [
+      {
+        "slug": "retikulosit-indeksi",
+        "name": "Retikülosit Üretim İndeksi",
+        "eslesen": "Retikülosit Üretim İndeksi"
+      }
+    ],
     "hematoloji/antikoagulasyon-stratejileri": [
       {
         "slug": "chads-vasc",
@@ -389,12 +435,22 @@
     ],
     "hematoloji/demir-eksikligi": [
       {
+        "slug": "mentzer",
+        "name": "Mentzer İndeksi",
+        "eslesen": "Mentzer İndeksi"
+      },
+      {
         "slug": "anaphylaxis",
         "name": "Anafilaksi Kriterleri",
         "eslesen": "Anafilaksi"
       }
     ],
     "hematoloji/demir-eksikligi-anemisi": [
+      {
+        "slug": "mentzer",
+        "name": "Mentzer İndeksi",
+        "eslesen": "Mentzer İndeksi"
+      },
       {
         "slug": "anaphylaxis",
         "name": "Anafilaksi Kriterleri",
@@ -422,6 +478,13 @@
         "eslesen": "Tiroid Fonksiyon"
       }
     ],
+    "hematoloji/gilteritinib-flt3-aml": [
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
+      }
+    ],
     "hematoloji/hct-ci-geriatrik-degerlendirme": [
       {
         "slug": "charlson",
@@ -447,6 +510,13 @@
         "slug": "gds-15",
         "name": "GDS-15",
         "eslesen": "GDS-15"
+      }
+    ],
+    "hematoloji/hemolitik-anemiler-genel-bakis": [
+      {
+        "slug": "retikulosit-indeksi",
+        "name": "Retikülosit Üretim İndeksi",
+        "eslesen": "Retikülosit Üretim İndeksi"
       }
     ],
     "hematoloji/inme-sonrasi-gizli-af": [
@@ -484,11 +554,32 @@
         "eslesen": "Tiroid Fonksiyon"
       }
     ],
+    "hematoloji/mikrositer-anemiler": [
+      {
+        "slug": "mentzer",
+        "name": "Mentzer İndeksi",
+        "eslesen": "Mentzer İndeksi"
+      }
+    ],
     "hematoloji/miyelodisplastik-sendrom-mds": [
       {
         "slug": "ipss-r",
         "name": "IPSS-R",
         "eslesen": "IPSS-R"
+      }
+    ],
+    "hematoloji/multiple-myelom": [
+      {
+        "slug": "r-iss",
+        "name": "R-ISS",
+        "eslesen": "R-ISS"
+      }
+    ],
+    "hematoloji/primer-miyelofibrozis": [
+      {
+        "slug": "dipss",
+        "name": "DIPSS",
+        "eslesen": "DIPSS"
       }
     ],
     "hematoloji/sistemik-mastositoz-sm": [
@@ -521,9 +612,24 @@
     ],
     "kardiyoloji/akut-koroner-sendromlar": [
       {
+        "slug": "timi-stemi",
+        "name": "TIMI Risk Skoru (STEMI)",
+        "eslesen": "TIMI Risk Skoru"
+      },
+      {
         "slug": "timi-ua",
         "name": "TIMI Skoru (UA/NSTEMI)",
         "eslesen": "TIMI Skoru"
+      },
+      {
+        "slug": "sgarbossa",
+        "name": "Sgarbossa Kriterleri",
+        "eslesen": "Sgarbossa"
+      },
+      {
+        "slug": "killip",
+        "name": "Killip Sınıflaması",
+        "eslesen": "Killip"
       },
       {
         "slug": "grace",
@@ -534,11 +640,6 @@
         "slug": "heart",
         "name": "HEART Skoru",
         "eslesen": "HEART"
-      },
-      {
-        "slug": "egfr",
-        "name": "eGFR (CKD-EPI 2021)",
-        "eslesen": "eGFR"
       }
     ],
     "kardiyoloji/aprocitentan-kbh-ve-yasli": [
@@ -589,6 +690,11 @@
       }
     ],
     "kardiyoloji/kalp-yetmezligi": [
+      {
+        "slug": "h2fpef",
+        "name": "H₂FPEF Skoru",
+        "eslesen": "H2FPEF"
+      },
       {
         "slug": "egfr",
         "name": "eGFR (CKD-EPI 2021)",
@@ -879,6 +985,48 @@
         "yol": "endokrinoloji/cushing-sendromu-patofizyoloji-klinik",
         "baslik": "Cushing Sendromu: Patofizyoloji ve Klinik Prezantasyon",
         "eslesen": "eGFR"
+      }
+    ],
+    "qtc": [
+      {
+        "yol": "endokrinoloji/cushing-sendromu-genetik-ve-inovasyonlar",
+        "baslik": "Cushing Sendromu: Genetik, Farmakoloji ve Tanıda Yenilikler",
+        "eslesen": "QTc"
+      },
+      {
+        "yol": "hematoloji/gilteritinib-flt3-aml",
+        "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi",
+        "eslesen": "QTc"
+      },
+      {
+        "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
+        "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
+        "eslesen": "QTc"
+      },
+      {
+        "yol": "endokrinoloji/men1-insulinoma",
+        "baslik": "MEN1 İlişkili İnsülinoma: Klinik Davranış, Hipoglisemi Yönetimi ve Cerrahi Strateji",
+        "eslesen": "QTc"
+      },
+      {
+        "yol": "endokrinoloji/men1-osilodrostat-mineralokortikoid",
+        "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi",
+        "eslesen": "QTc"
+      },
+      {
+        "yol": "endokrinoloji/men1-osilodrostat-yan-etkiler",
+        "baslik": "Osilodrostat: Yan Etki Profili ve Klinik Yönetim Protokolleri",
+        "eslesen": "QTc"
+      },
+      {
+        "yol": "endokrinoloji/men1-spironolakton-cift-mekanizma",
+        "baslik": "Osilodrostat + Spironolakton: Çift Mekanizmalı Terapötik Koruma",
+        "eslesen": "QTc"
+      },
+      {
+        "yol": "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma",
+        "baslik": "Şiddetli Cushing Sendromu (SCS): İleri Yönetim",
+        "eslesen": "QTc"
       }
     ],
     "anion-gap": [
@@ -1220,6 +1368,18 @@
         "eslesen": "Karnofsky"
       }
     ],
+    "retikulosit-indeksi": [
+      {
+        "yol": "hematoloji/anemiler",
+        "baslik": "Anemiler",
+        "eslesen": "Retikülosit Üretim İndeksi"
+      },
+      {
+        "yol": "hematoloji/hemolitik-anemiler-genel-bakis",
+        "baslik": "Hemolitik Anemiler",
+        "eslesen": "Retikülosit Üretim İndeksi"
+      }
+    ],
     "chads-vasc": [
       {
         "yol": "hematoloji/antikoagulasyon-stratejileri",
@@ -1266,6 +1426,23 @@
         "eslesen": "NIHSS"
       }
     ],
+    "mentzer": [
+      {
+        "yol": "hematoloji/demir-eksikligi",
+        "baslik": "Demir Eksikliği Anemisi (DEA)",
+        "eslesen": "Mentzer İndeksi"
+      },
+      {
+        "yol": "hematoloji/demir-eksikligi-anemisi",
+        "baslik": "Demir Eksikliği Anemisi (DEA)",
+        "eslesen": "Mentzer İndeksi"
+      },
+      {
+        "yol": "hematoloji/mikrositer-anemiler",
+        "baslik": "Mikrositer Anemiler",
+        "eslesen": "Mentzer İndeksi"
+      }
+    ],
     "ipi": [
       {
         "yol": "hematoloji/dlbcl",
@@ -1306,6 +1483,20 @@
         "eslesen": "Mutlak Eozinofil Sayısı"
       }
     ],
+    "r-iss": [
+      {
+        "yol": "hematoloji/multiple-myelom",
+        "baslik": "Multipl Miyelom (MM)",
+        "eslesen": "R-ISS"
+      }
+    ],
+    "dipss": [
+      {
+        "yol": "hematoloji/primer-miyelofibrozis",
+        "baslik": "Primer Miyelofibrozis (PMF)",
+        "eslesen": "DIPSS"
+      }
+    ],
     "4t-hit": [
       {
         "yol": "hematoloji/trombositopenide-antikoagulasyon",
@@ -1327,6 +1518,27 @@
         "eslesen": "HEART"
       }
     ],
+    "killip": [
+      {
+        "yol": "kardiyoloji/akut-koroner-sendromlar",
+        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
+        "eslesen": "Killip"
+      }
+    ],
+    "sgarbossa": [
+      {
+        "yol": "kardiyoloji/akut-koroner-sendromlar",
+        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
+        "eslesen": "Sgarbossa"
+      }
+    ],
+    "timi-stemi": [
+      {
+        "yol": "kardiyoloji/akut-koroner-sendromlar",
+        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
+        "eslesen": "TIMI Risk Skoru"
+      }
+    ],
     "timi-ua": [
       {
         "yol": "kardiyoloji/akut-koroner-sendromlar",
@@ -1339,6 +1551,13 @@
         "yol": "kardiyoloji/infektif-endokardit",
         "baslik": "İnfektif Endokardit",
         "eslesen": "Duke Kriterleri"
+      }
+    ],
+    "h2fpef": [
+      {
+        "yol": "kardiyoloji/kalp-yetmezligi",
+        "baslik": "Kalp Yetersizliği: Kapsamlı Tanı ve Yönetim",
+        "eslesen": "H2FPEF"
       }
     ],
     "glim": [
@@ -1404,9 +1623,9 @@
   },
   "olcum": {
     "konu": 490,
-    "arac": 167,
-    "araciOlanKonu": 103,
-    "konusuOlanArac": 36,
-    "bag": 126
+    "arac": 187,
+    "araciOlanKonu": 111,
+    "konusuOlanArac": 45,
+    "bag": 144
   }
 }
