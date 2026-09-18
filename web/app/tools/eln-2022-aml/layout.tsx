@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "FLIPI — Foliküler lenfoma prognoz indeksi",
-  description: "FLIPI: Foliküler lenfoma prognoz indeksi — 0–5 puan, 10 yıllık OS / PF. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/flipi" },
+  title: "ELN 2022 AML Genetik Riski — Akut miyeloid lösemide",
+  description: "ELN 2022 AML Genetik Riski: Akut miyeloid lösemide sitogenetik ve moleküler bulgulardan iyi/orta/kötü risk. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/eln-2022-aml" },
   openGraph: {
     type: "website",
-    title: "FLIPI — Foliküler lenfoma prognoz indeksi",
-    description: "FLIPI: Foliküler lenfoma prognoz indeksi — 0–5 puan, 10 yıllık OS / PF. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/flipi",
+    title: "ELN 2022 AML Genetik Riski — Akut miyeloid lösemide",
+    description: "ELN 2022 AML Genetik Riski: Akut miyeloid lösemide sitogenetik ve moleküler bulgulardan iyi/orta/kötü risk. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/eln-2022-aml",
   },
 };
 
@@ -22,44 +22,31 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "FLIPI",
-          aciklama: "FLIPI: Foliküler lenfoma prognoz indeksi — 0–5 puan, 10 yıllık OS / PF. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/flipi",
+          ad: "ELN 2022 AML Genetik Riski",
+          aciklama: "ELN 2022 AML Genetik Riski: Akut miyeloid lösemide sitogenetik ve moleküler bulgulardan iyi/orta/kötü risk. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/eln-2022-aml",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "FLIPI", yol: "/tools/flipi" },
+          { ad: "ELN 2022 AML Genetik Riski", yol: "/tools/eln-2022-aml" },
         ])}
       />
       {children}
-      <nav aria-label="Bu aracın geçtiği konular" className="bg-slate-50 px-4 pb-6 font-sans">
-        <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
-            Bu aracın geçtiği konular
-          </h2>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/topics/hematoloji/folikuler-lenfoma" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Foliküler Lenfoma
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/hematoloji/m7-flipi-ngs-paneli" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+
       <nav aria-label="Aynı kategoriden araçlar" className="bg-slate-50 px-4 pb-10 font-sans">
         <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
             Hematoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/flipi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                FLIPI
+              </Link>
+            </li>
             <li>
               <Link href="/tools/ganzoni" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Ganzoni Demir Açığı
@@ -83,11 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/ipi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 IPI Skoru
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/ipss-r" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                IPSS-R
               </Link>
             </li>
           </ul>

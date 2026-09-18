@@ -70,6 +70,11 @@
   "desc": "Metabolik asidoz ayırıcı tanısı (± albumin düzeltmesi)"
  },
  {
+  "slug": "ann-arbor-lugano",
+  "name": "Ann Arbor / Lugano Evrelemesi",
+  "desc": "Hodgkin ve non-Hodgkin lenfoma evresi — E eki, bulky, B semptomları"
+ },
+ {
   "slug": "antikoagulan-geri-dondurme",
   "name": "Antikoagülan Geri Döndürme",
   "desc": "Protamin, 4F-PCC, K vitamini ve idarucizumab — üç ayrı dozlama mantığı: miktara, kiloya ve hiçbirine bağlı olmayan"
@@ -260,6 +265,11 @@
   "desc": "Kronik lenfositik lösemi prognostik indeksi — TP53, IGHV, β2M, evre, yaş"
  },
  {
+  "slug": "cns-ipi",
+  "name": "CNS-IPI",
+  "desc": "DBBHL'de 2 yıllık santral sinir sistemi nüks riski — 0–6"
+ },
+ {
   "slug": "cockcroft-gault",
   "name": "Cockcroft-Gault Kreatinin Klirensi",
   "desc": "İlaç doz ayarı için CrCl — gerçek, ideal ve ayarlanmış ağırlıkla"
@@ -298,6 +308,11 @@
   "slug": "das28",
   "name": "DAS28 (ESR/CRP)",
   "desc": "Romatoid artrit hastalık aktivite skoru"
+ },
+ {
+  "slug": "demir-parametreleri",
+  "name": "Demir Parametreleri",
+  "desc": "TSAT ve ferritin — genel, kalp yetmezliği, KBH ve inflamasyon bağlamında"
  },
  {
   "slug": "deri-prick-testi",
@@ -373,6 +388,11 @@
   "slug": "egris",
   "name": "EGRIS",
   "desc": "Guillain-Barré'de ilk haftada mekanik ventilasyon riski — 0–7"
+ },
+ {
+  "slug": "eln-2022-aml",
+  "name": "ELN 2022 AML Genetik Riski",
+  "desc": "Akut miyeloid lösemide sitogenetik ve moleküler bulgulardan iyi/orta/kötü risk"
  },
  {
   "slug": "endocarditis",
@@ -590,6 +610,11 @@
   "desc": "Anevrizmal subaraknoid kanama klinik derecesi — 1–5"
  },
  {
+  "slug": "improve-vte",
+  "name": "IMPROVE-VTE",
+  "desc": "Dahili yatan hastada VTE riski — isteğe bağlı D-dimer ile IMPROVEDD"
+ },
+ {
   "slug": "infusion",
   "name": "İnfüzyon Hesaplama",
   "desc": "IV doz ve damla sayısı asistanı"
@@ -648,6 +673,11 @@
   "slug": "klinik-kirilganlik",
   "name": "Klinik Kırılganlık Ölçeği (CFS)",
   "desc": "Rockwood CFS 2.0 — 1–9 düzey, akut hastalık öncesi durum"
+ },
+ {
+  "slug": "kll-evreleme",
+  "name": "KLL Evrelemesi (Rai · Binet)",
+  "desc": "Kronik lenfositik lösemi — modifiye Rai ve Binet evresi aynı muayeneden"
  },
  {
   "slug": "kml-risk",
@@ -740,6 +770,11 @@
   "desc": "Bilişsel tarama — üç kelime hatırlama + saat çizme (0–5)"
  },
  {
+  "slug": "mipi",
+  "name": "MIPI",
+  "desc": "Mantle hücreli lenfoma prognostik indeksi — formül ve basitleştirilmiş puan"
+ },
+ {
   "slug": "miyozit-2017",
   "name": "EULAR/ACR 2017 Miyozit Kriterleri",
   "desc": "İdiyopatik inflamatuvar miyopati olasılığı — biyopsili ve biyopsisiz ağırlıklar"
@@ -758,6 +793,11 @@
   "slug": "morse-fall",
   "name": "Morse Düşme Riski",
   "desc": "Hastanede düşme riski değerlendirme skalası — 6 madde"
+ },
+ {
+  "slug": "mpn-tromboz",
+  "name": "MPN Tromboz Riski",
+  "desc": "Polisitemia vera (ELN) ve esansiyel trombositemi (revize IPSET) risk grupları"
  },
  {
   "slug": "mrc-kas-gucu",
@@ -940,6 +980,11 @@
   "desc": "Anemide kemik iliği yanıtı — hematokrit ve olgunlaşma düzeltmeli (RPI)"
  },
  {
+  "slug": "revize-cenevre",
+  "name": "Revize Cenevre Skoru",
+  "desc": "Pulmoner emboli klinik olasılığı — nesnel 8 madde, 0–22"
+ },
+ {
   "slug": "rockall",
   "name": "Rockall Skoru",
   "desc": "Üst GİS kanaması — yeniden kanama ve mortalite"
@@ -1103,6 +1148,11 @@
   "slug": "tromboliz-doz",
   "name": "Tromboliz Dozu (rt-PA)",
   "desc": "İnmede kiloya göre + 90 mg tavan, masif emboli de 100 mg sabit — aynı ilaç, farklı rejim"
+ },
+ {
+  "slug": "trombosit-cci",
+  "name": "Trombosit Transfüzyonu CCI",
+  "desc": "Düzeltilmiş sayım artışı — trombosit transfüzyonuna refrakterlik"
  },
  {
   "slug": "uas7",

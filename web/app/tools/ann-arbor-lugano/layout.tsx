@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "CLL-IPI — Kronik lenfositik lösemi prognostik indeksi",
-  description: "CLL-IPI: Kronik lenfositik lösemi prognostik indeksi — TP53, IGHV, β2M, evre, yaş. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/cll-ipi" },
+  title: "Ann Arbor / Lugano Evrelemesi — Hodgkin ve non-Hodgkin",
+  description: "Ann Arbor / Lugano Evrelemesi: Hodgkin ve non-Hodgkin lenfoma evresi — E eki, bulky, B semptomları. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/ann-arbor-lugano" },
   openGraph: {
     type: "website",
-    title: "CLL-IPI — Kronik lenfositik lösemi prognostik indeksi",
-    description: "CLL-IPI: Kronik lenfositik lösemi prognostik indeksi — TP53, IGHV, β2M, evre, yaş. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/cll-ipi",
+    title: "Ann Arbor / Lugano Evrelemesi — Hodgkin ve non-Hodgkin",
+    description: "Ann Arbor / Lugano Evrelemesi: Hodgkin ve non-Hodgkin lenfoma evresi — E eki, bulky, B semptomları. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/ann-arbor-lugano",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "CLL-IPI",
-          aciklama: "CLL-IPI: Kronik lenfositik lösemi prognostik indeksi — TP53, IGHV, β2M, evre, yaş. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/cll-ipi",
+          ad: "Ann Arbor / Lugano Evrelemesi",
+          aciklama: "Ann Arbor / Lugano Evrelemesi: Hodgkin ve non-Hodgkin lenfoma evresi — E eki, bulky, B semptomları. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/ann-arbor-lugano",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "CLL-IPI", yol: "/tools/cll-ipi" },
+          { ad: "Ann Arbor / Lugano Evrelemesi", yol: "/tools/ann-arbor-lugano" },
         ])}
       />
       {children}
@@ -42,6 +42,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Hematoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/cll-ipi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                CLL-IPI
+              </Link>
+            </li>
             <li>
               <Link href="/tools/cns-ipi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 CNS-IPI
@@ -65,11 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/flipi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 FLIPI
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/ganzoni" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Ganzoni Demir Açığı
               </Link>
             </li>
           </ul>

@@ -368,6 +368,16 @@ const TOOLS_DATABASE = [
       { slug: "r-iss", name: "R-ISS", desc: "Multipl miyelom revize uluslararası evreleme — β2M, albümin, LDH, FISH" },
       { slug: "cll-ipi", name: "CLL-IPI", desc: "Kronik lenfositik lösemi prognostik indeksi — TP53, IGHV, β2M, evre, yaş" },
       { slug: "hodgkin-ips", name: "Hodgkin IPS", desc: "İleri evre Hodgkin lenfomada Hasenclever skoru — 5 yıllık progresyonsuz sağkalım" },
+      { slug: "mipi", name: "MIPI", desc: "Mantle hücreli lenfoma prognostik indeksi — formül ve basitleştirilmiş puan" },
+      { slug: "cns-ipi", name: "CNS-IPI", desc: "DBBHL'de 2 yıllık santral sinir sistemi nüks riski — 0–6" },
+      { slug: "eln-2022-aml", name: "ELN 2022 AML Genetik Riski", desc: "Akut miyeloid lösemide sitogenetik ve moleküler bulgulardan iyi/orta/kötü risk" },
+      { slug: "kll-evreleme", name: "KLL Evrelemesi (Rai · Binet)", desc: "Kronik lenfositik lösemi — modifiye Rai ve Binet evresi aynı muayeneden" },
+      { slug: "ann-arbor-lugano", name: "Ann Arbor / Lugano Evrelemesi", desc: "Hodgkin ve non-Hodgkin lenfoma evresi — E eki, bulky, B semptomları" },
+      { slug: "mpn-tromboz", name: "MPN Tromboz Riski", desc: "Polisitemia vera (ELN) ve esansiyel trombositemi (revize IPSET) risk grupları" },
+      { slug: "improve-vte", name: "IMPROVE-VTE", desc: "Dahili yatan hastada VTE riski — isteğe bağlı D-dimer ile IMPROVEDD" },
+      { slug: "revize-cenevre", name: "Revize Cenevre Skoru", desc: "Pulmoner emboli klinik olasılığı — nesnel 8 madde, 0–22" },
+      { slug: "trombosit-cci", name: "Trombosit Transfüzyonu CCI", desc: "Düzeltilmiş sayım artışı — trombosit transfüzyonuna refrakterlik" },
+      { slug: "demir-parametreleri", name: "Demir Parametreleri", desc: "TSAT ve ferritin — genel, kalp yetmezliği, KBH ve inflamasyon bağlamında" },
     ]
   }
 ];

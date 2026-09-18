@@ -566,6 +566,56 @@
     "slug": "hodgkin-ips",
     "name": "Hodgkin IPS",
     "icon": "🩸"
+   },
+   {
+    "slug": "mipi",
+    "name": "MIPI",
+    "icon": "🩸"
+   },
+   {
+    "slug": "cns-ipi",
+    "name": "CNS-IPI",
+    "icon": "🩸"
+   },
+   {
+    "slug": "eln-2022-aml",
+    "name": "ELN 2022 AML Genetik Riski",
+    "icon": "🩸"
+   },
+   {
+    "slug": "kll-evreleme",
+    "name": "KLL Evrelemesi (Rai · Binet)",
+    "icon": "🩸"
+   },
+   {
+    "slug": "ann-arbor-lugano",
+    "name": "Ann Arbor / Lugano Evrelemesi",
+    "icon": "🩸"
+   },
+   {
+    "slug": "mpn-tromboz",
+    "name": "MPN Tromboz Riski",
+    "icon": "🩸"
+   },
+   {
+    "slug": "improve-vte",
+    "name": "IMPROVE-VTE",
+    "icon": "🩸"
+   },
+   {
+    "slug": "revize-cenevre",
+    "name": "Revize Cenevre Skoru",
+    "icon": "🩸"
+   },
+   {
+    "slug": "trombosit-cci",
+    "name": "Trombosit Transfüzyonu CCI",
+    "icon": "🩸"
+   },
+   {
+    "slug": "demir-parametreleri",
+    "name": "Demir Parametreleri",
+    "icon": "🩸"
    }
   ]
  },

@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "PLASMIC Skoru — Trombotik mikroanjiyopatide TTP",
-  description: "PLASMIC Skoru: Trombotik mikroanjiyopatide TTP (ağır ADAMTS13 eksikliği) olasılığı — 0–7. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/plasmic" },
+  title: "MIPI — Mantle hücreli lenfoma prognostik indeksi",
+  description: "MIPI: Mantle hücreli lenfoma prognostik indeksi — formül ve basitleştirilmiş puan. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/mipi" },
   openGraph: {
     type: "website",
-    title: "PLASMIC Skoru — Trombotik mikroanjiyopatide TTP",
-    description: "PLASMIC Skoru: Trombotik mikroanjiyopatide TTP (ağır ADAMTS13 eksikliği) olasılığı — 0–7. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/plasmic",
+    title: "MIPI — Mantle hücreli lenfoma prognostik indeksi",
+    description: "MIPI: Mantle hücreli lenfoma prognostik indeksi — formül ve basitleştirilmiş puan. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/mipi",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "PLASMIC Skoru",
-          aciklama: "PLASMIC Skoru: Trombotik mikroanjiyopatide TTP (ağır ADAMTS13 eksikliği) olasılığı — 0–7. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/plasmic",
+          ad: "MIPI",
+          aciklama: "MIPI: Mantle hücreli lenfoma prognostik indeksi — formül ve basitleştirilmiş puan. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/mipi",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "PLASMIC Skoru", yol: "/tools/plasmic" },
+          { ad: "MIPI", yol: "/tools/mipi" },
         ])}
       />
       {children}
@@ -42,6 +42,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Hematoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/mpn-tromboz" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                MPN Tromboz Riski
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/plasmic" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                PLASMIC Skoru
+              </Link>
+            </li>
             <li>
               <Link href="/tools/r-iss" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 R-ISS
@@ -60,16 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/trombosit-cci" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Trombosit Transfüzyonu CCI
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/vte-bleed" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                VTE-BLEED
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/ann-arbor-lugano" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Ann Arbor / Lugano Evrelemesi
               </Link>
             </li>
           </ul>

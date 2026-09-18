@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "ISTH DIC Skoru — Yaygın damar içi pıhtılaşma",
-  description: "ISTH DIC Skoru: Yaygın damar içi pıhtılaşma — açık DIC tanı algoritması (≥ 5 puan). Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/isth-dic" },
+  title: "KLL Evrelemesi (Rai · Binet) — Kronik lenfositik lösemi",
+  description: "KLL Evrelemesi (Rai · Binet): Kronik lenfositik lösemi — modifiye Rai ve Binet evresi aynı muayeneden. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/kll-evreleme" },
   openGraph: {
     type: "website",
-    title: "ISTH DIC Skoru — Yaygın damar içi pıhtılaşma",
-    description: "ISTH DIC Skoru: Yaygın damar içi pıhtılaşma — açık DIC tanı algoritması (≥ 5 puan). Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/isth-dic",
+    title: "KLL Evrelemesi (Rai · Binet) — Kronik lenfositik lösemi",
+    description: "KLL Evrelemesi (Rai · Binet): Kronik lenfositik lösemi — modifiye Rai ve Binet evresi aynı muayeneden. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/kll-evreleme",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "ISTH DIC Skoru",
-          aciklama: "ISTH DIC Skoru: Yaygın damar içi pıhtılaşma — açık DIC tanı algoritması (≥ 5 puan). Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/isth-dic",
+          ad: "KLL Evrelemesi (Rai · Binet)",
+          aciklama: "KLL Evrelemesi (Rai · Binet): Kronik lenfositik lösemi — modifiye Rai ve Binet evresi aynı muayeneden. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/kll-evreleme",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "ISTH DIC Skoru", yol: "/tools/isth-dic" },
+          { ad: "KLL Evrelemesi (Rai · Binet)", yol: "/tools/kll-evreleme" },
         ])}
       />
       {children}
@@ -42,11 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Hematoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/kll-evreleme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                KLL Evrelemesi (Rai · Binet)
-              </Link>
-            </li>
             <li>
               <Link href="/tools/kml-risk" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 KML Risk Skoru (ELTS · Sokal)
@@ -70,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/plasmic" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 PLASMIC Skoru
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/r-iss" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                R-ISS
               </Link>
             </li>
           </ul>
