@@ -303,6 +303,66 @@
       ],
       "zorluk": "zor",
       "kaynak": "Raal et al. N Engl J Med 2020 (ELIPSE HoFH — Evinacumab)"
+    },
+    {
+      "id": "s11",
+      "metin": "58 yaşında erkek hasta, uzun yıllardır devam eden ailesel dirençli hiperkolesterolemi (tedavisiz LDL-K: 215 mg/dL) ve hipertansiyon öyküsüyle kardiyoloji polikliniğine başvuruyor. Hastanın yapılan fizik muayenesinde bilateral alt ekstremite nabızları hafif zayıf alınıyor ve Eforlu Ayak Bileği-Kolu İndeksi (ABI) 0.68 (anlamlı Periferik Arter Hastalığı) saptanıyor. Laboratuvar incelemelerinde eGFR değeri 52 mL/dak/1.73 m² (Kronik Böbrek Hastalığı Evre 3a) olarak ölçülüyor. Hastanın göz dibi bakısında retinopatiye rastlanmıyor; nörolojik muayenesinde ve sinir iletim çalışmalarında periferik nöropati bulgusu saptanmıyor. Plazma LDL kolesterol (LDL-K) düzeylerinin farklı vasküler yataklar (mikrovasküler vs. makrovasküler) üzerindeki kausal (nedensel) etkileri, Mendelian randomizasyon (MR) analizleri ve klinik statin çalışmaları (JACC 2019 verileri) ekseninde değerlendirildiğinde, LDL-K yüksekliği ile hedef organ tutulumları arasındaki ilişkiye dair aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "LDL-K yüksekliği, kapiller yataklardaki intima tabakasının kalınlaşmasına bağlı olarak diyabetik retinopati ve periferik nöropati gelişiminde doğrudan kausal (nedensel) bir role sahiptir.",
+        "B": "Fenofibratın retinopati progresyonunu yavaşlatıcı etkisi, temel olarak LDL-K düzeylerinde sağladığı güçlü düşüşün doğrudan bir sonucudur.",
+        "C": "LDL-K yüksekliği, koroner arter hastalığı ve periferik arter hastalığında olduğu gibi kronik böbrek hastalığında da genetik/kausal düzeyde artmış risk ile ilişkilidir; LDL-K'nin düşürülmesi eGFR kaybını mütevazı düzeyde de olsa yavaşlatır.",
+        "D": "Periferik nöropatide gözlemsel çalışmalarda saptanan ters yönlü ilişkinin (düşük LDL-K ile artmış nöropati riski) genetik kausalitesi Mendelian randomizasyon analizleriyle doğrulanmıştır.",
+        "E": "Periferik arter hastalığı saf bir mikrovasküler hastalık olarak sınıflandırıldığından, LDL-K düşürücü tedavilerin ekstremitelerdeki arteriyel olaylar üzerindeki etkisi miyokard enfarktüsüne kıyasla klinik olarak anlamsızdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "LDL-K; Koroner Arter Hastalığı, Periferik Arter Hastalığı ve Kronik Böbrek Hastalığı patofizyolojisinde doğrudan kausal bir faktördür. Ancak retinopati ve periferik nöropati gibi saf mikrovasküler hastalıklarda LDL-K'nin kausal bir rolü bulunmamaktadır; bu durum damar duvarı anatomisi (intima varlığı) ve hemodinamik duvar gerilimi farklılıklarıyla açıklanır.",
+      "aciklama_detay": "Mendelian randomizasyon (MR) çalışmaları, genetik varyantları araç değişken (instrumental variable) olarak kullanarak konfüzyon faktörlerini ve ters nedenselliği (reverse causation) ekarte eden ve bir risk faktörünün hastalık patofizyolojisindeki doğrudan kausal (nedensel) rolünü ortaya koyan en güçlü epidemiyolojik yöntemdir. Geniş çaplı Kopenhag kohortlarında ve UK Biobank verilerinde yapılan genetik/kausal analizlerde, plazma LDL-K düzeyindeki her 1 mmol/L (38.6 mg/dL) artış; Periferik Arter Hastalığı (PAH) riskini 2.09 kat (Risk Oranı [RR]: 2.09, %95 GA: 1.30-2.38), Kronik Böbrek Hastalığı (KBH) riskini ise 3.83 kat (RR: 3.83, %95 GA: 2.00-7.34) kausal olarak artırmaktadır. KBH ve LDL-K arasındaki bu kausal ilişki, 64.134 hastayı kapsayan 13 randomize kontrollü statin çalışmasının meta-analiziyle de doğrulanmıştır. LDL-K düzeyinde sağlanan her 1 mmol/L'lik düşüş, tedavi sonunda eGFR değerinde 2.69 mL/dak/1.73 m²'lik anlamlı bir iyileşme/koruma sağlamıştır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — LDL-K yüksekliği, retinopati (RR: 1.06, p=0.94) ve periferik nöropati (RR: 1.05, p=0.86) gibi saf mikrovasküler hastalıklar ile kausal olarak ilişkili DEĞİLDİR. Bunun temel biyolojik nedeni; retina ve periferik sinir kapillerleri gibi küçük arteriollerin endotel altı alanda aterojenik lipoprotein birikimine izin verecek gelişmiş bir intima, iç elastik lamina ve medya tabakasına sahip olmaması ve hidrostatik duvar geriliminin bu yataklarda düşük seyretmesidir. Ateroskleroz yalnızca makrovasküler/karma damarlara özgü bir süreçtir.",
+        "B": "YANLIS — FIELD ve ACCORD Eye çalışmalarında fenofibratın diyabetik retinopati progresyonunu ve lazer tedavi ihtiyacını azalttığı gösterilmiştir. Ancak bu pleiotropik koruyucu etki LDL-K düşüşü ile ilişkili değildir. Retinopati saf bir mikrovasküler bozukluk olduğundan LDL-K düşürmek retinopatiyi önlemez.",
+        "C": "DOGRU — MR analizlerinde LDL-K'deki her 1 mmol/L artış PAH riskini 2.09 kat, KBH riskini 3.83 kat kausal olarak artırır; 13 RKÇ'lik statin meta-analizinde her 1 mmol/L düşüş eGFR'de 2.69 mL/dak/1.73 m² koruma sağlamıştır.",
+        "D": "YANLIS — Gözlemsel analizlerde yüksek LDL-K seviyeleri ile periferik nöropati arasında ters bir ilişki (HR: 0.92) gözlense de, Mendelian randomizasyon analizleri bu ilişkinin kausal olmadığını (p=0.86), konfüzyon faktörlerinden (örn. obezite, beslenme bozuklukları, diyabetik süreçler) kaynaklanan yanıltıcı bir korelasyon olduğunu kanıtlamıştır.",
+        "E": "YANLIS — Periferik arter hastalığı (PAH) mikrovasküler değil, büyük ve orta boy arterleri tutan makrovasküler/karma bir aterosklerotik hastalıktır. Nitekim LDL-K yüksekliğinin PAH üzerindeki kausal risk artışı (RR: 2.09), miyokard enfarktüsü (RR: 2.32) ile benzer büyüklüktedir. Statinler ve PCSK9 inhibitörleri PAH hastalarında majör advers ekstremite olaylarını (MALE) ve revaskülarizasyon ihtiyacını belirgin şekilde azaltmaktadır."
+      },
+      "etiketler": [
+        "Mendelian Randomizasyon",
+        "LDL-K Nedenselliği",
+        "Periferik Arter Hastalığı",
+        "Kronik Böbrek Hastalığı",
+        "Mikrovasküler ve Makrovasküler Hastalık"
+      ],
+      "zorluk": "zor",
+      "kaynak": "JACC 2019 (Mendelian randomizasyon: Kopenhag kohortları ve UK Biobank; 13 RKÇ statin meta-analizi)"
+    },
+    {
+      "id": "s12",
+      "metin": "Diyabete bağlı Kronik Böbrek Hastalığı (KBH Evre 3b, eGFR: 38 mL/dak/1.73 m²) ve sekonder koruma endikasyonu nedeniyle statin (atorvastatin) + ARB (valsartan) tedavisi altında olan 62 yaşındaki kadın hasta; renal fonksiyon kaybı progresyonunu yavaşlatmak ve üremik toksin yükünü hafifletmek amacıyla Çin ulusal ruhsatlı üremik klerens preparatı olan Niaoduqing granülleri (NDQG) kullanmaya başlamıştır. Hastanın takip sürecindeki kombinasyon güvenliği, farmakovijilans verileri ve bitkisel moleküllerin metabolik etkileşimleri değerlendirilmektedir. Geleneksel Çin tıbbı patenti olan üremik klerens preparatlarının (NDQG) kardiyovasküler ve renal ilaçlarla (statin, ACEI/ARB) kombinasyonu, yan etki profili ve etken madde patofizyolojisi ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "NDQG'nin statin grubu ilaçlar, ACEI veya ARB'ler ile eş zamanlı kombine kullanımında, tek başına standart medikal tedaviye kıyasla advers ilaç reaksiyonu (ADR) sıklığında istatistiksel olarak anlamlı bir artış görülür.",
+        "B": "NDQG kullanımında ortaya çıkan en sık advers etki gastrointestinal sistem bozukluklarıdır (özellikle diyare); bu durum formülasyondaki Rheum officinale (Dahuang / Ravent) kökenli antrakinon türevlerinin bağırsak lümeninde serbestleşerek myenterik pleksusu uyarmasından ve su/elektrolit emilimini inhibe etmesinden kaynaklanır.",
+        "C": "NDQG bileşiminde bulunan Reynoutria multiflora (Heshouwu) kaynaklı ilaca bağlı karaciğer hasarı (RM-DILI), doğrudan doza bağımlı sitotoksik bir süreçtir ve Poria cocos (Fuling) ile Meyan kökü (Glycyrrhiza uralensis) ilavesinin bu hepatotoksisite üzerinde koruyucu bir etkisi bulunmamaktadır.",
+        "D": "Sistemik meta-analiz verilerine göre, diyaliz almayan KBH hastalarında NDQG eklenmesiyle görülen advers etki insidansı, kontrol grubuna kıyasla belirgin şekilde yüksek saptanmıştır.",
+        "E": "NDQG içeriğindeki Sophora flavescens (Kushen) alkaloitlerinin (matrin ve soforidin) renal tübüler ve hepatik hücresel toksisite potansiyeli, mitokondriyal apoptoz yollarını tamamen baskılamasından ileri gelir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Statin ve renin-anjiyotensin sistemi blokörleri alan KBH hastalarına eklenen üremik klerens preparatları (NDQG), ilave kardiyovasküler/hepatik risk yaratmaksızın güvenle kullanılabilmekte; ancak ana bileşeni olan Rheum officinale'in pürgatif antrakinon içeriği nedeniyle en sık gastrointestinal yan etkilere (diyare/bulantı) yol açmaktadır.",
+      "aciklama_detay": "Gastrointestinal hakimiyet: NDQG tedavisi alan hastalarda bildirilen advers ilaç reaksiyonlarının (ADR) %64.74'ü gastrointestinal sisteme aittir ve en sık klinik belirtiler diyare, bulantı ve kusmadır. Antrakinon mekanizması: Bu tablonun ana nedeni, formülasyonda yer alan Rheum officinale (Dahuang / Ravent) bileşenidir. Dahuang içeriğindeki bağlı antrakinonlar lümende serbest antrakinonlara (özellikle reyn/rhein) dönüşür; bağırsak düz kaslarındaki ve mukozal pleksustaki sinir ağlarını doğrudan uyararak motiliteyi artırır, aquaporin ekspresyonunu değiştirir ve su-elektrolit geri emilimini bloke ederek diyareye yol açar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sistemik meta-analiz sonuçlarına göre, NDQG'nin statin ilaçları ile kombinasyonunda (RR = 1.00, %95 GA: 0.106–9.464), ARB'ler ile kombinasyonunda (RR = 1.049) veya ACEI'ler ile kombinasyonunda (RR = 0.806) advers etki sıklığında kontrol grubuna kıyasla hiçbir istatistiksel artış saptanmamıştır.",
+        "B": "DOGRU — ADR'lerin %64.74'ü gastrointestinaldir (diyare, bulantı, kusma); Rheum officinale (Dahuang) antrakinonları lümende serbestleşerek bağırsak sinir ağlarını uyarır, aquaporin ekspresyonunu değiştirir ve su-elektrolit geri emilimini bloke eder.",
+        "C": "YANLIS — Reynoutria multiflora (Heshouwu) kaynaklı karaciğer hasarı (RM-DILI), doza bağımlı olmayıp öngörülemeyen, immünolojik mekanizmalı ve gecikmiş tipte bir reaksiyondur; insanlarda HLA-B*35:01 alleli varlığıyla genetik olarak ilişkilendirilmiştir. Formülasyondaki Poria cocos (Fuling) ile 2:1 oranında kombinasyonu ve Meyan kökündeki (Glycyrrhiza uralensis) Licochalcone B'nin NLRP3 inflamazomunu inhibe etmesi, Heshouwu'nun hepatotoksisitesini belirgin şekilde nötralize eden geleneksel uyum (herb compatibility) mekanizmasıdır.",
+        "D": "YANLIS — Diyalize girmeyen KBH hastalarında NDQG tedavisi grubunda toplam yan etki sıklığı (%7.26), kontrol grubuna (%8.39) kıyasla anlamlı derecede daha düşük (RR = 0.81, %95 GA: 0.677–0.969) bulunmuştur.",
+        "E": "YANLIS — Sophora flavescens (Kushen) bileşenleri olan matrin ve soforidin; apoptozu engellemez, aksine yüksek dozlarda mitokondriyal yolak üzerinden hücresel apoptozu ve kaspaz aktivasyonunu indükleyerek, sitokrom P450 enzimlerini etkileyip karaciğer ve böbrek dokusunda toksisite potansiyeli yaratırlar."
+      },
+      "etiketler": [
+        "Niaoduqing (NDQG)",
+        "Statin Kombinasyon Güvenliği",
+        "Kronik Böbrek Hastalığı",
+        "Antrakinon",
+        "Bitkisel İlaç Hepatotoksisitesi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "NDQG sistematik meta-analizi ve farmakovijilans verileri"
     }
   ]
 }
