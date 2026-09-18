@@ -1,8 +1,8 @@
 {
-  "id": "quiz-endo-hipofiz-hastaliklari-001",
-  "baslik": "Hipofiz Hastalıkları — Soru Seti 1",
+  "id": "quiz-endo-hipopituitarizm-001",
+  "baslik": "Hipofiz Yetmezliği — Soru Seti 1",
   "branch": "endokrinoloji",
-  "topic": "hipofiz-hastaliklari",
+  "topic": "hipopituitarizm",
   "sorular": [
     {
       "id": "s1",

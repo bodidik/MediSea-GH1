@@ -137,11 +137,12 @@
         },
         {
           "id": "hipopituitarizm",
-          "baslik": "Hipopituitarizm",
+          "baslik": "Hipofiz Yetmezliği (Hipopitüitarizm)",
           "rozetler": [
-            "YAKINDA"
+            "YENİ",
+            "SINAV SPOTU"
           ],
-          "hazir": false
+          "hazir": true
         }
       ]
     },

@@ -1,0 +1,147 @@
+{
+  "id": "pearl-endo-hipopituitarizm-001",
+  "accessLevel": "premium",
+  "topic": "Hipofiz Yetmezliği (Hipopitüitarizm)",
+  "pearls": [
+    {
+      "id": "p-endo-hpy-01",
+      "level": "Klinik",
+      "title": "Hormon Replasman Sıralaması (Glukokortikoid vs. Levotiroksin)",
+      "content": "Santral hipotiroidizm ve santral adrenal yetmezlik birlikte saptandığında, Levotiroksin (T4) tedavisi kesinlikle glukokortikoid replasmanından önce veya tek başına başlanmamalıdır. Levotiroksinin tek başına verilmesi, karaciğerde kortizol metabolizmasını ve klirensini hızlandırarak hastada var olan kısıtlı kortizol havuzunu tüketir ve akut adrenal krizi tetikleyebilir.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-02",
+      "level": "Klinik",
+      "title": "Subklinik Arginin Vazopressin Eksikliğinin (Diabetes Insipidus) Maskesinin Kalkması (\"Unmasking\" Fenomeni)",
+      "content": "Glukokortikoid eksikliği böbreklerde serbest su klirensini azaltarak parsiyel vazopressin (AVP) eksikliğini maskeleyebilir. Hidrokortizon replasmanı başlatıldığında renal hemodinaminin düzelmesi ve AVP üzerindeki baskının kalkmasıyla, önceden gizli kalan Arginin Vazopressin Eksikliği (AVP-D / Santral DI) masif poliüri ve polidipsi ile aniden açığa çıkar.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-03",
+      "level": "Klinik",
+      "title": "Santral Hipotiroidizmde TSH'nin Geçersizliği ve Doz Titrasyon Hedefi",
+      "content": "Santral hipotiroidizm tedavisinde serum TSH seviyesi replasmanın yeterliliğini değerlendirmek için kullanılamaz. Levotiroksin doz titrasyonu, serum serbest T4 (fT4) düzeyini laboratuvar referans aralığının orta-üst veya üst yarısında tutacak şekilde ayarlanmalıdır. Bununla birlikte, idame T4 alan hastaların %80'inden fazlasında TSH &lt; 0.5 mIU/L'dir; TSH'nin &gt; 1 mIU/L bulunması \"uygunsuz yüksek\" kabul edilerek yetersiz replasmana işaret edebilir.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-04",
+      "level": "Klinik",
+      "title": "Kortikotrop Aks Yetersizliğinde Biyokimyasal Kesim Değerleri (Sabah Kortizolü)",
+      "content": "Açlık sabah (07:00–09:00) serum kortizol düzeyinin &gt; 13–15 µg/dL (370–415 nmol/L) olması adrenal aksın sağlam olduğunu gösterirken, &lt; 3–5 µg/dL (80–140 nmol/L) olması santral adrenal yetmezlik tanısını kesinleştirir. Ara (3–15 µg/dL) değerler uyarım testi gerektirir.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-05",
+      "level": "Klinik",
+      "title": "ACTH Uyarım (Cosyntropin) Testi Eşik Değerleri ve Monoklonal/LC-MS Assay Nüansı",
+      "content": "250 µg sentetik ACTH (cosyntropin) testi sonrası pik kortizolün ≥ 18 µg/dL olması klasik poliklonal kitlerde normal yanıt kabul edilirken, özgüllüğü yüksek olan yeni monoklonal immünassay veya LC-MS/MS yöntemlerinde normallik kestirim değeri ≥ 14–15 µg/dL seviyesine düşmektedir.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-06",
+      "level": "Klinik",
+      "title": "Postoperatif veya Akut Sellar Hasarda Cosyntropin Testinin Yalancı Normalliği",
+      "content": "Pitüiter cerrahi, apopleksi veya akut kafa travmasını takip eden ilk 4–6 hafta içinde adrenal korteks henüz atrofiye uğramadığı için Cosyntropin uyarım testi yalancı normal (false-negative) sonuç verebilir; bu erken evrede adrenal rezerv değerlendirmesi tam güvenilir değildir.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-07",
+      "level": "Klinik",
+      "title": "Sekonder Adrenal Yetersizlikte Mineralokortikoid (Aldosteron) Korunumu",
+      "content": "Primer adrenal yetmezliğin aksine, sekonder/santral adrenal yetmezlikte Renin-Anjiyotensin-Aldosteron Sistemi (RAAS) korunduğu için aldosteron üretimi devam eder; bu nedenle fludrokortizon replasmanına gerek duyulmaz, tuz kaybı, hiperkalemi ve hipovolemik şok beklenmez.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-08",
+      "level": "Klinik",
+      "title": "Glukokortikoid Replasmanında Takip Kriterleri",
+      "content": "Hidrokortizon doz takibinde 24 saatlik idrarda serbest kortizol (UFC) veya spot kan kortizolü ölçümleri KULLANILMAZ. Oral hidrokortizon alımından sonra Kortikosteroid Bağlayan Globulin (CBG) doygunluğa ulaştığı için idrarda yapay suprafizyolojik kortizol atılımı saptanır. Doz titrasyonu tamamen hastanın klinik semptomları ve serum sodyum izlemine göre yapılır.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-09",
+      "level": "Klinik",
+      "title": "Büyüme Hormonu (rhGH) ve 11β-HSD1 İnhibisyonu",
+      "content": "Rekombinant insan Büyüme Hormonu (rhGH) tedavisi, inaktif kortizonu aktif kortizola dönüştüren 11β-HSD1 enzimini inhibe eder. Bu durum aktif kortizol biyoyararlanımını azaltarak glukokortikoid replasman ihtiyacını artırabilir veya sınırda kortikotrop rezervi olanlarda adrenal yetmezliği açığa çıkarabilir.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-10",
+      "level": "Klinik",
+      "title": "Büyüme Hormonu (rhGH) ve Oral Östrojen Etkileşimi",
+      "content": "Oral östrojen kullanımı karaciğerde ilk geçiş etkisiyle IGF-1 üretimini baskılar ve GH direncine yol açar. Bu nedenle oral östrojen kullanan kadınlarda hedef IGF-1 seviyesine ulaşabilmek için %30–50 daha yüksek rhGH dozları gerekir; transdermal östrojene geçildiğinde rhGH dozu azaltılmalıdır.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-11",
+      "level": "Klinik",
+      "title": "Erişkin Büyüme Hormonu Eksikliği (aGHD) Tanısında Dinamik Test Zorunluluğu Olmayan Durum",
+      "content": "Organik hipotalamo-hipofizer hastalığı olan bir bireyde 3 veya daha fazla ön hipofiz hormon eksikliği (panhipopitüitarizm) ile birlikte serum IGF-1 seviyesinin düşük bulunması aGHD tanısını kesinleştirir (%96–100 pozitif prediktif değer); ek bir dinamik uyarım testi yapılmasına gerek yoktur.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-12",
+      "level": "Klinik",
+      "title": "Glukagon Uyarım Testinde VKİ Odaklı Kesim Değerleri",
+      "content": "aGHD tanısında glukagon uyarım testi uygulanırken obezitenin GH yanıtını körlediği dikkate alınmalıdır: VKI &lt; 30 kg/m² için pik GH kesim değeri 3 µg/L iken, VKI ≥ 30 kg/m² olan obez bireylerde kesim değeri 1 µg/L'dir.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-13",
+      "level": "Klinik",
+      "title": "Opere Edilmemiş Pitüiter Adenomlarda Arginin Vazopressin Eksikliği (Diabetes Insipidus) Kuralı",
+      "content": "Cerrahi veya travma geçirmemiş primer hipofiz adenomları boyutları ne kadar büyük olursa olsun neredeyse hiçbir zaman kendiliğinden Diabetes Insipidus (AVP-D) oluşturmazlar. Sellar kitle varlığında cerrahi öncesi DI saptanmışsa öncelikle kraniyofaringiyoma, hipofizit, infiltratif hastalıklar (sarkoidozis, LCH) veya pituiter metastaz düşünülmelidir.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-14",
+      "level": "Klinik",
+      "title": "Sap Basısı Prolaktin Yüksekliği (\"Stalk Effect\") Sınırı",
+      "content": "Non-fonksiyonel sellar kitlelerin hipofiz sapına bası yapması sonucu tonik dopaminerjik inhibisyonun kesilmesiyle oluşan hiperprolaktinemi genellikle &lt; 100–150 ng/mL düzeyindedir ve kitle boyutuyla orantısız şekilde düşüktür.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-15",
+      "level": "Klinik",
+      "title": "İmmün Kontrol Noktası İnhibitörü (ICI) Hipofizitinde Arka Hipofiz Kuralı",
+      "content": "Lenfositik ve diğer primer hipofizitlerde Santral Diabetes Insipidus (AVP eksikliği) oranı %50–80 gibi yüksek oranlarda görülürken, İmmün Kontrol Noktası İnhibitörlerine (özellikle anti-CTLA-4 ipilimumab veya anti-PD-1) bağlı gelişen hipofizitlerde DI gelişimi son derece nadirdir (&lt; %2–3). ICI alan bir hastada DI gelişmesi öncelikle pituiter metastaz olasılığını akla getirmelidir.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-16",
+      "level": "Klinik",
+      "title": "Kombine Hipofiz Yetersizliklerinin En Sık Genetik Sürücüsü (PROP1 Mutasyonu)",
+      "content": "PROP1 mutasyonu otozomal resesif geçişli olup kombine hipofiz hormon eksikliklerinin en sık saptanan genetik nedenidir. PIT1 soyu hormonları (GH, PRL, TSH) ve gonadotropinlerin (LH/FSH) yanı sıra, geç başlayan (late-onset) ACTH eksikliği ile karakterizedir.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-17",
+      "level": "Klinik",
+      "title": "İzole Kortikotrop Yetersizliğinin Genetik Etiyolojisi (TBX19 / TPIT Mutasyonu)",
+      "content": "Otozomal resesif TBX19 (TPIT) mutasyonu, kortikotrop hücre diferansiyasyonunu bozarak neonatal dönemde ağır izole ACTH eksikliği, dirençli neonatal hipoglisemi ve kolestatik sarılık tablosuna yol açar.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-18",
+      "level": "Klinik",
+      "title": "Sellar Kitlelerde Kademeli Hormonal Kayıp Hiyerarşisi",
+      "content": "Yavaş büyüyen sellar kitlelerde ve hipofiz ışınlaması sonrasında ön hipofiz hormonlarının kaybolma sırası genellikle sabittir: GH → LH/FSH → TSH → ACTH → PRL. Kortikotrop (ACTH) hücreler kompresyona en dirençli gruptur ve işlevini en son kaybeder.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-19",
+      "level": "Klinik",
+      "title": "Menopoz Sonrası Kadınlarda Santral Hipogonadizm İpucu",
+      "content": "Postmenopozal dönemdeki bir kadında östrojen replasmanı almamasına rağmen serum FSH ve LH düzeylerinin beklenildiği gibi yüksek olmaması (düşük veya inapropriye normal kalması) gonadotrop yetersizliğinin (santral hipogonadizm) kesin kanıtıdır.",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-endo-hpy-20",
+      "level": "Klinik",
+      "title": "Postpartum Agalakti ve Prolaktin Eksikliği",
+      "content": "Anterior hipofizin en nadir izole eksikliği prolaktin eksikliğidir; Sheehan sendromu veya masif hipofiz harabiyeti sonrası gelişen prolaktin yokluğunun tek spesifik klinik bulgusu doğum sonrası laktasyon başarısızlığıdır (agalakti).",
+      "trigger": "Hipofiz Yetmezliği"
+    }
+  ]
+}
