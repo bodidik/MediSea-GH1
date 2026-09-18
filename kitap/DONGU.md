@@ -47,7 +47,7 @@ tam basım 120 saniyeyi aşıyordu; parça kipinde tek sayfa ~10 saniye.)
 | 9 | (gastro) Asit ve portal hipertansiyon | ascit-yonetimi (+5 alt) | asit-portal-hipertansiyon + quiz + 2 kart seti | BİTTİ (gastro s. 1–10) |
 | 10 | (gastro) Çölyak hastalığı | colyak (+6 alt), refrakter çölyak | colyak-hastaligi + quiz | BİTTİ (gastro s. 11–20) |
 | 11 | (kardiyo) Akut koroner sendromlar | akut-koroner-sendromlar (29K), gebelikte-AKS, akut kalp yetersizliği | akut-koroner-sendromlar + quiz | BİTTİ (kardiyo s. 1–12) |
-| 12 | (kardiyo) Klinik lipidoloji ve ASKVH | lipidoloji-tedavi-ana + 12 alt sayfa | klinik-lipidoloji-ascvd + quiz + kart | BİTTİ (kardiyo s. 13–24) |
+| 12 | (kardiyo) Klinik lipidoloji ve ASKVH | lipidoloji-tedavi-ana + 12 alt sayfa | klinik-lipidoloji-ascvd + quiz + kart | BİTTİ (kardiyo s. 13–24; Tur 36 ile s. 13–26) |
 | 13 | (romato) Behçet hastalığı | behcet-hastaligi-yonetimi, vasküler tutulum, hasar indeksleri, nörobehçet | behcet-hastaligi + quiz + kart | BİTTİ (romato s. 1–10) |
 | 14 | (nefro) Polikistik böbrek (ADPKD) | polikistik-bobrek-hastaligi-pkd + 5 alt sayfa | adpkd + quiz | BİTTİ (nefro s. 1–10) |
 | 15 | (nefro) IgA nefropatisi | iga-nefropatisi-berger, güncel tedavi, MEST-C | iga-nefropatisi + quiz | BİTTİ (nefro s. 11–20) |
@@ -71,6 +71,7 @@ tam basım 120 saniyeyi aşıyordu; parça kipinde tek sayfa ~10 saniye.)
 | 33 | (endokrin) Hipopitüitarizm genişletme + TEMD kutuları — kullanıcı isteği | hipofiz-yetmezligi alt ağacı | TEMD 2022 kılavuzu (Bölüm 6, 7, 12) | BİTTİ (o gün s. 114–121; şimdi s. 128–135) |
 | 34 | (endokrin) Prolaktinoma ve akromegali TEMD kutuları — kullanıcı isteği | — | TEMD 2022 kılavuzu (Bölüm 1a, 1b) | BİTTİ (o gün s. 114–117; şimdi s. 124–127) |
 | 35 | (endokrin) Tiroid kısımlarına "TEMD'de ne var" — kullanıcı isteği | — | TEMD 2025 tiroid kılavuzu (tiroid2025_11042025.pdf) | BİTTİ (s. 13–14, 24–25, 34–35, 87–89; bölüm 138 sayfa) |
+| 36 | (kardiyo) Lipidoloji genişletme — kullanılmayan kaynaklar, kullanıcı isteği | bempedoik-ezetimib-mace, lipid-ezetimibe-sakinca, statin-otoimmun-miyopati-imnm | klinik-lipidoloji-ascvd-quiz-1 (10 soru) | BİTTİ (kardiyo s. 23–24; kısım 13–26) |
 
 **İkinci aday taraması (16 Eyl 03:18):** kuyruk yine bitti; açık + premium eşleşmesi olan yeni konular eklendi. Göğüs hastalıkları premiumunda TKP, HKP, VİP ve akciğer kanseri var ama açık tarafta `canonical/gogus` yalnız sarkoidoz üçlüsünü taşıyor (akciğer kanseri açık sayfası onkolojide) — bu yüzden yalnız sarkoidoz kuyruğa alındı. Erişkin Still hastalığı ve HFpEF premiumda dolu, açık eşleşme yok: elendi.
 
@@ -602,3 +603,18 @@ Alınmayan: Tablo 1.5'in sütunları PDF'ten kaymış çıktı; kitaba yalnız h
 - **Postpartum tiroidit (TEMD kendi içinde):** tiroiditler bölümü "%5–10 kalıcı hipotiroidi" (s.25); gebelik bölümü "gebeliklerin %8–10'u, %5 kalıcı" (s.35).
 - **Subklinik hipertiroidi tedavi eşiği:** TEMD metni "≥65 yaş herkese tedavi"; aynı bölümün Şekil 10.1'i ≥65 yaşı yalnız TSH 0,1–0,4 dalında ölçüt olarak sayıyor. Kitapta şekil izlendi (TSH <0,1 herkese; 0,1–0,4'te ≥65 yaş ölçütlerden biri).
 - **Gebelikte ATİ geçişi:** uyumlu — TEMD ve Kısım 3 "16. haftadan sonra MMI"; Kısım 1 anlatısı (s.1–12) "ikinci trimesterde" diyor, aynı anlam.
+
+### Tur 36 — (kardiyo) Lipidoloji: kullanılmayan kaynaklarla genişletme · kardiyo s. 23–24 · kullanıcı isteği (18 Eylül)
+Kaynak: açık `bempedoik-ezetimib-mace`, `lipid-ezetimibe-sakinca`, `statin-otoimmun-miyopati-imnm` + premium `klinik-lipidoloji-ascvd-quiz-1` (Tur 12'de okunmamış olarak kayıtlıydı).
+Önce ölçüldü: premium quiz'in 10 sorusundaki bilginin neredeyse tamamı Tur 12'de premium konudan zaten kitaba girmişti (ApoC-III, ApoB, TG iki eşiği, Lp(a), PREVENT, <55 hedefi, inklisiran, bempedoik asit, ikosapent, evinakumab). Bu yüzden quiz yeni bilgi sayfası değil **vaka sayfası** olarak kullanıldı; yeni bilgi üç açık sayfadan geldi.
+Kısım 2 (Lipidoloji) 12 → **14 sayfa** (s. 13–26): tekrar 23 → 25, notlar 24 → 26; kapak ve bölüm açılışı içindekileri güncellendi; folyo 26/26 tutarlı; taşma yok (yeni sayfalar −36 ve −55 mm, kısmın öteki sayfalarıyla aynı düzeyde).
+- **23** Başvuru: IMNM tablosu (sıklık, kriptik epitop, HLA-DRB1*11:01, posterior-medial uyluk, CK 10–100 kat, MRG STIR/EMG, biyopsi, basamaklı tedavi) · ezetimib ne zaman verilmez (gebelik, laktasyon, Child-Pugh A/B/C, KBH, aşırı duyarlılık, statinle >3 kat inatçı transaminaz) · statin intoleransında oral ikili (%20–24, %18–20, %38, CLEAR mutlak %1,6).
+- **24** Vakadan karara: quiz'in 10 senaryosu + yeni kaynaklardan 6 senaryo, iki klinik inci.
+Ek düzeltme: tekrar sayfasının başlığı "Yirmi dört soruda lipidoloji" diyordu, sayfada **36** soru var (sayıldı; Tur 12 logu 37 yazıyordu) → "Otuz altı soruda lipidoloji".
+
+**Atlanan yapay zeka artığı:** `bempedoik-ezetimib-mace` 4. bölüm ("2026 ACC/AHA") yarım cümle taşıyor — *"hedeflere (LDL-K Sınıf 1 ve Sınıf 2a düzeyinde önerilir"* — öneri metni kesik; ayrıca "%20'lere varan RRR projeksiyonu" kaynaksız bir hesap. İkisi de alınmadı.
+
+**Tutarsızlıklar:**
+- **IMPROVE-IT:** s.17 (Tur 12, açık sayfalar) "7 yılda MACE %6,4 rölatif, %2 mutlak"; `bempedoik-ezetimib-mace` "6 yıllık takipte ARR %2,2". Kitapta ikisi de kendi sayfasında, s.23'te "kaynakta" diye işaretli.
+- **Bempedoik asit monoterapi:** s.18 "%21–24"; yeni kaynak "SAMS'de %20–24".
+- **IMNM'de IVIG'in yeri (kaynak kendi içinde):** "8–12 haftada yanıt yoksa ya da ağırsa" ve aynı cümlede "1. basamak olarak da tercih edilebilir" — ikisi birlikte yazıldı.
