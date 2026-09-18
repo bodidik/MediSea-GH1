@@ -121,7 +121,8 @@
           "id": "hipofiz-hastaliklari",
           "baslik": "Hipofiz Hastalıkları — İleri Klinik ve Akademik Doküman",
           "rozetler": [
-            "YENİ"
+            "YENİ",
+            "SINAV SPOTU"
           ],
           "hazir": true
         },
@@ -129,7 +130,8 @@
           "id": "hipofiz-kesim-degerleri-ayirici-tani",
           "baslik": "Hipofiz Hastalıkları — Kesim Değerleri ve Ayırıcı Tanı",
           "rozetler": [
-            "YENİ"
+            "YENİ",
+            "SINAV SPOTU"
           ],
           "hazir": true
         },
