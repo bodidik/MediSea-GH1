@@ -100,6 +100,16 @@ const TOOLS_DATABASE = [
       { slug: "corrected-sodium", name: "Düzeltilmiş Sodyum", desc: "Hiperglisemi düzeltmesi (Katz formülü)" },
       { slug: "corrected-calcium", name: "Düzeltilmiş Kalsiyum", desc: "Albumin'e göre Ca+2 hesaplama" },
       { slug: "tirads", name: "ACR TI-RADS", desc: "Tiroid nodülü US değerlendirme — kompozisyon, ekojenite, şekil, sınır, odaklar + İİAB kararı" },
+      { slug: "dka-hhs", name: "DKA ve HHS Sınıflaması", desc: "Hiperglisemik krizlerde tanı ve şiddet — 2024 uzlaşı ölçütleri, efektif osmolalite" },
+      { slug: "bazal-bolus-insulin", name: "Bazal-Bolus İnsülin Başlangıcı", desc: "Hastanede tip 2 diyabette kiloya dayalı doz, düzeltme faktörü ve karbonhidrat oranı" },
+      { slug: "diyabetik-ayak", name: "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA)", desc: "Enfeksiyon şiddeti 1–4 ve osteomiyelit — lokal ve sistemik bulgular" },
+      { slug: "metabolik-sendrom", name: "Metabolik Sendrom", desc: "NCEP ATP III ve IDF tanımları yan yana — bel çevresi, lipit, KB, glukoz" },
+      { slug: "burch-wartofsky", name: "Burch-Wartofsky Skalası", desc: "Tiroid fırtınası olasılığı — ateş, MSS, GİS, taşikardi, KY, AF, tetikleyici" },
+      { slug: "graves-cas", name: "Graves Orbitopatisi CAS", desc: "Klinik Aktivite Skoru — ilk değerlendirme ≥ 3/7, izlem ≥ 4/10" },
+      { slug: "aldosteron-renin", name: "Aldosteron/Renin Oranı", desc: "Primer aldosteronizm taraması — ARR, aldosteron eşiği, birim dönüşümü" },
+      { slug: "adrenal-yikanma", name: "Adrenal Kitle BT Yıkanma Hesabı", desc: "Kontrastsız HU, mutlak ve göreli kontrast yıkanması — adenom ayrımı" },
+      { slug: "cccr", name: "Kalsiyum/Kreatinin Klirens Oranı", desc: "FHH ile primer hiperparatiroidi ayrımı — CCCR" },
+      { slug: "makroprolaktin", name: "Makroprolaktin (PEG Geri Kazanımı)", desc: "Hiperprolaktinemide makroprolaktin ve monomerik prolaktin ayrımı" },
     ]
   },
   {

@@ -43,6 +43,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
+              <Link href="/tools/graves-cas" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Graves Orbitopatisi CAS
+              </Link>
+            </li>
+            <li>
               <Link href="/tools/hba1c-eag" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 HbA1c → Ortalama Glukoz
               </Link>
@@ -53,23 +58,18 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/tools/steroid-dose" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Steroid Eşdeğer Doz
+              <Link href="/tools/cccr" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Kalsiyum/Kreatinin Klirens Oranı
               </Link>
             </li>
             <li>
-              <Link href="/tools/tirads" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ACR TI-RADS
+              <Link href="/tools/makroprolaktin" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Makroprolaktin (PEG Geri Kazanımı)
               </Link>
             </li>
             <li>
-              <Link href="/tools/bmi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                BMI & İdeal Vücut Ağırlığı
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/bmr" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                BMR & TDEE
+              <Link href="/tools/metabolik-sendrom" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Metabolik Sendrom
               </Link>
             </li>
           </ul>

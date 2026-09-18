@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "BMI & İdeal Vücut Ağırlığı — Vücut kitle indeksi",
-  description: "BMI & İdeal Vücut Ağırlığı: Vücut kitle indeksi + Devine / Hamwi formülleri. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/bmi" },
+  title: "Aldosteron/Renin Oranı — Primer aldosteronizm taraması",
+  description: "Aldosteron/Renin Oranı: Primer aldosteronizm taraması — ARR, aldosteron eşiği, birim dönüşümü. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/aldosteron-renin" },
   openGraph: {
     type: "website",
-    title: "BMI & İdeal Vücut Ağırlığı — Vücut kitle indeksi",
-    description: "BMI & İdeal Vücut Ağırlığı: Vücut kitle indeksi + Devine / Hamwi formülleri. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/bmi",
+    title: "Aldosteron/Renin Oranı — Primer aldosteronizm taraması",
+    description: "Aldosteron/Renin Oranı: Primer aldosteronizm taraması — ARR, aldosteron eşiği, birim dönüşümü. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/aldosteron-renin",
   },
 };
 
@@ -22,26 +22,49 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "BMI & İdeal Vücut Ağırlığı",
-          aciklama: "BMI & İdeal Vücut Ağırlığı: Vücut kitle indeksi + Devine / Hamwi formülleri. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/bmi",
+          ad: "Aldosteron/Renin Oranı",
+          aciklama: "Aldosteron/Renin Oranı: Primer aldosteronizm taraması — ARR, aldosteron eşiği, birim dönüşümü. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/aldosteron-renin",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "BMI & İdeal Vücut Ağırlığı", yol: "/tools/bmi" },
+          { ad: "Aldosteron/Renin Oranı", yol: "/tools/aldosteron-renin" },
         ])}
       />
       {children}
-
+      <nav aria-label="Bu aracın geçtiği konular" className="bg-slate-50 px-4 pb-6 font-sans">
+        <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
+            Bu aracın geçtiği konular
+          </h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/topics/endokrinoloji/adrenal-insidentaloma-yaklasimi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Adrenal İnsidentaloma Yaklaşımı
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <nav aria-label="Aynı kategoriden araçlar" className="bg-slate-50 px-4 pb-10 font-sans">
         <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
             Endokrinoloji & Metabolizma kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/bazal-bolus-insulin" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Bazal-Bolus İnsülin Başlangıcı
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/bmi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                BMI & İdeal Vücut Ağırlığı
+              </Link>
+            </li>
             <li>
               <Link href="/tools/bmr" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 BMR & TDEE
@@ -60,16 +83,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/dka-hhs" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 DKA ve HHS Sınıflaması
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/corrected-calcium" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Düzeltilmiş Kalsiyum
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/corrected-sodium" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Düzeltilmiş Sodyum
               </Link>
             </li>
           </ul>

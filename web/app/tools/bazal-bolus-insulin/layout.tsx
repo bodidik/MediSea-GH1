@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "BMR & TDEE — Bazal metabolizma hızı",
-  description: "BMR & TDEE: Bazal metabolizma hızı — Mifflin–St Jeor. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/bmr" },
+  title: "Bazal-Bolus İnsülin Başlangıcı — Hastanede tip",
+  description: "Bazal-Bolus İnsülin Başlangıcı: Hastanede tip 2 diyabette kiloya dayalı doz, düzeltme faktörü ve karbonhidrat oranı. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/bazal-bolus-insulin" },
   openGraph: {
     type: "website",
-    title: "BMR & TDEE — Bazal metabolizma hızı",
-    description: "BMR & TDEE: Bazal metabolizma hızı — Mifflin–St Jeor. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/bmr",
+    title: "Bazal-Bolus İnsülin Başlangıcı — Hastanede tip",
+    description: "Bazal-Bolus İnsülin Başlangıcı: Hastanede tip 2 diyabette kiloya dayalı doz, düzeltme faktörü ve karbonhidrat oranı. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/bazal-bolus-insulin",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "BMR & TDEE",
-          aciklama: "BMR & TDEE: Bazal metabolizma hızı — Mifflin–St Jeor. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/bmr",
+          ad: "Bazal-Bolus İnsülin Başlangıcı",
+          aciklama: "Bazal-Bolus İnsülin Başlangıcı: Hastanede tip 2 diyabette kiloya dayalı doz, düzeltme faktörü ve karbonhidrat oranı. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/bazal-bolus-insulin",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "BMR & TDEE", yol: "/tools/bmr" },
+          { ad: "Bazal-Bolus İnsülin Başlangıcı", yol: "/tools/bazal-bolus-insulin" },
         ])}
       />
       {children}
@@ -42,6 +42,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Endokrinoloji & Metabolizma kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/bmi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                BMI & İdeal Vücut Ağırlığı
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/bmr" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                BMR & TDEE
+              </Link>
+            </li>
             <li>
               <Link href="/tools/burch-wartofsky" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Burch-Wartofsky Skalası
@@ -60,16 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/corrected-calcium" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Düzeltilmiş Kalsiyum
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/corrected-sodium" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Düzeltilmiş Sodyum
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/findrisc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                FINDRISC
               </Link>
             </li>
           </ul>

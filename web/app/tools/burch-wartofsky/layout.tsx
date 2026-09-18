@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "BMR & TDEE — Bazal metabolizma hızı",
-  description: "BMR & TDEE: Bazal metabolizma hızı — Mifflin–St Jeor. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/bmr" },
+  title: "Burch-Wartofsky Skalası — Tiroid fırtınası olasılığı",
+  description: "Burch-Wartofsky Skalası: Tiroid fırtınası olasılığı — ateş, MSS, GİS, taşikardi, KY, AF, tetikleyici. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/burch-wartofsky" },
   openGraph: {
     type: "website",
-    title: "BMR & TDEE — Bazal metabolizma hızı",
-    description: "BMR & TDEE: Bazal metabolizma hızı — Mifflin–St Jeor. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/bmr",
+    title: "Burch-Wartofsky Skalası — Tiroid fırtınası olasılığı",
+    description: "Burch-Wartofsky Skalası: Tiroid fırtınası olasılığı — ateş, MSS, GİS, taşikardi, KY, AF, tetikleyici. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/burch-wartofsky",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "BMR & TDEE",
-          aciklama: "BMR & TDEE: Bazal metabolizma hızı — Mifflin–St Jeor. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/bmr",
+          ad: "Burch-Wartofsky Skalası",
+          aciklama: "Burch-Wartofsky Skalası: Tiroid fırtınası olasılığı — ateş, MSS, GİS, taşikardi, KY, AF, tetikleyici. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/burch-wartofsky",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "BMR & TDEE", yol: "/tools/bmr" },
+          { ad: "Burch-Wartofsky Skalası", yol: "/tools/burch-wartofsky" },
         ])}
       />
       {children}
@@ -42,11 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Endokrinoloji & Metabolizma kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/burch-wartofsky" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Burch-Wartofsky Skalası
-              </Link>
-            </li>
             <li>
               <Link href="/tools/diyabetik-ayak" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA)
@@ -70,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/findrisc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 FINDRISC
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/graves-cas" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Graves Orbitopatisi CAS
               </Link>
             </li>
           </ul>

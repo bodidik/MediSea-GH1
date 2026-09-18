@@ -35,9 +35,19 @@
   "desc": "250 μg / 1 μg protokol — adrenal yetmezlik kortizol yanıtı"
  },
  {
+  "slug": "adrenal-yikanma",
+  "name": "Adrenal Kitle BT Yıkanma Hesabı",
+  "desc": "Kontrastsız HU, mutlak ve göreli kontrast yıkanması — adenom ayrımı"
+ },
+ {
   "slug": "aims65",
   "name": "AIMS65",
   "desc": "Üst GİS kanamasında hastane mortalitesi — 0–5"
+ },
+ {
+  "slug": "aldosteron-renin",
+  "name": "Aldosteron/Renin Oranı",
+  "desc": "Primer aldosteronizm taraması — ARR, aldosteron eşiği, birim dönüşümü"
  },
  {
   "slug": "anaphylaxis",
@@ -130,6 +140,11 @@
   "desc": "Bath Ankilozan Spondilit Hastalık Aktivite İndeksi"
  },
  {
+  "slug": "bazal-bolus-insulin",
+  "name": "Bazal-Bolus İnsülin Başlangıcı",
+  "desc": "Hastanede tip 2 diyabette kiloya dayalı doz, düzeltme faktörü ve karbonhidrat oranı"
+ },
+ {
   "slug": "behcet",
   "name": "Behçet — ICBD 2014",
   "desc": "Behçet hastalığı tanı kriterleri — ağırlıklı puanlama (≥ 4 puan)"
@@ -175,6 +190,11 @@
   "desc": "Mosteller formülü — kemoterapi dozlama"
  },
  {
+  "slug": "burch-wartofsky",
+  "name": "Burch-Wartofsky Skalası",
+  "desc": "Tiroid fırtınası olasılığı — ateş, MSS, GİS, taşikardi, KY, AF, tetikleyici"
+ },
+ {
   "slug": "calvert",
   "name": "Calvert Formülü",
   "desc": "Karboplatin AUC bazlı doz hesaplama"
@@ -203,6 +223,11 @@
   "slug": "cat-copd",
   "name": "CAT Skoru",
   "desc": "KOAH Değerlendirme Testi — 8 Likert maddesi, semptom yükü"
+ },
+ {
+  "slug": "cccr",
+  "name": "Kalsiyum/Kreatinin Klirens Oranı",
+  "desc": "FHH ile primer hiperparatiroidi ayrımı — CCCR"
  },
  {
   "slug": "cdai",
@@ -293,6 +318,16 @@
   "slug": "dipss",
   "name": "DIPSS",
   "desc": "Primer miyelofibrozda dinamik prognostik skor — medyan sağkalım"
+ },
+ {
+  "slug": "diyabetik-ayak",
+  "name": "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA)",
+  "desc": "Enfeksiyon şiddeti 1–4 ve osteomiyelit — lokal ve sistemik bulgular"
+ },
+ {
+  "slug": "dka-hhs",
+  "name": "DKA ve HHS Sınıflaması",
+  "desc": "Hiperglisemik krizlerde tanı ve şiddet — 2024 uzlaşı ölçütleri, efektif osmolalite"
  },
  {
   "slug": "dka-infuzyon",
@@ -468,6 +503,11 @@
   "slug": "grace",
   "name": "GRACE Skoru",
   "desc": "AKS/NSTEMI hastane içi mortalite — toplamsal puan (1.0)"
+ },
+ {
+  "slug": "graves-cas",
+  "name": "Graves Orbitopatisi CAS",
+  "desc": "Klinik Aktivite Skoru — ilk değerlendirme ≥ 3/7, izlem ≥ 4/10"
  },
  {
   "slug": "groningen-kirilganlik",
@@ -660,6 +700,11 @@
   "desc": "Endikasyona göre doz, süre ve pompa hızı — torsades ile replasman hızları zıt"
  },
  {
+  "slug": "makroprolaktin",
+  "name": "Makroprolaktin (PEG Geri Kazanımı)",
+  "desc": "Hiperprolaktinemide makroprolaktin ve monomerik prolaktin ayrımı"
+ },
+ {
   "slug": "mascc",
   "name": "MASCC Risk İndeksi",
   "desc": "Febril nötropenide komplikasyon riski"
@@ -683,6 +728,11 @@
   "slug": "mentzer",
   "name": "Mentzer İndeksi",
   "desc": "Mikrositer anemide talasemi taşıyıcılığı ve demir eksikliği ayrımı — MCV / eritrosit"
+ },
+ {
+  "slug": "metabolik-sendrom",
+  "name": "Metabolik Sendrom",
+  "desc": "NCEP ATP III ve IDF tanımları yan yana — bel çevresi, lipit, KB, glukoz"
  },
  {
   "slug": "mini-cog",

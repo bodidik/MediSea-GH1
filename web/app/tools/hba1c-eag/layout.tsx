@@ -48,6 +48,21 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
+              <Link href="/tools/cccr" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Kalsiyum/Kreatinin Klirens Oranı
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/makroprolaktin" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Makroprolaktin (PEG Geri Kazanımı)
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/metabolik-sendrom" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Metabolik Sendrom
+              </Link>
+            </li>
+            <li>
               <Link href="/tools/steroid-dose" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Steroid Eşdeğer Doz
               </Link>
@@ -55,21 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/tirads" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 ACR TI-RADS
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/bmi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                BMI & İdeal Vücut Ağırlığı
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/bmr" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                BMR & TDEE
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/corrected-calcium" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Düzeltilmiş Kalsiyum
               </Link>
             </li>
           </ul>

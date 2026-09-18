@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Düzeltilmiş Sodyum — Hiperglisemi düzeltmesi",
-  description: "Düzeltilmiş Sodyum: Hiperglisemi düzeltmesi (Katz formülü). Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/corrected-sodium" },
+  title: "Graves Orbitopatisi CAS — Klinik Aktivite Skoru",
+  description: "Graves Orbitopatisi CAS: Klinik Aktivite Skoru — ilk değerlendirme ≥ 3/7, izlem ≥ 4/10. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/graves-cas" },
   openGraph: {
     type: "website",
-    title: "Düzeltilmiş Sodyum — Hiperglisemi düzeltmesi",
-    description: "Düzeltilmiş Sodyum: Hiperglisemi düzeltmesi (Katz formülü). Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/corrected-sodium",
+    title: "Graves Orbitopatisi CAS — Klinik Aktivite Skoru",
+    description: "Graves Orbitopatisi CAS: Klinik Aktivite Skoru — ilk değerlendirme ≥ 3/7, izlem ≥ 4/10. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/graves-cas",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Düzeltilmiş Sodyum",
-          aciklama: "Düzeltilmiş Sodyum: Hiperglisemi düzeltmesi (Katz formülü). Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/corrected-sodium",
+          ad: "Graves Orbitopatisi CAS",
+          aciklama: "Graves Orbitopatisi CAS: Klinik Aktivite Skoru — ilk değerlendirme ≥ 3/7, izlem ≥ 4/10. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/graves-cas",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Düzeltilmiş Sodyum", yol: "/tools/corrected-sodium" },
+          { ad: "Graves Orbitopatisi CAS", yol: "/tools/graves-cas" },
         ])}
       />
       {children}
@@ -42,16 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Endokrinoloji & Metabolizma kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/findrisc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                FINDRISC
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/graves-cas" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Graves Orbitopatisi CAS
-              </Link>
-            </li>
             <li>
               <Link href="/tools/hba1c-eag" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 HbA1c → Ortalama Glukoz
@@ -70,6 +60,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/makroprolaktin" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Makroprolaktin (PEG Geri Kazanımı)
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/metabolik-sendrom" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Metabolik Sendrom
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/steroid-dose" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Steroid Eşdeğer Doz
               </Link>
             </li>
           </ul>

@@ -1,6 +1,13 @@
 {
   "uretilme": "scripts/arac-konu-index.cjs",
   "konuArac": {
+    "endokrinoloji/adrenal-insidentaloma-yaklasimi": [
+      {
+        "slug": "aldosteron-renin",
+        "name": "Aldosteron/Renin Oranı",
+        "eslesen": "Aldosteron/Renin Oranı"
+      }
+    ],
     "endokrinoloji/cushing-sendromu-genetik-ve-inovasyonlar": [
       {
         "slug": "egfr",
@@ -20,6 +27,13 @@
         "eslesen": "eGFR"
       }
     ],
+    "endokrinoloji/diabetes-mellitus-ana": [
+      {
+        "slug": "dka-hhs",
+        "name": "DKA ve HHS Sınıflaması",
+        "eslesen": "DKA ve HHS"
+      }
+    ],
     "endokrinoloji/diyabetik-ketoasidoz-ve-hhs": [
       {
         "slug": "potasyum-replasman",
@@ -30,6 +44,11 @@
         "slug": "anion-gap",
         "name": "Anyon Açığı",
         "eslesen": "Anyon Açığı"
+      },
+      {
+        "slug": "dka-hhs",
+        "name": "DKA ve HHS Sınıflaması",
+        "eslesen": "DKA ve HHS"
       }
     ],
     "endokrinoloji/gebelik-ve-tiroid-yonetimi": [
@@ -166,6 +185,13 @@
         "eslesen": "Status Epileptikus"
       }
     ],
+    "endokrinoloji/prolaktinoma-yeni-biyobelirtecler": [
+      {
+        "slug": "makroprolaktin",
+        "name": "Makroprolaktin (PEG Geri Kazanımı)",
+        "eslesen": "Makroprolaktin"
+      }
+    ],
     "endokrinoloji/sglt2-hasta-gunler-kurali-sick-day": [
       {
         "slug": "egfr",
@@ -204,6 +230,13 @@
         "slug": "qtc",
         "name": "QTc Hesaplayıcı",
         "eslesen": "QTc"
+      }
+    ],
+    "endokrinoloji/subklinik-tiroid-hastaliklari": [
+      {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
       }
     ],
     "endokrinoloji/tiroid-nodullerine-yaklasim": [
@@ -347,11 +380,74 @@
         "eslesen": "Child-Pugh"
       }
     ],
+    "gastroenteroloji/colyak-akdeniz-beslenme": [
+      {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
+      }
+    ],
+    "gastroenteroloji/colyak-beslenme": [
+      {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
+      }
+    ],
+    "gastroenteroloji/colyak-diyetsel-yag-riski": [
+      {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
+      }
+    ],
+    "gastroenteroloji/colyak-glutensiz-obezite": [
+      {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
+      }
+    ],
+    "gastroenteroloji/colyak-lif-alimi": [
+      {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
+      }
+    ],
+    "gastroenteroloji/colyak-pseudotahil-mikrobesin": [
+      {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
+      }
+    ],
+    "gastroenteroloji/colyak-pseudotahillar": [
+      {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
+      }
+    ],
+    "gastroenteroloji/colyak-psodotahillar-kilo": [
+      {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
+      }
+    ],
     "gastroenteroloji/kisa-bagirsak-sendromu": [
       {
         "slug": "anion-gap",
         "name": "Anyon Açığı",
         "eslesen": "Anyon Açığı"
+      }
+    ],
+    "gastroenteroloji/metabolik-yaglanma-masld": [
+      {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
       }
     ],
     "gastroenteroloji/pankreas-hastaliklari": [
@@ -732,6 +828,13 @@
         "eslesen": "Child-Pugh"
       }
     ],
+    "kardiyoloji/statin-intolerans-ezetimibe": [
+      {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
+      }
+    ],
     "kardiyoloji/uclu-tedavi-uzatma-risk-faktorleri": [
       {
         "slug": "egfr",
@@ -766,6 +869,13 @@
         "slug": "glim",
         "name": "GLIM Kriterleri",
         "eslesen": "GLIM Kriterleri"
+      }
+    ],
+    "klinik-nutrisyon/obezite": [
+      {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
       }
     ],
     "nefroloji/aldosteron-mekanizmalari": [
@@ -957,6 +1067,13 @@
     ]
   },
   "aracKonu": {
+    "aldosteron-renin": [
+      {
+        "yol": "endokrinoloji/adrenal-insidentaloma-yaklasimi",
+        "baslik": "Adrenal İnsidentaloma Yaklaşımı",
+        "eslesen": "Aldosteron/Renin Oranı"
+      }
+    ],
     "egfr": [
       {
         "yol": "nefroloji/aldosteron-mekanizmalari",
@@ -1039,6 +1156,18 @@
         "yol": "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma",
         "baslik": "Şiddetli Cushing Sendromu (SCS): İleri Yönetim",
         "eslesen": "QTc"
+      }
+    ],
+    "dka-hhs": [
+      {
+        "yol": "endokrinoloji/diabetes-mellitus-ana",
+        "baslik": "Diabetes Mellitus",
+        "eslesen": "DKA ve HHS"
+      },
+      {
+        "yol": "endokrinoloji/diyabetik-ketoasidoz-ve-hhs",
+        "baslik": "Akut Diyabetik Komplikasyonlar: DKA ve HHS",
+        "eslesen": "DKA ve HHS"
       }
     ],
     "anion-gap": [
@@ -1198,6 +1327,55 @@
         "yol": "endokrinoloji/siadh-sendromu",
         "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi",
         "eslesen": "ACTH Stimülasyon Testi"
+      }
+    ],
+    "makroprolaktin": [
+      {
+        "yol": "endokrinoloji/prolaktinoma-yeni-biyobelirtecler",
+        "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler",
+        "eslesen": "Makroprolaktin"
+      }
+    ],
+    "metabolik-sendrom": [
+      {
+        "yol": "gastroenteroloji/colyak-akdeniz-beslenme",
+        "baslik": "Çölyak Hastalığında Akdeniz Tipi Glutensiz Beslenme",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "endokrinoloji/subklinik-tiroid-hastaliklari",
+        "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "kardiyoloji/statin-intolerans-ezetimibe",
+        "baslik": "Statin İntoleransı (SAMS) Yönetimi ve Non-Statin Lipid Düşürücü Ajanlar",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "klinik-nutrisyon/obezite",
+        "baslik": "Ch 329: Obezite ve Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "gastroenteroloji/colyak-beslenme",
+        "baslik": "Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "gastroenteroloji/colyak-diyetsel-yag-riski",
+        "baslik": "Çölyak Hastalığında Diyetsel Yağ Riski ve Akdeniz Modeli",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "gastroenteroloji/colyak-glutensiz-obezite",
+        "baslik": "Çölyak Hastalığında Glutensiz Diyet ve Obezite Paradoksu",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "gastroenteroloji/colyak-lif-alimi",
+        "baslik": "Akdeniz Tipi Glutensiz Diyette Lif Alımının Artırılması",
+        "eslesen": "Metabolik Sendrom"
       }
     ],
     "tirads": [
@@ -1649,9 +1827,9 @@
   },
   "olcum": {
     "konu": 497,
-    "arac": 220,
-    "araciOlanKonu": 112,
-    "konusuOlanArac": 47,
-    "bag": 146
+    "arac": 230,
+    "araciOlanKonu": 127,
+    "konusuOlanArac": 51,
+    "bag": 162
   }
 }

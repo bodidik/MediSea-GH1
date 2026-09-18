@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "ACR TI-RADS — Tiroid nodülü US değerlendirme",
-  description: "ACR TI-RADS: Tiroid nodülü US değerlendirme — kompozisyon, ekojenite, şekil, sınır, odaklar + İİAB kararı. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/tirads" },
+  title: "Metabolik Sendrom — NCEP ATP III ve IDF tanımları yan",
+  description: "Metabolik Sendrom: NCEP ATP III ve IDF tanımları yan yana — bel çevresi, lipit, KB, glukoz. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/metabolik-sendrom" },
   openGraph: {
     type: "website",
-    title: "ACR TI-RADS — Tiroid nodülü US değerlendirme",
-    description: "ACR TI-RADS: Tiroid nodülü US değerlendirme — kompozisyon, ekojenite, şekil, sınır, odaklar + İİAB kararı. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/tirads",
+    title: "Metabolik Sendrom — NCEP ATP III ve IDF tanımları yan",
+    description: "Metabolik Sendrom: NCEP ATP III ve IDF tanımları yan yana — bel çevresi, lipit, KB, glukoz. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/metabolik-sendrom",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "ACR TI-RADS",
-          aciklama: "ACR TI-RADS: Tiroid nodülü US değerlendirme — kompozisyon, ekojenite, şekil, sınır, odaklar + İİAB kararı. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/tirads",
+          ad: "Metabolik Sendrom",
+          aciklama: "Metabolik Sendrom: NCEP ATP III ve IDF tanımları yan yana — bel çevresi, lipit, KB, glukoz. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/metabolik-sendrom",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "ACR TI-RADS", yol: "/tools/tirads" },
+          { ad: "Metabolik Sendrom", yol: "/tools/metabolik-sendrom" },
         ])}
       />
       {children}
@@ -42,8 +42,23 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/endokrinoloji/tiroid-nodullerine-yaklasim" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Tiroid Nodüllerine Yaklaşım ve TI-RADS
+              <Link href="/topics/gastroenteroloji/colyak-akdeniz-beslenme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Çölyak Hastalığında Akdeniz Tipi Glutensiz Beslenme
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/endokrinoloji/subklinik-tiroid-hastaliklari" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Subklinik Tiroid Hastalıkları (Giriş Ünitesi)
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/kardiyoloji/statin-intolerans-ezetimibe" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Statin İntoleransı (SAMS) Yönetimi ve Non-Statin Lipid Düşürücü Ajanlar
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/klinik-nutrisyon/obezite" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Ch 329: Obezite ve Metabolik Sendrom
               </Link>
             </li>
           </ul>
@@ -55,6 +70,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Endokrinoloji & Metabolizma kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/steroid-dose" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Steroid Eşdeğer Doz
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/tirads" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ACR TI-RADS
+              </Link>
+            </li>
             <li>
               <Link href="/tools/adrenal-yikanma" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Adrenal Kitle BT Yıkanma Hesabı
@@ -73,16 +98,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/bmi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 BMI & İdeal Vücut Ağırlığı
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/bmr" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                BMR & TDEE
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/burch-wartofsky" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Burch-Wartofsky Skalası
               </Link>
             </li>
           </ul>

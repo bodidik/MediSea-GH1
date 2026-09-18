@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "BMR & TDEE — Bazal metabolizma hızı",
-  description: "BMR & TDEE: Bazal metabolizma hızı — Mifflin–St Jeor. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/bmr" },
+  title: "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA) — Enfeksiyon",
+  description: "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA): Enfeksiyon şiddeti 1–4 ve osteomiyelit — lokal ve sistemik bulgular. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/diyabetik-ayak" },
   openGraph: {
     type: "website",
-    title: "BMR & TDEE — Bazal metabolizma hızı",
-    description: "BMR & TDEE: Bazal metabolizma hızı — Mifflin–St Jeor. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/bmr",
+    title: "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA) — Enfeksiyon",
+    description: "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA): Enfeksiyon şiddeti 1–4 ve osteomiyelit — lokal ve sistemik bulgular. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/diyabetik-ayak",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "BMR & TDEE",
-          aciklama: "BMR & TDEE: Bazal metabolizma hızı — Mifflin–St Jeor. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/bmr",
+          ad: "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA)",
+          aciklama: "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA): Enfeksiyon şiddeti 1–4 ve osteomiyelit — lokal ve sistemik bulgular. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/diyabetik-ayak",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "BMR & TDEE", yol: "/tools/bmr" },
+          { ad: "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA)", yol: "/tools/diyabetik-ayak" },
         ])}
       />
       {children}
@@ -42,16 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Endokrinoloji & Metabolizma kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/burch-wartofsky" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Burch-Wartofsky Skalası
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/diyabetik-ayak" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA)
-              </Link>
-            </li>
             <li>
               <Link href="/tools/dka-hhs" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 DKA ve HHS Sınıflaması
@@ -70,6 +60,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/findrisc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 FINDRISC
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/graves-cas" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Graves Orbitopatisi CAS
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/hba1c-eag" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                HbA1c → Ortalama Glukoz
               </Link>
             </li>
           </ul>

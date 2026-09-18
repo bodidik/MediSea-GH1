@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "HOMA-IR — İnsülin direnci indeksi",
-  description: "HOMA-IR: İnsülin direnci indeksi (açlık glukoz × insülin). Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/homa-ir" },
+  title: "Kalsiyum/Kreatinin Klirens Oranı — FHH ile primer",
+  description: "Kalsiyum/Kreatinin Klirens Oranı: FHH ile primer hiperparatiroidi ayrımı — CCCR. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/cccr" },
   openGraph: {
     type: "website",
-    title: "HOMA-IR — İnsülin direnci indeksi",
-    description: "HOMA-IR: İnsülin direnci indeksi (açlık glukoz × insülin). Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/homa-ir",
+    title: "Kalsiyum/Kreatinin Klirens Oranı — FHH ile primer",
+    description: "Kalsiyum/Kreatinin Klirens Oranı: FHH ile primer hiperparatiroidi ayrımı — CCCR. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/cccr",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "HOMA-IR",
-          aciklama: "HOMA-IR: İnsülin direnci indeksi (açlık glukoz × insülin). Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/homa-ir",
+          ad: "Kalsiyum/Kreatinin Klirens Oranı",
+          aciklama: "Kalsiyum/Kreatinin Klirens Oranı: FHH ile primer hiperparatiroidi ayrımı — CCCR. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/cccr",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "HOMA-IR", yol: "/tools/homa-ir" },
+          { ad: "Kalsiyum/Kreatinin Klirens Oranı", yol: "/tools/cccr" },
         ])}
       />
       {children}
@@ -42,11 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Endokrinoloji & Metabolizma kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/cccr" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Kalsiyum/Kreatinin Klirens Oranı
-              </Link>
-            </li>
             <li>
               <Link href="/tools/makroprolaktin" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Makroprolaktin (PEG Geri Kazanımı)
@@ -70,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/adrenal-yikanma" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Adrenal Kitle BT Yıkanma Hesabı
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/aldosteron-renin" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Aldosteron/Renin Oranı
               </Link>
             </li>
           </ul>

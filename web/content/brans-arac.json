@@ -233,6 +233,56 @@
     "icon": "🦋"
    },
    {
+    "slug": "dka-hhs",
+    "name": "DKA ve HHS Sınıflaması",
+    "icon": "🦋"
+   },
+   {
+    "slug": "bazal-bolus-insulin",
+    "name": "Bazal-Bolus İnsülin Başlangıcı",
+    "icon": "🦋"
+   },
+   {
+    "slug": "diyabetik-ayak",
+    "name": "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA)",
+    "icon": "🦋"
+   },
+   {
+    "slug": "metabolik-sendrom",
+    "name": "Metabolik Sendrom",
+    "icon": "🦋"
+   },
+   {
+    "slug": "burch-wartofsky",
+    "name": "Burch-Wartofsky Skalası",
+    "icon": "🦋"
+   },
+   {
+    "slug": "graves-cas",
+    "name": "Graves Orbitopatisi CAS",
+    "icon": "🦋"
+   },
+   {
+    "slug": "aldosteron-renin",
+    "name": "Aldosteron/Renin Oranı",
+    "icon": "🦋"
+   },
+   {
+    "slug": "adrenal-yikanma",
+    "name": "Adrenal Kitle BT Yıkanma Hesabı",
+    "icon": "🦋"
+   },
+   {
+    "slug": "cccr",
+    "name": "Kalsiyum/Kreatinin Klirens Oranı",
+    "icon": "🦋"
+   },
+   {
+    "slug": "makroprolaktin",
+    "name": "Makroprolaktin (PEG Geri Kazanımı)",
+    "icon": "🦋"
+   },
+   {
     "slug": "dst",
     "name": "Deksametazon Süpresyon Testi (DST)",
     "icon": "🦋"

@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Steroid Eşdeğer Doz — Kortikosteroid dönüşüm tablosu",
-  description: "Steroid Eşdeğer Doz: Kortikosteroid dönüşüm tablosu. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/steroid-dose" },
+  title: "Adrenal Kitle BT Yıkanma Hesabı — Kontrastsız HU",
+  description: "Adrenal Kitle BT Yıkanma Hesabı: Kontrastsız HU, mutlak ve göreli kontrast yıkanması — adenom ayrımı. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/adrenal-yikanma" },
   openGraph: {
     type: "website",
-    title: "Steroid Eşdeğer Doz — Kortikosteroid dönüşüm tablosu",
-    description: "Steroid Eşdeğer Doz: Kortikosteroid dönüşüm tablosu. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/steroid-dose",
+    title: "Adrenal Kitle BT Yıkanma Hesabı — Kontrastsız HU",
+    description: "Adrenal Kitle BT Yıkanma Hesabı: Kontrastsız HU, mutlak ve göreli kontrast yıkanması — adenom ayrımı. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/adrenal-yikanma",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Steroid Eşdeğer Doz",
-          aciklama: "Steroid Eşdeğer Doz: Kortikosteroid dönüşüm tablosu. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/steroid-dose",
+          ad: "Adrenal Kitle BT Yıkanma Hesabı",
+          aciklama: "Adrenal Kitle BT Yıkanma Hesabı: Kontrastsız HU, mutlak ve göreli kontrast yıkanması — adenom ayrımı. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/adrenal-yikanma",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Steroid Eşdeğer Doz", yol: "/tools/steroid-dose" },
+          { ad: "Adrenal Kitle BT Yıkanma Hesabı", yol: "/tools/adrenal-yikanma" },
         ])}
       />
       {children}
@@ -42,16 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Endokrinoloji & Metabolizma kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/tirads" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ACR TI-RADS
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/adrenal-yikanma" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Adrenal Kitle BT Yıkanma Hesabı
-              </Link>
-            </li>
             <li>
               <Link href="/tools/aldosteron-renin" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Aldosteron/Renin Oranı
@@ -70,6 +60,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/bmr" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 BMR & TDEE
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/burch-wartofsky" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Burch-Wartofsky Skalası
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/diyabetik-ayak" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA)
               </Link>
             </li>
           </ul>

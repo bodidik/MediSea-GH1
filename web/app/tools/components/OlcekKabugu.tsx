@@ -37,7 +37,7 @@ export default function OlcekKabugu({
           <div className="min-w-0">
             <div className="flex items-center gap-2">
               <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
-              <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">{baslik}</h1>
+              <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none break-words [overflow-wrap:anywhere] min-w-0">{baslik}</h1>
             </div>
             <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest leading-snug mt-1">{altBaslik}</p>
           </div>
