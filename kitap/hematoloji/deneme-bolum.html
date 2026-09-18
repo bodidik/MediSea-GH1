@@ -231,6 +231,7 @@ ol.tekrar li::before { content: counter(t); grid-row: span 2; font: 700 9pt/1.2 
 ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--brans-koyu); margin-top: .5mm; }
 .bw span b { display: inline; font: inherit; font-weight: 700; letter-spacing: 0; text-transform: none; color: inherit; margin: 0; }
 .serit-zincir span b { display: inline; font: inherit; font-weight: 700; letter-spacing: 0; text-transform: none; color: inherit; margin: 0; }
+.nu { text-transform: none; letter-spacing: 0; }
 </style>
 </head>
 <body>
@@ -2734,9 +2735,9 @@ ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--bra
   <div class="blok">
     <h2>Profilaksi eşikleri ayrıdır</h2>
     <div class="bw" style="grid-template-columns:repeat(3,1fr)">
-      <div><b>≥50.000/µL</b><span>Standart profilaksi kısıtlamasız</span></div>
-      <div><b>25.000–50.000/µL</b><span>Bireyselleştirilir: aktif yüksek riskli malignite ya da VTE öyküsünde düşünülebilir</span></div>
-      <div><b>&lt;25.000/µL</b><span>Farmakolojik profilaksi uygulanmaz</span></div>
+      <div><b>≥50.000<span class="nu">/µL</span></b><span>Standart profilaksi kısıtlamasız</span></div>
+      <div><b>25.000–50.000<span class="nu">/µL</span></b><span>Bireyselleştirilir: aktif yüksek riskli malignite ya da VTE öyküsünde düşünülebilir</span></div>
+      <div><b>&lt;25.000<span class="nu">/µL</span></b><span>Farmakolojik profilaksi uygulanmaz</span></div>
     </div>
   </div>
 

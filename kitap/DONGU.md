@@ -21,6 +21,7 @@ tam basım 120 saniyeyi aşıyordu; parça kipinde tek sayfa ~10 saniye.)
 - Kaynak: açık ana sayfa + onun **ileri okuma** (alt) sayfaları + premium konu, quiz, kart. Dışarıdan bilgi ekleme.
 - Kaynaklar birbirini tutmuyorsa kitapta **premium** sürümünü kullan, tutarsızlığı günlüğe yaz (düzeltme kullanıcının).
 - **Yapay zeka yer tutucularını ATLA** (kullanıcı, 16 Eylül): "AI taslak", "🤖", "⚠️ Uyarı: MediSea…", "bu bölüm yapay zeka ile…", "[eklenecek]", "Lorem", "TODO", "örnek metin", içeriği olmayan kapsam paragrafları ve yarım/kopuk cümleler kitaba alınmaz. Her turda kaynaklar yer tutucu desenleriyle taranır, bulunanlar günlüğe yazılır.
+- **Kullanıcının verdiği dış kaynaklar da "bizim kaynağımız" sayılır** (18 Eylül): `Downloads/Hipofiz-hastaliklari-tani-ve-tedavi-kilavuzu-2022yeni.pdf` (TEMD 2022). TEMD bilgisi kitapta `.kutu.temd` ("TEMD 2022 · …") kutularında, kısa ve spot olarak verilir; öteki kaynaklarla farkı günlüğe yazılır.
 
 ## Teknik kurallar
 
@@ -67,6 +68,7 @@ tam basım 120 saniyeyi aşıyordu; parça kipinde tek sayfa ~10 saniye.)
 | 30 | (endokrin) Erkek osteoporozu | erkek-osteoporozu-ana-sayfa (25 KB), erkek-osteoporozu-testosteron (32 KB) | erkek-osteoporozu + transplantasyon-osteoporozu + quiz | BİTTİ (s. 93–104) |
 | 31 | (onko) Pankreas kanseri | pankreas-kanseri-ana-sayfa + 8 çocuk sayfa (KRAS, SMAD4, ileri tedaviler, RNA aşılar…) | pankreas-kanseri (onko + gastro) + quiz + kart | BİTTİ (s. 11–22) |
 | 32 | (endokrin) Hipofiz hastalıkları — kullanıcı isteği | hipofiz-hastaliklari-ana + kılavuz + adenomlar + prolaktinoma (+4) + akromegali + hipofiz yetmezliği (+6) + Sheehan (+1) + arka hipofiz (+2) | hipofiz-hastaliklari + kesim-degerleri + quiz + 2 kart seti (hipofiz, akromegali) | BİTTİ (s. 105–120) |
+| 33 | (endokrin) Hipopitüitarizm genişletme + TEMD kutuları — kullanıcı isteği | hipofiz-yetmezligi alt ağacı | TEMD 2022 kılavuzu (Bölüm 6, 7, 12) | BİTTİ (s. 114–121; kısım 105–124) |
 
 **İkinci aday taraması (16 Eyl 03:18):** kuyruk yine bitti; açık + premium eşleşmesi olan yeni konular eklendi. Göğüs hastalıkları premiumunda TKP, HKP, VİP ve akciğer kanseri var ama açık tarafta `canonical/gogus` yalnız sarkoidoz üçlüsünü taşıyor (akciğer kanseri açık sayfası onkolojide) — bu yüzden yalnız sarkoidoz kuyruğa alındı. Erişkin Still hastalığı ve HFpEF premiumda dolu, açık eşleşme yok: elendi.
 
@@ -532,3 +534,25 @@ Kaynak tutarsızlıkları (kitapta premium kullanıldı):
 - **Kopeptin:** hipertonik salin ve arjinin testine aynı 4,9 pmol/L eşiği veriliyor; kaynak böyle, kitapta da böyle yazıldı — **kullanıcı kontrol etmeli**.
 
 **Şablon düzeltmesi (tüm bölümler):** `.serit-zincir` içindeki satır içi kalın vurgular da başlık gibi basılıyordu (s.106 önizlemesinde "dopamin"); dokuz dosyaya `.serit-zincir span b` satır içi kuralı eklendi (etkilenen şerit: endokrin 5, hematoloji 3, enfeksiyon 3, onkoloji 2). Şekil 13 oklu şeritten oksuz dört kutuya çevrildi — oklar soyları birbirinden türüyormuş gibi gösteriyordu. Endokrin ve onkoloji yeniden ölçüldü: taşma yok.
+
+### Tur 33 — (endokrin) Hipopitüitarizm genişletildi + "TEMD'de ne var" kutuları · endokrinoloji s. 114–121 · kullanıcı isteği (18 Eylül)
+**Yeni kaynak (kullanıcı verdi):** `C:\Users\hucig\Downloads\Hipofiz-hastaliklari-tani-ve-tedavi-kilavuzu-2022yeni.pdf` — TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu, 16. baskı (Ekim 2022). Kullanılan bölümler: **Bölüm 7 Hipofiz yetmezliği** (tamamı), **Bölüm 6 Hipofiz apopleksisi** (özet ve izlem), **Bölüm 12 Yaşlanma ve hipofiz** (hipopitüitarizm kısmı). pdftotext ile metne çevrildi.
+Kısım 12 16 → **20 sayfa** (s. 105–124); eski 117–120 → 121–124 oldu (folyo, yorum, kapak içindekileri güncellendi, sayfa-folyo tutarlılığı ölçüldü: hata yok).
+Yeni sayfalar: **117** karar yolu — HPA aksını test etmek (riskli hasta öyküsü, bazal eşzamanlı ölçüm, sabah kortizolü ≥15/3–15/<3, İTT, 250 µg ve 1 µg ACTH testi hazırlanışı, glukagon testi; kortizol eşikleri tablosu) · **118** karar yolu — erişkin GH eksikliği (kime test, IGF-1 tuzakları, ≤95 ng/mL, bir mi iki mi test, GHRH+arjinin VKİ eşikleri, glukagon; tedavi kararı; GH eksikliğinin yüzü) · **119** başvuru — nedenler ve Türkiye verisi (TEMD edinsel neden sınıflaması, 773 hastalık Türk kohortu, kafa travması, kliniği değiştiren ayrıntılar; Sheehan ve enfeksiyöz nedenler bloğu s.121'den buraya taşındı) · **120** başvuru — TEMD replasman tablosu (Tablo 7.3) + yaşlıda hipopitüitarizm + yaşlıda hangi test.
+"TEMD'de ne var" kutuları: yeni stil `.kutu.temd` (beyaz zemin, branş rengi çerçeve, üstte kalın şerit) + `.temd-izgara`. Toplam **22 TEMD kutusu**: s.114 (epidemiyoloji), s.115 (eşikler), s.116 (replasmanda üç fark), s.117 (5), s.118 (5), s.119 (5), s.120 (6), s.121 (apopleksi acili, apopleksi izlemi).
+Son ölçüm: **endokrin 124 sayfanın hiçbirinde taşma yok**; en boş s.119 (−33 mm). Düzeltmeler: s.121 +4,8 mm (Sheehan/enfeksiyon bloğu s.119'a), s.117 +7,3 mm (iki TEMD kutusu alttan kenar sütuna; s.115'te zaten olan tuzak kutusu çıkarıldı).
+
+**Bulunan ve düzeltilen şablon hatası:** büyük harfe çevrilen başlıklarda `µ` harfi `M`ye dönüşüyordu ("1 µg testi" → "1 MG TESTİ", "≥15 µg/dL" → "≥15 MG/DL") — birimi 1000 kat yanlış gösteriyor. Aynı hata daha önce hematoloji (İTP trombosit eşikleri "/µL") ve enfeksiyon (ferritin "µg/L") bölümlerinde de vardı. Dokuz dosyaya `.nu { text-transform: none }` eklendi, 8 yer sarıldı (endokrin 4, hematoloji 3, enfeksiyon 1).
+
+**TEMD ile öteki kaynaklarımız arasındaki farklar (kitapta ikisi de, TEMD kutu içinde):**
+- **Sabah kortizolü:** premium "&gt;13–15 sağlam, &lt;3–5 yetersiz"; TEMD Bölüm 7 "≥15 normal, &lt;3 yetersiz (özgüllük %99,7)"; **TEMD Bölüm 12 (yaşlı) "≥18 sağlam, ≤3 yetersiz, 3–18 test"** — TEMD kendi içinde farklı; kullanıcı kararı.
+- **Glukagon testinde GH eşiği:** premium "VKİ &lt;30 → 3, &gt;30 → 1 µg/L"; TEMD Bölüm 7 "≥1 µg/L normal (AACE: VKİ &lt;25 → 3, ≥25 → 1)"; TEMD Bölüm 12 (yaşlı) "≤3 µg/L eksiklik". Ayrıca TEMD metninde GST GH eşiği bir yerde "**µg/dl**" diye yazılmış (3 µg/dl, 1,1 µg/dl, 1 µg/dl) — özet bölümü "1 µg/l" diyor; birim yazım hatası, kitapta µg/L.
+- **Kosintropin yalancı normal penceresi:** premium "ilk 4–6 hafta", TEMD "en erken ilk 4 hafta".
+- **İTT kontrendikasyonu:** premium ve açık sayfa "koroner arter hastalığı, epilepsi"; TEMD ek olarak **serebrovasküler hastalık**.
+- **Santral hipotiroidide TSH:** premium "düşük ya da uygunsuz normal"; TEMD "düşük, uygunsuz normal **ya da hafif yüksek**".
+- **GH başlangıç dozu:** açık sayfa "0,1–0,3 mg/gün"; TEMD "30–60 yaş 0,2–0,3, &lt;30 yaş 0,4–0,5 mg/gün".
+- **Hidrokortizon:** açık sayfa "15–20, 2–3 doz"; TEMD Bölüm 7 "15–20, 2 doz ya da 10–5–5"; TEMD Bölüm 12 tablosu "15–25 mg/gün", metni "klasik 20+10, yaşlıda 10+5".
+- **L-T4 hedefi:** premium "sT4 üst-orta dilim"; TEMD Bölüm 7 "üst yarı", Bölüm 12 "normalin üst sınırına yakın".
+- **Kayıp sırası:** TEMD "GH, FSH, LH, TSH, ACTH" (PRL yok) — premium PRL'yi sona ekliyor. Tur 32 notuna eklenir.
+- **ACTH testi yolu:** premium "IV/IM"; TEMD "IV öneriyoruz".
+- TEMD Tablo 7.1 (kalıtsal nedenler) PDF'ten sütunları kaymış çıktı; hangi genin hangi hormona karşılık geldiği güvenle okunamadığı için **kitaba alınmadı**.

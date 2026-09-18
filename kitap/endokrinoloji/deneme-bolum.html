@@ -225,6 +225,16 @@ ol.tekrar li::before { content: counter(t); grid-row: span 2; font: 700 9pt/1.2 
 ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--brans-koyu); margin-top: .5mm; }
 .bw span b { display: inline; font: inherit; font-weight: 700; letter-spacing: 0; text-transform: none; color: inherit; margin: 0; }
 .serit-zincir span b { display: inline; font: inherit; font-weight: 700; letter-spacing: 0; text-transform: none; color: inherit; margin: 0; }
+.kutu.temd { background: #fff; border: .7pt solid var(--brans); border-top: 1.6mm solid var(--brans); }
+.kutu.temd .ad { color: var(--brans-koyu); }
+.kutu.temd .ad::before { background: var(--brans); }
+.kutu.temd p, .kutu.temd li { font-size: 7.8pt; line-height: 1.35; }
+.kutu.temd ul { margin: 0; padding-left: 3.6mm; }
+.kutu.temd li { margin-bottom: .6mm; }
+.temd-izgara { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; margin-bottom: 3mm; }
+.temd-izgara.iki { grid-template-columns: 1fr 1fr; }
+.temd-izgara .kutu { margin: 0; }
+.nu { text-transform: none; letter-spacing: 0; }
 </style>
 </head>
 <body>
@@ -264,7 +274,7 @@ ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--bra
         <li class="grup">Kısım 11 · Erkek ve transplantasyon osteoporozu</li>
         <li><div><span>Erkek ve transplantasyon osteoporozu</span><small>Kapak · açık sayfa · anlatı · üç karar yolu · dört başvuru · tekrar</small></div><em>93</em></li>
         <li class="grup">Kısım 12 · Hipofiz hastalıkları</li>
-        <li><div><span>Prolaktinoma, akromegali, hipopitüitarizm, diabetes insipidus</span><small>Kapak · açık sayfa · iki anlatı · beş karar yolu · beş başvuru · tekrar</small></div><em>105</em></li>
+        <li><div><span>Prolaktinoma, akromegali, hipopitüitarizm, diabetes insipidus</span><small>Kapak · açık sayfa · iki anlatı · altı karar yolu · sekiz başvuru · tekrar</small></div><em>105</em></li>
       </ol>
     </div>
     <div class="okuma-kilavuzu">
@@ -6080,11 +6090,11 @@ ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--bra
         <li><div><span>Sellar kitleye yaklaşım</span><small>Karar yolu</small></div><em>109</em></li>
         <li><div><span>Hiperprolaktinemi ve prolaktinoma</span><small>Karar yolu · başvuru</small></div><em>110</em></li>
         <li><div><span>Akromegali ve diğer adenomlar</span><small>Karar yolu · başvuru</small></div><em>112</em></li>
-        <li><div><span>Hipopitüitarizm: tanı ve replasman</span><small>Anlatı · karar yolu · başvuru</small></div><em>114</em></li>
-        <li><div><span>Apopleksi, Sheehan, hipofizitler</span><small>Başvuru</small></div><em>117</em></li>
-        <li><div><span>Arka hipofiz: diabetes insipidus</span><small>Başvuru</small></div><em>118</em></li>
-        <li><div><span>Vakadan karara</span><small>Başvuru</small></div><em>119</em></li>
-        <li><div><span>Kırk soruda hipofiz</span><small>Hızlı tekrar</small></div><em>120</em></li>
+        <li><div><span>Hipopitüitarizm: testler, replasman, TEMD</span><small>Anlatı · üç karar yolu · üç başvuru</small></div><em>114</em></li>
+        <li><div><span>Apopleksi, Sheehan, hipofizitler</span><small>Başvuru</small></div><em>121</em></li>
+        <li><div><span>Arka hipofiz: diabetes insipidus</span><small>Başvuru</small></div><em>122</em></li>
+        <li><div><span>Vakadan karara</span><small>Başvuru</small></div><em>123</em></li>
+        <li><div><span>Kırk soruda hipofiz</span><small>Hızlı tekrar</small></div><em>124</em></li>
       </ol>
     </div>
   </div>
@@ -6707,6 +6717,7 @@ ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--bra
           <tr><td class="bas">Septo-optik displazi</td><td>Septum pellucidum yokluğu + optik sinir hipoplazisi</td></tr>
         </tbody>
       </table>
+      <div class="kutu temd"><div class="ad">TEMD 2022 · epidemiyoloji</div><p>Prevalans 45/100.000, insidans ~4/100.000/yıl; olguların yarısında çoklu eksiklik. Mortalite <b>1,2–2,2 kat</b>.</p></div>
       <div class="kutu inci"><div class="ad">Klinik inci · opioid</div><p>Kronik yüksek doz opioid hipotalamusta CRH ve GnRH’yi baskılar, dopamini azaltır: santral adrenal yetmezlik, hipogonadizm ve prolaktin yüksekliği.</p></div>
     </div>
   </div>
@@ -6767,13 +6778,7 @@ ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--bra
     <aside>
       <div class="kutu tuzak"><div class="ad">Tuzak · TSH normal</div><p>Santral hipotiroidide TSH normal görünebilir; anormal glikozilasyon nedeniyle biyolojik olarak inaktiftir. Tanı fT4’e bakılarak konur.</p></div>
       <div class="kutu kural" style="margin-top:3mm"><div class="ad">Altın kural · instabil hasta</div><p>Hemodinamisi bozuk, akut hipofiz yetmezliği şüphesi olan hastada sonuç beklenmeden ampirik parenteral glukokortikoid başlanır.</p></div>
-      <div class="kenar-sutun" style="margin-top:3mm">
-        <div class="ad">Sınav spotları</div>
-        <div class="spotlar">
-          <p>Apopleksi hastasında ITT kontrendike.</p>
-          <p>Görüntülemede kontrastlı hipofiz MRG; sap, kist ve parlak nokta değerlendirilir.</p>
-        </div>
-      </div>
+      <div class="kutu temd" style="margin-top:3mm"><div class="ad">TEMD 2022 · eşikler</div><p>Sabah kortizolü ≥15 normal, &lt;3 yetersiz. Glukagon testinde kortizol ≥9–10, GH ≥1 µg/L normal. Ayrıntı s. 117–118.</p></div>
     </aside>
   </div>
 
@@ -6864,10 +6869,291 @@ ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--bra
     </table>
   </div>
 
+  <div class="kutu temd"><div class="ad">TEMD 2022 · replasmanda üç fark</div><p>Hidrokortizon <b>2 doz</b> (sabah yüksek) ya da 10–5–5 mg · L-T4 ~1,6 µg/kg ile <b>sT4 üst yarı</b> · GH yalnız sıkı kriterli ağır eksiklikte, genç ve orta yaşta; başlangıç 0,2–0,3 mg (&lt;30 yaş 0,4–0,5). Tablo s. 120.</p></div>
+
   <div class="folyo"><b>116</b><span>MediSea Hızlı Bakış · Endokrinoloji</span></div>
 </section>
 
-<!-- ================= 117 · BAŞVURU: APOPLEKSİ, SHEEHAN, HİPOFİZİTLER ================= -->
+<!-- ================= 117 · KARAR YOLU: HPA AKSINI TEST ETMEK ================= -->
+<section class="sayfa sag tur-karar">
+  <div class="tirnak">Endokrinoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Endokrinoloji</span><span>Hipopitüitarizm · Yaklaşım</span></div>
+  <div class="ust-etiket">Hipopitüitarizm · Karar yolu</div>
+  <h1 class="konu orta">HPA aksını test etmek</h1>
+
+  <div class="karar-izgara">
+    <div>
+      <div class="adim"><div class="no">1</div><div>
+        <h3>Riskli hastayı öyküyle seç</h3>
+        <p>Hipotalamo-hipofizer kitle · bölgeye cerrahi ya da RT · şuur kaybı ya da yatış gerektiren kafa travması · menenjit, ensefalit · doğumda aşırı kanama ya da laktasyon olmaması. Belirtiler özgül değildir; tanının en önemli basamağı <b>nedene yönelik öyküdür</b>.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">2</div><div>
+        <h3>Bazal hormonları eşzamanlı ölç</h3>
+        <p>TSH + sT4 · ACTH + kortizol · GH + IGF-1 · FSH, LH + östradiol ya da testosteron · PRL. Santral eksiklikte <b>hem hipofiz hem hedef bez hormonu</b> düşük bulunur. TSH, gonadotropin ve PRL eksikliğinde bazal ölçüm yeterlidir; <b>ACTH ve GH</b> için uyarı testi gerekir.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">3</div><div>
+        <h3>Sabah kortizolüyle ayıkla</h3>
+        <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+          <div><b>≥15 <span class="nu">µg/dL</span></b><span>HPA aksı normal</span></div>
+          <div><b>3–15 <span class="nu">µg/dL</span></b><span>Uyarı testi</span></div>
+          <div><b>&lt;3 <span class="nu">µg/dL</span></b><span>Büyük olasılıkla adrenal yetmezlik (özgüllük %99,7)</span></div>
+        </div>
+        <p style="margin-top:1.2mm">Kan 08:00–09:00’da alınır. Hidrokortizon kullanan hastada ilaç testten <b>18–24 saat önce</b> kesilir; uzun etkili sentetik steroidde daha önce.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">4</div><div>
+        <h3>Testi seç</h3>
+        <table class="tb">
+          <thead><tr><th style="width:26mm">Test</th><th>Uygulama</th><th style="width:30mm">Normal yanıt</th></tr></thead>
+          <tbody>
+            <tr><td class="bas">İTT</td><td>0,1–0,15 U/kg IV regüler insülin; semptomatik hipoglisemi anı 0. dakika, sonra 30-60-90-120. dk. 45 dakikada hipoglisemi yoksa doz tekrarlanır</td><td>Pik kortizol ≥18 µg/dL</td></tr>
+            <tr><td class="bas">ACTH 250 µg</td><td>IV (farmakokinetik olarak daha güvenilir); 30. ve 60. dk</td><td>Pik ≥18 µg/dL</td></tr>
+            <tr><td class="bas">ACTH 1 µg</td><td>250 µg Synacthen, 1 mL’si boşaltılmış 250 mL SF’ye: 1 mL = 1 µg; +4 °C’de 4 ay saklanır</td><td>Uluslararası ≥18; Türkiye verisi 12,5–14,5</td></tr>
+            <tr><td class="bas">Glukagon</td><td>1 mg IM (&gt;90 kg’da 1,5 mg); 90–240. dk arası 30 dakikada bir. Kontrendikasyonu yok; bulantı; 180. dakikadan sonra hafif hipoglisemi</td><td>Pik kortizol ≥9–10 µg/dL</td></tr>
+          </tbody>
+        </table>
+      </div></div>
+    </div>
+
+    <aside>
+      <div class="kutu temd"><div class="ad">TEMD 2022 · İTT</div><p>Altın standart; ACTH ve GH rezervini birlikte ölçer. <b>Hekim gözetiminde</b> yapılır. Kardiyovasküler hastalık, <b>serebrovasküler hastalık</b> ve epilepside kontrendike. Nöroglikopenide IV dekstroz; %20 ya da %50 dekstroz hazır bekler.</p></div>
+      <div class="kutu temd" style="margin-top:3mm"><div class="ad">TEMD 2022 · önerilmeyenler</div><p><b>CRH ve metirapon</b> testleri ACTH eksikliğini göstermede sınırlı ve güncel kılavuzlarda olmadığı için önerilmiyor.</p></div>
+      <div class="kutu temd" style="margin-top:3mm"><div class="ad">TEMD 2022 · 1 <span class="nu">µg</span> testi</div><p>250 µg suprafizyolojik bir dozdur; 1 µg testi özellikle <b>hafif santral adrenal yetmezlikte</b> daha duyarlı. 14,5 µg/dL eşiğinde duyarlılık %100, özgüllük %93,9.</p></div>
+      <div class="kutu temd" style="margin-top:3mm"><div class="ad">TEMD 2022 · glukagon</div><p>ACTH ve GH’yi birlikte, güvenle ölçer. 18 µg/dL eşiği İTT’ye göre özgüllüğü çok düşürür. Türkiye 9,1 · ABD 9 · Almanya 10 µg/dL (özgüllük &gt;%95). İdeali her merkezin kendi eşiği.</p></div>
+      <div class="kutu temd" style="margin-top:3mm"><div class="ad">TEMD · eşik yakınında karar</div><p>Eşik değerler hastanın kliniğiyle birlikte okunur. Şüphede, replasman planlanıyorsa <b>ek test</b>; replasman verilmiyorsa hasta uyarılır ve bir süre sonra <b>yeniden değerlendirilir</b>.</p></div>
+    </aside>
+  </div>
+
+  <div class="blok">
+    <h2>Kortizol eşikleri tek bakışta (TEMD)</h2>
+    <table class="tb">
+      <thead><tr><th style="width:36mm">Ölçüm</th><th>Normal kabul</th><th style="width:52mm">Not</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">Sabah bazal</td><td>≥15 µg/dL</td><td>&lt;3 µg/dL yetersizlik; arası test</td></tr>
+        <tr><td class="bas">İTT</td><td>Pik ≥18 µg/dL (500 nmol/L)</td><td>Altın standart</td></tr>
+        <tr><td class="bas">ACTH 250 µg</td><td>Pik ≥18 µg/dL</td><td>Santral yetmezliği dolaylı gösterir</td></tr>
+        <tr><td class="bas">ACTH 1 µg</td><td>Uluslararası ≥18 µg/dL</td><td>Türk çalışmaları 12,5 ya da 14,5</td></tr>
+        <tr><td class="bas">Glukagon</td><td>Pik ≥9–10 µg/dL</td><td>Güncellenmemiş kılavuzlarda hâlâ 18</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Endokrinoloji</span><b>117</b></div>
+</section>
+
+<!-- ================= 118 · KARAR YOLU: ERİŞKİN GH EKSİKLİĞİ ================= -->
+<section class="sayfa sol tur-karar">
+  <div class="tirnak">Endokrinoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Endokrinoloji</span><span>Hipopitüitarizm · Yaklaşım</span></div>
+  <div class="ust-etiket">Hipopitüitarizm · Karar yolu</div>
+  <h1 class="konu orta">Erişkin GH eksikliği</h1>
+
+  <div class="karar-izgara">
+    <div>
+      <div class="adim"><div class="no">1</div><div>
+        <h3>Kimi test edelim?</h3>
+        <p>Ön test olasılığı yüksek olanı: hipotalamo-hipofizer kitle, cerrahi ya da RT öyküsü, travmatik beyin hasarı, GH dışında başka hipofiz hormonu eksikliği. Çocuklukta tanı alıp hedef boyuna ulaşan hasta <b>yeniden test edilir</b> (organik lezyon ya da bilinen mutasyonda gerekmez).</p>
+      </div></div>
+
+      <div class="adim"><div class="no">2</div><div>
+        <h3>IGF-1’i doğru oku</h3>
+        <p>Yaşa göre değerlendirilir. <b>Normal IGF-1 GH eksikliğini dışlamaz</b>; hastaların anlamlı bir kısmında normal ya da düşük-normaldir. Düşük IGF-1 malnütrisyon, kötü kontrollü diyabet, oral östrojen ve karaciğer hastalığında da görülür. Bazal ya da rastgele GH’nin tanıda <b>yeri yoktur</b>.</p>
+      </div></div>
+
+      <div class="adim"><div class="no">3</div><div>
+        <h3>Kaç test?</h3>
+        <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+          <div><b>Test yok</b><span>GH dışı ≥3 eksiklik + düşük IGF-1 (≤95 ng/mL’de olasılık &gt;%95)</span></div>
+          <div><b>Bir test</b><span>Organik lezyon, travma ya da ≥1 başka eksiklik</span></div>
+          <div><b>İki test</b><span>İzole ya da idiyopatik şüphe; düşük IGF-1 tanıyı güçlendirir</span></div>
+        </div>
+        <p style="margin-top:1.2mm">Testten önce diğer eksik hormonlar yerine konmuş olmalı; en az 8 saat açlık (su serbest).</p>
+      </div></div>
+
+      <div class="adim"><div class="no">4</div><div>
+        <h3>Testi seç</h3>
+        <table class="tb">
+          <thead><tr><th style="width:30mm">Test</th><th>Uygulama</th><th style="width:40mm">Eksiklik eşiği (pik GH)</th></tr></thead>
+          <tbody>
+            <tr><td class="bas">İTT</td><td>ACTH bölümündeki gibi; glukoz, GH (± kortizol)</td><td>&lt;3 µg/L: ağır eksiklik</td></tr>
+            <tr><td class="bas">GHRH + arjinin</td><td>GHRH 1 µg/kg (en çok 100 µg) IV puşe + arjinin 0,5 g/kg (en çok 35 g) 30 dk infüzyon; 90. dakikaya dek 15 dk arayla</td><td>VKİ &lt;25: 11 · 25–30: 8 · &gt;30: 4 µg/L</td></tr>
+            <tr><td class="bas">Glukagon</td><td>1 mg IM (&gt;90 kg 1,5 mg); 90–240. dk</td><td>&lt;1 µg/L (AACE: VKİ &lt;25’te 3, ≥25’te 1)</td></tr>
+          </tbody>
+        </table>
+      </div></div>
+
+      <div class="adim"><div class="no">5</div><div>
+        <h3>Tedavi edelim mi?</h3>
+        <p>GH eksikliği KV risk faktörleri, lipid (LDL ↑, HDL ↓), vücut kompozisyonu, yaşam kalitesi, bilişsel işlev ve kemik yoğunluğunu bozar; replasman bunları düzeltir ama <b>mortaliteye etkisi prospektif gösterilmedi</b>. Yararı görmek için en az 6 ay gerekir.</p>
+      </div></div>
+    </div>
+
+    <aside>
+      <div class="kutu temd"><div class="ad">TEMD 2022 · kime GH?</div><p>Ülke koşulları gözetilerek yalnızca <b>sıkı kriterlerle ağır GH eksikliği</b> tanısı almış, <b>genç erişkin ve orta yaş</b> hastalarda öneriliyor.</p></div>
+      <div class="kutu temd" style="margin-top:3mm"><div class="ad">TEMD 2022 · doz şeması</div>
+        <ul>
+          <li>30–60 yaş: 0,2–0,3 mg/gün, yatmadan hemen önce</li>
+          <li>&lt;30 yaş: 0,4–0,5 mg/gün</li>
+          <li>1–2 ayda bir IGF-1 ile 0,1–0,2 mg artır</li>
+          <li>Çoğunda idame 0,3–0,6 mg/gün</li>
+          <li>Hedef: IGF-1 yaş aralığının ortası</li>
+          <li>İdamede 6 ayda bir IGF-1</li>
+          <li>1 yılda yarar yoksa kes</li>
+        </ul>
+      </div>
+      <div class="kutu temd" style="margin-top:3mm"><div class="ad">TEMD 2022 · kullanılmayanlar</div><p><b>Klonidin ve levodopa</b> erişkinde tanısal değil. GHRH ve GHRH + GHRP testleri ülkemizde bulunmuyor; GHRH yokluğunda İTT’nin ardından ilk alternatif glukagon.</p></div>
+    </aside>
+  </div>
+
+  <div class="blok">
+    <h2>Erişkinde GH eksikliğinin yüzü (TEMD)</h2>
+    <div class="bw" style="grid-template-columns:repeat(4,1fr)">
+      <div><b>Vücut</b><span>Visseral obezite, yağ oranı ↑, yağsız kas kitlesi ve kas gücü ↓</span></div>
+      <div><b>Metabolik</b><span>LDL ↑, HDL ↓, KV risk faktörleri ↑</span></div>
+      <div><b>Kemik</b><span>Kemik mineral yoğunluğu ↓</span></div>
+      <div><b>Beyin ve yaşam</b><span>Halsizlik, bilişsel işlev ve hafıza bozukluğu, yaşam kalitesi ↓</span></div>
+    </div>
+  </div>
+
+  <div class="temd-izgara iki">
+    <div class="kutu temd"><div class="ad">TEMD · idiyopatik GH eksikliği</div><p>Erişkinde sık değildir; yanlış pozitif tanıyı önlemek için <b>en az iki dinamik test</b> gerekir.</p></div>
+    <div class="kutu temd"><div class="ad">TEMD · yaşlıda glukagon</div><p>Yaşlanma bölümünde glukagon testinde GH <b>≤3 µg/L</b> eksiklik olarak verilir; hipofiz yetmezliği bölümünün genel eşiği <b>1 µg/L</b>. Yaşa özgü referans aralık tanımlı değil.</p></div>
+  </div>
+
+  <div class="folyo"><b>118</b><span>MediSea Hızlı Bakış · Endokrinoloji</span></div>
+</section>
+
+<!-- ================= 119 · BAŞVURU: NEDENLER VE TÜRKİYE VERİSİ ================= -->
+<section class="sayfa sag tur-basvuru">
+  <div class="tirnak">Endokrinoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Endokrinoloji</span><span>Hipopitüitarizm · Başvuru</span></div>
+  <div class="ust-etiket">Hipopitüitarizm · Başvuru</div>
+  <h1 class="konu orta">Nedenler ve Türkiye verisi</h1>
+
+  <div class="blok">
+    <h2>Erişkinde edinsel nedenler (TEMD sınıflaması)</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:32mm">Travmatik</td><td><b>Adenom cerrahisi</b>, kafa travması (spora bağlı tekrarlayan dahil), RT hasarı, SAH, inme</td></tr>
+        <tr><td class="bas">Neoplastik</td><td>Adenom; Rathke ve dermoid kist, meningiom, germinom, ependimom, gliom, kraniyofaringiyom, hamartom, gangliyositom, metastaz, hematolojik malignite</td></tr>
+        <tr><td class="bas">Vasküler</td><td>Sheehan, anevrizma, apopleksi, diyabet, hipotansiyon, arterit, orak hücre hastalığı</td></tr>
+        <tr><td class="bas">Enfeksiyon</td><td>Tüberküloz, bakteriyel ve viral menenjit/ensefalit, <i>Pneumocystis</i>, histoplazma, aspergillus, toksoplazma</td></tr>
+        <tr><td class="bas">İnfiltratif, inflamatuvar</td><td>Lenfositik, granülomatöz, ksantomatöz, IgG4 ilişkili hipofizit; sarkoidoz, histiyositoz X, GPA, Takayasu, ipilimumab, hemokromatoz</td></tr>
+        <tr><td class="bas">Fonksiyonel</td><td>Akut kritik hastalık (sepsis, travmanın akut evresi), kalori kısıtlaması, malnütrisyon</td></tr>
+        <tr><td class="bas">İlaç</td><td>Anabolik steroid, glukokortikoid fazlalığı, GnRH agonisti, östrojen, dopamin, somatostatin analoğu</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="temd-izgara">
+    <div class="kutu temd"><div class="ad">TEMD · Türkiye 773 hasta</div><p>14 üniversite + 5 eğitim-araştırma hastanesi: en sık neden <b>fonksiyonsuz adenom / cerrahisi</b>, ikinci sırada <b>Sheehan sendromu</b>.</p></div>
+    <div class="kutu temd"><div class="ad">TEMD · kafa travması</div><p>Kronik dönemde (6 ay–1 yıl sonra) <b>%10–20</b> hipopitüitarizm; en sık GH, FSH/LH, ACTH. Tahmini insidans 31/100.000/yıl. Boksör ve kickboksörlerde de gösterildi.</p></div>
+    <div class="kutu temd"><div class="ad">TEMD · yeni sınıflama</div><p>Adenom cerrahisi artık <b>travmatik</b> nedenler arasında; böylece “travmatik” grup en sık nedenlerden biri sayılıyor.</p></div>
+  </div>
+
+  <div class="blok">
+    <h2>Kliniği değiştiren ayrıntılar</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:32mm">İlk belirti</td><td>Çocukta büyüme geriliği, erişkinde çoğu zaman <b>hipogonadizm</b></td></tr>
+        <tr><td class="bas">Sıranın bozulduğu yer</td><td>Lenfositik hipofizit ve kafa travmasında ACTH ya da TSH ilk gidebilir; izole eksiklik daha sık</td></tr>
+        <tr><td class="bas">Akut ACTH eksikliği</td><td>Güçsüzlük, baş dönmesi, bulantı-kusma, kollaps, hiponatremi; erişkinde hipoglisemi <b>nadir</b></td></tr>
+        <tr><td class="bas">Hiponatremi + hiperkalemi</td><td>Primer adrenal yetmezliği düşündür (santralde aldosteron korunur)</td></tr>
+        <tr><td class="bas">Gonad aksı</td><td>Düzenli adet gören kadında değerlendirme gerekmez; ölçerken PRL de bakılır</td></tr>
+        <tr><td class="bas">TSH</td><td>Düşük sT4 ile TSH düşük, uygunsuz normal ya da <b>hafif yüksek</b> olabilir</td></tr>
+        <tr><td class="bas">PRL eksikliği</td><td>Tanımlı bir klinik tablo yok; yalnız postpartum laktasyon yetmezliği</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>Sheehan’ın uzun gölgesi · enfeksiyöz nedenler</h2>
+    <div class="bw" style="grid-template-columns:repeat(3,1fr)">
+      <div><b>Gecikmiş hasar</b><span>Nekrozla açığa çıkan antijenler anti-hipofiz antikorlarını tetikleyebilir; yetmezlik yıllar içinde derinleşir</span></div>
+      <div><b>Geç komplikasyon</b><span>KV risk, ağır osteoporoz, depresyon, psikoz, bilişsel bozulma; yüzde ince kırışıklıklar</span></div>
+      <div><b>Enfeksiyon</b><span>Hipofiz apsesi (stafilokok, streptokok) %80’den fazlasında ön hipofiz yetmezliği; tüberküloz, frengi, mantar, HIV, CMV</span></div>
+    </div>
+  </div>
+
+  <div class="temd-izgara iki">
+    <div class="kutu temd"><div class="ad">TEMD · Sheehan</div><p>Ülkemizde kadında hâlâ <b>en sık nedenlerden biri</b>: obstetrik öykü ve laktasyon her hastada sorulur.</p></div>
+    <div class="kutu temd"><div class="ad">TEMD · yeni tanımlananlar</div><p>İmmünomodülatörlere (en sık <b>ipilimumab</b>) bağlı sekonder hipofizit; IgG4 ilişkili hipofizit (Japonya’da %4). Erişkinde kalıtsal neden nadir.</p></div>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Endokrinoloji</span><b>119</b></div>
+</section>
+
+<!-- ================= 120 · BAŞVURU: REPLASMAN VE YAŞLI HASTA ================= -->
+<section class="sayfa sol tur-basvuru">
+  <div class="tirnak">Endokrinoloji</div>
+  <div class="kunye"><span>Hızlı Bakış · Endokrinoloji</span><span>Hipopitüitarizm · Başvuru</span></div>
+  <div class="ust-etiket">Hipopitüitarizm · Başvuru</div>
+  <h1 class="konu orta">TEMD replasman tablosu · yaşlı hasta</h1>
+
+  <div class="blok">
+    <table class="tb">
+      <thead><tr><th style="width:26mm">Eksiklik</th><th style="width:42mm">İlaç</th><th>Doz (klinik ve düzeylere göre titre)</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">ACTH</td><td>Hidrokortizon (yoksa eşdeğer glukokortikoid)</td><td>15–20 mg/gün; 2 doz (sabah daha yüksek) ya da 10–5–5 mg. Uzun etkililer sabah tek ya da 2 doz. <b>Fludrokortizon gerekmez</b></td></tr>
+        <tr><td class="bas">TSH</td><td>L-tiroksin</td><td>~1,6 µg/kg/gün (75–150 µg); <b>sT4 referansın üst yarısında</b></td></tr>
+        <tr><td class="bas">Gonadotropin · erkek</td><td>Testosteron</td><td>250 mg IM 3–4 haftada bir ya da 50–100 mg/gün transdermal jel</td></tr>
+        <tr><td class="bas">Gonadotropin · kadın</td><td>Konjuge östrojen ya da östradiol valerat + progestin</td><td>0,625–1,25 mg/gün ya da 1–2 mg/gün oral; transdermal östradiol 25–100 µg/24 saat</td></tr>
+        <tr><td class="bas">GH</td><td>Rekombinant GH</td><td>0,3–0,6 mg/gün SC (idame)</td></tr>
+        <tr><td class="bas">Fertilite</td><td>Gonadotropinler</td><td>Hedef bez hormonu yerine</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="temd-izgara">
+    <div class="kutu temd"><div class="ad">TEMD · izlem</div><p>Glukokortikoid dozu için güvenilir bir belirteç yok; doz klinik ve eşlik eden hastalıklara göre. Hasta <b>yılda en az iki kez</b> görülür.</p></div>
+    <div class="kutu temd"><div class="ad">TEMD · hasta eğitimi</div><p>ACTH eksikliği olan hasta tanısını gösteren <b>kimlik, kolye ya da künye</b> taşır; stres dozu artırma eğitimi alır.</p></div>
+    <div class="kutu temd"><div class="ad">TEMD · sıra</div><p>ACTH ile birlikte TSH ya da GH eksikliği varsa <b>önce glukokortikoid</b>; aksi hâlde adrenal kriz.</p></div>
+  </div>
+
+  <div class="blok">
+    <h2>Yaşlıda hipopitüitarizm (TEMD, yaşlanma bölümü)</h2>
+    <table class="tb">
+      <tbody>
+        <tr><td class="bas" style="width:26mm">Klinik</td><td>Sinsi, normal yaşlanma ve neoplaziyle karışır. Yaşlıda zaten artmış ADH, ACTH eksikliğiyle birleşince <b>hiponatremi daha sık</b></td></tr>
+        <tr><td class="bas">ACTH tanısı</td><td>İTT önerilmez (konvülsiyon, aritmi, iskemi) → <b>1 µg ACTH testi</b>; santral yetmezlikte 250 µg testinden daha özgül</td></tr>
+        <tr><td class="bas">Hidrokortizon</td><td>Klasik 20 + 10 mg yerine yaşlıda <b>10 + 5 mg</b> eğilimi; yüksek doz kırık, KV ve serebrovasküler olayları artırır. Dual salınımlı hidrokortizon ülkemizde yok</td></tr>
+        <tr><td class="bas">ACTH izlemi</td><td>6 ayda bir, son dozdan 12 saat sonra sabah ve öğleden sonra kortizolü</td></tr>
+        <tr><td class="bas">TSH</td><td>sT3 ve TRH testi önerilmez. L-T4 <b>0,25–0,5 µg/kg</b> ile başla, 3–4 haftada bir artırarak 1,2–1,6 µg/kg; fazla doz kemik kaybı ve AF</td></tr>
+        <tr><td class="bas">GH</td><td>İTT yerine glukagon: pik 2.–3. saatte, <b>≤3 µg/L</b> eksiklik; replasman tartışmalı</td></tr>
+        <tr><td class="bas">DHEA</td><td>Tanıda da replasmanda da yeterli veri yok</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blok">
+    <h2>TEMD’nin özetinden</h2>
+    <div class="temd-izgara">
+      <div class="kutu temd"><div class="ad">Öykü</div><p>Belirtiler özgül değil; tanıda en önemli basamak <b>nedene yönelik öykü</b>. Testlerin gücü doğru hasta seçimine bağlı.</p></div>
+      <div class="kutu temd"><div class="ad">Bazal yeterli</div><p><b>TSH ve gonadotropin</b> eksikliğinde bazal ölçüm tanı koyar; uyarı testi istisnai.</p></div>
+      <div class="kutu temd"><div class="ad">Test şart</div><p><b>ACTH ve GH</b> eksikliğinde bazal ölçüm yetmez; bazal GH’nin tanıda yeri yok.</p></div>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>Yaşlıda hangi test? (TEMD)</h2>
+    <table class="tb">
+      <thead><tr><th style="width:30mm">Eksiklik</th><th>Altın standart</th><th>Yaşlıda önerilen</th></tr></thead>
+      <tbody>
+        <tr><td class="bas">ACTH</td><td>İTT</td><td>ACTH (1 µg) uyarı testi</td></tr>
+        <tr><td class="bas">TSH</td><td>sT4, TSH</td><td>sT4, TSH</td></tr>
+        <tr><td class="bas">FSH/LH</td><td>Total testosteron ya da östradiol, FSH/LH</td><td>Aynı</td></tr>
+        <tr><td class="bas">GH</td><td>İTT</td><td>Glukagon uyarı testi</td></tr>
+        <tr><td class="bas">ADH</td><td>Su kısıtlama testi</td><td>Su kısıtlama testi</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="folyo"><b>120</b><span>MediSea Hızlı Bakış · Endokrinoloji</span></div>
+</section>
+
+<!-- ================= 121 · BAŞVURU: APOPLEKSİ, SHEEHAN, HİPOFİZİTLER ================= -->
 <section class="sayfa sag tur-basvuru">
   <div class="tirnak">Endokrinoloji</div>
   <div class="kunye"><span>Hızlı Bakış · Endokrinoloji</span><span>Hipofiz · Başvuru</span></div>
@@ -6905,15 +7191,6 @@ ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--bra
     </table>
   </div>
 
-  <div class="blok">
-    <h2>Sheehan’ın uzun gölgesi · enfeksiyöz nedenler</h2>
-    <div class="bw" style="grid-template-columns:repeat(3,1fr)">
-      <div><b>Gecikmiş hasar</b><span>Nekrozla açığa çıkan antijenler anti-hipofiz antikorlarını tetikleyebilir; yetmezlik yıllar içinde derinleşir</span></div>
-      <div><b>Geç komplikasyon</b><span>KV risk, ağır osteoporoz, depresyon, psikoz, bilişsel bozulma; yüzde ince kırışıklıklar</span></div>
-      <div><b>Enfeksiyon</b><span>Hipofiz apsesi (stafilokok, streptokok) %80’den fazlasında ön hipofiz yetmezliği; tüberküloz, frengi, mantar, HIV, CMV</span></div>
-    </div>
-  </div>
-
   <div class="iki-sutun">
     <div class="kutu tuzak"><div class="ad">Tuzak · sessiz apopleksi</div><p>Fulminan tipte ani baş ağrısı ve görme kaybı vardır; sessiz (subklinik) apopleksi akut belirti vermez. Acil cerrahi endikasyonu hızla ilerleyen görme kaybı ya da bilinç bozukluğudur.</p></div>
     <div class="kutu inci"><div class="ad">Klinik inci · boş sella</div><p>Boş sellada hipofiz işlevi çoğunlukla normaldir, hafif hiperprolaktinemi görülebilir. Sheehan’da boş sella kronik evrede, yıllar sonra ortaya çıkar.</p></div>
@@ -6928,10 +7205,15 @@ ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--bra
     </div>
   </div>
 
-  <div class="folyo"><span>MediSea Hızlı Bakış · Endokrinoloji</span><b>117</b></div>
+  <div class="temd-izgara iki">
+    <div class="kutu temd"><div class="ad">TEMD 2022 · apopleksi acili</div><p>Önce acil kan: kortizol, ACTH, sT4, TSH, diğer ön hipofiz hormonları, elektrolit, karaciğer ve böbrek testleri, TKS, pıhtılaşma. Ardından <b>sonuç beklenmeden</b> parenteral yüksek doz glukokortikoid. Görme keskinliği ciddi azalmışsa, görme alanı defekti ağır ya da kötüleşiyorsa, bilinç bozuksa <b>erken cerrahi (ilk 8 gün)</b>.</p></div>
+    <div class="kutu temd"><div class="ad">TEMD 2022 · apopleksi izlemi</div><p>Hipofiz işlevi ve göz muayenesi <b>4–6. haftada</b>; ömür boyu replasman gerekip gerekmediği tekrarlanan testlerle. MRG bulgular stabil olana dek 3–6 ayda bir, sonra 5 yıl yılda bir, sonra 2 yılda bir. Fonksiyonsuz makroadenomlu hasta apopleksi belirtileri konusunda bilgilendirilir.</p></div>
+  </div>
+
+  <div class="folyo"><span>MediSea Hızlı Bakış · Endokrinoloji</span><b>121</b></div>
 </section>
 
-<!-- ================= 118 · BAŞVURU: ARKA HİPOFİZ ================= -->
+<!-- ================= 122 · BAŞVURU: ARKA HİPOFİZ ================= -->
 <section class="sayfa sol tur-basvuru">
   <div class="tirnak">Endokrinoloji</div>
   <div class="kunye"><span>Hızlı Bakış · Endokrinoloji</span><span>Hipofiz · Başvuru</span></div>
@@ -7007,10 +7289,10 @@ ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--bra
     </div>
   </div>
 
-  <div class="folyo"><b>118</b><span>MediSea Hızlı Bakış · Endokrinoloji</span></div>
+  <div class="folyo"><b>122</b><span>MediSea Hızlı Bakış · Endokrinoloji</span></div>
 </section>
 
-<!-- ================= 119 · BAŞVURU: VAKADAN KARARA ================= -->
+<!-- ================= 123 · BAŞVURU: VAKADAN KARARA ================= -->
 <section class="sayfa sag tur-basvuru">
   <div class="tirnak">Endokrinoloji</div>
   <div class="kunye"><span>Hızlı Bakış · Endokrinoloji</span><span>Hipofiz · Başvuru</span></div>
@@ -7052,10 +7334,10 @@ ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--bra
 
   <div class="kutu kural"><div class="ad">Altın kural · beş cümlede hipofiz</div><p>Kitle, sap, hormon üçlüsünü ayrı ayrı sor · prolaktinomada önce ilaç · akromegalide IGF-1 ve OGTT · ACTH önce, tiroid sonra · apopleksi ve krizde hidrokortizon beklemez.</p></div>
 
-  <div class="folyo"><span>MediSea Hızlı Bakış · Endokrinoloji</span><b>119</b></div>
+  <div class="folyo"><span>MediSea Hızlı Bakış · Endokrinoloji</span><b>123</b></div>
 </section>
 
-<!-- ================= 120 · HIZLI TEKRAR ================= -->
+<!-- ================= 124 · HIZLI TEKRAR ================= -->
 <section class="sayfa sol tur-basvuru">
   <div class="tirnak">Endokrinoloji</div>
   <div class="kunye"><span>Hızlı Bakış · Endokrinoloji</span><span>Hipofiz · Hızlı tekrar</span></div>
@@ -7105,7 +7387,7 @@ ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--bra
     <li><span>Lityuma bağlı NDI’de ilaç?</span><b>Amilorid</b></li>
   </ol>
 
-  <div class="folyo"><b>120</b><span>MediSea Hızlı Bakış · Endokrinoloji</span></div>
+  <div class="folyo"><b>124</b><span>MediSea Hızlı Bakış · Endokrinoloji</span></div>
 </section>
 
 <script>
