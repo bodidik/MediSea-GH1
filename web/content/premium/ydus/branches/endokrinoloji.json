@@ -127,6 +127,15 @@
           "hazir": true
         },
         {
+          "id": "hipofiz-kesim-degerleri-ayirici-tani",
+          "baslik": "Hipofiz Hastalıkları — Kesim Değerleri ve Ayırıcı Tanı",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        },
+        {
           "id": "hipopituitarizm",
           "baslik": "Hipopituitarizm",
           "rozetler": [

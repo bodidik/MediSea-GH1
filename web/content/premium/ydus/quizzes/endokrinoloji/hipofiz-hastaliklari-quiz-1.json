@@ -1,0 +1,199 @@
+{
+  "id": "quiz-endo-hipofiz-hastaliklari-001",
+  "baslik": "Hipofiz Hastalıkları — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "hipofiz-hastaliklari",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "45 yaşında erkek hasta, 22 mm boyutundaki non-fonksiyonel hipofiz makroadenomu nedeniyle transsfenoidal rezeksiyon geçirdikten 10 gün sonra hafif halsizlik ve yorgunluk şikayetiyle polikliniğe başvuruyor. Postoperatif 10. günde yapılan laboratuvar incelemesinde:\n\n• Sabah 08:00 Serum Kortizolü: 8 µg/dL\n• TSH: 0.7 mIU/L (Referans: 0.4–4.0)\n• Serbest T4: 0.5 ng/dL (Referans: 0.8–1.8, Düşük)\n\nHastalık evresinde kortikotrop aksı değerlendirmek amacıyla hastaya 250 µg Cosyntropin (sentetik ACTH) uyarım testi yapılıyor ve monoklonal immünassay yöntemiyle pik serum kortizol yanıtı 16.5 µg/dL ölçülüyor.\n\nBu hastanın tanısı, test sonuçlarının güvenilirliği ve başlanacak replasman tedavisi için aşağıdakilerden hangisi en doğrudur?",
+      "secenekler": {
+        "A": "ACTH uyarım testinde pik kortizol yanıtı ≥14.5 µg/dL olduğu için kortikotrop aks tamamen sağlamdır; hastaya derhal Levotiroksin replasmanı başlanmalıdır.",
+        "B": "Hipofiz cerrahisinden sonraki ilk 4–6 hafta içinde yapılan Cosyntropin testi adrenal korteks henüz atrofiye uğramadığı için yalancı normal (false-negative) sonuç verebilir; ayrıca monoklonal yöntemlerde uyarılmış kortizol eşik değeri 14–15 µg/dL'dir.",
+        "C": "Santral hipotiroidizm tanısı doğrulandığından derhal Levotiroksin başlanmalı, kortikotrop aks 6. ayda tekrar değerlendirilmelidir.",
+        "D": "Monoklonal immünassay yöntemi kullanıldığı için pik kortizolün en az 22 µg/dL olması gerekirdi; hasta kesin olarak santral adrenal yetmezliktedir ve Fludrokortizon başlanmalıdır.",
+        "E": "Hastanın hiponatremi ve hiperkalemisi olmayacağı için santral adrenal yetmezlik düşünülmez; TSH seviyesi normal sınırlarda olduğundan tiroid replasmanına gerek yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Pitüiter cerrahi, apopleksi veya travmayı takip eden ilk 4–6 hafta içinde adrenal korteks henüz atrofiye uğramadığı için eksojen ACTH uyarısına normal kortizol yanıtı verebilir (yalancı negatif / false-normal sonuç).",
+      "aciklama_detay": "1. Hipofiz Cerrahisi/Travması Sonrası Test Zamanlaması (Erken Dönem Yalancı Normallik):\nACTH uyarım testi (Cosyntropin testi), endojen ACTH eksikliğine bağlı olarak zamanla gelişen adrenal korteks atrofisi prensibine dayanır. Pitüiter cerrahi, apopleksi veya travmayı takip eden ilk 4–6 hafta içinde adrenal korteks henüz atrofiye uğramadığı için eksojen ACTH uyarısına normal kortizol yanıtı verebilir (yalancı negatif / false-normal sonuç). Bu nedenle cerrahi sonrası kortikotrop aks değerlendirmesi 4–6. haftadan önce yapıldığında test tam güvenilir değildir.\n\n2. Monoklonal ve LC-MS/MS Assay Eşik Değerleri:\nKlasik poliklonal immünassay kitlerinde diğer adrenal steroidlerle çapraz reaksiyon (cross-reactivity) nedeniyle normallik kesim değeri geleneksel olarak ≥18 µg/dL alınmaktaydı. Ancak özgüllüğü yüksek olan monoklonal immünassay veya LC-MS/MS (likit kromatografi-kütle spektrometresi) yöntemlerinde bu çapraz reaksiyonlar olmadığı için uyarılmış pik kortizol kesim değeri 14–15 µg/dL seviyesine düşmektedir.\n\n3. Hormon Replasman Sıralaması (Kritik Klinik Kural):\nSantral adrenal yetmezlik ve santral hipotiroidizm birlikte bulunduğunda, Glukokortikoid tedavisi HER ZAMAN Levotiroksin tedavisinden ÖNCE başlanmalıdır. Tiroid hormonunun glukokortikoid metabolizmasını ve klirensini hızlandırması nedeniyle, kortizol replasmanı yapılmadan verilen Levotiroksin hastayı akut adrenal krize sokabilir.\n\n4. Mineralokortikoid İhtiyacı:\nPrimer adrenal yetmezliğin aksine, sekonder/santral adrenal yetmezlikte Renin-Anjiyotensin-Aldosteron Sistemi (RAAS) korunduğu için aldosteron salgısı devam eder. Dolayısıyla sekonder adrenal yetmezlikte Fludrokortizon (mineralokortikoid) replasmanına gerek yoktur ve hiperkalemi beklenmez.",
+      "etiketler": [
+        "Cosyntropin Testi",
+        "Postoperatif Değerlendirme",
+        "Monoklonal Assay Eşiği",
+        "Glukokortikoid Önce Kuralı"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s2",
+      "metin": "7 yaşında erkek çocuk boy kısalması, büyüme hızında duraklama ve puberte gelişimi olmaması nedeniyle getiriliyor. Yapılan auxolojik ve hormonal değerlendirmede kombine ön hipofiz hormon eksikliği saptanıyor:\n\n• Büyüme Hormonu (GH) eksikliği\n• Santral Hipotiroidizm (düşük serbest T4, inapropriyet normal TSH)\n• Prolaktin (PRL) düşüklüğü\n\nHastanın takibinde adolesan dönemde belirgin Gonadotropin (LH/FSH) eksikliği gelişiyor ve ergenlik gecikmesi belirginleşiyor. İlerleyen erişkin yaşlarda ise tabloya geç başlayan ACTH eksikliği ekleniyor. Beyin MRG'sinde hipofiz bezinin hipoplastik olduğu tespit ediliyor.\n\nBu klinik tablo, hormon eksikliklerinin zamansal gelişimi ve gidişatı dikkate alındığında, altında yatan genetik mutasyon aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "POU1F1 (PIT1) mutasyonu",
+        "B": "TBX19 (TPIT) mutasyonu",
+        "C": "PROP1 mutasyonu",
+        "D": "POMC mutasyonu",
+        "E": "KAL1 (ANOS1) mutasyonu"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Otozomal resesif geçişli PROP1 mutasyonları, kombine hipofiz hormon eksikliklerinin en sık saptanan genetik nedenidir.",
+      "aciklama_detay": "Hipofiz genetik mutasyonlarının karşılaştırması:\n• POU1F1 (PIT1): GH, PRL, TSH eksikliği; LH/FSH ve ACTH KORUNUR!\n• PROP1: PIT1 soyu (GH, PRL, TSH) + Gonadotrop (LH/FSH) + GEÇ başlayan ACTH!\n• TBX19 (TPIT): İzole ACTH; neonatal hipoglisemi, nöbet, sarılık\n\n1. PROP1 (Prophet of PIT-1) Mutasyonu Özellikleri:\nOtozomal resesif geçişli PROP1 mutasyonları, kombine hipofiz hormon eksikliklerinin en sık saptanan genetik nedenidir. PROP1, ön hipofiz gelişiminde POU1F1 (PIT1) transkripsiyon faktörünün aktivasyonundan sorumludur. Bu nedenle PROP1 mutasyonunda hem PIT1-bağımlı hücresel soyların ürünleri (GH, PRL ve TSH) hem de ek olarak gonadotropik (FSH/LH) hücreler etkilenir. En karakteristik klinik özelliklerinden biri, ACTH eksikliğinin erken çocuklukta olmaması, ancak ilerleyen yaşlarda (adolesan veya erişkin dönemde) geç başlayan (late-onset) bir şekilde tabloya eklenmesidir.\n\n2. Çeldiricilerin Analizi:\n• POU1F1 (PIT1) Mutasyonu (A Şıkkı): Sadece PIT1 soyundan köken alan GH, PRL ve TSH eksikliğine yol açar. Gonadotrop (FSH/LH) ve Kortikotrop (ACTH) aksları tamamen korunur.\n• TBX19 / TPIT Mutasyonu (B Şıkkı): Kortikotrop hücre diferansiyasyonundan sorumludur. Otozomal resesif mutasyonları neonatal dönemde izole ACTH eksikliğine (neonatal hipoglisemi, nöbetler ve kolestatik sarılık) neden olur.\n• POMC Mutasyonu (D Şıkkı): İzole ACTH eksikliği, kızıl saç (red hair) ve erken çocukluk çağı obezitesi ile karakterizedir.\n• KAL1 / ANOS1 Mutasyonu (E Şıkkı): X'e bağlı kalıtılan Kallmann Sendromu nedenidir; anosmin-1 eksikliğine bağlı izole hipogonadotropik hipogonadizm, anosmi/hiposmi, renal agenezis ve senkinezi ile seyreder.",
+      "etiketler": [
+        "PROP1",
+        "Kombine Hipofiz Hormon Eksikliği",
+        "POU1F1 / PIT1",
+        "TPIT",
+        "Genetik Etiyoloji"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s3",
+      "metin": "Metastatik melanom tanısıyla ipilimumab (anti-CTLA-4 monoklonal antikoru) tedavisi alan 62 yaşındaki erkek hasta, tedavinin 8. haftasında şiddetli baş ağrısı, aşırı halsizlik, iştahsızlık ve postural hipotansiyon ile acil servise başvuruyor.\n\nLaboratuvar incelemesinde:\n\n• Sabah Kortizolü: 1.5 µg/dL\n• ACTH: 4 pg/mL (Düşük)\n• Serbest T4: 0.4 ng/dL, TSH: 0.3 mIU/L\n• Serum Sodyumu: 131 mEq/L\n\nHipofiz MRG'sinde simetrik, hafif homojen bez büyümesi ve sapta hafif kalınlaşma izleniyor.\n\nBu hastada İmmün Kontrol Noktası İnhibitörü (ICI) ilişkili hipofizit tanısı düşünüldüğünde, klinik gidişat, hormonal tutulum ve ayırıcı tanı açısından aşağıdakilerden hangisi en doğrudur?",
+      "secenekler": {
+        "A": "Lenfositik hipofizitin aksine, ICI ilişkili hipofizitte Santral Diabetes Insipidus (vazopressin / ADH eksikliği) gelişimi son derece nadirdir (<%2–3); hastada belirgin poliüri/polidipsi bulunması öncelikle pituiter metastaz olasılığını akla getirmelidir.",
+        "B": "ICI ilişkili hipofizit sıklıkla geçici bir tablo olup yüksek doz glukokortikoid tedavisi sonrasında kortikotrop aks %90 oranında tamamen iyileşir.",
+        "C": "Klasik primer lenfositik hipofizitte olduğu gibi, ICI hipofizitinde de vakaların %50'sinden fazlasında belirgin Santral Diabetes Insipidus tabloya eşlik eder.",
+        "D": "Anti-CTLA-4 tedavisine bağlı hipofizitte en sık etkilenen aks izole somatotrop aksı olup, kortikotrop hücreler hasardan tamamen korunur.",
+        "E": "Anti-PIT-1 antikor düzeyinin pozitif bulunması ICI hipofiziti tanısını kesinleştirir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Bu tablonun en belirgin ve patognomonik ayrımı, primer lenfositik hipofizitte Santral Diabetes Insipidus (DI) oranı >%50 iken, ICI ilişkili hipofizitlerde DI gelişiminin son derece nadir olmasıdır (<%2–3).",
+      "aciklama_detay": "Hipofizit türleri ve DI (AVP) tutulumu:\n• Primer Lenfositik Hipofizit: Nörohipofiz ve sap tutulumu belirgin; Santral DI oranı YÜKSEK (>%50)\n• ICI İlişkili Hipofizit (Anti-CTLA-4): Ön hipofiz (kortikotrop / gonadotrop); Santral DI son derece NADİR (<%2-3); DI varlığı = METASTAZ ŞÜPHESİ!\n\n1. ICI Hipofiziti ve Arka Hipofiz (DI) Ayırıcı Nüansı:\nKanser immünoterapisinde kullanılan CTLA-4 (ipilimumab) ve PD-1/PD-L1 (pembrolizumab, nivolumab) blokörleri ön hipofizde otoimmün harabiyete yol açar. Bu tablonun en belirgin ve patognomonik ayrımı, primer lenfositik hipofizitte Santral Diabetes Insipidus (DI) oranı >%50 iken, ICI ilişkili hipofizitlerde DI gelişiminin son derece nadir olmasıdır (<%2–3). Dolayısıyla, ICI tedavisi alan bir kanser hastasında DI saptanırsa, öncelikli olarak pituiter / sellar metastaz ekarte edilmelidir.\n\n2. Hormonal Tutulum ve Kalıcılık:\nICI hipofiziti öncelikle kortikotrop ve gonadotrop hücreleri etkiler. Glukokortikoid tedavisi ile kitle etkisi ve baş ağrısı düzelse bile, oluşan sekonder adrenal yetmezlik sıklıkla kalıcıdır (permanent AI) ve ömür boyu idame glukokortikoid replasmanı gerektirir.\n\n3. Çeldirici Bilgiler:\n• Anti-PIT-1 antikorları, PIT-1 eksprese eden timoma veya nöroendokrin tümörlerin paraneoplastik bir sendromu olarak gelişir ve kazanılmış izole GH, PRL ve TSH eksikliğine yol açar.",
+      "etiketler": [
+        "ICI Hipofiziti",
+        "Anti-CTLA-4",
+        "Santral Diabetes Insipidus",
+        "Lenfositik Hipofizit"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s4",
+      "metin": "Craniopharyngioma nedeniyle cerrahi ve radyoterapi öyküsü olan 38 yaşındaki kadın hasta;\n\n• Santral Adrenal Yetersizlik (idame Hidrokortizon alan)\n• Santral Hipotiroidizm (idame Levotiroksin alan)\n• Santral Hipogonadizm (oral kombine östrojen-progesteron alan)\n\ntanılarıyla takip edilmektedir. Hasta yorgunluk, efor kapasitesinde azalma ve abdominal yağ kütlesinde artış şikayetleriyle Erişkin Büyüme Hormonu Eksikliği (aGHD) açısından değerlendirilmektedir. Laboratuvar incelemesinde serum IGF-1 seviyesi yaş ve cinsiyete göre referans aralığın belirgin altında saptanıyor.\n\nBu hastanın aGHD tanısal yaklaşımı ve uygulanacak replasman tedavisi ile diğer hormonlar arasındaki kompleks etkileşimler hakkında aşağıdakilerden hangisi kesinlikle doğrudur?",
+      "secenekler": {
+        "A": "Hastanın aGHD tanısını kesinleştirmek için mutlaka İnsülin Tolerans Testi (ITT) veya Glukagon Uyarım Testi yapılmalıdır.",
+        "B": "Üç ön hipofiz aks eksikliği ve düşük serum IGF-1 varlığında dinamik uyarım testi yapılmasına gerek yoktur; aGHD tanısı kesindir.",
+        "C": "Hastaya rhGH replasmanı başlandığında 11β-HSD1 enzim aktivitesi artacağı için idame Hidrokortizon dozunu %50 azaltmak gerekir.",
+        "D": "Oral östrojen kullanımı karaciğerde IGF-1 üretimini artırdığı için, rhGH başlandığında beklenenden daha düşük doz rhGH yeterli olacaktır.",
+        "E": "Levotiroksin tedavisi altında olan bu hastada rhGH tedavisi başlandığında serbest T4 seviyeleri artacağı için Levotiroksin dozu düşürülmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Bilinen hipotalamopitüiter hastalığı olan bir hastada 3 veya daha fazla ön hipofiz hormon eksikliği (panhipopitüitarizm) VE düşük serum IGF-1 seviyesi varlığında test yapılmasına GEREK YOKTUR.",
+      "aciklama_detay": "1. aGHD Tanısında Dinamik Test Gerekçesi ve İstisnası:\nErişkinlerde Büyüme Hormonu Eksikliği (aGHD) tanısı sıklıkla provokatif dinamik uyarım testleri (ITT, Glukagon, Macimorelin veya GHRH-Arjinin) gerektirir. Ancak bilinen hipotalamopitüiter hastalığı olan bir hastada 3 veya daha fazla ön hipofiz hormon eksikliği (panhipopitüitarizm) VE düşük serum IGF-1 seviyesi varlığında test yapılmasına GEREK YOKTUR. Bu tablonun aGHD açısından pozitif prediktif değeri %96–100'dür.\n\n2. Hormon-Hormon Etkileşim Dinamikleri:\n• rhGH ve Glukokortikoid Etkileşimi: Büyüme hormonu, inaktif kortizonu aktif kortizola dönüştüren 11β-HSD1 (11-beta-hidroksisteroid dehidrogenaz tip 1) enzimini inhibe eder / baskılar. Bu nedenle rhGH tedavisi başlandığında kortizol metabolizması değişir ve kortizol seviyeleri düşebilir; hastaların hidrokortizon doz ihtiyacı artabilir veya sınırda kortikotrop rezervi olanlarda adrenal yetmezlik açığa çıkabilir.\n• rhGH ve Oral Östrojen Etkileşimi: Oral östrojen (transdermalden farklı olarak) karaciğerden ilk geçiş etkisine uğrayarak karaciğerde IGF-1 üretimini baskılar. Bu nedenle oral östrojen kullanan kadın hastalarda hedef IGF-1 düzeyine ulaşabilmek için %30–50 daha yüksek rhGH dozları gerekir. Hastanın oral östrojenden transdermal östrojene geçmesi durumunda ise rhGH dozu azaltılmalıdır.\n• rhGH ve Tiroid Hormonu Etkileşimi: rhGH tedavisi periferik T4'ün T3'e dönüşümünü etkiler ve serbest T4 seviyelerini düşürebilir. Bu nedenle rhGH başlandıktan sonra serbest T4 takibi yapılmalı ve gerekirse Levotiroksin dozu artırılmalıdır.",
+      "etiketler": [
+        "Erişkin GH Eksikliği",
+        "Dinamik Test İstisnası",
+        "11β-HSD1",
+        "Oral Östrojen ve rhGH"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s5",
+      "metin": "54 yaşında erkek hasta, kronik bel ağrısı nedeniyle 3 yıldır yüksek doz oral morfin (günlük Morfin Miligram Eşdeğeri [MME]: 120 mg/gün) kullanmaktadır. Hasta son 6 aydır artan belirgin halsizlik, yorgunluk, erektil disfonksiyon, libido kaybı ve kas kütlesinde azalma şikayetleriyle başvuruyor.\n\nYapılan laboratuvar incelemesinde:\n\n• Sabah 08:00 Serum Kortizolü: 4.2 µg/dL (Düşük)\n• ACTH: 11 pg/mL (İnapropriyet Düşük/Normal)\n• Total Testosteron: 110 ng/dL (Referans: 300–1000, Düşük)\n• LH: 1.8 mIU/mL (Düşük/Normal)\n• Serum Prolaktin: 38 ng/mL (Referans: 4–18, Hafif Yüksek)\n• TSH ve Serbest T4: Normal sınırlarda\n\nOpioidlerin hipotalamo-hipofizer akslar üzerindeki mekanizması, risk faktörleri ve klinik etkileri dikkate alındığında aşağıdakilerden hangisi en doğrudur?",
+      "secenekler": {
+        "A": "Opioidler hipofiz düzeyinde doğrudan ACTH ve LH salgılayan hücreleri tahrip ederek kalıcı yapısal hasara yol açarlar; bu nedenle ilaç kesilse dahi akslar iyileşmez.",
+        "B": "Opioidler hipotalamik seviyede CRH salınımını ve pulsatif GnRH salgılanmasını inhibe ederler; ayrıca tuberoinfundibuler dopamin salınımını azaltarak prolaktin yüksekliğine neden olurlar.",
+        "C": "Opioid ilişkili adrenal yetmezlik riski kullanılan günlük MME dozundan bağımsızdır; kısa etkili opioidler uzun etkili formülasyonlara göre daha yüksek oranda hipogonadizme yol açar.",
+        "D": "Opioidlerin hipotalamo-hipofizer-adrenal (HPA) aksı üzerindeki baskılayıcı etkisi primer adrenal yetmezliğe yol açtığı için hastalarda belirgin hiperpigmentasyon ve hiperkalemi beklenir.",
+        "E": "Hiperprolaktinemi varlığı nedeniyle hastaya derhal yüksek doz kabergolin başlanmalı ve opioid tedavisine doz artırılarak devam edilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Opioidler temel olarak hipotalamik düzeyde CRH (kortikotropin salıverici hormon) salınımını inhibe ederek ACTH ve kortizol düzeylerini düşürürler.",
+      "aciklama_detay": "1. Opioidlerin Hipotalamik ve Hipofizer Etki Mekanizmaları:\n• Gonadotrop Aks (HPG): Opioidler hipotalamusta Mu-opioid reseptörleri üzerinden pulsatif GnRH salınımını baskılar; ikincil olarak hipofizden LH (ve daha az oranda FSH) salgılanması azalır ve sekonder hipogonadizm gelişir.\n• Kortikotrop Aks (HPA): Opioidler temel olarak hipotalamik düzeyde CRH (kortikotropin salıverici hormon) salınımını inhibe ederek ACTH ve kortizol düzeylerini düşürürler.\n• Laktotrop Aks (PRL): Opioidler tuberoinfundibuler dopaminerjik nöronlardan dopamin salınımını azaltarak laktotrop hücreler üzerindeki tonik baskıyı kaldırır ve hafif-orta düzeyde hiperprolaktinemiye (sıklıkla < 100 ng/mL) yol açarlar.\n\n2. Doz ve Formülasyon İlişkisi:\n• Opioid ilişkili endokrinopati riski günlük MME dozu ve kumülatif maruziyet ile doğrudan ilişkilidir (MME'deki her 10 mg'lık artış androjen eksikliği riskini 1.16 kat artırır).\n• Uzun etkili opioidler, kısa etkili olanlara kıyasla belirgin şekilde daha yüksek oranda hipogonadizm riski taşırlar (OR 3.4).\n\n3. Çeldiricilerin Analizi:\n• A Şıkkı Yanlıştır: Opioidler yapısal yıkım yapmaz; nöroendokrin sinyal iletimini fonksiyonel olarak baskılarlar.\n• C Şıkkı Yanlıştır: Doz bağımlıdır ve uzun etkili formülasyonlar daha yüksek risk taşır.\n• D Şıkkı Yanlıştır: Tablo santral (sekonder) adrenal yetmezliktir; RAAS korunduğu için hiperkalemi ve ACTH düşük olduğu için hiperpigmentasyon görülmez.\n• E Şıkkı Yanlıştır: Opioid ilişkili hiperprolaktinemi dopamin azalmasına sekonderdir; öncelikli yaklaşım mümkünse opioidin kesilmesi/dozunun azaltılmasıdır.",
+      "etiketler": [
+        "Opioid İlişkili Endokrinopati",
+        "Santral Adrenal Yetmezlik",
+        "Sekonder Hipogonadizm",
+        "Hiperprolaktinemi"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s6",
+      "metin": "61 yaşında erkek hasta, metastatik akciğer kanseri nedeniyle Pembrolizumab (anti-PD-1 monoklonal antikoru) tedavisi almaktadır. Tedavinin 27. haftasında hastada aniden gelişen şiddetli halsizlik, bulantı, iştahsızlık, kilo kaybı ve hafif konfüzyon ortaya çıkıyor.\n\nLaboratuvar ve Görüntüleme İncelemesi:\n\n• Serum Sodyumu: 127 mEq/L (Hiponatremi)\n• Sabah 08:00 Serum Kortizolü: 1.2 µg/dL (Ağır Düşük)\n• ACTH: 3 pg/mL (Düşük)\n• TSH: 1.8 mIU/L, Serbest T4: 1.1 ng/dL (Normal)\n• Testosteron: 380 ng/dL (Normal)\n• Kontrastlı Hipofiz MRG: Tamamen normal hipofiz morfolojisi ve sapı (Büyüme veya kitle saptanmadı).\n\nAnti-PD-1 / Anti-PD-L1 ve Anti-CTLA-4 (Ipilimumab) moleküllerinin yol açtığı hipofizit tablolarının karşılaştırılması ve yönetimi açısından aşağıdakilerden hangisi kesinlikle doğrudur?",
+      "secenekler": {
+        "A": "Anti-PD-1/PD-L1 ajanlarına bağlı hipofizit, anti-CTLA-4 ajanlarına göre daha erken (ortalama 10. hafta) ortaya çıkar ve sıklıkla MRG'de belirgin kitle etkisi ve optik kiyazma basısı ile seyreder.",
+        "B": "Anti-PD-1/PD-L1 ilişkili hipofizit sıklıkla izole ACTH eksikliği (santral adrenal yetmezlik) şeklinde klinik verir ve hastaların önemli bir kısmında MRG tamamen normal izlenebilir.",
+        "C": "ICI ilişkili hipofiziti olan bu hastada tümör progresyonunu önlemek amacıyla yüksek doz sistemik glukokortikoid (örneğin 1 mg/kg/gün prednizolon) verilmelidir; bu yaklaşım genel sağkalımı artırır.",
+        "D": "Hastada saptanan hiponatreminin temel nedeni uygunsuz ADH salınımı sendromu (SIADH) olup, hastaya su kısıtlaması yapılmalı ve glukokortikoid replasmanından kaçınılmalıdır.",
+        "E": "Anti-CTLA-4 tedavisi alan hastalarda santral diabetes insipidus görülme oranı %60'ın üzerindedir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Anti-PD-1/PD-L1 ajanları sıklıkla izole ACTH eksikliği (santral adrenal yetmezlik) ile klinik verir.",
+      "aciklama_detay": "Anti-CTLA-4 ile Anti-PD-1 / Anti-PD-L1 hipofiziti karşılaştırması:\n• Anti-CTLA-4 (Ipilimumab): Sıklık daha yüksek (%5.6); başlangıç erken (ort. 10.5 hafta); baş ağrısı / MRG değişikliği belirgin (%81); hormonal tablo panhipopitüitarizm\n• Anti-PD-1 / PD-L1: Sıklık daha düşük (%0.5-1.1); başlangıç geç (ort. 27 hafta); MRG değişikliği seyrek (%18) / sıklıkla normal; hormonal tablo İZOLE ACTH EKSİKLİĞİ\n\n1. Anti-PD-1 / Anti-PD-L1 vs Anti-CTLA-4 Hipofizit Farkları:\n• Ortaya Çıkış Zamanı: Anti-CTLA-4 (ipilimumab) hipofiziti tedavinin erken evrelerinde (ortalama 10.5 hafta) çıkarken, Anti-PD-1 (pembrolizumab, nivolumab) veya Anti-PD-L1 hipofiziti çok daha geç (ortalama 27–28. hafta) ortaya çıkar.\n• Hormonal Tutulum: Anti-PD-1/PD-L1 ajanları sıklıkla izole ACTH eksikliği (santral adrenal yetmezlik) ile klinik verir. Diğer akslar (tiroid, gonad) sıklıkla korunur.\n• Görüntüleme Bulguları: Anti-CTLA-4 hipofizitinde hastaların %81'inde MRG'de büyüme/parankim değişikliği görülürken, Anti-PD-1/PD-L1 hipofizitinde hastaların yaklaşık %80'inde MRG tamamen normaldir.\n\n2. Yüksek Doz Steroid ve Sağkalım Meselesi:\n• Ciddi nörolojik komplikasyon (şiddetli kitle etkisi, görme alanı kaybı) yoksa, ICI hipofizitinde yüksek doz immünosüpresif glukokortikoid verilmesi ÖNERİLMEZ.\n• Çalışmalar, melanoma hastalarında yüksek doz glukokortikoid kullanımının (>7.5 mg/gün prednizolon eşdeğeri) hipofizit iyileşme oranını artırmadığını, aksine kanser genel sağkalımını belirgin şekilde düşürdüğünü (Hazard Ratio: 0.24, P=0.002) göstermiştir. Fizyolojik doz replasmanı yeterlidir.\n\n3. Çeldirici Bilgiler:\n• D Şıkkı Yanlıştır: Hiponatremi, kortizol eksikliğinin ADH üzerindeki tonik inhibitör etkisini kaybetmesinden kaynaklanır; fizyolojik glukokortikoid replasmanı ile hızla düzelir.\n• E Şıkkı Yanlıştır: ICI ilişkili hipofizitlerde Santral DI (vazopressin eksikliği) gelişim oranı <%2–3 kadar son derece düşüktür.",
+      "etiketler": [
+        "ICI Hipofiziti",
+        "Anti-PD-1 / PD-L1",
+        "İzole ACTH Eksikliği",
+        "Yüksek Doz Steroid ve Sağkalım"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s7",
+      "metin": "32 yaşında kadın hasta, şizofreni tanısıyla 2 yıldır oral Risperidon (4 mg/gün) kullanmaktadır. Hasta son 8 aydır sekonder amenore ve belirgin galaktore şikayetleriyle başvuruyor.\n\nLaboratuvar ve Klinik İnceleme:\n\n• Serum Prolaktin: 88 ng/mL (Referans: 4–25)\n• TSH: 1.4 mIU/L, Serbest T4: 1.2 ng/dL (Normal)\n• B-hCG: Negatif\n• Karaciğer ve Böbrek Fonksiyon Testleri: Normal\n\nHastanın psikiyatristi, geçmişte yaşanan ağır psikotik ataklar ve hastaneye yatış öyküsü nedeniyle Risperidon tedavisinin kesilmesinin veya başka bir antipsikotiğe geçilmesinin yüksek relaps riski taşıdığını belirtiyor.\n\nAntipsikotik ilişkili hiperprolaktinemi patofizyolojisi, ilaç sınıfları ve tedavi stratejileri düşünüldüğünde aşağıdakilerden hangisi en doğrudur?",
+      "secenekler": {
+        "A": "Risperidon kullanımı varlığında serum prolaktin düzeyi <100 ng/mL olduğu için başka bir tetkik yapılmasına gerek yoktur; tümör olasılığı tamamen dışlanmıştır.",
+        "B": "Antipsikotik ilacın kesilemediği veya değiştirilemediği bu vakada, tedaviye parsiyel D2 reseptör agonisti olan Aripiprazol eklenmesi prolaktin düzeylerini anlamlı şekilde düşürür ve normoprolaktinemi sağlayabilir.",
+        "C": "Antipsikotik ilişkili hiperprolaktinemide ilk tercih her zaman yüksek doz Kabergolin veya Bromokriptin tedavisidir; bu ilaçların psikoz tablosunu alevlendirme riski yoktur.",
+        "D": "Aripiprazol, Ketiapin ve Olanzapin en yüksek oranda hiperprolaktinemiye yol açan tipik antipsikotik ajanlardır.",
+        "E": "Antipsikotik kesildikten sonra serum prolaktin düzeyinin normale dönmesi için depo (long-acting injectable) formülasyonlarda 72 saat beklemek yeterlidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Antipsikotik tedavinin kesilmesi veya değiştirilmesi psikotik relaps riski nedeniyle mümkün değilse, tedaviye Aripiprazol (parsiyel dopamin D2 agonisti) eklenmesi randomize kontrollü çalışmalarda ve meta-analizlerde prolaktin seviyelerini belirgin şekilde düşürmüş ve normoprolaktinemi sağlamıştır.",
+      "aciklama_detay": "1. Antipsikotikler ve Prolaktin Yüksekliği:\n• Antipsikotikler, hipofizdeki laktotrop hücrelerin D2 dopamin reseptörlerini bloke ederek hiperprolaktinemiye yol açarlar.\n• En yüksek oran ve derecede hiperprolaktinemi yapan ajanlar: Tipik antipsikotikler, Risperidon, Paliperidon, Amisülprid ve Sülpirid'dir.\n• Prolaktin Düzeyini Artırmayan / İhmal Edilebilir Düzeyde Artıran Ajanlar: Aripiprazol, Klozapin, Ketiapin, Asenapin ve Ziprasidon.\n\n2. İlaç Değiştirilemeyen Durumlarda Güncel Yaklaşım (Aripiprazole Add-on Therapy):\n• Antipsikotik tedavinin kesilmesi veya değiştirilmesi psikotik relaps riski nedeniyle mümkün değilse, tedaviye Aripiprazol (parsiyel dopamin D2 agonisti) eklenmesi randomize kontrollü çalışmalarda ve meta-analizlerde prolaktin seviyelerini belirgin şekilde düşürmüş ve normoprolaktinemi sağlamıştır.\n• Bir diğer alternatif ise dopaminerjik tonusu artıran Metformin eklenmesidir (daha hafif bir prolaktin düşüşü sağlar).\n\n3. Çeldirici Bilgiler:\n• A Şıkkı Yanlıştır: İlaç ilişkili prolaktin yüksekliği sıklıkla <100 ng/mL olsa da, kitle/sap basısı veya prolaktinoma olasılığını kesin olarak dışlamaz; diğer nedenler ekarte edilmeli, ilaç kesilemiyorsa sellar MRG çekilmelidir.\n• C Şıkkı Yanlıştır: Klasik dopamin agonistleri (Kabergolin) psikotik semptomları alevlendirebileceği için psikiyatrik hastalarda dikkatle ve öncelikle Aripiprazol add-on stratejisinden sonra düşünülmelidir.\n• E Şıkkı Yanlıştır: Oral ilaçlarda 72 saat yeterliyken, depo (long-acting) enjektabl antipsikotiklerde prolaktin yüksekliği ilaç kesildikten sonra 6 haftaya kadar devam edebilir.",
+      "etiketler": [
+        "İlaç İlişkili Hiperprolaktinemi",
+        "Risperidon",
+        "Aripiprazol Add-on",
+        "Antipsikotikler"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s8",
+      "metin": "Poliaknik ve onkolojik tedaviler alan farklı hastaların ilaç ilişkili endokrin bozuklukları değerlendirilmektedir:\n\n• Hasta 1: Kutanöz T-hücreli lenfoma nedeniyle Bexarotene (Retinoid X Reseptör [RXR] ligandı) tedavisi alan hastanın 4. haftada belirgin santral hipotiroidizm (düşük fT4, inapropriyet düşük/normal TSH) geliştirdiği saptanıyor.\n• Hasta 2: Kansere bağlı anoreksi ve kilo kaybı nedeniyle Megestrol Asetat alan hastanın ilacı aniden kesmesi sonrasında hipotansiyon, bulantı ve ağır halsizlik ile akut adrenal yetmezlik tablosuna girdiği görülüyor.\n• Hasta 3: Epilepsi tanısıyla Karbamazepin tedavisi altındaki hastada serum sodyumunun 124 mEq/L (SIADH tablosu) olduğu tespit ediliyor.\n\nBu ilaçların hipotalamo-hipofizer fonksiyonlar üzerindeki etki mekanizmaları dikkate alındığında aşağıdakilerden hangisi yanlıştır?",
+      "secenekler": {
+        "A": "Bexarotene, hipofiz tirotrop hücrelerinde Retinoid X Reseptörlerini (RXR) aktifleyerek TSH gen transkripsiyonunu doğrudan inhibe eder ve hastaların %90'ından fazlasında santral hipotiroidizme yol açar.",
+        "B": "Megestrol asetat ve Medroksiprogesteron asetat (MPA) intrinsik glukokortikoid agonist aktiviteye sahiptir; kronik kullanımda HPA aksını baskılayarak ilaç kesildiğinde veya stres anında akut adrenal krize neden olabilirler.",
+        "C": "Antidepresanlar arasında SIADH ve hiponatremi riski en yüksek olan grup SSRI'lar (özellikle citalopram, escitalopram) iken; Bupropion ve Levomilnasipran SIADH riski taşımayan ajanlardır.",
+        "D": "Yüksek doz Glukokortikoid kullanımı (örneğin Deksametazon ≥0.5 mg/gün veya Prednizolon ≥30 mg/gün) hipotalamik TRH salınımını inhibe ederek TSH düzeylerinde baskılanmaya ve santral hipotiroidizm benzeri tabloya yol açabilir.",
+        "E": "Antiepileptik ilaçlardan Karbamazepin ve Okskarbazepin, hipofizden oksitosin salınımını aşırı uyararak primer olarak hiperprolaktinemiye ve makroprolaktinoma gelişimine neden olurlar."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Karbamazepin ve Okskarbazepin hiperprolaktinemi veya prolaktinoma yapmazlar; bu antiepileptiklerin en karakteristik endokrin yan etkisi SIADH ve buna bağlı hiponatremidir.",
+      "aciklama_detay": "1. E Şıkkının Yanlışlığı ve Karbamazepin Etkisi:\n• Karbamazepin ve Okskarbazepin hiperprolaktinemi veya prolaktinoma yapmazlar.\n• Bu antiepileptiklerin en karakteristik endokrin yan etkisi SIADH (Uygunsuz ADH Salınımı Sendromu) ve buna bağlı HİPONATREMİdir (Karbamazepin alanlarda %5–31, Okskarbazepin alanlarda %23 oranında görülür). Mekanizmada hipotalamik osmoreseptör duyarlılık değişimi ve renal tübüler ADH yanıt artışı rol oynar.\n\n2. Diğer Şıkların Doğruluğu ve Eğitsel Değeri:\n• A Şıkkı Doğrudur (Bexarotene & TSH): Bexarotene bir RXR-selektif retinoiddir. Tirotrop hücrelerde TSH-beta geni transkripsiyonunu doğrudan baskılar ve vakaların %92'sinde santral hipotiroidizm geliştirir.\n• B Şıkkı Doğrudur (Megestrol / MPA & Adrenal Aks): Megestrol asetat ve yüksek doz MPA progestin olmalarının yanı sıra glukokortikoid reseptör agonisti etki gösterirler. Kullanım sırasında Cushingoid özellikler yapabilirken, endojen HPA aksını (ACTH/kortizol) baskıladıkları için ilacın aniden kesilmesi veya stres durumunda semptomatik sekonder adrenal yetmezliğe yol açarlar.\n• C Şıkkı Doğrudur (Antidepresanlar & SIADH): SSRI'lar (özellikle citalopram/escitalopram) ve mirtazapin en sık SIADH yapan antidepresanlardır. Bupropion, levomilnasipran ve amoksapin ise SIADH riski ile ilişkili bulunmamıştır.\n• D Şıkkı Doğrudur (Glukokortikoidler & TSH): Yüksek doz glukokortikoidler hipotalamik TRH salınımını ve mRNA ekspresyonunu baskılayarak serum TSH seviyelerini düşürürler.",
+      "etiketler": [
+        "Bexarotene",
+        "Megestrol Asetat",
+        "SIADH",
+        "Antiepileptikler",
+        "İlaç İlişkili Santral Hipotiroidizm"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s9",
+      "metin": "67 yaşında erkek hasta, sella içi non-fonksiyonel hipofiz makroadenomu nedeniyle geçirdiği transsfenoidal cerrahiden 6 hafta sonra genel poliklinik kontrolüne çağrılıyor. Yapılan biyokimyasal değerlendirmesinde:\n\n• Açlık Sabah Kortizolü (08:00): 2.5 µg/dL (Santral Adrenal Yetersizlik)\n• Serbest T4 (fT4): 0.4 ng/dL, TSH: 0.3 mIU/L (Santral Hipotiroidizm)\n\nHastaya öncelikle oral Hidrokortizon (günlük 20 mg: sabah uyanınca 15 mg, öğleden sonra 14:00'te 5 mg) replasmanı başlanıyor. Hidrokortizon tedavisinin 2. gününde reçeteye oral Levotiroksin (50 µg/gün) ekleniyor.\n\nHidrokortizon tedavisinin 5. gününde hastanın eşi; hastanın halsizlik ve sersemlik hissinin gerilediğini ve tansiyon değerlerinin normale döndüğünü, ancak aniden başlayan günde yaklaşık 5 litreyi bulan aşırı idrara çıkma (poliüri) ve şiddetli su içme isteği (polidipsi, noktüri x4) geliştirdiğini bildiriyor.\n\nLaboratuvar İncelemesinde:\n\n• Serum Sodyumu: 144 mEq/L\n• Eş Zamanlı İdrar Osmolalitesi: 150 mOsm/kg (Hipotonik idrar)\n\nBu hastada Hidrokortizon replasmanının ardından aniden ortaya çıkan poliürinin fizyopatolojik mekanizması, biyokimyasal takibi ve tedavi yönetimi ile ilgili aşağıdakilerden hangisi en doğrudur?",
+      "secenekler": {
+        "A": "Hidrokortizon replasmanı 11β-HSD1 enzimini uyararak endojen kortizol yıkımını hızlandırır ve psödo-diabetes insipidus tablosu oluşturur; tedavide Hidrokortizon kesilip Deksametazon'a geçilmelidir.",
+        "B": "Hidrokortizon replasmanı tübüler düzeyde Na⁺/K⁺-ATPaz aktivitesini artırarak ozmotik diüreze neden olur; Hidrokortizon dozu yarıya indirilip serum TSH düzeyi normale gelene kadar Desmopressin verilmemelidir.",
+        "C": "Yaşlı hastalarda Levotiroksin başlangıcı tübüler AVP reseptör duyarlılığını baskılayarak poliüriye yol açar; takipte serum TSH düzeyi >1.0 mIU/L tutulacak şekilde Levotiroksin dozu hızla artırılmalıdır.",
+        "D": "Glukokortikoid eksikliğinin düzeltilmesi kan basıncını ve renal kan akımını artırırken, parsiyel vazopressin (AVP) salınımını baskılayarak önceden var olan subklinik Arginin Vazopressin Eksikliğinin (Santral Diabetes Insipidus) maskesini kaldırır (unmasking); hastaya Hidrokortizonun yanı sıra Desmopressin (dDAVP) tedavisi eklenmelidir.",
+        "E": "Gelişen tablo sekonder adrenal yetmezlikte aldosteron eksikliğine bağlı gelişen renal tuz kaybı sendromudur; hastaya derhal Fludrokortizon replasmanı başlanmalı ve sıvı kısıtlaması uygulanmalıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Hidrokortizon tedavisi ile kortizol eksikliği düzeltildiğinde, kan basıncı ve renal kan akımı normale döner. Bu durum, parsiyel AVP eksikliği olan hastalarda endojen vazopressin salınımını baskılayarak önceden gizli/subklinik kalan Arginin Vazopressin Eksikliğinin (Santral DI) belirgin poliüri ve polidipsi ile aniden ortaya çıkmasına (\"unmasking\") neden olur.",
+      "aciklama_detay": "1. Arginin Vazopressin Eksikliğinin Maskesinin Kalkması (\"Unmasking\" AVP-D / Central Diabetes Insipidus)\n• Fizyopatolojik Mekanizma: Kortizol eksikliği döneminde renal kan akımı ve sistemik kan basıncı düşüktür; ayrıca glukokortikoidlerin yokluğu ADH salınımı üzerindeki inhibitör kontrolün kalkmasına yol açarak sınırlı miktardaki AVP'nin retansiyonunu artırabilir.\n• Replasman Sonrası Değişim: Hidrokortizon tedavisi ile kortizol eksikliği düzeltildiğinde, kan basıncı ve renal kan akımı normale döner. Bu durum, parsiyel AVP eksikliği olan hastalarda endojen vazopressin salınımını baskılayarak önceden gizli/subklinik kalan Arginin Vazopressin Eksikliğinin (Santral DI) belirgin poliüri ve polidipsi ile aniden ortaya çıkmasına (\"unmasking\") neden olur.\n• Tedavi Yönetimi: Bu hastalar hem Hidrokortizon hem de eksikliği ortaya çıkan AVP replasmanı için Desmopressin (dDAVP) ile tedavi edilmelidir.\n\n2. Aks Replasman Sıralaması (Kortikotrop vs. Tirotrop)\n• Kritik Kural: Santral adrenal yetmezlik ve santral hipotiroidizm birlikte bulunduğunda, Glukokortikoid tedavisi HER ZAMAN Levotiroksin tedavisinden ÖNCE başlanmalıdır.\n• Gerekçe: Levotiroksinin tek başına veya glukokortikoidden önce verilmesi, karaciğerde kortizol klirensini hızlandırarak hastada mevcut olan kısıtlı kortizol havuzunu tüketir ve akut adrenal krizi tetikleyebilir.\n\n3. Yaşlı Hastalarda (>65 Yaş) Hormon Replasmanı ve Biyokimyasal İzlem Nüansları\n• Glukokortikoid Dozlaması: Yaşlı bireylerde metabolik klirensin azalması ve doku 11β-HSD1 ekspresyonunun artması nedeniyle fizyolojik glukokortikoid ihtiyacı genç erişkinlere kıyasla daha düşüktür. Aşırı replasman kemik kaybı ve metabolik bozukluklara yol açabileceğinden en düşük etkili dozlar (örneğin günlük 15-20 mg Hidrokortizon) tercih edilir. Son doz, uyku bozukluklarını önlemek adına yatmadan en az 6 saat önce verilmelidir.\n• Levotiroksin ve TSH İzlemi: Santral hipotiroidizm tedavisinde serum TSH düzeyi replasmanın yeterliliğini değerlendirmede KULLANILAMAZ. Doz titrasyonu serum Serbest T4 (fT4) düzeyine göre yapılır.\n• Yaşlılarda fT4 Hedefi: Genç erişkinlerde fT4'ün normal aralığın orta-üst kısmında tutulması önerilirken, 60-65 yaş üstü hastalarda atriyal fibrilasyon ve kemik kırığı riskini önlemek için düşük dozla (0.25-0.5 µg/kg/gün) başlanıp fT4'ün normal aralığın alt yarısında tutulması hedeflenir. Levotiroksin alan hipopitüiter hastaların %80'inden fazlasında TSH seviyesi < 0.5 mIU/L'dir; TSH'nin > 1.0 mIU/L olması yetersiz replasmana işaret eder.\n\n4. Mineralokortikoid (Aldosteron) İhtiyacı\n• Sekonder (santral) adrenal yetmezlikte Renin-Anjiyotensin-Aldosteron Sistemi (RAAS) korunduğu için aldosteron üretimi devam eder. Dolayısıyla Fludrokortizon (mineralokortikoid) replasmanına gerek yoktur ve primer adrenal yetmezliğin aksine hiperkalemi beklenmez.",
+      "etiketler": [
+        "AVP Eksikliğinin Maskesinin Kalkması",
+        "Santral Diabetes Insipidus",
+        "Glukokortikoid Önce Kuralı",
+        "Yaşlıda Hormon Replasmanı"
+      ],
+      "zorluk": "zor"
+    }
+  ]
+}

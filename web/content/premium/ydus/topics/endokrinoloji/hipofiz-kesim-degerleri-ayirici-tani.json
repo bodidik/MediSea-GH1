@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "id": "hipofiz-kesim-degerleri-ayirici-tani",
+    "branch": "endokrinoloji",
+    "baslik": "Hipofiz Hastalıkları — Kesim Değerleri ve Ayırıcı Tanı",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-09"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": false,
+    "vaka": false,
+    "video": false
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Ön Hipofiz Hipersekresyon Sendromları: İleri Biyokimyasal Kesim Değerleri ve Ayırıcı Tanı",
+      "satirlar": []
+    },
+    {
+      "tip": "metin",
+      "baslik": "A. Akromegali",
+      "satirlar": [
+        {
+          "metin": "**Biyokimyasal Tarama ve Doğrulama:**"
+        },
+        {
+          "metin": "• **İLK TARAMA:** Yaşa ve cinsiyete göre düzenlenmiş **serum IGF-1 düzeyi**. Serbest hormon dalgalanmalarından etkilenmediği için en hassas tarama testidir."
+        },
+        {
+          "metin": "• **DOĞRULAMA TESTİ:** **75 g Oral Glikoz Tolerans Testi (OGTT)**."
+        },
+        {
+          "metin": "• Ultrasensitif immünometrik GH kitleri kullanıldığında glikoz yüklemesi sonrası **nadir GH düzeyinin < 0.4 µg/L** altına inmesi normal kabul edilir; **GH ≥ 0.4 µg/L** ise otonom sekresyonu kanıtlar."
+        },
+        {
+          "metin": "**Farmakoterapötik Hedefler ve İlaç Etki Mekanizmaları:**"
+        },
+        {
+          "metin": "• **Somatostatin Reseptör Ligandları (SRL):** Birinci kuşak ajanlar olan **Oktreotid** ve **Lanreotid**, baskın olarak **SSTR2** reseptörlerine bağlanarak adenomdan GH salgılanmasını ve karaciğerden IGF-1 sentezini baskılar. **Pasireotid** ise yüksek **SSTR5** afinitesine sahiptir; ancak insülin salgısını baskıladığı için hastaların önemli bir kısmında belirgin **hiperglisemi ve diabetes mellitus** geliştirme riski taşır."
+        },
+        {
+          "metin": "• **GH Reseptör Antagonisti (Pegvisomant):** Konformal değişim yaratarak fonksiyonel GH reseptör dimerizasyonunu ve JAK2/STAT5 sinyal iletimini engeller. Çevresel IGF-1 üretimini güçlü şekilde düşürür. **DİKKAT:** Pegvisomant hipofize etki etmediği için serum GH düzeyleri yükselir; bu nedenle tedavi takibinde GH düzeyi değil, **yalnızca serum IGF-1 düzeyi** kullanılır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "B. Cushing Hastalığı (Kortikotrop PitNET) ve Ektopik ACTH Ayrımı",
+      "satirlar": [
+        {
+          "metin": "**Birincil Tarama ve Yanıltıcı Durumlar:**"
+        },
+        {
+          "metin": "• **24 saatlik İdrarda Serbest Kortizol (UFC)** (en az 2 örnek), **Gece Yarısı Tükürük Kortizolü (LNSC)** ve **1 mg Gece Deksametazon Baskılama Testi (1 mg DST)**."
+        },
+        {
+          "metin": "• 1 mg DST sonrası saat 08:00 serum kortizolünün **< 1.8 µg/dL (50 nmol/L)** altına inmemesi otonom kortizol üretimine işaret eder."
+        },
+        {
+          "metin": "• **Yanlış Pozitiflik Sebepleri:** Oral östrojen kullanımı Kortikosteroid Bağlayan Globulin'i (CBG) artırarak serum toplam kortizolünü yapay olarak yükseltir; karbamazepin, fenobarbital veya rifampin gibi CYP3A4 indükleyicileri deksametazon metabolizmasını hızlandırarak testi yanlış pozitif yapabilir."
+        },
+        {
+          "metin": "**Etiyolojik Ayırıcı Tanı Testleri:**"
+        },
+        {
+          "metin": "• **CRH Uyarım Testi:** IV 100 µg (veya 1 µg/kg) CRH enjeksiyonu sonrası plazma **ACTH düzeyinde > %37** ve **serum kortizolünde > %17** artış olması Cushing Hastalığı lehine %97 pozitif prediktif değere sahiptir."
+        },
+        {
+          "metin": "• **Desmopressin (dDAVP) Testi:** Kortikotrop adenomlarda aberran **V2R ve V3R** vasopressin reseptör ekspresyonundan yararlanılır; enjeksiyon sonrası ACTH ve kortizolda belirgin yükselme izlenir."
+        },
+        {
+          "metin": "• **Bilateral İnferior Petrosal Sinüs Örneklemesi (BIPSS - Altın Standart):** Nörogörüntülemede açık adenom saptanamayan (veya < 6 mm lezyonu olan) vakalarda uygulanır."
+        },
+        {
+          "metin": "• **BIPSS Tanısal Kesim Değerleri:** Petrosal/Periferik ACTH oranı **bazal koşulda ≥ 2.0**, **CRH veya dDAVP uyarısı sonrasında ise ≥ 3.0** bulunması Cushing Hastalığını doğrular. Petrosal kanülasyon başarısını doğrulamak için **Petrosal/Periferik Prolaktin Oranı ≥ 1.8** olmalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "C. Prolaktinoma ve Hiperprolaktinemi Tablosu",
+      "satirlar": [
+        {
+          "metin": "**Hook Effect (Kancalama Etkisi):** Dev makroprolaktinomalarda aşırı yüksek prolaktin varlığında immünometrik sandviç assay antikorlarının doygunluğa ulaşması sonucu serum prolaktin düzeyinin **yalancı şekilde düşük veya ılımlı yüksek** ölçülmesidir; dev kitle varlığında **serum 1:100 seyreltilerek (serial dilution)** test tekrarlanmalıdır."
+        },
+        {
+          "metin": "**Sap Etkisi (Stalk Disconnection):** Non-fonksiyonel sellar kitlelerin dopaminerjik iletimi engellemesine bağlı gelişir; prolaktin seviyeleri **genellikle < 150–200 ng/mL** düzeyindedir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Ön Hipofiz Yetersizliği ve Dinamik Test Standartları",
+      "satirlar": []
+    },
+    {
+      "tip": "metin",
+      "baslik": "A. Adrenal Aks (ACTH) Değerlendirmesi",
+      "satirlar": [
+        {
+          "metin": "**Açlık Sabah Kortizolü (08:00–09:00):**"
+        },
+        {
+          "metin": "• **> 13–15 µg/dL (370–415 nmol/L):** Kortikotrop aks sağlam kabul edilir."
+        },
+        {
+          "metin": "• **< 3–5 µg/dL (80–140 nmol/L):** Santral adrenal yetmezlik doğrulanır."
+        },
+        {
+          "metin": "• **3–15 µg/dL Arası:** Dinamik uyarım testi gerektirir."
+        },
+        {
+          "metin": "**İnsülin Tolerans Testi (ITT - Altın Standart):** IV 0.1 U/kg insülin ile semptomatik hipoglisemi (**kan şekeri < 40 mg/dL**) sağlandığında pik kortizolün **≥ 18 µg/dL** olması normal yanıttır."
+        },
+        {
+          "metin": "**Cosyntropin (250 µg ACTH) Testi:** Pik kortizol **< 18 µg/dL** ise yetersizlik kanıtlanır."
+        },
+        {
+          "metin": "• ⚠️ **KRİTİK UYARI:** Pitüiter cerrahi, apopleksi veya travmayı takip eden **ilk 4–6 hafta içinde** adrenal korteks henüz atrofiye uğramadığı için Cosyntropin testi **yalancı normal (false-negative)** yanıt verebilir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "B. Erişkin Büyüme Hormonu Eksikliği (aGHD)",
+      "satirlar": [
+        {
+          "metin": "**Dinamik Test Zorunluluğu Olmayan Durum:** Organik hipofiz/hipotalamus hastalığı olan bir hastada **3 veya daha fazla ön hipofiz hormon eksikliği (panhipopitüitarizm) VE düşük serum IGF-1 düzeyi** bulunuyorsa doğrudan aGHD tanısı konur; uyarım testi yapılmasına gerek yoktur."
+        },
+        {
+          "metin": "**ITT ve Alternatif Test Kesim Değerleri:** ITT sırasında pik GH **< 3 µg/L** olması ağır aGHD göstergesidir. Glukagon testinde obeziteye göre kesim değerleri değişir (BMI < 30 kg/m² için GH < 3 µg/L; BMI > 30 kg/m² için GH < 1 µg/L)."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "baslik": "Hormon Replasman Sıralaması — Hayati Kural",
+      "metin": "Sekonder adrenal yetmezlik ve sekonder hipotiroidizm birlikte bulunduğunda, **Glukokortikoid tedavisi HER ZAMAN Levotiroksin tedavisinden en az 24–48 saat ÖNCE başlanmalıdır**. Levotiroksinin tek başına verilmesi kortizol klirensini hızlandırarak hastayı **akut adrenal krize** sokar. Santral hipotiroidizm takibinde **TSH DÜZEYİ KULLANILMAZ**; doz titrasyonu serum **Serbest T4 (fT4)** seviyesine göre yapılır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Sellar / Parasellar Kitleler ve Hipofizit Spektrumu",
+      "satirlar": []
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Hipofizit Tiplerinin Karşılaştırması",
+      "kolonlar": [
+        "Hipofizit Tipi",
+        "Etiyoloji ve Demografi",
+        "Karakteristik Klinik & MRG Bulguları",
+        "Arka Hipofiz (Diabetes Insipidus / AVP Eksikliği)"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "**Lenfositik Hipofizit**",
+            "Otoimmün; gebe veya postpartum kadınlar baskın.",
+            "Sellar kitle, baş ağrısı, ön hipofiz yetmezliği (özellikle erken ACTH kaybı).",
+            "**Çok Yüksek (> %50–80)**."
+          ]
+        },
+        {
+          "hucreler": [
+            "**İmmün Kontrol Noktası İnhibitörü (ICI) Hipofiziti**",
+            "Anti-CTLA-4 (ipilimumab) veya Anti-PD-1/PD-L1 kullanımı. Erkek ve yaşlı baskın.",
+            "İzole ACTH veya TSH eksikliği; MRG vakaların %25'inde tamamen normaldir.",
+            "**SON DERECE NADİR (< %2–3)**. DI varlığı **metastaz** düşündürmelidir."
+          ]
+        },
+        {
+          "hucreler": [
+            "**IgG4-İlişkili Hipofizit**",
+            "IgG4 plazma hücre infiltrasyonu; otoimmün pankreatit ve retroperitoneal fibrozis eşlik edebilir.",
+            "Serum IgG4 yüksekliği; hipofiz sapı ve bezinde homojen büyüme.",
+            "Sık görülür. Steroid tedavisine yanıtı mükemmeldir."
+          ]
+        },
+        {
+          "hucreler": [
+            "**Anti-PIT1 Hipofiziti**",
+            "Paraneoplastik (Timoma veya nöroendokrin tümörler).",
+            "Ektopik PIT1 ekspresyonuna bağlı sitotoksik yanıt; kazanılmış **izole GH, PRL ve TSH eksikliği triadı**.",
+            "Yoktur (Gonadotrop ve Kortikotrop korunur)."
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Pediatrik / Genetik Etiyoloji ve Transkripsiyon Faktör Mutasyonları",
+      "satirlar": []
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Genetik Hipofiz Yetersizlikleri",
+      "kolonlar": [
+        "Mutasyon",
+        "Eksik Olan Akslar",
+        "Korunan / Ek Özellik"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "POU1F1 (PIT1) Mutasyonu",
+            "GH, PRL, TSH Eksikliği",
+            "ACTH ve Gonadotrop KORUNUR!"
+          ]
+        },
+        {
+          "hucreler": [
+            "PROP1 Mutasyonu",
+            "GH, PRL, TSH Eksikliği + Gonadotrop (LH/FSH)",
+            "+ GEÇ Başlayan ACTH!"
+          ]
+        },
+        {
+          "hucreler": [
+            "TBX19 (TPIT) Mutasyonu",
+            "İZOLE ACTH Eksikliği",
+            "Neonatal Hipoglisemi, Nöbet, Sarılık"
+          ]
+        }
+      ]
+    }
+  ]
+}
