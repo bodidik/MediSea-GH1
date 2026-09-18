@@ -66,6 +66,7 @@ tam basım 120 saniyeyi aşıyordu; parça kipinde tek sayfa ~10 saniye.)
 | 29 | (enfeksiyon) CRKP | crkp-enfeksiyonu (18 KB) | crkp + quiz + 80 kart | BİTTİ (enfeksiyon s. 25–36) |
 | 30 | (endokrin) Erkek osteoporozu | erkek-osteoporozu-ana-sayfa (25 KB), erkek-osteoporozu-testosteron (32 KB) | erkek-osteoporozu + transplantasyon-osteoporozu + quiz | BİTTİ (s. 93–104) |
 | 31 | (onko) Pankreas kanseri | pankreas-kanseri-ana-sayfa + 8 çocuk sayfa (KRAS, SMAD4, ileri tedaviler, RNA aşılar…) | pankreas-kanseri (onko + gastro) + quiz + kart | BİTTİ (s. 11–22) |
+| 32 | (endokrin) Hipofiz hastalıkları — kullanıcı isteği | hipofiz-hastaliklari-ana + kılavuz + adenomlar + prolaktinoma (+4) + akromegali + hipofiz yetmezliği (+6) + Sheehan (+1) + arka hipofiz (+2) | hipofiz-hastaliklari + kesim-degerleri + quiz + 2 kart seti (hipofiz, akromegali) | BİTTİ (s. 105–120) |
 
 **İkinci aday taraması (16 Eyl 03:18):** kuyruk yine bitti; açık + premium eşleşmesi olan yeni konular eklendi. Göğüs hastalıkları premiumunda TKP, HKP, VİP ve akciğer kanseri var ama açık tarafta `canonical/gogus` yalnız sarkoidoz üçlüsünü taşıyor (akciğer kanseri açık sayfası onkolojide) — bu yüzden yalnız sarkoidoz kuyruğa alındı. Erişkin Still hastalığı ve HFpEF premiumda dolu, açık eşleşme yok: elendi.
 
@@ -500,3 +501,34 @@ Açık siteye yeni ileri okuma sayfası girdi: `nefroloji/iga-nefropatisi-yeni-n
 - Kanıt tablosunda APRIL/BAFF, anti-CD38 satırına çalışma adları (ENVISION, VISIONARY, BEYOND · ORIGIN, RUBY-3 · IGNAZ).
 
 Ölçüm: ilk denemede ayrı Tuzak kutusu + spot satırıyla s.18 **15,9 mm taştı**; kutu listeye, spot tabloya alındı → **3,9 mm boş**, 50 sayfanın hiçbirinde taşma yok. Baskı önizlemesi (`--sayfa 18-18`) temiz.
+
+### Tur 32 — (endokrin) Hipofiz hastalıkları · endokrinoloji s. 105–120 (Kısım 12) · kullanıcı isteği (18 Eylül)
+Sayfalar: 105 kısım kapağı · 106–107 açık sayfa (Şekil 13: üç transkripsiyon faktörü, beş hücre soyu; sayılarla; anatomi ve komşuluk; hastalığın üç yolu; sellar kitle ayırıcı tanısı; dinamik testlerin mantığı; tümör tipine göre ilk hamle) · 108 anlatı (PitNET: soylar, sürücü mutasyonlar, agresiflik, agresif prolaktinomanın imzası; kenarda kalıtsal sendromlar) · 109 karar yolu (sellar kitle, insidentaloma, tedavi seçimi, radyasyon seçenekleri) · 110 karar yolu (hiperprolaktinemi: doğrula, dışla, makroPRL/kanca, PRL/hacim oranı, nedenler) · 111 başvuru (prolaktinoma tedavisi, gebelik, kabergolin–kapak, ektopik prolaktin) · 112 karar yolu (akromegali tanı ve tedavi, seçim ipuçları, izlem) · 113 başvuru (akromegalinin sistemik yükü, kemik mekanizması, Cushing hastalığı/TSHoma/gonadotrop, Cushing tanı tuzakları) · 114 anlatı (hipopitüitarizm; Şekil 14: kayıp sırası; genetik yetmezlikler; eksikliğin yüzü) · 115 karar yolu (aks aks testler ve kesimler, ITT, test gerektirmeyen GH eksikliği, zamanlama, ilaçla gelen santral bozukluklar) · 116 başvuru (replasman, başlama sırası, maskelenmiş DI, enfeksiyon ve kriz, özel durumlar) · 117 başvuru (apopleksi, Sheehan, hipofizitler, enfeksiyöz nedenler) · 118 başvuru (diabetes insipidus, su kısıtlama, kopeptin, NDI paradoksları, poliüri ayırıcı tanısı, SIADH kısa) · 119 başvuru (25 senaryoluk vakadan karara) · 120 hızlı tekrar (40 soru).
+Son ölçüm: **endokrin 120 sayfanın hiçbirinde taşma yok**; Kısım 12'de en dolu s.120 (−9 mm), en boş s.116 (−46 mm). Kapak ilk hâlinde +12 mm taşıyordu → kısım içindekileri 14'ten 10 satıra indirildi. İki doldurma turu.
+Kaynaklar: premium `topics/endokrinoloji/hipofiz-hastaliklari` + `hipofiz-kesim-degerleri-ayirici-tani` + `quizzes/…/hipofiz-hastaliklari-quiz-1` + `flashcards/…/hipofiz-hastaliklari` (80) + `flashcards/…/akromegali` (79) · açık `hipofiz-hastaliklari-ana` ve alt ağacı: on-hipofiz-hastaliklari-giris, hipofiz-hastaliklari-klinik-akademik-kilavuz, hipofiz-adenomlari, hiperprolaktinemi-ve-prolaktinoma (+ ektopik-prolaktin-salgisi, prolaktinoma-yeni-biyobelirtecler, sf3b1-mutasyonu-metastatik-prolaktinoma, dopamin-agonistleri-kalp-kapak), akromegali-ve-gigantizm, hipofiz-yetmezligi (+6 alt sayfa), hipopituitarizm-ve-sheehan-sendromu (+ sheehan-sendromu-postpartum-felaket), arka-hipofiz-bozukluklari-di-ve-siadh (+ diabetes-insipidus, kopeptin-ve-ndi-molekuler-analiz).
+**Bilerek dışarıda bırakılan:** SIADH alt ağacı (9 sayfa: siadh-sendromu ve çocukları) — ayrı bir konu olacak büyüklükte; s.118'de yalnız arka hipofiz sayfasındaki kısa özet var. `acth-aksi-ve-cushing-hastaligi` gizli (hidden) olduğu için okunmadı; Cushing ayrıntısı Kısım 4'te.
+
+**Atlanan yapay zeka yer tutucuları ve kusurlar:**
+- Beş açık sayfanın başında "🤖 · ⚠️ Uzman Modülü: Harrison 21st Ed & … referanslıdır/standartlarındadır" bandı (on-hipofiz giriş, hiperprolaktinemi, akromegali, hipopitüitarizm-Sheehan, arka hipofiz, diabetes insipidus).
+- `on-hipofiz-hastaliklari-giris`: "Mikroadenom: Makroadenom: ≥ 10 mm çap." — mikroadenom tanımı düşmüş.
+- `akromegali-ve-gigantizm`: iki yarım cümle ("Normalde glukoz yüklemesi sonrası GH Görüntüleme:" ve "…GH'ın Cerrahi…").
+- `arka-hipofiz-bozukluklari-di-ve-siadh`: "Sıvı Kısıtlaması: İlk basamak tedavidir (Vaptanlar…" parantez kapanmıyor; ODS uyarısı "sodyum artış hızı" diye yarıda bitiyor — düzeltme hızı kitaba alınmadı.
+- `sheehan-sendromu-postpartum-felaket`: "İpucu 2" ve "İpucu 4" var, **İpucu 1 ve 3 kayıp**.
+- `hipofiz-adenomlari`: "Dopaminerjik Resepsör", "ötiroid benzeri kontrol" (prolaktin için yanlış terim) gibi bozuk ifadeler.
+
+Kaynak tutarsızlıkları (kitapta premium kullanıldı):
+- **Hormon kayıp sırası:** premium ve hipofiz-yetmezliği-klinik-tablo "GH → LH/FSH → TSH → ACTH → PRL"; kılavuz ve Sheehan sayfası ACTH'de bitiriyor (PRL yok); hipofiz-adenomlari "gonadotrop → GH → TSH → ACTH" (ilk ikisi yer değiştirmiş). Kitapta premium.
+- **PROP1'de ACTH:** ana sayfanın spot kutusu "yalnızca ACTH korunur", premium ve quiz "geç başlayan ACTH eksikliği". Kitapta premium.
+- **Lenfositik hipofizitte DI:** kılavuz ">%80", premium "%50–80", quiz ">%50". Kitapta %50–80.
+- **ICI hipofiziti sıklığı:** hipofiz-yetmezliği-etiyoloji "%8–13", quiz "anti-CTLA-4 %5,6, anti-PD-1/PD-L1 %0,5–1,1". Kitapta quiz.
+- **Kanca etkisi eşiği:** premium ">1000 ng/mL", açık prolaktinoma sayfası ">5000 ng/mL, tümör >3 cm". Kitapta eşik yazılmadı, yalnız "dev tümör + beklenenden düşük PRL → 1:100 seyrelt".
+- **SF3B1 sıklığı:** premium "prolaktinomaların %20'si", açık sayfa "erkek %24,34, kadın %10,67". İkisi de yazıldı (s.108).
+- **OGTT eşiği:** premium ve kart 8 "≥0,4 µg/L (ultraduyarlı)", akromegali kartı 2 ">1 ng/mL" (geleneksel kit). İkisi ayrı ayrı yazıldı.
+- **IGF-1 >1,3 × üst sınır** yalnız akromegali kart 1'de; premiumda yok. Kitapta "kart setinde verilen eşik" diye işaretlendi (s.112).
+- **Desmopressin testi reseptörü:** premium "V1b ve aberran V2", kesim değerleri sayfası "V2R ve V3R", kart 63 "V2R". Kitaba reseptör adı yazılmadı.
+- **Hidrokortizon dozu:** kılavuz "15–25 mg/gün", replasman sayfası "15–20". Kitapta 15–20.
+- **Lenf nodu, sabah kortizolü nmol/L karşılıkları** sayfalar arasında farklı (80–140 ↔ 50–100 nmol/L); kitapta yalnız µg/dL.
+- **Adenom içi dağılım:** giriş sayfası "prolaktinoma %50", adenomlar sayfası "%32–66". Kitapta %32–66.
+- **Kopeptin:** hipertonik salin ve arjinin testine aynı 4,9 pmol/L eşiği veriliyor; kaynak böyle, kitapta da böyle yazıldı — **kullanıcı kontrol etmeli**.
+
+**Şablon düzeltmesi (tüm bölümler):** `.serit-zincir` içindeki satır içi kalın vurgular da başlık gibi basılıyordu (s.106 önizlemesinde "dopamin"); dokuz dosyaya `.serit-zincir span b` satır içi kuralı eklendi (etkilenen şerit: endokrin 5, hematoloji 3, enfeksiyon 3, onkoloji 2). Şekil 13 oklu şeritten oksuz dört kutuya çevrildi — oklar soyları birbirinden türüyormuş gibi gösteriyordu. Endokrin ve onkoloji yeniden ölçüldü: taşma yok.
