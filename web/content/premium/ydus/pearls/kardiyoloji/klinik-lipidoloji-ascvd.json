@@ -1,0 +1,147 @@
+{
+  "id": "pearl-kar-lipidoloji-001",
+  "accessLevel": "premium",
+  "topic": "Klinik Lipidoloji ve ASCVD Risk Yönetimi",
+  "pearls": [
+    {
+      "id": "p-kar-lip-01",
+      "level": "Klinik",
+      "title": "Aterojenik Partikül Yükü ve ApoB Belirleyiciliği",
+      "content": "Standart lipid panelinde LDL-K veya non-HDL-K hedeflerine ulaşılmış olsa dahi; özellikle insülin direnci, Tip 2 diyabet, kardiyovasküler-böbrek-metabolik (CKM) sendromu veya ılımlı hipertrigliseridemisi olan olgularda ApoB ölçümü, küçük-yoğun LDL ve remnant partikül sayısını doğrudan yansıtır. ApoB, standart hesaplamaların gözden kaçırabileceği rezidüel aterojenik riski ortaya koymada ve ek tedavi intensifikasyonunu yönlendirmede üstün klinik öngörü sunar.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-02",
+      "level": "Klinik",
+      "title": "2026 ACC/AHA Risk Modeli (PREVENT-ASCVD)",
+      "content": "Birincil korumada eski Pooled Cohort Equations (PCE) denklemleri bırakılarak, daha güncel yaklaşık 3.3 milyon bireylik veri setiyle geliştirilmiş **PREVENT-ASCVD denklemleri** kullanılmaktadır. PREVENT modeli, PCE'ye kıyasla %40–50 daha düşük ve kalibre risk tahminleri sunar; 10 yıllık risk eşikleri **%3–&lt;5 (sınırda)**, **%5–&lt;10 (orta)** ve **≥%10 (yüksek)** olarak sınıflandırılır.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-03",
+      "level": "Klinik",
+      "title": "Lipoprotein(a) Nedensel Riski ve Taraması",
+      "content": "Lp(a), kalsifik aort kapağı darlığı ve ASCVD için bağımsız, genetik ve nedensel bir risk faktörüdür; tüm erişkinlerde yaşam boyu **en az bir kez ölçülmesi** önerilir. Plazma Lp(a) düzeyinin **≥50 mg/dL (≥125 nmol/L)** olması kardiyovasküler riski yaklaşık 1.4 kat artırırken; **≥180 mg/dL (≥430 nmol/L)** üzerindeki aşırı değerler Heterozigot Ailesel Hiperkolesterolemi (HeFH) ile eşdeğer (4 kat) bir risk yükü oluşturur.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-04",
+      "level": "Klinik",
+      "title": "Sekonder Korumada Agresif Lipoprotein Hedefleri",
+      "content": "Klinik ASCVD varlığında (özellikle yakın zamanda AKS geçiren veya çok damar hastası olan çok yüksek riskli olgularda), statin ve non-statin kombinasyonları ile **LDL-K &lt;55 mg/dL (1.4 mmol/L)** ve **non-HDL-C &lt;85 mg/dL (2.2 mmol/L)** hedeflerine ulaşılması standart öneridir (opsiyonel ApoB hedefi &lt;55 mg/dL).",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-05",
+      "level": "Klinik",
+      "title": "Nocebo (\"Drucebo\") Etkisi ve Statin İlişkili Kas Semptomları (SAMS)",
+      "content": "Çift kör randomize kontrollü çalışmalarda (RCT) statin ile plasebo grupları arasında kas semptomu görülme sıklığı farkı **&lt;%1** seviyesinde kalırken; açık etiketli gözlemsel çalışmalarda bu oran %10–20'lere ulaşmaktadır. Bu devasa uyumsuzluk, hastaların ilaca bağlı yan etki beklentisinden doğan **nocebo etkisinden** kaynaklanır.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-06",
+      "level": "Klinik",
+      "title": "İmmün-İlişkili Nekrotizan Miyopati (IMNM)",
+      "content": "Anti-HMGCR antikor pozitifliği ile seyreden IMNM, statin kullanımına bağlı gelişen nadir fakat ağır bir otoimmün kas yıkım tablosudur. Statinin kesilmesine (dechallenge) rağmen gerilemeyen, simetrik proksimal kas güçsüzlüğü ve aşırı kreatin kinaz yüksekliği (2.000–20.000 U/L) ile karakterizedir; tedavide steroid, IVIG ve diğer immünosüpresif ajanlar şarttır.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-07",
+      "level": "Klinik",
+      "title": "Bempedoik Asit ve Kas Dokusu Seçiciliği",
+      "content": "ATP-sitrat liyaz (ACLY) inhibitörü bempedoik asit, karaciğerde kolesterol biyosentezini baskılayan bir ön ilaçtır (prodrug). Bempedoik asiti aktif formuna dönüştüren ACSVL1 enzimi karaciğerde bulunurken **iskelet kasında bulunmaz**; bu dokusal seçicilik sayesinde miyosit içi aktivasyon gerçekleşmez ve miyopati riski yaratmaksızın LDL-K düşüşü sağlanır (ürik asit ve gut riskindeki hafif artış izlenmelidir).",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-08",
+      "level": "Klinik",
+      "title": "siRNA Teknolojisi ve İnklisiran",
+      "content": "Hepatik GalNAc-asialoglikoprotein reseptör hedeflemesiyle hücre içine alınan inklisiran, küçük interferans RNA (siRNA) mekanizmasıyla PCSK9 mRNA'sının katalitik yıkımını yönlendirir. Yılda sadece 2 kez enjeksiyonla (başlangıç, 3. ay ve ardından 6 ayda bir) LDL-K düzeylerinde **%48–52 oranında sürdürülebilir bir düşüş** sağlar.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-09",
+      "level": "Klinik",
+      "title": "ANGPTL3 İnhibisyonu ve Evinacumab",
+      "content": "ANGPTL3 proteinine karşı geliştirilen monoklonal antikor evinacumab, LPL aktivasyonunu ve VLDL kalıntı klirensini yönlendirir. Bu etki mekanizması **LDL reseptör fonksiyonundan tamamen bağımsız (LDLR-null)** çalıştığından, dirençli Homozigot Ailesel Hiperkolesterolemi (HoFH) hastalarında LDL-K seviyelerinde %49'a varan ek düşüşler sağlar.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-10",
+      "level": "Klinik",
+      "title": "Ailesel Şilomikronemi Sendromu (FCS) ve Olezarsen",
+      "content": "LPL eksikliğine bağlı aşırı hipertrigliseridemide (TG &gt;1000 mg/dL), LPL üzerindeki baskıyı kaldıran ve hepatik VLDL klirensini artıran ApoC-III antisens oligonükleotidi **olezarsen**, şilomikronemi tablosunu düzelterek akut pankreatit atağını önlemede Sınıf 1 öneriyle onay almıştır.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-11",
+      "level": "Klinik",
+      "title": "Hipertrigliseridemik Pankreatit ve Şilomikronemi Eşiği",
+      "content": "Açlık serum trigliserit düzeylerinin &gt;500 mg/dL'yi ve özellikle &gt;1000 mg/dL'yi aşması pankreatit riskini eksponansiyel olarak artırır. Pankreatik mikrokapiller yatakta pankreatik lipaz ile aşırı hidrolize uğrayan trigliseritlerden açığa çıkan serbest yağ asitleri (FFA) ve lizolesitin, asiner hücre nekrozunu ve lokal asidozu tetikleyerek kimyasal pankreatiti başlatır.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-12",
+      "level": "Klinik",
+      "title": "Akut Hipertrigliseridemi Pankreatitinde Heparin Riski",
+      "content": "Heparin, vasküler endoteldeki heparan sülfata bağlı LPL'yi dolaşıma salarak akut dönemde TG düşüşü sağlasa da, enzimin hızla hepatik klirense uğraması sonucu **endotelyal LPL depolarının tükenmesine (deplesyon)** ve saatler içinde **rebound hipertrigliseridemiye** yol açabilir; bu nedenle standart rutin kılavuz protokollerinde önerilmez.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-13",
+      "level": "Klinik",
+      "title": "İntravenöz İnsülin ve LPL Ekspresyonu",
+      "content": "Akut HTG pankreatitinde IV insülin infüzyonu, lüminal LPL gen ekspresyonunu uyarırken adipoz dokudaki Hormona Duyarlı Lipazı (HSL) inhibe ederek periferden karaciğere FFA akışını keser. Kan glikoz düzeyi &lt;200 mg/dL'ye gerilediğinde LPL stimülasyonunu sürdürmek için insülin kesilmemeli; dekstroz eklenerek TG &lt;500 mg/dL olana kadar titrasyona devam edilmelidir.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-14",
+      "level": "Klinik",
+      "title": "Statinler ve Periferik Nöropati Nedenselliği",
+      "content": "Randomize kontrollü çalışmalar ve geniş metodolojik epidemiyolojik analizler, statin kullanımı ile idiyopatik periferik nöropati arasında **nedensel bir ilişki saptamamıştır**. Statin kullanan grupta gözlenen nöropatik semptomlar, ilacın kendisinden ziyade hastaların zeminindeki diyabet, obezite ve metabolik sendrom komorbiditelerinden kaynaklanmaktadır.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-15",
+      "level": "Klinik",
+      "title": "Ezetimib ve Bağırsak Sterol Blokajı",
+      "content": "Enterosit fırçamsı kenarındaki Niemann-Pick C1-Like 1 (NPC1L1) transporterını seçici olarak bloke eden ezetimib, diyet ve biliyer kolesterol emilimini durdurur. Statin tedavisine eklendiğinde ek %15–25 oranında LDL-K düşüşü ve MACE azalması (IMPROVE-IT) sağlar; orta ve ağır karaciğer yetmezliğinde kullanımı önerilmez.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-16",
+      "level": "Klinik",
+      "title": "Nütrasötiklerin Lipid Etkinliği ve Kırmızı Maya Pirinci (RYR)",
+      "content": "Network meta-analiz verilerine göre plaseboya kıyasla lipid profili üzerinde en güçlü düşüşü sağlayan nütrasötikler Red Yeast Rice (Monakolin K / lovastatin eşdeğeri) ve Bergamot'tur. Ancak 2026 ACC/AHA kılavuzu, içerik standart kısıtlılığı ve tutarsız klinik veriler nedeniyle besinsel takviyelerin dislipidemi tedavisinde kullanımını kesinlikle önermemektedir (COR 3).",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-17",
+      "level": "Klinik",
+      "title": "Diyabetik Popülasyonda İkosapent Etil (REDUCE-IT)",
+      "content": "Statin altında LDL-C hedeflerine ulaşılmasına rağmen persistan hipertrigliseridemisi (150–499 mg/dL) devam eden ASCVD'li veya diyabetli yüksek riskli olgularda günde 4 gram saf EPA (İkosapent etil), kardiyovasküler olay (MACE) riskini plaseboya kıyasla **%25 oranında** azaltır.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-18",
+      "level": "Klinik",
+      "title": "Koroner Arter Kalsiyum (CAC) Skoru ile Re-klasifikasyon",
+      "content": "CAC skoru = 0 AU olan bireylerde (diyabet, sigara veya FH yoksa) statin tedavisi 3–7 yıl ertelenebilirken; **CAC ≥1000 AU** varlığı klinik ASCVD sekonder koruma eşdeğeri kabul edilir ve hedef **LDL-K &lt;55 mg/dL** olarak belirlenir.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-19",
+      "level": "Klinik",
+      "title": "Fibrat Seçiminde Miyopati ve DDI Güvenliği",
+      "content": "Fibrat grubu moleküllerden fenofibrat, glukuronidasyon yolağındaki farklılık nedeniyle statinlerle kombine edildiğinde miyopati ve ilaç etkileşimi riski en düşük seçenektir; gemfibrozil ise OATP1B1 ve CYP2C8 inhibisyonu nedeniyle statinlerle kesinlikle kombine edilmemelidir.",
+      "trigger": "Lipidoloji"
+    },
+    {
+      "id": "p-kar-lip-20",
+      "level": "Klinik",
+      "title": "Lp(a) Düşürmede Gelecek Ufku (RNA Susturma Terapileri)",
+      "content": "Geleneksel lipid düşürücülerin Lp(a) üzerinde belirgin etkisi yokken; GalNAc konjuge antisens oligonükleotid (**Pelacarsen**) ve siRNA (**Olpasiran, SLN360**) molekülleri hepatik Apo(a) translasyonunu engelleyerek plazma Lp(a) düzeylerinde **%80–95 oranında dramatik baskılanma** sağlar.",
+      "trigger": "Lipidoloji"
+    }
+  ]
+}
