@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "id": "hipopituitarizm",
+    "branch": "endokrinoloji",
+    "baslik": "Hipofiz Yetmezliği (Hipopitüitarizm)",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-09"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": true,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "icerik": []
+}
