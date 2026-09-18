@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "ACR/EULAR 2022 Dev Hücreli Arterit — GCA sınıflama",
-  description: "ACR/EULAR 2022 Dev Hücreli Arterit: GCA sınıflama kriterleri — klinik, laboratuvar, görüntüleme, biyopsi (≥ 6). Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/dev-hucreli-arterit" },
+  title: "ACR/EULAR 2023 APS Kriterleri — Antifosfolipid sendromu",
+  description: "ACR/EULAR 2023 APS Kriterleri: Antifosfolipid sendromu sınıflaması — klinik ≥ 3 ve laboratuvar ≥ 3 puan. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/aps-2023" },
   openGraph: {
     type: "website",
-    title: "ACR/EULAR 2022 Dev Hücreli Arterit — GCA sınıflama",
-    description: "ACR/EULAR 2022 Dev Hücreli Arterit: GCA sınıflama kriterleri — klinik, laboratuvar, görüntüleme, biyopsi (≥ 6). Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/dev-hucreli-arterit",
+    title: "ACR/EULAR 2023 APS Kriterleri — Antifosfolipid sendromu",
+    description: "ACR/EULAR 2023 APS Kriterleri: Antifosfolipid sendromu sınıflaması — klinik ≥ 3 ve laboratuvar ≥ 3 puan. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/aps-2023",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "ACR/EULAR 2022 Dev Hücreli Arterit",
-          aciklama: "ACR/EULAR 2022 Dev Hücreli Arterit: GCA sınıflama kriterleri — klinik, laboratuvar, görüntüleme, biyopsi (≥ 6). Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/dev-hucreli-arterit",
+          ad: "ACR/EULAR 2023 APS Kriterleri",
+          aciklama: "ACR/EULAR 2023 APS Kriterleri: Antifosfolipid sendromu sınıflaması — klinik ≥ 3 ve laboratuvar ≥ 3 puan. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/aps-2023",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "ACR/EULAR 2022 Dev Hücreli Arterit", yol: "/tools/dev-hucreli-arterit" },
+          { ad: "ACR/EULAR 2023 APS Kriterleri", yol: "/tools/aps-2023" },
         ])}
       />
       {children}
@@ -42,11 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Romatoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/aps-2023" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ACR/EULAR 2023 APS Kriterleri
-              </Link>
-            </li>
             <li>
               <Link href="/tools/asas-axspa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 ASAS Aksiyel SpA Kriterleri
@@ -70,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/caspar" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 CASPAR Kriterleri
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/cdai" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                CDAI
               </Link>
             </li>
           </ul>

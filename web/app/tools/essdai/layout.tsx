@@ -48,6 +48,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
+              <Link href="/tools/miyozit-2017" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                EULAR/ACR 2017 Miyozit Kriterleri
+              </Link>
+            </li>
+            <li>
               <Link href="/tools/sle-2019" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 EULAR/ACR 2019 SLE Kriterleri
               </Link>
@@ -58,18 +63,13 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
+              <Link href="/tools/ffs-2009" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Five Factor Score (2009)
+              </Link>
+            </li>
+            <li>
               <Link href="/tools/gout-acr" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Gut ACR 2015
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/haq-di" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                HAQ-DI
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/mrss" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                mRSS
               </Link>
             </li>
           </ul>

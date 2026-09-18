@@ -68,8 +68,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/tools/sle-2019" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                EULAR/ACR 2019 SLE Kriterleri
+              <Link href="/tools/miyozit-2017" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                EULAR/ACR 2017 Miyozit Kriterleri
               </Link>
             </li>
           </ul>

@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "EULAR/ACR 2019 SLE Kriterleri — ANA giriş kriteri",
-  description: "EULAR/ACR 2019 SLE Kriterleri: ANA giriş kriteri, ağırlıklı klinik ve immünolojik alanlar (≥ 10). Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/sle-2019" },
+  title: "Five Factor Score (2009) — Sistemik nekrotizan",
+  description: "Five Factor Score (2009): Sistemik nekrotizan vaskülitlerde 5 yıllık mortalite — PAN, MPA, GPA, EGPA. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/ffs-2009" },
   openGraph: {
     type: "website",
-    title: "EULAR/ACR 2019 SLE Kriterleri — ANA giriş kriteri",
-    description: "EULAR/ACR 2019 SLE Kriterleri: ANA giriş kriteri, ağırlıklı klinik ve immünolojik alanlar (≥ 10). Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/sle-2019",
+    title: "Five Factor Score (2009) — Sistemik nekrotizan",
+    description: "Five Factor Score (2009): Sistemik nekrotizan vaskülitlerde 5 yıllık mortalite — PAN, MPA, GPA, EGPA. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/ffs-2009",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "EULAR/ACR 2019 SLE Kriterleri",
-          aciklama: "EULAR/ACR 2019 SLE Kriterleri: ANA giriş kriteri, ağırlıklı klinik ve immünolojik alanlar (≥ 10). Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/sle-2019",
+          ad: "Five Factor Score (2009)",
+          aciklama: "Five Factor Score (2009): Sistemik nekrotizan vaskülitlerde 5 yıllık mortalite — PAN, MPA, GPA, EGPA. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/ffs-2009",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "EULAR/ACR 2019 SLE Kriterleri", yol: "/tools/sle-2019" },
+          { ad: "Five Factor Score (2009)", yol: "/tools/ffs-2009" },
         ])}
       />
       {children}
@@ -42,16 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Romatoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/fibromiyalji" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Fibromiyalji 2016
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/ffs-2009" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Five Factor Score (2009)
-              </Link>
-            </li>
             <li>
               <Link href="/tools/gout-acr" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Gut ACR 2015
@@ -70,6 +60,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/rapid3" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 RAPID3
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/sdai" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                SDAI
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/sle" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                SLEDAI-2K
               </Link>
             </li>
           </ul>

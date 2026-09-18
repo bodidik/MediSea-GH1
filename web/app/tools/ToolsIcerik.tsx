@@ -81,6 +81,9 @@ const TOOLS_DATABASE = [
       { slug: "sjogren-2016", name: "ACR/EULAR 2016 Sjögren Kriterleri", desc: "Primer Sjögren sınıflaması — biyopsi, anti-SSA, kuruluk testleri (≥ 4)" },
       { slug: "anca-vaskulit", name: "ACR/EULAR 2022 ANCA Vaskülitleri", desc: "GPA, MPA ve EGPA sınıflama kriterleri aynı bulgulardan" },
       { slug: "yamaguchi", name: "Yamaguchi Kriterleri", desc: "Erişkin başlangıçlı Still hastalığı — majör, minör ve dışlama kriterleri" },
+      { slug: "ffs-2009", name: "Five Factor Score (2009)", desc: "Sistemik nekrotizan vaskülitlerde 5 yıllık mortalite — PAN, MPA, GPA, EGPA" },
+      { slug: "aps-2023", name: "ACR/EULAR 2023 APS Kriterleri", desc: "Antifosfolipid sendromu sınıflaması — klinik ≥ 3 ve laboratuvar ≥ 3 puan" },
+      { slug: "miyozit-2017", name: "EULAR/ACR 2017 Miyozit Kriterleri", desc: "İdiyopatik inflamatuvar miyopati olasılığı — biyopsili ve biyopsisiz ağırlıklar" },
     ]
   },
   {

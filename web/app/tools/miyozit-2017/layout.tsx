@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "EULAR/ACR 2012 PMR Kriterleri — Polimiyalji romatika",
-  description: "EULAR/ACR 2012 PMR Kriterleri: Polimiyalji romatika sınıflaması — ultrasonsuz ≥ 4, ultrasonla ≥ 5. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/pmr-2012" },
+  title: "EULAR/ACR 2017 Miyozit Kriterleri — İdiyopatik",
+  description: "EULAR/ACR 2017 Miyozit Kriterleri: İdiyopatik inflamatuvar miyopati olasılığı — biyopsili ve biyopsisiz ağırlıklar. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/miyozit-2017" },
   openGraph: {
     type: "website",
-    title: "EULAR/ACR 2012 PMR Kriterleri — Polimiyalji romatika",
-    description: "EULAR/ACR 2012 PMR Kriterleri: Polimiyalji romatika sınıflaması — ultrasonsuz ≥ 4, ultrasonla ≥ 5. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/pmr-2012",
+    title: "EULAR/ACR 2017 Miyozit Kriterleri — İdiyopatik",
+    description: "EULAR/ACR 2017 Miyozit Kriterleri: İdiyopatik inflamatuvar miyopati olasılığı — biyopsili ve biyopsisiz ağırlıklar. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/miyozit-2017",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "EULAR/ACR 2012 PMR Kriterleri",
-          aciklama: "EULAR/ACR 2012 PMR Kriterleri: Polimiyalji romatika sınıflaması — ultrasonsuz ≥ 4, ultrasonla ≥ 5. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/pmr-2012",
+          ad: "EULAR/ACR 2017 Miyozit Kriterleri",
+          aciklama: "EULAR/ACR 2017 Miyozit Kriterleri: İdiyopatik inflamatuvar miyopati olasılığı — biyopsili ve biyopsisiz ağırlıklar. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/miyozit-2017",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "EULAR/ACR 2012 PMR Kriterleri", yol: "/tools/pmr-2012" },
+          { ad: "EULAR/ACR 2017 Miyozit Kriterleri", yol: "/tools/miyozit-2017" },
         ])}
       />
       {children}
@@ -42,11 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Romatoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/miyozit-2017" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                EULAR/ACR 2017 Miyozit Kriterleri
-              </Link>
-            </li>
             <li>
               <Link href="/tools/sle-2019" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 EULAR/ACR 2019 SLE Kriterleri
@@ -70,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/haq-di" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 HAQ-DI
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/mrss" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                mRSS
               </Link>
             </li>
           </ul>

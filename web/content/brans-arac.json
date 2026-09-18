@@ -641,6 +641,21 @@
     "slug": "yamaguchi",
     "name": "Yamaguchi Kriterleri",
     "icon": "🦴"
+   },
+   {
+    "slug": "ffs-2009",
+    "name": "Five Factor Score (2009)",
+    "icon": "🦴"
+   },
+   {
+    "slug": "aps-2023",
+    "name": "ACR/EULAR 2023 APS Kriterleri",
+    "icon": "🦴"
+   },
+   {
+    "slug": "miyozit-2017",
+    "name": "EULAR/ACR 2017 Miyozit Kriterleri",
+    "icon": "🦴"
    }
   ]
  },

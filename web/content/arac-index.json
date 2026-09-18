@@ -80,6 +80,11 @@
   "desc": "AST/trombosit oranı — anlamlı fibroz ve siroz için ayrı eşikler"
  },
  {
+  "slug": "aps-2023",
+  "name": "ACR/EULAR 2023 APS Kriterleri",
+  "desc": "Antifosfolipid sendromu sınıflaması — klinik ≥ 3 ve laboratuvar ≥ 3 puan"
+ },
+ {
   "slug": "aria-rinit",
   "name": "ARIA Rinit Sınıflaması",
   "desc": "Allerjik rinit — intermitan/persistan × hafif/orta-ağır"
@@ -353,6 +358,11 @@
   "slug": "essdai",
   "name": "ESSDAI",
   "desc": "Sjögren Hastalık Aktivite İndeksi — 12 ekstraglandüler domain"
+ },
+ {
+  "slug": "ffs-2009",
+  "name": "Five Factor Score (2009)",
+  "desc": "Sistemik nekrotizan vaskülitlerde 5 yıllık mortalite — PAN, MPA, GPA, EGPA"
  },
  {
   "slug": "fib-4",
@@ -678,6 +688,11 @@
   "slug": "mini-cog",
   "name": "Mini-Cog",
   "desc": "Bilişsel tarama — üç kelime hatırlama + saat çizme (0–5)"
+ },
+ {
+  "slug": "miyozit-2017",
+  "name": "EULAR/ACR 2017 Miyozit Kriterleri",
+  "desc": "İdiyopatik inflamatuvar miyopati olasılığı — biyopsili ve biyopsisiz ağırlıklar"
  },
  {
   "slug": "mmrc",
