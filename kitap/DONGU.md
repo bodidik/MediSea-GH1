@@ -65,11 +65,12 @@ tam basım 120 saniyeyi aşıyordu; parça kipinde tek sayfa ~10 saniye.)
 | 27 | (enfeksiyon) İnvaziv fungal enfeksiyonlar | invazive-mantar-enfeksiyon (36 KB), mantar-enfeksiyon-ana-sayfa (13 KB) | invaziv-fungal-enfeksiyonlar + quiz | BİTTİ (enfeksiyon s. 13–24) |
 | 28 | (endokrin) Feokromositoma ve paraganglioma | feokromositoma-ve-paraganglioma (25 KB) | feokromositoma + quiz | BİTTİ (endokrin s. 81–92) |
 | 29 | (enfeksiyon) CRKP | crkp-enfeksiyonu (18 KB) | crkp + quiz + 80 kart | BİTTİ (enfeksiyon s. 25–36) |
-| 30 | (endokrin) Erkek osteoporozu | erkek-osteoporozu-ana-sayfa (25 KB), erkek-osteoporozu-testosteron (32 KB) | erkek-osteoporozu + transplantasyon-osteoporozu + quiz | BİTTİ (s. 93–104) |
+| 30 | (endokrin) Erkek osteoporozu | erkek-osteoporozu-ana-sayfa (25 KB), erkek-osteoporozu-testosteron (32 KB) | erkek-osteoporozu + transplantasyon-osteoporozu + quiz | BİTTİ (o gün s. 93–104; şimdi s. 103–114) |
 | 31 | (onko) Pankreas kanseri | pankreas-kanseri-ana-sayfa + 8 çocuk sayfa (KRAS, SMAD4, ileri tedaviler, RNA aşılar…) | pankreas-kanseri (onko + gastro) + quiz + kart | BİTTİ (s. 11–22) |
-| 32 | (endokrin) Hipofiz hastalıkları — kullanıcı isteği | hipofiz-hastaliklari-ana + kılavuz + adenomlar + prolaktinoma (+4) + akromegali + hipofiz yetmezliği (+6) + Sheehan (+1) + arka hipofiz (+2) | hipofiz-hastaliklari + kesim-degerleri + quiz + 2 kart seti (hipofiz, akromegali) | BİTTİ (s. 105–120) |
-| 33 | (endokrin) Hipopitüitarizm genişletme + TEMD kutuları — kullanıcı isteği | hipofiz-yetmezligi alt ağacı | TEMD 2022 kılavuzu (Bölüm 6, 7, 12) | BİTTİ (o gün s. 114–121; şimdi s. 118–125) |
-| 34 | (endokrin) Prolaktinoma ve akromegali TEMD kutuları — kullanıcı isteği | — | TEMD 2022 kılavuzu (Bölüm 1a, 1b) | BİTTİ (s. 114–117; kısım 105–128) |
+| 32 | (endokrin) Hipofiz hastalıkları — kullanıcı isteği | hipofiz-hastaliklari-ana + kılavuz + adenomlar + prolaktinoma (+4) + akromegali + hipofiz yetmezliği (+6) + Sheehan (+1) + arka hipofiz (+2) | hipofiz-hastaliklari + kesim-degerleri + quiz + 2 kart seti (hipofiz, akromegali) | BİTTİ (o gün s. 105–120; kısım şimdi s. 115–138) |
+| 33 | (endokrin) Hipopitüitarizm genişletme + TEMD kutuları — kullanıcı isteği | hipofiz-yetmezligi alt ağacı | TEMD 2022 kılavuzu (Bölüm 6, 7, 12) | BİTTİ (o gün s. 114–121; şimdi s. 128–135) |
+| 34 | (endokrin) Prolaktinoma ve akromegali TEMD kutuları — kullanıcı isteği | — | TEMD 2022 kılavuzu (Bölüm 1a, 1b) | BİTTİ (o gün s. 114–117; şimdi s. 124–127) |
+| 35 | (endokrin) Tiroid kısımlarına "TEMD'de ne var" — kullanıcı isteği | — | TEMD 2025 tiroid kılavuzu (tiroid2025_11042025.pdf) | BİTTİ (s. 13–14, 24–25, 34–35, 87–89; bölüm 138 sayfa) |
 
 **İkinci aday taraması (16 Eyl 03:18):** kuyruk yine bitti; açık + premium eşleşmesi olan yeni konular eklendi. Göğüs hastalıkları premiumunda TKP, HKP, VİP ve akciğer kanseri var ama açık tarafta `canonical/gogus` yalnız sarkoidoz üçlüsünü taşıyor (akciğer kanseri açık sayfası onkolojide) — bu yüzden yalnız sarkoidoz kuyruğa alındı. Erişkin Still hastalığı ve HFpEF premiumda dolu, açık eşleşme yok: elendi.
 
@@ -580,3 +581,24 @@ Yazım düzeltmesi: "en sığı" → "en sık görüleni" (s.114; aynı hata Tur
 - **IGF-1 hedefi:** TEMD "üst sınırın en çok 1,2–1,3 katı"; kart 1 "tanıda >1,3 × üst sınır" — biri hedef, biri tanı eşiği; karıştırılmamalı.
 - **Cerrahi remisyon:** TEMD "GH <0,4 µg/L cerrahi remisyon, <1 µg/L kontrol"; premium remisyonu OGTT nadir GH <0,4 + normal IGF-1 ile tanımlıyor.
 - **Kanca etkisi eşiği** (Tur 32'deki çelişki): TEMD dev prolaktinomada "PRL genellikle >1000 ng/mL" diyor; açık sayfanın ">5000" değeri TEMD'de yok.
+
+### Tur 35 — (endokrin) Tiroid kısımlarına "TEMD'de ne var" · kullanıcı isteği (18 Eylül)
+Kaynak: TEMD 2025 Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu (tiroid2025_11042025.pdf) — Bölüm 1 (TFT), 7 (hipotiroidi), 9 (hipertiroidi), 10 (subklinik hipertiroidi), tiroiditler, TDHS, ilaç-tiroid, gebelik bölümleri ve bölüm sonu özetleri.
+Bölüm **128 → 138 sayfa**. Eşleme: eski 1–12 aynı · 13–21 +2 · 22 (NOTLAR) → 26 · 23–29 +4 · 30 (NOTLAR) → 36 · 31–80 +6 · 81–128 +10. Folyo, yorum, kapak içindekileri ve iç göndermeler (s. 37, 45, 73, 121, 124, 126, 131–132, 134) güncellendi; sayfa-folyo tutarlılığı ölçüldü (138/138).
+- **Kısım 1** (+2): **13** tiroid testleri — tarama, TSH/sT4 ölçümü, antikor/TRAb/Tg, biyotin, RAIU ayırıcı tanı tablosu, TSH × serbest hormon örüntü tablosu · **14** subklinik hipertiroidi tablosu (derece, ayırıcı tanı, seyir, kime tedavi), TDHS tablosu, İKİ/TKİ, lityum, hormon direnci, iyotlu kontrast, izlem kutuları.
+- **Kısım 2** (+2, NOTLAR korundu → s. 26): **24** tarama tablosu, LT4 şeması (doz, başlangıç, titrasyon, yaşa göre TSH hedefi), subklinik hipotiroidi · **25** tiroiditler, hipotiroidinin yüzü, miksödem koması tablosu, yaşlı hasta, sevk ölçütleri.
+- **Kısım 3** (+2, NOTLAR korundu → s. 36): **34** gebelikte hipotiroidi (sınırlar, tarama algoritması, doz artışı, izlem, iyot), hCG aracılı hipertiroidi · **35** laboratuvar yorumu, ATİ seçimi/doz/teratojenite/hedef, özel durumlar, postpartum tiroidit.
+- **Kısım 9** (+3 + yeni NOTLAR s. 90): **87** Graves ATİ, tedavi seçimi tablosu (ATİ/RAI/cerrahi: kime, kontrendikasyon), yan etki tablosu · **88** RAI, cerrahi, toksik MNG/adenom, fırtına · **89** orbitopati (KAS, RAI profilaksisi, IV MP şeması, 2. basamak, DON), amiodaron tip 1/2.
+İlk yerleşim 12 sayfaydı ve sayfalar 70–130 mm boştu → yeniden paketlendi (Kısım 2 ve 3 iki sayfa + mevcut NOTLAR, Kısım 9 üç sayfa + NOTLAR). s.13 +9 mm taştı → üç kutu s.14'e; s.87 +12 mm taştı → tedavi seçimi tablosu kısaltıldı. Son ölçüm: **138 sayfanın hiçbirinde taşma yok**; en boş s.14 (−30 mm).
+Büyük harf dönüşümü kutu başlığındaki β'yı "B" yapıyordu → `.nu` sarmalandı (s.35).
+Ölçüm notu: sayfa kaydırılmışken ölçülünce düzenleyicinin `position: fixed` ögesi s.1–12'de sahte binlerce mm taşma verdi; ölçüm betiği artık sabit konumlu ögeleri eliyor ve `scrollTo(0,0)` ile başlıyor.
+Alınmayan: Tablo 1.5'in sütunları PDF'ten kaymış çıktı; kitaba yalnız hücre sınırı açık okunan satırlar kondu. Nodül, kanser, iyot eksikliği ve çocuk bölümleri bu turun kapsamı dışında (kitapta karşılık gelen kısım yok).
+
+**Tutarsızlıklar (kitapta TEMD kutu içinde, ötekisi kendi sayfasında):**
+- **Fırtınada iyot zamanlaması:** kitabın mevcut altın kuralı (s.1–12, açık/premium) "ATİ'den en az 1 saat sonra"; TEMD fırtına bölümü "en az 30 dk sonra", TEMD bölüm özeti "en az 1 saat". TEMD kutusunda yalnız "tiyonamidden sonra" yazıldı.
+- **Fırtına dozları (TEMD kendi içinde):** bölüm metni PTU 600–1500 mg/gün (500–1000 yükleme + 4 saatte 250), MMI 80–120 mg/gün, lugol 6 saatte 8 damla; bölüm özeti PTU 200–400 mg 6–8 saatte, MMI 20–25 mg 6 saatte, SSKİ 3–5 damla, lugol 4–8 damla. Kitapta bölüm metni.
+- **LT4 dozu (TEMD kendi içinde):** özet 1,2–1,8 µg/kg/gün, metin 1,2–1,6 (≈75–100 µg) — ikisi de yazıldı, bağlamıyla.
+- **Gebelik ve iyot (TEMD kendi içinde):** gebelik bölümü 250 µg/gün (tuz kısıtlıda 200 µg ek); iyot bölümü gebe 220, emziren 290 µg/gün; izole hipotiroksinemide "ülkemizde 100–150 µg". Kitapta 250 ve 100–150.
+- **Postpartum tiroidit (TEMD kendi içinde):** tiroiditler bölümü "%5–10 kalıcı hipotiroidi" (s.25); gebelik bölümü "gebeliklerin %8–10'u, %5 kalıcı" (s.35).
+- **Subklinik hipertiroidi tedavi eşiği:** TEMD metni "≥65 yaş herkese tedavi"; aynı bölümün Şekil 10.1'i ≥65 yaşı yalnız TSH 0,1–0,4 dalında ölçüt olarak sayıyor. Kitapta şekil izlendi (TSH <0,1 herkese; 0,1–0,4'te ≥65 yaş ölçütlerden biri).
+- **Gebelikte ATİ geçişi:** uyumlu — TEMD ve Kısım 3 "16. haftadan sonra MMI"; Kısım 1 anlatısı (s.1–12) "ikinci trimesterde" diyor, aynı anlam.
