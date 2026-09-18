@@ -68,7 +68,8 @@ tam basım 120 saniyeyi aşıyordu; parça kipinde tek sayfa ~10 saniye.)
 | 30 | (endokrin) Erkek osteoporozu | erkek-osteoporozu-ana-sayfa (25 KB), erkek-osteoporozu-testosteron (32 KB) | erkek-osteoporozu + transplantasyon-osteoporozu + quiz | BİTTİ (s. 93–104) |
 | 31 | (onko) Pankreas kanseri | pankreas-kanseri-ana-sayfa + 8 çocuk sayfa (KRAS, SMAD4, ileri tedaviler, RNA aşılar…) | pankreas-kanseri (onko + gastro) + quiz + kart | BİTTİ (s. 11–22) |
 | 32 | (endokrin) Hipofiz hastalıkları — kullanıcı isteği | hipofiz-hastaliklari-ana + kılavuz + adenomlar + prolaktinoma (+4) + akromegali + hipofiz yetmezliği (+6) + Sheehan (+1) + arka hipofiz (+2) | hipofiz-hastaliklari + kesim-degerleri + quiz + 2 kart seti (hipofiz, akromegali) | BİTTİ (s. 105–120) |
-| 33 | (endokrin) Hipopitüitarizm genişletme + TEMD kutuları — kullanıcı isteği | hipofiz-yetmezligi alt ağacı | TEMD 2022 kılavuzu (Bölüm 6, 7, 12) | BİTTİ (s. 114–121; kısım 105–124) |
+| 33 | (endokrin) Hipopitüitarizm genişletme + TEMD kutuları — kullanıcı isteği | hipofiz-yetmezligi alt ağacı | TEMD 2022 kılavuzu (Bölüm 6, 7, 12) | BİTTİ (o gün s. 114–121; şimdi s. 118–125) |
+| 34 | (endokrin) Prolaktinoma ve akromegali TEMD kutuları — kullanıcı isteği | — | TEMD 2022 kılavuzu (Bölüm 1a, 1b) | BİTTİ (s. 114–117; kısım 105–128) |
 
 **İkinci aday taraması (16 Eyl 03:18):** kuyruk yine bitti; açık + premium eşleşmesi olan yeni konular eklendi. Göğüs hastalıkları premiumunda TKP, HKP, VİP ve akciğer kanseri var ama açık tarafta `canonical/gogus` yalnız sarkoidoz üçlüsünü taşıyor (akciğer kanseri açık sayfası onkolojide) — bu yüzden yalnız sarkoidoz kuyruğa alındı. Erişkin Still hastalığı ve HFpEF premiumda dolu, açık eşleşme yok: elendi.
 
@@ -556,3 +557,26 @@ Son ölçüm: **endokrin 124 sayfanın hiçbirinde taşma yok**; en boş s.119 (
 - **Kayıp sırası:** TEMD "GH, FSH, LH, TSH, ACTH" (PRL yok) — premium PRL'yi sona ekliyor. Tur 32 notuna eklenir.
 - **ACTH testi yolu:** premium "IV/IM"; TEMD "IV öneriyoruz".
 - TEMD Tablo 7.1 (kalıtsal nedenler) PDF'ten sütunları kaymış çıktı; hangi genin hangi hormona karşılık geldiği güvenle okunamadığı için **kitaba alınmadı**.
+
+### Tur 34 — (endokrin) Prolaktinoma ve akromegali için "TEMD'de ne var" · endokrinoloji s. 114–117 · kullanıcı isteği (18 Eylül)
+Kaynak: TEMD 2022 hipofiz kılavuzu, Bölüm 1a (Hiperprolaktinemi ve prolaktinoma) ve 1b (Akromegali).
+Mevcut sayfalarda yalnız 16–23 mm boşluk olduğu için **dört yeni sayfa** eklendi; kısım 20 → **24 sayfa** (s. 105–128), eski 114–124 → 118–128 (folyo, yorum, kapak içindekileri, iç göndermeler "s. 121–122" ve "s. 124" güncellendi; sayfa-folyo tutarlılığı ölçüldü).
+- **114** Prolaktinoma: tanı — PRL düzeyine göre olası neden tablosu, TEMD neden tablosu (fizyolojik, sistemik, hipotalamus-sap, hipofizer, ilaç), 13 TEMD kutusu (normal ve eşik, ölçüm, kime bakılır, makroprolaktinemi PEG eşikleri, idiyopatik, ilaca bağlı 3 gün kuralı, dinamik testler önerilmez, epidemiyoloji, MR ve görme alanı, kadında/erkekte klinik, kemik).
+- **115** Prolaktinoma: tedavi, izlem, gebelik — 15 TEMD kutusu (KAB, BRC ve kinagolid dozları, başarı ve direnç tanımı, EKO, dürtü kontrolü ve rinore, izlem, tedavisiz izlem, ilacı kesme, cerrahi ve RT, dev ve agresif/temozolomid, gebelikte büyüme riski ve izlem, erkek mikroprolaktinoma, idiyopatikte DA, ilaç/cerrahi kararı) + mikro/makro gebelik karşılaştırma tablosu.
+- **116** Akromegali: tanı ve hedefler — 15 TEMD kutusu + yedi tedavi hedefi tablosu.
+- **117** Akromegali: tedavi, izlem, gebelik — 18 TEMD kutusu (cerrahi, ameliyat sonrası, kür, SRL doz ve yanıt, pasireotid ruhsatsız, pegvisomant, kabergolin, RT, kolonoskopi aralıkları, öteki taramalar, gebelik, merkez, fertilite).
+Mevcut sayfalara kısa yönlendirme kutuları: s.110 (TEMD eşik farkı → s.114), s.112 (TEMD hedef → s.116–117).
+Son ölçüm: **endokrin 128 sayfanın hiçbirinde taşma yok**; s.114 tam dolu (−0,x mm), en boş s.116 (−35 mm). s.114 ilk hâlinde +3,5 mm taştı → iki kutu kısaltıldı.
+Yazım düzeltmesi: "en sığı" → "en sık görüleni" (s.114; aynı hata Tur 32'de de parçada düzeltilmişti — kalıp olarak dikkat).
+
+**TEMD ile öteki kaynaklarımız arasındaki farklar (kitapta TEMD kutu içinde, ötekisi kendi sayfasında):**
+- **Hiperprolaktinemi eşiği:** açık prolaktinoma sayfası "erkek ve postmenopozal >20, premenopozal kadın >30 ng/mL"; TEMD "erkek >20, kadın >25".
+- **Kabergolin–EKO:** açık kapak sayfası "Endocrine Society: >2 mg/hafta 2 yılda bir; İngiliz: yılda bir, düşük dozda 5 yılda bir"; TEMD "her hastaya yıllık EKO gerekmez; üfürüm, 5 yıldan uzun >3 mg/hafta ya da 50 yaş sonrası devam → en az 2 yılda bir"; TEMD akromegali bölümü "<2 mg/hafta rutin EKO önerilmez".
+- **Prolaktinoma sıklığı:** adenomlar sayfası "%32–66", giriş sayfası "%50", TEMD "%40".
+- **Kolon kanseri riski:** kart "~2 kat", TEMD "4 kat" (polip 3,5, hiperplastik adenom 2,5).
+- **Tanı gecikmesi:** açık akromegali sayfası "7–10 yıl", TEMD "ortalama 5 yıl (15 yıla dek)".
+- **Pasireotid:** premium ve açık sayfa dirençte öneriyor; **TEMD: Türkiye'de akromegali için ruhsatı yok.**
+- **Uyku apnesi:** kart "%80'e dek", TEMD "%20–80".
+- **IGF-1 hedefi:** TEMD "üst sınırın en çok 1,2–1,3 katı"; kart 1 "tanıda >1,3 × üst sınır" — biri hedef, biri tanı eşiği; karıştırılmamalı.
+- **Cerrahi remisyon:** TEMD "GH <0,4 µg/L cerrahi remisyon, <1 µg/L kontrol"; premium remisyonu OGTT nadir GH <0,4 + normal IGF-1 ile tanımlıyor.
+- **Kanca etkisi eşiği** (Tur 32'deki çelişki): TEMD dev prolaktinomada "PRL genellikle >1000 ng/mL" diyor; açık sayfanın ">5000" değeri TEMD'de yok.
