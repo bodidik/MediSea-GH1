@@ -2,6 +2,7 @@ import { UserProvider } from "@/app/(ydus)/context/UserContext";
 import ReadingTools from "@/app/components/ReadingTools";
 import NotePanel from "@/app/components/NotePanel";
 import ReadingHint from "@/app/components/ReadingHint";
+import { GeceDalgasi } from "@/app/components/DenizSusu";
 
 export default function YdusLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -20,7 +21,8 @@ export default function YdusLayout({ children }: { children: React.ReactNode }) 
         <NotePanel />
         <ReadingHint />
 
-        {/* İstersen buraya arka plana hafif bir deniz dalgası efekti ekleyebiliriz */}
+        {/* Gece denizi: dipte sabit, çok soluk dalgalar (yalnızca süs). */}
+        <GeceDalgasi />
       </div>
     </UserProvider>
   );

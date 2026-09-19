@@ -12,6 +12,7 @@ import { kurtarilanSayisi } from "@/app/lib/depo";
 import StrokePreview, { type Stroke } from "@/app/components/StrokePreview";
 import StudyBackup from "@/app/components/StudyBackup";
 import StudyCoverage from "@/app/components/StudyCoverage";
+import SeyirDefteri from "@/app/components/SeyirDefteri";
 import SyncDurumu from "@/app/components/SyncDurumu";
 import { tarihYazisi } from "@/app/lib/tarih";
 
@@ -272,6 +273,9 @@ export default function StudyWorkspace() {
 
         {/* Kapsama — hangi branşta neye hiç bakılmadığını gösterir */}
         {entries !== null && <StudyCoverage />}
+
+        {/* Seyir defteri — deniz sürprizleri ve aç/kapa anahtarı */}
+        {entries !== null && <SeyirDefteri />}
 
         {/* Yedekleme — boş durumda DA görünür: yeni cihaza geçen kullanıcı
             buraya boş ekranla düşer, geri yükleme yolu burada olmazsa

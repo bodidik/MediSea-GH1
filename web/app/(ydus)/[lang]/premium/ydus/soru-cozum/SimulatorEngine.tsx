@@ -171,7 +171,7 @@ export default function SimulatorEngine({ data }: { data: SimData }) {
                   onClick={handleFinish} 
                   className="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-black shadow-lg shadow-blue-900/50 transition-all flex items-center justify-center gap-2"
                 >
-                  Ödülü Al ve Çık 🏁
+                  Ödülü Al ve Çık 🏝️
                 </Link>
               </div>
             </div>

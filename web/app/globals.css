@@ -185,6 +185,7 @@ a {
 /* Butonlar */
 button {
   cursor: pointer;
+  cursor: var(--imlec-el, pointer);
 }
 
 /* Markdown / MDX tipografi (prose)
@@ -1012,3 +1013,147 @@ html {
     max-width: none;
   }
 }
+
+/* ─────────────────────────────────────────────────────────────────────
+   DENİZ DOKUNUŞLARI (18 Eylül 2026, kullanıcı isteği)
+
+   Temel AÇIK tema aynen duruyor; buradakiler yalnızca "Sea" kısmını
+   hissettiren küçük işaretler. Hiçbiri okuma alanının rengini, yazısını
+   ya da kontrastını değiştirmiyor.
+
+   İMLEÇ — yalnızca tıklanabilir ögelerde dümen. Varsayılan ok ve METİN
+   imleci BİLEREK özgün: `cursor` kalıtılan bir özellik; köke özel bir ok
+   verilseydi metin üstündeki I-imleci de kaybolurdu ve bu site
+   seçip vurgulamaya dayanıyor. `pointer: fine` dışında (dokunmatik)
+   hiç devreye girmiyor. Yedek `pointer`: SVG imleci desteklemeyen ya da
+   yükleyemeyen tarayıcı eski eli gösterir.
+
+   `:where()` özgüllüğü 0 — `cursor-not-allowed`, `cursor-grab`,
+   `cursor-crosshair` gibi yardımcı sınıflar ve çizim tuvalinin kendi
+   imleci KAZANIR. `.cursor-pointer` ise yardımcıdan SONRA geldiği için
+   dümene döner (aynı özgüllük, sonraki kazanır).
+   ───────────────────────────────────────────────────────────────────── */
+@media (pointer: fine) {
+  :root {
+    --imlec-el: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg fill='none' stroke-linecap='round'%3E%3Cg stroke='%23fff' stroke-width='5'%3E%3Ccircle cx='16' cy='16' r='8'/%3E%3Cpath d='M3 16H29M16 3V29M6.8 6.8L25.2 25.2M25.2 6.8L6.8 25.2'/%3E%3C/g%3E%3Cg stroke='%231a3a6b' stroke-width='2.4'%3E%3Ccircle cx='16' cy='16' r='8'/%3E%3Cpath d='M3 16H29M16 3V29M6.8 6.8L25.2 25.2M25.2 6.8L6.8 25.2'/%3E%3C/g%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='2.8' fill='%23f5b82e' stroke='%231a3a6b' stroke-width='1.4'/%3E%3C/svg%3E") 16 16, pointer;
+  }
+
+  :where(a[href], [role="button"], summary, select, label[for],
+         input[type="checkbox"], input[type="radio"]),
+  .cursor-pointer {
+    cursor: var(--imlec-el);
+  }
+
+  :where(button:disabled, [aria-disabled="true"]) {
+    cursor: default;
+  }
+}
+
+/* SEÇİM — Akdeniz sığlığı. Premium'un koyu yüzeyi kendi `selection:`
+   sınıfını taşıyor ve o kazanıyor (sınıf özgüllüğü). */
+::selection {
+  background: var(--akdeniz-sigligi);
+  color: #0b2447;
+}
+
+/* KAYDIRMA ÇUBUĞU — yalnızca renk; genişlik değişmiyor (ölçümler
+   `clientWidth`e dayanıyor). İz saydam: hem açık sitede hem premium'un
+   gece denizinde zemini gösterir. */
+html {
+  scrollbar-color: #8fbccb transparent;
+}
+
+/* DALGA SALINIMI — kıyı süslemesindeki tekne ve martılar. Hareket azaltma
+   tercihi yukarıdaki evrensel kuralla zaten kapsanıyor. */
+@keyframes deniz-salinim {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50%      { transform: translateY(-3px) rotate(2deg); }
+}
+@keyframes deniz-suzulus {
+  0%, 100% { transform: translate(0, 0); }
+  50%      { transform: translate(6px, -4px); }
+}
+.deniz-salinim {
+  animation: deniz-salinim 4.5s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+.deniz-suzulus {
+  animation: deniz-suzulus 7s ease-in-out infinite;
+  transform-box: fill-box;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   DENİZ SÜRPRİZLERİ (19 Eylül 2026) — sürücü `DenizSurprizleri.tsx`
+
+   Her canlının ÖMRÜ kendi dış animasyonudur: `animationend` gelince katman
+   sökülür, zamanlayıcı yok. Bu yüzden sekme gizlenince animasyonu
+   DURDURMAK yeterli — canlı kaldığı yerden devam eder, kimse görmeden
+   geçip gitmez. Yelkenli bilerek YAVAŞ (5 dk): göz ucundaki hızlı hareket
+   dikkati çalar, ağır olanı ancak fark eden görür.
+   ───────────────────────────────────────────────────────────────────── */
+.deniz-surpriz[data-gizli="1"],
+.deniz-surpriz[data-gizli="1"] * {
+  animation-play-state: paused !important;
+}
+
+@keyframes deniz-yelkenli-yol {
+  from { transform: translateX(-60px); }
+  to   { transform: translateX(calc(100vw + 60px)); }
+}
+.deniz-yelkenli-yol { animation: deniz-yelkenli-yol 300s linear both; }
+
+@keyframes deniz-papagan-yol {
+  0%   { transform: translate(-90px, -60px); opacity: 0; }
+  5%   { transform: translate(0, 0); opacity: 1; }
+  90%  { transform: translate(0, 0); opacity: 1; }
+  100% { transform: translate(-110px, -80px); opacity: 0; }
+}
+.deniz-papagan-yol { animation: deniz-papagan-yol 75s ease-in-out both; }
+
+@keyframes deniz-marti-yol {
+  from { transform: translateX(calc(100vw + 40px)); }
+  to   { transform: translateX(-80px); }
+}
+.deniz-marti-yol { animation: deniz-marti-yol 45s linear both; }
+
+@keyframes deniz-omur {
+  0%   { opacity: 0; }
+  4%   { opacity: 1; }
+  94%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+.deniz-fener-omur    { animation: deniz-omur 180s ease-in-out both; }
+.deniz-okaliptus-omur { animation: deniz-omur 40s ease-in-out both; }
+
+@keyframes deniz-fener-isik {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.deniz-fener-isik { animation: deniz-fener-isik 9s linear infinite; }
+
+@keyframes deniz-sallanti {
+  0%, 100% { transform: rotate(-5deg); }
+  50%      { transform: rotate(4deg); }
+}
+.deniz-sallanti { animation: deniz-sallanti 5s ease-in-out infinite; }
+
+@keyframes deniz-yunus-yol {
+  from { transform: translateX(calc(100vw + 40px)); }
+  to   { transform: translateX(-60px); }
+}
+@keyframes deniz-yunus-sicrama {
+  0%   { transform: translateY(40px) rotate(-25deg); }
+  50%  { transform: translateY(-70px) rotate(0deg); }
+  100% { transform: translateY(40px) rotate(25deg); }
+}
+.deniz-yunus-yol     { animation: deniz-yunus-yol 18s linear both; }
+.deniz-yunus-sicrama { animation: deniz-yunus-sicrama 6s ease-in-out 3; }
+
+@keyframes deniz-yazi {
+  0%   { opacity: 0; transform: translate(-50%, 6px); }
+  10%  { opacity: 1; transform: translate(-50%, 0); }
+  85%  { opacity: 1; transform: translate(-50%, 0); }
+  100% { opacity: 0; transform: translate(-50%, 0); }
+}
+.deniz-yazi { animation: deniz-yazi 14s ease-in-out 2s both; }

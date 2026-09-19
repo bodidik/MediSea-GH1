@@ -897,7 +897,7 @@ export default async function TopicDetailPage({
                       yuvalama yanlıştı. Görünüm değişmiyor: globals.css
                       h1,h2,h3'e aynı kuralı veriyor (ölçüldü, mt 24px). */}
                   <h2 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 mt-0 pb-4 mb-4 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-amber-500"></span>
+                    <span aria-hidden="true" className="text-base leading-none">⛵</span>
                     İleri Okuma
                   </h2>
 
@@ -926,7 +926,7 @@ export default async function TopicDetailPage({
               {ilgiliAraclar.length > 0 && (
                 <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm">
                   <h2 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 mt-0 pb-4 mb-4 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    <span aria-hidden="true" className="text-base leading-none">🧭</span>
                     İlgili Hesaplayıcılar
                   </h2>
                   {/* py-2.5: `py-1` ile dokunma hedefi 30px kalıyordu —
@@ -953,7 +953,7 @@ export default async function TopicDetailPage({
               {ilgililer.length > 0 && (
                 <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm">
                   <h2 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 mt-0 pb-4 mb-4 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-blue-400"></span>
+                    <span aria-hidden="true" className="text-base leading-none">🪢</span>
                     İlgili Konular
                   </h2>
 

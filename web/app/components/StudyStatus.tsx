@@ -53,7 +53,7 @@ export default function StudyStatus() {
           }`}
           aria-hidden="true"
         >
-          {acil ? "⚡" : "📚"}
+          {acil ? "⚡" : "⛵"}
         </div>
 
         <div className="min-w-0 flex-1">
@@ -89,7 +89,7 @@ export default function StudyStatus() {
             href="/calisma-alanim"
             className="rounded-full border border-slate-200 bg-white px-4 py-2 text-[10px] font-black uppercase tracking-widest text-slate-500 transition-all hover:border-blue-300 hover:text-blue-600"
           >
-            🗂 Alanım
+            <span aria-hidden="true">⚓</span> Alanım
           </Link>
         </div>
     </div>

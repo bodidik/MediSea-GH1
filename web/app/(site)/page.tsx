@@ -3,6 +3,7 @@ import { SPECIALTIES, CATEGORY_ORDER, CATEGORY_META } from "@/app/lib/specialtie
 import { getTopicCounts, getToolCount } from "@/app/lib/topic-counts";
 import StudyStatus from "@/app/components/StudyStatus";
 import KurumRozeti from "@/app/components/KurumRozeti";
+import { HeroDenizi } from "@/app/components/DenizSusu";
 
 /**
  * ISR: ana sayfa artık istek başına üretilmiyor.
@@ -49,15 +50,9 @@ export default async function Home() {
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-indigo-700/40 blur-3xl" />
             <div className="absolute -bottom-16 -left-16 w-64 h-64 rounded-full bg-blue-900/60 blur-3xl" />
-            <svg className="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="1"/>
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#grid)" />
-            </svg>
           </div>
+          {/* Martılar ve dipte iki soluk dalga — eski ızgara deseninin yerine */}
+          <HeroDenizi />
 
           <div className="relative px-6 xl:px-8 py-8 lg:py-10">
             {/* Badge'ler */}
@@ -127,7 +122,7 @@ export default async function Home() {
                    veriliyordu: üstte "114 ARAÇ", altta "114 skor". */
                 { icon: "⚓", label: "YDUS", sub: "Soru & kart", href: "/tr/premium/ydus" },
                 { icon: "🧪", label: "Araçlar", sub: "Skor & formül", href: "/tools" },
-                { icon: "📚", label: "Konular", sub: "Branşa göre", href: "#branslar" },
+                { icon: "🗺️", label: "Konular", sub: "Branşa göre", href: "#branslar" },
               ].map((f) => (
                 <Link key={f.href} href={f.href} className="group flex flex-col items-center text-center p-2.5 rounded-xl hover:bg-white/10 transition-all">
                   <span aria-hidden="true" className="text-lg mb-1">{f.icon}</span>

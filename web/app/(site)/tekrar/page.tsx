@@ -245,7 +245,7 @@ export default function ReviewPage() {
         {done > 0 && <SessionSummary done={done} zorlananlar={zorlananlar} />}
 
         <Empty
-          icon={done > 0 ? "✅" : "☕"}
+          icon={done > 0 ? "✅" : "🐚"}
           title={done > 0 ? `${done} kart çalışıldı` : `${branslı}sıra boş`}
           body={
             mode === "cram"
@@ -487,7 +487,7 @@ function Shell({
             href="/calisma-alanim"
             className="rounded-full border border-slate-200 bg-white px-4 py-2 text-[10px] font-black uppercase tracking-widest text-slate-500 transition-all hover:border-blue-300 hover:text-blue-600"
           >
-            🗂 Çalışma Alanım
+            <span aria-hidden="true">⚓</span> Çalışma Alanım
           </Link>
         </div>
 

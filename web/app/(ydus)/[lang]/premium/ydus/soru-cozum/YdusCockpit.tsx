@@ -205,7 +205,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                   <div className="bg-slate-950 text-white p-2 rounded-lg shadow-2xl border border-blue-900/30">
                     <div className="flex items-center justify-between mb-2 border-b border-slate-800 pb-1.5">
                       <span className="text-xs font-black text-green-400 uppercase tracking-widest flex items-center gap-2">
-                        <span aria-hidden="true">🎉</span> Vaka Tamamlandı
+                        <span aria-hidden="true">🏝️</span> Vaka Tamamlandı
                       </span>
                     </div>
                     <div className="grid grid-cols-3 gap-2">
@@ -218,7 +218,7 @@ export default function YdusCockpit({ data }: { data: CaseData }) {
                         <div className="text-[9px] text-slate-200 group-hover:text-yellow-100 mt-1 font-bold uppercase tracking-widest">Notlar</div>
                       </Link>
                       <Link href={data.navigation?.exit?.url || '#'} className="py-2.5 px-1 bg-slate-900 hover:bg-red-600 rounded-lg text-center border border-slate-800 hover:border-red-500/50 transition-all group">
-                        <div aria-hidden="true" className="text-base group-hover:scale-110 transition-transform">🏠</div>
+                        <div aria-hidden="true" className="text-base group-hover:scale-110 transition-transform">⚓</div>
                         <div className="text-[9px] text-slate-200 group-hover:text-red-100 mt-1 font-bold uppercase tracking-widest">Çıkış</div>
                       </Link>
                     </div>

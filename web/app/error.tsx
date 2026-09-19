@@ -51,7 +51,7 @@ export default function KokHata({
     <main className="min-h-screen bg-[#F8F9FC] px-4 py-8 font-sans sm:px-6">
       <div className="mx-auto max-w-2xl rounded-3xl border border-slate-200 bg-white p-10 text-center sm:p-14">
         <div className="mb-3 text-4xl" aria-hidden="true">
-          ⚓
+          🛟
         </div>
         <h1 className="mb-2 text-lg font-black uppercase italic tracking-tight text-blue-950">
           Bu sayfa açılamadı

@@ -171,7 +171,26 @@ Sayfalar: `/calisma-alanim` (toplu görünüm, kapsama, yedekleme),
 medisea:marks:v2:<yol>    vurgular            medisea:review:v1   tekrar takvimi
 medisea:notes:v1:<yol>    not + çizim         medisea:log:v1      günlük çalışma
 medisea:index:v1          yol → başlık        medisea:hint:…      tanıtım kartı
+medisea:seyir:v1          seyir defteri       medisea:deniz:kapali  sürpriz tercihi (yedeğe GİRMEZ)
 ```
+
+### Deniz sürprizleri (19 Eylül 2026)
+
+Oturum açmış kullanıcıya nadir, hak edilmiş görünümler: yelkenli (25 dk
+kesintisiz okuma, 5 dk'da geçer), papağan (seri eşiği), fener (00–05'te
+10 dk okuma), okaliptüs (konu sonu), yunus (tekrar kartı eşiği), martı
+(rastgele, 3 günde en fazla bir). Sürücü `DenizSurprizleri.tsx` (kökte,
+`providers.tsx`), veri `lib/seyir.ts`, defter + aç/kapa `/calisma-alanim`.
+Soru/vaka/hızlı tekrar/araç yollarında ÇIKMAZ; hareket azaltmada çıkmaz;
+sekme gizliyken animasyon DURUR (ömür = `animationend`). Geliştirmede
+`window.__denizSurpriz("yelkenli")` deftere yazmadan gösterir.
+
+| ölçüt (canlı, oturum kapısı ölçüm süresince gevşetildi, geri alındı) | sonuç |
+|---|---|
+| 260 kart tohumu | yalnızca 250 yunusu; 100 sessizce işaretlendi |
+| 7 günlük seri | papağan geldi, ikisi de tekrar ETMEDİ |
+| anahtar kapalı · `quiz-coz` (bileşen kurulu doğrulandı) | hiçbir şey |
+| yedek: dışa aktarım · 2× birleştir · alansız eski yedek · üzerine yaz | `seyir` var · 3→3 · 3 · anahtar SİLİNDİ |
 
 Sürüm eki şema değişince artar. `study-backup.ts` hepsini tek dosyada taşır;
 Markdown dışa aktarımı **kayıplıdır** (çizim ve takvim gitmez).

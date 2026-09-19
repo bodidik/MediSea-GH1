@@ -3,6 +3,7 @@ import ReadingTools from "@/app/components/ReadingTools";
 import NotePanel from "@/app/components/NotePanel";
 import { KLINIK_SORUMLULUK } from "@/app/lib/sorumluluk";
 import ReadingHint from "@/app/components/ReadingHint";
+import { KiyiDalgasi, AdaSilueti } from "@/app/components/DenizSusu";
 import Link from "next/link";
 import React from "react";
 
@@ -51,10 +52,16 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       <NotePanel />
       <ReadingHint />
 
+      {/* KIYI — açık sayfa (kum) dalgayla lacivert footer'a (deniz) iniyor.
+          Eski 4px altın çizginin yerini aldı; ön dalga footer'la aynı renkte
+          bittiği için -mb-px ile dikiş kapatılıyor. */}
+      <KiyiDalgasi className="mt-auto -mb-px" />
+
       {/* --- YENİ PREMİUM FOOTER --- */}
-      <footer className="bg-blue-950 text-blue-200/70 border-t-4 border-amber-500 mt-auto relative overflow-hidden">
-        {/* Arka plan süslemesi (Işık hüzmesi) */}
+      <footer className="bg-blue-950 text-blue-200/70 relative overflow-hidden">
+        {/* Arka plan süslemesi: ışık hüzmesi + Ege adası silueti */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+        <AdaSilueti className="absolute bottom-0 right-0 hidden w-[340px] md:block lg:w-[420px]" />
 
         <div className="mx-auto max-w-[1400px] px-6 py-12 md:py-16 relative z-10">
           {/* Mobilde link gruplari YAN YANA. Olculdu (canli, /tekrar):
@@ -107,7 +114,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 <li>
                   {/* /premium diye bir rota yok; premium tanıtımı dil önekiyle duruyor. */}
                   <Link href="/tr/premium/ydus" className="flex items-center gap-2 py-1.5 text-amber-400 hover:text-amber-300 transition-colors">
-                    Premium YDUS <span aria-hidden="true" className="text-amber-500">★</span>
+                    Premium YDUS <span aria-hidden="true" className="text-amber-500">⚓</span>
                   </Link>
                 </li>
                 <li><Link href="/tools" className="block py-1.5 hover:text-white transition-colors">Klinik Araçlar & Algoritmalar</Link></li>

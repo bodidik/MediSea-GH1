@@ -3,6 +3,7 @@ import { SessionProvider } from 'next-auth/react';
 import { useEffect } from 'react';
 import { useStudySync } from '@/app/hooks/useStudySync';
 import { girisiKaydet } from '@/app/lib/gecmis';
+import DenizSurprizleri from '@/app/components/DenizSurprizleri';
 
 function SyncBridge() {
   useStudySync();
@@ -23,6 +24,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
     <SessionProvider>
       <GecmisKaydedici />
       <SyncBridge />
+      {/* Oturum açmış kullanıcıya nadir deniz sürprizleri — kökte, gezinmede sökülmesin */}
+      <DenizSurprizleri />
       {children}
     </SessionProvider>
   );

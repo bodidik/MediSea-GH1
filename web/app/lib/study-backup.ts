@@ -14,6 +14,7 @@ import type { CardState, StudyLog } from "@/app/lib/review-deck";
 import type { NoteDoc } from "@/app/lib/study-index";
 
 import { BOZUK_EK, guvenliDiziOku, guvenliNesneOku } from "@/app/lib/depo";
+import { SEYIR_KEY, seyirBirlestir, seyirNormalize, seyirOku, type Seyir } from "@/app/lib/seyir";
 
 const MARK_PREFIX = "medisea:marks:v2:";
 const NOTE_PREFIX = "medisea:notes:v1:";
@@ -47,6 +48,11 @@ export type Backup = {
    * Eski yedeklerde bu alan bulunmaz; `parseBackup` onu boş nesneye çevirir.
    */
   kartlar: Record<string, string[]>;
+  /**
+   * Seyir defteri (deniz sürprizleri). Eski yedeklerde YOK; `parseBackup`
+   * boş deftere çevirir. Birleştirme BİRLEŞİM — bkz. `seyirBirlestir`.
+   */
+  seyir: Seyir;
 };
 
 export type BackupSummary = {
@@ -137,6 +143,7 @@ export function readAll(): Backup {
     index: guvenliNesneOku<Record<string, IndexRow>>(INDEX_KEY) ?? {},
     log: guvenliNesneOku<StudyLog>(LOG_KEY) ?? {},
     kartlar,
+    seyir: seyirOku(),
   };
 }
 
@@ -199,6 +206,8 @@ function parseBackup(text: string): { b: Backup | null; hata?: string } {
       // Bu alan eklenmeden önce alınmış yedeklerde YOK — boş nesneye düşmeli,
       // yoksa eski bir yedeği geri yüklemek içe aktarmayı tümden düşürürdü.
       kartlar: (b.kartlar && typeof b.kartlar === "object" ? b.kartlar : {}) as Backup["kartlar"],
+      // Aynı gerekçe: seyir defteri eklenmeden önceki yedeklerde alan yok.
+      seyir: seyirNormalize(b.seyir),
     },
   };
 }
@@ -287,7 +296,7 @@ export function applyImport(text: string, mode: ImportMode): { ok: boolean; hata
       // Yalnızca write()'ın GERİ KOYACAĞI anahtarları sil. Kullanıcı tercihleri
       // (notew, notepaper), tanıtım kartları (hint:*) ve senkron durumu (sync:*)
       // yedekte YOKTUR; silinirse geri gelmezler — bu sessiz veri kaybıdır.
-      const VERİ_ONEKI = [MARK_PREFIX, NOTE_PREFIX, REVIEW_KEY, INDEX_KEY, LOG_KEY, KART_PREFIX];
+      const VERİ_ONEKI = [MARK_PREFIX, NOTE_PREFIX, REVIEW_KEY, INDEX_KEY, LOG_KEY, KART_PREFIX, SEYIR_KEY];
       const silinecek: string[] = [];
       for (let i = 0; i < localStorage.length; i++) {
         const k = localStorage.key(i);
@@ -349,7 +358,10 @@ export function applyImport(text: string, mode: ImportMode): { ok: boolean; hata
       kartlar[set] = [...new Set([...(kartlar[set] ?? []), ...liste])];
     }
 
-    write({ app: "medisea", v: 1, at: Date.now(), marks, notes, review, index, log, kartlar });
+    // seyir defteri: BİRLEŞİM (kart işaretleriyle aynı gerekçe)
+    const seyir = seyirBirlestir(mevcut.seyir, gelen.seyir);
+
+    write({ app: "medisea", v: 1, at: Date.now(), marks, notes, review, index, log, kartlar, seyir });
     return { ok: true };
   } catch (e) {
     return { ok: false, hata: "Yazma başarısız — tarayıcı depolama alanı dolu olabilir." };
@@ -368,6 +380,11 @@ function write(b: Backup) {
   if (Object.keys(b.log).length) localStorage.setItem(LOG_KEY, JSON.stringify(b.log));
   for (const [set, liste] of Object.entries(b.kartlar)) {
     if (liste.length) localStorage.setItem(KART_PREFIX + set, JSON.stringify(liste));
+  }
+  // Doğrudan yazılıyor, `seyirYaz` üzerinden DEĞİL: o "değişti" olayı atıyor
+  // ve write() pull'da da çalışıyor (bkz. depo.ts `degistiBildir` notu).
+  if (b.seyir.defter.length || b.seyir.kutlanan.length) {
+    localStorage.setItem(SEYIR_KEY, JSON.stringify(b.seyir));
   }
 }
 
