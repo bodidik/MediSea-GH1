@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "id": "temd-tiroid",
+    "branch": "endokrinoloji",
+    "baslik": "TEMD Tiroid",
+    "altbaslik": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) üzerinden klinik inciler",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-09"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": true,
+    "quiz": false,
+    "vaka": false,
+    "video": false
+  },
+  "icerik": []
+}

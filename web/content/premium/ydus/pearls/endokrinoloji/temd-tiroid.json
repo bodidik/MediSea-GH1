@@ -1,0 +1,707 @@
+{
+  "id": "pearl-endo-temd-tiroid-001",
+  "accessLevel": "premium",
+  "topic": "TEMD Tiroid",
+  "pearls": [
+    {
+      "id": "p-temd-001",
+      "level": "Kılavuz",
+      "title": "TSH üst sınırı yaşla yükselir: 3,5 → 4,5 → 7,5",
+      "content": "NHANES-III'te TSH üst sınırı (97,5. persantil) 20-29 yaşta 3,5, 50-70 yaşta 4,5, 80 yaş üstünde 7,5 mIU/L'dir. TEMD klinik kararda yaşa özgü aralık kullanılmasını önerir. Japonya'daki bir çalışmada yaşa göre ayarlanmış aralıkla subklinik hipotiroidi tanısı konan kadınların %60'ı ötiroid sayılacaktı. Ayrıca aynı kişide farklı zamanlarda ölçülen TSH'de 0,2-1,6 mIU/L'lik oynama normal kabul edilir. (TEMD 2025, Bölüm 1, s. 2)",
+      "trigger": "Tiroid Fonksiyon Testleri"
+    },
+    {
+      "id": "p-temd-002",
+      "level": "Kılavuz",
+      "title": "Kalsitonin: rutin değil ama nodüler guatr cerrahisi öncesi ölçülmeli",
+      "content": "Tiroid nodülü olan her hastada rutin kalsitonin ölçümü henüz önerilmez. Karar hastaya göre verilir. TEMD'nin yorumu şudur: US ve İİAB'de malignite açısından riskli nodülü olanlarda ve nodüler guatr nedeniyle ameliyat edilecek TÜM hastalarda operasyon öncesi kalsitonin ölçümü faydalıdır. (TEMD 2025, Bölüm 1, s. 7)",
+      "trigger": "Tiroid Fonksiyon Testleri"
+    },
+    {
+      "id": "p-temd-003",
+      "level": "Kılavuz",
+      "title": "Biyotin: laboratuvarın ürettiği tirotoksikoz",
+      "content": "Günde 5-10 mg biyotin alan hastada biyotin-streptavidin sistemi kullanan testlerde sT4 yalancı yüksek, TSH yalancı düşük çıkar. Tablo aşikar tirotoksikozu taklit edebilir ya da başka uyumsuz kombinasyonlar verebilir. Testler biyotin en az 2 gün kesildikten sonra istenmelidir. TEMD, laboratuvarda tirotoksikoz olup semptomu olmayan her hastada biyotin kullanımının sorgulanmasını önerir. (TEMD 2025, Bölüm 1, s. 11)",
+      "trigger": "Tiroid Fonksiyon Testleri"
+    },
+    {
+      "id": "p-temd-004",
+      "level": "Kılavuz",
+      "title": "Hafif santral hipotiroidide TSH 5-10 mIU/L olabilir",
+      "content": "Santral hipotiroidi her zaman düşük TSH ile gelmez. Hafif olgularda TSH normal ya da hafif yüksek (örn. 5-10 mIU/L) ölçülebilir. Bunun sebebi, biyolojik olarak inaktif ama immünolojik olarak ölçülebilen TSH moleküllerinin artmasıdır. Düşük sT4 ile TSH'nin orantısız yükselmediği durumda anti-TPO pozitifliği primer hipotiroidiyi, diğer hipofiz hormonlarındaki düşüklük ise santral nedeni destekler. (TEMD 2025, Bölüm 1, s. 11)",
+      "trigger": "Tiroid Fonksiyon Testleri"
+    },
+    {
+      "id": "p-temd-005",
+      "level": "Kılavuz",
+      "title": "Heterofil antikor: sık görülür, TSH'yi nadiren bozar",
+      "content": "Heterofil antikorlar toplumun yaklaşık %30'unda bulunur, ancak TSH'yi yalancı yüksek ya da düşük göstermeleri yalnızca 3000 hastada bir olur. İmmünometrik testlerde TSH, Tg, total T4, total T3 ve sT4'ü yalancı yükseltebilir. Diferansiye tiroid kanserinde yalancı Tg yüksekliği gereksiz RAI tedavisine yol açabilir. Pratik çözüm: serumu bağışıklanmamış fare serumuyla oda sıcaklığında 1 saat inkübe etmek. Daha hassas seçenek heterofil antikor bloke edici tüptür. (TEMD 2025, Bölüm 1, s. 11)",
+      "trigger": "Tiroid Fonksiyon Testleri"
+    },
+    {
+      "id": "p-temd-006",
+      "level": "Kılavuz",
+      "title": "Benign nodül izleminde anlamlı büyüme tanımı",
+      "content": "Seri US'de nodül hacminin %50'den fazla artması ya da boyutun %20 büyümesi (en az iki boyutta en az 2 mm artış) anlamlıdır ve hastanın yeniden değerlendirilmesini gerektirir. Küçük boyut değişiklikleri yeniden aspirasyon gerektirmez. Tek başına büyüme malignite için zayıf bir belirteçtir. Sitolojisi benign nodülde malignite olasılığı daha çok yeni şüpheli US bulgularının ortaya çıkmasıyla ilişkilidir. (TEMD 2025, Bölüm 2, s. 28)",
+      "trigger": "Sonografi ve Elastografi"
+    },
+    {
+      "id": "p-temd-007",
+      "level": "Kılavuz",
+      "title": "Lenf nodu: uzun/kısa aks oranı ve kısa aks",
+      "content": "Benign servikal lenf nodu genellikle ince (kısa aks &lt;5 mm), oval ve ekojenik hiluslu olur. Uzun aks/kısa aks oranı benign nodda &gt;2, malign nodda &lt;2'dir. Eşik 2 alındığında benign ile malign ayrımının %95 doğrulukla yapılabildiğini bildiren yayınlar vardır. Malign nodda santral değil periferik kanlanma beklenir. (TEMD 2025, Bölüm 2, s. 33)",
+      "trigger": "Sonografi ve Elastografi"
+    },
+    {
+      "id": "p-temd-008",
+      "level": "Kılavuz",
+      "title": "Metastatik nodun majör US kriterleri: özgül ama duyarsız",
+      "content": "Majör kriterlerden kistik görünümün özgüllüğü %100, duyarlılığı %11; parlak hiperekoik noktasal odakların özgüllüğü %100, duyarlılığı %46'dır. Öteki majör kriterler yağlı hilusun olmaması ve periferik kanlanmadır. Minör kriterler yuvarlak şekil, hipoekojenite ve hiperekoik hilus yokluğudur. Yaşlı diyabetik ya da obez hastada yağlanmış (lipoplastik) nod metastazı taklit edebilir. Çocuk ve ergende görülen nodlar çoğunlukla inflamatuvardır. (TEMD 2025, Bölüm 2, s. 33)",
+      "trigger": "Sonografi ve Elastografi"
+    },
+    {
+      "id": "p-temd-009",
+      "level": "Kılavuz",
+      "title": "Lenf nodu İİAB yıkama Tg'si >10 = metastaz",
+      "content": "Lenf nodundan İİAB örneği yayıldıktan sonra iğne 1 cc salinle yıkanıp ölçülen tiroglobulin &gt;10 ise, sitoloji negatif olsa bile metastaz demektir. Kistik lenf nodunda Tg yıkaması sitolojiden daha faydalıdır. Aynı yöntem tiroid nodülünün kendisinde işe yaramaz, çünkü tiroid dokusu kanser olsun olmasın Tg içerir. ATA 2015'e göre, sonuç tedaviyi değiştirecekse en küçük çapı &gt;8-10 mm olan şüpheli lenf noduna İİAB yapılır. (TEMD 2025, Bölüm 2, s. 34)",
+      "trigger": "Sonografi ve Elastografi"
+    },
+    {
+      "id": "p-temd-010",
+      "level": "Kılavuz",
+      "title": "Elastografinin kör noktaları: foliküler/medüller kanser, istmus, Hashimoto",
+      "content": "Daha elastik olma eğilimindeki foliküler ve medüller kanserler elastosonografide yalancı negatiflik yaratır. Trakeaya yakın istmus nodüllerinde, ciddi Hashimoto/fibroziste ise yalancı sertlik (yalancı pozitif) görülebilir. Kistik bileşeni &gt;%50 olan, kalsifiye, konglomere ya da 3-4 cm'den büyük nodüllerde yöntemin kullanımı kısıtlıdır. ES bu nedenle henüz risk sınıflama sistemlerine alınmamıştır ve yalnızca B-mod US ile birlikte kullanılmalıdır. (TEMD 2025, Bölüm 2, s. 41)",
+      "trigger": "Sonografi ve Elastografi"
+    },
+    {
+      "id": "p-temd-011",
+      "level": "Kılavuz",
+      "title": "Amiodaron tirotoksikozu: perteknetat görmez, sestamibi ayırır",
+      "content": "Amiodaronun getirdiği yüksek iyot yükü nedeniyle klasik ajanlarla (99mTcO4 ve 123I) tiroid, AİT'nin iki tipinde de görüntülenemez. 99mTc-sestamibi ise NIS'e bağımlı olmadığı için iyottan etkilenmez: tip 1 AİT'de tutulum korunur, tip 2'de azalır. Dopplerde de tip 1'de kanlanma artmış, tip 2'de azalmış ya da yoktur. (TEMD 2025, Bölüm 3, s. 47)",
+      "trigger": "Sintigrafi ve RAIU"
+    },
+    {
+      "id": "p-temd-012",
+      "level": "Kılavuz",
+      "title": "İndetermine sitoloji + TSH <1,5: önce sintigrafi",
+      "content": "Bethesda III (malignite riski %10-30) ya da IV (%25-40) nodülde, daha önce yapılmadıysa ve TSH normalin alt sınırına yakınsa (örn. &lt;1,5 mU/L) önce tiroid sintigrafisi yapılmalıdır. Moleküler test, sestamibi/FDG görüntüleme ya da tanısal lobektomi yalnızca nonfonksiyone nodüllere ayrılmalıdır. Sıcak nodülün malignite için negatif prediktif değeri %96-99'dur. Bu nodüllerin önemli kısmı TI-RADS ≥4 çıktığı için TEMD, sintigrafinin TI-RADS'a entegre edilmesini istemektedir. (TEMD 2025, Bölüm 3, s. 48)",
+      "trigger": "Sintigrafi ve RAIU"
+    },
+    {
+      "id": "p-temd-013",
+      "level": "Kılavuz",
+      "title": "Perklorat kovma testinin yorumu",
+      "content": "Sodyum perklorattan sonra 2. saatte RAIU'nun %10'dan fazla düşmesi organifikasyon defektiyle uyumludur. Düşüş %90'ın üzerindeyse total defekt, %10-90 arasındaysa parsiyel defekt düşünülür. Organifikasyon defektinden şüphelenildiğinde sintigrafide ajan olarak 123I tercih edilebilir. (TEMD 2025, Bölüm 3, s. 48)",
+      "trigger": "Sintigrafi ve RAIU"
+    },
+    {
+      "id": "p-temd-014",
+      "level": "Kılavuz",
+      "title": "Emzirmede sintigrafi: perteknetatta 12 saat, iyot izotoplarında pratikte son",
+      "content": "99mTcO4 sonrası emzirmeye 12 saat ara vermek yeterlidir. 123I kısa ömürlü olsa da diğer iyot izotoplarıyla kontamine olabileceği için emzirme en az 3 hafta kesilmelidir. RAIU için verilen çok küçük 131I dozu da aynı süreyi gerektirir. Bu sürenin sonunda emzirme sürdürülemeyeceği için pratikte tamamen kesilmesi önerilir. Laktasyonda tercih edilen ajan bu yüzden 99mTcO4'tür. (TEMD 2025, Bölüm 3, s. 48)",
+      "trigger": "Sintigrafi ve RAIU"
+    },
+    {
+      "id": "p-temd-015",
+      "level": "Kılavuz",
+      "title": "Sintigrafi/RAIU öncesi iyot yükü",
+      "content": "İki hafta boyunca günde 1 mg iyot bile RAI ve 99mTcO4 tutulumunu azaltır. Tek seferde ≥30 mg iyot bezi günler-haftalar boyunca baskılar. Bu yüzden iyot içeren kontrast, antiseptik, preparat ve tiroid ilaçları tetkikten önce kılavuz tablosundaki süreler kadar kesilmelidir. 99mTc-sestamibi ve 18F-FDG tutulumu NIS aracılı olmadığı için iyottan etkilenmez. (TEMD 2025, Bölüm 3, s. 49)",
+      "trigger": "Sintigrafi ve RAIU"
+    },
+    {
+      "id": "p-temd-016",
+      "level": "Kılavuz",
+      "title": "RAIU yorumu: %25 eşiği ve yanıltan durumlar",
+      "content": "İyot eksikliği olmayan bölgede, hipertiroidi varken %25'in üzerindeki her RAIU değeri tiroid hiperfonksiyonu lehinedir. İyot döngüsü hızlı olan bazı hastalarda en yüksek değer 6-12. saatte görülür, 24. saat ve 5. gün değerleri normal kalır. İleri yaşta ve toksik multinodüler guatrda RAIU normal çıkabilir. Böbrek yetmezliğinde RAIU genellikle yüksek, ağır kronik hastalıkta (ötiroid hasta sendromu) düşüktür. (TEMD 2025, Bölüm 3, s. 50)",
+      "trigger": "Sintigrafi ve RAIU"
+    },
+    {
+      "id": "p-temd-017",
+      "level": "Kılavuz",
+      "title": "İyot fazlasına yanıtı intratiroidal iyot havuzu belirler",
+      "content": "Tiroid içi iyot havuzu düşük kişide yüksek iyot maruziyeti çoğunlukla geçici iyot toksikozuna (Jod-Basedow) yol açar. Havuzu zengin kişide ise iyot fazlası hormon salınımını bloke eder ve hipotiroidi gelişebilir. İyot eksikliği olanda yüksek doz iyot antikor oluşumunu tetikleyebilir, antikoru pozitif olanda hipotiroidiye gidişi hızlandırabilir. Okul çocuklarında medyan ÜİK &gt;300 µg/L, iyoda bağlı toksikoz ve otoimmünite riskiyle ilişkilendirilir. (TEMD 2025, Bölüm 4, s. 55)",
+      "trigger": "İyot Eksikliği"
+    },
+    {
+      "id": "p-temd-018",
+      "level": "Kılavuz",
+      "title": "Türkiye 2007: yeterli medyanın ardındaki kırsal açık",
+      "content": "2007 taramasında okul çocuklarında medyan ÜİK 107 µg/L idi, ancak çocukların %27,8'inde ÜİK 50 µg/L'nin altındaydı. Ortanca ÜİK kırsal okullarda 42 µg/L, kentsel okullarda 147 µg/L bulundu. Nem ve sıcaklık farkında kararsız kalan KI, 2009'dan beri kullanılmıyor. Geçerli kodekste sofra tuzu yalnızca KIO3 ile (25-40 mg/kg) iyotlanıyor. (TEMD 2025, Bölüm 4, s. 60)",
+      "trigger": "İyot Eksikliği"
+    },
+    {
+      "id": "p-temd-019",
+      "level": "Kılavuz",
+      "title": "Türkiye'de gebeye ÜİK bakmadan iyot desteği; izole hipotiroksinemide önce iyot",
+      "content": "TEMD'ye göre gebe, ÜİK bakılmaksızın, tuz tüketimine ve yaşadığı bölgeye göre günde 100-300 µg iyot desteği almalıdır. Tuzu kısıtlanan gebede bu miktar 200-250 µg/gündür. Destek gebelik planlanınca başlar, laktasyon bitene kadar sürer. Gerekçe: iyot yeterli sayılan İstanbul'da 3543 gebede medyan ÜİK 77 µg/L bulunmuş ve gebelerin %90'ında yetersizlik saptanmıştır. Ülkemizde gebelikte izole hipotiroksinemi görülünce önce iyot eksikliği düşünülüp iyot verilmelidir. (TEMD 2025, Bölüm 4, s. 66)",
+      "trigger": "İyot Eksikliği"
+    },
+    {
+      "id": "p-temd-020",
+      "level": "Kılavuz",
+      "title": "LT4'e rağmen süren yakınmada ferritini 100 ng/mL üstüne çıkar",
+      "content": "TPO hem bağımlı bir enzim olduğu için demir eksikliği, anemi olmasa bile hormon sentezini ve T4'ün T3'e dönüşümünü bozar. Ferritinin 100 ng/mL'nin üzerine çıkarılmasının, tiroid hormon tedavisine rağmen süren hipotiroidi semptomlarını düzelttiği bildirilmiştir. Otoimmün tiroid hastasında, anemi olmasa bile kan sayımı, demir ve ferritin bakılmalıdır. Aşırı replasmandan kaçınılmalıdır, çünkü demir fazlalığı proinflamatuvardır. (TEMD 2025, Bölüm 5, s. 70)",
+      "trigger": "Eser Elementler ve Vitaminler"
+    },
+    {
+      "id": "p-temd-021",
+      "level": "Kılavuz",
+      "title": "Otoimmün tiroiditte atrofik gastrit ve B12 eksikliği",
+      "content": "Primer hipotiroidili hastaların yaklaşık üçte birinde gastrik parietal hücre antikoru gelişir, %12'sinde pernisiyöz anemi vardır. Otoimmün tiroiditlilerin %35-40'ında atrofik gastrit görülebilir ve bu, B12 emilim bozukluğuna yol açar. B12'nin tiroid bozuklukları üzerinde doğrudan etkisine ilişkin kanıt çok azdır. Asıl önemli nokta, eşlik eden otoimmün hastalığı aramaktır. (TEMD 2025, Bölüm 5, s. 75)",
+      "trigger": "Eser Elementler ve Vitaminler"
+    },
+    {
+      "id": "p-temd-022",
+      "level": "Kılavuz",
+      "title": "Guatrın hacim eşiği ve endemik guatr tanımı",
+      "content": "Ülkemiz için standart bir değer olmasa da tiroid hacminin kadında 10 mL'den, erkekte 15 mL'den büyük olması guatr kabul edilir. Endemik guatr demek için toplumun %10'undan fazlasında ya da 6-12 yaş okul çocuklarının %5'inde guatr bulunmalıdır. Oran %5'in altındaysa sporadik guatr söz konusudur. (TEMD 2025, Bölüm 6, s. 79)",
+      "trigger": "Ötiroid Diffüz Guatr"
+    },
+    {
+      "id": "p-temd-023",
+      "level": "Kılavuz",
+      "title": "Ötiroid diffüz guatr: LT4 süpresyonu yok, cerrahi olmazsa RAI %40-60",
+      "content": "Erişkinde ötiroid diffüz guatr ya da nodüller için LT4 ile TSH süpresyonu rutin olarak önerilmez. Yeterli iyot alınıyorsa lahana gibi guatrojenlerin kısıtlanmasına da gerek yoktur. Bası varsa elektif total ya da totale yakın tiroidektomi yapılır. Cerrahiyi reddeden ya da cerrahi riski yüksek yaşlı hastada RAI, birkaç yıl içinde tiroid hacminde %40-60 küçülme sağlayabilir. (TEMD 2025, Bölüm 6, s. 83)",
+      "trigger": "Ötiroid Diffüz Guatr"
+    },
+    {
+      "id": "p-temd-024",
+      "level": "Kılavuz",
+      "title": "Santral hipotiroidi: sT4 ile izlem, önce glukokortikoid",
+      "content": "Santral hipotiroidide LT4 1,6 µg/kg ile başlanabilir. Doz TSH'ye göre değil, sT4 düzeyine ve kliniğe göre ayarlanır, çünkü TSH izlemde işe yaramaz. Eşlik eden adrenal yetmezlik varsa önce glukokortikoid replasmanı verilir, tiroid hormonu ondan sonra başlanır. Tiroid dokusu hiç olmayanlarda ve santral hipotiroidide günlük ihtiyaç 100-250 µg'a çıkabilir. (TEMD 2025, Bölüm 7, s. 91)",
+      "trigger": "Hipotiroidi"
+    },
+    {
+      "id": "p-temd-025",
+      "level": "Kılavuz",
+      "title": "LT4 replasmanında yaşa göre kademeli TSH hedefi",
+      "content": "LT4 tedavisinde TSH hedefi tek bir değer değildir. Genç ve orta yaşlıda hedef 0,4-2,5 mU/L, 65-70 yaş ve üstünde 3-6 mU/L, 80-85 yaşın üstünde ise TSH ≤10 mU/L yeterli sayılır. Gebelik planlayan kadında hedef 0,4-2,5 mU/L'dir. TSH'yi aralığın alt yarısında tutmak, gebe kalındığı andan ilk ölçüme kadar TSH'nin ilk trimester üst sınırı olan 2,5 mU/L'yi aşmasını önleyebilir. (TEMD 2025, Bölüm 7, s. 91)",
+      "trigger": "Hipotiroidi"
+    },
+    {
+      "id": "p-temd-026",
+      "level": "Kılavuz",
+      "title": "LT4 200 µg'ı aştıysa önce uyum ve emilimi sorgula",
+      "content": "Günlük doz 200 µg'ı aşıp TSH hâlâ hedefe gelmiyorsa ilk akla gelmesi gereken, hastanın ilacı düzenli almaması ya da emilim sorunudur. Demir sülfat ve kalsiyum karbonat LT4'ten en az 4 saat ayrı alınmalıdır. H. pylori gastriti, atrofik gastrit ve çölyak doz ihtiyacını artırabilir. Ticari preparat mümkünse değiştirilmemeli, değişmek zorunda kalınırsa 6-8 hafta sonra TSH bakılmalıdır. (TEMD 2025, Bölüm 7, s. 91)",
+      "trigger": "Hipotiroidi"
+    },
+    {
+      "id": "p-temd-027",
+      "level": "Kılavuz",
+      "title": "Yaşa özgü TSH aralığı kullanılmazsa aşırı tanı konur",
+      "content": "70 yaş üstünde yaşa özgü TSH referans aralığı kullanıldığında subklinik hipotiroidi prevalansı %29,6'dan %3'e iner. Gerçek subklinik hipotiroidi olmadan TSH'yi yükselten başka durumlar da vardır: VKİ 40'ın üstündeki belirgin obezite, heterofilik antikorlar ya da makroTSH, tedavi edilmemiş adrenal yetmezlik ve kış aylarındaki mevsimsel artış. Ovulatuvar disfonksiyon ya da infertilitede tanı için ilk trimester aralığı (0,1-2,5 mU/L) kullanılır. (TEMD 2025, Bölüm 8, s. 95)",
+      "trigger": "Subklinik Hipotiroidi"
+    },
+    {
+      "id": "p-temd-028",
+      "level": "Kılavuz",
+      "title": "Subklinik hipotiroidide ilerleme ve kendiliğinden düzelme",
+      "content": "Aşikar hipotiroidiye ilerleme yılda %2-4'tür. Başlangıç TSH'si 12-15 mU/L'nin üstünde olduğunda ve anti-TPO pozitif olduğunda risk artar. Buna karşılık antikor negatif ve TSH &lt;10 mIU/L olan olgularda TSH 1-2 yıl içinde kendiliğinden normale dönebilir. Bu yüzden tanıdan önce TSH 1-3 ay arayla en az iki kez ölçülerek yüksekliğin kalıcı olduğu doğrulanmalıdır. (TEMD 2025, Bölüm 8, s. 96)",
+      "trigger": "Subklinik Hipotiroidi"
+    },
+    {
+      "id": "p-temd-029",
+      "level": "Kılavuz",
+      "title": "Subklinik hipotiroidide iki ayrı LT4 başlangıç yaklaşımı",
+      "content": "TSH ≥10 mU/L olan subklinik hipotiroidilerin hepsi tedavi edilir. TSH 4,5-9,9 mU/L olduğunda karar semptoma ve ek risk faktörlerine göre verilir. Yaşlı ve kardiyovasküler öyküsü olanlarda LT4 25-50 mcg/gün ile, genç Hashimoto hastalarında ise tam replasmanın altındaki 1,0 mcg/kg/gün ile başlanır. Doz TSH'ye bakılarak 6 haftada bir ayarlanır. Hedef genç ve orta yaşta 0,5-2,5 mU/L, 65 yaş üstünde 3-6 mU/L'dir. (TEMD 2025, Bölüm 8, s. 97)",
+      "trigger": "Subklinik Hipotiroidi"
+    },
+    {
+      "id": "p-temd-030",
+      "level": "Kılavuz",
+      "title": "Metimazol başlangıç dozu sT4 yüksekliğinin katına göre",
+      "content": "Metimazol başlangıç dozu sT4'ün normalin kaç katı olduğuna göre seçilir: 1-1,5 katta 5-10 mg, 1,5-2 katta 10-20 mg, 2-3 katta 30-40 mg. 100 mg PTU yaklaşık 5-6 mg metimazole denktir. Tedavinin erken döneminde TSH uzun süre baskılı kalabildiği için izlemde kullanılmaz, sT4 ve total T3'e bakılır. Hasta ötiroid olunca doz %30-50 azaltılır, toplam tedavi süresi 12-18 aydır. (TEMD 2025, Bölüm 9, s. 104)",
+      "trigger": "Hipertiroidi ve Tirotoksikoz"
+    },
+    {
+      "id": "p-temd-031",
+      "level": "Kılavuz",
+      "title": "ATİ öncesi ve sırasında nötrofil ile transaminaz eşikleri",
+      "content": "Nötrofil sayısı &lt;1000/mm³ ya da transaminazlar normalin 5 katından yüksekse ATİ başlanmaz. İzlemde transaminazlar 3 katı aşarsa ya da zaten yüksek olan değer daha da yükselirse ilacı kesmek gündeme gelir. Agranülositozun çoğu ilk 90 günde görülür. Metimazolde doza bağlıdır, PTU'da değildir. Ciddi yan etki gelişen hastada çapraz reaksiyon riski yüksek olduğu için öteki ATİ'ye geçmek de kontrendikedir. (TEMD 2025, Bölüm 9, s. 105)",
+      "trigger": "Hipertiroidi ve Tirotoksikoz"
+    },
+    {
+      "id": "p-temd-032",
+      "level": "Kılavuz",
+      "title": "RAI öncesi ve sonrası zamanlama kuralları",
+      "content": "RAI'den önce metimazol 2-3 gün, PTU 7 gün önce kesilir. Yüksek riskli hastada ATİ, RAI'den 7 gün sonra yeniden başlanabilir. Doğurganlık çağındaki kadında 48 saat içinde negatif gebelik testi gerekir. Kadında gebelik 4-6 ay, erkekte 3-4 ay ertelenir. Emziren kadında RAI için emzirme kesildikten sonra 6 hafta beklenir, ikinci doz kararı için de en az 6 ay beklemek gerekir. (TEMD 2025, Bölüm 9, s. 106)",
+      "trigger": "Hipertiroidi ve Tirotoksikoz"
+    },
+    {
+      "id": "p-temd-033",
+      "level": "Kılavuz",
+      "title": "Amiodarona bağlı tirotoksikozda tipe göre doz",
+      "content": "Tip 1'de tiyonamid genellikle 40 mg/gün ile başlanır. İntratiroidal iyot yükü nedeniyle yüksek doz ve uzun süre gerekebilir, sodyum perklorat (250 mg günde 4 kez) eklenebilir. Tip 2'de prednizolon 30-40 mg/gün 2-4 hafta verilir, sonra klinik yanıta göre 2-3 ayda azaltılarak kesilir. Tip ayırt edilemiyorsa ya da klinik ağırsa iki tedavi birlikte başlanır. Bu hastalarda agranülositoz daha sık bildirildiği için daha yakın izlenirler. (TEMD 2025, Bölüm 9, s. 110)",
+      "trigger": "Hipertiroidi ve Tirotoksikoz"
+    },
+    {
+      "id": "p-temd-034",
+      "level": "Kılavuz",
+      "title": "Tiroid fırtınası: PTU önceliği ve Türkiye'de IV beta blokaj",
+      "content": "Tiroid fırtınasında PTU tercih edilir: ilk 24 saatte T3'ü yaklaşık %45 düşürür, metimazol ise %10-15 düşürür. İnorganik iyot, tiyonamidden en az 30 dakika sonra verilmelidir. Türkiye'de IV propranolol satılmadığı için IV beta blokaj esmolol ile yapılır: 0,25-0,5 mg/kg bolus, ardından 0,05-0,1 mg/kg/dk infüzyon. Salisilatlar serbest hormonu artırabildiği için ateş asetaminofenle düşürülür. (TEMD 2025, Bölüm 9, s. 112)",
+      "trigger": "Hipertiroidi ve Tirotoksikoz"
+    },
+    {
+      "id": "p-temd-035",
+      "level": "Kılavuz",
+      "title": "Düşük TSH her zaman subklinik hipertiroidi değildir",
+      "content": "Tanı koymadan önce TSH'yi baskılayan ilaçlar dışlanmalıdır: dopamin, yüksek doz glukokortikoid, somatostatin analogları, dobutamin, amfetamin, beksaroten ve bromokriptin. Hipotalamo-hipofizer hastalık, psikiyatrik hastalık, ağır tiroid dışı hastalık, ilk trimesterin sonu, sigara, ileri yaş ve Afrika kökeni de ayırıcı tanıdadır. Yüksek iyot alımından şüpheleniliyorsa 24 saatlik idrar iyot atılımı ölçülebilir. (TEMD 2025, Bölüm 10, s. 116)",
+      "trigger": "Subklinik Hipertiroidi"
+    },
+    {
+      "id": "p-temd-036",
+      "level": "Kılavuz",
+      "title": "Grade 1 ile Grade 2 subklinik hipertiroidinin doğal seyri",
+      "content": "Grade 1'de (TSH 0,1-0,4 mIU/L) TSH izlemde çoğunlukla normale döner, aşikar hipertiroidiye ilerleme 7 yılda yalnızca %0,5-0,7'dir. Grade 2'de (TSH &lt;0,1 mIU/L) hastalık genellikle kalıcıdır ve aşikar hipertiroidiye ilerleme yılda %5-8'dir. Atriyal fibrilasyon riski TSH düzeyiyle ters orantılıdır. Vasküler hastalığı olan 70-82 yaş grubunda TSH &lt;0,45 mIU/L olanlarda kalp yetmezliği nedeniyle yatış riski daha yüksektir. (TEMD 2025, Bölüm 10, s. 116)",
+      "trigger": "Subklinik Hipertiroidi"
+    },
+    {
+      "id": "p-temd-037",
+      "level": "Kılavuz",
+      "title": "Subklinik hipertiroidide yaş ve TSH'ye göre tedavi kararı",
+      "content": "65 yaşın üstünde subklinik hipertiroidi tedavi edilir. 65 yaşın altında TSH &lt;0,1 mIU/L ise tedavi önerilir, TSH 0,1-0,4 mIU/L ve hasta asemptomatikse izlenir. Semptom, kalp hastalığı ya da osteoporoz varsa tedavi düşünülür; östrojen ya da bifosfonat almayan 65 yaş altı postmenopozal kadında da tedavi düşünülebilir. (TEMD 2025, Bölüm 10, s. 117)",
+      "trigger": "Subklinik Hipertiroidi"
+    },
+    {
+      "id": "p-temd-038",
+      "level": "Kılavuz",
+      "title": "GO aktivitesi KAS ≥3/7; Türkiye Hertel normları",
+      "content": "Yedi maddelik Klinik Aktivite Skorunda 3 ve üstü aktif hastalığı gösterir. İzlemde son 1-3 aydaki üç ölçütle 10 maddelik skor kullanılır: proptozda ≥2 mm artış, göz hareketinde ≥8° azalma ve görme keskinliğinde düşüş. Şiddet sınıflamasındaki ≥3 mm proptoz ölçütü için Türkiye'de medyan Hertel değeri 13 mm, %95 üst sınır 17 mm'dir (cinsiyet ayrımı yapılmamış). Üst kapak retraksiyonu olmadığında tanı yeniden gözden geçirilmelidir. (TEMD 2025, Bölüm 11, s. 124)",
+      "trigger": "Graves Orbitopati"
+    },
+    {
+      "id": "p-temd-039",
+      "level": "Kılavuz",
+      "title": "RAI sonrası GO için steroid profilaksisi dozları",
+      "content": "RAI sonrasında hastaların %15-37'sinde GO ilerler. Yüksek riskte RAI'den 1-3 gün sonra oral prednizolon 0,3-0,5 mg/kg/gün başlanır ve 3 ayda azaltılarak kesilir. Düşük riskte 0,1-0,2 mg/kg ile başlanır ve 6 haftada kesilir. En az 6 aydır stabil, hafif ve inaktif GO'da, hipotiroidi önlenir ve sigara gibi risk faktörü yoksa steroidsiz RAI verilebilir. Orta-ciddi aktif ve görmeyi tehdit eden GO'da RAI kullanılmaz. (TEMD 2025, Bölüm 11, s. 126)",
+      "trigger": "Graves Orbitopati"
+    },
+    {
+      "id": "p-temd-040",
+      "level": "Kılavuz",
+      "title": "Hafif aktif GO'da selenyum: doz, süre ve sınırı",
+      "content": "Yeni başlamış, hafif ve aktif GO'da 6 ay süreyle günde iki kez 100 µg selenyum önerilir (orta kanıt düzeyi). Bu öneri hafif selenyum eksikliği olan bölgelerde yapılmış bir çalışmaya dayanır. Selenyum eksikliği olmayan bölgelerde etkisi bilinmemektedir. Hafif GO'da steroidin riskleri faydasını aştığı için önerilmez. Hiperkolesterolemisi olan GO hastasında statin başlanması düşünülebilir (düşük kanıt düzeyi). (TEMD 2025, Bölüm 11, s. 127)",
+      "trigger": "Graves Orbitopati"
+    },
+    {
+      "id": "p-temd-041",
+      "level": "Kılavuz",
+      "title": "IV metilprednizolon protokolleri ve 8 g kümülatif sınır",
+      "content": "Standart protokol 6 hafta haftada 500 mg, ardından 6 hafta haftada 250 mg metilprednizolondur (toplam 4,5 g). Ağır olgularda 750 mg ve ardından 500 mg ile toplam 7,5 g verilir. Akut karaciğer yetmezliği riski nedeniyle bir kürde toplam doz 8 g'ı geçmemelidir. Pulslar arasında en az 2 gün olmalıdır. Karaciğer enzimleri normalin 4 katını aşıyorsa IV steroid verilmez, kontrollü diyabet ya da hipertansiyon ise kontrendikasyon sayılmaz. (TEMD 2025, Bölüm 11, s. 128)",
+      "trigger": "Graves Orbitopati"
+    },
+    {
+      "id": "p-temd-042",
+      "level": "Kılavuz",
+      "title": "Nodülde kalsitonin: rutin değil, hedefli ölçüm",
+      "content": "Nodül değerlendirmesinde rutin kalsitonin, Tg, kalsiyum ya da PTH ölçümü önerilmiyor. Kalsitonin kişide ya da ailede MTK/MEN 2 öyküsü varsa, nodüle diyare, flushing veya lenf nodu metastazı eşlik ediyorsa bakılmalı. Ayrıca şüpheli sitolojide, tekrarlayan yetersiz biyopside ve sitolojik tanı bilinmeden cerrahiye gidilecekse önerilir. Yüksek bulunan değer tekrarlanmalı. Sıcak nodülde İİAB gerekmez; TSH düşük ve nodül 1,5 cm üzerindeyse sintigrafi yapılır. (TEMD 2025, Bölüm 12, s. 137)",
+      "trigger": "Tiroid Nodülleri"
+    },
+    {
+      "id": "p-temd-043",
+      "level": "Kılavuz",
+      "title": "İİAB kararı EU-TIRADS'a göre: 20 / 15 / 10 mm",
+      "content": "TEMD biyopsi kararında EU-TIRADS'ı esas alıyor ve bu sistemin Türkiye'de en sık kullanılan raporlama sistemi olduğunu belirtiyor. İİAB eşikleri: EU-TIRADS 3 için &gt;20 mm (malignite riski %2-4), EU-TIRADS 4 için &gt;15 mm (%6-17), EU-TIRADS 5 için &gt;10 mm (%26-87). Çok nodüllü bezde dominant nodül yerine her nodül kendi boyutu ve kategorisiyle ayrı değerlendirilir. Karışık yapıdaki nodülde örnek solid bileşenden alınır. (TEMD 2025, Bölüm 12, s. 139)",
+      "trigger": "Tiroid Nodülleri"
+    },
+    {
+      "id": "p-temd-044",
+      "level": "Kılavuz",
+      "title": "FDG-PET insidentalomasında biyopsi eşiği düşüyor",
+      "content": "FDG-PET'te fokal tiroid tutulumu gösteren nodüllerde bir meta-analizde malignite %30-35 bulunmuş; tutulum saptanınca önce US yapılır. PET tutulumu olan EU-TIRADS 4-5 nodülde 1 cm'nin, EU-TIRADS 3 nodülde 2 cm'nin üzeri biyopsi eşiği. 2 cm altındaki PET pozitif EU-TIRADS 2-3 nodüller 6-12 ay arayla US ile izlenir. (TEMD 2025, Bölüm 12, s. 139)",
+      "trigger": "Tiroid Nodülleri"
+    },
+    {
+      "id": "p-temd-045",
+      "level": "Kılavuz",
+      "title": "Yüksek riskli hastada biyopsi eşiği 5 mm'ye iniyor",
+      "content": "Genel eşik 10 mm, ancak yüksek riskli hastada ATA kılavuzu şüpheli US özelliği olan 5 mm üzeri nodüle İİAB öneriyor; 5 mm altına önerilmiyor. Yüksek risk ölçütleri şunlar: birinci derece yakında tiroid kanseri, çocuklukta boyna radyasyon, kanser nedeniyle hemitiroidektomi, PET'te FDG tutulumu, MEN 2/FMTK ile ilişkili RET mutasyonu ve kalsitoninin &gt;100 pg/mL olması. (TEMD 2025, Bölüm 13, s. 143)",
+      "trigger": "İİAB ve Örnekleme"
+    },
+    {
+      "id": "p-temd-046",
+      "level": "Kılavuz",
+      "title": "Kor biyopsi: tekrarlayan ND ve bazı tümörlerde ilk tercih",
+      "content": "İİAB'nin %10–33'ü tanısal olmayan gelir; tekrarlanan biyopsilerde bu oran %9,9–47,8'dir. Tekrarlanan İİAB ile tanı konamayan şüpheli nodülde, 18–21 G yarı otomatik tru-cut iğneyle kor biyopsi doku tanısı sağlar. Lenfoma, metastaz, anaplastik ya da medüller karsinom düşünülüyorsa ve lezyon yeterince büyükse kor biyopsi ilk tercih olabilir. (TEMD 2025, Bölüm 13, s. 150)",
+      "trigger": "İİAB ve Örnekleme"
+    },
+    {
+      "id": "p-temd-047",
+      "level": "Kılavuz",
+      "title": "Lenf nodunda Tg yıkama: <1 normal, 1–10 gri bölge, >10 tanısal",
+      "content": "Tg yıkama, DTK lenf nodu metastazını saptamada lenf nodu sitolojisinden üstün kabul ediliyor ve TEMD ülkemizde daha yaygın kullanılmasını istiyor. Tiroidi alınmış hastada sonografik şüpheyle birlikte 1 ng/mL üzeri ve serum Tg'yi geçen değer şüpheli, 10 ng/mL üzeri tanı koydurucu sayılıyor. Tiroid bezi yerinde olan hastada bir derlemede eşik 32 ng/mL bulunmuş. Serum anti-Tg varlığı sonucu yanlış negatif ya da düşük çıkarabilir. (TEMD 2025, Bölüm 13, s. 150)",
+      "trigger": "İİAB ve Örnekleme"
+    },
+    {
+      "id": "p-temd-048",
+      "level": "Kılavuz",
+      "title": "PEI ilk seçenek kistte; sonrasında biyopsi tuzağı",
+      "content": "Basit aspirasyonla düzelmeyen pür kistik ya da çoğunluğu kistik benign nodülde ilk seçenek perkütan etanol enjeksiyonu; miks ya da solid nodülde önerilmez. Kist boşaltıldıktan sonra boşaltılan hacmin yaklaşık %20-50'si kadar etanol verilir. Hacmin &gt;10 mL olması ve multilokülarite etkinliği azaltabilir. Tedavi edilen kist izlemde hipoekoik ve mikrohiperekoik görünüm alabilir, ancak bunların hiçbirinde malignite bulunmamış; PEI sonrası İİAB yapmaktan kaçınılmalı. (TEMD 2025, Bölüm 14, s. 160)",
+      "trigger": "Nodül Ablasyon Tedavileri"
+    },
+    {
+      "id": "p-temd-049",
+      "level": "Kılavuz",
+      "title": "RFA komplikasyonları; ICD ve gebelikte kaçınma",
+      "content": "RFA'nın en sık majör komplikasyonu, rekürren laringeal sinirin termal yaralanmasına bağlı ses değişikliğidir. Önerilen yaklaşım bölgeye soğuk irrigasyondur ve ses değişikliği çoğu zaman geçicidir. İkinci en sık majör komplikasyon nodül rüptürüdür; genellikle konservatif tedavi edilir, apse gelişirse cerrahi gerekebilir. Monopolar elektrotla yayılan akım fetüsü ve ICD işlevini etkileyebileceği için, ICD'li hastada ve gebede RFA önerilmez. (TEMD 2025, Bölüm 14, s. 165)",
+      "trigger": "Nodül Ablasyon Tedavileri"
+    },
+    {
+      "id": "p-temd-050",
+      "level": "Kılavuz",
+      "title": "Termal ablasyon sonrası izlem ve başarısızlık ölçütü",
+      "content": "En fazla küçülme neredeyse her zaman ilk yılda olur. Yeniden büyüme genellikle 3-5. yılda görülür ve kaydedilen en küçük hacme göre &gt;%50 artış olarak tanımlanır; bu yüzden boyun US'si 1-2 yılda bir yapılır. 6. ayda hacim %30'dan fazla azalmamışsa ya da nodül bası yapacak şekilde yeniden büyümüşse cerrahi düşünülür. Tekrar ablasyondan önce sitoloji önerilir. (TEMD 2025, Bölüm 14, s. 169)",
+      "trigger": "Nodül Ablasyon Tedavileri"
+    },
+    {
+      "id": "p-temd-051",
+      "level": "Kılavuz",
+      "title": "Ablasyon öncesi benignlik: çoğu nodülde iki kez teyit",
+      "content": "Ablasyondan önce solid nodüllerin çoğunda benignlik iki kez gösterilmeli: US eşliğinde 2 İİAB ya da 1 İİAB ile 1 kor biyopsi. Otonom fonksiyone, pür kistik ya da spongiform nodülde tek benign sonuç yeterli. Asemptomatik lezyona termal ablasyon önerilmiyor. Önemli ölçüde büyük retrosternal guatrda RFA önerilmiyor. (TEMD 2025, Bölüm 14, s. 171)",
+      "trigger": "Nodül Ablasyon Tedavileri"
+    },
+    {
+      "id": "p-temd-052",
+      "level": "Kılavuz",
+      "title": "Girişim öncesi ses ve vokal kord değerlendirmesi",
+      "content": "Termal ablasyon öncesinde tiroid ve vokal kord fonksiyonları değerlendirilmelidir. Ses kısıklığı, geçirilmiş boyun cerrahisi ya da kritik yapılara yakın nodül varsa laringoskopi önerilir. RFA'da iki taraflı sinir hasarından kaçınmak için aynı taraftaki sinir fonksiyonu laringeal muayeneyle doğrulanmalıdır. Ameliyat adaylarının hepsine de anamnez ve hekim değerlendirmesiyle preoperatif ses değerlendirmesi yapılmalıdır; önceden var olan ses teli felci ya da parezisi, cerrahinin kapsamını ve hava yolu yönetimini etkiler. (TEMD 2025, Bölüm 14, s. 171)",
+      "trigger": "Nodül Ablasyon Tedavileri"
+    },
+    {
+      "id": "p-temd-053",
+      "level": "Kılavuz",
+      "title": "DSÖ 2022 terimleri: alt tip, onkositik, İEFVPTK",
+      "content": "TEMD, PTK'da \"variant\" yerine \"alt tip\" denmesini, \"Hürthle hücre\" yerine \"onkositik hücre\" denmesini önerir. Buna göre onkositik adenom ve onkositik karsinom ayrı antitelerdir. Morfolojik alt tipleriyle PTK'ların çoğu BRAF tipi malignitedir. İnvaziv enkapsüle foliküler varyant PTK ise foliküler karsinom gibi RAS tipidir ve artık PTK'nın alt tipi değil, ayrı bir antitedir. Kribriform-morular karsinom da PTK alt tipi sayılmaz; mikrokarsinomlarda bile alt tip belirtilmelidir. (TEMD 2025, Bölüm 15, s. 178)",
+      "trigger": "Neoplazi Sınıflaması"
+    },
+    {
+      "id": "p-temd-054",
+      "level": "Kılavuz",
+      "title": "Agresif PTK alt tiplerinin sayısal eşikleri",
+      "content": "Yüksek silindirik hücreli (tall cell) alt tip için hücre boyu genişliğin en az üç katı olmalı ve bu hücreler tümörün en az %30'unu oluşturmalı. Hobnail için ≥%30 hobnail hücresi, solid alt tip için &gt;%50 solid-trabeküler büyüme gerekir. Mikrokarsinomlar da agresif alt tip barındırabildiği için alt tipi mutlaka raporlanmalı; agresif alt tip hastayı ATA orta risk grubuna taşır. TEMD 'variant' yerine 'alt tip', 'Hürthle' yerine 'onkositik' terimini öneriyor. (TEMD 2025, Bölüm 15, s. 178)",
+      "trigger": "Neoplazi Sınıflaması"
+    },
+    {
+      "id": "p-temd-055",
+      "level": "Kılavuz",
+      "title": "Yüksek dereceli karsinom ve MTK derecelendirmesi (DSÖ 2022)",
+      "content": "Diferansiye yüksek dereceli tiroid karsinomu tanısı için her 2 mm² başına ≥5 mitoz ve/veya tümör nekrozu gerekir; anaplastik histoloji yoktur. RAİ tutma eğilimi iyi diferansiye kanserlerden azdır ve prognozu az diferansiye karsinoma benzer. Yüksek dereceli MTK için şu üçünden biri yeter: ≥5 mitoz/2 mm², nekroz ya da Ki67 ≥%5. Bu tümörler MTK'ların %25'ini oluşturur. İki grup da daha yoğun tedavi ve daha sıkı nüks izlemi gerektirir. (TEMD 2025, Bölüm 15, s. 179)",
+      "trigger": "Neoplazi Sınıflaması"
+    },
+    {
+      "id": "p-temd-056",
+      "level": "Kılavuz",
+      "title": "Ameliyat öncesi kontrastlı BT, RAİ'yi geciktirse de gerekebilir",
+      "content": "IV kontrastın iyot yükü çoğu hastada 4-8 haftada temizlenir. Kesitsel görüntüleme cerrahi yaklaşımı değiştirebilecekse bu gecikme yarar-zarar dengesi gözetilerek göze alınabilir; endişe varsa idrar iyot/kreatinin oranı ölçülür. Cerrahi öncesi lenf nodunda en kısa çapın &gt;0,5 cm olması özgüllüğü (%96) duyarlılığından (%61) yüksek bir ölçüt. Hilus kaybının özgüllüğü ise yalnızca %29. (TEMD 2025, Bölüm 16, s. 185)",
+      "trigger": "Tiroidektomi Öncesi Değerlendirme"
+    },
+    {
+      "id": "p-temd-057",
+      "level": "Kılavuz",
+      "title": "Postoperatif 1. ay Tg: Türkiye verisi ve beklenen değerler",
+      "content": "Tg ameliyattan sonra yaklaşık 4. haftada en düşük düzeye iner. Türkiye'de deneyimli cerrahların ameliyat ettiği hastaların önemli bir kısmında 1. ay Tg 0,5 ng/mL'nin altında bulunuyor; yüksek kalması rezidü doku ya da yetersiz cerrahi için uyarıdır. Uyarılmamış Tg total tiroidektomi sonrası &lt;5, lobektomi sonrası &lt;30 ng/mL olmalı. Bakiye doku miktarını değerlendirmek için 131I değil 99mTc sintigrafisi önerilir. (TEMD 2025, Bölüm 17, s. 194)",
+      "trigger": "DTK Cerrahi Sonrası"
+    },
+    {
+      "id": "p-temd-058",
+      "level": "Kılavuz",
+      "title": "RAİ Türkiye'de fazla veriliyor: kime, ne dozda",
+      "content": "TEMD, ülkemizde RAİ'nin gereğinden sık ve yüksek dozda kullanıldığını belirtiyor. Düşük riskli hastaya RAİ gerekmez; tek ya da çok odaklı &lt;1 cm PTK'da endikasyon yoktur. Bakiye ablasyonu için genellikle 30 mCi yeterlidir; yüksek riskli hastaya &gt;100-150 mCi verilir. Verilecekse ameliyattan sonraki 1-3 ay içinde uygulanmalı. 70 yaş üzerinde tek seferde 150 mCi'nin üzerinde ampirik dozdan kaçınılmalı. (TEMD 2025, Bölüm 17, s. 197)",
+      "trigger": "DTK Cerrahi Sonrası"
+    },
+    {
+      "id": "p-temd-059",
+      "level": "Kılavuz",
+      "title": "Biyokimyasal inkomplet yanıtın Tg eşikleri ve seyri",
+      "content": "Ablasyondan sonra uyarılmamış Tg'nin 6. ayda &gt;5, 12. ayda &gt;1 ng/mL olması ya da 1 yıldan sonra uyarılmış Tg'nin &gt;10 ng/mL bulunması biyokimyasal inkomplet yanıt sayılır. Bu grup DTK'ların %10-20'sini oluşturur, 6-12 ayda bir izlenir ve yaklaşık %2'si yapısal hastalığa döner. Bazal Tg'nin ikiye katlanma süresi ya da yılda ≥0,3 ng/mL artması yapısal hastalık riskini gösterir. Lobektomi sonrası anti-Tg negatif, görüntülemesi temiz ve bazal Tg &lt;30 ng/mL ise yanıt mükemmel kabul edilir. (TEMD 2025, Bölüm 17, s. 200)",
+      "trigger": "DTK Cerrahi Sonrası"
+    },
+    {
+      "id": "p-temd-060",
+      "level": "Kılavuz",
+      "title": "TSH hedefi risk grubuna ve tedavi yanıtına göre değişir",
+      "content": "Başlangıçta TSH hedefi yüksek riskli hastada &lt;0,1, orta riskli hastada 0,1-0,5, Tg'si ölçülemeyen düşük riskli hastada ve lobektomi sonrası 0,5-2 mU/L. Yüksek riskli hasta mükemmel yanıt verirse tam baskılama kaldırılır, ancak TSH en az 5 yıl 0,1-0,5 mU/L'de tutulur. Yapısal inkomplet yanıtta hedef her zaman &lt;0,1, biyokimyasal inkomplet yanıtta 0,1-0,5 mU/L. Tg hızla yükseliyorsa düşük riskli hastada bile TSH &lt;0,1 tutulabilir. (TEMD 2025, Bölüm 17, s. 204)",
+      "trigger": "DTK Cerrahi Sonrası"
+    },
+    {
+      "id": "p-temd-061",
+      "level": "Kılavuz",
+      "title": "Odaksız kalsitonin yüksekliğinde kararı ikiye katlanma süresi verir",
+      "content": "Ameliyat sonrası kalsitonin &gt;150 pg/mL ise boyun USG ve akciğer BT, odak bulunmazsa karaciğer MRG/3 fazlı BT, kemik sintigrafisi ve aksiyel iskelet MRG ile taranır. Tüm incelemelere karşın odak yoksa kalsitonin ve CEA ikiye katlanma süresi izlenir: &gt;2 yılda 6 ayda bir takip yeterlidir, 6-12 ayda bulgulara göre ek tedavi verilir, &lt;6 ayda 5-10 yıllık sağkalım düşüktür. Kalsitonin sabitken CEA'nın hızla artması ya da akciğer metastazında hacmin 1 yıldan kısa sürede ikiye katlanması kötü prognoz demektir ve sistemik tedavi önerilir. (TEMD 2025, Bölüm 18, s. 221)",
+      "trigger": "Medüller Tiroid Kanseri"
+    },
+    {
+      "id": "p-temd-062",
+      "level": "Kılavuz",
+      "title": "RET taşıyıcısında profilaktik tiroidektomi yaşı risk grubuna bağlı",
+      "content": "M918T (çok yüksek risk) taşıyan çocukta profilaktik tiroidektomi yaşamın ilk yılında, C634 ve A883F (yüksek risk) taşıyanda 5 yaştan önce önerilir. Yüksek riskli çocukta bazal ya da uyarılmış kalsitonin yüksekse ameliyat daha da öne alınabilir. Ultrasonografide patolojik lenf nodu varsa ya da kalsitonin &gt;40 pg/mL ise santral diseksiyon da eklenir. Orta risk grubunda muayene, USG ve kalsitonine göre ameliyat 5 yaşına kadar ertelenebilir; MEN2B taşıyıcısında ise kalsitonin &lt;30-60 pg/mL olsa bile tiroidektomi ve santral diseksiyon mümkün olan en kısa sürede yapılır. (TEMD 2025, Bölüm 18, s. 223)",
+      "trigger": "Medüller Tiroid Kanseri"
+    },
+    {
+      "id": "p-temd-063",
+      "level": "Kılavuz",
+      "title": "Türkiye'ye özgü RET analiz sırası; önce feokromositoma dışlanır",
+      "content": "Türkiye'de en sık görülen RET mutasyonları ekzon 11 (634) ve 14 (804) olduğu için MEN2A fenotipinde ve sporadik görünen MTK'da analiz ekzon 11 ile başlar, negatifse ekzon 14, sonra 8, 10, 13, 15 ve 16. ekzonlar çalışılır. MEN2B fenotipinde önce ekzon 16, negatifse ekzon 15, ardından tüm gen dizilenir; ailede mutasyon biliniyorsa tek ekzon yeterlidir. Herediter MTK düşünülen hastada ameliyattan önce feokromositoma ve primer hiperparatiroidi dışlanmalı, feokromositoma kesinleşirse önce o ameliyat edilmelidir. (TEMD 2025, Bölüm 18, s. 224)",
+      "trigger": "Medüller Tiroid Kanseri"
+    },
+    {
+      "id": "p-temd-064",
+      "level": "Kılavuz",
+      "title": "Kabozantinibin 60 mg tableti ile 140 mg kapsülü birbirinin yerine geçmez",
+      "content": "RAİ'ye dirençli DTK'da, sorafenib ya da lenvatinib altında progresyon sonrası kabozantinib günde bir kez 60 mg tablet olarak, aç karnına alınır. İleri MTK'da kullanılan günde bir kez 140 mg'lık kapsül formu bununla biyoeşdeğer değildir ve birbirinin yerine kullanılmamalıdır. Kılavuz ayrıca, MTK'da kabozantinibin yüksek riskli RET M918T mutasyonu taşıyanlarda daha etkili olduğunu belirtiyor. (TEMD 2025, Bölüm 19, s. 232)",
+      "trigger": "İleri Kanserde Yeni İlaçlar"
+    },
+    {
+      "id": "p-temd-065",
+      "level": "Kılavuz",
+      "title": "Anaplastik kanserde dabrafenib+trametinib yalnızca BRAF V600E'de",
+      "content": "BRAF V600E mutasyonlu ATK'da dabrafenib 150 mg günde iki kez ile trametinib 2 mg günde bir kez verilir; TEMD bunu artık standart bakım olarak görüyor. Kombinasyon neoadjuvan tedavi olarak rezeksiyon şansını artırabilir, ameliyat edilemeyen hastada ise palyatif amaçla kullanılabilir. Hastaların ancak %20-50'sinde BRAF mutasyonu bulunur ve zamanla direnç gelişebilir. Mutasyonu olmayanların %2-3'ünde NTRK, ALK ya da RET füzyonu hedeflenebilir; hedefi olmayan evre IVC hasta klinik çalışmaya yönlendirilmelidir. (TEMD 2025, Bölüm 19, s. 239)",
+      "trigger": "İleri Kanserde Yeni İlaçlar"
+    },
+    {
+      "id": "p-temd-066",
+      "level": "Kılavuz",
+      "title": "BRAF V600E, TERT ve K601E: cerrahinin genişliğine etkisi",
+      "content": "BRAF V600E, PTK'ların %60–70'inde görülür. Duyarlılığı %60 civarında olduğu için Bethesda III–IV'te katkısı azdır. BRAF V600E ile TERT promotor mutasyonu birlikteyse klinik ve patolojik sonlanım daha kötüdür. Amerikan Endokrin Cerrahları Birliği, şüpheli sitolojide BRAF V600E ya da TERT saptanırsa ilk cerrahi olarak total tiroidektomiyi, BRAF K601E gibi mutasyonlarda lobektomiyi önerir. (TEMD 2025, Bölüm 20, s. 246)",
+      "trigger": "Preoperatif Genetik İnceleme"
+    },
+    {
+      "id": "p-temd-067",
+      "level": "Kılavuz",
+      "title": "Moleküler test Bethesda III-IV içindir; V'te ve USG'de yüksek riskte zayıf",
+      "content": "Afirma GSC ve ThyroSeq v3, Bethesda III-IV nodüllerin yaklaşık yarısını benign olarak yeniden sınıflayıp gereksiz ameliyatı önleyebilir. Ancak ultrasonografide yüksek riskli III-IV nodülde maligniteyi dışlamada yetersiz kalır. Bethesda V'te ve zaten cerrahi endikasyonu olan nodülde (bası, hasta tercihi) önerilmez, çünkü pozitif belirleyicilik değeri sitolojininkinden farklı değildir ve test negatif çıksa da tanısal lobektomi gerekebilir. (TEMD 2025, Bölüm 20, s. 247)",
+      "trigger": "Preoperatif Genetik İnceleme"
+    },
+    {
+      "id": "p-temd-068",
+      "level": "Kılavuz",
+      "title": "THD-beta mı TSH-oma mı: alfa-subunit oranı ve T3 baskılama eşiği",
+      "content": "Alfa-subunit (μg/L) / TSH (mU/L) × 10 formülüyle hesaplanan molar oranın &gt;3.2 olması TSH-oma lehinedir. Ancak mikroadenomda oran normal olabilir, menopoz sonrasında ise gonadotropin etkisiyle yüksek çıkar. TRH ile TSH'nın hiç artmaması ya da 1,5 kattan az artması da TSH-omayı düşündürür. T3 baskılama testinde (50, 100 ve 200 µg/gün, her doz 3 gün) TSH &lt;0,11 mIU/L eşiği %100 özgüllükle ayırır; test ileri yaşta ve kardiyovasküler hastalıkta yapılmaz. Ailede THD-beta öyküsü olan kişide bu testlere gerek yoktur. (TEMD 2025, Bölüm 21, s. 256)",
+      "trigger": "Tiroid Hormon Direnci"
+    },
+    {
+      "id": "p-temd-069",
+      "level": "Kılavuz",
+      "title": "THD-beta'da gebelik, beta-bloker seçimi ve antikor tuzağı",
+      "content": "THD-beta'lı annede etkilenmemiş fetüs tirotoksikoz ve düşük riski taşır. Bu durumda sT4, dikkatli PTU kullanımıyla ve hipotiroidiye yol açmadan, normalin üst sınırını %50'den fazla aşmayacak düzeyde tutulur. Taşikardi tedavisinde propranolol değil atenolol kullanılır, çünkü propranolol T4'ün T3'e dönüşümünü baskılar; ablatif tedaviden de kaçınılmalıdır. THD-beta otoimmün tiroid hastalığı riskini artırdığı için anti-TPO ya da anti-Tg pozitifliği araştırmayı durdurmamalıdır. (TEMD 2025, Bölüm 21, s. 257)",
+      "trigger": "Tiroid Hormon Direnci"
+    },
+    {
+      "id": "p-temd-070",
+      "level": "Kılavuz",
+      "title": "Subakut tiroiditte steroid şeması ve nüks yönetimi",
+      "content": "Ibuprofen 1200-3200 mg/gün ile birkaç gün içinde yanıt alınamazsa günde 40 mg prednizolona geçilir; bir haftanın sonunda azaltılmaya başlanır ve yaklaşık 6 haftada kesilir. Azaltırken ağrı artarsa bir önceki doza dönülür ve en az 2 hafta sonra yeniden azaltılır. Hastaların yaklaşık %20'sinde steroid kesildikten sonra ağrı tekrarlar. Hipotiroidi fazında belirti varsa ve TSH &gt;10 mU/L ise 6-8 hafta 50-100 µg/gün LT4 verilebilir; ilaç kesildikten sonra kalıcı hipotiroidi açısından tiroid fonksiyonları kontrol edilmelidir. (TEMD 2025, Bölüm 22, s. 266)",
+      "trigger": "Tiroiditler"
+    },
+    {
+      "id": "p-temd-071",
+      "level": "Kılavuz",
+      "title": "Postpartum tiroidit: risk, Graves ayrımı ve emzirmede yaklaşım",
+      "content": "İlk trimesterde tiroid antikoru pozitif olan kadında postpartum tiroidit riski %33-50'dir. Graves'ten ayırmak için TRAb bakılır; emzirme sürdüğü için sintigrafi gerekmedikçe yapılmaz. T3/T4 oranının &gt;20 olması, belirgin guatr, orbitopati ve Doppler'de artmış akım Graves'i düşündürür. Tirotoksik fazda emzirmeyle uyumlu olduğu için propranolol önerilir; yüksek TSH ve antikor titresi, multiparite ve &gt;50-75 µg/gün LT4 ihtiyacı kalıcı hipotiroidi riskini artırır. (TEMD 2025, Bölüm 22, s. 267)",
+      "trigger": "Tiroiditler"
+    },
+    {
+      "id": "p-temd-072",
+      "level": "Kılavuz",
+      "title": "Amiodaron: tirotoksikozda tip 1/tip 2 ayrımı, hipotiroidide devam",
+      "content": "Tip 1 amiodaron tirotoksikozu, özellikle multinodüler guatrda iyot yükünün hormon sentezini artırmasıyla gelişir ve tiyonamidlerle tedavi edilir. Tip 2, tiroid hastalığı olmayan bezde doğrudan toksik yıkıcı tiroidittir ve glukokortikoidle tedavi edilir. Hipotiroidi gelişirse amiodaron kesilmez, standart LT4 tedavisi verilir. İlaç 3-4 ayda bir TFT ile izlenir; ilaç ve metabolitinin yarı ömrü yaklaşık 2 ay olduğundan kesildikten sonra da en az yılda bir kontrol gerekir. (TEMD 2025, Bölüm 22, s. 271)",
+      "trigger": "Tiroiditler"
+    },
+    {
+      "id": "p-temd-073",
+      "level": "Kılavuz",
+      "title": "Lityum: başlamadan anti-TPO bak, hipotiroidide ilacı kesme",
+      "content": "Lityuma bağlı hipotiroidi prevalansı %17.6, hipertiroidi prevalansı %1-1.7'dir; altta otoimmün tiroid hastalığı olanların %15-40'ında T4 düşer ve TSH yükselir. Tedaviden önce sT3, sT4, TSH ve anti-TPO ölçülmelidir, çünkü antikor pozitifliği riski artırır. Hipotiroidi tedavi başlar başlamaz da, yıllar sonra da çıkabileceği için TFT düzenli izlenir. Hipotiroidi klasik yolla tedavi edilir, lityumu kesmek gerekmez. (TEMD 2025, Bölüm 23, s. 279)",
+      "trigger": "Tiroid ve İlaçlar"
+    },
+    {
+      "id": "p-temd-074",
+      "level": "Kılavuz",
+      "title": "Heparin ve biotin TSH-oma, THD ya da hipertiroidiyi taklit edebilir",
+      "content": "Fraksiyone ve fraksiyone olmayan heparin, düşük dozda ve enoksaparinle bile lipoprotein lipaz aracılı serbest yağ asidi artışıyla sT4 ve sT3'ü yalancı olarak yükseltir. TSH normalken bu tablo TSH-oma ya da tiroid hormon direncini taklit eder. Etkiyi azaltmak için sT4, enoksaparinden 10 saat sonra ölçülmelidir. Biotin ise TSH'yı düşük, sT4 ve T3'ü yüksek göstererek hipertiroidiyi taklit edebilir. (TEMD 2025, Bölüm 23, s. 280)",
+      "trigger": "Tiroid ve İlaçlar"
+    },
+    {
+      "id": "p-temd-075",
+      "level": "Kılavuz",
+      "title": "İKİ ile tiroid disfonksiyonu: önce kortizol, sonra LT4",
+      "content": "Özellikle anti-CTLA4 alanlarda santral hipotiroidi gelişebilir ve çoğunlukla ACTH eksikliği de eşlik eder. Bu nedenle TSH ile birlikte sT4 ölçülmeli, LT4'ten önce kortizol eksikliği tedavi edilmelidir. İlk 6 ay her kürden önce TSH ve sT4 bakılır. Yüksek doz glukokortikoid tiroid hasarını önlemez; yalnızca ciddi tirotoksikoz ve ciddi göz hastalığında kullanılır. LT4, TSH &gt;10 mIU/L ve sT4 düşükken 1 mcg/kg/gün ile başlanır; TSH 4-10 mIU/L ve sT4 normalse rutin tedavi önerilmez. (TEMD 2025, Bölüm 24, s. 286)",
+      "trigger": "Onkolojik Ajanlar ve Tiroid"
+    },
+    {
+      "id": "p-temd-076",
+      "level": "Kılavuz",
+      "title": "TKİ altında LT4 ihtiyacı artar; izlem sıklığı ve tedavi eşiği",
+      "content": "TKİ başlanınca LT4 kullananların %20-60'ında doz ihtiyacı artar; mekanizmalar arasında emilim azalması, MCT8 inhibisyonu ve tip 3 deiyodinaz artışı sayılır. LT4 alan hastada ilk 3 ay her ay, sonra 3 ayda bir TSH bakılır; bezi sağlam hastada ilk 6 ay aylık, sonra 2-3 ayda bir tarama yapılır. LT4, TSH &gt;10 mIU/L ise ya da 2-4 hafta arayla iki ölçümde 4-10 mIU/L çıkıp belirti, anti-TPO pozitifliği veya otoimmün USG bulgusu varsa başlanır. Tirotoksik fazda tercihen kardiyoselektif olmayan beta-bloker verilir, antitiroid ilaç verilmez ve etkiliyse TKİ sürdürülür. (TEMD 2025, Bölüm 24, s. 290)",
+      "trigger": "Onkolojik Ajanlar ve Tiroid"
+    },
+    {
+      "id": "p-temd-077",
+      "level": "Kılavuz",
+      "title": "Kritik hastada hipertiroidi şüphesi: total T3 ölç, ATİ 2C",
+      "content": "TSH &lt;0,05 mU/L ve sT4 yüksek ya da yüksek-normal olduğunda, hipertiroidiyi TDHS'den ayırmak için total T3 (bazen total T4) ölçülmesi gerekebilir. Hipertiroididen şüphelenilen kritik hastada TSH çoğunlukla &lt;0,01'dir ama 0,05 mU/L'ye kadar çıkabilir. Böyle bir hastaya antitiroid ilaç başlanabilir, TDHS düzeldikten sonra yeniden değerlendirme planlanır (Grade 2C). (TEMD 2025, Bölüm 25, s. 302)",
+      "trigger": "Tiroid Dışı Hastalık Sendromu"
+    },
+    {
+      "id": "p-temd-078",
+      "level": "Kılavuz",
+      "title": "TDHS iyileşme fazında TSH yükselmesi: 20 mU/L eşiği",
+      "content": "TDHS'den çıkan hastada TSH'nin 20 mU/L'ye kadar yükselmesi baskılanmış aksın toparlandığını gösterebilir; bu tek başına hipotiroidi demek değildir. Tiroid hormonu ancak sT4 düşük, TSH ≥20 mU/L ve klinik şüphe varsa başlanır, hasta iyileşince yeniden değerlendirilir. Ters yöndeki tuzak da var: dopamin ya da yüksek doz glukokortikoid, gerçek hipotiroidisi olan hastada akut fazdaki yüksek TSH'yi düşürüp tabloyu gizleyebilir. (TEMD 2025, Bölüm 25, s. 304)",
+      "trigger": "Tiroid Dışı Hastalık Sendromu"
+    },
+    {
+      "id": "p-temd-079",
+      "level": "Kılavuz",
+      "title": "TDHS'de tiroid hormonu verilmez (Grade 1B) · CABG sonrası da (1A)",
+      "content": "Altta primer tiroid hastalığı yokmuş gibi görünen, sT4'ü ve total T3'ü düşük kritik hastaya tiroid hormonu verilmemesi önerilir (Grade 1B). Daha önce ötiroid olup CABG yapılan hastaya ameliyattan hemen sonra tiroid hormonu önerilmez (Grade 1A). Serum düzeyini düzeltmek dokudaki hormon etkisini düzeltmek demek değildir. Klinik şüphe yoksa yoğun bakımda tiroid fonksiyon testi istenmesi de gerekli görülmez. (TEMD 2025, Bölüm 25, s. 304)",
+      "trigger": "Tiroid Dışı Hastalık Sendromu"
+    },
+    {
+      "id": "p-temd-080",
+      "level": "Kılavuz",
+      "title": "Gebelikte TSH üst sınırı: 2,5 / 3,0; bilinmiyorsa 4,0",
+      "content": "Kılavuz TSH üst sınırını ilk trimesterde 2,5 mU/L, ikinci ve üçüncü trimesterde 3,0 mU/L alıyor. Trimestere özgü aralık yoksa üst sınır 4,0 mU/L kabul edilir. sT4 ne olursa olsun TSH &gt;10 mU/L aşikâr hipotiroidi sayılır; TSH 2,5–10 mU/L ve sT4 normalse subklinik hipotiroidi denir. (TEMD 2025, Bölüm 26, s. 307)",
+      "trigger": "Gebelik ve Hipotiroidi"
+    },
+    {
+      "id": "p-temd-081",
+      "level": "Kılavuz",
+      "title": "Gebe subklinik hipotiroidide LT4 kararını anti-TPO belirler",
+      "content": "TSH trimestere özgü alt sınır ile 2,5 mU/L arasındaysa bir şey yapılmaz. TSH &gt;2,5 ise anti-TPO bakılır, &gt;4 ise hipotiroidinin derecesi için sT4 ölçülür. Anti-TPO pozitif subklinik hipotiroidide LT4 önerilir, çünkü randomize çalışmalarda obstetrik riski azaltmış. Antikor negatif olguda tedavi hâlâ tartışmalıdır. İzole hipotiroksinemiye rutin LT4 önerilmez; önce iyot desteği verilir, bu Türkiye için 100–150 μg/gün demektir. (TEMD 2025, Bölüm 26, s. 308)",
+      "trigger": "Gebelik ve Hipotiroidi"
+    },
+    {
+      "id": "p-temd-082",
+      "level": "Kılavuz",
+      "title": "Gebelik doğrulanınca LT4 artışı: haftada 2 gün çift doz (%29)",
+      "content": "Gebelik doğrulanır doğrulanmaz iki yoldan biriyle doz artırılır: haftanın iki günü günlük dozun iki katı verilir (günde %29 artışa denk) ya da günlük doz %25–30 yükseltilir. Ablasyon yapılmış kadında ihtiyaç Hashimoto'dakinden fazladır. Santral hipotiroidide doz %25–50 artırılır ve sT4 normal aralığın üst çeyreğinde tutulur. Fazla doz erken doğumla ilişkili olduğu için ilk 24 haftada 4 haftada bir kontrol edilir. Doğumdan sonra gebelik öncesi doza dönülür, 6. haftada TSH bakılır. (TEMD 2025, Bölüm 26, s. 309)",
+      "trigger": "Gebelik ve Hipotiroidi"
+    },
+    {
+      "id": "p-temd-083",
+      "level": "Kılavuz",
+      "title": "Gestasyonel geçici tirotoksikoz: 14–18. haftada düzelir, ATİ yok",
+      "content": "hCG 10–12. haftalarda zirve yapar; GTT'de sT4 hafifçe yüksek, TSH hafifçe düşüktür ve tablo 14–18. haftalarda kendiliğinden düzelir. Tedavi destekleyicidir (sıvı, antiemetik); ATİ önerilmez. Hiperemezis gravidarumda T3 yükselmeyebilir, Graves'te ise sT4 ile T3 çoğunlukla birlikte yükselir. Aşikâr hipertiroidi birkaç haftadan uzun ya da ilk trimesterden sonra sürerse hCG aracılı olması olası değildir. (TEMD 2025, Bölüm 27, s. 314)",
+      "trigger": "Gebelik ve Hipertiroidi"
+    },
+    {
+      "id": "p-temd-084",
+      "level": "Kılavuz",
+      "title": "Gebelikte ATİ: ilk trimesterde PTU, 16. haftadan sonra MMI, 1:20",
+      "content": "İlk trimesterde tedavi gerekiyorsa PTU verilir; 16. haftadan sonra annede karaciğer yetmezliği riskini azaltmak için MMI'ya geçilir. Dönüşüm oranı yaklaşık 1:20'dir (MMI 5 mg/gün = PTU günde iki kez 50 mg). Graves'i olup ötiroid seyreden ve düşük doz alan (MMI 5–10 mg/gün ya da PTU 100–200 mg/gün) yeni gebede ATİ kesmek düşünülebilir. Kesilirse tiroid testleri 1–2 haftada bir yapılır. (TEMD 2025, Bölüm 27, s. 316)",
+      "trigger": "Gebelik ve Hipertiroidi"
+    },
+    {
+      "id": "p-temd-085",
+      "level": "Kılavuz",
+      "title": "Hedef annede hafif fazlalık: fetüs ATİ'ye daha duyarlı",
+      "content": "ATİ plasentayı geçer ve fetüste anneden daha güçlü etki eder; anneyi tam ötiroid yapmak çoğu zaman fetüsü aşırı tedavi etmek olur. Bu yüzden hedef, sT4'ü trimestere özgü aralığın üst sınırında ya da hemen üstünde, TSH'yi aralığın altında (yaklaşık 0,1–0,3 mU/L) tutmaktır. Trimester aralığı yoksa TT4/TT3 gebelik dışı aralığın 1,5 katında tutulur. Üçüncü trimesterde TRAb düştükçe hastaların %20–30'unda ATİ kesilebilir. (TEMD 2025, Bölüm 27, s. 316)",
+      "trigger": "Gebelik ve Hipertiroidi"
+    },
+    {
+      "id": "p-temd-086",
+      "level": "Kılavuz",
+      "title": "Burch-Wartofsky: ≥45 kriz, 25–44 tehdit, <25 olası değil",
+      "content": "Burch-Wartofsky skoru ≥45 ise tiroid krizini, 25–44 ise kriz tehdidini düşündürür; &lt;25'te kriz olası değildir. Skor duyarlıdır ama özgül değildir: yüksek ateşli influenzayı kriz tablosundan ayıramaz. Japon Tiroid Cemiyeti'nin skoru tanıda Burch-Wartofsky kadar duyarlı değildir. Hormon düzeyleri tek başına krizin göstergesi olamaz; en sık kolaylaştırıcı neden enfeksiyondur. (TEMD 2025, Bölüm 28, s. 319)",
+      "trigger": "Tiroid Krizi"
+    },
+    {
+      "id": "p-temd-087",
+      "level": "Kılavuz",
+      "title": "Tiroid krizinde önce ATİ, iyot en az 1 saat sonra",
+      "content": "Krizde PTU tercih edilir, çünkü T4'ün T3'e dönüşümünü de engeller: 6–8 saatte bir 200–400 mg. PTU verilemiyorsa 6 saatte bir MMI 20–25 mg kullanılır; ağızdan alınamıyorsa ikisi de rektal verilebilir. İyot ATİ'den en az 1 saat sonra başlanır: SSKİ 6 saatte bir 3–5 damla (damlada 37,5 mg iyot) ya da Lugol 6–8 saatte bir 4–8 damla (damlada 6,25 mg iyot). (TEMD 2025, Bölüm 28, s. 321)",
+      "trigger": "Tiroid Krizi"
+    },
+    {
+      "id": "p-temd-088",
+      "level": "Kılavuz",
+      "title": "Krizde propranolol ve hidrokortizon; plazmaferezin etkisi 1–2 gün",
+      "content": "Selektif olmayan beta bloker tercih edilir: propranolol 6 saatte bir 60–80 mg PO; damar yolundan gerekirse esmolol 50–100 µg/kg/dk. Destek tedavisine 6–8 saatte bir 50–100 mg IV hidrokortizon eklenir; lityum ve kolestiramin ek seçeneklerdir. Plazmaferez üç günde belirgin düzelme sağlar ama etkisi 1–2 gün sürer, bu yüzden ardından kalıcı tedavi olarak tiroid cerrahisi düşünülmelidir. (TEMD 2025, Bölüm 28, s. 322)",
+      "trigger": "Tiroid Krizi"
+    },
+    {
+      "id": "p-temd-089",
+      "level": "Kılavuz",
+      "title": "Miksödem komasında IV LT4: 200–400 mcg yükleme, sonra %75",
+      "content": "IV 200–400 mcg T4 yüklemesinin ardından günlük replasman dozunun (1,6 μg/kg) %75'i IV sürdürülür. Hafif ve yaşlı hastada ya da kardiyak risk varsa aralığın alt ucu seçilir. Çok yüksek dozlar (T4 &gt;500 mcg, T3 ≥75 mcg) ara dozlardan daha az etkili görünüyor. Adrenal yetmezlik dışlanana kadar stres dozunda glukokortikoid verilir. Oral tedaviye geçerken emilimin yalnızca %75–80 olduğu hesaba katılır. (TEMD 2025, Bölüm 29, s. 326)",
+      "trigger": "Miksödem Koması"
+    },
+    {
+      "id": "p-temd-090",
+      "level": "Kılavuz",
+      "title": "Miksödem komasında T3: 5–20 mcg, sonra 8 saatte bir 2,5–10 mcg",
+      "content": "T3 eklenecekse IV 5–20 mcg ile başlanır, ardından 8 saatte bir 2,5–10 mcg verilir. Yaşlı ya da kardiyovasküler hastalığı olan hastada düşük doz seçilir ve klinik düzelme sağlanıp hasta stabil olana kadar sürdürülür. Tedavi sırasında yüksek T3 mortaliteyle ilişkili bulunmuş. Bu nedenle 1–2 günde bir T4 ve T3 ölçülür; T3 yüksekse doz azaltılır. (TEMD 2025, Bölüm 29, s. 326)",
+      "trigger": "Miksödem Koması"
+    },
+    {
+      "id": "p-temd-091",
+      "level": "Kılavuz",
+      "title": "Türkiye'de 2024'ten beri IV LT4 var; yoksa oral 300–500 mcg",
+      "content": "Türkiye'de 2024'ten beri miksödem koması endikasyonlu IV tiroid hormonu preparatı bulunuyor (500 mcg liyofilize toz). IV T4'e ulaşılamazsa oral T4'ün de etkili olduğunu gösteren vaka serileri var; bu serilerde 300–500 mcg oral yükleme dozu kullanılmış. Hipotermide aktif ısıtma değil battaniyeyle pasif ısıtma tercih edilir; aktif ısıtma vazodilatasyon yapıp hipotansiyonu ağırlaştırabilir. (TEMD 2025, Bölüm 29, s. 326)",
+      "trigger": "Miksödem Koması"
+    },
+    {
+      "id": "p-temd-092",
+      "level": "Kılavuz",
+      "title": "Bethesda 2023: kategori başına ortalama malignite riski",
+      "content": "2023 baskısında ortalama malignite riski şöyle: I %13 (5–20), II %4 (2–7), III %22 (13–30), IV %30 (23–34), V %74 (67–83), VI %97 (97–100). III için seçenekler tekrar İİA, moleküler test, tanısal lobektomi ya da takiptir. IV'te moleküler test ya da tanısal lobektomi, V'te moleküler test, lobektomi ya da totale yakın tiroidektomi önerilir. Bu baskıda kategori adları sadeleştirildi, DSÖ 2022 terimleriyle uyumlu hale getirildi. (TEMD 2025, Bölüm 30, s. 333)",
+      "trigger": "Tiroid Sitolojisi"
+    },
+    {
+      "id": "p-temd-093",
+      "level": "Kılavuz",
+      "title": "Yeterlilik ölçütü ve üç istisnası",
+      "content": "Örneğin yeterli sayılması için, her biri en az 10 iyi korunmuş folliküler hücreden oluşan en az 6 grup gerekir. Bu sayım yalnızca folliküler hücreler için geçerlidir; makrofaj ve lenfosit sayılmaz. Üç istisnada hücre sayısı aranmaz: belirgin atipi içeren örnek asla tanısal olmayan (ND) sayılmaz, yalnızca inflamatuvar hücre içeren tiroidit ya da apse aspiratı benigndir, bol kolloid içeren örnek de benign ve yeterlidir. (TEMD 2025, Bölüm 30, s. 333)",
+      "trigger": "Tiroid Sitolojisi"
+    },
+    {
+      "id": "p-temd-094",
+      "level": "Kılavuz",
+      "title": "Tanısal olmayan örnekten sonra: ne zaman ve kaç kez?",
+      "content": "Sitoloji bölümüne göre tekrardan önce birkaç ay beklemeyi destekleyen kanıt az. 3 aydan erken yapılan tekrar atipik sitoloji sıklığını artırmıyor (İİAB bölümü ise 1–3 ay beklemeyi önerir). Tümüyle kistik olmayan nodül yeniden aspire edilir; tekrar, olguların %60–80'inde tanı koydurur. İki ardışık ND sonrasında klinik ve US takip ya da cerrahi düşünülür. İlk sonucu ND olan kistik nodüle ise ancak US bulgusu şüpheliyse tekrar yapılır. (TEMD 2025, Bölüm 30, s. 334)",
+      "trigger": "Tiroid Sitolojisi"
+    },
+    {
+      "id": "p-temd-095",
+      "level": "Kılavuz",
+      "title": "AUS: nükleer atipi, diğer atipilerden ayrılmalı",
+      "content": "FLUS terimi bırakıldı, artık yalnızca AUS kullanılıyor ve iki alt grup belirtiliyor: nükleer atipi ve diğer atipiler (yapısal, onkositik, lenfositik). Malignite riski en yüksek nükleer atipide; bir seride %59'a karşı %6. Tekrar İİA'da nodüllerin yalnızca %10–30'u yine AUS gelir. Bu grupta BRAF V600E testinin duyarlılığı düşüktür; negatif prediktif değeri yüksek bir test negatifse malignite riski düşüktür. (TEMD 2025, Bölüm 30, s. 335)",
+      "trigger": "Tiroid Sitolojisi"
+    },
+    {
+      "id": "p-temd-096",
+      "level": "Kılavuz",
+      "title": "Folliküler neoplazi: NIFTP'yi dışlama ve onkositik alt grup",
+      "content": "\"Folliküler neoplazi kuşkusu\" terimi bırakıldı. NIFTP'yi bu kategorinin dışında tutmak için iki koşul aranır: gerçek papilla olmayacak, intranükleer psödoinklüzyon hiç olmayacak ya da nadir olacak. Eski \"Hürthle hücre tipi\" yerine gelen onkositik folliküler neoplazinin malignite riski %25–50'dir. Ayırıcı tanıda fokal onkositik hiperplazi ile onkositik özellikli MTK ve PTK alt tipleri düşünülmelidir. (TEMD 2025, Bölüm 30, s. 336)",
+      "trigger": "Tiroid Sitolojisi"
+    },
+    {
+      "id": "p-temd-097",
+      "level": "Kılavuz",
+      "title": "NİFTP tanı ölçütleri ve BRAF V600E'nin dışlayıcı rolü",
+      "content": "NİFTP tanısı için şunlar gerekir: kapsül ya da belirgin sınır, foliküler patern (gerçek papilla &lt;%1, psammom cismi yok, solid/trabeküler/insüler alan en fazla %30), PTK nükleer özellikleri. Ayrıca invazyon ve tümör nekrozu olmamalı, mitoz &lt;3/2 mm² olmalıdır. İmmünhistokimya ya da genotiplemeyle saptanan BRAF p.V600E tanıyı dışlar. İnvaziv olmayan, PTK nükleuslu ama 2 mm²'de 3'ten fazla mitozu olan tümör NİFTP değildir; mitotik olarak aktif kapsüllü PTK diye raporlanır. (TEMD 2025, Bölüm 31, s. 349)",
+      "trigger": "DSÖ 2022 Patoloji"
+    },
+    {
+      "id": "p-temd-098",
+      "level": "Kılavuz",
+      "title": "NİFTP'nin klinik anlamı: RAİ'siz lobektomi, evreleme yok",
+      "content": "NİFTP \"düşük riskli neoplazi\" grubundadır. Karsinom yerine \"tümör\" denmesinin amacı aşırı tedaviyi önlemektir. Tümör tamamen çıkarıldıysa (onkositik ve 1 cm altı formlar dahil), 1500'den fazla olguda advers olay &lt;%1, mortalite yoktur. Bu yüzden evreleme yapılmaz ve tercih edilen tedavi RAİ'siz lobektomidir. Sıklığı bölgeye göre çok değişir: Batı'da %15–20, Asya'da %0,5–5. (TEMD 2025, Bölüm 31, s. 350)",
+      "trigger": "DSÖ 2022 Patoloji"
+    },
+    {
+      "id": "p-temd-099",
+      "level": "Kılavuz",
+      "title": "Malignite potansiyeli belirsiz (MPB/UMP): ne zaman kullanılır?",
+      "content": "Kapsamlı örnekleme ve incelemeden sonra bile invazyon şüpheli kalıyorsa, PTK nükleusu var ya da kuşkuluysa tanı \"iyi diferansiye tümör-MPB\", yoksa \"foliküler tümör-MPB\" olur. İnvazyon kesin ama nükleus kuşkuluysa tanı \"iyi diferansiye karsinom-NOS\"tur. Bu terim eksik rezeksiyon ya da yetersiz örnekleme için kullanılmaz; İİA'nın invazyonu taklit eden artefaktları gerçek invazyondan ayrılmalıdır. Çoğu seride bu grupta metastaz, nüks ya da tümöre bağlı ölüm bildirilmemiştir. (TEMD 2025, Bölüm 31, s. 350)",
+      "trigger": "DSÖ 2022 Patoloji"
+    },
+    {
+      "id": "p-temd-100",
+      "level": "Kılavuz",
+      "title": "Onkositik karsinom: FTK'den farklı yayılım, IHK ile ayrılamaz",
+      "content": "Onkositik karsinom en az %75 onkositik hücreden oluşur; PTK nükleer özellikleri ve yüksek dereceli özellikler taşımaz. Foliküler karsinom yalnızca venöz yolla yayılırken onkositik karsinom lenf nodlarına da metastaz yapabilir. Onkositik adenomdan ayıran bir immünhistokimyasal boya yoktur, ayrım kapsül değerlendirmesine dayanır. Nekroz, ≥3/mm² mitoz, atipik mitoz ve küçük hücre odakları RAİ direncini düşündürür. (TEMD 2025, Bölüm 31, s. 356)",
+      "trigger": "DSÖ 2022 Patoloji"
+    }
+  ]
+}
