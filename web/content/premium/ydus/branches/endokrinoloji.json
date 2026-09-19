@@ -74,6 +74,15 @@
             "YENİ",
             "SINAV SPOTU"
           ]
+        },
+        {
+          "id": "temd-tiroid",
+          "baslik": "TEMD Tiroid",
+          "hazir": true,
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ]
         }
       ]
     },
