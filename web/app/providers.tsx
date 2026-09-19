@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useStudySync } from '@/app/hooks/useStudySync';
 import { girisiKaydet } from '@/app/lib/gecmis';
 import DenizSurprizleri from '@/app/components/DenizSurprizleri';
+import DumenImleci from '@/app/components/DumenImleci';
 
 function SyncBridge() {
   useStudySync();
@@ -26,6 +27,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
       <SyncBridge />
       {/* Oturum açmış kullanıcıya nadir deniz sürprizleri — kökte, gezinmede sökülmesin */}
       <DenizSurprizleri />
+      {/* Tıklayınca ve sayfa geçişi sürerken imleçteki dümen döner */}
+      <DumenImleci />
       {children}
     </SessionProvider>
   );
