@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "id": "temd-hipofiz",
+    "branch": "endokrinoloji",
+    "baslik": "TEMD Hipofiz",
+    "altbaslik": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022 (16. baskı) üzerinden klinik inciler",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-09"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": true,
+    "quiz": false,
+    "vaka": false,
+    "video": false
+  },
+  "icerik": []
+}

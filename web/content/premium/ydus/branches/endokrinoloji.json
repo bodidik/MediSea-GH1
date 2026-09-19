@@ -152,6 +152,15 @@
             "SINAV SPOTU"
           ],
           "hazir": true
+        },
+        {
+          "id": "temd-hipofiz",
+          "baslik": "TEMD Hipofiz",
+          "hazir": true,
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ]
         }
       ]
     },

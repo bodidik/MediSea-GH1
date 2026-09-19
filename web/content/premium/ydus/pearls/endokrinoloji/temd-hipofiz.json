@@ -1,0 +1,707 @@
+{
+  "id": "pearl-endo-temd-hipofiz-001",
+  "accessLevel": "premium",
+  "topic": "TEMD Hipofiz",
+  "pearls": [
+    {
+      "id": "p-temd-hip-001",
+      "level": "Kılavuz",
+      "title": "Hiperprolaktinemi eşiği cinsiyete göre değişir, ölçüm koşulu önemlidir",
+      "content": "Hiperprolaktinemi, uykudan kalktıktan en az 2 saat sonra ya da günün herhangi bir saatinde bakılan PRL'nin erkekte 20 ng/mL, kadında 25 ng/mL üzerinde olmasıdır. Kan alırken aşırı stres yoksa tek ölçüm tanı için yeterlidir. Stres kuşkusunda önceden kanül takılır, 15-20 dakika arayla 2-3 ölçüm alınır ve ortalaması hesaplanır. Ölçüm proteinli gıdadan tercihen 4 saat sonra yapılabilir. (TEMD Hipofiz 2022, Bölüm 1, s. 1)",
+      "trigger": "Prolaktinoma"
+    },
+    {
+      "id": "p-temd-hip-002",
+      "level": "Kılavuz",
+      "title": "Semptomsuz PRL yüksekliğinde önce makroprolaktin: PEG ile çöktürme",
+      "content": "Klasik hiperprolaktinemi semptomu olmayan hastada makroprolaktinemi akla gelmelidir. Büyük PRL formları kapiller endotelden geçemez, reseptöre bağlanamaz ve biyolojik etki göstermez. Rutinde PEG ile çöktürme kullanılır: PRL'deki azalma %40 altındaysa makroprolaktinemi yok, %60 üstündeyse var, %40-60 arası gri zondur. Gri zonda karar hastanın kliniğine göre verilir. Asemptomatik hastada makroprolaktinemi saptanırsa ileri tetkike gerek kalmaz. Prolaktinomalar da makroprolaktin salgılayabilir. (TEMD Hipofiz 2022, Bölüm 1, s. 3)",
+      "trigger": "Prolaktinoma"
+    },
+    {
+      "id": "p-temd-hip-003",
+      "level": "Kılavuz",
+      "title": "Antipsikotiğe bağlı PRL yüksekliği: 3 gün kes, yeniden ölç",
+      "content": "Tipik antipsikotiğe bağlı düşünülen hiperprolaktinemide ilaç 3 gün kesilip PRL yeniden ölçülür. Bazı antipsikotikler 3 günden uzun süre PRL yüksekliği yapabilir. İlaç kesilemiyorsa, yükseklik ilaçtan önce de varsa ya da kesmeye rağmen sürüyorsa diğer nedenler dışlanıp hipofiz mutlaka görüntülenir. İlacı kesilemeyen semptomatik hastada psikiyatriyle birlikte PRL'yi daha az yükselten 2. jenerasyon antipsikotik önerilebilir. DA'nın psikotik belirtileri alevlendirebileceği psikiyatriste bildirilmelidir. (TEMD Hipofiz 2022, Bölüm 1, s. 4)",
+      "trigger": "Prolaktinoma"
+    },
+    {
+      "id": "p-temd-hip-004",
+      "level": "Kılavuz",
+      "title": "Büyük adenom, düşük PRL: kanca etkisi ya da sap basısı",
+      "content": "Makroadenomda PRL beklenen kadar yüksek değilse iki olasılık düşünülür: nonfonksiyone adenomun sap basısı ya da kanca etkisi. Kanca etkisi, immünometrik ölçüm yöntemlerinin ürettiği yalancı PRL düşüklüğüdür. Serum 1/100 oranında dilüe edilip ölçüm tekrarlanır; makroprolaktinomada dilüsyon sonrası değer çok daha yüksek çıkar. Hafif PRL yüksekliği olan bir adenoma kesin prolaktinoma tanısı konamaz. (TEMD Hipofiz 2022, Bölüm 1, s. 5)",
+      "trigger": "Prolaktinoma"
+    },
+    {
+      "id": "p-temd-hip-005",
+      "level": "Kılavuz",
+      "title": "Kabergolin dozu: düşük başla, PRL'ye göre yavaş artır",
+      "content": "Kabergolinin yarı ömrü uzun olduğundan haftada 1-2 kez alınması yeter. Başlangıç haftada 1-2 kez 0,25 mg ya da tek doz 0,5 mg'dır. Optimal doz 0,5-3,0 mg/haftadır, nadiren 11 mg/haftaya çıkılır. Doz, 4-6 hafta sonra bakılan PRL normale dönene kadar tedricen artırılır. Bulantı nedeniyle ilaç yiyecekle ve yatmadan önce alınmalı, hasta ortostatik hipotansiyon için uyarılmalıdır. İlaç kesildikten sonra PRL 120 güne kadar düşük kalabilir. (TEMD Hipofiz 2022, Bölüm 1, s. 6)",
+      "trigger": "Prolaktinoma"
+    },
+    {
+      "id": "p-temd-hip-006",
+      "level": "Kılavuz",
+      "title": "Kabergolin ve kalp kapağı: herkese yıllık EKO gerekmez",
+      "content": "Standart doz kabergolin alan prolaktinoma hastalarında valvülopati bildirilmemiştir. Her hastaya yılda bir rutin ekokardiyografi gerekmez. Üfürüm duyulanlarda, 5 yıldan uzun süre 3 mg/hafta üzerinde kullananlarda ya da 50 yaşından sonra tedaviyi sürdüreceklerde en az 2 yılda bir ekokardiyografi önerilir. Dürtü kontrol bozukluğu açısından ise hasta her kontrolde sorgulanmalı, hasta ya da yakını bilgilendirilmelidir. (TEMD Hipofiz 2022, Bölüm 1, s. 6)",
+      "trigger": "Prolaktinoma"
+    },
+    {
+      "id": "p-temd-hip-007",
+      "level": "Kılavuz",
+      "title": "Dopamin agonisti direnci: tanım, ilaç değişimi ve malignite uyarısı",
+      "content": "En az 3 ay BRC 15 mg/gün, CAB 3 mg/hafta ya da kinagolid 300 μg/gün dozuna rağmen PRL normale gelmiyorsa DA direnci vardır. Direnç erkeklerde ve makroprolaktinomalarda daha sıktır. BRC direncinde CAB'e geçilip doz tedricen artırılınca %80'inde normoprolaktinemi sağlanır. Tedavi sırasında gelişen sekonder direnç malign transformasyonu düşündürmelidir. DA intoleransı CAB ile %3, BRC ile %12 oranında görülür; direnç ve intolerans cerrahi kararının başlıca gerekçeleridir. (TEMD Hipofiz 2022, Bölüm 1, s. 8)",
+      "trigger": "Prolaktinoma"
+    },
+    {
+      "id": "p-temd-hip-008",
+      "level": "Kılavuz",
+      "title": "Makroprolaktinomada ilaç kesme: beş ölçüt, yakın PRL izlemi",
+      "content": "Makroprolaktinomada kesme ancak şu koşullarda denenir: en az 2 yıl DA almış, normoprolaktinemi sağlanmış, tümör hacmi %50'den fazla küçülmüş, kavernöz sinüs invazyonu yok ve tümör optik kiazmaya 5 mm'den uzak. Tümörü 2 cm'den büyük olan, tedaviyle küçülmeyen ya da PRL'si normale gelmeyen hastada ilaç kesilmez. Kesme, doz yavaş azaltılarak yapılır. Nüks riski %26-69'dur ve çoğu ilk 1 yılda ortaya çıkar. Kesildikten sonra ilk yıl 3 ayda bir, sonra yılda bir PRL ölçülür. (TEMD Hipofiz 2022, Bölüm 1, s. 8)",
+      "trigger": "Prolaktinoma"
+    },
+    {
+      "id": "p-temd-hip-009",
+      "level": "Kılavuz",
+      "title": "Gebelikte tümör büyüme riski önceki tedaviye bağlıdır",
+      "content": "Gebelikte tümör büyüme riski mikroprolaktinomada %2,4'tür. Önceden cerrahi, radyoterapi ya da bir yıldan uzun DA almış makroprolaktinomada %4,8, etkin tedavi edilmemiş makroprolaktinomada ise %21 civarındadır. Mikroprolaktinoma ve sella içinde sınırlı makroadenomda gebelik saptanınca DA kesilir; invaziv ya da suprasellar uzanımlı makroadenomda sürdürülür. Gebelikte seri PRL ölçümü ve rutin MR yapılmaz; bası bulgusu çıkarsa kontrastsız MR çekilir. Medikal tedaviye yanıt yoksa ya da apopleksi varsa cerrahi ikinci trimesterde düşünülür. (TEMD Hipofiz 2022, Bölüm 1, s. 11)",
+      "trigger": "Prolaktinoma"
+    },
+    {
+      "id": "p-temd-hip-010",
+      "level": "Kılavuz",
+      "title": "Malign prolaktinoma tanısı Ki-67 ile değil metastazla konur",
+      "content": "Ki-67 %3 üzerinde, p53 pozitif ve mitotik oran 2'nin üzerinde olması malign potansiyeli düşündürür ama tanı için yetmez. Hipofiz tümörü ancak santral sinir sistemine ya da uzak organlara metastaz yaptığında malign sayılır. Agresif prolaktinomada DA, tekrarlı cerrahi ya da radyoterapi denendikten sonra temozolamid verilebilir. Temozolomid her 28 günde bir 5 gün ardışık 150-200 mg/m2 dozunda verilir. Üç siklus sonra MR ile yanıt değerlendirilir, yanıt varsa en az 6 ay sürdürülür. (TEMD Hipofiz 2022, Bölüm 1, s. 10)",
+      "trigger": "Prolaktinoma"
+    },
+    {
+      "id": "p-temd-hip-011",
+      "level": "Kılavuz",
+      "title": "Akromegali taramasında ilk basamak IGF-1, random GH değil",
+      "content": "Tanıda ilk basamak serum IGF-1'dir ve yaş ile cinsiyete göre yorumlanır. Random GH ölçümü tanıda anlamlı değildir. Normal IGF-1 akromegaliyi dışlar. Tipik akral bulgu olmasa da tip 2 DM, uyku apnesi, hipertansiyon, artrit, hiperhidroz ve karpal tünel sendromundan birkaçı olan hastada IGF-1 ölçülmelidir. IGFBP-3 akromegalide yüksek olsa da tanısal değeri yoktur. (TEMD Hipofiz 2022, Bölüm 1, s. 15)",
+      "trigger": "Akromegali"
+    },
+    {
+      "id": "p-temd-hip-012",
+      "level": "Kılavuz",
+      "title": "OGTT'de GH 0,4 μg/L altına inerse akromegali dışlanır",
+      "content": "Standart test 75 gr oral glukozla 0, 30, 60, 90 ve 120. dakikalarda glukoz ve GH ölçümüdür. OGTT sırasında GH 0,4 μg/L altına inerse akromegali dışlanır. Antidiyabetik ya da SRL tedavisi test sonucunu etkiler. Diyabetli hastada OGTT uygun değildir; yüksek kan şekeriyle eş zamanlı GH tanıda değerlidir. Puberte, gebelik, karaciğer ve böbrek hastalığı ve anoreksiya nervozada da GH baskılanmaz. (TEMD Hipofiz 2022, Bölüm 1, s. 15)",
+      "trigger": "Akromegali"
+    },
+    {
+      "id": "p-temd-hip-013",
+      "level": "Kılavuz",
+      "title": "Tedavi hedefi: GH 1 μg/L altı, IGF-1 üst sınırın 1,2-1,3 katı",
+      "content": "Tedavinin hedefi GH'nin 1 μg/L altında, IGF-1'in ise yaş ve cinse göre normalin üst sınırının en fazla 1,2-1,3 katı olmasıdır. Ölçüm yöntemleri arasında fark olduğu için takipte aynı yöntem ve aynı kitler kullanılmalıdır. Random GH'nin 2,5 μg/L altına indirilmesiyle artmış mortalite normal popülasyon düzeyine iner. IGF-1'in normale indirilmesi de mortalite riskini azaltır. (TEMD Hipofiz 2022, Bölüm 1, s. 15)",
+      "trigger": "Akromegali"
+    },
+    {
+      "id": "p-temd-hip-014",
+      "level": "Kılavuz",
+      "title": "Cerrahi ilk seçenek: remisyon GH 0,4, kontrol GH 1",
+      "content": "Akromegalide ilk tedavi seçeneği cerrahidir; görme kaybı ya da çift görme gibi ciddi kitle etkisinde acil cerrahi gerekir. Anestezi riski yüksek hastada önce 3–6 ay medikal tedavi verilebilir. Postoperatif değerlendirme için en uygun zaman 3. aydır, ama IGF-1'in oturması 12. aya kadar sürebilir. GH'nin 0,4 μg/L altında olması cerrahi remisyon, 1 μg/L altında olması hastalık kontrolü göstergesidir. Biyokimyasal kür mikroadenomda %80–85, makroadenomda %50–65 oranında sağlanır. (TEMD Hipofiz 2022, Bölüm 1, s. 16)",
+      "trigger": "Akromegali"
+    },
+    {
+      "id": "p-temd-hip-015",
+      "level": "Kılavuz",
+      "title": "SRL yanıtı enjeksiyondan hemen önce ölçülür, OGTT yapılmaz",
+      "content": "Başlangıç dozu octreotide LAR için ayda 20 mg, lanreotide Autogel için 90 mg'dır. Etkinlik için GH ve IGF-1, 3–6 aylık tedaviden sonra bir sonraki enjeksiyondan hemen önce ölçülür. Tedavi sırasında OGTT ile GH supresyonu değerlendirilmez. Primer SRL, kiazma basısı olmayan ve cerrahi kür şansı çok düşük, belirgin kavernöz sinüs invazyonlu hastada önerilir. MR'da T2 ağırlıklı kesitlerde hipointensite daha iyi SRL yanıtını gösterir. SRL safra çamuru ve taşı yapabilir; belirtisi olanlar abdominal USG ile değerlendirilir. (TEMD Hipofiz 2022, Bölüm 1, s. 17)",
+      "trigger": "Akromegali"
+    },
+    {
+      "id": "p-temd-hip-016",
+      "level": "Kılavuz",
+      "title": "Pegvisomant: IGF-1 ile izle, karaciğer ve tümör boyutuna bak",
+      "content": "Pegvisomant GH reseptör antagonistidir; sc 10, 15 ya da 20 mg günlük enjeksiyonla verilir. Etkinlik IGF-1 takibiyle değerlendirilir. Karaciğer testleri ilk altı ay her ay, sonra altı ayda bir kontrol edilir; transaminazlar 3 kat ve üzerine çıkarsa tedavi kesilir. Hastaların %6,8'inde tümör büyüyebildiği için rezidü tümörü olan ve radyoterapi almamış hastada MR ile boyut izlenir. Glisemik kontrol üzerine olumlu etkisi vardır. (TEMD Hipofiz 2022, Bölüm 1, s. 18)",
+      "trigger": "Akromegali"
+    },
+    {
+      "id": "p-temd-hip-017",
+      "level": "Kılavuz",
+      "title": "Kolonoskopi tanıda ya da 40 yaşta başlar, aralığı bulguya bağlı",
+      "content": "Kolorektal kanser ve polip riski arttığı için kolonoskopi tanı anında ya da 40 yaşından itibaren düzenli yapılır. İlk taramada adenomatöz polip çıkan ya da IGF-1'i yüksek seyreden hastada üç yılda bir tarama önerilir. İlk kolonoskopisi normal, hiperplastik polipi olan ya da GH ve IGF-1'i normal olan hastada beş yılda bir yeterlidir. Biyokimyasal remisyona rağmen kardiyak performansı düzelmeyen hastaya rutin ekokardiyografi yapılır. Tiroid nodülünde USG ve gerekirse İİAB, kadınlarda düzenli mamografi önerilir. (TEMD Hipofiz 2022, Bölüm 1, s. 19)",
+      "trigger": "Akromegali"
+    },
+    {
+      "id": "p-temd-hip-018",
+      "level": "Kılavuz",
+      "title": "Akromegalide gebelik: SRL ve pegvisomant genellikle gebelikten 2 ay önce kesilir",
+      "content": "Gebelikte GH salgılayan adenomun büyüme riski %5–10 civarındadır. En sık belirti baş ağrısıdır ve genellikle ilaç kesilmesiyle ilişkilidir. SRL plasentayı geçer, fetoplasental dolaşımı bozup mikrozomiye yol açabilir; pegvisomantın plasental geçişi minimaldir. Gebe kalma girişiminden yaklaşık 2 ay önce uzun etkili SRL ve pegvisomantın kesilmesi önerilir. Avrupa Endokrinoloji Derneği kılavuzu ise uzun etkili SRL'nin gebelik doğrulanana kadar sürdürülebileceğini belirtir. (TEMD Hipofiz 2022, Bölüm 1, s. 19)",
+      "trigger": "Akromegali"
+    },
+    {
+      "id": "p-temd-hip-019",
+      "level": "Kılavuz",
+      "title": "Overnight 1 mg DST: 1,8 altı dışlar, 5 üstü aşikar",
+      "content": "Overnight testte 1 mg deksametazon gece ağızdan verilir, ertesi sabah plazma kortizolü ölçülür. Kortizolün 1,8 µg/dL (50 nmol/L) altında olması CS olasılığını kuvvetle dışlar. Daha yüksek eşik kullanılırsa testin duyarlılığı azalır. Adrenal insidentalomada 5 µg/dL üzerindeki değer aşikar CS'yi gösterebilir. (TEMD Hipofiz 2022, Bölüm 1, s. 25)",
+      "trigger": "Cushing Hastalığı"
+    },
+    {
+      "id": "p-temd-hip-020",
+      "level": "Kılavuz",
+      "title": "Gece tükürük kortizolü: vardiyalı çalışana ve sigara içene tuzak",
+      "content": "Gece tükürük kortizolünün 4 nmol/L üzerinde olması CS tanısını %92-100 duyarlılık ve %93-100 özgüllükle koydurur. Tükürükte bağlayıcı globulin olmadığı için sonuç CBG'den etkilenmez. Örnek gece yarısını beklemeden, yatmadan hemen önce alınır. Üç ayrı günde örnek toplanması, en az iki ölçüm yapılması önerilir. Ağız içi yara ve tütün sonucu bozar; vardiyalı çalışanlarda test uygun değildir. (TEMD Hipofiz 2022, Bölüm 1, s. 25)",
+      "trigger": "Cushing Hastalığı"
+    },
+    {
+      "id": "p-temd-hip-021",
+      "level": "Kılavuz",
+      "title": "Doğum kontrol hapı kortizolü bozar: en az 6 hafta kes",
+      "content": "Serum kortizolünün %90'ı CBG'ye bağlı dolaşır. Bu yüzden serum proteinlerini etkileyen durumlarda plazma kortizolü yalancı yüksek ya da düşük çıkabilir. Östrojen içeren doğum kontrol hapı ve gebelik bunun en tipik örnekleridir. OKS kullanan hastada plazma kortizolü ancak ilaç en az 6 hafta önce kesilmişse güvenilirdir. Antiepileptik ve OKS kullananlarda UFC ve gece yarısı kortizolü öncelikli taramadır. (TEMD Hipofiz 2022, Bölüm 1, s. 24)",
+      "trigger": "Cushing Hastalığı"
+    },
+    {
+      "id": "p-temd-hip-022",
+      "level": "Kılavuz",
+      "title": "DST'yi yanıltan ilaçlar: enzim indükleyiciler yanlış pozitif",
+      "content": "Sitokrom P-450'yi etkileyen barbitürat, aminoglutetimid, fenitoin ve rifampin DST'de yanlış pozitif sonuç verebilir. CBG'yi artıran östrojen, gebelik, kronik aktif hepatit ve deksametazon emilimini bozan çölyak hastalığı ya da kronik diyare de yanlış pozitiflik nedenidir. Yanlış negatiflik çok daha azdır. Deksametazon yıkımını inhibe eden fluoksetin ve diltiazem ile CBG'yi azaltan nefrotik sendrom buna yol açabilir. (TEMD Hipofiz 2022, Bölüm 1, s. 26)",
+      "trigger": "Cushing Hastalığı"
+    },
+    {
+      "id": "p-temd-hip-023",
+      "level": "Kılavuz",
+      "title": "UFC: böbrek yetmezliğinde yalancı negatif, beş litrede yalancı pozitif",
+      "content": "24 saatlik idrar serbest kortizolü CBG'den etkilenmez ve en az 2-3 kez ölçülmelidir. Toplamanın doğru yapıldığını anlamak için idrar kreatinini de istenir. GFR 60 ml/dk altında yalancı negatif, siklik CS'de normal sonuç çıkabilir. Beş litreyi aşan idrar ya da egzersiz sonrası toplama yalancı pozitifliği artırır. (TEMD Hipofiz 2022, Bölüm 1, s. 26)",
+      "trigger": "Cushing Hastalığı"
+    },
+    {
+      "id": "p-temd-hip-024",
+      "level": "Kılavuz",
+      "title": "ACTH 5 altı adrenal, 20 üstü ACTH bağımlı",
+      "content": "ACTH örneği peptidazlarla yıkılmasın diye buzda taşınıp hızla çalışılmalıdır. Sabah ölçülen plazma ACTH 5 pg/mL altındaysa ACTH-bağımsız, 20 pg/mL üzerindeyse ACTH-bağımlı CS düşünülür. 5-20 pg/mL arası iki yöne de açıktır ve ek test gerekir. CH'de ACTH normal ya da yüksektir, ektopik ACTH'de çok daha yüksek olabilir. (TEMD Hipofiz 2022, Bölüm 1, s. 27)",
+      "trigger": "Cushing Hastalığı"
+    },
+    {
+      "id": "p-temd-hip-025",
+      "level": "Kılavuz",
+      "title": "IPSS: bazal oran 2, CRH sonrası 3",
+      "content": "IPSS'de CRH öncesi santral/periferik ACTH oranı 2'nin, CRH sonrası 3'ün üzerindeyse CH tanısı konur. Adenom görüntülenemiyorsa santral sağ/sol oranın 1,4 üzerinde olması tarafı gösterir; lateralizasyon %70 oranında sağlanır. MR'da 6 mm altı adenomda IPSS gerekir, 9 mm üzerinde gerekmez. CS'de hiperkoagülopati olabildiği için işlem heparinle yapılır. (TEMD Hipofiz 2022, Bölüm 1, s. 27)",
+      "trigger": "Cushing Hastalığı"
+    },
+    {
+      "id": "p-temd-hip-026",
+      "level": "Kılavuz",
+      "title": "Cerrahi remisyon: ilk hafta kortizol 2 µg/dL altı",
+      "content": "Remisyonun en çok kabul gören ölçütü, cerrahi sonrası ilk haftada serum kortizolünün 2 µg/dL (55 nmol/L) altına inmesidir. Bu ölçütle deneyimli merkezlerde remisyon mikroadenomda %80, makroadenomda %60 civarındadır. Kortizol geç de düşebilir; adrenal hiperplazi ve rezidü adenomda geç nekroz buna yol açar. Bunu bilmek gereksiz erken reoperasyonu önler. (TEMD Hipofiz 2022, Bölüm 1, s. 30)",
+      "trigger": "Cushing Hastalığı"
+    },
+    {
+      "id": "p-temd-hip-027",
+      "level": "Kılavuz",
+      "title": "Ketokonazol: PPI ile verme, erkekte ilk seçenek değil",
+      "content": "Ketokonazolün emilimi mide asiditesi gerektirir; proton pompa inhibitörleriyle birlikte kullanılmamalıdır. Başlangıç dozu 200 mg/gün, en yüksek doz 1200 mg/gündür; yarı ömrü kısa olduğu için günde 2-3 kez verilir. En önemli yan etkisi hepatotoksisitedir. Androjen sentezini azaltıp jinekomastiye yol açabildiği için erkekte ilk seçenek değildir; kadında bu etki avantajdır. (TEMD Hipofiz 2022, Bölüm 1, s. 32)",
+      "trigger": "Cushing Hastalığı"
+    },
+    {
+      "id": "p-temd-hip-028",
+      "level": "Kılavuz",
+      "title": "Medikal tedavi izlemi: UFC, ama mifepristonda kortizol işe yaramaz",
+      "content": "Medikal tedavi izleminde üriner serbest kortizol tercih edilir. İstisna mifepristondur; kortizolü düşürmeden etki ettiği için yanıtı ya da adrenal yetmezliği gösterecek bir kortizol düzeyi yoktur. Adrenal yetmezliği yakalamada sabah kortizolü daha değerlidir. Tedavi değişikliği, maksimum tolere edilen dozda en az 2-3 ay sonra kortizol hâlâ artıyorsa düşünülür. (TEMD Hipofiz 2022, Bölüm 1, s. 34)",
+      "trigger": "Cushing Hastalığı"
+    },
+    {
+      "id": "p-temd-hip-029",
+      "level": "Kılavuz",
+      "title": "α-subünit/TSH oranı: 1 eşiği artık geçerli değil",
+      "content": "Yüksek sT3 ve sT4'e karşın TSH'nin baskılanmamış olması TSHoma'yı düşündürür. α-GSU/TSH molar oranı sağlıklı erkekte 0,3'ten postmenopozal kadında 29,1'e kadar değişir. Bu nedenle tek eşik olarak 1 üzeri artık geçerli değildir; ortalama 3,2 değeri tanıda önemlidir. Oran mikroadenomda normal çıkabilir. SHBG genellikle yüksektir; normal SHBG tiroid hormon direncini ya da TSH interferansını düşündürmelidir. (TEMD Hipofiz 2022, Bölüm 1, s. 38)",
+      "trigger": "TSHoma"
+    },
+    {
+      "id": "p-temd-hip-030",
+      "level": "Kılavuz",
+      "title": "T3 supresyon testi: TSH baskılanmıyorsa TSHoma",
+      "content": "T3 supresyon testinde 7-10 gün süreyle 75-150 µg oral T3 verilir; TSH'nin baskılanmaması TSHoma lehinedir. Test yaşlılarda ve koroner arter hastalığında kontrendikedir. TRH testinde 200 µg i.v. TRH'ye TSHoma hastalarının %90'ında TSH yanıtı azalmıştır. Bu dinamik testler özellikle tiroid hormon direncinden ayırımda kullanılır. (TEMD Hipofiz 2022, Bölüm 1, s. 38)",
+      "trigger": "TSHoma"
+    },
+    {
+      "id": "p-temd-hip-031",
+      "level": "Kılavuz",
+      "title": "Graves sanılan TSHoma: antitiroid ilaç tümörü büyütebilir",
+      "content": "TSHomaların %30'u TSH değeri göz ardı edildiği için yanlışlıkla Graves tanısı alır; gereksiz tiroidektomi ya da radyoaktif iyot uygulanır. Graves'teki oftalmopati ve dermopati TSHoma'da yoktur. TSHoma tedavisinde antitiroid ilaç önerilmez, çünkü uzun süreli kullanım hipofiz tümörünü büyütebilir. Yalnızca cerrahi öncesi ötiroidizm sağlanamayan olguda kısa süreli kullanılabilir. (TEMD Hipofiz 2022, Bölüm 1, s. 39)",
+      "trigger": "TSHoma"
+    },
+    {
+      "id": "p-temd-hip-032",
+      "level": "Kılavuz",
+      "title": "TSHoma cerrahisi sonrası: 7. gün TSH ölçülemiyorsa iyi işaret",
+      "content": "Tümör tam çıkarılmışsa 7 gün sonra bakılan TSH'nin ölçülemeyecek kadar düşük olması başarıyı öngörür. Adenomun tamamen çıkarıldığını gösteren en duyarlı ve özgül test T3 baskılama testidir. Hipofiz-tiroid aksının toparlanması en az 2-3 hafta sürer; bu dönemde levotiroksin en düşük dozda tutulur. Remisyondaki hastada nüks %31'dir; ilk yıl 2-3 kez, sonra yılda bir değerlendirme yapılır. (TEMD Hipofiz 2022, Bölüm 1, s. 41)",
+      "trigger": "TSHoma"
+    },
+    {
+      "id": "p-temd-hip-033",
+      "level": "Kılavuz",
+      "title": "Yüksek FSH, düşük LH, östradiol 500 üstü: PKOS'tan çok gonadotropinoma",
+      "content": "Premenopozal kadında hipofiz adenomuna yüksek FSH ve/veya α-subünit ile düşük LH eşlik ediyorsa gonadotropinoma düşünülür. Östradiolün 500 pg/mL üzerinde olması PKOS'tan çok gonadotropinomayı düşündürür. PKOS'ta ise LH yüksek, FSH düşük olma eğilimindedir. GnRH agonistine FSH yanıtı gonadotropinomada paradoks artar, PKOS'ta azalır. Normal postmenopozda FSH ve LH birlikte artar; yüksek FSH'ye düşük LH eşlik etmesi ipucudur. (TEMD Hipofiz 2022, Bölüm 1, s. 46)",
+      "trigger": "Gonadotropinoma"
+    },
+    {
+      "id": "p-temd-hip-034",
+      "level": "Kılavuz",
+      "title": "Gonadotropinomada tedavi cerrahi; GnRH agonisti tümörü büyütebilir",
+      "content": "Tedaviyi tümör boyutu, görme defekti ve bası bulguları belirler; ilk basamak transsfenoidal cerrahidir. Görme alanı defekti olguların %90'ında düzelir ya da tamamen iyileşir. Medikal tedavi primer tedavi olarak önerilmez. GnRH agonistleri kadınlarda yararsızdır ve gonadotropin salgısını daha da uyarıp tümörü büyütme riski taşır. Yalnız cerrahi uygulananlar ilk yıl 6 ayda bir, sonraki 6 yıl yılda bir, sonra iki yılda bir izlenir. (TEMD Hipofiz 2022, Bölüm 1, s. 47)",
+      "trigger": "Gonadotropinoma"
+    },
+    {
+      "id": "p-temd-hip-035",
+      "level": "Kılavuz",
+      "title": "Sap basısında PRL genellikle 100 altı; önce steroid, sonra tiroid",
+      "content": "Fonksiyonsuz makroadenomda sap basısına bağlı PRL genellikle 100 ng/mL altındadır, nadiren 200 ng/mL'ye çıkabilir. Cerrahiye gidecek hastada bazal kortizol, TSH ve sT4 ölçümü ihmal edilmemelidir. Hormon eksikliği doğrulanırsa önce steroid, gerekiyorsa ardından tiroid hormonu yerine konur. (TEMD Hipofiz 2022, Bölüm 1, s. 51)",
+      "trigger": "Fonksiyonsuz Adenomlar"
+    },
+    {
+      "id": "p-temd-hip-036",
+      "level": "Kılavuz",
+      "title": "Makroadenom yılda 1 mm, mikroadenom 0,4 mm büyür",
+      "content": "Yıllık ortalama büyüme makroadenomda 1 mm, mikroadenomda 0,4 mm'dir. 8 yılı aşan konservatif izlemde mikroadenomların %10'unda, makroadenomların %24'ünde büyüme saptanmıştır. Makroadenom ve solid lezyonların büyüme potansiyeli mikroadenom ve kistik lezyonlardan fazladır. Bası bulgusu olmayan asemptomatik mikroadenom konservatif izlenebilir. (TEMD Hipofiz 2022, Bölüm 1, s. 52)",
+      "trigger": "Fonksiyonsuz Adenomlar"
+    },
+    {
+      "id": "p-temd-hip-037",
+      "level": "Kılavuz",
+      "title": "Ameliyat sonrası erken dönemde kısa ACTH testine güvenme",
+      "content": "Cerrahi sonrası ilk 7-10 gün öncelikle hipokortizolemi ve diabetes insipidus açısından izlenir; ilk hafta serum sodyumu ve idrar miktarı takip edilir. Erken dönemde kısa ACTH testi güvenilir değildir; güvenilir olan insülin tolerans testidir. Hastanın durumu bu test için uygun değilse değerlendirme 4-6 haftaya ertelenir, bu arada düşük doz steroid başlanabilir. İlk MR cerrahiden 3-4 ay sonra, hormonal değerlendirme 3, 6 ve 12. aylarda yapılır. (TEMD Hipofiz 2022, Bölüm 1, s. 53)",
+      "trigger": "Fonksiyonsuz Adenomlar"
+    },
+    {
+      "id": "p-temd-hip-038",
+      "level": "Kılavuz",
+      "title": "AIP mutasyonu: genç, büyük ve ilaca dirençli adenom",
+      "content": "AIP mutasyonu taşıyan hastalar daha genç (&lt;30 yaş), çoğunlukla erkektir ve adenomları daha büyüktür. Akromegalide birinci jenerasyon somatostatin analoglarına genellikle direnç vardır; pasireotid ile yanıt daha iyi bildirilmiştir. AIP pozitif prolaktinomaların %50'sinde dopamin agonistlerine direnç görülebilir. Tümör apopleksi riski de yüksektir (%8). FIPA kriteri taşıyana, 18 yaş altında HA tanısı alana ve 30 yaş altında makroadenomu olana AIP bakılır. (TEMD Hipofiz 2022, Bölüm 2, s. 58)",
+      "trigger": "Ailesel Hipofiz Adenomları"
+    },
+    {
+      "id": "p-temd-hip-039",
+      "level": "Kılavuz",
+      "title": "Taşıyıcı taraması: AIP 10 yaştan önce, MEN1 5 yaşta",
+      "content": "AIP taşıyıcılarında tarama 10 yaşından önce başlar. Yıllık GH, IGF-1 ve prolaktin ölçülür, bazal hipofiz MRG her 5 yılda bir tekrarlanır. 30 yaşına kadar patoloji yoksa aralıklar uzatılabilir. MEN1 taşıyıcılarında tarama 5 yaşında başlar: yıllık PRL ve IGF-1, her 3 yılda bir hipofiz MRG. Sorumlu mutasyon bulunamayan ailede aile bireylerine genetik inceleme gerekmez, klinik izlem yeterlidir. (TEMD Hipofiz 2022, Bölüm 2, s. 63)",
+      "trigger": "Ailesel Hipofiz Adenomları"
+    },
+    {
+      "id": "p-temd-hip-040",
+      "level": "Kılavuz",
+      "title": "Genç makroprolaktinomada kalsiyuma bak: MEN1 olabilir",
+      "content": "MEN1'de primer hiperparatiroidi hastaların %80-100'ünde 40 yaşından önce ilk bulgudur; hipofiz adenomu %35-40 hastada görülür. Prolaktinoma (%15-20) MEN1'in ilk bulgusu olabilir. PHPT bazı bölgelerde diğer bileşenlerden sonra çıkabildiği için genç makroprolaktinomada hiperkalsemi mutlaka araştırılır. Kılavuzun algoritması tüm hipofiz adenomlarında hiperparatiroidinin araştırılmasını ister. Pankreatik ya da timik NET, GHRH salgılayarak hipofizer hiperplazi ve akromegaliye yol açabilir. (TEMD Hipofiz 2022, Bölüm 2, s. 59)",
+      "trigger": "Ailesel Hipofiz Adenomları"
+    },
+    {
+      "id": "p-temd-hip-041",
+      "level": "Kılavuz",
+      "title": "X-LAG: 3 yaşa kadar başlayan jigantizm",
+      "content": "X-LAG, X kromozomundaki GPR101 geninin duplikasyonuyla GH üretiminin artmasıdır. Penetransı %100'dür, kızlar daha çok etkilenir. Normal doğum ağırlığıyla doğan çocukta yaşamın ilk yıllarında (≤3 yaş) boy hızla uzar. Medikal tedavi ve radyoterapiyle kontrol güç olduğundan çoğu olguda total hipofizektomi gerekir; pegvisomant IGF-1'i normale getirerek büyümeyi kontrol edebilir. Dopamin agonistine yanıt veren hiperprolaktinemi sıklıkla eşlik eder. (TEMD Hipofiz 2022, Bölüm 2, s. 58)",
+      "trigger": "Ailesel Hipofiz Adenomları"
+    },
+    {
+      "id": "p-temd-hip-042",
+      "level": "Kılavuz",
+      "title": "Carney kompleksi: GH aksı bozuk, akromegali seyrek",
+      "content": "Carney kompleksinde en sık endokrinopati PPNAD denen ACTH-bağımsız Cushing sendromudur. Olguların yaklaşık %75'inde GH aksı bozuktur ama yalnızca %10'unda klinik akromegali görülür. Somatotrof hiperplazisi %67 olguda vardır, gerçek GH salgılayan adenom ise yalnızca %10-12 olguda görüntülenir. Bu yüzden CNC şüphesi olan her olguda GH ve IGF-1 aksı rutin incelenir. (TEMD Hipofiz 2022, Bölüm 2, s. 61)",
+      "trigger": "Ailesel Hipofiz Adenomları"
+    },
+    {
+      "id": "p-temd-hip-043",
+      "level": "Kılavuz",
+      "title": "İnsidentalomada iki zorunlu test: PRL ve IGF-1",
+      "content": "Her hipofiz insidentalomasında PRL ve IGF-1 mutlaka ölçülür. PRL kanca etkisi ya da ilaç nedeniyle yalancı düşük veya yüksek çıkabilir. Somatotropinomaların 1/3'ü klinik olarak sessizdir. ACTH ve kortizol taraması rutin değildir; hiperkortizolemi kliniği varsa 1 mg DXMST, 24 saatlik UFC ya da gece yarısı kortizolü istenir. Gonadotropinler de rutin önerilmez, çünkü gonadotropinomaların çoğu sessizdir. (TEMD Hipofiz 2022, Bölüm 3, s. 66)",
+      "trigger": "Hipofiz İnsidentaloması"
+    },
+    {
+      "id": "p-temd-hip-044",
+      "level": "Kılavuz",
+      "title": "6 mm eşiği ve büyük insidentalomada hormon eksiklikleri",
+      "content": "1 cm'den küçük lezyon mikroinsidentalomadır. 6 mm'den küçükler genellikle klinik olarak önemsiz sayılır, ama 6-9 mm arası bazıları makroinsidentaloma gibi davranabilir. İnsidentalomaların %90'ı benign adenomdur; adenomların %77'si fonksiyonsuz, fonksiyonlularda ilk sırada prolaktinoma (%18) gelir. Büyük insidentalomalarda eksiklik gonadotropinlerde %30, TSH'da %28, ACTH'da %18, GH'da %8 oranında bildirilmiştir. (TEMD Hipofiz 2022, Bölüm 3, s. 65)",
+      "trigger": "Hipofiz İnsidentaloması"
+    },
+    {
+      "id": "p-temd-hip-045",
+      "level": "Kılavuz",
+      "title": "İzlem takvimi: mikroda 12 ay, makroda 6 ay",
+      "content": "Cerrahi kriteri taşımayan mikroinsidentalomada ilk kontrol MR 12 ay sonra, makroinsidentalomada 6 ay sonra çekilir. Makroinsidentalomada sonra 3 yıl boyunca her yıl, ardından 6 yıl boyunca 2 yılda bir, daha sonra 5 yılda bir MR yapılır. Büyükçe mikroadenomda (&gt;4 mm) 4 yıl içinde 2 yılda bir MR önerilir. Kılavuz büyükçe mikroadenom eşiğini tabloda &gt;4 mm, algoritma dipnotunda hem &gt;6 hem &gt;4 mm, özette &gt;6 mm olarak veriyor. (TEMD Hipofiz 2022, Bölüm 3, s. 67)",
+      "trigger": "Hipofiz İnsidentaloması"
+    },
+    {
+      "id": "p-temd-hip-046",
+      "level": "Kılavuz",
+      "title": "Baş ağrısı ameliyat nedeni değil, hipopituitarizm yalnızca rölatif endikasyon",
+      "content": "Takipte 1-2 yılda hızlı büyüyen ya da optik kiazmaya ulaşıp görmeyi tehdit eden adenom cerrahiye verilir. Hipopituitarizm cerrahiyle düzelebilir, ancak rölatif bir endikasyondur. Baş ağrısı da cerrahi endikasyon için yetersizdir. Adenomu kiazmaya yakın olup gebelik planlayan kadın deneyimli merkezlerde cerrahiden fayda görebilir. Kiazmaya yakın ya da bası yapan her insidentalomada görme alanı rutin istenir. (TEMD Hipofiz 2022, Bölüm 3, s. 67)",
+      "trigger": "Hipofiz İnsidentaloması"
+    },
+    {
+      "id": "p-temd-hip-047",
+      "level": "Kılavuz",
+      "title": "Kraniyofarenjiyom: olguların yarısında diabetes insipidus",
+      "content": "Sap basısı ve hipotalamik hasar nedeniyle olguların yaklaşık %50'sinde diabetes insipidus gelişir. Çocukların %80-90'ında endokrin disfonksiyon vardır, en sık GH ve gonadotropin eksikliği görülür. Erişkinde sıklık sırası GH (%86), LH/FSH (%75), ACTH (%57), TSH (%42); prolaktin yüksekliği %30 vakada bulunur. Her hastada sT4, TSH, bazal kortizol, gonadotropin, seks steroidi, PRL ve IGF-1 ölçülür; DI varsa gerekirse susuzluk testi yapılır. (TEMD Hipofiz 2022, Bölüm 4, s. 71)",
+      "trigger": "Kraniyofarenjiyom"
+    },
+    {
+      "id": "p-temd-hip-048",
+      "level": "Kılavuz",
+      "title": "Adamantinomatöz ile papiller tip: kist ve kalsiyum ayırır",
+      "content": "Adamantinomatöz tip her yaşta görülür, 5-15 ve 45-60 yaşlarda iki pik yapar. CTNNB1 mutasyonuyla ilişkilidir, ağırlıkla kistiktir ve MRG'de karnabahara benzer. Papiller tip başlıca erişkinde, 5. ve 6. on yılda görülür. Sıklıkla BRAFV600E mutasyonu taşır; genellikle solid, iyi sınırlı ve kalsifikasyonsuzdur. Adamantinomatöz tipin solid-kistik yapısı ve kalsifikasyonu sellar kitlelerin ayırıcı tanısını kolaylaştırır. (TEMD Hipofiz 2022, Bölüm 4, s. 71)",
+      "trigger": "Kraniyofarenjiyom"
+    },
+    {
+      "id": "p-temd-hip-049",
+      "level": "Kılavuz",
+      "title": "Tam rezeksiyon bile nüksü önlemez: %15-25",
+      "content": "Radyolojik olarak tam rezeksiyon doğrulanan hastada bile %15-25 nüks görülür. Nüks genellikle ameliyattan sonraki ilk 5 yılda olur. Ameliyat sonrası 10 yılda nüks oranı genel olarak %62'ye ulaşabilir. Tamamlayıcı tedavi ya da nüksü önlemek için radyoterapi uygulanabilir. Monokistik adamantinomatöz tipte intrakistik aspirasyon bir seçenektir; kemoterapi genellikle etkisizdir. Takip önce birkaç ayda bir, sonra yılda 1-2 kez yapılır. (TEMD Hipofiz 2022, Bölüm 4, s. 72)",
+      "trigger": "Kraniyofarenjiyom"
+    },
+    {
+      "id": "p-temd-hip-050",
+      "level": "Kılavuz",
+      "title": "Gebelikte kraniyofarenjiyom: BT yok, ikinci trimester",
+      "content": "Adenomların aksine kraniyofarenjiyom gebelikte sık büyümez. Gebelikte baş ağrısı, görme bozukluğu, diabetes insipidus ya da ön hipofiz yetmezliğiyle ortaya çıkabilir. Gerekirse ikinci trimesterde kontrastsız MR çekilir; BT kullanılmaz. Cerrahi için optimal dönem ikinci trimesterdir ve en güvenilir yol transsfenoidaldir. DI varsa desmopressin, ön hipofiz eksikliği varsa replasman verilir. (TEMD Hipofiz 2022, Bölüm 4, s. 73)",
+      "trigger": "Kraniyofarenjiyom"
+    },
+    {
+      "id": "p-temd-hip-051",
+      "level": "Kılavuz",
+      "title": "Önce ACTH düşüyorsa adenom değil hipofizit düşün",
+      "content": "Lenfositik hipofizit, immünoterapi ilişkili hipofizit ve diğer inflamatuar süreçlerde ilk eksilen hormon ACTH'dir; ardından FSH, LH ve TSH gelir. Hipofiz adenomunda ise ilk eksiklik GH'dir, ACTH genellikle en son etkilenir. Ön hipofiz yetmezliğine DI eşlik ediyorsa inflamatuar veya infiltratif süreç, kraniyofarenjiyom ya da metastaz düşünülür; bu tablo adenomda pek beklenmez. Genç, gebe ya da postpartum kadında ve immün kontrol noktası inhibitörü alan hastada hipofizitten şüphelenilir. (TEMD Hipofiz 2022, Bölüm 5, s. 76)",
+      "trigger": "Hipofizitler"
+    },
+    {
+      "id": "p-temd-hip-052",
+      "level": "Kılavuz",
+      "title": "MR'da hipofizit: simetrik, yoğun kontrast, parlak nokta yok",
+      "content": "Hipofizitlerin %85-95'inde MR'da simetrik suprasellar büyüme, yoğun ve homojen kontrast tutulumu, kalın sap ve sağlam sella tabanı görülür. Nörohipofizin T1'deki parlak noktası kaybolur. Adenomda ise büyüme asimetriktir, sap orta hattan kayar ve kontrast tutulumu daha azdır. Lenfositik hipofizitte komşu duramaterde kontrast tutulumu (dural tail) görülebilir. Geç evrede empty sella gelişir. (TEMD Hipofiz 2022, Bölüm 5, s. 76)",
+      "trigger": "Hipofizitler"
+    },
+    {
+      "id": "p-temd-hip-053",
+      "level": "Kılavuz",
+      "title": "Lenfositik hipofizit: gebeliğin son dönemi ve lohusalık",
+      "content": "Lenfositik hipofizit primer hipofizitlerin yaklaşık 2/3'üdür ve kadınlarda daha sıktır (2-4:1). Kadın hastaların yarısından fazlasında peripartum dönemde görülür, 3. trimesterde pik yapar. Kanama ya da hipotansiyonla komplike olmamış bir gebelikte veya sonrasında gelişen hipofiz yetmezliği tanıyı destekler. Hipopituitarizmin kitle boyutuyla orantısız olması da destekleyici bir ölçüttür. Postpartum kadında ayırıcı tanıda Sheehan sendromu akılda tutulur. (TEMD Hipofiz 2022, Bölüm 5, s. 79)",
+      "trigger": "Hipofizitler"
+    },
+    {
+      "id": "p-temd-hip-054",
+      "level": "Kılavuz",
+      "title": "Hipofizitte steroid: ne zaman ve ne kadar",
+      "content": "Spontan remisyon olabildiği için her hipofizit tedavi gerektirmez; kitle bulgusu ya da önemli hipoadrenalizmi olmayan hasta izlenir. Görme alanı bozukluğu, kraniyal sinir tutulumu ve analjeziğe dirençli baş ağrısında ilk basamak glukokortikoiddir. Genellikle 1 mg/kg/gün prednizolon başlanır ve klinik yanıta göre birkaç hafta ile ay içinde (çoğunlukla 6-8 hafta) kesilir. Optimal doz ve süre konusunda görüş birliği yoktur; kitle bir hafta içinde küçülmeye başlar. Başlangıç dozu ve süresi nüks riskiyle ilişkili bulunmamıştır. Cerrahi sonrası hipofiz fonksiyonu yalnızca %25 civarında normale döner, nüks de %25 civarındadır. (TEMD Hipofiz 2022, Bölüm 5, s. 77)",
+      "trigger": "Hipofizitler"
+    },
+    {
+      "id": "p-temd-hip-055",
+      "level": "Kılavuz",
+      "title": "IgG4 hipofiziti: serum düzeyi normal olabilir",
+      "content": "Serum IgG4 &gt;140 mg/dl ve tutulan dokudan biyopsi tanıyı kesinleştirir. Ancak %15-25 vakada IgG4 düzeyi normal çıkabilir, bu daha çok kadınlarda görülür. Tanı için kriter 1 tek başına (hipofiz biyopsisinde &gt;10 IgG4 pozitif hücre/HPF), ya da kriter 2+3 veya 2+4+5 birlikte yeterlidir. Tedavi genellikle 30-40 mg/gün prednizonla 1-2 ay, ardından 2-6 ayda azaltmadır. Relaps sık değildir; olursa rituksimab iyi bir seçenektir. (TEMD Hipofiz 2022, Bölüm 5, s. 80)",
+      "trigger": "Hipofizitler"
+    },
+    {
+      "id": "p-temd-hip-056",
+      "level": "Kılavuz",
+      "title": "İmmünoterapi hipofiziti: anti-CTLA-4'te adrenal yetmezlik çoğu kez kalıcı, DI atipik",
+      "content": "Anti-CTLA-4 tedavisi ortalama %4,5 (%0,6-17) vakada hipofizit yapar; anti-PD-1 ile sıklık %0,6, ortalama başlangıç 4,2 aydır (aynı sayfada PD-1/PD-L için %1-2 de verilir). En sık santral hipotiroidi ve sekonder adrenal yetersizlik görülür; GH ve prolaktin aksı genellikle korunur. DI atipiktir; varsa pitüiter metastazı düşündürür. Anti-CTLA-4 ilişkili sekonder adrenal yetersizlik genellikle kalıcıdır ve ömür boyu tedavi ister. Hormon profili ilaç öncesi ve 8. ile 16. haftada taranır; yan etki immünoterapi kesildikten 6-15 ay sonra bile çıkabilir. (TEMD Hipofiz 2022, Bölüm 5, s. 81)",
+      "trigger": "Hipofizitler"
+    },
+    {
+      "id": "p-temd-hip-057",
+      "level": "Kılavuz",
+      "title": "Paraneoplastik hipofizit kanserden yıllar önce gelebilir",
+      "content": "Anti-Pit-1 sendromu GH, prolaktin ve TSH'da birlikte yetersizlik yapar; en çok timoma ve lenfomada görülür. Anti-ACTH antikoru izole ACTH yetersizliğine yol açar; gastrik kanser, lenfoma ve ACTH eksprese eden büyük hücreli nöroendokrin kanserlerde bildirilmiştir. Baş ağrısı olmadan hormon eksikliğiyle başvurur ve altta yatan kanserden birkaç yıl önce çıkabilir. Görüntüleme genellikle dikkat çekmez. Hipopituitarizm geri dönmez; tedavi kanserin tedavisi ve hormon replasmanıdır. (TEMD Hipofiz 2022, Bölüm 5, s. 82)",
+      "trigger": "Hipofizitler"
+    },
+    {
+      "id": "p-temd-hip-058",
+      "level": "Kılavuz",
+      "title": "Apopleksi çoğu zaman bilinmeyen adenomda patlar",
+      "content": "Vakaların yaklaşık %80'inde apopleksiden önce adenomun varlığı bilinmez. Ani, şiddetli, analjeziğe yanıtsız baş ağrısı, kusma ve görme bozukluğu apopleksi triadıdır; en sık kraniyal sinir bulgusu okülomotor felcidir. Bilinen hipofiz tümöründe akut baş ağrısı ve nöro-oftalmik bulgu varsa SAK ve menenjit dışlandıktan sonra apopleksi düşünülür. Vakaların %40'ında dopamin agonisti, antikoagülan, kontrastlı MR ya da endokrin uyarı testi gibi ilişkili bir durum vardır. Düşük prolaktin düzeyi düzelme olasılığının düşük olduğunu gösterir. (TEMD Hipofiz 2022, Bölüm 6, s. 85)",
+      "trigger": "Hipofiz Apopleksisi"
+    },
+    {
+      "id": "p-temd-hip-059",
+      "level": "Kılavuz",
+      "title": "Apopleksi: kortizol kanını al, sonucu bekleme",
+      "content": "En sık ve hayatı tehdit eden eksiklik ACTH'dir. Kortizol için kan alınır alınmaz, sonuç beklenmeden parenteral yüksek doz glukokortikoid başlanır: 100-200 mg hidrokortizon IV bolus. Ardından 2-4 mg/saat hidrokortizon infüzyonu ya da her 6 saatte 50-100 mg IM verilir. Hemodinamik destek %0,9 NaCl ile sağlanır, şokta hipoglisemiye karşı %5 dekstroz eklenebilir. Akut dönemden sonra oral idame 15-20 mg/gün hidrokortizondur; hastaların %80'den fazlası hormon replasmanına ihtiyaç duyar. (TEMD Hipofiz 2022, Bölüm 6, s. 86)",
+      "trigger": "Hipofiz Apopleksisi"
+    },
+    {
+      "id": "p-temd-hip-060",
+      "level": "Kılavuz",
+      "title": "Apopleksi: ağır görme kaybı ya da bilinç bozukluğunda erken (ilk 8 gün) cerrahi düşün",
+      "content": "Medikal ya da cerrahi tedavi seçimi hâlâ tartışmalıdır. Bazı çalışmalarda ilk 8 gün içindeki cerrahi, görme keskinliği ve görme alanında daha fazla yarar sağlamıştır. Ciddi görme keskinliği kaybı, kalıcı ya da kötüleşen görme alanı defekti veya bilinç bozukluğu varsa erken transsfenoidal cerrahi düşünülür. Bilinci korunmuş, görme bulgusu minimal ya da düzelen hafif vakalar multidisipliner değerlendirmeyle konservatif izlenebilir. Göz ve görme alanı muayenesi mümkün olan en erken zamanda yapılır. (TEMD Hipofiz 2022, Bölüm 6, s. 86)",
+      "trigger": "Hipofiz Apopleksisi"
+    },
+    {
+      "id": "p-temd-hip-061",
+      "level": "Kılavuz",
+      "title": "Apopleksi sonrası izlem: 4-6. hafta ve uzun MR takvimi",
+      "content": "Hipofiz fonksiyonları ve göz muayenesi 4-6. haftada değerlendirilir. Tekrarlanan testlerle ömür boyu replasman gerekip gerekmediği araştırılır. Hipofiz MR bulgular stabil olana kadar 3-6 ay arayla, sonra 5 yıl boyunca yılda bir, 5. yıldan sonra 2 yılda bir çekilir. Hastalar endokrin ve nöroşirürji ekibi olan merkezde yılda bir izlenir. Fonksiyonsuz makroadenomu olan hastalar başta olmak üzere adenomlu hastalar apopleksi belirtileri hakkında bilgilendirilmelidir. (TEMD Hipofiz 2022, Bölüm 6, s. 87)",
+      "trigger": "Hipofiz Apopleksisi"
+    },
+    {
+      "id": "p-temd-hip-062",
+      "level": "Kılavuz",
+      "title": "Sabah kortizolü: 15 üstü normal, 3 altı yetmezlik",
+      "content": "Sabah ölçülen bazal kortizol 15 μg/dl ve üzerindeyse HPA aks normaldir. 3 μg/dl altındaki değer büyük olasılıkla adrenal yetmezliği gösterir (spesifite %99,7). 3-15 μg/dl arasında kalan değerde stimülasyon testi gerekir. Hidrokortizon alan hastada dinamik testten en az 18-24 saat önce ilaç kesilmelidir. Yarı ömrü uzun sentetik steroidlerde daha uzun ara gerekebilir. (TEMD Hipofiz 2022, Bölüm 7, s. 93)",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-temd-hip-063",
+      "level": "Kılavuz",
+      "title": "İnsülin tolerans testi: altın standart, ama kime yapılmaz",
+      "content": "İTT, HPA aks ve GH rezervi için altın standarttır ama mutlaka hekim gözetiminde yapılır. Kardiyovasküler hastalık, serebrovasküler hastalık ve epilepside kontrendikedir. 0,1-0,15 U/kg regüler insülin i.v. bolus verilir; semptomatik hipoglisemi anı 0. dakika sayılır, sonra 30, 60, 90 ve 120. dakikalarda örnek alınır. 45 dakika içinde hipoglisemi gelişmezse ilk doz tekrarlanabilir. Pik kortizol 18 μg/dl (500 nmol/L) ve üzerindeyse HPA aks normaldir. (TEMD Hipofiz 2022, Bölüm 7, s. 94)",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-temd-hip-064",
+      "level": "Kılavuz",
+      "title": "ACTH testi: yeni eksiklikte yanlış normal, 1 μg testinde düşük eşik",
+      "content": "Standart testte 250 μg ACTH i.v. verilir, 30. ve 60. dakikada kortizol ölçülür; pik 18 μg/dl ve üzeri normaldir. ACTH eksikliğinin ilk 4 haftasında adrenal bez henüz atrofiye olmadığı için yanıt yeterli çıkabilir ve hasta yanlışlıkla normal sayılır. 1 μg ACTH testi hafif santral adrenal yetmezlikte daha duyarlıdır. Ülkemizdeki bir çalışmada 12,5 μg/dl eşiği özgüllüğü artırdı; başka bir çalışmada 14,5 μg/dl eşiğinde duyarlılık %100, özgüllük %93,9 bulundu. Uluslararası kılavuzlar ise 1 μg testinde de 18 μg/dl eşiğini önermeye devam ediyor. (TEMD Hipofiz 2022, Bölüm 7, s. 94)",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-temd-hip-065",
+      "level": "Kılavuz",
+      "title": "Glukagon testinde kortizol eşiği 18 değil, 9-10 μg/dl",
+      "content": "Glukagon testi ACTH ve GH eksikliğini birlikte değerlendirir; İTT yapılamadığında güvenle kullanılır. Bir gecelik açlıktan sonra 1 mg glukagon i.m. yapılır, 90 kg üzerindeki hastada doz 1,5 mg'dır. Kortizol ve glukoz 90. ile 240. dakikalar arasında ölçülür. En sık yan etki bulantıdır; nadiren 180. dakikadan sonra hafif hipoglisemi gelişir. Pik kortizol için 18 μg/dl eşiği kullanılırsa özgüllük İTT'ye göre çok düşer; güncel önerilen normal yanıt 9-10 μg/dl ve üzeridir. (TEMD Hipofiz 2022, Bölüm 7, s. 95)",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-temd-hip-066",
+      "level": "Kılavuz",
+      "title": "Normal IGF-I, GH eksikliğini dışlamaz",
+      "content": "GH eksikliği testi ön test olasılığı yüksek hastaya yapılır: hipotalamo-hipofizer kitle, cerrahi ya da radyoterapi öyküsü, travmatik beyin hasarı veya başka hipofiz hormon eksikliği. Bu grupta tek stimülasyon testi yeterlidir; izole ya da idiyopatik eksiklik düşünülüyorsa iki test gerekir. Yaşa göre normal IGF-I, GH eksikliğini dışlamaz. GH dışında 3 veya daha fazla hormon eksikliği olan erişkinde IGF-I 95 ng/ml ve altındaysa GH eksikliği olasılığı %95'in üzerindedir. Testten önce diğer eksik hormonlar yerine konmuş olmalı, hasta en az 8 saat aç kalmalıdır. (TEMD Hipofiz 2022, Bölüm 7, s. 96)",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-temd-hip-067",
+      "level": "Kılavuz",
+      "title": "GH testlerinde eşik vücut kitle indeksine göre değişir",
+      "content": "İTT'de pik GH 3 µg/l altındaysa erişkinde ağır GH eksikliği vardır. GHRH+arginin testinde eşik VKİ 25 kg/m2 altında 11 µg/l, 25-30 kg/m2 arasında 8 µg/l, 30 kg/m2 üzerinde 4 µg/l'dir; ancak GHRH ülkemizde bulunmuyor. Glukagon testinde pik GH 1 µg/l ve üzeri normal yanıt kabul edilir. AACE, VKİ 25 altında 3 µg/l, 25 ve üzerinde 1 µg/l eşiğini kullanır. (TEMD Hipofiz 2022, Bölüm 7, s. 97)",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-temd-hip-068",
+      "level": "Kılavuz",
+      "title": "Önce glukokortikoid, sonra tiroksin ve GH",
+      "content": "ACTH eksikliğine TSH ya da GH eksikliği eşlik ediyorsa adrenal krizi önlemek için önce glukokortikoid başlanır. İlk seçenek günlük toplam 15-20 mg hidrokortizondur; sabah yüksek, öğleden sonra düşük olmak üzere 2 doz verilir, gerekirse sabah 10 mg, öğle 5 mg, akşamüstü 5 mg. Sekonder adrenal yetmezlikte fludrokortizon gerekmez, çünkü renin-anjiyotensin-aldosteron sistemi ACTH'dan bağımsız çalışır. Dozu izleyecek güvenilir bir belirteç yoktur; hasta yılda en az iki kez klinik olarak değerlendirilir. Hasta hastalığını gösteren kimlik ya da künye taşımalı ve stres durumunda dozu artırması gerektiğini bilmelidir. Bu bölüm artış için sayı vermez; kılavuzun yaşlanma bölümü kritik hastalıkta dozun 2-3 kat artırılmasını önerir (s. 152). (TEMD Hipofiz 2022, Bölüm 7, s. 98)",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-temd-hip-069",
+      "level": "Kılavuz",
+      "title": "Santral hipotiroidide TSH'ya bakma, sT4'e bak",
+      "content": "Santral hipotiroidide ortalama L-T4 dozu 1,6 µg/kg/gündür, genellikle 75-150 µg/gün. Bu hastada TSH doz ayarı için izlem kriteri olarak kullanılamaz. Hedef, serum sT4'ün referans aralığın üst yarısında olmasıdır. Doz ayarlanırken klinik bulgular ve yaş da dikkate alınır. (TEMD Hipofiz 2022, Bölüm 7, s. 99)",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-temd-hip-070",
+      "level": "Kılavuz",
+      "title": "Erişkin GH replasmanı: düşük başla, IGF-I ile titre et",
+      "content": "Erişkinde GH düşük dozla başlanır ve IGF-I düzeyine göre ayarlanır. 30-60 yaşta başlangıç 0,2-0,3 mg/gün (yatmadan hemen önce), 30 yaş altında 0,4-0,5 mg/gündür. Doz 1-2 ayda bir IGF-I kontrolüyle 0,1-0,2 mg/gün artırılır; hedef, yaşa göre referans aralığın ortalarıdır. İdame dozda IGF-I 6 ayda bir kontrol edilir. 1 yıllık tedaviden sonra klinik fayda ve düzelme yoksa tedavi kesilir. Tedavi, sıkı ölçütlerle ağır GH eksikliği tanısı alan genç erişkin ve orta yaş hastalara önerilir. (TEMD Hipofiz 2022, Bölüm 7, s. 100)",
+      "trigger": "Hipofiz Yetmezliği"
+    },
+    {
+      "id": "p-temd-hip-071",
+      "level": "Kılavuz",
+      "title": "Susuzluk testi: ne zaman durdurulur, ne zaman desmopressin verilir",
+      "content": "DI'da idrar osmolalitesi 100 mOsm/kg altında, serum sodyumu 140 mEq/L üzerindedir; primer polidipside idrar yine 100 mOsm/kg altında ama sodyum 140 mEq/L altındadır. Testten önce tiroid işlevi ve adrenal rezerv normal olmalı, desmopressin en az 24 saat önce kesilmelidir. Hasta saat başı tartılır; başlangıç ağırlığının %5'i kaybedilirse ya da hipotansiyon veya şuur bulanıklığı gelişirse test durdurulur. Plazma osmolalitesi 300 mOsm/kg üzerine (sodyum 145 mEq/l üzeri) çıkınca, ardışık iki idrar osmolalitesi arasındaki fark %10'u aşmayınca ya da ağırlığın %3'ü kaybedilince desmopressin verilir. Doz 2 µg i.m./i.v. veya 10 µg intranazaldir; ardından 2 saat boyunca saat başı idrar hacmi ve osmolalitesi ölçülür. (TEMD Hipofiz 2022, Bölüm 8, s. 105)",
+      "trigger": "Diabetes İnsipidus"
+    },
+    {
+      "id": "p-temd-hip-072",
+      "level": "Kılavuz",
+      "title": "Desmopressin yanıtını yorumlamak ve kopeptinin bugünkü yeri",
+      "content": "Desmopressin sonrası idrar osmolalitesi %100'den fazla artarsa komplet santral DI, %15-50 artarsa parsiyel DI düşünülür. Dehidratasyon ve desmopressin sonrası idrar osmolalitesi 750 mOsm/kg üzerindeyse normal; önce 300 altında, sonra 750 üzerindeyse santral DI; ikisinde de 300 altındaysa nefrojenik DI'dır. 300-750 arası değerler parsiyel santral ile nefrojenik DI'yı ayırmaz. Uzun süreli poliüride böbreğin konsantrasyon yeteneği azaldığı için test yanlış sonuç verebilir. Plazma AVP ölçümü teknik olarak stabil değildir. Kopeptin AVP prohormonunun C-terminal parçasıdır; normal yanıt verisi yetersiz ve kiti yaygın olmadığı için henüz susuzluk testinin yerini almamıştır. (TEMD Hipofiz 2022, Bölüm 8, s. 106)",
+      "trigger": "Diabetes İnsipidus"
+    },
+    {
+      "id": "p-temd-hip-073",
+      "level": "Kılavuz",
+      "title": "Sap hasarından sonra trifazik yanıt: ikinci fazda hiponatremi",
+      "content": "Sellar cerrahi ya da travmadan sonra DI geçici, kalıcı veya trifazik olabilir. İlk faz ameliyattan hemen sonra başlar, yaklaşık altı gün sürer ve DI ile seyreder. 7.-12. günlerde nekrotik aksonlardan depolanmış vazopressin boşalır ve DI kaybolur. Bu antidiüretik fazda fazla sıvı alan hastada uygunsuz ADH ve hiponatremi gelişir. Depo tükenince DI yeniden ortaya çıkar. (TEMD Hipofiz 2022, Bölüm 8, s. 107)",
+      "trigger": "Diabetes İnsipidus"
+    },
+    {
+      "id": "p-temd-hip-074",
+      "level": "Kılavuz",
+      "title": "Gebelikte DI: plasenta AVP'yi yıkar, doğumdan sonra geçer",
+      "content": "Gebelikte DI yılda yüz bin gebelikten 2-6'sında görülür. Plasental sistein aminopeptidaz AVP'yi yıkar, artan glomerüler filtrasyon da vazopressin klirensini artırır; böylece altta yatan hafif AVP eksikliği ortaya çıkar. Gestasyonel DI doğumdan sonraki 2-3 hafta içinde kendiliğinden geçer, ama altta yatan patoloji için ileri tetkik yine yapılmalıdır. Desmopressin gebelikte ve lohusalıkta kullanılabilir. Yeterli tedavi edilmeyen DI gebelikte oligohidramniyos, preeklampsi ve hepatik disfonksiyona yol açabilir. (TEMD Hipofiz 2022, Bölüm 8, s. 107)",
+      "trigger": "Diabetes İnsipidus"
+    },
+    {
+      "id": "p-temd-hip-075",
+      "level": "Kılavuz",
+      "title": "Desmopressin formları arasında geçişte eşdeğer dozlar",
+      "content": "Hafif DI yeterli su alımıyla izlenebilir, komplet DI ilaç gerektirir. Nazal sprey her sıkımda 10 µg içerir; günlük 10 µg ile başlanır ve poliüriye göre ayarlanır. 10 µg nazal sprey, 400 µg tablet ve 240 µg melt tablet birbirine eşdeğerdir; form değişirken doz yeniden ayarlanır. Parenteral formun biyoyararlılığı oral formdan 100 kat, nazal formdan 10 kat fazladır. Etki 1-2 saatte en yüksek düzeye çıkar ve 16-18 saate uzar; doz ayarlarken su intoksikasyonundan kaçınılır. Kılavuz oral dozu 50-1200 mg/gün olarak yazıyor; bu, 0,1 ve 0,2 mg'lık tabletlerle bağdaşmıyor ve birim hatası olabilir. (TEMD Hipofiz 2022, Bölüm 8, s. 108)",
+      "trigger": "Diabetes İnsipidus"
+    },
+    {
+      "id": "p-temd-hip-076",
+      "level": "Kılavuz",
+      "title": "DI ve COVID-19: doz atlama ve su açığını yavaş kapatma",
+      "content": "DI'nın COVID-19'a yatkınlık yarattığına dair bilgi yoktur. Kontrolleri aksayan hastada hiponatremiden kaçınmak için desmopressin dozu haftada 1 ya da 2 kez atlanabilir. Yatan ve oral desmopressin alamayan hastada hızla dehidratasyon ve hipernatremi gelişebilir; serbest su açığının %50'si 24 saati aşan sürede, kalanı sonraki 24-72 saatte kapatılır. Hipotonik sıvı bolus verilmez; sodyum saatte 0,5 mEq/L veya daha az (günde 10-12 mEq/L altında) yükseltilir. Parenteral desmopressin 0,5 mcg i.v./s.c. ile başlanıp idrar çıkışı ve sodyuma göre titre edilir. (TEMD Hipofiz 2022, Bölüm 8, s. 108)",
+      "trigger": "Diabetes İnsipidus"
+    },
+    {
+      "id": "p-temd-hip-077",
+      "level": "Kılavuz",
+      "title": "SIADH demeden önce hiponatreminin gerçek olduğunu kanıtla",
+      "content": "SIADH tanısında ilk adım hiponatreminin gerçek olduğunu göstermektir. Değerlendirme sırasında diüretikler, özellikle tiyazidler kesilmeli, günlük NaCl alımı 5-6 gramı aşmamalıdır. Hiperlipidemi ve hiperproteinemi psödohiponatremiye yol açar. Hiperglisemide düzeltilmiş sodyum, ölçülen sodyuma 2,4 x [(glukoz - 100)/100] eklenerek bulunur. Sodyum iyon seçici elektrotla ölçülmelidir; alev fotometrisi düşük değer verebilir. (TEMD Hipofiz 2022, Bölüm 9, s. 113)",
+      "trigger": "Uygunsuz ADH Sendromu"
+    },
+    {
+      "id": "p-temd-hip-078",
+      "level": "Kılavuz",
+      "title": "Bartter-Schwartz ölçütleri ve destekleyici fraksiyonel atılımlar",
+      "content": "Mutlak ölçütler: serum osmolalitesi 275 mOsm/kgH2O altında, idrar osmolalitesi 100 mOsm/kgH2O üzerinde, normal tuz alımında idrar sodyumu 40 mEq/L üzerinde, övolemi, normal tiroid, adrenal ve böbrek işlevi, diüretik kullanılmaması. Destekleyici ölçütler: serum ürik asit 4 mg/dl altında, üre 10 mg/dl altında, fraksiyonel sodyum atılımı %1 üzerinde, fraksiyonel üre atılımı %55 üzerinde, fraksiyonel ürik asit atılımı %12 üzerinde. Su yükleme testinde 4 saati aşan sürede verilen 20 ml/kg suyun %80'inden azının atılması da tanıyı destekler. İzotonik NaCl infüzyonuyla sodyumun düzelmemesi ve sıvı kısıtlamasıyla hiponatreminin düzelmesi de destekleyici ölçütlerdir. Ayırıcı tanıda serebral tuz kaybı, hipotiroidi, adrenal yetersizlik, hipopitüitarizm ve psikojenik polidipsi düşünülmelidir. (TEMD Hipofiz 2022, Bölüm 9, s. 113)",
+      "trigger": "Uygunsuz ADH Sendromu"
+    },
+    {
+      "id": "p-temd-hip-079",
+      "level": "Kılavuz",
+      "title": "Ağır hiponatremide %3 NaCl: 150 ml, 20 dakika, 5 mEq/L hedef",
+      "content": "Ciddi hiponatremide akut ya da kronik ayrımı yapmadan ilk saatte 20 dakikada 150 ml %3 NaCl verilir. Sodyum için kan alınır ve sonuç beklenmeden ikinci 150 ml başlanır; sodyum 5 mEq/L artana kadar tekrarlanır. Semptomlar düzelirse %3 NaCl kesilir, %0,9 NaCl ile damar yolu açık tutulur; sodyum 130 mEq/L olana dek artış 24 saatte 8 mEq/L'yi geçmez. Semptom sürüyorsa %3 NaCl sodyumu saatte 1 mEq/L artıracak hızla sürdürülür. Semptomlar düzelince, sodyum 10 mEq/L artınca ya da 130 mEq/L'ye ulaşınca infüzyon kesilir. %3 salin 513 mEq/L sodyum içerir. (TEMD Hipofiz 2022, Bölüm 9, s. 115)",
+      "trigger": "Uygunsuz ADH Sendromu"
+    },
+    {
+      "id": "p-temd-hip-080",
+      "level": "Kılavuz",
+      "title": "Düzeltme hızı: amaç normal sodyum değil, güvenli sodyum",
+      "content": "Kronik hiponatremide sodyum 24 saatte 8 mEq/L'den fazla yükseltilmemelidir; prognoz bölümü sınırı saatte 0,5 mEq/L ve 24 saatte 8-10 mEq/L olarak verir. Agresif tedavi yalnız konvülziyon ya da mental değişiklik gibi bulguları olan, sodyumu 120 mEq/L altındaki hastada yapılır. Bu durumda sodyum semptomlar geçene dek saatte en fazla 2 mEq/L artırılır; amaç normal değer değildir, 120 mEq/L genellikle güvenlidir. Ozmotik demiyelinizasyon düzeltmeden 2-6 gün sonra spastik kuadriparezi ve psödobulber palsi ile ortaya çıkar. Plazma osmolalitesinin saatte 10 mOsm/kg'dan hızlı düzeltilmesi de serebral ödem ve herniasyona yol açabilir. (TEMD Hipofiz 2022, Bölüm 9, s. 114)",
+      "trigger": "Uygunsuz ADH Sendromu"
+    },
+    {
+      "id": "p-temd-hip-081",
+      "level": "Kılavuz",
+      "title": "SIADH tedavisinde sıvı kısıtlaması, üre ve vaptanlar",
+      "content": "Sıvı kısıtlamasında günlük su alımı günlük su kaybının altında olmalıdır; oral alımı 500-800 ml azaltmak çoğu zaman yeter, hastaya 500-1000 ml/24 saat sıvı verilebilir. Oral üre 10-49,0 g/gün ozmotik diürezle su atılımını artırır. Kıvrım diüretiği (furosemid) oral ya da i.v. verilebilir. Vaptanlar V2 reseptörünü bloke ederek elektrolit kaybettirmeden su attırır; konivaptan parenteral, tolvaptan oraldir, etkin ama pahalıdır. Demeklosiklin (600-1200 mg/gün) ve lityum (600-900 mg/gün) sık kullanılmaz; hemodiyaliz, ciddi hipervolemi kardiyak risk oluşturduğunda uygulanabilir. (TEMD Hipofiz 2022, Bölüm 9, s. 114)",
+      "trigger": "Uygunsuz ADH Sendromu"
+    },
+    {
+      "id": "p-temd-hip-082",
+      "level": "Kılavuz",
+      "title": "Genç hastada vertebra kırığı: Cushing'i ara",
+      "content": "Genç bir hastada vertebra osteoporozu ve kırıklarında rutin Cushing sendromu taraması maliyet-etkindir. Morbid obezite, tip 2 diyabet ve hipertansiyonda ise tarama önerilmez. Cushing hastalığında KMY genellikle osteopenik düzeydedir, ama kırıklar bu düzeyde de görülür ve çoğu vertebradadır. Vertebra kırıkları hastalığın en sık komplikasyonudur, ancak %30-40'ına tanı konabilir. Bazen hastalığın ilk belirtisi kırıktır. (TEMD Hipofiz 2022, Bölüm 10, s. 117)",
+      "trigger": "Hipofiz ve Kemik"
+    },
+    {
+      "id": "p-temd-hip-083",
+      "level": "Kılavuz",
+      "title": "Aktif Cushing'de bisfosfonattan kaçın",
+      "content": "Bisfosfonatlar Cushing hastalığında zaten düşük olan kemik döngüsünü ileri derecede baskılar; hiperkortizolemi düzelse bile döngü toparlanamaz. Kesin endikasyon yoksa aktif dönemde bisfosfonattan kaçınılır ve hastalığın kalıcı tedavisi öne alınır. Denosumab kemikte daha kısa kalır ve remisyonda kesilirse döngüyü aşırı baskılamaz; ancak kesebilmek için bisfosfonat gibi başka bir tedaviye geçmek gerekir. Asıl sorun kemik yapımında azalma olduğundan kuramsal olarak en uygun ilaç teriparatiddir; ancak Cushing hastalığında bununla ilgili yalnızca tek bir olgu bildirimi vardır. Her hasta günde 1000-2000 İU D vitamini ve 1000-1200 mg kalsiyum almalıdır. (TEMD Hipofiz 2022, Bölüm 10, s. 119)",
+      "trigger": "Hipofiz ve Kemik"
+    },
+    {
+      "id": "p-temd-hip-084",
+      "level": "Kılavuz",
+      "title": "Menopozda dopamin agonistini kesmeden önce kemiğe bak",
+      "content": "Prolaktinomalı hastalarda vertebra kırıkları kadınlarda %32,6, erkeklerde %37,5 oranında saptanmıştır. Postmenopozal kadında kırık riskinin artması, hiperprolaktineminin kemiği gonad fonksiyonundan bağımsız etkilediğini düşündürür. Dopamin agonisti verilmeyen postmenopozal kadınlarda daha fazla vertebra kırığı görülür. Rehberler asemptomatik postmenopozal prolaktinomada tedavinin kesilmesini önerse de kılavuz, kesme kararından önce kemik değerlendirmesi ister. Erkeklerde testosteron düzeyi ile kırık riski arasında anlamlı ilişki yoktur. (TEMD Hipofiz 2022, Bölüm 10, s. 120)",
+      "trigger": "Hipofiz ve Kemik"
+    },
+    {
+      "id": "p-temd-hip-085",
+      "level": "Kılavuz",
+      "title": "Akromegalide lomber DXA yanıltır: kalça ve ön kolu ölç",
+      "content": "Akromegalide omurgadaki dejeneratif değişiklikler ve osteofitler KMY'yi yanlışlıkla yüksek gösterir. Bu nedenle kalça ve ön kol KMY ölçülmeli, vertebralar ayrıca radyolojik olarak incelenmelidir. KMY düşüklüğü olmaksızın hastaların üçte birinde radyolojik vertebra kırığı vardır. Kür sağlanan hastada da önceki kırık, hipogonadizm, diyabet ya da azalan femur boynu KMY'si varsa kırık riski artar. Bu yüzden iyileşmeden sonra da takip özellikle femur DXA ile sürer. (TEMD Hipofiz 2022, Bölüm 10, s. 122)",
+      "trigger": "Hipofiz ve Kemik"
+    },
+    {
+      "id": "p-temd-hip-086",
+      "level": "Kılavuz",
+      "title": "GH tedavisi ilk yılda kemiği önce yıkar",
+      "content": "GH eksikliği olan erişkinlerin yaklaşık yarısında KMY'den bağımsız vertebra kırığı görülür; kırık riski 2-5 kat artmıştır. GH tedavisinin kemiğe etkisi bifaziktir: ilk 6-12 ayda kemik rezorpsiyonu hızlanır. Tedavi 12 aydan uzun sürdüğünde femur ve vertebrada KMY artar. Kısa süreli tedavinin olumsuz etkisi, ilk aylarda artan Wnt antagonisti DKK-1'e bağlanır. Hormon replasmanlarının gereğinden yüksek dozda yapılması da osteoporoza yol açabilir. (TEMD Hipofiz 2022, Bölüm 10, s. 123)",
+      "trigger": "Hipofiz ve Kemik"
+    },
+    {
+      "id": "p-temd-hip-087",
+      "level": "Kılavuz",
+      "title": "TSHoma: her hastada DXA ve vertebra morfometrisi",
+      "content": "Santral hipertiroidizm kemik yeniden yapılanmasını artırarak kemik kırılganlığını artırır. Bir retrospektif çalışmada TSHomalı hastaların %60'ında hipofiz cerrahisi öncesi vertebra kırığı bildirilmiştir. Bu oran nonfonksiyone adenomlardakinin 2 katıdır. TSHoma tanısı konan her hastada hem DXA hem morfometrik vertebra değerlendirmesi yapılmalıdır. Yüksek kemik döngü belirteçleri tedaviyle normale döner. (TEMD Hipofiz 2022, Bölüm 10, s. 124)",
+      "trigger": "Hipofiz ve Kemik"
+    },
+    {
+      "id": "p-temd-hip-088",
+      "level": "Kılavuz",
+      "title": "Normal serum ACE nörosarkoidozu dışlamaz",
+      "content": "Hipotalamo-hipofizer sarkoidozda endokrin bozukluklar olguların %3-32'sinde görülür ve en sık olanı DI'dır. Serum ACE genellikle aktif akciğer hastalığında yüksektir, izole nörosarkoidozda ise çoğunlukla normaldir. Normal BOS analizi de hipotalamo-hipofizer sarkoidozu dışlamaz. İlk başvuruda nörosarkoidozda akciğer grafisinde patolojik bulgu %30 iken sistemik sarkoidozda bu oran %90'ın üzerindedir. Kortikosteroidle granülomatöz lezyon gerilese bile çoğu endokrin bozukluk kalıcıdır. (TEMD Hipofiz 2022, Bölüm 11, s. 128)",
+      "trigger": "Sistemik Hastalıklarda Hipofiz"
+    },
+    {
+      "id": "p-temd-hip-089",
+      "level": "Kılavuz",
+      "title": "Adenom sanılan tüberkülom: cerrahiden önce anti-Tbc dene",
+      "content": "İntrakraniyal tüberkülomların birincil yeri hipofizdir ve sıklıkla hipofiz adenomu olarak yanlış tanı alırlar. Tbc riski yüksek ya da sistemik Tbc öyküsü olan hastada intrasellar kitle veya sap tutulumu varsa ve aksiyel T2-FLAIR görüntülerde sinyal baskılanması yoksa tüberküloz akla gelmelidir. Bu olgularda cerrahi öncesi anti-Tbc tedavi denemesi yararlı olabilir. Adenom sanılıp tedavi edilmeyen hipofiz Tbc geri dönüşümsüz hipopitüitarizme yol açabilir. Tbc ile başvuran hastalarda en sık bulgu hiponatremi, en sık nedeni uygunsuz ADH sendromudur. (TEMD Hipofiz 2022, Bölüm 11, s. 130)",
+      "trigger": "Sistemik Hastalıklarda Hipofiz"
+    },
+    {
+      "id": "p-temd-hip-090",
+      "level": "Kılavuz",
+      "title": "Açıklanamayan DI'da histiyositozu düşün",
+      "content": "Langerhans hücreli histiyositozda izole sap tutulumunun sıklığı bilinmediği için tüm DI olgularında LHH mutlaka düşünülmelidir. DI, LHH tanısından önce, aynı anda ya da sonra ortaya çıkabilir. ACTH eksikliği yaşamı tehdit ettiğinden hipofiz tutulumu gösterilen hastada bazal ve dinamik kortizol değerlendirilmelidir. Hastaların yaklaşık %75'i veya daha fazlası aktive edici BRAF ya da MEK mutasyonu taşır. Langerhans dışı bir histiyositoz olan Erdheim-Chester hastalığında da DI olguların %25-48'inde hastalığın ilk belirtisidir. (TEMD Hipofiz 2022, Bölüm 11, s. 132)",
+      "trigger": "Sistemik Hastalıklarda Hipofiz"
+    },
+    {
+      "id": "p-temd-hip-091",
+      "level": "Kılavuz",
+      "title": "ANCA negatifliği GPA'da hipofiz tutulumunu dışlamaz",
+      "content": "GPA'da hipofiz tutulumu %8 oranındadır; en sık endokrin bozukluklar DI ve hipogonadotropik hipogonadizmdir. İzole hipofiz tutulumu ANCA negatif ya da tipik triadı olmayan hastalarda dışlanamaz. Kortikosteroid ve siklofosfamid ile sistemik bulgular iyileşse de hormon eksiklikleri ancak %17 oranında düzelir. Bu yüzden tanıda gecikmemek gerekir. Yalnızca hipofiz tutulumu olan hastada da sistemik tarama mutlaka yapılmalıdır. (TEMD Hipofiz 2022, Bölüm 11, s. 135)",
+      "trigger": "Sistemik Hastalıklarda Hipofiz"
+    },
+    {
+      "id": "p-temd-hip-092",
+      "level": "Kılavuz",
+      "title": "Normal serum IgG4, IgG4 hipofizitini dışlamaz",
+      "content": "IgG4 ilişkili hastalıkta hastaların yaklaşık %30'unda tipik histopatolojik bulgulara rağmen serum IgG4 düzeyi normaldir; hipofize sınırlı atipik olgularda da serum IgG4 normal bulunabilir. Tanıda serum IgG4 ölçümünün yararı hipofiz biyopsisinden azdır. Japon uzlaşısı 2–4 hafta 0,6 mg/kg/gün oral prednizolon önerir. Hastaların önemli bir kısmında nüks (%25–50) olabilir. Nüks ya da steroide dirençli olguda rituksimab önerilir. (TEMD Hipofiz 2022, Bölüm 11, s. 139)",
+      "trigger": "Sistemik Hastalıklarda Hipofiz"
+    },
+    {
+      "id": "p-temd-hip-093",
+      "level": "Kılavuz",
+      "title": "Ani DI, oftalmopleji ve baş ağrısı: lenfoma ya da metastaz",
+      "content": "Elli yaş üzerindeki bir hastada ani başlayan DI, oftalmopleji ve baş ağrısı hipofize lenfoma veya lösemi infiltrasyonu ya da metastaz şüphesi uyandırmalıdır. Lenfomalı hastaların %81'inde kavernöz sinüs infiltrasyonu veya sap tutulumu vardır; nonfonksiyone adenomlarda bu bulgular %9,6'dır. Adenomlarda görülmeyen dural kalınlaşma ayırıcı tanıda önemli bir bulgudur. FDG-PET hipofiz, sap ve hipotalamustaki lenfoma lezyonlarını göstermeyebilir. Hipotalamo-hipofizer sistemi en sık tutan alt grup diffüz büyük B-hücreli lenfomadır. (TEMD Hipofiz 2022, Bölüm 11, s. 144)",
+      "trigger": "Sistemik Hastalıklarda Hipofiz"
+    },
+    {
+      "id": "p-temd-hip-094",
+      "level": "Kılavuz",
+      "title": "Nedeni bulunmayan apopleksi: yakın COVID-19'u sor",
+      "content": "Hipofiz makroadenomu ya da başka tanımlanabilir neden olmadan COVID-19 enfeksiyonunu takiben hipofiz apopleksisi olguları bildirilmiştir. Bu tabloya SARS-CoV-2'nin yol açtığı hiperkoagülasyon ve trombozun katkıda bulunduğu varsayılır. Diğer hipofizit nedenleri dışlandıktan sonra enfeksiyondan birkaç hafta sonra izole DI gelişen üç olgu da vardır. Bu DI, COVID-19'un geç sekeli olarak görülür. (TEMD Hipofiz 2022, Bölüm 11, s. 142)",
+      "trigger": "Sistemik Hastalıklarda Hipofiz"
+    },
+    {
+      "id": "p-temd-hip-095",
+      "level": "Kılavuz",
+      "title": "Yaşlıda hiponatremi: hipopitüitarizmin uyarı işareti",
+      "content": "Hiponatremi genel popülasyonda yaklaşık %8 iken 75 yaş üzerinde %12'ye kadar çıkar. Yaşlıda hiponatremi hipopitüitarizm açısından uyarıcı olmalıdır; ayırıcı tanıda önce adrenal yetmezlik ve hipotiroidi dışlanır. Düşük tuz tüketen ya da anoreksik yaşlıda idrar Na düşük, azalan üre klerensi nedeniyle üre yüksek çıkabilir; bu, SIADH ile hipovolemik hiponatremiyi ayırmayı zorlaştırır. İlaca bağlı hiponatremi genellikle ilk haftalarda gelişir; uzun kullanımdan sonra çıkarsa başka neden aranır. Asemptomatik yaşlıda bile düzeltme önerilir, çünkü kronik hiponatremi yürüme bozukluğu, düşme ve kognitif bozuklukla ilişkilidir. (TEMD Hipofiz 2022, Bölüm 12, s. 149)",
+      "trigger": "Yaşlanma ve Hipofiz"
+    },
+    {
+      "id": "p-temd-hip-096",
+      "level": "Kılavuz",
+      "title": "Yaşlıda ACTH eksikliği: ITT yerine 1 μg ACTH testi",
+      "content": "Sabah bazal kortizolü ≥18 μg/dL ise HHA aksı sağlam, ≤3 μg/dL ise adrenal yetmezlik vardır; 3-18 μg/dL arasında dinamik test gerekir (kılavuzun hipofiz yetmezliği bölümü üst eşiği 15 μg/dl olarak verir). İnsülin tolerans testi konvülsiyon ve kardiyovasküler riskler nedeniyle yaşlıda önerilmez; yerine düşük doz (1 μg i.v.) ACTH testi önerilir. Apopleksi gibi yeni gelişen ya da parsiyel ACTH eksikliğinde adrenal henüz atrofiye olmadığından ACTH testi normal çıkabilir. Yaşlıda hidrokortizonu daha düşük dozda (sabah 10 mg, akşam üzeri 5 mg) verme eğilimi vardır, çünkü yüksek doz kırık ve kardiyovasküler olay riskini artırır. Kritik hastalıkta doz 2-3 kat artırılır. (TEMD Hipofiz 2022, Bölüm 12, s. 152)",
+      "trigger": "Yaşlanma ve Hipofiz"
+    },
+    {
+      "id": "p-temd-hip-097",
+      "level": "Kılavuz",
+      "title": "Yaşlıda santral hipotiroidi: sT3 ve TRH testi gereksiz, L-T4 yavaş titre edilir",
+      "content": "TSH eksikliğinde TSH normal görünse bile biyoaktivitesi düşüktür; en güvenilir tanı yöntemi sT4 düşüklüğüdür. Serbest T3 ölçümü önerilmez, TRH testi de gerekmez. ACTH eksikliği de varsa L-tiroksin yeterli glukokortikoid replasmanından sonra başlanır. L-tiroksin 0,25-0,5 μg/kg ile başlanır ve 3-4 haftada bir artırılarak 1,2-1,6 μg/kg tam doza çıkılır. Fazla doz kemik kaybı ve atriyal fibrilasyon riskini artırır. (TEMD Hipofiz 2022, Bölüm 12, s. 153)",
+      "trigger": "Yaşlanma ve Hipofiz"
+    },
+    {
+      "id": "p-temd-hip-098",
+      "level": "Kılavuz",
+      "title": "Yaşlı erkekte LHRH testi yerine hipofiz MR",
+      "content": "Yaşlı erkekte andropoz, primer ve sekonder hipogonadizm ayrımını güçleştirir. Düşük total testosteronla birlikte düşük veya normal LH ve FSH tanı koydurur. LHRH testinde 100 μg i.v. LHRH sonrası 30. ve 60. dakikada LH ölçülür; sekonder hipogonadizmde bazal LH düşük, yanıt kütür. LHRH testini takiben apopleksiye uğrayan adenom olguları bildirildiğinden sekonder hipogonadizm düşünülen hastayı hipofiz MR ile değerlendirmek uygundur. Prostat hastalıkları bu yaşta sık olduğundan testosteron replasmanı üroloji konsültasyonu ve sıkı takiple yapılır. (TEMD Hipofiz 2022, Bölüm 12, s. 154)",
+      "trigger": "Yaşlanma ve Hipofiz"
+    },
+    {
+      "id": "p-temd-hip-099",
+      "level": "Kılavuz",
+      "title": "Yaşlıda GH eksikliği: ITT yerine glukagon testi",
+      "content": "Bilinen hipofiz hastalığında IGF-1 yaşa özgü aralığın altındaysa ve 3 veya daha fazla hipofiz hormon eksikliği varsa GH eksikliğini testle göstermek gerekmez. İnsülin tolerans testi yaşlıda önerilmez; yerine glukagon stimülasyon testi önerilir. Glukagon 1 mg i.m. verilir, GH 90. ile 240. dakikalar arasında ölçülür; bu bölümde GH ≤3 μg/L eksikliği gösterir (hipofiz yetmezliği bölümü ise glukagon testinde pik GH 1 µg/l ve üzerini normal sayar). Replasman başlangıç dozu genç erişkin dozunun yarısı, 0,1 mg'dır ve 4-6 haftada bir titre edilir. Başlamadan önce hipofiz mutlaka görüntülenmelidir. (TEMD Hipofiz 2022, Bölüm 12, s. 155)",
+      "trigger": "Yaşlanma ve Hipofiz"
+    },
+    {
+      "id": "p-temd-hip-100",
+      "level": "Kılavuz",
+      "title": "Yaşlıda hipopitüitarizm tek başına cerrahi nedeni değil",
+      "content": "Yaşlılarda tanı konan adenomların %80'den fazlası nonfonksiyonedir; fonksiyone olanların çoğu GH salgılar. En sık bası bulgusu görme alanı defektidir, ancak yakınmalar katarakt ve maküler dejenerasyona bağlandığı için tanı gecikir. Nonfonksiyone adenomda cerrahinin ana endikasyonu görme alanı basısıdır. Preoperatif hipopitüitarizm cerrahi sonrası çoğunlukla düzelmez ve düzelme oranı gençlerden düşüktür; bu yüzden hipopitüitarizm cerrahi endikasyonu değildir. Prolaktinomada dopamin agonisti ilk seçenektir, ama ortostatik hipotansiyon riski nedeniyle dikkatli kullanılır. (TEMD Hipofiz 2022, Bölüm 12, s. 157)",
+      "trigger": "Yaşlanma ve Hipofiz"
+    }
+  ]
+}
