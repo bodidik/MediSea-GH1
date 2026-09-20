@@ -1,0 +1,42 @@
+{
+  "title": "Graves Hastalığında HCP5 (lncRNA) Varyantı ve Epigenetik Mekanizmalar",
+  "meta": {
+    "updatedAt": "20 Eyl 2026",
+    "tags": [
+      "Endokrinoloji",
+      "Tiroid",
+      "Graves Hastalığı",
+      "Genetik",
+      "Epigenetik",
+      "lncRNA",
+      "HCP5",
+      "DNA Metilasyonu",
+      "miRNA",
+      "Graves Orbitopatisi"
+    ],
+    "parent": "hipertiroidi",
+    "order": 6
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">HCP5 (HLA Complex P5), kromozom 6p21 üzerinde Major Histokompatibilite Kompleksi (MHC) Sınıf I bölgesinde konumlanmış, insan endojen retrovirüsleri (HERV-L ve HERV-16) ile sekans benzerliği taşıyan bir uzun kodlamayan RNA (lncRNA) genidir.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Genel olarak lncRNA'lar; transkripsiyonel regülasyon ve epigenetik modifikasyonlar aracılığıyla hücresel düzeyde doğal ve edinsel immün yanıtları düzenleme potansiyeline sahiptir. Ancak, HCP5 varyantının lncRNA üzerinden oluşturduğu epigenetik mekanizmalarla ilgili kaynakların sunduğu veriler ve bilimsel sınırlar şu şekildedir:</p>"
+    },
+    {
+      "heading": "HCP5 lncRNA Etki Mekanizmasına Dair Kaynaklardaki Sınır",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Kaynaklarınızda HCP5 gen polimorfizmlerinin (özellikle intronik rs3094228 varyantının), lncRNA yapısı üzerinden Graves hastalığı (GD) patogenezinde genetik ve epigenetik mekanizmalar arasında potansiyel bir köprü (bağlantı) oluşturabileceği vurgulanmaktadır.</li><li class=\"bg-slate-50 p-2 rounded\">• Ancak kaynaklar net olarak şunu ifade etmektedir: HCP5 varyantının lncRNA üzerinden Graves hastalığının patogenezini ve klinik başlangıç yaşını etkileyen spesifik hücresel ve epigenetik alt mekanizmaları henüz moleküler düzeyde tam olarak aydınlatılamamıştır (underlying mechanisms have yet to be established).</li></ul></div>"
+    },
+    {
+      "heading": "HCP5 Varyantının (rs3094228) İlgili Genetik ve Klinik Özellikleri",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• HCP5 geni içerisindeki intronik rs3094228 (C alleli) varyantı, Kafkas popülasyonlarında Graves hastalığına yatkınlık ve doğrudan hastalık başlangıç yaşı (age of onset) ile bağımsız şekilde ilişkilidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Doz Bağımlı İlişki:</strong> Bireyde taşıdığı HCP5 risk C alleli sayısı arttıkça, Graves hastalığının belirgin şekilde daha erken yaşlarda (pediatrik / erken başlangıçlı Graves - POGD) ortaya çıktığı gösterilmiştir.</li></ul></div>"
+    },
+    {
+      "heading": "Kaynaklarda Yer Alan Graves Hastalığına İlişkin Diğer Epigenetik Mekanizmalar",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">HCP5 lncRNA'sının spesifik epigenetik yolağı henüz tam olarak haritalandırılmamış olsa da, kaynaklarınızda Graves hastalığında gösterilmiş başlıca epigenetik bozukluklar şunlardır:</p><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">DNA Metilasyon Değişiklikleri</h4><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Yeni tanı Graves hastalarının T ve B lenfositlerinde global DNA hipometilasyonu mevcuttur. Antitiroid ilaç (ATD) veya radyoaktif iyot (RAI) tedavisi ile eütroidizm sağlandığında bu metilasyon düzeyi normale dönmektedir.</li><li class=\"bg-slate-50 p-2 rounded\">• DNMT1 (DNA metiltransferaz-1) geni rs2228612 GG genotipi taşıyan ve ATD tedavisine dirençli/yanıtsız olgularda anlamlı derecede daha düşük global DNA metilasyon seviyeleri tespit edilmiştir.</li><li class=\"bg-slate-50 p-2 rounded\">• Graves orbitopatisinde (GO) ise IL17RE, CD14 ve DRD4 gibi immün yanıt gen lokuslarında farklı metilasyon alanları saptanmıştır.</li></ul></div><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">Küçük Kodlamayan RNA (miRNA) Düzenlemeleri</h4><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Yeni tanı Graves hastalarında miR-346 baskılanmakta (downregüle olmakta) ve ATD tedavisi sonrasında düzeyi normale dönmektedir.</li><li class=\"bg-slate-50 p-2 rounded\">• Graves orbitopatisinde miR-146a seviyesi düşük bulunmuş olup Klinik Aktivite Skoru (CAS) ile ters orantılıdır. miR-224-5p düşüklüğü ise Glukokortikoid direncini öngören bir epigenetik biyobelirteç adayıdır.</li></ul></div><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">Histon Modifikasyonları</h4><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Graves hastalarında periferik kan mononükleer hücrelerinde (PBMC) Histon 4 (H4) asetilasyonunda azalma, artmış histon deasetilaz (HDAC) aktivitesi ve H3K4me3 / H3K27ac modifikasyonları tanımlanmıştır.</li></ul></div>"
+    },
+    {
+      "heading": "Özet",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">HCP5 geni bir lncRNA geni olup rs3094228 varyantının Graves hastalığında erken başlangıç yaşı ile doz bağımlı ilişkisi kanıtlanmıştır. Bununla birlikte, bu varyantın lncRNA aracılığıyla hangi epigenetik aracı molekülleri veya kromatinde hangi histon/DNA değişikliklerini tetiklediğine dair spesifik alt mekanizmalar kaynaklarda henüz tam olarak gösterilmemiş olup araştırma safhasındadır.</p>"
+    }
+  ]
+}
