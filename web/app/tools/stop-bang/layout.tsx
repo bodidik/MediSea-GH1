@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "ARISCAT — Preoperatif pulmoner komplikasyon riski",
-  description: "ARISCAT: Preoperatif pulmoner komplikasyon riski — 7 değişken, düzeltilebilir yük okuması. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/ariscat" },
+  title: "STOP-Bang — Obstrüktif uyku apnesi taraması",
+  description: "STOP-Bang: Obstrüktif uyku apnesi taraması — 0–8, STOP + erkek/BMI/boyun ek kuralı. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/stop-bang" },
   openGraph: {
     type: "website",
-    title: "ARISCAT — Preoperatif pulmoner komplikasyon riski",
-    description: "ARISCAT: Preoperatif pulmoner komplikasyon riski — 7 değişken, düzeltilebilir yük okuması. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/ariscat",
+    title: "STOP-Bang — Obstrüktif uyku apnesi taraması",
+    description: "STOP-Bang: Obstrüktif uyku apnesi taraması — 0–8, STOP + erkek/BMI/boyun ek kuralı. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/stop-bang",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "ARISCAT",
-          aciklama: "ARISCAT: Preoperatif pulmoner komplikasyon riski — 7 değişken, düzeltilebilir yük okuması. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/ariscat",
+          ad: "STOP-Bang",
+          aciklama: "STOP-Bang: Obstrüktif uyku apnesi taraması — 0–8, STOP + erkek/BMI/boyun ek kuralı. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/stop-bang",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "ARISCAT", yol: "/tools/ariscat" },
+          { ad: "STOP-Bang", yol: "/tools/stop-bang" },
         ])}
       />
       {children}
@@ -42,6 +42,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Göğüs Hastalıkları & Enfeksiyon kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/act" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ACT
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/ariscat" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ARISCAT
+              </Link>
+            </li>
             <li>
               <Link href="/tools/bap65" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 BAP-65
@@ -60,16 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/cat-copd" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 CAT Skoru
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/curb65" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                CURB-65 Skoru
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/decaf" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                DECAF Skoru
               </Link>
             </li>
           </ul>

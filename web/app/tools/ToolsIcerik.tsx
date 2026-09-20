@@ -212,6 +212,16 @@ const TOOLS_DATABASE = [
       { slug: "berlin-ards", name: "Berlin ARDS Kriterleri", desc: "ARDS tanı ve şiddet sınıflaması — hafif/orta/ağır" },
       { slug: "ariscat", name: "ARISCAT", desc: "Preoperatif pulmoner komplikasyon riski — 7 değişken, düzeltilebilir yük okuması" },
       { slug: "bap65", name: "BAP-65", desc: "KOAH alevlenmesinde şiddet sınıflaması — sınıf I–V, solunumsal asidoz ayrıca okunuyor" },
+      { slug: "pesi", name: "PESI ve sPESI", desc: "Pulmoner emboli 30 günlük mortalite — PESI sınıf I–V ve sPESI aynı yanıtlardan" },
+      { slug: "esc-pe-risk", name: "ESC 2019 PE Risk Sınıflaması", desc: "Hemodinami, PESI/sPESI, RV disfonksiyonu ve troponinle yüksek / orta-yüksek / orta-düşük / düşük risk" },
+      { slug: "gold-koah", name: "GOLD KOAH Sınıflaması", desc: "Spirometrik derece GOLD 1–4 ve ABE grubu — FEV1/FVC ≥ 0,70 ise sınıflamaz" },
+      { slug: "decaf", name: "DECAF Skoru", desc: "KOAH alevlenmesiyle yatışta hastane içi mortalite — 0–6" },
+      { slug: "light-kriterleri", name: "Light Kriterleri", desc: "Plevral sıvı eksüda/transüda ayrımı — diüretik altında albümin gradyanı düzeltmesi" },
+      { slug: "rapid-plevral", name: "RAPID Skoru", desc: "Plevral enfeksiyonda 3 aylık mortalite riski — 0–7" },
+      { slug: "rox-indeksi", name: "ROX İndeksi", desc: "Yüksek akımlı nazal oksijende entübasyon riski — 2/6/12. saat eşikleri" },
+      { slug: "stop-bang", name: "STOP-Bang", desc: "Obstrüktif uyku apnesi taraması — 0–8, STOP + erkek/BMI/boyun ek kuralı" },
+      { slug: "epworth", name: "Epworth Uykululuk Ölçeği", desc: "Aşırı gündüz uykululuğu — 8 durum, 0–24" },
+      { slug: "gap-ipf", name: "GAP İndeksi", desc: "İdiyopatik pulmoner fibrozda evre I–III ve 1–3 yıllık mortalite" },
     ]
   },
   {

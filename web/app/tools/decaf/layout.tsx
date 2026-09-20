@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "CURB-65 Skoru — Toplum kökenli pnömoni triyaj kararı",
-  description: "CURB-65 Skoru: Toplum kökenli pnömoni triyaj kararı. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/curb65" },
+  title: "DECAF Skoru — KOAH alevlenmesiyle yatışta hastane içi",
+  description: "DECAF Skoru: KOAH alevlenmesiyle yatışta hastane içi mortalite — 0–6. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/decaf" },
   openGraph: {
     type: "website",
-    title: "CURB-65 Skoru — Toplum kökenli pnömoni triyaj kararı",
-    description: "CURB-65 Skoru: Toplum kökenli pnömoni triyaj kararı. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/curb65",
+    title: "DECAF Skoru — KOAH alevlenmesiyle yatışta hastane içi",
+    description: "DECAF Skoru: KOAH alevlenmesiyle yatışta hastane içi mortalite — 0–6. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/decaf",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "CURB-65 Skoru",
-          aciklama: "CURB-65 Skoru: Toplum kökenli pnömoni triyaj kararı. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/curb65",
+          ad: "DECAF Skoru",
+          aciklama: "DECAF Skoru: KOAH alevlenmesiyle yatışta hastane içi mortalite — 0–6. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/decaf",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "CURB-65 Skoru", yol: "/tools/curb65" },
+          { ad: "DECAF Skoru", yol: "/tools/decaf" },
         ])}
       />
       {children}
@@ -42,11 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Göğüs Hastalıkları & Enfeksiyon kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/decaf" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                DECAF Skoru
-              </Link>
-            </li>
             <li>
               <Link href="/tools/epworth" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Epworth Uykululuk Ölçeği
@@ -70,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/light-kriterleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Light Kriterleri
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/mmrc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                mMRC Dispne
               </Link>
             </li>
           </ul>

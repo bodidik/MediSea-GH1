@@ -310,6 +310,11 @@
   "desc": "Romatoid artrit hastalık aktivite skoru"
  },
  {
+  "slug": "decaf",
+  "name": "DECAF Skoru",
+  "desc": "KOAH alevlenmesiyle yatışta hastane içi mortalite — 0–6"
+ },
+ {
   "slug": "demir-parametreleri",
   "name": "Demir Parametreleri",
   "desc": "TSAT ve ferritin — genel, kalp yetmezliği, KBH ve inflamasyon bağlamında"
@@ -405,9 +410,19 @@
   "desc": "Lökosit × % — eozinofili şiddeti ve astımda tip 2 eşikleri (150/300)"
  },
  {
+  "slug": "epworth",
+  "name": "Epworth Uykululuk Ölçeği",
+  "desc": "Aşırı gündüz uykululuğu — 8 durum, 0–24"
+ },
+ {
   "slug": "esas",
   "name": "ESAS",
   "desc": "Edmonton Semptom Değerlendirme — 9 semptom, 0–10 skala"
+ },
+ {
+  "slug": "esc-pe-risk",
+  "name": "ESC 2019 PE Risk Sınıflaması",
+  "desc": "Hemodinami, PESI/sPESI, RV disfonksiyonu ve troponinle yüksek / orta-yüksek / orta-düşük / düşük risk"
  },
  {
   "slug": "essdai",
@@ -485,6 +500,11 @@
   "desc": "Parenteral demir için toplam demir açığı (mg) — Hb, kilo ve depo demiri"
  },
  {
+  "slug": "gap-ipf",
+  "name": "GAP İndeksi",
+  "desc": "İdiyopatik pulmoner fibrozda evre I–III ve 1–3 yıllık mortalite"
+ },
+ {
   "slug": "gcs",
   "name": "Glasgow Koma Skalası",
   "desc": "Bilinç düzeyi değerlendirmesi (E+V+M)"
@@ -513,6 +533,11 @@
   "slug": "gnri",
   "name": "GNRI",
   "desc": "Geriyatrik Nütrisyon Risk İndeksi — albumin + ideal ağırlık"
+ },
+ {
+  "slug": "gold-koah",
+  "name": "GOLD KOAH Sınıflaması",
+  "desc": "Spirometrik derece GOLD 1–4 ve ABE grubu — FEV1/FVC ≥ 0,70 ise sınıflamaz"
  },
  {
   "slug": "gout-acr",
@@ -710,6 +735,11 @@
   "desc": "Toplumda yaşayan yaşlıda 4 yıllık mortalite tahmini"
  },
  {
+  "slug": "light-kriterleri",
+  "name": "Light Kriterleri",
+  "desc": "Plevral sıvı eksüda/transüda ayrımı — diüretik altında albümin gradyanı düzeltmesi"
+ },
+ {
   "slug": "lille",
   "name": "Lille Skoru",
   "desc": "Alkolik hepatitte 7. gün kortikosteroid yanıtı — ≥ 0,45 yanıtsız"
@@ -890,6 +920,11 @@
   "desc": "PE düşük risk dışlama protokolü"
  },
  {
+  "slug": "pesi",
+  "name": "PESI ve sPESI",
+  "desc": "Pulmoner emboli 30 günlük mortalite — PESI sınıf I–V ve sPESI aynı yanıtlardan"
+ },
+ {
   "slug": "plasmic",
   "name": "PLASMIC Skoru",
   "desc": "Trombotik mikroanjiyopatide TTP (ağır ADAMTS13 eksikliği) olasılığı — 0–7"
@@ -960,6 +995,11 @@
   "desc": "Akut pankreatit şiddet değerlendirmesi"
  },
  {
+  "slug": "rapid-plevral",
+  "name": "RAPID Skoru",
+  "desc": "Plevral enfeksiyonda 3 aylık mortalite riski — 0–7"
+ },
+ {
   "slug": "rapid3",
   "name": "RAPID3",
   "desc": "Rutin Değerlendirme 3 Hasta Ölçütü — HAQ-DI + ağrı + global"
@@ -993,6 +1033,11 @@
   "slug": "rosier",
   "name": "ROSIER",
   "desc": "Acil serviste inmeyi taklitçilerinden ayırma — −2 ile +5, > 0 inme olası"
+ },
+ {
+  "slug": "rox-indeksi",
+  "name": "ROX İndeksi",
+  "desc": "Yüksek akımlı nazal oksijende entübasyon riski — 2/6/12. saat eşikleri"
  },
  {
   "slug": "rts",
@@ -1103,6 +1148,11 @@
   "slug": "stone-skoru",
   "name": "STONE Skoru",
   "desc": "Yan ağrısında üreter taşı olasılığı — 0–13"
+ },
+ {
+  "slug": "stop-bang",
+  "name": "STOP-Bang",
+  "desc": "Obstrüktif uyku apnesi taraması — 0–8, STOP + erkek/BMI/boyun ek kuralı"
  },
  {
   "slug": "tft",

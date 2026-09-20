@@ -436,6 +436,56 @@
     "slug": "bap65",
     "name": "BAP-65",
     "icon": "🫁"
+   },
+   {
+    "slug": "pesi",
+    "name": "PESI ve sPESI",
+    "icon": "🫁"
+   },
+   {
+    "slug": "esc-pe-risk",
+    "name": "ESC 2019 PE Risk Sınıflaması",
+    "icon": "🫁"
+   },
+   {
+    "slug": "gold-koah",
+    "name": "GOLD KOAH Sınıflaması",
+    "icon": "🫁"
+   },
+   {
+    "slug": "decaf",
+    "name": "DECAF Skoru",
+    "icon": "🫁"
+   },
+   {
+    "slug": "light-kriterleri",
+    "name": "Light Kriterleri",
+    "icon": "🫁"
+   },
+   {
+    "slug": "rapid-plevral",
+    "name": "RAPID Skoru",
+    "icon": "🫁"
+   },
+   {
+    "slug": "rox-indeksi",
+    "name": "ROX İndeksi",
+    "icon": "🫁"
+   },
+   {
+    "slug": "stop-bang",
+    "name": "STOP-Bang",
+    "icon": "🫁"
+   },
+   {
+    "slug": "epworth",
+    "name": "Epworth Uykululuk Ölçeği",
+    "icon": "🫁"
+   },
+   {
+    "slug": "gap-ipf",
+    "name": "GAP İndeksi",
+    "icon": "🫁"
    }
   ]
  },
@@ -485,6 +535,56 @@
    {
     "slug": "bap65",
     "name": "BAP-65",
+    "icon": "🫁"
+   },
+   {
+    "slug": "pesi",
+    "name": "PESI ve sPESI",
+    "icon": "🫁"
+   },
+   {
+    "slug": "esc-pe-risk",
+    "name": "ESC 2019 PE Risk Sınıflaması",
+    "icon": "🫁"
+   },
+   {
+    "slug": "gold-koah",
+    "name": "GOLD KOAH Sınıflaması",
+    "icon": "🫁"
+   },
+   {
+    "slug": "decaf",
+    "name": "DECAF Skoru",
+    "icon": "🫁"
+   },
+   {
+    "slug": "light-kriterleri",
+    "name": "Light Kriterleri",
+    "icon": "🫁"
+   },
+   {
+    "slug": "rapid-plevral",
+    "name": "RAPID Skoru",
+    "icon": "🫁"
+   },
+   {
+    "slug": "rox-indeksi",
+    "name": "ROX İndeksi",
+    "icon": "🫁"
+   },
+   {
+    "slug": "stop-bang",
+    "name": "STOP-Bang",
+    "icon": "🫁"
+   },
+   {
+    "slug": "epworth",
+    "name": "Epworth Uykululuk Ölçeği",
+    "icon": "🫁"
+   },
+   {
+    "slug": "gap-ipf",
+    "name": "GAP İndeksi",
     "icon": "🫁"
    }
   ]

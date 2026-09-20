@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "PSI/PORT Skoru — Pnömonide 30 günlük mortalite tahmini",
-  description: "PSI/PORT Skoru: Pnömonide 30 günlük mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/psi-port" },
+  title: "RAPID Skoru — Plevral enfeksiyonda 3 aylık mortalite",
+  description: "RAPID Skoru: Plevral enfeksiyonda 3 aylık mortalite riski — 0–7. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/rapid-plevral" },
   openGraph: {
     type: "website",
-    title: "PSI/PORT Skoru — Pnömonide 30 günlük mortalite tahmini",
-    description: "PSI/PORT Skoru: Pnömonide 30 günlük mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/psi-port",
+    title: "RAPID Skoru — Plevral enfeksiyonda 3 aylık mortalite",
+    description: "RAPID Skoru: Plevral enfeksiyonda 3 aylık mortalite riski — 0–7. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/rapid-plevral",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "PSI/PORT Skoru",
-          aciklama: "PSI/PORT Skoru: Pnömonide 30 günlük mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/psi-port",
+          ad: "RAPID Skoru",
+          aciklama: "RAPID Skoru: Plevral enfeksiyonda 3 aylık mortalite riski — 0–7. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/rapid-plevral",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "PSI/PORT Skoru", yol: "/tools/psi-port" },
+          { ad: "RAPID Skoru", yol: "/tools/rapid-plevral" },
         ])}
       />
       {children}
@@ -42,11 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Göğüs Hastalıkları & Enfeksiyon kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/rapid-plevral" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                RAPID Skoru
-              </Link>
-            </li>
             <li>
               <Link href="/tools/rox-indeksi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 ROX İndeksi
@@ -70,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/bap65" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 BAP-65
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/berlin-ards" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Berlin ARDS Kriterleri
               </Link>
             </li>
           </ul>
