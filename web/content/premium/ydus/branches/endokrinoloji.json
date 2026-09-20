@@ -77,7 +77,16 @@
         },
         {
           "id": "temd-tiroid",
-          "baslik": "TEMD Tiroid",
+          "baslik": "TEMD Tiroid 1",
+          "hazir": true,
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ]
+        },
+        {
+          "id": "temd-tiroid-2",
+          "baslik": "TEMD Tiroid 2",
           "hazir": true,
           "rozetler": [
             "YENİ",
@@ -195,6 +204,24 @@
             "SINAV SPOTU"
           ],
           "hazir": true
+        },
+        {
+          "id": "temd-diyabet-1",
+          "baslik": "TEMD Diyabet 1",
+          "hazir": true,
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ]
+        },
+        {
+          "id": "temd-diyabet-2",
+          "baslik": "TEMD Diyabet 2",
+          "hazir": true,
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ]
         }
       ]
     },
@@ -271,6 +298,32 @@
             "SINAV SPOTU"
           ],
           "hazir": true
+        }
+      ]
+    },
+    {
+      "id": "obezite-beslenme",
+      "baslik": "Obezite ve Beslenme",
+      "aciklama": "Obezite, tıbbi beslenme tedavisi ve egzersiz metabolizması",
+      "emoji": "🥗",
+      "konular": [
+        {
+          "id": "temd-obezite",
+          "baslik": "TEMD Obezite",
+          "hazir": true,
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ]
+        },
+        {
+          "id": "temd-beslenme-egzersiz",
+          "baslik": "TEMD Beslenme ve Egzersiz",
+          "hazir": true,
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ]
         }
       ]
     }

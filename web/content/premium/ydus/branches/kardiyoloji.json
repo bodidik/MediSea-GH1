@@ -57,6 +57,23 @@
           "hazir": true
         }
       ]
+    },
+    {
+      "id": "hipertansiyon",
+      "baslik": "Hipertansiyon",
+      "aciklama": "Tanı, risk değerlendirmesi, sekonder nedenler ve tedavi",
+      "emoji": "🩺",
+      "konular": [
+        {
+          "id": "temd-hipertansiyon",
+          "baslik": "TEMD Hipertansiyon",
+          "hazir": true,
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ]
+        }
+      ]
     }
   ]
 }
