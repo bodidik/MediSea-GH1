@@ -1,0 +1,38 @@
+{
+  "title": "Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları",
+  "meta": {
+    "updatedAt": "20 Eyl 2026",
+    "tags": [
+      "Endokrinoloji",
+      "Tiroid",
+      "Graves Hastalığı",
+      "Hipertiroidi",
+      "Antitiroid İlaç",
+      "Nüks",
+      "GREAT Skoru",
+      "PTPN22",
+      "HLA",
+      "Genetik"
+    ],
+    "parent": "hipertiroidi",
+    "order": 5
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Graves hastalığında (GD) 12–18 aylık standart antitiroid ilaç (ATD) tedavisi sonrasında hastaların yaklaşık %50'sinde nüks gelişmektedir. Genetik yatkınlığın hastalığın gelişiminde %70'e varan bir paya sahip olduğu bilinmekle birlikte, tedavi sonrası remisyon veya nüks riskinin öngörülmesinde hastanın yaşı, guatr boyutu, başlangıç TSH reseptör antikoru (TRAb) ve serbest T4 düzeyleri gibi klinik parametreler tek başlarına her zaman yeterli hassasiyet sağlayamamaktadır.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Bu kısıtlamayı aşmak ve kişiselleştirilmiş tedavi (hassas tıp / precision medicine) stratejileri geliştirmek amacıyla klinik parametreler ile spesifik genetik belirteçlerin birleştirildiği skorlama sistemleri tanımlanmıştır.</p>"
+    },
+    {
+      "heading": "GREAT Skorundan GREAT+ Skoruna Genetik Katkı",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Geleneksel GREAT (Graves' Recurrent Events After Therapy) skoru; hastanın yaşı, guatr boyutu, başlangıç sT4 ve TRAb/TBII düzeylerini kapsayan 4 klinik değişkenden oluşur. Bu modele özgül genetik risk allellerinin eklenmesiyle oluşturulan GREAT+ skoru, nüks riskini tahmin etmede belirgin şekilde daha yüksek bir öngörü değerine ulaşmıştır.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">GREAT+ skorlama sistemine eklenen temel genetik faktörler şunlardır:</p><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">PTPN22 Gen Polimorfizmi (rs2476601 / C1858T - R620W)</h4><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">PTPN22 geni, lenfoid spesifik tirozin fosfatazı (LYP) kodlar. Varyant T alleli (rs2476601), T ve B hücre reseptör sinyallemesini modüle ederek otoreaktif B hücrelerinin periferik tolerans kaçışına ve düzenleyici T (Treg) hücrelerinin baskılayıcı fonksiyonlarının azalmasına yol açar.</p><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">HLA Sınıf II Allelleri (HLA-DRB1*03, HLA-DQA1*05 ve HLA-DQB1*02)</h4><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Major histokompatibilite kompleksi (MHC) Sınıf II allelleri, TSH reseptörüne (TSHR) ait otoreaktif peptidlerin T lenfositlerine sunulmasında ve santral/periferik immün toleransın kırılmasında anahtar rol oynar.</p>"
+    },
+    {
+      "heading": "GREAT ve GREAT+ Skorlarının Risk Sınıflandırması ve Nüks Oranları",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Genetik allellerin (HLA ve PTPN22) analize dahil edilmesi, hastaların nüks riskini daha keskin katmanlara ayırmaktadır:</p><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">GREAT Skoru (Sadece Klinik-Biyokimyasal Parametreler)</h4><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Sınıf I (Düşük Risk):</strong> Nüks riski %12 – %34 (Remisyon şansı yüksek)</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Sınıf II (Orta Risk):</strong> Nüks riski %35 – %39</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Sınıf III (Yüksek Risk):</strong> Nüks riski %53 – %74</li></ul></div><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">GREAT+ Skoru (Klinik Parametreler + HLA / PTPN22 Genotipleri)</h4><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Sınıf I+:</strong> Nüks riski %4 (En yüksek kalıcı remisyon oranı)</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Sınıf II+:</strong> Nüks riski %21</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Sınıf III+:</strong> Nüks riski %49</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Sınıf IV+:</strong> Nüks riski %85 (En yüksek nüks riski)</li></ul></div>"
+    },
+    {
+      "heading": "Genetik Faktörlerin Klinik Yönetimdeki Değeri",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Genetik panellerin (HLA ve PTPN22) taranarak GREAT+ skorunun hesaplanması özellikle klinik olarak orta risk grubunda (intermediate risk) yer alan hastaların yönetiminde kritik fark yaratmaktadır:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Klinik kriterlerle orta riskli kabul edilen hastaların genotipik analizleri yapıldığında, hastaların yaklaşık üçte birinde (%33) klinik yönetim kararı ve tedavi yönlendirmesi değişmektedir.</li><li class=\"bg-slate-50 p-2 rounded\">• Sınıf I ve I+ hastalar konvansiyonel 12–18 aylık antitiroid ilaç (ATD) tedavisi için ideal adaylarken; Sınıf IV+ veya III+ gibi yüksek genetik risk taşıyan hastalarda ATD kesilmesi sonrası nüks oranı %85'e ulaştığı için, başlangıçta doğrudan kesintisiz uzun süreli antitiroid ilaç (LT-ATD, ≥5 yıl) veya ablasyon tedavileri (RAI / Cerrahi) seçeneği ön plana çıkmaktadır.</li></ul></div>"
+    }
+  ]
+}
