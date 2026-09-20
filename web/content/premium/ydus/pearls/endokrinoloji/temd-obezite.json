@@ -1,0 +1,707 @@
+{
+  "id": "pearl-endo-temd-obezite-001",
+  "accessLevel": "premium",
+  "topic": "TEMD Obezite",
+  "pearls": [
+    {
+      "id": "p-temd-obz-001",
+      "level": "Kılavuz",
+      "title": "Hafif obezite demeyin: evre 1, 2, 3 dili",
+      "content": "Normal BKİ 18,5-24,9 kg/m2, kilo fazlalığı 25-29,9 kg/m2, obezite 30 kg/m2 ve üzeridir. Obezite evre 1 (30-34,9), evre 2 (35-39,9) ve evre 3 (40 ve üzeri) olarak sınıflandırılır. Kılavuz hafif, orta, morbid yerine evre dilini öneriyor: hastaların çoğunu oluşturan evre 1 için hafif obezite demek tabloyu önemsizleştiriyor. Morbid obez ve süper obez ifadeleri moral bozucu ya da damgalayıcı olabilir. Obez yerine obeziteli birey, obeziteyle yaşayan birey denmesi isteniyor. (TEMD Obezite 2024, Bölüm 1, s. 1)",
+      "trigger": "Obezitenin Tanımı ve Sınıflaması"
+    },
+    {
+      "id": "p-temd-obz-002",
+      "level": "Kılavuz",
+      "title": "Obezite taraması her başvuruda, en az yılda bir",
+      "content": "Tarama için en pratik yöntem boy ile vücut ağırlığını ölçüp BKİ'yi hesaplamaktır. Kılavuza göre taramanın en az yılda bir yapılması sorunun erken yakalanmasını sağlayarak obezite gelişimini önleyebilir; ayrıca birinci basamağa her başvuruda tekrarlanmalı. Hedef, yeni doğan döneminden geriatrik döneme kadar herkesin sağlıklı vücut ağırlığına sahip olması. Okullarda, iş yerlerinde ve birinci basamak sağlık merkezlerinde boy ve kilo ölçümü yapılmalı, BKİ hesabı topluma anlatılmalı. (TEMD Obezite 2024, Bölüm 1, s. 6)",
+      "trigger": "Obezite Taraması"
+    },
+    {
+      "id": "p-temd-obz-003",
+      "level": "Kılavuz",
+      "title": "BKİ üç hastada yanıltır: sporcu, çelimsiz, yaşlı",
+      "content": "BKİ ölçütünde farklı cinsiyet, yaş ve vücut tipi için aynı kesme noktalarının kullanılması önemli bir dezavantajdır; aynı BKİ değerine sahip kadın ile erkekteki yağ miktarı aynı değildir. Kas kitlesi yüksek sporcularda evre 1 obeziteye karşılık gelen BKİ değerlerine rağmen vücut yağ oranı normal olabilir. Zayıf ve çelimsiz bir kişide visseral yağ dokusu fazla olduğu halde BKİ obeziteyi işaret etmeyebilir. Yaşla kısalan boy nedeniyle yaşlılarda BKİ olduğundan yüksek bulunur; bu yüzden yaşlıda BKİ'nin obeziteyi gösterme duyarlılığı gençlerdeki kadar yüksek değildir. (TEMD Obezite 2024, Bölüm 1, s. 7)",
+      "trigger": "Beden Kitle İndeksi"
+    },
+    {
+      "id": "p-temd-obz-004",
+      "level": "Kılavuz",
+      "title": "Bel çevresi BKİ 35'in üzerinde ölçmeye değmez",
+      "content": "Bel çevresi ölçümü yaş, cinsiyet ve kas kitlesi gibi karıştırıcı faktörlerden etkilenmez ve abdominal obeziteyi göstermede BKİ'den daha duyarlıdır. Ölçüm süperior iliak krestler üzerinden yere paralel geçen bir hat üzerinden yapılmalı, mezura çok sıkı tutulmamalı, hasta derin nefes almamalıdır. Tanısal değeri BKİ'nin 25-35 kg/m2 arasındaki değerleri için geçerlidir; BKİ 35 kg/m2 üzerindeki bireylerde bel çevresi ölçmenin yararı yoktur. Türkiye için kabul edilen kesim noktaları kadında 90 cm, erkekte 100 cm'dir. Avrupa için 80 ve 94 cm, DSÖ için 88 ve 102 cm, Güney Asya ve Çin için 80 ve 90 cm veriliyor. (TEMD Obezite 2024, Bölüm 1, s. 7)",
+      "trigger": "Bel Çevresi"
+    },
+    {
+      "id": "p-temd-obz-005",
+      "level": "Kılavuz",
+      "title": "Obeziteli hastada atlanan endokrin nedenler",
+      "content": "Obeziteli bireyler değerlendirilirken endokrin hastalıklar sorgulanmalı, gerekirse biyokimyasal testlerle araştırılmalıdır. Kılavuz bu hastalıkların nispeten nadir görüldüğünü belirtiyor. Metinde ciddi hipotiroidizm, Cushing hastalığı, hipopituitarizm, akromegali ve hipogonadizm sayılıyor. Tabloda ayrıca polikistik over sendromu, prematür ya da menopoza bağlı overyan yetmezlik ve insülinoma yer alıyor. (TEMD Obezite 2024, Bölüm 2, s. 12)",
+      "trigger": "Obeziteye Neden Olan Endokrin Bozukluklar"
+    },
+    {
+      "id": "p-temd-obz-006",
+      "level": "Kılavuz",
+      "title": "Kilo artışının nedeni reçetede olabilir",
+      "content": "Kılavuz obezitenin etyopatogenezinde ilaçları da sayıyor. Kronik hastalıkların tedavisi amacıyla kullanılan ilaçların bir kısmı kilo artışına neden olabilir. Metinde sayılanlar: lityum, antidepresanlar, antipsikotikler, glukokortikoidler, pregabalin, gabapentin, sulfonilüreler ve insülin preparatları. (TEMD Obezite 2024, Bölüm 2, s. 12)",
+      "trigger": "Kilo Artışına Neden Olan İlaçlar"
+    },
+    {
+      "id": "p-temd-obz-007",
+      "level": "Kılavuz",
+      "title": "Tek başına egzersiz yağ dokusunu genellikle azaltmaz",
+      "content": "Yetersiz enerji harcanması obezite patogenezinde rol oynayan önemli bir faktördür. Ancak kılavuza göre sadece fizik aktivite artışı ile adipoz dokunun azalması genellikle mümkün olmaz. Bunun nedeni, artan fizik aktivitenin hemen her defasında artan yeme davranışı ile kompanse edilmesidir. Buna karşın fizik aktivitenin obezite gelişmesinin önlenmesi kadar kardiyovasküler ve metabolik açıdan da önemli faydaları olduğu bilinmektedir. (TEMD Obezite 2024, Bölüm 2, s. 12)",
+      "trigger": "Fizik Aktivite ve Enerji Dengesi"
+    },
+    {
+      "id": "p-temd-obz-008",
+      "level": "Kılavuz",
+      "title": "En sık monogenik obezite nedeni: MC4R mutasyonu",
+      "content": "En sık görülen monogenik obezite nedeni MC4R mutasyonlarıdır; sıklığı %3 ila 6 arasında bildirilmiştir. İlk tanımlananlar leptin ve LEPR mutasyonları olsa da bunlar oldukça nadirdir. MC4R mutasyonunda adipoziteyle birlikte yağsız vücut kütlesi de artar, lineer büyüme hızlanır ve insülin direnci görülür; hipertansiyon beklenmez. POMC eksikliğinde sekonder adrenal yetmezlik ile hipopigmentasyon veya kızıl saç eşlik eder. (TEMD Obezite 2024, Bölüm 3, s. 15)",
+      "trigger": "Monogenik Obeziteler"
+    },
+    {
+      "id": "p-temd-obz-009",
+      "level": "Kılavuz",
+      "title": "Hiperfaji mi, tıkınırcasına yeme mi: ayırmak zor",
+      "content": "Hem monogenik hem sendromik obezitede en şüphe çeken bulgular hiperfaji ve erken başlangıçlı ciddi obezitedir. Hiperfajide hasta yemek yemeye karşı yoğun ve engellenemeyecek bir istek duyar, yemediği sırada yoğun stres hisseder; iştahı doyurulamaz. Tıkınırcasına yemede ise tekrarlayan epizodlar halinde kısıtlı bir zamanda fazla miktarda yemek hızlıca tüketilir, bu sırada yoğun stres yaşanır ve sonrasında suçluluk hissedilebilir. Çocukluk ve adolesan çağında yemek çalma, başkalarının yemeğini yeme, çöpten yeme gibi yemek arama davranışı görülebilir. Kılavuz ikisini ayırt etmenin zor olduğunu belirtiyor. (TEMD Obezite 2024, Bölüm 3, s. 16)",
+      "trigger": "Hiperfaji ve Tıkınırcasına Yeme"
+    },
+    {
+      "id": "p-temd-obz-010",
+      "level": "Kılavuz",
+      "title": "Bardet-Biedl tanısı: 4 primer ya da 3 primer + 2 sekonder",
+      "content": "Tanı için 4 primer veya 3 primer artı 2 sekonder bulgu gerekir. Primer bulgular rod-kon distrofisi (yaklaşık %90), obezite (%70-90), polidaktili (%60-80), öğrenme güçlüğü (%60), hipogonadotropik hipogonadizm ve/veya genitoüriner malformasyonlar (%60-100) ve renal malformasyon ya da parankimal hastalıktır (%50). Otozomal resesif kalıtılan bir siliyopatidir; Avrupa'daki sıklığı 1:160.000 iken akraba evliliğinin sık görüldüğü toplumlarda 1:13.500-1:17.500'e varan oranlar bildirilmiştir. Melanokortin yolağını ilgilendiren gen mutasyonları sonucu gelişir ve bazı olgular erişkin çağda da tanı alabilir. (TEMD Obezite 2024, Bölüm 3, s. 16)",
+      "trigger": "Bardet-Biedl Sendromu"
+    },
+    {
+      "id": "p-temd-obz-011",
+      "level": "Kılavuz",
+      "title": "Bariyatrik cerrahiden önce genetik obeziteyi düşün",
+      "content": "Nadir genetik obeziteden şüphelenilen olgularda, tedavi planlanmadan önce, özellikle de bariyatrik cerrahiden önce gerekli tanısal inceleme yapılmalıdır. Bu hastalar bariyatrik cerrahi de dahil olmak üzere konservatif tedavi yöntemlerinden fayda görmeyebilir. Şüphe uyandıran ipuçları erken başlangıç, hiperfaji öyküsü, eşlik eden hipogonadizm bulguları, boy kısalığı, dismorfik yüz ve el-ayak bulguları, çoklu organ bozuklukları, nörokognitif bozukluklar ve akraba evliliğidir. Aile öyküsü de mutlaka sorgulanmalıdır. (TEMD Obezite 2024, Bölüm 3, s. 17)",
+      "trigger": "Genetik Obezite Şüphesi"
+    },
+    {
+      "id": "p-temd-obz-012",
+      "level": "Kılavuz",
+      "title": "Prediyabet eşiğinde durma, OGTT iste",
+      "content": "Kilo fazlalığı ya da obezitede diyabet ve prediyabet taramasında ilk aşamada açlık kan şekeri ve HbA1c bakılması yeterlidir. Değerler prediyabetle uyumluysa (sırasıyla 100-125 mg/dl ve %5,7-6,4) 2 saatlik 75 gr OGTT yapılması önerilir. OGTT sonrası 2. saat kan şekerinin 140-199 mg/dl arasındaki değerleri bozulmuş glukoz toleransıdır. Prediyabeti olan olgularda diyabet taraması yılda bir tekrarlanmalıdır. Metforminin diyabeti önlemede yüksek riskli olgularda (gestasyonel diyabet öyküsü, 60 yaşın altında ve BKİ 35 kg/m2 ve üzeri) daha etkin olduğu bildirilmiştir. (TEMD Obezite 2024, Bölüm 4, s. 20)",
+      "trigger": "Prediyabet"
+    },
+    {
+      "id": "p-temd-obz-013",
+      "level": "Kılavuz",
+      "title": "Metabolik sendrom tablosu Avrupa, dipnotu Türkiye değerini veriyor",
+      "content": "IDF kriterlerinde tanı için bel çevresi artışı ve diğer kriterlerden en az ikisinin varlığı gerekir. Diğer kriterler trigliserit 150 mg/dl ve üzeri ya da tedavi almak, HDL-kolesterolün kadında 50 mg/dl, erkekte 40 mg/dl altında olması ya da tedavi almak, kan basıncının 130/85 mmHg ve üzeri olması ya da antihipertansif almak ve açlık kan şekerinin 100 mg/dl ve üzeri olması ya da tedavi almaktır. Tablonun bel çevresi satırı erkekte 94 cm, kadında 80 cm yazıyor. Tablonun dipnotu ise ülkemiz için erkekte 100 cm, kadında 90 cm diyor; kılavuzun tanı bölümünde kabul edilen ulusal kesim noktaları da bunlardır. IDF, bel çevresi kesme noktaları için biliniyorsa ülkeye ait değerlerin kullanımını öneriyor. (TEMD Obezite 2024, Bölüm 4, s. 21)",
+      "trigger": "Metabolik Sendrom"
+    },
+    {
+      "id": "p-temd-obz-014",
+      "level": "Kılavuz",
+      "title": "Diyabet ilacı seçerken kiloyu da seç",
+      "content": "Tip 2 diyabet olgularının %90'ında kilo fazlalığı veya obezite mevcuttur. Bu olgularda mümkünse en az %5-10 kilo kaybı hedeflenmeli; glisemik hedefler obezitesi olmayan olgularla aynıdır. İnsülin salgılatıcı ajanlar (sulfonilüreler ve glinidler), tiyazolidinedionlar, insülin ve bu ajanların kombinasyonları daha fazla kilo aldırabilir. Kilo kaybettiren GLP-1 reseptör agonistleri ve SGLT-2 inhibitörleri iyi birer tercihtir; metformin, DPP-4 ve alfa glukozidaz inhibitörleri vücut ağırlığına nötr etkilidir. Yaşam tarzı değişikliği ve medikal tedaviye rağmen kilo ve diyabet kontrolü başarısızsa BKİ 35 kg/m2 ve üzerinde bariyatrik cerrahi düşünülmeli, BKİ 30-34,9 kg/m2 olan olgularda ise hasta özelinde değerlendirme yapılabilir. (TEMD Obezite 2024, Bölüm 4, s. 21)",
+      "trigger": "Tip 2 Diabetes Mellitus"
+    },
+    {
+      "id": "p-temd-obz-015",
+      "level": "Kılavuz",
+      "title": "Her 3 kg trigliseridi 15 mg/dl düşürüyor",
+      "content": "Dislipidemi sıklığı BKİ ile doğru orantılı arttığı için on altı yaşından büyük, fazla kilosu veya obezitesi olan ya da progresif kilo artışı görülen tüm hastaların taranması önerilir. Tarama paneli trigliserit, HDL-K, LDL-K, total kolesterol ve non-HDL-K içermelidir. Total kolesterol/HDL-K oranının 5'in üzerinde olması kardiyovasküler hastalık riskini artırır. Lipid profili üzerindeki olumlu etkiler %5 kilo kaybından itibaren başlar. Vücut ağırlığında her 3 kg azalma trigliseridi yaklaşık 15 mg/dl azaltır; her 5-8 kg kayıp LDL-K'yi yaklaşık 5 mg/dl azaltırken HDL-K'yi 2-3 mg/dl artırır. (TEMD Obezite 2024, Bölüm 4, s. 22)",
+      "trigger": "Dislipidemi"
+    },
+    {
+      "id": "p-temd-obz-016",
+      "level": "Kılavuz",
+      "title": "Obezite hipertansiyonunda beta bloker neden ikinci planda",
+      "content": "Diüretik, beta bloker, kalsiyum kanal blokeri ve ACE inhibitörlerini karşılaştıran bir meta-analizde bütün ilaç gruplarının BKİ'den bağımsız olarak eşit oranda kardiyovasküler olayı önlediği bildirilmiştir. Yine de diüretiklerin ve beta blokerlerin glukoz intoleransı yapıcı etkileri ve beta blokerlerin obeziteye meylettirici özellikleri nedeniyle obeziteli hipertansiflerde ilk sırada ACE inhibitörleri, ARB ve kalsiyum kanal blokerleri düşünülmelidir. Beta bloker gerekiyorsa karvedilol veya nebivolol tercih edilmelidir. Obeziteli olguların değerlendirilmesinde her vizitte kan basıncı ölçülmelidir. BKİ 25 kg/m2 üzerindeki kadınlarda 5-9,9 kg fazlalık yeni hipertansiyon riskini 1,7 kat, 25 kg ve üzerindeki fazlalık 5,2 kat artırmaktadır. (TEMD Obezite 2024, Bölüm 4, s. 24)",
+      "trigger": "Hipertansiyon"
+    },
+    {
+      "id": "p-temd-obz-017",
+      "level": "Kılavuz",
+      "title": "BKİ'de beş birimlik artış koroner riski %29 artırıyor",
+      "content": "Bir çalışmada 10 kg ağırlık artışının koroner arter hastalığı riskinde %12 artışa sebep olduğu, bir meta-analizde ise BKİ'deki her beş birimlik artışın KAH'ta %29 artışa yol açtığı gösterilmiştir. Bir birimlik BKİ artışında iskemik inme oranında %4, hemorajik inme oranında %6 artış görülmüştür. Kalp yetmezliği riski obezitesi olanlarda yaklaşık iki kat artmıştır; bilinen risk faktörleri için düzeltme yapıldıktan sonra her 1 kg/m2 artış için bu risk erkeklerde %5, kadınlarda %7 artmaktadır. ARIC çalışması beş atriyal fibrilasyon vakasından birinin obeziteden kaynaklanabileceğini hesaplamıştır. Uzun dönem bir izlem çalışmasında obezitenin KAH üzerinde bağımsız risk faktörü olması için en az 2 dekat devam etmiş olması gerektiği gösterilmiştir. (TEMD Obezite 2024, Bölüm 4, s. 25)",
+      "trigger": "Kardiyovasküler Hastalık ve Mortalite"
+    },
+    {
+      "id": "p-temd-obz-018",
+      "level": "Kılavuz",
+      "title": "Yaşlıda paradoks evre 1'de, ölüm riski evre 2 ve 3'te",
+      "content": "Çoğunluğu kesitsel olan bazı epidemiyolojik veriler, kronik hastalığı olan yaşlı bireylerde aşırı kilo veya obezitenin sağkalım açısından dezavantaj yaratmayabileceğini, hatta koruyucu olabileceğini göstermektedir. Kılavuz bu durumun gerçekten var olup olmadığının tartışıldığını, çelişkili sonuçların metodolojik farklılıklarla ilgili olabileceğini yazıyor. Populasyon çalışmaları yaşlılarda evre 1 obezitede (BKİ 30-34,9 kg/m2) mortalitede belirgin artış olmadığını, evre 2 (35-39,9), evre 3 (40 ve üzeri) ve düşük kilolularda (18,5 altı) ise ölüm oranının arttığını saptamıştır. İlişki bir çeşit J eğrisi oluşturmaktadır. Yaşlıda vücut kompozisyonu değişir ve osteoporoza bağlı boy kısalığı BKİ'nin olması gerekenden yüksek görünmesine yol açabilir. (TEMD Obezite 2024, Bölüm 4, s. 26)",
+      "trigger": "Obezite Paradoksu"
+    },
+    {
+      "id": "p-temd-obz-019",
+      "level": "Kılavuz",
+      "title": "Normal ALT yağlı karaciğeri dışlamaz",
+      "content": "Obeziteli veya metabolik sendromlu bireylerde karaciğer enzimleri ya da ultrason ile MASLD ve fibrozis riskini tespit etmek için tarama önerilmektedir. Aminotransferazların normal olması tanıyı dışlamaz: ALT, MASH'i bulunanların yarısından fazlasında ve MASLD'si bulunanların %80'inde normal sınırlardadır. ALT düzeyi MASH ve fibrozis evresi için öngördürücü değildir. Günlük pratikte fibrozis varlığını değerlendirmek üzere ilk basamakta tercih edilen test FİB-4 indeksidir; düşük (1,3) ve yüksek (2,67) olmak üzere iki ayrı kesme noktası kullanılır. Bu olgularda mortalitenin ana sebebi kardiyovasküler hastalıklardır. MASH rezolüsyonu ve fibroziste iyileşme için hedeflenen kilo kaybı %10 ve üzeridir. (TEMD Obezite 2024, Bölüm 4, s. 28)",
+      "trigger": "MASLD"
+    },
+    {
+      "id": "p-temd-obz-020",
+      "level": "Kılavuz",
+      "title": "PKOS'ta GLP-1 verirken doğum kontrolünü unutma",
+      "content": "Ülkemizde PKOS yaklaşık her 7 kadından birinde görülüyor ve erişkin PKOS hastalarının yarısında obezite mevcut; obezite hem sendrom fenotipini ağırlaştırıyor hem kardiyometabolik riski artırıyor. Obezitesi olan PKOS'lu kadınlarda %5-10'luk kilo kaybı sendromun hormonal, metabolik, reprodüktif, kardiyovasküler ve psikolojik özellikleri üzerinde düzelme sağlıyor. Tedavide ilk sırada hipokalorik diyet, egzersiz ve davranış yönetimini içeren yaşam tarzı değişikliği yer alıyor. BKİ 25 kg/m2 üzerinde olan PKOS hastalarında kilo kontrolü ve metabolik sonlanımlar açısından metformin önerilebilir. Gebelikte verisi bulunmadığı için özellikle GLP-1 reseptör agonisti verilecekse etkili doğum kontrolü uygulanmalı; bariyatrik cerrahi öncesinde ve sonrasında vücut ağırlığı stabil oluncaya kadar da doğum kontrolü gerekir. (TEMD Obezite 2024, Bölüm 4, s. 30)",
+      "trigger": "Polikistik Over Sendromu"
+    },
+    {
+      "id": "p-temd-obz-021",
+      "level": "Kılavuz",
+      "title": "Kilo kaybı anovulatuvar kadında işe yarar, ovulatuvarda değil",
+      "content": "Kilo fazlalığı ya da obezitesi olan kadınlarda doğurganlık oranları %50’ye varan oranda azalır ve ilk doğuma kadar geçen süre uzar. Gebelik sağlandığında düşük riski, normal vücut ağırlığına sahip kadınlara göre %20-90 arasında artmış bulunur. Anovulatuvar kadınlarda kilo kaybı girişimleri spontan gebelik oranlarını ve ovulasyon indüksiyonuna cevap oranlarını artırır. Buna karşılık obezitesi olan ovulatuvar kadınlarda gebelik öncesi kilo vermenin yardımcı üreme teknikleriyle canlı doğum oranlarını artırmadığı gösterilmiştir. Obezitesi olan kadınlarda ovulasyon indüksiyonunda oral ajanların ya da gonadotropinlerin daha yüksek dozda kullanılması gerekir. (TEMD Obezite 2024, Bölüm 4, s. 31)",
+      "trigger": "Kadın infertilitesi"
+    },
+    {
+      "id": "p-temd-obz-022",
+      "level": "Kılavuz",
+      "title": "Hipogonadizm tanısı iki ayrı sabah ölçümüne dayanır",
+      "content": "Hipogonadizm tanısı için testosteron düzeyinin iki farklı günde, sabah erken saatlerde ölçülüp düşük bulunması gerekir. Obeziteli bireylerde serbest, bioavailable ve total testosteron düzeyleri azalır; bel çevresi arttıkça total testosteron, serbest testosteron ve SHBG düzeyleri düşer. Sağlıklı beslenme, egzersiz, tıbbi ve cerrahi tedavilerin hepsi testosteron düzeylerinde belirgin artışa yol açar ve bu artış kaybedilen kilo miktarı ile ilişkilidir. Buna karşılık testosteron replasmanı obeziteli bireylerde rutin olarak her hastaya önerilmemektedir; semptomatik bireylerde olgu bazında değerlendirilmesi uygun görülür. Androjen düzeyleri normal olan obeziteli kişilerde yağ kitlesini azaltmak için testosteron uygulamak son derece riskli kabul edilir. (TEMD Obezite 2024, Bölüm 4, s. 32)",
+      "trigger": "Erkek hipogonadizmi"
+    },
+    {
+      "id": "p-temd-obz-023",
+      "level": "Kılavuz",
+      "title": "Uyku bozukluğunu anket değil polisomnografi tanır",
+      "content": "Uyku bozukluklarının tanısında altın standart yöntem polisomnografidir. Uyku bozukluklarını saptamak için halihazırda tanı koydurucu, prediktif değeri yüksek bir anket ya da sorgu formu bulunmamaktadır. Epworth Uykululuk Ölçeği veya Pittsburg Uyku Kalite indeksi gibi formlar uykululuk düzeyini ve uyku kalitesini ancak dolaylı yoldan sorgular. Obstrüktif uyku apne sendromu için STOP-BANG veya Berlin anketleri kullanılabilir. Hastanın horlama ve apne süreçleri özellikle birlikte yaşadığı kişilere sorulabilir. (TEMD Obezite 2024, Bölüm 4, s. 34)",
+      "trigger": "Uyku bozuklukları"
+    },
+    {
+      "id": "p-temd-obz-024",
+      "level": "Kılavuz",
+      "title": "OSAS’ta ılımlı kilo kaybı apne indeksini yarıya indirir",
+      "content": "Obezite OSAS için en önemli ve değiştirilebilir risk faktörüdür; BKİ&gt;29 kg/m2 olan obeziteli bireyler arasında OSAS prevalansı %60’a kadar çıkar. Vücut ağırlığında %10 artış, apne/hipopne indeksinde %30’luk bir artışa neden olur. Vücut ağırlığının %10-15 oranında azalması ise AHİ’yi %50 oranında azaltır. Bu nedenle obeziteli veya kilolu tüm OSAS hastalarında tedaviye kilo verme programlarının eklenmesi önerilir. Döngü çift yönlüdür: OSAS da leptini azaltıp ghrelini artırarak açlık hissine ve kilo artışına yol açar. (TEMD Obezite 2024, Bölüm 4, s. 35)",
+      "trigger": "Obstrüktif uyku apne sendromu"
+    },
+    {
+      "id": "p-temd-obz-025",
+      "level": "Kılavuz",
+      "title": "OSAS şiddeti saatteki olay sayısıyla üç banda ayrılır",
+      "content": "Polisomnografide 10 saniye veya üzerinde nefes almadan geçen süreler apne, solunumun yüzeyelleştiği dönemler hipopne olarak tanımlanır. Uyku esnasında saatte 5-15 arası apne/hipopne hafif, 16-30 olay orta şiddette, 30’un üzerinde olay ise şiddetli OSAS kabul edilir. Polisomnografi ideal tanı yöntemi olsa da çoğu merkezde bulunmaz, var olanlarda uzun bekleme süreleri gerekebilir. Kısıtlı kaynakları etkin kullanmak için her obezite hastasına polisomnografi yapmak yerine STOP-BANG gibi ön değerlendirme formlarıyla tarama yapıp riskli hastaları polisomnografiye yönlendirmek akılcı olabilir. (TEMD Obezite 2024, Bölüm 4, s. 35)",
+      "trigger": "Obstrüktif uyku apne sendromu"
+    },
+    {
+      "id": "p-temd-obz-026",
+      "level": "Kılavuz",
+      "title": "Beş birimlik BKİ artışı diz osteoartriti riskini yükseltir",
+      "content": "Beden kitle indeksi &gt;30 kg/m2 olan bireylerin diz osteoartriti geliştirme olasılığı normal kilolu kontrollere göre yedi kat daha fazla bulunmuştur. BKİ’de 5 birimlik bir artış diz osteoartriti riskini %35 artırır ve bu etki kadınlarda erkeklerden daha belirgindir. Obezite ile kalça osteoartriti arasındaki ilişki, diz osteoartritindekinden daha zayıftır. Ağırlık taşımayan el eklemlerinde de BKİ arttıkça osteoartrit riski artar; bu, metabolik veya inflamatuar olayların rolünü düşündürür. Kilo kaybı ağrıda klinik olarak anlamlı iyileşme sağlayabilir ve vücut ağırlığında %10 veya daha fazla azalma olanlarda etki daha fazla bulunmuştur. (TEMD Obezite 2024, Bölüm 4, s. 36)",
+      "trigger": "Osteoartrit"
+    },
+    {
+      "id": "p-temd-obz-027",
+      "level": "Kılavuz",
+      "title": "Hızlı kilo kaybının kendisi safra taşı oluşumunu artırır",
+      "content": "Kolelitiazis normal popülasyonda %10-20 sıklıkta görülür ve BKİ arttıkça sıklık artar. Hastaların %75’inde semptom olmaz; hastalık ilerledikçe bulantı, epigastrik kolik tarzı ağrı, ishal ve bazen anoreksi başlar. Akut kolanjit, akut kolesistit ve biliyer pankreatit gibi komplike tablolar gelişebilir. Obezite tedavisi sırasında hızlı kilo kaybı, kolesterol kristali oluşumunu etkilediği için taş oluşumunu artırır. Bu nedenle hızlı kilo kaybı olan bireylerde semptom varlığında üst abdominal ultrasonografi yapılması önerilir. (TEMD Obezite 2024, Bölüm 4, s. 37)",
+      "trigger": "Kolelitiazis"
+    },
+    {
+      "id": "p-temd-obz-028",
+      "level": "Kılavuz",
+      "title": "Sleeve gastrektomi sonrası reflü artabilir, öncesinde endoskopi istenir",
+      "content": "Gastroözefageal reflü popülasyonun %20’sine kadar ulaşan sıklıkta görülür; uzun vadede Barrett özefagusu ve özefageal adenokarsinom riski nedeniyle tedavisi önemlidir. Obezitede reflü ve ilişkili hastalıklarda artış görülür. Sleeve gastrektomi sonrası reflü sıklığı açısından literatür verileri %2 ile %35 arasında değişen artışlar bildirmektedir. Reflü nedeniyle cerrahi revizyon sıklığı düşüktür, ama yapılırsa genellikle Roux-en-Y gastrik by-pass tercih edilir. Bu nedenle bariatrik cerrahi öncesinde pek çok cerrahi kılavuz özefagogastroduodenoskopi yapılmasını önermektedir. (TEMD Obezite 2024, Bölüm 4, s. 37)",
+      "trigger": "Gastroözefageal reflü"
+    },
+    {
+      "id": "p-temd-obz-029",
+      "level": "Kılavuz",
+      "title": "Ilımlı kilo kaybı bile stres inkontinansı azaltır",
+      "content": "Obezitenin stres inkontinans riskini 2 katına, sıkışma tipi inkontinansı ise 3 katına çıkardığı saptanmıştır. Uzun dönemde BKİ’de her 1 birimlik artış, inkontinans gelişim riskini %7-12 oranında artırır. Çalışmalarda %8-13 gibi ılımlı bir kilo kaybında dahi inkontinans sıklığının, özellikle stres inkontinansın azaldığı gösterilmiştir. Asemptomatik bireylerde inkontinans taranması ile ilgili toplum bazlı öneriler mevcut değildir; semptomatik bireylerde tarama, test, takip ve tedavi gereklidir. İnsidans ve remisyon oranları gibi konularda ise kesinlik sağlanamamıştır. (TEMD Obezite 2024, Bölüm 4, s. 40)",
+      "trigger": "Üriner sistem inkontinansı"
+    },
+    {
+      "id": "p-temd-obz-030",
+      "level": "Kılavuz",
+      "title": "Kanserlerin yaklaşık %40’ı kilo fazlalığı zemininde gelişiyor",
+      "content": "Çalışmalarda tüm kanserlerin yaklaşık %40’ının aşırı kilolu ve obeziteli bireylerde geliştiği bildirilmektedir. Sadece yağlanma artışı değil yerleşimi de önemlidir; visseral adipozite artışının kanser gelişimi açısından daha önemli olduğu düşünülmektedir. Endometriyal kanser, postmenopozal meme ve kolorektal kanserler obezite ile en sık ilişkilendirilen türlerdir. Kilo veren obeziteli kadınların vermeyenlere göre %54 daha düşük endometrial kanser riski taşıdığı, bariatrik cerrahi sonrasında ise genel kanser riskinde %33, obezite ile ilişkili kanserlerde %41 azalma olduğu bildirilmiştir. Bu bulgular gözlemsel çalışmalardan gelmektedir; etkinin netleşmesi için randomize kontrollü çalışmalara ihtiyaç vardır. (TEMD Obezite 2024, Bölüm 4, s. 41)",
+      "trigger": "Obezite ve kanser"
+    },
+    {
+      "id": "p-temd-obz-031",
+      "level": "Kılavuz",
+      "title": "Ağırlık kontrolü kararı BKİ 25’te başlar",
+      "content": "Sağlık merkezlerine herhangi bir nedenle başvuran her hastanın fizik muayenesi kapsamında bel çevresi, boy ve vücut ağırlığı ölçülmelidir. BKİ ≥25 kg/m2 olup ilave kardiyovasküler risk faktörü veya obezite ile ilişkili komorbiditesi olmayan kişilerde amaç daha fazla kilo almasının önlenmesidir. BKİ ≥25 kg/m2 olup HT, T2DM, dislipidemi gibi riskleri ya da OSAS, osteoartrit gibi eşlik eden durumları olan kişiler zayıflamak için değerlendirilmeli ve yönetilmelidir. BKİ ≥30 kg/m2 olan herkesin ağırlık kontrolüne ihtiyacı vardır. (TEMD Obezite 2024, Bölüm 5, s. 50)",
+      "trigger": "Ağırlık kontrolü ihtiyacı"
+    },
+    {
+      "id": "p-temd-obz-032",
+      "level": "Kılavuz",
+      "title": "Kilo aldıran ilaçları sormadan obezite anamnezi tamamlanmaz",
+      "content": "Obezite hastası değerlendirilirken kilo artışına neden olabilecek ilaçlar sorgulanmalıdır. Kardiyovasküler ilaçlardan propranolol, atenolol ve metoprolol gibi beta-blokerler ile ödem nedeniyle kilo artışına yol açabilen eski ya da az lipofilik dihidropiridin grubu kalsiyum kanal blokerleri listededir. Diyabet ilaçlarından insülin, sülfonilüre, tiazolidinedion ve meglitinid; hormon preparatlarından glukokortikoidler, östrojenler ve özellikle enjeksiyon veya implantasyon yoluyla kullanılan progesteron sayılır. Psikiyatrik ilaçlardan trisiklik antidepresanlar, klozapin ve olanzapin gibi atipik antipsikotikler, paroksetin, mirtazapin, lityum ve valproat; nörolojik tedavilerden karbamazepin, gabapentin ve pregabalin kilo aldırabilir. Tamoksifen, siklofosfamid, metotreksat gibi kemoterapötikler ve aromataz inhibitörleri de aynı listede yer alır. (TEMD Obezite 2024, Bölüm 5, s. 50)",
+      "trigger": "Kilo aldıran ilaçlar"
+    },
+    {
+      "id": "p-temd-obz-033",
+      "level": "Kılavuz",
+      "title": "Tıkınırcasına yemeyi bulimiadan ayıran şey telafi davranışının yokluğu",
+      "content": "Tıkınırcasına yeme bozukluğu obezite hastalarında en sık rastlanan yeme davranış bozukluğudur; haftada bir defadan daha sık ve en az üç ay süren aşırı miktarda yeme atakları ile karakterizedir. Bu tanıyı koyabilmek için yeme sonrasında hastanın tetiklediği kusma veya egzersiz hikayesi olmamalıdır. Bulimia nervozada ise tıkınırcasına yeme ataklarını kendini kusturma, laksatif ya da diüretik kullanımı, fazladan egzersiz veya aç kalma izler. Gece yeme sendromunda yeme arzusuyla uykudan uyanma ve bir şeyler yemeden tekrar uyuyamama tipiktir; bu olgularda günlük kalorinin en az %25’i akşam yemeğinden sonra alınır ve sabah kahvaltı yapmama alışkanlığı görülür. Yeme davranış bozukluğu tedavi edilmediği sürece obezite ile mücadelede başarılı olmak mümkün değildir. (TEMD Obezite 2024, Bölüm 5, s. 52)",
+      "trigger": "Yeme davranışı bozuklukları"
+    },
+    {
+      "id": "p-temd-obz-034",
+      "level": "Kılavuz",
+      "title": "Depresyon taranmadan kilo verme programı yürümez",
+      "content": "Obezite hastalarında major depresyon veya diğer duygu durum bozuklukları sık görülür. Bunlar yeterince değerlendirilmez ve tedavi edilmezse kilo verme girişimlerinde istenilen başarıyı elde etmek güçleşir. Bu nedenle her obezite hastasında mutlaka depresyon taraması yapılmalı, ihtiyaç duyanlara tedavi başlanmalıdır. Tecrübeli hekimler DSM-IV kriterlerini kullanabilirken, poliklinik koşullarında hastaya ayıracak uzun vakti olmayan hekimler PHQ-9 formu gibi Türkçe geçerliliği test edilmiş ve onaylanmış tarama testlerini kullanabilir. (TEMD Obezite 2024, Bölüm 5, s. 53)",
+      "trigger": "Duygu durum değerlendirmesi"
+    },
+    {
+      "id": "p-temd-obz-035",
+      "level": "Kılavuz",
+      "title": "Obezite muayenesinde tartı da mezura da standart ister",
+      "content": "Obezite hastasının muayenesinde arteriyel kan basıncı uygun ebatlı manşon kullanılarak ölçülmeli, nabız hızı, boy ve vücut ağırlığı kaydedilmeli ve BKİ her vizitte hesaplanmalıdır. Vücut ağırlığı kalibre edilmiş bir tartı ile alınmalı, her muayenede tercihen aynı tartı ve ölçüm metodu kullanılmalıdır. Bel çevresi ayaktayken süperior iliak kristalar hizasından ölçülür. BKİ &gt;35 kg/m2 olanlarda bel çevresi ölçülmesinin tanısal önemi yoktur. Muayenede boyun çevresi de ölçülmeli ve akantozis nigrikans gibi insülin direncinin periferik bulguları aranmalıdır. (TEMD Obezite 2024, Bölüm 5, s. 54)",
+      "trigger": "Fizik muayene"
+    },
+    {
+      "id": "p-temd-obz-036",
+      "level": "Kılavuz",
+      "title": "Obezitede insülin direnci ölçmenin tanı ve takipte yararı yok",
+      "content": "Her obezite hastasında, obezite ile ilişkili kan tetkikleri ile genel laboratuvar testlerinin çalışılması önerilir. Obezite ile ilişkili panel açlık kan şekeri, açlık lipid profili, karaciğer enzimleri, böbrek fonksiyon testleri, ürik asit, TSH ve 25-OH vitamin D düzeyini içerir. Genel laboratuvar çalışmaları hemogram, idrar analizi ve spot idrarda mikroalbumin düzeyidir. Buna karşılık kilo fazlalığı ve obezitesi olan erişkinlerde insülin ve insülin direnci ölçümünün tanı, tedavi planı ve takip açısından yararı yoktur. Hastalarda diğer klinik özelliklere göre listeye başka tetkikler eklenebilir. (TEMD Obezite 2024, Bölüm 5, s. 54)",
+      "trigger": "Laboratuvar testleri"
+    },
+    {
+      "id": "p-temd-obz-037",
+      "level": "Kılavuz",
+      "title": "Hiperkortizolemi kuşkusu varsa üç tarama seçeneği var",
+      "content": "Açlık kan glukoz düzeyi yüksek olduğunda OGTT, karaciğer enzim yüksekliği varsa karaciğer yağlanmasının tespiti için üst batın ultrasonografisi istenebilir. Endojen hiperkortizolemi düşünülüyorsa gece 1 mg ile deksametazon supresyon testi veya 24 saatlik idrar kortizolü veya gece 23:00 tükrük kortizolü kullanılabilir. Açıklanamayan amenore veya oligomenoresi olan kadınlarda prolaktin, östradiol, FSH, LH ve gebelik testleri; impotans tanımlayan ya da diğer hipogonadizm bulguları saptanan erkeklerde testosteron, FSH ve LH istenir. Vücut kompozisyon analizi rutin poliklinik pratiğinde gerekli değildir; tedavi başlangıcında ve takip sırasında yağ oranı ile yağsız vücut kitlesinin tayini için kullanılabilir. (TEMD Obezite 2024, Bölüm 5, s. 55)",
+      "trigger": "Gerektiğinde istenebilecek tetkikler"
+    },
+    {
+      "id": "p-temd-obz-038",
+      "level": "Kılavuz",
+      "title": "Tedavi kararı BKİ evresine değil Edmonton evresine bakar",
+      "content": "Tedavi kararı verilirken sadece obezitenin BKİ evresine değil, hastaların tıbbi, mental ve işlevsel açıdan durumlarına bakılmalıdır. Edmonton Obezite Evrelemesinde hastalar bu üç eksene göre 0 ile 4 arasında bir puana tabi tutulur. Evre 0 hastada obezite ile ilişkili hastalık, psikolojik sorun veya işlevsel kısıtlılık yoktur; evre 4 hastada obeziteye bağlı ciddi, son dönem komorbiditeler ile ileri düzeyde fiziksel ve psikolojik kısıtlar gelişmiştir. Evre 0-1 düzeyindeki hastalarda sağlıklı yaşam biçimi değişikliklerinin önceliklendirilmesi önerilir. Evre 2 aşamasından itibaren davranışsal, farmakolojik ve gerekirse cerrahi tedavi yaklaşımlarının yaşam tarzı değişiklikleri ile birlikte başlanması önerilmektedir. (TEMD Obezite 2024, Bölüm 5, s. 56)",
+      "trigger": "Edmonton Obezite Evrelemesi"
+    },
+    {
+      "id": "p-temd-obz-039",
+      "level": "Kılavuz",
+      "title": "Üç ayda %5 kilo kaybı yoksa yöntem gözden geçirilir",
+      "content": "Obezite hastasını tamamen normal kiloya getirmek şeklinde bir hedef koymak uygun olmaz; hedefler gerçekçi olmalıdır. Risk faktörlerinde klinik olarak anlamlı bir azalma sağlayabilmek için en az %5 düzeyinde kilo kaybı sağlanmalı ve bu kayıp uzun dönem muhafaza edilmelidir. Özellikle tıbbi tedavi uygulanan hastalarda başarıdan söz edebilmek için 3 aylık bir program sonrası %5’in üzerinde kilo kaybı gerekir. Bu süre içinde %5’ten az kilo kaybı sağlandıysa uygulanan yöntemin gözden geçirilmesi uygun olur. Tıbbi tedavi ile elde edilen kilo kaybı %10-15 civarındaysa çok iyi, %15’in üzerindeyse mükemmel yanıt kabul edilir. (TEMD Obezite 2024, Bölüm 5, s. 57)",
+      "trigger": "Hedefler ve takip"
+    },
+    {
+      "id": "p-temd-obz-040",
+      "level": "Kılavuz",
+      "title": "Hızlı kilo kaybı hipokalemiye ve safra taşına yol açabilir",
+      "content": "Tedavide başarı kısa sürede hızla verilen ağırlık miktarı ile değil, kaybedilen ağırlığın uzun sürede korunmasıyla ölçülmelidir. Çok hızlı ve çok fazla kilo verme sonrası ritim bozuklukları, elektrolit bozuklukları (en sık hipokalemi), hiperürisemi, safra taşları, depresyon ve yeme bozuklukları gibi sağlık sorunları ortaya çıkabilir. Bu hastalar kontrol muayeneleri sırasında bu sorunlar açısından değerlendirilmelidir. Hastaların ilk 1-2 ay 15 günde bir, takip eden 6 ay içinde ayda en az bir kez görülmesi önerilir. Tedavi yöntemlerinin merkezinde kalori kısıtlaması yer almalı; günlük 500 ila 1000 kkal bir enerji açığı yakalanmalı ve egzersiz günlük rutin yaşam içine entegre edilmelidir. (TEMD Obezite 2024, Bölüm 5, s. 57)",
+      "trigger": "Hedefler ve takip"
+    },
+    {
+      "id": "p-temd-obz-041",
+      "level": "Kılavuz",
+      "title": "Kilo kaybı reçetesi: haftada bir kilodan hızlı olmasın",
+      "content": "Günlük enerji alımı, haftada 0,5-1,0 kg ağırlık kaybı sağlayacak şekilde azaltılmalıdır; bunu çoğunlukla günlük enerji ihtiyacını 500-1000 kcal azaltmak sağlar. En önemli nokta, önerilen enerjinin bazal metabolik hızın altında olmaması ve ağırlık kaybının uzun vadeye yayılmasıdır. Günlük enerjinin yaklaşık %12-15'i iyi kaliteli protein kaynaklarından, %25-30'u yağdan, %55-60'ı karbonhidrattan karşılanmalıdır. Yağdan gelen enerji toplam enerjinin %20'sinden az olmamalıdır; yoksa yağda eriyen vitaminlerin eksikliği gelişebilir. Günlük kolesterol alımı &lt;300 mg olmalı ve trans yağ tüketilmemelidir. (TEMD Obezite 2024, Bölüm 6.1, s. 62)",
+      "trigger": "Obezitede Tıbbi Beslenme Tedavisi"
+    },
+    {
+      "id": "p-temd-obz-042",
+      "level": "Kılavuz",
+      "title": "Glisemik indekste iki kesim noktası: 55 ve 70",
+      "content": "Glisemik indeks, bir yiyeceğin referans besine göre kan şekerini ne kadar yükselttiğini gösteren bir ölçüttür ve 0-100 arasında bir değer alabilir. Referans besinler glukoz veya beyaz ekmek gibi glisemik indeksi 100 olan yiyeceklerdir. Değer 55'in altındaysa yiyecek düşük, 70 üzerindeyse yüksek glisemik indekslidir. Çavdar ekmeği, tam tahıllı ekmekler, kuru baklagiller, sebzeler, süt, yoğurt ve elma, armut, şeftali gibi birçok meyve düşük glisemik indekslidir. Muz, kiraz, dondurma ve makarna orta; beyaz ekmek gibi rafine tahıl ürünleri, patates ve pirinç yüksek glisemik indekslidir. (TEMD Obezite 2024, Bölüm 6.1, s. 63)",
+      "trigger": "Obezitede Tıbbi Beslenme Tedavisi"
+    },
+    {
+      "id": "p-temd-obz-043",
+      "level": "Kılavuz",
+      "title": "Yüzde beşlik kayıp yeter; açığı yaratmanın dört yolu",
+      "content": "Vücut ağırlığının %5-7 oranında kaybı sağlık yönünden birçok yarar sağlar; %5'den fazla bir kilo kaybı dislipidemi, hipertansiyon ve diyabet gibi kardiyovasküler riskleri iyileştirir. Kılavuz bu enerji açığını oluşturmak için birkaç yol sayar. Kişinin vücut ağırlığına göre ayarlanmış olarak kadınlarda günde 1.200 ila 1.500 kcal, erkeklerde günde 1.500 ile 1.800 kcal'ye azaltma yapılabilir. Günde 500 ile 1000 kcal enerji açığı ya da temel olarak %30'luk bir enerji açığı oluşturulabilir. Dünya Sağlık Örgütü'nün önerdiği formülde ise bazal metabolizma hızı tahmin edilir; düşük aktivite düzeyi 1,3 x RMR, yüksek aktivite düzeyi 1,7 x RMR kabul edilir. (TEMD Obezite 2024, Bölüm 6.1, s. 64)",
+      "trigger": "Farklı Diyetlerin Obezite Tedavisindeki Yeri"
+    },
+    {
+      "id": "p-temd-obz-044",
+      "level": "Kılavuz",
+      "title": "Düşük kalorili ile çok düşük kalorili diyetin sınırı",
+      "content": "1200 kcal/gün veya daha fazla enerji içeren diyetler hipokalorik dengeli diyetler olarak sınıflandırılır. Düşük kalorili diyetler normal öğünler ve kısmi öğün ikamelerinden oluşur ve 800 ile 1200 kcal/gün arasında enerji içerir. Çok düşük kalorili diyetler genellikle 800 kcal/gün'den az enerji içerir; yalnızca bir obezite uzmanı ya da beslenme ve diyetetik eğitimi almış başka bir hekimin gözetiminde, kapsamlı bir programın parçası olarak kullanılmalıdır. Uygulamaları belirli hastalar için ve kısa sürelerle sınırlandırılmalıdır. Bu diyetler çocuklar ve ergenler, hamile veya emziren kadınlar ve yaşlılar için tek beslenme kaynağı olarak uygun değildir. 1200 kcal/gün'den az enerji sağlayan diyetler mikrobesin eksikliklerine neden olabilir. (TEMD Obezite 2024, Bölüm 6.1, s. 65)",
+      "trigger": "Farklı Diyetlerin Obezite Tedavisindeki Yeri"
+    },
+    {
+      "id": "p-temd-obz-045",
+      "level": "Kılavuz",
+      "title": "Düşük karbonhidrat 130 gram, ketojenik 50 gramın altı",
+      "content": "Amerikalılar için Diyet Yönergeleri her gün kalorinin %45-65'inin karbonhidrattan gelmesini önerir ve günlük alınması tavsiye edilen karbonhidrat miktarını 130 g olarak belirlemiştir; bu nedenle 130 g/gün'den az karbonhidrat tavsiyesi düşük kabul edilebilir. Çok düşük karbonhidratlı ketojenik diyetler günde 50 g'dan az karbonhidrat içerir. Ketojenik diyetler baş ağrısı, mide rahatsızlığı, yorgunluk, baş dönmesi ve konstipasyona neden olabilir; bu tabloya keto gribi de denir. Yakın tıbbi gözetim önerilir ve özellikle diüretikler ile anti-glisemik ajanların dozlarında bu süreçte değişiklik yapmak gerekebilir. Ketojenik diyetler kısa vadede daha etkin kilo kaybı sağlayabilirlerse de uzun dönem için kullanımı önerilmez. (TEMD Obezite 2024, Bölüm 6.1, s. 66)",
+      "trigger": "Makrobesin Temelli Diyetler"
+    },
+    {
+      "id": "p-temd-obz-046",
+      "level": "Kılavuz",
+      "title": "Diyet savaşının sonucu: belirleyici uyum ve sürdürülebilirlik",
+      "content": "Kilo kaybı sağlama açısından hiçbir diyetin bir diğerine üstünlüğü gösterilememiştir. Kısa dönemde yüksek proteinli, düşük karbonhidratlı diyetler ve aralıklı oruç hızlı bir kilo kaybı sağlasa da, uzun vadede başarıyı belirleyen ana faktör uyum ve sürdürülebilirliktir. Farklı makrobesin içeriklerine sahip düşük kalorili diyet uygulamalarının 6-12 aylık sürelerde kilo kaybı anlamında birbirine üstünlükleri gösterilememiştir. Akdeniz tipi diyet, kilo kaybı yanında kardiyovasküler risk faktörlerinde azalma sağlamakta, metabolik sendrom ve diyabeti önlemede etkin görünmektedir. Bilimsel olmayan popüler ve tek tip besin tüketimine dayalı diyetler pek çok sağlık riski taşıdığından kullanılmamalıdır. (TEMD Obezite 2024, Bölüm 6.1, s. 68)",
+      "trigger": "Farklı Diyetlerin Obezite Tedavisindeki Yeri"
+    },
+    {
+      "id": "p-temd-obz-047",
+      "level": "Kılavuz",
+      "title": "Egzersiz tek başına yetmez: haftada 1000 kcal hedefi",
+      "content": "Egzersizin obezite tedavisinde tek başına etkisi kısıtlıdır. Mevcut kanıtlar, vücut kompozisyonunda değişim sağlamak için orta ila şiddetli yoğunluktaki egzersizin diyet ile desteklenmesi gerektiğini göstermektedir. Hedeflenen yaklaşık 500-1000 kcal/gün negatif enerji dengesini sağlamak için minimum günde 100-250 kcal, haftada toplam 1000 kcal enerji harcatan egzersizler seçilmelidir. İdeal kilo kaybı, kayıp yağ dokusundan olmak üzere aylık 2-4 kilodur. Egzersiz ayrıca kaybedilen kilonun geri kazanılmasını engelleyici etkisi bakımından da önemlidir. (TEMD Obezite 2024, Bölüm 6.2, s. 71)",
+      "trigger": "Egzersizin Obezite Tedavisindeki Yeri"
+    },
+    {
+      "id": "p-temd-obz-048",
+      "level": "Kılavuz",
+      "title": "Egzersiz stres testi kime gerekir, kime gerekmez",
+      "content": "Obezite egzersiz için başlı başına bir risk faktörüdür; egzersize başlamadan önce kardiyovasküler risk değerlendirmesi yapılmalı ve eşlik eden ek hastalıklar sorgulanmalıdır. Kırk beş yaşın üzerindeki erkeklerde ve 55 yaşın üzerindeki kadınlarda iki ve daha fazla kardiyovasküler ya da metabolik risk faktörü varsa veya tanısı konmuş kardiyopulmoner bir hastalık mevcutsa egzersiz stres testi istenmesi gerekebilir. Hali hazırda egzersiz yapan ve kardiyometabolik komplikasyonu bulunmayan bireylerde ise stres testi yapılmaksızın düşük-orta şiddetli egzersiz programına başlanabilir. Egzersiz yapmaya ilişkin fiziksel kısıtlılık varsa ortopedi, fizik tedavi ve rehabilitasyon ya da fizyoterapi gibi branşların görüşüne başvurulmalıdır. (TEMD Obezite 2024, Bölüm 6.2, s. 72)",
+      "trigger": "Egzersiz Öncesi Değerlendirme"
+    },
+    {
+      "id": "p-temd-obz-049",
+      "level": "Kılavuz",
+      "title": "Şiddetin üç bandı: yüzde, MET ve zorluk algısı",
+      "content": "Hafif şiddette egzersiz VO2R veya kalp atım rezervinin %30-40'ı, 2-3 MET ya da 9-11 zorluk algısına karşılık gelir. Orta şiddette egzersiz VO2R veya kalp atım rezervinin %40-60'ı, 3-6 MET ya da 12-13 zorluk algısıdır ve kalp hızı ile solunumda anlamlı derecede artış yapar. Yüksek şiddette egzersizde VO2R veya kalp atım rezervi %60 ve üzeri, MET 6 ve üzeri, zorluk algısı 14 ve üzeridir. Dinlenme anında bir dakikada tüketilen oksijen hacmi 3,5 ml/kg/dk olup 1 MET'e karşılık gelir; obezitesi olan bireylerde genellikle başlangıçta 2-5 MET'lik egzersizler önerilir ve haftada 500-1000 MET/dk yoğunluk hedeflenir. Ölçüm aracı yoksa konuşma testi işe yarar: konuşabildiği ancak şarkı söyleyemediği tempo orta şiddeti, nefesi kesilmeden birkaç kelimeden fazlasını konuşamaması yüksek şiddeti gösterir. (TEMD Obezite 2024, Bölüm 6.2, s. 72)",
+      "trigger": "Egzersiz Şiddetinin Belirlenmesi"
+    },
+    {
+      "id": "p-temd-obz-050",
+      "level": "Kılavuz",
+      "title": "Adım reçetesi: dakikada 100 adım orta şiddet demek",
+      "content": "Obezitesi olan bireylerde başlangıçta her gün 4 bin adım yürümek, sonra bunu kademeli olarak artırarak günde 10 bin, 6 ay sonra günde 12 bin adıma çıkarmak önerilmektedir. Son çalışmalarda gerekli egzersiz yoğunluğunu yani orta şiddeti sağlamak için dakikada 100 adım, 30 dakikada 3000-3500 adım atılması tavsiye edilmektedir. Haftada 150-200 dk (günde 25-30 dk veya günde 5000-7000 adım) yapılan yürüyüşler insülin duyarlılığında iyileşmenin yanı sıra kardiyorespiratuar zindeliğe de katkı sağlar. Süreyi haftada 250-300 dk'ya (günde 35-45 dk veya günde 7500 adım) çıkarmak kan lipidlerinde iyileşme açısından daha etkili bulunmuştur. Kilo geri alımının önlenmesi için günlük yürüyüş süresini 70-80 dk, toplamda haftada 300 dk olacak şekilde artırmak gerekebilir. (TEMD Obezite 2024, Bölüm 6.2, s. 75)",
+      "trigger": "Aerobik Egzersizler"
+    },
+    {
+      "id": "p-temd-obz-051",
+      "level": "Kılavuz",
+      "title": "Direnç egzersizi şart: düşük ağırlık, çok tekrar",
+      "content": "Obezitesi olan bireylerde uzun süreli kronik diyetler bazal metabolizma hızını yavaşlatır; bariyatrik cerrahi sonrası kayıp da kas kitlesini azaltarak buna katkıda bulunur. Direnç egzersizleri yağsız kas kitlesini artırıp bazal metabolizmayı hızlandırdığı için egzersiz reçetesinin mutlaka bir parçası olmalıdır. Önerilen model düşük ağırlıkta ve çok tekrar şeklindedir; başlangıçta kaldırılabilen maksimal ağırlığın (1RM) yüzde 30-40'ı aralığında bir yüklenme uygulanır. Egzersizler başlangıçta 2, sonra 3 set olarak tasarlanır; obezitesi olan bireylerde set sayısı 4'e de çıkabilir. Setler arasında yaklaşık iki dakika dinlenilir, her seans 20-30 dakika sürer ve haftada 2-3 kez uygulanır. Bireyin gelişimine göre yüklenme şiddeti zamanla artırılır; bölüm sonundaki reçete tablosunun verdiği daha yüksek 1RM yüzdesi bu ilerleme sonrası hedeflenen düzeydir. (TEMD Obezite 2024, Bölüm 6.2, s. 76)",
+      "trigger": "Direnç Egzersizleri"
+    },
+    {
+      "id": "p-temd-obz-052",
+      "level": "Kılavuz",
+      "title": "HIIT başlangıç seçeneği değil, ilerleyen dönemin modeli",
+      "content": "HIIT, süresi kısa ama şiddeti aerobik egzersizlerden yüksek olan bir modeldir. Vücut yağ ve kas oranlarının değişimine katkısı uzun vadede orta şiddetli aerobik egzersizle benzerdir; toplam yağ kitlesi kaybında daha etkili olduğunu gösteren çalışmalar bu modelin tercih edilmesine yol açmaktadır. Kılavuz bu modeli başlangıçta değil, belli oranda kilo kaybı sonrası ilerleyen zamanda öneriyor. Reçete şöyle kurulabilir: haftada 2-3 kere, yüzde 85 VO2max (yüzde 90 HRmax) şiddetinde, yüklenme/dinlenme aralığı 1:3 veya 1:4 oranında, her seans yaklaşık 15 dakika, haftada toplam 30-45 dakika. İnterval antrenmanlar da başlangıçta düşük, sonra orta, ilerleyen zamanlarda yüksek şiddetli olacak şekilde programlanmalıdır. (TEMD Obezite 2024, Bölüm 6.2, s. 77)",
+      "trigger": "Yüksek Şiddetli İnterval Egzersizler"
+    },
+    {
+      "id": "p-temd-obz-053",
+      "level": "Kılavuz",
+      "title": "En etkili model tek tip değil: aerobik artı direnç",
+      "content": "Aerobik ve direnç egzersizlerinin birlikte reçetelendirildiği programlara kombine egzersiz denir. Aerobik bileşen kardiyovasküler adaptasyonu geliştirirken direnç bileşeni nöromüsküler adaptasyonu artırarak kas kuvveti ve dayanıklılığına katkı sağlar. İkisinin birlikte yapılması, yalnız aerobik ya da yalnız ağırlık kaldırma egzersizlerine göre daha fazla kilo ve yağ kaybı sağlamakta ve obezitesi olan bireylerde en etkili egzersiz modeli olma üstünlüğünü korumaktadır. Kombinasyon haftanın farklı günlerine dağıtılabileceği gibi aynı seans içinde de uygulanabilir; bu modelde esneklik egzersizleri ihmal edilmemelidir. TEMD kombine modeli en etkili model olarak öneriyor (Kanıt düzeyi B) ve seçilen modelin vücut yağından kayıp sağlarken kas kitlesini koruyacak kombinasyonda olmasını istiyor (Kanıt düzeyi D). (TEMD Obezite 2024, Bölüm 6.2, s. 77)",
+      "trigger": "Kombine Egzersizler"
+    },
+    {
+      "id": "p-temd-obz-054",
+      "level": "Kılavuz",
+      "title": "Bilişsel davranışçı terapiye en uygun hasta profili",
+      "content": "Psikiyatrik rahatsızlıklarla obezite arasında çift yönlü bir ilişki vardır: bir psikiyatrik rahatsızlık obezite riskini artırabilir, obezite de psikiyatrik rahatsızlık gelişimi için risk faktörüdür. Bilişsel davranışçı terapinin ilk aşaması hastanın değerlendirilmesidir; önceki kilo verme girişimleri, eşlik eden psikiyatrik ve tıbbi problemler, motivasyon düzeyi ve ayrıntılı yeme alışkanlıkları öğrenilir. Terapiye en uygun hastalar erişkin, BKİ 30 ile 50 kg/m2 arasında olan, kilo vermeye istekli ve terapiye uyumu bozacak ek bir psikiyatrik hastalığı olmayan kişilerdir. Yöntemin amacı, kilo almaya neden olan, kilo vermeyi engelleyen ve verilen kilonun geri alınmasına yol açan düşünce ve davranış kalıplarını fark ettirip değiştirmektir. (TEMD Obezite 2024, Bölüm 6.3, s. 81)",
+      "trigger": "Obezite Tedavisinde Bilişsel Davranışçı Terapi"
+    },
+    {
+      "id": "p-temd-obz-055",
+      "level": "Kılavuz",
+      "title": "Yirmi dört seans, dokuz modül, beş temel beceri",
+      "content": "Obezite tedavisinde bilişsel davranışçı terapi yaklaşımları genellikle en az 24 seanstan ve 9 modülden oluşmaktadır. Hastaya beslenme eğitimi ve egzersize ek olarak beş beceri kazandırılır: kendini izleme, hedef belirleme, dürtü kontrolü, davranışsal yerine koyma ve pozitif pekiştirme. Kendini izlemede alınan gıdaların ve yapılan egzersizin günlük kaydı tutulur; kişi kalori değerlerini, yeme zamanını, hangi açlık düzeyinde yemeye başladığını ve yemeden önceki duygularını da yazar. Gerçekçi olmayan hedefler motivasyonu ve terapiye uyumu bozduğu için hedefler terapinin başında gerçekçi konulur. Dürtü kontrolünde yemek yenen yerleri sınırlandırmak, abur cubur tarzı yiyecekleri evde bulundurmamak gibi çevresel düzenlemeler istenir. Pozitif pekiştirmede kullanılan ödüllerin yeme ile ilgili olmaması gerekir. (TEMD Obezite 2024, Bölüm 6.3, s. 82)",
+      "trigger": "Bilişsel Davranışçı Terapide Beceriler"
+    },
+    {
+      "id": "p-temd-obz-056",
+      "level": "Kılavuz",
+      "title": "İlaç eşiği BKİ 30; komorbidite varsa 27",
+      "content": "Farmakoterapi, BKİ 30 kg/m2 ve üzerinde olup diyet, egzersiz ve davranış değişikliğine rağmen hedeflenen kilo kaybı sağlanamayan olgularda endikedir. İkinci endikasyon, BKİ 27 kg/m2 ve üzerinde olup obezite ilişkili en az bir komorbiditesi bulunanlardır: tip 2 diyabet, koroner arter hastalığı, serebrovasküler hastalık, hipertansiyon, dislipidemi, uyku apnesi gibi. Üç ila altı ay içinde yüzde 5 kilo kaybı sağlayan ilaçlar tedavide etkin olarak kabul edilmiştir. Farmakoterapi sadece yaşam tarzı değişikliklerinin bir parçası olarak kullanılmalıdır; tek başına medikal tedavi uygulanması doğru değildir. Hastaya tedavinin yaşam boyu süreceği ve kısa süreli ilaç tedavisinden ziyade yaşam boyu kontrolde olunması gerekeceği anlatılmalıdır. (TEMD Obezite 2024, Bölüm 6.4, s. 86)",
+      "trigger": "Obezitede Farmakolojik Tedavi Endikasyonları"
+    },
+    {
+      "id": "p-temd-obz-057",
+      "level": "Kılavuz",
+      "title": "Üç aylık kür yetmez: tedavi en az bir yıl",
+      "content": "Çalışmalar 3-6 ay gibi kısa dönem ilaç tedavisinin uzun dönem sağlık faydası sağlamadığını göstermektedir. Net bir ortak görüş olmamakla beraber kılavuz farmakoterapinin en az 1 yıl sürdürülmesini, hasta bireysel olarak değerlendirilerek yıllık yüzde 10'luk bir kilo kaybı varsa tedaviye devam edilmesini öneriyor. İki yıllık tedavi için yüzde 15'lik kilo kaybı da etkin bir tedavidir. İki yılın sonunda kilo kaybı yaşam tarzı değişiklikleriyle korunabilecekse farmakoterapiye ara verilir ya da tedavi sonlandırılır. Altı ayın sonunda yüzde 5-15'lik bir kilo kaybı pek çok komorbid hastalıkta iyileşme sağlayan gerçekçi ve uygun bir hedeftir. Anti-obezite ilaçlarının sürekli kullanımı veya uzun dönem aralıklı kullanımı halen tartışma konusudur. (TEMD Obezite 2024, Bölüm 6.4, s. 86)",
+      "trigger": "Farmakoterapinin Süresi"
+    },
+    {
+      "id": "p-temd-obz-058",
+      "level": "Kılavuz",
+      "title": "Orlistat ile levotiroksin arasına dört saat koyun",
+      "content": "Orlistat yağda çözünen vitaminlerin emilimini engeller; uzun süreli kullanımda bu vitaminlerin düzeyi ölçülerek eksik saptananlar takviye edilmelidir. Levotiroksin ile kullanımda araya 4 saatlik ara konmalıdır; warfarin, antiepileptik ve siklosporin gibi ilaçların emiliminde de değişiklik olabileceği için birlikte kullanımda dikkat edilmelidir. Orlistat hamilelikte kontrendikedir ve gebelik kategorisi X ilacıdır; süte çok az geçtiği gösterilmiş olsa da emzirme döneminde kullanımı önerilmez. Böbrek yetmezliği olan hastalarda güvenle kullanılabilir, buna karşılık safra kanalları tıkalı ve karaciğer fonksiyon testleri bozuk hastalarda çok sıkı takip önerilir. Ülkemizde 120 mg dozuyla kullanımdadır ve yemeklerden hemen önce alınır. Bariyatrik cerrahi sonrası kullanımı hakkında yeterli kanıt yoktur, 65 yaş üstü kullanımda veriler sınırlıdır. (TEMD Obezite 2024, Bölüm 6.4, s. 87)",
+      "trigger": "Orlistat"
+    },
+    {
+      "id": "p-temd-obz-059",
+      "level": "Kılavuz",
+      "title": "Fentermin/topiramatta iki karar noktası: yüzde 3 ve yüzde 5",
+      "content": "Fentermin/topiramat, obezite tedavisi için onay alan ilk ilaç kombinasyonudur; EMA veri eksikliği nedeniyle kullanımını onaylamamıştır ve ülkemizde mevcut değildir. Önerilen başlangıç dozu 14 gün boyunca günde bir kez 3,75/23 mg, ardından 7,5/46 mg'a yükseltilmesidir. Yetişkinlerde 12 hafta sonunda başlangıç vücut ağırlığının en az yüzde 3'ü kaybedilmediyse doz 14 gün boyunca 11,25/69 mg ve takiben 15/92 mg olarak artırılır. Bu dozla 12 hafta sonunda vücut ağırlığının en az yüzde 5'i kaybedilmediyse ilaç kesilmelidir. Fentermin tek başına günlük 15-30 mg dozunda kullanılır ve yalnızca 12 haftalık kısa süreli kullanım onayı vardır; kardiyovasküler hastalık riski ve bağımlılık potansiyeli nedeniyle uzun süreli kullanımı önerilmemektedir. Topiramat zayıf bir karbonik anhidraz inhibitörü olduğundan metabolik asidoz, hipokalemi ve nefrolitiazis gelişimine yol açabilir, ayrıca teratojenik risk taşır ve kraniyofasiyal defektlere yol açabilir. (TEMD Obezite 2024, Bölüm 6.4, s. 88)",
+      "trigger": "Fentermin/Topiramat"
+    },
+    {
+      "id": "p-temd-obz-060",
+      "level": "Kılavuz",
+      "title": "Diyabetli obezite hastasında liraglutid öncelikli tercih",
+      "content": "SCALE faz 3a programı obezite ve prediyabet, diyabet, idame ve uyku apne sendromu olmak üzere 4 ayrı çalışmayı içerir; dünya çapında toplam 5700 hasta dahil edilmiştir. SCALE çalışmalarında liraglutid ile sağlanan kilo kaybı oranı yüzde 5,7 ile yüzde 8 arasında değişmektedir. Toplam 3731 hastanın alındığı SCALE obezite ve prediyabet çalışmasında 56 hafta boyunca günlük 3 mg liraglutid kullanan grupta yüzde 8,0, plasebo grubunda yüzde 2,6 kilo kaybı saptanmış; liraglutid grubunda prediyabet sıklığı daha düşük bulunmuştur. Ayrı bir çalışma olan SCALE diyabette ise 3 mg/gün liraglutidin obezitesi olan diyabetlilerde yalnız glisemik kontrole değil kilo kaybına da fayda sağladığı gösterilmiş; bu nedenle 3 mg liraglutid, tip 2 diyabeti bulunan fazla kilolu ve obeziteli hastalarda öncelikli tercihtir. Obezitesi bulunan adolesanlarda da yaşam tarzı değişikliklerine ek olarak liraglutid 3,0 mg plaseboya göre etkili bulunmuş ve bu grupta kullanım onayı almıştır. LEADER çalışmasında tip 2 diyabetli bireylerde günde 1,8 mg liraglutidin plaseboya kıyasla kardiyovasküler sonuçları iyileştirdiği bildirilmiştir. (TEMD Obezite 2024, Bölüm 6.4, s. 90)",
+      "trigger": "Liraglutid"
+    },
+    {
+      "id": "p-temd-obz-061",
+      "level": "Kılavuz",
+      "title": "Liraglutid 3,0 mg: kimde hiç başlamamalı",
+      "content": "Obezite tedavisi için önerilen günlük liraglutid dozu 3,0 mg'dır; bazı kişilerde daha düşük dozlarla da iyi kilo kaybı sağlanabilir. Gebelerde, emzirenlerde, daha önce akut pankreatit geçirenlerde, bireysel veya aile öyküsünde medüller kanser öyküsü olanlarda kullanılmamalıdır. Bulantı, kusma, konstipasyon ve diyare sık görülen gastrointestinal yan etkilerdir; bulantı genellikle geçicidir. Çalışmalarda plaseboya kıyasla safra kesesi hastalıkları daha sık görülmüştür. Yetmiş beş yaş üstü kullanım için veriler sınırlıdır ve enjeksiyon formunda olması dezavantajdır. Üç yıllık veri mevcut olup devamına engel bir yan etki oluşmazsa bu süre içinde güvenle kullanılabilir. (TEMD Obezite 2024, Bölüm 6.4, s. 91)",
+      "trigger": "Liraglutid"
+    },
+    {
+      "id": "p-temd-obz-062",
+      "level": "Kılavuz",
+      "title": "Semaglutidin obezite dozu diyabet dozu değildir",
+      "content": "Semaglutidin obezite tedavisinde önerilen dozu haftada bir kez 2,4 mg'dır. Tedaviye 0,25 mg/hafta ile başlanır; yan etki ve tolerans durumuna göre dört haftalık aralıklarla sırasıyla 0,5-1-1,7-2,4 mg/hafta olacak şekilde doz artırılır. Aynı molekül tip 2 diyabette 0,25 mg/hafta başlanıp idamede 0,5-1,0 mg/hafta dozlarında kullanılır, yani diyabet dozu obezite hedef dozunun altında kalır. Ülkemizde semaglutid yalnızca diyabet için onamlı 0,25, 0,50 ve 1 mg formlarıyla bulunmaktadır. (TEMD Obezite 2024, Bölüm 6.4, s. 92)",
+      "trigger": "Semaglutid"
+    },
+    {
+      "id": "p-temd-obz-063",
+      "level": "Kılavuz",
+      "title": "Semaglutidin ayrıştığı yer: diyabetik retinopati izlemi",
+      "content": "Tip 2 diyabetli hastaların dahil edildiği kardiyovasküler güvenlik çalışmalarında semaglutid kullananlarda diyabetik retinopati gelişimi istatistiksel olarak anlamlı yüksek bulunmuştur. Bu nedenle diğer GLP-1 reseptör agonistlerinden farklı olarak hastaların tedavi sırasında diyabetik retinopati gelişimi açısından izlenmesi önerilir. SELECT çalışmasında ise diyabetin eşlik etmediği, kardiyovasküler hastalığı bulunan fazla kilolu ve obeziteli bireylerde haftalık 2,4 mg kullanımı kardiyovasküler nedenlere bağlı ölüm, ölümcül olmayan miyokard infarktüsü ve inme insidansında anlamlı azalma sağlamıştır (Hazard Ratio 0,80; %95 CI 0,72-0,90; p&lt;0,001). En sık yan etkiler geçici bulantı, ishal, kabızlık ve kusma gibi hafif-orta şiddette gastrointestinal bozukluklardır. (TEMD Obezite 2024, Bölüm 6.4, s. 92)",
+      "trigger": "Semaglutid"
+    },
+    {
+      "id": "p-temd-obz-064",
+      "level": "Kılavuz",
+      "title": "Tirzepatid: 2,5 mg'dan 15 mg'a dörder haftalık basamaklar",
+      "content": "Obezite tedavisinde tirzepatid başlangıç dozu haftada bir kez subkutan 2,5 mg'dır. Dört hafta sonra obezite tedavisi için onaylanan doz olan 5 mg/haftaya çıkılır. Tedavi bu dozla sürebileceği gibi, ihtiyaç halinde 4 haftada bir 2,5 mg artışla maksimum doz olan haftada 15 mg'a kadar yükseltilebilir. Böbrek ve karaciğer bozukluğunda farmakokinetik ve farmakodinamik özelliklerde anlamlı değişim olmadığı için doz ayarlamasına gerek yoktur. Gebelerde, emzirenlerde, akut pankreatit geçirme öyküsü bulunanlarda, bireysel veya ailesel medüller tiroid kanseri öyküsü olanlarda kullanılması önerilmemektedir. (TEMD Obezite 2024, Bölüm 6.4, s. 93)",
+      "trigger": "Tirzepatid"
+    },
+    {
+      "id": "p-temd-obz-065",
+      "level": "Kılavuz",
+      "title": "SURMOUNT-1: doz arttıkça kilo kaybı yüzdesi artıyor",
+      "content": "SURMOUNT-1 çalışmasına BKİ 30 kg/m2 ve üzeri olan ya da BKİ 27 kg/m2 ve üzeri olup diyabet dışında obezite ile ilişkili en az bir komorbiditesi bulunan 2539 hasta alınmıştır. Ortalama kilo kaybı 5, 10 ve 15 mg/hafta dozları için sırasıyla %15, %19,5 ve %20,9 bildirilmiştir. Vücut ağırlığında en az %5 azalma sağlanan hasta oranı 5 mg ile %85, 10 mg ile %89, 15 mg ile %91 olmuştur. Haftada 10 mg kullananların %50'sinde, haftada 15 mg kullananların %57'sinde vücut ağırlığında en az %20 azalma saptanmıştır. (TEMD Obezite 2024, Bölüm 6.4, s. 93)",
+      "trigger": "Tirzepatid"
+    },
+    {
+      "id": "p-temd-obz-066",
+      "level": "Kılavuz",
+      "title": "Setmelanotid genetik tanı olmadan verilmez",
+      "content": "Setmelanotid bir melanokortin-4 reseptör agonistidir ve MC4R yolağındaki mutasyonlara bağlı ciddi obezitesi olan monogenetik obezitede kullanılır. 2020 yılında Amerika'da genetik testlerle kanıtlanmış POMC, PCSK-1 ya da LEPR eksikliği olan 6 yaş ve üzeri hastalarda kullanım onayı almıştır. Erişkinde ve 12 yaş ve üzeri pediyatrik hastada başlangıç dozu 2 mg/gün subkutandır; daha yüksek kilo kaybı amaçlandığında 3 mg/gün'e çıkarılabilir. 6-12 yaş arasında başlangıç dozu 1 mg/gün'dür. En sık yan etkiler enjeksiyon yeri reaksiyonları, hiperpigmentasyon, bulantı ve baş ağrısıdır; hastaların yaklaşık %61'inde ilaca karşı antikor geliştiği bildirilmektedir. (TEMD Obezite 2024, Bölüm 6.4, s. 94)",
+      "trigger": "Setmelanotid"
+    },
+    {
+      "id": "p-temd-obz-067",
+      "level": "Kılavuz",
+      "title": "Hedef dozda 3 ayda yüzde 5 yoksa ilacı kes",
+      "content": "Yaşam tarzı değişikliklerine rağmen istenilen kilo kaybı sağlanamayan, BKİ 30 kg/m2 ve üzeri olan veya BKİ 27 kg/m2 ve üzeri olup obezite ile ilişkili bir hastalığı bulunan hastalar için farmakoterapi önerilir. Ajan seçiminde kontrendike durumlar göz önünde bulundurulmalıdır. Farmakoterapiye rağmen hedef doza ulaşıldıktan sonraki 3 aylık sürede %5 ve üzerinde kilo kaybı sağlanamayan olgularda tedavi sonlandırılmalıdır. Kesin ortak bir görüş olmamakla beraber farmakoterapinin en az 1 yıl sürdürülmesi önerilmektedir; yarar gören hastalarda tedavi süresi uzatılabilir. (TEMD Obezite 2024, Bölüm 6.4, s. 96)",
+      "trigger": "Obezitede Farmakolojik Tedavi"
+    },
+    {
+      "id": "p-temd-obz-068",
+      "level": "Kılavuz",
+      "title": "Böbrek yetersizliğinde hangi ajan elenir",
+      "content": "Son dönem kronik böbrek hastalığı olanlarda kilo kaybı sağlamak için medikal tedavi önerilmemelidir; ancak ciddi klinik gereklilik durumunda seçilmiş vakalarda orlistat ve liraglutid düşünülebilir. Okzalat nefropatisi olanlarda orlistat tedavisi uygulanmamalıdır. Liraglutid kullanımı sırasında bulantı, kusma ve diyareye bağlı volüm kaybı olursa tedavi sonlandırılmalıdır. İleri dönem böbrek yetersizliğinde, yani GFR 30 ml/dk altında, naltrekson/bupropion ve fentermin/topiramat kullanılması uygun değildir. GFR düzeyi hafif (50-79 ml/dk) ve orta (30-49 ml/dk) olan vakalarda uygun endikasyonlarda tüm anti-obezite ajanları kullanılabilir. Nefrolitiazisi olan veya riski bulunan vakalarda naltrekson/bupropion, liraglutid ve semaglutid kullanılabilir. (TEMD Obezite 2024, Bölüm 6.4, s. 96)",
+      "trigger": "Kronik Böbrek Hastalığı"
+    },
+    {
+      "id": "p-temd-obz-069",
+      "level": "Kılavuz",
+      "title": "Organ yetersizliğinde doz tavanları ve Child-Pugh sınırı",
+      "content": "Orta dereceli böbrek yetersizliğinde naltrekson/bupropion günde iki kez 8/90 mg, fentermin/topiramat günlük 7,5/46 mg dozunu aşmamalıdır. Orta dereceli karaciğer yetersizliğinde (Child-Pugh skoru 5-9) ise günlük en yüksek doz yavaş salınımlı naltrekson/bupropion için 8/90 mg, fentermin/topiramat için 7,5/46 mg olmalıdır. Ciddi karaciğer yetersizliğinde, yani Child-Pugh skoru 9'un üzerinde olanlarda anti-obezite ilaçlarının kullanımı önerilmez; liraglutid ve semaglutidin ileri dönem karaciğer hastalığında kullanımı ile ilgili veri yoktur. Semaglutid kronik böbrek hastalığında doz azaltılarak kullanılabilir. Setmelanotid GFR 30 ml/dk ve üzerinde doz ayarlaması yapılmaksızın 2 hafta boyunca 2 mg/gün başlanıp sonra 3 mg/güne artırılır; GFR 15 ml/dk ve altında kullanımı önerilmez, GFR 15-30 ml/dk arasında dozun %50 azaltılması önerilmektedir. Kilo kaybettirici ilaç kullanımı sırasında kolelitiazisten şüphe edilirse kilo kaybının hızı yavaşlatılmalı, gereğinde ursodeoksikolik asit kullanılmalıdır. (TEMD Obezite 2024, Bölüm 6.4, s. 97)",
+      "trigger": "Özel Durumlarda İlaç Seçimi"
+    },
+    {
+      "id": "p-temd-obz-070",
+      "level": "Kılavuz",
+      "title": "Glokom, epilepsi, pankreatit: eleyen komorbiditeler",
+      "content": "Kilo kaybına yönelik tedavi alan tüm hastalar duygulanım sorunları, depresyon ve intihar eğilimi açısından takip edilmelidir. Depresyonla izlenen hastalarda orlistat, liraglutid, semaglutid ve fentermin/topiramat (başlangıçta 3,75/23 mg, ardından düşük tedavi dozu 7,5/46 mg) kullanılabilir; naltrekson/bupropion ve setmelanotid yoğun depresyon tedavisi alanlarda ve depresyon eğilimi olanlarda önerilmemelidir. Anksiyete eşlik ediyorsa fentermin/topiramat 15/92 mg kullanılabilir. Glokomu olan veya bu hastalığa eğilimi olanlarda fentermin/topiramat göz içi basıncında artışa neden olduğu için kullanılmamalıdır. Epilepsiyle izlenen hastalara ve alkolü bırakma sürecinde olanlara naltrekson/bupropion verilmemelidir. Geçirilmiş pankreatiti olan hastalarda liraglutid, semaglutid ve tirzepatid kullanılmamalıdır. (TEMD Obezite 2024, Bölüm 6.4, s. 98)",
+      "trigger": "Özel Durumlarda İlaç Seçimi"
+    },
+    {
+      "id": "p-temd-obz-071",
+      "level": "Kılavuz",
+      "title": "Ameliyat sonrası kilonun dörtte birini geri alan hasta",
+      "content": "Bariyatrik cerrahi olan vakalar yoğun yaşam tarzı önerilerine uymaya devam etmelidir. Kaybedilen kilonun %25'inden fazlasını geri alan vakalarda, özellikle yaşam tarzı değişimlerine yanıt alınamıyorsa ve yeni bir cerrahi girişim düşünülmüyorsa liraglutid, semaglutid ve fentermin/topiramat önerilebilir. Diğer ilaçların bu hasta grubunda etkinliği ve güvenirliliği tam değerlendirilmemiştir. 65 yaş ve üzerindeki bireylerde önce yaşam tarzı gözden geçirilmeli, metabolik duruma ve komorbiditelere göre beslenme ve egzersiz düzeni oluşturulmalıdır; kilo kaybı sağlayan ilaçların yaşlılarda güvenilirliği ve etkinliği hakkında yeterli çalışma bulunmamaktadır. (TEMD Obezite 2024, Bölüm 6.4, s. 99)",
+      "trigger": "Bariyatrik Cerrahi Sonrası"
+    },
+    {
+      "id": "p-temd-obz-072",
+      "level": "Kılavuz",
+      "title": "Tip 2 diyabetlide obezite ilacından önce denenecek ajanlar",
+      "content": "Antidiyabetiklerden metformin, SGLT-2 inhibitörleri ve GLP-1 RA kilo kaybı sağlarken, DPP-4 inhibitörleri ve alfa-glukozidaz inhibitörleri kilo açısından nötr etkilidir; sülfonilüre, glinidler, tiazolidinedionlar ve insülinler kilo alımına sebep olabilir. Bazı karşılaştırmalı klinik çalışmalarda GLP-1 RA ile ortalama 5,5-8 kg, metformin ve SGLT-2 inhibitörleri ile 1-3 kg arası kilo kaybı sağlandığı gösterilmiştir. İnsülin salgılatıcılar ve tiazolidinedionlarla tedaviye başlandıktan sonra 3-6 ay gibi kısa bir sürede 10 kg kadar kilo alımı görülebilmektedir. Bu nedenle kilo fazlalığı olan tip 2 diyabetli hastalarda, obezite tedavi ilacı başlanmadan önce metformin, SGLT-2 inhibitörü ve GLP-1 RA gibi ajanlardan bir veya daha fazlasının denenmesi önerilmektedir. (TEMD Obezite 2024, Bölüm 6.4, s. 100)",
+      "trigger": "Kilo Artışına Neden Olabilecek İlaçlar"
+    },
+    {
+      "id": "p-temd-obz-073",
+      "level": "Kılavuz",
+      "title": "Deneyimli merkezde mortalite binde birin altında",
+      "content": "Bariyatrik cerrahi sırasında açık cerrahi yerine iyileşme süresini kısaltan ve daha az invaziv olan laparoskopik tekniklerin tercih edilmesi önerilmektedir. Laparoskopik cerrahi ile tecrübeli merkezlerde cerrahiye bağlı mortalitenin %0,1'in, ciddi komplikasyonların ise %5'in altında olduğu bildirilmektedir. Uygun cerrahi prosedürün seçimi hastanın komorbid hastalıkları, risk düzeyi, tercihi ve merkezin deneyimi göz önünde bulundurularak multidisipliner olarak alınmalıdır. Kılavuz yalnızca uluslararası cerrahi dernekleri tarafından standart kabul edilen yöntemlere yer verir; diğer yöntemlerin uzun dönem verileri yeterli olmadığından araştırma kapsamında etik kurul ve hasta onayı alınarak yapılması tavsiye edilmektedir. (TEMD Obezite 2024, Bölüm 6.5, s. 111)",
+      "trigger": "Obezitenin Cerrahi Tedavisi"
+    },
+    {
+      "id": "p-temd-obz-074",
+      "level": "Kılavuz",
+      "title": "Gastrik band: malnütrisyon yapmaz ama kilo geri gelir",
+      "content": "Ayarlanabilir gastrik bandda midenin proksimaline yerleştirilen band ile küçük bir poş oluşturulur; poşun dolmasıyla erken tokluk sağlanır ve daha az gıda tüketilir. Mide ve bağırsak rezeksiyonu yapılmadığından normal sindirim ve absorbsiyon devam eder; sadece restriktif etkili bir yöntemdir ve malnütrisyon oluşturmaz, bu nedenle olguların vitamin ve mineral desteğine ihtiyacı daha düşüktür. Kolay uygulanabilen, geri dönüşümlü ve daha az invaziv bir tekniktir. Uzun dönemde kayma, perforasyon ve penetrasyon gibi banda ait komplikasyonlar ve gastroözofageal reflü sık görülür. Kilo geri alımının daha yüksek olması nedeniyle günümüzde nadiren uygulanmaktadır. İki yılın sonunda fazla kilo kaybı %50-55 olarak bildirilmektedir. (TEMD Obezite 2024, Bölüm 6.5, s. 112)",
+      "trigger": "Ayarlanabilir Gastrik Band"
+    },
+    {
+      "id": "p-temd-obz-075",
+      "level": "Kılavuz",
+      "title": "Pilor korunduğu için tüp midede dumping olmaz",
+      "content": "Sleeve gastrektomi midenin büyük kurvatur kısmının çıkarıldığı, hacim kısıtlayıcı bir parsiyel gastrektomi operasyonudur. Hacim kısıtlayıcı etkisinin yanı sıra ghrelin gibi oreksijenik hormon düzeylerini düşürerek de iştahı azaltır. Bu teknikte pilor sağlam olduğu için dumping sendromu oluşmaz ve malnütrisyon riski görece daha düşüktür; hastaların RYGB ve BPD-DS'e kıyasla daha az vitamin ve mineral desteğine ihtiyacı olur. Geri dönüşümsüz bir teknik olması ve stapler hattında görülen kaçaklar dezavantajlarıdır. İki yılın sonunda fazla kilo kaybı %60-70 olarak bildirilmektedir. (TEMD Obezite 2024, Bölüm 6.5, s. 112)",
+      "trigger": "Sleeve Gastrektomi"
+    },
+    {
+      "id": "p-temd-obz-076",
+      "level": "Kılavuz",
+      "title": "RYGB evre 3 obezitede altın standart, bedeli eksikliklerdir",
+      "content": "Roux-en-Y gastrik bypass restriktif ve malabsorbtif etkili kombine bir yöntemdir. Mide proksimalinde küçük bir gastrik poş oluşturulur, Treitz ligamanının 30-50 cm distalinden ince bağırsak ayrılır ve biliopankreatik bacak gastrojejunostomi anastomozunun 75-150 cm distalindeki jejunuma bağlanır. Ameliyat sonrası serum ghrelin seviyesinde azalma, peptid YY ve GLP-1 düzeyinde artış gösterilmiştir. Uzun dönem güvenlik ve etkinlik verileri mevcut olduğundan evre 3 obezite tedavisinde altın standart tedavi seçeneği kabul edilmektedir. Bu operasyon sonrasında malnütrisyon ile vitamin ve mineral eksiklikleri sık görülmektedir. İkinci yılın sonunda fazla kilo kaybı ortalama %70, aralık olarak %60-80 bulunmuştur. (TEMD Obezite 2024, Bölüm 6.5, s. 112)",
+      "trigger": "Roux-en-Y Gastrik Bypass"
+    },
+    {
+      "id": "p-temd-obz-077",
+      "level": "Kılavuz",
+      "title": "En etkili yöntem aynı zamanda en yüksek nütrisyonel riskli",
+      "content": "Biliopankreatik diversiyon ve duodenal switch, uzun dönemde en yüksek kilo kaybını sağlayan ve diyabet remisyonu gibi metabolik sonuçlar açısından en etkili yöntemdir. Buna karşılık çok komplike bir prosedürdür, yüksek nütrisyonel risk taşır ve sadece deneyimli merkezlerde uygulanması önerilmektedir. Bu operasyon sonrası protein, vitamin ve mineral eksiklikleri sık görülmekte; ayrıca ciddi diyare, steatore, dumping sendromu ve marjinal ülserler görülebilmektedir. İkinci yılın sonunda fazla kilo kaybı ortalama %70-80'dir. Benzer ama tek bağırsak anastomozu içeren SADI-S prosedüründe vitamin ve mineral eksikliği BPD-DS'e kıyasla daha az görülür ve pilorun korunmuş olması dumping sendromu gelişimini önler. (TEMD Obezite 2024, Bölüm 6.5, s. 113)",
+      "trigger": "Biliopankreatik Diversiyon"
+    },
+    {
+      "id": "p-temd-obz-078",
+      "level": "Kılavuz",
+      "title": "Cerrahi öncesi en az altı ay, BKİ tek ölçüt değil",
+      "content": "Bariyatrik cerrahi kararından önce hastaya deneyimli bir ekip tarafından yeterli süre sağlıklı yaşam biçimi yönetimi ve farmakolojik tedavi uygulanmalıdır; en az altı ay süren bu yaklaşımla yeterli kilo veremeyen veya verdiği kiloyu muhafaza edemeyen hastalarda cerrahi düşünülebilir. Karar için BKİ düzeyi tek ölçüt olmamalıdır, Edmonton Obezite Evreleme sisteminin kullanılması yol gösterici olur. Cerrahi kararı verilebilecek olgular şunlardır: BKİ 40 kg/m2 ve üzeri olan bireyler; BKİ 35-39,9 kg/m2 olup Edmonton Evre 2 ve üzeri olanlar; BKİ 30-34,9 kg/m2 olup kan şekeri başka yöntemlerle regüle olmayan T2DM tanılı ve Edmonton Evre 3 ve üzeri olanlar. BKİ 30 kg/m2 altındaki olgulara bariyatrik-metabolik cerrahi uygulanmaz. (TEMD Obezite 2024, Bölüm 6.5, s. 114)",
+      "trigger": "Bariyatrik Cerrahi Endikasyonları"
+    },
+    {
+      "id": "p-temd-obz-079",
+      "level": "Kılavuz",
+      "title": "Kontrendikasyonların yarısı organ değil, beklenti sorunu",
+      "content": "Bariyatrik cerrahinin kontrendikasyonları arasında dekompanse kalp ve akciğer hastalıkları, ileri evre karaciğer sirozu (Child B veya C), ciddi koagülasyon bozuklukları, kontrol altına alınamayan major depresyon veya psikoz, uyuşturucu madde bağımlılığı ve alkolizm sayılabilir. Hastanın yapılacak işlemi anlamaması, gerçekçi olmayan beklentiler ve yaşam boyu beslenme ihtiyacını gideremeyecek durumda olmak da kontrendikasyonlar arasındadır. On sekiz yaş altı olgularda cerrahi eskiden kontrendikasyon olarak görülmekteyken günümüzde giderek daha sık yapılmaktadır. İleri yaşta ise kontrendikasyon oluşturacak bir yaş limiti yoktur; seçilmiş olgularda kâr-zarar oranı gözetilerek düşünülebilir. (TEMD Obezite 2024, Bölüm 6.5, s. 114)",
+      "trigger": "Bariyatrik Cerrahi Endikasyonları"
+    },
+    {
+      "id": "p-temd-obz-080",
+      "level": "Kılavuz",
+      "title": "Diyabet remisyonu kalıcı değil: üçte birinde nüks",
+      "content": "Randomize kontrollü çalışmalarda bariyatrik cerrahinin 1-5 yıl süreli takiplerde %30-63 oranında diyabet remisyonu sağladığı gösterilmiştir. Diyabet remisyonu için etkinlik sırasıyla BPD-DS, RYGB, SG ve AGB olarak bildirilmekle birlikte, bireysel prosedürlerin göreceli etkinliği tam olarak net değildir. Glisemi üzerindeki olumlu etkinin en az 5 yıl devam ettiği saptanmıştır; ancak etki zaman içinde azalmakta ve remisyon saptanan hastaların %30-50'sinde nüks görülebilmektedir. Cerrahinin, başlangıçta tip 2 diyabeti bulunmayan hastalarda diyabet geliştirme riskini 2. yılda %96 ve 15. yılda %78 oranında azalttığı saptanmıştır. Remisyonda uygulanan prosedürün tipi kadar hastanın yaşı, diyabetin süresi ve kaybedilen kilonun miktarı da etkilidir. (TEMD Obezite 2024, Bölüm 6.5, s. 115)",
+      "trigger": "Bariyatrik Cerrahinin Komorbiditeler Üzerine Etkisi"
+    },
+    {
+      "id": "p-temd-obz-081",
+      "level": "Kılavuz",
+      "title": "Balon kime takılır: BKİ 30-40 ve altı ay",
+      "content": "İntragastrik balon, beden kitle indeksi 30-40 kg/m2 arasında olan ve yaşam tarzı değişikliği ile etkin kilo kaybı sağlanamayan ya da cerrahi istemeyen hastalarda yaklaşık altı ay süreyle uygulanabilir. Gastrik kitle, akalazya, özofajit, Crohn hastalığına bağlı mukozal inflamasyon, geniş hiatal herni, ciddi koagülopati, gastrik cerrahi öyküsü ve süren alkol-madde kullanımı başlıca kontrendikasyonlardır. Gebe, yakın zamanda gebe kalmayı planlayan ve laktasyondaki kadınlara uygulanmaz. Balon tedavisi süresince yaşam tarzı değişikliği önerilerinin uygulanması, kilo kaybının artırılması ve devamlılığı için önemlidir. (TEMD Obezite 2024, Bölüm 7, s. 119)",
+      "trigger": "İntragastrik Balon"
+    },
+    {
+      "id": "p-temd-obz-082",
+      "level": "Kılavuz",
+      "title": "Balon takılan her hastaya profilaktik PPİ",
+      "content": "İntragastrik balon tedavisi verilen her hastaya profilaktik olarak proton pompa inhibitörü verilmelidir; amaç komplikasyon riskini azaltmaktır. İşlemde bulantı etkisi daha az olan anestezik maddelerin kullanılması, işlem sırasında ve sonrasındaki iki hafta boyunca antiemetik tedavi verilmesi önerilir. İşlem öncesi rutin olarak vitamin düzeyi ölçümüne gerek yoktur, ancak balon mide lümeninde kaldığı süre boyunca günlük multivitamin takviyesi önerilir. Kılavuz, aynı multivitamin önerisini diğer endoskopik bariyatrik yöntemlerde uygulamanın da faydalı olabileceğini belirtiyor. (TEMD Obezite 2024, Bölüm 7, s. 121)",
+      "trigger": "İntragastrik Balon"
+    },
+    {
+      "id": "p-temd-obz-083",
+      "level": "Kılavuz",
+      "title": "Balonun kazancı, bedeli ve mavi idrar uyarısı",
+      "content": "Balon uygulamalarında dokuz aylık süre sonunda bildirilen kilo kaybı %7,5 ila %10,9 arasında değişir. Bir dönemlik balon uygulanan hastaların %85’i total vücut ağırlığının %5’ini, %62’si %10’unu kaybetme hedefine ulaşabilir. Güncel çalışmalar balon çıkarıldıktan sonra mevcut ağırlık kaybının %25 oranında geri alındığını gösteriyor. Bulantı, kusma ve kabızlık gibi yan etkiler hastaların %9,4’ünde balonun erken çıkarılmasına neden oluyor. Balonda rüptür olursa metilen mavisi sistemik dolaşıma geçer ve idrarı maviye boyayarak hastanın durumu fark etmesini sağlar. (TEMD Obezite 2024, Bölüm 7, s. 121)",
+      "trigger": "İntragastrik Balon"
+    },
+    {
+      "id": "p-temd-obz-084",
+      "level": "Kılavuz",
+      "title": "Endoskopik sleeve gastroplasti: gastrik volümde %70 azalma",
+      "content": "Endoskopik sleeve gastroplasti, genel anestezi altında midenin büyük kurvaturunun insizyonsuz ve tam kat sütürlenmesiyle uygulanır. Gastrik volümü yaklaşık %70 oranında azaltarak erken doyma ve gastrik boşalmada yavaşlama sağlar. Altı aylık sürede yaklaşık %15-20 oranında kilo kaybı sağladığı bildirilmiştir. Kılavuz bu uygulamanın sleeve gastrektomiden üstün olmadığını, ancak intragastrik balonlara kıyasla daha etkin kilo kaybı sağlayabileceğini söylüyor. Kendini sınırlayan bulantı ve kusma en sık yan etkiler; gastrointestinal kanama ve perigastrik sıvı koleksiyonu ciddi yan etkiler arasında bildirilmiştir. (TEMD Obezite 2024, Bölüm 7, s. 122)",
+      "trigger": "Endoskopik Sleeve Gastroplasti"
+    },
+    {
+      "id": "p-temd-obz-085",
+      "level": "Kılavuz",
+      "title": "Aspirasyon tedavisi: öğünden 20 dk sonra içeriğin %30’u",
+      "content": "Aspirasyon tedavisi, öğünlerden 20 dk sonra mide içeriğinin yaklaşık %30’unun perkütan yerleştirilmiş bir silikon tüple aspire edilmesi ilkesine dayanır. FDA 2014 yılında BKİ 35 ila 55 kg/m2 arasında olan 22 yaşın üzerindeki yetişkinler için onay vermiştir. Dört yıllık takip çalışmasında dördüncü yılda total vücut ağırlığı kaybı %18,7 bildirilmiş, aynı çalışmada HbA1c, kan basıncı ve lipid profilinde de düzelme görülmüştür. TEMD, yöntemin düşük yan etki profili ile evre II veya evre III obezitesi olan kişilerde kullanılabileceğini belirtiyor. Peristomal kanama, irritasyon, enfeksiyon ve ağrı başlıca yan etkilerdir. (TEMD Obezite 2024, Bölüm 7, s. 122)",
+      "trigger": "Aspirasyon Tedavisi"
+    },
+    {
+      "id": "p-temd-obz-086",
+      "level": "Kılavuz",
+      "title": "İnce bağırsak tüpleri henüz FDA onaylı değil",
+      "content": "İnce bağırsağa yönelik endoskopik bariyatrik prosedürler henüz FDA onayı almamıştır, çalışmalar sürüyor. Duodenojejunal bypass tüpü 60 cm uzunluğundadır, önerilen vücutta kalış süresi 12 aydır ve 12 ayda %10,5 total vücut ağırlığı kaybı bildirilmiştir. Gastroduodenojejunal bypass tüpü 120 cm uzunluğundadır ve 12 ay kullanımla total vücut ağırlığında %17,6 azalma bildirilmiştir. Duodenal mukozal yüzey yenileme sonrası 6. ayda HbA1c’de %0,9, total vücut ağırlığında ortalama 2,5 kg kayıp bildirilmiştir. TEMD, duodenal mukozal remodelling yönteminin kilo kaybının ötesinde metabolik parametrelerde düzelme sağlayabileceğini belirtiyor. (TEMD Obezite 2024, Bölüm 7, s. 123)",
+      "trigger": "İnce Bağırsak Endoskopik Prosedürleri"
+    },
+    {
+      "id": "p-temd-obz-087",
+      "level": "Kılavuz",
+      "title": "Kanıta dayalı önerilebilecek tek bir zayıflama ürünü yok",
+      "content": "Kılavuz, obezite dernekleri ya da hekimler tarafından kanıta dayalı şekilde önerilebilecek bir gıda destek ürünü bulunmadığını söylüyor (Kanıt düzeyi D). Tabloda kullanmamasını öner verdikti kitosan, efedra alkaloid-kafein kombinasyonları, guar sakızı ve spirulina için verilmiştir; dipnota göre country kavunu, bitter portakalı, guarana ve yerba maté de bu son grupta sayılabilir. Diğer ürünlerde eldeki kanıt önerme ya da önermeme ölçütlerine uymadığı için yaklaşım hastayı mevcut durum hakkında uyar ve takip et biçimindedir. Hasta yine de kullanmak istiyorsa ürün prospektüsü ve tablo üzerinden kalite, güvenirlik ve etkinlik değerlendirilmelidir. (TEMD Obezite 2024, Bölüm 8, s. 131)",
+      "trigger": "Ek Diyet Ürünleri"
+    },
+    {
+      "id": "p-temd-obz-088",
+      "level": "Kılavuz",
+      "title": "Efedra: etkin sayılıyor ama güvenli değil",
+      "content": "Efedrin içeren diyet ürünleri, artan ciddi yan etki bildirimleri ve efedrine bağlı bir ölüm olgusu nedeniyle FDA tarafından yasaklanmıştır. Efedrin içermeyen efedra alkaloidlerinde ciddi yan etki gözlenmediği için FDA halen bir kısıtlama uygulamamıştır. Bazı çalışmalarda kısa sürede belirgin kilo kaybı sağlanmış, plaseboya göre ayda 0,9 kg daha fazla etki bildirilmiştir; uzun dönemde bu etkinliğin sürüp sürmediği bilinmiyor. Meta-analizde çalışmaların hepsinde metodolojik sorunlar ve advers olay bildiriminde yetersizlik raporlanmıştır. Kardiyak aritmi, senkop, miyokard enfarktüsü ve ölüm ciddi yan etkileri arasındadır; kılavuz tablosunda efedra alkaloid ve kafein kombinasyonu etkin ama güvenli değil olarak sınıflanmıştır. (TEMD Obezite 2024, Bölüm 8, s. 128)",
+      "trigger": "Efedra"
+    },
+    {
+      "id": "p-temd-obz-089",
+      "level": "Kılavuz",
+      "title": "Yeşil çay: anlamsız kilo etkisi, gerçek ilaç etkileşimi",
+      "content": "Yeşil çayın kilo verdirici olduğuna dair kesin bir kanıt bulunmuyor. On iki çalışmanın incelendiği meta-analizde özellikle kombine kullanımda -1,63 kg bildirilmekle birlikte bu etkinin klinik olarak anlamlı olmadığı ortaya çıkmıştır. Günde 1-2 bardak düzenli tüketim sağlık açısından risk taşımıyor, ancak yeşil çay veya ekstrelerinin yüksek doz (10-29 mg/kg/gün) kullanımında karaciğer toksisitesi gelişebildiği bildirilmiştir. Bortezomib ve diğer borinik asit bazlı proteozom inhibitörlerini kullananlarda yeşil çay tüketiminden kaçınılmalıdır. Lipidlerde total kolesterolde yaklaşık 7 mg/dL, LDL kolesterolde yaklaşık 2 mg/dL düşüş sağlarken HDL düzeyleri değişmiyor. (TEMD Obezite 2024, Bölüm 8, s. 128)",
+      "trigger": "Yeşil Çay"
+    },
+    {
+      "id": "p-temd-obz-090",
+      "level": "Kılavuz",
+      "title": "Guar sakızı: özofagus tıkanıklığı ve FDA yasağı",
+      "content": "On bir randomize kontrollü çalışmayı değerlendiren meta-analizde guar sakızı içeren besinlerin kilo kaybı sağlamak konusunda bir etkisinin olmadığı bildirilmiştir. 1980’lerin sonlarında yeterli sıvı ile alınmamasına bağlı 10 hastada özefageal tıkanıklık ve bir hastada ölüm bildirilmesi üzerine FDA kilo verdirici ajan olarak kullanımını yasaklamıştır. Buna rağmen guar sakızı halen pek çok zayıflama ürününde ve besin maddesine katkı olarak eklenmektedir. Kılavuzun kullanmamasını öner verdikti yalnızca guar sakızının obezite ilacı olarak kullanımıyla sınırlıdır; lifli ajanlar diyabet, glukoz intoleransı veya hiperlipidemi eşlik ediyorsa fayda sağlayabilir. (TEMD Obezite 2024, Bölüm 8, s. 130)",
+      "trigger": "Guar Sakızı"
+    },
+    {
+      "id": "p-temd-obz-091",
+      "level": "Kılavuz",
+      "title": "Akupunktur: 2,97 kg, ama 3-6 ayda geri alınıyor",
+      "content": "Beş randomize kontrollü çalışmayı içeren bir meta-analizde akupunktur grubunda kontrol grubuna göre 2,97 kg kadar daha fazla kilo kaybı rapor edilmiştir. Ancak çalışmaların büyük kısmı kontrolsüz, kısa süreli veya yeterli plasebo kontrol grubu ile desteklenmemiş olduğu için etkinlik hakkında net bir yorum yapılamıyor (Kanıt düzeyi D). Akupunktur uygulamasında çok kısıtlı kalori alımı zorunlu olarak uygulanıyor, yani kaybın kaynağı ayrıştırılamıyor. Bu kişiler işlem bittikten 3-6 ay içerisinde hızla eski kilolarına ulaşıyor. (TEMD Obezite 2024, Bölüm 8, s. 132)",
+      "trigger": "Akupunktur"
+    },
+    {
+      "id": "p-temd-obz-092",
+      "level": "Kılavuz",
+      "title": "Adölesanda ciddi obezite: %120 ve %140 kuralı",
+      "content": "Adölesanda obezite ölçütü persantildir: BKİ 95 persantil ve üzeri obezite, 85 ile 95 persantil arası fazla kiloludur. Ciddi obezite iki sınıfa ayrılır. Sınıf II, 95 persantile karşılık gelen BKİ’nin %120’si veya BKİ 35 ve üzeridir. Sınıf III, 95 persantile karşılık gelen BKİ’nin %140’ı veya BKİ 40 ve üzeridir. Her iki sınıfta da hangisi daha küçükse o değer esas alınır. (TEMD Obezite 2024, Bölüm 9, s. 137)",
+      "trigger": "Adölesanda Obezite Tanısı"
+    },
+    {
+      "id": "p-temd-obz-093",
+      "level": "Kılavuz",
+      "title": "Boy uzama hızı yavaşlıyorsa sekonder nedeni ara",
+      "content": "Adölesanda obezitenin nedeni daha çok primerdir, ancak özellikle ileri obezitede ve uygun öykü varlığında ikincil nedenler akılda tutulmalıdır. Boy uzama hızının azalması, sekonder nedenler olduğunda sıklıkla rastlanan bir bulgudur. Laboratuvar değerlendirmede açlık kan glukozu veya HbA1c, serum açlık lipid paneli ve serum ALT ile AST düzeylerine bakmak tavsiye edilir. Lipid profilinin 2 yılda bir yenilenmesi önerilir. BKİ ölçümü için belirli bir aralık önerilmese de rutin hekim kontrolleri sırasında yapılabileceği bildirilmiştir. (TEMD Obezite 2024, Bölüm 9, s. 136)",
+      "trigger": "Adölesanda Değerlendirme"
+    },
+    {
+      "id": "p-temd-obz-094",
+      "level": "Kılavuz",
+      "title": "Adölesanda hedef: 1,5 kg/m2 BKİ, ciddi obezitede %7",
+      "content": "Amerikan Endokrin Cemiyeti, obezitesi olan adölesanda 1,5 kg/m2’lik bir BKİ azalmasının anlamlı etkileri olabileceğini ifade ediyor; ciddi obezitesi olanlarda en az %7 kilo kaybı öneriliyor. En etkili egzersiz girişimlerinin haftada en az 3 gün 60 dakika veya daha fazla süren egzersizler olduğu gösterilmiştir. Obezite riskini artıran ekran süresinin günlük 2 saati geçmemesi önerilir. Tedavi ekibinde pediyatrik endokrinolog veya pediyatri uzmanı, diyetisyen, psikolog ve egzersiz uzmanı bulunmalı, aile mümkün olduğunca programa dahil edilmelidir. (TEMD Obezite 2024, Bölüm 9, s. 136)",
+      "trigger": "Adölesanda Tedavi Hedefleri"
+    },
+    {
+      "id": "p-temd-obz-095",
+      "level": "Kılavuz",
+      "title": "Adölesan obezitesinde Türkiye’de onaylı ilaç yok",
+      "content": "Adölesanda onaylı ilaçların ilki orlistattır, ancak yan etki profili kullanımını kısıtlar. Liraglutid 2020 yılında 12 yaş ve üzeri, 95 persantil veya 60 kg üzerindeki çocuklarda onay almıştır. Fentermin monoterapisinin ABD’de 16 yaşından büyüklerde 12 hafta kullanım onayı, fentermin-topiramat kombinasyonunun ise 12 yaş ve üzeri, yaş ve cinse göre 95 persantilin üzerindeki çocuklarda onayı vardır. Setmelanotid, 6 yaş ve üzerinde LEPR, POMC veya PCSK1 eksikliği olan çocuklarda ve ayrıca Bardet-Biedl tanısıyla izlenen çocuklarda FDA onayı almıştır. Bunlardan yalnızca liraglutidin EMA onayı bulunuyor ve Türkiye’de hiçbir ilacın obezite tedavisinde onayı yok. (TEMD Obezite 2024, Bölüm 9, s. 136)",
+      "trigger": "Adölesanda İlaç Tedavisi"
+    },
+    {
+      "id": "p-temd-obz-096",
+      "level": "Kılavuz",
+      "title": "Adölesan cerrahisinde Tanner evresi ya da kemik yaşı şartı yok",
+      "content": "Adölesanda bariyatrik cerrahi için önerilen ölçütler BKİ 40 kg/m2 üzeri veya 99,5 persantil üzeri olup en az bir komorbidite bulunması, en az 6 ay düzenli kilo verme girişimi öyküsü ve iskelet ile gelişimsel olgunluğa ulaşılmış olmasıdır. Cerrahinin pubertal veya lineer büyümeyi olumsuz etkilemediği görüldüğünden belli bir Tanner evresi ya da kemik yaşı şartı bulunmuyor. Sendromik obezite, gelişme geriliği, otizm spektrumu veya travma öyküsü kontrendikasyon olarak kabul edilmiyor. En sık uygulanan yöntemler RYGB ve sleeve gastrektomidir; Teen-LABS çalışmasında ikisi arasında BKİ azalması açısından fark bulunmamıştır. Daha düşük komplikasyon oranı ve benzer kilo kaybı nedeniyle sleeve gastrektomi tercih edilen yöntem olmuştur. (TEMD Obezite 2024, Bölüm 9, s. 137)",
+      "trigger": "Adölesanda Bariyatrik Cerrahi"
+    },
+    {
+      "id": "p-temd-obz-097",
+      "level": "Kılavuz",
+      "title": "Obezite COVİD-19 mortalitesini 2,56 kat artırdı",
+      "content": "Open Safely çalışmasında COVİD-19 ile ilişkili ölüm riski, 35 ile 39,9 arasındaki BKİ için 1,4 ve 40’ın üzerinde bir BKİ için 1,92 tehlike oranıyla artmıştır. Ülkemizde Sosyal Güvenlik Kurumu kayıtlarıyla yapılan ve 14.625 obeziteli ya da fazla kilolu COVİD-19 hastasını kapsayan çalışmada, fazla kilolu olmak mekanik ventilasyon veya entübasyon ihtiyacını 1,82 kat, obeziteli olmak 2,69 kat artırmıştır. Aynı çalışmada obezitenin mortalite riskini 2,56 kat artırdığı gösterilmiştir. BKİ 30 kg/m2 üzerindeki hastalar, normal BKİ’li hastalarla karşılaştırıldığında daha fazla ciddi hastalık geliştirmektedir. (TEMD Obezite 2024, Bölüm 10, s. 141)",
+      "trigger": "Obezite ve COVİD-19 Seyri"
+    },
+    {
+      "id": "p-temd-obz-098",
+      "level": "Kılavuz",
+      "title": "COVİD-19’da riski taşıyan visseral yağ, subkutan yağ değil",
+      "content": "New York’ta yapılan hastane tabanlı bir çalışma, BKİ ile entübasyon veya ölüm riski arasında J eğrisi şeklinde bir ilişki göstermiştir; Gazi Sağlık Sistemine kayıtlı hastaları içeren iki çalışma da aynı J eğrisini bulmuştur. Yağın nerede olduğu ayrıca önemlidir: yoğun bakım ünitesi veya mekanik ventilasyon desteği gereken hastaların visseral yağ oranı daha yüksek bulunmuştur. Buna karşılık subkutan yağ dokusu artışının yoğun bakıma kabul için yüksek riskle ilişkili olmadığı bildirilmiştir. Göğüs tomografisi ile ölçülen epikardiyal yağ dokusu hacmi pnömoninin ciddiyeti ve olumsuz klinik sonuçlarla ilişkili bulunmuş, miyokardiyal hasarın bir göstergesi olarak saptanmıştır. Kılavuz, çoğunlukla hastane ortamında yürütülen bu çalışmaların adipozite ile hastalığın doğal seyri arasındaki ilişkiyi tam göstermeyebileceğini belirtiyor. (TEMD Obezite 2024, Bölüm 10, s. 142)",
+      "trigger": "COVİD-19 ve Visseral Yağ"
+    },
+    {
+      "id": "p-temd-obz-099",
+      "level": "Kılavuz",
+      "title": "Obezite merkezinde manşon 34 cm, tartı 200 kg üstü",
+      "content": "Obezite tedavi merkezinde gerekli sayılan donanım listesi somut eşikler taşır: kan basıncı ölçümü için 34 cm üzeri manşon ve 200 kg üzeri ağırlık kapasitesi olan tartı. İleri derecede obeziteli bireyler için 200 kg üzeri hasta yatağı, sedye ve geniş muayene masası da gerekli listesindedir. Bekleme salonunda kolsuz kanepe ve yüksek sert koltuklar bulunmalıdır. Uyku apnesi monitörleri, yeme sıklığı anketi, depresyon ve yaşam kalitesi anketleri ile akredite hormonal ve moleküler genetik laboratuvarı da gerekli kabul edilir. Deri katlantısı ölçer, biyo-empedans veya DEXA ile beden kompozisyon analizi ve endirek kalorimetri önerilen aletler arasındadır. (TEMD Obezite 2024, Bölüm 11, s. 148)",
+      "trigger": "Obezite Merkezi Donanımı"
+    },
+    {
+      "id": "p-temd-obz-100",
+      "level": "Kılavuz",
+      "title": "EASO akreditasyonu üç yıllık, ülkemizde 14 merkez",
+      "content": "EASO, 2011 yılından bu yana Avrupa’daki obezite merkezlerinin standardizasyonu için bir akreditasyon mekanizması yürütüyor. Merkezler belirlenen kriterlere uygunluk esasına göre üç yıllığına akredite ediliyor ve bu süre içinde ortak araştırma ve eğitim programlarına katılmaları bekleniyor. Ülkemizde bu kuruluş tarafından akredite edilmiş 14 obezite merkezi bulunmaktadır. Başvuruda sorulanlar sayısaldır: bir yılda görülen obeziteli birey sayısı, BKİ 40 kg/m2 üzerindeki birey sayısı, obeziteli bireylere ayrılmış yatak sayısı ve haftalık poliklinik günü sayısı. Primer olarak obezite cerrahisi merkezi adı altında çalışan kuruluşlar da bu sisteme başvurabilir. (TEMD Obezite 2024, Bölüm 11, s. 147)",
+      "trigger": "Obezite Merkezi Akreditasyonu"
+    }
+  ]
+}
