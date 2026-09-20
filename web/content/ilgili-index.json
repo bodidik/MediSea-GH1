@@ -169,6 +169,11 @@
    "brans": "endokrinoloji",
    "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
    "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "graves-nuks-ongorusu-great-skoru",
+   "baslik": "Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları"
   }
  ],
  "endokrinoloji/arka-hipofiz-bozukluklari-di-ve-siadh": [
@@ -386,9 +391,19 @@
    "brans": "endokrinoloji",
    "slug": "gebelik-ve-tiroid-yonetimi",
    "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "graves-nuks-ongorusu-great-skoru",
+   "baslik": "Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları"
   }
  ],
  "endokrinoloji/gebelikte-hipertiroidizm-yonetimi": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "graves-nuks-ongorusu-great-skoru",
+   "baslik": "Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları"
+  },
   {
    "brans": "endokrinoloji",
    "slug": "gebelikte-hipotiroidizm-yonetimi",
@@ -430,6 +445,38 @@
    "brans": "endokrinoloji",
    "slug": "tiroid-yaslanmasi-fizyolojisi",
    "baslik": "Tiroid Yaşlanması (Thyroid Aging): Fizyolojik TSH Yüksekliği"
+  }
+ ],
+ "endokrinoloji/graves-nuks-ongorusu-great-skoru": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidizm-yonetimi",
+   "baslik": "Gebelikte Hipertiroidizm"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "amiodaron-iliskili-tirotoksikoz",
+   "baslik": "Amiodaron İlişkili Tirotoksikoz (AİT)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
+   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-hipertiroidizm",
+   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
+   "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
   }
  ],
  "endokrinoloji/hashimoto-ensefaliti": [
@@ -1372,8 +1419,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "pbmah-genetik-temeller-ailevi-riskler",
-   "baslik": "PBMAH: Genetik Temeller ve Ailevi Riskler (İleri Okuma)"
+   "slug": "graves-nuks-ongorusu-great-skoru",
+   "baslik": "Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları"
   },
   {
    "brans": "endokrinoloji",
@@ -2228,6 +2275,11 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "graves-nuks-ongorusu-great-skoru",
+   "baslik": "Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "subklinik-tiroid-hastaliklari",
    "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
   }
@@ -2252,6 +2304,11 @@
    "brans": "endokrinoloji",
    "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
    "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "graves-nuks-ongorusu-great-skoru",
+   "baslik": "Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları"
   },
   {
    "brans": "endokrinoloji",
