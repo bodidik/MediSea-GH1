@@ -1,0 +1,707 @@
+{
+  "id": "pearl-kard-temd-hipertansiyon-001",
+  "accessLevel": "premium",
+  "topic": "TEMD Hipertansiyon",
+  "pearls": [
+    {
+      "id": "p-temd-ht-001",
+      "level": "Kılavuz",
+      "title": "Ölçümden önceki 30 dakika sonucu değiştirir",
+      "content": "Ölçümden önceki 30 dakika içinde hasta sigara, çay veya kahve içmemiş, kafein almamış ve tercihen yemek yememiş olmalıdır. Yemek ya da egzersiz sonrası ölçümler normalden düşük, sigara ya da kahve sonrası ölçümler normalden yüksek çıkabilir. Nazal dekonjestan ve benzeri adrenerjik uyarıcıların kullanımı da hatalı ölçümlere neden olabilir. Ölçümlere hasta sessiz bir odada en az 5 dakika istirahat ettikten sonra başlanmalıdır. Hasta sırtını yaslayarak oturmalı, ölçülecek kolu çıplak olmalı, konuşmamalı ve bacak bacak üstüne atmamalıdır. (TEMD Hipertansiyon 2022, Bölüm 1, s. 2)",
+      "trigger": "Standart Kan Basıncı Ölçümü"
+    },
+    {
+      "id": "p-temd-ht-002",
+      "level": "Kılavuz",
+      "title": "Manşonu körlemesine şişirmek sahte yüksek sistolik üretir",
+      "content": "Önce manuel olarak brakiyal arter nabzının kaybolduğu basınç saptanmalı, sonra oskültasyonda manşon bu noktanın 20 mmHg üzerine kadar şişirilmelidir. Sistolik değeri bilmeden manşonun aşırı şişirilmesi yüksek sistolik ölçümlere yol açabilir. Manşon 2-3 mmHg/sn hızında indirilmeli, daha hızlı indirmelerden kaçınılmalıdır. Sistolik ve diyastolik basıncı belirlemek için faz I ve faz V Korotkoff sesleri kullanılır. Elektronik alet kullanılacaksa önce nabız muayenesi yapılmalıdır; atriyal fibrilasyon gibi bir aritmide elektronik aletler vuruları kaçırabildiği için ölçüm oskültasyonla alınmalıdır. (TEMD Hipertansiyon 2022, Bölüm 1, s. 3)",
+      "trigger": "Ofiste Kan Basıncı Ölçümü"
+    },
+    {
+      "id": "p-temd-ht-003",
+      "level": "Kılavuz",
+      "title": "İki kol arasındaki fark ne zaman araştırma gerektirir",
+      "content": "Kan basıncı ölçümü mutlaka her iki koldan yapılmalıdır; ilk muayenede gereğinde uyluktan da ölçüm alınır. İki kol arası fark 10 mmHg altındaysa normal kabul edilebilir. Fark sistolik 20 mmHg ve diyastolik 10 mmHg üzerindeyse mutlaka ileri araştırma yapılmalıdır. İki koldan yapılan ölçümler arasında fark varsa ölçümler tekrarlanmalıdır. Fark sürüyorsa sonraki ölçümler ve takipler yüksek değer alınan koldan sürdürülür. (TEMD Hipertansiyon 2022, Bölüm 1, s. 3)",
+      "trigger": "Ofiste Kan Basıncı Ölçümü"
+    },
+    {
+      "id": "p-temd-ht-004",
+      "level": "Kılavuz",
+      "title": "Ayakta üç dakika: atlanan ortostatik hipotansiyon ölçümü",
+      "content": "Yaşlı ve diyabetik hastalarda normal kan basıncı ölçümünden sonra hasta ayakta 3 dakika bekletilerek ölçüm tekrarlanmalıdır. Sistolik basıncın 20 mmHg veya daha fazla, ya da diyastolik basıncın 10 mmHg veya daha fazla düşmesi ortostatik hipotansiyon kabul edilir. Bu durum özellikle diyabetik hastalarda artmış mortalite ile ilişkilidir. İlk muayenede risk faktörü olsun olmasın ortostatik hipotansiyon varlığına bakılmalıdır. Diyabetiklerde, yaşlılarda, otonomik yetersizliği olanlarda ve postural hipotansiyon şüphesi bulunanlarda bu değerlendirme atlanmamalıdır. (TEMD Hipertansiyon 2022, Bölüm 1, s. 3)",
+      "trigger": "Ofiste Kan Basıncı Ölçümü"
+    },
+    {
+      "id": "p-temd-ht-005",
+      "level": "Kılavuz",
+      "title": "Doğrulama muayenesinin zamanı evreye göre değişir",
+      "content": "İlk değerlendirmede kan basıncı 140/90 mmHg ve üzerinde saptanan hasta, tanının doğrulanması için mutlaka ikinci kez muayeneye çağrılmalıdır. Evre 1 düzeyindeki hastalar 2-4 hafta içinde, Evre 2 düzeyindekiler ise en geç 1-2 hafta sonra çağrılır. İkinci muayeneye kadar geçen sürede hastanın ev veya ambulatuvar ölçümleri yapması istenir. Klinikte birkaç kez yapılan ölçümlerin ortalaması Evre 3 düzeyinde olan hastalarda ise ev veya ambulatuvar ölçüm önerilmeden hemen antihipertansif tedaviye başlanmalıdır. Hedef organ hasarı açısından klinik ipuçları varsa yine vakit geçirmeden tedaviye başlanır. (TEMD Hipertansiyon 2022, Bölüm 1, s. 2)",
+      "trigger": "Standart Kan Basıncı Ölçümü"
+    },
+    {
+      "id": "p-temd-ht-006",
+      "level": "Kılavuz",
+      "title": "Hipertansif olmayanda bir sonraki ölçüm ne zaman",
+      "content": "İlk değerlendirmede hipertansiyonu olmayan olgularda tekrar ölçüm aralığı kan basıncı düzeyine göre belirlenir. Kan basıncı normal aralıkta, yani 120/80 mmHg altında olanlarda yılda bir ölçüm önerilir. Sistolik 120-129 mmHg veya diyastolik 80-84 mmHg olanlarda aralık 6 aydır. Sistolik 130-139 mmHg veya diyastolik 85-89 mmHg olanlarda ise 3 ayda bir tekrar ölçüm önerilir. Hekim bulduğu değere göre periyodik ölçümlerin ne kadar zamanda bir yapılacağını hastaya söylemelidir. (TEMD Hipertansiyon 2022, Bölüm 1, s. 3)",
+      "trigger": "Kan Basıncı Ölçümü"
+    },
+    {
+      "id": "p-temd-ht-007",
+      "level": "Kılavuz",
+      "title": "Ev ölçümü beş-yedi gün, sabah ve akşam",
+      "content": "Evde ölçüm için kola uygun manşonlu mekanik veya elektronik alet kullanılabilir. Ölçümler en az 5 gün, tercihen 7 gün sürdürülmelidir. Sabah ve akşam saatlerinde, en az 5 dakika oturur vaziyette istirahat sonrası ve ofis ölçümü için önerilen standart önlemlere uyularak yapılır. Beyaz önlük etkisi veya maskeli hipertansiyon şüphesi varsa ev ölçümleri özellikle istenmelidir. Ev ölçüm değerlerinin ortalaması 135/85 mmHg ve üzerindeyse hipertansiyon tanısı konulur. (TEMD Hipertansiyon 2022, Bölüm 1, s. 4)",
+      "trigger": "Evde Kan Basıncı Ölçümü"
+    },
+    {
+      "id": "p-temd-ht-008",
+      "level": "Kılavuz",
+      "title": "Ambulatuvar ölçümde üç ayrı tanı eşiği vardır",
+      "content": "Ambulatuvar ölçüm, cihazın hasta üzerinde 24 saat taşınmasıyla yapılır; hipertansiyonun tanı ve takibinde ideal yöntemdir ve imkan olan her durumda kullanılmalıdır. Uyanık saatlerdeki ortalama 135/85 mmHg ve üzerindeyse veya 24 saatlik ortalama 130/80 mmHg ve üzerindeyse tanı konulur. Kılavuzun sınır değer tablosunda gece ortalaması için eşik 120/70 mmHg olarak verilmiştir. İmkanlar kısıtlıysa ambulatuvar ölçüm şu durumlarda endikedir: muayene ile ev ölçümleri arasında belirgin uyumsuzluk, dipping varlığının araştırılması, nokturnal hipertansiyon şüphesi ve kan basıncı değişkenliklerinin saptanması. (TEMD Hipertansiyon 2022, Bölüm 1, s. 4)",
+      "trigger": "Ambulatuvar Kan Basıncı Ölçümü"
+    },
+    {
+      "id": "p-temd-ht-009",
+      "level": "Kılavuz",
+      "title": "Beyaz önlük hipertansiyonu masum bir fenomen olmayabilir",
+      "content": "Beyaz önlük hipertansiyonunda evde ve gündüz ambulatuvar ölçümler 135/85 mmHg altındayken ofis ölçümleri yüksektir. Ofis ölçümünde Evre 1 hipertansiflerin yaklaşık %25'inde, Evre 2 hipertansiflerin ise %10 kadarında görülür. Tanı, 24 saatlik ve gündüz değerleri normal aralıktayken en az üç ofis ölçümünde kan basıncının 140/90 mmHg ve üzerinde bulunmasıyla konulur. Bazı çalışmalarda bu durumun normotansif bireylerle karşılaştırıldığında daha yüksek organ hasarı ve metabolik bozukluk prevalansıyla ilişkili olduğu bildirilmiştir. Tanı konduktan sonra metabolik risk faktörleri ve organ hasarı araştırılmalı; ek risk faktörü varsa yaşam tarzı değişikliğine ilaç eklenmesi, yoksa tedavinin yaşam tarzı değişikliği ile sınırlandırılıp yakın takip edilmesi önerilmektedir. (TEMD Hipertansiyon 2022, Bölüm 1, s. 5)",
+      "trigger": "Beyaz Önlük Hipertansiyonu"
+    },
+    {
+      "id": "p-temd-ht-010",
+      "level": "Kılavuz",
+      "title": "Maskeli hipertansiyon: ofiste normal, günlük hayatta yüksek",
+      "content": "Maskeli hipertansiyonda kan basıncı ofis şartlarında 140/90 mmHg altındadır, ancak ev ve/veya ambulatuvar gündüz ölçümlerinde 135/85 mmHg üzerindedir. Toplumdaki sıklık çalışmadan çalışmaya önemli farklılıklar gösterir ve %8-38 arasında bildirilmiştir; genel erişkin nüfusta yaklaşık prevalansın %10 civarında olduğu belirtilmektedir. Ofis değerleri normal olan her 7 veya 8 bireyden yaklaşık birinin bu kategoriye girebileceği bildirilmektedir. Bu bireylerde metabolik risk faktörü ve organ hasarı prevalansının daha yüksek olduğu, ofis hipertansiyonu ile benzer kardiyovasküler riske sahip oldukları gösterilmiştir. Bu nedenle bu olgularda kan basıncının düşürülmesi önerilmektedir. (TEMD Hipertansiyon 2022, Bölüm 1, s. 6)",
+      "trigger": "Maskeli Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-011",
+      "level": "Kılavuz",
+      "title": "Maskeli hipertansiyonu kimde aramak gerekir",
+      "content": "Maskeli hipertansiyon tanısını koymak kolay değildir, çünkü muayene sırasındaki kan basıncı normal sınırlardadır; her şeyden önce bu tablodan şüphelenmek gerekir. Araştırılması gereken hasta özellikleri şunlardır: prehipertansiyon, sol ventrikül hipertrofisi veya hedef organ hasarı, anne ve babasında hipertansiyon, kardiyovasküler hastalık için çoklu risk faktörleri, obstrüktif uyku apnesi, kan basıncında zaman zaman yükselme, kronik böbrek yetmezliği ve egzersiz ile kan basıncının aşırı yükselmesi. Özellikle hedef organ hasarı bulunan hastalarda bu durum akılda tutulmalıdır. Maskeli hipertansiyonu olanların önemli bir bölümünde iş stresi bulunduğu da unutulmamalıdır. Şüphelenilen bireylerde kan basıncı ev ölçümleri veya ambulatuvar cihazlarla takip edilmelidir. (TEMD Hipertansiyon 2022, Bölüm 1, s. 6)",
+      "trigger": "Maskeli Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-012",
+      "level": "Kılavuz",
+      "title": "Ofis ölçümünde evre sınırları nerede başlar",
+      "content": "Tekrarlanan ölçümlerde, 18 yaş üstü erişkinde hekim tarafından yapılan standart ofis ölçümüyle sistolik 140 mmHg ve üzeri ve/veya diyastolik 90 mmHg ve üzeri hipertansiyon olarak tanımlanır. Normal kan basıncı sistolik 120 mmHg altında ve diyastolik 80 mmHg altındadır. Sistolik 120-139 ve/veya diyastolik 80-89 mmHg artmış kan basıncı kategorisidir. Evre 1 hipertansiyon 140-159 ve/veya 90-99 mmHg, Evre 2 ise 160 mmHg ve üzeri ve/veya 100 mmHg ve üzeridir. Evre 3 hipertansiyon 180 mmHg ve üzeri ve/veya 110 mmHg ve üzeri değerleri tanımlar. (TEMD Hipertansiyon 2022, Bölüm 1, s. 7)",
+      "trigger": "Sınıflandırma"
+    },
+    {
+      "id": "p-temd-ht-013",
+      "level": "Kılavuz",
+      "title": "Gece düşüşü %10'un altındaysa non-dipper",
+      "content": "Kan basıncı sirkadyen ritim gösterir; en yüksek değerlere sabah ulaşır, gün içinde yavaş bir azalma gösterir ve gece boyunca en düşük değerlerde seyreder. Ambulatuvar izlemde gece ölçülen değerin gündüz değerine göre %10 veya daha fazla düşmesi dipper, %10'dan az düşmesi non-dipper hipertansiyon olarak tanımlanmıştır. Non-dipper hastalarda daha yüksek oranda serebrovasküler hastalık ve sol ventrikül kütlesi, kardiyovasküler mortalite ve morbiditede artış gözlenmiştir. İleri yaş, diyabetes mellitus, obezite, obstrüktif uyku apnesi, fazla tuz alımı, ortostatik hipotansiyon, otonomik disfonksiyon ve kronik böbrek yetmezliğinin de non-dipper gelişimiyle ilişkili olduğu bildirilmiştir. (TEMD Hipertansiyon 2022, Bölüm 1, s. 7)",
+      "trigger": "Sınıflandırma"
+    },
+    {
+      "id": "p-temd-ht-014",
+      "level": "Kılavuz",
+      "title": "Asemptomatik organ hasarının sayısal kesim noktaları",
+      "content": "Kan basıncı yüksekliği dışında toplam kardiyovasküler riski artıran asemptomatik organ hasarı göstergeleri sayısal eşiklerle tanımlanmıştır. Nabız basıncının 60 mmHg ve üzerinde olması ve karotis duvar kalınlaşması, yani intima media kalınlığının 0,9 mm ve üzerinde olması bu göstergelerdendir. Ayak bileği-brakiyal indeksin 0,9 altında olması, GFR'nin 60 ml/dk altında olması ve mikroalbüminüri de listede yer alır. Ekokardiyografi veya EKG ile sol ventrikül hipertrofisi varlığı ve ileri retinopati listeyi tamamlar. Risk faktörü olarak sayılan bozulmuş açlık glukozu 100-125 mg/dl, bozulmuş glukoz toleransı ise oral glukoz tolerans testinde 2. saat glukozunun 140-199 mg/dl olmasıdır. (TEMD Hipertansiyon 2022, Bölüm 2, s. 11)",
+      "trigger": "Toplam Kardiyovasküler Risk"
+    },
+    {
+      "id": "p-temd-ht-015",
+      "level": "Kılavuz",
+      "title": "Bel çevresi eşiği seçilen veriye göre değişiyor",
+      "content": "Abdominal obezite bel çevresiyle tanımlanır, ancak eşik kullanılan popülasyon verisine göre değişir. Kılavuz Türkiye için iki ayrı ölçüt verir: TEMD verisine göre erkek 100 cm ve üzeri, kadın 90 cm ve üzeri; TURDEP verisine göre erkek 96 cm ve üzeri, kadın 90 cm ve üzeri. Amerika popülasyonu için ATP-3 ve WHO verisiyle erkek 102 cm, kadın 88 cm sınırları geçerlidir. Avrupa popülasyonu için IDF verisiyle erkek 94 cm, kadın 80 cm verilmiştir. Aynı hastanın abdominal obez sayılıp sayılmayacağı seçilen ölçüte bağlıdır. (TEMD Hipertansiyon 2022, Bölüm 2, s. 11)",
+      "trigger": "Toplam Kardiyovasküler Risk"
+    },
+    {
+      "id": "p-temd-ht-016",
+      "level": "Kılavuz",
+      "title": "SCORE ölüm riskini verir, olay riskini değil",
+      "content": "SCORE sistemi, daha önce bilinen kalp damar hastalığı olmayan kişide 10 yıl içinde görülecek ilk aterosklerotik olaya bağlı ölüm riskini hesaplar. Toplam olay riskini tahmin etmek isteniyorsa erkeklerde bu risk puanının 3 katı, kadınlarda 4 katı alınmalıdır; SCORE ile %5 hesaplanan bir erkekte toplam olay oranı yaklaşık %15'e yükselir. Bu katsayının yaşlılar için biraz daha düşük olduğu belirtilmektedir. Hesaplayıcıda bütün risk faktörleri değil, sadece yaş, cinsiyet, sigara içimi, total kolesterol ve sistolik kan basıncı kullanılır. Hastada aterojenik dislipidemi, obezite veya sedanter yaşam gibi başka risk faktörleri de varsa gerçek riskin hesaplanandan yüksek olacağı unutulmamalıdır. (TEMD Hipertansiyon 2022, Bölüm 2, s. 14)",
+      "trigger": "SCORE Risk Hesaplayıcısı"
+    },
+    {
+      "id": "p-temd-ht-017",
+      "level": "Kılavuz",
+      "title": "SCORE 40 yaş altında ve 65 yaş üstünde yanıltır",
+      "content": "Toplam kardiyovasküler risk hesabı 40 yaş üzerindeki kişiler için planlanmıştır, bu nedenle gençlerde kullanımı sorunludur. Genç kişinin mutlak riski düşük çıkar; bu yanıltıcı bir rahatlamaya ve gerekli tedbirlerin gecikmesine yol açabileceği için kendi yaş grubuna göre görece risk tablosu önerilir. Sigara içmeyen, sistolik kan basıncı 120 mmHg ve total kolesterolü 150 mg/dL veya altında olan gençte risk puanı 1'dir; tablodaki 12 puan ise riskin akranına göre 12 kat fazla olduğu anlamına gelir. Diğer uçta, sigara içmeyen kadınlar hariç tutulursa 65 yaş üzerindekilerin neredeyse tamamı orta ve yüksek risk kategorisinde yer alır; bu nedenle yaşlılarda tek başına SCORE puanına dayanarak risk tahmini yanıltıcı olur. Yaşlılarda agresif tansiyon tedavisi ortostatik hipotansiyona ve düşme, yaralanma, kalça kırığı gibi komplikasyonlara yol açabildiği için tedavi bireyselleştirilmelidir. (TEMD Hipertansiyon 2022, Bölüm 2, s. 16)",
+      "trigger": "SCORE Risk Hesaplayıcısı"
+    },
+    {
+      "id": "p-temd-ht-018",
+      "level": "Kılavuz",
+      "title": "Tek başına kan basıncı yüksek risk kategorisi yaratabilir",
+      "content": "Kardiyovasküler risk kategorileri SCORE puanı ve eşlik eden klinik tablolara göre tanımlanmıştır. SCORE puanı %10 ve üzeri çok yüksek, %5-9 yüksek, 1-4 orta, %1 altı düşük risktir. Puan ne olursa olsun kayıtlı klinik kardiyovasküler hastalık, hedef organ hasarlı diyabet veya ağır böbrek hastalığı, yani eGFR 30 mL/dak/1.73 m2 altı, çok yüksek risk sayılır. Tek bir risk faktörünün belirgin şekilde yükseldiği durumlar yüksek risktir: total kolesterol 310 mg/dL üzeri, LDL kolesterol 190 mg/dL üzeri veya kan basıncı 180/110 mmHg ve üzeri. Yani başka hiçbir faktör olmasa bile kan basıncı düzeyi hastayı yüksek risk kategorisine taşıyabilir. (TEMD Hipertansiyon 2022, Bölüm 2, s. 18)",
+      "trigger": "Kardiyovasküler Risk Kategorileri"
+    },
+    {
+      "id": "p-temd-ht-019",
+      "level": "Kılavuz",
+      "title": "Primer hipertansiyonun yaşa göre üç hemodinamik tipi",
+      "content": "Primer hipertansiyon, çoğunlukla yaşla birlikte değişkenlik gösteren üç hemodinamik alt kategoriye ayrılır. Genç erişkinlerde görülen sistolik hipertansiyon artmış kardiyak debi ve sempatik sinir sistemi aktivasyonu ile karakterizedir ve zamanla diyastolik hipertansiyona sebep olabilir. Orta yaş döneminde, çoğunlukla 30-50 yaş arasında görülen diyastolik hipertansiyonda sistolik basınç normal olabilir ya da birlikte artmış olabilir. İleri yaşlarda izole sistolik hipertansiyon ağırlık kazanır; diyastolik basınç azalır, nabız aralığı artar ve tablo daha çok aortada oluşan sertlik ve dirençle ilişkilidir. Prehipertansif seyreden hastalar özellikle 55 yaş ve sonrasında izole sistolik hipertansiyon tanısı almaktadır. (TEMD Hipertansiyon 2022, Bölüm 3, s. 27)",
+      "trigger": "Primer Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-020",
+      "level": "Kılavuz",
+      "title": "Tuz kısıtlaması tanı konmadan önce başlamalı",
+      "content": "Hipertansiyon patogenezindeki temel faktörlerden biri, böbreğin artmış tuz alımı ile artan sodyum yükünü atma kapasitesindeki azalmadır. Normotansif bireylerde basınç natriürezi plazma hacmindeki artışı normale döndürmeye çalışırken, hipertansiflerde renal tuz atılımı kapasitesi azaldığı için tuz eşiği artar ve atılım ancak daha yüksek kan basıncı düzeylerinde gerçekleşir. Yüksek miktarda tuz alımı yalnızca kan basıncını değil, hipertansif hedef organ hasarını da artırmaktadır. Kılavuz bu nedenle hipertansiyon tanısı konulmadan önce de diyette tuz kısıtlamasına dikkat edilmesini önerir. Düşük doğum ağırlığı ve azalmış nefrogenezde tuz bağımlı hipertansiyon ihtimalinin arttığı belirtilmektedir. (TEMD Hipertansiyon 2022, Bölüm 3, s. 29)",
+      "trigger": "Renal Mekanizmalar"
+    },
+    {
+      "id": "p-temd-ht-021",
+      "level": "Kılavuz",
+      "title": "Sekonder hipertansiyonda taranacak hastayı anamnez seçer",
+      "content": "Sekonder hipertansiyon tüm hipertansiyon olgularının yaklaşık %10-15'ini oluşturur, ancak sıklık toplum özelliklerine göre farklılık gösterebilir. Tüm hastalarda sekonder nedene yönelik inceleme klinik olarak pratik olmadığı ve maliyetli olacağı için seçim anamnez ve fizik muayeneye dayanır. Özellikle otuz yaşından önce tanı alanlar, hipokalemisi olanlar, adrenal adenomu olanlar, dirençli hipertansiyonu olanlar ve kan basıncı kontrolü aniden bozulanlar sorgulanmalıdır. ACE inhibitörü veya ARB kullanımı sonrası kreatinin düzeyinde %30'u aşan ciddi yükselme, ekstremiteler arasında kan basıncı farkı ve kan basıncı düzeyine oranla fazla hedef organ hasarı da uyarıcı bulgulardır. (TEMD Hipertansiyon 2022, Bölüm 4, s. 33)",
+      "trigger": "Sekonder Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-022",
+      "level": "Kılavuz",
+      "title": "Normokalemi primer hiperaldosteronizmi dışlamaz",
+      "content": "Primer hiperaldosteronizm endokrin hipertansiyonun en sık nedenidir; hipertansif hastalarda sıklığı çoğunlukla %5-10 arasında bildirilir, dirençli hipertansiyonda %20'lere kadar yükselir. Hastaların sadece %30'undan daha azında hipokalemi vardır, yani potasyumun normal olması tanıyı dışlamaz. Kan basıncı 150/100 mmHg ve üzerinde seyredenler, dirençli hipertansiyonu olanlar, diüretikle indüklenmiş olsa dahi hipokalemisi olanlar, adrenal insidentaloması, uyku apnesi veya ailesinde primer hiperaldosteronizm ya da erken hipertansiyon öyküsü bulunanlar araştırılmalıdır. Yapısal kalp hastalığı veya tirotoksikoz gibi başka bir sebeple açıklanamayan atriyal fibrilasyonu olan hipertansifler de bu gruptadır. Bir görüşe göre maliyet ve çalışma koşulları da dikkate alınarak tüm hipertansiyon hastaları bir kez taranmalıdır. (TEMD Hipertansiyon 2022, Bölüm 4, s. 39)",
+      "trigger": "Primer Hiperaldosteronizm"
+    },
+    {
+      "id": "p-temd-ht-023",
+      "level": "Kılavuz",
+      "title": "Aldosteron-renin örneği sabah, oturur ve potasyum düzeltilmiş alınır",
+      "content": "Tarama testi olarak plazma aldosteron konsantrasyonu ve plazma renin aktivitesi bakılması sıkça önerilir; örnek çoğunlukla sabah saat 08:00-10:00 arasında, ambulatuvar hastada oturur pozisyonda alınmalıdır. Hipokalemi mevcutsa test öncesi mutlaka düzeltilmelidir. PAK/PRA oranının 20-40 arasında olması primer hiperaldosteronizm lehine değerlendirilmekle birlikte çoğunlukla 20'nin üstü anlamlı kabul edilir. PAK 10 ng/dL ve üzerinde, PRA 1 ng/mL/st altında veya plazma renin konsantrasyonu alt sınırın altında ise hasta bu tanı açısından değerlendirilmelidir. ACE inhibitörü ya da ARB kullanırken reninin baskılı çıkması tanıyı kuvvetle düşündürür; renin normalse ve klinik şüphe sürüyorsa ilaçlar renin ve aldosterona etkisi en az olan kalsiyum kanal blokerleri ve alfa-1 adrenerjik reseptör blokerleriyle değiştirilip test tekrarlanmalıdır. (TEMD Hipertansiyon 2022, Bölüm 4, s. 39)",
+      "trigger": "Primer Hiperaldosteronizm"
+    },
+    {
+      "id": "p-temd-ht-024",
+      "level": "Kılavuz",
+      "title": "Doğrulama testinin tek sorusu: aldosteron baskılanıyor mu",
+      "content": "Doğrulama testleri plazma volümünü artırarak aldosteronun baskılanıp baskılanmadığını gösterir; primer hiperaldosteronizmde sekresyon otonom olduğu için supresyon sağlanmaz. En yaygın kullanılan intravenöz serum fizyolojik yükleme testinde yatar pozisyonda 4 saatte 2 litre sıvı verilir; normal bireylerde aldosteron 5 ng/dl altına iner, hastalıkta 10 ng/dl üzerinde izlenir, 5-10 ng/dl arası şüphe uyandırıcıdır. Oral tuz yüklemede 3 gün boyunca günlük 6 gr sodyum klorür içeren diyet verilir, 3. günde 24 saatlik idrarda aldosteron atılımının 12-14 μg/24st üzerinde olması tanıyı doğrular, 10 μg/24st altında olması ekarte eder. İdrarda 200 mEq ve üzeri sodyum atılımı diyete uyumu gösterir. Spontan hipokalemisi olup PAK 20 ng/dl üzerinde ve renini baskılı olan hastalarda doğrulama testi yapılmayabilir. (TEMD Hipertansiyon 2022, Bölüm 4, s. 40)",
+      "trigger": "Primer Hiperaldosteronizm"
+    },
+    {
+      "id": "p-temd-ht-025",
+      "level": "Kılavuz",
+      "title": "Adrenal venöz örneklemeden 6 hafta önce spironolaktonu kes",
+      "content": "Tanı doğrulandıktan sonra tedavi protokolleri farklı olduğu için adenom, tek taraflı hiperplazi ve bilateral hastalık ayrımı yapılmalıdır; bu aşamada yapılması gereken, kontrendikasyon yoksa adrenal tomografi ile görüntülemedir, ayrımın yapılabilmesi için ise adrenal venöz örnekleme önerilmektedir. Örnekleme öncesi hipokalemi mutlak düzeltilmeli, mineralokortikoid reseptör antagonistleri işlemden 6 hafta önce kesilmelidir. Kanülasyonun doğruluğu selektivite indeksiyle denetlenir: ACTH uyarısı yapılmadığında 2'nin, ACTH ile uyarıda 3'ün üzerinde değer doğru kanülasyonu düşündürür. Lateralizasyon indeksi 4 ve üzerinde ise tek taraflı, 3 ve altında ise bilateral aldosteron sekresyonuna işaret eder. 35 yaşın altında, tek taraflı 10 mm üzeri adrenal adenomu olan, PAK 30 ng/dl üstünde ve karşı adrenal bezi normal olan hastalarda örnekleme yapılmadan cerrahi kararı alınabilir. (TEMD Hipertansiyon 2022, Bölüm 4, s. 41)",
+      "trigger": "Primer Hiperaldosteronizm"
+    },
+    {
+      "id": "p-temd-ht-026",
+      "level": "Kılavuz",
+      "title": "Adrenalektomi her hastayı kürlemez, ameliyat sonrası bir ay haftalık izle",
+      "content": "Tek taraflı adrenal hiperplazi ve aldosteron salgılayan adenomda tek taraflı adrenalektomi önerilir; operasyon öncesi hipokalemi düzeltilmeli ve kan basıncı regülasyonu sağlanmalıdır. Ameliyat edilen hastaların %50-60'ında hipertansiyonda kür tespit edilmiştir; kür sağlanamasa bile kan basıncı ve aldosteron düzeyindeki azalma uzun vadede değerlidir. Ameliyat sonrası hastalar hiperkalemi ve renal fonksiyonlar açısından en azından bir ay süreyle haftalık takip edilmelidir. Bilateral hastalıkta tedavi mineralokortikoid reseptör antagonistleridir: spironolakton çoğunlukla 12,5-25 mg başlanıp potasyum ve kan basıncına göre titre edilir, 400 mg/güne kadar artırılabilir. Eplerenon günde 2 kez 25 mg başlanır; hipertansiyon için önerilen en yüksek doz 100 mg/gün iken primer hiperaldosteronizmde 200-300 mg/gün gerekebilir ve özellikle ilk 4-6 hafta potasyum, kreatinin ve kan basıncı izlenmelidir. (TEMD Hipertansiyon 2022, Bölüm 4, s. 42)",
+      "trigger": "Primer Hiperaldosteronizm"
+    },
+    {
+      "id": "p-temd-ht-027",
+      "level": "Kılavuz",
+      "title": "İnsidental adrenal kitlenin yüzde beşi feokromositoma çıkar",
+      "content": "Feokromositoma ve paragangliomalı hastaların %95'inde hipertansiyon görülür, %5 kadarı normotansif seyredebilir. Noradrenalin salgılayanlarda sürekli hipertansiyon daha sık görülürken, adrenalin salgılayanlarda daha sıklıkla labil ve paroksismal hipertansiyon gözlenir. Başağrısı, terleme ve palpitasyon üçlüsüne hipertansiyonun eşlik ettiği hastalar, beta bloker gibi ilaçlara paradoksal kan basıncı yanıtı verenler, ortostatik hipotansiyonu olanlar ve 40 yaş altında sekonder hipertansiyon nedenleri araştırılanlar değerlendirilmelidir. Görüntülemelerde insidental saptanan adrenal kitlelerin yaklaşık %5 kadarı feokromositoma çıkabildiği için bu hastaların tümü araştırılmalıdır. Multipl endokrin neoplazi tip 2, von Hippel-Lindau sendromu ve nörofibromatozis tip 1 taşıyan hastalar da araştırılması gereken gruptadır. (TEMD Hipertansiyon 2022, Bölüm 4, s. 45)",
+      "trigger": "Feokromositoma / Paraganglioma"
+    },
+    {
+      "id": "p-temd-ht-028",
+      "level": "Kılavuz",
+      "title": "Metanefrin normalin üç katını aşarsa doğrudan görüntülemeye geç",
+      "content": "İlk aşamada 24 saatlik idrar metanefrin düzeyi veya plazma serbest metanefrin düzeyi istenir; plazma ölçümü için sırtüstü yatarken kan alınması önerilir. Plazma metanefrin ölçümünün duyarlılığı %89,5-100 arasında değişirken özgüllüğü %79,4-97,6'dır; idrar metanefrininin duyarlılığı %85,7-97,1, özgüllüğü %68,6-95,1 arasındadır. Plazma metanefrini daha üstün belirtilmekle birlikte idrar metanefrin düzeyinde yalancı pozitiflik daha azdır. Plazma metanefrininin normalin 3-4 katından fazla bulunması yüksek olasılıkla tümör varlığına işaret eder; bu durumda ilave laboratuvar testine gerek duyulmaksızın görüntüleme ile yer aranmalıdır. Düzeyi normalin 3 katının altında kalan hastalar için klonidin testi gibi ileri testler planlanabilir. (TEMD Hipertansiyon 2022, Bölüm 4, s. 46)",
+      "trigger": "Feokromositoma / Paraganglioma"
+    },
+    {
+      "id": "p-temd-ht-029",
+      "level": "Kılavuz",
+      "title": "Klonidin testi: beta bloker en az 48 saat önce kesilir",
+      "content": "Klonidin bir alfa-2 adrenoreseptör agonistidir; feokromositoma olmayan bireylerde nöronal norepinefrin salınımını inhibe ederken tümörün otonom katekolamin salgısını inhibe edemez. Test öncesinde sempatolitik aktivitesi olabilecek beta bloker gibi ilaçlar en az 48 saat önce kesilir. Birey sırtüstü yatırılır; tansiyon değerleri 110/60 mmHg altındaysa veya volüm kaybı bulunuyorsa test yapılmaz. Kan basıncı ve kalp hızı test öncesinde ve test esnasında düzenli ölçülür, klonidin verildikten 3 saat sonra ikinci kan örneği alınır. Üçüncü saatin sonunda alınan normetanefrin düzeyi başlangıca göre %40'tan daha az azalmış ise sonuç feokromositoma ile uyumlu kabul edilir. (TEMD Hipertansiyon 2022, Bölüm 4, s. 46)",
+      "trigger": "Feokromositoma / Paraganglioma"
+    },
+    {
+      "id": "p-temd-ht-030",
+      "level": "Kılavuz",
+      "title": "Alfa blokaj tamamlanmadan verilen beta bloker krizi tetikler",
+      "content": "Cerrahiye hazırlıkta hedef kan basıncı ve kalp hızının kontrol altına alınmasıdır. Fenoksibenzamin oral 2x10 mg başlanır, kan basıncı izlemine göre 2-3 günde bir 10-20 mg artırılır; günlük ortalama doz 20-100 mg, maksimum doz günde 3 kez bölünmüş dozlarda 1 mg/kg'dır ve tedaviye cerrahiden 7-10 gün kadar önce başlanır. Ortostatik hipotansiyondan kaçınmak için kalp ve böbrek yetmezliği yoksa günlük 5 gr üzerinde oral tuz tüketimi önerilir. Beta blokerler ilk tercih edilecek ilaç grubu değildir; yeterli alfa blokaj yapılmadan verilirse vazodilatör beta-2 reseptörleri bloke olacağı için norepinefrin yüksekliğine bağlı hipertansif kriz başlayabilir. Taşikardi ve aritmi varsa yeterli alfa blokaj sonrasında, ikinci veya üçüncü günde beta bloker başlanır; örneğin propranolol 3-4x10 mg başlanıp günlük 60 mg doza kadar çıkılır ve hedef kalp hızı 60-80 vuru/dk'dır. Uzun süreli katekolamin fazlalığına bağlı kardiyomiyopati gelişmiş hastalarda beta bloker ile akut pulmoner ödem gelişebileceğinden, kullanım gerekliyse çok düşük dozlarla başlanmalıdır. (TEMD Hipertansiyon 2022, Bölüm 4, s. 48)",
+      "trigger": "Feokromositoma / Paraganglioma"
+    },
+    {
+      "id": "p-temd-ht-031",
+      "level": "Kılavuz",
+      "title": "Hipertansiyonla gelen genç kadında primer amenore varsa 17-alfa hidroksilaz",
+      "content": "Konjenital adrenal hiperplazilerden 17-alfa hidroksilaz ve 11-beta hidroksilaz eksikliğinde fazla miktarda mineralokortikoid üretimine bağlı hipertansiyon görülür. 17-alfa hidroksilaz eksikliğinde kortizol ve androjen sentezi azalır, deoksikortikosteron ve kortikosteron yapımı artar; kortikosteronun glukokortikoid aktivitesi olduğu için kortizol oldukça düşük olmasına karşın adrenal yetmezlik kliniği görülmez. Özellikle genç erişkin yaşta hipertansiyonla gelen hastada primer amenore, aksiller ve pubik kıllarda azalma ve hipokalemi saptanırsa bu eksiklik akla getirilmelidir. 11-beta hidroksilaz eksikliğinde ise artan androjen sentezine bağlı hirşutizm, ambigius genitale ve puberte prekoks görülebilir; vakaların 2/3'ünden fazlasında klasik tip konjenital adrenal hiperplazi bulunur. Tedavide glukokortikoid replasmanı ile mineralokortikoid öncülleri azaltılır; replasmana rağmen hipertansif seyreden vakalarda mineralokortikoid reseptör antagonistleri veya kalsiyum kanal blokörlerinin eklenmesi önerilir. (TEMD Hipertansiyon 2022, Bölüm 4, s. 53)",
+      "trigger": "Konjenital Adrenal Hiperplazi"
+    },
+    {
+      "id": "p-temd-ht-032",
+      "level": "Kılavuz",
+      "title": "Tedavi edilmemiş aşikar hipotiroidide beta blokerden kaçın",
+      "content": "Taşikardi ve artmış nabız basıncı saptanan hipertansif vakalarda hipertiroidi akla gelmelidir; tedavide ilk hedef antitiroid tedavilerle ötiroidizmin sağlanmasıdır ve tiroid testleri normalleşene kadar periferik T4'ten T3'e dönüşümü de bloke etmek için öncelikle selektif olmayan beta blokerler tercih edilir. Tiroid krizine bağlı hipertansiyonda propranolol 60-80 mg 6 saatte bir, atenolol 50-200 mg/gün, metoprolol 100-200 mg/gün, nadolol 40-80 mg/gün veya esmolol 50-100 µg/kg/dak intravenöz kullanılabilir. Hipotiroidizmde tablo hafif hipertansiyon, daralmış nabız basıncı ve en yaygın bulgu olarak bradikardidir; aşikar hipotiroidili hastaların yaklaşık %30'unda yüksek diyastolik kan basıncı vardır. Bradikardi riski nedeniyle tedavi edilmemiş aşikar hipotiroidizmde beta bloker, mutlak endikasyon gerektiren başka tıbbi durumlar haricinde tercih edilmemelidir. Hipotiroidisi kontrol altında olmayan ve replasmana uyumsuz özellikle yaşlı hastalarda diüretikler hipotiroidi komasını tetikleyebileceğinden zorunlu olmadıkça kaçınılmalıdır. (TEMD Hipertansiyon 2022, Bölüm 4, s. 54)",
+      "trigger": "Hipertiroidi ve Hipotiroidi"
+    },
+    {
+      "id": "p-temd-ht-033",
+      "level": "Kılavuz",
+      "title": "Primer hiperparatiroidide tiyazid kullanılıyorsa kesilmeli",
+      "content": "Primer hiperparatiroidili hastalarda hipertansiyon prevalansı %40-65 arasında değişmektedir. Antihipertansif tedavide dikkat edilecek en önemli nokta tiyazid grubu diüretiklerin tercih edilmemesidir: tiyazidler böbrekte proksimal ve distal tübüllerde kalsiyum geri emilimini artırarak hiperkalsemi derecesini ağırlaştırabilir. Antihipertansif tedavi alan bu hastalarda tiyazid kullanılıyorsa kesilmelidir. Paratiroidektomi sonrası yaklaşık %25-30 vakada hipertansiyonda iyileşme gözlenir; paratiroidektomi endikasyonu olan uygun hastalarda kan basıncı kontrolüne olumlu etkisi de dikkate alınarak cerrahi önerilebilir. Cerrahiye uygun olmayan vakalarda ve ameliyata kadar geçen sürede, serum kalsiyumunu düşürücü etkileri nedeniyle yeterli hidrasyonla birlikte loop diüretikler başta olmak üzere hastanın klinik durumuna uygun ilaç seçilmelidir. (TEMD Hipertansiyon 2022, Bölüm 4, s. 55)",
+      "trigger": "Hiperparatiroidizm"
+    },
+    {
+      "id": "p-temd-ht-034",
+      "level": "Kılavuz",
+      "title": "Akromegalide biyokimyasal kontrolü bekleme, hipertansiyonu hemen tedavi et",
+      "content": "Hipertansiyon akromegalinin en sık görülen komplikasyonlarından biridir; kohortlarda sıklığı %15-60 arasında bildirilmiştir. Tablo yüksek diyastolik kan basıncı ve yüksek non dipper hipertansiyon sıklığı ile karakterizedir. Henüz yeterli kanıt bulunmadığı için hastalığın spesifik tedavisi ve biyokimyasal kontrol düzeyine bakılmaksızın hipertansiyonun erken ve acil tedavisi şiddetle tavsiye edilmektedir. Akromegalide hipertansiyon orta düzeydedir; tiyazid tipi diüretikler, ACE inhibitörleri, anjiyotensin II reseptör blokerleri, kalsiyum kanal blokerleri ve hatta amilorid gibi ajanlarla standart tedavi genellikle önerilir, mümkünse ilk basamak tedavinin ACE inhibitörü ya da ARB'den oluşması önerilir. Akromegali tedavisinde kullanılan somatostatin analogları kalsiyum kanal blokörü, beta blokör ve sıvı elektrolit dengesini düzenleyen ajanların emiliminde değişiklik yaptığı için birlikte kullanımda yakın takip ve doz ayarı gerekir. (TEMD Hipertansiyon 2022, Bölüm 4, s. 56)",
+      "trigger": "Akromegali"
+    },
+    {
+      "id": "p-temd-ht-035",
+      "level": "Kılavuz",
+      "title": "Küratif cerrahiden sonra da hipertansiyon sürebilir",
+      "content": "Cushing hastalığı tanısı alan erişkinlerin %85'inde hipertansiyon gözlenir ve hipertansiyon, kilo alımından sonra en sık görülen ikinci klinik bulgudur. Kortizolün sirkadiyen ritmindeki bozulma fizyolojik noktürnal dipping bozulması ile ilişkilidir. ACTH salgılayan hipofiz adenomunun transsfenoidal rezeksiyonu ilk tedavi seçeneğidir; küratif cerrahiden sonra kan basıncı düşer ancak yetişkin hastaların kabaca üçte birinde sistolik, dörtte üçünde diyastolik hipertansiyon devam eder. Ameliyat öncesi hipertansiyonun süresi ile ameliyat sonrası kalıcılık arasında pozitif korelasyon saptanmıştır; daha genç yaş ve ameliyat öncesi daha düşük vücut kitle indeksi remisyonu öngörür. Bazı otörler kardiyoprotektif etki için ilk basamakta ACE inhibitörleri ve sartanları önermiştir; spironolakton hipokalemiyi kontrol etmek ve kan basıncını düşürmek için üçüncü basamak ilaç olarak tercih edilebilirken tiyazid ve furosemid grubundan kaçınılmalıdır. (TEMD Hipertansiyon 2022, Bölüm 4, s. 57)",
+      "trigger": "Cushing Hastalığı"
+    },
+    {
+      "id": "p-temd-ht-036",
+      "level": "Kılavuz",
+      "title": "NSAİİ hipertansifte sistolik basıncı 14 mmHg'ye kadar yükseltir",
+      "content": "İlaçlara ve uyuşturucu madde kullanımına bağlı hipertansiyon, sekonder nedenlerin yaklaşık %2-4'ünü oluşturan küçük bir bölümdür. NSAİİ kullanımının sistolik kan basıncını ortalama 5 mmHg, hipertansiyonu olanlarda 14 mmHg'ye kadar artırdığı gösterilmiştir; yükselme birincil olarak volüm retansiyonuna bağlıdır ve altta kronik böbrek hastalığı olanlarda daha şiddetli olabilir. En etkili yöntem NSAİİ alımının kesilmesidir; kesilemiyorsa mümkün olan en düşük dozda ve en kısa sürede kullanılmalı, kronik tedavi gerekiyorsa nabumeton, selekoksib, sulindak, diklofenak gibi hipertansiyona neden olma ihtimali daha düşük olanlar seçilebilir. NSAİİ'ların ACE inhibitörü, ARB ve beta blokerlerin etkisini azaltabileceği akılda tutulmalıdır. Glukokortikoid kullanan hastaların yaklaşık %20'sinde hipertansiyon gelişir; bir Amerikan kohortunda 60 günden uzun kullanımın riski belirgin olarak artırdığı görülmüştür. (TEMD Hipertansiyon 2022, Bölüm 4, s. 59)",
+      "trigger": "İlaçlara Bağlı Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-037",
+      "level": "Kılavuz",
+      "title": "Bilateral renal arter darlığında ACE inhibitörü böbreği durdurabilir",
+      "content": "Hafif hipertansiyonlu hastalarda renovasküler hipertansiyon %1'den az görülürken, akut, ağır veya refrakter hipertansiyonu olan olgularda %10 civarındadır; vakaların %80'e kadar varan büyük çoğunluğunu unilateral hastalık oluşturur. Ateroskleroza bağlı renal arter darlığı 45 yaş üstü hastalarda ve özellikle erkeklerde, fibromüsküler displazi ise 50 yaş altı kadınlarda daha sıktır. Kan basıncının birkaç hafta ya da birkaç ay içinde akut yükselmesi, ACE inhibitörü veya ARB ile bazal değerlere göre en az %30 kreatinin artışı, iki böbrek boyutu arasında en az 1,5 cm fark, tekrarlayan akciğer ödemi veya tedaviye dirençli kalp yetmezliği ve 55 yaş sonrası yeni başlayan evre II hipertansiyon şüphe uyandırmalıdır. Bilateral hastalıkta ya da soliter fonksiyone böbreğin renal arterinde darlıkta ACE inhibitörleri ve ARB'ler otoregülasyonu bozarak akut böbrek yetmezliğine neden olabilir. (TEMD Hipertansiyon 2022, Bölüm 4, s. 66)",
+      "trigger": "Renovasküler Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-038",
+      "level": "Kılavuz",
+      "title": "Doppler'de 200 cm/saniye renal arterde ciddi darlığı işaret eder",
+      "content": "Tanıya yaklaşımda ilk önerilen renal doppler ultrasonografidir; altın standart test ise renal anjiyografidir. Doppler'de 200 cm/saniye üzeri pik sistolik velosite renal arterde %60 üzeri darlığı düşündürür, bazı yazarlar 300 cm/saniye üzerini hemodinamik açıdan önemli bir eşik kabul eder; pik sistolik velositenin tanı duyarlılığı %85, özgüllüğü %92'dir. BT anjiyografi veya MR anjiyografide bir ya da her iki renal arterde %75 ve üzeri darlık, ya da en az %50 darlıkla birlikte post-stenotik dilatasyon görülmesi renovasküler hipertansiyonu düşündürür. Bu iki yöntemde sensitivite %22-28 arasında olduğu için stenotik lezyon renal parenkim içinde yerleşikse yalancı negatif sonuç verebilir; fibromüsküler displazi distal arterleri tuttuğundan doppler de güvenli bilgi vermeyebilir. Renal rezistif indeksi %80 ve üzerinde olan hastalarda böbrek fonksiyonu, kan basıncı ve diyaliz gereksinimi açısından prognoz daha kötüdür ve revaskülarizasyon sonrası klinik düzelme sınırlı olur. (TEMD Hipertansiyon 2022, Bölüm 4, s. 67)",
+      "trigger": "Renovasküler Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-039",
+      "level": "Kılavuz",
+      "title": "Koarktasyonda tek koldan ölçüm tanıyı kaçırtır",
+      "content": "Aort koarktasyonunun tipik bulguları üst ekstremitelerde hipertansiyon, alt ekstremitelerde kan basıncının düşük ya da ölçülemez olması ve femoral nabızlarda azalma veya gecikmedir. Bu yüzden bilateral brakiyal ve alt ekstremite kan basınçları ölçülmeli, brakiyal ve femoral nabızlar eş zamanlı palpe edilmelidir. Sol subklavyen arterin çıkışı koarktasyonun hemen distalinde olan az sayıda hastada sol brakiyal nabız da azalır; böyle bir hastada alt ekstremite kan basıncını sadece sol koldaki değerle karşılaştırmak tanıda yanıltıcı olur. Vakaların yaklaşık %3-4'ünde her iki subklavyen arter de koarktasyonun distalinden kaynaklanır ve dört ekstremitede kan basıncı eşit derecede azalmış bulunur; eşlik eden kollateral yapılar varsa fark daha az belirgin olabilir. Tanı alan kadınların yaklaşık %5-15'inde altta yatan Turner sendromu bulunduğu için karyotip analizi yapılmalıdır. Üst ve alt ekstremite arasındaki sistolik fark olarak hesaplanan gradyan 20 mmHg'yi aşıyorsa, belirgin kollateral dolaşım varsa ya da koarktasyona atfedilebilen hipertansiyon veya kalp yetmezliği varsa cerrahi ya da transkateter stent uygulanmalıdır. (TEMD Hipertansiyon 2022, Bölüm 4, s. 70)",
+      "trigger": "Aort Koarktasyonu"
+    },
+    {
+      "id": "p-temd-ht-040",
+      "level": "Kılavuz",
+      "title": "Dirençli hipertansiyonun en sık sekonder nedeni uyku apnesi",
+      "content": "Obstrüktif uyku apnesi tanısı için apne/hipopne indeksinin 5'in üzerinde olması gerekir; hastalık hafif (5-15), orta (15-30) ve şiddetli (30 veya daha fazla) olarak sınıflandırılır. Bu hastaların yaklaşık %50'sinde hipertansiyon mevcuttur ve özellikle dirençli hipertansiyonu olanlarda uyku apnesi sıklığı %85'e kadar çıkar. Dirençli hipertansiyonu olan 125 hastalık bir kohort çalışmasında en sık sekonder neden %65 ile uyku apnesi olarak saptanmış; primer hiperaldosteronizm %5,6, renal arter darlığı %2,4, renal parankim hastalığı %1,6 oranında bulunmuştur. Uyku sırasında kan basıncının yükselmesi ve olması gereken dip noktaların azalması, normotansif hastalarda bile altta yatan uyku apnesi olasılığını artırır. 2019 yılında Amerikan Kalp Derneği, apne/hipopne indeksi 30 ve üzerindeki şiddetli uyku apnesinin kardiyovasküler mortalite riskini 2,73 kat artırdığını bildirmiştir. (TEMD Hipertansiyon 2022, Bölüm 4, s. 72)",
+      "trigger": "Obstrüktif Uyku Apne Sendromu"
+    },
+    {
+      "id": "p-temd-ht-041",
+      "level": "Kılavuz",
+      "title": "Hipotansiyonda tek eşik yok: 90/60 mu, 110/100 mü",
+      "content": "Kılavuz, hangi değerlerin hipotansiyon sayılacağı konusunda ortak bir görüş olmadığını belirtir. Dünya Sağlık Örgütü, diyastolikten bağımsız olarak sistolik basıncın erkeklerde 110 mmHg, kadınlarda 100 mmHg altında olmasını hipotansiyon kabul eder. Hipotansiyon, arteriyel kan basıncının 90/60 mmHg altına düşmesi olarak da tanımlanmıştır; TEMD önerisi bu sınırı benimser. Herhangi bir nedenle sistolik basınçta 40 mmHg ve üzeri düşüş ise rölatif hipotansiyon sayılır. (TEMD Hipertansiyon 2022, Bölüm 5, s. 79)",
+      "trigger": "Hipotansiyon Tanımı"
+    },
+    {
+      "id": "p-temd-ht-042",
+      "level": "Kılavuz",
+      "title": "Yatarken 160'ı geçen hipertansifte ortostatik eşik 30 mmHg",
+      "content": "Klasik ölçüt, ayakta durma ya da baş yukarı eğim sırasında 3 dakika içinde sistolik basınçta en az 20 mmHg, diyastolikte en az 10 mmHg düşmedir; semptom bulunması şart değildir. Hipertansiyonu olanlarda yatay pozisyonda sistolik 160 mmHg ve üzeri ölçüldüyse 30 mmHg düşüş tanı için uygun olabilir. Başlangıçta kan basıncı düşük olanlarda ise ayakta ölçülen sistolik değerin 90 mmHg altına inmesi kullanılabilir. 65 yaşından büyüklerde sıklık %20'lere kadar çıkar, ancak bunların yalnızca %2'si semptomatiktir. (TEMD Hipertansiyon 2022, Bölüm 5, s. 83)",
+      "trigger": "Ortostatik Hipotansiyon"
+    },
+    {
+      "id": "p-temd-ht-043",
+      "level": "Kılavuz",
+      "title": "Ölçüm 3 dakikada biterse erken ve gecikmiş düşüş kaçar",
+      "content": "Erken ortostatik hipotansiyon, ayağa kalkınca ilk 15 saniye içinde sistolikte 40 mmHg veya diyastolikte 20 mmHg geçici düşüş olarak tanımlanır. Gecikmiş biçimde hemodinamik değişiklikler ayağa kalktıktan 3 dakika sonra ortaya çıkar ve hafif ya da erken bir otonomik disfonksiyonu temsil edebilir. Kılavuz gecikmiş biçimin vazodepresif tip nöral aracılı senkop ile karıştırılabileceğini belirtir. Normal yanıtta ise kompansatuvar mekanizmalar sistolikte 5 ila 10 mmHg düşüş, diyastolikte 5 ila 10 mmHg artış yapar. (TEMD Hipertansiyon 2022, Bölüm 5, s. 83)",
+      "trigger": "Ortostatik Hipotansiyon"
+    },
+    {
+      "id": "p-temd-ht-044",
+      "level": "Kılavuz",
+      "title": "Oturarak ölçtüysen ortostatik eşik 20/10 değil 15/7",
+      "content": "İlk değerlendirme, hasta en az 5 dakika sırtüstü yattıktan sonra aynı pozisyonda ve ayağa kalkışın birinci ile üçüncü dakikasında kan basıncı ve kalp hızı ölçümünü içermelidir. Ayaktan başvuran hastada yatar ölçüm pratik olmadığından oturma ve ayakta ölçüm alternatif bir yaklaşımdır; bu testte yer çekimsel stres daha az olduğu için tanısal eşik sistolikte 15 mmHg, diyastolikte 7 mmHg'dan daha çok azalmadır. Gece basınç natriürezi nedeniyle sabah erken saatler ölçüm için en hassas ve tutarlı zamandır. Eğik masa testi de tanı koydurur, ancak özellikle yaşlı hastalarda vazovagal reaksiyonlar nedeniyle yanlış pozitif verebilir. (TEMD Hipertansiyon 2022, Bölüm 5, s. 84)",
+      "trigger": "Ortostatik Hipotansiyon"
+    },
+    {
+      "id": "p-temd-ht-045",
+      "level": "Kılavuz",
+      "title": "Ortostatik hipotansiyonu olanların çoğu hipertansif",
+      "content": "Ortostatik hipotansiyon hastalarının yaklaşık %70'inde hipertansiyon bulunur; hipertansiflerin ise %10'unda ortostatik hipotansiyon görülür. Ortostatik hipotansiyonu olan hipertansif hastalarda sistolik düşüş daha yüksek inme, diyastolik düşüş daha yüksek miyokard infarktüsü riski ile ilişkili bulunmuştur. 1979'da yayımlanan bir çalışmada diyastolik basıncı 90 mmHg altına indirmek, 100-109 mmHg aralığına kıyasla infarktüs riskini beş kat artırmış; bu gözlem J-eğrisi fenomeni kavramını doğurmuştur. Üç taneden fazla antihipertansif kullanımı, ileri yaş, kardiyovasküler hastalık ve diyabet öyküsü hipotansiyonun eşlik etme ihtimalini artırır. (TEMD Hipertansiyon 2022, Bölüm 5, s. 81)",
+      "trigger": "Antihipertansif Kullanımı"
+    },
+    {
+      "id": "p-temd-ht-046",
+      "level": "Kılavuz",
+      "title": "Yemekten sonraki iki saat: gözden kaçan hipotansiyon",
+      "content": "Postprandial hipotansiyon, yemekten sonraki 2 saat içinde sistolik basınçta 20 mmHg azalma ya da sistolik 100 mmHg üzerindeyken 90 mmHg altına düşmesi olarak tanımlanır. Senkop ve düşmenin yanı sıra koroner olaylar ve inme gibi ciddi sonuçlara yol açabilir. Diüretik kullanımı, üç taneden fazla ilaç kullanımı, karbonhidrat ağırlıklı beslenme, sıcak yemekler ve kahvaltı öğünü riski artırır. Yemeklerden önce bol su içme, karbonhidrat alımını azaltma, sık ve küçük öğünler, yemekten sonra bir süre oturma önerilir. Kafein, alfa glukozidaz inhibitörleri, guar sakızı ve oktreotid kullanılabilir; ancak kılavuz bu ilaçlar için geniş çalışma bulunmadığını belirtir. (TEMD Hipertansiyon 2022, Bölüm 5, s. 81)",
+      "trigger": "Postprandial Hipotansiyon"
+    },
+    {
+      "id": "p-temd-ht-047",
+      "level": "Kılavuz",
+      "title": "Ortostatik hipotansiyon ilaçlarının ortak bedeli supin hipertansiyon",
+      "content": "Tedavide öncelikle tabloyu ortaya çıkaran ilaç varsa kesilmelidir. Midodrin, plasebo kontrollü çalışmayla kan basıncını artırdığı gösterilen nadir ilaçlardan biridir, ama semptomları giderme üzerine etkinliği sınırlıdır. Droksidopa, Parkinson hastalığı, çoklu sistem atrofisi, saf otonomik bozukluk ve diyabetik olmayan otonom nöropatiye bağlı semptomatik nörojenik ortostatik hipotansiyon için onaylıdır; kılavuz supin hipertansiyon çıkabileceğine dair uyarıyı da aktarır. Fludrokortizon hacim genişletir, supin hipertansiyon ve hipokalemi yapma potansiyeli taşır; desmopressinin etkisi tartışmalıdır ve hiponatremi riski vardır. Piridostigmin yalnızca nörojenik biçimde önerilir, etkisi sınırlıdır. (TEMD Hipertansiyon 2022, Bölüm 5, s. 86)",
+      "trigger": "Hipotansiyon Tedavisi"
+    },
+    {
+      "id": "p-temd-ht-048",
+      "level": "Kılavuz",
+      "title": "Tedavi eşiği 140/90, seksen yaş üstünde 150",
+      "content": "Özel durumlar dışında ilaç tedavisine başlama eşiği, klinikte ölçülen sistolik basıncın 140 mmHg ve üzeri veya diyastolik basıncın 90 mmHg ve üzeri olmasıdır. Yaşı 80 ve üzerinde olanlarda eşik sistolik 150 mmHg'ye çıkar. Yüksek riskli hastalarda sistolik basınç 130 mmHg üzerindeyken de yaşam tarzı değişikliği uygulamasını takiben ilaç başlanabilir. Kılavuz bu süreyi iki yerde farklı yazar: hedefler bölümü altı aylık yaşam tarzı değişikliği derken, farmakolojik tedavi tablosu 130-140 mmHg aralığı için üç-altı aylık süre verir. (TEMD Hipertansiyon 2022, Bölüm 6, s. 91)",
+      "trigger": "Tedaviye Başlama Eşik Değerleri"
+    },
+    {
+      "id": "p-temd-ht-049",
+      "level": "Kılavuz",
+      "title": "Hedef yaşa göre değişir, yüksek risk sayımla belirlenir",
+      "content": "Hedef kan basıncı, 65 yaşın altındaki yüksek riskli hastalar dahil, 120-130/70-80 mmHg'dır. 65 yaşından büyüklerde hedef 130-140/70-80 mmHg olarak verilir. Yüksek risk, 65 yaş altı olgularda sayımla belirlenir: en az 2 majör, ya da en az 1 majör artı 2 minör, ya da majör ölçüt olmaksızın 3 minör ölçüt. Majör ölçütler kronik böbrek hastalığında tahmini filtrasyon hızının 60 mL/dakika altında olması, diabetes mellitus ve koroner arter hastalığıdır. Minör ölçütler sigara kullanımı, 55-65 yaş ve LDL-kolesterolün 130 mg/dL üzerinde olmasıdır. (TEMD Hipertansiyon 2022, Bölüm 6, s. 92)",
+      "trigger": "Hedeflenen Kan Basıncı Değerleri"
+    },
+    {
+      "id": "p-temd-ht-050",
+      "level": "Kılavuz",
+      "title": "Yaşam tarzının kazandırdığı milimetreler: tuz, diyet, egzersiz, kilo",
+      "content": "Tuz kısıtlaması sistolik kan basıncında yaklaşık 5 mmHg, diyastolikte 6 mmHg azalma sağlar. Sağlıklı beslenme, yani DASH uygulaması, hipertansif bireylerde sistolik basınçta 11 mmHg azalma sağlayabilmektedir. Düzenli egzersiz uygulayanlarda sistolikte 5 mmHg, diyastolikte 8 mmHg azalma olur; önerilen, haftada en az 3 gün maksimum kalp hızının %65-75'ini sağlayacak 90-150 dakika yürüme, koşma ya da yüzmedir. Kilolu erişkinlerde her 1 kg azalma sistolik basınçta 5 mmHg azalmaya yol açar. Kılavuz, non-farmakolojik tedavinin yerini tutacak farmakolojik bir tedavi olmadığını ve her aşamada sürdürülmesi gerektiğini vurgular. (TEMD Hipertansiyon 2022, Bölüm 6, s. 93)",
+      "trigger": "Yaşam Tarzı Değişikliği"
+    },
+    {
+      "id": "p-temd-ht-051",
+      "level": "Kılavuz",
+      "title": "Beta bloker sporcuya, tiyazid gut hastasına verilmez",
+      "content": "Tedaviye dört ana gruptan biriyle başlanabilir: tiyazid diüretikler, kalsiyum antagonistleri, ACE inhibitörleri ve ARB'ler. Beta blokerler metabolik sendromu olanlarda, KOAH'ta, diyabet gelişme riski yüksek hastalarda ve sporcu ya da aktif bireylerde tercih edilmemelidir. Tiyazid grubu diüretikler gut hastalığı olanlarda ve gebelerde kullanılmamalı; yüksek dozlarda metabolik sendrom, diyabet ve prediyabetli hastalarda glukoz tolerans bozukluğu yapabileceğinden dikkatli kullanılmalıdır. Kontrendikasyon tablosu ise tiyazidler için yalnızca gutu zorunlu sayar; gebeliği metabolik sendrom ve glukoz intoleransıyla birlikte olası kontrendikasyonlar arasına koyar. Kılavuz, ülkemizdeki kombine ilaçlardaki diüretik dozlarında bu olumsuz etkilerin beklenmediğini yazar. Kan basıncı düşürücü etki 24 saat sürmeli, günde tek doz kullanılan ilaçlar tercih edilmelidir. (TEMD Hipertansiyon 2022, Bölüm 6, s. 95)",
+      "trigger": "Antihipertansif Seçimi"
+    },
+    {
+      "id": "p-temd-ht-052",
+      "level": "Kılavuz",
+      "title": "Hedeften 20/10 uzaktaysan tek ilaçla başlama",
+      "content": "Tanı anında sistolik basınç hedeften 20 mmHg ve üzeri, diyastolik basınç hedeften 10 mmHg ve üzeri yüksekse ya da kan basıncı 140/90 mmHg üzerindeyse tedaviye iki ilaç kombinasyonu ile başlanması önerilir. Tek ajan kullananların %25'inde tedavinin birinci yılında, %40'ında beşinci yılın sonunda kan basıncı yeniden yükselmeye başlar. Tek ilacı maksimum dozda kullanmak yan etki sıklığını artırır; birden çok ilacın daha düşük dozlarının kombinasyonu hem kan basıncını daha iyi düşürür hem yüksek doza bağlı yan etkileri önler. Hasta uyumu açısından tek tablette kombinasyon tercih edilmesi önerilir. (TEMD Hipertansiyon 2022, Bölüm 6, s. 97)",
+      "trigger": "Kombinasyon Tedavisi"
+    },
+    {
+      "id": "p-temd-ht-053",
+      "level": "Kılavuz",
+      "title": "En akılcı ikili: RAAS blokeri artı diüretik ya da KKB",
+      "content": "Kılavuz, RAAS inhibitörü ile diüretik ve RAAS inhibitörü ile kalsiyum kanal blokeri ikililerini özellikle tercih edilenler arasında sayar. Tiyazit tipi diüretik hacmi azaltıp RAAS'ı aktive ettiği için etkinlik zamanla düşer; bir RAAS inhibitörü eklenmesi bunun önüne geçer ve diüretiğe bağlı hipokalemi riskini de azaltır. Sabit doz kombinasyonların çoğunda hidroklorotiyazid bulunmasına rağmen klortalidonun daha etkin olduğu gösterilmiştir. Dihidropiridin grubu kalsiyum blokerinin uyardığı sempatik yanıtı RAAS inhibitörü dengeler ve bu gruba bağlı ödemi kısmen sınırlar. Diyabet ve geçirilmiş kardiyovasküler olay gibi yüksek riskli olgularda ACE inhibitörü ile dihidropiridin ikilisinin, ACE inhibitörü-diüretik ikilisine göre riski belirgin azalttığı gösterilmiştir. (TEMD Hipertansiyon 2022, Bölüm 6, s. 98)",
+      "trigger": "Kombinasyon Tedavisi"
+    },
+    {
+      "id": "p-temd-ht-054",
+      "level": "Kılavuz",
+      "title": "ACE inhibitörü ile ARB'yi birleştirmek boşa çaba",
+      "content": "ACE inhibitörü ile ARB kombinasyonu, ilaçların tek başına kullanımına göre kan basıncını önemli bir oranda düşürmez ve olumlu kardiyovasküler etkisi de yoktur. Santral etkili ilaç ile beta bloker birlikteliği ciddi bradikardi ve kalp bloğu ile sonuçlanabilir, ani kesilmede ribaund hipertansiyon yapar. Beta blokerin verapamil ya da diltiazem gibi non-dihidropiridin kalsiyum blokeriyle kombinasyonu da ciddi bradikardi nedeniyle tercih edilmemelidir. Tek başına beta bloker kullanan hastada ikinci ilaç olarak ACE inhibitörü veya ARB eklemek yetersiz kalır, çünkü beta bloker zaten renin salgısını azaltır; burada kalsiyum blokeri ya da tiyazit grubu diüretik uygun olabilir. Alfa bloker eklenmesi ancak benign prostat hiperplazisi gibi özel bir durum varsa önerilir. (TEMD Hipertansiyon 2022, Bölüm 6, s. 99)",
+      "trigger": "Kombinasyon Tedavisi"
+    },
+    {
+      "id": "p-temd-ht-055",
+      "level": "Kılavuz",
+      "title": "Diyabetlide hedef 140/90, güvenli taban 120/70",
+      "content": "Kılavuz diyabetli hastada kan basıncı hedefinin bireyselleştirilmesini ister. Her hasta için öncelikli hedef 140/90 mmHg altıdır. Kardiyovasküler riski yüksek kişilerde, eğer güvenli biçimde düşürülebiliyorsa 130/80 mmHg altına inmek ek yarar sağlayabilir. Tedavi ile güvenli kan basıncının alt sınırı 120/70 mmHg'dır ve bu düzeyin altına inmekten kaçınılmalıdır. 65 yaş ve üzerindeki hastalarda sistolik basıncın 130-139 mmHg olması yeterli görülür. (TEMD Hipertansiyon 2022, Bölüm 7, s. 107)",
+      "trigger": "Diyabette Kan Basıncı Hedefleri"
+    },
+    {
+      "id": "p-temd-ht-056",
+      "level": "Kılavuz",
+      "title": "Diyabette ilk ilacı albuminüri ve koroner hastalık seçer",
+      "content": "Kan basıncı 160/100 mmHg altındaysa tedaviye tek ilaçla başlanır. Hangi ilacın önce seçileceğini belirleyen en önemli etken albuminüri ve koroner arter hastalığı varlığıdır. İkisi de yoksa ACE inhibitörü, ARB, diüretik ya da dihidropiridin grubu kalsiyum blokerinden herhangi biri seçilebilir; varsa renin-anjiyotensin sistemini bloke eden ACE inhibitörü veya ARB tercih edilmesi önerilir. Başlangıçta kan basıncı 160/100 mmHg ve üzerindeyse ACE inhibitörü ya da ARB ile birlikte diüretik veya kalsiyum blokeri içeren kombinasyon başlanmalıdır. Çeşitli çalışmalarda hipertansif diyabetlilerde hedefe ulaşmak için ortalama 3,2 çeşit ilaç gerektiği gösterilmiştir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 109)",
+      "trigger": "Diyabette Hipertansiyon Tedavisi"
+    },
+    {
+      "id": "p-temd-ht-057",
+      "level": "Kılavuz",
+      "title": "Spironolaktona başlamadan önce hiperaldosteronizmi tara",
+      "content": "Kılavuz diyabetlilerde hipertansiyon tedavisi başlığı altında dirençli hipertansiyonu, biri diüretik olmak koşuluyla üç tip antihipertansif kullanılmasına rağmen kan basıncının 130/80 mmHg ve üzerinde kalması olarak tanımlar; önce tedaviye uyumsuzluk, beyaz önlük hipertansiyonu ve sekonder nedenler dışlanır. Gece 6 saatten az uyuyan veya uyku kalitesi bozuk hastalarda daha sık görülür. Kılavuz, küçük çaplı çalışmalarda uyku süresini 8 saate çıkarmanın sistolik basıncı 6 ayda yaklaşık 30 mmHg düşürdüğünü aktarır. Tedaviye mineralokortikoid reseptör blokeri eklenmesiyle kontrol sağlanabilir, ancak steroid yapıda olanlara başlamadan önce primer hiperaldosteronizm taraması yapılmalıdır. Çünkü hiperaldosteronizme yönelik tarama testleri spironolakton tedavisi altında doğru sonuç vermez. (TEMD Hipertansiyon 2022, Bölüm 7, s. 110)",
+      "trigger": "Dirençli Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-058",
+      "level": "Kılavuz",
+      "title": "Gebelikte tedavi eşiği 150/95, atenolol listede yok",
+      "content": "Kronik hipertansiyonu olan diyabetli gebede optimal kan basıncı hedefi 110-140/80-85 mmHg olarak verilir. Antihipertansif tedavi, sistolik basınç 150 mmHg ve üzeri veya diyastolik basınç 95 mmHg ve üzeri olduğunda başlatılır. ACE inhibitörleri ve ARB'ler fetal hasara yol açabilecekleri için kontrendikedir ve yakında gebelik planlayan kadında kesilmelidir. Metildopa, uzun etkili nifedipin, labetolol, diltiazem, klonidin ve prazosin gebelikte güvenli ve etkili sayılır; gerektiğinde atenolol hariç diğer beta blokerler de kullanılabilir. Kronik diüretik kullanımı maternal plazma hacmini azaltarak utero-plasental perfüzyonu bozabilir; hidralazin acil tedavide kullanılabilir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 111)",
+      "trigger": "Diyabetik Gebelikte Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-059",
+      "level": "Kılavuz",
+      "title": "Laktasyonda metildopa: kılavuz iki karşıt cümle yazıyor",
+      "content": "Tüm antihipertansif ilaçlar anne sütüne geçer, ancak geçiş çok düşük konsantrasyondadır. Kılavuz labetolol, metildopa, uzun etkili nifedipin, enalapril ve kaptoprili laktasyon döneminde kullanılabilir sayar. Aynı paragraf iki adı geri alır: propranolol ve nifedipin anne sütünde maternal plazma ile aynı konsantrasyonda olduğundan mümkünse kullanılmamalı, metildopa ise postpartum depresyonla ilişkili bulunduğu için laktasyonda kullanılmamalıdır. Yani metildopa ve nifedipin iki listede birden geçiyor; geri alınmayan adlar labetolol, enalapril ve kaptopril olarak kalıyor. (TEMD Hipertansiyon 2022, Bölüm 7, s. 111)",
+      "trigger": "Laktasyonda Antihipertansif"
+    },
+    {
+      "id": "p-temd-ht-060",
+      "level": "Kılavuz",
+      "title": "Kontrolsüz hipertansiyonda kombine hap yerine progestin",
+      "content": "Oral kontraseptif kullanımı kan basıncında artışla ilişkilidir ve ilacın kesilmesiyle etki ortadan kalkar. Yükselme, hapın içindeki etinil estradiol konsantrasyonu ile ilişkilidir; düşük doz kombinasyonlarda kan basıncı üzerine etki daha azdır. Kombine haplarda progesteron olarak kullanılan drospirenonun antimineralokortikoid ve diüretik etkisi, östrojenin hipertansif etkisini minimize edebilir. İyi kontrollü ve izlem altındaki hipertansif kadında kullanılacaksa düşük doz kombine oral kontraseptif önerilir. Kontrolsüz hipertansiyonu olup oral kontrasepsiyon planlanan hastada ise yalnızca progestin içeren hap ya da levonorgestrel salan rahim içi araç önerilir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 116)",
+      "trigger": "Kadınlarda Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-061",
+      "level": "Kılavuz",
+      "title": "Gebede ACE inhibitörü ve ARB yasak, güvenli üçlü bellidir",
+      "content": "Gebelikte kan basıncı, gebelikte güvenle kullanılabilecek antihipertansif ilaçlarla düzenlenmelidir. ACE inhibitörleri ve anjiyotensin reseptör blokerleri fetüste büyüme geriliği, oligohidroamnioz ve renal disgenezi gibi malformasyonlar yapabildikleri için kaçınılması gereken ilaçlardır. Labetalol, nifedipin ve metildopa fetüs açısından güvenli kabul edilir. TEMD önerisi de aynı yöndedir: gebelik döneminde ACEI/ARB grubu ilaçlar kullanılmamalıdır. (TEMD Hipertansiyon 2022, Bölüm 7, s. 120)",
+      "trigger": "Gebelikte Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-062",
+      "level": "Kılavuz",
+      "title": "Gebelikte ciddi hipertansiyon 150/95, düşürme kademeli olmalı",
+      "content": "Gebelikte hipertansiyon tanısı için sistolik kan basıncı ≥140 mmHg, diyastolik ≥90 mmHg veya her ikisi birden yeterlidir; sistolik ≥150 mmHg, diyastolik ≥95 mmHg ise ciddi hipertansiyon sayılır. Etyoloji ne olursa olsun ciddi maternal hipertansiyon varlığında derhal farmakolojik tedavi başlanmalıdır. Genel prensip kan basıncını ciddi yüksek aralıktan hafif yüksek aralığa kademeli düşürmektir; böylece ani hipotansiyondan ve uterin arterlerde akımın azalmasından kaçınılmış olur. Akut düşürmede intravenöz labetalol, intravenöz hidralazin veya oral nifedipin kullanılır; bir meta-analizde bu ilaçların birinin diğerine üstünlüğü gösterilmemiştir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 119)",
+      "trigger": "Gebelikte Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-063",
+      "level": "Kılavuz",
+      "title": "Hedef organ hasarı olan gebede hedef 120-140/80-90 mmHg",
+      "content": "Ciddi hipertansiyonu olmayan ama kardiyak veya renal hastalık gibi hedef organ hasarı bulunan gebede, tedaviye başlandıktan sonra kan basıncı 120-140/80-90 mmHg düzeyinde tutulur. Kan basıncını 120/80 mmHg gibi normal bir düzeye düşürmenin maternal fayda sağlayıp sağlamayacağı henüz çözülmemiştir. Amerikan Diyabet Derneği, diyabeti ve hipertansiyonu olan gebelerde hedefi 110-135/85 mmHg olarak belirlemiştir. Hedef organ hasarı olmayan ve güvenli bir tedaviyle kan basıncı kontrol altında olan kadınlarda mevcut tedaviye devam edilmesi önerilir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 120)",
+      "trigger": "Gebelikte Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-064",
+      "level": "Kılavuz",
+      "title": "Proteinüri yoksa preeklampsi dışlanmaz",
+      "content": "Çalışmalar, klinik veya histolojik olarak preeklampsi olan kadınların %10'unda, eklampsi olan kadınların %20'sinde anlamlı düzeyde proteinüri bulunmadığını göstermiştir. Bu nedenle hipertansiyona hedef organ disfonksiyonu belirti ve bulguları eşlik ediyorsa, proteinüri olmasa bile hastaya preeklampsi olarak yaklaşılmalıdır. Hasta yeni başlayan serebral veya görme ile ilgili bozukluklar, epigastrik ya da sağ üst kadran ağrısı yönünden sorgulanmalı, fizik muayenede pulmoner ödem aranmalıdır. Laboratuvarda trombositopeni, karaciğer transaminaz yüksekliği ve kreatinin artışı araştırılmalıdır. Yeni tanı hipertansiyon saptanan gebede beyaz önlük hipertansiyonu da dışlanmalıdır. (TEMD Hipertansiyon 2022, Bölüm 7, s. 123)",
+      "trigger": "Preeklampsi ve Eklampsi"
+    },
+    {
+      "id": "p-temd-ht-065",
+      "level": "Kılavuz",
+      "title": "Yanlış manşon çocukta kan basıncını 30 mmHg saptırır",
+      "content": "Manşon mesanesinin uzunluğu kol çevresinin %80-100'ünü çevrelemeli, genişliği bunun yaklaşık %40'ı kadar olmalıdır. Küçük bir kola takılan büyük manşon, yani çocuğa uygulanan yetişkin manşonu, kan basıncını 30 mmHg'ya kadar düşük hesaplatabilir; büyük bir kola takılan küçük manşon ise 30 mmHg'ya kadar fazla tahmin edebilir. Çocukta oskültasyonlu manuel cihazla ölçüm tercih edilir ve elektronik cihazla saptanan yüksek tansiyon oskültatuar yöntemle doğrulanmalıdır. Olası hipertansiyonda ölçüm en az 2-3 ziyarette, ziyaret başına 2-3 ölçümle yapılmalıdır. (TEMD Hipertansiyon 2022, Bölüm 7, s. 129)",
+      "trigger": "Çocuklarda Kan Basıncı Ölçümü"
+    },
+    {
+      "id": "p-temd-ht-066",
+      "level": "Kılavuz",
+      "title": "Çocukta hedef 95. persentil, böbrek hastasında daha düşük",
+      "content": "Tedavinin amacı kan basıncını bireyin cinsiyetine, yaşına ve boyuna göre 95. persentilin altına düşürmektir. Avrupa kılavuzları, 90-95. persentildeki kan basıncı normal kabul edilmediği için hedefin 90. persentilin altı olmasının muhtemelen daha akıllıca ve daha güvenli olduğunu öne sürmektedir. Kronik böbrek hastalığı, diabetes mellitus veya hipertansiyona bağlı hedef organ hasarı olan çocuklarda hedef 90. persentilin altı olmalıdır. Avrupa kılavuzlarına göre kronik böbrek hastalığı olan çocukta hedef 75. persentilin, proteinüri varlığında 50. persentilin altıdır. (TEMD Hipertansiyon 2022, Bölüm 7, s. 133)",
+      "trigger": "Çocuklarda Hipertansiyon Yönetimi"
+    },
+    {
+      "id": "p-temd-ht-067",
+      "level": "Kılavuz",
+      "title": "Çocukta ilk ilaç monoterapi, bazı gruplarda sınıf elenir",
+      "content": "Çocukta ilk tedavi monoterapi olmalıdır; önerilen seçenekler ACE inhibitörü, anjiyotensin reseptör blokeri ve uzun etkili dihidropiridin kalsiyum kanal blokeridir. Beta bloker alternatif bir seçenektir, ancak çocuklardaki yan etki profili nedeniyle daha az tercih edilir. Siyahi hastalarda ACE inhibitörleri ve ARB'ler ilk basamak ajan olarak önerilmemektedir. Astımlı veya tip 1 ya da tip 2 diyabetli çocuklarda ve yüksek performanslı sporcularda beta blokerler ilk basamak ajan olarak önerilmemektedir. Standart doz monoterapi ile 6 ay boyunca hedefe ulaşılamazsa çocuk pediatrik hipertansiyon uzmanına yönlendirilmelidir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 134)",
+      "trigger": "Çocuklarda Antihipertansif Tedavi"
+    },
+    {
+      "id": "p-temd-ht-068",
+      "level": "Kılavuz",
+      "title": "Çocukta ACE inhibitörü öncesi diüretiği 2-3 gün kes",
+      "content": "ACE inhibitörleri ve ARB'ler güçlü antiproteinürik ve nefroprotektif etkileri nedeniyle kronik nefropati, diabetes mellitus ve kalp yetmezliğinde ilk tercih edilen ilaçlar kabul edilir. Bilateral renal arter stenozunda, tek böbrekli olgularda tek taraflı renal arter stenozunda, şiddetli hiperkalemide ve gebelikte kontrendikedirler. Diüretiklerle tedavi edilen çocukta bu ilaçlar uygulanacaksa, hipotansif bir atağı önlemek için diüretik 2-3 gün süreyle kesilmelidir. En yaygın yan etki kuru öksürük, en şiddetli ancak nadir görüleni anjiyoödemdir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 136)",
+      "trigger": "Çocuklarda Antihipertansif Tedavi"
+    },
+    {
+      "id": "p-temd-ht-069",
+      "level": "Kılavuz",
+      "title": "Yaşlıda tedavi eşiği 65-79 ile 80 yaş üstünde ayrışır",
+      "content": "Türk Hipertansiyon Uzlaşı Raporu 2019'a göre 65-79 yaş grubunda tedavi eşiği ≥140/90 mmHg, önerilen hedef sistolik 130-140 mmHg ve diyastolik 70-80 mmHg'dir. 80 yaş ve üzerindeki hastalarda eşik ≥150 mmHg'ye yükselir. Kılavuzlar birbirinden ayrışıyor: 2017 Amerikan Kardiyoloji Derneği/Amerikan Kalp Birliği 65 yaş ve üzeri için hedefi 130/80 mmHg'nin altı, 2018 Avrupa Kardiyoloji Derneği/Avrupa Kalp Birliği ise 130-139/70-79 mmHg olarak önermiştir. Çok yaşlılarda tedavi hedefleri konusunda tam bir görüş birliği yoktur. (TEMD Hipertansiyon 2022, Bölüm 7, s. 139)",
+      "trigger": "Yaşlılarda Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-070",
+      "level": "Kılavuz",
+      "title": "Yaşlıda loop diüretik, alfa ve beta bloker geri planda",
+      "content": "Yaşlıda ilaç seçimi gençlerle benzerdir, ancak düşme ve kırık riski nedeniyle loop diüretikler ve alfa blokerler gerekli olmadıkça tercih edilmemelidir. Beta blokerler de özellikli bir endikasyon olmadığı sürece kalp bloğu, inme, depresyon ve kognitif kötüleşme riskleri sebebiyle birincil tercih olmamalıdır. Çok yaşlılarda ve kırılganlarda her zaman tek ilaçla ve düşük dozda başlanması, yavaş titre edilmesi ve ortostatik hipotansiyon açısından dikkatli olunması önerilir. Özellikle çok yaşlılarda üçlü ilaç kullanımından mecbur kalınmadıkça kaçınılmalıdır. (TEMD Hipertansiyon 2022, Bölüm 7, s. 140)",
+      "trigger": "Yaşlılarda Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-071",
+      "level": "Kılavuz",
+      "title": "Çok yaşlıda kilo verdirici ve tuzsuz diyet zarar verebilir",
+      "content": "80 yaş ve üzerindekilerde diyet önerirken dikkatli olunmalıdır: kilo verdirici diyetler sarkopeniye; tuzdan fakir diyet malnütrisyon, hiponatremi, ortostatik hipotansiyon ve düşmelere neden olabilir. Egzersiz yeterince yapamasalar da önerilmeli, alkol kısıtlaması sürdürülmelidir. Kan basıncı hedefini belirleyen sadece yaş değil; genel durum, eşlik eden hastalıklar, kullanılan ilaçlar, ortostatik hipotansiyon, kognitif fonksiyon bozukluğu ve kırılganlıktır. Benetos ve arkadaşları 80 yaş üstünde hedef sistolik kan basıncının fonksiyonel durumu kötü veya kırılgan olanlarda 150 mmHg'nin altında, fonksiyonel durumu iyi olanlarda 120-140 mmHg olmasını önermiştir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 140)",
+      "trigger": "Yaşlılarda Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-072",
+      "level": "Kılavuz",
+      "title": "Böbrek hastasında hedefi ve ilk ilacı proteinüri belirler",
+      "content": "Kronik böbrek hastalığında hipertansiyon proteinüri ile birlikte değerlendirilmelidir. Hemen hemen tüm kılavuzlar albuminüri veya proteinüri olmayan hastalarda hedef kan basıncını 140/90 mmHg'nin altı kabul eder; bazı kılavuzlarda albuminüri veya proteinüri varlığında bu hedef 130/80 mmHg'nin altına iner. Yüksek proteinürisi olan hastalarda daha düşük hedefler, yani sistolik kan basıncının 120 mmHg'nin altı, böbrek fonksiyonlarında daha fazla koruma sağlamaktadır. Proteinürik hastada RAAS blokajı sağlayan ilaçlar birinci basamak tedavi ajanı kabul edilir; proteinürisi olmayanlarda tiyazid grubu diüretik, kalsiyum kanal blokeri veya ACE inhibitörü/ARB ilk seçenek olabilir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 143)",
+      "trigger": "Kronik Böbrek Hastalığında Kan Basıncı Hedefleri"
+    },
+    {
+      "id": "p-temd-ht-073",
+      "level": "Kılavuz",
+      "title": "Kreatininde yüzde 30'a varan artışa rağmen renoproteksiyon sürer",
+      "content": "RAAS blokajı sırasında intraglomerüler basınçta azalma olduğu için serum kreatininde yükselme görülebilir. Mevcut rehberler, blokaj başlatıldıktan sonra akut dönemde serum kreatininde %30'a varan bir artış olsa da uzun vadede renoproteksiyon sağlandığını belirtmektedir. Aynı dönemde hiperkalemi ve akut böbrek yetmezliği de gelişebilir. ACE inhibitörleri ile ARB'lerin kombine kullanılması önerilmemektedir; çalışmalarda sonlanımlarda anlamlı azalma olmamış, yan etki insidansında ciddi artış saptanmıştır. Doğrudan renin inhibitörü ilaçların ACE inhibitörleri veya ARB'ler ile kombine kullanılması da önerilmez. İleri dönem böbrek hastalığında RAAS blokajının kullanımı konusunda belirsizlik vardır, çünkü bu hastalar çalışmaların dışında tutulmuştur. (TEMD Hipertansiyon 2022, Bölüm 7, s. 146)",
+      "trigger": "Böbrek Hastalığında RAAS Blokajı"
+    },
+    {
+      "id": "p-temd-ht-074",
+      "level": "Kılavuz",
+      "title": "Tiyazid GFR 30 ml/dk altında az etkili, loop devreye girer",
+      "content": "Volüm yüklenmesi kronik böbrek hastalığında hipertansiyonun ana nedenlerinden biridir; hastaların hemen hepsi kan basıncı hedefine ulaşmak için diüretik kullanmaya gereksinim duyar. Tiyazid diüretiklerinin GFR'si 30 ml/dk'dan düşük hastalarda etkinliği azdır. Loop diüretikler volüm kontrolünde oldukça değerlidir, ancak tübüler fonksiyonları azalmış, düşük eGFR'ye sahip hastalarda sıklıkla daha yüksek dozlar gereklidir. Loop diüretiğin yanı sıra bir tiyazid eklenmesi daha güçlü volüm kontrolü sağlar; burada aşırı sıvı ve elektrolit kaybı yönünden dikkatli olunmalıdır. Spironolakton veya eplerenon dirençli hipertansiyonda ve erken evre böbrek hastalığında etkili bir dördüncü basamak ajandır, ancak hiperkalemi riskini ciddi şekilde artırır. (TEMD Hipertansiyon 2022, Bölüm 7, s. 146)",
+      "trigger": "Böbrek Hastalığında Diüretikler"
+    },
+    {
+      "id": "p-temd-ht-075",
+      "level": "Kılavuz",
+      "title": "Böbrek hastasında en az bir ilacı gece almak daha uygun",
+      "content": "Kronik böbrek hastalarında kan basıncının günlük diürnal ritmi bozulmuştur; çoğu hastada gece beklenen düşme gerçekleşmez, yani hastalar non dipperdır. Bu durum ilaçların alım zamanlamasında göz önüne alınmalıdır. Antihipertansif tedaviye ihtiyaç duyan kronik böbrek hastalarında tüm ilaçları sabah almaktansa, yatmadan önce en azından bir ilacın, diüretik dışındakinin, alınması daha uygun görünmektedir. Bir çalışmada antihipertansif ilaçlar geceleri alındığında daha iyi kan basıncı kontrolü ve daha düşük kardiyovasküler ölüm, miyokard infarktüsü ve inme insidansı bildirilmiştir. Diyaliz hastalarında da intradiyalitik hipotansiyondan kaçınmak için antihipertansif ilaçlar tercihen gece verilir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 148)",
+      "trigger": "Böbrek Hastalığında Kronoterapi"
+    },
+    {
+      "id": "p-temd-ht-076",
+      "level": "Kılavuz",
+      "title": "Tromboliz öncesi 185/110, sonrası 24 saat 185/105",
+      "content": "Trombolitik tedavi için uygun olan akut iskemik inmeli hastada, tedavi uygulanmadan önce antihipertansif tedavi ile sistolik kan basıncı 185 mmHg ve altına, diyastolik kan basıncı 110 mmHg ve altına indirilmelidir. Trombolitik tedaviden sonra en az 24 saat boyunca kan basıncı 185/105 mmHg ve altında tutulmalıdır. Trombolitik tedavi planlanan hastalarda kan basıncını düşürmek için intravenöz nitrogliserin tercih edilmelidir. Bu hastalarda esmolol, furosemid ve kaptopril de seçilebilir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 153)",
+      "trigger": "Akut İskemik İnmede Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-077",
+      "level": "Kılavuz",
+      "title": "Trombolitiksiz inmede 220/120 altında kan basıncına dokunma",
+      "content": "Trombolitik tedavi verilemeyecek akut iskemik inmeli hastada, sistolik 220 mmHg ve diyastolik 120 mmHg aşılmadıkça tedavi önerilmemektedir; istisnalar aktif iskemik koroner hastalık, kalp yetmezliği, aort diseksiyonu, hipertansif ensefalopati, akut böbrek yetmezliği ve preeklampsi/eklampsidir. Bu grupta diyastolik kan basıncı ≥140 mmHg ise labetalol, nikardipin veya nitroprussid önerilir. Tedavi başlanan hastada akut inmeden sonraki ilk 24 saatte kan basıncını dikkatli bir şekilde %15 oranında düşürmek gereklidir. Ekstra ve intrakraniyal büyük arter tıkanıklığı olanlarda düşürme yavaş olmalı, inmeden sonra 7-10 gün içinde yapılmalıdır. İnme öncesinde hipertansiyonu olan hasta nörolojik açıdan stabil ise ve yeni bir risk yoksa, tedavi inmeden 24 saat sonra yeniden başlatılabilir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 153)",
+      "trigger": "Akut İskemik İnmede Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-078",
+      "level": "Kılavuz",
+      "title": "Kanamada sistolik 130 altına inmek iskemi yaratır",
+      "content": "İntraserebral kanamada sistolik kan basıncı 200 mmHg veya ortalama arter basıncı 150 mmHg üzerinde olan hastalarda agresif düşürme hedeflenir; devamlı intravenöz infüzyon kullanılır ve her 5-15 dakikada bir kan basıncı ölçülerek tedavi düzenlenir. Sistolik 180 mmHg veya ortalama arter basıncı 130 mmHg üzerinde olup artmış intrakraniyal basınç bulgusu olmayan hastada düşürme daha ılımlı olmalı; ortalama arter basıncı 110 mmHg ya da hedef kan basıncı 160/90 mmHg olacak şekilde infüzyon verilebilir. Kan basıncı 160/90 mmHg'nin altında ise tedavisiz izlem önerilir. Sistolik basıncı 130 mmHg'nin altına düşürmek iskemiye sebep olarak nörolojik hasarı artırabilir. Nifedipinin sublingual hızlı etkili formları gibi uzamış ve ani düşüş yapan ilaçlardan kaçınılmalıdır. (TEMD Hipertansiyon 2022, Bölüm 7, s. 154)",
+      "trigger": "İntraserebral Kanamada Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-079",
+      "level": "Kılavuz",
+      "title": "Koroner hastada diyastolik 65 mmHg altına indirilmemeli",
+      "content": "Koroner arter hastalığı olan ve kan basıncı ≥140/90 mmHg olan hastalarda tedavinin hedefi kan basıncını 130/80 mmHg'nin altına, yaşlılarda 140/80 mmHg'nin altına düşürmektir. Sistolik kan basıncının 120 mmHg'nin altında olması miyokardiyal iş yükünü azaltırken, diyastoliğin çok düşük olmasının koroner perfüzyonu bozabileceği dikkate alınmalıdır. 60 yaş üstü ve diyabeti olan hastalarda diyastolik kan basıncı 65 mmHg'nin altına düşürülmemelidir. Özellikle yaşlı hastalarda geniş nabız basıncı nedeniyle sistolik düşürülürken diyastolik de düşerse miyokard iskemisi gibi istenmeyen sonuçlar ortaya çıkabilir. Kronik koroner arter hastalığı ve stabil anjinası olanlarda hedef 130/80 mmHg'nin altı kabul edilmelidir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 159)",
+      "trigger": "Koroner Arter Hastalığında Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-080",
+      "level": "Kılavuz",
+      "title": "Koroner hastada kısa etkili dihidropiridin kullanılmaz",
+      "content": "Hipertansiyonla birlikte angina pektorisi olan kişilerde tedavide özellikle beta blokerler ve kalsiyum kanal blokerleri tercih edilebilir. Ancak kısa etkili ve dihidropiridin grubu kalsiyum kanal blokerleri koroner olayları artırabileceğinden koroner arter hastalığı olanlarda kullanılmamalıdır; iki farklı meta-analizde özellikle yüksek dozlarda miyokard infarktüsü riskini artırdıkları görülmüştür. Miyokard infarktüsü geçirmiş hastalarda antihipertansif tedavide öncelikle intrensek sempatomimetik aktivitesi olmayan beta blokerler kullanılmalıdır. İnfarktüs sonrası sol ventrikül disfonksiyonu olanlarda ise kalp yetmezliğini ve mortaliteyi azalttığı gösterildiğinden RAAS blokerleri tercih edilen ajanlar olmalıdır. ACE inhibitörlerini tolere edemeyen kardiyovasküler hastalarda ARB'ler etkindir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 160)",
+      "trigger": "Koroner Arter Hastalığında Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-081",
+      "level": "Kılavuz",
+      "title": "Acili kan basıncı değil organ hasarı tanımlar",
+      "content": "Akut hedef organ hasarı ile birlikte kan basıncının yüksek bulunduğu durumlar hipertansif acil olarak adlandırılır. Hastaların kan basıncı sıklıkla sistolik 180 mm/Hg ve/veya diyastolik 120 mm/Hg üzerinde bulunsa da tanı için belirli bir kan basıncı sınırı yoktur. Kan basıncı 180/120 mm/Hg üzerinde olmasına rağmen akut hedef organ hasarı yoksa tablo ciddi asemptomatik hipertansiyon ya da hipertansif ivedi durum olarak adlandırılır. Daha önce normotansif olan hastada ani kan basıncı yüksekliğine hedef organ hasarı eşlik ediyorsa bu da hipertansif acil kapsamında değerlendirilir. Hipertansif acil yoğun bakım şartlarında izlenmeli, kan basıncı monitorize edilmeli ve tedavide intravenöz ajanlar tercih edilmelidir. Oral ajanlar hipertansif acilde tercih edilmez; ancak uygun preparat yoksa ya da hedef organ hasarı bulunmayan ivedi durumların tedavisinde kullanılabilirler. (TEMD Hipertansiyon 2022, Bölüm 8, s. 177)",
+      "trigger": "Hipertansif Aciller"
+    },
+    {
+      "id": "p-temd-ht-082",
+      "level": "Kılavuz",
+      "title": "Hipertansif acilde ilk saatte yüzde 10-20 düşüş",
+      "content": "Hipertansif acilde kan basıncının ne hızla ve ne kadar düşürülmesi gerektiğini gösteren randomize klinik bir çalışma yoktur; eldeki bilgiler klinik deneyime dayanır. Kan basıncının çok hızlı düşürülmesi renal, serebral ve koroner iskemiye yol açarak organ hasarını artırabilir. Pek çok hipertansif acilde ilk bir saatte kan basıncında %10-20 düşüş, takip eden 24 saat içinde %5-15 ek düşüş planlanması uygundur. Hedef değerlere ulaşılmasını takiben 8-24 saat içinde oral tedaviye geçilmesi planlanmalıdır. (TEMD Hipertansiyon 2022, Bölüm 8, s. 178)",
+      "trigger": "Hipertansif Acilde Kan Basıncını Düşürme Hızı"
+    },
+    {
+      "id": "p-temd-ht-083",
+      "level": "Kılavuz",
+      "title": "İnmede eşik reperfüzyon adaylığına göre değişir",
+      "content": "Akut nörolojik semptom ve bulgularla başvuran ciddi hipertansif olguda seçilecek hedef kan basıncı nörolojik tabloya göre değişir. İskemik inmede hasta reperfüzyon tedavisine adaysa kan basıncı 185/110 mm/Hg ve üzerinde olduğunda antihipertansif tedavi başlanması önerilir. Konvansiyonel tedavi ile izlenecek hastalar için bu değer 220/120 mm/Hg'dir; kılavuzun tablosunda ise aynı durum sistolik 220 mmHg üzeri ya da diyastolik 110 mmHg üzeri olarak yazılmıştır. Her iki durumda da kılavuzun tablosu bir saat içinde ortalama arter basıncında %15 düşüş hedefler ve birinci basamak ajan olarak labetalol ile nikardipini verir. Akut hemorajik inmede sistolik kan basıncı 180 mmHg üzerindeyse acil olarak 130 ile 180 mmHg arasına çekilmesi hedeflenir. (TEMD Hipertansiyon 2022, Bölüm 8, s. 178)",
+      "trigger": "İnmede Hipertansif Acil"
+    },
+    {
+      "id": "p-temd-ht-084",
+      "level": "Kılavuz",
+      "title": "Aort disseksiyonu yavaş düşürme kuralını bozar",
+      "content": "Akut aort disseksiyonu ve akciğer ödeminde kan basıncında daha hızlı ve yüksek bir düşüş sağlanmalıdır. Aort disseksiyonunda sistolik kan basıncının hızla 100-120 mm/Hg altına indirilmesi önerilmektedir. Kılavuzun tablosu akut aort hastalığında acil olarak sistolik kan basıncı 120 mmHg altı ve kalp hızı dakikada 60 altı hedefini verir; birinci basamak tedavi esmolol ile nitroprussid, nitrogliserin ya da nikardipindir. Akut koroner olayda hedef sistolik kan basıncı 140 mmHg altıdır ve nitrogliserin ile labetalol önerilir. Akut kardiyojenik pulmoner ödemde ise sistolik kan basıncı 140 mmHg üzerinde olduğunda loop diüretiği ile beraber nitrogliserin ya da nitroprussid verilir. (TEMD Hipertansiyon 2022, Bölüm 8, s. 178)",
+      "trigger": "Aort Disseksiyonunda Hipertansif Acil"
+    },
+    {
+      "id": "p-temd-ht-085",
+      "level": "Kılavuz",
+      "title": "Nitroprussid: en düşük etkin doz, 48 saati aşma",
+      "content": "Nitroprussidin etkisi intravenöz verilmeye başlandıktan dakikalar sonra başlar, infüzyon durdurulduktan sonra 10 dakika içinde sona erer ve hızlı, dramatik bir kan basıncı düşüşüne yol açtığı için hasta monitörize edilmelidir. Önerilen başlangıç dozu 0,25-0,5 mcg/kg/dk, maksimum doz 8-10 mcg/kg/dk olmalıdır. Metabolitleri olan siyanid ve tiyosiyanat toksik olduğundan etkin olan en düşük dozda ve 24-48 saati aşmayacak şekilde kullanılmalıdır. Gebelerde ve eklampside kullanımı uygun değildir. Koroner kalp akımını azalttığından akut koroner sendromlarda, intrakraniyal basıncı artırabileceğinden serebrovasküler olaylarda, artmış siyanid toksisitesi riski nedeniyle renal ve hepatik yetersizliklerde kullanımından kaçınılmalıdır. (TEMD Hipertansiyon 2022, Bölüm 8, s. 179)",
+      "trigger": "Nitroprussid"
+    },
+    {
+      "id": "p-temd-ht-086",
+      "level": "Kılavuz",
+      "title": "Klevidipin yumurta ve soya alerjisinde önerilmez",
+      "content": "Nikardipin dihidropiridin grubu bir kalsiyum kanal blokeridir; etkisi 10 dakikada başlar, 5 mg/saat dozunda başlanır ve her 15 dakikada bir 2,5 mg/saat artırılarak 15 mg/saat dozuna çıkılabilir. Nikardipin akut kalp yetmezliğinde kullanılmamalıdır; aort disseksiyonu ve gebelik dahil pek çok hipertansif acilde kullanılabilir. Klevidipin oldukça hızlı etkili ve kısa yarı ömürlü bir dihidropiridindir; 1-2 mg/saat dozunda başlanır, 21 mg/saat dozuna çıkılabilse de sıklıkla 4-6 mg/saat yeterli olur. Klevidipin aortik stenozda hipotansiyona yol açabileceğinden ve lipid bir emülsiyon içinde verildiğinden lipid metabolizma hastalıklarında, yumurta ve soya alerjisi olanlarda kullanımı önerilmemektedir. (TEMD Hipertansiyon 2022, Bölüm 8, s. 179)",
+      "trigger": "Nikardipin ve Klevidipin"
+    },
+    {
+      "id": "p-temd-ht-087",
+      "level": "Kılavuz",
+      "title": "Labetalol bolusunda toplam doz 300 mg tavanı",
+      "content": "Labetalol kombine alfa ve beta blokerdir, etkisi hızla 5 dakika içinde başlar. Bolus olarak 10-20 mg intravenöz yapılmasını takiben toplam doz 300 mg'ı aşmayacak şekilde her 10 dakikada bir 20-80 mg doz tekrarı yapılabilir; ya da 0,5-2 mg/dk hızında devamlı infüzyon şeklinde verilebilir. Astım, KOAH, akut dekompanse kalp yetmezliği, bradikardi ve birinci derece kalp bloğu olanlarda ve hiperadrenerjik durumlarda alfa blokaj başlanmadan kullanılmamalıdır; aktif koroner hastalığı olanlarda kalp hızını artırmaması önemli avantajıdır. Esmolol kardiyoselektif bir beta blokerdir, etkisi 2-10 dakika içinde başlayıp hızlı sonlandığından hızlı titrasyona izin verir. Yükleme dozu olarak 250-500 mcg/kg verilip infüzyon 25-50 mcg/kg/dk olacak şekilde başlanır ve 300 mcg/kg/dk'ya dek çıkılabilir; akut dekompanse kalp yetmezliğinde kullanılmamalıdır. (TEMD Hipertansiyon 2022, Bölüm 8, s. 179)",
+      "trigger": "Labetalol ve Esmolol"
+    },
+    {
+      "id": "p-temd-ht-088",
+      "level": "Kılavuz",
+      "title": "Feokromositoma krizinde fentolamin, eklampside hidralazin",
+      "content": "Fenoldopam kan basıncını düşürürken renal kan akımını koruduğu için renal yetersizlikte tercih edilir; başlangıç dozu 0,1 mcg/kg/dk olup 15 dakikada bir artırılarak 1,6 mcg/kg/dk'ya dek çıkılabilir, intrakraniyal basınç artışında ve glokomu olanlarda kullanımından kaçınılmalıdır. Fentolamin nonspesifik alfa adrenerjik bloker olup her 10-15 dakikada bir 5-15 mg intravenöz bolus şeklinde kullanılır ve feokromositoma krizi, kokain alımı ile indüklenen hipertansiyon gibi artmış katekolamin aktivitesi bulunan durumlarda kullanılmalıdır. Hidralazinin hipotansif etkisi öngörülemez olup spesifik olarak eklampsi ve preeklampsi durumlarında kullanımı önerilmektedir. Enalaprilat yüksek plazma renin aktiviteli hipovolemik hastalarda tercih edilmelidir. Kılavuzun tablosunda eklampsi ve ağır preeklampsi ile HELLP sendromunda acil olarak sistolik kan basıncı 160 mmHg altı ve diyastolik 105 mmHg üzeri yazılmış, tedavi olarak labetalol ya da nikardipin ve magnezyum sülfat verilmiştir. (TEMD Hipertansiyon 2022, Bölüm 8, s. 180)",
+      "trigger": "Hipertansif Acilde Ajan Seçimi"
+    },
+    {
+      "id": "p-temd-ht-089",
+      "level": "Kılavuz",
+      "title": "Tedavisiz malign hipertansiyonda bir yıllık sağkalım yüzde 10-20",
+      "content": "Malign hipertansiyon çok yüksek kan basıncı ve iskemik organ hasarı ile seyreden hipertansif bir kriz durumudur; herhangi bir hipertansiyon formu hızlanmış malign hipertansiyona dönüşebilir. Böbrek glomerül afferent arteriyollerinde fibrinoid nekroz gelişimi sonucu idrarda proteinüri, hematüri ve eritrosit silendirleri görülebilir; retinada vazodilatasyon, eksüda, hemoraji ve papilödem izlenir. Tedavi edilmeyen hastaların çoğu 6 ay içinde kaybedilir ve tedavi görmeyen hastaların sadece %10-20'si bir yıl yaşar; ölüm nedeni çoğunlukla akut renal yetmezlik, hemorajik inme ve konjestif kalp yetersizliğidir. Hastalar hızlı bir şekilde intravenöz ajanlarla yoğun bakım ünitesinde tedavi edilmeli, labetalol, sodyum nitroprussid, nikardipin, nitratlar ve furosemid kullanılabilir. Tedavide amaç kan basıncını 2-3 gün içinde yavaş yavaş 140/90 mmHg'nın altına düşürmektir; hızlı ve yüksek miktarda düşüş iskemik lezyonları artırabileceği için önerilmez. (TEMD Hipertansiyon 2022, Bölüm 8, s. 180)",
+      "trigger": "Malign Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-090",
+      "level": "Kılavuz",
+      "title": "Tiyazidi üçüncü günden önce başlama, hipovolemi var",
+      "content": "Hedef kan basıncına ulaşıldığında oral antihipertansif tedaviye geçiş planlanır. ACE inhibitörü en düşük dozda başlanır ve ilk 48 saatte en etkili doza çıkılır; 48 saat sonunda sistolik kan basıncı 140 mmHg üzerindeyse kalsiyum kanal blokeri eklenmelidir. Tiyazid grubu diüretikler hipovolemi riski nedeniyle üçüncü günden önce başlanmamalıdır. Kan basıncı kontrol altına alınamıyorsa 25 mg spironolakton verilebilir; beta blokerler özgün endikasyon varlığında verilebilir. Böbrek fonksiyonları ve potasyum düzeyi günlük takip edilmeli, volüm kaybı bulguları sürdüğü sürece salin infüzyonuna devam edilmelidir. Sistolik kan basıncının 130 mmHg altına düştüğü ya da renal disfonksiyon varlığında salin infüzyonuna başlanmalı, ACE inhibitörü kesilmeli ve daha önce yapılmadıysa renovasküler hipertansiyon açısından renal arter doppler ultrasonografisi yapılmalıdır. (TEMD Hipertansiyon 2022, Bölüm 8, s. 181)",
+      "trigger": "Malign Hipertansiyonda Oral Tedaviye Geçiş"
+    },
+    {
+      "id": "p-temd-ht-091",
+      "level": "Kılavuz",
+      "title": "Üç ilacın biri diüretik değilse direnç sayılmaz",
+      "content": "Uygun yaşam tarzı değişikliklerinin yanı sıra optimal dozda kullanılan, biri diüretik olmak üzere en az üç antihipertansif ilaca rağmen kan basıncının hedef değerlerin altına düşürülememesi dirençli hipertansiyon olarak adlandırılır. Görülme sıklığının tüm hipertansif nüfusta %5-30 arasında olduğu bildirilmektedir. Dirençli hipertansiyon gerçek ya da yalancı olabilir; psödohipertansiyon ve beyaz önlük hipertansiyonundan mutlaka ayırt edilmelidir. Yaşlı olguda psödohipertansiyon, kaf altında kollabe olmayan sklerotik arterler nedeniyle kan basıncının yanlış yüksek ölçülmesidir ve tanısı intraarteriyel ölçümle konulur; beyaz önlük hipertansiyonu 24 saatlik sürekli ölçümle dışlanır. Öyküde aşırı tuz ve alkol alımı, uyku-apne sendromu, obezite, fiziksel inaktivite ile kan basıncını yükselten nonsteroid antiinflamatuvarlar, oral kontraseptifler, sempatomimetikler, licorice ve efedrin sorgulanmalıdır. Dirençli hipertansiyonlu olgularda ilaç uyumsuzluğu oranı %31,2 saptanmıştır. (TEMD Hipertansiyon 2022, Bölüm 8, s. 183)",
+      "trigger": "Dirençli Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-092",
+      "level": "Kılavuz",
+      "title": "Tuzu 250 mmolden 50 mmole indirmek 22,7 mmHg düşürdü",
+      "content": "Dirençli hipertansiyon tedavisinde en önemli basamaklardan biri yaşam tarzı değişikliğidir ve tuz alımını kısıtlamak en önemli unsurdur. Bir çalışmada günlük sodyum alımı 250 mmolden 50 mmole indirildiğinde sistolik kan basıncında 22,7 mmHg ve diyastolik kan basıncında 9,1 mmHg düşme saptanmıştır. Ortalama bir sodyum kısıtlaması, yani günde ortalama 2,3 gram sodyum ya da 6 gram sodyum klorid, kan basıncında 2-8 mmHg düşmeye neden olur. Beslenme ya da gıda takviyesiyle potasyum alımının artırılması ortalama 3 mmHg, DASH diyeti ise ortalama 8-14 mmHg düşme sağlar. Haftada toplam 150 dakika aerobik egzersiz ve buna eklenen izometrik ve direnç egzersizleri kan basıncını ortalama 5-8 mmHg düşürür. Obez olgularda 6 aylık sürede bazal beden ağırlığının yaklaşık %5-10 arasında kaybı kan basıncını kontrol altına almada yararlı olur. (TEMD Hipertansiyon 2022, Bölüm 8, s. 184)",
+      "trigger": "Dirençli Hipertansiyonda Yaşam Tarzı"
+    },
+    {
+      "id": "p-temd-ht-093",
+      "level": "Kılavuz",
+      "title": "Dördüncü ilaç mineralokortikoid reseptör antagonisti olsun",
+      "content": "Dirençli hipertansiyonda ilk yapılması gereken diüretik dozunun en etkili en yüksek doza çıkılmasıdır, çünkü artmış sodyum alımı ve sıvı retansiyonu önemli rol oynar. İndapamid ve klortalidon grubu diüretikler hidroklorotiyazide göre daha uzun etkili oldukları ve kan basıncını daha iyi düşürdükleri için öncelikle tercih edilmelidir. GFR 30 ml/dk altında tiyazid grubu diüretiklerin etkisi azalacağı için kıvrım diüretikleri kullanılmalıdır. Dördüncü ilaç olarak ön planda mineralokortikoid reseptör antagonistleri düşünülmelidir; spironolakton başlangıçta 25-50 mg başlanmalı, sonra kan basıncı, potasyum ve böbrek fonksiyonuna göre doz artırılmalıdır. En önemli kısıtlılık özellikle kronik böbrek yetmezlikli olgularda hiperkalemidir: tedaviden ilk 1 hafta sonra, uzun süreli tedavide 3 ayda bir potasyum düzeyi kontrol edilmelidir. İlaç uyumu sağlanmasına ve tolere edilebilen maksimum dozlarda tedaviye rağmen kan basıncı kontrolü sağlanamayan hastalarda klonidin ve metildopa gibi santral etkili alfa agonistleri ya da hidralazin ve minoksidil gibi direkt vazodilatatörler eklenebilir. (TEMD Hipertansiyon 2022, Bölüm 8, s. 185)",
+      "trigger": "Dirençli Hipertansiyonda Medikal Tedavi"
+    },
+    {
+      "id": "p-temd-ht-094",
+      "level": "Kılavuz",
+      "title": "Akut koroner sendromda diyastolik 60 mmHg altına inmesin",
+      "content": "Akut koroner sendromlu hastalar instabil olduğu için önce ağrı kontrolü yapılmalı, klinik stabilizasyon sağlanmalı ve kan basıncı yavaş azaltılmalıdır. Bu hastalarda hedef kan basıncı 130-140/80 mmHg altı olmalıdır ve diyastolik kan basıncı 60 mmHg altına indirilmemelidir. Kontrendikasyon yoksa sempatomimetik etkisi olmayan kısa etkili oral beta 1 selektif bloker hastanın başvurusundan sonraki 24 saat içinde başlanmalıdır; şiddetli hipertansiyonu olan ya da iskemisi devam eden hastalarda intravenöz esmolol düşünülmelidir. Birinci, ikinci ve üçüncü derece kalp bloğu, şiddetli bronkospastik hastalık ya da dekompanse kalp yetmezliğiyle birlikte hipotansiyon varsa beta bloker kullanılmamalıdır. Miyokard enfarktüsü ve akut koroner sendrom sonrası sol ventrikül fonksiyonları normal olanlarda beta bloker başlanmalı ve 3 yıl devam edilmelidir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 161)",
+      "trigger": "Akut Koroner Sendromda Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-095",
+      "level": "Kılavuz",
+      "title": "Seksen yaş üstünde kan basıncını 120/70 üzerinde tut",
+      "content": "Kalp yetmezliğinde kan basıncı 140/90 mmHg ve üzerindeyse düşürülmeli, hedef 130/80 mmHg altı olmalıdır. Yaşlı hastalarda nabız basıncı geniş olduğundan sistolik basıncı düşürmek diyastolik basıncı daha da düşürebilir ve bu durum miyokard iskemisini ağırlaştırabilir. Seksen yaş üstündekilerde ortostatik hipotansiyona dikkat edilmeli ve kan basıncı 120/70 mmHg üzerinde tutulmalıdır. Aldosteron antagonistleri ACE inhibitörü ya da ARB ile birlikte verilirse serum potasyumu ve böbrek fonksiyonları kontrol edilmelidir; serum kreatinin kadınlarda 2 mg/dl, erkeklerde 2,5 mg/dl ve üzerinde ya da serum potasyum 5 mEq/L ve üzerinde olduğunda dikkatli olunmalıdır. Şiddetli kalp yetmezliği ya da GFR 30 ml/dak altındaki böbrek hastalığında volüm kontrolü için loop diüretikler tercih edilir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 162)",
+      "trigger": "Kalp Yetmezliğinde Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-096",
+      "level": "Kılavuz",
+      "title": "Atriyal fibrilasyonda sistolik 115 mmHg altına inme",
+      "content": "Hipertansiyon yeni gelişen atriyal fibrilasyon riskini 1,8 kat artırmakta, atriyal fibrilasyonlu hastaların da yaklaşık %60'ında hipertansiyon saptanmaktadır. Atriyal fibrilasyonun primer ve sekonder önlenmesinde optimal kan basıncı kontrolü önemlidir; hedef kan basıncı 130/80 mmHg altı olmalıdır. Sistolik kan basıncı 115 mmHg altına düşürülmemeye çalışılmalıdır. Yüksek ventrikül hızlı atriyal fibrilasyon hastalarında antihipertansif tedavi için beta bloker ve/veya nondihidropiridin grubu kalsiyum kanal blokerleri önerilmektedir. Nondihidropiridin grubu kalsiyum kanal blokeri, sol ventrikül sistolik fonksiyonları azalmış kalp yetmezliği hastalarında kontrendikedir; bu hastalarda beta bloker ile digoksin kombinasyonu kullanılabilir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 165)",
+      "trigger": "Atriyal Fibrilasyonda Hipertansiyon"
+    },
+    {
+      "id": "p-temd-ht-097",
+      "level": "Kılavuz",
+      "title": "Ekokardiyografiyi tedavi sonrası bir yıldan önce tekrarlama",
+      "content": "Antihipertansif tedaviye başladıktan sonra hasta mümkünse ilk 2 ayda ilacın etkinliği için değerlendirilmelidir; ilacın kan basıncını düşürücü etkisini büyük oranda 1-2 hafta içinde göstermesi beklenir, ancak tam etkinin ortaya çıkması 2 ayı bulabilir. Hedefe ulaşıldığında kontrol, hastanın özelliklerine göre 3 ila 6 aylık aralarla yapılmalıdır. Hastaların lipid profilleri, açlık kan glukozu, kreatinin ve potasyum düzeyleri en az yılda bir kez ölçülmeli; risk faktörleri ve asemptomatik organ hasarı en az 2 yılda bir ayrıntılı değerlendirilmelidir. Ekokardiyografi sol ventrikül hipertrofisinin tespitinde elektrokardiyografiden daha duyarlıdır ama her hastaya rutin önerilmez; kalp yetmezliği semptomları, iskemik kalp hastalığı ya da sol ventrikül hipertrofisi kuşkusu olanlarda istenebilir. Sol ventrikül kitlesinde ve karotis duvar kalınlığında tedaviye bağlı değişiklikler yavaş geliştiği için bu tetkikleri 1 yıldan önce tekrarlamamak gerekir. (TEMD Hipertansiyon 2022, Bölüm 9, s. 187)",
+      "trigger": "Hipertansif Hastanın Takibi"
+    },
+    {
+      "id": "p-temd-ht-098",
+      "level": "Kılavuz",
+      "title": "Bir yılda hastaların yaklaşık yarısı tedaviyi bırakıyor",
+      "content": "Hipertansiyon tedavisi alan hastaların üçte birinden fazlasının tedavi başlangıcından 6 ay sonra, yaklaşık yarısının ise 1 yıl sonra ilk tedavilerini bırakabildikleri görülmüştür. Antihipertansif ilaçların kan ya da idrar düzeyinin ölçüldüğü bir çalışmada dirençli hipertansiyonu olan hastaların yaklaşık %50'sinde uyumun düşük olduğu ve uyumun reçete edilen ilaç sayısıyla ters orantılı olduğu gösterilmiştir. Hastaya doz atlayıp atlamadığı sorulmalıdır: eksik dozları kabul eden hastalar tipik olarak reçete edilen dozların %80'inden daha azını almaktadır, ancak uyumlu hastaların da ara sıra doz unutabileceği akılda tutulmalıdır. Uyum eksikliğinin erken fark edilmesi, girişimsel tedavi dahil maliyetli araştırma ve prosedürlerin sayısını azaltabilir ve gereksiz ilaç reçetesini önleyebilir. Hastadan ilaçlarını kontrole gelirken yanında getirmesi istenmeli, uyumu değerlendiren basit anketler kullanılabilir. (TEMD Hipertansiyon 2022, Bölüm 9, s. 188)",
+      "trigger": "Antihipertansif Tedaviye Uyum"
+    },
+    {
+      "id": "p-temd-ht-099",
+      "level": "Kılavuz",
+      "title": "Türkiyede kontrol oranı yüzde 20,7den 53,9a çıktı",
+      "content": "PatenT çalışmalarında Türkiye'de hipertansiyon sıklığı, farkındalık, tedavi ve kontrol oranları ölçülmüştür. 2003 yılında PatenT çalışmasında hipertansiyon sıklığı %31,8 olarak rapor edilmiş; kadınlarda %36,1, erkeklerde %27,5 bulunmuştur. Aynı çalışmada hipertansiyon tanısı olanların %40,7'sinin farkındalığı olduğu, %31,1'inin tedavi aldığı ve kan basıncı kontrol oranının %8,1 olduğu bildirilmiş; tanısının farkında olup tedavi alanlarda kontrol oranı %20,7 olarak verilmiştir. Katılımcıların %32,2'si daha önce hiç kan basıncı ölçtürmemiştir. PatenT-2 çalışmasında sıklık %30,3 ile 2003 yılından farklı bulunmazken farkındalık %54,7'ye, tedavi oranı %47,4'e, tedavi alanlarda kontrol oranı %53,9'a yükselmiştir. (TEMD Hipertansiyon 2022, Bölüm 10, s. 191)",
+      "trigger": "PatenT Çalışmaları"
+    },
+    {
+      "id": "p-temd-ht-100",
+      "level": "Kılavuz",
+      "title": "Maskeli hipertansiyon oranı yüzde 41,2 olarak bildirildi",
+      "content": "TEMD HT çalışmasında JNC-7 kriterlerine göre pre-hipertansiyon sıklığı %22,1, hipertansiyon sıklığı %36,5 olarak rapor edilmiştir. Bu çalışmada hipertansiyon farkındalık oranı %30 bulunmuş; farkındalık en fazla %49,3 ile Marmara, en az %21,4 ile Akdeniz bölgesinde saptanmıştır. Kırsal yaşam, artan yaş, beden kitle indeksinde artış ve bel/boy oranının 0,5 üzerinde olması hipertansiyon sıklığını artıran etkenler olarak bildirilmiştir. Tip 2 diyabetlilerde yapılan TEMD Hipertansiyon çalışmasında hastaların %67,5'inde hipertansiyon saptanmış; hipertansiyonu olanların %87,4'ü tedavi almasına rağmen yalnızca %52,7'si hedef değerlerde bulunmuştur. Aynı çalışmada maskeli hipertansiyon oranı %41,2, beyaz önlük hipertansiyonu oranı %5,7 olarak rapor edilmiştir. (TEMD Hipertansiyon 2022, Bölüm 10, s. 193)",
+      "trigger": "TEMD Hipertansiyon Çalışmaları"
+    }
+  ]
+}
