@@ -1,0 +1,567 @@
+{
+  "id": "pearl-endo-temd-diyabet-2-001",
+  "accessLevel": "premium",
+  "topic": "TEMD Diyabet 2",
+  "pearls": [
+    {
+      "id": "p-temd-dm2-001",
+      "level": "Kılavuz",
+      "title": "Glukometre doğruluğu: 100 mg/dL'nin iki yanında iki ayrı kural",
+      "content": "Avrupa Birliği ülkelerinde kapiller glukoz ölçüm cihazlarının ISO 15197:2013 standartlarını karşılaması gereklidir. Bu standarda göre ölçümlerin %95'inde referans kan glukozu 100 mg/dL ve üzerindeyse glukometre değeri ile arasındaki fark en fazla %15 olmalıdır. Referans değer 100 mg/dL altındaysa ölçüt yüzde değil mutlak farktır: en fazla 15 mg/dL. Yani düşük glukozda cihazdan beklenen doğruluk farklı tanımlanır. Yatan hastada cihazın doğruluğu, bu standartlar üzerinden eş zamanlı venöz glukoz ölçümleri ile değerlendirilebilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 1, s. 1)",
+      "trigger": "Kapiller Glukoz Ölçüm Sistemleri"
+    },
+    {
+      "id": "p-temd-dm2-002",
+      "level": "Kılavuz",
+      "title": "Oksijen tedavisi, şok ve dehidratasyon yatak başı glukozu yanıltır",
+      "content": "Glukoz oksidaz yöntemiyle çalışan cihazlar kandaki oksijen düzeyine duyarlıdır. Oksijen tedavisi alan hastada yüksek oksijen seviyeleri yanlış düşük, hipoksemi varlığı ise yanlış yüksek glukoz okumalarına yol açabilir. Glukoz dehidrogenaz yöntemiyle çalışan cihazlar genellikle oksijen değişikliklerinden etkilenmez. Şok, şiddetli hipotansiyon ve şiddetli dehidratasyon periferik kapiller kanda ölçümü olumsuz etkilediğinden bu durumlarda alternatif yöntemler veya venöz glukoz ölçümleri kullanılmalıdır. Klinik tabloyla uyumsuz görünen bir kapiller ölçüm yeniden test edilmeli veya laboratuvar ortamında ölçülmelidir. (TEMD Diyabet Teknolojileri 2025, Bölüm 1, s. 2)",
+      "trigger": "Glukoz Ölçüm Cihazlarını Etkileyen Durumlar"
+    },
+    {
+      "id": "p-temd-dm2-003",
+      "level": "Kılavuz",
+      "title": "Periton diyalizinde GDH PQQ şeridi hipoglisemiyi maskeler",
+      "content": "Periton diyalizi uygulayan hastalarda Extraneal solüsyonu ikodekstrin içerir. İkodekstrinin yıkım ürünü olan maltoz, belirli glukoz ölçüm cihazları ya da test şeritleri ile etkileşerek kan glukozunun hatalı yüksek okunmasına yol açabilir; bu da hipoglisemiyi maskeleyebilir. Glukoz dehidrogenaz pirolokinolinkinon (GDH PQQ) enzimi kullanan cihaz ve şeritlerin bu hastalarda kullanılması önerilmemektedir. Hem cihazın hem test şeridinin ölçüm yöntemi kontrol edilmeli, NAD-GDH ya da glukoz oksidaz yöntemini kullananlar tercih edilmelidir. (TEMD Diyabet Teknolojileri 2025, Bölüm 1, s. 2)",
+      "trigger": "Glukoz Ölçüm Cihazlarını Etkileyen Durumlar"
+    },
+    {
+      "id": "p-temd-dm2-004",
+      "level": "Kılavuz",
+      "title": "Hematokrit ölçümü iki yöne birden kaydırır",
+      "content": "Kılavuz kapiller ölçümü bozan etkenleri, kan glukozunu hangi yöne kaydırdıklarıyla birlikte listeliyor. Yüksek hematokrit yanlış düşük, düşük hematokrit yanlış yüksek sonuç verir. Furosemid yanlış düşük; galaktoz, ksiloz, asetaminofen, dopamin ve ürik asit glukoz oksidaz yöntemiyle yanlış yüksek okumaya yol açar. Aşırı askorbik asit yanlış düşük ya da yüksek olabilir. Test şeridinin yüksek sıcaklığa maruz kalması ve numune alınan bölgenin meyve suyu gibi bir maddeyle kontaminasyonu yanlış yüksek sonuç verir; yüksek rakımda test yapmak glukoz oksidaz yöntemiyle yanlış yüksek okumaya yol açar; son kullanma tarihi geçmiş şerit ile yetersiz ya da çok fazla kan uygulanması her iki yönde de hataya yol açar. (TEMD Diyabet Teknolojileri 2025, Bölüm 1, s. 3)",
+      "trigger": "Glukoz Ölçüm Cihazlarını Etkileyen Durumlar"
+    },
+    {
+      "id": "p-temd-dm2-005",
+      "level": "Kılavuz",
+      "title": "Akıllı kalem atlanan ve üst üste yapılan dozu görünür kılar",
+      "content": "Akıllı insülin kalemleri enjeksiyonun dozunu, tarihini ve saatini kaydeder; yapılan ünite sayısını ve son enjeksiyondan bu yana geçen süreyi saat, dakika ve saniye cinsinden gösterir. Böylece tedavi uyumu ve doz atlamaları geriye dönük kayıtlar üzerinden değerlendirilebilir. SGM ile birlikte kullanılması atlanan ya da yanlışlıkla üst üste yapılan doz sayısını azaltmaya, hipoglisemi ve glukoz değişkenliğini azaltmaya yardımcı olabilir. Kalemlerde 28 günde bir kartuş değişim uyarısı ve 0°C ile 37,5°C arasındaki sıcaklıklara duyarlı ısı algılayıcı sensörler bulunur. (TEMD Diyabet Teknolojileri 2025, Bölüm 1, s. 4)",
+      "trigger": "Akıllı İnsülin Kalemleri"
+    },
+    {
+      "id": "p-temd-dm2-006",
+      "level": "Kılavuz",
+      "title": "Kalemin doz önerisi sistemdeki aktif insülini hesaba katar",
+      "content": "Bazı akıllı insülin kalemleri kan glukoz seviyelerine ve öğündeki karbonhidrat içeriğine göre otomatik doz ayarlaması yapabilir. Sistem doz önerisini verirken son yapılan insülin dozunu, sistemdeki aktif insülin miktarını ve kullanıcının girdiği verileri dikkate alır; böylece aşırı miktarda insülin uygulanmasını engellemiş olur. Kılavuz bu özelliğin dozu daha hassas ayarlamaya yardımcı olduğunu ve hipoglisemi riskini azalttığını belirtiyor. TEMD, sık aralıklı insülin tedavisi kullanan hastalarda akıllı insülin kalemlerinin kullanımının imkanlar dahilinde değerlendirilmesini öneriyor (Kanıt B). (TEMD Diyabet Teknolojileri 2025, Bölüm 1, s. 6)",
+      "trigger": "Akıllı İnsülin Kalemleri"
+    },
+    {
+      "id": "p-temd-dm2-007",
+      "level": "Kılavuz",
+      "title": "SGM takan hasta da glukometresini bulundurmalı",
+      "content": "TEMD, diyabet tanılı tüm bireylere kapiller glukoz ölçüm cihazı kullanımını öneriyor; SGM kullanan bireylerin de ayrıca kapiller ölçüm cihazı bulundurmaları ve gerekli durumlarda kullanmaları destekleniyor (Kanıt A). Özellikle insülin tedavisi alan hastalar sabah açlıkta, öğün öncesi ve sonrasında, egzersiz öncesi ve sonrasında, hipoglisemi ya da hiperglisemi şüphesi olduğunda, akşam yatarken ve gece bir kez ölçüm yapmaya teşvik edilmelidir (Kanıt B). Cihaz reçete edilmeden önce kapiller glukoz ölçüm eğitimi verilmelidir (Kanıt C). Ölçüm sonuçlarını yorumlayabilme becerisi için diyabet eğitimleri düzenli olarak gözden geçirilmelidir. (TEMD Diyabet Teknolojileri 2025, Bölüm 1, s. 6)",
+      "trigger": "Kapiller Glukoz Ölçüm Sistemleri"
+    },
+    {
+      "id": "p-temd-dm2-008",
+      "level": "Kılavuz",
+      "title": "Ekrandaki sensör değeri anlık değil, dakikalık ortalamadır",
+      "content": "Sensörler her 5-10 saniyede bir glukoz değeri ölçer; ekranda görülen ise cihaza göre 1, 2, 3 ya da 5 dakikalık glukoz ortalamasıdır ve toplamda 288, 480, 720 ya da 1440 okuma izlenir. Enzim reaksiyonunu ürik asit, askorbik asit ve asetaminofen gibi yüksek elektroaktif özelliklere sahip ürünler etkileyerek hatalı yüksek ölçümlere sebep olabilir. Sistem, interstisyel sıvıda glukozu algılayan bir sensör, veri aktarımını sağlayan bir verici ve izlemi sağlayan bir cihaz ya da insülin pompasından oluşur. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 10)",
+      "trigger": "SGM Çalışma Prensipleri"
+    },
+    {
+      "id": "p-temd-dm2-009",
+      "level": "Kılavuz",
+      "title": "Isınma süresi: çoğu sistemde iki saate kadar, Eversense'te 24 saat",
+      "content": "Sensör veri paylaşmaya başlamadan önce bir ısınma süresi vardır; bu süre genellikle 30 dakika ile iki saat arasında değişir, Eversense'te 24 saat olarak bildirilmektedir. Çoğu izlem sistemi ısınma sonrası verileri otomatik paylaşır; bazı sistemlerde ise veri paylaşımından önce parmaktan kan glukoz ölçümü ile kalibrasyon gerekir. Sensörler markaya bağlı olarak genellikle 7, 10, 14 ya da 15 gün izlem sağlar. İmplante edilebilen sistem 90, 180 ya da 365 gün kullanılabilir; yaklaşık 18 milimetre uzunluğunda küçük bir pelet şeklindedir ve bir sağlık profesyoneli tarafından üst kol derisinin altına yerleştirilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 11)",
+      "trigger": "SGM Çalışma Prensipleri"
+    },
+    {
+      "id": "p-temd-dm2-010",
+      "level": "Kılavuz",
+      "title": "Taramalı sensörde 8 saati geçen boşluk veri kaybıdır",
+      "content": "Aralıklı taramalı (flash) SGM glukozu sürekli ölçer, ancak değeri ve trendi görmek için cihazın manuel olarak taratılması gerekir. Veriler bellekte depolandığından, veri kaybı yaşanmaması için en geç 8 saatte bir tarama yapılmalıdır. Ülkemizde bulunan Libre 2'de kişinin tercihi ile ayarlanabilen hipoglisemik (60-100 mg/dL) ve hiperglisemik (120-400 mg/dL) alarmları bulunur; alarm tercihe göre kapatılabilir. Libre 2 ani glukoz değişimlerini gerçek zamanlı saptayıp uyarıyı bluetooth ile doğrudan iletebildiği için hem taramalı hem gerçek zamanlı ölçüm yapabilir. Alarm özelliği olmayan Libre 1 marketten çekilmiştir. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 12)",
+      "trigger": "SGM Sistemlerinin Sınıflandırılması"
+    },
+    {
+      "id": "p-temd-dm2-011",
+      "level": "Kılavuz",
+      "title": "C vitamini takviyesi Libre'de düşük glukozu gizleyebilir",
+      "content": "Askorbik asit 500 mg ve üzerinde Libre 2 ve Libre 3 ölçümlerini, 1000 mg ve üzerinde Libre 2 plus ve 3 plus ölçümlerini hatalı yüksek gösterebilir. Yüksek dozda C vitamini takviyesi almak, Libre sistemini kullanırken ciddi düşük glukoz olayını kaçırma riskine neden olabilir. Kılavuz sorunun gıdadan değil doğrudan takviyeden kaynaklandığını belirtiyor: 200 mL, yani 1 bardak portakal suyunda yaklaşık 200 mg askorbik asit bulunur ve 500 mg'a kadar ölçüm etkilenmez. Askorbik asit 6 saatte vücuttan temizlenir. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 14)",
+      "trigger": "Sistemle Etkileşen İlaçlar"
+    },
+    {
+      "id": "p-temd-dm2-012",
+      "level": "Kılavuz",
+      "title": "Günde 4 gram parasetamol hipoglisemiyi gizleyebilir",
+      "content": "Asetaminofen günde 4 gram ve üzerinde alındığında Dexcom G6, G7 ve Guardian Connect ölçümleri hatalı yüksek çıkabilir. Tekrarlayan yüksek dozda kullanım, 500 mg tabletlerden 4x2, bu sistemlerde mevcut hipogliseminin saptanamamasına yol açabilir. Hidroksiüre de aynı sistemlerde hatalı yüksek ölçüme neden olur. Eversense modellerinde intravenöz ya da periton diyalizi solüsyonlarındaki mannitol veya sorbitol, glukoza benzer yapısı nedeniyle hatalı yüksek ölçüm yapar. Etkileşim yapabilen bir molekül kullanılıyorsa sistemin çalışmasını kapiller ölçümle takip etmek güvenli olacaktır; Dexcom G6 ve G7'de permselektif membran özelliği ile bu etkileşim en aza indirilmiştir. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 14)",
+      "trigger": "Sistemle Etkileşen İlaçlar"
+    },
+    {
+      "id": "p-temd-dm2-013",
+      "level": "Kılavuz",
+      "title": "Tomografi öncesi: hangi sensör kalır, hangisi çıkarılır",
+      "content": "Libre 2/2 plus ve 3/3 plus MR, BT ve röntgenle uyumlu bildirilmektedir; MR sonrası doğru veri paylaşımı için 1 saat bekleme önerilir, okuyucu ve telefonun MR odası dışında farklı bir odada bulunması istenir, BT ve röntgen sonrası sistem doğrudan kullanılabilir. Dexcom G6 ve G7'nin röntgen, BT ve MR'da kullanımı önerilmemektedir; G7 için BT'de sensörün taranan alandan uzak tutulması ve kurşun önlükle kapatılması ile kullanım güvenli bulunmuştur. Guardian Connect röntgen, BT ve MR ile uyumlu değildir, bu durumlarda sensör ve verici çıkarılmalıdır. Eversense'in vericisi de uyumlu değildir ve işlem sırasında çıkarılması önerilmektedir. Libre için diatermi ile uyum değerlendirilmemiştir. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 14)",
+      "trigger": "SGM ve Görüntüleme İşlemleri"
+    },
+    {
+      "id": "p-temd-dm2-014",
+      "level": "Kılavuz",
+      "title": "MARD %10 altındaysa insülin dozu parmak doğrulaması olmadan belirlenebilir",
+      "content": "MARD, belli sayıda ve değişik glukoz düzeylerinde parmak ucu ile SGM ölçümleri arasındaki ortalama farkı ifade eder. MARD değeri %10 altında olan cihazlar, parmaktan doğrulama gerektirmeden insülin doz belirlenmesinde kullanılabilmektedir. MARD glukozun hızlı değişiminden etkilenir. Bu nedenle kalibrasyon gerektiren cihazlarda ölçüm, kan glukozunun daha stabil olduğu sabah açlık ve gece yatma zamanında, trend oklarının olmadığı dönemlerde yapılmalıdır. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 15)",
+      "trigger": "MARD ve Kalibrasyon Gerekliliği"
+    },
+    {
+      "id": "p-temd-dm2-015",
+      "level": "Kılavuz",
+      "title": "Sensör hipoglisemi diyorsa tedaviden önce parmak ucu",
+      "content": "Kapiller glukoz düzeyi ile interstisyel sıvı glukoz düzeyi arasında birkaç dakikalık, 5-10 dakikalık bir fark beklenen bulgudur. Hem gerçek zamanlı hem aralıklı taramalı SGM yanlış düşük ölçüm verebilir ve hipoglisemi daha derin olabilir. Bu nedenle hipoglisemi rapor edildiğinde veya beklenen ile rapor edilen değerler arasında uyumsuzluk olduğunda, tedavi kararı almadan önce doğrulayıcı bir parmak ucu ölçümü önerilir. Cihazın takıldığı ilk 12 saat içinde de sistemin doğruluğunu parmak ucu ölçümü ile teyit etmek gerekebilir. Araç kullanmak gibi kritik görevlerden önce ve bunlar sırasında da kontrol önerilmektedir. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 15)",
+      "trigger": "MARD ve Kalibrasyon Gerekliliği"
+    },
+    {
+      "id": "p-temd-dm2-016",
+      "level": "Kılavuz",
+      "title": "Standart SGM raporu: 14 günlük izlem, verinin %70'i",
+      "content": "Klinik bakım için standartlaştırılmış SGM raporunda önerilen kullanım süresi 14 gün, önerilen aktif kullanım ise 14 gün boyunca verilerin %70'idir. Glisemik değişkenlik hedefi %CV olarak %36 ve altıdır. Bazı çalışmalar, insülin veya sülfonilüre kullanan bireyler için daha düşük %CV hedeflerinin (%33 altı) hipoglisemiye karşı ek koruma sağladığını öne sürmektedir; kılavuz hipoglisemi riski olan kişilerde ek önlemler almak kaydıyla %33 altı hedefi öneriyor. Rapor ayrıca ortalama glukozu ve tahmini HbA1c yerine önerilen glukoz yönetim göstergesini (GMI) içerir. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 21)",
+      "trigger": "SGM Çıktılarının Raporlanması"
+    },
+    {
+      "id": "p-temd-dm2-017",
+      "level": "Kılavuz",
+      "title": "Hedef aralığın basamakları: 54, 70, 180 ve 250 mg/dL",
+      "content": "Standartlaştırılmış raporda hedef aralıkta geçirilen süre (HGS) 70-180 mg/dL olarak tanımlanır. Hedef aralığın üzerinde geçirilen süre seviye 1 için 181-250 mg/dL, seviye 2 için 250 mg/dL üzeridir. Hedef aralığın altında geçirilen süre seviye 1 için 54-69 mg/dL, seviye 2 için 54 mg/dL altıdır. HGS'de her %5'lik artış, tip 1 ve tip 2 diyabetli bireyler için klinik olarak anlamlı faydalar sağlar. 25 yaş altındaki bireylerde hedef HbA1c seviyesi %7,5 ise HGS hedefi yaklaşık %60 olarak belirlenmelidir. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 21)",
+      "trigger": "SGM Çıktılarının Raporlanması"
+    },
+    {
+      "id": "p-temd-dm2-018",
+      "level": "Kılavuz",
+      "title": "AGP'yi okumaya hipoglisemiden başla",
+      "content": "Ambulatuvar glukoz profili raporunda önce hedef altında geçirilen süre değerlendirilmeli, tedavi düzenlemesi bu süre önceliklendirilerek yapılmalıdır. İleri yaş hastalarda hipoglisemiden korumak öncelikli hedef olduğundan 70 mg/dL altında geçirilen zamanın %1 ve altında olmasına dikkat edilmelidir. Daha genç bireylerde hipoglisemi %4 ve altında tolere edilse de öncelikli hedef yine hipogliseminin iyileştirilmesidir. Hipogliseminin iyileştirilmesi, takip eden süreçteki rebound hiperglisemiyi önleyerek glisemik değişkenliği azaltır. Yalnızca aktif kullanımın %70'in üzerinde olduğu raporlar değerlendirilmelidir. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 24)",
+      "trigger": "AGP Raporunun Değerlendirilmesi"
+    },
+    {
+      "id": "p-temd-dm2-019",
+      "level": "Kılavuz",
+      "title": "Alt sınıra değen %5 eğrisi tedavinin başlangıç noktasıdır",
+      "content": "Ambulatuvar glukoz profili, izlem süresi boyunca oluşan tüm günlük grafiklerin 24 saatlik bir zaman diliminde birleştirilmesiyle elde edilir. Medyanı yansıtan %50 eğrisi genel kan glukoz ortalaması hakkında, medyan grafikle %25 ve 75'lik alanda kalan bölüm genel glisemik değişkenlik hakkında bilgi verir; %5-95 eğrileri daha nadir görülen dalgalanmaları yansıtır. Raporda alt hedefin yer aldığı çizgiye değen bir yüzdelik grafik olup olmadığı kontrol edilmelidir. %5'lik eğri ya da diğer yüzdelik eğriler bu çizgiyi kesiyorsa tedavi düzenlemesi buradan başlamalıdır. Eğrinin 70 mg/dL alt sınır çizgisini hangi zaman dilimlerinde kestiği saptanmalıdır. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 24)",
+      "trigger": "AGP Raporunun Değerlendirilmesi"
+    },
+    {
+      "id": "p-temd-dm2-020",
+      "level": "Kılavuz",
+      "title": "Gebelikte hedef aralık 63-140 mg/dL",
+      "content": "Gebelik ve diyabet varlığında parmak ucu hedefleri açlıkta 95 mg/dL, birinci saatte 140 mg/dL, ikinci saatte 120 mg/dL altıdır. SGM ile hedefte geçen zaman 63-140 mg/dL aralığı üzerinden tanımlanır ve tip 1 diyabet için %70 ve üzerinde olması hedeflenmelidir; tip 2 diyabetli gebede daha yüksek bir oran hedeflenmelidir. Buna karşılık gebe ve tip 2 diyabet ile gestasyonel diyabet için hedefte geçirilen zaman aralığı hâlâ net değildir. Dexcom G7 ve Libre sensörler gebelerde verileriyle doğrudan tedavi kararı verilebilecek şekilde onay almıştır. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 26)",
+      "trigger": "Gebelerde SGM Kullanımı"
+    },
+    {
+      "id": "p-temd-dm2-021",
+      "level": "Kılavuz",
+      "title": "Gebelikte sürekli glukoz izleminin alt eşiği 63 mg/dL",
+      "content": "Gebe ve tip 1 diyabetli SGM kullanıcıları için HAS ve HGS hesabında yeni bir alt eşik belirlenmiştir. HAS için alt eşik 63 mg/dL (3,5 mmol/L) olarak tanımlanır. HGS için ise eşik ≥63 mg/dL (≥3,5 mmol/L) kabul edilir. Bu eşik, gebelikte yapılan SGM çalışmalarının ışığında konmuştur. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 31)",
+      "trigger": "Gebelikte SGM Kullanımı"
+    },
+    {
+      "id": "p-temd-dm2-022",
+      "level": "Kılavuz",
+      "title": "Gebelikte SGM parmak ucu hedeflerini emekliye ayırmaz",
+      "content": "Gebelikte diyabet yönetimi için öğün öncesi ve öğün sonrası parmak ucu glukoz takibi hedefleri hâlâ geçerlidir. SGM ile HGS'yi iyileştirme hedefleri bunun yerine değil, yanına eklenir. Kılavuz gebelik boyunca hem geleneksel kapiller ölçümlerin hem de SGM ile HGS hedeflerinin birlikte kullanılmasını önermektedir. Bu çift hedefleme stratejisinin, gebelikte diyabet yönetimini daha güvenli ve etkili kılması amaçlanmaktadır. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 32)",
+      "trigger": "Gebelikte SGM Kullanımı"
+    },
+    {
+      "id": "p-temd-dm2-023",
+      "level": "Kılavuz",
+      "title": "Gebelikte SGM: HbA1c değişmese de bebek kazanıyor",
+      "content": "Tip 1 diyabetli gebelerde kapiller ölçüme SGM eklenmesi HbA1c düzeyinde büyük fark yaratmamıştır. Buna rağmen hedefte geçirilen süre artmış, hedefin üzerinde ve altında geçirilen süre azalmıştır. Büyük doğum ağırlıklı (LGA) bebek insidansı %53'e karşı %69 bulunmuştur (olasılık oranı 0,51; p=0,0210). 24 saatten uzun süren yenidoğan yoğun bakım kabulü %27'ye karşı %43, iv dekstroz ihtiyacı doğuran yenidoğan hipoglisemisi %15'e karşı %28 izlenmiş, hastanede kalış süresi 1 gün kısalmıştır. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 31)",
+      "trigger": "Gebelikte SGM Kullanımı"
+    },
+    {
+      "id": "p-temd-dm2-024",
+      "level": "Kılavuz",
+      "title": "Gebelikte SGM'nin en sık yan etkisi cilt reaksiyonu",
+      "content": "Gebelikte SGM kullanımının en sık görülen yan etkisi cilt reaksiyonları olmuştur. Gebelik sırasında SGM kullanan 103 katılımcının 49'unda (%48) cilt reaksiyonu izlenmiştir. Kontrol grubundaki 104 katılımcının ise 8'inde (%8) görülmüştür. (TEMD Diyabet Teknolojileri 2025, Bölüm 2, s. 31)",
+      "trigger": "Gebelikte SGM Kullanımı"
+    },
+    {
+      "id": "p-temd-dm2-025",
+      "level": "Kılavuz",
+      "title": "Pompa rezervuarı iki ila üç günde bir değişir",
+      "content": "İnsülin pompası, saat başına önceden belirlenmiş veya otomatik ayarlanmış bir oranda sürekli kısa etkili insülin veren cihazdır. Parçaları pompanın kendisi, infüzyon seti (yama pompalar hariç) ve sensör ile vericidir; sensör ve verici yalnızca sensörle güçlendirilmiş pompalarda ve otomatik insülin iletimi yapan sistemlerde bulunur. Rezervuar, toplam günlük insülin ihtiyacına bağlı olarak tipik olarak iki ila üç günlük hızlı etkili insülin analoğu ile doludur ve bu süre sonunda değiştirilmesi gerekir. İnfüzyon setleri tipik olarak üst kola, karına, daha az sıklıkla sırtın alt kısmına veya üst uyluğa yerleştirilir. Yama pompalarda infüzyon seti ayrı değildir; insülin pompadan çıkan kanülle doğrudan cilt altına iletilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 3, s. 35)",
+      "trigger": "İnsülin Pompalarının Bileşenleri"
+    },
+    {
+      "id": "p-temd-dm2-026",
+      "level": "Kılavuz",
+      "title": "Öngörücü askıya alma hipoglisemiyi beklemez, 30 dakika önce durdurur",
+      "content": "Düşük glukoz eşiğinde askıya alma özelliği, sensör glukozu önceden ayarlanmış değere ulaştığında (örneğin 70 mg/dL) insülin iletimini iki saate kadar keser; bu özellik gece hipoglisemisinin sıklığını ve süresini azaltır. Öngörücü özellik ise SGM sonuçlarındaki eğilim hipoglisemi oluşacağını öngördüğünde devreye girer. Hipoglisemi gelişmeden 30 dakika önce, kan glukozu belirlenmiş eşik değerin 20 mg/dL üzerine ulaştığında ve 30 dakika içinde hipoglisemiye ineceği öngörülüyorsa pompa insülin göndermeyi en az 30 dakika durdurur. Kullanıcı müdahale etmezse sistem en fazla 2 saat süreyle insülin göndermeyi durdurmaktadır. (TEMD Diyabet Teknolojileri 2025, Bölüm 3, s. 37)",
+      "trigger": "Otomatik İnsülin İletim Sistemleri"
+    },
+    {
+      "id": "p-temd-dm2-027",
+      "level": "Kılavuz",
+      "title": "Hibritin anlamı: öğün bolusunu hâlâ hasta verir",
+      "content": "Hibrit kapalı döngü sistemi, manuel moddaki programlanmış sabit bazal yerine, algoritmanın belirlediği her beş dakikada bir değişken mini bolus verir. Bazı gelişmiş sistemler otomatik insülin düzeltme dozları da uygular. Buna karşın kullanıcının öğün öncesi insülin boluslarını kendisinin belirlemesi ve uygulaması gerekir; sisteme hibrit denmesinin nedeni budur. Doz seçimi insülin-karbonhidrat oranına ve düzeltme faktörlerine dayanır, pompanın bolus hesaplayıcısı bunu kolaylaştırır. Bu hibrit pompalar ile hedefte geçirilen zaman artmış, hipoglisemiler de belirgin olarak azalmıştır. (TEMD Diyabet Teknolojileri 2025, Bölüm 3, s. 36)",
+      "trigger": "Otomatik İnsülin İletim Sistemleri"
+    },
+    {
+      "id": "p-temd-dm2-028",
+      "level": "Kılavuz",
+      "title": "AID'de kritik pencere ilk üç ila altı ay",
+      "content": "AID sistemlerinin kullanımını destekleyen en güçlü kanıtlar, hipoglisemi riski yüksek olan veya hipoglisemi farkındalığı bozulmuş bireyler ile mevcut tedavide glisemik hedeflere ulaşamamış bireylerdedir. Tedaviye başlamadan önce yapılandırılmış ve bireyselleştirilmiş eğitim ve destek şarttır. Tedaviyi bırakma oranları ilk üç ila altı aylık kullanım süresinde en yüksektir; bu dönemde yakın izleme ve destek kritik önemini korur. Çoklu doz insülin tedavisi alan bireyler, daha önce pompa deneyimi olmadan doğrudan hibrit AID sistemlerine geçiş yapabilirler. (TEMD Diyabet Teknolojileri 2025, Bölüm 3, s. 41)",
+      "trigger": "Kimler Pompa Kullanımına Uygundur"
+    },
+    {
+      "id": "p-temd-dm2-029",
+      "level": "Kılavuz",
+      "title": "Pompa endikasyonu tip 1 diyabetle sınırlı değil",
+      "content": "Klinik endikasyonlar arasında tip 1 diyabette yeterli glisemik kontrol sağlanamaması, sık hipoglisemi yaşanması veya hipoglisemi farkındalığının olmaması sayılır. Çoklu günlük insülin enjeksiyonlarına ve kapsamlı yaşam tarzı değişikliklerine rağmen glisemik hedeflere ulaşamayan tip 2 diyabetli hastalar da listededir. Gastroparezi, gebelik, değişken programlı veya vardiyalı çalışma ve pediatrik popülasyon gibi küçük dozlarda insüline ihtiyaç duyma diğer endikasyonlardır. Buna karşılık sık kan şekeri takibini (günde ≥4) veya karbonhidrat sayımını yapamayan ya da yapmak istemeyen hastalar uygun değildir. Psikoz, şiddetli anksiyete ve depresyon gibi ciddi psikolojik veya psikiyatrik durumlar ile pompanın diyabet yönetiminden sorumlu olma ihtiyacını ortadan kaldırdığı inancı gibi gerçekçi olmayan beklentiler de uygunsuzluk nedenidir. (TEMD Diyabet Teknolojileri 2025, Bölüm 3, s. 41)",
+      "trigger": "İnsülin Pompa Tedavisi İçin Endikasyonlar"
+    },
+    {
+      "id": "p-temd-dm2-030",
+      "level": "Kılavuz",
+      "title": "Pompaya geçerken doz HbA1c'ye göre kırpılır",
+      "content": "Pompa öncesi kronik glisemi düzeyi, başlangıçtaki pompa bazal hızını ve yemek öncesi dozunu belirlemeye yardımcı olur. Önceki çoklu doz rejiminde glisemik hedeflere ulaşmış bir kişide (örneğin HbA1c &lt; %7) pompa ile uygulanan başlangıç toplam günlük dozu, önceki rejimin toplam insülin dozundan yüzde 10 ila 20 daha az olabilir. Hesaba hem kısa etkili hem de uzun etkili insülin katılır. Glisemik hedeflerin üzerinde olan, hipoglisemisi olmayan yüksek HbA1c'li bireyler ise enjeksiyon rejimlerinde kullandıkları aynı dozlar ile başlatılabilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 3, s. 43)",
+      "trigger": "Toplam Günlük Dozun Hesaplanması"
+    },
+    {
+      "id": "p-temd-dm2-031",
+      "level": "Kılavuz",
+      "title": "Bazal oran toplam dozun yüzde 40 ila 50'si",
+      "content": "Genel olarak toplam günlük insülinin yaklaşık yüzde 40 ila 50'si bazal oran olarak uygulanır. Çoğu yetişkin için bazal oranlar saatte kilogram başına 0,01 ila 0,015 ünite aralığındadır; 70 kg'lık bir hastada bu saatte yaklaşık 0,7-1,05 ünite eder. Önce tek bazal hız ile başlanır, 2-3 günde bir glukoz düzeyine göre doz ayarı yapılır. Hedef, öğünler arasında ve uykuda stabil açlık glukoz düzeyinin sağlanmasıdır. Dawn fenomeni gibi günlük glukoz değişkenliğine göre farklı bazal dozlar eklenir. (TEMD Diyabet Teknolojileri 2025, Bölüm 3, s. 43)",
+      "trigger": "Bazal Oran"
+    },
+    {
+      "id": "p-temd-dm2-032",
+      "level": "Kılavuz",
+      "title": "Öğün atlama testi: fark 35 mg/dL'yi aşarsa bazal yanlış",
+      "content": "Bazal infüzyon hızının uygun olup olmadığı öğün atlama yöntemiyle değerlendirilebilir. Değerlendirilecek öğünde gıda alınmaz ve gıda alınmadığı için o öğünde bolus da uygulanmaz. Öğün öncesi, bundan 2 saat sonra ve bir sonraki öğünden önce ölçülen kan glukoz düzeyleri arasındaki farkın &lt;35 mg/dL olması beklenir. Fark daha fazla ise o öğünü etkileyen bazal insülin infüzyon hızı uygun şekilde değiştirilir. Her gün bir öğün atlanır ve ölçümlere devam edilir. Sürekli ölçüm sistemlerinin kullanılması durumunda bu yöntemin kullanılması gerekli değildir. (TEMD Diyabet Teknolojileri 2025, Bölüm 3, s. 43)",
+      "trigger": "Bazal Oran"
+    },
+    {
+      "id": "p-temd-dm2-033",
+      "level": "Kılavuz",
+      "title": "Bazal hızı ihtiyaçtan iki saat önce değiştir",
+      "content": "Cilt altı bazal insülin infüzyon hızı değiştirilirken plazma insülin düzeylerindeki gerçek artış veya azalıştaki gecikme dikkate alınmalıdır. Bu gecikme emilim kinetiğine ve yeni bir kararlı duruma ulaşma süresine bağlıdır. Bu nedenle hızlı etkili insülinin bazal oranları, plazma seviyesinde değişiklik gerekmeden yaklaşık iki saat önce değiştirilmelidir. Geçici bazal oranlar belirli süreler için programlanabilir; örneğin aerobik aktivitelerle ilişkili hipoglisemiyi önlemek için azaltılmış bir geçici bazal hız kullanılabilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 3, s. 44)",
+      "trigger": "Bazal Oran"
+    },
+    {
+      "id": "p-temd-dm2-034",
+      "level": "Kılavuz",
+      "title": "KH/İ oranı: dirençlide 300, duyarlıda 450 bölünür",
+      "content": "KH/İ oranı hastanın aldığı karbonhidrat miktarı için ne kadar insülin gerektiğini gösterir; 5/1 ile 25/1 arasında olabilir ve öğünden öğüne değişir. Pratik hesapta insülin direnci olan veya obez hastalarda 300/TİD, insüline duyarlı zayıf hastada 450/TİD formülü kullanılır. İkinci yöntem 5,7 x Ağırlık (kg)/TİD denklemidir. Oran önce karbonhidrat içeriği bilinen, az yağlı bir öğüne göre ayarlanır; ikinci saat tokluk glukoz artışının öğün öncesine göre yaklaşık 60 mg/dL olması beklenir. Ölçüme göre oran gerekirse %10-20 artırılır veya azaltılır. (TEMD Diyabet Teknolojileri 2025, Bölüm 3, s. 44)",
+      "trigger": "Bolus Doz Ayarlama"
+    },
+    {
+      "id": "p-temd-dm2-035",
+      "level": "Kılavuz",
+      "title": "İDF 1700/TİD; sayamayana sabit öğün bolusu",
+      "content": "İnsülin düzeltme faktörü, insülin duyarlılık faktörü olarak da adlandırılır ve İDF = 1700/TİD ya da 4,44 x KH/İ formüllerinden biri ile hesaplanır. İDF hesabında insüline dirençli bireylerde 1700 yerine 1500, insüline duyarlı bireylerde 1800 seçilebilir. Düzeltme dozundan sonraki plazma glukozu sürekli olarak yüksek ya da düşük ise İDF %10-20 artırılır ya da azaltılır. Karbonhidrat sayımı öğretilemeyen fakat pompa tedavisi uygulanması gereken bazı hastalarda alternatif olarak sabit öğün bolusu yöntemi kullanılabilir; formülü (TİD x 0,5)/3'tür. (TEMD Diyabet Teknolojileri 2025, Bölüm 3, s. 44)",
+      "trigger": "Bolus Doz Ayarlama"
+    },
+    {
+      "id": "p-temd-dm2-036",
+      "level": "Kılavuz",
+      "title": "Otomatik modun başarısı yüzde 90 kullanımdan geçiyor",
+      "content": "AID cihazlarda otomatik moda geçmeden önce hastanın manuel modda cihazı tanıması ve gerekli ayarları yapmayı öğrenmesi beklenmelidir. Geçişte hedef glisemi seviyelerinin, hipoglisemi eşiğinin, aktif insülin süresinin, KH/İ oranı ve İDF değerlerinin girilmesi kritik önem taşır. Ortalama hedef glukoz genellikle 120-180 mg/dl, hipoglisemi eşiği çoğunlukla 80-120 arası girilir; aktif insülin süresi için 1-3 saat arası bir değer girilebilir. Aktif insülin süresi, düzeltme bolusları nedeniyle ortaya çıkabilecek hipoglisemilerin önlenmesi için önemlidir. Kılavuz, AID ile başarılı sonuç alınabilmesi için otomatik mod kullanım yüzdesinin %90 üzerine çıkmasını önemli bulur. Sensör kullanım yüzdesi yetersiz kalırsa tedavi manuel modda pompa tedavisinin ötesine geçemez. (TEMD Diyabet Teknolojileri 2025, Bölüm 3, s. 45)",
+      "trigger": "Otomatik Moda Geçiş"
+    },
+    {
+      "id": "p-temd-dm2-037",
+      "level": "Kılavuz",
+      "title": "Aynı eğilim oku her cihazda aynı şeyi söylemez",
+      "content": "Her SGM sisteminin eğilim okları farklı glisemik değişim oranlarını iletir; bu nedenle ok temelli insülin doz ayarlama kılavuzları sisteme özgüdür. Daha yeni basitleştirilmiş stratejiler, eğilim okuna ve 5-30 dakika içindeki tahmini glukoz değerine göre mevcut glukoza 30, 60 veya 90 mg/dL eklenmesini ya da çıkarılmasını önerir. Örneğin mevcut ölçüm 150 mg/dL ve tek yukarı ok varsa değişimin 2-3 mg/dL/dakika olacağı ve 30 dakika sonra glukozun 60-90 mg/dL yükseleceği öngörülür. Hasta bu durumda dozunu ayarlarken glukoz değerini 210-240 mg/dL olarak düşünmelidir. Bu ayarlamalar ancak hızlı etkili insülinin son dozundan ve karbonhidrat içeren gıda alımından en az 3 saat geçmişse uygulanabilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 50)",
+      "trigger": "Glukoz Eğilim Okları"
+    },
+    {
+      "id": "p-temd-dm2-038",
+      "level": "Kılavuz",
+      "title": "Üstüne yatılan sensör sahte hipoglisemi üretir",
+      "content": "Bir SGM sensörüne dışarıdan doğrudan basınç uygulanması perfüzyonun azalmasına ve glukoz değerlerinin yanlış düşük ölçülmesine neden olabilir. Kompresyon artefaktı veya kompresyon hipoglisemisi denilen bu durumda basıncın kaldırılması ile glukoz değerleri hızla doğru ölçülebilir. Bu nedenle özellikle uyurken hipoglisemi için yanlış uyarılara yol açmamak adına sensörün nereye takıldığı konusunda dikkatli olunmalıdır. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 51)",
+      "trigger": "SGM Alarmları"
+    },
+    {
+      "id": "p-temd-dm2-039",
+      "level": "Kılavuz",
+      "title": "Alarm eşiğinde standart yok, 55 mg/dL susturulamaz",
+      "content": "Hipoglisemi ve hiperglisemi uyarıları için önerilen standart eşik değerler yoktur. Kullanıcılar farklı saatlerde farklı eşik değerler belirleyebilir, bu alarmları kullanıp kullanmamayı seçebilir. Ancak bazı sistemlerde acil düşük uyarılar (&lt;55 mg/dL) susturulamayacak şekilde ayarlanmıştır. Cihazı kullanmaya başladıktan sonraki ilk birkaç hafta alarm kullanılmamasını öneren yaklaşımlar olduğu gibi, başlangıçta hipoglisemi eşiğinin 70 mg/dL ve hiperglisemi eşiğinin 250 mg/dL olmasını öneren yaklaşımlar da vardır. Karara hastanın HbA1c ve glukoz değerlerine, hipoglisemi farkındalığına ve sık alarmların kullanıcıyı ve çevresini etkileme potansiyeline göre varılabilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 50)",
+      "trigger": "SGM Alarmları"
+    },
+    {
+      "id": "p-temd-dm2-040",
+      "level": "Kılavuz",
+      "title": "Sensörü insülin enjeksiyon bölgesine 2,5 cm'den yakın takma",
+      "content": "Sensör uygulandığında cildin hemen altına küçük (4-5 mm) bir filament yerleştirilmiş olur. Sensörlerin yara izi, ben, çatlak veya yumru bulunan bölgelere takılmasından kaçınılmalıdır. Çoğu sensör için insülin enjeksiyon bölgesinden en az 2,5 cm uzakta bir bölge seçilmesi önerilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 49)",
+      "trigger": "SGM Sistemleri"
+    },
+    {
+      "id": "p-temd-dm2-041",
+      "level": "Kılavuz",
+      "title": "Plus sürümleri: ömür 15 güne, yaş sınırı 2'ye iniyor",
+      "content": "Freestyle Libre 2 Plus, Libre 2'den farklı olarak 2 yaş ve üstünde kullanılabilir, kullanım süresi 15 güne çıkmıştır ve daha yüksek C vitamini değerlerinden etkilenir (1.000 mg). Bu modifikasyonla MARD %8,2'ye düşürülmüştür ve Tandem t-slim X2 pompa ile entegre edilebilir. Verileri tarama yapmadan bluetooth ile insülin pompasına iletir; ancak hastanın kendi görüntüleme cihazında glukozu görmesi için sensörü taraması gerekir. Libre 3 Plus da Libre 3'ten 2 yaş ve üstünde kullanılabilmesi ve kullanım süresinin 15 güne çıkmasıyla ayrılır, pompa ile entegre edilebilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 57)",
+      "trigger": "Freestyle Libre 2 Plus"
+    },
+    {
+      "id": "p-temd-dm2-042",
+      "level": "Kılavuz",
+      "title": "Libre 3 gebelikte onaylı, diyaliz hastasında değil",
+      "content": "Freestyle Libre 3 ülkemizde bulunmamaktadır; 2022'de FDA tarafından 4 yaş ve üzeri kullanım için onaylanmıştır. Gebelikte kullanılabilir, ancak diyaliz hastalarında veya kritik hasta popülasyonunda kullanım için onaylanmamıştır. Dakikada bir glukoz ölçümü yapar ve 14 gün kullanılır; süre dolunca sensör otomatik olarak çalışmayı durdurur. MARD değeri %7,9'dur, kalibrasyon gerekmez ve ısınma süresi 1 saattir. Sensör Libre 2'den %70 daha incedir, pompa entegrasyonu yoktur. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 57)",
+      "trigger": "Freestyle Libre 3"
+    },
+    {
+      "id": "p-temd-dm2-043",
+      "level": "Kılavuz",
+      "title": "Libre 3 alarmı 10 metre ötede gelmez, acil düşük kapanmaz",
+      "content": "Libre 3'te bildirimler yalnızca alarmlar açıkken ve sensör, okuma cihazından en fazla 10 metre uzaktayken alınır. Düşük glukoz alarm eşiği 70 mg/dL'dir ve 60-100 mg/dL arasında ayarlanabilir; yüksek glukoz eşiği 250 mg/dL'dir ve 120-400 mg/dL arasında değiştirilebilir. Acil düşük glukoz alarmı (glukoz 55 mg/dL altı) özelleştirilemez ve kapatılamaz, yalnızca sessiz mod açıkken belirli bir süre susturulabilir. Okuyucuda LO görünmesi glukozun 40 mg/dL'den düşük, HI görünmesi 400 mg/dL'den yüksek olduğunu gösterir ve bu durumlarda mutlaka parmaktan glukoz ölçümü ile doğrulama yapılmalıdır. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 58)",
+      "trigger": "Freestyle Libre 3"
+    },
+    {
+      "id": "p-temd-dm2-044",
+      "level": "Kılavuz",
+      "title": "Dexcom G6: sensör 10 günde, verici 3 ayda bir değişir",
+      "content": "Dexcom G6, 2019'da FDA tarafından 2 yaş ve üzeri için onaylanmıştır; gebelikte, diyaliz hastalarında veya kritik hasta popülasyonunda kullanım için onaylanmamıştır. 5 dakikada bir glukoz ölçümü yapar ve 10 günlük kullanım süresi vardır. MARD %9'dur, kalibrasyon gerekmez, ısınma süresi 2 saattir. Sensör 10 günde bir, verici 3 ayda bir değiştirilir. Otomatik aplikatörle sensör karına, 2-17 yaş arasında kalçaya takılabilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 59)",
+      "trigger": "Dexcom G6"
+    },
+    {
+      "id": "p-temd-dm2-045",
+      "level": "Kılavuz",
+      "title": "Dexcom kendi alıcısı kullanılırsa uzaktan takip kapanır",
+      "content": "Dexcom G6 uyumlu akıllı telefonla kullanılıyorsa hastanın ailesi ve arkadaşları kendi telefonlarından uzaktan takip özelliğini kullanabilir; Dexcom'un kendi alıcısı kullanılırsa takipçiler bu özelliği kullanamaz. Akıllı saat alıcı yerine kullanılamaz ve veri iletimi mesafesi 6 metredir. Kritik düşük yaklaşıyor alarmı, ciddi hipoglisemik durum (55 mg/dL) için 20 dakika öncesinde uyarı verir; kritik düşük alarmı, kritik düşük yaklaşıyor alarmı ve teknik alarmlar kapatılamaz. Görüntüleme işlemlerinde kullanımı test edilmediği için MR, BT ve diatermi tedavisi sırasında kullanılmaz; manyetik alanlar glukozun yanlış görüntülenmesine veya uyarıların engellenmesine yol açabilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 60)",
+      "trigger": "Dexcom G6"
+    },
+    {
+      "id": "p-temd-dm2-046",
+      "level": "Kılavuz",
+      "title": "Dexcom G7 gebelikte onaylı, ısınması yarım saatten kısa",
+      "content": "Dexcom G7, 2022'de FDA tarafından 2 yaş ve üzeri için onaylanmıştır ve Dexcom G6'dan %60 daha küçük tasarlanmıştır. G6'dan farklı olarak gebelikte kullanılabilir; diyaliz hastalarında veya kritik hasta popülasyonunda kullanım için onaylanmamıştır. 10 saniyede bir ölçüm yapıp 5 dakikada bir ortalamayı verir, kullanım süresi 10 gündür; süresi tamamlanmış sensörün değiştirilmesi için 12 saatlik ek süre tanınır. MARD %8,2'dir, kalibrasyon gerekmez ve ısınma süresi 30 dakikadan azdır. Sensör üst kola, 2-6 yaş arasında üst kalçaya takılabilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 61)",
+      "trigger": "Dexcom G7"
+    },
+    {
+      "id": "p-temd-dm2-047",
+      "level": "Kılavuz",
+      "title": "G7'de kritik düşük alarmı bile sessize alınabiliyor",
+      "content": "Dexcom G7'de düşük değer uyarısının varsayılanı 70 mg/dL'dir ve 60-150 mg/dL arasında, yüksek değer uyarısının varsayılanı 250 mg/dL'dir ve 100-400 mg/dL arasında değiştirilebilir. Ciddi hipoglisemik durum (55 mg/dL) için 20 dakika öncesinde uyarı verir. Dexcom G6'dan farklı olarak herşey için sessiz modu vardır; bu modda kritik düşük ve teknik uyarılar dahil tüm alarmlar 6 saate kadar sessize alınabilir, yalnızca görsel uyarılar görüntülenmeye devam eder. Yine G6'dan farklı olarak sensör, alıcı veya telefon menzili dışındayken 24 saate kadar veri depolayabilir. Üreticiye göre sensör 2,4 metre derinliğe kadar su geçirmezdir, ancak alıcı su geçirmez değildir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 62)",
+      "trigger": "Dexcom G7"
+    },
+    {
+      "id": "p-temd-dm2-048",
+      "level": "Kılavuz",
+      "title": "Guardian 4'ün doğruluğu kola mı karına mı takıldığına bağlı",
+      "content": "Medtronic Guardian 4, 2018'de FDA tarafından 7 yaş üzeri kullanım için onaylanmıştır; gebelikte, diyaliz hastalarında veya kritik hasta popülasyonunda kullanım için onaylanmamıştır. 10 saniyede bir ölçüm yapıp 5 dakikada bir ortalamalarını verir ve 7 günlük kullanım süresi vardır. MARD değeri kolda %8,7-14, karında %9,6-10,5'tir; yani doğruluk takılma bölgesine göre değişir. Kalibrasyon gerektirmez ve ısınma süresi 2 saattir. Düşük uyarı için 60-90 mg/dL, yüksek uyarı için 100-140 mg/dL arası bir değer seçilebilir; kan glukozu 55 mg/dL altında acil düşük uyarısı verir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 63)",
+      "trigger": "Medtronic Guardian 4"
+    },
+    {
+      "id": "p-temd-dm2-049",
+      "level": "Kılavuz",
+      "title": "Medtrum Touchcare S9'da alarmlar kapalı geliyor",
+      "content": "Medtrum Touchcare S9'da hipoglisemi ve hiperglisemi alarmı vardır ve alarmların varsayılan ayarları kapalıdır. Yüksek ve düşük glukoz ayarları farklı zaman dilimleri için sekiz farklı değere göre ayarlanabilir. Yükseliyor ve düşüyor alarmları sonraki 5 ile 30 dakika arasındaki tahmini glukoz değerlerine göre belirlenir; hızlı düşme ve hızlı yükselme alarmları dakikada 1,1-5,0 mg/dL arasındaki değişimlere göre ayarlanır. Alarmların erteleme süresi 10 dakika ile 3 saat arasında değiştirilebilir. Kan glukozu 56 mg/dL altındaysa uygulamanın sesi kapalı olsa bile sesli uyarı verir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 66)",
+      "trigger": "Medtrum Touchcare S9"
+    },
+    {
+      "id": "p-temd-dm2-050",
+      "level": "Kılavuz",
+      "title": "Sibionics GS1: sessiz modda bile çalan 55 mg/dL alarmı",
+      "content": "Sibionics GS1'in FDA onayı yoktur; 2023 yılında Avrupa Birliği MDR CE sertifikasını almıştır ve 3 yaş ve üzerinde kullanılabilir. Gebelikte, diyaliz hastalarında veya kritik hasta popülasyonunda kullanımı uygun değildir. 5 dakikada bir glukoz ölçümü yapar, 14 gün kullanılır, MARD değeri %8,83'tür, kalibrasyon gerektirmez ve ısınma süresi 60 dakikadır. Ciddi düşük glukoz uyarısı glukozun 55 mg/dL veya altına düştüğünü bildirir ve cihazın sesi kapalı ya da Rahatsız Etmeyin modu açık olsa bile ses çıkarır. İlk ciddi düşük alarmı onaylandıktan sonra glukoz 30 dakika boyunca 55 mg/dL altında kalırsa alarm tekrarlanır. Düşük glukoz alarmı 60 ile 100 mg/dL, yüksek glukoz alarmı 120 ile 400 mg/dL arasında ayarlanabilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 68)",
+      "trigger": "Sibionics GS1"
+    },
+    {
+      "id": "p-temd-dm2-051",
+      "level": "Kılavuz",
+      "title": "iCan i3'te LO sınırı 36, HI sınırı 450 mg/dL",
+      "content": "Sinocare iCan i3'ün FDA onayı yoktur; 2 yaş ve üzerinde kullanılabilir, gebelikte, diyaliz hastalarında veya kritik hasta popülasyonunda kullanımı uygun değildir. 3 dakikada bir glukoz ölçümü yapar, 15 gün kullanılır, MARD değeri %8,71'dir, kalibrasyon gerektirmez ve ısınma süresi 2 saattir. 36-450 mg/dL aralığındaki verileri gösterir; HI görünmesi glukozun 450 mg/dL'den yüksek olduğunu ifade eder. Sistemsel olarak düşük glukoz alarmı 70 mg/dL, yüksek glukoz alarmı 200 mg/dL'dir; istenirse düşük için 60-100 mg/dL, yüksek için 117-450 mg/dL arasında bir değere çekilebilir. MR veya BT taramasından ve diatermi tedavisinden önce çıkarılmalıdır, X-ray cihazlarından da geçirilmemelidir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 70)",
+      "trigger": "Sinocare iCan i3"
+    },
+    {
+      "id": "p-temd-dm2-052",
+      "level": "Kılavuz",
+      "title": "Eversense E3: cerrahi olarak yerleştirilen, kalibrasyon isteyen 6 aylık sensör",
+      "content": "Senseonics Eversense E3 ülkemizde bulunmamaktadır; 2022'de FDA tarafından 18 yaş ve üzeri için onaylanmıştır ve gebelikte, diyaliz hastalarında veya kritik hasta popülasyonunda kullanım için onaylanmamıştır. İmplante edilebilen bir sistemdir: sensör lokal anestezi altında cerrahi müdahale ile üst kola takılır ve 6 ay kullanılır. 5 dakikada bir glukoz ölçümü yapar, MARD değeri %8,5'tir. Kalibrasyonsuz çalışan sensörlerden farklı olarak — Eversense ailesinin tümü gibi — kalibrasyon ister: ilk 21 gün günde 2 kalibrasyon, sonrasında 24 saatte bir kalibrasyon gerekir. Isınma süresi 24 saattir ve vericiyi cilde tutturan yapışkan yama 24 saatte bir değiştirilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 71)",
+      "trigger": "Senseonics Eversense E3"
+    },
+    {
+      "id": "p-temd-dm2-053",
+      "level": "Kılavuz",
+      "title": "Eversense sürümleri kalibrasyon yükünde ayrışıyor",
+      "content": "İlk piyasaya çıkarılan Eversense 2018'de FDA ve EMA tarafından 18 yaş ve üzeri için onaylanmış, ancak 2020'de Covid 19 pandemisi sırasında üretimi durdurulmuştur. Bu ilk modelin 90 günlük kullanım süresi vardı, MARD %11,6 idi ve 12 saatte bir kalibrasyon gerektirmekteydi. En son kullanıma giren Eversense 365 ise Eylül 2024'te FDA onayı almıştır ve özellikleri genel olarak Eversense E3 ile benzerdir. Farkları 12 ay kullanım süresi ve %8,8 MARD değeridir. Kalibrasyon yükü de azalmıştır: ilk 13 gün günde bir kez, daha sonra haftada bir kalibrasyon gerekir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 73)",
+      "trigger": "Eversense 365"
+    },
+    {
+      "id": "p-temd-dm2-054",
+      "level": "Kılavuz",
+      "title": "Tam otomatik kapalı devre sistem henüz kullanımda değil",
+      "content": "Pompalar bazal ve bolus insülin gereksinimleri için yalnızca hızlı etkili insülin kullanır. Manuel ya da açık döngü sistemler, sensör okumalarına bakılmaksızın önceden belirlenmiş ayarlara göre bazal insülin verir. Sensör destekli pompalarda doz hesabı için sensör verileri görüntülenir, ancak insülin iletimi otomatik olarak yapılmaz; bazıları glukoz düşükse ya da kısa sürede düşeceği öngörülüyorsa iletimi askıya alır. Otomatik insülin iletim sistemleri sensör verisini bir algoritmayla değerlendirip bazal insülini kendisi iletir, ancak henüz kullanımda tam otomatik kapalı devre sistem bulunmamaktadır. Kullanımdaki hibrit sistemlerde yemek zamanı bolusunu iletmek için hastanın pompaya komut vermesi gerekir ve tüm hibrit sistemler güvenlik parametrelerine bağlı olarak manuel moda geri dönebilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 74)",
+      "trigger": "Sürekli Cilt Altı İnsülin İnfüzyon Sistemleri"
+    },
+    {
+      "id": "p-temd-dm2-055",
+      "level": "Kılavuz",
+      "title": "Dana DiabeCare R'de aktif insülin süresi değiştirilemiyor",
+      "content": "Dana DiabeCare R'nin FDA onayı yoktur ve pompa entegrasyonu bulunmaz. Aktif insülin süresi değiştirilemez. Bazal doz 0,01 ünitelik artışlarla saatte 0.04-16 ünite arasında, bolus dozlar 0,05 ünitelik artışlarla 0,05 ila 80 ünite arasında verilebilir. Hipoglisemi ya da duş gibi nedenlerle pompanın kısa süreli çıkarılması için geçici durdurma işlevi vardır; bu sırada her 4 dakikada bir sesli uyarı vererek cihazın çalışmadığını hatırlatır. 300 ünitelik hazneye hızlı etkili U-100 insülin analogları konulabilir ve pompa 24 saat 2.4 metre derinliğe kadar su geçirmezdir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 75)",
+      "trigger": "Dana DiabeCare R"
+    },
+    {
+      "id": "p-temd-dm2-056",
+      "level": "Kılavuz",
+      "title": "Omnipod Dash'te durdurulan insülin kendiliğinden başlamaz",
+      "content": "Omnipod Dash 2018'de FDA tarafından tüm yaşlarda kullanım için onaylanmıştır. Tek kullanımlık pod 200 üniteye kadar insülin alır ve 3 gün (72 saat) kullanılır; pod, kişisel diyabet yöneticisine uzaklığa bakılmaksızın bazal insülini verir, ancak bolusları vermek için 1,5 metre uzaklıkta olması gerekir. Aktif insülin süresi 2-6 saat arasında değiştirilebilir ve otomatik düzeltme bolusu yoktur. İnsülin iletimi 30 dakika ile 2 saat arasında durdurulabilir, bu sürede her 15 dakikada bir bip sesiyle uyarır. Süre sonunda insülin iletimi otomatik olarak başlamaz ve elle başlatılmazsa 15 dakikada bir uyarı vermeye devam eder. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 76)",
+      "trigger": "Omnipod Dash"
+    },
+    {
+      "id": "p-temd-dm2-057",
+      "level": "Kılavuz",
+      "title": "670G ve 770G'de otomatik mod 48 saat sonra devreye girer",
+      "content": "MiniMed 670G 2017 yılında tip 1 diyabetli 7 yaş ve üzeri kişilerde, 770G ise 2020'de 2 yaş ve üzeri kişilerde FDA onayı almıştır; her ikisi de ülkemizde bulunmamaktadır. Hedef glukoz 120 mg/dL, düzeltme hedefi 150 mg/dL'dir; geçici egzersiz modunda hedef 30 dakikadan 12 saate kadar 150 mg/dL'ye yükseltilir, uyku modu yoktur. Otomatik mod cihaz kullanılmaya başladıktan 48 saat sonra devreye girer ve sistem bazal insülin hızını son 2-6 gün içindeki toplam günlük insülin dozuna göre düzenler. Manuel moda geçiş koşulları da tanımlıdır: 4 saatten fazla maksimum insülin iletimi ya da 2,5 saatten fazla minimum insülin iletimi. Ayrıca 3 saat boyunca glukoz 250 mg/dL üstünde, 1 saat boyunca 300 mg/dL üstünde seyrederse manuel moda geçer. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 78)",
+      "trigger": "Medtronic Minimed 670G ve 770G"
+    },
+    {
+      "id": "p-temd-dm2-058",
+      "level": "Kılavuz",
+      "title": "740G hipoglisemide insülini durdurur, 720G yalnızca uyarır",
+      "content": "MiniMed 720G ve 740G'nin FDA onayı yoktur; sistemin güvenliği hamile kadınlarda, tip 2 diyabetli kişilerde veya insülin içermeyen diğer anti-hiperglisemik tedavileri kullanan kişilerde incelenmemiştir. İki cihaz arasındaki en önemli fark hipoglisemi davranışıdır. 740G, glukozun düşeceği tahmin ediliyorsa insülin iletimini 2 saate kadar durdurur ve glukoz düzeldiğinde iletim yeniden başlar; insülin iletilmediği dönemde 15 dakikada bir uyarı verir. 720G ise insülin iletimini durdurmaz, sadece uyarı verir. Bolus hesaplamasında kullanılan kan glukoz hedefi 60-250 mg/dL arasında ayarlanabilir ve bolus dozlar 0,025 birim ile 75 birim arasında verilebilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 79)",
+      "trigger": "Medtronic Minimed 720G ve 740G"
+    },
+    {
+      "id": "p-temd-dm2-059",
+      "level": "Kılavuz",
+      "title": "780G'de SmartGuard 8 ünite altında ve 250 üstünde kullanılmaz",
+      "content": "MiniMed 780G, 2023'te 7 yaş ve üzeri tip 1 diyabetli hastalarda onay almıştır; güvenliği hamile kadınlarda, tip 2 diyabetlilerde veya insülin içermeyen diğer anti-hiperglisemik tedavileri kullanan kişilerde incelenmemiştir. SmartGuard teknolojisi, günde toplam 8 üniteden az veya 250 üniteden fazla insülin kullananlarda kullanılmaz ve başlatılmadan önce en az 48 saatlik insülin gönderimi verisi gerekir. Varsayılan hedef glukoz 100 mg/dL'dir, 110 ve 120 mg/dL olarak değiştirilebilir; otomatik düzeltme hedefi 120 mg/dL'dir. Otomatik düzeltme bolusu, maksimum bazale ulaşılması ve glukozun 120 mg/dL'den yüksek olması halinde her 5 dakikada bir gönderilir. Geçici egzersiz modunda hedef 30 dakikadan 24 saate kadar 150 mg/dL'ye yükseltilir ve geçici hedef açıkken otomatik düzeltme bolusu çalışmaz. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 81)",
+      "trigger": "Medtronic Minimed 780G"
+    },
+    {
+      "id": "p-temd-dm2-060",
+      "level": "Kılavuz",
+      "title": "Basal IQ askıya alır, Control IQ saatte bir düzeltir",
+      "content": "Tandem t-slim X2 Basal IQ 2018'de, Control IQ 2020'de FDA tarafından 6 yaş ve üzeri hastalar için onaylanmıştır. Basal IQ glukoz 70 mg/dL altındaysa insülin iletimini durdurur ve glukozu 30 dakika önceden tahmin ederek 80 mg/dL altına düşmesi bekleniyorsa insülini askıya alabilir; hedef değeri, düzeltme hedefi, egzersiz ve uyku modu yoktur. Control IQ ise günde 10 üniteden az insüline ihtiyaç duyan veya 25 kilodan az kiloya sahip hastalarda kullanılmamalıdır. Control IQ'da otomatik mod hemen devreye girer, sensör verisi 20 dakikadan fazla alınamazsa manuel moda döner. Aktif insülin süresi 5 saattir ve değiştirilemez. Birçok pompadan farklı olarak saatte bir verilebilecek otomatik düzeltme bolusu özelliği vardır. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 83)",
+      "trigger": "Tandem t-slim X2"
+    },
+    {
+      "id": "p-temd-dm2-061",
+      "level": "Kılavuz",
+      "title": "Pompa duraklatması en çok 2 saat, sonra bazal koşulsuz döner",
+      "content": "Medtrum Touchcare Nano A8, düşük kan glukozunda veya düşük glukoz yaklaşıyorsa insülin iletimini duraklatabilir. Kullanıcı elle devam ettirmezse duraklatma en az 30 dakika sürer. Maksimum duraklatma süresi 2 saattir. İki saatlik duraklatmanın sonunda bazal insülin koşulsuz olarak devam eder. İnsülin iletimi ayrıca 2 saate kadar askıya alınabilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 86)",
+      "trigger": "Medtrum Touchcare Nano A8"
+    },
+    {
+      "id": "p-temd-dm2-062",
+      "level": "Kılavuz",
+      "title": "V-Go ve CeQur'da pil de yok, veri yazılımı da yok",
+      "content": "Mekanik yama pompalar tek kullanımlık cihazlardır ve ülkemizde bulunmamaktadır; V-Go ile CeQur Simplicity pil yerine mekanik güç kaynağı kullanır. V-Go 2010 yılında 21 yaş üstü tip 2 diyabetliler için onaylanmıştır; sabit hızda insülin verir, her düğme tıklamasında 2 ünite bolus iletir ve 24 saat içinde 36 üniteye kadar bolus verebilir. CeQur Simplicity yalnızca bolus pompasıdır, 4 gün boyunca karına takılır ve 200 üniteye kadar hızlı etkili U-100 insülin içerir. Omnipod GO sadece bazal insülin için kullanılır; 72 saat boyunca günde 10 ila 40 ünite arasında değişen 7 farklı programlanmış hızda insülin iletir ve MR, BT taraması ve diatermi tedavisinden önce çıkarılmalıdır. V-Go ve CeQur Simplicity veri yönetimi yazılımıyla çalışmaz. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 88)",
+      "trigger": "Mekanik Yama Pompalar"
+    },
+    {
+      "id": "p-temd-dm2-063",
+      "level": "Kılavuz",
+      "title": "Aşırı sensör değerini parmaktan doğrula, sonra tedaviyi kur",
+      "content": "Sürekli glukoz monitorizasyon sistemleri ile çok yüksek veya çok düşük kan glukoz ölçümleri saptanırsa mutlaka parmaktan glukoz ölçümü yapılmalı, tedavi planı sonuca göre oluşturulmalıdır. Ölçülen değerlerin hatalı olduğu düşünülüyorsa ölçümler dikkate alınmamalı ve üretici firma ile iletişime geçilmelidir. İnsülin iletim sistemlerinde teknik sorun yaşandığında cihazı kapatıp çözüm sağlanana kadar alternatif insülin tedavisi ile devam etmek daha güvenilir olacaktır. Hipoglisemi ve hiperglisemi anında veya yaklaştığında alarm veren cihazlar bu durumların yaşanmasını önemli ölçüde engelleyebilir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 89)",
+      "trigger": "Cihaz Kullanımında TEMD Önerileri"
+    },
+    {
+      "id": "p-temd-dm2-064",
+      "level": "Kılavuz",
+      "title": "Mobil uygulamaların HbA1c kazancı yarım puana yakın",
+      "content": "Hou ve arkadaşları 1360 hasta ile yapılmış 14 randomize kontrollü çalışmanın meta-analizinde, uygulama kullananlarda HbA1c iyileşmesini tip 2 diyabette %0,49, tip 1 diyabette %0,36 bulmuştur. Uygulamaların araştırıldığı 13 randomize kontrollü çalışmada HbA1c değerlerinde %0,44 azalma görülmüştür. Sürekli glukoz izlem verilerinin SMS yoluyla gönderilip öneri alındığı bir uygulamada, 1657 tip 1 ve tip 2 diyabetlinin değerlendirildiği 22 çalışmalık meta-analizde 6 ay sonunda HbA1c kontrol grubuna kıyasla %0,5 azalmıştır. (TEMD Diyabet Teknolojileri 2025, Bölüm 5, s. 90)",
+      "trigger": "Diyabet Yazılımları ve Mobil Uygulamalar"
+    },
+    {
+      "id": "p-temd-dm2-065",
+      "level": "Kılavuz",
+      "title": "Binden fazla diyabet uygulaması var, çoğu kanıta dayalı değil",
+      "content": "Diyet ve fiziksel aktivitenin değerlendirilmesine yardımcı olabilecek 165.000'den fazla uygulama vardır ve bunlardan 1100'den fazlası diyabet uygulamasıdır. Kılavuz, mevcut uygulamaların çoğunun kanıta dayalı olmadığını söyler; bireysel farklılıklar ve beklentiler nedeniyle kanıta dayalı öneri üretmek zordur. MySugr, Glooko, One Drop, Livongo veya Social Diabetes gibi uygulamalar tahmini HbA1c'yi %1,0-2,0 arasında düşürmüş ve hipoglisemi görülmesinde azalma sağlamıştır. Glooko ve Sugar IQ uygulamalarının FDA onayı mevcuttur. (TEMD Diyabet Teknolojileri 2025, Bölüm 5, s. 90)",
+      "trigger": "Diyabet Yazılımları ve Mobil Uygulamalar"
+    },
+    {
+      "id": "p-temd-dm2-066",
+      "level": "Kılavuz",
+      "title": "Karbonhidrat sayımı olmadan insülin tedavisi başarılı olamaz",
+      "content": "Kılavuz, intensif insülin tedavisinde en önemli noktanın karbonhidrat sayımı olduğunu, sayım yapılmadan insülin tedavisinin asla başarılı olamayacağını ve bunun insülin pompası için de aynen geçerli olduğunu yazar. Geleneksel insülin pompası hastalarında bolus hesaplayıcı kullanımı bakım yükünü azaltır, glisemik kontrolü iyileştirir ve yaşam kalitesini artırır. Yakın zamanda yapılan bir çalışmada HbA1c hedeflerine ulaşan hasta sayısında anlamlı artış ve bolus hesaplayıcı kullanan grupta hipoglisemide azalma gösterilmiştir. Bu teknolojinin başlıca dezavantajları günlük ve uzun süreli kullanım hakkında yetersiz veri bulunması ile standardizasyon eksikliğidir: tüm otomatik bolus hesaplayıcılar insülin doz hesaplamalarını aynı şekilde yapmaz. (TEMD Diyabet Teknolojileri 2025, Bölüm 5, s. 92)",
+      "trigger": "Karbonhidrat Sayımı ve İnsülin Doz Hesaplama Uygulamaları"
+    },
+    {
+      "id": "p-temd-dm2-067",
+      "level": "Kılavuz",
+      "title": "Uygulamaların asıl açığı gizlilik ve veriye erişim",
+      "content": "Mobil teknolojilerin dezavantajları temel olarak veri güvenliği ve kişisel verilerin korunması ile ilgilidir. Bu uygulamaların çoğu, kullanıcının platformla paylaşmak istediği bilgileri sınırlamasına izin vermez; bu da bazı kullanıcılar için bir gizlilik ihlali anlamına gelebilir. Teknolojik gelişmeler hipoglisemi ve hiperglisemi farkındalığını artırmakla birlikte bireyler üzerinde stres ve uyku bozukluğuna yol açabilmektedir. Uygulamalar özellikle sağlık okuryazarlığı olmayan kişilerde riskli olabilir. Kılavuza göre en önemli zorluk, bireyi takip eden sağlık profesyonelleri ve yakınlarının diyabetlinin verilerine her an erişiminin mümkün olmamasıdır. (TEMD Diyabet Teknolojileri 2025, Bölüm 5, s. 94)",
+      "trigger": "Teknolojik Araçların Entegrasyonu ve Veri Paylaşımı"
+    },
+    {
+      "id": "p-temd-dm2-068",
+      "level": "Kılavuz",
+      "title": "Teletıp tip 2 diyabette HbA1c'yi 0,43 puan düşürüyor",
+      "content": "Tip 2 diyabetlilerde teletıp uygulamaları HbA1c düzeyinde %-0,43 ile birlikte 2. saat tokluk glukozunda ve sistolik/diyastolik kan basıncında anlamlı azalma sağlamıştır; diyet uygulama isteği, ilaç uyumu ve yaşam kalitesi de artmıştır. COVID-19 pandemisi sırasında telemedikal uygulamaların HbA1c düzeylerinde %-0,23 ve vücut ağırlığında %-5,5 katkısı olduğu belirtilmiştir. Tip 1 diyabetlilerde teletıp ile standart bakımı karşılaştıran meta-analizde HbA1c düzeyleri 0,22 oranında azalmış, ancak hipoglisemi insidansındaki iyileşme istatistiksel olarak anlamlı bulunmamıştır. Teletıbbın genç tip 1 diyabetlilerde diyabet yaşam kalitesi üzerine anlamlı etkisi gösterilememiştir. Gestasyonel diyabetli kadınlarda teletıp ile daha düşük HbA1c, tedaviye daha iyi uyum ve daha az anne ağırlık kazanımı bildirilmiştir. (TEMD Diyabet Teknolojileri 2025, Bölüm 6, s. 98)",
+      "trigger": "Teletıp"
+    },
+    {
+      "id": "p-temd-dm2-069",
+      "level": "Kılavuz",
+      "title": "DIAMOND: günde 59 dakika daha az hipoglisemi, 156 dakika daha az hiperglisemi",
+      "content": "DIAMOND, tip 1 diyabetlilerde gerçek zamanlı SGM ile parmak ucu glukoz ölçümünü karşılaştıran 24 haftalık randomize kontrollü bir çalışmadır. Gerçek zamanlı SGM ile HbA1c değerlerinde azalma (%-1,0 - %0,4) saptanmıştır. Hipoglisemide (70 mg/dL altında) geçirilen sürede ortalama fark 59 dk/gün, hiperglisemide (250 mg/dL üzerinde) geçirilen sürede ortalama fark 156 dk/gün bulunmuştur. Diyabetle ilişkili sıkıntı azalmış, hipoglisemiyi yönetmede iyileşme olmuştur. Buna karşılık genel duygusal iyilik hali, genel sağlık durumu ve hipoglisemi korkusunda iki grup arasında anlamlı fark saptanmamıştır. (TEMD Diyabet Teknolojileri 2025, Bölüm 6, s. 99)",
+      "trigger": "Gerçek Zamanlı Sürekli Glukoz Ölçüm Sistemleri"
+    },
+    {
+      "id": "p-temd-dm2-070",
+      "level": "Kılavuz",
+      "title": "HypoDE: hipoglisemik olay sayısı 10,4'ten 3,4'e indi",
+      "content": "HypoDE çalışmasında, çoklu doz insülin ile tedavi edilen ve hipoglisemi sorunu olan tip 1 diyabetlilerde gerçek zamanlı SGM kullanımı 6 aylık takipte hipoglisemik olayların ortalama sayısını 10,4'ten 3,4'e düşürmüştür. GOLD-3 çalışmasında benzer hasta grubunda gece hipoglisemisinde (70 mg/dL altında) geçirilen süre 19,6 dakikadan 10,2 dakikaya inmiştir. Gece şiddetli hipoglisemide (54 mg/dL altında) geçirilen süre 8,9 dakikadan 3,1 dakikaya, gündüz hipoglisemisi ise günde 49 dakikadan 29 dakikaya düşmüştür. Kullanıcıların hipoglisemiden kaçınma konusundaki güvenleri de artmıştır. (TEMD Diyabet Teknolojileri 2025, Bölüm 6, s. 99)",
+      "trigger": "Gerçek Zamanlı Sürekli Glukoz Ölçüm Sistemleri"
+    },
+    {
+      "id": "p-temd-dm2-071",
+      "level": "Kılavuz",
+      "title": "RESCUE'da DKA oranı iki bölümde iki farklı sayı",
+      "content": "RESCUE çalışmasında gerçek zamanlı SGM kullanan tip 1 diyabetlilerde şiddetli hipoglisemi ve diyabetik ketoasidozla ilgili hastane yatışları önemli oranda azalmıştır. Kılavuz aynı çalışmanın DKA rakamını iki yerde farklı veriyor. Sürekli glukoz ölçüm sistemlerinin genel sağlık üzerine etkisi kısmında 1 yıl sonrası için %4,6 - %1,06 yazıyor; insülin pompalarının genel sağlık üzerine etkisi kısmında 12 ay sonrası için %4,6 - %1,6 yazıyor. Şiddetli hipoglisemi rakamları iki yerde de aynıdır: %11,9 - %3,17. Aradaki farkı kılavuz açıklamıyor. (TEMD Diyabet Teknolojileri 2025, Bölüm 6, s. 99)",
+      "trigger": "RESCUE Çalışması"
+    },
+    {
+      "id": "p-temd-dm2-072",
+      "level": "Kılavuz",
+      "title": "MOBILE: tip 2 diyabette hedefte geçirilen süre %15 arttı",
+      "content": "MOBILE çalışmasında bazal insülin ile birlikte oral antidiyabetik alan tip 2 diyabetliler 8 ay izlenmiştir; gerçek zamanlı SGM grubunda HbA1c değişimi %-0,4, hedefte geçirilen sürede artış %15, hedefin altındaki sürede azalma %-0,24 olarak saptanmıştır. Tip 2 diyabetlilerde aralıklı gerçek zamanlı SGM ile parmak ucu ölçümü karşılaştırıldığında 12 hafta sonunda HbA1c değişimi sırasıyla %1 ve %0,5 düzeyinde olmuş, etki 40 haftalık takipte de sürmüştür. İnsülin kullanmayan tip 2 diyabetlilerde gerçek zamanlı SGM; HbA1c, GMI ve hiperglisemide geçirilen sürede azalma sağlarken hedefte geçirilen süreyi artırmıştır. Bu olumlu etkiler 6. ve 12. aylarda da devam etmiştir. (TEMD Diyabet Teknolojileri 2025, Bölüm 6, s. 99)",
+      "trigger": "Tip 2 Diyabette Gerçek Zamanlı SGM"
+    },
+    {
+      "id": "p-temd-dm2-073",
+      "level": "Kılavuz",
+      "title": "CONCEPTT: küçük HbA1c farkı, belirgin yenidoğan kazancı",
+      "content": "CONCEPTT, 18-40 yaş aralığında tip 1 diyabetli gebe veya gebe kalmayı planlayan kadınlarda yapılmış randomize kontrollü bir çalışmadır. Gerçek zamanlı SGM kullananlarda parmak ucu ölçümüne göre HbA1c'de yalnızca küçük bir fark saptanmıştır (ortalama %-0,19). Hiperglisemide geçirilen zaman %27'ye karşı %32, hedefte geçirilen süre %68'e karşı %61 bulunmuştur; hipoglisemide geçirilen zamanda anlamlı farklılık olmamıştır. Klinik yansıması ise daha az neonatal hipoglisemi, iri bebek doğumlarında azalma ve yenidoğan yoğun bakımda geçirilen sürede azalmadır. (TEMD Diyabet Teknolojileri 2025, Bölüm 6, s. 99)",
+      "trigger": "CONCEPTT Çalışması"
+    },
+    {
+      "id": "p-temd-dm2-074",
+      "level": "Kılavuz",
+      "title": "IMPACT: aralıklı taramalı SGM hipoglisemi süresini %38 azalttı",
+      "content": "IMPACT çalışmasında yoğun insülin tedavisi gören ve HbA1c değeri %6,7 olan tip 1 diyabetlilerde, aralıklı taramalı SGM kullananlarda hipoglisemide (70 mg/dL altında) geçirilen sürede %38 azalma saptanmıştır. Prospektif gözlemsel bir çalışmada şiddetli hipoglisemi veya DKA nedeniyle hastane yatışları %3,3'ten %2,2'ye düşmüştür. Yoğun insülin tedavisi gören tip 2 diyabetlilerde 6 ay sonraki takiplerde akut diyabetle ilişkili sonuçlarda %61, tüm nedenlere bağlı hastane yatışlarında %32 azalma bildirilmiştir. REPLACE çalışmasında hedefin altında geçirilen sürede %43, gece hipoglisemisinde %54,3 azalma saptanmıştır; kılavuz aynı %43'lük azalmayı bir yerde aralıklı taramalı SGM'ye, bir yerde gerçek zamanlı SGM'ye bağlamaktadır. TEMD, şiddetli hipoglisemisi olanlarda gerçek zamanlı SGM tercih edilmesini önermektedir. (TEMD Diyabet Teknolojileri 2025, Bölüm 6, s. 100)",
+      "trigger": "Aralıklı Taranan Sürekli Glukoz Ölçüm Sistemleri"
+    },
+    {
+      "id": "p-temd-dm2-075",
+      "level": "Kılavuz",
+      "title": "Otomatik insülin iletimi: HbA1c 0,3-0,7 puan, hedefte süre %10-15",
+      "content": "Gerçek dünya verileri ve meta-analizlerde insülin pompası kullananlarda HbA1c düzeyleri, toplam günlük insülin dozu ve şiddetli hipoglisemi oranları azalmıştır; HbA1c pompada %8,0 ±1,2, çoklu doz insülinde %8,5 ±1,7 bildirilmiş, hedefte geçirilen süre yaklaşık %5 artmıştır. Özellikle gençlerde benzer HbA1c değerlerine rağmen pompa kullanan grupta retinopati ve periferik nöropati oranları daha düşük bulunmuştur. Otomatik insülin iletim sistemleri, klasik ve sensör destekli pompalara göre HbA1c'de uzun süre devam eden %0,3-%0,7 azalma ve özellikle gece olmak üzere hedefte geçirilen sürede %10-%15 artış sağlamıştır. Bu etkiler en yüksek HbA1c düzeyine ve en düşük hedefte süreye sahip bireylerde daha fazla gözlenmiştir. (TEMD Diyabet Teknolojileri 2025, Bölüm 6, s. 102)",
+      "trigger": "İnsülin Pompaları ve Otomatik İnsülin İletimi"
+    },
+    {
+      "id": "p-temd-dm2-076",
+      "level": "Kılavuz",
+      "title": "Tip 2 diyabette yama pompa HbA1c'yi 1,6 puan düşürdü",
+      "content": "Tip 2 diyabetlilerde otomatik insülin iletim sisteminin etkileri ile ilgili çalışmalar sınırlıdır. Davis ve arkadaşları, HbA1c değeri %8 ve üzerinde olan suboptimal kontrollü tip 2 diyabetlileri yama pompa ile 26 hafta izlemiş; çalışma boyunca GLP-1 reseptör agonisti ve SGLT-2 inhibitörü gibi insülin dışı anti-hiperglisemik ilaçların kullanımına izin verilmiştir. Hedef üzerinde geçirilen süre %9,7 azalmış, hedefte geçirilen sürede %22 artış saptanmış, HbA1c %1,6 azalmıştır. Hedefin altında geçirilen süre başlangıçtan itibaren düşük seyretmiştir. Kılavuz bu bulguları, tip 2 diyabette yama pompanın glisemik hedeflere ulaşmada etkili bir yöntem olabileceğinin göstergesi sayar. (TEMD Diyabet Teknolojileri 2025, Bölüm 6, s. 103)",
+      "trigger": "Tip 2 Diyabette Otomatik İnsülin İletimi"
+    },
+    {
+      "id": "p-temd-dm2-077",
+      "level": "Kılavuz",
+      "title": "Haftada 2 bolus atlamak HbA1c'yi 0,4 puan yükseltiyor",
+      "content": "Çoklu doz insülin kullanan diyabetlilerde haftada 2 öğün bolus insülin dozunun atlanması ile HbA1c'de %0,4 artış olduğu belirtilmiştir. Akıllı insülin kalemleri ve kapakları insülin doz bilgisini otomatik kaydeder, cihazdaki insülini izler, bolus hesaplar ve kaçırılan doz uyarısı verir. İnsülin kalem kapağı kullanan tip 1 diyabetlilerde 6. haftada kontrol grubuna göre hedefte geçirilen sürede %6 artış, GMI'de %0,3 azalma ve hedef üzerinde geçirilen sürede %5,5 azalma bildirilmiştir. Kılavuz, yoğun insülin tedavisine ihtiyaç duyan ancak insülin pompasına ulaşamayan veya kullanmak istemeyen kişilerde SGM bağlantılı kalem ya da kapak kullanımını önermektedir. (TEMD Diyabet Teknolojileri 2025, Bölüm 6, s. 103)",
+      "trigger": "Akıllı İnsülin Kalemleri ve Kapakları"
+    },
+    {
+      "id": "p-temd-dm2-078",
+      "level": "Kılavuz",
+      "title": "Noninvaziv akıllı saat ve yüzükler için FDA uyarı yayınladı",
+      "content": "Yeni SGM sensörleri daha ince ve küçüktür; birçok cihazda kalibrasyon ihtiyacı ortadan kalkmış ve MARD değerleri %8-10 civarına inmiştir. Ölçülen değeri dakikada 1 gibi çok daha sık gösterebilen cihazlar geliştirilmiştir. Takılan sensörün ısınma süresi 30 dakika ile 2 saat aralığındadır ve yeni sürümlerde genellikle kısalmaktadır. Cilt altına yerleştirilip 365 gün süre ile veri alınabilen bir cihaz (Eversense 365) geliştirilmiştir. Buna karşılık kan şekerini noninvaziv ölçen akıllı saat ve yüzüklerin diyabet takibinde güvenilirlikleri kanıtlanmamıştır; FDA 2024 yılının başında uyarı yayınlayarak önerilmemeleri gerektiğini bildirmiştir. (TEMD Diyabet Teknolojileri 2025, Bölüm 7, s. 108)",
+      "trigger": "Teknolojide Yenilikler"
+    },
+    {
+      "id": "p-temd-dm2-079",
+      "level": "Kılavuz",
+      "title": "Açık kaynak insülin iletim sistemlerinin FDA onayı yok",
+      "content": "SGM ile pompa entegrasyonu üretici firma tarafından sunulmadığında Tidepool ya da CamAPS FX gibi ücretli veya ücretsiz sistemlerden yararlanılabilmektedir. Bir başka seçenek, FDA onayı olmamakla birlikte OpenAPS ve Loop gibi açık kaynak insülin iletim sistemleridir; bunlar diyabetliler veya aileleri tarafından geliştirilmiştir. Ücretsiz olmaları, erişimin daha kolay olması ve farklı pompa-SGM kombinasyonlarına izin vermeleri avantajdır. Buna karşılık daha fazla kullanıcı bilgisi gerektirirler ve standart regülasyonlara tabi olmadıkları için uygulamaya ilişkin kanıtlar yeterli değildir. (TEMD Diyabet Teknolojileri 2025, Bölüm 7, s. 108)",
+      "trigger": "Teknolojide Yenilikler"
+    },
+    {
+      "id": "p-temd-dm2-080",
+      "level": "Kılavuz",
+      "title": "Parasetamol, askorbik asit, alkol ve hidroksiüre sensörü şaşırtabilir",
+      "content": "İlaç-SGM etkileşimi yüksek doz parasetamol, askorbik asit, alkol ve hidroksiüre gibi bazı maddeler için çalışılmış olup bazı cihazlarda sonuçları etkilediği bildirilmiştir. Özellikle yaşlılık ve eşlik eden ciddi sağlık sorunu nedeniyle çoklu ilaç kullanan kişilerde, henüz çalışılmamış ilaçlarla ölçüm hataları görülebileceği dikkate alınmalıdır. Kapalı devre hibrit sistemlerde öğün ve egzersiz bilgisinin cihaza doğru, yeterli ve zamanında girilmesi hipoglisemiyi önlemede ve glisemik kontrolde başarıyı artırır; egzersiz için bu bilgi girişi 1-2 saat önce gerekir. Yeni takılan sensörün ısınma süresine ihtiyaç duyması, ilk saatlerde ve kan şekerindeki hızlı değişimlerde sensör performansının düşmesi ve ani değişimlerin ekrana yansımasındaki gecikme bu sistemlerde dikkatli olmayı gerektirir. (TEMD Diyabet Teknolojileri 2025, Bölüm 7, s. 109)",
+      "trigger": "Diyabet Teknolojisinde Eksiklikler ve Sorunlar"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "meta": {
-    "id": "temd-tiroid",
-    "branch": "endokrinoloji",
-    "baslik": "TEMD Tiroid 1",
-    "altbaslik": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) üzerinden klinik inciler",
+    "id": "temd-hipertansiyon",
+    "branch": "kardiyoloji",
+    "baslik": "TEMD Hipertansiyon",
+    "altbaslik": "TEMD Hipertansiyon Tanı ve Tedavi Kılavuzu 2022 üzerinden klinik inciler",
     "rozetler": [
       "YENİ",
       "SINAV SPOTU"
