@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Khorana Skoru — Kemoterapi ilişkili VTE riski",
-  description: "Khorana Skoru: Kemoterapi ilişkili VTE riski. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/khorana" },
+  title: "RECIST 1.1 Yanıt Değerlendirmesi — Tam / kısmi yanıt",
+  description: "RECIST 1.1 Yanıt Değerlendirmesi: Tam / kısmi yanıt, stabil ve progresif hastalık — küçülme başlangıçtan, büyüme… Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/recist" },
   openGraph: {
     type: "website",
-    title: "Khorana Skoru — Kemoterapi ilişkili VTE riski",
-    description: "Khorana Skoru: Kemoterapi ilişkili VTE riski. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/khorana",
+    title: "RECIST 1.1 Yanıt Değerlendirmesi — Tam / kısmi yanıt",
+    description: "RECIST 1.1 Yanıt Değerlendirmesi: Tam / kısmi yanıt, stabil ve progresif hastalık — küçülme başlangıçtan, büyüme… Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/recist",
   },
 };
 
@@ -22,54 +22,26 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Khorana Skoru",
-          aciklama: "Khorana Skoru: Kemoterapi ilişkili VTE riski. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/khorana",
+          ad: "RECIST 1.1 Yanıt Değerlendirmesi",
+          aciklama: "RECIST 1.1 Yanıt Değerlendirmesi: Tam / kısmi yanıt, stabil ve progresif hastalık — küçülme başlangıçtan, büyüme… Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/recist",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Khorana Skoru", yol: "/tools/khorana" },
+          { ad: "RECIST 1.1 Yanıt Değerlendirmesi", yol: "/tools/recist" },
         ])}
       />
       {children}
-      <nav aria-label="Bu aracın geçtiği konular" className="bg-slate-50 px-4 pb-6 font-sans">
-        <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
-            Bu aracın geçtiği konular
-          </h2>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/topics/hematoloji/antikoagulasyon-stratejileri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Antikoagülasyon Stratejileri ve Klinik Yönetim
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/hematoloji/kanser-iliskili-tromboz" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Kanser İlişkili Tromboz (CAT): Risk Sınıflaması, Profilaksi ve Tedavi
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+
       <nav aria-label="Aynı kategoriden araçlar" className="bg-slate-50 px-4 pb-10 font-sans">
         <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
             Onkoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/mascc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                MASCC Risk İndeksi
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/recist" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                RECIST 1.1 Yanıt Değerlendirmesi
-              </Link>
-            </li>
             <li>
               <Link href="/tools/sins" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 SINS Spinal İnstabilite Skoru
@@ -88,6 +60,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/anc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 ANC Hesaplama
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/calvert" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Calvert Formülü
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/cisne" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                CISNE Skoru
               </Link>
             </li>
           </ul>

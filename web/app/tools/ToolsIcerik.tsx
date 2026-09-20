@@ -124,6 +124,11 @@ const TOOLS_DATABASE = [
       { slug: "khorana", name: "Khorana Skoru", desc: "Kemoterapi ilişkili VTE riski" },
       { slug: "anc", name: "ANC Hesaplama", desc: "Mutlak nötrofil sayısı ve nötropeni evrelemesi" },
       { slug: "ipi", name: "IPI Skoru", desc: "Uluslararası Prognostik İndeks — agresif NHL / DLBCL (0–5 puan, 5 yıllık OS)" },
+      { slug: "recist", name: "RECIST 1.1 Yanıt Değerlendirmesi", desc: "Tam / kısmi yanıt, stabil ve progresif hastalık — küçülme başlangıçtan, büyüme nadirden" },
+      { slug: "ctcae-laboratuvar", name: "CTCAE Laboratuvar Derecelendirme", desc: "CTCAE v5.0 — sitopeni, karaciğer ve böbrek değerlerinde derece 0–4" },
+      { slug: "tumor-lizis", name: "Tümör Lizis Sendromu", desc: "Cairo-Bishop laboratuvar ve klinik TLS tanımı — %25 değişim ölçütü dahil" },
+      { slug: "cisne", name: "CISNE Skoru", desc: "Stabil febril nötropenide komplikasyon riski — 0–8, MASCC'i tamamlar" },
+      { slug: "sins", name: "SINS Spinal İnstabilite Skoru", desc: "Neoplastik omurga tutulumunda mekanik instabilite — 0–18" },
     ]
   },
   {

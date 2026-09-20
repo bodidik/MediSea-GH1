@@ -255,6 +255,11 @@
   "desc": "Siroz şiddet ve prognozu"
  },
  {
+  "slug": "cisne",
+  "name": "CISNE Skoru",
+  "desc": "Stabil febril nötropenide komplikasyon riski — 0–8, MASCC'i tamamlar"
+ },
+ {
   "slug": "ciwa-ar",
   "name": "CIWA-Ar",
   "desc": "Alkol yoksunluğu şiddeti — 10 madde, nöbet/deliryum riski değerlendirme"
@@ -293,6 +298,11 @@
   "slug": "crusade",
   "name": "CRUSADE Kanama Skoru",
   "desc": "NSTEMI'de hastane içi majör kanama riski — 8 değişken"
+ },
+ {
+  "slug": "ctcae-laboratuvar",
+  "name": "CTCAE Laboratuvar Derecelendirme",
+  "desc": "CTCAE v5.0 — sitopeni, karaciğer ve böbrek değerlerinde derece 0–4"
  },
  {
   "slug": "curb65",
@@ -1010,6 +1020,11 @@
   "desc": "Richmond Ajitasyon–Sedasyon Skalası — −5/+4, sedasyon hedefi"
  },
  {
+  "slug": "recist",
+  "name": "RECIST 1.1 Yanıt Değerlendirmesi",
+  "desc": "Tam / kısmi yanıt, stabil ve progresif hastalık — küçülme başlangıçtan, büyüme nadirden"
+ },
+ {
   "slug": "refeeding-risk",
   "name": "Refeeding Sendromu Riski",
   "desc": "NICE kriterleri — beslenme başlatmada hipofosfatemi riski"
@@ -1083,6 +1098,11 @@
   "slug": "sgarbossa",
   "name": "Sgarbossa Kriterleri",
   "desc": "Sol dal bloğu ya da pace ritminde akut MI — özgün ve Smith-modifiye"
+ },
+ {
+  "slug": "sins",
+  "name": "SINS Spinal İnstabilite Skoru",
+  "desc": "Neoplastik omurga tutulumunda mekanik instabilite — 0–18"
  },
  {
   "slug": "sjogren-2016",
@@ -1203,6 +1223,11 @@
   "slug": "trombosit-cci",
   "name": "Trombosit Transfüzyonu CCI",
   "desc": "Düzeltilmiş sayım artışı — trombosit transfüzyonuna refrakterlik"
+ },
+ {
+  "slug": "tumor-lizis",
+  "name": "Tümör Lizis Sendromu",
+  "desc": "Cairo-Bishop laboratuvar ve klinik TLS tanımı — %25 değişim ölçütü dahil"
  },
  {
   "slug": "uas7",

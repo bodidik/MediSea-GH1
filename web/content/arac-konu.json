@@ -483,6 +483,11 @@
         "eslesen": "Charlson Komorbidite İndeksi"
       },
       {
+        "slug": "tumor-lizis",
+        "name": "Tümör Lizis Sendromu",
+        "eslesen": "Tümör Lizis Sendromu"
+      },
+      {
         "slug": "karnofsky",
         "name": "Karnofsky (KPS)",
         "eslesen": "Karnofsky"
@@ -527,6 +532,13 @@
         "slug": "khorana",
         "name": "Khorana Skoru",
         "eslesen": "Khorana Skoru"
+      }
+    ],
+    "hematoloji/burkitt": [
+      {
+        "slug": "tumor-lizis",
+        "name": "Tümör Lizis Sendromu",
+        "eslesen": "Tümör Lizis Sendromu"
       }
     ],
     "hematoloji/chase-less-skoru": [
@@ -639,6 +651,13 @@
         "slug": "khorana",
         "name": "Khorana Skoru",
         "eslesen": "Khorana Skoru"
+      }
+    ],
+    "hematoloji/kll": [
+      {
+        "slug": "tumor-lizis",
+        "name": "Tümör Lizis Sendromu",
+        "eslesen": "Tümör Lizis Sendromu"
       }
     ],
     "hematoloji/kronik-eozinofilik-losemi-cel": [
@@ -1002,6 +1021,20 @@
         "eslesen": "eGFR"
       }
     ],
+    "onkoloji/febril-notropeni-cisne-indexi": [
+      {
+        "slug": "cisne",
+        "name": "CISNE Skoru",
+        "eslesen": "CISNE Skoru"
+      }
+    ],
+    "onkoloji/febril-notropeni-konu": [
+      {
+        "slug": "cisne",
+        "name": "CISNE Skoru",
+        "eslesen": "CISNE Skoru"
+      }
+    ],
     "onkoloji/febril-notropeni-mascc-indexi": [
       {
         "slug": "mascc",
@@ -1028,6 +1061,13 @@
         "slug": "anaphylaxis",
         "name": "Anafilaksi Kriterleri",
         "eslesen": "Anafilaksi"
+      }
+    ],
+    "onkoloji/tumor-lizis-sendromu-kapsamli": [
+      {
+        "slug": "tumor-lizis",
+        "name": "Tümör Lizis Sendromu",
+        "eslesen": "Tümör Lizis Sendromu"
       }
     ],
     "romatoloji/behcet-hasar-indeksleri": [
@@ -1572,6 +1612,28 @@
         "eslesen": "Karnofsky"
       }
     ],
+    "tumor-lizis": [
+      {
+        "yol": "hematoloji/aml",
+        "baslik": "Akut Miyeloid Lösemi (AML)",
+        "eslesen": "Tümör Lizis Sendromu"
+      },
+      {
+        "yol": "onkoloji/tumor-lizis-sendromu-kapsamli",
+        "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)",
+        "eslesen": "Tümör Lizis Sendromu"
+      },
+      {
+        "yol": "hematoloji/burkitt",
+        "baslik": "Burkitt Lenfoma",
+        "eslesen": "Tümör Lizis Sendromu"
+      },
+      {
+        "yol": "hematoloji/kll",
+        "baslik": "Kronik Lenfositik Lösemi (KLL)",
+        "eslesen": "Tümör Lizis Sendromu"
+      }
+    ],
     "retikulosit-indeksi": [
       {
         "yol": "hematoloji/anemiler",
@@ -1790,6 +1852,18 @@
         "eslesen": "NRS-2002"
       }
     ],
+    "cisne": [
+      {
+        "yol": "onkoloji/febril-notropeni-cisne-indexi",
+        "baslik": "CISNE Risk İndeksi ve Solid Tümörlerde Febril Nötropeni Yönetimi",
+        "eslesen": "CISNE Skoru"
+      },
+      {
+        "yol": "onkoloji/febril-notropeni-konu",
+        "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi",
+        "eslesen": "CISNE Skoru"
+      }
+    ],
     "mascc": [
       {
         "yol": "onkoloji/febril-notropeni-mascc-indexi",
@@ -1827,9 +1901,9 @@
   },
   "olcum": {
     "konu": 497,
-    "arac": 250,
-    "araciOlanKonu": 127,
-    "konusuOlanArac": 51,
-    "bag": 162
+    "arac": 255,
+    "araciOlanKonu": 132,
+    "konusuOlanArac": 53,
+    "bag": 168
   }
 }

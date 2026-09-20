@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Vücut Yüzey Alanı (BSA) — Mosteller formülü",
-  description: "Vücut Yüzey Alanı (BSA): Mosteller formülü — kemoterapi dozlama. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/bsa" },
+  title: "SINS Spinal İnstabilite Skoru — Neoplastik omurga",
+  description: "SINS Spinal İnstabilite Skoru: Neoplastik omurga tutulumunda mekanik instabilite — 0–18. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/sins" },
   openGraph: {
     type: "website",
-    title: "Vücut Yüzey Alanı (BSA) — Mosteller formülü",
-    description: "Vücut Yüzey Alanı (BSA): Mosteller formülü — kemoterapi dozlama. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/bsa",
+    title: "SINS Spinal İnstabilite Skoru — Neoplastik omurga",
+    description: "SINS Spinal İnstabilite Skoru: Neoplastik omurga tutulumunda mekanik instabilite — 0–18. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/sins",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Vücut Yüzey Alanı (BSA)",
-          aciklama: "Vücut Yüzey Alanı (BSA): Mosteller formülü — kemoterapi dozlama. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/bsa",
+          ad: "SINS Spinal İnstabilite Skoru",
+          aciklama: "SINS Spinal İnstabilite Skoru: Neoplastik omurga tutulumunda mekanik instabilite — 0–18. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/sins",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Vücut Yüzey Alanı (BSA)", yol: "/tools/bsa" },
+          { ad: "SINS Spinal İnstabilite Skoru", yol: "/tools/sins" },
         ])}
       />
       {children}
@@ -42,6 +42,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Onkoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/tumor-lizis" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Tümör Lizis Sendromu
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/bsa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Vücut Yüzey Alanı (BSA)
+              </Link>
+            </li>
             <li>
               <Link href="/tools/anc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 ANC Hesaplama
@@ -60,16 +70,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/ctcae-laboratuvar" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 CTCAE Laboratuvar Derecelendirme
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/ecog" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ECOG Performans Durumu
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/ipi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                IPI Skoru
               </Link>
             </li>
           </ul>

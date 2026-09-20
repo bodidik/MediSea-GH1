@@ -896,6 +896,31 @@
     "slug": "ipi",
     "name": "IPI Skoru",
     "icon": "🎗️"
+   },
+   {
+    "slug": "recist",
+    "name": "RECIST 1.1 Yanıt Değerlendirmesi",
+    "icon": "🎗️"
+   },
+   {
+    "slug": "ctcae-laboratuvar",
+    "name": "CTCAE Laboratuvar Derecelendirme",
+    "icon": "🎗️"
+   },
+   {
+    "slug": "tumor-lizis",
+    "name": "Tümör Lizis Sendromu",
+    "icon": "🎗️"
+   },
+   {
+    "slug": "cisne",
+    "name": "CISNE Skoru",
+    "icon": "🎗️"
+   },
+   {
+    "slug": "sins",
+    "name": "SINS Spinal İnstabilite Skoru",
+    "icon": "🎗️"
    }
   ]
  },
