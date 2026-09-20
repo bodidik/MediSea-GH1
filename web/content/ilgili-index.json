@@ -164,6 +164,11 @@
    "brans": "endokrinoloji",
    "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
    "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
+   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
   }
  ],
  "endokrinoloji/arka-hipofiz-bozukluklari-di-ve-siadh": [
@@ -371,6 +376,11 @@
    "brans": "endokrinoloji",
    "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
    "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
+   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
   },
   {
    "brans": "endokrinoloji",
@@ -601,6 +611,38 @@
    "brans": "endokrinoloji",
    "slug": "subklinik-tiroid-hastaliklari",
    "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
+  }
+ ],
+ "endokrinoloji/hipertiroidizmde-kardiyovaskuler-sistem": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "amiodaron-iliskili-tirotoksikoz",
+   "baslik": "Amiodaron İlişkili Tirotoksikoz (AİT)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-hipertiroidizm",
+   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
+   "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "tirzepatid-kardiyorenal-koruma",
+   "baslik": "Tirzepatid: Kardiyorenal Koruma ve Pleiotropik Etkiler"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "akut-kalp-yetersizligi",
+   "baslik": "Akut Dekompanse Kalp Yetersizliği (ADKY): Kapsamlı Yönetim"
   }
  ],
  "endokrinoloji/hipofiz-adenomlari": [
@@ -2055,23 +2097,23 @@
  "endokrinoloji/tiroid-hastaliklari-ana": [
   {
    "brans": "endokrinoloji",
-   "slug": "amiodaron-iliskili-tirotoksikoz",
-   "baslik": "Amiodaron İlişkili Tirotoksikoz (AİT)"
-  },
-  {
-   "brans": "endokrinoloji",
    "slug": "diabetes-mellitus-ana",
    "baslik": "Diabetes Mellitus"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
-   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
+   "slug": "on-hipofiz-hastaliklari-giris",
+   "baslik": "Ön Hipofiz Hastalıklarına Giriş"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "on-hipofiz-hastaliklari-giris",
-   "baslik": "Ön Hipofiz Hastalıklarına Giriş"
+   "slug": "amiodaron-iliskili-tirotoksikoz",
+   "baslik": "Amiodaron İlişkili Tirotoksikoz (AİT)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
   }
  ],
  "endokrinoloji/tiroid-yaslanmasi-fizyolojisi": [
@@ -2114,6 +2156,11 @@
   }
  ],
  "endokrinoloji/tirzepatid-kardiyorenal-koruma": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
+   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
+  },
   {
    "brans": "nefroloji",
    "slug": "polikistik-bobrek-kardiyovaskuler",
@@ -2176,6 +2223,11 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
+   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "subklinik-tiroid-hastaliklari",
    "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
   }
@@ -2195,6 +2247,11 @@
    "brans": "endokrinoloji",
    "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
    "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
+   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
   },
   {
    "brans": "endokrinoloji",
@@ -5265,19 +5322,9 @@
  ],
  "kardiyoloji/akut-kalp-yetersizligi": [
   {
-   "brans": "kardiyoloji",
-   "slug": "kalp-yetersizligi-arni-tedavisi",
-   "baslik": "ARNI (Sakubitril/Valsartan) Tedavisi: Mekanizma, Kanıtlar ve Yönetim"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "kalp-yetersizligi-hipotansiyon",
-   "baslik": "KY'de Hipotansiyon ve Şok Yönetimi (Soğuk ve Islak Profil)"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "kardiyak-amiloidoz",
-   "baslik": "Kardiyak Amiloidoz: Tanı ve Güncel Tedavi Yaklaşımı"
+   "brans": "endokrinoloji",
+   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
+   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
   }
  ],
  "kardiyoloji/akut-koroner-sendromlar": [
@@ -5592,24 +5639,9 @@
  ],
  "kardiyoloji/kalp-yetmezligi": [
   {
-   "brans": "kardiyoloji",
-   "slug": "kalp-yetersizligi-arni-etkilesimler",
-   "baslik": "ARNI Tedavisinde İlaç Etkileşimleri ve Kombinasyon Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "lipidoloji-statin-miyopatisi-sams",
-   "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "lipidoloji-tedavi-ana",
-   "baslik": "Klinik Lipidoloji tedavi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "pcsk9-inhibitorleri",
-   "baslik": "PCSK9 İnhibisyonu"
+   "brans": "endokrinoloji",
+   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
+   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
   }
  ],
  "kardiyoloji/kapak-hastaliklari": [
@@ -6664,6 +6696,11 @@
    "brans": "nefroloji",
    "slug": "polikistik-bobrek-tedavi",
    "baslik": "ADPKD İleri Okuma: Uzman Düzeyi Tedavi ve Yönetim Kılavuzu"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
+   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
   },
   {
    "brans": "endokrinoloji",
