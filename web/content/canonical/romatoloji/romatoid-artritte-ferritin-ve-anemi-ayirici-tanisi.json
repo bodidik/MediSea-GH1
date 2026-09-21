@@ -1,0 +1,40 @@
+{
+  "title": "Romatoid Artritte Serum Ferritin: Anemi Ayırıcı Tanısı ve Eşik Değerler",
+  "meta": {
+    "updatedAt": "21 Eyl 2026",
+    "tags": [
+      "Romatoloji",
+      "Romatoid Artrit",
+      "Ferritin",
+      "Akut Faz Reaktanı",
+      "Kronik Hastalık Anemisi",
+      "Demir Eksikliği Anemisi",
+      "Hepsidin",
+      "Transferrin Satürasyonu"
+    ],
+    "parent": "romatoid-artrit",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Romatoid Artrit (RA) klinik takibinde ve hematolojik komplikasyonların ayırıcı tanısında Serum Ferritin düzeyinin değerlendirilmesi, romatoloji pratiğinde özel bir yaklaşım gerektirir.</p>"
+    },
+    {
+      "heading": "Biyokimyasal Özellik ve Akut Faz Cevabı",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Pozitif Akut Faz Reaktanı (PAFR):</strong> Ferritin, sistemik inflamasyon durumunda (özellikle IL-6 ve proinflamatuar sitokin uyarısıyla) karaciğerden sentezi artan pozitif bir akut faz reaktanıdır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Aktif Hastalıkta Yükselme:</strong> Aktif RA'da hepsidin uyarısı ve sistemik sitokin yükü nedeniyle serum ferritin seviyeleri reaktif olarak yükselir. Bu durum, vücuttaki gerçek demir depolarının değerlendirilmesini güçleştirir.</li></ul></div>"
+    },
+    {
+      "heading": "Anemi Ayırıcı Tanısındaki Kritik Rolü (KHA vs. DEA)",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">RA seyrinde gelişen anemilerin ayırıcı tanısında ferritin seviyesi kilit parametredir:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kronik Hastalık Anemisi (KHA):</strong> RA'da en sık izlenen anemi türüdür. KHA'da demir, retiküloendotelyal sistemde (depolarda) hapsedildiği için serum ferritini normal veya artmıştır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Eşlik Eden Demir Eksikliği Anemisi (DEA):</strong> NSAİİ kullanımına sekonder gastrointestinal mikro-kanamalar veya emilim bozuklukları nedeniyle RA hastalarında KHA ile birlikte mutlak demir eksikliği de sıkça tabloya eklenir.</li></ul></div>"
+    },
+    {
+      "heading": "Eşik Değer (Cut-off) Kontrolü",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Standart Popülasyonda (İnflamasyon Yokken):</strong> Serum Ferritini &lt;30 ng/mL olması mutlak demir eksikliğini gösterir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>RA / Kronik İnflamatuar Durumlarda:</strong> Ferritin bir akut faz reaktanı olduğu için aktif RA hastasında &lt;30 ng/mL eşik değeri demir eksikliğini yakalamada yetersiz kalır ve eksikliği maskeler.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Klinik Eşik Revizyonu:</strong> Aktif inflamasyonu olan bir RA hastasında eşlik eden mutlak/görece demir eksikliğini saptamak için kabul edilen klinik kesim değeri Ferritin &lt;100 ng/mL veya Transferrin Saturasyonu (TSAT) &lt;%20'dir.</li></ul></div>"
+    },
+    {
+      "heading": "Özet",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Tanım:</strong> Serum Ferritin, aktif RA'da yükselen pozitif bir akut faz reaktanıdır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Klinik Önemi:</strong> RA'da en sık görülen Kronik Hastalık Anemisinde (KHA) ferritin normal/yüksek seyrederken, demir eksikliği anemisinde (DEA) depoların boşalmasını yansıtır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Eşik Değer (Kritik Nokta):</strong> İnflamatuar zemin nedeniyle RA hastalarında demir eksikliği tanısı için standart eşik (&lt;30 ng/mL) yerine Ferritin &lt;100 ng/mL (veya TSAT &lt;%20) eşik değeri esas alınmalıdır.</li></ul></div>"
+    }
+  ]
+}

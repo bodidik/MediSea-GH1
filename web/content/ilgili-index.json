@@ -4280,6 +4280,11 @@
    "brans": "hematoloji",
    "slug": "sistemik-mastositoz-sm",
    "baslik": "Sistemik Mastositoz (SM)"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi",
+   "baslik": "Romatoid Artritte Serum Ferritin: Anemi Ayırıcı Tanısı ve Eşik Değerler"
   }
  ],
  "hematoloji/demir-eksikligi-anemisi": [
@@ -4287,6 +4292,11 @@
    "brans": "hematoloji",
    "slug": "demir-eksikligi",
    "baslik": "Demir Eksikliği Anemisi (DEA)"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi",
+   "baslik": "Romatoid Artritte Serum Ferritin: Anemi Ayırıcı Tanısı ve Eşik Değerler"
   }
  ],
  "hematoloji/dlbcl": [
@@ -7733,6 +7743,35 @@
    "brans": "gastroenteroloji",
    "slug": "hepatit-b",
    "baslik": "Hepatit B (HBV): Seroloji ve Klinik Yönetim"
+  }
+ ],
+ "romatoloji/romatoid-artrit": [
+  {
+   "brans": "romatoloji",
+   "slug": "vaskulit-sendromlari",
+   "baslik": "Vaskülit Sendromları"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "behcet-hastaligi-yonetimi",
+   "baslik": "Behçet Hastalığı: Patogenez, Klinik ve Yönetim Algoritması"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "behcet-vaskuler-tutulum",
+   "baslik": "Behçet Sendromunda Vasküler Tutulum ve YDUS Yönetimi"
+  }
+ ],
+ "romatoloji/romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi": [
+  {
+   "brans": "hematoloji",
+   "slug": "demir-eksikligi",
+   "baslik": "Demir Eksikliği Anemisi (DEA)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "demir-eksikligi-anemisi",
+   "baslik": "Demir Eksikliği Anemisi (DEA)"
   }
  ],
  "romatoloji/vaskulit-sendromlari": [
