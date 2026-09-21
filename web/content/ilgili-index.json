@@ -3154,21 +3154,6 @@
    "brans": "endokrinoloji",
    "slug": "men1-insulinoma",
    "baslik": "MEN1 İlişkili İnsülinoma: Klinik Davranış, Hipoglisemi Yönetimi ve Cerrahi Strateji"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "antikoagulasyon-stratejileri",
-   "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
-   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "vka-doac-karsilastirma",
-   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   }
  ],
  "enfeksiyon/tigesiklin-uyarilar-yan-etkiler": [
@@ -4183,21 +4168,38 @@
    "baslik": "Demir Eksikliği Anemisi (DEA)"
   }
  ],
+ "hematoloji/antikoagulasyon-ileri-duzey-klinik-inciler": [
+  {
+   "brans": "hematoloji",
+   "slug": "vka-doac-karsilastirma",
+   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kanser-iliskili-tromboz",
+   "baslik": "Kanser İlişkili Tromboz (CAT): Risk Sınıflaması, Profilaksi ve Tedavi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "trombositopenide-antikoagulasyon",
+   "baslik": "Trombositopenik Hastada Antikoagülasyon: Eşikler, Doz Modifikasyonu ve Özel Senaryolar"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "trombofililer-hiperkoagulabilite",
+   "baslik": "Trombofililer ve Hiperkoagülabilite"
+  }
+ ],
  "hematoloji/antikoagulasyon-stratejileri": [
   {
    "brans": "kardiyoloji",
    "slug": "aks-oac-antitrombotik-yonetim",
    "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "tigesiklin-ilac-etkilesimleri",
-   "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "uclu-tedavi-uzatma-risk-faktorleri",
-   "baslik": "Üçlü Tedavi Süresini Etkileyen Yüksek İskemi ve Stent Trombozu Riskleri"
   }
  ],
  "hematoloji/aplastik-anemi": [
@@ -4584,6 +4586,11 @@
  "hematoloji/inme-sonrasi-gizli-af": [
   {
    "brans": "hematoloji",
+   "slug": "antikoagulasyon-ileri-duzey-klinik-inciler",
+   "baslik": "Antikoagülasyonda 20 İleri Düzey Klinik İnci"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "kanser-iliskili-tromboz",
    "baslik": "Kanser İlişkili Tromboz (CAT): Risk Sınıflaması, Profilaksi ve Tedavi"
   },
@@ -4657,11 +4664,21 @@
  "hematoloji/kanser-iliskili-tromboz": [
   {
    "brans": "hematoloji",
+   "slug": "antikoagulasyon-ileri-duzey-klinik-inciler",
+   "baslik": "Antikoagülasyonda 20 İleri Düzey Klinik İnci"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "trombositopenide-antikoagulasyon",
    "baslik": "Trombositopenik Hastada Antikoagülasyon: Eşikler, Doz Modifikasyonu ve Özel Senaryolar"
   }
  ],
  "hematoloji/kisa-bagirsak-sendromunda-antikoagulasyon": [
+  {
+   "brans": "hematoloji",
+   "slug": "antikoagulasyon-ileri-duzey-klinik-inciler",
+   "baslik": "Antikoagülasyonda 20 İleri Düzey Klinik İnci"
+  },
   {
    "brans": "gastroenteroloji",
    "slug": "colyak-beslenme",
@@ -4681,11 +4698,6 @@
    "brans": "klinik-nutrisyon",
    "slug": "klinik-nutrisyon-ana-unite",
    "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "tigesiklin-ilac-etkilesimleri",
-   "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
   }
  ],
  "hematoloji/kll": [
@@ -5233,6 +5245,11 @@
  "hematoloji/trombofililer-hiperkoagulabilite": [
   {
    "brans": "hematoloji",
+   "slug": "antikoagulasyon-ileri-duzey-klinik-inciler",
+   "baslik": "Antikoagülasyonda 20 İleri Düzey Klinik İnci"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "vka-doac-karsilastirma",
    "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   }
@@ -5279,6 +5296,11 @@
  "hematoloji/trombositopenide-antikoagulasyon": [
   {
    "brans": "hematoloji",
+   "slug": "antikoagulasyon-ileri-duzey-klinik-inciler",
+   "baslik": "Antikoagülasyonda 20 İleri Düzey Klinik İnci"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "kanser-iliskili-tromboz",
    "baslik": "Kanser İlişkili Tromboz (CAT): Risk Sınıflaması, Profilaksi ve Tedavi"
   }
@@ -5293,8 +5315,8 @@
  "hematoloji/vka-doac-karsilastirma": [
   {
    "brans": "hematoloji",
-   "slug": "trombofililer-hiperkoagulabilite",
-   "baslik": "Trombofililer ve Hiperkoagülabilite"
+   "slug": "antikoagulasyon-ileri-duzey-klinik-inciler",
+   "baslik": "Antikoagülasyonda 20 İleri Düzey Klinik İnci"
   },
   {
    "brans": "hematoloji",
@@ -5302,19 +5324,9 @@
    "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
   },
   {
-   "brans": "enfeksiyon",
-   "slug": "tigesiklin-ilac-etkilesimleri",
-   "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "aks-oac-antitrombotik-yonetim",
-   "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "uclu-tedavi-uzatma-risk-faktorleri",
-   "baslik": "Üçlü Tedavi Süresini Etkileyen Yüksek İskemi ve Stent Trombozu Riskleri"
+   "brans": "hematoloji",
+   "slug": "trombofililer-hiperkoagulabilite",
+   "baslik": "Trombofililer ve Hiperkoagülabilite"
   }
  ],
  "hematoloji/von-willebrand-hastaligi-vwd": [
@@ -5446,11 +5458,6 @@
    "brans": "hematoloji",
    "slug": "antikoagulasyon-stratejileri",
    "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "vka-doac-karsilastirma",
-   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   },
   {
    "brans": "kardiyoloji",
@@ -6071,16 +6078,6 @@
    "brans": "kardiyoloji",
    "slug": "aks-oac-antitrombotik-yonetim",
    "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "antikoagulasyon-stratejileri",
-   "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "vka-doac-karsilastirma",
-   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   },
   {
    "brans": "kardiyoloji",
