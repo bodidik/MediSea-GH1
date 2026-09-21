@@ -1121,6 +1121,23 @@
         "name": "SDAI",
         "eslesen": "SDAI"
       }
+    ],
+    "romatoloji/seropozitif-ra-antikor-takibi-ve-biyolojik-ajan-secimi": [
+      {
+        "slug": "das28",
+        "name": "DAS28 (ESR/CRP)",
+        "eslesen": "DAS28"
+      },
+      {
+        "slug": "cdai",
+        "name": "CDAI",
+        "eslesen": "CDAI"
+      },
+      {
+        "slug": "sdai",
+        "name": "SDAI",
+        "eslesen": "SDAI"
+      }
     ]
   },
   "aracKonu": {
@@ -1920,12 +1937,22 @@
         "yol": "romatoloji/romatoid-artrit",
         "baslik": "Romatoid Artrit (RA)",
         "eslesen": "CDAI"
+      },
+      {
+        "yol": "romatoloji/seropozitif-ra-antikor-takibi-ve-biyolojik-ajan-secimi",
+        "baslik": "Seropozitif RA'da Antikor Titrelerinin Takibi ve Biyolojik Ajan Seçimi",
+        "eslesen": "CDAI"
       }
     ],
     "das28": [
       {
         "yol": "romatoloji/romatoid-artrit",
         "baslik": "Romatoid Artrit (RA)",
+        "eslesen": "DAS28"
+      },
+      {
+        "yol": "romatoloji/seropozitif-ra-antikor-takibi-ve-biyolojik-ajan-secimi",
+        "baslik": "Seropozitif RA'da Antikor Titrelerinin Takibi ve Biyolojik Ajan Seçimi",
         "eslesen": "DAS28"
       }
     ],
@@ -1934,14 +1961,19 @@
         "yol": "romatoloji/romatoid-artrit",
         "baslik": "Romatoid Artrit (RA)",
         "eslesen": "SDAI"
+      },
+      {
+        "yol": "romatoloji/seropozitif-ra-antikor-takibi-ve-biyolojik-ajan-secimi",
+        "baslik": "Seropozitif RA'da Antikor Titrelerinin Takibi ve Biyolojik Ajan Seçimi",
+        "eslesen": "SDAI"
       }
     ]
   },
   "olcum": {
-    "konu": 503,
+    "konu": 506,
     "arac": 255,
-    "araciOlanKonu": 133,
+    "araciOlanKonu": 134,
     "konusuOlanArac": 56,
-    "bag": 171
+    "bag": 174
   }
 }

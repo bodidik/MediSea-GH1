@@ -46,6 +46,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
                 Romatoid Artrit (RA)
               </Link>
             </li>
+            <li>
+              <Link href="/topics/romatoloji/seropozitif-ra-antikor-takibi-ve-biyolojik-ajan-secimi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Seropozitif RA'da Antikor Titrelerinin Takibi ve Biyolojik Ajan Seçimi
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

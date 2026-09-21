@@ -6794,6 +6794,11 @@
    "brans": "nefroloji",
    "slug": "membranoz-nefropati-patofizyolojisi",
    "baslik": "Membranöz Nefropati (MN) Patofizyolojisi"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "anti-ccp-negatif-romatoid-artrit",
+   "baslik": "Anti-CCP (ACPA) Negatif Romatoid Artrit: Prognostik Profil ve Tedavi Seçimi"
   }
  ],
  "nefroloji/metabolik-alkaloz": [
@@ -7612,6 +7617,28 @@
    "baslik": "Behçet Hastalığı: Patogenez, Klinik ve Yönetim Algoritması"
   }
  ],
+ "romatoloji/anti-ccp-negatif-romatoid-artrit": [
+  {
+   "brans": "romatoloji",
+   "slug": "seropozitif-ra-antikor-takibi-ve-biyolojik-ajan-secimi",
+   "baslik": "Seropozitif RA'da Antikor Titrelerinin Takibi ve Biyolojik Ajan Seçimi"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "romatoid-artritte-rf-ve-anti-ccp-prognostik-onemi",
+   "baslik": "Romatoid Artritte RF ve Anti-CCP Düzeylerinin Prognostik Önemi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "membranoz-nefropati-tedavi-yonetimi",
+   "baslik": "Klinik Yönetim: Primer Membranöz Nefropati Tedavisi"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi",
+   "baslik": "Romatoid Artritte Serum Ferritin: Anemi Ayırıcı Tanısı ve Eşik Değerler"
+  }
+ ],
  "romatoloji/behcet-hasar-indeksleri": [
   {
    "brans": "romatoloji",
@@ -7772,6 +7799,65 @@
    "brans": "hematoloji",
    "slug": "demir-eksikligi-anemisi",
    "baslik": "Demir Eksikliği Anemisi (DEA)"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "anti-ccp-negatif-romatoid-artrit",
+   "baslik": "Anti-CCP (ACPA) Negatif Romatoid Artrit: Prognostik Profil ve Tedavi Seçimi"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "romatoid-artritte-rf-ve-anti-ccp-prognostik-onemi",
+   "baslik": "Romatoid Artritte RF ve Anti-CCP Düzeylerinin Prognostik Önemi"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "seropozitif-ra-antikor-takibi-ve-biyolojik-ajan-secimi",
+   "baslik": "Seropozitif RA'da Antikor Titrelerinin Takibi ve Biyolojik Ajan Seçimi"
+  }
+ ],
+ "romatoloji/romatoid-artritte-rf-ve-anti-ccp-prognostik-onemi": [
+  {
+   "brans": "romatoloji",
+   "slug": "anti-ccp-negatif-romatoid-artrit",
+   "baslik": "Anti-CCP (ACPA) Negatif Romatoid Artrit: Prognostik Profil ve Tedavi Seçimi"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "seropozitif-ra-antikor-takibi-ve-biyolojik-ajan-secimi",
+   "baslik": "Seropozitif RA'da Antikor Titrelerinin Takibi ve Biyolojik Ajan Seçimi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "membranoz-nefropati-tedavi-yonetimi",
+   "baslik": "Klinik Yönetim: Primer Membranöz Nefropati Tedavisi"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi",
+   "baslik": "Romatoid Artritte Serum Ferritin: Anemi Ayırıcı Tanısı ve Eşik Değerler"
+  }
+ ],
+ "romatoloji/seropozitif-ra-antikor-takibi-ve-biyolojik-ajan-secimi": [
+  {
+   "brans": "romatoloji",
+   "slug": "anti-ccp-negatif-romatoid-artrit",
+   "baslik": "Anti-CCP (ACPA) Negatif Romatoid Artrit: Prognostik Profil ve Tedavi Seçimi"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "romatoid-artritte-rf-ve-anti-ccp-prognostik-onemi",
+   "baslik": "Romatoid Artritte RF ve Anti-CCP Düzeylerinin Prognostik Önemi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "membranoz-nefropati-tedavi-yonetimi",
+   "baslik": "Klinik Yönetim: Primer Membranöz Nefropati Tedavisi"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi",
+   "baslik": "Romatoid Artritte Serum Ferritin: Anemi Ayırıcı Tanısı ve Eşik Değerler"
   }
  ],
  "romatoloji/vaskulit-sendromlari": [

@@ -446,6 +446,7 @@
  "palyatif/opioidler-ana-sayfa": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları",
  "palyatif/palyatif-bakim-ana-sayfa": "Palyatif Bakım: Kapsamlı Bir Genel Bakış",
  "romatoloji/anca-iliskili-vaskulitler": "ANCA İlişkili Vaskülitler (AAV)",
+ "romatoloji/anti-ccp-negatif-romatoid-artrit": "Anti-CCP (ACPA) Negatif Romatoid Artrit: Prognostik Profil ve Tedavi Seçimi",
  "romatoloji/behcet-hasar-indeksleri": "Behçet Sendromunda Hasar İndeksleri: BODI ve BDI",
  "romatoloji/behcet-hastaligi-yonetimi": "Behçet Hastalığı: Patogenez, Klinik ve Yönetim Algoritması",
  "romatoloji/behcet-vaskuler-tutulum": "Behçet Sendromunda Vasküler Tutulum ve YDUS Yönetimi",
@@ -457,5 +458,7 @@
  "romatoloji/orta-damar-vaskulitleri": "Poliarteritis Nodosa (PAN) ve Kawasaki",
  "romatoloji/romatoid-artrit": "Romatoid Artrit (RA)",
  "romatoloji/romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi": "Romatoid Artritte Serum Ferritin: Anemi Ayırıcı Tanısı ve Eşik Değerler",
+ "romatoloji/romatoid-artritte-rf-ve-anti-ccp-prognostik-onemi": "Romatoid Artritte RF ve Anti-CCP Düzeylerinin Prognostik Önemi",
+ "romatoloji/seropozitif-ra-antikor-takibi-ve-biyolojik-ajan-secimi": "Seropozitif RA'da Antikor Titrelerinin Takibi ve Biyolojik Ajan Seçimi",
  "romatoloji/vaskulit-sendromlari": "Vaskülit Sendromları"
 }

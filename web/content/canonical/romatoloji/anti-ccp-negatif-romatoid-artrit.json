@@ -1,0 +1,45 @@
+{
+  "title": "Anti-CCP (ACPA) Negatif Romatoid Artrit: Prognostik Profil ve Tedavi Seçimi",
+  "meta": {
+    "updatedAt": "21 Eyl 2026",
+    "tags": [
+      "Romatoloji",
+      "Romatoid Artrit",
+      "Anti-CCP",
+      "ACPA",
+      "Seronegatif RA",
+      "Prognoz",
+      "Rituximab",
+      "Tocilizumab",
+      "JAK İnhibitörleri"
+    ],
+    "parent": "romatoid-artrit",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Anti-CCP (ACPA) negatifliği, Romatoid Artrit (RA) seyrinde patogenetik mekanizma, eklem yıkım hızı, ekstra-artiküler komplikasyon riski ve biyolojik tedavi seçimleri açısından hastalığın prognostik profilini belirgin şekilde değiştirir.</p>"
+    },
+    {
+      "heading": "Radyografik Progresyon ve Eroziv Hasar",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Düşük Erozivite Riski:</strong> Anti-CCP pozitifliği marjinal kemik erozyonları ve eklem yıkımı için en güçlü bağımsız serolojik risk faktörüyken, Anti-CCP negatifliği hastaların uzun dönemde daha yavaş radyografik ilerleme gösterdiğini ve eroziv eklem hasarı gelişme olasılığının belirgin derecede daha düşük olduğunu öngörür.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Daha Ilımlı Artiküler Seyir:</strong> Popülasyon bazında değerlendirildiğinde, ACPA-negatif RA alt grubu genel olarak daha az agresif eklem destruksiyonu ile seyreder.</li></ul></div>"
+    },
+    {
+      "heading": "İmmünogenetik ve Mukoza-İlişkili Patofizyoloji",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Shared Epitope ve Sigara Bağlantısının Yokluğu:</strong> ACPA-pozitif RA'nın aksine, Anti-CCP negatif RA fenotipi HLA-DRB1 \"paylaşılan epitop\" (shared epitope) alelleri ve sigara maruziyeti ile doğrudan güçlü bir bağ sergilemez. Bu durum, Anti-CCP negatif RA'nın farklı bir immunogenetik patofizyolojik yolak üzerinden geliştiğini gösterir.</li></ul></div>"
+    },
+    {
+      "heading": "Ekstra-artiküler ve Sistemik Komplikasyon Riski",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Yüksek Anti-CCP seviyeleri interstisiyel akciğer hastalığı (RA-İAH) ve sistemik vasküler komplikasyonlar için majör risk faktörüyken, Anti-CCP negatifliği olan olgularda bu tür ağır organ tutulumlarının gelişme sıklığı daha düşüktür.</li></ul></div>"
+    },
+    {
+      "heading": "Terapötik Yaklaşım ve İlaç Seçimi",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kötü Prognostik Faktör Tanımlaması:</strong> Tedavi kılavuzlarında yüksek Anti-CCP pozitifliği \"kötü prognostik faktör\" (adverse prognostic features) kategorisinde yer almaktadır. Anti-CCP negatifliğinde bu olumsuz faktörün bulunmaması, hastaların başlangıç csDMARD (Metotreksat) monoterapi veya kombinasyonlarıyla klinik remisyona ulaşma şansını yükseltir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Biyolojik Ajan Tercihlerine Etkisi:</strong></li><li class=\"p-2 pl-6 rounded\">– <strong>Rituximab (Anti-CD20):</strong> Rituximab'ın klinik etkinliği ve ACR20/50/70 yanıt oranları seropozitif (RF ve/veya Anti-CCP pozitif) hastalarda belirgin şekilde yüksekken, seronegatif / Anti-CCP negatif olgularda anlamlı düzeyde daha düşüktür.</li><li class=\"p-2 pl-6 rounded\">– Dolayısıyla csDMARD dirençli Anti-CCP negatif hastalarda B-hücre deplesyonu (Rituximab) yerine TNF-alfa inhibitörleri, IL-6 reseptör blokörleri (Tocilizumab) veya JAK inhibitörleri gibi alternatif etki mekanizmasına sahip hedefe yönelik ajanlar öncelikli olarak tercih edilir.</li></ul></div>"
+    },
+    {
+      "heading": "Özet",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Özetle Anti-CCP negatifliği; daha düşük eroziv eklem yıkımı, daha az ekstra-artiküler tutulum riski ve Rituximab yanıtının daha sınırlı olması ile karakterize, biyolojik ajan seçiminde farklılaştırılmış hedefe yönelik stratejiler gerektiren daha ılımlı bir klinik fenotipe işaret eder.</p>"
+    }
+  ]
+}
