@@ -27,8 +27,8 @@
     {
       "id": "p-temd-dm1-004",
       "level": "Kılavuz",
-      "title": "Venöz 126 mg/dL, parmak ucunda 118 görünebilir",
-      "content": "Tanı eşikleri venöz plazmada glukoz oksidaz veya hekzokinaz yöntemiyle yapılan ölçümlere dayanır; evde kullanılan kapiller ölçümler biraz daha düşük olma eğilimindedir. Venöz plazmada 126 mg/dL olan glukoz tam kanda ~%11 (112 mg/dL), kapiller kanda ~%7 (118 mg/dL), serumda ~%5 (120 mg/dL) daha düşük ölçülür. Fark hematokrite bağlıdır: Hct %55 olan kişide %15'e yükselir, Hct %30 olan kişide %8 civarındadır. (TEMD Diabetes Mellitus 2026, Bölüm 1, s. 17)",
+      "title": "Parmak ucu ile venöz glukoz: fark kalibrasyona ve hematokrite bağlı",
+      "content": "Tanı eşikleri venöz plazmada glukoz oksidaz veya hekzokinaz yöntemiyle yapılan ölçümlere dayanır; evde kullanılan kapiller ölçümler biraz daha düşük olma eğilimindedir. Venöz plazmada 126 mg/dL olan glukoz tam kanda ~%11 (112 mg/dL), kapiller kanda ~%7 (118 mg/dL), serumda ~%5 (120 mg/dL) daha düşük ölçülür. Fark hematokrite bağlıdır: Hct %55 olan kişide %15'e yükselir, Hct %30 olan kişide %8 civarındadır. Günümüzde kapiller cihazlar plazma glukozuna göre kalibre ediliyor; WHO'ya göre açlıkta kapiller tam kan glukozu venöz plazmaya eşittir, toklukta ise ~%11 daha düşüktür. (TEMD Diabetes Mellitus 2026, Bölüm 1, s. 17)",
       "trigger": "Tanı Kriterleri"
     },
     {
@@ -69,7 +69,7 @@
     {
       "id": "p-temd-dm1-010",
       "level": "Kılavuz",
-      "title": "Tip 1'de 5 yıl bekle, tip 2'de tanıda tara",
+      "title": "Tip 1'de 5. yılda ya da pubertede, tip 2'de tanıda tara",
       "content": "Göz dibi muayenesi tip 1 diyabette tanıdan 5 yıl sonra veya puberteden itibaren, tip 2 diyabette tanıdan itibaren yılda bir yapılmalıdır. Bulgular iki kez üst üste normalse takip aralığı iki yıla çıkarılabilir. Albuminüri de aynı mantıkla tip 1'de diyabet süresi ≥5 yıl olunca, tip 2'de tanı süresinden bağımsız olarak yılda bir ölçülür. Persistan mikroalbuminürisi olan hastada retinopati riski yüksektir; göz dibi daha sık incelenmelidir. (TEMD Diabetes Mellitus 2026, Bölüm 2, s. 46)",
       "trigger": "Laboratuvar İncelemeleri ve Rutin İzlem"
     },
@@ -104,7 +104,7 @@
     {
       "id": "p-temd-dm1-015",
       "level": "Kılavuz",
-      "title": "Prediyabette metformin genç ve obezde, akarboz zayıf ve yaşlıda",
+      "title": "Prediyabette metformin 60 yaş altı ve BKİ ≥35'te, akarboz 55 yaş üstü ve BKİ <30'da",
       "content": "Prediyabette ilk basamak ilaç metformindir; DPP'de özellikle BKİ ≥35 kg/m2 ve 60 yaş altındakilerde yararlı bulunmuş, 60 yaş üzerinde etkili bulunmamıştır. Günlük doz 1000-1700 mg olup iki kez 500 mg ile başlanıp tolerans durumuna göre iki kez 850 mg'a çıkılması önerilir. Uzun kullanımda yılda bir B12 düzeyi ölçülmelidir. Akarboz alt analizlerde 55 yaş üzeri ve BKİ &lt;30 kg/m2 olanlarda daha etkili bulunduğu için BKİ düşük hastada tercih edilebilir. (TEMD Diabetes Mellitus 2026, Bölüm 3, s. 59)",
       "trigger": "Tip 2 Diyabetin Farmakolojik Olarak Önlenmesi"
     },
@@ -147,7 +147,7 @@
       "id": "p-temd-dm1-021",
       "level": "Kılavuz",
       "title": "Kilo kaybında enerji açığı: günde 500-750 kkal",
-      "content": "Fazla kilolu ve obeziteli diyabetli bireyde kilo kaybı girişimi, makrobesin bileşiminden bağımsız olarak 500-750 kcal/gün enerji açığı sağlamalı ve 6 ayda ≥16 seans danışmanlık içermelidir. Bu açık vücut ağırlığında ayda 2-3 kg azalma sağlar. Dinlenme metabolik hızı mevcut ağırlığı baz alan Mifflin-St. Jeor denklemiyle hesaplanmalıdır. Vücut ağırlığının &gt;%10 oranında azalması tip 2 diyabette remisyon sağlayabilir. (TEMD Diabetes Mellitus 2026, Bölüm 5, s. 76)",
+      "content": "Fazla kilolu ve obeziteli diyabetli bireyde kilo kaybı girişimi, makrobesin bileşiminden bağımsız olarak 500-750 kcal/gün enerji açığı sağlamalı ve 6 ayda ≥16 seans danışmanlık içermelidir. Bu açık vücut ağırlığında ayda 2-3 kg azalma sağlar. Fazla kilolu veya obeziteli bireyde dinlenme metabolik hızı, mevcut ağırlığı baz alan Mifflin-St. Jeor denklemiyle hesaplanmalıdır. Vücut ağırlığının &gt;%10 oranında azalması tip 2 diyabette remisyon sağlayabilir. (TEMD Diabetes Mellitus 2026, Bölüm 5, s. 76)",
       "trigger": "Tıbbi Beslenme Tedavisi"
     },
     {
@@ -188,14 +188,14 @@
     {
       "id": "p-temd-dm1-027",
       "level": "Kılavuz",
-      "title": "Glukoz >250 mg/dL ve ketonüride egzersiz glukozu yükseltir",
+      "title": "İnsülin eksikliği, glukoz >250 mg/dL ve ketonüride egzersiz glukozu yükseltir",
       "content": "Plazma glukozu &gt;250 mg/dL, hipoinsülinemik ve ketonürisi olan hastada egzersiz paradoks olarak kan glukozunu yükseltir; kas glukoz kullanımı azalırken karaciğer glukoz çıkışı sürer. Bu nedenle kan glukozu &gt;250 mg/dL ve keton pozitifse keton kaybolana dek egzersiz yapılmamalıdır. Keton negatifse, hasta kendini iyi hissediyor ve hidrasyonu yeterliyse ek karbonhidrat almadan hafif egzersiz yapılabilir. (TEMD Diabetes Mellitus 2026, Bölüm 6, s. 96)",
       "trigger": "Egzersiz Öncesi Değerlendirme"
     },
     {
       "id": "p-temd-dm1-028",
       "level": "Kılavuz",
-      "title": "Haftada 150 dakika, iki gün ara vermeden",
+      "title": "Haftada 150 dakika, iki günden fazla ara vermeden",
       "content": "Diyabetliye haftada en az 150 dakika orta-yüksek şiddette aerobik egzersiz, 48 saatten fazla ara vermeden önerilir. Kontrendikasyon yoksa ardışık olmayan günlerde haftada 2-3 gün direnç egzersizi eklenir; TEMD önerileri listesi ise haftada 2 gün hafif direnç egzersizi der. Direnç programı büyük kas gruplarını çalıştıran 8-10 hareketten, her biri 10-15 tekrar ve toplam 1-3 setten oluşabilir. Gün içinde 30 dakikadan fazla hareketsiz kalınmamalıdır. (TEMD Diabetes Mellitus 2026, Bölüm 6, s. 98)",
       "trigger": "Egzersiz Programının Yapılandırılması"
     },
@@ -203,7 +203,7 @@
       "id": "p-temd-dm1-029",
       "level": "Kılavuz",
       "title": "Egzersiz sonrası geç hipoglisemi: 48 saate kadar",
-      "content": "Artan insülin duyarlılığı ve glikojenin yeniden depolanması nedeniyle egzersizden 6-15 saat sonra geç ya da noktürnal hipoglisemi görülebilir; özellikle öğleden sonra ve akşam egzersizlerinde sıktır. Egzersize bağlı hipoglisemi riski 48 saate kadar uzayabilir. Önlem olarak geceyi kapsayan bazal insülin dozunu yaklaşık %20 azaltmak, son prandiyal bolusu azaltmak, gece ara öğünü ve CGM önerilebilir. Direnç egzersizi ile başlanan kombine seans tip 1 diyabette daha güvenli olabilir. (TEMD Diabetes Mellitus 2026, Bölüm 6, s. 100)",
+      "content": "Artan insülin duyarlılığı ve glikojenin yeniden depolanması nedeniyle egzersizden 6-15 saat sonra geç ya da noktürnal hipoglisemi görülebilir; özellikle öğleden sonra ve akşam egzersizlerinde sıktır. Egzersize bağlı hipoglisemi riski 48 saate kadar uzayabilir. Önlem olarak geceyi kapsayan bazal insülin dozunu yaklaşık %20 azaltmak, yoğun insülin tedavisi alanlarda son prandiyal bolusu azaltmak, gece ara öğünü ve CGM önerilebilir. Direnç egzersizi ile başlanan kombine seans tip 1 diyabette daha güvenli olabilir. (TEMD Diabetes Mellitus 2026, Bölüm 6, s. 100)",
       "trigger": "Egzersizde Olası Risk ve Komplikasyonlar"
     },
     {
@@ -252,7 +252,7 @@
       "id": "p-temd-dm1-036",
       "level": "Kılavuz",
       "title": "Diyalizde doz ayarı gerektirmeyen gliptin: linagliptin",
-      "content": "Sitagliptin eGFR 30-45 mL/dk aralığında 50 mg/gün, eGFR &lt;30 mL/dk olduğunda klinik çalışmalara göre 25 mg/gün verilebilir. Saksagliptin eGFR 15-45 mL/dk aralığında 2,5 mg/gün'e iner. Linagliptin çalışmalara göre diyaliz hastaları dahil doz ayarı olmadan kullanılabilir. Kalp yetersizliği özellikle saksagliptin ve alogliptin için kontrendikasyondur. (TEMD Diabetes Mellitus 2026, Bölüm 7, s. 115)",
+      "content": "Sitagliptin eGFR 30-45 mL/dk aralığında 50 mg/gün'e indirilir; eGFR &lt;30 mL/dk ise mümkünse kullanılmamalıdır, klinik çalışmalarda bu düzeyde 25 mg/gün verilebildiği gösterilmiştir. Saksagliptin eGFR 15-45 mL/dk aralığında 2,5 mg/gün'e iner. Linagliptin çalışmalara göre diyaliz hastaları dahil doz ayarı olmadan kullanılabilir. Kalp yetersizliği özellikle saksagliptin ve alogliptin için kontrendikasyondur. (TEMD Diabetes Mellitus 2026, Bölüm 7, s. 115)",
       "trigger": "DPP-4 İnhibitörleri"
     },
     {
@@ -546,7 +546,7 @@
       "id": "p-temd-dm1-078",
       "level": "Kılavuz",
       "title": "Tip 1 ve tip 2 diyabetli gebeye 12. haftadan aspirin",
-      "content": "Tüm tip 1 ve tip 2 diyabetli gebelere preeklampsi riskini azaltmak için, kontrendikasyon yoksa, 12. haftadan itibaren 100-150 mg aspirin başlanmalı ve gebelik sonlanıncaya dek sürdürülmelidir. Son kanıtlar daha düşük dozların preeklampsiyi önlemede yeterince etkili olmadığı yönündedir. GDM'de ise preeklampsi profilaksisi için düşük doz aspirinin rutin kullanımına yönelik öneri bulunmamaktadır. Gebelikte KB hedefi sistolik 110-135 mmHg, diyastolik 80-85 mmHg olmalıdır. (TEMD Diabetes Mellitus 2026, Bölüm 15, s. 253)",
+      "content": "Tüm tip 1 ve tip 2 diyabetli gebelere preeklampsi riskini azaltmak için, kontrendikasyon yoksa, 12. haftadan itibaren 100-150 mg aspirin başlanmalı ve gebelik sonlanıncaya dek sürdürülmelidir. Son kanıtlar daha düşük dozların preeklampsiyi önlemede yeterince etkili olmadığı yönündedir. GDM'de ise preeklampsi profilaksisi için düşük doz aspirinin rutin kullanımına yönelik öneri bulunmamaktadır; ek risk faktörü olan gebelerde dikkate alınabilir. Gebelikte KB hedefi sistolik 110-135 mmHg, diyastolik 80-85 mmHg olmalıdır. (TEMD Diabetes Mellitus 2026, Bölüm 15, s. 253)",
       "trigger": "Pregestasyonel Diyabet"
     },
     {
@@ -573,8 +573,8 @@
     {
       "id": "p-temd-dm1-082",
       "level": "Kılavuz",
-      "title": "Spironolaktondan önce hiperaldosteronizmi tara",
-      "content": "Üç ilaçla kontrol edilemeyen hastada MRA eklenmesi ve sekonder HT nedenlerinin araştırılması önerilir. Ancak steroid yapıda bir MRA (spironolakton, eplerenon) başlamadan önce, şüphe varsa primer hiperaldosteronizm taranmalıdır, çünkü tarama testleri bu ilaçlar altında doğru sonuç vermez. ACE-İ ya da ARB ile birlikte kullanıldığında hiperpotasemi ve böbrek fonksiyonunda bozulma riski artabileceğinden kreatinin ve potasyum yakın izlenir. (TEMD Diabetes Mellitus 2026, Bölüm 16, s. 269)",
+      "title": "Steroid yapıda MRA'dan önce, şüphe varsa hiperaldosteronizmi dışla",
+      "content": "Üç ilaçla kontrol edilemeyen hastada MRA eklenmesi ve sekonder HT nedenlerinin araştırılması önerilir. Ancak steroid yapıda bir MRA (spironolakton, eplerenon) başlamadan önce, şüphe varsa tarama testleriyle primer hiperaldosteronizmin dışlanması uygun olur, çünkü tarama testleri bu ilaçlar altında doğru sonuç vermez. ACE-İ ya da ARB ile birlikte kullanıldığında hiperpotasemi ve böbrek fonksiyonunda bozulma riski artabileceğinden kreatinin ve potasyum yakın izlenir. (TEMD Diabetes Mellitus 2026, Bölüm 16, s. 269)",
       "trigger": "Dirençli Hipertansiyon"
     },
     {
@@ -588,7 +588,7 @@
       "id": "p-temd-dm1-084",
       "level": "Kılavuz",
       "title": "Gebelikte ACE-İ/ARB yok, emzirmede atenololden kaçın",
-      "content": "ACE-İ ve ARB fetal hasar nedeniyle gebelikte kontrendikedir ve gebelik planlayan diyabetli kadında kesilmelidir. Metildopa, uzun etkili nifedipin, labetolol, diltiazem, klonidin ve prazosin gebelikte güvenli kabul edilir; atenolol hariç diğer beta blokerler gerektiğinde kullanılabilir. Laktasyonda atenolol ve asetabutolol yoğun süte geçtiği için tercih edilmez. Hidroklorotiyazid &lt;50 mg/gün dozda laktasyonda güvenle kullanılabilir. (TEMD Diabetes Mellitus 2026, Bölüm 16, s. 270)",
+      "content": "ACE-İ ve ARB fetal hasar nedeniyle gebelikte kontrendikedir ve gebelik planlayan diyabetli kadında kesilmelidir. Metildopa, uzun etkili nifedipin, labetolol, diltiazem, klonidin ve prazosin gebelikte güvenli kabul edilir; atenolol hariç diğer beta blokerler gerektiğinde kullanılabilir. Laktasyonda atenolol ve asetabutolol yoğun süte geçtiği için tercih edilmez. Diüretikler süt volümünü azaltabileceği için laktasyonda genel olarak önerilmez; yine de &lt;50 mg/gün hidroklorotiyazid güvenle kullanılabilir. (TEMD Diabetes Mellitus 2026, Bölüm 16, s. 270)",
       "trigger": "Gebelik ve Laktasyonda Hipertansiyon"
     },
     {
@@ -623,7 +623,7 @@
       "id": "p-temd-dm1-089",
       "level": "Kılavuz",
       "title": "Majör cerrahi öncesi ilaç kesme takvimi: 24 saat, 1-3 gün, 1 hafta",
-      "content": "Majör cerrahide metformin ameliyattan en az 24 saat önce kesilir ve yeterli hidrasyon sağlanır. SGLT2 inhibitörleri öglisemik DKA riski nedeniyle operasyondan 1-3 gün önce kesilir; acil operasyonda hemen kesilir, öglisemik ketoz şüphesinde keton ölçülür. Haftada bir kullanılan uzun etkili GLP-1 RA mide boşalmasını geciktirdiği için bir hafta önce kesilmesi önerilir. Diğer OAD'ler ve kısa etkili günlük GLP-1 RA için ameliyat günü verilmemesi yeterlidir. (TEMD Diabetes Mellitus 2026, Bölüm 18, s. 285)",
+      "content": "Majör cerrahide metformin ameliyattan en az 24 saat önce kesilir ve yeterli hidrasyon sağlanır. SGLT2 inhibitörleri öglisemik DKA riski nedeniyle operasyondan 1-3 gün önce kesilir; acil operasyonda hemen kesilir, öglisemik ketoz şüphesinde keton ölçülür. Haftada bir kullanılan uzun etkili GLP-1 RA mide boşalmasını geciktirdiği için bir hafta önce kesilmesi önerilir. Diğer OAD'ler ve kısa etkili günlük GLP-1 RA ameliyat sabahı verilmez; uzun etkili SU yerine birkaç gün önce daha kısa etkili bir ajana geçilmesi düşünülebilir. (TEMD Diabetes Mellitus 2026, Bölüm 18, s. 285)",
       "trigger": "Diyabet ve Cerrahi"
     },
     {
@@ -664,8 +664,8 @@
     {
       "id": "p-temd-dm1-095",
       "level": "Kılavuz",
-      "title": "Ramazan: değerlendirme 4-8 hafta önce, bazal insülin %20 azaltılır",
-      "content": "Oruç planlayan hasta ramazandan 4-8 hafta önce değerlendirilmelidir; daha kısa süre kalmışken yapılan tedavi değişiklikleri önerilmez. Çok yüksek ve yüksek risk grubundaki hastalar oruç tutmamalıdır. Metformin günde 3 doz alınıyorsa 2 doza geçilir; GLP-1 RA ve SGLT2 inhibitörü planlanıyorsa en az 4-8 hafta önce başlanmalıdır. Israr eden bazal insülin kullanıcısında önerilen yaklaşım, ramazan öncesi dozun %20 azaltılarak verilmesidir. (TEMD Diabetes Mellitus 2026, Bölüm 18, s. 311)",
+      "title": "Ramazan: değerlendirme 4-8 hafta önce, ısrar eden bazal insülin kullanıcısında doz %20 azaltılır",
+      "content": "Oruç planlayan hasta ramazandan 4-8 hafta önce değerlendirilmelidir; daha kısa süre kalmışken yapılan tedavi değişiklikleri önerilmez. Çok yüksek ve yüksek risk grubundaki hastalar oruç tutmamalıdır. Metformin günde 3 doz alınıyorsa 2 doza geçilir; GLP-1 RA planlanıyorsa en az 4-8 hafta önce başlanmalıdır; SGLT2 inhibitörü diüretik kullananlarda ve yaşlılarda önerilmez, hipovolemi riski olmayanlarda ise ramazandan 4-8 hafta önce başlanır. Israr eden bazal insülin kullanıcısında önerilen yaklaşım, ramazan öncesi dozun %20 azaltılarak verilmesidir. (TEMD Diabetes Mellitus 2026, Bölüm 18, s. 311)",
       "trigger": "Diyabet ve Oruç"
     },
     {
@@ -685,7 +685,7 @@
     {
       "id": "p-temd-dm1-098",
       "level": "Kılavuz",
-      "title": "Orta yaşta yeni diyabet ve kilo kaybı: pankreası düşün",
+      "title": "Orta yaşta yeni diyabet, kilo kaybı ve aile öyküsü: pankreası tara",
       "content": "Yeni tanı pankreas kanserli hastalarda tip 2 diyabet %80'e varan oranlarda gözlenebilir. Orta yaş veya üzerindeki hastada yeni tanı diyabetle birlikte kilo kaybı ve aile öyküsü varsa pankreas kanseri taraması yapılmalıdır. Kilo kaybı, karın ağrısı gibi semptomlar yoksa tüm yeni tanı diyabetlilerin rutin taranması önerilmez. Diyabet karaciğer, pankreas ve endometrium kanser riskini 2-2,5 kat artırır. (TEMD Diabetes Mellitus 2026, Bölüm 19, s. 315)",
       "trigger": "Diyabet ve Kanser İlişkisi"
     },
@@ -700,7 +700,7 @@
       "id": "p-temd-dm1-100",
       "level": "Kılavuz",
       "title": "Diyabetik diyare: aralıklı, gece artan, ağrısız bir dışlama tanısı",
-      "content": "Diyabetik diyare bir dışlama tanısıdır; kronik sulu, aralıklı seyreder, arada konstipasyon dönemleri olabilir ve daha çok gece ortaya çıkar. Karın ağrısı eşlik etmez; steatore varsa pankreas ya da jejunal patoloji düşünülmelidir. Tedavide sıklıkla 600-800 mg/gün 7-14 gün rifaksimin tercih edilir. Metformin, alfa glukozidaz inhibitörleri, GLP-1 RA ve DPP-4 inhibitörleri de diyareye neden olabilir. (TEMD Diabetes Mellitus 2026, Bölüm 20, s. 325)",
+      "content": "Diyabetik diyare bir dışlama tanısıdır; kronik sulu, aralıklı seyreder, arada konstipasyon dönemleri olabilir ve daha çok gece ortaya çıkar. Karın ağrısı eşlik etmez; steatore varsa pankreas ya da jejunal patoloji düşünülmelidir. Ana tedavi glisemik kontrol ve sıvı-elektrolit dengesidir; antibiyotik olarak sıklıkla 600-800 mg/gün 7-14 gün rifaksimin tercih edilir. Metformin, alfa glukozidaz inhibitörleri, GLP-1 RA ve DPP-4 inhibitörleri de diyareye neden olabilir. (TEMD Diabetes Mellitus 2026, Bölüm 20, s. 325)",
       "trigger": "Diyabetik Diyare"
     }
   ]
