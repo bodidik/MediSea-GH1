@@ -1,0 +1,707 @@
+{
+  "id": "pearl-endo-temd-beslenme-egzersiz-001",
+  "accessLevel": "premium",
+  "topic": "TEMD Beslenme ve Egzersiz",
+  "pearls": [
+    {
+      "id": "p-temd-bes-001",
+      "level": "Kılavuz",
+      "title": "Ülkemizde her üç yetişkinden ikisi kilolu, tip 2 diyabette on kişiden dokuzu",
+      "content": "Kılavuz, ülkemizde her üç yetişkinden ikisinde kilo fazlalığı veya obezite bulunduğunu belirtir. Tip 2 diyabet hastalarında fazla kiloluluk ve obezite oranı %90 olarak verilir. Her iki hastalığın da gelişmesinin en önemli nedeni hatalı beslenme ve hareketsiz yaşamdır. Bu nedenle kılavuz, obezite ve tip 2 diyabette başlıca yaklaşımın sağlıklı ve dengeli beslenmenin temini olması gerektiğini söyler. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 1, s. 2)",
+      "trigger": "Beslenmenin Önemi"
+    },
+    {
+      "id": "p-temd-bes-002",
+      "level": "Kılavuz",
+      "title": "Tıkanırcasına yeme mi, bulimia mı: telafi davranışı ayırır",
+      "content": "Tıkanırcasına yeme bozukluğu tanısı için en azından üç aydır devam eden ve en azından haftada bir olan yeme atakları gerekir. Bu hastalar kilo almayı önleme amaçlı anormal telafi davranışları sergilemezler; açık olmasalar bile yiyebilir, genellikle çok hızlı yer ve utandıkları için yalnız yemeyi tercih ederler. Bulimia nervoza hastaları ise yemek sonrası kusmaya zorlama, zayıflama maksatlı kafein ya da diüretik kullanma, aşırı spor, öğün atlama gibi davranışlar gösterir. Sürekli kusturma çabası el sırtında nasır bırakabilir; bu Russel bulgusudur. Aynı mekanizma öğürme refleksinde azalma, diş minesi erozyonları ve parotis hipertrofisine bağlı submandibüler şişkinlik yapabilir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 2, s. 6)",
+      "trigger": "Beslenme Anamnezi"
+    },
+    {
+      "id": "p-temd-bes-003",
+      "level": "Kılavuz",
+      "title": "BKİ kesme noktaları ve iki yönlü yanılma payı",
+      "content": "Kılavuzun verdiği sınırlar şunlardır: BKİ 15 kg/m2 altında aşırı zayıf, 18,5 kg/m2 altında zayıf, 18,5-24,9 kg/m2 normal, 25-29,9 kg/m2 kilolu, 30 kg/m2 üzerinde obeziteli, 40 kg/m2 üzerinde morbid obeziteli. BKİ mükemmel bir değerlendirme ölçeği değildir: sporcularda hatalı olarak yüksek, astenik ama göbekli kişilerde hatalı olarak düşük çıkabilir. Kadınlarda yağ kitlesi erkeklerdekinden daha fazla olduğu halde kesme noktaları iki cinsiyette aynıdır. Yine de kolay uygulanması nedeniyle en sık kullanılan ölçüttür. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 2, s. 7)",
+      "trigger": "Beden Kitle İndeksi"
+    },
+    {
+      "id": "p-temd-bes-004",
+      "level": "Kılavuz",
+      "title": "Bel çevresi BKİ'den güvenli, ama BKİ 35 üstünde değersiz",
+      "content": "Bel çevresi ölçümü intraabdominal yağlanmanın göstergesidir ve obeziteyi değerlendirmek için BKİ'den daha güvenlidir. Ölçüm superior iliak kristalar hizasından, yere paralel yapılır; hastanın üzerinde giysi olması istenmez, hasta nefesini vermiş olmalı ve mezura beli çok fazla sıkmamalıdır. Ülkemiz standartlarına göre santral obezite tanısı için bel çevresi erkeklerde 100 cm ve üzeri, kadınlarda 90 cm ve üzeridir. BKİ 35 kg/m2 üzerinde olan obeziteli bireylerde bel çevresi ölçümünün tanısal bir değeri yoktur. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 2, s. 7)",
+      "trigger": "Bel Çevresi Ölçümü"
+    },
+    {
+      "id": "p-temd-bes-005",
+      "level": "Kılavuz",
+      "title": "Beklenen ağırlık yüzdesi: kategorik değil doğrusal bir ölçek",
+      "content": "Beklenen vücut ağırlığı yüzdesi, hastanın ağırlığının boy ve cinsiyete göre beklenen ağırlığa bölünüp yüz ile çarpılmasıyla bulunur. BKİ'den farklı olarak kategorik değil lineer bir değerlendirme verir ve hedefin ne olduğunu hastaya anlatmak kolaylaşır. Normal bir kişinin değeri %90 ile %110 arasında olmalıdır; %110 üzeri kiloluluk, %120 üzeri şişmanlık olarak tanımlanır. %85'ten az olmak çok zayıf, %75'ten az olmak aşırı zayıflıktır. Çok uzun boylu kişilerde çıkan sonuçlar yanıltıcı olabilir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 2, s. 7)",
+      "trigger": "Beklenen Vücut Ağırlığı Yüzdesi"
+    },
+    {
+      "id": "p-temd-bes-006",
+      "level": "Kılavuz",
+      "title": "İnsülin direnci ölçümü polikliniğe ait bir test değil",
+      "content": "Kılavuz, insülin direncini ölçmenin obezite ve ilişkili hastalıkların tanı, tedavi ve takibinde yeri olmadığını vurgular. Bu ölçümün ancak araştırma amacıyla yapıldığını, günlük poliklinik uygulamalarında yeri olmadığını belirtir. Biyoimpedans cihazları basit, ucuz ve hızlı oldukları için yaygın kullanılır; ancak sonuçlarının pek çok teknik faktörden etkileneceği ve obeziteli bireyleri değerlendirmek için mutlaka kullanılmasının gerekmediği bilinmelidir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 2, s. 9)",
+      "trigger": "Obezitede Laboratuvar"
+    },
+    {
+      "id": "p-temd-bes-007",
+      "level": "Kılavuz",
+      "title": "Günlük enerjinin %70'i siz hiçbir şey yapmazken gider",
+      "content": "Enerji üç şekilde tüketilir. Bazal enerji tüketimi günlük enerji tüketiminin %70'ini oluşturur ve 1000-2000 kalori arasındadır. Gıda alımının termik etkisi %10'unu oluşturur, 50-200 kalori arasındadır. Fiziksel aktivitenin termik etkisi gün içindeki aktiviteye bağlı değişir ve yaklaşık %20 kadarını oluşturur. Toplam günlük enerji ihtiyacı bu üçünün toplamıdır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 3, s. 11)",
+      "trigger": "Enerji Tüketimi"
+    },
+    {
+      "id": "p-temd-bes-008",
+      "level": "Kılavuz",
+      "title": "Termik etki makrobesine göre değişir, ateşte düşürülür",
+      "content": "Besinlerin sindirimi, emilimi ve metabolizması sırasında bazal metabolizma hızına ek enerji harcanır. Proteinlerin termik etkisi %12, karbonhidratların %6, yağların %2'dir. Karışık bir beslenmede bu %6-10 arasında değişir ve hesaplamada genellikle ortalama %10 kabul edilir. Yüksek ateşli olgularda ısı üretimi zaten artmış olduğu için gıdaların termik etkisi düşüktür; böyle kişilerde hesap yapılırken %5 gibi kabul edilir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 3, s. 12)",
+      "trigger": "Gıdaların Termik Etkisi"
+    },
+    {
+      "id": "p-temd-bes-009",
+      "level": "Kılavuz",
+      "title": "Harris-Benedict'in hata payı aşırı şişmanda ve malnütrisyonluda büyür",
+      "content": "Kadın için BMR = 655 + (9,6 x ağırlık) + (1,85 x boy) - (4,68 x yaş); erkek için BMR = 66,5 + (13,8 x ağırlık) + (5 x boy) - (6,76 x yaş). Ağırlık kg, boy cm, yaş yıl olarak girilir. Yöntemin doğruluğu artı eksi %14'tür ve kılavuz bunları kabul edilebilir değerler sayar. Aşırı şişman olanlarda ve malnütrisyonlu kimselerde hata payının büyüyebileceği gösterilmiştir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 3, s. 13)",
+      "trigger": "Harris-Benedict Denklemi"
+    },
+    {
+      "id": "p-temd-bes-010",
+      "level": "Kılavuz",
+      "title": "Başucu hesabı: ağırlık x 24, kadında 0,95 ile çarp",
+      "content": "WHO'nun pratik bazal metabolizma enerjisi formülü erkekler için ağırlık (kg) x 24 x 1 Kkal, kadınlar için ağırlık (kg) x 24 x 0,95 Kkal'dir. Schofield formülü ise cinsiyet ve ağırlığı kullanır, katsayılar yaş aralığına göre değişir: 18-30 yaş erkekte 15,0 x ağırlık + 690, kadında 14,8 x ağırlık + 485; 30-60 yaş erkekte 11,4 x ağırlık + 870, kadında 8,1 x ağırlık + 842; 60 yaş üstü erkekte 11,7 x ağırlık + 585, kadında 9,0 x ağırlık + 656. Kılavuz Schofield'i Harris-Benedict ile beraber klinikte en çok kullanılan yöntemlerden biri sayar. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 3, s. 14)",
+      "trigger": "Pratik BMR Denklemleri"
+    },
+    {
+      "id": "p-temd-bes-011",
+      "level": "Kılavuz",
+      "title": "Yatan hastada 25-35 kkal/kg ve dengeli makrobesin dağılımı",
+      "content": "Hastanede yatmakta olan hastaların çoğunluğu için günde vücut ağırlığının kilogramı başına 25-35 Kkal enerji içeren bir beslenme uygundur. Kılavuz, enerjinin 1 g/kg/gün miktarının yağdan, 0,75-1,5 g/kg/gün miktarının protein ve aminoasitlerden, 5 g/kg/gün miktarının ise karbonhidrattan alınmasını dengeli bir dağılım sayar. Özellikle total parenteral beslenmeye alınmış hastalarda bazal metabolizma hızını hesaplamak gereklidir; hastanın spontan solunumda mı ventilatörde mi olduğu, yanık ve obezite varlığı hesaba katılır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 3, s. 15)",
+      "trigger": "Hastanede Beslenme"
+    },
+    {
+      "id": "p-temd-bes-012",
+      "level": "Kılavuz",
+      "title": "Her bir derece ateş bazal enerjiye %13 ekler",
+      "content": "Enfeksiyon bazal metabolizmayı hızlandırır; beden sıcaklığında 37 derecenin üstündeki her bir derece artış için WHO/FAO formülüne göre hesaplanan bazal enerji ihtiyacının %13'ü eklenmelidir. Ancak hastanın aynı zamanda inaktif olduğu da göz önüne alınmalıdır. Açlıkta tersi olur: açlığın ortalama 12. gününden itibaren bazal metabolizma hızı belirgin olarak düşer ve vücut sıcaklığı da anlamlı olarak azalır. Malabsorpsiyonda enerji ihtiyacı artar; derecesini belirlemek güç olmakla birlikte dışkıdaki günlük yağ miktarı gram olarak 9 ile çarpılarak yağ emilimi kusuru nedeniyle kaybedilen kalori hesaplanır, yağdan kaybedilen kalorinin 2,5 ile çarpılmasıyla da kaybedilen toplam kalorinin bulunabileceği kabul edilir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 3, s. 15)",
+      "trigger": "Hastalıklarda Ek Enerji"
+    },
+    {
+      "id": "p-temd-bes-013",
+      "level": "Kılavuz",
+      "title": "Günlük ihtiyacın pratik tahmini: BMR çarpı aktivite faktörü",
+      "content": "Toplam günlük enerji harcaması BMR değeri ve fiziksel aktivite faktörü ile hesaplanır; faktör BMR ile çarpıldığında günlük enerji tüketimi tahmini elde edilir. Kılavuz kabaca sedanter birey için 1,3, orta derecede aktif birey için 1,5 ve aşırı aktif birey için 1,7 verir. Örneğin orta şiddette aktivitesi olan 100 kg'lık bir bireyde BMR 100 x 24 = 2400 Kkal, enerji tüketimi 2400 x 1,5 = 3600 Kkal/gün olur. Erişkin tablosunda çok hafif aktivitede faktör erkek ve kadında 1,3; ağır aktivitede erkekte 2,1, kadında 1,9'dur ve ortalama enerji tüketimi ağır aktivitede erkekte 50, kadında 44 Kkal/kg/gün olarak verilir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 3, s. 16)",
+      "trigger": "Fiziksel Aktivite Faktörü"
+    },
+    {
+      "id": "p-temd-bes-014",
+      "level": "Kılavuz",
+      "title": "Gebelikte 150 sonra 350 Kkal, emzirmede 500 Kkal yeter",
+      "content": "WHO önerisine göre gebeliğin ilk trimesterinde ek olarak günde 150 Kkal, bundan sonraki süreçte 350 Kkal ekleme yapılır. Gebe fizik aktivitesini azaltmışsa ikinci ve üçüncü trimesterdeki günlük eklemeleri 300 Kkal'de tutmak daha doğru olur. Emzirmede hesap sütten yapılır: 100 mL süt 67-77 Kkal, üretim enerjisi eklenince 80-95 Kkal'e denk gelir; ilk üç ayda ortalama günde 850 mL süt emzirilir ve bu 750 Kkal/gün bir ihtiyacı gösterir. Ancak annede gebelik sırasında birikmiş ekstra yağlar göz önüne alınırsa bütün emzirme süresince 500 Kkal/gün artış yeterli olur. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 3, s. 16)",
+      "trigger": "Gebelik ve Emzirmede Enerji"
+    },
+    {
+      "id": "p-temd-bes-015",
+      "level": "Kılavuz",
+      "title": "Yarım kilo için 3450 Kkal açık, ama BMR de peşinden düşer",
+      "content": "Kılavuz genellikle 3450 Kkal'lik bir açığın 500 g kilo kaybına denk geldiğini belirtir. Ancak kilo verdirici diyetlerde bazal metabolizma hızı da düşer: vücut yüzeyinin metrekaresi başına BMR'de %30 dolayında bir azalma olur, açlıkta BMR azalması %50'ye varır. Hareketin de azalmasıyla birlikte bu durum, kilo verdirici diyetlerde zamanla kilo kaybının yavaşlamasını açıklar. Bu noktada beslenme planlanmasında makrobesin oranları gözden geçirilir ve direnç egzersizi önerilir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 3, s. 17)",
+      "trigger": "Enerji Dengesi ve Kilo"
+    },
+    {
+      "id": "p-temd-bes-016",
+      "level": "Kılavuz",
+      "title": "0,8 g/kg tabanı cinsiyetten ve BKİ'den bağımsız",
+      "content": "Sağlıklı erişkinlerde tavsiye edilen minimum günlük protein alımı, cinsiyet veya beden kitle indeksinden bağımsız olarak 0,8 g/kg'dir. Alınan enerjinin %15-35'i proteinlerden sağlanmalı ve bu proteinin çoğunluğu kaliteli protein kökenli olmalıdır. Gebelik döneminde gereksinim 1,1 g/kg/gün veya ilave 25 g/gündür; laktasyonda 1,3 g/gün önerilir. Hastalık ve nekahat döneminde 1,2-1,5 g/kg düzeyinde alım arzu edilir. 50 yaşından sonra yıllık olarak kas kitlesinin %0,5-1'i azaldığı için yaşlılarda günlük protein alımı 1-1,2 g/kg önerilir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 4, s. 19)",
+      "trigger": "Protein Gereksinimi"
+    },
+    {
+      "id": "p-temd-bes-017",
+      "level": "Kılavuz",
+      "title": "İdeal KH oranı bilinmiyor, ketogenez eşiği ise belli",
+      "content": "Kılavuz henüz ideal bir karbonhidrat oranının bilinmediğini, ancak sağlıklı bir insanın aldığı enerjinin %45-65'inin karbonhidrattan alınması konusunda görüşler bulunduğunu söyler. Yüksek posalı, düşük glisemik indeksli karbonhidratlar tercih edilmelidir; örneğin rafine tahıl ürünleri yerine tam tahıl ürünleri. Beyin dokusu enerji için yalnızca karbonhidratları kullanır. Normalden az karbonhidrat alımında, yani günde 40-50 gramın altında, kandaki glikoz miktarı düşer, enerji ihtiyacını karşılamak için yağ asitleri okside olmaya başlar ve ketogenez süreci ortaya çıkar. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 4, s. 21)",
+      "trigger": "Karbonhidrat Oranı"
+    },
+    {
+      "id": "p-temd-bes-018",
+      "level": "Kılavuz",
+      "title": "Lif hedefi 1000 kalori başına 14 gram, ama aniden artırma",
+      "content": "Günlük alınması gereken lif miktarı 1000 kalori başına 14 gramdır; bu da yaklaşık 25-38 grama karşılık gelir. Düşük lifli bir diyetten yüksek lifli bir diyete aniden geçmek karında rahatsızlık, gaz ve ishal gibi geçici durumlara neden olabilir ve daha ciddi olarak gastrointestinal yolu tıkayabilir. Bunu önlemek için lif alımı birkaç hafta içinde kademeli olarak artırılmalı ve bol miktarda sıvı ile alınmalıdır. Bazı lifler minerallere bağlanarak emilimi sınırlayabilir; ancak mineral alımı yeterli olduğunda yüksek lifli gıdaların makul alınması, yani günde 40 gramdan az, mineral dengesini tehlikeye atmaz. Gıdalarda lif oranı öğütülme sırasında ve pişirme tekniğine bağlı olarak azalabilir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 4, s. 24)",
+      "trigger": "Lif Gereksinimi"
+    },
+    {
+      "id": "p-temd-bes-019",
+      "level": "Kılavuz",
+      "title": "Aynı sayfada iki farklı yağ dağılımı: metin ile öneri ayrışıyor",
+      "content": "Günlük enerjinin yaklaşık %25-30'u yağlardan sağlanmalıdır ve trans yağ asidi alımı %1'den az olmalıdır. Yağ alt dağılımında kılavuz kendi içinde iki farklı değer veriyor. Bölüm metni toplam yağdan gelen enerjinin %7-8'inin doymuş, %12-15'inin tekli doymamış, %7-10'unun çoklu doymamış yağlardan gelmesini yazıyor. Aynı sayfadaki TEMD Önerileri ise %7'den azı doymuş, %10'u tekli doymamış, %10'u çoklu doymamış yağlardan diyor. Yağda eriyen A, D, E ve K vitaminlerinin vücutta kullanımını sağlamak için enerjinin yağdan gelen oranı %20'nin altına düşürülmemelidir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 4, s. 37)",
+      "trigger": "Yağ Alımı Oranı"
+    },
+    {
+      "id": "p-temd-bes-020",
+      "level": "Kılavuz",
+      "title": "Günde 250-500 mg EPA artı DHA: haftada bir iki porsiyon yağlı balık",
+      "content": "Doz-yanıt analizi, yaklaşık günde 250 mg EPA artı DHA düzeyindeki balık yağının koroner kalp hastalığı ölümü için risk azaltımının çoğunu sağladığını göstermektedir. Hesaplamalardaki potansiyel belirsizlikler ve balık yağının bu ya da daha yüksek dozlarda önemli bir olumsuz etkisinin bulunmaması durumunda, koroner kalp hastalığı ölümünü ve ani kalp ölümünü önlemek için uygun olan günde 250 ila 500 mg EPA artı DHA kullanımıdır; bu miktar günde 1 g balık yağı takviyesiyle veya yağlı balıkların haftada bir ile iki porsiyon alınmasıyla sağlanabilir. Omega 6 / omega 3 oranı ilkel insan beslenmesinde 1/1 iken batı tipi beslenmede 15-16,7/1'e yükselmiştir. Kardiyovasküler hastalığın sekonder korunmasında 4/1 oranını sağlamak total mortalitede %70 azalma sağlıyor. Vücut alfa-linolenik asidi EPA ve DHA'ya çevirebilir, ancak bu dönüşüm oldukça sınırlıdır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 4, s. 35)",
+      "trigger": "Omega-3 ve Omega-6"
+    },
+    {
+      "id": "p-temd-bes-021",
+      "level": "Kılavuz",
+      "title": "D vitamininde yükleme kararını 20 ng/ml çizgisi verir",
+      "content": "Tedavide hedef serum 25(OH)D düzeyi 30-50 ng/ml'dir. Düzey 20-30 ng/ml ise yükleme yapılmadan doğrudan idame dozla, yani 1500-2000 IU ile başlanabilir. Düzey 20 ng/ml altındaysa yükleme yapılmalıdır: 50000 IU/hafta, 6-8 hafta. Hedefe ulaşılamazsa 50000 IU/hafta 3-6 hafta daha sürdürülebilir. Hedefe varıldıktan sonra günlük 1500-2000 IU idame ile devam edilir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 5, s. 42)",
+      "trigger": "D Vitamini"
+    },
+    {
+      "id": "p-temd-bes-022",
+      "level": "Kılavuz",
+      "title": "Obezitede D vitamini dozu iki üç kat, böbrekte molekül değişir",
+      "content": "Obezitesi olan hastalarda dozlar 2-3 kat daha fazla olmalıdır: yükleme 6-8 hafta boyunca 100000 IU/hafta, idame 3000-6000 IU/gün. Malabsorbsiyon sendromunda 10000-50000 IU/gün önerilir. Kronik karaciğer hastasında 25 hidroksilasyon gerektirmeyen alfa-kalsidiol, eGFR 30 ml/dk altındaki kronik böbrek yetmezliğinde aktif D vitamini yani kalsitriol kullanılmalıdır. Gebelik ve laktasyonda replasman dozları aynı yaştaki gebe olmayanlardan farklı değildir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 5, s. 42)",
+      "trigger": "D Vitamini"
+    },
+    {
+      "id": "p-temd-bes-023",
+      "level": "Kılavuz",
+      "title": "Toksisite demek için üç bulgu birden gerekir",
+      "content": "Tedaviye başlandıktan 8 hafta sonra serum 25(OH)D düzeyi ölçülmelidir; 3. ayda hem 25(OH)D hem kalsiyum bakılır. Düzey 3. ayda hâlâ 30 ng/ml altındaysa malabsorbsiyon ya da tedavi uyumsuzluğu araştırılmalıdır. 25(OH)D 88 ng/ml üzerine çıktığında hiperkalsiüri izlenir. Toksisite demek için hiperkalsemi, hiperkalsiüri ve 25(OH)D düzeyinin 150 ng/ml üzerinde olması birlikte aranır. Tedaviye yeterli kalsiyum eşlik etmelidir: 19-70 yaş 1000 mg/gün, 70 yaş üstü 1200 mg/gün. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 5, s. 42)",
+      "trigger": "D Vitamini"
+    },
+    {
+      "id": "p-temd-bes-024",
+      "level": "Kılavuz",
+      "title": "A vitamininde zehirlenme sınırı ihtiyacın on katı",
+      "content": "A vitamininden yeterli beslenen biri günlük ihtiyacın 10 katı kadar alırsa zehirlenme görülür. İlk belirtiler baş ağrısı, baş dönmesi ve kusmadır; fazla alımda karaciğerde büyüme, eklem ağrısı, kuru ve pul pul dökülen deri, uzun kemiklerde kalınlaşma, kafa içi basıncında artış ve doğumsal bozukluklar da gözlenebilir. Yetişkin ihtiyacı erkekte 1000 mcg, kadında 800 mcg retinol eşdeğeridir. Eksikliği çocuklarda önlenebilir körlüğün en sık sebebidir; gebede gece körlüğü yapabilir ve maternal mortalite riskini artırır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 5, s. 41)",
+      "trigger": "A Vitamini"
+    },
+    {
+      "id": "p-temd-bes-025",
+      "level": "Kılavuz",
+      "title": "E vitamini vermenin klinik yararı üç durum dışında gösterilmemiş",
+      "content": "E vitamini eksikliği nadirdir; vücutta kalış süresi uzun olduğu için eksiklik bulgusunun ortaya çıkması yaklaşık beş ile yedi yıl sürebilir. Eksiklikte hemolitik anemi görülür. Günlük gereksinim kadın ve erkekte 15 mg'dır, laktasyonda 19 mg'a çıkabilir; tolere edilebilir üst limit günlük 1000 miligramdır. Fazla alımda kanama riski artar ve grip benzeri belirtiler görülür. Nonalkolik steatohepatit, yaşa bağlı maküla dejenerasyonu ve dokümente edilmiş spesifik eksiklik dışında verilmesinin klinik yararı gösterilmemiştir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 5, s. 43)",
+      "trigger": "E Vitamini"
+    },
+    {
+      "id": "p-temd-bes-026",
+      "level": "Kılavuz",
+      "title": "Erişkinde tiamin eksikliğinin bugünkü adresi bariatrik cerrahi",
+      "content": "Tiamin eksikliği günümüzde erişkinlerde en çok bariatrik cerrahi sonrasında görülmektedir. Kalp yetmezliğine bağlı yatırılan ve furosemid kullanan hastalarda da eksiklik saptanabilir. Yetersizlikte yorgunluk, iştah azalması, kusma, sindirim bozuklukları, kalp yetmezliği ve huzursuzluk sık görülür; eklemlerde şişlik, ağrı ve denge bozukluğuyla seyreden Beriberi gelişebilir. B1 vücutta depo edilmez, günlük alınmalıdır ve karbonhidrattan zengin beslenende ihtiyaç artar. Pratik ölçü her 1000 kalori için 0,4 mg'dır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 5, s. 43)",
+      "trigger": "Tiamin"
+    },
+    {
+      "id": "p-temd-bes-027",
+      "level": "Kılavuz",
+      "title": "B12 eksikliğini arıyorsan önce ilaç listesine bak",
+      "content": "B12 yalnızca hayvansal kaynaklı besinlerde bulunur, bitkisel besinlerde yoktur. Günlük ihtiyaç 2 mcg, gebelik ve laktasyonda 2,6 mcg'dir. Eksiklik metformin, H2 reseptör antagonistleri ve PPİ gibi ilaçlarla ortaya çıkabilir. Otoimmün hastalıklar (tiroid hastalığı, vitiligo, pernisiyöz anemi), emilim bozuklukları (bariyatrik cerrahi, Crohn, Çölyak, pankreatik yetmezlik) ve vegan diyete bağlı alım eksikliği diğer nedenlerdir. Yüksek ısıda ısıtıldığında kayba uğrar. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 5, s. 45)",
+      "trigger": "B12 Vitamini"
+    },
+    {
+      "id": "p-temd-bes-028",
+      "level": "Kılavuz",
+      "title": "Çiğ yumurta yiyende saç dökülmesinin adı avidin",
+      "content": "Biotin ince barsak bakterilerince üretilir ve pek çok gıdada yeterince bulunur, bu yüzden eksiklik belirtileri görülmez. Ancak çiğ yumurta akındaki avidin adlı protein biotinin vücutta kullanılmasını engeller. Çiğ yumurta yiyenlerde saç dökülmesi ve dermatit oldukça sık görülür; bu nedenle yumurtanın pişirilerek tüketilmesi daha yararlıdır. Biotin eksikliğinde dermatit, iştahsızlık, kas ağrıları ve solukluk ortaya çıkar. Yetişkin için önerilen tüketim günlük 20-30 mcg'dir; fazlalık belirtileri bilinmemektedir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 5, s. 45)",
+      "trigger": "Biotin"
+    },
+    {
+      "id": "p-temd-bes-029",
+      "level": "Kılavuz",
+      "title": "Hem demir ile hem olmayan demirin emilim oranı arasında kat farkı var",
+      "content": "Toplam vücut demiri 3-4 gramdır ve organizma gereksinimini temel olarak eski eritrositlerden karşılar, günde 20 mg. Bu nedenle sağlıklı bir insanda günde 1 mg demirin diyetle alınması yeterlidir. Kırmızı etteki demirin yüzde 40'ı hem demirdir ve emilimi yüzde 25-30'dur; bitkisel besinler, süt ve yumurtadaki hem olmayan demirin ancak yüzde 4-15'i emilir. Yumurtadaki fosfitin, diyetteki kalsiyum, ete eklenen nitrat ve nitrit ile pişirme işlemleri hem demirinin biyoyararlanımını azaltır. Gebede Hb 11 g/dL altındaysa demir replasman tedavisi için yönlendirme uygundur. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 5, s. 48)",
+      "trigger": "Demir"
+    },
+    {
+      "id": "p-temd-bes-030",
+      "level": "Kılavuz",
+      "title": "İdrar iyodu son 24 saatin aynası",
+      "content": "Diyetle alınan iyodun yüzde 90'ından fazlası idrarla atılır, fekal atılım ihmal edilebilir düzeydedir. Bu nedenle üriner iyot konsantrasyonu ölçümü kişinin son 24 saat içinde aldığı iyot miktarı konusunda fikir verir. İyot eksikliğinde tiroidin iyot tutulum oranı yüzde 80'e kadar çıkarken yeterli alımda yüzde 10 civarında kalır. Yetişkinde 150 µg/gün, gebe ve laktasyondaki bireyde 250 µg/gün üzeri alım önerilir. TEMD ülke çapında rafine iyotlu sofra tuzu önerir; kaya tuzu ve gurme tuzu gibi içeriği net bilinmeyen tuzları önermez. Tiroid hastalıklarının tedavisinde gebelik dönemi dışında iyot takviyesi önerilmemektedir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 5, s. 50)",
+      "trigger": "İyot"
+    },
+    {
+      "id": "p-temd-bes-031",
+      "level": "Kılavuz",
+      "title": "Selenyum rutini hafif Graves oftalmopatisi dışında önerilmiyor",
+      "content": "Selenyum glutatyon peroksidaz enziminin bileşenidir, T4'ün T3'e dönüşümünde katalizör görevi görür ve hidrojen peroksitten tiroidi korur. Bazı hayvan çalışmalarında Hashimoto ve Graves hastalığında antikor düzeyini düşürdüğü, hafif Graves oftalmopatisinde semptomları düzelttiği gösterilmiştir. Ancak insanlarda yapılan randomize kontrollü çalışmalarda bu etki doğrulanamadığı için hafif Graves oftalmopatisi dışındaki otoimmün tiroid hastalarında rutin takviye önerilmez. Eksikliği olanlarda günlük 200 mikrogram yeterlidir, 900 mikrogram ve üstü toksiktir. Uzun süreli yüksek doz alımında Tip 2 diyabet riskinin arttığına dair çalışmalar mevcuttur. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 5, s. 50)",
+      "trigger": "Selenyum"
+    },
+    {
+      "id": "p-temd-bes-032",
+      "level": "Kılavuz",
+      "title": "Florda yeterli alım kemiği korur, aşırısı bozar",
+      "content": "Florun en önemli görevi diş çürüklerinin önlenmesidir ve esas kaynağı sudur. İçme suyundaki flor litrede 0,7-1,2 mg arasındayken toplumda diş çürüğü sıklığı azalır. Litrede 0,7 mg'ın altına düşerse çürükler sıklaşır; 2 mg üstüne çıktığında diş yüzeylerinde sarımsı kahverengi lekeler, yani florozis oluşur. Kemikte de aynı ikilik geçerlidir: yeterli flor alımı osteoporozu önlerken aşırı flor alımı osteoporoza neden olur. Günlük önerilen güvenilir alım düzeyi 1,5-4,0 mg'dır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 5, s. 48)",
+      "trigger": "Flor"
+    },
+    {
+      "id": "p-temd-bes-033",
+      "level": "Kılavuz",
+      "title": "Karbonhidratta mortalite eğrisi U biçiminde",
+      "content": "ARIC çalışmasında 45-64 yaş aralığındaki 15428 kişi yaklaşık 25 yıl izlenmiş, ortalama karbonhidrat oranı yüzde 48,9 saptanmıştır. Günlük enerjisinin yüzde 40'ından azını karbonhidrattan karşılayanlarda da, yüzde 70'in üzerinde karşılayanlarda da mortalite daha yüksek bulunmuştur. En düşük toplam ve kardiyovasküler mortalite, kalorisinin yüzde 50-55'ini karbonhidrattan alanlardadır. Ancak düşük karbonhidratlı beslenende protein ve yağ kaynağı bitkisel ise mortalite artmamaktadır. TEMD günlük enerjinin ortalama yüzde 50-55'inin karbonhidrattan karşılanmasını önerir; bu oran obez ve diyabetik olgular için de geçerlidir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 6, s. 54)",
+      "trigger": "Karbonhidrattan Zengin Beslenme"
+    },
+    {
+      "id": "p-temd-bes-034",
+      "level": "Kılavuz",
+      "title": "Früktozda doz her şeyi ters çevirir",
+      "content": "Düşük doz früktoz glukokinaz enzimini uyararak glikojen sentezini artırır ve karaciğerden glukoz üretimini azaltır. Bu akut katalitik etki özellikle yemek başına 10 gramdan düşük früktoz alındığında görülür; yemek başına 10 gr meyveden elde edilen früktoz, yani katalitik doz kullanıldığında kan basıncı ve glisemik kontrol üzerine olumlu etki gösterilmiştir. Buna karşılık günlük 100 gramdan fazla früktoz alındığında obezite, hiperürisemi, dislipidemi ve alkol dışı yağlı karaciğer hastalığı sıklığı artar. Meyve suyu, asitli içecek ve enerji içeceği gibi früktoz ya da tatlandırıcı içeren içeceklerin fazla tüketiminde obezite, diyabet, gut, koroner arter hastalığı ve inme riskinin arttığı bildirilmiştir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 6, s. 56)",
+      "trigger": "Früktoz"
+    },
+    {
+      "id": "p-temd-bes-035",
+      "level": "Kılavuz",
+      "title": "Düşük karbonhidratta 6 ay üstünlük var, bir yıl için kanıt çelişkili",
+      "content": "Bu diyetlerde günlük karbonhidrat alımı 60-130 gr ile, çok düşük karbonhidratlı biçimlerinde 60 gr altıyla sınırlıdır. Bilimsel veriler kilo kaybında ilk 6 ayda düşük yağlı diyetlere göre daha başarılı olduğunu göstermektedir; bir yıllık sonuç için kanıt çelişkilidir — bir metaanalizde 12. ayda kilo kaybı benzerleşirken, bir başka metaanalizde 1 yıllık sürede düşük yağlı diyetlere göre daha fazla kilo kaybı bildirilmiştir. Hızlı kilo kaybının glikojen yıkımı ve beraberindeki su kaybıyla olduğu düşünülmektedir. Çok düşük karbonhidratlı diyetlerde ketonemi ve ketonüri gelişir. Kabızlık, ağız kokusu, kas krampları, bitkinlik, cilt döküntüsü ve baş ağrısı düşük yağlı diyete göre daha sık görülür. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 6, s. 56)",
+      "trigger": "Düşük Karbonhidratlı Diyetler"
+    },
+    {
+      "id": "p-temd-bes-036",
+      "level": "Kılavuz",
+      "title": "Yüksek protein tanımı literatürde tek değil",
+      "content": "Sağlıklı beslenmede karbonhidrat oranının yüzde 45-65, yağların yüzde 20-35, proteinin yüzde 10-35 civarında olması bildirilmektedir. Günlük protein 46-56 gr, yani 0,8 gr/kg civarında olmalıdır ve bu değerin üstü yüksek proteinli sayılabilir. Ancak literatürde 1,2 gr/kg/günden fazla alım da yüksek protein olarak bildirilmektedir. Yüzde 10-35'lik dağılım aralığının üst sınırı 70 kg'lık bir kişide 2500 kkalorilik alımda 219 gr proteine, yani 3 gr/kg'a denk gelir; bu da 0,8 gr/kg önerisinin yaklaşık 4 katıdır. Bu nedenle orta düzey bir alımın, 1,5 gr/kg/gün, çoğu kişi için kabul edilebilir olduğu öne sürülmektedir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 6, s. 58)",
+      "trigger": "Yüksek Proteinli Diyetler"
+    },
+    {
+      "id": "p-temd-bes-037",
+      "level": "Kılavuz",
+      "title": "Üst sınır bildirilmedi ama uyarı var: 2-3 gr/kg",
+      "content": "Institute of Medicine protein alımı için tolere edilebilir üst düzeyi yetersiz veri nedeniyle bildirmemiştir; buna karşılık 2-3 gr/kg/günden fazla alımın zararlı olabileceği ifade edilmektedir. Uzun süre 4 gr/kg/gün üzerinde protein alan atletler ve vücut sporcuları bu açıdan değerlendirilmelidir. Yüksek protein alımı glomerüler filtrasyon hızını artırır ve bunun uzun sürede böbreğe teorik olarak zarar verebileceği öne sürülmektedir; bu durum böbrek fonksiyonu bozuk olanlarda görülürken sağlıklı kişilerde yeterli veri yoktur. Böbrek taşına meyilli kişilerde yüksek protein alımıyla taş oluşumunun kolaylaştığı görülmüştür, bitkisel kökenli proteinlerin taş riskini artırmadığı ifade edilmektedir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 6, s. 60)",
+      "trigger": "Yüksek Proteinli Diyetler"
+    },
+    {
+      "id": "p-temd-bes-038",
+      "level": "Kılavuz",
+      "title": "200-800 kkal: hızlı kilo, geri dönen kilo, safra taşı",
+      "content": "Bu diyetlerde günlük enerji 200-800 kkal ile sınırlıdır; daha düşük kalorili programlara açlık diyetleri denir. Kısa vadede diğer diyetlerden daha fazla ağırlık kaybı sağlar, ancak bu etki uzun vadede kaybolur ve kayıp diğer programlarla benzer düzeye iner. Halsizlik, yorgunluk, saç dökülmesi ve yağ dokudan kolesterol mobilizasyonuna bağlı safra taşı oluşumu görülebilir. Obezitede önerilmeme nedeni sürdürülebilir olmaması ve sonrasındaki rebound kilo alımı ile yoyo etkisidir. Gebelerde, gelişim çağındaki çocuklarda ve laktasyon döneminde uygulanması kesinlikle önerilmez; preoperatif dönemde cerrahi riski düşürmek için tercih edilir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 6, s. 61)",
+      "trigger": "Çok Düşük Kalorili Diyetler"
+    },
+    {
+      "id": "p-temd-bes-039",
+      "level": "Kılavuz",
+      "title": "Aralıklı açlığı kime önermemek gerektiği belli, kime önerileceği değil",
+      "content": "TEMD aralıklı oruç tipinde beslenmeyi önermek ya da buna karşı çıkmak için yeterli bilimsel dayanak olmadığını belirtir. Normal kilolu bireylerde vücut ağırlığı çok az etkilenirken, obez ve diyabetik olgularda etkinliği dengeli düşük kalorili diyetlerle benzer bulunmuştur. Sınırlı veriye göre 16/8 biçimindeki aralıklı açlığın kilo kontrolü üzerine etkisi tartışmalıdır. 18 yaş altı, 65 yaş üstü ve çoklu kronik hastalığı olanlarda güvenirlik verisi oldukça sınırlıdır, bu gruplarda tercih edilmemesi önerilir. Yeme bozukluğu şüphesi varsa hasta uyarılmalı ve bu beslenme tipinden vazgeçilmelidir; diyabetiklerde hipoglisemi açısından dikkatli olunmalı, gerekirse insülin ve oral antidiyabetik dozları yeniden düzenlenmelidir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 6, s. 61)",
+      "trigger": "Aralıklı Açlık"
+    },
+    {
+      "id": "p-temd-bes-040",
+      "level": "Kılavuz",
+      "title": "Düşük yağlı diyetin üstünlüğü net değil",
+      "content": "Düşük yağlı diyet, günlük toplam kalori ihtiyacının yüzde 30'undan azının yağlardan karşılandığı diyettir; kabaca her 1000 kkal içinde 30 gr yağ bulunmasıyla sağlanır. Başarısını belirleyen nokta karbonhidratın kompleks, işlenmemiş ve yüksek lifli formda seçilmesidir; basit karbonhidrat seçimi başarıyı azaltır. Yedi buçuk yıllık izlemli WHI çalışmasında düşük yağlı ve sağlıklı karbonhidratlı beslenme ile hem kilo kaybı hem uzun süreli koruma sağlanabilmektedir. Buna karşılık WHI'yi dışarıda bırakan bir meta-analiz, daha yüksek yağ içeren diyetlerle kilo kaybı başarısının daha yüksek olduğunu göstermektedir; bunun nedeninin uyumun kolaylığı olduğu düşünülmektedir. Kılavuz sonucu açık bırakır: düşük yağlı diyetlerin yüksek yağlılara üstün olduğunu gösteren net bir sonuç yoktur. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 6, s. 54)",
+      "trigger": "Düşük Yağlı Diyetler"
+    },
+    {
+      "id": "p-temd-bes-041",
+      "level": "Kılavuz",
+      "title": "Aktif İBH'de protein artar, remisyonda 1 grama iner",
+      "content": "Aktif İBH varlığında protein alımı genel popülasyona göre artırılır: 1,2-1,5 gr/kg/gün. Kortikosteroid kullanan hastaların protein ihtiyacı ayrıca artmıştır. Remisyondaki hastalar için 1 gr/kg/gün kadar protein alımı yeterli görülmektedir. Yani protein hedefi hastalığın aktivitesine göre değişir, sabit bir değer değildir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 67)",
+      "trigger": "İnflamatuar Bağırsak Hastalarında Beslenme"
+    },
+    {
+      "id": "p-temd-bes-042",
+      "level": "Kılavuz",
+      "title": "Günde en az 30 gr lif, ama aktif hastalıkta düşük lif",
+      "content": "İBH varlığında günlük en az 30 gr lifli besin tüketilmesi gerekmektedir; azaltılması istenen suda çözünmeyen lif miktarıdır. Ciddi diyare ve striktür varlığında portakal, kurutulmuş meyve gibi suda çözünmeyen lifler şikayetleri artırabilir. Suda çözünen lifler (kavun, elma püresi) su geri emilimini artırır ve transit hızını yavaşlatır. Kabukları soymak veya iyice haşlamak çözünmeyen lifi azaltır. Kılavuz aktif hastalık döneminde ayrıca düşük lifli, düşük tuzlu, düşük yağlı, laktozsuz ve yüksek kalorili diyet öneriyor. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 67)",
+      "trigger": "İnflamatuar Bağırsak Hastalarında Beslenme"
+    },
+    {
+      "id": "p-temd-bes-043",
+      "level": "Kılavuz",
+      "title": "Demirin yolunu hastalık aktivitesi, B12'yi rezeksiyon uzunluğu belirler",
+      "content": "Anemi, İBH'de en sık görülen ekstraintestinal bulgudur. Hastalık remisyondaysa demir replasmanına oral formla başlanır; hastalık aktifse, hemoglobin 10 gr/dL altındaysa veya oral preparatlara intolerans varsa intravenöz form tercih edilir. Crohn hastalığında B12 eksikliği prevalansı yüzde 5,6-38 arasındadır ve ileal tutulumda yakın takip önerilir. B12 eksikliği riski distal ileumun 30 cm ve daha fazla rezeksiyonunda yüksek, 20 cm ve altında oldukça düşüktür. Eksikliği doğrudan saptananlar dışında, ileum rezeksiyonu 20 cm'den uzun olan hastalara profilaktik olarak aylık 1000 µg B12 ömür boyu verilmelidir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 68)",
+      "trigger": "İnflamatuar Bağırsak Hastalarında Beslenme"
+    },
+    {
+      "id": "p-temd-bes-044",
+      "level": "Kılavuz",
+      "title": "Günlük 5 gr tuz: bir silme tatlı kaşığı",
+      "content": "İdeal tuz tüketiminin günlük 5 gr (2 g sodyum) altında olması önerilmektedir. Bu miktar 1 silme tatlı kaşığı veya tepeleme çay kaşığı tuza denk gelir. Diğer besinlerden gelen sodyum düşünüldüğünde yemek yaparken veya sırasında ekstra tuz eklememek önemli bir basamaktır. Gıda paketinde içindekilerin ilk 3'ünden biri tuz, sodyum veya soda ise o gıda alınmamalı; günlük sodyum ihtiyacının yüzde 5 veya daha azını içeren gıdalar tercih edilmelidir. Düşük sodyumlu diyet hipertansiyonu olmayan kişilerde de önerilmektedir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 71)",
+      "trigger": "Hipertansiyonda Beslenme"
+    },
+    {
+      "id": "p-temd-bes-045",
+      "level": "Kılavuz",
+      "title": "Potasyum hedefi 120 mEq, ama denetimsiz verilmez",
+      "content": "Düşük potasyum alımı (günlük 40 mEq veya 1,5 gram altında) artmış kan basıncı ve serebrovasküler olay ile ilişkilendirilmiştir. Kişi hiperkalemiye eğilimli değilse hipertansiyon hastalarında günlük potasyum tüketiminin 120 mEq (4,7 gram) olması gerektiği öne sürülmüştür. Bu miktar önerilecekse diyetisyen danışmanlığı eşliğinde ve doktor kontrolü altında yapılması önerilir. Etki özellikle siyah ırkta ve sodyum dirençli olmayan kişilerde belirgindir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 72)",
+      "trigger": "Hipertansiyonda Beslenme"
+    },
+    {
+      "id": "p-temd-bes-046",
+      "level": "Kılavuz",
+      "title": "Kalp yetmezliğinde protein hedefi kuru ağırlığa göre yazılır",
+      "content": "Günlük enerji alımı 25-30 Kkal/kg/gün olmalıdır. Önceki çalışmalar bu değerin yeterli beslenen hastalar için 28 Kkal/kg, yetersiz beslenen hastalar için 32 Kkal/kg olması gerektiğini göstermiştir. Protein ihtiyacı genel popülasyondan fazladır: normal hastalarda 1,1 g/kg kuru ağırlık/gün, kardiyak kaşeksisi veya nöropati ve/veya intestinal malabsorbsiyona bağlı kilo kaybı olanlarda 1,5-2 g/kg kuru ağırlık/gün. Doymuş yağ, trans yağ, diyet kolesterolü (günlük 200 mg altı) ve basit şekerler kısıtlanır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 76)",
+      "trigger": "Kalp Yetmezliği Olan Hastalarda Beslenme"
+    },
+    {
+      "id": "p-temd-bes-047",
+      "level": "Kılavuz",
+      "title": "Üç günde 2-3 kg: bu kilo değil sıvıdır",
+      "content": "Kalp yetmezliğinde sıvı kısıtlaması herkese uygulanmaz. Gerekli görülürse 1000-1500 ml civarında olmalı ve hiponatremik veya semptomatik hastalarda uygulanmalıdır. Vücut ağırlığı günlük olarak izlenmelidir; 3 gün içinde meydana gelen ani 2-3 kg artış sıvı tutulumu olarak not edilmelidir. Tüple beslemede sıvı kısıtlaması 1-1,5 litre/gün olarak ayarlanır ve protein konsantrasyonu yüksek sıvılar tercih edilir. Oral beslenmenin imkansız olduğu ve kişinin ihtiyaçlarının yüzde 65'ini sağlayamadığı durumlarda enteral beslenme endikasyonu doğar. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 76)",
+      "trigger": "Kalp Yetmezliği Olan Hastalarda Beslenme"
+    },
+    {
+      "id": "p-temd-bes-048",
+      "level": "Kılavuz",
+      "title": "Sirozda enerji hedefi 35-40 Kkal/kg, tutturulamazsa destek",
+      "content": "ESPEN önerilerine göre karaciğer siroz hastalarının günlük enerji alımı 35-40 Kkal/kg/gün, protein alımı 1,2-1,5 g/kg/gün olmalıdır. Gerekli profesyonel yardıma rağmen günlük alımı bu değerlerin altında kalan hastalara oral nutrisyon ürünleri veya tüpten beslenme ile destek sağlanmalıdır. Özofagus varisi tüpten beslenme için engel değildir; buna karşılık PEG ile beslenme asit, koagülasyon bozukluğu veya varislere bağlı komplikasyon riskini artırdığından önerilmemektedir. Fazla kilo veya nonalkolik steatohepatit varlığında kalori kısıtlaması yapılır, protein kısıtlaması değil. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 79)",
+      "trigger": "Karaciğer Sirozunda Beslenme"
+    },
+    {
+      "id": "p-temd-bes-049",
+      "level": "Kılavuz",
+      "title": "Sirozda protein kısmak sık yapılan yanlış",
+      "content": "Kılavuz, sirozlu hastalarda protein kısıtlamasına gidilmesini sıkça yapılan yanlışlardan biri olarak sayıyor. Bir çalışmada epizodik ensefalopati atakları geçiren siroz hastalarında günlük 1,2 gr protein diyetinin güvenle uygulanabileceği gösterilmiştir. Akut ensefalopatide altta yatan neden tedavi edilene kadar 0,6-0,8 g/kg/gün protein kısıtlaması genel bir kanıdır; ancak ESPEN verilerine göre kısa süreli protein kısıtlamasının hastaya bir yararı gösterilememiştir. Buna karşın kılavuz, protein kısıtlamasını yalnızca akut ensefalopatide ve altta yatan neden tedavi edilene kadar 0,6-0,8 g/kg/gün olarak öneriyor. Hepatik ensefalopati varlığında dallı zincirli aminoasitten zengin ürünlerin kullanılması gerekliliğine bir çalışmada değinilmiştir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 79)",
+      "trigger": "Karaciğer Sirozunda Beslenme"
+    },
+    {
+      "id": "p-temd-bes-050",
+      "level": "Kılavuz",
+      "title": "Gece ara öğünü: 700 kalori, 25 gram protein",
+      "content": "Çoğu sirozlu hasta için yaklaşık 700 kalori ve 25 gr protein içeren gece ara öğünü, çizgili kasın korunması ve katabolizmanın önlenmesi için son derece önemlidir. Bir gün içindeki kalorinin yüzde 45-65'i karbonhidratlardan, yüzde 25-35'i yağdan, geri kalanı proteinlerden alınmalıdır. Sıvı alımı 30-40 mL/kg/gün şeklindedir. 120 mEq/L altında hiponatremi veya asit varlığında 1,5 L/gün sıvı kısıtlaması düşünülmeli, ayrıca günde 2 gr altında sodyum kısıtlaması yapılmalıdır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 79)",
+      "trigger": "Karaciğer Sirozunda Beslenme"
+    },
+    {
+      "id": "p-temd-bes-051",
+      "level": "Kılavuz",
+      "title": "Steroid diyeti: proteinden zengin, yağdan fakir, tuzdan kısık",
+      "content": "Kortikosteroid alan hastanın diyeti protein bakımından orta derecede zengin (1,5 g/kg/gün), yağdan fakir (kalorinin yüzde 30'undan azı, genellikle doymamış yağ asitleri) olmalıdır. Etanol ve pürin alımı azaltılmalıdır. Diyet az miktarda sodyum, yüksek miktarda su, kalsiyum, magnezyum ve potasyum içermelidir; çünkü kortikosteroidlerle ödem, potasyum kaybı, hipokalemik alkaloz ve hipertansiyona neden olabilen sodyum retansiyonu görülür. Steroid tedavisi askorbik asit ve A vitamini serum düzeylerini azaltabilir; diyetle alım yetersizse multivitamin desteği yapılmalıdır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 82)",
+      "trigger": "Kortikosteroid Tedavisi Alanlarda Beslenme"
+    },
+    {
+      "id": "p-temd-bes-052",
+      "level": "Kılavuz",
+      "title": "Üç ay steroid: kalsiyum ve D vitamini eşiği burada başlar",
+      "content": "Kırık riski, prednizonun ya da eşdeğerinin günde 2,5-7,5 mg ve üzeri dozlarda ve herhangi bir dozda 3 ay ve daha uzun kullanıldığında artmaktadır. Risk tedavi başlangıcının ilk 3-6 ayında daha yüksektir ve tedavi kesilince azalır. Herhangi bir dozda 3 ay ve daha uzun süre glukokortikoid kullanan hastalara 1000-1200 mg/gün kalsiyum ve 800-1500 IU/gün D vitamini desteği önerilir. Alkol ve sigara yasaklanmalıdır. D vitamini eksikliği riski olan hastalarda yılda 2 kez D vitamini düzeyi bakılmalıdır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 82)",
+      "trigger": "Kortikosteroid Tedavisi Alanlarda Beslenme"
+    },
+    {
+      "id": "p-temd-bes-053",
+      "level": "Kılavuz",
+      "title": "KBY'de protein: evreye, diyabete ve diyalize göre dört ayrı hedef",
+      "content": "Diyabetik olmayan ve metabolik olarak stabil evre 3-5 KBY hastalarında düşük proteinli diyet (0,55-0,6 g/kg/gün) veya keto asit/amino asit analogları ile çok düşük proteinli diyet (0,28-0,43 g/kg/gün) önerilir. Diyabetik böbrek hastalığında glisemik kontrol için daha ılımlı kısıtlama önerilir: 0,6-0,8 g/kg/gün. Diyaliz hastalarında, dengeli bir metabolik durum ve yeterli enerji alımı koşuluyla, gözlemsel verilere dayanarak önerilen protein alımı günde 1,0-1,2 g/kg'dır. Hastanede yatış sırasında, enfeksiyon veya immünsüpresif tedavi sırasında ya da kısa süreli kilo kaybı sırasında ve sonrasında günde 0,55-0,6 g/kg protein alımı önerilmemektedir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 84)",
+      "trigger": "Kronik Böbrek Yetmezliğinde Beslenme Tedavisi"
+    },
+    {
+      "id": "p-temd-bes-054",
+      "level": "Kılavuz",
+      "title": "KBY'de enerji, sodyum ve sıvı: üç sayı üç ayrı gerekçe",
+      "content": "KDOQI 2020 kılavuzu kronik böbrek hastaları, diyaliz hastaları ve posttransplant erişkinlere yaş, cinsiyet, fiziksel aktivite, vücut kompozisyonu, kilo hedefleri, KBY evresi ve eşlik eden hastalık veya inflamasyona göre günde 25-35 kcal/kg enerji alımı önermektedir. Kan basıncını kontrol etmek ve hücre dışı hacim genişlemesini sınırlamak için sodyum tüketimi günde 100 mmol (2,3 g) altında olmalıdır. Terminal döneme kadar hastalar günde 2-3 litre sıvı alabilir; kilo alımı, ödem, hipertansiyon ve kalp yetmezliği durumunda sıvı kısıtlanır. Kolesterol alımı 200 mg/gün altına indirilmelidir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 85)",
+      "trigger": "Kronik Böbrek Yetmezliğinde Beslenme Tedavisi"
+    },
+    {
+      "id": "p-temd-bes-055",
+      "level": "Kılavuz",
+      "title": "KBY'de vitamin takviyesi kural değil, istisnadır",
+      "content": "KBY hastaları B1, B2, B3, C, K ve D vitamini eksikliği açısından risk altında olsa da rutin vitamin takviyesi önerilmez; takviye diyet alımı bozulan veya uzun süre besin kaybı olan bireylere yapılır. Çinko ve selenyum gibi eser elementlerin rutin takviyesi de önerilmemektedir. Uzun süre yetersiz beslenen evre 5 diyaliz hastalarında suda çözünen tüm vitaminleri ve temel eser elementleri içeren multivitamin önerilir. C vitamini eksikliği riski taşıyanlarda erkekler için en az 90 mg/gün, kadınlar için 75 mg/gün C vitamini önerilir. Varfarin gibi K vitamini antagonisti alanlarda K vitamini takviyesi verilmemesi mantıklıdır; diyaliz hastalarında (kılavuzun öneri listesinde evre 1-5) toksisite riski nedeniyle A veya E vitamini rutin verilmemelidir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 86)",
+      "trigger": "Kronik Böbrek Yetmezliğinde Beslenme Tedavisi"
+    },
+    {
+      "id": "p-temd-bes-056",
+      "level": "Kılavuz",
+      "title": "Gluteni kesmeden önce çölyak taraması yap, sonra Salerno'yu uygula",
+      "content": "Çölyak için tarama, diyetten gluten uzaklaştırılmadan önce yapılmalıdır. Salerno kriterleri iki aşamalıdır ve her iki aşamada kişiler 6 hafta boyunca 1'den 10'a kadar skorlanan ölçekle izlenir. İzlem başlamadan önce kişi 6 hafta gluten içeren diyet altında olmalı, çölyak ve buğday alerjisi tam olarak dışlanmalıdır. Ardından 6 hafta glutensiz diyet uygulanır; klinik iyileşme yoksa tanı ekarte edilir. İkinci aşamada çift kör izlem yapılır: tablet 1. hafta verilir, 2. hafta kesilir, 3. hafta yeniden verilir, 4. hafta kesilir; gluten içeren tablette en az 8 gr gluten ve 0,3 gr amilaz-tripsin inhibitörü bulunur, FODMAP bulunmaz. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 90)",
+      "trigger": "Non Çölyak Gluten Hassasiyeti"
+    },
+    {
+      "id": "p-temd-bes-057",
+      "level": "Kılavuz",
+      "title": "D vitamini 20 ng/ml ve altındaysa önce yükleme, sonra idame",
+      "content": "Serum 25(OH)D düzeyi 20 ng/ml ve altında olanlarda önce 8 hafta süreyle haftada 50000 IU (toplam 400000 IU) D3 oral verilir, ardından 1500-2000 IU/gün ile devam edilir. D vitamini düzeyi 20 ng/ml üzerinde olan postmenopozal osteoporotik kadınlara 1500-2000 IU/gün D3 verilmelidir. Kemik yapısının korunması için günlük 800-1500 IU alım önerilir. Tüm erişkinlerde güvenli üst sınır 4000 IU/gün olarak belirlenmiştir. D vitamininin yüzde 80-90'ı güneş ışığı ile ciltten sentezlenir; hiçbir gıda tek başına gereksinimi karşılayamaz. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 93)",
+      "trigger": "Osteoporozda Beslenme"
+    },
+    {
+      "id": "p-temd-bes-058",
+      "level": "Kılavuz",
+      "title": "Kalsiyum tek başına yetmez, fazlası da zarar verir",
+      "content": "Postmenopozal kadın ve yaşlı erkeklerde yapılan çalışmalar kalsiyum takviyesinin kırık riskini azaltmak için tek başına yeterli olmadığını, ek D vitamini gerektiğini göstermektedir. Bir meta-analizde kalsiyum takviyesi, özellikle D vitamini olmadan verildiğinde artmış miyokard enfarktüsü riski ile ilişkili bulunmuştur. Preparat seçilirken elemental kalsiyum miktarı dikkate alınır; en yüksek elemental içeriğe (yüzde 40) sahip olduğu için çoğunlukla kalsiyum karbonat kullanılır. 1200-1500 mg üzerindeki fazla kalsiyum alımının böbrek taşı, kardiyovasküler olay ve inme riskini artırabileceği unutulmamalıdır. Avrupa kılavuzu 50 yaş üstü kadınlara en az 1000 mg/gün kalsiyum ve 800 IU/gün D vitamini önerirken, kılavuzun kendi önerisi elli yaş üzerindeki tüm kadınlarda 1200 mg/gün kalsiyum; 1000 mg/gün premenopozal kadınlar ve diğer yetişkinler için geçerlidir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 93)",
+      "trigger": "Osteoporozda Beslenme"
+    },
+    {
+      "id": "p-temd-bes-059",
+      "level": "Kılavuz",
+      "title": "Sarkopeninin eşikleri: yürüme hızı ve el kavrama gücü",
+      "content": "Sarkopeni kas kitlesi, kuvvet ve/veya fonksiyon kaybına dayalı bir tanımlamadır; 65 yaş ve üzerinde prevalansı yüzde 6-22 civarındadır. Kas kitlesi dual x-ray absorbsiyometri, biyoelektriksel impedans analizi veya bilgisayarlı tomografi ile tahmin edilebilir. Kas gücündeki azalmayı göstermek için yürüme hızı veya sandalyeden kalkma testi kullanılabilir. Yürüme hızı için pratik tanı eşikleri 0,8 m/sn ya da 1,0 m/sn altıdır. El kavrama gücünde önerilen eşik değerler kadınlar için 20 kg, erkekler için 30 kg altıdır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 99)",
+      "trigger": "Yaşlıda Beslenme"
+    },
+    {
+      "id": "p-temd-bes-060",
+      "level": "Kılavuz",
+      "title": "Yaşlıda protein 0,8 gramda kalmaz, hastalıkla yükselir",
+      "content": "Yağsız vücut kitlesinin progresif kaybını önlemek için önerilen en az günlük protein ihtiyacı 0,8 gr/kg'dır, ancak yaşlı kişilerde daha yüksek protein düzeyleri önerilir. Sağlıklı yaşlılarda diyette önerilen protein alımı 1,0-1,2 gr/kg/gün düzeyindedir; akut veya kronik hastalık durumunda 1,2-1,5 gr/kg/gün, ağır hastalık ve travmada 2 gr/kg/gün'e kadar artırılabilir. Şiddetli böbrek yetmezliği olan ve diyalize girmeyen yaşlılara daha az protein tavsiye edilir. Total enerji ihtiyacı 65 yaş üzerinde 30 kcal/kg/gün olarak hesaplanır; bu düzeye yavaşça çıkılır ve refeeding sendromu açısından dikkatli olunur. Sıvı için yaklaşık 1 ml/kcal veya 30 ml/kg/gün hedeflenir, en az kadınlarda 1,6 L/gün, erkeklerde 2 L/gün önerilir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 7, s. 99)",
+      "trigger": "Yaşlıda Beslenme"
+    },
+    {
+      "id": "p-temd-bes-061",
+      "level": "Kılavuz",
+      "title": "TCF7L2 varyantı gestasyonel diyabetle yakın ilişkili bulundu",
+      "content": "GDM olan ve olmayanlarda karbonhidrat metabolizmasıyla ilişkili TCF7L2, PPARG2 ve PPARGC1A genlerindeki polimorfizmler araştırılmıştır. Bunlardan TCF7L2 genindeki rs7903146 (C&gt;T) varyantının GDM gelişimiyle yakın ilişkili olduğu gösterilmiştir. İki çalışmada bu varyantın varlığının GDM gelişmesini 2,5 ve 5,4 kat artırdığı bildirilmiştir. Bir başka çalışmada özellikle fazla tatlı, sütlü ve yağlı gıda tüketimi ile bu varyantın etkileşimi öne sürülmüştür. Kılavuz, GDM ile nütrigenetik ilişkisini değerlendiren çalışmaların bugün çok kısıtlı olduğunu belirtiyor. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 8, s. 109)",
+      "trigger": "Nütrigenetik ve Gestasyonel Diyabet"
+    },
+    {
+      "id": "p-temd-bes-062",
+      "level": "Kılavuz",
+      "title": "MTHFR: gen-besin etkileşiminin iyi tanımlanmış bir örneği",
+      "content": "MTHFR geni folik asit metabolizmasında rol alır ve homosisteinin normal düzeyde tutulmasında rol oynar. Diyette folik asit eksikse kan homosistein düzeyinin yükselmesinden özellikle sorumlu olan bir MTHFR gen SNP'si tanımlanmıştır. Yükselmiş homosisteinin kardiyovasküler etkileri ve meme kanseri ile ilişkisi bilinmektedir. Bu nedenle folik asit eksikliği olanlarda günlük ihtiyacın yerine konması önerilmektedir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 8, s. 110)",
+      "trigger": "MTHFR ve Folik Asit"
+    },
+    {
+      "id": "p-temd-bes-063",
+      "level": "Kılavuz",
+      "title": "Aynı diyet, farklı gen: kilo yanıtı kişiye göre değişiyor",
+      "content": "TCF7L2 polimorfizmi olan bireyler yüksek yağlı beslendiklerinde daha az kilo kaybetmektedir. Metinde FTO ve TFAP2B polimorfizmi olanların yüksek proteinli diyette daha fazla kilo kaybettikleri bildirilmiştir. Kılavuz burada kendi içinde ayrışıyor: aynı bölümün Tablo 1'inde TFAP2B rs987237 G alleli yüksek protein için diyet cevabı 'kilo geri alımının daha yüksek olması' diye yazılmıştır. Aynı tabloda MTNR1B rs10830963 G alleli yüksek proteinle kadınlarda daha az kilo kaybı ile ilişkilendirilmiştir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 8, s. 112)",
+      "trigger": "SNP-Diyet Etkileşimi"
+    },
+    {
+      "id": "p-temd-bes-064",
+      "level": "Kılavuz",
+      "title": "Nütrigenomik testler: TEMD pratikte kullanımı önermiyor",
+      "content": "Çeşitli gıdalara karşı gelişecek nütrigenomik yanıtlar ve mikrobiyota; fenotipik özellikler, yaş, cinsiyet, fiziksel aktivite ve hastalık varlığı gibi pek çok faktörle etkileşmektedir. TEMD bu nedenle pratikte kullanımının henüz önerilmediğini belirtiyor. Tüm genomu, transkriptomu, proteomu ve metabolomu kapsayacak testlere ihtiyaç duyulması ve maliyetin yüksekliği nedeniyle rutin kullanım önerilmemektedir. Kılavuz halen klinik pratikte bir nütrigenetik kılavuzunun bulunmadığını da yazıyor. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 8, s. 112)",
+      "trigger": "Bireyselleştirilmiş Beslenme"
+    },
+    {
+      "id": "p-temd-bes-065",
+      "level": "Kılavuz",
+      "title": "Mutfaktaki dört sayı: 70 derece, 2 saat, tek ısıtma, 2 gün",
+      "content": "Gıdalar pişirilirken ısının en az 70 °C'ye ulaşmasına dikkat edilmelidir. Yeniden ısıtırken her tarafının ısınmasına özen gösterilmeli, yenilecek kadarı ısıtılmalı ve bir kereden fazla ısıtılmamalıdır. Pişmiş yemekler oda ısısında 2 saatten fazla bekletilmemeli, daha sonra kullanılmak üzere pişirilmişse hızla soğutulmalıdır. Kutu sütler kapalıyken son kullanma tarihine kadar saklanabilir; açıldıktan sonra en fazla 2 gün içinde tüketilmelidir. Açık sütler yerine pastörize sütler tercih edilmelidir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 9, s. 116)",
+      "trigger": "Gıda Tüketiminde Isı ve Süre"
+    },
+    {
+      "id": "p-temd-bes-066",
+      "level": "Kılavuz",
+      "title": "Yirmi saniye, iki tahta ve tek yönlü dondurma",
+      "content": "Eller önce ıslatılmalı, sonra sabunla köpürtülmeli; parmak araları, tırnaklar ve bilekler iyice ovulmalıdır. Bu işlem en az 20 saniye boyunca uygulanmalıdır. Elde yara varsa mutlaka yara bandıyla kapatılmalıdır. Kırmızı et, tavuk ve balık en kısa sürede buzdolabına konmalı, eritme işlemi pişirmeden önce buzdolabında yapılmalıdır. Donmuş gıda çözülünce yeniden dondurulmamalı; et ve sebze için kullanılan kesme tahtaları ayrılarak çapraz bulaş engellenmelidir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 9, s. 116)",
+      "trigger": "Mutfak Hijyeni ve Çapraz Bulaş"
+    },
+    {
+      "id": "p-temd-bes-067",
+      "level": "Kılavuz",
+      "title": "Temizlikten sonra dezenfeksiyon yapılmazsa mikroplar çoğalır",
+      "content": "Temizleme sırasında mikroorganizmalar serbest hale geçer; dezenfeksiyon yapılmazsa çoğalmaya başlarlar. Bu yüzden temizlik işleminden sonra dezenfeksiyon gerekir. Sıcak su ile dezenfeksiyonda uygun materyal 80 °C ve üstündeki suya batırılır. Kimyasal dezenfeksiyon dezenfektanlarla yapılır, ancak dezenfektanlar sterilizasyon yapmaz; sporlar ve bazı vejetatif canlılar bu işlemden etkilenmez. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 9, s. 117)",
+      "trigger": "Temizlik ve Dezenfeksiyon"
+    },
+    {
+      "id": "p-temd-bes-068",
+      "level": "Kılavuz",
+      "title": "NOAEL'in yüzde biri: ADI nasıl belirleniyor",
+      "content": "Yeni bir katkı maddesi için deney hayvanlarında uzun süreli toksikolojik testler yapılır. Deney hayvanına hiçbir zararlı etki göstermeyen doz etkisiz doz ya da NOAEL olarak tanımlanır. Deney hayvanında etki göstermeyen dozun 1/100'ü insanlarda güvenli doz kabul edilir; yani NOAEL 100'lük güvenlik faktörüne bölünerek ADI bulunur. Türk Gıda Kodeksi Yönetmeliği'ne göre onaylı katkı maddelerinin hangi besinlere ve ne miktarda katılabileceği ayrıca belirlenmiştir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 9, s. 125)",
+      "trigger": "Gıda Katkı Maddelerinde Güvenli Doz"
+    },
+    {
+      "id": "p-temd-bes-069",
+      "level": "Kılavuz",
+      "title": "Bazı katkı maddelerinin sınırı hâlâ belirlenmemiş",
+      "content": "Günümüzde 2500'den fazla gıda katkı maddesi kullanılmaktadır ve E kodunun etikette bulunması zorunludur. Limitler madde başına çok farklıdır: E102 tartrazin 7,5 mg/kg vücut ağırlığı, E962 aspartam 40 mg/kg va, E320 0,5 mg/kg va iken E321 0,05 ve E324 0,005 mg/kg va'dır. Buna karşılık E281, E957, E400-E404, E407 ve E440 gibi bazı katkı maddelerinin sınırları henüz tam belirlenememiş, toksisite çalışmaları tamamlanamamıştır. Kılavuz bu nedenle katkı ilave edilen gıdalardan mümkün olduğunca uzak durulmasını ve doğal taze besinlerle beslenilmesini öneriyor. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 9, s. 127)",
+      "trigger": "E Kodları ve Limitler"
+    },
+    {
+      "id": "p-temd-bes-070",
+      "level": "Kılavuz",
+      "title": "Alerjenden kaçan hasta gizlenmiş geni yiyebilir",
+      "content": "Alerji, GDO tüketimi sonrasında oluşabilen en sık görülen etkidir. Dünya Sağlık Örgütü gen transferinin olası alerjen bir maddeden yapılmasını önermemekte, FAO ise gen aktarımının tamamen kontrollü bir süreç olmadığını bildirmektedir. Bilinen gıda alerjisi olan kişi o gıdadan uzak durarak korunabilir; ancak içine başka bir ürünün geni saklanmış bir GDO tüketildiğinde bu mümkün olmaz. Bu durum Brezilya fındığındaki bir genin soyaya aktarılmasının, Brezilya fındığı alerjisi olanlarda alerjik reaksiyona yol açmasıyla kanıtlanmıştır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 9, s. 120)",
+      "trigger": "GDO ve Alerji"
+    },
+    {
+      "id": "p-temd-bes-071",
+      "level": "Kılavuz",
+      "title": "L-triptofan olayı: 37 ölüm; farelerde doza bağlı karaciğer yağlanması",
+      "content": "GDO'ların toksik metabolit oluşturması bir diğer şüphedir; zararlı ot ve böcek öldürücü genler ile terminatör genler etkilerini toksin üreterek gösterir ve bu toksinlerin doku ve hücrelerde birikmesi risk oluşturur. Farelerin 90 gün genetiği değiştirilmiş mısırla beslenmesi sonucunda idrarda fosfor ve sodyum atılımının azaldığı, karaciğer yağlanmasının doza bağlı arttığı tespit edilmiştir. 1989'da L-triptofan içeren genetiği değiştirilmiş ürünleri tüketen 37 vakanın ölüm nedeni, bu ürüne bağlı gelişen eozinofili miyalji sendromu olarak saptanmıştır. Besin değerinde de kayıp olabilir: GDO'lu soyada fitoöstrojenlerin %12-15 azaldığı, kanolada A vitamini içeriğinin artırılmasının E vitamini düzeyini düşürdüğü gösterilmiştir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 9, s. 120)",
+      "trigger": "GDO ve Toksik Etkiler"
+    },
+    {
+      "id": "p-temd-bes-072",
+      "level": "Kılavuz",
+      "title": "İki kilo bakteri: vücuttaki hücrelerin onda dokuzu mikrobiyal",
+      "content": "İnsandaki toplam hücrelerin %10'u insan hücresi, %90'ı mikrobiyal hücredir. İnsandaki gen sayısı 35.000 iken bakteriyel genom sayısı 2 milyondan fazladır ve yerleşmiş bakterilerin toplam ağırlığı yaklaşık 1,5-2 kg'dır. Bağırsak mikrobiyotasının %90'ını Firmicutes ve Bacteroidetes filumu oluşturur. Faydalı/zararlı bakteri oranının azalmasına mikrobiyal disbiyozis adı verilir. Bebeklikten yaşlılığa doğru Firmicutes artar, Bacteroidetes azalır; antibiyotik kullanımı türüne ve kullanıldığı yaşa bağlı olarak geçici ya da kalıcı disbiyozise yol açar. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 10, s. 133)",
+      "trigger": "Mikrobiyota Tanımı ve Profili"
+    },
+    {
+      "id": "p-temd-bes-073",
+      "level": "Kılavuz",
+      "title": "Fermantasyon günlük kalorinin yüzde onunu ekliyor",
+      "content": "Mikrobiyotanın en önemli enerji kaynağı diyetle alınan karbonhidratlardır; sindirilemeyen karbonhidratlardan asetat, propionat ve butirat gibi kısa zincirli yağ asitleri oluşur. Selülozdan zengin lifler ise bakteriyel fermantasyona dirençlidir. Fermantasyon ürünü KZYA'lar lipid ve glukoz sentezine katılarak günlük kalorinin yaklaşık %10'u kadar ek kalori sağlar. KZYA bağırsak epitelindeki GPR41 ve GPR43 reseptörlerini aktifleyerek bağırsak geçişini geciktiren Peptit YY salgısını tetikler. GPR41 aktivasyonu leptin artışı, nöropeptit Y azalması ve GLP-1 artışıyla, GPR43 aktivasyonu ise adipogenez artışıyla ilişkilendirilmiştir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 10, s. 134)",
+      "trigger": "Kısa Zincirli Yağ Asitleri"
+    },
+    {
+      "id": "p-temd-bes-074",
+      "level": "Kılavuz",
+      "title": "Kolin ve karnitinden doğan proaterojenik metabolit",
+      "content": "Besinlerle alınan proteinlerin sadece %10'u kolona ulaşır ve orada bakteriyel fermantasyona uğrar. Yumurta, kırmızı et ve balıktaki kolin ve fosfatidilkolin ile kırmızı etteki karnitinin mikrobiyota tarafından metabolize edilmesiyle proaterojenik trimetilamin-N-oksit (TMAO) ve butirobetain oluşur. Yüksek fosfatidilkolin içerikli beslenme kardiyovasküler mortaliteyi artırmaktadır. TMAO'nun insülin duyarlılığını azalttığı ve karaciğer kanserine yol açtığı ileri sürülmektedir; bir diğer proaterosklerotik mekanizma ters kolesterol transportunu baskılamasıdır. Bu nedenle TEMD kırmızı et tüketiminin sınırlandırılmasını öneriyor. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 10, s. 134)",
+      "trigger": "TMAO ve Kırmızı Et"
+    },
+    {
+      "id": "p-temd-bes-075",
+      "level": "Kılavuz",
+      "title": "Yoğurt çalışması olumlu, takviye önerisi yok",
+      "content": "Probiyotiklerin tip 2 diyabette etkilerini inceleyen 12 randomize kontrollü çalışmanın metaanalizinde açlık kan şekeri, HDL kolesterol, HOMA-IR ve HbA1c düzeyleri önemli ölçüde düzelmiştir. L. acidophilus ve Bifidobacterium lactis içeren probiyotik yoğurdu altı hafta süreyle 300 gr/gün tüketen tip 2 diyabetlilerde açlık kan şekeri ve HbA1c anlamlı olarak düşmüştür. Buna karşılık TEMD, probiyotik ajanların takviyesi için yeterli kanıt olmadığını ve önerilmediğini yazıyor; teşvik edilen şey besin yoluyla prebiyotik ve probiyotik tüketimidir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 10, s. 139)",
+      "trigger": "Probiyotikler ve Tip 2 Diyabet"
+    },
+    {
+      "id": "p-temd-bes-076",
+      "level": "Kılavuz",
+      "title": "Dirençli C. difficile kolitinde yüzde 95 kür",
+      "content": "Fekal transplantasyon ilk olarak 1958 yılında dört psödomembranöz enterokolitli hastanın tedavisinde kullanılmıştır. Başarılı olması üzerine bugün dirençli Clostridium difficile enfeksiyonuna bağlı psödomembranöz enterokolitte %95 kür oranıyla altın standart tedavi haline gelmiştir. Son yıllarda irritabl bağırsak sendromu, kronik konstipasyon ve diyare, enflamatuvar bağırsak hastalığı gibi durumlarda da kullanılmaktadır. Diyabet ve obezite gibi metabolik hastalıklarda ise çalışmalar sürmektedir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 10, s. 139)",
+      "trigger": "Fekal Mikrobiyota Transplantasyonu"
+    },
+    {
+      "id": "p-temd-bes-077",
+      "level": "Kılavuz",
+      "title": "MET kaba bir ölçü: zindeliği hiç hesaba katmaz",
+      "content": "Egzersiz yoğunluğu metabolik ekivalan (MET) ile ölçülür; sakin otururken harcanan enerji 1 MET kabul edilir. Ortalama bir erişkinde 1 MET yaklaşık 1 kal/kg/saate eşdeğerdir, yani 70 kg bir erişkin otururken ya da uyurken saatte yaklaşık 70 kalori harcar. Orta tempolu aktiviteler 3-6 MET, yüksek tempolu egzersizler ise 6 METin üzerindedir. Bu ölçmenin tek sınırlayıcı tarafı bireylerin zindelik düzeyini göz ardı etmesidir: 4,8-6,4 km/saat hızla yürüyen kişi ister maraton koşucusu ister 90 yaşında bir kadın olsun orta tempolu sayılır, ama zorluk düzeyi ikisi için farklıdır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 11, s. 144)",
+      "trigger": "MET ve Egzersiz Yoğunluğu"
+    },
+    {
+      "id": "p-temd-bes-078",
+      "level": "Kılavuz",
+      "title": "Laktat eşiği kalp hastasında erken, atlette geç gelir",
+      "content": "Aşamalı olarak artan kas çalışmasıyla piruvat dehidrojenazın kapasitesi aşılır ve ATP kaynağı glikoliz olur; bu nokta laktat eşiğidir. Normal bireylerde laktat eşiği tahmini VO2 maksın %40'ının üzerindedir. Kardiyovasküler hastalığı olanlarda laktat eşiği daha erken, yani VO2 maksın daha düşük bir yüzdesinde ortaya çıkar; dayanıklılık eğitimi almış atletlerde ise daha geç oluşur. Solunum eşiği laktat eşiğine yaklaşık aynı zamanda ortaya çıktığı için bazen laktat eşiğinin non-invaziv belirteci olarak kullanılır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 11, s. 144)",
+      "trigger": "Laktat Eşiği"
+    },
+    {
+      "id": "p-temd-bes-079",
+      "level": "Kılavuz",
+      "title": "Egzersizde kasın glukoz alımı insülinden bağımsız görünüyor",
+      "content": "Egzersiz sırasında iskelet kası glukoz alımını dinlenme dönemine göre on kattan fazla artırır. Bu aşamada hücre içindeki GLUT-4 plazma membranına ve t-tübüllere taşınır; egzersiz sırasında GLUT-4 translokasyonunun insülinden bağımsız olduğu düşünülmektedir. Tip 2 diyabet ve obezite gibi insülin direnci olan durumlarda da glukoz alımı insülinden bağımsız gerçekleşir, bu da egzersizin bu hasta grubundaki insülin duyarlılaştırıcı etkisini açıklar. Egzersiz başlangıcında önce kasta depolanmış glikojen kullanılır; kas glukoz alımı kas glikojen deposuyla ters orantılıdır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 11, s. 145)",
+      "trigger": "Egzersiz ve Glukoz Alımı"
+    },
+    {
+      "id": "p-temd-bes-080",
+      "level": "Kılavuz",
+      "title": "Yağ yakmak için en yüksek tempo yanlış tercih",
+      "content": "VO2 maksın %25'inde enerji substratı olarak plazma yağ asitleri kullanılır; plazma glukoz oksidasyonunun küçük ama anlamlı bir katkısı vardır, kas içi glikojen ve lipid deposundan neredeyse hiç kullanım olmaz. VO2 maksın %65'inde hem glikojenin hem de lipidlerin kas içi depolarının kullanımı artar ve bu yoğunlukta yağ oksidasyon hızı %25 ve %85 yoğunluktaki egzersizlerden daha yüksektir. VO2 maksın %85'inde metabolik cevap neredeyse tamamen karbonhidrat kullanımı üzerinedir. En yüksek yoğunlukta yağ oksidasyonundaki azalmanın serbest karnitin mevcudiyetindeki kısıtlanmaya bağlı olabileceği öne sürülmüştür. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 11, s. 146)",
+      "trigger": "Yoğunluğa Göre Yakıt Seçimi"
+    },
+    {
+      "id": "p-temd-bes-081",
+      "level": "Kılavuz",
+      "title": "Egzersizi kesin yasaklayan yedi başlık",
+      "content": "Kılavuz egzersiz için kesin ve rölatif kontrendikasyonları ayırır. Kesin kontrendikasyonlar: yakın zamanda gözlenen EKG değişikliği ve miyokard enfarktüsü bulguları, unstabil angina, aort stenozu, 3. derece kalp bloğu, akut konjestif kalp yetmezliği ve dekompanse kalp yetmezliği, kompleks anevrizma, kontrolsüz hipertansiyon ve metabolik hastalık. Rölatif kontrendikasyonlar kardiyomiyopati, orta düzeyde aort stenozu, kompleks ventriküler ektopi ve kontrolsüz supraventriküler taşikardidir. Orta düzeyde aort stenozunun rölatif, aort stenozunun kesin sayıldığına dikkat edin. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 12, s. 150)",
+      "trigger": "Egzersizin Kontrendike Olduğu Durumlar"
+    },
+    {
+      "id": "p-temd-bes-082",
+      "level": "Kılavuz",
+      "title": "Sağlıklı kişiye egzersiz öncesi tetkik gerekmiyor",
+      "content": "ACSM önerilerine göre kronik hastalığı ve semptomu olmayan bireylerin, fiziksel olarak aktif ya da inaktif olsunlar, egzersiz planlaması öncesinde tıbbi değerlendirilmesine gerek yoktur. Burada sayılan kronik hastalıklar diabetes mellitus, kalp hastalıkları ve osteoartrit; semptomlar göğüs ağrısı, sersemlik hissi, baş dönmesi ve eklem ağrısıdır. Fiziksel olarak inaktif olup kronik hastalığı olan bireyler ise hafif-orta düzeyde egzersiz öncesi mutlaka değerlendirilmelidir. TEMD kardiyovasküler, metabolik ya da böbrek hastalığı olup dinlenme veya aktivite sırasında semptomatik olanların medikal değerlendirmesini ister. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 12, s. 150)",
+      "trigger": "Egzersiz Öncesi Değerlendirme"
+    },
+    {
+      "id": "p-temd-bes-083",
+      "level": "Kılavuz",
+      "title": "Borg puanına sıfır ekleyin, hedef nabzı bulun",
+      "content": "Hissedilen zorluk derecesi için Borg skalası kullanılır ve tempo 6-20 arasında derecelendirilir. Orta tempo egzersiz için hissedilen zorluk derecesi 12-13, ağır tempo egzersiz için 14-16'dır. Pratik kural: puanın yanına sıfır eklenince o tempoda ulaşılması gereken kalp hızı bulunur, yani orta tempoda kalp hızının 120-130/dk olması hedeflenir. Günlük pratikte tempo konuşma testiyle de belirlenebilir: rahatça konuşup şarkı söyleyebilen hafif, konuşabilip şarkı söyleyemeyen orta, ikisini de yapamayan ağır tempodadır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 12, s. 152)",
+      "trigger": "Egzersiz Temposunun Belirlenmesi"
+    },
+    {
+      "id": "p-temd-bes-084",
+      "level": "Kılavuz",
+      "title": "150 dakika sağlık için, 300 dakika kilo için",
+      "content": "TEMD haftada 150 dakika orta tempoda ya da 75 dakika ağır tempoda aerobik egzersiz, ya da eşit oranda kombine egzersiz hedefler. Tüm kas gruplarını içeren direnç egzersizleri haftanın 2 veya daha fazla gününde uygulanabilir. Kilo vermek amaçlanıyorsa orta tempo egzersiz süresi haftada 150 dakikadan fazla olmalıdır; kalori kısıtlamasıyla birlikte haftalık 300 dakikaya erişen sürelerle kilo kaybı sağlanabilmektedir. Haftada 150 dakikayı aşan egzersizin sağladığı ek yarar zaman içinde azalmaktadır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 12, s. 154)",
+      "trigger": "Haftalık Egzersiz Hedefi"
+    },
+    {
+      "id": "p-temd-bes-085",
+      "level": "Kılavuz",
+      "title": "Egzersizin ideal kan şekeri penceresi 90-250",
+      "content": "Egzersiz öncesi kan şekerinin ideal değeri 90-250 mg/dl'dir. Kan şekeri 90 mg/dl'nin altındaysa egzersiz öncesi 15-30 gram karbonhidrat alınmalıdır; miktar bireyin kilosuna ve planlanan egzersize göre değişir. Kısa süreli (30 dakikadan az) veya çok yüksek tempolu egzersizler ek karbonhidrat gerektirmeyebilir. Kan şekeri 90-150 mg/dl aralığındaysa egzersizin başında, egzersiz tipi ve aktif insülin miktarına göre değişen düzeyde karbonhidrat gerekir (0,5-1 g/kg/saat). 150-250 mg/dl ise egzersize başlanır ve karbonhidrat kan şekeri 150 mg/dl'nin altına indiğinde alınır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 13, s. 159)",
+      "trigger": "Egzersiz Öncesi Kan Şekeri"
+    },
+    {
+      "id": "p-temd-bes-086",
+      "level": "Kılavuz",
+      "title": "250 mg/dl üstünde önce keton bakın",
+      "content": "Egzersiz öncesi kan şekeri 250-350 mg/dl ise keton bakılır; orta-yüksek düzey keton pozitifliği çıkarsa egzersiz yapılmaz. Keton sorun değilse hafif-orta tempolu egzersize başlanır, yüksek tempolu egzersiz kan şekeri 250 mg/dl'nin altına inene kadar ertelenmelidir. Kan şekeri 350 mg/dl ve üzerindeyse yine keton bakılır; keton negatif ya da düşük titrede pozitifse egzersiz öncesi düzeltme dozu insülin yapılabilir ve hafif-orta tempolu egzersize başlanır. Kan şekeri düzeyleri düşene kadar yoğun egzersiz yapılmaz. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 13, s. 160)",
+      "trigger": "Hiperglisemide Egzersiz"
+    },
+    {
+      "id": "p-temd-bes-087",
+      "level": "Kılavuz",
+      "title": "Hipoglisemiyi önlemenin insülin tarafı",
+      "content": "Hipoglisemiyi önlemede egzersiz öncesi öğündeki insülin dozunu azaltmak bir alternatiftir. Çoklu insülin enjeksiyonu yapan hastalar bazal insülin dozunu yüzde 20 oranında azaltabilir. Devamlı subkutan insülin infüzyon tedavisi kullanan hastalar egzersiz öncesi insülin dozunu egzersizden 30-60 dakika önce veya hemen önce azaltabilir ya da durdurabilir. Bolus dozundan 2-3 saat sonra egzersiz yapılacaksa doz yüzde 25-75 oranında azaltılabilir. Kılavuz bütün bu önerilere rağmen hipoglisemi ihtimalinin akılda tutulması gerektiğini belirtir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 13, s. 159)",
+      "trigger": "Egzersizde İnsülin Ayarı"
+    },
+    {
+      "id": "p-temd-bes-088",
+      "level": "Kılavuz",
+      "title": "Tempo ve süre arttıkça bolus daha çok kısılır",
+      "content": "İnsülin uygulamasından sonraki 90 dakika içinde başlanacak egzersizlerde yemek öncesi bolus dozu tempoya ve süreye göre azaltılır. Hafif aerobik egzersizde (yaklaşık yüzde 25 VO2 max) 30 dakika için yüzde 25, 60 dakika için yüzde 50 azaltma önerilir. Orta aerobik egzersizde (yaklaşık yüzde 50 VO2 max) bu oranlar yüzde 50 ve yüzde 75'tir. Ağır aerobik egzersizde (yaklaşık yüzde 70-75 VO2 max) 30 dakika için yüzde 75 azaltma önerilir; 60 dakikalık süre ağır egzersiz için uzun kabul edilmiş ve veri verilmemiştir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 13, s. 160)",
+      "trigger": "Bolus İnsülin Azaltma Oranları"
+    },
+    {
+      "id": "p-temd-bes-089",
+      "level": "Kılavuz",
+      "title": "Yüzde 5-7 kilo ve 150 dakika, riski yüzde 40-70 düşürüyor",
+      "content": "Haftada en az 150-175 dakika egzersiz ve yüzde 5 ile yüzde 7 arası kilo kaybı hedefleyen kalori kısıtlaması içeren yapılandırılmış hayat tarzı değişikliği çalışmaları, bozulmuş glukoz toleransı olan bireylerde tip 2 diyabet riskini yüzde 40-70 oranında azaltmıştır. TEMD prediyabetik ve yüksek riskli popülasyonlarda tip 2 diyabetin gelişimini önlemek veya geciktirmek için yüzde 5-7 kilo kaybı sağlayacak diyet değişikliği ve en az 150 dakika/hafta egzersiz önerir. Look AHEAD çalışmasında yoğun hayat tarzı grubuna yüzde 7 kilo kaybı hedefleyen diyet ve denetlenmeyen 175 dk/hafta egzersiz verilmiştir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 13, s. 158)",
+      "trigger": "Tip 2 Diyabetin Önlenmesi"
+    },
+    {
+      "id": "p-temd-bes-090",
+      "level": "Kılavuz",
+      "title": "İki günden fazla ara vermeyin",
+      "content": "Diyabetik bireyler en az 150 dakika/hafta orta veya yüksek tempolu egzersizi haftada en az üç güne yayarak ve ardışık iki günden fazla boşluk bırakmayarak yapmalıdır. En az 25 dakika 9,7 km/saat hızla koşabilecek diyabetiklerde 75 dakika/hafta düzeyinde daha kısa süreli egzersiz de aynı kardiyoprotektif ve metabolik korumayı sağlar. Erişkinler ardışık olmayan 2-3 gün/hafta direnç egzersizi yapmalıdır. Tip 1 ve tip 2 diyabetli gençlerde ise 60 dakika/gün veya daha fazla orta-yüksek tempolu aktivite ve haftanın en az üç günü kas ve kemik güçlendirici egzersiz önerilir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 13, s. 161)",
+      "trigger": "Diyabette Egzersiz Reçetesi"
+    },
+    {
+      "id": "p-temd-bes-091",
+      "level": "Kılavuz",
+      "title": "Tip 1'de önce direnç sonra aerobik, hipoglisemiyi azaltıyor",
+      "content": "Tip 1 diyabetlilerde direnç egzersizinin glisemik kontrol üzerine etkisi net bilinmemekle birlikte, aynı seansta önce direnç sonra aerobik egzersiz yapılması egzersize bağlı hipoglisemi riskini azaltmaktadır. Sedanter geçirilen zamanın nasıl olduğu da glisemik kontrolü etkiler. Uzun süre oturulacaksa 5 dakikaya kadar çıkan bir sürede ayakta durmak ve her yirmi-otuz dakikada bir gezinti ile oturmayı bölmek bile glisemik kontrolü iyileştirir. Tip 2 diyabetli erişkinlerde yemekten sonra 15 dakika yürüyüş veya her 30 dakikada bir 3 dakika süren hafif gezinti glisemik kontrolü iyileştirmektedir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 13, s. 157)",
+      "trigger": "Egzersiz Sırası ve Oturma Süresi"
+    },
+    {
+      "id": "p-temd-bes-092",
+      "level": "Kılavuz",
+      "title": "Gestasyonel diyabette günde 20-30 dakika",
+      "content": "Gestasyonel diyabette haftanın çoğu veya tüm günlerinde, 20-30 dakika süreyle orta tempolu egzersiz yapılmalıdır. Tanı konduktan sonra insülinin etkisini ve glisemik kontrolü iyileştirmek için aerobik veya direnç egzersizi yapılabilir. İdeal olarak gebe kalınmadan egzersize başlanması önerilmekle birlikte, gebelik sırasında başlamak da güvenlidir. İnsülin kullanan gebelere özellikle ilk trimestrde egzersizin insülin duyarlılığını artırıcı etkisi ve artmış hipoglisemi riski olduğu bilgisi verilmelidir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 13, s. 163)",
+      "trigger": "Gebelik, Diyabet ve Egzersiz"
+    },
+    {
+      "id": "p-temd-bes-093",
+      "level": "Kılavuz",
+      "title": "Küçük testis, yüksek hematokrit, çok düşük LH",
+      "content": "Endokrinoloji pratiğinde testis volümü küçük, sperm miktarı düşük, hematokrit ve hemoglobin yüksek, LH çok düşük, SHBG düşük saptanan erkeklerde, özellikle abartılı kas kitlesi de gözleniyorsa spor anamnezi mutlaka alınmalı ve destek ürün bilgisi sorgulanmalıdır. Kadınlarda ihtimal daha az olmakla birlikte hirsutizm, alopesi ve akne yakınmaları araştırılırken dışarıdan androjen alımı dikkate alınmalıdır. Kullanıcı bazen anabolik steroid aldığının farkında bile olmaz: bu ürünler vücut geliştirme destek ürünü adı altında satılabilmekte ve bazılarında etiket bilgisi dışında androjen bulunabilmektedir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 14, s. 167)",
+      "trigger": "Anabolik Steroid Kullanımının Tanınması"
+    },
+    {
+      "id": "p-temd-bes-094",
+      "level": "Kılavuz",
+      "title": "Performansı artırdığına dair kanıt yok",
+      "content": "GH, IGF-1 ve insülin kullanımının atletik performansı arttırdığına dair kanıt yoktur. GH ile vücut kompozisyonunun kas lehine değiştiği ve yağlanmanın azaldığı bilinmektedir; bu nedenle bazı sporcular tarafından uygun olmayan şekilde kullanılmaktadır. Uzun süreli kontrolsüz kullanımda akromegali bulguları, insülin direnci, diyabet, ödem, hipertansiyon, kardiyomegali ve hatta kanser gelişmesi öngörülebilir. Sporcularda kullanımla ilişkili akademik bir veri bulunmamakla birlikte IGF-1 ile akromegali, organomegali ve hipoglisemi, insülinle hipoglisemi gelişebilmektedir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 14, s. 167)",
+      "trigger": "Büyüme Hormonu ve IGF-1 Kullanımı"
+    },
+    {
+      "id": "p-temd-bes-095",
+      "level": "Kılavuz",
+      "title": "Aminoasit takviyesi hormon testini yanıltabilir",
+      "content": "Aminoasitlerden arginin verilmesinde hedeflerden biri GH, IGF-1 ve insülin salınımının uyarılmasıdır. Oral kullanımda laboratuvara yansıyacak düzeye ulaşan bir etkinin olup olmadığı tartışmalı bir konudur. Yine de aminoasit alan kişilerde bu hormon düzeylerine ilişkin testlerde yanıltıcı sonuçlar alınabileceği dikkate alınmalıdır. Ayrıca denetim eksikliği nedeniyle sporcular aldıkları ürünleri bırakınca androjen veya kortikosteroid eksiklik tabloları gelişebilmektedir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 14, s. 168)",
+      "trigger": "Sporcu Takviyelerinin Laboratuvara Etkisi"
+    },
+    {
+      "id": "p-temd-bes-096",
+      "level": "Kılavuz",
+      "title": "IgE aracılı alerji sıklıkla miktardan bağımsız, intolerans doza bağlı",
+      "content": "Gıda alerjisi sıklığı çocuklarda yüzde 8, erişkinlerde yüzde 5'tir. Erişkinlerde en sık balık, kabuklu deniz ürünleri ve kuruyemiş alerjileri görülür; çocuklarda ise inek sütü ve yumurta en sık nedenlerdir. IgE aracılıklı gerçek gıda alerjileri hızlı gelişir, miktardan bağımsızdır ve çok az miktarla bile oluşabilir. Gıda intoleranslarında ise alınan gıdanın miktarı ile reaksiyon orantılıdır; alınan miktar arttıkça reaksiyon şiddetlenir. Gıda intolerans hastalıkları toplumun yaklaşık yüzde 15 ila 20'sinde görülür. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 15, s. 169)",
+      "trigger": "Gıda Alerjisi ile İntoleransın Ayrımı"
+    },
+    {
+      "id": "p-temd-bes-097",
+      "level": "Kılavuz",
+      "title": "Besin IgG testi tanı aracı değildir",
+      "content": "Besin alerjenlerine karşı IgG veya IgG4 testinin besin alerjisinde veya besin intoleransında tanı aracı olarak kullanılması önerilmemektedir. Gıda alerjenine karşı IgG ve IgG4 varlığı o alerjene tekrarlanan maruziyeti gösterir, duyarlanmayı göstermez. Tanı ayrıntılı öykü ve fizik muayeneyle başlar; gerekirse deri testleri, in vitro immünolojik testler veya besin yükleme testleri yapılır. Altın standart besin yükleme testidir, ancak bu testler sırasında anafilaksi görülebileceği için tam teşekküllü hastane koşullarında ve uzman eşliğinde yapılmalıdır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 15, s. 171)",
+      "trigger": "Gıda Alerjisinde Tanı Testleri"
+    },
+    {
+      "id": "p-temd-bes-098",
+      "level": "Kılavuz",
+      "title": "Ne gıda tek başına ne egzersiz tek başına",
+      "content": "Besine bağlı egzersizle tetiklenen anafilaksi, IgE aracılı besin alerjisinin özel bir türüdür. Genelde egzersize başladıktan sonra ve sorumlu besini tüketmekle gelişir; sadece egzersiz yaparak veya sorumlu gıdayı tek başına tüketince gelişmez. Egzersizin mast hücrelerinin degranülasyon eşiğini azalttığını ve bağırsak geçirgenliğini değiştirerek alerjen geçişini kolaylaştırabileceğini söyleyen yayınlar mevcuttur. NSAİİ veya alkol gibi diğer kofaktörlerin de bağırsak bariyer geçirgenliğini değiştirerek anafilaksi riskini artırdığı yönünde hipotezler vardır. Her türlü IgE aracılıklı reaksiyon tanımlayan hastada adrenalin oto-enjektörü eğitimi önemlidir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 15, s. 171)",
+      "trigger": "Besine Bağımlı Egzersizle Tetiklenen Anafilaksi"
+    },
+    {
+      "id": "p-temd-bes-099",
+      "level": "Kılavuz",
+      "title": "Laktoz testi: semptom varken kan şekeri 20'den az artarsa pozitif",
+      "content": "Laktoz tolerans testi, kilogram vücut ağırlığı başına yaklaşık 1 gram oral laktoz içirildikten sonra seri kan örneklerinde glukoz ölçümüyle yapılır. Bağırsak semptomları oluşursa ve kan şekeri açlık seviyesinin üstünde 20 mg/dL'den daha az artarsa test pozitif kabul edilir. Fruktoz intoleransı tanısında yüzde 10'luk solüsyon olarak 25 gram fruktoz verilip nefes testiyle H2 ve CH4 ölçülür; örnekler 30 dakikada bir 3 saate kadar izlenir. Üç ardışık ölçümde 5 ppm'den fazla artış, H2'nin 20 ppm ve üzerinde olması veya CH4'ün 10 ppm ve üzerinde olması durumunda test pozitif sayılır. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 15, s. 174)",
+      "trigger": "Laktoz ve Fruktoz İntoleransı Testleri"
+    },
+    {
+      "id": "p-temd-bes-100",
+      "level": "Kılavuz",
+      "title": "IgA eksikliğinde IgA temelli çölyak serolojisi negatif çıkabilir",
+      "content": "Çölyak hastalığı tanısında kanda doku transglutaminaz, doku endomisyum ve antigliadin antikorları bakılır. En duyarlı ve spesifik testler doku transglutaminaz IgA ve antiendomisyum IgA'dır; anti-gliadin antikorlarının duyarlılığı ve özgüllüğü daha düşüktür. Çölyak hastalarının bir kısmında IgA eksikliği olabilir ve IgA temelli serolojik testler bu nedenle negatif bulunabilir. Bu yüzden tarama programlarında serolojik testlerin yanı sıra IgA da istenmeli, düşük bulunanlarda IgG temelli testler yapılmalıdır. Seroloji bakılırken hasta en az bir aydır gluten içeren diyet alıyor olmalıdır; en iyi tanı yöntemi ince barsak biyopsisidir. (TEMD Tıbbi Beslenme ve Egzersiz 2023, Bölüm 15, s. 172)",
+      "trigger": "Çölyak Hastalığı Serolojisi"
+    }
+  ]
+}
