@@ -1,0 +1,147 @@
+{
+  "id": "pearl-nefr-membranoz-nefropati-001",
+  "accessLevel": "premium",
+  "topic": "Membranöz Nefropati",
+  "pearls": [
+    {
+      "id": "p-nef-mn-001",
+      "level": "Klinik",
+      "title": "Anti-PLA2R Tanı Eşiği ve Biyopsi İndikasyonu",
+      "content": "<p>Serum anti-PLA2R antikoru ELISA ile ≥20 RU/mL ve/veya immünofloresan (IFA) pozitif olan, eGFR &gt;60 mL/dk/1.73 m² saptanan, diyabet veya sekonder neden şüphesi (kanser, enfeksiyon, otoimmünite) bulunmayan hastalarda tanısal özgüllük %100'e yakın olup böbrek biyopsisiz primer MN tanısı konulabilir. Ancak eGFR &lt;60 mL/dk/1.73 m² olan anti-PLA2R pozitif hastalarda biyopsi yapıldığında %14 oranında tedavi yönetimini değiştiren ek lezyonlar (akut interstisyel nefrit, kresentik GN, ATN veya FSGS) saptandığından bu grupta biyopsi yapılması önerilir.</p>",
+      "trigger": "Tanı"
+    },
+    {
+      "id": "p-nef-mn-002",
+      "level": "Klinik",
+      "title": "Epitop Yayılması (Epitope Spreading)",
+      "content": "<p>Primer MN'de otoimmün yanıt başlangıçta PLA2R molekülünün N-terminal sisteinden zengin (CysR) domainine karşı gelişirken, hastalığın ilerlemesiyle bağışıklık yanıtının C-tipi lektin benzeri domainlere (CTLD1 ve CTLD7) yayılması \"epitop yayılması\" olarak tanımlanır. Başlangıçta epitop yayılması gösteren olgularda spontan remisyon oranı belirgin şekilde düşük, kronik böbrek hastalığı ilerleme riski yüksek ve Rituximab tedavisine yanıt zayıftır.</p>",
+      "trigger": "Patogenez"
+    },
+    {
+      "id": "p-nef-mn-003",
+      "level": "Klinik",
+      "title": "NELL-1 Pozitifliği ve Sekonder Nedenler",
+      "content": "<p>Nöral epidermal büyüme faktörü benzeri 1 (NELL-1), PLA2R'den sonra en sık saptanan ikinci hedef antijendir ve NELL-1 pozitif MN olguları altta yatan solid organ maligniteleri ile güçlü ilişki sergiler. Ayrıca NELL-1 pozitifliği; alfa-lipoik asit takviyesi, geleneksel yerel ilaçlar ve cıva içeren cilt beyazlatıcı krem kullanımı sonucu gelişen vakalarda da saptanmakta olup histopatolojide segmental/eksik lup birikim paterni karakteristiktir.</p>",
+      "trigger": "Hedef Antijenler"
+    },
+    {
+      "id": "p-nef-mn-004",
+      "level": "Klinik",
+      "title": "Lupus MN (Sınıf V) Spesifik Antijenleri",
+      "content": "<p>Sistemik Lupus Eritematozus zemonunda gelişen Sınıf V Membranöz Lupus Nefritinde glomerüler immün komplekslerde saptanan spesifik hedef antijenler Ekzostosin 1 ve 2 (EXT1/EXT2) kompleksi, Nöral hücre adezyon molekülü 1 (NCAM1) ve Tip III transforme edici büyüme faktörü beta reseptörüdür (TGFBR3).</p>",
+      "trigger": "Hedef Antijenler"
+    },
+    {
+      "id": "p-nef-mn-005",
+      "level": "Klinik",
+      "title": "Spesifik Etiyolojilere Özgü Antijen Haritalaması",
+      "content": "<p>Kronik inflamatuar demiyelinizan poliradikülonöropati (CIDP) eşlik eden atipik MN hastalarında spesifik hedef antijen **Contactin-1 (CNTN1)**; Non-Steroidal Anti-İnflamatuar İlaç (NSAİİ) kullanımına sekonder gelişen MN'de **PCSK6**; Sifiliz enfeksiyonu ilişkili MN'de ise **Neuron-derived neurotrophic factor (NDNF)** olarak tanımlanmıştır.</p>",
+      "trigger": "Hedef Antijenler"
+    },
+    {
+      "id": "p-nef-mn-006",
+      "level": "Klinik",
+      "title": "Graft-versus-Host ve De Novo Allogreft MN Antijeni (FAT1)",
+      "content": "<p>Allojenik hematopoetik kök hücre nakli (HSCT) sonrası gelişen MN olgularında ve böbrek nakli alıcılarında donör-spesifik antikorlar (DSA) ile eşzamanlı antikor aracılı rejeksiyon (ABMR) zemininde ortaya çıkan <em>de novo</em> allogreft MN vakalarında ana hedef antijen **Protocadherin FAT1**'dir.</p>",
+      "trigger": "Hedef Antijenler"
+    },
+    {
+      "id": "p-nef-mn-007",
+      "level": "Klinik",
+      "title": "Pediyatrik ve Antenatal MN Antijenleri",
+      "content": "<p>**Semaforin 3B (Sema3B)**, çoğunlukla iki yaş altı bebekler ve çocuklarda görülen idiyopatik MN olgularının spesifik antijenidir. Gebelikte annede **Nötral Endopeptidaz (NEP)** eksikliğine bağlı gelişen alloimmünizasyonda transplasental geçen anti-NEP antikorları ise antenatal membranöz glomerülonefrit tablosuna yol açar.</p>",
+      "trigger": "Hedef Antijenler"
+    },
+    {
+      "id": "p-nef-mn-008",
+      "level": "Klinik",
+      "title": "IgG4 İmmünglobulin Paradoksu ve Lektin Yolağı",
+      "content": "<p>Primer MN'de dominant olan IgG4 antikorları C1q'ya bağlanamadığından klasik kompleman yolağını aktive edemez. Ancak IgG4 molekülünün Fc bölgesindeki galaktoz eksikliği (anormal glikozilasyon) immün komplekslerin Mannoz Bağlayıcı Lektin (MBL) ile etkileşmesini sağlayarak podosit membranında lektin yolağı üzerinden C5b-9 (MAC) birikimini ve sublitik podosit hasarını indükler.</p>",
+      "trigger": "Patogenez"
+    },
+    {
+      "id": "p-nef-mn-009",
+      "level": "Klinik",
+      "title": "VTE Riski ve Profilaktik Antikoagülasyon Eşikleri",
+      "content": "<p>Membranöz nefropati, tüm glomerülopatiler arasında venöz tromboembolizm (VTE) ve renal ven trombozu riskinin en yüksek olduğu böbrek hastalığıdır. VTE riski serum albümin düzeyi &lt;2.5 g/dL (özellikle &lt;2.0 g/dL) olduğunda üssel olarak artar; ATRIA kanama skoru ile düşük/orta kanama riskine sahip bu hastalarda warfarin veya Düşük Molekül Ağırlıklı Heparin (LMWH) ile profilaktik antikoagülasyon önerilir.</p>",
+      "trigger": "Tromboz"
+    },
+    {
+      "id": "p-nef-mn-010",
+      "level": "Klinik",
+      "title": "Trombogenez Patofizyolojisi ve α-Enolaz Düzeyi",
+      "content": "<p>MN'deki hiperkoagülabilite; idrarla antitrombin III ve plazminojen kaybı ile karaciğerin kompanzatuar fibrinojen ve Faktör VIII sentez artışından kaynaklanır. Ayrıca hastaların %70'inde saptanan **anti-alfa-enolase antikorları**, plazminojen bağlayıcı bir protein olan alfa-enolazı inhibe ederek fibrinolizi bozar ve intrarenal mikrotromboza katkıda bulunur.</p>",
+      "trigger": "Tromboz"
+    },
+    {
+      "id": "p-nef-mn-011",
+      "level": "Klinik",
+      "title": "KDIGO 2021 Risk Stratifikasyonu ve Bekle-Gör Stratejisi",
+      "content": "<p>Spontan remisyon oranı %30 civarında olduğundan, düşük-orta riskli hastalarda immünsüpresyon öncesi 3-6 ay boyunca RAS blokajı ve destek tedavi ile izlem önerilir. KDIGO sınıflamasında persistent proteinüri &gt;8 g/gün, eGFR &lt;60 mL/dk, serum albümin &lt;2.5 g/dL veya anti-PLA2R antikor titresinin &gt;150 RU/mL olması Yüksek Risk kriteridir ve doğrudan immünsüpresif tedavi gerektirir.</p>",
+      "trigger": "Risk Sınıflaması"
+    },
+    {
+      "id": "p-nef-mn-012",
+      "level": "Klinik",
+      "title": "MENTOR Çalışması (Rituximab vs Siklosporin)",
+      "content": "<p>MENTOR çalışmasında, 12. ayda Rituximab (1g x 2 doz) ve Siklosporin tedavileri benzer remisyon oranları sağlarken; 24. ayda Siklosporin grubundaki yüksek relaps oranları (%50) nedeniyle Rituximab (%60 remisyon) Siklosporine belirgin şekilde üstün (superior) bulunmuştur.</p>",
+      "trigger": "Tedavi Çalışmaları"
+    },
+    {
+      "id": "p-nef-mn-013",
+      "level": "Klinik",
+      "title": "STARMEN Çalışması (Modifiye Ponticelli vs Takrolimus/Rituximab)",
+      "content": "<p>Yüksek riskli primer MN hastalarında yürütülen STARMEN çalışmasında, 6 aylık steroid + siklofosfamid (Modifiye Ponticelli) rejimi; sıralı Takrolimus + 6. ayda tek doz Rituximab rejimine kıyasla 24. ayda hem klinik remisyon (%83.7 vs %58) hem de immünolojik remisyon açısından belirgin şekilde üstün bulunmuştur.</p>",
+      "trigger": "Tedavi Çalışmaları"
+    },
+    {
+      "id": "p-nef-mn-014",
+      "level": "Klinik",
+      "title": "RI-CYCLO Çalışması (Rituximab vs Siklofosfamid)",
+      "content": "<p>RI-CYCLO çalışmasında, primer MN hastalarında 12. ayda tam remisyon oranları siklofosfamid grubunda sayısal olarak daha yüksek olmakla birlikte, 24. ayın sonunda Rituximab ve döngüsel Siklofosfamid rejimleri arasında toplam klinik remisyon (tam + kısmi remisyon %82 vs %83) ve güvenlik profili açısından anlamlı fark saptanmamıştır.</p>",
+      "trigger": "Tedavi Çalışmaları"
+    },
+    {
+      "id": "p-nef-mn-015",
+      "level": "Klinik",
+      "title": "İmmünolojik ve Klinik Remisyon Kinetik Farkı",
+      "content": "<p>İmmünsüpresif tedavi (özellikle Rituximab) sonrasında dolaşımdaki anti-PLA2R antikorlarının temizlenmesi (**immünolojik remisyon**), proteinürinin gerilemesi ve serum albümininin normale dönmesinden (**klinik remisyon**) aylar (sıklıkla 6 ila 24 ay) önce gerçekleşir. Bu nedenle 6. ayda anti-PLA2R negatifleşen ancak proteinürisi devam eden ve eGFR'si stabil olan hastada tedavi değiştirilmemeli, podosit onarımı için ek zaman tanınmalıdır.</p>",
+      "trigger": "Remisyon İzlemi"
+    },
+    {
+      "id": "p-nef-mn-016",
+      "level": "Klinik",
+      "title": "Rituximab Direncinin Sebebi (Anti-Rituximab Antikorları)",
+      "content": "<p>Rituximab ile tedavi edilen MN hastalarının bir kısmında tedaviden aylar sonra gözlenen nükslerin veya yetersiz yanıtın temel nedeni, ilacın kendisine karşı gelişen **nötralizan anti-rituximab antikorlarıdır**. Dolaşımda bu antikorların varlığı Rituximab'ın B-hücre deplesyon etkinliğini ortadan kaldırarak klinik direnç yaratır.</p>",
+      "trigger": "Dirençli Hastalık"
+    },
+    {
+      "id": "p-nef-mn-017",
+      "level": "Klinik",
+      "title": "RTX-Dirençli MN'de Kurtarma Tedavisi (Obinutuzumab)",
+      "content": "<p>Rituximab'a dirençli veya relaps gösteren PMN vakalarında, Tip II tam insanlaştırılmış anti-CD20 antikoru olan **Obinutuzumab** (1000 mg 2 hafta arayla), B hücrelerinde ve doku rezidan B lenfositlerinde daha derin ve kalıcı bir deplesyon sağlayarak %80'in üzerinde yüksek klinik ve immünolojik remisyon başarısı sunar.</p>",
+      "trigger": "Dirençli Hastalık"
+    },
+    {
+      "id": "p-nef-mn-018",
+      "level": "Klinik",
+      "title": "Plazma Hücresini Hedefleyen Tedaviler (Daratumumab & Bortezomib)",
+      "content": "<p>Rituximab yalnızca CD20+ B lenfositleri tüketip CD20- eksprime eden uzun ömürlü plazma hücrelerine etki edemediğinden; çoklu ilaca dirençli inatçı anti-PLA2R pozitif MN hastalarında plazma hücre yüzey molekülü CD38'i hedef alan **Daratumumab** veya **Felzartamab** ile proteazom inhibitörü **Bortezomib** otoantikor üretimini baskılayan etkili kurtarma ajanlarıdır.</p>",
+      "trigger": "Dirençli Hastalık"
+    },
+    {
+      "id": "p-nef-mn-019",
+      "level": "Klinik",
+      "title": "Post-Transplant MN Nüksü ve Risk Faktörleri",
+      "content": "<p>Böbrek nakli sonrasında primer MN nüks oranı %10-45 arasında değişmekte olup, medyan nüks süresi 13-18 aydır. Nakil öncesinde yüksek serum anti-PLA2R antikor titresine (ELISA &gt;20 RU/mL, özellikle &gt;150 RU/mL) sahip olunması allogreftte MN nüksünün en güçlü bağımsız öngördürücüsüdür. Ayrıca canlı vericili nakil ve kısa diyaliz süresi de nüks riskini artıran faktörler arasındadır.</p>",
+      "trigger": "Nakil Sonrası Nüks"
+    },
+    {
+      "id": "p-nef-mn-020",
+      "level": "Klinik",
+      "title": "Allogreftte Sünger (Absorption) Fenomeni",
+      "content": "<p>Post-transplant MN nüksü gelişen bazı hastalarda dolaşımda anti-PLA2R antikorları ELISA ile negatif veya çok düşük titrede saptanabilir. Bu durum, dolaşımdaki antikorların allogreft podositlerindeki PLA2R antijenlerine masif bir şekilde bağlanarak kan dolaşımından temizlenmesi (**renal allograft sponge/absorption effect**) ile açıklanır; bu nedenle seroloji negatif bile olsa biyopsi dokusunda PLA2R immünofloresan boyaması pozitif saptanabilir.</p>",
+      "trigger": "Nakil Sonrası Nüks"
+    }
+  ]
+}

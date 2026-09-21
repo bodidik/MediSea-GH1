@@ -1,0 +1,458 @@
+{
+  "id": "fc-nef-mn-001",
+  "accessLevel": "premium",
+  "topic": "Membranöz Nefropati",
+  "description": "YDUS Nefroloji serisi: Membranöz nefropati — hedef antijenler, patogenez, tanı, tedavi, nakil sonrası nüks ve idrar eksozomları; 75 kartlık hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "mn-001",
+      "front": "İdiyopatik membranöz nefropatinin (İMN) histopatolojik olarak tanımlayıcı ana özelliği nedir?",
+      "back": "Glomerüler bazal membran (GBM) kalınlaşması ve podosit altı (subepitelyal) immün kompleks birikimi.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-002",
+      "front": "Erişkinlerde diyabet dışı nefrotik sendromun en yaygın nedeni hangi hastalıktır?",
+      "back": "Membranöz Nefropati (MN).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-003",
+      "front": "İMN patogenezinde podosit hasarını ve proteinüriyi tetikleyen temel kompleman bileşeni hangisidir?",
+      "back": "Membran atak kompleksi C5b-9.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-004",
+      "front": "Membranöz nefropati vakalarının yaklaşık yüzde kaçı idiyopatik (primer) formdadır?",
+      "back": "Yaklaşık %75-%80.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-005",
+      "front": "Primer membranöz nefropatili hastaların çoğunda (yaklaşık %70-%80) hedef alınan ana otoantijen hangisidir?",
+      "back": "M-tipi fosfolipaz A2 reseptörü (PLA2R).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-006",
+      "front": "Sıçanlardaki Heymann nefriti modelinde subepitelyal immün depozitlerin oluşumuna neden olan podosit antijeni hangisidir?",
+      "back": "Megalin.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-007",
+      "front": "Işık mikroskobunda gümüş boyama ile görülen 'spike' (diken) görünümü neyi temsil eder?",
+      "back": "İmmün depozitlerin etrafında yeni bazal membran materyalinin oluşumunu.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-008",
+      "front": "İMN tanısında kullanılan, invaziv olmayan ve en yüksek duyarlılığa sahip biyobelirteç hangisidir?",
+      "back": "Serum anti-PLA2R antikorları.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-009",
+      "front": "Malignite ile ilişkili membranöz nefropatide en sık tanımlanan hedef antijen hangisidir?",
+      "back": "Nerve epidermal growth factor-like 1 (NELL1).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-010",
+      "front": "Otoimmün hastalıklarla (örneğin SLE) ilişkili sekonder MN vakalarında hangi antijenler ön plana çıkar?",
+      "back": "Eksostozin 1 (EXT1) ve Eksostozin 2 (EXT2).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-011",
+      "front": "Eksozomlar tipik olarak hangi çap aralığındaki veziküllerdir?",
+      "back": "30 ile 200 nm arası.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-012",
+      "front": "Eksozom biyogenezi sırasında erken endozomların olgunlaşarak dönüştüğü yapı hangisidir?",
+      "back": "Multiveziküler cisimcikler (MVB).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-013",
+      "front": "Eksozomların içindeki kargoları (RNA, protein vb.) enzimatik yıkımdan koruyan yapısal özellik nedir?",
+      "back": "Lipid çift katmanlı membran yapısı.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-014",
+      "front": "Eksozom yüzeyinde yaygın olarak bulunan ve belirteç olarak kullanılan tetraspanin proteinlerine bir örnek veriniz.",
+      "back": "CD63 (veya CD9, CD81, CD82).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-015",
+      "front": "Eksozomların endozomal membran üzerinde ubikuitinlenmiş proteinleri tanımasını ve içeri doğru tomurcuklanmasını sağlayan protein kompleksi hangisidir?",
+      "back": "ESCRT kompleksi.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-016",
+      "front": "İMN hastalarında proteinüri seviyesi ile pozitif korelasyon gösteren idrar eksozomal belirteçlerinden biri hangisidir?",
+      "back": "Alix (veya CD63, TSG101).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-017",
+      "front": "Diyabetik nefropatide (DN) podosit hasarının erken noninvaziv belirteci olarak kabul edilen idrar eksozomal mRNA'sı hangisidir?",
+      "back": "WT1 mRNA.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-018",
+      "front": "İdrar eksozomlarının MN tanısında orijinal idrar metabolik modellerine göre avantajı nedir?",
+      "back": "Daha yüksek stabilite ve spesifik hücresel köken bilgisi taşıması.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-019",
+      "front": "İdrar eksozomal ceruloplasmin (CP) seviyelerinin tanısal önemi nedir?",
+      "back": "Proteinüri başlangıcından önce yükselerek erken evre böbrek hasarını gösterebilir.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-020",
+      "front": "Eksozomların gen ve ilaç taşıyıcısı olarak kullanılmasındaki temel avantaj nedir?",
+      "back": "Yüksek biyouyumluluk ve düşük immünojenisite.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-021",
+      "front": "İMN'de anti-PLA2R antikor titrelerinin tedavi sonrası düşmesi neyin habercisidir?",
+      "back": "İmmünolojik remisyon.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-022",
+      "front": "Tedaviye dirençli İMN vakalarında Rituximab'a alternatif olarak kullanılan yeni nesil anti-CD20 monoklonal antikoru hangisidir?",
+      "back": "Obinutuzumab.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-023",
+      "front": "İMN'de klasik 'Ponticelli Protokolü' hangi ilaçların kombinasyonundan oluşur?",
+      "back": "Siklofosfamid ve Steroidler.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-024",
+      "front": "Membranöz nefropatide podosit ayak çıkıntılarındaki morfolojik değişiklik nasıl adlandırılır?",
+      "back": "Ayak çıkıntılarında silinme (foot process effacement).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-025",
+      "front": "MN hastalarında hangi genetik risk aleli PLA2R ile güçlü bir etkileşim gösterir?",
+      "back": "HLA-DQA1.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-026",
+      "front": "Sekonder membranöz nefropati nedenleri arasında yer alan enfeksiyöz ajanlara bir örnek veriniz.",
+      "back": "Hepatit B (veya Sifiliz, Hepatit C).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-027",
+      "front": "Primer MN'li yetişkinlerde spontan remisyon (kendiliğinden iyileşme) oranı yaklaşık kaçtır?",
+      "back": "Yaklaşık %30.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-028",
+      "front": "İMN hastalarında son evre böbrek yetmezliğine (ESRD) ilerleme oranı 5-20 yıl içinde yaklaşık yüzde kaçtır?",
+      "back": "%40 ile %60 arası.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-029",
+      "front": "Böbrek nakli sonrası İMN tekrarlama (rekürrens) riski yaklaşık yüzde kaçtır?",
+      "back": "%30 ile %50 arası.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-030",
+      "front": "Hangi ilaç grubu İMN yönetiminde konservatif tedavinin temel taşını (cornerstone) oluşturur?",
+      "back": "Renin-anjiyotensin sistemi (RAS) blokerleri (ACE inhibitörleri veya ARB'ler).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-031",
+      "front": "SGLT2 inhibitörlerinin MN yönetimindeki potansiyel rolü nedir?",
+      "back": "Proteinüriyi azaltmak ve eGFR düşüşünü yavaşlatmak.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-032",
+      "front": "Kalsinörin inhibitörlerinin (CNI) İMN tedavisindeki temel kısıtlılığı nedir?",
+      "back": "İlaç kesildikten sonra yüksek nüks (relaps) oranları.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-033",
+      "front": "İMN'de immünolojik remisyon, klinik remisyondan (proteinürinin azalması) genellikle ne kadar süre önce gerçekleşir?",
+      "back": "Haftalar veya aylar önce.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-034",
+      "front": "Çin'deki araştırmalara göre MN insidansındaki artış hangi çevresel faktörle ilişkilendirilmiştir?",
+      "back": "Hava kirliliği (partikül madde PM2.5).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-035",
+      "front": "Eksozom yüzeyindeki MHC-II moleküllerinin varlığı hangi hücre kökenine işaret eder?",
+      "back": "Dendritik hücreler veya B lenfositler.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-036",
+      "front": "İdrar eksozomlarında podosin veya nefrin proteinlerinin saptanması ne anlama gelir?",
+      "back": "Podosit hasarı.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-037",
+      "front": "KDIGO 2021 kılavuzuna göre İMN'de immünosüpresif tedavi kararı hangi parametreye göre verilir?",
+      "back": "Böbrek yetmezliği ilerleme riski (risk stratifikasyonu).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-038",
+      "front": "Refrakter (dirençli) anti-PLA2R pozitif MN vakalarında plazma hücrelerini hedeflemek için kullanılan proteazom inhibitörü hangisidir?",
+      "back": "Bortezomib.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-039",
+      "front": "MN hastalarında tromboembolik olay riskini artıran temel klinik tablo hangisidir?",
+      "back": "Şiddetli nefrotik sendrom (özellikle düşük serum albümini).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-040",
+      "front": "Heymann nefriti modelinde antikorların bağlanması sonrası antijen-antikor komplekslerinin bazal membrana geçiş süreci nasıl adlandırılır?",
+      "back": "Capping (kepleme) ve shedding (dökülme).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-041",
+      "front": "İMN patogenezinde podosit antijenlerine karşı antikor salgılayan ana hücre tipi hangisidir?",
+      "back": "B hücreleri (plazma hücrelerine dönüşerek).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-042",
+      "front": "Eksozomların biyo-dağılımında 'mononükleer fagositik sistem'den (MPS) kaçabilme yeteneği hangi avantajı sağlar?",
+      "back": "Dolaşımda daha uzun ömür ve hedef organa daha etkin ulaşım.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-043",
+      "front": "İdrar eksozom izolasyonunda kullanılan altın standart yöntem hangisidir?",
+      "back": "Ultrasantrifüj.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-044",
+      "front": "İMN tanısında biyopsi yapılamayan durumlarda anti-PLA2R pozitifliği tanıda yeterli kabul edilebilir mi?",
+      "back": "Evet, güncel kılavuzlar (KDIGO) belirli durumlarda bunu desteklemektedir.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-045",
+      "front": "İMN'de eksozomal miR-200b ölçümünün önemi nedir?",
+      "back": "Böbrek fibrozisi ile ilişkilendirilmiştir.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-046",
+      "front": "Hangi antijenin saptanması özellikle 'indigenous' (yerel/geleneksel) ilaç kullanımı ile ilişkilidir?",
+      "back": "NELL1.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-047",
+      "front": "İMN'de görülen hipoalbümineminin temel nedeni nedir?",
+      "back": "İdrarla aşırı albümin kaybı (proteinüri).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-048",
+      "front": "Eksozom membranındaki lipid bileşiminde stabiliteyi sağlayan temel öğeler nelerdir?",
+      "back": "Sfingomiyelin ve fosfatidilinositol.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-049",
+      "front": "İMN tanısı için böbrek biyopsisinde immünfloresan incelemede hangi immünglobulinin baskın olması beklenir?",
+      "back": "IgG (özellikle IgG4 alttipi).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-050",
+      "front": "Kalsinörin inhibitörü tedavisine yanıt vermeyen İMN hastalarında hangi monoklonal antikor (anti-CD38) denenebilir?",
+      "back": "Daratumumab.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-051",
+      "front": "MN'de 'maskelenmiş IgG-kappa' birikimi saptanan özel bir klinik durum hangi yöntemle teşhis edilir?",
+      "back": "Doku pronaz sindirimi sonrası immünfloresan.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-052",
+      "front": "Podosit antijenlerinin aşırı ekspresyonuna ve MN gelişimine yol açabilen çevresel maruziyetlerden biri nedir?",
+      "back": "Hava kirliliği veya cıva toksisitesi.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-053",
+      "front": "Eksozom biyogenezindeki 'ikinci invajinasyon' adımı hangi yapının oluşumuyla sonuçlanır?",
+      "back": "İntraluminal veziküller (ILV).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-054",
+      "front": "İdrar eksozomal Nrf2 ve NLRP3 seviyelerinin prognostik değeri nedir?",
+      "back": "Düşük seviyeler daha iyi tedavi çıktılarına işaret eder.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-055",
+      "front": "İMN'de 'insidious onset' (sinsi başlangıç) neyi ifade eder?",
+      "back": "Belirtilerin yavaş ve fark edilmeden gelişmesini.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-056",
+      "front": "Eksozomların donmuş vücut sıvılarında saklanabilme sıcaklığı kaçtır?",
+      "back": "-80 °C.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-057",
+      "front": "MN'de podosit hasarı sonrası gelişen bazal membran kalınlaşması ışık mikroskobunda hangi terimle ifade edilir?",
+      "back": "Membranöz görünüm.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-058",
+      "front": "Hangi podosit antijeni çocukluk çağı membranöz nefropatisinde önemli bir rol oynar?",
+      "back": "Nötral endopeptidaz (NEP).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-059",
+      "front": "İdrar eksozomlarında saptanan AQP2 proteini böbreğin hangi bölgesindeki hasarı yansıtır?",
+      "back": "Toplayıcı kanallar.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-060",
+      "front": "Eksozomların hücre dışı alana salınımı hangi hücresel sürecin sonucudur?",
+      "back": "MVB'lerin plazma membranı ile füzyonu (ekzositoz).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-061",
+      "front": "İMN hastalarında düşük doz steroid ile kombine edilen immünosüpresif rejimlerin ana dezavantajı nedir?",
+      "back": "Stabil olmayan etkinlik ve yüksek relaps oranları.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-062",
+      "front": "Eksozomal proteinler içinde 'doku spesifik' proteinlere bir örnek veriniz?",
+      "back": "AQP1 (proksimal tübül kökenli eksozomlar için).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-063",
+      "front": "Primer MN'de podosit antijenlerine karşı gelişen immün tolerans bozukluğunda rol oynayan hücre eksikliği hangisidir?",
+      "back": "Regülatuar T hücreleri (Tregs) ve B hücreleri (Bregs).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-064",
+      "front": "MN'de subepitelyal alana 'dikilen' (planted) antijenler hangi MN formunun patogenezinde daha yaygındır?",
+      "back": "Sekonder Membranöz Nefropati.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-065",
+      "front": "İdrar eksozomal FSP1 proteininin klinik önemi nedir?",
+      "back": "Glomerüler kresent oluşum oranını ve aktif yaralanmayı yansıtması.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-066",
+      "front": "Eksozom içerisindeki en bol bulunan RNA türü hangisidir?",
+      "back": "miRNA.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-067",
+      "front": "İMN'de Rituximab direncinin bir nedeni olarak öne sürülen mekanizma nedir?",
+      "back": "Anti-CD20 antikorlarına karşı antikor gelişimi veya yetersiz B hücre deplesyonu.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-068",
+      "front": "Elektron mikroskobunda görülen 'elektron yoğun depozitler' İMN'de tam olarak nerede konumlanır?",
+      "back": "Podositlerin altında, GBM'nin dış yüzeyinde.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-069",
+      "front": "Primer MN'de remisyon sonrası anti-PLA2R antikorlarının tekrar ortaya çıkması neyi öngörür?",
+      "back": "Hastalığın nüks (relaps) etmesini.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-070",
+      "front": "Eksozomların 'lipid raft' (lipid salı) mikro-alanlarında zenginleşmiş olan moleküllere bir örnek veriniz.",
+      "back": "Flotilin (veya sfingomiyelinaz).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-071",
+      "front": "Primer MN'de hangi kompleman yolu aktivasyonu temel patojenik mekanizmadır?",
+      "back": "Lektin yolu (veya alternatif yol).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-072",
+      "front": "İMN hastalarında eksozomal CCL2 mRNA ekspresyonunun seviyesi sağlıklı kontrollerle kıyaslandığında nasıldır?",
+      "back": "Anlamlı derecede yüksektir.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-073",
+      "front": "MN tedavisinde 'yüksek risk' grubundaki hastalara önerilen ilk basamak tedavi nedir?",
+      "back": "Siklofosfamid ve glukokortikoid kombinasyonu (veya Rituximab).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-074",
+      "front": "Eksozomların 'endojen taşıyıcılar' olarak tercih edilmesinin farmakolojik nedeni nedir?",
+      "back": "Biyolojik bariyerleri aşabilme ve düşük toksisite.",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    },
+    {
+      "id": "mn-075",
+      "front": "İdrar eksozomları yoluyla hangi genetik hastalığın patolojik protein eksikliği saptanabilir?",
+      "back": "Bartter sendromu tip 1 (SLC12A1 yokluğu).",
+      "tag": "Nefroloji / Membranöz Nefropati"
+    }
+  ]
+}
