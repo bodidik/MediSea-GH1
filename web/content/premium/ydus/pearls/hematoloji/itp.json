@@ -1,0 +1,147 @@
+{
+  "id": "pearl-hema-itp-001",
+  "accessLevel": "premium",
+  "topic": "İmmün Trombositopeni (İTP)",
+  "pearls": [
+    {
+      "id": "p-hem-itp-001",
+      "level": "Klinik",
+      "title": "Tanı Kriteri ve Dışlama Esası (Cutoff & Exclusion)",
+      "content": "<p>İTP, periferik kanda trombosit sayısının &lt;100 × 10⁹/L olmasıyla tanımlanan edinsel bir immun trombositopenidir. Spesifik ve patognomonik bir altın standart biyobelirteç bulunmadığından tanı tamamen bir dışlama (eksklüzyon) sürecine dayanır; eritrosit ve lökosit serileri tamamen normal olmalı ve sekonder etiyolojiler (enfeksiyonlar, otoimmün hastalıklar, ilaçlar) ekarte edilmelidir.</p>",
+      "trigger": "Tanı"
+    },
+    {
+      "id": "p-hem-itp-002",
+      "level": "Klinik",
+      "title": "Kemik İliği İncelemesi Endikasyonları",
+      "content": "<p>60 yaş üstü hastalarda eskiden rutin olarak önerilen kemik iliği biyopsisi/aspirasyonu günümüz uluslararası kılavuzlarından (ASH/ICR) çıkarılmıştır. Yaştan bağımsız olarak kemik iliği incelemesi; yalnızca açıklanamayan ek sitopeniler, periferik yaymada displazi veya blast varlığı, sistemik/konstitüsyonel semptomlar veya tedaviye direnç durumunda endikedir. Buna karşılık Çin kılavuzları, bölgelerindeki yüksek aplastik anemi insidansı ve erken yaşta görülen MDS vakaları nedeniyle kemik iliği değerlendirmesini temel tanı panelinde tutmaktadır.</p>",
+      "trigger": "Tanı"
+    },
+    {
+      "id": "p-hem-itp-003",
+      "level": "Klinik",
+      "title": "Kemik İliği Morfolojik Bulguları",
+      "content": "<p>İTP’de kemik iliği hücreselliği tipik olarak normaldir; megakaryosit sayısı normal veya artmıştır (megakaryositik hiperplazi). Megakaryositlerde immün saldırıya sekonder maturasyon duraklaması, apoptoz ve proplatelet oluşumunda yetersizlik gözlenir.</p>",
+      "trigger": "Tanı"
+    },
+    {
+      "id": "p-hem-itp-004",
+      "level": "Klinik",
+      "title": "Anti-Trombosit Otoantikor Analizlerinin Sınırları",
+      "content": "<p>Trombosit yüzey glikoproteinlerine (özellikle GPIIb/IIIa ve GPIb/IX) karşı otoantikor ölçümlerinin (MAIPA veya immunobead) özgüllüğü yüksek olsa da duyarlılığı düşüktür (pozitif öngörü değeri %40–50 civarındadır). Bu nedenle rutin tanıda önerilmez; antikor pozitifliği tanıyı desteklese de primer ve sekonder İTP ayrımını yapamaz.</p>",
+      "trigger": "Tanı"
+    },
+    {
+      "id": "p-hem-itp-005",
+      "level": "Klinik",
+      "title": "Platelet Desialilasyonu ve Fc-Bağımsız Klerens Yolağı",
+      "content": "<p>Anti-GPIb/IX ve bazı anti-GPIIb/IIIa otoantikorları trombosit membranındaki nöraminidaz-1 translokasyonunu tetikleyerek sialik asit kaybına (desialilasyon) yol açar. Desialile olmuş trombositler, klasik dalak FcγR fagositozundan bağımsız olarak karaciğerdeki Ashwell-Morell Reseptörleri (AMR) tarafından tutulup temizlenir. Nöraminidaz-1 inhibitörü Oseltamivir, desialilasyonu engelleyerek deksametazon ile kombine edildiğinde yanıtsız vakalarda yanıt oranını artırabilmektedir.</p>",
+      "trigger": "Patofizyoloji"
+    },
+    {
+      "id": "p-hem-itp-006",
+      "level": "Klinik",
+      "title": "İlk Basamak Steroid Rejimleri ve Kalıcı Yanıt Oranları",
+      "content": "<p>İlk basamak tedavide Prednizon (1–2 mg/kg/gün, 1–2 hafta) veya Yüksek Doz Deksametazon (40 mg/gün, 4 gün) standart rejimlerdir. Yüksek doz deksametazon daha hızlı erken yanıt sağlasa da, 6 aydan uzun süreli kalıcı yanıt oranlarında (SRR %30–50) prednizona kıyasla belirgin bir üstünlük göstermemiştir.</p>",
+      "trigger": "İlk Basamak Tedavi"
+    },
+    {
+      "id": "p-hem-itp-007",
+      "level": "Klinik",
+      "title": "TPO Reseptör Agonistlerinin (TPO-RA) Moleküler Mekanizmaları",
+      "content": "<p>Romiplostim, TPO reseptörünün ekstraselüler bölgesine bağlanan 4 TPO bağlama sahasına sahip peptid-Fc füzyon proteinidir (peptibody). Eltrombopag ve Avatrombopag ise TPO reseptörünün transmembran bölgesine bağlanarak JAK/STAT5 yolağını aktive eden küçük moleküllü, non-peptid yapıda TPO-RA'lardır.</p>",
+      "trigger": "TPO Reseptör Agonistleri"
+    },
+    {
+      "id": "p-hem-itp-008",
+      "level": "Klinik",
+      "title": "TPO-RA Ajanlarının Klinik ve Farmakokinetik Ayrımı",
+      "content": "<p>Eltrombopag, metal katyonları (Ca, Mg, Al) ile şelat oluşturduğu için kalsiyumdan zengin gıdalar/antasitlerle etkileşir (yemekten 2 saat önce veya 4 saat sonra alınmalıdır) ve hepatotoksisite riski taşır. Avatrombopag ise gıda etkileşimi göstermez ve yapılan ağ (network) meta-analizlerine göre TPO-RA'lar arasında en yüksek trombosit yanıt oranına ve en düşük tedavi ilişkili advers olay (TRAE) profiline sahiptir.</p>",
+      "trigger": "TPO Reseptör Agonistleri"
+    },
+    {
+      "id": "p-hem-itp-009",
+      "level": "Klinik",
+      "title": "TPO-RA Ajanları Arasında Geçiş (Switching)",
+      "content": "<p>Bir TPO-RA ile yanıt alınamaması veya intolerans gelişmesi durumunda başka bir TPO-RA ajanına geçildiğinde hastaların %50–75'inde başarılı bir ikincil trombosit yanıtı elde edilebilir.</p>",
+      "trigger": "TPO Reseptör Agonistleri"
+    },
+    {
+      "id": "p-hem-itp-010",
+      "level": "Klinik",
+      "title": "Syk İnhibitörü Fostamatinib Mekanizması ve Yan Etki Profili",
+      "content": "<p>Dalak tirozin kinazı (Syk) inhibitörü olan Fostamatinib, makrofajlardaki aktive edici FcγR ve B hücre reseptörü (BCR) alt sinyal iletim yolağını bloke ederek opsonize trombositlerin fagositozunu engeller. En sık görülen yan etkileri diyare, hipertansiyon ve transaminaz yüksekliğidir.</p>",
+      "trigger": "İkinci Basamak Tedavi"
+    },
+    {
+      "id": "p-hem-itp-011",
+      "level": "Klinik",
+      "title": "BTK İnhibitörleri ve FcRn Blokörleri",
+      "content": "<p>Bruton Tirozin Kinaz (BTK) inhibitörü Rilzabrutinib (FcγR ve BCR blokajı) ve Neonatal Fc Reseptör (FcRn) antagonistleri (Efgartigimod, Rozanolixizumab), IgG yıkım döngüsünü hızlandırıp dolaşımdaki otoantikor düzeyini düşürerek dirençli İTP'de yeni nesil hedefe yönelik seçenekleri oluşturur.</p>",
+      "trigger": "Yeni Ajanlar"
+    },
+    {
+      "id": "p-hem-itp-012",
+      "level": "Klinik",
+      "title": "Gebelikte İTP Tedavi Eşikleri ve Anestezi Limitleri",
+      "content": "<p>Gebelikte kanama semptomu olmayan İTP vakalarında trombosit sayısı &lt;20–30 × 10⁹/L olana dek tedavi verilmez. Doğum ve anestezi için hedeflenen güvenli trombosit eşikleri: Vajinal doğum için ≥50 × 10⁹/L, epidural/spinal nöraksiyel anestezi için ise ≥70–80 × 10⁹/L'dir.</p>",
+      "trigger": "Gebelik"
+    },
+    {
+      "id": "p-hem-itp-013",
+      "level": "Klinik",
+      "title": "Gebelikte İlaç Seçenekleri ve Kontrendikasyonlar",
+      "content": "<p>Gebelikte plasental 11β-HSD2 enzimiyle inaktive edilen Prednizon veya IVIg ilk tercihtir. Deksametazon plasentayı geçtiği için fetal zararlardan ötürü tercih edilmez. Mikofenolat mofetil (MMF) ve vinka alkaloidleri gebelikte mutlak kontrendikedir. Plasentayı geçmeyen rekombinant insan TPO'su (rhTPO) refrakter gebelerde güvenli bir seçenektir.</p>",
+      "trigger": "Gebelik"
+    },
+    {
+      "id": "p-hem-itp-014",
+      "level": "Klinik",
+      "title": "Kritik ve Hayatı Tehdit Eden Kanama Yönetimi Protocolü",
+      "content": "<p>İntrakraniyal veya retroperitoneal kanama gibi kritik durumlarda mortalite oranı yetişkinlerde %30'lara ulaşır. Yönetimde derhal kombine acil tedavi başlanmalıdır: Yüksek doz IV metilprednizolon (1 g/gün), IVIg (1 g/kg/gün), trombosit transfüzyonları, IV Traneksamik asit ve SC Romiplostim (5–10 µg/kg tek doz).</p>",
+      "trigger": "Acil Kanama"
+    },
+    {
+      "id": "p-hem-itp-015",
+      "level": "Klinik",
+      "title": "İlaca Bağlı İmmün Trombositopeni (DİTP) Temel Özellikleri",
+      "content": "<p>DİTP mekanizması ilaca bağımlı antikorların gelişimidir; sıklıkla ilacın başlanmasından 1–2 hafta sonra trombosit sayısının aniden &lt;20 × 10⁹/L düzeyine düşmesiyle seyreder. Temel yaklaşım şüpheli ilacın derhal ve kalıcı olarak kesilmesidir.</p>",
+      "trigger": "İlaca Bağlı İTP"
+    },
+    {
+      "id": "p-hem-itp-016",
+      "level": "Klinik",
+      "title": "Oksaliplatin İndüklü İTP (OITP)",
+      "content": "<p>Oksaliplatin indüklü İTP, miyelosüpresyondan farklı bir Tip II aşırı duyarlılık reaksiyonudur. Tipik olarak ortalama 9. kemoterapi siklusunda (kümülatif maruziyet sonrası) gelişir. Hastaların %50'sinden fazlasında infüzyon sırasında/sonrasında ateş, titreme, sırt ağrısı gibi sistemik alerjik semptomlar eşlik eder ve oksaliplatine yeniden maruz bırakma (rechallenge) %100 nüks ile sonuçlanır.</p>",
+      "trigger": "İlaca Bağlı İTP"
+    },
+    {
+      "id": "p-hem-itp-017",
+      "level": "Klinik",
+      "title": "Rituximab Tedavisi ve Takip Riskleri",
+      "content": "<p>Anti-CD20 monoklonal antikoru Rituximab, otoreaktif B hücrelerini tüketerek etki eder. Erken yanıt oranı %60–70 iken 5 yıllık kalıcı yanıt oranı %21 seviyesindedir. Tedavi öncesinde Hepatit B (HBV) serolojisi mutlaka taranmalıdır; HBV reaktivasyonu ve progresif multifokal lökoensefalopati (PML) riski mevcuttur.</p>",
+      "trigger": "İkinci Basamak Tedavi"
+    },
+    {
+      "id": "p-hem-itp-018",
+      "level": "Klinik",
+      "title": "Splenektomi Zamanlaması ve On Yıllık Başarı",
+      "content": "<p>Splenektomi %50–70 dolaylarında 10 yıllık kalıcı remisyon sağlayan en güçlü tedavidir. Ancak kapsüllü bakterilere bağlı sepsis (OPSI) ve venöz tromboemboli riskleri sebebiyle spontan remisyon şansı vermek adına tanının ardından en az 12–24 ay boyunca ertelenmelidir.</p>",
+      "trigger": "Splenektomi"
+    },
+    {
+      "id": "p-hem-itp-019",
+      "level": "Klinik",
+      "title": "İTP'de Paradoksal Tromboz Riski",
+      "content": "<p>İTP hastalarında derin trombositopeniye rağmen venöz ve arteriyel tromboembolizm riski genel popülasyona göre artmıştır. İleri yaş (&gt;60 yaş), antifosfolipid antikor pozitifliği, geçirilmiş tromboz öyküsü, kortikosteroid kullanımı, splenektomi ve TPO-RA tedavisi trombotik riski kümülatif olarak artırır.</p>",
+      "trigger": "Tromboz"
+    },
+    {
+      "id": "p-hem-itp-020",
+      "level": "Klinik",
+      "title": "Anti-CD38 ve Kompleman Hedefli Yeni Ajanlar",
+      "content": "<p>Anti-CD38 monoklonal antikorları (Daratumumab), CD20-olumsuz olan ve rituximaba direnç gösteren uzun ömürlü otoreaktif plazma hücrelerini ortadan kaldırır. Klasik kompleman yolağını hedefleyen Sutimlimab ise kompleman aracılı trombosit klerensini durdurmada etkilidir.</p>",
+      "trigger": "Yeni Ajanlar"
+    }
+  ]
+}
