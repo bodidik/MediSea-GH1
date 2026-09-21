@@ -1,0 +1,42 @@
+{
+  "title": "Antitiroid İlaç (ATD) Direnci veya Persistan Tirotoksikozda İzlenecek Tedavi Algoritmaları",
+  "meta": {
+    "updatedAt": "21 Eyl 2026",
+    "tags": [
+      "Endokrinoloji",
+      "Tiroid",
+      "Graves Hastalığı",
+      "Antitiroid İlaç",
+      "TRAb",
+      "Metimazol",
+      "Radyoaktif İyot",
+      "Tiroidektomi",
+      "Rituksimab",
+      "Tedavi Algoritması"
+    ],
+    "parent": "hipertiroidi",
+    "order": 8
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Klasik 12–18 aylık tionamid (metimazol/karbimazol/PTU) tedavisine rağmen TSH reseptör antikorlarının (TRAb) yüksek seyretmesi (persistan serolojik hipertiroidi) veya biyokimyasal/klinik direnç gelişmesi durumunda izlenecek kanıta dayalı klinik yönetim algoritmaları:</p><div class=\"border border-slate-200 p-3 rounded-xl bg-white shadow-sm mb-3\" role=\"group\" aria-label=\"ATD tedavisi sonu karar akışı\"><div class=\"rounded-lg border border-slate-300 bg-slate-50 text-slate-800 p-2 text-center\"><div class=\"text-[11px] font-bold\">[ Standart 12-18 Ay ATD Tedavisi Sonu ]</div></div><div class=\"text-center text-slate-400 text-[12px] leading-none my-1\" aria-hidden=\"true\">↓</div><div class=\"grid gap-3 sm:grid-cols-2\"><div><div class=\"rounded-lg border border-emerald-300 bg-emerald-50 text-emerald-900 p-2 text-center\"><div class=\"text-[11px] font-bold\">TRAb &lt; 0.9 IU/L</div><div class=\"text-[10.5px] mt-0.5\">(Yüksek Remisyon Şansı)</div></div><div class=\"text-center text-slate-400 text-[12px] leading-none my-1\" aria-hidden=\"true\">↓</div><div class=\"rounded-lg border border-emerald-300 bg-white text-emerald-900 p-2 text-center\"><div class=\"text-[11px] font-bold\">Tedaviyi Kes</div><div class=\"text-[10.5px] mt-0.5\">(Takip Et)</div></div></div><div><div class=\"rounded-lg border border-rose-300 bg-rose-50 text-rose-900 p-2 text-center\"><div class=\"text-[11px] font-bold\">TRAb ≥ 0.9 IU/L</div><div class=\"text-[10.5px] mt-0.5\">(Persistan / Direnç Sınıfı)</div></div><div class=\"text-center text-slate-400 text-[12px] leading-none my-1\" aria-hidden=\"true\">↓</div><div class=\"rounded-lg border border-slate-300 bg-white text-slate-800 p-2 text-center\"><div class=\"text-[11px] font-bold\">Klinik Yol Ayrımı</div></div><div class=\"text-center text-slate-400 text-[12px] leading-none my-1\" aria-hidden=\"true\">↓</div><div class=\"grid gap-2\"><div class=\"rounded-lg border border-sky-300 bg-sky-50 text-sky-900 p-2 text-center\"><div class=\"text-[11px] font-bold\">[ Kesintisiz LT-MMI ]</div><div class=\"text-[10.5px] mt-0.5\">(≥5-24 yıl)</div></div><div class=\"rounded-lg border border-sky-300 bg-sky-50 text-sky-900 p-2 text-center\"><div class=\"text-[11px] font-bold\">[ Ablatif Tedavi: RAI / Cerrahi ]</div></div><div class=\"rounded-lg border border-sky-300 bg-sky-50 text-sky-900 p-2 text-center\"><div class=\"text-[11px] font-bold\">[ Yeni Biyolojik / Hedefe Yönelik]</div></div></div></div></div></div>"
+    },
+    {
+      "heading": "Uzun Dönem Antitiroid İlaç (LT-ATD / LT-MMI) Tedavisi",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Standart 18. ayın sonunda serum TRAb düzeyi ≥0.9 IU/L (veya persistan pozitif) saptanan hastalarda ilacı kesmek %80–85 oranında nüks ile sonuçlanır. Bu olgularda ablasyona alternatif ilk basamak medikal strateji uzun süreli metimazol (LT-MMI) kullanımıdır:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Doz Titrasyonu ve Süre:</strong> Metimazol tedavisi kesintisiz olarak en az 60 aya (≥5 yıl) tamamlanır. Zamanla tiroid bezinin ilaç duyarlılığı arttığından, günlük metimazol ihtiyacı kademeli olarak düşer (1.25–2.5 mg/gün veya haftada 2–6 kez 1.25–2.5 mg idame).</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Klinik Başarı:</strong> LT-MMI tedavisi 5. yılın sonunda hastaların %80'inden fazlasında kalıcı biyokimyasal remisyon (kür) sağlar. Güvenlilik profili yüksek olup 1. yıldan sonra ilave majör yan etki riski ihmal edilebilir düzeydedir.</li></ul></div>"
+    },
+    {
+      "heading": "Medikal İmmünomodülatör Kombinasyonlar",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">İlaç direncini kırmak ve TRAb titrelerinin düşüşünü hızlandırmak amacıyla uygulanan ajanlar:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Düşük Doz Metotreksat (MTX) Kombinasyonu:</strong> Metimazol tedavisine haftalık 10 mg oral MTX eklenmesinin, immunomodülasyon sağlayarak serum TRAb düzeylerini daha hızlı düşürdüğü ve ilaç kesilme oranlarını belirgin artırdığı gösterilmiştir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Safra Asidi Sequestrantları (Kolestiramin / Kolestipol):</strong> Dirençli tirotoksikoz krizlerinde veya ağır vakalarda tionamidlere eklendiğinde, tiroid hormonlarının enterohepatik dolaşımdan emilimini engelleyerek serum T4 ve T3 seviyelerinde hızlı ve ek bir düşüş sağlar.</li></ul></div>"
+    },
+    {
+      "heading": "Kesin Ablatif Tedaviler (Cerrahi vs. RAI)",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Tionamid intoleransı, ilaca bağlı majör yan etki (agranülositoz, hepatotoksisite) gelişimi veya LT-MMI tercih etmeyen dirençli hastalarda ablatif seçenekler uygulanır:</p><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">Total veya Yakına Yakın (Near-Total) Tiroidektomi</h4><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>İndikasyonlar:</strong> Büyük guatrı (özellikle bası semptomu olan), eş zamanlı nodülü bulunan, orta-şiddetli aktif Graves orbitopatisi (GO) olan veya RAI kontrendikasyonu bulunan olgularda ilk tercih ablatif yöntemdir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Sonuç:</strong> Hızlı ve kalıcı kür sağlar, nüks riski &lt;%1'dir.</li></ul></div><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">Radyoaktif İyot (RAI - 131-I) Tedavisi</h4><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Cerrahi veya ilaç kontrendikasyonu olan, küçük hacimli tiroid bezi bulunan vakalarda etkilidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Orbitopati Uyarısı:</strong> RAI tedavisi doku yıkımına ikincil serum TRAb düzeylerini geçici olarak yükselttiğinden, aktif tiroid göz hastalığı olanlarda steroid profilaksisi (oral prednizon) ile birlikte verilmesi veya ertelenmesi şarttır.</li></ul></div>"
+    },
+    {
+      "heading": "Geleceğin Hedefe Yönelik Biyolojik Tedavileri (Targeted Immunotherapies)",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Geleneksel tedavilere dirençli veya persistan otoimmün aktivitesi devam eden Graves hastalarında klinik çalışma aşamasında olan moleküler hedefler:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>B-Hücre Deplesyonu (Rituksimab - Anti-CD20):</strong> B lenfositleri tüketerek patojenik TRAb üretimini ve antijen sunumunu baskılar.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Anti-CD40 Monoklonal Antikoru (Iscalimab):</strong> T ve B hücreleri arasındaki CD40-CD40L ko-stimülatör sinyal yolağını bloke ederek humoral otoimmün yanıtı durdurur.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Antijen-Spesifik İmmünoterapi (ATX-GD-59):</strong> TSHR reseptörüne özgü tolerojenik peptidlerin verilmesiyle T lenfositlerinde antijene özgü immün tolerans yeniden inşa edilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>TSHR Antagonistleri (K1-70 Monoklonal Antikoru):</strong> TSH reseptörünün ekstraselüler alanına bağlanarak uyarıcı TRAb'ların reseptör aktivasyonunu doğrudan inhibe eder.</li></ul></div>"
+    }
+  ]
+}

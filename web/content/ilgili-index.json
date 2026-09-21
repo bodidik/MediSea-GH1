@@ -162,13 +162,18 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
+   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
    "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
-   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
+   "slug": "graves-atd-direnci-tedavi-algoritmalari",
+   "baslik": "Antitiroid İlaç (ATD) Direnci veya Persistan Tirotoksikozda İzlenecek Tedavi Algoritmaları"
   },
   {
    "brans": "endokrinoloji",
@@ -379,13 +384,13 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
-   "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
+   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
+   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
-   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
+   "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
+   "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
   },
   {
    "brans": "endokrinoloji",
@@ -394,25 +399,20 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "graves-nuks-ongorusu-great-skoru",
-   "baslik": "Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları"
+   "slug": "graves-atd-direnci-tedavi-algoritmalari",
+   "baslik": "Antitiroid İlaç (ATD) Direnci veya Persistan Tirotoksikozda İzlenecek Tedavi Algoritmaları"
   }
  ],
  "endokrinoloji/gebelikte-hipertiroidizm-yonetimi": [
   {
    "brans": "endokrinoloji",
+   "slug": "graves-atd-direnci-tedavi-algoritmalari",
+   "baslik": "Antitiroid İlaç (ATD) Direnci veya Persistan Tirotoksikozda İzlenecek Tedavi Algoritmaları"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "gebelikte-hipotiroidizm-yonetimi",
    "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "graves-hcp5-lncrna-ve-epigenetik",
-   "baslik": "Graves Hastalığında HCP5 (lncRNA) Varyantı ve Epigenetik Mekanizmalar"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "graves-nuks-ongorusu-great-skoru",
-   "baslik": "Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları"
   },
   {
    "brans": "endokrinoloji",
@@ -452,11 +452,60 @@
    "baslik": "Tiroid Yaşlanması (Thyroid Aging): Fizyolojik TSH Yüksekliği"
   }
  ],
- "endokrinoloji/graves-hcp5-lncrna-ve-epigenetik": [
+ "endokrinoloji/graves-atd-direnci-tedavi-algoritmalari": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "graves-dnmt3a-dnmt3b-de-novo-metilasyon",
+   "baslik": "DNMT3A ve DNMT3B de Novo Metiltransferazlarının Epigenetik ve Hücresel Etkileri"
+  },
   {
    "brans": "endokrinoloji",
    "slug": "graves-nuks-ongorusu-great-skoru",
    "baslik": "Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
+   "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "osteoporoz-tedavisi",
+   "baslik": "Osteoporoz Tedavisi: Farmakoterapi Endikasyonları, Modaliteler ve Yönetim Stratejileri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipertiroidizm-yonetimi",
+   "baslik": "Gebelikte Hipertiroidizm"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "graves-hcp5-lncrna-ve-epigenetik",
+   "baslik": "Graves Hastalığında HCP5 (lncRNA) Varyantı ve Epigenetik Mekanizmalar"
+  }
+ ],
+ "endokrinoloji/graves-dnmt3a-dnmt3b-de-novo-metilasyon": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "graves-hcp5-lncrna-ve-epigenetik",
+   "baslik": "Graves Hastalığında HCP5 (lncRNA) Varyantı ve Epigenetik Mekanizmalar"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "graves-atd-direnci-tedavi-algoritmalari",
+   "baslik": "Antitiroid İlaç (ATD) Direnci veya Persistan Tirotoksikozda İzlenecek Tedavi Algoritmaları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "graves-nuks-ongorusu-great-skoru",
+   "baslik": "Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları"
+  }
+ ],
+ "endokrinoloji/graves-hcp5-lncrna-ve-epigenetik": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "graves-dnmt3a-dnmt3b-de-novo-metilasyon",
+   "baslik": "DNMT3A ve DNMT3B de Novo Metiltransferazlarının Epigenetik ve Hücresel Etkileri"
   },
   {
    "brans": "endokrinoloji",
@@ -465,35 +514,30 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidizm-yonetimi",
-   "baslik": "Gebelikte Hipertiroidizm"
+   "slug": "graves-nuks-ongorusu-great-skoru",
+   "baslik": "Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men1-meme-kanseri-patogenez",
-   "baslik": "MEN1 Meme Kanseri Patogenezi: Two-Hit, LOH ve Menin-ER-α Mekanizması"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "men1-menin-lösemi-onkojen",
-   "baslik": "Menin'in Çift Karakteri: Hematopoetik Dokularda Pro-Onkojenik Rol ve Lösemi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "men1-menin-molekuler-gelismeler",
-   "baslik": "Menin Proteini: Son Dönem Moleküler ve Klinik Gelişmeler"
+   "slug": "graves-atd-direnci-tedavi-algoritmalari",
+   "baslik": "Antitiroid İlaç (ATD) Direnci veya Persistan Tirotoksikozda İzlenecek Tedavi Algoritmaları"
   }
  ],
  "endokrinoloji/graves-nuks-ongorusu-great-skoru": [
   {
    "brans": "endokrinoloji",
-   "slug": "graves-hcp5-lncrna-ve-epigenetik",
-   "baslik": "Graves Hastalığında HCP5 (lncRNA) Varyantı ve Epigenetik Mekanizmalar"
+   "slug": "graves-atd-direnci-tedavi-algoritmalari",
+   "baslik": "Antitiroid İlaç (ATD) Direnci veya Persistan Tirotoksikozda İzlenecek Tedavi Algoritmaları"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidizm-yonetimi",
-   "baslik": "Gebelikte Hipertiroidizm"
+   "slug": "graves-dnmt3a-dnmt3b-de-novo-metilasyon",
+   "baslik": "DNMT3A ve DNMT3B de Novo Metiltransferazlarının Epigenetik ve Hücresel Etkileri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "graves-hcp5-lncrna-ve-epigenetik",
+   "baslik": "Graves Hastalığında HCP5 (lncRNA) Varyantı ve Epigenetik Mekanizmalar"
   },
   {
    "brans": "endokrinoloji",
@@ -509,11 +553,6 @@
    "brans": "endokrinoloji",
    "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
    "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "yaslida-hipertiroidizm",
-   "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz"
   }
  ],
  "endokrinoloji/hashimoto-ensefaliti": [
@@ -1350,11 +1389,6 @@
    "brans": "endokrinoloji",
    "slug": "erkek-hipogonadizmi",
    "baslik": "Erkek Hipogonadizmi: Tanı ve Tedavi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "graves-hcp5-lncrna-ve-epigenetik",
-   "baslik": "Graves Hastalığında HCP5 (lncRNA) Varyantı ve Epigenetik Mekanizmalar"
   }
  ],
  "endokrinoloji/men1-meme-kanseri-tarama": [
@@ -1379,11 +1413,6 @@
    "brans": "hematoloji",
    "slug": "losemiler",
    "baslik": "Lösemiler"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "graves-hcp5-lncrna-ve-epigenetik",
-   "baslik": "Graves Hastalığında HCP5 (lncRNA) Varyantı ve Epigenetik Mekanizmalar"
   }
  ],
  "endokrinoloji/men1-menin-molekuler-gelismeler": [
@@ -1391,11 +1420,6 @@
    "brans": "endokrinoloji",
    "slug": "men1-meme-kanseri-patogenez",
    "baslik": "MEN1 Meme Kanseri Patogenezi: Two-Hit, LOH ve Menin-ER-α Mekanizması"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "graves-hcp5-lncrna-ve-epigenetik",
-   "baslik": "Graves Hastalığında HCP5 (lncRNA) Varyantı ve Epigenetik Mekanizmalar"
   }
  ],
  "endokrinoloji/men1-nf-pnet-izlem-cerrahi": [
@@ -1737,6 +1761,11 @@
   }
  ],
  "endokrinoloji/osteoporoz-tedavisi": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "graves-atd-direnci-tedavi-algoritmalari",
+   "baslik": "Antitiroid İlaç (ATD) Direnci veya Persistan Tirotoksikozda İzlenecek Tedavi Algoritmaları"
+  },
   {
    "brans": "endokrinoloji",
    "slug": "osteoporoz-tedavi-kilavuz-karsilastirma",
@@ -2322,6 +2351,11 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "graves-atd-direnci-tedavi-algoritmalari",
+   "baslik": "Antitiroid İlaç (ATD) Direnci veya Persistan Tirotoksikozda İzlenecek Tedavi Algoritmaları"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "subklinik-tiroid-hastaliklari",
    "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
   },
@@ -2336,6 +2370,11 @@
    "brans": "endokrinoloji",
    "slug": "hipertiroidi",
    "baslik": "Hipertiroidi ve Tirotoksikoz"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "graves-atd-direnci-tedavi-algoritmalari",
+   "baslik": "Antitiroid İlaç (ATD) Direnci veya Persistan Tirotoksikozda İzlenecek Tedavi Algoritmaları"
   },
   {
    "brans": "endokrinoloji",
@@ -2356,11 +2395,6 @@
    "brans": "endokrinoloji",
    "slug": "subklinik-tiroid-hastaliklari",
    "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "graves-nuks-ongorusu-great-skoru",
-   "baslik": "Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları"
   }
  ],
  "enfeksiyon/antibiyotikler-ana-sayfa": [

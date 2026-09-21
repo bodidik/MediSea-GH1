@@ -1,0 +1,30 @@
+{
+  "title": "DNMT3A ve DNMT3B de Novo Metiltransferazlarının Epigenetik ve Hücresel Etkileri",
+  "meta": {
+    "updatedAt": "21 Eyl 2026",
+    "tags": [
+      "Endokrinoloji",
+      "Tiroid",
+      "Graves Hastalığı",
+      "Otoimmün Tiroid Hastalığı",
+      "Epigenetik",
+      "DNA Metilasyonu",
+      "DNMT1",
+      "DNMT3A",
+      "DNMT3B",
+      "Antitiroid İlaç"
+    ],
+    "parent": "hipertiroidi",
+    "order": 7
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Otoimmün tiroid hastalıklarının (AITD) patogenezinde DNA metilasyon dengesi hayati rol oynamaktadır. Genomik metilasyonun düzenlenmesinde iki temel DNA metiltransferaz (DNMT) sınıfı görev yapar:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>İdame Metilasyonu (Maintenance Methylation - DNMT1):</strong> Replikasyon sırasında önceden metillenmiş DNA iplikçiklerinin kalıbını korur.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>de Novo Metilasyon (DNMT3A ve DNMT3B):</strong> Unmetilasyon gösteren CpG adacıklarına yeni metil grupları ekleyerek embriyonik gelişim, hücresel farklılaşma, lenfosit maturasyonu ve gen susturulması (gene silencing) süreçlerini yönetir.</li></ul></div>"
+    },
+    {
+      "heading": "Biyokimyasal ve Hücresel Yansımaları",
+      "html": "<h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">Hücresel İmmün Tolerans Üzerindeki Etkisi</h4><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">DNMT3A ve DNMT3B, saf (naive) T ve B lenfositlerinin immün yanıt kaskadına katılırken geçirdiği epigenetik reprogramlamada rol alır. Bu enzimlerin kodlandığı genlerdeki değişimler, düzenleyici T (Treg) hücrelerinin baskılayıcı geni olan FOXP3 promotorundaki ve T/B hücre reseptör sinyal genlerindeki de novo metilasyon paternini bozarak otoreaktif lenfositlerin periferik toleranstan kaçışına katkıda bulunabilir.</p><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">Klinik Tedavi Yanıtındaki Yeri</h4><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Arakawa ve arkadaşları tarafından AITD hastalarında yapılan epigenetik ve genetik çalışmada; DNMT1 (rs2228612) G aleli ve GG genotipinin antitiroid ilaç (ATD) tedavisine yanıtsız/dirençli olgularda ve belirgin global DNA hipometilasyonu olan grupta anlamlı derecede yüksek saptandığı gösterilmiştir. DNMT3A ve DNMT3B gen varyasyonları da de novo metilasyon kapasitesini modüle etmekle birlikte, hücresel düzeyde idame metilasyon kusuruna bağlı ilaç direncini yönlendiren birincil anahtar belirteç DNMT1 olarak öne çıkmaktadır.</p>"
+    }
+  ]
+}
