@@ -60,8 +60,8 @@
     },
     {
       "id": "ra-018",
-      "front": "Kronik hastalık anemisini demir eksikliği anemisine göre ayırt eden en önemli laboratuvar parametresi (ferritin düzeyi üzerinden) nasıldır?",
-      "back": "Kronik hastalık anemisinde ferritin normal veya yüksektir, demir eksikliğinde düşüktür",
+      "front": "RA hastasında ferritin nasıl yorumlanır ve eşlik eden demir eksikliği hangi eşikle saptanır?",
+      "back": "Ferritin aktif RA'da yükselen pozitif bir akut faz reaktanıdır. Kronik hastalık anemisinde normal/yüksek seyrederken demir eksikliği anemisinde depoların boşalmasını yansıtır. İnflamatuar zemin nedeniyle standart eşik (<30 ng/mL) yerine Ferritin <100 ng/mL (veya TSAT <%20) esas alınmalıdır.",
       "tag": "Romatoloji / Romatoid Artrit"
     },
     {
