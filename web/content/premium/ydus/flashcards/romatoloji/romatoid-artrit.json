@@ -1,0 +1,338 @@
+{
+  "id": "fc-rom-ra-001",
+  "accessLevel": "premium",
+  "topic": "Romatoid Artrit (RA)",
+  "description": "YDUS Romatoloji serisi: Romatoid artrit — patogenez, seroloji, aktivite skorları, DMARD'lar ve komplikasyonlar; 55 kartlık hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "ra-009",
+      "front": "Romatoid Artrit (RA) tanısında kullanılan RF (Romatoid Faktör) antikorları, hangi immünoglobulin parçasının Fc kısmına karşı gelişir?",
+      "back": "IgG",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-010",
+      "front": "RA tanısında Anti-CCP (ACPA) antikorlarının RF'ye göre en temel klinik avantajı nedir?",
+      "back": "Daha yüksek spesifiteye sahip olması",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-011",
+      "front": "Romatoid Artrit patogenezinde, genetik yatkınlıktan sorumlu olan ve 'paylaşılan epitop' (shared epitope) olarak bilinen bölge hangi lokustadır?",
+      "back": "HLA-DRB1",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-012",
+      "front": "DAS28 (Disease Activity Score) hesaplamasında kullanılan dört değişken nedir?",
+      "back": "Hassas eklem sayısı, şiş eklem sayısı, hasta global değerlendirmesi ve ESH (veya CRP)",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-013",
+      "front": "SDAI (Simplified Disease Activity Index) skorlamasını CDAI'dan ayıran temel bileşen hangisidir?",
+      "back": "CRP düzeyi",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-014",
+      "front": "Metotreksat (MTX) tedavisi alan RA hastalarında folat desteği verilmesinin temel amacı nedir?",
+      "back": "Hepatotoksisite ve gastrointestinal yan etkileri azaltmak",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-015",
+      "front": "Metotreksat kullanan bir hastada, AST veya ALT değerleri normalin üst sınırının (ULN) kaç katına çıkarsa ilaç tedavisi durdurulmalıdır?",
+      "back": "≥3 kat",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-016",
+      "front": "RA'da görülen interstisyel akciğer hastalığının (İAH) en sık radyolojik paterni hangisidir?",
+      "back": "UIP (Usual Interstitial Pneumonia)",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-017",
+      "front": "RA seyrinde gelişen aneminin en yaygın tipi hangisidir?",
+      "back": "Kronik hastalık anemisi (ACD/AI)",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-018",
+      "front": "Kronik hastalık anemisini demir eksikliği anemisine göre ayırt eden en önemli laboratuvar parametresi (ferritin düzeyi üzerinden) nasıldır?",
+      "back": "Kronik hastalık anemisinde ferritin normal veya yüksektir, demir eksikliğinde düşüktür",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-019",
+      "front": "RA'lı bir hastada ani gelişen el bileği ağrısı ve parestezi ile karakterize, en sık görülen tuzak nöropati hangisidir?",
+      "back": "Karpal tünel sendromu",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-020",
+      "front": "RA'da servikal vertebra tutulumunun en ciddi ve hayatı tehdit eden formu hangisidir?",
+      "back": "Atlantoaksiyel subluksasyon",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-021",
+      "front": "Hidroksiklorokin (HCQ) kullanan hastalarda en kritik uzun dönem toksisite takibi hangi organa yöneliktir?",
+      "back": "Göz (Retinotoksisite takibi)",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-023",
+      "front": "Gebelikte Romatoid Artrit hastalarında güvenle kullanılabilen ve plasentayı geçmeyen TNF inhibitörü hangisidir?",
+      "back": "Sertolizumab pegol",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-024",
+      "front": "RA hastalarında gebelik sırasında hastalık aktivitesinde genellikle nasıl bir değişim gözlenir?",
+      "back": "Hastalık aktivitesinde spontan remisyon veya iyileşme",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-027",
+      "front": "RA'da eklem dışı tutulumlardan biri olan 'Felty Sendromu' triadı nelerdir?",
+      "back": "Romatoid artrit, splenomegali ve nötropeni",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-028",
+      "front": "Akut faz yanıtında karaciğerde sentezlenen ve demir metabolizmasını negatif yönde düzenleyerek anemiye yol açan protein hangisidir?",
+      "back": "Hepsidin",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-029",
+      "front": "Metotreksatın etki mekanizması hangi enzimin kompetitif inhibisyonuna dayanır?",
+      "back": "Dihidrofolat redüktaz",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-030",
+      "front": "Anti-CCP antikorları, RA semptomları başlamadan kaç yıl öncesine kadar kanda tespit edilebilir?",
+      "back": "10 yıl veya daha fazla",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-033",
+      "front": "RA'da görülen interstisyel akciğer hastalığının tanısında en duyarlı görüntüleme yöntemi hangisidir?",
+      "back": "Yüksek çözünürlüklü bilgisayarlı tomografi (HRCT)",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-034",
+      "front": "Romatoid faktörün RA dışı viral bir nedeni olarak öne çıkan hastalık hangisidir?",
+      "back": "Hepatit C enfeksiyonu",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-035",
+      "front": "RA patogenezinde, eklem kıkırdağını ve kemiği yıkan temel enzim grubu hangisidir?",
+      "back": "Matriks metalloproteinazlar (MMP)",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-036",
+      "front": "Gebelikte teratojenik etkisi nedeniyle kesinlikle kontrendike olan RA ilacı hangisidir?",
+      "back": "Metotreksat (veya Leflunomid)",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-038",
+      "front": "RA tedavisinde kullanılan glukokortikoidlerin en önemli uzun dönem metabolik yan etkisi nedir?",
+      "back": "Osteoporoz",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-039",
+      "front": "RA hastalarında kardiyovasküler riskin genel popülasyona göre daha yüksek olmasının temel nedeni nedir?",
+      "back": "Kronik sistemik inflamasyon",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-042",
+      "front": "Metotreksat tedavisi altında hipoalbüminemi gelişmesi (baseline'a göre ≥0.3 g/dL düşüş) neyi işaret eder?",
+      "back": "Şiddetli hepatotoksisite",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-044",
+      "front": "RA'da akciğer tutulumunu değerlendirmek için kullanılan non-invaziv test hangisidir?",
+      "back": "Karbonmonoksit difüzyon kapasitesi (DLCO)",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-045",
+      "front": "RA tanısı için eklem tutulum süresi kriteri en az kaç haftadır?",
+      "back": "6 hafta",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-046",
+      "front": "RF pozitifliği sağlıklı yaşlı popülasyonda yaklaşık yüzde kaç oranında görülebilir?",
+      "back": "Yüzde 5 ile 25 arası",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-047",
+      "front": "RA patogenezinde sitrülinasyon işlemini katalize eden enzim nedir?",
+      "back": "Peptidilarginin deiminaz (PAD)",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-048",
+      "front": "RA tedavisinde 'Triple Terapi' (Üçlü Tedavi) hangi ilaçlardan oluşur?",
+      "back": "Metotreksat, sülfasalazin ve hidroksiklorokin",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-049",
+      "front": "Sülfasalazin kullanımında izlenmesi gereken en önemli hematolojik yan etki nedir?",
+      "back": "Lökopeni (veya agranülositoz)",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-050",
+      "front": "RA'da eritrositlerin ortalama hacmi (MCV) hangi anemide tipik olarak 80-100 fL arasındadır?",
+      "back": "Kronik hastalık anemisi",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-059",
+      "front": "RA'da 'Düşük Hastalık Aktivitesi' (Low Disease Activity) için DAS28 sınırı kaçtır?",
+      "back": "≤3.2",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-060",
+      "front": "RA'da 'Remisyon' için DAS28 sınırı kaçtır?",
+      "back": "< 2.6",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-061",
+      "front": "SDAI skoru kaçın üzerindeyse 'Yüksek Hastalık Aktivitesi' olarak kabul edilir?",
+      "back": "> 26",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-062",
+      "front": "CDAI skoru hangi parametreyi dışarıda bırakarak sadece klinik muayeneye odaklanır?",
+      "back": "Akut faz reaktanları (ESH veya CRP)",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-063",
+      "front": "Metotreksatın akciğer üzerindeki en ciddi akut yan etkisi nedir?",
+      "back": "Metotreksat pnömonisi (Pnömonit)",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-064",
+      "front": "Leflunomid tedavisini hızlıca vücuttan uzaklaştırmak (wash-out) için ne kullanılır?",
+      "back": "Kolestiramin",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-065",
+      "front": "RA hastalarında el eklemlerinde görülen 'z-deformitesi' hangi bölgedeki tutulumu ifade eder?",
+      "back": "Başparmak",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-066",
+      "front": "RA'da görülen 'Boutonniere' (Düğme iliği) deformitesi nedir?",
+      "back": "PIP eklemde fleksiyon, DIP eklemde hiperekstansiyon",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-067",
+      "front": "RA'da görülen 'Swan-neck' (Kuğu boynu) deformitesi nedir?",
+      "back": "PIP eklemde hiperekstansiyon, DIP eklemde fleksiyon",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-068",
+      "front": "RA hastalarında en sık görülen oküler bulgu hangisidir?",
+      "back": "Keratokonjonktivitis sikka (Göz kuruluğu)",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-069",
+      "front": "RF (Romatoid Faktör) testi hangi laboratuvar tekniği ile en sık ölçülür?",
+      "back": "Nefelometri veya lateks aglütinasyon",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-070",
+      "front": "RA'da vaskülit varlığını düşündüren deri bulgusu nedir?",
+      "back": "Palpabl purpura veya dijital infarktlar",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-071",
+      "front": "Metotreksatın kemik iliği üzerindeki en önemli toksik etkisi nedir?",
+      "back": "Pansitopeni",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-072",
+      "front": "RA'lı bir hastada splenomegali ve nötropeni saptandığında akla gelmesi gereken tanı?",
+      "back": "Felty Sendromu",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-073",
+      "front": "RA'da radyolojik olarak 'erozyon' görülmesi neyin göstergesidir?",
+      "back": "Eklem hasarı ve kötü prognoz",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-074",
+      "front": "Gebelik planlayan bir kadın hastada metotreksat kaç ay önce kesilmelidir?",
+      "back": "En az 3 ay önce",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-075",
+      "front": "RA'da sinoviyal sıvının tipik özelliği nedir?",
+      "back": "İnflamatuar karakterde (WBC 2000-50,000/mm³)",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-076",
+      "front": "RA'da en sık tutulan küçük eklemler hangileridir?",
+      "back": "MCP ve PIP eklemler",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-077",
+      "front": "RA'da tipik eklem tutulum paterni nasıldır?",
+      "back": "Simetrik poliartrit",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-078",
+      "front": "RA'da tipik sabah tutukluğunun süresi ve seyri nasıldır?",
+      "back": "En az 1 saat (≥60 dakika) süren ve gün içinde fiziksel aktivite ile kademeli olarak azalan sabah tutukluğu",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-079",
+      "front": "RA tanısında kullanılan 2010 ACR/EULAR kriterlerinde maksimum puan kaçtır?",
+      "back": "10 puan",
+      "tag": "Romatoloji / Romatoid Artrit"
+    },
+    {
+      "id": "ra-080",
+      "front": "RA tanısı için 2010 kriterlerine göre kaç puan ve üzeri 'kesin RA' kabul edilir?",
+      "back": "6 puan",
+      "tag": "Romatoloji / Romatoid Artrit"
+    }
+  ]
+}

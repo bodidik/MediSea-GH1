@@ -1,0 +1,349 @@
+{
+  "meta": {
+    "id": "romatoid-artrit",
+    "branch": "romatoloji",
+    "baslik": "Romatoid Artrit (RA)",
+    "rozetler": [
+      "YENİ"
+    ],
+    "guncelleme": "2026-09"
+  },
+  "moduller": {
+    "flashcard": true,
+    "inciler": false,
+    "quiz": false,
+    "vaka": false,
+    "video": false
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım",
+      "satirlar": [
+        {
+          "metin": "Romatoid Artrit (RA), sinovyal membranların kronik enflamasyonu, sistemik tutulumlar ve otoreaktivite ile karakterize, simetrik, persistan ve potansiyel olarak eroziv destruksiyona yol açan otoreaktif bir otoimmün hastalıktır. Hastalığın seyri, hücresel ve hümoral immün yanıtların kompleks etkileşimlerinden etkilenmekte olup, tedavi edilmediğinde kalıcı eklem deformitelerine, fonksiyon kaybına ve mortalitede artışa yol açar."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Epidemiyoloji, Genetik Yatkınlık ve Risk Faktörleri",
+      "satirlar": [
+        {
+          "metin": "**Genetik Duyarlılık ve Paylaşılan Epitop (Shared Epitope):** RA patogenezindeki en güçlü genetik yatkınlık **HLA-DRB1** geni ile ilişkilidir. HLA-DRB1 alellerinin beta zincirinde yer alan belirli amino asit dizilimleri (**paylaşılan epitop / shared epitope**), antijen sunan hücrelerin sitrülinlenmiş peptidleri T-hücre reseptörlerine sunma kapasitesini artırır. Bu durum, özellikle Anti-Sitrülinlenmiş Protein Antikoru (ACPA / Anti-CCP) pozitif RA gelişimiyle doğrudan bağlantılıdır."
+        },
+        {
+          "metin": "**Çevresel Faktörler ve Mukoza-İlişkili İmmünizasyon:** Sigara kullanımı, ACPA-pozitif RA gelişimi için tanımlanmış en önemli çevresel risk faktörüdür. Sigara dumanı, akciğer parankiminde peptidilarginin deiminaz (PAD) enzim aktivasyonunu tetikleyerek protein sitrülinasyonuna yol açar. Bu durum, patolojik otoimmün yanıtın klinik bulgular ortaya çıkmadan yıllar önce mukoza yüzeylerinde (özellikle solunum yollarında) başlamasına zemin hazırlar."
+        },
+        {
+          "metin": "**Epidemiyolojik Özellikler:** Hastalık genel popülasyonda yaklaşık %0.5-1 oranında görülür. Kadınlarda erkeklere kıyasla 2-3 kat daha sık izlenmekte olup, insidans 40-60 yaş aralığında tepe noktasına ulaşır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "İmmünopatogenez ve Sinovyal Patoloji",
+      "satirlar": [
+        {
+          "metin": "RA patogenezi, otoreaktif lenfositlerin aktivasyonu ile başlayan ve lokal sinovyal dokunun hiperplastik bir panus dokusuna dönüşmesiyle sonuçlanan çok basamaklı bir süreçtir:"
+        },
+        {
+          "metin": "**Sitrülinasyon ve ACPA Oluşumu:** Endojen proteinlerdeki (fibrinojen, vimentin, α-enolaz) arginin kalıntılarının PAD enzimleri aracılığıyla sitrüline dönüştürülmesi neo-antijen yapılar oluşturur. Paylaşılan epitop taşıyan HLA molekülleri bu antijenleri CD4+ T lenfositlere sunar ve B lenfositlerinden yüksek afiniteli ACPA üretimi tetiklenir."
+        },
+        {
+          "metin": "**Sinoviyal Hiperplazi ve Panus (Pannus) Gelişimi:** Aktive T ve B hücreleri, makrofajlar ve fibroblast benzeri sinoviyositler (FLS) sinovyuma infiltre olur. Normalde 1-3 hücre katmanından oluşan sinovyal örtü, belirgin hiperplazi göstererek lokal olarak invaziv özellik kazanan **panus dokusunu** oluşturur."
+        },
+        {
+          "metin": "**Sitokin Ağı:** Süreçte **TNF-alfa, IL-6, IL-1 ve IL-17** temel proinflamatuar sitokinler olarak rol oynar. Bu sitokinler FLS'lerden matris metalloproteinazların (MMP) salınımını uyararak kıkırdak matrisini yıkar."
+        },
+        {
+          "metin": "**Osteoklastogenez ve Eroziv Hasar:** RANKL ekspresyonunun artışı ve osteoklast aktivasyonu sonucu, eklem kıkırdağı ile kıkırdak-kemik bileşkesinde karakterize **marjinal erozyonlar** meydana gelir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Bulgular ve Artiküler Tutulum Özellikleri — Eklem Dağılımı ve Tutulum Paternleri",
+      "satirlar": [
+        {
+          "metin": "**Periferik ve Simetrik Poliartrit:** RA, karakterize olarak el ve ayakların küçük eklemlerini simetrik olarak tutan inflamatuar bir poliartrit tablosu çizer."
+        },
+        {
+          "metin": "**Predileksiyon Gösteren Eklemler:** Metakarpofalangeal (MCP), proksimal interfalangeal (PIP), el bilekleri ve metatarsofalangeal (MTP) eklemler en sık ve en erken etkilenen alanlardır. İlerleyen evrelerde diz, dirsek, omuz ve ayak bilekleri de tabloya eklenebilir."
+        },
+        {
+          "metin": "**Dışlanan Eklemler (Kritik Ayırıcı Özellik):** RA, tipik olarak ellerdeki **distal interfalangeal (DIP)** eklemleri, **1. karpometakarpal (1. CMC)** eklemi, sakroiliak eklemleri ve torakolomber omurgayı **etkilemez**. Bu tutulum paterni, Osteoartrit ve Spondiloartropatilerden ayrımda kilit rol oynar."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Sabah Tutukluğu ve İnflamatuar Semptomlar",
+      "satirlar": [
+        {
+          "metin": "İnflamatuar eksüdasyona bağlı olarak ortaya çıkan, **en az 1 saat (≥60 dakika)** süren ve gün içinde fiziksel aktivite ile kademeli olarak azalan **sabah tutukluğu** tipiktir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Servikal Omurga Tutulumu",
+      "satirlar": [
+        {
+          "metin": "Aksiyel omurgada etkilenen tek bölge **servikal omurgadır**. Odontoid çıkıntı çevresindeki sinovyal dokunun iltihabı ve transvers ligamentin gevşemesi sonucu **atlantoaksiyel (C1-C2) sublüksasyon** veya subaksiyel vertikal instabilite gelişebilir. Bu durum, ciddi nörolojik bası ve servikal miyelopati riski taşır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kronik İlerlemiş Eklem Deformiteleri",
+      "satirlar": [
+        {
+          "metin": "Tedavisiz veya dirençli olgularda gelişen kronik deformiteler şunlardır:"
+        },
+        {
+          "metin": "**Ulnar Deviasyon:** MCP eklemlerdeki kollateral ligamentlerin yıkımı sonucu parmakların ulnar tarafa kayması."
+        },
+        {
+          "metin": "**Kuğu Boynu (Swan-neck) Deformitesi:** PIP eklemde hiperekstansiyon ve DIP eklemde fleksiyon."
+        },
+        {
+          "metin": "**Düğme İliği (Boutonnière) Deformitesi:** PIP eklemde fleksiyon ve DIP eklemde hiperekstansiyon."
+        },
+        {
+          "metin": "**Z-Deformitesi:** Başparmakta MCP fleksiyonu ve IP hiperekstansiyonu."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Ekstra-artiküler ve Sistemik Tutulumlar",
+      "satirlar": [
+        {
+          "metin": "RA, vasküler yapılara ve iç organlara uzanabilen sistemik bir süreçtir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "kolonlar": [
+        "Organ Sistemi",
+        "Patolojik Tablo",
+        "Klinik ve Laboratuvar Bulguları"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "**Kardiyovasküler**",
+            "KAH, Perikardit, Kalp Yetmezliği",
+            "Hızlı ateroskleroz, Perikardiyal effüzyon, miyokardit"
+          ]
+        },
+        {
+          "hucreler": [
+            "**Solunum**",
+            "RA-İAH (UIP / NSIP), Plevral Effüzyon",
+            "Efor dispnesi, öksürük, Düşük glikozlu plevral sıvı (<30 mg/dL)"
+          ]
+        },
+        {
+          "hucreler": [
+            "**Hematolojik**",
+            "Felty Sendromu, LGL Lösemisi",
+            "RA + Nötropeni + Splenomegali, Klonal T-hücre proliferasyonu (\"Pseudo-Felty\")"
+          ]
+        },
+        {
+          "hucreler": [
+            "**Cilt / Vasküler**",
+            "Romatoid Nodül, Romatoid Vaskülit",
+            "Ekstansör yüzeyler, Palpabl purpura, tırnak yatağı infarktları, gangren"
+          ]
+        },
+        {
+          "hucreler": [
+            "**Oküler**",
+            "Keratokonjonktivitis Sikka, Sklerit",
+            "Göz kuruluğu, Skleromalazi perforans riski"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "satirlar": [
+        {
+          "metin": "**Kardiyovasküler Sistem:** Artmış sistemik inflamasyon yüküne bağlı olarak akselere koroner arter hastalığı ve miyokard enfarktüsü riski yaklaşık 2 kat artmıştır. Ayrıca perikardit, miyokardit ve diyastolik kalp yetmezliği görülebilir."
+        },
+        {
+          "metin": "**Solunum Sistemi:**"
+        },
+        {
+          "metin": "**İnterstisiyel Akciğer Hastalığı (RA-İAH):** En ciddi akciğer komplikasyonudur; High-Resolution CT (HRCT) incelemelerinde sıklıkla **UIP (Usual Interstitial Pneumonia)** veya **NSIP (Nonspecific Interstitial Pneumonia)** paternleri izlenir."
+        },
+        {
+          "metin": "**Plevral Tutulum:** Plevral sıvıda glikoz seviyesinin belirgin şekilde düşük olması (<30 mg/dL) ve yüksek LDH seviyeleri karakteristik özelliğidir."
+        },
+        {
+          "metin": "**Hematolojik Komplikasyonlar ve Özel Sendromlar:**"
+        },
+        {
+          "metin": "**Kronik Hastalık Anemisi:** IL-6 aracılı hepsidin artışına bağlı normositik/normokrom anemi sıktır."
+        },
+        {
+          "metin": "**Felty Sendromu:** Şiddetli, eroziv RA, **nötropeni (ANC <2000/microL)** ve **splenomegali** triadından oluşur."
+        },
+        {
+          "metin": "**Büyük Granüler Lenfosit (LGL) Lösemisi:** Klonal sitotoksik T hücre artışı ile gider; RA hastalarında LGL insidansı artmıştır (\"Pseudo-Felty\" tablosu)."
+        },
+        {
+          "metin": "**Malignite:** Süreğen B-hücre stimülasyonuna sekonder olarak Diffüz Büyük B-Hücreli Lenfoma riski 2 kat artmıştır."
+        },
+        {
+          "metin": "**Cilt ve Romatoid Vaskülit:** Seropozitif ve uzun süreli hastalarda ekstansör yüzeylerde **romatoid nodüller** gelişebilir. Şiddetli vakalarda küçük ve orta boy damarları tutan **romatoid vaskülit** (tırnak yatağı infarktları, gangren, mononöritis mültipleks) ortaya çıkabilir."
+        },
+        {
+          "metin": "**Oküler Bulgular:** En sık **keratokonjonktivitis sikka** (Sjögren sendromu ile ilişkili) izlenirken, en spesifik ve yıkıcı bulgu **sklerit** ve korneal erimedir (scleromalacia perforans)."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Serolojik ve Biyokimyasal Belirteçler (Biomarkers) — Otoantikorlar",
+      "satirlar": [
+        {
+          "metin": "**Romatoid Faktör (RF):** IgG'nin Fc parçasına karşı gelişen IgM yapısındaki antikordur. Duyarlılığı %70-80 olmakla birlikte özgüllüğü sınırlıdır. Yüksek titreler; ekstra-artiküler tutulum, nodül oluşumu ve agresif gidişat ile koreledir."
+        },
+        {
+          "metin": "**Anti-CCP (ACPA):** Sitrülinlenmiş peptidlere karşı gelişen antikorlardır. RA için özgüllüğü **%95-98** civarındadır. **Erken evrede pozitifleşmesi**, kemik erozyonlarının ve eroziv hastalığın gelişeceğine dair en güçlü prognostik göstergedir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Akut Faz Reaktanları ve Hastalık Aktivite Skorlaması",
+      "satirlar": [
+        {
+          "metin": "**CRP ve ESR:** Sistemik inflamasyon derecesini ve tedaviye yanıtı izlemede kullanılır."
+        },
+        {
+          "metin": "**DAS28, SDAI ve CDAI:** Şiş ve hassas eklem sayısı, hasta/hekim genel değerlendirmesi ve CRP/ESR parametrelerini birleştirerek klinikte **remisyon**, **düşük**, **orta** veya **yüksek hastalık aktivitesini** sayısal olarak belirleyen standart skorlama sistemleridir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Farmakoterapötik Yönetim ve Algoritma",
+      "satirlar": [
+        {
+          "metin": "RA yönetiminde temel ilke **\"Treat-to-Target\" (Hedefe Göre Tedavi)** yaklaşımıdır. Amaç, hedeflenen süre içerisinde (genellikle 3-6 ay) DAS28 veya SDAI skorlarına göre tam remisyon veya en azından düşük hastalık aktivitesi elde etmektir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Konvansiyonel Sentetik DMARD'lar (csDMARD)",
+      "satirlar": [
+        {
+          "metin": "**Metotreksat (MTX):** RA tedavisinin ilk basamak \"çapa ilacıdır\" (anchor drug)."
+        },
+        {
+          "metin": "Dozaj ve Uygulama: Haftalık 7.5-15 mg oral dozla başlanıp tolere edildikçe haftalık 20-25 mg'a yükseltilir."
+        },
+        {
+          "metin": "Gastrointestinal Toksisite ve Mukozit: Yan etkileri azaltmak için MTX verilmeyen günlerde **folik asit (haftalık 5 mg)** desteği zorunludur."
+        },
+        {
+          "metin": "Hepatotoksisite: Karaciğer transaminazları (AST/ALT) ve albümin seviyeleri periyodik olarak izlenir. AST/ALT üst sınırın 3 katını aşarsa ilaç kesilir."
+        },
+        {
+          "metin": "Akciğer Toksisitesi: Nadir fakat ciddi acil bir tablo olan **Metotreksat Pnömoniti** gelişebileceğinden solunum semptomları yakından takip edilir."
+        },
+        {
+          "metin": "**Sülfasalazin (SSZ):** Doz kademeli artırılarak 2-3 g/gün düzeyine çıkılır."
+        },
+        {
+          "metin": "**Leflunomid:** Dihidroorotat dehidrogenaz inhibitörüdür (20 mg/gün). Karaciğer toksisitesi, ishal ve hipertansiyon yapabilir."
+        },
+        {
+          "metin": "**Hidroksiklorokin (HCQ):** Hafif vakalarda tek başına veya kombinasyonlarda kullanılır. En önemli biyolojik riski **retinal birikim (retinopati)** olduğundan başlangıçta ve periyodik retinal oftalmolojik incelemeler gereklidir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Biyolojik DMARD'lar (bDMARD) ve Hedefe Yönelik Ajanlar (tsDMARD)",
+      "satirlar": [
+        {
+          "metin": "csDMARD tedavisine dirençli veya olumsuz prognostik faktörleri (yüksek Anti-CCP, erken erozyon, yüksek DAS28) olan hastalarda tedaviye eklenirler:"
+        },
+        {
+          "metin": "**TNF-alfa İnhibitörleri:** Adalimumab, Etanersept, İnfliksimab, Golimumab, Certolizumab pegol. Kritik Önlem: Tedavi öncesi gizli tüberküloz (PPD veya QuantiFERON) ve viral hepatit taraması zorunludur."
+        },
+        {
+          "metin": "**IL-6 Reseptör Antagonistleri:** Tocilizumab, Sarilumab."
+        },
+        {
+          "metin": "**B-Hücre Deplesyonu (Anti-CD20):** Rituximab. RF/ACPA pozitif ve TNF inhibitörlerine yanıtsız olgularda oldukça etkilidir."
+        },
+        {
+          "metin": "**T-Hücre Kostimülasyon Blokörü:** Abatacept (CTLA-4-Ig)."
+        },
+        {
+          "metin": "**JAK İnhibitörleri (tsDMARD):** Tofasitinib, Barisitinib, Upadasitinib. Hücre içi JAK-STAT yolağını hedefleyen oral sentetik ajanlardır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Glukokortikoidler ve Semptomatik Kontrol",
+      "satirlar": [
+        {
+          "metin": "DMARD'ların tam etkisi ortaya çıkana kadar (genellikle ilk 6-12 hafta) düşük doz oral prednizon (<10 mg/gün) **\"köprü tedavisi\"** olarak kullanılabilir."
+        },
+        {
+          "metin": "Uzun süreli yüksek doz kullanımdan, osteoporoz, hipertansiyon ve dislipidemi riskleri nedeniyle kaçınılmalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Özel Klinik Senaryolar ve Komplikasyon Yönetimi — Gebelik ve Laktasyon Dönemi",
+      "satirlar": [
+        {
+          "metin": "**Kontrendike İlaçlar:** Metotreksat teratojenik ve abortifasiyan etki gösterdiğinden gebelikten en az **3 ay önce** kesilmelidir. Leflunomid teratojeniktir; gebelik öncesi **kolestiramin yıkama protokolü** uygulanarak plazma seviyesi <0.02 mg/L altına düşürülmelidir."
+        },
+        {
+          "metin": "**Güvenli Seçenekler:** **Certolizumab pegol**, Fc parçası içermediği için plasentayı geçmez ve tüm gebelik boyunca güvenle kullanılabilir. Hidroksiklorokin, Sülfasalazin ve düşük doz glukokortikoidler gebelikte güvenli kabul edilen diğer seçeneklerdir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Dirençli Hastalık Yönetimi",
+      "satirlar": [
+        {
+          "metin": "İlk csDMARD (Metotreksat) ile hedefe ulaşılamazsa, diğer csDMARD'larla **üçlü kombinasyon** (MTX + SSZ + HCQ) yapılabilir veya bir **bDMARD / tsDMARD** tedaviye eklenir. Bir TNF inhibitörüne yanıtsızlık durumunda etki mekanizması farklı bir ajana (örneğin Rituximab, Tocilizumab veya JAKi) geçilmesi önerilir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "End-Stage RA ve Cerrahi Yaklaşımlar",
+      "satirlar": [
+        {
+          "metin": "Gelişmiş tıbbi tedavilere rağmen medikal olarak kontrol altına alınamayan, kalıcı eklem yıkımı, şiddetli ağrı ve fonksiyon kaybı olan vakalarda cerrahi seçenekler değerlendirilir:"
+        },
+        {
+          "metin": "**Erken Dönem:** Dirençli monartiküler inflamasyonu kontrol etmek için **sinovektomi**."
+        },
+        {
+          "metin": "**Geç Dönem:** Son evre yıkımda ağrıyı gidermek ve mobiliteyi sağlamak için **Total Kalça/Diz Artroplastisi** veya eklem artrodezi."
+        },
+        {
+          "metin": "**Cerrahi Sıralama İlkesi:** Üst ekstremite cerrahileri, koltuk değneği kullanım ihtiyacı nedeniyle genellikle alt ekstremite rekonstrüksiyonlarından önce planlanır."
+        }
+      ]
+    }
+  ]
+}

@@ -41,6 +41,22 @@
       ]
     },
     {
+      "id": "inflamatuar-artritler",
+      "baslik": "İnflamatuar Artritler",
+      "aciklama": "Romatoid artrit",
+      "emoji": "🦴",
+      "konular": [
+        {
+          "id": "romatoid-artrit",
+          "baslik": "Romatoid Artrit (RA)",
+          "rozetler": [
+            "YENİ"
+          ],
+          "hazir": true
+        }
+      ]
+    },
+    {
       "id": "bag-dokusu",
       "baslik": "Bağ Dokusu Hastalıkları",
       "aciklama": "Sistemik lupus eritematozus, Sjögren, sistemik skleroz",
