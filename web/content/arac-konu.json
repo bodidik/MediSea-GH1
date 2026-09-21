@@ -1104,6 +1104,23 @@
         "name": "Behçet — ICBD 2014",
         "eslesen": "Behçet"
       }
+    ],
+    "romatoloji/romatoid-artrit": [
+      {
+        "slug": "das28",
+        "name": "DAS28 (ESR/CRP)",
+        "eslesen": "DAS28"
+      },
+      {
+        "slug": "cdai",
+        "name": "CDAI",
+        "eslesen": "CDAI"
+      },
+      {
+        "slug": "sdai",
+        "name": "SDAI",
+        "eslesen": "SDAI"
+      }
     ]
   },
   "aracKonu": {
@@ -1897,13 +1914,34 @@
         "baslik": "Nöro-Behçet: Siklosporin Kontrendikasyonu ve Tedavi Algoritması",
         "eslesen": "Behçet"
       }
+    ],
+    "cdai": [
+      {
+        "yol": "romatoloji/romatoid-artrit",
+        "baslik": "Romatoid Artrit (RA)",
+        "eslesen": "CDAI"
+      }
+    ],
+    "das28": [
+      {
+        "yol": "romatoloji/romatoid-artrit",
+        "baslik": "Romatoid Artrit (RA)",
+        "eslesen": "DAS28"
+      }
+    ],
+    "sdai": [
+      {
+        "yol": "romatoloji/romatoid-artrit",
+        "baslik": "Romatoid Artrit (RA)",
+        "eslesen": "SDAI"
+      }
     ]
   },
   "olcum": {
     "konu": 503,
     "arac": 255,
-    "araciOlanKonu": 132,
-    "konusuOlanArac": 53,
-    "bag": 168
+    "araciOlanKonu": 133,
+    "konusuOlanArac": 56,
+    "bag": 171
   }
 }
