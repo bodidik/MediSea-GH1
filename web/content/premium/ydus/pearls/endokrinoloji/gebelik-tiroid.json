@@ -1,0 +1,147 @@
+{
+  "id": "pearl-endo-gebelik-tiroid-001",
+  "accessLevel": "premium",
+  "topic": "Gebelik ve Tiroid Hastalıkları",
+  "pearls": [
+    {
+      "id": "gt-inci-001",
+      "level": "Klinik",
+      "title": "Gebelikte Tiroid Fonksiyon Testlerinin Yorumlanması",
+      "content": "<p>Gebelikte östrojen etkisiyle artan TBG ve renal iyot klerensi nedeniyle gebe olmayan popülasyona ait TSH ve serbest T4 (sT4) referans aralıkları kullanılamaz. Mümkünse popülasyona ve trimestere özgü TSH değerleri esas alınmalı; bu değerlerin bulunmadığı durumlarda genel TSH üst sınırı **ilk trimesterde 2.5 mU/L, ikinci ve üçüncü trimesterde 3.0 mU/L** (ya da üst sınır 4.0 mU/L) kabul edilmelidir. sT4 immünoasay yöntemleri artan TBG’den etkilenebildiğinden, klinik şüphe durumunda **Total T4 ve Total T3** (gebe olmayan üst sınırının 1.5 katı alınarak) değerlendirilmelidir.</p>",
+      "trigger": "Tiroid Fonksiyon Testleri"
+    },
+    {
+      "id": "gt-inci-002",
+      "level": "Klinik",
+      "title": "hCG’nin Tirotropik Etkisi ve Fizyolojik TSH Baskılanması",
+      "content": "<p>hCG ile TSH glikoproteinlerinin paylaştığı alfa alt ünite homolojisi nedeniyle, hCG TSH reseptörlerini zayıf bir şekilde uyarır. 10–12. haftalarda hCG pikiyle birlikte tiroid hormon üretimi geçici olarak artar ve hipofizer negatif geribildirimle maternal serum TSH seviyeleri baskılanır. Sağlıklı gebelerin %10–20'sinde ilk trimesterde TSH &lt;0.1 mIU/L düzeyine gerileyebilir.</p>",
+      "trigger": "Gebelik Fizyolojisi"
+    },
+    {
+      "id": "gt-inci-003",
+      "level": "Klinik",
+      "title": "TBG Artışı ve Total Hormon Dinamikleri",
+      "content": "<p>Gebeliğin erken döneminde östrojen stimülasyonu ve hepatik sialilasyon sonucu TBG sentezi 2–3 katına çıkar ve 12–14. haftalarda plato çizer. Buna bağlı olarak Total T4 ve Total T3 konsantrasyonları gebelik öncesine göre yaklaşık %50 oranında artış gösterir.</p>",
+      "trigger": "Gebelik Fizyolojisi"
+    },
+    {
+      "id": "gt-inci-004",
+      "level": "Klinik",
+      "title": "Gebelikte İyot Gereksinimi ve Replasman Standartları",
+      "content": "<p>Artan glomerular filtrasyon hızı (GFR) nedeniyle renal iyot klerensinin artması ve fetal hormon sentezi nedeniyle günlük iyot gereksinimi artar. WHO ve TEMD, gebelikte günlük **250 µg iyot** alımını önermektedir. Türkiye gibi endemik iyot eksikliği/yetersizliği süren bölgelerde tüm gebelere diyetten bağımsız olarak günlük **100–150 µg ilave iyot desteği** (potasyum iyodür) verilmelidir.</p>",
+      "trigger": "İyot"
+    },
+    {
+      "id": "gt-inci-005",
+      "level": "Klinik",
+      "title": "Gestasyonel Geçici Tirotoksikoz (GTT) - Graves Ayırıcı Tanısı",
+      "content": "<p>GTT, hCG uyarısına bağlı fizyolojik ve kendini sınırlayan bir tablodur; sıklıkla hiperemezis gravidarum ile birliktedir. Graves hastalığının aksine **oftalmopati ve guatr bulunmaz, TRAb negatiftir ve sT3/sT4 oranı daha düşüktür**. GTT tablosunda olumsuz gebelik sonuçları tanımlanmamıştır ve **antitiroid ilaç (ATİ) kullanımı KESİNLİKLE ENDİKE DEĞİLDİR**.</p>",
+      "trigger": "Gestasyonel Tirotoksikoz"
+    },
+    {
+      "id": "gt-inci-006",
+      "level": "Klinik",
+      "title": "İlk Trimesterde Antitiroid İlaç Seçimi (PTU Tercihi)",
+      "content": "<p>Graves hipertiroidisinde organogenez dönemi olan ilk 6–12. haftalarda Metimazol (MMI) veya Karbimazol kullanımı; <em>aplasia cutis</em>, koanal atrezi, özofageal atrezi ve omfalosel gibi şiddetli **MMI embriyopatisi** ile ilişkilidir. Bu nedenle gebeliğin ilk trimesterinde öncelikli antitiroid ajan **Propiltiourasil (PTU)** olmalıdır.</p>",
+      "trigger": "Antitiroid İlaçlar"
+    },
+    {
+      "id": "gt-inci-007",
+      "level": "Klinik",
+      "title": "16. Gebelik Haftasından Sonra PTU’dan MMI’ye Geçiş",
+      "content": "<p>PTU, ilk trimesterde teratojenisite açısından daha güvenli olmasına karşın maternal fulminan karaciğer yetmezliği riski taşır. Organogenez tamamlandıktan sonra (16. gebelik haftasından itibaren) PTU kesilerek **1:20 doz oranı** (örn. 100 mg PTU = 5 mg MMI) ile MMI tedavisine geçilmelidir.</p>",
+      "trigger": "Antitiroid İlaçlar"
+    },
+    {
+      "id": "gt-inci-008",
+      "level": "Klinik",
+      "title": "Gebelikte Antitiroid Tedavi Hedefi",
+      "content": "<p>Fetal tiroid bezi, ATİ'lerin baskılayıcı etkilerine maternal tiroidden çok daha duyarlıdır. Anneyi tam ötiroid hale getirmek fetüste iatrojenik hipotiroidi ve fetal guatra yol açar. Tedavi hedefi, maternal serum **sT4 veya Total T4 düzeyini gebelik referans aralığının üst sınırında veya hafif üzerinde** tutmaktır; TSH baskılı kalmaya devam edebilir.</p>",
+      "trigger": "Antitiroid İlaçlar"
+    },
+    {
+      "id": "gt-inci-009",
+      "level": "Klinik",
+      "title": "Gebelikte \"Blok ve Replasman\" Tedavisinin Kontrendikasyonu",
+      "content": "<p>Antitiroid ilaç ile levotiroksinin birlikte verildiği \"blok ve replasman\" rejimi gebelikte **kesinlikle kontrendikedir**. Tiyonamidler plasentayı kolayca geçerken maternal T4 plasentayı çok az geçer; bu durum fetüsün yüksek doz ATİ'ye maruz kalarak ağır fetal hipotiroidi ve guatr geliştirmesine neden olur.</p>",
+      "trigger": "Antitiroid İlaçlar"
+    },
+    {
+      "id": "gt-inci-010",
+      "level": "Klinik",
+      "title": "TRAb Monitörizasyonu ve Fetal Hipertiroidi Takibi",
+      "content": "<p>IgG yapısındaki TRAb (veya TSI) plasentayı geçerek fetal tiroidi uyarabilir. Aktif veya geçirilmiş Graves öyküsü olan gebe kadınlarda TRAb gebeliğin başında ve 18–22. haftalarda (gerekirse 28–32. haftalarda) ölçülmelidir. Maternal TRAb düzeyinin normal üst sınırın **2.5 ila 3 katından fazla** olması durumunda fetüs, ultrasonografi ile fetal guatr, fetal taşikardi (&gt;160 atım/dk) ve büyüme kısıtlılığı açısından yakın takibe alınmalıdır.</p>",
+      "trigger": "TRAb ve Fetal Takip"
+    },
+    {
+      "id": "gt-inci-011",
+      "level": "Klinik",
+      "title": "Gebelikte Levotiroksin (LT4) Doz Artış Protokolü",
+      "content": "<p>Önceden bilinen hipotiroidisi olan kadınlarda gebelik saptandığı an artan metabolik ihtiyacı karşılamak için LT4 dozu derhal **%25–50 oranında artırılmalı veya haftalık doza 2 ilave günlük doz (haftada 9 doz)** eklenmelidir. TSH takibi gebeliğin ilk yarısında 4 haftada bir yapılmalıdır.</p>",
+      "trigger": "Hipotiroidi"
+    },
+    {
+      "id": "gt-inci-012",
+      "level": "Klinik",
+      "title": "Subklinik Hipotiroidide Tedavi Kararı",
+      "content": "<p>Gebelikte subklinik hipotiroidi (TSH yüksek, sT4 normal) yönetiminde **Anti-TPO durumu** belirleyicidir. Anti-TPO pozitif gebelerde TSH &gt;2.5 mU/L ise LT4 tedavisi başlanmalıdır. Anti-TPO negatif gebelerde ise TSH &gt;10 mU/L olmadıkça veya belirgin risk faktörleri bulunmadıkça rutin LT4 tedavisinin kanıtlanmış bir yararı gösterilmemiştir.</p>",
+      "trigger": "Hipotiroidi"
+    },
+    {
+      "id": "gt-inci-013",
+      "level": "Klinik",
+      "title": "İzole Hipotiroksinemi Yönetimi",
+      "content": "<p>Normal TSH zemininde sT4 düzeyinin gebelik referanslarının altında (2.5. persentil altı) olması ile karakterize izole hipotiroksinemide, rutin LT4 replasmanının obstetrik veya nörogelişimsel fayda sağladığı gösterilememiştir. Bu olgularda ilk adım LT4 başlamak değil, maternal **iyot durumunu değerlendirmek ve optimal iyot desteği** sağlamaktır.</p>",
+      "trigger": "Hipotiroidi"
+    },
+    {
+      "id": "gt-inci-014",
+      "level": "Klinik",
+      "title": "Gebelikte Nükleer Tıp İncelemelerinin Kontrendikasyonu",
+      "content": "<p>Radyoaktif iyot (I-131) ve I-123 uygulamaları fetal tiroid dokusunda irreversibl ablasyon ve teratojenik risk yarattığı için gebelikte **kesinlikle kontrendikedir**. Tanısal amaçlı zorunlu görüntüleme gerektiren nadir durumlarda yalnızca son derece kısıtlı endikasyonla Technetium-99m (99mTcO4) düşünülebilir.</p>",
+      "trigger": "Görüntüleme"
+    },
+    {
+      "id": "gt-inci-015",
+      "level": "Klinik",
+      "title": "Tiroid Nodülü ve İnce İğne Aspirasyon Biyopsisi (TİİAB)",
+      "content": "<p>Gebelikte saptanan tiroid nodüllerine biyopsi yaklaşımı gebe olmayan hastalarla aynıdır. TİİAB gebeliğin tüm trimesterlerinde **güvenle uygulanabilir**; gestasyonel dönem sitolojik tanısal doğruluğu etkilemez.</p>",
+      "trigger": "Nodül ve Kanser"
+    },
+    {
+      "id": "gt-inci-016",
+      "level": "Klinik",
+      "title": "Diferansiye Tiroid Kanseri (DTK) ve Cerrahi Zamanlaması",
+      "content": "<p>Gebelikte teşhis edilen papiller/foliküler tiroid kanserlerinin büyük çoğunluğu indolent seyreder ve maternal/fetal sürveyansı değiştirmez. Hızlı büyüme, agresif histoloji veya çevre doku invazyonu yoksa tiroidektomi güvenle **postpartum döneme ertelenebilir**. Cerrahi kaçınılmaz ise en güvenli dönem maternal anestezi ve preterm eylem riski en düşük olan **ikinci trimesterdir**.</p>",
+      "trigger": "Nodül ve Kanser"
+    },
+    {
+      "id": "gt-inci-017",
+      "level": "Klinik",
+      "title": "Postpartum Tiroidit (PPT) Yönetimi ve Ayırıcı Tanı",
+      "content": "<p>PPT, doğum sonrası ilk 1 yıl içinde gelişen ağrısız otoimmün tiroidittir ve geçici tirotoksikoz, geçici hipotiroidi ve ötiroidi fazlarından oluşan trifazik bir seyir izler. Tirotoksik fazda <em>de novo</em> hormon sentezi olmayıp foliküler yıkım gerçekleştiği için **antitiroid ilaçlar etkisizdir**. Semptomatik vakalarda laktasyonla uyumlu kısa süreli beta-bloker (propranolol) tercih edilmelidir.</p>",
+      "trigger": "Postpartum Tiroidit"
+    },
+    {
+      "id": "gt-inci-018",
+      "level": "Klinik",
+      "title": "Prekonseptiyonel Anti-TPO Pozitif Ötiroid Gebelerin Takipleri",
+      "content": "<p>Gebelik öncesinde Anti-TPO antikoru pozitif fakat ötiroid olan kadınlarda, gebeliğin artan metabolik yüküne bağlı olarak gebelik sırasında hipotiroidi gelişme riski %20–50 arasındadır. Bu hastaların TSH düzeyleri gebeliğin ilk 24 haftası boyunca **4–6 haftada bir** yakından izlenmelidir.</p>",
+      "trigger": "Hipotiroidi"
+    },
+    {
+      "id": "gt-inci-019",
+      "level": "Klinik",
+      "title": "Laktasyon Döneminde Antitiroid İlaç Güvenliği",
+      "content": "<p>Laktasyon döneminde antitiroid ilaç kullanımı güvenlidir. Anne sütüne son derece az miktarda geçen tiyonamid türevlerinden **MMI ≤20 mg/gün veya PTU ≤300 mg/gün** dozlarında kullanıldığında bebek tiroid fonksiyonlarında bozulma izlenmez.</p>",
+      "trigger": "Laktasyon"
+    },
+    {
+      "id": "gt-inci-020",
+      "level": "Klinik",
+      "title": "Post-RAI Gebelik Planlaması",
+      "content": "<p>Graves veya DTK nedeniyle Radyoaktif İyot (RAI) tedavisi alan kadınlarda, over radyasyon maruziyetini engellemek ve stabil bir ötiroid duruma ulaşılmasını teyit etmek amacıyla **gebelik en az 6 ay (tercihen 12 ay) ertelenmelidir**. Erkek hastalarda ise spermatogenez döngüsü nedeniyle RAI sonrası en az 3–4 ay gebelik planlanmamalıdır.</p>",
+      "trigger": "RAI Sonrası Gebelik"
+    }
+  ]
+}

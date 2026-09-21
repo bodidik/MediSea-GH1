@@ -1,0 +1,434 @@
+{
+  "id": "fc-endo-gt-001",
+  "accessLevel": "premium",
+  "topic": "Gebelik ve Tiroid Hastalıkları",
+  "description": "YDUS Endokrinoloji serisi: Gebelik ve laktasyonda tiroid — fizyoloji, iyot, GTT, Graves ve ATİ seçimi, hipotiroidi, fırtına ve postpartum tiroidit; 71 kartlık hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "gt-001",
+      "front": "Gebelikte tiroid stimüle edici hormon (TSH) ile insan koryonik gonadotropini (hCG) arasındaki yapısal benzerliğin nedeni nedir?",
+      "back": "Her iki glikoproteinin de özdeş α alt birimlerine sahip olması.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-002",
+      "front": "Gebeliğin ilk trimesterinde hCG seviyelerindeki artışın TSH konsantrasyonu üzerindeki net etkisi nedir?",
+      "back": "Hipofiz üzerinde negatif geri bildirim oluşturarak TSH üretimini azaltır.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-003",
+      "front": "Gebelikte serum tiroksin bağlayıcı globulin (TBG) seviyeleri hangi mekanizmayla 2-3 kat artar?",
+      "back": "Östrojen etkisiyle hepatik sentezin artması ve klerensin azalması.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-004",
+      "front": "Normal bir gebelikte maternal tiroid hacmi, üçüncü trimesterde birinci trimestere göre yüzde kaç oranında artış gösterir?",
+      "back": "≈30%",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-005",
+      "front": "Gebelikte maternal iyot havuzunun tükenmesine neden olan temel fizyolojik faktörler nelerdir?",
+      "back": "Fetal iyot kullanımı ve artan maternal renal iyot klerensi.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-006",
+      "front": "Dünya Sağlık Örgütü ve Amerikan Tiroid Birliği (ATA) gebe kadınlar için günlük ne kadar iyot alımı önermektedir?",
+      "back": "250 µg/gün",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-007",
+      "front": "Gestasyonel Geçici Tirotoksikoz (GTT) genellikle gebeliğin hangi haftalarında pik yapar?",
+      "back": "8-12. haftalar arasında.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-008",
+      "front": "Hiperemezis gravidarum vakalarının yaklaşık yüzde kaçında anormal tiroid fonksiyon testleri görülür?",
+      "back": "60%",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-009",
+      "front": "Gebelikte Graves hastalığı ile GTT ayrımında kullanılan en spesifik klinik bulgu nedir?",
+      "back": "Oftalmopati (Graves orbitopatisi).",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-010",
+      "front": "Maternal Graves hastalığında neonatal tirotoksikoz riskini öngörmek için TRAb (TSH reseptör antikoru) ölçümü hangi haftalarda tekrarlanmalıdır?",
+      "back": "18-22. haftalarda ve tekrar 28-32. haftalarda.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-011",
+      "front": "Neonatal hipertiroidizmin öngörülmesinde maternal TRAb seviyesinin hangi değerin üzerinde olması anlamlıdır?",
+      "back": "Normal üst sınırın 3 katından fazla olması.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-012",
+      "front": "Gebelikte hipertiroidizm tedavisinde ilk trimesterde tercih edilen antitiroid ilaç (ATİ) hangisidir?",
+      "back": "Propiltiyourasil (PTU).",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-013",
+      "front": "Metimazol (MMI) kullanımının ilk trimesterde kaçınılmasının temel nedeni nedir?",
+      "back": "Aplazi kutis ve \"MMI embriyopatisi\" (koanal/özofageal atrezi) riski.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-014",
+      "front": "Propiltiyourasilin (PTU) gebeliğin ikinci trimesterinden itibaren metimazol ile değiştirilmesinin ana nedeni nedir?",
+      "back": "PTU ile ilişkili nadir fakat ciddi hepatotoksisite riski.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-015",
+      "front": "Gebelikte hipertiroidi tedavisinde hedef serbest T4 seviyesi ne olmalıdır?",
+      "back": "Normal aralığın üst sınırında veya hemen üzerinde.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-016",
+      "front": "Antitiroid ilaç tedavisi alan gebe hastalarda tiroid fonksiyon testleri (TFT) hangi sıklıkla izlenmelidir?",
+      "back": "Başlangıçta 2-4 haftada bir, ötiroidizm sağlandıktan sonra 4-6 haftada bir.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-017",
+      "front": "Tiyonamidlerin nadir fakat ciddi bir yan etkisi olan agranülositoz kuşkusu durumunda hangi semptomlar sorgulanmalıdır?",
+      "back": "Ateş ve boğaz ağrısı.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-018",
+      "front": "Tiyonamid kullanımına bağlı gelişen \"antitiroid artrit sendromu\" durumunda klinik yaklaşım ne olmalıdır?",
+      "back": "İlacın derhal kesilmesi.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-019",
+      "front": "Gebelikte saptanan iyot eksikliği, ilk trimesterde fetusun nörolojik gelişimini neden doğrudan etkiler?",
+      "back": "Fetal tiroid bezi henüz gelişmediğinden fetus tamamen maternal T4 transferine bağımlıdır.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-020",
+      "front": "Aşırı iyot eksikliğinin gebelikte yol açtığı, zeka geriliği ve sağırlıkla karakterize tablo nedir?",
+      "back": "Kretenizm.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-021",
+      "front": "Gebelikte aşikâr hipotiroidizm tanısı için laboratuvar kriterleri nelerdir?",
+      "back": "Artmış TSH ve düşük serbest T4 seviyeleri.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-022",
+      "front": "Gebelikte subklinik hipotiroidizm tanımı nasıldır?",
+      "back": "Yüksek serum TSH konsantrasyonuna rağmen normal serbest T4 seviyesi.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-023",
+      "front": "ATA 2017 kılavuzuna göre, gebelikte subklinik hipotiroidi tedavisinde TPOAb pozitifliği durumunda TSH eşik değeri kaçtır?",
+      "back": "> 2.5 mIU/L.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-024",
+      "front": "Gebelikte levotiroksin (LT4) replasman tedavisi için tipik başlangıç dozu nedir?",
+      "back": "1-2 µg/kg/gün (veya yaklaşık 100-150 µg/gün).",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-025",
+      "front": "Hipotiroidi tanısı olan bir hastada gebelik teyit edildiğinde LT4 dozunda yapılması gereken ilk değişiklik nedir?",
+      "back": "Mevcut dozun hemen yaklaşık 30% (haftada iki ek doz) oranında artırılması.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-026",
+      "front": "Levotiroksin emilimini azaltabileceği için LT4 ile arasında en az 4 saat bırakılması gereken takviye nedir?",
+      "back": "Demir (veya kalsiyum) replasman tedavisi.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-027",
+      "front": "Kontrolsüz maternal hipertiroidizmin fetustaki en ciddi kardiyovasküler komplikasyonu nedir?",
+      "back": "Fetal hidrops ve kalp yetmezliği.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-034",
+      "front": "Postpartum tiroidit (PPT) gelişim riski, gebelik başında hangi antikorun pozitifliği ile doğrudan ilişkilidir?",
+      "back": "Tiroid peroksidaz antikoru (TPOAb).",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-035",
+      "front": "Postpartum tiroiditin klasik trifazik seyri hangi aşamalardan oluşur?",
+      "back": "Geçici tirotoksikoz, geçici hipotiroidizm ve sonrasında ötiroidizm.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-036",
+      "front": "Postpartum dönemde Graves hastalığı nüksü ile postpartum tiroidit ayrımını yapan en değerli test hangisidir?",
+      "back": "TRAb (veya TSI) ölçümü.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-037",
+      "front": "Postpartum tiroiditin tirotoksik fazında antitiroid ilaç (ATİ) kullanımının kontrendike olmasının nedeni nedir?",
+      "back": "Durumun hormon aşırı üretiminden değil, depolanmış hormonun sızıntısından kaynaklanması.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-038",
+      "front": "Aşikar hipotiroidizmin gebelik üzerindeki obstetrik komplikasyonları nelerdir?",
+      "back": "Preeklampsi, plasenta dekolmanı, prematüre doğum ve postpartum kanama.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-039",
+      "front": "Gebelikte tiroid fırtınasının en yaygın presipite edici (tetikleyici) faktörlerinden biri nedir?",
+      "back": "Doğum (eylem) veya cerrahi müdahale.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-040",
+      "front": "Tiroid fırtınası tedavisinde periferal T4 - T3 dönüşümünü bloke etme özelliği nedeniyle tercih edilen ATİ hangisidir?",
+      "back": "Propiltiyourasil (PTU).",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-041",
+      "front": "Tiroid fırtınası yönetiminde iyot tedavisi (Lugol solüsyonu), ATİ uygulamasından ne kadar süre sonra verilmelidir?",
+      "back": "İyodun hormon sentezi için substrat olarak kullanılmasını önlemek amacıyla ATİ'den en az 1 saat sonra.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-042",
+      "front": "Gebelikte saptanan subklinik hipertiroidizm vakalarında genel tedavi yaklaşımı nedir?",
+      "back": "Olumsuz gebelik sonuçlarıyla ilişkisi gösterilmediği için genellikle tedavi önerilmez.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-043",
+      "front": "Gebelikte radyoaktif iyot (RAI) tedavisi neden kesinlikle kontrendikedir?",
+      "back": "Fetal tiroid bezinin ablasyonuna ve kalıcı fetal hipotiroidizme yol açması.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-044",
+      "front": "Levotiroksin replasmanı alan gebe bir hastada ötiroidizm sağlandıktan sonra TSH takibi ne sıklıkla yapılmalıdır?",
+      "back": "20. haftaya kadar her 4 haftada bir ve 20-40. haftalar arasında en az bir kez.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-045",
+      "front": "Gebelik öncesi LT4 kullanan kadınlar için ideal prekonsepsiyonel TSH hedefi nedir?",
+      "back": "< 2.5 mIU/L.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-046",
+      "front": "Aspirinin gebelikteki tirotoksikoz semptomlarını kontrol etmede kullanılmamasının nedeni nedir?",
+      "back": "Protein bağlamayı bozarak serbest T4 ve T3 konsantrasyonlarını artırabilmesi.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-047",
+      "front": "Emziren annelerde postpartum tiroiditin tirotoksik semptomlarını kontrol etmek için hangi beta-bloker güvenle tercih edilebilir?",
+      "back": "Propranolol.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-048",
+      "front": "Atenololun emziren kadınlarda tercih edilmemesinin nedeni nedir?",
+      "back": "Anne sütünde birikerek yenidoğanda bradikardi ve solunum depresyonuna yol açabilmesi.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-049",
+      "front": "Burch-Wartofsky skoru neyi değerlendirmek için kullanılır?",
+      "back": "Tiroid fırtınasının olasılığını ve şiddetini.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-050",
+      "front": "Gebelik sırasında tiroid nodülü saptanan hastalarda ilk radyolojik değerlendirme yöntemi ne olmalıdır?",
+      "back": "Tiroid ultrasonografisi.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-051",
+      "front": "Gebelikte saptanan otonom bir nodülün malignite riski hakkında ne söylenebilir?",
+      "back": "Düşük TSH ile ilişkili otonom nodüllerin malignite riski çok düşüktür.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-052",
+      "front": "Graves hastası bir kadının radyoaktif iyot tedavisinden sonra gebe kalmak için ne kadar beklemesi önerilir?",
+      "back": "En az 6 ay.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-056",
+      "front": "Hashimoto tiroiditi tanısında en hassas ve özgül serolojik belirteçler hangileridir?",
+      "back": "TPOAb ve TgAb (Antitiroglobulin antikoru).",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-057",
+      "front": "Gebelikte \"İzole Maternal Hipotiroksinemi\" tanısı nasıl konur?",
+      "back": "Normal TSH seviyesine rağmen serbest T4 seviyesinin alt 2.5 - 5. persentilde olması.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-058",
+      "front": "Gebelikte aşikâr hipertiroidizmin maternal komplikasyonları arasında hangisi en acildir?",
+      "back": "Tiroid fırtınası.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-059",
+      "front": "Tiroid folikül hücrelerinde iyodun tiroglobulindeki tirozin kalıntılarına bağlanmasını sağlayan enzim hangisidir?",
+      "back": "Tiroid peroksidaz (TPO).",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-060",
+      "front": "Tiyonamidler tiroid hormonu sentezini hangi aşamada inhibe eder?",
+      "back": "İyodun tiroglobuline bağlanması (organifikasyon) aşamasında.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-061",
+      "front": "Gebelikte serbest T4 ölçümlerinin trimestere özgü referans aralıklarla değerlendirilmesinin temel nedeni nedir?",
+      "back": "Artan TBG ve azalan albümin seviyelerinin standart ölçüm yöntemlerini etkilemesi.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-062",
+      "front": "Hangi maternal antikorlar plasentayı geçerek fetusta geçici hipotiroidizme yol açabilir?",
+      "back": "TSH reseptör bloke edici antikorlar (TBAb).",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-063",
+      "front": "Maternal Graves hastalığında neonatal hipertiroidizmin geç ortaya çıkmasının (doğumdan birkaç gün sonra) nedeni ne olabilir?",
+      "back": "Maternal antitiroid ilaçların bebeğin sisteminden temizlenmesinin zaman alması.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-064",
+      "front": "Gebelikte kolestiraminin tiroid fırtınası tedavisinde kullanılma amacı nedir?",
+      "back": "Tiroid hormonlarının enterohepatik geri emilimini azaltmak.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-065",
+      "front": "Propiltiyourasil (PTU) ile ilişkili agranülositoz riskinin doz bağımlı olup olmadığı hakkında ne söylenebilir?",
+      "back": "PTU için agranülositoz riski dozdan bağımsızdır (idiyosinkratiktir).",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-066",
+      "front": "Gebelikte saptanan tiroid nodüllerinde ince iğne aspirasyon biyopsisi (İİAB) endikasyonları nasıldır?",
+      "back": "Gebe olmayan yetişkinlerle aynıdır (şüpheli ultrason bulguları ve boyut kriterleri).",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-067",
+      "front": "Primer hipotiroidi tedavisinde hedef TSH düzeyine ulaşıldıktan sonra doz değişikliği sonrası TSH ölçümü ne zaman yapılmalıdır?",
+      "back": "TSH yanıtı yavaş olduğu için en erken 4-6 hafta sonra.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-068",
+      "front": "Gebelikte subklinik hipotiroidi tedavisinde ACOG (Amerikan Kadın Doğumcular Koleji) yaklaşımı nedir?",
+      "back": "Tedavinin çocuk nörolojik gelişimi üzerinde yararı gösterilmediği için rutin tedaviyi önermez.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-069",
+      "front": "Doğum sonrası levotiroksin dozu, gebelik öncesi tiroid hastalığı olan kadınlarda nasıl ayarlanmalıdır?",
+      "back": "Hemen gebelik öncesi idame dozuna geri dönülmelidir.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-070",
+      "front": "Fetal tiroid bezi gebeliğin kaçıncı haftasında iyot tutmaya ve hormon üretmeye başlar?",
+      "back": "Yaklaşık 10-12. haftalarda.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-071",
+      "front": "Gebelikte hipertiroidizm nedeniyle cerrahi (tirodektomi) gerekiyorsa en güvenli zaman dilimi hangisidir?",
+      "back": "İkinci trimester.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-072",
+      "front": "Gebelikte tiroid fonksiyonlarını etkileyen ana fizyolojik değişiklikler nelerdir?",
+      "back": "TBG artışı, hCG'nin tiroidi uyarması ve artan renal iyot atılımı.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-073",
+      "front": "Graves oftalmopatisinin karakteristik bulguları nelerdir?",
+      "back": "Ekzoftalmi (proptozis), periorbital ödem ve ekstraoküler kaslarda genişleme.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-074",
+      "front": "Maternal hipertiroidizmde fetal guatrın en yaygın nedeni nedir?",
+      "back": "Maternal antitiroid ilaçların plasentayı geçerek fetal tiroidi baskılaması.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-075",
+      "front": "Gebelikte subklinik hipertiroidizm ile aşikâr hipertiroidizm arasındaki temel laboratuvar farkı nedir?",
+      "back": "Subklinik formda serbest T4 normaldir; aşikâr formda yüksektir.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-076",
+      "front": "Tiroid fırtınası skoru 45 ve üzeri olan bir hastada tanı nedir?",
+      "back": "Kesin tiroid fırtınası.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-077",
+      "front": "Gebelikte TSH için genel olarak kabul edilen üst referans limiti kaçtır?",
+      "back": "4.0 mIU/L (popülasyon spesifik aralık yoksa).",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-078",
+      "front": "TPO antikoru pozitif olan ötiroid gebe kadınlarda TSH takibi neden önemlidir?",
+      "back": "Gebelik ilerledikçe hipotiroidi geliştirme risklerinin 2-3 kat daha yüksek olması.",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-079",
+      "front": "Gebelikte tirotoksikoz varlığında radyonüklid tutulum testi yerine hangi alternatif görüntüleme yöntemi kullanılabilir?",
+      "back": "Renkli Doppler ultrasonografi (vaskülarite artışını göstermek için).",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    },
+    {
+      "id": "gt-080",
+      "front": "Primer hipotiroidizmli bir kadında gebelikte tiroksin ihtiyacı ortalama yüzde kaç artar?",
+      "back": "30-50%",
+      "tag": "Endokrinoloji / Gebelik ve Tiroid"
+    }
+  ]
+}
