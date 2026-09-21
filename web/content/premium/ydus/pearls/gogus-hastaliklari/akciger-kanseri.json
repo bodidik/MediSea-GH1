@@ -1,0 +1,147 @@
+{
+  "id": "pearl-gogu-akciger-kanseri-001",
+  "accessLevel": "premium",
+  "topic": "Akciğer Kanseri — Epidemiyoloji, Tanı ve Multidisipliner Yönetim",
+  "pearls": [
+    {
+      "id": "p-gog-akc-001",
+      "level": "Klinik",
+      "title": "Akciğer Kanseri Taraması (LDCT Criteria & NLST/NELSON)",
+      "content": "<p>USPSTF ve güncel uluslararası kılavuzlara göre yıllık Düşük Doz Bilgisayarlı Tomografi (LDCT) ile tarama; 50-80 yaş aralığında, en az 20 paket-yıl sigara öyküsü olan ve halen içen ya da son 15 yıl içinde bırakmış asemptomatik yüksek riskli bireylere önerilir. NLST çalışması LDCT'nin akciğer kanserine bağlı mortalitede %20, tüm nedenli mortalitede ise %6.7 azalma sağladığını göstermiştir.</p>",
+      "trigger": "Tarama"
+    },
+    {
+      "id": "p-gog-akc-002",
+      "level": "Klinik",
+      "title": "Reseke Edilmiş EGFR Mutasyonlu KHDAK'ta Adjuvan Tedavi (ADAURA)",
+      "content": "<p>Tam rezeksiyon uygulanmış Evre IB-IIIA sensitizan EGFR mutasyonu (Ekzon 19 del veya L858R) taşıyan KHDAK hastalarında, adjuvan platin bazlı kemoterapi alıp almadığına bakılmaksızın 3 yıla kadar verilen adjuvan osimertinib, hastalıksız sağkalımı (DFS HR: 0.27) ve genel sağkalımı (OS HR: 0.49, CNS DFS HR: 0.24) anlamlı derecede iyileştirir.</p>",
+      "trigger": "Adjuvan Tedavi"
+    },
+    {
+      "id": "p-gog-akc-003",
+      "level": "Klinik",
+      "title": "Reseke Edilmiş ALK Pozitif KHDAK'ta Adjuvan Tedavi (ALINA)",
+      "content": "<p>Komple rezeke edilmiş Evre IB-IIIA ALK rearanjmanı pozitif KHDAK hastalarında, 2 yıl süreyle verilen adjuvan alectinib, platin bazlı kemoterapiye kıyasla hastalıksız sağkalımda (DFS HR: 0.24) ve santral sinir sistemi nüks riskinde (CNS DFS HR: 0.22) belirgin klinik üstünlük sağlamıştır.</p>",
+      "trigger": "Adjuvan Tedavi"
+    },
+    {
+      "id": "p-gog-akc-004",
+      "level": "Klinik",
+      "title": "Anrezektabl Evre III KHDAK'ta İdame İmmünoterapi (PACIFIC Rejimi)",
+      "content": "<p>Eşzamanlı platin bazlı kemoradyoterapi (CRT) sonrası progresyon gelişmeyen anrezektabl Evre III KHDAK hastalarında, 12 ay süreyle verilen anti-PD-L1 antikor durvalumab konsolidasyonu 5 yıllık genel sağkalımı %42.9'a çıkarmış (OS HR: 0.68, PFS HR: 0.51-0.55) ve standart bakım haline gelmiştir. Post-hoc analizlerde bu yararın PD-L1 &lt; %1 olan olgularda kısıtlı olabileceği gösterilmiştir.</p>",
+      "trigger": "Evre III KHDAK"
+    },
+    {
+      "id": "p-gog-akc-005",
+      "level": "Klinik",
+      "title": "Evre III EGFR Mutasyonlu Anrezektabl KHDAK (LAURA)",
+      "content": "<p>Eşzamanlı CRT sonrasında progresyon göstermeyen, EGFR mutasyonlu (Ekzon 19 del veya L858R) anrezektabl Evre III KHDAK hastalarında osimertinib idamesi, plaseboya kıyasla progresyonsuz sağkalımda dramatik bir uzama sağlamıştır (mPFS: 39.1 ay vs 5.6 ay, HR: 0.16).</p>",
+      "trigger": "Evre III KHDAK"
+    },
+    {
+      "id": "p-gog-akc-006",
+      "level": "Klinik",
+      "title": "Resektabl KHDAK'ta Perioperatif ve Neoadjuvan İmmünoterapi (CheckMate 816, KEYNOTE-671, AEGEAN, CheckMate 77T)",
+      "content": "<p>Sürücü mutasyon taşımayan resekte edilebilir Evre IB-III KHDAK olgularında platin bazlı neoadjuvan kemoterapiye nivolumab, pembrolizumab veya durvalumab eklenmesi patolojik tam yanıt (pCR) oranlarını %17-25 seviyelerine çıkarmakta ve olaysız sağkalımı (EFS) anlamlı derecede uzatmaktadır.</p>",
+      "trigger": "Perioperatif İmmünoterapi"
+    },
+    {
+      "id": "p-gog-akc-007",
+      "level": "Klinik",
+      "title": "İleri Evre EGFR Mutasyonlu KHDAK Birinci Basamak Tedavisi (FLAURA2 & MARIPOSA)",
+      "content": "<p>EGFR Ekzon 19 del veya L858R mutant metastatik KHDAK birinci basamak tedavisinde tek ajan osimertinib temel seçenek olmakla birlikte; osimertinib + kemoterapi (FLAURA2) veya EGFR-MET bispesifik antikoru amivantamab + lazertinib (MARIPOSA) kombinasyonları, tek ajan osimertinibe kıyasla progresyonsuz sağkalımı anlamlı olarak uzatmaktadır (mPFS: 23.7 ay vs 16.6 ay, HR: 0.70).</p>",
+      "trigger": "EGFR Mutasyonu"
+    },
+    {
+      "id": "p-gog-akc-008",
+      "level": "Klinik",
+      "title": "EGFR TKI Edinsel Direnç Mekanizması ve T790M Tespiti (AURA3)",
+      "content": "<p>Birinci veya ikinci kuşak EGFR TKI (gefitinib, erlotinib, afatinib) tedavisi altında progresyon gelişen olguların yaklaşık %50-60'ında edinsel dirençten Ekzon 20 T790M mutasyonu sorumludur. Doku veya likit biyopsi (cfDNA) ile T790M saptanan hastalarda 2. basamak osimertinib tedavisi kemoterapiye üstündür (mPFS: 10.1 ay vs 4.4 ay, HR: 0.30).</p>",
+      "trigger": "EGFR Mutasyonu"
+    },
+    {
+      "id": "p-gog-akc-009",
+      "level": "Klinik",
+      "title": "Sürücü Mutasyonsuz Metastatik KHDAK'ta Birinci Basamak İmmünoterapi (KEYNOTE-189/407, IMpower110)",
+      "content": "<p>Sürücü mutasyonu olmayan metastatik KHDAK'ta, PD-L1 TPS ≥ %50 olan olgularda tek ajan pembrolizumab, atezolizumab veya cemiplimab monoterapisi birinci basamak standarttır. PD-L1 &lt; %50 olan veya yüksek tümör yükü bulunan olgularda ise platin bazlı ikili kemoterapiye pembrolizumab eklenmesi önerilir.</p>",
+      "trigger": "İmmünoterapi"
+    },
+    {
+      "id": "p-gog-akc-010",
+      "level": "Klinik",
+      "title": "Metastatik KHDAK'ta Çift İmmün Kontrol Noktası Blokajı (CheckMate 9LA & POSEIDON)",
+      "content": "<p>Sürücü mutasyonu bulunmayan ileri evre KHDAK hastalarında, PD-L1 ekspresyon düzeyinden bağımsız olarak nivolumab + ipilimumab + 2 siklus kemoterapi (CheckMate 9LA) veya tremelimumab + durvalumab + kemoterapi (POSEIDON) kombinasyonları birinci basamakta etkinlik göstererek onay almıştır.</p>",
+      "trigger": "İmmünoterapi"
+    },
+    {
+      "id": "p-gog-akc-011",
+      "level": "Klinik",
+      "title": "Sınırlı Evre KHAK (LS-SCLC) İdame İmmünoterapisi (ADRIATIC)",
+      "content": "<p>Eşzamanlı kemoradyoterapi sonrası progresyon göstermeyen sınırlı evre küçük hücreli akciğer kanseri (LS-SCLC) hastalarında 2 yıla kadar durvalumab konsolidasyonu, medyan genel sağkalımı 33.4 aydan 55.9 aya yükselterek (OS HR: 0.73, PFS: 16.6 ay vs 9.2 ay) standart tedaviye girmiştir.</p>",
+      "trigger": "Küçük Hücreli Akciğer Kanseri"
+    },
+    {
+      "id": "p-gog-akc-012",
+      "level": "Klinik",
+      "title": "Yaygın Evre KHAK (ES-SCLC) Birinci Basamak Tedavisi (IMpower133 & CASPIAN)",
+      "content": "<p>Yaygın evre KHAK (ES-SCLC) birinci basamak tedavisinde etoposid + platin (karboplatin/sisplatin) kemoterapisine anti-PD-L1 ajanlarının (atezolizumab veya durvalumab) eklenmesi ve ardından idame tedaviye geçilmesi genel sağkalımda anlamlı uzama sağlar (mOS: ~12.3-13.0 ay vs 10.3 ay).</p>",
+      "trigger": "Küçük Hücreli Akciğer Kanseri"
+    },
+    {
+      "id": "p-gog-akc-013",
+      "level": "Klinik",
+      "title": "Relapte KHAK'ta DLL3 Hedefli BiTE Tedavisi (DeLLphi-301)",
+      "content": "<p>En az iki basamak sistemik tedavi almış nüks/refrakter KHAK hastalarında, Delta-like ligand 3 (DLL3) hedefli T-hücre bağlayıcı bispesifik antikor (BiTE) olan tarlatamab, %40 objektif yanıt oranı (ORR) ve 14.3 ay medyan genel sağkalım sunarak onay almıştır.</p>",
+      "trigger": "Küçük Hücreli Akciğer Kanseri"
+    },
+    {
+      "id": "p-gog-akc-014",
+      "level": "Klinik",
+      "title": "KRAS G12C Mutasyonlu KHDAK ve Kovalent İnhibitörler",
+      "content": "<p>Adenokarsinomlarda sık görülen onkojenik sürücülerden KRAS G12C varyantında, önceden sistemik tedavi (platin bazlı kemoterapi/immünoterapi) almış ileri evre olgularda kovalent KRAS G12C inhibitörleri sotorasib ve adagrasib hedefe yönelik seçeneklerdir.</p>",
+      "trigger": "KRAS G12C"
+    },
+    {
+      "id": "p-gog-akc-015",
+      "level": "Klinik",
+      "title": "MET Ekzon 14 Skipping Mutasyonu ve Sarkomatoid Histoloji",
+      "content": "<p>MET ekzon 14 skipping mutasyonları akciğer adenokarsinomlarının yaklaşık %3'ünde, sarkomatoid KHDAK olgularının ise %20'sine varan kısmında izlenir. Oral selektif MET inhibitörleri capmatinib ve tepotinib, yüksek yanıt oranları ile (tedavi almamış olgularda ORR %68) birinci basamak hedefe yönelik tedavi seçeneğidir.</p>",
+      "trigger": "MET Ekzon 14"
+    },
+    {
+      "id": "p-gog-akc-016",
+      "level": "Klinik",
+      "title": "EGFR Ekzon 20 İnsersiyon Mutasyonlarında Amivantamab",
+      "content": "<p>Klasik EGFR TKI'larına dirençli olan EGFR Ekzon 20 insersiyon mutasyonu taşıyan ileri evre KHDAK hastalarında, EGFR-MET bispesifik antikoru amivantamab'ın platin bazlı kemoterapi ile kombinasyonu birinci basamakta onaylıdır.</p>",
+      "trigger": "EGFR Mutasyonu"
+    },
+    {
+      "id": "p-gog-akc-017",
+      "level": "Klinik",
+      "title": "ALK Rearanjmanlı KHDAK ve İleri Kuşak TKI'lar (CROWN & ALEX)",
+      "content": "<p>ALK pozitif ileri evre KHDAK hastalarında birinci basamakta alectinib, brigatinib veya lorlatinib tercih edilir. İleri kuşak ALK TKI'ları crizotinibe kıyasla belirgin olarak yüksek santral sinir sistemi (SSS) penetrasyonu ve daha uzun progresyonsuz sağkalım sunar.</p>",
+      "trigger": "ALK Rearanjmanı"
+    },
+    {
+      "id": "p-gog-akc-018",
+      "level": "Klinik",
+      "title": "ROS1 Rearanjmanı ve Yeni Kuşak TKI'lar",
+      "content": "<p>ROS1 rearanjmanlı ileri evre KHDAK olgularında (genellikle genç, sigara içmemiş adenokarsinom hastaları) birinci basamakta yüksek SSS etkinliği olan yeni kuşak ROS1 TKI'ları entrectinib, repotrectinib veya taletrectinib tercih edilmektedir.</p>",
+      "trigger": "ROS1 Rearanjmanı"
+    },
+    {
+      "id": "p-gog-akc-019",
+      "level": "Klinik",
+      "title": "BRAF V600E Mutasyonlu KHDAK'ta Çift MAPK Blokajı",
+      "content": "<p>BRAF V600E mutasyonu taşıyan (KHDAK olgularının %2-3'ü) metastatik olgularda, tek ajan BRAF inhibitörüne kıyasla BRAF inhibitörü (dabrafenib) ile MEK inhibitörünün (trametinib) kombine kullanımı sinerjistik etki göstererek birinci ve sonraki basamaklarda standart hedefe yönelik rejimdir.</p>",
+      "trigger": "BRAF V600E"
+    },
+    {
+      "id": "p-gog-akc-020",
+      "level": "Klinik",
+      "title": "KHAK'ta Profilaktik Kraniyal Işınlama (PCI) ve MRG İzlemi",
+      "content": "<p>Sınırlı evre KHAK'ta (LS-SCLC) kemoradyoterapiye yanıt veren olgularda PCI beyin metastazı riskini ve mortaliteyi azaltırken; yaygın evre KHAK'ta (ES-SCLC) ilk basamak kemoimmünoterapi sonrası rutin PCI yerine düzenli kraniyal MRG taramaları ile izlem ön plana çıkmaktadır.</p>",
+      "trigger": "Küçük Hücreli Akciğer Kanseri"
+    }
+  ]
+}
