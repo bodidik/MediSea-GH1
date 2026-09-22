@@ -7150,17 +7150,7 @@
    "baslik": "CISNE Risk İndeksi ve Solid Tümörlerde Febril Nötropeni Yönetimi"
   }
  ],
- "onkoloji/jinekolojik-kanserler": [
-  {
-   "brans": "onkoloji",
-   "slug": "onkolojik-aciller",
-   "baslik": "Onkolojik Aciller"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ana-sayfa",
-   "baslik": "Pankreas Kanseri"
-  },
+ "onkoloji/hepatosellular-karsinom-kapsamli-klinik-rehber": [
   {
    "brans": "onkoloji",
    "slug": "pankreas-kanseri-neden-ilaç-vs",
@@ -7170,6 +7160,38 @@
    "brans": "onkoloji",
    "slug": "tumor-lizis-sendromu-kapsamli",
    "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "akciger-kanseri-ana-sayfa",
+   "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "febril-notropeni-konu",
+   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
+  }
+ ],
+ "onkoloji/jinekolojik-kanserler": [
+  {
+   "brans": "onkoloji",
+   "slug": "febril-notropeni-konu",
+   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "karaciger-kanserleri",
+   "baslik": "Karaciğer Kanserleri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "onkolojik-aciller",
+   "baslik": "Onkolojik Aciller"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-ana-sayfa",
+   "baslik": "Pankreas Kanseri"
   }
  ],
  "onkoloji/kanser-genel-prensipler": [
@@ -7228,31 +7250,26 @@
  "onkoloji/meme-kanseri": [
   {
    "brans": "onkoloji",
+   "slug": "akciger-kanseri-ana-sayfa",
+   "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
+  },
+  {
+   "brans": "onkoloji",
    "slug": "febril-notropeni-konu",
    "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
   },
   {
    "brans": "onkoloji",
+   "slug": "karaciger-kanserleri",
+   "baslik": "Karaciğer Kanserleri"
+  },
+  {
+   "brans": "onkoloji",
    "slug": "onkolojik-aciller",
    "baslik": "Onkolojik Aciller"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ana-sayfa",
-   "baslik": "Pankreas Kanseri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-neden-ilaç-vs",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
   }
  ],
  "onkoloji/mesane-kanseri": [
-  {
-   "brans": "onkoloji",
-   "slug": "onkolojik-aciller",
-   "baslik": "Onkolojik Aciller"
-  },
   {
    "brans": "onkoloji",
    "slug": "pankreas-kanseri-ana-sayfa",
@@ -7267,14 +7284,14 @@
    "brans": "onkoloji",
    "slug": "tumor-lizis-sendromu-kapsamli",
    "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
-  }
- ],
- "onkoloji/onkolojik-aciller": [
+  },
   {
    "brans": "onkoloji",
    "slug": "akciger-kanseri-ana-sayfa",
    "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
-  },
+  }
+ ],
+ "onkoloji/onkolojik-aciller": [
   {
    "brans": "onkoloji",
    "slug": "pankreas-kanseri-ana-sayfa",
@@ -7284,6 +7301,16 @@
    "brans": "onkoloji",
    "slug": "pankreas-kanseri-neden-ilaç-vs",
    "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "akciger-kanseri-ana-sayfa",
+   "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "karaciger-kanserleri",
+   "baslik": "Karaciğer Kanserleri"
   }
  ],
  "onkoloji/pankreas-kanseri-ana-sayfa": [
@@ -7454,11 +7481,6 @@
  "onkoloji/prostat-kanseri": [
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-neden-ilaç-vs",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
-  },
-  {
-   "brans": "onkoloji",
    "slug": "tumor-lizis-sendromu-kapsamli",
    "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
   },
@@ -7471,9 +7493,19 @@
    "brans": "onkoloji",
    "slug": "febril-notropeni-konu",
    "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "karaciger-kanserleri",
+   "baslik": "Karaciğer Kanserleri"
   }
  ],
  "onkoloji/testis-kanseri": [
+  {
+   "brans": "onkoloji",
+   "slug": "onkolojik-aciller",
+   "baslik": "Onkolojik Aciller"
+  },
   {
    "brans": "onkoloji",
    "slug": "pankreas-kanseri-ana-sayfa",
@@ -7488,11 +7520,6 @@
    "brans": "onkoloji",
    "slug": "tumor-lizis-sendromu-kapsamli",
    "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "akciger-kanseri-ana-sayfa",
-   "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
   }
  ],
  "onkoloji/tls-cairo-bishop-howard-guncellemesi": [
@@ -7546,23 +7573,23 @@
  "onkoloji/ust-gis-kanserleri": [
   {
    "brans": "onkoloji",
-   "slug": "onkolojik-aciller",
-   "baslik": "Onkolojik Aciller"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ana-sayfa",
-   "baslik": "Pankreas Kanseri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-neden-ilaç-vs",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
-  },
-  {
-   "brans": "onkoloji",
    "slug": "tumor-lizis-sendromu-kapsamli",
    "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "akciger-kanseri-ana-sayfa",
+   "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "febril-notropeni-konu",
+   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "karaciger-kanserleri",
+   "baslik": "Karaciğer Kanserleri"
   }
  ],
  "palyatif/oih-ve-tolerans-ayirici-tani": [

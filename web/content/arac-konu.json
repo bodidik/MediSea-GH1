@@ -1042,6 +1042,13 @@
         "eslesen": "MASCC Risk İndeksi"
       }
     ],
+    "onkoloji/hepatosellular-karsinom-kapsamli-klinik-rehber": [
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh Sınıflaması"
+      }
+    ],
     "onkoloji/karaciger-kanserleri": [
       {
         "slug": "child-pugh",
@@ -1476,9 +1483,9 @@
         "eslesen": "Child-Pugh"
       },
       {
-        "yol": "onkoloji/karaciger-kanserleri",
-        "baslik": "Karaciğer Kanserleri",
-        "eslesen": "Child-Pugh"
+        "yol": "onkoloji/hepatosellular-karsinom-kapsamli-klinik-rehber",
+        "baslik": "Hepatosellüler Karsinom (HCC): Etiyoloji, Tanı, Evreleme ve Tedavi",
+        "eslesen": "Child-Pugh Sınıflaması"
       },
       {
         "yol": "enfeksiyon/dalbavansin-derleme",
@@ -1496,8 +1503,8 @@
         "eslesen": "Child-Pugh"
       },
       {
-        "yol": "enfeksiyon/tigesiklin-derleme",
-        "baslik": "Tigesiklin (Tigecycline): İleri Düzey Derleme",
+        "yol": "onkoloji/karaciger-kanserleri",
+        "baslik": "Karaciğer Kanserleri",
         "eslesen": "Child-Pugh"
       }
     ],
@@ -1970,10 +1977,10 @@
     ]
   },
   "olcum": {
-    "konu": 506,
+    "konu": 507,
     "arac": 255,
-    "araciOlanKonu": 134,
+    "araciOlanKonu": 135,
     "konusuOlanArac": 56,
-    "bag": 174
+    "bag": 175
   }
 }
