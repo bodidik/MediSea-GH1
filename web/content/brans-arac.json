@@ -721,6 +721,16 @@
     "slug": "who-kanama",
     "name": "WHO Kanama Ölçeği",
     "icon": "🩸"
+   },
+   {
+    "slug": "4t-hit",
+    "name": "4T Skoru — HIT",
+    "icon": "🩸"
+   },
+   {
+    "slug": "hep-skoru",
+    "name": "HEP Skoru — HIT",
+    "icon": "🩸"
    }
   ]
  },

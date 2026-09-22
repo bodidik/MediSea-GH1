@@ -395,6 +395,8 @@ const TOOLS_DATABASE = [
       { slug: "trombosit-cci", name: "Trombosit Transfüzyonu CCI", desc: "Düzeltilmiş sayım artışı — trombosit transfüzyonuna refrakterlik" },
       { slug: "demir-parametreleri", name: "Demir Parametreleri", desc: "TSAT ve ferritin — genel, kalp yetmezliği, KBH ve inflamasyon bağlamında" },
       { slug: "who-kanama", name: "WHO Kanama Ölçeği", desc: "Trombositopenide kanama derecesi 0–4 — en ağır bulgu belirler" },
+      { slug: "4t-hit", name: "4T Skoru — HIT", desc: "Heparine bağlı trombositopeni klinik olasılık skoru (4 kriter, 0–8 puan)" },
+      { slug: "hep-skoru", name: "HEP Skoru — HIT", desc: "HIT uzman olasılık skoru — 8 özellik, alternatif nedenler eksi puan; < 2 düşük olasılık" },
     ]
   }
 ];
