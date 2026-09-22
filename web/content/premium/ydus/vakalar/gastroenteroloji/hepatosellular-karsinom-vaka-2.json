@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "id": "hepatosellular-karsinom-vaka-2",
+    "baslik": "BCLC-C HCC'de Atezolizumab + Bevacizumab: Varis Hazırlığı ve Toksisite Yönetimi",
+    "branch": "gastroenteroloji",
+    "topic": "hepatosellular-karsinom",
+    "guncelleme": "2026-09"
+  },
+  "zorluk": "zor",
+  "sure_dk": 12,
+  "adimlar": [
+    {
+      "adim": 1,
+      "baslik": "Birinci Basamak Rejim Seçimi",
+      "klinik_bilgi": "58 yaşında kadın hasta.\n\nEtiyoloji ve karaciğer rezervi: Metabolik disfonksiyon ilişkili steatohepatit (MASH) zemininde gelişmiş siroz. Child-Pugh A (6 puan: Albümin 3.4 g/dL, Bilirubin 1.2 mg/dL, INR 1.2, hafif asit [diüretikle kontrollü], ensefalopati yok), ECOG Performans Skoru: 1.\n\nTümör yükü ve evreleme: Karaciğer sağ lobunda 7.5 cm infiltratif kitle, sağ portal ven ana dalında tümör trombozu (Vp3 PVTT) ve toraks BT'de her iki akciğerde subplevral metastatik mikronodüller (BCLC-C evresi).\n\nLaboratuvar: Serum AFP: 1250 ng/mL, Platelet: 88.000/µL.",
+      "soru": "Konseyin bu hasta için ilk seçenek olarak belirlediği tedavi aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "TACE",
+        "B": "Sorafenib",
+        "C": "Cerrahi rezeksiyon",
+        "D": "Atezolizumab + Bevacizumab",
+        "E": "Ramucirumab"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Vasküler invazyonu ve ekstrahepatik metastazı olan BCLC-C hastada birincil tercih sistemik tedavidir. Konsey, kitle karakteri ve hızlı progresyon riski nedeniyle Atezolizumab + Bevacizumab'ı ilk seçenek olarak belirlemiştir.",
+      "aciklama_detay": "İleri evre (BCLC-C) ve vasküler invazyonu/ekstrahepatik metastazı olan hastalarda lokal tedavilerin (TACE vb.) yeri yoktur veya son derece sınırlıdır; birincil tercih sistemik tedavidir.\n\n**Birinci Basamak Rejim Seçenekleri:**\n1. **Atezolizumab (anti-PD-L1) + Bevacizumab (anti-VEGF):** IMbrave150 çalışmasında sorafenibe kıyasla hem genel sağkalım (OS) hem de progresyonsuz sağkalımda (PFS) belirgin üstünlük sağlamıştır.\n2. **Tremelimumab (anti-CTLA-4) + Durvalumab (anti-PD-L1) [STRIDE Rejimi]:** HIMALAYA çalışması ile uzun dönem sağkalım avantajı kanıtlanmış çift immünoterapi seçeneğidir.\n3. **Nivolumab + Ipilimumab:** CheckMate 9DW çalışması uyarınca 1. basamakta TKI'lara kıyasla sağkalım avantajı sağlayan alternatif kombinasyondur.\n\nKonsey, hastanın kitle karakteri ve hızlı progresyon riski göz önüne alınarak Atezolizumab + Bevacizumab kombinasyonunu ilk seçenek olarak belirlemiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Vasküler invazyon ve ekstrahepatik metastaz varlığında lokal tedavilerin yeri yoktur veya son derece sınırlıdır.",
+        "B": "YANLIŞ — IMbrave150'de Atezolizumab + Bevacizumab sorafenibe kıyasla hem OS hem PFS üstünlüğü sağlamıştır.",
+        "C": "YANLIŞ — Portal ven tümör trombozu ve akciğer metastazı olan BCLC-C hasta küratif cerrahi adayı değildir.",
+        "D": "DOĞRU — İmmüno-anjiyojenik standart kombinasyon; konseyin ilk seçeneği.",
+        "E": "YANLIŞ — Ramucirumab ikinci basamak ajandır (AFP ≥400 ng/mL olanlarda); birinci basamakta yeri yoktur."
+      },
+      "sonraki_bilgi": "Atezolizumab + Bevacizumab planlanıyor. Hastada siroz ve trombositopeni (88.000/µL) mevcut."
+    },
+    {
+      "adim": 2,
+      "baslik": "Gastroenterolojik Ön Hazırlık: Varis Kanaması Riski",
+      "klinik_bilgi": "Tedavi öncesi yapılan EGD'de özofagusta kanama riski yüksek (üzerinde red wale işareti bulunan, büyük) 2 kolon varis saptanmıştır.",
+      "soru": "Bu bulgu karşısında en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Varisler önce EVL ile bantlanır, non-selektif beta-bloker (karvedilol) başlanır; tedavi varis obliterasyonu sonrası başlatılır",
+        "B": "Bevacizumab çıkarılarak yalnızca Atezolizumab monoterapisi başlanır",
+        "C": "Tedavi hemen başlanır; varisler kanarsa endoskopik tedavi uygulanır",
+        "D": "Sistemik tedaviden tamamen vazgeçilip TACE uygulanır",
+        "E": "Yalnızca proton pompa inhibitörü eklenerek tedavi başlanır"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Kanama riski yüksek varisler önce EVL ile bantlanır ve karvedilol başlanır; immüno-anjiyojenik tedavi varis obliterasyonu sağlandıktan ve kanama riski ekarte edildikten sonra başlatılır.",
+      "aciklama_detay": "Anti-VEGF bir ajan olan Bevacizumab, sistemik endotelyal etkileri nedeniyle portal hipertansiyonu olan sirotik hastalarda ölümcül özofagus/mide varis kanamalarına yol açabilir.\n\n**Zorunlu Kural (Kılavuz Şartı):** Atezolizumab + Bevacizumab tedavisine başlanmadan önce son 6 ay içinde yapılmış EGD (Özofagogastroduodenoskopi) ile varis varlığı mutlaka değerlendirilmelidir.\n\n**Klinik Yaklaşım:** Hastaya yapılan EGD'de özofagusta kanama riski yüksek (üzerinde red wale işareti bulunan, büyük) 2 kolon varis saptanmıştır. Varisler önce Endoskopik Varis Ligasyonu (EVL) ile bantlanmış ve non-selektif beta-bloker (Karvedilol) başlanmıştır. İmmüno-anjiyojenik tedavi, varis obliterasyonu sağlandıktan ve kanama riski ekarte edildikten sonra emniyetle başlatılmıştır.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Önce varis kontrolü (EVL + karvedilol), sonra tedavi.",
+        "B": "YANLIŞ — Konseyin kararı kombinasyondur; doğru yol rejimi değiştirmek değil, varis riskini tedavi öncesi kontrol altına almaktır.",
+        "C": "YANLIŞ — Bevacizumab sirotik hastada ölümcül varis kanamasına yol açabilir; kanama riski yüksek varislerle tedaviye başlanmaz.",
+        "D": "YANLIŞ — BCLC-C hastada lokal tedavinin yeri yoktur veya son derece sınırlıdır.",
+        "E": "YANLIŞ — PPİ varis kanaması riskini ortadan kaldırmaz; EVL ve non-selektif beta-bloker gerekir."
+      },
+      "sonraki_bilgi": "Varis obliterasyonu sağlandı ve Atezolizumab + Bevacizumab başlandı. Tedavi sürecinde karaciğer enzimleri, kan basıncı ve idrar proteini izleniyor."
+    },
+    {
+      "adim": 3,
+      "baslik": "İmmün Aracılı Hepatotoksisite",
+      "klinik_bilgi": "Tedavinin seyrinde AST/ALT değerlerinin normal üst sınırın (ULN) 10–15 katının üzerine çıktığını varsayalım (şiddetli / hayatı tehdit eden immün hepatit).",
+      "soru": "Bu durumda en uygun yönetim hangisidir?",
+      "secenekler": {
+        "A": "Tedaviye devam edilir, 1-2 haftada bir enzim takibi yapılır",
+        "B": "İmmünoterapi geçici olarak askıya alınır, steroid verilmeden izlenir",
+        "C": "İmmünoterapi kalıcı olarak kesilir ve 1–2 mg/kg/gün prednizolon başlanır",
+        "D": "Kortikosteroid başlanır; 3-5 günde yanıt yoksa infliksimab eklenir",
+        "E": "Doz yarıya indirilerek immünoterapiye devam edilir"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Şiddetli immün hepatitte immünoterapi kalıcı olarak kesilir ve zaman kaybetmeden 1–2 mg/kg/gün prednizolon başlanır. 3-5 günde yanıt yoksa MMF eklenir; infliksimab tercih edilmez.",
+      "aciklama_detay": "İmmün kontrol noktası inhibitörleri kullanan HCC hastalarında, zemindeki hepatit/siroz nedeniyle transaminaz yükselmeleri (AST/ALT) kanser dışı hastalara kıyasla daha sık gözlenir.\n\n**Hafif-Orta Yükselme (AST/ALT <5 × ULN):** Tedaviye devam edilir, 1-2 haftada bir karaciğer enzimleri yakın takip edilir.\n\n**Ağır Yükselme (AST/ALT >5–10 × ULN veya Bilirubin artışı):** İmmünoterapi hemen askıya alınır (delay).\n\n**Şiddetli / Hayatı Tehdit Eden Hepatit (AST/ALT >10–15 × ULN):** İmmünoterapi kalıcı olarak kesilir. Zaman kaybetmeden 1–2 mg/kg/gün Prednizolon (veya eşdeğeri) ile sistemik kortikosteroid tedavisine başlanır. Steroid altında 3-5 gün içinde düşüş sağlanamazsa rejime Mikofenolat Mofetil (MMF - 500-1000 mg 2x1) eklenmelidir. (Infliximab, hepatotoksisite riski nedeniyle immün hepatitte tercih edilmez).",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Bu yaklaşım yalnızca hafif-orta yükselmede (AST/ALT <5 × ULN) geçerlidir.",
+        "B": "YANLIŞ — Askıya alma ağır yükselmede (>5–10 × ULN) uygulanır; şiddetli hepatitte kalıcı kesme ve steroid gerekir.",
+        "C": "DOĞRU — Kalıcı kesme + 1–2 mg/kg/gün prednizolon.",
+        "D": "YANLIŞ — Steroide yanıtsızlıkta eklenecek ajan MMF'dir; infliksimab hepatotoksisite riski nedeniyle immün hepatitte tercih edilmez.",
+        "E": "YANLIŞ — Şiddetli immün hepatitte immünoterapi kalıcı olarak kesilir; doz azaltma yaklaşımı yoktur."
+      },
+      "sonraki_bilgi": "Anti-VEGF tedaviye bağlı toksisiteler de rutin olarak izleniyor."
+    },
+    {
+      "adim": 4,
+      "baslik": "Anti-VEGF İle İlişkili Toksisite",
+      "klinik_bilgi": "Takipte yapılan 24 saatlik idrar analizinde protein ≥2 g saptandığını varsayalım; nefrotik sendrom bulgusu yok.",
+      "soru": "Bevacizumab açısından en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Bevacizumab kalıcı olarak kesilir",
+        "B": "Bevacizumab, proteinüri <2 g olana kadar durdurulur",
+        "C": "Tedaviye aynı dozla devam edilir, 3 ay sonra idrar tekrarlanır",
+        "D": "Atezolizumab kesilir, Bevacizumab sürdürülür",
+        "E": "Proteinüri için kortikosteroid başlanır"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "24 saatlik idrarda protein ≥2 g ise Bevacizumab proteinüri <2 g olana kadar durdurulur; kalıcı kesme nefrotik sendrom varlığında yapılır.",
+      "aciklama_detay": "**Hipertansiyon:** Tedavi altında kan basıncı takibi yapılır; dirençli hipertansiyonda ACE inhibitörleri veya kalsiyum kanal blokörleri başlanır.\n\n**Proteinüri:** Rutin idrar analizi ile takip edilir. 24 saatlik idrarda protein ≥2 g saptanırsa Bevacizumab tedavisi proteinüri <2 g olana kadar durdurulur; Nefrotik sendrom varlığında ise kalıcı olarak kesilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kalıcı kesme nefrotik sendrom varlığında yapılır; bu hastada nefrotik sendrom yoktur.",
+        "B": "DOĞRU — Proteinüri <2 g'a inene kadar Bevacizumab durdurulur.",
+        "C": "YANLIŞ — ≥2 g proteinüride Bevacizumab'a devam edilmez.",
+        "D": "YANLIŞ — Proteinüri anti-VEGF ile ilişkili toksisitedir; durdurulacak ajan Bevacizumab'dır.",
+        "E": "YANLIŞ — Anti-VEGF ilişkili proteinürinin yönetimi Bevacizumab'ın durdurulmasıdır, steroid değildir."
+      }
+    }
+  ]
+}
