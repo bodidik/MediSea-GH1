@@ -639,6 +639,18 @@
         "eslesen": "Retikülosit Üretim İndeksi"
       }
     ],
+    "hematoloji/heparin-aracili-trombositopeni-hit": [
+      {
+        "slug": "hep-skoru",
+        "name": "HEP Skoru — HIT",
+        "eslesen": "HEP Skoru — HIT"
+      },
+      {
+        "slug": "4t-hit",
+        "name": "4T Skoru — HIT",
+        "eslesen": "4T Skoru — HIT"
+      }
+    ],
     "hematoloji/inme-sonrasi-gizli-af": [
       {
         "slug": "chads-vasc",
@@ -1783,6 +1795,25 @@
         "eslesen": "Mini-Cog"
       }
     ],
+    "4t-hit": [
+      {
+        "yol": "hematoloji/heparin-aracili-trombositopeni-hit",
+        "baslik": "Heparin Aracılı Trombositopeni (HİT)",
+        "eslesen": "4T Skoru — HIT"
+      },
+      {
+        "yol": "hematoloji/trombositopenide-antikoagulasyon",
+        "baslik": "Trombositopenik Hastada Antikoagülasyon: Eşikler, Doz Modifikasyonu ve Özel Senaryolar",
+        "eslesen": "4T Skoru"
+      }
+    ],
+    "hep-skoru": [
+      {
+        "yol": "hematoloji/heparin-aracili-trombositopeni-hit",
+        "baslik": "Heparin Aracılı Trombositopeni (HİT)",
+        "eslesen": "HEP Skoru — HIT"
+      }
+    ],
     "eozinofil-sayisi": [
       {
         "yol": "hematoloji/kronik-eozinofilik-losemi-cel",
@@ -1802,13 +1833,6 @@
         "yol": "hematoloji/primer-miyelofibrozis",
         "baslik": "Primer Miyelofibrozis (PMF)",
         "eslesen": "DIPSS"
-      }
-    ],
-    "4t-hit": [
-      {
-        "yol": "hematoloji/trombositopenide-antikoagulasyon",
-        "baslik": "Trombositopenik Hastada Antikoagülasyon: Eşikler, Doz Modifikasyonu ve Özel Senaryolar",
-        "eslesen": "4T Skoru"
       }
     ],
     "grace": [
@@ -1977,10 +2001,10 @@
     ]
   },
   "olcum": {
-    "konu": 507,
+    "konu": 508,
     "arac": 257,
-    "araciOlanKonu": 135,
-    "konusuOlanArac": 56,
-    "bag": 175
+    "araciOlanKonu": 136,
+    "konusuOlanArac": 57,
+    "bag": 177
   }
 }

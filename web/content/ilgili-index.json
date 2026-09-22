@@ -4577,6 +4577,13 @@
    "baslik": "Yapım Azlığına Bağlı Anemiler"
   }
  ],
+ "hematoloji/heparin-aracili-trombositopeni-hit": [
+  {
+   "brans": "hematoloji",
+   "slug": "trombositopenide-antikoagulasyon",
+   "baslik": "Trombositopenik Hastada Antikoagülasyon: Eşikler, Doz Modifikasyonu ve Özel Senaryolar"
+  }
+ ],
  "hematoloji/hodgkin": [
   {
    "brans": "hematoloji",
@@ -5291,6 +5298,11 @@
    "brans": "hematoloji",
    "slug": "kanser-iliskili-tromboz",
    "baslik": "Kanser İlişkili Tromboz (CAT): Risk Sınıflaması, Profilaksi ve Tedavi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "heparin-aracili-trombositopeni-hit",
+   "baslik": "Heparin Aracılı Trombositopeni (HİT)"
   }
  ],
  "hematoloji/trombositopeniler": [
