@@ -23,6 +23,8 @@ export type PremiumKonu = {
   baslik: string;
   rozetler: string[];
   hazir: boolean;
+  /** Konu başka branşın dosyasındaysa o branş (çapraz bağlantı). */
+  brans?: string;
 };
 
 export type PremiumKategori = {

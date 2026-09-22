@@ -128,7 +128,8 @@ export function icerikSayilari(): IcerikSayilari {
       const v = JSON.parse(fs.readFileSync(path.join(bdir, f), "utf-8"));
       const kategoriler = v?.kategoriler ?? [];
       for (const kat of kategoriler) {
-        for (const k of kat?.konular ?? []) if (k?.hazir) premiumKonu++;
+        // çapraz bağlantı kendi branşında sayılıyor
+        for (const k of kat?.konular ?? []) if (k?.hazir && (!k.brans || k.brans === brans)) premiumKonu++;
       }
       const ek = listelenmeyenKategori(brans, kategoriler);
       if (ek) premiumKonu += ek.konular.length;

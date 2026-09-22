@@ -31,6 +31,8 @@ interface Konu {
   id: string;
   baslik: string;
   hazir: boolean;
+  /** Başka branşın konusuna çapraz bağlantı — o branşta sayılır. */
+  brans?: string;
 }
 
 interface Kategori {
@@ -176,6 +178,9 @@ export default async function YdusAnaSayfa({
 
     for (const kat of veri.kategoriler) {
       for (const konu of kat.konular) {
+        // Çapraz bağlantı (başka branşın konusu) kendi branşında sayılıyor;
+        // burada da sayılsa toplam şişer ve plan olmayan adrese gönderir.
+        if (konu.brans && konu.brans !== id) continue;
         totalTopics += 1;
         if (!konu.hazir) continue;
 

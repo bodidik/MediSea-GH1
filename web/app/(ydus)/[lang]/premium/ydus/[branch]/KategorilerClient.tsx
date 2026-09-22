@@ -17,6 +17,8 @@ interface Konu {
   baslik: string;
   rozetler?: string[];
   hazir: boolean;
+  /** Konu başka branşın dosyasındaysa o branş (çapraz bağlantı; ör. onkolojide HCC → gastroenteroloji). */
+  brans?: string;
 }
 
 interface Kategori {
@@ -199,7 +201,7 @@ export default function KategorilerClient({ kategoriler, bransRenk, lang, branch
                 {kat.konular.map((konu) => (
                   <Link
                     key={konu.id}
-                    href={konu.hazir ? `/${lang}/premium/ydus/${branch}/${konu.id}` : '#'}
+                    href={konu.hazir ? `/${lang}/premium/ydus/${konu.brans ?? branch}/${konu.id}` : '#'}
                     /* Hazır olmayan kayıt FAREYLE tıklanamıyordu
                        (pointerEvents: none) ama KLAVYEYLE tıklanabiliyordu:
                        href="#" taşıyan bir <a> odak sırasında duruyor ve

@@ -48,6 +48,23 @@
           "hazir": true
         }
       ]
+    },
+    {
+      "id": "karaciger-kanserleri",
+      "baslik": "Karaciğer Kanserleri",
+      "aciklama": "Hepatosellüler karsinom (Gastroenteroloji modülünde)",
+      "emoji": "🎗️",
+      "konular": [
+        {
+          "id": "hepatosellular-karsinom",
+          "baslik": "Hepatosellüler Karsinom (HCC)",
+          "rozetler": [
+            "YENİ"
+          ],
+          "hazir": true,
+          "brans": "gastroenteroloji"
+        }
+      ]
     }
   ]
 }

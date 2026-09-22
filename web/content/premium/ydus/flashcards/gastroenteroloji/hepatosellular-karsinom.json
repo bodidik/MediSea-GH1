@@ -1,0 +1,488 @@
+{
+  "id": "fc-gas-hcc-001",
+  "accessLevel": "premium",
+  "topic": "Hepatosellüler Karsinom (HCC)",
+  "description": "YDUS Gastroenteroloji serisi: Hepatosellüler karsinom — tanısal görüntüleme, LI-RADS ve LR-TR, mRECIST, evreleme sistemleri ve tedavi; 80 kartlık hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "hcc-001",
+      "front": "Hepatosellüler karsinomda (HSK) prognozu ve tedavi seçeneklerini belirleyen en kritik iki faktör nedir?",
+      "back": "Tümör kütlesi/lokasyonu ve hastanın hepatik rezervi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-002",
+      "front": "HSK tanısında dinamik kontrastlı görüntülemede (BT/MR) patognomonik kabul edilen vasküler patern nedir?",
+      "back": "Arteriyel fazda hiperenhansman ve portal venöz/geç fazlarda yıkama (washout).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-003",
+      "front": "mRECIST kriterlerine göre 'viyabl (canlı) tümör' tanımı nasıl yapılır?",
+      "back": "Dinamik BT veya MRG'nin arteriyel fazında kontrast tutulumu gösteren doku.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-004",
+      "front": "HSK için mRECIST değerlendirmesinde 'ölçülebilir hedef lezyon' olabilmesi için minimum çap ne olmalıdır?",
+      "back": "En az 1 cm (ve arteriyel fazda net kontrast tutulumu göstermeli).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-005",
+      "front": "İmmünoterapi alan HSK hastalarında progresyon değerlendirmesi için kullanılan özel kriter seti hangisidir?",
+      "back": "iRECIST (immune-based Response Evaluation Criteria In Solid Tumors).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-006",
+      "front": "Lokal ablasyon tedavisi sonrası ilk radyolojik değerlendirme tipik olarak ne zaman yapılmalıdır?",
+      "back": "Tedaviden 1 ay sonra.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-007",
+      "front": "Radyoembolizasyon (TARE) veya SBRT sonrası yanıt değerlendirmesinin 3 aya kadar geciktirilmesinin temel nedeni nedir?",
+      "back": "Radyasyonun indüklediği tümör nekrozunun ve tümör küçülmesinin gecikmeli gerçekleşmesi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-008",
+      "front": "Lipiodol bazlı konvansiyonel TACE (cTACE) sonrası yanıt değerlendirmesinde neden MRG, BT'ye tercih edilir?",
+      "back": "Lipiodolün BT'de oluşturduğu 'beam-hardening' artefaktının residüel kontrast tutulumunu maskelemesi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-009",
+      "front": "HSK'da AFP yanıtı (AFP responder) için literatürde sıklıkla kullanılan tanım nedir?",
+      "back": "Tedavi başlangıcından sonraki ilk değerlendirmede (genellikle 4-12. hafta) serum AFP seviyesinde %20'den fazla düşüş.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-010",
+      "front": "Gadoksetik asit (Eovist) kullanılan MRG'de HSK lezyonları hepatobiliyer fazda nasıl görünür?",
+      "back": "Fonksiyonel hepatosit eksikliği nedeniyle hipointens (düşük sinyal).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-011",
+      "front": "LI-RADS algoritmasında 'LR-5' kategorisi neyi ifade eder?",
+      "back": "Kesin (definitive) hepatosellüler karsinom tanısını.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-012",
+      "front": "Ablasyon sonrası görüntülemede tedavi bölgesinin çevresinde görülen ince ve homojen halkasal kontrastlanma neyi temsil eder?",
+      "back": "Termal hasara yanıt olarak gelişen fizyolojik hiperemiyi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-013",
+      "front": "BCLC (Barcelona Clinic Liver Cancer) evreleme sistemine göre 'Evre 0' (Çok erken evre) kriterleri nelerdir?",
+      "back": "Korunmuş karaciğer fonksiyonu, ECOG 0 ve ≤2 cm tek tümör.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-014",
+      "front": "İlerlemiş HSK'da birinci basamak sistemik tedavide güncel standart kombinasyon hangisidir?",
+      "back": "Atezolizumab ve Bevacizumab kombinasyonu.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-015",
+      "front": "Sirozlu bir hastada ultrasonografide saptanan ≥1 cm lezyonlar için bir sonraki adım ne olmalıdır?",
+      "back": "Kontrastlı dinamik BT veya MRG ile ileri değerlendirme.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-016",
+      "front": "HSK'da radyolojik 'psödoprogresyon' fenomeni en sık hangi tedavi grubuyla ilişkilendirilir?",
+      "back": "İmmün kontrol noktası inhibitörleri (immunotherapy).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-017",
+      "front": "Karaciğer transplantasyonu için kullanılan klasik Milan Kriterleri nelerdir?",
+      "back": "Tek lezyon ≤5 cm veya toplamda 3 lezyon (her biri ≤3 cm).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-018",
+      "front": "HSK tanısında biyopsi hangi durumlarda rezerve edilmelidir?",
+      "back": "Radyolojik bulguların atipik olduğu veya LI-RADS 3-4 kategorisindeki belirsiz lezyonlarda.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-019",
+      "front": "Child-Pugh sınıflamasında kullanılan beş parametre nedir?",
+      "back": "Bilirubin, Albümin, INR (PT), Asit varlığı ve Ensefalopati varlığı.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-020",
+      "front": "HSK progresyonunu göstermede AFP yükselmesi, radyolojik bulgulardan ortalama ne kadar süre önce görülebilir?",
+      "back": "Haftalar veya aylar önce.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-021",
+      "front": "Difüzyon ağırlıklı MRG'de (DWI) tümör canlılığı hakkında bilgi veren parametre hangisidir?",
+      "back": "Apparent Diffusion Coefficient (ADC) - Görünür Difüzyon Katsayısı.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-022",
+      "front": "LI-RADS tedavi yanıt (LR-TR) algoritmasında 'Viyabl (Canlı)' kategorisi için en önemli kriter nedir?",
+      "back": "Tedavi bölgesinde veya kenarında kitle benzeri (mass-like) kontrastlanma.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-023",
+      "front": "RFA tedavisi sonrası oluşan gaz kabarcıkları radyolojik olarak ne ile karıştırılmamalıdır?",
+      "back": "Enfeksiyon veya infarkt ile.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-024",
+      "front": "HSK tanısında BT'de tek fazlı portal venöz taramanın yetersiz kalma sebebi nedir?",
+      "back": "HSK'nın arteriyel beslenmesi nedeniyle hiperenhansman fazının kaçırılması ve 'washout'un değerlendirilememesi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-025",
+      "front": "HSK cerrahi rezeksiyonu için ideal adayda portal hipertansiyon durumu ne olmalıdır?",
+      "back": "Portal hipertansiyon klinik olarak bulunmamalıdır.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-026",
+      "front": "HSK'da sık görülen paraneoplastik sendromlar arasında eritrositoz, hiperkalsemi ve _____ bulunur.",
+      "back": "Hipoglisemi",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-027",
+      "front": "Sistemik tedavide kullanılan Sorafenib'in etki mekanizması nedir?",
+      "back": "VEGF reseptörü dahil çoklu reseptör kinaz inhibitörü.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-028",
+      "front": "HSK'da 'subtraksiyon MRG' tekniğinin temel avantajı nedir?",
+      "back": "Pre-kontrast T1'de parlak görülen nekrotik/hemorajik alanları residüel kontrast tutulumundan ayırt etmek.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-029",
+      "front": "Okuda evreleme sisteminde tümör boyutu için kesme (cut-off) değeri nedir?",
+      "back": "Karaciğerin %50'sinden büyük veya küçük olması.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-030",
+      "front": "HSK hastalarında ALBI (Albumin-Bilirubin) skorunun Child-Pugh'a göre teorik avantajı nedir?",
+      "back": "Asit ve ensefalopati gibi subjektif parametreleri içermemesi, tamamen objektif olması.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-031",
+      "front": "BCLC Evre B (İntermedyer) hastalar için primer önerilen tedavi modalitesi nedir?",
+      "back": "Transarteriyel kemoembolizasyon (TACE).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-032",
+      "front": "HSK lezyonunun MRG'de T2 ağırlıklı görüntülerdeki tipik sinyal özelliği nedir?",
+      "back": "Orta derecede hiperintens (yüksek sinyal).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-033",
+      "front": "Klinik pratikte moleküler hedefli tedavilerin (TKI) etkinliği radyolojik 'küçülme'den ziyade _____ ile ölçülür.",
+      "back": "Progresyonsuzluk (lack of progression)",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-034",
+      "front": "HSK sürveyansında kullanılan ultrasonografinin en önemli kısıtlılığı nedir?",
+      "back": "Operatör bağımlılığı ve obezite/steatoz durumunda düşük hassasiyet.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-035",
+      "front": "Hepatik arteriyel faz görüntüleme tipik olarak kontrast enjeksiyonundan kaç saniye sonra yapılır?",
+      "back": "Genellikle 25-35 saniye sonra (geç arteriyel faz).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-036",
+      "front": "mRECIST'e göre 'Kısmi Yanıt' (Partial Response) tanımı nedir?",
+      "back": "Hedef lezyonlardaki viyabl tümör çapları toplamında en az %30 azalma.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-037",
+      "front": "BCLC Evre C (İleri evre) tanımı hangi iki bulgudan birinin varlığını gerektirir?",
+      "back": "Portal venöz invazyon (makrovasküler invazyon) veya ekstrahepatik yayılım.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-038",
+      "front": "Siroz zemininde gelişmeyen HSK vakalarında en sık görülen etiyolojik faktör hangisidir?",
+      "back": "Kronik Hepatit B virüsü (HBV) enfeksiyonu.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-039",
+      "front": "HSK tanısında kullanılan alternatif bir serolojik marker olan DCP'nin açılımı nedir?",
+      "back": "Des-gamma-carboxy prothrombin.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-040",
+      "front": "Dinamik BT'de 'washout' görünümü hangi fazlarda değerlendirilir?",
+      "back": "Portal venöz faz ve geç venöz fazlar.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-041",
+      "front": "Lokal ablasyon (RFA/MWA) için ideal tümör boyutu üst sınırı genellikle kaç cm kabul edilir?",
+      "back": "3 cm (bazı merkezlerde <4 cm).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-042",
+      "front": "mRECIST'e göre yeni bir karaciğer nodülünün 'progresyon' sayılması için vasküler paterni tipik değilse minimum ne kadar büyüme göstermelidir?",
+      "back": "En az 1 cm interval büyüme.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-043",
+      "front": "HSK'da sıvı biyopsi analizi ile saptanan ve radyolojik progresyondan 8 hafta öncesine kadar bilgi verebilen bileşen nedir?",
+      "back": "ctDNA (circulating tumor DNA).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-044",
+      "front": "İntrahepatik kolanjiyokarsinomdan HSK'yı ayırt etmede yardımcı olan tümör markerı hangisidir?",
+      "back": "CA 19-9 (tek başına ayırt ettirmez; kesin ayrımı dinamik görüntüleme ve gerektiğinde biyopsi sağlar).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-045",
+      "front": "HSK rezeksiyonu sonrası ilk iki yıl için önerilen takip sıklığı nedir?",
+      "back": "Her 3-6 ayda bir dinamik görüntüleme ve AFP.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-046",
+      "front": "LI-RADS tedavi yanıt algoritmasında 'Ekvovak (Equivocal)' bir lezyon hangi bulgularla 'Viyabl' olarak yeniden sınıflandırılabilir?",
+      "back": "MRG'de yeni gelişen difüzyon kısıtlaması veya orta derecede T2 hiperintensitesi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-047",
+      "front": "HSK gelişiminde 'metabolik sendrom' ile ilişkili olan karaciğer hastalığı tablosu nedir?",
+      "back": "MASLD (Metabolic dysfunction-associated steatotic liver disease).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-048",
+      "front": "SBRT veya TARE sonrası görülen segmenter/lober perivasküler heterojen kontrastlanma genellikle neyi ifade eder?",
+      "back": "Radyasyon hasarını (tümör progresyonu değil).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-049",
+      "front": "HSK cerrahisi sonrası 'marjin statusu' (cerrahi sınır) prognozda neden önemlidir?",
+      "back": "Lokal nüks riskini belirleyen en önemli tümör-ilişkili faktörlerden biri olması.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-050",
+      "front": "HSK'nın fibrolamellar varyantı tipik olarak hangi hasta grubunda görülür?",
+      "back": "Altta yatan karaciğer hastalığı olmayan genç hastalar.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-051",
+      "front": "BT'de DECT (Dual Energy CT) teknolojisinin HSK saptamadaki temel avantajı nedir?",
+      "back": "İyot haritaları ile lezyon-karaciğer kontrast oranını artırarak residüel tümör tespitini iyileştirmesi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-052",
+      "front": "HSK hastasında ani gelişen şiddetli karın ağrısı neyi düşündürmelidir?",
+      "back": "Tümör içi kanama veya tümör rüptürü.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-053",
+      "front": "HSK tanısında 'psödokapsül' görünümü MRG'de en iyi hangi fazda saptanır?",
+      "back": "Portal venöz veya geç (delayed) fazda.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-054",
+      "front": "Sistemik tedavide 'psödoprogresyon' şüphesi olan semptomsuz hastalarda bir sonraki adım ne olmalıdır?",
+      "back": "Tedaviye devam ederek kısa süre sonra (örn. 4-8 hafta) kontrol görüntüleme yapılması.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-055",
+      "front": "mRECIST kriterlerine göre asit veya plevral efüzyonun doğası ne zaman sitopatolojik olarak doğrulanmalıdır?",
+      "back": "Hasta diğer kriterlerle yanıt veya stabil hastalık gösterirken efüzyonda kötüleşme olduğunda.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-056",
+      "front": "HSK evrelemesinde kullanılan CLIP skoru hangi parametreleri içerir?",
+      "back": "Child-Pugh evresi, tümör morfolojisi, AFP seviyesi ve portal ven trombozu varlığı.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-057",
+      "front": "Karaciğer dışı metastazı olan HSK hastalarında hangi tedavi modalitesi kontrendikedir?",
+      "back": "Lokal/lokorejyonel tedaviler (genellikle sistemik tedavi endikedir).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-058",
+      "front": "Y90 mikroküre tedavisi (TARE) sonrası teknik başarının kontrolü için hemen yapılan nükleer tıp tetkiki nedir?",
+      "back": "Y90 SPECT/BT veya Bremsstrahlung SPECT/BT.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-059",
+      "front": "GAD (Gadoxetate) MRG'de arteriyel fazın konvansiyonel gadolinyuma göre dezavantajı nedir?",
+      "back": "Arteriyel fazın daha az stabil/robust olması ve yeni lezyonların atlanabilmesi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-060",
+      "front": "Sirozlu bir hastada ultrasonografide saptanan <1 cm nodüller için önerilen takip protokolü nedir?",
+      "back": "İlk yıl boyunca her 3-6 ayda bir ultrason takibi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-061",
+      "front": "HSK'da volumetrik (3D) ölçümün planar ölçüme üstünlüğü nedir?",
+      "back": "Nekrotik bileşenleri daha hassas değerlendirmesi ve çap ölçümündeki düzlemsel varyasyonları elemesi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-062",
+      "front": "HSK tanısında kullanılan 'L3 izoformu' hangi serolojik testin alt bileşenidir?",
+      "back": "AFP (Alpha-fetoprotein).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-063",
+      "front": "HSK'da radyoaktif işaretli glukoz (FDG-PET) görüntülemenin temel kısıtlılığı nedir?",
+      "back": "İyi diferansiye tümörlerde düşük hassasiyet göstermesi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-064",
+      "front": "Sistemik tedavide Sorafenib sonrası progresyon gösteren hastalarda kullanılan diğer bir TKI hangisidir?",
+      "back": "Regorafenib (diğer ikinci basamak seçenekleri: Cabozantinib; AFP ≥400 ng/mL ise Ramucirumab). Lenvatinib birinci basamak TKİ'dir.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-065",
+      "front": "HSK'nın 'infiltratif' tipi radyolojik olarak neden zor teşhis edilir?",
+      "back": "Net sınırlarının olmaması ve parankimal eko yapısını bozarak siroz bulgularını taklit etmesi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-066",
+      "front": "Tedavi edilmemiş HSK'da Okuda Evre III hastalar için beklenen medyan sağkalım süresi nedir?",
+      "back": "Yaklaşık 0.7 ay.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-067",
+      "front": "BCLC algoritmasında 'Terminal Evre' (Evre D) için belirleyici olan performans skoru nedir?",
+      "back": "ECOG 3 veya 4.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-068",
+      "front": "HSK'da V-CLIP skoru, CLIP skoruna ek olarak hangi biyobelirteci içerir?",
+      "back": "Plazma VEGF seviyesi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-069",
+      "front": "Karaciğer rezeksiyonu planlanan sirozlu hastalarda 'Child-Pugh B' skoru genellikle neyi ifade eder?",
+      "back": "Yüksek cerrahi mortalite riski ve genellikle rezeksiyon kontrendikasyonu.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-070",
+      "front": "HSK nüks takibinde 2 yıl hastalıksız geçen süreden sonra standart sürveyansa (6 ayda bir USG/AFP) dönülebilir mi?",
+      "back": "Evet, ancak risk devam ettiği için birçok merkez dinamik görüntülemeye devam etmeyi tercih eder.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-071",
+      "front": "Sirozlu hastalarda portal ven trombozu saptandığında HSK açısından ne yapılmalıdır?",
+      "back": "Trombusun malign olup olmadığını (kontrast tutulumu/genişleme) anlamak için dinamik görüntüleme yapılmalıdır.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-072",
+      "front": "TARE sonrası tümör yanıtı değerlendirmesi için kullanılan LI-RADS algoritması hangisidir?",
+      "back": "Radyasyon tedavisi sonrası LI-RADS (LR-TR Radiation Therapy).",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-073",
+      "front": "HSK sürveyansında AFP için kullanılan standart pozitiflik eşik değeri nedir?",
+      "back": "20 ng/mL.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-074",
+      "front": "Hangi HSK evreleme sistemi cerrahi bulgulara dayalıdır ve karaciğer fonksiyonunu içermez?",
+      "back": "TNM (AJCC/UICC) evreleme sistemi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-075",
+      "front": "BCLC Evre A'da 'erken evre' tanımı için maksimum tümör sayısı ve boyutu nedir?",
+      "back": "En fazla 3 nodül ve her biri ≤3 cm.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-076",
+      "front": "HSK tanısında MRG'nin BT'ye göre en büyük avantajı nedir?",
+      "back": "Daha yüksek yumuşak doku kontrast çözünürlüğü ve iyonize radyasyon içermemesi.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-077",
+      "front": "mRECIST'e göre 'Progresif Hastalık' tanımı viyabl tümör çapında ne kadar artış gerektirir?",
+      "back": "En az %20 artış.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-078",
+      "front": "HSK nüksü en sık nerede saptanır?",
+      "back": "Tedavi edilen lezyonun marjininde veya karaciğerin diğer bölgelerinde.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-079",
+      "front": "HSK'da kemoprevensiyon için bazı verilerle desteklenen düşük dozda kullanılan ilaç hangisidir?",
+      "back": "Aspirin.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    },
+    {
+      "id": "hcc-080",
+      "front": "Ablasyon sonrası 'tam yanıt' (Complete Response) mRECIST'e göre nasıl tanımlanır?",
+      "back": "Tüm hedef lezyonlarda intratümöral arteriyel kontrastlanmanın tamamen kaybolması.",
+      "tag": "Gastroenteroloji / Hepatosellüler Karsinom"
+    }
+  ]
+}
