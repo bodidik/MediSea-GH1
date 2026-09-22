@@ -12,9 +12,9 @@
   },
   "moduller": {
     "flashcard": true,
-    "inciler": false,
+    "inciler": true,
     "quiz": true,
-    "vaka": false,
+    "vaka": true,
     "video": false
   },
   "istatistikler": {

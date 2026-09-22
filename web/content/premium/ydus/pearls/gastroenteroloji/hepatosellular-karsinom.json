@@ -1,0 +1,147 @@
+{
+  "id": "pearl-gast-hepatosellular-karsinom-001",
+  "accessLevel": "premium",
+  "topic": "Hepatosellüler Karsinom (HCC)",
+  "pearls": [
+    {
+      "id": "hcc-inci-001",
+      "level": "Klinik",
+      "title": "HBV Karsinogenezi ve Sirozsuz HCC",
+      "content": "<p>Kronik Hepatit B virüsü (HBV) enfeksiyonu, viral DNA'nın konak hepatosit genomuna entegre olması ve viral HBx proteininin tümör süpresör yollakları baskılaması nedeniyle, **siroz gelişmeksizin de doğrudan non-sirotik karaciğerde HCC gelişimine yol açabilen** ana etiyolojik ajandır. Antiviral tedavi veya spontan süreçle HBsAg serokonversiyonu (kleransı) sağlansa dahi, hastanın HCC gelişme riski tamamen ortadan kalkmaz; bu nedenle sürveyans kriterlerini karşılayan hastalarda takip kesilmemelidir.</p>",
+      "trigger": "Etiyoloji"
+    },
+    {
+      "id": "hcc-inci-002",
+      "level": "Klinik",
+      "title": "Aflatoksin B1 ve p53 Mutasyon Sıcak Noktası (Hotspot)",
+      "content": "<p>Gıdalarda üreyen Aspergillus mantarlarının ürettiği **Aflatoksin B1** maruziyeti, özellikle kronik HBV taşıyıcılarında sinerjistik etki göstererek karsinogenezi belirgin derecede hızlandırır. Aflatoksin B1'in moleküler patogenezdeki spesifik imzası, <em>TP53</em> tümör süpresör geninde **249. kodonda (p.R249S / G'den T'ye transversiyon)** ortaya çıkan nokta mutasyonudur.</p>",
+      "trigger": "Etiyoloji"
+    },
+    {
+      "id": "hcc-inci-003",
+      "level": "Klinik",
+      "title": "Somatik Mutasyon Hiyerarşisi ve TERT Promotör",
+      "content": "<p>Premalign dysplastic nodüllerden HCC'ye dönüşüm sürecindeki en erken ve en sık tespit edilen somatik genetik değişiklik <strong>%40–65 oranında görülen <em>TERT</em> promotör mutasyonudur</strong>. Malign progresyon ilerledikçe bu mutasyona sırasıyla <em>TP53</em> inaktivasyonu ve Wnt/β-katenin yolağını aktive eden <em>CTNNB1</em> mutasyonları eşlik eder.</p>",
+      "trigger": "Moleküler Patogenez"
+    },
+    {
+      "id": "hcc-inci-004",
+      "level": "Klinik",
+      "title": "Fibrolameller Karsinom Klasiği",
+      "content": "<p>Genç erişkinlerde (15–35 yaş), arka planda **siroz veya kronik viral hepatit öyküsü bulunmayan**, erkek ve kadınlarda eşit oranda izlenen özel klinik-patolojik varyant **fibrolameller karsinomdur**. Eozinofilik/onkositik hepatositler ve lameller kolajen stroma ile karakterize olan bu tümörde **serum AFP düzeyleri vakaların %90'ında normal seyreder**.</p>",
+      "trigger": "Histopatoloji"
+    },
+    {
+      "id": "hcc-inci-005",
+      "level": "Klinik",
+      "title": "MASH / MASLD İlişkili HCC Patolojisi",
+      "content": "<p>Metabolik disfonksiyon ilişkili steatohepatit (MASH), Batı toplumlarında insidansı en hızlı artan HCC nedenidir. MASH kaynaklı HCC'lerin klinik açıdan en önemli özelliği, hastaların önemli bir kısmında **belirgin siroz tablosu gelişmeden (F0–F3 fibrozis zemininde)**, daha ileri yaşta ve tesadüfi olarak daha büyük kitle boyutları ile teşhis edilmesidir.</p>",
+      "trigger": "Etiyoloji"
+    },
+    {
+      "id": "hcc-inci-006",
+      "level": "Klinik",
+      "title": "Sürveyans Protokolü ve USG Duyarlılık Sınırı",
+      "content": "<p>Risk altındaki popülasyonda (Child A/B siroz, yüksek riskli HBV vb.) standart HCC sürveyansı **6 ayda bir karaciğer ultrasonografisi (USG) ± serum Alfa-Fetoprotein (AFP)** ölçümüdür. Ancak USG'nin duyarlılığı obezite ve MASH zemininde belirgin şekilde düşer; bu hasta gruplarında **Kısaltılmış MRG (Abbreviated MRI - AMRI)** veya kontrastlı BT alternatif sürveyans seçenekleridir.</p>",
+      "trigger": "Sürveyans"
+    },
+    {
+      "id": "hcc-inci-007",
+      "level": "Klinik",
+      "title": "Sürveyansta Subsantimetrik (<1 cm) Nodül Yönetimi",
+      "content": "<p>Sürveyans USG'sinde saptanan **&lt;1 cm altındaki karaciğer nodülleri**, ileri dinamik görüntüleme (BT/MRG) veya biyopsi ile karakterize edilmek için çok küçüktür. Normal AFP varlığında bu lezyonlar **3–6 ay aralıklarla 2 kez USG ile takip edilir**. Nodül stabil kalırsa 6 aylık rutin sürveyansa dönülür; 1 cm sınırına ulaşırsa veya AFP yükselirse hemen dinamik çok fazlı BT/MRG çekilir.</p>",
+      "trigger": "Sürveyans"
+    },
+    {
+      "id": "hcc-inci-008",
+      "level": "Klinik",
+      "title": "Non-invaziv Radyolojik Tanı ve LI-RADS 5 Kriteri",
+      "content": "<p>Yüksek riskli hasta grubunda (siroz, kronik HBV), ≥1 cm nodüllerde çok fazlı dinamik BT veya MRG'de **Non-rim Arteriyel Faz Hiperenhansmanı (APHE)** ile birlikte portal venöz/geç fazda **\"Washout\"**, **Kapsül varlığı** veya **6 ayda ≥%50 boyut artışı** gösterilmesi durumunda **biyopsiye ihtiyaç duyulmaksızın kesin HCC (LI-RADS 5 / OPTN Class 5)** tanısı konur.</p>",
+      "trigger": "Radyolojik Tanı"
+    },
+    {
+      "id": "hcc-inci-009",
+      "level": "Klinik",
+      "title": "LI-RADS M (LR-M) Kategorisi ve Biyopsi Endikasyonu",
+      "content": "<p>Dinamik görüntülemede tespit edilen ancak rim-tipi APHE veya erken/belirgin washout gibi HCC için atipik özellikler gösteren lezyonlar **LI-RADS M (LR-M)** olarak sınıflandırılır. LR-M lezyonlarının yaklaşımında **doku biyopsisi zorunludur**; çünkü bu grubun önemli bir kısmı Intrahepatik Kolanjiyokarsinom (ICC), kombine HCC-Cholangiocarcinoma veya metastazdır.</p>",
+      "trigger": "Radyolojik Tanı"
+    },
+    {
+      "id": "hcc-inci-010",
+      "level": "Klinik",
+      "title": "ALBI Skoru ve Cerrahi Seçimdeki Üstünlüğü",
+      "content": "<p>Child-Pugh skorunun içerdiği subjektif parametrelerin (asit ve ensefalopati derecelendirmesi) aksine, **ALBI (Albumin-Bilirubin) skoru** sadece objektif laboratuvar değerlerine dayanır. **ALBI Grade 1 (≤ −2.60)** rezidüel karaciğer fonksiyonunun mükemmel olduğunu ve güvenli cerrahi rezeksiyona izin verdiğini gösterirken; Grade 2 ve Grade 3 hastalar transplantasyon veya lokorejyonel tedavilere yönlendirilmelidir.</p>",
+      "trigger": "Karaciğer Rezervi"
+    },
+    {
+      "id": "hcc-inci-011",
+      "level": "Klinik",
+      "title": "Cerrahi Rezeksiyon İçin Sert Kısıtlamalar (CSPH)",
+      "content": "<p>Cerrahi rezeksiyon (parsiyel hepatektomi), korunmuş karaciğer fonksiyonuna (Child-Pugh A / ALBI Grade 1), normal bilirubine ve **Klinik Olarak Belirgin Portal Hipertansiyon (CSPH: HVPG ≥10 mmHg, özofagus varisi veya belirgin splenomegali/trombositopeni) bulunmayan** soliter tümörlü hastalarda ilk seçenektir. CSPH varlığı karaciğer nakli değerlendirmesi gerektirir.</p>",
+      "trigger": "Cerrahi Tedavi"
+    },
+    {
+      "id": "hcc-inci-012",
+      "level": "Klinik",
+      "title": "Gelecek Karaciğer Kalıntısı (FLR) ve PVE",
+      "content": "<p>Major karaciğer rezeksiyonu (örn. sağ hepatektomi) planlanan HCC hastalarında, post-operatif karaciğer yetmezliğini önlemek için Gelecek Karaciğer Kalıntısının (FLR) sirotik hastada **en az %30–40** olması gerekir. FLR hacmi yetersiz olan vakalarda, rezeke edilecek segmentin portal ven dalı ameliyat öncesi **Portal Ven Embolizasyonu (PVE)** ile tıkamalı ve sağlam parankimin kompansatuar hipertrofisi indüklenmelidir.</p>",
+      "trigger": "Cerrahi Tedavi"
+    },
+    {
+      "id": "hcc-inci-013",
+      "level": "Klinik",
+      "title": "Karaciğer Transplantasyonu ve Milan Kriterleri",
+      "content": "<p>Sirotik zeminde gelişen erken evre HCC'de hem tümörü hem de kanserojenik karaciğer dokusunu ortadan kaldıran en ideal tedavi **karaciğer naklidir**. Kadavradan nakil organ dağıtımında benchmark kabul edilen **Milan Kriterleri**: Soliter nodül ≤5 cm VEYA en fazla 3 nodül (her biri ≤3 cm), makrovasküler invazyon yokluğu ve ekstrahepatik metastaz olmamasıdır.</p>",
+      "trigger": "Transplantasyon"
+    },
+    {
+      "id": "hcc-inci-014",
+      "level": "Klinik",
+      "title": "Bridging (Köprüleme) vs. Downstaging Stratejileri",
+      "content": "<p>Organ bekleme listesindeki hastalarda beklenen süre 6 ayı aşıyorsa tümörün ilerleyip Milan kriterleri dışına çıkmasını önlemek için uygulanan lokorejyonel tedavilere **\"Bridging\" (Köprüleme)** denir. Başlangıçta Milan kriterlerini aşan (örneğin BCLC-B) tümör yükünün lokorejyonel/sistemik tedavilerle Milan sınırları içine çekilerek transplant adayı yapılması sürecine ise **\"Downstaging\"** adı verilir.</p>",
+      "trigger": "Transplantasyon"
+    },
+    {
+      "id": "hcc-inci-015",
+      "level": "Klinik",
+      "title": "Lokal Termal Ablasyon Sınırları ve Kombinasyon",
+      "content": "<p>Perkütan Mikrodalga Ablasyon (MWA) ve Radyofrekans Ablasyon (RFA), **özellikle ≤3 cm soliter tümörlerde** rezeksiyona yakın lokal kontrol sağlayan küratif yöntemlerdir. Lezyon boyutu 3–5 cm arasına çıktığında tek başına ablasyonun yetersiz kalma ve lokal nüks riski artar; bu orta büyüklükteki lezyonlarda **TACE + MWA/RFA kombinasyon tedavisi** önerilir.</p>",
+      "trigger": "Lokorejyonel Tedavi"
+    },
+    {
+      "id": "hcc-inci-016",
+      "level": "Klinik",
+      "title": "TACE vs. TARE ve Portal Ven Tümör Trombozu (PVTT)",
+      "content": "<p>Transarteriyel Kemoembolizasyon (TACE), BCLC-B (orta evre) multinodüler hastaların standart tedavisi iken; damar içi mikrotrombüs yarattığından **ana portal ven tümör trombozunda (PVTT) kesin kontrendikedir** (masif karaciğer nekrozu riski). Yttrium-90 içeren **TARE (Transarteriyel Radyoembolizasyon)** ise makrovasküler tıkanıklık yapmadan radyasyon nekrozu sağladığı için PVTT'si olan uygun vakalarda güvenle uygulanabilir.</p>",
+      "trigger": "Lokorejyonel Tedavi"
+    },
+    {
+      "id": "hcc-inci-017",
+      "level": "Klinik",
+      "title": "İleri Evre Birinci Basamak İmmüno-Anjiyojenik Tedavi",
+      "content": "<p>Metastatik veya inoperabl advanced (BCLC-C) HCC'de 1. basamak standart tedavi, **Atezolizumab (anti-PD-L1) + Bevacizumab (anti-VEGF)** kombinasyonu veya çift immünoterapi olan **Tremelimumab + Durvalumab (STRIDE rejimi)**'dir. Bevacizumab'a bağlı ölümcül kanama riskini önlemek için tedavi öncesinde **son 6 ay içinde yapılmış EGD ile özofagus varis kontrolü ve gerekirse bant ligasyonu şarttır**.</p>",
+      "trigger": "Sistemik Tedavi"
+    },
+    {
+      "id": "hcc-inci-018",
+      "level": "Klinik",
+      "title": "İkinci Basamak TKI Seçimi ve Ramucirumab Spesifitesi",
+      "content": "<p>Birinci basamak hedefe yönelik/immünoterapi sonrası progresyon gösteren vakalarda 2. basamakta Regorafenib (daha önce sorafenib tolere edebilenlerde) ve Cabozantinib kullanılır. **Ramucirumab (anti-VEGFR2)** ise yalnızca bazal **serum AFP Düzeyi ≥400 ng/mL olan** ileri evre HCC hastalarında sağkalım avantajı sağlayan özel bir monoklonal antikordur.</p>",
+      "trigger": "Sistemik Tedavi"
+    },
+    {
+      "id": "hcc-inci-019",
+      "level": "Klinik",
+      "title": "Tedavi Yanıtında mRECIST Farkı",
+      "content": "<p>Lokorejyonel (TACE, ablasyon vb.) veya anti-anjiyojenik sistemik tedaviler sonrasında yanıt değerlendirmesinde klasik RECIST 1.1 yerine **mRECIST (modified RECIST)** kullanılır. mRECIST, tedavinin indüklediği doku nekrozunu hesaba katarak tümörün anatomik dış boyutunu değil, sadece arterial fazda kontrast tutulumu gösteren **\"canlı tümör\" (viable tumor) bileşeninin çapındaki değişimi** esas alır.</p>",
+      "trigger": "Tedavi Yanıtı"
+    },
+    {
+      "id": "hcc-inci-020",
+      "level": "Klinik",
+      "title": "LI-RADS TRA (Treatment Response) Viable Kriteri",
+      "content": "<p>Lokal ablasyon veya embolizasyon sonrasında LI-RADS Tedavi Yanıt Algoritmasına göre tedavi bölgesinde veya marjininde herhangi bir fazda **kitle benzeri kontrastlanma (mass-like enhancement)** saptanması **LR-TR Viable (canlı tümör var)** olarak kabul edilir. Kitle benzeri kontrastlanmanın şüpheli kaldığı durumlarda MRG'de **difüzyon kısıtlanması (DWI/ADC) veya T2 hiperintensitesi** eşlik ediyorsa lezyon doğrudan LR-TR Viable kategorisine yükseltilir.</p>",
+      "trigger": "Tedavi Yanıtı"
+    }
+  ]
+}

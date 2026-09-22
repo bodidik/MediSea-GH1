@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "id": "hepatosellular-karsinom-vaka-1",
+    "baslik": "BCLC-B HCC'de TACE Direnci ve Sistemik Tedaviye Geçiş",
+    "branch": "gastroenteroloji",
+    "topic": "hepatosellular-karsinom",
+    "guncelleme": "2026-09"
+  },
+  "zorluk": "zor",
+  "sure_dk": 8,
+  "adimlar": [
+    {
+      "adim": 1,
+      "baslik": "TACE Sonrası Yanıt Değerlendirmesi",
+      "klinik_bilgi": "62 yaşında erkek hasta.\n\nEtiyoloji ve karaciğer rezervi: Kronik Hepatit B virüsü (HBV) zemininde gelişmiş kompanse siroz. Child-Pugh A (5 puan: Albümin 3.8 g/dL, Bilirubin 0.9 mg/dL, INR 1.1, Asit yok, Ensefalopati yok), ALBI Grade 1 (ALBI skoru: −2.75), ECOG Performans Skoru: 0.\n\nTümör yükü ve evreleme: Karaciğer sağ lobunda 2 adet (en büyüğü 4.2 cm), sol lobunda 1 adet (2.5 cm) olmak üzere toplam 3 adet hipervasküler nodül. Vasküler invazyon veya ekstrahepatik yayılım bulunmamaktadır (BCLC-B evresi).\n\nUygulanan tedavi öyküsü: Hastaya 3 ay arayla iki kez süper-selektif cTACE / DEB-TACE işlemi uygulanmıştır.\n\nTakip görüntülemesi: Son TACE işleminden 1 ay sonra çekilen çok fazlı dinamik karaciğer MRG'sinde, mRECIST kriterlerine göre sağ lobdaki 4.2 cm'lik lezyon marjininde ve sol lobdaki lezyon içerisinde canlı (viable) arteriyel kontrast tutulumunun (APHE) devam ettiği ve ek olarak karaciğer segment 6'da yeni 1.5 cm'lik hipervasküler bir nodül geliştiği saptanmıştır.",
+      "soru": "Bu hastanın takip görüntülemesi en doğru şekilde nasıl yorumlanır?",
+      "secenekler": {
+        "A": "TACE sonrası beklenen erken dönem bulgulardır; 3 ay sonra görüntüleme tekrarlanmalıdır",
+        "B": "mRECIST'e göre kısmi yanıt vardır; aynı aralıkla TACE sürdürülmelidir",
+        "C": "TACE refrakterliği (TACE failure) kriterleri karşılanmıştır",
+        "D": "Hasta BCLC-C evresine geçmiştir; yeni nodül ekstrahepatik yayılım anlamına gelir",
+        "E": "Canlı tümör varlığı nedeniyle önce biyopsi ile HCC tanısı yeniden doğrulanmalıdır"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Teknik olarak başarılı 2 seans süper-selektif TACE sonrasında hedef odaklarda mRECIST'e göre CR/PR elde edilememiş (canlı tümör sürüyor) ve karaciğerde yeni hipervasküler nodül gelişmiştir: TACE refrakterliği.",
+      "aciklama_detay": "International Liver Cancer Association (ILCA) ve BCLC uzlaşı kılavuzlarına göre TACE refrakterliği (TACE Refractoriness / Failure) şu kriterlerle tanımlanır:\n\n1. **Radyolojik Yanıtsızlık:** Teknik olarak başarılı şekilde uygulanan en fazla 2 seans süper-selektif TACE sonrasında, hedeflenen tümör odağında mRECIST uyarınca Tam Yanıt (CR) veya Kısmi Yanıt (PR) elde edilememesi ve canlı tümör dokusunun varlığını sürdürmesi.\n2. **İntrahepatik Progresyon:** İşlem yapılan alanda veya karaciğerin diğer segmentlerinde yeni hipervasküler tümör nodüllerinin ortaya çıkması.\n3. **Mevcut Yanıtın Kısa Sürmesi:** TACE sonrası sağlanan yanıtın 3 aydan kısa sürmesi ve hızla persistan nüks gelişmesi.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Canlı arteriyel kontrast tutulumunun sürmesi ve yeni hipervasküler nodül, beklenen işlem sonrası değişiklik değil yanıtsızlık ve intrahepatik progresyondur.",
+        "B": "YANLIŞ — mRECIST'e göre hedef odaklarda CR veya PR yoktur; canlı tümör sürmektedir.",
+        "C": "DOĞRU — 2 seans sonrası CR/PR yokluğu ve yeni intrahepatik nodül, TACE refrakterliğinin iki kriterini birlikte karşılar.",
+        "D": "YANLIŞ — Segment 6'daki yeni nodül karaciğer içindedir (intrahepatik progresyon); vasküler invazyon veya ekstrahepatik yayılım yoktur.",
+        "E": "YANLIŞ — Yanıt değerlendirmesi dinamik görüntüleme ve mRECIST ile yapılır; bu aşamada tanıyı yeniden kuracak biyopsi gerekmez."
+      },
+      "sonraki_bilgi": "Hasta multidisipliner tümör konseyinde tartışılıyor. Karaciğer fonksiyonları (Child-Pugh A, ALBI Grade 1) ve performansı (ECOG 0) korunmuş durumda."
+    },
+    {
+      "adim": 2,
+      "baslik": "Konsey Kararı",
+      "klinik_bilgi": "TACE refrakterliği kriterleri karşılanmış, Child-Pugh A / ALBI Grade 1, ECOG 0 olan BCLC-B hasta.",
+      "soru": "Konseyin bu aşamadaki en uygun kararı aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Yanıt elde edilene kadar TACE seanslarına devam edilmesi",
+        "B": "TACE'nin durdurulması ve vakit kaybetmeksizin 1. basamak sistemik tedaviye geçilmesi",
+        "C": "Karaciğer rezervi B sınıfına gerileyene kadar izlem",
+        "D": "Yalnızca en büyük lezyona termal ablasyon uygulanıp izlenmesi",
+        "E": "Best supportive care (destek tedavisi)"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Durdurma kriterleri (\"Stopping Criteria\") sağlanmıştır. Karaciğer rezervi ve performansı mükemmel korunmuş olduğu için hasta vakit kaybetmeden 1. basamak sistemik tedaviye geçirilir.",
+      "aciklama_detay": "**TACE'ye Devam Etmenin Riski (TACE-Unsuitable Durumu):** Konseyde sıklıkla düşülen en büyük klinik hata, TACE yanıt vermediği halde ısrarla tekrarlayan embolizasyon seanslarına devam edilmesidir. Israrlı TACE uygulamaları, karaciğer parankiminde iskemik hasar tetikleyerek karaciğer fonksiyonel rezervinde kalıcı bozulmaya (Child-Pugh A'dan B/C'ye veya ALBI Grade 2/3'e gerileme) yol açar. Karaciğer rezervi bozulan hastalar ise sağkalım avantajı sağlayacak 1. basamak immüno-anjiyojenik sistemik tedavileri alma şansını tamamen yitirmektedir.\n\n**Girişimsel Radyoloji Kararı:** TACE'nin durdurulması (\"Stopping Criteria\" sağlandı).\n\n**Medikal Onkoloji ve Hepatoloji Ortak Kararı:** Hastanın karaciğer fonksiyonlarının (Child-Pugh A, ALBI Grade 1) ve performansının mükemmel seviyede korunmuş olması sayesinde, vakit kaybetmeksizin 1. Basamak Sistemik Tedaviye geçilmesine karar verilmiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Konseyde en sık düşülen hatadır: ısrarlı TACE iskemik hasarla karaciğer rezervini bozar ve hasta sistemik tedavi şansını yitirir.",
+        "B": "DOĞRU — Durdurma kriterleri sağlanmıştır; korunmuş rezerv sistemik tedavi için zaman penceresidir.",
+        "C": "YANLIŞ — Rezervin bozulmasını beklemek, sağkalım avantajı sağlayacak sistemik tedavi seçeneğini kaybettirir.",
+        "D": "YANLIŞ — Çok odaklı (yeni nodül dahil) ve TACE'ye dirençli hastalıkta tek lezyona lokal tedavi tümör yükünü karşılamaz.",
+        "E": "YANLIŞ — Child-Pugh A, ALBI Grade 1 ve ECOG 0 olan hasta aktif sistemik tedavi adayıdır."
+      }
+    }
+  ]
+}
