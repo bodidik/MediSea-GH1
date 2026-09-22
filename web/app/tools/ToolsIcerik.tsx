@@ -169,6 +169,7 @@ const TOOLS_DATABASE = [
       { slug: "gcs", name: "Glasgow Koma Skalası", desc: "Bilinç düzeyi değerlendirmesi (E+V+M)" },
       { slug: "ciwa-ar", name: "CIWA-Ar", desc: "Alkol yoksunluğu şiddeti — 10 madde, nöbet/deliryum riski değerlendirme" },
       { slug: "4t-hit", name: "4T Skoru — HIT", desc: "Heparine bağlı trombositopeni klinik olasılık skoru (4 kriter, 0–8 puan)" },
+      { slug: "hep-skoru", name: "HEP Skoru — HIT", desc: "HIT uzman olasılık skoru — 8 özellik, alternatif nedenler eksi puan; < 2 düşük olasılık" },
       { slug: "heart", name: "HEART Skoru", desc: "Akut göğüs ağrısı kardiyak risk triyajı — 5 kriterin beşi de yanıtlanmadan sonuç basmaz" },
       { slug: "timi-ua", name: "TIMI Skoru (UA/NSTEMI)", desc: "Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter" },
       { slug: "nihss", name: "NIHSS", desc: "NIH İnme Skalası — 11 alan, akut inme şiddet değerlendirmesi" },
@@ -393,6 +394,7 @@ const TOOLS_DATABASE = [
       { slug: "revize-cenevre", name: "Revize Cenevre Skoru", desc: "Pulmoner emboli klinik olasılığı — nesnel 8 madde, 0–22" },
       { slug: "trombosit-cci", name: "Trombosit Transfüzyonu CCI", desc: "Düzeltilmiş sayım artışı — trombosit transfüzyonuna refrakterlik" },
       { slug: "demir-parametreleri", name: "Demir Parametreleri", desc: "TSAT ve ferritin — genel, kalp yetmezliği, KBH ve inflamasyon bağlamında" },
+      { slug: "who-kanama", name: "WHO Kanama Ölçeği", desc: "Trombositopenide kanama derecesi 0–4 — en ağır bulgu belirler" },
     ]
   }
 ];

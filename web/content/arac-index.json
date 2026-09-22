@@ -605,6 +605,11 @@
   "desc": "Akut göğüs ağrısı kardiyak risk triyajı — 5 kriterin beşi de yanıtlanmadan sonuç basmaz"
  },
  {
+  "slug": "hep-skoru",
+  "name": "HEP Skoru — HIT",
+  "desc": "HIT uzman olasılık skoru — 8 özellik, alternatif nedenler eksi puan; < 2 düşük olasılık"
+ },
+ {
   "slug": "heparin-nomogram",
   "name": "Heparin Nomogramı",
   "desc": "Kiloya göre IV heparin yükleme ve idame dozu — VTE ve AKS ayrı, tavanlar açıkça bildiriliyor"
@@ -1268,6 +1273,11 @@
   "slug": "wfns",
   "name": "WFNS SAK Derecesi",
   "desc": "Subaraknoid kanamada GKS + motor defisitle derece I–V"
+ },
+ {
+  "slug": "who-kanama",
+  "name": "WHO Kanama Ölçeği",
+  "desc": "Trombositopenide kanama derecesi 0–4 — en ağır bulgu belirler"
  },
  {
   "slug": "yamaguchi",

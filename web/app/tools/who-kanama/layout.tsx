@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Trombosit Transfüzyonu CCI — Düzeltilmiş sayım artışı",
-  description: "Trombosit Transfüzyonu CCI: Düzeltilmiş sayım artışı — trombosit transfüzyonuna refrakterlik. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/trombosit-cci" },
+  title: "WHO Kanama Ölçeği — Trombositopenide kanama derecesi 0–4",
+  description: "WHO Kanama Ölçeği: Trombositopenide kanama derecesi 0–4 — en ağır bulgu belirler. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/who-kanama" },
   openGraph: {
     type: "website",
-    title: "Trombosit Transfüzyonu CCI — Düzeltilmiş sayım artışı",
-    description: "Trombosit Transfüzyonu CCI: Düzeltilmiş sayım artışı — trombosit transfüzyonuna refrakterlik. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/trombosit-cci",
+    title: "WHO Kanama Ölçeği — Trombositopenide kanama derecesi 0–4",
+    description: "WHO Kanama Ölçeği: Trombositopenide kanama derecesi 0–4 — en ağır bulgu belirler. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/who-kanama",
   },
 };
 
@@ -22,16 +22,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Trombosit Transfüzyonu CCI",
-          aciklama: "Trombosit Transfüzyonu CCI: Düzeltilmiş sayım artışı — trombosit transfüzyonuna refrakterlik. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/trombosit-cci",
+          ad: "WHO Kanama Ölçeği",
+          aciklama: "WHO Kanama Ölçeği: Trombositopenide kanama derecesi 0–4 — en ağır bulgu belirler. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/who-kanama",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Trombosit Transfüzyonu CCI", yol: "/tools/trombosit-cci" },
+          { ad: "WHO Kanama Ölçeği", yol: "/tools/who-kanama" },
         ])}
       />
       {children}
@@ -42,16 +42,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Hematoloji kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/vte-bleed" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                VTE-BLEED
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/who-kanama" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                WHO Kanama Ölçeği
-              </Link>
-            </li>
             <li>
               <Link href="/tools/ann-arbor-lugano" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Ann Arbor / Lugano Evrelemesi
@@ -70,6 +60,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/demir-parametreleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Demir Parametreleri
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/dipss" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                DIPSS
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/eln-2022-aml" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ELN 2022 AML Genetik Riski
               </Link>
             </li>
           </ul>

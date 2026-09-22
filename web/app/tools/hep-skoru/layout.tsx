@@ -6,14 +6,14 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "HEART Skoru — Akut göğüs ağrısı kardiyak risk triyajı",
-  description: "HEART Skoru: Akut göğüs ağrısı kardiyak risk triyajı — 5 kriterin beşi de yanıtlanmadan sonuç basmaz. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/heart" },
+  title: "HEP Skoru — HIT — HIT uzman olasılık skoru",
+  description: "HEP Skoru — HIT: HIT uzman olasılık skoru — 8 özellik, alternatif nedenler eksi puan; < 2 düşük olasılık. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/hep-skoru" },
   openGraph: {
     type: "website",
-    title: "HEART Skoru — Akut göğüs ağrısı kardiyak risk triyajı",
-    description: "HEART Skoru: Akut göğüs ağrısı kardiyak risk triyajı — 5 kriterin beşi de yanıtlanmadan sonuç basmaz. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/heart",
+    title: "HEP Skoru — HIT — HIT uzman olasılık skoru",
+    description: "HEP Skoru — HIT: HIT uzman olasılık skoru — 8 özellik, alternatif nedenler eksi puan; < 2 düşük olasılık. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/hep-skoru",
   },
 };
 
@@ -22,44 +22,26 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "HEART Skoru",
-          aciklama: "HEART Skoru: Akut göğüs ağrısı kardiyak risk triyajı — 5 kriterin beşi de yanıtlanmadan sonuç basmaz. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/heart",
+          ad: "HEP Skoru — HIT",
+          aciklama: "HEP Skoru — HIT: HIT uzman olasılık skoru — 8 özellik, alternatif nedenler eksi puan; < 2 düşük olasılık. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/hep-skoru",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "HEART Skoru", yol: "/tools/heart" },
+          { ad: "HEP Skoru — HIT", yol: "/tools/hep-skoru" },
         ])}
       />
       {children}
-      <nav aria-label="Bu aracın geçtiği konular" className="bg-slate-50 px-4 pb-6 font-sans">
-        <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
-            Bu aracın geçtiği konular
-          </h2>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/topics/kardiyoloji/akut-koroner-sendromlar" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Akut Koroner Sendromlar (STEMI ve NSTEMI)
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+
       <nav aria-label="Aynı kategoriden araçlar" className="bg-slate-50 px-4 pb-10 font-sans">
         <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
             Acil & Kritik Bakım kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/hep-skoru" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                HEP Skoru — HIT
-              </Link>
-            </li>
             <li>
               <Link href="/tools/canadian-ct" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Kanada BT Kural
@@ -83,6 +65,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/perc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 PERC Kriterleri
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/qsofa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                qSOFA Skoru
               </Link>
             </li>
           </ul>
