@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "id": "heparin-induklu-trombositopeni",
+    "branch": "hematoloji",
+    "baslik": "Heparin İndüklü Trombositopeni (HİT)",
+    "altbaslik": "İleri düzey immünopatofizyoloji, otoimmün HİT ve VITT spektrumu, OD–SRA korelasyonu, venöz uzuv gangreni, DTI farmakokinetiği ve CPB protokolleri",
+    "rozetler": ["YENİ"],
+    "guncelleme": "2026-09"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": false,
+    "vaka": false,
+    "video": false
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanım",
+      "satirlar": [
+        { "metin": "Heparin İndüklü Trombositopeni (HİT), heparine maruziyet sonrası gelişen, paradoksik bir şekilde hem trombositopeni hem de hayatı tehdit eden venöz ve arteriyel tromboz riski ile seyreden, immün aracılı primer bir hiperkoagülabilite tablosudur. Klinik pratikte en sık aşırı tanı (overdiagnosis) konulan hematolojik acillerden biri olan HİT'te, patojenik antikorların tespiti ve klinikle korelasyonu karmaşık bir laboratuvar ve farmakoterapi yönetimi gerektirir." }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tip I ve Tip II HİT Ayrımı",
+      "kolonlar": ["Tip", "Özellikler"],
+      "satirlar": [
+        { "renk": "mavi", "hucreler": ["Tip I HİT (Non-immün)", "Heparinin trombositler üzerindeki doğrudan fiziksel etkisine ve sekestrasyonuna bağlı gelişen, immün yanıt içermeyen, 1-4 gün içinde hafif trombosit düşüşüyle (genellikle >100.000/µL) seyreden ve heparinin kesilmesine gerek kalmadan kendiliğinden düzelen benign bir tablodur."] },
+        { "renk": "kirmizi", "hucreler": ["Tip II HİT (İmmün-Aracılı)", "Trombosit Faktör 4 (PF4) ve heparin kompleksine karşı gelişen patojenik İmmünoglobulin G (IgG) antikorlarının yönlendirdiği, şiddetli trombositopeni ve yüksek tromboembolik komplikasyon riski (%30-%80) taşıyan tablodur."] }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Patofizyolojik Akış",
+      "satirlar": [
+        { "metin": "**1.** Heparin + PF4 Kompleks Formasyonu (1:1 ila 1:2 stokiyometrik)" },
+        { "metin": "**2.** Neoepitop Maruziyeti & B Hücre Yanıtı (Marginal Zone B-Cell IgG Üretimi)" },
+        { "metin": "**3.** IgG - PF4 - Heparin İmmün Kompleksi" },
+        { "metin": "**4.** Üç kola ayrılır: Trombosit Aktivasyonu (FcγRIIa Çapraz Bağlanma) → Prokoagülan Mikropartikül Salınımı & Tüketim · Monosit Aktivasyonu (FcγRIIa Üzerinden) → Doku Faktörü (TF) Ekspresyonu · Endotel Aktivasyonu (Heparan Sülfat Bağlanma) → Endotel Hasarı & TF Ekspresyon Artışı" },
+        { "metin": "**5.** Masif Trombin Jenerasyonu & Trombositopeni / Tromboz (HİT-T)" }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Ultra-Büyük Kompleksler (ULC) ve İmmünojenite",
+      "satirlar": [
+        { "metin": "PF4, trombosit α-granüllerinde depolanan, pozitif yüklü bir CXC kemokindir. Aktivasyonla salınan PF4, vasküler endotel yüzeyindeki negatif yüklü glikozaminoglikanlara (GAG) bağlanır. Sistemik heparin verildiğinde, PF4 heparine daha yüksek konformasyonel afinite gösterir." },
+        { "metin": "İmmün yanıtın oluşmasında stokiyometrik oran kritiktir: PF4 ve heparinin molar oranı 1:1 ila 1:2 olduğunda, yük nötralizasyonu gerçekleşir ve PF4 oligomerleri oligomerize olarak **Ultra-Büyük Kompleksler (ULC - Ultralarge Complexes)** oluşturur. Bu fiziksel değişim, PF4 molekülünde konformasyonel bir kırılmaya yol açarak normalde gizli olan immünolojik neoepitopları açığa çıkarır. Neoepitoplar marjinal bölge B hücresel reseptörleri (CD21) tarafından tanınır ve IgG antikor yanıtı indüklenir." }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Pansellüler Aktivasyon Kinetiği",
+      "satirlar": [
+        { "metin": "Patojenik IgG antikorları oluştuktan sonra, tromboz fırtınası sadece trombositlerle sınırlı kalmaz; pansellüler bir aktivasyon ağı tetiklenir:" },
+        { "metin": "**1. Trombosit Kinetiği:** IgG-PF4-Heparin immün kompleksleri, trombosit yüzeyindeki FcγRIIa (CD32) reseptörlerini çapraz bağlar (cross-linking). Bu etkileşim masif trombosit agregasyonuna, granül salınımına ve protrombotik mikropartiküllerin dolaşıma fırlatılmasına neden olur." },
+        { "metin": "**2. Monosit Fonksiyonu:** Antikor kompleksleri monosit FcγRIIa reseptörlerini uyararak Doku Faktörü (Tissue Factor - TF) ekspresyonunu dramatik şekilde artırır." },
+        { "metin": "**3. Endotel Yüzey Hasarı:** Antikorlar, endotel yüzeyine tutunmuş PF4-heparan sülfat komplekslerine bağlanarak endotel hasarı yaratır, vWF iplikçikleri (strings) salınmasını sağlar ve doku faktörü eksprese ettirir." },
+        { "metin": "**4. Nötrofil Aktivasyonu ve NETosis:** İmmün kompleksler nötrofil FcγRIIa reseptörlerini uyararak NETosis (Neutrophil Extracellular Traps) sürecini başlatır. Ekstrasellüler DNA, sitrüline histon H3 ve trombosit içeren intravasküler immün-trombusler oluşur." },
+        { "metin": "**5. Protein C Yolu İnhibisyonu:** HİT antikorları, trombomodulin üzerindeki kondroitin sülfata bağlanan PF4 etkileşimini bozarak Aktive Protein C (aPC) jenerasyonunu baskılar ve antikoagülan fren mekanizmasını felç eder." }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Otoimmün HİT (aHIT) Spektrumu",
+      "satirlar": [
+        { "metin": "Klasik HİT'te (cHIT) antikorlar kesinlikle heparine bağımlıyken, yakın dönem araştırmaları heparinden bağımsız olarak trombosit aktive edebilen Otoimmün HİT (aHIT) fenotiplerini tanımlamıştır." }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Antikor İmmünofenotipleri",
+      "kolonlar": ["Heparine Bağımlı Antikorlar", "Heparinden Bağımsız Antikorlar"],
+      "satirlar": [
+        { "hucreler": ["Klasik HİT (cHIT)", "Autoimmune HİT (aHIT) Alt Tipleri: Delayed-Onset HİT · Persisting / Refractory HİT · Spontaneous HİT · Flush HİT · Fondaparinux-Associated HİT"] },
+        { "hucreler": ["Erken Aşama Otoimmün HİT", "VITT & VITT-Like Bozukluklar"] }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Autoimmune HİT Alt Tipleri",
+      "kolonlar": ["Alt Tip", "Tanım"],
+      "satirlar": [
+        { "hucreler": ["Delayed-Onset HİT (Gecikmiş Başlangıçlı HİT)", "Heparin tedavisi kesildikten en az 5 gün sonra başlayan veya var olan trombositopeni/trombozun heparinsiz dönemde şiddetlenerek devam ettiği durumdur."] },
+        { "hucreler": ["Persisting (Refractory) HİT", "Heparin kesilmesine rağmen trombositopeninin 1 ila 2 haftadan daha uzun süre düzelmediği dirençli tablodur."] },
+        { "hucreler": ["Heparin \"Flush\" HİT", "Hastanın sistemik antikoagülasyon almayıp yalnızca santral kateter kapama/yıkama (flush) heparinlerine maruz kalmasıyla tetiklenen tablodur."] },
+        { "hucreler": ["Fondaparinux-Associated HİT", "Fondaparinux tedavisinde iken ortaya çıkan, antikorların fondaparinux varlığında trombosit aktivasyon gücünün arttığı aHIT tablosudur."] },
+        { "hucreler": ["Spontaneous HİT (Spontan HİT)", "Proksimal bir heparin maruziyeti olmaksızın, sıklıkla geçirilmiş ortopedik cerrahi (özellikle diz artroplastisi) veya ağır bakteriyel/viral enfeksiyonları takiben gelişen klinik HİT tablosudur. Bakteriyel hücre duvarı lipit A bileşenlerinin PF4 ile birleşerek ön-immünizasyon yaratması mekanizmadan sorumlu tutulmaktadır."] }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "VITT ve VITT-Like Bozukluklar Ayrımı",
+      "satirlar": [
+        { "metin": "Adenovirüs vektörlü aşılara (veya adenoviral enfeksiyonlara/CMV enfeksiyonlarına) sekonder gelişen VITT (Vaccine-induced Immune Thrombotic Thrombocytopenia) ve VITT-like bozukluklarda antikorlar, PF4 üzerindeki heparin bağlama bölgesine (heparin-binding site) yüksek afiniteyle doğrudan bağlanır." },
+        { "metin": "VITT antikorları oligo/monoklonal özelliktedir ve heparinden bağımsız çalışır." }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "baslik": "Laboratuvar Paradoksu",
+      "metin": "Hızlı otomatize PF4/heparin tayinleri (CLIA, LIA) VITT antikorlarında yanlış negatif sonuç verir. Tanı ancak standart anti-PF4 ELISA assay'lerinde yüksek Optik Dansite (OD >2.0-3.0) elde edilmesi ve sıvı fazlı yeni nesil hızlı anti-PF4 testleri (örn. AcuStar) ile konulabilir."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "4Ts Pretest Klinik Skorlama Sistemi (Maksimum Skor: 8)",
+      "kolonlar": ["Kriter", "2 Puan", "1 Puan", "0 Puan"],
+      "satirlar": [
+        { "hucreler": ["Thrombocytopenia (Trombositopeni)", "Trombosit düşüşü >%50 ve nadir ≥20 × 10⁹/L", "%30-%50 düşüş veya nadir 10-19 × 10⁹/L", "Düşüş <%30 veya nadir <10 × 10⁹/L"] },
+        { "hucreler": ["Timing of onset (Zamanlama)", "Düşüşün 5-10. günlerde başlaması veya son 30 günde heparin öyküsü varsa ≤1 günde düşüş", ">10. günde veya 31-100 gün önce heparin öyküsüyle ≤1 günde düşüş", "≤4. günde heparinsiz düşüş"] },
+        { "hucreler": ["Thrombosis or other sequelae (Tromboz/Sekel)", "Kanıtlanmış yeni tromboz, deri nekrozu veya IV bolus sonrası akut sistemik reaksiyon", "Progresif/tekrarlayan tromboz, eritematöz deri lezyonu", "Yok"] },
+        { "hucreler": ["oTher cause for thrombocytopenia (Diğer Nedenler)", "Başka açıklayıcı neden yok", "Olası başka neden var", "Kesin başka neden var"] }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "4Ts Skorunun Yorumu",
+      "kolonlar": ["Puan", "Olasılık", "Yaklaşım"],
+      "satirlar": [
+        { "renk": "yesil", "hucreler": ["0 - 3", "Düşük (<%1-%5)", "İleri tetkik ve heparin kesilmesi önerilmez."] },
+        { "renk": "sari", "hucreler": ["4 - 5", "Orta (~%10-%14)", "Heparin kesilmeli, alternatif antikoagülasyon başlanmalı ve test istenmelidir."] },
+        { "renk": "kirmizi", "hucreler": ["6 - 8", "Yüksek (~%50-%64)", "Acil non-heparin antikoagülan başlanmalı ve laboratuvar doğrulamasına gidilmelidir."] }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "İmmünolojik Assay'ler",
+      "satirlar": [
+        { "metin": "Solid-faz ELISA testleri anti-PF4/heparin kompleks antikorlarını tespit eder. Yüksek duyarlılığa (>%98) karşın özgüllükleri düşüktür. Özgüllüğü artırmak için yalnızca IgG-spesifik ELISA kiti kullanılmalıdır." }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "ELISA Optik Dansite (OD) Değeri ve SRA Pozitiflik Korelasyonu",
+      "kolonlar": ["ELISA OD Aralığı", "SRA Pozitiflik Olasılığı", "Klinik Yorum"],
+      "satirlar": [
+        { "renk": "yesil", "hucreler": ["OD <0.40", "%0.0 - %0.1", "HİT Eksklüde Edilir"] },
+        { "hucreler": ["OD 0.40 - 0.99", "%1.0 - %5.0", "Zayıf Pozitif"] },
+        { "renk": "sari", "hucreler": ["OD 1.00 - 1.39", "%18.0 - %30.0", "Orta Pozitif"] },
+        { "renk": "sari", "hucreler": ["OD 1.40 - 1.99", "%50.0 - %58.0", "Güçlü Olasılık"] },
+        { "renk": "kirmizi", "hucreler": ["OD ≥2.00", "%89.0 - %100.0", "Kesin HİT Tanısı"] }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Otomatize Hızlı Assay'ler (LIA ve CLIA)",
+      "satirlar": [
+        { "metin": "**Latex Immunoassay (LIA):** Trombosit içermeyen plazmada monoklonal HİT benzeri antikor inhibitör yarışmasını ölçer." },
+        { "metin": "**Chemiluminescence Immunoassay (CLIA):** Tam otomatize, 30 dakikada sonuç veren, IgG spesifik hassas testtir." },
+        { "metin": "**İkili LIA/CLIA Skoru (6 Puan Ölçeği):** LIA ve CLIA sonuçlarının 0-3 arası puanlanarak toplanmasıyla elde edilen ≥4 puan kombinasyonu, SRA konfirmasyonu ile %98 özgüllük ve %99 duyarlılık uyumu gösterir." }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Fonksiyonel Assay'ler (Gold Standard)",
+      "satirlar": [
+        { "metin": "**1. Serotonin Release Assay (¹⁴C-SRA):** Trombosit aktivasyonunun altın standardıdır. Radyoaktif ¹⁴C-serotonin ile yüklenmiş, yıkanmış donör trombositleri, hasta serumu ve heparin ile inkübe edilir." },
+        { "metin": "**Pozitiflik Kriteri:** Terapötik heparin konsantrasyonunda (0.1-0.3 IU/mL) %20'den fazla serotonin salınımı olması VE supraterapötik yüksek heparin konsantrasyonunda (100 IU/mL) bu salınımın inhibe olmasıdır (heparin bağımlılığı doğrulaması)." },
+        { "metin": "**2. Heparin-Induced Platelet Activation (HIPA):** Yıkanmış donör trombosit agregasyonunun mikrotitre plaklarında optik olarak değerlendirilmesidir." },
+        { "metin": "**3. SRA-Negatif HİT ve Çözümü:** Klinik olarak güçlü HİT tablosu olup SRA testi negatif gelen vakalarda, ortama ekstra PF4 eklenerek yapılan PF4-enhanced SRA veya akım sitometrik P-Selectin Ekspresyon Tayini (PEA) yapılmalıdır." }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Venöz Uzuv Gangreni (VLG) ve Warfarin İndüklü Prokoagülan Fırtına",
+      "satirlar": [
+        { "metin": "HİT seyrinde gelişebilen en dramatik komplikasyonlardan biri, nabızların korunduğu ancak mikrovasküler yatakta masif trombozun geliştiği Venöz Uzuv Gangreni (Venous Limb Gangrene - VLG) ve Warfarin Deri Nekrozu tablosudur." },
+        { "metin": "**Akış:** Warfarin Kullanımı / Başlanması (Erken Aşama) → Hızlı Protein C (ve Protein S) Seviye Düşüşü (Yarı Ömrü Kısa: ~6 Saat) → HİT Antikorlarının İndüklediği Aşırı Trombin Jenerasyonu (Faktör II & X Henüz Baskılanmadı) → Antikoagülan / Prokoagülan Denge Bozulması (INR >4.0 - 5.0) → Mikrovasküler Tromboz & Derin Ven Trombozu Bileşimi → Venöz Uzuv Gangreni (VLG)" },
+        { "metin": "**Patojenik Mekanizma:** HİT akut evresinde trombosit aktivasyonu sebebiyle masif bir trombin jenerasyonu vardır. Bu aşamada hastaya Warfarin (veya diğer K vitamini antagonistleri) verildiğinde, K vitaminine bağımlı doğal antikoagülan olan Protein C ve Protein S yarı ömürleri çok kısa olduğu için (~6 saat) hızla tükenir. Buna karşın prokoagülan faktörler (Faktör II ve X) dolaşımda kalmaya devam eder." },
+        { "metin": "Bu durum, koagülasyon dengesini aşırı derecede protrombotik yöne kaydırır. DVT olan ekstremitede mikrovasküler trombotik tıkanma gelişir; INR yükselir (>4.0-5.0), ancak bu yükselme antikoagülasyonu değil, Protein C çöküşünü yansıtır." }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "baslik": "Kritik Yönetim Kuralları",
+      "metin": "**1.** Akut HİT tanısı konulduğunda veya şüphesinde Warfarin derhal kesilmelidir. **2.** Hastaya derhal İntravenöz K Vitamini (5-10 mg) uygulanarak Protein C sentezi desteklenmelidir. **3.** Warfarin, ancak ve ancak non-heparin bir antikoagülan altında trombosit sayısı en az 150 × 10⁹/L düzeyine ulaştıktan sonra, düşük dozda (2.5-5 mg) başlanmalı ve en az 5 gün çakıştırma (overlap) yapılmalıdır."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "baslik": "İleri Farmakoterapi — Temel İlke",
+      "metin": "HİT tanısı konur konmaz (veya orta/yüksek 4Ts skorunda test beklenirken) TÜM HEPARİN ÜRÜNLERİ KESİLMELİDİR (LMWH, heparinle yıkanmış kateterler, heparin kaplı stent/kanüller dahil). Trombositopeni varlığında dahi profilaktik değil, tam doz terapötik antikoagülasyon başlanmalıdır."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Alternatif Parenteral ve Oral Antikoagülan Parametreleri",
+      "kolonlar": ["İlaç", "Etki Mekanizması", "Eliminasyon / Yarı Ömrü", "Monitörizasyon", "Karaciğer Yetmezliği Dozajı", "Böbrek Yetmezliği / HD Dozajı"],
+      "satirlar": [
+        { "hucreler": ["Argatroban", "Doğrudan Trombin İnhibitörü (DTI)", "Hepatobiliyer · t1/2: 40-50 dk", "aPTT (1.5 - 3.0x) · Hedef: 50-100 sn", "Akut Düşürülmeli (0.5 µg/kg/dk)", "Doz Ayarı Gerekmez (1 - 2 µg/kg/dk)"] },
+        { "hucreler": ["Bivalirudin", "Doğrudan Trombin İnhibitörü (DTI)", "Enzimolitik (%80) · Renal (%20) · t1/2: 25 dk", "aPTT (1.5 - 2.5x) · KYS / CPB'de ACT (>300-480 sn)", "Doz Ayarı Gerekmez (0.15 - 0.20 mg/kg/h)", "Doz Azaltılmalı (0.03 - 0.05 mg/kg/h)"] },
+        { "hucreler": ["Fondaparinux", "Dolaylı Faktör Xa İnhibitörü", "Böbrek · t1/2: 17 saat", "Rutin Gerekmez (Anti-Xa düzeyi)", "Doz Ayarı Gerekmez", "CrCl <30 mL/dk KONTRENDİKE"] },
+        { "hucreler": ["Rivaroksaban (DOAC)", "Doğrudan Faktör Xa İnhibitörü", "Renal & Karaciğer · t1/2: 5-9 saat", "Rutin Gerekmez", "Orta/Şiddetli Yetmezlik Kontrendike", "CrCl <15 mL/dk Kontrendike"] }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Parenteral Direkt Trombin İnhibitörleri (DTI)",
+      "satirlar": [
+        { "metin": "**1. Argatroban — Farmakokinetik:** Sentetik küçük moleküllü DTI'dır. Yalnızca hepatobiliyer yoldan elimine edilir." },
+        { "metin": "**Dozlama:** Normal karaciğer fonksiyonunda başlangıç dozu 1 - 2 µg/kg/dk'dır. Karaciğer yetmezliği, Yoğun Bakım (YBÜ) hastaları, kalp yetmezliği veya kardiyak cerrahi sonrası başlangıç dozu 0.5 µg/kg/dk seviyesine düşürülmelidir." },
+        { "metin": "**Takip:** aPTT ile izlenir (Hedef: Bazal değerin 1.5 - 3.0 katı, maksimal aPTT <100 saniye)." },
+        { "metin": "**INR Etkisi:** Argatroban, protrombin zamanını (PT/INR) belirgin şekilde uzatır. Warfarin geçişinde bu yalancı yükseklik göz önüne alınmalı, kromojenik Faktör X düzeyi veya DTI kesildikten 4 saat sonraki INR takip edilmelidir." },
+        { "metin": "**2. Bivalirudin — Farmakokinetik:** Sülfatsız hirudin türevi 20-aminoasit peptid DTI'dır. Proteolitik/enzimolitik plazma esterazları (%80) ve böbrekler (%20) yoluyla temizlenir. Yarı ömrü çok kısadır (~25 dakika)." },
+        { "metin": "**Kullanım Alanları:** Girişimsel kardiyoloji (PCI), vasküler cerrahi ve Açık Kalp Cerrahisinde (CPB) birinci basamak antikoagülandır." },
+        { "metin": "**Medikal Dozlama:** 0.15 - 0.20 mg/kg/saat sürekli infüzyon (aPTT 1.5 - 2.5 katı)." }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "DOAC'lar ve Fondaparinux",
+      "satirlar": [
+        { "metin": "**Fondaparinux:** PF4 ile oligomer oluşturma afinitesi yok denecek kadar düşüktür. Yarı ömrü 17 saattir. Ağır böbrek yetmezliğinde (CrCl <30 mL/dk) birikme ve kanama riski nedeniyle kontrendikedir." },
+        { "metin": "**DOAC'lar (Rivaroksaban, Apiksaban):** HİT antikorlarını uyarmadıkları için akut ve idame HİT tedavisinde onay dışı (off-label) olarak kullanımı hızla yaygınlaşmaktadır." },
+        { "metin": "**Rivaroksaban Akut Dozlama:** 2 × 15 mg/gün (21 gün), ardından 1 × 20 mg/gün idame." },
+        { "metin": "**Apiksaban Akut Dozlama:** 2 × 10 mg/gün (7 gün), ardından 2 × 5 mg/gün idame." }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Özel Cerrahi ve Ekstrakorporeal Girişim: HİT Öyküsü Olan Cerrahi Adayı",
+      "kolonlar": ["SRA / Fonksiyonel Antikor Durumu", "Yaklaşım"],
+      "satirlar": [
+        { "renk": "sari", "hucreler": ["Antikor Pozitif / Akut — Elektif cerrahi", "ERTELE (>100 Gün) — Antikor negatifliğini bekle"] },
+        { "renk": "kirmizi", "hucreler": ["Antikor Pozitif / Akut — Acil cerrahi şartsa", "1. Bivalirudin kullan · 2. PEx (Plazmaferez) · 3. Yüksek doz IVIg"] },
+        { "renk": "yesil", "hucreler": ["Antikor Negatif / Remote", "İntraoperatif tek doz heparin kullanımı (Pre/Post-op heparin KESİNLİKLE YASAK)"] }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Erteleme Stratejisi",
+      "satirlar": [
+        { "metin": "Kardiyak cerrahi (Kardiyopulmoner Baypas - CPB) veya akut vasküler revaskülarizasyon gereken HİT hastalarında yönetim stratejisi hastalığın evresine göre belirlenir." },
+        { "metin": "Fonksiyonel antikorları (SRA) pozitif olan akut veya subakut HİT vakalarında elektif ameliyatlar, antikorlar tamamen kaybolana kadar (~100 gün) ertelenmelidir. Antikorlar negatifleştikten sonra (Remote HİT evresi), kardiyak cerrahide yalnızca intraoperatif heparin kullanılabilir; ancak ameliyat öncesi ve sonrası heparin flush'ları dahi dahil tüm heparinler kesinlikle yasaklanmalıdır." }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Acil Cerrahi ve CPB Protokolleri (Ertelenemeyen Vakalar)",
+      "satirlar": [
+        { "metin": "**1. İntraoperatif Bivalirudin Kullanımı:** CPB cihazı için heparine en güvenli alternatiftir. **CPB Dozlama:** 1.0 mg/kg IV bolus, ardından 2.5 mg/kg/saat infüzyon (CPB prime solüsyonuna 50 mg eklenir). Hedef ACT >480 saniyedir." },
+        { "metin": "**2. Terapötik Plazma Değişimi (PEx / Plazmaferez):** Ameliyat öncesi veya sırasında 1-2 seans plazmaferez uygulanarak dolaşımdaki HİT antikorları temizlenir." },
+        { "metin": "**Plazma Replasmanı Kuralı:** Plazma değişiminde Albumin DEĞİL, Taze Donmuş Plazma (TDP) kullanılmalıdır. Donör plazmasındaki poliklonal IgG2, hastanın trombosit FcγRIIa reseptörlerini kompetitif olarak bloklayarak kalan HİT antikorlarının trombositleri aktive etmesini engeller. Antikor seviyesi düşürüldükten sonra kardiyak cerrahide standart heparin güvenle kullanılabilir." },
+        { "metin": "**3. Yüksek Doz IVIg Uygulaması:** Ameliyat öncesi 1 - 2 g/kg (2 günde bölünmüş) İntravenöz İmmünoglobulin (IVIg) infüzyonu verilir. Monomerik IgG, trombosit FcγRIIa reseptörlerini doyurarak HİT komplekslerinin bağlanmasını bloke eder." },
+        { "metin": "**4. Antiplatelet Ajan Çapraz Kombinasyonları:** Heparin ile birlikte geçici etkili antiplatelet ajanların (Tirofiban veya Epoprostenol) verilerek trombositlerin cerrahi boyunca \"anesteziye\" alınması stratejisidir." }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "baslik": "Tedavi Tuzakları ve Sık Yapılan Hatalar",
+      "metin": "**Profilaktik Trombosit Transfüzyonu Kontrendikedir:** Aktif kanama veya aşırı invaziv girişim gereksinimi olmadıkça HİT hastalarına trombosit transfüzyonu yapılmamalıdır. Verilen trombositler dolaşımdaki antikorlarca anında aktive edilerek arteriyel tromboz ve uzuv kaybı riskini katlar. **Geçici Vena Cava Filtrelerinden Kaçınılmalıdır:** Akut HİT hastalarında DVT varlığında Vena Cava Filtresi (IVC filter) takılması trombotik oklüzyon ve venöz gangren riskini artırır. **aPTT Confounding (Yalancı Uzama):** Şiddetli HİT vakalarında gelişen Tüketim Koagülopatisi (Yaygın Damar İçi Pıhtılaşma - DİK) zemininde aPTT bazal olarak uzar. Bu durumda DTI (Argatroban) infüzyonu aPTT'ye bakılarak aşırı kısılırsa, yetersiz antikoagülasyon sebebiyle mikrovasküler tromboz ilerler. Bu olgularda anti-IIa kromojenik DTI düzey takibi tercih edilmelidir."
+    }
+  ]
+}

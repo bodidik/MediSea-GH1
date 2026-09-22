@@ -76,6 +76,12 @@
           "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim",
           "rozetler": ["YENİ", "SINAV SPOTU"],
           "hazir": true
+        },
+        {
+          "id": "heparin-induklu-trombositopeni",
+          "baslik": "Heparin İndüklü Trombositopeni (HİT)",
+          "rozetler": ["YENİ"],
+          "hazir": true
         }
       ]
     }
