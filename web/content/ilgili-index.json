@@ -7176,6 +7176,11 @@
    "brans": "palyatif",
    "slug": "opioidler-ana-sayfa",
    "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "pankreas-kanserinde-refrakter-agri",
+   "baslik": "Pankreas Kanserinde Refrakter Ağrı Yönetimi"
   }
  ],
  "onkoloji/febril-notropeni-cisne-indexi": [
@@ -7251,13 +7256,18 @@
  "onkoloji/kanser-agrisi-yonetimi": [
   {
    "brans": "palyatif",
+   "slug": "opioid-toleransi-mekanizmalari",
+   "baslik": "İleri Okuma: Opioid Toleransı ve Çapraz Tolerans Mekanizmaları"
+  },
+  {
+   "brans": "palyatif",
    "slug": "palyatif-bakimda-agri-yonetimi",
    "baslik": "Palyatif Bakımda Ağrı Yönetimi"
   },
   {
    "brans": "palyatif",
-   "slug": "opioid-toleransi-mekanizmalari",
-   "baslik": "İleri Okuma: Opioid Toleransı ve Çapraz Tolerans Mekanizmaları"
+   "slug": "pankreas-kanserinde-refrakter-agri",
+   "baslik": "Pankreas Kanserinde Refrakter Ağrı Yönetimi"
   },
   {
    "brans": "palyatif",
@@ -7441,6 +7451,11 @@
    "brans": "palyatif",
    "slug": "opioid-toleransi-mekanizmalari",
    "baslik": "İleri Okuma: Opioid Toleransı ve Çapraz Tolerans Mekanizmaları"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "pankreas-kanserinde-refrakter-agri",
+   "baslik": "Pankreas Kanserinde Refrakter Ağrı Yönetimi"
   }
  ],
  "onkoloji/pankreas-kanseri-ana-sayfa": [
@@ -7808,6 +7823,28 @@
   }
  ],
  "palyatif/palyatif-bakimda-agri-yonetimi": [
+  {
+   "brans": "onkoloji",
+   "slug": "buprenorfin-rotasyonu-ve-induksiyon",
+   "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
+   "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "opioid-rotasyonu-2025-konsensus",
+   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
+  }
+ ],
+ "palyatif/pankreas-kanserinde-refrakter-agri": [
   {
    "brans": "onkoloji",
    "slug": "buprenorfin-rotasyonu-ve-induksiyon",

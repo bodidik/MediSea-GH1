@@ -1,0 +1,44 @@
+{
+  "title": "Pankreas Kanserinde Refrakter Ağrı Yönetimi",
+  "meta": {
+    "updatedAt": "22 Eyl 2026",
+    "tags": [
+      "Palyatif Bakım",
+      "Pankreas Kanseri",
+      "Kanser Ağrısı",
+      "Çölyak Pleksus Nörolizi",
+      "Splanknik Blok",
+      "EUS",
+      "İntratekal Pompa",
+      "Koadjuvan"
+    ],
+    "parent": "palyatif-bakimda-agri-yonetimi",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Pankreas kanserinde dirençli (refrakter) ağrılar, tümörün anatomik lokalizasyonu ve retroperitoneal nöral invazyon potansiyeli nedeniyle en karmaşık klinik tablolar arasındadır. Visseral nosiseptif ağrı ile çölyak pleksus tutulumuna bağlı nöropatik bileşenin bir arada bulunduğu karma (mixed) bir patofizyoloji sergiler.</p>"
+    },
+    {
+      "heading": "Patofizyoloji ve Direnç Nedenleri",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Retroperitoneal Pleksus İnvazyonu:</strong> Tümörün çölyak pleksus ve splanknik sinir ağlarına doğrudan basısı/invazyonu, şiddetli yanıcı ve batıcı nitelikte nöropatik ağrıya yol açar.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Visseral Organ Gerilimi ve Obstrüksiyon:</strong> Pankreas kanalı obstrüksiyonu, biliyer stenoz veya kapsül gerilmesi belirgin visseral nosiseptif ağrı oluşturur.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Direnç / Tolere Edilemeyen Yan Etkiler:</strong> Sistemik opioidlerin tek başına kullanıldığı durumlarda, analjezik doza ulaşılmadan şiddetli sedasyon, bulantı, dirençli konstipasyon veya opioid indüklü hiperaljezi nedeniyle tedavi sınırlanabilir.</li></ul></div>"
+    },
+    {
+      "heading": "Girişimsel Algolojik Yaklaşımlar (WHO 4. Basamak ve Erken Müdahale)",
+      "html": "<h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">A. Çölyak Pleksus Nörolizi (CPN - Celiac Plexus Neurolysis)</h4><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Klinik Rolü:</strong> Pankreas kanserine bağlı üst abdominal visseral ağrıda en etkili girişimsel tedavi yöntemidir. Sistemik opioid ihtiyacını ve buna bağlı yan etkileri belirgin ölçüde azaltır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Uygulama Teknikleri:</strong> Endoskopik Ultrasonografi (EUS), Bilgisayarlı Tomografi (BT) veya Floroskopi rehberliğinde gerçekleştirilir. Ablasyonda genellikle <strong>%50–100 konsantrasyonda etil alkol</strong> veya <strong>%3–12'lik fenol</strong> solüsyonları kullanılır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Etki Süresi ve Başarı Oranı:</strong> Hastaların <strong>%50–80</strong>'inde <strong>2 ila 5 ay</strong> boyunca belirgin analjezik rahatlama sağlar.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Erken EUS-CPN Yaklaşımı:</strong> İleri evre opioid yetersizliğini beklemeden, tanısal EUS-İİAB anında yapılan \"erken\" EUS-CPN uygulamasının ağrı progresyonunu engellemede ve opioid tüketimini sınırlamada daha üstün olduğu gösterilmiştir.</li></ul></div><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">B. Splanknik Sinir Nörolizi (SBN - Splanchnic Nerve Block)</h4><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Th5–Th12 seviyesinden çıkan ve çölyak pleksusu oluşturan splanknik sinirlerin BT veya skopi rehberliğinde ablasyonudur.</li><li class=\"bg-slate-50 p-2 rounded\">• Çölyak bölgesinde tümör invazyonu veya lenfadenopati nedeniyle anatomik yapı bozulmuşsa ya da geçirilmiş CPN başarısız olmuşsa öncelikli seçenektir.</li></ul></div><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">C. İleri / Modifiye Nörolitik Teknikler</h4><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Genişletilmiş Pleksus Nörolizi (Broad Plexus Neurolysis):</strong> Çölyak pleksus ablasyonuna yanıt vermeyen vakalarda enjeksiyonun superior mezenterik arter (SMA) seviyesine kaydırılarak daha geniş nöral alanın hedeflenmesidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Çölyak Ganglion Nörolizi (CGN):</strong> Doğrudan EUS ile görselleştirilen ganglion içine enjeksiyon yapılmasıdır.</li></ul></div>"
+    },
+    {
+      "heading": "Optimize Farmakoterapi ve Koadjuvan Yönetimi",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Multimodal Opioid Rejimi:</strong> Oral (morfin, oksikodon, hidromorfon) veya transdermal (fentanil, buprenorfin) güçlü opioidlerin idame tedavisi, akut kırılma ağrıları için kısa etkili kurtarma dozlarıyla desteklenmelidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Nöropatik Koadjuvanlar:</strong> Retroperitoneal invazyona bağlı nöropatik bileşeni kontrol etmek amacıyla gabapentinoidler (pregabalin, gabapentin) veya SNRI (duloksetin) opioid şemasına eklenmelidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kortikosteroidler:</strong> Deksametazon, perinöral ödemi ve inflamasyonu azaltarak hem visseral kapsül gerilimini hafifletir hem de koadjuvan analjezik etki sunar.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>NMDA Antagonistleri (Ketamin):</strong> Santral sensitizasyonu ve opioid toleransını kırmak adına refrakter durumlarda düşük doz adjuvan ketamin uygulaması değerlendirilebilir.</li></ul></div>"
+    },
+    {
+      "heading": "Refrakter Ağrıda Gelişmiş Hedefli Yöntemler",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>İntratekal İlaç Dağıtım Sistemleri (ITDD / İntratekal Pompalar):</strong> Sistemik medikal tedaviye ve nörolitik bloklara dirençli, tolere edilemeyen opioid toksisitesi gelişen vakalarda intratekal morfin, lokal anestezikler (bupivakain) ve zikonotid kombinasyonları düşünülmelidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Onkolojik Tümör Küçültücü Tedaviler:</strong> FOLFIRINOX gibi etkili ilk basamak kemoterapi rejimleri ve palyatif radyoterapi, kitle etkisini ve nöral basıyı azaltarak sistemik analjeziye katkı sağlar.</li></ul></div>"
+    },
+    {
+      "heading": "İşlem Komplikasyonları ve Olası Yan Etkiler",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Transient Hipotansiyon:</strong> Sempatik denervasyona bağlı gelişir; işlem öncesi/sonrası IV sıvı replasmanıyla yönetilmelidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Transient Diyare:</strong> Parasempatik tonus artışına bağlı oluşur, genellikle geçicidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Geçici Sırt Ağrısı:</strong> Alkol/fenol enjeksiyonuna bağlı lokal doku iritasyonu sonucu ortaya çıkabilir.</li></ul></div>"
+    }
+  ]
+}
