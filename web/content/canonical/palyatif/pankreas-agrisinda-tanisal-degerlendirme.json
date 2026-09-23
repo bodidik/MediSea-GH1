@@ -1,0 +1,53 @@
+{
+  "title": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme",
+  "meta": {
+    "updatedAt": "22 Eyl 2026",
+    "tags": [
+      "Palyatif Bakım",
+      "Pankreas Kanseri",
+      "Kanser Ağrısı",
+      "Ağrı Ölçekleri",
+      "Nöropatik Ağrı",
+      "DN4",
+      "ESAS",
+      "EUS",
+      "Tanısal Çölyak Blok"
+    ],
+    "parent": "pankreas-kanserinde-refrakter-agri",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Dirençli (refrakter) pankreas kanseri ağrısının teşhis ve klinik değerlendirme süreci; patofizyolojik mekanizmanın, anatomik invazyon derecesinin, nöropatik bileşenlerin ve hastanın genel tabloya yanıtının multidisipliner bir yaklaşımla taranmasını gerektirir. Aşağıda dirençli pankreas tümörü ağrısının teşhisinde uygulanan standart tanısal yöntemler, derecelendirme araçları ve etiyolojik inceleme protokolleri detaylandırılmıştır.</p>"
+    },
+    {
+      "heading": "Kapsamlı Klinik Anamnez ve Mnemotik Değerlendirme Araçları",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Ağrının doğru yönetilebilmesi için öncelikle hasta bildirimine (self-report) dayanan öznel değerlendirme \"altın standart\" olarak kabul edilir. Ağrının başlangıcı, karakteri ve yerleşimi yapılandırılmış mnemotik araçlarla taranmalıdır:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>OPQRSTUV Modeli:</strong> Ağrının kaynağı (Onset), tetikleyen/rahatlatan faktörler (Provoking/Palliating), kalitesi (Quality), yayılımı (Region/Radiation), şiddeti (Severity), zamansal seyri (Timing/Treatment) ve hastaya etkisi (Understanding/Values) detaylıca sorgulanır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>SOCRATES Modeli:</strong> Ağrının lokalizasyonu (Site), başlangıcı (Onset), karakteri (Character), ışınlanması (Radiation), ilişkili semptomları (Associations), zamanlaması (Time course), artıran/azaltan etkenler (Exacerbating/Relieving factors) ve şiddeti (Severity) sistematik olarak değerlendirilir.</li></ul></div>"
+    },
+    {
+      "heading": "Konsensüs Tanı Kriterleri: AAPT / APS ve \"Midline Retroperitoneal Sendromu\"",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">AAPT (Analgesic, Anesthetic, and Addiction Clinical Trial Translations, Innovations, Opportunities, and Networks / American Pain Society) tarafından yayınlanan çekirdek tanı kriterleri uyarınca, pankreas kanserine bağlı kronik/dirençli ağrının tanısında şu klinik bulgular aranır:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Klinik Tablo ve Ağrı Karakteristiği:</strong> Üst abdomen veya epigastriumda konumlanan, sırtın orta/alt torakal bölgesine kuşak tarzında yayılan, sırtüstü (yatar pozisyonda) kötüleşip öne eğilmekle veya oturmakla hafifleyen \"oyucu\" (boring/gnawing) tarzdaki şiddetli ağrı.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Fizik Muayene Bulgusu:</strong> Üst abdominal palpasyonda belirgin hassasiyet varlığı.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Diğer Etiyolojilerin Ekarte Edilmesi:</strong> Mevcut abdominal ağrıyı açıklayabilecek obstipasyon, mekanik obstrüksiyon gibi farklı bir ikincil patolojinin bulunmaması.</li></ul></div>"
+    },
+    {
+      "heading": "Ağrı Şiddeti ve Çok Boyutlu Derecelendirme Ölçekleri",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Ağrının düzeyini ve tedaviye direncini belirlemek için doğrulanmış ölçekler kullanılmalıdır:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Tek Boyutlu Derecelendirme Ölçekleri:</strong> Sayısal Derecelendirme Ölçeği (NRS), Görsel Analog Ölçeği (VAS), Kategori Ölçekleri (Categorical Scale) veya Revize İfadeler Ölçeği (Faces Pain Scale - Revised) ile anlık, en şiddetli ve ortalama ağrı düzeyleri puanlanır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Çok Boyutlu ve Yaşam Kalitesi Ölçekleri:</strong> Pankreas tümörünün oluşturduğu dirençli tabloyu ve yeti yitimini değerlendirmek için Kısa Ağrı Envanteri (BPI), McGill Ağrı Anketi (MPQ / Short-Form MPQ), Entegre Palyatif Bakım Sonuç Ölçeği (IPOS), Edmonton Semptom Değerlendirme Sistemi (ESAS) ve EORTC QLQ-C30 ölçekleri uygulanır.</li></ul></div>"
+    },
+    {
+      "heading": "Nöropatik Bileşenin ve İletişim Kısıtlılığı Olan Hastaların Taraması",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Retroperitoneal çölyak pleksus ve splanknik sinir invazyonu sıklıkla dirençli nöropatik ağrı oluşturur:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Nöropatik Ağrı Tarama Anketleri:</strong> LANSS (Leeds Assessment of Neuropathic Symptoms and Signs), DN4 (Douleur Neuropathique 4), painDETECT ve Neuropathic Pain Scale anketleri kullanılarak nöropatik bileşen doğrulanır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Bilişsel Kısıtlılığı veya Yoğun Bakım Tablosundaki Hastalarda Gözlemsel Ölçekler:</strong> Kooperasyon kurulamayan ya da entübe vakalarda BPS (Behavioral Pain Scale), CPOT (Critical Care Pain Observation Tool), Abbey Pain Scale, Doloplus-2, PACSLAC veya PAINAD gibi davranışsal gözlem ölçekleri tercih edilir.</li></ul></div>"
+    },
+    {
+      "heading": "Görüntüleme Yöntemleri ve Anatomik Etiyoloji Tanısı",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Retroperitoneal infiltrasyonun ve kitle etkisinin tespiti için radyolojik ve endosonografik görüntüleme şarttır:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Bilgisayarlı Tomografi (BT) ve Manyetik Rezonans Görüntüleme (MRG):</strong> Tümörün boyutunu, arka karın duvarına ve retroperitoneal dokulara invazyonunu, çölyak pleksus basısını ve bölgesel lenfadenopatileri gösterir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Endoskopik Ultrasonografi (EUS) ve Doppler:</strong> Çölyak arteri etrafındaki çölyak ganglionlarını (hipoekoik, <strong>2–20 mm</strong> çapında oval/yuvarlak yapılar) ve sinir liflerini doğrudan görselleştirmede en hassas yöntemdir. Doppler ultrasonografi ile çevre vasküler yapılar ayırt edilir ve gerekirse tanısal EUS-FNA (İnce İğne Aspirasyon Biyopsisi) ile doku tanısı tamamlanır.</li></ul></div>"
+    },
+    {
+      "heading": "Tanısal Çölyak Pleksus Bloğu (Diagnostic Celiac Plexus Block)",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Dirençli abdominal ağrının çölyak pleksus aracılı visseral/sempatik nöral iletimden kaynaklandığını doğrulamak amacıyla yapılan girişimsel bir tanı yöntemidir:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Floroskopi, BT veya EUS rehberliğinde çölyak pleksus bölgesine kısa etkili lokal anestezik (örn. bupivakain veya lidokain) enjekte edilir.</li><li class=\"bg-slate-50 p-2 rounded\">• Enjeksiyon sonrasında hastanın ağrı skorlarında ani ve belirgin bir düşüş elde edilmesi (<strong>pozitif blok yanıtı</strong>), ağrının çölyak pleksus kaynaklı olduğunu teyit eder ve kalıcı nöroliz (alkol/fenol) veya radyofrekans ablasyon kararına rehberlik eder.</li></ul></div>"
+    },
+    {
+      "heading": "Onkolojik Acillerin ve \"Toplam Ağrı\" Boyutunun Taranması",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Acil Tabloların Ekarte Edilmesi:</strong> Dirençli krizlerde gastrointestinal kanama, içi boş organ perforasyonu, biliyer/pankreatik kanal obstrüksiyonu, enfeksiyon/apse veya nöroaksiyal metastaza bağlı spinal kord basısı riski ekarte edilmelidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>\"Toplam Ağrı\" Değerlendirmesi:</strong> Ağrı deneyiminin yalnızca fiziksel değil; psikolojik (anksiyete, depresyon), sosyal ve varoluşsal/spiritüel boyutlarını da kapsadığı dikkate alınmalı; psikolojik stresin fiziksel ağrıyı maskeleme/şiddetlendirme riski değerlendirilmelidir.</li></ul></div>"
+    }
+  ]
+}

@@ -7179,6 +7179,11 @@
   },
   {
    "brans": "palyatif",
+   "slug": "pankreas-agrisinda-tanisal-degerlendirme",
+   "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme"
+  },
+  {
+   "brans": "palyatif",
    "slug": "pankreas-kanserinde-refrakter-agri",
    "baslik": "Pankreas Kanserinde Refrakter Ağrı Yönetimi"
   }
@@ -7254,6 +7259,11 @@
   }
  ],
  "onkoloji/kanser-agrisi-yonetimi": [
+  {
+   "brans": "palyatif",
+   "slug": "pankreas-agrisinda-tanisal-degerlendirme",
+   "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme"
+  },
   {
    "brans": "palyatif",
    "slug": "opioid-toleransi-mekanizmalari",
@@ -7454,8 +7464,8 @@
   },
   {
    "brans": "palyatif",
-   "slug": "pankreas-kanserinde-refrakter-agri",
-   "baslik": "Pankreas Kanserinde Refrakter Ağrı Yönetimi"
+   "slug": "pankreas-agrisinda-tanisal-degerlendirme",
+   "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme"
   }
  ],
  "onkoloji/pankreas-kanseri-ana-sayfa": [
@@ -7842,6 +7852,38 @@
    "brans": "onkoloji",
    "slug": "opioid-rotasyonu-2025-konsensus",
    "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "pankreas-agrisinda-tanisal-degerlendirme",
+   "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme"
+  }
+ ],
+ "palyatif/pankreas-agrisinda-tanisal-degerlendirme": [
+  {
+   "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "buprenorfin-rotasyonu-ve-induksiyon",
+   "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
+   "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "opioid-rotasyonu-2025-konsensus",
+   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "palyatif-bakimda-agri-yonetimi",
+   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
   }
  ],
  "palyatif/pankreas-kanserinde-refrakter-agri": [

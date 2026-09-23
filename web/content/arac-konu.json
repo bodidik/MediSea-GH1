@@ -1127,6 +1127,13 @@
         "eslesen": "ESAS"
       }
     ],
+    "palyatif/pankreas-agrisinda-tanisal-degerlendirme": [
+      {
+        "slug": "esas",
+        "name": "ESAS",
+        "eslesen": "ESAS"
+      }
+    ],
     "romatoloji/behcet-hasar-indeksleri": [
       {
         "slug": "behcet",
@@ -1979,6 +1986,11 @@
         "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
         "baslik": "Palyatif Bakımda Ağrı Yönetimi",
         "eslesen": "ESAS"
+      },
+      {
+        "yol": "palyatif/pankreas-agrisinda-tanisal-degerlendirme",
+        "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme",
+        "eslesen": "ESAS"
       }
     ],
     "behcet": [
@@ -2046,10 +2058,10 @@
     ]
   },
   "olcum": {
-    "konu": 513,
+    "konu": 515,
     "arac": 257,
-    "araciOlanKonu": 140,
+    "araciOlanKonu": 141,
     "konusuOlanArac": 58,
-    "bag": 183
+    "bag": 184
   }
 }
