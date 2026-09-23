@@ -1075,6 +1075,13 @@
         "eslesen": "eGFR"
       }
     ],
+    "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik": [
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
+      }
+    ],
     "onkoloji/opioid-rotasyonu-2025-konsensus": [
       {
         "slug": "qtc",
@@ -1223,18 +1230,23 @@
         "eslesen": "QTc"
       },
       {
+        "yol": "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik",
+        "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik",
+        "eslesen": "QTc"
+      },
+      {
         "yol": "hematoloji/gilteritinib-flt3-aml",
         "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi",
         "eslesen": "QTc"
       },
       {
-        "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
-        "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
+        "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
+        "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
         "eslesen": "QTc"
       },
       {
-        "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
-        "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
+        "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
+        "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
         "eslesen": "QTc"
       },
       {
@@ -1250,11 +1262,6 @@
       {
         "yol": "endokrinoloji/men1-osilodrostat-yan-etkiler",
         "baslik": "Osilodrostat: Yan Etki Profili ve Klinik Yönetim Protokolleri",
-        "eslesen": "QTc"
-      },
-      {
-        "yol": "endokrinoloji/men1-spironolakton-cift-mekanizma",
-        "baslik": "Osilodrostat + Spironolakton: Çift Mekanizmalı Terapötik Koruma",
         "eslesen": "QTc"
       }
     ],
@@ -2008,10 +2015,10 @@
     ]
   },
   "olcum": {
-    "konu": 510,
+    "konu": 511,
     "arac": 257,
-    "araciOlanKonu": 137,
+    "araciOlanKonu": 138,
     "konusuOlanArac": 57,
-    "bag": 178
+    "bag": 179
   }
 }

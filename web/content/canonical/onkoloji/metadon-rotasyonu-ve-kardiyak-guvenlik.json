@@ -1,0 +1,53 @@
+{
+  "title": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik",
+  "meta": {
+    "updatedAt": "22 Eyl 2026",
+    "tags": [
+      "Onkoloji",
+      "Palyatif Bakım",
+      "Kanser Ağrısı",
+      "Metadon",
+      "Opioid Rotasyonu",
+      "QTc",
+      "Torsades de Pointes",
+      "EKG",
+      "Buprenorfin"
+    ],
+    "parent": "kanser-agrisi-yonetimi",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Metadon rotasyonunda \"3 Gün Geçiş Yöntemi\" (3-Day Switch Method), yüksek dozda veya uzun süredir başka bir güçlü opioid (morfin, oksikodon, fentanil vb.) alan kanser hastalarını metadona aşamalı ve güvenli bir şekilde geçirmek için kullanılan klinik bir protokoldür.</p>"
+    },
+    {
+      "heading": "Yöntemin Uygulama Şeması",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">3 gün kuralı uyarınca, hastanın mevcut kullandığı opioid kademeli olarak azaltılırken, hesaplanan yeni günlük metadon dozu eş zamanlı ve kademeli olarak tedaviye eklenir:</p><div class=\"overflow-x-auto mb-4\"><table class=\"w-full text-[11px] border-collapse\"><thead><tr class=\"bg-slate-100\"><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Gün</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Mevcut Opioid</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Metadon</th></tr></thead><tbody class=\"text-slate-700\"><tr><td class=\"border border-slate-200 p-2 font-bold\"><strong>1. Gün</strong></td><td class=\"border border-slate-200 p-2\">Doz 1/3 (%33) azaltılır (mevcut dozun <strong>%67</strong>'si verilir)</td><td class=\"border border-slate-200 p-2\">Hesaplanan günlük dozun <strong>1/3</strong>'ü (%33) başlanır</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\"><strong>2. Gün</strong></td><td class=\"border border-slate-200 p-2\">Bir 1/3 daha azaltılır (mevcut dozun <strong>%33</strong>'ü verilir)</td><td class=\"border border-slate-200 p-2\">Doz <strong>2/3</strong>'ye (%67) çıkarılır</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\"><strong>3. Gün</strong></td><td class=\"border border-slate-200 p-2\">Tamamen kesilir (<strong>%0</strong>)</td><td class=\"border border-slate-200 p-2\">Hesaplanan tam günlük doza (<strong>%100</strong>) ulaştırılır</td></tr></tbody></table></div>"
+    },
+    {
+      "heading": "Neden Tercih Edilir? (Ani Kesme / \"Stop-and-Go\" Yöntemine Üstünlüğü)",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Ağrı Krizi ve Yoksunluğu Önleme:</strong> Mevcut opioidin aniden kesilip doğrudan metadona geçildiği \"stop-and-go\" yönteminde, metadonun dokularda birikip tam analjezik etkiye ulaşması zaman alacağı için hastada şiddetli ağrı krizleri veya opioid yoksunluğu tetiklenebilir. 3 gün kuralı bu analjezik boşluğu kapatır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Toksisite ve Birikim (Akümülasyon) Riskini Azaltma:</strong> Metadonun yarılanma ömrü çok uzun ve değişken (<strong>15–120 saat</strong>) olduğundan, ani geçişlerde görülebilecek aşırı sedasyon ve solunum depresyonu riskini sınırlar.</li></ul></div>"
+    },
+    {
+      "heading": "Geçiş Sürecinde Kritik Hususlar",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kırılma Ağrısı (BTcP) Yönetimi:</strong> 3 günlük geçiş süresince hastanın yaşayabileceği geçici ağrı krizleri için kısa etkili bir opioid (örn. kısa etkili oral morfin veya hidromorfon) reçete edilmeli ve ihtiyaç halinde kurtarma dozu olarak verilmelidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Doz Titrasyonu ve Kararlı Durum (Steady-State) Bekleme Süresi:</strong> 3 günlük geçiş tamamlandıktan sonra metadonun kan düzeyinde kararlı duruma ulaşması en az <strong>5 ila 7 gün</strong> sürer. Bu nedenle 3. günün sonunda metadon dozu hemen artırılmamalı; yeni bir doz titrasyonu yapmadan önce mutlaka en az 5–7 gün beklenmelidir.</li></ul></div>"
+    },
+    {
+      "heading": "Kardiyak Risk Profili ve Risk Faktörleri",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Metadon rotasyonunda kardiyak güvenlik ve EKG/QTc izlemi, ilacın potansiyel olarak hayatı tehdit eden ritim bozukluklarına (Torsades de Pointes) ve ani kardiyak ölüme yol açabilme riski nedeniyle kritik bir yere sahiptir. Metadon, kalpte potansiyel olarak <strong>QTc aralığını uzatarak</strong> ventriküler aritmileri tetikleyebilir. Özellikle şu durumlarda kardiyak toksisite riski belirgin şekilde artar:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Yüksek Dozlar:</strong> Günlük 30–40 mg üzerindeki dozlarda ve özellikle <strong>120 mg ve üzeri</strong> yüksek dozlarda QTc uzaması riski çok daha yüksektir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Elektrolit Bozuklukları:</strong> Hipokalemi, hipomagnezemi veya hipokalsemi varlığı.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kardiyak Öykü:</strong> Yapısal kalp hastalığı, bradiaritmi veya doğumsal/edinilmiş uzun QT sendromu öyküsü.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Eş Zamanlı İlaç Kullanımı:</strong> QTc'yi uzatan diğer ilaçlar veya metadon metabolizmasını engelleyen (CYP3A4 inhibitörleri) ajanların varlığı.</li></ul></div>"
+    },
+    {
+      "heading": "EKG İzlem Protokolü (Ne Zaman ve Nasıl?)",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Aşama 1: Başlangıç (Baseline) EKG</strong></li><li class=\"p-2 pl-6 rounded\">– Metadon tedavisine başlanmadan önce, kardiyak hastalığı olanlarda, QTc'yi uzatan ek ilaç alanlarda veya hedeflenen metadon dozu <strong>30–40 mg/gün</strong> seviyesini aştığında başlangıç EKG'si çekilmelidir.</li><li class=\"p-2 pl-6 rounded\">– <em>İleri evre palyatif bakım hastalarında:</em> EKG çekiminin hastaya getireceği yük ile klinikte sağlayacağı fayda (yaşam hedefleri) dikkate alınarak karar verilir. Son 1 yıl içinde çekilmiş stabil bir EKG de kabul edilebilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Aşama 2: Takip EKG'leri</strong></li><li class=\"p-2 pl-6 rounded\">– Doz titrasyonu sırasında metadon dozu yaklaşık <strong>40 mg/gün</strong> seviyesine ulaştığında ve ardından <strong>100 mg/gün</strong> seviyesine çıktığında EKG tekrarlanmalıdır.</li><li class=\"p-2 pl-6 rounded\">– Stabil doz altındaki hastalarda ilk 30 günde ve sonrasında <strong>yıllık olarak</strong> EKG takibi önerilir.</li></ul></div>"
+    },
+    {
+      "heading": "QTc Eşik Değerleri ve Klinik Eylem Planı",
+      "html": "<div class=\"overflow-x-auto mb-4\"><table class=\"w-full text-[11px] border-collapse\"><thead><tr class=\"bg-slate-100\"><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">QTc Değeri (msn)</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Risk Düzeyi</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Önerilen Klinik Yaklaşım</th></tr></thead><tbody class=\"text-slate-700\"><tr><td class=\"border border-slate-200 p-2 font-bold\"><strong>&lt; 450 msn</strong></td><td class=\"border border-slate-200 p-2\">Normal / Düşük</td><td class=\"border border-slate-200 p-2\">Metadon tedavisi güvenle sürdürülür veya başlanabilir.</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\"><strong>450 – 500 msn</strong></td><td class=\"border border-slate-200 p-2\">Orta / Artmış Risk</td><td class=\"border border-slate-200 p-2\">Metadon <strong>çok dikkatli</strong> kullanılmalıdır. Elektrolit bozuklukları (K+, Mg++) düzeltilmeli, QTc'yi uzatan diğer ilaçlar gözden geçirilmeli veya alternatif bir opioide geçiş değerlendirilmelidir.</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\"><strong>&gt; 500 msn</strong></td><td class=\"border border-slate-200 p-2\">Yüksek Risk / Kontrendike</td><td class=\"border border-slate-200 p-2\"><strong>Metadon kullanılmamalıdır</strong> veya mevcut tedavi derhal kesilip başka bir opioide rotasyon yapılmalıdır.</td></tr></tbody></table></div>"
+    },
+    {
+      "heading": "QTc Uzamasında Alternatif Opioid Seçimi",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">QTc aralığı 500 msn üzerinde olan veya metadona bağlı kardiyak yan etki riski yüksek olan hastalarda <strong>buprenorfine</strong> geçiş tercih edilebilir. Buprenorfin de QTc üzerinde hafif etkide bulunabilmekle birlikte, metadona kıyasla klinik olarak anlamlı aritmilere (Torsades de Pointes) yol açma riski belirgin şekilde düşüktür. Alternatif olarak fentanil veya hidromorfon da değerlendirilebilir.</p>"
+    }
+  ]
+}
