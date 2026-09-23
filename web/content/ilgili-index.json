@@ -7179,13 +7179,13 @@
   },
   {
    "brans": "palyatif",
-   "slug": "pankreas-agrisinda-tanisal-degerlendirme",
-   "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme"
+   "slug": "noropatik-agrida-koadjuvan-tedavi",
+   "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi"
   },
   {
    "brans": "palyatif",
-   "slug": "pankreas-kanserinde-refrakter-agri",
-   "baslik": "Pankreas Kanserinde Refrakter Ağrı Yönetimi"
+   "slug": "pankreas-agrisinda-tanisal-degerlendirme",
+   "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme"
   }
  ],
  "onkoloji/febril-notropeni-cisne-indexi": [
@@ -7261,6 +7261,11 @@
  "onkoloji/kanser-agrisi-yonetimi": [
   {
    "brans": "palyatif",
+   "slug": "noropatik-agrida-koadjuvan-tedavi",
+   "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi"
+  },
+  {
+   "brans": "palyatif",
    "slug": "pankreas-agrisinda-tanisal-degerlendirme",
    "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme"
   },
@@ -7276,13 +7281,13 @@
   },
   {
    "brans": "palyatif",
-   "slug": "pankreas-kanserinde-refrakter-agri",
-   "baslik": "Pankreas Kanserinde Refrakter Ağrı Yönetimi"
+   "slug": "opioid-rotasyonu-ilkeleri",
+   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
   },
   {
    "brans": "palyatif",
-   "slug": "opioid-rotasyonu-ilkeleri",
-   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
+   "slug": "pankreas-kanserinde-refrakter-agri",
+   "baslik": "Pankreas Kanserinde Refrakter Ağrı Yönetimi"
   }
  ],
  "onkoloji/kanser-genel-prensipler": [
@@ -7395,13 +7400,13 @@
   },
   {
    "brans": "palyatif",
-   "slug": "palyatif-bakimda-agri-yonetimi",
-   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
+   "slug": "opioid-rotasyonu-ilkeleri",
+   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
   },
   {
    "brans": "palyatif",
-   "slug": "opioid-rotasyonu-ilkeleri",
-   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
+   "slug": "palyatif-bakimda-agri-yonetimi",
+   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
   },
   {
    "brans": "kardiyoloji",
@@ -7449,13 +7454,13 @@
   },
   {
    "brans": "palyatif",
-   "slug": "palyatif-bakimda-agri-yonetimi",
-   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
+   "slug": "opioid-rotasyonu-ilkeleri",
+   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
   },
   {
    "brans": "palyatif",
-   "slug": "opioid-rotasyonu-ilkeleri",
-   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
+   "slug": "palyatif-bakimda-agri-yonetimi",
+   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
   },
   {
    "brans": "palyatif",
@@ -7464,8 +7469,8 @@
   },
   {
    "brans": "palyatif",
-   "slug": "pankreas-agrisinda-tanisal-degerlendirme",
-   "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme"
+   "slug": "noropatik-agrida-koadjuvan-tedavi",
+   "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi"
   }
  ],
  "onkoloji/pankreas-kanseri-ana-sayfa": [
@@ -7747,6 +7752,38 @@
    "baslik": "Pankreas Kanseri"
   }
  ],
+ "palyatif/noropatik-agrida-koadjuvan-tedavi": [
+  {
+   "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "pankreas-agrisinda-tanisal-degerlendirme",
+   "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "pankreas-kanserinde-refrakter-agri",
+   "baslik": "Pankreas Kanserinde Refrakter Ağrı Yönetimi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "buprenorfin-rotasyonu-ve-induksiyon",
+   "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
+   "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "opioid-rotasyonu-2025-konsensus",
+   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
+  }
+ ],
  "palyatif/oih-ve-tolerans-ayirici-tani": [
   {
    "brans": "palyatif",
@@ -7866,6 +7903,11 @@
    "baslik": "Kanser Ağrısı Yönetimi"
   },
   {
+   "brans": "palyatif",
+   "slug": "noropatik-agrida-koadjuvan-tedavi",
+   "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi"
+  },
+  {
    "brans": "onkoloji",
    "slug": "buprenorfin-rotasyonu-ve-induksiyon",
    "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
@@ -7887,6 +7929,11 @@
   }
  ],
  "palyatif/pankreas-kanserinde-refrakter-agri": [
+  {
+   "brans": "palyatif",
+   "slug": "noropatik-agrida-koadjuvan-tedavi",
+   "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi"
+  },
   {
    "brans": "onkoloji",
    "slug": "buprenorfin-rotasyonu-ve-induksiyon",

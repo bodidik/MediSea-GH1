@@ -1,0 +1,46 @@
+{
+  "title": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi",
+  "meta": {
+    "updatedAt": "22 Eyl 2026",
+    "tags": [
+      "Palyatif Bakım",
+      "Kanser Ağrısı",
+      "Nöropatik Ağrı",
+      "CIPN",
+      "Gabapentin",
+      "Pregabalin",
+      "Duloksetin",
+      "Amitriptilin",
+      "Ketamin",
+      "Koadjuvan"
+    ],
+    "parent": "palyatif-bakimda-agri-yonetimi",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Kanser ağrısı yönetiminde nöropatik bileşenin varlığında (tümör invazyonu, pleksopati, cerrahi sonrası veya kemoterapiye bağlı periferik nöropati - CIPN) tek başına opioid tedavisi sıklıkla yetersiz kalmakta ve koadjuvan (adjuvan) ilaçların tedaviye eklenmesi gerekmektedir. Uluslararası kılavuzlar (NCCN, ASCO, ESMO) ve klinik kanıtlar ışığında tedaviye eklenebilecek başlıca ilaç sınıfları, dozaj esasları ve kullanım ilkeleri aşağıda ele alınmıştır.</p>"
+    },
+    {
+      "heading": "Gabapentinoidler (İyon Kanalı Modülatörleri / Antikonvülsanlar)",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Kanserle ilişkili nöropatik ağrıda uluslararası kılavuzlar tarafından birinci basamak koadjuvan ajanlar olarak kabul edilir. Voltaj kapılı kalsiyum kanallarının <strong>α₂δ alt birimine</strong> bağlanarak uyarıcı nörotransmitter salınımını baskılarlar.</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Gabapentin:</strong></li><li class=\"p-2 pl-6 rounded\">– <strong>Başlangıç Dozu:</strong> 100 mg – 300 mg/gün (tercihen gece yatarken).</li><li class=\"p-2 pl-6 rounded\">– <strong>Titrasyon:</strong> Yan etkilere ve böbrek fonksiyonlarına göre kademeli artırılarak günlük <strong>900 mg – 3600 mg</strong> (3 eşit dozda) seviyesine kadar çıkılabilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Pregabalin:</strong></li><li class=\"p-2 pl-6 rounded\">– <strong>Başlangıç Dozu:</strong> 25 mg – 75 mg/gün (günde 1 veya 2 kez).</li><li class=\"p-2 pl-6 rounded\">– <strong>Titrasyon:</strong> <strong>150 mg – 600 mg/gün</strong> (2–3 bölünmüş dozda) seviyesine kadar titre edilebilir. Gabapentine kıyasla daha hızlı etki başlangıcı ve stabil doğrusal biyoyararlanım sunar.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Dikkat Edilmesi Gerekenler:</strong> Her iki ilaçta da baş dönmesi, sedasyon, periferik ödem ve kilo alımı görülebilir; opioidlerle eş zamanlı kullanımda sedasyon ve solunum depresyonu riski artabileceğinden yakın izlem önerilir.</li></ul></div>"
+    },
+    {
+      "heading": "Antidepresanlar (SNRI'lar ve TCA'lar)",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Nöropatik ağrı iletiminde spinal kordda inen inhibe edici serotonin ve noradrenalin yollarını güçlendirerek etki gösterirler.</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Selektif Serotonin-Noradrenalin Reuptake İnhibitörleri (SNRI):</strong></li><li class=\"p-2 pl-6 rounded\">– <strong>Duloksetin:</strong> Kemoterapiye Bağlı Periferik Nöropati (CIPN) tedavisinde ASCO, ESMO ve NCCN kılavuzlarında <strong>Seviye-1 (Level I)</strong> güçlü kanıt düzeyine sahip tek ilaçtır. <strong>Dozaj:</strong> 20–30 mg/gün ile başlanır, tolerabiliteye göre 1 hafta içinde <strong>60 mg/gün</strong> idame dozuna yükseltilir.</li><li class=\"p-2 pl-6 rounded\">– <strong>Venlafaksin:</strong> Alternatif bir SNRI seçeneği olarak değerlendirilebilir (Başlangıç: 37.5 mg/gün, kademeli titrasyon).</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Trisiklik Antidepresanlar (TCA):</strong></li><li class=\"p-2 pl-6 rounded\">– <strong>Amitriptilin / Nortriptilin:</strong> Özellikle yakıcı, batıcı ve uyuşma tarzındaki nöropatik ağrılarda etkilidir. <strong>Dozaj:</strong> 10 mg – 25 mg/gün (gece yatarken) başlanır, <strong>75 mg – 150 mg/gün</strong> seviyesine kadar yavaşça titre edilebilir.</li><li class=\"p-2 pl-6 rounded\">– <strong>Kısıtlamalar:</strong> Antikolinerjik yan etkileri (ağız kuruluğu, konstipasyon, idrar retansiyonu, konfüzyon) ve kardiyak toksisite riski nedeniyle yaşlı, kırılgan ve kardiyovasküler hastalığı olanlarda dikkatli kullanılmalıdır.</li></ul></div>"
+    },
+    {
+      "heading": "Kortikosteroidler (Sinir Basısı ve Perinöral Ödem Varlığında)",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Deksametazon:</strong> Tümörün sinir pleksuslarına (örn. brakiyal veya lumbosakral pleksopati) veya spinal korda doğrudan bası yaptığı durumlarda perinöral ödemi ve inflamasyonu azaltmak amacıyla koadjuvan analjezik olarak eklenir.</li></ul></div>"
+    },
+    {
+      "heading": "Dirençli (Refrakter) Vakalar İçin Özel Tedaviler",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Ketamin (NMDA Reseptör Antagonisti):</strong> Opioidlere ve standart koadjuvanlara dirençli, belirgin allodini ve hiperaljezi sergileyen şiddetli nöropatik ağrılarda santral sensitizasyonu (wind-up fenomeni) kırmak adına düşük doz koadjuvan ketamin eklenebilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Metadon:</strong> Özgün NMDA antagonizması ve monoamin reuptake blokajı sayesinde karmaşık nöropatik veya opioid-dirençli kanser ağrılarında opioid rotasyonu seçeneği olarak ilk sıralarda düşünülmelidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Topikal Lidokain (%5 bant):</strong> Fokal, lokalize nöropatik ağrı ve allodini alanlarında (örneğin post-mastektomi veya post-herpetik nöropatilerde) sistemik yan etki riski olmaksızın kullanılabilir.</li></ul></div>"
+    },
+    {
+      "heading": "Klinik Özet ve İlaç Seçim Stratejisi",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">1. <strong>CIPN (Kemoterapi Nöropatisi):</strong> İlk tercih <strong>Duloksetin (60 mg/gün)</strong> olmalıdır.</li><li class=\"bg-slate-50 p-2 rounded\">2. <strong>Tümör/Metastaz İnvazyonuna Bağlı Nöropatik Ağrı:</strong> <strong>Pregabalin veya Gabapentin</strong> birinci basamakta opioide eklenmelidir.</li><li class=\"bg-slate-50 p-2 rounded\">3. <strong>Eş Zamanlı Anksiyete/Depresyon Varlığı:</strong> SNRI (Duloksetin) veya düşük doz TCA (Amitriptilin) tercih edilmesi multimodal fayda sağlar.</li></ul></div>"
+    }
+  ]
+}
