@@ -1,0 +1,46 @@
+{
+  "title": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
+  "meta": {
+    "updatedAt": "22 Eyl 2026",
+    "tags": [
+      "Onkoloji",
+      "Palyatif Bakım",
+      "Kanser Ağrısı",
+      "Opioid Rotasyonu",
+      "Morfin",
+      "Oksikodon",
+      "Hidromorfon",
+      "Metadon",
+      "Transdermal Fentanil",
+      "MEDD"
+    ],
+    "parent": "kanser-agrisi-yonetimi",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">2025 MASCC-ASCO-AAHPM-HPNA-NICSO Opioid Rotasyonu (Kanser Ağrısında Opioid Dönüşümü) Uluslararası Konsensüs Kılavuzu, kanser hastalarında opioid değişimini ve rotasyon ilkelerini standartlaştırmak amacıyla yayınlanan ilk küresel uzlaşı rehberidir. Konsensüsün öne çıkan temel ilkeleri, uzlaşılan doz dönüşüm oranları ve klinik uygulama esasları şunlardır.</p>"
+    },
+    {
+      "heading": "Temel Yaklaşım ve Kavramsal Değişim",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>\"Eş-analjezik\" (Equianalgesic) Tanımının Reddi:</strong> Kılavuz, önerilen dönüşüm oranlarının \"doğrudan eş-analjezik\" olarak adlandırılmaması gerektiğini vurgular. Bu oranlar, yoksunluk ve toksisite riskini sınırlayan güvenli bir başlangıç dozu parametresi sunar; hedeflenen analjeziye ulaşmak için hastaya özel ek titrasyon zorunludur.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Geleneksel Otomatik Doz İndiriminden Ayrışma:</strong> Klasik protokollerde yer alan ve çapraz tolerans kaybı gerekçesiyle yapılan rutin <strong>%25–%50'lik ampirik doz azaltımı</strong>, yetersiz tedavi ve ağrı krizine/yoksunluğa yol açabileceği gerekçesiyle desteklenmemektedir.</li></ul></div>"
+    },
+    {
+      "heading": "Uzlaşılan Başlıca Opioid Dönüşüm Oranları",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Kılavuz panelinde en az %75 oranında uzlaşı sağlanan temel dönüşüm oranları şunlardır:</p><div class=\"overflow-x-auto mb-4\"><table class=\"w-full text-[11px] border-collapse\"><thead><tr class=\"bg-slate-100\"><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Dönüşüm</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Oran</th></tr></thead><tbody class=\"text-slate-700\"><tr><td class=\"border border-slate-200 p-2 font-bold\">Oral Morfin → Oral Oksikodon</td><td class=\"border border-slate-200 p-2\">1.5 : 1</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\">Oral Morfin → Oral Hidromorfon</td><td class=\"border border-slate-200 p-2\">5 : 1</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\">Oral Morfin → Oral Oksimorfon</td><td class=\"border border-slate-200 p-2\">3 : 1</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\">Oral Oksikodon → Oral Morfin</td><td class=\"border border-slate-200 p-2\">1:1 ile 1:2 arası</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\">Oral Hidrokodon → Oral Morfin</td><td class=\"border border-slate-200 p-2\">1 : 1</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\">Oral Tramadol → Oral Morfin</td><td class=\"border border-slate-200 p-2\">10 : 1</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\">Oral Tapentadol → Oral Morfin</td><td class=\"border border-slate-200 p-2\">3 : 1</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\">Subkutan → İntravenöz (Aynı Opioid)</td><td class=\"border border-slate-200 p-2\">1 : 1</td></tr></tbody></table></div><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kırılma Ağrısı (BTcP) Dozu:</strong> Hesaplanan günlük oral morfin eşdeğer dozunun (MEDD) <strong>%10 – %15</strong>'i olarak önerilir.</li></ul></div>"
+    },
+    {
+      "heading": "Klinik Değerlendirme ve Organ Yetmezliklerinde Opioid Seçimi",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Dönüşüm öncesinde ağrının patolojisi, ilaç uyumu, böbrek/karaciğer fonksiyonları ve madde kullanım öyküsü multidisipliner değerlendirilmelidir. Klinik tablolara göre öne çıkan opioidler:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Böbrek Yetmezliği:</strong> Buprenorfin, Fentanil veya Metadon.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Karaciğer Yetmezliği:</strong> Hidromorfon veya Morfin.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Madde Kullanım Bozukluğu / Bağımlılık Riski:</strong> Buprenorfin veya Metadon.</li></ul></div>"
+    },
+    {
+      "heading": "Özel Opioidler ve Tartışmalı Alanlar",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Metadon:</strong> Doğrusal olmayan farmakokinetiği, kardiyotoksisite riski (QTc uzaması) ve değişken yarılanma ömrü nedeniyle rotasyon mutlaka metadon kullanımında deneyimli uzmanlar tarafından yürütülmelidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Transdermal Fentanil:</strong> Özellikle kaşektik kanser hastalarında cilt altı doku kaybına bağlı emilim güvenilmezliği nedeniyle dikkatle değerlendirilmelidir.</li></ul></div>"
+    },
+    {
+      "heading": "Dönüşüm Sonrası İzlem Süreçleri",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kararlı Durum (Steady-State) Süreleri:</strong> Kısa etkili opioidlerde kararlı duruma <strong>24–48 saatte</strong> ulaşılır; bu süreden önce sabit doz artışı yapılmamalıdır. Metadonda ise yeni dozu ayarlamak için en az <strong>5–6 gün</strong> beklenmelidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Aşırı Doz ve Yan Etki Taraması:</strong> Hastalar hem yetersiz doz (huzursuzluk, uykusuzluk) hem de aşırı doz/toksisite (sedasyon, miyoklonus, deliryum, halüsinasyon) açısından izlenmeli, rutin laksatif kullanımı sürdürülmelidir.</li></ul></div>"
+    }
+  ]
+}

@@ -6189,6 +6189,11 @@
    "baslik": "Kanser Ağrısı Yönetimi"
   },
   {
+   "brans": "onkoloji",
+   "slug": "opioid-rotasyonu-2025-konsensus",
+   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
+  },
+  {
    "brans": "palyatif",
    "slug": "palyatif-bakim-ana-sayfa",
    "baslik": "Palyatif Bakım: Kapsamlı Bir Genel Bakış"
@@ -7170,6 +7175,11 @@
  "onkoloji/hepatosellular-karsinom-kapsamli-klinik-rehber": [
   {
    "brans": "onkoloji",
+   "slug": "pankreas-kanseri-ana-sayfa",
+   "baslik": "Pankreas Kanseri"
+  },
+  {
+   "brans": "onkoloji",
    "slug": "pankreas-kanseri-neden-ilaç-vs",
    "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
   },
@@ -7182,24 +7192,9 @@
    "brans": "onkoloji",
    "slug": "akciger-kanseri-ana-sayfa",
    "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "febril-notropeni-konu",
-   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
   }
  ],
  "onkoloji/jinekolojik-kanserler": [
-  {
-   "brans": "onkoloji",
-   "slug": "febril-notropeni-konu",
-   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "karaciger-kanserleri",
-   "baslik": "Karaciğer Kanserleri"
-  },
   {
    "brans": "onkoloji",
    "slug": "onkolojik-aciller",
@@ -7209,6 +7204,16 @@
    "brans": "onkoloji",
    "slug": "pankreas-kanseri-ana-sayfa",
    "baslik": "Pankreas Kanseri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-neden-ilaç-vs",
+   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "tumor-lizis-sendromu-kapsamli",
+   "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
   }
  ],
  "onkoloji/kanser-agrisi-yonetimi": [
@@ -7229,11 +7234,6 @@
   },
   {
    "brans": "palyatif",
-   "slug": "palyatif-bakim-ana-sayfa",
-   "baslik": "Palyatif Bakım: Kapsamlı Bir Genel Bakış"
-  },
-  {
-   "brans": "palyatif",
    "slug": "oih-ve-tolerans-ayirici-tani",
    "baslik": "İleri Okuma: OIH ve Toleransın Ayırıcı Tanısı"
   },
@@ -7241,6 +7241,11 @@
    "brans": "palyatif",
    "slug": "opioidler-ana-sayfa",
    "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "palyatif-bakim-ana-sayfa",
+   "baslik": "Palyatif Bakım: Kapsamlı Bir Genel Bakış"
   }
  ],
  "onkoloji/kanser-genel-prensipler": [
@@ -7258,23 +7263,23 @@
  "onkoloji/karaciger-kanserleri": [
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ana-sayfa",
-   "baslik": "Pankreas Kanseri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-neden-ilaç-vs",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "tumor-lizis-sendromu-kapsamli",
-   "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
-  },
-  {
-   "brans": "onkoloji",
    "slug": "akciger-kanseri-ana-sayfa",
    "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "febril-notropeni-konu",
+   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "onkolojik-aciller",
+   "baslik": "Onkolojik Aciller"
   }
  ],
  "onkoloji/khdak-tani-algoritma-evreleme": [
@@ -7299,6 +7304,28 @@
  "onkoloji/meme-kanseri": [
   {
    "brans": "onkoloji",
+   "slug": "karaciger-kanserleri",
+   "baslik": "Karaciğer Kanserleri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "onkolojik-aciller",
+   "baslik": "Onkolojik Aciller"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-ana-sayfa",
+   "baslik": "Pankreas Kanseri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-neden-ilaç-vs",
+   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
+  }
+ ],
+ "onkoloji/mesane-kanseri": [
+  {
+   "brans": "onkoloji",
    "slug": "akciger-kanseri-ana-sayfa",
    "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
   },
@@ -7309,45 +7336,18 @@
   },
   {
    "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
+  },
+  {
+   "brans": "onkoloji",
    "slug": "karaciger-kanserleri",
    "baslik": "Karaciğer Kanserleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "onkolojik-aciller",
-   "baslik": "Onkolojik Aciller"
-  }
- ],
- "onkoloji/mesane-kanseri": [
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ana-sayfa",
-   "baslik": "Pankreas Kanseri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-neden-ilaç-vs",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "tumor-lizis-sendromu-kapsamli",
-   "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "akciger-kanseri-ana-sayfa",
-   "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
   }
  ],
  "onkoloji/onkolojik-aciller": [
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ana-sayfa",
-   "baslik": "Pankreas Kanseri"
-  },
-  {
-   "brans": "onkoloji",
    "slug": "pankreas-kanseri-neden-ilaç-vs",
    "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
   },
@@ -7358,8 +7358,35 @@
   },
   {
    "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
+  },
+  {
+   "brans": "onkoloji",
    "slug": "karaciger-kanserleri",
    "baslik": "Karaciğer Kanserleri"
+  }
+ ],
+ "onkoloji/opioid-rotasyonu-2025-konsensus": [
+  {
+   "brans": "palyatif",
+   "slug": "opioid-rotasyonu-ilkeleri",
+   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "opioid-toleransi-mekanizmalari",
+   "baslik": "İleri Okuma: Opioid Toleransı ve Çapraz Tolerans Mekanizmaları"
+  },
+  {
+   "brans": "klinik-nutrisyon",
+   "slug": "peg-enteral-beslenme-refeeding",
+   "baslik": "PEG ve Enteral Beslenme: Realimentasyon ve Refeeding Yönetimi"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "palyatif-bakim-ana-sayfa",
+   "baslik": "Palyatif Bakım: Kapsamlı Bir Genel Bakış"
   }
  ],
  "onkoloji/pankreas-kanseri-ana-sayfa": [
@@ -7530,6 +7557,28 @@
  "onkoloji/prostat-kanseri": [
   {
    "brans": "onkoloji",
+   "slug": "pankreas-kanseri-neden-ilaç-vs",
+   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "tumor-lizis-sendromu-kapsamli",
+   "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "akciger-kanseri-ana-sayfa",
+   "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "febril-notropeni-konu",
+   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
+  }
+ ],
+ "onkoloji/testis-kanseri": [
+  {
+   "brans": "onkoloji",
    "slug": "tumor-lizis-sendromu-kapsamli",
    "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
   },
@@ -7545,30 +7594,8 @@
   },
   {
    "brans": "onkoloji",
-   "slug": "karaciger-kanserleri",
-   "baslik": "Karaciğer Kanserleri"
-  }
- ],
- "onkoloji/testis-kanseri": [
-  {
-   "brans": "onkoloji",
-   "slug": "onkolojik-aciller",
-   "baslik": "Onkolojik Aciller"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ana-sayfa",
-   "baslik": "Pankreas Kanseri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-neden-ilaç-vs",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "tumor-lizis-sendromu-kapsamli",
-   "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
   }
  ],
  "onkoloji/tls-cairo-bishop-howard-guncellemesi": [
@@ -7622,23 +7649,23 @@
  "onkoloji/ust-gis-kanserleri": [
   {
    "brans": "onkoloji",
-   "slug": "tumor-lizis-sendromu-kapsamli",
-   "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "akciger-kanseri-ana-sayfa",
-   "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "febril-notropeni-konu",
-   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
   },
   {
    "brans": "onkoloji",
    "slug": "karaciger-kanserleri",
    "baslik": "Karaciğer Kanserleri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "onkolojik-aciller",
+   "baslik": "Onkolojik Aciller"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-ana-sayfa",
+   "baslik": "Pankreas Kanseri"
   }
  ],
  "palyatif/oih-ve-tolerans-ayirici-tani": [
@@ -7654,6 +7681,11 @@
   }
  ],
  "palyatif/opioid-rotasyonu-ilkeleri": [
+  {
+   "brans": "onkoloji",
+   "slug": "opioid-rotasyonu-2025-konsensus",
+   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
+  },
   {
    "brans": "palyatif",
    "slug": "opioid-toleransi-mekanizmalari",
@@ -7680,6 +7712,11 @@
    "brans": "palyatif",
    "slug": "opioid-rotasyonu-ilkeleri",
    "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "opioid-rotasyonu-2025-konsensus",
+   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
   }
  ],
  "palyatif/opioidler-ana-sayfa": [
@@ -7699,6 +7736,11 @@
    "brans": "onkoloji",
    "slug": "kanser-agrisi-yonetimi",
    "baslik": "Kanser Ağrısı Yönetimi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "opioid-rotasyonu-2025-konsensus",
+   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
   }
  ],
  "romatoloji/anca-iliskili-vaskulitler": [
