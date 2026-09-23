@@ -1033,6 +1033,18 @@
         "eslesen": "eGFR"
       }
     ],
+    "onkoloji/buprenorfin-rotasyonu-ve-induksiyon": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
+      }
+    ],
     "onkoloji/febril-notropeni-cisne-indexi": [
       {
         "slug": "cisne",
@@ -1101,6 +1113,18 @@
         "slug": "tumor-lizis",
         "name": "Tümör Lizis Sendromu",
         "eslesen": "Tümör Lizis Sendromu"
+      }
+    ],
+    "palyatif/palyatif-bakimda-agri-yonetimi": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "esas",
+        "name": "ESAS",
+        "eslesen": "ESAS"
       }
     ],
     "romatoloji/behcet-hasar-indeksleri": [
@@ -1198,13 +1222,13 @@
         "eslesen": "eGFR"
       },
       {
-        "yol": "journal-club/flaura2-osimertinib-kemoterapi-nejm",
-        "baslik": "NEJM: FLAURA2 Faz 3 - EGFR-Mutant KHDAK'de Osimertinib ve Kemoterapi",
+        "yol": "onkoloji/akciger-kanseri-ana-sayfa",
+        "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1",
         "eslesen": "eGFR"
       },
       {
-        "yol": "onkoloji/akciger-kanseri-ana-sayfa",
-        "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1",
+        "yol": "journal-club/flaura2-osimertinib-kemoterapi-nejm",
+        "baslik": "NEJM: FLAURA2 Faz 3 - EGFR-Mutant KHDAK'de Osimertinib ve Kemoterapi",
         "eslesen": "eGFR"
       },
       {
@@ -1213,13 +1237,13 @@
         "eslesen": "eGFR"
       },
       {
-        "yol": "nefroloji/farmakoloji-finerenon",
-        "baslik": "Yeni Nesil ns-MRA Finerenon",
+        "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
+        "baslik": "Palyatif Bakımda Ağrı Yönetimi",
         "eslesen": "eGFR"
       },
       {
-        "yol": "endokrinoloji/cushing-sendromu-patofizyoloji-klinik",
-        "baslik": "Cushing Sendromu: Patofizyoloji ve Klinik Prezantasyon",
+        "yol": "nefroloji/farmakoloji-finerenon",
+        "baslik": "Yeni Nesil ns-MRA Finerenon",
         "eslesen": "eGFR"
       }
     ],
@@ -1230,8 +1254,8 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik",
-        "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik",
+        "yol": "onkoloji/buprenorfin-rotasyonu-ve-induksiyon",
+        "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması",
         "eslesen": "QTc"
       },
       {
@@ -1245,8 +1269,8 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
-        "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
+        "yol": "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik",
+        "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik",
         "eslesen": "QTc"
       },
       {
@@ -1255,13 +1279,13 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "endokrinoloji/men1-osilodrostat-mineralokortikoid",
-        "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi",
+        "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
+        "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
         "eslesen": "QTc"
       },
       {
-        "yol": "endokrinoloji/men1-osilodrostat-yan-etkiler",
-        "baslik": "Osilodrostat: Yan Etki Profili ve Klinik Yönetim Protokolleri",
+        "yol": "endokrinoloji/men1-osilodrostat-mineralokortikoid",
+        "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi",
         "eslesen": "QTc"
       }
     ],
@@ -1950,6 +1974,13 @@
         "eslesen": "MASCC Risk İndeksi"
       }
     ],
+    "esas": [
+      {
+        "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
+        "baslik": "Palyatif Bakımda Ağrı Yönetimi",
+        "eslesen": "ESAS"
+      }
+    ],
     "behcet": [
       {
         "yol": "romatoloji/behcet-hasar-indeksleri",
@@ -2015,10 +2046,10 @@
     ]
   },
   "olcum": {
-    "konu": 511,
+    "konu": 513,
     "arac": 257,
-    "araciOlanKonu": 138,
-    "konusuOlanArac": 57,
-    "bag": 179
+    "araciOlanKonu": 140,
+    "konusuOlanArac": 58,
+    "bag": 183
   }
 }

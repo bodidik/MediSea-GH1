@@ -7156,6 +7156,28 @@
    "baslik": "Diabetes Mellitus ve Pankreas Duktal Adenokarsinomu (PDAC) Arasındaki Çift Yönlü Patofizyolojik İlişki"
   }
  ],
+ "onkoloji/buprenorfin-rotasyonu-ve-induksiyon": [
+  {
+   "brans": "onkoloji",
+   "slug": "opioid-rotasyonu-2025-konsensus",
+   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
+   "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "palyatif-bakimda-agri-yonetimi",
+   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "opioidler-ana-sayfa",
+   "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları"
+  }
+ ],
  "onkoloji/febril-notropeni-cisne-indexi": [
   {
    "brans": "onkoloji",
@@ -7229,23 +7251,18 @@
  "onkoloji/kanser-agrisi-yonetimi": [
   {
    "brans": "palyatif",
+   "slug": "palyatif-bakimda-agri-yonetimi",
+   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
+  },
+  {
+   "brans": "palyatif",
    "slug": "opioid-toleransi-mekanizmalari",
    "baslik": "İleri Okuma: Opioid Toleransı ve Çapraz Tolerans Mekanizmaları"
   },
   {
    "brans": "palyatif",
-   "slug": "oih-ve-tolerans-ayirici-tani",
-   "baslik": "İleri Okuma: OIH ve Toleransın Ayırıcı Tanısı"
-  },
-  {
-   "brans": "palyatif",
    "slug": "opioid-rotasyonu-ilkeleri",
    "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
-  },
-  {
-   "brans": "palyatif",
-   "slug": "opioidler-ana-sayfa",
-   "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları"
   }
  ],
  "onkoloji/kanser-genel-prensipler": [
@@ -7348,18 +7365,23 @@
  "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik": [
   {
    "brans": "onkoloji",
+   "slug": "buprenorfin-rotasyonu-ve-induksiyon",
+   "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
+  },
+  {
+   "brans": "onkoloji",
    "slug": "opioid-rotasyonu-2025-konsensus",
    "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
   },
   {
    "brans": "palyatif",
-   "slug": "opioid-rotasyonu-ilkeleri",
-   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
+   "slug": "palyatif-bakimda-agri-yonetimi",
+   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
   },
   {
    "brans": "palyatif",
-   "slug": "opioidler-ana-sayfa",
-   "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları"
+   "slug": "opioid-rotasyonu-ilkeleri",
+   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
   },
   {
    "brans": "kardiyoloji",
@@ -7370,11 +7392,6 @@
    "brans": "kardiyoloji",
    "slug": "aritmiler-af-vt-vf",
    "baslik": "Aritmiler (Atriyal Fibrilasyon, VT/VF)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "men1-hipokalemi-aritmojenik-sinerji",
-   "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı"
   }
  ],
  "onkoloji/onkolojik-aciller": [
@@ -7402,8 +7419,18 @@
  "onkoloji/opioid-rotasyonu-2025-konsensus": [
   {
    "brans": "onkoloji",
+   "slug": "buprenorfin-rotasyonu-ve-induksiyon",
+   "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
+  },
+  {
+   "brans": "onkoloji",
    "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
    "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "palyatif-bakimda-agri-yonetimi",
+   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
   },
   {
    "brans": "palyatif",
@@ -7700,14 +7727,14 @@
    "brans": "palyatif",
    "slug": "opioid-toleransi-mekanizmalari",
    "baslik": "İleri Okuma: Opioid Toleransı ve Çapraz Tolerans Mekanizmaları"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "kanser-agrisi-yonetimi",
-   "baslik": "Kanser Ağrısı Yönetimi"
   }
  ],
  "palyatif/opioid-rotasyonu-ilkeleri": [
+  {
+   "brans": "palyatif",
+   "slug": "opioid-toleransi-mekanizmalari",
+   "baslik": "İleri Okuma: Opioid Toleransı ve Çapraz Tolerans Mekanizmaları"
+  },
   {
    "brans": "onkoloji",
    "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
@@ -7717,11 +7744,6 @@
    "brans": "onkoloji",
    "slug": "opioid-rotasyonu-2025-konsensus",
    "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
-  },
-  {
-   "brans": "palyatif",
-   "slug": "opioid-toleransi-mekanizmalari",
-   "baslik": "İleri Okuma: Opioid Toleransı ve Çapraz Tolerans Mekanizmaları"
   },
   {
    "brans": "onkoloji",
@@ -7754,13 +7776,13 @@
  "palyatif/opioidler-ana-sayfa": [
   {
    "brans": "onkoloji",
-   "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
-   "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
+   "slug": "buprenorfin-rotasyonu-ve-induksiyon",
+   "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
   },
   {
    "brans": "onkoloji",
-   "slug": "kanser-agrisi-yonetimi",
-   "baslik": "Kanser Ağrısı Yönetimi"
+   "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
+   "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
   }
  ],
  "palyatif/palyatif-bakim-ana-sayfa": [
@@ -7783,6 +7805,28 @@
    "brans": "palyatif",
    "slug": "opioidler-ana-sayfa",
    "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları"
+  }
+ ],
+ "palyatif/palyatif-bakimda-agri-yonetimi": [
+  {
+   "brans": "onkoloji",
+   "slug": "buprenorfin-rotasyonu-ve-induksiyon",
+   "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
+   "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "opioid-rotasyonu-2025-konsensus",
+   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
   }
  ],
  "romatoloji/anca-iliskili-vaskulitler": [
