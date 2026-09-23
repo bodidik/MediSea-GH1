@@ -1,0 +1,46 @@
+{
+  "title": "Kanser Ağrısı Yönetimi",
+  "meta": {
+    "updatedAt": "22 Eyl 2026",
+    "tags": [
+      "Onkoloji",
+      "Palyatif Bakım",
+      "Kanser Ağrısı",
+      "Opioid",
+      "Morfin",
+      "Metadon",
+      "Nöropatik Ağrı",
+      "CIPN",
+      "Kemik Metastazı",
+      "Girişimsel Ağrı Tedavisi"
+    ],
+    "parent": null,
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Onkologlar ve algoloji uzmanlarına yönelik, güncel kılavuzlar (NCCN 2025, ESMO, ASCO, MASCC) ve klinik kanıtlar ışığında hazırlanan kanser ağrısı yönetimi rehberi.</p>"
+    },
+    {
+      "heading": "Etiyopatofizyoloji ve Klinik Değerlendirme Çerçevesi",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Epidemiyoloji ve \"Toplam Ağrı\" (Total Pain) Konsepti:</strong> Aktif tedavi gören kanser hastalarının yaklaşık <strong>%59</strong>'unda, ileri evre hastaların ise <strong>%64–90</strong>'ında ağrı görülmektedir. Ağrı değerlendirmesinde nosiseptif (somatik, visseral), nöropatik ve karma (mixed) mekanizmalar ayrıştırılmalı; fiziksel, psikolojik, sosyal ve spiritüel boyutları içeren bütüncül <strong>\"Toplam Ağrı\"</strong> yaklaşımı benimsenmelidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Onkolojik Acillerin Ekarte Edilmesi:</strong> Akut ağrı krizlerinde omurilik basısı, patolojik kırık riski, içi boş organ perforasyonu ve tromboembolik olaylar öncelikle değerlendirilmelidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Ağrı Derecelendirmesi ve Rutin Tarama:</strong> NCCN ve WHO standartlarına göre hastalar her klinik temasta nümerik (NRS) veya görsel (VAS) ölçeklerle taranmalıdır.</li></ul></div>"
+    },
+    {
+      "heading": "Opioid Tedavisi, Titrasyon ve Güncel Konversiyon Prensipleri",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Opioid-Naiv vs. Opioid-Toleran Ayrımı:</strong> Günlük en az <strong>60 mg oral morfin</strong>, <strong>25 mcg/saat transdermal fentanil</strong>, <strong>30 mg oral oksikodon</strong> veya <strong>8 mg oral hidromorfonu</strong> en az 1 haftadır alan hastalar opioid-toleran kabul edilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Başlangıç ve Titrasyon:</strong> Orta ve şiddetli ağrıda ESMO/ASCO kılavuzları uyarınca <strong>oral morfin ilk seçenektir</strong>. Kısa etkili opioidlerle hızlı titrasyon sağlanıp kontrol altına alındıktan sonra uzun etkili (ER/LA) formülasyonlara geçilmeli ve idame sırasında kırılma ağrıları (BTcP) için kısa etkili kurtarma dozları reçete edilmelidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Opioid Rotasyonu ve 2025 MASCC-ASCO-AAHPM Konsensüsü:</strong> Hastaların <strong>%44'e varan</strong> kısmında tolere edilemeyen yan etkiler veya direnç nedeniyle rotasyon gerekir. Yeni uluslararası konsensüs uyarınca ekvianaljezik doz tabloları mutlak kabul edilmemeli, rotasyonda <strong>çapraz tolerans kaybı</strong> göz önüne alınarak bireyselleştirilmiş doz ayarlamaları yapılmalıdır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Özel Opioidler (Metadon ve Buprenorfin):</strong> Metadon; NMDA reseptör antagonizması, böbrek yetmezliğinde güvenli kullanımı ve nöropatik ağrıdaki ek-analjezik rolü nedeniyle karmaşık vakalarda öne çıkar. Buprenorfin ise kısmi agonist profiliyle yaşlı ve böbrek fonksiyonu kısıtlı hastalarda güvenli seçenektir.</li></ul></div>"
+    },
+    {
+      "heading": "Nöropatik Ağrı ve Kemik Metastazlarında Koadjuvan Farmakoterapi",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kemoterapiye Bağlı Periferik Nöropati (CIPN):</strong> ASCO ve ESMO kılavuzlarına göre CIPN tedavisinde Selektif Serotonin-Noradrenalin Reuptake İnhibitörü (SNRI) olan <strong>duloksetin Seviye-1 kanıt</strong> düzeyine sahiptir. Gabapentinoidler (gabapentin, pregabalin) ise birinci basamak adjuvantlar olarak sürece eklenir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kanser İndüklü Kemik Ağrısı (CIBP):</strong> Mekanizma karmaşık olup NSAİİ'ler, kortikosteroidler (deksametazon), bisfosfonatlar ve denosumab (SRE önleme ve analjezik etki) kombinasyon halinde kullanılır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Refrakter Ağrıda Ketamin:</strong> Santral sensitizasyonu ve opioid toleransını kırmak adına düşük doz ketamin koadjuvan kullanımı değerlendirilebilir.</li></ul></div>"
+    },
+    {
+      "heading": "Algolojik Girişimsel Ağrı Tedavileri (WHO 4. Basamak)",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Sempatik Bloklar ve Nöroliz:</strong></li><li class=\"p-2 pl-6 rounded\">– <strong>Çölyak Pleksus / Splanknik Nörolizi (CPN):</strong> Pankreas ve üst GİS kanserlerinde CT veya EUS rehberliğinde uygulanan fenol/alkol nörolizi, sistemik opioid ihtiyacını ve yan etkileri anlamlı ölçüde azaltır.</li><li class=\"p-2 pl-6 rounded\">– <strong>Süperior Hipogastrik Pleksus ve Ganglion İmpar Blokları:</strong> Pelvik ve perineal visseral organ tümörlerinde tercih edilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Gelişmiş Nöromodülasyon ve Cerrahi Teknikler:</strong></li><li class=\"p-2 pl-6 rounded\">– <strong>İntratekal İlaç Dağıtım Sistemleri (ITDD / Analjezik Pompaları):</strong> Dirençli yaygın ağrılarda intratekal morfin, klonidin veya zikonotid kombinasyonları yüksek analjezik başarı sunar.</li><li class=\"p-2 pl-6 rounded\">– <strong>Omurilik Stimülasyonu (SCS) ve Nöroablasyon:</strong> Post-cerrahi nöropatik ağrılarda SCS; lokalize refrakter ağrılarda ise DREZ lezyonlama veya perkütan kordotomi değerlendirilebilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Vertebral Ogmentasyon ve Ablasyon:</strong> Litik kemik metastazlarında vertebra kırıklarına bağlı ağrılarda vertebroplasti/kifoplasti ve radyofrekans ablasyon kombinasyonları uygulanır.</li></ul></div>"
+    },
+    {
+      "heading": "Bütüncül Tedavi, Sağkalanlar (Survivors) ve Doz Azaltımı (Tapering)",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Radyoterapi ve Onkolojik Müdahaleler:</strong> Ağrılı kemik metastazlarında tek veya fraksiyone radyoterapi analjezinin temel taşlarındandır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Entegratif ve Rehabilitatif Yaklaşımlar:</strong> Akupunktur, egzersiz, bilişsel davranışçı terapi (CBT) ve fizik tedavi modaliteleri multimodal şemaya entegre edilmelidir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Opioid Doz Azaltımı (Tapering):</strong> Remisyona giren veya stabil seyreden sağkalanlarda opioid dozu <strong>%5–25</strong> oranında kademeli olarak azaltılmalı, yoksunluk sendromu ve ağrı nüksü yakından izlenmelidir.</li></ul></div>"
+    }
+  ]
+}

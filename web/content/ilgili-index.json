@@ -5302,7 +5302,7 @@
   {
    "brans": "hematoloji",
    "slug": "heparin-aracili-trombositopeni-hit",
-   "baslik": "Heparin Aracılı Trombositopeni (HİT)"
+   "baslik": "Heparin İlişkili Trombositopeni (HİT)"
   }
  ],
  "hematoloji/trombositopeniler": [
@@ -6182,6 +6182,11 @@
    "brans": "klinik-nutrisyon",
    "slug": "espen-enteral-beslenme-intoleransi",
    "baslik": "ESPEN Kılavuzu: Enteral Beslenme İntoleransı ve Yönetimi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
   },
   {
    "brans": "palyatif",
@@ -7206,6 +7211,38 @@
    "baslik": "Pankreas Kanseri"
   }
  ],
+ "onkoloji/kanser-agrisi-yonetimi": [
+  {
+   "brans": "palyatif",
+   "slug": "opioid-toleransi-mekanizmalari",
+   "baslik": "İleri Okuma: Opioid Toleransı ve Çapraz Tolerans Mekanizmaları"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "opioid-rotasyonu-ilkeleri",
+   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
+  },
+  {
+   "brans": "klinik-nutrisyon",
+   "slug": "peg-enteral-beslenme-refeeding",
+   "baslik": "PEG ve Enteral Beslenme: Realimentasyon ve Refeeding Yönetimi"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "palyatif-bakim-ana-sayfa",
+   "baslik": "Palyatif Bakım: Kapsamlı Bir Genel Bakış"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "oih-ve-tolerans-ayirici-tani",
+   "baslik": "İleri Okuma: OIH ve Toleransın Ayırıcı Tanısı"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "opioidler-ana-sayfa",
+   "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları"
+  }
+ ],
  "onkoloji/kanser-genel-prensipler": [
   {
    "brans": "onkoloji",
@@ -7609,6 +7646,11 @@
    "brans": "palyatif",
    "slug": "opioid-toleransi-mekanizmalari",
    "baslik": "İleri Okuma: Opioid Toleransı ve Çapraz Tolerans Mekanizmaları"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
   }
  ],
  "palyatif/opioid-rotasyonu-ilkeleri": [
@@ -7616,6 +7658,11 @@
    "brans": "palyatif",
    "slug": "opioid-toleransi-mekanizmalari",
    "baslik": "İleri Okuma: Opioid Toleransı ve Çapraz Tolerans Mekanizmaları"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
   }
  ],
  "palyatif/opioid-toleransi-mekanizmalari": [
@@ -7625,6 +7672,11 @@
    "baslik": "İleri Okuma: OIH ve Toleransın Ayırıcı Tanısı"
   },
   {
+   "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
+  },
+  {
    "brans": "palyatif",
    "slug": "opioid-rotasyonu-ilkeleri",
    "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
@@ -7632,9 +7684,9 @@
  ],
  "palyatif/opioidler-ana-sayfa": [
   {
-   "brans": "palyatif",
-   "slug": "palyatif-bakim-ana-sayfa",
-   "baslik": "Palyatif Bakım: Kapsamlı Bir Genel Bakış"
+   "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
   }
  ],
  "palyatif/palyatif-bakim-ana-sayfa": [
@@ -7642,6 +7694,11 @@
    "brans": "klinik-nutrisyon",
    "slug": "peg-enteral-beslenme-refeeding",
    "baslik": "PEG ve Enteral Beslenme: Realimentasyon ve Refeeding Yönetimi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
   }
  ],
  "romatoloji/anca-iliskili-vaskulitler": [
