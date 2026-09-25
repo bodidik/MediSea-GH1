@@ -2179,3 +2179,20 @@ Ağustos'ta main'e girmemiş iki dal güncel main üzerinde yeniden uygulandı v
 | | negatif kontrol: kanca kapalı, canlı `miyeloproliferatif` | **24 kalın öge** kap dışında | kanca açık: 0 |
 
 **Dalın onarıcısı olduğu gibi YETMİYORDU:** `<p><strong>a</p>` biçimini (biçim ögesi üst etiketin kapanışıyla örtük kapanıyor) görmüyordu; bugünkü tek sızıntı tam da buydu, onarıcıdan sonra da sızıyordu (1 → 1). Kapanış dalı düzeltildi; 4 sızan tohum 0'a indi, 3 temiz tohum (dengeli · blok bağlantı · tablo) değişmedi. Dalın koyu kart listesine `bg-rose-900/950` ekleyen kısmı zaten main'deydi, tekrarlanmadı.
+
+---
+
+## Uzman gözüyle inceleme turu (26 Eylül 2026)
+
+| madde | commit | ölçüm |
+|---|---|---|
+| `eGFR` ↔ onkogen `EGFR` (tuzak 6, `icHarfDuyarli`) | `be1d1c0a` | bağ 182 → 174, giden TAM o 8 konu; başka bağ değişmedi |
+| `meta.kaynaklar` (şema `lib/kaynaklar.ts`) | `bc1d21cf` | blok `data-readable` DIŞINDA, kaynaksız konuda çizilmez; JSON-LD `citation` |
+| AKS tedavi → ESC 2023 | `121c826e` | 3 DOI Crossref'le doğrulandı; hesaplayıcı listesi korundu |
+| açılışta sonuç basan araç | `bd53a0bb` | **22 + khorana duyurusu → 0**; eski varsayılanlarla pozitif kontrol birebir |
+
+**Araç kuralı (yeni):** hasta ölçümü alanı BOŞ başlar, şık ekseni SEÇİLMEMİŞ başlar; sonuç, bant ve `SonucDuyuru` AYNI kapıdan geçer. Açılışta `role="alert"` basılmaz, sebep kartı ancak bir alana yazılınca çıkar.
+
+**Kaynak alanı:** 515 konunun yalnızca AKS'de dolu. Kaynak **uydurulmaz**: DOI'yi Crossref'le doğrula (`api.crossref.org/works/<doi>`).
+
+**Ölçüm notu:** "4. Evrensel MI Tanımı" başlığı numara kayması DEĞİL, *Dördüncü* Evrensel Tanım (2018). Bir tur yanlış rapor edildi.
