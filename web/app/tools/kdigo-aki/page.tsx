@@ -29,8 +29,8 @@ function creatinineStage(baseline: number, current: number, acuteRise03: boolean
 }
 
 export default function KdigoAkiPage() {
-  const [baseline, setBaseline] = useState<string>("0.8");
-  const [current, setCurrent] = useState<string>("0.8");
+  const [baseline, setBaseline] = useState<string>("");
+  const [current, setCurrent] = useState<string>("");
   const [acuteRise, setAcuteRise] = useState(false);
   const [onRRT, setOnRRT] = useState(false);
   const [urineStage, setUrineStage] = useState<number>(0);

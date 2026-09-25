@@ -10,7 +10,11 @@ const SBP_OPTS    = [["<80",58],["80–99",53],["100–119",43],["120–139",34]
 const CR_OPTS     = [["0–0.39",1],["0.40–0.79",4],["0.80–1.19",7],["1.20–1.59",10],["1.60–1.99",13],["2.0–3.99",21],["≥4.0",28]] as const;
 const KILLIP_OPTS = [["I — Belirti yok",0],["II — Bazal raller / S3",20],["III — Akut pulmoner ödem",39],["IV — Kardiyojenik şok",59]] as const;
 
-type Sel = { age: number; hr: number; sbp: number; cr: number; killip: number; arrest: boolean; st: boolean; enzymes: boolean };
+/* `null` = SEÇİLMEDİ. Araç eskiden yaş 50–59 · nabız 70–89 · SKB 120–139 ·
+   kreatinin 0,80–1,19 ile açılıyor ve hiçbir şey girilmemişken
+   "GRACE 91 · DÜŞÜK RİSK" basıyordu. Killip I ve üç bulgu kutusu nötr
+   varsayılan (işaretsiz kutu gibi): "yok" demek, bir hasta ölçümü değil. */
+type Sel = { age: number | null; hr: number | null; sbp: number | null; cr: number | null; killip: number; arrest: boolean; st: boolean; enzymes: boolean };
 
 /**
  * BANT SINIRI BİR PUAN KAYMIŞTI — tam 108 yanlış tarafa düşüyordu.
@@ -40,15 +44,16 @@ function risk(s: number) {
   return { label: "YÜKSEK RİSK", sub: ">%3 hastane içi mortalite", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" };
 }
 
-function SelectRow({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number; onChange: (v: number) => void }) {
+function SelectRow({ label, opts, value, onChange }: { label: string; opts: readonly (readonly [string, number])[]; value: number | null; onChange: (v: number) => void }) {
   return (
     <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 p-4 rounded-2xl bg-slate-50 border border-slate-100">
       <span className="text-sm font-bold text-blue-900/80 min-w-0 basis-full sm:basis-auto sm:flex-1">{label}</span>
-      <select aria-label={label} value={value} onChange={e => onChange(Number(e.target.value))}
+      <select aria-label={label} value={value ?? ""} onChange={e => onChange(Number(e.target.value))}
         className="text-sm font-bold border border-slate-200 rounded-xl px-3 py-2 bg-white outline-none max-w-full min-w-0 focus:border-blue-900/40 text-blue-950 shrink-0">
+        {value === null && <option value="" disabled>Seçin</option>}
         {opts.map(([lbl, pts]) => <option key={pts} value={pts}>{lbl}</option>)}
       </select>
-      <span className="text-[10px] font-black text-amber-700 w-12 text-right shrink-0">+{value}</span>
+      <span className="text-[10px] font-black text-amber-700 w-12 text-right shrink-0">{value === null ? "–" : `+${value}`}</span>
     </div>
   );
 }
@@ -73,10 +78,13 @@ function CheckRow({ label, sub, checked, onChange }: { label: string; sub: strin
 }
 
 export default function GracePage() {
-  const [s, setS] = React.useState<Sel>({ age: 41, hr: 9, sbp: 34, cr: 7, killip: 0, arrest: false, st: false, enzymes: false });
-  const score = s.age + s.hr + s.sbp + s.cr + s.killip + (s.arrest ? 39 : 0) + (s.st ? 28 : 0) + (s.enzymes ? 14 : 0);
-  const r = risk(score);
-  const params = { age: s.age, hr: s.hr, sbp: s.sbp, cr: s.cr, k: s.killip, ar: s.arrest?1:"", st: s.st?1:"", en: s.enzymes?1:"" };
+  const [s, setS] = React.useState<Sel>({ age: null, hr: null, sbp: null, cr: null, killip: 0, arrest: false, st: false, enzymes: false });
+  const eksik = [s.age === null && "yaş", s.hr === null && "kalp hızı", s.sbp === null && "sistolik KB", s.cr === null && "kreatinin"].filter(Boolean) as string[];
+  const score = eksik.length
+    ? null
+    : s.age! + s.hr! + s.sbp! + s.cr! + s.killip + (s.arrest ? 39 : 0) + (s.st ? 28 : 0) + (s.enzymes ? 14 : 0);
+  const r = score === null ? null : risk(score);
+  const params = { age: s.age ?? "", hr: s.hr ?? "", sbp: s.sbp ?? "", cr: s.cr ?? "", k: s.killip, ar: s.arrest?1:"", st: s.st?1:"", en: s.enzymes?1:"" };
 
   return (
     <div className="min-h-screen bg-slate-50 text-blue-950 py-8 px-4 font-sans">
@@ -112,12 +120,18 @@ export default function GracePage() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
             <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">GRACE</span>
-            <div className="text-5xl font-black text-white">{score}</div>
+            <div className="text-5xl font-black text-white">{score ?? "–"}</div>
           </div>
-          <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${r.border} ${r.bg}`}>
+          <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${r ? `${r.border} ${r.bg}` : "border-slate-200 bg-slate-50"}`}>
             <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">RİSK KATEGORİSİ</span>
-            <p className={`text-2xl font-black italic tracking-tight ${r.color}`}>{r.label}</p>
-            <p className={`text-sm font-bold mt-1 ${r.color}`}>{r.sub}</p>
+            {r ? (
+              <>
+                <p className={`text-2xl font-black italic tracking-tight ${r.color}`}>{r.label}</p>
+                <p className={`text-sm font-bold mt-1 ${r.color}`}>{r.sub}</p>
+              </>
+            ) : (
+              <p className="text-sm font-bold text-slate-600">Seçilmemiş: {eksik.join(", ")}</p>
+            )}
           </div>
         </div>
 

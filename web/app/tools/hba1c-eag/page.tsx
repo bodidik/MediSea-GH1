@@ -11,7 +11,7 @@ import { hba1cToEagMgdl, mgdlToMmol, parseLocaleNumber } from "@/app/tools/lib/c
  */
 
 export default function Hba1cEagPage() {
-  const [a1c, setA1c] = useState<string>("7.0");
+  const [a1c, setA1c] = useState<string>("");
 
   const a1cNum = parseLocaleNumber(a1c);
 

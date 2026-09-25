@@ -6,8 +6,8 @@ import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 export default function AncPage() {
-  const [wbc, setWbc] = React.useState("4.0");
-  const [segs, setSegs] = React.useState("40");
+  const [wbc, setWbc] = React.useState("");
+  const [segs, setSegs] = React.useState("");
   const [bands, setBands] = React.useState("0");
 
   const wbcNum = parseLocaleNumber(wbc);

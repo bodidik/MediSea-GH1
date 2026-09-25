@@ -16,8 +16,8 @@ export default function Das28Page() {
   const [mode, setMode] = useState<Mode>("esr");
   const [tjc, setTjc] = useState<string>("0");
   const [sjc, setSjc] = useState<string>("0");
-  const [marker, setMarker] = useState<string>("20");
-  const [gh, setGh] = useState<string>("20");
+  const [marker, setMarker] = useState<string>("");
+  const [gh, setGh] = useState<string>("");
 
   const tjcNum = Math.min(28, Math.max(0, Math.round(parseLocaleNumber(tjc))));
   const sjcNum = Math.min(28, Math.max(0, Math.round(parseLocaleNumber(sjc))));

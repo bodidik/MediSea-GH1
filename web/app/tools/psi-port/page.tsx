@@ -4,7 +4,7 @@ import React, { useMemo, useState } from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
-import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
+import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 /**
  * PSI/PORT Skoru Gündüz Modu (Sakin Deniz)
@@ -69,7 +69,7 @@ const Row = ({ label, pts, checked, onChange }: { label: string; pts: number; ch
 );
 
 export default function PsiPortPage() {
-  const [age, setAge] = useState<string>("65");
+  const [age, setAge] = useState<string>("");
   const [sex, setSex] = useState<Sex>("male");
   const [sel, setSel] = useState<Record<string, boolean>>({});
 
@@ -78,6 +78,10 @@ export default function PsiPortPage() {
   }
 
   const ageNum = Math.max(0, Math.round(parseLocaleNumber(age)));
+  /* YAŞ GİRİLMEDEN SINIF YOK. Eskiden boş yaş 0 okunuyor, "50 yaş altı"
+     dalına düşüyor ve hiçbir şey girilmemişken "Sınıf I — ayaktan tedavi"
+     basılıyordu: bir dispozisyon önerisi. Aralık `pesi` ile aynı. */
+  const yasOk = sayiGirildiMi(age) && ageNum >= 18 && ageNum <= 120;
 
   const allCriteria = [...COMORBID, ...EXAM, ...LABS];
   const checkedPoints = allCriteria.reduce((sum, c) => sum + (sel[c.key] ? c.pts : 0), 0);
@@ -91,6 +95,7 @@ export default function PsiPortPage() {
   const totalScore = qualifiesClassI ? 0 : Math.round(agePoints + checkedPoints);
 
   const riskClass = useMemo(() => {
+    if (!yasOk) return null;
     if (qualifiesClassI) {
       return { label: "Sınıf I", mortality: "~%0.1", disposition: "Ayaktan tedavi", color: "text-emerald-700", bg: "bg-emerald-50" };
     }
@@ -98,7 +103,7 @@ export default function PsiPortPage() {
     if (totalScore <= 90) return { label: "Sınıf III", mortality: "~%0.9–2.8", disposition: "Kısa gözlem / ayaktan-yatan arası", color: "text-sky-700", bg: "bg-sky-50" };
     if (totalScore <= 130) return { label: "Sınıf IV", mortality: "~%8–9", disposition: "Hastane yatışı", color: "text-amber-700", bg: "bg-amber-50" };
     return { label: "Sınıf V", mortality: "~%27–31", disposition: "Hastane yatışı (yoğun bakım değerlendir)", color: "text-rose-700", bg: "bg-rose-50" };
-  }, [qualifiesClassI, totalScore]);
+  }, [yasOk, qualifiesClassI, totalScore]);
 
   const shareParams: Record<string, number | string> = {
     age: ageNum,
@@ -176,10 +181,10 @@ export default function PsiPortPage() {
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
           <div aria-hidden="true" className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black italic">PSI</div>
           <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">TOPLAM PUAN</span>
-          <div className="text-7xl font-black text-white">{qualifiesClassI ? "–" : totalScore}</div>
-          {qualifiesClassI && (
+          <div className="text-7xl font-black text-white">{!yasOk || qualifiesClassI ? "–" : totalScore}</div>
+          {yasOk && qualifiesClassI && (
             <span className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-3 max-w-xs">
-              Adım 1 kriterleri karşılanmadı — puanlamaya gerek yok, doğrudan Sınıf I
+              Adım 1'de risk ölçütü yok — puanlamaya gerek yok, doğrudan Sınıf I
             </span>
           )}
         </div>
@@ -188,12 +193,22 @@ export default function PsiPortPage() {
         <SonucDuyuru metin={riskClass ? riskClass.label : null} />
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm space-y-3">
-          <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${riskClass.bg} ${riskClass.color}`}>
-            {riskClass.label} — 30 Günlük Mortalite {riskClass.mortality}
-          </div>
-          <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest text-center">
-            {riskClass.disposition}
-          </p>
+          {riskClass ? (
+            <>
+              <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${riskClass.bg} ${riskClass.color}`}>
+                {riskClass.label} — 30 Günlük Mortalite {riskClass.mortality}
+              </div>
+              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest text-center">
+                {riskClass.disposition}
+              </p>
+            </>
+          ) : (
+            <p className="text-center p-4 rounded-xl bg-slate-50 text-slate-600 text-xs font-bold">
+              {sayiGirildiMi(age)
+                ? "Yaş 18–120 aralığında olmalı — sınıf hesaplanmadı."
+                : "Sınıfı görmek için yaşı girin."}
+            </p>
+          )}
           <p className="text-[9px] text-slate-400 font-bold uppercase tracking-widest text-center leading-relaxed">
             ≤70 Sınıf II · 71–90 Sınıf III · 91–130 Sınıf IV · &gt;130 Sınıf V
           </p>

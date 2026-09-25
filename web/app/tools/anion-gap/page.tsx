@@ -14,9 +14,9 @@ import { SINIRLAR, AG_UST, araliktaMi } from "@/app/tools/lib/asit-baz";
 export default function AnionGapPage() {
   // Metin (string) state: kullanıcı alanı silip yeniden yazabilsin, virgül/nokta
   // ondalık ayracı ile yazabilsin diye — sayıya çevirme sadece hesaplama anında yapılır.
-  const [na, setNa] = useState<string>("140");
-  const [cl, setCl] = useState<string>("104");
-  const [hco3, setHco3] = useState<string>("24");
+  const [na, setNa] = useState<string>("");
+  const [cl, setCl] = useState<string>("");
+  const [hco3, setHco3] = useState<string>("");
   const [albumin, setAlbumin] = useState<string>("");
 
   const naNum = parseLocaleNumber(na);

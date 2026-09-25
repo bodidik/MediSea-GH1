@@ -17,10 +17,10 @@ export default function MeldNaPage() {
 
   // Metin (string) state: kullanıcı alanı silip yeniden yazabilsin diye —
   // sayıya çevirme sadece hesaplama anında yapılır.
-  const [cr, setCr] = React.useState<string>(s?.get("cr") || "1");
-  const [tb, setTb] = React.useState<string>(s?.get("tb") || "1");
-  const [inr, setInr] = React.useState<string>(s?.get("inr") || "1");
-  const [na, setNa] = React.useState<string>(s?.get("na") || "135");
+  const [cr, setCr] = React.useState<string>(s?.get("cr") || "");
+  const [tb, setTb] = React.useState<string>(s?.get("tb") || "");
+  const [inr, setInr] = React.useState<string>(s?.get("inr") || "");
+  const [na, setNa] = React.useState<string>(s?.get("na") || "");
 
   const [onDialysis, setOnDialysis] = React.useState<boolean>(s?.get("dial") === "1");
   /**

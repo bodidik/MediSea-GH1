@@ -10,11 +10,11 @@ const CANCER_OPTS = [["Diğer", 0], ["Mide, Pankreas", 2], ["Akciğer, Lenfoma, 
 
 export default function KhoranaPage() {
   const [cancerSite, setCancerSite] = React.useState(0);
-  const [platelet, setPlatelet] = React.useState("300");
-  const [hgb, setHgb] = React.useState("12");
+  const [platelet, setPlatelet] = React.useState("");
+  const [hgb, setHgb] = React.useState("");
   const [esaUse, setEsaUse] = React.useState(false);
-  const [wbc, setWbc] = React.useState("8");
-  const [bmi, setBmi] = React.useState("24");
+  const [wbc, setWbc] = React.useState("");
+  const [bmi, setBmi] = React.useState("");
 
   const plt = parseLocaleNumber(platelet);
   const hgbNum = parseLocaleNumber(hgb);
@@ -122,7 +122,10 @@ export default function KhoranaPage() {
 
         <BinlikUyari girdiler={[{ ad: "Trombosit", ham: platelet }]} />
 
-        <SonucDuyuru metin={r ? r.label : null} />
+        {/* Duyuru da PANELLE AYNI kapıdan geçer. `r` her zaman dolu olduğu
+            için eskiden form bomboşken (boş Hb = 0 → "<10" puanı) panel
+            "değerleri girin" derken ekran okuyucu "ORTA RİSK" okuyordu. */}
+        <SonucDuyuru metin={makul ? r.label : null} />
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">

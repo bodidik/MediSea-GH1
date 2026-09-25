@@ -87,14 +87,20 @@ export default function ChildPughPage() {
    */
   CATEGORIES.forEach((c) => {
     const n = Number(s?.get(c.key));
-    initial[c.key] = c.options.some((o) => o.value === n) ? n : 1;
+    /* Geçerli değer yoksa kategori SEÇİLMEMİŞ kalır. Eskiden 1 puana
+       (normal şıkka) düşüyordu: araç hiçbir şey girilmemişken "5 / 15 ·
+       Class A · 1 yıllık sağkalım ≈ %100" basıyordu. */
+    if (c.options.some((o) => o.value === n)) initial[c.key] = n;
   });
 
   const [sel, setSel] = React.useState<Record<string, number>>(initial);
-  const total = Object.values(sel).reduce((a, b) => a + b, 0);
+  const eksik = CATEGORIES.filter((c) => sel[c.key] === undefined).map((c) => c.title);
+  const total = eksik.length ? null : Object.values(sel).reduce((a, b) => a + b, 0);
 
   const cls =
-    total >= 10
+    total === null
+      ? null
+      : total >= 10
       ? { label: "Class C", survival: "1 Yıllık Sağkalım ≈ %45", color: "text-rose-700", bg: "bg-rose-50", border: "border-rose-200" }
       : total >= 7
       ? { label: "Class B", survival: "1 Yıllık Sağkalım ≈ %80", color: "text-amber-700", bg: "bg-amber-50", border: "border-amber-200" }
@@ -156,15 +162,23 @@ export default function ChildPughPage() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
             <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">TOPLAM</span>
-            <div className="text-5xl font-black text-white">{total}</div>
+            <div className="text-5xl font-black text-white">{total ?? "–"}</div>
             <span className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-1">/ 15</span>
           </div>
-          <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${cls.border} ${cls.bg} transition-all duration-500`}>
+          <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed ${cls ? `${cls.border} ${cls.bg}` : "border-slate-200 bg-slate-50"} transition-all duration-500`}>
             <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block text-center md:text-left">SINIFLAMA</span>
-            <p className={`text-2xl font-black italic tracking-tight text-center md:text-left ${cls.color}`}>
-              {cls.label}
-            </p>
-            <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mt-1 text-center md:text-left">{cls.survival}</p>
+            {cls ? (
+              <>
+                <p className={`text-2xl font-black italic tracking-tight text-center md:text-left ${cls.color}`}>
+                  {cls.label}
+                </p>
+                <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mt-1 text-center md:text-left">{cls.survival}</p>
+              </>
+            ) : (
+              <p className="text-sm font-bold text-slate-600 text-center md:text-left">
+                Seçilmemiş: {eksik.join(", ")}
+              </p>
+            )}
           </div>
         </div>
 

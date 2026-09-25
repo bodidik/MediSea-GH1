@@ -6,8 +6,8 @@ import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber } from "@/app/tools/lib/calc-utils";
 
 export default function HomaIrPage() {
-  const [glucose, setGlucose] = React.useState("95");
-  const [insulin, setInsulin] = React.useState("10");
+  const [glucose, setGlucose] = React.useState("");
+  const [insulin, setInsulin] = React.useState("");
 
   const glu = parseLocaleNumber(glucose);
   const ins = parseLocaleNumber(insulin);

@@ -13,8 +13,8 @@ import { egfrCkdEpi2021, Sex, parseLocaleNumber } from "@/app/tools/lib/calc-uti
 export default function EgfrPage() {
   // Metin (string) state: kullanıcı alanı silip yeniden yazabilsin diye —
   // sayıya çevirme sadece hesaplama anında yapılır.
-  const [scr, setScr] = useState<string>("1.0");
-  const [age, setAge] = useState<string>("45");
+  const [scr, setScr] = useState<string>("");
+  const [age, setAge] = useState<string>("");
   const [sex, setSex] = useState<Sex>("male");
 
   const scrNum = parseLocaleNumber(scr);

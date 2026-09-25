@@ -12,8 +12,8 @@ import { correctedSodium, parseLocaleNumber } from "@/app/tools/lib/calc-utils";
  */
 
 export default function CorrectedSodiumPage() {
-  const [na, setNa] = useState<string>("130");
-  const [glucose, setGlucose] = useState<string>("400");
+  const [na, setNa] = useState<string>("");
+  const [glucose, setGlucose] = useState<string>("");
 
   const naNum = parseLocaleNumber(na);
   const glucoseNum = parseLocaleNumber(glucose);

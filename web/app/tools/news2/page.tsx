@@ -61,12 +61,12 @@ export default function NEWS2Page() {
 
   // Metin (string) state: kullanıcı alanı silip yeniden yazabilsin diye —
   // sayıya çevirme sadece hesaplama anında yapılır.
-  const [rr, setRr] = React.useState<string>(s?.get("rr") || "18");
-  const [spo2, setSpo2] = React.useState<string>(s?.get("spo2") || "97");
+  const [rr, setRr] = React.useState<string>(s?.get("rr") || "");
+  const [spo2, setSpo2] = React.useState<string>(s?.get("spo2") || "");
   const [onO2, setOnO2] = React.useState<boolean>(s?.get("o2") === "1");
-  const [sbp, setSbp] = React.useState<string>(s?.get("sbp") || "120");
-  const [hr, setHr] = React.useState<string>(s?.get("hr") || "80");
-  const [temp, setTemp] = React.useState<string>(s?.get("temp") || "36.8");
+  const [sbp, setSbp] = React.useState<string>(s?.get("sbp") || "");
+  const [hr, setHr] = React.useState<string>(s?.get("hr") || "");
+  const [temp, setTemp] = React.useState<string>(s?.get("temp") || "");
   const [avpu, setAvpu] = React.useState<string>(s?.get("avpu") || "A");
 
   const rrNum = parseLocaleNumber(rr);

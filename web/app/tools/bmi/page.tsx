@@ -6,8 +6,8 @@ import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
 import { parseLocaleNumber, sayiGirildiMi, kiloMakulMu, KILO_ALT, KILO_UST } from "@/app/tools/lib/calc-utils";
 
 export default function BmiPage() {
-  const [height, setHeight] = React.useState("170");
-  const [weight, setWeight] = React.useState("70");
+  const [height, setHeight] = React.useState("");
+  const [weight, setWeight] = React.useState("");
   const [sex, setSex]       = React.useState<"m" | "f">("m");
 
   const h = parseLocaleNumber(height);
@@ -47,10 +47,13 @@ export default function BmiPage() {
    * SESSİZ BOŞLUK YERİNE SEBEP. Kapı konduktan sonra saçma bir girdide sonuç
    * yalnızca "–" oluyordu; kullanıcı neyin yanlış olduğunu göremiyordu.
    *
-   * Bu araçta VARSAYILANLAR GEÇERLİ (170/70), yani sebep ancak kullanıcı
-   * bir alanı bozduğunda çıkıyor — ayrı bir "girdi var mı" kapısı gerekmiyor.
+   * Alanlar BOŞ açılır (eskiden 170/70 ile açılıyor ve hiçbir şey
+   * girilmemişken "BMI 24.2 · NORMAL" basıyordu). İkisi de boşken sebep
+   * kartı çıkmaz: açılışta `role="alert"` ile "hesaplanamıyor" okumak
+   * gürültü. Kullanıcı bir alana yazınca eksik olanı söyler.
    */
-  const eksikAlan = [
+  const girdiBasladi = height.trim() !== "" || weight.trim() !== "";
+  const eksikAlan = !girdiBasladi ? [] : [
     !boyOk && "boy (50–250 cm)",
     !kiloOk && `ağırlık (${KILO_ALT}–${KILO_UST} kg)`,
   ].filter(Boolean) as string[];

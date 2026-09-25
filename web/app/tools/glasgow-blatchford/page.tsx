@@ -60,10 +60,10 @@ const CheckRow = ({ label, pts, checked, onChange }: { label: string; pts: numbe
 );
 
 export default function GlasgowBlatchfordPage() {
-  const [bun, setBun] = useState<string>("15");
-  const [hgb, setHgb] = useState<string>("14");
+  const [bun, setBun] = useState<string>("");
+  const [hgb, setHgb] = useState<string>("");
   const [sex, setSex] = useState<"male" | "female">("male");
-  const [sbp, setSbp] = useState<string>("120");
+  const [sbp, setSbp] = useState<string>("");
   const [tachycardia, setTachycardia] = useState(false);
   const [melena, setMelena] = useState(false);
   const [syncope, setSyncope] = useState(false);

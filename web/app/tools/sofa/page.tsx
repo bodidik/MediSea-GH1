@@ -17,16 +17,16 @@ export default function SOFAPage() {
   // --- STATE YÖNETİMİ ---
   // Metin (string) state: kullanıcı alanı silip yeniden yazabilsin diye —
   // sayıya çevirme sadece hesaplama anında yapılır.
-  const [pf, setPf] = React.useState<string>(s?.get("pf") || "400");
+  const [pf, setPf] = React.useState<string>(s?.get("pf") || "");
   const [respSupport, setRespSupport] = React.useState<boolean>(s?.get("vent") === "1");
-  const [plt, setPlt] = React.useState<string>(s?.get("plt") || "200");
-  const [bili, setBili] = React.useState<string>(s?.get("bili") || "1");
-  const [map, setMap] = React.useState<string>(s?.get("map") || "75");
+  const [plt, setPlt] = React.useState<string>(s?.get("plt") || "");
+  const [bili, setBili] = React.useState<string>(s?.get("bili") || "");
+  const [map, setMap] = React.useState<string>(s?.get("map") || "");
   const [pressor, setPressor] = React.useState<string>(s?.get("press") || "none");
   const [dose, setDose] = React.useState<string>(s?.get("dose") || "0");
-  const [gcs, setGcs] = React.useState<string>(s?.get("gcs") || "15");
-  const [cr, setCr] = React.useState<string>(s?.get("cr") || "1.0");
-  const [urine, setUrine] = React.useState<string>(s?.get("ur") || "1000");
+  const [gcs, setGcs] = React.useState<string>(s?.get("gcs") || "");
+  const [cr, setCr] = React.useState<string>(s?.get("cr") || "");
+  const [urine, setUrine] = React.useState<string>(s?.get("ur") || "");
 
   const pfNum = parseLocaleNumber(pf);
   const pltNum = parseLocaleNumber(plt);

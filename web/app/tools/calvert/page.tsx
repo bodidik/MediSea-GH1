@@ -5,8 +5,8 @@ import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import { parseLocaleNumber, sayiGirildiMi } from "@/app/tools/lib/calc-utils";
 
 export default function CalvertPage() {
-  const [gfr, setGfr] = React.useState("90");
-  const [auc, setAuc] = React.useState("5");
+  const [gfr, setGfr] = React.useState("");
+  const [auc, setAuc] = React.useState("");
 
   const gfrNum = parseLocaleNumber(gfr);
   const aucNum = parseLocaleNumber(auc);
@@ -52,8 +52,11 @@ export default function CalvertPage() {
     ? Math.round(aucNum * (gfrKullanilan + 25) * 10) / 10
     : null;
 
-  /* Sessiz boşluk yerine sebep: hangi alanın ne beklediği ADIYLA söyleniyor. */
-  const eksikAlan = [
+  /* Sessiz boşluk yerine sebep: hangi alanın ne beklediği ADIYLA söyleniyor.
+     Alanlar BOŞ açılır (eskiden GFR 90 · AUC 5 ile açılıp hiçbir şey
+     girilmemişken karboplatin dozu basıyordu); ikisi de boşken kart çıkmaz. */
+  const girdiBasladi = gfr.trim() !== "" || auc.trim() !== "";
+  const eksikAlan = !girdiBasladi ? [] : [
     !gfrGecerli && "GFR (1–200 mL/dak)",
     !aucGecerli && "hedef AUC (1–12 mg/mL·dak)",
   ].filter(Boolean) as string[];

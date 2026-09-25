@@ -13,8 +13,8 @@ import { correctedCalciumMgdl, parseLocaleNumber } from "@/app/tools/lib/calc-ut
 export default function CorrectedCalciumPage() {
   // Input alanları metin (string) olarak tutulur; kullanıcı 0'ı silip
   // rakam yazabilsin diye — sayıya çevirme sadece hesaplama anında yapılır.
-  const [ca, setCa] = useState<string>("8.5");
-  const [alb, setAlb] = useState<string>("4.0");
+  const [ca, setCa] = useState<string>("");
+  const [alb, setAlb] = useState<string>("");
 
   const caNum = parseLocaleNumber(ca);
   const albNum = parseLocaleNumber(alb);

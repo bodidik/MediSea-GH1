@@ -50,7 +50,7 @@ const MOTOR: Option[] = [
  * Geçerli küme, düğmeleri çizen AYNI diziden alınıyor; elle yazılmış bir sınır
  * listesi olsaydı şıklar değiştiğinde sessizce çelişirdi.
  */
-function secenekten(ham: string | null | undefined, secenekler: Option[], varsayilan: number): number {
+function secenekten(ham: string | null | undefined, secenekler: Option[], varsayilan: number | null): number | null {
   if (!ham) return varsayilan;
   const n = Number(ham);
   return secenekler.some((o) => o.value === n) ? n : varsayilan;
@@ -61,7 +61,7 @@ function OptionRow({
 }: {
   title: string;
   options: Option[];
-  selected: number;
+  selected: number | null;
   onSelect: (v: number) => void;
 }) {
   return (
@@ -90,14 +90,20 @@ function OptionRow({
 
 export default function GcsPage() {
   const s = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
-  const [eye, setEye] = React.useState<number>(secenekten(s?.get("e"), EYE, 4));
-  const [verbal, setVerbal] = React.useState<number>(secenekten(s?.get("v"), VERBAL, 5));
-  const [motor, setMotor] = React.useState<number>(secenekten(s?.get("m"), MOTOR, 6));
+  /* Varsayılan SEÇİLMEMİŞ. Eskiden E4 V5 M6 ile açılıyor ve hiçbir şey
+     değerlendirilmemişken "GKS 15 · Hafif" basıyordu — tam bilinçli bir
+     hasta iddiası. Paylaşılan adresteki geçerli değer yine okunuyor. */
+  const [eye, setEye] = React.useState<number | null>(secenekten(s?.get("e"), EYE, null));
+  const [verbal, setVerbal] = React.useState<number | null>(secenekten(s?.get("v"), VERBAL, null));
+  const [motor, setMotor] = React.useState<number | null>(secenekten(s?.get("m"), MOTOR, null));
 
-  const total = eye + verbal + motor;
+  const tamam = eye !== null && verbal !== null && motor !== null;
+  const total = tamam ? eye + verbal + motor : null;
 
   const interpretation =
-    total >= 13
+    total === null
+      ? null
+      : total >= 13
       ? { label: "Hafif", color: "text-emerald-700", bg: "bg-emerald-50" }
       : total >= 9
       ? { label: "Orta", color: "text-amber-700", bg: "bg-amber-50" }
@@ -136,17 +142,23 @@ export default function GcsPage() {
         <div className="bg-blue-900 rounded-[2.5rem] p-10 flex flex-col items-center justify-center shadow-xl border-t-8 border-amber-400 relative overflow-hidden text-center">
            <div aria-hidden="true" className="absolute top-0 right-0 p-6 opacity-10 text-white text-7xl font-black italic">GKS</div>
            <span className="text-[10px] font-black text-blue-200 uppercase tracking-[0.4em] mb-2">TOPLAM SKOR</span>
-           <div className="text-7xl font-black text-white">{total}</div>
-           <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">E{eye} + V{verbal} + M{motor} / 15</span>
+           <div className="text-7xl font-black text-white">{total ?? "–"}</div>
+           <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-2">E{eye ?? "?"} + V{verbal ?? "?"} + M{motor ?? "?"} / 15</span>
         </div>
 
         {/* YORUMLAMA PANELİ */}
         <SonucDuyuru metin={interpretation ? interpretation.label : null} />
 
         <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm">
-           <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${interpretation.bg} ${interpretation.color}`}>
-             {interpretation.label}
-           </div>
+           {interpretation ? (
+             <div className={`text-center p-4 rounded-xl font-black italic uppercase tracking-tight ${interpretation.bg} ${interpretation.color}`}>
+               {interpretation.label}
+             </div>
+           ) : (
+             <p className="text-center p-4 rounded-xl bg-slate-50 text-slate-600 text-xs font-bold">
+               Skor için göz, sözel ve motor yanıtın üçünü de seçin.
+             </p>
+           )}
         </div>
 
         {/* PAYLAŞIM VE UYARI */}

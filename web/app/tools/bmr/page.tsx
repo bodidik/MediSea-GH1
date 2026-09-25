@@ -14,9 +14,9 @@ const ACTIVITY_OPTS = [
 
 export default function BmrPage() {
   const [sex, setSex]       = React.useState<"m" | "f">("m");
-  const [age, setAge]       = React.useState("35");
-  const [height, setHeight] = React.useState("175");
-  const [weight, setWeight] = React.useState("75");
+  const [age, setAge]       = React.useState("");
+  const [height, setHeight] = React.useState("");
+  const [weight, setWeight] = React.useState("");
   const [factor, setFactor] = React.useState(1.55);
 
   const a = parseLocaleNumber(age);
@@ -50,9 +50,11 @@ export default function BmrPage() {
   };
   const girdiMakul = makul(age, 1, 120) && makul(height, 50, 250) && kiloMakulMu(weight);
 
-  /* SESSİZ BOŞLUK YERİNE SEBEP. Varsayılanlar geçerli (35/175/75), yani sebep
-     ancak kullanıcı bir alanı bozduğunda çıkıyor. */
-  const eksikAlan = [
+  /* SESSİZ BOŞLUK YERİNE SEBEP. Alanlar BOŞ açılır (eskiden 35/175/75 ile
+     açılıp hiçbir şey girilmemişken kalori basıyordu); hepsi boşken kart
+     çıkmaz — açılışta `role="alert"` ile "hesaplanamıyor" okumak gürültü. */
+  const girdiBasladi = [age, height, weight].some((v) => v.trim() !== "");
+  const eksikAlan = !girdiBasladi ? [] : [
     !makul(age, 1, 120) && "yaş (1–120)",
     !makul(height, 50, 250) && "boy (50–250 cm)",
     !kiloMakulMu(weight) && `ağırlık (${KILO_ALT}–${KILO_UST} kg)`,

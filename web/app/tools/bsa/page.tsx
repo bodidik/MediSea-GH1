@@ -10,8 +10,8 @@ import { bsaMosteller, parseLocaleNumber, kiloMakulMu } from "@/app/tools/lib/ca
  */
 
 export default function BsaPage() {
-  const [height, setHeight] = useState<string>("170");
-  const [weight, setWeight] = useState<string>("70");
+  const [height, setHeight] = useState<string>("");
+  const [weight, setWeight] = useState<string>("");
 
   const heightNum = parseLocaleNumber(height);
   const weightNum = parseLocaleNumber(weight);

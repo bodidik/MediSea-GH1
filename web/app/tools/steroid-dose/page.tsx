@@ -25,7 +25,7 @@ const STEROIDS: Steroid[] = [
 
 export default function SteroidDosePage() {
   const [from, setFrom] = React.useState(2); // prednizon index
-  const [dose, setDose] = React.useState("20");
+  const [dose, setDose] = React.useState("");
 
   const doseNum = Math.max(0, parseFloat(dose) || 0);
   const fromSteroid = STEROIDS[from];
