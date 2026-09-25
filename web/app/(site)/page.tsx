@@ -65,9 +65,12 @@ export default async function Home() {
             </div>
 
             {/* Başlık */}
-            <h1 className="text-4xl xl:text-5xl font-black text-white mb-3 italic uppercase tracking-tighter leading-[0.9]">
-              Medi<span className="not-italic">Sea</span>{" "}
-              <span className="text-yellow-400 not-italic block">Akademi</span>
+            {/* Harfler BÜYÜK YAZILIYOR, `uppercase` ile büyütülmüyor: sayfa dili
+                Türkçe (lang="tr") olduğu için CSS büyütmesi "i" harfini "İ"ye
+                çeviriyor ve marka adı ekranda "MEDİSEA" görünüyordu. */}
+            <h1 className="text-4xl xl:text-5xl font-black text-white mb-3 italic tracking-tighter leading-[0.9]">
+              MEDI<span className="not-italic">SEA</span>{" "}
+              <span className="text-yellow-400 not-italic block">AKADEMİ</span>
             </h1>
             <p className="text-sm leading-relaxed text-blue-200/75 mb-6 font-medium">
               İç hastalıkları asistanları ve uzmanları için klinik karar desteği, güncel konu anlatımları ve YDUS hazırlık platformu.
