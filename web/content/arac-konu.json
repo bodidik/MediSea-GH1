@@ -723,11 +723,6 @@
         "eslesen": "TIMI Risk Skoru"
       },
       {
-        "slug": "timi-ua",
-        "name": "TIMI Skoru (UA/NSTEMI)",
-        "eslesen": "TIMI Skoru"
-      },
-      {
         "slug": "sgarbossa",
         "name": "Sgarbossa Kriterleri",
         "eslesen": "Sgarbossa"
@@ -746,6 +741,11 @@
         "slug": "heart",
         "name": "HEART Skoru",
         "eslesen": "HEART"
+      },
+      {
+        "slug": "timi-ua",
+        "name": "TIMI Skoru (UA/NSTEMI)",
+        "eslesen": "TIMI"
       }
     ],
     "kardiyoloji/aprocitentan-kbh-ve-yasli": [
@@ -1373,8 +1373,8 @@
         "eslesen": "eGFR"
       },
       {
-        "yol": "kardiyoloji/akut-koroner-sendromlar",
-        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
+        "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
+        "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
         "eslesen": "eGFR"
       },
       {
@@ -1403,8 +1403,8 @@
         "eslesen": "eGFR"
       },
       {
-        "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
-        "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
+        "yol": "kardiyoloji/direncli-hipertansiyon-yeni-nesil",
+        "baslik": "Dirençli ve Refrakter Hipertansiyon: Yeni Nesil Tedaviler",
         "eslesen": "eGFR"
       }
     ],
@@ -1853,7 +1853,7 @@
       {
         "yol": "kardiyoloji/akut-koroner-sendromlar",
         "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
-        "eslesen": "TIMI Skoru"
+        "eslesen": "TIMI"
       }
     ],
     "endocarditis": [
