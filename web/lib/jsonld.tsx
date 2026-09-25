@@ -1,4 +1,5 @@
 import { siteUrl, SITE_ADI, SITE_ACIKLAMA } from "@/lib/site";
+import type { Kaynak } from "@/lib/kaynaklar";
 
 /**
  * Yapısal veri (JSON-LD) yardımcıları.
@@ -119,10 +120,20 @@ export function konuSemasi(opts: {
   yol: string;
   guncelleme?: string;
   etiketler?: string[];
+  kaynaklar?: Kaynak[];
 }) {
   const base = siteUrl();
   return {
     "@context": "https://schema.org",
+    // Kaynak sayfada GÖRÜNÜYORSA şemada da var — bkz. `lib/kaynaklar.ts`.
+    citation: opts.kaynaklar?.length
+      ? opts.kaynaklar.map((k) => ({
+          "@type": "CreativeWork",
+          name: k.ad,
+          datePublished: k.yil,
+          url: k.url,
+        }))
+      : undefined,
     // MedicalWebPage, sağlık içeriğini genel makaleden ayırır.
     "@type": "MedicalWebPage",
     name: opts.baslik,

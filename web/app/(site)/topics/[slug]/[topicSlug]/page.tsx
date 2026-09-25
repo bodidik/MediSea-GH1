@@ -20,6 +20,7 @@ import ilgiliIndex from "@/content/ilgili-index.json";
 import aracKonuIndex from "@/content/arac-konu.json";
 import { ebeveynleriCoz } from "@/lib/slug-eslestir";
 import { htmlKapat } from "@/lib/icerik-html";
+import { kaynaklariAl } from "@/lib/kaynaklar";
 
 /**
  * force-dynamic KALDIRILDI, yerine ISR.
@@ -523,6 +524,8 @@ export default async function TopicDetailPage({
   const ilgiliAdCakisiyor = (k: { baslik: string; brans: string }) =>
     (ilgiliAdSayaci.get(ilgiliGorunurAd(k)) ?? 0) > 1;
 
+  const kaynaklar = kaynaklariAl(rawData?.meta);
+
   return (
     <div className="min-h-screen bg-slate-50 py-10 px-4 font-sans">
       <JsonLd
@@ -532,6 +535,7 @@ export default async function TopicDetailPage({
           yol: `/topics/${slug}/${topicSlug}`,
           guncelleme: rawData?.meta?.updatedAt,
           etiketler: Array.isArray(rawData?.meta?.tags) ? rawData.meta.tags : undefined,
+          kaynaklar,
         })}
       />
       <JsonLd
@@ -873,6 +877,44 @@ export default async function TopicDetailPage({
                 </div>
               )}
             </div>
+
+            {/* KAYNAKLAR — `meta.kaynaklar` (şema ve gerekçe `lib/kaynaklar.ts`).
+                `[data-readable]` DIŞINDA: içindekiler ile aynı gerekçe, okuma
+                konteynerine eklenen her öge kayıtlı vurguların ofsetini
+                kaydırabilir. Kaynak yoksa blok HİÇ çizilmez — "kaynak yok"
+                yazısı 500 sayfaya aynı gürültüyü basardı. */}
+            {kaynaklar.length > 0 && (
+              <section
+                aria-labelledby="kaynaklar-basligi"
+                className="mt-5 bg-white rounded-[2rem] shadow-sm border border-slate-200 p-6 md:p-8"
+              >
+                <h2
+                  id="kaynaklar-basligi"
+                  className="font-sans mt-0 text-[10px] font-black text-blue-900/80 uppercase tracking-[0.2em] mb-3"
+                >
+                  Kaynaklar
+                </h2>
+                <ol className="list-decimal pl-5 space-y-2 text-sm text-slate-700 leading-snug">
+                  {kaynaklar.map((k, i) => (
+                    <li key={i}>
+                      {k.url ? (
+                        <a
+                          href={k.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block py-[3px] text-blue-800 underline decoration-blue-200 underline-offset-2 hover:text-blue-950 hover:decoration-blue-800"
+                        >
+                          {k.ad}
+                        </a>
+                      ) : (
+                        k.ad
+                      )}
+                      {k.yil && !k.ad.includes(k.yil) ? ` (${k.yil})` : ""}
+                    </li>
+                  ))}
+                </ol>
+              </section>
+            )}
 
             {/* İçerik Editörü — YALNIZCA YÖNETİCİYE. Kapı istemcide kuruluyor
                 (bkz. YoneticiDuzenleyici): sunucuda oturuma göre farklı HTML
