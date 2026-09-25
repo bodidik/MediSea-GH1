@@ -97,10 +97,10 @@ export default function UyelikSayfasi() {
         {/* BAŞLIK */}
         <div className="border-l-8 border-blue-900 pl-6 py-2">
           <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.3em] mb-2">
-            MediSea Üyelik
+            MEDISEA Üyelik
           </div>
           <h1 className="text-4xl sm:text-5xl font-black uppercase italic tracking-tighter leading-none">
-            Neyin ücretsiz,<br />neyin Premium olduğu
+            Neyin ücretsiz,<br />neyin PREMIUM olduğu
           </h1>
           <p className="text-slate-500 font-bold text-sm mt-4 max-w-2xl leading-relaxed">
             Kısa cevap: okuduğun her şey ücretsiz. Premium, YDUS'a hazırlananlar
@@ -114,7 +114,7 @@ export default function UyelikSayfasi() {
             <span aria-hidden="true" className="text-2xl">🚧</span>
             <div>
               <h2 className="text-base font-black uppercase tracking-wide text-amber-900 mb-2">
-                Premium henüz satışta değil
+                PREMIUM henüz satışta değil
               </h2>
               <p className="text-sm text-amber-900/80 font-medium leading-relaxed">
                 Sınav materyali hâlâ yazılıyor ve hazır olmadan para almak
@@ -153,7 +153,7 @@ export default function UyelikSayfasi() {
               ★
             </span>
             <h2 className="text-xs font-black uppercase tracking-[0.25em] text-amber-400">
-              Premium — YDUS hazırlığı
+              PREMIUM — YDUS hazırlığı
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -165,7 +165,7 @@ export default function UyelikSayfasi() {
             ))}
           </div>
           <p className="text-[11px] text-blue-300 font-bold uppercase tracking-widest mt-7 pt-6 border-t border-blue-900">
-            Premium alan, premium içeriğin tamamına sahip olur — branş branş satılmaz.
+            PREMIUM alan, PREMIUM içeriğin tamamına sahip olur — branş branş satılmaz.
           </p>
         </section>
 

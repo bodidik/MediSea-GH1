@@ -622,7 +622,7 @@ export default function SiteHeader() {
                 <span className="truncate text-sm font-bold text-blue-950">{kullaniciAdi}</span>
                 {plan === 'premium' && (
                   <span className="hidden sm:block rounded-full bg-amber-400 px-2 py-0.5 text-[9px] font-black uppercase tracking-widest text-blue-950">
-                    Premium
+                    PREMIUM
                   </span>
                 )}
               </Link>
