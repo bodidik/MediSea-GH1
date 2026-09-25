@@ -34,6 +34,9 @@
  *     tire ile bir alfanümerik komşuya bağlanmış geçiş SAYILMAZ
  *     (`AF-TIMI`, `TIMI-48`); aynı takma ad metinde başka bir yerde
  *     serbest geçiyorsa bağ yine kurulur. *
+ *  6. Kelime içi büyük/küçük geçişi (`eGFR` ↔ onkogen `EGFR`) — bkz.
+ *     `icHarfDuyarli`.
+ *
  * NADİRLİK ÇALIŞMIYOR, denendi: `Anafilaksi` 9 konuda geçiyor ve DOĞRU,
  * `PPI` 10 konuda geçiyor ve YANLIŞ. Ayraç sıklık değil, takma adın
  * kaynağı (parantez içi mi, asıl ad mı).
@@ -89,6 +92,17 @@ const kacir = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 /** Tamamı büyük harf ve kısa → küçük/büyük duyarlı ara (tuzak 1). */
 const kisaltmaMi = (a) => a.length <= 6 && a === a.toLocaleUpperCase("tr");
 /**
+ * KELİME İÇİ BÜYÜK/KÜÇÜK GEÇİŞİ ANLAM TAŞIR (tuzak 6). `eGFR` aracı
+ * duyarsız aranınca onkogen `EGFR`le eşleşiyordu: "EGFR mutasyonu"
+ * geçen FLAURA2 · akciğer kanseri · Cushing (USP8 → EGFR sinyali) ·
+ * aldosteron konularına böbrek hesaplayıcısı bağlanıyordu (32 bağın 8'i).
+ * Tuzak 4'ün tire çaresi bunu tutmuyordu — "EGFR mutasyonu" serbest geçiş.
+ * Küçük harfi büyük harf izleyen tek sözcüklük takma ad (`eGFR` · `HbA1c`
+ * · `qSOFA` · `mRS`) yazıldığı gibi aranır.
+ */
+const icHarfDuyarli = (a) => !/\s/.test(a) && /[a-zçğıöşü][A-ZÇĞİÖŞÜ]/.test(a);
+const harfDuyarli = (a) => kisaltmaMi(a) || icHarfDuyarli(a);
+/**
  * ÜÇ HARFLİ KISALTMA AYIRT EDİCİ DEĞİL — ölçüldü. "CAT" aracın adından
  * ("CAT Skoru") türüyor ama antikoagülasyon konusunda kansere bağlı
  * trombozu (cancer-associated thrombosis) işaret ediyor; "ACT" de aynı
@@ -97,7 +111,7 @@ const kisaltmaMi = (a) => a.length <= 6 && a === a.toLocaleUpperCase("tr");
  */
 const belirsizKisaltma = (a) => kisaltmaMi(a) && a.replace(/[^A-Z0-9]/g, "").length <= 3;
 const desenle = (a) =>
-  new RegExp(`(^|[^${HARF}])${kacir(a)}([^${HARF}]|$)`, kisaltmaMi(a) ? "" : "i");
+  new RegExp(`(^|[^${HARF}])${kacir(a)}([^${HARF}]|$)`, harfDuyarli(a) ? "" : "i");
 /**
  * Tire ile bir alfanümerik komşuya bağlanmış geçiş, takma adın kendisi
  * değil BİLEŞİK BİR ÖZEL ADIN parçasıdır (tuzak 4). Metinde en az bir
@@ -105,7 +119,7 @@ const desenle = (a) =>
  */
 const HARF_RE = new RegExp(`[${HARF}]`);
 function serbestGecisVarMi(a, govde) {
-  const re = new RegExp(kacir(a), kisaltmaMi(a) ? "g" : "gi");
+  const re = new RegExp(kacir(a), harfDuyarli(a) ? "g" : "gi");
   for (let m; (m = re.exec(govde)); ) {
     const bas = m.index;
     const son = bas + m[0].length;

@@ -10,21 +10,9 @@
     ],
     "endokrinoloji/cushing-sendromu-genetik-ve-inovasyonlar": [
       {
-        "slug": "egfr",
-        "name": "eGFR (CKD-EPI 2021)",
-        "eslesen": "eGFR"
-      },
-      {
         "slug": "qtc",
         "name": "QTc Hesaplayıcı",
         "eslesen": "QTc"
-      }
-    ],
-    "endokrinoloji/cushing-sendromu-patofizyoloji-klinik": [
-      {
-        "slug": "egfr",
-        "name": "eGFR (CKD-EPI 2021)",
-        "eslesen": "eGFR"
       }
     ],
     "endokrinoloji/diabetes-mellitus-ana": [
@@ -77,13 +65,6 @@
         "slug": "anion-gap",
         "name": "Anyon Açığı",
         "eslesen": "Anyon Açığı"
-      }
-    ],
-    "endokrinoloji/hipofiz-adenomlari": [
-      {
-        "slug": "egfr",
-        "name": "eGFR (CKD-EPI 2021)",
-        "eslesen": "eGFR"
       }
     ],
     "endokrinoloji/hipofiz-hastaliklari-ana": [
@@ -247,13 +228,6 @@
       }
     ],
     "endokrinoloji/tirzepatid-kardiyorenal-koruma": [
-      {
-        "slug": "egfr",
-        "name": "eGFR (CKD-EPI 2021)",
-        "eslesen": "eGFR"
-      }
-    ],
-    "endokrinoloji/usp8-mutasyonu-ve-pasireotid": [
       {
         "slug": "egfr",
         "name": "eGFR (CKD-EPI 2021)",
@@ -735,13 +709,6 @@
         "eslesen": "4T Skoru"
       }
     ],
-    "journal-club/flaura2-osimertinib-kemoterapi-nejm": [
-      {
-        "slug": "egfr",
-        "name": "eGFR (CKD-EPI 2021)",
-        "eslesen": "eGFR"
-      }
-    ],
     "journal-club/iptacopan-igan-faz3": [
       {
         "slug": "egfr",
@@ -909,13 +876,6 @@
         "eslesen": "Metabolik Sendrom"
       }
     ],
-    "nefroloji/aldosteron-mekanizmalari": [
-      {
-        "slug": "egfr",
-        "name": "eGFR (CKD-EPI 2021)",
-        "eslesen": "eGFR"
-      }
-    ],
     "nefroloji/asit-baz-denge-bozukluklari": [
       {
         "slug": "anion-gap",
@@ -1026,25 +986,6 @@
         "eslesen": "Anyon Açığı"
       }
     ],
-    "onkoloji/akciger-kanseri-ana-sayfa": [
-      {
-        "slug": "egfr",
-        "name": "eGFR (CKD-EPI 2021)",
-        "eslesen": "eGFR"
-      }
-    ],
-    "onkoloji/buprenorfin-rotasyonu-ve-induksiyon": [
-      {
-        "slug": "egfr",
-        "name": "eGFR (CKD-EPI 2021)",
-        "eslesen": "eGFR"
-      },
-      {
-        "slug": "qtc",
-        "name": "QTc Hesaplayıcı",
-        "eslesen": "QTc"
-      }
-    ],
     "onkoloji/febril-notropeni-cisne-indexi": [
       {
         "slug": "cisne",
@@ -1078,13 +1019,6 @@
         "slug": "child-pugh",
         "name": "Child-Pugh Sınıflaması",
         "eslesen": "Child-Pugh"
-      }
-    ],
-    "onkoloji/khdak-tani-algoritma-evreleme": [
-      {
-        "slug": "egfr",
-        "name": "eGFR (CKD-EPI 2021)",
-        "eslesen": "eGFR"
       }
     ],
     "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik": [
@@ -1212,48 +1146,6 @@
         "eslesen": "Aldosteron/Renin Oranı"
       }
     ],
-    "egfr": [
-      {
-        "yol": "nefroloji/aldosteron-mekanizmalari",
-        "baslik": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "endokrinoloji/cushing-sendromu-genetik-ve-inovasyonlar",
-        "baslik": "Cushing Sendromu: Genetik, Farmakoloji ve Tanıda Yenilikler",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "kardiyoloji/akut-koroner-sendromlar",
-        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "onkoloji/akciger-kanseri-ana-sayfa",
-        "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "journal-club/flaura2-osimertinib-kemoterapi-nejm",
-        "baslik": "NEJM: FLAURA2 Faz 3 - EGFR-Mutant KHDAK'de Osimertinib ve Kemoterapi",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "klinik-nutrisyon/klinik-nutrisyon-ana-unite",
-        "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
-        "baslik": "Palyatif Bakımda Ağrı Yönetimi",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "nefroloji/farmakoloji-finerenon",
-        "baslik": "Yeni Nesil ns-MRA Finerenon",
-        "eslesen": "eGFR"
-      }
-    ],
     "qtc": [
       {
         "yol": "endokrinoloji/cushing-sendromu-genetik-ve-inovasyonlar",
@@ -1261,8 +1153,8 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "onkoloji/buprenorfin-rotasyonu-ve-induksiyon",
-        "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması",
+        "yol": "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik",
+        "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik",
         "eslesen": "QTc"
       },
       {
@@ -1276,8 +1168,8 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik",
-        "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik",
+        "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
+        "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
         "eslesen": "QTc"
       },
       {
@@ -1286,13 +1178,13 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
-        "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
+        "yol": "endokrinoloji/men1-osilodrostat-mineralokortikoid",
+        "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi",
         "eslesen": "QTc"
       },
       {
-        "yol": "endokrinoloji/men1-osilodrostat-mineralokortikoid",
-        "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi",
+        "yol": "endokrinoloji/men1-osilodrostat-yan-etkiler",
+        "baslik": "Osilodrostat: Yan Etki Profili ve Klinik Yönetim Protokolleri",
         "eslesen": "QTc"
       }
     ],
@@ -1472,6 +1364,48 @@
         "yol": "endokrinoloji/prolaktinoma-yeni-biyobelirtecler",
         "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler",
         "eslesen": "Makroprolaktin"
+      }
+    ],
+    "egfr": [
+      {
+        "yol": "nefroloji/farmakoloji-finerenon",
+        "baslik": "Yeni Nesil ns-MRA Finerenon",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "kardiyoloji/akut-koroner-sendromlar",
+        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "endokrinoloji/sglt2-hasta-gunler-kurali-sick-day",
+        "baslik": "SGLT2 İnhibitörleri: Hasta Günler Kuralı (Sick Day Rules)",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "journal-club/iptacopan-igan-faz3",
+        "baslik": "Nefroloji-NEJM: APPLAUSE-IgAN Faz 3 ve İptacopan",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "klinik-nutrisyon/klinik-nutrisyon-ana-unite",
+        "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
+        "baslik": "Palyatif Bakımda Ağrı Yönetimi",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "nefroloji/iga-nefropatisi-berger",
+        "baslik": "IgA Nefropatisi ve IgA Vasküliti (HSP)",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
+        "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
+        "eslesen": "eGFR"
       }
     ],
     "metabolik-sendrom": [
@@ -1843,7 +1777,7 @@
     "4t-hit": [
       {
         "yol": "hematoloji/heparin-aracili-trombositopeni-hit",
-        "baslik": "Heparin İlişkili Trombositopeni (HİT)",
+        "baslik": "Heparin Aracılı Trombositopeni (HİT)",
         "eslesen": "4T Skoru — HIT"
       },
       {
@@ -1855,7 +1789,7 @@
     "hep-skoru": [
       {
         "yol": "hematoloji/heparin-aracili-trombositopeni-hit",
-        "baslik": "Heparin İlişkili Trombositopeni (HİT)",
+        "baslik": "Heparin Aracılı Trombositopeni (HİT)",
         "eslesen": "HEP Skoru — HIT"
       }
     ],
@@ -2060,8 +1994,8 @@
   "olcum": {
     "konu": 515,
     "arac": 257,
-    "araciOlanKonu": 141,
+    "araciOlanKonu": 133,
     "konusuOlanArac": 58,
-    "bag": 184
+    "bag": 174
   }
 }
