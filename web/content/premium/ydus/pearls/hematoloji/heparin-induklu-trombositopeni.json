@@ -70,7 +70,7 @@
       "id": "hit-inci-010",
       "level": "Klinik",
       "title": "SRA pozitiflik kriteri",
-      "content": "<p>Terapötik heparin konsantrasyonunda (**0.1–0.3 / 0.5 IU/mL (terapötik düşük doz)**) **&gt;%20 serotonin salınımı** pozitif kabul edilir. Doğrulama için yüksek heparin konsantrasyonunda (**100 IU/mL**) trombosit aktivasyonunun **baskılanması** (<em>inhibition</em>) **şarttır** (heparin bağımlılığı).</p>",
+      "content": "<p>Terapötik heparin konsantrasyonunda (**0.1–0.3 IU/mL; bazı laboratuvarlarda 0.5 IU/mL'ye kadar**) **&gt;%20 serotonin salınımı** pozitif kabul edilir. Doğrulama için yüksek heparin konsantrasyonunda (**100 IU/mL**) trombosit aktivasyonunun **baskılanması** (<em>inhibition</em>) **şarttır** (heparin bağımlılığı).</p>",
       "trigger": "Fonksiyonel Testler"
     },
     {

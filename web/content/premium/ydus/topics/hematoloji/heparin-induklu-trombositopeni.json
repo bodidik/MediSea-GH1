@@ -158,7 +158,7 @@
       "baslik": "Fonksiyonel Assay'ler (Gold Standard)",
       "satirlar": [
         { "metin": "**1. Serotonin Release Assay (¹⁴C-SRA):** Trombosit aktivasyonunun altın standardıdır. Radyoaktif ¹⁴C-serotonin ile yüklenmiş, yıkanmış donör trombositleri, hasta serumu ve heparin ile inkübe edilir." },
-        { "metin": "**Pozitiflik Kriteri:** Terapötik heparin konsantrasyonunda (0.1–0.3 / 0.5 IU/mL (terapötik düşük doz)) %20'den fazla serotonin salınımı olması VE supraterapötik yüksek heparin konsantrasyonunda (100 IU/mL) bu salınımın inhibe olmasıdır (heparin bağımlılığı doğrulaması)." },
+        { "metin": "**Pozitiflik Kriteri:** Terapötik heparin konsantrasyonunda (0.1–0.3 IU/mL; bazı laboratuvarlarda 0.5 IU/mL'ye kadar) %20'den fazla serotonin salınımı olması VE supraterapötik yüksek heparin konsantrasyonunda (100 IU/mL) bu salınımın inhibe olmasıdır (heparin bağımlılığı doğrulaması)." },
         { "metin": "**2. Heparin-Induced Platelet Activation (HIPA):** Yıkanmış donör trombosit agregasyonunun mikrotitre plaklarında optik olarak değerlendirilmesidir." },
         { "metin": "**3. SRA-Negatif HİT ve Çözümü:** Klinik olarak güçlü HİT tablosu olup SRA testi negatif gelen vakalarda, ortama ekstra PF4 eklenerek yapılan PF4-enhanced SRA veya akım sitometrik P-Selectin Ekspresyon Tayini (PEA) yapılmalıdır." }
       ]
