@@ -14,7 +14,19 @@
       "Selülit"
     ],
     "parent": null,
-    "order": 2
+    "order": 2,
+    "kaynaklar": [
+      {
+        "ad": "The Diagnosis and Treatment of Peripheral Lymphedema: 2023 Consensus Document of the International Society of Lymphology. Lymphology 2023;56(4)",
+        "yil": 2023,
+        "url": "https://doi.org/10.2458/lymph.6372"
+      },
+      {
+        "ad": "Kataru RP, Wiser I, Baik JE, ve ark. Fibrosis and secondary lymphedema: chicken or egg? Transl Res 2019;209:68-76",
+        "yil": 2019,
+        "url": "https://doi.org/10.1016/j.trsl.2019.04.001"
+      }
+    ]
   },
   "sections": [
     {
