@@ -4005,6 +4005,27 @@
    "baslik": "Sistemik Hastalıkların Özofagus Tutulumu"
   }
  ],
+ "genel-dahiliye/icg-lenfografisi-ve-evreleme": [
+  {
+   "brans": "genel-dahiliye",
+   "slug": "lenfadenopati-yaklasimi",
+   "baslik": "Lenfadenopati (LAP)"
+  }
+ ],
+ "genel-dahiliye/kikuchi-fujimoto-sle": [
+  {
+   "brans": "genel-dahiliye",
+   "slug": "lenfodem",
+   "baslik": "Lenfödem"
+  }
+ ],
+ "genel-dahiliye/lenfadenopati-yaklasimi": [
+  {
+   "brans": "genel-dahiliye",
+   "slug": "lenfodem",
+   "baslik": "Lenfödem"
+  }
+ ],
  "genel-dahiliye/lenfodem": [
   {
    "brans": "genel-dahiliye",
