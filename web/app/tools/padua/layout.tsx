@@ -8,7 +8,7 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 export const metadata: Metadata = {
   title: "Padua Skoru — Yatan dahili hastalarda VTE profilaksi",
   description: "Padua Skoru: Yatan dahili hastalarda VTE profilaksi kararı. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/padua" },
+  alternates: { canonical: "/tools/padua", languages: {"tr":"/tools/padua","en":"/en/tools/padua","x-default":"/tools/padua"} },
   openGraph: {
     type: "website",
     title: "Padua Skoru — Yatan dahili hastalarda VTE profilaksi",

@@ -1,3 +1,14 @@
 {
-  "sayfalar": []
+  "sayfalar": [
+    "/tools",
+    "/tools/chads-vasc",
+    "/tools/curb65",
+    "/tools/has-bled",
+    "/tools/heart",
+    "/tools/padua",
+    "/tools/perc",
+    "/tools/qsofa",
+    "/tools/wells-dvt",
+    "/tools/wells-pe"
+  ]
 }

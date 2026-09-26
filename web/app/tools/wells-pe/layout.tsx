@@ -8,7 +8,7 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 export const metadata: Metadata = {
   title: "Wells Skoru (PE) — Pulmoner emboli klinik olasılığı",
   description: "Wells Skoru (PE): Pulmoner emboli klinik olasılığı. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/wells-pe" },
+  alternates: { canonical: "/tools/wells-pe", languages: {"tr":"/tools/wells-pe","en":"/en/tools/wells-pe","x-default":"/tools/wells-pe"} },
   openGraph: {
     type: "website",
     title: "Wells Skoru (PE) — Pulmoner emboli klinik olasılığı",

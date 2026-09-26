@@ -8,7 +8,7 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 export const metadata: Metadata = {
   title: "HEART Skoru — Akut göğüs ağrısı kardiyak risk triyajı",
   description: "HEART Skoru: Akut göğüs ağrısı kardiyak risk triyajı — 5 kriterin beşi de yanıtlanmadan sonuç basmaz. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/heart" },
+  alternates: { canonical: "/tools/heart", languages: {"tr":"/tools/heart","en":"/en/tools/heart","x-default":"/tools/heart"} },
   openGraph: {
     type: "website",
     title: "HEART Skoru — Akut göğüs ağrısı kardiyak risk triyajı",

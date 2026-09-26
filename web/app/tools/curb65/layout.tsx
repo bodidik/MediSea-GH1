@@ -8,7 +8,7 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 export const metadata: Metadata = {
   title: "CURB-65 Skoru — Toplum kökenli pnömoni triyaj kararı",
   description: "CURB-65 Skoru: Toplum kökenli pnömoni triyaj kararı. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/curb65" },
+  alternates: { canonical: "/tools/curb65", languages: {"tr":"/tools/curb65","en":"/en/tools/curb65","x-default":"/tools/curb65"} },
   openGraph: {
     type: "website",
     title: "CURB-65 Skoru — Toplum kökenli pnömoni triyaj kararı",
