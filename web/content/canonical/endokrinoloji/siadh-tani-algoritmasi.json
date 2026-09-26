@@ -1,6 +1,7 @@
 {
   "title": "Modül 2: SIADH Tanı Kriterleri ve FE-Ürik Asit Analizi",
   "meta": {
+    "kaynakca": "siadh",
     "updatedAt": "18 Mar 2026",
     "tags": ["Tanı", "SIADH", "Schwartz-Bartter", "FE-UA", "Kopeptin", "Reset Osmostat"],
     "parent": "siadh-sendromu",

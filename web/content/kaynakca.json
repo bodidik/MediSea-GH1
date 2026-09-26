@@ -1415,5 +1415,41 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "siadh": {
+    "baslik": "SIADH",
+    "aciklama": "Uygunsuz antidiürez (SIAD/SIADH) sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Warren AM, Grossmann M, Christ-Crain M, Russell N. Syndrome of Inappropriate Antidiuresis: From Pathophysiology to Management. Endocr Rev 2023;44(5):819-861",
+        "yil": 2023,
+        "url": "https://doi.org/10.1210/endrev/bnad010",
+        "tur": "makale"
+      },
+      {
+        "ad": "Krisanapan P, Tangpanithandee S, Thongprayoon C, ve ark. Safety and Efficacy of Vaptans in the Treatment of Hyponatremia from Syndrome of Inappropriate Antidiuretic Hormone Secretion (SIADH): A Systematic Review and Meta-Analysis. J Clin Med 2023;12(17):5483",
+        "yil": 2023,
+        "url": "https://doi.org/10.3390/jcm12175483",
+        "tur": "makale"
+      },
+      {
+        "ad": "Papart S, Daly AF, Bianchi E, ve ark. SIADH as an uncommon presentation of olfactory neuroblastoma: a case-based overview. Endocr Oncol 2025;5(1):e250021",
+        "yil": 2025,
+        "url": "https://doi.org/10.1530/EO-25-0021",
+        "tur": "makale"
+      },
+      {
+        "ad": "Melmed S, Koenig R, Rosen CJ, Auchus RJ, Goldfine AB. Williams Textbook of Endocrinology. 14. baskı. Elsevier; 2019. Bölüm: Posterior Pituitary",
+        "yil": 2019,
+        "url": "https://shop.elsevier.com/books/williams-textbook-of-endocrinology/melmed/978-0-323-55596-8",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Kellerman RD, Heidelbaugh JJ, ed. Conn's Current Therapy 2025. Elsevier; 2024",
+        "yil": 2024,
+        "url": "https://shop.elsevier.com/books/conns-current-therapy-2025/kellerman/978-0-443-12181-4",
+        "tur": "kitap"
+      }
+    ]
   }
 }
