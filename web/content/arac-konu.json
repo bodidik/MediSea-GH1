@@ -67,6 +67,18 @@
         "eslesen": "Anyon Açığı"
       }
     ],
+    "endokrinoloji/hiperparatiroidizm": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
+      }
+    ],
     "endokrinoloji/hipofiz-hastaliklari-ana": [
       {
         "slug": "dst",
@@ -1175,8 +1187,8 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
-        "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
+        "yol": "endokrinoloji/hiperparatiroidizm",
+        "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası",
         "eslesen": "QTc"
       },
       {
@@ -1185,8 +1197,8 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "endokrinoloji/men1-insulinoma",
-        "baslik": "MEN1 İlişkili İnsülinoma: Klinik Davranış, Hipoglisemi Yönetimi ve Cerrahi Strateji",
+        "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
+        "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
         "eslesen": "QTc"
       },
       {
@@ -1195,8 +1207,8 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "endokrinoloji/men1-osilodrostat-mineralokortikoid",
-        "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi",
+        "yol": "endokrinoloji/men1-insulinoma",
+        "baslik": "MEN1 İlişkili İnsülinoma: Klinik Davranış, Hipoglisemi Yönetimi ve Cerrahi Strateji",
         "eslesen": "QTc"
       }
     ],
@@ -1330,6 +1342,48 @@
         "eslesen": "Status Epileptikus"
       }
     ],
+    "egfr": [
+      {
+        "yol": "nefroloji/farmakoloji-finerenon",
+        "baslik": "Yeni Nesil ns-MRA Finerenon",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
+        "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "endokrinoloji/hiperparatiroidizm",
+        "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "journal-club/iptacopan-igan-faz3",
+        "baslik": "Nefroloji-NEJM: APPLAUSE-IgAN Faz 3 ve İptacopan",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "klinik-nutrisyon/klinik-nutrisyon-ana-unite",
+        "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "onkoloji/buprenorfin-rotasyonu-ve-induksiyon",
+        "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
+        "baslik": "Palyatif Bakımda Ağrı Yönetimi",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "nefroloji/iga-nefropatisi-berger",
+        "baslik": "IgA Nefropatisi ve IgA Vasküliti (HSP)",
+        "eslesen": "eGFR"
+      }
+    ],
     "dst": [
       {
         "yol": "endokrinoloji/hipofiz-hastaliklari-ana",
@@ -1376,48 +1430,6 @@
         "yol": "endokrinoloji/prolaktinoma-yeni-biyobelirtecler",
         "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler",
         "eslesen": "Makroprolaktin"
-      }
-    ],
-    "egfr": [
-      {
-        "yol": "nefroloji/farmakoloji-finerenon",
-        "baslik": "Yeni Nesil ns-MRA Finerenon",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
-        "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "endokrinoloji/sglt2-hasta-gunler-kurali-sick-day",
-        "baslik": "SGLT2 İnhibitörleri: Hasta Günler Kuralı (Sick Day Rules)",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "journal-club/iptacopan-igan-faz3",
-        "baslik": "Nefroloji-NEJM: APPLAUSE-IgAN Faz 3 ve İptacopan",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "klinik-nutrisyon/klinik-nutrisyon-ana-unite",
-        "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "onkoloji/buprenorfin-rotasyonu-ve-induksiyon",
-        "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
-        "baslik": "Palyatif Bakımda Ağrı Yönetimi",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "nefroloji/iga-nefropatisi-berger",
-        "baslik": "IgA Nefropatisi ve IgA Vasküliti (HSP)",
-        "eslesen": "eGFR"
       }
     ],
     "metabolik-sendrom": [
@@ -2004,10 +2016,10 @@
     ]
   },
   "olcum": {
-    "konu": 520,
+    "konu": 521,
     "arac": 257,
-    "araciOlanKonu": 134,
+    "araciOlanKonu": 135,
     "konusuOlanArac": 58,
-    "bag": 176
+    "bag": 178
   }
 }

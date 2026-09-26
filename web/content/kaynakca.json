@@ -1090,6 +1090,12 @@
         "yil": 2026,
         "url": "https://www.uptodate.com/contents/treatment-of-hypercalcemia",
         "tur": "uptodate"
+      },
+      {
+        "ad": "Kerschan-Schindl K, Gelles K, Butylina M, ve ark. Bone metabolism in primary hyperparathyroidism. Wien Klin Wochenschr 2026;138(7-8):217-224",
+        "yil": 2026,
+        "url": "https://doi.org/10.1007/s00508-025-02670-z",
+        "tur": "makale"
       }
     ]
   },
@@ -1677,6 +1683,671 @@
         "yil": 2024,
         "url": "https://www.uptodate.com/contents/pharmacologic-therapy-of-heart-failure-with-reduced-ejection-fraction-mechanisms-of-action",
         "tur": "uptodate"
+      }
+    ]
+  },
+  "cushing": {
+    "baslik": "Cushing sendromu",
+    "aciklama": "Cushing sendromu sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Akirov A, Fleseriu M. Hypercoagulability in Cushing’s syndrome: past, present, future. Arch Endocrinol Metab 2026;70(nspe1):1-9",
+        "yil": 2026,
+        "url": "https://doi.org/10.20945/2359-4292-2025-0095",
+        "tur": "makale"
+      },
+      {
+        "ad": "Barbot M, Lazzara M, Mazzeo P, Pecori Giraldi F. Unusual infections and thrombotic events in Cushing’s syndrome. J Endocrinol Invest 2024;48(S1):35-43",
+        "yil": 2024,
+        "url": "https://doi.org/10.1007/s40618-024-02454-8",
+        "tur": "makale"
+      },
+      {
+        "ad": "Baruah MM, Adhikari U, Prasad T, ve ark. Immune Reconstitution Inflammatory Syndrome Following Remission of Cushing’s Syndrome and Review of Literature. Indian J Endocrinol Metab 2025;29(2):153-159",
+        "yil": 2025,
+        "url": "https://doi.org/10.4103/ijem.ijem_291_24",
+        "tur": "makale"
+      },
+      {
+        "ad": "Blevins LS. The Evolution of Our Understanding of the Nuances of Pathologic Cortisol Secretion. Endocr Pract 2025;31(9):1185-1188",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.eprac.2025.06.002",
+        "tur": "makale"
+      },
+      {
+        "ad": "Araujo-Castro M, García-Centeno R, Aller J, ve ark. Executive summary of the consensus document for the management of severe Cushing's syndrome: Consensus document of the Neuroendocrinology Focus Group of the Spanish Society of Endocrinology and Nutrition (SEEN). Endocrinol Diabetes Nutr 2025;72(10):501654",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.endinu.2025.501654",
+        "tur": "makale"
+      },
+      {
+        "ad": "DeFronzo RA, Auchus RJ. Cushing Syndrome, Hypercortisolism, and Glucose Homeostasis: A Review. Diabetes 2025;74(12):2168-2178",
+        "yil": 2025,
+        "url": "https://doi.org/10.2337/db25-0120",
+        "tur": "makale"
+      },
+      {
+        "ad": "Dillon BR, Agrawal N, Schwarz Y, ve ark. Update on Medical Treatment of Cushing’s Syndrome. Drugs 2025;85(10):1207-1230",
+        "yil": 2025,
+        "url": "https://doi.org/10.1007/s40265-025-02223-8",
+        "tur": "makale"
+      },
+      {
+        "ad": "Fleseriu M, Auchus RJ, Bancos I, Biller BMK. Osilodrostat Treatment for Adrenal and Ectopic Cushing Syndrome: Integration of Clinical Studies With Case Presentations. J Endocr Soc 2025;9(4):bvaf027",
+        "yil": 2025,
+        "url": "https://doi.org/10.1210/jendso/bvaf027",
+        "tur": "makale"
+      },
+      {
+        "ad": "Guignat L, Bertherat J. Medical Treatment of Cushing’s Syndrome. Endocrinol Metab 2025;40(1):26-38",
+        "yil": 2025,
+        "url": "https://doi.org/10.3803/enm.2024.501",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kumar A, Sharma A, Omar MH. Protein Kinase A Signaling in Cortisol Production and Adrenal Cushing’s Syndrome. Cells 2025;15(1):63",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/cells15010063",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lhul RVDS, Nunes KG, de Almeida TS, ve ark. Cushing’s syndrome: a systematic review of psychiatric and cognitive symptoms in case studies. Arch Endocrinol Metab 2026;70(3):1-5",
+        "yil": 2026,
+        "url": "https://doi.org/10.20945/2359-4292-2026-0029",
+        "tur": "makale"
+      },
+      {
+        "ad": "Minasyan M, Suchy W, Fedak A, ve ark. Liver impairment and medical management of Cushing syndrome and MACS. Front Endocrinol 2025;16:1660316",
+        "yil": 2025,
+        "url": "https://doi.org/10.3389/fendo.2025.1660316",
+        "tur": "makale"
+      },
+      {
+        "ad": "Muthukuda DT, Liyanaarachchi KD, Jayawickreme KP, ve ark. Etomidate in Severe Cushing Syndrome: A Systematic Review. J Endocr Soc 2025;9(4):bvaf039",
+        "yil": 2025,
+        "url": "https://doi.org/10.1210/jendso/bvaf039",
+        "tur": "makale"
+      },
+      {
+        "ad": "Olaimat AR, Jafarzadehbalagafsheh P, Gol M, ve ark. Trilostane: Beyond Cushing’s Syndrome. Animals 2025;15(3):415",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/ani15030415",
+        "tur": "makale"
+      },
+      {
+        "ad": "Rege J, Udager AM. Molecular characterization of archival adrenal tumor tissue from patients with ACTH-independent Cushing syndrome. J Steroid Biochem Mol Biol 2025;247:106666",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.jsbmb.2024.106666",
+        "tur": "makale"
+      },
+      {
+        "ad": "Salvio G, Ciarloni A, Aboud N, ve ark. The effect of hypercortisolism treatment on dyslipidemia in Cushing syndrome: systematic review and meta-analysis. J Clin Endocrinol Metab 2026;111(4):1187-1202",
+        "yil": 2026,
+        "url": "https://doi.org/10.1210/clinem/dgaf681",
+        "tur": "makale"
+      },
+      {
+        "ad": "Savvidis C, Liakopoulos C, Ilias I. Biases of large language models in diagnosing Cushing’s syndrome. World J Methodol 2026;16(2):115059",
+        "yil": 2026,
+        "url": "https://doi.org/10.5662/wjm.v16.i2.115059",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ferrante E, Simeoli C, Mantovani G, Pivonello R. Who and how to screen for endogenous hypercortisolism in patients with mood disorders. J Endocrinol Invest 2024;48(S1):75-82",
+        "yil": 2024,
+        "url": "https://doi.org/10.1007/s40618-024-02457-5",
+        "tur": "makale"
+      },
+      {
+        "ad": "Wang W, Chen WY, Zhang MX, ve ark. Presentation of multiple endocrine neoplasia type 2A-associated ectopic cushing’s syndrome: case report and a systematic review. Front Endocrinol 2025;16:1644751",
+        "yil": 2025,
+        "url": "https://doi.org/10.3389/fendo.2025.1644751",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cross SS, ed. Underwood's Pathology. Elsevier; 2024. Bölüm: Endocrine System",
+        "yil": 2024,
+        "url": "https://shop.elsevier.com/books/underwoods-pathology/cross/978-0-443-11699-5",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Lacroix A. Cushing syndrome due to primary bilateral macronodular adrenal hyperplasia. UpToDate; son güncelleme 27 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/cushing-syndrome-due-to-primary-bilateral-macronodular-adrenal-hyperplasia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nieman LK. Causes and pathophysiology of Cushing syndrome. UpToDate; son güncelleme 5 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/causes-and-pathophysiology-of-cushing-syndrome",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Lacroix A. Cushing syndrome due to primary pigmented nodular adrenocortical disease. UpToDate; son güncelleme 11 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/cushing-syndrome-due-to-primary-pigmented-nodular-adrenocortical-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nieman LK. Diagnosis and management of Cushing syndrome during pregnancy. UpToDate; son güncelleme 30 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/diagnosis-and-management-of-cushing-syndrome-during-pregnancy",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nieman LK. Epidemiology and clinical manifestations of Cushing syndrome. UpToDate; son güncelleme 15 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/epidemiology-and-clinical-manifestations-of-cushing-syndrome",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nieman LK. Establishing the cause of Cushing syndrome. UpToDate; son güncelleme 28 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/establishing-the-cause-of-cushing-syndrome",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nieman LK. Establishing the diagnosis of Cushing syndrome. UpToDate; son güncelleme 23 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/establishing-the-diagnosis-of-cushing-syndrome",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nieman LK. Medical therapy of hypercortisolism (Cushing syndrome). UpToDate; son güncelleme 24 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/medical-therapy-of-hypercortisolism-cushing-syndrome",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nieman LK. Overview of the treatment of Cushing syndrome. UpToDate; son güncelleme 2 Nis 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/overview-of-the-treatment-of-cushing-syndrome",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "tiroidit": {
+    "baslik": "Tiroiditler",
+    "aciklama": "Tiroidit sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla ya da kütüphane kaydıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Czarnywojtek A, Pietrończyk K, Thompson LDR, ve ark. IgG4-related sclerosing thyroiditis (Riedel-Struma): a review of clinicopathological features and management. Virchows Arch 2023;483(2):133-144",
+        "yil": 2023,
+        "url": "https://doi.org/10.1007/s00428-023-03561-2",
+        "tur": "makale"
+      },
+      {
+        "ad": "Tagami T, Katai M, Kinuya S, ve ark. Guidelines for the diagnosis of Graves' disease, hypothyroidism, painless thyroiditis, chronic thyroiditis (Hashimoto's thyroiditis), and subacute thyroiditis (acute phase). Thyroid Sci 2025;2(4):100032",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.thscie.2025.100032",
+        "tur": "makale"
+      },
+      {
+        "ad": "Gardner DG, Shoback D, ed. Greenspan's Basic and Clinical Endocrinology. 10. baskı. McGraw-Hill Education; 2017",
+        "yil": 2017,
+        "url": "https://openlibrary.org/isbn/9781259589287",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Harrison's Principles of Internal Medicine. 22. baskı. McGraw Hill",
+        "url": "https://openlibrary.org/isbn/9781265979317",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Moutsopoulos HM, Fragoulis GE, Stone JH. Clinical manifestations and diagnosis of IgG4-related disease. UpToDate; son güncelleme 26 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-manifestations-and-diagnosis-of-igg4-related-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Cystic thyroid nodules. UpToDate; son güncelleme 13 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/cystic-thyroid-nodules",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Diagnostic approach to and treatment of thyroid nodules in adults. UpToDate; son güncelleme 7 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/diagnostic-approach-to-and-treatment-of-thyroid-nodules-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Evaluation and management of thyroid nodules with indeterminate cytology in adults. UpToDate; son güncelleme 16 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/evaluation-and-management-of-thyroid-nodules-with-indeterminate-cytology-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Burch HB. Infiltrative thyroid disease. UpToDate; son güncelleme 22 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/infiltrative-thyroid-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Malchoff CD. Oncogenes and tumor suppressor genes in thyroid nodules and nonmedullary thyroid cancer. UpToDate; son güncelleme 9 Haz 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/oncogenes-and-tumor-suppressor-genes-in-thyroid-nodules-and-nonmedullary-thyroid-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Sipos JA. Overview of the clinical utility of ultrasonography in thyroid disease. UpToDate; son güncelleme 17 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-the-clinical-utility-of-ultrasonography-in-thyroid-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Overview of thyroid disease and pregnancy. UpToDate; son güncelleme 2 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-thyroid-disease-and-pregnancy",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Overview of thyroid nodule formation. UpToDate; son güncelleme 27 Şub 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/overview-of-thyroid-nodule-formation",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Burman KD. Overview of thyroiditis. UpToDate; son güncelleme 15 Eki 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/overview-of-thyroiditis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Burman KD. Subacute thyroiditis. UpToDate; son güncelleme 21 May 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/subacute-thyroiditis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Thyroid biopsy. UpToDate; son güncelleme 15 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/thyroid-biopsy",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Thyroid hormone suppressive therapy for thyroid nodules and benign goiter. UpToDate; son güncelleme 29 Oca 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/thyroid-hormone-suppressive-therapy-for-thyroid-nodules-and-benign-goiter",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Moutsopoulos HM, Fragoulis GE, Stone JH. Treatment and prognosis of IgG4-related disease. UpToDate; son güncelleme 8 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-and-prognosis-of-igg4-related-disease",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "prolaktinoma": {
+    "baslik": "Hiperprolaktinemi ve prolaktinoma",
+    "aciklama": "Hiperprolaktinemi ve prolaktinoma sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Dzialach L, Sobolewska J, Zak Z, ve ark. Prolactin-secreting pituitary adenomas: male-specific differences in pathogenesis, clinical presentation and treatment. Front Endocrinol 2024;15:1338345",
+        "yil": 2024,
+        "url": "https://doi.org/10.3389/fendo.2024.1338345",
+        "tur": "makale"
+      },
+      {
+        "ad": "Haidenberg-David F, Sidauy-Adissi J, Moscona-Nissan A, ve ark. Overview of Hyperprolactinemia: General Approach and Reproductive Health Implications. Arch Med Res 2024;55(8):103102",
+        "yil": 2024,
+        "url": "https://doi.org/10.1016/j.arcmed.2024.103102",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lu Y, Chen X, Ke X, ve ark. Hyperprolactinemia caused by extra-pituitary prolactin secretion: a systematic review. Endocr Connect 2025;14(7):e250054",
+        "yil": 2025,
+        "url": "https://doi.org/10.1530/ec-25-0054",
+        "tur": "makale"
+      },
+      {
+        "ad": "Melmed S, Casanueva FF, Hoffman AR, ve ark. Diagnosis and Treatment of Hyperprolactinemia: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab 2011;96(2):273-288",
+        "yil": 2011,
+        "url": "https://doi.org/10.1210/jc.2010-1692",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ntali G, Markussis V, Chrisoulidou A. An Overview of Cardiovascular Risk in Pituitary Disorders. Medicina (Kaunas) 2024;60(8):1241",
+        "yil": 2024,
+        "url": "https://doi.org/10.3390/medicina60081241",
+        "tur": "makale"
+      },
+      {
+        "ad": "Petersenn S, Fleseriu M, Casanueva FF, ve ark. Diagnosis and management of prolactin-secreting pituitary adenomas: a Pituitary Society international Consensus Statement. Nat Rev Endocrinol 2023;19(12):722-740",
+        "yil": 2023,
+        "url": "https://doi.org/10.1038/s41574-023-00886-5",
+        "tur": "makale"
+      },
+      {
+        "ad": "Sharma S, Acharya M, Sherpa C. Giant Prolactinoma: Challenges in Management. AACE Endocrinol Diabetes 2025;12(4):260-264",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.aed.2025.07.004",
+        "tur": "makale"
+      },
+      {
+        "ad": "Włochacz A, Krzesiński P, Wierzbowski R, ve ark. Autonomic balance and cardiovascular hemodynamic function in men with prolactinoma. Front Endocrinol 2025;16:1701651",
+        "yil": 2025,
+        "url": "https://doi.org/10.3389/fendo.2025.1701651",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zeng Y, Huang Q, Zou Y, ve ark. The efficacy and safety of quinagolide in hyperprolactinemia treatment: A systematic review and meta-analysis. Front Endocrinol 2023;14:1027905",
+        "yil": 2023,
+        "url": "https://doi.org/10.3389/fendo.2023.1027905",
+        "tur": "makale"
+      },
+      {
+        "ad": "Bronstein MD. Disorders of Prolactin Secretion and Prolactinomas. In: Endocrinology: Adult and Pediatric. Elsevier; 2016. p. 104-128.e6",
+        "yil": 2016,
+        "url": "https://doi.org/10.1016/B978-0-323-18907-1.00007-X",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Snyder PJ. Causes of hyperprolactinemia. UpToDate; son güncelleme 11 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/causes-of-hyperprolactinemia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Snyder PJ. Clinical manifestations and evaluation of hyperprolactinemia. UpToDate; son güncelleme 23 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-manifestations-and-evaluation-of-hyperprolactinemia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Snyder PJ. Management of hyperprolactinemia. UpToDate; son güncelleme 24 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-hyperprolactinemia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Snyder PJ. Management of lactotroph adenoma (prolactinoma) before and during pregnancy. UpToDate; son güncelleme 24 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-lactotroph-adenoma-prolactinoma-before-and-during-pregnancy",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "colyak": {
+    "baslik": "Çölyak hastalığı",
+    "aciklama": "Çölyak hastalığı sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Al-Toma A, Zingone F, Branchi F, ve ark. European Society for the Study of Coeliac Disease 2025 Updated Guidelines on the Diagnosis and Management of Coeliac Disease in Adults. Part 1: Diagnostic Approach. United European Gastroenterol J 2025;13(10):1855-1886",
+        "yil": 2025,
+        "url": "https://doi.org/10.1002/ueg2.70119",
+        "tur": "makale"
+      },
+      {
+        "ad": "Al-Toma A, Branchi F, Zingone F, ve ark. European Society for the Study of Coeliac Disease (ESsCD) 2025 Updated Guidelines on the Diagnosis and Management of Coeliac Disease in Adults. Part 2: Management, Follow-Up, and Complex Disease Courses. United European Gastroenterol J 2026;14(2):e70195",
+        "yil": 2026,
+        "url": "https://doi.org/10.1002/ueg2.70195",
+        "tur": "makale"
+      },
+      {
+        "ad": "Rogalidou M, Christodoulou D. Unraveling the Complexity of Celiac Disease: A Narrative Review of Its Multisystem Nature. Medicina (Kaunas) 2026;62(1):120",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/medicina62010120",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cappozzo F, Schrempp Esteves C, Corsolini F, ve ark. Unmasking Celiac Disease Through Chronic Urticaria: Case Report and Scoping Review. Nutrients 2026;18(3):476",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/nu18030476",
+        "tur": "makale"
+      },
+      {
+        "ad": "Banegas M, Flores-Marin D, Naskar N, ve ark. Gastrointestinal and Extraintestinal Symptoms Among Subjects With Celiac Disease Undergoing a Dose-Specified Gluten Challenge: A Systematic Review and Meta-Analysis. Am J Gastroenterol 2026;121(2):501-516",
+        "yil": 2026,
+        "url": "https://doi.org/10.14309/ajg.0000000000003506",
+        "tur": "makale"
+      },
+      {
+        "ad": "Khaneshi M, Alizadeh F, Ghahremanzadeh A, ve ark. Epigenetic regulation by gut microbiota-derived metabolites in celiac disease. Biochem Biophys Rep 2026;46:102584",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.bbrep.2026.102584",
+        "tur": "makale"
+      },
+      {
+        "ad": "Dillawn P, Nagle S, Liu E, Stahl MG. Ironing Out the Deficiency: Tracking Iron in Celiac Disease Before and After the Gluten-Free Diet. Nutrients 2026;18(4):590",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/nu18040590",
+        "tur": "makale"
+      },
+      {
+        "ad": "Marafini I, Salvatori S, Troncone E, ve ark. Immune cell dynamics and mechanisms of epithelial injury in celiac disease. Front Immunol 2026;17:1766513",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fimmu.2026.1766513",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kubala K, Pietrucha T, Goldyn M, ve ark. Integrated Role of Microbial, Fungal, and Plant-Derived Interventions in the Management of Celiac Disease: A Narrative Review. Cureus 2026;18(1):e102471",
+        "yil": 2026,
+        "url": "https://doi.org/10.7759/cureus.102471",
+        "tur": "makale"
+      },
+      {
+        "ad": "Luque V, Crespo-Escobar P, Hård af Segerstad EM, ve ark. Gluten-free diet for pediatric patients with coeliac disease: A position paper from the ESPGHAN gastroenterology committee, special interest group in coeliac disease. J Pediatr Gastroenterol Nutr 2024;78(4):973-995",
+        "yil": 2024,
+        "url": "https://doi.org/10.1002/jpn3.12079",
+        "tur": "makale"
+      },
+      {
+        "ad": "Manza F, Sammartino C, Nandi N, ve ark. How to diagnose coeliac disease in 2026? Minerva Gastroenterol (Torino) 2026;72(1):60-74",
+        "yil": 2026,
+        "url": "https://doi.org/10.23736/s2724-5985.25.04052-5",
+        "tur": "makale"
+      },
+      {
+        "ad": "Mearin ML, Agardh D, Antunes H, ve ark. ESPGHAN Position Paper on Management and Follow-up of Children and Adolescents With Celiac Disease. J Pediatr Gastroenterol Nutr 2022;75(3):369-386",
+        "yil": 2022,
+        "url": "https://doi.org/10.1097/mpg.0000000000003540",
+        "tur": "makale"
+      },
+      {
+        "ad": "Migliorini F, Simeone F, Schäfer L, ve ark. Musculoskeletal consequences of coeliac disease. Eur J Med Res 2026;31(1):520",
+        "yil": 2026,
+        "url": "https://doi.org/10.1186/s40001-026-04010-x",
+        "tur": "makale"
+      },
+      {
+        "ad": "Mpakosi A, Cholevas V, Tsantes AG, ve ark. Mass Screening Strategies for Celiac Disease in Apparently Healthy Children and Adolescents: A Systematic Review. Medicina (Kaunas) 2026;62(2):246",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/medicina62020246",
+        "tur": "makale"
+      },
+      {
+        "ad": "Taavela J, Elli L, Bouma G, ve ark. Upcoming Treatments in Celiac Disease: From Luminal Enzymes to Oral Immune Tolerance. United European Gastroenterol J 2026;14(3):e70222",
+        "yil": 2026,
+        "url": "https://doi.org/10.1002/ueg2.70222",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zhao Y, Feng W. Relative risk of oral manifestations with celiac disease: a systematic review and meta-analysis. BMC Gastroenterol 2026;26(1):343",
+        "yil": 2026,
+        "url": "https://doi.org/10.1186/s12876-026-04860-z",
+        "tur": "makale"
+      },
+      {
+        "ad": "Angelopoulou T, Bobetsis YA. Periodontal Status of Patients with Celiac Disease and Non-Celiac Gluten Sensitivity: A Literature Review. J Clin Med 2026;15(8):2828",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/jcm15082828",
+        "tur": "makale"
+      },
+      {
+        "ad": "Thomas N, Vaidya B, Leslie RD, ve ark. Association of Individual or Family History of Autoimmune Disease With Future Development of Type 1 Diabetes. Diabetes Metab Res Rev 2026;42(1):e70110",
+        "yil": 2026,
+        "url": "https://doi.org/10.1002/dmrr.70110",
+        "tur": "makale"
+      },
+      {
+        "ad": "Rubio-Tapia A, Hill ID, Semrad C, ve ark. American College of Gastroenterology Guidelines Update: Diagnosis and Management of Celiac Disease. Am J Gastroenterol 2023;118(1):59-76",
+        "yil": 2023,
+        "url": "https://doi.org/10.14309/ajg.0000000000002075",
+        "tur": "makale"
+      },
+      {
+        "ad": "Szajewska H, Shamir R, Auricchio R, ve ark. Early diet and the risk of coeliac disease. An update 2024 position paper by the ESPGHAN special interest group on coeliac disease. J Pediatr Gastroenterol Nutr 2024;79(2):438-445",
+        "yil": 2024,
+        "url": "https://doi.org/10.1002/jpn3.12280",
+        "tur": "makale"
+      },
+      {
+        "ad": "Boone L. Patient perspective: Celiac disease. UpToDate; son güncelleme 8 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/patient-perspective-celiac-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ciclitira PJ. Management of celiac disease in adults. UpToDate; son güncelleme 4 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-celiac-disease-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Hull C. Dermatitis herpetiformis. UpToDate; son güncelleme 9 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/dermatitis-herpetiformis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kelly CP. Diagnosis of celiac disease in adults. UpToDate; son güncelleme 10 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/diagnosis-of-celiac-disease-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Schuppan D, Dieterich W. Epidemiology, pathogenesis, and clinical manifestations of celiac disease in adults. UpToDate; son güncelleme 9 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/epidemiology-pathogenesis-and-clinical-manifestations-of-celiac-disease-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Liu E, Jonkers IH. Gene test interpretation: HLA-DQ2 and HLA-DQ8 (celiac disease susceptibility genes). UpToDate; son güncelleme 7 Ağu 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/gene-test-interpretation-hla-dq2-and-hla-dq8-celiac-disease-susceptibility-genes",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "akromegali": {
+    "baslik": "Akromegali",
+    "aciklama": "Akromegali ve gigantizm sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Aagaard C, Christophersen AS, Finnerup S, ve ark. The prevalence of acromegaly is higher than previously reported: Changes over a three-decade period. Clin Endocrinol (Oxf) 2022;97(6):773-782",
+        "yil": 2022,
+        "url": "https://doi.org/10.1111/cen.14828",
+        "tur": "makale"
+      },
+      {
+        "ad": "Bray DP, Mannam S, Rindler RS, ve ark. Surgery for acromegaly: Indications and goals. Front Endocrinol 2022;13:924589",
+        "yil": 2022,
+        "url": "https://doi.org/10.3389/fendo.2022.924589",
+        "tur": "makale"
+      },
+      {
+        "ad": "Daniel CP, Wagner MJ, Borne GE, ve ark. Acromegaly: Pathophysiological Considerations and Treatment Options Including the Evolving Role of Oral Somatostatin Analogs. Pathophysiology 2023;30(3):377-388",
+        "yil": 2023,
+        "url": "https://doi.org/10.3390/pathophysiology30030029",
+        "tur": "makale"
+      },
+      {
+        "ad": "Giustina A. Acromegaly and Bone: An Update. Endocrinol Metab 2023;38(6):655-666",
+        "yil": 2023,
+        "url": "https://doi.org/10.3803/enm.2023.601",
+        "tur": "makale"
+      },
+      {
+        "ad": "Giustina A, Biermasz N, Casanueva FF, ve ark. Consensus on criteria for acromegaly diagnosis and remission. Pituitary 2024;27(1):7-22",
+        "yil": 2024,
+        "url": "https://doi.org/10.1007/s11102-023-01360-1",
+        "tur": "makale"
+      },
+      {
+        "ad": "Iglesias P. Acromegaly and Cardiovascular Disease: Associated Cardiovascular Risk Factors, Cardiovascular Prognosis, and Therapeutic Impact. J Clin Med 2025;14(6):1906",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/jcm14061906",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kim K, Ku CR, Lee EJ. Multiomics Approach to Acromegaly: Unveiling Translational Insights for Precision Medicine. Endocrinol Metab 2023;38(5):463-471",
+        "yil": 2023,
+        "url": "https://doi.org/10.3803/enm.2023.1820",
+        "tur": "makale"
+      },
+      {
+        "ad": "Labadzhyan A, Melmed S. Molecular targets in acromegaly. Front Endocrinol 2022;13:1068061",
+        "yil": 2022,
+        "url": "https://doi.org/10.3389/fendo.2022.1068061",
+        "tur": "makale"
+      },
+      {
+        "ad": "Maroufi SF, Sabahi M, Aarabi SS, ve ark. Recurrent acromegaly: a systematic review on therapeutic approaches. BMC Endocr Disord 2024;24(1):13",
+        "yil": 2024,
+        "url": "https://doi.org/10.1186/s12902-023-01533-w",
+        "tur": "makale"
+      },
+      {
+        "ad": "Moustaki M, Paschou SA, Xekouki P, ve ark. Secondary diabetes mellitus in acromegaly. Endocrine 2023;81(1):1-15",
+        "yil": 2023,
+        "url": "https://doi.org/10.1007/s12020-023-03339-1",
+        "tur": "makale"
+      },
+      {
+        "ad": "Popescu AD, Carsote M, Valea A, ve ark. Approach of Acromegaly during Pregnancy. Diagnostics 2022;12(11):2669",
+        "yil": 2022,
+        "url": "https://doi.org/10.3390/diagnostics12112669",
+        "tur": "makale"
+      },
+      {
+        "ad": "Salvio G, Martino M, Balercia G, Arnaldi G. Acromegaly and male sexual health. Rev Endocr Metab Disord 2022;23(3):671-678",
+        "yil": 2022,
+        "url": "https://doi.org/10.1007/s11154-022-09721-0",
+        "tur": "makale"
+      },
+      {
+        "ad": "Sorohan MC, Poiana C. Vertebral Fractures in Acromegaly: A Systematic Review. J Clin Med 2022;12(1):164",
+        "yil": 2022,
+        "url": "https://doi.org/10.3390/jcm12010164",
+        "tur": "makale"
+      },
+      {
+        "ad": "Wydra A, Stelmachowska-Banaś M, Czajka-Oraniec I. Skeletal complications in acromegaly. Reumatologia 2023;61(4):248-255",
+        "yil": 2023,
+        "url": "https://doi.org/10.5114/reum/169918",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yamamoto M, Takahashi Y. Genetic and Epigenetic Pathogenesis of Acromegaly. Cancers 2022;14(16):3861",
+        "yil": 2022,
+        "url": "https://doi.org/10.3390/cancers14163861",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chiloiro S, Palumbo C, Giampietro A, ve ark. Acromegaly treatment and bone: a bidirectional relationship. Pituitary 2025;28(6):124",
+        "yil": 2025,
+        "url": "https://doi.org/10.1007/s11102-025-01573-6",
+        "tur": "makale"
+      },
+      {
+        "ad": "Malenica M, Trbojević T, Herceg S, ve ark. Gigantism and Acromegaly through History. Acta Clin Croat 2024;63(2):384-392",
+        "yil": 2024,
+        "url": "https://doi.org/10.20471/acc.2024.63.02.15",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zheng XQ, Zhou X, Yao Y, ve ark. Acromegaly complicated with fulminant pituitary apoplexy: clinical characteristic analysis and review of literature. Endocrine 2023;81(1):160-167",
+        "yil": 2023,
+        "url": "https://doi.org/10.1007/s12020-023-03379-7",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cristante J, Castinetti F. New treatments for acromegaly: Is a revolution underway? Ann Endocrinol (Paris) 2025;86(2):101710",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.ando.2025.101710",
+        "tur": "makale"
       }
     ]
   }

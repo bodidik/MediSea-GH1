@@ -52,8 +52,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/endokrinoloji/sglt2-hasta-gunler-kurali-sick-day" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                SGLT2 İnhibitörleri: Hasta Günler Kuralı (Sick Day Rules)
+              <Link href="/topics/endokrinoloji/hiperparatiroidizm" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası
               </Link>
             </li>
             <li>

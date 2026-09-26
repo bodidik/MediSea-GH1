@@ -328,13 +328,8 @@
  "endokrinoloji/etelcalcetide-evocalcet-kalsimimetikler": [
   {
    "brans": "endokrinoloji",
-   "slug": "cinacalcet-calisma-unitesi",
-   "baslik": "Cinacalcet (Kalsimimetik): Çalışma Ünitesi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "upacicalcet-calisma-unitesi",
-   "baslik": "Upacicalcet: Yeni Nesil IV Kalsimimetik"
+   "slug": "hiperparatiroidizm",
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası"
   }
  ],
  "endokrinoloji/gebelik-transient-tirotoksikoz": [
@@ -697,6 +692,38 @@
    "baslik": "TLS: Elektrolit Yönetimi ve Renal Replasman Tedavisi"
   }
  ],
+ "endokrinoloji/hiperparatiroidizm": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "men1-sendromu",
+   "baslik": "Multiple Endokrin Neoplazi Tip 1 (MEN1)"
+  },
+  {
+   "brans": "gogus",
+   "slug": "sarkoidoz-hiperkalsemi",
+   "baslik": "Sarkoidozda ve hiperkalsemi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "etelcalcetide-evocalcet-kalsimimetikler",
+   "baslik": "Etelcalcetide ve Evocalcet (Yeni Nesil Kalsimimetikler)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "kbh-dvitamini-ve-kalsimimetikler",
+   "baslik": "D Vitamini Analogları ve Kalsimimetikler: PTH Yönetimi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipokalsemi-ve-hipoparatiroidi",
+   "baslik": "Hipokalsemi ve Hipoparatiroidi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "kalsiyum-homeostazi-fizyoloji",
+   "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi"
+  }
+ ],
  "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma": [
   {
    "brans": "endokrinoloji",
@@ -1021,6 +1048,11 @@
  "endokrinoloji/hipokalsemi-ve-hipoparatiroidi": [
   {
    "brans": "endokrinoloji",
+   "slug": "hiperparatiroidizm",
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "kalsiyum-homeostazi-fizyoloji",
    "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi"
   },
@@ -1110,6 +1142,11 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "hiperparatiroidizm",
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "hipokalsemi-ve-hipoparatiroidi",
    "baslik": "Hipokalsemi ve Hipoparatiroidi"
   },
@@ -1141,6 +1178,11 @@
    "brans": "klinik-nutrisyon",
    "slug": "vitamin-mineral-eksiklikleri",
    "baslik": "Ch 326: Vitamin ve Eser Element Eksiklikleri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hiperparatiroidizm",
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası"
   }
  ],
  "endokrinoloji/kbh-osteoporoz-ckd-mbd": [
@@ -1500,23 +1542,8 @@
  "endokrinoloji/men1-sendromu": [
   {
    "brans": "endokrinoloji",
-   "slug": "hipofiz-hastaliklari-ana",
-   "baslik": "Hipofiz Hastalıkları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
-   "baslik": "Hipofiz Hastalıkları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipofiz-yetmezligi",
-   "baslik": "Hipofiz Yetmezliği (Anterior Hipofiz Yetersizliği / Hipopitüitarizm) Klinik ve Akademik Rehberi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipofiz-yetmezligi-etiyoloji-ve-patofizyoloji",
-   "baslik": "Hipofiz Yetmezliği: Etiyoloji ve Patofizyoloji"
+   "slug": "hiperparatiroidizm",
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası"
   }
  ],
  "endokrinoloji/men1-somatotropinoma-akromegali": [
@@ -4093,9 +4120,9 @@
  ],
  "gogus/sarkoidoz-hiperkalsemi": [
   {
-   "brans": "gogus",
-   "slug": "sarkoidoz-ayirici-tani",
-   "baslik": "Sarkoidoz Ayırıcı Tanı"
+   "brans": "endokrinoloji",
+   "slug": "hiperparatiroidizm",
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası"
   }
  ],
  "hematoloji/FL-t1(4-18)": [
@@ -6318,6 +6345,16 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "hiperfosfatemi-CKD",
+   "baslik": "KBH'da Hiperfosfatemi: Kapsamlı Yönetim ve Patofizyoloji"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hiperparatiroidizm",
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "hipokalsemi-ve-hipoparatiroidi",
    "baslik": "Hipokalsemi ve Hipoparatiroidi"
   },
@@ -6325,11 +6362,6 @@
    "brans": "endokrinoloji",
    "slug": "kalsiyum-homeostazi-fizyoloji",
    "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hiperfosfatemi-CKD",
-   "baslik": "KBH'da Hiperfosfatemi: Kapsamlı Yönetim ve Patofizyoloji"
   }
  ],
  "nefroloji/akut-bobrek-hasari": [
