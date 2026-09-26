@@ -893,4 +893,8 @@ arşivi aç.
 - **Crossref'te yoksa yokluk değildir:** Eplasty DOI vermiyor → PubMed `esearch`/`esummary` (`url`: `pubmed.ncbi.nlm.nih.gov/<PMID>/`). UpToDate doğrulanamaz → girmez.
 - **Kayıtta olmayanı yazma:** ISL 2020/2023'te Crossref sayfa vermiyor → künyede sayfa yok. Alt başlık `subtitle` alanında ayrı durur; çıktıda başlık kesikse tam kaydı iste.
 
+**Paralel oturumda üretilmiş indeksler (26 Eyl, iki kez uygulandı, 0 çakışma):** `baslik-index` · `ilgili-index` · `arac-konu` (+ `arac-metadata`in bastığı layout'lar) iki oturum aynı anda üretince çakışıyor. Düzen: **konu dosyasını yazan taraf indeksleri de üretip AYNI commit'e katar; öteki taraf o commit gelene kadar indeks üreten hiçbir şey çalıştırmaz** (`SendMessage` ile "ittim: <hash>" beklenir). Başkasının commit edilmemiş içeriğinden üretilip commit edilen indeks main'i bozar — 23 Eyl'de CI 3 gün bu yüzden kırmızıydı (buprenorfin).
+
+**`arac-konu --kontrol` "BAYAT · bağ: N → N" (sayı aynı) — sebebi ÖLÇ, tahmin etme.** Aynı belirtinin ölçülmüş iki sebebi var: (1) **başka bir oturum çalışma kopyasını o anda yazıyor** — yeniden üretince dosya HEAD ile birebir çıktı, `ListAgents`ta içerik oturumu `busy`ydi; (2) **CRLF/LF** — `core.autocrlf` checkout'ta CRLF yazıyor, üreteç LF bayt karşılaştırıyor, `git diff` boş (bkz. hafızadaki içerik notu; CI/Linux etkilenmez). Üçüncü aday — dosyadaki ölçüm sayacının değişmesi — içerik oturumunca önerildi, **ölçülmedi**. Ayırt etmek için: `git diff --stat` + `tr -cd '\r' < dosya | wc -c` + `ListAgents`; yeniden üretip HEAD'le karşılaştır.
+
 **Ölçüm notu:** "4. Evrensel MI Tanımı" başlığı numara kayması DEĞİL, *Dördüncü* Evrensel Tanım (2018). Bir tur yanlış rapor edildi.
