@@ -22,7 +22,7 @@ export function siteUrl(): string {
   return 'http://localhost:3000';
 }
 
-export const SITE_ADI = 'MediSea';
+export const SITE_ADI = 'MEDISEA';
 export const SITE_ACIKLAMA =
   'İç hastalıkları asistanları ve uzmanları için Türkçe klinik kaynak: güncel konu anlatımları, ' +
   'klinik hesaplayıcılar ve YDUS hazırlık materyali.';

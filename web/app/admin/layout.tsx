@@ -17,7 +17,7 @@ import type { ReactNode } from "react";
  * yüzeyleri, site gezinmesi oraya gürültü katar. Landmark ise şart.
  */
 export const metadata: Metadata = {
-  title: { default: "Yönetim", template: "%s · Yönetim · MediSea" },
+  title: { default: "Yönetim", template: "%s · Yönetim · MEDISEA" },
   // Yönetim yüzeyi robots.ts'te zaten kapalı; burada da açıkça söyleniyor,
   // çünkü bir gün robots kuralı değişirse bu sayfaların dizine girmesi
   // istenmiyor.

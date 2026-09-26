@@ -34,7 +34,7 @@ export const metadata: Metadata = {
    */
   title: {
     default: "Premium — İç Hastalıkları YDUS",
-    template: "%s · MediSea",
+    template: "%s · MEDISEA",
   },
   description:
     "MediSea Premium: iç hastalıkları uzmanlık sınavına yönelik konu anlatımları, " +

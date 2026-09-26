@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/uyelik" },
   openGraph: {
     type: "website",
-    title: "Üyelik — MediSea",
+    title: "Üyelik — MEDISEA",
     description:
       "Açık kütüphane ve çalışma araçları ücretsiz. Premium, YDUS hazırlık materyalini kapsar.",
     url: "/uyelik",

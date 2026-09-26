@@ -78,7 +78,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             {/* 1. Kolon: Logo ve Vizyon */}
             <div className="col-span-2 md:col-span-5">
               <Link href="/" className="inline-block font-black text-3xl tracking-tight text-white mb-4">
-                <span className="text-blue-500 italic">Medi</span>Sea
+                <span className="text-blue-500 italic">MEDI</span>SEA
               </Link>
               <p className="text-sm leading-relaxed max-w-sm mb-6 font-medium">
                 Tıp profesyonelleri ve asistan hekimler için güncel, kanıta dayalı ve pratik iç hastalıkları klinik rehberi. Nöbetlerde ve YDUS sürecinde en güçlü silahınız.

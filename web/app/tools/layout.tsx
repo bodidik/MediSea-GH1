@@ -26,12 +26,12 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     // default'a kuyruk eklenmez (kök şablonu zaten uyguluyor); template ise
     // araç sayfalarının kendi başlıklarının kuyruğunu koruyor.
-    title: { default: "Klinik Hesaplayıcılar", template: "%s · MediSea" },
+    title: { default: "Klinik Hesaplayıcılar", template: "%s · MEDISEA" },
     description: aciklama,
     alternates: { canonical: "/tools" },
     openGraph: {
       type: "website",
-      title: "Klinik Hesaplayıcılar — MediSea",
+      title: "Klinik Hesaplayıcılar — MEDISEA",
       description: aciklama,
       url: "/tools",
     },
