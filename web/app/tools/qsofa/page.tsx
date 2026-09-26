@@ -4,12 +4,18 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
+import { sozluk } from "@/lib/dil";
+import { useDil } from "@/app/components/DilBaglami";
+import metin from "./metin.dil.json";
+
+const M = sozluk(metin);
 
 /** * qSOFA Gündüz Modu (Sakin Deniz) Versiyonu
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
  */
 
 export default function QsOFA() {
+  const t = M(useDil());
   const search = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
   
   const [sbpLow, setSbpLow] = React.useState(search?.get("sbp") === "1"); 
@@ -23,11 +29,11 @@ export default function QsOFA() {
   let statusBg = "bg-slate-100";
 
   if (score >= 2) {
-    comment = "Yüksek Risk: Kötü prognoz ve sepsis açısından artmış risk; yoğun bakım ve yakın izlem değerlendirilmelidir.";
+    comment = t.yuksek;
     statusColor = "text-rose-700";
     statusBg = "bg-rose-50";
   } else {
-    comment = "Düşük Risk: Mevcut bulgular qSOFA kriterlerine göre düşük riskli; ancak klinik şüphe varsa takip edilmelidir.";
+    comment = t.dusuk;
     statusColor = "text-emerald-700";
     statusBg = "bg-emerald-50";
   }
@@ -35,9 +41,9 @@ export default function QsOFA() {
   const params = { sbp: sbpLow ? 1 : "", rr: rrHigh ? 1 : "", gcs: gcsLow ? 1 : "" };
 
   const ITEMS = [
-    { id: "sbp", label: "Sistolik KB ≤ 100 mmHg", val: sbpLow, set: setSbpLow, sub: "Hipotansiyon varlığı" },
-    { id: "rr", label: "Solunum Sayısı ≥ 22/dk", val: rrHigh, set: setRrHigh, sub: "Taşipneik solunum" },
-    { id: "gcs", label: "Mental Durum Değişikliği", val: gcsLow, set: setGcsLow, sub: "GKS < 15 veya yeni dezoryantasyon" },
+    { id: "sbp", label: t.sbp, val: sbpLow, set: setSbpLow, sub: t.sbp_sub },
+    { id: "rr", label: t.rr, val: rrHigh, set: setRrHigh, sub: t.rr_sub },
+    { id: "gcs", label: t.gcs, val: gcsLow, set: setGcsLow, sub: t.gcs_sub },
   ];
 
   return (
@@ -57,7 +63,7 @@ export default function QsOFA() {
                <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
                <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">qSOFA</h1>
             </div>
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Hızlı Sepsis Değerlendirme Protokolü</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">{t.altBaslik}</p>
           </div>
         </div>
 
@@ -88,7 +94,7 @@ export default function QsOFA() {
                 </div>
                 <input type="checkbox" className="sr-only" checked={it.val} onChange={() => it.set(!it.val)} />
                 <span className={`text-[10px] font-black tracking-widest ${it.val ? 'text-amber-400' : 'text-slate-400'}`}>
-                  +1 PUAN
+                  {t.artiBir}
                 </span>
               </label>
             ))}
@@ -100,11 +106,11 @@ export default function QsOFA() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
-            <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">SKOR</span>
+            <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">{t.skor}</span>
             <div className="text-5xl font-black text-white">{score}</div>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed border-blue-900/10 ${statusBg}`}>
-            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">KLİNİK YÖNLENDİRME</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">{t.yonlendirme}</span>
             <p className={`text-base font-black leading-relaxed italic ${statusColor}`}>
               {comment}
             </p>
@@ -119,7 +125,7 @@ export default function QsOFA() {
           <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-700 leading-relaxed">
-              qSOFA sepsis tanısı koydurmaz; hastanedeki mortalite riskini ve klinik bozulma olasılığını hızlıca belirlemek için kullanılır. Pozitif sonuç durumunda tam SOFA skorlaması ve sepsis protokolü düşünülmelidir.
+              {t.uyari}
             </p>
           </div>
         </div>

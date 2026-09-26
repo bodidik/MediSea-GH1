@@ -45,8 +45,10 @@ const OKALIPTUS_GUNLUK = 3;
 const SERI_ESIKLERI = [3, 7, 14, 21, 30, 50, 75, 100, 150, 200, 365];
 const KART_ESIKLERI = [100, 250, 500, 1000, 2000, 5000, 10000];
 
-/** Sürprizin hiç çıkmayacağı yollar. */
-const YASAK = /^\/(tools|admin|giris|kayit|sifre|kayseritip)|\/(quiz-coz|soru-cozum|vaka-coz|hizli-tekrar)(\/|$)/;
+/** Sürprizin hiç çıkmayacağı yollar. `/en` ağacının TAMAMI: sürpriz metinleri
+    Türkçe ve İngilizce araç sayfası (`/en/tools/...`) `^/tools` desenine
+    uymuyordu — araç yolu yasağı İngilizcede delinirdi. */
+const YASAK = /^\/(en(\/|$)|tools|admin|giris|kayit|sifre|kayseritip)|\/(quiz-coz|soru-cozum|vaka-coz|hizli-tekrar)(\/|$)/;
 
 type Aktif = { tur: Tur; yazi: string; anahtar: number };
 

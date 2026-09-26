@@ -1,0 +1,32 @@
+{
+  "tr": {
+    "altBaslik": "Hızlı Sepsis Değerlendirme Protokolü",
+    "sbp": "Sistolik KB ≤ 100 mmHg",
+    "sbp_sub": "Hipotansiyon varlığı",
+    "rr": "Solunum Sayısı ≥ 22/dk",
+    "rr_sub": "Taşipneik solunum",
+    "gcs": "Mental Durum Değişikliği",
+    "gcs_sub": "GKS < 15 veya yeni dezoryantasyon",
+    "artiBir": "+1 PUAN",
+    "yuksek": "Yüksek Risk: Kötü prognoz ve sepsis açısından artmış risk; yoğun bakım ve yakın izlem değerlendirilmelidir.",
+    "dusuk": "Düşük Risk: Mevcut bulgular qSOFA kriterlerine göre düşük riskli; ancak klinik şüphe varsa takip edilmelidir.",
+    "skor": "SKOR",
+    "yonlendirme": "KLİNİK YÖNLENDİRME",
+    "uyari": "qSOFA sepsis tanısı koydurmaz; hastanedeki mortalite riskini ve klinik bozulma olasılığını hızlıca belirlemek için kullanılır. Pozitif sonuç durumunda tam SOFA skorlaması ve sepsis protokolü düşünülmelidir."
+  },
+  "en": {
+    "altBaslik": "Quick Sepsis Assessment Protocol",
+    "sbp": "Systolic BP ≤ 100 mmHg",
+    "sbp_sub": "Hypotension present",
+    "rr": "Respiratory Rate ≥ 22/min",
+    "rr_sub": "Tachypnea",
+    "gcs": "Altered Mentation",
+    "gcs_sub": "GCS < 15 or new disorientation",
+    "artiBir": "+1 POINT",
+    "yuksek": "High Risk: Increased risk of poor outcome and sepsis; ICU care and close monitoring should be considered.",
+    "dusuk": "Low Risk: Current findings are low risk by qSOFA criteria; however, the patient should be followed if clinical suspicion remains.",
+    "skor": "SCORE",
+    "yonlendirme": "CLINICAL GUIDANCE",
+    "uyari": "qSOFA does not diagnose sepsis; it is used to quickly identify in-hospital mortality risk and the likelihood of clinical deterioration. If positive, full SOFA scoring and a sepsis protocol should be considered."
+  }
+}

@@ -4,6 +4,12 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
+import { sozluk } from "@/lib/dil";
+import { useDil } from "@/app/components/DilBaglami";
+import metin from "./metin.dil.json";
+
+const M = sozluk(metin);
+type Metin = ReturnType<typeof M>;
 
 /** * HAS-BLED Gündüz Modu (Sakin Deniz) Versiyonu
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
@@ -16,21 +22,24 @@ type State = {
   bleed: boolean; labileINR: boolean; elderly65: boolean; drugs: boolean; alcohol: boolean;
 };
 
-const ITEMS: Item[] = [
-  { key: "htn",        label: "Hipertansiyon",         pts: 1, sub: "SBP > 160 mmHg" },
-  { key: "abnRenal",   label: "Böbrek Fonksiyonu",     pts: 1, sub: "Diyaliz, Tx veya Cr > 2.26 mg/dL" },
-  { key: "abnLiver",   label: "Karaciğer Fonksiyonu",  pts: 1, sub: "Siroz veya Bilirubin > 2x, AST/ALT > 3x" },
-  { key: "stroke",     label: "Geçirilmiş İnme",       pts: 1, sub: "Serebrovasküler olay öyküsü" },
-  { key: "bleed",      label: "Kanama Öyküsü",         pts: 1, sub: "Anemi veya kanama predispozisyonu" },
-  { key: "labileINR",  label: "Labile INR",            pts: 1, sub: "TTR < %60 (Warfarin kullanıcıları)" },
-  { key: "elderly65",  label: "Yaş > 65",              pts: 1, sub: "Geriatrik popülasyon risk puanı" },
-  { key: "drugs",      label: "İlaç Kullanımı",        pts: 1, sub: "Antiplatelet, NSAİİ kullanımı" },
-  { key: "alcohol",    label: "Alkol Kullanımı",       pts: 1, sub: "Haftada ≥ 8 ünite alkol tüketimi" },
+/* Metin `metin.dil.json`da (TR + EN); puanlar burada, TEK kopya. */
+const itemsOf = (t: Metin): Item[] => [
+  { key: "htn",        label: t.htn,        pts: 1, sub: t.htn_sub },
+  { key: "abnRenal",   label: t.abnRenal,   pts: 1, sub: t.abnRenal_sub },
+  { key: "abnLiver",   label: t.abnLiver,   pts: 1, sub: t.abnLiver_sub },
+  { key: "stroke",     label: t.stroke,     pts: 1, sub: t.stroke_sub },
+  { key: "bleed",      label: t.bleed,      pts: 1, sub: t.bleed_sub },
+  { key: "labileINR",  label: t.labileINR,  pts: 1, sub: t.labileINR_sub },
+  { key: "elderly65",  label: t.elderly65,  pts: 1, sub: t.elderly65_sub },
+  { key: "drugs",      label: t.drugs,      pts: 1, sub: t.drugs_sub },
+  { key: "alcohol",    label: t.alcohol,    pts: 1, sub: t.alcohol_sub },
 ];
 
 function readBool(param: string | null) { return param === "1" || param === "true"; }
 
 export default function HasBledPage() {
+  const t = M(useDil());
+  const ITEMS = itemsOf(t);
   const search = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
 
   const [state, setState] = React.useState<State>({
@@ -53,15 +62,15 @@ export default function HasBledPage() {
   let statusBg = "bg-slate-100";
 
   if (score >= 3) {
-    comment = "Yüksek Kanama Riski; Yakın izlem ve düzeltilebilir risk faktörlerinin optimizasyonu önerilir.";
+    comment = t.yuksek;
     statusColor = "text-rose-700";
     statusBg = "bg-rose-50";
   } else if (score === 2) {
-    comment = "Orta Risk; Dikkatli takip ve periyodik değerlendirme.";
+    comment = t.orta;
     statusColor = "text-amber-700";
     statusBg = "bg-amber-50";
   } else {
-    comment = "Düşük Kanama Riski.";
+    comment = t.dusuk;
     statusColor = "text-emerald-700";
     statusBg = "bg-emerald-50";
   }
@@ -89,7 +98,7 @@ export default function HasBledPage() {
                <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
                <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">HAS-BLED</h1>
             </div>
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Gastrointestinal ve İntraserebral Kanama Risk Analizi</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">{t.altBaslik}</p>
           </div>
         </div>
 
@@ -120,7 +129,7 @@ export default function HasBledPage() {
                 </div>
                 <input type="checkbox" className="sr-only" checked={state[it.key]} onChange={() => toggle(it.key)} />
                 <span className={`text-[10px] font-black tracking-widest ${state[it.key] ? 'text-amber-400' : 'text-slate-400'}`}>
-                  +1 PUAN
+                  {t.artiBir}
                 </span>
               </label>
             ))}
@@ -132,11 +141,11 @@ export default function HasBledPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
-            <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">TOPLAM</span>
+            <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">{t.toplam}</span>
             <div className="text-5xl font-black text-white">{score}</div>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed border-blue-900/10 ${statusBg}`}>
-            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">KLİNİK DEĞERLENDİRME</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">{t.degerlendirme}</span>
             <p className={`text-base font-black leading-relaxed italic ${statusColor}`}>
               {comment}
             </p>
@@ -151,7 +160,7 @@ export default function HasBledPage() {
           <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-700 leading-relaxed">
-              HAS-BLED skoru, antikoagülan tedaviyi durdurmak için değil, düzeltilebilir risk faktörlerini belirlemek ve hastanın izlem sıklığını kararlaştırmak için kullanılmalıdır.
+              {t.uyari}
             </p>
           </div>
         </div>

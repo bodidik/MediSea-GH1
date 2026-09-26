@@ -165,7 +165,7 @@ export function konuSemasi(opts: {
   };
 }
 
-export function aracSemasi(opts: { ad: string; aciklama: string; yol: string }) {
+export function aracSemasi(opts: { ad: string; aciklama: string; yol: string; dil?: "tr" | "en" }) {
   const base = siteUrl();
   return {
     "@context": "https://schema.org",
@@ -175,7 +175,7 @@ export function aracSemasi(opts: { ad: string; aciklama: string; yol: string }) 
     url: `${base}${opts.yol}`,
     applicationCategory: "HealthApplication",
     operatingSystem: "Web",
-    inLanguage: "tr-TR",
+    inLanguage: opts.dil === "en" ? "en" : "tr-TR",
     publisher: { "@id": `${base}/#organization` },
     // Araçlar gerçekten ücretsiz ve kayıt istemiyor; yazan da bu.
     offers: { "@type": "Offer", price: "0", priceCurrency: "TRY" },

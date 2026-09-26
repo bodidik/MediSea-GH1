@@ -4,30 +4,32 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
+import { bicimle, sozluk } from "@/lib/dil";
+import { useDil } from "@/app/components/DilBaglami";
+import metin from "./metin.dil.json";
+
+const M = sozluk(metin);
+type Metin = ReturnType<typeof M>;
 
 type Item = { key: string; label: string; pts: number; sub?: string };
 
-const ITEMS: Item[] = [
-  { key: "dvt",        label: "Klinik DVT Bulguları",               pts: 3,   sub: "Bacakta şişlik, derin ven hassasiyeti" },
-  { key: "altHigher",  label: "Alternatif Tanı Olasılığı Düşük",    pts: 3,   sub: "PE olasılığı diğer tanılardan daha yüksek" },
-  { key: "tachy",      label: "Taşikardi (Nabız > 100)",             pts: 1.5, sub: "Aktif kalp hızı yüksekliği" },
-  { key: "immob",      label: "İmmobilizasyon / Cerrahi",            pts: 1.5, sub: "Son 4 hafta içinde cerrahi veya ≥3 gün yatak istirahati" },
-  { key: "prevVTE",    label: "Önceki DVT / PE Öyküsü",             pts: 1.5, sub: "Geçmiş tromboembolizm hikayesi" },
-  { key: "hemoptysis", label: "Hemoptizi",                           pts: 1,   sub: "Öksürükle kan gelmesi" },
-  { key: "malignancy", label: "Malignite",                           pts: 1,   sub: "Aktif kanser veya son 6 ayda tedavi" },
+/* Metin `metin.dil.json`da (TR + EN); puanlar, eşikler ve kimlikler burada, TEK kopya. */
+const itemsOf = (t: Metin): Item[] => [
+  { key: "dvt",        label: t.dvt,        pts: 3,   sub: t.dvt_sub },
+  { key: "altHigher",  label: t.altHigher,  pts: 3,   sub: t.altHigher_sub },
+  { key: "tachy",      label: t.tachy,      pts: 1.5, sub: t.tachy_sub },
+  { key: "immob",      label: t.immob,      pts: 1.5, sub: t.immob_sub },
+  { key: "prevVTE",    label: t.prevVTE,    pts: 1.5, sub: t.prevVTE_sub },
+  { key: "hemoptysis", label: t.hemoptysis, pts: 1,   sub: t.hemoptysis_sub },
+  { key: "malignancy", label: t.malignancy, pts: 1,   sub: t.malignancy_sub },
 ];
 
 const PE_MAX = 12.5;
-const ZONES = [
-  { from: 0, to: 2,    label: "DÜŞÜK",   prob: "~%1.3", fill: "#10b981", koyu: "#047857", text: "#065f46", band: "< 2 pt" },
-  { from: 2, to: 6,    label: "ORTA",    prob: "~%16",  fill: "#f59e0b", koyu: "#b45309", text: "#78350f", band: "2–6 pt" },
-  { from: 6, to: 12.5, label: "YÜKSEK",  prob: "> %60", fill: "#f43f5e", koyu: "#be123c", text: "#881337", band: "> 6 pt" },
-];
-
-const ACTIONS = [
-  { label: "DÜŞÜK",  action: "D-dimer ile dışlama (PERC kriterleri uygula)" },
-  { label: "ORTA",   action: "D-dimer negatifse dışla; pozitifse BT Anjiyo" },
-  { label: "YÜKSEK", action: "Doğrudan BT Anjiyo — görüntüleme geciktirilmemeli" },
+/* Bölge ve eylem KİMLİKLE eşleşir (`id`), etiketle değil: etiket dile göre değişiyor. */
+const zonesOf = (t: Metin) => [
+  { id: "dusuk",  from: 0, to: 2,    label: t.dusuk,  prob: t.prob_dusuk,  fill: "#10b981", koyu: "#047857", text: "#065f46", band: "< 2 pt", action: t.eylem_dusuk },
+  { id: "orta",   from: 2, to: 6,    label: t.orta,   prob: t.prob_orta,   fill: "#f59e0b", koyu: "#b45309", text: "#78350f", band: "2–6 pt", action: t.eylem_orta },
+  { id: "yuksek", from: 6, to: 12.5, label: t.yuksek, prob: t.prob_yuksek, fill: "#f43f5e", koyu: "#be123c", text: "#881337", band: "> 6 pt", action: t.eylem_yuksek },
 ];
 
 function round(n: number, dp = 1) {
@@ -35,6 +37,9 @@ function round(n: number, dp = 1) {
 }
 
 export default function WellsPEPage() {
+  const t = M(useDil());
+  const ITEMS = itemsOf(t);
+  const ZONES = zonesOf(t);
   const search = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
   const initial: Record<string, boolean> = {};
   ITEMS.forEach(i => { initial[i.key] = (search?.get(i.key) === "1"); });
@@ -45,7 +50,6 @@ export default function WellsPEPage() {
   const score = round(ITEMS.reduce((sum, it) => sum + (sel[it.key] ? it.pts : 0), 0), 1);
 
   const activeZone = [...ZONES].reverse().find(z => score >= z.from) ?? ZONES[0];
-  const activeAction = ACTIONS.find(a => a.label === activeZone.label)!;
 
   const params: Record<string, string | number> = {};
   ITEMS.forEach(i => { if (sel[i.key]) params[i.key] = 1; });
@@ -74,7 +78,7 @@ export default function WellsPEPage() {
               <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
               <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">Wells (PE)</h1>
             </div>
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Pulmoner Emboli Klinik Olasılık Skoru</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">{t.altBaslik}</p>
           </div>
         </div>
 
@@ -103,28 +107,28 @@ export default function WellsPEPage() {
         </div>
 
         {/* GRAFİK SKOR KARTI */}
-        <SonucDuyuru metin={`${activeZone.label} risk — ${activeZone.prob}`} />
+        <SonucDuyuru metin={bicimle(t.duyuru, { label: activeZone.label, prob: activeZone.prob })} />
 
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-6">
 
           {/* Skor + risk özet */}
           <div className="flex items-center gap-4">
             <div className="w-20 h-20 rounded-2xl bg-blue-900 flex flex-col items-center justify-center shadow-lg border-t-4 border-amber-400 shrink-0">
-              <span className="text-[8px] font-black text-blue-300 uppercase tracking-widest">SKOR</span>
+              <span className="text-[8px] font-black text-blue-300 uppercase tracking-widest">{t.skor}</span>
               <span className="text-4xl font-black text-white leading-none">{score}</span>
             </div>
             <div className="min-w-0">
-              <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-0.5">RİSK KATEGORİSİ</p>
+              <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-0.5">{t.kategori}</p>
               <p className="text-2xl font-black italic tracking-tight" style={{ color: activeZone.text }}>
-                {activeZone.label} RİSK <span className="text-sm font-bold">{activeZone.prob}</span>
+                {activeZone.label}{t.riskEk}<span className="text-sm font-bold">{activeZone.prob}</span>
               </p>
-              <p className="text-[10px] font-bold text-slate-500 mt-1">{activeAction.action}</p>
+              <p className="text-[10px] font-bold text-slate-500 mt-1">{activeZone.action}</p>
             </div>
           </div>
 
           {/* SVG Gauge Bar */}
           <div>
-            <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-3">Skor Skalası (0 – 12.5)</p>
+            <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-3">{t.skala}</p>
             <svg viewBox={`-2 -2 ${W + 4} ${H + 28}`} className="w-full" style={{ overflow: "visible" }}>
               <defs>
                 <clipPath id="pe-bar-outer"><rect x="0" y="0" width={W} height={H} rx={R} ry={R} /></clipPath>
@@ -134,7 +138,7 @@ export default function WellsPEPage() {
               {/* Zone arka plan */}
               <g clipPath="url(#pe-bar-outer)">
                 {zoneRects.map(z => (
-                  <rect key={z.label + "bg"} x={z.x} y={0} width={z.w} height={H} fill={z.fill} opacity={0.12} />
+                  <rect key={z.id + "bg"} x={z.x} y={0} width={z.w} height={H} fill={z.fill} opacity={0.12} />
                 ))}
               </g>
 
@@ -142,7 +146,7 @@ export default function WellsPEPage() {
               <g clipPath="url(#pe-bar-outer)">
                 <g clipPath="url(#pe-bar-fill)">
                   {zoneRects.map(z => (
-                    <rect key={z.label + "fill"} x={z.x} y={0} width={z.w} height={H} fill={z.fill} opacity={0.55} />
+                    <rect key={z.id + "fill"} x={z.x} y={0} width={z.w} height={H} fill={z.fill} opacity={0.55} />
                   ))}
                 </g>
               </g>
@@ -150,13 +154,13 @@ export default function WellsPEPage() {
               {/* Zone ayırıcı çizgiler */}
               <g clipPath="url(#pe-bar-outer)">
                 {zoneRects.slice(1).map(z => (
-                  <line key={z.label + "div"} x1={z.x} y1={0} x2={z.x} y2={H} stroke="white" strokeWidth="2" opacity={0.7} />
+                  <line key={z.id + "div"} x1={z.x} y1={0} x2={z.x} y2={H} stroke="white" strokeWidth="2" opacity={0.7} />
                 ))}
               </g>
 
               {/* Zone etiketleri */}
               {zoneRects.map(z => (
-                <g key={z.label + "lbl"}>
+                <g key={z.id + "lbl"}>
                   <text x={z.x + z.w / 2} y={H / 2 - 6} textAnchor="middle"
                     fill={z.fill} fontSize={10} fontWeight="900" fontFamily="sans-serif"
                     style={{ letterSpacing: 1.5, textTransform: "uppercase" }}>{z.label}</text>
@@ -192,7 +196,7 @@ export default function WellsPEPage() {
           {/* Seçili kriter katkı listesi */}
           {selectedItems.length > 0 && (
             <div className="space-y-2">
-              <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Seçili Kriterler</p>
+              <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{t.secili}</p>
               {selectedItems.map(it => {
                 const barPct = (it.pts / PE_MAX) * 100;
                 return (
@@ -211,9 +215,9 @@ export default function WellsPEPage() {
           {/* 3-zone özet bantlar */}
           <div className="grid grid-cols-3 gap-2">
             {ZONES.map(z => {
-              const active = z.label === activeZone.label;
+              const active = z.id === activeZone.id;
               return (
-                <div key={z.label} className="rounded-xl p-3 text-center border transition-all"
+                <div key={z.id}className="rounded-xl p-3 text-center border transition-all"
                   style={{
                     background: active ? z.koyu : `${z.fill}18`,
                     borderColor: active ? z.fill : `${z.fill}40`,
@@ -235,7 +239,7 @@ export default function WellsPEPage() {
           <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-700 leading-relaxed">
-              Wells PE skoru klinik olasılığı belirlemek içindir. Genelde düşük riskli grupta D-dimer ile dışlama, orta/yüksek riskli grupta ise doğrudan görüntüleme (BT Anjiyo) önerilir.
+              {t.uyari}
             </p>
           </div>
         </div>

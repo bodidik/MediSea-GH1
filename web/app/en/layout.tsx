@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { SITE_ADI } from "@/lib/site";
 import { OG_YEREL } from "@/lib/dil";
-import DilDegistir from "@/app/components/DilDegistir";
+import { DilSaglayici } from "@/app/components/DilBaglami";
 
 /**
  * İNGİLİZCE AĞAÇ — `/en/...`.
@@ -17,6 +17,10 @@ import DilDegistir from "@/app/components/DilDegistir";
  * miras kalır ve her biri kendini tek bir adresin kopyası ilan eder (kökteki
  * `canonical: "/"` bu depoda o yüzden defalarca kusur üretti). Her sayfa
  * kendi adresini `rotaMeta({ ..., dil: "en" })` ile beyan eder.
+ *
+ * Dil değiştirici BURADA değil, her yüzeyin kendi gezinmesinde (araçlarda
+ * `ToolTopNav`): layout'ta bir kez daha çizilince araç sayfasında iki
+ * değiştirici üst üste duruyordu.
  */
 export const metadata: Metadata = {
   /* `absolute`, `default` DEĞİL: kökün şablonu (`%s · MEDISEA`) bu segmentin
@@ -37,13 +41,11 @@ export const metadata: Metadata = {
 
 export default function IngilizceDuzen({ children }: { children: ReactNode }) {
   /* `lang="en"` SUNUCU HTML'inde: kök `<html>` "tr" basıyor (bkz.
-     DilDegistir.tsx → DilEsitle), içerik dili bu kaptan okunuyor. */
+     DilDegistir.tsx → DilEsitle), içerik dili bu kaptan okunuyor.
+     `DilSaglayici`: Türkçe aracın AYNI bileşeni burada İngilizce çizilir. */
   return (
     <div lang="en">
-      <div className="flex justify-end px-4 pt-2">
-        <DilDegistir />
-      </div>
-      {children}
+      <DilSaglayici dil="en">{children}</DilSaglayici>
     </div>
   );
 }

@@ -17,7 +17,13 @@ import { karsiYol, yoldanDil } from "@/lib/dil";
  * Türkçe okuyamayan biri "İngilizce" yazısını tanımaz, ekran okuyucu da
  * "Türkçe"yi İngilizce sesle okur.
  */
-export default function DilDegistir({ className = "" }: { className?: string }) {
+/* `className` verilirse varsayılanın YERİNE geçer, eklenmez: Tailwind'de
+   çakışan iki sınıftan (px-3 / px-3.5) hangisinin kazanacağını sınıf sırası
+   değil CSS sırası belirler — birleştirmek öngörülemez görünüm üretir. */
+const VARSAYILAN_SINIF =
+  "inline-flex min-h-[44px] items-center rounded-lg px-3 text-sm font-bold text-blue-900 underline-offset-2 hover:underline";
+
+export default function DilDegistir({ className = VARSAYILAN_SINIF }: { className?: string }) {
   const yol = usePathname() || "/";
   const hedef = karsiYol(yol);
   if (!hedef) return null;
@@ -28,7 +34,7 @@ export default function DilDegistir({ className = "" }: { className?: string }) 
       href={hedef.yol}
       hrefLang={hedef.dil}
       lang={hedef.dil}
-      className={`inline-flex min-h-[44px] items-center rounded-lg px-3 text-sm font-bold text-blue-900 underline-offset-2 hover:underline ${className}`}
+      className={className}
     >
       {ad}
     </Link>

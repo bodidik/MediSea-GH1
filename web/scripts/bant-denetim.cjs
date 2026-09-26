@@ -57,7 +57,15 @@ for (const d of fs.readdirSync(KOK, { withFileTypes: true })) {
   arac++;
   const s = fs.readFileSync(f, 'utf8');
   const mer = merdivenEsikleri(s);
-  const cet = cetvelSinirlari(s);
+  /* Cetvel metni sözlüğe taşınmış olabilir (`metin.dil.json`, bkz. lib/dil.ts):
+     Türkçe değerler cetvel taramasına katılır. Katılmazsa ölçüt o aracı
+     SESSİZCE kaybeder — ölçüldü, 26 Eyl: `heart` taşınınca 44 → 43. */
+  let sozlukMetni = '';
+  try {
+    const sozluk = JSON.parse(fs.readFileSync(path.join(KOK, d.name, 'metin.dil.json'), 'utf8'));
+    sozlukMetni = '\n' + Object.values(sozluk.tr || {}).join('\n');
+  } catch { /* sözlüğü olmayan araç */ }
+  const cet = cetvelSinirlari(s + sozlukMetni);
   if (mer.length < 2 || cet.length < 2) continue;
   incelenen++;
 

@@ -6,6 +6,12 @@ import { useRouter } from "next/navigation";
 import { getToolBranchSlugs } from "@/app/lib/tools";
 import { getSpecialty } from "@/app/lib/specialties";
 import { siteIciGecmisVar } from "@/app/lib/gecmis";
+import { sozluk } from "@/lib/dil";
+import { useDil } from "@/app/components/DilBaglami";
+import DilDegistir from "@/app/components/DilDegistir";
+import kabuk from "@/app/tools/components/kabuk.dil.json";
+
+const M = sozluk(kabuk);
 
 /**
  * Hesaplayıcı sayfalarının üst navigasyon çubuğu.
@@ -19,7 +25,14 @@ export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
      uyuşmazlığı olmuyor; düğme yalnızca ölçüm geri gelirse beliriyor. */
   const [geriVar, setGeriVar] = React.useState(false);
   React.useEffect(() => { setGeriVar(siteIciGecmisVar()); }, []);
-  const branchSlugs = getToolBranchSlugs(toolSlug);
+  const dil = useDil();
+  const t = M(dil);
+  /* İngilizce sayfada Türkçe yüzeylere (ana sayfa, kütüphane, branş
+     sayfaları) bağ YOK: okuyucu dil değiştirmeden Türkçe sayfaya düşmesin.
+     "Tüm araçlar" İngilizce dizine gider; Türkçeye geçiş dil değiştiriciyle,
+     açıkça ve `lang` beyanıyla. */
+  const en = dil === "en";
+  const branchSlugs = en ? [] : getToolBranchSlugs(toolSlug);
 
   return (
     <>
@@ -38,11 +51,11 @@ export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
         href="#arac-icerik"
         className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-blue-950 focus:px-4 focus:py-2.5 focus:text-sm focus:font-bold focus:text-white"
       >
-        Araç içeriğine atla
+        {t.atla}
       </a>
 
       <nav
-        aria-label="Araç sayfası gezinmesi"
+        aria-label={t.gezinme}
         className="flex flex-wrap items-center gap-2 mb-2 text-[10px] font-black uppercase tracking-widest"
       >
       {/* Site içi geçmiş YOKSA çizilmez: doğrudan giren kullanıcıda
@@ -56,34 +69,38 @@ export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
         className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-500 hover:border-blue-900/30 hover:text-blue-900 transition-all shadow-sm"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6" /></svg>
-        Geri
+        {t.geri}
       </button>
       )}
 
+      {!en && (
       <Link
         href="/"
         className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-500 hover:border-blue-900/30 hover:text-blue-900 transition-all shadow-sm"
       >
-        <span aria-hidden="true">🏠</span> Ana Sayfa
+        <span aria-hidden="true">🏠</span>{" " + t.anaSayfa}
       </Link>
+      )}
 
       <Link
-        href="/tools"
+        href={en ? "/en/tools" : "/tools"}
         className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-500 hover:border-blue-900/30 hover:text-blue-900 transition-all shadow-sm"
       >
-        📂 Tüm Araçlar
+        {t.tumAraclar}
       </Link>
 
       {/* KÜTÜPHANE HER ARAÇ SAYFASINDA. Branş bağları yalnızca aracın bir
           branşa eşlendiği durumda çıkıyor; ölçüldü (canlı): `/tools/bmi`
           sayfasının araç-dışı TEK bağlantısı `/` idi, yani hiçbir branşa
           eşlenmemiş araçlarda kütüphaneye yol yoktu. */}
+      {!en && (
       <Link
         href="/topics"
         className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-500 hover:border-blue-900/30 hover:text-blue-900 transition-all shadow-sm"
       >
-        <span aria-hidden="true">📚</span> Kütüphane
+        <span aria-hidden="true">📚</span>{" " + t.kutuphane}
       </Link>
+      )}
 
       {branchSlugs.map((slug) => {
         const specialty = getSpecialty(slug);
@@ -97,6 +114,9 @@ export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
           </Link>
         );
       })}
+
+      {/* Yalnızca öteki dilde karşılığı olan araçta çizilir (bkz. lib/dil.ts). */}
+      <DilDegistir className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-blue-900 hover:border-blue-900/30 transition-all shadow-sm" />
       </nav>
 
       {/* Atlama hedefi. tabIndex=-1 şart: odaklanabilir olmayan bir öğeye

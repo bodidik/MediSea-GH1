@@ -4,6 +4,11 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
+import { sozluk } from "@/lib/dil";
+import { useDil } from "@/app/components/DilBaglami";
+import metin from "./metin.dil.json";
+
+const M = sozluk(metin);
 
 /** * PERC Gündüz Modu (Sakin Deniz) Versiyonu
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
@@ -26,6 +31,7 @@ function readBool(x: string | null | undefined) {
 }
 
 export default function PERCPage() {
+  const t = M(useDil());
   const [st, setSt] = React.useState<State>(() => {
     const s = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
     return {
@@ -45,7 +51,7 @@ export default function PERCPage() {
   const allNegative =
     !st.age50 && !st.hr100 && !st.sao2_95 && !st.hemoptysis &&
     !st.estrogen && !st.priorVTE && !st.unilateralLeg && !st.recentSurgeryTrauma;
-  const karar = allNegative ? "PE DIŞLANABİLİR" : "PERC POZİTİF";
+  const karar = allNegative ? t.kararNegatif : t.kararPozitif;
 
   const params = {
     age50: st.age50 ? 1 : "", hr100: st.hr100 ? 1 : "", sao2: st.sao2_95 ? 1 : "",
@@ -54,14 +60,14 @@ export default function PERCPage() {
   };
 
   const ITEMS: { key: keyof State; label: string; sub: string }[] = [
-    { key: "age50", label: "Yaş ≥ 50", sub: "Geriatrik yaş sınırı" },
-    { key: "hr100", label: "Kalp Hızı ≥ 100/dk", sub: "Taşikardi varlığı" },
-    { key: "sao2_95", label: "SpO₂ < %95", sub: "Oda havasında hipoksi" },
-    { key: "unilateralLeg", label: "Tek Taraflı Bacak Şişliği", sub: "DVT klinik şüphesi" },
-    { key: "hemoptysis", label: "Hemoptizi", sub: "Öksürükle kan gelmesi" },
-    { key: "recentSurgeryTrauma", label: "Yakın Cerrahi / Travma", sub: "Son 4 hafta içinde" },
-    { key: "priorVTE", label: "Önceki DVT / PE Öyküsü", sub: "Vasküler tromboembolizm geçmişi" },
-    { key: "estrogen", label: "Östrojen Kullanımı", sub: "Oral kontraseptif veya HRT" },
+    { key: "age50", label: t.age50, sub: t.age50_sub },
+    { key: "hr100", label: t.hr100, sub: t.hr100_sub },
+    { key: "sao2_95", label: t.sao2_95, sub: t.sao2_95_sub },
+    { key: "unilateralLeg", label: t.unilateralLeg, sub: t.unilateralLeg_sub },
+    { key: "hemoptysis", label: t.hemoptysis, sub: t.hemoptysis_sub },
+    { key: "recentSurgeryTrauma", label: t.recentSurgeryTrauma, sub: t.recentSurgeryTrauma_sub },
+    { key: "priorVTE", label: t.priorVTE, sub: t.priorVTE_sub },
+    { key: "estrogen", label: t.estrogen, sub: t.estrogen_sub },
   ];
 
   return (
@@ -78,9 +84,9 @@ export default function PERCPage() {
           <div>
             <div className="flex items-center gap-2">
                <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
-               <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">PERC PROTOKOLÜ</h1>
+               <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">{t.baslik}</h1>
             </div>
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Pulmoner Emboli Dışlama Kriterleri</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">{t.altBaslik}</p>
           </div>
         </div>
 
@@ -124,21 +130,21 @@ export default function PERCPage() {
            </div>
            
            <span className={`text-[10px] font-black uppercase tracking-[0.4em] mb-2 ${allNegative ? 'text-blue-200' : 'text-rose-700'}`}>
-             PROTOKOL SONUCU
+             {t.protokolSonucu}
            </span>
 
            {allNegative ? (
              <>
                <div className="text-3xl font-black text-white italic tracking-tighter uppercase">{karar}</div>
                <p className="mt-3 text-xs font-bold text-amber-400 uppercase tracking-widest max-w-sm">
-                 Düşük klinik şüphe + PERC Negatif → Görüntüleme önerilmez.
+                 {t.negatifNot}
                </p>
              </>
            ) : (
              <>
                <div className="text-3xl font-black text-rose-700 italic tracking-tighter uppercase">{karar}</div>
                <p className="mt-3 text-xs font-bold text-slate-500 uppercase tracking-widest max-w-sm">
-                 Kriterlerden en az biri pozitif. D-dimer veya BT Anjiyo değerlendirilmeli.
+                 {t.pozitifNot}
                </p>
              </>
            )}
@@ -152,7 +158,7 @@ export default function PERCPage() {
           <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-700 leading-relaxed">
-              PERC kuralı yalnızca Pulmoner Emboli olasılığı klinisyen tarafından "Düşük" (&lt; %15) olarak değerlendirilen hastalarda geçerlidir. Yüksek riskli hastalarda kriterlere bakılmaksızın tetkik planlanmalıdır.
+              {t.uyari}
             </p>
           </div>
         </div>

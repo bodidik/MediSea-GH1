@@ -1,6 +1,11 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { bicimle, sozluk } from "@/lib/dil";
+import { useDil } from "@/app/components/DilBaglami";
+import kabuk from "@/app/tools/components/kabuk.dil.json";
+
+const M = sozluk(kabuk);
 
 /**
  * HESAPLAYICI SONUCUNU EKRAN OKUYUCUYA DUYURUR + UZUN ARAÇLARDA ŞERİT OLARAK
@@ -62,6 +67,7 @@ export default function SonucDuyuru({ metin }: { metin: string | null }) {
   const seritRef = useRef<HTMLDivElement>(null);
   const panelRef = useRef<Element | null>(null);
   const [asagida, setAsagida] = useState(false);
+  const t = M(useDil());
 
   useEffect(() => {
     setAsagida(false);
@@ -110,7 +116,7 @@ export default function SonucDuyuru({ metin }: { metin: string | null }) {
   return (
     <>
       <p ref={duyuruRef} role="status" className="sr-only">
-        {metin ? `Sonuç: ${metin}` : ""}
+        {metin ? bicimle(t.sonucDuyuru, { metin }) : ""}
       </p>
 
       {asagida && metin ? (
@@ -121,7 +127,7 @@ export default function SonucDuyuru({ metin }: { metin: string | null }) {
         >
           <div className="mx-auto flex max-w-3xl items-center gap-3">
             <span className="hidden sm:inline shrink-0 text-[9px] font-black uppercase tracking-[0.2em] text-blue-300">
-              Sonuç
+              {t.sonuc}
             </span>
             <span className="min-w-0 flex-1 text-[13px] font-bold leading-snug text-white line-clamp-3 sm:line-clamp-2">
               {metin}
@@ -141,7 +147,7 @@ export default function SonucDuyuru({ metin }: { metin: string | null }) {
               }}
               className="shrink-0 rounded-xl bg-white px-3 py-2.5 text-[11px] font-black uppercase tracking-wider text-blue-950 transition-colors hover:bg-blue-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Sonuca git
+              {t.sonucaGit}
             </button>
           </div>
         </div>

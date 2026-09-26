@@ -3,26 +3,35 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
+import { sozluk } from "@/lib/dil";
+import { useDil } from "@/app/components/DilBaglami";
+import metin from "./metin.dil.json";
 
-const ITEMS = [
-  { key: "cancer",    label: "Aktif Kanser",                    pts: 3, sub: "Metastaz veya kemoterapi/radyoterapi ≤6 ay" },
-  { key: "prevvte",   label: "Geçirilmiş VTE",                  pts: 3, sub: "PE veya DVT öyküsü (yüzeyel tromboz hariç)" },
-  { key: "mobility",  label: "Azalmış Mobilite",                pts: 3, sub: "≥3 gün yatak istirahati (hasta/hekim kararıyla)" },
-  { key: "thrombo",   label: "Trombofili",                      pts: 3, sub: "Protein C/S eksikliği, faktör V Leiden, antifosfolipid antikoru" },
-  { key: "trauma",    label: "Travma / Cerrahi",                pts: 2, sub: "Son 1 ay içinde" },
-  { key: "age",       label: "Yaş ≥ 70",                       pts: 1, sub: "" },
-  { key: "cardioresp",label: "Kalp / Solunum Yetmezliği",      pts: 1, sub: "KKY veya solunum yetmezliği" },
-  { key: "ami",       label: "Akut MI veya İskemik İnme",       pts: 1, sub: "" },
-  { key: "infect",    label: "Akut Enfeksiyon / Romatizmal Hst",pts: 1, sub: "" },
-  { key: "obesity",   label: "Obezite (BMI ≥ 30)",             pts: 1, sub: "" },
-  { key: "hormone",   label: "Hormon Tedavisi",                 pts: 1, sub: "OKS, HRT veya tamoksifen" },
+const M = sozluk(metin);
+type Metin = ReturnType<typeof M>;
+
+/* Metin `metin.dil.json`da (TR + EN); puanlar burada, TEK kopya. */
+const itemsOf = (t: Metin) => [
+  { key: "cancer",    label: t.cancer,     pts: 3, sub: t.cancer_sub },
+  { key: "prevvte",   label: t.prevvte,    pts: 3, sub: t.prevvte_sub },
+  { key: "mobility",  label: t.mobility,   pts: 3, sub: t.mobility_sub },
+  { key: "thrombo",   label: t.thrombo,    pts: 3, sub: t.thrombo_sub },
+  { key: "trauma",    label: t.trauma,     pts: 2, sub: t.trauma_sub },
+  { key: "age",       label: t.age,        pts: 1, sub: "" },
+  { key: "cardioresp",label: t.cardioresp, pts: 1, sub: t.cardioresp_sub },
+  { key: "ami",       label: t.ami,        pts: 1, sub: "" },
+  { key: "infect",    label: t.infect,     pts: 1, sub: "" },
+  { key: "obesity",   label: t.obesity,    pts: 1, sub: "" },
+  { key: "hormone",   label: t.hormone,    pts: 1, sub: t.hormone_sub },
 ];
 
 export default function PaduaPage() {
+  const t = M(useDil());
+  const ITEMS = itemsOf(t);
   const [sel, setSel] = React.useState<Record<string, boolean>>({});
   const score = ITEMS.reduce((s, it) => s + (sel[it.key] ? it.pts : 0), 0);
   const highRisk = score >= 4;
-  const karar = highRisk ? 'YÜKSEK RİSK — Profilaksi Önerilir' : 'DÜŞÜK RİSK — Rutin Takip';
+  const karar = highRisk ? t.kararYuksek : t.kararDusuk;
   const params: Record<string, number> = {};
   ITEMS.forEach(it => { if (sel[it.key]) params[it.key] = 1; });
 
@@ -36,9 +45,9 @@ export default function PaduaPage() {
           <div>
             <div className="flex items-center gap-2">
               <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
-              <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">Padua Skoru</h1>
+              <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">{t.baslik}</h1>
             </div>
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Yatan Dahili Hastalarda VTE Profilaksi Kararı</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">{t.altBaslik}</p>
           </div>
         </div>
 
@@ -68,17 +77,17 @@ export default function PaduaPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
-            <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">SKOR</span>
+            <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">{t.skor}</span>
             <div className="text-5xl font-black text-white">{score}</div>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed transition-all
             ${highRisk ? 'border-rose-200 bg-rose-50' : 'border-emerald-200 bg-emerald-50'}`}>
-            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">KARAR</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">{t.karar}</span>
             <p className={`text-2xl font-black italic tracking-tight ${highRisk ? 'text-rose-700' : 'text-emerald-700'}`}>
               {karar}
             </p>
             <p className={`text-sm font-bold mt-1 ${highRisk ? 'text-rose-700' : 'text-emerald-700'}`}>
-              {highRisk ? 'Eşik: ≥4 puan · LMWH veya fondaparinuks değerlendir' : 'Eşik: <4 puan · Erken mobilizasyon'}
+              {highRisk ? t.esikYuksek : t.esikDusuk}
             </p>
           </div>
         </div>
@@ -90,7 +99,7 @@ export default function PaduaPage() {
           <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-700 leading-relaxed">
-              Padua skoru yalnızca dahili (non-cerrahi) yatan hastalar içindir. Kanama riski (HAS-BLED, IMPROVE) ayrıca değerlendirilmelidir.
+              {t.uyari}
             </p>
           </div>
         </div>

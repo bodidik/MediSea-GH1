@@ -94,7 +94,10 @@ function tara(kok) {
       .replace(/\r\n/g, '\n')
       .replace(/\/\*[\s\S]*?\*\//g, (m) => m.replace(/[^\n]/g, ' '))
       .replace(/(^|[^:])\/\/[^\n]*/g, (m, p1) => p1 + ' '.repeat(Math.max(0, m.length - p1.length)));
-    for (const m of s.matchAll(/=\s*\[/g)) {
+    /* `=>` de kabul: sözlüğe taşınan araçlarda kayıt dizisi bir fonksiyonun
+       dönüşü (`const itemsOf = (t) => [ … ]`). Yalnızca `= [` aranınca bu
+       diziler taramadan SESSİZCE düşüyordu — ölçüldü, 26 Eyl: 247 → 241. */
+    for (const m of s.matchAll(/=>?\s*\[/g)) {
       const b = blok(s, m.index + m[0].length - 1);
       if (!b) continue;
       const kyt = kayitlar(b);

@@ -4,12 +4,18 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
+import { sozluk } from "@/lib/dil";
+import { useDil } from "@/app/components/DilBaglami";
+import metin from "./metin.dil.json";
+
+const M = sozluk(metin);
 
 /** * CURB-65 Gündüz Modu (Sakin Deniz) Versiyonu
  * Konsept: Beyaz Zemin / Lacivert Vurgu / Güneş Sarısı Detay
  */
 
 export default function Curb65Page() {
+  const t = M(useDil());
   const search = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
 
   const [confusion, setConfusion] = React.useState(search?.get("c") === "1");
@@ -25,15 +31,15 @@ export default function Curb65Page() {
   let statusBg = "bg-slate-100";
 
   if (score <= 1) {
-    comment = "Düşük Risk: Ayaktan tedavi düşünülebilir.";
+    comment = t.dusuk;
     statusColor = "text-emerald-700";
     statusBg = "bg-emerald-50";
   } else if (score === 2) {
-    comment = "Orta Risk: Kısa süreli yatış veya yakın takip değerlendirilmelidir.";
+    comment = t.orta;
     statusColor = "text-amber-700";
     statusBg = "bg-amber-50";
   } else {
-    comment = "Yüksek Risk: Hastaneye yatış ve ileri değerlendirme (YBÜ?) önerilir.";
+    comment = t.yuksek;
     statusColor = "text-rose-700";
     statusBg = "bg-rose-50";
   }
@@ -43,11 +49,11 @@ export default function Curb65Page() {
   };
 
   const ITEMS = [
-    { label: "Konfüzyon (Yeni gelişen)", val: confusion, set: setConfusion, sub: "AMTS <8 veya yeni dezoryantasyon" },
-    { label: "Üre > 7 mmol/L", val: ureaHigh, set: setUreaHigh, sub: "> 19 mg/dL (BUN)" },
-    { label: "Solunum Hızı (RR) ≥ 30/dk", val: rrHigh, set: setRrHigh, sub: "Taşipneik solunum" },
-    { label: "Kan Basıncı (SBP < 90 / DBP ≤ 60)", val: bpLow, set: setBpLow, sub: "Hipotansiyon varlığı" },
-    { label: "Yaş ≥ 65", val: age65, set: setAge65, sub: "Geriatrik popülasyon puanı" },
+    { label: t.c, val: confusion, set: setConfusion, sub: t.c_sub },
+    { label: t.u, val: ureaHigh, set: setUreaHigh, sub: t.u_sub },
+    { label: t.r, val: rrHigh, set: setRrHigh, sub: t.r_sub },
+    { label: t.b, val: bpLow, set: setBpLow, sub: t.b_sub },
+    { label: t.a, val: age65, set: setAge65, sub: t.a_sub },
   ];
 
   return (
@@ -67,7 +73,7 @@ export default function Curb65Page() {
                <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
                <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic">CURB-65</h1>
             </div>
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Pnömoni Ciddiyet Analizi</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">{t.altBaslik}</p>
           </div>
         </div>
 
@@ -98,7 +104,7 @@ export default function Curb65Page() {
                 </div>
                 <input type="checkbox" className="sr-only" checked={it.val} onChange={() => it.set(v => !v)} />
                 <span className={`text-[10px] font-black tracking-widest ${it.val ? 'text-amber-400' : 'text-slate-400'}`}>
-                  +1 PUAN
+                  {t.artiBir}
                 </span>
               </label>
             ))}
@@ -110,11 +116,11 @@ export default function Curb65Page() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
-            <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">SKOR</span>
+            <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">{t.skor}</span>
             <div className="text-5xl font-black text-white">{score}</div>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed border-blue-900/10 ${statusBg}`}>
-            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">KLİNİK KARAR DESTEK</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">{t.kararDestek}</span>
             <p className={`text-base font-black leading-relaxed italic ${statusColor}`}>
               {comment}
             </p>
@@ -129,7 +135,7 @@ export default function Curb65Page() {
           <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-700 leading-relaxed">
-              Bu araç akademik referans amaçlıdır. Tedavi kararı verilirken klinik tablo, ek hastalıklar ve yerel pnömoni rehberleri esas alınmalıdır.
+              {t.uyari}
             </p>
           </div>
         </div>

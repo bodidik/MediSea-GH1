@@ -1,0 +1,30 @@
+{
+  "tr": {
+    "atla": "Araç içeriğine atla",
+    "gezinme": "Araç sayfası gezinmesi",
+    "geri": "Geri",
+    "anaSayfa": "Ana Sayfa",
+    "tumAraclar": "📂 Tüm Araçlar",
+    "kutuphane": "Kütüphane",
+    "paylas": "ARACI PAYLAŞ",
+    "kopyalandi": "ARAÇ BAĞLANTISI KOPYALANDI",
+    "kopyalandiNot": "Araç bağlantısı kopyalandı. Girdiğin değerler bağlantıyla taşınmaz.",
+    "sonuc": "Sonuç",
+    "sonucDuyuru": "Sonuç: {metin}",
+    "sonucaGit": "Sonuca git"
+  },
+  "en": {
+    "atla": "Skip to calculator",
+    "gezinme": "Calculator navigation",
+    "geri": "Back",
+    "anaSayfa": "Home",
+    "tumAraclar": "📂 All Calculators",
+    "kutuphane": "Library",
+    "paylas": "SHARE CALCULATOR",
+    "kopyalandi": "CALCULATOR LINK COPIED",
+    "kopyalandiNot": "Calculator link copied. The values you entered are not included in the link.",
+    "sonuc": "Result",
+    "sonucDuyuru": "Result: {metin}",
+    "sonucaGit": "Go to result"
+  }
+}

@@ -4,44 +4,46 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
+import { bicimle, sozluk } from "@/lib/dil";
+import { useDil } from "@/app/components/DilBaglami";
+import metin from "./metin.dil.json";
+
+const M = sozluk(metin);
+type Metin = ReturnType<typeof M>;
 
 type Item = { key: string; label: string; pts: number; sub?: string };
 
-const ITEMS: Item[] = [
-  { key: "cancer",      label: "Aktif Kanser",                         pts:  1, sub: "Son 6 ayda tedavi görmüş veya palyatif" },
-  { key: "paralysis",   label: "Paralizi / Parezi",                    pts:  1, sub: "Alt ekstremitede immobilizasyon" },
-  { key: "immob",       label: "Yakın Cerrahi / İmmobilizasyon",       pts:  1, sub: "Son 4 haftada cerrahi veya ≥3 gün yatak istirahati" },
-  { key: "tenderness",  label: "Derin Ven Hattı Boyunca Hassasiyet",   pts:  1, sub: "Lokalize hassasiyet" },
-  { key: "wholeleg",    label: "Tüm Bacak Şişliği",                    pts:  1, sub: "Ekstremitenin tamamı" },
-  { key: "calf3",       label: "Baldır Çevresi Farkı > 3 cm",          pts:  1, sub: "Tibial tüberositenin 10 cm altından ölçülen" },
-  { key: "pitting",     label: "Pitting Ödem",                         pts:  1, sub: "Sadece semptomatik bacakta" },
-  { key: "collateral",  label: "Yüzeyel Kollateral Venler",            pts:  1, sub: "Varis değil, yeni gelişen" },
-  { key: "prevDVT",     label: "Önceki DVT Öyküsü",                    pts:  1, sub: "Belgelenmiş VTE geçmişi" },
-  { key: "altDx",       label: "Alternatif Tanı Olasılığı",            pts: -2, sub: "DVT'den daha olası bir tanı varlığı" },
+/* Metin `metin.dil.json`da (TR + EN); puanlar, eşikler ve kimlikler burada, TEK kopya. */
+const itemsOf = (t: Metin): Item[] => [
+  { key: "cancer",      label: t.cancer,     pts:  1, sub: t.cancer_sub },
+  { key: "paralysis",   label: t.paralysis,  pts:  1, sub: t.paralysis_sub },
+  { key: "immob",       label: t.immob,      pts:  1, sub: t.immob_sub },
+  { key: "tenderness",  label: t.tenderness, pts:  1, sub: t.tenderness_sub },
+  { key: "wholeleg",    label: t.wholeleg,   pts:  1, sub: t.wholeleg_sub },
+  { key: "calf3",       label: t.calf3,      pts:  1, sub: t.calf3_sub },
+  { key: "pitting",     label: t.pitting,    pts:  1, sub: t.pitting_sub },
+  { key: "collateral",  label: t.collateral, pts:  1, sub: t.collateral_sub },
+  { key: "prevDVT",     label: t.prevDVT,    pts:  1, sub: t.prevDVT_sub },
+  { key: "altDx",       label: t.altDx,      pts: -2, sub: t.altDx_sub },
 ];
 
 // Gösterim skalası: 0 – 9 (negatif skorlar 0'a yapışır)
 const DVT_DISPLAY_MAX = 9;
-const ZONES = [
-  { from: -Infinity, to: 1,  label: "DÜŞÜK",  prob: "~%5",  fill: "#10b981", koyu: "#047857", text: "#065f46", band: "< 1 pt" },
-  { from: 1,         to: 2,  label: "ORTA",   prob: "~%17", fill: "#f59e0b", koyu: "#b45309", text: "#78350f", band: "1 pt" },
-  { from: 2,         to: 9,  label: "YÜKSEK", prob: "~%53", fill: "#f43f5e", koyu: "#be123c", text: "#881337", band: "≥ 2 pt" },
-];
-
-// Display zones mapped to 0-9 range
-const DISPLAY_ZONES = [
-  { from: 0, to: 1, label: "DÜŞÜK",  prob: "~%5",  fill: "#10b981", koyu: "#047857", text: "#065f46", band: "< 1 pt" },
-  { from: 1, to: 2, label: "ORTA",   prob: "~%17", fill: "#f59e0b", koyu: "#b45309", text: "#78350f", band: "1 pt" },
-  { from: 2, to: 9, label: "YÜKSEK", prob: "~%53", fill: "#f43f5e", koyu: "#be123c", text: "#881337", band: "≥ 2 pt" },
-];
-
-const ACTIONS = [
-  { label: "DÜŞÜK",  action: "D-dimer (negatifse DVT dışla; pozitifse Doppler USG)" },
-  { label: "ORTA",   action: "D-dimer negatifse dışla; pozitifse Doppler USG" },
-  { label: "YÜKSEK", action: "Doğrudan Doppler USG — D-dimer bekleme" },
+/* Bölge ve eylem KİMLİKLE eşleşir (`id`), etiketle değil: etiket dile göre değişiyor. */
+const zonesOf = (t: Metin) => [
+  { id: "dusuk",  from: -Infinity, to: 1,  label: t.dusuk,  prob: t.prob_dusuk,  fill: "#10b981", koyu: "#047857", text: "#065f46", band: "< 1 pt", action: t.eylem_dusuk },
+  { id: "orta",   from: 1,         to: 2,  label: t.orta,   prob: t.prob_orta,   fill: "#f59e0b", koyu: "#b45309", text: "#78350f", band: "1 pt",   action: t.eylem_orta },
+  { id: "yuksek", from: 2,         to: 9,  label: t.yuksek, prob: t.prob_yuksek, fill: "#f43f5e", koyu: "#be123c", text: "#881337", band: "≥ 2 pt", action: t.eylem_yuksek },
 ];
 
 export default function WellsDVTPage() {
+  const t = M(useDil());
+  const ITEMS = itemsOf(t);
+  const ZONES = zonesOf(t);
+  /* Gösterim bölgeleri 0–9 aralığına oturur. Bir dönem AYRI bir tabloydu ve
+     etiket/olasılık iki kopyada duruyordu; şimdi ZONES'tan türüyor (değerler
+     birebir aynı: ilk bölge 0'dan başlar, gerisi değişmez). */
+  const DISPLAY_ZONES = ZONES.map(z => ({ ...z, from: Math.max(z.from, 0) }));
   const s = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
   const initial: Record<string, boolean> = {};
   ITEMS.forEach(i => { initial[i.key] = s?.get(i.key) === "1"; });
@@ -52,7 +54,6 @@ export default function WellsDVTPage() {
   const score = ITEMS.reduce((sum, it) => sum + (sel[it.key] ? it.pts : 0), 0);
 
   const activeZone = ZONES.slice().reverse().find(z => score >= z.from) ?? ZONES[0];
-  const activeAction = ACTIONS.find(a => a.label === activeZone.label)!;
 
   const params: Record<string, string | number> = {};
   ITEMS.forEach(i => { if (sel[i.key]) params[i.key] = 1; });
@@ -85,7 +86,7 @@ export default function WellsDVTPage() {
               <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
               <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">Wells (DVT)</h1>
             </div>
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Derin Ven Trombozu Risk Analizi</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">{t.altBaslik}</p>
           </div>
         </div>
 
@@ -127,28 +128,28 @@ export default function WellsDVTPage() {
         </div>
 
         {/* GRAFİK SKOR KARTI */}
-        <SonucDuyuru metin={`${activeZone.label} risk — ${activeZone.prob}`} />
+        <SonucDuyuru metin={bicimle(t.duyuru, { label: activeZone.label, prob: activeZone.prob })} />
 
         <div className="bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm space-y-6">
 
           {/* Skor + risk özet */}
           <div className="flex items-center gap-4">
             <div className="w-20 h-20 rounded-2xl bg-blue-900 flex flex-col items-center justify-center shadow-lg border-t-4 border-amber-400 shrink-0">
-              <span className="text-[8px] font-black text-blue-300 uppercase tracking-widest">SKOR</span>
+              <span className="text-[8px] font-black text-blue-300 uppercase tracking-widest">{t.skor}</span>
               <span className="text-4xl font-black text-white leading-none">{score}</span>
             </div>
             <div className="min-w-0">
-              <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-0.5">RİSK KATEGORİSİ</p>
+              <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-0.5">{t.kategori}</p>
               <p className="text-2xl font-black italic tracking-tight" style={{ color: activeZone.text }}>
-                {activeZone.label} RİSK <span className="text-sm font-bold">{activeZone.prob}</span>
+                {activeZone.label}{t.riskEk}<span className="text-sm font-bold">{activeZone.prob}</span>
               </p>
-              <p className="text-[10px] font-bold text-slate-500 mt-1">{activeAction.action}</p>
+              <p className="text-[10px] font-bold text-slate-500 mt-1">{activeZone.action}</p>
             </div>
           </div>
 
           {/* SVG Gauge Bar */}
           <div>
-            <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-3">Skor Skalası (0 – 9)</p>
+            <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-3">{t.skala}</p>
             <svg viewBox={`-2 -2 ${W + 4} ${H + 28}`} className="w-full" style={{ overflow: "visible" }}>
               <defs>
                 <clipPath id="dvt-bar-outer"><rect x="0" y="0" width={W} height={H} rx={R} ry={R} /></clipPath>
@@ -158,7 +159,7 @@ export default function WellsDVTPage() {
               {/* Zone arka plan */}
               <g clipPath="url(#dvt-bar-outer)">
                 {zoneRects.map(z => (
-                  <rect key={z.label + "bg"} x={z.x} y={0} width={z.w} height={H} fill={z.fill} opacity={0.12} />
+                  <rect key={z.id + "bg"} x={z.x} y={0} width={z.w} height={H} fill={z.fill} opacity={0.12} />
                 ))}
               </g>
 
@@ -166,7 +167,7 @@ export default function WellsDVTPage() {
               <g clipPath="url(#dvt-bar-outer)">
                 <g clipPath="url(#dvt-bar-fill)">
                   {zoneRects.map(z => (
-                    <rect key={z.label + "fill"} x={z.x} y={0} width={z.w} height={H} fill={z.fill} opacity={0.55} />
+                    <rect key={z.id + "fill"} x={z.x} y={0} width={z.w} height={H} fill={z.fill} opacity={0.55} />
                   ))}
                 </g>
               </g>
@@ -174,13 +175,13 @@ export default function WellsDVTPage() {
               {/* Zone ayırıcı çizgiler */}
               <g clipPath="url(#dvt-bar-outer)">
                 {zoneRects.slice(1).map(z => (
-                  <line key={z.label + "div"} x1={z.x} y1={0} x2={z.x} y2={H} stroke="white" strokeWidth="2" opacity={0.7} />
+                  <line key={z.id + "div"} x1={z.x} y1={0} x2={z.x} y2={H} stroke="white" strokeWidth="2" opacity={0.7} />
                 ))}
               </g>
 
               {/* Zone etiketleri */}
               {zoneRects.map(z => (
-                <g key={z.label + "lbl"}>
+                <g key={z.id + "lbl"}>
                   <text x={z.x + z.w / 2} y={H / 2 - 6} textAnchor="middle"
                     fill={z.fill} fontSize={10} fontWeight="900" fontFamily="sans-serif"
                     style={{ letterSpacing: 1.5 }}>{z.label}</text>
@@ -216,7 +217,7 @@ export default function WellsDVTPage() {
           {/* Kriter katkı listesi */}
           {(selectedItems.length > 0 || deductItem.length > 0) && (
             <div className="space-y-2">
-              <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Seçili Kriterler</p>
+              <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{t.secili}</p>
               {selectedItems.map(it => (
                 <div key={it.key} className="flex items-center gap-3">
                   <span className="text-[10px] font-bold text-blue-900 truncate flex-1">{it.label}</span>
@@ -241,9 +242,9 @@ export default function WellsDVTPage() {
           {/* 3-zone özet bantlar */}
           <div className="grid grid-cols-3 gap-2">
             {DISPLAY_ZONES.map(z => {
-              const active = z.label === activeZone.label;
+              const active = z.id === activeZone.id;
               return (
-                <div key={z.label} className="rounded-xl p-3 text-center border transition-all"
+                <div key={z.id}className="rounded-xl p-3 text-center border transition-all"
                   style={{
                     background: active ? z.koyu : `${z.fill}18`,
                     borderColor: active ? z.fill : `${z.fill}40`,
@@ -265,7 +266,7 @@ export default function WellsDVTPage() {
           <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-700 leading-relaxed">
-              Wells DVT skoru, klinik olasılığı belirlemek içindir. "DVT Olası" (≥2) grubundaki hastalara Doppler USG, "DVT Olası Değil" (&lt;2) grubundaki hastalara ise D-dimer tetkiki önerilir.
+              {t.uyari}
             </p>
           </div>
         </div>

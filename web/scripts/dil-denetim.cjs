@@ -162,7 +162,43 @@ function sozlukDenetle(kok) {
       if (isaret) kusur("turkce-en", `${k}: ${isaret} — "${kisalt(en)}"`);
     }
   }
-  return { olculenDosya: dosyalar.length, olculenAnahtar: anahtar, kusurlar };
+  /* İngilizce araç künyesi (`content/arac-en.json`, bkz. lib/en-arac.tsx):
+     metin İngilizce olmalı ve çevrilmiş HER aracın (dil indeksindeki
+     `/tools/<slug>`) kaydı bulunmalı — yoksa sayfa derlemede fırlatır, kapı
+     bunu derlemeden önce ve adıyla söyler. Dosya yoksa ve çevrilmiş araç da
+     yoksa ölçülecek bir şey yok. */
+  const kunyeYolu = path.join(kok, "content", "arac-en.json");
+  let kunye = {};
+  let kunyeVar = false;
+  try {
+    kunye = JSON.parse(fs.readFileSync(kunyeYolu, "utf8"));
+    kunyeVar = true;
+  } catch (e) {
+    if (fs.existsSync(kunyeYolu)) kusurlar.push({ ad: "content/arac-en.json", tur: "bozuk-json", ayrinti: e.message });
+  }
+  for (const [slug, k] of Object.entries(kunye)) {
+    anahtar++;
+    for (const alan of ["ad", "aciklama"]) {
+      const v = k && k[alan];
+      if (typeof v !== "string" || !v.trim()) {
+        kusurlar.push({ ad: "content/arac-en.json", tur: "bos-deger", ayrinti: `${slug}.${alan}` });
+        continue;
+      }
+      const isaret = turkceIsaret(v);
+      if (isaret) kusurlar.push({ ad: "content/arac-en.json", tur: "turkce-en", ayrinti: `${slug}.${alan}: ${isaret} — "${kisalt(v)}"` });
+    }
+  }
+  let indeks = [];
+  try {
+    indeks = JSON.parse(fs.readFileSync(path.join(kok, "content", "dil-index.json"), "utf8")).sayfalar || [];
+  } catch { /* indeks yoksa çevrilmiş araç da yok */ }
+  for (const y of indeks.filter((y) => y.startsWith("/tools/"))) {
+    const slug = y.slice("/tools/".length);
+    if (!Object.prototype.hasOwnProperty.call(kunye, slug)) {
+      kusurlar.push({ ad: "content/arac-en.json", tur: "kunye-eksik", ayrinti: `${slug} çevrilmiş ama İngilizce künyesi yok` });
+    }
+  }
+  return { olculenDosya: dosyalar.length + (kunyeVar ? 1 : 0), olculenAnahtar: anahtar, kusurlar };
 }
 
 /* ── 2. ÇIKTI KİPİ ───────────────────────────────────────────────────── */
@@ -369,6 +405,11 @@ if (argv.includes("--negatif")) {
 
   // Çıktı tohumları: indeks üç sayfa diyor.
   yaz("content/dil-index.json", { sayfalar: ["/tools/temiz", "/tools/kusurlu", "/tools/eksik"] });
+  // Künye: temiz doğru, kusurlu Türkçe açıklama taşıyor, eksik'in kaydı yok.
+  yaz("content/arac-en.json", {
+    temiz: { ad: "Temiz Score", aciklama: "Sjögren-safe clean seed" },
+    kusurlu: { ad: "Kusurlu Score", aciklama: "Hasta risk" },
+  });
   const bas = ({ lang = ' lang="en"', kanon = "/en/tools/temiz", diller = true, yerel = "en_US", gorsel = true, govde = "" }) =>
     `<!DOCTYPE html><html lang="tr"><head><title>HEART Score · MEDISEA</title>` +
     `<meta name="description" content="Chest pain risk score."/>` +
@@ -417,6 +458,8 @@ if (argv.includes("--negatif")) {
     "app/tools/kusurlu/metin.dil.json|turkce-en": 4, // Hesapla (sözcük) · Uyarı (harf) · "ve" (sözcük) · Kardiyoloji (ek)
     "content/bozuk.dil.json|bozuk-json": 1,
     "lib/bicimsiz.dil.json|bicim": 1,
+    "content/arac-en.json|turkce-en": 1, // kusurlu.aciklama "Hasta"
+    "content/arac-en.json|kunye-eksik": 1, // eksik
   };
   const beklenenCikti = {
     "/en/tools/kusurlu|lang": 1,

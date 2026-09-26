@@ -4,6 +4,12 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
+import { sozluk } from "@/lib/dil";
+import { useDil } from "@/app/components/DilBaglami";
+import metin from "./metin.dil.json";
+
+const M = sozluk(metin);
+type Metin = ReturnType<typeof M>;
 
 type Item = { key: keyof State; label: string; pts: number };
 
@@ -12,20 +18,23 @@ type State = {
   strokeTIA: boolean; vascular: boolean; age65to74: boolean; female: boolean;
 };
 
-const ITEMS: Item[] = [
-  { key: "cHF", label: "Kalp yetmezliği (CHF)", pts: 1 },
-  { key: "htn", label: "Hipertansiyon", pts: 1 },
-  { key: "age75", label: "Yaş ≥ 75", pts: 2 },
-  { key: "dm", label: "Diyabet", pts: 1 },
-  { key: "strokeTIA", label: "İnme/TIA/TE öyküsü", pts: 2 },
-  { key: "vascular", label: "Vasküler hastalık (MI, PAD)", pts: 1 },
-  { key: "age65to74", label: "Yaş 65–74", pts: 1 },
-  { key: "female", label: "Kadın cinsiyet", pts: 1 },
+/* Metin `metin.dil.json`da (TR + EN); puanlar burada, TEK kopya. */
+const itemsOf = (t: Metin): Item[] => [
+  { key: "cHF", label: t.cHF, pts: 1 },
+  { key: "htn", label: t.htn, pts: 1 },
+  { key: "age75", label: t.age75, pts: 2 },
+  { key: "dm", label: t.dm, pts: 1 },
+  { key: "strokeTIA", label: t.strokeTIA, pts: 2 },
+  { key: "vascular", label: t.vascular, pts: 1 },
+  { key: "age65to74", label: t.age65to74, pts: 1 },
+  { key: "female", label: t.female, pts: 1 },
 ];
 
 function readBool(param: string | null) { return param === "1" || param === "true"; }
 
 export default function ChadsVascPage() {
+  const t = M(useDil());
+  const ITEMS = itemsOf(t);
   const search = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
 
   /**
@@ -81,15 +90,15 @@ export default function ChadsVascPage() {
   let statusBg = "bg-slate-100";
 
   if (score === 0 && !state.female) {
-    comment = "Düşük risk (erkek 0). Antikoagülasyon önerilmez.";
+    comment = t.dusukErkek;
     statusColor = "text-emerald-700";
     statusBg = "bg-emerald-50";
   } else if (score === 1 && state.female) {
-    comment = "Düşük risk (kadın 1). Sadece cinsiyet puanı; klinik takip.";
+    comment = t.dusukKadin;
     statusColor = "text-blue-700";
     statusBg = "bg-blue-50";
   } else if (score >= 2 || (score === 1 && !state.female)) {
-    comment = "Orta-Yüksek risk; Oral Antikoagülan (OAK) önerilir.";
+    comment = t.ortaYuksek;
     statusColor = "text-rose-700";
     statusBg = "bg-rose-50";
   }
@@ -111,7 +120,7 @@ export default function ChadsVascPage() {
                <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
                <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic">CHA₂DS₂-VASc</h1>
             </div>
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Atriyal Fibrilasyon İnme Risk Analizi</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">{t.altBaslik}</p>
           </div>
         </div>
 
@@ -137,7 +146,7 @@ export default function ChadsVascPage() {
                 </div>
                 <input type="checkbox" className="sr-only" checked={state[it.key]} onChange={() => toggle(it.key)} />
                 <span className={`text-[10px] font-black tracking-widest ${state[it.key] ? 'text-amber-400' : 'text-slate-400'}`}>
-                  +{it.pts} PUAN
+                  +{it.pts}{it.pts === 1 ? t.puanTekil : t.puanCogul}
                 </span>
               </label>
             ))}
@@ -149,11 +158,11 @@ export default function ChadsVascPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-1 bg-blue-900 rounded-[2rem] p-6 flex flex-col items-center justify-center shadow-xl border-t-4 border-amber-400">
-            <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">TOPLAM</span>
+            <span className="text-[10px] font-black text-blue-200 uppercase tracking-widest mb-1">{t.toplam}</span>
             <div className="text-5xl font-black text-white">{score}</div>
           </div>
           <div className={`md:col-span-3 rounded-[2rem] p-6 flex flex-col justify-center border-2 border-dashed border-blue-900/10 ${statusBg}`}>
-            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">KLİNİK YÖNLENDİRME</span>
+            <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-widest mb-2 block">{t.yonlendirme}</span>
             <p className={`text-base font-black leading-relaxed italic ${statusColor}`}>
               {comment}
             </p>
@@ -168,7 +177,7 @@ export default function ChadsVascPage() {
           <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-700 leading-relaxed">
-              Bu araç akademik referans amaçlıdır. Tedavi kararı verilirken güncel ESC/ACC kılavuzları ve hastanın bireysel kanama riski (HAS-BLED) birlikte değerlendirilmelidir.
+              {t.uyari}
             </p>
           </div>
         </div>

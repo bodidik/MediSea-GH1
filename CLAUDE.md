@@ -442,18 +442,19 @@ ve premium Türkçe kalır. **İngilizce tıbbi metnin son onayı kullanıcıda.
 | `lib/dil.ts` | dil adresten okunur · `karsiYol` · `dilAlternatifleri` (hreflang) · `sozluk()` + `bicimle()` |
 | `content/dil-index.json` | çevrilmiş Türkçe yollar — `dil-index.cjs` `app/en`den üretir, ELLE yazılmaz |
 | `app/en/layout.tsx` | `<div lang="en">` kabı + og:locale en_US + İngilizce kart; canonical VERMEZ |
-| `DilDegistir.tsx` | değiştirici yalnız karşılık varsa çizilir; `DilEsitle` `<html lang>`i istemcide eşitler |
+| `DilDegistir.tsx` | değiştirici yalnız karşılık varsa çizilir (araçta `ToolTopNav` içinde); `DilEsitle` `<html lang>`i istemcide eşitler |
+| `DilBaglami.tsx` | `useDil()` — istemci bileşeninin dili; varsayılan `tr` |
 | `*.dil.json` | `{tr:{…}, en:{…}}` — eksik anahtarı `tsc`, fazlayı/yer tutucuyu/Türkçeyi kapı yakalar |
 
 **İngilizce sayfa eklerken:** sayfa `app/en/<türkçe yol>/page.tsx` ·
 metadata `rotaMeta({ …, yol: "<TR yolu>", dil: "en" })` · metin `*.dil.json` ·
 `dil-index.cjs` → `arac-metadata.cjs` → derle → `dil-denetim --cikti`.
 
-**Faz 1 önkoşulları (ölçüldü, ÇÖZÜLMEDİ):**
-- **Sayı ayrıştırıcı İngilizce yazımı yanlış okur** (`parseLocaleNumber` sürüldü): `5,000`→**5**, `12,000.5`→12, `1,500`→1.5; ters yönde `5.000`→5000. Dile göre kural klinik karar — araç açılmadan önce.
-- `/en/tools/*` `app/tools/layout.tsx`in DIŞINDA: noscript şeridi, altbilgi, `ToolTopNav`, paylaş düğmesi Türkçe ya da yok — kendi kabuğu gerekir.
-- Türkçe sayfada dil değiştirici henüz HİÇBİR YERE bağlı değil (yerini ilk pilotta gör).
-- Kapı istemci metnini (sonuç kartı, `DenizSurprizleri`) göremez; kör noktası listede olmayan ve özel harfsiz sözcük (`Boy (cm)`). Uçtan uca ölçüm: gerçek `bmi` derlemesinde 18 Türkçe parçanın 15'i yakalandı, `-oloji` eki + `cinsiyet` eklendi.
+**Faz 1 (26 Eyl) — pilot 9 seçmeli skor** (heart · chads-vasc · has-bled · curb65 · qsofa · padua · perc · wells-pe · wells-dvt). Türkçe metin `metin.dil.json`a taşındı, ortak kabuk (`ToolTopNav` · `ToolShare` · `SonucDuyuru`) `useDil()` okur, sağlayıcı yalnız `app/en/layout.tsx`te. **Türkçe çıktı değişmedi — ölçüldü:** 258 araç HTML'i tabanla birebir · 143 tıklama senaryosu canlıyla birebir · 235 TR değerin 235'i HEAD'de birebir. **İngilizce sayfalar `dil-faz1-en` dalında, tıbbi onay bekliyor** (onaysız main'e girmez).
+
+**Aracı çevrilebilir yaparken:** metin `itemsOf(t)`/`zonesOf(t)` ile, puan/eşik/kimlik kodda tek kopya · seçim ETİKETLE değil KİMLİKLE eşleşir (`b.l === "Düşük"` İngilizcede sessizce bozulur; 3 araçta vardı) · metin düğümünü tek parça tut (`{" " + t.x}`; yoksa React `<!-- -->` basar, HTML değişir) · `bant`/`eksik-alan` denetimleri sözlüğü ve `=> [` dizilerini okuyor (okumadıklarında kapsam 44→43, 247→241 düşmüştü).
+
+**Açık:** sayı ayrıştırıcı İngilizce yazımı yanlış okur (`5,000`→**5**, `12,000.5`→12, ters yönde `5.000`→5000) — kullanıcı yanıtı "türkçe 5,000 ve ingilizce 5.000", anlamı TEYİT BEKLİYOR; sayı alan araç bu kural uygulanmadan çevrilmez. Kapı istemci metnini göremez; kör noktası özel harfsiz, listede olmayan sözcük (`Boy (cm)`).
 
 ## Ölçüm arşivi — `CLAUDE-arsiv.md`
 

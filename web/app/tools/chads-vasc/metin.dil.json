@@ -1,0 +1,40 @@
+{
+  "tr": {
+    "altBaslik": "Atriyal Fibrilasyon İnme Risk Analizi",
+    "cHF": "Kalp yetmezliği (CHF)",
+    "htn": "Hipertansiyon",
+    "age75": "Yaş ≥ 75",
+    "dm": "Diyabet",
+    "strokeTIA": "İnme/TIA/TE öyküsü",
+    "vascular": "Vasküler hastalık (MI, PAD)",
+    "age65to74": "Yaş 65–74",
+    "female": "Kadın cinsiyet",
+    "puanTekil": " PUAN",
+    "puanCogul": " PUAN",
+    "dusukErkek": "Düşük risk (erkek 0). Antikoagülasyon önerilmez.",
+    "dusukKadin": "Düşük risk (kadın 1). Sadece cinsiyet puanı; klinik takip.",
+    "ortaYuksek": "Orta-Yüksek risk; Oral Antikoagülan (OAK) önerilir.",
+    "toplam": "TOPLAM",
+    "yonlendirme": "KLİNİK YÖNLENDİRME",
+    "uyari": "Bu araç akademik referans amaçlıdır. Tedavi kararı verilirken güncel ESC/ACC kılavuzları ve hastanın bireysel kanama riski (HAS-BLED) birlikte değerlendirilmelidir."
+  },
+  "en": {
+    "altBaslik": "Atrial Fibrillation Stroke Risk Assessment",
+    "cHF": "Congestive heart failure (CHF)",
+    "htn": "Hypertension",
+    "age75": "Age ≥ 75",
+    "dm": "Diabetes",
+    "strokeTIA": "Prior stroke/TIA/thromboembolism",
+    "vascular": "Vascular disease (MI, PAD)",
+    "age65to74": "Age 65–74",
+    "female": "Female sex",
+    "puanTekil": " POINT",
+    "puanCogul": " POINTS",
+    "dusukErkek": "Low risk (male, score 0). Anticoagulation is not recommended.",
+    "dusukKadin": "Low risk (female, score 1). Sex category point only; clinical follow-up.",
+    "ortaYuksek": "Moderate-to-high risk; oral anticoagulation (OAC) is recommended.",
+    "toplam": "TOTAL",
+    "yonlendirme": "CLINICAL GUIDANCE",
+    "uyari": "This tool is intended as an academic reference. Treatment decisions should consider current ESC/ACC guidelines together with the patient's individual bleeding risk (HAS-BLED)."
+  }
+}

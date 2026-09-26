@@ -3,32 +3,40 @@ import React from "react";
 import ToolShare from "@/app/tools/components/ToolShare";
 import ToolTopNav from "@/app/tools/components/ToolTopNav";
 import SonucDuyuru from "@/app/tools/components/SonucDuyuru";
+import { sozluk } from "@/lib/dil";
+import { useDil } from "@/app/components/DilBaglami";
+import metin from "./metin.dil.json";
 
-const ITEMS: { id: string; label: string; detail: string; options: { label: string; pts: number }[] }[] = [
+type Metin = ReturnType<typeof M>;
+
+const M = sozluk(metin);
+
+/* Metin `metin.dil.json`da (TR + EN); puanlar ve kimlikler burada, TEK kopya. */
+const itemsOf = (t: Metin): { id: string; label: string; detail: string; options: { label: string; pts: number }[] }[] => [
   {
     id: "history",
-    label: "H — Hikaye",
-    detail: "Göğüs ağrısının kardiyak açıdan şüphe vericilik düzeyi",
+    label: t.history_label,
+    detail: t.history_detail,
     options: [
-      { label: "Düşük şüpheli (non-kardiyak özellikler ağırlıklı)", pts: 0 },
-      { label: "Orta şüpheli (karma özellikler)", pts: 1 },
-      { label: "Yüksek şüpheli (tipik AMI/ACS — baskı, sol kol/çene yayılım, egzersizle artma)", pts: 2 },
+      { label: t.history_0, pts: 0 },
+      { label: t.history_1, pts: 1 },
+      { label: t.history_2, pts: 2 },
     ],
   },
   {
     id: "ecg",
-    label: "E — EKG",
-    detail: "12-derivasyon EKG bulguları",
+    label: t.ecg_label,
+    detail: t.ecg_detail,
     options: [
-      { label: "Normal", pts: 0 },
-      { label: "Non-spesifik repolarizasyon bozukluğu (LBBB, pacemaker, LVH, erken repolarizasyon)", pts: 1 },
-      { label: "Anlamlı ST depresyonu veya T inversiyonu (yeni/varsayılan yeni)", pts: 2 },
+      { label: t.ecg_0, pts: 0 },
+      { label: t.ecg_1, pts: 1 },
+      { label: t.ecg_2, pts: 2 },
     ],
   },
   {
     id: "age",
-    label: "A — Yaş",
-    detail: "Hasta yaşı",
+    label: t.age_label,
+    detail: t.age_detail,
     options: [
       { label: "< 45", pts: 0 },
       { label: "45–65", pts: 1 },
@@ -37,30 +45,30 @@ const ITEMS: { id: string; label: string; detail: string; options: { label: stri
   },
   {
     id: "risk",
-    label: "R — Risk Faktörleri",
-    detail: "Bilinen KAH veya kardiyovasküler risk faktörleri (DM, sigara, hiperkolesterolemi, HT, obezite, aile öyküsü, aterosklerotik hastalık)",
+    label: t.risk_label,
+    detail: t.risk_detail,
     options: [
-      { label: "Bilinen risk faktörü yok", pts: 0 },
-      { label: "1–2 risk faktörü", pts: 1 },
-      { label: "≥ 3 risk faktörü VEYA aterosklerotik hastalık öyküsü", pts: 2 },
+      { label: t.risk_0, pts: 0 },
+      { label: t.risk_1, pts: 1 },
+      { label: t.risk_2, pts: 2 },
     ],
   },
   {
     id: "troponin",
-    label: "T — Troponin",
-    detail: "İlk başvurudaki troponin düzeyi (standart assay normal üst sınırına göre)",
+    label: t.troponin_label,
+    detail: t.troponin_detail,
     options: [
-      { label: "≤ Normal sınır", pts: 0 },
-      { label: "1–3× normal sınır", pts: 1 },
-      { label: "> 3× normal sınır", pts: 2 },
+      { label: t.troponin_0, pts: 0 },
+      { label: t.troponin_1, pts: 1 },
+      { label: t.troponin_2, pts: 2 },
     ],
   },
 ];
 
-const getBand = (v: number) =>
-  v <= 3  ? { label: "DÜŞÜK RİSK",  color: "emerald", sub: "Erken taburculuk — kardiyak olay riski < %2", action: "Ambulatuar değerlendirme yeterli" } :
-  v <= 6  ? { label: "ORTA RİSK",   color: "amber",   sub: "Kardiyoloji konsültasyonu ve gözlem önerilidir", action: "Stres testi veya görüntüleme planla" } :
-             { label: "YÜKSEK RİSK",color: "rose",    sub: "Hızlı kardiyoloji değerlendirmesi ve invaziv strateji", action: "Kardiyak kateterizasyon düşün" };
+const getBand = (v: number, t: Metin) =>
+  v <= 3  ? { label: t.dusuk_label,  color: "emerald", sub: t.dusuk_sub, action: t.dusuk_action } :
+  v <= 6  ? { label: t.orta_label,   color: "amber",   sub: t.orta_sub, action: t.orta_action } :
+             { label: t.yuksek_label,color: "rose",    sub: t.yuksek_sub, action: t.yuksek_action };
 
 const COLOR: Record<string, { bg: string; border: string; text: string; badge: string }> = {
   emerald: { bg: "bg-emerald-50", border: "border-emerald-200", text: "text-emerald-700", badge: "bg-emerald-700 text-white" },
@@ -69,6 +77,8 @@ const COLOR: Record<string, { bg: string; border: string; text: string; badge: s
 };
 
 export default function HEARTPage() {
+  const t = M(useDil());
+  const ITEMS = itemsOf(t);
   const [sel, setSel] = React.useState<Record<string, number | null>>(
     Object.fromEntries(ITEMS.map(i => [i.id, null]))
   );
@@ -78,7 +88,7 @@ export default function HEARTPage() {
     ? Object.values(sel).reduce<number>((s, v) => s + (v ?? 0), 0)
     : null;
 
-  const band = total !== null ? getBand(total) : null;
+  const band = total !== null ? getBand(total, t) : null;
   const c = band ? COLOR[band.color] : null;
 
   return (
@@ -91,14 +101,14 @@ export default function HEARTPage() {
           <div>
             <div className="flex items-center gap-2">
               <span aria-hidden="true" className="text-amber-500 text-xs">☀️</span>
-              <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">HEART Skoru</h1>
+              <h1 className="text-2xl font-black tracking-tight text-blue-900 uppercase italic leading-none">{t.baslik}</h1>
             </div>
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">Akut Göğüs Ağrısı Kardiyak Risk Triyajı · 5 Kriter · 0–10</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mt-1">{t.altBaslik}</p>
           </div>
         </div>
 
         <div className="flex items-center justify-between px-1">
-          <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{answered}/5 kriter</span>
+          <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{answered}{t.kriterSayac}</span>
           <div className="flex gap-2 text-[8px] font-black text-slate-400">
             {["H","E","A","R","T"].map((l, i) => (
               <span key={l} className={`w-6 h-6 rounded-lg flex items-center justify-center
@@ -145,12 +155,13 @@ export default function HEARTPage() {
             </div>
             <div className="grid grid-cols-3 gap-1 text-center text-[8px]">
               {[
-                { l: "Düşük", r: "0–3", mace: "< %2" },
-                { l: "Orta",  r: "4–6", mace: "≈ %12" },
-                { l: "Yüksek",r: "7–10",mace: "≈ %65" },
+                { k: "dusuk",  l: t.tablo_dusuk,  r: "0–3", mace: t.mace_dusuk },
+                { k: "orta",   l: t.tablo_orta,   r: "4–6", mace: t.mace_orta },
+                { k: "yuksek", l: t.tablo_yuksek, r: "7–10",mace: t.mace_yuksek },
               ].map(b => (
-                <div key={b.l} className={`rounded-lg p-1.5 font-black
-                  ${(b.l === "Düşük" && total <= 3) || (b.l === "Orta" && total >= 4 && total <= 6) || (b.l === "Yüksek" && total >= 7) ? "bg-blue-900 text-white" : "bg-white/60 text-slate-500"}`}>
+                /* Seçili hücre KİMLİKLE bulunur, etiketle değil: etiket dile göre değişiyor. */
+                <div key={b.k} className={`rounded-lg p-1.5 font-black
+                  ${(b.k === "dusuk" && total <= 3) || (b.k === "orta" && total >= 4 && total <= 6) || (b.k === "yuksek" && total >= 7) ? "bg-blue-900 text-white" : "bg-white/60 text-slate-500"}`}>
                   <div>{b.l}</div><div className="font-bold">{b.r}</div><div className="text-[7px]">MACE {b.mace}</div>
                 </div>
               ))}
@@ -158,7 +169,7 @@ export default function HEARTPage() {
           </div>
         ) : (
           <div className="bg-white border-2 border-dashed border-slate-200 rounded-[2rem] p-6 text-center">
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Tüm 5 kriteri tamamlayın</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{t.bos}</p>
           </div>
         )}
 
@@ -169,7 +180,7 @@ export default function HEARTPage() {
           <div className="flex items-start gap-3">
             <span className="text-amber-500 text-lg" aria-hidden="true">⚠️</span>
             <p className="text-[11px] text-slate-700 leading-relaxed">
-              HEART skoru ≤ 3 olan hastalarda MACE riski &lt; %2 olup güvenli erken taburculuğu destekler. Yüksek duyarlılıklı troponin assayları ile birlikte kullanımı duyarlılığı artırır. Six et al., Eur Heart J Acute Cardiovasc Care 2013.
+              {t.uyari}
             </p>
           </div>
         </div>

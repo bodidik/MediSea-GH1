@@ -1,0 +1,42 @@
+{
+  "tr": {
+    "altBaslik": "Pnömoni Ciddiyet Analizi",
+    "c": "Konfüzyon (Yeni gelişen)",
+    "c_sub": "AMTS <8 veya yeni dezoryantasyon",
+    "u": "Üre > 7 mmol/L",
+    "u_sub": "> 19 mg/dL (BUN)",
+    "r": "Solunum Hızı (RR) ≥ 30/dk",
+    "r_sub": "Taşipneik solunum",
+    "b": "Kan Basıncı (SBP < 90 / DBP ≤ 60)",
+    "b_sub": "Hipotansiyon varlığı",
+    "a": "Yaş ≥ 65",
+    "a_sub": "Geriatrik popülasyon puanı",
+    "artiBir": "+1 PUAN",
+    "dusuk": "Düşük Risk: Ayaktan tedavi düşünülebilir.",
+    "orta": "Orta Risk: Kısa süreli yatış veya yakın takip değerlendirilmelidir.",
+    "yuksek": "Yüksek Risk: Hastaneye yatış ve ileri değerlendirme (YBÜ?) önerilir.",
+    "skor": "SKOR",
+    "kararDestek": "KLİNİK KARAR DESTEK",
+    "uyari": "Bu araç akademik referans amaçlıdır. Tedavi kararı verilirken klinik tablo, ek hastalıklar ve yerel pnömoni rehberleri esas alınmalıdır."
+  },
+  "en": {
+    "altBaslik": "Pneumonia Severity Assessment",
+    "c": "Confusion (new onset)",
+    "c_sub": "AMTS <8 or new disorientation",
+    "u": "Urea > 7 mmol/L",
+    "u_sub": "> 19 mg/dL (BUN)",
+    "r": "Respiratory Rate (RR) ≥ 30/min",
+    "r_sub": "Tachypnea",
+    "b": "Blood Pressure (SBP < 90 / DBP ≤ 60)",
+    "b_sub": "Hypotension present",
+    "a": "Age ≥ 65",
+    "a_sub": "Elderly population point",
+    "artiBir": "+1 POINT",
+    "dusuk": "Low Risk: Outpatient treatment may be considered.",
+    "orta": "Moderate Risk: A short hospital stay or close follow-up should be considered.",
+    "yuksek": "High Risk: Hospital admission and further evaluation (ICU?) are recommended.",
+    "skor": "SCORE",
+    "kararDestek": "CLINICAL DECISION SUPPORT",
+    "uyari": "This tool is intended as an academic reference. Treatment decisions should be based on the clinical picture, comorbidities and local pneumonia guidelines."
+  }
+}

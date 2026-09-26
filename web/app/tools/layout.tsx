@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { getTopicCounts, getToolCount } from "@/app/lib/topic-counts";
 import { SPECIALTIES } from "@/app/lib/specialties";
+import { dilAlternatifleri } from "@/lib/dil";
 
 /**
  * Klinik araçlar dizininin metadata'sı.
@@ -28,7 +29,12 @@ export async function generateMetadata(): Promise<Metadata> {
     // araç sayfalarının kendi başlıklarının kuyruğunu koruyor.
     title: { default: "Klinik Hesaplayıcılar", template: "%s · MEDISEA" },
     description: aciklama,
-    alternates: { canonical: "/tools" },
+    /* `languages` yalnızca dizinin İngilizcesi yayındaysa basılır (lib/dil.ts).
+       Bu layout'un alternates'i alt sayfalara MİRAS kalmaz: 257 aracın 257'si
+       kendi layout'unda (arac-metadata.cjs) alternates'i baştan tanımlıyor. */
+    alternates: dilAlternatifleri("/tools")
+      ? { canonical: "/tools", languages: dilAlternatifleri("/tools") }
+      : { canonical: "/tools" },
     openGraph: {
       type: "website",
       title: "Klinik Hesaplayıcılar — MEDISEA",
