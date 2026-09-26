@@ -100,6 +100,17 @@ jobs:
         - name: Araç-konu bağ indeksi senkron mu
           run: node scripts/arac-konu-index.cjs --kontrol
 
+        # Yeni konu kaynaksız giremez (26 Eylül 2026'dan itibaren). O gün var
+        # olan kaynaksız konular content/kaynak-muaf.json'da muaf; liste
+        # yalnızca küçülür. Bozuk kaynak kaydı (adsız, https olmayan adres)
+        # muaf konuda da düşer — sayfa onu sessizce atlıyor, yazar "ekledim"
+        # sanıyordu. --negatif tohumlu ağaçla kapının kör olmadığını sınar.
+        - name: Kaynak kapısı (yeni konu kaynaklı mı)
+          run: node scripts/kaynak-denetim.cjs
+
+        - name: Kaynak kapısı kendini sınıyor mu
+          run: node scripts/kaynak-denetim.cjs --negatif
+
         # Arayüz kaynağındaki, ÜÇ KAPIDAN DA GEÇEN kusurlar: bozuk kodlama
         # (UTF-8 metnin CP1252 okunmuş hâli), alt niteliği olmayan görsel,
         # rel verilmeden açılan yeni sekme, <form> içinde varsayılan submit

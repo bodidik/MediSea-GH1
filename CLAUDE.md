@@ -26,15 +26,16 @@ npm run build      # CI 4. kapı
 ### ⚠ CI ÜÇ ADIM DEĞİL — bu satır bir kez yanlış yazıldı ve 1,5 gün kırmızıya mal oldu
 
 Bu bölüm bir dönem *"CI sırayla `npm ci → lint → typecheck → build` çalıştırır"*
-diyordu. YANLIŞTI. `.github/workflows/ci.yml`in Web işi bugün **yirmi bir adım**
-çalıştırıyor: üçü kurulum (checkout · setup-node · npm ci), **on sekizi kapı**.
-Sıra şu ve `build` EN SONDA:
+diyordu. YANLIŞTI. `.github/workflows/ci.yml`in Web işi bugün (26 Eyl 2026)
+**yirmi üç adım** çalıştırıyor: üçü kurulum (checkout · setup-node · npm ci),
+**yirmisi kapı**. Sıra şu ve `build` EN SONDA:
 
 ```
 npm ci → lint → typecheck
   → link-denetim → soru-denetim
   → arac-metadata --kontrol → baslik-index --kontrol → ilgili-index --kontrol
   → arac-konu-index --kontrol
+  → kaynak-denetim (+ --negatif)
   → arayuz-denetim (+ --negatif)
   → ic-bilesen-denetim (+ --negatif)
   → saydamlik-denetim --kapi (+ --negatif)
@@ -61,7 +62,7 @@ Yerelde HEPSİNİ sürmenin yolu (`npm ci` BİLEREK yok — çalışan ortamı b
 
 ```bash
 cd web
-for k in link-denetim.cjs soru-denetim.cjs          "arac-metadata.cjs --kontrol" "baslik-index.cjs --kontrol"          "ilgili-index.cjs --kontrol" "arac-konu-index.cjs --kontrol"          arayuz-denetim.cjs "arayuz-denetim.cjs --negatif"          ic-bilesen-denetim.cjs "ic-bilesen-denetim.cjs --negatif"          "saydamlik-denetim.cjs --kapi" "saydamlik-denetim.cjs --negatif"          "renk-cifti-denetim.cjs --kapi" "renk-cifti-denetim.cjs --negatif"          yorum-korlugu-denetim.cjs; do
+for k in link-denetim.cjs soru-denetim.cjs          "arac-metadata.cjs --kontrol" "baslik-index.cjs --kontrol"          "ilgili-index.cjs --kontrol" "arac-konu-index.cjs --kontrol"          kaynak-denetim.cjs "kaynak-denetim.cjs --negatif"          arayuz-denetim.cjs "arayuz-denetim.cjs --negatif"          ic-bilesen-denetim.cjs "ic-bilesen-denetim.cjs --negatif"          "saydamlik-denetim.cjs --kapi" "saydamlik-denetim.cjs --negatif"          "renk-cifti-denetim.cjs --kapi" "renk-cifti-denetim.cjs --negatif"          yorum-korlugu-denetim.cjs; do
   node scripts/$k >/dev/null 2>&1 && echo "OK    $k" || echo "DUSTU $k"
 done
 npm run lint && npm run typecheck
@@ -590,7 +591,7 @@ anında çalışan sayfalarda **sıfır** çıkıyordu. Sayımlar `content/`ten 
 ```
 link-denetim · soru-denetim
 arac-metadata --kontrol · baslik-index --kontrol · ilgili-index --kontrol
-arac-konu-index --kontrol
+arac-konu-index --kontrol · kaynak-denetim (+ --negatif)
 arayuz-denetim (+ --negatif) · ic-bilesen-denetim (+ --negatif)
 saydamlik-denetim --kapi (+ --negatif) · renk-cifti-denetim --kapi (+ --negatif)
 yorum-korlugu-denetim   (meta test: 15 denetimi tohumlu agacta surer)
@@ -801,7 +802,7 @@ belgeden kopyalanmadı.
 | premium başlık · soru | **51** · **568** | 44 · 454 |
 | premium kart · vaka · inci | 1492 · 11 · **13** | 1492 · 11 · (yok) |
 | araç ↔ konu bağı | **112 çift** · 95 konu · 31 araç | (yok) |
-| CI | Web işi **21 adım** (18 kapı), son koşumlar yeşil | 21 / 18 |
+| CI | Web işi **23 adım** (20 kapı) — 26 Eyl'de `kaynak-denetim` eklendi | 21 / 18 |
 | duyurusu olan araç | `SonucDuyuru` **108 / 136**; herhangi bir canlı bölge **128 / 136** (9 Eyl) | 105 |
 
 `arac-konu-index` 476 konu dosyası sayıyor, yüzeyler 430 diyor — fark
@@ -882,5 +883,7 @@ arşivi aç.
 **Araç kuralı (yeni):** hasta ölçümü alanı BOŞ başlar, şık ekseni SEÇİLMEMİŞ başlar; sonuç, bant ve `SonucDuyuru` AYNI kapıdan geçer. Açılışta `role="alert"` basılmaz, sebep kartı ancak bir alana yazılınca çıkar.
 
 **Kaynak alanı:** 515 konunun yalnızca AKS'de dolu. Kaynak **uydurulmaz**: DOI'yi Crossref'le doğrula (`api.crossref.org/works/<doi>`).
+
+**YENİ KONU KAYNAKLA GİRER — CI kapısı (`kaynak-denetim`).** O güne kadarki kaynaksız konular `content/kaynak-muaf.json`da; liste YALNIZCA KÜÇÜLÜR (kaynak eklenince `node scripts/kaynak-denetim.cjs --guncelle`), listeye ekleyen kip bilerek yok. Bozuk kayıt (adsız, https olmayan `url`, saçma `yil`) muaf konuda da düşer — sayfa onu sessizce atlıyor. Negatif kontrol: gerçek ağaç kopyasında AKS kaynağı silinince DÜŞTÜ, kaynaksız yeni konu DÜŞTÜ, muafa kaynak eklenince "listeden çıkar" dedi ve `--guncelle` 514 → 513.
 
 **Ölçüm notu:** "4. Evrensel MI Tanımı" başlığı numara kayması DEĞİL, *Dördüncü* Evrensel Tanım (2018). Bir tur yanlış rapor edildi.
