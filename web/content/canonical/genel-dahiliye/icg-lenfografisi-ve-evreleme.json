@@ -14,7 +14,29 @@
       "NIRF"
     ],
     "parent": "lenfodem",
-    "order": 1
+    "order": 1,
+    "kaynaklar": [
+      {
+        "ad": "Yamamoto T, Narushima M, Doi K, ve ark. Characteristic Indocyanine Green Lymphography Findings in Lower Extremity Lymphedema: The Generation of a Novel Lymphedema Severity Staging System Using Dermal Backflow Patterns. Plast Reconstr Surg 2011;127(5):1979-1986",
+        "yil": 2011,
+        "url": "https://doi.org/10.1097/PRS.0b013e31820cf5df"
+      },
+      {
+        "ad": "Yamamoto T, Yamamoto N, Doi K, ve ark. Indocyanine Green-Enhanced Lymphography for Upper Extremity Lymphedema: A Novel Severity Staging System Using Dermal Backflow Patterns. Plast Reconstr Surg 2011;128(4):941-947",
+        "yil": 2011,
+        "url": "https://doi.org/10.1097/PRS.0b013e3182268cd9"
+      },
+      {
+        "ad": "Chang DW, Suami H, Skoracki R. A Prospective Analysis of 100 Consecutive Lymphovenous Bypass Cases for Treatment of Extremity Lymphedema. Plast Reconstr Surg 2013;132(5):1305-1314",
+        "yil": 2013,
+        "url": "https://doi.org/10.1097/PRS.0b013e3182a4d626"
+      },
+      {
+        "ad": "Chang DW, Masia J, Garza R 3rd, Skoracki R, Neligan PC. Lymphedema: Surgical and Medical Therapy. Plast Reconstr Surg 2016;138(3 Suppl):209S-218S",
+        "yil": 2016,
+        "url": "https://doi.org/10.1097/PRS.0000000000002683"
+      }
+    ]
   },
   "sections": [
     {
