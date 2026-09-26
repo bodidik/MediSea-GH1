@@ -80,6 +80,11 @@
         "ad": "Senger JLB, Kadle RL, Skoracki RJ. Current Concepts in the Management of Primary Lymphedema. Medicina (Kaunas) 2023;59:894",
         "yil": 2023,
         "url": "https://doi.org/10.3390/medicina59050894"
+      },
+      {
+        "ad": "Granzow JW, Soderberg JM, Kaji AH, Dauphine C. An Effective System of Surgical Treatment of Lymphedema. Ann Surg Oncol 2014;21:1189-1194",
+        "yil": 2014,
+        "url": "https://doi.org/10.1245/s10434-014-3515-y"
       }
     ]
   },
@@ -102,7 +107,7 @@
     },
     {
       "heading": "Kombine Tedavilerin Biyolojik, İmmünolojik ve Klinik Çıktıları",
-      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">1. <strong>İnflamatuar ve Profibrotik Mikroçevrenin Baskılanması:</strong> Fizyolojik mikrocerrahi ve KDT kombinasyonu, dokudaki CD4+ T hücre infiltrasyonunu, epidermal hiperkeratozu, Tip I kolajen depozisyonunu ve profibrotik <strong>TGF-β1</strong> ekspresyonunu geriletir. Ayrıca doku sıvısında anti-inflamatuar bir sitokin olan <strong>IL-10</strong> üretimini artırır ve T-hücre reseptör çeşitliliğini restore eder.</li><li class=\"bg-slate-50 p-2 rounded\">2. <strong>Rekürren Selülit / Lenfanjit Ataklarında Belirgin Azalma:</strong> İleri evre lenfödemsel dokuda bozulan lokal bağışıklık, tekrarlayan selülit ataklarına yol açar. Kombine tedaviler (özellikle SAPL + VLNT/LVA) hastaların yıllık selülit atağı sıklığını dramatik şekilde düşürür (yılda ortalama 1.9–2 atağın altı veya %80–98 enfeksiyonsuzluk oranı).</li><li class=\"bg-slate-50 p-2 rounded\">3. <strong>Volümetrik Redüksiyon ve Yaşam Kalitesi (QoL):</strong> Geniş ölçekli meta-analizler ve klinik seriler; fizyolojik ve redüktif kombine cerrahilerin fazla ekstremite hacminde <strong>%80 ila %111 oranında azalma</strong> sağladığını (ekstremitenin kontralateral tarafla tam eşitlenmesi veya hafif küçük hale gelmesi) ve LYMQOL / DASH gibi ölçeklerle ölçülen yaşam kalitesi parametrelerinde %50–66'lık belirgin iyileşme sağladığını göstermektedir.</li></ul></div>"
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">1. <strong>İnflamatuar ve Profibrotik Mikroçevrenin Baskılanması:</strong> Fizyolojik mikrocerrahi ve KDT kombinasyonu, dokudaki CD4+ T hücre infiltrasyonunu, epidermal hiperkeratozu, Tip I kolajen depozisyonunu ve profibrotik <strong>TGF-β1</strong> ekspresyonunu geriletir. Ayrıca doku sıvısında anti-inflamatuar bir sitokin olan <strong>IL-10</strong> üretimini artırır ve T-hücre reseptör çeşitliliğini restore eder.</li><li class=\"bg-slate-50 p-2 rounded\">2. <strong>Rekürren Selülit / Lenfanjit Ataklarında Belirgin Azalma:</strong> İleri evre lenfödemsel dokuda bozulan lokal bağışıklık, tekrarlayan selülit ataklarına yol açar. Kombine tedaviler (özellikle SAPL + VLNT/LVA) hastaların yıllık selülit atağı sıklığını dramatik şekilde düşürür (yılda ortalama 1.9–2 atağın altı veya %80–98 enfeksiyonsuzluk oranı).</li><li class=\"bg-slate-50 p-2 rounded\">3. <strong>Volümetrik Redüksiyon ve Yaşam Kalitesi (QoL):</strong> Geniş ölçekli meta-analizler ve klinik seriler; fizyolojik ve redüktif kombine cerrahilerin fazla ekstremite hacminde <strong>bacakta %87, kolda %111 oranında azalma</strong> sağladığını (ekstremitenin kontralateral tarafla tam eşitlenmesi veya hafif küçük hale gelmesi) ve LYMQOL / DASH gibi ölçeklerle ölçülen yaşam kalitesi parametrelerinde %50–66'lık belirgin iyileşme sağladığını göstermektedir.</li></ul></div>"
     },
     {
       "heading": "Klinik Algoritma Önerisi",
