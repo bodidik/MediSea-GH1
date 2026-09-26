@@ -1,0 +1,49 @@
+{
+  "title": "Buprenorfin Rotasyonu ve İndüksiyon Şeması",
+  "meta": {
+    "updatedAt": "22 Eyl 2026",
+    "tags": [
+      "Onkoloji",
+      "Palyatif Bakım",
+      "Kanser Ağrısı",
+      "Buprenorfin",
+      "Opioid Rotasyonu",
+      "MEDD",
+      "Mikro-indüksiyon",
+      "Presipite Yoksunluk",
+      "Transdermal"
+    ],
+    "parent": "kanser-agrisi-yonetimi",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Onkoloji ve algoloji uzmanlarına yönelik, güncel <strong>NCCN (Version 2.2025)</strong> kılavuzları, <strong>ASCO/MASCC</strong> konsensüs ilkeleri ve klinik farmakoloji verileri ışığında hazırlanan buprenorfin rotasyon ve indüksiyon şeması.</p>"
+    },
+    {
+      "heading": "Buprenorfinin Farmakolojik Profili ve Klinik Avantajları",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Reseptör Mekanizması:</strong> Buprenorfin, <strong>mü-opioid reseptörlerinde yüksek afiniteli ancak düşük intrinsik aktiviteye sahip bir parsiyel agonist</strong>; <strong>kappa ve delta reseptörlerinde ise antagonist</strong> etki gösterir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Güvenlik Profili:</strong> Solunum depresyonu üzerinde belirgin bir <strong>tavan (ceiling) etkisine</strong> sahiptir. Tam agonistlere kıyasla bilişsel fonksiyon bozukluğu, sedasyon, konstipasyon ve fiziksel bağımlılık/kötüye kullanım riski daha düşüktür.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Böbrek Yetmezliği ve Yaşlı Popülasyon:</strong> Metabolitlerinin büyük oranda fekal/safra yoluyla atılması ve inaktif olması nedeniyle, <strong>kronik böbrek yetmezliği (eGFR &lt;30 mL/dak) ve diyaliz hastalarında doz ayarlaması gerektirmeyen en güvenli opioid seçeneğidir</strong>.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kardiyak Güvenlik (QTc):</strong> Metadona kıyasla klinik olarak anlamlı QTc uzaması ve Torsades de Pointes riski belirgin şekilde düşüktür. Ancak güvenlik nedeniyle transdermal formlarda maksimum <strong>20 mcg/saat</strong>, bukkal formlarda ise maksimum <strong>900 mcg (12 saatte bir)</strong> dozu aşılmamalıdır.</li></ul></div>"
+    },
+    {
+      "heading": "Dönüşüm Öncesi Temel İlkeler ve \"Presipite Yoksunluk\" Riski",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Yüksek dozda tam mü-agonist (morfin, oksikodon, fentanil) alan opioid-toleran bir hastada doğrudan yüksek doz buprenorfine geçilmesi, buprenorfinin yüksek reseptör afinitesi nedeniyle tam agonistleri reseptörden sökerek <strong>akut presipite yoksunluk krizine (precipitated withdrawal)</strong> yol açabilir.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Bu riski önlemek için iki ana strateji uygulanır:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">1. <strong>Geleneksel Kademeli Doz Azaltımı (Tapering) ve İndüksiyon.</strong></li><li class=\"bg-slate-50 p-2 rounded\">2. <strong>Mikro-İndüksiyon (Bernese Yöntemi / Düşük Doz Başlangıcı).</strong></li></ul></div>"
+    },
+    {
+      "heading": "NCCN 2025 Günlük Oral MEDD Esaslı Buprenorfin Dönüşüm Doz Şeması",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Hastanın mevcut günlük <strong>Oral Morfin Eşdeğer Dozu (MEDD)</strong> hesaplandıktan sonra izlenecek rotasyon protokolü şu şekildedir:</p><div class=\"overflow-x-auto mb-4\"><table class=\"w-full text-[11px] border-collapse\"><thead><tr class=\"bg-slate-100\"><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Mevcut Günlük Oral MEDD Düzeyi</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Transdermal Buprenorfin Bant (Patch) Protokolü</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Bukkal Buprenorfin Film Protokolü</th></tr></thead><tbody class=\"text-slate-700\"><tr><td class=\"border border-slate-200 p-2 font-bold\"><strong>&lt; 30 mg/gün</strong> <em>(veya Opioid-Naiv)</em></td><td class=\"border border-slate-200 p-2\"><strong>5 mcg/saat</strong> (7 günde bir bant değişimi)</td><td class=\"border border-slate-200 p-2\"><strong>75 mcg</strong> günde 1 veya 2 kez</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\"><strong>30 – 80 mg/gün</strong></td><td class=\"border border-slate-200 p-2\">Mevcut opioid dozu <strong>≤30 mg MEDD/gün</strong> seviyesine kadar (yaklaşık 7 gün içinde) kademeli azaltılır. Bir sonraki doz zamanında <strong>10 mcg/saat</strong> bant başlanır.</td><td class=\"border border-slate-200 p-2\"><strong>150 mcg</strong> 12 saatte bir başlanır.</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\"><strong>81 – 160 mg/gün</strong></td><td class=\"border border-slate-200 p-2\">Transdermal form ile yeterli analjezi sağlanamayacağı için <strong>alternatif analjezikler değerlendirilmelidir</strong>.</td><td class=\"border border-slate-200 p-2\"><strong>300 mcg</strong> 12 saatte bir başlanır.</td></tr><tr><td class=\"border border-slate-200 p-2 font-bold\"><strong>&gt; 160 mg/gün</strong></td><td class=\"border border-slate-200 p-2\">Transdermal form önerilmez.</td><td class=\"border border-slate-200 p-2\"><strong>Alternatif analjezik düşünülmeli</strong> veya algoloji/ağrı uzmanı konsültasyonu istenmelidir.</td></tr></tbody></table></div>"
+    },
+    {
+      "heading": "Titrasyon ve İdame İlkeleri",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Transdermal Bant Titrasyonu:</strong></li><li class=\"p-2 pl-6 rounded\">– Başlangıç dozu <strong>5 mcg/saat</strong> (7 günlük bant).</li><li class=\"p-2 pl-6 rounded\">– Titrasyon aralığı en az <strong>72 saat (3 gün)</strong> olmalıdır. Doz artışları 5 mcg/saat'lik kademelerle yapılır.</li><li class=\"p-2 pl-6 rounded\">– Maksimum transdermal doz <strong>20 mcg/saat</strong>'tir. 20 mcg/saat transdermal buprenorfin yaklaşık <strong>25 mcg/saat transdermal fentanile</strong> eşdeğer kabul edilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Bukkal Film Titrasyonu:</strong></li><li class=\"p-2 pl-6 rounded\">– En az <strong>4 günde bir</strong>, 12 saatte bir alınan doza <strong>150 mcg eklenerek</strong> titre edilir.</li><li class=\"p-2 pl-6 rounded\">– 600, 750 ve 900 mcg'lik film formları yalnızca düşük dozlardan kademeli titre edilen hastalarda kullanılır. QTc riski nedeniyle <strong>900 mcg / 12 saat</strong> dozu aşılmamalıdır.</li></ul></div>"
+    },
+    {
+      "heading": "Alternatif Rotasyon Yöntemi: Mikro-İndüksiyon (Microdosing)",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Yüksek dozda tam agonist alan ve ağrı krizi veya yoksunluk riski nedeniyle mevcut opioidi kesilemeyen/azaltılamayan hastalarda <strong>mikro-indüksiyon</strong> yöntemi tercih edilebilir.</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Prensip:</strong> Hastanın mevcut tam agonist opioid tedavisi (morfin, fentanil vb.) <strong>hiç kesilmeden ve dozu azaltılmadan</strong>, çok düşük dozda sublingual (örn. 0.2 mg) veya bukkal buprenorfin tedaviye eklenir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>İlerleme:</strong> Buprenorfin dozu birkaç gün içinde kademeli olarak artırılırken mü-reseptörler yavaşça buprenorfin ile doyurulur. Buprenorfin terapötik doza ulaştığında mevcut tam agonist opioid güvenle kesilir.</li></ul></div>"
+    },
+    {
+      "heading": "Özel Klinik Durumlar ve Kırılma Ağrısı (BTcP) Yönetimi",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-3\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kırılma Ağrıları (BTcP):</strong> Buprenorfin idamesi alan kanser hastalarında gelişen akut kırılma ağrılarının tedavisinde <strong>kısa etkili tam agonist opioidler (oral morfin, oksikodon veya hidromorfon)</strong> güvenle kullanılabilir. Buprenorfinin yüksek afinitesi, doğru dozlanan tam agonistlerin analjezik etkisini engellemez.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Yataklı Hasta ve Perioperatif Yönetim:</strong> Cerrahiye giden veya hastaneye yatırılan buprenorfin kullanan kanser hastalarında buprenorfin tedavisinin <strong>kesilmeden aynen devam ettirilmesi</strong> önerilir. Buprenorfini sürdürülen hastaların perioperatif dönemde toplam opioid ihtiyacının ve bağımlılık nüks riskinin belirgin şekilde azaldığı gösterilmiştir.</li></ul></div>"
+    }
+  ]
+}
