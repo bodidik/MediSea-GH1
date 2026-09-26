@@ -886,4 +886,11 @@ arşivi aç.
 
 **YENİ KONU KAYNAKLA GİRER — CI kapısı (`kaynak-denetim`).** O güne kadarki kaynaksız konular `content/kaynak-muaf.json`da; liste YALNIZCA KÜÇÜLÜR (kaynak eklenince `node scripts/kaynak-denetim.cjs --guncelle`), listeye ekleyen kip bilerek yok. Bozuk kayıt (adsız, https olmayan `url`, saçma `yil`) muaf konuda da düşer — sayfa onu sessizce atlıyor. Negatif kontrol: gerçek ağaç kopyasında AKS kaynağı silinince DÜŞTÜ, kaynaksız yeni konu DÜŞTÜ, muafa kaynak eklenince "listeden çıkar" dedi ve `--guncelle` 514 → 513.
 
+**Kaynak doğrulama — 26 Eyl'de ölçülen tuzaklar (künyeye güvenme, kaydı oku):**
+- **Aday kayıt birden fazlaysa BAŞLIĞI kelime kelime karşılaştır**, sayfa alanına bakıp seçme. Brorson 1998'de iki kayıt da aynı yazarları taşıyor: `…-00021` makale (1058–1067), `…-00022` tek sayfalık ayrı kayıt (1068, başlıkta fazladan "Significantly"). Yanlışı seçilip kullanıcının doğru sayfası elendi.
+- **Not defteri (AI) künyeleri kayıyor:** yanlış yazar (IJMS 2024;25:3907 Bowman & Rockson, Brown/Mehrara değil), yanlış dergi (Lee & Kim → Front Cell Dev Biol, Front Pharmacol değil), iki makale tek künyede (Granzow 2014 · Sun JM 2023/2024). 22 künyelik bir listede 6'sı hatalıydı.
+- **Kaynak kümesindeki ad METNE sızabilir:** UpToDate yazarı "Chang EI", ICG metninde "Edward I. Chang" oldu (sınıflama David W. Chang'in). Metindeki özel ad kaynağın yazar kaydıyla çelişiyorsa düzeltme kaynağa dayanır — Takumi/Takashi Yamamoto da böyle bulundu.
+- **Crossref'te yoksa yokluk değildir:** Eplasty DOI vermiyor → PubMed `esearch`/`esummary` (`url`: `pubmed.ncbi.nlm.nih.gov/<PMID>/`). UpToDate doğrulanamaz → girmez.
+- **Kayıtta olmayanı yazma:** ISL 2020/2023'te Crossref sayfa vermiyor → künyede sayfa yok. Alt başlık `subtitle` alanında ayrı durur; çıktıda başlık kesikse tam kaydı iste.
+
 **Ölçüm notu:** "4. Evrensel MI Tanımı" başlığı numara kayması DEĞİL, *Dördüncü* Evrensel Tanım (2018). Bir tur yanlış rapor edildi.
