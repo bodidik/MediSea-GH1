@@ -296,7 +296,10 @@ export default function SiteHeader() {
         
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-1 font-black text-lg sm:text-2xl text-slate-900 tracking-tight shrink-0">
-          <span className="text-blue-600 italic">Medi</span><span className="text-slate-300">Sea</span>
+          {/* Harfler BÜYÜK YAZILIYOR, `uppercase` ile büyütülmüyor: sayfa dili
+              Türkçe olduğu için CSS büyütmesi "i"yi "İ" yapar ve marka adı
+              "MEDİSEA" görünürdü. */}
+          <span className="text-blue-600 italic">MEDI</span><span className="text-slate-300">SEA</span>
         </Link>
 
         {/* BRANŞ LİNKLERİ (lg ve üstü)
@@ -622,7 +625,7 @@ export default function SiteHeader() {
                 <span className="truncate text-sm font-bold text-blue-950">{kullaniciAdi}</span>
                 {plan === 'premium' && (
                   <span className="hidden sm:block rounded-full bg-amber-400 px-2 py-0.5 text-[9px] font-black uppercase tracking-widest text-blue-950">
-                    Premium
+                    PREMIUM
                   </span>
                 )}
               </Link>

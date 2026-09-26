@@ -60,12 +60,12 @@ export async function generateMetadata(): Promise<Metadata> {
     // default'a kuyruk EKLENMEZ: kökteki şablon zaten uyguluyor, yazarsak
     // "Kütüphane · MediSea · MediSea" çıkıyor. template ise yalnızca
     // çocuklar için — o olmazsa branş sayfası kuyruğunu kaybediyor.
-    title: { default: "Kütüphane", template: "%s · MediSea" },
+    title: { default: "Kütüphane", template: "%s · MEDISEA" },
     description: aciklama,
     alternates: { canonical: "/topics" },
     openGraph: {
       type: "website",
-      title: "Kütüphane — MediSea",
+      title: "Kütüphane — MEDISEA",
       description: aciklama,
       url: "/topics",
     },

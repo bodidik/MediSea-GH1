@@ -59,7 +59,7 @@ export default async function Home() {
             <div className="flex flex-wrap gap-2 mb-5">
               <span className="rounded-full bg-white/10 text-white/60 border border-white/15 px-2.5 py-1 text-[9px] font-black uppercase tracking-widest">Beta</span>
               <Link href="/tr/premium/ydus" className="rounded-full bg-yellow-400 text-blue-950 px-2.5 py-1.5 text-[9px] font-black uppercase tracking-widest hover:bg-yellow-300 transition-all">
-                Premium YDUS ⚓
+                PREMIUM YDUS ⚓
               </Link>
               <KurumRozeti />
             </div>
@@ -82,7 +82,7 @@ export default async function Home() {
                 href="/tr/premium/ydus"
                 className="text-center bg-yellow-400 text-blue-950 text-xs font-black uppercase tracking-widest px-6 py-2.5 rounded-full hover:bg-yellow-300 transition-all shadow-lg shadow-yellow-400/20 active:scale-95"
               >
-                ⚓ Premium YDUS
+                ⚓ PREMIUM YDUS
               </Link>
               <div className="flex gap-2">
                 <Link

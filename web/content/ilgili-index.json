@@ -4005,6 +4005,13 @@
    "baslik": "Sistemik Hastalıkların Özofagus Tutulumu"
   }
  ],
+ "genel-dahiliye/lenfodem": [
+  {
+   "brans": "genel-dahiliye",
+   "slug": "lenfadenopati-yaklasimi",
+   "baslik": "Lenfadenopati (LAP)"
+  }
+ ],
  "gogus/sarkoidoz-ana": [
   {
    "brans": "endokrinoloji",

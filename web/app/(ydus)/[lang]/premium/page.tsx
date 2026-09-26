@@ -66,7 +66,7 @@ export default function PremiumPage() {
             </div>
             <div>
               <h1 className="text-2xl font-black tracking-tighter text-white uppercase italic leading-none">
-                MediSea <span className="text-amber-400">Premium</span>
+                MEDISEA <span className="text-amber-400">PREMIUM</span>
               </h1>
               <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mt-1">Ana Komuta Merkezi</p>
             </div>

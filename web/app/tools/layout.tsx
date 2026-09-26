@@ -26,12 +26,12 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     // default'a kuyruk eklenmez (kök şablonu zaten uyguluyor); template ise
     // araç sayfalarının kendi başlıklarının kuyruğunu koruyor.
-    title: { default: "Klinik Hesaplayıcılar", template: "%s · MediSea" },
+    title: { default: "Klinik Hesaplayıcılar", template: "%s · MEDISEA" },
     description: aciklama,
     alternates: { canonical: "/tools" },
     openGraph: {
       type: "website",
-      title: "Klinik Hesaplayıcılar — MediSea",
+      title: "Klinik Hesaplayıcılar — MEDISEA",
       description: aciklama,
       url: "/tools",
     },
@@ -127,7 +127,8 @@ export default function AraclarDuzen({ children }: { children: ReactNode }) {
       <footer className="border-t-4 border-blue-900 bg-blue-950 px-4 py-10 text-blue-100">
         <div className="mx-auto max-w-3xl">
           <p className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-300">
-            MediSea
+            {/* Marka adı BÜYÜK YAZILIYOR: Türkçe yerelde CSS büyütmesi "i"yi "İ" yapıyor. */}
+            MEDISEA
           </p>
           {/* font-sans + mt-0: globals.css h2'ye serif ve 24px ust bosluk
               veriyor; bu bir arayuz basligi, okuma basligi degil. */}
