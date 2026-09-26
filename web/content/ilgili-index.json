@@ -4008,8 +4008,15 @@
  "genel-dahiliye/icg-lenfografisi-ve-evreleme": [
   {
    "brans": "genel-dahiliye",
-   "slug": "lenfadenopati-yaklasimi",
-   "baslik": "Lenfadenopati (LAP)"
+   "slug": "ileri-evre-lenfodem-kombine-tedavi",
+   "baslik": "İleri Evre Lenfödemde Kombine Tedavi Stratejileri ve Multimodal Yaklaşımlar"
+  }
+ ],
+ "genel-dahiliye/ileri-evre-lenfodem-kombine-tedavi": [
+  {
+   "brans": "genel-dahiliye",
+   "slug": "icg-lenfografisi-ve-evreleme",
+   "baslik": "ICG Lenfografisi ve Dermal Backflow Evrelemeleri"
   }
  ],
  "genel-dahiliye/kikuchi-fujimoto-sle": [
