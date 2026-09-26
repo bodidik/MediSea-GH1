@@ -31874,3 +31874,219 @@ Ağustos'ta main'e girmemiş iki dal güncel main üzerinde yeniden uygulandı v
 | | negatif kontrol: kanca kapalı, canlı `miyeloproliferatif` | **24 kalın öge** kap dışında | kanca açık: 0 |
 
 **Dalın onarıcısı olduğu gibi YETMİYORDU:** `<p><strong>a</p>` biçimini (biçim ögesi üst etiketin kapanışıyla örtük kapanıyor) görmüyordu; bugünkü tek sızıntı tam da buydu, onarıcıdan sonra da sızıyordu (1 → 1). Kapanış dalı düzeltildi; 4 sızan tohum 0'a indi, 3 temiz tohum (dengeli · blok bağlantı · tablo) değişmedi. Dalın koyu kart listesine `bg-rose-900/950` ekleyen kısmı zaten main'deydi, tekrarlanmadı.
+
+---
+
+# CLAUDE.md'den taşınanlar — üçüncü bölme (26 Eylül 2026)
+
+CLAUDE.md'ye pay açmak için kapanmış sınıfların canlı ölçüm tabloları ve
+uzun anlatıları aynen buraya taşındı; CLAUDE.md'de yerlerinde kuralı koruyan
+kısa özetler duruyor. Hiçbir satır silinmedi.
+
+## Deniz sürprizleri · yedek (study-backup) · depoya yazan etki — ölçüm tabloları ve anlatı
+
+### Deniz sürprizleri (19 Eylül 2026)
+
+Oturum açmış kullanıcıya nadir, hak edilmiş görünümler: yelkenli (25 dk
+kesintisiz okuma, 5 dk'da geçer), papağan (seri eşiği), fener (00–05'te
+10 dk okuma), okaliptüs (konu sonu), yunus (tekrar kartı eşiği), martı
+(rastgele, 3 günde en fazla bir). Sürücü `DenizSurprizleri.tsx` (kökte,
+`providers.tsx`), veri `lib/seyir.ts`, defter + aç/kapa `/calisma-alanim`.
+Soru/vaka/hızlı tekrar/araç yollarında ÇIKMAZ; hareket azaltmada çıkmaz;
+sekme gizliyken animasyon DURUR (ömür = `animationend`). Geliştirmede
+`window.__denizSurpriz("yelkenli")` deftere yazmadan gösterir.
+
+| ölçüt (canlı, oturum kapısı ölçüm süresince gevşetildi, geri alındı) | sonuç |
+|---|---|
+| 260 kart tohumu | yalnızca 250 yunusu; 100 sessizce işaretlendi |
+| 7 günlük seri | papağan geldi, ikisi de tekrar ETMEDİ |
+| anahtar kapalı · `quiz-coz` (bileşen kurulu doğrulandı) | hiçbir şey |
+| yedek: dışa aktarım · 2× birleştir · alansız eski yedek · üzerine yaz | `seyir` var · 3→3 · 3 · anahtar SİLİNDİ |
+
+Sürüm eki şema değişince artar. `study-backup.ts` hepsini tek dosyada taşır;
+Markdown dışa aktarımı **kayıplıdır** (çizim ve takvim gitmez).
+
+`Backup` tipine yeni bir depo anahtarı eklemeyi unutmak sessiz veri kaybıdır:
+`log` bir dönem tipte yoktu, `medisea:kartlar:v1:*` (flashcard "biliyorum"
+işaretleri) de öyleydi — yedek de senkron da onları düşürüyordu.
+
+Yeni anahtar eklerken **ALTI yeri birden** güncelle: `Backup` tipi ·
+`readAll` · `parseBackup` (eski yedeklerde alan YOKTUR, boş nesneye düşmeli;
+yoksa eski bir yedeği geri yüklemek içe aktarmayı tümden düşürür) ·
+`applyImport` birleştirme dalı · `applyImport` **"üzerine yaz" silme listesi**
+(`VERİ_ONEKI`) · `write`.
+
+Altıncısı en kolay kaçandır ve sessizdir: silme listesine girmeyen anahtar,
+"üzerine yaz" kipinde silinmez, üstüne yenisi yazılır — yani kip adının
+söylediği şeyi yapmaz, eski kayıtlar hayalet gibi kalır.
+
+**Birleştirme kuralı alanın anlamına göre seçilir.** Notlarda "yeni olan
+kazanır" doğru, kart işaretlerinde YANLIŞ: "biliyorum" tek yönlü bir bilgi,
+iki cihazda farklı kartlar işaretlenmişse ikisi de doğrudur. Orada birleşim
+(`new Set`) gerekiyor; "yeni kazanır" deseydik telefonda işaretlenenler
+tabletten gelen yedekle silinirdi.
+
+Doğrulaması tarayıcıda ve gerçek dosya girdisiyle yapılır: `DataTransfer`
+ile `File` kurup `input[type=file]`'a atamak React'in `onChange`'ini
+tetikliyor, yani içe aktarma yolu uçtan uca sınanabiliyor. Sınanacak dört
+durum: dışa aktarımda sayı, birleşimde çiftlenmeme, **alanı olmayan eski
+yedek**, "üzerine yaz"da eski anahtarların gerçekten silinmesi.
+
+**DÖRDÜ DE CANLIDA ÖLÇÜLDÜ — sınıf kapalı.** Altı depo anahtarı tohumlanıp
+gerçek arayüzle sınandı:
+
+| durum | sonuç |
+|---|---|
+| dışa aktarım | altı alan da var, sayılar tutuyor (1 yolda 2 vurgu, 1 not, 1 tekrar, 1 gün, 1 kart seti) |
+| eski yedek (`kartlar` alanı YOK) | ayrıştırıldı, plan gösterildi, beş alan geri yüklendi — düşmedi |
+| "üzerine yaz" | yedekte OLMAYAN üç anahtar (iki yol + bir `kartlar` seti) gerçekten SİLİNDİ |
+| aynı yedeği iki kez birleştir | vurgu 2 → 2, çiftlenme yok; günlük `kart: max(5,5)=5`, şişme yok |
+
+Dışa aktarımı okumanın yolu: indirmeyi yakalayamazsın ama
+`URL.createObjectURL`'ü sarmalayıp Blob'u alabilirsin.
+
+**İki ölçüm tuzağı — ikisine de düşüldü:**
+
+- **İçe aktarma İKİ adımlı.** Dosyayı `input`'a atmak yalnızca KURU PROVA
+  başlatıyor; depo değişmiyor. "Onayla ve birleştir" / "Onayla ve üzerine
+  yaz" düğmesine basılmadan ölçmek "hiçbir şey olmadı" sonucu verir ve
+  içe aktarma bozuk sanılır.
+- **Tohumu GERÇEK şemayla kur.** Günlüğe uydurma bir `sure` alanı konuldu;
+  birleştirme onu (doğru biçimde) attı ve `DayLog = {kart, dogru}`
+  şemasına normalleştirdi. Bir an "veri kaybı" sanıldı — kusur kodda
+  değil tohumdaydı.
+
+### Depoya yazan etki, yükleme bitmeden yazarsa veriyi SİLER
+
+Kalıp şu: bir etki depodan okuyup duruma koyuyor, ikinci bir etki durumu
+depoya yazıyor. Kurulum anında durum HENÜZ BOŞ olduğu için ikinci etki
+depodakinin üstüne boş değeri yazıyor. StrictMode etkileri iki kez
+çalıştırdığından zarar kalıcı oluyor: ilk turda boş yazılıyor, ikinci
+turda okuma o boşluğu geri okuyor.
+
+Ölçüldü — `UserProvider` bunu yapıyordu ve **premium ilerlemenin tamamı
+her sayfa açılışında siliniyordu**: depoya `{xp:12500, modül:2, rozet:1}`
+konup sayfa yenilenince ilk örnekte `xp=0` çıkıyor ve öyle kalıyordu.
+
+**`useRef` bayrağı YETMEZ — denendi, ölçüldü, depo yine sıfırlandı.**
+Bayrağı okuma etkisinin İÇİNDE `true` yaparsan, aynı commit'te hemen
+ardından çalışan kaydetme etkisi bayrağı `true` görür ama durum hâlâ
+boştur. Bayrak `useState` olmalı: o zaman kaydetme etkisi ancak yüklenen
+değerlerin uygulandığı commit'te çalışır.
+
+Bu sınıf tarandı; korumanın üç geçerli biçimi var ve hepsi kullanımda:
+
+| Yer | Koruma |
+|---|---|
+| `UserContext` | `hazir` **durumu** (ref yetmedi) |
+| `QuizEngine` | değer üzerinden: indeks 0 ve sonuç yoksa yazma |
+| `NotePanel` | `dirty` bayrağı — kullanıcı düzenlemediyse yazma |
+| `ReadingHint` | yalnızca kapatma anında yazıyor |
+| `study-sync` | `doPush` `reconciled` olmadan göndermiyor |
+| `FlashcardPlayer` | `useRef` — ölçüldü, işaretler korunuyor |
+
+FlashcardPlayer'ın ref'le sorun çıkarmaması, ref'in genel olarak güvenli
+olduğu anlamına GELMEZ; `UserContext`'te aynı şekil ölçülebilir veri kaybı
+verdi. Yeni bir yüzeyde durum bayrağını tercih et.
+
+**Bozuk kayıtta "hiç yazma" da çözüm değil:** o zaman bozuk kaydı olan
+kullanıcı bir daha hiçbir ilerlemesini kaydedemez. `JSON.parse` korumasız
+olduğu için tek bozuk karakter etkiyi düşürüyor, ardından boş durum
+kalıcılaşıyordu. Doğrusu ham dizeyi yedek anahtara taşıyıp (örn.
+`ydus_premium_user_bozuk`) normale devam etmek.
+
+Doğrulaması ölçümle yapılır ve **iki negatif kontrol şart**: (1) kaydetme
+hâlâ çalışıyor mu — kayda fazladan bir alan koy, yeniden yazılınca
+silinmeli; (2) bileşen gerçekten kuruldu mu — kurulmayan bir bileşen
+hiçbir şey yazmaz ve ölçüm yanlışlıkla "temiz" der.
+
+**CANLIDA ÖLÇÜLDÜ — sınıf kapalı.** Depoya `{xp:12500, modül:2, rozet:1}`
+konup premium panosu yeniden yüklendi:
+
+| ölçüt | sonuç |
+|---|---|
+| değer hayatta kaldı mı | **evet**, 12500 |
+| negatif kontrol 1 — kaydetme çalışıyor mu | kayda konan fazladan alan **silindi** (yani yazma oldu) |
+| negatif kontrol 2 — bileşen kuruldu mu | ekranda "Puanınız 12500" **görünüyor** |
+
+Bozuk kayıt yolu da ölçüldü: `{"xp":12500,"completedModules":[bozuk`
+tohumlandı → sayfa ayakta kaldı, ham dize `ydus_premium_user_bozuk`
+anahtarına taşındı, ana kayıt geçerli boş duruma döndü ve kaydetme devam
+etti. Belgede yazan davranışın birebir aynısı.
+
+**`medisea:review:v1`in boşalmasına ALDANMA.** `/tekrar` sayfasını
+ziyaret edince tohumlanan takvim `{}` oluyor — ilk bakışta veri kaybı
+gibi. Değil: `pruneStates()` karşılığı olan vurgusu bulunmayan yetim kartı
+temizliyor. Ayırt edici ölçüm şu: **aynı tohumla başka bir sayfaya git.**
+Ölçüldü — `/topics/endokrinoloji`de takvim 71 baytıyla duruyor, yani
+silinme yalnızca `/tekrar`da ve kasıtlı. `medisea:log:v1` ve
+`medisea:index:v1` her iki durumda da korunuyor.
+
+## Kaydetme hatası yutulmaz — kota ölçüm tablosu
+
+- **Kaydetme hatası yutulmaz.** Depo dolduğunda "Kaydedildi" yazmak
+  kaydetmemekten beterdir; arayüz uyarır ve kurtarma yolu (kopyala / PNG
+  indir) sunar. **ÖLÇÜLDÜ — sınıf kapalı** (bir dönem "doğrulanamadı" diye
+  açık bırakılmıştı):
+
+  | ölçüt | sonuç |
+  |---|---|
+  | %75 eşiği | 3.82 MB tohumlandı (oran 0.76) → uyarı çıktı, çubuk kırmızıya döndü |
+  | uyarı metni kontrastı | 4.70 · kullanım yazısı 4.76 (ikisi de eşiğin üstünde) |
+  | yazma başarısız olunca | `role="alert"` beliriyor: *"Tarayıcı depolaması dolu olduğu için bu not kaydedilemedi. Sekmeyi kapatırsan kaybolur."* + "Yazıyı kopyala" / "Yer aç" |
+  | sayfa ayakta mı, metin duruyor mu | ikisi de evet |
+
+  **Kotayı GERÇEKTEN doldurmaya çalışma — bu ortamda mümkün değil.** 15.27 MB
+  yazıldı ve `setItem` hâlâ başarılı döndü; tarayıcı panelinin kotası 5 MB
+  varsayımının çok üstünde. Hata dalını sürmenin çalışan yolu
+  `Storage.prototype.setItem`'ı yalnızca ilgili anahtar öneki için fırlatacak
+  şekilde sarmalamak, ölçüm bitince geri almak. Bu, kodun hata dalını sınar —
+  "depo gerçekten doldu" demek DEĞİLDİR ve raporda öyle yazılmalı.
+
+## Rota parametresi YÜZDE-KODLU — kapsam düzeltmesi ve teşhis
+
+### Rota parametresi YÜZDE-KODLU gelir
+
+Next 15'te dinamik segment sayfaya kodlu ulaşıyor. ASCII slug'larda fark
+etmiyor ama Türkçe karakter ya da boşluk taşıyan bir slug'da
+`content/canonical/<branş>/<slug>.json` araması ham dizeyle yapılınca dosya
+bulunamıyor ve sayfa `notFound()`'a düşüyor.
+
+Ölçüldü: beş konu (`men1-menin-lösemi-onkojen`, `ascit-sıvısı`,
+`gebelikte-immün-ITP-yonetimi`, `FGF-23 vs PTH`,
+`pankreas-kanseri-neden-ilaç-vs`) `next dev` altında 404 veriyordu. Kusur
+yalnızca ASCII dışı adda görünüyor — büyük harfli ve parantezli sekiz slug
+sorunsuz çalıştığı için uzun süre fark edilmedi.
+
+**KAPSAM DÜZELTMESİ — `34622f1` commit mesajı bu konuda yanlış.** Orada
+"beş konu hiç açılamıyordu, beşi de arama motoruna ilan ediliyordu"
+yazıyor; doğrusu şu:
+
+| Yüzey | Etkilendi mi | Neden |
+|---|---|---|
+| `next dev` konu sayfası | EVET, 404 | istek anında render, parametre kodlu |
+| Canlı konu sayfası | HAYIR | `● SSG` — derleme anında üretiliyor, orada parametre HAM geliyor (607/607 sayfa hatasız üretilmiş) |
+| Paylaşım kartı rotası | EVET | `ƒ` dinamik, istek anında çalışıyor; başlık dizini anahtarı tutmuyor ve kart slug'ı yazıyla basıyordu |
+| Site haritası | EVET | `<loc>` içine ham boşluk basıyordu, geçersiz adres |
+
+Yani düzeltme doğru ve gerekliydi ama **konu sayfaları canlıda hiç kırık
+değildi**. Hata ölçümde değil, ölçümün kapsamının genellenmesindeydi:
+`next dev` üzerinde alınan bir sonuç üretim davranışına taşındı. Statik
+üretilen bir rotada dev ile canlı FARKLI kod yolları çalışır; biri için
+alınan sonuç öteki için kanıt değildir.
+
+Ayrıca: ölçüm sırasında düzeltme çoktan dağıtılmıştı, bu yüzden "canlıda
+önce nasıldı" doğrudan gözlenemedi. Bir kusurun kapsamını canlıda
+doğrulayacaksan **dağıtımdan ÖNCE ölç**; sonrasında elinde yalnızca
+mekanizma kalır.
+
+Çare `lib/slug.ts`: `slugCoz()` her `await params`'tan sonra, `yolKodla()`
+site haritasında. `<loc>` içine ham boşluk basmak geçersiz adres üretir.
+
+**Slug'ları yeniden adlandırmak çare DEĞİL:** adlandırma içerik kararı ve
+adres değiştirmek yönlendirme borcu doğurur; kusur rotanın kendisindeydi.
+
+Teşhis yöntemi de not: sebep tahmin edilmedi, **geçici bir tanı rotası**
+(`app/tani-gecici/[a]/page.tsx`) parametreyi ham hâliyle, kod noktalarıyla
+ve `existsSync` sonucuyla bastı. Bitince rota silinir — `.next/types`
+altındaki artığı da silmek gerekiyor, yoksa `tsc` olmayan bir modülü arar.
