@@ -15,37 +15,54 @@ import KaynakListesi from "@/app/components/KaynakListesi";
  * Şema ve gerekçe: `lib/kaynaklar.ts`.
  *
  * Tamamen derlemede üretilir (`dynamicParams = false`): kullanan konular
- * dosya sisteminden taranıyor ve sunucusuz ortamda `content/canonical`e
- * istek anında güvenilmiyor. Kaynakça yalnızca dağıtımla değişir.
+ * (açık + premium) dosya sisteminden taranıyor ve sunucusuz ortamda
+ * `content/`e istek anında güvenilmiyor. Kaynakça yalnızca dağıtımla değişir.
  */
 export const dynamicParams = false;
 
+/**
+ * Yalnızca en az bir konunun BAĞLI olduğu kaynakça sayfa alır. Doğrulanmış
+ * ama konusu henüz girilmemiş bir kaynakça (ör. hiperparatiroidi) dosyada
+ * bekler; "hiçbir konu" diyen boş bir sayfa yayımlanmaz.
+ */
 export function generateStaticParams() {
-  return kaynakcaAdlari().map((ad) => ({ ad }));
+  return kaynakcaAdlari()
+    .filter((ad) => kullananKonular(ad).length > 0)
+    .map((ad) => ({ ad }));
 }
 
-type KullananKonu = { brans: string; slug: string; baslik: string };
+type KullananKonu = { yol: string; baslik: string; etiket: string };
 
-function kullananKonular(ad: string): KullananKonu[] {
-  const kok = path.join(process.cwd(), "content", "canonical");
-  const cikti: KullananKonu[] = [];
+/** Bir kök altındaki `<branş>/<dosya>.json` konularını gezer. */
+function gez(kok: string, fn: (brans: string, slug: string, veri: Record<string, unknown>) => void) {
+  if (!fs.existsSync(kok)) return;
   for (const brans of fs
     .readdirSync(kok, { withFileTypes: true })
     .filter((d) => d.isDirectory())
     .map((d) => d.name)) {
     for (const dosya of fs.readdirSync(path.join(kok, brans)).filter((f) => f.endsWith(".json"))) {
-      let veri: { title?: string; meta?: { kaynakca?: unknown; hidden?: boolean } } | null = null;
       try {
-        veri = JSON.parse(fs.readFileSync(path.join(kok, brans, dosya), "utf8"));
+        fn(brans, dosya.replace(/\.json$/, ""), JSON.parse(fs.readFileSync(path.join(kok, brans, dosya), "utf8")));
       } catch {
-        continue;
+        /* okunamayan dosya — kapılar ayrıca yakalıyor */
       }
-      // Gizli konu listelenmez — branş listeleri ve site haritasıyla aynı kural.
-      if (!veri || veri.meta?.hidden === true || veri.meta?.kaynakca !== ad) continue;
-      const slug = dosya.replace(/\.json$/, "");
-      cikti.push({ brans, slug, baslik: veri.title || slug });
     }
   }
+}
+
+function kullananKonular(ad: string): KullananKonu[] {
+  const cikti: KullananKonu[] = [];
+  gez(path.join(process.cwd(), "content", "canonical"), (brans, slug, v) => {
+    const meta = v.meta as { kaynakca?: unknown; hidden?: boolean } | undefined;
+    // Gizli konu listelenmez — branş listeleri ve site haritasıyla aynı kural.
+    if (meta?.hidden === true || meta?.kaynakca !== ad) return;
+    cikti.push({ yol: `/topics/${brans}/${slug}`, baslik: (v.title as string) || slug, etiket: getSpecialty(brans).title });
+  });
+  gez(path.join(process.cwd(), "content", "premium", "ydus", "topics"), (brans, slug, v) => {
+    const meta = v.meta as { kaynakca?: unknown; baslik?: string } | undefined;
+    if (meta?.kaynakca !== ad) return;
+    cikti.push({ yol: `/tr/premium/ydus/${brans}/${slug}`, baslik: meta.baslik || slug, etiket: `Premium · ${getSpecialty(brans).title}` });
+  });
   return cikti.sort((a, b) => a.baslik.localeCompare(b.baslik, "tr"));
 }
 
@@ -128,14 +145,14 @@ export default async function KaynakcaSayfasi({ params }: { params: Promise<{ ad
             </h2>
             <ul className="space-y-1 text-sm">
               {konular.map((k) => (
-                <li key={`${k.brans}/${k.slug}`}>
+                <li key={k.yol}>
                   <Link
-                    href={`/topics/${k.brans}/${k.slug}`}
+                    href={k.yol}
                     className="inline-flex min-h-[32px] items-center text-blue-800 underline decoration-blue-200 underline-offset-2 hover:text-blue-950"
                   >
                     {k.baslik}
                   </Link>
-                  <span className="text-slate-600"> · {getSpecialty(k.brans).title}</span>
+                  <span className="text-slate-600"> · {k.etiket}</span>
                 </li>
               ))}
             </ul>

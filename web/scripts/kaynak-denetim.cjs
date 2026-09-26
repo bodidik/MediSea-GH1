@@ -50,6 +50,7 @@ function yolAl(kok) {
     konuKok: path.join(kok, "content", "canonical"),
     muafDosya: path.join(kok, "content", "kaynak-muaf.json"),
     kaynakcaDosya: path.join(kok, "content", "kaynakca.json"),
+    premiumKok: path.join(kok, "content", "premium", "ydus", "topics"),
   };
 }
 
@@ -124,7 +125,7 @@ function kaynakcalariDenetle(dosya) {
 }
 
 function denetle(kok) {
-  const { konuKok, muafDosya, kaynakcaDosya } = yolAl(kok);
+  const { konuKok, muafDosya, kaynakcaDosya, premiumKok } = yolAl(kok);
   if (!fs.existsSync(konuKok)) throw new Error(`konu ağacı yok: ${konuKok}`);
   if (!fs.existsSync(muafDosya)) throw new Error(`muaf listesi yok: ${muafDosya}`);
   const muafVeri = JSON.parse(fs.readFileSync(muafDosya, "utf8"));
@@ -159,6 +160,20 @@ function denetle(kok) {
       sonuc.muafKaynaksiz++;
     } else {
       sonuc.yeniKaynaksiz.push(yol);
+    }
+  }
+  // Premium konular kaynak ZORUNLULUĞUNA tabi değil (kural açık konular
+  // için), ama bağladıkları kaynakça gerçekten var olmalı — premium sayfa
+  // da bozuk bağı sessizce atlar.
+  if (fs.existsSync(premiumKok)) {
+    for (const { yol, j } of konulariOku(premiumKok)) {
+      const ad = j && j.meta && j.meta.kaynakca;
+      if (ad === undefined) continue;
+      if (typeof ad === "string" && kc.gecerli.has(ad)) {
+        sonuc.kaynakcaKullanim[ad] = (sonuc.kaynakcaKullanim[ad] || 0) + 1;
+      } else {
+        sonuc.bozuk.push({ yol: `premium/${yol}`, kusurlar: [`\`meta.kaynakca\` geçerli bir kaynakçayı göstermiyor (${JSON.stringify(ad)}) — sayfada görünmez`] });
+      }
     }
   }
   for (const y of muaf) if (!agacta.has(y)) sonuc.ağactaYok.push(y);
@@ -235,6 +250,14 @@ if (argv.includes("--negatif")) {
   yaz("b/olmayan-kaynakca", konu({ kaynakca: "yok-kc" }));
   yaz("b/bos-kaynakcaya", konu({ kaynakca: "bos-kc" }));
   yaz("b/muaf-kaynakca-kazanan", konu({ kaynakca: "iyi-kc" }));
+  // Premium tohumları: bozuk bağ yakalanmalı, sağlam bağ işaretlenmemeli
+  const pYaz = (yol, meta) => {
+    const p = path.join(kok, "content", "premium", "ydus", "topics", yol + ".json");
+    fs.mkdirSync(path.dirname(p), { recursive: true });
+    fs.writeFileSync(p, JSON.stringify({ meta, icerik: [] }));
+  };
+  pYaz("p/iyi", { baslik: "P", kaynakca: "iyi-kc" });
+  pYaz("p/kirik", { baslik: "P", kaynakca: "yok-kc" });
   fs.writeFileSync(path.join(kok, "content", "kaynakca.json"), JSON.stringify({
     "iyi-kc": { baslik: "İyi", kaynaklar: [{ ...iyi, tur: "kitap" }] },
     "kirik-kc": { baslik: "Kırık", kaynaklar: [iyi, { ad: "X", tur: "dergi" }] },
@@ -247,7 +270,7 @@ if (argv.includes("--negatif")) {
   const { sonuc: s } = denetle(kok);
   const beklenen = {
     yeniKaynaksiz: ["b/adsiz", "b/bos-dizi", "b/bos-kaynakcaya", "b/http-url", "b/js-url", "b/olmayan-kaynakca", "b/yeni-kaynaksiz", "b/yil"],
-    bozuk: ["b/adsiz", "b/bos-kaynakcaya", "b/http-url", "b/js-url", "b/muaf-bozuk", "b/olmayan-kaynakca", "b/yil"],
+    bozuk: ["b/adsiz", "b/bos-kaynakcaya", "b/http-url", "b/js-url", "b/muaf-bozuk", "b/olmayan-kaynakca", "b/yil", "premium/p/kirik"],
     kaynakKazanan: ["b/muaf-kaynakca-kazanan", "b/muaf-kazanan"],
     okunamayan: ["b/bozuk-json"],
     ağactaYok: ["z/baska-dalda"],
@@ -266,14 +289,14 @@ if (argv.includes("--negatif")) {
   fs.rmSync(kok, { recursive: true, force: true });
   const hatalar = Object.keys(beklenen).filter((k) => JSON.stringify(beklenen[k]) !== JSON.stringify(gercek[k]));
   // Pozitif kontrol: temiz tohumların HİÇBİRİ hiçbir kovada olmamalı.
-  const temiz = ["a/muaf-kaynaksiz", "a/yeni-kaynakli", "a/yeni-urlsiz", "a/kaynakcali", "iyi-kc"];
+  const temiz = ["a/muaf-kaynaksiz", "a/yeni-kaynakli", "a/yeni-urlsiz", "a/kaynakcali", "iyi-kc", "premium/p/iyi"];
   const sahte = temiz.filter((y) => Object.values(gercek).some((l) => l.includes(y)));
   if (hatalar.length || sahte.length) {
     hatalar.forEach((k) => console.log(`negatif kontrol DÜŞTÜ — ${k}: beklenen ${JSON.stringify(beklenen[k])}, bulunan ${JSON.stringify(gercek[k])}`));
     if (sahte.length) console.log(`pozitif kontrol DÜŞTÜ — temiz tohum işaretlendi: ${sahte.join(", ")}`);
     process.exit(1);
   }
-  console.log(`negatif + pozitif kontrol GEÇTİ — ${s.olculen} konu + 4 kaynakça tohumu: 15 kusur yakalandı, ${temiz.length} temiz tohum işaretlenmedi.`);
+  console.log(`negatif + pozitif kontrol GEÇTİ — ${s.olculen} konu + 4 kaynakça tohumu + 2 premium tohumu: 16 kusur yakalandı, ${temiz.length} temiz tohum işaretlenmedi.`);
   process.exit(0);
 }
 

@@ -898,5 +898,522 @@
         "tur": "kitap"
       }
     ]
+  },
+  "tirzepatid": {
+    "baslik": "Tirzepatid",
+    "aciklama": "Tirzepatid sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), ürün monografı üreticinin sayfasıyla, LactMed kaydı NLM kaydıyla. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Andraos J, Muhar H, Smith SR. Beyond glycemia: Comparing tirzepatide to GLP-1 analogues. Rev Endocr Metab Disord 2023;24(6):1089-1101",
+        "yil": 2023,
+        "url": "https://doi.org/10.1007/s11154-023-09825-1",
+        "tur": "makale"
+      },
+      {
+        "ad": "Beccuti G, Bioletto F, Parasiliti-Caprino M, ve ark. Estimating Cardiovascular Benefits of Tirzepatide in Sleep Apnea and Obesity: Insight from the SURMOUNT-OSA Trials. Curr Obes Rep 2024;13(4):739-742",
+        "yil": 2024,
+        "url": "https://doi.org/10.1007/s13679-024-00592-x",
+        "tur": "makale"
+      },
+      {
+        "ad": "Caruso I, Giorgino F. Renal effects of GLP-1 receptor agonists and tirzepatide in individuals with type 2 diabetes: seeds of a promising future. Endocrine 2024;84(3):822-835",
+        "yil": 2024,
+        "url": "https://doi.org/10.1007/s12020-024-03757-9",
+        "tur": "makale"
+      },
+      {
+        "ad": "Corrao S, Pollicino C, Maggio D, ve ark. Tirzepatide against obesity and insulin-resistance: pathophysiological aspects and clinical evidence. Front Endocrinol 2024;15:1402583",
+        "yil": 2024,
+        "url": "https://doi.org/10.3389/fendo.2024.1402583",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hamza M, Papamargaritis D, Davies MJ. Tirzepatide for overweight and obesity management. Expert Opin Pharmacother 2025;26(1):31-49",
+        "yil": 2025,
+        "url": "https://doi.org/10.1080/14656566.2024.2436595",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hidalgo Ramos RA, Hong I, Ortiz M, ve ark. Effects of Tirzepatide on Skeletal Muscle Mass in Adults: A Systematic Review. Cureus 2025;17(7):e89020",
+        "yil": 2025,
+        "url": "https://doi.org/10.7759/cureus.89020",
+        "tur": "makale"
+      },
+      {
+        "ad": "Jalleh RJ, Plummer MP, Marathe CS, ve ark. Clinical Consequences of Delayed Gastric Emptying With GLP-1 Receptor Agonists and Tirzepatide. J Clin Endocrinol Metab 2024;110(1):1-15",
+        "yil": 2024,
+        "url": "https://doi.org/10.1210/clinem/dgae719",
+        "tur": "makale"
+      },
+      {
+        "ad": "Sinha R, Papamargaritis D, Sargeant JA, Davies MJ. Efficacy and Safety of Tirzepatide in Type 2 Diabetes and Obesity Management. J Obes Metab Syndr 2023;32(1):25-45",
+        "yil": 2023,
+        "url": "https://doi.org/10.7570/jomes22067",
+        "tur": "makale"
+      },
+      {
+        "ad": "Taktaz F, Fontanella RA, Scisciola L, ve ark. Bridging the gap between GLP1-receptor agonists and cardiovascular outcomes: evidence for the role of tirzepatide. Cardiovasc Diabetol 2024;23(1):242",
+        "yil": 2024,
+        "url": "https://doi.org/10.1186/s12933-024-02319-7",
+        "tur": "makale"
+      },
+      {
+        "ad": "Wen J, Syed B, Nadora D, ve ark. Tirzepatide Versus Semaglutide on Weight Loss in Type 2 Diabetes Patients: A Systematic Review and Meta-Analysis of Direct Comparative Studies. Endocrinol Diabetes Metab 2025;8(3):e70045",
+        "yil": 2025,
+        "url": "https://doi.org/10.1002/edm2.70045",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yang J, Gu Y, Chen H, ve ark. Tirzepatide's innovative applications in the management of type 2 diabetes and its future prospects in cardiovascular health. Front Pharmacol 2024;15:1453825",
+        "yil": 2024,
+        "url": "https://doi.org/10.3389/fphar.2024.1453825",
+        "tur": "makale"
+      },
+      {
+        "ad": "Eli Lilly Canada Inc. Product Monograph: ZEPBOUND (tirzepatide injection)",
+        "url": "https://pi.lilly.com/ca/zepbound-ca-pm.pdf"
+      },
+      {
+        "ad": "Tirzepatide. In: Drugs and Lactation Database (LactMed®). Bethesda (MD): National Institute of Child Health and Human Development",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK581488/"
+      }
+    ]
+  },
+  "hiperparatiroidi": {
+    "baslik": "Hiperparatiroidi",
+    "aciklama": "Hiperparatiroidi sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Alves Filho W, D'Elboux Guimarães Brescia M, Magnabosco FF, ve ark. Quality of Life After Parathyroidectomy in Chronic Kidney Disease-Related Hyperparathyroidism: A Systematic Review and Meta-Analysis. World J Surg 2026;50(1):94-104",
+        "yil": 2026,
+        "url": "https://doi.org/10.1002/wjs.70211",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hargitai L, Riss P, Scheuba C. Primary hyperparathyroidism: targeted, focused exploration with \"selective\" parathyroidectomy: Minimally invasive open vs. minimally invasive video-assisted vs. endoscopic approach. Wien Klin Wochenschr 2026;138(7-8):241-251",
+        "yil": 2026,
+        "url": "https://doi.org/10.1007/s00508-026-02703-1",
+        "tur": "makale"
+      },
+      {
+        "ad": "Jahrreiss V, Yurdakul O, Veser J, Seitz C. Effect of parathyroidectomy on stone recurrence in primary hyperparathyroidism: A systematic review. Wien Klin Wochenschr 2026;138(7-8):225-231",
+        "yil": 2026,
+        "url": "https://doi.org/10.1007/s00508-026-02733-9",
+        "tur": "makale"
+      },
+      {
+        "ad": "Juhlin CC, Mete O. Avoiding overdiagnosis of parathyroid carcinoma. Virchows Arch 2026;488(1):159-171",
+        "yil": 2026,
+        "url": "https://doi.org/10.1007/s00428-025-04274-4",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kabbash M, Anton SD, Leeuwenburgh C, Shirali AS. The impact of hyperparathyroidism on skeletal muscle pathophysiology and physical function. Endocr Connect 2026;15(2):e250801",
+        "yil": 2026,
+        "url": "https://doi.org/10.1530/EC-25-0801",
+        "tur": "makale"
+      },
+      {
+        "ad": "Koiwa F, Honda D, Akari S, Akizawa T. Upacicalcet: A Novel Intravenous Calcimimetic Agent for Patients Undergoing Hemodialysis With Secondary Hyperparathyroidism. Ther Apher Dial 2026;30(3):309-322",
+        "yil": 2026,
+        "url": "https://doi.org/10.1002/1744-9987.70126",
+        "tur": "makale"
+      },
+      {
+        "ad": "Mairinger M, Godbersen GM, Kasper S. Neuropsychiatric manifestations of primary hyperparathyroidism. Wien Klin Wochenschr 2026;138(7-8):232-240",
+        "yil": 2026,
+        "url": "https://doi.org/10.1007/s00508-025-02688-3",
+        "tur": "makale"
+      },
+      {
+        "ad": "Niederle B, Niederle MB. Hyperparathyroidism: historical milestones and modern therapeutic strategies. Wien Klin Wochenschr 2026;138(7-8):199-216",
+        "yil": 2026,
+        "url": "https://doi.org/10.1007/s00508-026-02737-5",
+        "tur": "makale"
+      },
+      {
+        "ad": "Paladino NC, Scerrino A, Raglione D, ve ark. Parathyroidectomy timing for persistent hyperparathyroidism in kidney transplant candidates and recipients: from secondary to tertiary disease: a literature review. Gland Surg 2026;15(3):74",
+        "yil": 2026,
+        "url": "https://doi.org/10.21037/gs-2025-1-556",
+        "tur": "makale"
+      },
+      {
+        "ad": "Prakash V, Kamalakkannan N, Balasubramanian SP. Bilateral internal jugular vein (BIJV) sampling during surgery for primary hyperparathyroidism (PHPT) - scoping review of evidence and search for an optimal definition for lateralisation. Langenbecks Arch Surg 2026;411(1):56",
+        "yil": 2026,
+        "url": "https://doi.org/10.1007/s00423-025-03957-5",
+        "tur": "makale"
+      },
+      {
+        "ad": "Fuleihan GE, Arnold A. Parathyroid carcinoma. UpToDate; son güncelleme 15 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/parathyroid-carcinoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Mannstadt M. Parathyroid hormone secretion and action. UpToDate; son güncelleme 25 Şub 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/parathyroid-hormone-secretion-and-action",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Mannstadt M. Disorders of the calcium-sensing receptor: Familial hypocalciuric hypercalcemia and autosomal dominant hypocalcemia. UpToDate; son güncelleme 22 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/disorders-of-the-calcium-sensing-receptor-familial-hypocalciuric-hypercalcemia-and-autosomal-dominant-hypocalcemia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Quarles LD, Kendrick J. Management of secondary hyperparathyroidism in adult patients on dialysis. UpToDate; son güncelleme 17 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-secondary-hyperparathyroidism-in-adult-patients-on-dialysis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Quarles LD, Kendrick J. Management of secondary hyperparathyroidism in adult patients with nondialysis chronic kidney disease. UpToDate; son güncelleme 22 May 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/management-of-secondary-hyperparathyroidism-in-adult-patients-with-nondialysis-chronic-kidney-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Silverberg SJ, Fuleihan GE. Primary hyperparathyroidism: Management. UpToDate; son güncelleme 3 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/primary-hyperparathyroidism-management",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Quarles LD, Kendrick J. Refractory hyperparathyroidism and indications for parathyroidectomy in adult patients on dialysis. UpToDate; son güncelleme 6 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/refractory-hyperparathyroidism-and-indications-for-parathyroidectomy-in-adult-patients-on-dialysis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Shane E, Berenson JR. Treatment of hypercalcemia. UpToDate; son güncelleme 16 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-hypercalcemia",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "feokromositoma": {
+    "baslik": "Feokromositoma",
+    "aciklama": "Feokromositoma ve paraganglioma sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler ve kitap bölümleri yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Dhanasekar K, Visakan V, Tahir F, Balasubramanian SP. Composite phaeochromocytomas—a systematic review of published literature. Langenbecks Arch Surg 2022;407(2):517-527",
+        "yil": 2022,
+        "url": "https://doi.org/10.1007/s00423-021-02129-5",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kaplan AI, Dwight T, Luxford C, ve ark. SDHA related phaeochromocytoma and paraganglioma: review and clinical management. Endocr Relat Cancer 2024;31(10):e240111",
+        "yil": 2024,
+        "url": "https://doi.org/10.1530/ERC-24-0111",
+        "tur": "makale"
+      },
+      {
+        "ad": "Wang J, Liu Q, Jiang S, ve ark. Preoperative α-blockade versus no blockade for pheochromocytoma–paraganglioma patients undergoing surgery: a systematic review and updated meta-analysis. Int J Surg 2023;109(5):1470-1480",
+        "yil": 2023,
+        "url": "https://doi.org/10.1097/JS9.0000000000000390",
+        "tur": "makale"
+      },
+      {
+        "ad": "Akula M, Ong RKS, Shifrin AL, Young WF. Acute Adrenal Hypertensive Emergencies: Pheochromocytoma, Cushing's, Hyperaldosteronism. In: Endocrine Emergencies. Elsevier; 2022. p. 127-142",
+        "yil": 2022,
+        "url": "https://doi.org/10.1016/B978-0-323-76097-3.00038-7",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Goemann IM, Maia AL. Pheochromocytomas and hypertension. In: Endocrine Hypertension. Elsevier; 2023. p. 149-164",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/B978-0-323-96120-2.00003-0",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Winter WE, Harris NS. Laboratory evaluation of endocrine hypertension. In: Handbook of Diagnostic Endocrinology. Elsevier; 2021. p. 391-447",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818277-2.00011-X",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Melmed S, Koenig R, Rosen CJ, Auchus RJ, Goldfine AB. Williams Textbook of Endocrinology. 14. baskı. Elsevier; 2019. Bölüm: Endocrine Hypertension",
+        "yil": 2019,
+        "url": "https://shop.elsevier.com/books/williams-textbook-of-endocrinology/melmed/978-0-323-55596-8",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Kellerman RD, Heidelbaugh JJ, ed. Conn's Current Therapy 2024. Elsevier; 2023. Bölüm: Pheochromocytoma",
+        "yil": 2023,
+        "url": "https://shop.elsevier.com/books/conns-current-therapy-2024/kellerman/978-0-443-12151-7",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Ferri FF. Ferri's Clinical Advisor 2025. Elsevier; 2024",
+        "yil": 2024,
+        "url": "https://shop.elsevier.com/books/ferris-clinical-advisor-2025/ferri/978-0-443-11724-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Young WF. Clinical presentation and diagnosis of pheochromocytoma. UpToDate; son güncelleme 6 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-presentation-and-diagnosis-of-pheochromocytoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Young WF. Pheochromocytoma and paraganglioma in genetic disorders. UpToDate; son güncelleme 19 Ara 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/pheochromocytoma-and-paraganglioma-in-genetic-disorders",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Young WF, Kebebew E. Treatment of pheochromocytoma in adults. UpToDate; son güncelleme 15 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-pheochromocytoma-in-adults",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "gebelik-tiroid": {
+    "baslik": "Gebelikte tiroid",
+    "aciklama": "Gebelikte tiroid hastalıkları sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler ve kitap bölümleri yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla ya da kütüphane kaydıyla. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Türkiye Endokrinoloji ve Metabolizma Derneği. Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+        "yil": 2025,
+        "url": "https://file.temd.org.tr/Uploads/publications/guides/documents/tiroid2025_11042025.pdf",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lee SY, Pearce EN. Testing, Monitoring, and Treatment of Thyroid Dysfunction in Pregnancy. J Clin Endocrinol Metab 2021;106(3):883-892",
+        "yil": 2021,
+        "url": "https://doi.org/10.1210/clinem/dgaa945",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ma Y, Li H, Liu J, Lin X, Liu H. Impending thyroid storm in a pregnant woman with undiagnosed hyperthyroidism: A case report and literature review. Medicine (Baltimore) 2018;97(3):e9606",
+        "yil": 2018,
+        "url": "https://doi.org/10.1097/MD.0000000000009606",
+        "tur": "makale"
+      },
+      {
+        "ad": "Clark SM, Monsivais LA. Antenatal thyroid disease and pharmacotherapy in pregnancy. In: Clinical Pharmacology During Pregnancy. Elsevier; 2022. p. 339-355",
+        "yil": 2022,
+        "url": "https://doi.org/10.1016/B978-0-12-818902-3.00024-5",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Jebasingh F, Thomas N. Endocrine hypertension in pregnancy. In: Endocrine Hypertension. Elsevier; 2023. p. 293-307",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/B978-0-323-96120-2.00004-2",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Nguyen CT, Mestman JH. Graves' Hyperthyroidism in Pregnancy. In: Endocrine Emergencies. Elsevier; 2022. p. 285-298",
+        "yil": 2022,
+        "url": "https://doi.org/10.1016/B978-0-323-76097-3.00023-5",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Edlow AG, Norwitz ER. Endocrine Diseases of Pregnancy. In: Yen and Jaffe's Reproductive Endocrinology. Elsevier; 2019. p. 662-708.e17",
+        "yil": 2019,
+        "url": "https://doi.org/10.1016/B978-0-323-47912-7.00027-5",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Kovacs CS, Deal CL, ed. Maternal-Fetal and Neonatal Endocrinology. 2. baskı. Elsevier; 2025. Bölümler: Thyroid Physiology During Pregnancy, Postpartum, and Lactation; Thyroid Disorders During Pregnancy, Postpartum, and Lactation; Thyroid Cancer During Pregnancy and Lactation",
+        "yil": 2025,
+        "url": "https://shop.elsevier.com/books/maternal-fetal-and-neonatal-endocrinology/kovacs/978-0-443-23940-3",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Rifai N, ed. Tietz Textbook of Laboratory Medicine. 7. baskı. Elsevier; 2022. Bölüm: Thyroid Disorders",
+        "yil": 2022,
+        "url": "https://shop.elsevier.com/books/tietz-textbook-of-laboratory-medicine/rifai/978-0-323-77572-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "McDermott MT, ed. Endocrine Secrets. 8. baskı. Elsevier; 2025. Bölüm: Hyperthyroidism",
+        "yil": 2025,
+        "url": "https://shop.elsevier.com/books/endocrine-secrets/mcdermott/978-0-443-26194-7",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Melmed S, Koenig R, Rosen CJ, Auchus RJ, Goldfine AB. Williams Textbook of Endocrinology. 14. baskı. Elsevier; 2019. Bölüm: Hyperthyroid Disorders",
+        "yil": 2019,
+        "url": "https://shop.elsevier.com/books/williams-textbook-of-endocrinology/melmed/978-0-323-55596-8",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Gardner DG, Shoback D, ed. Greenspan's Basic and Clinical Endocrinology. 10. baskı. McGraw-Hill Education; 2017",
+        "yil": 2017,
+        "url": "https://openlibrary.org/isbn/9781259589287",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Harrison's Principles of Internal Medicine. 22. baskı. McGraw Hill",
+        "url": "https://openlibrary.org/isbn/9781265979317",
+        "tur": "kitap"
+      }
+    ]
+  },
+  "men1": {
+    "baslik": "MEN tip 1",
+    "aciklama": "MEN tip 1 sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Papalou O, Korbonits M. New directions in MEN1 management: navigating the new clinical practice guidelines. Eur J Endocrinol 2025;193(6):R71-R82",
+        "yil": 2025,
+        "url": "https://doi.org/10.1093/ejendo/lvaf247",
+        "tur": "makale"
+      },
+      {
+        "ad": "English KA, Pieterman CRC, Marini F, ve ark. Treatments for MEN1-associated endocrine tumours: three systematic reviews and a meta-analysis. Lancet Diabetes Endocrinol 2025;13(8):685-698",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/S2213-8587(25)00118-4",
+        "tur": "makale"
+      },
+      {
+        "ad": "Halperin R, Tirosh A. Progress report on multiple endocrine neoplasia type 1. Fam Cancer 2025;24(1):15",
+        "yil": 2025,
+        "url": "https://doi.org/10.1007/s10689-025-00440-4",
+        "tur": "makale"
+      },
+      {
+        "ad": "Manoharan J, Albers MB, Rinke A, ve ark. Multiple Endocrine Neoplasia Type 1. Dtsch Arztebl Int 2024;121(16):527-533",
+        "yil": 2024,
+        "url": "https://doi.org/10.3238/arztebl.m2024.0094",
+        "tur": "makale"
+      },
+      {
+        "ad": "Carli A, Boffa E, Bonatti M, ve ark. Multimodal Imaging Approach to MEN-1 Syndrome-Associated Tumors. Diagnostics (Basel) 2025;15(9):1164",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/diagnostics15091164",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chin SO, Chik C, Tateno T. Pituitary Neuroendocrine Tumors in Multiple Endocrine Neoplasia. Endocrinol Metab (Seoul) 2025;40(1):39-46",
+        "yil": 2025,
+        "url": "https://doi.org/10.3803/EnM.2024.2074",
+        "tur": "makale"
+      },
+      {
+        "ad": "Gheorghe AM, Stanciu M, Lebada IC, ve ark. An Updated Perspective of the Clinical Features and Parathyroidectomy Impact in Primary Hyperparathyroidism Amid Multiple Endocrine Neoplasia Type 1 (MEN1): Focus on Bone Health. J Clin Med 2025;14(9):3113",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/jcm14093113",
+        "tur": "makale"
+      },
+      {
+        "ad": "Schubert L, Gaillard M, Melot C, ve ark. Management of primary hyperparathyroidism in MEN1: From initial subtotal surgery to complex treatment of the remaining gland. Ann Endocrinol (Paris) 2025;86(4):101721",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.ando.2025.101721",
+        "tur": "makale"
+      },
+      {
+        "ad": "Toraih EA, AbdAlnaeem MA, Bobba T, ve ark. The role of thymectomy during parathyroidectomy in multiple endocrine neoplasia type 1-associated hyperparathyroidism: a systematic review and meta-analysis. World J Surg Oncol 2025;23(1):272",
+        "yil": 2025,
+        "url": "https://doi.org/10.1186/s12957-025-03773-7",
+        "tur": "makale"
+      },
+      {
+        "ad": "Mahdavizadeh V, Emadzadeh M, Mazloum Khorasani Z. Bone Mineral Density Changes in Multiple Endocrine Neoplasia Type 1: A Systematic Review and Meta-Analysis of Prevalence and Parathyroidectomy Outcomes. Arch Bone Jt Surg 2025;13(3):125-133",
+        "yil": 2025,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40151585/",
+        "tur": "makale"
+      },
+      {
+        "ad": "Grosu I, Kuhn E, Jublanc C, Dormoy A. ACTH-dependent Cushing's syndrome in MEN1: When multiple tumors complicate the diagnosis. Ann Endocrinol (Paris) 2026;87(4):102584",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.ando.2026.102584",
+        "tur": "makale"
+      },
+      {
+        "ad": "Doi K, Kaneko S, Asami Y, ve ark. Ventricular fibrillation triggered by recurrent hypoglycemia in a patient with insulinoma associated with MEN1: case report and review of literature. Endocr J 2026;73(5):655-663",
+        "yil": 2026,
+        "url": "https://doi.org/10.1507/endocrj.EJ25-0494",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yamazaki M, Kojima T, Shibata Y, ve ark. Novel germline likely pathogenic frameshift variant of the MEN1 gene contributes to multiple endocrine neoplasia type 1: a case report with review of literature. Endocr J 2025;72(11):1255-1262",
+        "yil": 2025,
+        "url": "https://doi.org/10.1507/endocrj.EJ25-0110",
+        "tur": "makale"
+      },
+      {
+        "ad": "Marinari M, Marini F, Giusti F, Brandi ML. Role of Nutrition in the Management of Patients with Multiple Endocrine Neoplasia Type 1. Nutrients 2024;16(11):1576",
+        "yil": 2024,
+        "url": "https://doi.org/10.3390/nu16111576",
+        "tur": "makale"
+      },
+      {
+        "ad": "Muthukuda DT, Jayawickreme KP, Wijeweera G, Grossman A. Living with Legacy: Outcomes and Future Implications for Offspring of Patients with MEN1. J ASEAN Fed Endocr Soc 2026;41(1):154-161",
+        "yil": 2026,
+        "url": "https://doi.org/10.15605/jafes.041.01.5125",
+        "tur": "makale"
+      },
+      {
+        "ad": "Vignon S, Journé A, Lepage C, ve ark. Health-related quality of life of Multiple Endocrine Neoplasia Type 1 patients: A mixed methods systematic review. Eur J Cancer 2025;227:115671",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.ejca.2025.115671",
+        "tur": "makale"
+      },
+      {
+        "ad": "Navabi K, Doraghi K. A 59-Year-Old Man with Fatigue and Abdominal Pain. NEJM Evid 2025;4(3):EVIDmr2400067",
+        "yil": 2025,
+        "url": "https://doi.org/10.1056/EVIDmr2400067",
+        "tur": "makale"
+      },
+      {
+        "ad": "Arnold A, Newey P. Gene test interpretation: MEN1 (multiple endocrine neoplasia type 1 gene). UpToDate; son güncelleme 28 Nis 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/gene-test-interpretation-men1-multiple-endocrine-neoplasia-type-1-gene",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Arnold A, Newey P. Multiple endocrine neoplasia type 1: Genetics. UpToDate; son güncelleme 8 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/multiple-endocrine-neoplasia-type-1-genetics",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Bergsland E, Ge PS. Clinical presentation, diagnosis, and staging of gastrinoma (Zollinger-Ellison syndrome). UpToDate; son güncelleme 8 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-presentation-diagnosis-and-staging-of-gastrinoma-zollinger-ellison-syndrome",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Bergsland E, Ge PS. Management and prognosis of gastrinoma (Zollinger-Ellison syndrome). UpToDate; son güncelleme 24 Nis 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/management-and-prognosis-of-gastrinoma-zollinger-ellison-syndrome",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Yen TW, Wang TS. Parathyroid surgery for inherited syndromes. UpToDate; son güncelleme 8 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/parathyroid-surgery-for-inherited-syndromes",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Arnold A, Newey P. Multiple endocrine neoplasia type 1: Clinical manifestations and diagnosis. UpToDate; son güncelleme 28 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/multiple-endocrine-neoplasia-type-1-clinical-manifestations-and-diagnosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Arnold A, Newey P. Multiple endocrine neoplasia type 1: Management. UpToDate; son güncelleme 28 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/multiple-endocrine-neoplasia-type-1-management",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Strosberg JR, Berry MF, Tazelaar HD, ve ark. Thymic neuroendocrine neoplasms. UpToDate; son güncelleme 16 Oca 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/thymic-neuroendocrine-neoplasms",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Vella A. Insulinoma. UpToDate; son güncelleme 27 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/insulinoma",
+        "tur": "uptodate"
+      }
+    ]
   }
 }

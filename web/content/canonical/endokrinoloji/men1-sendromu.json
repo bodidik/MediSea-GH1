@@ -1,6 +1,7 @@
 {
   "title": "Multiple Endokrin Neoplazi Tip 1 (MEN1)",
   "meta": {
+    "kaynakca": "men1",
     "updatedAt": "10 Ağu 2026",
     "tags": ["Endokrinoloji", "MEN1", "Paratiroid", "GEP-NET", "Hipofiz", "Genetik", "NET"],
     "parent": null,

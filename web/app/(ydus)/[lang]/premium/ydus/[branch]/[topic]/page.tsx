@@ -13,6 +13,8 @@ import { KLINIK_SORUMLULUK } from '@/app/lib/sorumluluk';
 import { rotaMeta } from "@/lib/site";
 import KaydirDurumu from '@/app/components/KaydirDurumu';
 import BasaDon from '@/app/components/BasaDon';
+import KaynakcaBlogu from '@/app/components/KaynakcaBlogu';
+import { kaynakcaAl } from '@/lib/kaynaklar';
 
 /**
  * KULLANICIYA ÖZEL — her istekte yeniden üretilir.
@@ -87,6 +89,8 @@ interface KonuVerisi {
     altbaslik?: string;
     rozetler?: string[];
     guncelleme?: string;
+    /** Ortak kaynakça adı — `content/kaynakca.json` (bkz. `lib/kaynaklar.ts`). */
+    kaynakca?: string;
   };
   moduller?: {
     flashcard?: boolean;
@@ -187,6 +191,7 @@ export default async function KonuSayfasi({
    * da kapsarsa bu kurgu kendiliğinden doğru kalır.
    */
   const bloklar = kisaltmaAcBloklar(veri.icerik, new Set<string>());
+  const kaynakca = kaynakcaAl(veri.meta);
   const icindekiler = bolumBasliklari(bloklar);
   const govdeUzunlugu = JSON.stringify(bloklar)
     .replace(/<[^>]*>/g, " ")
@@ -395,6 +400,19 @@ export default async function KonuSayfasi({
               */}
               <IcerikRenderer bloklar={bloklar} />
             </div>
+
+            {/* KAYNAKLAR — açık konu sayfasıyla AYNI ortak kaynakça ve AYNI
+                bileşen (`meta.kaynakca`, bkz. `lib/kaynaklar.ts`).
+                `[data-readable]` DIŞINDA: okuma konteynerine eklenen öge
+                kayıtlı vurguların ofsetini kaydırır. */}
+            {kaynakca && (
+              <section
+                aria-label="Kaynaklar"
+                className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-3"
+              >
+                <KaynakcaBlogu kaynakca={kaynakca} />
+              </section>
+            )}
 
             {/* AI ASİSTAN — konuya soru sor */}
             <SoruSor branch={branch} topic={topic} baslik={veri.meta.baslik} />
