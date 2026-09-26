@@ -1451,5 +1451,233 @@
         "tur": "kitap"
       }
     ]
+  },
+  "sglt2": {
+    "baslik": "SGLT2 inhibitörleri",
+    "aciklama": "SGLT2 inhibitörleri sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Abdalla M, Khamees MES, Gehani AL, ve ark. Effects of Sodium Glucose Cotransporter 2 (SGLT2) Inhibitors on Lipid Profiles in Type 2 Diabetes: A Systematic Review. Cureus 2026;18(1):e102618",
+        "yil": 2026,
+        "url": "https://doi.org/10.7759/cureus.102618",
+        "tur": "makale"
+      },
+      {
+        "ad": "Alqurain AA, Salem M, Algarzai BA, ve ark. Comparative Effectiveness of Sodium-Glucose Cotransporter-2 (SGLT2) Inhibitors Versus Glucagon-Like Peptide-1 (GLP-1) Agonists on Cardiovascular and Renal Outcomes in Type 2 Diabetes: A Systematic Review and Network Meta-Analysis. Cureus 2026;18(1):e100927",
+        "yil": 2026,
+        "url": "https://doi.org/10.7759/cureus.100927",
+        "tur": "makale"
+      },
+      {
+        "ad": "Colombijn JMT, de Leijer JF, Visseren FLJ, ve ark. Effectiveness and safety of combining SGLT2 inhibitors and GLP-1 receptor agonists in individuals with type 2 diabetes: a systematic review and meta-analysis of cohort studies. Diabetologia 2026;69(1):36-49",
+        "yil": 2026,
+        "url": "https://doi.org/10.1007/s00125-025-06565-6",
+        "tur": "makale"
+      },
+      {
+        "ad": "Duni A, Tsavourelou P, Triantafyllidou M, ve ark. Benefits of SGLT2 inhibitors in patients with diabetes and advanced chronic kidney disease – where have we gone so far? Front Clin Diabetes Healthc 2026;6:1759340",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fcdhc.2025.1759340",
+        "tur": "makale"
+      },
+      {
+        "ad": "Falsetti L, Tarquinio N, Mucci L, ve ark. Beyond safety: adverse events and unanticipated advantages of SGLT2 inhibitors. Eur J Clin Pharmacol 2026;82(4):93",
+        "yil": 2026,
+        "url": "https://doi.org/10.1007/s00228-026-04023-9",
+        "tur": "makale"
+      },
+      {
+        "ad": "Gao Y, Gao Y, Ji D, Hu Z. Repurposing SGLT2 Inhibitors for Cirrhotic Ascites: From Mechanistic Research to Clinical Exploration. J Clin Transl Hepatol 2026;14(2):232-239",
+        "yil": 2026,
+        "url": "https://doi.org/10.14218/jcth.2025.00465",
+        "tur": "makale"
+      },
+      {
+        "ad": "Groothof D, Shehab NBN, Post A, ve ark. SGLT2 Inhibitors, Muscle Loss, and Creatinine-Based Estimated GFR: An Integrative Conceptual Review of Renoprotection. Kidney Med 2026;8(4):101297",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.xkme.2026.101297",
+        "tur": "makale"
+      },
+      {
+        "ad": "He S, Wu Z, Li S. Ferroptosis regulation by SGLT2 inhibitors: mechanisms and clinical benefits in diabetic kidney disease. Front Pharmacol 2026;17:1808167",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fphar.2026.1808167",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hu Q, Jin H, Li X, Hu L. Application of SGLT2 inhibitors in kidney diseases: a bibliometric analysis. Front Med (Lausanne) 2026;13:1768225",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fmed.2026.1768225",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hung CM, Hsu CW, Zeng BS, ve ark. Gastric Neoplasm Risk with DPP-4 Inhibitors, GLP-1 Receptor Agonists, and SGLT2 Inhibitors: Network Meta-Analysis of Randomized Trials. Int J Mol Sci 2026;27(6):2619",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/ijms27062619",
+        "tur": "makale"
+      },
+      {
+        "ad": "Javier RM, Faizin I, Andiani, ve ark. Renal and cardiovascular effects of SGLT2 inhibitors among hypertensive patients with chronic kidney disease: A systematic review and meta-analysis. Int J Cardiol Cardiovasc Risk Prev 2026;29:200585",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.ijcrp.2026.200585",
+        "tur": "makale"
+      },
+      {
+        "ad": "Jiron Vindas J, Lopez Mendoza MJ, Valle Mena MJ, ve ark. Use of Sodium-Glucose Cotransporter 2 (SGLT2) Inhibitors in Heart Failure Without Diabetes. Cureus 2026;18(2):e104397",
+        "yil": 2026,
+        "url": "https://doi.org/10.7759/cureus.104397",
+        "tur": "makale"
+      },
+      {
+        "ad": "Md Roslan AH, Tengku Muhazan Shah TMH, Mohd Saffian S, ve ark. Neuroprotective Potential of SGLT2 Inhibitors in Animal Models of Alzheimer’s Disease and Type 2 Diabetes Mellitus: A Systematic Review. Pharmaceuticals 2026;19(1):166",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/ph19010166",
+        "tur": "makale"
+      },
+      {
+        "ad": "Movila DE, Motofelea AC, Dragan SR, ve ark. Impact of SGLT2 Inhibitors on Mortality Across Different Populations: A Systematic Review and Meta-Analysis. Int J Mol Sci 2026;27(7):3168",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/ijms27073168",
+        "tur": "makale"
+      },
+      {
+        "ad": "Patel D, Patel T. Sodium-Glucose Cotransporter 2 (SGLT2) Inhibitors in Non-diabetic Conditions Beyond Heart Failure and Chronic Kidney Disease: Emerging Evidence, Mechanisms, and Practical Considerations. Cureus 2026;18(3):e104727",
+        "yil": 2026,
+        "url": "https://doi.org/10.7759/cureus.104727",
+        "tur": "makale"
+      },
+      {
+        "ad": "Stanimirova D, Petrova G, Mitkova Z. Effectiveness of SGLT2 Inhibitors in Type 2 Diabetes: A Systematic Integrative Review of Reviews and Comparative Effectiveness Studies (2020–2025). Pharmacy 2026;14(2):47",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/pharmacy14020047",
+        "tur": "makale"
+      },
+      {
+        "ad": "Semirani-Nezhad D, Roozbehi K, Moghadam AS, ve ark. Dose-dependent effects of SGLT2 inhibitors on circadian blood pressure in hypertensive patients with diabetes: A systematic review and Bayesian network meta-analysis. Int J Cardiol Cardiovasc Risk Prev 2026;29:200569",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.ijcrp.2025.200569",
+        "tur": "makale"
+      },
+      {
+        "ad": "Wang M, Zuo Z, Wu T, Zhou Z. Differential cardiovascular benefits of SGLT2 inhibitors, sacubitril/valsartan, omecamtiv mecarbil, and vericiguat across heart failure phenotypes: a systematic review and meta-analysis. Front Pharmacol 2026;17:1644757",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fphar.2026.1644757",
+        "tur": "makale"
+      },
+      {
+        "ad": "Xue X, Yu Z, Dai M, Zhang T. Uniform efficacy of SGLT2 inhibitors across the ejection fraction spectrum and in high-risk patients with HFpEF: a prespecified pooled analysis. Front Cardiovasc Med 2026;13:1790378",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fcvm.2026.1790378",
+        "tur": "makale"
+      },
+      {
+        "ad": "Aguado B, Ruffenach G, Lacoste-Palasset T, ve ark. Use of SGLT2 (Sodium-Glucose Cotransporter 2) Inhibitors in Pulmonary Hypertension. Circ Heart Fail 2026;19(2)",
+        "yil": 2026,
+        "url": "https://doi.org/10.1161/CIRCHEARTFAILURE.125.013481",
+        "tur": "makale"
+      },
+      {
+        "ad": "Buonpane A, Ciardetti M, Trimarchi G, ve ark. SGLT2 Inhibitors After Myocardial Infarction: Evidence, Mechanisms and Gaps in Knowledge. J Clin Med 2026;15(6):2260",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/jcm15062260",
+        "tur": "makale"
+      },
+      {
+        "ad": "Deng Y, Ma Y, Li H, Zhu L. The Impact of Early In-Hospital Use of SGLT2 Inhibitors on Outcomes in Patients With Acute Heart Failure: An Updated Systematic Review and Meta-Analysis. Rev Cardiovasc Med 2026;27(3):45590",
+        "yil": 2026,
+        "url": "https://doi.org/10.31083/RCM45590",
+        "tur": "makale"
+      },
+      {
+        "ad": "Heyman SN, Rosen S, Brezis M, Abassi Z. Amino acid infusion and SGLT2 inhibitors for kidney protection: Plausible adverse impact of tubular transport load on renal tissue oxygenation. Biomed Pharmacother 2026;194:118933",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.biopha.2025.118933",
+        "tur": "makale"
+      },
+      {
+        "ad": "Gomez DP, Hababag WF, Ong-Ramos CC. Comparative Efficacy of SGLT2 Inhibitors in MASLD: Bayesian Network Meta-Analysis of CAP-LSM Outcomes and Time Effects. JGH Open 2026;10(3):e70364",
+        "yil": 2026,
+        "url": "https://doi.org/10.1002/jgh3.70364",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kamran N, Mohammad M. SGLT2 Inhibitors as a Novel Therapeutic Strategy in SIADH-Induced Hyponatraemia: Emerging Evidence and Clinical Implications. J Clin Med 2026;15(6):2119",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/jcm15062119",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kochanowska A, Mamcarz A, Wełnicki M. Evidence on SGLT2 Inhibitors' Efficacy in Older and Frail Patients. J Clin Med 2026;15(6):2219",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/jcm15062219",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kumari K, Bai A, Geeta F, ve ark. Risk of Dementia in Patients With Type 2 Diabetes Using SGLT2 Inhibitors Versus DPP-4 Inhibitors: A Systematic Review and Meta-Analysis. Endocrinol Diabetes Metab 2026;9(2):e70174",
+        "yil": 2026,
+        "url": "https://doi.org/10.1002/edm2.70174",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zhong Z, Zhao S, He W, ve ark. SGLT2 inhibitors versus DPP-4 inhibitors and dementia risk in type 2 diabetes: A meta-analysis of cohort studies. Arch Gerontol Geriatr 2026;141:106065",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.archger.2025.106065",
+        "tur": "makale"
+      },
+      {
+        "ad": "Minutolo R, Ruotolo C, Conte G, Borrelli S. SGLT2 inhibitors in hemodialysis or peritoneal dialysis patients: rationale and state-of-the art. Clin Kidney J 2026;19(1):sfaf350",
+        "yil": 2026,
+        "url": "https://doi.org/10.1093/ckj/sfaf350",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cheng H, Jing Y, Xu C, ve ark. The Potential Role of SGLT2 Inhibitors in the Treatment of Depression: Mechanisms and Clinical Prospects. Drug Des Devel Ther 2026;20:567851",
+        "yil": 2026,
+        "url": "https://doi.org/10.2147/DDDT.S567851",
+        "tur": "makale"
+      },
+      {
+        "ad": "Szklarz M, Wołos-Kłosowicz K, Szulc J, ve ark. Another pleiotropic effect of SGLT2 inhibitors: Is it a new frontier in thyroid function regulation? Thyroid Res 2026;19(1):2",
+        "yil": 2026,
+        "url": "https://doi.org/10.1186/s13044-025-00282-3",
+        "tur": "makale"
+      },
+      {
+        "ad": "DeSantis A. Sodium-glucose cotransporter 2 inhibitors for the treatment of hyperglycemia in type 2 diabetes mellitus. UpToDate; son güncelleme 27 Ağu 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/sodium-glucose-cotransporter-2-inhibitors-for-the-treatment-of-hyperglycemia-in-type-2-diabetes-mellitus",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Khan NA, Ghali WA, Cagliero E. Perioperative glycemic management in adults with diabetes mellitus. UpToDate; son güncelleme 19 Ara 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/perioperative-glycemic-management-in-adults-with-diabetes-mellitus",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Meyer TE. Primary pharmacologic therapy for heart failure with reduced ejection fraction. UpToDate; son güncelleme 9 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/primary-pharmacologic-therapy-for-heart-failure-with-reduced-ejection-fraction",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Perkovic V, Badve SV, Tuttle KR. Treatment of diabetic kidney disease. UpToDate; son güncelleme 23 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-diabetic-kidney-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Wexler DJ. Management of persistent hyperglycemia in type 2 diabetes mellitus. UpToDate; son güncelleme 27 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-persistent-hyperglycemia-in-type-2-diabetes-mellitus",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Givertz MM, Colucci WS. Pharmacologic therapy of heart failure with reduced ejection fraction: Mechanisms of action. UpToDate; son güncelleme 26 Kas 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/pharmacologic-therapy-of-heart-failure-with-reduced-ejection-fraction-mechanisms-of-action",
+        "tur": "uptodate"
+      }
+    ]
   }
 }

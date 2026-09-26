@@ -1,6 +1,7 @@
 {
   "title": "SGLT2 İnhibitörleri: Hasta Günler Kuralı (Sick Day Rules)",
   "meta": {
+    "kaynakca": "sglt2",
     "updatedAt": "03 May 2026",
     "tags": ["Endokrinoloji", "Farmakoloji", "SGLT2 İnhibitörleri", "EDKA", "Sick Day Rules", "Klinik Yönetim", "YDUS"],
     "parent": "sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler",
