@@ -2,14 +2,14 @@
   "meta": {
     "id": "heparin-induklu-trombositopeni",
     "branch": "hematoloji",
-    "baslik": "Heparin İndüklü Trombositopeni (HİT)",
+    "baslik": "Heparin İlişkili Trombositopeni (HİT)",
     "altbaslik": "İleri düzey immünopatofizyoloji, otoimmün HİT ve VITT spektrumu, OD–SRA korelasyonu, venöz uzuv gangreni, DTI farmakokinetiği ve CPB protokolleri",
     "rozetler": ["YENİ"],
     "guncelleme": "2026-09"
   },
   "moduller": {
     "flashcard": false,
-    "inciler": false,
+    "inciler": true,
     "quiz": false,
     "vaka": false,
     "video": false
@@ -19,7 +19,7 @@
       "tip": "metin",
       "baslik": "Tanım",
       "satirlar": [
-        { "metin": "Heparin İndüklü Trombositopeni (HİT), heparine maruziyet sonrası gelişen, paradoksik bir şekilde hem trombositopeni hem de hayatı tehdit eden venöz ve arteriyel tromboz riski ile seyreden, immün aracılı primer bir hiperkoagülabilite tablosudur. Klinik pratikte en sık aşırı tanı (overdiagnosis) konulan hematolojik acillerden biri olan HİT'te, patojenik antikorların tespiti ve klinikle korelasyonu karmaşık bir laboratuvar ve farmakoterapi yönetimi gerektirir." }
+        { "metin": "Heparin İlişkili Trombositopeni (HİT), heparine maruziyet sonrası gelişen, paradoksik bir şekilde hem trombositopeni hem de hayatı tehdit eden venöz ve arteriyel tromboz riski ile seyreden, immün aracılı primer bir hiperkoagülabilite tablosudur. Klinik pratikte en sık aşırı tanı (overdiagnosis) konulan hematolojik acillerden biri olan HİT'te, patojenik antikorların tespiti ve klinikle korelasyonu karmaşık bir laboratuvar ve farmakoterapi yönetimi gerektirir." }
       ]
     },
     {
@@ -158,7 +158,7 @@
       "baslik": "Fonksiyonel Assay'ler (Gold Standard)",
       "satirlar": [
         { "metin": "**1. Serotonin Release Assay (¹⁴C-SRA):** Trombosit aktivasyonunun altın standardıdır. Radyoaktif ¹⁴C-serotonin ile yüklenmiş, yıkanmış donör trombositleri, hasta serumu ve heparin ile inkübe edilir." },
-        { "metin": "**Pozitiflik Kriteri:** Terapötik heparin konsantrasyonunda (0.1-0.3 IU/mL) %20'den fazla serotonin salınımı olması VE supraterapötik yüksek heparin konsantrasyonunda (100 IU/mL) bu salınımın inhibe olmasıdır (heparin bağımlılığı doğrulaması)." },
+        { "metin": "**Pozitiflik Kriteri:** Terapötik heparin konsantrasyonunda (0.1–0.3 / 0.5 IU/mL (terapötik düşük doz)) %20'den fazla serotonin salınımı olması VE supraterapötik yüksek heparin konsantrasyonunda (100 IU/mL) bu salınımın inhibe olmasıdır (heparin bağımlılığı doğrulaması)." },
         { "metin": "**2. Heparin-Induced Platelet Activation (HIPA):** Yıkanmış donör trombosit agregasyonunun mikrotitre plaklarında optik olarak değerlendirilmesidir." },
         { "metin": "**3. SRA-Negatif HİT ve Çözümü:** Klinik olarak güçlü HİT tablosu olup SRA testi negatif gelen vakalarda, ortama ekstra PF4 eklenerek yapılan PF4-enhanced SRA veya akım sitometrik P-Selectin Ekspresyon Tayini (PEA) yapılmalıdır." }
       ]
