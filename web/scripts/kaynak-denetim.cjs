@@ -9,7 +9,12 @@
  * ile girer. Şema ve sayfadaki gösterimi: `lib/kaynaklar.ts`.
  *
  * ÜÇ KURAL:
- *  1. Listede OLMAYAN konu en az bir geçerli kaynak taşır.
+ *  1. Listede OLMAYAN konu en az bir geçerli kaynak taşır — kendi
+ *     `meta.kaynaklar`ı ya da `meta.kaynakca` ile bağlandığı ORTAK kaynakça
+ *     (`content/kaynakca.json`). Var olmayan kaynakçayı gösteren konu bozuk
+ *     sayılır: sayfa o bağı sessizce atlar, yazar "bağladım" sanır.
+ *     Kaynakçanın kendi kayıtları da aynı kurallarla denetlenir; anahtar
+ *     adrestir (`/kaynakca/<ad>`) ve yalnızca küçük harf-rakam-tire olabilir.
  *  2. Bozuk kayıt HER konuda düşer (muaf olsa bile). Sayfa (`kaynaklariAl`)
  *     bozuk kaydı sessizce ATLAR — sayfa düşmesin diye doğru olan bu; ama
  *     yazarın "kaynak ekledim" sanıp eklemediği hâli ancak kapı görür:
@@ -44,6 +49,7 @@ function yolAl(kok) {
   return {
     konuKok: path.join(kok, "content", "canonical"),
     muafDosya: path.join(kok, "content", "kaynak-muaf.json"),
+    kaynakcaDosya: path.join(kok, "content", "kaynakca.json"),
   };
 }
 
@@ -65,18 +71,20 @@ function konulariOku(konuKok) {
 
 const BU_YIL = new Date().getFullYear();
 
-/** Bir konunun kaynak kayıtlarını denetler: { gecerli: sayı, kusurlar: [] } */
-function kaynakDenetle(meta) {
-  const ham = meta && meta.kaynaklar;
+/** Bir kaynak listesini denetler: { gecerli: sayı, kusurlar: [] } */
+function listeDenetle(ham, alan) {
   if (ham === undefined) return { gecerli: 0, kusurlar: [] };
-  if (!Array.isArray(ham)) return { gecerli: 0, kusurlar: ["`meta.kaynaklar` dizi değil"] };
+  if (!Array.isArray(ham)) return { gecerli: 0, kusurlar: [`\`${alan}\` dizi değil`] };
   let gecerli = 0;
   const kusurlar = [];
   ham.forEach((k, i) => {
     const no = `kaynak ${i + 1}`;
     if (!k || typeof k !== "object" || Array.isArray(k)) { kusurlar.push(`${no}: nesne değil`); return; }
-    const { ad, yil, url } = k;
+    const { ad, yil, url, tur } = k;
     let tamam = true;
+    if (tur !== undefined && !["makale", "kitap", "uptodate"].includes(tur)) {
+      kusurlar.push(`${no}: \`tur\` makale|kitap|uptodate değil (${JSON.stringify(tur)}) — "Diğer" grubuna düşer`); tamam = false;
+    }
     if (typeof ad !== "string" || !ad.trim()) { kusurlar.push(`${no}: \`ad\` yok ya da boş — sayfada görünmez`); tamam = false; }
     if (url !== undefined && !(typeof url === "string" && /^https:\/\/\S+$/.test(url.trim()))) {
       kusurlar.push(`${no}: \`url\` https değil (${JSON.stringify(url)}) — bağlantı olmaz`); tamam = false;
@@ -90,24 +98,59 @@ function kaynakDenetle(meta) {
   return { gecerli, kusurlar };
 }
 
+/**
+ * Ortak kaynakçaları denetler. Dönüş: geçerli adlar (en az bir geçerli
+ * kaydı olan — sayfanın `kaynakcaGetir`i ile aynı ölçüt) ve kusurlar.
+ * Dosya yoksa kaynakça yok demektir, kusur değil.
+ */
+function kaynakcalariDenetle(dosya) {
+  const gecerli = new Set();
+  const kusurlar = [];
+  if (!fs.existsSync(dosya)) return { gecerli, kusurlar, adlar: [] };
+  let veri;
+  try { veri = JSON.parse(fs.readFileSync(dosya, "utf8")); } catch { return { gecerli, kusurlar: [{ ad: "(dosya)", kusurlar: ["JSON olarak okunamadı"] }], adlar: [] }; }
+  if (!veri || typeof veri !== "object" || Array.isArray(veri)) return { gecerli, kusurlar: [{ ad: "(dosya)", kusurlar: ["nesne değil"] }], adlar: [] };
+  for (const [ad, kc] of Object.entries(veri)) {
+    const k = [];
+    if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(ad)) k.push("anahtar adres olarak kullanılıyor — yalnızca küçük harf, rakam ve tire");
+    if (!kc || typeof kc !== "object" || typeof kc.baslik !== "string" || !kc.baslik.trim()) k.push("`baslik` yok — sayfa kaynakçayı atlar");
+    const liste = listeDenetle(kc && kc.kaynaklar, "kaynaklar");
+    k.push(...liste.kusurlar);
+    if (liste.gecerli === 0) k.push("geçerli kaynak yok — sayfa kaynakçayı atlar");
+    if (k.length) kusurlar.push({ ad, kusurlar: k });
+    if (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(ad) && kc && typeof kc.baslik === "string" && kc.baslik.trim() && liste.gecerli > 0) gecerli.add(ad);
+  }
+  return { gecerli, kusurlar, adlar: Object.keys(veri) };
+}
+
 function denetle(kok) {
-  const { konuKok, muafDosya } = yolAl(kok);
+  const { konuKok, muafDosya, kaynakcaDosya } = yolAl(kok);
   if (!fs.existsSync(konuKok)) throw new Error(`konu ağacı yok: ${konuKok}`);
   if (!fs.existsSync(muafDosya)) throw new Error(`muaf listesi yok: ${muafDosya}`);
   const muafVeri = JSON.parse(fs.readFileSync(muafDosya, "utf8"));
   if (!Array.isArray(muafVeri.konular)) throw new Error("muaf listesinde `konular` dizisi yok");
   const muaf = new Set(muafVeri.konular);
+  const kc = kaynakcalariDenetle(kaynakcaDosya);
 
   const konular = konulariOku(konuKok);
   // Ayrıştırmaya dayanan denetim sıfır ölçümü MEŞRU SAYMAZ (bkz. arac-metadata).
   if (konular.length === 0) throw new Error("hiç konu okunamadı — denetim kör");
 
-  const sonuc = { olculen: konular.length, kaynakli: 0, muafKaynaksiz: 0, yeniKaynaksiz: [], bozuk: [], kaynakKazanan: [], okunamayan: [], ağactaYok: [] };
+  const sonuc = { olculen: konular.length, kaynakli: 0, muafKaynaksiz: 0, yeniKaynaksiz: [], bozuk: [], kaynakKazanan: [], okunamayan: [], ağactaYok: [], bozukKaynakca: kc.kusurlar, kaynakcaKullanim: {}, kullanilmayanKaynakca: [] };
   const agacta = new Set();
   for (const { yol, j } of konular) {
     agacta.add(yol);
     if (!j) { sonuc.okunamayan.push(yol); continue; }
-    const { gecerli, kusurlar } = kaynakDenetle(j.meta);
+    const meta = j.meta || {};
+    let { gecerli, kusurlar } = listeDenetle(meta.kaynaklar, "meta.kaynaklar");
+    if (meta.kaynakca !== undefined) {
+      if (typeof meta.kaynakca === "string" && kc.gecerli.has(meta.kaynakca)) {
+        gecerli++;
+        sonuc.kaynakcaKullanim[meta.kaynakca] = (sonuc.kaynakcaKullanim[meta.kaynakca] || 0) + 1;
+      } else {
+        kusurlar = [...kusurlar, `\`meta.kaynakca\` geçerli bir kaynakçayı göstermiyor (${JSON.stringify(meta.kaynakca)}) — sayfada görünmez`];
+      }
+    }
     if (kusurlar.length) sonuc.bozuk.push({ yol, kusurlar });
     if (gecerli > 0) {
       sonuc.kaynakli++;
@@ -119,12 +162,20 @@ function denetle(kok) {
     }
   }
   for (const y of muaf) if (!agacta.has(y)) sonuc.ağactaYok.push(y);
+  for (const ad of kc.gecerli) if (!sonuc.kaynakcaKullanim[ad]) sonuc.kullanilmayanKaynakca.push(ad);
   return { sonuc, muafDosya, muafVeri };
 }
 
 function rapor(s) {
   console.log(`kaynak denetimi — ${s.olculen} konu ölçüldü · ${s.kaynakli} kaynaklı · ${s.muafKaynaksiz} muaf (26 Eyl 2026 öncesi)`);
+  const kullanim = Object.entries(s.kaynakcaKullanim);
+  if (kullanim.length) console.log(`ortak kaynakça: ${kullanim.map(([ad, n]) => `${ad} → ${n} konu`).join(" · ")}`);
   let kusur = 0;
+  if (s.bozukKaynakca.length) {
+    kusur += s.bozukKaynakca.length;
+    console.log(`\nBOZUK KAYNAKÇA (${s.bozukKaynakca.length}) — content/kaynakca.json:`);
+    s.bozukKaynakca.forEach((b) => b.kusurlar.forEach((k) => console.log(`  ${b.ad}: ${k}`)));
+  }
   if (s.okunamayan.length) {
     kusur += s.okunamayan.length;
     console.log(`\nJSON olarak okunamayan (${s.okunamayan.length}):`);
@@ -147,6 +198,10 @@ function rapor(s) {
   }
   if (s.ağactaYok.length) {
     console.log(`\nnot: listede olup bu ağaçta olmayan ${s.ağactaYok.length} yol (başka dalda olabilir, düşürmez): ${s.ağactaYok.slice(0, 5).join(", ")}${s.ağactaYok.length > 5 ? " …" : ""}`);
+  }
+  if (s.kullanilmayanKaynakca.length) {
+    // Düşürmez: konusu henüz başka dalda olabilir. Ama sayfası derleniyor.
+    console.log(`\nnot: hiçbir konunun bağlanmadığı kaynakça (düşürmez): ${s.kullanilmayanKaynakca.join(", ")}`);
   }
   return kusur;
 }
@@ -175,16 +230,29 @@ if (argv.includes("--negatif")) {
   yaz("b/muaf-bozuk", konu({ kaynaklar: [{ ad: "" }] }));
   yaz("b/muaf-kazanan", konu({ kaynaklar: [iyi] }));
   yaz("b/bozuk-json", "{ bozuk");
+  // Ortak kaynakça tohumları
+  yaz("a/kaynakcali", konu({ kaynakca: "iyi-kc" }));
+  yaz("b/olmayan-kaynakca", konu({ kaynakca: "yok-kc" }));
+  yaz("b/bos-kaynakcaya", konu({ kaynakca: "bos-kc" }));
+  yaz("b/muaf-kaynakca-kazanan", konu({ kaynakca: "iyi-kc" }));
+  fs.writeFileSync(path.join(kok, "content", "kaynakca.json"), JSON.stringify({
+    "iyi-kc": { baslik: "İyi", kaynaklar: [{ ...iyi, tur: "kitap" }] },
+    "kirik-kc": { baslik: "Kırık", kaynaklar: [iyi, { ad: "X", tur: "dergi" }] },
+    "bos-kc": { baslik: "Boş", kaynaklar: [] },
+    "Buyuk-Harf": { baslik: "Adres", kaynaklar: [iyi] },
+  }));
   fs.writeFileSync(path.join(kok, "content", "kaynak-muaf.json"),
-    JSON.stringify({ konular: ["a/muaf-kaynaksiz", "b/muaf-bozuk", "b/muaf-kazanan", "z/baska-dalda"] }));
+    JSON.stringify({ konular: ["a/muaf-kaynaksiz", "b/muaf-bozuk", "b/muaf-kazanan", "b/muaf-kaynakca-kazanan", "z/baska-dalda"] }));
 
   const { sonuc: s } = denetle(kok);
   const beklenen = {
-    yeniKaynaksiz: ["b/adsiz", "b/bos-dizi", "b/http-url", "b/js-url", "b/yeni-kaynaksiz", "b/yil"],
-    bozuk: ["b/adsiz", "b/http-url", "b/js-url", "b/muaf-bozuk", "b/yil"],
-    kaynakKazanan: ["b/muaf-kazanan"],
+    yeniKaynaksiz: ["b/adsiz", "b/bos-dizi", "b/bos-kaynakcaya", "b/http-url", "b/js-url", "b/olmayan-kaynakca", "b/yeni-kaynaksiz", "b/yil"],
+    bozuk: ["b/adsiz", "b/bos-kaynakcaya", "b/http-url", "b/js-url", "b/muaf-bozuk", "b/olmayan-kaynakca", "b/yil"],
+    kaynakKazanan: ["b/muaf-kaynakca-kazanan", "b/muaf-kazanan"],
     okunamayan: ["b/bozuk-json"],
     ağactaYok: ["z/baska-dalda"],
+    bozukKaynakca: ["Buyuk-Harf", "bos-kc", "kirik-kc"],
+    kullanilmayanKaynakca: ["kirik-kc"],
   };
   const gercek = {
     yeniKaynaksiz: [...s.yeniKaynaksiz].sort(),
@@ -192,18 +260,20 @@ if (argv.includes("--negatif")) {
     kaynakKazanan: [...s.kaynakKazanan].sort(),
     okunamayan: [...s.okunamayan].sort(),
     ağactaYok: [...s.ağactaYok].sort(),
+    bozukKaynakca: s.bozukKaynakca.map((b) => b.ad).sort(),
+    kullanilmayanKaynakca: [...s.kullanilmayanKaynakca].sort(),
   };
   fs.rmSync(kok, { recursive: true, force: true });
   const hatalar = Object.keys(beklenen).filter((k) => JSON.stringify(beklenen[k]) !== JSON.stringify(gercek[k]));
   // Pozitif kontrol: temiz tohumların HİÇBİRİ hiçbir kovada olmamalı.
-  const temiz = ["a/muaf-kaynaksiz", "a/yeni-kaynakli", "a/yeni-urlsiz"];
+  const temiz = ["a/muaf-kaynaksiz", "a/yeni-kaynakli", "a/yeni-urlsiz", "a/kaynakcali", "iyi-kc"];
   const sahte = temiz.filter((y) => Object.values(gercek).some((l) => l.includes(y)));
   if (hatalar.length || sahte.length) {
     hatalar.forEach((k) => console.log(`negatif kontrol DÜŞTÜ — ${k}: beklenen ${JSON.stringify(beklenen[k])}, bulunan ${JSON.stringify(gercek[k])}`));
     if (sahte.length) console.log(`pozitif kontrol DÜŞTÜ — temiz tohum işaretlendi: ${sahte.join(", ")}`);
     process.exit(1);
   }
-  console.log(`negatif + pozitif kontrol GEÇTİ — ${s.olculen} tohum: 9 kusur yakalandı, 3 temiz tohum işaretlenmedi.`);
+  console.log(`negatif + pozitif kontrol GEÇTİ — ${s.olculen} konu + 4 kaynakça tohumu: 15 kusur yakalandı, ${temiz.length} temiz tohum işaretlenmedi.`);
   process.exit(0);
 }
 

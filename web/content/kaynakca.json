@@ -1,0 +1,902 @@
+{
+  "hipofiz": {
+    "baslik": "Hipofiz",
+    "aciklama": "Hipofiz genel konuları ve hipofiz yetmezliği sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Paragliola RM, Locantore P, Corsello SM, Salvatori R. Treating Hypopituitarism in the Over 65s: Review of Clinical Studies. Clin Interv Aging 2023;18:423-439",
+        "yil": 2023,
+        "url": "https://doi.org/10.2147/CIA.S370782",
+        "tur": "makale"
+      },
+      {
+        "ad": "Pigni S, Marsan G, Caputo M, ve ark. Management of hypopituitarism during pregnancy in patients with PROP1-related combined pituitary hormone deficiency: Review of the literature with a case report. Pituitary 2026;29(1):7",
+        "yil": 2026,
+        "url": "https://doi.org/10.1007/s11102-025-01606-0",
+        "tur": "makale"
+      },
+      {
+        "ad": "Mc Donald D, Tomkins M, O'Connell L, ve ark. Systematic Review and Meta-Analysis on the Prevalence of Radiotherapy-Induced Hypopituitarism in Adults With Primary Non-Pituitary Brain Tumours. Clin Endocrinol 2025;102(6):683-698",
+        "yil": 2025,
+        "url": "https://doi.org/10.1111/cen.15216",
+        "tur": "makale"
+      },
+      {
+        "ad": "Varlamov EV, Fleseriu M. Anterior Pituitary Failure. In: The Pituitary. Elsevier; 2022. p. 341-374",
+        "yil": 2022,
+        "url": "https://doi.org/10.1016/B978-0-323-99899-4.00019-6",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Yamamoto M, Takahashi Y. Pituitary-Immune Interface. In: The Pituitary. Elsevier; 2022. p. 375-384",
+        "yil": 2022,
+        "url": "https://doi.org/10.1016/B978-0-323-99899-4.00017-2",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Marques P, Korbonits M. Pituitary Dysfunction in Systemic Disorders. In: The Pituitary. Elsevier; 2022. p. 385-412",
+        "yil": 2022,
+        "url": "https://doi.org/10.1016/B978-0-323-99899-4.00024-X",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Gadelha MR, Wildemberg LE, Kasuki L. Drugs and Pituitary Function. In: The Pituitary. Elsevier; 2022. p. 413-427",
+        "yil": 2022,
+        "url": "https://doi.org/10.1016/B978-0-323-99899-4.00003-2",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Raverot G. Aggressive Pituitary Adenomas. In: The Pituitary. Elsevier; 2022. p. 637-648",
+        "yil": 2022,
+        "url": "https://doi.org/10.1016/B978-0-323-99899-4.00005-6",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Kowalchuk RO, Trifiletti DM, Brown PD, Sheehan JP. Radiotherapy in the Management of Pituitary Adenomas. In: The Pituitary. Elsevier; 2022. p. 753-764",
+        "yil": 2022,
+        "url": "https://doi.org/10.1016/B978-0-323-99899-4.00004-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Lubitz SE. Hypopituitarism. In: Endocrine Emergencies. Elsevier; 2022. p. 239-258",
+        "yil": 2022,
+        "url": "https://doi.org/10.1016/B978-0-323-76097-3.00020-X",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Seitz AP, Ishii M. Pituitary Apoplexy. In: Endocrine Emergencies. Elsevier; 2022. p. 259-274",
+        "yil": 2022,
+        "url": "https://doi.org/10.1016/B978-0-323-76097-3.00021-1",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Snyder PJ. Treatment of hypopituitarism. UpToDate; son güncelleme 16 Tem 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/treatment-of-hypopituitarism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Snyder PJ. Causes of hypopituitarism. UpToDate; son güncelleme 8 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/causes-of-hypopituitarism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Snyder PJ. Clinical manifestations of hypopituitarism. UpToDate; son güncelleme 8 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-manifestations-of-hypopituitarism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Robertson RP, ed. DeGroot's Endocrinology: Basic Science and Clinical Practice. 8. baskı. Elsevier; 2022. Bölümler: Acromegaly; Cushing's Disease; Clinically Nonfunctioning Sellar Masses",
+        "yil": 2022,
+        "url": "https://shop.elsevier.com/books/degroots-endocrinology/robertson/978-0-323-69412-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Melmed S, Koenig R, Rosen CJ, Auchus RJ, Goldfine AB. Williams Textbook of Endocrinology. 14. baskı. Elsevier; 2019. Bölümler: Neuroendocrinology; Pituitary Physiology and Diagnostic Evaluation; Pituitary Masses and Tumors",
+        "yil": 2019,
+        "url": "https://shop.elsevier.com/books/williams-textbook-of-endocrinology/melmed/978-0-323-55596-8",
+        "tur": "kitap"
+      },
+      {
+        "ad": "McDermott MT, ed. Endocrine Secrets. 8. baskı. Elsevier; 2025. Bölümler: Pituitary Stalk Lesions; Prolactin-Secreting Pituitary Tumors; Glycoprotein Secreting Pituitary Tumors; Water Metabolism",
+        "yil": 2025,
+        "url": "https://shop.elsevier.com/books/endocrine-secrets/mcdermott/978-0-443-26194-7",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Kliegman R, St Geme JW III, ed. Nelson Textbook of Pediatrics. 22. baskı. Elsevier; 2024. Bölüm: Hypopituitarism",
+        "yil": 2024,
+        "url": "https://shop.elsevier.com/books/nelson-textbook-of-pediatrics-2-volume-set/kliegman/978-0-323-88305-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Kellerman RD, Heidelbaugh JJ, ed. Conn's Current Therapy 2024. Elsevier; 2023. Bölüm: Hypopituitarism",
+        "yil": 2023,
+        "url": "https://shop.elsevier.com/books/conns-current-therapy-2024/kellerman/978-0-443-12151-7",
+        "tur": "kitap"
+      },
+      {
+        "ad": "White B, Harrison JR, Mehlmann L. Endocrine and Reproductive Physiology. 5. baskı. Elsevier; 2018. Bölüm: Hypothalamus-Pituitary Complex",
+        "yil": 2018,
+        "url": "https://shop.elsevier.com/books/endocrine-and-reproductive-physiology/white/978-0-323-59573-5",
+        "tur": "kitap"
+      }
+    ]
+  },
+  "hipertiroidi": {
+    "baslik": "Hipertiroidi",
+    "aciklama": "Hipertiroidi ve tirotoksikoz sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Türkiye Endokrinoloji ve Metabolizma Derneği. Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+        "yil": 2025,
+        "url": "https://file.temd.org.tr/Uploads/publications/guides/documents/tiroid2025_11042025.pdf",
+        "tur": "makale"
+      },
+      {
+        "ad": "Tagami T, Katai M, Kinuya S, ve ark. Guidelines for the diagnosis of Graves' disease, hypothyroidism, painless thyroiditis, chronic thyroiditis (Hashimoto's thyroiditis), and subacute thyroiditis (acute phase). Thyroid Sci 2025;2(4):100032",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.thscie.2025.100032",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lee SY, Pearce EN. Hyperthyroidism: A Review. JAMA 2023;330(15):1472-1483",
+        "yil": 2023,
+        "url": "https://doi.org/10.1001/jama.2023.19052",
+        "tur": "makale"
+      },
+      {
+        "ad": "Shah R, Adamson SE, Jasim S. Management Aspects of Medical Therapy in Graves Disease. Endocr Pract 2025;31(4):536-546",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.eprac.2024.12.012",
+        "tur": "makale"
+      },
+      {
+        "ad": "Azizi F, Abdi H, Amouzegar A, Habibi Moeini AS. Long-term thionamide antithyroid treatment of Graves' disease. Best Pract Res Clin Endocrinol Metab 2023;37(2):101631",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.beem.2022.101631",
+        "tur": "makale"
+      },
+      {
+        "ad": "Radziszewski M, Kuś A, Bednarczuk T. Genotype-phenotype correlations in Graves' disease. Best Pract Res Clin Endocrinol Metab 2023;37(2):101745",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.beem.2023.101745",
+        "tur": "makale"
+      },
+      {
+        "ad": "Vargas-Uricoechea H. Molecular Mechanisms in Autoimmune Thyroid Disease. Cells 2023;12(6):918",
+        "yil": 2023,
+        "url": "https://doi.org/10.3390/cells12060918",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hutchings KR, Fritzhand SJ, Esmaeli B, ve ark. Graves' Eye Disease: Clinical and Radiological Diagnosis. Biomedicines 2023;11(2):312",
+        "yil": 2023,
+        "url": "https://doi.org/10.3390/biomedicines11020312",
+        "tur": "makale"
+      },
+      {
+        "ad": "Al Shoufy M, Nasrallah J, Al Jebawi K, ve ark. Graves' disease and bone mineral density: a scoping review of the impact of Graves' disease on spinal health. J Clin Densitom 2026;29(1):101621",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.jocd.2025.101621",
+        "tur": "makale"
+      },
+      {
+        "ad": "Davies TF, Burch HB. Clinical features and diagnosis of thyroid eye disease. UpToDate; son güncelleme 28 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-features-and-diagnosis-of-thyroid-eye-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Davies TF, Burch HB. Treatment of thyroid eye disease. UpToDate; son güncelleme 27 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-thyroid-eye-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Frock KC. Patient perspective: Graves' disease. UpToDate; son güncelleme 8 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/patient-perspective-graves-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Graves' hyperthyroidism in nonpregnant adults: Overview of treatment. UpToDate; son güncelleme 6 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/graves-hyperthyroidism-in-nonpregnant-adults-overview-of-treatment",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Amiodarone and thyroid dysfunction. UpToDate; son güncelleme 19 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/amiodarone-and-thyroid-dysfunction",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Diagnosis of hyperthyroidism. UpToDate; son güncelleme 20 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/diagnosis-of-hyperthyroidism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Disorders that cause hyperthyroidism. UpToDate; son güncelleme 21 May 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/disorders-that-cause-hyperthyroidism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Radioiodine in the treatment of Graves' hyperthyroidism. UpToDate; son güncelleme 23 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/radioiodine-in-the-treatment-of-graves-hyperthyroidism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Overview of thyroid disease and pregnancy. UpToDate; son güncelleme 2 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-thyroid-disease-and-pregnancy",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS, Sugg SL. Surgical management of hyperthyroidism. UpToDate; son güncelleme 6 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/surgical-management-of-hyperthyroidism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Thionamides in the treatment of Graves' disease. UpToDate; son güncelleme 2 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/thionamides-in-the-treatment-of-graves-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Robertson AC. Anesthesia for patients with thyroid disease and for patients who undergo thyroid or parathyroid surgery. UpToDate; son güncelleme 15 Eyl 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/anesthesia-for-patients-with-thyroid-disease-and-for-patients-who-undergo-thyroid-or-parathyroid-surgery",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Beta blockers in the treatment of hyperthyroidism. UpToDate; son güncelleme 24 Tem 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/beta-blockers-in-the-treatment-of-hyperthyroidism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Bone disease with hyperthyroidism and thyroid hormone therapy. UpToDate; son güncelleme 8 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/bone-disease-with-hyperthyroidism-and-thyroid-hormone-therapy",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Razvi S. Cardiovascular effects of hyperthyroidism. UpToDate; son güncelleme 18 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/cardiovascular-effects-of-hyperthyroidism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Euthyroid hyperthyroxinemia and hypothyroxinemia. UpToDate; son güncelleme 20 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/euthyroid-hyperthyroxinemia-and-hypothyroxinemia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Exogenous hyperthyroidism. UpToDate; son güncelleme 12 Haz 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/exogenous-hyperthyroidism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Iodinated radiocontrast agents in the treatment of hyperthyroidism. UpToDate; son güncelleme 15 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/iodinated-radiocontrast-agents-in-the-treatment-of-hyperthyroidism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Iodine in the treatment of hyperthyroidism. UpToDate; son güncelleme 24 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/iodine-in-the-treatment-of-hyperthyroidism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Surks MI. Iodine-induced thyroid dysfunction. UpToDate; son güncelleme 9 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/iodine-induced-thyroid-dysfunction",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rubin DI. Neurologic manifestations of hyperthyroidism and Graves' disease. UpToDate; son güncelleme 28 Eki 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/neurologic-manifestations-of-hyperthyroidism-and-graves-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Manzullo EF, Ross DS. Nonthyroid surgery in the patient with thyroid disease. UpToDate; son güncelleme 13 Oca 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/nonthyroid-surgery-in-the-patient-with-thyroid-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Overview of the clinical manifestations of hyperthyroidism in adults. UpToDate; son güncelleme 19 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-the-clinical-manifestations-of-hyperthyroidism-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Sipos JA. Overview of the clinical utility of ultrasonography in thyroid disease. UpToDate; son güncelleme 17 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-the-clinical-utility-of-ultrasonography-in-thyroid-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Overview of the management of benign goiter. UpToDate; son güncelleme 28 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-the-management-of-benign-goiter",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Davies TF. Pathogenesis of Graves' disease. UpToDate; son güncelleme 21 May 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/pathogenesis-of-graves-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Struma ovarii. UpToDate; son güncelleme 10 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/struma-ovarii",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Subclinical hyperthyroidism in nonpregnant adults. UpToDate; son güncelleme 27 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/subclinical-hyperthyroidism-in-nonpregnant-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Thyroid storm. UpToDate; son güncelleme 29 Nis 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/thyroid-storm",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ross DS. Treatment of hyperthyroidism due to toxic adenoma and toxic multinodular goiter. UpToDate; son güncelleme 3 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-hyperthyroidism-due-to-toxic-adenoma-and-toxic-multinodular-goiter",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Wassner AJ. Hyperthyroidism in children and adolescents: Clinical manifestations and diagnostic evaluation. UpToDate; son güncelleme 18 Ara 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/hyperthyroidism-in-children-and-adolescents-clinical-manifestations-and-diagnostic-evaluation",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Robertson RP, ed. DeGroot's Endocrinology: Basic Science and Clinical Practice. 8. baskı. Elsevier; 2022. Bölümler: Graves' Disease; Graves' Orbitopathy",
+        "yil": 2022,
+        "url": "https://shop.elsevier.com/books/degroots-endocrinology/robertson/978-0-323-69412-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Melmed S, Koenig R, Rosen CJ, Auchus RJ, Goldfine AB. Williams Textbook of Endocrinology. 14. baskı. Elsevier; 2019. Bölüm: Hyperthyroid Disorders",
+        "yil": 2019,
+        "url": "https://shop.elsevier.com/books/williams-textbook-of-endocrinology/melmed/978-0-323-55596-8",
+        "tur": "kitap"
+      }
+    ]
+  },
+  "hashimoto": {
+    "baslik": "Hashimoto tiroiditi",
+    "aciklama": "Hashimoto tiroiditi sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Araújo EMQ, Coutinho-Lima CRO, Sousa ASD, ve ark. Effects of Gluten-Free Diet in Non-Celiac Hashimoto's Thyroiditis: A Systematic Review and Meta-Analysis. Nutrients 2025;17(21):3437",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/nu17213437",
+        "tur": "makale"
+      },
+      {
+        "ad": "Berisha-Muharremi V, Tahirbegolli B, Phypers R, Hanna R. Efficacy of Combined Photobiomodulation Therapy with Supplements versus Supplements alone in Restoring Thyroid Gland Homeostasis in Hashimoto Thyroiditis: A Clinical Feasibility Parallel Trial with 6-Months Follow-Up. J Pers Med 2023;13(8):1274",
+        "yil": 2023,
+        "url": "https://doi.org/10.3390/jpm13081274",
+        "tur": "makale"
+      },
+      {
+        "ad": "Caturegli P, De Remigis A, Rose NR. Hashimoto thyroiditis: Clinical and diagnostic criteria. Autoimmun Rev 2014;13(4-5):391-397",
+        "yil": 2014,
+        "url": "https://doi.org/10.1016/j.autrev.2014.01.007",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chaker L, Bianco AC, Jonklaas J, Peeters RP. Hypothyroidism. Lancet 2017;390(10101):1550-1562",
+        "yil": 2017,
+        "url": "https://doi.org/10.1016/S0140-6736(17)30703-1",
+        "tur": "makale"
+      },
+      {
+        "ad": "Daramjav N, Takagi J, Iwayama H, ve ark. Autoimmune Thyroiditis Shifting from Hashimoto's Thyroiditis to Graves' Disease. Medicina (Kaunas) 2023;59(4):757",
+        "yil": 2023,
+        "url": "https://doi.org/10.3390/medicina59040757",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hu X, Chen Y, Shen Y, ve ark. Global prevalence and epidemiological trends of Hashimoto's thyroiditis in adults: A systematic review and meta-analysis. Front Public Health 2022;10:1020709",
+        "yil": 2022,
+        "url": "https://doi.org/10.3389/fpubh.2022.1020709",
+        "tur": "makale"
+      },
+      {
+        "ad": "Huwiler VV, Maissen-Abgottspon S, Stanga Z, ve ark. Selenium Supplementation in Patients with Hashimoto Thyroiditis: A Systematic Review and Meta-Analysis of Randomized Clinical Trials. Thyroid 2024;34(3):295-313",
+        "yil": 2024,
+        "url": "https://doi.org/10.1089/thy.2023.0556",
+        "tur": "makale"
+      },
+      {
+        "ad": "Jin B, Wang S, Fan Z. Pathogenesis Markers of Hashimoto's Disease—A Mini Review. Front Biosci (Landmark Ed) 2022;27(10):297",
+        "yil": 2022,
+        "url": "https://doi.org/10.31083/j.fbl2710297",
+        "tur": "makale"
+      },
+      {
+        "ad": "Klubo-Gwiezdzinska J, Wartofsky L. Hashimoto thyroiditis: an evidence-based guide to etiology, diagnosis and treatment. Pol Arch Intern Med 2022;132(3):16222",
+        "yil": 2022,
+        "url": "https://doi.org/10.20452/pamw.16222",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kong XQ, Qiu GY, Yang ZB, ve ark. Clinical efficacy of selenium supplementation in patients with Hashimoto thyroiditis: A systematic review and meta-analysis. Medicine (Baltimore) 2023;102(20):e33791",
+        "yil": 2023,
+        "url": "https://doi.org/10.1097/MD.0000000000033791",
+        "tur": "makale"
+      },
+      {
+        "ad": "Mikulska AA, Karaźniewicz-Łada M, Filipowicz D, ve ark. Metabolic Characteristics of Hashimoto's Thyroiditis Patients and the Role of Microelements and Diet in the Disease Management—An Overview. Int J Mol Sci 2022;23(12):6580",
+        "yil": 2022,
+        "url": "https://doi.org/10.3390/ijms23126580",
+        "tur": "makale"
+      },
+      {
+        "ad": "Peng B, Wang W, Gu Q, ve ark. Effects of different supplements on Hashimoto's thyroiditis: a systematic review and network meta-analysis. Front Endocrinol 2024;15:1445878",
+        "yil": 2024,
+        "url": "https://doi.org/10.3389/fendo.2024.1445878",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ralli M, Angeletti D, Fiore M, ve ark. Hashimoto's thyroiditis: An update on pathogenic mechanisms, diagnostic protocols, therapeutic strategies, and potential malignant transformation. Autoimmun Rev 2020;19(10):102649",
+        "yil": 2020,
+        "url": "https://doi.org/10.1016/j.autrev.2020.102649",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ren H, Li G, Liao C, ve ark. A systematic review, meta-analysis, and trial sequential analysis of the effect of acupuncture and moxibustion cake on thyroid function in patients with Hashimoto thyroiditis. Medicine (Baltimore) 2026;105(18):e48352",
+        "yil": 2026,
+        "url": "https://doi.org/10.1097/MD.0000000000048352",
+        "tur": "makale"
+      },
+      {
+        "ad": "Tywanek E, Michalak A, Świrska J, Zwolak A. Autoimmunity, New Potential Biomarkers and the Thyroid Gland—The Perspective of Hashimoto's Thyroiditis and Its Treatment. Int J Mol Sci 2024;25(9):4703",
+        "yil": 2024,
+        "url": "https://doi.org/10.3390/ijms25094703",
+        "tur": "makale"
+      },
+      {
+        "ad": "Vargas-Uricoechea H. Molecular Mechanisms in Autoimmune Thyroid Disease. Cells 2023;12(6):918",
+        "yil": 2023,
+        "url": "https://doi.org/10.3390/cells12060918",
+        "tur": "makale"
+      },
+      {
+        "ad": "Vargas-Uricoechea H, Castellanos-Pinedo A, Urrego-Noguera K, ve ark. A Scoping Review on the Prevalence of Hashimoto's Thyroiditis and the Possible Associated Factors. Med Sci (Basel) 2025;13(2):43",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/medsci13020043",
+        "tur": "makale"
+      },
+      {
+        "ad": "Wang L, Zhu X, Xu S, ve ark. Hashimoto's thyroiditis: from pathogenesis to clinical management. Front Endocrinol 2026;17:1729316",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fendo.2026.1729316",
+        "tur": "makale"
+      },
+      {
+        "ad": "Xue X, Wu D, Yao H, ve ark. Mechanisms underlying the promotion of papillary thyroid carcinoma occurrence and progression by Hashimoto's thyroiditis. Front Endocrinol 2025;16:1551271",
+        "yil": 2025,
+        "url": "https://doi.org/10.3389/fendo.2025.1551271",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yao S, Zhang H. Papillary thyroid carcinoma with Hashimoto's thyroiditis: impact and correlation. Front Endocrinol 2025;16:1512417",
+        "yil": 2025,
+        "url": "https://doi.org/10.3389/fendo.2025.1512417",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yuan J, Qi S, Zhang X, ve ark. Local symptoms of Hashimoto's thyroiditis: A systematic review. Front Endocrinol 2023;13:1076793",
+        "yil": 2023,
+        "url": "https://doi.org/10.3389/fendo.2022.1076793",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zhang H, Yang Y, Liu S, ve ark. Clinical efficacy of selenium supplementation in patients with Hashimoto thyroiditis: A systematic review and meta-analysis. Medicine (Baltimore) 2025;104(35):e44043",
+        "yil": 2025,
+        "url": "https://doi.org/10.1097/MD.0000000000044043",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zhang H, Tong W, Zeng W, ve ark. Persistent symptoms in euthyroid Hashimoto's thyroiditis: current hypotheses and emerging management strategies. Front Endocrinol 2025;16:1627787",
+        "yil": 2025,
+        "url": "https://doi.org/10.3389/fendo.2025.1627787",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zhong L, Xie C, Gan X, ve ark. Hashimoto's thyroiditis reduces central lymph node metastasis risk in papillary thyroid microcarcinoma: an integrated meta-analysis. Front Endocrinol 2025;16:1695508",
+        "yil": 2025,
+        "url": "https://doi.org/10.3389/fendo.2025.1695508",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zhu X, Zhang C, Feng S, ve ark. Intestinal microbiota regulates the gut-thyroid axis: the new dawn of improving Hashimoto thyroiditis. Clin Exp Med 2024;24(1):39",
+        "yil": 2024,
+        "url": "https://doi.org/10.1007/s10238-024-01304-4",
+        "tur": "makale"
+      },
+      {
+        "ad": "Burch HB. Infiltrative thyroid disease. UpToDate; son güncelleme 22 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/infiltrative-thyroid-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Burman KD. Overview of thyroiditis. UpToDate; son güncelleme 15 Eki 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/overview-of-thyroiditis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Burman KD. Painless thyroiditis. UpToDate; son güncelleme 27 Şub 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/painless-thyroiditis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Burman KD. Postpartum thyroiditis. UpToDate; son güncelleme 17 Mar 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/postpartum-thyroiditis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rubin DI. Hashimoto encephalopathy. UpToDate; son güncelleme 16 Oca 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/hashimoto-encephalopathy",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Melmed S, Koenig R, Rosen CJ, Auchus RJ, Goldfine AB. Williams Textbook of Endocrinology. 14. baskı. Elsevier; 2019. Bölüm: Hyperthyroid Disorders",
+        "yil": 2019,
+        "url": "https://shop.elsevier.com/books/williams-textbook-of-endocrinology/melmed/978-0-323-55596-8",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Kellerman RD, Heidelbaugh JJ, ed. Conn's Current Therapy 2026. Elsevier; 2025. Bölüm: Thyroiditis",
+        "yil": 2025,
+        "url": "https://shop.elsevier.com/books/conns-current-therapy-2026/kellerman/978-0-443-12182-1",
+        "tur": "kitap"
+      }
+    ]
+  },
+  "osteoporoz": {
+    "baslik": "Osteoporoz",
+    "aciklama": "Osteoporoz ve metabolik kemik hastalıkları sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Türkiye Endokrinoloji ve Metabolizma Derneği. Osteoporoz ve Metabolik Kemik Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+        "yil": 2025,
+        "url": "https://file.temd.org.tr/Uploads/publications/guides/documents/OSTEPOROZ_nisan2025.pdf",
+        "tur": "makale"
+      },
+      {
+        "ad": "Abdalbary M, Amin AM, Elaraby A, Hassan A. Efficacy and safety of romosozumab in patients with chronic kidney disease and osteoporosis: a narrative review. Osteoporos Int 2026;37(2):319-329",
+        "yil": 2026,
+        "url": "https://doi.org/10.1007/s00198-025-07707-7",
+        "tur": "makale"
+      },
+      {
+        "ad": "Afsar B, Afsar RE, Caliskan Y, Lentine KL. The Relationship between Sclerostin and Kidney Transplantation Mineral Bone Disorders: A Molecule of Controversies. Calcif Tissue Int 2024;115(4):339-361",
+        "yil": 2024,
+        "url": "https://doi.org/10.1007/s00223-024-01261-w",
+        "tur": "makale"
+      },
+      {
+        "ad": "Aibar-Almazán A, Voltes-Martínez A, Castellote-Caballero Y, ve ark. Current Status of the Diagnosis and Management of Osteoporosis. Int J Mol Sci 2022;23(16):9465",
+        "yil": 2022,
+        "url": "https://doi.org/10.3390/ijms23169465",
+        "tur": "makale"
+      },
+      {
+        "ad": "Brouwers P, Bouquegneau A, Cavalier E. Insight into the potential of bone turnover biomarkers: integration in the management of osteoporosis and chronic kidney disease-associated osteoporosis. Curr Opin Endocrinol Diabetes Obes 2024;31(4):149-156",
+        "yil": 2024,
+        "url": "https://doi.org/10.1097/MED.0000000000000869",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chen CH, Lo WC, Hu P, ve ark. Efficacy of Osteoporosis Medications for Patients With Chronic Kidney Disease: An Updated Systematic Review and Network Meta-Analysis. Front Pharmacol 2022;13:822178",
+        "yil": 2022,
+        "url": "https://doi.org/10.3389/fphar.2022.822178",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chiu SH, Wu WT, Yao TK, ve ark. Sclerostin and Cardiovascular Risk: Evaluating the Cardiovascular Safety of Romosozumab in Osteoporosis Treatment. Biomedicines 2024;12(12):2880",
+        "yil": 2024,
+        "url": "https://doi.org/10.3390/biomedicines12122880",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ekramzadeh M, Kalantar-Zadeh K, Kopple JD. The Relevance of Phytate for the Treatment of Chronic Kidney Disease. Clin J Am Soc Nephrol 2024;19(10):1341-1355",
+        "yil": 2024,
+        "url": "https://doi.org/10.2215/CJN.0000000000000558",
+        "tur": "makale"
+      },
+      {
+        "ad": "Fernández-Villabrille S, Martín-Carro B, Martín-Vírgala J, ve ark. Novel Biomarkers of Bone Metabolism. Nutrients 2024;16(5):605",
+        "yil": 2024,
+        "url": "https://doi.org/10.3390/nu16050605",
+        "tur": "makale"
+      },
+      {
+        "ad": "Gifre L, Massó E, Fusaro M, ve ark. Vertebral fractures in patients with CKD and the general population: a call for diagnosis and action. Clin Kidney J 2024;17(8):sfae191",
+        "yil": 2024,
+        "url": "https://doi.org/10.1093/ckj/sfae191",
+        "tur": "makale"
+      },
+      {
+        "ad": "Gifre L, Prior-Español Á. Vertebral fragility fractures: The importance of its identification. Med Clin (Engl Ed) 2023;161(5):205-206",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.medcle.2023.03.028",
+        "tur": "makale"
+      },
+      {
+        "ad": "Gifre L, Fusaro M, Lloret MJ, ve ark. PTH Analog Therapy in CKD G4-G5D: Current Evidence and Potential Role of Abaloparatide in Adynamic Bone Disease. J Clin Med 2025;15(1):133",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/jcm15010133",
+        "tur": "makale"
+      },
+      {
+        "ad": "Henry N, Hildebrand S, Cunningham J. Management of osteoporosis in chronic kidney disease. Clin Kidney J 2025;18(10):sfaf228",
+        "yil": 2025,
+        "url": "https://doi.org/10.1093/ckj/sfaf228",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hong WK, Kim S, Gong HS. Fracture Management in Chronic Kidney Disease: Challenges and Considerations for Orthopedic Surgeons. Clin Orthop Surg 2024;16(2):173-183",
+        "yil": 2024,
+        "url": "https://doi.org/10.4055/cios23244",
+        "tur": "makale"
+      },
+      {
+        "ad": "Imanishi Y, Furukubo T, Shoji S. Clinical approaches to osteoporosis in patients with chronic kidney disease: A comprehensive review. Endocr J 2025;72(8):847-862",
+        "yil": 2025,
+        "url": "https://doi.org/10.1507/endocrj.EJ24-0271",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lloret MJ, Fusaro M, Jørgensen HS, ve ark. Evaluating Osteoporosis in Chronic Kidney Disease: Both Bone Quantity and Quality Matter. J Clin Med 2024;13(4):1010",
+        "yil": 2024,
+        "url": "https://doi.org/10.3390/jcm13041010",
+        "tur": "makale"
+      },
+      {
+        "ad": "Sabaghian T, Delkash P, Rahmannia M, ve ark. Efficacy and Safety of Anti-Osteoporotic Agents Across CKD Stages: A Meta-Analysis of Randomized Clinical Trials. Kidney Blood Press Res 2024;49(1):581-587",
+        "yil": 2024,
+        "url": "https://doi.org/10.1159/000540235",
+        "tur": "makale"
+      },
+      {
+        "ad": "Schietzel S, Huynh-Do U. The Conundrum of Medical Fracture Prevention in Chronic Kidney Disease—Summary of the Evidence and Pragmatic Clinical Guidance. J Clin Med 2025;14(22):8145",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/jcm14228145",
+        "tur": "makale"
+      },
+      {
+        "ad": "Secondulfo C, Visco V, Virtuoso N, ve ark. Vitamin D: A Bridge between Kidney and Heart. Life (Basel) 2024;14(5):617",
+        "yil": 2024,
+        "url": "https://doi.org/10.3390/life14050617",
+        "tur": "makale"
+      },
+      {
+        "ad": "Tariq F, Ahmad M, Subhan M, ve ark. The Management of Osteoporosis in Chronic Kidney Disease: A Review of Diagnostic and Therapeutic Approaches. Cureus 2024;16(11):e73882",
+        "yil": 2024,
+        "url": "https://doi.org/10.7759/cureus.73882",
+        "tur": "makale"
+      },
+      {
+        "ad": "Vasikaran SD, Makris K, Bhattoa HP, ve ark. The importance of laboratory medicine in the management of CKD-MBD: insights from the KDIGO 2023 controversies conference. Clin Chem Lab Med 2025;63(12):2371-2376",
+        "yil": 2025,
+        "url": "https://doi.org/10.1515/cclm-2025-0802",
+        "tur": "makale"
+      },
+      {
+        "ad": "Wang D, Liu T, Lu J, Xu W. Effect of denosumab, an anti-osteoporosis drug, on vascular calcification: A meta-analysis. Medicine (Baltimore) 2024;103(37):e39642",
+        "yil": 2024,
+        "url": "https://doi.org/10.1097/MD.0000000000039642",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cohen A. Epidemiology and etiology of premenopausal osteoporosis. UpToDate; son güncelleme 13 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/epidemiology-and-etiology-of-premenopausal-osteoporosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Cohen A. Evaluation and treatment of premenopausal osteoporosis. UpToDate; son güncelleme 6 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/evaluation-and-treatment-of-premenopausal-osteoporosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Shane E, Rosen HN. Prevention and treatment of osteoporosis after solid organ or stem cell transplantation. UpToDate; son güncelleme 29 Oca 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/prevention-and-treatment-of-osteoporosis-after-solid-organ-or-stem-cell-transplantation",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosen HN. Calcium and vitamin D supplementation in osteoporosis. UpToDate; son güncelleme 27 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/calcium-and-vitamin-d-supplementation-in-osteoporosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Finkelstein JS, Yu EW. Clinical manifestations, diagnosis, and evaluation of osteoporosis in men. UpToDate; son güncelleme 27 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-manifestations-diagnosis-and-evaluation-of-osteoporosis-in-men",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Finkelstein JS, Yu EW. Etiology of osteoporosis in men. UpToDate; son güncelleme 28 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/etiology-of-osteoporosis-in-men",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Finkelstein JS, Yu EW. Treatment of osteoporosis in men. UpToDate; son güncelleme 20 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-osteoporosis-in-men",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Viera AJ. Overview of preventive care in adults. UpToDate; son güncelleme 28 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-preventive-care-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Poznak CV. Osteoclast inhibitors as adjuvant anticancer therapy in early breast cancer. UpToDate; son güncelleme 24 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/osteoclast-inhibitors-as-adjuvant-anticancer-therapy-in-early-breast-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Lewiecki EM. Overview of dual-energy x-ray absorptiometry. UpToDate; son güncelleme 28 Tem 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/overview-of-dual-energy-x-ray-absorptiometry",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Manolagas SC, Ambrogini E, Almeida MS. Pathogenesis of osteoporosis. UpToDate; son güncelleme 24 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/pathogenesis-of-osteoporosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosen HN. Menopausal hormone therapy in the prevention and treatment of osteoporosis. UpToDate; son güncelleme 19 Şub 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/menopausal-hormone-therapy-in-the-prevention-and-treatment-of-osteoporosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosen HN. Denosumab for osteoporosis. UpToDate; son güncelleme 8 Ara 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/denosumab-for-osteoporosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Miller PD. Osteoporosis in patients with chronic kidney disease: Diagnosis and evaluation. UpToDate; son güncelleme 9 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/osteoporosis-in-patients-with-chronic-kidney-disease-diagnosis-and-evaluation",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Mukamal KJ. Overview of the risks and benefits of alcohol consumption. UpToDate; son güncelleme 21 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-the-risks-and-benefits-of-alcohol-consumption",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosen HN, Lewiecki EM. Overview of the management of low bone mass and osteoporosis in postmenopausal women. UpToDate; son güncelleme 22 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-the-management-of-low-bone-mass-and-osteoporosis-in-postmenopausal-women",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosen HN. Bisphosphonate therapy for the treatment of osteoporosis. UpToDate; son güncelleme 27 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/bisphosphonate-therapy-for-the-treatment-of-osteoporosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosen HN. Calcitonin in the prevention and treatment of osteoporosis. UpToDate; son güncelleme 19 Ara 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/calcitonin-in-the-prevention-and-treatment-of-osteoporosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosen HN, Drake MT. Clinical manifestations, diagnosis, and evaluation of osteoporosis in postmenopausal women. UpToDate; son güncelleme 28 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-manifestations-diagnosis-and-evaluation-of-osteoporosis-in-postmenopausal-women",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Morrison RS, Siu AL. Hip fracture in older adults: Epidemiology and medical management. UpToDate; son güncelleme 14 Eki 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/hip-fracture-in-older-adults-epidemiology-and-medical-management",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosen HN, Hirsch JA. Osteoporotic thoracolumbar vertebral compression fractures: Clinical manifestations and treatment. UpToDate; son güncelleme 31 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/osteoporotic-thoracolumbar-vertebral-compression-fractures-clinical-manifestations-and-treatment",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosen CJ. Parathyroid hormone/parathyroid hormone-related protein analog therapy for osteoporosis. UpToDate; son güncelleme 27 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/parathyroid-hormone-parathyroid-hormone-related-protein-analog-therapy-for-osteoporosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosen HN. Risks of bisphosphonate therapy in patients with osteoporosis. UpToDate; son güncelleme 5 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/risks-of-bisphosphonate-therapy-in-patients-with-osteoporosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Yu EW. Screening for osteoporosis in men aged ≥50 years and postmenopausal women. UpToDate; son güncelleme 9 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/screening-for-osteoporosis-in-men-aged-50-years-and-postmenopausal-women",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosen HN. Selective estrogen receptor modulators for prevention and treatment of postmenopausal osteoporosis. UpToDate; son güncelleme 26 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/selective-estrogen-receptor-modulators-for-prevention-and-treatment-of-postmenopausal-osteoporosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosen HN. Use of biochemical markers of bone turnover in osteoporosis. UpToDate; son güncelleme 12 Haz 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/use-of-biochemical-markers-of-bone-turnover-in-osteoporosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosen HN. Clinical features and evaluation of glucocorticoid-induced osteoporosis. UpToDate; son güncelleme 8 May 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/clinical-features-and-evaluation-of-glucocorticoid-induced-osteoporosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosen HN, Saag KG. Prevention and treatment of glucocorticoid-induced osteoporosis. UpToDate; son güncelleme 14 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/prevention-and-treatment-of-glucocorticoid-induced-osteoporosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Weinberg M, Brown TT. Bone and calcium disorders in patients with HIV. UpToDate; son güncelleme 31 Tem 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/bone-and-calcium-disorders-in-patients-with-hiv",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Melmed S, Koenig R, Rosen CJ, Auchus RJ, Goldfine AB. Williams Textbook of Endocrinology. 14. baskı. Elsevier; 2019. Bölüm: Osteoporosis: Basic and Clinical Aspects",
+        "yil": 2019,
+        "url": "https://shop.elsevier.com/books/williams-textbook-of-endocrinology/melmed/978-0-323-55596-8",
+        "tur": "kitap"
+      }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 {
   "title": "Hashimoto Tiroiditi (Kronik Lenfositik Tiroidit)",
   "meta": {
+    "kaynakca": "hashimoto",
     "updatedAt": "07 May 2026",
     "tags": ["Endokrinoloji", "Hashimoto", "Otoimmünite", "Sızdıran Bağırsak", "Tiroid Kanseri", "Levotiroksin", "YDUS"],
     "parent": "tiroid-hastaliklari-ana",

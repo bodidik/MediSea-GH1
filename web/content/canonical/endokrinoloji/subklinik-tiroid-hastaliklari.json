@@ -1,6 +1,7 @@
 {
   "title": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)",
   "meta": {
+    "kaynakca": "hipertiroidi",
     "updatedAt": "01 Jul 2026",
     "tags": ["Endokrinoloji", "Subklinik Hipotiroidi", "Subklinik Hipertiroidi", "TSH", "Kardiyovasküler Risk", "Osteoporoz", "YDUS"],
     "parent": "tiroid-hastaliklari-ana",

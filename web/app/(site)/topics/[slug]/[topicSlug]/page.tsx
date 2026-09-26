@@ -20,7 +20,8 @@ import ilgiliIndex from "@/content/ilgili-index.json";
 import aracKonuIndex from "@/content/arac-konu.json";
 import { ebeveynleriCoz } from "@/lib/slug-eslestir";
 import { htmlKapat } from "@/lib/icerik-html";
-import { kaynaklariAl } from "@/lib/kaynaklar";
+import { kaynaklariAl, kaynakcaAl } from "@/lib/kaynaklar";
+import KaynakListesi from "@/app/components/KaynakListesi";
 
 /**
  * force-dynamic KALDIRILDI, yerine ISR.
@@ -525,6 +526,7 @@ export default async function TopicDetailPage({
     (ilgiliAdSayaci.get(ilgiliGorunurAd(k)) ?? 0) > 1;
 
   const kaynaklar = kaynaklariAl(rawData?.meta);
+  const kaynakca = kaynakcaAl(rawData?.meta);
 
   return (
     <div className="min-h-screen bg-slate-50 py-10 px-4 font-sans">
@@ -535,7 +537,7 @@ export default async function TopicDetailPage({
           yol: `/topics/${slug}/${topicSlug}`,
           guncelleme: rawData?.meta?.updatedAt,
           etiketler: Array.isArray(rawData?.meta?.tags) ? rawData.meta.tags : undefined,
-          kaynaklar,
+          kaynaklar: [...kaynaklar, ...(kaynakca?.kaynaklar ?? [])],
         })}
       />
       <JsonLd
@@ -883,7 +885,7 @@ export default async function TopicDetailPage({
                 konteynerine eklenen her öge kayıtlı vurguların ofsetini
                 kaydırabilir. Kaynak yoksa blok HİÇ çizilmez — "kaynak yok"
                 yazısı 500 sayfaya aynı gürültüyü basardı. */}
-            {kaynaklar.length > 0 && (
+            {(kaynaklar.length > 0 || kaynakca) && (
               <section
                 aria-labelledby="kaynaklar-basligi"
                 className="mt-5 bg-white rounded-[2rem] shadow-sm border border-slate-200 p-6 md:p-8"
@@ -894,25 +896,35 @@ export default async function TopicDetailPage({
                 >
                   Kaynaklar
                 </h2>
-                <ol className="list-decimal pl-5 space-y-2 text-sm text-slate-700 leading-snug">
-                  {kaynaklar.map((k, i) => (
-                    <li key={i}>
-                      {k.url ? (
-                        <a
-                          href={k.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-block py-[3px] text-blue-800 underline decoration-blue-200 underline-offset-2 hover:text-blue-950 hover:decoration-blue-800"
-                        >
-                          {k.ad}
-                        </a>
-                      ) : (
-                        k.ad
-                      )}
-                      {k.yil && !k.ad.includes(k.yil) ? ` (${k.yil})` : ""}
-                    </li>
-                  ))}
-                </ol>
+                {kaynaklar.length > 0 && <KaynakListesi kaynaklar={kaynaklar} />}
+                {/* Ortak kaynakça KAPALI başlar: 30+ künye her sayfanın
+                    sonuna kuyruk olmasın. Liste DOM'da duruyor (JSON-LD
+                    `citation` ile aynı küme), yalnızca katlanmış. */}
+                {kaynakca && (
+                  <details className={`group ${kaynaklar.length > 0 ? "mt-4 pt-4 border-t border-slate-100" : ""}`}>
+                    <summary className="flex min-h-[44px] cursor-pointer list-none items-center gap-2 rounded-xl text-sm text-slate-700 hover:text-blue-900 [&::-webkit-details-marker]:hidden">
+                      <span
+                        aria-hidden="true"
+                        className="inline-block text-blue-800 transition-transform group-open:rotate-90"
+                      >
+                        ▸
+                      </span>
+                      <span>
+                        Bu konu <strong className="font-semibold text-slate-900">{kaynakca.baslik}</strong> kaynakçasından
+                        hazırlandı · {kaynakca.kaynaklar.length} kaynak
+                      </span>
+                    </summary>
+                    <div className="mt-3">
+                      <KaynakListesi kaynaklar={kaynakca.kaynaklar} gruplu />
+                      <Link
+                        href={`/kaynakca/${kaynakca.ad}`}
+                        className="mt-4 inline-flex min-h-[44px] items-center text-sm font-semibold text-blue-800 underline decoration-blue-200 underline-offset-2 hover:text-blue-950"
+                      >
+                        Kaynakçanın tamamı ve kullanan konular →
+                      </Link>
+                    </div>
+                  </details>
+                )}
               </section>
             )}
 
