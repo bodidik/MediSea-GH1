@@ -1,0 +1,147 @@
+{
+  "id": "pearl-hema-heparin-induklu-trombositopeni-001",
+  "accessLevel": "premium",
+  "topic": "Heparin İlişkili Trombositopeni (HİT)",
+  "pearls": [
+    {
+      "id": "hit-inci-001",
+      "level": "Klinik",
+      "title": "Dar stokiyometri ve neoantijen",
+      "content": "<p>Trombosit α-granüllerinden salınan katyonik **Trombosit Faktör 4 (PF4)** tetramerleri, negatif yüklü heparin polimerleri ile **~1:1 veya 1:2 dar stokiyometrik oranlarda** elektrostatik olarak bağlanarak konformasyonel değişime uğrar ve neoantijenik epitopları açığa çıkarır.</p>",
+      "trigger": "Patofizyoloji"
+    },
+    {
+      "id": "hit-inci-002",
+      "level": "Klinik",
+      "title": "IgM fazı olmayan hızlı IgG yanıtı",
+      "content": "<p>HİT antikorları baskın olarak **IgG (özellikle IgG1)** sınıfındadır. Marjinal bölge (<em>marginal-zone</em>) B hücreleri tarafından T-hücresinden bağımsız mekanizmayla hızla üretilir; belirgin bir birincil IgM fazı görülmez. Gram-negatif bakteriyel duvar bileşenlerinin PF4 ile yaptığı kompleksler nedeniyle ön-duyarlanma (<em>pre-immunization</em>) gelişebildiğinden, heparinin ilk kullanımında dahi 4–5 gün gibi kısa sürede yüksek titreli IgG sentezlenebilir.</p>",
+      "trigger": "Patofizyoloji"
+    },
+    {
+      "id": "hit-inci-003",
+      "level": "Klinik",
+      "title": "Panselüler immünotromboz",
+      "content": "<p>IgG yapısındaki HİT immün kompleksleri trombosit yüzeyindeki **FcγRIIa (CD32)** reseptörlerini çapraz bağlayarak degranülasyon ve masif prokoagülan mikropartikül salınımı yapar. Aynı reseptör üzerinden **monositler** masif Doku Faktörü (TF) eksprese eder, **nötrofiller** NETosis kaskadını tetikler; PF4-heparin kompleksleri trombomodülin üzerindeki kondroitin sülfata bağlanarak **Aktive Protein C (APC)** jenerasyonunu engeller.</p>",
+      "trigger": "Patofizyoloji"
+    },
+    {
+      "id": "hit-inci-004",
+      "level": "Klinik",
+      "title": "Trombosit nadiri ipucu",
+      "content": "<p>Trombosit düşüşü bazale göre **≥%50**'dir; nadir seviye tipik olarak **&gt;20.000/µL** (medyan ~60.000/µL) düzeyindedir. Trombosit sayısının **&lt;10.000–20.000/µL** altına düşmesi HİT'te son derece nadirdir; görülürse **DİK veya Otoimmün HİT** düşünülmelidir.</p>",
+      "trigger": "Klinik Tablo"
+    },
+    {
+      "id": "hit-inci-005",
+      "level": "Klinik",
+      "title": "Düşük 4Ts skorunun gücü",
+      "content": "<p>4Ts skoru **0–3 puan** olan hastada negatif prediktif değer **&gt;%99.8**'dir; HİT ekarte edilir, antikor testi istenmez ve heparin kesilmez. Orta skorda (4–5) HİT riski **~%10–14**, yüksek skorda (6–8) **~%50–64**'tür.</p>",
+      "trigger": "4Ts Skoru"
+    },
+    {
+      "id": "hit-inci-006",
+      "level": "Klinik",
+      "title": "Yoğun bakım ve CPB'de 4Ts sınırı",
+      "content": "<p>Yoğun bakım ve Kardiyopulmoner Baypas (CPB) hastalarında 4Ts'in pozitif prediktif değeri düşüktür; bu gruplarda **HEP skoru** veya **Lillo-Le Louët skoru** alternatif değerlendirme sağlar.</p>",
+      "trigger": "4Ts Skoru"
+    },
+    {
+      "id": "hit-inci-007",
+      "level": "Klinik",
+      "title": "ELISA OD eşikleri",
+      "content": "<p>**OD &lt;0.40** negatif kabul edilir ve HİT ekarte edilir. **OD 0.40–1.99** belirsiz/orta pozitifliktir; doğrulama için fonksiyonel test (SRA/HIPA) istenmelidir. **OD ≥2.00** (veya yüksek 4Ts skorunda OD ≥1.50) güçlü pozitifliktir; SRA pozitifliği ile korelasyonu **&gt;%90–100**'dür ve ek fonksiyonel test gerekmeksizin HİT tanısını doğrular.</p>",
+      "trigger": "İmmünolojik Testler"
+    },
+    {
+      "id": "hit-inci-008",
+      "level": "Klinik",
+      "title": "OD arttıkça SRA olasılığı",
+      "content": "<p>SRA pozitiflik olasılığı OD &lt;0.40'ta **%0.0–0.1**, OD 0.40–0.99'da **%1–5**, OD 1.00–1.39'da **%18–30**, OD 1.40–1.99'da **%50–58**, OD ≥2.00'da **%89–100**'dür. Yani ELISA sonucu ikili (pozitif/negatif) değil, **büyüklüğüyle** okunmalıdır.</p>",
+      "trigger": "İmmünolojik Testler"
+    },
+    {
+      "id": "hit-inci-009",
+      "level": "Klinik",
+      "title": "LIA/CLIA kombinasyon skoru",
+      "content": "<p>Latex Immunoassay (LIA) 20–30 dakikada, tam otomatik IgG-spesifik Chemiluminescence Immunoassay (CLIA) ~35 dakikada sonuç verir. İki testin puanlanmasıyla elde edilen **LIA/CLIA kombinasyon skoru ≥4**, altın standart SRA ile **%98–99 oranında uyum** sağlar.</p>",
+      "trigger": "İmmünolojik Testler"
+    },
+    {
+      "id": "hit-inci-010",
+      "level": "Klinik",
+      "title": "SRA pozitiflik kriteri",
+      "content": "<p>Terapötik heparin konsantrasyonunda (**0.1–0.3 / 0.5 IU/mL (terapötik düşük doz)**) **&gt;%20 serotonin salınımı** pozitif kabul edilir. Doğrulama için yüksek heparin konsantrasyonunda (**100 IU/mL**) trombosit aktivasyonunun **baskılanması** (<em>inhibition</em>) **şarttır** (heparin bağımlılığı).</p>",
+      "trigger": "Fonksiyonel Testler"
+    },
+    {
+      "id": "hit-inci-011",
+      "level": "Klinik",
+      "title": "Tikagrelor tuzağı",
+      "content": "<p>P2Y12 blokörü **Tikagrelor** alan hastaların serumu, test donör trombositlerini inhibe ederek SRA ve HIPA'da **yalancı negatifliğe** yol açabilir; bu vakalarda akım sitometri (PEA) veya ELISA OD değeri esas alınmalıdır.</p>",
+      "trigger": "Fonksiyonel Testler"
+    },
+    {
+      "id": "hit-inci-012",
+      "level": "Klinik",
+      "title": "SRA-negatif güçlü klinik şüphe",
+      "content": "<p>Klinik olarak güçlü HİT tablosu olup SRA testi negatif gelen vakalarda, ortama ekstra PF4 eklenerek yapılan **PF4-enhanced SRA** veya akım sitometrik **P-Selectin Ekspresyon Tayini (PEA)** yapılmalıdır.</p>",
+      "trigger": "Fonksiyonel Testler"
+    },
+    {
+      "id": "hit-inci-013",
+      "level": "Klinik",
+      "title": "Otoimmün HİT'in tanımı",
+      "content": "<p>Klasik HİT antikorları heparin bağımlı çalışırken, **aHIT antikorları heparin yokluğunda da (0 IU/mL heparinde) güçlü trombosit aktivasyonu** yapar. Alt tipleri: heparin kesildikten ≥5 gün sonra başlayan **delayed-onset HİT**, heparin kesilmesine rağmen trombositopeninin &gt;1–2 hafta uzadığı **refrakter/persiste HİT**, yalnızca kateter yıkama dozlarıyla indüklenen **flush HİT** ve **fondaparinuks ilişkili HİT**.</p>",
+      "trigger": "Otoimmün HİT"
+    },
+    {
+      "id": "hit-inci-014",
+      "level": "Klinik",
+      "title": "Spontan HİT tanı kriterleri",
+      "content": "<p>Yakın zamanda heparin maruziyeti olmaksızın (sıklıkla diz protezi operasyonları veya enfeksiyonlar sonrasında) gelişen aHIT tablosudur. Tanı için: **1)** heparin maruziyetinin olmaması, **2)** yüksek ELISA OD pozitifliği, **3)** SRA'da **0 IU/mL heparinde &gt;%50 serotonin salınımı** ve 100 IU/mL heparinde inhibisyon gösterilmesi şarttır.</p>",
+      "trigger": "Otoimmün HİT"
+    },
+    {
+      "id": "hit-inci-015",
+      "level": "Klinik",
+      "title": "VITT laboratuvar paradoksu",
+      "content": "<p>Adenoviral aşılar veya enfeksiyonlar (örn. CMV, adenovirüs) sonrası gelişen VITT, heparinden tamamen bağımsız bir anti-PF4 bozukluğudur. **LIA/CLIA hızlı testleri negatif** sonuç verir; tanı **ELISA OD yüksekliği** ve PF4 eklenmiş fonksiyonel testlerle konur. Tedavide **IVIG ve Plazma Değişimi (PEx)** esastır.</p>",
+      "trigger": "VITT"
+    },
+    {
+      "id": "hit-inci-016",
+      "level": "Klinik",
+      "title": "Anti-PF4 bozukluklarının ayrımı",
+      "content": "<p>**Klasik HİT** heparin bağımlıdır, hızlı test ve ELISA pozitiftir. **Otoimmün HİT** hem heparin bağımlı hem bağımsız aktivasyon yapar, ELISA yüksek pozitiftir. **Spontan HİT**'te heparin maruziyeti yoktur, 0 U/mL'de &gt;%50 salınım görülür. **VITT**'te hızlı test **negatif**, ELISA çok yüksek pozitiftir ve aktivasyon PF4 uyarısıyla heparinden bağımsızdır.</p>",
+      "trigger": "Anti-PF4 Spektrumu"
+    },
+    {
+      "id": "hit-inci-017",
+      "level": "Klinik",
+      "title": "Varfarin ve venöz uzuv gangreni",
+      "content": "<p>Trombositler &gt;150.000/µL olmadan Varfarin kullanımı, kısa yarı ömürlü **Protein C**'yi hızla düşürürken prokoagülan faktörler dolaşımda kalır; sonuç **Venöz Ekstremite Gangreni** ve mikrovasküler nekrozdur. Bu tabloda INR'nin **&gt;4.0–5.0** yükselmesi antikoagülasyonu değil Protein C çöküşünü yansıtır. Akut HİT'te Varfarin derhal kesilir ve **IV K Vitamini (5–10 mg)** verilir.</p>",
+      "trigger": "Varfarin ve Gangren"
+    },
+    {
+      "id": "hit-inci-018",
+      "level": "Klinik",
+      "title": "Argatroban ve INR yanılgısı",
+      "content": "<p>Argatroban hepatobiliyer atılımlıdır; **böbrek yetmezliği ve hemodiyalizde ilk tercihtir**, aPTT ile izlenir (bazalin 1.5–3.0 katı). PT/INR'yi yapay olarak yükselttiğinden Varfarin geçişinde kombinasyon döneminde hedef **INR &gt;4.0** olmalı, DTI kesildikten 4 saat sonraki INR veya kromojenik Faktör X ile doğrulanmalıdır.</p>",
+      "trigger": "Antikoagülan Tedavi"
+    },
+    {
+      "id": "hit-inci-019",
+      "level": "Klinik",
+      "title": "DİK'te aPTT yanılgısı",
+      "content": "<p>Şiddetli HİT'te gelişen tüketim koagülopatisi (DİK) zemininde aPTT bazal olarak uzar. Argatroban infüzyonu aPTT'ye bakılarak aşırı kısılırsa yetersiz antikoagülasyon nedeniyle mikrovasküler tromboz ilerler; bu olgularda **anti-IIa kromojenik DTI düzeyi** takibi tercih edilmelidir.</p>",
+      "trigger": "Antikoagülan Tedavi"
+    },
+    {
+      "id": "hit-inci-020",
+      "level": "Klinik",
+      "title": "Plazma değişiminde TDP ve remote HİT",
+      "content": "<p>Plazma değişiminde replasman sıvısı olarak albümin değil **Taze Donmuş Plazma (TDP)** tercih edilir; plazmadaki doğal IgG2 FcγRIIa'yı ilave bloke eder. Antikorlar tipik olarak **50–100 gün içinde** kaybolur; SRA ve ELISA tamamen negatife dönmüşse (**Remote HİT**) zorunlu kardiyak cerrahide yalnızca intraoperatif kısa süreli UFH verilebilir, ameliyat öncesi ve sonrası non-heparin antikoagülan kullanılır.</p>",
+      "trigger": "İmmünomodülasyon ve Cerrahi"
+    }
+  ]
+}
