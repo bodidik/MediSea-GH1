@@ -43,7 +43,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
               <Link href="/topics/hematoloji/heparin-aracili-trombositopeni-hit" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Heparin Aracılı Trombositopeni (HİT)
+                Heparin İlişkili Trombositopeni (HİT)
               </Link>
             </li>
             <li>
