@@ -5,6 +5,7 @@ import { useStudySync } from '@/app/hooks/useStudySync';
 import { girisiKaydet } from '@/app/lib/gecmis';
 import DenizSurprizleri from '@/app/components/DenizSurprizleri';
 import DumenImleci from '@/app/components/DumenImleci';
+import { DilEsitle } from '@/app/components/DilDegistir';
 
 function SyncBridge() {
   useStudySync();
@@ -29,6 +30,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
       <DenizSurprizleri />
       {/* Tıklayınca ve sayfa geçişi sürerken imleçteki dümen döner */}
       <DumenImleci />
+      {/* <html lang> adresin diline eşitlenir — bkz. DilDegistir.tsx */}
+      <DilEsitle />
       {children}
     </SessionProvider>
   );

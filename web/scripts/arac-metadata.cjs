@@ -143,6 +143,23 @@ function aracKonuHarita() {
   }
 }
 
+/**
+ * İngilizcesi olan Türkçe yollar — `scripts/dil-index.cjs` üretir. Çevrilmiş
+ * araçta layout `hreflang` çiftini basar; kural `lib/dil.ts` →
+ * `dilAlternatifleri` ile AYNI (tr · en · x-default=tr). İkisi ayrışırsa
+ * `dil-denetim --cikti` derlenmiş HTML'de yakalar. Dosya yoksa boş küme:
+ * çift uydurulmaz.
+ */
+function cevrilmisYollar() {
+  try {
+    const d = JSON.parse(fs.readFileSync(path.join(KOK, 'content', 'dil-index.json'), 'utf8'));
+    return new Set(Array.isArray(d.sayfalar) ? d.sayfalar : []);
+  } catch {
+    return new Set();
+  }
+}
+const CEVRILMIS = cevrilmisYollar();
+
 function kardesHarita() {
   const harita = new Map();
   for (const kat of kategorileriOku()) {
@@ -372,7 +389,11 @@ import type { ReactNode } from "react";${kardesImport}import { JsonLd, aracSemas
 export const metadata: Metadata = {
   title: ${JSON.stringify(baslik)},
   description: ${JSON.stringify(aciklama)},
-  alternates: { canonical: ${JSON.stringify(yol)} },
+  alternates: { canonical: ${JSON.stringify(yol)}${
+    CEVRILMIS.has(yol)
+      ? `, languages: ${JSON.stringify({ tr: yol, en: '/en' + yol, 'x-default': yol })}`
+      : ''
+  } },
   openGraph: {
     type: "website",
     title: ${JSON.stringify(baslik)},

@@ -27,8 +27,9 @@ npm run build      # CI 4. kapı
 
 Bu bölüm bir dönem *"CI sırayla `npm ci → lint → typecheck → build` çalıştırır"*
 diyordu. YANLIŞTI. `.github/workflows/ci.yml`in Web işi bugün (26 Eyl 2026)
-**yirmi üç adım** çalıştırıyor: üçü kurulum (checkout · setup-node · npm ci),
-**yirmisi kapı**. Sıra şu ve `build` EN SONDA:
+**yirmi yedi adım** çalıştırıyor: üçü kurulum (checkout · setup-node · npm ci),
+**yirmi dördü kapı**. Sıra şu ve `build` artık SON DEĞİL — arkasında
+derlenmiş HTML'i ölçen dil kapısı var:
 
 ```
 npm ci → lint → typecheck
@@ -40,8 +41,10 @@ npm ci → lint → typecheck
   → ic-bilesen-denetim (+ --negatif)
   → saydamlik-denetim --kapi (+ --negatif)
   → renk-cifti-denetim --kapi (+ --negatif)
+  → dil-index --kontrol → dil-denetim (+ --negatif)
   → yorum-korlugu-denetim
   → build
+  → dil-denetim --cikti .next
 ```
 
 **BU SAYIYI OKUMA, SAYDIR** — liste bir kez 15 yazıyordu, gerçek 17'ydi;
@@ -62,11 +65,12 @@ Yerelde HEPSİNİ sürmenin yolu (`npm ci` BİLEREK yok — çalışan ortamı b
 
 ```bash
 cd web
-for k in link-denetim.cjs soru-denetim.cjs          "arac-metadata.cjs --kontrol" "baslik-index.cjs --kontrol"          "ilgili-index.cjs --kontrol" "arac-konu-index.cjs --kontrol"          kaynak-denetim.cjs "kaynak-denetim.cjs --negatif"          arayuz-denetim.cjs "arayuz-denetim.cjs --negatif"          ic-bilesen-denetim.cjs "ic-bilesen-denetim.cjs --negatif"          "saydamlik-denetim.cjs --kapi" "saydamlik-denetim.cjs --negatif"          "renk-cifti-denetim.cjs --kapi" "renk-cifti-denetim.cjs --negatif"          yorum-korlugu-denetim.cjs; do
+for k in link-denetim.cjs soru-denetim.cjs          "arac-metadata.cjs --kontrol" "baslik-index.cjs --kontrol"          "ilgili-index.cjs --kontrol" "arac-konu-index.cjs --kontrol"          kaynak-denetim.cjs "kaynak-denetim.cjs --negatif"          arayuz-denetim.cjs "arayuz-denetim.cjs --negatif"          ic-bilesen-denetim.cjs "ic-bilesen-denetim.cjs --negatif"          "saydamlik-denetim.cjs --kapi" "saydamlik-denetim.cjs --negatif"          "renk-cifti-denetim.cjs --kapi" "renk-cifti-denetim.cjs --negatif"          "dil-index.cjs --kontrol" dil-denetim.cjs "dil-denetim.cjs --negatif"          yorum-korlugu-denetim.cjs; do
   node scripts/$k >/dev/null 2>&1 && echo "OK    $k" || echo "DUSTU $k"
 done
 npm run lint && npm run typecheck
 NEXT_DIST_DIR=.next-verify npm run build
+node scripts/dil-denetim.cjs --cikti .next-verify
 ```
 
 CI ilk hatada durduğu için **bir adımı düzeltmek arkasındakini açığa
@@ -294,6 +298,8 @@ node scripts/baslik-index.cjs    # yeni konu eklendiğinde (paylaşım kartı ba
 node scripts/ilgili-index.cjs    # yeni konu eklendiğinde (İlgili Konular bağları)
 node scripts/arac-konu-index.cjs # yeni konu VEYA araç eklendiğinde (araç↔konu bağları)
                                  # sonra arac-metadata.cjs — araç layout'u bu indeksi basıyor
+node scripts/dil-index.cjs       # app/en'e sayfa eklenince/silinince (hreflang · site haritası)
+                                 # sonra arac-metadata.cjs — çevrilmiş aracın layout'u hreflang basıyor
 node scripts/plan-ver.cjs --liste  # kullanıcı planlarını görmek/değiştirmek için
 ```
 
@@ -424,6 +430,31 @@ kendiliğinden elenir, en yakın gelecek sınav seçilir.
 
 ---
 
+## İki dil — Türkçe öncelik, İngilizce iddiasız (Faz 0, 26 Eyl 2026)
+
+Kullanıcı kararı: Türkçe adresler ÖNEKSİZ kalır; İngilizce yalnızca
+GERÇEKTEN çevrilmiş sayfa için `/en/...` altında açılır (içi Türkçe `/en`
+sayfası = kopya içerik). Önce hesaplayıcılar pilot (10–15), konu anlatımı
+ve premium Türkçe kalır. **İngilizce tıbbi metnin son onayı kullanıcıda.**
+
+| dosya | iş |
+|---|---|
+| `lib/dil.ts` | dil adresten okunur · `karsiYol` · `dilAlternatifleri` (hreflang) · `sozluk()` + `bicimle()` |
+| `content/dil-index.json` | çevrilmiş Türkçe yollar — `dil-index.cjs` `app/en`den üretir, ELLE yazılmaz |
+| `app/en/layout.tsx` | `<div lang="en">` kabı + og:locale en_US + İngilizce kart; canonical VERMEZ |
+| `DilDegistir.tsx` | değiştirici yalnız karşılık varsa çizilir; `DilEsitle` `<html lang>`i istemcide eşitler |
+| `*.dil.json` | `{tr:{…}, en:{…}}` — eksik anahtarı `tsc`, fazlayı/yer tutucuyu/Türkçeyi kapı yakalar |
+
+**İngilizce sayfa eklerken:** sayfa `app/en/<türkçe yol>/page.tsx` ·
+metadata `rotaMeta({ …, yol: "<TR yolu>", dil: "en" })` · metin `*.dil.json` ·
+`dil-index.cjs` → `arac-metadata.cjs` → derle → `dil-denetim --cikti`.
+
+**Faz 1 önkoşulları (ölçüldü, ÇÖZÜLMEDİ):**
+- **Sayı ayrıştırıcı İngilizce yazımı yanlış okur** (`parseLocaleNumber` sürüldü): `5,000`→**5**, `12,000.5`→12, `1,500`→1.5; ters yönde `5.000`→5000. Dile göre kural klinik karar — araç açılmadan önce.
+- `/en/tools/*` `app/tools/layout.tsx`in DIŞINDA: noscript şeridi, altbilgi, `ToolTopNav`, paylaş düğmesi Türkçe ya da yok — kendi kabuğu gerekir.
+- Türkçe sayfada dil değiştirici henüz HİÇBİR YERE bağlı değil (yerini ilk pilotta gör).
+- Kapı istemci metnini (sonuç kartı, `DenizSurprizleri`) göremez; kör noktası listede olmayan ve özel harfsiz sözcük (`Boy (cm)`). Uçtan uca ölçüm: gerçek `bmi` derlemesinde 18 Türkçe parçanın 15'i yakalandı, `-oloji` eki + `cinsiyet` eklendi.
+
 ## Ölçüm arşivi — `CLAUDE-arsiv.md`
 
 Kapanmış kusur sınıflarının ve tarihli ölçüm anlatılarının ayrıntılı kayıtları
@@ -477,6 +508,7 @@ arac-metadata --kontrol · baslik-index --kontrol · ilgili-index --kontrol
 arac-konu-index --kontrol · kaynak-denetim (+ --negatif)
 arayuz-denetim (+ --negatif) · ic-bilesen-denetim (+ --negatif)
 saydamlik-denetim --kapi (+ --negatif) · renk-cifti-denetim --kapi (+ --negatif)
+dil-index --kontrol · dil-denetim (+ --negatif) · dil-denetim --cikti (build'den SONRA)
 yorum-korlugu-denetim   (meta test: 15 denetimi tohumlu agacta surer)
 ```
 
@@ -685,7 +717,7 @@ belgeden kopyalanmadı.
 | premium başlık · soru | **51** · **568** | 44 · 454 |
 | premium kart · vaka · inci | 1492 · 11 · **13** | 1492 · 11 · (yok) |
 | araç ↔ konu bağı | **112 çift** · 95 konu · 31 araç | (yok) |
-| CI | Web işi **23 adım** (20 kapı) — 26 Eyl'de `kaynak-denetim` eklendi | 21 / 18 |
+| CI | Web işi **27 adım** (24 kapı) — 26 Eyl'de `kaynak-denetim`, sonra dört dil adımı eklendi | 21 / 18 |
 | duyurusu olan araç | `SonucDuyuru` **108 / 136**; herhangi bir canlı bölge **128 / 136** (9 Eyl) | 105 |
 
 `arac-konu-index` 476 konu dosyası sayıyor, yüzeyler 430 diyor — fark

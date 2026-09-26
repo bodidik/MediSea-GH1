@@ -5,6 +5,7 @@ import type { MetadataRoute } from "next";
 import { siteUrl } from "@/lib/site";
 import { isoTarih } from "@/lib/jsonld";
 import { yolKodla } from "@/lib/slug";
+import { dilAlternatifleri, enYolu } from "@/lib/dil";
 
 /**
  * Site haritası dosya sisteminden üretiliyor — sayfaların okuduğu kaynağın
@@ -244,5 +245,36 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   }
 
-  return kayitlar;
+  return ikiDilli(kayitlar, base);
+}
+
+/**
+ * İNGİLİZCESİ OLAN SAYFALAR İKİ DİLLİ GİRER.
+ *
+ * Çevrilmiş her Türkçe kayda `hreflang` çifti eklenir ve İngilizce adres
+ * AYNI çiftle ayrı bir kayıt olarak girer — arama motoru çiftin iki
+ * ucunda da karşılıklı beyan bekliyor, tek yönlü beyanı yok sayıyor.
+ * Liste `lib/dil.ts`ten (indeks `app/en` ağacından üretiliyor); çevrilmemiş
+ * sayfanın kaydı bu geçişten DEĞİŞMEDEN çıkar.
+ *
+ * Çevrilmiş olup haritada Türkçesi bulunmayan sayfa (ör. haritaya bilerek
+ * alınmayan bir yol) burada da eklenmez: İngilizcesi Türkçesinin kaderini
+ * paylaşır.
+ */
+function ikiDilli(kayitlar: Kayit[], base: string): Kayit[] {
+  const cikti: Kayit[] = [];
+  for (const kayit of kayitlar) {
+    const yol = kayit.url.slice(base.length) || "/";
+    const diller = dilAlternatifleri(yol);
+    if (!diller) {
+      cikti.push(kayit);
+      continue;
+    }
+    const languages = Object.fromEntries(
+      Object.entries(diller).map(([dil, y]) => [dil, `${base}${y}`])
+    );
+    cikti.push({ ...kayit, alternates: { languages } });
+    cikti.push({ ...kayit, url: `${base}${enYolu(yol)}`, alternates: { languages } });
+  }
+  return cikti;
 }

@@ -1,3 +1,5 @@
+import { type Dil, dilAlternatifleri, enYolu } from "@/lib/dil";
+
 /**
  * Sitenin kendi adresi — canonical, site haritası ve paylaşım etiketleri
  * buradan besleniyor.
@@ -55,16 +57,23 @@ export const SITE_ACIKLAMA =
 export function rotaMeta(opts: {
   baslik: string;
   aciklama: string;
+  /** Sayfanın TÜRKÇE adresi — İngilizce sayfada da (karşılığı buradan türer). */
   yol: string;
+  /** Varsayılan `tr`. `en` verilince canonical `/en` önekli adres olur. */
+  dil?: Dil;
 }): {
   title: string;
   description: string;
-  alternates: { canonical: string };
+  alternates: { canonical: string; languages?: Record<string, string> };
 } {
-  const { baslik, aciklama, yol } = opts;
+  const { baslik, aciklama, yol, dil = "tr" } = opts;
+  const canonical = dil === "en" ? enYolu(yol) : yol;
+  /* Çift yalnızca İngilizcesi GERÇEKTEN varsa basılır (bkz. lib/dil.ts);
+     çevrilmemiş sayfanın çıktısı bu değişiklikten önceki hâliyle birebir. */
+  const languages = dilAlternatifleri(yol);
   return {
     title: baslik,
     description: aciklama,
-    alternates: { canonical: yol },
+    alternates: languages ? { canonical, languages } : { canonical },
   };
 }

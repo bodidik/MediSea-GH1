@@ -88,7 +88,7 @@ export default function SiteHeader() {
   /* Gezinmede bulunulan sayfayı işaretlemek için — `aria-current` (bkz. aşağıdaki
      branş şeridi). Ölçüldü: uygulamada hiçbir GEZİNME bağlantısı bunu
      taşımıyordu; tek kullanım araç kategorisi süzgeciydi (o bir filtre, gezinme
-     değil) ve ölü koddaki `LangSwitch`. */
+     değil) ve ölü koddaki `LangSwitch` (26 Eyl 2026'da silindi). */
   const suAnkiYol = usePathname();
   const { data: session, status } = useSession();
   // "loading" sırasında hiçbir şey basılmıyor: giriş yapmış kullanıcıya önce

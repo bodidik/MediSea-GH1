@@ -71,6 +71,10 @@ const KAPSAM_DISI = new Set([
   // Konu bölümlerini/blokları kendi içinde karşılaştırıyor: tamamen JSON.
   // Kendi --kontrol kipinde negatif, pozitif ve körlük tohumu var.
   'kopya-bolum-denetim.cjs',
+  // Kaynak kodu TARAMIYOR: `*.dil.json` sözlüklerini (JSON) ve DERLENMİŞ
+  // HTML'i okuyor; HTML yorumlarını (`<!-- -->`) kendisi eliyor. Kendi
+  // --negatif kipinde negatif, pozitif ve muaf alt ağaç tohumu var.
+  'dil-denetim.cjs',
 ]);
 
 /** Hedef şekiller SADECE yorumda; kod tarafı tertemiz. */

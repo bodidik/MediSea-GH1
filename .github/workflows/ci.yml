@@ -155,6 +155,21 @@ jobs:
         - name: Renk çifti denetimi kendini sınıyor mu
           run: node scripts/renk-cifti-denetim.cjs --negatif
 
+        # İKİ DİL (26 Eyl 2026): Türkçe öneksiz, İngilizce yalnızca ÇEVRİLMİŞ
+        # sayfalar için `/en` altında (bkz. web/lib/dil.ts). İndeks `app/en`
+        # ağacından üretiliyor ve site haritası, hreflang, dil değiştirici onu
+        # okuyor — bayatlarsa çevrilmiş sayfa arama motoruna hiç bildirilmez.
+        # Sözlük kapısı `*.dil.json`da anahtar/yer tutucu eşitliğini ve
+        # İngilizce değerde Türkçe kalmadığını denetler.
+        - name: Dil indeksi senkron mu
+          run: node scripts/dil-index.cjs --kontrol
+
+        - name: Dil sözlükleri
+          run: node scripts/dil-denetim.cjs
+
+        - name: Dil denetimi kendini sınıyor mu
+          run: node scripts/dil-denetim.cjs --negatif
+
         # DENETİMLERİN KENDİSİ ÇÜRÜYOR MU — meta test.
         #
         # Ölçüldü: `web/scripts` altında 30 betik var ve CI bunların yalnızca
@@ -180,6 +195,13 @@ jobs:
             # o kullanılır.
             MONGODB_URI: ${{ secrets.MONGODB_URI || 'mongodb://127.0.0.1:27017/ci-build' }}
           run: npm run build
+
+        # DERLEMEDEN SONRA — build artık son adım DEĞİL. Kaynak değil
+        # kullanıcıya giden HTML ölçülüyor: `/en` sayfasında Türkçe metin,
+        # eksik lang/canonical/hreflang/og:locale ve Türkçe karşılıkta eksik
+        # hreflang çifti. Çevrilmiş sayfa yoksa "0 sayfa" yazar ve geçer.
+        - name: Dil denetimi (derlenmiş HTML)
+          run: node scripts/dil-denetim.cjs --cikti .next
 
   server:
       name: Server (Express) + Docker push
