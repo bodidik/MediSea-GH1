@@ -986,6 +986,18 @@
         "eslesen": "Anyon Açığı"
       }
     ],
+    "onkoloji/buprenorfin-rotasyonu-ve-induksiyon": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
+      }
+    ],
     "onkoloji/febril-notropeni-cisne-indexi": [
       {
         "slug": "cisne",
@@ -1153,8 +1165,8 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik",
-        "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik",
+        "yol": "onkoloji/buprenorfin-rotasyonu-ve-induksiyon",
+        "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması",
         "eslesen": "QTc"
       },
       {
@@ -1168,8 +1180,8 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
-        "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
+        "yol": "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik",
+        "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik",
         "eslesen": "QTc"
       },
       {
@@ -1178,13 +1190,13 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "endokrinoloji/men1-osilodrostat-mineralokortikoid",
-        "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi",
+        "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
+        "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
         "eslesen": "QTc"
       },
       {
-        "yol": "endokrinoloji/men1-osilodrostat-yan-etkiler",
-        "baslik": "Osilodrostat: Yan Etki Profili ve Klinik Yönetim Protokolleri",
+        "yol": "endokrinoloji/men1-osilodrostat-mineralokortikoid",
+        "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi",
         "eslesen": "QTc"
       }
     ],
@@ -1393,6 +1405,11 @@
         "eslesen": "eGFR"
       },
       {
+        "yol": "onkoloji/buprenorfin-rotasyonu-ve-induksiyon",
+        "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması",
+        "eslesen": "eGFR"
+      },
+      {
         "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
         "baslik": "Palyatif Bakımda Ağrı Yönetimi",
         "eslesen": "eGFR"
@@ -1400,11 +1417,6 @@
       {
         "yol": "nefroloji/iga-nefropatisi-berger",
         "baslik": "IgA Nefropatisi ve IgA Vasküliti (HSP)",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "kardiyoloji/direncli-hipertansiyon-yeni-nesil",
-        "baslik": "Dirençli ve Refrakter Hipertansiyon: Yeni Nesil Tedaviler",
         "eslesen": "eGFR"
       }
     ],
@@ -1992,10 +2004,10 @@
     ]
   },
   "olcum": {
-    "konu": 515,
+    "konu": 516,
     "arac": 257,
-    "araciOlanKonu": 133,
+    "araciOlanKonu": 134,
     "konusuOlanArac": 58,
-    "bag": 174
+    "bag": 176
   }
 }

@@ -47,8 +47,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik
+              <Link href="/topics/onkoloji/buprenorfin-rotasyonu-ve-induksiyon" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Buprenorfin Rotasyonu ve İndüksiyon Şeması
               </Link>
             </li>
             <li>
