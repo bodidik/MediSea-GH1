@@ -4005,11 +4005,28 @@
    "baslik": "Sistemik Hastalıkların Özofagus Tutulumu"
   }
  ],
+ "genel-dahiliye/asamali-lenfodem-cerrahisi": [
+  {
+   "brans": "genel-dahiliye",
+   "slug": "icg-lenfografisi-ve-evreleme",
+   "baslik": "ICG Lenfografisi ve Dermal Backflow Evrelemeleri"
+  },
+  {
+   "brans": "genel-dahiliye",
+   "slug": "lenfodem",
+   "baslik": "Lenfödem"
+  }
+ ],
  "genel-dahiliye/icg-lenfografisi-ve-evreleme": [
   {
    "brans": "genel-dahiliye",
    "slug": "ileri-evre-lenfodem-kombine-tedavi",
    "baslik": "İleri Evre Lenfödemde Kombine Tedavi Stratejileri ve Multimodal Yaklaşımlar"
+  },
+  {
+   "brans": "genel-dahiliye",
+   "slug": "asamali-lenfodem-cerrahisi",
+   "baslik": "Aşamalı (Staged) Lenfödem Cerrahisi: SAPL–VLNT Zamanlaması ve Donör Saha Seçimi"
   }
  ],
  "genel-dahiliye/ileri-evre-lenfodem-kombine-tedavi": [
@@ -4022,11 +4039,21 @@
  "genel-dahiliye/kikuchi-fujimoto-sle": [
   {
    "brans": "genel-dahiliye",
+   "slug": "ileri-evre-lenfodem-kombine-tedavi",
+   "baslik": "İleri Evre Lenfödemde Kombine Tedavi Stratejileri ve Multimodal Yaklaşımlar"
+  },
+  {
+   "brans": "genel-dahiliye",
    "slug": "lenfodem",
    "baslik": "Lenfödem"
   }
  ],
  "genel-dahiliye/lenfadenopati-yaklasimi": [
+  {
+   "brans": "genel-dahiliye",
+   "slug": "ileri-evre-lenfodem-kombine-tedavi",
+   "baslik": "İleri Evre Lenfödemde Kombine Tedavi Stratejileri ve Multimodal Yaklaşımlar"
+  },
   {
    "brans": "genel-dahiliye",
    "slug": "lenfodem",
@@ -4036,8 +4063,8 @@
  "genel-dahiliye/lenfodem": [
   {
    "brans": "genel-dahiliye",
-   "slug": "lenfadenopati-yaklasimi",
-   "baslik": "Lenfadenopati (LAP)"
+   "slug": "asamali-lenfodem-cerrahisi",
+   "baslik": "Aşamalı (Staged) Lenfödem Cerrahisi: SAPL–VLNT Zamanlaması ve Donör Saha Seçimi"
   }
  ],
  "gogus/sarkoidoz-ana": [
