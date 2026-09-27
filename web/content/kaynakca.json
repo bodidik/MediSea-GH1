@@ -5923,5 +5923,197 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "aldosteron": {
+    "baslik": "Aldosteron ve böbrek fizyolojisi",
+    "aciklama": "Aldosteron sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler ve kitap bölümleri yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Ferreira JP, Marques P, Leite AR, Neves JS, Zannad F, Pitt B. Mineralocorticoid Receptor Antagonists and Aldosterone Synthase Inhibitors: Agent Comparison With Implications for Clinical Practice and Trial Design. J Card Fail 2026;32(3):633-646",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.cardfail.2025.05.002",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hoogstraten CA, Hoenderop JG, de Baaij JHF. Mitochondrial Dysfunction in Kidney Tubulopathies. Annu Rev Physiol 2024;86(1):379-403",
+        "yil": 2024,
+        "url": "https://doi.org/10.1146/annurev-physiol-042222-025000",
+        "tur": "makale"
+      },
+      {
+        "ad": "Huart J, Jouret F. Non-Steroidal Mineralocorticoid Receptor Antagonists: A Paradigm Shift in the Management of Diabetic Nephropathy. Kidney Blood Press Res 2025;50(1):267-275",
+        "yil": 2025,
+        "url": "https://doi.org/10.1159/000545286",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kline GA, Leung AA, Orton D, MacFarlane J, Gurnell M. Is It Time to Retire Aldosterone Suppression Testing? Am J Hypertens 2026;39(4):473-481",
+        "yil": 2026,
+        "url": "https://doi.org/10.1093/ajh/hpaf163",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ksiazek SH, Hu L, Andò S, ve ark. Renin–Angiotensin–Aldosterone System: From History to Practice of a Secular Topic. Int J Mol Sci 2024;25(7):4035",
+        "yil": 2024,
+        "url": "https://doi.org/10.3390/ijms25074035",
+        "tur": "makale"
+      },
+      {
+        "ad": "Laffin LJ, Nissen SE. Aldosterone synthase inhibitors for hypertension: A breakthrough facing barriers to adoption. PLoS Med 2026;23(2):e1004900",
+        "yil": 2026,
+        "url": "https://doi.org/10.1371/journal.pmed.1004900",
+        "tur": "makale"
+      },
+      {
+        "ad": "Liu Z, Xie B, Pang S, ve ark. Aldosterone's impact on kidney health: exploring the benefits of mineralocorticoid receptor antagonists for renal protection. Am J Transl Res 2024;16(8):4246-4255",
+        "yil": 2024,
+        "url": "https://doi.org/10.62347/NRGG6465",
+        "tur": "makale"
+      },
+      {
+        "ad": "Mazzieri A, Timio F, Patera F, Trepiccione F, Bonomini M, Reboldi G. Aldosterone Synthase Inhibitors for Cardiorenal Protection: Ready for Prime Time? Kidney Blood Press Res 2024;49(1):1041-1056",
+        "yil": 2024,
+        "url": "https://doi.org/10.1159/000542621",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ndumele CE, Rangaswami J, Chow SL, ve ark. Cardiovascular-Kidney-Metabolic Health: A Presidential Advisory From the American Heart Association. Circulation 2023;148(20):1606-1635",
+        "yil": 2023,
+        "url": "https://doi.org/10.1161/CIR.0000000000001184",
+        "tur": "makale"
+      },
+      {
+        "ad": "Otsuka H, Abe M, Kobayashi H. The Effect of Aldosterone on Cardiorenal and Metabolic Systems. Int J Mol Sci 2023;24(6):5370",
+        "yil": 2023,
+        "url": "https://doi.org/10.3390/ijms24065370",
+        "tur": "makale"
+      },
+      {
+        "ad": "Triebel H, Castrop H. The renin angiotensin aldosterone system. Pflugers Arch 2024;476(5):705-713",
+        "yil": 2024,
+        "url": "https://doi.org/10.1007/s00424-024-02908-1",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ueda K, Shimosawa T. Regulating distal nephron functions and salt sensitivity. Am J Physiol Renal Physiol 2024;327(4):F566-F580",
+        "yil": 2024,
+        "url": "https://doi.org/10.1152/ajprenal.00103.2024",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chertow GM, Marsden PA, Taal MW, Yu ASL, ed. Brenner and Rector's The Kidney. 10. baskı. Elsevier; 2015. Bölüm: Interpretation of Electrolyte and Acid-Base Parameters in Blood and Urine",
+        "yil": 2015,
+        "url": "https://shop.elsevier.com/books/brenner-and-rectors-the-kidney/skorecki/978-1-4557-4836-5",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Hall JE, Hall ME. Guyton and Hall Textbook of Medical Physiology. 14. baskı. Elsevier; 2020. Bölüm: Renal Regulation of Potassium, Calcium, Phosphate, and Magnesium; Integration of Renal Mechanisms for Control of Blood Volume and Extracellular Fluid Volume",
+        "yil": 2020,
+        "url": "https://shop.elsevier.com/books/guyton-and-hall-textbook-of-medical-physiology/hall/978-0-323-59712-8",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Kliegman R, St Geme JW III, ed. Nelson Textbook of Pediatrics. 21. baskı. Elsevier; 2019. Bölüm: Physiology of the Adrenal Gland",
+        "yil": 2019,
+        "url": "https://shop.elsevier.com/books/nelson-textbook-of-pediatrics-2-volume-set/kliegman/978-0-323-52950-1",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Koeppen BM, Stanton BA. Berne & Levy Physiology. 7. baskı. Elsevier; 2017. Bölüm: Potassium, Calcium, and Phosphate Homeostasis",
+        "yil": 2017,
+        "url": "https://shop.elsevier.com/books/berne-and-levy-physiology/koeppen/978-0-323-39394-2",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Koeppen BM, Stanton BA. Renal Physiology. 6. baskı. Elsevier; 2018. Bölüm: Regulation of Potassium Balance",
+        "yil": 2018,
+        "url": "https://shop.elsevier.com/books/renal-physiology/koeppen/978-0-323-59568-1",
+        "tur": "kitap"
+      },
+      {
+        "ad": "McPherson RA, Pincus MR, ed. Henry's Clinical Diagnosis and Management by Laboratory Methods. 23. baskı. Elsevier; 2016. Bölüm: Evaluation of Renal Function, Water, Electrolytes and Acid-Base Function",
+        "yil": 2016,
+        "url": "https://shop.elsevier.com/books/henrys-clinical-diagnosis-and-management-by-laboratory-methods/mcpherson/978-0-323-29568-0",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Melmed S, Koenig RJ, Rosen CJ, Auchus RJ, Goldfine AB, ed. Williams Textbook of Endocrinology. 14. baskı. Elsevier; 2019. Bölümler: The Adrenal Cortex; Endocrine Hypertension",
+        "yil": 2019,
+        "url": "https://shop.elsevier.com/books/williams-textbook-of-endocrinology/melmed/978-0-323-55596-8",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Staub O, Loffing J. Mineralocorticoid Action in the Aldosterone Sensitive Distal Nephron. In: Alpern RJ, Caplan MJ, Moe OW, ed. Seldin and Giebisch's The Kidney. 5. baskı. Elsevier; 2013. p. 1181-1211",
+        "yil": 2013,
+        "url": "https://doi.org/10.1016/B978-0-12-381462-3.00035-5",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Weiner ID, Wingo CS. Endocrine Causes of Hypertension—Aldosterone. In: Floege J, Johnson RJ, Feehally J, ed. Comprehensive Clinical Nephrology. 4. baskı. Elsevier; 2010. p. 469-476",
+        "yil": 2010,
+        "url": "https://doi.org/10.1016/B978-0-323-05876-6.00038-1",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Colucci WS. Pathophysiology of heart failure: Neurohumoral adaptations. UpToDate; son güncelleme 7 Kas 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/pathophysiology-of-heart-failure-neurohumoral-adaptations",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ehret GB. Genetic factors in the pathogenesis of hypertension. UpToDate; son güncelleme 12 Kas 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/genetic-factors-in-the-pathogenesis-of-hypertension",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Fisher NDL. Overview of the renin-angiotensin system. UpToDate; son güncelleme 2 Eki 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/overview-of-the-renin-angiotensin-system",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Raff H. Adrenal steroid biosynthesis. UpToDate; son güncelleme 6 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/adrenal-steroid-biosynthesis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Stowasser M. Assays of the renin-angiotensin-aldosterone system. UpToDate; son güncelleme 14 Nis 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/assays-of-the-renin-angiotensin-aldosterone-system",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Young WF Jr. Apparent mineralocorticoid excess syndromes (including chronic licorice ingestion). UpToDate; son güncelleme 5 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/apparent-mineralocorticoid-excess-syndromes-including-chronic-licorice-ingestion",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Young WF Jr. Diagnosis of primary aldosteronism. UpToDate; son güncelleme 4 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/diagnosis-of-primary-aldosteronism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Young WF Jr. Familial hyperaldosteronism. UpToDate; son güncelleme 22 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/familial-hyperaldosteronism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Young WF Jr. Pathophysiology and clinical features of primary aldosteronism. UpToDate; son güncelleme 19 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/pathophysiology-and-clinical-features-of-primary-aldosteronism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Young WF Jr. Treatment of primary aldosteronism. UpToDate; son güncelleme 9 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-primary-aldosteronism",
+        "tur": "uptodate"
+      }
+    ]
   }
 }

@@ -6132,6 +6132,23 @@
    "baslik": "Gastroözofageal Reflü (GÖRH) ve Barrett Özofagusu"
   }
  ],
+ "nefroloji/aldosteron-bobrek-fizyolojisi": [
+  {
+   "brans": "nefroloji",
+   "slug": "enac-epitelyal-sodyum-kanali",
+   "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "farmakoloji-potasyum-tutucu-diuretikler",
+   "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "fizyoloji-mr-regulasyon-mekanizmalari",
+   "baslik": "Mineralokortikoid Reseptör Regülasyonu"
+  }
+ ],
  "nefroloji/aldosteron-mekanizmalari": [
   {
    "brans": "nefroloji",
@@ -6236,6 +6253,11 @@
   },
   {
    "brans": "nefroloji",
+   "slug": "aldosteron-bobrek-fizyolojisi",
+   "baslik": "Aldosteron ve Böbrek Fizyolojisi"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "aldosteron-mekanizmalari",
    "baslik": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları"
   }
@@ -6284,6 +6306,11 @@
    "brans": "nefroloji",
    "slug": "enac-epitelyal-sodyum-kanali",
    "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "aldosteron-bobrek-fizyolojisi",
+   "baslik": "Aldosteron ve Böbrek Fizyolojisi"
   }
  ],
  "nefroloji/fizyoloji-acth-adrenal-mekanizmalar": [
@@ -6308,6 +6335,11 @@
    "brans": "nefroloji",
    "slug": "kalitsal-tubulopatiler-tuz-kaybettiren",
    "baslik": "Kalıtsal Tübülopatiler (Tuz Kaybettiren Nefropatiler)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "aldosteron-bobrek-fizyolojisi",
+   "baslik": "Aldosteron ve Böbrek Fizyolojisi"
   }
  ],
  "nefroloji/fokal-segmental-glomeruloskleroz-fsgs": [
