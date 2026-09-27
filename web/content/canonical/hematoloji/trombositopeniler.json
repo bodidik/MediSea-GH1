@@ -1,6 +1,7 @@
 {
   "title": "İmmün Trombositopeni (İTP)",
   "meta": {
+    "hidden": true,
     "kaynakca": "itp",
     "updatedAt": "28 Şub 2026",
     "tags": ["Hematoloji", "Trombosit"],

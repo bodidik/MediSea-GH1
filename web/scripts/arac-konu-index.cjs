@@ -37,6 +37,9 @@
  *  6. Kelime içi büyük/küçük geçişi (`eGFR` ↔ onkogen `EGFR`) — bkz.
  *     `icHarfDuyarli`.
  *
+ *  7. Gizli konu (`meta.hidden`) bağ ALMAZ — `konulariOku` içinde; kardeş
+ *     üreteçler (`baslik-index`, `ilgili-index`) aynı kuralı taşıyor.
+ *
  * NADİRLİK ÇALIŞMIYOR, denendi: `Anafilaksi` 9 konuda geçiyor ve DOĞRU,
  * `PPI` 10 konuda geçiyor ve YANLIŞ. Ayraç sıklık değil, takma adın
  * kaynağı (parantez içi mi, asıl ad mı).
@@ -143,6 +146,11 @@ function konulariOku() {
       if (!e.name.endsWith(".json")) continue;
       let j;
       try { j = JSON.parse(fs.readFileSync(p, "utf8")); } catch { continue; }
+      // GİZLİ KONU BAĞ ALMAZ — `baslik-index` ve `ilgili-index` zaten atlıyordu,
+      // bu üreteç atlamıyordu: 27 Eyl 2026'da 10 araç sayfası ("Bu aracın
+      // geçtiği konular") okuru gizli taslaklara gönderiyordu (dka-hhs,
+      // anion-gap, ranson, bisap → gizli DKA / pankreas taslakları).
+      if (j?.meta?.hidden === true) continue;
       const yol = path.relative(KONU_KOK, p).split(path.sep).join("/").replace(/\.json$/, "");
       const govde = duzle(
         [j.title || "", ...(j.sections || []).map((s) => `${s.heading || ""} ${s.html || ""}`)].join(" ")

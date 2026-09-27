@@ -47,11 +47,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/endokrinoloji/kalsiyum-metabolizmasi-ana" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi
-              </Link>
-            </li>
-            <li>
               <Link href="/topics/endokrinoloji/men1-2025-kilavuz-degisimleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 MEN1: 2025 Kılavuz Değişimleri ve Yeni Paradigmalar
               </Link>

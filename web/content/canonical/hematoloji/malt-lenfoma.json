@@ -1,6 +1,7 @@
 {
   "title": "Marjinal Zon Lenfoma (MALT)",
   "meta": {
+    "hidden": true,
     "updatedAt": "10 Mar 2026",
     "tags": ["Hematoloji", "NHL", "H.pylori"],
     "parent": "nhl-genel",

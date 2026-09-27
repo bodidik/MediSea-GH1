@@ -1,13 +1,6 @@
 {
   "uretilme": "scripts/arac-konu-index.cjs",
   "konuArac": {
-    "endokrinoloji/adrenal-insidentaloma-yaklasimi": [
-      {
-        "slug": "aldosteron-renin",
-        "name": "Aldosteron/Renin Oranı",
-        "eslesen": "Aldosteron/Renin Oranı"
-      }
-    ],
     "endokrinoloji/cushing-sendromu-genetik-ve-inovasyonlar": [
       {
         "slug": "qtc",
@@ -16,23 +9,6 @@
       }
     ],
     "endokrinoloji/diabetes-mellitus-ana": [
-      {
-        "slug": "dka-hhs",
-        "name": "DKA ve HHS Sınıflaması",
-        "eslesen": "DKA ve HHS"
-      }
-    ],
-    "endokrinoloji/diyabetik-ketoasidoz-ve-hhs": [
-      {
-        "slug": "potasyum-replasman",
-        "name": "Potasyum Replasmanı",
-        "eslesen": "Potasyum Replasmanı"
-      },
-      {
-        "slug": "anion-gap",
-        "name": "Anyon Açığı",
-        "eslesen": "Anyon Açığı"
-      },
       {
         "slug": "dka-hhs",
         "name": "DKA ve HHS Sınıflaması",
@@ -84,20 +60,6 @@
         "slug": "corrected-calcium",
         "name": "Düzeltilmiş Kalsiyum",
         "eslesen": "Düzeltilmiş Kalsiyum"
-      }
-    ],
-    "endokrinoloji/kalsiyum-metabolizmasi-ana": [
-      {
-        "slug": "corrected-calcium",
-        "name": "Düzeltilmiş Kalsiyum",
-        "eslesen": "Düzeltilmiş Kalsiyum"
-      }
-    ],
-    "endokrinoloji/konjenital-adrenal-hiperplazi-cah": [
-      {
-        "slug": "acth-stim",
-        "name": "ACTH Stimülasyon Testi",
-        "eslesen": "ACTH Stimülasyon Testi"
       }
     ],
     "endokrinoloji/men1-2025-kilavuz-degisimleri": [
@@ -223,13 +185,6 @@
         "slug": "metabolik-sendrom",
         "name": "Metabolik Sendrom",
         "eslesen": "Metabolik Sendrom"
-      }
-    ],
-    "endokrinoloji/tiroid-nodullerine-yaklasim": [
-      {
-        "slug": "tirads",
-        "name": "ACR TI-RADS",
-        "eslesen": "ACR TI-RADS"
       }
     ],
     "endokrinoloji/tirzepatid-kardiyorenal-koruma": [
@@ -427,25 +382,6 @@
         "slug": "anion-gap",
         "name": "Anyon Açığı",
         "eslesen": "Anyon Açığı"
-      }
-    ],
-    "gastroenteroloji/metabolik-yaglanma-masld": [
-      {
-        "slug": "metabolik-sendrom",
-        "name": "Metabolik Sendrom",
-        "eslesen": "Metabolik Sendrom"
-      }
-    ],
-    "gastroenteroloji/pankreas-hastaliklari": [
-      {
-        "slug": "ranson",
-        "name": "Ranson Kriterleri",
-        "eslesen": "Ranson Kriterleri"
-      },
-      {
-        "slug": "bisap",
-        "name": "BISAP",
-        "eslesen": "BISAP"
       }
     ],
     "gastroenteroloji/tips-hasta-secimi": [
@@ -893,13 +829,6 @@
         "eslesen": "GLIM Kriterleri"
       }
     ],
-    "klinik-nutrisyon/obezite": [
-      {
-        "slug": "metabolik-sendrom",
-        "name": "Metabolik Sendrom",
-        "eslesen": "Metabolik Sendrom"
-      }
-    ],
     "nefroloji/asit-baz-denge-bozukluklari": [
       {
         "slug": "anion-gap",
@@ -1001,13 +930,6 @@
         "slug": "egfr",
         "name": "eGFR (CKD-EPI 2021)",
         "eslesen": "eGFR"
-      }
-    ],
-    "nefroloji/renal-tubuler-asidoz-rta-tipleri": [
-      {
-        "slug": "anion-gap",
-        "name": "Anyon Açığı",
-        "eslesen": "Anyon Açığı"
       }
     ],
     "nefroloji/respiratuvar-alkaloz": [
@@ -1182,13 +1104,6 @@
     ]
   },
   "aracKonu": {
-    "aldosteron-renin": [
-      {
-        "yol": "endokrinoloji/adrenal-insidentaloma-yaklasimi",
-        "baslik": "Adrenal İnsidentaloma Yaklaşımı",
-        "eslesen": "Aldosteron/Renin Oranı"
-      }
-    ],
     "qtc": [
       {
         "yol": "endokrinoloji/cushing-sendromu-genetik-ve-inovasyonlar",
@@ -1236,90 +1151,6 @@
         "yol": "endokrinoloji/diabetes-mellitus-ana",
         "baslik": "Diabetes Mellitus",
         "eslesen": "DKA ve HHS"
-      },
-      {
-        "yol": "endokrinoloji/diyabetik-ketoasidoz-ve-hhs",
-        "baslik": "Akut Diyabetik Komplikasyonlar: DKA ve HHS",
-        "eslesen": "DKA ve HHS"
-      }
-    ],
-    "anion-gap": [
-      {
-        "yol": "nefroloji/asit-baz-denge-bozukluklari",
-        "baslik": "Asit-Baz Denge Bozuklukları",
-        "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "endokrinoloji/diyabetik-ketoasidoz-ve-hhs",
-        "baslik": "Akut Diyabetik Komplikasyonlar: DKA ve HHS",
-        "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "gastroenteroloji/kisa-bagirsak-sendromu",
-        "baslik": "Kısa Bağırsak Sendromu (KBS)",
-        "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "nefroloji/asit-baz-kompanzasyon-ilkeleri",
-        "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi",
-        "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "nefroloji/delta-anyon-acigi-delta-delta-orani",
-        "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama",
-        "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "nefroloji/metabolik-asidoz",
-        "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri",
-        "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "nefroloji/renal-tubuler-asidoz-rta-tipleri",
-        "baslik": "Renal Tübüler Asidoz (RTA) Tipleri",
-        "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "nefroloji/respiratuvar-alkaloz",
-        "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim",
-        "eslesen": "Anyon Açığı"
-      }
-    ],
-    "potasyum-replasman": [
-      {
-        "yol": "endokrinoloji/diyabetik-ketoasidoz-ve-hhs",
-        "baslik": "Akut Diyabetik Komplikasyonlar: DKA ve HHS",
-        "eslesen": "Potasyum Replasmanı"
-      },
-      {
-        "yol": "enfeksiyon/fosfomisin-klinik-rehber",
-        "baslik": "Fosfomisin",
-        "eslesen": "Potasyum Replasmanı"
-      },
-      {
-        "yol": "gastroenteroloji/ascit-diuretik-tedavisi",
-        "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi",
-        "eslesen": "Potasyum Replasmanı"
-      },
-      {
-        "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
-        "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
-        "eslesen": "Potasyum Replasmanı"
-      },
-      {
-        "yol": "endokrinoloji/men1-osilodrostat-mineralokortikoid",
-        "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi",
-        "eslesen": "Potasyum Replasmanı"
-      },
-      {
-        "yol": "endokrinoloji/men1-osilodrostat-yan-etkiler",
-        "baslik": "Osilodrostat: Yan Etki Profili ve Klinik Yönetim Protokolleri",
-        "eslesen": "Potasyum Replasmanı"
-      },
-      {
-        "yol": "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma",
-        "baslik": "Şiddetli Cushing Sendromu (SCS): İleri Yönetim",
-        "eslesen": "Potasyum Replasmanı"
       }
     ],
     "tft": [
@@ -1417,22 +1248,44 @@
         "eslesen": "Düzeltilmiş Kalsiyum"
       },
       {
-        "yol": "endokrinoloji/kalsiyum-metabolizmasi-ana",
-        "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi",
-        "eslesen": "Düzeltilmiş Kalsiyum"
-      },
-      {
         "yol": "endokrinoloji/men1-2025-kilavuz-degisimleri",
         "baslik": "MEN1: 2025 Kılavuz Değişimleri ve Yeni Paradigmalar",
         "eslesen": "Düzeltilmiş Kalsiyum"
       }
     ],
-    "acth-stim": [
+    "potasyum-replasman": [
       {
-        "yol": "endokrinoloji/konjenital-adrenal-hiperplazi-cah",
-        "baslik": "Konjenital Adrenal Hiperplazi (CAH)",
-        "eslesen": "ACTH Stimülasyon Testi"
+        "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
+        "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
+        "eslesen": "Potasyum Replasmanı"
       },
+      {
+        "yol": "enfeksiyon/fosfomisin-klinik-rehber",
+        "baslik": "Fosfomisin",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "yol": "gastroenteroloji/ascit-diuretik-tedavisi",
+        "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "yol": "endokrinoloji/men1-osilodrostat-mineralokortikoid",
+        "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "yol": "endokrinoloji/men1-osilodrostat-yan-etkiler",
+        "baslik": "Osilodrostat: Yan Etki Profili ve Klinik Yönetim Protokolleri",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "yol": "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma",
+        "baslik": "Şiddetli Cushing Sendromu (SCS): İleri Yönetim",
+        "eslesen": "Potasyum Replasmanı"
+      }
+    ],
+    "acth-stim": [
       {
         "yol": "endokrinoloji/men1-osilodrostat-protokol-adimlari",
         "baslik": "Osilodrostat Block-and-Replace: Protokol Adımları ve Doz Şeması",
@@ -1468,11 +1321,6 @@
         "eslesen": "Metabolik Sendrom"
       },
       {
-        "yol": "klinik-nutrisyon/obezite",
-        "baslik": "Ch 329: Obezite ve Metabolik Sendrom",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
         "yol": "gastroenteroloji/colyak-beslenme",
         "baslik": "Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları",
         "eslesen": "Metabolik Sendrom"
@@ -1491,13 +1339,11 @@
         "yol": "gastroenteroloji/colyak-lif-alimi",
         "baslik": "Akdeniz Tipi Glutensiz Diyette Lif Alımının Artırılması",
         "eslesen": "Metabolik Sendrom"
-      }
-    ],
-    "tirads": [
+      },
       {
-        "yol": "endokrinoloji/tiroid-nodullerine-yaklasim",
-        "baslik": "Tiroid Nodüllerine Yaklaşım ve TI-RADS",
-        "eslesen": "ACR TI-RADS"
+        "yol": "gastroenteroloji/colyak-pseudotahil-mikrobesin",
+        "baslik": "Psödotahılların Mikrobesin Profili ve Klinik Değeri",
+        "eslesen": "Metabolik Sendrom"
       }
     ],
     "child-pugh": [
@@ -1610,18 +1456,36 @@
         "eslesen": "Asit Sıvısı Analizi"
       }
     ],
-    "bisap": [
+    "anion-gap": [
       {
-        "yol": "gastroenteroloji/pankreas-hastaliklari",
-        "baslik": "Pankreas Hastalıkları: Akut, Kronik ve Neoplaziler",
-        "eslesen": "BISAP"
-      }
-    ],
-    "ranson": [
+        "yol": "nefroloji/asit-baz-denge-bozukluklari",
+        "baslik": "Asit-Baz Denge Bozuklukları",
+        "eslesen": "Anyon Açığı"
+      },
       {
-        "yol": "gastroenteroloji/pankreas-hastaliklari",
-        "baslik": "Pankreas Hastalıkları: Akut, Kronik ve Neoplaziler",
-        "eslesen": "Ranson Kriterleri"
+        "yol": "gastroenteroloji/kisa-bagirsak-sendromu",
+        "baslik": "Kısa Bağırsak Sendromu (KBS)",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/asit-baz-kompanzasyon-ilkeleri",
+        "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/delta-anyon-acigi-delta-delta-orani",
+        "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/metabolik-asidoz",
+        "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/respiratuvar-alkaloz",
+        "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim",
+        "eslesen": "Anyon Açığı"
       }
     ],
     "ipss-r": [
@@ -2054,10 +1918,10 @@
     ]
   },
   "olcum": {
-    "konu": 523,
+    "konu": 457,
     "arac": 257,
-    "araciOlanKonu": 137,
-    "konusuOlanArac": 60,
-    "bag": 181
+    "araciOlanKonu": 128,
+    "konusuOlanArac": 56,
+    "bag": 169
   }
 }

@@ -47,11 +47,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/endokrinoloji/diyabetik-ketoasidoz-ve-hhs" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Akut Diyabetik Komplikasyonlar: DKA ve HHS
-              </Link>
-            </li>
-            <li>
               <Link href="/topics/gastroenteroloji/kisa-bagirsak-sendromu" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Kısa Bağırsak Sendromu (KBS)
               </Link>
@@ -59,6 +54,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/topics/nefroloji/asit-baz-kompanzasyon-ilkeleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/nefroloji/delta-anyon-acigi-delta-delta-orani" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama
               </Link>
             </li>
           </ul>

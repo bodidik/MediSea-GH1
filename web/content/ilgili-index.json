@@ -589,11 +589,6 @@
    "brans": "endokrinoloji",
    "slug": "miksodem-psikozu",
    "baslik": "Miksödem Psikozu (Asher Çılgınlığı) Klinik ve Patofizyolojik Kılavuzu"
-  },
-  {
-   "brans": "klinik-nutrisyon",
-   "slug": "yeme-bozukluklari",
-   "baslik": "Ch 330: Yeme Bozuklukları"
   }
  ],
  "endokrinoloji/hhg-aksi-ve-fizyoloji": [
@@ -1113,11 +1108,6 @@
  ],
  "endokrinoloji/kbh-dvitamini-ve-kalsimimetikler": [
   {
-   "brans": "klinik-nutrisyon",
-   "slug": "vitamin-mineral-eksiklikleri",
-   "baslik": "Ch 326: Vitamin ve Eser Element Eksiklikleri"
-  },
-  {
    "brans": "endokrinoloji",
    "slug": "hiperparatiroidizm",
    "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları"
@@ -1548,11 +1538,6 @@
    "brans": "endokrinoloji",
    "slug": "hashimoto-ensefaliti",
    "baslik": "Hashimoto Ensefalopatisi (SREAT) ve Miksödem Psikozu Ayrımı"
-  },
-  {
-   "brans": "klinik-nutrisyon",
-   "slug": "yeme-bozukluklari",
-   "baslik": "Ch 330: Yeme Bozuklukları"
   }
  ],
  "endokrinoloji/mutsuz-hipotiroidi-kombine-tedavi": [
@@ -2266,11 +2251,6 @@
    "brans": "endokrinoloji",
    "slug": "diabetes-mellitus-ana",
    "baslik": "Diabetes Mellitus"
-  },
-  {
-   "brans": "klinik-nutrisyon",
-   "slug": "obezite",
-   "baslik": "Ch 329: Obezite ve Metabolik Sendrom"
   }
  ],
  "endokrinoloji/tirzepatid-kardiyorenal-koruma": [
@@ -3383,9 +3363,24 @@
  ],
  "gastroenteroloji/bagirsak-hastaliklari": [
   {
-   "brans": "onkoloji",
-   "slug": "kolorektal-kanser",
-   "baslik": "Ch 86: Kolorektal Kanser-PH"
+   "brans": "gastroenteroloji",
+   "slug": "colyak-akdeniz-beslenme",
+   "baslik": "Çölyak Hastalığında Akdeniz Tipi Glutensiz Beslenme"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "colyak-beslenme",
+   "baslik": "Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "colyak-pseudotahillar",
+   "baslik": "Psödotahıllar ve Çölyak Diyetindeki Avantajları"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "karaciger-hastaliklari",
+   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
   }
  ],
  "gastroenteroloji/bilirubin-metabolizmasi": [
@@ -3767,9 +3762,14 @@
  ],
  "gastroenteroloji/kisa-bagirsak-sendromu": [
   {
-   "brans": "klinik-nutrisyon",
-   "slug": "enteral-parenteral",
-   "baslik": "Ch 328: Nütrisyonel Destek Tedavisi"
+   "brans": "gastroenteroloji",
+   "slug": "colyak",
+   "baslik": "Çölyak Hastalığı (Gluten Enteropatisi)"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "gastrointestinal-motilite-hastaliklari",
+   "baslik": "Gastrointestinal Motilite Hastalıkları"
   }
  ],
  "gastroenteroloji/konjenital-ozofagus-anomalileri": [
@@ -4238,11 +4238,6 @@
  "hematoloji/anemiler": [
   {
    "brans": "hematoloji",
-   "slug": "besinsel-b12",
-   "baslik": "Besinsel B12 Vitamini Eksikliği"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "demir-eksikligi",
    "baslik": "Demir Eksikliği Anemisi (DEA)"
   },
@@ -4255,6 +4250,11 @@
    "brans": "hematoloji",
    "slug": "folat-eksikligi",
    "baslik": "Folat (B9 Vitamini) Eksikliği"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "g6pd-eksikligi",
+   "baslik": "G6PD (Glukoz-6-Fosfat Dehidrogenaz) Eksikliği"
   }
  ],
  "hematoloji/antikoagulasyon-stratejileri": [
@@ -4286,23 +4286,6 @@
    "brans": "hematoloji",
    "slug": "makrositer-anemiler",
    "baslik": "Makrositer Anemiler"
-  }
- ],
- "hematoloji/besinsel-b12": [
-  {
-   "brans": "hematoloji",
-   "slug": "makrositer-anemiler",
-   "baslik": "Makrositer Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "pernisiyoz-anemi",
-   "baslik": "Pernisiyöz Anemi"
-  },
-  {
-   "brans": "klinik-nutrisyon",
-   "slug": "vitamin-mineral-eksiklikleri",
-   "baslik": "Ch 326: Vitamin ve Eser Element Eksiklikleri"
   }
  ],
  "hematoloji/burkitt": [
@@ -4487,13 +4470,23 @@
  "hematoloji/folikuler-lenfoma": [
   {
    "brans": "hematoloji",
-   "slug": "malt-lenfoma",
-   "baslik": "Marjinal Zon Lenfoma (MALT)"
+   "slug": "miyeloproliferatif",
+   "baslik": "Miyeloproliferatif Neoplazmlar (MPN)"
   },
   {
    "brans": "hematoloji",
-   "slug": "mantle-hucreli",
-   "baslik": "Mantle Hücreli Lenfoma (MCL)"
+   "slug": "olgunlasma-bozukluklari",
+   "baslik": "Olgunlaşma Bozukluğu Anemileri"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "trombosit-hastaliklari-genel-bakis",
+   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "allojenik-kok-hucre-nakli",
+   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
   }
  ],
  "hematoloji/g6pd-eksikligi": [
@@ -4571,82 +4564,6 @@
    "baslik": "Non-Hodgkin Lenfomalar (NHL)"
   }
  ],
- "hematoloji/hematopoez": [
-  {
-   "brans": "hematoloji",
-   "slug": "kanama-bozukluklari",
-   "baslik": "Hemostaz ve Pıhtılaşma Bozuklukları"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "megaloblastik-anemi",
-   "baslik": "Megaloblastik Anemiler (Genel)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "miyeloproliferatif",
-   "baslik": "Miyeloproliferatif Neoplazmlar (MPN)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "nhl-genel",
-   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
-  }
- ],
- "hematoloji/hemofili-a": [
-  {
-   "brans": "hematoloji",
-   "slug": "hemofili-b",
-   "baslik": "Hemofili B (Christmas Hastalığı)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hemofililer-ve-sekonder-hemostaz",
-   "baslik": "Hemofililer ve Sekonder Hemostaz Bozuklukları"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "trombofililer-hiperkoagulabilite",
-   "baslik": "Trombofililer ve Hiperkoagülabilite"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "trombosit-hastaliklari-genel-bakis",
-   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "von-willebrand-hastaligi-vwd",
-   "baslik": "von Willebrand Hastalığı (vWD)"
-  }
- ],
- "hematoloji/hemofili-b": [
-  {
-   "brans": "hematoloji",
-   "slug": "hemofili-a",
-   "baslik": "Hemofili A (Faktör VIII Eksikliği)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hemofililer-ve-sekonder-hemostaz",
-   "baslik": "Hemofililer ve Sekonder Hemostaz Bozuklukları"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "trombofililer-hiperkoagulabilite",
-   "baslik": "Trombofililer ve Hiperkoagülabilite"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "trombosit-hastaliklari-genel-bakis",
-   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "von-willebrand-hastaligi-vwd",
-   "baslik": "von Willebrand Hastalığı (vWD)"
-  }
- ],
  "hematoloji/hemofililer-ve-sekonder-hemostaz": [
   {
    "brans": "hematoloji",
@@ -4691,16 +4608,6 @@
    "brans": "hematoloji",
    "slug": "olgunlasma-bozukluklari",
    "baslik": "Olgunlaşma Bozukluğu Anemileri"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "talasemiler-ana",
-   "baslik": "Talasemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "yapim-azligi-anemiler",
-   "baslik": "Yapım Azlığına Bağlı Anemiler"
   }
  ],
  "hematoloji/heparin-aracili-trombositopeni-hit": [
@@ -4783,11 +4690,6 @@
  "hematoloji/kanama-bozukluklari": [
   {
    "brans": "hematoloji",
-   "slug": "hematopoez",
-   "baslik": "Hematopoez ve Kanın Biyolojisi"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "gilteritinib-flt3-aml",
    "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
   },
@@ -4800,6 +4702,11 @@
    "brans": "hematoloji",
    "slug": "hemolitik-anemiler-genel-bakis",
    "baslik": "Hemolitik Anemiler"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "immun-trombositopeni-itp",
+   "baslik": "İmmün Trombositopeni (İTP) Tedavi ve Klinik Yönetimi"
   }
  ],
  "hematoloji/kanser-iliskili-tromboz": [
@@ -5029,6 +4936,11 @@
  "hematoloji/makrositer-anemiler": [
   {
    "brans": "hematoloji",
+   "slug": "pernisiyoz-anemi",
+   "baslik": "Pernisiyöz Anemi"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
    "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
   },
@@ -5036,45 +4948,6 @@
    "brans": "hematoloji",
    "slug": "megaloblastik-anemi",
    "baslik": "Megaloblastik Anemiler (Genel)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "besinsel-b12",
-   "baslik": "Besinsel B12 Vitamini Eksikliği"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "pernisiyoz-anemi",
-   "baslik": "Pernisiyöz Anemi"
-  },
-  {
-   "brans": "klinik-nutrisyon",
-   "slug": "vitamin-mineral-eksiklikleri",
-   "baslik": "Ch 326: Vitamin ve Eser Element Eksiklikleri"
-  }
- ],
- "hematoloji/malt-lenfoma": [
-  {
-   "brans": "hematoloji",
-   "slug": "folikuler-lenfoma",
-   "baslik": "Foliküler Lenfoma"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "mantle-hucreli",
-   "baslik": "Mantle Hücreli Lenfoma (MCL)"
-  }
- ],
- "hematoloji/mantle-hucreli": [
-  {
-   "brans": "hematoloji",
-   "slug": "folikuler-lenfoma",
-   "baslik": "Foliküler Lenfoma"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "malt-lenfoma",
-   "baslik": "Marjinal Zon Lenfoma (MALT)"
   }
  ],
  "hematoloji/megaloblastik-anemi": [
@@ -5114,11 +4987,6 @@
    "brans": "hematoloji",
    "slug": "olgunlasma-bozukluklari",
    "baslik": "Olgunlaşma Bozukluğu Anemileri"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "talasemiler-ana",
-   "baslik": "Talasemiler"
   }
  ],
  "hematoloji/miyelodisplastik-sendrom-mds": [
@@ -5199,16 +5067,6 @@
    "brans": "hematoloji",
    "slug": "makrositer-anemiler",
    "baslik": "Makrositer Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "talasemiler-ana",
-   "baslik": "Talasemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "yapim-azligi-anemiler",
-   "baslik": "Yapım Azlığına Bağlı Anemiler"
   }
  ],
  "hematoloji/orak-hucreli-anemi": [
@@ -5232,6 +5090,11 @@
  ],
  "hematoloji/pernisiyoz-anemi": [
   {
+   "brans": "hematoloji",
+   "slug": "makrositer-anemiler",
+   "baslik": "Makrositer Anemiler"
+  },
+  {
    "brans": "endokrinoloji",
    "slug": "addison",
    "baslik": "Addison Hastalığı (Primer Adrenal Yetmezlik)"
@@ -5240,21 +5103,6 @@
    "brans": "kardiyoloji",
    "slug": "statin-otoimmun-miyopati-imnm",
    "baslik": "İmmün Aracılı Nekrotizan Miyopati (IMNM)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "besinsel-b12",
-   "baslik": "Besinsel B12 Vitamini Eksikliği"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "makrositer-anemiler",
-   "baslik": "Makrositer Anemiler"
-  },
-  {
-   "brans": "klinik-nutrisyon",
-   "slug": "vitamin-mineral-eksiklikleri",
-   "baslik": "Ch 326: Vitamin ve Eser Element Eksiklikleri"
   }
  ],
  "hematoloji/pod24-bispesifik-antikorlar": [
@@ -5381,38 +5229,6 @@
    "baslik": "Demir Eksikliği Anemisi (DEA)"
   }
  ],
- "hematoloji/talasemiler-ana": [
-  {
-   "brans": "hematoloji",
-   "slug": "aplastik-anemi",
-   "baslik": "Aplastik Anemi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
-   "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hemolitik-anemiler-genel-bakis",
-   "baslik": "Hemolitik Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "makrositer-anemiler",
-   "baslik": "Makrositer Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "olgunlasma-bozukluklari",
-   "baslik": "Olgunlaşma Bozukluğu Anemileri"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "yapim-azligi-anemiler",
-   "baslik": "Yapım Azlığına Bağlı Anemiler"
-  }
- ],
  "hematoloji/trombofililer-hiperkoagulabilite": [
   {
    "brans": "hematoloji",
@@ -5452,11 +5268,6 @@
    "brans": "hematoloji",
    "slug": "itp-tedavi",
    "baslik": "İmmün Trombositopeni (İTP) Tedavi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "trombositopeniler",
-   "baslik": "İmmün Trombositopeni (İTP)"
   }
  ],
  "hematoloji/trombositopenide-antikoagulasyon": [
@@ -5469,13 +5280,6 @@
    "brans": "hematoloji",
    "slug": "heparin-aracili-trombositopeni-hit",
    "baslik": "Heparin İlişkili Trombositopeni (HİT)"
-  }
- ],
- "hematoloji/trombositopeniler": [
-  {
-   "brans": "hematoloji",
-   "slug": "trombositopeni-itp",
-   "baslik": "İmmün Trombositopeni (ITP)"
   }
  ],
  "hematoloji/vka-doac-karsilastirma": [
@@ -5527,38 +5331,6 @@
    "brans": "hematoloji",
    "slug": "miyelodisplastik-sendrom-mds",
    "baslik": "Miyelodisplastik Sendromlar (MDS)"
-  }
- ],
- "hematoloji/yapim-azligi-anemiler": [
-  {
-   "brans": "hematoloji",
-   "slug": "aplastik-anemi",
-   "baslik": "Aplastik Anemi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
-   "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hemolitik-anemiler-genel-bakis",
-   "baslik": "Hemolitik Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "makrositer-anemiler",
-   "baslik": "Makrositer Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "olgunlasma-bozukluklari",
-   "baslik": "Olgunlaşma Bozukluğu Anemileri"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "talasemiler-ana",
-   "baslik": "Talasemiler"
   }
  ],
  "journal-club/Kalp-yetm-ODI": [
@@ -6266,18 +6038,6 @@
    "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
   }
  ],
- "klinik-nutrisyon/enteral-parenteral": [
-  {
-   "brans": "gastroenteroloji",
-   "slug": "kisa-bagirsak-sendromu",
-   "baslik": "Kısa Bağırsak Sendromu (KBS)"
-  },
-  {
-   "brans": "klinik-nutrisyon",
-   "slug": "peg-enteral-beslenme-refeeding",
-   "baslik": "PEG ve Enteral Beslenme: Realimentasyon ve Refeeding Yönetimi"
-  }
- ],
  "klinik-nutrisyon/espen-enteral-beslenme-intoleransi": [
   {
    "brans": "klinik-nutrisyon",
@@ -6300,68 +6060,20 @@
  "klinik-nutrisyon/klinik-nutrisyon-glim-kriterleri": [
   {
    "brans": "klinik-nutrisyon",
-   "slug": "malnutrisyon",
-   "baslik": "Ch 327: Malnütrisyon ve Nütrisyonel Değerlendirme"
-  }
- ],
- "klinik-nutrisyon/malnutrisyon": [
+   "slug": "espen-enteral-beslenme-intoleransi",
+   "baslik": "ESPEN Kılavuzu: Enteral Beslenme İntoleransı ve Yönetimi"
+  },
   {
    "brans": "klinik-nutrisyon",
-   "slug": "klinik-nutrisyon-glim-kriterleri",
-   "baslik": "GLIM Kriterleri: Malnütrisyon Tanısında Küresel Standart"
-  }
- ],
- "klinik-nutrisyon/obezite": [
-  {
-   "brans": "endokrinoloji",
-   "slug": "tirzepatid-genel-profil",
-   "baslik": "Tirzepatid: Genel Farmakolojik ve Klinik Profili"
+   "slug": "peg-enteral-beslenme-refeeding",
+   "baslik": "PEG ve Enteral Beslenme: Realimentasyon ve Refeeding Yönetimi"
   }
  ],
  "klinik-nutrisyon/peg-enteral-beslenme-refeeding": [
   {
    "brans": "klinik-nutrisyon",
-   "slug": "enteral-parenteral",
-   "baslik": "Ch 328: Nütrisyonel Destek Tedavisi"
-  },
-  {
-   "brans": "klinik-nutrisyon",
    "slug": "espen-enteral-beslenme-intoleransi",
    "baslik": "ESPEN Kılavuzu: Enteral Beslenme İntoleransı ve Yönetimi"
-  }
- ],
- "klinik-nutrisyon/vitamin-mineral-eksiklikleri": [
-  {
-   "brans": "endokrinoloji",
-   "slug": "kbh-dvitamini-ve-kalsimimetikler",
-   "baslik": "D Vitamini Analogları ve Kalsimimetikler: PTH Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "besinsel-b12",
-   "baslik": "Besinsel B12 Vitamini Eksikliği"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "makrositer-anemiler",
-   "baslik": "Makrositer Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "pernisiyoz-anemi",
-   "baslik": "Pernisiyöz Anemi"
-  }
- ],
- "klinik-nutrisyon/yeme-bozukluklari": [
-  {
-   "brans": "endokrinoloji",
-   "slug": "he-vs-miksodem-psikozu",
-   "baslik": "Miksödem Psikozu ve Hashimoto Ensefalopatisi (HE/SREAT) Ayırıcı Tanısı"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "miksodem-psikozu",
-   "baslik": "Miksödem Psikozu (Asher Çılgınlığı) Klinik ve Patofizyolojik Kılavuzu"
   }
  ],
  "nefroloji/FGF-23 vs PTH": [
@@ -7379,28 +7091,6 @@
    "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
   }
  ],
- "onkoloji/jinekolojik-kanserler": [
-  {
-   "brans": "onkoloji",
-   "slug": "onkolojik-aciller",
-   "baslik": "Onkolojik Aciller"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ana-sayfa",
-   "baslik": "Pankreas Kanseri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-neden-ilaç-vs",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "tumor-lizis-sendromu-kapsamli",
-   "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
-  }
- ],
  "onkoloji/kanser-agrisi-yonetimi": [
   {
    "brans": "palyatif",
@@ -7433,18 +7123,6 @@
    "baslik": "Pankreas Kanserinde Refrakter Ağrı Yönetimi"
   }
  ],
- "onkoloji/kanser-genel-prensipler": [
-  {
-   "brans": "onkoloji",
-   "slug": "khdak-tani-algoritma-evreleme",
-   "baslik": "Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tanısal Algoritma, Evreleme ve Moleküler Patobiyoloji - Bölüm 2"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-rna-asilar",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) İmmüno-Onkoloji ve Yeni Nesil RNA Neoantijen Aşı Terapileri"
-  }
- ],
  "onkoloji/karaciger-kanserleri": [
   {
    "brans": "onkoloji",
@@ -7472,62 +7150,6 @@
    "brans": "hematoloji",
    "slug": "m7-flipi-ngs-paneli",
    "baslik": "m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "kanser-genel-prensipler",
-   "baslik": "Ch 73-78: Kanser Genel Prensipleri ve Tedavi-PH"
-  }
- ],
- "onkoloji/kolorektal-kanser": [
-  {
-   "brans": "gastroenteroloji",
-   "slug": "bagirsak-hastaliklari",
-   "baslik": "Bağırsak Hastalıkları"
-  }
- ],
- "onkoloji/meme-kanseri": [
-  {
-   "brans": "onkoloji",
-   "slug": "karaciger-kanserleri",
-   "baslik": "Karaciğer Kanserleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "onkolojik-aciller",
-   "baslik": "Onkolojik Aciller"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ana-sayfa",
-   "baslik": "Pankreas Kanseri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-neden-ilaç-vs",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
-  }
- ],
- "onkoloji/mesane-kanseri": [
-  {
-   "brans": "onkoloji",
-   "slug": "akciger-kanseri-ana-sayfa",
-   "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "febril-notropeni-konu",
-   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "kanser-agrisi-yonetimi",
-   "baslik": "Kanser Ağrısı Yönetimi"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "karaciger-kanserleri",
-   "baslik": "Karaciğer Kanserleri"
   }
  ],
  "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik": [
@@ -7696,8 +7318,33 @@
  "onkoloji/pankreas-kanseri-rna-asilar": [
   {
    "brans": "onkoloji",
-   "slug": "kanser-genel-prensipler",
-   "baslik": "Ch 73-78: Kanser Genel Prensipleri ve Tedavi-PH"
+   "slug": "pankreas-kanseri-diabetes",
+   "baslik": "Diabetes Mellitus ve Pankreas Duktal Adenokarsinomu (PDAC) Arasındaki Çift Yönlü Patofizyolojik İlişki"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-ileri-tedaviler",
+   "baslik": "Pankreas Duktal Adenokarsinomunda İleri Onkolojik Tedavi Protokolleri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-kras-mutasyonu",
+   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) KRAS Mutasyon Haritası ve Yeni Nesil İnhibitör Protokolleri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-neden-ilaç-vs",
+   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-setidegrasib-protokolu",
+   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) KRAS G12D Hedefli Tedavi ve Setidegrasib Protokolü"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-smad4",
+   "baslik": "Pankreas Duktal Adenokarsinomunda SMAD4 (DPC4) Gen İnaktivasyonu"
   }
  ],
  "onkoloji/pankreas-kanseri-setidegrasib-protokolu": [
@@ -7781,50 +7428,6 @@
    "baslik": "MEN1'de Meme Kanseri Riski ve Tarama Protokolü"
   }
  ],
- "onkoloji/prostat-kanseri": [
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-neden-ilaç-vs",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "tumor-lizis-sendromu-kapsamli",
-   "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "akciger-kanseri-ana-sayfa",
-   "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "febril-notropeni-konu",
-   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
-  }
- ],
- "onkoloji/testis-kanseri": [
-  {
-   "brans": "onkoloji",
-   "slug": "tumor-lizis-sendromu-kapsamli",
-   "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "akciger-kanseri-ana-sayfa",
-   "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "febril-notropeni-konu",
-   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "kanser-agrisi-yonetimi",
-   "baslik": "Kanser Ağrısı Yönetimi"
-  }
- ],
  "onkoloji/tls-cairo-bishop-howard-guncellemesi": [
   {
    "brans": "onkoloji",
@@ -7866,28 +7469,6 @@
    "brans": "onkoloji",
    "slug": "febril-notropeni-konu",
    "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
-  }
- ],
- "onkoloji/ust-gis-kanserleri": [
-  {
-   "brans": "onkoloji",
-   "slug": "kanser-agrisi-yonetimi",
-   "baslik": "Kanser Ağrısı Yönetimi"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "karaciger-kanserleri",
-   "baslik": "Karaciğer Kanserleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "onkolojik-aciller",
-   "baslik": "Onkolojik Aciller"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ana-sayfa",
-   "baslik": "Pankreas Kanseri"
   }
  ],
  "palyatif/noropatik-agrida-koadjuvan-tedavi": [

@@ -46,11 +46,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
                 Diabetes Mellitus
               </Link>
             </li>
-            <li>
-              <Link href="/topics/endokrinoloji/diyabetik-ketoasidoz-ve-hhs" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Akut Diyabetik Komplikasyonlar: DKA ve HHS
-              </Link>
-            </li>
           </ul>
         </div>
       </nav>
