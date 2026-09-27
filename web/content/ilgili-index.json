@@ -36,13 +36,13 @@
  "endokrinoloji/adrenal-fizyoloji-ve-steroidogenez": [
   {
    "brans": "nefroloji",
-   "slug": "zona-glomeruloza-steroid",
-   "baslik": "Temel Bilimler: Zona Glomerulosa Neden Kortizol Üretemez?"
+   "slug": "kronik-bobrek-hastaligi",
+   "baslik": "Kronik Böbrek Hastalığı (KBH)"
   },
   {
    "brans": "nefroloji",
-   "slug": "kronik-bobrek-hastaligi",
-   "baslik": "Kronik Böbrek Hastalığı (KBH)"
+   "slug": "zona-glomeruloza-steroid",
+   "baslik": "Temel Bilimler: Zona Glomerulosa Neden Kortizol Üretemez?"
   },
   {
    "brans": "nefroloji",
@@ -6135,6 +6135,11 @@
  "nefroloji/aldosteron-bobrek-fizyolojisi": [
   {
    "brans": "nefroloji",
+   "slug": "liddle-sendromu-mra-etkisizligi",
+   "baslik": "Liddle Sendromunda MRA'ların Etkisizliği ve ENaC İnhibitörleri"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "enac-epitelyal-sodyum-kanali",
    "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
   },
@@ -6147,6 +6152,11 @@
    "brans": "nefroloji",
    "slug": "fizyoloji-mr-regulasyon-mekanizmalari",
    "baslik": "Mineralokortikoid Reseptör Regülasyonu"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "kortizol-mr-koruma-mekanizmalari",
+   "baslik": "Kortizolün Mineralokortikoid Reseptöre Bağlanmasının Engellenmesi"
   }
  ],
  "nefroloji/aldosteron-mekanizmalari": [
@@ -6248,6 +6258,11 @@
  "nefroloji/enac-epitelyal-sodyum-kanali": [
   {
    "brans": "nefroloji",
+   "slug": "liddle-sendromu-mra-etkisizligi",
+   "baslik": "Liddle Sendromunda MRA'ların Etkisizliği ve ENaC İnhibitörleri"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "farmakoloji-potasyum-tutucu-diuretikler",
    "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
   },
@@ -6260,6 +6275,11 @@
    "brans": "nefroloji",
    "slug": "aldosteron-mekanizmalari",
    "baslik": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "mineralokortikoid-fazlaligi-ayirici-tani",
+   "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı"
   }
  ],
  "nefroloji/farmakoloji-finerenon": [
@@ -6304,6 +6324,11 @@
  "nefroloji/farmakoloji-potasyum-tutucu-diuretikler": [
   {
    "brans": "nefroloji",
+   "slug": "liddle-sendromu-mra-etkisizligi",
+   "baslik": "Liddle Sendromunda MRA'ların Etkisizliği ve ENaC İnhibitörleri"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "enac-epitelyal-sodyum-kanali",
    "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
   },
@@ -6311,6 +6336,11 @@
    "brans": "nefroloji",
    "slug": "aldosteron-bobrek-fizyolojisi",
    "baslik": "Aldosteron ve Böbrek Fizyolojisi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "mineralokortikoid-fazlaligi-ayirici-tani",
+   "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı"
   }
  ],
  "nefroloji/fizyoloji-acth-adrenal-mekanizmalar": [
@@ -6333,8 +6363,18 @@
  "nefroloji/fizyoloji-mr-regulasyon-mekanizmalari": [
   {
    "brans": "nefroloji",
+   "slug": "kortizol-mr-koruma-mekanizmalari",
+   "baslik": "Kortizolün Mineralokortikoid Reseptöre Bağlanmasının Engellenmesi"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "kalitsal-tubulopatiler-tuz-kaybettiren",
    "baslik": "Kalıtsal Tübülopatiler (Tuz Kaybettiren Nefropatiler)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "meyan-koku-kazanilmis-ame",
+   "baslik": "Meyan Kökü ve Kazanılmış Görünür Mineralokortikoid Fazlalığı"
   },
   {
    "brans": "nefroloji",
@@ -6605,6 +6645,23 @@
    "baslik": "Renal Arter Stenozu (RAS) ve Renovasküler Hipertansiyon"
   }
  ],
+ "nefroloji/kortizol-mr-koruma-mekanizmalari": [
+  {
+   "brans": "nefroloji",
+   "slug": "fizyoloji-mr-regulasyon-mekanizmalari",
+   "baslik": "Mineralokortikoid Reseptör Regülasyonu"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "meyan-koku-kazanilmis-ame",
+   "baslik": "Meyan Kökü ve Kazanılmış Görünür Mineralokortikoid Fazlalığı"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "aldosteron-bobrek-fizyolojisi",
+   "baslik": "Aldosteron ve Böbrek Fizyolojisi"
+  }
+ ],
  "nefroloji/kronik-bobrek-hastaligi": [
   {
    "brans": "endokrinoloji",
@@ -6620,6 +6677,28 @@
    "brans": "nefroloji",
    "slug": "diyaliz-tedavisi",
    "baslik": "Diyaliz (Renal Replasman Tedavisi)"
+  }
+ ],
+ "nefroloji/liddle-sendromu-mra-etkisizligi": [
+  {
+   "brans": "nefroloji",
+   "slug": "farmakoloji-potasyum-tutucu-diuretikler",
+   "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "enac-epitelyal-sodyum-kanali",
+   "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "aldosteron-bobrek-fizyolojisi",
+   "baslik": "Aldosteron ve Böbrek Fizyolojisi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "mineralokortikoid-fazlaligi-ayirici-tani",
+   "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı"
   }
  ],
  "nefroloji/membranoz-nefropati-klinik": [
@@ -6742,6 +6821,45 @@
    "brans": "nefroloji",
    "slug": "asit-baz-kompanzasyon-ilkeleri",
    "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi"
+  }
+ ],
+ "nefroloji/meyan-koku-kazanilmis-ame": [
+  {
+   "brans": "nefroloji",
+   "slug": "mineralokortikoid-fazlaligi-ayirici-tani",
+   "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "kortizol-mr-koruma-mekanizmalari",
+   "baslik": "Kortizolün Mineralokortikoid Reseptöre Bağlanmasının Engellenmesi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "fizyoloji-mr-regulasyon-mekanizmalari",
+   "baslik": "Mineralokortikoid Reseptör Regülasyonu"
+  }
+ ],
+ "nefroloji/mineralokortikoid-fazlaligi-ayirici-tani": [
+  {
+   "brans": "nefroloji",
+   "slug": "meyan-koku-kazanilmis-ame",
+   "baslik": "Meyan Kökü ve Kazanılmış Görünür Mineralokortikoid Fazlalığı"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "liddle-sendromu-mra-etkisizligi",
+   "baslik": "Liddle Sendromunda MRA'ların Etkisizliği ve ENaC İnhibitörleri"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "enac-epitelyal-sodyum-kanali",
+   "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "farmakoloji-potasyum-tutucu-diuretikler",
+   "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
   }
  ],
  "nefroloji/polikistik-bobrek-ekstrarenal": [
@@ -6890,13 +7008,13 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "polikistik-bobrek-tedavi",
-   "baslik": "ADPKD İleri Okuma: Uzman Düzeyi Tedavi ve Yönetim Kılavuzu"
+   "slug": "liddle-sendromu-mra-etkisizligi",
+   "baslik": "Liddle Sendromunda MRA'ların Etkisizliği ve ENaC İnhibitörleri"
   },
   {
    "brans": "nefroloji",
-   "slug": "farmakoloji-finerenon",
-   "baslik": "Yeni Nesil ns-MRA Finerenon"
+   "slug": "meyan-koku-kazanilmis-ame",
+   "baslik": "Meyan Kökü ve Kazanılmış Görünür Mineralokortikoid Fazlalığı"
   }
  ],
  "nefroloji/respiratuvar-alkaloz": [

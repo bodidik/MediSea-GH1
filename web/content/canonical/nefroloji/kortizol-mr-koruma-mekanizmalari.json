@@ -1,0 +1,41 @@
+{
+  "title": "Kortizolün Mineralokortikoid Reseptöre Bağlanmasının Engellenmesi",
+  "meta": {
+    "kaynakca": "aldosteron",
+    "updatedAt": "27 Eyl 2026",
+    "tags": [
+      "Nefroloji",
+      "Fizyoloji",
+      "Mineralokortikoid Reseptör",
+      "Kortizol",
+      "11β-HSD2",
+      "CBG",
+      "AME",
+      "S843"
+    ],
+    "parent": "aldosteron-mekanizmalari",
+    "order": 14
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Hücrelerde kortizolün Mineralokortikoid Reseptörüne (MR) bağlanması ve bu reseptörü uygunsuz bir şekilde aktive etmesi, pre-reseptör enzimatik mekanizmalar, post-translasyonel reseptör modifikasyonları ve sistemik taşıyıcı proteinler aracılığıyla çok katmanlı bir şekilde engellenir.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Fizyolojik ve nefrolojik açıdan bu engelleme mekanizmaları ve hücresel dinamikler şu şekildedir:</p>"
+    },
+    {
+      "heading": "1. Pre-Reseptör Enzimatik Bariyer: 11β-HSD2 Enzimi",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">İn vitro koşullarda mineralokortikoid reseptörü (MR); hem ana mineralokortikoid olan aldosterona hem de ana glukokortikoid olan kortizola (veya kemirgenlerde kortikosterona) eşit seviyede yüksek afinite gösterir (K<sub>d</sub> ≈ 0.5-2 nmol/L). Ancak sistemik dolaşımda serbest kortizol konsantrasyonu aldosterondan yaklaşık 100 ila 1000 kat daha yüksektir. Bu afinite ve konsantrasyon dengesizliğine rağmen kortizolün MR'ı işgal etmesini engelleyen birincil hücresel mekanizma 11β-hidroksisteroid dehidrogenaz tip 2 (11β-HSD2) enzimidir.</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Doku ve Hücre Spesifikliği:</strong> 11β-HSD2; aldosterona duyarlı distal nefron (ASDN: geç DCT, CNT ve toplayıcı kanallar), kolon, tükürük ve ter bezleri gibi klasik epitelial hedef dokularda yüksek miktarda eksprese edilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Enzimatik Reaksiyon:</strong> Nicotinamide adenine dinucleotide (NAD<sup>+</sup>) kosübstratını kullanan mikrozomal bir enzim olan 11β-HSD2, hücre içine giren aktif kortizolün C11 pozisyonundaki hidroksil grubunu oksitleyerek onu inaktif metaboliti olan kortizona dönüştürür. Kortizonun MR'a bağlanma afinitesi yok denecek kadar düşüktür; böylece aldosteron ortamda çok daha az bulunmasına rağmen MR'a erişim sağlar.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Subhücresel Ko-Lokalizasyon:</strong> 11β-HSD2 enzimi, tüm sitoplazmaya yayılan endoplazmik retikulum (ER) membranına bağlıdır. Unligand (hormonsuz) MR da sitoplazmada ER membran laboratuvarına son derece yakın konumlandığı için, içeri giren kortizol henüz MR'a ulaşamadan hızla inaktive edilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Hücresel Redoks Düzeyi (NADH Birikimi):</strong> 11β-HSD2 reaksiyonu sırasında ortamda yerel olarak biriken NADH, hücresel redoks potansiyelini değiştirerek enzim aktivitesinden kaçabilen az sayıdaki kortizol-MR kompleksinin bile transkripsiyonel olarak inaktif kalmasına katkıda bulunur.</li></ul></div>"
+    },
+    {
+      "heading": "2. Post-Translasyonel Reseptör Modifikasyonu: Ser-843 Fosforilasyonu",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Enzimatik inaktivasyonun yanı sıra, böbrekteki toplayıcı kanalların interkalar hücrelerinde kortizolün (ve aldosteronun) MR'a bağlanması doğrudan reseptör seviyesindeki bir post-translasyonel modifikasyonla engellenir:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Ligand Bağlama Alanının (LBD) Fosforilasyonu:</strong> Kanda potasyum yükseldiğinde (hiperkalemi), interkalar hücrelerdeki MR'ın Ligand Bağlama Alanında (LBD) yer alan Serin-843 (Ser-843) amino asidi spesifik olarak fosforile edilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Bağlanmanın Tamamen Engellenmesi:</strong> Ser-843 konumunda fosforile olan MR, konformasyonel değişime uğrar ve hem kortizolü hem de aldosteronu bağlama yeteneğini kaybeder.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Fizyolojik Önemi:</strong> Hacim azalması durumunda uyarılan Angiotensin II ise Ser-843'ün defosforilasyonunu sağlayarak reseptörü tekrar kortizol/aldosteron bağlanmasına açık hale getirir.</li></ul></div>"
+    },
+    {
+      "heading": "3. Sistemik Taşıyıcı Protein Sınırlaması: CBG (Transkortin)",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Doku düzeyindeki mekanizmaların öncesinde, sistemik dolaşımdaki Kortikosteroid Bağlayan Globulin (CBG / Transkortin) kortizole yüksek afinite ile bağlanır. Plazmadaki kortizolün %90'ından fazlası CBG'ye bağlıdır ve sadece serbest olan fraksiyon hücre zarlarından pasif difüzyonla dokulara geçebilir. Bu durum dokulara sunulan serbest kortizol yükünü bir miktar sınırlandırsa da, serbest kortizol düzeyi tek başına MR'ı korumaya yetmediği için esas korumayı dokudaki 11β-HSD2 üstlenir.</p>"
+    },
+    {
+      "heading": "4. Koruyucu Mekanizmaların Bulunmadığı veya Aşıldığı Durumlar",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Kortizolün MR'a bağlanmasını engelleyen bu bariyerler bazı patolojik ve fizyolojik durumlarda ortadan kalkar:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>11β-HSD2 Eksprese Etmeyen Dokular (Kardiyomiyositler ve Beyin):</strong> Kalp kası (kardiyomiyositler), hipokampus ve vasküler düz kas hücrelerinde 11β-HSD2 enzimi yok denecek kadar azdır veya eksprese edilmez. Bu dokulardaki MR'lar fizyolojik olarak sürekli kortizol ile doludur (constitutively occupied).</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Görünür Mineralokortikoid Fazlalığı (AME) Sendromu:</strong> HSD11B2 genindeki otozomal resesif inaktive edici mutasyonlar sonucu enzim çalışmaz; kortizol inaktive edilemediği için böbrekteki MR'lara bağlanarak hastada aldosteron seviyesi düşük olmasına rağmen şiddetli hipertansiyon, hipokalemi ve metabolik alkaloza yol açar.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Meyan Kökü (Glisiretinik Asit) Tüketimi:</strong> Meyan kökünde bulunan glisiretinik asit veya karbenoksolon gibi bileşikler 11β-HSD2 enzimini farmakolojik olarak inhibe eder.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Ektopik ACTH ve Şiddetli Cushing Sendromu:</strong> Aşırı kortizol üretiminde, dolaşımdaki yüksek kortizol miktarı 11β-HSD2 enziminin kapasitesini aşarak enzimatik doygunluğa (overload) neden olur; inaktive edilemeyen kortizol sızarak MR'a bağlanır.</li></ul></div>"
+    }
+  ]
+}

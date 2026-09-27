@@ -1,0 +1,37 @@
+{
+  "title": "Liddle Sendromunda MRA'ların Etkisizliği ve ENaC İnhibitörleri",
+  "meta": {
+    "kaynakca": "aldosteron",
+    "updatedAt": "27 Eyl 2026",
+    "tags": [
+      "Nefroloji",
+      "Hipertansiyon",
+      "Liddle Sendromu",
+      "ENaC",
+      "Nedd4-2",
+      "PY Motifi",
+      "Amilorid",
+      "MRA"
+    ],
+    "parent": "aldosteron-mekanizmalari",
+    "order": 17
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Liddle Sendromu'nda Mineralokortikoid Reseptör Antagonisti (MRA - spironolakton, eplerenon) ilaçların etkisiz kalmasının temel nedeni; nefrondaki Epitel Sodyum Kanallarının (ENaC) aşırı aktivitesinin aldosteron hormonundan ve Mineralokortikoid Reseptöründen (MR) tamamen bağımsız (otonom) bir yapısal/genetik mutasyondan kaynaklanmasıdır.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Moleküler patofizyolojik, hücresel ve farmakolojik düzeyde mekanizma şu şekildedir:</p>"
+    },
+    {
+      "heading": "1. Moleküler Patofizyoloji: PY Motifi Mutasyonu ve Nedd4-2 Etkileşimi",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Fizyolojik Şartlarda ENaC Yıkımı:</strong> Normal bir böbrek esas hücresinde (principal cell), apikal zardaki ENaC kanallarının sayısı ve yarı ömrü Nedd4-2 adı verilen bir E3 ubikuitin ligaz tarafından kontrol edilir. Nedd4-2, ENaC'nin β ve γ alt birimlerinin C-terminal ucundaki prolin bakımından zengin PY motiflerine bağlanarak kanalı ubikuitinler. Ubikuitinlenen ENaC kanalları klatrin aracılı endositoz ile hücre içine çekilir ve proteazom/lizozomlarda yıkılır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Liddle Sendromu'ndaki Genetik Bozukluk:</strong> Liddle sendromu, ENaC'nin β veya γ alt birimlerini kodlayan SCNN1B veya SCNN1G genlerindeki \"gain-of-function\" (fonksiyon kazandıran) otozomal dominant mutasyonlar sonucu gelişir. Bu mutasyonlar kanalın C-terminal ucunun kırpılmasına (trunkasyon) veya PY motifinin silinmesine/değişmesine yol açar.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kanalın Zarda Sürekli Açık Kalması:</strong> PY motifi bozulan ENaC kanalına Nedd4-2 bağlanamaz. Kanal hücre içine alınıp yıkılamadığı için apikal zarda birikir; hem yüzeydeki kanal sayısı hem de kanalın açık kalma olasılığı (P<sub>o</sub>) masif ve sürekli bir artış gösterir.</li></ul></div>"
+    },
+    {
+      "heading": "2. Aldosteron / Reseptör Bağımsızlığı ve Sistemik Feedback Baskılanması",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Aldosterondan Bağımsız Sodyum Emilimi:</strong> Liddle sendromunda ENaC kanalları aldosteron hormonunun hücresel uyarısına (gen transkripsiyonu veya SGK1 sinyal yoluna) ihtiyaç duymaksızın yapısal olarak sürekli açık durumdadır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Sistemik Feedback ile Aldosteronun Baskılanması:</strong> Kanalın aşırı çalışması sonucu tübüllerden kontrolsüz bir sodyum ve su geri emilimi gerçekleşir. Genişleyen ekstraselüler sıvı hacmi (hipervolemi) ve gelişen hipertansiyon, negatif geri bildirimle böbreklerden renin salgılanmasını ve dolayısıyla adrenal bezden aldosteron sentezini tamamen baskılar.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>MRA'ların Etkisizliği:</strong> MRA grubu ilaçlar (spironolakton, eplerenon), aldosteronun Mineralokortikoid Reseptörüne (MR) bağlanmasını yarışmalı olarak bloke ederek etki gösterirler. Liddle sendromunda ise plazma aldosteron seviyeleri zaten son derece düşüktür ve MR uyarılmasına bağlı bir kanal üretimi söz konusu değildir. MRA'lar ortamda zaten bulunmayan aldosteronun reseptörünü bloke ettikleri için otonom çalışan patolojik ENaC kanallarını durduramazlar ve klinik olarak tamamen etkisiz kalırlar.</li></ul></div>"
+    },
+    {
+      "heading": "3. Farmakolojik Çözüm: ENaC İnhibitörlerinin Doğrudan Blokajı",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• MR blokörlerinin (MRA) aksine, amilorid ve triamteren gibi ENaC inhibitörü diüretikler etkilerini reseptör veya gen ekspresyonu üzerinden göstermezler.</li><li class=\"bg-slate-50 p-2 rounded\">• Bu ilaçlar, tübül lümenindeki ENaC kanalının gözeneklerine (pore) doğrudan ve fiziksel olarak bağlanarak sodyum girişini durdururlar.</li><li class=\"bg-slate-50 p-2 rounded\">• Bu sayede, mutasyonlu ve Nedd4-2 ile yıkılamayan otonom kanalları doğrudan tıkayabildikleri için Liddle sendromundaki hipertansiyon ve hipokalemiyi spesifik ve etkili bir şekilde tedavi ederler.</li></ul></div>"
+    }
+  ]
+}

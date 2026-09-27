@@ -3642,6 +3642,14 @@
         "kaynak": "kavram"
       }
     ],
+    "nefroloji/liddle-sendromu-mra-etkisizligi": [
+      {
+        "slug": "hiperkalemi-tedavi",
+        "name": "Hiperkalemi Tedavisi",
+        "eslesen": "MRA",
+        "kaynak": "kavram"
+      }
+    ],
     "nefroloji/membranoz-nefropati-mn": [
       {
         "slug": "spot-urine",
@@ -3669,6 +3677,14 @@
         "slug": "abg",
         "name": "Asit-Baz Analizi (ABG)",
         "eslesen": "alkaloz",
+        "kaynak": "kavram"
+      }
+    ],
+    "nefroloji/mineralokortikoid-fazlaligi-ayirici-tani": [
+      {
+        "slug": "aldosteron-renin",
+        "name": "Aldosteron/Renin Oranı",
+        "eslesen": "hiperaldosteronizm",
         "kaynak": "kavram"
       }
     ],
@@ -5295,6 +5311,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "nefroloji/mineralokortikoid-fazlaligi-ayirici-tani",
+        "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı",
+        "eslesen": "hiperaldosteronizm",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "endokrinoloji/adrenal-bez-hastaliklari",
         "baslik": "Adrenal (Sürrenal) Bez Hastalıkları",
         "eslesen": "sürrenal",
@@ -6869,6 +6891,12 @@
         "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi",
         "eslesen": "MRA",
         "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/liddle-sendromu-mra-etkisizligi",
+        "baslik": "Liddle Sendromunda MRA'ların Etkisizliği ve ENaC İnhibitörleri",
+        "eslesen": "MRA",
+        "kaynak": "kavram"
       }
     ],
     "anca-vaskulit": [
@@ -7053,11 +7081,11 @@
     ]
   },
   "olcum": {
-    "konu": 458,
+    "konu": 462,
     "arac": 257,
-    "araciOlanKonu": 315,
+    "araciOlanKonu": 317,
     "konusuOlanArac": 148,
-    "bag": 578,
-    "kavramBag": 418
+    "bag": 580,
+    "kavramBag": 420
   }
 }

@@ -1,0 +1,45 @@
+{
+  "title": "Meyan Kökü ve Kazanılmış Görünür Mineralokortikoid Fazlalığı",
+  "meta": {
+    "kaynakca": "aldosteron",
+    "updatedAt": "27 Eyl 2026",
+    "tags": [
+      "Nefroloji",
+      "Hipertansiyon",
+      "Meyan Kökü",
+      "Glisiretinik Asit",
+      "11β-HSD2",
+      "AME",
+      "Psödohiperaldosteronizm",
+      "Hipokalemi"
+    ],
+    "parent": "aldosteron-mekanizmalari",
+    "order": 15
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Meyan kökü (Glycyrrhiza glabra), içerdiği biyoaktif bileşenler nedeniyle böbreklerde pre-reseptör düzeyinde kortizol inaktivasyonunu bozarak kazanılmış Görünür Mineralokortikoid Fazlalığı (Acquired Apparent Mineralocorticoid Excess - AME) tablosuna yol açar ve kan basıncını yükseltir.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Hücresel, enzimatik ve nefron fizyolojisi düzeyinde meyan kökünün hipertansiyon oluşturma mekanizması şu şekildedir:</p>"
+    },
+    {
+      "heading": "1. Etken Madde ve Enzimatik İnhibisyon Mekanizması",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Meyan kökünün ana etken maddesi glisirizik asit (glycyrrhizic acid) ve bunun vücuttaki aktif metaboliti olan glisiretinik asittir (glycyrrhetinic acid). Glisiretinik asit, böbrekte aldosterona duyarlı distal nefronda (ASDN: geç DCT, CNT ve toplayıcı kanallar) yoğun olarak eksprese edilen mikrozomal 11β-hidroksisteroid dehidrogenaz tip 2 (11β-HSD2) enzimini hem doğrudan (intihar substratı olarak) hem de gen ekspresyonunu azaltarak inhibe eder.</p>"
+    },
+    {
+      "heading": "2. Pre-Reseptör Düzeyinde Kortizolİnaktivasyonunun Bozulması",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Normal fizyolojik şartlarda:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Mineralokortikoid Reseptörü (MR), aldosteron ile kortizola eşit derecede yüksek afinite gösterir.</li><li class=\"bg-slate-50 p-2 rounded\">• Dolaşımdaki serbest kortizol konsantrasyonu, aldosteron konsantrasyonundan yaklaşık 100 kat daha yüksektir.</li><li class=\"bg-slate-50 p-2 rounded\">• Sağlıklı bir böbrekte 11β-HSD2 enzimi, tübül hücresine giren aktif kortizolü MR'a bağlanamayan inaktif kortizona dönüştürerek reseptörü kortizolün aşırı uyarılmasından korur (\"gatekeeper\" işlevi).</li></ul></div><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Meyan kökü tüketildiğinde 11β-HSD2 inhibe olur. Kortizol kortizona dönüştürülemez ve hücre içinde birikir. Yüksek konsantrasyondaki kortizol, ASDN hücrelerindeki MR'lara bağlanarak reseptörü masif ve uygunsuz biçimde aktive eder.</p>"
+    },
+    {
+      "heading": "3. Nefron Elektrofizyolojisi ve İyon Transport Sonuçları",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Kortizolün MR'ı aşırı aktive etmesi, nefron düzeyinde şu patofizyolojik süreçleri tetikler:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Artmış Sodyum ve Su Reabsorpsiyonu (Hipervolemi):</strong> Aktive olan MR; SGK1 yolağını uyarır, Nedd4-2 ligazını inhibe eder ve apikal epitel sodyum kanallarının (ENaC) hücre zarındaki yoğunluğunu ve yarı ömrünü artırır. ENaC üzerinden elektrojenik Na<sup>+</sup> emilimi belirgin şekilde yükselir ve bazolateral Na<sup>+</sup>/K<sup>+</sup>-ATPase pompaları aracılığıyla kana aktarılır. Sodyumun yanında suyun da pasif olarak emilmesi ekstraselüler sıvı (ESS) ve efektif arteriyel kan hacmini genişleterek sistemik hipertansiyona yol açar.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Potasyum ve Proton Sekresyonu:</strong> ENaC aracılığıyla anyonsuz Na<sup>+</sup> emiliminin artması, tübül lümeninde güçlü bir negatif elektrik potansiyeli yaratır. Bu elektronegatiflik, ROMK ve BK kanallarından idrara potasyum (K<sup>+</sup>) atılımını ve Tip A interkalar hücrelerden H<sup>+</sup> atılımını uyarır. Sonuç olarak hipokalemi ve metabolik alkaloz tablosu gelişir.</li></ul></div>"
+    },
+    {
+      "heading": "4. Sistemik Feedback Baskılanması ve Biyokimyasal Profil",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Artan sıvı hacmi ve hipertansiyon, böbreklerden renin salgılanmasını negatif geri bildirimle baskılar. Plazma Renin Aktivitesinin (PRA) düşmesi, adrenal bezden aldosteron sentezini de ikincil olarak durdurur.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Bu nedenle meyan kökü hiperaldosteronizm tablosu yaratmasına rağmen, biyokimyasal olarak aldosteron yüksekliğiyle değil \"Psödo-hiperaldosteronizm\" profiliyle seyreder:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Kan Basıncı:</strong> Yüksek (Hipertansiyon)</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Serum Potasyumu:</strong> Düşük (Hipokalemi)</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Asit-Baz Dengesi:</strong> Metabolik Alkaloz</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Plazma Renin Aktivitesi (PRA):</strong> Baskılanmış / Düşük</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Plazma Aldosteron Düzeyi:</strong> Baskılanmış / Düşük</li></ul></div>"
+    },
+    {
+      "heading": "Klinik Seyir ve Maruziyet Kaynakları",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Günde 50 gram gibi düşük miktarlarda meyan kökü içeren şekerlemelerin 2 hafta boyunca kronik tüketimi dahi sağlıklı bireylerde kan basıncında anlamlı yükselmeler yaratabilir. Meyan kökü ekstraktları sadece şekerlemelerde değil; aromalı çiğneme tütünlerinde, bazı sakızlarda, bitki çaylarında ve takviye edici gıdalarda da bulunabilir. Meyan kökü tüketiminin durdurulmasıyla 11β-HSD2 inhibisyonu ortadan kalkar, böbreklerde natriürez başlar ve kan basıncı ile elektrolit değerleri normale döner.</p>"
+    }
+  ]
+}
