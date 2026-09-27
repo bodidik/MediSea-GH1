@@ -19,6 +19,8 @@ interface Konu {
   hazir: boolean;
   /** Konu başka branşın dosyasındaysa o branş (çapraz bağlantı; ör. onkolojide HCC → gastroenteroloji). */
   brans?: string;
+  /** Sunucuda sayılmış içerik özeti ("15 soru · 80 kart"). */
+  icerik?: string;
 }
 
 interface Kategori {
@@ -235,12 +237,22 @@ export default function KategorilerClient({ kategoriler, bransRenk, lang, branch
                         background: konu.hazir ? bransRenk : '#c0c0c0',
                         flexShrink: 0,
                       }} />
-                      <span style={{
-                        fontSize: '13px',
-                        fontWeight: konu.hazir ? 500 : 400,
-                        color: konu.hazir ? '#1a2a3a' : '#5a6a8a',
-                      }}>
-                        {konu.baslik}
+                      <span style={{ display: 'flex', flexDirection: 'column', minWidth: 0 }}>
+                        <span style={{
+                          fontSize: '13px',
+                          fontWeight: konu.hazir ? 500 : 400,
+                          color: konu.hazir ? '#1a2a3a' : '#5a6a8a',
+                        }}>
+                          {konu.baslik}
+                        </span>
+                        {/* Konunun içinde NE var — satır bir dönem yalnız başlık
+                            ve rozet gösteriyordu; hangi konuda soru, hangisinde
+                            yalnız inci olduğu içeri girmeden anlaşılmıyordu. */}
+                        {konu.icerik && (
+                          <span style={{ fontSize: '11px', color: '#4a6a8a', marginTop: '2px' }}>
+                            {konu.icerik}
+                          </span>
+                        )}
                       </span>
                     </div>
                     <div style={{ display: 'flex', gap: '5px', alignItems: 'center' }}>

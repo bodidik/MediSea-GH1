@@ -15,34 +15,8 @@ import { useUser } from "@/app/(ydus)/context/UserContext";
 import GeriSayim from "@/app/components/GeriSayim";
 import CalismaPlani from "@/app/components/CalismaPlani";
 import SinavTakvimiUyarisi from "@/app/components/SinavTakvimiUyarisi";
+import { icerikOzeti, type IcerikSayisi } from "@/app/lib/icerik-ozeti";
 import type { Sinav } from "@/lib/sinav";
-
-/** Bir konunun ya da branşın gerçek içeriği (`envanterAl`dan). */
-export interface IcerikSayisi {
-  soru: number;
-  kart: number;
-  inci: number;
-  vaka: number;
-}
-
-/**
- * PANO ÜRÜNÜN YALNIZCA SORU BANKASINI GÖSTERİYORDU — ölçüldü (uygulamanın
- * kendi `envanterAl`ı sürülerek): branş kartları, toplam kartı ve yeni
- * eklenenler hep "N soru" diyordu; hazır konulardaki binlerce kart, yüzlerce
- * inci ve vakalar panoda hiç görünmüyordu. 100 incili bir konu "0 soru"
- * diye tanıtılıyordu. Sıfır olan tür yazılmaz; hepsi sıfırsa boş döner.
- */
-export function icerikOzeti(s: IcerikSayisi): string {
-  return [
-    [s.soru, "soru"],
-    [s.kart, "kart"],
-    [s.inci, "inci"],
-    [s.vaka, "vaka"],
-  ]
-    .filter(([n]) => (n as number) > 0)
-    .map(([n, ad]) => `${(n as number).toLocaleString("tr-TR")} ${ad}`)
-    .join(" · ");
-}
 
 export interface BranchCard extends IcerikSayisi {
   id: string;

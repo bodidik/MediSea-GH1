@@ -5,6 +5,8 @@ import path from 'path';
 import Link from 'next/link';
 import KategorilerClient from './KategorilerClient';
 import { listelenmeyenKategori, listeRozetleri } from '@/lib/premium-brans';
+import { envanterAl } from '@/lib/premium-envanter';
+import { icerikOzeti } from '@/app/lib/icerik-ozeti';
 import { rotaMeta } from "@/lib/site";
 
 export const revalidate = 86400;
@@ -73,6 +75,8 @@ interface Konu {
   hazir: boolean;
   /** Konu başka branşın dosyasındaysa o branş (çapraz bağlantı). */
   brans?: string;
+  /** "15 soru · 80 kart" — yalnız hazır konuda, dosyadan sayılır. */
+  icerik?: string;
 }
 
 interface Kategori {
@@ -107,6 +111,11 @@ function bransYukle(branch: string): BransVerisi | null {
     for (const kat of veri.kategoriler ?? []) {
       for (const konu of kat.konular ?? []) {
         konu.rozetler = listeRozetleri(konu.brans ?? branch, konu.id, konu.rozetler);
+        // Satır konunun İÇİNDE ne olduğunu söylesin (panoyla aynı biçim, aynı sayaç).
+        if (konu.hazir) {
+          const e = envanterAl(konu.brans ?? branch, konu.id);
+          konu.icerik = icerikOzeti({ soru: e.soru, kart: e.flashcard, inci: e.inci, vaka: e.vaka });
+        }
       }
     }
     return veri;
