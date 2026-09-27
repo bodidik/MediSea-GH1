@@ -17,7 +17,7 @@ export type Pt = [number, number, number];
 export type Stroke = { c: string; w: number; p: Pt[]; h?: 1 };
 
 /** Fosforlu kalemin saydamlığı ve uç çarpanı. */
-export const FOSFOR_ALFA = 0.32;
+export const FOSFOR_ALFA = 0.25;
 export const FOSFOR_CARPAN = 4;
 
 const f = (v: number) => (Math.round(v * 10) / 10).toString();
