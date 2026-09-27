@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { getSpecialty, SPECIALTIES } from "@/app/lib/specialties";
 import basliklar from "@/content/baslik-index.json";
+import { kisimAdlari } from "@/lib/icindekiler";
 import KutuphaneArama, { type KonuKaydi, type BransKarti } from "./KutuphaneArama";
 
 /**
@@ -64,7 +65,8 @@ export default function KutuphaneSayfasi() {
     .map((s) => ({
       slug: s.slug,
       baslik: s.title,
-      aciklama: s.desc,
+      // Kısım adları varsa onlar (branşın İçindekiler özeti), yoksa açıklama.
+      aciklama: kisimAdlari(s.slug).join(" · ") || s.desc,
       ikon: s.icon,
       konuSayisi: sayac[s.slug] ?? 0,
     }));

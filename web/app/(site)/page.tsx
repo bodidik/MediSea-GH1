@@ -4,6 +4,7 @@ import { getTopicCounts, getToolCount } from "@/app/lib/topic-counts";
 import StudyStatus from "@/app/components/StudyStatus";
 import KurumRozeti from "@/app/components/KurumRozeti";
 import { HeroDenizi } from "@/app/components/DenizSusu";
+import { kisimAdlari } from "@/lib/icindekiler";
 
 /**
  * ISR: ana sayfa artık istek başına üretilmiyor.
@@ -144,96 +145,87 @@ export default async function Home() {
           <StudyStatus />
 
 
+          {/* KÜTÜPHANEDE ARA — /topics'in kendi aramasına gider (sorgu adreste
+              taşınıyor, bkz. KutuphaneArama). Form GET: JavaScript'siz de çalışır. */}
+          <form action="/topics" method="get" role="search" className="relative mb-5">
+            <label htmlFor="ana-ara" className="sr-only">Kütüphanede konu ara</label>
+            <span aria-hidden="true" className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">⌕</span>
+            <input
+              id="ana-ara"
+              name="ara"
+              type="search"
+              placeholder={`${totalTopics} konu içinde ara — örn. hiponatremi, ITP, Cushing`}
+              className="w-full rounded-2xl border border-slate-200 bg-white py-3.5 pl-10 pr-28 text-sm font-semibold text-blue-950 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-blue-900 focus:ring-4 focus:ring-blue-900/5"
+            />
+            <button type="submit" className="absolute right-2 top-1/2 -translate-y-1/2 rounded-xl bg-blue-950 px-4 py-2 text-xs font-black uppercase tracking-widest text-white transition hover:bg-blue-900">
+              Ara
+            </button>
+          </form>
+
           {/* Başlık + araç barı tek satırda */}
           <div className="flex items-center justify-between gap-3 mb-4">
             <div className="flex items-center gap-2.5">
-              <div className="w-1 h-6 rounded-full bg-blue-950" />
+              <div className="w-1 h-7 rounded-full bg-blue-950" />
               <div>
-                <h2 className="text-sm font-black text-blue-950 uppercase italic tracking-tighter leading-none">Klinik Branşlar</h2>
-                <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mt-0.5">Uzmanlık düzeyinde güncel anlatımlar</p>
+                <h2 className="font-serif text-lg font-bold text-blue-950 tracking-tight leading-none">Kütüphane</h2>
+                <p className="text-[12px] font-semibold text-slate-500 mt-1">Ders kitabı düzeninde: kısım → bölüm → konu</p>
               </div>
             </div>
             {/* Hızlı araç chip'leri — desktop'ta burada */}
             <div className="hidden lg:flex items-center gap-1.5 overflow-x-auto no-scrollbar">
               {FEATURED_TOOLS.slice(0, 4).map((tool) => (
                 <Link key={tool.slug} href={`/tools/${tool.slug}`}
-                  className="shrink-0 flex items-center gap-1 px-2.5 py-1 bg-white rounded-lg border border-slate-100 hover:border-blue-300 hover:bg-blue-50 transition-all text-[10px] font-bold text-blue-950 whitespace-nowrap">
+                  className="shrink-0 flex items-center gap-1 px-2.5 py-1 bg-white rounded-lg border border-slate-100 hover:border-blue-300 hover:bg-blue-50 transition-all text-[11px] font-bold text-blue-950 whitespace-nowrap">
                   <span aria-hidden="true" className="text-xs">{tool.icon}</span>{tool.name}
                 </Link>
               ))}
-              <Link href="/tools" className="shrink-0 text-[10px] font-black text-blue-600 px-1.5 hover:underline uppercase tracking-tighter whitespace-nowrap">
+              <Link href="/tools" className="shrink-0 text-[11px] font-black text-blue-600 px-1.5 hover:underline uppercase tracking-tighter whitespace-nowrap">
                 Tümü →
               </Link>
             </div>
           </div>
 
-          {/* Branş grid */}
-          <div className="space-y-4">
+          {/* Branş kartları — her kart branşın KISIMLARINI sayar (İçindekiler'in
+              özeti; kaynak content/brans-icindekiler.json). Eski kartlar yalnızca
+              10.5px'lik büyük harfli bir ad gösteriyordu ve ziyaretçi bir branşın
+              içinde ne olduğunu ancak girince görebiliyordu. Düzeni olmayan
+              branşta kartın kendi açıklaması basılır. */}
+          <div className="space-y-5">
             {CATEGORY_ORDER.map((catKey) => {
-              const items = SPECIALTIES.filter((s) => s.category === catKey);
+              const items = SPECIALTIES.filter((s) => s.category === catKey && (topicCounts[s.slug] || 0) > 0);
               if (!items.length) return null;
               const meta = CATEGORY_META[catKey];
               return (
-                <div key={catKey} className="bg-white/70 rounded-2xl border border-slate-100 px-3 pt-3 pb-3">
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em] whitespace-nowrap">{meta.label}</h3>
-                    <div className="flex-1 h-px bg-slate-100" />
-                    <span className="text-[9px] font-bold text-slate-300 uppercase tracking-widest whitespace-nowrap">{items.length} branş</span>
+                <div key={catKey}>
+                  <div className="flex items-center gap-2 mb-2.5">
+                    <h3 className="text-[11px] font-black text-slate-500 uppercase tracking-[0.2em] whitespace-nowrap">{meta.label}</h3>
+                    <div className="flex-1 h-px bg-slate-200" />
                   </div>
 
-                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2.5">
                     {items.map((item) => {
                       const count = topicCounts[item.slug] || 0;
+                      const kisimlar = kisimAdlari(item.slug);
                       return (
                         <Link
                           key={item.slug}
                           href={`/topics/${item.slug}`}
-                          title={item.desc}
-                          className={`group flex items-center gap-2 p-2.5 bg-white rounded-xl border shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 active:scale-[0.98] ${item.color}`}
-                          style={{ borderColor: '#e8eaf0' }}
+                          className={`group flex items-start gap-3 p-3.5 bg-white rounded-2xl border border-slate-200 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 active:scale-[0.99] ${item.color}`}
                         >
-                          <div aria-hidden="true" className={`w-8 h-8 lg:w-9 lg:h-9 rounded-xl flex items-center justify-center text-sm lg:text-base ${item.bg} shrink-0 group-hover:scale-110 transition-transform shadow-sm`}>
+                          <div aria-hidden="true" className={`w-10 h-10 rounded-xl flex items-center justify-center text-lg ${item.bg} shrink-0 group-hover:scale-105 transition-transform`}>
                             {item.icon}
                           </div>
                           <div className="min-w-0 flex-1">
-                            {/* line-clamp-3 + break-words, truncate DEĞİL.
-                                Ölçüldü (canlı, 375px): 2 kolonda metin kutusu
-                                yalnızca 74px ve 13 branş adının 5'i kesikti —
-                                "Literatür & Journal Club" 152px gerektirip
-                                %51'ini gizliyordu, "Gastroenteroloji" 109px ile
-                                %32'sini. Masaüstünde kesik olan 2.
-                                Sarma tek başına YETMİYOR: ikisi TEK KELİME
-                                (Endokrinoloji 87px, Gastroenteroloji 109px) ve
-                                74px'lik kutuya sığmıyorlar — o yüzden
-                                break-words + hyphens-auto (html lang="tr").
-                                Tek kolona düşürmek de denendi ve ÖLÇÜLDÜ:
-                                kutu 237px oluyor ama ana sayfa 2744 -> 3287
-                                (+%20). Sarma ise +52px (+%1.9) ve kesik SIFIR.
-                                Derece 3: bu SABİT ve kısa bir etiket kümesi
-                                (13 branş), yani kesiği sıfırlamak ucuz. Konu
-                                başlıkları gibi açık uçlu içerikte 2 tavanı
-                                kullanılıyor — orada 3 bütün kartları uzatırdı. */}
-                            <h3 className="text-[10.5px] font-black text-blue-950 uppercase italic tracking-tight leading-tight line-clamp-3 break-words hyphens-auto">
-                              {item.title}
-                            </h3>
-                            {count > 0 && (
-                              <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest truncate mt-0.5">
-                                {count} konu
-                              </p>
-                            )}
+                            <div className="flex items-baseline justify-between gap-2">
+                              <h3 className="font-serif text-[15px] font-bold text-blue-950 leading-tight break-words hyphens-auto">
+                                {item.title}
+                              </h3>
+                              <span className="shrink-0 text-[11px] font-bold text-slate-500">{count} konu</span>
+                            </div>
+                            <p className="mt-1 text-[12px] leading-snug text-slate-600 line-clamp-3">
+                              {kisimlar.length ? kisimlar.join(" · ") : item.desc}
+                            </p>
                           </div>
-                          {/* Ok MOBİLDE gizli: bir HOVER affordansı ve dokunmatikte
-                              hover hiç ateşlemiyor. Ölçüldü (320px, canlı) — 12px ok
-                              + 8px boşluk, 2 kolonlu ızgarada metin kutusunun
-                              45px'inden 20'sini yiyordu ve 13 kartın 3'ü kesiliyordu
-                              ("116 konu" 49/45, "34 konu" 47/45, "Literatür &
-                              Journal Club" 4 satır isterken 3'e sığdırılıyordu).
-                              Gizlenince kutu 45 → 65, kesik 3 → 0 ve sayfa 40px
-                              KISALIYOR. sm ve üstünde hiçbir şey değişmedi.
-                              aria-hidden: süsleme glifi, deponun kendi kuralı. */}
-                          <svg aria-hidden="true" className={`hidden sm:block w-3 h-3 shrink-0 text-slate-300 group-hover:translate-x-0.5 transition-all ${item.text}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                          </svg>
                         </Link>
                       );
                     })}

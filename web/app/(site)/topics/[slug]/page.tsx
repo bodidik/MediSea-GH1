@@ -8,8 +8,10 @@ import { getSpecialty } from "@/app/lib/specialties";
 import { getTopicCounts } from "@/app/lib/topic-counts";
 import { getBranchTools, getBranchToolCategory } from "@/app/lib/tools";
 import { JsonLd, kirintiSemasi } from "@/lib/jsonld";
-import { ebeveynleriCoz } from "@/lib/slug-eslestir";
 import { slugCoz } from "@/lib/slug";
+import { bransIcindekiler, roma, type TocBolum } from "@/lib/icindekiler";
+import BransArama from "./BransArama";
+import { DalgaCizgisi, DumenSimgesi } from "@/app/components/DenizSusu";
 
 // Branş listesi de dosya sisteminden geliyor ve oturuma bağlı değil.
 // force-dynamic yüzünden CDN'e hiç girmiyordu; ISR ile önbelleğe alınıyor,
@@ -58,11 +60,6 @@ export async function generateMetadata({
    * **132** diyordu ama sayfada 116 konu var; nefroloji 52/47; romatoloji
    * 19/11. Hematoloji ve kardiyoloji tesadüfen tutuyordu — o iki branşta
    * gizli konu yok.
-   *
-   * Bu sayı arama sonucu parçacığında görünüyor: ziyaretçiye 132 vaat edip
-   * 116 göstermek, `topic-counts.ts` içinde ana sayfa için zaten yazılmış
-   * olan kuralın aynısını ihlal ediyordu. O düzeltme bu çağrı yerine
-   * uygulanmamıştı.
    */
   const konuSayisi = getTopicCounts()[slug] ?? 0;
 
@@ -78,6 +75,23 @@ export async function generateMetadata({
     openGraph: { type: "website", title: baslik, description: aciklama, url: `/topics/${slug}` },
   };
 }
+
+/** Açık site branşı → premium branş adresi (yalnızca premiumda karşılığı olanlar). */
+const PREMIUM_BRANS: Record<string, string> = {
+  endokrinoloji: "endokrinoloji",
+  enfeksiyon: "enfeksiyon",
+  gastroenteroloji: "gastroenteroloji",
+  "genel-dahiliye": "genel-dahiliye",
+  gogus: "gogus-hastaliklari",
+  hematoloji: "hematoloji",
+  kardiyoloji: "kardiyoloji",
+  nefroloji: "nefroloji",
+  onkoloji: "onkoloji",
+  romatoloji: "romatoloji",
+};
+
+/** Bölümün doğrudan alt başlıkları bu sayıyı aşarsa kalanı katlanır. */
+const GORUNUR_ALT = 7;
 
 export default async function BranchListPage({
   params
@@ -105,61 +119,16 @@ export default async function BranchListPage({
   const seritAraclar = branchTools.slice(0, 8);
   const aracKategorisi = getBranchToolCategory(slug);
 
-  // 1. Ham dosyaları al
-  const files = fs.readdirSync(branchDir).filter((f) => f.endsWith(".json"));
-
-  // 2. Normalizasyon ve ZIRHLI OKUMA (Hata Toleransı)
-  const topicList = files
-    .map((file) => {
-      const filePath = path.join(branchDir, file);
-
-      try {
-        const raw = fs.readFileSync(filePath, "utf-8");
-        const content = JSON.parse(raw);
-
-        return {
-          slug: file.replace(".json", ""),
-          title: content.title || file.replace(".json", ""),
-          order: Number(content.meta?.order ?? 999),
-          hamParent: content.meta?.parent ?? null,
-          parentler: [] as string[],
-          hidden: content.meta?.hidden || false,
-        };
-      } catch (err) {
-        // Bozuk JSON sistemi çökertmez, sadece loglanır ve atlanır
-        console.error(`⚠️ Bozuk JSON atlandı: ${filePath}`, err);
-        return null;
-      }
-    })
-    .filter(Boolean) as { slug: string; title: string; order: number; hamParent: unknown; parentler: string[]; hidden: boolean }[];
-
-  // 2b. Ebeveyn referansındaki YAZIM sapmasını onar.
-  //
-  // Ölçüldü: bir konu ebeveynini "Ön-hipofiz-hastaliklari-giris" diye
-  // yazmış, dosya ise "on-hipofiz-hastaliklari-giris" — fark yalnızca büyük
-  // harf ve Ö. Aşağıdaki bütün karşılaştırmalar tam dize eşleşmesi yaptığı
-  // için konu hiyerarşiden düşüyor, ebeveyninin sayfasında görünmüyordu.
-  //
-  // Gerçekten var olmayan bir ebeveyn ham hâliyle kalır; yani bu onarım
-  // eksikleri GİZLEMEZ, "Diğer Konular" ve asili-denetim.cjs onları
-  // görmeye devam eder.
-  const tumSluglar = new Set(topicList.map((t) => t.slug));
-  for (const t of topicList) t.parentler = ebeveynleriCoz(t.hamParent, tumSluglar, t.slug);
-
-  // 3. Stabil Sıralama: Önce Order (Sayısal), sonra Alfabetik (Türkçe-Base)
-  // Son çare olarak SLUG: `sensitivity: "base"` yalnızca büyük harf/aksan
-  // farkıyla ayrılan iki başlığı EŞİT sayıyor ve orada sıra yine
-  // `readdirSync`e — yani PLATFORMA — düşüyordu.
-  topicList.sort((a, b) => {
-    if (a.order !== b.order) return a.order - b.order;
-    const t = a.title.localeCompare(b.title, "tr", { sensitivity: "base" });
-    if (t) return t;
-    return a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0;
-  });
-
-  // 4. SADECE ANA KONULARI LİSTELE (Alt konular burada görünmesin — onlar konu
-  // detay sayfasındaki "Alt Başlıklar" menüsünde / "İleri Okuma"da yer alır)
-  const mainTopics = topicList.filter(t => t.parentler.length === 0 && !t.hidden);
+  /* İÇİNDEKİLER — ders kitabı düzeni (bkz. lib/icindekiler.ts).
+   *
+   * Eski sayfa yalnızca üst düzey konuları basıyordu; alt başlıklar ancak
+   * konuya girince görünüyordu ve ebeveyni bulunamayanlar sayfanın dibinde
+   * "Diğer Konular" kovasına düşüyordu. Artık her bölüm alt başlıklarıyla
+   * birlikte, kısımlara ayrılmış olarak basılıyor; asılı konular kendi
+   * gruplarında (ör. "Viral Hepatitler") toplanıyor. */
+  const toc = bransIcindekiler(slug);
+  const bolumSayisi = toc.kisimlar.reduce((t, k) => t + k.bolumler.length, 0);
+  const premiumBrans = PREMIUM_BRANS[slug];
 
   /** Görünen kırıntı yolu ile JSON-LD şeması AYNI diziden üretilir. */
   const kirintiAdimlari = [
@@ -168,67 +137,18 @@ export default async function BranchListPage({
     { ad: specialty?.title || slug.replace(/-/g, " "), yol: `/topics/${slug}` },
   ];
 
-  // Her ana konunun kendi alt konusu var mı? (kaç tane) — kompakt kartta rozet olarak gösterilir
-  // Çok ebeveynli bir konu, ebeveynlerinin HEPSİNİN rozetine sayılır — konu
-  // sayfasında da hepsinin çocuk listesinde göründüğü için iki taraf tutar.
-  const childCounts: Record<string, number> = {};
-  for (const t of topicList) {
-    if (t.hidden) continue;
-    for (const e of t.parentler) childCounts[e] = (childCounts[e] || 0) + 1;
-  }
-
-  // ASILI KALAN KONULAR — ebeveyni olarak yazılan konu ya hiç yok ya da gizli.
-  //
-  // Bunlar hiyerarşiden düşüyordu: ebeveyni olduğu için ana listeye girmiyor,
-  // ebeveyninin sayfası da olmadığı için hiçbir yerden bağlantı almıyorlardı.
-  // Kütüphanenin %11'i (46 konu) böyleydi ve aralarında "Akut Koroner
-  // Sendromlar" gibi temel başlıklar vardı — yalnızca doğrudan adresle ya da
-  // arama motorundan bulunabiliyorlardı.
-  //
-  // İçeriği düzeltmek yerine gezinme kendini onarıyor: ebeveyni bulunamayan
-  // konu kaybolmuyor, aşağıda listeleniyor. İçerik düzeldikçe bu bölüm
-  // kendiliğinden boşalır.
-  const slugKumesi = new Map(topicList.map((t) => [t.slug, t]));
-  //
-  // ÇOK EBEVEYNLİDE ÖLÇÜT: hiçbir ebeveyni görünür değilse asılıdır. Bir
-  // ebeveyni bile görünüyorsa konu oradan bağlı — kovaya girerse aynı konu
-  // sayfada iki kez listelenir.
-  const asiliKonular = topicList.filter((t) => {
-    if (t.hidden || t.parentler.length === 0) return false;
-    return !t.parentler.some((e) => {
-      const ebeveyn = slugKumesi.get(e);
-      return ebeveyn && !ebeveyn.hidden;
-    });
-  });
-
   return (
     <div className="min-h-screen bg-white font-sans">
 
-      {/* Kırıntı şeması — konu ve araç sayfalarında vardı, branş sayfalarında
-          YOKTU. Sayfada görünür kırıntı zaten basılıyordu, yalnızca makine
-          okunur karşılığı eksikti; arama sonucunda çıplak adres yerine
-          "MediSea › Kütüphane › Hematoloji" yolu görünsün diye eklendi.
-          13 branş sayfası site haritasında 0.8 önceliğinde. */}
-      <JsonLd
-        /* İlk adım "MediSea": şema GÖRÜNEN kırıntı yoluyla aynı olmak
-           zorunda ve bu sayfanın görünen yolu "MediSea / Kütüphane / Branş"
-           diye başlıyordu; şema ise MediSea adımını atlıyordu. Ölçüldü —
-           şema [Kütüphane, Hematoloji], görünen [MediSea, Kütüphane,
-           Hematoloji]. Konu sayfasıyla da tutarlı: orada da aynı kök var. */
-        veri={kirintiSemasi(kirintiAdimlari)}
-      />
+      {/* Kırıntı şeması — görünen kırıntı yoluyla aynı diziden. */}
+      <JsonLd veri={kirintiSemasi(kirintiAdimlari)} />
 
       {/* --- BRANŞ HERO (branşın kendi renk/ikon kimliğiyle) --- */}
-      <div className={`relative overflow-hidden border-b-4 border-slate-100 ${specialty.bg}`}>
-        <div className="max-w-5xl mx-auto px-5 sm:px-6 py-8 sm:py-10">
+      <div className={`relative overflow-hidden border-b border-slate-200 ${specialty.bg}`}>
+        <div className="max-w-5xl mx-auto px-5 sm:px-6 pt-7 pb-6 sm:pt-9 sm:pb-8">
 
-          {/* Breadcrumb */}
-          {/* flex-wrap: konu sayfasındaki kırıntı yolu uzun başlıklarda 375px'te
-              yatay kaydırma üretiyordu; aynı kalıp burada da var, aynı çare. */}
-          {/* Konu sayfasıyla AYNI kalıp: gezinme landmark'ı + liste +
-              aria-current. İkisi ayrışırsa aynı rol iki sayfada farklı
-              duyurulur; ölçüldü — konu sayfası landmark'a alındığında bu
-              sayfa düz <div> olarak kalmıştı. */}
+          {/* flex-wrap: uzun kırıntı 375px'te yatay kaydırma üretmesin. Konu
+              sayfasıyla AYNI kalıp: gezinme landmark'ı + liste + aria-current. */}
           <nav aria-label="Kırıntı yolu" className="mb-4">
             <ol className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[13px] font-semibold text-slate-500">
               {kirintiAdimlari.map((a, i) => {
@@ -250,175 +170,113 @@ export default async function BranchListPage({
           </nav>
 
           <div className="flex items-center gap-4 sm:gap-5">
-            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center text-3xl sm:text-4xl shrink-0">
+            <div aria-hidden="true" className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center text-3xl sm:text-4xl shrink-0">
               {specialty.icon}
             </div>
             <div className="min-w-0">
-              <h1 className="text-2xl sm:text-4xl font-black text-blue-950 uppercase italic tracking-tighter leading-none truncate">
+              <h1 className="font-serif text-2xl sm:text-4xl font-black text-blue-950 tracking-tight leading-tight">
                 {specialty.title}
               </h1>
-              {specialty.desc && (
-                <p className="text-xs sm:text-sm font-bold text-slate-500 mt-1.5">{specialty.desc}</p>
-              )}
+              <p className="text-[13px] sm:text-sm font-semibold text-slate-600 mt-1">
+                {toc.kisimlar.length > 1 ? `${toc.kisimlar.length} kısım · ` : ""}
+                {bolumSayisi} bölüm · {toc.konuSayisi} konu
+              </p>
             </div>
-            <div className="ml-auto hidden sm:block text-right shrink-0">
-              <div className="text-2xl font-black text-blue-950 leading-none">{mainTopics.length}</div>
-              <div className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mt-0.5">Ana Konu</div>
-            </div>
+          </div>
+
+          <div className="mt-5 max-w-xl">
+            <BransArama konular={toc.duz} brans={slug} />
           </div>
         </div>
       </div>
 
-      {/* --- KONU GRID (kompakt, ana sayfayla aynı kart dili) --- */}
       <div className="max-w-5xl mx-auto px-5 sm:px-6 py-6 sm:py-8">
-        {mainTopics.length > 0 ? (
-          <>
-            {/*
-              Görünmez bölüm başlığı — yalnızca başlık hiyerarşisi için.
-
-              Ölçüldü: sayfa H1'den doğrudan kart başlıklarının H3'üne
-              atlıyordu. Aşağıdaki "Diğer Konular" bölümü H2 → H3 diye
-              doğru kurulmuş; ana liste ise başlıksız olduğu için ekran
-              okuyucuda köksüz kalıyordu.
-
-              Görünür başlık EKLENMEDİ: tasarımda H1'in hemen altında kart
-              ızgarası var ve araya metin koymak düzeni değiştirirdi.
-              `sr-only` bu depoda zaten kullanılan kalıp (atlama bağlantısı,
-              durum bölgeleri).
-            */}
-            <h2 className="sr-only">{specialty.title} konuları</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5">
-            {mainTopics.map((topic, i) => {
-              const subCount = childCounts[topic.slug] || 0;
-              return (
-                <Link
-                  key={topic.slug}
-                  href={`/topics/${slug}/${topic.slug}`}
-                  className={`group flex items-center gap-3 p-3 bg-white border border-slate-100 rounded-xl transition-all hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] ${specialty.color}`}
-                >
-                  {/*
-                    ROZET SIRA NUMARASI, SIRALAMA ANAHTARI DEĞİL.
-
-                    Bir dönem ham `meta.order` basılıyordu ve bir dizi GİBİ
-                    görünüyordu — oysa o anahtar branştaki BÜTÜN konuları
-                    (çocuklar dahil) numaralıyor, bu sayfa ise yalnızca üst
-                    düzeyi listeliyor. Ölçüldü:
-
-                      endokrinoloji  0,1,1,2,3,4,4,5,6,10   (iki 1, iki 4)
-                      hematoloji     1,4,5,5,6,13,29        (boşluk + tekrar)
-                      nefroloji      1,1,2,2,4,5,6,6,7
-
-                    Yani okuyucu tekrar eden ve atlayan bir "sıra" görüyor,
-                    üstelik iki branşta 0'dan başlıyor. Sıralama HÂLÂ
-                    `order` ile yapılıyor; ekrana basılan şey artık listedeki
-                    gerçek konum.
-
-                    Yetim ("Diğer Konular") bölümü "•" basmaya devam ediyor:
-                    onlar küratörlü sıranın parçası değil ve bu ayrım zaten
-                    oradaydı.
-                  */}
-                  <span className="text-[10px] font-black text-slate-300 group-hover:text-slate-400 transition-colors italic shrink-0 w-6 text-center">
-                    {i + 1}
-                  </span>
-                  <div className="min-w-0 flex-1">
-                  {/* line-clamp-3 sm:line-clamp-2 — DERECE KUTU GENİŞLİĞİNE BAĞLI.
-                      "2 satır" sabit bir METİN miktarı değil: kutu 320px'te 33px,
-                      1280px'te iki kat geniş. Bir dönem her genişlikte 2'ydi ve
-                      ölçüm 375px'te yapılmıştı — yani kapsam iddiası TEK GENİŞLİĞE
-                      dayanıyordu. 320px'te yeniden ölçüldü (9 branş, 95 kart):
-                      clamp-2 ile 21 başlık kesik (%22), clamp-3 ile 5 (%5.3);
-                      bedeli sayfa başına ortalama 38px (~%1.5). sm ve üstünde 2
-                      kalıyor — orada clamp-2 zaten 0 kesik veriyor. */}
-                  {/* line-clamp-2, truncate DEĞİL. Bir dönem tek satırda
-                      kesiliyordu ve ölçüldü (canlı, 375px, 13 branşın 100
-                      konu kartı): başlıkların 63'ü kesikti, en kötüsü 737px
-                      gerektirip 246px'lik kutuda duruyordu — yani %67'si
-                      gizliydi ("Akciğer Kanseri Epidemiyolojisi, Tarama
-                      Protokolleri ve Klin…"). Masaüstünde kesik olan 11 idi,
-                      yani kusur neredeyse tamamen MOBİLE özgüydü.
-                      Sarmaya izin verilince gereken satır sayısı ölçüldü:
-                      1 satır 37 · 2 satır 57 · 3 satır 4 · 4+ satır 2. Yani
-                      2 satır 100 başlığın 94'ünü TAM gösteriyor; 3'e çıkarmak
-                      yalnızca 4 başlık için bütün kartları uzatırdı.
-                      Izgara mobilde tek kolon, sm+ iki kolon ve satır
-                      yüksekliği kendiliğinden hizalanıyor — raggedlik yok. */}
-                    <h3 className="text-[13px] font-black text-blue-950 uppercase italic tracking-tight leading-tight line-clamp-3 sm:line-clamp-2">
-                      {topic.title}
-                    </h3>
-                    {subCount > 0 && (
-                      <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest">
-                        {subCount} alt başlık
-                      </p>
-                    )}
-                  </div>
-                  <svg className={`w-4 h-4 shrink-0 text-slate-300 group-hover:translate-x-0.5 transition-all ${specialty.text}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              );
-            })}
-          </div>
-          </>
-        ) : (
+        {bolumSayisi === 0 ? (
           <div className="p-16 text-center border-2 border-dashed border-slate-100 rounded-[2.5rem]">
-            <p className="text-slate-400 font-black uppercase tracking-widest">
+            <p className="text-slate-500 font-black uppercase tracking-widest">
               Bu branşta henüz geçerli/kayıtlı konu yok.
             </p>
           </div>
-        )}
+        ) : (
+          <div className="lg:grid lg:grid-cols-[210px_1fr] lg:gap-10">
 
-        {/* --- DİĞER KONULAR (ebeveyni bulunamayanlar) --- */}
-        {asiliKonular.length > 0 && (
-          <div className="mt-8">
-            <div className="flex items-baseline gap-3 mb-3">
-              <h2 className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.25em]">
-                Diğer Konular
-              </h2>
-              <span className="text-[9px] font-bold text-slate-300 uppercase tracking-widest">
-                {asiliKonular.length} başlık
-              </span>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5">
-              {asiliKonular.map((topic) => {
-                /* Yetimin de çocuğu olabilir ve rozet YOKTU: küratörlü kart
-                   "N alt başlık" derken aynı veriye sahip yetim kart susuyordu.
-                   Ölçüldü: 45 yetimin 2'si 6 çocuk taşıyor (diüretikler 4,
-                   trombosit hastalıkları 2). Aynı `childCounts`, aynı gösterim. */
-                const subCount = childCounts[topic.slug] || 0;
-                return (
-                <Link
-                  key={topic.slug}
-                  href={`/topics/${slug}/${topic.slug}`}
-                  className={`group flex items-center gap-3 p-3 bg-white border border-slate-100 rounded-xl transition-all hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] ${specialty.color}`}
-                >
-                  <span className="text-[10px] font-black text-slate-300 group-hover:text-slate-400 transition-colors italic shrink-0 w-6 text-center">
-                    •
-                  </span>
-                  <div className="min-w-0 flex-1">
-                  {/* line-clamp-2 gerekçesi yukarıda (küratörlü liste). */}
-                    <h3 className="text-[13px] font-black text-blue-950 uppercase italic tracking-tight leading-tight line-clamp-3 sm:line-clamp-2">
-                      {topic.title}
-                    </h3>
-                    {subCount > 0 && (
-                      <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest">
-                        {subCount} alt başlık
-                      </p>
+            {/* KISIM DİZİNİ — masaüstünde yapışkan yan sütun, mobilde yatay çipler.
+                Tek kısımlı branşta basılmaz (gezinecek bir şey yok). */}
+            {toc.kisimlar.length > 1 ? (
+              <nav aria-label="Kısımlar" className="mb-6 lg:mb-0">
+                <div className="lg:sticky lg:top-24">
+                  <h2 className="mb-2 flex items-center gap-1.5 text-[11px] font-black uppercase tracking-[0.2em] text-slate-500"><DumenSimgesi className="h-4 w-4 text-blue-900" />İçindekiler</h2>
+                  <ol className="flex gap-2 overflow-x-auto pb-1 lg:flex-col lg:gap-0.5 lg:overflow-visible">
+                    {toc.kisimlar.map((k) => (
+                      <li key={k.no} className="shrink-0">
+                        <a
+                          href={`#kisim-${k.no}`}
+                          className="flex items-baseline gap-2 whitespace-nowrap rounded-xl border border-slate-200 bg-white px-3 py-2 text-[13px] font-bold text-blue-950 transition hover:border-blue-900/30 hover:bg-slate-50 lg:whitespace-normal lg:border-transparent lg:bg-transparent lg:px-2 lg:py-1.5"
+                        >
+                          <span className="font-serif text-[12px] text-slate-500">{roma(k.no)}.</span>
+                          <span>{k.baslik}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ol>
+                  {premiumBrans && (
+                    <Link
+                      href={`/tr/premium/ydus/${premiumBrans}`}
+                      className="mt-4 hidden rounded-2xl bg-blue-950 p-4 text-white transition hover:bg-blue-900 lg:block"
+                    >
+                      <span className="block text-[11px] font-black uppercase tracking-widest text-yellow-300">Premium ⚓</span>
+                      <span className="mt-1 block text-[13px] font-semibold leading-snug text-blue-100">
+                        Bu branşın soru bankası, vakaları ve tekrar kartları
+                      </span>
+                    </Link>
+                  )}
+                </div>
+              </nav>
+            ) : (
+              <div className="hidden lg:block" />
+            )}
+
+            <div className="min-w-0 space-y-10">
+              {toc.kisimlar.map((kisim) => (
+                <section key={kisim.no} id={`kisim-${kisim.no}`} aria-labelledby={`kisim-${kisim.no}-baslik`}>
+                  <div className="mb-1 flex items-baseline gap-3">
+                    {toc.kisimlar.length > 1 && (
+                      <span className="font-serif text-lg font-black text-slate-500">{roma(kisim.no)}</span>
                     )}
+                    <h2 id={`kisim-${kisim.no}-baslik`} className="font-serif text-xl sm:text-2xl font-bold text-blue-950 tracking-tight">
+                      {kisim.baslik}
+                    </h2>
                   </div>
-                  <svg className={`w-4 h-4 shrink-0 text-slate-300 group-hover:translate-x-0.5 transition-all ${specialty.text}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-                );
-              })}
+                  <DalgaCizgisi className="mb-3 text-sky-300" />
+                  <ol className="space-y-3">
+                    {kisim.bolumler.map((b) => (
+                      <BolumKarti key={b.no} bolum={b} brans={slug} renk={specialty.color} />
+                    ))}
+                  </ol>
+                </section>
+              ))}
             </div>
           </div>
         )}
 
-        {/* İLGİLİ HESAPLAYICILAR (branşla eşleşen varsa) — ana sayfadaki Hızlı Erişim ile aynı dil */}
+        {/* Premium çağrısı mobilde (masaüstünde yan sütunda). */}
+        {premiumBrans && bolumSayisi > 0 && (
+          <Link
+            href={`/tr/premium/ydus/${premiumBrans}`}
+            className="mt-8 flex items-center justify-between gap-3 rounded-2xl bg-blue-950 px-5 py-4 text-white transition hover:bg-blue-900 lg:hidden"
+          >
+            <span>
+              <span className="block text-[11px] font-black uppercase tracking-widest text-yellow-300">Premium ⚓</span>
+              <span className="mt-0.5 block text-[13px] font-semibold text-blue-100">Soru bankası, vakalar ve tekrar kartları</span>
+            </span>
+            <span aria-hidden="true" className="text-yellow-300">→</span>
+          </Link>
+        )}
+
+        {/* İLGİLİ HESAPLAYICILAR (branşla eşleşen varsa) */}
         {branchTools.length > 0 && (
-          <div className="mt-6 sm:mt-8">
-            <div className="bg-slate-50/50 backdrop-blur-sm rounded-2xl p-2.5 border border-slate-200 shadow-sm flex items-center gap-2 overflow-x-auto no-scrollbar sm:flex-wrap">
+          <div className="mt-8 sm:mt-10">
+            <div className="bg-slate-50/50 rounded-2xl p-2.5 border border-slate-200 shadow-sm flex items-center gap-2 overflow-x-auto no-scrollbar sm:flex-wrap">
               <span className="text-[9px] font-black text-blue-900/80 uppercase tracking-[0.2em] px-3 border-r border-slate-200 hidden md:block shrink-0">
                 İlgili Hesaplayıcılar
               </span>
@@ -445,5 +303,78 @@ export default async function BranchListPage({
         )}
       </div>
     </div>
+  );
+}
+
+/**
+ * Tek bölüm kartı: başlık + doğrudan alt başlıklar.
+ *
+ * Modül düzeyinde tanımlı (render içinde DEĞİL — ic-bilesen-denetim).
+ * Alt başlıklar GORUNUR_ALT'ı aşarsa kalanı yerel `<details>` içinde:
+ * JavaScript'siz açılır, klavyeyle erişilir, arama motoru metni görür.
+ */
+function BolumKarti({ bolum, brans, renk }: { bolum: TocBolum; brans: string; renk: string }) {
+  const ilk = bolum.cocuklar.slice(0, GORUNUR_ALT);
+  const kalan = bolum.cocuklar.slice(GORUNUR_ALT);
+  const baslikIc = (
+    <>
+      <span className="font-serif text-[12px] font-bold text-slate-500">Bölüm {bolum.no}</span>
+      <span className="mt-0.5 block font-serif text-[17px] font-bold leading-snug text-blue-950">
+        {bolum.baslik}
+      </span>
+    </>
+  );
+  return (
+    <li className={`rounded-2xl border border-slate-200 bg-white transition hover:shadow-md ${renk}`}>
+      {bolum.slug ? (
+        <Link href={`/topics/${brans}/${bolum.slug}`} className="group flex items-start justify-between gap-3 px-4 pt-3.5 pb-2.5">
+          <span className="min-w-0">{baslikIc}</span>
+          <span aria-hidden="true" className="mt-4 shrink-0 text-slate-400 transition group-hover:translate-x-0.5">→</span>
+        </Link>
+      ) : (
+        <div className="px-4 pt-3.5 pb-2.5">{baslikIc}</div>
+      )}
+      {bolum.cocuklar.length > 0 && (
+        <div className="border-t border-slate-100 px-2 pb-2 pt-1">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-3">
+            {ilk.map((c) => (
+              <AltSatir key={c.slug} slug={c.slug} baslik={c.baslik} alt={c.altToplam} brans={brans} />
+            ))}
+          </ul>
+          {kalan.length > 0 && (
+            <details className="group/d">
+              <summary className="mx-2 mt-1 cursor-pointer list-none py-1.5 text-[13px] font-bold text-blue-700 hover:underline">
+                <span className="group-open/d:hidden">+{kalan.length} alt başlık daha</span>
+                <span className="hidden group-open/d:inline">Daha az göster</span>
+              </summary>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-3">
+                {kalan.map((c) => (
+                  <AltSatir key={c.slug} slug={c.slug} baslik={c.baslik} alt={c.altToplam} brans={brans} />
+                ))}
+              </ul>
+            </details>
+          )}
+        </div>
+      )}
+    </li>
+  );
+}
+
+function AltSatir({ slug, baslik, alt, brans }: { slug: string; baslik: string; alt: number; brans: string }) {
+  return (
+    <li>
+      <Link
+        href={`/topics/${brans}/${slug}`}
+        className="flex items-baseline gap-2 rounded-lg px-2 py-1.5 text-[14px] leading-snug text-slate-700 transition hover:bg-slate-50 hover:text-blue-900"
+      >
+        <span aria-hidden="true" className="text-slate-400">·</span>
+        <span className="min-w-0 flex-1">{baslik}</span>
+        {alt > 0 && (
+          <span className="shrink-0 rounded-full bg-slate-100 px-1.5 text-[11px] font-bold text-slate-600" title={`${alt} ileri okuma`}>
+            +{alt}
+          </span>
+        )}
+      </Link>
+    </li>
   );
 }

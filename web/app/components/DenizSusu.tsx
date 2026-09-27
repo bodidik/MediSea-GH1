@@ -154,3 +154,32 @@ export function GeceDalgasi() {
     </svg>
   );
 }
+
+/**
+ * Dalga çizgisi — başlık altı ayraç (düz kenarlığın yerine). Tek renk,
+ * `currentColor`; rengi çağıran verir. Süs: aria-hidden.
+ */
+export function DalgaCizgisi({ className = "" }: Props) {
+  return (
+    <svg aria-hidden="true" className={`pointer-events-none block h-2 w-full ${className}`} viewBox="0 0 240 8" preserveAspectRatio="none">
+      <path
+        d="M0 4 q7.5 -4 15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0 t15 0"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        vectorEffect="non-scaling-stroke"
+      />
+    </svg>
+  );
+}
+
+/** Dümen — küçük simge (başlık yanı). Süs: aria-hidden. */
+export function DumenSimgesi({ className = "" }: Props) {
+  return (
+    <svg aria-hidden="true" className={`pointer-events-none ${className}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
+      <circle cx="12" cy="12" r="6.5" />
+      <circle cx="12" cy="12" r="1.8" />
+      <path d="M12 2.5v4M12 17.5v4M2.5 12h4M17.5 12h4M5.3 5.3l2.8 2.8M15.9 15.9l2.8 2.8M18.7 5.3l-2.8 2.8M8.1 15.9l-2.8 2.8" />
+    </svg>
+  );
+}

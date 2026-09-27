@@ -4,6 +4,7 @@ import NotePanel from "@/app/components/NotePanel";
 import { KLINIK_SORUMLULUK } from "@/app/lib/sorumluluk";
 import ReadingHint from "@/app/components/ReadingHint";
 import { KiyiDalgasi, AdaSilueti } from "@/app/components/DenizSusu";
+import DenizFiligrani from "@/app/components/DenizFiligrani";
 import Link from "next/link";
 import React from "react";
 
@@ -21,6 +22,9 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       >
         İçeriğe atla
       </a>
+
+      {/* Deniz filigranı — iskeleden görünen, sayfaya göre değişen silik manzara. */}
+      <DenizFiligrani />
 
       {/* ÜST MENÜ */}
       <SiteHeader />

@@ -1,0 +1,80 @@
+{
+  "_aciklama": "Branş sayfalarının ders kitabı düzeni (İçindekiler). Her kısım, konu dosyalarının parent/order alanına DOKUNMADAN üst düzey konuları gruplar. 'bolumler' dizisindeki her kimlik ya gerçek bir üst düzey konunun slug'ıdır ya da içerikte var olmayan bir ebeveyn adıdır (o zaman o ebeveyni işaret eden konular tek bölümde toplanır, bölüm adı 'sanal' sözlüğünden gelir). Listede adı geçmeyen konu KAYBOLMAZ: sayfa onu 'Diğer Konular' kısmına koyar (sayfanın kendisi sayar: kısım toplamı = görünür konu sayısı).",
+  "endokrinoloji": {
+    "kisimlar": [
+      { "baslik": "Hipofiz ve Hipotalamus", "bolumler": ["hipofiz-hastaliklari-ana"] },
+      { "baslik": "Tiroid", "bolumler": ["tiroid-hastaliklari-ana"] },
+      { "baslik": "Adrenal Bez", "bolumler": ["adrenal-bez-hastaliklari"] },
+      { "baslik": "Üreme Endokrinolojisi", "bolumler": ["reproduktif-endokrinoloji-ana"] },
+      { "baslik": "Diyabet ve Metabolizma", "bolumler": ["diabetes-mellitus-ana"] },
+      { "baslik": "Kalsiyum ve Kemik Metabolizması", "bolumler": ["kalsiyum-homeostazi-fizyoloji", "osteoporoz-ana-sayfa"] },
+      { "baslik": "Endokrin Tümör Sendromları", "bolumler": ["men1-sendromu"] }
+    ],
+    "sanal": { "reproduktif-endokrinoloji-ana": "Üreme Endokrinolojisi ve Hipogonadizm" }
+  },
+  "enfeksiyon": {
+    "kisimlar": [
+      { "baslik": "Antimikrobiyal Tedavi ve Biyobelirteçler", "bolumler": ["antibiyotikler-ana-sayfa", "prokalsitonin-genel"] },
+      { "baslik": "Bakteriyel Enfeksiyonlar", "bolumler": ["crkp-enfeksiyonu", "bruselloz"] },
+      { "baslik": "Mantar Enfeksiyonları", "bolumler": ["mantar-enfeksiyon-ana-sayfa"] }
+    ]
+  },
+  "gastroenteroloji": {
+    "kisimlar": [
+      { "baslik": "Özofagus", "bolumler": ["ozofagus-hastaliklari"] },
+      { "baslik": "Mide ve Gastrointestinal Motilite", "bolumler": ["mide-hastaliklari"] },
+      { "baslik": "İnce ve Kalın Bağırsak", "bolumler": ["bagirsak-hastaliklari"] },
+      { "baslik": "Pankreas", "bolumler": ["pankreas-hastaliklari"] },
+      { "baslik": "Karaciğer ve Safra Yolları", "bolumler": ["karaciger-hastaliklari", "viral-hepatitler"] }
+    ],
+    "sanal": {
+      "ozofagus-hastaliklari": "Özofagus Hastalıkları",
+      "mide-hastaliklari": "Mide Hastalıkları",
+      "pankreas-hastaliklari": "Pankreas Hastalıkları",
+      "viral-hepatitler": "Viral Hepatitler"
+    }
+  },
+  "hematoloji": {
+    "kisimlar": [
+      { "baslik": "Kırmızı Küre Hastalıkları", "bolumler": ["anemiler", "porfiriler-aip-pct"] },
+      { "baslik": "Hematolojik Maligniteler", "bolumler": ["hematolojik-maligniteler"] },
+      { "baslik": "Miyeloproliferatif Neoplazmlar", "bolumler": ["miyeloproliferatif", "primer-miyelofibrozis"] },
+      { "baslik": "Hemostaz, Tromboz ve Antikoagülasyon", "bolumler": ["kanama-bozukluklari", "immun-trombositopeni-itp", "antikoagulasyon-stratejileri"] }
+    ]
+  },
+  "kardiyoloji": {
+    "kisimlar": [
+      { "baslik": "Hipertansiyon ve Kardiyovasküler Risk", "bolumler": ["hipertansiyon-ve-aciller", "lipidoloji-guncel-kilavuz"] },
+      { "baslik": "Koroner Arter Hastalığı", "bolumler": ["akut-koroner-sendromlar"] },
+      { "baslik": "Ritim Bozuklukları", "bolumler": ["aritmiler-af-vt-vf"] },
+      { "baslik": "Kalp Yetersizliği ve Kardiyomiyopatiler", "bolumler": ["kalp-yetmezligi"] },
+      { "baslik": "Kapak, Miyokard, Perikard ve Endokard", "bolumler": ["kapak-hastaliklari", "akut-miyokardit", "akut-perikardit", "infektif-endokardit"] }
+    ]
+  },
+  "nefroloji": {
+    "kisimlar": [
+      { "baslik": "Böbrek Yetersizliği ve Replasman Tedavisi", "bolumler": ["akut-bobrek-hasari", "kronik-bobrek-hastaligi", "kbh-mkb-kapsamli-inceleme", "diyaliz-tedavisi"] },
+      { "baslik": "Sıvı, Elektrolit ve Asit-Baz", "bolumler": ["hiponatremi", "asit-baz-denge-bozukluklari", "diuretikler"] },
+      { "baslik": "Glomerüler Hastalıklar", "bolumler": ["glomeruler-hastaliklar"] },
+      { "baslik": "Tübülointerstisiyel, Vasküler ve Kistik Hastalıklar", "bolumler": ["tubulointerstisiyel-hastaliklar", "renovaskuler-hastaliklar", "polikistik-bobrek-hastaligi-pkd"] }
+    ]
+  },
+  "onkoloji": {
+    "kisimlar": [
+      { "baslik": "Solid Tümörler", "bolumler": ["akciger-kanseri-ana-sayfa", "karaciger-kanserleri", "pankreas-kanseri-ana-sayfa"] },
+      { "baslik": "Onkolojik Aciller ve Destek Tedavisi", "bolumler": ["onkolojik-aciller", "kanser-agrisi-yonetimi"] }
+    ]
+  },
+  "romatoloji": {
+    "kisimlar": [
+      { "baslik": "Enflamatuvar Artritler", "bolumler": ["romatoid-artrit"] },
+      { "baslik": "Vaskülitler", "bolumler": ["vaskulit-sendromlari"] }
+    ]
+  },
+  "palyatif": {
+    "kisimlar": [
+      { "baslik": "Palyatif Bakımın İlkeleri", "bolumler": ["palyatif-bakim-ana-sayfa"] },
+      { "baslik": "Ağrı ve Opioid Farmakolojisi", "bolumler": ["opioidler-ana-sayfa"] }
+    ]
+  }
+}
