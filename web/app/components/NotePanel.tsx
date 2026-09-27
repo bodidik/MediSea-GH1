@@ -65,7 +65,7 @@ const NIBS = [2, 4, 7];
 /** Geri alma geçmişinin tavanı (durum anlık görüntüsü sayısı). */
 const GECMIS_TAVAN = 60;
 /** Kalem bu kadar süre kıpırdamadan durursa vuruş düz çizgiye oturur (ms). */
-const DUZ_CIZGI_MS = 550;
+const DUZ_CIZGI_MS = 400;
 /** Nokta silgisinin yarıçapı (normalize, panel genişliğine göre). */
 const SILGI_R = 0.022;
 
