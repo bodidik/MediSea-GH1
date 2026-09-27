@@ -35,7 +35,35 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
         ])}
       />
       {children}
-
+      <nav aria-label="Bu araçla ilgili konular" className="bg-slate-50 px-4 pb-6 font-sans">
+        <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
+            Bu araçla ilgili konular
+          </h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/topics/nefroloji/akut-interstisiyel-nefrit-ain" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Akut İnterstisiyel Nefrit (AİN)
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/enfeksiyon/vanco-bobrek" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Vankomisin: Eliminasyon, Nefrotoksisite ve AUC Kılavuzluğunda Dozlama
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/nefroloji/kolesterol-emboli-sendromu" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Kolesterol Emboli Sendromu (Aterotrombotik Renal Hastalık)
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/nefroloji/akut-bobrek-hasari" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Akut Böbrek Hasarı (ABH)
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <nav aria-label="Aynı kategoriden araçlar" className="bg-slate-50 px-4 pb-10 font-sans">
         <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">

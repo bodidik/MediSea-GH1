@@ -298,10 +298,21 @@ node scripts/baslik-index.cjs    # yeni konu eklendiğinde (paylaşım kartı ba
 node scripts/ilgili-index.cjs    # yeni konu eklendiğinde (İlgili Konular bağları)
 node scripts/arac-konu-index.cjs # yeni konu VEYA araç eklendiğinde (araç↔konu bağları)
                                  # sonra arac-metadata.cjs — araç layout'u bu indeksi basıyor
+                                 # --cikti <dosya>: depodaki indekse dokunmadan ölç
 node scripts/dil-index.cjs       # app/en'e sayfa eklenince/silinince (hreflang · site haritası)
                                  # sonra arac-metadata.cjs — çevrilmiş aracın layout'u hreflang basıyor
 node scripts/plan-ver.cjs --liste  # kullanıcı planlarını görmek/değiştirmek için
 ```
+
+**Araç↔konu bağının iki yolu (27 Eyl 2026):** (1) konu metni aracın ADINI
+geçirir; (2) konu BAŞLIĞI `content/arac-kavram.json`daki bir kavramı taşır
+(child-pugh → "siroz"). Yalnız (1) varken 478 açık konunun 350'si bağsızdı;
+(2) ile bağ 169 → **578**, bağlı konu 128 → 315, bağlı araç 56 → 148. Yeni
+araç eklerken sözlüğe kavramını da yaz — yeni konu başlığı tutarsa
+kendiliğinden bağlanır. Kavram GÖVDEDE aranmaz (gürültü). Bilinmeyen araç
+kimliği `--kontrol`de düşer; hiçbir başlığı tutmayan kavram (pnömoni, KOAH)
+yalnızca raporlanır. Bölüm metni `html` VEYA `text` alanında durur —
+yalnız `html` okuyan ölçüt 53 konuyu boş görür.
 
 **Bu betikler CI'da ÇALIŞMIYOR — elle çalıştırılıyor.** Yani biri araç ya
 da konu ekleyip betiği unutursa indeks sessizce bayatlıyor. Bedeli görünür:

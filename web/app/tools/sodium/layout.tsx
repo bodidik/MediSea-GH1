@@ -35,7 +35,35 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
         ])}
       />
       {children}
-
+      <nav aria-label="Bu araçla ilgili konular" className="bg-slate-50 px-4 pb-6 font-sans">
+        <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
+            Bu araçla ilgili konular
+          </h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/topics/endokrinoloji/arka-hipofiz-bozukluklari-di-ve-siadh" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/nefroloji/hiponatremi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Hiponatremi: Patofizyolojik Mekanizmalar, Etiyolojik Sınıflandırma, Tanısal Yaklaşım ve Tedavi Protokolleri
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/endokrinoloji/siadh-tedavi-protokolleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/endokrinoloji/sclc-paraneoplastik-siadh" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <nav aria-label="Aynı kategoriden araçlar" className="bg-slate-50 px-4 pb-10 font-sans">
         <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">

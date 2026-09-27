@@ -290,7 +290,8 @@ export async function searchContent(query: string): Promise<SearchResult[]> {
    *
    * Çare eşanlamlı listesi DEĞİL — o elle tutulur ve bayatlar. Bağ zaten
    * türetilmiş durumda: `content/arac-konu.json` (scripts/arac-konu-index.cjs)
-   * konu metninde aracın adını arıyor. Sorgu bir konuyu tutuyorsa, o konunun
+   * konu metninde aracın adını, konu başlığında `content/arac-kavram.json`
+   * kavramlarını arıyor. Sorgu bir konuyu tutuyorsa, o konunun
    * araçları da sonuca girer.
    *
    * SIRA: en sonda. Adı eşleşen araç en üstte, sonra konular, sonra

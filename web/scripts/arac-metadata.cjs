@@ -334,14 +334,16 @@ function dosyaIcerigi({ slug, name, desc, kardesler = [], kategoriAd = '', konul
 
   /**
    * İLGİLİ KONULAR — huninin ters yönü. Aracı arama motorundan bulan
-   * kişiye, o aracın geçtiği açık konular önerilir. Bağ elle yazılmaz:
-   * `scripts/arac-konu-index.cjs` konu metninde aracın adını arar.
+   * kişiye, o araçla ilgili açık konular önerilir. Bağ elle yazılmaz:
+   * `scripts/arac-konu-index.cjs` konu metninde aracın adını, konu
+   * başlığında da `content/arac-kavram.json` kavramlarını arar. Başlık bu
+   * yüzden "geçtiği" DEMEZ — kavram bağında araç metinde anılmıyor.
    */
   const konuBlok = konular.length
-    ? `      <nav aria-label=${JSON.stringify('Bu aracın geçtiği konular')} className="bg-slate-50 px-4 pb-6 font-sans">
+    ? `      <nav aria-label=${JSON.stringify('Bu araçla ilgili konular')} className="bg-slate-50 px-4 pb-6 font-sans">
         <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
-            Bu aracın geçtiği konular
+            Bu araçla ilgili konular
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
 ${konular

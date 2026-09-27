@@ -491,7 +491,7 @@ export default async function TopicDetailPage({
   // İlgili konular: etiket akrabalığından önceden üretiliyor
   // (scripts/ilgili-index.cjs). Ebeveyn ve çocuklar dizinde zaten elenmiş
   // olduğu için burada tekrar bağlantı çıkmaz.
-  /** Bu konuda adı geçen klinik araçlar (üretilmiş indeks — bkz. arac-konu-index.cjs). */
+  /** Bu konuyla ilgili klinik araçlar (üretilmiş indeks — bkz. arac-konu-index.cjs). */
   const ilgiliAraclar =
     ((aracKonuIndex as { konuArac?: Record<string, { slug: string; name: string }[]> })
       .konuArac?.[`${slug}/${topicSlug}`]) ?? [];
@@ -948,9 +948,10 @@ export default async function TopicDetailPage({
               )}
 
               {/* İLGİLİ HESAPLAYICILAR — huninin ters yönü.
-                  Konu metni bir aracın adını gerçekten geçiriyorsa o araç
-                  buraya çıkar; bağ elle tutulmaz, `scripts/arac-konu-index.cjs`
-                  okur. Elle liste bu depoda tarihsel olarak bayatlıyor. */}
+                  Konu metni aracın adını geçiriyorsa ya da konu başlığı
+                  `content/arac-kavram.json`daki bir kavramı taşıyorsa araç
+                  buraya çıkar; bağ konu başına elle tutulmaz,
+                  `scripts/arac-konu-index.cjs` okur. */}
               {ilgiliAraclar.length > 0 && (
                 <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm">
                   <h2 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 mt-0 pb-4 mb-4 flex items-center gap-2">

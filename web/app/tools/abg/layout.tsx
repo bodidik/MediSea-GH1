@@ -35,7 +35,35 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
         ])}
       />
       {children}
-
+      <nav aria-label="Bu araçla ilgili konular" className="bg-slate-50 px-4 pb-6 font-sans">
+        <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
+            Bu araçla ilgili konular
+          </h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/topics/nefroloji/asit-baz-denge-bozukluklari" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Asit-Baz Denge Bozuklukları
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/nefroloji/asit-baz-fizyopatoloji" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Asit-Baz Homeostazının Fizyopatolojik Temelleri
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/nefroloji/asit-baz-kompanzasyon-ilkeleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/nefroloji/metabolik-alkaloz" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <nav aria-label="Aynı kategoriden araçlar" className="bg-slate-50 px-4 pb-10 font-sans">
         <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">

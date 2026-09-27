@@ -35,10 +35,10 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
         ])}
       />
       {children}
-      <nav aria-label="Bu aracın geçtiği konular" className="bg-slate-50 px-4 pb-6 font-sans">
+      <nav aria-label="Bu araçla ilgili konular" className="bg-slate-50 px-4 pb-6 font-sans">
         <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
-            Bu aracın geçtiği konular
+            Bu araçla ilgili konular
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
@@ -49,6 +49,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/topics/hematoloji/m7-flipi-ngs-paneli" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/hematoloji/POD24-FL-tedavi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                POD24 Yüksek Riskli Foliküler Lenfoma Tedavi Algoritması
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/hematoloji/pod24-bispesifik-antikorlar" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri
               </Link>
             </li>
           </ul>

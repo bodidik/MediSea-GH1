@@ -35,15 +35,30 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
         ])}
       />
       {children}
-      <nav aria-label="Bu aracın geçtiği konular" className="bg-slate-50 px-4 pb-6 font-sans">
+      <nav aria-label="Bu araçla ilgili konular" className="bg-slate-50 px-4 pb-6 font-sans">
         <div className="max-w-3xl mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="font-sans mt-0 mb-3 text-[10px] font-black uppercase tracking-widest text-slate-400">
-            Bu aracın geçtiği konular
+            Bu araçla ilgili konular
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
               <Link href="/topics/endokrinoloji/prolaktinoma-yeni-biyobelirtecler" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/endokrinoloji/hipofiz-adenomlari" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Hipofiz Nöroendokrin Tümörleri
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/endokrinoloji/hiperprolaktinemi-ve-prolaktinoma" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Hiperprolaktinemi ve Prolaktinoma
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/endokrinoloji/sf3b1-mutasyonu-metastatik-prolaktinoma" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                SF3B1 Mutasyonu: Agresif ve Metastatik Prolaktinomalar
               </Link>
             </li>
           </ul>

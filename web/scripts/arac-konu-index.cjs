@@ -40,14 +40,38 @@
  *  7. Gizli konu (`meta.hidden`) bağ ALMAZ — `konulariOku` içinde; kardeş
  *     üreteçler (`baslik-index`, `ilgili-index`) aynı kuralı taşıyor.
  *
+ *  8. Bölüm metni iki alanda duruyor: `html` ve `text`. Yalnız `html`
+ *     okunduğunda 53 konu (27 Eyl 2026) üretece BOŞ görünüyordu — "Onkolojik
+ *     Aciller" tümör lizisi, "Malnütrisyon" GLIM'i anıyordu ama bağ yoktu.
+ *     Konu sayfası da `s.text || s.html` okuyor.
+ *
  * NADİRLİK ÇALIŞMIYOR, denendi: `Anafilaksi` 9 konuda geçiyor ve DOĞRU,
  * `PPI` 10 konuda geçiyor ve YANLIŞ. Ayraç sıklık değil, takma adın
  * kaynağı (parantez içi mi, asıl ad mı).
+ *
+ * İKİNCİ YOL: KAVRAM SÖZLÜĞÜ (`content/arac-kavram.json`). Ad eşleşmesi
+ * yalnız aracın ADINI geçiren konuyu bulur; "Siroz ve Komplikasyonları"
+ * Child-Pugh'u, "Akut Böbrek Hasarı" KDIGO'yu hiç anmıyordu. 27 Eyl 2026
+ * ölçümü: 478 açık konunun 350'si, 257 aracın 198'i bağsızdı. Sözlük
+ * araca KAVRAM verir (child-pugh → "siroz") ve kavram konu BAŞLIĞINDA
+ * aranır — gövdede değil: gövdede "siroz" geçen konu sayısı, sirozla ilgili
+ * konu sayısından çok fazla. Bağ yine okunur, konu başına elle yazılmaz:
+ * sonra girilecek "Siroz…" başlıklı konu kendiliğinden bağlanır.
+ *   - Tamamı büyük harf ≤ 6 kavram (SIADH, KBH, ET) duyarlı ve tam sözcük.
+ *   - ≤ 4 harf tam sözcük ("gut" → "Gutta" değil).
+ *   - Gerisi sözcük BAŞI önekidir, Türkçe küçültülerek ("siroz" → "Sirozda",
+ *     "immün" → "İmmün"); ekleri saymamak sistematik eksik üretirdi.
+ *   - `haric`: başlıkta bu önek varsa bağ kurulmaz ("Hodgkin" ↛ "Non-Hodgkin").
+ * Ad eşleşmesi her zaman önce gelir (daha ayırt edici); kavram bağı
+ * `kaynak: "kavram"` taşır. Bilinmeyen araç kimliği her kipte DÜŞER;
+ * hiçbir başlığı tutmayan kavram yalnızca raporlanır — gelecek konu için
+ * bekleyebilir (pnömoni, KOAH).
  *
  * Kullanım:
  *   node scripts/arac-konu-index.cjs            → content/arac-konu.json yazar
  *   node scripts/arac-konu-index.cjs --kontrol  → yazmaz, bayat mı bakar (çıkış 1)
  *   node scripts/arac-konu-index.cjs --kok <yol> → başka bir ağaca yönlendir
+ *   node scripts/arac-konu-index.cjs --cikti <dosya> → çıktıyı başka dosyaya yaz
  */
 const fs = require("fs");
 const path = require("path");
@@ -59,7 +83,9 @@ const KOK = kokIdx >= 0 ? argv[kokIdx + 1] : process.cwd();
 
 const ARAC_INDEX = path.join(KOK, "content", "arac-index.json");
 const KONU_KOK = path.join(KOK, "content", "canonical");
-const CIKTI = path.join(KOK, "content", "arac-konu.json");
+const ciktiIdx = argv.indexOf("--cikti");
+const CIKTI = ciktiIdx >= 0 ? path.resolve(argv[ciktiIdx + 1]) : path.join(KOK, "content", "arac-konu.json");
+const KAVRAM = path.join(KOK, "content", "arac-kavram.json");
 
 /** Konu başına en çok bu kadar araç, araç başına en çok bu kadar konu gösterilir. */
 const KONU_BASINA = 6;
@@ -153,7 +179,7 @@ function konulariOku() {
       if (j?.meta?.hidden === true) continue;
       const yol = path.relative(KONU_KOK, p).split(path.sep).join("/").replace(/\.json$/, "");
       const govde = duzle(
-        [j.title || "", ...(j.sections || []).map((s) => `${s.heading || ""} ${s.html || ""}`)].join(" ")
+        [j.title || "", ...(j.sections || []).map((s) => `${s.heading || ""} ${s.text || s.html || ""}`)].join(" ")
       );
       cikti.push({ yol, baslik: j.title || yol, govde });
     }
@@ -188,9 +214,32 @@ function uret() {
       (aracKonu[a.slug] ||= []).push({ yol: k.yol, baslik: k.baslik, eslesen: bulunan });
     }
   }
-  // Ayırt ediciliğe göre sırala (uzun eşleşme önce), sonra kırp.
-  for (const l of Object.values(konuArac)) l.sort((x, y) => y.eslesen.length - x.eslesen.length);
-  for (const l of Object.values(aracKonu)) l.sort((x, y) => y.eslesen.length - x.eslesen.length);
+
+  // KAVRAM SÖZLÜĞÜ — başlıkta kavram → araç (bkz. dosya başı).
+  const sozluk = kavramlariOku(new Set(adlar.map((a) => a.slug)));
+  const adOf = new Map(adlar.map((a) => [a.slug, a.name]));
+  let kavramBag = 0;
+  for (const k of konular) {
+    const baslik = duzle(k.baslik);
+    for (const { slug, kavramlar, haric } of sozluk) {
+      if (haric.some((h) => h.re.test(baslik))) continue;
+      const tutan = kavramlar.filter((kv) => kv.re.test(baslik));
+      if (tutan.length === 0) continue;
+      for (const kv of tutan) kv.tutulan++;
+      if ((konuArac[k.yol] || []).some((x) => x.slug === slug)) continue; // ad zaten bağladı
+      const eslesen = tutan.map((kv) => kv.ad).sort((x, y) => y.length - x.length)[0];
+      (konuArac[k.yol] ||= []).push({ slug, name: adOf.get(slug), eslesen, kaynak: "kavram" });
+      (aracKonu[slug] ||= []).push({ yol: k.yol, baslik: k.baslik, eslesen, kaynak: "kavram" });
+      kavramBag++;
+    }
+  }
+  const oluKavram = sozluk.flatMap((s) => s.kavramlar.filter((kv) => kv.tutulan === 0).map((kv) => `${s.slug}:${kv.ad}`));
+
+  // Ayırt ediciliğe göre sırala: ad eşleşmesi kavramdan önce, sonra uzun
+  // eşleşme önce; ardından kırp.
+  const siraAl = (x, y) => (x.kaynak ? 1 : 0) - (y.kaynak ? 1 : 0) || y.eslesen.length - x.eslesen.length;
+  for (const l of Object.values(konuArac)) l.sort(siraAl);
+  for (const l of Object.values(aracKonu)) l.sort(siraAl);
   for (const k of Object.keys(konuArac)) konuArac[k] = konuArac[k].slice(0, KONU_BASINA);
 
   /**
@@ -242,11 +291,58 @@ function uret() {
       araciOlanKonu: Object.keys(konuArac).length,
       konusuOlanArac: Object.keys(aracKonu).length,
       bag: Object.values(konuArac).reduce((a, x) => a + x.length, 0),
+      kavramBag,
     },
+    // Rapor için — dosyaya yazılmaz (aşağıda ayrılıyor).
+    _oluKavram: oluKavram,
   };
 }
 
-const yeni = uret();
+/**
+ * Sözlüğü okur ve derler. Bilinmeyen araç kimliği ya da boş kavram listesi
+ * HATADIR (her kipte): araç yeniden adlandırılınca sözlük sessizce ölmesin.
+ */
+function kavramlariOku(bilinen) {
+  let d;
+  try { d = JSON.parse(fs.readFileSync(KAVRAM, "utf8")); } catch (e) {
+    throw new Error(`arac-kavram.json okunamadı: ${e.message}`);
+  }
+  const kavramlar = d && d.kavramlar;
+  if (!kavramlar || typeof kavramlar !== "object" || Object.keys(kavramlar).length === 0) {
+    throw new Error("arac-kavram.json'da kavram yok — ayrıştırma bozuk sayılır, yazma iptal.");
+  }
+  const haric = d.haric || {};
+  const hatalar = [];
+  for (const slug of [...Object.keys(kavramlar), ...Object.keys(haric)]) {
+    if (!bilinen.has(slug)) hatalar.push(`bilinmeyen araç: ${slug}`);
+  }
+  for (const [slug, l] of Object.entries(kavramlar)) {
+    if (!Array.isArray(l) || l.length === 0 || l.some((x) => typeof x !== "string" || !x.trim())) {
+      hatalar.push(`boş/bozuk kavram listesi: ${slug}`);
+    }
+  }
+  if (hatalar.length) throw new Error("arac-kavram.json:\n  " + hatalar.join("\n  "));
+  return Object.keys(kavramlar)
+    .sort((a, b) => a.localeCompare(b, "tr"))
+    .map((slug) => ({
+      slug,
+      kavramlar: kavramlar[slug].map((ad) => ({ ad, re: kavramDeseni(ad), tutulan: 0 })),
+      haric: (haric[slug] || []).map((ad) => ({ ad, re: kavramDeseni(ad) })),
+    }));
+}
+
+/** Kavram eşleme kuralı — dosya başındaki üç madde. */
+function kavramDeseni(ad) {
+  const a = duzle(ad).trim();
+  if (kisaltmaMi(a)) return new RegExp(`(^|[^${HARF}])${kacir(a)}([^${HARF}]|$)`);
+  const k = a.toLocaleLowerCase("tr");
+  const son = k.length <= 4 ? `([^${HARF}]|$)` : "";
+  // Başlık da Türkçe küçültülerek sınanır ("İmmün" → "immün").
+  const re = new RegExp(`(^|[^${HARF}])${kacir(k)}${son}`);
+  return { test: (s) => re.test(s.toLocaleLowerCase("tr")) };
+}
+
+const { _oluKavram: oluKavram, ...yeni } = uret();
 const metin = JSON.stringify(yeni, null, 2) + "\n";
 
 if (KONTROL) {
@@ -278,4 +374,6 @@ if (KONTROL) {
 fs.writeFileSync(CIKTI, metin, "utf8");
 const o = yeni.olcum;
 console.log(`arac-konu.json yazıldı — konu ${o.konu} · araç ${o.arac}`);
-console.log(`  aracı olan konu: ${o.araciOlanKonu}  ·  konusu olan araç: ${o.konusuOlanArac}  ·  bağ: ${o.bag}`);
+console.log(`  aracı olan konu: ${o.araciOlanKonu}  ·  konusu olan araç: ${o.konusuOlanArac}  ·  bağ: ${o.bag} (kavramdan ${o.kavramBag})`);
+if (oluKavram.length) console.log(`  hiçbir başlığı tutmayan kavram (${oluKavram.length}) — gelecek konu için bekliyor olabilir:
+    ${oluKavram.join(" · ")}`);
