@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
 import VakaEngine from './VakaEngine';
 import { AccessGate } from '@/lib/AccessGate';
 import { rotaMeta } from "@/lib/site";
@@ -31,6 +32,23 @@ import { rotaMeta } from "@/lib/site";
 export const dynamic = "force-dynamic";
 
 const isValidParam = (p: string) => /^[a-zA-Z0-9-]+$/.test(p);
+
+/**
+ * VAKA DOSYASININ ADI KONUSUNU BELİRLER (`<konu>-vaka-N`) ve göğüs
+ * hastalıklarında üç vaka yanlış konuya yazılmıştı — ölçüldü (27 Eyl):
+ * TKP sayfası bir HASTANE kökenli pnömoni vakası gösteriyordu, HKP sayfası
+ * "vaka yok" diyordu, VİP sayfası TKP + HKP + VİP üçünü birden listeliyordu.
+ *
+ * Yeni adlar ESKİ ADLARI YENİDEN KULLANMIYOR: vurgu anahtarı adresin
+ * sorgusunu (`id=`) taşıyor; eski bir ad başka vakaya verilseydi o adresteki
+ * vurgular "konteyner var, metin tutmuyor" kuralıyla SİLİNİRDİ. Eski adres
+ * burada yeni adrese yönlenir.
+ */
+const ESKI_VAKA_ADI: Record<string, string> = {
+  'gogus-hastaliklari/tkp-vaka-1': 'hkp-vaka-1',
+  'gogus-hastaliklari/vip-vaka-2': 'hkp-vaka-2',
+  'gogus-hastaliklari/vip-vaka-1': 'tkp-vaka-2',
+};
 
 const ZORLUK_STIL: Record<string, { bg: string; color: string }> = {
   kolay: { bg: '#f0fbf5', color: '#1a6640' },
@@ -141,6 +159,10 @@ export default async function VakaCozPage(props: {
       </div>
     );
   }
+
+  // Yeniden adlandırılan vakanın eski adresi yeni adrese gider (gerekçe ESKI_VAKA_ADI).
+  const yeniAd = id ? ESKI_VAKA_ADI[`${branch}/${id}`] : undefined;
+  if (yeniAd) redirect(`/${lang}/premium/ydus/vaka-coz?branch=${branch}&id=${yeniAd}`);
 
   // topic veya id'den topicId türet, access kontrolü yap
   const topicId = topic ?? id?.replace(/-vaka-\d+$/, '');

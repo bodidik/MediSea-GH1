@@ -3,7 +3,7 @@
   "baslik": "Ventilatör İlişkili Pnömoni (VİP) Ampirik Tedavi ve Süre Yönetimi",
   "zorluk": "zor",
   "sure_dk": 8,
-  "branch": "enfeksiyon-hastaliklari",
+  "branch": "gogus-hastaliklari",
   "topic": "vip",
   "adimlar": [
     {
