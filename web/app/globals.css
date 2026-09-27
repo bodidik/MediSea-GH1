@@ -736,6 +736,19 @@ label:has(input.sr-only:focus-visible) {
   .premium-konu-izgara { grid-template-columns: minmax(0, 1fr) 210px; }
 }
 
+/* Dar ekranda konu sayfasının modül şeridi (page.tsx'teki gerekçe): yan
+   sütun tek kolonda metnin altına düştüğü için modüller başa alınır. Eşik
+   ızgaranın iki kolona geçtiği yerle AYNI — ikisi ayrışmasın. */
+.premium-konu-mobil-moduller {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1.25rem;
+}
+@media (min-width: 900px) {
+  .premium-konu-mobil-moduller { display: none; }
+}
+
 /* ------------------------------------------------------------------
    BASKI — asistan nöbette protokol çıktısı alıyor, sayfanın tamamını değil.
 

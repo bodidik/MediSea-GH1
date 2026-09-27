@@ -326,6 +326,41 @@ export default async function KonuSayfasi({
           )}
         </div>
 
+        {/* DAR EKRANDA MODÜLLER BAŞTA — ölçüldü (375px, hipertiroidi): metin
+            1.794–17.017px arasında, yan sütun ızgara tek kolona düşünce metnin
+            ALTINA iniyor ve "Soru çöz" 17.657px'teydi. Masaüstünde yapışkan
+            kart okurken yanda; telefondaki kullanıcı konunun sorusuna,
+            kartına, incisine ancak 16 bin piksel kaydırarak ulaşıyordu.
+            Yalnız ETKİN modüller (yan sütunla aynı kural: ilan + dosya) ve
+            sayısıyla; 900px ve üstünde `display:none` (globals.css). */}
+        {(() => {
+          const kisa: { key: string; sayi: string }[] = [
+            { key: 'quiz', sayi: envanter.soru ? `${envanter.soru} soru` : 'Soru çöz' },
+            { key: 'flashcard', sayi: envanter.flashcard ? `${envanter.flashcard} kart` : 'Hızlı tekrar' },
+            { key: 'inciler', sayi: envanter.inci ? `${envanter.inci} inci` : 'Klinik inciler' },
+            { key: 'vaka', sayi: envanter.vaka ? `${envanter.vaka} vaka` : 'Vaka' },
+          ].filter(({ key }) => (moduller as Record<string, boolean>)[key] && (MODUL_VAR[key] ?? false));
+          if (!kisa.length) return null;
+          return (
+            <nav aria-label="Bu konunun çalışma modülleri" className="premium-konu-mobil-moduller">
+              {kisa.map(({ key, sayi }) => {
+                const bilgi = MODUL_BILGI[key as keyof typeof MODUL_BILGI];
+                return (
+                  <Link key={key} href={MODUL_HREF[key](lang, branch, topic)} style={{
+                    display: 'inline-flex', alignItems: 'center', gap: '6px',
+                    padding: '8px 12px', minHeight: '40px', borderRadius: '999px',
+                    border: '0.5px solid #d0e4f5', background: bilgi.renk,
+                    fontSize: '13px', fontWeight: 600, color: '#1a2a3a', textDecoration: 'none',
+                  }}>
+                    <span aria-hidden="true">{bilgi.emoji}</span>
+                    {sayi}
+                  </Link>
+                );
+              })}
+            </nav>
+          );
+        })()}
+
         {/* İKİ KOLON DÜZEN */}
         {/* Düzen satır içi stildeydi ve DAR EKRANDA HİÇ ÇÖKMÜYORDU: ölçüldü,
             320px'te sayfa 593px yatay kayıyordu (ızgara `652.406px 210px`).
