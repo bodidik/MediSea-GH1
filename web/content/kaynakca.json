@@ -4621,7 +4621,7 @@
         "tur": "makale"
       },
       {
-        "ad": "Yin X, Tian F, Wu B, Xu T. Interventions for reducing inflammation in familial Mediterranean fever. Cochrane Database Syst Rev 2022;3(3):CD010893",
+        "ad": "Yin X, Tian F, Wu B, Xu T. Interventions for reducing inflammation in familial Mediterranean fever. Cochrane Database Syst Rev 2022;3:CD010893",
         "yil": 2022,
         "url": "https://doi.org/10.1002/14651858.cd010893.pub4",
         "tur": "makale"
@@ -4912,6 +4912,228 @@
         "ad": "Bona R. Splenomegaly and other splenic disorders in adults. UpToDate; son güncelleme 29 May 2026",
         "yil": 2026,
         "url": "https://www.uptodate.com/contents/splenomegaly-and-other-splenic-disorders-in-adults",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "iga-nefropatisi": {
+    "baslik": "IgA nefropatisi",
+    "aciklama": "IgA nefropatisi sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (PubMed, Crossref), UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Castañeda S, Quiroga-Colina P, Floranes P, ve ark. IgA Vasculitis (Henoch-Schönlein Purpura): An Update on Treatment. J Clin Med 2024;13(21):6621",
+        "yil": 2024,
+        "url": "https://doi.org/10.3390/jcm13216621",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cheung CK, Alexander S, Reich HN, Selvaskandan H, Zhang H, Barratt J. The pathogenesis of IgA nephropathy and implications for treatment. Nat Rev Nephrol 2025;21(1):9-23",
+        "yil": 2025,
+        "url": "https://doi.org/10.1038/s41581-024-00885-3",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cheung CK, Barratt J. The Rapidly Changing Treatment Landscape of IgA Nephropathy. Semin Nephrol 2024;44(5):151573",
+        "yil": 2024,
+        "url": "https://doi.org/10.1016/j.semnephrol.2025.151573",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cheung CK, Barratt J, Liew A, Zhang H, Tesar V, Lafayette R. The role of BAFF and APRIL in IgA nephropathy: pathogenic mechanisms and targeted therapies. Front Nephrol 2023;3:1346769",
+        "yil": 2023,
+        "url": "https://doi.org/10.3389/fneph.2023.1346769",
+        "tur": "makale"
+      },
+      {
+        "ad": "El Karoui K, Fervenza FC, De Vriese AS. Treatment of IgA Nephropathy: A Rapidly Evolving Field. J Am Soc Nephrol 2024;35(1):103-116",
+        "yil": 2024,
+        "url": "https://doi.org/10.1681/asn.0000000000000242",
+        "tur": "makale"
+      },
+      {
+        "ad": "Filippone EJ, Gulati R, Farber JL. Contemporary review of IgA nephropathy. Front Immunol 2024;15:1436923",
+        "yil": 2024,
+        "url": "https://doi.org/10.3389/fimmu.2024.1436923",
+        "tur": "makale"
+      },
+      {
+        "ad": "Floege J, Bernier-Jean A, Barratt J, Rovin B. Treatment of patients with IgA nephropathy: a call for a new paradigm. Kidney Int 2025;107(4):640-651",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.kint.2025.01.014",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ghaddar M, Canney M, Barbour SJ. IgA Nephropathy: Epidemiology and Disease Risk Across the World. Semin Nephrol 2024;44(5):151564",
+        "yil": 2024,
+        "url": "https://doi.org/10.1016/j.semnephrol.2025.151564",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hastings MC, Bursac Z, Julian BA, ve ark. Life Expectancy for Patients From the Southeastern United States With IgA Nephropathy. Kidney Int Rep 2018;3(1):99-104",
+        "yil": 2018,
+        "url": "https://doi.org/10.1016/j.ekir.2017.08.008",
+        "tur": "makale"
+      },
+      {
+        "ad": "Li X, Zeng M, Liu J, ve ark. Identifying potential biomarkers for the diagnosis and treatment of IgA nephropathy based on bioinformatics analysis. BMC Med Genomics 2023;16(1):63",
+        "yil": 2023,
+        "url": "https://doi.org/10.1186/s12920-023-01494-y",
+        "tur": "makale"
+      },
+      {
+        "ad": "Nihei Y, Suzuki Y. Autoimmunity in IgA nephropathy. Front Immunol 2026;17:1782872",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fimmu.2026.1782872",
+        "tur": "makale"
+      },
+      {
+        "ad": "Novak J, Reily C, Steers NJ, ve ark. Emerging Biochemical and Immunologic Mechanisms in the Pathogenesis of IgA Nephropathy. Semin Nephrol 2024;44(5):151565",
+        "yil": 2024,
+        "url": "https://doi.org/10.1016/j.semnephrol.2025.151565",
+        "tur": "makale"
+      },
+      {
+        "ad": "Parums DV. A Review of IgA Vasculitis (Henoch-Schönlein Purpura) Past, Present, and Future. Med Sci Monit 2024;30:e943912",
+        "yil": 2024,
+        "url": "https://doi.org/10.12659/msm.943912",
+        "tur": "makale"
+      },
+      {
+        "ad": "Pattrapornpisut P, Avila-Casado C, Reich HN. IgA Nephropathy: Core Curriculum 2021. Am J Kidney Dis 2021;78(3):429-441",
+        "yil": 2021,
+        "url": "https://doi.org/10.1053/j.ajkd.2021.01.024",
+        "tur": "makale"
+      },
+      {
+        "ad": "Rajasekaran A, Julian BA, Rizk DV. IgA Nephropathy: An Interesting Autoimmune Kidney Disease. Am J Med Sci 2021;361(2):176-194",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/j.amjms.2020.10.003",
+        "tur": "makale"
+      },
+      {
+        "ad": "Tunnicliffe DJ, Reid S, Craig JC, Samuels JA, Molony DA, Strippoli GF. Non-immunosuppressive treatment for IgA nephropathy. Cochrane Database Syst Rev 2024;2:CD003962",
+        "yil": 2024,
+        "url": "https://doi.org/10.1002/14651858.cd003962.pub3",
+        "tur": "makale"
+      },
+      {
+        "ad": "Reid S, Cawthon PM, Craig JC, Samuels JA, Molony DA, Strippoli GF. Non-immunosuppressive treatment for IgA nephropathy. Cochrane Database Syst Rev 2011;(3):CD003962",
+        "yil": 2011,
+        "url": "https://doi.org/10.1002/14651858.cd003962.pub2",
+        "tur": "makale"
+      },
+      {
+        "ad": "Roberts LE, Williams CEC, Oni L, Barratt J, Selvaskandan H. IgA Nephropathy: Emerging Mechanisms of Disease. Indian J Nephrol 2024;34(4):297-309",
+        "yil": 2024,
+        "url": "https://doi.org/10.25259/ijn_425_23",
+        "tur": "makale"
+      },
+      {
+        "ad": "Stamellou E, Seikrit C, Tang SCW, ve ark. IgA nephropathy. Nat Rev Dis Primers 2023;9(1):67",
+        "yil": 2023,
+        "url": "https://doi.org/10.1038/s41572-023-00476-9",
+        "tur": "makale"
+      },
+      {
+        "ad": "Suzuki H, Novak J. IgA Nephropathy: Significance of IgA1-Containing Immune Complexes in Clinical Settings. J Clin Med 2024;13(15):4495",
+        "yil": 2024,
+        "url": "https://doi.org/10.3390/jcm13154495",
+        "tur": "makale"
+      },
+      {
+        "ad": "Barratt J, Lafayette RA, Rovin BH, Fellström B. Budesonide delayed-release capsules to reduce proteinuria in adults with primary immunoglobulin A nephropathy. Expert Rev Clin Immunol 2023;19(7):699-710",
+        "yil": 2023,
+        "url": "https://doi.org/10.1080/1744666x.2023.2206119",
+        "tur": "makale"
+      },
+      {
+        "ad": "Almaani S, Meara A, Rovin BH. Update on Lupus Nephritis. Clin J Am Soc Nephrol 2017;12(5):825-835",
+        "yil": 2017,
+        "url": "https://doi.org/10.2215/cjn.05780616",
+        "tur": "makale"
+      },
+      {
+        "ad": "Clayton P, McDonald S, Chadban S. Steroids and recurrent IgA nephropathy after kidney transplantation. Am J Transplant 2011;11(8):1645-9",
+        "yil": 2011,
+        "url": "https://doi.org/10.1111/j.1600-6143.2011.03667.x",
+        "tur": "makale"
+      },
+      {
+        "ad": "Gholizadeh Ghozloujeh Z, Selvaskandan H, Wiegley N, ve ark. IgA Nephropathy: An Overview of the Clinical Trials. Kidney Med 2025;7(10):101078",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.xkme.2025.101078",
+        "tur": "makale"
+      },
+      {
+        "ad": "Reich HN, Troyanov S, Scholey JW, Cattran DC. Remission of proteinuria improves prognosis in IgA nephropathy. J Am Soc Nephrol 2007;18(12):3177-83",
+        "yil": 2007,
+        "url": "https://doi.org/10.1681/asn.2007050526",
+        "tur": "makale"
+      },
+      {
+        "ad": "Schena FP, Nistor I. Epidemiology of IgA Nephropathy: A Global Perspective. Semin Nephrol 2018;38(5):435-442",
+        "yil": 2018,
+        "url": "https://doi.org/10.1016/j.semnephrol.2018.05.013",
+        "tur": "makale"
+      },
+      {
+        "ad": "Selvaskandan H, Cheung CK, Muto M, Barratt J. New strategies and perspectives on managing IgA nephropathy. Clin Exp Nephrol 2019;23(5):577-588",
+        "yil": 2019,
+        "url": "https://doi.org/10.1007/s10157-019-01700-1",
+        "tur": "makale"
+      },
+      {
+        "ad": "Suzuki H, Kiryluk K, Novak J, ve ark. The pathophysiology of IgA nephropathy. J Am Soc Nephrol 2011;22(10):1795-803",
+        "yil": 2011,
+        "url": "https://doi.org/10.1681/asn.2011050464",
+        "tur": "makale"
+      },
+      {
+        "ad": "Wyatt RJ, Julian BA. IgA nephropathy. N Engl J Med 2013;368(25):2402-14",
+        "yil": 2013,
+        "url": "https://doi.org/10.1056/nejmra1206793",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yeo SC, Goh SM, Barratt J. Is immunoglobulin A nephropathy different in different ethnic populations? Nephrology (Carlton) 2019;24(9):885-895",
+        "yil": 2019,
+        "url": "https://doi.org/10.1111/nep.13592",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cheung CK, Barratt J. IgA nephropathy: Pathogenesis. UpToDate; son güncelleme 17 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/iga-nephropathy-pathogenesis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Cheung CK, Barratt J. IgA nephropathy: Clinical features and diagnosis. UpToDate; son güncelleme 17 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/iga-nephropathy-clinical-features-and-diagnosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Cattran DC, Appel GB, Coppo R. IgA nephropathy: Treatment and prognosis. UpToDate; son güncelleme 6 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/iga-nephropathy-treatment-and-prognosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Al Jurdi A, Delos Santos R, Brennan DC. IgA nephropathy: Recurrence after transplantation. UpToDate; son güncelleme 28 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/iga-nephropathy-recurrence-after-transplantation",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kashtan CE, Simon JF. Isolated and persistent glomerular hematuria in adults. UpToDate; son güncelleme 19 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/isolated-and-persistent-glomerular-hematuria-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Niaudet P, Appel GB, Coppo R. IgA vasculitis (Henoch-Schönlein purpura): Kidney manifestations. UpToDate; son güncelleme 10 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/iga-vasculitis-henoch-schonlein-purpura-kidney-manifestations",
         "tur": "uptodate"
       }
     ]

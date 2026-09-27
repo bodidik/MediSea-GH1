@@ -1,6 +1,7 @@
 {
   "title": "IgA Nefropatisi ve IgA Vasküliti (HSP)",
   "meta": {
+    "kaynakca": "iga-nefropatisi",
     "updatedAt": "30 Mar 2026",
     "tags": ["Nefroloji", "IgA Nefropatisi", "IgA Vasküliti", "MEST-C", "Dört Vuruş Hipotezi", "Kompleman", "SGLT2i"],
     "parent": "glomeruler-hastaliklar",
