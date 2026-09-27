@@ -60,13 +60,6 @@
         "eslesen": "Status Epileptikus"
       }
     ],
-    "endokrinoloji/hiperkalsemi-ve-hiperparatiroidi": [
-      {
-        "slug": "anion-gap",
-        "name": "Anyon Açığı",
-        "eslesen": "Anyon Açığı"
-      }
-    ],
     "endokrinoloji/hiperparatiroidizm": [
       {
         "slug": "egfr",
@@ -1188,7 +1181,7 @@
       },
       {
         "yol": "endokrinoloji/hiperparatiroidizm",
-        "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası",
+        "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları",
         "eslesen": "QTc"
       },
       {
@@ -1246,11 +1239,6 @@
         "eslesen": "Anyon Açığı"
       },
       {
-        "yol": "endokrinoloji/hiperkalsemi-ve-hiperparatiroidi",
-        "baslik": "Asit-Baz Denge Bozuklukları",
-        "eslesen": "Anyon Açığı"
-      },
-      {
         "yol": "nefroloji/delta-anyon-acigi-delta-delta-orani",
         "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama",
         "eslesen": "Anyon Açığı"
@@ -1263,6 +1251,11 @@
       {
         "yol": "nefroloji/renal-tubuler-asidoz-rta-tipleri",
         "baslik": "Renal Tübüler Asidoz (RTA) Tipleri",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/respiratuvar-alkaloz",
+        "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim",
         "eslesen": "Anyon Açığı"
       }
     ],
@@ -1355,7 +1348,7 @@
       },
       {
         "yol": "endokrinoloji/hiperparatiroidizm",
-        "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası",
+        "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları",
         "eslesen": "eGFR"
       },
       {
@@ -2018,8 +2011,8 @@
   "olcum": {
     "konu": 521,
     "arac": 257,
-    "araciOlanKonu": 135,
+    "araciOlanKonu": 134,
     "konusuOlanArac": 58,
-    "bag": 178
+    "bag": 177
   }
 }

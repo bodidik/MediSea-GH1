@@ -102,6 +102,9 @@ module.exports = {
       { source: '/topics/hematoloji/burkitt-lenfoma', destination: '/topics/hematoloji/burkitt', permanent: true },
       // Gizli (hidden) AI taslağı silindi; aynı konunun yayındaki sayfası `hipertiroidi` (13 Eyl 2026).
       { source: '/topics/endokrinoloji/hipertiroidi-ve-graves-hastaligi', destination: '/topics/endokrinoloji/hipertiroidi', permanent: true },
+      // Adı hiperparatiroidi, içeriği baştan sona asit-baz olan içerik kazası silindi;
+      // adresin vaat ettiği konunun sayfası `hiperparatiroidizm` (27 Eyl 2026).
+      { source: '/topics/endokrinoloji/hiperkalsemi-ve-hiperparatiroidi', destination: '/topics/endokrinoloji/hiperparatiroidizm', permanent: true },
       // AYNI SKOR İKİ AYRI ARAÇ OLARAK DURUYORDU: /tools/heart-score (Kardiyoloji)
       // ve /tools/heart (Acil), ikisinin de adı "HEART Skoru". Ayrı uygulama
       // oldukları için AYNI hastada farklı davranıyorlardı — ölçüldü:

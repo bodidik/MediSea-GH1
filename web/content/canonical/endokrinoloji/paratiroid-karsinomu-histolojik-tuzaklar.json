@@ -1,0 +1,77 @@
+{
+  "title": "Paratiroid Karsinomunda Aşırı Tanı: Histolojik Tuzaklar ve Taklitçiler",
+  "meta": {
+    "updatedAt": "27 Eyl 2026",
+    "tags": [
+      "Endokrinoloji",
+      "Paratiroid Karsinomu",
+      "Hiperparatiroidizm",
+      "Histopatoloji",
+      "Atipik Paratiroid Tümör",
+      "Parafibromin",
+      "Paratiromatozis"
+    ],
+    "parent": "hiperparatiroidizm",
+    "order": 1,
+    "kaynaklar": [
+      {
+        "ad": "Juhlin CC, Mete O. Avoiding overdiagnosis of parathyroid carcinoma. Virchows Arch 2026;488(1):159-171",
+        "yil": 2026,
+        "url": "https://doi.org/10.1007/s00428-025-04274-4"
+      },
+      {
+        "ad": "Erickson LA, Mete O, Juhlin CC, ve ark. Overview of the 2022 WHO Classification of Parathyroid Tumors. Endocr Pathol 2022;33(1):64-89",
+        "yil": 2022,
+        "url": "https://doi.org/10.1007/s12022-022-09709-1"
+      },
+      {
+        "ad": "El-Hajj Fuleihan G, Arnold A. Parathyroid carcinoma. UpToDate; son güncelleme 15 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/parathyroid-carcinoma"
+      },
+      {
+        "ad": "Schantz A, Castleman B. Parathyroid carcinoma. A study of 70 cases. Cancer 1973;31(3):600-605",
+        "yil": 1973,
+        "url": "https://doi.org/10.1002/1097-0142(197303)31:3%3C600::AID-CNCR2820310316%3E3.0.CO;2-0"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Paratiroid karsinomu tanısı, metastatik olmayan olgularda strictly şüphe götürmez (unequivocal) invaziv büyümenin (angioinvazyon, lenfatik invazyon, perinöral invazyon veya bitişik anatomik yapılara doğrudan invazyon) gösterilmesine dayanır. Ancak histopatolojik değerlendirmede, benign lezyonların ve artefaktların karsinomu taklit etmesi sonucu sıklıkla aşırı tanı (overdiagnosis) riski ortaya çıkmaktadır.</p>\n<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Uzman patolog ve endokrinologların paratiroid karsinomu değerlendirmesinde karşılaşabileceği temel histolojik tuzaklar, artefaktlar ve taklitçiler (mimics) şunlardır:</p>"
+    },
+    {
+      "heading": "1. Preoperatif İğne Biyopsisi ve Girişim Artefaktları (Post-FNA Changes)",
+      "html": "<ul class=\"list-disc pl-5 space-y-1.5 text-[11.5px] leading-relaxed text-slate-700 mb-3\"><li>Tuzak: Önceden uygulanmış İnce İğne Aspirasyon Biyopsisi (İİAB), PTH washout veya etanol ablasyonu gibi girişimler; doku bütünlüğünü bozarak kapsüler defektlere, fibrozise ve irregüler bantlaşmalara yol açar.</li><li>Yanıltıcı Görünüm: Biyopsi traktı boyunca tümör hücrelerinin fibröz doku veya çevre tiroid/yumuşak doku içerisine sürüklenmesi (displaced tumor cells), yanlışlıkla gerçek infiltratif/kapsüler invazyon olarak yorumlanabilir.</li><li>Ayırıcı Tanı: İğne traktında pigment yüklü makrofajların varlığı, inflamasyon ve nükleer parafibromin korunuşu benign süreci destekler.</li></ul>"
+    },
+    {
+      "heading": "2. Mekanik ve Cerrahi Manipülasyon Artefaktları (Crush Artefacts & Displaced Tumor Cells)",
+      "html": "<ul class=\"list-disc pl-5 space-y-1.5 text-[11.5px] leading-relaxed text-slate-700 mb-3\"><li>Tuzak: Ameliyat esnasında dokunun ekstraskapüler forseps veya parmakla sıkılması ezilmelere (crush) ve hücrelerin intravasküler alana mekanik olarak itilmesine sebep olur.</li><li>Yanıltıcı Görünüm: Damar lümeninde serbest tümör hücre gruplarının görülmesi vasküler invazyonu taklit eder.</li><li>Gerçek Vasküler İnvazyon Kriteri: Gerçek damar invazyonunda tümör hücrelerinin damar duvarını delmesi ve lümende taze fibrin/trombosit pıhtısı (thrombus) ile karışmış olması şarttır. Fibrin reaksiyonu içermeyen serbest içi hücre birikintileri cerrahi kirlenmedir. CD61 veya CD31 immünohistokimyası ile trombosit reaksiyonu doğrulanmalıdır.</li></ul>"
+    },
+    {
+      "heading": "3. Peliosis (Damar İstilası Mimikliği)",
+      "html": "<ul class=\"list-disc pl-5 space-y-1.5 text-[11.5px] leading-relaxed text-slate-700 mb-3\"><li>Tuzak: Tümör parankiminde veya periferinde, endotel kaplaması bulunmayan, eritrositlerle dolu kan gölcükleri/boşlukları oluşabilir.</li><li>Yanıltıcı Görünüm: Özellikle kapsüle yakın veya tümör adacıkları arasına yerleşmiş peliotik alanlar, vasküler invazyon izlenimi verebilir.</li><li>Ayırıcı Tanı: CD31, CD34 veya ERG gibi endotel belirteçleri ile peliotik boşlukların endotel örtüsünden yoksun olduğunun gösterilmesi (çift boyama) invazyonu dışlar.</li></ul>"
+    },
+    {
+      "heading": "4. İntratiroidal Yerleşimli Paratiroid Adenomları (Pseudoinvasion)",
+      "html": "<ul class=\"list-disc pl-5 space-y-1.5 text-[11.5px] leading-relaxed text-slate-700 mb-3\"><li>Tuzak: Primer hiperparatiroidizm olgularının yaklaşık %2'sinde paratiroid bezi intratiroidal konumdadır.</li><li>Yanıltıcı Görünüm: Paratiroid adenomunun tiroid parankimi veya yalancı kapsül içinde ekspansil itici büyümesi, bitişik tiroid folikülleri ile düzensiz bir sınır oluşturur ve pT2 tiroid invazyonunu taklit edebilir.</li><li>Ayırıcı Tanı: Gerçek infiltratif/yıkıcı büyüme desmoplazik stroma reaksiyonu ile seyreder. Angioinvazyon veya perinöral invazyon yoksa ve biomarker analizi (parafibromin) normalse malignite tanısından kaçınılmalıdır.</li></ul>"
+    },
+    {
+      "heading": "5. Paratiromatozis (Parathyromatosis)",
+      "html": "<ul class=\"list-disc pl-5 space-y-1.5 text-[11.5px] leading-relaxed text-slate-700 mb-3\"><li>Tuzak: Geçirilmiş cerrahi, kistik kapsül rüptürü veya İİAB sonrası paratiroid doku odaklarının çevre boyun/mediyasten yumuşak dokusuna dökülmesi ve ekilmesidir (seeding).</li><li>Yanıltıcı Görünüm: Fibröz stroma veya yağ dokusu içine gömülü multipl paratiroid adacıkları, karsinomun lokal nüksü veya invaziv odakları sanılabilir.</li><li>Ayırıcı Tanı: Paratiromatozis odakları iyi sınırlıdır (expansile/circumscribed growth); belirgin hücresel atipi, nükleer anaplazy, artmış/atipik mitoz veya desmoplazik doku reaksiyonu içermez.</li></ul>"
+    },
+    {
+      "heading": "6. Sekonder/Tersiyer Hiperparatiroidizmde Reaktif Doku Değişiklikleri",
+      "html": "<ul class=\"list-disc pl-5 space-y-1.5 text-[11.5px] leading-relaxed text-slate-700 mb-3\"><li>Tuzak: Kronik böbrek hastalığı zeminindeki nodüler hiperplazi olgularında bez konturları aşırı düzensizleşir ve belirgin iç fibrozis gelişir.</li><li>Yanıltıcı Görünüm: Hyperplastic nodüllerin kalınlaşmış kapsülü yırtarak dışarı doğru \"mantar benzeri\" (mushroom-like protrusion) çıkıntılar yapması ekstrasapsüler uzanımı taklit edebilir. Ayrıca bu uyarılmış bezlerde mitotik sayı &gt;5 mitoz/10 mm² üzerine çıkabilir.</li><li>Ayırıcı Tanı: Klinik KBH öyküsü eşliğinde, şüphe götürmez vasküler/organ invazyonu yoksa bu değişiklikler reaktif/hiperplastik süreç olarak değerlendirilmelidir.</li></ul>"
+    },
+    {
+      "heading": "7. Kapsüler İnvazyon Kavramı ve Yalancı Kapsül",
+      "html": "<ul class=\"list-disc pl-5 space-y-1.5 text-[11.5px] leading-relaxed text-slate-700 mb-3\"><li>Tuzak: Paratiroid bezlerinin gerçek bir anatomik kapsülü yoktur; çevre doku sıkışması ile oluşan \"yalancı kapsül\" (pseudocapsule) mevcuttur.</li><li>Klinik Gerçek: Foliküler tiroid karsinomlarındaki \"kapsüler invazyon\" analogu paratiroid tümörlerinde geçersizdir. Tümörün kendi yalancı kapsülü içine uzanması malignite tanısı koydurmaz; malignite için çevre organ veya ekstrasapsüler yumuşak doku invazyonu gereklidir.</li></ul>"
+    },
+    {
+      "heading": "8. Spesifik Olmayan Şüpheli Histolojik Bulgular (Atipik Paratiroid Tümör)",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Geniş fibröz bantlar, koagülatif tümör nekrozu, makronükleol varlığı, artmış mitotik aktivite (&gt;5 mitoz/10 mm²) ve atipik mitotik figürler karsinom şüphesini belirgin şekilde artırsa da, kesin invazyon bulguları (angioinvazyon, lenfatik, perinöral veya organ invazyonu/metastaz) eşlik etmiyorsa karsinom tanısı konulmamalıdır.</p>\n<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Bu vakalar WHO 2022 sınıflamasına göre Atipik Paratiroid Tümör (Atypical Parathyroid Tumor) olarak adlandırılmalı ve immünohistokimyasal biomarker paneli (parafibromin kaybı, Ki-67 &gt;%5, PGP9.5 pozitifliği, APC kaybı) ile desteklenmelidir.</p>"
+    }
+  ]
+}

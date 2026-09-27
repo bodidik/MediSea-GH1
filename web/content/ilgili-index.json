@@ -329,7 +329,7 @@
   {
    "brans": "endokrinoloji",
    "slug": "hiperparatiroidizm",
-   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası"
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları"
   }
  ],
  "endokrinoloji/gebelik-transient-tirotoksikoz": [
@@ -665,33 +665,6 @@
    "baslik": "Bisfosfonatların Adinamik Kemik Hastalığında (AKH) Kontrendikasyonu"
   }
  ],
- "endokrinoloji/hiperkalsemi-ve-hiperparatiroidi": [
-  {
-   "brans": "nefroloji",
-   "slug": "asit-baz-denge-bozukluklari",
-   "baslik": "Asit-Baz Denge Bozuklukları"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "delta-anyon-acigi-delta-delta-orani",
-   "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "respiratuvar-alkaloz",
-   "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "otiroid-hasta-sendromu-ntis",
-   "baslik": "Ötiroid Hasta Sendromu"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "tls-elektrolit-diyaliz-yonetimi",
-   "baslik": "TLS: Elektrolit Yönetimi ve Renal Replasman Tedavisi"
-  }
- ],
  "endokrinoloji/hiperparatiroidizm": [
   {
    "brans": "endokrinoloji",
@@ -727,23 +700,23 @@
  "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma": [
   {
    "brans": "endokrinoloji",
-   "slug": "men1-ektopik-cushing-sendromu",
-   "baslik": "MEN1'de Ektopik Cushing Sendromu: Diagnostik Kusursuz Fırtına"
+   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
+   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men1-meme-kanseri-tarama",
-   "baslik": "MEN1'de Meme Kanseri Riski ve Tarama Protokolü"
+   "slug": "sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler",
+   "baslik": "SGLT2 İnhibitörleri: Pleiotropik Etkiler ve Advers Profil"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men1-menin-molekuler-gelismeler",
-   "baslik": "Menin Proteini: Son Dönem Moleküler ve Klinik Gelişmeler"
+   "slug": "siadh-sendromu",
+   "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men1-osilodrostat-block-replace",
-   "baslik": "MEN1'de Osilodrostat: Block-and-Replace Protokolü ve Klinik Avantajları"
+   "slug": "tiroid-hastaliklari-ana",
+   "baslik": "Tiroid Hastalıkları"
   }
  ],
  "endokrinoloji/hipertiroidi": [
@@ -1049,7 +1022,7 @@
   {
    "brans": "endokrinoloji",
    "slug": "hiperparatiroidizm",
-   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası"
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları"
   },
   {
    "brans": "endokrinoloji",
@@ -1143,7 +1116,7 @@
   {
    "brans": "endokrinoloji",
    "slug": "hiperparatiroidizm",
-   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası"
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları"
   },
   {
    "brans": "endokrinoloji",
@@ -1182,7 +1155,7 @@
   {
    "brans": "endokrinoloji",
    "slug": "hiperparatiroidizm",
-   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası"
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları"
   }
  ],
  "endokrinoloji/kbh-osteoporoz-ckd-mbd": [
@@ -1543,7 +1516,7 @@
   {
    "brans": "endokrinoloji",
    "slug": "hiperparatiroidizm",
-   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası"
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları"
   }
  ],
  "endokrinoloji/men1-somatotropinoma-akromegali": [
@@ -1821,11 +1794,6 @@
    "baslik": "Tiroid Yaşlanması (Thyroid Aging): Fizyolojik TSH Yüksekliği"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "hiperkalsemi-ve-hiperparatiroidi",
-   "baslik": "Asit-Baz Denge Bozuklukları"
-  },
-  {
    "brans": "nefroloji",
    "slug": "asit-baz-denge-bozukluklari",
    "baslik": "Asit-Baz Denge Bozuklukları"
@@ -1834,6 +1802,28 @@
    "brans": "onkoloji",
    "slug": "tls-elektrolit-diyaliz-yonetimi",
    "baslik": "TLS: Elektrolit Yönetimi ve Renal Replasman Tedavisi"
+  }
+ ],
+ "endokrinoloji/paratiroid-karsinomu-histolojik-tuzaklar": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "osteoporoz-tedavisi",
+   "baslik": "Osteoporoz Tedavisi: Farmakoterapi Endikasyonları, Modaliteler ve Yönetim Stratejileri"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "prolaktinoma-yeni-biyobelirtecler",
+   "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "santral-hipotiroidizm",
+   "baslik": "Santral Hipotiroidizm"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
+   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
   }
  ],
  "endokrinoloji/pbmah-genetik-temeller-ailevi-riskler": [
@@ -2364,8 +2354,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "gebelikte-hipotiroidizm-yonetimi",
-   "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
+   "slug": "men1-osilodrostat-mineralokortikoid",
+   "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi"
   }
  ],
  "endokrinoloji/vitamin-d-bozukluklari": [
@@ -4122,7 +4112,7 @@
   {
    "brans": "endokrinoloji",
    "slug": "hiperparatiroidizm",
-   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası"
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları"
   }
  ],
  "hematoloji/FL-t1(4-18)": [
@@ -6351,7 +6341,7 @@
   {
    "brans": "endokrinoloji",
    "slug": "hiperparatiroidizm",
-   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları: Kapsamlı Klinik ve Akademik Konu Sayfası"
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları"
   },
   {
    "brans": "endokrinoloji",
@@ -6401,11 +6391,6 @@
   }
  ],
  "nefroloji/asit-baz-denge-bozukluklari": [
-  {
-   "brans": "endokrinoloji",
-   "slug": "hiperkalsemi-ve-hiperparatiroidi",
-   "baslik": "Asit-Baz Denge Bozuklukları"
-  },
   {
    "brans": "endokrinoloji",
    "slug": "otiroid-hasta-sendromu-ntis",
@@ -6468,11 +6453,6 @@
    "brans": "nefroloji",
    "slug": "asit-baz-kompanzasyon-ilkeleri",
    "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hiperkalsemi-ve-hiperparatiroidi",
-   "baslik": "Asit-Baz Denge Bozuklukları"
   },
   {
    "brans": "nefroloji",
@@ -7107,11 +7087,6 @@
   }
  ],
  "nefroloji/respiratuvar-alkaloz": [
-  {
-   "brans": "endokrinoloji",
-   "slug": "hiperkalsemi-ve-hiperparatiroidi",
-   "baslik": "Asit-Baz Denge Bozuklukları"
-  },
   {
    "brans": "nefroloji",
    "slug": "delta-anyon-acigi-delta-delta-orani",
@@ -7793,11 +7768,6 @@
    "brans": "enfeksiyon",
    "slug": "fosfomisin-hipokalemi",
    "baslik": "Fosfomisin Sodyum Yükü ve Hipokalemi Yönetimi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hiperkalsemi-ve-hiperparatiroidi",
-   "baslik": "Asit-Baz Denge Bozuklukları"
   },
   {
    "brans": "endokrinoloji",
