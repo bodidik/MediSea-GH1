@@ -433,7 +433,7 @@
     {
       "id": "p-temd-ht-062",
       "level": "Kılavuz",
-      "title": "Gebelikte ciddi hipertansiyon 150/95, düşürme kademeli olmalı",
+      "title": "Gebelikte tedavi eşiği 150/95, ciddi hipertansiyon ≥160/110; düşürme kademeli olmalı",
       "content": "Gebelikte hipertansiyon tanısı için sistolik kan basıncı ≥140 mmHg, diyastolik ≥90 mmHg veya her ikisi birden yeterlidir; sistolik ≥150 mmHg, diyastolik ≥95 mmHg ise ciddi hipertansiyon sayılır (ESC ve ACOG'da ciddi hipertansiyon ≥160/110 mmHg'dir; 150/95 ESC'de gebelikte tedavi başlama eşiğidir). Etyoloji ne olursa olsun ciddi maternal hipertansiyon varlığında derhal farmakolojik tedavi başlanmalıdır. Genel prensip kan basıncını ciddi yüksek aralıktan hafif yüksek aralığa kademeli düşürmektir; böylece ani hipotansiyondan ve uterin arterlerde akımın azalmasından kaçınılmış olur. Akut düşürmede intravenöz labetalol, intravenöz hidralazin veya oral nifedipin kullanılır; bir meta-analizde bu ilaçların birinin diğerine üstünlüğü gösterilmemiştir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 119)",
       "trigger": "Gebelikte Hipertansiyon"
     },
@@ -531,7 +531,7 @@
     {
       "id": "p-temd-ht-076",
       "level": "Kılavuz",
-      "title": "Tromboliz öncesi 185/110, sonrası 24 saat 185/105",
+      "title": "Tromboliz öncesi 185/110, sonrası 24 saat ≤180/105",
       "content": "Trombolitik tedavi için uygun olan akut iskemik inmeli hastada, tedavi uygulanmadan önce antihipertansif tedavi ile sistolik kan basıncı 185 mmHg ve altına, diyastolik kan basıncı 110 mmHg ve altına indirilmelidir. Trombolitik tedaviden sonra en az 24 saat boyunca kan basıncı 185/105 mmHg ve altında tutulmalıdır (AHA/ASA 2019: ≤180/105 mmHg). Trombolitik tedavi planlanan hastalarda kan basıncını düşürmek için intravenöz nitrogliserin tercih edilmelidir. Bu hastalarda esmolol, furosemid ve kaptopril de seçilebilir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 153)",
       "trigger": "Akut İskemik İnmede Hipertansiyon"
     },
