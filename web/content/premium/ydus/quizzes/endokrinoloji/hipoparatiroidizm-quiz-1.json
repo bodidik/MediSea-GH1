@@ -213,6 +213,246 @@
       ],
       "zorluk": "zor",
       "kaynak": "Bilezikian et al. J Bone Miner Res 2022; Rejnmark et al. J Clin Endocrinol Metab 2014"
+    },
+    {
+      "id": "s8",
+      "metin": "Otuz dört yaşında kadın hasta, 4 yıl önce total tiroidektomi sonrası gelişen kalıcı hipoparatiroidizm nedeniyle kalsiyum karbonat 3 g/gün (elementer 1.2 g) ve kalsitriol 1 µg/gün kullanıyor. Hipokalsemi semptomu yok. Yıllık kontrolde:\n\nTetkikler:\nSerum Ca (albümine göre düzeltilmiş): 9.9 mg/dL (N: 8.5–10.2)\nFosfor: 4.6 mg/dL\nMg: 2.0 mg/dL\nKreatinin: 0.8 mg/dL\n24 saatlik idrar Ca: 380 mg/gün\n\nBu hastada en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Serum Ca normal aralıkta olduğundan tedavi değiştirilmeden yıllık izleme devam edilmelidir.",
+        "B": "Kalsitriol kesilip yerine kolekalsiferol 50.000 IU/hafta başlanmalıdır.",
+        "C": "Kalsiyum ve kalsitriol dozu azaltılarak serum Ca normalin alt sınırına yakın tutulmalı; hiperkalsiüri sürerse düşük tuzlu diyet ve tiyazid eklenmelidir.",
+        "D": "İdrar Ca'sını azaltmak için furosemid eklenmelidir.",
+        "E": "Hiperkalsiüri nedeniyle kalsiyum tümüyle kesilip yalnız kalsitriolle devam edilmelidir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Kronik hipoparatiroidizmde hedef serum Ca'yı normalin alt sınırına yakın ya da hafifçe altında, semptomsuz tutmaktır. PTH olmadığı için böbrek kalsiyumu geri ememez; üst-normal serum Ca hiperkalsiüri demektir. Doz azaltılır, sürerse tiyazid + düşük tuz.",
+      "aciklama_detay": "PTH yokluğunda distal tübülde kalsiyum geri emilimi azaldığından, serum Ca'yı normalin üst yarısına çıkaran her doz orantısız hiperkalsiüriye, zamanla nefrokalsinozise, taşa ve böbrek fonksiyon kaybına yol açar. 2022 uluslararası kılavuzu konvansiyonel tedavide şu hedefleri önerir: serum Ca normalin alt sınırına yakın ya da hafifçe altında ve semptomsuz, 24 saatlik idrar Ca cinsiyete göre normal aralıkta, serum fosfor normal, Ca×P çarpımı <55 mg²/dL², Mg normal. Bu hastada serum Ca 9.9 mg/dL ile hedefin üstünde ve idrar Ca 380 mg/gün ile yüksektir; ilk adım kalsitriol ve kalsiyum dozunu azaltmaktır. Hiperkalsiüri sürerse sodyum kısıtlaması ve tiyazid, distal tübülde kalsiyum geri emilimini artırarak idrar Ca'sını düşürür. Konvansiyonel tedaviyle hedeflere ulaşılamazsa PTH tedavisi düşünülür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — 'Normal aralıkta' olmak hipoparatiroidizmde yeterli değildir; üst-normal serum Ca hiperkalsiüriyle birlikte böbrek hasarı riskidir.",
+        "B": "YANLIS — Nutrisyonel D vitamini PTH'ye bağımlı 1-alfa-hidroksilasyon yapılamadığı için tek başına yetersizdir; sorun doz fazlalığıdır, ajan seçimi değil.",
+        "C": "DOGRU — Hedef alt-normal serum Ca; doz azaltma ilk adım, hiperkalsiüri sürerse düşük tuz + tiyazid.",
+        "D": "YANLIS — Kıvrım diüretikleri idrar Ca atılımını ARTIRIR; hipoparatiroidizmde hem hiperkalsiüriyi hem hipokalsemiyi kötüleştirir.",
+        "E": "YANLIS — Kalsiyumu tümüyle kesmek hipokalsemiye yol açar; kalsitriol tek başına bırakılmaz, iki ajan birlikte titre edilir."
+      },
+      "etiketler": [
+        "Kronik Hipoparatiroidizm",
+        "Serum Ca Hedefi",
+        "Hiperkalsiüri",
+        "Tiyazid",
+        "İzlem"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Khan AA, Bilezikian JP et al. J Bone Miner Res 2022 (Second International Workshop hipoparatiroidizm kılavuzu)"
+    },
+    {
+      "id": "s9",
+      "metin": "Altmış yedi yaşında erkek hasta, 2 gündür ellerde karıncalanma ve kas krampları ile başvuruyor. Altı yıldır reflü nedeniyle yüksek doz proton pompası inhibitörü kullanıyor; son haftalarda ishali var. Boyun cerrahisi öyküsü yok.\n\nTetkikler:\nSerum Ca (düzeltilmiş): 7.2 mg/dL ↓\nFosfor: 3.6 mg/dL\nMg: 0.7 mg/dL ↓↓ (N: 1.7–2.4)\nPTH: 14 pg/mL (N: 15–65)\nK: 3.1 mmol/L ↓\nEKG: QTc 480 ms, aritmi yok\n\nBu hastanın hipokalsemisini düzeltmek için en önemli adım hangisidir?",
+      "secenekler": {
+        "A": "Kalsitriol başlanmalı; PTH düşüklüğü kalıcı hipoparatiroidizmi gösterir.",
+        "B": "Yalnız IV kalsiyum glukonat infüzyonu yeterlidir; Mg düzeyi kalsiyumla birlikte kendiliğinden düzelir.",
+        "C": "Rekombinant PTH tedavisi başlanmalıdır.",
+        "D": "Paratiroid otoantikorları ve genetik test sonuçlanmadan tedavi başlanmamalıdır.",
+        "E": "Magnezyum replasmanı (IV magnezyum sülfat) yapılmalı, PPI'nın kesilmesi ya da değiştirilmesi değerlendirilmeli; kalsiyum ancak Mg düzeltilince kalıcı olarak yükselir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Ağır hipomagnezemi hem PTH salgısını hem de PTH'nin hedef dokudaki etkisini bozar; Mg düzeltilmeden kalsiyum kalıcı olarak yükselmez. Neden (PPI, ishal) ele alınır.",
+      "aciklama_detay": "Mg <1 mg/dL civarındaki ağır hipomagnezemi, paratiroid hücresinde PTH salgısını baskılar ve böbrek/kemikte PTH direnci yaratır; sonuç 'fonksiyonel hipoparatiroidizm'dir: düşük ya da uygunsuz normal PTH ile hipokalsemi. Bu tablo Mg replasmanıyla genellikle günler içinde geri döner. Uzun süreli PPI kullanımı bağırsakta TRPM6/7 aracılı aktif Mg emilimini azaltarak hipomagnezemiye yol açabilir; ishal kaybı artırır. Semptomatik ve QTc uzamış hastada IV magnezyum sülfat verilir, hipokalemi de düzeltilir (hipomagnezemi böbrekten K kaybını sürdürdüğü için K da Mg düzelmeden tam düzelmez). Semptom sürerse IV kalsiyum eklenebilir, ancak Mg eksikliği sürdükçe kalsiyum düzeyi kalıcı olarak yükselmez. PPI endikasyonu gözden geçirilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Boyun cerrahisi yok ve ağır hipomagnezemi var; PTH düşüklüğü büyük olasılıkla fonksiyoneldir ve Mg ile düzelir. Kalıcı tanı konmaz.",
+        "B": "YANLIS — Mg eksikliği sürdükçe PTH salgısı ve etkisi bozuk kalır; kalsiyum infüzyonu geçici etki yapar, Mg kendiliğinden düzelmez.",
+        "C": "YANLIS — Sorun PTH eksikliği değil Mg eksikliğine bağlı fonksiyonel baskılanmadır; PTH tedavisinin yeri yoktur.",
+        "D": "YANLIS — Semptomatik hipokalsemi ve QTc uzaması tetkik beklemeden tedavi gerektirir; ayrıca tablo otoimmün ya da genetik nedeni düşündürmez.",
+        "E": "DOGRU — Önce Mg replasmanı; neden (PPI, ishal) ele alınır, hipokalemi de düzeltilir."
+      },
+      "etiketler": [
+        "Hipomagnezemi",
+        "Fonksiyonel Hipoparatiroidizm",
+        "PPI",
+        "Magnezyum Replasmanı",
+        "Hipokalsemi Ayırıcı Tanı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Khan AA, Bilezikian JP et al. J Bone Miner Res 2022; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s10",
+      "metin": "Elli bir yaşında kadın hasta, büyük multinodüler guatr nedeniyle total tiroidektomi geçirdi. Ameliyattan 6 saat sonra hiçbir yakınması yok, Chvostek ve Trousseau bulguları negatif.\n\nTetkikler (postoperatif 6. saat):\nSerum Ca (düzeltilmiş): 8.4 mg/dL\nPTH: 6 pg/mL ↓ (N: 15–65)\nMg: 2.0 mg/dL\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Semptom beklenmeden oral kalsiyum ve kalsitriol başlanmalı, serum Ca yakın izlenmeli; taburculukta doz ve izlem planı verilmelidir.",
+        "B": "Serum Ca normale yakın ve hasta semptomsuz olduğundan tedavi başlanmamalı; semptom çıkarsa değerlendirilmelidir.",
+        "C": "Kalıcı hipoparatiroidizm kesinleştiğinden rekombinant PTH başlanmalıdır.",
+        "D": "Profilaktik IV kalsiyum infüzyonu 72 saat sürdürülmeli, oral tedaviye gerek yoktur.",
+        "E": "PTH düşüklüğü anestezi etkisidir; 1 hafta sonra PTH tekrarlanmadan karar verilmemelidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Tiroidektomi sonrası ilk 24 saatte ölçülen düşük PTH (yaklaşık <15 pg/mL), serum Ca henüz düşmeden hipokalsemiyi öngörür; semptom beklenmeden oral kalsiyum + aktif D vitamini başlanır.",
+      "aciklama_detay": "Postoperatif hipoparatiroidizm, tiroidektominin en sık uzun dönem komplikasyonudur. Serum Ca, PTH düştükten sonra saatler içinde yavaş düştüğü için erken dönemde normal görünebilir; bu nedenle ameliyattan sonraki ilk 24 saatte ölçülen PTH daha iyi bir öngörücüdür. Belirgin düşük PTH (kılavuzlarda sıklıkla <15 pg/mL eşiği) ya da hızla düşen Ca varlığında, semptom beklenmeden oral kalsiyum ve kalsitriol başlanması semptomatik hipokalsemiyi ve yeniden yatışı önler. PTH normal ise rutin kalsitriol gerekmez. Hastaya hipokalsemi belirtileri öğretilir, taburculuk sonrası serum Ca ilk günlerde kontrol edilir ve doz azaltılarak kesilmeye çalışılır. Kalıcılık kararı için 12 ay beklenir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Düşük erken PTH hipokalsemiyi öngörür; semptomdan önce oral Ca + kalsitriol ve yakın izlem.",
+        "B": "YANLIS — Ca'nın erken dönemde normale yakın olması yanıltıcıdır; PTH 6 pg/mL ile hipokalsemi gelişmesi beklenir.",
+        "C": "YANLIS — Postoperatif ilk günlerde kalıcılık bilinemez; bezlerin çoğu haftalar–aylar içinde toparlanır. Kalıcı tanı 12 ay sonra konur.",
+        "D": "YANLIS — Semptomsuz hastada profilaksi oral tedaviyle yapılır; IV kalsiyum semptomatik ya da ağır hipokalsemiye ayrılır.",
+        "E": "YANLIS — Postoperatif erken PTH ölçümü tam da karar vermek için kullanılır; 1 hafta beklemek semptomatik hipokalsemi riskini göze almaktır."
+      },
+      "etiketler": [
+        "Postoperatif PTH",
+        "Tiroidektomi",
+        "Hipokalsemi Öngörüsü",
+        "Kalsitriol Profilaksisi",
+        "Geçici Hipoparatiroidizm"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Khan AA, Bilezikian JP et al. J Bone Miner Res 2022; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s11",
+      "metin": "Otuz iki yaşında kadın hasta, tiroidektomi sonrası kalıcı hipoparatiroidizm nedeniyle kalsitriol 0.75 µg/gün ve kalsiyum karbonat 2 g/gün kullanıyor. Gebelik boyunca 3–4 haftada bir yapılan kontrollerde serum Ca 8.4–8.7 mg/dL arasında seyretmiş. Doğumdan 3 hafta sonra, bebeğini yalnız anne sütüyle besliyor; bulantı, halsizlik ve kabızlık tarif ediyor.\n\nTetkikler:\nSerum Ca (düzeltilmiş): 10.9 mg/dL ↑\nFosfor: 3.2 mg/dL\nKreatinin: 0.7 mg/dL\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Emzirme hemen kesilmeli ve mevcut tedaviye aynı dozla devam edilmelidir.",
+        "B": "Hiperkalsemi laboratuvar hatasıdır; tedavi değiştirilmeden 3 ay sonra tekrar bakılmalıdır.",
+        "C": "Tiyazid eklenerek idrar kalsiyum atılımı artırılmalıdır.",
+        "D": "Kalsitriol ve kalsiyum dozu azaltılmalı (gerekirse kalsitriol geçici olarak kesilmeli), serum Ca sık aralıklarla izlenmelidir; emzirme sürdürülebilir.",
+        "E": "Kalsitriol kesilip yerine rekombinant PTH başlanmalıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Laktasyonda meme dokusunun salgıladığı PTHrP, PTH benzeri etkiyle kalsiyum ve aktif D vitamini ihtiyacını azaltır; önceki dozlarla hiperkalsemi gelişir. Doz azaltılır, Ca sık izlenir, emzirme sürdürülebilir.",
+      "aciklama_detay": "Hipoparatiroidizmli kadında gebelik ve emzirme, kalsiyum gereksinimini değişken hâle getirir. Gebelikte gereksinim artabilir ya da azalabilir; bu nedenle serum Ca 3–4 haftada bir izlenir. Gebeliğin sonunda ve özellikle emzirme döneminde meme dokusunun salgıladığı PTHrP, PTH reseptörünü uyararak kemikten kalsiyum mobilizasyonunu ve böbrekte kalsiyum geri emilimini artırır; hastanın kalsitriol ve kalsiyum ihtiyacı belirgin azalır ve önceki dozlarla hiperkalsemi gelişebilir. Doğru yaklaşım dozları azaltmak, gerekirse kalsitriolü geçici olarak kesmek ve serum Ca'yı sık izlemektir. Emzirmenin kesilmesi gerekmez; emzirme bırakıldığında ise ihtiyaç yeniden artacağından doz o dönemde tekrar yükseltilir. PTH tedavisi gebelik ve emzirmede önerilmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Emzirmeyi kesmek gerekmez; asıl sorun ihtiyacın azaldığı dönemde dozun değişmemesidir. Aynı dozla devam hiperkalsemiyi sürdürür.",
+        "B": "YANLIS — Semptomlarla uyumlu hiperkalsemi gerçek kabul edilmeli ve hemen doz azaltılmalıdır; 3 ay beklemek hiperkalsiüri ve böbrek hasarı riskidir.",
+        "C": "YANLIS — Tiyazid idrar kalsiyum atılımını AZALTIR ve serum Ca'yı yükseltir; hiperkalsemide yanlış yöndedir.",
+        "D": "DOGRU — PTHrP etkisiyle ihtiyaç azalmıştır; doz azaltma, sık Ca izlemi, emzirmeye devam.",
+        "E": "YANLIS — Sorun ilaç yetersizliği değil fazlalığıdır; PTH tedavisi gebelik ve emzirmede önerilmez."
+      },
+      "etiketler": [
+        "Laktasyon",
+        "PTHrP",
+        "Gebelik ve Hipoparatiroidizm",
+        "Hiperkalsemi",
+        "Doz Ayarlama"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Khan AA, Bilezikian JP et al. J Bone Miner Res 2022 (Second International Workshop hipoparatiroidizm kılavuzu)"
+    },
+    {
+      "id": "s12",
+      "metin": "Kırk dokuz yaşında kadın hasta, 8 yıldır tiroidektomi sonrası kalıcı hipoparatiroidizm tanılı. Kalsiyum karbonat 4 g/gün (elementer 1.6 g) ve kalsitriol 1.5 µg/gün kullanmasına rağmen haftada birkaç kez parestezi yaşıyor, serum Ca 7.9–9.6 mg/dL arasında dalgalanıyor. 24 saatlik idrar Ca 360 mg/gün, eGFR son 3 yılda 92'den 68 mL/dk/1.73 m²'ye düşmüş. Hastaya günlük sc PTH replasmanı (palopegteriparatid) başlanmasına karar veriliyor.\n\nTedaviye geçişte en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kalsiyum ve kalsitriol aynı dozlarda sürdürülmeli; PTH bunlara ek olarak verilmelidir.",
+        "B": "PTH başlanırken aktif D vitamini azaltılıp çoğu hastada kesilmeli, kalsiyum desteği azaltılmalı ve ilk haftalarda serum Ca sık ölçülerek hem hiperkalsemi hem hipokalsemi yönünden izlenmelidir.",
+        "C": "Kalsiyum ve kalsitriol PTH'den 1 ay önce tümüyle kesilmeli ki PTH'nin etkisi net değerlendirilebilsin.",
+        "D": "PTH tedavisi yalnız eGFR <30 mL/dk/1.73 m² olduğunda endikedir; bu hastada erken bir karardır.",
+        "E": "PTH tedavisinde serum Ca izlemine gerek yoktur; yalnız 6 ayda bir idrar Ca bakılması yeterlidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "PTH replasmanı böbrekte kalsiyum geri emilimini ve 1-alfa-hidroksilasyonu geri getirir; eski dozlar sürdürülürse hiperkalsemi gelişir. Aktif D vitamini azaltılıp çoğunlukla kesilir, kalsiyum azaltılır, ilk haftalarda serum Ca sık izlenir.",
+      "aciklama_detay": "2022 uluslararası kılavuzu, konvansiyonel tedaviyle yeterli kontrol sağlanamayan hastada PTH tedavisini önerir: süren semptomlar ya da dalgalanan serum Ca, hiperkalsiüri, nefrolitiyazis/nefrokalsinozis, azalan eGFR, hiperfosfatemi, yüksek kalsiyum/kalsitriol ihtiyacı ve kötü yaşam kalitesi. Bu hastada semptomlar, hiperkalsiüri ve eGFR düşüşü birliktedir. Palopegteriparatid (TransCon PTH), PTH 1-34'ü sürekli salan günde tek doz bir ön ilaçtır; faz 3 PaTHway çalışmasında hastaların çoğu aktif D vitamini ve yüksek doz kalsiyum olmadan normal serum Ca'ya ulaştı ve idrar Ca azaldı. PTH hem böbrekte kalsiyum geri emilimini hem de 1,25(OH)₂D sentezini geri getirdiği için, geçişte eski kalsitriol ve kalsiyum dozlarının sürdürülmesi hiperkalsemiye yol açar. Bu nedenle başlangıçta aktif D vitamini azaltılır (çoğu hastada kesilir), kalsiyum azaltılır ve doz titrasyonu süresince serum Ca birkaç günde bir ölçülür; kalsiyum ve kalsitriolün önceden tümüyle kesilmesi ise ağır hipokalsemiye yol açar. Uzun dönemde serum Ca, fosfor, Mg, kreatinin ve idrar Ca izlenir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PTH, kalsitriolün işini de üstlenir; eski dozlar sürerse hiperkalsemi gelişir.",
+        "B": "DOGRU — Aktif D vitamini azaltılıp çoğunlukla kesilir, kalsiyum azaltılır, ilk haftalarda Ca sık izlenir.",
+        "C": "YANLIS — PTH başlanmadan tedavinin tümüyle kesilmesi ağır, semptomatik hipokalsemiye yol açar; geçiş eşzamanlı ve kademeli yapılır.",
+        "D": "YANLIS — Böyle bir eGFR alt sınırı yoktur; azalan böbrek fonksiyonu, hiperkalsiüri ve kontrolsüz semptomlar birlikte PTH tedavisi için güçlü gerekçedir.",
+        "E": "YANLIS — Titrasyon döneminde serum Ca sık izlenmelidir; hem hiperkalsemi hem hipokalsemi görülebilir."
+      },
+      "etiketler": [
+        "PTH Replasmanı",
+        "Palopegteriparatid",
+        "Konvansiyonel Tedavi Yetersizliği",
+        "Doz Geçişi",
+        "Hiperkalsiüri"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Khan AA, Bilezikian JP et al. J Bone Miner Res 2022; Khan AA et al. J Bone Miner Res 2023 (PaTHway)"
+    },
+    {
+      "id": "s13",
+      "metin": "Elli sekiz yaşında erkek hasta, 10 yıldır idiyopatik hipoparatiroidizm nedeniyle kalsitriol 1 µg/gün ve kalsiyum karbonat 2.5 g/gün kullanıyor. Semptomu yok. Göz muayenesinde bilateral erken katarakt, beyin BT'de bazal ganglion kalsifikasyonları saptanmış.\n\nTetkikler:\nSerum Ca (düzeltilmiş): 8.4 mg/dL\nFosfor: 6.9 mg/dL ↑ (N: 2.5–4.5)\nCa × P: 58 mg²/dL²\nMg: 1.9 mg/dL\n24 saatlik idrar Ca: 210 mg/gün\neGFR: 84 mL/dk/1.73 m²\n\nBu hastada ilk yapılması gereken hangisidir?",
+      "secenekler": {
+        "A": "Serum Ca'yı yükseltmek için kalsitriol dozu iki katına çıkarılmalıdır.",
+        "B": "Fosforu düşürmek için alüminyum hidroksit içeren fosfat bağlayıcı uzun süreli başlanmalıdır.",
+        "C": "Kalsiyum ve kalsitriol kesilmeli, fosfor normale inince yeniden başlanmalıdır.",
+        "D": "Diyette fosfat kısıtlaması (işlenmiş gıda, kola, fosfat katkıları) yapılmalı ve serum Ca alt-normalde tutulacak şekilde tedavi gözden geçirilmeli; hiperfosfatemi sürerse PTH tedavisi değerlendirilmelidir.",
+        "E": "Hiperfosfatemi hipoparatiroidizmin beklenen bulgusudur; tedavi değişikliği gerekmez."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "PTH yokluğunda böbrek fosfor atamaz; kalsitriol bağırsaktan fosfor emilimini de artırır. Hedef normal fosfor ve Ca×P <55'tir. İlk adım diyet fosfat kısıtlaması ve tedavinin gözden geçirilmesi; sürerse PTH tedavisi.",
+      "aciklama_detay": "Hipoparatiroidizmde PTH'nin fosfatüri etkisi olmadığından serum fosfor yükselir; kalsitriol bağırsaktan hem kalsiyum hem fosfor emilimini artırarak bunu ağırlaştırır. Yüksek Ca×P çarpımı yumuşak dokuda kalsifikasyonla ilişkilidir: bazal ganglion kalsifikasyonu, katarakt, nefrokalsinozis ve damar kalsifikasyonu. 2022 uluslararası kılavuzu serum fosforun normal aralıkta ve Ca×P'nin <55 mg²/dL² (4.4 mmol²/L²) tutulmasını hedefler. İlk adım, fosfat katkılı işlenmiş gıdaları ve kolalı içecekleri azaltan diyet fosfat kısıtlamasıdır; kalsiyumun öğünlerle alınması bir miktar fosfat bağlayıcı etki de sağlar. Serum Ca normalin alt sınırına yakın tutulacak şekilde dozlar yeniden değerlendirilir. Konvansiyonel tedaviyle hiperfosfatemi kontrol edilemiyorsa PTH tedavisi, hem fosfatüri sağladığı hem de kalsitriol ihtiyacını azalttığı için iyi bir seçenektir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kalsitriolü artırmak bağırsaktan fosfor emilimini de artırır; Ca×P daha da yükselir. Serum Ca zaten hedeftedir.",
+        "B": "YANLIS — Alüminyum içeren bağlayıcılar uzun süreli kullanımda alüminyum birikimi nedeniyle önerilmez.",
+        "C": "YANLIS — Tedavinin tümüyle kesilmesi ağır hipokalsemiye yol açar.",
+        "D": "DOGRU — Diyet fosfat kısıtlaması + dozların alt-normal Ca hedefiyle gözden geçirilmesi; kontrol sağlanamazsa PTH tedavisi.",
+        "E": "YANLIS — Hiperfosfatemi beklenen bir bulgu olsa da hedef normal fosfor ve Ca×P <55'tir; yüksek çarpım yumuşak doku kalsifikasyonuyla ilişkilidir."
+      },
+      "etiketler": [
+        "Hiperfosfatemi",
+        "Ca×P Çarpımı",
+        "Ektopik Kalsifikasyon",
+        "Diyet Fosfat Kısıtlaması",
+        "PTH Tedavisi Endikasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Khan AA, Bilezikian JP et al. J Bone Miner Res 2022 (Second International Workshop hipoparatiroidizm kılavuzu)"
+    },
+    {
+      "id": "s14",
+      "metin": "Altmış iki yaşında kadın hasta, 15 yıldır tiroidektomi sonrası kalıcı hipoparatiroidizm nedeniyle kalsitriol 0.5 µg/gün ve kalsiyum karbonat 2 g/gün kullanıyor; serum Ca 8.3 mg/dL ile stabil, semptomsuz. Yeni saptanan evre 1 esansiyel hipertansiyonu (ofis KB 152/94 mmHg) ve hafif bilateral ayak bileği ödemi var. Ekokardiyografi normal. 24 saatlik idrar Ca: 330 mg/gün.\n\nAntihipertansif seçimi açısından en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Ödem nedeniyle furosemid başlanmalıdır; kalsiyum metabolizmasına etkisi yoktur.",
+        "B": "Hiçbir diüretik kullanılmamalıdır; tüm diüretikler hipoparatiroidizmde kontrendikedir.",
+        "C": "Tiyazid grubu bir diüretik (ör. hidroklorotiyazid ya da klortalidon) tercih edilmeli; serum Ca, Na, K ve Mg başlangıçtan 1–2 hafta sonra kontrol edilmelidir.",
+        "D": "Kalsiyum kanal blokeri başlanmalı ve kalsiyum desteği aynı anda kesilmelidir.",
+        "E": "Asetazolamid başlanmalıdır; idrarı alkalileştirerek taş riskini azaltır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Tiyazidler distal tübülde kalsiyum geri emilimini artırır: hipoparatiroidizmde hem hiperkalsiüriyi azaltır hem serum Ca'yı destekler. Kıvrım diüretikleri tersine kalsiyum atılımını artırıp hipokalsemiyi kötüleştirir. Tiyazid sonrası Ca yükselebileceği ve hiponatremi/hipokalemi/hipomagnezemi gelişebileceği için elektrolitler izlenir.",
+      "aciklama_detay": "Hipoparatiroidizmde diüretik seçimi kalsiyum dengesini doğrudan etkiler. Tiyazidler distal kıvrımlı tübülde NCC'yi bloke eder; hücre içi Na düşüşü bazolateral Na/Ca değişimini artırarak kalsiyum geri emilimini yükseltir. Bu nedenle kılavuzlar hiperkalsiürisi olan hipoparatiroidizmli hastada düşük tuzlu diyetle birlikte tiyazidi önerir; bu hastada hem hipertansiyon hem hiperkalsiüri olduğu için tiyazid iki amaca hizmet eder. Başladıktan sonra serum Ca yükselebilir (kalsitriol dozu azaltılması gerekebilir); hiponatremi, hipokalemi ve hipomagnezemi açısından izlenir — gelişecek hipomagnezemi kalsiyum dengesini ayrıca bozabilir. Kıvrım diüretikleri (furosemid) Henle kulpunda kalsiyum geri emilimini azaltarak idrar Ca atılımını artırır; hipoparatiroidizmde hipokalsemiyi kötüleştirir ve hiperkalsemi tedavisinde kullanılmalarının nedeni de budur. Otozomal dominant hipokalsemide (ADH) de tiyazid dikkatli izlemle kullanılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Furosemid kalsiyum atılımını artırır; hipoparatiroidizmde hem hiperkalsiüriyi hem hipokalsemiyi kötüleştirir.",
+        "B": "YANLIS — Tiyazid hipoparatiroidizmde kontrendike değildir; tersine hiperkalsiüride önerilen ajandır.",
+        "C": "DOGRU — Tiyazid KB'yi düşürürken idrar Ca'yı azaltır ve serum Ca'yı destekler; elektrolit izlemiyle kullanılır.",
+        "D": "YANLIS — Kalsiyum kanal blokerleri serum Ca'yı etkilemez; kalsiyum desteğini kesmek hipokalsemiye yol açar.",
+        "E": "YANLIS — Asetazolamid hipertansiyon tedavisinde yeri olmayan bir karbonik anhidraz inhibitörüdür; idrarı alkalileştirip kalsiyum fosfat taşı riskini artırabilir."
+      },
+      "etiketler": [
+        "Tiyazid",
+        "Kıvrım Diüretiği",
+        "Hipertansiyon",
+        "Hiperkalsiüri",
+        "İlaç Seçimi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Khan AA, Bilezikian JP et al. J Bone Miner Res 2022; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s15",
+      "metin": "Yirmi dört yaşında erkek hasta, rutin tetkikte saptanan hipokalsemi nedeniyle başvuruyor. Boyun cerrahisi ya da radyasyon öyküsü yok. Çocukluktan beri iki taraflı sensörinöral işitme kaybı nedeniyle işitme cihazı kullanıyor; böbrek ultrasonografisinde sol böbrek hipoplazik. Babasında da işitme kaybı ve 'düşük kalsiyum' öyküsü var. Mukokutanöz kandidiyaz, adrenal yetmezlik bulgusu ya da yüz/kalp anomalisi yok.\n\nTetkikler:\nSerum Ca (düzeltilmiş): 7.4 mg/dL ↓\nFosfor: 5.6 mg/dL ↑\nPTH: 9 pg/mL ↓\nMg: 2.0 mg/dL\n24 saatlik idrar Ca: 85 mg/gün\n\nTanı için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Anti-CaSR antikoru istenmeli; otoimmün izole hipoparatiroidizm en olası tanıdır.",
+        "B": "22q11.2 delesyonu için FISH istenmelidir; kardiyak anomali olmaması tanıyı dışlamaz ve bu tablonun en olası nedenidir.",
+        "C": "AIRE geni dizilemesi yapılmalıdır.",
+        "D": "Etiyolojik tetkike gerek yoktur; cerrahi dışı hipoparatiroidizmde tedavi etiyolojiden bağımsızdır.",
+        "E": "GATA3 geni için genetik test yapılmalı; tanı doğrulanırsa birinci derece akrabalar işitme, böbrek ve kalsiyum yönünden taranmalıdır."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Hipoparatiroidizm + sensörinöral işitme kaybı + böbrek displazisi = HDR (Barakat) sendromu; GATA3 haployetmezliği, otozomal dominant. Cerrahi dışı hipoparatiroidizmde, özellikle genç yaş, aile öyküsü ya da sendromik bulgu varsa genetik test önerilir.",
+      "aciklama_detay": "Cerrahi dışı hipoparatiroidizmde etiyoloji aranır: önce Mg düzeyi ve aile öyküsü, ardından otoimmün (APS-1) ve genetik nedenler. 2022 uluslararası kılavuzu, özellikle genç hastada, aile öyküsü ya da sendromik bulgular varsa genetik test yapılmasını önerir; çünkü tanı prognozu, eşlik eden organ taramasını, aile danışmanlığını ve bazen tedaviyi (ör. ADH'de hiperkalsiüri tuzağı) değiştirir. Bu hastada hipoparatiroidizm, sensörinöral işitme kaybı ve böbrek hipoplazisi birlikteliği HDR (Barakat) sendromunu düşündürür; neden GATA3 transkripsiyon faktörünün haployetmezliğidir ve otozomal dominant geçer (babadaki benzer öykü ile uyumlu). İdrar Ca'nın düşük olması ADH'yi (CaSR aktive edici mutasyon, göreli hiperkalsiüri) düşündürmez. Tanı doğrulanınca aile bireyleri taranır; hastada böbrek fonksiyonu ve işitme izlemi sürdürülür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Otoimmün izole hipoparatiroidizm işitme kaybı ve böbrek hipoplazisini açıklamaz; aile öyküsü genetik nedeni düşündürür.",
+        "B": "YANLIS — 22q11.2 delesyonunda (DiGeorge) timik hipoplazi, konotrunkal kalp anomalisi, yüz dismorfisi ve damak anomalileri beklenir; işitme kaybı + böbrek displazisi üçlüsü GATA3'ü düşündürür.",
+        "C": "YANLIS — AIRE (APS-1) mukokutanöz kandidiyaz ve adrenal yetmezlikle birlikte seyreder; bu hastada yoktur ve kalıtım otozomal resesiftir.",
+        "D": "YANLIS — Etiyoloji aile taramasını, eşlik eden organ izlemini ve tedavi hedeflerini değiştirir; kılavuz genç ve aile öyküsü olan hastada genetik test önerir.",
+        "E": "DOGRU — HDR sendromu: hipoparatiroidizm + sağırlık + böbrek displazisi; GATA3 testi ve aile taraması."
+      },
+      "etiketler": [
+        "HDR Sendromu",
+        "GATA3",
+        "Genetik Hipoparatiroidizm",
+        "Sensörinöral İşitme Kaybı",
+        "Aile Taraması"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Khan AA, Bilezikian JP et al. J Bone Miner Res 2022 (Second International Workshop hipoparatiroidizm kılavuzu)"
     }
   ]
 }
