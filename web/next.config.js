@@ -105,6 +105,9 @@ module.exports = {
       // Adı hiperparatiroidi, içeriği baştan sona asit-baz olan içerik kazası silindi;
       // adresin vaat ettiği konunun sayfası `hiperparatiroidizm` (27 Eyl 2026).
       { source: '/topics/endokrinoloji/hiperkalsemi-ve-hiperparatiroidi', destination: '/topics/endokrinoloji/hiperparatiroidizm', permanent: true },
+      // Ezetimib sayfası iki branşta birebir aynı metinle yayındaydı (Haziran'dan beri);
+      // endokrinoloji kopyası kaldırıldı, kardiyoloji lipidoloji dalında duruyor (27 Eyl 2026).
+      { source: '/topics/endokrinoloji/lipid-ezetimibe', destination: '/topics/kardiyoloji/lipid-ezetimibe', permanent: true },
       // AYNI SKOR İKİ AYRI ARAÇ OLARAK DURUYORDU: /tools/heart-score (Kardiyoloji)
       // ve /tools/heart (Acil), ikisinin de adı "HEART Skoru". Ayrı uygulama
       // oldukları için AYNI hastada farklı davranıyorlardı — ölçüldü:

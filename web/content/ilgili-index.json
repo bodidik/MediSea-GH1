@@ -1189,18 +1189,6 @@
    "baslik": "Modül 2: SIADH Tanı Kriterleri ve FE-Ürik Asit Analizi"
   }
  ],
- "endokrinoloji/lipid-ezetimibe": [
-  {
-   "brans": "kardiyoloji",
-   "slug": "lipid-ezetimibe",
-   "baslik": "Ezetimib: Hücresel Mekanizma, Majör Klinik Çalışmalar ve ACC/AHA 2026"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "bempedoik-ezetimib-mace",
-   "baslik": "Bempedoik Asit + Ezetimib ve MACE Etkisi"
-  }
- ],
  "endokrinoloji/men-adrenal-kriz-yonetimi": [
   {
    "brans": "endokrinoloji",
@@ -5709,11 +5697,6 @@
   },
   {
    "brans": "kardiyoloji",
-   "slug": "lipidoloji-statin-miyopatisi-sams",
-   "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
    "slug": "sams-yeni-nesil-araclar",
    "baslik": "SAMS: Umut Vadeden Tanı ve Tedaviler"
   }
@@ -5825,14 +5808,14 @@
    "baslik": "SAMS: Umut Vadeden Tanı ve Tedaviler"
   },
   {
-   "brans": "endokrinoloji",
+   "brans": "kardiyoloji",
    "slug": "lipid-ezetimibe",
    "baslik": "Ezetimib: Hücresel Mekanizma, Majör Klinik Çalışmalar ve ACC/AHA 2026"
   },
   {
    "brans": "kardiyoloji",
-   "slug": "lipid-ezetimibe",
-   "baslik": "Ezetimib: Hücresel Mekanizma, Majör Klinik Çalışmalar ve ACC/AHA 2026"
+   "slug": "lipid-ezetimibe-sakinca",
+   "baslik": "Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi"
   }
  ],
  "kardiyoloji/direncli-hipertansiyon-yeni-nesil": [
@@ -5882,21 +5865,6 @@
  "kardiyoloji/hiperlipidemi-dusuk-ldl-hedefleri": [
   {
    "brans": "kardiyoloji",
-   "slug": "anti-hmgcr-otoantikorlari",
-   "baslik": "Anti-HMGCR Otoantikorları: IMNM Biyobelirteci"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "bempedoik-ezetimib-mace",
-   "baslik": "Bempedoik Asit + Ezetimib ve MACE Etkisi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "klinik-sams",
-   "baslik": "SAMS Nasıl Tanırız? (Statin Miyopatisi)"
-  },
-  {
-   "brans": "kardiyoloji",
    "slug": "lipid-hedef-itirazlari",
    "baslik": "Agresif LDL Hedeflerine Yönelik Akademik İtirazlar"
   },
@@ -5909,6 +5877,11 @@
    "brans": "kardiyoloji",
    "slug": "lipidoloji-statin-miyopatisi-sams",
    "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipidoloji-tedavi-ana",
+   "baslik": "Klinik Lipidoloji tedavi"
   }
  ],
  "kardiyoloji/hiperlipidemi-log-dogrusal-risk": [
@@ -6049,25 +6022,20 @@
   },
   {
    "brans": "kardiyoloji",
-   "slug": "lipidoloji-statin-miyopatisi-sams",
-   "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
    "slug": "sams-yeni-nesil-araclar",
    "baslik": "SAMS: Umut Vadeden Tanı ve Tedaviler"
   }
  ],
  "kardiyoloji/lipid-ezetimibe": [
   {
-   "brans": "endokrinoloji",
-   "slug": "lipid-ezetimibe",
-   "baslik": "Ezetimib: Hücresel Mekanizma, Majör Klinik Çalışmalar ve ACC/AHA 2026"
-  },
-  {
    "brans": "kardiyoloji",
    "slug": "bempedoik-ezetimib-mace",
    "baslik": "Bempedoik Asit + Ezetimib ve MACE Etkisi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "statin-intolerans-ezetimibe",
+   "baslik": "Statin İntoleransı (SAMS) Yönetimi ve Non-Statin Lipid Düşürücü Ajanlar"
   }
  ],
  "kardiyoloji/lipid-ezetimibe-sakinca": [
@@ -6075,28 +6043,23 @@
    "brans": "kardiyoloji",
    "slug": "bempedoik-ezetimib-mace",
    "baslik": "Bempedoik Asit + Ezetimib ve MACE Etkisi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipidoloji-tedavi-ana",
+   "baslik": "Klinik Lipidoloji tedavi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "statin-intolerans-ezetimibe",
+   "baslik": "Statin İntoleransı (SAMS) Yönetimi ve Non-Statin Lipid Düşürücü Ajanlar"
   }
  ],
  "kardiyoloji/lipid-hedef-itirazlari": [
   {
    "brans": "kardiyoloji",
-   "slug": "anti-hmgcr-otoantikorlari",
-   "baslik": "Anti-HMGCR Otoantikorları: IMNM Biyobelirteci"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "bempedoik-ezetimib-mace",
-   "baslik": "Bempedoik Asit + Ezetimib ve MACE Etkisi"
-  },
-  {
-   "brans": "kardiyoloji",
    "slug": "hiperlipidemi-dusuk-ldl-hedefleri",
    "baslik": "Hiperlipidemi: Düşük LDL-C Hedeflerinin Klinik Rasyoneli"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "klinik-sams",
-   "baslik": "SAMS Nasıl Tanırız? (Statin Miyopatisi)"
   },
   {
    "brans": "kardiyoloji",
@@ -6107,6 +6070,11 @@
    "brans": "kardiyoloji",
    "slug": "lipidoloji-statin-miyopatisi-sams",
    "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipidoloji-tedavi-ana",
+   "baslik": "Klinik Lipidoloji tedavi"
   }
  ],
  "kardiyoloji/lipidoloji-bempedoik-asit": [
@@ -6165,21 +6133,6 @@
  "kardiyoloji/lipidoloji-statin-miyopatisi-sams": [
   {
    "brans": "kardiyoloji",
-   "slug": "anti-hmgcr-otoantikorlari",
-   "baslik": "Anti-HMGCR Otoantikorları: IMNM Biyobelirteci"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "klinik-sams",
-   "baslik": "SAMS Nasıl Tanırız? (Statin Miyopatisi)"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "bempedoik-ezetimib-mace",
-   "baslik": "Bempedoik Asit + Ezetimib ve MACE Etkisi"
-  },
-  {
-   "brans": "kardiyoloji",
    "slug": "lipidoloji-bempedoik-asit",
    "baslik": "Bempedoik Asit ve CLEAR Outcomes"
   }
@@ -6194,6 +6147,11 @@
    "brans": "kardiyoloji",
    "slug": "lipidoloji-pcsk9-lpa",
    "baslik": "PCSK9 İnhibitörleri ve Lipoprotein(a) [Lp(a)]"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipid-ezetimibe-sakinca",
+   "baslik": "Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi"
   }
  ],
  "kardiyoloji/pcsk9-inhibitorleri": [
@@ -6272,6 +6230,11 @@
    "brans": "kardiyoloji",
    "slug": "sams-yeni-nesil-araclar",
    "baslik": "SAMS: Umut Vadeden Tanı ve Tedaviler"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipid-ezetimibe",
+   "baslik": "Ezetimib: Hücresel Mekanizma, Majör Klinik Çalışmalar ve ACC/AHA 2026"
   }
  ],
  "kardiyoloji/statin-otoimmun-miyopati-imnm": [
