@@ -928,6 +928,13 @@
         "eslesen": "eGFR"
       }
     ],
+    "nefroloji/hiponatremi": [
+      {
+        "slug": "corrected-sodium",
+        "name": "Düzeltilmiş Sodyum",
+        "eslesen": "Düzeltilmiş Sodyum"
+      }
+    ],
     "nefroloji/iga-nefropatisi-berger": [
       {
         "slug": "egfr",
@@ -1944,6 +1951,13 @@
         "eslesen": "NRS-2002"
       }
     ],
+    "corrected-sodium": [
+      {
+        "yol": "nefroloji/hiponatremi",
+        "baslik": "Hiponatremi: Patofizyolojik Mekanizmalar, Etiyolojik Sınıflandırma, Tanısal Yaklaşım ve Tedavi Protokolleri",
+        "eslesen": "Düzeltilmiş Sodyum"
+      }
+    ],
     "cisne": [
       {
         "yol": "onkoloji/febril-notropeni-cisne-indexi",
@@ -2040,10 +2054,10 @@
     ]
   },
   "olcum": {
-    "konu": 522,
+    "konu": 523,
     "arac": 257,
-    "araciOlanKonu": 136,
-    "konusuOlanArac": 59,
-    "bag": 180
+    "araciOlanKonu": 137,
+    "konusuOlanArac": 60,
+    "bag": 181
   }
 }
