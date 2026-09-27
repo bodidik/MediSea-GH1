@@ -285,13 +285,13 @@
         "E": "SURMOUNT alt analizleri: Dramatik kilo kaybına rağmen plaseboya kıyasla yağsız (kas) kütle oranı göreceli olarak korunmuştur."
       },
       "dogru": "D",
-      "aciklama_kisa": "SURPASS-CVOT HENÜZ TAMAMLANMAMIŞTIR — sürmekte olan bir çalışmadır; MACE-4 sonuçları henüz açıklanmamıştır. Diğer tüm eşleştirmeler (A, B, C, E) doğrudur.",
-      "aciklama_detay": "Tirzepatidin kardiyovasküler mortalite ve morbidite (MACE-4) üzerine uzun dönemli spesifik etkileri SÜRMEKTE OLAN SURPASS-CVOT çalışmasıyla aydınlatılmaya çalışılmaktadır; bu çalışma tamamlanmamıştır ve kesin bir sonuç henüz mevcut değildir. Bu nedenle 'tamamlanmış olup MACE-4'ü azaltmadığını kesin olarak gösterdi' ifadesi yanlıştır — hem çalışmanın durumu (devam ediyor) hem de sonucu (bilinmiyor) hatalı belirtilmiştir. Diğer seçenekler doğru eşleştirmelerdir: SURMOUNT-OSA obstrüktif uyku apnesinde AHI ve hipoksik yükü azaltmıştır; SYNERGY-NASH faz 2'de MASH/NASH için olumlu sonuçlar vermiştir; SURPASS alt analizleri böbrek koruyucu etkileri (KBH progresyonu yavaşlaması, makroalbüminüri riski azalması) göstermiştir; SURMOUNT alt analizlerinde kilo kaybı sırasında yağsız kas kütlesi oranı göreceli korunmuştur.",
+      "aciklama_kisa": "SURPASS-CVOT (NEJM 2025) plasebo değil dulaglutid karşılaştırmalı bir non-inferiorite çalışmasıdır; birincil sonlanım 3 bileşenli MACE'tir ve tirzepatid non-inferior bulunmuştur (HR 0,92; üstünlük anlamlı değil). 'MACE-4'ü azaltmadığını kesin gösterdi' ifadesi yanlıştır. Diğer eşleştirmeler (A, B, C, E) doğrudur.",
+      "aciklama_detay": "SURPASS-CVOT (Nicholls ve ark., N Engl J Med 2025) T2DM ve aterosklerotik KVH olan 13.299 hastada tirzepatidi, kardiyovasküler yararı kanıtlanmış bir ajan olan dulaglutidle karşılaştıran çift kör bir non-inferiorite çalışmasıdır. Birincil sonlanım 3 bileşenli MACE'tir (KV ölüm, MI, inme): %12,2'ye karşı %13,1, HR 0,92 (%95,3 GA 0,83–1,01) — non-inferiorite gösterilmiş, üstünlük istatistiksel olarak anlamlı değildir. Bu nedenle 'tirzepatidin MACE-4'ü azaltmadığını kesin olarak gösterdi' ifadesi yanlıştır: karşılaştırma plaseboyla değil etkin bir ajanladır, birincil sonlanım MACE-4 değildir ve sonuç tirzepatidin en az dulaglutid kadar etkili olduğudur. Diğer seçenekler doğru eşleştirmelerdir: SURMOUNT-OSA obstrüktif uyku apnesinde AHI ve hipoksik yükü azaltmıştır; SYNERGY-NASH faz 2'de MASH/NASH için olumlu sonuçlar vermiştir; SURPASS alt analizleri böbrek koruyucu etkileri (KBH progresyonu yavaşlaması, makroalbüminüri riski azalması) göstermiştir; SURMOUNT alt analizlerinde kilo kaybı sırasında yağsız kas kütlesi oranı göreceli korunmuştur.",
       "secenekAciklamalari": {
         "A": "DOĞRU eşleştirme — yanlış DEĞİL. SURMOUNT-OSA gerçekten AHI ve hipoksik yükü azaltmıştır.",
         "B": "DOĞRU eşleştirme — yanlış DEĞİL. SYNERGY-NASH faz 2'de olumlu primer sonlanımlar gösterilmiştir.",
         "C": "DOĞRU eşleştirme — yanlış DEĞİL. SURPASS alt analizleri renoprotektif etkileri desteklemektedir.",
-        "D": "YANLIŞ EŞLEŞTİRME — bu DOĞRU CEVAP. SURPASS-CVOT halen sürmekte olup kesin MACE-4 sonucu henüz mevcut değildir.",
+        "D": "YANLIŞ EŞLEŞTİRME — bu DOĞRU CEVAP. SURPASS-CVOT dulaglutide karşı 3 bileşenli MACE'te non-inferiorite göstermiştir (HR 0,92); 'MACE-4'ü azaltmadığını kesin gösterdi' ifadesi çalışmanın tasarımını ve sonucunu yanlış aktarır.",
         "E": "DOĞRU eşleştirme — yanlış DEĞİL. Yağsız kütle korunumu SURMOUNT alt analizlerinde gösterilmiştir."
       },
       "etiketler": [
@@ -302,7 +302,7 @@
         "Pleiotropik Etkiler"
       ],
       "zorluk": "zor",
-      "kaynak": "ClinicalTrials.gov NCT04255433 (SURPASS-CVOT); Malhotra et al. N Engl J Med 2024 (SURMOUNT-OSA)"
+      "kaynak": "Nicholls et al. N Engl J Med 2025 (SURPASS-CVOT); Malhotra et al. N Engl J Med 2024 (SURMOUNT-OSA)"
     },
     {
       "id": "s11",

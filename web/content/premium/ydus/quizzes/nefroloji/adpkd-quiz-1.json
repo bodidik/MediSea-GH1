@@ -66,22 +66,22 @@
     },
     {
       "id": "s3",
-      "metin": "ADPKD tanılı bir hastada nefrolitiyazis gelişiyor ve taş analizi isteniyor. Hekim, genel popülasyondan farklı olarak bu hasta grubunda belirli bir taş tipinin daha sık görüldüğünü biliyor.\n\nADPKD hastalarında en sık görülen böbrek taşı tipi ve bunun nedeni nedir?",
+      "metin": "ADPKD tanılı bir hastada nefrolitiyazis gelişiyor ve taş analizi isteniyor. Hekim, genel popülasyondan farklı olarak bu hasta grubunda belirli bir taş tipinin daha sık görüldüğünü biliyor.\n\nADPKD hastalarında böbrek taşı tiplerinin dağılımı ve bunun nedeni ile ilgili hangisi doğrudur?",
       "secenekler": {
         "A": "Kalsiyum oksalat taşları en sık görülür; bu, genel popülasyonla aynı dağılımı yansıtır.",
         "B": "Sistin taşları en sık görülür; ADPKD'nin genetik defekti sistin transportunu da etkiler.",
         "C": "Struvit (enfeksiyon) taşları en sık görülür; kist enfeksiyonlarının doğrudan sonucudur.",
-        "D": "Ürik asit taşları en sık görülür; ADPKD anatomi ve fizyolojisine bağlı idrar stazı ve düşük idrar sitratı nedeniyle genel popülasyondan farklı olarak bu taş tipi baskındır, ikinci sıklıkta kalsiyum oksalat taşları izlenir.",
+        "D": "Ürik asit taşları kalsiyum oksalatla birlikte en sık iki taş tipidir ve oranları genel popülasyondan belirgin yüksektir; ADPKD'ye özgü idrar stazı, düşük idrar sitratı ve düşük idrar pH'sı buna katkıda bulunur.",
         "E": "ADPKD hastalarında nefrolitiyazis riski genel popülasyondan daha düşüktür."
       },
       "dogru": "D",
-      "aciklama_kisa": "ADPKD'de en sık taş tipi ürik asit taşlarıdır (genel popülasyondan farklı!) — idrar stazı ve düşük idrar sitratına bağlı. İkinci sıklıkta kalsiyum oksalat taşları görülür.",
-      "aciklama_detay": "Nefrolitiyazis, ADPKD hastalarının %20-30'unda görülür. Genel popülasyonda en sık taş tipi kalsiyum oksalat iken, ADPKD hastalarında ADPKD'ye özgü anatomi ve fizyolojiye bağlı idrar stazı (kistlerin toplayıcı sistemi distorte etmesi) ve düşük idrar sitratı nedeniyle EN SIK ürik asit taşları izlenir — bu, genel popülasyondan belirgin şekilde farklı bir epidemiyolojik paterndir ve sıkça vurgulanan bir ayrımdır. İkinci sıklıkta kalsiyum oksalat taşları saptanır. Bu bilgi, ADPKD hastalarında taş önleme stratejilerinin (idrar alkalizasyonu, sitrat replasmanı gibi) genel popülasyondan farklı şekillendirilmesi gerektiğini gösterir.",
+      "aciklama_kisa": "ADPKD'de ürik asit ve kalsiyum oksalat en sık iki taş tipidir; ürik asit taşlarının oranı genel popülasyondan belirgin yüksektir — idrar stazı, düşük idrar sitratı ve düşük idrar pH'sına bağlı.",
+      "aciklama_detay": "Nefrolitiyazis, ADPKD hastalarının %20-30'unda görülür. Genel popülasyonda en sık taş tipi kalsiyum oksalat iken, ADPKD hastalarında ADPKD'ye özgü anatomi ve fizyolojiye bağlı idrar stazı (kistlerin toplayıcı sistemi distorte etmesi), düşük idrar sitratı ve düşük idrar pH'sı nedeniyle ürik asit taşları kalsiyum oksalatla birlikte en sık iki taş tipini oluşturur; ürik asit taşlarının payı genel popülasyondakinden belirgin yüksektir — bu, genel popülasyondan farklı bir epidemiyolojik paterndir. Bu bilgi, ADPKD hastalarında taş önleme stratejilerinin (idrar alkalizasyonu, sitrat replasmanı gibi) genel popülasyondan farklı şekillendirilmesi gerektiğini gösterir.",
       "secenekAciklamalari": {
-        "A": "YANLIS — ADPKD'de en sık taş tipi genel popülasyondan FARKLI olarak ürik asittir, kalsiyum oksalat ikinci sıradadır.",
+        "A": "YANLIS — Kalsiyum oksalat taşları sık görülse de dağılım genel popülasyonla aynı değildir; ADPKD'de ürik asit taşlarının payı belirgin yüksektir.",
         "B": "YANLIS — ADPKD'nin genetik defekti (PKD1/PKD2) sistin transportuyla ilişkili değildir; sistin taşları ayrı bir genetik hastalıkla (sistinüri) ilişkilidir.",
         "C": "YANLIS — Struvit taşları ADPKD'de en sık taş tipi olarak tanımlanmamıştır.",
-        "D": "DOGRU — İdrar stazı + düşük idrar sitratı → ürik asit taşları en sık; kalsiyum oksalat ikinci sırada.",
+        "D": "DOGRU — İdrar stazı + düşük idrar sitratı/pH → ürik asit taşlarının payı artar; kalsiyum oksalatla birlikte en sık iki taş tipidir.",
         "E": "YANLIS — ADPKD hastalarında nefrolitiyazis riski genel popülasyona göre ARTMIŞTIR (%20-30), azalmamıştır."
       },
       "etiketler": [
@@ -315,8 +315,8 @@
         "E": "Poliüriyi azaltacağı için ilk basamakta tiyazid diüretik başlamak"
       },
       "dogru": "C",
-      "aciklama_kisa": "Elli yaş altı, eGFR >60 olan ADPKD hastasında ilk basamak RAAS blokajıdır (ACEi, intoleransta ARB) ve tolere edilirse ev KB hedefi ≤110/75 mmHg'dir (HALT-PKD A çalışması). ACEi + ARB kombinasyonu ek fayda sağlamaz.",
-      "aciklama_detay": "ADPKD'de hipertansiyon, kistlerin intrarenal damarlara basısıyla gelişen lokal iskemi ve RAAS aktivasyonuna bağlıdır; eGFR henüz normalken, genellikle 30'lu yaşlarda başlar ve kardiyovasküler mortalitenin ana zeminidir. HALT-PKD A çalışmasında 15–49 yaş, eGFR >60 olan hastalarda düşük KB hedefi (95/60–110/75 mmHg), standart hedefe (120/70–130/80 mmHg) göre yıllık toplam böbrek hacmi artışını yavaşlattı, sol ventrikül kitle indeksini ve albüminüriyi daha çok azalttı. Aynı programın her iki kolunda ACEi + ARB kombinasyonu, ACEi monoterapisine göre ne hacim ne eGFR üzerinde ek fayda sağladı; bu nedenle çift blokaj önerilmez. KDIGO 2025 ADPKD kılavuzu da 18–49 yaş ve eGFR >60 olan hastalarda tolere edildiği ölçüde ≤110/75 mmHg ev KB hedefini ve ilk basamak ACEi (intoleransta ARB) kullanımını önerir. Tedavi sırasında baş dönmesi/ortostaz, potasyum ve kreatinin izlenmelidir. Hastanın Mayo 1C olması ayrıca tolvaptan açısından da değerlendirilmesini gerektirir; ancak soru KB yönetimini sorgulamaktadır.",
+      "aciklama_kisa": "Elli yaş altı, eGFR >60 olan ADPKD hastasında ilk basamak RAAS blokajıdır (ACEi ya da ARB, KDIGO 2025 ikisini eşdeğer tutar) ve tolere edilirse ev KB hedefi ≤110/75 mmHg'dir (HALT-PKD A çalışması). ACEi + ARB kombinasyonu ek fayda sağlamaz.",
+      "aciklama_detay": "ADPKD'de hipertansiyon, kistlerin intrarenal damarlara basısıyla gelişen lokal iskemi ve RAAS aktivasyonuna bağlıdır; eGFR henüz normalken, genellikle 30'lu yaşlarda başlar ve kardiyovasküler mortalitenin ana zeminidir. HALT-PKD A çalışmasında 15–49 yaş, eGFR >60 olan hastalarda düşük KB hedefi (95/60–110/75 mmHg), standart hedefe (120/70–130/80 mmHg) göre yıllık toplam böbrek hacmi artışını yavaşlattı, sol ventrikül kitle indeksini ve albüminüriyi daha çok azalttı. Aynı programın her iki kolunda ACEi + ARB kombinasyonu, ACEi monoterapisine göre ne hacim ne eGFR üzerinde ek fayda sağladı; bu nedenle çift blokaj önerilmez. KDIGO 2025 ADPKD kılavuzu da 18–49 yaş ve eGFR >60 olan hastalarda tolere edildiği ölçüde ≤110/75 mmHg ev KB hedefini ve ilk basamakta ACEi ya da ARB kullanımını önerir (ikisi eşdeğer seçeneklerdir; HALT-PKD'de ACEi olarak lisinopril kullanıldı). Tedavi sırasında baş dönmesi/ortostaz, potasyum ve kreatinin izlenmelidir. Hastanın Mayo 1C olması ayrıca tolvaptan açısından da değerlendirilmesini gerektirir; ancak soru KB yönetimini sorgulamaktadır.",
       "secenekAciklamalari": {
         "A": "YANLIS — HALT-PKD'de ACEi + ARB kombinasyonu ACEi monoterapisine göre ek fayda sağlamadı; hiperkalemi ve AKI riskini artırdığı için önerilmez.",
         "B": "YANLIS — ADPKD hipertansiyonu RAAS aracılıdır; ilk basamak ACEi/ARB'dir, kalsiyum kanal blokeri ek ajan olarak yer alır.",

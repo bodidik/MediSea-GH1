@@ -30,7 +30,7 @@
     },
     {
       "id": "s2",
-      "metin": "MEN2A tanılı bir hastanın aile taramasında MEN1 mutasyon taşıyıcısı olan 38 yaşındaki kız kardeşinde biyokimyasal feokromositoma saptanıyor. Hastada aynı zamanda iyonize Ca²⁺ 1.42 mmol/L ve PTH 148 pg/mL ile primer hiperparatiroidi mevcuttur. Eş zamanlı feokromositoma ve primer hiperparatiroidide cerrahi öncelik nasıl belirlenmelidir?",
+      "metin": "MEN2A tanılı bir hastanın aile taramasında RET mutasyonu taşıyıcısı olduğu saptanan 38 yaşındaki kız kardeşinde biyokimyasal feokromositoma saptanıyor. Hastada aynı zamanda iyonize Ca²⁺ 1.42 mmol/L ve PTH 148 pg/mL ile primer hiperparatiroidi mevcuttur. Eş zamanlı feokromositoma ve primer hiperparatiroidide cerrahi öncelik nasıl belirlenmelidir?",
       "secenekler": {
         "A": "Hiperkalsemi hayatı tehdit ettiğinden önce paratiroidektomi yapılmalı, ardından adrenalektomi planlanmalıdır.",
         "B": "Feokromositoma intraoperatif hipertansif kriz riski nedeniyle önce adrenalektomi ile tedavi edilmeli; paratiroidektomi sonraya bırakılmalıdır.",

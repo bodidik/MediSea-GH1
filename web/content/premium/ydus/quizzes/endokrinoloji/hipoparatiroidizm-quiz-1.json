@@ -39,17 +39,17 @@
       "metin": "Otuz sekiz yaşında kadın hasta, bilateral tiroid kanseri nedeniyle total tiroidektomi + boyun diseksiyonu yapılmış. Operasyondan 18 saat sonra perioral uyuşma, el bileklerinde kasılma hissi ve Trousseau bulgusu saptandı.\n\nTetkikler:\nSerum Ca: 7.1 mg/dL ↓\nPTH: <3 pg/mL ↓↓\nMg: 1.6 mg/dL (normal)\n\nBu tablonun yönetimi için doğru sıralama hangisidir?",
       "secenekler": {
         "A": "Semptomlar hafif; oral kalsiyum karbonat 1 g TID başlan ve 48 saatte kontrol et.",
-        "B": "İV kalsiyum glukonat bolüs + sürekli infüzyon, ardından oral kalsiyum + kalsitriol replasmanına geç; 6–8 haftada paratiroid fonksiyonu kendiliğinden düzelebileceğinden kalıcı karar için bekle.",
+        "B": "İV kalsiyum glukonat bolüs + sürekli infüzyon, ardından oral kalsiyum + kalsitriol replasmanına geç; paratiroid fonksiyonu kendiliğinden düzelebileceğinden kalıcılık kararı için en az 12 ay bekle.",
         "C": "PTH düzeyi bu kadar düşük olduğundan kalıcı hipoparatiroidizm kesinleşmiştir; ömür boyu PTH 1-84 (rekombinan) başlan.",
         "D": "Önce Mg replasmanı yapılmalı; Mg düzeyi 1.6 mg/dL ile kritik düşük.",
         "E": "Trousseau bulgusu klinik anlam taşımaz; biyokimyasal doğrulama beklenmelidir."
       },
       "dogru": "B",
-      "aciklama_kisa": "Posttirooidektomi hipokalsemi akut yönetimi: IV Ca glukonat → oral Ca + kalsitriol. 6–8 haftada paratiroid fonksiyonu geri dönebilir; kalıcılık için beklenmeli.",
-      "aciklama_detay": "Postoperatif hipokalsemi tiroidektominin en sık komplikasyonudur. Semptomatik vakada (tetani, Trousseau+, Ca <7.5 mg/dL) IV kalsiyum glukonat uygulanır (100 mg elementer Ca 10 dk IV, ardından infüzyon). Kalsitriol eklenir çünkü PTH eksikliğinde aktif D vitamini dönüşümü bozulur. Paratiroid bezlerinin vaskülarizasyonu 48–72 saatte kısmen düzelebilir; geçici vs kalıcı ayrımı için en az 6 ay beklenir (bazı kılavuzlar 12 ayı önerir). Mg 1.6 mg/dL normal sınırda (alt sınır ~1.5); burada asıl sorun hipoparatiroidizm.",
+      "aciklama_kisa": "Posttirooidektomi hipokalsemi akut yönetimi: IV Ca glukonat → oral Ca + kalsitriol. Paratiroid fonksiyonu çoğu olguda haftalar–aylar içinde geri döner; kalıcı hipoparatiroidizm demek için 12 ay beklenir (2022 uluslararası kılavuz).",
+      "aciklama_detay": "Postoperatif hipokalsemi tiroidektominin en sık komplikasyonudur. Semptomatik vakada (tetani, Trousseau+, Ca <7.5 mg/dL) IV kalsiyum glukonat uygulanır (100 mg elementer Ca 10 dk IV, ardından infüzyon). Kalsitriol eklenir çünkü PTH eksikliğinde aktif D vitamini dönüşümü bozulur. Paratiroid bezlerinin vaskülarizasyonu 48–72 saatte kısmen düzelebilir; 2022 uluslararası kılavuza göre hipoparatiroidizm ameliyattan 12 ay sonra sürüyorsa kalıcı kabul edilir; geçici vs kalıcı ayrımı için bu süre beklenir. Mg 1.6 mg/dL normal sınırda (alt sınır ~1.5); burada asıl sorun hipoparatiroidizm.",
       "secenekAciklamalari": {
         "A": "YANLIS — Trousseau pozitif + Ca 7.1 → semptomatik; yalnızca oral kalsiyum yetersiz, IV gerekir.",
-        "B": "DOGRU — IV Ca glukonat → oral Ca + kalsitriol; kalıcılık için 6–8 haftada değerlendir.",
+        "B": "DOGRU — IV Ca glukonat → oral Ca + kalsitriol; kalıcılık kararı için 12 ay beklenir.",
         "C": "YANLIS — 18 saatlik postop dönemde 'kalıcı' kararı vermek çok erken; paratiroid kendini toparlamış olabilir.",
         "D": "YANLIS — Mg 1.6 mg/dL normal; asıl sorun PTH eksikliği.",
         "E": "YANLIS — Trousseau latent tetaniyi gösterir; klinisyen derhal müdahale etmelidir."
@@ -140,7 +140,7 @@
       "secenekAciklamalari": {
         "A": "YANLIS — Serum Ca normalleştirmek ADH'de kontrendike; hiperkalsiüri → nefrokalsinozis.",
         "B": "YANLIS — Kalsilitikler (encaleret) klinik geliştirme aşamasında; henüz standart tedavi değil.",
-        "C": "YANLIS — PTH analogları diğer hipoparatiroidizm tiplerinde kullanılır; ADH'de teorik olarak CaSR aktivasyonunu değiştirmez. Kanıta dayalı önerilmez.",
+        "C": "YANLIS — PTH analoğu ADH'de birinci seçenek değildir ve bu asemptomatik hastada endikasyonu yoktur. PTH 1-34 (özellikle sürekli sc infüzyon), tekrarlayan nöbeti ve Ca/kalsitriol direnci olan semptomatik ADH1'de, idrar Ca'yı artırmadan serum Ca'yı destekleyen bir seçenektir.",
         "D": "YANLIS — Yıllık kontrol yetersiz; 6 ayda idrar Ca ve böbrek fonksiyonu izlemek gerekir.",
         "E": "DOGRU — ADH yönetiminin özeti: asemptomatik ise tedavisiz; semptomatik ise minimum doz + tiyazid + idrar Ca takibi."
       },
@@ -156,7 +156,7 @@
     },
     {
       "id": "s6",
-      "metin": "On altı yaşında kız çocuğu, son 2 yıldır mukokutanöz kandidiyazis tedavisine dirençli oral kandida + el tırnaklarında fungal enfeksiyon ile takip ediliyordu. Şimdi acil servise tetani ile başvurdu.\n\nTetkikler:\nSerum Ca: 6.4 mg/dL ↓↓\nPTH: <5 pg/mL ↓\nACTH stimülasyon testi: cevapsız (sekonder adrenal yetmezlik)\nAnti-paratiroid antikoru: Pozitif\n\nBu hastanın tam tanısı ve altta yatan genetik mekanizma nedir?",
+      "metin": "On altı yaşında kız çocuğu, son 2 yıldır mukokutanöz kandidiyazis tedavisine dirençli oral kandida + el tırnaklarında fungal enfeksiyon ile takip ediliyordu. Şimdi acil servise tetani ile başvurdu.\n\nTetkikler:\nSerum Ca: 6.4 mg/dL ↓↓\nPTH: <5 pg/mL ↓\nACTH stimülasyon testi: cevapsız (primer adrenal yetmezlik)\nAnti-paratiroid antikoru: Pozitif\n\nBu hastanın tam tanısı ve altta yatan genetik mekanizma nedir?",
       "secenekler": {
         "A": "Otoimmün poliglandüler sendrom tip 1 (APS-1 / APECED): mukokutanöz kandida + hipoparatiroidizm + adrenal yetmezlik; AIRE gen mutasyonu.",
         "B": "Otoimmün poliglandüler sendrom tip 2 (APS-2 / Schmidt sendromu): Addison + hipotiroidi + otoimmün tiroidit.",

@@ -31,25 +31,25 @@
         "Prolaktinoma"
       ],
       "zorluk": "zor",
-      "kaynak": "Persani et al. Eur J Endocrinol 2018; Visser et al. Nat Rev Endocrinol 2021"
+      "kaynak": "Persani et al. Eur Thyroid J 2018 (ETA kılavuzu); Visser et al. Nat Rev Endocrinol 2021"
     },
     {
       "id": "s2",
-      "metin": "Elli bir yaşında bir erkek hasta, 3 aydır artan yorgunluk, libido kaybı ve soğuk intoleransı yakınmalarıyla başvuruyor. Beş yıl önce non-fonksiyonel hipofiz adenomu nedeniyle transsfenoidal cerrahi geçirmiş.\n\nTiroid fonksiyon testleri:\nsT4: 0.61 ng/dL ↓ | TSH: 0.8 mU/L (uygunsuz normal)\n\nSabah kortizolü: 4.2 µg/dL ↓ (N: 6–18 sabah)\nTestosteron: 68 ng/dL ↓ | LH/FSH: düşük\n\nSantral hipotiroidi tanısı konuldu. Levotiroksin tedavisine başlanması planlanıyor.\n\nBu hastada levotiroksin tedavisine başlanmadan önce yapılması gereken en öncelikli adım hangisidir?",
+      "metin": "Elli bir yaşında bir erkek hasta, 3 aydır artan yorgunluk, libido kaybı ve soğuk intoleransı yakınmalarıyla başvuruyor. Beş yıl önce non-fonksiyonel hipofiz adenomu nedeniyle transsfenoidal cerrahi geçirmiş.\n\nTiroid fonksiyon testleri:\nsT4: 0.61 ng/dL ↓ | TSH: 0.8 mU/L (uygunsuz normal)\n\nSabah kortizolü: 2.6 µg/dL ↓ (N: 6–18 sabah)\nTestosteron: 68 ng/dL ↓ | LH/FSH: düşük\n\nSantral hipotiroidi tanısı konuldu. Levotiroksin tedavisine başlanması planlanıyor.\n\nBu hastada levotiroksin tedavisine başlanmadan önce yapılması gereken en öncelikli adım hangisidir?",
       "secenekler": {
         "A": "Tiroid peroksidaz antikoru (Anti-TPO) bakılmalı; otoimmün etyoloji dışlanmadan LT4 başlanamaz.",
         "B": "Levotiroksin hemen başlanabilir; adrenal yetmezliği dışlama yükümlülüğü yalnızca primer hipotiroidide geçerlidir.",
-        "C": "Sabah kortizolü 4.2 µg/dL ile sekonder adrenal yetmezlik mevcuttur; LT4 başlanmadan önce glukokortikoid replasmanı başlanmalıdır.",
+        "C": "Sabah kortizolü 2.6 µg/dL ile sekonder adrenal yetmezlik mevcuttur; LT4 başlanmadan önce glukokortikoid replasmanı başlanmalıdır.",
         "D": "Testosteron düşüklüğü düzeltilmeden tiroid tedavisine başlamak metabolik dengesizliğe yol açar; önce testosteron replasmanı yapılmalıdır.",
         "E": "Kraniyal MRG ile adenomun nüksü ekarte edilmeli; görüntüleme olmadan ilaç başlanmamalıdır."
       },
       "dogru": "C",
-      "aciklama_kisa": "Sabah kortizolü 4.2 µg/dL = sekonder adrenal yetmezlik. LT4 önce verilirse metabolizma hızlanır, adrenal bez yetersiz kalan kortizol için daha da zorlanır → adrenal kriz. Kural: glukokortikoid önce, LT4 sonra.",
-      "aciklama_detay": "Santral hipotiroidide LT4 başlamadan önce hipofizer-adrenal aksın değerlendirilmesi zorunludur. Nedeni: adrenal yetmezlikte vücut, düşük kortizol ortamına kompanse bir düzeyde uyum sağlamıştır. LT4 ile metabolizmanın hızlanması bu dengeyi ani bozar — kortizol ihtiyacı artar, yetersiz adrenal rezerv krize yol açar (hipotansiyon, bulantı, bilinç bozukluğu). Bu hastada sabah kortizolü 4.2 µg/dL ile sekonder adrenal yetmezlik mevcuttur. Glukokortikoid replasmanı (hidrokortizon) başlandıktan sonra LT4 güvenle verilebilir. Testosteron replasmanı ve görüntüleme önemlidir ancak adrenal aks aciliyeti daha önce gelir.",
+      "aciklama_kisa": "Sabah kortizolü 2.6 µg/dL = sekonder adrenal yetmezlik. LT4 önce verilirse metabolizma hızlanır, adrenal bez yetersiz kalan kortizol için daha da zorlanır → adrenal kriz. Kural: glukokortikoid önce, LT4 sonra.",
+      "aciklama_detay": "Santral hipotiroidide LT4 başlamadan önce hipofizer-adrenal aksın değerlendirilmesi zorunludur. Nedeni: adrenal yetmezlikte vücut, düşük kortizol ortamına kompanse bir düzeyde uyum sağlamıştır. LT4 ile metabolizmanın hızlanması bu dengeyi ani bozar — kortizol ihtiyacı artar, yetersiz adrenal rezerv krize yol açar (hipotansiyon, bulantı, bilinç bozukluğu). Bu hastada sabah kortizolü 2.6 µg/dL ile sekonder adrenal yetmezlik mevcuttur. Glukokortikoid replasmanı (hidrokortizon) başlandıktan sonra LT4 güvenle verilebilir. Testosteron replasmanı ve görüntüleme önemlidir ancak adrenal aks aciliyeti daha önce gelir.",
       "secenekAciklamalari": {
         "A": "YANLIŞ — Anti-TPO, otoimmün primer hipotiroidide anlamlıdır. Bu hastada tanı zaten santral hipotiroidi olarak konulmuş; otoimmün etyoloji araştırması öncelik taşımaz. Adrenal yetmezlik dışlama yükümlülüğü çok daha kritiktir.",
         "B": "YANLIŞ — Adrenal yetmezlik dışlama yükümlülüğü santral hipotiroidiye özgüdür — primer hipotiroidide değil. Santral hastalıkta TSH eksikliği ile birlikte ACTH eksikliği de bulunabilir; bu bağlantıyı görmezden gelmek hayati risk yaratır.",
-        "C": "DOĞRU — Sabah kortizolü <6 µg/dL = adrenal yetmezlik eşiği. LT4 öncesinde hidrokortizon başlamak adrenal krizin önüne geçer. Bu, santral hipotiroidinin en önemli tedavi kuralıdır.",
+        "C": "DOĞRU — Sabah kortizolü <3 µg/dL adrenal yetmezlik lehinedir (TEMD Hipofiz 2022: <3 yetmezlik, 3–15 arası uyarı testi, ≥15 normal). LT4 öncesinde hidrokortizon başlamak adrenal krizin önüne geçer. Bu, santral hipotiroidinin en önemli tedavi kuralıdır.",
         "D": "YANLIŞ — Testosteron replasmanı önemli olmakla birlikte, adrenal yetmezliğe kıyasla hayati aciliyeti yoktur. Önce adrenal aks güvenceye alınır, ardından gonadal eksiklik tedavi edilir.",
         "E": "YANLIŞ — Kraniyal MRG santral hipotiroidili her hastada yapılmalıdır; ancak bu görüntüleme için LT4'ü bekletmek gerekmez. Görüntüleme ile tedavi aynı anda planlanabilir; adrenal kriz riskini gidermek tek acil önceliktir."
       },
@@ -61,7 +61,7 @@
         "Hipofiz Cerrahisi"
       ],
       "zorluk": "orta",
-      "kaynak": "Persani et al. Eur J Endocrinol 2018; Endocrine Society Guidelines 2021"
+      "kaynak": "Persani et al. Eur Thyroid J 2018 (ETA kılavuzu); Endocrine Society Guidelines 2021"
     },
     {
       "id": "s3",
@@ -74,8 +74,8 @@
         "E": "Santral hipotiroidide TSH takip parametresi değildir. sT4 1.75 ng/dL ile referans aralığının üst yarısında — hedef değer sağlanmış. Çarpıntı ve ısı intoleransı için sT4'ü üst sınırın üzerine çıkarmamaya dikkat edilmeli; mevcut doz uygun."
       },
       "dogru": "E",
-      "aciklama_kisa": "Santral hipotiroidide TSH takip parametresi değildir — sT4 üst yarısında tutmak hedeftir. TSH zaten her zaman baskılı gelir; buna bakarak doz azaltmak yetersiz tedaviye yol açar.",
-      "aciklama_detay": "Santral hipotiroidinin en kritik takip kuralı: TSH kullanılmaz. Bunun nedeni: sT4'ü normal aralığa getiren LT4 dozlarında TSH hipofiz tarafından her zaman <0.1 mU/L'ye baskılanır. Yani TSH'ın baskılı olması 'aşırı doz' anlamına gelmez; bu, santral hipotiroidinin beklenen fizyolojik sonucudur. Hedef: sT4'ü laboratuvar referans aralığının üst yarısında tutmak. Bu hastada sT4 1.75/1.80 = üst sınıra yakın üst yarıda — hedef tutturulmuş. Çarpıntı ve ısı intoleransı yakınmaları hafif olmakla birlikte, sT4'ün üst sınırı aşmamasına dikkat edilmeli; mevcut doz uygun.",
+      "aciklama_kisa": "Santral hipotiroidide TSH takip parametresi değildir — sT4 üst yarısında tutmak hedeftir. TSH zaten çoğunlukla düşük ya da baskılı gelir; buna bakarak doz azaltmak yetersiz tedaviye yol açar.",
+      "aciklama_detay": "Santral hipotiroidinin en kritik takip kuralı: TSH kullanılmaz. Bunun nedeni: TSH salgısı zaten bozuktur ve sT4'ü normal aralığa getiren LT4 dozlarında TSH çoğu hastada düşük ya da baskılı (sıklıkla <0.1 mU/L) gelir. Yani TSH'ın baskılı olması 'aşırı doz' anlamına gelmez; bu, santral hipotiroidinin beklenen fizyolojik sonucudur. Hedef: sT4'ü laboratuvar referans aralığının üst yarısında tutmak. Bu hastada sT4 1.75/1.80 = üst sınıra yakın üst yarıda — hedef tutturulmuş. Çarpıntı ve ısı intoleransı yakınmaları hafif olmakla birlikte, sT4'ün üst sınırı aşmamasına dikkat edilmeli; mevcut doz uygun.",
       "secenekAciklamalari": {
         "A": "YANLIŞ — Bu, santral hipotiroidide en sık yapılan hatadır. TSH'ı 0.4–4.0 aralığına getirmeye çalışmak, LT4 dozunu gereğinden fazla azaltmak demektir; hasta yetersiz tedavi alır. TSH santral hipotiroidide geçerli bir izlem parametresi değildir.",
         "B": "YANLIŞ — Santral hipotiroidide TSH takip parametresi olarak kullanılmaz; 0.1–1.0 mU/L hedef aralığı gibi bir öneri kılavuzlarda yer almaz. Tek güvenilir izlem parametresi sT4'tür.",
@@ -91,7 +91,7 @@
         "Sheehan Sendromu"
       ],
       "zorluk": "orta",
-      "kaynak": "Persani et al. Eur J Endocrinol 2018; Endocrine Society Guidelines 2021"
+      "kaynak": "Persani et al. Eur Thyroid J 2018 (ETA kılavuzu); Endocrine Society Guidelines 2021"
     },
     {
       "id": "s4",
@@ -120,7 +120,7 @@
         "TSH Paradoksu"
       ],
       "zorluk": "orta",
-      "kaynak": "Persani et al. Eur J Endocrinol 2018"
+      "kaynak": "Persani et al. Eur Thyroid J 2018 (ETA kılavuzu)"
     },
     {
       "id": "s5",
@@ -150,7 +150,7 @@
         "irAE"
       ],
       "zorluk": "orta",
-      "kaynak": "Ryder et al. J Clin Endocrinol Metab 2014; Persani et al. Eur J Endocrinol 2018"
+      "kaynak": "Ryder et al. J Clin Endocrinol Metab 2014; Persani et al. Eur Thyroid J 2018 (ETA kılavuzu)"
     },
     {
       "id": "s6",
@@ -180,7 +180,7 @@
         "TSH Kullanılmaz"
       ],
       "zorluk": "zor",
-      "kaynak": "Persani et al. Eur J Endocrinol 2018; Alexander et al. Thyroid 2017"
+      "kaynak": "Persani et al. Eur Thyroid J 2018 (ETA kılavuzu); Alexander et al. Thyroid 2017"
     },
     {
       "id": "s7",
@@ -210,24 +210,24 @@
         "YBÜ"
       ],
       "zorluk": "orta",
-      "kaynak": "Economidou et al. Hormones 2011; Persani et al. Eur J Endocrinol 2018"
+      "kaynak": "Economidou et al. Hormones 2011; Persani et al. Eur Thyroid J 2018 (ETA kılavuzu)"
     },
     {
       "id": "s8",
       "metin": "45 yaşında erkek hasta; 2 yıl önce geçirilmiş makroadenom rezeksiyonu ve radyoterapi öyküsü nedeniyle hipopitüiterizm ve sekonder (santral) hipotiroidizm tanısıyla levotiroksin (L-T4) replasman tedavisi altındadır. Rutin kontrollerinde serum TSH: <0.01 mU/L (baskılı) ve otomatize serbest T4: 2.1 ng/dL (yüksek, normal aralık: 0.8–1.8 ng/dL) olarak saptanıyor. Hasta klinik olarak hafif çarpıntı ve tremor tanımlamaktadır.\n\nYetişkinlerde anormal tiroid fonksiyon testlerinin (yüksek serbest T4 ve anormal TSH) laboratuvar yorumlanması, spesifik hasta gruplarında (santral hipotiroidizm, gebelik, biyotin kullanımı) izlem ilkeleri ve doz ayarlama stratejileri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
         "A": "Yüksek doz biyotin (5–10 mg/gün) takviyesi alan bireylerde biyotinile antikor içeren immünölçüm yöntemlerine ikincil yalancı TSH düşüklüğü ve serbest T4 yüksekliği saptandığında, ilacın kesilmesinden 12 saat sonra testlerin tekrarlanması güvenilir sonuç almak için yeterlidir.",
-        "B": "Santral (sekonder) hipotiroidizm tanılı hastalarda levotiroksin replasman tedavisinin izlemi ve doz ayarlaması serum TSH düzeyi ile yapılamaz; çünkü serum serbest T4 düzeyini normale getiren dozlarda TSH hastaların neredeyse tamamında <0.1 mU/L seviyesine baskılanır. Tedavinin takibi klinik semptomlar ve serum serbest T4 düzeyini normal referans aralığının orta-üst yarısında (slightly higher than mid-normal) tutacak şekilde yapılmalıdır.",
+        "B": "Santral (sekonder) hipotiroidizm tanılı hastalarda levotiroksin replasman tedavisinin izlemi ve doz ayarlaması serum TSH düzeyi ile yapılamaz; çünkü TSH salgısı zaten bozuktur ve serum serbest T4 düzeyini normale getiren dozlarda TSH çoğu hastada düşük ya da baskılı (sıklıkla <0.1 mU/L) kalır. Tedavinin takibi klinik semptomlar ve serum serbest T4 düzeyini normal referans aralığının orta-üst yarısında (slightly higher than mid-normal) tutacak şekilde yapılmalıdır.",
         "C": "Primer hipotiroidi nedeniyle takip edilen bir hastada TSH <0.05 mU/L ve serbest T4 seviyesi referans ortalamasının iki katı (örneğin 2.8 ng/dL) saptandığında levotiroksin dozu %12–25 oranında azaltılmalı ve TSH 2 hafta sonra kontrol edilmelidir.",
         "D": "Yüksek serbest T4 ile birlikte serum TSH düzeyinin normal (baskılanmamış) veya yüksek saptandığı durumlarda ayırıcı tanıda öncelikle Graves hastalığı ve toksik multinodüler guatr düşünülmeli; TSH salgılayan hipofiz adenomu (TSHoma) seçeneği kesin olarak dışlanmalıdır.",
         "E": "Gebelerde 2. ve 3. trimesterda serum serbest T4 immünölçüm yöntemleri bağlayıcı protein değişimlerinden kesinlikle etkilenmez; bu nedenle TSH ile serbest T4 arasında uyumsuzluk saptandığında total T4 ölçümü yapılması gereksiz ve kontrendikedir."
       },
       "dogru": "B",
-      "aciklama_kisa": "Santral hipotiroidizmde TSH izlem parametresi olamaz: sT4'ü normale getiren dozlarda TSH neredeyse tüm hastalarda <0.1 mU/L'ye baskılanır. Titrasyon klinik + sT4'ü normalin orta-üst yarısında tutacak şekilde yapılır.",
-      "aciklama_detay": "Yetişkinlerde yüksek serbest T4 ve anormal TSH profillerinin değerlendirilmesinde, hastanın primer hipertiroidizm, levotiroksin replasmanı, santral hipotiroidizm veya gebelik gibi klinik durumları ile test etkileşimlerinin doğru analizi kritik önem taşır.\n\nHipofiz veya hipotalamus hastalıklarına bağlı santral (sekonder) hipotiroidizm vakalarında levotiroksin replasmanı izlenirken serum TSH düzeyi izlem parametresi olarak kullanılamaz. Serum serbest T4 konsantrasyonunu normal aralığa getiren replasman dozlarında dahi serum TSH düzeyi hastaların neredeyse tamamında <0.1 mU/L seviyesine baskılanır. Bu nedenle tedavinin titrasyonu, hastanın klinik semptomları ve serum serbest T4 düzeyinin normal referans aralığının orta-üst yarısında tutulması hedeflenerek yapılır; serbest T4 yüksek saptandığında L-T4 dozu azaltılmalı ve 6-8 hafta sonra serbest T4 seviyesi yeniden kontrol edilmelidir.",
+      "aciklama_kisa": "Santral hipotiroidizmde TSH izlem parametresi olamaz: TSH salgısı bozuktur ve sT4'ü normale getiren dozlarda TSH çoğu hastada düşük ya da baskılı kalır. Titrasyon klinik + sT4'ü normalin orta-üst yarısında tutacak şekilde yapılır.",
+      "aciklama_detay": "Yetişkinlerde yüksek serbest T4 ve anormal TSH profillerinin değerlendirilmesinde, hastanın primer hipertiroidizm, levotiroksin replasmanı, santral hipotiroidizm veya gebelik gibi klinik durumları ile test etkileşimlerinin doğru analizi kritik önem taşır.\n\nHipofiz veya hipotalamus hastalıklarına bağlı santral (sekonder) hipotiroidizm vakalarında levotiroksin replasmanı izlenirken serum TSH düzeyi izlem parametresi olarak kullanılamaz. Serum serbest T4 konsantrasyonunu normal aralığa getiren replasman dozlarında dahi serum TSH düzeyi çoğu hastada düşük ya da baskılı (sıklıkla <0.1 mU/L) kalır; TSH salgısı zaten bozuk olduğundan doz göstergesi değildir. Bu nedenle tedavinin titrasyonu, hastanın klinik semptomları ve serum serbest T4 düzeyinin normal referans aralığının orta-üst yarısında tutulması hedeflenerek yapılır; serbest T4 yüksek saptandığında L-T4 dozu azaltılmalı ve 6-8 hafta sonra serbest T4 seviyesi yeniden kontrol edilmelidir.",
       "secenekAciklamalari": {
         "A": "YANLIS — Reçetesiz satılan ve yüksek doz biyotin (5-10 mg) içeren takviyeler, biyotinillenmiş antikor kullanan ticari immünölçüm kitlerinde etkileşime yol açarak yalancı TSH düşüklüğü ve yalancı serbest T4/T3 yüksekliği oluşturur. Bu etkileşimin ortadan kalkması için tiroid testleri biyotin takviyesi kesildikten en az 2 gün (48 saat) sonra tekrarlanmalıdır; 12 saat yetersizdir.",
-        "B": "DOGRU — Santral hipotiroidizmde sT4'ü normale getiren dozlarda TSH neredeyse tüm hastalarda <0.1 mU/L'ye baskılanır; titrasyon klinik semptomlar ve sT4'ü normalin orta-üst yarısında tutacak şekilde yapılır.",
+        "B": "DOGRU — Santral hipotiroidizmde TSH salgısı bozuktur; sT4'ü normale getiren dozlarda TSH çoğu hastada düşük ya da baskılı kalır ve izlemde kullanılmaz; titrasyon klinik semptomlar ve sT4'ü normalin orta-üst yarısında tutacak şekilde yapılır.",
         "C": "YANLIS — Primer hipotiroidi takibinde serbest T4 belirgin şekilde yüksekse (referans ortalamasının yaklaşık 2 katı), levotiroksin dozunun hafif azaltılması (%12-25) yetersiz kalır; dozun yaklaşık %50 oranında azaltılması gerekebilir. Doz ayarlaması sonrasında kontrol 2 hafta sonra değil, doku dengelenmesi için 6 ila 8 hafta sonra yapılmalıdır.",
         "D": "YANLIS — Yüksek serbest T4 ile birlikte serum TSH'nin baskılanmamış veya yüksek saptanması durumunda primer hipertiroidi (Graves veya toksik MNG) düşünülmez (primer hipertiroidide TSH tam baskılıdır). Bu tabloda ayırıcı tanıda TSHoma, Tiroid Hormonu Direnci (RTH), erken dönem amiodaron kullanımı veya immünölçüm interferansları (heterofil antikorlar) yer alır.",
         "E": "YANLIS — Gebeliğin 2. ve 3. trimesterlarında bağlayıcı proteinlerdeki (özellikle TBG) belirgin değişimler nedeniyle otomatize direkt serbest T4 immünölçümleri güvensiz sonuçlar verebilir. Serbest T4 ile TSH ölçümleri arasında uyumsuzluk saptandığında, gebelikteki gerçek tiroid durumunu değerlendirmek için Total T4 düzeyinin de ölçülmesi önerilmektedir."
