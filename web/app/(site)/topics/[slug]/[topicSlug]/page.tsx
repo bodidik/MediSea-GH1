@@ -12,6 +12,8 @@ import { basliklariDuzenle, bolumKimlikleri } from "@/app/lib/baslik";
 import { tabloKaydir } from "@/app/lib/tablo";
 import KaydirDurumu from "@/app/components/KaydirDurumu";
 import BasaDon from "@/app/components/BasaDon";
+import RotaCizgisi from "@/app/components/RotaCizgisi";
+import { DalgaCizgisi, DumenSimgesi } from "@/app/components/DenizSusu";
 import { gorunurlukRozeti } from "@/app/lib/gorunurluk";
 import { premiumBransSlug } from "@/lib/premium-brans";
 import { kisaltmaAc } from "@/app/lib/kisaltma";
@@ -648,7 +650,7 @@ export default async function TopicDetailPage({
                   year: "numeric",
                 });
                 return yazi ? (
-                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                  <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
                     Güncelleme: {yazi}
                   </div>
                 ) : null;
@@ -662,7 +664,7 @@ export default async function TopicDetailPage({
                   <h2 className="text-xs font-black text-blue-950 uppercase tracking-[0.2em]">
                     Alt Başlıklar
                   </h2>
-                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                  <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
                     {hubChildren.length} kategori
                   </span>
                 </div>
@@ -707,14 +709,15 @@ export default async function TopicDetailPage({
               >
                 <h2
                   id="icindekiler-basligi"
-                  className="font-sans mt-0 text-[10px] font-black text-blue-900/80 uppercase tracking-[0.2em] mb-3"
+                  className="font-sans mt-0 text-[11px] font-black text-blue-900/80 uppercase tracking-[0.2em] mb-3 flex items-center gap-1.5"
                 >
+                  <DumenSimgesi className="h-4 w-4 shrink-0 text-blue-900" />
                   Bu sayfada
                 </h2>
                 <ol className="grid gap-x-6 gap-y-1.5 sm:grid-cols-2">
                   {topicItem.sections.map((section: any, idx: number) => (
                     <li key={idx} className="flex gap-2 text-sm leading-snug">
-                      <span aria-hidden="true" className="text-blue-300 font-black tabular-nums">
+                      <span aria-hidden="true" className="text-sky-600/70 font-black tabular-nums">
                         {String(idx + 1).padStart(2, "0")}
                       </span>
                       <a
@@ -733,6 +736,7 @@ export default async function TopicDetailPage({
                 Olculdu: 375px'te 14 kabin 13'u tasiyor ve hicbir gorsel ipucu yoktu. */}
             <KaydirDurumu />
             <BasaDon />
+            <RotaCizgisi />
 
             {/* data-readable: ReadingTools bu konteyner içindeki seçimleri
                 vurgulanabilir kabul eder (yönetici editörü hariç tutulur)
@@ -809,7 +813,7 @@ export default async function TopicDetailPage({
 
               {topicItem.summary && (
                 <div className="text-lg text-slate-700 font-medium leading-relaxed bg-blue-50/40 p-6 rounded-3xl border-l-4 border-blue-300">
-                  <span className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.3em] block mb-2">Hızlı Özet</span>
+                  <span className="text-[11px] font-black text-blue-900/80 uppercase tracking-[0.2em] block mb-2">Hızlı Özet</span>
                   <div className="whitespace-pre-wrap">{topicItem.summary}</div>
                 </div>
               )}
@@ -850,7 +854,7 @@ export default async function TopicDetailPage({
                       <h2
                         id={bolumKimligi[idx]}
                         tabIndex={-1}
-                        className="focus:outline-none text-2xl font-black text-blue-950 mb-5 border-b-2 border-slate-100 pb-3 flex items-center gap-3"
+                        className="focus:outline-none text-2xl font-black text-blue-950 mb-2 flex items-center gap-3"
                       >
                         {/*
                           Süsleme: ekran okuyucu bunu "kare" diye okuyup her
@@ -861,6 +865,10 @@ export default async function TopicDetailPage({
                         */}
                         <span className="text-blue-200" aria-hidden="true">#</span>{section.heading}
                       </h2>
+                      {/* Dalga ayracı — eski düz alt çizginin yerine. Metin
+                          düğümü TAŞIMIYOR (yalnız çizim), yani okuma kabındaki
+                          vurguların karakter ofsetleri kaymaz. */}
+                      <DalgaCizgisi className="mb-5 text-sky-200" />
                       {/* `ms-olcu` — ÖLÇÜ BLOKTA, KAPTA DEĞİL.
                           Üst genişlik bir dönem SÜTUNA veriliyordu (35rem);
                           satır 70 karakterde kalıyordu ama ŞEMA ve TABLO da
@@ -893,7 +901,7 @@ export default async function TopicDetailPage({
               >
                 <h2
                   id="kaynaklar-basligi"
-                  className="font-sans mt-0 text-[10px] font-black text-blue-900/80 uppercase tracking-[0.2em] mb-3"
+                  className="font-sans mt-0 text-[11px] font-black text-blue-900/80 uppercase tracking-[0.2em] mb-3"
                 >
                   Kaynaklar
                 </h2>
@@ -998,12 +1006,12 @@ export default async function TopicDetailPage({
                           <span className="leading-tight">
                             {k.baslik}
                             {k.brans !== slug && (
-                              <span className="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mt-0.5">
+                              <span className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mt-0.5">
                                 {getSpecialty(k.brans)?.title || k.brans}
                               </span>
                             )}
                             {ilgiliAdCakisiyor(k) && (
-                              <span className="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mt-0.5">
+                              <span className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mt-0.5">
                                 {k.slug}
                               </span>
                             )}
@@ -1032,7 +1040,7 @@ export default async function TopicDetailPage({
               <Link href={premiumHedef} data-baskida-gizle className="block bg-gradient-to-br from-blue-950 to-slate-900 rounded-[2rem] p-8 border border-slate-800 shadow-xl text-white relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1 transition-all">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition-all"></div>
 
-                <span className="text-[10px] font-black text-amber-400 uppercase tracking-[0.3em] mb-4 block">
+                <span className="text-[11px] font-black text-amber-400 uppercase tracking-[0.25em] mb-4 block">
                   MediSea Premium
                 </span>
 

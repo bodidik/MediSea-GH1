@@ -28,7 +28,7 @@
       "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">2026 ACC/AHA Kılavuzu, SAMS hastalarında sekonder nedenler dışlandıktan sonra bu kombinasyonu ön saflara yerleştirmiştir:</p><div class=\"flex flex-col gap-3\"><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase tracking-widest mb-2\">Sekonder Koruma (Klinik ASCVD Var)</h4><p class=\"text-[11.5px] text-rose-800 leading-relaxed\">Sıfır statin veya maksimum tolere doza rağmen hedeflere (LDL-K <55 mg/dL ve non-HDL-K <85 mg/dL) ulaşılamıyorsa, MACE riskini azaltmak için Ezetimib ve Bempedoik Asit eklenmesi <strong>Sınıf 1 ve Sınıf 2a</strong> düzeyinde önerilir.</p></div><div class=\"bg-indigo-50 border-l-4 border-indigo-500 p-4 shadow-sm\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase tracking-widest mb-2\">Primer Koruma (ASCVD Yok)</h4><p class=\"text-[11.5px] text-indigo-800 leading-relaxed\">PREVENT skoru ≥%10, Diyabeti olan veya CAC skoru ≥300 AU olan yüksek riskli SAMS hastalarında LDL-K <70 mg/dL hedefine ulaşmak için Bempedoik Asit ve/veya Ezetimib eklenmesi <strong>kesin endikedir (Sınıf 1).</strong></p></div></div>"
     },
     {
-      "heading": "📌 YDUS Klinik Paket: Neden Sabit Doz?",
+      "heading": "📌 Klinik Paket: Neden Sabit Doz?",
       "html": "<div class=\"bg-slate-800 p-5 rounded-2xl shadow-xl text-center\"><p class=\"text-xs text-slate-300 leading-relaxed\">Sabit doz kombinasyon haplarının (Fixed-Dose Combination) varlığı, çoklu ilaç kullanması (polifarmasi) gereken bu kırılgan hasta grubunda <strong>hasta uyumunu (adherence) dramatik olarak artırarak</strong> laboratuvar ortamındaki klinik etkinliği gerçek hayatta (real-world) maksimize eder.</p></div>"
     }
   ]

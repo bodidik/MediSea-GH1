@@ -3,7 +3,7 @@ import { SPECIALTIES, CATEGORY_ORDER, CATEGORY_META } from "@/app/lib/specialtie
 import { getTopicCounts, getToolCount } from "@/app/lib/topic-counts";
 import StudyStatus from "@/app/components/StudyStatus";
 import KurumRozeti from "@/app/components/KurumRozeti";
-import { HeroDenizi } from "@/app/components/DenizSusu";
+import { SabahDenizi } from "@/app/components/DenizSusu";
 import { kisimAdlari } from "@/lib/icindekiler";
 
 /**
@@ -46,22 +46,25 @@ export default async function Home() {
       <div className="flex flex-col lg:flex-row lg:min-h-[calc(100vh-64px)]">
 
         {/* ── SOL: HERO ───────────────────────────────────── */}
-        <section className="relative overflow-hidden bg-blue-950 lg:w-[380px] xl:w-[420px] shrink-0 flex flex-col justify-center">
-          {/* Dekoratif glow */}
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-indigo-700/40 blur-3xl" />
-            <div className="absolute -bottom-16 -left-16 w-64 h-64 rounded-full bg-blue-900/60 blur-3xl" />
+        {/* SABAH DENİZİ (27 Eyl 2026, kullanıcı kararı): bir dönem lacivert
+            "gece" paneliydi. Kullanıcı "sabah güneşli, gece ya da derin değil"
+            dedi; zemin açık gökyüzünden ufuktaki ılık tona iniyor, dipte
+            pastel deniz bandı. Açık zemin olduğu için yazılar lacivert ve
+            ikincil metin slate-600 — kontrast tabanı açık zemini varsayıyor. */}
+        <section className="hero-sabah relative overflow-hidden bg-gradient-to-b from-sky-100 via-sky-50 to-amber-50 border-b border-sky-100 lg:border-b-0 lg:border-r lg:w-[380px] xl:w-[420px] shrink-0 flex flex-col justify-center">
+          {/* sabah güneşinin ılık ışığı — sağ altta, ufkun üstünde */}
+          <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
+            <div className="absolute -bottom-10 -right-16 w-72 h-72 rounded-full bg-amber-200/40 blur-3xl" />
           </div>
-          {/* Martılar ve dipte iki soluk dalga — eski ızgara deseninin yerine */}
-          <HeroDenizi />
+          <SabahDenizi />
 
-          <div className="relative px-6 xl:px-8 py-8 lg:py-10">
-            {/* Badge'ler */}
+          <div className="relative px-6 xl:px-8 pt-8 pb-28 lg:pt-8 lg:pb-24">
+            {/* Rozetler. Bir dönem burada bir "Premium YDUS" bağlantısı daha vardı
+                ve altta üçlü bir bağlantı ızgarası duruyordu: aynı panelde
+                premium ÜÇ, araçlar İKİ kez bağlanıyordu (kullanıcı: "ana sayfa
+                kafa karıştırıcı"). Her hedefe tek bağlantı: aşağıdaki düğmeler. */}
             <div className="flex flex-wrap gap-2 mb-5">
-              <span className="rounded-full bg-white/10 text-white/60 border border-white/15 px-2.5 py-1 text-[9px] font-black uppercase tracking-widest">Beta</span>
-              <Link href="/tr/premium/ydus" className="rounded-full bg-yellow-400 text-blue-950 px-2.5 py-1.5 text-[9px] font-black uppercase tracking-widest hover:bg-yellow-300 transition-all">
-                PREMIUM YDUS ⚓
-              </Link>
+              <span className="rounded-full bg-white/80 text-slate-600 border border-slate-200 px-2.5 py-1 text-[11px] font-black uppercase tracking-widest">Beta</span>
               <KurumRozeti />
             </div>
 
@@ -69,11 +72,11 @@ export default async function Home() {
             {/* Harfler BÜYÜK YAZILIYOR, `uppercase` ile büyütülmüyor: sayfa dili
                 Türkçe (lang="tr") olduğu için CSS büyütmesi "i" harfini "İ"ye
                 çeviriyor ve marka adı ekranda "MEDİSEA" görünüyordu. */}
-            <h1 className="text-4xl xl:text-5xl font-black text-white mb-3 italic tracking-tighter leading-[0.9]">
-              MEDI<span className="not-italic">SEA</span>{" "}
-              <span className="text-yellow-400 not-italic block">AKADEMİ</span>
+            <h1 className="text-4xl xl:text-5xl font-black text-blue-950 mb-3 italic tracking-tighter leading-[0.9]">
+              <span className="text-blue-700">MEDI</span><span className="not-italic">SEA</span>{" "}
+              <span className="text-amber-700 not-italic block">AKADEMİ</span>
             </h1>
-            <p className="text-sm leading-relaxed text-blue-200/75 mb-6 font-medium">
+            <p className="text-[15px] leading-relaxed text-slate-700 mb-6 font-medium">
               İç hastalıkları asistanları ve uzmanları için klinik karar desteği, güncel konu anlatımları ve YDUS hazırlık platformu.
             </p>
 
@@ -81,20 +84,20 @@ export default async function Home() {
             <div className="flex flex-col gap-2 mb-7">
               <Link
                 href="/tr/premium/ydus"
-                className="text-center bg-yellow-400 text-blue-950 text-xs font-black uppercase tracking-widest px-6 py-2.5 rounded-full hover:bg-yellow-300 transition-all shadow-lg shadow-yellow-400/20 active:scale-95"
+                className="text-center bg-yellow-400 text-blue-950 border border-yellow-500 text-xs font-black uppercase tracking-widest px-6 py-3 rounded-full hover:bg-yellow-300 transition-all shadow-md shadow-amber-300/30 active:scale-95"
               >
                 ⚓ PREMIUM YDUS
               </Link>
               <div className="flex gap-2">
                 <Link
                   href="/tools"
-                  className="flex-1 text-center bg-white/10 border border-white/20 text-white text-xs font-black uppercase tracking-widest px-4 py-2.5 rounded-full hover:bg-white/20 transition-all active:scale-95"
+                  className="flex-1 text-center bg-white/80 border border-blue-900/20 text-blue-950 text-xs font-black uppercase tracking-widest px-4 py-3 rounded-full hover:bg-white transition-all active:scale-95"
                 >
                   Hesaplayıcılar
                 </Link>
                 <Link
                   href="#branslar"
-                  className="flex-1 text-center bg-white/10 border border-white/20 text-white text-xs font-black uppercase tracking-widest px-4 py-2.5 rounded-full hover:bg-white/20 transition-all active:scale-95 lg:hidden"
+                  className="flex-1 text-center bg-white/80 border border-blue-900/20 text-blue-950 text-xs font-black uppercase tracking-widest px-4 py-3 rounded-full hover:bg-white transition-all active:scale-95 lg:hidden"
                 >
                   Branşlar ↓
                 </Link>
@@ -102,38 +105,19 @@ export default async function Home() {
             </div>
 
             {/* İstatistik barı */}
-            <div className="flex items-center divide-x divide-white/10 bg-white/5 border border-white/10 rounded-xl overflow-hidden">
+            <div className="flex items-center divide-x divide-sky-100 bg-white/75 border border-sky-100 rounded-xl overflow-hidden">
               <div className="flex-1 text-center py-3">
-                <div className="text-xl font-black text-white leading-none">{totalBranches}</div>
-                <div className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-0.5">Branş</div>
+                <div className="text-xl font-black text-blue-950 leading-none">{totalBranches}</div>
+                <div className="text-[11px] font-bold text-slate-600 uppercase tracking-wider mt-1">Branş</div>
               </div>
               <div className="flex-1 text-center py-3">
-                <div className="text-xl font-black text-white leading-none">{totalTopics}</div>
-                <div className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-0.5">Konu</div>
+                <div className="text-xl font-black text-blue-950 leading-none">{totalTopics}</div>
+                <div className="text-[11px] font-bold text-slate-600 uppercase tracking-wider mt-1">Konu</div>
               </div>
               <div className="flex-1 text-center py-3">
-                <div className="text-xl font-black text-white leading-none">{totalTools}</div>
-                <div className="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-0.5">Araç</div>
+                <div className="text-xl font-black text-blue-950 leading-none">{totalTools}</div>
+                <div className="text-[11px] font-bold text-slate-600 uppercase tracking-wider mt-1">Araç</div>
               </div>
-            </div>
-
-            {/* Alt özellik linkleri */}
-            <div className="mt-5 pt-5 border-t border-white/10 grid grid-cols-3 gap-2">
-              {[
-                /* Bu satır GEZİNME, sayaç değil. Sayılar hemen üstteki
-                   istatistik çubuğunda duruyor; burada tekrar edilince hem
-                   "411 konu" iki kez yazılıyor hem de aynı şeye iki ad
-                   veriliyordu: üstte "114 ARAÇ", altta "114 skor". */
-                { icon: "⚓", label: "YDUS", sub: "Soru & kart", href: "/tr/premium/ydus" },
-                { icon: "🧪", label: "Araçlar", sub: "Skor & formül", href: "/tools" },
-                { icon: "🗺️", label: "Konular", sub: "Branşa göre", href: "#branslar" },
-              ].map((f) => (
-                <Link key={f.href} href={f.href} className="group flex flex-col items-center text-center p-2.5 rounded-xl hover:bg-white/10 transition-all">
-                  <span aria-hidden="true" className="text-lg mb-1">{f.icon}</span>
-                  <span className="text-[10px] font-black text-white uppercase tracking-tight">{f.label}</span>
-                  <span className="text-[9px] text-blue-300 mt-0.5">{f.sub}</span>
-                </Link>
-              ))}
             </div>
           </div>
         </section>

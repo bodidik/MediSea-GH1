@@ -44,7 +44,7 @@ export default function KurumRozeti() {
   return (
     <Link
       href="/kayseritip"
-      className="rounded-full bg-indigo-600 text-white px-2.5 py-1.5 text-[9px] font-black uppercase tracking-widest hover:bg-indigo-500 transition-all"
+      className="rounded-full bg-indigo-600 text-white px-2.5 py-1 text-[11px] font-black uppercase tracking-widest hover:bg-indigo-500 transition-all"
     >
       🎓 KayseriTıp
     </Link>

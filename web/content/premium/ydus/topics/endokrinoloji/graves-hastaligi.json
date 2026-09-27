@@ -32,7 +32,7 @@
           "metin": "Graves hastalığı; **tirotropin (TSH) reseptörüne karşı gelişen otoantikorların (TRAb) tiroid bezini uyarmasıyla** karakterize, hipertiroidizmin en sık nedeni olan multisistemik otoimmün bir hastalıktır. Tiroid bezi hiperplazisi (diffüz guatr), **Graves orbitopatisi (GO)**, pretibial miksödem (lokalize dermopati) ve nadiren tiroid akropakisi bu sendromun temel bileşenlerini oluşturur."
         },
         {
-          "metin": "YDUS düzeyinde; **immünopatogenez, orbitopatiye yaklaşım, yeni nesil biyolojik ajanlar (Teprotumumab, Tocilizumab, Rituximab) ve risk skorlamaları (GREAT skoru)** kritik öneme sahiptir."
+          "metin": "Uzmanlık düzeyinde; **immünopatogenez, orbitopatiye yaklaşım, yeni nesil biyolojik ajanlar (Teprotumumab, Tocilizumab, Rituximab) ve risk skorlamaları (GREAT skoru)** kritik öneme sahiptir."
         }
       ]
     },
@@ -42,7 +42,7 @@
       "kolonlar": [
         "Bileşen",
         "Detay",
-        "YDUS Notu"
+        "Klinik Not"
       ],
       "satirlar": [
         {
@@ -515,7 +515,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Graves 8 Altın Kural — YDUS Özeti: (1) TRAb: duyarlılık %97.7, özgüllük %99.5 — etiyoloji belirsizse önce ölç. (2) sT3/sT4 > 0.3 → Graves (destrüktif tiroidit değil). (3) Doppler: 'tiroid inferno' = Graves; azalmış kanlanma = Hashimoto. (4) PTU sadece: gebelik 1. trimester, tiroid fırtınası, MMI alerjisi. (5) RAI + aktif GO + sigara → steroid profilaksisi zorunlu. (6) GO tedavisi: Hafif → Se | Orta-Ağır → IVMP (maks 8 g) | DON → acil IVMP + dekompresyon. (7) Teprotumumab: FDA onaylı ilk biyolojik, IGF-1R antagonisti — GO'da egzoftalmusu ve CAS'ı azaltır. (8) Gebelikte TRAb plasentayı geçer → fetal hipertiroidizm; fetal kalp hızı ve guatr USG ile izle."
+      "metin": "Graves 8 Altın Kural — Özet: (1) TRAb: duyarlılık %97.7, özgüllük %99.5 — etiyoloji belirsizse önce ölç. (2) sT3/sT4 > 0.3 → Graves (destrüktif tiroidit değil). (3) Doppler: 'tiroid inferno' = Graves; azalmış kanlanma = Hashimoto. (4) PTU sadece: gebelik 1. trimester, tiroid fırtınası, MMI alerjisi. (5) RAI + aktif GO + sigara → steroid profilaksisi zorunlu. (6) GO tedavisi: Hafif → Se | Orta-Ağır → IVMP (maks 8 g) | DON → acil IVMP + dekompresyon. (7) Teprotumumab: FDA onaylı ilk biyolojik, IGF-1R antagonisti — GO'da egzoftalmusu ve CAS'ı azaltır. (8) Gebelikte TRAb plasentayı geçer → fetal hipertiroidizm; fetal kalp hızı ve guatr USG ile izle."
     }
   ]
 }

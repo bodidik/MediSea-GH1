@@ -119,7 +119,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
-      "metin": "Sınav Spotu — Kalsiyum Mekanizması: Granülomdaki makrofajlar **otonom 1-alfa-hidroksilaz** aktivitesiyle 25-OH D vitaminini aktif forma (1,25-(OH)₂ D — Kalsitriol) aşırı dönüştürür. Karakteristik profil: **PTH↓, 25-OH D↓, 1,25-(OH)₂ D↑, Hiperkalsiüri (%40)** ve hiperkalsemi (%2–20). Nefrokalsinozis ve kronik böbrek yetmezliği yapabilir."
+      "metin": "Kritik Nokta — Kalsiyum Mekanizması: Granülomdaki makrofajlar **otonom 1-alfa-hidroksilaz** aktivitesiyle 25-OH D vitaminini aktif forma (1,25-(OH)₂ D — Kalsitriol) aşırı dönüştürür. Karakteristik profil: **PTH↓, 25-OH D↓, 1,25-(OH)₂ D↑, Hiperkalsiüri (%40)** ve hiperkalsemi (%2–20). Nefrokalsinozis ve kronik böbrek yetmezliği yapabilir."
     },
     {
       "tip": "tablo",
@@ -154,7 +154,7 @@
     {
       "tip": "tablo",
       "baslik": "Tedavi Basamakları",
-      "kolonlar": ["Basamak", "Ajan", "Sınav Spotu"],
+      "kolonlar": ["Basamak", "Ajan", "Kritik Nokta"],
       "satirlar": [
         {
           "renk": "mavi",

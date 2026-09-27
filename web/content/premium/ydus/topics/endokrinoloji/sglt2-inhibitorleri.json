@@ -86,7 +86,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Kalpte SGLT2 reseptörü bulunmaz — kardiyoprotektif etki off-target NHE1 inhibisyonu üzerinden gelişir. Böbrekte ise SGLT2–NHE3–MAP17 kompleksi natriürezi güçlendirir. İkisi de farklı NHE izoformları (NHE1 vs NHE3) ve farklı organ mekanizmalarıdır — sınavda karıştırılan kritik bir ayrım."
+      "metin": "Kalpte SGLT2 reseptörü bulunmaz — kardiyoprotektif etki off-target NHE1 inhibisyonu üzerinden gelişir. Böbrekte ise SGLT2–NHE3–MAP17 kompleksi natriürezi güçlendirir. İkisi de farklı NHE izoformları (NHE1 vs NHE3) ve farklı organ mekanizmalarıdır — sık karıştırılan kritik bir ayrım."
     },
     {
       "tip": "tablo",
@@ -133,7 +133,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
-      "metin": "EMPACT-MI/DAPA-MI Kritik Ayrım: Post-AMI SGLT2i başlanması iskemik/aterotrombotik MACE'i (tekrar Mİ, inme, KV ölüm) AZALTMAZ. Fayda spesifik olarak kalp yetersizliği gelişimini/hastaneye yatışını önlemekle sınırlıdır — 'antiiskemik' değil 'antiremodeling' bir etkidir. Sınavda 'post-Mİ SGLT2i MACE'i azaltır mı?' sorusuna dikkat."
+      "metin": "EMPACT-MI/DAPA-MI Kritik Ayrım: Post-AMI SGLT2i başlanması iskemik/aterotrombotik MACE'i (tekrar Mİ, inme, KV ölüm) AZALTMAZ. Fayda spesifik olarak kalp yetersizliği gelişimini/hastaneye yatışını önlemekle sınırlıdır — 'antiiskemik' değil 'antiremodeling' bir etkidir. 'Post-Mİ SGLT2i MACE'i azaltır mı?' sorusuna dikkat."
     },
     {
       "tip": "tablo",
