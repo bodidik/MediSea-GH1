@@ -142,7 +142,7 @@ export default async function PearlsPage({
     }
 
     // 5. Veriyi o mükemmel PearlsViewer arayüzüne iletiyoruz
-    return <PearlsViewer data={data} />;
+    return <PearlsViewer data={data} konuHref={`/${lang}/premium/ydus/${branch}/${id}`} />;
   } catch (error) {
     console.error("İnciler veri okuma hatası:", error);
     return (

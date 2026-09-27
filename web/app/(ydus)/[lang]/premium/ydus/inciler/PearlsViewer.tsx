@@ -20,8 +20,23 @@ type PearlsData = {
   pearls: Pearl[];
 };
 
-export default function PearlsViewer({ data }: { data: PearlsData }) {
+export default function PearlsViewer({ data, konuHref }: { data: PearlsData; konuHref: string }) {
   const [searchTerm, setSearchTerm] = useState('');
+
+  /**
+   * Arama örneği SETİN KENDİ etiketlerinden — sabit yazılıydı ("Acil, ATRA,
+   * Diferansiyasyon") ve 20 setin çoğunda hiçbir inciyi bulmuyordu (ATRA
+   * yalnızca AML'de geçer). İlk iki farklı etiket, kısa olanlar.
+   */
+  const aramaOrnegi = useMemo(() => {
+    const gorulen = new Set<string>();
+    for (const p of data.pearls) {
+      const t = (p.trigger || '').trim();
+      if (t && t.length <= 24 && !gorulen.has(t)) gorulen.add(t);
+      if (gorulen.size === 2) break;
+    }
+    return [...gorulen].join(', ');
+  }, [data.pearls]);
 
   // 100k Trafik Optimizasyonu: Canlı Arama Filtresi (useMemo ile zırhlandı)
   // Bu sayede kullanıcı her harf yazdığında tüm listeyi baştan hesaplamak yerine,
@@ -59,7 +74,9 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 py-8 px-4 sm:px-8 font-sans text-slate-100">
+    // koyu-yuzey: yüzey baştan sona koyu; global ikincil-metin koyulaştırması
+    // (açık zemin varsayar) sayacı 2.36 kontrasta düşürüyordu — ölçüldü.
+    <div className="koyu-yuzey min-h-screen bg-slate-950 py-8 px-4 sm:px-8 font-sans text-slate-100">
       <div className="max-w-4xl mx-auto flex flex-col gap-6">
         
         {/* ÜST BİLGİ VE ARAMA ÇUBUĞU */}
@@ -77,12 +94,14 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
                 {data.topic}
               </h1>
             </div>
-            <Link 
-              href="/tr/premium/ydus"
+            {/* KONUYA DÖNER — panoya ("Köprüüstü", `/tr` sabit) gidiyordu: konudan
+                gelen kullanıcı bağlamını kaybediyordu. Soru ve kart motorlarıyla
+                aynı ad, aynı hedef. */}
+            <Link
+              href={konuHref}
               className="px-5 py-2.5 bg-slate-950 hover:bg-slate-800 text-slate-200 rounded-xl font-bold transition-all border border-slate-800 hover:border-blue-500/30 shadow-sm flex items-center gap-2"
             >
-              Köprüüstüne Dön
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              <span aria-hidden="true">←</span> Konuya dön
             </Link>
           </div>
 
@@ -91,7 +110,7 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
             <input
               type="text"
               aria-label="Notlarda ara"
-              placeholder="Sızdırılan notlarda ara (Örn: Acil, ATRA, Diferansiyasyon...)"
+              placeholder={aramaOrnegi ? `İncilerde ara (ör. ${aramaOrnegi})` : 'İncilerde ara'}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-12 pr-4 py-4 bg-slate-950/50 border border-slate-700/50 rounded-xl focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition-all text-slate-200 font-medium placeholder-slate-500 shadow-inner"
@@ -101,11 +120,14 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
           {/* Süzme sonucu — arama yazarken liste sessizce değişiyordu.
               Bölge ilk render'dan itibaren DOM'da duruyor: role="status"
               sonradan EKLENEN düğümü değil, içeriği DEĞİŞEN düğümü duyurur. */}
-          <div role="status" aria-live="polite" className="sr-only">
-            {searchTerm
-              ? `${filteredPearls.length} not bulundu.`
-              : `${data.pearls.length} not listeleniyor.`}
-          </div>
+          {/* Sayaç GÖRÜNÜR — yalnızca ekran okuyucuya söyleniyordu; gören
+              kullanıcı 100 incilik setin boyunu da, aramanın kaç sonuç
+              verdiğini de bilmiyordu. Aynı bölge ikisini de taşır. */}
+          <p role="status" aria-live="polite" className="relative z-10 mt-3 text-xs font-semibold text-slate-400">
+            {searchTerm.trim()
+              ? `${data.pearls.length} incinin ${filteredPearls.length} tanesi aramayla eşleşiyor`
+              : `${data.pearls.length} inci`}
+          </p>
         </div>
 
         {/* İNCİLER LİSTESİ */}
@@ -134,9 +156,10 @@ export default function PearlsViewer({ data }: { data: PearlsData }) {
                     </div>
 
                     <div>
-                      <h3 className="text-lg font-bold text-slate-100 mb-2 group-hover:text-blue-400 transition-colors leading-snug">
+                      {/* h2: sayfada h1'den sonra h2 yoktu, inci başlıkları h3'e atlıyordu. */}
+                      <h2 className="text-lg font-bold text-slate-100 mb-2 group-hover:text-blue-400 transition-colors leading-snug">
                         {pearl.title}
-                      </h3>
+                      </h2>
                       {/* data-readable: her inci kendi kimliğiyle vurgulanabilir.
                           Arama filtresi listeyi değiştirse de vurgular inciye yapışık kalır. */}
                       {/* Boyut BURADA veriliyor: globals.css'teki okuma tabanı
