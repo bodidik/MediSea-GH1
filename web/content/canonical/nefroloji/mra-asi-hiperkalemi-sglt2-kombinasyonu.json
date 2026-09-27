@@ -1,0 +1,41 @@
+{
+  "title": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu",
+  "meta": {
+    "kaynakca": "aldosteron",
+    "updatedAt": "27 Eyl 2026",
+    "tags": [
+      "Nefroloji",
+      "Hiperkalemi",
+      "Finerenon",
+      "Aldosteron Sentaz İnhibitörü",
+      "SGLT2 İnhibitörü",
+      "Kardiyorenal Koruma",
+      "EASi-KIDNEY",
+      "CONFIDENCE"
+    ],
+    "parent": "aldosteron-mekanizmalari",
+    "order": 20
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Aldosteron antagonistleri (özellikle yeni nesil non-steroidal MRA olan finerenon) ve Aldosteron Sentaz İnhibitörleri (ASI), kardiyovasküler ve renal korumada devrim yaratırken her iki grubun da en kritik ortak klinik kısıtlılığı hiperkalemi (kanda yüksek potasyum) riskidir. Ancak bu ilaçların SGLT2 inhibitörleri (dapagliflozin, empagliflozin vb.) ile kombine edilmesi, potasyum dengesini koruma ve tedavi güvenliğini artırmada güçlü bir sinerji sunmaktadır.</p>"
+    },
+    {
+      "heading": "1. Finerenon ve ASI Tedavilerinde Potasyum Dengesi ve Hiperkalemi Riski",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Finerenon (ns-MRA):</strong> Mineralokortikoid reseptörünü (MR) seçici olarak bloke ederek apikal epitel sodyum kanallarının (ENaC) ve bazolateral Na<sup>+</sup>/K<sup>+</sup>-ATPase pompalarının ekspresyonunu baskılar. Bu durum sodyum emilimini azaltırken idrara potasyum sekresyonunu durdurur. FIDELIO-DKD, FIGARO-DKD ve FINEARTS-HF gibi büyük Faz III klinik çalışmalarda finerenonun plaseboya kıyasla hiperkalemi insidansını belirgin şekilde artırdığı gösterilmiştir. Ancak non-steroidal yapısı ve dengeli doku dağılımı sayesinde bu risk, geleneksel steroidal MRA'lara (spironolakton) kıyasla klinik olarak daha yönetilebilirdir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Aldosteron Sentaz İnhibitörleri (ASI - Vicadrostat, Baxdrostat, Lorundrostat):</strong> CYP11B2 enzimini baskılayarak doğrudan adrenal aldosteron üretimini ve plazma düzeylerini düşürür. Dolaşımdaki aldosteronun azalması, toplayıcı kanallardaki sodyum emilimini ve potasyum atılımını durdurarak doza bağımlı potasyum yükselmesine ve hiperkalemiye yol açar. BrigHTN ve Target-HTN çalışmalarında ağır hiperkalemi (≥ 6.0 mmol/L) insidansı düşük oranlarda (%1.3 - 3.6) bildirilmiştir.</li></ul></div>"
+    },
+    {
+      "heading": "2. SGLT2 İnhibitörlerinin Anti-Hiperkalemik Etkisi ve Kombinasyon Sinerjisi",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">SGLT2 inhibitörleri, proksimal tübülde sodyum ve glukoz geri emilimini engelleyerek distale ulaşan sodyum ve sıvı yükünü artırır. Distal nefrondaki bu artmış tübüler akış hızı ve sodyum teslimi, tübül hücrelerinden idrara potasyum atılımını (kaliürez) uyarır.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Bu fizyolojik etki mekanizması sayesinde MRA veya ASI ile SGLT2i kombinasyonu iki temel avantaj sağlar:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">1. <strong>Tamamlayıcı Kardiyorenal Koruma:</strong> SGLT2 inhibitörleri baskın olarak hemodinamik ve metabolik yolları hedeflerken; MRA ve ASI'ler inflamatuar ve fibrotik yolları baskılar. Kombinasyon, albüminüri azalmasında ve eGFR korunmasında katlanarak (additif) artan bir koruma kalkanı oluşturur.</li><li class=\"bg-slate-50 p-2 rounded\">2. <strong>Hiperkalemi Riskinde Belirgin Düşüş:</strong> SGLT2 inhibitörlerinin indüklediği potasyum atılımı, MRA veya ASI'nin neden olduğu potasyum tutulumunu nötralize eder.<ul class=\"mt-1 ml-3 space-y-1 list-none\"><li>– <strong>ROTATE-3 Çalışması:</strong> Eplerenon tedavisine dapagliflozin eklenmesinin MRA kaynaklı hiperkalemi riskini anlamlı derecede düşürdüğü gösterilmiştir.</li><li>– <strong>FIDELITY Analizi:</strong> FIDELIO ve FIGARO çalışmalarının ortak analizinde, başlangıçta SGLT2i kullanan hastalarda finerenona bağlı hiperkalemi insidansı %10.3 iken, SGLT2i kullanmayanlarda bu oran %14.3 olarak bulunmuştur.</li><li>– <strong>Vicadrostat (BI 690517) Faz II Çalışması:</strong> Vicadrostat tedavisine empagliflozin eklendiğinde albüminüri düşüşü %39.5'e ulaşırken, empagliflozin varlığında vicadrostat'a bağlı serum potasyum yükselmeleri ve şiddetli hiperkalemi oranları belirgin biçimde baskılanmıştır (attenuated).</li></ul></li></ul></div>"
+    },
+    {
+      "heading": "3. Öne Çıkan Güncel Klinik Araştırmalar",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Bu kombinasyon stratejileri güncel kanıta dayalı tıbbın en yoğun araştırılan alanlarından biridir:</p><div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>EASi-KIDNEY Çalışması (NCT06531824):</strong> Oxford Population Health ve Boehringer Ingelheim ortaklığında yürütülen bu uluslararası Faz III çalışmasında, yaklaşık 11.000 kronik böbrek hastası dahil edilmektedir. Çalışma, standart tedavi ve empagliflozin zeminine eklenen ASI vicadrostat (BI 690517) tedavisinin böbrek hastalığı progresyonu, kalp yetmezliği hastaneye yatışları ve kardiyovasküler ölümler üzerindeki uzun dönem sonuçlarını değerlendirmektedir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>CONFIDENCE Çalışması:</strong> Tip 2 diyabetli ve KBH'lı hastalarda empagliflozin + finerenon ikili kombinasyonunun, tek başlarına kullanımlarına kıyasla albüminüri (UACR) azalması ve hiperkalemi güvenliği üzerindeki sinerjik etkilerini araştıran kapsamlı bir Faz III çalışmasıdır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>DAPAFINE ve MIRACLE Çalışmaları:</strong> Dapagliflozin ile finerenon veya balcinrenone (MR modülatörü) kombinasyonlarının KBH ve kalp yetmezliği hastalarındaki ilave renal ve potasyum düzenleyici etkilerini inceleyen diğer önemli klinik araştırmalardır.</li></ul></div>"
+    },
+    {
+      "heading": "Özet",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">SGLT2 inhibitörleri, aldosteron ekseni üzerinden etki gösteren yeni nesil ajanların (finerenon ve ASI) en büyük klinik engeli olan hiperkalemi riskini ortadan kaldıran mekanik bir \"emniyet supabı\" görevi görür. Güncel EASi-KIDNEY ve CONFIDENCE gibi büyük Faz III çalışmaları, bu çoklu blokaj stratejisinin kardiyorenal hastalık yönetiminde yeni standart tedavi (polypill / kombinasyon konsepti) olup olmayacağını netleştirecektir.</p>"
+    }
+  ]
+}

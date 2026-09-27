@@ -42,6 +42,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
+              <Link href="/topics/nefroloji/mra-asi-hiperkalemi-sglt2-kombinasyonu" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu
+              </Link>
+            </li>
+            <li>
               <Link href="/topics/nefroloji/farmakoloji-finerenon" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Yeni Nesil ns-MRA Finerenon
               </Link>
@@ -52,13 +57,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/nefroloji/farmakoloji-potasyum-tutucu-diuretikler" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/nefroloji/liddle-sendromu-mra-etkisizligi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Liddle Sendromunda MRA'ların Etkisizliği ve ENaC İnhibitörleri
+              <Link href="/topics/nefroloji/finerenon-aldosteron-sentaz-inhibitorleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Finerenon ve Aldosteron Sentaz İnhibitörleri: Karşılaştırma
               </Link>
             </li>
           </ul>
