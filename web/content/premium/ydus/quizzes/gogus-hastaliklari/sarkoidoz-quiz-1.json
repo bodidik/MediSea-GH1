@@ -39,20 +39,20 @@
       "metin": "Elli dört yaşında erkek hasta, 6 aydır devam eden öksürük, nefes darlığı ve yorgunluk nedeniyle başvuruyor. Toraks HRCT'de bilateral üst lob ağırlıklı perilenfatik mikronodüller ve mediastinal lenfadenopati izleniyor. Bronkoskopi ile bronkoalveolar lavaj (BAL) yapılıyor.\n\nBAL sonucunda aşağıdaki hangi bulgu sarkoidoz tanısını en güçlü destekler?",
       "secenekler": {
         "A": "BAL'da nötrofil hakimiyeti (%25) ve CD4/CD8 oranı 1.2",
-        "B": "BAL'da lenfositoz (%42) ve CD4/CD8 oranı 4.8",
+        "B": "BAL'da lenfositoz (%38) ve CD4/CD8 oranı 0.6",
         "C": "BAL'da eozinofili (%18) ve CD4/CD8 oranı 0.8",
         "D": "BAL'da makrofaj hakimiyeti (%85) ve CD4/CD8 oranı 1.9",
-        "E": "BAL'da lenfositoz (%38) ve CD4/CD8 oranı 0.6"
+        "E": "BAL'da lenfositoz (%42) ve CD4/CD8 oranı 4.8"
       },
-      "dogru": "B",
+      "dogru": "E",
       "aciklama_kisa": "Sarkoidozda BAL karakteristik bulgusu lenfositik alveolittir. CD4/CD8 oranı >3.5 olması %93–96 spesifiteyle sarkoidozu destekler. CD4/CD8 <1 → TB veya HP'yi düşündürür.",
       "aciklama_detay": "Sarkoidozda BAL, Th1 polarizasyonu ve CD4+ T hücre infiltrasyonu nedeniyle karakteristik lenfositik alveolit + CD4/CD8 oranı >3.5 gösterir (spesifite %93–96). Bu oran hem tanıyı güçlü destekler hem de ayırıcı tanıda değerlidir: Hipersensitivite pnömonisinde CD4/CD8 <2.0 (lenfositik ama düşük oran), tüberkülozda <1.0, normal BAL'da 1.5–3.5 arasındadır. Nötrofil hakimiyeti akut bakteri pnömonisini veya aktif fibrozisi, eozinofili akut eozinofil pnömonisi veya mantar enfeksiyonunu, düşük CD4/CD8 ise TB/HP'yi düşündürür.",
       "secenekAciklamalari": {
         "A": "YANLIŞ — Nötrofil hakimiyeti sarkoidoz için tipik değildir; akut bakteriyel süreç veya fibrotik akciğer hastalığını akla getirir. CD4/CD8 1.2 normal sınırlarda kalır.",
-        "B": "DOĞRU — Lenfositik alveolit + CD4/CD8 4.8 (>3.5 eşiği) sarkoidozu %93–96 spesifiteyle destekler. HRCT'deki perilenfatik dağılım ve mediastinal lenfadenopatiyle birlikte değerlendirildiğinde tanı güçlü şekilde desteklenmektedir.",
+        "B": "YANLIŞ — Lenfositoz bulunsa da CD4/CD8 0.6 (<1.0) tüberküloz veya viral pnömoniyi düşündürür. Sarkoidozda CD4/CD8 düşüklüğü beklenmez.",
         "C": "YANLIŞ — Eozinofil hakimiyeti ve düşük CD4/CD8 sarkoidozu düşündürmez. Eozinofil pnömonisi, alerjik alveolit veya parazitik enfeksiyonlar akla gelmelidir.",
         "D": "YANLIŞ — Makrofaj hakimiyeti ve CD4/CD8 1.9 sarkoidoz için spesifik değildir. Bu bulgu normal BAL paterni veya kronik sigara kullanımıyla uyumludur.",
-        "E": "YANLIŞ — Lenfositoz bulunsa da CD4/CD8 0.6 (<1.0) tüberküloz veya viral pnömoniyi düşündürür. Sarkoidozda CD4/CD8 düşüklüğü beklenmez."
+        "E": "DOĞRU — Lenfositik alveolit + CD4/CD8 4.8 (>3.5 eşiği) sarkoidozu %93–96 spesifiteyle destekler. HRCT'deki perilenfatik dağılım ve mediastinal lenfadenopatiyle birlikte değerlendirildiğinde tanı güçlü şekilde desteklenmektedir."
       },
       "etiketler": [
         "BAL",
@@ -98,19 +98,19 @@
       "metin": "Kırk üç yaşında erkek hasta, 3 yıldır pulmoner sarkoidoz tanısıyla takip edilmektedir. Prednisolon ve metotreksat kombinasyonuna yetersiz yanıt alınmış; hastalık aktif seyretmekte, solunum fonksiyonları kötüleşmektedir. Bunun üzerine anti-TNF tedavisi planlanmaktadır. Doktor, mevcut üç anti-TNF seçeneği (infliksimab, adalimumab, etanercept) arasında seçim yapmak durumundadır.\n\nBu hastada en uygun anti-TNF seçimi ve gerekçesi aşağıdakilerden hangisidir?",
       "secenekler": {
         "A": "Etanercept seçilmelidir; TNF-alfa'ya en yüksek bağlanma afinitesine sahip olduğundan granülom baskılanmasında en etkili ajandır.",
-        "B": "İnfliksimab seçilmelidir; sarkoidozda refrakter pulmoner ve oküler tutulumda klinik çalışmalarda kanıtlanmış etkinliği mevcuttur. Etanercept hem akciğer hem oküler formda etkinlik gösterememiştir.",
+        "B": "Tüm anti-TNF ajanlar sarkoidozda eşit etkinlik göstermektedir; seçimde hasta tercihi ve uygulama kolaylığı belirleyici olmalıdır.",
         "C": "Adalimumab seçilmemelidir; sarkoidozda tümör nekroz faktörü inhibitörleri arasında yalnızca etanercept etkindir.",
-        "D": "Tüm anti-TNF ajanlar sarkoidozda eşit etkinlik göstermektedir; seçimde hasta tercihi ve uygulama kolaylığı belirleyici olmalıdır.",
+        "D": "İnfliksimab seçilmelidir; sarkoidozda refrakter pulmoner ve oküler tutulumda klinik çalışmalarda kanıtlanmış etkinliği mevcuttur. Etanercept hem akciğer hem oküler formda etkinlik gösterememiştir.",
         "E": "Anti-TNF ajanlar sarkoidozda kontrendikedir; granülom içindeki TNF-alfa granülomun çözünmesini sağlar, bloke edilmesi hastalığı kötüleştirir."
       },
-      "dogru": "B",
+      "dogru": "D",
       "aciklama_kisa": "Sarkoidozda 3. basamak anti-TNF tedavisinde kanıt düzeyi en yüksek ajan infliksimab'dır. Etanercept hem pulmoner hem oküler sarkoidozda etkinlik gösterememiş, tedavide yeri yoktur.",
       "aciklama_detay": "Anti-TNF ajanlar arasında önemli bir farklılık vardır: İnfliksimab (kimerik monoklonal antikor) ve adalimumab (tam insan monoklonal antikoru) sarkoidozda refrakter vakalarda etkinlik göstermiştir. Buna karşın etanercept (soluble TNF reseptör füzyon proteini) sarkoidozda hem pulmoner hem de oküler tutulumda randomize kontrollü çalışmalarda etkinliği kanıtlanamamış ve bu ajana özgü bir başarısızlık gözlemlenmiştir. Bu durum patogenezdeki sitokin redundansı ve etanerceptin membrana bağlı TNF'yi bloke etmekte yetersiz kalmasıyla açıklanmaktadır. Kanıt düzeyi en yüksek ajan infliksimab'dır; bu ayrım sınavlarda 'tuzak' olarak sık sorulur.",
       "secenekAciklamalari": {
         "A": "YANLIŞ — Etanercept sarkoidozda klinik çalışmalarda etkisiz bulunmuştur. 'Bağlanma afinitesi yüksek olduğundan etkilidir' ifadesi teorik olup klinik kanıtlarla çelişir. Etanercept sarkoidoz tedavisinde yer almaz.",
-        "B": "DOĞRU — İnfliksimab, sarkoidozda refrakter pulmoner tutulumda (BCCT gibi çalışmalar) ve oküler tutulumda kanıtlanmış en güçlü anti-TNF seçeneğidir. Etanerceptin akciğer ve göz tutulumunda etkinlik gösterememesi bu seçimi zorunlu kılar.",
+        "B": "YANLIŞ — Anti-TNF ajanlar sarkoidozda eşit etkinlik göstermez. Etanerceptin açıkça etkisiz olduğu klinik çalışmalarla kanıtlanmıştır. Bu fark klinik ve sınav açısından kritiktir.",
         "C": "YANLIŞ — Bu önerme tersine çevrilmiş bir hatadır. Sarkoidozda etkin olan infliksimab ve adalimumab'dır; etanercept etkisizdir. Adalimumab ikinci tercih olarak kullanılabilir.",
-        "D": "YANLIŞ — Anti-TNF ajanlar sarkoidozda eşit etkinlik göstermez. Etanerceptin açıkça etkisiz olduğu klinik çalışmalarla kanıtlanmıştır. Bu fark klinik ve sınav açısından kritiktir.",
+        "D": "DOĞRU — İnfliksimab, sarkoidozda refrakter pulmoner tutulumda (BCCT gibi çalışmalar) ve oküler tutulumda kanıtlanmış en güçlü anti-TNF seçeneğidir. Etanerceptin akciğer ve göz tutulumunda etkinlik gösterememesi bu seçimi zorunlu kılar.",
         "E": "YANLIŞ — Anti-TNF ajanlar sarkoidozda kontrendike değildir; tersine 3. basamak tedavinin temel taşıdır. TNF-alfa blokajı granülom baskılanmasında etkilidir. Ancak anti-TNF başlamadan önce aktif tüberküloz dışlanmalıdır."
       },
       "etiketler": [
@@ -128,20 +128,20 @@
       "metin": "Otuz yedi yaşında kadın hasta, 2 yıldır semptomatik evre II pulmoner sarkoidoz tanısıyla izlenmektedir. Sistemik kortikosteroid tedavisi öneriliyor; ancak hasta, diyabetes mellitus ve osteoporoz öyküsü nedeniyle steroid yan etkilerinden kaygılanmaktadır. Doktor, başlangıç steroid dozunu düşük tutmayı ya da birinci basamak alternatif ajan kullanmayı değerlendirmektedir.\n\nBu hasta için aşağıdaki tedavi kararlarından hangisi güncel klinik çalışma verileriyle en iyi desteklenmektedir?",
       "secenekler": {
         "A": "Kortikosteroid başlangıç dozunun 20 mg/gün olması, 40 mg/güne kıyasla klinik etkinlik açısından inferiordur; steroid yan etkisinden kaçınmak için 40 mg ile başlanmalı ve hızla azaltılmalıdır.",
-        "B": "SARCORT çalışması, 20 mg/gün başlangıç prednisolonun 40 mg/güne klinik etkinlik açısından non-inferior olduğunu kanıtlamıştır; bu hastada daha düşük doz tercih edilebilir. Alternatif olarak PREDMETH çalışması, ilk basamakta oral metotreksatın kortikosteroidlerle benzer etkinlik gösterdiğini valide etmiştir.",
+        "B": "Bu hastada steroid yan etki riski nedeniyle kortikosteroidler hiç kullanılmamalı; direkt anti-TNF tedavisine geçilmelidir.",
         "C": "Bu hastada önce kortikosteroid 20 mg/gün başlanmalı, yeterli yanıt alınamazsa metotreksat eklenmelidir; metotreksat hiçbir zaman birinci basamakta tek başına kullanılamaz.",
         "D": "Pulmoner sarkoidozda tüm semptomatik hastalar için başlangıç steroid dozu 1 mg/kg/gün (en az 40 mg) olmalıdır; düşük doz başlanması nüks riskini kanıtlı şekilde artırır.",
-        "E": "Bu hastada steroid yan etki riski nedeniyle kortikosteroidler hiç kullanılmamalı; direkt anti-TNF tedavisine geçilmelidir."
+        "E": "SARCORT çalışması, 20 mg/gün başlangıç prednisolonun 40 mg/güne klinik etkinlik açısından non-inferior olduğunu kanıtlamıştır; bu hastada daha düşük doz tercih edilebilir. Alternatif olarak PREDMETH çalışması, ilk basamakta oral metotreksatın kortikosteroidlerle benzer etkinlik gösterdiğini valide etmiştir."
       },
-      "dogru": "B",
+      "dogru": "E",
       "aciklama_kisa": "SARCORT: 20 mg prednisolon başlangıç dozu 40 mg'a non-inferior + daha az yan etki. PREDMETH: ilk basamakta oral MTX kortikosteroidler kadar etkili. Her ikisi de bu hasta için geçerli seçenekler.",
       "aciklama_detay": "İki önemli güncel çalışma sarkoidoz tedavi paradigmasını değiştirmiştir. SARCORT çalışması, semptomatik pulmoner sarkoidozda başlangıç prednisolon dozunun 20 mg/gün olmasının 40 mg/güne klinik etkinlik açısından non-inferior (eşdeğer) olduğunu göstermiş; aynı zamanda 20 mg grubunda daha az metabolik ve kemik yan etkisi saptanmıştır. PREDMETH çalışması ise ilk basamakta glukokortikoid yerine doğrudan oral metotreksat (10–15 mg/hafta) kullanımının kortikosteroidlerle karşılaştırılabilir klinik etkinliğe sahip olduğunu valide etmiştir. Bu hasta özelinde hem 20 mg steroid tercih etmek hem de birinci basamak alternatif olarak MTX seçmek güncel verilerce desteklenebilir. Steroid almadan direkt anti-TNF'ye geçmek kılavuzlarla uyuşmaz.",
       "secenekAciklamalari": {
         "A": "YANLIŞ — SARCORT çalışması tam tersi bir sonuç vermiştir: 20 mg başlangıç dozu 40 mg'a non-inferior bulunmuştur. Yan etkiden kaçınmak için yüksek dozla başlayıp hızla azaltmak gereksiz ve kötü tolere edilen bir stratejidir.",
-        "B": "DOĞRU — SARCORT ve PREDMETH çalışmalarının her ikisini de doğru aktaran tek seçenektir. Bu hastada 20 mg steroid veya birinci basamak MTX güncel kılavuz ve çalışma verileriyle tutarlıdır.",
+        "B": "YANLIŞ — Anti-TNF ajanlar, kortikosteroid ve en az iki ikinci basamak ajana yetersiz yanıt alınan refrakter vakalarda kullanılır. Kortikosteroidleri hiç denemeden anti-TNF'ye geçmek kılavuzlarla uyuşmaz.",
         "C": "YANLIŞ — PREDMETH çalışması, metotreksatın birinci basamakta tek başına, kortikosteroid olmadan da etkili olduğunu göstermiştir. MTX'in yalnızca ek ajan olarak kullanılabileceği eski bir yaklaşımdır.",
         "D": "YANLIŞ — '1 mg/kg/gün' dozu pulmoner sarkoidoz için kılavuz standardı değildir ve SARCORT çalışmasıyla çelişmektedir. Düşük doz başlangıcının nüks riskini artırdığına dair kanıt bulunmamaktadır.",
-        "E": "YANLIŞ — Anti-TNF ajanlar, kortikosteroid ve en az iki ikinci basamak ajana yetersiz yanıt alınan refrakter vakalarda kullanılır. Kortikosteroidleri hiç denemeden anti-TNF'ye geçmek kılavuzlarla uyuşmaz."
+        "E": "DOĞRU — SARCORT ve PREDMETH çalışmalarının her ikisini de doğru aktaran tek seçenektir. Bu hastada 20 mg steroid veya birinci basamak MTX güncel kılavuz ve çalışma verileriyle tutarlıdır."
       },
       "etiketler": [
         "SARCORT",
@@ -157,18 +157,18 @@
       "id": "s6",
       "metin": "Elli iki yaşında erkek hasta, iki yıldır bilinen pulmoner sarkoidoz tanısıyla izlenmektedir. Son kontrolünde böğür ağrısı ve hematüri nedeniyle yapılan görüntülemede bilateral renal taşlar saptanıyor. Metabolik tetkikler sonuçlandı:\n\nSerum kalsiyum: 11.6 mg/dL ↑\nPTH: 5 pg/mL ↓ (N: 15–65)\n25-OH Vitamin D: 11 ng/mL ↓ (N: 30–100)\n1,25-(OH)₂ Vitamin D: 94 pg/mL ↑ (N: 18–72)\n24 saatlik idrar kalsiyumu: 580 mg/gün ↑\n\nBu laboratuvar tablosunu en doğru açıklayan patofizyolojik mekanizma hangisidir?",
       "secenekler": {
-        "A": "Primer hiperparatiroidizm: PTH aşırı salgısı renal 1-alfa-hidroksilazı uyarır, kalsitriol artar ve kalsiyum emilimi artarak hiperkalsemi gelişir.",
-        "B": "Granülom makrofajlarındaki otonom 1-alfa-hidroksilaz, PTH regülasyonundan bağımsız çalışarak 25-OH D'yi kalsitriole dönüştürür; artan kalsitriol bağırsakta kalsiyum emilimini artırır, yüksek kalsiyum PTH'ı negatif geri bildirimle baskılar.",
+        "A": "Granülom makrofajlarındaki otonom 1-alfa-hidroksilaz, PTH regülasyonundan bağımsız çalışarak 25-OH D'yi kalsitriole dönüştürür; artan kalsitriol bağırsakta kalsiyum emilimini artırır, yüksek kalsiyum PTH'ı negatif geri bildirimle baskılar.",
+        "B": "Primer hiperparatiroidizm: PTH aşırı salgısı renal 1-alfa-hidroksilazı uyarır, kalsitriol artar ve kalsiyum emilimi artarak hiperkalsemi gelişir.",
         "C": "Eksojen D vitamini toksisitesi: Aşırı D vitamini takviyesi hem 25-OH D hem de 1,25-(OH)₂ D'yi artırır, PTH baskılanır.",
         "D": "Sekonder hiperparatiroidizm: Kronik böbrek hastalığına bağlı fosfat tutulumu PTH'ı artırır, kemik rezorpsiyonu ile hiperkalsemi gelişir.",
         "E": "Renal tübüler asidoz: Kalsiyum geri emilimi bozulur, kompansatuar PTH yükselmesi 1,25-(OH)₂ D üretimini artırır."
       },
-      "dogru": "B",
+      "dogru": "A",
       "aciklama_kisa": "Sarkoidozda karakteristik profil: PTH↓ + 25-OH D↓ + 1,25-(OH)₂ D↑. Granülom makrofajlarındaki otonom 1-alfa-hidroksilaz PTH'dan bağımsız çalışır; 25-OH D hızla aktif forma dönüştürüldüğünden düşük kalır, bu durum 'D vitamini eksikliği' olarak yanlış yorumlanabilir.",
       "aciklama_detay": "Normal fizyolojide 1-alfa-hidroksilaz böbrekte PTH tarafından regüle edilir: yüksek kalsiyum → PTH azalır → kalsitriol üretimi düşer. Sarkoidozda granülom makrofajları bu enzimi otonom eksprese eder, PTH negatif geri bildiriminden kaçar. 25-OH D hızla kalsitriole dönüştürüldüğünden serum düzeyi düşük kalır — bu sık görülen bir laboratuvar tuzağıdır, 'D vitamini eksikliği' zannedilmemelidir. Yüksek kalsitriol bağırsakta Ca/P emilimini artırır ve osteoklastogenezi uyarır; sonuç: hiperkalsemi + hiperkalsiüri → nefrolitiyazis/nefrokalsinozis.",
       "secenekAciklamalari": {
-        "A": "YANLIŞ — Primer hiperparatiroidizmde PTH yüksek olur. Bu hastada PTH 5 pg/mL ile belirgin baskılı; granülom kaynaklı otonom kalsitriol üretimi PTH'ı negatif geri bildirimle baskılamaktadır.",
-        "B": "DOĞRU — PTH↓ + 25-OH D↓ + 1,25-(OH)₂ D↑ kombinasyonu sarkoidozun parmak izi laboratuvar tablosudur. Otonom makrofaj 1-alfa-hidroksilazı PTH'dan bağımsız çalışır; 25-OH D'nin düşük olması D vitamini eksikliği değil, hızlı tüketimin göstergesidir.",
+        "A": "DOĞRU — PTH↓ + 25-OH D↓ + 1,25-(OH)₂ D↑ kombinasyonu sarkoidozun parmak izi laboratuvar tablosudur. Otonom makrofaj 1-alfa-hidroksilazı PTH'dan bağımsız çalışır; 25-OH D'nin düşük olması D vitamini eksikliği değil, hızlı tüketimin göstergesidir.",
+        "B": "YANLIŞ — Primer hiperparatiroidizmde PTH yüksek olur. Bu hastada PTH 5 pg/mL ile belirgin baskılı; granülom kaynaklı otonom kalsitriol üretimi PTH'ı negatif geri bildirimle baskılamaktadır.",
         "C": "YANLIŞ — D vitamini toksisitesinde 25-OH D belirgin yüksek (>150 ng/mL) bulunur. Bu hastada 25-OH D 11 ng/mL ile düşük — bu iki tablonun ayırt edilmesi klinisyen için kritik öneme sahiptir.",
         "D": "YANLIŞ — Sekonder hiperparatiroidizmde PTH yüksek olur ve 1,25-(OH)₂ D azalmıştır (renal 1-alfa-hidroksilaz yetersizliği). Bu hastanın tablosuyla çelişmektedir.",
         "E": "YANLIŞ — Renal tübüler asidozda PTH kompansatuar yükselir; bu tabloda PTH baskılıdır. Ayrıca 1,25-(OH)₂ D bu kadar belirgin yükselmez."
@@ -336,18 +336,18 @@
       "metin": "Kırk yedi yaşında erkek hasta, 1 yıldır giderek artan efor dispnesi ve kuru öksürükle başvuruyor. 15 yıldır bir diş protez laboratuvarında metal alaşım döküm ve tesviye işinde çalışıyor. Sigara içmiyor.\n\nTetkikler:\nToraks BT: bilateral hiler lenfadenopati, üst-orta zon ağırlıklı perilenfatik mikronodüller\nBAL: lenfosit %38, CD4/CD8 oranı 5.2\nTransbronşiyal biyopsi: kazeifiye olmayan granülomlar\nSerum ACE: hafif yüksek\n\nBu tabloyu sarkoidozdan ayırmak için en uygun test hangisidir?",
       "secenekler": {
         "A": "Serum çözünür IL-2 reseptörü (sIL-2R) düzeyi",
-        "B": "Kan ya da BAL lenfositleriyle berilyum lenfosit proliferasyon testi (BeLPT)",
-        "C": "BAL'da CD4/CD8 oranının tekrarlanması",
+        "B": "BAL'da CD4/CD8 oranının tekrarlanması",
+        "C": "Kan ya da BAL lenfositleriyle berilyum lenfosit proliferasyon testi (BeLPT)",
         "D": "Serum 1,25-(OH)₂ vitamin D düzeyi",
         "E": "Serum ACE düzeyinin seri takibi"
       },
-      "dogru": "B",
+      "dogru": "C",
       "aciklama_kisa": "Diş protez, havacılık-uzay ya da elektronik sektöründe berilyum maruziyeti + sarkoidoz benzeri tablo → kronik berilyum hastalığı. Granülom, BAL lenfositozu ve CD4/CD8 artışı iki hastalıkta ortaktır; ayırt ettiren test BeLPT'dir.",
       "aciklama_detay": "Kronik berilyum hastalığı (KBH), berilyuma karşı HLA-DPB1 Glu69 ile ilişkili gecikmiş tip aşırı duyarlılık yanıtıdır ve klinik, radyolojik ve histolojik olarak sarkoidozun neredeyse birebir ikizidir: nekrozsuz granülom, perilenfatik nodüller, hiler lenfadenopati, BAL'da CD4+ lenfositoz ve yüksek CD4/CD8 oranı, hatta ACE artışı ve hiperkalsemi görülebilir. Bu nedenle sarkoidoz tanısı konmadan önce ayrıntılı meslek öyküsü alınmalıdır; diş protez alaşımları, havacılık-uzay, elektronik, nükleer ve metal işleme sektörleri risklidir. Ayırt edici test berilyum lenfosit proliferasyon testidir (BeLPT): hastanın kan ya da BAL lenfositleri berilyum tuzlarıyla uyarıldığında çoğalır. Ayrım tedaviyi değiştirir: KBH'de maruziyetin tamamen kesilmesi tedavinin temelidir; meslek hastalığı bildirimi ve aynı iş yerindeki çalışanların taranması gerekir. Kortikosteroid gerektiğinde her iki hastalıkta da kullanılır.",
       "secenekAciklamalari": {
         "A": "YANLIŞ — sIL-2R T hücre aktivasyonunu gösterir; KBH'de de yükselebilir ve iki hastalığı ayırmaz.",
-        "B": "DOĞRU — BeLPT berilyuma özgü hücresel duyarlılığı gösterir; KBH'yi sarkoidozdan ayıran testtir.",
-        "C": "YANLIŞ — CD4/CD8 artışı KBH'de de görülür; testi tekrarlamak ayırıcı bilgi vermez.",
+        "B": "YANLIŞ — CD4/CD8 artışı KBH'de de görülür; testi tekrarlamak ayırıcı bilgi vermez.",
+        "C": "DOĞRU — BeLPT berilyuma özgü hücresel duyarlılığı gösterir; KBH'yi sarkoidozdan ayıran testtir.",
         "D": "YANLIŞ — Granülom makrofajlarının kalsitriol üretimi KBH'de de olabilir; ayırıcı değildir.",
         "E": "YANLIŞ — ACE her iki granülomatöz hastalıkta yükselebilir; duyarlılığı ve özgüllüğü düşüktür."
       },

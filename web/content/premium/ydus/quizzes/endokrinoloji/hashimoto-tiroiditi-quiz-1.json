@@ -39,20 +39,20 @@
       "metin": "Elli altı yaşında erkek hasta, boynunda hızla büyüyen, sert ve ağrılı bir şişlik nedeniyle başvuruyor. Dört yıldır Hashimoto tiroiditi tanılı. Son 6 haftada kilo kaybı (%8) ve boyun lenf bezi büyümesi gelişmiş.\n\nTetkikler:\nTSH: 4.8 mU/L\nAnti-TPO: 2100 IU/mL\nUSG: Sağ lobda 4.2 cm heterojen, hipoekojen, düzensiz sınırlı kitle; servikal LAP\n\nBu hastada öncelikli akla gelmesi gereken tanı ve ilk yapılması gereken adım hangisidir?",
       "secenekler": {
         "A": "Hashimoto tiroiditinde bu büyüklükte kitleler sıktır; LT4 dozu artırılarak kitle küçültülmeli.",
-        "B": "Tiroid lenfoması (büyük olasılıkla diffüz büyük B hücreli lenfoma); öncelikle İİAB veya tru-cut biyopsi yapılmalıdır.",
+        "B": "Hızlı büyüme Graves'in Hashimoto'ya eklenmesiyle açıklanabilir; TRAb ölçülmeli.",
         "C": "Papiller tiroid kanseri; İİAB yapılmalı, PTC'de bu büyüklükte kitleler beklenen bulgudur.",
         "D": "Subakut tiroidit; NSAID tedaviyle kitle gerileyecektir.",
-        "E": "Hızlı büyüme Graves'in Hashimoto'ya eklenmesiyle açıklanabilir; TRAb ölçülmeli."
+        "E": "Tiroid lenfoması (büyük olasılıkla diffüz büyük B hücreli lenfoma); öncelikle İİAB veya tru-cut biyopsi yapılmalıdır."
       },
-      "dogru": "B",
+      "dogru": "E",
       "aciklama_kisa": "Hashimoto zemininde hızlı büyüyen, sert, ağrılı kitle + servikal LAP + kilo kaybı = TİROİD LENFOMASINI DÜŞÜN. Hashimoto primer tiroid lenfoması için en önemli risk faktörüdür; biyopsi acilen yapılmalıdır.",
       "aciklama_detay": "Primer tiroid lenfoması; genellikle Hashimoto tiroiditi zemininde gelişen nadir ama agresif bir malignitedir. Olguların büyük çoğunluğu DLBCL (diffüz büyük B hücreli lenfoma) veya MALT lenfoma tipindedir. Klasik sunum: Hashimoto öyküsü + hızlı büyüyen sert kitle + boyun LAP + B semptomları (kilo kaybı, ateş, terleme). İİAB bazen yetersiz kalır; tru-cut/eksizyonel biyopsi gerekebilir. LT4 kitleyi küçültmez — bu hipotiroidizm değil lenfoma.",
       "secenekAciklamalari": {
         "A": "YANLIS — LT4 lenfoma kitlesini küçültmez. 6 haftada %8 kilo kaybı + hızlı büyüyen sert kitle malignite işaretleridir.",
-        "B": "DOGRU — Hashimoto + hızlı büyüyen kitle = tiroid lenfoması olasılığını derhal akla getir; biyopsi acil.",
+        "B": "YANLIS — TRAb ölçümü burada gereksiz; Graves ve lenfoma birlikteliği son derece nadir, klinik tablo lenfomayla çok daha uyumlu.",
         "C": "YANLIS — PTC daha yavaş büyür; 6 haftada bu hızdaki büyüme ve ağrı PTC ile uyumsuz. Lenfoma daha olası.",
         "D": "YANLIS — Subakut tiroiditte diffüz ağrı, ateş, ESR yüksekliği tipiktir; bu hastada belirgin kitle ve LAP var.",
-        "E": "YANLIS — TRAb ölçümü burada gereksiz; Graves ve lenfoma birlikteliği son derece nadir, klinik tablo lenfomayla çok daha uyumlu."
+        "E": "DOGRU — Hashimoto + hızlı büyüyen kitle = tiroid lenfoması olasılığını derhal akla getir; biyopsi acil."
       },
       "etiketler": [
         "Tiroid Lenfoması",
@@ -68,18 +68,18 @@
       "id": "s3",
       "metin": "Otuz sekiz yaşında kadın hasta, yıllık kontrolünde. Hashimoto tiroiditi tanısıyla 3 yıldır izleniyor; herhangi bir ilaç kullanmıyor.\n\nTetkikler:\nTSH: 6.8 mU/L (N: 0.4–4.0) — hafif yüksek\nsT4: 0.88 ng/dL (N: 0.80–1.80) — normal\nAnti-TPO: 640 IU/mL ↑\n\nFizik muayenede tiroid normal boyutlarda. Hasta asemptomatik.\n\nSubklinik hipotiroidi yönetimi için doğru yaklaşım hangisidir?",
       "secenekler": {
-        "A": "TSH 6.8 mU/L, tedavi için yeterince yüksek; levotiroksin 50 mcg/gün hemen başlanmalıdır.",
-        "B": "Asemptomatik subklinik hipotiroidi + Anti-TPO pozitif hastada tedavi kararı; TSH düzeyi ve risk faktörlerine göre bireyselleştirilmeli. TSH <10 mU/L + asemptomatik ise izlem tercih edilebilir; ancak Anti-TPO pozitifliği hipotiroidiye ilerleme riskini artırdığından yakın takip şarttır.",
+        "A": "Asemptomatik subklinik hipotiroidi + Anti-TPO pozitif hastada tedavi kararı; TSH düzeyi ve risk faktörlerine göre bireyselleştirilmeli. TSH <10 mU/L + asemptomatik ise izlem tercih edilebilir; ancak Anti-TPO pozitifliği hipotiroidiye ilerleme riskini artırdığından yakın takip şarttır.",
+        "B": "TSH 6.8 mU/L, tedavi için yeterince yüksek; levotiroksin 50 mcg/gün hemen başlanmalıdır.",
         "C": "sT4 normal olduğundan bu tablo subklinik hipotiroidi değildir; herhangi bir tetkike gerek yoktur.",
         "D": "Anti-TPO titresini düşürmek için selenyum tedavisi başlanmalı; TSH normale döndükten sonra selenyum kesilir.",
         "E": "TSH 10 mU/L altında olduğundan subklinik hipotiroidi tanısı konamaz; hasta 6 ayda kontrole çağrılmalıdır."
       },
-      "dogru": "B",
+      "dogru": "A",
       "aciklama_kisa": "TSH 6.8 (subklinik) + Anti-TPO pozitif + asemptomatik → izlem veya bireyselleştirilmiş tedavi. TSH <10 + asemptomatik ise izlem tercih edilebilir; Anti-TPO pozitifliği ilerleme riskini artırır → yakın takip.",
       "aciklama_detay": "Subklinik hipotiroidide (TSH yüksek, sT4 normal) tedavi kararı TSH düzeyine, semptomlara ve risk faktörlerine göre verilir. TSH ≥10 mU/L: tedavi tartışmasız başlanır. TSH 4–10 mU/L: Anti-TPO pozitif, gebelik planı, kardiyovasküler hastalık gibi risk faktörleri varsa tedavi düşünülür; asemptomatik ve risk faktörü yoksa izlem tercih edilebilir. Bu hastada TSH 6.8, anti-TPO pozitif ama asemptomatik → bireyselleştirme uygun. Anti-TPO pozitifliği yılda %3–5 aşikar hipotiroidiye ilerleme riskini artırır → 6 aylık TSH takibi şarttır. Selenyum antikor titrelerini düşürebilir ancak klinik seyri değiştirdiğine dair güçlü kanıt yoktur; rutin önerilmez.",
       "secenekAciklamalari": {
-        "A": "YANLIS — TSH 6.8 mU/L tek başına zorunlu tedavi endikasyonu değil. Asemptomatik + TSH <10 mU/L → bireyselleştir.",
-        "B": "DOGRU — Doğru yaklaşım: bireyselleştir, risk değerlendir, yakın takip.",
+        "A": "DOGRU — Doğru yaklaşım: bireyselleştir, risk değerlendir, yakın takip.",
+        "B": "YANLIS — TSH 6.8 mU/L tek başına zorunlu tedavi endikasyonu değil. Asemptomatik + TSH <10 mU/L → bireyselleştir.",
         "C": "YANLIS — Subklinik hipotiroidi tanımı: TSH yüksek + sT4 normal. Bu tam olarak subklinik hipotiroididir.",
         "D": "YANLIS — Selenyum Anti-TPO titrelerini düşürebilir ancak TSH'ı normalize etmez ve klinik sonuç değiştirdiğine dair kanıt yoktur.",
         "E": "YANLIS — TSH 10 mU/L zorunlu tedavi eşiğidir; subklinik hipotiroidi tanımı için eşik değil. TSH 6.8 mU/L subklinik hipotiroidizme uygun."
@@ -158,18 +158,18 @@
       "id": "s6",
       "metin": "Elli yaşında kadın hasta, 12 yıldır Hashimoto tiroiditi tanılı. Levotiroksin 100 mcg/gün kullanıyor, TSH 2.1 mU/L. Rutin kontrol USG'sinde sağ lobda 2.8 cm dominant nodül saptandı. İİAB sonucu: 'Lenfositik infiltrasyon yoğun, birkaç Hürthle hücresi, Bethesda Kategori III (önemi belirsiz atipi — AUS/FLUS)'.\n\nBu İİAB bulgusunu yorumlarken Hashimoto bağlamında aşağıdakilerden hangisi en doğru ifadedir?",
       "secenekler": {
-        "A": "Bethesda III kesinlikle maligniteyi dışlamaz; doğrudan tiroidektomi planlanmalıdır.",
-        "B": "Hashimoto tiroiditinde yoğun lenfositik infiltrasyon ve Hürthle hücreleri İİAB'de Bethesda III'e yol açabilir; bu bağlamda gerçek malignite riski gebe olmayan Bethesda III'e kıyasla düşebilir. Tekrar İİAB veya moleküler test düşünülmelidir.",
+        "A": "Hashimoto tiroiditinde yoğun lenfositik infiltrasyon ve Hürthle hücreleri İİAB'de Bethesda III'e yol açabilir; bu bağlamda gerçek malignite riski gebe olmayan Bethesda III'e kıyasla düşebilir. Tekrar İİAB veya moleküler test düşünülmelidir.",
+        "B": "Bethesda III kesinlikle maligniteyi dışlamaz; doğrudan tiroidektomi planlanmalıdır.",
         "C": "Hashimoto tiroiditinin kendisi malign dönüşüme yol açar; cerrahi kaçınılmazdır.",
         "D": "Lenfositik infiltrasyon İİAB'de artefakt oluşturur; biyopsi tekrarlanmalı ve Hashimoto bağlamı göz ardı edilmelidir.",
         "E": "Hürthle hücreleri her zaman folliküler neoplazma belirtisidir; tiroidektomi acilen yapılmalıdır."
       },
-      "dogru": "B",
+      "dogru": "A",
       "aciklama_kisa": "Hashimoto'da yoğun lenfositler ve Hürthle hücreleri İİAB'i Bethesda III'e iterek 'yanlış yüksek' atipiye yol açabilir. Bu bağlamda gerçek malignite riski görece düşük; tekrar biyopsi veya moleküler test önce gelmeli.",
       "aciklama_detay": "Hashimoto tiroiditinde İİAB yorumu güçleşebilir: lenfositik arka plan, Hürthle hücre varlığı ve folliküler yapı bozukluğu gerçek Bethesda III AUS/FLUS atipisini 'taklit' edebilir. Çalışmalar, Hashimoto zeminindeki Bethesda III nodüllerin malignite riskinin genel Bethesda III'ten daha düşük olduğunu öne sürmektedir. Bu nedenle direkt cerrahiye gitmeden tekrar İİAB (6 ayda) veya ThyroSeq/Afirma gibi moleküler testler değerli bilgi sağlar. Hürthle hücreleri her zaman neoplazm anlamına gelmez — Hashimoto'da reaktif Hürthle hücresi sık görülür.",
       "secenekAciklamalari": {
-        "A": "YANLIS — Bethesda III'te doğrudan tiroidektomi standart yaklaşım değil; tekrar İİAB veya moleküler test önce tercih edilmeli.",
-        "B": "DOGRU — Hashimoto bağlamında Bethesda III'ün gerçek malignite riski düşer; tekrar biyopsi veya moleküler test.",
+        "A": "DOGRU — Hashimoto bağlamında Bethesda III'ün gerçek malignite riski düşer; tekrar biyopsi veya moleküler test.",
+        "B": "YANLIS — Bethesda III'te doğrudan tiroidektomi standart yaklaşım değil; tekrar İİAB veya moleküler test önce tercih edilmeli.",
         "C": "YANLIS — Hashimoto malign dönüşümü doğrudan artırmaz; ancak tiroid lenfoması riskini artırır (karsinom değil).",
         "D": "YANLIS — Bağlamı göz ardı etmek hatadır; Hashimoto'nun İİAB yorumuna etkisini bilmek klinisyenin görevidir.",
         "E": "YANLIS — Hashimoto'da Hürthle hücreleri reaktif olabilir; folliküler neoplazm için daha spesifik kriterler gerekir."
@@ -219,18 +219,18 @@
       "metin": "Otuz beş yaşında Hashimoto tiroiditi tanılı kadın hasta, rutin tiroid USG'sinde 1.8 cm sağ lob nodülü saptandı. İİAB sonucu papiller tiroid karsinomu (PTC) ile uyumlu. Hastaya cerrahi planlanıyor.\n\nHT zemininde gelişen PTC olgularının, HT olmaksızın gelişen PTC olgularıyla karşılaştırıldığında genel olarak nasıl bir prognoz beklenmektedir?",
       "secenekler": {
         "A": "HT zeminindeki PTC daha saldırgandır; BRAF V600E mutasyonu daha sık, santral lenf nodu metastazı daha fazla ve genel sağkalım daha kötüdür.",
-        "B": "HT zeminindeki PTC daha iyi prognozludur; tümör daha küçük, santral metastaz daha nadir, BRAF V600E mutasyon sıklığı belirgin az ve sağkalım daha olumludur. HT'nin tümör mikroçevresi koruyucu bariyer işlevi görür.",
-        "C": "HT ile PTC birlikteliğinde prognoz değişmez; HT tümör biyolojisini etkilemez.",
+        "B": "HT ile PTC birlikteliğinde prognoz değişmez; HT tümör biyolojisini etkilemez.",
+        "C": "HT zeminindeki PTC daha iyi prognozludur; tümör daha küçük, santral metastaz daha nadir, BRAF V600E mutasyon sıklığı belirgin az ve sağkalım daha olumludur. HT'nin tümör mikroçevresi koruyucu bariyer işlevi görür.",
         "D": "HT zemininde PTC geliştiğinde mutlaka daha agresif cerrahi yapılmalıdır; profilaktik santral boyun diseksiyonu standarttır.",
         "E": "Hashimoto tiroiditi, PTC riskini azalttığından bu İİAB sonucu artefakttır; tekrar biyopsi yapılmalıdır."
       },
-      "dogru": "B",
+      "dogru": "C",
       "aciklama_kisa": "HT zemininde gelişen PTC: tümör küçük, santral metastaz nadir, BRAF V600E az, prognoz iyi. HT tümör mikroçevresi (lenfosit infiltrasyonu) tümöre karşı bariyer oluşturur — 'iki keskinli kılıç' konsepti.",
       "aciklama_detay": "Hashimoto tiroiditi ve PTC ilişkisi epidemiyolojik açıdan 'iki keskinli kılıç' olarak tanımlanır. HT kronik inflamasyon ve TSH yüksekliği yoluyla PTC gelişim riskini artırır. Ancak tümör oluştuktan sonra HT'nin immün mikroçevresi (TIL — tümör infiltre eden lenfositler) tümörün ilerlemesini frenler. HT zemininde gelişen PTC'de: boyut daha küçük, santral lenf nodu metastazı daha nadir, ekstratiroidal yayılım az, BRAF V600E mutasyonu daha seyrek, sağkalım daha iyi. Prognoz farkı cerrahi genişliği değiştirmez — standart kılavuz önerileri uygulanır.",
       "secenekAciklamalari": {
         "A": "YANLIS — HT zeminindeki PTC daha az agresif değil daha az agresiftir; BRAF V600E daha az sıklıkta görülür.",
-        "B": "DOGRU — HT tümör mikroçevresi koruyucu etkisi → daha iyi prognoz. 'İki keskinli kılıç' konsepti.",
-        "C": "YANLIS — HT tümör biyolojisini anlamlı biçimde etkiler; prognoz farklıdır.",
+        "B": "YANLIS — HT tümör biyolojisini anlamlı biçimde etkiler; prognoz farklıdır.",
+        "C": "DOGRU — HT tümör mikroçevresi koruyucu etkisi → daha iyi prognoz. 'İki keskinli kılıç' konsepti.",
         "D": "YANLIS — Prognoz avantajı cerrahi yaklaşımı değiştirmez; profilaktik santral diseksiyonu rutin önerilmez.",
         "E": "YANLIS — HT ve PTC birlikteliği gerçektir; İİAB sonucunu HT varlığıyla göz ardı etmek hatalıdır."
       },
@@ -279,20 +279,20 @@
       "metin": "Yetmiş iki yaşında erkek hasta, yeni tanı aşikar hipotiroidi (Hashimoto) nedeniyle endokrinoloji polikliniğine başvurdu. Özgeçmişinde stabil anjina pektoris ve 6 ay önce geçirilmiş NSTEMI var. TSH: 18 mU/L, sT4: 0.54 ng/dL.\n\nBu hastada LT4 tedavisini başlama stratejisi için en doğru yaklaşım hangisidir?",
       "secenekler": {
         "A": "Genç hastalara uygulanan tam replasman dozu hesaplanarak (1.6 µg/kg/gün) hemen başlanmalıdır; geç tedavi kardiyak riski artırır.",
-        "B": "LT4 tedavisi kardiyovasküler hastalığı olan yaşlı hastada 12.5–25 µg/gün düşük doz ile başlanmalı; her 6–8 haftada TSH kontrolüyle yavaş titre edilmelidir.",
+        "B": "KAH'lı hastalarda LT4 yerine T3/T4 kombinasyonu kullanılmalıdır; T3 kardiyak koruma sağlar.",
         "C": "Aktif koroner hastalığı bulunan hastalarda LT4 başlanmamalı; kardiyoloji konsültasyonu sonrası tiroid tedavisi ertelenebilir.",
         "D": "TSH 18 mU/L ile acil LT4 replasmanı gereklidir; ilk doz 100 µg IV olarak uygulanmalıdır.",
-        "E": "KAH'lı hastalarda LT4 yerine T3/T4 kombinasyonu kullanılmalıdır; T3 kardiyak koruma sağlar."
+        "E": "LT4 tedavisi kardiyovasküler hastalığı olan yaşlı hastada 12.5–25 µg/gün düşük doz ile başlanmalı; her 6–8 haftada TSH kontrolüyle yavaş titre edilmelidir."
       },
-      "dogru": "B",
+      "dogru": "E",
       "aciklama_kisa": "Yaşlı + KAH: LT4 12.5–25 µg ile başla, her 6–8 haftada titre et. Hızlı doz artışı anjina, aritmi veya akut koroner sendrom tetikleyebilir.",
       "aciklama_detay": "Hipotiroidide LT4 başlangıç dozu yaş ve kardiyovasküler duruma göre değişir. Genç/sağlıklı: 1.5–1.7 µg/kg/gün tam replasman. Yaşlı/KAH: 12.5–25 µg/gün ile başla. Mekanizma: Hipotiroidi uzun süreli düşük metabolizma ile kompanse kardiyak fonksiyon sağlar; LT4 hızla metabolizmayı artırdığında miyokard oksijen tüketimi artar → mevcut koroner stenoz yetersiz kalır → anjina veya MI tetiklenebilir. IV T3/T4 miksödem koması için rezerve edilir; bu hasta kronik hipotiroidi. T3 kardiyak koruma sağlamaz — aksine taşikardi/atriyal fibrilasyon riski yaratır.",
       "secenekAciklamalari": {
         "A": "YANLIS — Tam replasman dozu KAH'lı yaşlıda kontrendike; miyokard iskemisini tetikler.",
-        "B": "DOGRU — 12.5–25 µg başlangıç + yavaş titrasyon: KAH'lı yaşlıda altın standart.",
+        "B": "YANLIS — T3/T4 kombinasyonunun KAH'ta üstünlüğü kanıtlanmamış; T3 aritmojenik potansiyel taşır.",
         "C": "YANLIS — Aşikar hipotiroidi tedavisiz bırakılmaz; düşük doz ile dikkatli başlanır.",
         "D": "YANLIS — IV LT4/T3 miksödem koması içindir; bu hastada koma yok.",
-        "E": "YANLIS — T3/T4 kombinasyonunun KAH'ta üstünlüğü kanıtlanmamış; T3 aritmojenik potansiyel taşır."
+        "E": "DOGRU — 12.5–25 µg başlangıç + yavaş titrasyon: KAH'lı yaşlıda altın standart."
       },
       "etiketler": [
         "LT4 Başlangıç Dozu",
@@ -309,19 +309,19 @@
       "metin": "Primer hipotiroidi veya diferansiye tiroid kanseri nüks önleme tedavisi nedeniyle levotiroksin (L-T4) replasman/süpresyon tedavisi alan yetişkin bir hastada, izlem sırasında saptanan düşük TSH ve/veya yüksek serbest T4 (sT4) düzeylerinin biyokimyasal değerlendirilmesi, doz titrasyonu ilkeleri ve laboratuvar etkileşimleri ile ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
       "secenekler": {
         "A": "Primer hipotiroidi nedeniyle L-T4 alan ve TSH düzeyi hafif subnormal (0.05 – 0.3 mU/L) saptanan bir hastada, aşırı tedavinin derecesini netleştirmek için mutlaka serbest T4 düzeyi ölçülmeli ve doz %50 oranında azaltılmalıdır.",
-        "B": "Primer hipotiroidi takibinde L-T4 kullanan bir hastada TSH <0.05 mU/L ve serbest T4 düzeyi referans aralığı ortalamasının iki katı (örneğin normal aralığı 0.9–1.9 ng/dL olan bir testte sT4: 2.8 ng/dL) saptandığında, hedef orta-normal (mid-normal) serbest T4 seviyesine ulaşmak için L-T4 dozu %50 oranında azaltılabilir ve TSH 6 ila 8 hafta sonra yeniden değerlendirilmelidir.",
+        "B": "Reçetesiz satılan biyotin (5–10 mg/gün) takviyeleri alan bireylerde, biyotinillenmiş antikor içeren ticari immünölçüm yöntemlerine bağlı gelişen yalancı tirotoksikoz tablosunun (yalancı düşük TSH, yalancı yüksek sT4) ortadan kalkması için tiroid testleri biyotin kesildikten 12 saat sonra tekrarlanmalıdır.",
         "C": "Diferansiye tiroid kanseri nedeniyle TSH süpresyon tedavisi (hedef TSH <0.05 mU/L) alan bir hastada serbest T4 hafif yüksek saptandığında, TSH hedefini korumak mümkün olmasa dahi L-T4 dozu derhal yarı yarıya (%50) azaltılarak serbest T4 normal aralığın alt sınırına çekilmelidir.",
-        "D": "Reçetesiz satılan biyotin (5–10 mg/gün) takviyeleri alan bireylerde, biyotinillenmiş antikor içeren ticari immünölçüm yöntemlerine bağlı gelişen yalancı tirotoksikoz tablosunun (yalancı düşük TSH, yalancı yüksek sT4) ortadan kalkması için tiroid testleri biyotin kesildikten 12 saat sonra tekrarlanmalıdır.",
+        "D": "Primer hipotiroidi takibinde L-T4 kullanan bir hastada TSH <0.05 mU/L ve serbest T4 düzeyi referans aralığı ortalamasının iki katı (örneğin normal aralığı 0.9–1.9 ng/dL olan bir testte sT4: 2.8 ng/dL) saptandığında, hedef orta-normal (mid-normal) serbest T4 seviyesine ulaşmak için L-T4 dozu %50 oranında azaltılabilir ve TSH 6 ila 8 hafta sonra yeniden değerlendirilmelidir.",
         "E": "Gebelerde 2. ve 3. trimesterlarda bağlayıcı protein (TBG) değişimlerine bağlı olarak otomatize serbest T4 ölçümleri ile TSH arasında çelişki saptandığında, tanıyı doğrulamak amacıyla serbest T3 tek başına yeterlidir; Total T4 ölçümü yapılması kontrendikedir."
       },
-      "dogru": "B",
+      "dogru": "D",
       "aciklama_kisa": "TSH <0.05 mU/L ve sT4 referans ortalamasının iki katı ise L-T4 dozu %50 azaltılabilir; her doz değişiminden 6–8 hafta sonra TSH ve sT4 tekrarlanır.",
       "aciklama_detay": "Primer hipotiroidizm ve tiroid kanseri izleminde levotiroksin (L-T4) tedavisinin titrasyonu, serbest T4 ve TSH düzeylerinin birlikte yorumlanmasını gerektirir.\n\nPrimer hipotiroidi tedavisi gören hastalarda TSH <0.05 mU/L olarak aşırı baskılandığında ve serbest T4 düzeyi normal referans aralığı ortalamasının iki katına çıktığında (örneğin 0.9–1.9 ng/dL referans aralığında sT4: 2.8 ng/dL), aşırı tedaviyi düzeltmek ve hedef orta-normal serbest T4 seviyesine ulaşmak için L-T4 dozunun %50 oranında azaltılması gerekebilir. Yapılan tüm doz ayarlamalarından 6 ila 8 hafta sonra ilave doz ihtiyacını belirlemek amacıyla TSH (ve sT4) düzeyleri tekrarlanmalıdır.",
       "secenekAciklamalari": {
         "A": "YANLIS — L-T4 alan primer hipotiroidi hastalarında TSH hafif subnormal (0.05 – 0.3 mU/L) saptandığında serbest T4 ölçümü yapılması gerekli değildir. Bu vakalarda L-T4 dozunun günde 12 ila 25 mcg azaltılması genellikle yeterli olmaktadır.",
-        "B": "DOGRU — TSH <0.05 mU/L ve sT4 referans ortalamasının iki katı ise doz %50 azaltılabilir; kontrol 6–8 hafta sonra yapılır.",
+        "B": "YANLIS — Reçetesiz satılan ve yüksek doz biyotin (5-10 mg) içeren takviyeler, biyotinillenmiş antikor kullanan ticari immünölçüm kitlerinde etkileşime yol açarak yalancı TSH düşüklüğü ve yalancı serbest T4/T3 yüksekliği oluşturur. Bu etkileşimin ortadan kalkması için tiroid testleri biyotin takviyesi kesildikten en az 2 gün (48 saat) sonra tekrarlanmalıdır; 12 saat yetersizdir.",
         "C": "YANLIS — Tiroid kanserinde TSH süpresyonu (hedef TSH <0.05 mU/L) hedeflendiğinde serbest T4 hafif yüksek seyredebilir. Eğer serbest T4 sadece hafif yüksekse, TSH'yi hedefte tutarken L-T4 dozunu azaltmak mümkün olmayabilir. Doz indirimi yalnızca serbest T4 çok yüksek olduğunda ve TSH hedefini koruyabilecek en düşük doza çekilecek şekilde planlanır.",
-        "D": "YANLIS — Reçetesiz satılan ve yüksek doz biyotin (5-10 mg) içeren takviyeler, biyotinillenmiş antikor kullanan ticari immünölçüm kitlerinde etkileşime yol açarak yalancı TSH düşüklüğü ve yalancı serbest T4/T3 yüksekliği oluşturur. Bu etkileşimin ortadan kalkması için tiroid testleri biyotin takviyesi kesildikten en az 2 gün (48 saat) sonra tekrarlanmalıdır; 12 saat yetersizdir.",
+        "D": "DOGRU — TSH <0.05 mU/L ve sT4 referans ortalamasının iki katı ise doz %50 azaltılabilir; kontrol 6–8 hafta sonra yapılır.",
         "E": "YANLIS — Gebeliğin 2. ve 3. trimesterlarında bağlayıcı proteinlerdeki (TBG) değişimler ve diğer faktörler nedeniyle otomatize serbest T4 ölçümleri güvensiz olabilir. Serbest T4 ölçümü ile TSH arasında çelişki saptandığında tanıyı netleştirmek için Total T4 düzeyinin de ölçülmesi önerilmektedir."
       },
       "etiketler": [

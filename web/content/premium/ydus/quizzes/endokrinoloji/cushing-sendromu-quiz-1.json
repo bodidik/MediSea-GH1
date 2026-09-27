@@ -39,19 +39,19 @@
       "metin": "Cushing hastalığı tanılı bir kortikotrop adenomun moleküler analizinde USP8 geninde somatik mutasyon saptanıyor.\n\nBu mutasyonun altta yatan mekanizması ve tedaviye etkisi hangisidir?",
       "secenekler": {
         "A": "USP8 mutasyonu EGFR'nin lizozomal yıkımını hızlandırır, EGFR sinyali azalır ve tümör büyümesi yavaşlar.",
-        "B": "USP8 mutasyonu EGFR'nin yıkımdan kurtulup hücre zarına geri dönmesini (recycling) sağlar; EGFR sinyali aşırı aktifleşerek POMC transkripsiyonunu artırır. Bu tümörlerde SSTR5 ekspresyonu yüksek olduğundan pasireotide daha iyi yanıt beklenir.",
+        "B": "USP8 mutasyonu PKA katalitik alt biriminin düzenleyici alt birimden ayrılmasına neden olarak cAMP'den bağımsız aktivasyon sağlar.",
         "C": "USP8 mutasyonu doğrudan ACTH reseptörünü aktive ederek adrenal bezde otonom kortizol üretimine yol açar.",
-        "D": "USP8 mutasyonu PKA katalitik alt biriminin düzenleyici alt birimden ayrılmasına neden olarak cAMP'den bağımsız aktivasyon sağlar.",
+        "D": "USP8 mutasyonu EGFR'nin yıkımdan kurtulup hücre zarına geri dönmesini (recycling) sağlar; EGFR sinyali aşırı aktifleşerek POMC transkripsiyonunu artırır. Bu tümörlerde SSTR5 ekspresyonu yüksek olduğundan pasireotide daha iyi yanıt beklenir.",
         "E": "USP8 mutasyonu yalnızca ektopik ACTH sendromu yapan nöroendokrin tümörlerde görülür, hipofizer adenomlarda saptanmaz."
       },
-      "dogru": "B",
+      "dogru": "D",
       "aciklama_kisa": "USP8 bir deubikuitinazdır; mutasyonla EGFR yıkımdan kurtulup hücre zarına geri döner → EGFR sinyali artar → POMC/ACTH sentezi artar. USP8 mutasyonlu tümörlerde SSTR5 ekspresyonu yüksektir → pasireotide iyi yanıt.",
-      "aciklama_detay": "Kortikotrop adenomların yaklaşık %40-50'sinde USP8 geninde somatik mutasyon bulunur. USP8, reseptörlerin lizozomal yıkımını düzenleyen bir deubikuitinaz enzimidir. Mutasyon sonucu EGFR yıkımdan kurtularak hücre zarına geri döner (recycling); EGFR sinyal yolağı aşırı aktifleşir ve bu durum POMC mRNA transkripsiyonunu ve ACTH sentezini uyarır. USP8 mutasyonlu tümörlerde SSTR5 (somatostatin reseptör tip 5) ekspresyonu daha yüksektir; bu nedenle pasireotid tedavisine daha iyi yanıt verebilirler. PRKACA mutasyonu (seçenek D'deki PKA mekanizması) adrenal adenomlarla ilişkilidir, USP8 ile karıştırılmamalıdır.",
+      "aciklama_detay": "Kortikotrop adenomların yaklaşık %40-50'sinde USP8 geninde somatik mutasyon bulunur. USP8, reseptörlerin lizozomal yıkımını düzenleyen bir deubikuitinaz enzimidir. Mutasyon sonucu EGFR yıkımdan kurtularak hücre zarına geri döner (recycling); EGFR sinyal yolağı aşırı aktifleşir ve bu durum POMC mRNA transkripsiyonunu ve ACTH sentezini uyarır. USP8 mutasyonlu tümörlerde SSTR5 (somatostatin reseptör tip 5) ekspresyonu daha yüksektir; bu nedenle pasireotid tedavisine daha iyi yanıt verebilirler. PRKACA mutasyonu (seçenek B'deki PKA mekanizması) adrenal adenomlarla ilişkilidir, USP8 ile karıştırılmamalıdır.",
       "secenekAciklamalari": {
         "A": "YANLIS — Tam tersi: mutasyon EGFR yıkımını AZALTIR, sinyali ARTIRIR.",
-        "B": "DOGRU — EGFR recycling artışı → POMC/ACTH artışı; SSTR5↑ → pasireotid duyarlılığı.",
+        "B": "YANLIS — Bu mekanizma PRKACA mutasyonuna (adrenal adenom) aittir, USP8'e değil.",
         "C": "YANLIS — USP8 ACTH reseptörünü değil, EGFR yolağını etkiler; adrenal değil hipofizer patoloji.",
-        "D": "YANLIS — Bu mekanizma PRKACA mutasyonuna (adrenal adenom) aittir, USP8'e değil.",
+        "D": "DOGRU — EGFR recycling artışı → POMC/ACTH artışı; SSTR5↑ → pasireotid duyarlılığı.",
         "E": "YANLIS — USP8 mutasyonu spesifik olarak kortikotrop (hipofizer) adenomlarda tanımlanmıştır."
       },
       "etiketler": [
@@ -69,20 +69,20 @@
       "metin": "Kırk yaşında kadın hasta, unilateral 2.5 cm adrenal adenoma bağlı overt Cushing sendromu nedeniyle adrenalektomi oluyor. Tümör dokusunda somatik mutasyon analizi yapılıyor.\n\nBu tip unilateral, overt kortizol salgılayan adrenal adenomlarda en sık saptanan somatik mutasyon ve mekanizması hangisidir?",
       "secenekler": {
         "A": "ARMC5 tümör baskılayıcı gen mutasyonu; germline geçişlidir ve ailevi menenjiyom riski taşır.",
-        "B": "PRKACA geninde (L205R/L206R) aktive edici mutasyon; PKA katalitik alt birimi düzenleyici alt birimden ayrılarak cAMP'den bağımsız sürekli aktif kalır.",
+        "B": "KDM1A mutasyonu; GİP reseptörü aracılı gıda-bağımlı kortizol sekresyonuna yol açar.",
         "C": "PRKAR1A geninde inaktive edici mutasyon; Carney kompleksinin bir parçasıdır.",
         "D": "USP8 geninde somatik mutasyon; EGFR sinyalini artırarak kortizol sentezini uyarır.",
-        "E": "KDM1A mutasyonu; GİP reseptörü aracılı gıda-bağımlı kortizol sekresyonuna yol açar."
+        "E": "PRKACA geninde (L205R/L206R) aktive edici mutasyon; PKA katalitik alt birimi düzenleyici alt birimden ayrılarak cAMP'den bağımsız sürekli aktif kalır."
       },
-      "dogru": "B",
+      "dogru": "E",
       "aciklama_kisa": "Overt Cushing yapan unilateral adrenal adenomların %40-50'sinde PRKACA (L205R/L206R) aktive edici mutasyonu bulunur; PKA katalitik alt birimi sürekli aktif kalır.",
       "aciklama_detay": "PRKACA, cAMP bağımlı Protein Kinaz A'nın (PKA) katalitik alt birimini kodlar. Overt Cushing sendromu yapan unilateral adrenal adenomların %40-50'sinde bu gende, özellikle L205R veya L206R bölgesinde, aktive edici somatik mutasyonlar saptanır. Bu mutasyon PKA'nın katalitik alt biriminin düzenleyici alt birimden ayrılmasına ve cAMP'den bağımsız olarak sürekli aktif kalmasına neden olur — sonuçta otonom, sürekli kortizol sentezi. Hafif otonom kortizol sekresyonu (MACS) gösteren adenomlarda ise Wnt sinyal yolağını aktive eden CTNNB1 (β-katenin) mutasyonları daha dominanttır. ARMC5 ve PRKAR1A mutasyonları sırasıyla PBMAH ve PPNAD/Carney kompleksi ile ilişkilidir, unilateral adenom değil.",
       "secenekAciklamalari": {
         "A": "YANLIS — ARMC5 mutasyonu PBMAH (bilateral makronodüler hiperplazi) ile ilişkilidir, unilateral adenom değil.",
-        "B": "DOGRU — PRKACA L205R/L206R: unilateral overt Cushing yapan adrenal adenomların en sık somatik mutasyonu.",
+        "B": "YANLIS — KDM1A, PBMAH'ın GİP-bağımlı formunun genetik temelidir, unilateral adenomda değil.",
         "C": "YANLIS — PRKAR1A mutasyonu PPNAD/Carney kompleksinde görülür, tek adenomda değil.",
         "D": "YANLIS — USP8 hipofizer kortikotrop adenomlara özgüdür, adrenal dokuda rol oynamaz.",
-        "E": "YANLIS — KDM1A, PBMAH'ın GİP-bağımlı formunun genetik temelidir, unilateral adenomda değil."
+        "E": "DOGRU — PRKACA L205R/L206R: unilateral overt Cushing yapan adrenal adenomların en sık somatik mutasyonu."
       },
       "etiketler": [
         "PRKACA Mutasyonu",
@@ -98,18 +98,18 @@
       "id": "s4",
       "metin": "Otuz beş yaşında kadın hasta, bilateral adrenal makronodüler hiperplazi (her iki bezde >1 cm çok sayıda nodül) nedeniyle değerlendiriliyor. Annesinde de adrenal hiperplazi ve intrakraniyal menenjiyom öyküsü mevcut.\n\nBu ailesel tabloda en olası genetik mekanizma ve klinik önemi nedir?",
       "secenekler": {
-        "A": "PRKACA somatik mutasyonu; sporadik olup ailesel geçiş göstermez.",
-        "B": "ARMC5 germline tümör baskılayıcı gen mutasyonu (otozomal dominant); klinik tablo daha ağır seyreder ve ailevi menenjiyom riski taşır.",
+        "A": "ARMC5 germline tümör baskılayıcı gen mutasyonu (otozomal dominant); klinik tablo daha ağır seyreder ve ailevi menenjiyom riski taşır.",
+        "B": "PRKACA somatik mutasyonu; sporadik olup ailesel geçiş göstermez.",
         "C": "USP8 mutasyonu; hipofizer kaynaklı olup adrenal bezleri ikincil olarak etkiler.",
         "D": "KDM1A mutasyonu; yalnızca gıda alımıyla tetiklenen izole hafif hiperkortizolizm yapar, ailesel değildir.",
         "E": "PRKAR1A inaktive edici mutasyonu; Carney kompleksinin zorunlu bir bulgusu olup mutlaka kardiyak miksoma eşlik eder."
       },
-      "dogru": "B",
+      "dogru": "A",
       "aciklama_kisa": "PBMAH hastalarının ~%25'inde germline+somatik ARMC5 mutasyonu bulunur (otozomal dominant). ARMC5 mutasyonlu hastalarda klinik tablo daha ağır ve ailevi menenjiyom riski artmıştır.",
       "aciklama_detay": "PBMAH'ın (Primer Bilateral Makronodüler Adrenal Hiperplazi) üç ana genetik/patofizyolojik mekanizması: (1) Aberran/ektopik reseptör ekspresyonu (GİP, V1-vazopressin, LH/hCG, β-adrenerjik), (2) ARMC5 tümör baskılayıcı gen mutasyonu — hastaların yaklaşık %25'inde germline ve somatik mutasyonlar saptanır, otozomal dominant geçişlidir; bu hastaların klinik tabloları daha ağırdır ve ailevi menenjiyom riski taşıyabilirler, (3) KDM1A mutasyonu — GİP-bağımlı (gıda ile alevlenen) Cushing sendromunun genetik temelidir. Bu vakada aile öyküsünde hem adrenal hiperplazi hem menenjiyom olması ARMC5 mutasyonunu düşündürür.",
       "secenekAciklamalari": {
-        "A": "YANLIS — PRKACA unilateral adenomlarda somatik mutasyon olarak görülür, PBMAH'ın ailesel formunu açıklamaz.",
-        "B": "DOGRU — ARMC5: PBMAH'ın ~%25'i, otozomal dominant, ağır klinik + ailevi menenjiyom riski.",
+        "A": "DOGRU — ARMC5: PBMAH'ın ~%25'i, otozomal dominant, ağır klinik + ailevi menenjiyom riski.",
+        "B": "YANLIS — PRKACA unilateral adenomlarda somatik mutasyon olarak görülür, PBMAH'ın ailesel formunu açıklamaz.",
         "C": "YANLIS — USP8 hipofizer kortikotrop adenomlara özgüdür, PBMAH ile ilişkili değildir.",
         "D": "YANLIS — KDM1A mutasyonu var olsa da menenjiyom ilişkisi tanımlanmamıştır; ARMC5'e özgü özellik menenjiyom riskidir.",
         "E": "YANLIS — Kardiyak miksoma Carney kompleksinde sık görülür ama zorunlu bulgu değildir; ayrıca bu vaka PPNAD değil PBMAH tanımı ile uyumludur."
@@ -189,18 +189,18 @@
       "metin": "ACTH-bağımlı Cushing sendromu doğrulanmış bir hastada hipofiz MRG'de belirgin bir lezyon saptanmıyor. Cushing Hastalığı ile Ektopik ACTH sendromunu ayırt etmek için hangi test altın standarttır ve nasıl yorumlanır?",
       "secenekler": {
         "A": "Yüksek doz (8 mg) DST tek başına yeterlidir; kortizolün herhangi bir oranda baskılanması Cushing Hastalığı'nı doğrular.",
-        "B": "Bilateral İnferior Petrozal Sinüs Örneklemesi (BIPSS); bazal santral/periferik ACTH oranı ≥2 veya CRH/Desmopressin sonrası ≥3 olması Cushing Hastalığı'nı gösterir. Gradiyent yoksa ektopik kaynak araştırılır.",
-        "C": "Ga-68 DOTATATE PET/BT ilk basamak test olarak tercih edilmeli, BIPSS'e gerek yoktur.",
+        "B": "Ga-68 DOTATATE PET/BT ilk basamak test olarak tercih edilmeli, BIPSS'e gerek yoktur.",
+        "C": "Bilateral İnferior Petrozal Sinüs Örneklemesi (BIPSS); bazal santral/periferik ACTH oranı ≥2 veya CRH/Desmopressin sonrası ≥3 olması Cushing Hastalığı'nı gösterir. Gradiyent yoksa ektopik kaynak araştırılır.",
         "D": "Adrenal ince kesit BT, ACTH-bağımlı-bağımsız ayrımını doğrudan yapar; BIPSS gereksizdir.",
         "E": "Plazma ACTH düzeyinin tek ölçümü Cushing Hastalığı ile ektopik ACTH'yi kesin olarak ayırt eder."
       },
-      "dogru": "B",
+      "dogru": "C",
       "aciklama_kisa": "MRG negatif/lezyon <6mm olduğunda BIPSS altın standarttır. Bazal santral/periferik ACTH oranı ≥2 veya CRH/DDAVP sonrası ≥3 = Cushing Hastalığı. Gradiyent yoksa ektopik kaynak taraması (Toraks/Batın BT, Ga-68 DOTATATE, FDG-PET) yapılır.",
       "aciklama_detay": "ACTH-bağımlı Cushing sendromunda lokalizasyon algoritması: Hipofiz MRG'de >6 mm adenom saptanır ve klinik/biyokimyasal uyum varsa (yüksek doz DST'de kortizolün %50'den fazla baskılanması veya CRH/Desmopressin testinde kortizol/ACTH artışı) doğrudan Cushing Hastalığı tanısı konabilir. Ancak MRG normal veya lezyon <6 mm ise BIPSS altın standart testtir: bilateral inferior petrozal sinüslerden ve periferden eş zamanlı ACTH örneklemesi yapılır. Bazal santral/periferik ACTH oranının ≥2, veya CRH/Desmopressin uyarısı sonrası ≥3 olması Cushing Hastalığını yüksek duyarlılık ve özgüllükle doğrular. Gradiyent saptanmazsa ektopik ACTH kaynağı düşünülerek Toraks/Batın BT, Ga-68 DOTATATE veya FDG-PET ile tarama yapılır.",
       "secenekAciklamalari": {
         "A": "YANLIS — Yüksek doz DST tek başına yeterli değildir, tanı gücü sınırlıdır ve BIPSS'in yerini tutmaz; ayrıca kesme değeri %50 baskılanmadır, herhangi bir oran değil.",
-        "B": "DOGRU — BIPSS altın standart; oran eşikleri ile Cushing Hastalığı doğrulanır veya ektopik kaynağa yönlendirilir.",
-        "C": "YANLIS — Ga-68 DOTATATE, gradiyent BIPSS'te saptanmadıktan sonra ektopik kaynak taramasında kullanılır, ilk basamak değildir.",
+        "B": "YANLIS — Ga-68 DOTATATE, gradiyent BIPSS'te saptanmadıktan sonra ektopik kaynak taramasında kullanılır, ilk basamak değildir.",
+        "C": "DOGRU — BIPSS altın standart; oran eşikleri ile Cushing Hastalığı doğrulanır veya ektopik kaynağa yönlendirilir.",
         "D": "YANLIS — Adrenal BT, ACTH-bağımsız (adrenal kaynaklı) CS şüphesinde kullanılır; bu hastada ACTH-bağımlılık zaten doğrulanmıştır.",
         "E": "YANLIS — Tek ACTH ölçümü gri zon (10-20 pg/mL) dışında genel ayrımı yapabilir ama Cushing Hastalığı ile ektopik ACTH arasında lokalizasyonu belirleyemez; bu ikisi de ACTH-bağımlıdır."
       },
@@ -219,19 +219,19 @@
       "metin": "Aktif Cushing sendromu tanılı 48 yaşında kadın hasta, elektif transsfenoidal cerrahiye hazırlanıyor. Preoperatif değerlendirmede özel bir tromboprofilaksi planı gündeme geliyor.\n\nBu yaklaşımın patofizyolojik gerekçesi nedir?",
       "secenekler": {
         "A": "Hiperkortizolizm trombosit sayısını doğrudan azaltarak paradoksik kanama riski yaratır; bu nedenle antikoagülan değil, trombosit süspansiyonu hazırda bulundurulmalıdır.",
-        "B": "Hiperkortizolizm Faktör VIII ve von Willebrand faktör sentezini artırır ve fibrinolizi bozar; bu durum DVT/PE riskini belirgin artırır. Bu nedenle aktif hastalıkta, perioperatif dönemde ve remisyon sonrası bir süre tromboprofilaksi (DMAH) gerekir.",
+        "B": "Glukokortikoid fazlalığı fibrinolitik sistemi güçlendirerek kanama riskini artırır, bu nedenle profilaktik antikoagülan kontrendikedir.",
         "C": "Cushing sendromunda trombotik risk artışı yalnızca eşlik eden obeziteye bağlıdır; hiperkortizolizmin kendisinin koagülasyon üzerine etkisi yoktur.",
-        "D": "Glukokortikoid fazlalığı fibrinolitik sistemi güçlendirerek kanama riskini artırır, bu nedenle profilaktik antikoagülan kontrendikedir.",
+        "D": "Hiperkortizolizm Faktör VIII ve von Willebrand faktör sentezini artırır ve fibrinolizi bozar; bu durum DVT/PE riskini belirgin artırır. Bu nedenle aktif hastalıkta, perioperatif dönemde ve remisyon sonrası bir süre tromboprofilaksi (DMAH) gerekir.",
         "E": "Tromboprofilaksi yalnızca adrenalektomi planlanan hastalarda gereklidir, transsfenoidal cerrahide gerekmez."
       },
-      "dogru": "B",
+      "dogru": "D",
       "aciklama_kisa": "Hiperkortizolizm Faktör VIII + vWF sentezini artırır, fibrinolizi bozar → hiperkoagülabl durum → DVT/PE riski yüksek. Aktif hastalık + perioperatif dönem + remisyon sonrası bir süre tromboprofilaksi (DMAH) endikedir.",
       "aciklama_detay": "Cushing sendromunda hiperkortizolizme bağlı edinsel hiperkoagülabl durum gelişir: Faktör VIII ve von Willebrand faktör (vWF) sentezi artar, fibrinoliz bozulur (PAI-1 artışı). Bu nedenle DVT ve pulmoner emboli riski genel popülasyona göre belirgin yüksektir — özellikle cerrahi gibi ek risk faktörlerinin eklendiği dönemlerde. Kılavuzlar aktif hastalık döneminde, perioperatif dönemde ve biyokimyasal remisyon sağlandıktan sonra bir süre daha (haftalar) düşük molekül ağırlıklı heparin (DMAH) ile tromboprofilaksi önermektedir. Bu, cerrahi tipinden (transsfenoidal veya adrenalektomi) bağımsız bir prensiptir.",
       "secenekAciklamalari": {
         "A": "YANLIS — Hiperkortizolizm trombosit sayısını azaltmaz; asıl mekanizma koagülasyon faktörlerinin artışı ve fibrinolizin bozulmasıdır.",
-        "B": "DOGRU — Faktör VIII + vWF artışı + fibrinoliz bozukluğu → hiperkoagülabilite → tromboprofilaksi gereklidir.",
+        "B": "YANLIS — Glukokortikoid fazlalığı fibrinolizi GÜÇLENDİRMEZ, tam tersine BOZAR (azaltır); bu da trombotik riski artırır.",
         "C": "YANLIS — Obezite katkıda bulunabilir ama hiperkortizolizmin kendisi bağımsız bir hiperkoagülabl mekanizma oluşturur.",
-        "D": "YANLIS — Glukokortikoid fazlalığı fibrinolizi GÜÇLENDİRMEZ, tam tersine BOZAR (azaltır); bu da trombotik riski artırır.",
+        "D": "DOGRU — Faktör VIII + vWF artışı + fibrinoliz bozukluğu → hiperkoagülabilite → tromboprofilaksi gereklidir.",
         "E": "YANLIS — Tromboprofilaksi prensibi cerrahi tipinden bağımsızdır; transsfenoidal cerrahi dahil tüm perioperatif dönemde geçerlidir."
       },
       "etiketler": [
@@ -249,20 +249,20 @@
       "metin": "Cerrahiye aday olmayan, ciddi tip 2 diyabeti ve glukoz intoleransı bulunan Cushing sendromlu bir hastaya mifepriston başlanıyor.\n\nBu tedavinin izleminde en doğru yaklaşım hangisidir?",
       "secenekler": {
         "A": "Tedavi yanıtı serum kortizol düzeyi ile takip edilmeli; kortizol düşerse doz artırılmalıdır.",
-        "B": "Mifepriston glukokortikoid reseptörünü antagonize eder; negatif feedback ortadan kalktığından serum kortizol ve ACTH düzeyleri belirgin şekilde YÜKSELİR. Bu nedenle tedavi takibi kortizol ölçümüyle yapılamaz; klinik yanıt, kan şekeri ve serum potasyum düzeyleriyle izlenmelidir.",
+        "B": "Mifepriston progesteron reseptörünü etkilemez, yalnızca glukokortikoid reseptörüne özgüdür.",
         "C": "Mifepriston adrenal steroidogenezi doğrudan inhibe ettiğinden serum kortizolü düşürür ve klasik tarama testleriyle (UFC, DST) izlenebilir.",
         "D": "Mifepriston tedavisinde hipokalemi riski yoktur; yalnızca hiperkalemi açısından izlem gerekir.",
-        "E": "Mifepriston progesteron reseptörünü etkilemez, yalnızca glukokortikoid reseptörüne özgüdür."
+        "E": "Mifepriston glukokortikoid reseptörünü antagonize eder; negatif feedback ortadan kalktığından serum kortizol ve ACTH düzeyleri belirgin şekilde YÜKSELİR. Bu nedenle tedavi takibi kortizol ölçümüyle yapılamaz; klinik yanıt, kan şekeri ve serum potasyum düzeyleriyle izlenmelidir."
       },
-      "dogru": "B",
+      "dogru": "E",
       "aciklama_kisa": "Mifepriston glukokortikoid reseptör antagonistidir; feedback kalkınca kortizol/ACTH artar. Bu yüzden takip kortizolle yapılamaz — klinik + glukoz + K ile izlenir. FDA onayı özellikle hiperglisemi/DM'li, cerrahiye aday olmayan CS hastalarında.",
       "aciklama_detay": "Mifepriston, hedef dokuda glukokortikoid reseptörlerini (ve progesteron reseptörlerini) antagonize ederek etki gösterir; adrenal steroidogenezi baskılamaz, aksine reseptör düzeyinde feedback inhibisyonun kalkması nedeniyle hipotalamus-hipofiz-adrenal aks stimüle olur ve plazma kortizol ile ACTH düzeyleri belirgin şekilde YÜKSELİR. Bu farmakodinamik özellik nedeniyle tedavi yanıtı klasik biyokimyasal testlerle (serum kortizol, UFC, DST) değerlendirilemez — yükselen kortizol düzeyi yanıltıcı olur. Bunun yerine klinik iyileşme (kilo, glisemik kontrol, kan basıncı), açlık kan şekeri/HbA1c ve serum potasyum düzeyi (hipokalemi riski, çünkü yüksek kortizol mineralokortikoid reseptörü de uyarabilir) takip parametreleridir. Mifepriston özellikle cerrahiye aday olmayan ve hiperglisemi/DM veya glukoz intoleransı olan Cushing sendromu hastalarında FDA onaylıdır. Progesteron reseptör antagonizması nedeniyle kadınlarda endometrial kalınlaşma ve vajinal kanama riski de vardır.",
       "secenekAciklamalari": {
         "A": "YANLIS — Kortizol düzeyi mifepriston tedavisinde YÜKSELİR, düşmez; bu düzeyle doz ayarlaması yapılamaz.",
-        "B": "DOGRU — Feedback kalkması → kortizol/ACTH artışı → izlem klinik + glukoz + K ile yapılır.",
+        "B": "YANLIS — Mifepriston progesteron reseptörünü de antagonize eder; bu nedenle endometrial kalınlaşma/kanama riski taşır.",
         "C": "YANLIS — Mifepriston steroidogenezi inhibe etmez, reseptör düzeyinde antagonizma yapar; UFC/DST ile izlenemez.",
         "D": "YANLIS — Mifepriston tedavisinde hipokalemi riski VARDIR (yüksek kortizolün mineralokortikoid etkisi); potasyum yakından izlenmelidir.",
-        "E": "YANLIS — Mifepriston progesteron reseptörünü de antagonize eder; bu nedenle endometrial kalınlaşma/kanama riski taşır."
+        "E": "DOGRU — Feedback kalkması → kortizol/ACTH artışı → izlem klinik + glukoz + K ile yapılır."
       },
       "etiketler": [
         "Mifepriston",
@@ -278,18 +278,18 @@
       "id": "s10",
       "metin": "Cushing Hastalığı tanılı bir hasta, tekrarlayan transsfenoidal cerrahi ve radyoterapiye rağmen kontrol altına alınamayan şiddetli hiperkortizolizm nedeniyle bilateral adrenalektomi geçiriyor. Ameliyat sonrası 2 yıl içinde yüzünde ve ciltte progresif koyulaşma (hiperpigmentasyon) gelişiyor ve hipofiz MRG'de hızla büyüyen bir kitle saptanıyor.\n\nBu klinik tablo hangisidir ve altta yatan mekanizma nedir?",
       "secenekler": {
-        "A": "Addison krizi; steroid replasman dozunun yetersizliğine bağlıdır, hipofiz kitlesiyle ilgisi yoktur.",
-        "B": "Nelson Sendromu; bilateral adrenalektomi sonrası kortizolün negatif feedback baskısının tamamen ortadan kalkmasıyla kortikotrop adenomun agresif büyümesi ve aşırı ACTH/POMC salgısına bağlı hiperpigmentasyon.",
+        "A": "Nelson Sendromu; bilateral adrenalektomi sonrası kortizolün negatif feedback baskısının tamamen ortadan kalkmasıyla kortikotrop adenomun agresif büyümesi ve aşırı ACTH/POMC salgısına bağlı hiperpigmentasyon.",
+        "B": "Addison krizi; steroid replasman dozunun yetersizliğine bağlıdır, hipofiz kitlesiyle ilgisi yoktur.",
         "C": "Ektopik ACTH sendromunun nüksü; adrenalektomi öncesi kaynak gözden kaçırılmıştır.",
         "D": "Pseudo-Cushing relapsı; hiperpigmentasyon adrenal yetmezlik replasman tedavisinin bir yan etkisidir ve hipofiz kitlesiyle ilişkisizdir.",
         "E": "PPNAD nüksü; bilateral adrenalektomi sonrası kalan adrenal doku yeniden hiperplaziye uğramıştır."
       },
-      "dogru": "B",
+      "dogru": "A",
       "aciklama_kisa": "Nelson Sendromu: bilateral adrenalektomi sonrası kortizol feedback'i kalkar → kortikotrop adenom agresif büyür → ACTH/POMC aşırı artar → hiperpigmentasyon (ACTH'nin melanosit uyarıcı etkisi).",
       "aciklama_detay": "Bilateral adrenalektomi, hipofizer kaynaklı Cushing Hastalığında cerrahi ve/veya radyoterapiye dirençli, şiddetli veya hayatı tehdit eden vakalarda hayat kurtarıcı bir seçenektir; ancak ömür boyu glukokortikoid + mineralokortikoid replasmanı gerektirir. Adrenal bezlerin çıkarılmasıyla kortizolün hipofiz üzerindeki negatif feedback baskısı tamamen ortadan kalkar; eğer altta hala aktif bir kortikotrop adenom varsa, bu baskı kalkması adenomun agresif biçimde büyümesine ve aşırı ACTH (ve POMC'den türeyen melanosit uyarıcı hormon benzeri peptidler) salgılanmasına yol açabilir — bu tablo Nelson Sendromu olarak adlandırılır. Klinik olarak hızlı tümör büyümesi (kitle etkisi, görme alanı defekti riski) ve belirgin cilt/mukoza hiperpigmentasyonu ile karakterizedir. Bilateral adrenalektomi sonrası hastalar bu açıdan düzenli hipofiz MRG takibi ile izlenmelidir.",
       "secenekAciklamalari": {
-        "A": "YANLIS — Addison krizi akut bir tablo olup progresif hiperpigmentasyon + büyüyen hipofiz kitlesini açıklamaz.",
-        "B": "DOGRU — Nelson Sendromu: feedback kalkması → agresif kortikotrop adenom büyümesi → ACTH/POMC artışı → hiperpigmentasyon.",
+        "A": "DOGRU — Nelson Sendromu: feedback kalkması → agresif kortikotrop adenom büyümesi → ACTH/POMC artışı → hiperpigmentasyon.",
+        "B": "YANLIS — Addison krizi akut bir tablo olup progresif hiperpigmentasyon + büyüyen hipofiz kitlesini açıklamaz.",
         "C": "YANLIS — Hasta zaten Cushing Hastalığı (hipofizer) tanılıydı, ektopik kaynak söz konusu değildi.",
         "D": "YANLIS — Hiperpigmentasyon replasman tedavisinin yan etkisi değildir; ACTH/POMC aşırı artışının doğrudan sonucudur.",
         "E": "YANLIS — PPNAD adrenal bir patolojidir; bilateral adrenalektomi sonrası (adrenal doku çıkarılmışken) nüksü söz konusu olamaz; tablo hipofizer kaynaklıdır."

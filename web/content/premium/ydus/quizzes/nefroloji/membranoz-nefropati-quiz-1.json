@@ -39,19 +39,19 @@
       "metin": "IgG4 alt tipi otoantikorların fizyolojik olarak klasik kompleman yolağını (C1q üzerinden) aktive edemediği bilinmesine rağmen, primer membranöz nefropati hastalarında glomerüler hasar için kompleman aracılı bir mekanizma tanımlanmıştır.\n\nBu paradoksun moleküler açıklaması nedir?",
       "secenekler": {
         "A": "IgG4 molekülleri MN'de aslında IgG1'e dönüşerek klasik yolağı aktive eder.",
-        "B": "IgG4 moleküllerinin Fc bölgesindeki anormal glikozilasyon (galaktoz eksikliği) profili, immün komplekslerin doğrudan Mannoz Bağlayıcı Lektin (MBL) ile etkileşime girmesini sağlar; bu da Lektin yolağı üzerinden C5b-9 (MAC) hasarını tetikler.",
+        "B": "IgG4, C1q'ya doğrudan yüksek afiniteyle bağlanarak klasik yolağı standart mekanizmayla aktive eder; paradoks yalnızca teorik bir varsayımdır.",
         "C": "MN'de kompleman aktivasyonu tamamen alternatif yolak üzerinden, IgG4'ten bağımsız olarak gerçekleşir.",
-        "D": "IgG4, C1q'ya doğrudan yüksek afiniteyle bağlanarak klasik yolağı standart mekanizmayla aktive eder; paradoks yalnızca teorik bir varsayımdır.",
+        "D": "IgG4 moleküllerinin Fc bölgesindeki anormal glikozilasyon (galaktoz eksikliği) profili, immün komplekslerin doğrudan Mannoz Bağlayıcı Lektin (MBL) ile etkileşime girmesini sağlar; bu da Lektin yolağı üzerinden C5b-9 (MAC) hasarını tetikler.",
         "E": "Kompleman aktivasyonu yalnızca sekonder MN olgularında görülür, primer MN'de kompleman rolü yoktur."
       },
-      "dogru": "B",
+      "dogru": "D",
       "aciklama_kisa": "IgG4'ün Fc bölgesindeki anormal glikozilasyon (galaktoz eksikliği), immün komplekslerin MBL ile etkileşimini sağlayarak Lektin yolağını aktive eder — klasik yolak (C1q) bağımsız bir mekanizmadır.",
       "aciklama_detay": "IgG4 alt tipi, fizyolojik olarak C1q ile etkin şekilde etkileşemediğinden klasik kompleman yolağını aktive edemez — bu, IgG4'ün genel olarak 'daha az inflamatuar' bir izotip olarak kabul edilmesinin nedenlerinden biridir. Ancak primer MN hastalarında saptanan IgG4 otoantikorlarının Fc bölgesinde anormal glikozilasyon (spesifik olarak galaktoz eksikliği) profili gösterilmiştir. Bu anormal glikan yapısı, immün komplekslerin doğrudan Mannoz Bağlayıcı Lektin (MBL) ile etkileşime girmesine olanak tanır — MBL, normalde patojen yüzeyindeki mannoz kalıntılarını tanıyan bir kompleman aktivatörüdür, ancak burada anormal glikozillenmiş IgG4'ü tanıyarak Lektin yolağını başlatır. Bu yolak sonuçta C5b-9 (membran atak kompleksi, MAC) oluşumuna ve subepitelyal podosit hasarına yol açar — MN'nin karakteristik patolojik mekanizmalarından biridir.",
       "secenekAciklamalari": {
         "A": "YANLIS — IgG4'ün IgG1'e dönüştüğüne dair bir mekanizma tanımlanmamıştır; IgG4 kendi glikozilasyon anomalisiyle farklı bir yolağı (Lektin) aktive eder.",
-        "B": "DOGRU — Anormal Fc glikozilasyonu → MBL etkileşimi → Lektin yolağı → C5b-9.",
+        "B": "YANLIS — IgG4 C1q'ya etkin bağlanamaz; bu paradoksun çözümü tam olarak alternatif bir yolağın (Lektin) devreye girmesidir.",
         "C": "YANLIS — Tanımlanan spesifik mekanizma Lektin yolağı üzerindendir, alternatif yolak değil.",
-        "D": "YANLIS — IgG4 C1q'ya etkin bağlanamaz; bu paradoksun çözümü tam olarak alternatif bir yolağın (Lektin) devreye girmesidir.",
+        "D": "DOGRU — Anormal Fc glikozilasyonu → MBL etkileşimi → Lektin yolağı → C5b-9.",
         "E": "YANLIS — Bu mekanizma primer MN'de (PLA2R ilişkili) tanımlanmıştır, sekonder MN ile sınırlı değildir."
       },
       "etiketler": [
@@ -69,20 +69,20 @@
       "metin": "Otuz dört yaşında erkek hasta, tersiyer sifiliz tanısıyla takip edilirken nefrotik düzeyde proteinüri gelişiyor. Böbrek biyopsisinde membranöz nefropati paterni saptanıyor.\n\nBu klinik senaryoda en olası hedef antijen hangisidir?",
       "secenekler": {
         "A": "PLA2R — sifiliz ilişkili MN'de de birincil hedef antijen PLA2R'dir.",
-        "B": "NDNF (Nöron kökenli nörotrofik faktör) — sifiliz (Treponema pallidum) enfeksiyonunun indüklediği MN vakalarının spesifik hedef antijenidir.",
+        "B": "CNTN1 — sifilizin nörolojik tutulumuna sekonder gelişen MN'nin hedef antijenidir.",
         "C": "PCSK6 — sifiliz ilişkili MN'nin karakteristik antijenidir.",
         "D": "Protokaderin FAT1 — sifiliz gibi kronik enfeksiyonlarda alloimmünizasyon yoluyla ortaya çıkan hedef antijendir.",
-        "E": "CNTN1 — sifilizin nörolojik tutulumuna sekonder gelişen MN'nin hedef antijenidir."
+        "E": "NDNF (Nöron kökenli nörotrofik faktör) — sifiliz (Treponema pallidum) enfeksiyonunun indüklediği MN vakalarının spesifik hedef antijenidir."
       },
-      "dogru": "B",
+      "dogru": "E",
       "aciklama_kisa": "NDNF, sifiliz (Treponema pallidum) enfeksiyonunun indüklediği MN'nin spesifik hedef antijenidir.",
       "aciklama_detay": "Sekonder membranöz nefropati etiyolojisinde bazı enfeksiyonlar spesifik hedef antijenlerle moleküler düzeyde eşleştirilmiştir. Nöron kökenli nörotrofik faktör (NDNF), spesifik olarak sifiliz (Treponema pallidum) enfeksiyonunun indüklediği MN vakalarının ana hedef antijeni olarak tanımlanmıştır. Bu, enfeksiyon ilişkili sekonder MN'lerde antijen-etiyoloji eşleştirmesinin (PLA2R'nin primer MN'ye özgü olmasının aksine) spesifik enfeksiyöz ajanlarla ilişkilendirilebildiğinin önemli bir örneğidir.",
       "secenekAciklamalari": {
         "A": "YANLIS — PLA2R primer (idiyopatik) MN'nin hedef antijenidir, sifiliz ilişkili sekonder MN'de rolü tanımlanmamıştır.",
-        "B": "DOGRU — NDNF, sifiliz ilişkili MN'nin spesifik hedef antijenidir.",
+        "B": "YANLIS — CNTN1, CIDP (kronik inflamatuar demiyelinizan poliradikülonöropati) zemininde atipik MN'nin hedef antijenidir, sifilizle ilişkili değildir.",
         "C": "YANLIS — PCSK6, NSAİİ (özellikle diklofenak) ilişkili MN'nin hedef antijenidir, sifiliz ile ilgisi yoktur.",
         "D": "YANLIS — Protokaderin FAT1, alloimmün de novo MN'de (HKHN sonrası GVHH veya böbrek nakli sonrası ABMR) tanımlanmıştır, enfeksiyon ilişkili değildir.",
-        "E": "YANLIS — CNTN1, CIDP (kronik inflamatuar demiyelinizan poliradikülonöropati) zemininde atipik MN'nin hedef antijenidir, sifilizle ilişkili değildir."
+        "E": "DOGRU — NDNF, sifiliz ilişkili MN'nin spesifik hedef antijenidir."
       },
       "etiketler": [
         "NDNF",
@@ -158,18 +158,18 @@
       "id": "s6",
       "metin": "Kırk yaşında kadın hasta, uzun süredir kronik inflamatuar demiyelinizan poliradikülonöropati (CIDP) tanısıyla nöroloji tarafından izleniyor. Son değerlendirmede nefrotik sendrom gelişiyor ve böbrek biyopsisinde membranöz nefropati paterni saptanıyor; glomerüler bazal membranda IgG4 ile birlikte biriken spesifik bir antijen tespit ediliyor.\n\nBu klinik-patolojik birliktelik hangi hedef antijen ile açıklanır?",
       "secenekler": {
-        "A": "PLA2R; CIDP hastalarında MN gelişimi tamamen tesadüfi olup PLA2R ile açıklanır.",
-        "B": "Kontaktin-1 (CNTN1); glomerüler bazal membranda IgG4 ile birlikte biriken ve yalnızca CIDP zemininde gelişen atipik MN olgularında pozitif saptanan spesifik hedef antijendir.",
+        "A": "Kontaktin-1 (CNTN1); glomerüler bazal membranda IgG4 ile birlikte biriken ve yalnızca CIDP zemininde gelişen atipik MN olgularında pozitif saptanan spesifik hedef antijendir.",
+        "B": "PLA2R; CIDP hastalarında MN gelişimi tamamen tesadüfi olup PLA2R ile açıklanır.",
         "C": "NELL-1; CIDP'nin nörolojik semptomlarını taklit eden bir sekonder MN formunun antijenidir.",
         "D": "PCSK6; CIDP tedavisinde kullanılan immünsüpresif ajanlara sekonder gelişen MN'nin antijenidir.",
         "E": "THSD7A; CIDP ile birliktelik gösteren tek MN antijenidir ve malignite taramasını gerektirir."
       },
-      "dogru": "B",
+      "dogru": "A",
       "aciklama_kisa": "Kontaktin-1 (CNTN1), glomerüler bazal membranda IgG4 ile birlikte biriken ve sadece CIDP zemininde gelişen atipik MN olgularında pozitif saptanan spesifik hedef antijendir — nöroimmünolojik-renal çakışmayı yansıtır.",
       "aciklama_detay": "Kontaktin-1 (CNTN1), glomerüler bazal membranda IgG4 ile birlikte biriken ve sadece nörolojik bir antite olan kronik inflamatuar demiyelinizan poliradikülonöropati (CIDP) zemininde gelişen atipik MN olgularında pozitif saptanan spesifik hedef antijendir. CNTN1, periferik sinirlerde Ranvier boğumlarında bulunan bir hücre yapışma molekülüdür; CIDP'nin bir alt grubunda (nodopati/paranodopati) da otoantikor hedefi olarak tanımlanmıştır. Bu ilginç çakışma, aynı otoantijenin (CNTN1) hem periferik sinir sisteminde (CIDP) hem de böbrekte (MN) hedeflenebileceğini, nöroimmünolojik ve renal patolojinin bazı durumlarda ortak moleküler mekanizmalar paylaşabileceğini gösterir.",
       "secenekAciklamalari": {
-        "A": "YANLIS — Bu spesifik klinik-patolojik birliktelik (CIDP + MN + IgG4 GBM birikimi) PLA2R ile değil, CNTN1 ile tanımlanmıştır.",
-        "B": "DOGRU — CNTN1, CIDP zemininde gelişen atipik MN'nin spesifik hedef antijenidir.",
+        "A": "DOGRU — CNTN1, CIDP zemininde gelişen atipik MN'nin spesifik hedef antijenidir.",
+        "B": "YANLIS — Bu spesifik klinik-patolojik birliktelik (CIDP + MN + IgG4 GBM birikimi) PLA2R ile değil, CNTN1 ile tanımlanmıştır.",
         "C": "YANLIS — NELL-1 malignite ve belirli ilaç/toksin maruziyetleriyle ilişkilidir, CIDP ile spesifik bir bağlantısı tanımlanmamıştır.",
         "D": "YANLIS — PCSK6 NSAİİ ilişkili MN'nin antijenidir, CIDP tedavisiyle ilgisi yoktur.",
         "E": "YANLIS — THSD7A primer MN'nin bir hedef antijenidir; CIDP ile spesifik ilişkisi tanımlanan antijen CNTN1'dir."
@@ -219,18 +219,18 @@
       "metin": "Otuz yaşında kadın hasta, otoimmün hemolitik anemi öyküsü ve inflamatuar artrit ile takip edilirken nefrotik düzeyde proteinüri gelişiyor. Böbrek biyopsisinde ışık ve elektron mikroskobisi tipik membranöz nefropati ile uyumlu ancak standart immünofloresan incelemede immün birikim saptanmıyor (negatif).\n\nBu çelişkili tabloyu açıklayan en olası tanı ve doğrulama yöntemi hangisidir?",
       "secenekler": {
         "A": "Bu bulgular teknik bir hata sonucudur; biyopsi basitçe tekrarlanmalı, başka bir tanısal yaklaşıma gerek yoktur.",
-        "B": "Maskelenmiş IgG-kappa ile seyreden membranöz benzeri glomerülopati; standart immünofloresanda yalancı negatif sonuç verir ancak dokuya pronaz sindirimi uygulandıktan sonra subepitelyal IgG-kappa birikimlerinin maskesi düşer ve pozitifleşir. Genç kadınlarda otoimmün hemolitik anemi/inflamatuar artrit ile birliktelik ve SAP pozitifliği tanıyı destekler.",
-        "C": "Bu tablo NELL-1 ilişkili MN ile tam uyumludur, ek inceleme gerekmez.",
+        "B": "Bu tablo NELL-1 ilişkili MN ile tam uyumludur, ek inceleme gerekmez.",
+        "C": "Maskelenmiş IgG-kappa ile seyreden membranöz benzeri glomerülopati; standart immünofloresanda yalancı negatif sonuç verir ancak dokuya pronaz sindirimi uygulandıktan sonra subepitelyal IgG-kappa birikimlerinin maskesi düşer ve pozitifleşir. Genç kadınlarda otoimmün hemolitik anemi/inflamatuar artrit ile birliktelik ve SAP pozitifliği tanıyı destekler.",
         "D": "İmmünofloresan negatifliği, bu hastanın membranöz nefropatisi olmadığını kesin olarak kanıtlar; başka bir glomerülopati aranmalıdır.",
         "E": "Pronaz sindirimi yalnızca IgA nefropatisinin tanısında kullanılan bir tekniktir, MN tanısında yeri yoktur."
       },
-      "dogru": "B",
+      "dogru": "C",
       "aciklama_kisa": "Maskelenmiş IgG-kappa ile seyreden membranöz benzeri glomerülopati: IF yalancı negatiftir, pronaz sindirimi ile subepitelyal IgG-kappa birikimlerinin maskesi düşer. Genç kadın + otoimmün hemolitik anemi/inflamatuar artrit + SAP pozitifliği tipik eşlik eden özelliklerdir.",
       "aciklama_detay": "'Maskelenmiş IgG-kappa ile seyreden membranöz benzeri glomerülopati (Membranous-like nephropathy with masked IgG-kappa)', ışık ve elektron mikroskobisinde tipik MN gibi görünmesine rağmen standart immünofloresan incelemede yalancı negatif sonuç veren son derece atipik bir antitedir. Bunun nedeni, immün birikimlerin bir şekilde 'maskelenmiş' olması ve standart antikorların bağlanmasının engellenmesidir. Dokuya pronaz sindirimi (enzimatik protein parçalama işlemi) uygulandıktan sonra bu maske ortadan kalkar ve subepitelyal IgG-kappa birikimleri (monoklonal kappa hafif zincir kısıtlılığı ile) ortaya çıkar. Bu hastalar sıklıkla genç kadınlar olup otoimmün hemolitik anemi veya inflamatuar artrit gibi eşlik eden otoimmün bulgulara sahiptir ve böbrek biyopsisindeki immün birikimlerde Serum Amiloid P (SAP) pozitifliği spesifik bir ek biyobelirteçtir. Bu antite tanınmadığı takdirde 'immünofloresan negatif MN' olarak yanlış yorumlanabilir; pronaz sindirimi tanısal doğrulamada kilit adımdır.",
       "secenekAciklamalari": {
         "A": "YANLIS — Bu, teknik hata değil, tanınmış ve spesifik tanısal bir adım (pronaz sindirimi) gerektiren bilinen bir antitedir.",
-        "B": "DOGRU — Maskelenmiş IgG-kappa glomerülopatisi; pronaz sindirimi ile maske kalkar, klinik/biyobelirteç profili (genç kadın, otoimmün hemolitik anemi/artrit, SAP+) uyumludur.",
-        "C": "YANLIS — NELL-1 ilişkili MN'de immünofloresan negatifliği ve 'maskelenme' fenomeni tanımlanmamıştır; bu klinik-patolojik profil maskelenmiş IgG-kappa antitesine özgüdür.",
+        "B": "YANLIS — NELL-1 ilişkili MN'de immünofloresan negatifliği ve 'maskelenme' fenomeni tanımlanmamıştır; bu klinik-patolojik profil maskelenmiş IgG-kappa antitesine özgüdür.",
+        "C": "DOGRU — Maskelenmiş IgG-kappa glomerülopatisi; pronaz sindirimi ile maske kalkar, klinik/biyobelirteç profili (genç kadın, otoimmün hemolitik anemi/artrit, SAP+) uyumludur.",
         "D": "YANLIS — IF negatifliği burada MN olmadığını değil, altta yatan 'maskelenmiş' bir MN varyantını gösterir; pronaz sindirimi ile doğrulanabilir.",
         "E": "YANLIS — Pronaz sindirimi bu spesifik maskelenmiş MN varyantının tanısında kullanılan bir tekniktir, IgA nefropatisiyle sınırlı değildir."
       },
@@ -249,19 +249,19 @@
       "metin": "Primer membranöz nefropati tanılı bir hasta, standart doz rituximab tedavisi almasına rağmen 6 ay sonunda hiçbir biyokimyasal yanıt (proteinüri veya anti-PLA2R titresinde düşüş) göstermiyor. B hücre deplesyonunun etkin olup olmadığı sorgulanıyor.\n\nBu klinik senaryoda araştırılması gereken önemli bir direnç mekanizması ve sonraki tedavi seçenekleri nelerdir?",
       "secenekler": {
         "A": "Rituximab direnci yalnızca yetersiz dozlamaya bağlıdır; tek çözüm dozu iki katına çıkarmaktır.",
-        "B": "Rituximab yanıtsız primer MN hastalarının %23-43'ünde ilacın sitotoksik etkinliğini tamamen nötralize eden dolaşan anti-rituximab antikorları gelişir; bu 'gerçek klinik direnç' oluşturur ve bu hastalarda Obinutuzumab (tam insanlaştırılmış anti-CD20) veya Daratumumab/Felzartamab (anti-CD38, doğrudan plazma hücresi hedefli) tedavilerine geçiş gerekebilir.",
+        "B": "Rituximab yanıtsızlığı durumunda tek seçenek sistemik kortikosteroid ile siklofosfamid kombinasyonuna geçmektir; anti-CD20/anti-CD38 ajanların bu senaryoda yeri yoktur.",
         "C": "Anti-rituximab antikorları yalnızca teorik bir kavramdır, klinik pratikte hiçbir hastada gösterilmemiştir.",
-        "D": "Rituximab yanıtsızlığı durumunda tek seçenek sistemik kortikosteroid ile siklofosfamid kombinasyonuna geçmektir; anti-CD20/anti-CD38 ajanların bu senaryoda yeri yoktur.",
+        "D": "Rituximab yanıtsız primer MN hastalarının %23-43'ünde ilacın sitotoksik etkinliğini tamamen nötralize eden dolaşan anti-rituximab antikorları gelişir; bu 'gerçek klinik direnç' oluşturur ve bu hastalarda Obinutuzumab (tam insanlaştırılmış anti-CD20) veya Daratumumab/Felzartamab (anti-CD38, doğrudan plazma hücresi hedefli) tedavilerine geçiş gerekebilir.",
         "E": "B hücre deplesyonunun etkinliğini değerlendirmenin tek yolu böbrek biyopsisinin tekrarlanmasıdır; serolojik/antikor testleri anlamsızdır."
       },
-      "dogru": "B",
+      "dogru": "D",
       "aciklama_kisa": "Yanıtsız hastaların %23-43'ünde anti-rituximab antikorları (ilacı nötralize eden) saptanır — gerçek klinik direnç. Bu hastalarda Obinutuzumab (tam insanlaştırılmış anti-CD20) veya Daratumumab/Felzartamab (anti-CD38) tedavilerine geçiş fizyolojik olarak zorunludur.",
       "aciklama_detay": "Standart B-hücre deplesyon (rituximab, kimerik anti-CD20 antikoru) tedavisine yanıtsız olan primer MN hastalarının %23 ila %43'lük önemli bir bölümünde, ilacın sitotoksik etkinliğini tamamen nötralize eden dolaşan anti-rituximab antikorları geliştiği saptanmıştır. Bu antikorlar rituximabın kimerik (kısmen fare kaynaklı) yapısına karşı gelişir ve ilacın B hücrelerini etkin şekilde deplete etmesini engeller — bu durum 'gerçek klinik direnç' oluşturur (yani tedavi başarısızlığı yetersiz dozlama veya hastalık biyolojisinden değil, ilacın kendisinin nötralize edilmesinden kaynaklanır). Bu hastalarda tam insanlaştırılmış (humanized) bir anti-CD20 antikoru olan Obinutuzumab'a geçiş, immünojenisitesi daha düşük olduğundan mantıklı bir sonraki adımdır. Alternatif olarak, B hücrelerinden farklı olarak doğrudan plazma hücresini (otoantikor üreten nihai efektör hücre) hedefleyen anti-CD38 ajanları (Daratumumab, Felzartamab) kullanılabilir — bu ajanlar B hücre deplesyonundan bağımsız bir mekanizmayla otoantikor üretimini durdurur.",
       "secenekAciklamalari": {
         "A": "YANLIS — Direnç mekanizması yalnızca doz yetersizliği değildir; anti-rituximab antikorları ilacı NÖTRALİZE eder, doz artışı bu antikorların varlığında etkisiz kalabilir.",
-        "B": "DOGRU — Anti-rituximab antikorları (%23-43) → gerçek direnç → Obinutuzumab veya Daratumumab/Felzartamab'a geçiş.",
+        "B": "YANLIS — Anti-CD20 (Obinutuzumab) ve anti-CD38 (Daratumumab/Felzartamab) ajanları tam olarak bu dirençli senaryoda güncel tedavi seçenekleri arasındadır; steroid+siklofosfamid tek seçenek değildir.",
         "C": "YANLIS — Anti-rituximab antikorları klinik çalışmalarda spesifik olarak saptanmış, ölçülebilir bir direnç mekanizmasıdır.",
-        "D": "YANLIS — Anti-CD20 (Obinutuzumab) ve anti-CD38 (Daratumumab/Felzartamab) ajanları tam olarak bu dirençli senaryoda güncel tedavi seçenekleri arasındadır; steroid+siklofosfamid tek seçenek değildir.",
+        "D": "DOGRU — Anti-rituximab antikorları (%23-43) → gerçek direnç → Obinutuzumab veya Daratumumab/Felzartamab'a geçiş.",
         "E": "YANLIS — Anti-rituximab antikor testi ve B hücre sayımı gibi serolojik/hücresel testler direnç mekanizmasını değerlendirmede kullanılır; tekrar biyopsi tek yöntem değildir."
       },
       "etiketler": [
@@ -369,20 +369,20 @@
       "metin": "Elli iki yaşında erkek hasta, anti-PLA2R pozitif primer membranöz nefropati tanısıyla altı aydır maksimum tolere edilen dozda ACE inhibitörü, diüretik, statin ve tuz kısıtlaması ile izleniyor. Sekonder neden taraması negatif.\n\nTetkikler:\n- Proteinüri: başlangıçta 10 g/gün, altıncı ayda 9.2 g/gün\n- Serum albümin: 2.1 g/dL\n- eGFR: 88 mL/dk/1.73 m² (stabil)\n- Anti-PLA2R: 150 → 210 RU/mL (artıyor)\n\nBu hastada en uygun tedavi hangisidir?",
       "secenekler": {
         "A": "Spontan remisyon olasılığı nedeniyle destek tedavisine altı ay daha devam etmek",
-        "B": "Rituksimab başlamak",
+        "B": "Anti-PLA2R'yi uzaklaştırmak için plazmaferez uygulamak",
         "C": "Prednizolon 1 mg/kg/gün monoterapisi başlamak",
         "D": "Mikofenolat mofetil monoterapisi başlamak",
-        "E": "Anti-PLA2R'yi uzaklaştırmak için plazmaferez uygulamak"
+        "E": "Rituksimab başlamak"
       },
-      "dogru": "B",
+      "dogru": "E",
       "aciklama_kisa": "Altı aylık destek tedavisine rağmen >8 g/gün süren proteinüri, belirgin hipoalbüminemi ve artan anti-PLA2R titresi KDIGO 2021'e göre yüksek riski gösterir; rituksimab (alternatif olarak siklofosfamid + glukokortikoid) önerilir.",
       "aciklama_detay": "KDIGO 2021 immünsüpresyon kararını ilerleme riskine göre verir. Düşük riskte (normal eGFR, proteinüri <3.5 g/gün ya da albümin korunmuş) yalnızca destek tedavisi, orta riskte rituksimab veya kalsinörin inhibitörü (± glukokortikoid) önerilir. Yüksek riskte (altı aylık destek tedavisine rağmen proteinürinin %50'den fazla azalmaması ile birlikte ağır hipoalbüminemi, yüksek ya da artan anti-PLA2R, tübüler hasar belirteçleri ya da >8 g/gün süren proteinüri, eGFR düşüşü) rituksimab, siklofosfamid + glukokortikoid ya da kalsinörin inhibitörü + rituksimab seçenektir; çok yüksek riskte (yaşamı tehdit eden nefrotik sendrom, açıklanamayan hızlı eGFR kaybı) siklofosfamid + glukokortikoid tercih edilir. Bu hastada proteinüri altı ayda yalnızca %8 azalmış, albümin 2.1 g/dL ve anti-PLA2R artmaktadır; spontan remisyon beklenmez. MENTOR çalışmasında rituksimab 24. ayda siklosporinden üstün kalıcı remisyon sağlamıştır. Glukokortikoid ve MMF monoterapileri MN'de etkisizdir ve KDIGO tarafından önerilmez.",
       "secenekAciklamalari": {
         "A": "YANLIS — Yüksek risk özellikleri (azalmayan ağır proteinüri, hipoalbüminemi, artan anti-PLA2R) varken beklemek geri dönüşsüz nefron kaybı ve tromboz riskini uzatır.",
-        "B": "DOGRU — Yüksek riskli primer MN'de rituksimab önerilen birinci basamak seçeneklerdendir.",
+        "B": "YANLIS — Plazmaferezin primer MN tedavisinde kanıtlanmış bir yeri yoktur; antikor üretimini durdurmaz.",
         "C": "YANLIS — Glukokortikoid monoterapisi MN'de etkisizdir; KDIGO önermez.",
         "D": "YANLIS — MMF monoterapisi remisyon sağlamada yetersiz bulunmuştur; önerilmez.",
-        "E": "YANLIS — Plazmaferezin primer MN tedavisinde kanıtlanmış bir yeri yoktur; antikor üretimini durdurmaz."
+        "E": "DOGRU — Yüksek riskli primer MN'de rituksimab önerilen birinci basamak seçeneklerdendir."
       },
       "etiketler": [
         "KDIGO 2021 Risk Sınıflaması",

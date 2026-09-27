@@ -98,20 +98,20 @@
       "id": "s4",
       "metin": "BH tanılı bir hastada tekrarlayan alt ekstremite yüzeyel tromboflebit atakları ve eş zamanlı olarak toraks BT'sinde pulmoner arter anevrizması (PAA) saptanıyor.\n\nBu klinik-radyolojik birliktelik hangi eponim ile adlandırılır ve klinik önemi nedir?",
       "secenekler": {
-        "A": "Bu birliktelik 'Hughes-Stovin Sendromu' olarak adlandırılır; periferik ven trombozları ve PAA birlikteliğini tanımlar ve BH'nin en korkulan, fatal hemoptiziye yol açabilen komplikasyonlarından biridir.",
+        "A": "Bu tablo 'Löfgren Sendromu' olarak bilinir ve sarkoidoza özgüdür.",
         "B": "Bu birliktelik 'Sjögren Sendromu' olarak adlandırılır ve BH ile hiçbir ilişkisi yoktur.",
         "C": "PAA ve ven trombozu birlikteliği rastlantısaldır, herhangi bir eponimle adlandırılmamıştır.",
-        "D": "Bu tablo 'Löfgren Sendromu' olarak bilinir ve sarkoidoza özgüdür.",
+        "D": "Bu birliktelik 'Hughes-Stovin Sendromu' olarak adlandırılır; periferik ven trombozları ve PAA birlikteliğini tanımlar ve BH'nin en korkulan, fatal hemoptiziye yol açabilen komplikasyonlarından biridir.",
         "E": "PAA varlığında ven trombozu görülmesi beklenmez, bu iki bulgu birbirini dışlar."
       },
-      "dogru": "A",
+      "dogru": "D",
       "aciklama_kisa": "Periferik ven trombozları + PAA birlikteliği 'Hughes-Stovin Sendromu' olarak adlandırılır — BH'nin en korkulan, fatal hemoptiziye yol açabilen vasküler komplikasyonlarından biridir.",
       "aciklama_detay": "Pulmoner arter anevrizması (PAA) fatal hemoptiziye yol açabildiğinden en korkulan tutulumdur. Periferik ven trombozları ve PAA birlikteliği 'Hughes-Stovin Sendromu' olarak adlandırılır. Bu sendrom, BH'nin vasküler spektrumunun en ciddi ve yaşamı tehdit eden formlarından birini temsil eder — hem venöz (tromboz) hem arteriyel (anevrizma) tutulumun eş zamanlı bulunması, hastalığın 'değişken çaplı damar vasküliti' karakterini en dramatik şekilde gösterir. Bu birlikteliğin klinik önemi büyüktür çünkü PAA'lı hastalarda standart antikoagülan tedavi (venöz tromboz için düşünülebilecek) KONTRENDİKE olabilir — anevrizma rüptürü riskini artırarak fatal hemoptiziyi tetikleyebilir. Bu nedenle Hughes-Stovin sendromu tanındığında, tedavi yaklaşımı agresif immünsüpresyona (siklofosfamid + yüksek doz steroid) yönelmeli, antikoagülandan kaçınılmalıdır.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Hughes-Stovin Sendromu = periferik ven trombozu + PAA; en korkulan, fatal hemoptizi riski taşıyan BH komplikasyonu.",
+        "A": "YANLIS — Löfgren Sendromu (akut sarkoidoz: eritema nodozum + bilateral hiler LAP + artralji) tamamen farklı bir hastalık ve klinik tablodur.",
         "B": "YANLIS — Sjögren Sendromu ayrı bir otoimmün hastalıktır (kuru göz/ağız ile karakterize), bu vasküler birliktelikle ilgisi yoktur.",
         "C": "YANLIS — Bu birliktelik tam olarak tanımlanmış, isimlendirilmiş (Hughes-Stovin) klinik bir sendromdur, rastlantısal değildir.",
-        "D": "YANLIS — Löfgren Sendromu (akut sarkoidoz: eritema nodozum + bilateral hiler LAP + artralji) tamamen farklı bir hastalık ve klinik tablodur.",
+        "D": "DOGRU — Hughes-Stovin Sendromu = periferik ven trombozu + PAA; en korkulan, fatal hemoptizi riski taşıyan BH komplikasyonu.",
         "E": "YANLIS — Tam tersine, bu iki bulgu (ven trombozu + PAA) BH'de BİRLİKTE görülebilir ve özel bir sendrom (Hughes-Stovin) olarak tanımlanmıştır."
       },
       "etiketler": [
@@ -128,21 +128,21 @@
       "id": "s5",
       "metin": "BH tanılı bir hasta, alt ekstremite derin ven trombozu nedeniyle yalnızca standart antikoagülan tedavi (varfarin) ile izleniyor; immünsüpresif tedavi başlanmamış. Hastada aynı zamanda tanınmamış, asemptomatik bir pulmoner arter anevrizması mevcut.\n\nBu tedavi yaklaşımının potansiyel tehlikesi ve doğru tedavi stratejisi nedir?",
       "secenekler": {
-        "A": "Saf antikoagülan kullanımı tek başına rölapsları önlemez ve hastada gizli bir PAA varsa fatal rüptür ve hemoptiziye yol açabileceğinden çok dikkatli olunmalı veya kaçınılmalıdır; doğru yaklaşım DVT'de kortikosteroid + azatiyoprin (veya siklofosfamid/anti-TNF) ile İMMÜNSÜPRESYONDUR, çünkü altta yatan sorun vaskülittir.",
+        "A": "BH'de DVT tedavisinde tek doğru yaklaşım yüksek doz antikoagülandır, immünsüpresif ajanların hiçbir rolü yoktur.",
         "B": "Bu tedavi yaklaşımı tamamen doğrudur; BH'de venöz tromboz standart antikoagülasyonla yönetilir, immünsüpresyona gerek yoktur.",
         "C": "PAA varlığı antikoagülan tedavinin etkinliğini artırır, bu nedenle mevcut yaklaşıma devam edilmelidir.",
         "D": "Antikoagülan tedavi PAA rüptürünü önleyici bir etkiye sahiptir, bu nedenle güvenle kullanılabilir.",
-        "E": "BH'de DVT tedavisinde tek doğru yaklaşım yüksek doz antikoagülandır, immünsüpresif ajanların hiçbir rolü yoktur."
+        "E": "Saf antikoagülan kullanımı tek başına rölapsları önlemez ve hastada gizli bir PAA varsa fatal rüptür ve hemoptiziye yol açabileceğinden çok dikkatli olunmalı veya kaçınılmalıdır; doğru yaklaşım DVT'de kortikosteroid + azatiyoprin (veya siklofosfamid/anti-TNF) ile İMMÜNSÜPRESYONDUR, çünkü altta yatan sorun vaskülittir."
       },
-      "dogru": "A",
+      "dogru": "E",
       "aciklama_kisa": "Saf antikoagülan BH'de rölapsları önlemez ve gizli PAA varsa rüptür/fatal hemoptizi riski taşır. Doğru yaklaşım immünsüpresyondur (kortikosteroid+azatiyoprin/siklofosfamid/anti-TNF) çünkü sorun vaskülittir, koagülopati değildir.",
       "aciklama_detay": "Derin ven trombozlarında (DVT) klasik pıhtılaşma bozukluğundan ziyade vaskülit ön planda olduğu için tedavi immünsüpresyondur. Kortikosteroid + Azatiyoprin (veya Siklofosfamid/Anti-TNF) kullanılır. Saf antikoagülan kullanımı tek başına rölapsları önlemez ve hastada gizli bir pulmoner arter anevrizması (PAA) varsa fatal rüptür ve hemoptiziye yol açabileceğinden çok dikkatli olunmalı veya kaçınılmalıdır. Bu, BH tedavisinde sıklıkla vurgulanan kritik bir güvenlik uyarısıdır: BH'de tromboz, damar duvarındaki inflamasyonun bir sonucu olduğundan, yalnızca pıhtılaşmayı hedefleyen antikoagülan tedavi altta yatan patolojiyi (vaskülit) tedavi etmez, bu nedenle yeni tromboz atakları (rölapslar) devam edebilir. Daha da tehlikelisi, BH hastalarında sıklıkla eşlik edebilen (ve bazen asemptomatik/tanınmamış) PAA varlığında, antikoagülasyon anevrizma içindeki pıhtının stabilize edici etkisini ortadan kaldırarak rüptür riskini artırabilir — bu, ölümcül hemoptiziye yol açabilecek acil bir klinik senaryodur. Bu nedenle BH'de yeni DVT tanısı konan her hastada, tedaviye başlamadan önce (özellikle antikoagülan düşünülüyorsa) gizli PAA'yı dışlamak için görüntüleme (toraks BT anjiyografi) değerlendirilmelidir.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Saf antikoagülan yetersiz + PAA'da tehlikeli; doğru tedavi immünsüpresyon (steroid+azatiyoprin/siklofosfamid/anti-TNF).",
+        "A": "YANLIS — Tam tersine, BH'de DVT tedavisinde İMMÜNSÜPRESİF ajanlar (steroid, azatiyoprin, siklofosfamid, anti-TNF) TEMEL tedavi yaklaşımıdır.",
         "B": "YANLIS — Bu yaklaşım YANLIŞTIR; BH'de standart antikoagülasyon TEK BAŞINA yeterli/güvenli değildir, immünsüpresyon esastır.",
         "C": "YANLIS — PAA varlığı antikoagülan etkinliğini artırmaz; tam tersine antikoagülan kullanımını TEHLİKELİ hale getirir (rüptür riski).",
         "D": "YANLIS — Antikoagülan PAA rüptürünü ÖNLEMEZ; tam tersine rüptür riskini ARTIRABİLİR, bu nedenle dikkatli olunmalı/kaçınılmalıdır.",
-        "E": "YANLIS — Tam tersine, BH'de DVT tedavisinde İMMÜNSÜPRESİF ajanlar (steroid, azatiyoprin, siklofosfamid, anti-TNF) TEMEL tedavi yaklaşımıdır."
+        "E": "DOGRU — Saf antikoagülan yetersiz + PAA'da tehlikeli; doğru tedavi immünsüpresyon (steroid+azatiyoprin/siklofosfamid/anti-TNF)."
       },
       "etiketler": [
         "Antikoagülan Tuzağı",
@@ -188,19 +188,19 @@
       "id": "s7",
       "metin": "BH tanılı, refrakter gastrointestinal (ileoçekal) ülserasyonu olan bir hasta, standart tedaviye (5-ASA, glukokortikoid, azatiyoprin) yanıt vermiyor. Romatolog, IL-17 inhibitörü sekukinumab başlamayı düşünüyor.\n\nBu tedavi seçiminin potansiyel riski nedir?",
       "secenekler": {
-        "A": "IL-17 inhibitörlerinin (Sekukinumab) BH tedavisinde kullanılması sekonder/paradoksal olarak bağırsak ülserlerini veya 'Behçet benzeri' alevlenmeleri tetikleyebildiğinden bu hastada temkinli olunmalı, alternatif ajanlar (Anti-TNF, talidomid, JAK inhibitörleri, ustekinumab) öncelikle değerlendirilmelidir.",
+        "A": "IL-17 inhibitörleri yalnızca oküler Behçet'te kontrendikedir, GİS tutulumunda tamamen güvenlidir.",
         "B": "Sekukinumab, BH'nin GİS tutulumunda birinci basamak, en güvenli tedavi seçeneğidir, herhangi bir risk taşımaz.",
-        "C": "IL-17 inhibitörleri yalnızca oküler Behçet'te kontrendikedir, GİS tutulumunda tamamen güvenlidir.",
+        "C": "IL-17 inhibitörlerinin (Sekukinumab) BH tedavisinde kullanılması sekonder/paradoksal olarak bağırsak ülserlerini veya 'Behçet benzeri' alevlenmeleri tetikleyebildiğinden bu hastada temkinli olunmalı, alternatif ajanlar (Anti-TNF, talidomid, JAK inhibitörleri, ustekinumab) öncelikle değerlendirilmelidir.",
         "D": "Sekukinumab'ın BH GİS tutulumunda hiçbir kullanım geçmişi veya bilinen etkileşimi yoktur.",
         "E": "Paradoksal alevlenme riski yalnızca üst GİS tutulumunda görülür, ileoçekal tutulumda geçerli değildir."
       },
-      "dogru": "A",
+      "dogru": "C",
       "aciklama_kisa": "IL-17 inhibitörleri (sekukinumab) BH'de paradoksal olarak bağırsak ülserlerini/Behçet benzeri alevlenmeleri TETİKLEYEBİLİR. Refrakter GİS tutulumunda öncelik anti-TNF, talidomid, JAK inhibitörleri veya ustekinumab olmalıdır.",
       "aciklama_detay": "Gastrointestinal Tutulum tedavisi bölümünde açıkça belirtildiği gibi: IL-17 inhibitörlerinin (Sekukinumab) BH tedavisinde kullanılması sekonder/paradoksal olarak bağırsak ülserlerini veya 'Behçet benzeri' alevlenmeleri tetikleyebildiğinden temkinli olunmalıdır. Bu, biyolojik ajan seçiminde 'sınıf etkisi' varsayımının her zaman geçerli olmadığını gösteren önemli bir klinik uyarıdır — IL-17 inhibisyonu bazı otoimmün/otoinflamatuar hastalıklarda (örn. psoriazis, ankilozan spondilit) etkili olsa da, BH'nin GİS tutulumunda paradoksal olarak inflamasyonu kötüleştirebilir (bu, IL-17 inhibitörlerinin inflamatuar bağırsak hastalığında da benzer paradoksal alevlenme riski taşımasıyla paralel bir fenomendir). Bu nedenle refrakter BH-GİS tutulumunda, tedavi algoritması Anti-TNF (İnfliksimab, Adalimumab) ve talidomid ile devam etmeli; son yıllarda JAK inhibitörleri (baricitinib, tofacitinib) ve anti-IL-12/23 ajanları (ustekinumab) da başarıyla denenen alternatifler arasında yer almaktadır. Sekukinumab gibi IL-17 hedefli ajanlar bu bağlamda önceliklendirilmemeli, kullanılacaksa yakın izlemle ve dikkatle değerlendirilmelidir.",
       "secenekAciklamalari": {
-        "A": "DOGRU — IL-17 inhibitörleri paradoksal GİS alevlenmesi riski taşır; öncelik anti-TNF/talidomid/JAK inhibitörü/ustekinumab olmalıdır.",
+        "A": "YANLIS — Paradoksal alevlenme riski özellikle GİS (bağırsak ülserleri) bağlamında tanımlanmıştır, yalnızca oküler tutulumla sınırlı değildir.",
         "B": "YANLIS — Sekukinumab BH GİS tutulumunda birinci basamak DEĞİLDİR ve güvenlik açısından riskli olarak tanımlanmıştır.",
-        "C": "YANLIS — Paradoksal alevlenme riski özellikle GİS (bağırsak ülserleri) bağlamında tanımlanmıştır, yalnızca oküler tutulumla sınırlı değildir.",
+        "C": "DOGRU — IL-17 inhibitörleri paradoksal GİS alevlenmesi riski taşır; öncelik anti-TNF/talidomid/JAK inhibitörü/ustekinumab olmalıdır.",
         "D": "YANLIS — Bu ilişki (paradoksal alevlenme) literatürde tanımlanmış, bilinen bir güvenlik endişesidir.",
         "E": "YANLIS — Paradoksal alevlenme riski genel olarak GİS (bağırsak) ülserleri bağlamında tanımlanmıştır, tutulum bölgesine göre (üst/alt) spesifik bir ayrım belirtilmemiştir."
       },
@@ -218,20 +218,20 @@
       "id": "s8",
       "metin": "Yirmi dört yaşında kadın hasta, tekrarlayan oral aftlar (yılda 4-5 kez) ve genital ülser öyküsü ile başvuruyor. Muayenede göz lezyonu, deri lezyonu saptanmıyor ve paterji testi negatif.\n\nISG 1990 kriterlerine göre bu hastada BH tanısı konulabilir mi?",
       "secenekler": {
-        "A": "Hayır; ISG 1990 kriterlerine göre tanı için zorunlu ana kriter olan yılda ≥3 tekrarlayan oral aft mevcut olsa da, buna ek olarak genital ülser, göz lezyonu, deri lezyonu veya pozitif paterjiden EN AZ 2'sinin bulunması gerekir. Bu hastada yalnızca genital ülser (1 ek kriter) mevcuttur, bu nedenle ISG 1990 kriterleri KARŞILANMAMAKTADIR.",
+        "A": "Hayır; ISG 1990 kriterleri yalnızca erkek hastalarda uygulanabilir, kadın hastalarda geçerli değildir.",
         "B": "Evet; yılda ≥3 oral aft tek başına ISG 1990 kriterlerine göre tanı için yeterlidir.",
         "C": "Evet; genital ülser tek başına, oral aft olmaksızın dahi ISG 1990 tanısı için yeterlidir.",
-        "D": "Hayır; ISG 1990 kriterleri yalnızca erkek hastalarda uygulanabilir, kadın hastalarda geçerli değildir.",
+        "D": "Hayır; ISG 1990 kriterlerine göre tanı için zorunlu ana kriter olan yılda ≥3 tekrarlayan oral aft mevcut olsa da, buna ek olarak genital ülser, göz lezyonu, deri lezyonu veya pozitif paterjiden EN AZ 2'sinin bulunması gerekir. Bu hastada yalnızca genital ülser (1 ek kriter) mevcuttur, bu nedenle ISG 1990 kriterleri KARŞILANMAMAKTADIR.",
         "E": "Bu değerlendirme için ISG 1990 kriterleri değil, yalnızca ICBD 2014 kriterleri kullanılabilir."
       },
-      "dogru": "A",
+      "dogru": "D",
       "aciklama_kisa": "ISG 1990: zorunlu (yılda ≥3 oral aft) + EN AZ 2 ek kriterden (genital ülser, göz, deri, paterji). Bu hastada yalnızca 1 ek kriter (genital ülser) var — 2 kriter şartı karşılanmadığından tanı KONULAMAZ.",
       "aciklama_detay": "ISG 1990 Kriterleri: Bir yılda en az 3 kez tekrarlayan oral aft varlığı (zorunlu/ana kriter) + Genital ülser, göz lezyonu, deri lezyonu veya pozitif paterji testinden en az 2'sinin varlığı. Bu hastada zorunlu ana kriter (yılda ≥3 oral aft, burada yılda 4-5 kez ile karşılanıyor) mevcuttur. Ancak ek kriterler değerlendirildiğinde: genital ülser MEVCUT (1 kriter), göz lezyonu YOK, deri lezyonu YOK, paterji NEGATİF. Bu durumda yalnızca 1 ek kriter karşılanmaktadır, oysa ISG 1990 kriterleri EN AZ 2 ek kriterin varlığını şart koşar. Bu nedenle bu hastada ISG 1990 kriterlerine göre BH tanısı FORMEL olarak konulamaz — klinik şüphe yüksek olsa da (tekrarlayan oral+genital ülser BH'yi düşündürür), kriterler teknik olarak karşılanmamıştır. Bu durumda hasta yakın klinik izleme alınmalı, zaman içinde ek bulgu (göz, deri, paterji pozitifliği) gelişip gelişmediği takip edilmeli veya ICBD 2014 gibi daha sensitif (ama daha az spesifik) bir kriter seti ile yeniden değerlendirilebilir.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Zorunlu kriter var ama yalnızca 1 ek kriter (genital ülser) mevcut; 2 ek kriter şartı karşılanmadığından ISG 1990 ile tanı konulamaz.",
+        "A": "YANLIS — ISG 1990 kriterleri cinsiyetten bağımsız olarak hem erkek hem kadın hastalarda uygulanır.",
         "B": "YANLIS — Yılda ≥3 oral aft TEK BAŞINA yeterli değildir; ZORUNLU kriterdir ama ek olarak en az 2 kriter daha gereklidir.",
         "C": "YANLIS — ISG 1990'da oral aft ZORUNLU (olmazsa olmaz) ana kriterdir; genital ülser tek başına (oral aft olmaksızın) tanı için yeterli değildir.",
-        "D": "YANLIS — ISG 1990 kriterleri cinsiyetten bağımsız olarak hem erkek hem kadın hastalarda uygulanır.",
+        "D": "DOGRU — Zorunlu kriter var ama yalnızca 1 ek kriter (genital ülser) mevcut; 2 ek kriter şartı karşılanmadığından ISG 1990 ile tanı konulamaz.",
         "E": "YANLIS — ISG 1990 kriterleri geçerliliği kanıtlanmış, halen kullanılan bir kriter setidir; bu değerlendirme için kullanılabilir (yalnızca bu vakada kriterler karşılanmamaktadır)."
       },
       "etiketler": [
@@ -248,21 +248,21 @@
       "id": "s9",
       "metin": "BH tanılı bir hasta gebelik planlamak istiyor. Hasta halihazırda kolşisin ve metotreksat kombinasyonu kullanmaktadır.\n\nGebelik planlaması öncesi ilaç düzenlemesi konusunda en doğru danışmanlık hangisidir?",
       "secenekler": {
-        "A": "Kolşisin ve anti-TNF'lerin gebelikte kullanımı görece güvenliyken; teratojenik etkilerinden dolayı siklofosfamid, metotreksat, talidomid ve mikofenolat mofetil mutlaka kesilmelidir. Bu hastada metotreksat kesilmeli, kolşisine ise (güvenli olduğundan) devam edilebilir.",
+        "A": "Metotreksatın teratojenik etkisi yalnızca yüksek dozlarda görülür, düşük doz kullanımda gebelik öncesi kesilmesine gerek yoktur.",
         "B": "Her iki ilaç da (kolşisin ve metotreksat) gebelikte güvenle kullanılabilir, herhangi bir değişiklik gerekmez.",
         "C": "Kolşisin gebelikte kesinlikle kontrendikedir ve derhal kesilmelidir, metotreksat ise güvenle devam ettirilebilir.",
         "D": "BH aktivitesi gebelikte her zaman şiddetlenir, bu nedenle gebelik tamamen kontrendikedir.",
-        "E": "Metotreksatın teratojenik etkisi yalnızca yüksek dozlarda görülür, düşük doz kullanımda gebelik öncesi kesilmesine gerek yoktur."
+        "E": "Kolşisin ve anti-TNF'lerin gebelikte kullanımı görece güvenliyken; teratojenik etkilerinden dolayı siklofosfamid, metotreksat, talidomid ve mikofenolat mofetil mutlaka kesilmelidir. Bu hastada metotreksat kesilmeli, kolşisine ise (güvenli olduğundan) devam edilebilir."
       },
-      "dogru": "A",
+      "dogru": "E",
       "aciklama_kisa": "Kolşisin gebelikte güvenli (devam edilebilir), METOTREKSAT ise teratojeniktir ve mutlaka kesilmelidir. Bu hastada doğru yaklaşım metotreksatı kesip kolşisine devam etmektir.",
       "aciklama_detay": "Kolşisin ve anti-TNF'lerin gebelikte kullanımı görece güvenliyken; teratojenik etkilerinden dolayı siklofosfamid, metotreksat, talidomid ve mikofenolat mofetil mutlaka kesilmelidir. Metotreksat, güçlü bir teratojendir (nöral tüp defektleri, kraniyofasiyal anomaliler, iskelet anomalileri gibi 'metotreksat embriyopatisi' yapabilir) ve gebelik planlanmadan önce (genellikle en az 1-3 ay, bazı kılavuzlara göre daha uzun) kesilmesi gerekir — düşük doz kullanımda dahi bu teratojenik risk ortadan kalkmaz, bu nedenle 'düşük dozda güvenlidir' varsayımı YANLIŞTIR. Kolşisin ise BH'de gebelikte devam edilebilecek, göreceli güvenli bir ajan olarak tanımlanmıştır — hastalık aktivitesini kontrol altında tutmak için gebelik boyunca sürdürülebilir. Bu nedenle gebelik planlayan bu hastada doğru yaklaşım, metotreksatı derhal kesip (gebelik öncesi yeterli bir 'wash-out' süresi tanıyarak) alternatif bir immünsüpresife (gerekirse) geçmek, kolşisine ise güvenle devam etmektir.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Kolşisin güvenli (devam), metotreksat teratojenik (kesilmeli).",
+        "A": "YANLIS — Metotreksatın teratojenik etkisi DOZ BAĞIMSIZDIR; düşük doz kullanımda dahi gebelik öncesi kesilmesi gerekir.",
         "B": "YANLIS — Metotreksat GÜVENLİ DEĞİLDİR, teratojeniktir; gebelik öncesi mutlaka kesilmelidir.",
         "C": "YANLIS — Yönler ters verilmiştir: kolşisin GÜVENLİDİR (kesilmez), metotreksat TERATOJENİKTİR (kesilmelidir).",
         "D": "YANLIS — BH aktivitesi gebelikte genellikle AZALMA eğilimindedir (metin: 'hastaların çoğunda azalma eğilimindedir'); gebelik BH'de mutlak kontrendikasyon değildir, ancak vasküler risk artabilir ve dikkatli planlama gerekir.",
-        "E": "YANLIS — Metotreksatın teratojenik etkisi DOZ BAĞIMSIZDIR; düşük doz kullanımda dahi gebelik öncesi kesilmesi gerekir."
+        "E": "DOGRU — Kolşisin güvenli (devam), metotreksat teratojenik (kesilmeli)."
       },
       "etiketler": [
         "Gebelik Planlaması",
@@ -428,19 +428,19 @@
       "id": "s15",
       "metin": "Otuz beş yaşında erkek hasta, altı yıldır Behçet hastalığı tanısıyla izleniyor. Sağ diz arkasında fark ettiği nabız atan bir şişlik nedeniyle başvuruyor. Ağrı, iskemi bulgusu ya da rüptür belirtisi yok. Doppler ultrasonografide 3.5 cm popliteal arter anevrizması saptanıyor. Toraks BT anjiyografide pulmoner arter anevrizması yok.\n\nBu hastada en uygun yaklaşım hangisidir?",
       "secenekler": {
-        "A": "Onarım öncesi siklofosfamid + yüksek doz glukokortikoid, sonra onarım",
+        "A": "Antikoagülan ve antiagregan ile medikal izlem",
         "B": "İmmünsüpresyon başlamadan hemen açık cerrahi onarım ve greft interpozisyonu",
-        "C": "Antikoagülan ve antiagregan ile medikal izlem",
+        "C": "Onarım öncesi siklofosfamid + yüksek doz glukokortikoid, sonra onarım",
         "D": "Kolşisine devam edip altı ay sonra kontrol Doppler",
         "E": "Asemptomatik olduğu için yalnızca yıllık izlem"
       },
-      "dogru": "A",
+      "dogru": "C",
       "aciklama_kisa": "Behçet'te aort ve periferik arter anevrizmalarında EULAR 2018'e göre onarımdan önce siklofosfamid + glukokortikoid ile medikal tedavi gerekir; hasta semptomatikse girişim ertelenmez. İmmünsüpresyon olmadan onarım anastomoz yerinde psödoanevrizma ve nüks riskini artırır.",
       "aciklama_detay": "Behçet'te arteriyel tutulum oklüzyondan çok anevrizma ve psödoanevrizma şeklindedir ve vaza vazorumun vasküliti sonucu gelişir. Aktif inflamasyon sürerken yapılan onarımda anastomoz yerinde yeni psödoanevrizma, greft oklüzyonu ve girişim yerinde (paterji benzeri) anevrizma gelişme riski yüksektir. Bu nedenle EULAR 2018, aort ve periferik arter anevrizmalarında onarım öncesi siklofosfamid ve glukokortikoid ile medikal tedaviyi gerekli görür; hasta semptomatikse (rüptür tehdidi, iskemi) cerrahi ya da stent ertelenmez. Onarımdan sonra da immünsüpresyon sürdürülür. Dirençli olgularda monoklonal anti-TNF antikorları seçenektir. Pulmoner arter anevrizmasında da yüksek doz glukokortikoid + siklofosfamid önerilir ve büyük kanama riskinde açık cerrahi yerine embolizasyon tercih edilir. Anevrizmayı büyütebileceği ve kanama riski taşıdığı için antikoagülan tedavinin yeri yoktur.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Asemptomatik periferik anevrizmada onarım öncesi siklofosfamid + glukokortikoid ile inflamasyon kontrolü EULAR 2018 önerisidir.",
+        "A": "YANLIS — Anevrizmada antikoagülan/antiagregan vasküliti tedavi etmez ve kanama riskini artırır.",
         "B": "YANLIS — İmmünsüpresyonsuz onarım anastomoz psödoanevrizması ve nüks riskini artırır; semptomsuz hastada önce medikal kontrol sağlanır.",
-        "C": "YANLIS — Anevrizmada antikoagülan/antiagregan vasküliti tedavi etmez ve kanama riskini artırır.",
+        "C": "DOGRU — Asemptomatik periferik anevrizmada onarım öncesi siklofosfamid + glukokortikoid ile inflamasyon kontrolü EULAR 2018 önerisidir.",
         "D": "YANLIS — Kolşisin arteriyel tutulumda etkisizdir; beklemek rüptür riskini sürdürür.",
         "E": "YANLIS — Behçet anevrizması aktif vaskülitin göstergesidir; asemptomatik olması tedavisiz izlemi haklı kılmaz."
       },

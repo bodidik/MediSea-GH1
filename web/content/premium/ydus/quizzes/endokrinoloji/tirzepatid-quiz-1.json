@@ -69,18 +69,18 @@
       "metin": "Evre 4 kronik böbrek hastalığı (eGFR 22 mL/dk) ve orta derecede karaciğer yetmezliği (Child-Pugh B) olan 60 yaşında T2DM'li hastada tirzepatid başlanması planlanıyor.\n\nBu hastada doz ayarlamasıyla ilgili en doğru yaklaşım hangisidir?",
       "secenekler": {
         "A": "Hem böbrek hem karaciğer yetmezliği nedeniyle başlangıç dozu yarıya (1.25 mg) düşürülmeli.",
-        "B": "Yaş, cinsiyet, ırk ve vücut ağırlığı gibi hafif/orta/şiddetli böbrek ve karaciğer yetmezliği durumları tirzepatidin farmakokinetiğini klinik olarak anlamlı değiştirmediğinden herhangi bir doz ayarlaması gerekmez; standart titrasyon şeması (2.5 mg başlangıç) uygulanır.",
-        "C": "Şiddetli böbrek yetmezliğinde tirzepatid kesin kontrendikedir.",
+        "B": "Şiddetli böbrek yetmezliğinde tirzepatid kesin kontrendikedir.",
+        "C": "Yaş, cinsiyet, ırk ve vücut ağırlığı gibi hafif/orta/şiddetli böbrek ve karaciğer yetmezliği durumları tirzepatidin farmakokinetiğini klinik olarak anlamlı değiştirmediğinden herhangi bir doz ayarlaması gerekmez; standart titrasyon şeması (2.5 mg başlangıç) uygulanır.",
         "D": "Karaciğer yetmezliğinde ilaç aktif metabolitleri karaciğerde biriktirdiğinden dozun üçte birine düşürülmesi gerekir.",
         "E": "Böbrek yetmezliğinde ilaç intakt formda idrarla atıldığından eGFR'ye göre doz titre edilmelidir."
       },
-      "dogru": "B",
+      "dogru": "C",
       "aciklama_kisa": "Tirzepatid PK'sı hafif/orta/şiddetli böbrek VE karaciğer yetmezliğinde klinik olarak anlamlı değişmez — doz ayarlaması gerekmez. Standart titrasyon (2.5 mg başlangıç) uygulanır.",
       "aciklama_detay": "Tirzepatidin farmakokinetik profili özel popülasyonlarda dikkat çekici derecede stabildir: yaş (≥65 yaş dahil), cinsiyet, ırk ve vücut ağırlığı parametreleri farmakokinetiği klinik olarak anlamlı düzeyde değiştirmez. Aynı şekilde hafif, orta veya şiddetli böbrek yetmezliği ile hafif, orta veya şiddetli karaciğer yetmezliği durumlarında dahi herhangi bir doz ayarlaması gerekmez. Bu, ilacın peptid omurgasının proteolitik klevajı, C20 zincirinin beta-oksidasyonu ve amid hidrolizi yollarıyla metabolize edilmesinden kaynaklanır — intakt tirzepatid idrar veya feçeste saptanmaz, esas atılım metabolitler halinde böbrek ve biliyer sistem üzerinden gerçekleşir, tek bir organ eliminasyonuna bağımlı değildir.",
       "secenekAciklamalari": {
         "A": "YANLIS — Doz ayarlaması gerekmez; standart 2.5 mg başlangıç dozu tolerabilite amaçlıdır, organ yetmezliğine göre değiştirilmez.",
-        "B": "DOGRU — Böbrek/karaciğer yetmezliğinde (hafif-şiddetli) PK anlamlı değişmez; standart şema uygulanır.",
-        "C": "YANLIS — Şiddetli böbrek yetmezliği kontrendikasyon değildir; ilaç güvenle kullanılabilir.",
+        "B": "YANLIS — Şiddetli böbrek yetmezliği kontrendikasyon değildir; ilaç güvenle kullanılabilir.",
+        "C": "DOGRU — Böbrek/karaciğer yetmezliğinde (hafif-şiddetli) PK anlamlı değişmez; standart şema uygulanır.",
         "D": "YANLIS — İlaç karaciğerde aktif metabolit birikimi göstermez; doz azaltımı gerekmez.",
         "E": "YANLIS — İntakt tirzepatid idrarda saptanmaz (metabolitler atılır); eGFR'ye göre doz titrasyonu gerekmez."
       },
@@ -129,20 +129,20 @@
       "metin": "Tirzepatid ile 15 mg dozunda 72 hafta boyunca başarılı kilo kaybı sağlanan bir hastada, ilacın kesilip plaseboya geçirildiği bir izlem çalışması yürütülüyor.\n\nSURMOUNT-4 (randomize çekilme) çalışmasının temel bulgusu ve klinik önemi nedir?",
       "secenekler": {
         "A": "İlaç kesildikten sonra kilo kaybı kalıcı olarak korunmuş, hastalar plasebo grubunda dahi ağırlıklarını korumuştur.",
-        "B": "Tirzepatidin kesilip plaseboya geçilmesi ciddi bir 'kilo geri kazanımına' (weight regain) yol açmıştır; bu bulgu kronik/sürekli kullanımın zorunluluğunu kanıtlamıştır.",
+        "B": "İlacın kesilmesi herhangi bir ağırlık değişikliğine yol açmamıştır çünkü etkisi kalıcıdır (yarı ömrü sonsuzdur).",
         "C": "İlaç kesildikten sonra hastalarda hipoglisemi riski artmış, bu nedenle kademeli kesim önerilmiştir.",
         "D": "SURMOUNT-4 yalnızca glisemik parametreleri değerlendirmiştir, kilo geri kazanımı hiç incelenmemiştir.",
-        "E": "İlacın kesilmesi herhangi bir ağırlık değişikliğine yol açmamıştır çünkü etkisi kalıcıdır (yarı ömrü sonsuzdur)."
+        "E": "Tirzepatidin kesilip plaseboya geçilmesi ciddi bir 'kilo geri kazanımına' (weight regain) yol açmıştır; bu bulgu kronik/sürekli kullanımın zorunluluğunu kanıtlamıştır."
       },
-      "dogru": "B",
+      "dogru": "E",
       "aciklama_kisa": "SURMOUNT-4: tirzepatid kesilip plaseboya geçilince belirgin kilo geri kazanımı (weight regain) gözlendi — obezitenin kronik bir hastalık olduğunu ve tedavinin sürekli kullanım gerektirdiğini kanıtladı.",
       "aciklama_detay": "SURMOUNT-4, randomize çekilme (randomized withdrawal) tasarımıyla, 36 haftalık açık etiketli tirzepatid tedavisi sonrası hastaları ya tirzepatide devam etme ya da plaseboya geçme koluna randomize etmiştir. Plasebo grubuna geçen hastalarda belirgin kilo geri kazanımı (weight regain) gözlenmiştir; buna karşın tirzepatide devam eden grup kilo kaybını korumuş, hatta bir miktar daha ilerletmiştir. Bu bulgu, obezitenin kronik, tedavi kesildiğinde nüks eden bir hastalık olduğunu ve GIP/GLP-1 agonisti tedavisinin sürekli/kronik kullanım gerektirdiğini net biçimde göstermiştir — tıpkı hipertansiyon veya diyabet gibi, obezite tedavisinin de 'kür' değil 'kronik yönetim' modeliyle ele alınması gerektiği mesajını pekiştirmiştir.",
       "secenekAciklamalari": {
         "A": "YANLIS — Tam tersi gösterilmiştir; plasebo grubunda belirgin kilo geri kazanımı olmuştur.",
-        "B": "DOGRU — İlaç kesilince kilo geri kazanımı → kronik kullanım gerekliliği kanıtlanmıştır.",
+        "B": "YANLIS — Yarı ömür ~5 gündür, sonsuz değildir; ilaç kesildiğinde etkisi zamanla kaybolur ve kilo geri kazanımı olur.",
         "C": "YANLIS — Çalışmanın odağı kilo geri kazanımıdır, hipoglisemi kesim protokolüyle ilgili değildir.",
         "D": "YANLIS — SURMOUNT-4'ün temel sonlanımı tam olarak kilo değişikliği/geri kazanımdır.",
-        "E": "YANLIS — Yarı ömür ~5 gündür, sonsuz değildir; ilaç kesildiğinde etkisi zamanla kaybolur ve kilo geri kazanımı olur."
+        "E": "DOGRU — İlaç kesilince kilo geri kazanımı → kronik kullanım gerekliliği kanıtlanmıştır."
       },
       "etiketler": [
         "SURMOUNT-4",
@@ -189,18 +189,18 @@
       "metin": "Yirmi sekiz yaşında hasta, ailesinde medüller tiroid karsinomu (MTC) öyküsü olduğu ve kendisinde MEN-2A sendromu tanısı bulunduğu için endokrinolojiye başvuruyor. Hasta obezite tedavisi için tirzepatid kullanmayı talep ediyor.\n\nBu hastada tirzepatid kullanımıyla ilgili en doğru yaklaşım hangisidir?",
       "secenekler": {
         "A": "MEN-2A sendromu tirzepatid kullanımı için rölatif bir kontrendikasyondur; dikkatli izlemle kullanılabilir.",
-        "B": "Kişisel veya ailesel MTC öyküsü ya da MEN-2 sendromu (2A/2B) varlığında tirzepatid KESİN KONTRENDİKEDİR; bu, rodent çalışmalarında gösterilen doz/süre ilişkili tiroid C-hücre tümör artışına dayanan bir sınıf uyarısıdır.",
-        "C": "MEN-2A yalnızca paratiroid ve feokromositoma bileşenleriyle ilişkilidir, MTC riski taşımaz; bu nedenle tirzepatid güvenle kullanılabilir.",
+        "B": "MEN-2A yalnızca paratiroid ve feokromositoma bileşenleriyle ilişkilidir, MTC riski taşımaz; bu nedenle tirzepatid güvenle kullanılabilir.",
+        "C": "Kişisel veya ailesel MTC öyküsü ya da MEN-2 sendromu (2A/2B) varlığında tirzepatid KESİN KONTRENDİKEDİR; bu, rodent çalışmalarında gösterilen doz/süre ilişkili tiroid C-hücre tümör artışına dayanan bir sınıf uyarısıdır.",
         "D": "Kontrendikasyon yalnızca aktif MTC hastalığı için geçerlidir; MEN-2A taşıyıcılığı tek başına bir engel oluşturmaz.",
         "E": "Tirzepatid MTC riskini insanlarda artırmadığı kesin olarak kanıtlanmıştır; rodent verileri klinik olarak anlamsızdır ve kontrendikasyon kaldırılmıştır."
       },
-      "dogru": "B",
+      "dogru": "C",
       "aciklama_kisa": "Kişisel/ailesel MTC öyküsü veya MEN-2 sendromu (2A/2B) = kesin kontrendikasyon. Rodent çalışmalarında doz/süre ilişkili C-hücre adenom/MTC artışı gösterilmiştir; bu tüm GLP-1/GIP bazlı ajanlar için sınıf uyarısıdır.",
       "aciklama_detay": "Rodentlerde yapılan çalışmalarda tirzepatid ve diğer GLP-1 reseptör agonistleri, doz ve maruziyet süresiyle ilişkili olarak tiroid C-hücreli (parafolliküler hücre) adenom ve medüller karsinom (MTC) prevalansında artış göstermiştir. Bu bulgu insan verisiyle kesin olarak doğrulanmamış olsa da, düzenleyici kurumlar önlem amaçlı olarak kişisel veya ailesel MTC öyküsü ya da Multipl Endokrin Neoplazi Tip 2 (MEN-2A veya MEN-2B) sendromu olan hastalarda tirzepatid kullanımını KESİN KONTRENDİKE ilan etmiştir. MEN-2A sendromu (MTC + feokromositoma + primer hiperparatiroidi) ve MEN-2B (MTC + feokromositoma + mukozal nöromlar/marfanoid habitus) her ikisi de RET proto-onkogeni mutasyonuna bağlıdır ve yüksek MTC riski taşır — bu nedenle her iki sendrom da mutlak kontrendikasyon oluşturur, yalnızca aktif hastalık değil taşıyıcılık/sendrom tanısının kendisi yeterlidir.",
       "secenekAciklamalari": {
         "A": "YANLIS — Rölatif değil, KESİN (mutlak) kontrendikasyondur.",
-        "B": "DOGRU — MTC öyküsü/MEN-2 sendromu = kesin kontrendikasyon; rodent C-hücre tümör verisine dayanır.",
-        "C": "YANLIS — MEN-2A'nın üç bileşeninden biri tam olarak MTC'dir (+feokromositoma+hiperparatiroidi); MTC riski yüksektir.",
+        "B": "YANLIS — MEN-2A'nın üç bileşeninden biri tam olarak MTC'dir (+feokromositoma+hiperparatiroidi); MTC riski yüksektir.",
+        "C": "DOGRU — MTC öyküsü/MEN-2 sendromu = kesin kontrendikasyon; rodent C-hücre tümör verisine dayanır.",
         "D": "YANLIS — Kontrendikasyon yalnızca aktif hastalıkla sınırlı değildir; sendrom/öykü varlığının kendisi yeterlidir.",
         "E": "YANLIS — İnsan verisi rodent bulgusunu kesin olarak dışlamamıştır; kontrendikasyon güncel olarak yürürlüktedir."
       },
@@ -219,19 +219,19 @@
       "metin": "Otuz iki yaşında kadın hasta, kombine oral kontraseptif kullanmakta ve obezite tedavisi için tirzepatid başlanıyor. Doz 5 mg'dan 10 mg'a artırılıyor.\n\nBu doz artışı sonrası kontrasepsiyon yönetimiyle ilgili en doğru yaklaşım hangisidir?",
       "secenekler": {
         "A": "Tirzepatid oral kontraseptif etkinliğini etkilemez; herhangi bir ek önlem gerekmez.",
-        "B": "Tirzepatidin gastrik motiliteyi yavaşlatıcı etkisi OKS'nin Cmax'ını %55-66 oranında azaltabileceğinden, tirzepatid başlangıcında ve her doz artışından sonraki 4 haftalık dönemde non-oral veya bariyer yöntemine geçilmesi önerilir.",
+        "B": "Bu etkileşim yalnızca 15 mg maksimum dozda anlamlıdır; 10 mg'a çıkışta önlem gerekmez.",
         "C": "Parasetamol ile aynı mekanizma nedeniyle OKS'nin toplam maruziyeti (AUC) de belirgin azalır; kalıcı olarak non-oral yönteme geçilmelidir.",
-        "D": "Bu etkileşim yalnızca 15 mg maksimum dozda anlamlıdır; 10 mg'a çıkışta önlem gerekmez.",
+        "D": "Tirzepatidin gastrik motiliteyi yavaşlatıcı etkisi OKS'nin Cmax'ını %55-66 oranında azaltabileceğinden, tirzepatid başlangıcında ve her doz artışından sonraki 4 haftalık dönemde non-oral veya bariyer yöntemine geçilmesi önerilir.",
         "E": "OKS etkinliği azalmaz, yalnızca emilim hızı değişir; bu nedenle klinik olarak önemsizdir ve önlem gerektirmez."
       },
-      "dogru": "B",
+      "dogru": "D",
       "aciklama_kisa": "Tirzepatid gastrik motiliteyi yavaşlatarak OKS Cmax'ını %55-66 azaltabilir → başlangıçta ve HER doz artışından sonraki 4 hafta boyunca non-oral/bariyer kontrasepsiyon önerilir.",
       "aciklama_detay": "Tirzepatidin gastrik motiliteyi yavaşlatıcı etkisi, birlikte alınan oral ilaçların emilimini bozabilir. Özellikle oral kontraseptiflerin maksimum plazma konsantrasyonu (Cmax) %55-66 oranında azalabilir; bu, kontraseptif etkinliği tehlikeye atabilecek klinik olarak anlamlı bir etkileşimdir (parasetamol örneğinden farklı olarak — parasetamolde Cmax düşse de toplam maruziyet/AUC etkilenmediği için doz değişimi gerekmez). Bu nedenle tirzepatid tedavisine başlarken VE her doz artışından sonraki 4 haftalık dönemde (motilite etkisinin en belirgin olduğu, henüz taşifilaksinin tam gelişmediği pencere) hastaların non-oral bir kontrasepsiyon yöntemine (örn. enjeksiyon, IUD) veya bariyer yöntemine (kondom) geçmesi önerilir. Bu, her doz eskalasyonunda tekrarlanması gereken bir danışmanlık noktasıdır, yalnızca tedavi başlangıcıyla sınırlı değildir.",
       "secenekAciklamalari": {
         "A": "YANLIS — Cmax'ta %55-66 azalma klinik olarak anlamlıdır; önlem gereklidir.",
-        "B": "DOGRU — OKS Cmax'ı düşer → başlangıç + her doz artışı sonrası 4 hafta non-oral/bariyer yöntem önerilir.",
+        "B": "YANLIS — Etkileşim doza özgü sınırlı değildir; her doz artışı sonrası önlem tekrarlanmalıdır.",
         "C": "YANLIS — Bu tam tersine parasetamol örneğidir (AUC etkilenmez); OKS örneğinde asıl vurgu Cmax düşüşüdür ve kalıcı değil, geçici (4 haftalık) bir önlem gereklidir.",
-        "D": "YANLIS — Etkileşim doza özgü sınırlı değildir; her doz artışı sonrası önlem tekrarlanmalıdır.",
+        "D": "DOGRU — OKS Cmax'ı düşer → başlangıç + her doz artışı sonrası 4 hafta non-oral/bariyer yöntem önerilir.",
         "E": "YANLIS — Cmax düşüşü kontraseptif etkinliği tehlikeye atabileceğinden klinik olarak önemlidir."
       },
       "etiketler": [
@@ -249,20 +249,20 @@
       "metin": "Yirmi altı yaşında kadın hasta, tirzepatid 10 mg/hafta kullanmakta ve gebelik planlamaktadır. Kliniğe önerilen zamanlama ve gerekçe konusunda danışmanlık için başvuruyor.\n\nBu hastada tirzepatidin kesilme zamanlaması ve gerekçesi hangisidir?",
       "secenekler": {
         "A": "Gebelik oluşana kadar ilaca devam edilebilir; pozitif gebelik testi alındığı anda kesilmesi yeterlidir.",
-        "B": "Rodentlerde gösterilen teratojenik etkiler (iskelet-visseral malformasyon, fetal büyüme geriliği) ve ilacın ~5 günlük yarı ömrü göz önüne alındığında, planlı gebelikten en az 1 ay önce tirzepatid kesilmelidir.",
+        "B": "Kesilme zamanlaması ilacın yarı ömründen bağımsızdır; yalnızca hastanın tercihine göre belirlenir.",
         "C": "Tirzepatidin yarı ömrü çok kısa olduğundan (birkaç saat) gebelik planlanan hafta kesilmesi yeterlidir.",
         "D": "Tirzepatid gebelikte güvenlidir; insan verileri teratojenik riski kesin olarak dışlamıştır.",
-        "E": "Kesilme zamanlaması ilacın yarı ömründen bağımsızdır; yalnızca hastanın tercihine göre belirlenir."
+        "E": "Rodentlerde gösterilen teratojenik etkiler (iskelet-visseral malformasyon, fetal büyüme geriliği) ve ilacın ~5 günlük yarı ömrü göz önüne alındığında, planlı gebelikten en az 1 ay önce tirzepatid kesilmelidir."
       },
-      "dogru": "B",
+      "dogru": "E",
       "aciklama_kisa": "Rodent teratojenite verisi + ~5 gün yarı ömür → planlı gebelikten en az 1 ay önce kesilmeli. Bu, ilacın vücuttan tam temizlenmesini (yaklaşık 5 yarı ömür = ~25 gün) güvenceye alır.",
       "aciklama_detay": "Tirzepatid, rodent çalışmalarında iskelet-visseral malformasyonlar ve fetal büyüme geriliği gibi teratojenik etkiler gösterdiğinden gebelikte kontrendikedir. İlacın sistemik yarı ömrünün yaklaşık 5 gün olması, bir ilacın vücuttan büyük ölçüde temizlenmesi için gereken süreyi (genellikle 4-5 yarı ömür, yani ~20-25 gün) hesaba katarak, planlı gebelikten EN AZ 1 AY ÖNCE kesilmesi gerektiği önerisinin farmakokinetik gerekçesini oluşturur. Bu, gebelik testi pozitif çıktıktan sonra kesmenin yetersiz olacağı, çünkü organogenez döneminde (ilk trimester, özellikle ilk 8 hafta) ilacın hâlâ sistemik dolaşımda anlamlı düzeyde bulunabileceği anlamına gelir. Bu nedenle üreme çağındaki kadınlarda tedavi başlanmadan önce gebelik planlaması mutlaka sorgulanmalı ve etkili kontrasepsiyon konusunda danışmanlık verilmelidir.",
       "secenekAciklamalari": {
         "A": "YANLIS — Pozitif test alındığında kesim çok geç kalabilir; organogenez döneminde ilaç hâlâ dolaşımda olabilir.",
-        "B": "DOGRU — Rodent teratojenite + ~5 gün yarı ömür → en az 1 ay önceden kesim önerisi.",
+        "B": "YANLIS — Zamanlama doğrudan farmakokinetik yarı ömre dayanır, keyfi değildir.",
         "C": "YANLIS — Yarı ömür kısa değil, yaklaşık 5 gündür; bu nedenle uzun bir kesim penceresi gerekir.",
         "D": "YANLIS — İnsan gebelik verisi yetersizdir; güvenlik kesin olarak gösterilmemiştir, kontrendikasyon geçerlidir.",
-        "E": "YANLIS — Zamanlama doğrudan farmakokinetik yarı ömre dayanır, keyfi değildir."
+        "E": "DOGRU — Rodent teratojenite + ~5 gün yarı ömür → en az 1 ay önceden kesim önerisi."
       },
       "etiketler": [
         "Gebelik",

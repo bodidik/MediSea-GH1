@@ -39,18 +39,18 @@
       "metin": "Evre 5 KBH tanılı bir hastada (eGFR 12 mL/dk) FGF-23 ve PTH düzeyleri son derece yüksek olmasına rağmen serum fosfor da belirgin yüksek (7.2 mg/dL) ölçülüyor.\n\nBu klinik-biyokimyasal tabloyu açıklayan mekanizma nedir?",
       "secenekler": {
         "A": "Bu, adaptif evrenin devam ettiğini gösterir; FGF-23 ve PTH henüz yeterince yükselmemiştir.",
-        "B": "Maladaptif evre — Klotho direnci: KBH progresyonu ile böbrek kökenli α-Klotho ekspresyonu dramatik düşer, hedef dokularda şiddetli 'FGF-23 direnci' gelişir; GFR 20-30 mL/dk'nın altında devasa FGF-23/PTH seviyelerine rağmen böbreğin fosfor atma kapasitesi tükenir ve aşikar hiperfosfatemi ortaya çıkar.",
-        "C": "Bu tablo yalnızca diyet fosfor alımının aşırı artmasıyla açıklanır, hormonal mekanizmaların bir katkısı yoktur.",
+        "B": "Bu tablo yalnızca diyet fosfor alımının aşırı artmasıyla açıklanır, hormonal mekanizmaların bir katkısı yoktur.",
+        "C": "Maladaptif evre — Klotho direnci: KBH progresyonu ile böbrek kökenli α-Klotho ekspresyonu dramatik düşer, hedef dokularda şiddetli 'FGF-23 direnci' gelişir; GFR 20-30 mL/dk'nın altında devasa FGF-23/PTH seviyelerine rağmen böbreğin fosfor atma kapasitesi tükenir ve aşikar hiperfosfatemi ortaya çıkar.",
         "D": "Yüksek FGF-23/PTH'ye rağmen hiperfosfatemi gelişmesi, bu hormonların artık fosfor metabolizmasında hiçbir rolü kalmadığını gösterir.",
         "E": "Bu bulgular birincil hiperparatiroidizm ile açıklanır, KBH ile ilişkisi yoktur."
       },
-      "dogru": "B",
+      "dogru": "C",
       "aciklama_kisa": "Maladaptif evre: α-Klotho ekspresyonu düşer → FGF-23 direnci gelişir. GFR<20-30'da devasa FGF-23/PTH'ye rağmen fosfor atılamaz → aşikar hiperfosfatemi. Bu, kompanzasyon mekanizmasının çöküşüdür.",
       "aciklama_detay": "KBH progresyonu ile birlikte böbrek kökenli α-Klotho ekspresyonu dramatik şekilde düşer. Klotho, FGF-23'ün etkili sinyal iletimi için gerekli bir ko-reseptördür; eksikliği hedef dokularda şiddetli bir 'FGF-23 direnci' yaratır — yani dolaşımda FGF-23 ne kadar yüksek olursa olsun, hedef hücreler (böbrek tübül hücreleri) buna yeterince yanıt veremez. GFR 20-30 mL/dk'nın altına indiğinde, kanda devasa boyutlara ulaşan FGF-23 ve PTH seviyelerine rağmen böbreğin fosfor atma kapasitesi tükenir ve aşikar hiperfosfatemi gelişir. Bu, kompanzatuar mekanizmaların yetersiz kaldığı, hastalığın maladaptif evreye geçtiği kritik bir dönüm noktasıdır ve bu evrede diyet kısıtlaması ve fosfat bağlayıcı tedaviler zorunlu hale gelir.",
       "secenekAciklamalari": {
         "A": "YANLIS — Adaptif evrede serum fosfor NORMAL kalır; bu hastada aşikar hiperfosfatemi mevcuttur, bu maladaptif evreyi gösterir.",
-        "B": "DOGRU — Klotho direnci → FGF-23 direnci → kompanzasyon çöküşü → aşikar hiperfosfatemi.",
-        "C": "YANLIS — Hormonal mekanizma (Klotho direnci) bu tablonun temel açıklamasıdır, diyet tek başına yeterli açıklama değildir.",
+        "B": "YANLIS — Hormonal mekanizma (Klotho direnci) bu tablonun temel açıklamasıdır, diyet tek başına yeterli açıklama değildir.",
+        "C": "DOGRU — Klotho direnci → FGF-23 direnci → kompanzasyon çöküşü → aşikar hiperfosfatemi.",
         "D": "YANLIS — Bu hormonların rolü kalmamış değildir; aksine seviyeleri aşırı yükselmiştir ama hedef doku direnci nedeniyle etkisiz kalmaktadırlar.",
         "E": "YANLIS — Bu tablo sekonder hiperparatiroidizmdir (KBH'ye bağlı), birincil hiperparatiroidizm değildir."
       },
@@ -69,19 +69,19 @@
       "metin": "KBH'li bir hastada koroner arter kalsifikasyonu araştırılırken, vasküler biyopsi örneklerinde damar düz kas hücrelerinin (VSMC) osteoblast benzeri hücrelere dönüştüğü gösteriliyor.\n\nBu transdiferansiyasyon sürecinin moleküler basamakları hangisidir?",
       "secenekler": {
         "A": "Yüksek fosfor doğrudan VSMC nükleer membranını geçerek DNA'ya bağlanır ve osteojenik genleri aktive eder.",
-        "B": "Yüksek inorganik fosfor, Tip III sodyum-fosfat taşıyıcıları (Pit-1, Pit-2) aracılığıyla VSMC'ye girer; hücre içi fosfor artışı Runx2, Msx2 ve osterix gibi osteojenik transkripsiyon faktörlerini aktive ederek VSMC'lerin osteoblast benzeri hücrelere dönüşmesine neden olur.",
+        "B": "Bu süreç FGF-23'ün VSMC üzerindeki doğrudan etkisiyle, Klotho'dan bağımsız olarak gerçekleşir.",
         "C": "VSMC transdiferansiyasyonu yalnızca kalsiyum bazlı fosfat bağlayıcı kullanımına bağlı gelişir, fosforun kendisiyle ilgisi yoktur.",
-        "D": "Bu süreç FGF-23'ün VSMC üzerindeki doğrudan etkisiyle, Klotho'dan bağımsız olarak gerçekleşir.",
+        "D": "Yüksek inorganik fosfor, Tip III sodyum-fosfat taşıyıcıları (Pit-1, Pit-2) aracılığıyla VSMC'ye girer; hücre içi fosfor artışı Runx2, Msx2 ve osterix gibi osteojenik transkripsiyon faktörlerini aktive ederek VSMC'lerin osteoblast benzeri hücrelere dönüşmesine neden olur.",
         "E": "Pit-1/Pit-2 taşıyıcıları yalnızca kemik dokusunda eksprese edilir, vasküler dokuda bulunmazlar."
       },
-      "dogru": "B",
+      "dogru": "D",
       "aciklama_kisa": "Fosfor, Pit-1/Pit-2 taşıyıcılarıyla VSMC'ye girer → hücre içi fosfor artışı Runx2/Msx2/osterix (osteojenik transkripsiyon faktörleri) aktivasyonuna yol açar → VSMC osteoblast benzeri hücreye dönüşür (medial kalsifikasyon).",
       "aciklama_detay": "Fosfor, KBH'de tek başına hücresel gen ekspresyonunu değiştiren bir toksin gibi davranır. Vasküler kalsifikasyon (medial kalsifikasyon) sürecinde, yüksek inorganik fosfor damar düz kas hücrelerine (VSMC) Tip III sodyum-fosfat taşıyıcıları olan Pit-1 ve Pit-2 aracılığıyla girer. Bu hücre içi fosfor artışı; Runx2 (Cbfa1), Msx2 ve osterix gibi normalde osteoblast farklılaşmasını yönlendiren osteojenik transkripsiyon faktörlerini aktive eder. Sonuçta VSMC'ler kontraktil fenotiplerini kaybederek osteoblast benzeri hücrelere dönüşürler (transdiferansiyasyon) — bu hücreler kemik matriks proteinleri (osteokalsin, alkalen fosfataz) üretmeye başlar ve damar duvarında aktif, hücre aracılı bir kalsifikasyon süreci başlatır. Bu, vasküler kalsifikasyonun pasif bir çökelme değil, aktif bir hücresel programlama süreci olduğunu gösterir.",
       "secenekAciklamalari": {
         "A": "YANLIS — Fosfor doğrudan nükleer membranı geçip DNA'ya bağlanmaz; mekanizma Pit-1/Pit-2 taşıyıcı aracılı hücre içi girişi ve transkripsiyon faktörü aktivasyonu üzerindendir.",
-        "B": "DOGRU — Pit-1/Pit-2 girişi → Runx2/Msx2/osterix aktivasyonu → osteoblastik transdiferansiyasyon.",
+        "B": "YANLIS — Bu süreç FGF-23/Klotho ekseninden bağımsız, doğrudan fosforun VSMC'ye girişi ve hücre içi etkisiyle ilişkilidir.",
         "C": "YANLIS — Süreç doğrudan yüksek fosforun kendisiyle tetiklenir; kalsiyum bazlı bağlayıcı kullanımı riski artırabilir ama temel mekanizma fosfor girişidir.",
-        "D": "YANLIS — Bu süreç FGF-23/Klotho ekseninden bağımsız, doğrudan fosforun VSMC'ye girişi ve hücre içi etkisiyle ilişkilidir.",
+        "D": "DOGRU — Pit-1/Pit-2 girişi → Runx2/Msx2/osterix aktivasyonu → osteoblastik transdiferansiyasyon.",
         "E": "YANLIS — Pit-1/Pit-2 vasküler düz kas hücrelerinde de eksprese edilir; bu, vasküler kalsifikasyon mekanizmasının temelidir."
       },
       "etiketler": [
@@ -129,20 +129,20 @@
       "metin": "İleri KBH'li bir hastada PTH düzeyini agresif şekilde baskılamak amacıyla yüksek doz aktif D vitamini ve kalsiyum bazlı fosfat bağlayıcı ile tedavi ediliyor. PTH düzeyi normal referans aralığının belirgin altına düşüyor ve hastada ilerleyici vasküler kalsifikasyon gelişiyor.\n\nBu klinik tabloyu açıklayan kemik-vasküler etkileşim mekanizması hangisidir?",
       "secenekler": {
         "A": "Yüksek PTH baskısı doğrudan vasküler kalsifikasyonu tetikler; PTH düzeyi ne kadar düşük olursa kalsifikasyon riski o kadar azalır.",
-        "B": "Aşırı PTH baskılanması adinamik kemik hastalığına yol açar; bu durumda kemiğin kalsiyum/fosfor tamponlama kapasitesi kaybolduğundan, alınan kalsiyum ve fosfor kemiğe giremeyip doğrudan damarlara yönelerek kalsifikasyonu hızlandırır.",
+        "B": "PTH düzeyinin referans aralığın altında olması bu hastada tamamen istenen, komplikasyonsuz bir hedeftir.",
         "C": "Adinamik kemik hastalığı yalnızca diyaliz hastalarında görülür ve vasküler kalsifikasyonla hiçbir ilişkisi yoktur.",
         "D": "Bu tablo osteitis fibrosa cystica ile açıklanır; yüksek döngülü kemik hastalığı vasküler kalsifikasyona yol açmıştır.",
-        "E": "PTH düzeyinin referans aralığın altında olması bu hastada tamamen istenen, komplikasyonsuz bir hedeftir."
+        "E": "Aşırı PTH baskılanması adinamik kemik hastalığına yol açar; bu durumda kemiğin kalsiyum/fosfor tamponlama kapasitesi kaybolduğundan, alınan kalsiyum ve fosfor kemiğe giremeyip doğrudan damarlara yönelerek kalsifikasyonu hızlandırır."
       },
-      "dogru": "B",
+      "dogru": "E",
       "aciklama_kisa": "Aşırı PTH baskılanması → adinamik kemik hastalığı → kemiğin Ca/P tamponlama kapasitesi kaybolur → alınan Ca/P kemiğe giremeyip damarlara yönelir → vasküler kalsifikasyon hızlanır.",
       "aciklama_detay": "Renal osteodistrofi spektrumunda iki uç önemlidir: Sürekli yüksek PTH osteitis fibrosa cystica'ya (yüksek döngülü kemik hastalığı) neden olurken; aşırı kalsiyum ve D vitamini yüklemesi sonucu PTH'nin aşırı baskılanması adinamik kemik hastalığına yol açar. Adinamik kemik hastalığında kemik döngüsü (turnover) çok düşüktür — kemik, fazla kalsiyum ve fosforu 'tamponlayacak', yani kendi matriksine alacak metabolik kapasiteden yoksundur. Bu durumda diyetle veya tedaviyle alınan kalsiyum ve fosfor kemiğe giremez ve doğrudan yumuşak dokulara, özellikle damarlara yönelerek ölümcül vasküler kalsifikasyonlara sebep olur. Bu nedenle KBH-MBD yönetiminde PTH'yi 'ne çok yüksek ne çok düşük', dengeli bir aralıkta tutmak kritik bir tedavi hedefidir — aşırı baskılama da tıpkı aşırı yükseklik gibi zararlı olabilir.",
       "secenekAciklamalari": {
         "A": "YANLIS — İlişki bu kadar basit doğrusal değildir; PTH'nin AŞIRI düşük olması da (adinamik kemik yoluyla) kalsifikasyonu artırabilir.",
-        "B": "DOGRU — Adinamik kemik hastalığı → kemiğin tamponlama kapasitesi kaybı → Ca/P damarlara yönelir → kalsifikasyon.",
+        "B": "YANLIS — Referans aralığın belirgin altına düşen PTH, KBH-MBD yönetiminde istenmeyen, adinamik kemik hastalığı riski taşıyan bir durumdur.",
         "C": "YANLIS — Adinamik kemik hastalığı diyaliz öncesi KBH hastalarında da görülebilir ve vasküler kalsifikasyonla doğrudan ilişkilidir.",
         "D": "YANLIS — Bu vakada PTH düşük (baskılanmış) bulunmuştur, osteitis fibrosa cystica YÜKSEK PTH ile ilişkilidir; klinik senaryo ile uyuşmaz.",
-        "E": "YANLIS — Referans aralığın belirgin altına düşen PTH, KBH-MBD yönetiminde istenmeyen, adinamik kemik hastalığı riski taşıyan bir durumdur."
+        "E": "DOGRU — Adinamik kemik hastalığı → kemiğin tamponlama kapasitesi kaybı → Ca/P damarlara yönelir → kalsifikasyon."
       },
       "etiketler": [
         "Adinamik Kemik Hastalığı",
@@ -189,18 +189,18 @@
       "metin": "KBH'li bir hasta, uzun süredir kalsiyum karbonat bazlı fosfat bağlayıcı kullanıyor. Takipte hiperkalsemi atakları ve ilerleyici koroner arter kalsifikasyon skoru artışı saptanıyor. Nefrolog tedaviyi sevelamere geçirmeyi planlıyor.\n\nSevelamer'in kalsiyum bazlı bağlayıcılara kıyasla üstünlüğünün kanıta dayalı gerekçesi ve ek (pleiotropik) etkileri nelerdir?",
       "secenekler": {
         "A": "Sevelamer yalnızca fosfor bağlar; kalsiyum bazlı ajanlardan tek farkı daha ucuz olmasıdır.",
-        "B": "Sevelamer kalsiyum ve metal içermeyen iyon değiştirici bir polimerdir; pozitif kalsiyum dengesi ve hiperkalsemi riski yaratmaz. Meta-analizler kalsiyum bazlı ajanlara göre mortaliteyi ve vasküler kalsifikasyon progresyonunu azalttığını göstermiştir. Ayrıca safra asitlerini bağlayarak LDL kolesterol, ürik asit ve CRP'yi düşürücü pleiotropik etkiye sahiptir.",
-        "C": "Sevelamer hidroklorür formu, karbonat formuna göre metabolik asidoz riski taşımadığından her zaman tercih edilmelidir.",
+        "B": "Sevelamer hidroklorür formu, karbonat formuna göre metabolik asidoz riski taşımadığından her zaman tercih edilmelidir.",
+        "C": "Sevelamer kalsiyum ve metal içermeyen iyon değiştirici bir polimerdir; pozitif kalsiyum dengesi ve hiperkalsemi riski yaratmaz. Meta-analizler kalsiyum bazlı ajanlara göre mortaliteyi ve vasküler kalsifikasyon progresyonunu azalttığını göstermiştir. Ayrıca safra asitlerini bağlayarak LDL kolesterol, ürik asit ve CRP'yi düşürücü pleiotropik etkiye sahiptir.",
         "D": "Sevelamer'in kalsiyum bazlı ajanlara üstünlüğü yalnızca teorik kalmıştır, hiçbir klinik çalışma ile desteklenmemiştir.",
         "E": "Sevelamer, düşük hap yükü ve mükemmel gastrointestinal tolerabilite ile öne çıkan bir ajandır, bu onun en büyük avantajıdır."
       },
-      "dogru": "B",
+      "dogru": "C",
       "aciklama_kisa": "Sevelamer kalsiyum/metal içermez, hiperkalsemi/pozitif Ca dengesi yapmaz; meta-analizler mortalite ve kalsifikasyon progresyonunda üstünlük gösterir. Ek olarak safra asidi bağlayarak LDL/ürik asit/CRP düşürücü pleiotropik etkisi vardır.",
       "aciklama_detay": "Sevelamer (Hidroklorür ve Karbonat formları), kalsiyum ve metal içermeyen, iyon değiştirici katyonik bir polimerdir. Kalsiyum bazlı bağlayıcıların (kalsiyum asetat/karbonat) aksine, sevelamer pozitif kalsiyum dengesi yaratmaz ve hiperkalsemiye yol açmaz — bu, uzun dönemde vasküler kalsifikasyon riskini azaltan önemli bir avantajdır. Meta-analizler, sevelamerin kalsiyum bazlı ajanlara göre mortaliteyi ve vasküler kalsifikasyon progresyonunu azalttığını göstermektedir. Ayrıca sevelamer, fosforu bağlamanın yanı sıra safra asitlerini de bağlayarak LDL kolesterolü, ürik asidi ve C-reaktif proteini düşürür — bu ek (pleiotropik) etkiler, ilacın kardiyovasküler risk profilini iyileştirmesine katkıda bulunabilir. Hidroklorür formu metabolik asidoz yapabileceğinden karbonat formu tercih edilir; en büyük kısıtlılığı yüksek hap yükü ve gastrointestinal yan etkilerdir (özellikle kabızlık) — bu nedenle E seçeneği yanlıştır.",
       "secenekAciklamalari": {
         "A": "YANLIS — Sevelamer kalsiyum bazlı ajanlardan yalnızca fiyat açısından değil, mekanizma ve klinik sonuçlar açısından da farklıdır; ayrıca kalsiyum bazlı ajanlardan daha PAHALIDIR, daha ucuz değildir.",
-        "B": "DOGRU — Kalsiyum/metal içermez, mortalite/kalsifikasyon avantajı + pleiotropik lipid/ürik asit/CRP düşürücü etki.",
-        "C": "YANLIS — Tam tersine HİDROKLORÜR formu metabolik asidoz riski taşır, bu nedenle KARBONAT formu tercih edilir.",
+        "B": "YANLIS — Tam tersine HİDROKLORÜR formu metabolik asidoz riski taşır, bu nedenle KARBONAT formu tercih edilir.",
+        "C": "DOGRU — Kalsiyum/metal içermez, mortalite/kalsifikasyon avantajı + pleiotropik lipid/ürik asit/CRP düşürücü etki.",
         "D": "YANLIS — Meta-analizler net biçimde mortalite ve kalsifikasyon progresyonunda sevelamer lehine sonuçlar göstermiştir; klinik kanıt mevcuttur.",
         "E": "YANLIS — Sevelamer'in en büyük KISITLILIĞI yüksek hap yükü ve GİS yan etkileridir (kabızlık); bu onun avantajı değil dezavantajıdır."
       },
@@ -219,19 +219,19 @@
       "metin": "Hemodiyaliz hastası bir bireyde, fosfor kontrolü sağlamanın yanı sıra eşlik eden demir eksikliği anemisinin de yönetilmesi hedefleniyor. Nefrolog, hem fosfat bağlayıcı hem de demir replasmanı sağlayacak bir ajan seçmeyi planlıyor.\n\nBu klinik hedefe en uygun fosfat bağlayıcı sınıfı ve örnek ajan hangisidir?",
       "secenekler": {
         "A": "Lantan karbonat; hem fosfor bağlar hem demir depolarını doldurur.",
-        "B": "Ferrik sitrat (demir bazlı fosfat bağlayıcı); fosforu düşürürken demir depolarını (ferritin, TSAT) doldurur ve ESA (eritropoez stimüle edici ajan) ihtiyacını azaltır.",
+        "B": "Kalsiyum asetat; hem fosfor hem demir eksikliğini aynı anda düzeltir.",
         "C": "Sevelamer karbonat; demir içermese de dolaylı olarak demir emilimini artırır.",
-        "D": "Kalsiyum asetat; hem fosfor hem demir eksikliğini aynı anda düzeltir.",
+        "D": "Ferrik sitrat (demir bazlı fosfat bağlayıcı); fosforu düşürürken demir depolarını (ferritin, TSAT) doldurur ve ESA (eritropoez stimüle edici ajan) ihtiyacını azaltır.",
         "E": "Fosfat bağlayıcı ajanların hiçbiri demir eksikliği üzerinde herhangi bir etkiye sahip değildir, bu nedenle ayrı bir demir preparatı şart koşulur."
       },
-      "dogru": "B",
+      "dogru": "D",
       "aciklama_kisa": "Ferrik sitrat, demir bazlı bir fosfat bağlayıcıdır; fosforu düşürürken aynı zamanda demir depolarını (ferritin, TSAT) doldurur ve ESA ihtiyacını azaltır — çift fayda sağlayan bir seçenektir.",
       "aciklama_detay": "Demir bazlı fosfat bağlayıcılar arasında Ferrik sitrat, fosforu düşürürken demir depolarını (ferritin, transferrin satürasyonu/TSAT) doldurur ve bu sayede eritropoez stimüle edici ajan (ESA) ihtiyacını azaltır — bu, hem fosfor kontrolü hem de renal anemi yönetimi gereken hastalarda çift yönlü fayda sağlayan, tedavi basitleştirici bir seçenektir. Diğer bir demir bazlı ajan olan Sukroferrik oksihidroksit (PA21) ise sistemik demir emilimi minimal olan, çiğnenebilir yapısıyla günlük hap yükünü dramatik oranda düşüren çok güçlü bir ajandır, ancak bu formun sistemik demir depolarını doldurma etkisi Ferrik sitrat kadar belirgin değildir. Her iki demir bazlı ajanın da yan etkisi ishal ve koyu renkli dışkıdır. Diğer fosfat bağlayıcı sınıfları (kalsiyum bazlı, sevelamer, lantan karbonat) demir içermez ve demir depolarını doldurma özelliği taşımaz.",
       "secenekAciklamalari": {
         "A": "YANLIS — Lantan karbonat metal (lantan) bazlıdır ama demir içermez; demir depolarını doldurma özelliği yoktur.",
-        "B": "DOGRU — Ferrik sitrat fosfor bağlar VE demir depolarını doldurur VE ESA ihtiyacını azaltır.",
+        "B": "YANLIS — Kalsiyum asetat kalsiyum bazlıdır, demir içermez; demir eksikliğini düzeltmez.",
         "C": "YANLIS — Sevelamer demir içermez ve demir emilimini artırdığına dair bir mekanizma tanımlanmamıştır.",
-        "D": "YANLIS — Kalsiyum asetat kalsiyum bazlıdır, demir içermez; demir eksikliğini düzeltmez.",
+        "D": "DOGRU — Ferrik sitrat fosfor bağlar VE demir depolarını doldurur VE ESA ihtiyacını azaltır.",
         "E": "YANLIS — Ferrik sitrat ve sukroferrik oksihidroksit gibi demir bazlı bağlayıcılar tam olarak bu çift etkiyi (fosfor + demir) sağlamak için geliştirilmiştir."
       },
       "etiketler": [
@@ -249,20 +249,20 @@
       "metin": "Hemodiyaliz hastası bir hastada, maksimum tolere edilebilir fosfat bağlayıcı dozuna rağmen serum fosfor hedefe ulaşmıyor. Aynı zamanda hasta çoklu ilaç yüküyle uyum problemi yaşıyor. Klinisyen, fosfat bağlayıcılardan tamamen farklı bir mekanizmaya sahip Tenapanor'u add-on tedavi olarak eklemeyi planlıyor.\n\nTenapanor'un etki mekanizması ve beklenen yan etki profili hangisidir?",
       "secenekler": {
         "A": "Tenapanor, bağırsak lümeninde fosforu doğrudan bağlayarak fekal atılımını artıran klasik bir fosfat bağlayıcıdır; yan etkisi kabızlıktır.",
-        "B": "Tenapanor, ince bağırsaktaki NHE3'ü (Sodyum/Hidrojen Değiştirici-3) bloke eder; bu inhibisyon intraselüler proton artışına ve düşen pH ile sıkı bağlantı proteini klaudinlerde konformasyonel değişikliğe yol açarak fosforun paraselüler geçişini bloke eder, ayrıca NaPi-2b'yi downregüle eder. En sık yan etkisi lümende sodyum/su tutulumuna bağlı yumuşak dışkılama/ishaldir.",
+        "B": "Tenapanor'un en sık yan etkisi şiddetli kabızlık olup, bu KBH hastalarında ayrıca sorun yaratır.",
         "C": "Tenapanor yalnızca NaPi-IIa'yı böbrek düzeyinde inhibe ederek fosfatüriyi artırır, bağırsak üzerinde etkisi yoktur.",
         "D": "Tenapanor'un hap yükü, mevcut fosfat bağlayıcılardan daha fazladır, bu nedenle uyum problemi olan hastalarda tercih edilmemelidir.",
-        "E": "Tenapanor'un en sık yan etkisi şiddetli kabızlık olup, bu KBH hastalarında ayrıca sorun yaratır."
+        "E": "Tenapanor, ince bağırsaktaki NHE3'ü (Sodyum/Hidrojen Değiştirici-3) bloke eder; bu inhibisyon intraselüler proton artışına ve düşen pH ile sıkı bağlantı proteini klaudinlerde konformasyonel değişikliğe yol açarak fosforun paraselüler geçişini bloke eder, ayrıca NaPi-2b'yi downregüle eder. En sık yan etkisi lümende sodyum/su tutulumuna bağlı yumuşak dışkılama/ishaldir."
       },
-      "dogru": "B",
+      "dogru": "E",
       "aciklama_kisa": "Tenapanor, ince bağırsak NHE3'ü bloke ederek paraselüler fosfor geçişini (klaudin konformasyon değişikliği ile) ve NaPi-2b'yi baskılar. Günde 2 küçük tabletle düşük hap yükü sağlar; en sık yan etkisi ishaldir (kabızlık değil).",
       "aciklama_detay": "Tenapanor, fosfat bağlayıcılardan tamamen farklı bir mekanizmaya sahip, ince bağırsaktaki Sodyum/Hidrojen Değiştirici-3'ü (NHE3) bloke eden küçük bir moleküldür. NHE3'ün inhibisyonu, bağırsak epitel hücrelerinde intraselüler proton (H+) artışına neden olur; düşen pH, sıkı bağlantı (tight junction) proteini olan klaudinlerde konformasyonel değişiklik yaratarak fosforun paraselüler (hücreler arası) geçişini bloke eder. Aynı zamanda transselüler taşıyıcı olan NaPi-2b'yi de downregüle eder — bu çift mekanizma güçlü bir fosfor emilim azalması sağlar. Günlük sadece 2 küçük tablet (günde iki kez 5-30 mg) kullanılarak hap yükü muazzam ölçüde azaltılır ve fosfat bağlayıcılara dirençli/uyumsuz vakalarda add-on tedavi olarak etkilidir. NHE3 inhibisyonu lümende sodyum ve su tutulumuna yol açtığı için en sık görülen yan etkisi yumuşak dışkılama ve İSHALDİR (kabızlık değil) — ilginç şekilde bu yan etki, KBH'de sık görülen kabızlık problemini çözme potansiyeli de taşır.",
       "secenekAciklamalari": {
         "A": "YANLIS — Tenapanor klasik bir fosfor bağlayıcı DEĞİLDİR; fosforu doğrudan bağlamaz, taşıyıcı/geçirgenlik mekanizmasını değiştirir. Yan etkisi kabızlık değil ishaldir.",
-        "B": "DOGRU — NHE3 inhibisyonu → paraselüler geçiş blokajı (klaudin) + NaPi-2b downregülasyonu; yan etki ishal.",
+        "B": "YANLIS — En sık yan etki kabızlık değil, tam tersine yumuşak dışkılama/İSHALDİR; bu KBH'deki kabızlığı çözme potansiyeli taşır.",
         "C": "YANLIS — Tenapanor böbrekte değil, ince BAĞIRSAKTA etki gösterir; NaPi-IIa böbrek taşıyıcısıdır, Tenapanor'un hedefi değildir.",
         "D": "YANLIS — Tenapanor'un temel klinik avantajı tam tersine ÇOK DÜŞÜK hap yüküdür (günde 2 küçük tablet).",
-        "E": "YANLIS — En sık yan etki kabızlık değil, tam tersine yumuşak dışkılama/İSHALDİR; bu KBH'deki kabızlığı çözme potansiyeli taşır."
+        "E": "DOGRU — NHE3 inhibisyonu → paraselüler geçiş blokajı (klaudin) + NaPi-2b downregülasyonu; yan etki ishal."
       },
       "etiketler": [
         "Tenapanor",

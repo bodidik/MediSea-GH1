@@ -68,19 +68,19 @@
       "id": "s3",
       "metin": "Anti-GPIIb/IIIa antikoru pozitif bir İTP hastasında trombosit yüzeyinde C3b birikimi gösteriliyor.\n\nBu bulgu hangi ek klerens mekanizmasını işaret eder ve bu mekanizma otoantikor aracılı fagositozdan nasıl farklıdır?",
       "secenekler": {
-        "A": "C3b birikimi, klasik kompleman yolağının aktivasyonunu gösterir; anti-GPIIb/IIIa antikorlarının varlığında bu aktivasyon daha belirgindir ve makrofajlardaki kompleman reseptörleri (CR1) üzerinden trombosit klerensini hızlandırır — bu, saf FcγR aracılı fagositozdan ayrı, tamamlayıcı bir mekanizmadır.",
+        "A": "Kompleman aktivasyonu yalnızca anti-GPIb/IX antikorlarında görülür, anti-GPIIb/IIIa ile ilişkisi yoktur.",
         "B": "C3b birikimi, trombosit üretiminin arttığını gösteren pozitif bir bulgudur, yıkımla ilgisi yoktur.",
-        "C": "Kompleman aktivasyonu yalnızca anti-GPIb/IX antikorlarında görülür, anti-GPIIb/IIIa ile ilişkisi yoktur.",
+        "C": "C3b birikimi, klasik kompleman yolağının aktivasyonunu gösterir; anti-GPIIb/IIIa antikorlarının varlığında bu aktivasyon daha belirgindir ve makrofajlardaki kompleman reseptörleri (CR1) üzerinden trombosit klerensini hızlandırır — bu, saf FcγR aracılı fagositozdan ayrı, tamamlayıcı bir mekanizmadır.",
         "D": "C3b birikimi FcγR aracılı fagositozu tamamen inhibe eder, klerensi yavaşlatan koruyucu bir mekanizmadır.",
         "E": "Kompleman aktivasyonu İTP patogenezinde hiçbir rol oynamadığı kanıtlanmış bir mekanizmadır."
       },
-      "dogru": "A",
+      "dogru": "C",
       "aciklama_kisa": "Anti-GPIIb/IIIa antikorları klasik kompleman yolağını aktive ederek trombosit yüzeyinde C3b birikimine yol açar; bu, makrofajlardaki CR1 reseptörleri üzerinden ek, FcγR'den bağımsız bir klerens yolu sağlar.",
       "aciklama_detay": "Otoantikorların fagositozu artırmasının yanı sıra, klasik kompleman yolağını aktive ederek de trombosit yıkımına katkıda bulunduğu bilinmektedir. Özellikle anti-GPIIb/IIIa antikorlarının varlığında kompleman aktivasyonu daha belirgindir ve bu durum trombosit yüzeyinde C3b birikimine yol açarak makrofajlardaki kompleman reseptörleri (CR1) üzerinden hücre klerensini hızlandırır. Bu mekanizma, klasik FcγR aracılı fagositozdan bağımsız/ek bir yol sunar — yani bir trombosit hem FcγR (Fc bölgesi tanıma) hem de CR1 (kompleman C3b tanıma) yoluyla eşzamanlı olarak makrofaj saldırısına maruz kalabilir, bu da klerensin hızını ve etkinliğini artırır. Bu bilgi, İTP tedavisinde neden yalnızca FcγR blokajına dayanan tedavilerin (örn. IVIG) bazı hastalarda tam yanıt sağlayamayabileceğini, kompleman aracılı ek bir mekanizmanın devrede olabileceğini açıklayan önemli bir patofizyolojik detaydır.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Klasik kompleman yolağı aktivasyonu → C3b birikimi → CR1 aracılı ek klerens mekanizması.",
+        "A": "YANLIS — Metinde açıkça belirtildiği gibi kompleman aktivasyonu özellikle ANTİ-GPIIb/IIIa antikorlarının varlığında belirgindir.",
         "B": "YANLIS — C3b birikimi trombosit ÜRETİMİYLE değil, YIKIMLA (klerens hızlanmasıyla) ilişkilidir.",
-        "C": "YANLIS — Metinde açıkça belirtildiği gibi kompleman aktivasyonu özellikle ANTİ-GPIIb/IIIa antikorlarının varlığında belirgindir.",
+        "C": "DOGRU — Klasik kompleman yolağı aktivasyonu → C3b birikimi → CR1 aracılı ek klerens mekanizması.",
         "D": "YANLIS — C3b birikimi FcγR aracılı fagositozu inhibe etmez; tam tersine EK bir klerens yolu (CR1 üzerinden) sağlayarak toplam yıkımı ARTIRIR.",
         "E": "YANLIS — Kompleman aktivasyonu İTP'de iyi tanımlanmış, katkıda bulunan bir mekanizmadır."
       },
@@ -98,20 +98,20 @@
       "id": "s4",
       "metin": "Anti-GPIb/IX antikoru pozitif bir İTP hastasında, klasik FcγR aracılı dalak fagositozundan bağımsız, karaciğerde gerçekleşen alternatif bir trombosit klerens mekanizması araştırılıyor.\n\nBu Fc-bağımsız klerens yolağının basamakları nelerdir?",
       "secenekler": {
-        "A": "Anti-GPIb/IX antikorları (veya CD8+ sitotoksik T hücreleri) nöraminidaz aktivitesini artırarak trombosit membranındaki sialik asit kalıntılarını uzaklaştırır (desialilasyon); desialile trombositler karaciğerde hepatositler üzerindeki Ashwell-Morell reseptörleri (AMR) tarafından tanınarak karaciğerde sekestre edilir.",
+        "A": "Ashwell-Morell reseptörleri yalnızca eritrositlerin yaşlanmasında rol oynar, trombosit klerensiyle ilgisi yoktur.",
         "B": "Bu mekanizma tamamen dalak-bağımlıdır, karaciğerin bu süreçte hiçbir rolü yoktur.",
         "C": "Desialilasyon süreci trombosit üretimini artırarak trombositopeniyi kompanse eden koruyucu bir mekanizmadır.",
-        "D": "Ashwell-Morell reseptörleri yalnızca eritrositlerin yaşlanmasında rol oynar, trombosit klerensiyle ilgisi yoktur.",
+        "D": "Anti-GPIb/IX antikorları (veya CD8+ sitotoksik T hücreleri) nöraminidaz aktivitesini artırarak trombosit membranındaki sialik asit kalıntılarını uzaklaştırır (desialilasyon); desialile trombositler karaciğerde hepatositler üzerindeki Ashwell-Morell reseptörleri (AMR) tarafından tanınarak karaciğerde sekestre edilir.",
         "E": "Bu mekanizma yalnızca FcγR aracılı fagositozun güçlendirilmiş bir formudur, Fc bölgesinden tamamen bağımsız değildir."
       },
-      "dogru": "A",
+      "dogru": "D",
       "aciklama_kisa": "Anti-GPIb/IX antikorları/CD8+ CTL → nöraminidaz aktivasyonu → sialik asit kaybı (desialilasyon) → hepatositlerdeki Ashwell-Morell reseptörleri (AMR) tanıması → karaciğerde sekestrasyon. Bu, Fc-BAĞIMSIZ bir yolaktır.",
       "aciklama_detay": "Geleneksel FcγR aracılı yıkıma ek olarak, başta anti-GPIb/IX antikorları olmak üzere bazı otoantikorlar trombosit desialilasyonunu tetikleyerek Fc-bağımsız bir yıkım yolağını aktive eder. Otoantikorların (veya CD8+ sitotoksik T hücrelerinin) etkisiyle nöraminidaz aktivitesi artar ve trombosit membranındaki sialik asit kalıntıları uzaklaştırılır. Desialile olmuş bu yaşlanmış veya modifiye trombositler, karaciğerde hepatositler üzerinde bulunan Ashwell-Morell reseptörleri (AMR) tarafından tanınır ve karaciğerde sekestre edilerek dolaşımdan hızla uzaklaştırılır. Bu mekanizma klinik açıdan önemlidir çünkü Fc bölgesini hedef alan tedaviler (IVIG, anti-D gibi, veya FcγR blokajı) bu Fc-bağımsız yolağı etkilemez — bu, bazı İTP hastalarının neden standart FcγR-hedefli tedavilere dirençli olabileceğini açıklayan güncel bir patofizyolojik kavramdır ve nöraminidaz inhibitörlerinin (örn. oseltamivir) araştırma amaçlı denenmesinin de rasyonelini oluşturur.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Nöraminidaz aktivasyonu → desialilasyon → hepatik AMR tanıması → karaciğerde sekestrasyon; Fc-bağımsız yolak.",
+        "A": "YANLIS — Ashwell-Morell reseptörleri bu bağlamda spesifik olarak DESİALİLE TROMBOSİTLERİ tanır ve karaciğer sekestrasyonunu sağlar; trombosit klerensiyle doğrudan ilişkilidir.",
         "B": "YANLIS — Bu mekanizma tam olarak KARACİĞER kaynaklıdır (AMR, hepatositler üzerinde), dalaktan bağımsız bir ek yolaktır.",
         "C": "YANLIS — Desialilasyon üretim artışı değil, klerens/YIKIM sürecinin bir parçasıdır; trombositopeniyi KÖTÜLEŞTİRİR.",
-        "D": "YANLIS — Ashwell-Morell reseptörleri bu bağlamda spesifik olarak DESİALİLE TROMBOSİTLERİ tanır ve karaciğer sekestrasyonunu sağlar; trombosit klerensiyle doğrudan ilişkilidir.",
+        "D": "DOGRU — Nöraminidaz aktivasyonu → desialilasyon → hepatik AMR tanıması → karaciğerde sekestrasyon; Fc-bağımsız yolak.",
         "E": "YANLIS — Bu yolak açıkça 'Fc-bağımsız' olarak tanımlanmıştır; FcγR aracılı fagositozdan MEKANİSTİK OLARAK FARKLI, ayrı bir süreçtir."
       },
       "etiketler": [
@@ -128,21 +128,21 @@
       "id": "s5",
       "metin": "Kronik İTP tanılı bir hastada immünolojik profil çalışılıyor ve enflamatuar T hücre alt gruplarında artış, regülatör T hücrelerinde (Treg) ise azalma saptanıyor. Ayrıca foliküler T helper (TFH) hücrelerinin aktivitesinde artış gözleniyor.\n\nBu T hücre disregülasyonunun hastalığın kronikleşmesindeki rolü nasıl açıklanır?",
       "secenekler": {
-        "A": "Enflamatuar Th1, Th17 ve Th22 hücrelerinde aşırı artış, Treg sayı/fonksiyonunda azalma meydana gelir. TFH hücreleri, CD40/CD154 etkileşimi ve IL-21 salınımı yoluyla otoreaktif B hücrelerinin çoğalmasını ve patojenik antikor üreten plazma hücrelerine farklılaşmasını stimüle eder.",
+        "A": "IL-21, yalnızca T hücre aktivasyonunu baskılayan anti-inflamatuar bir sitokindir, B hücre farklılaşmasında rolü yoktur.",
         "B": "Treg hücrelerinin artması, İTP'nin kronikleşmesinin ana nedenidir; bu hücreler otoimmün yanıtı güçlendirir.",
         "C": "TFH hücrelerinin B hücreleriyle etkileşimi İTP patogeneziyle ilgisizdir, yalnızca normal immün yanıtın bir parçasıdır.",
         "D": "Th1, Th17 ve Th22 hücrelerinde azalma, İTP'nin kronikleşmesinden sorumlu tutulan temel bulgudur.",
-        "E": "IL-21, yalnızca T hücre aktivasyonunu baskılayan anti-inflamatuar bir sitokindir, B hücre farklılaşmasında rolü yoktur."
+        "E": "Enflamatuar Th1, Th17 ve Th22 hücrelerinde aşırı artış, Treg sayı/fonksiyonunda azalma meydana gelir. TFH hücreleri, CD40/CD154 etkileşimi ve IL-21 salınımı yoluyla otoreaktif B hücrelerinin çoğalmasını ve patojenik antikor üreten plazma hücrelerine farklılaşmasını stimüle eder."
       },
-      "dogru": "A",
+      "dogru": "E",
       "aciklama_kisa": "İTP'de Th1/Th17/Th22 artar, Treg azalır. TFH hücreleri CD40/CD154 + IL-21 ile otoreaktif B hücrelerini/plazma hücrelerini besleyerek otoantikor üretimini sürdürür — bu, hastalığın kronikleşmesinin T-hücre temelli mekanizmasıdır.",
       "aciklama_detay": "İTP'de T lenfosit anormallikleri hastalığın kronikleşmesinde ve şiddetinde kritik rol oynar. İmmün toleransın bozulmasıyla birlikte enflamatuar Th1, Th17 ve Th22 hücrelerinde aşırı bir artış, immün yanıtı baskılayan regülatör T hücrelerinin (Treg) sayı ve fonksiyonlarında ise azalma meydana gelir — bu dengesizlik (proinflamatuar hücrelerin artışı + baskılayıcı hücrelerin azalışı), otoimmün yanıtın kontrolsüz devam etmesine zemin hazırlar. Foliküler T helper (TFH) hücreleri, CD40/CD154 etkileşimi ve interlökin-21 (IL-21) salınımı yoluyla otoreaktif B hücrelerinin çoğalmasını ve patojenik antikor üreten plazma hücrelerine farklılaşmasını stimüle eder — bu, germinal merkez reaksiyonunun otoimmün bağlamda 'yoldan çıkmış' bir versiyonudur ve otoantikor üretiminin sürekliliğini sağlayan hücresel motor işlevi görür. Bu T hücre disregülasyon paterni (Th1/17/22↑, Treg↓, TFH aktivasyonu), İTP'nin akut formdan kronik forma geçişinde önemli bir belirleyici olarak kabul edilir.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Th1/Th17/Th22 artışı + Treg azalması + TFH-CD40/IL-21 ekseni ile otoreaktif B hücre/plazma hücre desteği.",
+        "A": "YANLIS — IL-21, B hücre çoğalması ve plazma hücresine FARKLILAŞMAYI UYARAN (baskılamayan) bir sitokindir; TFH hücrelerinin bu etkisi otoreaktif B hücreleri için de geçerlidir.",
         "B": "YANLIS — Treg hücreleri AZALIR (artmaz); Treg'lerin azalması otoimmün yanıtın kontrolsüz kalmasına katkıda bulunur, güçlendirmez tam tersine baskılayıcı işlevlerini kaybederler.",
         "C": "YANLIS — TFH-B hücre etkileşimi İTP'de tam olarak PATOLOJİK otoreaktif B hücre/plazma hücre gelişimini destekleyen merkezi bir mekanizmadır.",
         "D": "YANLIS — Th1, Th17 ve Th22 hücrelerinde AZALMA değil, AŞIRI ARTIŞ görülür; bu, hastalığın enflamatuar zeminini oluşturur.",
-        "E": "YANLIS — IL-21, B hücre çoğalması ve plazma hücresine FARKLILAŞMAYI UYARAN (baskılamayan) bir sitokindir; TFH hücrelerinin bu etkisi otoreaktif B hücreleri için de geçerlidir."
+        "E": "DOGRU — Th1/Th17/Th22 artışı + Treg azalması + TFH-CD40/IL-21 ekseni ile otoreaktif B hücre/plazma hücre desteği."
       },
       "etiketler": [
         "Th1/Th17/Th22",
@@ -248,20 +248,20 @@
       "id": "s9",
       "metin": "Kronik Helicobacter pylori enfeksiyonu olan bir hastada sekonder İTP gelişiyor ve H. pylori eradikasyonu sonrası trombosit sayısında belirgin düzelme gözleniyor.\n\nBu klinik senaryoyu açıklayan sekonder İTP patogenez mekanizması hangisidir?",
       "secenekler": {
-        "A": "Sekonder İTP'de sıklıkla enfeksiyöz antijenler ile normal trombosit antijenleri arasındaki moleküler mimikri (çapraz reaksiyon), immün kompleks aracılıklı klerens veya T/B hücre dengesini bozan geniş çaplı bir genel immün disregülasyon sorumludur.",
+        "A": "H. pylori eradikasyonu trombosit sayısını yalnızca beslenme durumunu iyileştirerek (demir emilimi artışı yoluyla) düzeltir, immün mekanizmayla ilgisi yoktur.",
         "B": "H. pylori, trombositleri doğrudan enfekte ederek trombositlerin fiziksel olarak parçalanmasına neden olur; immünolojik bir mekanizma söz konusu değildir.",
         "C": "Sekonder İTP'de enfeksiyöz ajanlarla trombosit antijenleri arasında hiçbir moleküler benzerlik yoktur, mekanizma tamamen rastlantısaldır.",
-        "D": "H. pylori eradikasyonu trombosit sayısını yalnızca beslenme durumunu iyileştirerek (demir emilimi artışı yoluyla) düzeltir, immün mekanizmayla ilgisi yoktur.",
+        "D": "Sekonder İTP'de sıklıkla enfeksiyöz antijenler ile normal trombosit antijenleri arasındaki moleküler mimikri (çapraz reaksiyon), immün kompleks aracılıklı klerens veya T/B hücre dengesini bozan geniş çaplı bir genel immün disregülasyon sorumludur.",
         "E": "Sekonder İTP, primer İTP'den tamamen farklı, otoantikorların hiç rol oynamadığı bir mekanizmayla oluşur."
       },
-      "dogru": "A",
+      "dogru": "D",
       "aciklama_kisa": "Sekonder İTP'de enfeksiyöz antijenler (H. pylori gibi) ile trombosit antijenleri arasındaki moleküler mimikri, immün kompleks aracılı klerens veya genel immün disregülasyon sorumlu tutulur — bu, eradikasyon sonrası klinik düzelmeyi açıklar.",
       "aciklama_detay": "Sekonder patogenezde sıklıkla enfeksiyöz antijenler ile normal trombosit antijenleri arasındaki moleküler mimikri (çapraz reaksiyon), immün kompleks aracılıklı klerens veya T/B hücre dengesini bozan geniş çaplı bir genel immün disregülasyon sorumludur. H. pylori enfeksiyonu ile İTP arasındaki ilişki iyi belgelenmiştir; H. pylori antijenlerine (özellikle CagA proteinine) karşı gelişen antikorların trombosit yüzey glikoproteinleriyle çapraz reaksiyona girdiği (moleküler mimikri) öne sürülmüştür. Bu, bazı H. pylori pozitif İTP hastalarında eradikasyon tedavisi sonrası trombosit sayısında belirgin ve bazen kalıcı düzelme görülmesinin patofizyolojik temelini oluşturur — enfeksiyöz uyaranın (ve buna bağlı çapraz reaktif immün yanıtın) ortadan kaldırılması, otoantikor üretimini tetikleyen döngüyü kırar.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Moleküler mimikri, immün kompleks klerensi veya genel immün disregülasyon sekonder İTP'nin temel mekanizmalarıdır.",
+        "A": "YANLIS — Trombosit sayısındaki düzelme immünolojik mekanizmayla (çapraz reaktif immün yanıtın ortadan kalkması) ilişkilidir, yalnızca demir emilimi düzelmesiyle açıklanmaz.",
         "B": "YANLIS — H. pylori trombositleri doğrudan fiziksel olarak parçalamaz; mekanizma İMMÜNOLOJİKTİR (moleküler mimikri gibi).",
         "C": "YANLIS — Moleküler mimikri kavramı tam olarak enfeksiyöz antijenler ile trombosit antijenleri arasındaki YAPISAL BENZERLİĞE dayanır, rastlantısal değildir.",
-        "D": "YANLIS — Trombosit sayısındaki düzelme immünolojik mekanizmayla (çapraz reaktif immün yanıtın ortadan kalkması) ilişkilidir, yalnızca demir emilimi düzelmesiyle açıklanmaz.",
+        "D": "DOGRU — Moleküler mimikri, immün kompleks klerensi veya genel immün disregülasyon sekonder İTP'nin temel mekanizmalarıdır.",
         "E": "YANLIS — Sekonder İTP'de de otoantikorlar (ve genel immün disregülasyon mekanizmaları) merkezi rol oynar; primer İTP ile ortak patofizyolojik zemin paylaşılır, farkı tetikleyici faktördür (altta yatan hastalık/enfeksiyon)."
       },
       "etiketler": [
@@ -278,21 +278,21 @@
       "id": "s10",
       "metin": "Kinin kullanımı sonrası akut, şiddetli trombositopeni gelişen bir hastada ilaca bağlı immün trombositopeni (DİTP) düşünülüyor. Hastanın daha önce hiç kinin kullanmadığı ancak dolaşımında zayıf afiniteli, doğal olarak bulunan antikorların varlığı biliniyor.\n\nDİTP'nin altında yatan moleküler mekanizma ve bu mekanizmanın fulminan klinik seyri nasıl açıklar?",
       "secenekler": {
-        "A": "Kinin veya oksaliplatin gibi ilaçlar (veya metabolitleri), dolaşımda doğal olarak bulunan zayıf afiniteli antikorların tamamlayıcılığı belirleyici bölgelerine (CDR) bağlanarak antikor konformasyonunu değiştirir ve antikorun trombosit yüzey antijenlerine afinitesini dramatik biçimde artırarak fulminan hücre yıkımına neden olur.",
+        "A": "DİTP mekanizması, zayıf afiniteli antikorların ilaç varlığında afinitesinin AZALMASI ve trombositlerden ayrılmasıyla açıklanır.",
         "B": "DİTP'de ilaç, trombositleri doğrudan toksik etkiyle öldürür; hiçbir antikor aracılı mekanizma söz konusu değildir.",
         "C": "İlaca bağlı antikorlar yalnızca ilaca uzun süreli (aylar) maruziyet sonrası, yavaş bir duyarlanma süreciyle gelişir; akut fulminan seyir DİTP ile uyumsuzdur.",
         "D": "Kinin, trombosit yüzeyindeki tüm glikoproteinleri kalıcı olarak yok ederek trombositopeniye yol açar, antikor konformasyon değişikliğiyle ilgisi yoktur.",
-        "E": "DİTP mekanizması, zayıf afiniteli antikorların ilaç varlığında afinitesinin AZALMASI ve trombositlerden ayrılmasıyla açıklanır."
+        "E": "Kinin veya oksaliplatin gibi ilaçlar (veya metabolitleri), dolaşımda doğal olarak bulunan zayıf afiniteli antikorların tamamlayıcılığı belirleyici bölgelerine (CDR) bağlanarak antikor konformasyonunu değiştirir ve antikorun trombosit yüzey antijenlerine afinitesini dramatik biçimde artırarak fulminan hücre yıkımına neden olur."
       },
-      "dogru": "A",
+      "dogru": "E",
       "aciklama_kisa": "İlaç (kinin/oksaliplatin), dolaşımda zaten var olan zayıf afiniteli antikorların CDR bölgesine bağlanarak konformasyonu değiştirir ve trombosit antijenlerine afiniteyi DRAMATİK artırır — bu, önceden var olan bir immünolojik 'hazırlık' üzerine ilacın tetikleyici etkisiyle FULMİNAN yıkımı açıklar.",
       "aciklama_detay": "İlaca bağlı immün trombositopenilerde (DİTP) temel mekanizma ilaca bağımlı, trombosit reaktif antikorların gelişimidir. Sıklıkla kinin veya oksaliplatin gibi ilaçlar (veya metabolitleri), dolaşımda doğal olarak bulunan zayıf afiniteli antikorların tamamlayıcılığı belirleyici bölgelerine (CDR) bağlanarak antikor konformasyonunu değiştirir ve antikorun trombosit yüzey antijenlerine afinitesini dramatik biçimde artırarak fulminan hücre yıkımına neden olur. Bu mekanizma, DİTP'nin neden ilk maruziyette bile (klasik 'duyarlanma' gerektiren gecikmeli aşırı duyarlılık modelinden farklı olarak) çok hızlı ve şiddetli gelişebildiğini açıklar — çünkü zayıf afiniteli antikorlar zaten dolaşımda mevcuttur (önceden var olan doğal antikorlar), ilaç yalnızca bu antikorların konformasyonunu değiştirerek onları 'aktive' eder ve trombosit yüzeyine yüksek afiniteyle bağlanmalarını sağlar. Bazı vakalarda ise ilacın trombosit yüzeyine bağlanmasıyla yeni neoepitoplar açığa çıkar ve bunlara karşı immün yanıt gelişir — bu, ikinci alternatif bir DİTP mekanizmasıdır. Her iki mekanizma da ilacın kesilmesiyle antikor etkisinin hızla ortadan kalkmasını ve trombosit sayısının genellikle birkaç gün içinde düzelmesini açıklar.",
       "secenekAciklamalari": {
-        "A": "DOGRU — İlaç CDR bölgesine bağlanıp konformasyon değiştirir → zayıf afiniteli antikor yüksek afiniteli hale gelir → fulminan yıkım.",
+        "A": "YANLIS — Mekanizma tam tersidir: ilaç afiniteyi AZALTMAZ, DRAMATİK ŞEKİLDE ARTIRIR; bu artış trombosit yıkımının nedenidir.",
         "B": "YANLIS — DİTP mekanizması açıkça İMMÜNOLOJİK (antikor aracılı) bir süreçtir, doğrudan toksisite değildir.",
         "C": "YANLIS — Mekanizma tam olarak ÖNCEDEN VAR OLAN doğal antikorların ilaçla aktive olmasına dayanır; bu nedenle uzun duyarlanma süreci gerekmeden, ilk maruziyette bile hızlı/fulminan seyir görülebilir.",
         "D": "YANLIS — Mekanizma glikoproteinlerin yok edilmesi değil, antikorun KONFORMASYONEL DEĞİŞİKLİĞİ ve afinite artışı üzerinden işler.",
-        "E": "YANLIS — Mekanizma tam tersidir: ilaç afiniteyi AZALTMAZ, DRAMATİK ŞEKİLDE ARTIRIR; bu artış trombosit yıkımının nedenidir."
+        "E": "DOGRU — İlaç CDR bölgesine bağlanıp konformasyon değiştirir → zayıf afiniteli antikor yüksek afiniteli hale gelir → fulminan yıkım."
       },
       "etiketler": [
         "DİTP",
