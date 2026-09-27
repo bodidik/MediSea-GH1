@@ -5371,5 +5371,179 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "kalp-yetersizligi": {
+    "baslik": "Kalp yetersizliği",
+    "aciklama": "Kalp yetersizliği sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Alfehaid L, Tawfik Y, Alshibani M, Almutairi AR, Buckley LF, Al Yami MS. Evaluation of the efficiency of at least 24-hour observation of transition to oral diuretic therapy before discharge on 30-day outcomes in acute heart failure patients: a comparative systematic review and meta-analysis. BMC Cardiovasc Disord 2025;25(1):749",
+        "yil": 2025,
+        "url": "https://doi.org/10.1186/s12872-025-05212-7",
+        "tur": "makale"
+      },
+      {
+        "ad": "Augusto S Jr, Kaelber DC, Tang WHW. Testosterone therapy in patients with heart failure and protein-calorie malnutrition: Insights from a propensity-matched cohort study. Curr Probl Cardiol 2025;50(7):103070",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.cpcardiol.2025.103070",
+        "tur": "makale"
+      },
+      {
+        "ad": "Bansal N, Grams ME, Coresh J, ve ark. Predictive Value of Serum N-Terminal pro-B-Type Natriuretic Peptide and Troponin T for Incident Heart Failure: A Meta-Analysis of 9 International Cohorts. J Am Heart Assoc 2025;14(21):e041683",
+        "yil": 2025,
+        "url": "https://doi.org/10.1161/jaha.125.041683",
+        "tur": "makale"
+      },
+      {
+        "ad": "Bhandari K, Qadri M, Dhakal R, ve ark. The Impact of SGLT2 Inhibitors on Pulmonary Artery Pressures and Pulmonary Hemodynamics in Patients With Heart Failure: A Systematic Review. Cardiovasc Ther 2025;2025:6649731",
+        "yil": 2025,
+        "url": "https://doi.org/10.1155/cdr/6649731",
+        "tur": "makale"
+      },
+      {
+        "ad": "Campos PIC, Diz JBM, Leopoldino AAO, Malachias MVB. Heart Failure in Patients with Sarcopenia: Systematic Review and Meta-Analysis. Ann Geriatr Med Res 2025;29(3):295-304",
+        "yil": 2025,
+        "url": "https://doi.org/10.4235/agmr.24.0186",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chen X, Yang J, Xu L, ve ark. Optimization of Clinical Trial Design and Decision-Making for Heart Failure with Preserved Ejection Fraction (HFpEF): A Meta-Analysis Based on a Placebo Response Model. Cardiovasc Ther 2025;2025:7087720",
+        "yil": 2025,
+        "url": "https://doi.org/10.1155/cdr/7087720",
+        "tur": "makale"
+      },
+      {
+        "ad": "Evangelista LS, Meraz R, Wierenga KL, Nguyen AP, Angosta AD, Kawi J. High-Protein Dietary Interventions in Heart Failure: A Systematic Review of Clinical and Functional Outcomes. Nutrients 2025;17(14):2361",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/nu17142361",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hazewinkel AD, Gregson J, Pocock SJ, ve ark. Re-Evaluating Recurrent Events in Heart Failure Trials: Patterns, Prognostic Implications, and Analytical Improvements. J Am Coll Cardiol 2025;85(23):2304-2323",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.jacc.2025.03.543",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lind L, Risérus U, Elmståhl S, Ärnlöv J, Michaëlsson K, Titova OE. Combinations of BMI and metabolic syndrome and the risk of myocardial infarction, stroke, and heart failure. Nutr Metab Cardiovasc Dis 2025;35(9):104102",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.numecd.2025.104102",
+        "tur": "makale"
+      },
+      {
+        "ad": "Minisy MM, Abdelaziz A. The role of SGLT 2 inhibitors in heart failure with preserved ejection fraction (HFpEF): a systematic review and meta-analysis of randomized controlled trials. BMC Cardiovasc Disord 2025;25(1):765",
+        "yil": 2025,
+        "url": "https://doi.org/10.1186/s12872-025-05127-3",
+        "tur": "makale"
+      },
+      {
+        "ad": "Parizad R, Hatwal J, Taban Sadeghi M, ve ark. Clinical Advances in Heart Failure with Preserved Ejection Fraction: A Systematic Review of Therapeutic and Mechanistic Evidence. Vasc Health Risk Manag 2026;22:578698",
+        "yil": 2026,
+        "url": "https://doi.org/10.2147/vhrm.s578698",
+        "tur": "makale"
+      },
+      {
+        "ad": "Pourfaraji SM, Shirmard FO, Salabat D, ve ark. Carbohydrate antigen 125 and clinical outcomes in heart failure: systematic review and meta-analysis. BMC Cardiovasc Disord 2025;25(1):637",
+        "yil": 2025,
+        "url": "https://doi.org/10.1186/s12872-025-05141-5",
+        "tur": "makale"
+      },
+      {
+        "ad": "Tran TTQ, Huang SW, Ho HQ, Hsu CY, Hou WH, Kang JH. The impacts of sarcopenia and its components on heart failure patients: A systematic review and network meta-analysis. Medicine (Baltimore) 2025;104(48):e46096",
+        "yil": 2025,
+        "url": "https://doi.org/10.1097/md.0000000000046096",
+        "tur": "makale"
+      },
+      {
+        "ad": "Wingood M, Vincenzo JL, Goyal P, Brach JS. Clin-STAR Corner: Rehabilitation for Older Adults With Heart Failure. J Am Geriatr Soc 2025;73(6):1697-1703",
+        "yil": 2025,
+        "url": "https://doi.org/10.1111/jgs.19346",
+        "tur": "makale"
+      },
+      {
+        "ad": "Wu J, Shi Y, Han S, Yang X. Efficacy and clinical outcomes of bone-marrow mononuclear cell therapy in chronic heart failure: a systemic review and meta-analysis. BMC Cardiovasc Disord 2025;25(1):486",
+        "yil": 2025,
+        "url": "https://doi.org/10.1186/s12872-025-04938-8",
+        "tur": "makale"
+      },
+      {
+        "ad": "Bonow RO, Mann DL, Tomaselli GF, Bhatt DL, Solomon SD, Libby P, Braunwald E, ed. Braunwald's Heart Disease: A Textbook of Cardiovascular Medicine. 13. baskı. Elsevier; 2026. Bölümler: Anesthesia and Noncardiac Surgery in Patients With Heart Disease; Diabetes and the Cardiovascular System; Pathophysiology of Heart Failure; Clinical Assessment of Heart Failure; Heart Failure With Preserved or Mildly Reduced Ejection Fraction; Cardiac Amyloidosis; Devices for Monitoring and Managing Heart Failure; Pregnancy and Heart Disease",
+        "yil": 2026,
+        "url": "https://shop.elsevier.com/books/braunwald-s-heart-disease-2-vol-set/bonow/978-0-443-24974-7",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Kellerman RD, Heidelbaugh JJ, ed. Conn's Current Therapy 2026. Elsevier; 2026. Bölüm: Congestive Heart Failure",
+        "yil": 2026,
+        "url": "https://shop.elsevier.com/books/conns-current-therapy-2026/kellerman/978-0-443-12182-1",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Goldman L, Cooney KA, ed. Goldman-Cecil Medicine. 27. baskı. Elsevier; 2023. Bölümler: Heart Failure: Epidemiology, Pathobiology, and Diagnosis; Heart Failure: Treatment and Prognosis",
+        "yil": 2023,
+        "url": "https://shop.elsevier.com/books/goldman-cecil-medicine-2-volume-set/goldman/978-0-323-93038-3",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Colucci WS, Borlaug BA, Meyer TE. Heart failure: Clinical manifestations and diagnosis in adults. UpToDate; son güncelleme 3 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/heart-failure-clinical-manifestations-and-diagnosis-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Colucci WS, Vader JM. Heart failure: Management of acute decompensation and volume overload. UpToDate; son güncelleme 8 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/heart-failure-management-of-acute-decompensation-and-volume-overload",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Colucci WS. Overview of the management of heart failure with reduced ejection fraction in adults. UpToDate; son güncelleme 4 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-the-management-of-heart-failure-with-reduced-ejection-fraction-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Meyer TE. Primary pharmacologic therapy for heart failure with reduced ejection fraction. UpToDate; son güncelleme 9 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/primary-pharmacologic-therapy-for-heart-failure-with-reduced-ejection-fraction",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Dunlay SM, Colucci WS. Management of refractory heart failure with reduced ejection fraction. UpToDate; son güncelleme 2 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-refractory-heart-failure-with-reduced-ejection-fraction",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Colucci WS, Dunlay SM. Clinical manifestations and diagnosis of advanced heart failure. UpToDate; son güncelleme 11 Kas 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/clinical-manifestations-and-diagnosis-of-advanced-heart-failure",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Sterns RH, Gottlieb SS. Hyponatremia in patients with heart failure. UpToDate; son güncelleme 25 Şub 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/hyponatremia-in-patients-with-heart-failure",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Piña IL. Cardiac rehabilitation in patients with heart failure. UpToDate; son güncelleme 28 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/cardiac-rehabilitation-in-patients-with-heart-failure",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Allen LA. Heart failure self-management. UpToDate; son güncelleme 17 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/heart-failure-self-management",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "DeCara JM, Davis MB. Management of heart failure during pregnancy. UpToDate; son güncelleme 9 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-heart-failure-during-pregnancy",
+        "tur": "uptodate"
+      }
+    ]
   }
 }
