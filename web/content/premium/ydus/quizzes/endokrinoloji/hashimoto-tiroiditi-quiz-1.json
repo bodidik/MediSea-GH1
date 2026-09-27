@@ -158,7 +158,7 @@
       "id": "s6",
       "metin": "Elli yaşında kadın hasta, 12 yıldır Hashimoto tiroiditi tanılı. Levotiroksin 100 mcg/gün kullanıyor, TSH 2.1 mU/L. Rutin kontrol USG'sinde sağ lobda 2.8 cm dominant nodül saptandı. İİAB sonucu: 'Lenfositik infiltrasyon yoğun, birkaç Hürthle hücresi, Bethesda Kategori III (önemi belirsiz atipi — AUS/FLUS)'.\n\nBu İİAB bulgusunu yorumlarken Hashimoto bağlamında aşağıdakilerden hangisi en doğru ifadedir?",
       "secenekler": {
-        "A": "Hashimoto tiroiditinde yoğun lenfositik infiltrasyon ve Hürthle hücreleri İİAB'de Bethesda III'e yol açabilir; bu bağlamda gerçek malignite riski gebe olmayan Bethesda III'e kıyasla düşebilir. Tekrar İİAB veya moleküler test düşünülmelidir.",
+        "A": "Hashimoto tiroiditinde yoğun lenfositik infiltrasyon ve Hürthle hücreleri İİAB'de Bethesda III'e yol açabilir; bu bağlamda gerçek malignite riski Hashimoto zemini olmayan Bethesda III'e kıyasla düşebilir. Tekrar İİAB veya moleküler test düşünülmelidir.",
         "B": "Bethesda III kesinlikle maligniteyi dışlamaz; doğrudan tiroidektomi planlanmalıdır.",
         "C": "Hashimoto tiroiditinin kendisi malign dönüşüme yol açar; cerrahi kaçınılmazdır.",
         "D": "Lenfositik infiltrasyon İİAB'de artefakt oluşturur; biyopsi tekrarlanmalı ve Hashimoto bağlamı göz ardı edilmelidir.",
@@ -228,7 +228,7 @@
       "aciklama_kisa": "HT zemininde gelişen PTC: tümör küçük, santral metastaz nadir, BRAF V600E az, prognoz iyi. HT tümör mikroçevresi (lenfosit infiltrasyonu) tümöre karşı bariyer oluşturur — 'iki keskinli kılıç' konsepti.",
       "aciklama_detay": "Hashimoto tiroiditi ve PTC ilişkisi epidemiyolojik açıdan 'iki keskinli kılıç' olarak tanımlanır. HT kronik inflamasyon ve TSH yüksekliği yoluyla PTC gelişim riskini artırır. Ancak tümör oluştuktan sonra HT'nin immün mikroçevresi (TIL — tümör infiltre eden lenfositler) tümörün ilerlemesini frenler. HT zemininde gelişen PTC'de: boyut daha küçük, santral lenf nodu metastazı daha nadir, ekstratiroidal yayılım az, BRAF V600E mutasyonu daha seyrek, sağkalım daha iyi. Prognoz farkı cerrahi genişliği değiştirmez — standart kılavuz önerileri uygulanır.",
       "secenekAciklamalari": {
-        "A": "YANLIS — HT zeminindeki PTC daha az agresif değil daha az agresiftir; BRAF V600E daha az sıklıkta görülür.",
+        "A": "YANLIS — HT zeminindeki PTC daha agresif değil, daha az agresiftir; BRAF V600E daha az sıklıkta görülür.",
         "B": "YANLIS — HT tümör biyolojisini anlamlı biçimde etkiler; prognoz farklıdır.",
         "C": "DOGRU — HT tümör mikroçevresi koruyucu etkisi → daha iyi prognoz. 'İki keskinli kılıç' konsepti.",
         "D": "YANLIS — Prognoz avantajı cerrahi yaklaşımı değiştirmez; profilaktik santral diseksiyonu rutin önerilmez.",
@@ -299,7 +299,7 @@
         "KAH + Hipotiroidi",
         "Yaşlı Hasta",
         "Kardiyak Risk",
-        "Tirasyon"
+        "Titrasyon"
       ],
       "zorluk": "kolay",
       "kaynak": "Garber et al. Thyroid 2012; TEMD 2025"
