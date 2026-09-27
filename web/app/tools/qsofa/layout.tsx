@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "qSOFA Skoru — Hızlı sepsis yatak başı değerlendirme",
   description: "qSOFA Skoru: Hızlı sepsis yatak başı değerlendirme. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/qsofa" },
+  manifest: "/manifest/arac/qsofa",
   openGraph: {
     type: "website",
     title: "qSOFA Skoru — Hızlı sepsis yatak başı değerlendirme",

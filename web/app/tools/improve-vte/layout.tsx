@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "IMPROVE-VTE — Dahili yatan hastada VTE riski",
   description: "IMPROVE-VTE: Dahili yatan hastada VTE riski — isteğe bağlı D-dimer ile IMPROVEDD. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/improve-vte" },
+  manifest: "/manifest/arac/improve-vte",
   openGraph: {
     type: "website",
     title: "IMPROVE-VTE — Dahili yatan hastada VTE riski",

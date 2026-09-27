@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "STOP-Bang — Obstrüktif uyku apnesi taraması",
   description: "STOP-Bang: Obstrüktif uyku apnesi taraması — 0–8, STOP + erkek/BMI/boyun ek kuralı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/stop-bang" },
+  manifest: "/manifest/arac/stop-bang",
   openGraph: {
     type: "website",
     title: "STOP-Bang — Obstrüktif uyku apnesi taraması",

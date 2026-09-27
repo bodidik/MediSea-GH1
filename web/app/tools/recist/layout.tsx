@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "RECIST 1.1 Yanıt Değerlendirmesi — Tam / kısmi yanıt",
   description: "RECIST 1.1 Yanıt Değerlendirmesi: Tam / kısmi yanıt, stabil ve progresif hastalık — küçülme başlangıçtan, büyüme… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/recist" },
+  manifest: "/manifest/arac/recist",
   openGraph: {
     type: "website",
     title: "RECIST 1.1 Yanıt Değerlendirmesi — Tam / kısmi yanıt",

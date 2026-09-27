@@ -382,6 +382,21 @@ gerçek sayı 9'du.
 `layout.tsx` üretir — araç sayfaları `"use client"` olduğu için metadata
 dışa aktaramıyorlar. Elle yazılmış bir layout görürse üzerine yazmaz.
 
+### Ana ekrana ekle — site VE her hesaplayıcı ayrı kurulur (27 Eyl 2026)
+
+Site manifesti `app/manifest.ts`; her araç layout'u kendi manifestini bağlar
+(`manifest: "/manifest/arac/<slug>"`, `arac-metadata.cjs` üretir) — kurulan
+simge ana sayfaya değil O araca açılır, `id`/`scope` aracın yolu. Simgeler
+`/ikon/{192,512,maskable-512}.png`, işaret tek kopya `lib/marka-isareti.tsx`
+(apple-icon da oradan; çıktı eskisiyle aynı 3850 bayt). Service worker YOK,
+bilerek. Düğme (`AnaEkranaEkle`) yalnız `beforeinstallprompt` gelince çizilir;
+olay kök layout'taki satır içi betikle yakalanır ve yakalandığı andaki
+manifestle eşleşmezse gizlenir (site→araç istemci gezinmesi). **Ölçüm notu:**
+istemci gezinmesinden sonra gövdede eski manifest bağı KALIYOR; tarayıcı ilkini
+alır ve ilk olan her yönde `<head>`deki doğru bağ (ölçüldü). Panel olayı hiç
+atmaz — düğmeyi sahte `beforeinstallprompt` ile sür; gerçek Android'de
+sınanmadı.
+
 ### Görsel rotalarının (opengraph-image) üç tuzağı
 
 Üçü de sessizce kırıyor: hata mesajı görünmüyor, istek bağlantısı düşüyor.

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Hiponatremi Tanı Algoritması — Serum/idrar",
   description: "Hiponatremi Tanı Algoritması: Serum/idrar osmolalitesi, idrar Na ve hacim durumuyla basamaklı ayırıcı tanı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/hiponatremi-algoritma" },
+  manifest: "/manifest/arac/hiponatremi-algoritma",
   openGraph: {
     type: "website",
     title: "Hiponatremi Tanı Algoritması — Serum/idrar",

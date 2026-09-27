@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Düzeltilmiş Kalsiyum — Albumin'e göre Ca+2 hesaplama",
   description: "Düzeltilmiş Kalsiyum: Albumin'e göre Ca+2 hesaplama. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/corrected-calcium" },
+  manifest: "/manifest/arac/corrected-calcium",
   openGraph: {
     type: "website",
     title: "Düzeltilmiş Kalsiyum — Albumin'e göre Ca+2 hesaplama",

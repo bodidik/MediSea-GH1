@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "PLASMIC Skoru — Trombotik mikroanjiyopatide TTP",
   description: "PLASMIC Skoru: Trombotik mikroanjiyopatide TTP (ağır ADAMTS13 eksikliği) olasılığı — 0–7. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/plasmic" },
+  manifest: "/manifest/arac/plasmic",
   openGraph: {
     type: "website",
     title: "PLASMIC Skoru — Trombotik mikroanjiyopatide TTP",

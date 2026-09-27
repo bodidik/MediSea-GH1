@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Calvert Formülü — Karboplatin AUC bazlı doz hesaplama",
   description: "Calvert Formülü: Karboplatin AUC bazlı doz hesaplama. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/calvert" },
+  manifest: "/manifest/arac/calvert",
   openGraph: {
     type: "website",
     title: "Calvert Formülü — Karboplatin AUC bazlı doz hesaplama",

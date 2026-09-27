@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "FINDRISC — Tip 2 diyabet 10 yıllık risk taraması",
   description: "FINDRISC: Tip 2 diyabet 10 yıllık risk taraması. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/findrisc" },
+  manifest: "/manifest/arac/findrisc",
   openGraph: {
     type: "website",
     title: "FINDRISC — Tip 2 diyabet 10 yıllık risk taraması",

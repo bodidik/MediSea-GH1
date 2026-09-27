@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ARIA Rinit Sınıflaması — Allerjik rinit",
   description: "ARIA Rinit Sınıflaması: Allerjik rinit — intermitan/persistan × hafif/orta-ağır. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/aria-rinit" },
+  manifest: "/manifest/arac/aria-rinit",
   openGraph: {
     type: "website",
     title: "ARIA Rinit Sınıflaması — Allerjik rinit",

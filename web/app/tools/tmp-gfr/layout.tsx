@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "TmP/GFR ve FEPO₄ — Fosfatın renal eşiği",
   description: "TmP/GFR ve FEPO₄: Fosfatın renal eşiği — hipofosfatemide renal kayıp ayrımı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/tmp-gfr" },
+  manifest: "/manifest/arac/tmp-gfr",
   openGraph: {
     type: "website",
     title: "TmP/GFR ve FEPO₄ — Fosfatın renal eşiği",

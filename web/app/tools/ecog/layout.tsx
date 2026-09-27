@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ECOG Performans Durumu — Fonksiyonel kapasite / tedavi",
   description: "ECOG Performans Durumu: Fonksiyonel kapasite / tedavi uygunluğu. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ecog" },
+  manifest: "/manifest/arac/ecog",
   openGraph: {
     type: "website",
     title: "ECOG Performans Durumu — Fonksiyonel kapasite / tedavi",

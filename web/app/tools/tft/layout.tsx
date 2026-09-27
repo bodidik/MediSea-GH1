@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Tiroid Fonksiyon Testi (TFT) — TSH / FT4 / FT3 patern",
   description: "Tiroid Fonksiyon Testi (TFT): TSH / FT4 / FT3 patern tanıma — hipo, hiper, subklinik, santral. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/tft" },
+  manifest: "/manifest/arac/tft",
   openGraph: {
     type: "website",
     title: "Tiroid Fonksiyon Testi (TFT) — TSH / FT4 / FT3 patern",

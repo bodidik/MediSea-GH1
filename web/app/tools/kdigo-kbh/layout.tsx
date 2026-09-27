@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "KDIGO KBH Sınıflaması — GFR × albüminüri risk ısı",
   description: "KDIGO KBH Sınıflaması: GFR × albüminüri risk ısı haritası — G/A evresi, izlem sıklığı, sevk. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/kdigo-kbh" },
+  manifest: "/manifest/arac/kdigo-kbh",
   openGraph: {
     type: "website",
     title: "KDIGO KBH Sınıflaması — GFR × albüminüri risk ısı",

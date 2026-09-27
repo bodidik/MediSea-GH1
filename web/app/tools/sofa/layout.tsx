@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "SOFA Skoru — Yoğun bakımda organ yetmezliği takibi",
   description: "SOFA Skoru: Yoğun bakımda organ yetmezliği takibi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/sofa" },
+  manifest: "/manifest/arac/sofa",
   openGraph: {
     type: "website",
     title: "SOFA Skoru — Yoğun bakımda organ yetmezliği takibi",

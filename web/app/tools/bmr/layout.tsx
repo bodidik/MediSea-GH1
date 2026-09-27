@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "BMR & TDEE — Bazal metabolizma hızı",
   description: "BMR & TDEE: Bazal metabolizma hızı — Mifflin–St Jeor. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/bmr" },
+  manifest: "/manifest/arac/bmr",
   openGraph: {
     type: "website",
     title: "BMR & TDEE — Bazal metabolizma hızı",

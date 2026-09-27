@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Hodgkin IPS — İleri evre Hodgkin lenfomada Hasenclever",
   description: "Hodgkin IPS: İleri evre Hodgkin lenfomada Hasenclever skoru — 5 yıllık progresyonsuz sağkalım. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/hodgkin-ips" },
+  manifest: "/manifest/arac/hodgkin-ips",
   openGraph: {
     type: "website",
     title: "Hodgkin IPS — İleri evre Hodgkin lenfomada Hasenclever",

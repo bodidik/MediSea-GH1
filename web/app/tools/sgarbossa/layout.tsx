@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Sgarbossa Kriterleri — Sol dal bloğu ya da pace",
   description: "Sgarbossa Kriterleri: Sol dal bloğu ya da pace ritminde akut MI — özgün ve Smith-modifiye. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/sgarbossa" },
+  manifest: "/manifest/arac/sgarbossa",
   openGraph: {
     type: "website",
     title: "Sgarbossa Kriterleri — Sol dal bloğu ya da pace",

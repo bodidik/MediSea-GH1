@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "SINS Spinal İnstabilite Skoru — Neoplastik omurga",
   description: "SINS Spinal İnstabilite Skoru: Neoplastik omurga tutulumunda mekanik instabilite — 0–18. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/sins" },
+  manifest: "/manifest/arac/sins",
   openGraph: {
     type: "website",
     title: "SINS Spinal İnstabilite Skoru — Neoplastik omurga",

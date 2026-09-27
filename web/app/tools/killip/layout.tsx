@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Killip Sınıflaması — Akut MI'da kalp yetmezliği",
   description: "Killip Sınıflaması: Akut MI'da kalp yetmezliği bulgularına göre sınıf I–IV. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/killip" },
+  manifest: "/manifest/arac/killip",
   openGraph: {
     type: "website",
     title: "Killip Sınıflaması — Akut MI'da kalp yetmezliği",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "LDL Kolesterol Hesaplama — Friedewald ve Sampson (NIH)",
   description: "LDL Kolesterol Hesaplama: Friedewald ve Sampson (NIH) denklemleri, non-HDL ve ESC hedefleri. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ldl-hesaplama" },
+  manifest: "/manifest/arac/ldl-hesaplama",
   openGraph: {
     type: "website",
     title: "LDL Kolesterol Hesaplama — Friedewald ve Sampson (NIH)",

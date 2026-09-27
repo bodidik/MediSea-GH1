@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "CAM-ICU — YBÜ deliryum taraması",
   description: "CAM-ICU: YBÜ deliryum taraması — 4 özellik, PADIS kılavuzu önerisi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/cam-icu" },
+  manifest: "/manifest/arac/cam-icu",
   openGraph: {
     type: "website",
     title: "CAM-ICU — YBÜ deliryum taraması",

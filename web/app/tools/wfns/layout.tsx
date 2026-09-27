@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "WFNS SAK Derecesi — Subaraknoid kanamada GKS + motor",
   description: "WFNS SAK Derecesi: Subaraknoid kanamada GKS + motor defisitle derece I–V. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/wfns" },
+  manifest: "/manifest/arac/wfns",
   openGraph: {
     type: "website",
     title: "WFNS SAK Derecesi — Subaraknoid kanamada GKS + motor",

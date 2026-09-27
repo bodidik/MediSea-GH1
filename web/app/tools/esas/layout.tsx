@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ESAS — Edmonton Semptom Değerlendirme",
   description: "ESAS: Edmonton Semptom Değerlendirme — 9 semptom, 0–10 skala. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/esas" },
+  manifest: "/manifest/arac/esas",
   openGraph: {
     type: "website",
     title: "ESAS — Edmonton Semptom Değerlendirme",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA) — Enfeksiyon",
   description: "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA): Enfeksiyon şiddeti 1–4 ve osteomiyelit — lokal ve sistemik bulgular. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/diyabetik-ayak" },
+  manifest: "/manifest/arac/diyabetik-ayak",
   openGraph: {
     type: "website",
     title: "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA) — Enfeksiyon",

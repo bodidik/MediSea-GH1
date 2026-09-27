@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Braden Skalası — Bası yarası risk değerlendirmesi",
   description: "Braden Skalası: Bası yarası risk değerlendirmesi — 6 alt ölçek, 6–23 puan. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/braden" },
+  manifest: "/manifest/arac/braden",
   openGraph: {
     type: "website",
     title: "Braden Skalası — Bası yarası risk değerlendirmesi",

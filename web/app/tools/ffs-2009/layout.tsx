@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Five Factor Score (2009) — Sistemik nekrotizan",
   description: "Five Factor Score (2009): Sistemik nekrotizan vaskülitlerde 5 yıllık mortalite — PAN, MPA, GPA, EGPA. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ffs-2009" },
+  manifest: "/manifest/arac/ffs-2009",
   openGraph: {
     type: "website",
     title: "Five Factor Score (2009) — Sistemik nekrotizan",

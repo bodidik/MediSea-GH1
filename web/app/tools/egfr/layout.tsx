@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "eGFR (CKD-EPI 2021) — Race-free böbrek fonksiyon analizi",
   description: "eGFR (CKD-EPI 2021): Race-free böbrek fonksiyon analizi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/egfr" },
+  manifest: "/manifest/arac/egfr",
   openGraph: {
     type: "website",
     title: "eGFR (CKD-EPI 2021) — Race-free böbrek fonksiyon analizi",

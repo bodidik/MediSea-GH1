@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "GAP İndeksi — İdiyopatik pulmoner fibrozda evre I–III",
   description: "GAP İndeksi: İdiyopatik pulmoner fibrozda evre I–III ve 1–3 yıllık mortalite. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/gap-ipf" },
+  manifest: "/manifest/arac/gap-ipf",
   openGraph: {
     type: "website",
     title: "GAP İndeksi — İdiyopatik pulmoner fibrozda evre I–III",

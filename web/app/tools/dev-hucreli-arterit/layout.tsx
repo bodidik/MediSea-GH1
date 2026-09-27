@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ACR/EULAR 2022 Dev Hücreli Arterit — GCA sınıflama",
   description: "ACR/EULAR 2022 Dev Hücreli Arterit: GCA sınıflama kriterleri — klinik, laboratuvar, görüntüleme, biyopsi (≥ 6). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/dev-hucreli-arterit" },
+  manifest: "/manifest/arac/dev-hucreli-arterit",
   openGraph: {
     type: "website",
     title: "ACR/EULAR 2022 Dev Hücreli Arterit — GCA sınıflama",

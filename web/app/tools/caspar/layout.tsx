@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "CASPAR Kriterleri — Psoriatik artrit sınıflaması",
   description: "CASPAR Kriterleri: Psoriatik artrit sınıflaması — psoriazis, tırnak, RF, daktilit, yeni kemik (≥ 3). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/caspar" },
+  manifest: "/manifest/arac/caspar",
   openGraph: {
     type: "website",
     title: "CASPAR Kriterleri — Psoriatik artrit sınıflaması",

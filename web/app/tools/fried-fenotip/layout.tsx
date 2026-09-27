@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Fried Kırılganlık Fenotipi",
   description: "Fried Kırılganlık Fenotipi: 5 ölçüt — kilo kaybı, bitkinlik, kavrama gücü, yürüme hızı, fiziksel aktivite. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/fried-fenotip" },
+  manifest: "/manifest/arac/fried-fenotip",
   openGraph: {
     type: "website",
     title: "Fried Kırılganlık Fenotipi",

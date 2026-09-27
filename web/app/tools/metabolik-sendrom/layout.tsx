@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Metabolik Sendrom — NCEP ATP III ve IDF tanımları yan",
   description: "Metabolik Sendrom: NCEP ATP III ve IDF tanımları yan yana — bel çevresi, lipit, KB, glukoz. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/metabolik-sendrom" },
+  manifest: "/manifest/arac/metabolik-sendrom",
   openGraph: {
     type: "website",
     title: "Metabolik Sendrom — NCEP ATP III ve IDF tanımları yan",

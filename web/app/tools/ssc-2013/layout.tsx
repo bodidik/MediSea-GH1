@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ACR/EULAR 2013 Sistemik Skleroz — SSc sınıflama",
   description: "ACR/EULAR 2013 Sistemik Skleroz: SSc sınıflama kriterleri — alan başına en yüksek madde (≥ 9). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ssc-2013" },
+  manifest: "/manifest/arac/ssc-2013",
   openGraph: {
     type: "website",
     title: "ACR/EULAR 2013 Sistemik Skleroz — SSc sınıflama",

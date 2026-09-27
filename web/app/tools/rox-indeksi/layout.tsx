@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ROX İndeksi — Yüksek akımlı nazal oksijende entübasyon",
   description: "ROX İndeksi: Yüksek akımlı nazal oksijende entübasyon riski — 2/6/12. saat eşikleri. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/rox-indeksi" },
+  manifest: "/manifest/arac/rox-indeksi",
   openGraph: {
     type: "website",
     title: "ROX İndeksi — Yüksek akımlı nazal oksijende entübasyon",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "SOF Kırılganlık İndeksi — 3 bileşen",
   description: "SOF Kırılganlık İndeksi: 3 bileşen — kilo kaybı, sandalyeden kalkma, enerji azlığı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/sof-kirilganlik" },
+  manifest: "/manifest/arac/sof-kirilganlik",
   openGraph: {
     type: "website",
     title: "SOF Kırılganlık İndeksi — 3 bileşen",

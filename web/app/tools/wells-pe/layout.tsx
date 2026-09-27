@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Wells Skoru (PE) — Pulmoner emboli klinik olasılığı",
   description: "Wells Skoru (PE): Pulmoner emboli klinik olasılığı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/wells-pe" },
+  manifest: "/manifest/arac/wells-pe",
   openGraph: {
     type: "website",
     title: "Wells Skoru (PE) — Pulmoner emboli klinik olasılığı",

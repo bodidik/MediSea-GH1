@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "MELD-Na Skoru — ESKH mortalite tahmini",
   description: "MELD-Na Skoru: ESKH mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/meld-na" },
+  manifest: "/manifest/arac/meld-na",
   openGraph: {
     type: "website",
     title: "MELD-Na Skoru — ESKH mortalite tahmini",

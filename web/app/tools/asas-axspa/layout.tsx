@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ASAS Aksiyel SpA Kriterleri — Aksiyel spondiloartrit",
   description: "ASAS Aksiyel SpA Kriterleri: Aksiyel spondiloartrit — görüntüleme kolu ve HLA-B27 klinik kolu. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/asas-axspa" },
+  manifest: "/manifest/arac/asas-axspa",
   openGraph: {
     type: "website",
     title: "ASAS Aksiyel SpA Kriterleri — Aksiyel spondiloartrit",

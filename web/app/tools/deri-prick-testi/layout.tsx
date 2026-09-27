@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Deri Prick Testi — Papül çapı ve kontrollerle",
   description: "Deri Prick Testi: Papül çapı ve kontrollerle pozitif/negatif — dermografizm ve histamin denetimi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/deri-prick-testi" },
+  manifest: "/manifest/arac/deri-prick-testi",
   openGraph: {
     type: "website",
     title: "Deri Prick Testi — Papül çapı ve kontrollerle",

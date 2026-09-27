@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "DECAF Skoru — KOAH alevlenmesiyle yatışta hastane içi",
   description: "DECAF Skoru: KOAH alevlenmesiyle yatışta hastane içi mortalite — 0–6. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/decaf" },
+  manifest: "/manifest/arac/decaf",
   openGraph: {
     type: "website",
     title: "DECAF Skoru — KOAH alevlenmesiyle yatışta hastane içi",

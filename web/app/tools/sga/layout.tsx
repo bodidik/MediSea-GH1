@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "SGA — Sübjektif Global Değerlendirme",
   description: "SGA: Sübjektif Global Değerlendirme — klinik nütrisyon muayenesi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/sga" },
+  manifest: "/manifest/arac/sga",
   openGraph: {
     type: "website",
     title: "SGA — Sübjektif Global Değerlendirme",

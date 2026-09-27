@@ -321,6 +321,10 @@ function aciklamaUret(name, desc) {
  * [MediSea, Kütüphane, <branş>, <konu>] ile; arama sonucunda aynı sitenin
  * iki sayfa türü FARKLI kökle görünüyordu.
  *
+ * MANİFEST ARACIN KENDİSİ: `manifest` alanı kök layout'taki site manifestini
+ * ezer; Android "Ana ekrana ekle" bu sayfadan kurulunca simge ana sayfaya
+ * değil BU araca açılır (gerekçe `lib/uygulama-manifest.ts`).
+ *
  * GEREKÇE BURADA, ŞABLONDA DEĞİL: şablona konan her yorum satırı 130
  * dosyaya kopyalanıyor (bir denemede 130 dosya × 5 satır oldu).
  */
@@ -396,6 +400,7 @@ export const metadata: Metadata = {
       ? `, languages: ${JSON.stringify({ tr: yol, en: '/en' + yol, 'x-default': yol })}`
       : ''
   } },
+  manifest: ${JSON.stringify('/manifest/arac/' + slug)},
   openGraph: {
     type: "website",
     title: ${JSON.stringify(baslik)},

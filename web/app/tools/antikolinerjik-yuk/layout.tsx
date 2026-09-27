@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Antikolinerjik Yük (ACB) — İlaç listesinden",
   description: "Antikolinerjik Yük (ACB): İlaç listesinden antikolinerjik bilişsel yük skoru — ≥ 3 klinik anlamlı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/antikolinerjik-yuk" },
+  manifest: "/manifest/arac/antikolinerjik-yuk",
   openGraph: {
     type: "website",
     title: "Antikolinerjik Yük (ACB) — İlaç listesinden",

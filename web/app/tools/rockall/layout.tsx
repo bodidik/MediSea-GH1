@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Rockall Skoru — Üst GİS kanaması",
   description: "Rockall Skoru: Üst GİS kanaması — yeniden kanama ve mortalite. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/rockall" },
+  manifest: "/manifest/arac/rockall",
   openGraph: {
     type: "website",
     title: "Rockall Skoru — Üst GİS kanaması",

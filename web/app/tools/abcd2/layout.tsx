@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ABCD² Skoru — TİA sonrası 2 günlük inme riski tahmini",
   description: "ABCD² Skoru: TİA sonrası 2 günlük inme riski tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/abcd2" },
+  manifest: "/manifest/arac/abcd2",
   openGraph: {
     type: "website",
     title: "ABCD² Skoru — TİA sonrası 2 günlük inme riski tahmini",

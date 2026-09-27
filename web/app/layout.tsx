@@ -5,6 +5,7 @@ import { Inter, Merriweather, JetBrains_Mono } from "next/font/google";
 import { Providers } from './providers';
 import { siteUrl, SITE_ADI, SITE_ACIKLAMA } from "@/lib/site";
 import { JsonLd, organizasyonSemasi, siteSemasi } from "@/lib/jsonld";
+import { KURULUM_YAKALAYICI } from "@/app/lib/kurulum";
 
 /**
  * Sitenin metadata temeli. Önceden hiç yoktu: tek bir sayfada bile <title>,
@@ -73,6 +74,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="tr" className={`${inter.variable} ${merriweather.variable} ${jetbrains.variable}`}>
       <body className="antialiased">
+        {/* "Ana ekrana ekle" olayı React'tan önce gelebilir — bkz. app/lib/kurulum.ts */}
+        <script dangerouslySetInnerHTML={{ __html: KURULUM_YAKALAYICI }} />
         {/* Site geneli kimlik: alt sayfalardaki şemalar buradaki @id'lere bağlanıyor. */}
         <JsonLd veri={organizasyonSemasi()} />
         <JsonLd veri={siteSemasi()} />

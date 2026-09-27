@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Kanada BT Kural — Minör kafa travmasında BT endikasyonu",
   description: "Kanada BT Kural: Minör kafa travmasında BT endikasyonu — yüksek/orta risk kriterleri. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/canadian-ct" },
+  manifest: "/manifest/arac/canadian-ct",
   openGraph: {
     type: "website",
     title: "Kanada BT Kural — Minör kafa travmasında BT endikasyonu",

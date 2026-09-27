@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Kt/V — Daugirdas II — Hemodiyaliz yeterliliği · spKt/V",
   description: "Kt/V — Daugirdas II: Hemodiyaliz yeterliliği · spKt/V · eKt/V · URR. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ktv" },
+  manifest: "/manifest/arac/ktv",
   openGraph: {
     type: "website",
     title: "Kt/V — Daugirdas II — Hemodiyaliz yeterliliği · spKt/V",

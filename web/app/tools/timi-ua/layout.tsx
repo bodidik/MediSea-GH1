@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "TIMI Skoru (UA/NSTEMI) — Kararsız angina/NSTEMI",
   description: "TIMI Skoru (UA/NSTEMI): Kararsız angina/NSTEMI 14 günlük olay riski — 7 kriter. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/timi-ua" },
+  manifest: "/manifest/arac/timi-ua",
   openGraph: {
     type: "website",
     title: "TIMI Skoru (UA/NSTEMI) — Kararsız angina/NSTEMI",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Charlson Komorbidite İndeksi",
   description: "Charlson Komorbidite İndeksi: CCI — 10 yıllık mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/charlson" },
+  manifest: "/manifest/arac/charlson",
   openGraph: {
     type: "website",
     title: "Charlson Komorbidite İndeksi",

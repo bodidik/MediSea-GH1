@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "KDIGO AKI Evrelemesi — Akut böbrek hasarı evrelemesi",
   description: "KDIGO AKI Evrelemesi: Akut böbrek hasarı evrelemesi (kreatinin + idrar çıkışı). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/kdigo-aki" },
+  manifest: "/manifest/arac/kdigo-aki",
   openGraph: {
     type: "website",
     title: "KDIGO AKI Evrelemesi — Akut böbrek hasarı evrelemesi",

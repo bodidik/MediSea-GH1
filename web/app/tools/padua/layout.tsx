@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Padua Skoru — Yatan dahili hastalarda VTE profilaksi",
   description: "Padua Skoru: Yatan dahili hastalarda VTE profilaksi kararı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/padua" },
+  manifest: "/manifest/arac/padua",
   openGraph: {
     type: "website",
     title: "Padua Skoru — Yatan dahili hastalarda VTE profilaksi",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "DAPSA — Psoriatik Artrit Hastalık Aktivite Skoru",
   description: "DAPSA: Psoriatik Artrit Hastalık Aktivite Skoru. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/dapsa" },
+  manifest: "/manifest/arac/dapsa",
   openGraph: {
     type: "website",
     title: "DAPSA — Psoriatik Artrit Hastalık Aktivite Skoru",

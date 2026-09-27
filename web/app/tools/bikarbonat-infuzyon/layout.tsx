@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Bikarbonat Açığı — NaHCO₃ açık hesabı",
   description: "Bikarbonat Açığı: NaHCO₃ açık hesabı — ampul karşılığı ve izotonik infüzyon hacmi, dağılım katsayısı seçilebilir. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/bikarbonat-infuzyon" },
+  manifest: "/manifest/arac/bikarbonat-infuzyon",
   openGraph: {
     type: "website",
     title: "Bikarbonat Açığı — NaHCO₃ açık hesabı",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Aldosteron/Renin Oranı — Primer aldosteronizm taraması",
   description: "Aldosteron/Renin Oranı: Primer aldosteronizm taraması — ARR, aldosteron eşiği, birim dönüşümü. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/aldosteron-renin" },
+  manifest: "/manifest/arac/aldosteron-renin",
   openGraph: {
     type: "website",
     title: "Aldosteron/Renin Oranı — Primer aldosteronizm taraması",

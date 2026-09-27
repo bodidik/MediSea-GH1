@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "mMRC Dispne — Modifiye Medical Research Council dispne",
   description: "mMRC Dispne: Modifiye Medical Research Council dispne ölçeği — Grade 0–4. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/mmrc" },
+  manifest: "/manifest/arac/mmrc",
   openGraph: {
     type: "website",
     title: "mMRC Dispne — Modifiye Medical Research Council dispne",

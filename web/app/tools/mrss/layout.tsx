@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "mRSS — Modifiye Rodnan Deri Skoru",
   description: "mRSS: Modifiye Rodnan Deri Skoru — sistemik skleroz deri fibrozisi (17 bölge). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/mrss" },
+  manifest: "/manifest/arac/mrss",
   openGraph: {
     type: "website",
     title: "mRSS — Modifiye Rodnan Deri Skoru",

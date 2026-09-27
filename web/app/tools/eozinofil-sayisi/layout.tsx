@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Mutlak Eozinofil Sayısı — Lökosit × %",
   description: "Mutlak Eozinofil Sayısı: Lökosit × % — eozinofili şiddeti ve astımda tip 2 eşikleri (150/300). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/eozinofil-sayisi" },
+  manifest: "/manifest/arac/eozinofil-sayisi",
   openGraph: {
     type: "website",
     title: "Mutlak Eozinofil Sayısı — Lökosit × %",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Caprini VTE — Cerrahi hastada VTE risk modeli",
   description: "Caprini VTE: Cerrahi hastada VTE risk modeli — skoru değiştirmeden kanama riskini ayrıca okur. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/caprini" },
+  manifest: "/manifest/arac/caprini",
   openGraph: {
     type: "website",
     title: "Caprini VTE — Cerrahi hastada VTE risk modeli",

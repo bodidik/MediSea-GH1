@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "HScore — HLH olasılık skoru",
   description: "HScore: HLH olasılık skoru — 9 parametre, hemofagositik lenfohistiyositoz. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/hscore" },
+  manifest: "/manifest/arac/hscore",
   openGraph: {
     type: "website",
     title: "HScore — HLH olasılık skoru",

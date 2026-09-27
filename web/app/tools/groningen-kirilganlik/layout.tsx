@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Groningen Kırılganlık Göstergesi (GFI) — Çok boyutlu",
   description: "Groningen Kırılganlık Göstergesi (GFI): Çok boyutlu kırılganlık taraması — 15 madde (≥ 4). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/groningen-kirilganlik" },
+  manifest: "/manifest/arac/groningen-kirilganlik",
   openGraph: {
     type: "website",
     title: "Groningen Kırılganlık Göstergesi (GFI) — Çok boyutlu",

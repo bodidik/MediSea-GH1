@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Wells Skoru (DVT) — Derin ven trombozu klinik olasılığı",
   description: "Wells Skoru (DVT): Derin ven trombozu klinik olasılığı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/wells-dvt" },
+  manifest: "/manifest/arac/wells-dvt",
   openGraph: {
     type: "website",
     title: "Wells Skoru (DVT) — Derin ven trombozu klinik olasılığı",

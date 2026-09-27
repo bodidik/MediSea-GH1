@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "BODE İndeksi — KOAH 4 yıllık mortalite tahmini",
   description: "BODE İndeksi: KOAH 4 yıllık mortalite tahmini — BMI + FEV1 + mMRC + 6DYT; alevlenme öyküsü ayrıca okunuyor. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/bode" },
+  manifest: "/manifest/arac/bode",
   openGraph: {
     type: "website",
     title: "BODE İndeksi — KOAH 4 yıllık mortalite tahmini",

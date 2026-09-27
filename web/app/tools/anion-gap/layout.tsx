@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Anyon Açığı — Metabolik asidoz ayırıcı tanısı",
   description: "Anyon Açığı: Metabolik asidoz ayırıcı tanısı (± albumin düzeltmesi). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/anion-gap" },
+  manifest: "/manifest/arac/anion-gap",
   openGraph: {
     type: "website",
     title: "Anyon Açığı — Metabolik asidoz ayırıcı tanısı",

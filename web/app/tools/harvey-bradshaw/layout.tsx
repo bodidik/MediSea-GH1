@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Harvey-Bradshaw İndeksi — Crohn hastalığı klinik",
   description: "Harvey-Bradshaw İndeksi: Crohn hastalığı klinik aktivitesi — remisyon/hafif/orta/ağır. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/harvey-bradshaw" },
+  manifest: "/manifest/arac/harvey-bradshaw",
   openGraph: {
     type: "website",
     title: "Harvey-Bradshaw İndeksi — Crohn hastalığı klinik",

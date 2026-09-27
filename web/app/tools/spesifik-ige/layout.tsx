@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Spesifik IgE Sınıfı — ImmunoCAP kU/L değerinden sınıf",
   description: "Spesifik IgE Sınıfı: ImmunoCAP kU/L değerinden sınıf 0–6 — çoklu allerjen, ≥ 0,35 pozitif. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/spesifik-ige" },
+  manifest: "/manifest/arac/spesifik-ige",
   openGraph: {
     type: "website",
     title: "Spesifik IgE Sınıfı — ImmunoCAP kU/L değerinden sınıf",

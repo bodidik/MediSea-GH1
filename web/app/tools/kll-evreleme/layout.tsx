@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "KLL Evrelemesi (Rai · Binet) — Kronik lenfositik lösemi",
   description: "KLL Evrelemesi (Rai · Binet): Kronik lenfositik lösemi — modifiye Rai ve Binet evresi aynı muayeneden. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/kll-evreleme" },
+  manifest: "/manifest/arac/kll-evreleme",
   openGraph: {
     type: "website",
     title: "KLL Evrelemesi (Rai · Binet) — Kronik lenfositik lösemi",

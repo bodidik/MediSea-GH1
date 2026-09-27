@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Morse Düşme Riski — Hastanede düşme riski değerlendirme",
   description: "Morse Düşme Riski: Hastanede düşme riski değerlendirme skalası — 6 madde. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/morse-fall" },
+  manifest: "/manifest/arac/morse-fall",
   openGraph: {
     type: "website",
     title: "Morse Düşme Riski — Hastanede düşme riski değerlendirme",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Karnofsky (KPS) — 0–100 performans skalası",
   description: "Karnofsky (KPS): 0–100 performans skalası — fonksiyonel kapasite ve prognoz. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/karnofsky" },
+  manifest: "/manifest/arac/karnofsky",
   openGraph: {
     type: "website",
     title: "Karnofsky (KPS) — 0–100 performans skalası",

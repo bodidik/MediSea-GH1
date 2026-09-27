@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Birim Çevirici — Sık kullanılan laboratuvar birim",
   description: "Birim Çevirici: Sık kullanılan laboratuvar birim dönüşümleri. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/unit-converter" },
+  manifest: "/manifest/arac/unit-converter",
   openGraph: {
     type: "website",
     title: "Birim Çevirici — Sık kullanılan laboratuvar birim",

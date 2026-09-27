@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "RTS — Revize Travma Skoru",
   description: "RTS: Revize Travma Skoru — GCS + SKB + Solunum hızı, tahmini sağkalım. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/rts" },
+  manifest: "/manifest/arac/rts",
   openGraph: {
     type: "website",
     title: "RTS — Revize Travma Skoru",

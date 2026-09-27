@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Mini-Cog — Bilişsel tarama",
   description: "Mini-Cog: Bilişsel tarama — üç kelime hatırlama + saat çizme (0–5). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/mini-cog" },
+  manifest: "/manifest/arac/mini-cog",
   openGraph: {
     type: "website",
     title: "Mini-Cog — Bilişsel tarama",

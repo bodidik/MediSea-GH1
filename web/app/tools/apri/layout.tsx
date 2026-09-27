@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "APRI — AST/trombosit oranı",
   description: "APRI: AST/trombosit oranı — anlamlı fibroz ve siroz için ayrı eşikler. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/apri" },
+  manifest: "/manifest/arac/apri",
   openGraph: {
     type: "website",
     title: "APRI — AST/trombosit oranı",

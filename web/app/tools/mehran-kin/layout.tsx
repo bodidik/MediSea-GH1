@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Mehran Kontrast Nefropatisi Skoru — Koroner girişim",
   description: "Mehran Kontrast Nefropatisi Skoru: Koroner girişim sonrası kontrast ilişkili AKI ve diyaliz riski. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/mehran-kin" },
+  manifest: "/manifest/arac/mehran-kin",
   openGraph: {
     type: "website",
     title: "Mehran Kontrast Nefropatisi Skoru — Koroner girişim",

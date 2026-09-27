@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "SARC-F — Sarkopeni taraması",
   description: "SARC-F: Sarkopeni taraması — 5 madde, isteğe bağlı baldır çevresi (SARC-CalF). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/sarc-f" },
+  manifest: "/manifest/arac/sarc-f",
   openGraph: {
     type: "website",
     title: "SARC-F — Sarkopeni taraması",

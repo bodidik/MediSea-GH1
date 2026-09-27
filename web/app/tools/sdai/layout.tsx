@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "SDAI — Basitleştirilmiş Hastalık Aktivite İndeksi",
   description: "SDAI: Basitleştirilmiş Hastalık Aktivite İndeksi — RA + CRP. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/sdai" },
+  manifest: "/manifest/arac/sdai",
   openGraph: {
     type: "website",
     title: "SDAI — Basitleştirilmiş Hastalık Aktivite İndeksi",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Khorana Skoru — Kemoterapi ilişkili VTE riski",
   description: "Khorana Skoru: Kemoterapi ilişkili VTE riski. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/khorana" },
+  manifest: "/manifest/arac/khorana",
   openGraph: {
     type: "website",
     title: "Khorana Skoru — Kemoterapi ilişkili VTE riski",

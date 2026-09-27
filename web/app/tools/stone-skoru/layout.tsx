@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "STONE Skoru — Yan ağrısında üreter taşı olasılığı",
   description: "STONE Skoru: Yan ağrısında üreter taşı olasılığı — 0–13. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/stone-skoru" },
+  manifest: "/manifest/arac/stone-skoru",
   openGraph: {
     type: "website",
     title: "STONE Skoru — Yan ağrısında üreter taşı olasılığı",

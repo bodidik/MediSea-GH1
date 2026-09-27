@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "HAS-BLED Skoru — Antikoagülasyon kanama riski",
   description: "HAS-BLED Skoru: Antikoagülasyon kanama riski. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/has-bled" },
+  manifest: "/manifest/arac/has-bled",
   openGraph: {
     type: "website",
     title: "HAS-BLED Skoru — Antikoagülasyon kanama riski",

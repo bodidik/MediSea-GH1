@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "PERC Kriterleri — PE düşük risk dışlama protokolü",
   description: "PERC Kriterleri: PE düşük risk dışlama protokolü. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/perc" },
+  manifest: "/manifest/arac/perc",
   openGraph: {
     type: "website",
     title: "PERC Kriterleri — PE düşük risk dışlama protokolü",

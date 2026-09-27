@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "VES-13 — Vulnerable Elders Survey",
   description: "VES-13: Vulnerable Elders Survey — 13 soru, 2 yıllık ölüm/gerileme riski (≥ 3). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ves-13" },
+  manifest: "/manifest/arac/ves-13",
   openGraph: {
     type: "website",
     title: "VES-13 — Vulnerable Elders Survey",

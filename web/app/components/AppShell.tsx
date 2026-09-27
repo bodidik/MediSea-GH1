@@ -5,6 +5,7 @@ import { KLINIK_SORUMLULUK } from "@/app/lib/sorumluluk";
 import ReadingHint from "@/app/components/ReadingHint";
 import { KiyiDalgasi, AdaSilueti } from "@/app/components/DenizSusu";
 import DenizFiligrani from "@/app/components/DenizFiligrani";
+import AnaEkranaEkle from "@/app/components/AnaEkranaEkle";
 import Link from "next/link";
 import React from "react";
 
@@ -87,6 +88,11 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <p className="text-sm leading-relaxed max-w-sm mb-6 font-medium">
                 Tıp profesyonelleri ve asistan hekimler için güncel, kanıta dayalı ve pratik iç hastalıkları klinik rehberi. Nöbetlerde ve YDUS sürecinde en güçlü silahınız.
               </p>
+              {/* Yalnızca tarayıcı kurulum sunabildiğinde çizilir (Android). */}
+              <AnaEkranaEkle
+                etiket="MediSea'yı ana ekrana ekle"
+                className="rounded-xl border-2 border-blue-700 px-4 py-3 text-sm font-black text-white hover:bg-blue-900"
+              />
               {/* Sosyal medya ikonları (𝕏, in) kaldırıldı: <span> olarak
                   duruyorlardı — imleç "pointer", üzerine gelince hareket
                   ediyorlardı, ama bağlantı da tıklama işleyicisi de yoktu.

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ROSIER — Acil serviste inmeyi taklitçilerinden ayırma",
   description: "ROSIER: Acil serviste inmeyi taklitçilerinden ayırma — −2 ile +5, > 0 inme olası. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/rosier" },
+  manifest: "/manifest/arac/rosier",
   openGraph: {
     type: "website",
     title: "ROSIER — Acil serviste inmeyi taklitçilerinden ayırma",

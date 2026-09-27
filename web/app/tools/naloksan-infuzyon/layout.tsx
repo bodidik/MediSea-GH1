@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Naloksan İnfüzyonu — Saatlik hız uyandıran bolusun 2/3'ü",
   description: "Naloksan İnfüzyonu: Saatlik hız uyandıran bolusun 2/3'ü — antidot zehirden ÖNCE bitiyor, izlem süresi opioide göre… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/naloksan-infuzyon" },
+  manifest: "/manifest/arac/naloksan-infuzyon",
   openGraph: {
     type: "website",
     title: "Naloksan İnfüzyonu — Saatlik hız uyandıran bolusun 2/3'ü",

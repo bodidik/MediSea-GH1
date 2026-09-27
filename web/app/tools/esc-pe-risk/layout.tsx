@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ESC 2019 PE Risk Sınıflaması — Hemodinami, PESI/sPESI",
   description: "ESC 2019 PE Risk Sınıflaması: Hemodinami, PESI/sPESI, RV disfonksiyonu ve troponinle yüksek / orta-yüksek /… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/esc-pe-risk" },
+  manifest: "/manifest/arac/esc-pe-risk",
   openGraph: {
     type: "website",
     title: "ESC 2019 PE Risk Sınıflaması — Hemodinami, PESI/sPESI",

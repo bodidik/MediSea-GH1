@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Enerji & Protein Gereksinimi — Klinik duruma göre",
   description: "Enerji & Protein Gereksinimi: Klinik duruma göre kcal/pro hesaplayıcı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/nutrition-needs" },
+  manifest: "/manifest/arac/nutrition-needs",
   openGraph: {
     type: "website",
     title: "Enerji & Protein Gereksinimi — Klinik duruma göre",

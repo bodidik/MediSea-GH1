@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "EULAR/ACR 2019 SLE Kriterleri — ANA giriş kriteri",
   description: "EULAR/ACR 2019 SLE Kriterleri: ANA giriş kriteri, ağırlıklı klinik ve immünolojik alanlar (≥ 10). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/sle-2019" },
+  manifest: "/manifest/arac/sle-2019",
   openGraph: {
     type: "website",
     title: "EULAR/ACR 2019 SLE Kriterleri — ANA giriş kriteri",

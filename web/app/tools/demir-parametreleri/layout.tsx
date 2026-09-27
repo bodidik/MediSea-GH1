@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Demir Parametreleri — TSAT ve ferritin",
   description: "Demir Parametreleri: TSAT ve ferritin — genel, kalp yetmezliği, KBH ve inflamasyon bağlamında. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/demir-parametreleri" },
+  manifest: "/manifest/arac/demir-parametreleri",
   openGraph: {
     type: "website",
     title: "Demir Parametreleri — TSAT ve ferritin",

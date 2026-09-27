@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Hiperkalemi Tedavisi — Kaydıran ile çıkaranı ayırır",
   description: "Hiperkalemi Tedavisi: Kaydıran ile çıkaranı ayırır — kalsiyum ve insülin potasyumu DÜŞÜRMEZ, etkileri bitince geri… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/hiperkalemi-tedavi" },
+  manifest: "/manifest/arac/hiperkalemi-tedavi",
   openGraph: {
     type: "website",
     title: "Hiperkalemi Tedavisi — Kaydıran ile çıkaranı ayırır",

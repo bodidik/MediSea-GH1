@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "FIB-4 İndeksi — Karaciğer fibrozu taraması",
   description: "FIB-4 İndeksi: Karaciğer fibrozu taraması — yaşa göre eşik (MASLD, viral hepatit). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/fib-4" },
+  manifest: "/manifest/arac/fib-4",
   openGraph: {
     type: "website",
     title: "FIB-4 İndeksi — Karaciğer fibrozu taraması",

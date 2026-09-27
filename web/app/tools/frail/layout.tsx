@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "FRAIL Skalası — Kırılganlık (frailty) tarama",
   description: "FRAIL Skalası: Kırılganlık (frailty) tarama — Sağlıklı / Pre-kırılgan / Kırılgan. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/frail" },
+  manifest: "/manifest/arac/frail",
   openGraph: {
     type: "website",
     title: "FRAIL Skalası — Kırılganlık (frailty) tarama",

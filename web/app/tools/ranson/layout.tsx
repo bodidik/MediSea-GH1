@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Ranson Kriterleri — Akut pankreatit şiddet",
   description: "Ranson Kriterleri: Akut pankreatit şiddet değerlendirmesi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ranson" },
+  manifest: "/manifest/arac/ranson",
   openGraph: {
     type: "website",
     title: "Ranson Kriterleri — Akut pankreatit şiddet",

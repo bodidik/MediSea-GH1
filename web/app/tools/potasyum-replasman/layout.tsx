@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Potasyum Replasmanı — IV potasyumda hız, derişim ve",
   description: "Potasyum Replasmanı: IV potasyumda hız, derişim ve süre sınırları — periferik ve santral yol ayrı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/potasyum-replasman" },
+  manifest: "/manifest/arac/potasyum-replasman",
   openGraph: {
     type: "website",
     title: "Potasyum Replasmanı — IV potasyumda hız, derişim ve",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Adrenal Kitle BT Yıkanma Hesabı — Kontrastsız HU",
   description: "Adrenal Kitle BT Yıkanma Hesabı: Kontrastsız HU, mutlak ve göreli kontrast yıkanması — adenom ayrımı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/adrenal-yikanma" },
+  manifest: "/manifest/arac/adrenal-yikanma",
   openGraph: {
     type: "website",
     title: "Adrenal Kitle BT Yıkanma Hesabı — Kontrastsız HU",

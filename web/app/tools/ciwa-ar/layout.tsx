@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "CIWA-Ar — Alkol yoksunluğu şiddeti",
   description: "CIWA-Ar: Alkol yoksunluğu şiddeti — 10 madde, nöbet/deliryum riski değerlendirme. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ciwa-ar" },
+  manifest: "/manifest/arac/ciwa-ar",
   openGraph: {
     type: "website",
     title: "CIWA-Ar — Alkol yoksunluğu şiddeti",

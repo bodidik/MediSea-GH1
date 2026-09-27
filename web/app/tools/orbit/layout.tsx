@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ORBIT Kanama Skoru — AF'de antikoagülasyon altında",
   description: "ORBIT Kanama Skoru: AF'de antikoagülasyon altında majör kanama riski — 0–7. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/orbit" },
+  manifest: "/manifest/arac/orbit",
   openGraph: {
     type: "website",
     title: "ORBIT Kanama Skoru — AF'de antikoagülasyon altında",

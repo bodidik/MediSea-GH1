@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "MIPI — Mantle hücreli lenfoma prognostik indeksi",
   description: "MIPI: Mantle hücreli lenfoma prognostik indeksi — formül ve basitleştirilmiş puan. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/mipi" },
+  manifest: "/manifest/arac/mipi",
   openGraph: {
     type: "website",
     title: "MIPI — Mantle hücreli lenfoma prognostik indeksi",

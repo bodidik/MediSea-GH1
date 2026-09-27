@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "QTc Hesaplayıcı — Bazett, Fridericia, Framingham, Hodges",
   description: "QTc Hesaplayıcı: Bazett, Fridericia, Framingham, Hodges — cinsiyete göre uzun QT eşiği. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/qtc" },
+  manifest: "/manifest/arac/qtc",
   openGraph: {
     type: "website",
     title: "QTc Hesaplayıcı — Bazett, Fridericia, Framingham, Hodges",

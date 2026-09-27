@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Edmonton Kırılganlık Ölçeği (EFS) — 9 alan, 11 madde",
   description: "Edmonton Kırılganlık Ölçeği (EFS): 9 alan, 11 madde — saat çizme ve Kalk-Yürü testi dahil (0–17). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/edmonton-kirilganlik" },
+  manifest: "/manifest/arac/edmonton-kirilganlik",
   openGraph: {
     type: "website",
     title: "Edmonton Kırılganlık Ölçeği (EFS) — 9 alan, 11 madde",

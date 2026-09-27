@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Fraksiyonel Magnezyum ve Ürik Asit Atılımı",
   description: "Fraksiyonel Magnezyum ve Ürik Asit Atılımı: FEMg (renal/böbrek dışı Mg kaybı) ve FEUA (hiponatremide SIADH). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/fraksiyonel-atilim" },
+  manifest: "/manifest/arac/fraksiyonel-atilim",
   openGraph: {
     type: "website",
     title: "Fraksiyonel Magnezyum ve Ürik Asit Atılımı",

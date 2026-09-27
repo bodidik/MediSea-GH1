@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "OGTT Yorumlama — T2DM/prediyabet, gestasyonel diyabet",
   description: "OGTT Yorumlama: T2DM/prediyabet, gestasyonel diyabet (GDM), akromegali GH süpresyonu. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ogtt" },
+  manifest: "/manifest/arac/ogtt",
   openGraph: {
     type: "website",
     title: "OGTT Yorumlama — T2DM/prediyabet, gestasyonel diyabet",

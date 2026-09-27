@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "MNA® (Kısa Form) — Geriatrik popülasyon nütrisyonel",
   description: "MNA® (Kısa Form): Geriatrik popülasyon nütrisyonel değerlendirme. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/mna" },
+  manifest: "/manifest/arac/mna",
   openGraph: {
     type: "website",
     title: "MNA® (Kısa Form) — Geriatrik popülasyon nütrisyonel",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Deksametazon Süpresyon Testi (DST) — 1 mg / 2 mg LDDST",
   description: "Deksametazon Süpresyon Testi (DST): 1 mg / 2 mg LDDST / 8 mg HDDST — Cushing tarama & lokalizasyon. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/dst" },
+  manifest: "/manifest/arac/dst",
   openGraph: {
     type: "website",
     title: "Deksametazon Süpresyon Testi (DST) — 1 mg / 2 mg LDDST",

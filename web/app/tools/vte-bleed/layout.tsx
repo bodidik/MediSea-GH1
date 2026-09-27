@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "VTE-BLEED — Venöz tromboembolide antikoagülasyon",
   description: "VTE-BLEED: Venöz tromboembolide antikoagülasyon altında majör kanama riski — ≥ 2 yüksek. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/vte-bleed" },
+  manifest: "/manifest/arac/vte-bleed",
   openGraph: {
     type: "website",
     title: "VTE-BLEED — Venöz tromboembolide antikoagülasyon",

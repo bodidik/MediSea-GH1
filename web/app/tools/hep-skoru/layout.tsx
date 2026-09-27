@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "HEP Skoru — HIT — HIT uzman olasılık skoru",
   description: "HEP Skoru — HIT: HIT uzman olasılık skoru — 8 özellik, alternatif nedenler eksi puan; < 2 düşük olasılık. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/hep-skoru" },
+  manifest: "/manifest/arac/hep-skoru",
   openGraph: {
     type: "website",
     title: "HEP Skoru — HIT — HIT uzman olasılık skoru",

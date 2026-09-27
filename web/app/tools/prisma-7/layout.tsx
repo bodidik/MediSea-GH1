@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "PRISMA-7 — Toplum temelli kırılganlık taraması",
   description: "PRISMA-7: Toplum temelli kırılganlık taraması — 7 soru (≥ 3 pozitif). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/prisma-7" },
+  manifest: "/manifest/arac/prisma-7",
   openGraph: {
     type: "website",
     title: "PRISMA-7 — Toplum temelli kırılganlık taraması",

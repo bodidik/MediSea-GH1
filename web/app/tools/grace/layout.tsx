@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "GRACE Skoru — AKS/NSTEMI hastane içi mortalite",
   description: "GRACE Skoru: AKS/NSTEMI hastane içi mortalite — toplamsal puan (1.0). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/grace" },
+  manifest: "/manifest/arac/grace",
   openGraph: {
     type: "website",
     title: "GRACE Skoru — AKS/NSTEMI hastane içi mortalite",

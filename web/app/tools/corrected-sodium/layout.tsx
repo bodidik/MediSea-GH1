@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Düzeltilmiş Sodyum — Hiperglisemi düzeltmesi",
   description: "Düzeltilmiş Sodyum: Hiperglisemi düzeltmesi (Katz formülü). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/corrected-sodium" },
+  manifest: "/manifest/arac/corrected-sodium",
   openGraph: {
     type: "website",
     title: "Düzeltilmiş Sodyum — Hiperglisemi düzeltmesi",

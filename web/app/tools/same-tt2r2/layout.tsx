@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "SAMe-TT₂R₂ — AF'de varfarinle iyi INR kontrolü olasılığı",
   description: "SAMe-TT₂R₂: AF'de varfarinle iyi INR kontrolü olasılığı — VKA ya da DOAK seçimi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/same-tt2r2" },
+  manifest: "/manifest/arac/same-tt2r2",
   openGraph: {
     type: "website",
     title: "SAMe-TT₂R₂ — AF'de varfarinle iyi INR kontrolü olasılığı",

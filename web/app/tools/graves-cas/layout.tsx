@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Graves Orbitopatisi CAS — Klinik Aktivite Skoru",
   description: "Graves Orbitopatisi CAS: Klinik Aktivite Skoru — ilk değerlendirme ≥ 3/7, izlem ≥ 4/10. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/graves-cas" },
+  manifest: "/manifest/arac/graves-cas",
   openGraph: {
     type: "website",
     title: "Graves Orbitopatisi CAS — Klinik Aktivite Skoru",

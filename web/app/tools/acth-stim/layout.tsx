@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ACTH Stimülasyon Testi — 250 μg / 1 μg protokol",
   description: "ACTH Stimülasyon Testi: 250 μg / 1 μg protokol — adrenal yetmezlik kortizol yanıtı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/acth-stim" },
+  manifest: "/manifest/arac/acth-stim",
   openGraph: {
     type: "website",
     title: "ACTH Stimülasyon Testi — 250 μg / 1 μg protokol",

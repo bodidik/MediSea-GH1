@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Lille Skoru — Alkolik hepatitte 7. gün kortikosteroid",
   description: "Lille Skoru: Alkolik hepatitte 7. gün kortikosteroid yanıtı — ≥ 0,45 yanıtsız. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/lille" },
+  manifest: "/manifest/arac/lille",
   openGraph: {
     type: "website",
     title: "Lille Skoru — Alkolik hepatitte 7. gün kortikosteroid",

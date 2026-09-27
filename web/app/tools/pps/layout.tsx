@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Palliative Performance Scale",
   description: "Palliative Performance Scale: PPS v2 — palyatif bakımda 5 domain fonksiyonel durum. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/pps" },
+  manifest: "/manifest/arac/pps",
   openGraph: {
     type: "website",
     title: "Palliative Performance Scale",

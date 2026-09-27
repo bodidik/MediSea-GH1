@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Makroprolaktin (PEG Geri Kazanımı) — Hiperprolaktinemide",
   description: "Makroprolaktin (PEG Geri Kazanımı): Hiperprolaktinemide makroprolaktin ve monomerik prolaktin ayrımı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/makroprolaktin" },
+  manifest: "/manifest/arac/makroprolaktin",
   openGraph: {
     type: "website",
     title: "Makroprolaktin (PEG Geri Kazanımı) — Hiperprolaktinemide",

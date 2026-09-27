@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Palyatif Prognostik İndeks (PPI) — Terminal kanserde",
   description: "Palyatif Prognostik İndeks (PPI): Terminal kanserde hayatta kalma tahmini (<3 / <6 hafta). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ppi" },
+  manifest: "/manifest/arac/ppi",
   openGraph: {
     type: "website",
     title: "Palyatif Prognostik İndeks (PPI) — Terminal kanserde",

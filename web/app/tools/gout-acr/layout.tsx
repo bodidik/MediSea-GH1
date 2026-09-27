@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Gut ACR 2015 — ACR/EULAR gut hastalığı sınıflama",
   description: "Gut ACR 2015: ACR/EULAR gut hastalığı sınıflama kriterleri — MSU + domain skoru. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/gout-acr" },
+  manifest: "/manifest/arac/gout-acr",
   openGraph: {
     type: "website",
     title: "Gut ACR 2015 — ACR/EULAR gut hastalığı sınıflama",

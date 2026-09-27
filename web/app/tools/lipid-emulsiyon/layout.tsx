@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Lipid Emülsiyon (LAST) — Bolus, idame ve kümülatif tavan",
   description: "Lipid Emülsiyon (LAST): Bolus, idame ve kümülatif tavan — idame DAKİKA başına yazılı, pompaya girecek saatlik sayı… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/lipid-emulsiyon" },
+  manifest: "/manifest/arac/lipid-emulsiyon",
   openGraph: {
     type: "website",
     title: "Lipid Emülsiyon (LAST) — Bolus, idame ve kümülatif tavan",

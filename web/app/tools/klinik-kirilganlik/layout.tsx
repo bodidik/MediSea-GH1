@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Klinik Kırılganlık Ölçeği (CFS) — Rockwood CFS",
   description: "Klinik Kırılganlık Ölçeği (CFS): Rockwood CFS 2.0 — 1–9 düzey, akut hastalık öncesi durum. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/klinik-kirilganlik" },
+  manifest: "/manifest/arac/klinik-kirilganlik",
   openGraph: {
     type: "website",
     title: "Klinik Kırılganlık Ölçeği (CFS) — Rockwood CFS",

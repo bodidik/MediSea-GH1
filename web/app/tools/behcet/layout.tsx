@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Behçet — ICBD 2014 — Behçet hastalığı tanı kriterleri",
   description: "Behçet — ICBD 2014: Behçet hastalığı tanı kriterleri — ağırlıklı puanlama (≥ 4 puan). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/behcet" },
+  manifest: "/manifest/arac/behcet",
   openGraph: {
     type: "website",
     title: "Behçet — ICBD 2014 — Behçet hastalığı tanı kriterleri",

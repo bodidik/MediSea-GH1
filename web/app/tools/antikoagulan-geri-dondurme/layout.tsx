@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Antikoagülan Geri Döndürme — Protamin, 4F-PCC, K",
   description: "Antikoagülan Geri Döndürme: Protamin, 4F-PCC, K vitamini ve idarucizumab — üç ayrı dozlama mantığı: miktara… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/antikoagulan-geri-dondurme" },
+  manifest: "/manifest/arac/antikoagulan-geri-dondurme",
   openGraph: {
     type: "website",
     title: "Antikoagülan Geri Döndürme — Protamin, 4F-PCC, K",

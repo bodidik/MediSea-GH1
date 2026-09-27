@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Retikülosit Üretim İndeksi — Anemide kemik iliği yanıtı",
   description: "Retikülosit Üretim İndeksi: Anemide kemik iliği yanıtı — hematokrit ve olgunlaşma düzeltmeli (RPI). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/retikulosit-indeksi" },
+  manifest: "/manifest/arac/retikulosit-indeksi",
   openGraph: {
     type: "website",
     title: "Retikülosit Üretim İndeksi — Anemide kemik iliği yanıtı",

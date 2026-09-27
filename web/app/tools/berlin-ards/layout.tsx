@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Berlin ARDS Kriterleri — ARDS tanı ve şiddet sınıflaması",
   description: "Berlin ARDS Kriterleri: ARDS tanı ve şiddet sınıflaması — hafif/orta/ağır. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/berlin-ards" },
+  manifest: "/manifest/arac/berlin-ards",
   openGraph: {
     type: "website",
     title: "Berlin ARDS Kriterleri — ARDS tanı ve şiddet sınıflaması",

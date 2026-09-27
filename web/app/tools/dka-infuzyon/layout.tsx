@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "DKA Kurulumu — Diyabetik ketoasidozda sıvı, insülin ve",
   description: "DKA Kurulumu: Diyabetik ketoasidozda sıvı, insülin ve potasyum sıralaması — potasyum düşükse insülini bekletir. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/dka-infuzyon" },
+  manifest: "/manifest/arac/dka-infuzyon",
   openGraph: {
     type: "website",
     title: "DKA Kurulumu — Diyabetik ketoasidozda sıvı, insülin ve",

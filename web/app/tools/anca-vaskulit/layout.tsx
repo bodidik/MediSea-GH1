@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ACR/EULAR 2022 ANCA Vaskülitleri — GPA, MPA ve EGPA",
   description: "ACR/EULAR 2022 ANCA Vaskülitleri: GPA, MPA ve EGPA sınıflama kriterleri aynı bulgulardan. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/anca-vaskulit" },
+  manifest: "/manifest/arac/anca-vaskulit",
   openGraph: {
     type: "website",
     title: "ACR/EULAR 2022 ANCA Vaskülitleri — GPA, MPA ve EGPA",

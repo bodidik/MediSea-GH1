@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "BAP-65 — KOAH alevlenmesinde şiddet sınıflaması",
   description: "BAP-65: KOAH alevlenmesinde şiddet sınıflaması — sınıf I–V, solunumsal asidoz ayrıca okunuyor. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/bap65" },
+  manifest: "/manifest/arac/bap65",
   openGraph: {
     type: "website",
     title: "BAP-65 — KOAH alevlenmesinde şiddet sınıflaması",

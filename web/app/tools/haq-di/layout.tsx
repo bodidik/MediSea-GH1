@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "HAQ-DI — Sağlık Değerlendirme Anketi",
   description: "HAQ-DI: Sağlık Değerlendirme Anketi — Engellilik İndeksi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/haq-di" },
+  manifest: "/manifest/arac/haq-di",
   openGraph: {
     type: "website",
     title: "HAQ-DI — Sağlık Değerlendirme Anketi",

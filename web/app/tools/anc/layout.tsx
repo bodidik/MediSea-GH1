@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ANC Hesaplama — Mutlak nötrofil sayısı ve nötropeni",
   description: "ANC Hesaplama: Mutlak nötrofil sayısı ve nötropeni evrelemesi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/anc" },
+  manifest: "/manifest/arac/anc",
   openGraph: {
     type: "website",
     title: "ANC Hesaplama — Mutlak nötrofil sayısı ve nötropeni",

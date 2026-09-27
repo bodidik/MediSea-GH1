@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "APACHE II — Akut fizyoloji ve kronik sağlık",
   description: "APACHE II: Akut fizyoloji ve kronik sağlık değerlendirmesi — YBÜ mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/apache2" },
+  manifest: "/manifest/arac/apache2",
   openGraph: {
     type: "website",
     title: "APACHE II — Akut fizyoloji ve kronik sağlık",

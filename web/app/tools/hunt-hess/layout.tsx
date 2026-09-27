@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Hunt-Hess — Anevrizmal subaraknoid kanama klinik",
   description: "Hunt-Hess: Anevrizmal subaraknoid kanama klinik derecesi — 1–5. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/hunt-hess" },
+  manifest: "/manifest/arac/hunt-hess",
   openGraph: {
     type: "website",
     title: "Hunt-Hess — Anevrizmal subaraknoid kanama klinik",

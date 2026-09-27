@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ARISCAT — Preoperatif pulmoner komplikasyon riski",
   description: "ARISCAT: Preoperatif pulmoner komplikasyon riski — 7 değişken, düzeltilebilir yük okuması. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ariscat" },
+  manifest: "/manifest/arac/ariscat",
   openGraph: {
     type: "website",
     title: "ARISCAT — Preoperatif pulmoner komplikasyon riski",

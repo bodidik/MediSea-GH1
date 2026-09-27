@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Tromboliz Dozu (rt-PA) — İnmede kiloya göre + 90 mg",
   description: "Tromboliz Dozu (rt-PA): İnmede kiloya göre + 90 mg tavan, masif emboli de 100 mg sabit — aynı ilaç, farklı rejim. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/tromboliz-doz" },
+  manifest: "/manifest/arac/tromboliz-doz",
   openGraph: {
     type: "website",
     title: "Tromboliz Dozu (rt-PA) — İnmede kiloya göre + 90 mg",

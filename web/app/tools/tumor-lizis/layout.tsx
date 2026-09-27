@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Tümör Lizis Sendromu — Cairo-Bishop laboratuvar ve",
   description: "Tümör Lizis Sendromu: Cairo-Bishop laboratuvar ve klinik TLS tanımı — %25 değişim ölçütü dahil. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/tumor-lizis" },
+  manifest: "/manifest/arac/tumor-lizis",
   openGraph: {
     type: "website",
     title: "Tümör Lizis Sendromu — Cairo-Bishop laboratuvar ve",

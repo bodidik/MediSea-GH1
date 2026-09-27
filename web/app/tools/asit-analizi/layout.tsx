@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Asit Sıvısı Analizi — SAAG, asit proteini ve PMN ile",
   description: "Asit Sıvısı Analizi: SAAG, asit proteini ve PMN ile asit nedeni ve SBP. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/asit-analizi" },
+  manifest: "/manifest/arac/asit-analizi",
   openGraph: {
     type: "website",
     title: "Asit Sıvısı Analizi — SAAG, asit proteini ve PMN ile",

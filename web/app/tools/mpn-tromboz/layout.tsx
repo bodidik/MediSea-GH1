@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "MPN Tromboz Riski — Polisitemia vera (ELN) ve esansiyel",
   description: "MPN Tromboz Riski: Polisitemia vera (ELN) ve esansiyel trombositemi (revize IPSET) risk grupları. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/mpn-tromboz" },
+  manifest: "/manifest/arac/mpn-tromboz",
   openGraph: {
     type: "website",
     title: "MPN Tromboz Riski — Polisitemia vera (ELN) ve esansiyel",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ISAR — Acil serviste risk altındaki yaşlıyı tanımlama",
   description: "ISAR: Acil serviste risk altındaki yaşlıyı tanımlama — 6 soru (≥ 2 yüksek risk). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/isar" },
+  manifest: "/manifest/arac/isar",
   openGraph: {
     type: "website",
     title: "ISAR — Acil serviste risk altındaki yaşlıyı tanımlama",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "UAS7 — Ürtikar Aktivite Skoru (7 gün)",
   description: "UAS7: Ürtikar Aktivite Skoru (7 gün) — 0–42, omalizumab eşiği. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/uas7" },
+  manifest: "/manifest/arac/uas7",
   openGraph: {
     type: "website",
     title: "UAS7 — Ürtikar Aktivite Skoru (7 gün)",

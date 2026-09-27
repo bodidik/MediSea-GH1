@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "KML Risk Skoru (ELTS · Sokal) — Kronik miyeloid",
   description: "KML Risk Skoru (ELTS · Sokal): Kronik miyeloid löseminin tanı anı risk sınıflaması — iki denklem yan yana. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/kml-risk" },
+  manifest: "/manifest/arac/kml-risk",
   openGraph: {
     type: "website",
     title: "KML Risk Skoru (ELTS · Sokal) — Kronik miyeloid",

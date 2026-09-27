@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ACR/EULAR 2016 Sjögren Kriterleri — Primer Sjögren",
   description: "ACR/EULAR 2016 Sjögren Kriterleri: Primer Sjögren sınıflaması — biyopsi, anti-SSA, kuruluk testleri (≥ 4). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/sjogren-2016" },
+  manifest: "/manifest/arac/sjogren-2016",
   openGraph: {
     type: "website",
     title: "ACR/EULAR 2016 Sjögren Kriterleri — Primer Sjögren",

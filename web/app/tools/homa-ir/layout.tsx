@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "HOMA-IR — İnsülin direnci indeksi",
   description: "HOMA-IR: İnsülin direnci indeksi (açlık glukoz × insülin). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/homa-ir" },
+  manifest: "/manifest/arac/homa-ir",
   openGraph: {
     type: "website",
     title: "HOMA-IR — İnsülin direnci indeksi",

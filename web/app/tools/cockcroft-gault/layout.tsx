@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Cockcroft-Gault Kreatinin Klirensi — İlaç doz ayarı",
   description: "Cockcroft-Gault Kreatinin Klirensi: İlaç doz ayarı için CrCl — gerçek, ideal ve ayarlanmış ağırlıkla. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/cockcroft-gault" },
+  manifest: "/manifest/arac/cockcroft-gault",
   openGraph: {
     type: "website",
     title: "Cockcroft-Gault Kreatinin Klirensi — İlaç doz ayarı",

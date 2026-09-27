@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Fosfat Replasmanı — Zorunlu potasyum/sodyum yükü",
   description: "Fosfat Replasmanı: Zorunlu potasyum/sodyum yükü — süreyi çoğu zaman fosfat değil potasyum sınırlıyor. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/fosfat-replasman" },
+  manifest: "/manifest/arac/fosfat-replasman",
   openGraph: {
     type: "website",
     title: "Fosfat Replasmanı — Zorunlu potasyum/sodyum yükü",

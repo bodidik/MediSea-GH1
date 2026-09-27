@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Ann Arbor / Lugano Evrelemesi — Hodgkin ve non-Hodgkin",
   description: "Ann Arbor / Lugano Evrelemesi: Hodgkin ve non-Hodgkin lenfoma evresi — E eki, bulky, B semptomları. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ann-arbor-lugano" },
+  manifest: "/manifest/arac/ann-arbor-lugano",
   openGraph: {
     type: "website",
     title: "Ann Arbor / Lugano Evrelemesi — Hodgkin ve non-Hodgkin",

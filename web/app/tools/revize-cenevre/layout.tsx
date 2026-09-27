@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Revize Cenevre Skoru — Pulmoner emboli klinik olasılığı",
   description: "Revize Cenevre Skoru: Pulmoner emboli klinik olasılığı — nesnel 8 madde, 0–22. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/revize-cenevre" },
+  manifest: "/manifest/arac/revize-cenevre",
   openGraph: {
     type: "website",
     title: "Revize Cenevre Skoru — Pulmoner emboli klinik olasılığı",

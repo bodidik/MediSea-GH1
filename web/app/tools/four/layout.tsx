@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "FOUR Skoru — Koma değerlendirmesi",
   description: "FOUR Skoru: Koma değerlendirmesi — entübe hastada GKS'nin yerini alır, locked-in ve apneyi yakalar. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/four" },
+  manifest: "/manifest/arac/four",
   openGraph: {
     type: "website",
     title: "FOUR Skoru — Koma değerlendirmesi",

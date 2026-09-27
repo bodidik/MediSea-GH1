@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "RASS — Richmond Ajitasyon–Sedasyon Skalası",
   description: "RASS: Richmond Ajitasyon–Sedasyon Skalası — −5/+4, sedasyon hedefi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/rass" },
+  manifest: "/manifest/arac/rass",
   openGraph: {
     type: "website",
     title: "RASS — Richmond Ajitasyon–Sedasyon Skalası",

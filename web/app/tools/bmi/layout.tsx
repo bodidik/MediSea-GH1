@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "BMI & İdeal Vücut Ağırlığı — Vücut kitle indeksi",
   description: "BMI & İdeal Vücut Ağırlığı: Vücut kitle indeksi + Devine / Hamwi formülleri. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/bmi" },
+  manifest: "/manifest/arac/bmi",
   openGraph: {
     type: "website",
     title: "BMI & İdeal Vücut Ağırlığı — Vücut kitle indeksi",

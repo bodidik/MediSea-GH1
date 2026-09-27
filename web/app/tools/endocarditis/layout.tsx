@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Duke Kriterleri — Enfektif Endokardit tanı deşifresi",
   description: "Duke Kriterleri: Enfektif Endokardit tanı deşifresi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/endocarditis" },
+  manifest: "/manifest/arac/endocarditis",
   openGraph: {
     type: "website",
     title: "Duke Kriterleri — Enfektif Endokardit tanı deşifresi",

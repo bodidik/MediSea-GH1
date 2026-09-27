@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ASPECTS — Kontrastsız BT'de MCA alanı erken iskemi skoru",
   description: "ASPECTS: Kontrastsız BT'de MCA alanı erken iskemi skoru — 10 bölge, trombektomi değerlendirmesi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/aspects" },
+  manifest: "/manifest/arac/aspects",
   openGraph: {
     type: "website",
     title: "ASPECTS — Kontrastsız BT'de MCA alanı erken iskemi skoru",

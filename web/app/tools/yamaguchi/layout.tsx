@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Yamaguchi Kriterleri — Erişkin başlangıçlı Still",
   description: "Yamaguchi Kriterleri: Erişkin başlangıçlı Still hastalığı — majör, minör ve dışlama kriterleri. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/yamaguchi" },
+  manifest: "/manifest/arac/yamaguchi",
   openGraph: {
     type: "website",
     title: "Yamaguchi Kriterleri — Erişkin başlangıçlı Still",

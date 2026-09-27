@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Hachinski İskemik Skoru — Vasküler ve dejeneratif",
   description: "Hachinski İskemik Skoru: Vasküler ve dejeneratif demans ayrımı — 13 madde, 0–18. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/hachinski" },
+  manifest: "/manifest/arac/hachinski",
   openGraph: {
     type: "website",
     title: "Hachinski İskemik Skoru — Vasküler ve dejeneratif",

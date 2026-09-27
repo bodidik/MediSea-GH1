@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "PaP Score — Palyatif Prognostik Skor",
   description: "PaP Score: Palyatif Prognostik Skor — 30 günlük sağkalım (Grup A/B/C). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/pap-score" },
+  manifest: "/manifest/arac/pap-score",
   openGraph: {
     type: "website",
     title: "PaP Score — Palyatif Prognostik Skor",

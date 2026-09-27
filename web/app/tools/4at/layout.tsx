@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "4AT — Serviste hızlı deliryum taraması",
   description: "4AT: Serviste hızlı deliryum taraması — uyanıklık, AMT4, dikkat, akut değişiklik. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/4at" },
+  manifest: "/manifest/arac/4at",
   openGraph: {
     type: "website",
     title: "4AT — Serviste hızlı deliryum taraması",

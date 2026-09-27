@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "İnfüzyon Hesaplama — IV doz ve damla sayısı asistanı",
   description: "İnfüzyon Hesaplama: IV doz ve damla sayısı asistanı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/infusion" },
+  manifest: "/manifest/arac/infusion",
   openGraph: {
     type: "website",
     title: "İnfüzyon Hesaplama — IV doz ve damla sayısı asistanı",

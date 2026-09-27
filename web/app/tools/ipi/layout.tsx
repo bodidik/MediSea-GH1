@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "IPI Skoru — Uluslararası Prognostik İndeks",
   description: "IPI Skoru: Uluslararası Prognostik İndeks — agresif NHL / DLBCL (0–5 puan, 5 yıllık OS). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ipi" },
+  manifest: "/manifest/arac/ipi",
   openGraph: {
     type: "website",
     title: "IPI Skoru — Uluslararası Prognostik İndeks",

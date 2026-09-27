@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Hepatorenal Sendrom (HRS-AKI) — ICA tanı ölçütleri ve",
   description: "Hepatorenal Sendrom (HRS-AKI): ICA tanı ölçütleri ve ICA-AKI evrelemesi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/hrs-aki" },
+  manifest: "/manifest/arac/hrs-aki",
   openGraph: {
     type: "website",
     title: "Hepatorenal Sendrom (HRS-AKI) — ICA tanı ölçütleri ve",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Fomepizol Dozu — Metanol ve etilen glikol",
   description: "Fomepizol Dozu: Metanol ve etilen glikol zehirlenmesinde yükleme ve idame dozları — diyaliz aralığı dahil. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/fomepizol" },
+  manifest: "/manifest/arac/fomepizol",
   openGraph: {
     type: "website",
     title: "Fomepizol Dozu — Metanol ve etilen glikol",

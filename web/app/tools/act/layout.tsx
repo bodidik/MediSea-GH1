@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ACT — Astım Kontrol Testi",
   description: "ACT: Astım Kontrol Testi — 5 soru, kontrolsüz/iyi kontrol/tam kontrol. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/act" },
+  manifest: "/manifest/arac/act",
   openGraph: {
     type: "website",
     title: "ACT — Astım Kontrol Testi",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Lawton IADL — Enstrümental günlük yaşam aktiviteleri",
   description: "Lawton IADL: Enstrümental günlük yaşam aktiviteleri — 8 madde (alışveriş, ilaç, finans). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/lawton-iadl" },
+  manifest: "/manifest/arac/lawton-iadl",
   openGraph: {
     type: "website",
     title: "Lawton IADL — Enstrümental günlük yaşam aktiviteleri",

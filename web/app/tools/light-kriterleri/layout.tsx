@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Light Kriterleri — Plevral sıvı eksüda/transüda ayrımı",
   description: "Light Kriterleri: Plevral sıvı eksüda/transüda ayrımı — diüretik altında albümin gradyanı düzeltmesi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/light-kriterleri" },
+  manifest: "/manifest/arac/light-kriterleri",
   openGraph: {
     type: "website",
     title: "Light Kriterleri — Plevral sıvı eksüda/transüda ayrımı",

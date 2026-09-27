@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ELN 2022 AML Genetik Riski — Akut miyeloid lösemide",
   description: "ELN 2022 AML Genetik Riski: Akut miyeloid lösemide sitogenetik ve moleküler bulgulardan iyi/orta/kötü risk. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/eln-2022-aml" },
+  manifest: "/manifest/arac/eln-2022-aml",
   openGraph: {
     type: "website",
     title: "ELN 2022 AML Genetik Riski — Akut miyeloid lösemide",

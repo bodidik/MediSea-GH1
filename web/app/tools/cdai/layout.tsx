@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "CDAI — Klinik Hastalık Aktivite İndeksi",
   description: "CDAI: Klinik Hastalık Aktivite İndeksi — RA (lab gerektirmez). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/cdai" },
+  manifest: "/manifest/arac/cdai",
   openGraph: {
     type: "website",
     title: "CDAI — Klinik Hastalık Aktivite İndeksi",

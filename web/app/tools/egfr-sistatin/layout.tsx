@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Sistatin C ile eGFR — CKD-EPI 2012 sistatin ve",
   description: "Sistatin C ile eGFR: CKD-EPI 2012 sistatin ve 2021 kreatinin-sistatin denklemleri. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/egfr-sistatin" },
+  manifest: "/manifest/arac/egfr-sistatin",
   openGraph: {
     type: "website",
     title: "Sistatin C ile eGFR — CKD-EPI 2012 sistatin ve",

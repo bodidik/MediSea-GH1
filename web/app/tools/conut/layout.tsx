@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "CONUT — Controlling Nutritional Status",
   description: "CONUT: Controlling Nutritional Status — albumin + kolesterol + lenfosit. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/conut" },
+  manifest: "/manifest/arac/conut",
   openGraph: {
     type: "website",
     title: "CONUT — Controlling Nutritional Status",

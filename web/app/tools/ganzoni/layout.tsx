@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Ganzoni Demir Açığı — Parenteral demir için toplam",
   description: "Ganzoni Demir Açığı: Parenteral demir için toplam demir açığı (mg) — Hb, kilo ve depo demiri. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ganzoni" },
+  manifest: "/manifest/arac/ganzoni",
   openGraph: {
     type: "website",
     title: "Ganzoni Demir Açığı — Parenteral demir için toplam",

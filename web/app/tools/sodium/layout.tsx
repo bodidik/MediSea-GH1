@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Sodyum Yönetimi — TBW · Hiponatremi · Hipernatremi",
   description: "Sodyum Yönetimi: TBW · Hiponatremi · Hipernatremi düzeltme hızı ve hacim hesabı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/sodium" },
+  manifest: "/manifest/arac/sodium",
   openGraph: {
     type: "website",
     title: "Sodyum Yönetimi — TBW · Hiponatremi · Hipernatremi",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "GOLD KOAH Sınıflaması — Spirometrik derece GOLD 1–4 ve",
   description: "GOLD KOAH Sınıflaması: Spirometrik derece GOLD 1–4 ve ABE grubu — FEV1/FVC ≥ 0,70 ise sınıflamaz. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/gold-koah" },
+  manifest: "/manifest/arac/gold-koah",
   openGraph: {
     type: "website",
     title: "GOLD KOAH Sınıflaması — Spirometrik derece GOLD 1–4 ve",

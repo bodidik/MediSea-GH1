@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Tinetti POMA — Denge ve yürüme değerlendirmesi",
   description: "Tinetti POMA: Denge ve yürüme değerlendirmesi — düşme riski (0–28). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/tinetti" },
+  manifest: "/manifest/arac/tinetti",
   openGraph: {
     type: "website",
     title: "Tinetti POMA — Denge ve yürüme değerlendirmesi",

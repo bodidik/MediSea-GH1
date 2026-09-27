@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "DLQI — Dermatoloji Yaşam Kalitesi İndeksi",
   description: "DLQI: Dermatoloji Yaşam Kalitesi İndeksi — 10 madde, 0–30. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/dlqi" },
+  manifest: "/manifest/arac/dlqi",
   openGraph: {
     type: "website",
     title: "DLQI — Dermatoloji Yaşam Kalitesi İndeksi",

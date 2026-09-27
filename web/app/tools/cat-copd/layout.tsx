@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "CAT Skoru — KOAH Değerlendirme Testi",
   description: "CAT Skoru: KOAH Değerlendirme Testi — 8 Likert maddesi, semptom yükü. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/cat-copd" },
+  manifest: "/manifest/arac/cat-copd",
   openGraph: {
     type: "website",
     title: "CAT Skoru — KOAH Değerlendirme Testi",

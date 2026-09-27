@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "MRC Toplam Kas Gücü — 12 kas grubu, 0–60",
   description: "MRC Toplam Kas Gücü: 12 kas grubu, 0–60 — YBÜ-kazanılmış güçsüzlük (< 48). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/mrc-kas-gucu" },
+  manifest: "/manifest/arac/mrc-kas-gucu",
   openGraph: {
     type: "website",
     title: "MRC Toplam Kas Gücü — 12 kas grubu, 0–60",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "GNRI — Geriyatrik Nütrisyon Risk İndeksi",
   description: "GNRI: Geriyatrik Nütrisyon Risk İndeksi — albumin + ideal ağırlık. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/gnri" },
+  manifest: "/manifest/arac/gnri",
   openGraph: {
     type: "website",
     title: "GNRI — Geriyatrik Nütrisyon Risk İndeksi",

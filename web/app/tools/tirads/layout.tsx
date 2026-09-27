@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ACR TI-RADS — Tiroid nodülü US değerlendirme",
   description: "ACR TI-RADS: Tiroid nodülü US değerlendirme — kompozisyon, ekojenite, şekil, sınır, odaklar + İİAB kararı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/tirads" },
+  manifest: "/manifest/arac/tirads",
   openGraph: {
     type: "website",
     title: "ACR TI-RADS — Tiroid nodülü US değerlendirme",

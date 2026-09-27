@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "CHA₂DS₂-VASc Skoru — AF'de inme riski hesaplama",
   description: "CHA₂DS₂-VASc Skoru: AF'de inme riski hesaplama. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/chads-vasc" },
+  manifest: "/manifest/arac/chads-vasc",
   openGraph: {
     type: "website",
     title: "CHA₂DS₂-VASc Skoru — AF'de inme riski hesaplama",

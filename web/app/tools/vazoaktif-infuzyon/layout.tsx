@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Vazoaktif İnfüzyon — Nitrogliserin, nitroprussid",
   description: "Vazoaktif İnfüzyon: Nitrogliserin, nitroprussid, noradrenalin ve 5 ajan daha — doz ile pompa hızı arasında çevrim… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/vazoaktif-infuzyon" },
+  manifest: "/manifest/arac/vazoaktif-infuzyon",
   openGraph: {
     type: "website",
     title: "Vazoaktif İnfüzyon — Nitrogliserin, nitroprussid",

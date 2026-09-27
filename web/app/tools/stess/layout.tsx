@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "STESS — Status epileptikus şiddet skoru",
   description: "STESS: Status epileptikus şiddet skoru — hastanede ölüm öngörüsü (≥ 3 olumsuz). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/stess" },
+  manifest: "/manifest/arac/stess",
   openGraph: {
     type: "website",
     title: "STESS — Status epileptikus şiddet skoru",

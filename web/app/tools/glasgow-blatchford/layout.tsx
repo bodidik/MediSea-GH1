@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Glasgow-Blatchford Skoru — Üst GİS kanaması",
   description: "Glasgow-Blatchford Skoru: Üst GİS kanaması — endoskopi öncesi risk. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/glasgow-blatchford" },
+  manifest: "/manifest/arac/glasgow-blatchford",
   openGraph: {
     type: "website",
     title: "Glasgow-Blatchford Skoru — Üst GİS kanaması",

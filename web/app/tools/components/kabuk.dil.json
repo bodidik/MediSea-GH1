@@ -11,7 +11,8 @@
     "kopyalandiNot": "Araç bağlantısı kopyalandı. Girdiğin değerler bağlantıyla taşınmaz.",
     "sonuc": "Sonuç",
     "sonucDuyuru": "Sonuç: {metin}",
-    "sonucaGit": "Sonuca git"
+    "sonucaGit": "Sonuca git",
+    "anaEkran": "Ana ekrana ekle"
   },
   "en": {
     "atla": "Skip to calculator",
@@ -25,6 +26,7 @@
     "kopyalandiNot": "Calculator link copied. The values you entered are not included in the link.",
     "sonuc": "Result",
     "sonucDuyuru": "Result: {metin}",
-    "sonucaGit": "Go to result"
+    "sonucaGit": "Go to result",
+    "anaEkran": "Add to home screen"
   }
 }

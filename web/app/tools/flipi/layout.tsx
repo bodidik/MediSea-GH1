@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "FLIPI — Foliküler lenfoma prognoz indeksi",
   description: "FLIPI: Foliküler lenfoma prognoz indeksi — 0–5 puan, 10 yıllık OS / PF. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/flipi" },
+  manifest: "/manifest/arac/flipi",
   openGraph: {
     type: "website",
     title: "FLIPI — Foliküler lenfoma prognoz indeksi",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "CLL-IPI — Kronik lenfositik lösemi prognostik indeksi",
   description: "CLL-IPI: Kronik lenfositik lösemi prognostik indeksi — TP53, IGHV, β2M, evre, yaş. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/cll-ipi" },
+  manifest: "/manifest/arac/cll-ipi",
   openGraph: {
     type: "website",
     title: "CLL-IPI — Kronik lenfositik lösemi prognostik indeksi",

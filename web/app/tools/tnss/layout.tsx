@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "TNSS — Total Nazal Semptom Skoru",
   description: "TNSS: Total Nazal Semptom Skoru — 4 semptom, 0–12. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/tnss" },
+  manifest: "/manifest/arac/tnss",
   openGraph: {
     type: "website",
     title: "TNSS — Total Nazal Semptom Skoru",

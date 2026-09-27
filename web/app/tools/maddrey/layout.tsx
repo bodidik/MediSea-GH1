@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Maddrey Diskriminan Fonksiyonu — Alkolik hepatitte",
   description: "Maddrey Diskriminan Fonksiyonu: Alkolik hepatitte şiddet — ≥ 32 kortikosteroid değerlendirmesi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/maddrey" },
+  manifest: "/manifest/arac/maddrey",
   openGraph: {
     type: "website",
     title: "Maddrey Diskriminan Fonksiyonu — Alkolik hepatitte",

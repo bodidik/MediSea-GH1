@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "RAPID3 — Rutin Değerlendirme 3 Hasta Ölçütü",
   description: "RAPID3: Rutin Değerlendirme 3 Hasta Ölçütü — HAQ-DI + ağrı + global. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/rapid3" },
+  manifest: "/manifest/arac/rapid3",
   openGraph: {
     type: "website",
     title: "RAPID3 — Rutin Değerlendirme 3 Hasta Ölçütü",

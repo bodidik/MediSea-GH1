@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Kalsiyum/Kreatinin Klirens Oranı — FHH ile primer",
   description: "Kalsiyum/Kreatinin Klirens Oranı: FHH ile primer hiperparatiroidi ayrımı — CCCR. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/cccr" },
+  manifest: "/manifest/arac/cccr",
   openGraph: {
     type: "website",
     title: "Kalsiyum/Kreatinin Klirens Oranı — FHH ile primer",

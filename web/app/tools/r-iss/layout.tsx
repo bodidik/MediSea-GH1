@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "R-ISS — Multipl miyelom revize uluslararası evreleme",
   description: "R-ISS: Multipl miyelom revize uluslararası evreleme — β2M, albümin, LDH, FISH. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/r-iss" },
+  manifest: "/manifest/arac/r-iss",
   openGraph: {
     type: "website",
     title: "R-ISS — Multipl miyelom revize uluslararası evreleme",

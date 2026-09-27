@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "H₂FPEF Skoru — Korunmuş EF'li kalp yetmezliği (HFpEF)",
   description: "H₂FPEF Skoru: Korunmuş EF'li kalp yetmezliği (HFpEF) olasılığı — 0–9. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/h2fpef" },
+  manifest: "/manifest/arac/h2fpef",
   openGraph: {
     type: "website",
     title: "H₂FPEF Skoru — Korunmuş EF'li kalp yetmezliği (HFpEF)",

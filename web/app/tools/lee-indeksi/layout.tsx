@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Lee Prognostik İndeksi — Toplumda yaşayan yaşlıda",
   description: "Lee Prognostik İndeksi: Toplumda yaşayan yaşlıda 4 yıllık mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/lee-indeksi" },
+  manifest: "/manifest/arac/lee-indeksi",
   openGraph: {
     type: "website",
     title: "Lee Prognostik İndeksi — Toplumda yaşayan yaşlıda",

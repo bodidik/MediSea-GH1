@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "RAPID Skoru — Plevral enfeksiyonda 3 aylık mortalite",
   description: "RAPID Skoru: Plevral enfeksiyonda 3 aylık mortalite riski — 0–7. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/rapid-plevral" },
+  manifest: "/manifest/arac/rapid-plevral",
   openGraph: {
     type: "website",
     title: "RAPID Skoru — Plevral enfeksiyonda 3 aylık mortalite",

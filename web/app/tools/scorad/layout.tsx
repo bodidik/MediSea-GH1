@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "SCORAD — Atopik dermatit şiddet skoru",
   description: "SCORAD: Atopik dermatit şiddet skoru — alan + yoğunluk + subjektif. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/scorad" },
+  manifest: "/manifest/arac/scorad",
   openGraph: {
     type: "website",
     title: "SCORAD — Atopik dermatit şiddet skoru",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Kalsiyum İnfüzyonu — Glukonat/klorür dönüşümü",
   description: "Kalsiyum İnfüzyonu: Glukonat/klorür dönüşümü — aynı ampul üç kat farklı elementer kalsiyum taşır. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/kalsiyum-infuzyon" },
+  manifest: "/manifest/arac/kalsiyum-infuzyon",
   openGraph: {
     type: "website",
     title: "Kalsiyum İnfüzyonu — Glukonat/klorür dönüşümü",

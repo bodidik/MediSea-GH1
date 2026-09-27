@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "PSI/PORT Skoru — Pnömonide 30 günlük mortalite tahmini",
   description: "PSI/PORT Skoru: Pnömonide 30 günlük mortalite tahmini. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/psi-port" },
+  manifest: "/manifest/arac/psi-port",
   openGraph: {
     type: "website",
     title: "PSI/PORT Skoru — Pnömonide 30 günlük mortalite tahmini",

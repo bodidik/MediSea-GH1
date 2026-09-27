@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Duke Koşu Bandı Skoru — Egzersiz EKG testinde prognoz",
   description: "Duke Koşu Bandı Skoru: Egzersiz EKG testinde prognoz — süre, ST sapması, angina indeksi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/duke-kosu-bandi" },
+  manifest: "/manifest/arac/duke-kosu-bandi",
   openGraph: {
     type: "website",
     title: "Duke Koşu Bandı Skoru — Egzersiz EKG testinde prognoz",

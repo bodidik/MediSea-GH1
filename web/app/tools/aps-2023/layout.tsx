@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ACR/EULAR 2023 APS Kriterleri — Antifosfolipid sendromu",
   description: "ACR/EULAR 2023 APS Kriterleri: Antifosfolipid sendromu sınıflaması — klinik ≥ 3 ve laboratuvar ≥ 3 puan. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/aps-2023" },
+  manifest: "/manifest/arac/aps-2023",
   openGraph: {
     type: "website",
     title: "ACR/EULAR 2023 APS Kriterleri — Antifosfolipid sendromu",

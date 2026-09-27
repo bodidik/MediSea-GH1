@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "CISNE Skoru — Stabil febril nötropenide komplikasyon",
   description: "CISNE Skoru: Stabil febril nötropenide komplikasyon riski — 0–8, MASCC'i tamamlar. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/cisne" },
+  manifest: "/manifest/arac/cisne",
   openGraph: {
     type: "website",
     title: "CISNE Skoru — Stabil febril nötropenide komplikasyon",

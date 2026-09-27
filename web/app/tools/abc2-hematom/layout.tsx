@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ABC/2 Hematom Hacmi — İntraserebral kanamada BT'den",
   description: "ABC/2 Hematom Hacmi: İntraserebral kanamada BT'den hacim — ağırlıklı kesit sayımıyla. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/abc2-hematom" },
+  manifest: "/manifest/arac/abc2-hematom",
   openGraph: {
     type: "website",
     title: "ABC/2 Hematom Hacmi — İntraserebral kanamada BT'den",

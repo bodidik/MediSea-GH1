@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "IPSS-R — MDS Revize Prognostik Skorlama",
   description: "IPSS-R: MDS Revize Prognostik Skorlama — sitogenetik + blast + CBC parametreleri. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ipss-r" },
+  manifest: "/manifest/arac/ipss-r",
   openGraph: {
     type: "website",
     title: "IPSS-R — MDS Revize Prognostik Skorlama",

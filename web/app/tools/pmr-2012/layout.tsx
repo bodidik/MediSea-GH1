@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "EULAR/ACR 2012 PMR Kriterleri — Polimiyalji romatika",
   description: "EULAR/ACR 2012 PMR Kriterleri: Polimiyalji romatika sınıflaması — ultrasonsuz ≥ 4, ultrasonla ≥ 5. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/pmr-2012" },
+  manifest: "/manifest/arac/pmr-2012",
   openGraph: {
     type: "website",
     title: "EULAR/ACR 2012 PMR Kriterleri — Polimiyalji romatika",

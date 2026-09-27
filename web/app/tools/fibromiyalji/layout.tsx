@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Fibromiyalji 2016",
   description: "Fibromiyalji 2016: ACR 2016 — WPI + Semptom Şiddet Skalası tanı kriterleri. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/fibromiyalji" },
+  manifest: "/manifest/arac/fibromiyalji",
   openGraph: {
     type: "website",
     title: "Fibromiyalji 2016",

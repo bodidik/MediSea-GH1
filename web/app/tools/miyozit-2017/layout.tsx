@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "EULAR/ACR 2017 Miyozit Kriterleri — İdiyopatik",
   description: "EULAR/ACR 2017 Miyozit Kriterleri: İdiyopatik inflamatuvar miyopati olasılığı — biyopsili ve biyopsisiz ağırlıklar. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/miyozit-2017" },
+  manifest: "/manifest/arac/miyozit-2017",
   openGraph: {
     type: "website",
     title: "EULAR/ACR 2017 Miyozit Kriterleri — İdiyopatik",

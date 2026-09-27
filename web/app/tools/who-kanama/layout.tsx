@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "WHO Kanama Ölçeği — Trombositopenide kanama derecesi 0–4",
   description: "WHO Kanama Ölçeği: Trombositopenide kanama derecesi 0–4 — en ağır bulgu belirler. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/who-kanama" },
+  manifest: "/manifest/arac/who-kanama",
   openGraph: {
     type: "website",
     title: "WHO Kanama Ölçeği — Trombositopenide kanama derecesi 0–4",

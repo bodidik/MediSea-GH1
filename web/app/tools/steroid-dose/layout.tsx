@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Steroid Eşdeğer Doz — Kortikosteroid dönüşüm tablosu",
   description: "Steroid Eşdeğer Doz: Kortikosteroid dönüşüm tablosu. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/steroid-dose" },
+  manifest: "/manifest/arac/steroid-dose",
   openGraph: {
     type: "website",
     title: "Steroid Eşdeğer Doz — Kortikosteroid dönüşüm tablosu",

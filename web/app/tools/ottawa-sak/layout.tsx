@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Ottawa SAK Kuralı — Akut baş ağrısında subaraknoid",
   description: "Ottawa SAK Kuralı: Akut baş ağrısında subaraknoid kanama araştırma kararı — 6 ölçüt. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ottawa-sak" },
+  manifest: "/manifest/arac/ottawa-sak",
   openGraph: {
     type: "website",
     title: "Ottawa SAK Kuralı — Akut baş ağrısında subaraknoid",

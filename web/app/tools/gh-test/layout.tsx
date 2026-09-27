@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Büyüme Hormonu Testleri — GH eksikliği stimülasyon",
   description: "Büyüme Hormonu Testleri: GH eksikliği stimülasyon (ITT/glukagon) & akromegali OGTT süpresyonu. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/gh-test" },
+  manifest: "/manifest/arac/gh-test",
   openGraph: {
     type: "website",
     title: "Büyüme Hormonu Testleri — GH eksikliği stimülasyon",

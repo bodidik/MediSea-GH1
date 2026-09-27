@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Child-Pugh Sınıflaması — Siroz şiddet ve prognozu",
   description: "Child-Pugh Sınıflaması: Siroz şiddet ve prognozu. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/child-pugh" },
+  manifest: "/manifest/arac/child-pugh",
   openGraph: {
     type: "website",
     title: "Child-Pugh Sınıflaması — Siroz şiddet ve prognozu",

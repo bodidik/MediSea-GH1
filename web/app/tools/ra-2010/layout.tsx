@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ACR/EULAR 2010 RA Kriterleri — Romatoid artrit",
   description: "ACR/EULAR 2010 RA Kriterleri: Romatoid artrit sınıflaması — eklem, seroloji, akut faz, süre (≥ 6). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ra-2010" },
+  manifest: "/manifest/arac/ra-2010",
   openGraph: {
     type: "website",
     title: "ACR/EULAR 2010 RA Kriterleri — Romatoid artrit",

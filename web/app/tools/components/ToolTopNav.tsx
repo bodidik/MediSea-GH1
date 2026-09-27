@@ -9,6 +9,7 @@ import { siteIciGecmisVar } from "@/app/lib/gecmis";
 import { sozluk } from "@/lib/dil";
 import { useDil } from "@/app/components/DilBaglami";
 import DilDegistir from "@/app/components/DilDegistir";
+import AnaEkranaEkle from "@/app/components/AnaEkranaEkle";
 import kabuk from "@/app/tools/components/kabuk.dil.json";
 
 const M = sozluk(kabuk);
@@ -117,6 +118,13 @@ export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
 
       {/* Yalnızca öteki dilde karşılığı olan araçta çizilir (bkz. lib/dil.ts). */}
       <DilDegistir className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-blue-900 hover:border-blue-900/30 transition-all shadow-sm" />
+
+      {/* Yalnızca tarayıcı kurulum sunabildiğinde çizilir; kurulan simge
+          ana sayfaya değil BU araca açılır (araç başına manifest). */}
+      <AnaEkranaEkle
+        etiket={t.anaEkran}
+        className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-blue-900 hover:border-blue-900/30 transition-all shadow-sm"
+      />
       </nav>
 
       {/* Atlama hedefi. tabIndex=-1 şart: odaklanabilir olmayan bir öğeye

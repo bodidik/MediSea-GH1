@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "CRUSADE Kanama Skoru — NSTEMI'de hastane içi majör",
   description: "CRUSADE Kanama Skoru: NSTEMI'de hastane içi majör kanama riski — 8 değişken. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/crusade" },
+  manifest: "/manifest/arac/crusade",
   openGraph: {
     type: "website",
     title: "CRUSADE Kanama Skoru — NSTEMI'de hastane içi majör",

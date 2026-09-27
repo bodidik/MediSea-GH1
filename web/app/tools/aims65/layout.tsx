@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "AIMS65 — Üst GİS kanamasında hastane mortalitesi",
   description: "AIMS65: Üst GİS kanamasında hastane mortalitesi — 0–5. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/aims65" },
+  manifest: "/manifest/arac/aims65",
   openGraph: {
     type: "website",
     title: "AIMS65 — Üst GİS kanamasında hastane mortalitesi",

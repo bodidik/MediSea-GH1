@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "PESI ve sPESI — Pulmoner emboli 30 günlük mortalite",
   description: "PESI ve sPESI: Pulmoner emboli 30 günlük mortalite — PESI sınıf I–V ve sPESI aynı yanıtlardan. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/pesi" },
+  manifest: "/manifest/arac/pesi",
   openGraph: {
     type: "website",
     title: "PESI ve sPESI — Pulmoner emboli 30 günlük mortalite",

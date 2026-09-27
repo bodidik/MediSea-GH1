@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "GDS-15 — Geriatrik Depresyon Ölçeği kısa form",
   description: "GDS-15: Geriatrik Depresyon Ölçeği kısa form — 15 madde tarama aracı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/gds-15" },
+  manifest: "/manifest/arac/gds-15",
   openGraph: {
     type: "website",
     title: "GDS-15 — Geriatrik Depresyon Ölçeği kısa form",

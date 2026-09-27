@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "CURB-65 Skoru — Toplum kökenli pnömoni triyaj kararı",
   description: "CURB-65 Skoru: Toplum kökenli pnömoni triyaj kararı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/curb65" },
+  manifest: "/manifest/arac/curb65",
   openGraph: {
     type: "website",
     title: "CURB-65 Skoru — Toplum kökenli pnömoni triyaj kararı",

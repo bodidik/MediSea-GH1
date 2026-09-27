@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Glasgow Koma Skalası — Bilinç düzeyi değerlendirmesi",
   description: "Glasgow Koma Skalası: Bilinç düzeyi değerlendirmesi (E+V+M). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/gcs" },
+  manifest: "/manifest/arac/gcs",
   openGraph: {
     type: "website",
     title: "Glasgow Koma Skalası — Bilinç düzeyi değerlendirmesi",

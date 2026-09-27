@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "MUST — Malnutrition Universal Screening Tool",
   description: "MUST: Malnutrition Universal Screening Tool — toplum & poliklinik. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/must" },
+  manifest: "/manifest/arac/must",
   openGraph: {
     type: "website",
     title: "MUST — Malnutrition Universal Screening Tool",

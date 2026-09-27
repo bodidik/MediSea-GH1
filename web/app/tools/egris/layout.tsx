@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "EGRIS — Guillain-Barré'de ilk haftada mekanik",
   description: "EGRIS: Guillain-Barré'de ilk haftada mekanik ventilasyon riski — 0–7. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/egris" },
+  manifest: "/manifest/arac/egris",
   openGraph: {
     type: "website",
     title: "EGRIS — Guillain-Barré'de ilk haftada mekanik",

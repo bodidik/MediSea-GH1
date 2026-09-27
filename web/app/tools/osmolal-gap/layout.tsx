@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Serum Osmolal Gap — Ölçülen − hesaplanan osmolalite",
   description: "Serum Osmolal Gap: Ölçülen − hesaplanan osmolalite · toksik alkol taraması · tahmini madde düzeyleri. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/osmolal-gap" },
+  manifest: "/manifest/arac/osmolal-gap",
   openGraph: {
     type: "website",
     title: "Serum Osmolal Gap — Ölçülen − hesaplanan osmolalite",

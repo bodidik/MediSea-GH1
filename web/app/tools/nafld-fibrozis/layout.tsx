@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "NAFLD Fibrozis Skoru — Yağlı karaciğerde ileri fibroz",
   description: "NAFLD Fibrozis Skoru: Yağlı karaciğerde ileri fibroz olasılığı — yaş, BKİ, glukoz, AST/ALT, trombosit, albümin. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/nafld-fibrozis" },
+  manifest: "/manifest/arac/nafld-fibrozis",
   openGraph: {
     type: "website",
     title: "NAFLD Fibrozis Skoru — Yağlı karaciğerde ileri fibroz",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "DIPSS — Primer miyelofibrozda dinamik prognostik skor",
   description: "DIPSS: Primer miyelofibrozda dinamik prognostik skor — medyan sağkalım. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/dipss" },
+  manifest: "/manifest/arac/dipss",
   openGraph: {
     type: "website",
     title: "DIPSS — Primer miyelofibrozda dinamik prognostik skor",

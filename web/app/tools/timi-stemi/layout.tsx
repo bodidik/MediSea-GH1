@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "TIMI Risk Skoru (STEMI) — ST yükselmeli MI'da 30 günlük",
   description: "TIMI Risk Skoru (STEMI): ST yükselmeli MI'da 30 günlük mortalite — 8 değişken, 0–14. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/timi-stemi" },
+  manifest: "/manifest/arac/timi-stemi",
   openGraph: {
     type: "website",
     title: "TIMI Risk Skoru (STEMI) — ST yükselmeli MI'da 30 günlük",

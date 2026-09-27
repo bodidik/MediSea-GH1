@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "MASCC Risk İndeksi — Febril nötropenide komplikasyon",
   description: "MASCC Risk İndeksi: Febril nötropenide komplikasyon riski. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/mascc" },
+  manifest: "/manifest/arac/mascc",
   openGraph: {
     type: "website",
     title: "MASCC Risk İndeksi — Febril nötropenide komplikasyon",

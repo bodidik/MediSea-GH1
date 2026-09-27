@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "BASDAI — Bath Ankilozan Spondilit Hastalık Aktivite",
   description: "BASDAI: Bath Ankilozan Spondilit Hastalık Aktivite İndeksi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/basdai" },
+  manifest: "/manifest/arac/basdai",
   openGraph: {
     type: "website",
     title: "BASDAI — Bath Ankilozan Spondilit Hastalık Aktivite",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Epworth Uykululuk Ölçeği — Aşırı gündüz uykululuğu",
   description: "Epworth Uykululuk Ölçeği: Aşırı gündüz uykululuğu — 8 durum, 0–24. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/epworth" },
+  manifest: "/manifest/arac/epworth",
   openGraph: {
     type: "website",
     title: "Epworth Uykululuk Ölçeği — Aşırı gündüz uykululuğu",

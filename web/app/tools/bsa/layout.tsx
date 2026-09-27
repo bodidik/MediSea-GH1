@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Vücut Yüzey Alanı (BSA) — Mosteller formülü",
   description: "Vücut Yüzey Alanı (BSA): Mosteller formülü — kemoterapi dozlama. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/bsa" },
+  manifest: "/manifest/arac/bsa",
   openGraph: {
     type: "website",
     title: "Vücut Yüzey Alanı (BSA) — Mosteller formülü",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "PNI — Prognostik Nütrisyon İndeksi",
   description: "PNI: Prognostik Nütrisyon İndeksi — albumin + lenfosit. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/pni" },
+  manifest: "/manifest/arac/pni",
   openGraph: {
     type: "website",
     title: "PNI — Prognostik Nütrisyon İndeksi",

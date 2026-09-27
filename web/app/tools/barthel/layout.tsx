@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Barthel ADL İndeksi — Günlük yaşam aktiviteleri",
   description: "Barthel ADL İndeksi: Günlük yaşam aktiviteleri — fonksiyonel bağımsızlık değerlendirmesi (0–100). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/barthel" },
+  manifest: "/manifest/arac/barthel",
   openGraph: {
     type: "website",
     title: "Barthel ADL İndeksi — Günlük yaşam aktiviteleri",

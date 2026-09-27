@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Asit-Baz Analizi (ABG) — Mikst bozukluk ayrımı · pH",
   description: "Asit-Baz Analizi (ABG): Mikst bozukluk ayrımı · pH normalken bile gizli asidoz · kompansasyon · anyon açığı… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/abg" },
+  manifest: "/manifest/arac/abg",
   openGraph: {
     type: "website",
     title: "Asit-Baz Analizi (ABG) — Mikst bozukluk ayrımı · pH",

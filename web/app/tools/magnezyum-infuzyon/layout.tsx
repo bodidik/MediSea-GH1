@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Magnezyum İnfüzyonu — Endikasyona göre doz, süre ve",
   description: "Magnezyum İnfüzyonu: Endikasyona göre doz, süre ve pompa hızı — torsades ile replasman hızları zıt. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/magnezyum-infuzyon" },
+  manifest: "/manifest/arac/magnezyum-infuzyon",
   openGraph: {
     type: "website",
     title: "Magnezyum İnfüzyonu — Endikasyona göre doz, süre ve",

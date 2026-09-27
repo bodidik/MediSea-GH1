@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Tilburg Kırılganlık Göstergesi (TFI) — Fiziksel",
   description: "Tilburg Kırılganlık Göstergesi (TFI): Fiziksel, psikolojik ve sosyal boyut — 15 madde (≥ 5). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/tilburg-kirilganlik" },
+  manifest: "/manifest/arac/tilburg-kirilganlik",
   openGraph: {
     type: "website",
     title: "Tilburg Kırılganlık Göstergesi (TFI) — Fiziksel",

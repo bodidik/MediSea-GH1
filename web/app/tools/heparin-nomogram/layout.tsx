@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Heparin Nomogramı — Kiloya göre IV heparin yükleme ve",
   description: "Heparin Nomogramı: Kiloya göre IV heparin yükleme ve idame dozu — VTE ve AKS ayrı, tavanlar açıkça bildiriliyor. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/heparin-nomogram" },
+  manifest: "/manifest/arac/heparin-nomogram",
   openGraph: {
     type: "website",
     title: "Heparin Nomogramı — Kiloya göre IV heparin yükleme ve",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "G8 Tarama Aracı — Onkogeriatri taraması",
   description: "G8 Tarama Aracı: Onkogeriatri taraması — kapsamlı geriatrik değerlendirme gereksinimi (≤ 14). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/g8" },
+  manifest: "/manifest/arac/g8",
   openGraph: {
     type: "website",
     title: "G8 Tarama Aracı — Onkogeriatri taraması",

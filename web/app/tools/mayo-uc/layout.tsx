@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Ülseratif Kolit Mayo Skoru — Tam (endoskopili) ya da",
   description: "Ülseratif Kolit Mayo Skoru: Tam (endoskopili) ya da parsiyel Mayo — hastalık aktivitesi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/mayo-uc" },
+  manifest: "/manifest/arac/mayo-uc",
   openGraph: {
     type: "website",
     title: "Ülseratif Kolit Mayo Skoru — Tam (endoskopili) ya da",

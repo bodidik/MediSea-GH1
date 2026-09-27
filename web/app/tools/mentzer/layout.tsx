@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Mentzer İndeksi — Mikrositer anemide talasemi",
   description: "Mentzer İndeksi: Mikrositer anemide talasemi taşıyıcılığı ve demir eksikliği ayrımı — MCV / eritrosit. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/mentzer" },
+  manifest: "/manifest/arac/mentzer",
   openGraph: {
     type: "website",
     title: "Mentzer İndeksi — Mikrositer anemide talasemi",

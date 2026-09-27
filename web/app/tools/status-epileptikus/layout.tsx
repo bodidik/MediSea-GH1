@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Status Epileptikus — Yükleme dozları ve HIZ sınırları",
   description: "Status Epileptikus: Yükleme dozları ve HIZ sınırları — fenitoin 50 mg/dk aşılırsa hipotansiyon ve aritmi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/status-epileptikus" },
+  manifest: "/manifest/arac/status-epileptikus",
   openGraph: {
     type: "website",
     title: "Status Epileptikus — Yükleme dozları ve HIZ sınırları",

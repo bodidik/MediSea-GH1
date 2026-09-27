@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "24 Saatlik Kreatinin Klirensi — Ölçülmüş CrCl, 1,73 m²",
   description: "24 Saatlik Kreatinin Klirensi: Ölçülmüş CrCl, 1,73 m² normalizasyonu ve toplama yeterliliği. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/kreatinin-klirensi-24s" },
+  manifest: "/manifest/arac/kreatinin-klirensi-24s",
   openGraph: {
     type: "website",
     title: "24 Saatlik Kreatinin Klirensi — Ölçülmüş CrCl, 1,73 m²",

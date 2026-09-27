@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Digoksin Toksisitesi — Fab flakon sayısı",
   description: "Digoksin Toksisitesi: Fab flakon sayısı — düzey, alınan miktar ve ampirik: üç ayrı formül; Fab sonrası düzey… Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/digoksin-toksisitesi" },
+  manifest: "/manifest/arac/digoksin-toksisitesi",
   openGraph: {
     type: "website",
     title: "Digoksin Toksisitesi — Fab flakon sayısı",

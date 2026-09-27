@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "BISAP — Akut pankreatitte ilk 24 saatte yatak başı",
   description: "BISAP: Akut pankreatitte ilk 24 saatte yatak başı şiddet indeksi — 0–5, mortalite. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/bisap" },
+  manifest: "/manifest/arac/bisap",
   openGraph: {
     type: "website",
     title: "BISAP — Akut pankreatitte ilk 24 saatte yatak başı",

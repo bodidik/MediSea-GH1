@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "DKA ve HHS Sınıflaması — Hiperglisemik krizlerde tanı",
   description: "DKA ve HHS Sınıflaması: Hiperglisemik krizlerde tanı ve şiddet — 2024 uzlaşı ölçütleri, efektif osmolalite. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/dka-hhs" },
+  manifest: "/manifest/arac/dka-hhs",
   openGraph: {
     type: "website",
     title: "DKA ve HHS Sınıflaması — Hiperglisemik krizlerde tanı",

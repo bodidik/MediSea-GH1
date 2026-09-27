@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Refeeding Sendromu Riski — NICE kriterleri",
   description: "Refeeding Sendromu Riski: NICE kriterleri — beslenme başlatmada hipofosfatemi riski. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/refeeding-risk" },
+  manifest: "/manifest/arac/refeeding-risk",
   openGraph: {
     type: "website",
     title: "Refeeding Sendromu Riski — NICE kriterleri",

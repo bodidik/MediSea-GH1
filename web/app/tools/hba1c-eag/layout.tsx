@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "HbA1c → Ortalama Glukoz — Tahmini ortalama glukoz",
   description: "HbA1c → Ortalama Glukoz: Tahmini ortalama glukoz (ADA/NGSP). Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/hba1c-eag" },
+  manifest: "/manifest/arac/hba1c-eag",
   openGraph: {
     type: "website",
     title: "HbA1c → Ortalama Glukoz — Tahmini ortalama glukoz",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "GLIM Kriterleri — Küresel malnütrisyon tanı protokolü",
   description: "GLIM Kriterleri: Küresel malnütrisyon tanı protokolü. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/glim" },
+  manifest: "/manifest/arac/glim",
   openGraph: {
     type: "website",
     title: "GLIM Kriterleri — Küresel malnütrisyon tanı protokolü",

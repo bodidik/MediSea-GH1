@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "CNS-IPI — DBBHL'de 2 yıllık santral sinir sistemi nüks",
   description: "CNS-IPI: DBBHL'de 2 yıllık santral sinir sistemi nüks riski — 0–6. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/cns-ipi" },
+  manifest: "/manifest/arac/cns-ipi",
   openGraph: {
     type: "website",
     title: "CNS-IPI — DBBHL'de 2 yıllık santral sinir sistemi nüks",

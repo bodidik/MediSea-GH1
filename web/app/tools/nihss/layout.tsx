@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "NIHSS — NIH İnme Skalası",
   description: "NIHSS: NIH İnme Skalası — 11 alan, akut inme şiddet değerlendirmesi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/nihss" },
+  manifest: "/manifest/arac/nihss",
   openGraph: {
     type: "website",
     title: "NIHSS — NIH İnme Skalası",

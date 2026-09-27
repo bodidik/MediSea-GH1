@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Modifiye Rankin (mRS) — İnme sonrası işlevsel sonuç",
   description: "Modifiye Rankin (mRS): İnme sonrası işlevsel sonuç — 0–6 derece, yapılandırılmış görüşme çapraz kontrolü. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/rankin" },
+  manifest: "/manifest/arac/rankin",
   openGraph: {
     type: "website",
     title: "Modifiye Rankin (mRS) — İnme sonrası işlevsel sonuç",

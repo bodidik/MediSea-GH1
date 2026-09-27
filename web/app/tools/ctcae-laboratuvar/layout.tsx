@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "CTCAE Laboratuvar Derecelendirme — CTCAE v5.0",
   description: "CTCAE Laboratuvar Derecelendirme: CTCAE v5.0 — sitopeni, karaciğer ve böbrek değerlerinde derece 0–4. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/ctcae-laboratuvar" },
+  manifest: "/manifest/arac/ctcae-laboratuvar",
   openGraph: {
     type: "website",
     title: "CTCAE Laboratuvar Derecelendirme — CTCAE v5.0",

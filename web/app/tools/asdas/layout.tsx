@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ASDAS-CRP/ESR — Ankilozan Spondilit Hastalık Aktivite",
   description: "ASDAS-CRP/ESR: Ankilozan Spondilit Hastalık Aktivite Skoru. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/asdas" },
+  manifest: "/manifest/arac/asdas",
   openGraph: {
     type: "website",
     title: "ASDAS-CRP/ESR — Ankilozan Spondilit Hastalık Aktivite",

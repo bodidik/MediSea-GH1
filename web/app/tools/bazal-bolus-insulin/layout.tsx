@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Bazal-Bolus İnsülin Başlangıcı — Hastanede tip",
   description: "Bazal-Bolus İnsülin Başlangıcı: Hastanede tip 2 diyabette kiloya dayalı doz, düzeltme faktörü ve karbonhidrat oranı. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/bazal-bolus-insulin" },
+  manifest: "/manifest/arac/bazal-bolus-insulin",
   openGraph: {
     type: "website",
     title: "Bazal-Bolus İnsülin Başlangıcı — Hastanede tip",

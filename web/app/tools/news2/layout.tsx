@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "NEWS2 Skoru — Klinik kötüleşme erken uyarı sistemi",
   description: "NEWS2 Skoru: Klinik kötüleşme erken uyarı sistemi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/news2" },
+  manifest: "/manifest/arac/news2",
   openGraph: {
     type: "website",
     title: "NEWS2 Skoru — Klinik kötüleşme erken uyarı sistemi",

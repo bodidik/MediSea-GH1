@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Murray Skoru — Akciğer hasar skoru",
   description: "Murray Skoru: Akciğer hasar skoru — ARDS şiddet değerlendirmesi, ECMO eşiği ≥ 2.5. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/murray" },
+  manifest: "/manifest/arac/murray",
   openGraph: {
     type: "website",
     title: "Murray Skoru — Akciğer hasar skoru",

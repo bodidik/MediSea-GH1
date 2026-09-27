@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "NRS-2002 — Yatan hastalarda beslenme riski taraması",
   description: "NRS-2002: Yatan hastalarda beslenme riski taraması. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/nrs-2002" },
+  manifest: "/manifest/arac/nrs-2002",
   openGraph: {
     type: "website",
     title: "NRS-2002 — Yatan hastalarda beslenme riski taraması",

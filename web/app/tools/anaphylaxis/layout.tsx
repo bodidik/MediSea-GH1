@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Anafilaksi Kriterleri — NIAID/FAAN 3 kriter",
   description: "Anafilaksi Kriterleri: NIAID/FAAN 3 kriter — epinefrin endikasyonu. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/anaphylaxis" },
+  manifest: "/manifest/arac/anaphylaxis",
   openGraph: {
     type: "website",
     title: "Anafilaksi Kriterleri — NIAID/FAAN 3 kriter",

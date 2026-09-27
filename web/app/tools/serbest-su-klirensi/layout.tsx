@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Elektrolitsiz Serbest Su Klirensi — Hiponatremide Furst",
   description: "Elektrolitsiz Serbest Su Klirensi: Hiponatremide Furst oranı ve sıvı kısıtlaması hedefi. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/serbest-su-klirensi" },
+  manifest: "/manifest/arac/serbest-su-klirensi",
   openGraph: {
     type: "website",
     title: "Elektrolitsiz Serbest Su Klirensi — Hiponatremide Furst",

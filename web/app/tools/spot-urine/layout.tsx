@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Spot İdrar Hesaplamaları — PCR · ACR · FENa · FEÜre",
   description: "Spot İdrar Hesaplamaları: PCR · ACR · FENa · FEÜre · TTKG · İdrar Anyon Açığı · İdrar Osmolal Gap. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/spot-urine" },
+  manifest: "/manifest/arac/spot-urine",
   openGraph: {
     type: "website",
     title: "Spot İdrar Hesaplamaları — PCR · ACR · FENa · FEÜre",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Sedasyon & Analjezi İnfüzyonu — Yedi ilaç",
   description: "Sedasyon & Analjezi İnfüzyonu: Yedi ilaç — doz tabanı ilaca göre değişir; remifentanil tek dakika tabanlı olan. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/sedasyon-infuzyon" },
+  manifest: "/manifest/arac/sedasyon-infuzyon",
   openGraph: {
     type: "website",
     title: "Sedasyon & Analjezi İnfüzyonu — Yedi ilaç",

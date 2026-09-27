@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "ESSDAI — Sjögren Hastalık Aktivite İndeksi",
   description: "ESSDAI: Sjögren Hastalık Aktivite İndeksi — 12 ekstraglandüler domain. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/essdai" },
+  manifest: "/manifest/arac/essdai",
   openGraph: {
     type: "website",
     title: "ESSDAI — Sjögren Hastalık Aktivite İndeksi",

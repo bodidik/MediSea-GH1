@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Fisher Skalası — SAK'ta vazospazm riski",
   description: "Fisher Skalası: SAK'ta vazospazm riski — modifiye ve orijinal Fisher aynı BT bulgusundan. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/fisher" },
+  manifest: "/manifest/arac/fisher",
   openGraph: {
     type: "website",
     title: "Fisher Skalası — SAK'ta vazospazm riski",

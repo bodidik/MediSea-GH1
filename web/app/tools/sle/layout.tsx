@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "SLEDAI-2K — Lupus hastalık aktivite indeksi",
   description: "SLEDAI-2K: Lupus hastalık aktivite indeksi — 24 tanımlayıcı, 0–105. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/sle" },
+  manifest: "/manifest/arac/sle",
   openGraph: {
     type: "website",
     title: "SLEDAI-2K — Lupus hastalık aktivite indeksi",

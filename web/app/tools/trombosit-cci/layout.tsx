@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Trombosit Transfüzyonu CCI — Düzeltilmiş sayım artışı",
   description: "Trombosit Transfüzyonu CCI: Düzeltilmiş sayım artışı — trombosit transfüzyonuna refrakterlik. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/trombosit-cci" },
+  manifest: "/manifest/arac/trombosit-cci",
   openGraph: {
     type: "website",
     title: "Trombosit Transfüzyonu CCI — Düzeltilmiş sayım artışı",

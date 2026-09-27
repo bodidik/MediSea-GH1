@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Burch-Wartofsky Skalası — Tiroid fırtınası olasılığı",
   description: "Burch-Wartofsky Skalası: Tiroid fırtınası olasılığı — ateş, MSS, GİS, taşikardi, KY, AF, tetikleyici. Ücretsiz klinik hesaplayıcı — MediSea.",
   alternates: { canonical: "/tools/burch-wartofsky" },
+  manifest: "/manifest/arac/burch-wartofsky",
   openGraph: {
     type: "website",
     title: "Burch-Wartofsky Skalası — Tiroid fırtınası olasılığı",
