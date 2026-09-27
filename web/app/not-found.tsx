@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SPECIALTIES } from "@/app/lib/specialties";
+import { DalgaCizgisi, DumenSimgesi } from "@/app/components/DenizSusu";
 
 /**
  * Özel 404.
@@ -70,12 +71,14 @@ export default function BulunamadiSayfasi() {
           <div className="text-[10px] font-black text-blue-900/80 uppercase tracking-[0.3em] mb-2">
             404 · Sayfa bulunamadı
           </div>
+          <DumenSimgesi className="mb-3 h-10 w-10 text-blue-900" />
           <h1 className="text-3xl sm:text-4xl font-black uppercase italic tracking-tighter leading-none">
-            Aradığın sayfa burada değil
+            Rotadan çıktık
           </h1>
+          <DalgaCizgisi className="mt-3 max-w-[220px] text-sky-300" />
           <p className="text-slate-500 font-bold text-sm mt-4 max-w-xl leading-relaxed">
-            Adres değişmiş ya da sayfa hiç var olmamış olabilir. Aşağıdan
-            devam edebilirsin.
+            Aradığın sayfa bu limanda değil: adres değişmiş ya da sayfa hiç
+            var olmamış olabilir. Aşağıdaki rotalardan devam edebilirsin.
           </p>
         </div>
 
