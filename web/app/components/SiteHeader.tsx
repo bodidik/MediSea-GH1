@@ -596,8 +596,15 @@ export default function SiteHeader() {
           Kaynak elle tahmin edilmedi: `scrollTo(9999,0)` ile gerçek kayma
           ölçüldü, sonra belge genişliğini aşan kutular sıralandı ve en sağı
           boyayan öge `elementFromPoint` ile doğrulandı.
+
+          OTURUM AÇIKKEN grup DARALIR (`min-w-0`) ve daralan tek öge ad
+          kutusudur (`min-w-0` + `truncate`; avatar ve hamburger `shrink-0`).
+          Ölçüldü (27 Eyl, gerçek bileşen, uzun e-posta adı): `shrink-0`
+          iken belge 320/360/375/390/640px'te 86/46/31/16/15px taşıyordu —
+          kutunun `max-w-[10rem]` sınırı grubu küçültmüyordu, çünkü grup hiç
+          küçülmüyordu. Oturum kapalıyken daralacak öge yok, `shrink-0` kalır.
         */}
-        <div className="flex items-center gap-1.5 sm:gap-4 shrink-0 ml-0 sm:ml-2 border-l border-slate-200 pl-1.5 sm:pl-6">
+        <div className={`flex items-center gap-1.5 sm:gap-4 ${girisli ? "min-w-0" : "shrink-0"} ml-0 sm:ml-2 border-l border-slate-200 pl-1.5 sm:pl-6`}>
           {oturumHazir && !girisli && (
             <>
               {/* py-1.5: 20px yüksekliğindeydi. `hidden md:block` olduğu için
@@ -617,12 +624,16 @@ export default function SiteHeader() {
             <>
               <Link
                 href="/profile"
-                className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 py-1.5 pl-1.5 pr-3 hover:border-blue-300 hover:bg-white transition-all max-w-[10rem] sm:max-w-none"
+                className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 py-1.5 pl-1.5 pr-1.5 min-[360px]:pr-3 hover:border-blue-300 hover:bg-white transition-all min-w-0 max-w-[10rem] sm:max-w-none"
               >
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-950 text-xs font-black uppercase text-white">
                   {kullaniciAdi.charAt(0) || '?'}
                 </span>
-                <span className="truncate text-sm font-bold text-blue-950">{kullaniciAdi}</span>
+                {/* 360px altında YALNIZ avatar: ölçüldü, 320px'te ada 2.5px
+                    kalıyordu — okunur ad değil, avatarın yanında tek bir
+                    üç nokta. Ad erişilebilir adda kalsın diye `sr-only`. */}
+                <span className="sr-only min-[360px]:hidden">{kullaniciAdi}</span>
+                <span className="hidden min-[360px]:block truncate text-sm font-bold text-blue-950">{kullaniciAdi}</span>
                 {plan === 'premium' && (
                   <span className="hidden sm:block rounded-full bg-amber-400 px-2 py-0.5 text-[9px] font-black uppercase tracking-widest text-blue-950">
                     PREMIUM
