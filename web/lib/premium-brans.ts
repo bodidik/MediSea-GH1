@@ -89,6 +89,91 @@ export function listelenmeyenKategori(
 /* ------------------------------------------------------------------ */
 
 /**
+ * "YENİ" ROZETİ BEYAN EDİLMEZ, `guncelleme`DEN TÜRER.
+ *
+ * Rozet içerik dosyalarına elle yazılıyordu ve ölçüldü: 67 konunun 65'inde
+ * vardı (branş listesinde 64). Her şeye basılan rozet hiçbir şeyi ayırt
+ * etmiyor ve zamanla düşmüyor — "zamana bağlı değeri saklama" sınıfı. Üstelik
+ * iki ayrı kaynaktan okunuyordu: branş listesi `branches/<b>.json`daki
+ * kopyayı, konu sayfası konu dosyasını; 36 konuda ikisi birbirini tutmuyordu.
+ *
+ * Kural panonun "Yeni eklendi" kuralıyla AYNI (orada gerekçesi yazılı):
+ * yalnızca EN YENİ `guncelleme` ayına ait konu yenidir. Ay hassasiyetinden
+ * daha incesi dosyada yok; dosya değişiklik zamanı ise derlemede sıfırlanıyor.
+ */
+export const YENI_ROZETI = "YENİ";
+
+const AY_DESENI = /^(\d{4})-(0[1-9]|1[0-2])/;
+
+/** `guncelleme` alanından `YYYY-AA`; geçersizse `null`. */
+export function guncellemeAyi(deger: unknown): string | null {
+  if (typeof deger !== "string") return null;
+  const m = AY_DESENI.exec(deger);
+  return m ? `${m[1]}-${m[2]}` : null;
+}
+
+let _enYeniAy: string | null | undefined;
+
+/** Bütün premium konu dosyalarındaki en yeni `guncelleme` ayı. */
+export function premiumEnYeniAy(): string | null {
+  if (_enYeniAy !== undefined) return _enYeniAy;
+  let enYeni: string | null = null;
+  try {
+    const kok = path.join(process.cwd(), "content", "premium", "ydus", "topics");
+    for (const brans of fs.readdirSync(kok)) {
+      const dizin = path.join(kok, brans);
+      if (!fs.statSync(dizin).isDirectory()) continue;
+      for (const dosya of fs.readdirSync(dizin)) {
+        if (!dosya.endsWith(".json")) continue;
+        try {
+          const ay = guncellemeAyi(JSON.parse(fs.readFileSync(path.join(dizin, dosya), "utf-8"))?.meta?.guncelleme);
+          if (ay && (!enYeni || ay > enYeni)) enYeni = ay;
+        } catch {
+          // Bozuk dosya en yeni ayı belirleyemez.
+        }
+      }
+    }
+  } catch {
+    enYeni = null;
+  }
+  _enYeniAy = enYeni;
+  return enYeni;
+}
+
+/**
+ * Ekrana basılacak rozetler: beyan edilen "YENİ" atılır, konu en yeni aya
+ * aitse başa eklenir. Öteki rozetler beyan sırasıyla kalır.
+ */
+export function gorunenRozetler(beyan: unknown, guncelleme: unknown): string[] {
+  const liste = Array.isArray(beyan)
+    ? beyan.filter((r): r is string => typeof r === "string" && r !== YENI_ROZETI)
+    : [];
+  const ay = guncellemeAyi(guncelleme);
+  const enYeni = premiumEnYeniAy();
+  return ay && enYeni && ay === enYeni ? [YENI_ROZETI, ...liste] : liste;
+}
+
+/**
+ * Branş listesindeki bir konunun rozetleri. Konu dosyası VARSA rozet oradan
+ * okunur (konu sayfasıyla tek kaynak); yoksa branş listesindeki beyan
+ * kullanılır ama "YENİ" düşer — var olmayan içerik yeni olamaz.
+ */
+export function listeRozetleri(brans: string, konuId: string, beyan: unknown): string[] {
+  try {
+    const dosya = path.join(process.cwd(), "content", "premium", "ydus", "topics", brans, `${konuId}.json`);
+    if (fs.existsSync(dosya)) {
+      const meta = JSON.parse(fs.readFileSync(dosya, "utf-8"))?.meta;
+      return gorunenRozetler(meta?.rozetler, meta?.guncelleme);
+    }
+  } catch {
+    // Okunamayan dosya: beyana düş.
+  }
+  return gorunenRozetler(beyan, null);
+}
+
+/* ------------------------------------------------------------------ */
+
+/**
  * Açık branş slug'ı -> PREMIUM branş slug'ı (karşılığı yoksa `null`).
  *
  * ÖLÇÜLEN KUSUR: açık konu sayfalarındaki premium tanıtım şeridi bağlantıyı

@@ -15,6 +15,7 @@ import KaydirDurumu from '@/app/components/KaydirDurumu';
 import BasaDon from '@/app/components/BasaDon';
 import KaynakcaBlogu from '@/app/components/KaynakcaBlogu';
 import { kaynakcaAl } from '@/lib/kaynaklar';
+import { gorunenRozetler } from '@/lib/premium-brans';
 
 /**
  * KULLANICIYA ÖZEL — her istekte yeniden üretilir.
@@ -239,6 +240,9 @@ export default async function KonuSayfasi({
     vaka: envanter.vakaVar,
   };
 
+  // "YENİ" beyan değil, `guncelleme`den türer — branş listesiyle tek kural.
+  const rozetler = gorunenRozetler(veri.meta.rozetler, veri.meta.guncelleme);
+
   return (
     <div style={{
       minHeight: '100vh',
@@ -295,9 +299,9 @@ export default async function KonuSayfasi({
           marginBottom: '1.5rem',
           background: '#f5f9ff',
         }}>
-          {veri.meta.rozetler && veri.meta.rozetler.length > 0 && (
+          {rozetler.length > 0 && (
             <div style={{ display: 'flex', gap: '8px', marginBottom: '0.75rem', flexWrap: 'wrap' }}>
-              {veri.meta.rozetler.map((rozet, i) => (
+              {rozetler.map((rozet, i) => (
                 <span key={i} style={{
                   fontSize: '11px',
                   fontWeight: 500,

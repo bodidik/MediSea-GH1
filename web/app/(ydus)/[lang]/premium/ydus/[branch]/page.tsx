@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import KategorilerClient from './KategorilerClient';
-import { listelenmeyenKategori } from '@/lib/premium-brans';
+import { listelenmeyenKategori, listeRozetleri } from '@/lib/premium-brans';
 import { rotaMeta } from "@/lib/site";
 
 export const revalidate = 86400;
@@ -71,6 +71,8 @@ interface Konu {
   baslik: string;
   rozetler: string[];
   hazir: boolean;
+  /** Konu başka branşın dosyasındaysa o branş (çapraz bağlantı). */
+  brans?: string;
 }
 
 interface Kategori {
@@ -101,6 +103,12 @@ function bransYukle(branch: string): BransVerisi | null {
     const icerik = fs.readFileSync(dosyaYolu, 'utf-8');
     const veri = JSON.parse(icerik) as BransVerisi;
     listelenmeyenleriEkle(branch, veri);
+    // Rozet konu dosyasından, "YENİ" `guncelleme`den — gerekçe lib/premium-brans.ts.
+    for (const kat of veri.kategoriler ?? []) {
+      for (const konu of kat.konular ?? []) {
+        konu.rozetler = listeRozetleri(konu.brans ?? branch, konu.id, konu.rozetler);
+      }
+    }
     return veri;
   } catch {
     return null;

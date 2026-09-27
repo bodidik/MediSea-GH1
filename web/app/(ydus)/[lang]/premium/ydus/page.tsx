@@ -5,7 +5,7 @@ import path from 'path';
 import YdusDashboardClient, { type BranchCard, type LockedBranch, type NewestTopic } from './YdusDashboardClient';
 import { sinavlariOku } from '@/lib/sinav.server';
 import { envanterAl } from '@/lib/premium-envanter';
-import { listelenmeyenKategori } from '@/lib/premium-brans';
+import { listelenmeyenKategori, guncellemeAyi, premiumEnYeniAy } from '@/lib/premium-brans';
 import { icerikSayilari } from '@/lib/icerik-sayaci';
 import { rotaMeta } from "@/lib/site";
 
@@ -198,7 +198,7 @@ export default async function YdusAnaSayfa({
           branchId: id,
           baslik: konu.baslik,
           soru,
-          guncelleme: konuVerisi?.meta?.guncelleme?.slice(0, 7) ?? null,
+          guncelleme: guncellemeAyi(konuVerisi?.meta?.guncelleme),
         });
       }
     }
@@ -238,10 +238,9 @@ export default async function YdusAnaSayfa({
    * noktası sırası (`localeCompare` DEĞİL — o çalışma zamanı yereline bağlı
    * ve bu depoda bir kez CI'ı 97 koşum boyunca kırdı).
    */
-  const enYeniAy = newest.reduce<string | null>(
-    (m, t) => (t.guncelleme && (!m || t.guncelleme > m) ? t.guncelleme : m),
-    null,
-  );
+  // En yeni ay TEK kaynaktan: branş listesi ve konu sayfasındaki "YENİ"
+  // rozeti de bu ayla karar veriyor (lib/premium-brans.ts).
+  const enYeniAy = premiumEnYeniAy();
   const yeniler = enYeniAy ? newest.filter((t) => t.guncelleme === enYeniAy) : [];
   yeniler.sort((a, b) =>
     a.branchId === b.branchId ? (a.topicId < b.topicId ? -1 : a.topicId > b.topicId ? 1 : 0)
