@@ -2350,5 +2350,683 @@
         "tur": "makale"
       }
     ]
+  },
+  "hcc": {
+    "baslik": "Hepatosellüler karsinom",
+    "aciklama": "Hepatosellüler karsinom sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Guan MC, Li N, Ding Q, ve ark. Survival benefits of different immunotherapies for hepatocellular carcinoma: a meta-analysis highlighting age, gender, etiology, and tumor burden. Front Immunol 2025;16:1713151",
+        "yil": 2025,
+        "url": "https://doi.org/10.3389/fimmu.2025.1713151",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kim SJ, Jung CW, Anh NH, ve ark. Metabolic phenotyping combined with transcriptomics metadata fortifies the diagnosis of early-stage Hepatocellular carcinoma. J Adv Res 2025;74:153-163",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.jare.2024.09.007",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lazarus JV, Picchio CA, Colombo M. Hepatocellular Carcinoma Prevention in the Era of Hepatitis C Elimination. Int J Mol Sci 2023;24(18):14404",
+        "yil": 2023,
+        "url": "https://doi.org/10.3390/ijms241814404",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kelly RJ, Bever K, Chao J, ve ark. Society for Immunotherapy of Cancer (SITC) clinical practice guideline on immunotherapy for the treatment of gastrointestinal cancer. J Immunother Cancer 2023;11(6):e006658",
+        "yil": 2023,
+        "url": "https://doi.org/10.1136/jitc-2022-006658",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zhang L, Li X, Wang K, ve ark. Prognostic impact of body composition in hepatocellular carcinoma patients with immunotherapy. Ann Med 2024;56(1):2395062",
+        "yil": 2024,
+        "url": "https://doi.org/10.1080/07853890.2024.2395062",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ferri FF. Ferri's Clinical Advisor 2024. Elsevier; 2023",
+        "yil": 2023,
+        "url": "https://shop.elsevier.com/books/ferris-clinical-advisor-2024/ferri/978-0-323-75576-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Curry MP, Afdhal NH. Hepatocellular adenoma. UpToDate; son güncelleme 21 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/hepatocellular-adenoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Curley SA, Barnett CC, Abdalla EK. Surgical resection of hepatocellular carcinoma. UpToDate; son güncelleme 23 Eki 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/surgical-resection-of-hepatocellular-carcinoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Curley SA, Barnett CC, Abdalla EK. Staging and prognostic factors in hepatocellular carcinoma. UpToDate; son güncelleme 31 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/staging-and-prognostic-factors-in-hepatocellular-carcinoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Curley SA, Stuart KE, Schwartz JM, ve ark. Localized hepatocellular carcinoma: Liver-directed therapies for nonsurgical candidates eligible for local ablation. UpToDate; son güncelleme 17 Nis 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/localized-hepatocellular-carcinoma-liver-directed-therapies-for-nonsurgical-candidates-eligible-for-local-ablation",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Curley SA, Stuart KE, Schwartz JM, ve ark. Localized hepatocellular carcinoma: Liver-directed therapies for nonsurgical candidates not eligible for local thermal ablation. UpToDate; son güncelleme 31 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/localized-hepatocellular-carcinoma-liver-directed-therapies-for-nonsurgical-candidates-not-eligible-for-local-thermal-ablation",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Colombo MG, Sirlin CB. Surveillance for hepatocellular carcinoma in adults. UpToDate; son güncelleme 22 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/surveillance-for-hepatocellular-carcinoma-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Iqbal SI, Stuart KE. Assessment of tumor response in patients receiving systemic and nonsurgical locoregional treatment of hepatocellular carcinoma. UpToDate; son güncelleme 17 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/assessment-of-tumor-response-in-patients-receiving-systemic-and-nonsurgical-locoregional-treatment-of-hepatocellular-carcinoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Roy-Chowdhury N, Roy-Chowdhury J. Classification and causes of jaundice or asymptomatic hyperbilirubinemia. UpToDate; son güncelleme 2 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/classification-and-causes-of-jaundice-or-asymptomatic-hyperbilirubinemia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Schwartz JM, Carithers RL. Epidemiology and risk factors for hepatocellular carcinoma. UpToDate; son güncelleme 1 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/epidemiology-and-risk-factors-for-hepatocellular-carcinoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Schwartz JM, Carithers RL, Sirlin CB. Clinical features and diagnosis of hepatocellular carcinoma. UpToDate; son güncelleme 11 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-features-and-diagnosis-of-hepatocellular-carcinoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Stuart KE, Bekaii-Saab T, Mehrotra B. Systemic treatment for advanced unresectable and metastatic hepatocellular carcinoma. UpToDate; son güncelleme 24 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/systemic-treatment-for-advanced-unresectable-and-metastatic-hepatocellular-carcinoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Suriawinata A. Pathology of malignant liver tumors. UpToDate; son güncelleme 20 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/pathology-of-malignant-liver-tumors",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Tsoulfas G, Curley SA, Abdalla EK, ve ark. Liver transplantation for hepatocellular carcinoma. UpToDate; son güncelleme 19 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/liver-transplantation-for-hepatocellular-carcinoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Curley SA, Barnett CC, Abdalla EK, ve ark. Management of potentially resectable hepatocellular carcinoma: Role of neoadjuvant and adjuvant therapy, and posttreatment surveillance. UpToDate; son güncelleme 12 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-potentially-resectable-hepatocellular-carcinoma-role-of-neoadjuvant-and-adjuvant-therapy-and-posttreatment-surveillance",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Abdalla EK, Stuart KE, Singal AG. Overview of treatment approaches for hepatocellular carcinoma. UpToDate; son güncelleme 9 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-treatment-approaches-for-hepatocellular-carcinoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Chopra S. Clinical manifestations and natural history of chronic hepatitis C virus infection. UpToDate; son güncelleme 1 Ara 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/clinical-manifestations-and-natural-history-of-chronic-hepatitis-c-virus-infection",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "karaciger-tumorleri": {
+    "baslik": "Karaciğer tümörleri",
+    "aciklama": "Karaciğer tümörleri ve fokal karaciğer lezyonları sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Bai Z, Chen YA, Xiao Y, ve ark. Use of sintilimab in primary adenosquamous carcinoma of the liver results in pathological complete response: a case report and literature review. Front Immunol 2025;16:1578368",
+        "yil": 2025,
+        "url": "https://doi.org/10.3389/fimmu.2025.1578368",
+        "tur": "makale"
+      },
+      {
+        "ad": "Benhamdane A, Adioui T, Berrag S, ve ark. Primary squamous cell carcinoma of the liver. Eur J Case Rep Intern Med 2024;11(7)",
+        "yil": 2024,
+        "url": "https://doi.org/10.12890/2024_004628",
+        "tur": "makale"
+      },
+      {
+        "ad": "Fakhreddine O, Fadlallah Y, Turfa J, ve ark. Primary Squamous Cell Carcinoma of the Liver: Case Report and Review of Literature. Case Rep Oncol 2022;15(2):480-485",
+        "yil": 2022,
+        "url": "https://doi.org/10.1159/000523857",
+        "tur": "makale"
+      },
+      {
+        "ad": "Frenette C, Mendiratta-Lala M, Salgia R, ve ark. ACG Clinical Guideline: Focal Liver Lesions. Am J Gastroenterol 2024;119(7):1235-1271",
+        "yil": 2024,
+        "url": "https://doi.org/10.14309/ajg.0000000000002857",
+        "tur": "makale"
+      },
+      {
+        "ad": "Gao J, Song Y, Kou X, ve ark. The effect of liver metastases on clinical efficacy of first-line programmed death-1 inhibitor plus chemotherapy in esophageal squamous cell carcinoma: A post hoc analysis of ASTRUM-007 and meta-analysis. Cancer Med 2024;13(10):e7203",
+        "yil": 2024,
+        "url": "https://doi.org/10.1002/cam4.7203",
+        "tur": "makale"
+      },
+      {
+        "ad": "Mao Y, Yao X, Xu G, ve ark. Imaging Findings of Primary Squamous Cell Carcinoma of the Liver: Case Presentation and Literature Review. Curr Med Imaging 2025;21:e15734056344249",
+        "yil": 2025,
+        "url": "https://doi.org/10.2174/0115734056344249250108062855",
+        "tur": "makale"
+      },
+      {
+        "ad": "Weimann A, Klempnauer J, Gebel M, ve ark. Squamous Cell Carcinoma of the Liver Originating from a Solitary Non-Parasitic Cyst: Case Report and Review of the Literature. HPB Surg 1996;10(1):45-49",
+        "yil": 1996,
+        "url": "https://doi.org/10.1155/1996/97680",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yeo YH, Lee YT, Tseng HR, ve ark. Alpha-fetoprotein: Past, present, and future. Hepatol Commun 2024;8(5)",
+        "yil": 2024,
+        "url": "https://doi.org/10.1097/hc9.0000000000000422",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zhang XF, Du ZQ, Liu XM, Lv Y. Primary Squamous Cell Carcinoma of Liver: Case Series and Review of Literatures. Medicine (Baltimore) 2015;94(28):e868",
+        "yil": 2015,
+        "url": "https://doi.org/10.1097/md.0000000000000868",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zhao L, Zhou Y, Ding J, ve ark. Primary hepatic squamous cell carcinoma: case report and systematic review of the literature. Front Oncol 2023;13:1229936",
+        "yil": 2023,
+        "url": "https://doi.org/10.3389/fonc.2023.1229936",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chernyak V, Horowitz JM, Kamel IR, ve ark. ACR Appropriateness Criteria® Liver Lesion-Initial Characterization. J Am Coll Radiol 2020;17(11S):S429-S446",
+        "yil": 2020,
+        "url": "https://doi.org/10.1016/j.jacr.2020.09.005",
+        "tur": "makale"
+      },
+      {
+        "ad": "Dietrich CF, Nolsøe CP, Barr RG, ve ark. Guidelines and Good Clinical Practice Recommendations for Contrast-Enhanced Ultrasound (CEUS) in the Liver-Update 2020 WFUMB in Cooperation with EFSUMB, AFSUMB, AIUM, and FLAUS. Ultrasound Med Biol 2020;46(10):2579-2604",
+        "yil": 2020,
+        "url": "https://doi.org/10.1016/j.ultrasmedbio.2020.04.030",
+        "tur": "makale"
+      },
+      {
+        "ad": "Schwartz JM, Kruskal JB. Approach to the adult patient with an incidental solid liver lesion. UpToDate; son güncelleme 10 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/approach-to-the-adult-patient-with-an-incidental-solid-liver-lesion",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Dietrich CF. Contrast-enhanced ultrasound for the evaluation of liver lesions. UpToDate; son güncelleme 13 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/contrast-enhanced-ultrasound-for-the-evaluation-of-liver-lesions",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Schwartz JM, Carithers RL, Sirlin CB. Clinical features and diagnosis of hepatocellular carcinoma. UpToDate; son güncelleme 11 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-features-and-diagnosis-of-hepatocellular-carcinoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Suriawinata A. Pathology of malignant liver tumors. UpToDate; son güncelleme 20 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/pathology-of-malignant-liver-tumors",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Malogolowkin M. Overview of hepatoblastoma. UpToDate; son güncelleme 4 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/overview-of-hepatoblastoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Hainsworth JD, Greco FA. Overview of the classification and management of cancers of unknown primary site. UpToDate; son güncelleme 24 Mar 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/overview-of-the-classification-and-management-of-cancers-of-unknown-primary-site",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Hainsworth JD, Greco FA. Squamous cell carcinoma of unknown primary site. UpToDate; son güncelleme 4 Eyl 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/squamous-cell-carcinoma-of-unknown-primary-site",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "akciger-kanseri": {
+    "baslik": "Akciğer kanseri",
+    "aciklama": "Akciğer kanseri sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Brunelli A, Hardavella G, Huber RM, ve ark. European Respiratory Society and European Society of Thoracic Surgeons clinical practice guideline on fitness for curative intent treatment of lung cancer. Eur Respir J 2025;66(5):2500156",
+        "yil": 2025,
+        "url": "https://doi.org/10.1183/13993003.00156-2025",
+        "tur": "makale"
+      },
+      {
+        "ad": "Duan J, Fang W, Xu H, ve ark. Chinese expert consensus on the diagnosis and treatment of bone metastasis in lung cancer (2022 edition). J Natl Cancer Cent 2023;3(4):256-265",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.jncc.2023.08.004",
+        "tur": "makale"
+      },
+      {
+        "ad": "Aznar MC, Carrasco de Fez P, Corradini S, ve ark. ESTRO-ACROP guideline: Recommendations on implementation of breath-hold techniques in radiotherapy. Radiother Oncol 2023;185:109734",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.radonc.2023.109734",
+        "tur": "makale"
+      },
+      {
+        "ad": "Govindan R, Aggarwal C, Antonia SJ, ve ark. Society for Immunotherapy of Cancer (SITC) clinical practice guideline on immunotherapy for the treatment of lung cancer and mesothelioma. J Immunother Cancer 2022;10(5):e003956",
+        "yil": 2022,
+        "url": "https://doi.org/10.1136/jitc-2021-003956",
+        "tur": "makale"
+      },
+      {
+        "ad": "Khurshid H, Ismaila N, Bian J, ve ark. Systemic Therapy for Small-Cell Lung Cancer: ASCO-Ontario Health (Cancer Care Ontario) Guideline. J Clin Oncol 2023;41(35):5448-5472",
+        "yil": 2023,
+        "url": "https://doi.org/10.1200/jco.23.01435",
+        "tur": "makale"
+      },
+      {
+        "ad": "Jha SK, De Rubis G, Devkota SR, ve ark. Cellular senescence in lung cancer: Molecular mechanisms and therapeutic interventions. Ageing Res Rev 2024;97:102315",
+        "yil": 2024,
+        "url": "https://doi.org/10.1016/j.arr.2024.102315",
+        "tur": "makale"
+      },
+      {
+        "ad": "Thapa R, Gupta S, Gupta G, ve ark. Epithelial–mesenchymal transition to mitigate age-related progression in lung cancer. Ageing Res Rev 2024;102:102576",
+        "yil": 2024,
+        "url": "https://doi.org/10.1016/j.arr.2024.102576",
+        "tur": "makale"
+      },
+      {
+        "ad": "Linden PA, Martin LW, Stiles B, ve ark. The 2026 American Association for Thoracic Surgery Expert Consensus Document: Evaluation and management of N2+ non–small cell lung cancer. J Thorac Cardiovasc Surg 2026;172(2):450-466.e2",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.jtcvs.2026.03.622",
+        "tur": "makale"
+      },
+      {
+        "ad": "Iyengar P, All S, Berry MF, ve ark. Treatment of Oligometastatic Non-Small Cell Lung Cancer: An ASTRO/ESTRO Clinical Practice Guideline. Pract Radiat Oncol 2023;13(5):393-412",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.prro.2023.04.004",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zer A, Ahn MJ, Barlesi F, ve ark. Early and locally advanced non-small-cell lung cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up. Ann Oncol 2025;36(11):1245-1262",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.annonc.2025.08.003",
+        "tur": "makale"
+      },
+      {
+        "ad": "Howington J, Souter LH, Arenberg D, ve ark. Management of Patients With Early-Stage Non-Small Cell Lung Cancer. Chest 2025;168(3):810-827",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.chest.2025.06.023",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hendriks LE, Kerr KM, Menis J, ve ark. Oncogene-addicted metastatic non-small-cell lung cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up. Ann Oncol 2023;34(4):339-357",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.annonc.2022.12.009",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hendriks LE, Kerr KM, Menis J, ve ark. Non-oncogene-addicted metastatic non-small-cell lung cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up. Ann Oncol 2023;34(4):358-376",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.annonc.2022.12.013",
+        "tur": "makale"
+      },
+      {
+        "ad": "Solomon B. Brain metastases in non-small cell lung cancer. UpToDate; son güncelleme 29 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/brain-metastases-in-non-small-cell-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Keith RL, Miller YE. Chemoprevention of lung cancer. UpToDate; son güncelleme 6 Eki 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/chemoprevention-of-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Mannino DM. Cigarette smoking and other possible risk factors for lung cancer. UpToDate; son güncelleme 12 Eyl 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/cigarette-smoking-and-other-possible-risk-factors-for-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Midthun DE. Clinical manifestations of lung cancer. UpToDate; son güncelleme 15 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-manifestations-of-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Banerjee AK. Detection of early lung cancer: Autofluorescence bronchoscopy and investigational modalities. UpToDate; son güncelleme 22 May 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/detection-of-early-lung-cancer-autofluorescence-bronchoscopy-and-investigational-modalities",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kelly K. Extensive-stage small cell lung cancer: Initial management. UpToDate; son güncelleme 2 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/extensive-stage-small-cell-lung-cancer-initial-management",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Baldini EH. Females and lung cancer. UpToDate; son güncelleme 16 Tem 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/females-and-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Neal JW. Initial systemic therapy for advanced non-small cell lung cancer lacking a driver mutation. UpToDate; son güncelleme 1 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/initial-systemic-therapy-for-advanced-non-small-cell-lung-cancer-lacking-a-driver-mutation",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Byers LA, Gay CM. Large cell neuroendocrine carcinoma of the lung. UpToDate; son güncelleme 15 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/large-cell-neuroendocrine-carcinoma-of-the-lung",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Baldini EH, Kalemkerian GP. Limited-stage small cell lung cancer: Initial management. UpToDate; son güncelleme 14 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/limited-stage-small-cell-lung-cancer-initial-management",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Shum E. Lung cancer in never smokers. UpToDate; son güncelleme 13 Ağu 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/lung-cancer-in-never-smokers",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Petranovic M. Lung-RADS standardized reporting for low-dose computed tomography for lung cancer screening. UpToDate; son güncelleme 24 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/lung-rads-standardized-reporting-for-low-dose-computed-tomography-for-lung-cancer-screening",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Valli&egrave;res E, Schild SE. Management of stage I and stage II non-small cell lung cancer. UpToDate; son güncelleme 16 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-stage-i-and-stage-ii-non-small-cell-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Schild SE, Ramalingam SS, Valli&egrave;res E. Management of stage III non-small cell lung cancer. UpToDate; son güncelleme 11 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-stage-iii-non-small-cell-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Milano MT, Vokes EE, Salama JK. Oligometastatic non-small cell lung cancer. UpToDate; son güncelleme 27 Eki 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/oligometastatic-non-small-cell-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Huang J, Ostroff J. Overview of approach to lung cancer survivors. UpToDate; son güncelleme 21 Oca 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/overview-of-approach-to-lung-cancer-survivors",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Thomas KW, Gould MK, Naeger D. Overview of the initial evaluation, diagnosis, and staging of patients with suspected lung cancer. UpToDate; son güncelleme 24 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-the-initial-evaluation-diagnosis-and-staging-of-patients-with-suspected-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Lilenbaum RC. Overview of the initial treatment of advanced non-small cell lung cancer. UpToDate; son güncelleme 2 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-the-initial-treatment-of-advanced-non-small-cell-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Midthun DE. Overview of the initial treatment of early non-small cell lung cancer. UpToDate; son güncelleme 2 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-the-initial-treatment-of-early-non-small-cell-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Byers LA, Gay CM. Pathobiology and staging of small cell carcinoma of the lung. UpToDate; son güncelleme 17 Oca 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/pathobiology-and-staging-of-small-cell-carcinoma-of-the-lung",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Thomas KW, Gould MK. Performance characteristics of biopsy modalities for diagnosis and staging in patients with suspected or known non-small cell lung cancer: Endoscopic and percutaneous procedures. UpToDate; son güncelleme 11 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/performance-characteristics-of-biopsy-modalities-for-diagnosis-and-staging-in-patients-with-suspected-or-known-non-small-cell-lung-cancer-endoscopic-and-percutaneous-procedures",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Gould MK, Thomas KW. Performance characteristics of biopsy modalities in patients with suspected or known non-small cell lung cancer: Surgical procedures. UpToDate; son güncelleme 11 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/performance-characteristics-of-biopsy-modalities-in-patients-with-suspected-or-known-non-small-cell-lung-cancer-surgical-procedures",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Neal JW, Lovly CM. Personalized, genotype-directed therapy for advanced non-small cell lung cancer. UpToDate; son güncelleme 17 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/personalized-genotype-directed-therapy-for-advanced-non-small-cell-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Weinberger SE. Preoperative physiologic pulmonary evaluation for surgical and multimodality treatment of lung cancer. UpToDate; son güncelleme 23 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/preoperative-physiologic-pulmonary-evaluation-for-surgical-and-multimodality-treatment-of-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Baldini EH, Kozono D. Prophylactic cranial irradiation for patients with small cell lung cancer. UpToDate; son güncelleme 21 Eki 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/prophylactic-cranial-irradiation-for-patients-with-small-cell-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Humphrey L, Slatore CG. Screening for lung cancer. UpToDate; son güncelleme 10 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/screening-for-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Thomas KW, Gould MK. Selection of modality for diagnosis and staging of patients with suspected non-small cell lung cancer. UpToDate; son güncelleme 1 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/selection-of-modality-for-diagnosis-and-staging-of-patients-with-suspected-non-small-cell-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Lilenbaum RC. Systemic therapy for advanced non-small cell lung cancer with an activating mutation in the epidermal growth factor receptor. UpToDate; son güncelleme 25 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/systemic-therapy-for-advanced-non-small-cell-lung-cancer-with-an-activating-mutation-in-the-epidermal-growth-factor-receptor",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Chaft JE. Systemic therapy in resectable non-small cell lung cancer. UpToDate; son güncelleme 1 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/systemic-therapy-in-resectable-non-small-cell-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kelly K. Treatment of refractory and relapsed small cell lung cancer. UpToDate; son güncelleme 24 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/treatment-of-refractory-and-relapsed-small-cell-lung-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Thomas KW, Gould MK. Tumor, node, metastasis (TNM) staging system for lung cancer. UpToDate; son güncelleme 6 Eki 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/tumor-node-metastasis-tnm-staging-system-for-lung-cancer",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "pankreas-kanseri": {
+    "baslik": "Pankreas kanseri",
+    "aciklama": "Pankreas kanseri sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Sawhney MS, Calderwood AH, Thosani NC, ve ark. ASGE guideline on screening for pancreatic cancer in individuals with genetic susceptibility: summary and recommendations. Gastrointest Endosc 2022;95(5):817-826",
+        "yil": 2022,
+        "url": "https://doi.org/10.1016/j.gie.2021.12.001",
+        "tur": "makale"
+      },
+      {
+        "ad": "Conroy T, Pfeiffer P, Vilgrain V, ve ark. Pancreatic cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up. Ann Oncol 2023;34(11):987-1002",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.annonc.2023.08.009",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kelly RJ, Bever K, Chao J, ve ark. Society for Immunotherapy of Cancer (SITC) clinical practice guideline on immunotherapy for the treatment of gastrointestinal cancer. J Immunother Cancer 2023;11(6):e006658",
+        "yil": 2023,
+        "url": "https://doi.org/10.1136/jitc-2022-006658",
+        "tur": "makale"
+      },
+      {
+        "ad": "Goldman L, Cooney KA, ed. Goldman-Cecil Medicine. 27. baskı. Elsevier; 2023. Bölüm: Pancreatic Cancer",
+        "yil": 2023,
+        "url": "https://shop.elsevier.com/books/goldman-cecil-medicine/goldman/978-0-323-93038-3",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Feldman M, Friedman LS, Brandt LJ, ed. Sleisenger and Fordtran's Gastrointestinal and Liver Disease. 11. baskı. Elsevier; 2020. Bölüm: Pancreatic Cancer, Cystic Pancreatic Neoplasms, and Other Nonendocrine Pancreatic Tumors",
+        "yil": 2020,
+        "url": "https://shop.elsevier.com/books/sleisenger-and-fordtrans-gastrointestinal-and-liver-disease/feldman/978-0-323-60962-3",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Castillo CF, Singh H. Clinical presentation, diagnosis, and staging of exocrine pancreatic cancer. UpToDate; son güncelleme 30 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-presentation-diagnosis-and-staging-of-exocrine-pancreatic-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Gress FG. Endoscopic ultrasound in the staging of exocrine pancreatic cancer. UpToDate; son güncelleme 6 Kas 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/endoscopic-ultrasound-in-the-staging-of-exocrine-pancreatic-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Castillo CF, Jimenez RE. Epidemiology and nonfamilial risk factors for exocrine pancreatic cancer. UpToDate; son güncelleme 20 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/epidemiology-and-nonfamilial-risk-factors-for-exocrine-pancreatic-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Canto MI. Familial risk factors for pancreatic cancer and screening of high-risk patients. UpToDate; son güncelleme 30 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/familial-risk-factors-for-pancreatic-cancer-and-screening-of-high-risk-patients",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Cardin DB, Singh H. Initial systemic therapy for metastatic exocrine pancreatic cancer. UpToDate; son güncelleme 1 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/initial-systemic-therapy-for-metastatic-exocrine-pancreatic-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Hruban RH. Molecular pathogenesis of exocrine pancreatic cancer. UpToDate; son güncelleme 7 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/molecular-pathogenesis-of-exocrine-pancreatic-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Castillo CF, Jimenez RE. Overview of surgery in the treatment of exocrine pancreatic cancer and prognosis. UpToDate; son güncelleme 2 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-surgery-in-the-treatment-of-exocrine-pancreatic-cancer-and-prognosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Singh H, Cardin DB. Second- and later-line systemic therapy for metastatic exocrine pancreatic cancer. UpToDate; son güncelleme 10 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/second-and-later-line-systemic-therapy-for-metastatic-exocrine-pancreatic-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Castillo CF, Jimenez RE, Murphy JE. Supportive care for locally advanced or metastatic exocrine pancreatic cancer. UpToDate; son güncelleme 17 Ara 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/supportive-care-for-locally-advanced-or-metastatic-exocrine-pancreatic-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Mamon H, Cardin DB, Singh H, ve ark. Treatment of borderline resectable exocrine pancreatic cancer. UpToDate; son güncelleme 25 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-borderline-resectable-exocrine-pancreatic-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Mamon H, Cardin DB, Singh H, ve ark. Treatment of locally advanced exocrine pancreatic cancer. UpToDate; son güncelleme 9 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-locally-advanced-exocrine-pancreatic-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Mamon H, Cardin DB, Singh H, ve ark. Treatment of resectable exocrine pancreatic cancer. UpToDate; son güncelleme 15 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-resectable-exocrine-pancreatic-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Brenner T, Duggal S, Natale J. Treatment protocols for pancreatic cancer. UpToDate; son güncelleme 4 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-protocols-for-pancreatic-cancer",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "tumor-lizis": {
+    "baslik": "Tümör lizis sendromu",
+    "aciklama": "Tümör lizis sendromu sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Siddiqui Z, Schab A, Paracha A, ve ark. Tumor Lysis Syndrome in Lung Cancer Patients: A Review of the Literature. Asian Pac J Cancer Prev 2026;27(4):1179-1188",
+        "yil": 2026,
+        "url": "https://doi.org/10.31557/apjcp.2026.27.4.1179",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lindsay AB, Levy NJ, McAndrew ML. Tumor Lysis Syndrome. Emerg Med Clin North Am 2025;43(3):453-461",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.emc.2025.04.002",
+        "tur": "makale"
+      },
+      {
+        "ad": "Howard SC. Tumor Lysis Syndrome. In: Abeloff's Clinical Oncology. Elsevier; 2020. p. 572-580",
+        "yil": 2020,
+        "url": "https://doi.org/10.1016/B978-0-323-47674-4.00036-0",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Larson RA, Pui C. Tumor lysis syndrome: Pathogenesis, clinical manifestations, definition, etiology and risk factors. UpToDate; son güncelleme 21 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/tumor-lysis-syndrome-pathogenesis-clinical-manifestations-definition-etiology-and-risk-factors",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Larson RA, Pui C. Tumor lysis syndrome: Prevention and treatment. UpToDate; son güncelleme 24 Tem 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/tumor-lysis-syndrome-prevention-and-treatment",
+        "tur": "uptodate"
+      }
+    ]
   }
 }

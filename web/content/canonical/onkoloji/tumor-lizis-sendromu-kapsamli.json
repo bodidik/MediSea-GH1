@@ -1,6 +1,7 @@
 {
   "title": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)",
   "meta": {
+    "kaynakca": "tumor-lizis",
     "updatedAt": "11 May 2026",
     "tags": ["Onkoloji", "Acil", "TLS", "Cairo-Bishop", "Rasburikaz", "YDUS", "Hiperkalemi"],
     "parent": "onkolojik-aciller",
