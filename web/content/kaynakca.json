@@ -5137,5 +5137,137 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "pnomoni": {
+    "baslik": "Pnömoni",
+    "aciklama": "Toplum kökenli, hastane kökenli ve ventilatör ilişkili pnömoni sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (PubMed, Crossref), UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Jones BE, Ramirez JA, Oren E, ve ark. Diagnosis and Management of Community-acquired Pneumonia: An Official American Thoracic Society Clinical Practice Guideline. Am J Respir Crit Care Med 2026;212(1):24-44",
+        "yil": 2026,
+        "url": "https://doi.org/10.1164/rccm.202507-1692st",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kalil AC, Metersky ML, Klompas M, ve ark. Management of Adults With Hospital-acquired and Ventilator-associated Pneumonia: 2016 Clinical Practice Guidelines by the Infectious Diseases Society of America and the American Thoracic Society. Clin Infect Dis 2016;63(5):e61-e111",
+        "yil": 2016,
+        "url": "https://doi.org/10.1093/cid/ciw353",
+        "tur": "makale"
+      },
+      {
+        "ad": "Martin-Loeches I, Torres A, Nagavci B, ve ark. ERS/ESICM/ESCMID/ALAT guidelines for the management of severe community-acquired pneumonia. Eur Respir J 2023;61(4):2200735",
+        "yil": 2023,
+        "url": "https://doi.org/10.1183/13993003.00735-2022",
+        "tur": "makale"
+      },
+      {
+        "ad": "Metlay JP, Waterer GW, Long AC, ve ark. Diagnosis and Treatment of Adults with Community-acquired Pneumonia. An Official Clinical Practice Guideline of the American Thoracic Society and Infectious Diseases Society of America. Am J Respir Crit Care Med 2019;200(7):e45-e67",
+        "yil": 2019,
+        "url": "https://doi.org/10.1164/rccm.201908-1581st",
+        "tur": "makale"
+      },
+      {
+        "ad": "Torres A, Niederman MS, Chastre J, ve ark. International ERS/ESICM/ESCMID/ALAT guidelines for the management of hospital-acquired pneumonia and ventilator-associated pneumonia. Eur Respir J 2017;50(3):1700582",
+        "yil": 2017,
+        "url": "https://doi.org/10.1183/13993003.00582-2017",
+        "tur": "makale"
+      },
+      {
+        "ad": "Asis A, McMahon D, Fujitani S, ve ark. Severe community-acquired pneumonia: an integral approach. J Intensive Care 2026;14(1):21",
+        "yil": 2026,
+        "url": "https://doi.org/10.1186/s40560-026-00854-x",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chaudhuri D, Nei AM, Rochwerg B, ve ark. 2024 Focused Update: Guidelines on Use of Corticosteroids in Sepsis, Acute Respiratory Distress Syndrome, and Community-Acquired Pneumonia. Crit Care Med 2024;52(5):e219-e233",
+        "yil": 2024,
+        "url": "https://doi.org/10.1097/ccm.0000000000006172",
+        "tur": "makale"
+      },
+      {
+        "ad": "Dequin PF, Meziani F, Quenot JP, ve ark. Hydrocortisone in Severe Community-Acquired Pneumonia. N Engl J Med 2023;388(21):1931-1941",
+        "yil": 2023,
+        "url": "https://doi.org/10.1056/nejmoa2215145",
+        "tur": "makale"
+      },
+      {
+        "ad": "Dequin PF, Torres A, Bassetti M, ve ark. Severe community-acquired pneumonia: current concepts and controversies. Intensive Care Med 2026;52(1):118-130",
+        "yil": 2026,
+        "url": "https://doi.org/10.1007/s00134-025-08252-x",
+        "tur": "makale"
+      },
+      {
+        "ad": "Fujishima S. Current corticosteroid therapeutic strategy for community-acquired pneumonia in adults: indications, dosage, and timing. J Intensive Care 2025;13(1):37",
+        "yil": 2025,
+        "url": "https://doi.org/10.1186/s40560-025-00809-8",
+        "tur": "makale"
+      },
+      {
+        "ad": "Meduri GU, Shih MC, Bridges L, ve ark. Low-dose methylprednisolone treatment in critically ill patients with severe community-acquired pneumonia. Intensive Care Med 2022;48(8):1009-1023",
+        "yil": 2022,
+        "url": "https://doi.org/10.1007/s00134-022-06684-3",
+        "tur": "makale"
+      },
+      {
+        "ad": "See XY, Wang TH, Chang YC, ve ark. Impact of different corticosteroids on severe community-acquired pneumonia: a systematic review and meta-analysis. BMJ Open Respir Res 2024;11(1):e002141",
+        "yil": 2024,
+        "url": "https://doi.org/10.1136/bmjresp-2023-002141",
+        "tur": "makale"
+      },
+      {
+        "ad": "File TM. Epidemiology, pathogenesis, and microbiology of community-acquired pneumonia in adults. UpToDate; son güncelleme 13 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/epidemiology-pathogenesis-and-microbiology-of-community-acquired-pneumonia-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Fine MJ, Yealy DM. Community-acquired pneumonia in adults: Assessing severity and determining the appropriate site of care. UpToDate; son güncelleme 17 Haz 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/community-acquired-pneumonia-in-adults-assessing-severity-and-determining-the-appropriate-site-of-care",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "File TM. Treatment of community-acquired pneumonia in adults in the outpatient setting. UpToDate; son güncelleme 12 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-community-acquired-pneumonia-in-adults-in-the-outpatient-setting",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "File TM. Treatment of community-acquired pneumonia in adults who require hospitalization. UpToDate; son güncelleme 19 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-community-acquired-pneumonia-in-adults-who-require-hospitalization",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Musher DM, Tuomanen EI. Pneumococcal pneumonia in patients requiring hospitalization. UpToDate; son güncelleme 30 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/pneumococcal-pneumonia-in-patients-requiring-hospitalization",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Klompas M. Epidemiology, pathogenesis, microbiology, and diagnosis of hospital-acquired and ventilator-associated pneumonia in adults. UpToDate; son güncelleme 9 Ara 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/epidemiology-pathogenesis-microbiology-and-diagnosis-of-hospital-acquired-and-ventilator-associated-pneumonia-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kollef MH. Clinical presentation and diagnostic evaluation of ventilator-associated pneumonia. UpToDate; son güncelleme 27 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-presentation-and-diagnostic-evaluation-of-ventilator-associated-pneumonia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Klompas M. Treatment of hospital-acquired and ventilator-associated pneumonia in adults. UpToDate; son güncelleme 25 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-hospital-acquired-and-ventilator-associated-pneumonia-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Klompas M. Risk factors and prevention of hospital-acquired and ventilator-associated pneumonia in adults. UpToDate; son güncelleme 22 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/risk-factors-and-prevention-of-hospital-acquired-and-ventilator-associated-pneumonia-in-adults",
+        "tur": "uptodate"
+      }
+    ]
   }
 }
