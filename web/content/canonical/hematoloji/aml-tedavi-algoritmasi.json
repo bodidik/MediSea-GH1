@@ -1,6 +1,7 @@
 {
   "title": "AML Tedavi Algoritması ve Klinik Yönetim",
   "meta": {
+    "kaynakca": "aml",
     "updatedAt": "02 Jun 2026",
     "tags": ["Hematoloji", "AML", "İndüksiyon", "Konsolidasyon", "Allo-HCT", "Venetoklaks", "YDUS"],
     "parent": "aml",

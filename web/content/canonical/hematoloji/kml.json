@@ -1,6 +1,7 @@
 {
   "title": "Kronik Miyeloid Lösemi (KML)",
   "meta": {
+    "kaynakca": "kml",
     "updatedAt": "13 Mar 2026",
     "tags": ["Hematoloji", "MPN", "MDS/MPN", "KML", "KMML", "CNL", "ICC 2022"],
     "parent": "miyeloproliferatif",

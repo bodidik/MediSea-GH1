@@ -1,6 +1,7 @@
 {
   "title": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi",
   "meta": {
+    "kaynakca": "aml",
     "updatedAt": "01 Jul 2026",
     "tags": ["Hematoloji", "AML", "MDS", "Allo-HCT", "GVL", "GVHD", "Conditioning", "Pediatrik", "SOS Riski"],
     "parent": "aml-tedavi-algoritmasi",

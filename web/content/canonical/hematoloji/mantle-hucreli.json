@@ -1,6 +1,7 @@
 {
   "title": "Mantle Hücreli Lenfoma (MCL)",
   "meta": {
+    "kaynakca": "mantle-hucreli-lenfoma",
     "updatedAt": "10 Mar 2026",
     "tags": ["Hematoloji", "NHL", "t(11;14)", "Siklin D1"],
     "parent": "nhl-genel",

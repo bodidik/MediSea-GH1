@@ -1,6 +1,7 @@
 {
   "title": "İmmün Trombositopeni (ITP)",
   "meta": {
+    "kaynakca": "itp",
     "updatedAt": "15 Mar 2026",
     "tags": ["Hematoloji", "Trombosit", "ITP", "İmmün Trombositopeni", "IVIG", "Eltrombopag", "Splenektomi"],
     "parent": "trombosit-hastaliklari-genel-bakis",

@@ -1,6 +1,7 @@
 {
   "title": "POD24 Yüksek Riskli Foliküler Lenfoma Tedavi Algoritması",
   "meta": {
+    "kaynakca": "folikuler-lenfoma",
     "updatedAt": "11 Mar 2026",
     "tags": ["Hematoloji", "NHL", "Foliküler Lenfoma", "POD24", "İleri Okuma", "Tedavi"],
     "parent": "folikuler-lenfoma",

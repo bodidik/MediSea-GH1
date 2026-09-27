@@ -3028,5 +3028,1154 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "antikoagulasyon": {
+    "baslik": "Antikoagülasyon",
+    "aciklama": "Antikoagülasyon stratejileri sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Salazar CA, Malaga G, Malasquez G, Bernardo R. Direct factor Xa inhibitors versus low molecular weight heparins or vitamin K antagonists for prevention of venous thromboembolism in elective primary hip or knee replacement or hip fracture repair. Cochrane Database Syst Rev 2015:CD011762",
+        "yil": 2015,
+        "url": "https://doi.org/10.1002/14651858.cd011762",
+        "tur": "makale"
+      },
+      {
+        "ad": "Engelbertz C, Reinecke H, Köppe J. Direct oral anticoagulants versus phenprocoumon: Mortality, thromboembolism and major hemorrhage. A systematic review and meta-analysis of routine data studies. Dtsch Arztebl Int 2026",
+        "yil": 2026,
+        "url": "https://doi.org/10.3238/arztebl.m2026.0064",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kakaletsis N, Ntaios G. Who may benefit from oral anticoagulation following an embolic stroke of undetermined source? Pol Arch Intern Med 2025",
+        "yil": 2025,
+        "url": "https://doi.org/10.20452/pamw.17139",
+        "tur": "makale"
+      },
+      {
+        "ad": "Deleenheer B, Cuerda C, Jeppesen PB, ve ark. Long-term antithrombotic therapy practices in adult patients with short bowel syndrome following acute mesenteric ischemia: an international survey. Intest Fail 2025;6:100182",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.intf.2025.100182",
+        "tur": "makale"
+      },
+      {
+        "ad": "Almalbis CA, Md Redzuan A, Andrada CP, ve ark. Peak and trough concentrations of apixaban and rivaroxaban in adult patients: a systematic review and meta-analysis. J Thromb Haemost 2025;23(4):1289-1314",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.jtha.2024.12.032",
+        "tur": "makale"
+      },
+      {
+        "ad": "Taree NA, Lee A, Sivak A, ve ark. Rate of abnormal uterine bleeding in women on anticoagulation for venous thromboembolism: systematic review and meta-analysis. J Thromb Haemost 2026;24(6):1979-1992",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.jtha.2026.01.030",
+        "tur": "makale"
+      },
+      {
+        "ad": "Coyle M, Lynch A, Higgins M, ve ark. Risk of Intracranial Hemorrhage Associated With Direct Oral Anticoagulation vs Antiplatelet Therapy: A Systematic Review and Meta-Analysis. JAMA Netw Open 2024;7(12):e2449017",
+        "yil": 2024,
+        "url": "https://doi.org/10.1001/jamanetworkopen.2024.49017",
+        "tur": "makale"
+      },
+      {
+        "ad": "Spooner MT, Messé SR, Chaturvedi S, ve ark. 2024 ACC Expert Consensus Decision Pathway on Practical Approaches for Arrhythmia Monitoring After Stroke. J Am Coll Cardiol 2025;85(6):657-681",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.jacc.2024.10.100",
+        "tur": "makale"
+      },
+      {
+        "ad": "Fan Y, Chen X, Jiang Y, ve ark. Use of factor XI/XIa inhibitors in patients with atrial fibrillation: Current progress and future prospects. Ageing Res Rev 2025;112:102895",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.arr.2025.102895",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hoffman R, Benz EJ, Silberstein LE, Salama ME, ed. Hematology: Basic Principles and Practice. 8. baskı. Elsevier; 2022",
+        "yil": 2022,
+        "url": "https://shop.elsevier.com/books/hematology/hoffman/978-0-323-73388-5",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Lip GY. Acute coronary syndrome: Oral anticoagulation in medically treated patients. UpToDate; son güncelleme 4 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/acute-coronary-syndrome-oral-anticoagulation-in-medically-treated-patients",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Zwicker J, Leader A. Anticoagulation in individuals with thrombocytopenia. UpToDate; son güncelleme 23 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/anticoagulation-in-individuals-with-thrombocytopenia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Manning WJ, Singer DE, Lip GY. Atrial fibrillation in adults: Selection of candidates for long-term anticoagulation. UpToDate; son güncelleme 25 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/atrial-fibrillation-in-adults-selection-of-candidates-for-long-term-anticoagulation",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Manning WJ, Singer DE, Lip GY. Atrial fibrillation in adults: Use of oral anticoagulants. UpToDate; son güncelleme 15 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/atrial-fibrillation-in-adults-use-of-oral-anticoagulants",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kumar K. Atrial fibrillation: Overview of management. UpToDate; son güncelleme 15 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/atrial-fibrillation-overview-of-management",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Leung LL. Direct oral anticoagulants (DOACs) and parenteral direct-acting anticoagulants: Dosing and adverse effects. UpToDate; son güncelleme 27 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/direct-oral-anticoagulants-doacs-and-parenteral-direct-acting-anticoagulants-dosing-and-adverse-effects",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Oliveira-Filho J, Mullen MT. Early antithrombotic treatment of acute ischemic stroke and transient ischemic attack. UpToDate; son güncelleme 15 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/early-antithrombotic-treatment-of-acute-ischemic-stroke-and-transient-ischemic-attack",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Garcia DA, Crowther M. Management of bleeding in patients receiving direct oral anticoagulants. UpToDate; son güncelleme 1 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-bleeding-in-patients-receiving-direct-oral-anticoagulants",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Spragg D, Kumar K. Paroxysmal atrial fibrillation. UpToDate; son güncelleme 7 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/paroxysmal-atrial-fibrillation",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Douketis JD, Lip GY. Perioperative management of patients receiving anticoagulants. UpToDate; son güncelleme 23 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/perioperative-management-of-patients-receiving-anticoagulants",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Phang R, Manning WJ. Prevention of embolization prior to and after restoration of sinus rhythm in atrial fibrillation. UpToDate; son güncelleme 28 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/prevention-of-embolization-prior-to-and-after-restoration-of-sinus-rhythm-in-atrial-fibrillation",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Lip GY, Stevens SM. Venous thromboembolism: Initiation of anticoagulation. UpToDate; son güncelleme 26 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/venous-thromboembolism-initiation-of-anticoagulation",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "hit": {
+    "baslik": "Heparin ilişkili trombositopeni",
+    "aciklama": "Heparin ilişkili trombositopeni (HİT) sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Arachchillage DJ, Thachil J, Anderson JAM, ve ark. Diagnosis and management of heparin-induced thrombocytopenia: Third edition. Br J Haematol 2024;204(2):459-475",
+        "yil": 2024,
+        "url": "https://doi.org/10.1111/bjh.19180",
+        "tur": "makale"
+      },
+      {
+        "ad": "Dmitriev AP, Akouris PP, Javidan AP, ve ark. Alternative anticoagulants in heparin-sensitive patients undergoing carotid artery interventions: A scoping review. J Vasc Surg 2026;83(6):1542-1552.e1",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.jvs.2026.02.007",
+        "tur": "makale"
+      },
+      {
+        "ad": "Haffler ZJ, Hughes TG, Yeager LS. Intraoperative Bivalirudin Use in Patient Undergoing Femoral Endarterectomy with Heparin-Induced Thrombocytopenia: Case Report and Review of the Literature. Vasc Endovascular Surg 2024;58(4):452-456",
+        "yil": 2024,
+        "url": "https://doi.org/10.1177/15385744231216034",
+        "tur": "makale"
+      },
+      {
+        "ad": "Laporte S, Benhamou Y, Bertoletti L, ve ark. Management of cancer-associated thromboembolism in vulnerable population. Arch Cardiovasc Dis 2024;117(1):45-59",
+        "yil": 2024,
+        "url": "https://doi.org/10.1016/j.acvd.2023.11.009",
+        "tur": "makale"
+      },
+      {
+        "ad": "Scully M, Lester WA. Demystifying autoimmune HIT: what it is, when to test, and how to treat. Hematology Am Soc Hematol Educ Program 2024;2024(1):403-408",
+        "yil": 2024,
+        "url": "https://doi.org/10.1182/hematology.2024000565",
+        "tur": "makale"
+      },
+      {
+        "ad": "Stojadinovic M, Jankovic S, Zivkovic-Zaric R, ve ark. Safety and efficacy of fondaparinux use in hemodialysis patients with heparin-induced thrombocytopenia: a systematic review. Eur J Clin Pharmacol 2025;81(12):1759-1772",
+        "yil": 2025,
+        "url": "https://doi.org/10.1007/s00228-025-03913-8",
+        "tur": "makale"
+      },
+      {
+        "ad": "Sukumaran M, Cantrell DR, D'Agostino C, ve ark. Bivalirudin as a substitute for heparin in neurointervention for patients with heparin-induced thrombocytopenia. J Stroke Cerebrovasc Dis 2024;33(6):107310",
+        "yil": 2024,
+        "url": "https://doi.org/10.1016/j.jstrokecerebrovasdis.2023.107310",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zhang X, Zhou M, Wu P, ve ark. Type II heparin-induced thrombocytopenia in a maintenance hemodialysis patient: A case report and literature review. Medicine (Baltimore) 2025;104(39):e44821",
+        "yil": 2025,
+        "url": "https://doi.org/10.1097/md.0000000000044821",
+        "tur": "makale"
+      },
+      {
+        "ad": "Guidelines for the diagnosis and treatment of heparin-induced thrombocytopenia. Jpn J Thromb Hemost 2021;32(6):737-782",
+        "yil": 2021,
+        "url": "https://doi.org/10.2491/jjsth.32.737",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hoffman R, Benz EJ, Silberstein LE, Salama ME, ed. Hematology: Basic Principles and Practice. 8. baskı. Elsevier; 2022. Bölüm: Heparin-Induced Thrombocytopenia",
+        "yil": 2022,
+        "url": "https://shop.elsevier.com/books/hematology/hoffman/978-0-323-73388-5",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Bain BJ, Bates I, Laffan MA, ed. Dacie and Lewis Practical Haematology. 12. baskı. Elsevier; 2016. Bölüm: Laboratory Control of Anticoagulant, Thrombolytic and Antiplatelet Therapy",
+        "yil": 2016,
+        "url": "https://shop.elsevier.com/books/dacie-and-lewis-practical-haematology/bain/978-0-7020-6696-2",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Ferri FF. Ferri's Clinical Advisor 2024. Elsevier; 2023",
+        "yil": 2023,
+        "url": "https://shop.elsevier.com/books/ferris-clinical-advisor-2024/ferri/978-0-323-75576-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Crowther M, Pishko A. Management of heparin-induced thrombocytopenia. UpToDate; son güncelleme 9 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-heparin-induced-thrombocytopenia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ortel TL, Welsby IJ. Management of heparin-induced thrombocytopenia (HIT) during cardiac or vascular surgery. UpToDate; son güncelleme 13 Eki 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/management-of-heparin-induced-thrombocytopenia-hit-during-cardiac-or-vascular-surgery",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Pishko A, Crowther M. Clinical presentation and diagnosis of heparin-induced thrombocytopenia. UpToDate; son güncelleme 29 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-presentation-and-diagnosis-of-heparin-induced-thrombocytopenia",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "itp": {
+    "baslik": "İmmün trombositopeni",
+    "aciklama": "İmmün trombositopeni (İTP) sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "González-López TJ, Provan D, Bárez A, ve ark. Primary and secondary immune thrombocytopenia (ITP): Time for a rethink. Blood Rev 2023;61:101112",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.blre.2023.101112",
+        "tur": "makale"
+      },
+      {
+        "ad": "Huang N, Liu Z, Li R, ve ark. Clinical characteristics, treatment, and outcomes of Oxaliplatin-induced immune thrombocytopenia. Front Immunol 2026;17:1809508",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fimmu.2026.1809508",
+        "tur": "makale"
+      },
+      {
+        "ad": "Janson M, Cherifi F, Bardet H, Damaj G. Hematological immune-related adverse events associated with checkpoint inhibitors. Cancer Treat Rev 2026;145:103121",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.ctrv.2026.103121",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lambert C, Maitland H, Ghanima W. Risk-based and individualised management of bleeding and thrombotic events in adults with primary immune thrombocytopenia (ITP). Eur J Haematol 2024;112(4):504-515",
+        "yil": 2024,
+        "url": "https://doi.org/10.1111/ejh.14154",
+        "tur": "makale"
+      },
+      {
+        "ad": "Liu XG, Hou Y, Hou M. How we treat primary immune thrombocytopenia in adults. J Hematol Oncol 2023;16(1):4",
+        "yil": 2023,
+        "url": "https://doi.org/10.1186/s13045-023-01401-z",
+        "tur": "makale"
+      },
+      {
+        "ad": "Liu Y, Zhang HX, Su J, ve ark. Efficacy and Incidence of Treatment-Related Adverse Events of Thrombopoietin Receptor Agonists in Adults with Immune Thrombocytopenia: A Systematic Review and Network Meta-Analysis of Randomized Controlled Study. Acta Haematol 2023;146(3):173-184",
+        "yil": 2023,
+        "url": "https://doi.org/10.1159/000528642",
+        "tur": "makale"
+      },
+      {
+        "ad": "Mititelu A, Onisâi MC, Roșca A, Vlădăreanu AM. Current Understanding of Immune Thrombocytopenia: A Review of Pathogenesis and Treatment Options. Int J Mol Sci 2024;25(4):2163",
+        "yil": 2024,
+        "url": "https://doi.org/10.3390/ijms25042163",
+        "tur": "makale"
+      },
+      {
+        "ad": "Nelson VS, Zlamal J, Kapur R. The glycan fingerprint in immune thrombocytopenia. Res Pract Thromb Haemost 2026;10(2):103388",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.rpth.2026.103388",
+        "tur": "makale"
+      },
+      {
+        "ad": "Petito E, Gresele P. Immune attack on megakaryocytes in immune thrombocytopenia. Res Pract Thromb Haemost 2024;8(1):102345",
+        "yil": 2024,
+        "url": "https://doi.org/10.1016/j.rpth.2024.102345",
+        "tur": "makale"
+      },
+      {
+        "ad": "Tungjitviboonkun S, Bumrungratanayos N, Jitwimungsanon J, ve ark. Efficacy and safety of fostamatinib in refractory immune thrombocytopenia: a meta-analysis from randomized controlled trials. Ann Hematol 2024;103(9):3357-3368",
+        "yil": 2024,
+        "url": "https://doi.org/10.1007/s00277-024-05824-7",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chowdhury SR, Sirotich E, Guyatt G, ve ark. Treatment of Critical Bleeds in Patients With Immune Thrombocytopenia: A Systematic Review. Eur J Haematol 2025;114(3):458-468",
+        "yil": 2025,
+        "url": "https://doi.org/10.1111/ejh.14351",
+        "tur": "makale"
+      },
+      {
+        "ad": "Crickx E, Mahévas M, Michel M, Godeau B. Older Adults and Immune Thrombocytopenia: Considerations for the Clinician. Clin Interv Aging 2023;18:115-130",
+        "yil": 2023,
+        "url": "https://doi.org/10.2147/CIA.S369574",
+        "tur": "makale"
+      },
+      {
+        "ad": "National Institute for Health and Care Excellence. Romiplostim for the treatment of chronic immune thrombocytopenia. Technology appraisal guidance TA221",
+        "url": "https://www.nice.org.uk/guidance/ta221",
+        "tur": "makale"
+      },
+      {
+        "ad": "National Institute for Health and Care Excellence. Avatrombopag for treating primary chronic immune thrombocytopenia. Technology appraisal guidance TA853",
+        "url": "https://www.nice.org.uk/guidance/ta853",
+        "tur": "makale"
+      },
+      {
+        "ad": "National Institute for Health and Care Excellence. Fostamatinib for treating refractory chronic immune thrombocytopenia. Technology appraisal guidance TA835",
+        "url": "https://www.nice.org.uk/guidance/ta835",
+        "tur": "makale"
+      },
+      {
+        "ad": "Arnold DM, Cuker A. Drug-induced immune thrombocytopenia. UpToDate; son güncelleme 10 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/drug-induced-immune-thrombocytopenia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Arnold DM, Cuker A. Immune thrombocytopenia (ITP) in adults: Clinical manifestations and diagnosis. UpToDate; son güncelleme 16 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/immune-thrombocytopenia-itp-in-adults-clinical-manifestations-and-diagnosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Arnold DM, Cuker A. Second-line and subsequent therapies for immune thrombocytopenia (ITP) in adults. UpToDate; son güncelleme 29 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/second-line-and-subsequent-therapies-for-immune-thrombocytopenia-itp-in-adults",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "folikuler-lenfoma": {
+    "baslik": "Foliküler lenfoma",
+    "aciklama": "Foliküler lenfoma sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Abe Y. Follicular lymphoma microenvironment: insights provided by single-cell analysis. J Clin Exp Hematop 2023;63(3):143-151",
+        "yil": 2023,
+        "url": "https://doi.org/10.3960/jslrt.23012",
+        "tur": "makale"
+      },
+      {
+        "ad": "Friedberg JW. Update on follicular lymphoma. Hematol Oncol 2023;41(S1):43-47",
+        "yil": 2023,
+        "url": "https://doi.org/10.1002/hon.3138",
+        "tur": "makale"
+      },
+      {
+        "ad": "Khanlari M, Chapman JR. Follicular lymphoma: updates for pathologists. J Pathol Transl Med 2022;56(1):1-15",
+        "yil": 2022,
+        "url": "https://doi.org/10.4132/jptm.2021.09.29",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kumar E, Okosun J. Follicular Lymphoma: Current Therapeutic Landscape and Future Prospects. Hematol Oncol 2025;43(S2):e70070",
+        "yil": 2025,
+        "url": "https://doi.org/10.1002/hon.70070",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kurz KS, Kalmbach S, Ott M, ve ark. Follicular Lymphoma in the 5th Edition of the WHO-Classification of Haematolymphoid Neoplasms—Updated Classification and New Biological Data. Cancers 2023;15(3):785",
+        "yil": 2023,
+        "url": "https://doi.org/10.3390/cancers15030785",
+        "tur": "makale"
+      },
+      {
+        "ad": "Laurent C, Cook JR, Yoshino T, ve ark. Follicular lymphoma and marginal zone lymphoma: how many diseases? Virchows Arch 2023;482(1):149-162",
+        "yil": 2023,
+        "url": "https://doi.org/10.1007/s00428-022-03432-2",
+        "tur": "makale"
+      },
+      {
+        "ad": "Merryman R, Mehtap Ö, Lacasce A. Advancements in the Management of Follicular Lymphoma: A Comprehensive Review. Turk J Haematol 2024;41(2):69-82",
+        "yil": 2024,
+        "url": "https://doi.org/10.4274/tjh.galenos.2024.2024.0015",
+        "tur": "makale"
+      },
+      {
+        "ad": "Nizamuddin IA, Bartlett NL. Bispecific antibodies in follicular lymphoma. Haematologica 2024;110(7):1472-1482",
+        "yil": 2024,
+        "url": "https://doi.org/10.3324/haematol.2024.285245",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zinzani PL, Muñoz J, Trotman J. Current and future therapies for follicular lymphoma. Exp Hematol Oncol 2024;13(1):87",
+        "yil": 2024,
+        "url": "https://doi.org/10.1186/s40164-024-00551-1",
+        "tur": "makale"
+      },
+      {
+        "ad": "Brown JR, Freedman AS, Aster JC. Pathobiology of follicular lymphoma. UpToDate; son güncelleme 16 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/pathobiology-of-follicular-lymphoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Freedman AS, Aster JC. T follicular helper cell lymphoma, angioimmunoblastic type (angioimmunoblastic T cell lymphoma): Clinical manifestations, pathologic features, and diagnosis. UpToDate; son güncelleme 20 Kas 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/t-follicular-helper-cell-lymphoma-angioimmunoblastic-type-angioimmunoblastic-t-cell-lymphoma-clinical-manifestations-pathologic-features-and-diagnosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Freedman AS, Aster JC, Salles G. Clinical manifestations, pathologic features, diagnosis, and prognosis of follicular lymphoma. UpToDate; son güncelleme 7 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-manifestations-pathologic-features-diagnosis-and-prognosis-of-follicular-lymphoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Freedman AS, Salles G, Aster JC. Histologic transformation of follicular lymphoma. UpToDate; son güncelleme 10 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/histologic-transformation-of-follicular-lymphoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Freedman AS, Ng AK, Salles G. Initial treatment of stage I follicular lymphoma. UpToDate; son güncelleme 14 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/initial-treatment-of-stage-i-follicular-lymphoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Freedman AS, Salles G. Initial treatment of stage II to IV follicular lymphoma. UpToDate; son güncelleme 17 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/initial-treatment-of-stage-ii-to-iv-follicular-lymphoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Freedman AS, Salles G. Treatment of relapsed or refractory follicular lymphoma. UpToDate; son güncelleme 3 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-relapsed-or-refractory-follicular-lymphoma",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "kml": {
+    "baslik": "Kronik miyeloid lösemi",
+    "aciklama": "Kronik miyeloid lösemi sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Apperley JF, Milojkovic D, Cross NCP, ve ark. 2025 European LeukemiaNet recommendations for the management of chronic myeloid leukemia. Leukemia 2025;39(8):1797-1813",
+        "yil": 2025,
+        "url": "https://doi.org/10.1038/s41375-025-02664-w",
+        "tur": "makale"
+      },
+      {
+        "ad": "Puglianini OC, Peker D, Zhang L, Papadantonakis N. Essential Thrombocythemia and Post-Essential Thrombocythemia Myelofibrosis: Updates on Diagnosis, Clinical Aspects, and Management. Lab Med 2023;54(1):13-22",
+        "yil": 2023,
+        "url": "https://doi.org/10.1093/labmed/lmac074",
+        "tur": "makale"
+      },
+      {
+        "ad": "Costa A, Scalzulli E, Bisegna ML, Breccia M. Asciminib in the treatment of chronic myeloid leukemia in chronic phase. Future Oncol 2025;21(7):815-831",
+        "yil": 2025,
+        "url": "https://doi.org/10.1080/14796694.2025.2464494",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cross NCP, Ernst T, Branford S, ve ark. European LeukemiaNet laboratory recommendations for the diagnosis and management of chronic myeloid leukemia. Leukemia 2023;37(11):2150-2167",
+        "yil": 2023,
+        "url": "https://doi.org/10.1038/s41375-023-02048-y",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cruz-Rodriguez N, Deininger MW. Novel treatment strategies for chronic myeloid leukemia. Blood 2025;145(9):931-943",
+        "yil": 2025,
+        "url": "https://doi.org/10.1182/blood.2024026312",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hochhaus A, Baccarani M, Silver RT, ve ark. European LeukemiaNet 2020 recommendations for treating chronic myeloid leukemia. Leukemia 2020;34(4):966-984",
+        "yil": 2020,
+        "url": "https://doi.org/10.1038/s41375-020-0776-2",
+        "tur": "makale"
+      },
+      {
+        "ad": "Iezza M, Cortesi S, Ottaviani E, ve ark. Prognosis in Chronic Myeloid Leukemia: Baseline Factors, Dynamic Risk Assessment and Novel Insights. Cells 2023;12(13):1703",
+        "yil": 2023,
+        "url": "https://doi.org/10.3390/cells12131703",
+        "tur": "makale"
+      },
+      {
+        "ad": "Jabbour E, Kantarjian H. Chronic Myeloid Leukemia: A Review. JAMA 2025;333(18):1618",
+        "yil": 2025,
+        "url": "https://doi.org/10.1001/jama.2025.0220",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kantarjian H, Breccia M, Haddad FG, ve ark. Management of chronic myeloid leukemia in 2025. Cancer 2025;131(14):e35953",
+        "yil": 2025,
+        "url": "https://doi.org/10.1002/cncr.35953",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kausar MA, Anwar S, Khan YS, ve ark. Autophagy and Cancer: Insights into Molecular Mechanisms and Therapeutic Approaches for Chronic Myeloid Leukemia. Biomolecules 2025;15(2):215",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/biom15020215",
+        "tur": "makale"
+      },
+      {
+        "ad": "Patnaik MM, Tefferi A. Chronic myelomonocytic leukemia: 2024 update on diagnosis, risk stratification and management. Am J Hematol 2024;99(6):1142-1165",
+        "yil": 2024,
+        "url": "https://doi.org/10.1002/ajh.27271",
+        "tur": "makale"
+      },
+      {
+        "ad": "Rinaldi I, Winston K. Chronic Myeloid Leukemia, from Pathophysiology to Treatment-Free Remission: A Narrative Literature Review. J Blood Med 2023;14:261-277",
+        "yil": 2023,
+        "url": "https://doi.org/10.2147/jbm.s382090",
+        "tur": "makale"
+      },
+      {
+        "ad": "Tefferi A, Vannucchi AM, Barbui T. Essential thrombocythemia: 2024 update on diagnosis, risk stratification, and management. Am J Hematol 2024;99(4):697-718",
+        "yil": 2024,
+        "url": "https://doi.org/10.1002/ajh.27216",
+        "tur": "makale"
+      },
+      {
+        "ad": "Godfrey AL, Green AC, Harrison CN. Essential thrombocythemia: challenges in clinical practice and future prospects. Blood 2023;141(16):1943-1953",
+        "yil": 2023,
+        "url": "https://doi.org/10.1182/blood.2022017625",
+        "tur": "makale"
+      },
+      {
+        "ad": "Smith G, Apperley J, Milojkovic D, ve ark. A British Society for Haematology Guideline on the diagnosis and management of chronic myeloid leukaemia. Br J Haematol 2020;191(2):171-193",
+        "yil": 2020,
+        "url": "https://doi.org/10.1111/bjh.16971",
+        "tur": "makale"
+      },
+      {
+        "ad": "Negrin RS, Schiffer CA, Atallah E. Accelerated phase chronic myeloid leukemia: Diagnosis and treatment. UpToDate; son güncelleme 15 Ara 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/accelerated-phase-chronic-myeloid-leukemia-diagnosis-and-treatment",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Negrin RS, Schiffer CA, Atallah E. Chronic myeloid leukemia-blast phase: Diagnosis and treatment. UpToDate; son güncelleme 4 Kas 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/chronic-myeloid-leukemia-blast-phase-diagnosis-and-treatment",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Schiffer CA, Atallah E. Overview of the treatment of chronic myeloid leukemia. UpToDate; son güncelleme 3 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/overview-of-the-treatment-of-chronic-myeloid-leukemia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Schiffer CA, Atallah E. Chronic myeloid leukemia in chronic phase: Initial treatment. UpToDate; son güncelleme 1 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/chronic-myeloid-leukemia-in-chronic-phase-initial-treatment",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Negrin RS, Schiffer CA, Atallah E. Treatment of chronic phase chronic myeloid leukemia after failure of the initial tyrosine kinase inhibitor. UpToDate; son güncelleme 28 May 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/treatment-of-chronic-phase-chronic-myeloid-leukemia-after-failure-of-the-initial-tyrosine-kinase-inhibitor",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Tefferi A. Essential thrombocythemia: Clinical manifestations and diagnosis. UpToDate; son güncelleme 18 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/essential-thrombocythemia-clinical-manifestations-and-diagnosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Tefferi A, Vannucchi AM. Essential thrombocythemia: Treatment and prognosis. UpToDate; son güncelleme 26 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/essential-thrombocythemia-treatment-and-prognosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Etten RAV, Atallah E. Chronic myeloid leukemia: Pathogenesis, clinical manifestations, and diagnosis. UpToDate; son güncelleme 23 Nis 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/chronic-myeloid-leukemia-pathogenesis-clinical-manifestations-and-diagnosis",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "aml": {
+    "baslik": "Akut miyeloid lösemi",
+    "aciklama": "Akut miyeloid lösemi sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Dennis M, Copland M, Kaur H, ve ark. Management of older patients with frailty and acute myeloid leukaemia: A British Society for Haematology good practice paper. Br J Haematol 2022;199(2):205-221",
+        "yil": 2022,
+        "url": "https://doi.org/10.1111/bjh.18369",
+        "tur": "makale"
+      },
+      {
+        "ad": "Döhner H, DiNardo CD, Appelbaum FR, ve ark. Genetic risk classification for adults with AML receiving less-intensive therapies: the 2024 ELN recommendations. Blood 2024;144(21):2169-2173",
+        "yil": 2024,
+        "url": "https://doi.org/10.1182/blood.2024025409",
+        "tur": "makale"
+      },
+      {
+        "ad": "Goldman L, Cooney KA, ed. Goldman-Cecil Medicine. 27. baskı. Elsevier; 2023. Bölüm: The Acute Leukemias",
+        "yil": 2023,
+        "url": "https://shop.elsevier.com/books/goldman-cecil-medicine/goldman/978-0-323-93038-3",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Zhang Y, Beau MML. Acute myeloid leukemia: Cytogenetic abnormalities. UpToDate; son güncelleme 11 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/acute-myeloid-leukemia-cytogenetic-abnormalities",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kolitz JE. Acute myeloid leukemia in adults: Overview. UpToDate; son güncelleme 14 Oca 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/acute-myeloid-leukemia-in-adults-overview",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Larson RA, Klepin HD. Acute myeloid leukemia in older adults: Pretreatment evaluation and prognosis. UpToDate; son güncelleme 19 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/acute-myeloid-leukemia-in-older-adults-pretreatment-evaluation-and-prognosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Larson RA. Acute myeloid leukemia: Management of medically unfit adults. UpToDate; son güncelleme 4 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/acute-myeloid-leukemia-management-of-medically-unfit-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Larson RA. Treatment of relapsed or refractory acute myeloid leukemia. UpToDate; son güncelleme 20 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/treatment-of-relapsed-or-refractory-acute-myeloid-leukemia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Larson RA, Uy G. Acute myeloid leukemia in medically fit adults: Post-remission therapy. UpToDate; son güncelleme 3 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/acute-myeloid-leukemia-in-medically-fit-adults-post-remission-therapy",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Larson RA, Uy G. Acute myeloid leukemia: Induction therapy in fit, younger adults. UpToDate; son güncelleme 16 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/acute-myeloid-leukemia-induction-therapy-in-fit-younger-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Myers KC, Corbacioglu S. Hematopoietic cell transplantation for acute myeloid leukemia and myelodysplastic syndromes in children and adolescents. UpToDate; son güncelleme 9 Ağu 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/hematopoietic-cell-transplantation-for-acute-myeloid-leukemia-and-myelodysplastic-syndromes-in-children-and-adolescents",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Schiffer CA, Gurbuxani S. Acute myeloid leukemia: Classification. UpToDate; son güncelleme 12 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/acute-myeloid-leukemia-classification",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Schiffer CA, Gurbuxani S. Acute myeloid leukemia: Clinical manifestations, pathologic features, and diagnosis. UpToDate; son güncelleme 22 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/acute-myeloid-leukemia-clinical-manifestations-pathologic-features-and-diagnosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Schiffer CA, Uy G. Acute myeloid leukemia: Involvement of the central nervous system. UpToDate; son güncelleme 17 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/acute-myeloid-leukemia-involvement-of-the-central-nervous-system",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Schiffer CA, Uy G. Acute myeloid leukemia: Risk factors and prognosis. UpToDate; son güncelleme 15 Oca 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/acute-myeloid-leukemia-risk-factors-and-prognosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Schiffer CA, Wang ES. Acute myeloid leukemia: Overview of complications. UpToDate; son güncelleme 14 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/acute-myeloid-leukemia-overview-of-complications",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Stock W, Thirman MJ. Acute myeloid leukemia: Molecular genetics. UpToDate; son güncelleme 13 Kas 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/acute-myeloid-leukemia-molecular-genetics",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Stock W, Thirman MJ. Acute myeloid leukemia: Pathogenesis. UpToDate; son güncelleme 14 Oca 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/acute-myeloid-leukemia-pathogenesis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Schiffer CA, Wang ES. Hyperleukocytosis and leukostasis in hematologic malignancies. UpToDate; son güncelleme 28 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/hyperleukocytosis-and-leukostasis-in-hematologic-malignancies",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "mantle-hucreli-lenfoma": {
+    "baslik": "Mantle hücreli lenfoma",
+    "aciklama": "Mantle hücreli lenfoma sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Cartagena J, Deshpande A, Rosenthal A, ve ark. Measurable Residual Disease in Mantle Cell Lymphoma: The Unbearable Lightness of Being Undetectable. Curr Oncol Rep 2024;26(12):1664-1674",
+        "yil": 2024,
+        "url": "https://doi.org/10.1007/s11912-024-01620-8",
+        "tur": "makale"
+      },
+      {
+        "ad": "Deshotels L, Safa F, Saba N. NOTCH Signaling in Mantle Cell Lymphoma: Biological and Clinical Implications. Int J Mol Sci 2023;24(12):10280",
+        "yil": 2023,
+        "url": "https://doi.org/10.3390/ijms241210280",
+        "tur": "makale"
+      },
+      {
+        "ad": "Eyre TA, Cheah CY, Wang ML. Therapeutic options for relapsed/refractory mantle cell lymphoma. Blood 2022;139(5):666-677",
+        "yil": 2022,
+        "url": "https://doi.org/10.1182/blood.2021013326",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ferrero S, Ragaini S. Advancing Mantle Cell Lymphoma Risk Assessment: Navigating a Moving Target. Hematol Oncol 2025;43(S2):e70072",
+        "yil": 2025,
+        "url": "https://doi.org/10.1002/hon.70072",
+        "tur": "makale"
+      },
+      {
+        "ad": "O’Leary AM, D’Angelo CR. Mantle cell lymphoma: from pathogenesis to treatment for 2024 and beyond. Panminerva Med 2025;67(2)",
+        "yil": 2025,
+        "url": "https://doi.org/10.23736/s0031-0808.25.05268-1",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ryan CE, Armand P, LaCasce AS. Frontline management of mantle cell lymphoma. Blood 2025;145(7):663-672",
+        "yil": 2025,
+        "url": "https://doi.org/10.1182/blood.2023022352",
+        "tur": "makale"
+      },
+      {
+        "ad": "Thomas CJ, Carvajal V, Barta SK. Targeted Therapies in the Treatment of Mantle Cell Lymphoma. Cancers 2024;16(10):1937",
+        "yil": 2024,
+        "url": "https://doi.org/10.3390/cancers16101937",
+        "tur": "makale"
+      },
+      {
+        "ad": "Aster JC, Herrera AF. Mantle cell lymphoma: Epidemiology, pathobiology, clinical manifestations, diagnosis, and prognosis. UpToDate; son güncelleme 30 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/mantle-cell-lymphoma-epidemiology-pathobiology-clinical-manifestations-diagnosis-and-prognosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Herrera AF. Mantle cell lymphoma: Initial management. UpToDate; son güncelleme 17 Şub 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/mantle-cell-lymphoma-initial-management",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Brown JR, Aster JC. Pathobiology of mantle cell lymphoma. UpToDate; son güncelleme 23 Nis 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/pathobiology-of-mantle-cell-lymphoma",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Freedman AS, Friedberg JW. Treatment of relapsed or refractory mantle cell lymphoma. UpToDate; son güncelleme 8 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-relapsed-or-refractory-mantle-cell-lymphoma",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "still": {
+    "baslik": "Erişkin Still hastalığı",
+    "aciklama": "Erişkin başlangıçlı Still hastalığı sayfası bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konunun kaynakçasıdır; her künye her bölümün dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Bindoli S, Baggio C, Doria A, Sfriso P. Adult-Onset Still’s Disease (AOSD): Advances in Understanding Pathophysiology, Genetics and Emerging Treatment Options. Drugs 2024;84(3):257-274",
+        "yil": 2024,
+        "url": "https://doi.org/10.1007/s40265-024-01993-x",
+        "tur": "makale"
+      },
+      {
+        "ad": "De Matteis A, Bindoli S, De Benedetti F, Carmona L, Fautrel B, Mitrovic S. Systemic juvenile idiopathic arthritis and adult-onset Still's disease are the same disease: evidence from systematic reviews and meta-analyses informing the 2023 EULAR/PReS recommendations for the diagnosis and management of Still's disease. Ann Rheum Dis 2024;83(12):1748-1761",
+        "yil": 2024,
+        "url": "https://doi.org/10.1136/ard-2024-225853",
+        "tur": "makale"
+      },
+      {
+        "ad": "Fautrel B, Mitrovic S, De Matteis A, ve ark. EULAR/PReS recommendations for the diagnosis and management of Still's disease, comprising systemic juvenile idiopathic arthritis and adult-onset Still's disease. Ann Rheum Dis 2024;83(12):1614-1627",
+        "yil": 2024,
+        "url": "https://doi.org/10.1136/ard-2024-225851",
+        "tur": "makale"
+      },
+      {
+        "ad": "Macovei LA, Burlui A, Bratoiu I, ve ark. Adult-Onset Still’s Disease—A Complex Disease, a Challenging Treatment. Int J Mol Sci 2022;23(21):12810",
+        "yil": 2022,
+        "url": "https://doi.org/10.3390/ijms232112810",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kolfenbach J, West SG, ed. Rheumatology Secrets. 5. baskı. Elsevier; 2025. Bölüm: Adult-Onset Still's Disease",
+        "yil": 2025,
+        "url": "https://shop.elsevier.com/books/rheumatology-secrets/kolfenbach/978-0-443-12794-6",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Hochberg MC, Gravallese EM, Smolen JS, van der Heijde D, Weinblatt ME, Weisman MH, ed. Rheumatology. 8. baskı. Elsevier; 2022",
+        "yil": 2022,
+        "url": "https://shop.elsevier.com/books/rheumatology-2-volume-set/hochberg/978-0-7020-8133-0",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Goldman L, Cooney KA, ed. Goldman-Cecil Medicine. 27. baskı. Elsevier; 2023. Bölüm: The Systemic Autoinflammatory Diseases",
+        "yil": 2023,
+        "url": "https://shop.elsevier.com/books/goldman-cecil-medicine-2-volume-set/goldman/978-0-323-93038-3",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Imazio M. Pericardial involvement in systemic autoimmune diseases. UpToDate; son güncelleme 7 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/pericardial-involvement-in-systemic-autoimmune-diseases",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kimura Y, Schulert G. Systemic juvenile idiopathic arthritis: Clinical manifestations and diagnosis. UpToDate; son güncelleme 2 Tem 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/systemic-juvenile-idiopathic-arthritis-clinical-manifestations-and-diagnosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Mandl LA. Still's disease in adults: Clinical manifestations and diagnosis. UpToDate; son güncelleme 2 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/stills-disease-in-adults-clinical-manifestations-and-diagnosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Mandl LA, Nigrovic PA. Still's disease in adults: Treatment. UpToDate; son güncelleme 10 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/stills-disease-in-adults-treatment",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Sexton DJ. Fever of unknown origin in adults: Etiologies. UpToDate; son güncelleme 11 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/fever-of-unknown-origin-in-adults-etiologies",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "romatoid-artrit": {
+    "baslik": "Romatoid artrit",
+    "aciklama": "Romatoid artrit sayfaları bir kaynak defterinden hazırlandı. Defterin kaynaklarının tamamı UpToDate konularıdır; her biri başlık ve yazarıyla doğrulandı, tarih son güncellemedir. Defterde kısaltılmış geçen başlıklar UpToDate'teki tam adıyla yazıldı. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Antonelli M. Acute phase reactants. UpToDate; son güncelleme 16 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/acute-phase-reactants",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Wallace DJ. Antimalarial drugs in the treatment of rheumatic disease. UpToDate; son güncelleme 30 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/antimalarial-drugs-in-the-treatment-of-rheumatic-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "England BR. Articular manifestations of rheumatoid arthritis. UpToDate; son güncelleme 1 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/articular-manifestations-of-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Smolen JS, Aletaha D. Assessment of rheumatoid arthritis disease activity and physical function. UpToDate; son güncelleme 18 Eyl 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/assessment-of-rheumatoid-arthritis-disease-activity-and-physical-function",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Belmont HM. Azathioprine: Overview of use and adverse effects in the treatment of rheumatic diseases. UpToDate; son güncelleme 2 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/azathioprine-overview-of-use-and-adverse-effects-in-the-treatment-of-rheumatic-diseases",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Shmerling RH, Greisen SR. Biologic markers in the assessment of rheumatoid arthritis. UpToDate; son güncelleme 13 Eki 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/biologic-markers-in-the-assessment-of-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Currier BL, Coblyn J. Cervical subluxation in rheumatoid arthritis. UpToDate; son güncelleme 22 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/cervical-subluxation-in-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kay J. Clinical manifestations and diagnosis of Felty syndrome. UpToDate; son güncelleme 21 Tem 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/clinical-manifestations-and-diagnosis-of-felty-syndrome",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Liao KP, Malhotra R. Coronary artery disease in rheumatoid arthritis: Implications for prevention and management. UpToDate; son güncelleme 28 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/coronary-artery-disease-in-rheumatoid-arthritis-implications-for-prevention-and-management",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Liao KP. Coronary artery disease in rheumatoid arthritis: Pathogenesis, risk factors, clinical manifestations, and diagnostic implications. UpToDate; son güncelleme 6 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/coronary-artery-disease-in-rheumatoid-arthritis-pathogenesis-risk-factors-clinical-manifestations-and-diagnostic-implications",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "McCune WJ, Clowse MB. Cyclophosphamide in rheumatic diseases: General principles of use and toxicity. UpToDate; son güncelleme 20 May 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/cyclophosphamide-in-rheumatic-diseases-general-principles-of-use-and-toxicity",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Baker JF. Diagnosis and differential diagnosis of rheumatoid arthritis. UpToDate; son güncelleme 20 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/diagnosis-and-differential-diagnosis-of-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Giles JT. Disease outcome and functional capacity in rheumatoid arthritis. UpToDate; son güncelleme 25 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/disease-outcome-and-functional-capacity-in-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kay J. Drug therapy in Felty syndrome. UpToDate; son güncelleme 28 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/drug-therapy-in-felty-syndrome",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Matson SM. Drug-induced lung disease in rheumatoid arthritis. UpToDate; son güncelleme 15 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/drug-induced-lung-disease-in-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "England BR, Mikuls TR. Epidemiology of, risk factors for, and possible causes of rheumatoid arthritis. UpToDate; son güncelleme 8 Eyl 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/epidemiology-of-risk-factors-for-and-possible-causes-of-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Helfgott SM. Evaluation and medical management of end-stage rheumatoid arthritis. UpToDate; son güncelleme 14 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/evaluation-and-medical-management-of-end-stage-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Shmerling RH, Miloslavsky EM. Evaluation of polyarticular joint pain (polyarthralgia) in adults. UpToDate; son güncelleme 18 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/evaluation-of-polyarticular-joint-pain-polyarthralgia-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Liao KP, Yu PB. Heart failure in rheumatoid arthritis. UpToDate; son güncelleme 10 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/heart-failure-in-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ehrenfeld M, Shoenfeld Y. Hematologic complications of rheumatoid arthritis. UpToDate; son güncelleme 23 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/hematologic-complications-of-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kremer JM. Hepatotoxicity associated with chronic low-dose methotrexate for nonmalignant disease. UpToDate; son güncelleme 20 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/hepatotoxicity-associated-with-chronic-low-dose-methotrexate-for-nonmalignant-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Viatte S. HLA and other susceptibility genes in rheumatoid arthritis. UpToDate; son güncelleme 14 May 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/hla-and-other-susceptibility-genes-in-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Cohen S, Mikuls TR. Initial pharmacologic management of rheumatoid arthritis in adults. UpToDate; son güncelleme 18 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/initial-pharmacologic-management-of-rheumatoid-arthritis-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Matson SM. Interstitial lung disease in rheumatoid arthritis. UpToDate; son güncelleme 12 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/interstitial-lung-disease-in-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Berliner N. Large granular lymphocyte leukemia in rheumatoid arthritis. UpToDate; son güncelleme 22 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/large-granular-lymphocyte-leukemia-in-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kremer JM. Major adverse effects of low-dose methotrexate. UpToDate; son güncelleme 10 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/major-adverse-effects-of-low-dose-methotrexate",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Bhattacharyya S. Neurologic manifestations of rheumatoid arthritis. UpToDate; son güncelleme 31 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/neurologic-manifestations-of-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Johnson TM, Baker NA, England BR. Nonpharmacologic therapies for patients with rheumatoid arthritis. UpToDate; son güncelleme 16 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/nonpharmacologic-therapies-for-patients-with-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Thorne JE. Ocular manifestations of rheumatoid arthritis. UpToDate; son güncelleme 28 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/ocular-manifestations-of-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Liao KP, Yu PB. Overview of heart disease in rheumatoid arthritis. UpToDate; son güncelleme 17 Eyl 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/overview-of-heart-disease-in-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Moreland LW, Cannella A. Overview of the management of rheumatoid arthritis in adults. UpToDate; son güncelleme 13 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-the-management-of-rheumatoid-arthritis-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Davis JM. Overview of the systemic and nonarticular manifestations of rheumatoid arthritis. UpToDate; son güncelleme 31 Mar 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/overview-of-the-systemic-and-nonarticular-manifestations-of-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Firestein GS, Guma M. Pathogenesis of rheumatoid arthritis. UpToDate; son güncelleme 21 May 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/pathogenesis-of-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Hardinger K. Pharmacology of calcineurin inhibitors. UpToDate; son güncelleme 22 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/pharmacology-of-calcineurin-inhibitors",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Fox RI, Helfgott SM. Pharmacology, dosing, and adverse effects of leflunomide in the treatment of rheumatoid arthritis. UpToDate; son güncelleme 3 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/pharmacology-dosing-and-adverse-effects-of-leflunomide-in-the-treatment-of-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Bermas BL. Rheumatoid arthritis and pregnancy. UpToDate; son güncelleme 22 May 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/rheumatoid-arthritis-and-pregnancy",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Davis JM. Rheumatoid nodules. UpToDate; son güncelleme 22 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/rheumatoid-nodules",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Leandro MJ. Rituximab: Principles of use and adverse effects in rheumatologic disease. UpToDate; son güncelleme 10 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/rituximab-principles-of-use-and-adverse-effects-in-rheumatologic-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kay J. Role of splenectomy for Felty syndrome. UpToDate; son güncelleme 28 Şub 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/role-of-splenectomy-for-felty-syndrome",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rinaldi RZ, Spitzer AI, Aiyer A, LaPorte D. Surgical management of end-stage rheumatoid arthritis. UpToDate; son güncelleme 1 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/surgical-management-of-end-stage-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Gravallese EM, Chopra R. Synovial pathology in rheumatoid arthritis. UpToDate; son güncelleme 15 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/synovial-pathology-in-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Cohen S, Cannella A. Treatment of rheumatoid arthritis in adults resistant to initial biologic DMARD therapy. UpToDate; son güncelleme 20 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-rheumatoid-arthritis-in-adults-resistant-to-initial-biologic-dmard-therapy",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Cohen S, Cannella A. Treatment of rheumatoid arthritis in adults resistant to initial conventional synthetic (nonbiologic) DMARD therapy. UpToDate; son güncelleme 16 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-rheumatoid-arthritis-in-adults-resistant-to-initial-conventional-synthetic-nonbiologic-dmard-therapy",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Whelan P, Turesson C. Treatment of rheumatoid vasculitis. UpToDate; son güncelleme 26 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-rheumatoid-vasculitis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Panush RS, Kramer N, Rosenstein ED, Wise LM. Undifferentiated systemic rheumatic (connective tissue) disease and overlap syndromes. UpToDate; son güncelleme 8 Eki 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/undifferentiated-systemic-rheumatic-connective-tissue-disease-and-overlap-syndromes",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "O'Dell JR, George MD. Use of glucocorticoids in the treatment of rheumatoid arthritis. UpToDate; son güncelleme 31 Mar 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/use-of-glucocorticoids-in-the-treatment-of-rheumatoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kremer JM. Use of methotrexate in the treatment of rheumatoid arthritis. UpToDate; son güncelleme 22 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/use-of-methotrexate-in-the-treatment-of-rheumatoid-arthritis",
+        "tur": "uptodate"
+      }
+    ]
   }
 }
