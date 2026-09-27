@@ -174,7 +174,8 @@ export default async function YdusAnaSayfa({
 
     let totalTopics = 0;
     let readyTopics = 0;
-    let soruToplam = 0;
+    // Branşın GERÇEK envanteri — yalnızca soru değil (gerekçe istemcide `icerikOzeti`).
+    const toplam = { soru: 0, kart: 0, inci: 0, vaka: 0 };
 
     for (const kat of veri.kategoriler) {
       for (const konu of kat.konular) {
@@ -190,14 +191,18 @@ export default async function YdusAnaSayfa({
         // İlan edilen sayı değil, gerçek quiz dosyasındaki soru sayısı.
         // İlana güvenildiğinde pano, olmayan sorular dahil bir toplam
         // gösteriyordu (ör. aml-ana 24 ilan ediyor, gerçekte 9).
-        const soru = envanterAl(id, konu.id).soru;
-        soruToplam += soru;
+        const e = envanterAl(id, konu.id);
+        const sayi = { soru: e.soru, kart: e.flashcard, inci: e.inci, vaka: e.vaka };
+        toplam.soru += sayi.soru;
+        toplam.kart += sayi.kart;
+        toplam.inci += sayi.inci;
+        toplam.vaka += sayi.vaka;
 
         newest.push({
           topicId: konu.id,
           branchId: id,
           baslik: konu.baslik,
-          soru,
+          ...sayi,
           guncelleme: guncellemeAyi(konuVerisi?.meta?.guncelleme),
         });
       }
@@ -210,7 +215,7 @@ export default async function YdusAnaSayfa({
       renk: veri.meta.renk,
       readyTopics,
       totalTopics,
-      soru: soruToplam,
+      ...toplam,
     });
   }
 
@@ -252,8 +257,11 @@ export default async function YdusAnaSayfa({
       readyTopics: acc.readyTopics + b.readyTopics,
       totalTopics: acc.totalTopics + b.totalTopics,
       soru: acc.soru + b.soru,
+      kart: acc.kart + b.kart,
+      inci: acc.inci + b.inci,
+      vaka: acc.vaka + b.vaka,
     }),
-    { readyTopics: 0, totalTopics: 0, soru: 0 }
+    { readyTopics: 0, totalTopics: 0, soru: 0, kart: 0, inci: 0, vaka: 0 }
   );
 
   return (

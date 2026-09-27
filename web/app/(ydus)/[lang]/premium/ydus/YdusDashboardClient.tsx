@@ -17,14 +17,40 @@ import CalismaPlani from "@/app/components/CalismaPlani";
 import SinavTakvimiUyarisi from "@/app/components/SinavTakvimiUyarisi";
 import type { Sinav } from "@/lib/sinav";
 
-export interface BranchCard {
+/** Bir konunun ya da branşın gerçek içeriği (`envanterAl`dan). */
+export interface IcerikSayisi {
+  soru: number;
+  kart: number;
+  inci: number;
+  vaka: number;
+}
+
+/**
+ * PANO ÜRÜNÜN YALNIZCA SORU BANKASINI GÖSTERİYORDU — ölçüldü (uygulamanın
+ * kendi `envanterAl`ı sürülerek): branş kartları, toplam kartı ve yeni
+ * eklenenler hep "N soru" diyordu; hazır konulardaki binlerce kart, yüzlerce
+ * inci ve vakalar panoda hiç görünmüyordu. 100 incili bir konu "0 soru"
+ * diye tanıtılıyordu. Sıfır olan tür yazılmaz; hepsi sıfırsa boş döner.
+ */
+export function icerikOzeti(s: IcerikSayisi): string {
+  return [
+    [s.soru, "soru"],
+    [s.kart, "kart"],
+    [s.inci, "inci"],
+    [s.vaka, "vaka"],
+  ]
+    .filter(([n]) => (n as number) > 0)
+    .map(([n, ad]) => `${(n as number).toLocaleString("tr-TR")} ${ad}`)
+    .join(" · ");
+}
+
+export interface BranchCard extends IcerikSayisi {
   id: string;
   baslik: string;
   emoji: string;
   renk: string;
   readyTopics: number;
   totalTopics: number;
-  soru: number;
 }
 
 export interface LockedBranch {
@@ -32,17 +58,15 @@ export interface LockedBranch {
   baslik: string;
 }
 
-export interface NewestTopic {
+export interface NewestTopic extends IcerikSayisi {
   topicId: string;
   branchId: string;
   baslik: string;
-  soru: number;
 }
 
-interface Overall {
+interface Overall extends IcerikSayisi {
   readyTopics: number;
   totalTopics: number;
-  soru: number;
 }
 
 const BRANCH_ICONS: Record<string, React.ElementType> = {
@@ -221,7 +245,11 @@ export default function YdusDashboardClient({
           </div>
           <div className="bg-white rounded-xl border border-slate-200 p-4">
             <p className="text-[11px] text-slate-400 mb-1">Toplam soru</p>
-            <p className="text-2xl font-semibold text-slate-800">{overall.soru}</p>
+            <p className="text-2xl font-semibold text-slate-800">{overall.soru.toLocaleString("tr-TR")}</p>
+            {/* Sorunun yanındaki içerik — kartta yer yoksa alt satırda. */}
+            {icerikOzeti({ ...overall, soru: 0 }) && (
+              <p className="text-[11px] text-slate-500 mt-1">+ {icerikOzeti({ ...overall, soru: 0 })}</p>
+            )}
           </div>
           <div className="bg-white rounded-xl border border-slate-200 p-4">
             {/* "Puanınız" -> "Puanın": aynı kartın hemen altındaki branş
@@ -251,7 +279,7 @@ export default function YdusDashboardClient({
                     Stratejileri ve Klinik" görünüyor, "Yönetim · 5 soru" gidiyor).
                     Kırpılan metnin kurtarma yolu da yok. Kart yüksekliği aynı
                     kaldı — sayı üstteki küçük satıra taşındı. */}
-                <p className="text-[11px] text-slate-400">Yeni eklendi · {featured.soru} soru</p>
+                <p className="text-[11px] text-slate-400">{["Yeni eklendi", icerikOzeti(featured)].filter(Boolean).join(" · ")}</p>
                 {/* Dar ekranda kap 140px'e iniyor ve iki satır başlığa yetmiyor;
                     üçüncü satır YALNIZCA orada açık. `sm` ve üstünde kap 195px+,
                     iki satır yetiyor ve kart kompakt kalıyor. */}
@@ -289,7 +317,7 @@ export default function YdusDashboardClient({
                   <Icon size={18} style={{ color: b.renk }} />
                 </div>
                 <p className="text-sm font-semibold text-slate-800 mb-0.5">{b.baslik}</p>
-                <p className="text-[12px] text-slate-400 mb-3">{b.readyTopics}/{b.totalTopics} konu hazır · {b.soru} soru</p>
+                <p className="text-[12px] text-slate-500 mb-3">{[`${b.readyTopics}/${b.totalTopics} konu hazır`, icerikOzeti(b)].filter(Boolean).join(" · ")}</p>
                 <div className="h-1.5 rounded-full bg-slate-100 overflow-hidden mb-3">
                   <div className="h-full rounded-full" style={{ width: `${pct}%`, background: b.renk }} />
                 </div>
@@ -334,7 +362,7 @@ export default function YdusDashboardClient({
                 >
                   <span className="text-[10px] font-medium text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">yeni</span>
                   <p className="text-[13px] font-medium text-slate-800 mt-2 leading-snug">{t.baslik}</p>
-                  <p className="text-[11px] text-slate-400 mt-0.5">{t.soru} soru</p>
+                  <p className="text-[11px] text-slate-500 mt-0.5">{icerikOzeti(t)}</p>
                 </Link>
               ))}
             </div>
