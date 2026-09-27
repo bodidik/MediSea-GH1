@@ -133,7 +133,7 @@
       "id": "p-temd-019",
       "level": "Kılavuz",
       "title": "Türkiye'de gebeye ÜİK bakmadan iyot desteği; izole hipotiroksinemide önce iyot",
-      "content": "TEMD'ye göre gebe, ÜİK bakılmaksızın, tuz tüketimine ve yaşadığı bölgeye göre günde 100-150 µg iyot desteği almalıdır (öneri kutusu 100-300 µg aralığını verir; ATA 2017: 150 µg/gün destek, toplam alım 250 µg/gün). Tuzu kısıtlanan gebede bu miktar 200-250 µg/gündür. Destek gebelik planlanınca başlar, laktasyon bitene kadar sürer. Gerekçe: iyot yeterli sayılan İstanbul'da 3543 gebede medyan ÜİK 77 µg/L bulunmuş ve gebelerin %90'ında yetersizlik saptanmıştır. Ülkemizde gebelikte izole hipotiroksinemi görülünce önce iyot eksikliği düşünülüp iyot verilmelidir. (TEMD 2025, Bölüm 4, s. 66)",
+      "content": "TEMD'ye göre gebe, ÜİK bakılmaksızın, tuz tüketimine ve yaşadığı bölgeye göre günde 100-150 µg iyot desteği almalıdır (kılavuzun metni ve gebelik bölümü 100-150 µg der; aynı bölümün öneri kutusunda geçen 100-300 µg aralığı metinle çelişir). Tuzu kısıtlanan gebede bu miktar 200-250 µg/gündür. Destek gebelik planlanınca başlar, laktasyon bitene kadar sürer. Gerekçe: iyot yeterli sayılan İstanbul'da 3543 gebede medyan ÜİK 77 µg/L bulunmuş ve gebelerin %90'ında yetersizlik saptanmıştır. Ülkemizde gebelikte izole hipotiroksinemi görülünce önce iyot eksikliği düşünülüp iyot verilmelidir. (TEMD 2025, Bölüm 4, s. 66)",
       "trigger": "İyot Eksikliği"
     },
     {
@@ -238,7 +238,7 @@
       "id": "p-temd-034",
       "level": "Kılavuz",
       "title": "Tiroid fırtınası: PTU önceliği ve Türkiye'de IV beta blokaj",
-      "content": "Tiroid fırtınasında PTU tercih edilir: ilk 24 saatte T3'ü yaklaşık %45 düşürür, metimazol ise %10-15 düşürür. İnorganik iyot, tiyonamidden en az 1 saat sonra verilmelidir (kılavuzun tiroid krizi bölümü ve ATA 2016; bu bölümdeki “en az 30 dk” ifadesi onlarla çelişir). Türkiye'de IV propranolol satılmadığı için IV beta blokaj esmolol ile yapılır: 0,25-0,5 mg/kg bolus, ardından 0,05-0,1 mg/kg/dk infüzyon. Salisilatlar serbest hormonu artırabildiği için ateş asetaminofenle düşürülür. (TEMD 2025, Bölüm 9, s. 112)",
+      "content": "Tiroid fırtınasında PTU tercih edilir: ilk 24 saatte T3'ü yaklaşık %45 düşürür, metimazol ise %10-15 düşürür. İnorganik iyot, tiyonamidden en az 1 saat sonra verilmelidir: kılavuzun tiroid krizi bölümü (Bölüm 28) ve tedavi tablosu bu süreyi verir; bu bölümde geçen “en az 30 dk” ifadesi onlarla çelişir, güvenli olan 1 saattir. Türkiye'de IV propranolol satılmadığı için IV beta blokaj esmolol ile yapılır: 0,25-0,5 mg/kg bolus, ardından 0,05-0,1 mg/kg/dk infüzyon. Salisilatlar serbest hormonu artırabildiği için ateş asetaminofenle düşürülür. (TEMD 2025, Bölüm 9, s. 112)",
       "trigger": "Hipertiroidi ve Tirotoksikoz"
     },
     {
@@ -413,7 +413,7 @@
       "id": "p-temd-059",
       "level": "Kılavuz",
       "title": "Biyokimyasal inkomplet yanıtın Tg eşikleri ve seyri",
-      "content": "Ablasyondan sonra uyarılmamış Tg'nin 6. ayda &gt;5, 12. ayda &gt;1 ng/mL olması ya da 1 yıldan sonra uyarılmış Tg'nin &gt;10 ng/mL bulunması biyokimyasal inkomplet yanıt sayılır. Bu grup DTK'ların %10-20'sini oluşturur, 6-12 ayda bir izlenir ve yaklaşık %20'sinde yapısal hastalık gelişir (TEMD Tablo 17.5, ATA 2015). Bazal Tg'nin ikiye katlanma süresi ya da yılda ≥0,3 ng/mL artması yapısal hastalık riskini gösterir. Lobektomi sonrası anti-Tg negatif, görüntülemesi temiz ve bazal Tg &lt;30 ng/mL ise yanıt mükemmel kabul edilir. (TEMD 2025, Bölüm 17, s. 200)",
+      "content": "Ablasyondan sonra uyarılmamış Tg'nin 6. ayda &gt;5, 12. ayda &gt;1 ng/mL olması ya da 1 yıldan sonra uyarılmış Tg'nin &gt;10 ng/mL bulunması biyokimyasal inkomplet yanıt sayılır. Bu grup DTK'ların %10-20'sini oluşturur, 6-12 ayda bir izlenir ve yaklaşık %20'sinde yapısal hastalık gelişir (kılavuzun yanıt sınıflaması tablosu, Tablo 17.5; aynı bölümün metninde geçen “%2” tabloyla çelişir). Bazal Tg'nin ikiye katlanma süresi ya da yılda ≥0,3 ng/mL artması yapısal hastalık riskini gösterir. Lobektomi sonrası anti-Tg negatif, görüntülemesi temiz ve bazal Tg &lt;30 ng/mL ise yanıt mükemmel kabul edilir. (TEMD 2025, Bölüm 17, s. 200)",
       "trigger": "DTK Cerrahi Sonrası"
     },
     {
