@@ -1,0 +1,368 @@
+{
+  "id": "quiz-endo-temd-tiroid-2-001",
+  "baslik": "TEMD Tiroid 2 — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "temd-tiroid-2",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Yetmiş iki yaşında erkek, atriyal fibrilasyon nedeniyle günde iki kez 5 mg apiksaban kullanıyor (CHA₂DS₂-VASc: 4). Böbrek fonksiyonları normal. Tiroid USG'de sağ lobda 14 mm, hipoekoik, düzensiz sınırlı, mikrokalsifikasyonlu nodül (EU-TIRADS 5) saptanıyor. TSH normal. Trombosit sayısı ve pıhtılaşma testleri normal.\n\nTEMD kılavuzuna göre İİAB için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Apiksabanın 48 saat önce kesilmesi, işlemden 24 saat sonra yeniden başlanması",
+        "B": "Apiksabanın kesilip düşük molekül ağırlıklı heparinle köprüleme yapılması",
+        "C": "Apiksaban kesilmeden 24–27 G iğneyle US eşliğinde İİAB; sonrasında 10–15 dk bası ve US ile hematom kontrolü",
+        "D": "Kanama riski nedeniyle İİAB yerine kor iğne biyopsisi yapılması",
+        "E": "Antikoagülan kesilemeyeceği için biyopsi yapılmadan 6 ayda bir USG ile izlem"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "İnce iğne (24–27 G) ile yapılan İİAB, aspirin, warfarin (çok yüksek INR hariç), heparin, klopidogrel ve yeni nesil oral antikoagülan alan hastada ilaç kesilmeden güvenle yapılabilir. İşlemden sonra 10–15 dakika bası uygulanır ve US ile hematom kontrol edilir.",
+      "aciklama_detay": "TEMD girişimsel kılavuzuna göre İİAB'nin mutlak kontrendikasyonu, hemostazı imkânsız kılan ciddi ve düzeltilmemiş kanama ya da pıhtılaşma bozukluğudur. Antiagregan ve antikoagülan kullanan hastaların çoğunda ince (24–27 G) iğneyle yapılan biyopsi hematom riskini artırmaz; dabigatran, rivaroksaban ve apiksabanın da işlem öncesi kesilmesi gerekmez. Kesmek bu hastada inme riskini gereksiz yere artırır; köprüleme ise kanama riskini artıran ve DOAC için önerilmeyen bir uygulamadır. Antikoagülan alan hastada işlem sonrası 10–15 dakika bası yapılır, ardından US ile hematom oluşumu kontrol edilir; şişlik gelişirse soğuk kompres uygulanır ve kanama kontrol altına alınana kadar hasta gözlemde tutulur. Kor iğne biyopsisi ise daha kalın iğne kullandığı için tersine ilaç yönetimi gerektirir ve bu hastada birinci basamak değildir. EU-TIRADS 5 ve 10 mm üzeri nodülde biyopsi endikasyonu açıktır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İnce iğne İİAB için DOAC'ın kesilmesi gerekmez; kesmek inme riskini gereksiz yere artırır.",
+        "B": "YANLIS — DOAC kullanan hastada köprüleme önerilmez ve kanama riskini artırır; ilaç zaten kesilmez.",
+        "C": "DOGRU — İnce iğneyle ilaç kesilmeden biyopsi; sonrasında 10–15 dk bası ve US ile hematom kontrolü.",
+        "D": "YANLIS — Kor iğne daha kalındır ve ilaç yönetimi gerektirir; İİAB birinci basamaktır.",
+        "E": "YANLIS — EU-TIRADS 5 ve 14 mm nodülde biyopsi endikasyonu vardır; antikoagülan biyopsiye engel değildir."
+      },
+      "etiketler": ["İnce İğne Aspirasyon Biyopsisi", "Antikoagülan", "DOAC", "Kanama Riski"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı)"
+    },
+    {
+      "id": "s2",
+      "metin": "Elli sekiz yaşında kadın, sol lobda 18 mm solid, belirgin hipoekoik, düzensiz sınırlı nodül (EU-TIRADS 5) nedeniyle izleniyor. TSH normal. Boyunda şüpheli lenf nodu yok. Üç ay arayla, deneyimli ellerde US eşliğinde yapılan iki İİAB'nin ikisi de Bethesda I (tanısal olmayan; kanlı, az hücreli) gelmiş.\n\nTEMD kılavuzuna göre bu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "18–21 G iğneyle US eşliğinde kor iğne biyopsisi",
+        "B": "Üçüncü kez İİAB yapılması",
+        "C": "Biyopsi yapılmadan 12 ay sonra USG ile izlem",
+        "D": "Tanısal olmayan örnek üzerinde moleküler test",
+        "E": "Doğrudan total tiroidektomi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Tekrarlanan İİAB'lere rağmen tanı konamayan şüpheli nodülde kor iğne biyopsisi (18–21 G, yarı otomatik) doku tanısı sağlar; birçok kılavuz tekrarlayan tanısal olmayan sonuçta bir sonraki yöntem olarak kor iğneyi önerir.",
+      "aciklama_detay": "İİAB örneklerinin önemli bir kısmı tanısal olmayan gelir ve tekrarlarda bu oran yine yüksek kalabilir. TEMD, tekrarlanan İİAB ile tanı konamayan şüpheli nodülde yarı otomatik 18–21 G kesici iğneyle kor biyopsiyi önerir; Kore Tiroid Radyoloji Derneği 2019'da önceki sitolojisi tanısal olmayan ya da önemi belirsiz atipi olan nodüllerde kor iğneyi bir sonraki yöntem olarak konumlandırmıştır. Kor iğne ayrıca lenfoma, anaplastik ya da medüller karsinom ve metastaz düşünülen büyük lezyonlarda, histopatolojik tanı gerektiren Riedel tiroiditinde ilk tercih olabilir. Sitoloji bölümüne göre iki ardışık tanısal olmayan sonuçtan sonra izlem ya da cerrahi de seçenektir; ancak bu nodül yüksek şüpheli (EU-TIRADS 5) olduğundan izlem uygun değildir ve doku tanısı konmadan total tiroidektomi aşırı tedavi olabilir. Tanısal olmayan örnek moleküler test için de yetersizdir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Tekrarlayan tanısal olmayan sitolojide şüpheli nodüle kor iğne biyopsisi doku tanısı sağlar.",
+        "B": "YANLIS — İki başarısız İİAB'den sonra üçüncü İİAB'nin tanı şansı düşüktür; yöntem değiştirilmelidir.",
+        "C": "YANLIS — EU-TIRADS 5 nodülde tanısız izlem malignite tanısını geciktirir.",
+        "D": "YANLIS — Az hücreli, kanlı örnek moleküler test için de yetersizdir; test indetermine sitoloji içindir.",
+        "E": "YANLIS — Doku tanısı olmadan total tiroidektomi, benign çıkabilecek bir nodülde aşırı tedavidir."
+      },
+      "etiketler": ["Kor İğne Biyopsisi", "Tanısal Olmayan Sitoloji", "Bethesda I", "EU-TIRADS"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı)"
+    },
+    {
+      "id": "s3",
+      "metin": "Elli bir yaşında erkek, 2 aydır halsizlik, susuzluk ve kemik ağrısı ile başvuruyor. Boynun solunda ele gelen sert kitle var.\n\nTetkikler:\nSerum kalsiyum: 14.2 mg/dL ↑\nİntakt PTH: 1150 pg/mL ↑\nFosfor: 1.9 mg/dL ↓\nBoyun USG: sol lob arkasında 36 mm, düzensiz şekilli, heterojen hipoekoik, kapsülü yer yer kesintili, çevre dokuya invazyon şüphesi olan lezyon\nSestamibi: aynı bölgede yoğun tutulum\n\nHiperkalsemi için IV sıvı başlanmıştır. TEMD kılavuzuna göre bu lezyon için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Paratiroid kaynağını doğrulamak için US eşliğinde İİAB ve PTH yıkaması",
+        "B": "Histolojik tanı için kor iğne biyopsisi",
+        "C": "Cerrahiden kaçınmak için mikrodalga ablasyon",
+        "D": "US eşliğinde alkol ablasyonu",
+        "E": "İğne biyopsisinden kaçınılıp hiperkalsemi kontrolünden sonra en blok cerrahi planlanması"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Klinik, laboratuvar ve US bulguları paratiroid kanseri düşündürüyorsa iğne biyopsisinden kaçınılır, çünkü iğne yolu boyunca ekim paratiromatozise yol açabilir. Termal ablasyon da bu lezyonlarda kontrendikedir.",
+      "aciklama_detay": "Çok yüksek kalsiyum ve PTH, ele gelen sert kitle, 3 cm'yi aşan, düzensiz, kapsülü kesintili ve invazyon şüphesi taşıyan lezyon paratiroid karsinomunu düşündürür. US eşliğinde paratiroid İİAB ve PTH yıkaması normalde güvenli bir yöntemdir ve paratiroid dokusunu lenf nodundan ayırmada işe yarar; ancak iğne yolu boyunca hücre ekimi paratiromatozise neden olabilir ve bu, kanser olasılığı olan olguda çok önemlidir. Bu yüzden TEMD, kanser düşündüren olgularda biyopsiden kaçınılmasını önerir. Aynı gerekçeyle ve malignite özellikleri taşıyan lezyonlar (>3 cm, hızlı büyüme, düzensiz şekil, kesintili kapsül, sınır invazyonu, anormal lenf nodu) termal ablasyon için kontrendikedir. Hiperkalsemi sıvı ve gerekirse antirezorptif ilaçla kontrol edildikten sonra deneyimli bir merkezde en blok rezeksiyon yapılır; ilk cerrahide tam rezeksiyon prognozu belirleyen başlıca etkendir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Paratiroid kanseri şüphesinde İİAB iğne yolu ekimi ve paratiromatozis riski nedeniyle yapılmaz.",
+        "B": "YANLIS — Daha kalın iğneyle kor biyopsi ekim riskini azaltmaz, aksine artırır.",
+        "C": "YANLIS — Malignite özellikleri taşıyan paratiroid lezyonu termal ablasyon için kontrendikedir.",
+        "D": "YANLIS — Alkol ablasyonu şüpheli malign lezyonda uygun değildir ve sonraki cerrahiyi zorlaştıran fibrozis yapar.",
+        "E": "DOGRU — Biyopsiden kaçınılır; hiperkalsemi kontrolünden sonra en blok cerrahi yapılır."
+      },
+      "etiketler": ["Paratiroid Karsinomu", "Paratiroid İİAB", "Paratiromatozis", "Hiperkalsemi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı)"
+    },
+    {
+      "id": "s4",
+      "metin": "Otuz altı yaşında kadın, bir yıl önce papiller tiroid kanseri nedeniyle total tiroidektomi ve RAI ablasyonu yapılmış. Levotiroksin kullanıyor.\n\nTetkikler:\nUyarılmamış tiroglobulin: 3.4 ng/mL, anti-Tg: negatif\nBoyun USG: sağ seviye III'te 11 mm, yuvarlak, hilusu seçilmeyen, kistik alanlı ve mikrokalsifikasyonlu lenf nodu\nLenf nodu İİAB sitolojisi: tanısal olmayan (kist sıvısı, seyrek makrofaj)\nAynı iğnenin 1 cc salinle yıkama sıvısında tiroglobulin: 480 ng/mL\n\nBu bulguların yorumu ve en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Sitolojide malign hücre olmadığından metastaz dışlanır; 6 ay sonra USG ile izlem",
+        "B": "Yıkama Tg'si lenf nodu metastazını doğrular; sağ lateral boyun diseksiyonu planlanır",
+        "C": "Yıkama Tg'si serum Tg ile kontamine olduğu için yorumlanamaz; FDG PET-BT istenir",
+        "D": "Sitoloji tanısal olmadığından 3 ay sonra İİAB'nin tekrarlanması",
+        "E": "Lenf nodu ile uğraşmadan 150 mCi ampirik RAI verilmesi"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Tiroidektomi yapılmış hastada lenf nodu yıkama Tg'sinin >10 ng/mL olması, sitoloji negatif ya da tanısal olmasa bile metastaz demektir. Kistik nodda Tg yıkaması sitolojiden daha değerlidir; biyopsiyle doğrulanan lateral metastaz lateral boyun diseksiyonu gerektirir.",
+      "aciklama_detay": "Lenf nodu İİAB'sinde örneğin ilk kısmı yaymaya verildikten sonra iğne 1 cc salinle yıkanır ve yıkama sıvısında tiroglobulin (medüller kanserde kalsitonin) ölçülür. Kistik metastatik nodlarda sitoloji çoğu zaman az hücreli ya da tanısal olmayan gelir; Tg yıkaması bu durumda sitolojiden daha tanısaldır. Tiroidi alınmış hastada sonografik şüpheyle birlikte 1 ng/mL üzeri ve serum Tg'yi aşan değer şüpheli, 10 ng/mL üzeri tanı koydurucu kabul edilir; burada 480 ng/mL serum Tg'nin çok üzerindedir ve kontaminasyonla açıklanamaz. Serum anti-Tg pozitifliği yıkama sonucunu yalancı düşük gösterebilir; bu hastada negatiftir. Nodun kistik yapısı, yuvarlaklığı, hilus kaybı ve mikrokalsifikasyonu da metastazı destekler. Biyopsiyle doğrulanmış lateral lenf nodu metastazı, kompartman odaklı lateral boyun diseksiyonu gerektirir; ampirik RAI yapısal hastalığı tedavi etmede cerrahinin yerini tutmaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kistik nodda sitoloji sıklıkla yetersizdir; yüksek yıkama Tg'si metastazı doğrular.",
+        "B": "DOGRU — Yıkama Tg >10 ng/mL tanı koydurucudur; lateral boyun diseksiyonu yapılır.",
+        "C": "YANLIS — 480 ng/mL serum düzeyinin çok üzerindedir; kontaminasyonla açıklanmaz, ek görüntülemeye gerek yoktur.",
+        "D": "YANLIS — Tanı zaten yıkama Tg'siyle konmuştur; tekrar biyopsi tedaviyi geciktirir.",
+        "E": "YANLIS — Doğrulanmış yapısal nod metastazının tedavisi cerrahidir; ampirik RAI bunun yerini tutmaz."
+      },
+      "etiketler": ["Tiroglobulin Yıkama", "Lenf Nodu Metastazı", "Papiller Tiroid Kanseri", "Lateral Boyun Diseksiyonu"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı); TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025"
+    },
+    {
+      "id": "s5",
+      "metin": "Kırk yedi yaşında kadın, sağ lobda 42 mm solid, izoekoik, düzgün sınırlı nodül (EU-TIRADS 3) nedeniyle yutma güçlüğü ve boyunda görünür şişlikten yakınıyor. Bir yıl önce yapılan tek İİAB Bethesda II (benign) gelmiş. TSH ve sT4 normal. Ameliyattan kaçınmak istiyor, radyofrekans ablasyonu (RFA) soruyor. Daha önce boyun cerrahisi yok, sesi normal.\n\nTEMD kılavuzuna göre RFA öncesinde en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "Tek benign sitoloji yeterli olduğundan doğrudan RFA yapılması",
+        "B": "Otonomi dışlamak için tiroid sintigrafisi yapılması",
+        "C": "Benign sitolojiyi doğrulamak için moleküler test istenmesi",
+        "D": "US eşliğinde ikinci bir İİAB ya da bir kor iğne biyopsisiyle benignliğin yeniden doğrulanması",
+        "E": "Semptomatik nodülde ablasyon önerilmediği için tiroidektomi planlanması"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Solid nodülde termal ablasyondan önce benignlik iki kez gösterilmelidir: US eşliğinde iki İİAB ya da bir İİAB ile bir kor iğne biyopsisi. Tek benign sonuç yalnızca otonom, pür kistik ya da spongiform nodülde yeterlidir.",
+      "aciklama_detay": "Bası belirtileri ve kozmetik yakınması olan benign nodülde termal ablasyon artık cerrahiye birinci basamak bir alternatif olarak kabul edilir; endikasyonu belirleyen boyuttan çok semptomdur. Ancak ablasyon dokuyu çıkarmadığı için sonradan histoloji elde edilemez; bu yüzden malign bir lezyonun gözden kaçmaması için TEMD, solid nodüllerin çoğunda benignliğin (Bethesda II) US eşliğinde yapılmış iki İİAB ya da bir İİAB ile bir kor iğne biyopsisiyle doğrulanmasını ister. Otonom fonksiyone, pür kistik ya da spongiform nodüllerde tek benign sonuç yeterlidir. TSH normalken otonomi olasılığı düşüktür ve sintigrafi benignliği doğrulamaz. Moleküler test indetermine sitoloji içindir. İşlem öncesi ses değerlendirmesi de yapılır; ses kısıklığı, geçirilmiş boyun cerrahisi ya da sinire yakın nodül varsa laringoskopi önerilir ve ablasyon yalnızca rekürren laringeal sinir fonksiyonu normal olan hastaya uygulanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tek benign sonuç yalnızca otonom, pür kistik ya da spongiform nodülde yeterlidir; bu nodül solid.",
+        "B": "YANLIS — TSH normalken otonomi olası değildir; sintigrafi benignliği doğrulamaz.",
+        "C": "YANLIS — Moleküler test benign sitolojide değil, indetermine sitolojide kullanılır.",
+        "D": "DOGRU — Solid nodülde ablasyon öncesi benignlik ikinci bir İİAB ya da kor iğne biyopsisiyle yeniden doğrulanır.",
+        "E": "YANLIS — Semptomatik benign nodül termal ablasyonun asıl endikasyonudur; ablasyon asemptomatik lezyonda önerilmez."
+      },
+      "etiketler": ["Termal Ablasyon", "Radyofrekans Ablasyon", "Benign Nodül", "Sitolojik Doğrulama"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı)"
+    },
+    {
+      "id": "s6",
+      "metin": "Otuz dokuz yaşında kadın, boyunda basınç hissi ve görünür şişlik nedeniyle başvuruyor. USG'de sol lobda 38 mm, kistik bileşeni %90'ın üzerinde, ince duvarlı, tek odacıklı nodül var; solid bileşendeki İİAB benign gelmiş. TSH normal. Son 4 ayda iki kez aspirasyon yapılmış (her birinde yaklaşık 15 mL berrak sarı sıvı) ve kist her seferinde birkaç haftada eski boyutuna dönmüş.\n\nBu hasta için en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Üçüncü kez basit aspirasyon yapılması",
+        "B": "US eşliğinde perkütan etanol (alkol) ablasyonu",
+        "C": "Birinci basamak olarak tek başına radyofrekans ablasyonu",
+        "D": "Levotiroksin ile TSH süpresyonu",
+        "E": "Total tiroidektomi"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Aspirasyonla düzelmeyen pür kistik ya da kistik bileşeni baskın benign nodülde birinci seçenek alkol ablasyonudur. Kistik bileşeni %90'ın üzerindeki nodüllerde 10 yıllık hacim küçülmesi yaklaşık %98 bildirilmiştir.",
+      "aciklama_detay": "Alkol ablasyonunda %95–99'luk etanol difüzyonla hücre dehidratasyonu ve koagülatif nekroz ile küçük damarlarda tromboz ve iskemik nekroz yapar; kistlerde koagülatif nekroz baskındır. Solid bileşendeki damarlar alkolü drene ettiği için yöntem solid nodülde sınırlı etkilidir; bu nedenle kistik ya da kistik bileşeni baskın benign nodülde birinci basamaktır. Kistik bileşeni %90'ın üzerinde olan nodüllerde 10 yıllık hacim küçülme oranı %98, %50–75 olanlarda %79 bildirilmiştir. Kist sıvısı boşaltıldıktan sonra alkol yavaşça verilir; kısa süre sonra reaspire edilecekse boşaltılan hacmin yaklaşık %50'si kadar verilebilir, alkolün etki etmesi için en az iki dakika gerekir ve ağrı olursa peritiroidal kaçak araştırılır. Solid bileşeni %20'yi aşan miks nodüllerde alkol ablasyonunun ardından RFA eklenebilir. Tekrarlayan aspirasyonun başarısı sınırlıdır; LT4 süpresyonu kistlerde etkisizdir ve önerilmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İki kez tekrarlayan kistte yeni bir aspirasyonun kalıcı başarı şansı düşüktür.",
+        "B": "DOGRU — Aspirasyona dirençli, kistik bileşeni baskın benign nodülde birinci seçenek alkol ablasyonudur.",
+        "C": "YANLIS — RFA solid ya da miks nodüllerde öne çıkar; neredeyse tümüyle kistik nodülde alkol ablasyonu birinci basamaktır.",
+        "D": "YANLIS — TSH süpresyonu kistik nodülü küçültmez ve iatrojenik hipertiroidi riski taşır.",
+        "E": "YANLIS — Minimal invaziv etkili bir seçenek varken benign kist için total tiroidektomi aşırı tedavidir."
+      },
+      "etiketler": ["Alkol Ablasyonu", "Kistik Nodül", "Benign Nodül", "Ablasyon Tedavileri"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı)"
+    },
+    {
+      "id": "s7",
+      "metin": "Altmış sekiz yaşında kadın, paroksismal atriyal fibrilasyon ve 3 kg kilo kaybı nedeniyle başvuruyor. Sağ lobda ele gelen tek nodül var; bası belirtisi yok. Gebelik söz konusu değil.\n\nTetkikler:\nTSH: 0.03 mU/L\nsT4: 1.9 ng/dL (hafif ↑), sT3: hafif ↑\nTRAb: negatif\nUSG: sağ lobda 28 mm solid nodül (hacim yaklaşık 11 mL); başka nodül yok\nSintigrafi: sağ lobda sıcak nodül, bezin geri kalanı baskılanmış\n\nHasta termal ablasyonu internette okumuş ve bunu istiyor. TEMD kılavuzuna göre bu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "RFA birinci basamak tedavidir ve ötiroidi sağlamada RAI'den üstündür",
+        "B": "Ömür boyu düşük doz metimazol tek uygun seçenektir",
+        "C": "Solid nodülde en etkili yöntem olan alkol ablasyonu yapılmalıdır",
+        "D": "Otonom nodülde total tiroidektomi zorunludur",
+        "E": "Birinci basamak RAI (ya da lobektomi); termal ablasyon bunlar uygun değilse ikinci basamak alternatiftir"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Otonom fonksiyone nodülde termal ablasyonla TSH normalleşmesi RAI ya da cerrahiye göre daha düşük ve daha öngörülemezdir; meta-analizlerde RAI daha başarılı ve güvenli bulunmuştur. Ablasyon, birinci basamak seçenekler uygun olmadığında ikinci basamak alternatiftir.",
+      "aciklama_detay": "TEMD'ye göre otonom fonksiyone tiroid nodülünde termal ablasyon bir seçenek olarak düşünülebilir, ancak etkinliği büyük ölçüde nodül hacminde %80 ve üzeri küçülmeye bağlıdır; bu nedenle küçük (≤3 cm, özellikle 10–12 mL altı) nodüllerde daha uygundur. Bir meta-analizde 1. yılda TSH normalleşmesi %76 civarındadır; RFA ile RAI'yi karşılaştıran meta-analizde RAI başarı ve güvenlik açısından üstün bulunmuş, öncelikli seçenek konumunu korumuştur ve ablasyonun uzun vadeli verisi yetersizdir. Bu yaşta, AF'si olan ve bası belirtisi olmayan hastada RAI (ya da lobektomi) birinci basamaktır. Ablasyon yapılırsa etiyolojinin otonom nodül olduğu sintigrafiyle doğrulanmalıdır, çünkü toksik multinodüler guatr ve Graves'te etkinlik çok düşüktür; başarı ölçütü ise hacim küçülmesi değil, antitiroid ilaç ya da LT4 olmadan ötiroidinin sağlanmasıdır. Alkol ablasyonu solid nodülde sınırlı etkilidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Otonom nodülde ablasyon RAI'den üstün değildir; meta-analizde RAI daha başarılıdır.",
+        "B": "YANLIS — Otonom nodül kendiliğinden remisyona girmez; kesin tedavi varken ömür boyu ilaç ilk tercih değildir.",
+        "C": "YANLIS — Solid bileşendeki damarlar alkolü drene eder; alkol ablasyonu solid nodülde sınırlı etkilidir.",
+        "D": "YANLIS — Tek otonom nodülde cerrahi seçilirse lobektomi yeterlidir; total tiroidektomi zorunlu değildir.",
+        "E": "DOGRU — RAI ya da lobektomi birinci basamaktır; termal ablasyon ikinci basamak alternatiftir."
+      },
+      "etiketler": ["Otonom Fonksiyone Nodül", "Toksik Adenom", "Termal Ablasyon", "Radyoaktif İyot"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı)"
+    },
+    {
+      "id": "s8",
+      "metin": "Elli dört yaşında erkek, sol lobda rastlantısal saptanan 7 mm nodülden yapılan İİAB'de papiller tiroid karsinomu (Bethesda VI) tanısı almış. USG'de ekstratiroidal uzanım yok, nodül trakea ve rekürren laringeal sinir hattından uzak, boyunda şüpheli lenf nodu yok (T1aN0M0). Cerrahiyi ve aktif izlemi istemiyor; multidisipliner kurul RFA seçeneğini uygun buluyor.\n\nTEMD kılavuzuna göre ablasyondan önce aşağıdaki tetkiklerden hangisinin yapılması önerilir?",
+      "secenekler": {
+        "A": "Serum kalsitonin",
+        "B": "Uzun dönem izlem bazalı için serum tiroglobulin ve anti-Tg",
+        "C": "131I tüm vücut taraması",
+        "D": "FDG PET-BT",
+        "E": "Tümörde BRAF V600E analizi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Primer malign lezyonun ablasyonundan önce medüller tiroid karsinomunu dışlamak için kalsitonin ölçülmesi önerilir. Tiroid dokusu yerinde kaldığı için primer düşük riskli PTK'de Tg ve anti-Tg izlemi önerilmez.",
+      "aciklama_detay": "2024 uluslararası uzman konsensüsü ve 2025 ATA kılavuzu, T1aN0M0 papiller tiroid kanserinde termal ablasyonu aktif izlem ve rezeksiyona birinci basamak bir alternatif olarak kabul eder. Ablasyon öncesinde malignite tanısı mutlaka doğrulanmış olmalıdır. TEMD girişimsel kılavuzu işlem öncesi TSH ve sT4 ölçülmesini, primer malign lezyon tedavisinden önce ise medüller karsinomu dışlamak için kalsitonin ölçülmesini önerir; medüller karsinom sitolojide papiller karsinomu taklit edebilir ve ablasyon onun tedavisi değildir. Tg ve anti-Tg, rekürren ya da metastatik lezyonların ablasyonunda izlem için bazal olarak ölçülür; primer PTK'de ise tiroid dokusu yerinde kaldığı için bazal Tg yüksek kalabilir ve nüksü gösteren güvenilir bir eşik yoktur, bu nedenle izlemi önerilmez. Tüm vücut taraması ve PET-BT bu evrede gereksizdir; BRAF V600E sonucu ablasyon kararını değiştirmez.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Primer malign lezyon ablasyonundan önce medüller karsinomu dışlamak için kalsitonin önerilir.",
+        "B": "YANLIS — Tiroid dokusu yerinde kaldığı için primer PTK ablasyonu sonrası Tg/anti-Tg izlemi önerilmez.",
+        "C": "YANLIS — Tiroid bezi yerindeyken ve düşük riskli hastalıkta 131I taraması anlamsızdır.",
+        "D": "YANLIS — T1aN0M0 hastalıkta PET-BT evrelemeye katkı sağlamaz.",
+        "E": "YANLIS — BRAF V600E sonucu ablasyon uygunluğunu belirlemez; kılavuz rutin olarak istemez."
+      },
+      "etiketler": ["Papiller Mikrokarsinom", "Termal Ablasyon", "Kalsitonin", "Ablasyon Öncesi Değerlendirme"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı)"
+    },
+    {
+      "id": "s9",
+      "metin": "Altmış yaşında kadın, 32 mm benign (iki kez doğrulanmış) solid nodülü nedeniyle radyofrekans ablasyonu (RFA) planlanıyor. Nodülün arka-iç kenarı trakeoözofageal oluğa, yani rekürren laringeal sinirin beklenen seyrine çok yakın. İşlem öncesi laringoskopide vokal kordlar normal. Operatör sinir hattını korumak için hidrodiseksiyon yapacak.\n\nTEMD kılavuzuna göre hidrodiseksiyon için en uygun seçenek hangisidir?",
+      "secenekler": {
+        "A": "Oda sıcaklığında %0,9 NaCl; kritik yapılardan 2 mm uzaklık yeterli",
+        "B": "Sinir hattına lidokainli serum fizyolojik; ağrı ve sinir uyarısı böylece önlenir",
+        "C": "Soğuk (0–4 °C) %5 dekstroz; kritik yapılardan en az 5 mm uzaklık işlem boyunca korunur",
+        "D": "Soğuk %0,9 NaCl; kritik yapılardan en az 5 mm uzaklık işlem boyunca korunur",
+        "E": "RFA'da hidrodiseksiyon kontrendikedir; nodülün arka kenarı ablate edilmeden bırakılır"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "RFA'da hidrodiseksiyon sıvısı soğuk %5 dekstrozdur (izoozmolar, noniyonik, termal bariyer). İzotonik salin elektriği ilettiği için RFA'da kullanılmaz (mikrodalgada kullanılabilir). Tümör kritik yapılardan en az 5 mm ayrılmalı ve bu mesafe korunmalıdır.",
+      "aciklama_detay": "Hidrodiseksiyon, hedef lezyon ile rekürren laringeal sinir, trakea, özofagus, vagus, sempatik ganglion ve karotis kılıfı arasına sıvı verilerek yapay bir güvenlik mesafesi oluşturmaktır. Soğuk (0–4 °C) %5 dekstroz izoozmolar ve noniyonik olduğu için hem termal bariyer oluşturur hem de radyofrekans akımını iletmez. İzotonik salin iyonik bir sıvıdır, elektriği iletir ve ablasyon alanını istenmeyen yöne yayabilir; bu yüzden RFA'da kullanılmaz, mikrodalga ablasyonda ise kullanılabilir. Lezyon kritik yapılardan en az 5 mm ayrılmalı ve bu mesafe sürekli infüzyon ya da bolusla işlem boyunca korunmalıdır. Rekürren laringeal sinir ve vagus hattına lokal anestezik verilmemelidir, çünkü termal sinir hasarının erken fark edilmesini engeller; sinir hasarı erken fark edilirse bölgeye soğuk %5 dekstroz bolusu verilir. Nodül kenarlarının ablate edilmeden bırakılması ise yeniden büyümenin başlıca nedenidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Salin RFA akımını iletir; 2 mm güvenlik mesafesi de yetersizdir.",
+        "B": "YANLIS — Sinir hattına lokal anestezik, termal hasarın erken fark edilmesini engellediği için önerilmez.",
+        "C": "DOGRU — Soğuk %5 dekstroz ve en az 5 mm'lik mesafenin işlem boyunca korunması önerilir.",
+        "D": "YANLIS — Mesafe doğru olsa da salin iyonik olduğu için RFA'da hidrodiseksiyon sıvısı olarak kullanılmaz.",
+        "E": "YANLIS — Hidrodiseksiyon tam da bu durum için vardır; kenarı ablate etmemek yeniden büyümeye yol açar."
+      },
+      "etiketler": ["Radyofrekans Ablasyon", "Hidrodiseksiyon", "Rekürren Laringeal Sinir", "Termal Hasar"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı)"
+    },
+    {
+      "id": "s10",
+      "metin": "Kırk dört yaşında kadın, 5 hafta önce sağ lobdaki 35 mL benign solid nodülüne komplikasyonsuz RFA yapılmış. Dün akşam başlayan ani boyun şişliği ve ağrı ile başvuruyor. Ateş yok, stridor ya da solunum sıkıntısı yok, yutma normal. SpO₂ %98.\n\nBulgular:\nBoyun önünde hassas, yumuşak şişlik\nLökosit ve CRP: normal\nUSG: nodül kapsülünde yırtılma, heterojen içeriğin ön tarafta strap kaslarına doğru yayılımı; sınırlı apse koleksiyonu yok; hava yolu basısı yok\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Acil cerrahi eksplorasyon ve lobektomi",
+        "B": "Malignite dışlamak için acil İİAB",
+        "C": "Geniş spektrumlu IV antibiyotik ve cerrahi drenaj",
+        "D": "Gözlem ve konservatif tedavi; gerekirse antibiyotik ve kısa süreli steroid, yanıtsızsa aspirasyon ya da drenaj",
+        "E": "Kalan nodül dokusu için erken tekrar RFA"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Ablasyondan 2 hafta–3 ay sonra ani boyun şişliği ve ağrısı nodül rüptürünü düşündürür; tanı genellikle yalnızca USG ile konur. Hava yolu tıkanıklığı yoksa ilk yaklaşım gözlemdir; ağrı ve şişlikte antibiyotik ve steroid başlanabilir, yanıtsızlıkta aspirasyon, drenaj ya da nadiren cerrahi gerekir.",
+      "aciklama_detay": "Nodül rüptürü termal ablasyonun nadir ama önemli bir komplikasyonudur; gecikmiş kanama ya da likefaksiyon nekrozunun peritiroidal alana, çoğunlukla öne doğru yayılmasıyla oluştuğu düşünülür. RFA'nın rekürren laringeal sinir hasarından sonra en sık ikinci majör komplikasyonudur. Hastalar tipik olarak işlemden 2 hafta ile 3 ay sonra ani şişlik ve ağrıyla gelir. Tanı USG'deki kapsül yırtığı ve dışa yayılan içerikle konur. Hava yolu tehlikede değilse ilk tedavi gözlemdir; ağrı ve şişlik için antibiyotik ve steroid verilebilir. Konservatif tedavi başarısız olursa ya da apse gelişirse aspirasyon, insizyon ve drenaj, nadiren cerrahi rezeksiyon gerekir. İşlem öncesi risk faktörleri belirsiz olduğundan önlemeden çok erken tanıma ve yönetim önemlidir. Bu tablo malignite işareti değildir; ablate edilmiş dokudan biyopsi de yanıltıcı olabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Hava yolu tıkanıklığı ve apse yokken acil cerrahi gereksizdir; çoğu olgu konservatif düzelir.",
+        "B": "YANLIS — Rüptür malignite göstergesi değildir; ablasyon sonrası doku biyopsisi yanıltıcıdır.",
+        "C": "YANLIS — Enfeksiyon bulgusu ve apse koleksiyonu yoktur; drenaj konservatif tedavi başarısız olursa gündeme gelir.",
+        "D": "DOGRU — Hava yolu sorunu olmayan rüptürde ilk yaklaşım gözlem/konservatif tedavidir.",
+        "E": "YANLIS — Akut rüptür tablosunda yeniden ablasyon endikasyonu yoktur."
+      },
+      "etiketler": ["Nodül Rüptürü", "Radyofrekans Ablasyon", "Ablasyon Komplikasyonları", "Konservatif Tedavi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı)"
+    },
+    {
+      "id": "s11",
+      "metin": "Elli beş yaşında erkek, iki tarafta bası yapan benign nodülleri nedeniyle aşamalı RFA planlanmış; işlem öncesi laringoskopide her iki vokal kord hareketli bulunmuş. Sol taraftaki nodül 3 gün önce ablate edilmiş. Dünden beri sesi kısık ve boğuk; nefes darlığı ya da aspirasyon yok. Sağ taraf için işlem 1 hafta sonraya planlanmış.\n\nTEMD kılavuzuna göre bu aşamada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Laringoskopiyle vokal kord hareketinin değerlendirilmesi ve sinir fonksiyonu düzelene kadar sağ taraf ablasyonunun ertelenmesi",
+        "B": "Ses değişikliği çoğunlukla geçici olduğundan sağ tarafın planlandığı gibi ablate edilmesi",
+        "C": "Sağ taraf işleminin aynı hafta, sinir hattına lidokain verilerek yapılması",
+        "D": "Sağ taraftaki nodül için ablasyon yerine hemen tiroidektomi planlanması",
+        "E": "Yüksek doz steroid başlanıp sağ taraf işleminin planlandığı gibi yapılması"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Ablasyon sonrası ses değişikliği laringeal muayene gerektirir. Tek taraflı ablasyondan sonra sinir hasarından şüpheleniliyorsa karşı taraf, sinir fonksiyonu düzelene kadar ertelenir; iki taraflı rekürren sinir hasarı hava yolunu tehdit eder.",
+      "aciklama_detay": "RFA'nın en sık majör komplikasyonu rekürren laringeal sinirin termal yaralanmasına bağlı ses değişikliğidir ve çoğu zaman geçicidir. TEMD, işlemden sonra hastanın bildirdiği ya da hekimin saptadığı ses değişikliğinin laringeal muayeneyle vokal kord hareketliliği açısından değerlendirilmesini önerir; ses, objektif vokal kord fonksiyonunun zayıf bir göstergesidir. İki taraflı ablasyon planlanan hastada işlem öncesi iki vokal kordun hareketliliği doğrulanmalı, ses değişikliği gelişirse karşı tarafa geçmeden önce muayene yenilenmelidir; eşzamanlı yerine kademeli ablasyon bu nedenle daha güvenlidir. Sinir hasarından şüpheleniliyorsa karşı taraf, sinir fonksiyonu düzelene kadar ertelenir; aksi halde iki taraflı vokal kord felci ve hava yolu tıkanıklığı riski doğar. Rekürren sinir ve vagus hattına lokal anestezik verilmez, çünkü termal hasarın erken fark edilmesini engeller.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Önce laringoskopi; sinir fonksiyonu düzelene kadar karşı taraf ertelenir.",
+        "B": "YANLIS — Tek taraflı sinir hasarı varken karşı tarafa geçmek iki taraflı felç ve hava yolu riski taşır.",
+        "C": "YANLIS — Sinir hattına lokal anestezik termal hasarın erken tanınmasını engeller; zamanlama da güvensizdir.",
+        "D": "YANLIS — Cerrahi de rekürren sinir riski taşır; önce mevcut sinir durumu değerlendirilmelidir.",
+        "E": "YANLIS — Steroid karşı taraf işlemini güvenli hale getirmez; önce vokal kord muayenesi gerekir."
+      },
+      "etiketler": ["Rekürren Laringeal Sinir", "Ses Değişikliği", "Bilateral Ablasyon", "Laringoskopi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı)"
+    },
+    {
+      "id": "s12",
+      "metin": "Kırk dokuz yaşında kadın, sol lobdaki 2.2 cm otonom fonksiyone nodül (sintigrafide sıcak, TSH 0.2 mU/L, sT4 normal) nedeniyle, RAI ve cerrahiyi kabul etmediği için RFA yapılmış. İşlem öncesinde antitiroid ilaç kullanmıyordu. İşlemden 10 gün sonra çarpıntı, uykusuzluk ve kas ağrısı ile başvuruyor.\n\nTetkikler:\nTSH: <0.01 mU/L\nsT4: 2.1 ng/dL ↑ (N: 0.8–1.8)\nNabız: 104/dk, sinüs ritmi\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Metimazol 20 mg/gün başlanması",
+        "B": "Ablasyon başarısız sayılıp RAI verilmesi",
+        "C": "Beta blokerle semptom kontrolü ve kendiliğinden gerilemesinin beklenmesi",
+        "D": "Prednizolon 40 mg/gün başlanması",
+        "E": "Ablasyonun başarısız sayılıp hemen lobektomi planlanması"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Özellikle otonom nodül ablasyonundan sonra geçici hipertiroidi görülebilir; tablo büyük ölçüde yıkıcı tiroidit kökenlidir, 2–4 haftada kendiliğinden geriler ve semptomlar beta blokerle kontrol edilir. Antitiroid ilaç nadiren gerekir.",
+      "aciklama_detay": "Termal ablasyon sonrasında ablate edilen dokudan hormon salınımına bağlı geçici hipertiroidi gelişebilir; en çok otonom fonksiyone nodül ablasyonundan sonra görülür. Çarpıntı, anksiyete, uykusuzluk ve miyalji genellikle işlemden 2–4 hafta sonra kendiliğinden geriler. Tablo ağırlıklı olarak yıkıcı olduğu için hormon sentezini baskılayan antitiroid ilaç nadiren gerekir; hafif semptomların kontrolünde beta blokerler etkilidir. İşlem öncesinde antitiroid ilaç kullanan hastalarda ise tedaviye işlemden sonra en az 3–4 hafta ya da testler normale dönene kadar devam edilmesi önerilir. Otonom nodülde ablasyon başarısının ölçütü, antitiroid ilaç ya da LT4 gerekmeden ötiroidinin sağlanmasıdır; bunu değerlendirmek için her kontrolde tiroid fonksiyon testleri bakılır ve üçüncü ayda sintigrafi tekrarlanır. İlk 2 haftadaki tirotoksikoz başarısızlık göstergesi değildir; persistan hipertiroidide tekrar ablasyon ya da alternatif tedaviler gündeme gelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yıkıcı mekanizmalı, kendini sınırlayan tabloda antitiroid ilaç nadiren gerekir.",
+        "B": "YANLIS — Başarı 3. ayda test ve sintigrafiyle değerlendirilir; erken geçici tirotoksikoz başarısızlık değildir.",
+        "C": "DOGRU — Geçici tirotoksikoz 2–4 haftada geriler; beta bloker yeterlidir.",
+        "D": "YANLIS — Hafif, kendini sınırlayan bu tabloda glukokortikoid gerekmez.",
+        "E": "YANLIS — Erken dönem tirotoksikoz üzerine cerrahi kararı verilmez; yanıt 3. ayda değerlendirilir."
+      },
+      "etiketler": ["Otonom Fonksiyone Nodül", "Termal Ablasyon", "Geçici Tirotoksikoz", "Beta Bloker"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı)"
+    },
+    {
+      "id": "s13",
+      "metin": "Elli bir yaşında kadın, 3 yıl önce bası yakınması yapan, iki kez benign doğrulanmış 24 mL'lik solid nodülüne RFA yapılmış. Yakınmaları geçmiş. İzlemdeki nodül hacimleri:\n\nİşlem öncesi: 24 mL\n12. ay: 6 mL\n24. ay: 7 mL\n36. ay: 10.5 mL\n\nSon aylarda yutarken hafif takılma hissi yeniden başlamış. USG'de nodülün periferinde kanlanan canlı doku izleniyor; yeni şüpheli bulgu yok. TSH normal.\n\nBu bulguların yorumu ve en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Başlangıca göre hacim küçülmesi hâlâ %50'nin üzerinde olduğundan tedavi başarılıdır; yıllık izlem yeterlidir",
+        "B": "Hacim artışı %50'nin altında kaldığından yeniden büyüme yoktur; 2 yıl sonra kontrol",
+        "C": "Hacim artışı maligniteyi gösterir; total tiroidektomi yapılmalıdır",
+        "D": "Periferdeki canlı doku için sitoloji gerekmeden hemen tekrar RFA yapılmalıdır",
+        "E": "Yeniden büyüme vardır; tekrar ablasyon ya da cerrahi düşünülür, tekrar ablasyondan önce sitoloji yapılır"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Yeniden büyüme, tedavi sonrası ulaşılan EN KÜÇÜK hacme göre >%50 artış olarak tanımlanır (6 → 10.5 mL = %75). Başlangıca göre hesaplanan hacim küçülme oranı hâlâ %56 olsa da nodül yeniden büyümüştür ve semptom yeniden başlamıştır.",
+      "aciklama_detay": "Ablasyon sonrası hacim küçülme oranı (VRR), başlangıç hacminden son hacim çıkarılıp başlangıç hacmine bölünerek hesaplanır; >%50 olması tedavinin etkin olduğunu gösterir. Bu hastada 3. yılda VRR (24 − 10.5)/24 ≈ %56'dır ve tek başına bakıldığında başarı gibi görünür. Ancak yeniden büyüme ölçütü farklıdır: ulaşılan en küçük hacme göre %50'nin üzerinde artış. En küçük hacim 6 mL, son hacim 10.5 mL'dir; artış %75'tir, yani yeniden büyüme vardır. Yeniden büyüme genellikle 3–5. yılda ortaya çıkar ve çoğunlukla yetersiz ablate edilmiş periferik dokudan kaynaklanır; bu yüzden kenarlar dahil tam ablasyon ve gerektiğinde vasküler ablasyon önemlidir. En fazla küçülme ilk yılda olduğundan izlemde boyun USG'si 1–2 yılda bir yapılır. Bası yakınmasıyla yeniden büyüyen nodülde tekrar ablasyon ya da cerrahi düşünülür; tekrar ablasyondan önce sitoloji önerilir. Tek başına büyüme malignite için zayıf bir belirteçtir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Başlangıca göre VRR yeniden büyümeyi gizler; ölçüt en küçük hacme göre artıştır ve semptom geri dönmüştür.",
+        "B": "YANLIS — Artış en küçük hacme göre %75'tir; hesap başlangıç hacmine göre yapılmamalıdır.",
+        "C": "YANLIS — Büyüme tek başına malignite için zayıf bir belirteçtir; iki kez benign doğrulanmış nodülde total tiroidektomi aşırıdır.",
+        "D": "YANLIS — Tekrar ablasyondan önce sitoloji önerilir.",
+        "E": "DOGRU — En küçük hacme göre >%50 artış yeniden büyümedir; tekrar ablasyon öncesi sitoloji yapılır."
+      },
+      "etiketler": ["Yeniden Büyüme", "Hacim Küçülme Oranı", "Radyofrekans Ablasyon", "Ablasyon Sonrası İzlem"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı); TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025"
+    },
+    {
+      "id": "s14",
+      "metin": "Kırk altı yaşında kadın, boynun solunda yavaş büyüyen şişlik ve son aylarda yutma güçlüğü nedeniyle başvuruyor. USG'de sol lobun alt kutbunun arkasında, tiroidden ayrı, 35 mm, ince duvarlı, tümüyle kistik lezyon var. İlk değerlendirmede tiroid kisti sanılarak aspire edilmiş; berrak ve renksiz sıvı gelmiş. Kist 6 ay içinde iki kez aspire edilmiş ve iki kez de yeniden dolmuş.\n\nTetkikler:\nAspirat sıvısında PTH: 28.000 pg/mL\nSerum kalsiyum: 9.4 mg/dL (normal)\nSerum intakt PTH: 44 pg/mL (normal)\n\nTEMD kılavuzuna göre bu bulguların yorumu ve en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Aspiratta PTH yüksekliği fonksiyonel paratiroid kistini gösterir; paratiroidektomi yapılmalıdır",
+        "B": "Aspiratta PTH yüksekliği paratiroid karsinomu için uyarıdır; iğne girişiminden kaçınılmalıdır",
+        "C": "Basit aspirasyonun üçüncü kez tekrarlanması",
+        "D": "Nonfonksiyone paratiroid kisti; reaspirasyon yerine alkol ablasyonu",
+        "E": "Sestamibi ve dört boyutlu BT ile adenom aranıp cerrahi eksplorasyon yapılması"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Kist sıvısındaki yüksek PTH kistin paratiroid kaynaklı olduğunu gösterir, fonksiyon durumunu değil; fonksiyonu serum kalsiyum ve PTH belirler. Semptomatik nonfonksiyone paratiroid kistinde ilk seçenek aspirasyondur, tekrarlayan kistte reaspirasyon etkisizdir ve alkol ablasyonu uygulanır.",
+      "aciklama_detay": "Paratiroid kistleri paratiroid hastalıklarının yaklaşık %0,5'ini, kistik boyun lezyonlarının %1'ini oluşturur ve derin yerleşimleri nedeniyle sıklıkla kistik tiroid nodülü sanılır. Aspirasyonla gelen berrak, renksiz sıvı tipiktir. Aspiratta PTH'nin çok yüksek olması kistin paratiroid kaynaklı olduğunu gösterir, ancak fonksiyonel olup olmadığını belirlemez; bunu serum kalsiyumu ve PTH gösterir. Bu hastada ikisi de normaldir, yani kist nonfonksiyonedir. Semptomatik nonfonksiyone kistte ilk basamak basit aspirasyondur ve başarısı %33–92 arasında bildirilmiştir; tekrarlayan kistlerde reaspirasyon etkili olmamış, alkol ablasyonu ise majör komplikasyon olmadan başarılı bulunmuştur. Kist aspire edildikten sonra %95–99 alkol, aspire edilen sıvının yaklaşık %50'si kadar verilir; transistmik yaklaşım sızıntıyı azaltır ve işlem sonrası hasta 30 dakika izlenir. Kistik, ince duvarlı, normokalsemik lezyon karsinom özelliği taşımaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Aspirat PTH'si kaynak gösterir, fonksiyon göstermez; serum kalsiyum ve PTH normaldir.",
+        "B": "YANLIS — Normokalsemik, ince duvarlı, tümüyle kistik lezyon karsinom özelliği taşımaz; aspirat PTH'si karsinom işareti değildir.",
+        "C": "YANLIS — Tekrarlayan paratiroid kistinde reaspirasyon etkili bulunmamıştır.",
+        "D": "DOGRU — Nonfonksiyone, tekrarlayan paratiroid kistinde alkol ablasyonu uygulanır.",
+        "E": "YANLIS — Hiperparatiroidi yoktur; adenom araması ve eksplorasyon gereksizdir."
+      },
+      "etiketler": ["Paratiroid Kisti", "Aspirat PTH", "Alkol Ablasyonu", "Kistik Boyun Lezyonu"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı)"
+    },
+    {
+      "id": "s15",
+      "metin": "Altmış üç yaşında kadın, primer hiperparatiroidi nedeniyle izleniyor. Ağır KOAH'ı ve iskemik kalp hastalığı var; anestezi riski yüksek bulunmuş, ameliyat istemiyor.\n\nTetkikler:\nSerum kalsiyum: 11.6 mg/dL ↑, intakt PTH: 168 pg/mL ↑\n25-OH D vitamini: 32 ng/mL\nKemik mineral yoğunluğu: lomber T skoru −2.8\nBoyun USG: sağ lob içinde yerleşik, 14 mm, iyi sınırlı hipoekoik lezyon\nSestamibi: aynı lezyonda tutulum\nLezyondan İİAB yıkama sıvısında PTH: çok yüksek (intratiroidal paratiroid adenomu)\nMalignite düşündüren bulgu yok.\n\nTEMD kılavuzuna göre bu hasta için en uygun girişimsel yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "US eşliğinde adenoma alkol (etanol) ablasyonu",
+        "B": "Multidisipliner onayla US eşliğinde termal ablasyon (lobektomiye alternatif olarak)",
+        "C": "Girişimsel tedavi yerine tek başına sinakalset",
+        "D": "Adenom tiroid içinde olduğu için ablasyon kontrendike; tek seçenek sağ lobektomi",
+        "E": "Yüksek yoğunluklu odaklanmış ultrason (YYOU) ile ablasyon"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "İntratiroidal paratiroid adenomu termal ablasyonun en ideal hedefidir: tiroid parankimi termal yayılımı sınırlar ve lobektomi ihtiyacı ortadan kalkabilir. TEMD bu yerleşimde termal ablasyonu lobektomiye alternatif sayar; alkol ablasyonunu ise hiperparatiroidide önermez.",
+      "aciklama_detay": "İntratiroidal paratiroid adenomu nadirdir (yaklaşık %0,2). Tiroid parankimi içindeki konum, termal yayılımı sınırlayarak çevre dokuları korur ve klasik tedavi olan lobektomiyi gereksiz kılabilir; Fransız Endokrinoloji Derneği 2025 ulusal kılavuzu bu yerleşimde termal ablasyonu birinci basamak olarak önermiştir. TEMD de intratiroidal adenomda termal ablasyonu lobektomiye alternatif olarak önerilebilir bulur; ameliyata uygun olmayan ya da cerrahiden kaçınan hastada multidisipliner onayla ikinci basamak seçenek olarak değerlendirilir. Paratiroid adenomlarında tiroid nodüllerine göre daha düşük güç ve daha küçük aktif uç önerilir ve adenomun periferi tamamen ablate edilmelidir. Alkol ablasyonu çevre dokuda cerrahiyi çok zorlaştıran fibrozis, ağrı ve vokal kord hasarı yaptığı ve nüks sık olduğu için TEMD tarafından primer ve sekonder hiperparatiroidide önerilmez. YYOU'nun verisi çok sınırlıdır (küçük bir seride 1 yılda yalnızca yaklaşık %23 tam remisyon). Osteoporozu olan hastada sinakalset kalsiyumu düşürse de kemik kütlesini düzeltmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — TEMD hiperparatiroidide alkol ablasyonunu önermez: nüks sık, fibrozis sonraki cerrahiyi çok zorlaştırır.",
+        "B": "DOGRU — İntratiroidal adenomda termal ablasyon lobektomiye alternatiftir; multidisipliner onayla uygulanır.",
+        "C": "YANLIS — Sinakalset kalsiyumu düşürür ama osteoporozu düzeltmez; kesin tedavi seçeneği varken tek başına tercih edilmez.",
+        "D": "YANLIS — İntratiroidal yerleşim ablasyon için kontrendikasyon değil, en uygun hedeftir.",
+        "E": "YANLIS — YYOU'nun paratiroid adenomunda verisi çok sınırlıdır ve remisyon oranı düşüktür."
+      },
+      "etiketler": ["Primer Hiperparatiroidi", "İntratiroidal Paratiroid Adenomu", "Termal Ablasyon", "Paratiroid Girişimleri"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu 2026 (2. baskı)"
+    }
+  ]
+}

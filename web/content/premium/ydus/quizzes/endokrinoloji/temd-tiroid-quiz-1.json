@@ -1,0 +1,368 @@
+{
+  "id": "quiz-endo-temd-tiroid-001",
+  "baslik": "TEMD Tiroid 1 — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "temd-tiroid",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Yetmiş bir yaşında erkek, sol femoral derin ven trombozu nedeniyle yatıyor; günde iki kez 1 mg/kg enoksaparin alıyor. Tiroid yakınması yok. Nabız 76/dk, düzenli; tiroid ele gelmiyor. Rutin tetkiklerde tiroid testleri de istenmiş; kan, sabah enoksaparin dozundan yaklaşık 2 saat sonra alınmış.\n\nTetkikler:\nsT4: 2.4 ng/dL ↑ (N: 0.8–1.8)\nsT3: 4.9 pg/mL ↑ (N: 2.3–4.2)\nTSH: 1.9 mU/L (N: 0.4–4.0)\nBiyotin ya da amiodaron kullanmıyor.\n\nTEMD kılavuzuna göre bu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "TSH salgılayan hipofiz adenomu açısından hipofiz MRG istenmesi",
+        "B": "sT4'ün enoksaparin dozundan en az 10 saat sonra alınan örnekte yeniden ölçülmesi",
+        "C": "Uygunsuz TSH salgısı düşünülerek düşük doz metimazol başlanması",
+        "D": "Tiroid hormon direnci için THRB gen analizi istenmesi",
+        "E": "TSH-oma ile hormon direncini ayırmak için T3 baskılama testi yapılması"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Heparin (enoksaparin dahil) lipoprotein lipazı uyararak serbest yağ asitlerini artırır, T4'ü bağlayıcı proteinlerden ayırır ve sT4/sT3'ü yalancı yükseltir. Normal TSH ile birlikte TSH-oma ya da hormon direncini taklit eder; TEMD sT4'ün enoksaparinden 10 saat sonra ölçülmesini önerir.",
+      "aciklama_detay": "Yüksek sT4 ve sT3 ile baskılanmamış TSH birlikteliği ilk bakışta uygunsuz TSH salgısını (TSH-oma, tiroid hormon direnci) düşündürür. Ancak bu tabloya gitmeden önce ölçüm artefaktı dışlanmalıdır. Fraksiyone ve fraksiyone olmayan heparin, düşük dozda bile, lipoprotein lipaz aracılı serbest yağ asidi artışına yol açar; yağ asitleri T4 ve T3'ü taşıyıcı proteinlerden ayırır ve özellikle örnek bekledikçe (in vitro lipoliz) serbest hormonlar yalancı yüksek ölçülür. Bu hastada klinik ötiroidi, nabzın normal olması ve kanın dozdan kısa süre sonra alınması artefaktı destekler. TEMD'nin pratik önerisi sT4'ün enoksaparinden 10 saat sonra ölçülmesidir. Aynı mantık biyotin için de geçerlidir (en az 2 gün ara). Artefakt dışlanmadan yapılan MRG, dinamik testler ya da genetik analiz gereksiz ve yanıltıcıdır; hipofizde rastlantısal bir mikroadenom hastayı yanlış tedaviye bile sürükleyebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ölçüm artefaktı dışlanmadan görüntülemeye gitmek erkendir; hipofizde rastlantısal lezyon yanlış tanıya götürebilir.",
+        "B": "DOGRU — Heparinin yalancı sT4/sT3 yüksekliğini dışlamak için örnek dozdan en az 10 saat sonra alınmalıdır.",
+        "C": "YANLIS — Klinik ötiroid ve TSH normal bir hastada antitiroid ilaç endikasyonu yoktur; tablo büyük olasılıkla laboratuvar artefaktıdır.",
+        "D": "YANLIS — Hormon direnci ancak tekrarlanan, artefakttan arındırılmış ölçümlerle tablo kalıcıysa düşünülür.",
+        "E": "YANLIS — T3 baskılama testi, üstelik ileri yaşta ve tromboz tablosunda, artefakt dışlanmadan yapılmaz."
+      },
+      "etiketler": ["Tiroid Fonksiyon Testleri", "İlaç Etkileşimi", "Heparin", "Uygunsuz TSH Salgısı"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — Tiroid ve ilaçlar"
+    },
+    {
+      "id": "s2",
+      "metin": "Yirmi yedi yaşında kadın, ara ara çarpıntı ve hafif boyun şişliği nedeniyle başvuruyor. Kilo kaybı yok. Nabız 96/dk. Hafif diffüz guatr var, orbitopati yok. Biyotin, heparin ya da amiodaron kullanmıyor. Bilinen aile öyküsü yok.\n\nTetkikler (iki ayrı laboratuvarda, farklı platformlarla tekrarlanmış):\nsT4: 2.3 ng/dL ↑ (N: 0.8–1.8)\nsT3: 5.4 pg/mL ↑ (N: 2.3–4.2)\nTSH: 3.1 mU/L (N: 0.4–4.0)\nTRAb: negatif\nHipofiz MRG: normal\nAlfa-subunit/TSH molar oranı: normal\nTRH uyarısıyla TSH: bazalin 4 katına yükseliyor\n\nBu hasta için en olası tanı ve en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "TSH-oma; transsfenoidal cerrahi öncesi somatostatin analoğu",
+        "B": "Graves hastalığı; metimazol ile ötiroidi sağlanması",
+        "C": "Ailesel disalbüminemik hipertiroksinemi; hiçbir inceleme gerekmez",
+        "D": "Tiroid hormon direnci (THD-beta); THRB analizi, gerekirse taşikardi için atenolol",
+        "E": "Sessiz tiroidit; beta bloker ile 6–8 hafta izlem"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Artefakttan arındırılmış yüksek sT4/sT3 + baskılanmamış TSH + normal MRG + normal alfa-subunit oranı + TRH'ye abartılı TSH yanıtı tiroid hormon direncini (THD-beta) düşündürür; tanı THRB analiziyle kesinleşir, ablatif ya da antitiroid tedavi verilmez.",
+      "aciklama_detay": "Uygunsuz TSH salgısı tablosunda ilk adım ölçüm artefaktını (biyotin, heparin, heterofil antikor) dışlamaktır; burada iki farklı platformda tutarlı sonuç alınmıştır. Asıl ayırıcı tanı TSH-oma ile THD-beta arasındadır. TSH-omada alfa-subunit/TSH molar oranı yüksektir, TRH ile TSH hiç artmaz ya da 1,5 kattan az artar ve T3 baskılama testinde TSH baskılanmaz. THD-beta'da ise MRG normaldir, alfa-subunit oranı normaldir, TRH yanıtı korunmuş ya da abartılıdır ve T3 ile TSH baskılanır. Tanı THRB mutasyon analiziyle doğrulanır; aile taraması önerilir. Tedavinin amacı hormon düzeylerini normale indirmek değildir: antitiroid ilaç ya da ablasyon TSH'yi daha da artırıp guatrı büyütebilir. Taşikardi gerekiyorsa TEMD atenololü önerir; propranolol T4'ün T3'e dönüşümünü baskıladığı için tercih edilmez. THD-beta otoimmün tiroid hastalığı riskini de artırdığından antikor pozitifliği araştırmayı durdurmamalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Normal MRG, normal alfa-subunit oranı ve TRH'ye güçlü TSH yanıtı TSH-omaya uymaz.",
+        "B": "YANLIS — Graves'te TSH baskılıdır ve TRAb genellikle pozitiftir; burada TSH normaldir.",
+        "C": "YANLIS — Bu durumda total T4 yüksektir, serbest hormonlar çoğu yöntemde normaldir ve sT3 yüksekliği beklenmez; tablo açıklanmaz.",
+        "D": "DOGRU — Bulgular THD-beta ile uyumludur; THRB analizi yapılır, ablatif tedaviden kaçınılır, taşikardide atenolol tercih edilir.",
+        "E": "YANLIS — Sessiz tiroiditte TSH baskılıdır; normal TSH ile yüksek serbest hormonlar bu tanıyla açıklanamaz."
+      },
+      "etiketler": ["Tiroid Hormon Direnci", "TSH-oma", "Uygunsuz TSH Salgısı", "THRB"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — Tiroid hormon direnci"
+    },
+    {
+      "id": "s3",
+      "metin": "Otuz dört yaşında kadın, 4 yıldır Hashimoto tiroiditi nedeniyle levotiroksin 100 µg/gün kullanıyor. İlacını aç karnına düzenli alıyor. Son iki kontrolde TSH hedef aralıkta. Buna rağmen yorgunluk ve saç dökülmesi yakınması sürüyor. Menstrüel kanamaları olağan.\n\nTetkikler:\nTSH: 1.4 mU/L\nsT4: 1.3 ng/dL (normal)\nHemoglobin: 12.6 g/dL (normal), MCV: 84 fL\nFerritin: 14 ng/mL\nVitamin B12 ve folat: normal\n\nTEMD kılavuzuna göre bu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Demir replasmanı ile ferritinin 100 ng/mL üzerine çıkarılması; demirin LT4'ten en az 4 saat ayrı alınması",
+        "B": "LT4 dozunun artırılarak TSH'nin 0.5 mU/L altında tutulması",
+        "C": "Levotiroksine liyotironin (T3) eklenerek kombinasyon tedavisine geçilmesi",
+        "D": "Selenyum 200 µg/gün başlanması, demir tedavisinin anemi gelişirse düşünülmesi",
+        "E": "Anemi olmadığından demirin gerekmediğinin anlatılıp semptomların tiroiditle açıklanması"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "TPO hem bağımlı bir enzimdir; anemi olmasa bile demir eksikliği hormon sentezini ve T4→T3 dönüşümünü bozar. LT4'e rağmen süren yakınmada ferritinin 100 ng/mL üzerine çıkarılmasının semptomları düzelttiği bildirilmiştir.",
+      "aciklama_detay": "TEMD, otoimmün tiroid hastalığı olanlarda anemi olmasa bile kan sayımı, demir ve ferritin bakılmasını önerir. Tiroid peroksidaz hem içeren bir enzimdir; demir eksikliği iyodun organifikasyonunu ve periferik deiyodinasyonu azaltır. Hedef aralıkta TSH'ye rağmen yorgunluk ve saç dökülmesi süren hastada ferritinin 100 ng/mL'nin üzerine çıkarılması yakınmaları düzeltebilir. Ancak aşırı replasmandan kaçınılmalıdır, çünkü demir fazlalığı proinflamatuvardır. Oral demir LT4 emilimini azalttığı için iki ilaç arasında en az 4 saat bırakılmalıdır. Otoimmün tiroiditte atrofik gastrit ve çölyak hastalığı sık eşlik eder; demir eksikliğinin nedeni açık değilse bunlar da araştırılmalıdır. TSH'yi baskılayacak kadar doz artırmak iatrojenik subklinik hipertiroidi yaratır ve yakınmayı çözmez.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Anemi olmasa da düşük ferritin düzeltilmeli, hedef 100 ng/mL üstü; LT4 ile arasında en az 4 saat bırakılır.",
+        "B": "YANLIS — TSH zaten hedefte; doz artırmak iatrojenik subklinik hipertiroidi yaratır, kemik ve kalp riski getirir.",
+        "C": "YANLIS — Düzeltilebilir bir neden (demir eksikliği) varken kombinasyon tedavisine geçmek gerekçesizdir.",
+        "D": "YANLIS — Selenyumun bu yakınmaları düzelttiği gösterilmemiştir; demir eksikliği anemi olmadan da tedavi edilir.",
+        "E": "YANLIS — Aneminin olmaması demir eksikliğinin tiroid üzerindeki etkisini dışlamaz; kılavuz ferritin bakılmasını önerir."
+      },
+      "etiketler": ["Hashimoto Tiroiditi", "Demir Eksikliği", "Ferritin", "Levotiroksin"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — Eser elementler ve vitaminler"
+    },
+    {
+      "id": "s4",
+      "metin": "Otuz sekiz yaşında kadın, 2 aydır çarpıntı, sıcağa dayanıksızlık ve 3 kg kilo kaybı nedeniyle başvuruyor. Diffüz guatr var, orbitopati yok. Nabız 104/dk. Sigara içmiyor, gebelik planı yok.\n\nTetkikler:\nsT4: 2.4 ng/dL ↑ (N: 0.8–1.8)\nTSH: <0.01 mU/L\nTRAb: pozitif\nNötrofil: 3400/mm³, ALT: 22 U/L\n\nHasta antitiroid ilaç tedavisini tercih ediyor. TEMD kılavuzuna göre başlangıç tedavisi ve izlem için en uygun seçenek hangisidir?",
+      "secenekler": {
+        "A": "Metimazol 30–40 mg/gün; doz ayarı 4–6 haftada bir TSH'ye göre yapılır",
+        "B": "Propiltiourasil 300 mg/gün; TSH normale dönünce doz yarıya indirilir",
+        "C": "Metimazol 10 mg/gün; kontrollerde doz ayarı sT4 ve total T3'e göre yapılır",
+        "D": "Metimazol 10 mg/gün ile birlikte levotiroksin (blok-replasman) başlanır",
+        "E": "Metimazol 20 mg/gün; TSH normale dönünce ilaç kesilir ve 6 ay izlenir"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "TEMD metimazol başlangıç dozunu sT4'ün normalin kaç katı olduğuna göre seçer: 1–1,5 katta 5–10 mg, 1,5–2 katta 10–20 mg, 2–3 katta 30–40 mg. TSH aylarca baskılı kalabildiği için erken izlemde sT4 ve total T3 kullanılır.",
+      "aciklama_detay": "Bu hastada sT4 normalin üst sınırının yaklaşık 1,3 katıdır; TEMD'ye göre metimazol 5–10 mg/gün yeterlidir. Gereğinden yüksek doz, doza bağımlı yan etkileri (agranülositozun metimazolde doza bağlı olduğunu hatırla) ve iatrojenik hipotiroidiyi artırır. Tedavinin ilk aylarında TSH, tirotropların uzun süre baskılı kalması nedeniyle hâlâ düşük olabilir; bu dönemde doz sT4 ve total T3'e göre ayarlanır. Hasta ötiroid olunca doz %30–50 azaltılır ve toplam tedavi süresi 12–18 aydır. PTU gebeliğin ilk trimesteri ve tiroid krizi gibi özel durumlara ayrılır; 100 mg PTU yaklaşık 5–6 mg metimazole denktir. Blok-replasman rejimi daha fazla yan etkiyle ilişkilidir ve rutin önerilmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — 30–40 mg sT4'ün 2–3 kat yüksek olduğu tabloya uygundur; ayrıca erken izlemde TSH yanıltıcıdır.",
+        "B": "YANLIS — Gebe olmayan erişkinde PTU birinci seçenek değildir (karaciğer toksisitesi); TSH'ye göre ayar da yanlıştır.",
+        "C": "DOGRU — sT4 normalin yaklaşık 1,3 katı: 5–10 mg yeterli; izlem sT4 ve total T3 ile yapılır.",
+        "D": "YANLIS — Blok-replasman rejimi daha fazla yan etkiyle ilişkilidir ve rutin önerilmez.",
+        "E": "YANLIS — Doz gereğinden yüksek; üstelik TSH normale döner dönmez kesmek nüksü garantiler, süre 12–18 aydır."
+      },
+      "etiketler": ["Graves Hastalığı", "Metimazol", "Doz Seçimi", "Tedavi İzlemi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — Hipertiroidi ve tirotoksikoz"
+    },
+    {
+      "id": "s5",
+      "metin": "Yirmi dokuz yaşında erkek, yeni tanı Graves hastalığı. Çarpıntı ve el titremesi var, orbitopati yok. Guatr hafif büyük.\n\nTetkikler:\nsT4: 3.1 ng/dL ↑ (N: 0.8–1.8), TSH: <0.01 mU/L\nTRAb: pozitif\nLökosit: 2900/mm³, nötrofil: 850/mm³\nHemoglobin ve trombosit: normal\nALT, AST: normal\nİki yıl önceki hemogramında nötrofil 900/mm³ bulunmuş.\n\nTEMD kılavuzuna göre bu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Metimazol 20 mg/gün başlanması ve haftalık hemogramla izlem",
+        "B": "Agranülositoz riski doza bağlı olmadığı için propiltiourasil başlanması",
+        "C": "Metimazol başlanması ve profilaktik G-CSF eklenmesi",
+        "D": "Uzun süreli tek başına Lugol solüsyonu ile hormon kontrolü",
+        "E": "Antitiroid ilaç başlanmaması; beta blokerle semptom kontrolü ve RAI ya da cerrahiyle kesin tedavi"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Nötrofil <1000/mm³ ya da transaminazlar normalin 5 katından yüksekse antitiroid ilaç başlanmaz. Semptom beta blokerle kontrol edilir, kesin tedavi (RAI ya da tiroidektomi) planlanır.",
+      "aciklama_detay": "TEMD, tedavi öncesi nötrofil sayısı 1000/mm³'ün altında ya da transaminazlar normalin 5 katının üzerindeyse antitiroid ilaç başlanmamasını önerir. Bu hastada nötrofil düşüklüğü Graves'ten önce de vardır; yani yapısal (etnik ya da benign) bir nötropeni olasıdır ve ilaç başlanırsa agranülositozu bazal durumdan ayırmak neredeyse imkânsız hale gelir. Agranülositozun çoğu ilk 90 günde görülür, metimazolde doza bağlıdır, PTU'da değildir; ciddi yan etkide iki ilaç arasında çapraz reaksiyon riski yüksektir. Bu nedenle ilaç değiştirmek güvenli bir kaçış yolu değildir. Doğru yol beta blokerle semptom kontrolü ve RAI ya da (gerekirse kısa süreli iyot hazırlığıyla) tiroidektomidir. Uzun süreli tek başına iyot tedavisi kaçış fenomeni nedeniyle kalıcı çözüm değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Nötrofil 1000/mm³ altında antitiroid ilaç başlanmaz; haftalık hemogram riski ortadan kaldırmaz.",
+        "B": "YANLIS — PTU da agranülositoz yapar ve iki ilaç arasında çapraz reaksiyon yüksektir; eşik iki ilaç için de geçerlidir.",
+        "C": "YANLIS — Profilaktik G-CSF ile antitiroid ilaç başlanması önerilen bir strateji değildir.",
+        "D": "YANLIS — İnorganik iyodun etkisi kaçış fenomeniyle kaybolur; yalnızca kısa süreli (ör. cerrahi hazırlık) kullanılır.",
+        "E": "DOGRU — Bazal nötropenide antitiroid ilaç başlanmaz; beta blokerle köprülenip kesin tedaviye gidilir."
+      },
+      "etiketler": ["Graves Hastalığı", "Antitiroid İlaç", "Nötropeni", "Radyoaktif İyot"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — Hipertiroidi ve tirotoksikoz"
+    },
+    {
+      "id": "s6",
+      "metin": "Otuz bir yaşında kadın, doğumdan 4 ay sonra çarpıntı ve kilo kaybı ile başvuruyor. Bebeğini yalnızca anne sütüyle besliyor. Sağ lobda ele gelen 2 cm nodül var; orbitopati yok. Yakınmaları 3 aydır sürüyor.\n\nTetkikler:\nTSH: 0.02 mU/L\nsT4: 1.95 ng/dL (hafif ↑)\nTRAb: negatif\nUSG: sağ lobda 21 mm solid, izoekoik, kanlanması artmış nodül\n\nEndokrinolog otonom nodül ayrımı için sintigrafi yapılmasına karar veriyor. TEMD kılavuzuna göre ajan seçimi ve emzirme için en uygun öneri hangisidir?",
+      "secenekler": {
+        "A": "99mTc-perteknetat kullanılması; emzirmeye 12 saat ara verilmesi",
+        "B": "123I kullanılması; emzirmeye 12 saat ara verilmesi",
+        "C": "Düşük doz 131I ile RAIU yapılması; emzirmeye 24 saat ara verilmesi",
+        "D": "123I kullanılması; emzirmeye 24 saat ara verilmesi",
+        "E": "Emzirme sürdüğü için sintigrafinin 6 ay ertelenmesi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Laktasyonda tercih edilen ajan 99mTc-perteknetattır; sonrasında emzirmeye 12 saat ara vermek yeterlidir. İyot izotoplarında (123I, 131I) emzirme en az 3 hafta kesilmeli, bu da pratikte emzirmenin sonu demektir.",
+      "aciklama_detay": "Emziren kadında sintigrafi ancak gerçekten gerekliyse yapılır; postpartum dönemde tirotoksikozun en sık nedeni olan postpartum tiroiditte genellikle gerek yoktur. Bu hastada tablonun 3 aydır sürmesi, TRAb negatifliği ve kanlanması artmış solid nodül otonom nodülü düşündürür, ayrım için sintigrafi gerekir. 99mTc-perteknetatın yarı ömrü kısadır ve 12 saatlik ara yeterlidir. 123I'nın kendisi kısa ömürlü olsa da preparatlar başka iyot izotoplarıyla kontamine olabildiği için emzirmenin en az 3 hafta kesilmesi gerekir; RAIU için verilen çok küçük 131I dozu da aynı süreyi gerektirir. Bu sürenin sonunda süt üretimi çoğunlukla sürdürülemediği için TEMD iyot izotoplarında emzirmenin pratikte tamamen kesilmesini önerir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Laktasyonda tercih edilen ajan perteknetattır; 12 saat ara yeterlidir.",
+        "B": "YANLIS — 123I başka iyot izotoplarıyla kontamine olabilir; emzirme en az 3 hafta kesilmelidir.",
+        "C": "YANLIS — Tanısal küçük 131I dozu bile en az 3 haftalık ara gerektirir; 24 saat yetersizdir.",
+        "D": "YANLIS — 123I sonrası 24 saat yeterli değildir; kontaminasyon riski nedeniyle en az 3 hafta gerekir.",
+        "E": "YANLIS — Gerekli sintigrafi ertelenmez; perteknetatla emzirmeyi bozmadan yapılabilir."
+      },
+      "etiketler": ["Tiroid Sintigrafisi", "Laktasyon", "Otonom Nodül", "Postpartum Tirotoksikoz"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — Sintigrafi ve RAIU"
+    },
+    {
+      "id": "s7",
+      "metin": "Altmış yedi yaşında erkek, 2 yıldır paroksismal atriyal fibrilasyon nedeniyle amiodaron kullanıyor. Son 1 ayda AF atakları sıklaşmış, 4 kg kilo kaybetmiş. Bilinen tiroid hastalığı yok; muayenede guatr ya da nodül yok.\n\nTetkikler:\nTSH: <0.01 mU/L\nsT4: 3.2 ng/dL ↑ (N: 0.8–1.8)\nsT3: 5.0 pg/mL ↑ (N: 2.3–4.2)\nTRAb: negatif\nUSG: normal boyutta bez, nodül yok; renkli Doppler'de kanlanma yok denecek kadar az\n99mTc-perteknetat sintigrafisi: tutulum yok\n99mTc-sestamibi sintigrafisi: tiroid tutulumu belirgin azalmış\n\nKardiyoloji amiodaronun sürdürülmesini istiyor. Bu hasta için en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Metimazol 40 mg/gün ile birlikte sodyum perklorat",
+        "B": "Radyoaktif iyot tedavisi",
+        "C": "Amiodaronun kesilip 3 ay tedavisiz izlenmesi",
+        "D": "Prednizolon 30–40 mg/gün; 2–4 hafta sonra 2–3 ayda azaltılarak kesilmesi",
+        "E": "Tek başına lityum tedavisi"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Guatrsız bezde, Doppler'de kanlanmanın olmaması ve sestamibi tutulumunun azalması tip 2 (yıkıcı) amiodaron tirotoksikozunu gösterir; tedavi glukokortikoiddir.",
+      "aciklama_detay": "Amiodaronun getirdiği yüksek iyot yükü nedeniyle perteknetat ve 123I her iki tipte de tiroidi göstermez; bu yüzden perteknetatta tutulum olmaması tipleri ayırmaz. 99mTc-sestamibi NIS'e bağımlı olmadığı için iyottan etkilenmez: tip 1'de (altta nodüler guatr ya da latent Graves, iyot yüküyle artmış sentez) tutulum korunur, tip 2'de (normal bezde doğrudan toksik yıkıcı tiroidit) azalır. Doppler'de tip 1'de kanlanma artmış, tip 2'de azalmış ya da yoktur. Bu hastanın bulguları tip 2 ile uyumludur. TEMD'ye göre tip 2'de prednizolon 30–40 mg/gün 2–4 hafta verilir, sonra klinik yanıta göre 2–3 ayda azaltılarak kesilir. Tip 1'de ise yüksek doz tiyonamid (genellikle 40 mg/gün) ve gerekirse sodyum perklorat kullanılır. Tip ayırt edilemiyorsa ya da tablo ağırsa iki tedavi birlikte başlanır. İyot yükü ve düşük tutulum nedeniyle RAI etkisizdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tiyonamid + perklorat tip 1'in tedavisidir; yıkıcı tiroiditte hormon sentezi artmadığı için etkisizdir.",
+        "B": "YANLIS — İyot yüklü ve tutulumu olmayan bezde RAI etkisizdir.",
+        "C": "YANLIS — Amiodaronun yarı ömrü çok uzundur; kesmek tabloyu hızla düzeltmez ve kardiyak yarar kaybedilir.",
+        "D": "DOGRU — Tip 2 amiodaron tirotoksikozunda prednizolon 30–40 mg/gün, sonra 2–3 ayda azaltarak kesilir.",
+        "E": "YANLIS — Lityum yalnızca ek seçenek olabilir; tip 2'de tek başına standart tedavi değildir."
+      },
+      "etiketler": ["Amiodaron", "Tip 2 Amiodaron Tirotoksikozu", "Sestamibi", "Glukokortikoid"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — Sintigrafi ve RAIU; Hipertiroidi ve tirotoksikoz"
+    },
+    {
+      "id": "s8",
+      "metin": "Kırk altı yaşında kadın, 8 aydır Graves hastalığı nedeniyle metimazol kullanıyor ve ötiroid. Sigara içmiyor. Son 2 ayda gözlerde kızarıklık, göz kapaklarında şişlik, göz hareketlerinde ağrı ve yukarı bakışta ara ara çift görme gelişmiş. Tip 2 diyabeti (metformin, HbA1c %6.8) ve hipertansiyonu (tek ilaçla kontrollü) var.\n\nBulgular:\nKlinik Aktivite Skoru: 5/7\nHertel: sağ 22 mm, sol 23 mm\nGörme keskinliği ve renk görme: normal; optik nöropati bulgusu yok\nALT, AST: normal\n\nTEMD kılavuzuna göre bu hasta için en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Tek başına 6 ay süreyle günde iki kez 100 µg selenyum",
+        "B": "IV metilprednizolon: 6 hafta haftada 500 mg, ardından 6 hafta haftada 250 mg",
+        "C": "Diyabet nedeniyle steroid verilmemesi; tek başına orbital radyoterapi",
+        "D": "Oral prednizolon 1 mg/kg/gün ile 6 ay tedavi",
+        "E": "Acil orbital dekompresyon cerrahisi"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "KAS ≥3/7 aktif hastalığı gösterir; belirgin proptoz ve aralıklı diplopi orta-ciddi GO demektir. Standart tedavi toplam 4,5 g IV metilprednizolondur; kontrollü diyabet ve hipertansiyon kontrendikasyon sayılmaz.",
+      "aciklama_detay": "Yedi maddelik Klinik Aktivite Skorunda 3 ve üzeri aktif hastalığı gösterir. Türkiye'de Hertel değerinin %95 üst sınırı 17 mm'dir; bu hastanın 22–23 mm proptozu ve aralıklı diplopisi orta-ciddi GO'ya uyar, optik nöropati olmadığı için görmeyi tehdit eden GO değildir. TEMD'de standart protokol 6 hafta haftada 500 mg, ardından 6 hafta haftada 250 mg IV metilprednizolondur (toplam 4,5 g); ağır olgularda 750/500 mg ile toplam 7,5 g verilebilir. Akut karaciğer yetmezliği riski nedeniyle bir kürde toplam 8 g aşılmaz ve pulslar arasında en az 2 gün bırakılır. Karaciğer enzimleri normalin 4 katını aşıyorsa IV steroid verilmez; kontrollü diyabet ya da hipertansiyon kontrendikasyon değildir, yalnızca glisemi ve kan basıncı yakın izlenir. EUGOGO 2021 kılavuzu bu gruba IV metilprednizolonu mikofenolatla birlikte önerir. Selenyum yalnızca hafif ve aktif GO'da yer alır. Acil dekompresyon optik nöropatiye yanıtsız olgulara aittir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Selenyum yeni başlamış hafif aktif GO içindir; orta-ciddi aktif hastalıkta tek başına yetersizdir.",
+        "B": "DOGRU — Orta-ciddi aktif GO'da standart IV metilprednizolon (toplam 4,5 g); kontrollü diyabet ve HT engel değildir.",
+        "C": "YANLIS — Kontrollü diyabet IV steroid için kontrendikasyon değildir; radyoterapi tek başına ilk seçenek olmaz.",
+        "D": "YANLIS — Uzun süreli yüksek doz oral steroid IV pulsa göre daha az etkili ve daha fazla yan etkilidir.",
+        "E": "YANLIS — Optik nöropati yok; acil dekompresyon görmeyi tehdit eden ve steroide yanıtsız GO için ayrılır."
+      },
+      "etiketler": ["Graves Orbitopatisi", "Klinik Aktivite Skoru", "IV Metilprednizolon", "Kümülatif Doz"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — Graves orbitopatisi; EUGOGO 2021"
+    },
+    {
+      "id": "s9",
+      "metin": "Kırk iki yaşında kadın, 3 ay önce Graves tanısı almış, metimazolü 1 aydır kendi isteğiyle bırakmış. Üç gündür ateş ve öksürük var; bugün ajitasyon ve bilinç bulanıklığı gelişmiş.\n\nBulgular:\nAteş: 39.6 °C, nabız 158/dk (atriyal fibrilasyon), TA: 112/64 mmHg\nHafif sarılık, bibaziler raller\nAkciğer grafisi: sağ alt zonda konsolidasyon\nTSH: <0.01 mU/L, sT4: 5.8 ng/dL ↑↑\nBurch-Wartofsky puanı: 70\n\nTEMD kılavuzuna göre bu hastanın ilk saatlerdeki tedavisi için en uygun düzen hangisidir?",
+      "secenekler": {
+        "A": "Önce Lugol solüsyonu, 1 saat sonra PTU; ateş için asetilsalisilik asit",
+        "B": "PTU 200–400 mg 6–8 saatte bir; ateş için aspirin; kalp yetmezliği riski nedeniyle beta bloker verilmez",
+        "C": "Metimazol 20–25 mg 6 saatte bir; iyot kontrendike; hız kontrolü için yalnız digoksin",
+        "D": "İlk basamak olarak plazmaferez; antitiroid ilaç hasta stabil olunca başlanır",
+        "E": "PTU; en az 1 saat sonra Lugol ya da SSKİ; esmolol infüzyonu; IV hidrokortizon; ateş için parasetamol"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Tiroid krizinde PTU tercih edilir (T4→T3 dönüşümünü de baskılar); inorganik iyot tiyonamidden sonra verilir; Türkiye'de IV propranolol olmadığından IV beta blokaj esmololle yapılır; hidrokortizon eklenir; ateş parasetamolle düşürülür.",
+      "aciklama_detay": "Burch-Wartofsky puanı ≥45 tiroid krizini düşündürür; en sık tetikleyici bu hastada olduğu gibi enfeksiyondur. TEMD'de tiyonamid olarak PTU tercih edilir: 6–8 saatte bir 200–400 mg; periferik T4→T3 dönüşümünü de engellediği için ilk 24 saatte T3'ü metimazolden çok daha fazla düşürür. İnorganik iyot (SSKİ 6 saatte bir 3–5 damla ya da Lugol 6–8 saatte bir 4–8 damla) tiyonamidden sonra başlanır; önce verilirse yeni hormon sentezi için substrat olur. (TEMD'nin kriz bölümü en az 1 saat, hipertiroidi bölümü en az 30 dakika aralık yazar; ATA 2016 da 1 saat önerir.) Selektif olmayan beta bloker tercih edilir; damar yolu gerekiyorsa Türkiye'de IV propranolol satılmadığı için esmolol kullanılır. Kalp yetmezliği bulgusu olan hastada kısa etkili esmolol titrasyonu bu yüzden avantajlıdır. Destek tedavisine 6–8 saatte bir 50–100 mg IV hidrokortizon eklenir. Salisilatlar hormonu bağlayıcı proteinlerden ayırıp serbest hormonu artırdığı için ateş parasetamolle düşürülür. Plazmaferez yanıtsız olgularda köprüdür ve etkisi 1–2 gün sürer.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İyot tiyonamidden önce verilirse hormon sentezine substrat olur; salisilat serbest hormonu artırır.",
+        "B": "YANLIS — Beta blokaj krizin temel bileşenidir (kısa etkili esmolol titre edilebilir); aspirin serbest hormonu artırır.",
+        "C": "YANLIS — Krizde PTU tercih edilir; iyot kontrendike değildir, tiyonamidden sonra verilir.",
+        "D": "YANLIS — Plazmaferez yanıtsız olgularda köprü tedavidir, ilk basamak değildir.",
+        "E": "DOGRU — PTU → en az 1 saat sonra iyot, esmolol, hidrokortizon ve parasetamol TEMD'nin önerdiği düzendir."
+      },
+      "etiketler": ["Tiroid Krizi", "Burch-Wartofsky", "Propiltiourasil", "Esmolol"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — Tiroid krizi; ATA 2016 hipertiroidi kılavuzu"
+    },
+    {
+      "id": "s10",
+      "metin": "Kırk beş yaşında kadın, 6 yıldır bipolar bozukluk nedeniyle lityum kullanıyor; duygudurumu 4 yıldır stabil. Son aylarda halsizlik, üşüme ve 5 kg kilo artışı var. Psikiyatrist görüş istiyor.\n\nTetkikler:\nTSH: 14.8 mU/L ↑\nsT4: 0.62 ng/dL ↓ (N: 0.8–1.8)\nAnti-TPO: 310 IU/mL ↑\nSerum lityum: terapötik aralıkta\nKreatinin: normal\n\nTEMD kılavuzuna göre bu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Lityumun kesilmesi ve tiroid fonksiyonları normale dönünce yeniden değerlendirilmesi",
+        "B": "Lityum dozunun azaltılması, levotiroksin verilmeden 6 hafta izlenmesi",
+        "C": "Lityumun sürdürülmesi ve standart levotiroksin replasmanı başlanması",
+        "D": "Lityuma ek olarak potasyum iyodür desteği başlanması",
+        "E": "Levotiroksin başlanması ve lityumun valproata geçilmesi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Lityuma bağlı hipotiroidi klasik levotiroksin replasmanıyla tedavi edilir; lityumu kesmek gerekmez. Anti-TPO pozitifliği riski artırır.",
+      "aciklama_detay": "Lityum tiroid hormon salınımını baskılar ve iyot alımını azaltır; lityuma bağlı hipotiroidi prevalansı yaklaşık %17,6'dır. Altta otoimmün tiroid hastalığı olanlarda risk belirgin artar, bu yüzden TEMD tedaviye başlamadan önce sT3, sT4, TSH ve anti-TPO ölçülmesini önerir. Hipotiroidi tedavinin başında da yıllar sonra da çıkabileceği için tiroid testleri düzenli izlenir. Gelişen aşikâr hipotiroidi klasik yolla, levotiroksinle tedavi edilir; psikiyatrik açıdan etkili ve stabil bir tedaviyi kesmeye ya da değiştirmeye gerek yoktur. Lityumun daha nadir olarak hipertiroidi (%1–1,7; ağrısız tiroidit ya da iyot etkisi) yaptığı da unutulmamalıdır. İyot desteği iyot eksikliği olmayan otoimmün tiroiditte hipotiroidiyi ağırlaştırabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Stabil bipolar hastada lityumu kesmek nüks riskini artırır; hipotiroidi LT4 ile kolayca düzeltilir.",
+        "B": "YANLIS — Aşikâr hipotiroidi (sT4 düşük) tedavisiz bırakılmaz; doz azaltmak psikiyatrik kontrolü bozabilir.",
+        "C": "DOGRU — Lityum sürdürülür, hipotiroidi standart LT4 replasmanıyla tedavi edilir.",
+        "D": "YANLIS — İyot desteği otoimmün tiroiditte hipotiroidiyi ağırlaştırabilir; tedavi değildir.",
+        "E": "YANLIS — Tiroid otoimmünitesi etkili bir duygudurum dengeleyicisini değiştirmek için gerekçe değildir."
+      },
+      "etiketler": ["Lityum", "İlaca Bağlı Hipotiroidi", "Anti-TPO", "Levotiroksin"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — Tiroid ve ilaçlar"
+    },
+    {
+      "id": "s11",
+      "metin": "Altmış üç yaşında erkek, küçük hücreli dışı akciğer kanseri nedeniyle pembrolizumab alıyor; üçüncü kürden 2 hafta sonra çarpıntı ve terleme ile başvuruyor. Göz bulgusu yok. Nabız 108/dk, sinüs ritmi; TA 128/76 mmHg.\n\nTetkikler:\nTSH: <0.01 mU/L\nsT4: 2.6 ng/dL ↑ (N: 0.8–1.8)\nTRAb: negatif\nSabah kortizolü: 14 µg/dL\nUSG: heterojen, hipoekoik parankim; Doppler'de kanlanma azalmış\n\nTEMD kılavuzuna göre bu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Beta blokerle semptom kontrolü, immünoterapinin sürdürülmesi ve hipotiroidi fazı açısından sık TSH/sT4 izlemi",
+        "B": "Metimazol 20 mg/gün başlanması ve immünoterapinin kalıcı olarak kesilmesi",
+        "C": "Tiroid hasarını önlemek için prednizolon 1 mg/kg/gün başlanması",
+        "D": "Hipertiroidinin kalıcı tedavisi için radyoaktif iyot planlanması",
+        "E": "Beta bloker verilmeden immünoterapinin kalıcı olarak kesilip izlenmesi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İmmün kontrol noktası inhibitörüne bağlı tirotoksikoz çoğunlukla yıkıcı (ağrısız) tiroidittir: antitiroid ilaç ve yüksek doz steroid yararsızdır, beta blokerle geçilir, immünoterapi sürdürülür ve ardından gelen hipotiroidi fazı izlenir.",
+      "aciklama_detay": "ICI ile gelişen tiroid disfonksiyonunun en sık biçimi, geçici tirotoksik fazın ardından sıklıkla kalıcı hipotiroidiye giden yıkıcı tiroidittir. TRAb negatifliği ve Doppler'de azalmış kanlanma yıkıcı süreci destekler. Hormon sentezi artmadığı için antitiroid ilaç etkisizdir; TEMD yüksek doz glukokortikoidin tiroid hasarını önlemediğini, yalnızca ciddi tirotoksikoz ve ciddi göz tutulumunda kullanıldığını vurgular. Semptomatik tedavi beta blokerdir ve bu derece bir tiroid yan etkisi immünoterapinin kesilmesini gerektirmez. İlk 6 ay her kürden önce TSH ve sT4 bakılır; hipotiroidi gelişirse TSH >10 mIU/L ve sT4 düşükken LT4 1 µg/kg/gün ile başlanır. Özellikle anti-CTLA4 alanlarda santral hipotiroidi ve eşlik eden ACTH eksikliği olabileceği için TSH tek başına yeterli değildir ve LT4'ten önce kortizol eksikliği tedavi edilir; bu hastada sabah kortizolü yeterlidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Yıkıcı tiroiditte beta bloker yeterlidir; immünoterapi sürdürülür, hipotiroidi fazı yakından izlenir.",
+        "B": "YANLIS — Hormon sentezi artmadığı için metimazol etkisizdir; bu yan etki için immünoterapi kesilmez.",
+        "C": "YANLIS — Yüksek doz steroid tiroid hasarını önlemez; yalnızca ciddi tirotoksikoz ya da ciddi göz tutulumunda kullanılır.",
+        "D": "YANLIS — Yıkıcı tiroiditte tutulum düşüktür ve tablo geçicidir; RAI endikasyonu yoktur.",
+        "E": "YANLIS — Semptomatik hastada beta bloker gerekir; tiroid yan etkisi tek başına immünoterapiyi kesme nedeni değildir."
+      },
+      "etiketler": ["İmmün Kontrol Noktası İnhibitörü", "Yıkıcı Tiroidit", "Onkolojik Ajanlar", "Beta Bloker"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — Onkolojik ajanlar ve tiroid"
+    },
+    {
+      "id": "s12",
+      "metin": "Kırk bir yaşında kadın, üst solunum yolu enfeksiyonundan 3 hafta sonra başlayan, kulağa yayılan boyun ağrısı ve çarpıntı ile başvurmuş. Tiroid hassas.\n\nTanı anındaki tetkikler:\nSedimantasyon: 78 mm/sa\nTSH: <0.01 mU/L, sT4: 2.5 ng/dL ↑\nRAIU (24. saat): %1\n\nBeş gün ibuprofen 2400 mg/gün ile yanıt alınamayınca prednizolon 40 mg/gün başlanmış, ağrı 48 saatte geçmiş. Tedavinin 4. haftasında doz 15 mg/gün'e azaltıldığında ağrı yeniden başlamış, sedimantasyon 45 mm/sa'e yükselmiş.\n\nTEMD kılavuzuna göre bu aşamada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Prednizolonun kesilip yeniden ibuprofene dönülmesi",
+        "B": "Tedaviye metimazol eklenmesi",
+        "C": "Aynı hızla azaltmaya devam edilmesi, ağrının geçici olduğunun anlatılması",
+        "D": "Prednizolonun 40 mg/gün'e çıkarılıp 6 hafta tam dozda sürdürülmesi",
+        "E": "Bir önceki doza dönülmesi ve en az 2 hafta sonra azaltmanın yeniden denenmesi"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Subakut tiroiditte steroid azaltılırken ağrı artarsa bir önceki doza dönülür ve en az 2 hafta sonra yeniden azaltılır. Hastaların yaklaşık %20'sinde steroid kesildikten sonra da ağrı tekrarlar.",
+      "aciklama_detay": "TEMD'ye göre subakut tiroiditte önce NSAİİ (ibuprofen 1200–3200 mg/gün) denenir; birkaç günde yanıt yoksa prednizolon 40 mg/gün başlanır, bir haftanın sonunda azaltılmaya başlanır ve yaklaşık 6 haftada kesilir. Azaltma sırasında ağrı artarsa bir önceki etkili doza dönülür ve azaltma en az 2 hafta sonra yeniden denenir. Başlangıç dozuna dönüp süreyi uzatmak gereksiz steroid yükü getirir. Tirotoksik faz yıkıcıdır: RAIU'nun çok düşük olması hormon sentezinin artmadığını gösterir, bu yüzden antitiroid ilaç yararsızdır; semptomlar beta blokerle kontrol edilir. Sonraki hipotiroidi fazında belirti varsa ve TSH >10 mU/L ise 6–8 hafta 50–100 µg/gün LT4 verilebilir, kesildikten sonra kalıcı hipotiroidi açısından kontrol edilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — NSAİİ zaten yetersiz kalmıştır; steroidi ani kesmek alevlenmeyi ağırlaştırır.",
+        "B": "YANLIS — Yıkıcı tiroiditte hormon sentezi artmamıştır (RAIU %1); antitiroid ilaç etkisizdir.",
+        "C": "YANLIS — Alevlenme varken aynı hızla azaltmaya devam etmek önerilmez.",
+        "D": "YANLIS — Başlangıç dozuna dönmek gerekmez; bir önceki etkili doz yeterlidir, uzun tam doz gereksiz steroid yüküdür.",
+        "E": "DOGRU — Bir önceki doza dönülür, en az 2 hafta sonra azaltma yeniden denenir."
+      },
+      "etiketler": ["Subakut Tiroidit", "Prednizolon", "Steroid Azaltma", "Tiroiditler"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — Tiroiditler"
+    },
+    {
+      "id": "s13",
+      "metin": "Kırk dokuz yaşında kadın, rastlantısal saptanan tiroid nodülü nedeniyle izleniyor. Yakınması yok; boyuna radyasyon ya da ailede tiroid kanseri öyküsü yok.\n\nTetkikler:\nTSH: 1.1 mU/L (N: 0.4–4.0), sT4: normal\nUSG: sağ lobda 22 mm solid, izoekoik, düzgün sınırlı nodül; şüpheli lenf nodu yok\nİİAB: Bethesda III (önemi belirsiz atipi)\nDaha önce sintigrafi yapılmamış.\n\nTEMD kılavuzuna göre bu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Moleküler test (ör. gen ekspresyon sınıflayıcısı) istenmesi",
+        "B": "Tiroid sintigrafisi yapılması",
+        "C": "Tanısal lobektomi planlanması",
+        "D": "İİAB'nin 3 ay sonra tekrarlanması",
+        "E": "Total tiroidektomi yapılması"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Bethesda III ya da IV nodülde, daha önce yapılmadıysa ve TSH normalin alt sınırına yakınsa (ör. <1,5 mU/L) önce sintigrafi yapılır. Sıcak nodülün malignite için negatif prediktif değeri %96–99'dur; moleküler test ve tanısal cerrahi yalnızca fonksiyon göstermeyen nodüllere ayrılır.",
+      "aciklama_detay": "TSH'si baskılanmamış ama alt sınıra yakın olan hastada otonom (sıcak) nodül hâlâ olasıdır ve sıcak nodüllerin önemli bir kısmı sitolojide foliküler hücre zenginliği nedeniyle indetermine gelir. TEMD, Bethesda III (malignite riski yaklaşık %10–30) ve IV (%25–40) nodülde TSH normalin alt sınırına yakınsa (örn. <1,5 mU/L) önce tiroid sintigrafisi yapılmasını, moleküler test, sestamibi/FDG görüntüleme ya da tanısal lobektominin yalnızca fonksiyon göstermeyen nodüllere ayrılmasını önerir. Sıcak nodülün malignite açısından negatif prediktif değeri %96–99'dur; bu hastalar gereksiz moleküler testten ve cerrahiden korunur. TEMD bu nodüllerin önemli kısmının TI-RADS ≥4 çıktığını ve sintigrafinin risk sınıflamasına entegre edilmesi gerektiğini de vurgular. Nodül soğuk çıkarsa Bethesda III için tekrar İİAB, moleküler test, tanısal lobektomi ya da izlem seçenekleri gündeme gelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Moleküler test yalnızca fonksiyon göstermeyen nodüle yapılmalıdır; önce sıcak nodül dışlanır.",
+        "B": "DOGRU — Bethesda III–IV ve TSH <1,5 mU/L: önce sintigrafi; sıcak nodülde malignite riski çok düşüktür.",
+        "C": "YANLIS — Sıcak nodül dışlanmadan cerrahi gereksiz ameliyata yol açabilir.",
+        "D": "YANLIS — Tekrar İİAB soğuk nodülde bir seçenektir; TSH alt sınıra yakınken önce fonksiyon değerlendirilir.",
+        "E": "YANLIS — Bethesda III nodülde total tiroidektomi aşırı tedavidir."
+      },
+      "etiketler": ["Tiroid Nodülü", "Bethesda III", "Tiroid Sintigrafisi", "Sıcak Nodül"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — Sintigrafi ve RAIU"
+    },
+    {
+      "id": "s14",
+      "metin": "Kırk dört yaşında kadın, 28 mm papiller tiroid kanseri nedeniyle total tiroidektomi olmuş; ekstratiroidal uzanım, vasküler invazyon ve lenf nodu metastazı yok. Ameliyattan 2 ay sonra 30 mCi RAI ile bakiye ablasyonu yapılmış. Levotiroksin kullanıyor.\n\nAblasyondan 12 ay sonraki tetkikler:\nUyarılmamış tiroglobulin: 2.6 ng/mL\nAnti-Tg: negatif\nTSH: 0.8 mU/L\nBoyun USG: tiroid yatağı ve lenf nodları normal\n\nTEMD kılavuzuna göre bu hastanın yanıt kategorisi ve en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Mükemmel yanıt; TSH 0.5–2 mU/L'de tutularak yıllık izlem",
+        "B": "Yapısal inkomplet yanıt; TSH <0.1 mU/L hedefi ve boyun diseksiyonu",
+        "C": "Belirsiz yanıt; ek tedavisiz izlem, TSH 0.5–2 mU/L",
+        "D": "Biyokimyasal inkomplet yanıt; TSH 0.1–0.5 mU/L ve 6–12 ayda bir Tg, anti-Tg ve boyun USG ile izlem",
+        "E": "Biyokimyasal inkomplet yanıt; 150 mCi ampirik RAI"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Ablasyondan sonra uyarılmamış Tg'nin 12. ayda >1 ng/mL olması (görüntüleme negatifken) biyokimyasal inkomplet yanıttır. TSH hedefi 0.1–0.5 mU/L, izlem 6–12 ayda bir; bu grubun yalnızca küçük bir kısmı yapısal hastalığa döner.",
+      "aciklama_detay": "TEMD'de ablasyon sonrası uyarılmamış Tg'nin 6. ayda >5, 12. ayda >1 ng/mL olması ya da 1 yıldan sonra uyarılmış Tg'nin >10 ng/mL bulunması, görüntüleme negatifken, biyokimyasal inkomplet yanıttır. Bu grup DTK'ların %10–20'sini oluşturur ve yaklaşık %2'si yapısal hastalığa döner; birçoğunda Tg zamanla kendiliğinden düşer. Yaklaşım izlemdir: TSH 0.1–0.5 mU/L'de tutulur, Tg/anti-Tg ve boyun USG 6–12 ayda bir yapılır. Tg'nin ikiye katlanma süresinin kısalması ya da yılda ≥0,3 ng/mL artması yapısal hastalık riskini gösterir ve ek görüntülemeyi gerektirir. Görüntüleme negatifken ampirik yüksek doz RAI rutin değildir. TSH <0.1 hedefi yapısal inkomplet yanıta, 0.5–2 mU/L hedefi ölçülemeyen Tg ile mükemmel yanıta aittir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Mükemmel yanıt için ablasyon sonrası uyarılmamış Tg ölçülemeyecek kadar düşük olmalıdır; 2.6 ng/mL bunu karşılamaz.",
+        "B": "YANLIS — Görüntüleme negatiftir; yapısal hastalık kanıtı yokken TSH <0.1 hedefi ve cerrahi gerekmez.",
+        "C": "YANLIS — Belirsiz yanıt, Tg saptanabilir ama eşiğin altındayken konur; 12. ayda >1 ng/mL biyokimyasal inkomplet yanıttır.",
+        "D": "DOGRU — Biyokimyasal inkomplet yanıt: TSH 0.1–0.5 mU/L ve 6–12 ayda bir Tg, anti-Tg, USG ile izlem.",
+        "E": "YANLIS — Görüntüleme negatif ve Tg düşük düzeydeyken ampirik yüksek doz RAI önerilmez; TEMD RAI'nin ülkemizde fazla kullanıldığını vurgular."
+      },
+      "etiketler": ["Diferansiye Tiroid Kanseri", "Tiroglobulin", "Tedavi Yanıtı", "TSH Hedefi"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — DTK cerrahi sonrası; ATA 2015 DTK kılavuzu"
+    },
+    {
+      "id": "s15",
+      "metin": "Otuz dokuz yaşında kadın, sağ lobdaki 24 mm nodülden alınan İİAB'nin Bethesda IV gelmesi üzerine tanısal sağ lobektomi olmuş. Sol lob USG'de normal; boyunda şüpheli lenf nodu yok.\n\nPatoloji raporu:\n24 mm, tam kapsüllü tümör\nFoliküler patern; gerçek papilla ve psammom cismi yok, solid alan %10\nPapiller karsinom nükleer özellikleri mevcut\nKapsüler ya da vasküler invazyon yok, tümör nekrozu yok\nMitoz: 1/2 mm²\nBRAF V600E immünhistokimyası: negatif\n\nTEMD kılavuzuna göre bu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tamamlayıcı tiroidektomi ve ardından 30 mCi RAI",
+        "B": "Tamamlayıcı tiroidektomi, RAI verilmeden TSH'nin 0.1 mU/L altında tutulması",
+        "C": "Ek cerrahi ve RAI gerekmez; TNM evrelemesi yapılmaz",
+        "D": "TNM evrelemesi (pT2) yapılıp ATA risk sınıfına göre RAI kararı verilmesi",
+        "E": "Kalıntı doku ve metastaz için 131I tüm vücut taraması yapılması"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Tanı ölçütlerini karşılayan NİFTP düşük riskli bir neoplazidir; tamamen çıkarıldıysa tercih edilen tedavi RAI'siz lobektomidir, evreleme yapılmaz ve ek tedavi gerekmez.",
+      "aciklama_detay": "NİFTP tanısı için kapsül ya da belirgin sınır, foliküler patern (gerçek papilla <%1, psammom cismi yok, solid/trabeküler/insüler alan en fazla %30), PTK nükleer özellikleri, invazyon ve nekroz yokluğu ve mitozun 2 mm²'de 3'ün altında olması gerekir; BRAF V600E saptanması tanıyı dışlar. Bu raporda tüm ölçütler karşılanmıştır. DSÖ 2022'de karsinom yerine ‘tümör’ denmesinin amacı aşırı tedaviyi önlemektir: tümör tamamen çıkarıldığında 1500'den fazla olguda advers olay %1'in altında, mortalite yoktur. Bu yüzden TNM evrelemesi yapılmaz; tamamlayıcı tiroidektomi, RAI ve TSH baskılaması gerekmez. Mitozu 2 mm²'de 3'ün üzerinde olan invaziv olmayan tümör ise NİFTP değildir, mitotik olarak aktif kapsüllü PTK olarak raporlanır ve farklı yönetilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — NİFTP'de tamamlayıcı cerrahi ve RAI aşırı tedavidir.",
+        "B": "YANLIS — Ek cerrahi gerekmediği gibi TSH baskılaması da gereksizdir ve yan etki getirir.",
+        "C": "DOGRU — NİFTP tamamen çıkarılmıştır; ek cerrahi ve RAI gerekmez, evreleme yapılmaz.",
+        "D": "YANLIS — NİFTP karsinom olarak evrelenmez; RAI kararı söz konusu değildir.",
+        "E": "YANLIS — Karşı lob yerindeyken ve RAI endikasyonu yokken tüm vücut taraması anlamsızdır."
+      },
+      "etiketler": ["NİFTP", "DSÖ 2022 Sınıflaması", "Bethesda IV", "Lobektomi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (8. baskı) — DSÖ 2022 patoloji"
+    }
+  ]
+}

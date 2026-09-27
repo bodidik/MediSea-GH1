@@ -93,6 +93,294 @@
       ],
       "zorluk": "zor",
       "kaynak": "Brandi et al. J Clin Endocrinol Metab 2001; Nikou et al. Digestion 2012; Thakker et al. J Clin Endocrinol Metab 2012"
+    },
+    {
+      "id": "s4",
+      "metin": "35 yaşında erkek hasta, 2 yıl önce 26 mm'lik prolaktinoma tanısı almış ve kabergolinle izleniyor. Tekrarlayan böbrek taşı nedeniyle yapılan incelemede primer hiperparatiroidi saptanıyor; boyun USG ve sestamibi sintigrafisi iki ayrı paratiroid bezinde büyüme gösteriyor. Ailesinde bilinen endokrin tümör yok. MEN1 geninin tam dizileme ve delesyon/duplikasyon analizi patojenik varyant göstermiyor.\n\nTetkikler:\nSerum kalsiyum: 11.1 mg/dL, fosfor: 2.3 mg/dL\nİntakt PTH: 168 pg/mL\n\nBu hastayla ilgili en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Klinik MEN1 tanısı konur; genetik negatiflik tanıyı dışlamaz, CDKN1B (MEN4) araştırılır ve MEN1 sürveyansı sürdürülür",
+        "B": "Germline MEN1 varyantı olmadığı için iki tümör rastlantısal birliktelik kabul edilir; sürveyans gerekmez",
+        "C": "MEN1 tanısı için üçüncü bir majör tümör (pankreas-duodenum NET) saptanana kadar beklenir",
+        "D": "Tanı yalnızca ailede başka bir MEN1 olgusu saptanırsa konulabilir; birinci derece akrabalara MRG ile tarama yapılır",
+        "E": "Genetik test negatif olduğundan paratiroid cerrahisi sporadik adenom gibi, tek bezi hedefleyen odaklı cerrahiyle yapılır"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İki majör MEN1 tümörünün (paratiroid, duodenopankreatik NET, ön hipofiz) bulunması klinik MEN1 tanısı için yeterlidir. Klinik MEN1 olgularının bir kısmında MEN1 geninde varyant bulunamaz; bu hastalar MEN4 (CDKN1B) ve fenokopi açısından değerlendirilir, sürveyans MEN1 gibi yürür.",
+      "aciklama_detay": "MEN1 tanısı üç yolla konur: klinik (üç majör tümörden ikisi), ailesel (bir majör tümör ve MEN1 tanılı birinci derece akraba) ve genetik (asemptomatik de olsa germline patojenik MEN1 varyantı). Bu hastada prolaktinoma ve çok bezli PHPT birlikteliği klinik tanıyı karşılar. Klinik MEN1 olgularının yaklaşık %10-30'unda MEN1 kodlayan bölgede varyant saptanamaz; nedenler arasında promotor/intronik değişiklikler, mozaisizm, MEN4 (CDKN1B, p27Kip1) ve nadiren başka genlerle fenokopiler sayılabilir. Genetik sonuç ne olursa olsun, hastanın izlemi ve cerrahi kararları klinik MEN1'e göre planlanır: çok bezli hastalık için subtotal paratiroidektomi ve transservikal timektomi, duodenopankreatik NET ve torasik NET sürveyansı.\n\nKlinik inci: MEN4'te PHPT ve hipofiz adenomu en sık bileşenlerdir; tabloyu MEN1'den klinik olarak ayırmak çoğu zaman mümkün değildir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — İki majör tümör klinik MEN1 tanısı için yeterlidir; varyant negatifliğinde MEN4 ve diğer nedenler araştırılır, izlem MEN1 kurallarıyla sürer.",
+        "B": "YANLIS — Genç yaşta prolaktinoma ile çok bezli PHPT birlikteliği rastlantı olarak açıklanamaz; germline testin negatif olması sendromu dışlamaz.",
+        "C": "YANLIS — Klinik tanı için üç majör tümörün ikisi yeterlidir; üçüncüyü beklemek sürveyansı ve cerrahi planı geciktirir.",
+        "D": "YANLIS — Ailesel tanı yollardan yalnızca biridir; bu hastada klinik tanı ölçütü zaten karşılanmıştır.",
+        "E": "YANLIS — Görüntüleme iki bezde hastalık gösteriyor ve tablo klinik MEN1; odaklı cerrahi persistan ve nüks hiperparatiroidi riski taşır."
+      },
+      "etiketler": ["MEN1 tanı ölçütleri", "klinik tanı", "genetik negatif MEN1", "MEN4", "CDKN1B"],
+      "zorluk": "orta",
+      "kaynak": "Thakker et al. J Clin Endocrinol Metab 2012 (MEN1 klinik uygulama kılavuzu)"
+    },
+    {
+      "id": "s5",
+      "metin": "27 yaşında erkek hasta, kemik ağrısı ve halsizlik nedeniyle başvuruyor. Ailede bilinen endokrin hastalık yok (anne-baba bilgisi sınırlı). Boyun USG'de sol alt paratiroid lojunda 1.4 cm nodül, sestamibi sintigrafisinde aynı bölgede tek odak saptanıyor. Genel cerrahi, odaklı (minimal invaziv) tek bez eksizyonu planlıyor.\n\nTetkikler:\nSerum kalsiyum: 11.4 mg/dL\nİntakt PTH: 212 pg/mL\n25-OH D vitamini: 28 ng/mL\n24 saatlik idrar kalsiyumu: 380 mg/gün\nSerum prolaktin ve IGF-1: normal\n\nCerrahiden önce en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "Planlanan odaklı paratiroidektomiye intraoperatif PTH izlemiyle devam etmek",
+        "B": "CASR gen analiziyle ailesel hipokalsiürik hiperkalsemiyi dışlamak",
+        "C": "Germline MEN1 genetik testi yapıp sonucu cerrahi planına yansıtmak",
+        "D": "Cerrahiyi ertelemek; önce 1 yıl sinakalset ile izlemek",
+        "E": "Pankreas ve hipofiz MRG sonuçları normal çıkarsa cerrahiyi planlandığı gibi yapmak"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "30 yaşından önce ortaya çıkan PHPT, görüntüleme tek bez gösterse bile MEN1 germline testi için endikasyondur. Sonuç pozitifse cerrahi odaklı eksizyondan subtotal paratiroidektomi ve timektomiye döner.",
+      "aciklama_detay": "Thakker ve ark. 2012 kılavuzu, görünüşte sporadik olsa da şu durumlarda MEN1 germline testi önerir: 30 yaşından önce PHPT, çok bezli paratiroid hastalığı, nüks PHPT, her yaşta gastrinoma ve çoklu pankreas NET'i. MEN1'de paratiroid hastalığı asimetrik ve asenkron seyreden çok bezli bir süreçtir; sestamibi ve USG çoğu zaman yalnızca en büyük bezi gösterir. Tanı ameliyattan önce konmazsa hasta yetersiz odaklı cerrahiye gider ve persistan ya da erken nüks hastalıkla yeniden operasyon gerektirir; ikinci boyun cerrahisinin morbiditesi (rekürren sinir hasarı, kalıcı hipoparatiroidi) belirgin artar. MEN1 doğrulanırsa standart yaklaşım subtotal paratiroidektomi (3-3.5 bez) ve transservikal timektomidir; hasta ayrıca duodenopankreatik, hipofiz ve torasik sürveyansa alınır.\n\nKlinik inci: Hiperkalsiüri (380 mg/gün) ve yüksek PTH ailesel hipokalsiürik hiperkalsemiyle bağdaşmaz; FHH'de kalsiyum/kreatinin klirens oranı tipik olarak <0.01'dir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — MEN1'de baskın bez çıkarılınca PTH yeterli düşüş gösterebilir, ama diğer hiperplastik bezler yerinde kalır; intraoperatif PTH yanıltır. Asıl sorun cerrahi stratejinin genetik tanı olmadan seçilmesidir.",
+        "B": "YANLIS — Belirgin hiperkalsiüri FHH ile uyumsuzdur; CASR testi bu tabloda öncelik değildir.",
+        "C": "DOGRU — 30 yaş altında PHPT MEN1 testi için endikasyondur; sonuç cerrahinin kapsamını (odaklıdan subtotal + timektomiye) değiştirir.",
+        "D": "YANLIS — Hiperkalsiüri ve semptomatik genç hastada cerrahi endikasyonu vardır; medikal izlem yalnız cerrahi uygun değilse seçilir.",
+        "E": "YANLIS — Diğer organlarda tümör bulunmaması MEN1'i dışlamaz; PHPT çoğu zaman sendromun ilk ve tek bulgusudur."
+      },
+      "etiketler": ["genç yaşta PHPT", "MEN1 genetik test endikasyonu", "paratiroid cerrahisi planı", "odaklı paratiroidektomi"],
+      "zorluk": "orta",
+      "kaynak": "Thakker et al. J Clin Endocrinol Metab 2012 (MEN1 klinik uygulama kılavuzu)"
+    },
+    {
+      "id": "s6",
+      "metin": "33 yaşında kadın hasta, MEN1 tanılı. 2 yıl önce subtotal paratiroidektomi ve transservikal timektomi yapılmış; o tarihten beri normokalsemik. 6 aydır ishal ve dispepsi nedeniyle omeprazol 40 mg/gün kullanıyor; semptomları kısmen geriledi. Rutin sürveyansta abdominal MRG'de belirgin pankreas lezyonu yok.\n\nTetkikler (omeprazol alırken):\nAçlık serum gastrini: 380 pg/mL (normal üst sınır 100)\nSerum kalsiyum: 9.4 mg/dL\nKromogranin A: yüksek\n\nZollinger-Ellison sendromu tanısını doğrulamak için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Mevcut gastrin ve kromogranin A düzeyleriyle tanıyı kesinleştirip tedaviye devam etmek",
+        "B": "Kısa süreli H2 blokere geçip açlık gastrini ile eşzamanlı gastrik pH ölçmek",
+        "C": "PPİ'yi ayaktan tamamen kesip 4 hafta sonra açlık gastrini ölçmek",
+        "D": "Tanı için duodenum lezyonlarını göstermek üzere pankreatikoduodenektomi planlamak",
+        "E": "68Ga-DOTATATE PET/BT negatifse ZES tanısını dışlamak"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "PPİ, gastrini ve kromogranin A'yı ikincil olarak yükselttiğinden bu değerler ZES'i kanıtlamaz. Tanı, asit baskılanması kısaltılarak açlık gastrini ile gastrik pH'nın birlikte ölçülmesine, gastrin 10 kattan azsa sekretin testine dayanır.",
+      "aciklama_detay": "Hipergastrineminin en sık nedeni asit baskısıdır (PPİ, atrofik gastrit). ZES tanısı için hipergastrineminin uygunsuz olduğunun, yani mide asidi varken gastrinin yüksek olduğunun gösterilmesi gerekir: açlık gastrini normal üst sınırın >10 katı ve gastrik pH <2 ise tanı konur. Gastrin 10 kattan azsa sekretin uyarı testi (uyarı sonrası ≥120 pg/mL artış) kullanılır. PPİ testi bozduğu için ilaç kısa süre (genellikle yaklaşık 1 hafta) yüksek doz H2 blokere geçirilir, H2 bloker de testten 1-2 gün önce kesilir; ZES'li hastada asidin kontrolsüz kalması hızla ülser, kanama ve perforasyona yol açabileceğinden bu işlem deneyimli merkezde, yakın izlemle yapılır. MEN1'de hiperkalsemi de gastrini artırdığından kalsiyumun normal olması (bu hastada paratiroidektomi sonrası) yorumu kolaylaştırır.\n\nKlinik inci: MEN1 gastrinomaları çoğunlukla duodenumda, milimetrik ve çok odaklıdır; MRG ve hatta SSA PET'te görülmeyebilir. Görüntüleme negatifliği ZES'i dışlamaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PPİ kullanımında gastrinin 3-4 kat ve kromogranin A'nın yüksek olması beklenen ikincil bir bulgudur; tanı koydurmaz.",
+        "B": "DOGRU — Kontrollü kısa süreli PPİ ara verme, eşzamanlı gastrin ve gastrik pH ölçümü, gerekirse sekretin testi tanısal standarttır.",
+        "C": "YANLIS — ZES şüphesi olan hastada PPİ'nin ayaktan haftalarca kesilmesi ağır peptik komplikasyonlara yol açabilir; ayrıca gerekli değildir.",
+        "D": "YANLIS — Tanı biyokimyasaldır; tanı amaçlı majör pankreas cerrahisi kabul edilemez ve MEN1 ZES'inde pankreatikoduodenektomi seçilmiş olgulara ayrılmıştır.",
+        "E": "YANLIS — Milimetrik duodenal gastrinomalar SSA PET'te görülmeyebilir; negatif görüntüleme biyokimyasal tanıyı dışlamaz."
+      },
+      "etiketler": ["Zollinger-Ellison sendromu", "gastrin", "PPİ etkisi", "sekretin testi", "gastrik pH"],
+      "zorluk": "zor",
+      "kaynak": "Bergsland E, Ge PS. Clinical presentation, diagnosis, and staging of gastrinoma (Zollinger-Ellison syndrome). UpToDate"
+    },
+    {
+      "id": "s7",
+      "metin": "42 yaşında erkek hasta, MEN1 tanılı; günde 1 paket sigara içiyor. 12 yıl önce başka bir merkezde timektomi yapılmadan subtotal paratiroidektomi uygulanmış. Asemptomatik; rutin sürveyans toraks BT'sinde ön mediastende 3.5 cm, düzgün sınırlı, kontrast tutan kitle saptanıyor. 68Ga-DOTATATE PET/BT'de kitlede yoğun tutulum var; uzak metastaz yok. Kortizol ve ACTH normal.\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Yavaş seyirli olduğu için 6 ayda bir toraks BT ile izlem",
+        "B": "Uzun etkili somatostatin analoğu ile tümör kontrolü ve izlem",
+        "C": "Önce mediastinal radyoterapi, ardından yanıt değerlendirmesi",
+        "D": "Transservikal yolla profilaktik kalan timus eksizyonu ve kitlenin izlenmesi",
+        "E": "Kitlenin tam cerrahi rezeksiyonu (sternotomi ya da torakoskopik yolla en blok timektomi)"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "MEN1'de timik NET neredeyse yalnız sigara içen erkeklerde görülür, agresif seyirlidir ve MEN1 ilişkili ölümlerin önemli bir nedenidir. Rezeke edilebilir hastalıkta tedavi tam (R0) cerrahi rezeksiyondur.",
+      "aciklama_detay": "Timik nöroendokrin tümörler MEN1 taşıyıcılarının az bir kısmında gelişir, ancak yüksek nüks ve metastaz oranıyla sendromun en ölümcül bileşenlerinden biridir. Hastaların büyük çoğunluğu erkek ve sigara içicisidir; Cushing sendromu (ektopik ACTH) nadiren eşlik eder. Rezeke edilebilir tümörde tam cerrahi rezeksiyon (çevre yağ doku ve mediastinal lenf nodlarıyla birlikte en blok timektomi) tedavinin temelidir; tam rezeksiyon sonrası dahi nüks sık olduğundan uzun süreli görüntüleme izlemi gerekir. Radyoterapi ve sistemik tedaviler (somatostatin analoğu, kemoterapi, PRRT) rezeke edilemeyen, nüks eden ya da metastatik hastalığa ayrılır.\n\nKlinik inci: Paratiroidektomi sırasında yapılan transservikal timektomi hem ektopik paratiroid dokusunu temizler hem de timik NET riskini azaltır; ancak bu hastada olduğu gibi timektomi yapılmamış ya da eksik yapılmışsa torasik sürveyans daha da önem kazanır. Sigarayı bırakması da önerilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bronşiyal NET'ler yavaş seyirli olabilir, ama timik NET MEN1'de agresiftir; rezeke edilebilir tümörde izlem kabul edilmez.",
+        "B": "YANLIS — Somatostatin analoğu rezeke edilemeyen ya da metastatik hastalıkta tümör kontrolü içindir; küratif tedavinin yerini tutmaz.",
+        "C": "YANLIS — Radyoterapi tam rezeke edilemeyen ya da nüks eden hastalıkta tamamlayıcıdır; ilk tedavi değildir.",
+        "D": "YANLIS — Transservikal timektomi profilaktik bir işlemdir ve 3.5 cm'lik mediastinal tümörün onkolojik rezeksiyonu için yeterli değildir.",
+        "E": "DOGRU — Rezeke edilebilir timik NET'te tam (R0) cerrahi rezeksiyon tek küratif seçenektir."
+      },
+      "etiketler": ["timik NET", "torasik NET", "sigara", "erkek cinsiyet", "cerrahi rezeksiyon"],
+      "zorluk": "orta",
+      "kaynak": "Strosberg JR ve ark. Thymic neuroendocrine neoplasms. UpToDate; Thakker et al. J Clin Endocrinol Metab 2012"
+    },
+    {
+      "id": "s8",
+      "metin": "24 yaşında kadın hasta, MEN1 taşıyıcısı olarak sürveyansta. 8 aydır adet görmüyor ve galaktore tarifliyor. Gebelik testi negatif. Baş ağrısı ve görme yakınması yok.\n\nTetkikler:\nSerum prolaktin: 185 ng/mL (normal <25)\nIGF-1: yaşa göre normal; sabah kortizolü ve TSH normal\nHipofiz MRG: 14 mm makroadenom; optik kiazmaya uzaklığı 4 mm, kavernöz sinüs invazyonu yok\nGörme alanı muayenesi: normal\n\nBu hasta için en uygun ilk tedavi hangisidir?",
+      "secenekler": {
+        "A": "Kabergolin ile medikal tedavi ve prolaktin ile MRG yanıt izlemi",
+        "B": "MEN1 adenomları agresif seyrettiğinden ilk seçenek olarak transsfenoidal cerrahi",
+        "C": "Stereotaktik radyocerrahi",
+        "D": "Kiazma basısı olmadığı için tedavisiz izlem",
+        "E": "Uzun etkili somatostatin analoğu tedavisi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "MEN1 ilişkili prolaktinomada da ilk tedavi dopamin agonistidir; güncel meta-analize göre tedavi başarısızlığı sporadik prolaktinomalarla benzerdir.",
+      "aciklama_detay": "MEN1'deki hipofiz tümörleri tarihsel serilerde daha büyük ve daha dirençli bildirilmiştir; ancak English ve ark. (2025) meta-analizi, MEN1 ilişkili prolaktinomaların dopamin agonistlerine yanıtsızlık oranının sporadik prolaktinomalardan farklı olmadığını göstermiştir. Bu nedenle yönetim sporadik prolaktinomayla aynıdır: kabergolin (tercih edilen ajan) ile prolaktin normalleşmesi ve tümör küçülmesi hedeflenir. Cerrahi, dopamin agonistine direnç ya da intolerans, kistik/hemorajik tümörde akut bası veya hastanın tercihi gibi durumlara ayrılır. Hipogonadizme yol açan (amenore) makroprolaktinoma tedavi gerektirir; izlem seçeneği değildir.\n\nKlinik inci: MEN1'de plürihormonal (özellikle GH ve prolaktin birlikte salgılayan) adenomlar sporadiklerden sıktır; bu hastada IGF-1'in normal olması bu olasılığı dışlamak için kontrol edilmiştir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Dopamin agonisti, MEN1 zemininde de makroprolaktinomanın ilk tedavisidir; yanıt oranı sporadik tümörlerle benzerdir.",
+        "B": "YANLIS — MEN1 zemini tek başına cerrahiyi ilk seçenek yapmaz; cerrahi dopamin agonistine direnç ya da intoleransa ayrılır.",
+        "C": "YANLIS — Radyocerrahi medikal ve cerrahi tedaviye dirençli olgulara ayrılır; hipopituitarizm riski taşır ve etkisi geç başlar.",
+        "D": "YANLIS — Amenore ve galaktoreyle seyreden makroprolaktinoma hipogonadizm, kemik kaybı ve tümör büyümesi riski nedeniyle tedavi gerektirir.",
+        "E": "YANLIS — Somatostatin analoğu somatotrof adenomda kullanılır; prolaktinomada etkisizdir."
+      },
+      "etiketler": ["prolaktinoma", "MEN1 hipofiz tümörü", "kabergolin", "makroadenom"],
+      "zorluk": "kolay",
+      "kaynak": "English KA ve ark. Lancet Diabetes Endocrinol 2025 (MEN1 tedavileri meta-analizi)"
+    },
+    {
+      "id": "s9",
+      "metin": "30 yaşında erkek hasta, babasında saptanan patojenik MEN1 varyantını taşıdığı aile taramasında gösterilmiş. Asemptomatik; kalsiyum, prolaktin ve IGF-1 normal. Hiçbir organda bugüne kadar tümör saptanmamış. Duodenopankreatik nöroendokrin tümörlerin ömür boyu sürecek sürveyansını planlıyorsunuz.\n\nBu hastada rutin duodenopankreatik sürveyans için en uygun yöntem hangisidir?",
+      "secenekler": {
+        "A": "Yıllık kontrastlı abdomen BT",
+        "B": "Yıllık 68Ga-DOTATATE PET/BT",
+        "C": "Yıllık endoskopik ultrason ve saptanan her lezyona ince iğne aspirasyonu",
+        "D": "Kontrastlı abdominal MRG ile düzenli aralıklı görüntüleme",
+        "E": "Görüntüleme yapılmadan yıllık kromogranin A ve pankreatik polipeptid ölçümü"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Ömür boyu tekrarlanacak sürveyansta radyasyonsuz ve duyarlı yöntem olan kontrastlı abdominal MRG birincil modalitedir; EUS ve SSA PET lezyon karakterizasyonu ve cerrahi planlamaya ayrılır.",
+      "aciklama_detay": "MEN1 taşıyıcılarında duodenopankreatik NET'ler erken ölümün en sık nedenidir ve sürveyans onlarca yıl sürer. Bu nedenle kümülatif radyasyon yükü yöntem seçiminde belirleyicidir. Kontrastlı abdominal MRG (difüzyon ağırlıklı sekanslarla) pankreas NET'lerini yüksek duyarlılıkla gösterir ve güncel yaklaşımda rutin sürveyansın birincil yöntemidir. EUS küçük lezyonlarda daha duyarlıdır, fakat operatöre bağlıdır, invazivdir ve yönetimi değiştirmeyen milimetrik lezyonları sayarak gereksiz müdahaleye itebilir; lezyon karakterizasyonu ve preoperatif planlamada kullanılır. 68Ga-DOTATATE PET/BT evreleme, metastaz şüphesi ve PRRT uygunluğu için saklanır. Kromogranin A özellikle PPİ kullanımında yalancı yüksek çıkar ve tek başına sürveyans aracı olarak yetersizdir.\n\nKlinik inci: ≤2 cm, asemptomatik non-fonksiyonel pNET saptanırsa aktif izlem stratejisi de MRG ile yürütülür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ömür boyu yıllık BT belirgin kümülatif radyasyon yüküdür; MRG benzer ya da daha iyi yumuşak doku çözünürlüğü sunar.",
+        "B": "YANLIS — SSA PET rutin sürveyans için değil, lezyon karakterizasyonu, evreleme ve metastaz araştırması içindir.",
+        "C": "YANLIS — Rutin EUS ve her lezyona İİA önerilmez; invazivdir ve yönetimi değiştirmeyen küçük lezyonlarda müdahaleye yol açar.",
+        "D": "DOGRU — Radyasyonsuz, duyarlı ve tekrarlanabilir olduğu için kontrastlı abdominal MRG rutin sürveyansın birincil yöntemidir.",
+        "E": "YANLIS — Dolaşan belirteçlerin duyarlılığı ve özgüllüğü düşüktür; görüntülemenin yerini tutmaz."
+      },
+      "etiketler": ["MEN1 sürveyansı", "pankreas NET", "MRG", "EUS", "kromogranin A"],
+      "zorluk": "orta",
+      "kaynak": "Papalou O, Korbonits M. Eur J Endocrinol 2025 (yeni MEN1 kılavuzları değerlendirmesi); Thakker et al. J Clin Endocrinol Metab 2012"
+    },
+    {
+      "id": "s10",
+      "metin": "40 yaşında kadın hasta, gastrinoma ve çok bezli primer hiperparatiroidi nedeniyle izleniyor; kendisinde MEN1 geninde patojenik bir frameshift varyantı saptanmış. 8 yaşındaki oğlu ve 13 yaşındaki kızı için danışmaya geliyor. İki çocuk da asemptomatik, büyüme ve gelişmeleri normal. Anne, çocuklar reşit olana kadar genetik test yaptırmayı ertelemek ve bu süre içinde 'her ihtimale karşı' tüm tetkikleri yaptırmak istiyor.\n\nÇocuklar için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Çocuklar 18 yaşına gelip kendi onamlarını verene kadar genetik test ertelenir; bu sürede tam biyokimyasal ve görüntüleme sürveyansı yapılır",
+        "B": "Genetik test yapılmadan her iki çocuğa yıllık açlık glukozu, insülin, gastrin ve hipofiz MRG ile tarama başlanır",
+        "C": "Annedeki varyanta yönelik hedefli test; yalnız taşıyıcı çocuğa yaşa uygun sürveyans",
+        "D": "Her iki çocukta MEN1 geninin tam dizilemesi ve buna ek olarak CDKN1B analizi yapılır",
+        "E": "Annenin gastrinoması olduğundan çocuklara önce sekretin uyarı testi yapılır, pozitif çıkan çocuğa genetik test önerilir"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "MEN1'de tümörler çocuklukta başlayabildiği için risk altındaki akrabalara çocukluk çağında, genetik danışmanlık eşliğinde, ailedeki bilinen varyanta yönelik hedefli test yapılır. Negatif çocuk genel popülasyon riskine döner ve sürveyansa gerek kalmaz.",
+      "aciklama_detay": "MEN1 otozomal dominanttır; her çocuğun varyantı taşıma olasılığı %50'dir. Ailedeki varyant bilindiğinde en doğru, en ucuz ve en kesin test o varyantın hedefli analizidir. Test çocukluk çağında (güncel yaklaşımda yaşamın ilk dekadı içinde) önerilir; çünkü MEN1 bileşenleri (insülinoma, hipofiz adenomu, PHPT) çocukluk ve ergenlikte de ortaya çıkabilir. Bu nedenle, erişkinlikte başlayan kanser sendromlarından farklı olarak testin 18 yaşa ertelenmesi önerilmez. Genetik testin asıl kazancı olumsuz sonuçtadır: taşıyıcı olmayan çocuk ömür boyu gereksiz kan tahlili, MRG ve kaygıdan kurtulur. Taşıyıcı çocuğa yaşa uygun sürveyans başlatılır; güncel kılavuzlar çocuklarda rutin açlık glukozu, insülin ve gastrin taramasını yanlış pozitiflik ve kanıtlanmamış yarar nedeniyle bırakma yönündedir.\n\nKlinik inci: Aile taraması birinci derece akrabalarla sınırlı kalmaz; kaskad test, taşıyıcı saptanan her bireyin birinci derece akrabalarına genişletilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — MEN1 tümörleri çocuklukta ortaya çıkabildiği için test ertelenmez; testsiz tam sürveyans taşıyıcı olmayan çocuğa gereksiz yük getirir.",
+        "B": "YANLIS — Genetik durumu bilinmeden sürveyans, çocukların yarısına gereksiz tetkik demektir; ayrıca çocuklarda rutin gastrin ve insülin taraması güncel yaklaşımda önerilmez.",
+        "C": "DOGRU — Ailedeki bilinen varyanta yönelik hedefli test çocuklukta yapılır; sonuç sürveyansın gerekip gerekmediğini belirler.",
+        "D": "YANLIS — Ailedeki varyant biliniyorsa tam dizileme ve ek genler gereksizdir; hedefli test hem daha kesin hem daha ucuzdur.",
+        "E": "YANLIS — Asemptomatik çocukta sekretin testiyle tarama yapılmaz; taşıyıcılık genetik testle belirlenir."
+      },
+      "etiketler": ["ailesel tarama", "kaskad test", "hedefli genetik test", "pediatrik MEN1", "genetik danışmanlık"],
+      "zorluk": "kolay",
+      "kaynak": "Thakker et al. J Clin Endocrinol Metab 2012; Papalou O, Korbonits M. Eur J Endocrinol 2025"
+    },
+    {
+      "id": "s11",
+      "metin": "39 yaşında erkek hasta, MEN1 tanılı. 11 yıl önce subtotal paratiroidektomi (3.5 bez) ve transservikal timektomi yapılmış; 8 yıl normokalsemik kalmış. Son 2 yılda kalsiyum yükselmiş, geçen ay iki kez böbrek taşı düşürmüş; DXA'da ön kol T skoru −2.7.\n\nTetkikler:\nSerum kalsiyum: 11.3 mg/dL\nİntakt PTH: 146 pg/mL\neGFR: 88 mL/dk/1.73 m²\nBoyun USG: kalan yarım bezin yerinde belirgin büyüme yok; başka odak ayırt edilemiyor\n\nBu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Görüntüleme beklemeden bilateral boyun reeksplorasyonu",
+        "B": "Reoperasyon öncesi fonksiyonel lokalizasyon (ör. 18F-florokolin PET/BT) ile kalan ya da ektopik bezin gösterilmesi",
+        "C": "Cerrahi seçeneği dışlayıp ömür boyu sinakalset ile tedavi",
+        "D": "Hiperkalsemiye yönelik yalnızca zoledronik asit ve bol sıvı",
+        "E": "USG'de odak görülmediğine göre total tiroidektomi ile birlikte eksplorasyon"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "MEN1'de subtotal paratiroidektomiden sonra nüks sıktır. Taş ve osteoporoz cerrahi endikasyondur; ancak reoperasyon morbiditesi yüksek olduğundan önce kalan/ektopik bez fonksiyonel görüntülemeyle lokalize edilir.",
+      "aciklama_detay": "Subtotal paratiroidektomi sonrası MEN1 hastalarının önemli bir kısmında yıllar içinde nüks gelişir; kalan bez remnantı, fazla (beşinci) bez veya timus ya da mediasten dışında kalmış ektopik doku kaynak olabilir. Nefrolitiyazis ve osteoporoz cerrahi endikasyonu oluşturur. Skarlı boyunda yeniden cerrahi rekürren laringeal sinir hasarı ve kalıcı hipoparatiroidi riski taşıdığından, reoperasyon ancak kaynak lokalize edildikten sonra hedefli olarak yapılır. 18F-florokolin PET/BT, nüks MEN1 PHPT'de lokalizasyonda yüksek başarı gösterir ve güncel yaklaşımda tercih edilen yöntemdir; USG ve 4D-BT tamamlayıcıdır. Remnant bez rezeksiyonu sırasında kalıcı hipoparatiroidi riskine karşı paratiroid kriyoprezervasyonu düşünülebilir.\n\nKlinik inci: Sinakalset, cerrahi uygun değilse ya da hasta reddederse kalsiyumu kontrol eder, ama kemik ve böbrek sonuçlarını cerrahi kadar düzelttiği gösterilmemiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Lokalizasyonsuz reeksplorasyon, skarlı boyunda sinir hasarı ve başarısızlık riskini artırır.",
+        "B": "DOGRU — Cerrahi endikasyonu olan nüks hastada önce kaynak lokalize edilir; florokolin PET/BT bu amaçla en duyarlı yöntemlerdendir.",
+        "C": "YANLIS — Taş ve osteoporozu olan genç hastada küratif seçenek dışlanmamalıdır; sinakalset cerrahi uygun olmayan hastaya ayrılır.",
+        "D": "YANLIS — Bisfosfonat kemiği kısmen korur, ama PTH fazlalığını ve taş oluşumunu tedavi etmez; hasta hiperkalsemik krizde değildir.",
+        "E": "YANLIS — Tiroid patolojisi olmadan total tiroidektomi gereksiz morbiditedir; intratiroidal bez şüphesi ancak lokalizasyonla desteklenirse hedefli lobektomi gündeme gelir."
+      },
+      "etiketler": ["nüks hiperparatiroidi", "reoperasyon", "18F-florokolin PET/BT", "lokalizasyon", "subtotal paratiroidektomi"],
+      "zorluk": "orta",
+      "kaynak": "Schubert L ve ark. Ann Endocrinol (Paris) 2025 (MEN1'de PHPT yönetimi); Yen TWF, Wang TS. Parathyroid surgery for inherited syndromes. UpToDate"
+    },
+    {
+      "id": "s12",
+      "metin": "47 yaşında kadın hasta, MEN1 tanılı ve sürveyansta. Abdominal MRG'de sol adrenalde 1.9 cm, kimyasal kaymalı sekansta sinyal kaybı gösteren (lipitten zengin), homojen kitle; sağ adrenalde hafif diffüz kalınlaşma saptanıyor. 3 yıldır hipertansiyon nedeniyle amlodipin kullanıyor; KB 136/84 mmHg, potasyum 4.1 mEq/L. Cushing sendromunu düşündüren fizik bulgu yok. İki yıl önceki MRG'de sol adrenal lezyon 1.7 cm ölçülmüş.\n\nBu adrenal bulgular için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "MEN1'de adrenal lezyonlar malign potansiyelli olduğundan sol laparoskopik adrenalektomi",
+        "B": "Tanıyı kesinleştirmek için BT kılavuzluğunda sol adrenal biyopsi",
+        "C": "Bilateral tutulum nedeniyle bilateral adrenalektomi",
+        "D": "MEN1'de adrenal lezyonlar klinik önem taşımadığından ek değerlendirme gerekmez",
+        "E": "Hormonal değerlendirme ve görüntülemeyle boyut izlemi"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "MEN1'de adrenal kortikal lezyonlar sıktır ve çoğunlukla non-fonksiyonel, benign adenom ya da hiperplazidir. 1 cm üzerindeki lezyonda hormonal değerlendirme yapılır; fonksiyonel, >4 cm, atipik görünümlü ya da hızlı büyüyen lezyonda cerrahi düşünülür.",
+      "aciklama_detay": "MEN1 taşıyıcılarının önemli bir kısmında (serilerde %20-70) adrenal kortikal lezyon, sıklıkla bilateral hiperplazi ya da non-fonksiyonel adenom saptanır. Kortizol ya da aldosteron fazlalığı az sayıda hastada vardır; feokromositoma nadirdir; adrenokortikal karsinom nadir olmakla birlikte genel popülasyona göre sıktır ve genellikle >4 cm lezyonlarda görülür. Thakker 2012 kılavuzu, >1 cm lezyonlarda biyokimyasal değerlendirme (hipertansif hastada primer aldosteronizm dahil) ve yıllık görüntüleme izlemi önerir; cerrahi, fonksiyonel tümörde veya >4 cm, atipik ya da belirgin büyüyen lezyonda düşünülür. Bu hastadaki lezyon lipitten zengin, <2 cm ve 2 yılda 2 mm büyümüş; benign adenomla uyumludur.\n\nKlinik inci: Hipertansif MEN1 hastasında primer aldosteronizm atlanmamalıdır; ayrıca feokromositoma olasılığı düşük de olsa, cerrahi ya da biyopsi düşünülen her adrenal kitlede önce metanefrin ölçülmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Küçük, lipitten zengin ve yavaş büyüyen lezyonun rutin rezeksiyonu önerilmez; cerrahi fonksiyonel, >4 cm, atipik ya da hızlı büyüyen lezyona ayrılır.",
+        "B": "YANLIS — Biyopsi adenom-karsinom ayrımında yetersizdir ve benign görüntülü lezyonda endikasyonu yoktur.",
+        "C": "YANLIS — Non-fonksiyonel benign lezyonlar için bilateral adrenalektomi ömür boyu adrenal yetmezlik bedeline değmez.",
+        "D": "YANLIS — Adrenal lezyonlar MEN1'de sıktır ve hormon fazlalığı, nadiren de karsinom açısından değerlendirme gerektirir.",
+        "E": "DOGRU — >1 cm lezyonda hormonal değerlendirme ve görüntüleme izlemi; cerrahi yalnızca fonksiyonel, büyük ya da atipik lezyonda."
+      },
+      "etiketler": ["MEN1 adrenal lezyon", "adrenal adenom", "hormonal değerlendirme", "sürveyans"],
+      "zorluk": "orta",
+      "kaynak": "Thakker et al. J Clin Endocrinol Metab 2012 (MEN1 klinik uygulama kılavuzu)"
+    },
+    {
+      "id": "s13",
+      "metin": "26 yaşında kadın hasta, MEN1 tanılı. Son 3 aydır sabahları ve öğün atladığında terleme, bulanık görme ve iki kez bilinç bulanıklığı atağı oluyor; ataklar şekerli içecekle düzeliyor. Diyabeti yok, hiçbir ilaç kullanmıyor; bir yakını insülin kullanıyor. Gözetimli açlık testinin 14. saatinde nöroglikopenik semptomlar gelişiyor.\n\nTest sonunda ölçülen değerler:\nPlazma glukozu: 42 mg/dL\nİnsülin: 9 µU/mL\nC-peptid: 1.8 ng/mL\nProinsülin: 22 pmol/L\nβ-hidroksibütirat: 0.3 mmol/L\n1 mg IV glukagon sonrası glukoz artışı: 38 mg/dL\nSülfonilüre ve meglitinid taraması: negatif\nİnsülin antikoru: negatif\n\nBu sonuçların en olası yorumu hangisidir?",
+      "secenekler": {
+        "A": "Endojen hiperinsülinizm; MEN1 zemininde insülinoma ile uyumlu, lokalizasyon aşamasına geçilir",
+        "B": "Gizli ekzojen insülin kullanımına bağlı hipoglisemi",
+        "C": "Tanı konmamış sülfonilüre alımına bağlı hipoglisemi",
+        "D": "IGF-2 salgılayan non-adacık hücreli tümör hipoglisemisi",
+        "E": "İnsülin otoimmün sendromu (Hirata hastalığı)"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Glukoz <55 mg/dL iken insülin ≥3 µU/mL, C-peptid ≥0.6 ng/mL, proinsülin ≥5 pmol/L, baskılanmış keton ve glukagona ≥25 mg/dL yanıt, ilaç taraması ve antikor negatifliğiyle birlikte endojen hiperinsülinizmi kanıtlar.",
+      "aciklama_detay": "Endocrine Society 2009 hipoglisemi kılavuzunun ölçütleri: semptomlu hipoglisemi (glukoz <55 mg/dL) sırasında insülin ≥3 µU/mL, C-peptid ≥0.6 ng/mL ve proinsülin ≥5 pmol/L; insülin etkisini gösteren düşük β-hidroksibütirat (≤2.7 mmol/L) ve glukagona ≥25 mg/dL glukoz yanıtı (glikojen depoları insülinle korunmuş). Oral hipoglisemik taraması ve insülin antikorlarının negatif olması diğer endojen nedenleri dışlar. MEN1'de insülinoma sporadik olgulardan daha genç yaşta görülür ve çok odaklı olabilir; biyokimyasal tanıdan sonra lokalizasyon (MRG, EUS, gerekirse GLP-1 reseptör PET ya da selektif arteriyel kalsiyum uyarısı) yapılır.\n\nKlinik inci: Ekzojen insülin C-peptidi ve proinsülini baskılar; sülfonilüre tüm endojen parametreleri insülinoma gibi yükseltir ve yalnızca ilaç taramasıyla ayrılır. Bu nedenle ilaç taraması, 'insülinoma' tanısının ayrılmaz parçasıdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Tüm ölçütler endojen hiperinsülinizmi gösteriyor; ilaç ve antikor nedenleri dışlanmış, tablo insülinoma ile uyumlu.",
+        "B": "YANLIS — Ekzojen insülinde C-peptid ve proinsülin baskılanır; burada ikisi de yüksek.",
+        "C": "YANLIS — Sülfonilüre biyokimyasal olarak insülinomayı birebir taklit eder, ancak ilaç taraması negatiftir.",
+        "D": "YANLIS — IGF-2 aracılı hipoglisemide insülin, C-peptid ve proinsülin baskılanır; burada uygunsuz olarak yüksektir.",
+        "E": "YANLIS — İnsülin otoimmün sendromunda insülin çok yüksektir (çoğu zaman >100 µU/mL), C-peptide göre orantısızdır ve insülin antikoru pozitiftir."
+      },
+      "etiketler": ["insülinoma", "açlık testi", "endojen hiperinsülinizm", "proinsülin", "MEN1 pankreas NET"],
+      "zorluk": "orta",
+      "kaynak": "Endocrine Society 2009 erişkinde hipoglisemi kılavuzu (Cryer ve ark.); Vella A. Insulinoma. UpToDate"
+    },
+    {
+      "id": "s14",
+      "metin": "58 yaşında postmenopozal kadın hasta. Kardeşi MEN1 tanılı; ailedeki patojenik MEN1 varyantı bilinir ve hastaya 5 yıl önce yapılan hedefli testte bu varyant saptanmamış. Şimdi rutin tetkikte hiperkalsemi bulunuyor. Böbrek taşı yok; DXA'da lomber T skoru −2.6.\n\nTetkikler:\nSerum kalsiyum: 11.0 mg/dL\nİntakt PTH: 118 pg/mL\n24 saatlik idrar kalsiyumu: 290 mg/gün\nBoyun USG ve sestamibi SPECT/BT: sağ alt paratiroid lojunda uyumlu tek odak\nProlaktin ve IGF-1: normal\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "MEN1 kabul edilip subtotal paratiroidektomi ve transservikal timektomi",
+        "B": "Hedefli test yanlış negatif olabileceği için MEN1 tam dizilemesi tekrarlanıp sonuç gelene kadar cerrahinin ertelenmesi",
+        "C": "Cerrahiden bağımsız olarak ömür boyu MEN1 sürveyansı (pankreas MRG, hipofiz MRG, toraks görüntüleme) başlanması",
+        "D": "Fenokopi kabul edilip odaklı paratiroidektomi; MEN1 sürveyansı gerekmez",
+        "E": "Aile öyküsü nedeniyle cerrahi yerine sinakalset tedavisi"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Ailedeki bilinen varyantı taşımayan akrabada gelişen PHPT, MEN1 değil fenokopidir (sporadik PHPT). Postmenopozal kadında sporadik PHPT sıktır; osteoporoz nedeniyle cerrahi endikedir ve uyumlu görüntülemeyle odaklı cerrahi uygundur.",
+      "aciklama_detay": "MEN1 ailelerinde, ailedeki varyantı taşımayan bireylerde de MEN1'e özgü tümörlerden biri (en sık PHPT, hipofiz adenomu) gelişebilir; buna fenokopi denir. Sporadik PHPT özellikle postmenopozal kadınlarda sık olduğu için bu birliktelik şaşırtıcı değildir. Bilinen bir aile varyantına yönelik hedefli testin doğruluğu çok yüksektir; negatif sonuç kalıtsal MEN1 riskini genel popülasyon düzeyine indirir. Bu nedenle hasta sporadik PHPT gibi değerlendirilir: DXA'da osteoporoz (T skoru ≤−2.5) cerrahi endikasyonudur, USG ve sestamibi uyumlu tek odak gösterdiği için odaklı paratiroidektomi (intraoperatif PTH izlemiyle) uygundur. MEN1 sürveyansı gerekmez.\n\nKlinik inci: Fenokopi olasılığı, ailede tümör geliştiren her bireyin genetik olarak da doğrulanması gerektiğini hatırlatır; yalnızca klinik bulguyla 'taşıyıcı' etiketi yanlış sürveyansa ve gereksiz geniş cerrahiye yol açar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Hasta ailedeki varyantı taşımıyor; MEN1'e özgü geniş cerrahi ve timektomi gereksiz morbidite ve kalıcı hipoparatiroidi riski getirir.",
+        "B": "YANLIS — Bilinen aile varyantına yönelik hedefli test güvenilirdir; cerrahi endikasyonu olan hastada tedaviyi geciktirmek için gerekçe yoktur.",
+        "C": "YANLIS — Taşıyıcı olmayan bireyde MEN1 sürveyansı gereksiz tetkik, radyasyon ve maliyettir.",
+        "D": "DOGRU — Fenokopi sporadik PHPT gibi yönetilir; uyumlu tek odakta odaklı paratiroidektomi yapılır ve MEN1 sürveyansı gerekmez.",
+        "E": "YANLIS — Osteoporozu olan ve cerrahiye uygun hastada küratif tedavi cerrahidir; aile öyküsü sinakalset için gerekçe değildir."
+      },
+      "etiketler": ["fenokopi", "ailesel tarama", "sporadik PHPT", "odaklı paratiroidektomi", "MEN1 genetik test"],
+      "zorluk": "zor",
+      "kaynak": "Thakker et al. J Clin Endocrinol Metab 2012; Arnold A, Newey P. Multiple endocrine neoplasia type 1: Genetics. UpToDate"
+    },
+    {
+      "id": "s15",
+      "metin": "44 yaşında erkek hasta, MEN1 tanılı. Zollinger-Ellison sendromu biyokimyasal olarak doğrulanmış; 3 yıl önce subtotal paratiroidektomi yapılmış ve normokalsemik. Omeprazol 20 mg/gün kullanıyor. Son 2 aydır epigastrik ağrı ve günde 4-5 kez sulu ishal tarifliyor.\n\nBulgular:\nSerum kalsiyum: 9.3 mg/dL\nEndoskopi: duodenumun ikinci kısmında iki aktif ülser, LA-B özofajit\nAbdominal MRG ve 68Ga-DOTATATE PET/BT: duodenal duvarda en büyüğü 8 mm olan çok sayıda küçük odak; pankreas lezyonu ve karaciğer metastazı yok\n\nBu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Pankreatikoduodenektomi (Whipple)",
+        "B": "PPİ dozunu ZES dozlarına çıkarıp yanıta göre titre etmek",
+        "C": "PPİ'yi kesip uzun etkili somatostatin analoğu monoterapisine geçmek",
+        "D": "Duodenotomi ile duodenal odakların enükleasyonu",
+        "E": "PPİ yerine standart doz H2 reseptör blokerine geçmek"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "MEN1 ZES'inde tedavinin temeli yüksek doz PPİ'dir; ZES'te gereken doz peptik ülser dozunun birkaç katıdır. Küçük (<2 cm), çok odaklı duodenal gastrinomalarda cerrahi kür nadirdir ve ilk seçenek değildir.",
+      "aciklama_detay": "ZES'te asit hipersekresyonu standart PPİ dozlarıyla çoğu zaman kontrol edilemez; başlangıç dozu genellikle omeprazol 60 mg/gün ya da eşdeğeridir ve MEN1 hastalarında daha yüksek dozlar (bölünmüş) sıkça gerekir. Hedef, semptomların ve mukozal lezyonların iyileşmesi; ölçüm yapılabiliyorsa bir sonraki doz öncesi bazal asit çıkışının <10 mEq/saat (önceki mide cerrahisi ya da ağır özofajitte <5 mEq/saat) olmasıdır. Kalsiyumun normal tutulması asit ve gastrin salgısını azaltarak PPİ ihtiyacını düşürür; bu hastada bu koşul zaten sağlanmıştır. MEN1 gastrinomaları çoğunlukla duodenumda, milimetrik ve çok odaklıdır ve sıklıkla peripankreatik lenf nodu metastazı yapar; Whipple dışındaki cerrahilerle biyokimyasal kür nadirdir. Bu nedenle 2 cm altındaki tümörlerde cerrahi genellikle önerilmez; Whipple ise yalnızca seçilmiş olgularda tartışılır.\n\nKlinik inci: Sulu ishal ZES'te asidin ince bağırsakta lipazı inaktive etmesi ve mukoza hasarından kaynaklanır; PPİ dozunun yeterliliğinin iyi bir klinik göstergesidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Whipple ancak seçilmiş olgularda tartışılır; küçük, çok odaklı duodenal hastalıkta yüksek morbiditeye karşın ilk seçenek değildir.",
+        "B": "DOGRU — Semptomatik ve endoskopik aktif hastalıkta PPİ dozu ZES dozlarına çıkarılıp yanıta göre titre edilir.",
+        "C": "YANLIS — Somatostatin analoğu gastrin salgısını azaltabilir ve tümör kontrolünde yeri vardır, ama PPİ'nin yerini tutmaz; PPİ'yi kesmek ağır peptik komplikasyon riski taşır.",
+        "D": "YANLIS — Çok odaklı milimetrik duodenal gastrinomalarda sınırlı cerrahiyle kür nadirdir; <2 cm tümörlerde cerrahi genellikle önerilmez.",
+        "E": "YANLIS — H2 blokerlerin asit baskılaması PPİ'den zayıftır; mevcut PPİ yetersizken standart doz H2 bloker durumu kötüleştirir."
+      },
+      "etiketler": ["Zollinger-Ellison sendromu", "PPİ dozu", "duodenal gastrinoma", "medikal tedavi"],
+      "zorluk": "orta",
+      "kaynak": "Bergsland E, Ge PS. Management and prognosis of gastrinoma (Zollinger-Ellison syndrome). UpToDate; Thakker et al. J Clin Endocrinol Metab 2012"
     }
   ]
 }

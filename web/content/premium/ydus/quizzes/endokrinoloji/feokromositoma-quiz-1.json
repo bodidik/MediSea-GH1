@@ -27,6 +27,342 @@
       "etiketler": ["SDHD", "maternal imprinting", "paragangliyoma", "3-metoksitiramin", "noradrenerjik fenotip", "organ of Zuckerkandl", "genetik geçiş"],
       "zorluk": "zor",
       "kaynak": "Familial Paraganglioma Type 1 (SDHD); Wang et al. 2023 meta-analiz"
+    },
+    {
+      "id": "s2",
+      "metin": "46 yaşında kadın hasta, son 4 aydır ayda birkaç kez olan çarpıntı ve kan basıncı yükselmesi atakları nedeniyle değerlendiriliyor. Fibromiyalji nedeniyle 2 yıldır amitriptilin 75 mg/gün kullanıyor; ağrı tedavisini yöneten hekim ilacın kesilebileceğini ve alternatif bir ajana geçilebileceğini bildiriyor. Başka ilaç kullanmıyor. KB 148/92 mmHg, nabız 88/dk, VKİ 27 kg/m².\n\nTetkikler (20 dakika sırtüstü dinlenme sonrası, önceden takılmış branülden):\nPlazma serbest normetanefrin: 1.10 nmol/L (referans <0.66)\nPlazma serbest metanefrin: 0.21 nmol/L (referans <0.30)\nSerum kreatinin: 0.8 mg/dL\nHenüz görüntüleme yapılmamış.\n\nBu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Lokalizasyon için kontrastlı abdomen-pelvis BT çekilmesi",
+        "B": "Amitriptilin sürerken klonidin baskılama testinin yapılması",
+        "C": "Amitriptilinin kademeli kesilip yaklaşık 2 hafta sonra ölçümün aynı koşullarda tekrarı",
+        "D": "Doksazosin başlanıp 123I-MIBG sintigrafisinin planlanması",
+        "E": "24 saatlik idrarda vanilmandelik asit (VMA) ile sonucun teyit edilmesi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Trisiklik antidepresanlar norepinefrin geri alımını engelleyerek normetanefrini yalancı olarak yükseltir; yükseklik sınırda (<2 kat) ve ilaç kesilebiliyorsa önce ilaç bırakılıp test tekrarlanır.",
+      "aciklama_detay": "Örnek doğru koşullarda (sırtüstü, branülden) alınmış, ancak hasta PPGL biyokimyasında en sık yalancı pozitiflik nedeni olan bir trisiklik antidepresan kullanıyor. TCA'lar sinaptik norepinefrin geri alımını (NET) engeller; nöronal norepinefrin daha çok ekstranöronal yolda O-metillenir ve plazma normetanefrini yükselir. Metanefrinin normal olması ve normetanefrinin normal üst sınırın yaklaşık 1,7 katında kalması bu mekanizmayla tam uyumludur. Endocrine Society 2014 kılavuzu, girişimsel ilaçların mümkünse kesilip testin tekrarlanmasını önerir; çoğu ilaç için yaklaşık 2 haftalık ara yeterlidir. Tekrar ölçüm normalse PPGL güvenle dışlanır; hâlâ yüksekse ileri değerlendirme (gerekirse klonidin testi, ardından görüntüleme) yapılır.\n\nKlinik inci: Biyokimyasal tanı kesinleşmeden görüntülemeye geçmek, %5-7 oranında rastlanan adrenal insidentalomalar nedeniyle yanlış lokalizasyon ve gereksiz cerrahi riski doğurur. İlaç kesilemiyorsa (ör. ağır depresyon) karar, yükseklik derecesi ve klinik olasılık birlikte değerlendirilerek verilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Görüntüleme ancak biyokimyasal tanı kesinleştikten sonra yapılır. Sınırda ve ilaçla açıklanabilen bir yükseklikte BT'ye geçmek, rastlantısal adrenal kitle bulunursa yanlış yola sokar.",
+        "B": "YANLIS — Klonidin testi sınırda yükseklikte kullanılır, fakat TCA'lar testin kendisini de bozar (klonidinin santral sempatik baskılamasını engeller, yalancı 'baskılanmama' sonucu verebilir). Test ilaç kesildikten sonra anlamlıdır.",
+        "C": "DOGRU — Karışıklık yaratan ilaç kesilebildiği için en doğru adım ilacı bırakıp aynı preanalitik koşullarda ölçümü tekrarlamaktır. Normal çıkarsa PPGL dışlanır.",
+        "D": "YANLIS — Tanı konmamış hastaya alfa blokaj ve fonksiyonel görüntüleme gereksizdir; ayrıca TCA'lar MIBG tutulumunu da (NET blokajı ile) azaltır.",
+        "E": "YANLIS — VMA'nın duyarlılığı fraksiyone metanefrinlerden belirgin düşüktür ve tanısal algoritmada yeri yoktur; TCA etkisini de ortadan kaldırmaz."
+      },
+      "etiketler": ["metanefrin", "yalancı pozitiflik", "trisiklik antidepresan", "biyokimyasal tanı", "preanalitik"],
+      "zorluk": "orta",
+      "kaynak": "Endocrine Society 2014 feokromositoma ve paraganglioma kılavuzu (Lenders ve ark.)"
+    },
+    {
+      "id": "s3",
+      "metin": "52 yaşında erkek hasta, üç ilaca (amlodipin, valsartan, indapamid) rağmen kontrol altına alınamayan hipertansiyon nedeniyle sekonder nedenler açısından inceleniyor. Kafein, alkol ve sigara kullanmıyor; katekolamin ölçümünü etkileyen ilaç almıyor. Adrenal görüntüleme henüz yapılmadı.\n\nTetkikler (sırtüstü, branülden):\nPlazma serbest normetanefrin: 1.20 nmol/L (referans <0.66)\nPlazma serbest metanefrin: 0.24 nmol/L (referans <0.30)\n\nKlonidin baskılama testi (0.3 mg oral klonidin, 3. saat):\nNormetanefrin: 1.20 → 0.45 nmol/L\n\nBu sonuçların en doğru yorumu hangisidir?",
+      "secenekler": {
+        "A": "Baskılanma yeterlidir; PPGL olasılığı düşük, görüntüleme gerekmez",
+        "B": "Baskılanma otonom katekolamin salınımını gösterir; kontrastlı adrenal BT ile lokalizasyon yapılmalıdır",
+        "C": "Test bu hastada yorumlanamaz; glukagon uyarı testi ile tanı netleştirilmelidir",
+        "D": "Baskılanma yanıtı ekstraadrenal paragangliyomalarda beklenir; 68Ga-DOTATATE PET/BT yapılmalıdır",
+        "E": "Plazma katekolaminleri eşzamanlı ölçülmediğinden test geçersizdir ve tekrarlanmalıdır"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Klonidin sempatik sinir uçlarından kaynaklanan salınımı baskılar, tümörün otonom salınımını baskılamaz. Normetanefrinin normale inmesi ve %40'ın üzerinde düşmesi (burada %62) yalancı pozitifliği gösterir.",
+      "aciklama_detay": "Normal üst sınırın 2 katından az tek metabolit yüksekliğinde klonidin baskılama testi yalancı pozitiflikleri ayırır. Klonidin santral α2 agonisttir; sempatik tonusu ve nöronal norepinefrin salınımını azaltır. PPGL'de ise normetanefrin büyük ölçüde tümör içindeki katekolaminin sürekli metabolizmasından geldiği için baskılanmaz. Plazma normetanefrini ile yapılan testte PPGL lehine ölçütler: 3. saatte değerin referans üst sınırının üzerinde kalması veya bazale göre %40'tan az düşmesi. Bu hastada değer 0.45 nmol/L'ye inmiş (%62 düşüş), iki ölçütün ikisi de karşılanmamış; tablo sempatik aktivasyonla (dirençli hipertansiyon, olası uyku apnesi) uyumludur.\n\nKlinik inci: Eski yöntem plazma katekolamini ile yapılırdı; normetanefrin temelli test daha güvenilirdir çünkü normetanefrin yarı ömrü daha uzundur ve anlık stres dalgalanmasından az etkilenir. Dirençli hipertansiyonun diğer nedenleri (primer aldosteronizm, uyku apnesi) ayrıca aranmalıdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Baskılanma %40'ın üzerinde ve 3. saat değeri referans aralığında; iki ölçüt de PPGL aleyhine. Görüntüleme gereksizdir, hipertansiyonun diğer nedenleri aranır.",
+        "B": "YANLIS — Yorum tersine çevrilmiş: otonom tümör salınımı klonidinle baskılanmaz. Baskılanma sempatik (nöronal) kaynağı gösterir.",
+        "C": "YANLIS — Hasta testi bozan ilaç almıyor; test yorumlanabilir. Glukagon uyarı testi düşük duyarlılığı ve hipertansif kriz riski nedeniyle artık önerilmez.",
+        "D": "YANLIS — Paragangliyomalar da otonom salgılar ve klonidinle baskılanmaz; baskılanma lokalizasyon için gerekçe olmaz.",
+        "E": "YANLIS — Güncel test plazma normetanefrini üzerinden yorumlanır; katekolamin ölçümü zorunlu değildir."
+      },
+      "etiketler": ["klonidin baskılama testi", "normetanefrin", "dirençli hipertansiyon", "yalancı pozitiflik"],
+      "zorluk": "zor",
+      "kaynak": "Endocrine Society 2014 feokromositoma ve paraganglioma kılavuzu (Lenders ve ark.)"
+    },
+    {
+      "id": "s4",
+      "metin": "58 yaşında kadın hasta, böbrek taşı nedeniyle çekilen kontrastsız BT'de sağ adrenalde rastlantısal kitle saptanması üzerine başvuruyor. Hipertansiyon, diyabet veya osteoporoz öyküsü yok; atak tarzı yakınması yok. KB 124/78 mmHg, VKİ 26 kg/m². Cushing sendromunu düşündüren fizik bulgu yok.\n\nTetkikler:\nSerum potasyum: 4.3 mEq/L\nBT: Sağ adrenalde 2.6 cm, düzgün sınırlı, homojen kitle; kontrastsız dansite 6 HU\n\nESE/ENSAT 2023 adrenal insidentaloma kılavuzuna göre bu hasta için en uygun hormonal değerlendirme hangisidir?",
+      "secenekler": {
+        "A": "Plazma serbest metanefrinleri, 1 mg deksametazon baskılama testi ve aldosteron/renin oranı",
+        "B": "Plazma serbest metanefrinleri ve 1 mg deksametazon baskılama testi",
+        "C": "Yalnızca 24 saatlik idrarda fraksiyone metanefrinler",
+        "D": "Hormonal değerlendirme gerekmez; 12 ay sonra kontrol BT çekilir",
+        "E": "1 mg deksametazon baskılama testi; metanefrin ölçümüne gerek yoktur"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Kontrastsız dansitesi ≤10 HU olan homojen kitle lipitten zengin adenomdur; feokromositoma lipit içermediği için bu lezyonda metanefrin taraması gerekmez. Otonom kortizol salgısı her hastada 1 mg DST ile aranır.",
+      "aciklama_detay": "Feokromositomalar hücre içi lipitten fakirdir ve kontrastsız BT'de neredeyse her zaman >10 HU dansite gösterir. ESE/ENSAT 2023 kılavuzu bu nedenle kontrastsız dansitesi ≤10 HU olan homojen insidentalomalarda feokromositoma taramasının atlanabileceğini önerir (kaynak birikmiş seriler: bu grupta feokromositoma olasılığı ihmal edilebilir düzeydedir). Buna karşılık otonom kortizol salgısı (hafif otonom kortizol salgısı) klinik bulgu olmasa da sık ve kardiyometabolik riskle ilişkili olduğundan her insidentalomada 1 mg DST önerilir. Aldosteron/renin oranı yalnızca hipertansiyon veya hipokalemi varsa istenir; bu hasta normotansif ve normokalemiktir. Aynı kılavuza göre <4 cm, homojen ve ≤10 HU bir lezyon için ek görüntüleme izlemi de gerekmez.\n\nKlinik inci: Dansite >10 HU ise (lipitten fakir) metanefrin ölçümü zorunludur; biyopsi ya da cerrahi öncesinde feokromositoma mutlaka dışlanmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Normotansif ve normokalemik hastada aldosteron/renin oranı önerilmez; ≤10 HU lezyonda metanefrin ölçümü de gereksizdir.",
+        "B": "YANLIS — Birçok merkezin rutini olsa da 2023 kılavuzu ≤10 HU homojen lezyonda metanefrin ölçümünü gereksiz sayar; yalancı pozitif sonuçlar gereksiz inceleme zinciri başlatır.",
+        "C": "YANLIS — Hem gereksiz bir test hem de asıl gerekli olan otonom kortizol değerlendirmesini atlıyor.",
+        "D": "YANLIS — Görüntüleme özellikleri benign olsa da otonom kortizol salgısı her hastada aranmalıdır; ayrıca bu lezyon için kontrol BT önerilmez.",
+        "E": "DOGRU — ≤10 HU homojen lezyonda feokromositoma olasılığı ihmal edilebilir; hormonal değerlendirme 1 mg DST ile sınırlıdır."
+      },
+      "etiketler": ["adrenal insidentaloma", "kontrastsız BT dansitesi", "Hounsfield", "1 mg DST", "ESE/ENSAT 2023"],
+      "zorluk": "zor",
+      "kaynak": "ESE/ENSAT 2023 adrenal insidentaloma kılavuzu"
+    },
+    {
+      "id": "s5",
+      "metin": "44 yaşında erkek hasta, biyokimyasal olarak doğrulanmış 4 cm sağ adrenal feokromositoma nedeniyle laparoskopik adrenalektomiye hazırlanıyor. 12 gün önce doksazosin başlanmış ve 8 mg günde iki kez dozuna titre edilmiş; tuzdan zengin diyet ve bol sıvı alımı öneriliyor. Çarpıntı yakınması sürüyor.\n\nBugünkü ölçümler:\nOturur KB 122/78 mmHg, nabız 108/dk\nAyakta KB 108/70 mmHg, nabız 122/dk\nEKG: Sinüs taşikardisi\n\nBu aşamada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kan basıncını daha da düşürmek için doksazosin dozunu artırmak",
+        "B": "Doksazosini kesip labetalol monoterapisine geçmek",
+        "C": "Taşikardi yetersiz alfa blokajı gösterdiği için fenoksibenzamine geçmek",
+        "D": "Doksazosine düşük doz metoprolol eklemek",
+        "E": "Doksazosine nifedipin eklemek"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Kan basıncı hedefte, ortostatik düşüş kabul edilebilir sınırda; kalan sorun refleks taşikardi. Yeterli alfa blokajdan sonra (en az 2-3 gün) beta bloker eklemenin tam zamanıdır.",
+      "aciklama_detay": "Preoperatif hazırlığın sırası: önce alfa blokaj (7-14 gün), 2-3. günden itibaren tuz ve sıvı yüklemesi, alfa blokaj yeterli olduktan sonra taşikardi için beta bloker. Endocrine Society 2014 kılavuzu preoperatif hedefleri oturur KB <130/80 mmHg, ayakta sistolik KB >90 mmHg; kalp hızı oturur 60-70/dk, ayakta 70-80/dk olarak verir. Bu hastada KB hedefte, fakat nabız hedefin çok üzerinde; bu hem katekolamin etkisinin hem de alfa blokajla oluşan vazodilatasyona refleks yanıtın sonucudur. Kardiyoselektif bir beta bloker (metoprolol, atenolol, bisoprolol) eklenir. Beta bloker hiçbir zaman alfa blokajdan önce ya da onun yerine başlanmaz.\n\nKlinik inci: Fenoksibenzamin presinaptik α2 reseptörleri de bloke ettiğinden norepinefrin salınımını ve refleks taşikardiyi doksazosinden daha fazla artırır. Dihidropiridin kalsiyum kanal blokerleri de refleks taşikardiyi kötüleştirebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — KB zaten hedefte ve ayakta sistolik 108 mmHg; doz artışı semptomatik ortostatik hipotansiyona yol açar, taşikardiyi de artırır.",
+        "B": "YANLIS — Labetalolün beta etkisi alfa etkisinden belirgin baskındır (oral yaklaşık 3:1, IV yaklaşık 7:1); tek başına yeterli alfa blokajı sağlamaz ve paradoks hipertansiyon bildirilmiştir.",
+        "C": "YANLIS — Taşikardi alfa blokajın yetersizliğinden değil, vazodilatasyona refleks yanıttan ve β-adrenerjik uyarıdan kaynaklanır; fenoksibenzamin presinaptik α2 blokajıyla taşikardiyi artırır.",
+        "D": "DOGRU — Yeterli alfa blokajdan sonra (en az 2-3 gün) taşikardi kardiyoselektif beta blokerle kontrol edilir; bu hastada zamanlama ve endikasyon uygundur.",
+        "E": "YANLIS — KB hedefteyken ek vazodilatör gereksizdir; dihidropiridin refleks taşikardiyi artırır. Kalsiyum kanal blokeri, alfa blokaja rağmen KB kontrolsüz kalırsa eklenir."
+      },
+      "etiketler": ["preoperatif hazırlık", "alfa blokaj", "beta blokaj", "doksazosin", "refleks taşikardi"],
+      "zorluk": "orta",
+      "kaynak": "Endocrine Society 2014 feokromositoma ve paraganglioma kılavuzu (Lenders ve ark.)"
+    },
+    {
+      "id": "s6",
+      "metin": "29 yaşında kadın hasta, ani başlayan çarpıntı, baş ağrısı ve terleme ile acil servise başvuruyor. KB 182/108 mmHg, nabız 142/dk (sinüs taşikardisi), SpO2 %97. Taşikardi için intravenöz propranolol uygulanıyor. 15 dakika sonra KB 252/140 mmHg'ye yükseliyor, dispne ve bilateral raller gelişiyor; akciğer grafisinde akut pulmoner ödem saptanıyor. Sonraki incelemelerde plazma normetanefrin ve metanefrini normal üst sınırın 8-10 katı bulunuyor ve 5 cm sol adrenal kitle saptanıyor.\n\nPropranolol sonrası gelişen tablonun temel mekanizması hangisidir?",
+      "secenekler": {
+        "A": "Propranololün tümör hücresinden doğrudan katekolamin salgılatması",
+        "B": "β2 aracılı vazodilatasyonun ortadan kalkmasıyla karşılanmayan α1 vazokonstriksiyonu",
+        "C": "β1 blokajına bağlı renin salınımı artışı ve anjiyotensin II aracılı vazokonstriksiyon",
+        "D": "Presinaptik α2 reseptör blokajıyla sinir uçlarından norepinefrin salınımının artması",
+        "E": "Propranololün katekolamin yıkımını (MAO ve COMT) inhibe etmesi"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Dolaşımdaki yüksek katekolamin, iskelet kası damarlarında β2 aracılı vazodilatasyonla kısmen dengelenir. Non-selektif beta blokaj bu dengeyi kaldırır; karşılanmayan α1 uyarısı ağır vazokonstriksiyon, ard yük artışı ve pulmoner ödem yapar.",
+      "aciklama_detay": "Feokromositomada epinefrin ve norepinefrin hem α1 (vazokonstriksiyon) hem β2 (vazodilatasyon) reseptörlerini uyarır. Non-selektif beta bloker β2 dengesini ortadan kaldırınca α1 etkisi karşılıksız kalır: sistemik vasküler direnç ani yükselir, katekolaminlerle zaten yüklenmiş sol ventrikülde akut ard yük artışı pulmoner ödeme yol açar. Beta blokajla β1 aracılı inotropinin azalması da tabloya katkıda bulunur. Bu nedenle bilinen ya da şüphelenilen feokromositomada beta bloker yalnızca yeterli alfa blokajı sağlandıktan sonra verilir.\n\nKlinik inci: Katekolamin fırtınası şüphesi olan hastada (paroksismal hipertansiyon + taşikardi + terleme) hız kontrolü için ilk refleks beta bloker olmamalıdır. Beta bloker, glukokortikoid, metoklopramid ve tiramin içeren gıdalar feokromositoma krizini tetikleyebilen başlıca etkenlerdendir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Beta blokerlerin tümörden doğrudan salgı uyardığına dair mekanizma yoktur; kriz reseptör düzeyindeki dengesizlikten kaynaklanır. (Metoklopramid ve glukokortikoidler ise salgıyı tetikleyebilir.)",
+        "B": "DOGRU — β2 vazodilatasyonunun kaybı ile karşılanmayan α1 vazokonstriksiyonu, hipertansif kriz ve akut pulmoner ödemin temel mekanizmasıdır.",
+        "C": "YANLIS — Beta blokaj renin salınımını azaltır, artırmaz.",
+        "D": "YANLIS — Presinaptik α2 blokajı fenoksibenzamin gibi non-selektif alfa blokerlerin özelliğidir; propranololün α reseptör etkisi yoktur.",
+        "E": "YANLIS — Propranolol MAO veya COMT enzimlerini inhibe etmez; MAO inhibitörleri ayrı bir tetikleyici ilaç grubudur."
+      },
+      "etiketler": ["karşılanmayan alfa uyarısı", "beta bloker", "feokromositoma krizi", "pulmoner ödem"],
+      "zorluk": "kolay",
+      "kaynak": "Konu anlatımı (MediSea premium) ve Endocrine Society 2014 PPGL kılavuzu"
+    },
+    {
+      "id": "s7",
+      "metin": "38 yaşında erkek hasta, 5 cm sol adrenal feokromositoma tanısıyla cerrahi öncesi hazırlık için yatırılmış; doksazosin 2 gün önce 2 mg/gün dozunda başlanmış. Vizitte yapılan derin abdominal palpasyondan birkaç dakika sonra şiddetli baş ağrısı, terleme ve çarpıntı gelişiyor.\n\nBulgular:\nKB 238/128 mmHg, nabız 118/dk (sinüs taşikardisi)\nAkciğer sesleri doğal, SpO2 %97\nNörolojik muayene normal, EKG'de iskemik değişiklik yok\n\nBu hastada en uygun acil farmakolojik tedavi hangisidir?",
+      "secenekler": {
+        "A": "İntravenöz fentolamin bolusu",
+        "B": "İntravenöz metoprolol bolusu",
+        "C": "İntravenöz furosemid",
+        "D": "Oral klonidin yüklemesi",
+        "E": "Oral kaptopril"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Katekolamin kaynaklı hipertansif krizde kısa etkili, titre edilebilir bir alfa blokerle (fentolamin) ya da nitroprussid/nikardipin gibi hızlı etkili vazodilatörlerle tedavi edilir.",
+      "aciklama_detay": "Tümör manipülasyonuyla (palpasyon, anestezi indüksiyonu, cerrahi) tetiklenen katekolamin salınımı, henüz yeterli olmayan alfa blokaj zemininde hipertansif krize yol açmıştır. Fentolamin kısa etkili, non-selektif, yarışmalı bir alfa blokerdir; 1 mg test dozunun ardından 2-5 mg IV bolus halinde tekrarlanabilir ya da infüzyon olarak verilebilir. Alternatifler sodyum nitroprussid ve nikardipin infüzyonudur. Taşikardi, ancak alfa blokaj sağlandıktan sonra kısa etkili esmolol ile kontrol edilir.\n\nKlinik inci: Labetalol IV kullanımda β etkisi baskın olduğundan feokromositoma krizinde tek başına tercih edilmez. Feokromositoma hastası kronik olarak hacim eksiktir; diüretik hem etkisizdir hem de alfa blokaj sonrası hipotansiyonu ağırlaştırır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Fentolamin kısa etkili ve titre edilebilir alfa blokajla doğrudan patofizyolojiye yöneliktir; nitroprussid ve nikardipin eşdeğer alternatiflerdir.",
+        "B": "YANLIS — Alfa blokaj tamamlanmamışken beta bloker, karşılanmayan α1 uyarısıyla krizi ağırlaştırabilir.",
+        "C": "YANLIS — Hasta volüm eksiğindedir ve pulmoner ödem yoktur; diürez KB'yi kontrol etmez, sonrasında hipotansiyonu derinleştirir.",
+        "D": "YANLIS — Klonidin santral sempatik salınımı azaltır, tümörün otonom salgısını etkilemez; oral etkisi de acil için yavaştır.",
+        "E": "YANLIS — Oral ACE inhibitörünün etkisi yavaş ve öngörülemezdir; katekolamin aracılı vazokonstriksiyonu hedeflemez."
+      },
+      "etiketler": ["hipertansif kriz", "fentolamin", "nitroprussid", "tümör manipülasyonu", "acil yönetim"],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium) ve Endocrine Society 2014 PPGL kılavuzu"
+    },
+    {
+      "id": "s8",
+      "metin": "31 yaşında erkek hasta, sürekli hipertansiyon ve kilo kaybı nedeniyle incelenirken retroperitonda, sol renal hilus düzeyinde 6.5 cm ekstraadrenal paragangliyoma saptanıyor. Germline testte SDHB geninde patojenik varyant bulunuyor.\n\nTetkikler:\nPlazma normetanefrin: normal üst sınırın 6 katı\nPlazma metanefrin: normal\nPlazma 3-metoksitiramin: normal üst sınırın 4 katı\n\nCerrahi öncesinde metastatik ve multifokal hastalığı taramak için tercih edilecek fonksiyonel görüntüleme yöntemi hangisidir?",
+      "secenekler": {
+        "A": "123I-MIBG sintigrafisi ve SPECT/BT",
+        "B": "18F-FDOPA PET/BT",
+        "C": "18F-FDG PET/BT",
+        "D": "111In-pentetreotid (Oktreoskan) SPECT",
+        "E": "68Ga-DOTATATE PET/BT"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "SDHx ilişkili PPGL somatostatin reseptör tip 2'yi yoğun eksprese eder; metastatik ve multifokal hastalığın saptanmasında en duyarlı yöntem 68Ga-DOTA-somatostatin analoğu PET/BT'dir.",
+      "aciklama_detay": "EANM/SNMMI 2019 PPGL görüntüleme kılavuzu, SDHx taşıyıcılarında ve metastatik PPGL'de birinci tercih olarak 68Ga-DOTA-SSA PET/BT'yi (DOTATATE, DOTATOC, DOTANOC) önerir; lezyon bazlı duyarlılığı bu grupta %90'ın üzerindedir. 18F-FDG PET/BT, SDHB tümörlerinde süksinat birikimine bağlı yalancı hipoksi ve Warburg benzeri glikolitik fenotip nedeniyle yüksek tutulum gösterir ve güçlü bir ikinci seçenektir; ancak 68Ga-SSA'dan daha az lezyon gösterir. 18F-FDOPA sporadik feokromositoma, baş-boyun dışı küme 2 (RET, NF1, MAX) ve VHL tümörlerinde tercih edilir. 123I-MIBG'nin SDHB ilişkili, dediferansiye tümörlerde duyarlılığı düşüktür; günümüzde temel rolü 131I-MIBG tedavisine uygunluğu belirlemektir.\n\nKlinik inci: SDHB taşıyıcılığı, ekstraadrenal yerleşim, >5 cm boyut ve 3-MT yüksekliği metastaz riskini artıran bağımsız özelliklerdir; bu hastada dördü birden var. SSA PET pozitifliği ileride peptid reseptör radyonüklid tedavisi (PRRT) seçeneğini de belirler.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — MIBG'nin SDHB ilişkili ve metastatik PPGL'de duyarlılığı düşüktür; evreleme için değil, 131I-MIBG tedavi uygunluğu için kullanılır.",
+        "B": "YANLIS — FDOPA sporadik ve küme 2 tümörlerde en iyi yöntemdir; SDHx ilişkili metastatik hastalıkta 68Ga-SSA PET'ten daha az lezyon gösterir.",
+        "C": "YANLIS — FDG SDHB tümörlerinde iyi tutulum gösterir ve kabul edilen ikinci seçenektir, fakat 68Ga-SSA PET daha duyarlıdır.",
+        "D": "YANLIS — SPECT tabanlı pentetreotid sintigrafisi, PET tabanlı 68Ga-SSA görüntülemeye göre belirgin daha düşük çözünürlük ve duyarlılığa sahiptir.",
+        "E": "DOGRU — SDHx taşıyıcılarında ve metastatik PPGL'de birinci tercih 68Ga-DOTA-SSA PET/BT'dir."
+      },
+      "etiketler": ["SDHB", "fonksiyonel görüntüleme", "68Ga-DOTATATE", "metastatik PPGL", "paragangliyoma"],
+      "zorluk": "orta",
+      "kaynak": "EANM/SNMMI 2019 PPGL görüntüleme kılavuzu"
+    },
+    {
+      "id": "s9",
+      "metin": "47 yaşında kadın hasta, 6 cm sol adrenal feokromositoma nedeniyle 14 günlük doksazosin ve metoprolol hazırlığının ardından laparoskopik sol adrenalektomi geçiriyor. Operasyon komplikasyonsuz. Postoperatif 3. saatte hemşire hastanın uykuya meyilli, terli ve huzursuz olduğunu bildiriyor. Tip 2 diyabet öyküsü yok; perioperatif insülin verilmemiş, postoperatif sıvı olarak %0.9 NaCl alıyor.\n\nBulgular:\nKB 104/62 mmHg, nabız 64/dk, ateş 36.8 °C\nKapiller kan glukozu: 38 mg/dL\n\nBu tablonun en olası mekanizması ve uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kontralateral adrenal baskılanmasına bağlı akut adrenal yetmezlik; yalnızca IV hidrokortizon",
+        "B": "Alfa blokerin uzamış etkisine bağlı vazodilatasyon; vazopressör infüzyonu",
+        "C": "Katekolaminin insülin salgısı üzerindeki α2 baskısının kalkmasıyla rebound hiperinsülinemi; IV dekstroz ve sık glukoz izlemi",
+        "D": "Tümörün salgıladığı IGF-2'ye bağlı hipoglisemi; glukagon infüzyonu",
+        "E": "Postoperatif sepsise bağlı hipoglisemi; geniş spektrumlu antibiyotik"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Katekolaminler β hücresindeki α2 reseptörleri üzerinden insülin salgısını baskılar ve glikojenolizi artırır. Tümör çıkarılınca bu baskı birden kalkar, rebound hiperinsülinemi ile ilk saatlerde hipoglisemi gelişir.",
+      "aciklama_detay": "Postoperatif hipoglisemi feokromositoma cerrahisinden sonra %4-43 oranında bildirilir ve genellikle ilk 24-48 saatte, çoğu zaman ilk birkaç saatte ortaya çıkar. Kronik katekolamin fazlalığı α2 aracılı insülin baskısı ve β aracılı glikojenoliz/glukoneogenez ile göreli hiperglisemi yaratır; tümörün çıkarılmasıyla insülin salgısı rebound yapar. Risk etkenleri büyük tümör, yüksek preoperatif metanefrin düzeyi ve uzun operasyon süresidir. Beta blokerler hipogliseminin adrenerjik uyarı belirtilerini (taşikardi) maskeleyebilir; bu hastada nabzın 64/dk olması bununla uyumludur. Yaklaşım: IV dekstroz bolusu, ardından dekstrozlu idame sıvısı ve ilk 24-48 saat sık glukoz izlemi.\n\nKlinik inci: Postoperatif sıvı rejiminde dekstroz bulunmaması bu komplikasyonun sık görülen kolaylaştırıcısıdır. Tek taraflı adrenalektomide kontralateral adrenal (Cushing komponenti yoksa) normal çalışır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tek taraflı feokromositoma rezeksiyonunda kontralateral adrenal baskılanmaz (tümör kortizol salgılamıyorsa). Adrenal yetmezlik hipotansiyonla birlikte düşünülür ama glukozu 38 mg/dL'ye indiren tabloyu açıklamaz; asıl tedavi dekstrozdur.",
+        "B": "YANLIS — KB hafif düşük ancak şok yok; hipoglisemi ve bilinç değişikliğini vazodilatasyon açıklamaz.",
+        "C": "DOGRU — Rebound hiperinsülinemi feokromositoma rezeksiyonu sonrası tipik bir erken komplikasyondur; IV dekstroz ve sık izlem gerekir.",
+        "D": "YANLIS — IGF-2 aracılı (non-adacık hücreli tümör) hipoglisemi büyük mezenkimal tümörlerde görülür; tümör zaten çıkarılmıştır.",
+        "E": "YANLIS — Ateş, taşikardi ve enfeksiyon bulgusu yok; postoperatif 3. saatte sepsis beklenmez."
+      },
+      "etiketler": ["postoperatif hipoglisemi", "rebound hiperinsülinemi", "adrenalektomi", "postoperatif izlem"],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s10",
+      "metin": "49 yaşında erkek hasta, 3.5 cm sol adrenal feokromositoma nedeniyle laparoskopik adrenalektomi geçirmiş. Germline gen paneli negatif; patolojide kapsül ya da damar invazyonu yok, cerrahi sınırlar negatif. Postoperatif 6. haftada plazma serbest metanefrin ve normetanefrin normal, KB antihipertansifsiz 126/80 mmHg.\n\nBu hastanın uzun dönem izlemi için en uygun plan hangisidir?",
+      "secenekler": {
+        "A": "Biyokimyasal kür doğrulandığı için rutin izlem gerekmez",
+        "B": "Ömür boyu yıllık 68Ga-DOTATATE PET/BT",
+        "C": "İlk 5 yıl 6 ayda bir kontrastlı abdomen BT, sonra izlemin sonlandırılması",
+        "D": "En az 10 yıl yıllık plazma veya idrar metanefrin ölçümü ve KB izlemi",
+        "E": "Yalnızca atak tarzı semptom tekrarlarsa metanefrin ölçümü"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Benign görünen, tam rezeke edilmiş sporadik feokromositomada da nüks ve metastaz yıllar sonra gelişebilir; tüm hastalar en az 10 yıl yıllık biyokimyasal izlemde tutulur, yüksek riskliler ömür boyu.",
+      "aciklama_detay": "Feokromositomada malignite histolojiyle güvenilir biçimde öngörülemez; tanım metastaz (kromafin dokunun normalde bulunmadığı bölgede tümör) varlığına dayanır. ESE 2016 izlem kılavuzu, opere edilen tüm PPGL hastalarında en az 10 yıl yıllık plazma veya idrar metanefrin ölçümü önerir; genç yaş, germline mutasyon, büyük tümör ve/veya paragangliyoma gibi yüksek riskli durumlarda ömür boyu izlem önerilir. Endocrine Society 2014 kılavuzu da yıllık biyokimyasal testle ömür boyu izlem önerir. Rutin görüntüleme, biyokimya normal olduğu sürece gerekmez; biyokimyasal yükselme olursa ya da başlangıçta biyokimyasal olarak sessiz tümörde görüntüleme devreye girer.\n\nKlinik inci: Kür değerlendirmesi için ilk ölçüm operasyondan 2-6 hafta sonra yapılır; daha erken ölçüm cerrahi stresin katekolamin etkisiyle yanıltabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Postoperatif normal metanefrin yalnızca o anki kürü gösterir; nüks ve metastaz onlarca yıl sonra ortaya çıkabilir.",
+        "B": "YANLIS — Biyokimyasal olarak aktif tümörde metanefrin yeterince duyarlıdır; ömür boyu yıllık PET gereksiz radyasyon ve maliyettir.",
+        "C": "YANLIS — Sık BT gereksiz radyasyon demektir ve 5 yılda sonlandırmak geç nüksleri kaçırır.",
+        "D": "DOGRU — Tüm hastalar için en az 10 yıl yıllık biyokimyasal izlem; genç, mutasyon taşıyan, büyük tümörlü ya da paragangliyomalı hastalarda ömür boyu.",
+        "E": "YANLIS — Nüks ve metastazlar uzun süre asemptomatik kalabilir; semptoma dayalı izlem yetersizdir."
+      },
+      "etiketler": ["postoperatif izlem", "nüks", "metanefrin", "ESE 2016", "uzun dönem takip"],
+      "zorluk": "kolay",
+      "kaynak": "ESE 2016 opere PPGL uzun dönem izlem kılavuzu (Plouin ve ark.); Endocrine Society 2014 PPGL kılavuzu"
+    },
+    {
+      "id": "s11",
+      "metin": "61 yaşında kadın hasta, paroksismal çarpıntı atakları nedeniyle incelenirken plazma metanefrini normal üst sınırın 7 katı, normetanefrini 3 katı bulunuyor. BT'de 3 cm tek taraflı sağ adrenal kitle (kontrastsız 34 HU) saptanıyor; kontralateral adrenal ve ekstraadrenal alanlar normal. Ailede feokromositoma, paragangliyoma, medüller tiroid kanseri veya böbrek tümörü öyküsü yok. Fizik muayenede nörofibrom, kafe-o-le lekesi ya da tiroid nodülü yok. Laparoskopik adrenalektomi planlanıyor.\n\nBu hasta için germline genetik değerlendirme konusunda en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "45 yaşın üzerinde, tek taraflı ve sendromik bulgusuz olduğu için genetik test gerekmez",
+        "B": "Yaş ve aile öyküsünden bağımsız germline gen paneli önerilir",
+        "C": "Adrenerjik fenotip nedeniyle yalnızca RET geni incelenmelidir",
+        "D": "Yalnızca tümör dokusunda somatik mutasyon analizi yeterlidir",
+        "E": "Önce birinci derece akrabalara metanefrin taraması yapılır; negatifse test gerekmez"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "PPGL'lerin yaklaşık üçte birinde germline varyant vardır ve aile öyküsü ya da genç yaş olmadan da görülebilir; bu yüzden tüm PPGL hastalarına germline test önerilir. Tercih çoklu gen panelidir.",
+      "aciklama_detay": "Endocrine Society 2014 kılavuzu tüm PPGL hastalarında germline testin ortak karar süreciyle değerlendirilmesini önermiştir; güncel uygulamada bu öneri tüm hastalara test biçiminde yerleşmiştir. Gerekçe: aile öyküsü olmayan, görünüşte sporadik hastalarda da yaklaşık %10-15 oranında germline varyant saptanır; de novo mutasyon, düşük penetrans (SDHB, TMEM127, MAX) ve SDHD'de maternal imprinting aile öyküsünü sessiz bırakabilir. Yeni nesil dizileme panelleri tek gen sıralı testlerinden daha hızlı ve ucuzdur. Pozitif sonuç, kontralateral ve ekstraadrenal tümör riski, izlem sıklığı, ilişkili neoplaziler ve akrabaların kaskad taraması açısından doğrudan yönetimi değiştirir.\n\nKlinik inci: Adrenerjik fenotip (belirgin metanefrin yüksekliği) küme 2'yi (RET, NF1, TMEM127, MAX) düşündürür; fenotip panel yorumunu yönlendirir ama paneli daraltmak için yeterli değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Eski yaşa ve sendroma dayalı algoritmalar ileri yaştaki hastalarda da görülen germline varyantların önemli bir kısmını kaçırır; güncel yaklaşım herkese testtir.",
+        "B": "DOGRU — Görünüşte sporadik ileri yaş hastada bile germline varyant olasılığı kayda değerdir; çoklu gen paneli önerilir.",
+        "C": "YANLIS — Adrenerjik fenotip RET dışında NF1, TMEM127 ve MAX ile de görülür; tek gen testi bu varyantları kaçırır.",
+        "D": "YANLIS — Somatik analiz tümörün biyolojisini açıklar ama hastanın ve akrabalarının kalıtsal riskini belirlemez; germline testin yerini tutmaz.",
+        "E": "YANLIS — Akraba taraması ancak hastada patojenik varyant saptandıktan sonra hedefli (kaskad) biçimde yapılır; akrabaların biyokimyasının negatif olması taşıyıcılığı dışlamaz."
+      },
+      "etiketler": ["germline genetik test", "çoklu gen paneli", "sporadik feokromositoma", "küme 2", "adrenerjik fenotip"],
+      "zorluk": "orta",
+      "kaynak": "Endocrine Society 2014 feokromositoma ve paraganglioma kılavuzu (Lenders ve ark.)"
+    },
+    {
+      "id": "s12",
+      "metin": "26 yaşında erkek hasta, 3 yıl önce retinal hemanjiyoblastom nedeniyle lazer tedavisi görmüş. Babası 40 yaşında böbrek kanseri nedeniyle opere edilmiş. Rutin taramada saptanan adrenal kitleler nedeniyle başvuruyor. KB 146/94 mmHg.\n\nTetkikler:\nPlazma normetanefrin: normal üst sınırın 4 katı\nPlazma metanefrin: normal\nMRG: Sağ adrenalde 2.6 cm, sol adrenalde 1.8 cm kitle; her ikisi T2'de belirgin hiperintens\nGermline test: VHL geninde patojenik varyant\n\nAlfa blokaj hazırlığının ardından en uygun cerrahi yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Laparoskopik bilateral total adrenalektomi ve ömür boyu glukokortikoid + mineralokortikoid replasmanı",
+        "B": "Sağ total adrenalektomi; sol lezyon için 131I-MIBG tedavisi",
+        "C": "Açık transabdominal bilateral total adrenalektomi",
+        "D": "Cerrahi yerine uzun süreli doksazosin ve metirozin ile medikal izlem",
+        "E": "Bilateral korteks koruyucu (parsiyel) adrenalektomi, minimal invaziv yaklaşımla"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "VHL'de tümörler genellikle benign, bilateral ve metakrondur. Korteks koruyucu adrenalektomi hastaların çoğunda steroid bağımlılığını önler; nüks oranı düşük ve yeniden cerrahi yapılabilir.",
+      "aciklama_detay": "VHL (küme 1, yalancı hipoksi) feokromositomaları noradrenerjik fenotip gösterir (PNMT ekspresyonu yok): normetanefrin yüksek, metanefrin normal. Bilateral ya da ömür boyu kontralateral tümör riski yüksek olan herediter sendromlarda (VHL, MEN2) kalıcı adrenal yetmezlik ve Addison krizi riskinden kaçınmak için korteks koruyucu (parsiyel) adrenalektomi önerilir. Serilerde hastaların büyük bölümü steroid replasmanı gerektirmez; kalan adrenal dokuda nüks oranı düşüktür (yaklaşık %10'un altında) ve metastaz nadirdir, nüks gelişirse yeniden cerrahi yapılabilir. Laparoskopik ya da posterior retroperitoneoskopik yaklaşım tercih edilir.\n\nKlinik inci: VHL taşıyıcılarında yıllık metanefrin taraması genellikle 5 yaş civarında başlar; retinal, santral sinir sistemi, böbrek ve pankreas lezyonları da düzenli izlenir. Fonksiyonel görüntülemede küme 2 ve VHL tümörleri için 18F-FDOPA PET/BT duyarlıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bilateral total adrenalektomi ömür boyu steroid bağımlılığı ve adrenal kriz riski yaratır; herediter bilateral feokromositomada ilk tercih değildir.",
+        "B": "YANLIS — Küçük, cerrahi olarak çıkarılabilir benign lezyonda radyonüklid tedavinin yeri yoktur; 131I-MIBG metastatik/rezeke edilemeyen hastalık içindir.",
+        "C": "YANLIS — Küçük ve invazyon bulgusu olmayan tümörlerde minimal invaziv cerrahi standarttır; açık yaklaşım ve total rezeksiyon gereksiz morbidite getirir.",
+        "D": "YANLIS — Fonksiyonel feokromositomanın kesin tedavisi cerrahidir; uzun süreli medikal tedavi kriz ve kardiyovasküler olay riskini ortadan kaldırmaz.",
+        "E": "DOGRU — Herediter bilateral feokromositomada korteks koruyucu adrenalektomi, steroid bağımsızlığını korurken tümörleri tedavi eder."
+      },
+      "etiketler": ["VHL", "bilateral feokromositoma", "korteks koruyucu adrenalektomi", "noradrenerjik fenotip", "cerrahi"],
+      "zorluk": "zor",
+      "kaynak": "Konu anlatımı (MediSea premium) ve Endocrine Society 2014 PPGL kılavuzu"
+    },
+    {
+      "id": "s13",
+      "metin": "31 yaşında kadın hasta, 17 haftalık ilk gebeliğinde yeni başlayan, atak tarzı ağır hipertansiyon, çarpıntı ve baş ağrısı nedeniyle yatırılıyor. Proteinüri yok, trombosit ve karaciğer enzimleri normal. Gebelik öncesi KB ölçümleri normalmiş.\n\nTetkikler:\nPlazma serbest normetanefrin: normal üst sınırın 9 katı\nPlazma serbest metanefrin: normal üst sınırın 5 katı\nObstetrik USG: Gebelik haftasıyla uyumlu canlı fetüs\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kontrastsız MRG, alfa blokaj ve ikinci trimesterde laparoskopik adrenalektomi",
+        "B": "Maternal risk nedeniyle gebeliğin hemen sonlandırılması, ardından tümör cerrahisi",
+        "C": "Kontrastlı abdomen BT ile lokalizasyon ve beta bloker ile tedaviye başlanması",
+        "D": "Yalnızca labetalol ve metildopa ile doğuma kadar izlem, ardından vajinal doğum",
+        "E": "123I-MIBG sintigrafisi ile lokalizasyon ve doğum sonrasına kadar cerrahinin ertelenmesi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Gebelikte feokromositoma, gebeliğe bağlı hipertansiyonla karışan ve anne-fetüs ölüm riski yüksek bir durumdur. Lokalizasyon radyasyonsuz MRG ile yapılır; alfa blokaj sonrası, tercihen 24. haftadan önce laparoskopik adrenalektomi uygulanır.",
+      "aciklama_detay": "20. haftadan önce başlayan, atak tarzı, proteinürisiz hipertansiyon preeklampsiden çok feokromositomayı düşündürür; biyokimyasal tanı plazma serbest metanefrinleriyle konur (gebelik bu testleri anlamlı etkilemez). Görüntüleme gadolinyumsuz MRG ile yapılır; iyonlaştırıcı radyasyon ve radyonüklid çalışmalar kaçınılır. Tedavi gebe olmayanla aynı mantıkla alfa blokajla (doksazosin ya da fenoksibenzamin), ardından gerekirse beta blokajla sürer. Tanı ilk iki trimesterde konursa, uterus büyüklüğü cerrahiyi zorlaştırmadan önce (genellikle 24. haftadan önce) laparoskopik adrenalektomi önerilir. Üçüncü trimesterde tanı konursa medikal tedavi sürdürülür; doğum sezaryenle, isteğe bağlı olarak eşzamanlı ya da sonrasında adrenalektomi ile planlanır; vajinal doğum ve travay katekolamin krizine yol açabilir.\n\nKlinik inci: Plasentadaki COMT ve MAO yıkımı fetüse geçen katekolamini sınırlar; fetal risk asıl olarak maternal hipertansif kriz ve uteroplasental hipoperfüzyondan kaynaklanır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Radyasyonsuz lokalizasyon, alfa blokajla hazırlık ve ikinci trimesterde minimal invaziv cerrahi, anne ve fetüs için en güvenli yoldur.",
+        "B": "YANLIS — Uygun medikal hazırlıkla gebelik korunabilir; sonlandırma ilk tercih değildir ve kendisi de katekolamin krizini tetikleyebilir.",
+        "C": "YANLIS — Gebelikte iyonlaştırıcı radyasyondan kaçınılır; alfa blokaj olmadan beta bloker başlamak hipertansif krize yol açabilir.",
+        "D": "YANLIS — Labetalol yeterli alfa blokajı sağlamaz; tedavi edilmemiş feokromositomada vajinal doğum ve travay yüksek maternal-fetal mortaliteyle ilişkilidir.",
+        "E": "YANLIS — Radyonüklid çalışmalar gebelikte kontrendikedir; 17. haftada cerrahiyi doğum sonrasına ertelemek hastayı aylarca kriz riskine bırakır."
+      },
+      "etiketler": ["gebelikte feokromositoma", "MRG", "alfa blokaj", "cerrahi zamanlama", "ikinci trimester"],
+      "zorluk": "zor",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s14",
+      "metin": "64 yaşında erkek hasta, 45 paket-yıl sigara öyküsü, yeni tanı akciğer adenokarsinomu nedeniyle evreleniyor. PET/BT'de primer tümör dışında tek ek odak olarak sol adrenalde 3.8 cm, heterojen, FDG tutan kitle saptanıyor; kontrastsız dansite 32 HU. KB 150/90 mmHg, tek ilaçla tedavi ediliyor; atak tarzı yakınması yok. Onkoloji, tedavi planını değiştireceği için adrenal kitleden BT kılavuzluğunda biyopsi istiyor.\n\nBiyopsiden önce yapılması gereken en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "Ek tetkik gerekmeden biyopsinin hemen yapılması",
+        "B": "Yalnızca 1 mg deksametazon baskılama testi",
+        "C": "Metanefrin ölçümüyle feokromositomanın dışlanması",
+        "D": "Profilaktik beta bloker başlanarak biyopsinin yapılması",
+        "E": "Biyopsi yerine 123I-MIBG sintigrafisi ile tanı konulması"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Lipitten fakir (>10 HU) her adrenal kitlede, özellikle biyopsi ya da cerrahi düşünülüyorsa, feokromositoma biyokimyasal olarak dışlanmalıdır; tanınmamış feokromositomanın biyopsisi hipertansif kriz, kanama ve ölümle sonuçlanabilir.",
+      "aciklama_detay": "Kanser öyküsü olan hastada tek taraflı adrenal kitle metastaz olabilir; ancak FDG tutulumu ve yüksek dansite feokromositomada da görülür. Asemptomatik ve yalnızca hafif hipertansif olmak feokromositomayı dışlamaz (hastaların önemli bir kısmı normotansif ya da paroksizmsiz seyreder). ESE/ENSAT 2023 kılavuzu, adrenal biyopsinin yalnızca sonucu yönetimi değiştirecekse yapılmasını ve öncesinde feokromositomanın mutlaka biyokimyasal olarak dışlanmasını önerir. Metanefrin normalse biyopsi güvenle yapılabilir; yüksekse biyopsi yapılmaz, alfa blokajla hazırlanıp cerrahi planlanır.\n\nKlinik inci: Adrenal biyopsi adrenokortikal karsinom ile adenomu ayırt etmede yetersizdir; en sık endikasyonu, bilinen ekstraadrenal kanserli hastada metastazın doğrulanmasıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tanınmamış feokromositomada iğne biyopsisi katekolamin krizi, tümör içi kanama ve ölümle sonuçlanabilir.",
+        "B": "YANLIS — Otonom kortizol salgısı her insidentalomada aranır, ama biyopsi güvenliği açısından kritik test metanefrin ölçümüdür.",
+        "C": "DOGRU — Biyopsi öncesinde feokromositoma biyokimyasal olarak dışlanmalıdır; normal metanefrin biyopsiyi güvenli kılar.",
+        "D": "YANLIS — Beta bloker profilaksisi riski azaltmaz, alfa blokaj olmadan krizi ağırlaştırabilir; asıl gereken biyokimyasal dışlamadır.",
+        "E": "YANLIS — MIBG metastaz ile feokromositomayı ayırmada ilk yöntem değildir; biyokimyasal test daha basit ve daha duyarlıdır."
+      },
+      "etiketler": ["adrenal biyopsi", "adrenal metastaz", "feokromositoma dışlama", "metanefrin", "ESE/ENSAT 2023"],
+      "zorluk": "kolay",
+      "kaynak": "ESE/ENSAT 2023 adrenal insidentaloma kılavuzu"
+    },
+    {
+      "id": "s15",
+      "metin": "34 yaşında kadın hasta, boyunda fark ettiği nodül nedeniyle başvuruyor. Tiroid USG'de sağ lobda 2.2 cm hipoekoik nodül ve sağ santral bölgede şüpheli lenf nodu saptanıyor; ince iğne aspirasyonu medüller tiroid kanseri ile uyumlu. Annesi 38 yaşında 'tiroid kanseri' nedeniyle opere edilmiş.\n\nTetkikler:\nKalsitonin: 1250 pg/mL, CEA: 38 ng/mL\nGermline RET: kodon 634 patojenik varyant\nPlazma metanefrin: normal üst sınırın 6 katı; normetanefrin: 2 katı\nAdrenal MRG: Sağ adrenalde 3 cm kitle\nSerum kalsiyum ve PTH normal\n\nBu hastada tedavinin sıralaması konusunda en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Önce total tiroidektomi ve santral boyun diseksiyonu, sonra adrenalektomi",
+        "B": "Tek anestezide eşzamanlı tiroidektomi ve adrenalektomi, alfa blokaj olmadan",
+        "C": "Önce profilaktik bilateral total adrenalektomi, ardından tiroidektomi",
+        "D": "Alfa blokaj sonrası önce adrenalektomi, sonra tiroidektomi ve santral diseksiyon",
+        "E": "Önce vandetanib ile sistemik tedavi, cerrahi yanıt değerlendirmesinden sonra"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "MEN2'de feokromositoma varsa, boyun cerrahisinin anestezisi sırasında hipertansif kriz riskini ortadan kaldırmak için önce alfa blokaj ve adrenalektomi yapılır; tiroidektomi ikinci basamaktır.",
+      "aciklama_detay": "RET kodon 634 (ATA yüksek risk) MEN2A ile uyumludur: medüller tiroid kanseri, feokromositoma ve primer hiperparatiroidi. ATA 2015 MTC kılavuzu, MEN2'de tiroid ya da başka herhangi bir cerrahiden önce feokromositomanın biyokimyasal olarak aranmasını ve varsa önce feokromositomanın (uygun alfa blokajla) çıkarılmasını önerir. Tanınmamış ya da hazırlıksız feokromositoma anestezi indüksiyonunda ölümcül krize yol açabilir. MEN2 feokromositomaları PNMT eksprese ettiği için adrenerjik fenotip gösterir (metanefrin baskın). Tek taraflı tümörde tek taraflı adrenalektomi yapılır; kontralateral bezde tümör gelişme riski yüksek olduğundan korteks koruyucu yaklaşım da seçenektir ve kalan bez izlenir.\n\nKlinik inci: Kalsitonin ve CEA düzeyleri, lateral boyun ve uzak metastaz araştırmasının kapsamını belirler; ailedeki birinci derece akrabalara RET kaskad testi önerilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tedavi edilmemiş feokromositomayla tiroidektomi, anestezi ve cerrahi sırasında ölümcül hipertansif kriz riski taşır.",
+        "B": "YANLIS — Eşzamanlı cerrahi bazı merkezlerde yapılabilse de alfa blokaj olmadan hiçbir PPGL cerrahisi planlanmaz.",
+        "C": "YANLIS — Kontralateral adrenal normalken profilaktik bilateral total adrenalektomi ömür boyu steroid bağımlılığı getirir; önerilmez.",
+        "D": "DOGRU — Alfa blokaj ile hazırlık, önce adrenalektomi, ardından MTC cerrahisi; ATA 2015 önerisidir.",
+        "E": "YANLIS — Lokal ya da bölgesel MTC'nin tedavisi cerrahidir; tirozin kinaz inhibitörleri ilerleyici metastatik hastalık içindir."
+      },
+      "etiketler": ["MEN2A", "RET", "medüller tiroid kanseri", "cerrahi sıralama", "feokromositoma"],
+      "zorluk": "orta",
+      "kaynak": "ATA 2015 medüller tiroid kanseri kılavuzu"
     }
   ]
 }
