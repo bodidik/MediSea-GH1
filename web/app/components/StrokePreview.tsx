@@ -3,8 +3,14 @@
 // El yazısı çizimlerini SVG olarak basar. Vuruşlar panel GENİŞLİĞİNE göre
 // normalize saklandığı için (bkz. NotePanel), herhangi bir boyuta bire bir
 // ölçeklenir — küçük önizleme de tam boy da aynı veriden çıkar.
+//
+// Anahat, not defteri tuvaliyle AYNI fonksiyondan geliyor (`lib/murekkep`):
+// basınç inceltmesi ve fosforlu kalem kartta da görünür. Eskiden burada sabit
+// kalınlıklı düz çizgiler çiziliyordu — kartta gördüğün, yazdığın değildi.
 
-export type Stroke = { c: string; w: number; p: [number, number, number][] };
+import { cizimSirasi, FOSFOR_ALFA, vurusYolu, type Stroke } from "@/app/lib/murekkep";
+
+export type { Stroke };
 
 export default function StrokePreview({
   strokes,
@@ -24,18 +30,16 @@ export default function StrokePreview({
 }) {
   const W = width;
   let maxY = 0.4;
-  const paths: { d: string; c: string; w: number }[] = [];
+  const paths: { d: string; c: string; h: boolean }[] = [];
+  /* Kalınlık tuvaldeki panel genişliğine (~400px) göre yazıldı; önizleme
+     genişliğine oranla küçültülür. */
+  const olcek = strokeScale * (W / 400);
 
-  for (const s of strokes) {
+  for (const s of cizimSirasi(Array.isArray(strokes) ? strokes : [])) {
     if (!s?.p?.length) continue;
     for (const p of s.p) if (p[1] > maxY) maxY = p[1];
-    paths.push({
-      d: s.p
-        .map((p, i) => `${i ? "L" : "M"}${(p[0] * W).toFixed(1)} ${(p[1] * W).toFixed(1)}`)
-        .join(" "),
-      c: s.c || "#1E293B",
-      w: Math.max(0.4, (s.w || 3) * strokeScale * (W / 400)),
-    });
+    const d = vurusYolu({ ...s, c: s.c || "#1E293B", w: s.w || 3 }, W, olcek);
+    if (d) paths.push({ d, c: s.c || "#1E293B", h: !!s.h });
   }
 
   if (!paths.length) return null;
@@ -44,15 +48,7 @@ export default function StrokePreview({
   return (
     <svg viewBox={`0 0 ${W} ${H}`} className={className} aria-hidden preserveAspectRatio="xMidYMin meet">
       {paths.map((p, i) => (
-        <path
-          key={i}
-          d={p.d}
-          fill="none"
-          stroke={p.c}
-          strokeWidth={p.w}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
+        <path key={i} d={p.d} fill={p.c} fillOpacity={p.h ? FOSFOR_ALFA : 1} />
       ))}
     </svg>
   );

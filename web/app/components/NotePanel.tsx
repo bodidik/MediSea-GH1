@@ -26,19 +26,22 @@ import Link from "next/link";
 import { pageTitle, touchIndex } from "@/app/lib/study-index";
 import { bozukYedegiOku, degistiBildir, guvenliNesneOku, kurtarildiMi } from "@/app/lib/depo";
 import { sayfaKimligi, suankiSorgu } from "@/app/lib/reading-marks";
+import { cizimSirasi, noktaSil, vurusBas, type Pt, type Stroke } from "@/app/lib/murekkep";
+import NotOnizleme, { gorunenBolum } from "@/app/components/NotOnizleme";
 
-/** [x, y, basınç] — x ve y panel GENİŞLİĞİNE göre normalize (en-boy oranı korunur) */
-type Pt = [number, number, number];
-type Stroke = { c: string; w: number; p: Pt[] };
 type Mode = "text" | "draw";
 type Paper = "cizgili" | "kareli" | "bos";
+/** Çizim aracı. Kalemin silgi ucu hangi araç seçili olursa olsun siler. */
+type Arac = "kalem" | "fosfor" | "silgi";
+type SilgiTuru = "nokta" | "cizgi";
 
 const KEY = (p: string) => `medisea:notes:v1:${p}`;
 
 const WIDTH_KEY = "medisea:notew";
 const PAPER_KEY = "medisea:notepaper";
 
-const INKS = ["#1E293B", "#2563EB", "#DC2626", "#16A34A"];
+const INKS = ["#1E293B", "#2563EB", "#DC2626", "#16A34A", "#D97706", "#7C3AED"];
+const FOSFORLAR = ["#FACC15", "#4ADE80", "#F472B6", "#60A5FA"];
 
 /**
  * Renklerin ADI — dördünün de `title`ı "Renk"ti ve erişilebilir adları
@@ -51,8 +54,20 @@ const INK_ADI: Record<string, string> = {
   "#2563EB": "mavi",
   "#DC2626": "kırmızı",
   "#16A34A": "yeşil",
+  "#D97706": "turuncu",
+  "#7C3AED": "mor",
+  "#FACC15": "sarı",
+  "#4ADE80": "açık yeşil",
+  "#F472B6": "pembe",
+  "#60A5FA": "açık mavi",
 };
 const NIBS = [2, 4, 7];
+/** Geri alma geçmişinin tavanı (durum anlık görüntüsü sayısı). */
+const GECMIS_TAVAN = 60;
+/** Kalem bu kadar süre kıpırdamadan durursa vuruş düz çizgiye oturur (ms). */
+const DUZ_CIZGI_MS = 550;
+/** Nokta silgisinin yarıçapı (normalize, panel genişliğine göre). */
+const SILGI_R = 0.022;
 
 /** Kâğıt çizgi aralığı (px). Kareli kip aynı aralığı iki eksende kullanır. */
 const ARALIK = 28;
@@ -101,7 +116,14 @@ export default function NotePanel() {
 
   const [text, setText] = useState("");
   const [strokes, setStrokes] = useState<Stroke[]>([]);
-  const [redo, setRedo] = useState<Stroke[]>([]);
+  /* GEÇMİŞ DURUM ANLIK GÖRÜNTÜLERİYLE tutulur. Eskiden "geri al" yalnızca
+     SON VURUŞU çıkarıyordu: silgiyle yapılan silme geri alınamıyordu, üstelik
+     silmeden sonra basılan "geri al" silinenle ilgisiz son vuruşu da
+     götürüyordu. Her kalem/silgi jesti artık tek bir geçmiş adımı. */
+  const [gecmis, setGecmis] = useState<Stroke[][]>([]);
+  const [ileri, setIleri] = useState<Stroke[][]>([]);
+  /** Yazı kipinde biçimlenmiş görünüm (onay kutuları tıklanabilir). */
+  const [onizleme, setOnizleme] = useState(false);
   /* Pano KURTARMA yolu: depo dolduğunda kullanıcıya "yazıyı kopyala"
      deniyor. Kopyalama sessizce başarısız olursa not gerçekten
      kayboluyordu — sonuç artık söyleniyor. */
@@ -113,8 +135,11 @@ export default function NotePanel() {
   }, [panoOk]);
 
   const [ink, setInk] = useState(INKS[0]);
+  const [fosforRenk, setFosforRenk] = useState(FOSFORLAR[0]);
   const [nib, setNib] = useState(NIBS[1]);
-  const [erasing, setErasing] = useState(false);
+  const [arac, setArac] = useState<Arac>("kalem");
+  const [silgiTuru, setSilgiTuru] = useState<SilgiTuru>("nokta");
+  const erasing = arac === "silgi";
   const [hasPen, setHasPen] = useState(false);
   const [dirty, setDirty] = useState(false);
   /** Depo dolu vb. nedenle son kaydetme başarısız oldu mu */
@@ -132,9 +157,14 @@ export default function NotePanel() {
   /** Kalemin son temas anı — avuç, kalem kalkar kalkmaz kaydırmasın diye */
   const sonKalem = useRef(0);
   const strokesRef = useRef<Stroke[]>([]);
-  const redoRef = useRef<Stroke[]>([]);
   strokesRef.current = strokes;
-  redoRef.current = redo;
+  /** Silgi jesti başlamadan önceki durum — jest bitince TEK geçmiş adımı olur. */
+  const jestOncesi = useRef<Stroke[] | null>(null);
+  /** Bitmiş vuruşların önbelleği: kalem hareket ederken yalnızca yeni vuruş çizilir. */
+  const tabanRef = useRef<HTMLCanvasElement | null>(null);
+  /** Düz çizgi zamanlayıcısı + son hareket noktası. */
+  const duzZaman = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   /** Not anahtarinin yol yarisi: sorgusuz sayfalarda pathname ile AYNI. */
   const sayfa = sayfaKimligi(pathname, sorgu);
@@ -233,7 +263,8 @@ export default function NotePanel() {
     setStrokes(Array.isArray(doc?.strokes) ? doc.strokes : []);
     setKurtarildi(kurtarildiMi(anahtar));
     setOkunanAnahtar(anahtar);
-    setRedo([]);
+    setGecmis([]);
+    setIleri([]);
     setDirty(false);
   }, [pathname, sayfa]);
 
@@ -386,30 +417,15 @@ export default function NotePanel() {
     return low;
   }, []);
 
-  const paintStroke = (ctx: CanvasRenderingContext2D, s: Stroke, W: number) => {
-    ctx.strokeStyle = s.c;
-    ctx.lineCap = "round";
-    ctx.lineJoin = "round";
-
-    if (s.p.length === 1) {
-      ctx.beginPath();
-      ctx.arc(s.p[0][0] * W, s.p[0][1] * W, (s.w * s.p[0][2]) / 2 + 0.4, 0, Math.PI * 2);
-      ctx.fillStyle = s.c;
-      ctx.fill();
-      return;
-    }
-    for (let i = 1; i < s.p.length; i++) {
-      const a = s.p[i - 1];
-      const b = s.p[i];
-      ctx.beginPath();
-      // basınç çizgi kalınlığına yansır — kalemsiz cihazda sabit kalır
-      ctx.lineWidth = s.w * (0.4 + 0.6 * ((a[2] + b[2]) / 2));
-      ctx.moveTo(a[0] * W, a[1] * W);
-      ctx.lineTo(b[0] * W, b[1] * W);
-      ctx.stroke();
-    }
-  };
-
+  /**
+   * Bitmiş vuruşları ÖNBELLEK tuvaline basar, sonra görünür tuvale kopyalar.
+   *
+   * Vuruş artık doldurulmuş bir eğri anahattı (`lib/murekkep`); kalem her
+   * kıpırdadığında bütün çizimi yeniden hesaplamak uzun notlarda tablette
+   * gecikme demek. Önbellek yalnızca vuruş listesi değişince yenilenir,
+   * hareket sırasında görünür tuvale `drawImage` ile kopyalanıp üstüne tek
+   * bir canlı vuruş çizilir.
+   */
   const redraw = useCallback(() => {
     const cv = canvasRef.current;
     if (!cv) return;
@@ -418,16 +434,42 @@ export default function NotePanel() {
     if (!W || !H) return;
 
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    if (cv.width !== Math.round(W * dpr) || cv.height !== Math.round(H * dpr)) {
-      cv.width = Math.round(W * dpr);
-      cv.height = Math.round(H * dpr);
+    const pw = Math.round(W * dpr);
+    const ph = Math.round(H * dpr);
+    if (cv.width !== pw || cv.height !== ph) {
+      cv.width = pw;
+      cv.height = ph;
     }
+    const taban = tabanRef.current ?? (tabanRef.current = document.createElement("canvas"));
+    taban.width = pw;
+    taban.height = ph;
+    const tctx = taban.getContext("2d");
     const ctx = cv.getContext("2d");
-    if (!ctx) return;
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    ctx.clearRect(0, 0, W, H);
-    for (const s of strokesRef.current) paintStroke(ctx, s, W);
+    if (!tctx || !ctx) return;
+    tctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    tctx.clearRect(0, 0, W, H);
+    for (const s of cizimSirasi(strokesRef.current)) vurusBas(tctx, s, W);
+
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, pw, ph);
+    ctx.drawImage(taban, 0, 0);
   }, []);
+
+  /** Önbelleği kopyala + canlı vuruşu üstüne çiz (kalem hareket ederken). */
+  const canliCiz = () => {
+    const cv = canvasRef.current;
+    const ctx = cv?.getContext("2d");
+    const taban = tabanRef.current;
+    const s = drawing.current;
+    if (!cv || !ctx) return;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    if (taban && taban.width === cv.width && taban.height === cv.height) ctx.drawImage(taban, 0, 0);
+    if (!s) return;
+    const dpr = cv.width / (cv.clientWidth || 1);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    vurusBas(ctx, s, cv.clientWidth);
+  };
 
   useEffect(() => {
     if (mode !== "draw" || !open) return;
@@ -436,6 +478,17 @@ export default function NotePanel() {
     if (canvasRef.current) ro.observe(canvasRef.current);
     return () => ro.disconnect();
   }, [mode, open, strokes, width, redraw]);
+
+  /* ── Geçmiş ──────────────────────────────────────────────────────────── */
+
+  /** Yeni durumu yaz; öncekini geri alma geçmişine koy. */
+  const commit = (onceki: Stroke[], sonraki: Stroke[]) => {
+    if (onceki === sonraki) return;
+    setStrokes(sonraki);
+    setGecmis((g) => [...g, onceki].slice(-GECMIS_TAVAN));
+    setIleri([]);
+    setDirty(true);
+  };
 
   /* ── Kalem / parmak girişi ───────────────────────────────────────────── */
 
@@ -452,13 +505,54 @@ export default function NotePanel() {
     ];
   };
 
+  /**
+   * Silgi hareketi — durumu doğrudan değiştirir, geçmiş adımı jest bitince
+   * (`onUp`) tek seferde yazılır. Çizgi silgisi değdiği vuruşun tamamını,
+   * nokta silgisi yalnızca değdiği kısmı siler (vuruş parçalara bölünür).
+   */
   const eraseAt = (pt: Pt) => {
-    const hit = strokesRef.current.findIndex((s) =>
-      s.p.some((p) => Math.hypot(p[0] - pt[0], p[1] - pt[1]) < 0.035)
-    );
-    if (hit === -1) return;
-    setStrokes((prev) => prev.filter((_, i) => i !== hit));
-    setDirty(true);
+    const cur = strokesRef.current;
+    let sonraki = cur;
+    if (silgiTuru === "nokta") {
+      sonraki = noktaSil(cur, pt, SILGI_R);
+    } else {
+      const hit = cur.findIndex((s) =>
+        s.p.some((p) => Math.hypot(p[0] - pt[0], p[1] - pt[1]) < 0.035)
+      );
+      if (hit !== -1) sonraki = cur.filter((_, i) => i !== hit);
+    }
+    if (sonraki === cur) return;
+    strokesRef.current = sonraki;
+    setStrokes(sonraki);
+  };
+
+  const duzZamanlayiciKapat = () => {
+    if (duzZaman.current) clearTimeout(duzZaman.current);
+    duzZaman.current = null;
+  };
+
+  /**
+   * DÜZ ÇİZGİ: kalem vuruşun sonunda kıpırdamadan beklerse vuruş, ilk
+   * noktadan son noktaya düz bir çizgiye oturur (tabletteki not
+   * uygulamalarının alışılmış jesti). Kısa karalamalar etkilenmez.
+   */
+  const duzZamanlayiciKur = () => {
+    duzZamanlayiciKapat();
+    duzZaman.current = setTimeout(() => {
+      const s = drawing.current;
+      if (!s || s.p.length < 6) return;
+      const a = s.p[0];
+      const b = s.p[s.p.length - 1];
+      if (Math.hypot(b[0] - a[0], b[1] - a[1]) < 0.06) return;
+      const n = 12;
+      const bas = s.p.reduce((t, p) => t + p[2], 0) / s.p.length;
+      s.p = Array.from({ length: n + 1 }, (_, i) => [
+        round3(a[0] + ((b[0] - a[0]) * i) / n),
+        round3(a[1] + ((b[1] - a[1]) * i) / n),
+        round2(bas),
+      ] as Pt);
+      canliCiz();
+    }, DUZ_CIZGI_MS);
   };
 
   const onDown = (ev: React.PointerEvent<HTMLCanvasElement>) => {
@@ -490,11 +584,17 @@ export default function NotePanel() {
     // kalemin silgi ucu ya da yan tuş → silgi
     const eraserTip = ev.pointerType === "pen" && (ev.buttons & 32) !== 0;
     if (erasing || eraserTip) {
+      jestOncesi.current = strokesRef.current;
       eraseAt(pt);
       drawing.current = null;
       return;
     }
-    drawing.current = { c: ink, w: nib, p: [pt] };
+    drawing.current =
+      arac === "fosfor"
+        ? { c: fosforRenk, w: nib, p: [pt], h: 1 }
+        : { c: ink, w: nib, p: [pt] };
+    canliCiz();
+    duzZamanlayiciKur();
   };
 
   const onMove = (ev: React.PointerEvent<HTMLCanvasElement>) => {
@@ -510,7 +610,7 @@ export default function NotePanel() {
     }
 
     if (!drawing.current) {
-      if (erasing && ev.buttons) eraseAt(norm(ev));
+      if (jestOncesi.current && ev.buttons) eraseAt(norm(ev));
       return;
     }
     const pt = norm(ev);
@@ -518,59 +618,128 @@ export default function NotePanel() {
     // çok yakın noktaları at — depo şişmesin
     if (Math.hypot(pt[0] - last[0], pt[1] - last[1]) < 0.004) return;
     drawing.current.p.push(pt);
-
-    // tam yeniden çizim yerine sadece yeni parçayı bas
-    const cv = canvasRef.current;
-    const ctx = cv?.getContext("2d");
-    if (!cv || !ctx) return;
-    const W = cv.clientWidth;
-    ctx.strokeStyle = drawing.current.c;
-    ctx.lineCap = "round";
-    ctx.lineJoin = "round";
-    ctx.lineWidth = drawing.current.w * (0.4 + 0.6 * ((last[2] + pt[2]) / 2));
-    ctx.beginPath();
-    ctx.moveTo(last[0] * W, last[1] * W);
-    ctx.lineTo(pt[0] * W, pt[1] * W);
-    ctx.stroke();
+    canliCiz();
+    duzZamanlayiciKur();
   };
 
   const onUp = () => {
     kaydirma.current = null;
+    duzZamanlayiciKapat();
+
+    // Silgi jesti bitti: jest boyunca yapılan bütün silmeler TEK geçmiş adımı.
+    const once = jestOncesi.current;
+    jestOncesi.current = null;
+    if (once) {
+      if (once !== strokesRef.current) {
+        setGecmis((g) => [...g, once].slice(-GECMIS_TAVAN));
+        setIleri([]);
+        setDirty(true);
+      }
+      return;
+    }
+
     const s = drawing.current;
     drawing.current = null;
     if (!s || !s.p.length) return;
-    setStrokes((prev) => [...prev, s]);
-    setRedo([]);
-    setDirty(true);
+    commit(strokesRef.current, [...strokesRef.current, s]);
   };
 
   /* ── Eylemler ────────────────────────────────────────────────────────── */
 
-  // NOT: iki set çağrısı da güncelleyicinin DIŞINDA yapılır. React güncelleyici
+  // NOT: set çağrıları güncelleyicinin DIŞINDA yapılır. React güncelleyici
   // fonksiyonları saf sayar ve gerektiğinde iki kez çalıştırabilir — içeride
   // setState çağırmak vuruşun iki kez eklenmesine yol açıyordu.
   const undo = () => {
-    const cur = strokesRef.current;
-    if (!cur.length) return;
-    const last = cur[cur.length - 1];
-    setStrokes(cur.slice(0, -1));
-    setRedo((r) => [...r, last]);
+    if (!gecmis.length) return;
+    const onceki = gecmis[gecmis.length - 1];
+    setGecmis(gecmis.slice(0, -1));
+    setIleri((r) => [...r, strokesRef.current]);
+    setStrokes(onceki);
     setDirty(true);
   };
 
   const redoOne = () => {
-    const stack = redoRef.current;
-    if (!stack.length) return;
-    const last = stack[stack.length - 1];
-    setRedo(stack.slice(0, -1));
-    setStrokes((prev) => [...prev, last]);
+    if (!ileri.length) return;
+    const sonraki = ileri[ileri.length - 1];
+    setIleri(ileri.slice(0, -1));
+    setGecmis((g) => [...g, strokesRef.current].slice(-GECMIS_TAVAN));
+    setStrokes(sonraki);
     setDirty(true);
   };
 
+  /* ── Kısayollar: Ctrl/⌘+Z geri, Ctrl/⌘+Shift+Z ya da Ctrl+Y ileri ──
+     Yalnızca çizim kipinde ve odak bir yazı alanında DEĞİLKEN: yazı
+     alanının kendi geri alması tarayıcının işi. */
+  useEffect(() => {
+    if (!open || mode !== "draw") return;
+    const dinle = (e: KeyboardEvent) => {
+      if (!(e.ctrlKey || e.metaKey)) return;
+      const hedef = e.target;
+      if (hedef instanceof Element && hedef.closest("input, textarea, [contenteditable]")) return;
+      const k = e.key.toLowerCase();
+      if (k === "z" && !e.shiftKey) {
+        e.preventDefault();
+        undo();
+      } else if ((k === "z" && e.shiftKey) || k === "y") {
+        e.preventDefault();
+        redoOne();
+      }
+    };
+    window.addEventListener("keydown", dinle);
+    return () => window.removeEventListener("keydown", dinle);
+  });
+
   const clearDraw = () => {
-    if (strokes.length && !confirm("Çizimin tamamı silinsin mi?")) return;
-    setStrokes([]);
-    setRedo([]);
+    if (strokes.length && !confirm("Çizimin tamamı silinsin mi? (Geri al ile dönebilirsin)")) return;
+    commit(strokesRef.current, []);
+  };
+
+  /* ── Yazı biçimleme ──────────────────────────────────────────────────── */
+
+  /** Seçimi sarar ya da satır başına önek koyar; imleci anlamlı yere bırakır. */
+  const bicimle = (tur: "kalin" | "baslik" | "madde" | "gorev" | "alinti" | "bolum") => {
+    const ta = textareaRef.current;
+    const bas = ta?.selectionStart ?? text.length;
+    const son = ta?.selectionEnd ?? text.length;
+    let yeni = text;
+    let imlec = son;
+
+    if (tur === "kalin") {
+      const secili = text.slice(bas, son) || "kalın";
+      yeni = text.slice(0, bas) + `**${secili}**` + text.slice(son);
+      imlec = bas + secili.length + 4;
+    } else if (tur === "bolum") {
+      const b = gorunenBolum();
+      if (!b) return;
+      const ek = `§[${b}]`;
+      const onEk = bas > 0 && text[bas - 1] !== "\n" ? " " : "";
+      yeni = text.slice(0, bas) + onEk + ek + text.slice(son);
+      imlec = bas + onEk.length + ek.length;
+    } else {
+      const onek = { baslik: "## ", madde: "- ", gorev: "- [ ] ", alinti: "> " }[tur];
+      const satirBasi = text.lastIndexOf("\n", bas - 1) + 1;
+      yeni = text.slice(0, satirBasi) + onek + text.slice(satirBasi);
+      imlec = son + onek.length;
+    }
+    setText(yeni);
+    setDirty(true);
+    requestAnimationFrame(() => {
+      const t = textareaRef.current;
+      if (!t) return;
+      t.focus();
+      t.setSelectionRange(imlec, imlec);
+    });
+  };
+
+  /** Önizlemede onay kutusu: ilgili satırın [ ] ↔ [x] işaretini çevirir. */
+  const gorevCevir = (satir: number) => {
+    const satirlar = text.split("\n");
+    const s = satirlar[satir];
+    if (s === undefined) return;
+    satirlar[satir] = /^(\s*)- \[ \]/.test(s)
+      ? s.replace(/^(\s*)- \[ \]/, "$1- [x]")
+      : s.replace(/^(\s*)- \[[xX]\]/, "$1- [ ]");
+    setText(satirlar.join("\n"));
     setDirty(true);
   };
 
@@ -607,7 +776,7 @@ export default function NotePanel() {
     ctx.fillRect(0, 0, out.width, out.height);
     ctx.scale(scale, scale);
     paintPaper(ctx, src.clientWidth, src.clientHeight);
-    for (const s of strokes) paintStroke(ctx, s, src.clientWidth);
+    for (const s of cizimSirasi(strokes)) vurusBas(ctx, s, src.clientWidth);
 
     const a = document.createElement("a");
     a.download = `not-${pathname.split("/").filter(Boolean).pop() || "sayfa"}.png`;
@@ -881,7 +1050,63 @@ export default function NotePanel() {
             {/* ── YAZI KİPİ ── */}
             {mode === "text" && (
               <>
+                {/* biçim çubuğu — Markdown'ın küçük bir alt kümesi; metin düz
+                    metin olarak saklanır (yedek, senkron, dışa aktarım aynı) */}
+                <div className="flex flex-wrap items-center gap-1 border-b border-slate-100 px-3 py-1.5">
+                  {(
+                    [
+                      ["kalin", "B", "Kalın", "font-black"],
+                      ["baslik", "H", "Başlık", "font-black"],
+                      ["madde", "•", "Madde", ""],
+                      ["gorev", "☐", "Yapılacak", ""],
+                      ["alinti", "❝", "Alıntı", ""],
+                    ] as ["kalin" | "baslik" | "madde" | "gorev" | "alinti", string, string, string][]
+                  ).map(([tur, isaret, ad, ek]) => (
+                    <button
+                      key={tur}
+                      type="button"
+                      onClick={() => {
+                        setOnizleme(false);
+                        bicimle(tur);
+                      }}
+                      aria-label={ad}
+                      title={ad}
+                      className={`flex h-7 min-w-7 items-center justify-center rounded-lg px-1.5 text-[13px] text-slate-600 transition-colors hover:bg-slate-100 ${ek}`}
+                    >
+                      {isaret}
+                    </button>
+                  ))}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setOnizleme(false);
+                      bicimle("bolum");
+                    }}
+                    aria-label="Okuduğun bölüme bağlantı ekle"
+                    title="Okuduğun bölüme bağla — önizlemede tıklayınca o başlığa gider"
+                    className="flex h-7 items-center gap-1 rounded-lg px-2 text-[12px] font-bold text-blue-800 transition-colors hover:bg-blue-50"
+                  >
+                    § <span className="hidden sm:inline">Bölüme bağla</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setOnizleme((v) => !v)}
+                    aria-pressed={onizleme}
+                    className={`ml-auto h-7 rounded-lg px-2.5 text-[11px] font-black uppercase tracking-widest transition-colors ${
+                      onizleme ? "bg-blue-950 text-white" : "text-slate-600 hover:bg-slate-100"
+                    }`}
+                  >
+                    Önizle
+                  </button>
+                </div>
+
+                {onizleme ? (
+                  <div className="flex-1 overflow-y-auto overscroll-contain px-4 py-3">
+                    <NotOnizleme metin={text} gorevCevir={gorevCevir} />
+                  </div>
+                ) : (
                 <textarea
+                  ref={textareaRef}
                   value={text}
                   onChange={(e) => {
                     setText(e.target.value);
@@ -896,7 +1121,7 @@ export default function NotePanel() {
                      Placeholder ipucu olarak kalıyor; ad artık sabit. */
                   aria-label="Not metni"
                   placeholder={
-                    "Bu sayfaya dair notların…\n\nVurgu araç çubuğundaki 🗒 düğmesiyle seçtiğin metni buraya alıntı olarak gönderebilirsin."
+                    "Bu sayfaya dair notların…\n\nÜstteki düğmelerle başlık, madde, yapılacak ekleyebilir; § ile okuduğun bölüme bağlantı koyabilirsin. Vurgu araç çubuğundaki 🗒 düğmesi seçtiğin metni buraya alıntı olarak gönderir."
                   }
                   /* ODAK HALKASI: `outline-none` varsayılan halkayı kaldırıyor ve
                      burada yerine hiçbir şey konmamıştı — odakta tek işaret imleçti.
@@ -904,10 +1129,11 @@ export default function NotePanel() {
                      deponun halka kalıbını taşıyor, bu sonuncusu istisnaydı.
                      `ring-inset`: alan panel gövdesini kapladığı için dıştan halka
                      kenarlara taşardı. */
-                  className="flex-1 resize-none overscroll-contain px-4 py-3 text-[13px] leading-relaxed text-slate-700 outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-inset focus:ring-blue-700"
+                  className="flex-1 resize-none overscroll-contain px-4 py-3 text-[14px] leading-relaxed text-slate-700 outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-blue-700"
                 />
+                )}
                 <footer className="flex items-center justify-between gap-2 border-t border-slate-100 px-3 py-2">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-slate-300">
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">
                     {text.length} karakter
                   </span>
                   <div className="flex gap-1">
@@ -937,83 +1163,125 @@ export default function NotePanel() {
             {/* ── ÇİZİM KİPİ ── */}
             {mode === "draw" && (
               <>
-                {/* kalem çubuğu */}
-                <div className="flex flex-wrap items-center gap-1.5 border-b border-slate-100 px-3 py-2">
-                  {INKS.map((c) => (
+                {/* araç çubuğu — 1. satır: araç + geçmiş */}
+                <div className="flex items-center gap-1 border-b border-slate-100 px-3 pt-2 pb-1.5">
+                  {(
+                    [
+                      ["kalem", "✒", "Kalem"],
+                      ["fosfor", "🖍", "Fosforlu"],
+                      ["silgi", "⌫", "Silgi"],
+                    ] as [Arac, string, string][]
+                  ).map(([a, isaret, ad]) => (
                     <button
-                      key={c}
-                      onClick={() => {
-                        setInk(c);
-                        setErasing(false);
-                      }}
-                      aria-label={`Kalem rengi: ${INK_ADI[c] ?? c}`}
-                      aria-pressed={ink === c && !erasing}
-                      title="Renk"
-                      className={`h-6 w-6 rounded-full ring-2 transition-transform hover:scale-110 ${
-                        ink === c && !erasing ? "ring-blue-400" : "ring-transparent"
-                      }`}
-                      style={{ background: c }}
-                    />
-                  ))}
-                  <span className="mx-1 h-5 w-px bg-slate-200" />
-                  {NIBS.map((n) => (
-                    <button
-                      key={n}
-                      onClick={() => {
-                        setNib(n);
-                        setErasing(false);
-                      }}
-                      aria-label={`Uç kalınlığı: ${n}`}
-                      aria-pressed={nib === n && !erasing}
-                      title={`Uç ${n}`}
-                      className={`flex h-6 w-6 items-center justify-center rounded-lg transition-colors ${
-                        nib === n && !erasing ? "bg-slate-900" : "hover:bg-slate-100"
+                      key={a}
+                      type="button"
+                      onClick={() => setArac(a)}
+                      aria-pressed={arac === a}
+                      className={`flex h-7 items-center gap-1 rounded-lg px-2 text-[11px] font-bold transition-colors ${
+                        arac === a
+                          ? a === "silgi"
+                            ? "bg-rose-700 text-white"
+                            : "bg-slate-900 text-white"
+                          : "text-slate-600 hover:bg-slate-100"
                       }`}
                     >
-                      <span
-                        className="rounded-full"
-                        style={{
-                          width: n + 2,
-                          height: n + 2,
-                          background: nib === n && !erasing ? "#fff" : "#64748B",
-                        }}
-                      />
+                      <span aria-hidden="true">{isaret}</span>
+                      {ad}
                     </button>
                   ))}
-                  <span className="mx-1 h-5 w-px bg-slate-200" />
+                  <span className="ml-auto" />
                   <button
-                    onClick={() => setErasing((v) => !v)}
-                    aria-label="Silgi"
-                    aria-pressed={erasing}
-                    title="Silgi"
-                    className={`h-6 rounded-lg px-2 text-[11px] transition-colors ${
-                      erasing ? "bg-rose-700 text-white" : "hover:bg-slate-100"
-                    }`}
-                  >
-                    ⌫
-                  </button>
-                  <button
+                    type="button"
                     onClick={undo}
-                    disabled={!strokes.length}
-                    aria-label="Geri al"
-                    title="Geri al"
-                    className="h-6 rounded-lg px-2 text-[11px] transition-colors hover:bg-slate-100 disabled:opacity-25"
+                    disabled={!gecmis.length}
+                    aria-label="Geri al (Ctrl+Z)"
+                    title="Geri al (Ctrl+Z)"
+                    className="h-7 rounded-lg px-2 text-[13px] transition-colors hover:bg-slate-100 disabled:opacity-25"
                   >
                     ↶
                   </button>
                   <button
+                    type="button"
                     onClick={redoOne}
-                    disabled={!redo.length}
-                    aria-label="İleri al"
-                    title="İleri al"
-                    className="h-6 rounded-lg px-2 text-[11px] transition-colors hover:bg-slate-100 disabled:opacity-25"
+                    disabled={!ileri.length}
+                    aria-label="İleri al (Ctrl+Y)"
+                    title="İleri al (Ctrl+Y)"
+                    className="h-7 rounded-lg px-2 text-[13px] transition-colors hover:bg-slate-100 disabled:opacity-25"
                   >
                     ↷
                   </button>
-                  <span className="mx-1 h-5 w-px bg-slate-200" />
+                </div>
+
+                {/* 2. satır: seçili aracın ayarları + kâğıt */}
+                <div className="flex flex-wrap items-center gap-1.5 border-b border-slate-100 px-3 pb-2 pt-1">
+                  {arac !== "silgi" &&
+                    (arac === "fosfor" ? FOSFORLAR : INKS).map((c) => {
+                      const secili = arac === "fosfor" ? fosforRenk === c : ink === c;
+                      return (
+                        <button
+                          key={c}
+                          type="button"
+                          onClick={() => (arac === "fosfor" ? setFosforRenk(c) : setInk(c))}
+                          aria-label={`${arac === "fosfor" ? "Fosforlu" : "Kalem"} rengi: ${INK_ADI[c] ?? c}`}
+                          aria-pressed={secili}
+                          className={`h-6 w-6 rounded-full ring-2 ring-offset-1 transition-transform hover:scale-110 ${
+                            secili ? "ring-blue-500" : "ring-transparent"
+                          }`}
+                          style={{ background: c }}
+                        />
+                      );
+                    })}
+                  {arac !== "silgi" && (
+                    <>
+                      <span className="mx-1 h-5 w-px bg-slate-200" />
+                      {NIBS.map((n) => (
+                        <button
+                          key={n}
+                          type="button"
+                          onClick={() => setNib(n)}
+                          aria-label={`Uç kalınlığı: ${n}`}
+                          aria-pressed={nib === n}
+                          className={`flex h-6 w-6 items-center justify-center rounded-lg transition-colors ${
+                            nib === n ? "bg-slate-900" : "hover:bg-slate-100"
+                          }`}
+                        >
+                          <span
+                            className="rounded-full"
+                            style={{
+                              width: n + 2,
+                              height: n + 2,
+                              background: nib === n ? "#fff" : "#64748B",
+                            }}
+                          />
+                        </button>
+                      ))}
+                    </>
+                  )}
+                  {arac === "silgi" &&
+                    (
+                      [
+                        ["nokta", "Nokta silgisi", "Yalnız değdiği kısmı siler"],
+                        ["cizgi", "Çizgi silgisi", "Değdiği çizginin tamamını siler"],
+                      ] as [SilgiTuru, string, string][]
+                    ).map(([t, ad, aciklama]) => (
+                      <button
+                        key={t}
+                        type="button"
+                        onClick={() => setSilgiTuru(t)}
+                        aria-pressed={silgiTuru === t}
+                        title={aciklama}
+                        className={`h-6 rounded-lg px-2 text-[11px] font-bold transition-colors ${
+                          silgiTuru === t ? "bg-rose-100 text-rose-800" : "text-slate-600 hover:bg-slate-100"
+                        }`}
+                      >
+                        {ad}
+                      </button>
+                    ))}
+                  <span className="ml-auto" />
                   {KAGITLAR.map(([k, icon, label]) => (
                     <button
                       key={k}
+                      type="button"
                       onClick={() => kagitSec(k)}
                       aria-label={`${label} sayfa`}
                       aria-pressed={paper === k}
@@ -1055,10 +1323,9 @@ export default function NotePanel() {
                 </div>
 
                 <footer className="flex items-center justify-between gap-2 border-t border-slate-100 px-3 py-2">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-slate-300">
-                    {hasPen
-                      ? "🖊 Kalem yazar · parmak kaydırır"
-                      : `${strokes.length} çizgi`}
+                  <span className="text-[10px] font-semibold leading-snug text-slate-500">
+                    {hasPen ? "Kalem yazar · parmak kaydırır" : `${strokes.length} çizgi`}
+                    <span className="hidden sm:inline"> · sonda bekle → düz çizgi</span>
                   </span>
                   <div className="flex gap-1">
                     <button

@@ -248,6 +248,11 @@ tohumla başka bir sayfaya git, takvim orada duruyor.
   ucu (`buttons & 32`) otomatik silgiye alır.
 - **Çizim PNG değil vuruş dizisi.** Genişliğe göre normalize saklanır; 64px
   önizleme ile 520px tekrar kartı aynı veriden çıkar.
+- **Mürekkep geometrisi tek kaynak (`app/lib/murekkep.ts`, 27 Eyl).** Vuruş
+  basınçtan gelen yarıçaplı DOLDURULMUŞ anahattır; tuval (`Path2D`) ile kart
+  önizlemesi (`<path d>`) aynı fonksiyonu çağırır. Fosforlu kalem `h: 1`
+  alanıdır (şema geriye uyumlu), mürekkebin ALTINA çizilir. Geri al DURUM
+  anlık görüntüsüdür — silgi jesti tek adım; "son vuruşu çıkar" mantığına dönme.
 - **Tazeleme kipi takvimi DEĞİŞTİRMEZ.** "Baştan sona çalış" ile verilen
   notlar ne aralıkları ne çalışma günlüğünü etkiler — sınav gecesi atılan bir
   tur, aylardır oturmuş programı sıfırlamamalı.
