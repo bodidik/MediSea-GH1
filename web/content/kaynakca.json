@@ -5323,5 +5323,53 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "esansiyel-trombositemi": {
+    "baslik": "Esansiyel trombositemi",
+    "aciklama": "Esansiyel trombositemi sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Puglianini OC, Peker D, Zhang L, Papadantonakis N. Essential Thrombocythemia and Post-Essential Thrombocythemia Myelofibrosis: Updates on Diagnosis, Clinical Aspects, and Management. Lab Med 2023;54(1):13-22",
+        "yil": 2023,
+        "url": "https://doi.org/10.1093/labmed/lmac074",
+        "tur": "makale"
+      },
+      {
+        "ad": "Godfrey AL, Green AC, Harrison CN. Essential thrombocythemia: challenges in clinical practice and future prospects. Blood 2023;141(16):1943-1953",
+        "yil": 2023,
+        "url": "https://doi.org/10.1182/blood.2022017625",
+        "tur": "makale"
+      },
+      {
+        "ad": "Tefferi A, Vannucchi AM, Barbui T. Essential thrombocythemia: 2024 update on diagnosis, risk stratification, and management. Am J Hematol 2024;99(4):697-718",
+        "yil": 2024,
+        "url": "https://doi.org/10.1002/ajh.27216",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cattaneo M. Aspirin in essential thrombocythemia. For whom? What formulation? What regimen? Haematologica 2023;108(6):1487-1499",
+        "yil": 2023,
+        "url": "https://doi.org/10.3324/haematol.2022.281388",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yoon SY, Won JH. Novel therapeutic strategies for essential thrombocythemia/polycythemia vera. Blood Res 2023;58(S1):S83-S89",
+        "yil": 2023,
+        "url": "https://doi.org/10.5045/br.2023.2023013",
+        "tur": "makale"
+      },
+      {
+        "ad": "Tefferi A. Essential thrombocythemia: Clinical manifestations and diagnosis. UpToDate; son güncelleme 18 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/essential-thrombocythemia-clinical-manifestations-and-diagnosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Tefferi A, Vannucchi AM. Essential thrombocythemia: Treatment and prognosis. UpToDate; son güncelleme 26 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/essential-thrombocythemia-treatment-and-prognosis",
+        "tur": "uptodate"
+      }
+    ]
   }
 }
