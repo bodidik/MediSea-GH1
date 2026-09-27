@@ -8,7 +8,7 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 export const metadata: Metadata = {
   title: "CHA₂DS₂-VASc Skoru — AF'de inme riski hesaplama",
   description: "CHA₂DS₂-VASc Skoru: AF'de inme riski hesaplama. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/chads-vasc" },
+  alternates: { canonical: "/tools/chads-vasc", languages: {"tr":"/tools/chads-vasc","en":"/en/tools/chads-vasc","x-default":"/tools/chads-vasc"} },
   openGraph: {
     type: "website",
     title: "CHA₂DS₂-VASc Skoru — AF'de inme riski hesaplama",

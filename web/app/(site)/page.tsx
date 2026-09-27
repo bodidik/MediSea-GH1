@@ -4,6 +4,16 @@ import { getTopicCounts, getToolCount } from "@/app/lib/topic-counts";
 import StudyStatus from "@/app/components/StudyStatus";
 import KurumRozeti from "@/app/components/KurumRozeti";
 import { HeroDenizi } from "@/app/components/DenizSusu";
+import type { Metadata } from "next";
+import { dilAlternatifleri } from "@/lib/dil";
+
+/* İngilizce ana sayfayla (`/en`) karşılıklı `hreflang`. Kökün `canonical: "/"`
+   değeri zaten bu sayfanın; burada yalnızca dil çifti ekleniyor. Başlık ve
+   açıklama kökten miras kalır. */
+const DILLER = dilAlternatifleri("/");
+export const metadata: Metadata = {
+  alternates: DILLER ? { canonical: "/", languages: DILLER } : { canonical: "/" },
+};
 
 /**
  * ISR: ana sayfa artık istek başına üretilmiyor.

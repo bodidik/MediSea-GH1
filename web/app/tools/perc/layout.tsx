@@ -8,7 +8,7 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 export const metadata: Metadata = {
   title: "PERC Kriterleri — PE düşük risk dışlama protokolü",
   description: "PERC Kriterleri: PE düşük risk dışlama protokolü. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/perc" },
+  alternates: { canonical: "/tools/perc", languages: {"tr":"/tools/perc","en":"/en/tools/perc","x-default":"/tools/perc"} },
   openGraph: {
     type: "website",
     title: "PERC Kriterleri — PE düşük risk dışlama protokolü",

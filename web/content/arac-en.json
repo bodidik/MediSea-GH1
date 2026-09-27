@@ -1,0 +1,11 @@
+{
+  "heart": { "ad": "HEART Score", "aciklama": "Cardiac risk triage for acute chest pain — no result is shown until all 5 criteria are answered" },
+  "chads-vasc": { "ad": "CHA₂DS₂-VASc Score", "aciklama": "Stroke risk in atrial fibrillation" },
+  "has-bled": { "ad": "HAS-BLED Score", "aciklama": "Bleeding risk on anticoagulation" },
+  "curb65": { "ad": "CURB-65 Score", "aciklama": "Triage decision in community-acquired pneumonia" },
+  "qsofa": { "ad": "qSOFA Score", "aciklama": "Quick bedside sepsis assessment" },
+  "padua": { "ad": "Padua Score", "aciklama": "VTE prophylaxis decision in hospitalized medical patients" },
+  "perc": { "ad": "PERC Rule", "aciklama": "Rule-out protocol for low-risk PE" },
+  "wells-pe": { "ad": "Wells Score (PE)", "aciklama": "Clinical probability of pulmonary embolism" },
+  "wells-dvt": { "ad": "Wells Score (DVT)", "aciklama": "Clinical probability of deep vein thrombosis" }
+}

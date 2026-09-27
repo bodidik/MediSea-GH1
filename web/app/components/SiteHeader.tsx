@@ -6,6 +6,7 @@ import { useRouter, usePathname } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import { searchAction } from "@/app/actions"; // Senin orijinal arama eylemin
 import { SPECIALTIES } from "@/app/lib/specialties";
+import DilDegistir from "@/app/components/DilDegistir";
 
 // Arama sonucu tipi
 type SearchResult = {
@@ -598,6 +599,12 @@ export default function SiteHeader() {
           boyayan öge `elementFromPoint` ile doğrulandı.
         */}
         <div className="flex items-center gap-1.5 sm:gap-4 shrink-0 ml-0 sm:ml-2 border-l border-slate-200 pl-1.5 sm:pl-6">
+          {/* İngilizce site girişi — md ve üstü. Telefonda sağ grup zaten
+              dar (yukarıdaki taşma ölçümü); orada hamburger panelinde. */}
+          <DilDegistir
+            kisa
+            className="hidden md:inline-flex h-9 items-center rounded-full border border-slate-200 px-3 text-xs font-black tracking-widest text-slate-600 hover:border-blue-300 hover:text-blue-700 transition-colors"
+          />
           {oturumHazir && !girisli && (
             <>
               {/* py-1.5: 20px yüksekliğindeydi. `hidden md:block` olduğu için
@@ -736,6 +743,14 @@ export default function SiteHeader() {
               >
                 <span aria-hidden="true">🧪</span> KLİNİK ARAÇLAR
               </Link>
+            </div>
+
+            {/* İngilizce site (md altı - sağdaki "EN" gizliyken) */}
+            <div className="md:hidden">
+              <DilDegistir
+                onSecim={() => setMenuOpen(false)}
+                className="flex min-h-[44px] items-center justify-center rounded-2xl border border-slate-200 text-sm font-bold text-blue-950 hover:bg-slate-50"
+              />
             </div>
 
             {/* Giriş / Çıkış (md altı - sağdaki link gizliyken) */}

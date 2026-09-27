@@ -3,19 +3,23 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { karsiYol, yoldanDil } from "@/lib/dil";
+import { dilSeciminiKaydet, karsiYol, yoldanDil } from "@/lib/dil";
 
 /**
- * Dil değiştirici — YALNIZCA sayfanın öteki dilde bir karşılığı varsa çizilir.
+ * Dil değiştirici — her sayfada. Hedef `lib/dil.ts`ten: İngilizce sayfada
+ * Türkçesi; Türkçe sayfada çevrildiyse İngilizcesi, değilse İngilizce ana
+ * sayfa (İngilizce site kendi içinde kapalı bir ikiz — 27 Eyl kararı).
+ * Eski `LangSwitch` kullanıcıyı `/en` önekli ama var olmayan adrese
+ * gönderiyordu; burada hedef her zaman VAR olan bir sayfa.
  *
- * Eski `LangSwitch` her sayfada iki düğme gösterip kullanıcıyı `/en` önekli
- * ama var olmayan (ya da içi Türkçe) bir adrese gönderiyordu. Burada hedef
- * `lib/dil.ts`in indeksinden geliyor: çevrilmemiş sayfada bileşen hiçbir şey
- * basmaz.
+ * Tıklamak AÇIK SEÇİMDİR ve çereze yazılır: otomatik yönlendirme (middleware)
+ * bu seçimi her şeyin üstünde tutar — İngilizceye atılmış bir Türk hekim
+ * "Türkçe"ye bir kez basınca bir daha yönlendirilmez.
  *
  * Dil adı KENDİ dilinde yazılır ("English", "Türkçe") ve `lang` taşır:
  * Türkçe okuyamayan biri "İngilizce" yazısını tanımaz, ekran okuyucu da
- * "Türkçe"yi İngilizce sesle okur.
+ * "Türkçe"yi İngilizce sesle okur. `kisa` biçimi dar üst menü içindir
+ * ("EN"/"TR"); erişilebilir ad yine dilin tam adı.
  */
 /* `className` verilirse varsayılanın YERİNE geçer, eklenmez: Tailwind'de
    çakışan iki sınıftan (px-3 / px-3.5) hangisinin kazanacağını sınıf sırası
@@ -23,10 +27,18 @@ import { karsiYol, yoldanDil } from "@/lib/dil";
 const VARSAYILAN_SINIF =
   "inline-flex min-h-[44px] items-center rounded-lg px-3 text-sm font-bold text-blue-900 underline-offset-2 hover:underline";
 
-export default function DilDegistir({ className = VARSAYILAN_SINIF }: { className?: string }) {
+export default function DilDegistir({
+  className = VARSAYILAN_SINIF,
+  kisa = false,
+  onSecim,
+}: {
+  className?: string;
+  kisa?: boolean;
+  /** Menü panelini kapatmak gibi çağıranın ek işi. */
+  onSecim?: () => void;
+}) {
   const yol = usePathname() || "/";
   const hedef = karsiYol(yol);
-  if (!hedef) return null;
 
   const ad = hedef.dil === "en" ? "English" : "Türkçe";
   return (
@@ -34,9 +46,14 @@ export default function DilDegistir({ className = VARSAYILAN_SINIF }: { classNam
       href={hedef.yol}
       hrefLang={hedef.dil}
       lang={hedef.dil}
+      aria-label={kisa ? ad : undefined}
+      onClick={() => {
+        dilSeciminiKaydet(hedef.dil);
+        onSecim?.();
+      }}
       className={className}
     >
-      {ad}
+      {kisa ? hedef.dil.toUpperCase() : ad}
     </Link>
   );
 }

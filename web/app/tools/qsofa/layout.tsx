@@ -8,7 +8,7 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 export const metadata: Metadata = {
   title: "qSOFA Skoru — Hızlı sepsis yatak başı değerlendirme",
   description: "qSOFA Skoru: Hızlı sepsis yatak başı değerlendirme. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/qsofa" },
+  alternates: { canonical: "/tools/qsofa", languages: {"tr":"/tools/qsofa","en":"/en/tools/qsofa","x-default":"/tools/qsofa"} },
   openGraph: {
     type: "website",
     title: "qSOFA Skoru — Hızlı sepsis yatak başı değerlendirme",

@@ -115,8 +115,12 @@ export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
         );
       })}
 
-      {/* Yalnızca öteki dilde karşılığı olan araçta çizilir (bkz. lib/dil.ts). */}
-      <DilDegistir className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-blue-900 hover:border-blue-900/30 transition-all shadow-sm" />
+      {/* Türkçe araç sayfasının İngilizce girişi (çevrildiyse karşılığı, değilse
+          İngilizce ana sayfa — bkz. lib/dil.ts). Türkçe araçlar SiteHeader
+          almadığı için tek giriş burası. İngilizcede üst şerit taşıyor. */}
+      {!en && (
+        <DilDegistir className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-blue-900 hover:border-blue-900/30 transition-all shadow-sm" />
+      )}
       </nav>
 
       {/* Atlama hedefi. tabIndex=-1 şart: odaklanabilir olmayan bir öğeye

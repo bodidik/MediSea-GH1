@@ -8,7 +8,7 @@ import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 export const metadata: Metadata = {
   title: "Wells Skoru (DVT) — Derin ven trombozu klinik olasılığı",
   description: "Wells Skoru (DVT): Derin ven trombozu klinik olasılığı. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/wells-dvt" },
+  alternates: { canonical: "/tools/wells-dvt", languages: {"tr":"/tools/wells-dvt","en":"/en/tools/wells-dvt","x-default":"/tools/wells-dvt"} },
   openGraph: {
     type: "website",
     title: "Wells Skoru (DVT) — Derin ven trombozu klinik olasılığı",

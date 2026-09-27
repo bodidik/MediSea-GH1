@@ -454,7 +454,10 @@ metadata `rotaMeta({ …, yol: "<TR yolu>", dil: "en" })` · metin `*.dil.json` 
 
 **Aracı çevrilebilir yaparken:** metin `itemsOf(t)`/`zonesOf(t)` ile, puan/eşik/kimlik kodda tek kopya · seçim ETİKETLE değil KİMLİKLE eşleşir (`b.l === "Düşük"` İngilizcede sessizce bozulur; 3 araçta vardı) · metin düğümünü tek parça tut (`{" " + t.x}`; yoksa React `<!-- -->` basar, HTML değişir) · `bant`/`eksik-alan` denetimleri sözlüğü ve `=> [` dizilerini okuyor (okumadıklarında kapsam 44→43, 247→241 düşmüştü).
 
-**Açık:** sayı ayrıştırıcı İngilizce yazımı yanlış okur (`5,000`→**5**, `12,000.5`→12, ters yönde `5.000`→5000) — kullanıcı yanıtı "türkçe 5,000 ve ingilizce 5.000", anlamı TEYİT BEKLİYOR; sayı alan araç bu kural uygulanmadan çevrilmez. Kapı istemci metnini göremez; kör noktası özel harfsiz, listede olmayan sözcük (`Boy (cm)`).
+**Kapalı ikiz + yönlendirme (27 Eyl, kullanıcı kararı).** İngilizce okuyucu Türkçe sayfa GÖRMEDEN dolaşabilmeli: `/en` ana sayfa, `/en/tools`, üst şerit ve altbilgi `app/en/layout.tsx`te; İngilizce taraftan Türkçeye TEK bağ dil değiştirici. Türkçe sayfada "English" HER yerde (`SiteHeader` md+ "EN", telefonda menüde; araçta `ToolTopNav`): çevrildiyse karşılığı, değilse `/en` (`ingilizceHedef`). `hreflang` yalnız gerçek çiftte. Kütüphane İngilizcede YOK (çevrildikçe gelir).
+Middleware Türk olmayanı OTOMATİK yönlendirir (`lib/dil.ts` → `yonlendirmeHedefi`, saf fonksiyon): açık seçim çerezi (`medisea_dil`) her şeyi ezer · yalnız TR→EN · bot/önizleyici yönlendirilmez · İKİ şart birden: ülke ≠ TR (`x-vercel-ip-country`) VE Accept-Language'da `tr` yok · bilgi eksikse (başlık yok, Googlebot) yönlendirme YOK · yanıt `private, no-store`. Kimlik denetimi davranışı değişmedi (eski matcher yolları `KIMLIK_YOLU`). **Ölçüldü:** 16 senaryo curl matrisi (ülke/dil/çerez/bot/sorgu/`/kayseritip`) 16/16. Vercel dışı dağıtımda (Docker) ülke başlığı yok → yönlendirme hiç çalışmaz, bilerek.
+
+**Sayı kuralı TEYİTLİ:** ondalık ayırıcı Türkçede virgül (5,000 = beş), İngilizcede nokta (5.000 = beş). Bugünkü ayrıştırıcı İngilizce yazımı yanlış okur (`5,000`→**5**, ters yönde `5.000`→5000); İngilizce dal henüz yok — sayı alan araç bu dal ve "1,500" belirsizlik uyarısı olmadan çevrilmez. Kapı istemci metnini göremez; kör noktası özel harfsiz, listede olmayan sözcük (`Boy (cm)`).
 
 ## Ölçüm arşivi — `CLAUDE-arsiv.md`
 
