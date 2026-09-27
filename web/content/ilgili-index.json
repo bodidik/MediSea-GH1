@@ -3383,23 +3383,6 @@
    "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
   }
  ],
- "gastroenteroloji/bilirubin-metabolizmasi": [
-  {
-   "brans": "gastroenteroloji",
-   "slug": "karaciger-hastasina-yaklasim",
-   "baslik": "Karaciğer Hastasına Yaklaşım: Anamnez ve Fizik Muayene"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "safra-kesesi-hastaliklari",
-   "baslik": "Safra Kesesi Hastalıkları (Kolelityazis ve Kolesistit)"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "siroz-ve-komplikasyonlari",
-   "baslik": "Siroz ve Komplikasyonları"
-  }
- ],
  "gastroenteroloji/colyak": [
   {
    "brans": "gastroenteroloji",
@@ -3885,11 +3868,6 @@
  "gastroenteroloji/safra-kesesi-hastaliklari": [
   {
    "brans": "gastroenteroloji",
-   "slug": "bilirubin-metabolizmasi",
-   "baslik": "Bilirubin Metabolizması ve Fizyolojisi"
-  },
-  {
-   "brans": "gastroenteroloji",
    "slug": "karaciger-hastasina-yaklasim",
    "baslik": "Karaciğer Hastasına Yaklaşım: Anamnez ve Fizik Muayene"
   },
@@ -4012,6 +3990,23 @@
    "brans": "genel-dahiliye",
    "slug": "lenfodem",
    "baslik": "Lenfödem"
+  }
+ ],
+ "genel-dahiliye/bilirubin-metabolizmasi": [
+  {
+   "brans": "genel-dahiliye",
+   "slug": "lenfadenopati-yaklasimi",
+   "baslik": "Lenfadenopati (LAP)"
+  },
+  {
+   "brans": "genel-dahiliye",
+   "slug": "lenfodem",
+   "baslik": "Lenfödem"
+  },
+  {
+   "brans": "genel-dahiliye",
+   "slug": "ileri-evre-lenfodem-kombine-tedavi",
+   "baslik": "İleri Evre Lenfödemde Kombine Tedavi Stratejileri ve Multimodal Yaklaşımlar"
   }
  ],
  "genel-dahiliye/icg-lenfografisi-ve-evreleme": [

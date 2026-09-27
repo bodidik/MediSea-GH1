@@ -108,6 +108,8 @@ module.exports = {
       // Ezetimib sayfası iki branşta birebir aynı metinle yayındaydı (Haziran'dan beri);
       // endokrinoloji kopyası kaldırıldı, kardiyoloji lipidoloji dalında duruyor (27 Eyl 2026).
       { source: '/topics/endokrinoloji/lipid-ezetimibe', destination: '/topics/kardiyoloji/lipid-ezetimibe', permanent: true },
+      // Bilirubin metabolizması (sarılık) sayfası kullanıcı kararıyla Genel Dahiliye'ye taşındı (27 Eyl 2026).
+      { source: '/topics/gastroenteroloji/bilirubin-metabolizmasi', destination: '/topics/genel-dahiliye/bilirubin-metabolizmasi', permanent: true },
       // AYNI SKOR İKİ AYRI ARAÇ OLARAK DURUYORDU: /tools/heart-score (Kardiyoloji)
       // ve /tools/heart (Acil), ikisinin de adı "HEART Skoru". Ayrı uygulama
       // oldukları için AYNI hastada farklı davranıyorlardı — ölçüldü:
