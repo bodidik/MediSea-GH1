@@ -1,6 +1,7 @@
 {
   "title": "Sevelamer: KBH-Hiperfosfatemi",
   "meta": {
+    "kaynakca": "hiperparatiroidi",
     "updatedAt": "02 May 2026",
     "tags": ["Farmakoloji", "Nefroloji", "Sevelamer", "Hiperfosfatemi", "Pleiotropik Etki", "Vasküler Kalsifikasyon", "YDUS"],
     "parent": "hiperfosfatemi-CKD",
