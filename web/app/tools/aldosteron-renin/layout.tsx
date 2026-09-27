@@ -47,13 +47,13 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/kardiyoloji/aprocitentan-direncli-hipertansiyon" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA
+              <Link href="/topics/nefroloji/amilorid-spironolakton-karsilastirma" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji
               </Link>
             </li>
             <li>
-              <Link href="/topics/nefroloji/mineralokortikoid-fazlaligi-ayirici-tani" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı
+              <Link href="/topics/kardiyoloji/aprocitentan-direncli-hipertansiyon" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA
               </Link>
             </li>
             <li>

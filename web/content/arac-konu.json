@@ -1239,6 +1239,13 @@
         "kaynak": "kavram"
       }
     ],
+    "nefroloji/amilorid-spironolakton-karsilastirma": [
+      {
+        "slug": "aldosteron-renin",
+        "name": "Aldosteron/Renin Oranı",
+        "eslesen": "Aldosteron/Renin Oranı"
+      }
+    ],
     "nefroloji/asit-baz-denge-bozukluklari": [
       {
         "slug": "anion-gap",
@@ -1396,6 +1403,19 @@
         "slug": "abg",
         "name": "Asit-Baz Analizi (ABG)",
         "eslesen": "asidoz",
+        "kaynak": "kavram"
+      }
+    ],
+    "nefroloji/mra-asi-hiperkalemi-sglt2-kombinasyonu": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "hiperkalemi-tedavi",
+        "name": "Hiperkalemi Tedavisi",
+        "eslesen": "hiperkalemi",
         "kaynak": "kavram"
       }
     ],
@@ -3516,6 +3536,14 @@
         "kaynak": "kavram"
       }
     ],
+    "nefroloji/finerenon-aldosteron-sentaz-inhibitorleri": [
+      {
+        "slug": "hiperkalemi-tedavi",
+        "name": "Hiperkalemi Tedavisi",
+        "eslesen": "finerenon",
+        "kaynak": "kavram"
+      }
+    ],
     "nefroloji/fokal-segmental-glomeruloskleroz-fsgs": [
       {
         "slug": "spot-urine",
@@ -5049,6 +5077,37 @@
         "kaynak": "kavram"
       }
     ],
+    "aldosteron-renin": [
+      {
+        "yol": "endokrinoloji/adrenal-korteks-hastaliklari",
+        "baslik": "Adrenal Korteks Hastalıkları",
+        "eslesen": "adrenal korteks",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/amilorid-spironolakton-karsilastirma",
+        "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji",
+        "eslesen": "Aldosteron/Renin Oranı"
+      },
+      {
+        "yol": "kardiyoloji/aprocitentan-direncli-hipertansiyon",
+        "baslik": "Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA",
+        "eslesen": "dirençli hipertansiyon",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/adrenal-bez-hastaliklari",
+        "baslik": "Adrenal (Sürrenal) Bez Hastalıkları",
+        "eslesen": "sürrenal",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/mineralokortikoid-fazlaligi-ayirici-tani",
+        "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı",
+        "eslesen": "hiperaldosteronizm",
+        "kaynak": "kavram"
+      }
+    ],
     "corrected-sodium": [
       {
         "yol": "nefroloji/hiponatremi",
@@ -5290,32 +5349,6 @@
       }
     ],
     "adrenal-yikanma": [
-      {
-        "yol": "endokrinoloji/adrenal-bez-hastaliklari",
-        "baslik": "Adrenal (Sürrenal) Bez Hastalıkları",
-        "eslesen": "sürrenal",
-        "kaynak": "kavram"
-      }
-    ],
-    "aldosteron-renin": [
-      {
-        "yol": "endokrinoloji/adrenal-korteks-hastaliklari",
-        "baslik": "Adrenal Korteks Hastalıkları",
-        "eslesen": "adrenal korteks",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "kardiyoloji/aprocitentan-direncli-hipertansiyon",
-        "baslik": "Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA",
-        "eslesen": "dirençli hipertansiyon",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/mineralokortikoid-fazlaligi-ayirici-tani",
-        "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı",
-        "eslesen": "hiperaldosteronizm",
-        "kaynak": "kavram"
-      },
       {
         "yol": "endokrinoloji/adrenal-bez-hastaliklari",
         "baslik": "Adrenal (Sürrenal) Bez Hastalıkları",
@@ -6875,6 +6908,12 @@
     ],
     "hiperkalemi-tedavi": [
       {
+        "yol": "nefroloji/mra-asi-hiperkalemi-sglt2-kombinasyonu",
+        "baslik": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu",
+        "eslesen": "hiperkalemi",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "nefroloji/farmakoloji-finerenon",
         "baslik": "Yeni Nesil ns-MRA Finerenon",
         "eslesen": "finerenon",
@@ -6883,6 +6922,12 @@
       {
         "yol": "nefroloji/farmakoloji-finerenon-kalp-yetmezligi",
         "baslik": "Finerenon ve Kalp Yetmezliği",
+        "eslesen": "finerenon",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/finerenon-aldosteron-sentaz-inhibitorleri",
+        "baslik": "Finerenon ve Aldosteron Sentaz İnhibitörleri: Karşılaştırma",
         "eslesen": "finerenon",
         "kaynak": "kavram"
       },
@@ -7081,11 +7126,11 @@
     ]
   },
   "olcum": {
-    "konu": 462,
+    "konu": 465,
     "arac": 257,
-    "araciOlanKonu": 317,
+    "araciOlanKonu": 320,
     "konusuOlanArac": 148,
-    "bag": 580,
-    "kavramBag": 420
+    "bag": 584,
+    "kavramBag": 422
   }
 }

@@ -1,0 +1,49 @@
+{
+  "title": "Finerenon ve Aldosteron Sentaz İnhibitörleri: Karşılaştırma",
+  "meta": {
+    "kaynakca": "aldosteron",
+    "updatedAt": "27 Eyl 2026",
+    "tags": [
+      "Nefroloji",
+      "Farmakoloji",
+      "Finerenon",
+      "Aldosteron Sentaz İnhibitörü",
+      "CYP11B2",
+      "Baxdrostat",
+      "Kardiyorenal Koruma",
+      "MRA"
+    ],
+    "parent": "aldosteron-mekanizmalari",
+    "order": 19
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\"><strong>Finerenon</strong> ve <strong>Aldosteron Sentaz İnhibitörleri (ASI)</strong>, renin-anjiyotensin-aldosteron sistemini (RAAS) patolojik aldosteron sinyalleşmesi düzeyinde baskılayan iki modern tedavi yaklaşımıdır. Her iki grup da kardiyovasküler ve renal koruma sağlama amacını taşısa da, <strong>etki ettikleri biyokimyasal basamak, dolaşımdaki aldosteron düzeylerine etkileri ve sinyal yolları üzerindeki kapsayıcılıkları</strong> bakımından akademik ve nefrolojik düzeyde temel farklılıklara sahiptir.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Aralarındaki temel farklar şu ana başlıklar altında incelenebilir:</p>"
+    },
+    {
+      "heading": "1. Moleküler Hedef ve Biyokimyasal Etki Mekanizması",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Finerenon (Non-Steroidal Reseptör Antagonisti - ns-MRA):</strong><br>Finerenon, adrenal bezde üretilmiş ve dolaşıma salınmış olan aldosteronun böbrek, kalp ve damar dokularındaki <strong>Mineralokortikoid Reseptörüne (MR)</strong> bağlanmasını yarışmalı olarak bloke eder. Dihidropiridin benzeri non-steroidal kimyasal yapısı sayesinde MR'a son derece spesifik bağlanarak ko-faktör rekrütmanını ve transkripsiyonel aktivasyonu engeller.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Aldosteron Sentaz İnhibitörleri (ASI - Baxdrostat, Lorundrostat, Vicadrostat, BI-690517 vb.):</strong><br>ASI'ler reseptör düzeyinde değil, adrenal korteksin zona glomerulosa hücrelerindeki mitokondriyal <strong>CYP11B2 (Aldosteron Sentaz)</strong> enziminin sentez basamağında etki gösterirler. Aldosteron biyosentezinin hız kısıtlayıcı son basamağı olan 11-deoksikortikosteronun (11-DOC) aldosterona dönüşümünü doğrudan inhibe ederler.</li></ul></div>"
+    },
+    {
+      "heading": "2. Dolaşımdaki Aldosteron Düzeyleri ve \"Aldosteron Kaçışı\" (Aldosterone Escape)",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Finerenon:</strong><br>Finerenon MR'ı hücresel düzeyde bloke ettiğinde, vücuttaki negatif geri bildirim (feedback) mekanizması uyarılır. Bunun sonucunda dolaşımdaki renin ve <strong>plazma aldosteron seviyelerinde kompanzatuvar bir artış</strong> gözlenir. Dolaşımdaki yüksek aldosteron, \"aldosteron kaçışı\" olarak bilinen tabloya katkıda bulunabilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>ASI:</strong><br>ASI'ler doğrudan aldosteronun üretim fabrikasını (CYP11B2) durdurduğu için <strong>dolaşımdaki plazma aldosteron konsantrasyonunu belirgin şekilde düşürürler</strong>. Böylece ortamda aldosteron birikimi veya kompanzatuvar yükselme (\"aldosteron kaçışı\") meydana gelmez.</li></ul></div>"
+    },
+    {
+      "heading": "3. Genomik ve Non-Genomik (MR-Bağımsız) Sinyal Yolaklarına Etki",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Finerenon:</strong><br>MR'ı bloke ettiği için klasik <strong>genomik (MR-bağımlı)</strong> ve MR-aracılı pro-inflamatuar/pro-fibrotik gen ekspresyonlarını güçlü bir şekilde engeller. Ancak reseptör blokajına sekonder olarak dolaşımda yükselen aldosteron, MR'dan bağımsız olarak işleyen <strong>non-genomik yolları</strong> (örneğin zar yüzeyindeki GPER/GPR30 östrojen reseptörleri veya EGFR uyarımı üzerinden gelişen hızlı kalsiyum ve kinaz kaskadlarını) tam olarak baskılayamayabilir.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>ASI:</strong><br>Ortamdaki aldosteron hormonunun sentezini ve miktarını doğrudan azalttığı için, aldosteronun tetiklediği <strong>hem genomik (MR-bağımlı) hem de non-genomik (MR-bağımsız / GPER aracılı) tüm zararlı yolları eş zamanlı olarak ortadan kaldırır</strong>.</li></ul></div>"
+    },
+    {
+      "heading": "4. Kortizol Sentezi ve Seçicilik Profili",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Finerenon:</strong><br>Non-steroidal yapısı sayesinde MR'a oldukça seçicidir; glucocorticoid (GR), androjen veya progesteron reseptörleriyle etkileşime girmez ve spironolakton benzeri jinekomasti/empotans gibi hormonal yan etkilere yol açmaz. Cortisol sentezi veya seviyeleri üzerinde doğrudan bir etkisi yoktur.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>ASI:</strong><br>Yeni nesil ASI'lerin en büyük başarısı, aldosteron sentaz (CYP11B2) enzimi ile %93 dizilim benzerliği gösteren ve kortizol sentezinden sorumlu olan <strong>CYP11B1 (11β-hidroksilaz)</strong> enzimini etkilememeleridir. Son kuşak yüksek seçicilikteki ASI'ler (baxdrostat, lorundrostat vb.) kortizol sentezini ve sürrenal aksı bozmadan sadece aldosteronu seçici olarak düşürürler.</li></ul></div>"
+    },
+    {
+      "heading": "5. Güncel Klinik Onay ve Kullanım Durumları",
+      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Finerenon:</strong><br>Geniş kapsamlı Faz III çalışmaları (FIDELIO-DKD, FIGARO-DKD, FINEARTS-HF) ile nefroprospektif ve kardiyoprotektif etkinliği kanıtlanmış, <strong>klinik kullanımı onaylanmış (ör. Tip 2 Diyabet zeminindeki KBH ve albüminüri tedavisinde)</strong> bir ilaçtır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>ASI:</strong><br>Baxdrostat, lorundrostat, vicadrostat ve BI-690517 gibi moleküller, dirençli/kontrolsüz hipertansiyon, kronik böbrek hastalığı ve kalp yetmezliği alanlarında Faz II ve Faz III klinik çalışmaları devam eden veya son aşamada olan <strong>yeni nesil tedavi adaylarıdır</strong>.</li></ul></div>"
+    },
+    {
+      "heading": "Özet Karşılaştırma Tablosu",
+      "html": "<p class=\"text-[10.5px] text-slate-500 mb-1\">Tablo geniştir — yatayda kaydırarak görebilirsin.</p><div class=\"overflow-x-auto mb-4\"><table class=\"w-full text-[11px] border-collapse\"><thead><tr class=\"bg-slate-100\"><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\">Özellik / Parametre</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\"><strong>Finerenon (ns-MRA)</strong></th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900\"><strong>Aldosteron Sentaz İnhibitörleri (ASI)</strong></th></tr></thead><tbody class=\"text-slate-700\"><tr><td class=\"border border-slate-200 p-2\"><strong>Moleküler Hedef</strong></td><td class=\"border border-slate-200 p-2\">Mineralokortikoid Reseptörü (MR)</td><td class=\"border border-slate-200 p-2\">CYP11B2 (Aldosteron Sentaz Enzimi)</td></tr><tr class=\"bg-slate-50\"><td class=\"border border-slate-200 p-2\"><strong>Biyokimyasal Etki</strong></td><td class=\"border border-slate-200 p-2\">Reseptör seviyesinde kompetitif blokaj</td><td class=\"border border-slate-200 p-2\">Adrenal hormon sentezinin inhibisyonu</td></tr><tr><td class=\"border border-slate-200 p-2\"><strong>Plazma Aldosteron Düzeyi</strong></td><td class=\"border border-slate-200 p-2\">Artar (kompanzatuvar geri bildirim)</td><td class=\"border border-slate-200 p-2\"><strong>Belirgin Şekilde Düşer</strong></td></tr><tr class=\"bg-slate-50\"><td class=\"border border-slate-200 p-2\"><strong>Non-Genomik (MR-Bağımsız) Yolak Blokajı</strong></td><td class=\"border border-slate-200 p-2\">Sınırlı (yüksek aldosteron GPER vb. uyarabilir)</td><td class=\"border border-slate-200 p-2\"><strong>Tam Blokaj</strong> (Hormon düzeyi düştüğü için)</td></tr><tr><td class=\"border border-slate-200 p-2\"><strong>Kortizol Sentezine Etki</strong></td><td class=\"border border-slate-200 p-2\">Etkisiz (GR etkileşimi yok)</td><td class=\"border border-slate-200 p-2\">Etkisiz (Yeni ajanlar CYP11B1'i korur)</td></tr><tr class=\"bg-slate-50\"><td class=\"border border-slate-200 p-2\"><strong>Klinik Onay Durumu</strong></td><td class=\"border border-slate-200 p-2\"><strong>Onaylı</strong> (T2D + KBH ve Kalp Yetmezliği)</td><td class=\"border border-slate-200 p-2\"><strong>Faz II / III Aşamalarında</strong> (Geliştirilmekte)</td></tr></tbody></table></div>"
+    }
+  ]
+}

@@ -2010,6 +2010,11 @@
   },
   {
    "brans": "nefroloji",
+   "slug": "mra-asi-hiperkalemi-sglt2-kombinasyonu",
+   "baslik": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "diyaliz-tedavisi",
    "baslik": "Diyaliz (Renal Replasman Tedavisi)"
   },
@@ -5577,24 +5582,9 @@
  ],
  "kardiyoloji/direncli-hipertansiyon-yeni-nesil": [
   {
-   "brans": "kardiyoloji",
-   "slug": "aprocitentan-direncsiz-kbh-kullanimi",
-   "baslik": "Dirençli HT Olmayan KBH'da Aprocitentan Kullanımı"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "aprocitentan-kbh-ve-yasli",
-   "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "aprocitentan-kombinasyon-stratejileri",
-   "baslik": "Aprocitentan ve Kombinasyon Stratejileri: Renal Güvenlik"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "lipidoloji-statin-miyopatisi-sams",
-   "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
+   "brans": "nefroloji",
+   "slug": "finerenon-aldosteron-sentaz-inhibitorleri",
+   "baslik": "Finerenon ve Aldosteron Sentaz İnhibitörleri: Karşılaştırma"
   }
  ],
  "kardiyoloji/gebelikte-akut-koroner-sendrom": [
@@ -6135,18 +6125,18 @@
  "nefroloji/aldosteron-bobrek-fizyolojisi": [
   {
    "brans": "nefroloji",
-   "slug": "liddle-sendromu-mra-etkisizligi",
-   "baslik": "Liddle Sendromunda MRA'ların Etkisizliği ve ENaC İnhibitörleri"
-  },
-  {
-   "brans": "nefroloji",
    "slug": "enac-epitelyal-sodyum-kanali",
    "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
   },
   {
    "brans": "nefroloji",
-   "slug": "farmakoloji-potasyum-tutucu-diuretikler",
-   "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
+   "slug": "amilorid-spironolakton-karsilastirma",
+   "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "liddle-sendromu-mra-etkisizligi",
+   "baslik": "Liddle Sendromunda MRA'ların Etkisizliği ve ENaC İnhibitörleri"
   },
   {
    "brans": "nefroloji",
@@ -6164,6 +6154,28 @@
    "brans": "nefroloji",
    "slug": "enac-epitelyal-sodyum-kanali",
    "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
+  }
+ ],
+ "nefroloji/amilorid-spironolakton-karsilastirma": [
+  {
+   "brans": "nefroloji",
+   "slug": "liddle-sendromu-mra-etkisizligi",
+   "baslik": "Liddle Sendromunda MRA'ların Etkisizliği ve ENaC İnhibitörleri"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "farmakoloji-potasyum-tutucu-diuretikler",
+   "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "enac-epitelyal-sodyum-kanali",
+   "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "aldosteron-bobrek-fizyolojisi",
+   "baslik": "Aldosteron ve Böbrek Fizyolojisi"
   }
  ],
  "nefroloji/asit-baz-denge-bozukluklari": [
@@ -6278,6 +6290,11 @@
   },
   {
    "brans": "nefroloji",
+   "slug": "amilorid-spironolakton-karsilastirma",
+   "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "mineralokortikoid-fazlaligi-ayirici-tani",
    "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı"
   }
@@ -6285,40 +6302,25 @@
  "nefroloji/farmakoloji-finerenon": [
   {
    "brans": "nefroloji",
-   "slug": "aldosteron-mekanizmalari",
-   "baslik": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları"
+   "slug": "finerenon-aldosteron-sentaz-inhibitorleri",
+   "baslik": "Finerenon ve Aldosteron Sentaz İnhibitörleri: Karşılaştırma"
   },
   {
    "brans": "nefroloji",
-   "slug": "enac-epitelyal-sodyum-kanali",
-   "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "farmakoloji-potasyum-tutucu-diuretikler",
-   "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
+   "slug": "mra-asi-hiperkalemi-sglt2-kombinasyonu",
+   "baslik": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu"
   }
  ],
  "nefroloji/farmakoloji-finerenon-kalp-yetmezligi": [
   {
    "brans": "nefroloji",
-   "slug": "diuretikler",
-   "baslik": "Klinik Farmakoloji: Diüretikler ve Etki Mekanizmaları"
+   "slug": "finerenon-aldosteron-sentaz-inhibitorleri",
+   "baslik": "Finerenon ve Aldosteron Sentaz İnhibitörleri: Karşılaştırma"
   },
   {
    "brans": "nefroloji",
-   "slug": "farmakoloji-potasyum-tutucu-diuretikler",
-   "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "polikistik-bobrek-ekstrarenal",
-   "baslik": "ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "polikistik-bobrek-hastaligi-pkd",
-   "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
+   "slug": "mra-asi-hiperkalemi-sglt2-kombinasyonu",
+   "baslik": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu"
   }
  ],
  "nefroloji/farmakoloji-potasyum-tutucu-diuretikler": [
@@ -6329,18 +6331,45 @@
   },
   {
    "brans": "nefroloji",
+   "slug": "amilorid-spironolakton-karsilastirma",
+   "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "enac-epitelyal-sodyum-kanali",
    "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
   },
   {
    "brans": "nefroloji",
-   "slug": "aldosteron-bobrek-fizyolojisi",
-   "baslik": "Aldosteron ve Böbrek Fizyolojisi"
+   "slug": "mineralokortikoid-fazlaligi-ayirici-tani",
+   "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı"
+  }
+ ],
+ "nefroloji/finerenon-aldosteron-sentaz-inhibitorleri": [
+  {
+   "brans": "nefroloji",
+   "slug": "mra-asi-hiperkalemi-sglt2-kombinasyonu",
+   "baslik": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "direncli-hipertansiyon-yeni-nesil",
+   "baslik": "Dirençli ve Refrakter Hipertansiyon: Yeni Nesil Tedaviler"
   },
   {
    "brans": "nefroloji",
-   "slug": "mineralokortikoid-fazlaligi-ayirici-tani",
-   "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı"
+   "slug": "zona-glomeruloza-steroid",
+   "baslik": "Temel Bilimler: Zona Glomerulosa Neden Kortizol Üretemez?"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "farmakoloji-finerenon",
+   "baslik": "Yeni Nesil ns-MRA Finerenon"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "farmakoloji-finerenon-kalp-yetmezligi",
+   "baslik": "Finerenon ve Kalp Yetmezliği"
   }
  ],
  "nefroloji/fizyoloji-acth-adrenal-mekanizmalar": [
@@ -6682,13 +6711,18 @@
  "nefroloji/liddle-sendromu-mra-etkisizligi": [
   {
    "brans": "nefroloji",
+   "slug": "enac-epitelyal-sodyum-kanali",
+   "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "farmakoloji-potasyum-tutucu-diuretikler",
    "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
   },
   {
    "brans": "nefroloji",
-   "slug": "enac-epitelyal-sodyum-kanali",
-   "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
+   "slug": "amilorid-spironolakton-karsilastirma",
+   "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji"
   },
   {
    "brans": "nefroloji",
@@ -6860,6 +6894,38 @@
    "brans": "nefroloji",
    "slug": "farmakoloji-potasyum-tutucu-diuretikler",
    "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
+  }
+ ],
+ "nefroloji/mra-asi-hiperkalemi-sglt2-kombinasyonu": [
+  {
+   "brans": "nefroloji",
+   "slug": "finerenon-aldosteron-sentaz-inhibitorleri",
+   "baslik": "Finerenon ve Aldosteron Sentaz İnhibitörleri: Karşılaştırma"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "siadh-direncli-farmakoterapi",
+   "baslik": "Modül 4: Dirençli SIADH ve Modern Farmakoterapi Seçenekleri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "tls-elektrolit-diyaliz-yonetimi",
+   "baslik": "TLS: Elektrolit Yönetimi ve Renal Replasman Tedavisi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "tumor-lizis-sendromu-kapsamli",
+   "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "farmakoloji-finerenon",
+   "baslik": "Yeni Nesil ns-MRA Finerenon"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "farmakoloji-finerenon-kalp-yetmezligi",
+   "baslik": "Finerenon ve Kalp Yetmezliği"
   }
  ],
  "nefroloji/polikistik-bobrek-ekstrarenal": [
@@ -7132,6 +7198,11 @@
    "brans": "endokrinoloji",
    "slug": "adrenal-fizyoloji-ve-steroidogenez",
    "baslik": "Adrenal Fizyoloji ve Steroidogenez"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "finerenon-aldosteron-sentaz-inhibitorleri",
+   "baslik": "Finerenon ve Aldosteron Sentaz İnhibitörleri: Karşılaştırma"
   },
   {
    "brans": "nefroloji",
@@ -7600,6 +7671,11 @@
    "brans": "nefroloji",
    "slug": "asit-baz-denge-bozukluklari",
    "baslik": "Asit-Baz Denge Bozuklukları"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "mra-asi-hiperkalemi-sglt2-kombinasyonu",
+   "baslik": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu"
   }
  ],
  "onkoloji/tls-rasburikaz-vs-allopurinol": [
@@ -7611,9 +7687,9 @@
  ],
  "onkoloji/tumor-lizis-sendromu-kapsamli": [
   {
-   "brans": "onkoloji",
-   "slug": "febril-notropeni-konu",
-   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
+   "brans": "nefroloji",
+   "slug": "mra-asi-hiperkalemi-sglt2-kombinasyonu",
+   "baslik": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu"
   }
  ],
  "palyatif/noropatik-agrida-koadjuvan-tedavi": [
