@@ -5269,5 +5269,59 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "hiponatremi": {
+    "baslik": "Hiponatremi",
+    "aciklama": "Hiponatremi sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Kellerman RD, Rakel DP, Heidelbaugh JJ, ed. Conn's Current Therapy 2023. Elsevier; 2022. Bölüm: Hyponatremia",
+        "yil": 2022,
+        "url": "https://shop.elsevier.com/books/conns-current-therapy-2023/kellerman/978-0-443-10561-6",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Ferri FF. Ferri's Clinical Advisor 2024. Elsevier; 2023",
+        "yil": 2023,
+        "url": "https://shop.elsevier.com/books/ferris-clinical-advisor-2024/ferri/978-0-323-75576-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Hoorn EJ, Sterns RH. Causes of hyponatremia without hypotonicity (including pseudohyponatremia). UpToDate; son güncelleme 28 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/causes-of-hyponatremia-without-hypotonicity-including-pseudohyponatremia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Sterns RH. Causes of hypotonic hyponatremia in adults. UpToDate; son güncelleme 29 Eki 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/causes-of-hypotonic-hyponatremia-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Sterns RH. Diagnostic evaluation of adults with hyponatremia. UpToDate; son güncelleme 8 Eyl 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/diagnostic-evaluation-of-adults-with-hyponatremia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Sterns RH. Overview of the treatment of hyponatremia in adults. UpToDate; son güncelleme 25 Şub 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/overview-of-the-treatment-of-hyponatremia-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Sterns RH. Manifestations of hyponatremia and hypernatremia in adults. UpToDate; son güncelleme 5 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/manifestations-of-hyponatremia-and-hypernatremia-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Sterns RH. Treatment of hyponatremia: Syndrome of inappropriate antidiuresis (SIAD) and reset osmostat. UpToDate; son güncelleme 5 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-hyponatremia-syndrome-of-inappropriate-antidiuresis-siad-and-reset-osmostat",
+        "tur": "uptodate"
+      }
+    ]
   }
 }
