@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react';
 import { kalinIsle, duzMetin } from '@/app/lib/metin';
+import { useSonucuGoster, useSoruKlavyesi, useGecisteBasaDon } from '@/app/lib/soru-akisi';
 
 /* ──────────────────── TYPES ──────────────────── */
 interface Adim {
@@ -129,6 +130,22 @@ function AdimKarti({
     if (cevapVerildi) return;
     setSecim(harf);
   }, [cevapVerildi]);
+
+  /* Soru motoruyla ORTAK akış (app/lib/soru-akisi.ts) — ölçüldü: cevaptan
+     sonra sonuç başlığı görünür alanın 713/768. pikselindeydi, klavye yoktu.
+     Enter / → o an ekrandaki "ileri" düğmesinin işini yapar: açık uçlu adımda
+     yanıtı açar, sonra klinik seyri, sonra sonraki adıma geçer. */
+  const sonucRef = useSonucuGoster<HTMLDivElement>(cevapVerildi);
+  useSoruKlavyesi({
+    harfler: Object.keys(adim.secenekler ?? {}),
+    secilebilir: !cevapVerildi && !acikUclu,
+    sec: secenek,
+    ileri: !cevapVerildi
+      ? (acikUclu ? () => setYanitAcik(true) : null)
+      : adim.sonraki_bilgi && !sonrakiAcik
+        ? () => setSonrakiAcik(true)
+        : !isLast ? onNext : null,
+  });
 
   function secenekStil(harf: string): React.CSSProperties {
     const base: React.CSSProperties = {
@@ -288,7 +305,7 @@ function AdimKarti({
 
       {/* CEVAP VERİLDİ → AÇIKLAMA */}
       {cevapVerildi && (
-        <div style={{
+        <div ref={sonucRef} style={{
           border: `1.5px solid ${acikUclu ? '#b8cfe8' : dogruMu ? '#80c898' : '#e08080'}`,
           borderRadius: '12px', overflow: 'hidden',
           animation: 'fadeIn .25s ease',
@@ -446,8 +463,8 @@ function AdimKarti({
       )}
 
       {!cevapVerildi && !acikUclu && (
-        <p style={{ fontSize: '11px', color: '#4a6a8a', textAlign: 'center', marginTop: '.4rem' }}>
-          Bir seçenek işaretleyin
+        <p style={{ fontSize: '12px', color: '#4a6a8a', textAlign: 'center', marginTop: '.4rem' }}>
+          Bir seçenek işaretleyin · klavyede {Object.keys(adim.secenekler ?? {}).join(' ')}
         </p>
       )}
 
@@ -466,6 +483,10 @@ export default function VakaEngine({ veri, lang, branch }: Props) {
   const backHref = veri.topic
     ? `/${lang}/premium/ydus/${branch}/${veri.topic}`
     : `/${lang}/premium/ydus/${branch}`;
+
+  // Adım değişince başa dön, odak adım başlığına (ölçüldü: odak BODY'ye düşüyordu).
+  // Erken dönüşten ÖNCE — kanca sırası her çizimde aynı kalmalı.
+  useGecisteBasaDon(String(adimIndex), 'vaka-adim-basi');
 
   if (!adim) return (
     <div style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui, sans-serif' }}>
@@ -537,10 +558,10 @@ export default function VakaEngine({ veri, lang, branch }: Props) {
         {/* ADIM PROGRES ÇUBUĞU */}
         <div style={{ marginBottom: '1.25rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '5px' }}>
-            <span style={{ fontSize: '11px', fontWeight: 700, color: '#1a3a6b' }}>
+            <span id="vaka-adim-basi" tabIndex={-1} style={{ fontSize: '11px', fontWeight: 700, color: '#1a3a6b' }}>
               {/* Ölçüldü: 35 adımın 17'sinde `baslik` YOK; koşulsuz tire
                   "Adım 2 / 4 — " diye sarkan bir ayraç basıyordu. */}
-              Adım {adimIndex + 1} / {toplamAdim}{adim.baslik ? ` — ${adim.baslik}` : ''}
+              {`Adım ${adimIndex + 1} / ${toplamAdim}${adim.baslik ? ` — ${adim.baslik}` : ''}`}
             </span>
             <span style={{ fontSize: '11px', color: '#4a6a8a' }}>
               {Math.round(((adimIndex + 1) / toplamAdim) * 100)}%

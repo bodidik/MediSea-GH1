@@ -3,6 +3,7 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { kalinIsle, duzMetin } from '@/app/lib/metin';
 import { guvenliCozumle } from '@/app/lib/depo';
+import { useSonucuGoster, useSoruKlavyesi, useGecisteBasaDon } from '@/app/lib/soru-akisi';
 
 /* ────────────────────────── TYPES ────────────────────────── */
 interface Soru {
@@ -89,53 +90,15 @@ function SoruKarti({
     onAnswer(harf === soru.dogru);
   }, [cevapVerildi, onAnswer, soru.dogru]);
 
-  /**
-   * CEVAPTAN SONRA SONUÇ GÖRÜNÜR OLMALI — ölçüldü (1024×768): son şık
-   * cevaplanınca sonuç başlığı görünür alanın son 33 pikselindeydi, yani
-   * "doğru mu?" sorusunun cevabı ekranda değildi. Kart görünür alanın alt
-   * %40'ındaysa başına kaydırılır; zaten yukarıdaysa sayfa oynatılmaz.
-   * (`scroll-padding-top` html'de — başlık üst şeridin altında kalır.)
-   */
-  const sonucRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    if (!cevapVerildi) return;
-    const kart = sonucRef.current;
-    if (!kart || kart.getBoundingClientRect().top < window.innerHeight * 0.6) return;
-    const azHareket = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    kart.scrollIntoView({ block: 'start', behavior: azHareket ? 'auto' : 'smooth' });
-  }, [cevapVerildi]);
-
-  /**
-   * KLAVYE — kart oynatıcısında (Space · ← →) vardı, soru motorunda yoktu:
-   * her soru fareyle şık + sayfa sonundaki düğme demekti. A–E ya da 1–5
-   * şıkkı işaretler, cevaptan sonra Enter ya da → sonraki soruya geçer.
-   * Yazı alanında (not defteri) ve kısayol tuşlarıyla basılan tuşa karışmaz;
-   * odak bir bağlantı ya da düğmedeyken Enter o ögenin kendi işidir.
-   */
-  useEffect(() => {
-    const harfler = Object.keys(soru.secenekler);
-    function tus(e: KeyboardEvent) {
-      if (e.defaultPrevented || e.ctrlKey || e.metaKey || e.altKey) return;
-      const hedef = e.target as HTMLElement | null;
-      if (hedef && (hedef.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(hedef.tagName))) return;
-      if (!cevapVerildi) {
-        const k = e.key.length === 1 ? e.key.toLocaleUpperCase('en') : '';
-        const harf = /^[1-9]$/.test(k) ? harfler[Number(k) - 1] : harfler.includes(k) ? k : undefined;
-        if (harf) {
-          e.preventDefault();
-          secenek(harf);
-        }
-        return;
-      }
-      const etkilesimli = hedef && /^(A|BUTTON)$/.test(hedef.tagName) && hedef.getAttribute('aria-disabled') !== 'true';
-      if (e.key === 'ArrowRight' || (e.key === 'Enter' && !etkilesimli)) {
-        e.preventDefault();
-        onNext();
-      }
-    }
-    document.addEventListener('keydown', tus);
-    return () => document.removeEventListener('keydown', tus);
-  }, [soru.secenekler, cevapVerildi, secenek, onNext]);
+  // Sonuç görünür alana, klavye (A–E / 1–9 · Enter / →) — ortak kanca,
+  // gerekçe ve ölçüm app/lib/soru-akisi.ts. Vaka motoru da aynısını çağırıyor.
+  const sonucRef = useSonucuGoster<HTMLDivElement>(cevapVerildi);
+  useSoruKlavyesi({
+    harfler: Object.keys(soru.secenekler),
+    secilebilir: !cevapVerildi,
+    sec: secenek,
+    ileri: cevapVerildi ? onNext : null,
+  });
 
   function secenekStil(harf: string): React.CSSProperties {
     const base: React.CSSProperties = {
@@ -703,20 +666,13 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
    * taşınır; klavyeyle ilerleyen kullanıcı ve ekran okuyucu yeni soruya
    * baştan girer. İlk açılışta ve sürdürmede çalışmaz — odak çalınmaz.
    * Sonuç ekranına geçişte de başa döner (`soru-basi` orada yok, odak kalır).
+   * Mantık ortak kancada (app/lib/soru-akisi.ts).
    */
-  const soruAnahtari = `${soruIndex}:${aktifIdler ? aktifIdler.join(',') : ''}:${bitti}`;
-  const oncekiAnahtar = useRef(soruAnahtari);
-  useEffect(() => {
-    // Sayaç değil önceki anahtar: StrictMode etkiyi iki kez çalıştırıyor.
-    if (oncekiAnahtar.current === soruAnahtari) return;
-    oncekiAnahtar.current = soruAnahtari;
-    if (sessizGecis.current) {
-      sessizGecis.current = false;
-      return;
-    }
-    window.scrollTo({ top: 0 });
-    document.getElementById('soru-basi')?.focus({ preventScroll: true });
-  }, [soruAnahtari]);
+  useGecisteBasaDon(
+    `${soruIndex}:${aktifIdler ? aktifIdler.join(',') : ''}:${bitti}`,
+    'soru-basi',
+    sessizGecis,
+  );
 
   /**
    * BOŞ DURUM ÇIKIŞ YOLU İSTER — bir dönem yalnızca tek bir cümleydi.
