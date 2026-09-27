@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import { kalinIsle, duzMetin } from '@/app/lib/metin';
 import { guvenliCozumle } from '@/app/lib/depo';
 
@@ -88,6 +88,54 @@ function SoruKarti({
     setSecim(harf);
     onAnswer(harf === soru.dogru);
   }, [cevapVerildi, onAnswer, soru.dogru]);
+
+  /**
+   * CEVAPTAN SONRA SONUÇ GÖRÜNÜR OLMALI — ölçüldü (1024×768): son şık
+   * cevaplanınca sonuç başlığı görünür alanın son 33 pikselindeydi, yani
+   * "doğru mu?" sorusunun cevabı ekranda değildi. Kart görünür alanın alt
+   * %40'ındaysa başına kaydırılır; zaten yukarıdaysa sayfa oynatılmaz.
+   * (`scroll-padding-top` html'de — başlık üst şeridin altında kalır.)
+   */
+  const sonucRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!cevapVerildi) return;
+    const kart = sonucRef.current;
+    if (!kart || kart.getBoundingClientRect().top < window.innerHeight * 0.6) return;
+    const azHareket = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    kart.scrollIntoView({ block: 'start', behavior: azHareket ? 'auto' : 'smooth' });
+  }, [cevapVerildi]);
+
+  /**
+   * KLAVYE — kart oynatıcısında (Space · ← →) vardı, soru motorunda yoktu:
+   * her soru fareyle şık + sayfa sonundaki düğme demekti. A–E ya da 1–5
+   * şıkkı işaretler, cevaptan sonra Enter ya da → sonraki soruya geçer.
+   * Yazı alanında (not defteri) ve kısayol tuşlarıyla basılan tuşa karışmaz;
+   * odak bir bağlantı ya da düğmedeyken Enter o ögenin kendi işidir.
+   */
+  useEffect(() => {
+    const harfler = Object.keys(soru.secenekler);
+    function tus(e: KeyboardEvent) {
+      if (e.defaultPrevented || e.ctrlKey || e.metaKey || e.altKey) return;
+      const hedef = e.target as HTMLElement | null;
+      if (hedef && (hedef.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(hedef.tagName))) return;
+      if (!cevapVerildi) {
+        const k = e.key.length === 1 ? e.key.toLocaleUpperCase('en') : '';
+        const harf = /^[1-9]$/.test(k) ? harfler[Number(k) - 1] : harfler.includes(k) ? k : undefined;
+        if (harf) {
+          e.preventDefault();
+          secenek(harf);
+        }
+        return;
+      }
+      const etkilesimli = hedef && /^(A|BUTTON)$/.test(hedef.tagName) && hedef.getAttribute('aria-disabled') !== 'true';
+      if (e.key === 'ArrowRight' || (e.key === 'Enter' && !etkilesimli)) {
+        e.preventDefault();
+        onNext();
+      }
+    }
+    document.addEventListener('keydown', tus);
+    return () => document.removeEventListener('keydown', tus);
+  }, [soru.secenekler, cevapVerildi, secenek, onNext]);
 
   function secenekStil(harf: string): React.CSSProperties {
     const base: React.CSSProperties = {
@@ -192,8 +240,9 @@ function SoruKarti({
           borderLeft: '3px solid #1a3a6b', borderRadius: '0 10px 10px 0',
           padding: '1.1rem 1.25rem', marginBottom: '1.25rem',
         }}>
-          <div style={{ fontSize: '11px', fontWeight: 700, color: '#1a3a6b', textTransform: 'uppercase', letterSpacing: '.1em', marginBottom: '.5rem' }}>
-            Soru {soruNo}
+          {/* Soru değişince odak buraya gelir (ANA BİLEŞEN'deki geçiş etkisi). */}
+          <div id="soru-basi" tabIndex={-1} style={{ fontSize: '11px', fontWeight: 700, color: '#1a3a6b', textTransform: 'uppercase', letterSpacing: '.1em', marginBottom: '.5rem' }}>
+            {`Soru ${soruNo}`}
           </div>
           {/* `pre-line`: içerik paragrafı `\n` ile ayırıyor (632 soru metninin
               429'u). `normal` iken hepsi tek bloğa yapışıyordu. textContent
@@ -282,7 +331,7 @@ function SoruKarti({
 
         {/* SONUÇ + AÇIKLAMA */}
         {cevapVerildi && (
-          <div style={{
+          <div ref={sonucRef} style={{
             border: `1.5px solid ${dogruMu ? '#80c898' : '#e08080'}`,
             borderRadius: '12px', overflow: 'hidden',
             animation: 'fadeIn .25s ease',
@@ -413,7 +462,7 @@ function SoruKarti({
               }}>
                 ← Konuya dön
               </a>
-              <button onClick={onNext} style={{
+              <button onClick={onNext} aria-keyshortcuts="Enter ArrowRight" title="Klavyede Enter ya da →" style={{
                 fontSize: '12px', fontWeight: 600, color: '#fff',
                 border: 'none', borderRadius: '8px', padding: '7px 18px',
                 background: '#1a3a6b', cursor: 'pointer',
@@ -425,8 +474,8 @@ function SoruKarti({
         )}
 
         {!cevapVerildi && (
-          <p style={{ fontSize: '11px', color: '#4a6a8a', textAlign: 'center', marginTop: '.5rem' }}>
-            Bir seçenek işaretleyin
+          <p style={{ fontSize: '12px', color: '#4a6a8a', textAlign: 'center', marginTop: '.5rem' }}>
+            Bir seçenek işaretleyin · klavyede {Object.keys(soru.secenekler).join(' ')}
           </p>
         )}
 
@@ -571,6 +620,8 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
   const sorular = aktifIdler
     ? tumSorular.filter((s) => aktifIdler.includes(s.id))
     : tumSorular;
+  // Sürdürmenin imleci ayarlaması bir "geçiş" değil — odak çalınmaz.
+  const sessizGecis = useRef(false);
 
   useEffect(() => {
     /**
@@ -586,6 +637,7 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
       const s = typeof kayit === 'object' && kayit ? kayit.s : null;
       if (s && typeof s === 'object') setSonuclar(s);
       if (typeof i === 'number' && i > 0 && i < tumSorular.length) {
+        sessizGecis.current = true;
         setSoruIndex(i);
         setDevamMesaji(true);
         setTimeout(() => setDevamMesaji(false), 3000);
@@ -642,6 +694,29 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
   const backHref = veri.topic
     ? `/${lang}/premium/ydus/${branch}/${veri.topic}`
     : `/${lang}/premium/ydus/${branch}`;
+
+  /**
+   * SORU DEĞİŞİNCE BAŞA DÖN — ölçüldü: sayfa sonundaki "Sonraki soru"ya
+   * basınca kaydırma yerinde kalıyordu (1693 → tarayıcının kırptığı 235) ve
+   * yeni sorunun "Soru 2" etiketi görünür alanın 74px ÜSTÜNDE kalıyordu:
+   * klinik vaka ortasından okunmaya başlanıyordu. Odak da soru başına
+   * taşınır; klavyeyle ilerleyen kullanıcı ve ekran okuyucu yeni soruya
+   * baştan girer. İlk açılışta ve sürdürmede çalışmaz — odak çalınmaz.
+   * Sonuç ekranına geçişte de başa döner (`soru-basi` orada yok, odak kalır).
+   */
+  const soruAnahtari = `${soruIndex}:${aktifIdler ? aktifIdler.join(',') : ''}:${bitti}`;
+  const oncekiAnahtar = useRef(soruAnahtari);
+  useEffect(() => {
+    // Sayaç değil önceki anahtar: StrictMode etkiyi iki kez çalıştırıyor.
+    if (oncekiAnahtar.current === soruAnahtari) return;
+    oncekiAnahtar.current = soruAnahtari;
+    if (sessizGecis.current) {
+      sessizGecis.current = false;
+      return;
+    }
+    window.scrollTo({ top: 0 });
+    document.getElementById('soru-basi')?.focus({ preventScroll: true });
+  }, [soruAnahtari]);
 
   /**
    * BOŞ DURUM ÇIKIŞ YOLU İSTER — bir dönem yalnızca tek bir cümleydi.
