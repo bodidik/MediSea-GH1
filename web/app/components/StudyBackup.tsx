@@ -59,8 +59,10 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
       // Kart işareti yalnızca varsa yazılır: hiç flashcard çalışmamış kullanıcıya
       // "0 kart işareti" demek bilgi değil gürültü.
       const kartlar = ozet.kartIsareti ? ` · ${ozet.kartIsareti} kart işareti` : "";
+      // Premium puanı da aynı kural: varsa yazılır.
+      const puan = ozet.puan ? ` · ${ozet.puan} puan` : "";
       setDurum(
-        `${ozet.sayfa} sayfa · ${ozet.vurgu} vurgu · ${ozet.cizgi} çizgi${kartlar} yedeklendi`
+        `${ozet.sayfa} sayfa · ${ozet.vurgu} vurgu · ${ozet.cizgi} çizgi${kartlar}${puan} yedeklendi`
       );
     } catch {
       setDurum("Tarayıcı bu site için veri saklamayı engellediğinden yedek alınamadı.");
@@ -177,6 +179,7 @@ export default function StudyBackup({ onChanged }: { onChanged?: () => void }) {
               <p className="mb-3 text-[12px] leading-relaxed text-slate-600">
                 {plan.ozet!.sayfa} sayfa · {plan.ozet!.vurgu} vurgu · {plan.ozet!.not} not ·{" "}
                 {plan.ozet!.cizgi} çizgi
+                {plan.ozet!.puan ? ` · ${plan.ozet!.puan} puan` : ""}
                 {/* `> 0` YETMİYORDU: Date aralığının dışında kalan bir SAYI
                     (ör. 1e20) kapıdan geçip "Invalid Date" bastırıyordu — hem de
                     kullanıcının verisini silip silmeyeceğine karar verdiği panelde.

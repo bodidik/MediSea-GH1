@@ -4,7 +4,7 @@ import { useState, useCallback, useEffect } from 'react';
 import { kalinIsle, duzMetin } from '@/app/lib/metin';
 import { useSonucuGoster, useSoruKlavyesi, useGecisteBasaDon } from '@/app/lib/soru-akisi';
 import { useUser } from '@/app/(ydus)/context/UserContext';
-import { XP, xpKimligi } from '@/app/lib/xp';
+import { xpKimligi } from '@/app/lib/xp';
 
 /* ──────────────────── TYPES ──────────────────── */
 interface Adim {
@@ -608,7 +608,7 @@ export default function VakaEngine({ veri, lang, branch, vakaId }: Props) {
           toplamAdim={toplamAdim}
           onNext={() => setAdimIndex(i => Math.min(i + 1, toplamAdim - 1))}
           isLast={adimIndex === toplamAdim - 1}
-          onBitti={() => kazan(xpKimligi.vaka(branch, vakaId), XP.vakaBitir)}
+          onBitti={() => kazan(xpKimligi.vaka(branch, vakaId))}
         />
 
       </div>

@@ -15,6 +15,7 @@ import type { NoteDoc } from "@/app/lib/study-index";
 
 import { BOZUK_EK, guvenliDiziOku, guvenliNesneOku } from "@/app/lib/depo";
 import { SEYIR_KEY, seyirBirlestir, seyirNormalize, seyirOku, type Seyir } from "@/app/lib/seyir";
+import { PUAN_KEY, puanBirlestir, puanBosMu, puanNormalize, type PuanKaydi } from "@/app/lib/xp";
 
 const MARK_PREFIX = "medisea:marks:v2:";
 const NOTE_PREFIX = "medisea:notes:v1:";
@@ -53,6 +54,15 @@ export type Backup = {
    * boş deftere çevirir. Birleştirme BİRLEŞİM — bkz. `seyirBirlestir`.
    */
   seyir: Seyir;
+  /**
+   * Premium ilerleme: XP, kazanımlar, tamamlanan konular, rozetler
+   * (`ydus_premium_user`). Yedekte de senkronda da YOKTU — puan cihaz
+   * değiştirince kayboluyordu. Eski yedeklerde alan yok; `parseBackup` boş
+   * kayda çevirir. Birleştirme `puanBirlestir` (app/lib/xp.ts): kazanımlar
+   * birleşim, XP onlardan türer — senkron aynı yedeği her girişte yeniden
+   * birleştirdiği için TEKRARDA SABİT olmak zorunda.
+   */
+  puan: PuanKaydi;
 };
 
 export type BackupSummary = {
@@ -63,6 +73,8 @@ export type BackupSummary = {
   tekrarDurumu: number;
   /** Flashcard setlerinde "biliyorum" işaretli kart sayısı */
   kartIsareti: number;
+  /** Premium puan (XP) */
+  puan: number;
   tarih: number;
 };
 
@@ -144,6 +156,7 @@ export function readAll(): Backup {
     log: guvenliNesneOku<StudyLog>(LOG_KEY) ?? {},
     kartlar,
     seyir: seyirOku(),
+    puan: puanNormalize(guvenliNesneOku<unknown>(PUAN_KEY)),
   };
 }
 
@@ -156,6 +169,7 @@ export function summarize(b: Backup): BackupSummary {
     cizgi: Object.values(b.notes).reduce((n, d) => n + (d.strokes?.length ?? 0), 0),
     tekrarDurumu: Object.keys(b.review).length,
     kartIsareti: Object.values(b.kartlar).reduce((n, a) => n + a.length, 0),
+    puan: b.puan.xp,
     tarih: b.at,
   };
 }
@@ -208,6 +222,8 @@ function parseBackup(text: string): { b: Backup | null; hata?: string } {
       kartlar: (b.kartlar && typeof b.kartlar === "object" ? b.kartlar : {}) as Backup["kartlar"],
       // Aynı gerekçe: seyir defteri eklenmeden önceki yedeklerde alan yok.
       seyir: seyirNormalize(b.seyir),
+      // Aynı gerekçe: puan alanı eklenmeden önceki yedeklerde yok.
+      puan: puanNormalize(b.puan),
     },
   };
 }
@@ -296,7 +312,7 @@ export function applyImport(text: string, mode: ImportMode): { ok: boolean; hata
       // Yalnızca write()'ın GERİ KOYACAĞI anahtarları sil. Kullanıcı tercihleri
       // (notew, notepaper), tanıtım kartları (hint:*) ve senkron durumu (sync:*)
       // yedekte YOKTUR; silinirse geri gelmezler — bu sessiz veri kaybıdır.
-      const VERİ_ONEKI = [MARK_PREFIX, NOTE_PREFIX, REVIEW_KEY, INDEX_KEY, LOG_KEY, KART_PREFIX, SEYIR_KEY];
+      const VERİ_ONEKI = [MARK_PREFIX, NOTE_PREFIX, REVIEW_KEY, INDEX_KEY, LOG_KEY, KART_PREFIX, SEYIR_KEY, PUAN_KEY];
       const silinecek: string[] = [];
       for (let i = 0; i < localStorage.length; i++) {
         const k = localStorage.key(i);
@@ -361,7 +377,10 @@ export function applyImport(text: string, mode: ImportMode): { ok: boolean; hata
     // seyir defteri: BİRLEŞİM (kart işaretleriyle aynı gerekçe)
     const seyir = seyirBirlestir(mevcut.seyir, gelen.seyir);
 
-    write({ app: "medisea", v: 1, at: Date.now(), marks, notes, review, index, log, kartlar, seyir });
+    // puan: kazanımlar birleşim, XP onlardan türer (tekrarda sabit)
+    const puan = puanBirlestir(mevcut.puan, gelen.puan);
+
+    write({ app: "medisea", v: 1, at: Date.now(), marks, notes, review, index, log, kartlar, seyir, puan });
     return { ok: true };
   } catch (e) {
     return { ok: false, hata: "Yazma başarısız — tarayıcı depolama alanı dolu olabilir." };
@@ -386,6 +405,7 @@ function write(b: Backup) {
   if (b.seyir.defter.length || b.seyir.kutlanan.length) {
     localStorage.setItem(SEYIR_KEY, JSON.stringify(b.seyir));
   }
+  if (!puanBosMu(b.puan)) localStorage.setItem(PUAN_KEY, JSON.stringify(b.puan));
 }
 
 /* ── Depolama ölçümü ───────────────────────────────────────────────────── */

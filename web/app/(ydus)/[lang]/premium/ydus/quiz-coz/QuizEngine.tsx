@@ -5,7 +5,7 @@ import { kalinIsle, duzMetin } from '@/app/lib/metin';
 import { guvenliCozumle } from '@/app/lib/depo';
 import { useSonucuGoster, useSoruKlavyesi, useGecisteBasaDon } from '@/app/lib/soru-akisi';
 import { useUser } from '@/app/(ydus)/context/UserContext';
-import { XP, xpKimligi } from '@/app/lib/xp';
+import { xpKimligi } from '@/app/lib/xp';
 
 /* ────────────────────────── TYPES ────────────────────────── */
 interface Soru {
@@ -685,7 +685,7 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
    */
   useEffect(() => {
     if (!bitti || aktifIdler !== null) return;
-    kazan(xpKimligi.set(veri.id), XP.setBitir);
+    kazan(xpKimligi.set(veri.id));
     if (veri.topic) completeModule(veri.topic, 0);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bitti, aktifIdler]);
@@ -831,7 +831,7 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
         onAnswer={(d) => {
           setSonuclar((p) => ({ ...p, [aktifSoru.id]: d }));
           // İlk doğru cevap puan verir; kimlik bir kez sayılır (app/lib/xp.ts).
-          if (d) kazan(xpKimligi.soru(veri.id, aktifSoru.id), XP.dogruCevap);
+          if (d) kazan(xpKimligi.soru(veri.id, aktifSoru.id));
         }}
         skor={skor}
         lang={lang}

@@ -177,6 +177,7 @@ medisea:marks:v2:<yol>    vurgular            medisea:review:v1   tekrar takvimi
 medisea:notes:v1:<yol>    not + çizim         medisea:log:v1      günlük çalışma
 medisea:index:v1          yol → başlık        medisea:hint:…      tanıtım kartı
 medisea:seyir:v1          seyir defteri       medisea:deniz:kapali  sürpriz tercihi (yedeğe GİRMEZ)
+ydus_premium_user         premium puan (XP · kazanımlar · konular) — yedek+senkronda; birleştirme `puanBirlestir` (app/lib/xp.ts)
 ```
 
 ### Deniz sürprizleri (19 Eylül 2026)

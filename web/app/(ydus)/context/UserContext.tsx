@@ -1,5 +1,7 @@
 'use client';
 import { createContext, useContext, useState, useEffect, useRef, useCallback, ReactNode } from 'react';
+import { PUAN_KEY, kazanimDegeri, puanBirlestir, puanNormalize } from '@/app/lib/xp';
+import { degistiBildir } from '@/app/lib/depo';
 
 // Sistemin tanıyacağı veri tipleri
 type UserState = {
@@ -11,27 +13,20 @@ type UserState = {
   kazanimlar: string[];
   addXp: (amount: number) => void;
   completeModule: (moduleId: string, earnedXp: number, badgeId?: string) => void;
-  /** Kimlik İLK kez görülüyorsa XP ekler; ikinci çağrı hiçbir şey yapmaz. */
-  kazan: (kimlik: string, miktar: number) => void;
+  /** Kimlik İLK kez görülüyorsa XP ekler (değer kimlikten, `kazanimDegeri`); ikinci çağrı hiçbir şey yapmaz. */
+  kazan: (kimlik: string) => void;
 };
 
 export const UserContext = createContext<UserState | undefined>(undefined);
 
-type DepoKaydi = { xp?: unknown; completedModules?: unknown; badges?: unknown; kazanimlar?: unknown };
-
 /** Depodaki kayıt; yoksa ya da bozuksa `null` (bozuk kayıt yüklemede yedeğe taşınır). */
-function depoOku(): DepoKaydi | null {
+function depoOku() {
   try {
-    const v = JSON.parse(localStorage.getItem('ydus_premium_user') || 'null');
-    return v && typeof v === 'object' ? (v as DepoKaydi) : null;
+    const v = JSON.parse(localStorage.getItem(PUAN_KEY) || 'null');
+    return v && typeof v === 'object' ? puanNormalize(v) : null;
   } catch {
     return null;
   }
-}
-
-function birlesim(depodaki: unknown, bizdeki: string[]): string[] {
-  const eski = Array.isArray(depodaki) ? depodaki.filter((x): x is string => typeof x === 'string') : [];
-  return Array.from(new Set([...eski, ...bizdeki]));
 }
 
 export function UserProvider({ children }: { children: ReactNode }) {
@@ -71,18 +66,17 @@ export function UserProvider({ children }: { children: ReactNode }) {
   // Sayfa yüklendiğinde eski verileri tarayıcı hafızasından (LocalStorage) çek
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('ydus_premium_user');
+      const saved = localStorage.getItem(PUAN_KEY);
       if (saved) {
-        const parsed = JSON.parse(saved);
-        setXp(typeof parsed?.xp === 'number' ? parsed.xp : 0);
-        setCompletedModules(Array.isArray(parsed?.completedModules) ? parsed.completedModules : []);
-        setBadges(Array.isArray(parsed?.badges) ? parsed.badges : []);
-        // Eski kayıtta alan YOK — boş listeye düşer.
-        const k: string[] = Array.isArray(parsed?.kazanimlar)
-          ? parsed.kazanimlar.filter((x: unknown): x is string => typeof x === 'string')
-          : [];
-        odenen.current = new Set(k);
-        setKazanimlar(k);
+        // Ayrıştırma hatası aşağıdaki kurtarma dalına düşer; şekil ise
+        // yedek/senkronla ORTAK normalleştiriciden geçer (eski kayıtta
+        // `kazanimlar` YOK — boş listeye düşer).
+        const p = puanNormalize(JSON.parse(saved));
+        setXp(p.xp);
+        setCompletedModules(p.completedModules);
+        setBadges(p.badges);
+        odenen.current = new Set(p.kazanimlar);
+        setKazanimlar(p.kazanimlar);
       }
     } catch {
       /**
@@ -98,8 +92,8 @@ export function UserProvider({ children }: { children: ReactNode }) {
        * kaybolmuyor.
        */
       try {
-        const ham = localStorage.getItem('ydus_premium_user');
-        if (ham) localStorage.setItem('ydus_premium_user_bozuk', ham);
+        const ham = localStorage.getItem(PUAN_KEY);
+        if (ham) localStorage.setItem(PUAN_KEY + '_bozuk', ham);
       } catch {
         // Yedekleme de başarısızsa yapılabilecek bir şey yok.
       }
@@ -108,29 +102,23 @@ export function UserProvider({ children }: { children: ReactNode }) {
   }, []);
 
   /**
-   * OKU-BİRLEŞTİR-YAZ — XP artık canlıda kazanılıyor, yani iki sekme aynı
-   * kaydı yazabiliyor. Durumu OLDUĞU GİBİ yazmak, son yazan sekmenin ötekinin
-   * kazancını silmesi demekti (soru motorunun ilerleme kaydında ölçülüp aynı
-   * deyimle kapatılan sınıf). Listeler birleşim; XP ise depodaki değerin
-   * üstüne BU sekmede kazanılan fark (`bekleyenXp`) — ikisi toplanmaz,
-   * aynı kazanım iki kez sayılmaz. Bilinmeyen alan yazılmaz (düşer).
+   * OKU-BİRLEŞTİR-YAZ — XP canlıda kazanılıyor, yani iki sekme aynı kaydı
+   * yazabiliyor. Durumu OLDUĞU GİBİ yazmak, son yazan sekmenin ötekinin
+   * kazancını silmesi demekti. Birleştirme yedek ve senkronla AYNI kural
+   * (`puanBirlestir`, app/lib/xp.ts): kazanımlar birleşim, XP onlardan
+   * türer — tekrarda sabit, iki taraftaki kazanç tam toplanır. Bilinmeyen
+   * alan yazılmaz (düşer).
    */
-  const bekleyenXp = useRef(0);
   useEffect(() => {
     if (!hazir) return;
     try {
+      const bizim = { xp, completedModules, badges, kazanimlar };
       const depo = depoOku();
-      const yeniXp = typeof depo?.xp === 'number' ? depo.xp + bekleyenXp.current : xp;
-      const kayit = {
-        xp: yeniXp,
-        completedModules: birlesim(depo?.completedModules, completedModules),
-        badges: birlesim(depo?.badges, badges),
-        kazanimlar: birlesim(depo?.kazanimlar, kazanimlar),
-      };
-      localStorage.setItem('ydus_premium_user', JSON.stringify(kayit));
-      bekleyenXp.current = 0;
-      // Öteki sekmenin kazancı ekrana da gelsin; fark yoksa durum değişmez.
-      if (yeniXp !== xp) setXp(yeniXp);
+      const kayit = depo ? puanBirlestir(depo, bizim) : bizim;
+      localStorage.setItem(PUAN_KEY, JSON.stringify(kayit));
+      // Öteki sekmenin (ya da senkronun) kazancı ekrana da gelsin; fark
+      // yoksa durum değişmez ve etki yeniden tetiklenmez.
+      if (kayit.xp !== xp) setXp(kayit.xp);
       if (kayit.kazanimlar.length !== kazanimlar.length) {
         odenen.current = new Set(kayit.kazanimlar);
         setKazanimlar(kayit.kazanimlar);
@@ -142,36 +130,31 @@ export function UserProvider({ children }: { children: ReactNode }) {
     }
   }, [hazir, xp, completedModules, badges, kazanimlar]);
 
-  const kazan = useCallback((kimlik: string, miktar: number) => {
+  const kazan = useCallback((kimlik: string) => {
     // Yükleme bitmeden ödeme yok: depodaki kazanımlar henüz bilinmiyor.
     if (!hazir || odenen.current.has(kimlik)) return;
-    // Öteki sekme bu kazanımı ödediyse ikinci kez ödeme.
-    const depo = depoOku();
-    if (Array.isArray(depo?.kazanimlar) && depo.kazanimlar.includes(kimlik)) {
-      odenen.current.add(kimlik);
-      return;
-    }
     odenen.current.add(kimlik);
-    bekleyenXp.current += miktar;
+    // Öteki sekme bu kazanımı ödediyse ikinci kez ödeme.
+    if (depoOku()?.kazanimlar.includes(kimlik)) return;
     setKazanimlar(prev => [...prev, kimlik]);
-    setXp(prev => prev + miktar);
+    setXp(prev => prev + kazanimDegeri(kimlik));
+    // Senkron push'u planlansın (kullanıcı eylemi) — yoksa puan sunucuya
+    // ancak sayfa kapanırken ulaşırdı (bkz. depo.ts `degistiBildir`).
+    degistiBildir();
   }, [hazir]);
 
-  // Sadece puan ekleme fonksiyonu
-  const addXp = (amount: number) => {
-    bekleyenXp.current += amount;
-    setXp(prev => prev + amount);
-  };
+  // Sadece puan ekleme fonksiyonu (taban puan — kazanım listesine girmez)
+  const addXp = (amount: number) => setXp(prev => prev + amount);
 
   // Modül bitirme, XP ve rozet kazanma fonksiyonu (Aynı modülü iki kez bitirince puanı suistimal etmesin diye kontrol)
   const completeModule = (moduleId: string, earnedXp: number, badgeId?: string) => {
     if (!completedModules.includes(moduleId)) {
       setCompletedModules(prev => [...prev, moduleId]);
-      bekleyenXp.current += earnedXp;
       setXp(prev => prev + earnedXp);
       if (badgeId && !badges.includes(badgeId)) {
         setBadges(prev => [...prev, badgeId]);
       }
+      degistiBildir();
     }
   };
 
