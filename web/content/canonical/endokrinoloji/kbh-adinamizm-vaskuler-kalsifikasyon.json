@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "osteoporoz",
     "updatedAt": "02 May 2026",
-    "tags": ["Nefroloji", "Adinamik Kemik Hastalığı", "Vasküler Kalsifikasyon", "Sklerostin", "Wnt Yolağı", "YDUS"],
+    "tags": ["Nefroloji", "Adinamik Kemik Hastalığı", "Vasküler Kalsifikasyon", "Sklerostin", "Wnt Yolağı"],
     "parent": "kbh-osteoporoz-ckd-mbd",
     "order": 2
   },

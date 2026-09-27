@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "osteoporoz",
     "updatedAt": "16 Haz 2026",
-    "tags": ["Endokrinoloji", "Romatoloji", "Osteoporoz", "Tedavi Algoritması", "Anabolik Ajanlar", "Antirezorptifler", "FRAX", "YDUS"],
+    "tags": ["Endokrinoloji", "Romatoloji", "Osteoporoz", "Tedavi Algoritması", "Anabolik Ajanlar", "Antirezorptifler", "FRAX"],
     "parent": "osteoporoz-ana-sayfa",
     "order": 5
   },

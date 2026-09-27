@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "colyak",
     "updatedAt": "10 May 2026",
-    "tags": ["Gastroenteroloji", "Çölyak Belirteçleri", "tTG-IgA", "EMA-IgA", "DGP", "HLA-DQ2/DQ8", "YDUS"],
+    "tags": ["Gastroenteroloji", "Çölyak Belirteçleri", "tTG-IgA", "EMA-IgA", "DGP", "HLA-DQ2/DQ8"],
     "parent": "colyak",
     "order": 8
   },

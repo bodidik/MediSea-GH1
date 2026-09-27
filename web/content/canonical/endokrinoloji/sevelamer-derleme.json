@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "hiperparatiroidi",
     "updatedAt": "02 May 2026",
-    "tags": ["Farmakoloji", "Nefroloji", "Sevelamer", "Hiperfosfatemi", "Pleiotropik Etki", "Vasküler Kalsifikasyon", "YDUS"],
+    "tags": ["Farmakoloji", "Nefroloji", "Sevelamer", "Hiperfosfatemi", "Pleiotropik Etki", "Vasküler Kalsifikasyon"],
     "parent": "hiperfosfatemi-CKD",
     "order": 5
   },

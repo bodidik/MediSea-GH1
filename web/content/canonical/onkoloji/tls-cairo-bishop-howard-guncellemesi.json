@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "tumor-lizis",
     "updatedAt": "11 May 2026",
-    "tags": ["Onkoloji", "TLS Tanı", "Cairo-Bishop", "Howard Kriterleri", "YDUS", "Semptomatik Hipokalsemi"],
+    "tags": ["Onkoloji", "TLS Tanı", "Cairo-Bishop", "Howard Kriterleri", "Semptomatik Hipokalsemi"],
     "parent": "tumor-lizis-sendromu-kapsamli",
     "order": 4
   },

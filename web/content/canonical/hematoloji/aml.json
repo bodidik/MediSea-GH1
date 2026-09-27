@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "aml",
     "updatedAt": "29 May 2026",
-    "tags": ["Hematoloji", "Onkoloji", "AML", "APL", "ELN 2024", "ICC 2022", "YDUS"],
+    "tags": ["Hematoloji", "Onkoloji", "AML", "APL", "ELN 2024", "ICC 2022"],
     "parent": "losemiler",
     "order": 5
   },

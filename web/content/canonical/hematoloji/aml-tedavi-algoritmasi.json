@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "aml",
     "updatedAt": "02 Jun 2026",
-    "tags": ["Hematoloji", "AML", "İndüksiyon", "Konsolidasyon", "Allo-HCT", "Venetoklaks", "YDUS"],
+    "tags": ["Hematoloji", "AML", "İndüksiyon", "Konsolidasyon", "Allo-HCT", "Venetoklaks"],
     "parent": "aml",
     "order": 8
   },

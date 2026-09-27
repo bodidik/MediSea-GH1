@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "hipertiroidi",
     "updatedAt": "01 Jul 2026",
-    "tags": ["Endokrinoloji", "Subklinik Hipotiroidi", "Subklinik Hipertiroidi", "TSH", "Kardiyovasküler Risk", "Osteoporoz", "YDUS"],
+    "tags": ["Endokrinoloji", "Subklinik Hipotiroidi", "Subklinik Hipertiroidi", "TSH", "Kardiyovasküler Risk", "Osteoporoz"],
     "parent": "tiroid-hastaliklari-ana",
     "order": 12,
     "summary": "Subklinik hipotiroidi ve subklinik hipertiroidinin biyokimyasal tanımı, epidemiyolojisi, etyolojisi, doğal seyri, sistemik komplikasyonları ve tedavi kararına genel yaklaşım."

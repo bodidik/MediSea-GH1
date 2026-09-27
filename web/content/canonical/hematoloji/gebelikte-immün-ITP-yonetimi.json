@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "itp",
     "updatedAt": "02 Jun 2026",
-    "tags": ["Hematoloji", "İTP", "Gebelik", "Trombositopeni", "HELLP", "YDUS", "IVIg"],
+    "tags": ["Hematoloji", "İTP", "Gebelik", "Trombositopeni", "HELLP", "IVIg"],
     "parent": "immun-trombositopeni-itp",
     "order": 7
   },

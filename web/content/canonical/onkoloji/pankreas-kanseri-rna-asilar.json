@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "pankreas-kanseri",
     "updatedAt": "12 Haz 2026",
-    "tags": ["Onkoloji", "Gastroenteroloji", "İmmünoterapi", "RNA Aşıları", "KRAS Mutasyonu", "YDUS"],
+    "tags": ["Onkoloji", "Gastroenteroloji", "İmmünoterapi", "RNA Aşıları", "KRAS Mutasyonu"],
     "parent": "pankreas-kanseri-ana-sayfa",
     "order": 6
   },

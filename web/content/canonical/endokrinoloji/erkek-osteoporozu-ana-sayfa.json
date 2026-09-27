@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "osteoporoz",
     "updatedAt": "16 Haz 2026",
-    "tags": ["Endokrinoloji", "Romatoloji", "Erkek Osteoporozu", "Hipogonadizm", "DXA", "T-Skoru", "YDUS"],
+    "tags": ["Endokrinoloji", "Romatoloji", "Erkek Osteoporozu", "Hipogonadizm", "DXA", "T-Skoru"],
     "parent": "osteoporoz-ana-sayfa",
     "order": 6
   },

@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "pankreas-kanseri",
     "updatedAt": "12 Haz 2026",
-    "tags": ["Gastroenteroloji", "Onkoloji", "Genetik", "Sürveyans", "USPSTF", "YDUS"],
+    "tags": ["Gastroenteroloji", "Onkoloji", "Genetik", "Sürveyans", "USPSTF"],
     "parent": "pankreas-kanseri-ana-sayfa",
     "order": 5
   },

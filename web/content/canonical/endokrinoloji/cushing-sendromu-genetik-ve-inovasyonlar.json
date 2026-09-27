@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "cushing",
     "updatedAt": "05 May 2026",
-    "tags": ["Endokrinoloji", "Cushing Sendromu", "USP8", "Osilodrostat", "LC-MS/MS", "Levoketokonazol", "Genetik", "YDUS"],
+    "tags": ["Endokrinoloji", "Cushing Sendromu", "USP8", "Osilodrostat", "LC-MS/MS", "Levoketokonazol", "Genetik"],
     "parent": "cushing-sendromu-patofizyoloji-klinik",
     "order": 3
   },

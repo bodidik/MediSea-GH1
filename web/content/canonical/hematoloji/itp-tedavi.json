@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "itp",
     "updatedAt": "02 Jun 2026",
-    "tags": ["Hematoloji", "İTP", "Trombositopeni", "TPO-RA", "Kortikosteroid", "Splenektomi", "YDUS"],
+    "tags": ["Hematoloji", "İTP", "Trombositopeni", "TPO-RA", "Kortikosteroid", "Splenektomi"],
     "parent": "immun-trombositopeni-itp",
     "order": 7
   },

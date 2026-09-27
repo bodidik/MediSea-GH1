@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "tumor-lizis",
     "updatedAt": "11 May 2026",
-    "tags": ["Onkoloji", "Yoğun Bakım", "Hiperkalemi", "CVVHD", "Elektrolit", "YDUS"],
+    "tags": ["Onkoloji", "Yoğun Bakım", "Hiperkalemi", "CVVHD", "Elektrolit"],
     "parent": "tumor-lizis-sendromu-kapsamli",
     "order": 2
   },

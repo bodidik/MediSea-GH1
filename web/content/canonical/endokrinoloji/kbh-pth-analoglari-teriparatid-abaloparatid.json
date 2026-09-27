@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "hiperparatiroidi",
     "updatedAt": "02 May 2026",
-    "tags": ["Nefroloji", "Endokrinoloji", "Adinamik Kemik Hastalığı", "Teriparatid", "Abaloparatid", "PTH Analogları", "Osteoporoz", "YDUS"],
+    "tags": ["Nefroloji", "Endokrinoloji", "Adinamik Kemik Hastalığı", "Teriparatid", "Abaloparatid", "PTH Analogları", "Osteoporoz"],
     "parent": "kbh-adinamizm-vaskuler-kalsifikasyon",
     "order": 3
   },

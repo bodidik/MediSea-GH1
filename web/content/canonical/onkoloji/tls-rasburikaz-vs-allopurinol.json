@@ -3,7 +3,7 @@
   "meta": {
     "kaynakca": "tumor-lizis",
     "updatedAt": "11 May 2026",
-    "tags": ["Farmakoloji", "Onkoloji", "Rasburikaz", "Allopurinol", "G6PD", "YDUS", "TLS"],
+    "tags": ["Farmakoloji", "Onkoloji", "Rasburikaz", "Allopurinol", "G6PD", "TLS"],
     "parent": "tumor-lizis-sendromu-kapsamli",
     "order": 3
   },

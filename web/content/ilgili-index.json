@@ -1767,13 +1767,23 @@
  "endokrinoloji/pbmah-genetik-temeller-ailevi-riskler": [
   {
    "brans": "endokrinoloji",
+   "slug": "cushing-sendromu-genetik-ve-inovasyonlar",
+   "baslik": "Cushing Sendromu: Genetik, Farmakoloji ve Tanıda Yenilikler"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "siddetli-cushing-sendromu-ileri-okuma",
    "baslik": "Şiddetli Cushing Sendromu (SCS): İleri Yönetim"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "cushing-sendromu-genetik-ve-inovasyonlar",
-   "baslik": "Cushing Sendromu: Genetik, Farmakoloji ve Tanıda Yenilikler"
+   "brans": "hematoloji",
+   "slug": "FL-t1(4-18)",
+   "baslik": "t(14;18) Translokasyonunun Rolü"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kmt2d-t14-18-negatif",
+   "baslik": "t(14;18) Negatif FL Vakalarında KMT2D Mutasyonu"
   }
  ],
  "endokrinoloji/polikistik-over-sendromu-pcos": [
@@ -1870,11 +1880,6 @@
   }
  ],
  "endokrinoloji/santral-hipotiroidizm-lt4-adrenal-kriz": [
-  {
-   "brans": "endokrinoloji",
-   "slug": "tiroid-yaslanmasi-fizyolojisi",
-   "baslik": "Tiroid Yaşlanması (Thyroid Aging): Fizyolojik TSH Yüksekliği"
-  },
   {
    "brans": "endokrinoloji",
    "slug": "hipotiroidizm-anasayfa-sistemik-etkiler",
@@ -2156,13 +2161,13 @@
  "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma": [
   {
    "brans": "endokrinoloji",
-   "slug": "pbmah-genetik-temeller-ailevi-riskler",
-   "baslik": "PBMAH: Genetik Temeller ve Ailevi Riskler (İleri Okuma)"
+   "slug": "cushing-sendromu-genetik-ve-inovasyonlar",
+   "baslik": "Cushing Sendromu: Genetik, Farmakoloji ve Tanıda Yenilikler"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "cushing-sendromu-genetik-ve-inovasyonlar",
-   "baslik": "Cushing Sendromu: Genetik, Farmakoloji ve Tanıda Yenilikler"
+   "slug": "pbmah-genetik-temeller-ailevi-riskler",
+   "baslik": "PBMAH: Genetik Temeller ve Ailevi Riskler (İleri Okuma)"
   }
  ],
  "endokrinoloji/subklinik-tiroid-hastaliklari": [
@@ -2232,11 +2237,6 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "santral-hipotiroidizm-lt4-adrenal-kriz",
-   "baslik": "Santral Hipotiroidizmde LT4 Öncesi Adrenal Güvenlik Kuralı (İleri Analiz)"
-  },
-  {
-   "brans": "endokrinoloji",
    "slug": "subklinik-tiroid-hastaliklari",
    "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
   },
@@ -2282,6 +2282,11 @@
  "endokrinoloji/usp8-mutasyonu-ve-pasireotid": [
   {
    "brans": "endokrinoloji",
+   "slug": "dopamin-agonistleri-kalp-kapak",
+   "baslik": "Dopamin Agonistleri ve Kardiyak Valvülopati Riski"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "izole-maternal-hipotiroksinemi-yonetimi",
    "baslik": "İzole Maternal Hipotiroksinemi: Yönetim ve İyot Desteği"
   },
@@ -2292,13 +2297,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "siddetli-cushing-sendromu-ileri-okuma",
-   "baslik": "Şiddetli Cushing Sendromu (SCS): İleri Yönetim"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "kalsiyum-homeostazi-fizyoloji",
-   "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi"
+   "slug": "sf3b1-mutasyonu-metastatik-prolaktinoma",
+   "baslik": "SF3B1 Mutasyonu: Agresif ve Metastatik Prolaktinomalar"
   }
  ],
  "endokrinoloji/vitamin-d-bozukluklari": [
@@ -4098,16 +4098,6 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "POD24-FL-tedavi",
-   "baslik": "POD24 Yüksek Riskli Foliküler Lenfoma Tedavi Algoritması"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "pod24-bispesifik-antikorlar",
-   "baslik": "Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "kmt2d-crebbp-mutasyonlari",
    "baslik": "KMT2D ve CREBBP Mutasyonlarının Prognostik Önemi"
   },
@@ -4115,6 +4105,16 @@
    "brans": "hematoloji",
    "slug": "m7-flipi-ngs-paneli",
    "baslik": "m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "POD24-FL-tedavi",
+   "baslik": "POD24 Yüksek Riskli Foliküler Lenfoma Tedavi Algoritması"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "pod24-bispesifik-antikorlar",
+   "baslik": "Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri"
   },
   {
    "brans": "hematoloji",
@@ -4797,6 +4797,11 @@
   },
   {
    "brans": "hematoloji",
+   "slug": "m7-flipi-ngs-paneli",
+   "baslik": "m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "POD24-FL-tedavi",
    "baslik": "POD24 Yüksek Riskli Foliküler Lenfoma Tedavi Algoritması"
   },
@@ -4804,11 +4809,6 @@
    "brans": "hematoloji",
    "slug": "pod24-bispesifik-antikorlar",
    "baslik": "Bispesifik Antikorlar: POD24'te Yeri ve Yan Etkileri"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "m7-flipi-ngs-paneli",
-   "baslik": "m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri"
   },
   {
    "brans": "hematoloji",
