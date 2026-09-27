@@ -71,7 +71,7 @@
     },
     {
       "tip": "tablo",
-      "baslik": "Kalıtsal (Germline) Yatkınlık Sendromları — Olguların %10-15'i",
+      "baslik": "Kalıtsal (Germline) Yatkınlık Sendromları — Ailesel Kümelenme ~%10; Seçilmemiş Hastada Germline Patojenik Varyant ~%4-10",
       "kolonlar": [
         "Sendrom",
         "Gen"
@@ -186,7 +186,7 @@
           "renk": "yesil",
           "hucreler": [
             "EUS-İİAB/İİB ★",
-            "ALTIN STANDART örnekleme; peritona tümör ekimi (seeding) riskini elimine eder + yüksek duyarlılık. Doku tanısı rezektabl+küratif planlı hastada zorunlu DEĞİL ama neoadjuvan/palyatif sistemik tedavi planlananda KESİNLİKLE gerekli"
+            "ALTIN STANDART örnekleme; peritona tümör ekimi (seeding) riskini perkütan yola göre azaltır (sıfırlamaz) + yüksek duyarlılık. Doku tanısı rezektabl+küratif planlı hastada zorunlu DEĞİL ama neoadjuvan/palyatif sistemik tedavi planlananda KESİNLİKLE gerekli"
           ]
         },
         {
@@ -405,7 +405,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Pratik Özet — Pankreas Kanseri 10 Altın Kural: (1) Tanı anında %80-85 anrezektabl; 5 yıl sağkalım %10-12. (2) Moleküler sıra: KRAS(>%90 erken)→CDKN2A→TP53/SMAD4; SMAD4 kaybı=metastaz/agresiflik göstergesi. (3) Baş tümörleri erken sarılıkla, gövde/kuyruk geç ve sırt ağrısıyla prezente olur; Trousseau sendromu paraneoplastik. (4) EUS-İİAB seeding riski taşımadığı için altın standart; CA19-9 tarama değil prognoz/takip amaçlı, >500 kötü habercidir. (5) NCCN 4 grup: rezektabl/BRPC/LAPC/metastatik — venöz temas açısı ve rekonstrüksiyon olasılığına göre ayrılır. (6) R0 rezeksiyon en önemli prognostik hedef; ≥15-16 LN çıkarılmalı. (7) BRPC/LAPC'de neoadjuvan mFOLFIRINOX/Gem-NabP altın standart; adjuvanda PRODIGE-24 ile mFOLFIRINOX en yüksek sağkalımı sağlar. (8) BRCA1/2/PALB2 varsa FOLFIRINOX (platin) tercih edilir; germline BRCA + platine progresyonsuz yanıt → Olaparib idame (POLO). (9) MSI-H→pembrolizumab, NTRK füzyonu→entrectinib/larotrectinib, KRAS G12C→sotorasib/adagrasib. (10) Tarama yalnızca yüksek riskli gruplarda (genetik sendrom/FPC), yıllık EUS/MRCP ile, radyasyonsuz yöntemlerle yapılır."
+      "metin": "Pratik Özet — Pankreas Kanseri 10 Altın Kural: (1) Tanı anında %80-85 anrezektabl; 5 yıl sağkalım %10-12. (2) Moleküler sıra: KRAS(>%90 erken)→CDKN2A→TP53/SMAD4; SMAD4 kaybı=metastaz/agresiflik göstergesi. (3) Baş tümörleri erken sarılıkla, gövde/kuyruk geç ve sırt ağrısıyla prezente olur; Trousseau sendromu paraneoplastik. (4) EUS-İİAB seeding riski perkütan yola göre düşük olduğu için altın standart; CA19-9 tarama değil prognoz/takip amaçlı, >500 kötü habercidir. (5) NCCN 4 grup: rezektabl/BRPC/LAPC/metastatik — venöz temas açısı ve rekonstrüksiyon olasılığına göre ayrılır. (6) R0 rezeksiyon en önemli prognostik hedef; ≥15-16 LN çıkarılmalı. (7) BRPC/LAPC'de neoadjuvan mFOLFIRINOX/Gem-NabP altın standart; adjuvanda PRODIGE-24 ile mFOLFIRINOX en yüksek sağkalımı sağlar. (8) BRCA1/2/PALB2 varsa FOLFIRINOX (platin) tercih edilir; germline BRCA + platine progresyonsuz yanıt → Olaparib idame (POLO). (9) MSI-H→pembrolizumab, NTRK füzyonu→entrectinib/larotrectinib, KRAS G12C→sotorasib/adagrasib. (10) Tarama yalnızca yüksek riskli gruplarda (genetik sendrom/FPC), yıllık EUS/MRCP ile, radyasyonsuz yöntemlerle yapılır."
     }
   ]
 }

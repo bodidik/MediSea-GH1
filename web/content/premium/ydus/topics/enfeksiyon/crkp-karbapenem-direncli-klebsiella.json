@@ -123,7 +123,7 @@
           "hucreler": [
             "Sınıf D — OXA-48",
             "OXA-48",
-            "Sefalosporinleri zayıf, karbapenemleri güçlü şekilde hidrolize eder"
+            "Karbapenemleri zayıf, geniş spektrumlu sefalosporinleri çok zayıf hidrolize eder; yüksek düzey karbapenem direnci eşlik eden ESBL ya da porin kaybıyla ortaya çıkar"
           ]
         }
       ]
@@ -204,7 +204,7 @@
           "hucreler": [
             "MBL — NDM/VIM/IMP (Sınıf B) ★",
             "Ceftazidime-avibactam + Aztreonam (veya hazır Aztreonam-avibactam)",
-            "MBL'ler avibactam/vaborbactam gibi inhibitörleri PARÇALADIĞI için klasik yeni nesil kombinasyonlar işe yaramaz; aztreonam eklenerek bu boşluk kapatılır"
+            "Avibactam/vaborbactam/relebactam sınıf B enzimleri İNHİBE EDEMEDİĞİ için klasik yeni nesil kombinasyonlar tek başına işe yaramaz; MBL'nin hidrolize edemediği aztreonam eklenerek (avibactam aztreonamı eşlik eden ESBL/AmpC'den korur) bu boşluk kapatılır"
           ]
         }
       ]
@@ -226,7 +226,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Pratik Özet — CRKP 10 Altın Kural: (1) ABD/Avrupa'da ST258, Asya'da ST11 klonu baskındır. (2) CR-hvKP=direnç+virülans birleşimi; K1/K2 kapsül, string testi pozitif hipermukoviskozite ile tanınır. (3) CR-hvKP sağlıklı bireylerde dahi karaciğer apsesi/endoftalmi/menenjit yapabilir, mortalite klasik CRKP'den yüksektir. (4) KPC (Sınıf A)=en sık; MBL (Sınıf B, NDM/VIM/IMP)=yalnızca aztreonama dokunamaz; OXA-48 (Sınıf D)=karbapenemi güçlü hidrolize eder. (5) Çift karbapenemaz (örn. KPC+NDM) pan-rezistansa yol açabilir. (6) OmpK35/36 porin kaybı + AcrAB-TolC eflüks pompası direnci pekiştirir. (7) CRKP önce bağırsakta sessiz kolonize olur, sonra invaziv enfeksiyona ilerler. (8) Kolistin/tigesiklin artık monoterapi olarak önerilmez. (9) KPC→Meropenem-vaborbactam/Ceftazidime-avibactam; MBL→Ceftazidime-avibactam+Aztreonam; her karbapenemaz sınıfına→Cefiderocol. (10) Bakteriyofaj terapisi pan-rezistan vakalarda umut vadeden bir gelecek stratejisidir."
+      "metin": "Pratik Özet — CRKP 10 Altın Kural: (1) ABD/Avrupa'da ST258, Asya'da ST11 klonu baskındır. (2) CR-hvKP=direnç+virülans birleşimi; K1/K2 kapsül, string testi pozitif hipermukoviskozite ile tanınır. (3) CR-hvKP sağlıklı bireylerde dahi karaciğer apsesi/endoftalmi/menenjit yapabilir, mortalite klasik CRKP'den yüksektir. (4) KPC (Sınıf A)=en sık; MBL (Sınıf B, NDM/VIM/IMP)=yalnızca aztreonama dokunamaz; OXA-48 (Sınıf D)=karbapenemi zayıf hidrolize eder, yüksek düzey direnç eşlik eden ESBL/porin kaybından gelir. (5) Çift karbapenemaz (örn. KPC+NDM) pan-rezistansa yol açabilir. (6) OmpK35/36 porin kaybı + AcrAB-TolC eflüks pompası direnci pekiştirir. (7) CRKP önce bağırsakta sessiz kolonize olur, sonra invaziv enfeksiyona ilerler. (8) Kolistin/tigesiklin artık monoterapi olarak önerilmez. (9) KPC→Meropenem-vaborbactam/Ceftazidime-avibactam; MBL→Ceftazidime-avibactam+Aztreonam; her karbapenemaz sınıfına→Cefiderocol. (10) Bakteriyofaj terapisi pan-rezistan vakalarda umut vadeden bir gelecek stratejisidir."
     }
   ]
 }

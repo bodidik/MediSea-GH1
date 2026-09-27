@@ -13,7 +13,7 @@
     {
       "id": "card-2",
       "front": "Akromegalide oral glukoz tolerans testi (OGTT) sonrası tanısal GH nadir değeri kaçtır?",
-      "back": "Glukoz yüklemesinden iki saat sonra GH konsantrasyonunun > 1 ng/mL olması.",
+      "back": "Glukoz yüklemesinden iki saat sonra GH konsantrasyonunun > 1 ng/mL olması (eşik ölçüm yöntemine bağlıdır: klasik yöntemlerde < 1 ng/mL baskılanma sayılır; ultraduyarlı yöntemlerde eşik < 0.4 ng/mL).",
       "tag": "Endokrinoloji / Akromegali"
     },
     {
@@ -445,7 +445,7 @@
     {
       "id": "card-74",
       "front": "Akromegali hastalarında cerrahi sonrası 'remisyon' tanımında GH nadiri için en güncel cut-off değer (hassas assayler ile) kaçtır?",
-      "back": "< 0.4 µg/L.",
+      "back": "< 0.4 µg/L (ultraduyarlı yöntemlerle; klasik yöntemlerde eşik < 1 µg/L).",
       "tag": "Endokrinoloji / Akromegali"
     },
     {

@@ -169,7 +169,7 @@
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "baslik": "Adım 3 — Beta-Blokörde Hayati Kural: Önce Alfa!",
-      "metin": "BETA-BLOKÖR ASLA ALFA-BLOKAJ TAM OLARAK SAĞLANMADAN BAŞLANMAMALIDIR. Alfa reseptörleri bloke edilmeden beta-reseptörler bloke edilirse, katekolaminler beta-2 reseptörleri aracılığıyla yaptıkları vazodilatasyonu yapamazlar ve boşta kalan uyarılmamış alfa-reseptörleri üzerinden aşırı vazokonstriksiyona (unopposed alpha stimulation) yol açarak öldürücü hipertansif krizleri, akut akciğer ödemini ve koroner spazmı tetiklerler. Alfa-blokajdan en az 2-3 gün sonra refleks taşikardi veya aritmiyi kontrol etmek için eklenir. Dozaj: Metoprolol 25-50 mg/gün veya Propranolol 10 mg 4-6 saatte bir. Kalp hızı hedefi supinede 60-80 bpm, ayakta 70-100 bpm."
+      "metin": "BETA-BLOKÖR ASLA ALFA-BLOKAJ TAM OLARAK SAĞLANMADAN BAŞLANMAMALIDIR. Alfa reseptörleri bloke edilmeden beta-reseptörler bloke edilirse, katekolaminler beta-2 reseptörleri aracılığıyla yaptıkları vazodilatasyonu yapamazlar ve boşta kalan uyarılmamış alfa-reseptörleri üzerinden aşırı vazokonstriksiyona (unopposed alpha stimulation) yol açarak öldürücü hipertansif krizleri, akut akciğer ödemini ve koroner spazmı tetiklerler. Alfa-blokajdan en az 2-3 gün sonra refleks taşikardi veya aritmiyi kontrol etmek için eklenir. Dozaj: Metoprolol 25-50 mg/gün veya Propranolol 10 mg 4-6 saatte bir. Kalp hızı hedefi oturur pozisyonda 60-70 bpm, ayakta 70-80 bpm (Endocrine Society 2014)."
     },
     {
       "tip": "metin",
@@ -184,7 +184,7 @@
       "baslik": "Cerrahi Yaklaşım ve Anestezi Yönetimi",
       "satirlar": [
         "Tümör boyutu <5-6 cm olan ve invazyon şüphesi taşımayan durumlarda altın standart laparoskopik adrenalektomidir. Bilateral feokromositoma riski yüksek olan herediter sendromlarda (RET, VHL), hastayı ömür boyu akut sürrenal yetmezlik ve steroid replasmandan kurtarmak amacıyla sağlıklı sürrenal korteks dokusunu koruyan korteks koruyucu (cortical-sparing) adrenalektomi önerilir.",
-        "Anestezi İlaç Yönetimi: Histamin salınımına ve sempatik uyarılmaya yol açarak katekolamin fırtınasını tetikleyebilecek fentanil, ketamin, morfin, atropin ve desfluran gibi ajanlardan kesinlikle kaçınılmalıdır.",
+        "Anestezi İlaç Yönetimi: Histamin salınımına ve sempatik uyarılmaya yol açarak katekolamin fırtınasını tetikleyebilecek morfin, ketamin, atropin, desfluran, efedrin ve metoklopramid gibi ajanlardan kesinlikle kaçınılmalıdır; histamin salmayan fentanil ise rutin olarak kullanılır.",
         "İntraoperatif Krizlerin Yönetimi: Tümör manipülasyonu esnasındaki tansiyon fırlamaları kısa etkili vazodilatörlerle yönetilir. Sodyum Nitroprussid (0.5-5 mcg/kg/dk infüzyon; uzamış infüzyonlarda tiyosiyanat toksisitesi riski nedeniyle yakın izlenmeli), kısa etkili non-selektif alfa bloker Phentolamine (1 mg test dozu, ardından 2-5 mg IV boluslar) veya Nicardipine (5 mg/saat infüzyon). Eş zamanlı magnezyum sülfat infüzyonunun intraoperatif katekolamin salınımını ve hipertansif atakları azalttığı klinik olarak kanıtlanmıştır. Aritmi yönetiminde Lidokain veya Esmolol tercih edilmelidir."
       ]
     },

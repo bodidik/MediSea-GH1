@@ -112,7 +112,7 @@
       "id": "p-hem-antikoag-016",
       "level": "Klinik",
       "title": "Warfarin’den DOAC’a Geçişte (Switching) Eşik INR Değerleri",
-      "content": "<p>Warfarin kullanan bir hastada DOAC tedavisine geçilirken Warfarin kesilir ve INR takibi yapılır. İlacın cinsine göre hedef INR sınırları:</p><ul><li><strong>Dabigatran veya Apiksaban'a geçiş için:</strong> INR &lt; 2.0 olmalıdır.</li><li><strong>Edoksaban'a geçiş için:</strong> INR ≤ 2.5 olmalıdır.</li><li><strong>Rivaroksaban'a geçiş için:</strong> INR &lt; 3.0 olduğunda doğrudan başlanabilir.</li></ul>",
+      "content": "<p>Warfarin kullanan bir hastada DOAC tedavisine geçilirken Warfarin kesilir ve INR takibi yapılır. İlacın cinsine göre hedef INR sınırları:</p><ul><li><strong>Dabigatran veya Apiksaban'a geçiş için:</strong> INR &lt; 2.0 olmalıdır.</li><li><strong>Edoksaban'a geçiş için:</strong> INR ≤ 2.5 olmalıdır.</li><li><strong>Rivaroksaban'a geçiş için:</strong> AF'de INR ≤ 3.0, VTE tedavisinde INR ≤ 2.5 olduğunda doğrudan başlanabilir (ürün bilgisi).</li></ul>",
       "trigger": "Geçiş Protokolleri"
     },
     {

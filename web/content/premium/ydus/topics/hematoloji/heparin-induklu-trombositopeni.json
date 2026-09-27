@@ -191,7 +191,7 @@
       "baslik": "Alternatif Parenteral ve Oral Antikoagülan Parametreleri",
       "kolonlar": ["İlaç", "Etki Mekanizması", "Eliminasyon / Yarı Ömrü", "Monitörizasyon", "Karaciğer Yetmezliği Dozajı", "Böbrek Yetmezliği / HD Dozajı"],
       "satirlar": [
-        { "hucreler": ["Argatroban", "Doğrudan Trombin İnhibitörü (DTI)", "Hepatobiliyer · t1/2: 40-50 dk", "aPTT (1.5 - 3.0x) · Hedef: 50-100 sn", "Akut Düşürülmeli (0.5 µg/kg/dk)", "Doz Ayarı Gerekmez (1 - 2 µg/kg/dk)"] },
+        { "hucreler": ["Argatroban", "Doğrudan Trombin İnhibitörü (DTI)", "Hepatobiliyer · t1/2: 40-50 dk", "aPTT (1.5 - 3.0x) · Hedef: 50-100 sn", "Başlangıç 0.5 µg/kg/dk'ya düşürülür (standart 2 µg/kg/dk'nın %75 azı)", "Doz Ayarı Gerekmez (1 - 2 µg/kg/dk)"] },
         { "hucreler": ["Bivalirudin", "Doğrudan Trombin İnhibitörü (DTI)", "Enzimolitik (%80) · Renal (%20) · t1/2: 25 dk", "aPTT (1.5 - 2.5x) · KYS / CPB'de ACT (>300-480 sn)", "Doz Ayarı Gerekmez (0.15 - 0.20 mg/kg/h)", "Doz Azaltılmalı (0.03 - 0.05 mg/kg/h)"] },
         { "hucreler": ["Fondaparinux", "Dolaylı Faktör Xa İnhibitörü", "Böbrek · t1/2: 17 saat", "Rutin Gerekmez (Anti-Xa düzeyi)", "Doz Ayarı Gerekmez", "CrCl <30 mL/dk KONTRENDİKE"] },
         { "hucreler": ["Rivaroksaban (DOAC)", "Doğrudan Faktör Xa İnhibitörü", "Renal & Karaciğer · t1/2: 5-9 saat", "Rutin Gerekmez", "Orta/Şiddetli Yetmezlik Kontrendike", "CrCl <15 mL/dk Kontrendike"] }

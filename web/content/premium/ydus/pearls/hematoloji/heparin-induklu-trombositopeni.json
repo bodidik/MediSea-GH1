@@ -49,7 +49,7 @@
       "id": "hit-inci-007",
       "level": "Klinik",
       "title": "ELISA OD eşikleri",
-      "content": "<p>**OD &lt;0.40** negatif kabul edilir ve HİT ekarte edilir. **OD 0.40–1.99** belirsiz/orta pozitifliktir; doğrulama için fonksiyonel test (SRA/HIPA) istenmelidir. **OD ≥2.00** (veya yüksek 4Ts skorunda OD ≥1.50) güçlü pozitifliktir; SRA pozitifliği ile korelasyonu **&gt;%90–100**'dür ve ek fonksiyonel test gerekmeksizin HİT tanısını doğrular.</p>",
+      "content": "<p>**OD &lt;0.40** negatif kabul edilir ve HİT ekarte edilir. **OD 0.40–1.99** belirsiz/orta pozitifliktir; doğrulama için fonksiyonel test (SRA/HIPA) istenmelidir. **OD ≥2.00** (veya yüksek 4Ts skorunda OD ≥1.50) güçlü pozitifliktir; güçlü pozitif SRA olasılığı **%89–100**'dür (≈%90; Warkentin 2008) ve ek fonksiyonel test gerekmeksizin HİT tanısını doğrular.</p>",
       "trigger": "İmmünolojik Testler"
     },
     {
