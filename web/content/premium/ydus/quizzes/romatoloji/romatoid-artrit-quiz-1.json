@@ -1,0 +1,458 @@
+{
+  "id": "quiz-romato-romatoid-artrit-001",
+  "baslik": "Romatoid Artrit (RA) — Soru Seti 1",
+  "branch": "romatoloji",
+  "topic": "romatoid-artrit",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "46 yaşında kadın hasta 10 haftadır süren el ve ayak eklemlerinde ağrı, şişlik ve 90 dakika süren sabah tutukluğu ile başvuruyor. Muayenede bilateral 2. ve 3. metakarpofalangeal, bilateral 2. proksimal interfalangeal ve bilateral 3. metatarsofalangeal eklemlerde hassasiyet ve şişlik var (toplam 8 küçük eklem). Distal interfalangeal eklemler ve 1. karpometakarpal eklem normal.\n\nTetkikler:\nRomatoid faktör: normalin üst sınırının 5 katı\nAnti-CCP: normalin üst sınırının 8 katı\nCRP: 28 mg/L (yüksek)\nESR: 46 mm/saat\n\n2010 ACR/EULAR sınıflama ölçütlerine göre bu hastanın puanı ve yorumu hangisidir?",
+      "secenekler": {
+        "A": "Toplam 4 puan; eşik 6 olduğu için sınıflama ölçütleri karşılanmıyor.",
+        "B": "Toplam 10 puan; ancak semptom süresi 6 aydan kısa olduğu için sınıflandırılamaz.",
+        "C": "Toplam 8 puan (eklem tutulumu 3 + yüksek titreli seroloji 3 + akut faz yüksekliği 1 + süre ≥6 hafta 1); eşik olan 6 puan aşıldığı için kesin romatoid artrit olarak sınıflanır.",
+        "D": "Toplam 6 puan; yalnızca seroloji ve akut faz reaktanları puanlanır, eklem sayısı puanlamaya girmez.",
+        "E": "Puanlama yapılamaz; sınıflama ölçütleri yalnızca radyografik erozyon varlığında uygulanabilir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Dört eksen puanlanır: 4-10 küçük eklem tutulumu 3, yüksek titreli seroloji 3, anormal akut faz reaktanı 1, semptom süresi ≥6 hafta 1 — toplam 8 puan ve eşik 6 olduğu için kesin romatoid artrit sınıflaması yapılır.",
+      "aciklama_detay": "2010 ACR/EULAR sınıflaması, en az bir eklemde klinik sinovit bulunan ve bulgusu başka bir hastalıkla daha iyi açıklanamayan hastalara uygulanır; toplam 10 puan üzerinden ≥6 puan kesin romatoid artrit olarak sınıflanır. Dört eksen: (1) eklem tutulumu — 1 büyük eklem 0, 2-10 büyük eklem 1, 1-3 küçük eklem 2, 4-10 küçük eklem 3, >10 eklem (en az biri küçük) 5; (2) seroloji — negatif 0, düşük titreli pozitiflik 2, yüksek titreli pozitiflik 3; (3) akut faz reaktanları — normal 0, anormal 1; (4) semptom süresi — <6 hafta 0, ≥6 hafta 1. Bu hastada 8 küçük eklem (3) + yüksek titreli romatoid faktör ve anti-CCP (3) + yüksek CRP/ESR (1) + 10 haftalık süre (1) = 8 puan. İki sık yanılgı: ölçütlerin tanı değil SINIFLAMA için geliştirilmiş olması (klinik tanı ölçütler karşılanmadan da konabilir) ve erozyon varlığının bir önkoşul olmaması — tersine, ölçütlerin amacı erozyon gelişmeden erken hastalığı yakalamaktır. Distal interfalangeal ve 1. karpometakarpal eklemlerin korunmuş olması burada osteoartritten ayırmada destekleyicidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yalnızca eklem ekseni 3 puan getirir; toplam 4 değil 8'dir.",
+        "B": "YANLIS — Süre ölçütü 6 HAFTADIR; 6 ay gibi bir eşik yoktur ve toplam 10 puan da doğru değildir.",
+        "C": "DOGRU — 3 + 3 + 1 + 1 = 8 puan; eşik 6 aşıldığı için kesin romatoid artrit olarak sınıflanır.",
+        "D": "YANLIS — Eklem sayısı ve dağılımı puanlamanın en ağırlıklı eksenidir (0-5 puan).",
+        "E": "YANLIS — Erozyon önkoşul değildir; ölçütler erken hastalığı erozyon gelişmeden tanımak için tasarlanmıştır."
+      },
+      "etiketler": [
+        "2010 ACR/EULAR Sınıflaması",
+        "Puanlama",
+        "Seroloji Titresi",
+        "Akut Faz Reaktanı",
+        "Erken Artrit"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Baker JF, UpToDate — Romatoid artrit tanı ve ayırıcı tanısı; 2010 ACR/EULAR sınıflama ölçütleri"
+    },
+    {
+      "id": "s2",
+      "metin": "63 yaşında kadın hasta iki yıldır giderek artan el ağrısı ile başvuruyor. Sabah tutukluğu 10-15 dakika sürüyor ve gün içinde kullanımla ağrı ARTIYOR. Muayenede her iki elde distal interfalangeal eklemlerde sert, kemik yapıda büyümeler ve her iki başparmak tabanında (1. karpometakarpal eklem) hassasiyet ve krepitasyon var. Metakarpofalangeal eklemler ve el bilekleri normal.\n\nTetkikler:\nCRP: 3 mg/L · ESR: 14 mm/saat\nRomatoid faktör: negatif · Anti-CCP: negatif\n\nEn olası tanı ve dayanağı hangisidir?",
+      "secenekler": {
+        "A": "El osteoartriti; distal interfalangeal ve 1. karpometakarpal eklem tutulumu, kısa süreli tutukluk ve kullanımla artan ağrı bu tanıyı destekler — bu eklemler romatoid artritte tipik olarak korunur.",
+        "B": "Seronegatif romatoid artrit; otoantikor negatifliği tanıyı dışlamaz ve tutulum paterni uyumludur.",
+        "C": "Psoriatik artrit; distal interfalangeal tutulum bu tanı için tek başına yeterlidir.",
+        "D": "Gut artriti; distal interfalangeal tutulum ve krepitasyon patognomoniktir.",
+        "E": "Sistemik lupus eritematozus artriti; deforme olmayan eklem tutulumu tipiktir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Distal interfalangeal ve 1. karpometakarpal eklem tutulumu, 30 dakikadan kısa tutukluk, kullanımla artan ağrı ve normal akut faz reaktanları el osteoartritini gösterir; bu eklemler romatoid artritte tipik olarak KORUNUR.",
+      "aciklama_detay": "Romatoid artritin ayırıcı tanısında en güçlü ipuçlarından biri hangi eklemlerin tutulmadığıdır. Romatoid artrit metakarpofalangeal, proksimal interfalangeal, el bileği ve metatarsofalangeal eklemleri simetrik tutar; buna karşın ellerdeki distal interfalangeal eklemleri, 1. karpometakarpal eklemi, sakroiliak eklemleri ve torakolomber omurgayı tipik olarak ETKİLEMEZ (aksiyel iskelette tuttuğu tek bölge servikal omurgadır). El osteoartriti ise tam bu 'dışlanan' eklemlerde yerleşir: distal interfalangeal eklemlerde kemik büyümeler ve 1. karpometakarpal eklemde ağrı-krepitasyon klasiktir. İkinci ayırt edici eksen ağrının ritmidir: inflamatuar ağrı istirahatte ve sabah belirgin, en az 60 dakika süren tutuklukla birlikte, aktiviteyle azalır; mekanik ağrı kullanımla artar ve tutukluk 30 dakikanın altındadır. Üçüncü eksen laboratuvardır — normal akut faz reaktanları ve negatif seroloji inflamatuar bir tabloyu desteklemez. Seronegatif romatoid artrit gerçek bir varlıktır, ancak tanısı tutulum paterni ve inflamasyon kanıtına dayanır; bu hastada ikisi de yoktur. Psoriatik artritte distal interfalangeal tutulum görülebilir ama deri/tırnak bulgusu, daktilit veya entezit gibi destekleyici bulgular aranır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Dışlanan eklemlerin tutulumu, mekanik ağrı ritmi ve normal akut faz yanıtı el osteoartritini gösterir.",
+        "B": "YANLIS — Tutulum paterni romatoid artritin KORUDUĞU eklemlerdedir ve inflamasyon kanıtı yoktur.",
+        "C": "YANLIS — Distal interfalangeal tutulum tek başına psoriatik artrit tanısı koydurmaz; destekleyici deri/tırnak, daktilit veya entezit bulguları gerekir.",
+        "D": "YANLIS — Gut tipik olarak akut, monoartiküler ataklarla seyreder; krepitasyon ve kemik büyümeleri dejeneratif bulgudur.",
+        "E": "YANLIS — Lupus artriti küçük eklemlerde inflamatuar karakterdedir ve bu tabloyu açıklamaz."
+      },
+      "etiketler": [
+        "Ayırıcı Tanı",
+        "Dışlanan Eklemler",
+        "Osteoartrit",
+        "İnflamatuar vs Mekanik Ağrı",
+        "Sabah Tutukluğu"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "England BR, UpToDate — Romatoid artritin artiküler bulguları"
+    },
+    {
+      "id": "s3",
+      "metin": "18 yıldır romatoid artrit tanılı, uzun süre yetersiz kontrol altında kalmış 59 yaşında kadın hastaya son evre diz yıkımı nedeniyle total diz artroplastisi planlanıyor. Anamnezde son aylarda artan ense ağrısı, boynunu öne eğdiğinde ellerinde elektriklenme hissi ve son haftalarda ince el hareketlerinde beceriksizlik tanımlıyor.\n\nAmeliyat öncesi değerlendirmede atlanmaması gereken adım hangisidir?",
+      "secenekler": {
+        "A": "Yalnızca akciğer grafisi ve solunum fonksiyon testleri; servikal değerlendirme gereksizdir.",
+        "B": "Yalnızca tiroid fonksiyon testleri; bu yakınmalar tipik olarak tiroid hastalığına bağlıdır.",
+        "C": "Yalnızca elektromiyografi ile karpal tünel sendromu araştırılması; servikal görüntüleme gerekmez.",
+        "D": "Yalnızca kemik mineral yoğunluğu ölçümü; bulgular osteoporoza bağlıdır.",
+        "E": "Servikal omurga değerlendirmesi: fleksiyon-ekstansiyon yan radyografileri ve gerekirse manyetik rezonans görüntüleme ile atlantoaksiyel sublüksasyon ve miyelopati araştırılmalı, sonuç anestezi ekibiyle paylaşılarak entübasyon planı buna göre yapılmalıdır."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Uzun süreli romatoid artritte servikal omurga (atlantoaksiyel sublüksasyon) tutulumu genel anestezi sırasında boyun manipülasyonuyla medulla spinalis basısına yol açabilir; ameliyat öncesi fleksiyon-ekstansiyon radyografileri ve gerekirse manyetik rezonans görüntüleme zorunludur.",
+      "aciklama_detay": "Romatoid artritin aksiyel iskelette tuttuğu tek bölge servikal omurgadır. Odontoid çıkıntı çevresindeki sinovit ve transvers ligamentin gevşemesi atlantoaksiyel (C1-C2) sublüksasyona, ileri olguda kraniyal settling (vertikal migrasyon) veya subaksiyel instabiliteye yol açar. Bu hastanın anlattıkları klasik uyarı işaretleridir: oksipital/ense ağrısı, boyun fleksiyonuyla ortaya çıkan elektriklenme hissi (Lhermitte fenomeni) ve el becerisinin bozulması, yani servikal miyelopati başlangıcı. Klinik önem cerrahidir: genel anestezi altında laringoskopi ve entübasyon için boyun hiperekstansiyona getirildiğinde, instabil bir atlantoaksiyel eklem medulla spinalis basısına yol açabilir ve sonuç kalıcı nörolojik hasardır. Bu nedenle uzun süreli/kötü kontrollü hastalıkta, boyun yakınması olan veya elektif cerrahi planlanan her hastada fleksiyon-ekstansiyon yan servikal radyografileri istenir (anterior atlantodental mesafe artışı), nörolojik bulgu varsa manyetik rezonans görüntüleme eklenir ve bulgular anestezi ekibine iletilir (fiberoptik entübasyon, boyunda nötral pozisyon, gerekiyorsa önce servikal stabilizasyon cerrahisi). Karpal tünel sendromu romatoid artritte sık görülür ancak bu hastanın miyelopatik bulgularını açıklamaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Akciğer değerlendirmesi de yapılır ama bu hastadaki miyelopati uyarı bulgularını gözden kaçırmak anestezi sırasında kalıcı hasar riski doğurur.",
+        "B": "YANLIS — Bulgular mekanik-nörolojik kökenlidir; tiroid hastalığı bu tabloyu açıklamaz.",
+        "C": "YANLIS — Karpal tünel sendromu eşlik edebilir ama ense ağrısı, Lhermitte fenomeni ve el becerisi kaybını açıklamaz.",
+        "D": "YANLIS — Osteoporoz bu nörolojik bulguları açıklamaz.",
+        "E": "DOGRU — Servikal instabilite ve miyelopati değerlendirmesi yapılmalı, entübasyon planı buna göre kurulmalıdır."
+      },
+      "etiketler": [
+        "Atlantoaksiyel Sublüksasyon",
+        "Servikal Miyelopati",
+        "Ameliyat Öncesi Değerlendirme",
+        "Entübasyon Riski",
+        "Lhermitte Fenomeni"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Currier & Coblyn, UpToDate — Romatoid artritte servikal sublüksasyon"
+    },
+    {
+      "id": "s4",
+      "metin": "5 aydır haftalık 20 mg metotreksat ve folik asit kullanan 57 yaşında hastada üç haftadır kuru öksürük ve ilerleyici efor dispnesi gelişiyor. Ateş 37.6 °C. Oda havasında oksijen satürasyonu %89. Akciğer oskültasyonunda bibaziler ince raller var. Yüksek çözünürlüklü bilgisayarlı tomografide yaygın buzlu cam dansiteleri ve ince retiküler değişiklikler saptanıyor. Hasta glukokortikoid ve biyolojik ajan kullanmıyor.\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Metotreksat sürdürülmeli; tablo hastalığın akciğer tutulumudur ve immünsüpresyonun azaltılması alevlenmeye yol açar.",
+        "B": "Metotreksat derhal kesilmeli; enfeksiyon (özellikle fırsatçı pnömoniler) dışlanana kadar ampirik tedavi ile birlikte değerlendirilmeli ve metotreksat pnömoniti doğrulanırsa sistemik glukokortikoid başlanmalı, ilaç kalıcı olarak bırakılmalıdır.",
+        "C": "Metotreksat dozu yükseltilmeli; yetersiz doz akciğer tutulumunu hızlandırmıştır.",
+        "D": "Yalnızca folik asit dozu artırılmalı; bu tablo folat eksikliğine bağlıdır.",
+        "E": "Yalnızca diüretik verilmeli; bulgular kalp yetmezliğine bağlıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Akut/subakut hipoksemik pnömoni tablosunda metotreksat pnömoniti düşünülür: ilaç derhal kesilir, fırsatçı enfeksiyonlar dışlanır, doğrulanırsa sistemik glukokortikoid verilir ve metotreksat kalıcı olarak bırakılır (yeniden başlanması kontrendikedir).",
+      "aciklama_detay": "Metotreksat pnömoniti nadir ama hayatı tehdit eden bir reaksiyondur; tipik olarak tedavinin ilk aylarında, kuru öksürük, ilerleyici dispne, hafif ateş ve hipoksemiyle başlar, görüntülemede yaygın buzlu cam/retiküler değişiklikler görülür. Klinik ikilem, aynı tablonun üç ayrı nedenle oluşabilmesidir: (1) ilaç pnömoniti, (2) hastalığın kendi interstisyel akciğer tutulumu (tipik paternler usual interstitial pneumonia ve nonspecific interstitial pneumonia'dır; yüksek çözünürlüklü tomografi ve karbonmonoksit difüzyon kapasitesi ile değerlendirilir), (3) immünsüprese hastada fırsatçı enfeksiyon (Pneumocystis jirovecii başta olmak üzere). Bu üçünü ayırmadan tedavi kurulamaz: ilk adım metotreksatı KESMEK ve eş zamanlı olarak enfeksiyonu dışlamaktır (balgam/bronkoalveolar lavaj incelemeleri, uygun mikrobiyolojik testler); klinik ağırsa ampirik antimikrobiyal tedavi ile birlikte destek verilir. Pnömonit doğrulandığında sistemik glukokortikoid başlanır ve metotreksat KALICI olarak bırakılır — yeniden başlanması tekrarlayan, daha ağır reaksiyon riski taşır. Hastalığın kontrolü için mekanizması farklı bir ajana geçilir; akciğer tutulumu olan seropozitif hastalarda rituksimab öne çıkan seçeneklerdendir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İlaca bağlı pnömonit olasılığı varken metotreksatı sürdürmek ölümcül olabilir.",
+        "B": "DOGRU — İlaç kesilir, enfeksiyon dışlanır, doğrulanırsa glukokortikoid verilir ve ilaç kalıcı bırakılır.",
+        "C": "YANLIS — Doz artışı akciğer toksisitesini ağırlaştırır.",
+        "D": "YANLIS — Folik asit gastrointestinal ve mukozal yan etkileri azaltır; pnömoniti önlemez veya tedavi etmez.",
+        "E": "YANLIS — Bulgular ve tomografi paterni kardiyojenik ödemle değil interstisyel süreçle uyumludur."
+      },
+      "etiketler": [
+        "Metotreksat Pnömoniti",
+        "Fırsatçı Enfeksiyon Ayrımı",
+        "İnterstisyel Akciğer Hastalığı",
+        "İlaç Toksisitesi",
+        "Glukokortikoid"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Matson SM, UpToDate — Romatoid artritte ilaç ilişkili akciğer hastalığı"
+    },
+    {
+      "id": "s5",
+      "metin": "Metotreksat ile hedefe ulaşılamayan, yüksek titreli anti-CCP pozitifliği ve erken erozyonları olan 44 yaşında hastada TNF-alfa inhibitörü eklenmesi planlanıyor. Hasta yüksek tüberküloz prevalansı olan bir bölgede yaşıyor, bilinen tüberküloz teması yok, akciğer grafisi normal.\n\nTedavi öncesi zorunlu olan adım hangisidir?",
+      "secenekler": {
+        "A": "Yalnızca akciğer grafisi yeterlidir; normalse ek tarama gerekmez.",
+        "B": "Tarama gereksizdir; tüberküloz riski yalnızca glukokortikoid kullananlarda artar.",
+        "C": "Balgamda aside dirençli basil aranması tek başına yeterlidir.",
+        "D": "Latent tüberküloz taraması (tüberkülin deri testi veya interferon-gama salınım testi) ile viral hepatit serolojisi yapılmalı; latent enfeksiyon saptanırsa koruyucu tedavi başlanıp uygun süre sonra biyolojik ajana geçilmelidir.",
+        "E": "Doğrudan TNF-alfa inhibitörü başlanmalı, tarama tedavinin üçüncü ayında yapılmalıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "TNF-alfa inhibitörleri latent tüberkülozu reaktive eder; tedavi öncesi tüberkülin deri testi veya interferon-gama salınım testi ile latent enfeksiyon ve viral hepatit serolojisi taranır, latent enfeksiyonda koruyucu tedavi başlatılıp uygun süre sonra biyolojik ajana geçilir.",
+      "aciklama_detay": "TNF-alfa, granülom bütünlüğünün korunmasında ve makrofaj içi mikobakteriyel kontrolde merkezi bir sitokindir; bu nedenle TNF inhibisyonu latent tüberkülozun reaktivasyonuna ve sıklıkla ekstrapulmoner/dissemine formda ortaya çıkmasına yol açar. Bu yüzden tedavi öncesi tarama bir zorunluluktur ve iki bileşeni vardır: latent tüberküloz için tüberkülin deri testi veya interferon-gama salınım testi (immünsüprese hastada deri testi yalancı negatif verebileceği için interferon-gama salınım testi tercih edilir; ikisi birden istenebilir) ve akciğer grafisi ile risk öyküsü değerlendirmesi. Latent enfeksiyon saptanırsa koruyucu tedavi (örneğin izoniyazid temelli rejim) başlatılır ve biyolojik ajana genellikle koruyucu tedavinin başlangıcından belirli bir süre sonra geçilir. Normal akciğer grafisi latent enfeksiyonu dışlamaz — latent hastalıkta grafi tipik olarak normaldir; balgam incelemesi ise aktif hastalık için anlamlıdır, latent enfeksiyonu göstermez. Aynı hazırlık paketinde hepatit B ve C serolojisi de yer alır: TNF inhibitörleri ve özellikle rituksimab hepatit B reaktivasyonuna yol açabilir, HBsAg veya izole anti-HBc pozitifliğinde antiviral profilaksi gerekir. Tedavi altında tarama yapmak, reaktivasyonu önceden engellemek amacını ortadan kaldırır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Latent enfeksiyonda akciğer grafisi tipik olarak normaldir; immünolojik test şarttır.",
+        "B": "YANLIS — TNF inhibisyonu bağımsız ve güçlü bir reaktivasyon etkenidir.",
+        "C": "YANLIS — Balgam incelemesi aktif hastalığı arar; latent enfeksiyonu göstermez.",
+        "D": "DOGRU — Latent tüberküloz ve viral hepatit taraması yapılır; gerekiyorsa önce koruyucu tedavi başlatılır.",
+        "E": "YANLIS — Tarama tedaviden ÖNCE yapılmalıdır; sonradan yapılması önleyici amacı ortadan kaldırır."
+      },
+      "etiketler": [
+        "TNF-alfa İnhibitörü",
+        "Latent Tüberküloz",
+        "İnterferon-gama Salınım Testi",
+        "Hepatit Taraması",
+        "Biyolojik Ajan Hazırlığı"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s6",
+      "metin": "27 yaşında kadın hasta, 14 aydır leflunomid 20 mg/gün ile remisyonda izleniyor ve 3 ay içinde gebelik planlıyor.\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Leflunomid kesilmeli ve kolestiramin ile yıkama protokolü uygulanarak plazma düzeyinin eşiğin altına düştüğü doğrulanmalı; hastalık kontrolü için gebelikte kullanılabilecek ajanlara (hidroksiklorokin, sülfasalazin, düşük doz glukokortikoid, gerekirse sertolizumab pegol) geçilmelidir.",
+        "B": "Leflunomid gebelikte güvenli olduğu için değişiklik gerekmez.",
+        "C": "Leflunomid kesilip yerine metotreksat başlanmalı; metotreksat gebelikte leflunomide göre güvenlidir.",
+        "D": "Leflunomid kesilmesi yeterlidir; ilacın yarı ömrü kısa olduğu için ek işlem gerekmez.",
+        "E": "Gebelik ertelenmeli; hastalık aktif olmadığı sürece hiçbir ilaç değişikliği yapılmamalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Leflunomid teratojeniktir ve enterohepatik dolaşım nedeniyle aktif metaboliti aylarca kalır; gebelik öncesi kolestiramin ile yıkama yapılıp plazma düzeyinin eşiğin altına düştüğü doğrulanmalı, tedavi gebelikte kullanılabilir ajanlarla sürdürülmelidir.",
+      "aciklama_detay": "Leflunomidin aktif metaboliti yoğun enterohepatik dolaşıma girer ve eliminasyon yarı ömrü haftalar-aylar düzeyindedir; ilacı kesmek tek başına güvenli gebelik için yeterli değildir. Bu nedenle gebelik planlayan hastada kolestiramin ile yıkama protokolü uygulanır (aktif metaboliti bağlayarak atılımını hızlandırır) ve plazma düzeyinin kabul edilen eşiğin (<0.02 mg/L) altına düştüğü, aralıklı iki ölçümle doğrulanır. Metotreksat da teratojenik ve abortifasiyandır; gebelikten en az 3 ay önce kesilmelidir — dolayısıyla alternatif olarak önerilemez. Gebelikte kullanılabilecek seçenekler hidroksiklorokin, sülfasalazin (folik asit desteğiyle) ve düşük doz glukokortikoidlerdir; biyolojik ajan gerekiyorsa sertolizumab pegol öne çıkar, çünkü Fc parçası içermediği için plasentayı etkin biçimde geçmez ve gebelik boyunca sürdürülebilir. Planlamanın ikinci boyutu hastalık kontrolüdür: gebelikte hastalık aktivitesinin bir kısım hastada kendiliğinden gerilediği bilinse de, aktif hastalık düşük doğum ağırlığı ve preterm doğumla ilişkilidir; bu nedenle tedaviyi tümüyle bırakmak değil, güvenli ajanlara geçirmek hedeflenir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Kolestiramin ile yıkama ve düzey doğrulaması; gebelikte güvenli ajanlarla tedaviye devam.",
+        "B": "YANLIS — Leflunomid teratojeniktir ve gebelikte kontrendikedir.",
+        "C": "YANLIS — Metotreksat da teratojeniktir; gebelikten en az 3 ay önce kesilir.",
+        "D": "YANLIS — Aktif metabolit enterohepatik dolaşım nedeniyle uzun süre kalır; yıkama gerekir.",
+        "E": "YANLIS — Aktif hastalık gebelik sonuçlarını olumsuz etkiler; tedavi bırakılmaz, güvenli ajanlara geçirilir."
+      },
+      "etiketler": [
+        "Leflunomid",
+        "Kolestiramin Yıkaması",
+        "Gebelik Planlaması",
+        "Sertolizumab Pegol",
+        "Teratojenite"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium); Wallace DJ, UpToDate — Romatizmal hastalıklarda antimalaryal ilaçlar"
+    },
+    {
+      "id": "s7",
+      "metin": "Hafif seyirli hastalığı nedeniyle hidroksiklorokin başlanması planlanan 52 yaşında hastanın boyu 160 cm, kilosu 58 kg. Böbrek fonksiyonları normal, tamoksifen kullanmıyor.\n\nBu ilaçla ilgili en uygun izlem planı hangisidir?",
+      "secenekler": {
+        "A": "Üç ayda bir karaciğer biyopsisi yapılmalıdır.",
+        "B": "Yalnızca işitme testi gerekir; göz muayenesinin yeri yoktur.",
+        "C": "Doz gerçek vücut ağırlığına göre günlük 5 mg/kg'ı aşmayacak şekilde ayarlanmalı, başlangıçta bir taban göz muayenesi yapılmalı ve retinopati açısından periyodik oftalmolojik izlem sürdürülmelidir.",
+        "D": "Retinopati riski bulunmadığından herhangi bir göz izlemi gerekmez.",
+        "E": "Aylık kemik mineral yoğunluğu ölçümü yapılmalıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Hidroksiklorokinin en önemli uzun dönem toksisitesi retinal birikime bağlı retinopatidir; doz gerçek vücut ağırlığına göre ≤5 mg/kg/gün tutulur, başlangıçta taban göz muayenesi yapılır ve periyodik oftalmolojik izlem sürdürülür.",
+      "aciklama_detay": "Hidroksiklorokin, romatoid artritte hafif seyirli hastalıkta veya kombinasyonların bir bileşeni olarak kullanılan, görece güvenli bir konvansiyonel sentetik hastalık modifiye edici ilaçtır; ancak retinal pigment epitelinde birikerek geri dönüşsüz retinopatiye yol açabilir. Riski belirleyen en güçlü iki etken günlük dozun vücut ağırlığına oranı ve kullanım süresidir; bu nedenle doz GERÇEK vücut ağırlığına göre günde 5 mg/kg'ı aşmayacak şekilde ayarlanır (bu hastada 58 kg için yaklaşık 290 mg/gün üst sınır). Ek risk etkenleri böbrek yetmezliği, tamoksifen eş kullanımı ve önceden var olan makula hastalığıdır. İzlem şeması: tedavinin ilk yılında taban muayenesi (görme alanı ve optik koherens tomografi gibi objektif yöntemlerle), ardından risk etkeni olmayan hastada genellikle 5 yıl sonra başlayıp yıllık sürdürülen tarama; risk etkeni varsa tarama daha erken başlatılır ve sıklaştırılır. Erken saptama kritiktir, çünkü retinopati geri dönüşsüzdür ve ilacı bırakmak ilerlemeyi ancak durdurabilir. Rutin karaciğer biyopsisi, kemik dansitometrisi ve işitme testi bu ilaç için standart izlem parçası değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Rutin karaciğer biyopsisi bu ilacın izlem parçası değildir.",
+        "B": "YANLIS — Kritik izlem gözedir; işitme kaybı bu ilacın tipik izlem başlığı değildir.",
+        "C": "DOGRU — Doz ≤5 mg/kg/gün (gerçek ağırlık), taban göz muayenesi ve periyodik oftalmolojik izlem.",
+        "D": "YANLIS — Retinopati bu ilacın en önemli uzun dönem toksisitesidir.",
+        "E": "YANLIS — Kemik dansitometrisi glukokortikoid kullanımıyla ilişkilidir, hidroksiklorokinle değil."
+      },
+      "etiketler": [
+        "Hidroksiklorokin",
+        "Retinopati",
+        "Doz Ayarı",
+        "Oftalmolojik İzlem",
+        "Toksisite Takibi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Wallace DJ, UpToDate — Romatizmal hastalıklarda antimalaryal ilaçlar"
+    },
+    {
+      "id": "s8",
+      "metin": "Yüksek titreli romatoid faktör ve anti-CCP pozitifliği olan 61 yaşında hastada, metotreksat ve ardından adalimumab ile yeterli yanıt alınamamış. Ek olarak yüksek çözünürlüklü tomografide usual interstitial pneumonia paterninde interstisyel akciğer hastalığı saptanıyor; karbonmonoksit difüzyon kapasitesi azalmış.\n\nBu hastada en uygun sonraki basamak tedavi hangisidir?",
+      "secenekler": {
+        "A": "Başka bir TNF-alfa inhibitörüne geçilmesi; sınıf içi değişim akciğer tutulumunda en etkili stratejidir.",
+        "B": "Rituksimab; seropozitif ve TNF inhibitörüne yanıtsız olgularda etkilidir ve akciğer tutulumu eşlik eden hastalarda öne çıkan seçeneklerdendir (hepatit B serolojisi ve immünglobulin düzeyi öncesinde değerlendirilmelidir).",
+        "C": "Metotreksat dozunun 30 mg/haftaya yükseltilmesi.",
+        "D": "Tüm hastalık modifiye edici tedavilerin kesilip yalnızca yüksek doz glukokortikoid ile izlem.",
+        "E": "Yalnızca antifibrotik tedavi başlanması ve hastalık modifiye edici tedavinin tümüyle bırakılması."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Seropozitif, TNF inhibitörüne yanıtsız ve interstisyel akciğer hastalığı eşlik eden olguda rituksimab öne çıkan seçenektir; başlanmadan önce hepatit B serolojisi ve immünglobulin düzeyi değerlendirilmelidir.",
+      "aciklama_detay": "Bir TNF-alfa inhibitörüne yetersiz yanıt durumunda genel ilke, etki mekanizması FARKLI bir ajana geçmektir (rituksimab, tosilizumab/sarilumab, abatasept veya bir JAK inhibitörü). Bu hastada iki ek belirleyici vardır. Birincisi seropozitiflik: rituksimabın klinik etkinliği ve yanıt oranları romatoid faktör ve/veya anti-CCP pozitif hastalarda seronegatiflere göre belirgin biçimde yüksektir; yüksek antikor titreleri yanıtın en güçlü bağımsız öngördürücüsü olarak tanımlanmıştır. İkincisi akciğer tutulumudur: interstisyel akciğer hastalığı eşlik eden seropozitif olgularda rituksimab, akciğer fonksiyonlarının stabilizasyonu açısından öne çıkan seçeneklerdendir; abatasept de bu bağlamda değerlendirilen bir alternatiftir. Metotreksatın bu hastada akciğer tutulumu zemininde dozunun yükseltilmesi uygun değildir. Rituksimab öncesi hazırlık önemlidir: hepatit B serolojisi (HBsAg ve anti-HBc; pozitiflikte antiviral profilaksi, çünkü reaktivasyon riski yüksektir), immünglobulin düzeyleri (tekrarlayan kürlerde hipogamaglobulinemi gelişebilir) ve aşılamaların tedavi öncesi tamamlanması. Antifibrotik tedavi ilerleyici fibrozan fenotipte bir ek seçenek olabilir ancak inflamatoryal eklem hastalığının tedavisini bırakmanın gerekçesi değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yanıtsızlıkta genel ilke mekanizma değişimidir; sınıf içi geçiş bu tabloda tercih edilen strateji değildir.",
+        "B": "DOGRU — Seropozitif, TNF inhibitörüne yanıtsız ve akciğer tutulumu olan olguda rituksimab; öncesinde hepatit B ve immünglobulin değerlendirmesi.",
+        "C": "YANLIS — Metotreksat hem 30 mg/hafta gibi dozlarda standart olarak kullanılmaz hem de akciğer tutulumu zemininde uygun değildir.",
+        "D": "YANLIS — Yalnızca yüksek doz glukokortikoid uzun dönem kontrol sağlamaz ve toksisite yükü yüksektir.",
+        "E": "YANLIS — Eklem hastalığının tedavisi bırakılmaz; antifibrotik tedavi ancak uygun fenotipte EK seçenektir."
+      },
+      "etiketler": [
+        "Rituksimab",
+        "Seropozitiflik",
+        "İnterstisyel Akciğer Hastalığı",
+        "Mekanizma Değişimi",
+        "Hepatit B Reaktivasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium); Matson SM ve Shmerling RH, UpToDate"
+    },
+    {
+      "id": "s9",
+      "metin": "48 yaşında hastada romatoid faktör ve anti-CCP NEGATİF; klinik ve görüntüleme ile tanı doğrulanmış. Metotreksat ve ardından üçlü konvansiyonel kombinasyon ile 6 ayda hedefe ulaşılamamış; erozyon yok, akciğer tutulumu yok.\n\nBiyolojik/hedefe yönelik ajan seçimi için en uygun değerlendirme hangisidir?",
+      "secenekler": {
+        "A": "Rituksimab ilk tercih olmalıdır; seronegatif hastalarda etkinliği seropozitiflerden yüksektir.",
+        "B": "Seronegatif hastalarda biyolojik ajanlar etkisiz kabul edildiği için yalnızca uzun süreli glukokortikoid kullanılmalıdır.",
+        "C": "Abatasept kontrendikedir; yalnızca anti-CCP pozitif hastalarda kullanılabilir.",
+        "D": "Anti-CCP negatifliği tedavi seçimini hiçbir biçimde etkilemez; ajanlar arasında yanıt farkı yoktur.",
+        "E": "Rituksimab yanıtı seronegatif olgularda daha sınırlı olduğundan, öncelikle farklı mekanizmalı ajanlar (TNF-alfa inhibitörü, IL-6 reseptör blokörü veya JAK inhibitörü) tercih edilmelidir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Rituksimabın etkinliği seropozitif hastalarda belirgin biçimde daha yüksek, seronegatif olgularda daha sınırlıdır; bu nedenle anti-CCP negatif dirençli hastada öncelikle TNF-alfa inhibitörü, IL-6 reseptör blokörü veya JAK inhibitörü tercih edilir.",
+      "aciklama_detay": "Seroloji, prognozun ötesinde bir tedavi seçim parametresidir. B hücre deplesyonu sağlayan rituksimabın yanıt oranları romatoid faktör ve/veya anti-CCP pozitif hastalarda belirgin biçimde yüksek, seronegatif olgularda anlamlı düzeyde düşüktür; bu nedenle konvansiyonel tedaviye dirençli anti-CCP negatif hastada B hücre deplesyonu yerine farklı mekanizmalı ajanlar önce gelir: TNF-alfa inhibitörleri, IL-6 reseptör antagonistleri (özellikle metotreksat intoleransı olan ve monoterapi gereken hastada güçlü seçenek) veya JAK inhibitörleri. Anti-CCP negatif fenotipin diğer özellikleri de bu kararı destekler: radyografik ilerleme daha yavaş, eroziv hasar ve ağır organ tutulumu olasılığı daha düşüktür ve 'kötü prognostik etken' kategorisindeki yüksek titreli antikor pozitifliği bulunmadığı için konvansiyonel tedavilerle remisyon şansı görece yüksektir. Abatasept seronegatif hastalarda kontrendike değildir; yalnızca yüksek titreli anti-CCP pozitifliğinde yanıt ve radyografik durdurma oranları daha yüksektir, ayrıca ciddi enfeksiyon öyküsü veya ileri yaş gibi durumlarda güvenlilik nedeniyle öne çıkar. Yalnızca glukokortikoid ile idame hiçbir grupta kabul edilebilir bir strateji değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İlişki tam tersidir: rituksimab yanıtı SEROPOZİTİF hastalarda daha yüksektir.",
+        "B": "YANLIS — Seronegatif hastalarda TNF inhibitörleri, IL-6 blokörleri ve JAK inhibitörleri etkilidir.",
+        "C": "YANLIS — Abatasept seronegatif hastada kontrendike değildir; yalnızca yüksek anti-CCP titresinde yanıt oranları daha iyidir.",
+        "D": "YANLIS — Seroloji, özellikle rituksimab yanıtı açısından ajan seçimini etkiler.",
+        "E": "DOGRU — Seronegatif dirençli olguda öncelikle TNF inhibitörü, IL-6 reseptör blokörü veya JAK inhibitörü tercih edilir."
+      },
+      "etiketler": [
+        "Anti-CCP Negatif Fenotip",
+        "Rituksimab Yanıt Öngörüsü",
+        "IL-6 Reseptör Blokörü",
+        "JAK İnhibitörü",
+        "Ajan Seçimi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium); Shmerling RH & Greisen SR, UpToDate — Romatoid artritte biyolojik belirteçler"
+    },
+    {
+      "id": "s10",
+      "metin": "68 yaşında erkek hasta, metotreksata yetersiz yanıt nedeniyle ek tedavi gerektiriyor. Özgeçmişinde 3 yıl önce miyokard enfarktüsü, geçirilmiş derin ven trombozu, 40 paket-yıl sigara öyküsü ve hipertansiyon var.\n\nJAK inhibitörü düşünülen bu hastada en uygun değerlendirme hangisidir?",
+      "secenekler": {
+        "A": "JAK inhibitörleri kardiyovasküler olaylardan koruyucudur; bu hastada ilk tercih olmalıdır.",
+        "B": "Tromboemboli öyküsü JAK inhibitörü kullanımını etkilemez; yalnızca aktif kanser bir kısıttır.",
+        "C": "JAK inhibitörleri yalnızca genç hastalarda etkilidir; bu nedenle yaş tek başına dışlayıcıdır.",
+        "D": "İleri yaş, aterosklerotik kardiyovasküler hastalık, tromboemboli öyküsü ve yoğun sigara kullanımı bir arada risk-yarar dengesini olumsuz etkiler; bu profilde başka mekanizmalı bir ajan (örneğin abatasept ya da IL-6 reseptör blokörü) tercih edilmeli, JAK inhibitörü ancak alternatif yoksa ve riskler konuşularak düşünülmelidir.",
+        "E": "JAK inhibitörü başlanabilir ancak yalnızca kısa süreli kullanımda risk oluşur; uzun süreli kullanım güvenlidir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "50 yaş üstü, aterosklerotik kardiyovasküler hastalık, tromboemboli öyküsü ve sigara kullanımının birlikteliği JAK inhibitörlerinin risk-yarar dengesini olumsuz etkiler; bu profilde farklı mekanizmalı ajanlar önce gelir.",
+      "aciklama_detay": "JAK inhibitörleri (tofasitinib, barisitinib, upadasitinib) hücre içi JAK-STAT yolağını bloke eden oral ajanlardır; hızlı klinik yanıt ve monoterapi kullanılabilirlik gibi avantajları vardır. Ancak güvenlilik verileri, özellikle 50 yaş üstü ve en az bir kardiyovasküler risk etkeni taşıyan hastalarda majör kardiyovasküler olaylar, venöz tromboemboli, malignite ve ciddi enfeksiyon açısından dikkat gerektirdiğini göstermektedir; bu nedenle etiket bilgileri bu gruplarda kullanımı kısıtlar. Bu hastada dört ayrı risk etkeni (ileri yaş, geçirilmiş miyokard enfarktüsü, geçirilmiş derin ven trombozu, yoğun sigara) bir arada bulunmaktadır — tromboemboli öyküsü özellikle güçlü bir çekince oluşturur. Uygun yaklaşım, mekanizması farklı ve bu risk profilinde daha güvenli seçeneklere yönelmektir: abatasept (özellikle ciddi enfeksiyon öyküsü ve ileri yaşta güvenlilik açısından öne çıkar) veya IL-6 reseptör blokörleri. Ayrıca romatoid artritin kendisinin kardiyovasküler riski yaklaşık iki kat artırdığı unutulmamalı; inflamasyonun etkin baskılanması ve klasik risk etkenlerinin (lipid, kan basıncı, sigara) agresif yönetimi tedavinin ayrılmaz parçasıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bu ajanlar kardiyovasküler koruma sağlamaz; riskli gruplarda çekince konusudur.",
+        "B": "YANLIS — Venöz tromboemboli öyküsü önemli bir çekincedir.",
+        "C": "YANLIS — Etkinlik yaşla sınırlı değildir; sorun etkinlik değil güvenliliktir.",
+        "D": "DOGRU — Risk etkenlerinin birlikteliği nedeniyle farklı mekanizmalı bir ajan tercih edilmelidir.",
+        "E": "YANLIS — Risk kısa süreli kullanımla sınırlı değildir; çekinceler tedavi süresi boyunca geçerlidir."
+      },
+      "etiketler": [
+        "JAK İnhibitörü",
+        "Kardiyovasküler Risk",
+        "Venöz Tromboemboli",
+        "Abatasept",
+        "Risk-Yarar Değerlendirmesi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s11",
+      "metin": "Uzun süreli, eroziv ve seropozitif romatoid artriti olan 64 yaşında hastada tekrarlayan sinüzit ve cilt enfeksiyonları gelişiyor. Muayenede dalak kosta kenarını 4 cm geçiyor.\n\nTetkikler:\nLökosit: 2.6 × 10⁹/L · Mutlak nötrofil sayısı: 0.8 × 10⁹/L\nHemoglobin: 11.4 g/dL · Trombosit: 168 × 10⁹/L\nPeriferik yaymada iri, granüllü görünümde lenfositlerde artış dikkat çekiyor\n\nBu hastada ayırıcı tanıyı netleştirmek için en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "Akım sitometrisi ve T hücre reseptör klonalite analizi yapılmalı; böylece Felty sendromu ile büyük granüler lenfosit lösemisi ayırt edilir.",
+        "B": "Doğrudan splenektomi yapılmalı; nötropeninin tek tedavisi budur.",
+        "C": "Nötropeni metotreksata bağlıdır; başka hiçbir araştırma gerekmez.",
+        "D": "Kemik iliği aspirasyonu gereksizdir; tanı yalnızca dalak boyutuyla konur.",
+        "E": "Tablo mutlaka ilaç dışı bir viral enfeksiyondur; seroloji dışında test gerekmez."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Seropozitif eroziv hastalık + nötropeni + splenomegali Felty sendromunu düşündürür; ancak iri granüllü lenfositler büyük granüler lenfosit lösemisini (yalancı Felty) akla getirir ve ayrım akım sitometrisi ile T hücre reseptör klonalite analizine dayanır.",
+      "aciklama_detay": "Felty sendromu, şiddetli ve genellikle uzun süreli eroziv seropozitif romatoid artrit zemininde nötropeni (mutlak nötrofil sayısı <2.0 × 10⁹/L) ve splenomegali üçlüsüyle tanımlanır; hastalar tekrarlayan bakteriyel enfeksiyonlara yatkındır. Ancak aynı klinik üçlü, klonal sitotoksik T hücre proliferasyonu olan büyük granüler lenfosit lösemisinde de görülür — bu birliktelik 'yalancı Felty' olarak adlandırılır ve romatoid artrit hastalarında bu klonal hastalığın sıklığı artmıştır. İki tablonun ayrımı tedaviyi değiştirdiği için önemlidir ve morfoloji tek başına yetmez: periferik kan akım sitometrisiyle karakteristik immünofenotip (örneğin CD3+, CD8+, CD57+ ve CD5/CD7 kaybı gösteren) aranır ve T hücre reseptör geni klonalitesi çalışılır; gerekirse kemik iliği incelemesi eklenir. Ayırıcı tanıda ilaç kaynaklı nötropeni (metotreksat, sülfasalazin, leflunomid) ve enfeksiyonlar da yer alır ve ilaç değerlendirmesi yapılır — ancak splenomegali ve iri granüllü lenfositoz varlığında araştırmayı ilaçla kapatmak yanlıştır. Tedavi yaklaşımı klonal hastalık varsa (metotreksat, siklofosfamid veya siklosporin temelli) buna göre, Felty sendromunda ise altta yatan hastalığın etkin baskılanmasına yönelir; splenektomi seçilmiş, dirençli olgularda düşünülen bir seçenektir, ilk adım değildir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Akım sitometrisi ve T hücre reseptör klonalite analizi ile Felty sendromu ile klonal büyük granüler lenfosit lösemisi ayırt edilir.",
+        "B": "YANLIS — Splenektomi ilk adım değildir; seçilmiş dirençli olgularda düşünülür.",
+        "C": "YANLIS — İlaç kaynaklı nötropeni değerlendirilir ama splenomegali ve granüllü lenfositoz varlığında araştırma kapatılamaz.",
+        "D": "YANLIS — Dalak boyutu tek başına tanı koydurmaz; klonalite araştırılmalıdır.",
+        "E": "YANLIS — Viral enfeksiyon bu kronik tabloyu ve splenomegaliyi açıklamaz."
+      },
+      "etiketler": [
+        "Felty Sendromu",
+        "Büyük Granüler Lenfosit Lösemisi",
+        "Nötropeni",
+        "Splenomegali",
+        "Klonalite Analizi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Kay J, UpToDate — Felty sendromu klinik bulgular ve tanı"
+    },
+    {
+      "id": "s12",
+      "metin": "Seropozitif romatoid artrit tanılı 55 yaşında erkek hastada sağda plevral efüzyon saptanıyor. Torasentez bulguları:\n\nGörünüm: bulanık, sarı\nProtein: eksüdatif aralıkta\nGlukoz: 22 mg/dL (eş zamanlı kan glukozu 104 mg/dL)\nLDH: belirgin yüksek\npH: 7.18\nHücre: lenfosit ağırlıklı, bol dejenere hücre\nGram boyama ve kültürler negatif; aside dirençli basil boyaması negatif; sitoloji malign hücre göstermiyor\n\nBu bulguların en olası açıklaması ve yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Bulgular transüda ile uyumludur; kalp yetmezliği araştırılmalıdır.",
+        "B": "Bulgular kesin olarak ampiyemi gösterir; tüp torakostomi ve antibiyotik zorunludur.",
+        "C": "Bulgular romatoid plörit ile uyumludur (düşük glukoz, yüksek LDH, düşük pH); yine de tüberküloz, ampiyem ve malignite dışlanmalı, hastalığın sistemik tedavisi gözden geçirilmelidir.",
+        "D": "Düşük plevral glukoz yalnızca diyabetik hastalarda görülür ve burada laboratuvar hatasıdır.",
+        "E": "Plevral sıvı incelemesi gereksizdir; seropozitif hastada efüzyon her zaman hastalığa bağlıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Belirgin düşük plevral glukoz (<30 mg/dL), yüksek LDH ve düşük pH romatoid plörit için karakteristiktir; ancak aynı biyokimyasal profil ampiyem, tüberküloz ve maligniteyle de görülebileceğinden bunlar dışlanmalıdır.",
+      "aciklama_detay": "Plevral tutulum, romatoid artritin en sık plöropulmoner bulgularından biridir ve erkeklerde, seropozitif hastalarda daha sıktır. Karakteristik plevral sıvı profili eksüdatif, lenfosit ağırlıklı, belirgin DÜŞÜK glukoz (tipik olarak <30 mg/dL), yüksek LDH ve düşük pH şeklindedir; düşük glukozun mekanizması, plevral yüzeydeki inflamasyonun glukoz transportunu bozması ve lokal metabolik tüketimdir. Kritik nokta, bu biyokimyasal üçlünün romatoid plörite ÖZGÜ olmamasıdır: aynı profil komplike parapnömonik efüzyon/ampiyem, tüberküloz plöriti ve malign efüzyonda da görülür. Bu nedenle tanı bir dışlama sürecidir — Gram boyama ve kültürler, mikobakteriyel incelemeler (kültür ve moleküler testler; adenozin deaminaz gibi yardımcı belirteçler), sitoloji ve klinik bağlam birlikte değerlendirilir; şüphe sürerse plevra biyopsisi gündeme gelir. Ayrıca düşük glukozun kan şekeriyle karşılaştırmalı okunması gerekir; bu hastada kan glukozu normaldir, dolayısıyla değer gerçek bir plevral bulgudur. Yönetim genellikle altta yatan hastalığın sistemik tedavisinin güçlendirilmesine dayanır; büyük, semptomatik efüzyonda boşaltma yapılır, dirençli olgularda plevral girişimler düşünülür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Protein ve LDH değerleri eksüdayı gösterir; transüda ile uyumlu değildir.",
+        "B": "YANLIS — Ampiyem dışlanmalıdır ama negatif boyama/kültür ve bu klinik bağlamda kesin ampiyem denemez.",
+        "C": "DOGRU — Romatoid plörit ile uyumlu profil; yine de tüberküloz, ampiyem ve malignite dışlanmalıdır.",
+        "D": "YANLIS — Düşük plevral glukoz eş zamanlı kan glukozu normalken de görülür ve gerçek bir bulgudur.",
+        "E": "YANLIS — Efüzyonun nedeni her zaman hastalık değildir; enfeksiyon ve malignite mutlaka dışlanmalıdır."
+      },
+      "etiketler": [
+        "Romatoid Plörit",
+        "Plevral Glukoz",
+        "Eksüda",
+        "Tüberküloz Ayrımı",
+        "Ekstra-artiküler Tutulum"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s13",
+      "metin": "Aktif romatoid artriti olan 49 yaşında kadın hastada halsizlik ve anemi saptanıyor. Hasta ağrı için düzenli olarak nonsteroid antiinflamatuar ilaç kullanıyor.\n\nTetkikler:\nHemoglobin: 9.8 g/dL · MCV: 79 fL\nFerritin: 68 ng/mL\nTransferrin satürasyonu: %13\nCRP: 34 mg/L · ESR: 52 mm/saat\n\nBu bulguların en doğru yorumu hangisidir?",
+      "secenekler": {
+        "A": "Ferritin 30 ng/mL'nin üzerinde olduğu için demir eksikliği kesin olarak dışlanır; tablo yalnızca kronik hastalık anemisidir.",
+        "B": "Aktif inflamasyonda ferritin pozitif akut faz reaktanı olarak yükseldiği için standart eşik yetersiz kalır; bu hastada ferritin <100 ng/mL ve transferrin satürasyonu <%20 eşlik eden demir eksikliğini gösterir ve gastrointestinal kan kaybı araştırılmalıdır.",
+        "C": "Yüksek CRP nedeniyle ferritin ve transferrin satürasyonu yorumlanamaz; demir durumu yalnızca kemik iliği biyopsisiyle değerlendirilebilir.",
+        "D": "Düşük transferrin satürasyonu yalnızca talasemi taşıyıcılığını gösterir; demir tedavisi kontrendikedir.",
+        "E": "Tablo B12 vitamini eksikliğine bağlıdır; MCV düşüklüğü bunu destekler."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Ferritin aktif inflamasyonda yükselen pozitif bir akut faz reaktanıdır; bu nedenle romatoid artrit hastasında demir eksikliği için standart <30 ng/mL eşiği yerine <100 ng/mL (veya transferrin satürasyonu <%20) eşiği kullanılır — bu hasta eşlik eden demir eksikliği tanımına girer.",
+      "aciklama_detay": "Romatoid artritte en sık görülen anemi türü, IL-6 aracılı hepsidin artışıyla demirin retiküloendotelyal sistemde tutulduğu kronik hastalık anemisidir; bu tabloda ferritin normal veya yüksektir. Ancak nonsteroid antiinflamatuar ilaç kullanımına bağlı gastrointestinal mikro-kanamalar ve emilim sorunları nedeniyle mutlak demir eksikliği de sıkça eşlik eder — ve iki durum bir arada olduğunda ferritin yanıltıcı biçimde 'normal' bir aralıkta ölçülür. Bu nedenle kronik inflamatuar zeminde eşik revize edilir: inflamasyon yokken mutlak demir eksikliği için <30 ng/mL kullanılırken, aktif inflamasyonda eşlik eden eksikliği yakalamak için ferritin <100 ng/mL veya transferrin satürasyonu <%20 ölçütü esas alınır. Bu hastada hem ferritin 68 ng/mL hem transferrin satürasyonu %13'tür; tablo kronik hastalık anemisi üzerine eklenmiş demir eksikliğidir. İki adım gerekir: (1) demir replasmanı planlamak — inflamasyon varlığında oral emilim hepsidin nedeniyle bozulabileceği için parenteral yol düşünülebilir, (2) nedeni araştırmak — düzenli nonsteroid antiinflamatuar kullanan bir hastada gastrointestinal kan kaybı ve yaşa uygun malignite taraması ihmal edilemez. Düşük MCV de mikst tabloyu destekler; kronik hastalık anemisi tipik olarak normositerdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İnflamasyon varlığında <30 ng/mL eşiği eksikliği maskeler; ferritin 68 ng/mL demir eksikliğini dışlamaz.",
+        "B": "DOGRU — Revize eşik (<100 ng/mL veya transferrin satürasyonu <%20) eşlik eden demir eksikliğini gösterir; kan kaybı araştırılmalıdır.",
+        "C": "YANLIS — Bu parametreler revize eşiklerle yorumlanabilir; kemik iliği biyopsisi rutin gerekmez.",
+        "D": "YANLIS — Talasemi taşıyıcılığında transferrin satürasyonu tipik olarak korunur; bulgular demir eksikliğini gösteriyor.",
+        "E": "YANLIS — B12 eksikliği makrositoz yapar; düşük MCV bu tanıyla uyumsuzdur."
+      },
+      "etiketler": [
+        "Ferritin Eşiği",
+        "Kronik Hastalık Anemisi",
+        "Demir Eksikliği",
+        "Hepsidin",
+        "Transferrin Satürasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium); Antonelli M, UpToDate — Akut faz reaktanları"
+    },
+    {
+      "id": "s14",
+      "metin": "Tosilizumab (IL-6 reseptör antagonisti) ile izlenen 71 yaşında kadın hasta iki gündür süren yaygın karın ağrısı ve iştahsızlıkla başvuruyor. Ateş 37.3 °C, nabız 104/dakika, kan basıncı 104/62 mmHg. Batında yaygın hassasiyet ve sol alt kadranda defans var.\n\nTetkikler:\nCRP: 4 mg/L\nESR: 12 mm/saat\nLökosit: 9.1 × 10⁹/L\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "CRP normal olduğu için ciddi enfeksiyon dışlanır; oral analjezik ile taburcu edilebilir.",
+        "B": "Yalnızca hastalık alevlenmesi düşünülmeli ve glukokortikoid dozu artırılmalıdır.",
+        "C": "CRP normal olduğu için görüntüleme gereksizdir; 48 saat sonra poliklinik kontrolü planlanmalıdır.",
+        "D": "Antibiyotik başlanmalı ancak görüntüleme ve cerrahi değerlendirme CRP yükselmedikçe ertelenmelidir.",
+        "E": "IL-6 blokajı CRP ve ESR yanıtını baskılar; bu değerler enfeksiyonu veya perforasyonu dışlamaz. Divertikülit/perforasyon gibi intraabdominal acil olasılığıyla acil görüntüleme ve cerrahi değerlendirme yapılmalı, biyolojik ajan durdurulmalıdır."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "IL-6 reseptör blokajı akut faz yanıtını doğrudan baskıladığı için CRP ve ESR normal kalabilir; bu hastada peritoneal bulgular varlığında laboratuvara güvenilmez, acil görüntüleme ve cerrahi değerlendirme yapılmalı ve biyolojik ajan durdurulmalıdır.",
+      "aciklama_detay": "IL-6, karaciğerde CRP sentezini uyaran ana sitokindir; IL-6 reseptör antagonistleri (tosilizumab, sarilumab) bu yolağı bloke ederek CRP'yi ve ESR'yi hızla normale döndürür. Bu etki hastalık izleminde avantaj gibi görünse de klinik güvenlik açısından bir körleşme yaratır: ciddi bakteriyel enfeksiyon, apse veya organ perforasyonu varlığında dahi CRP normal, ateş baskılı ve lökositoz yokken (ilacın nötrofil sayısını da düşürebildiği hatırlanmalı) hasta 'iyi' görünebilir. Bu sınıfın özgün risklerinden biri tam olarak alt gastrointestinal perforasyondur ve risk divertikülozu olan ileri yaş hastada, eş zamanlı glukokortikoid ve nonsteroid antiinflamatuar kullanımıyla artar. Bu olguda karın ağrısı, taşikardi, sınırda kan basıncı ve sol alt kadranda defans varlığı — laboratuvar sessiz olsa bile — acil intraabdominal patoloji lehinedir: kontrastlı tomografi ile görüntüleme, cerrahi konsültasyon, geniş spektrumlu antibiyotik ve biyolojik ajanın durdurulması gerekir. Genel ders: akut faz reaktanlarını baskılayan bir tedavi altında karar KLİNİĞE dayanır; normal CRP bir güvence değil, yorumlanamaz bir değerdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bu tedavi altında normal CRP enfeksiyonu veya perforasyonu dışlamaz.",
+        "B": "YANLIS — Peritoneal bulgular alevlenmeyle açıklanamaz; glukokortikoid artışı perforasyonu maskeler ve kötüleştirir.",
+        "C": "YANLIS — Defans varlığında görüntülemeyi geciktirmek yaşamsal risk yaratır.",
+        "D": "YANLIS — Görüntüleme ve cerrahi değerlendirme CRP'ye bağlanamaz; bu hastada CRP yanıltıcıdır.",
+        "E": "DOGRU — Akut faz yanıtı baskılıdır; acil görüntüleme, cerrahi değerlendirme ve biyolojik ajanın durdurulması gerekir."
+      },
+      "etiketler": [
+        "IL-6 Reseptör Antagonisti",
+        "Akut Faz Baskılanması",
+        "Gastrointestinal Perforasyon",
+        "Enfeksiyon Maskelenmesi",
+        "Klinik Karar"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s15",
+      "metin": "Yeni tanı romatoid artrit nedeniyle 6 ay önce metotreksat başlanan (mevcut doz haftalık 25 mg, tolere ediyor, folik asit alıyor) 51 yaşında hastanın kontrolünde DAS28 skoru 5.2 olarak hesaplanıyor. Başlangıçta el radyografilerinde marjinal erozyonlar vardı ve anti-CCP yüksek titrede pozitif. Hasta ilacını düzenli kullanıyor.\n\nHedefe göre tedavi (treat-to-target) ilkesine göre en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "Metotreksat aynı dozda 12 ay daha sürdürülmeli; erken değişiklik yanıtı değerlendirmeyi engeller.",
+        "B": "Yalnızca uzun süreli, orta doz glukokortikoid ile idame sağlanmalıdır.",
+        "C": "Metotreksat kesilip yalnızca hidroksiklorokin ile devam edilmelidir.",
+        "D": "Hedefe ulaşılamamıştır (DAS28 5.2 yüksek aktivite); kötü prognostik etkenler (yüksek titreli anti-CCP, başlangıçta erozyon) bulunduğundan metotreksata bir biyolojik veya hedefe yönelik sentetik hastalık modifiye edici ilaç eklenmeli ve hedefe ulaşana kadar 3 ayda bir yeniden değerlendirilmelidir.",
+        "E": "Tedavi başarılıdır; DAS28 5.2 düşük hastalık aktivitesini gösterir ve izlem yeterlidir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "DAS28 5.2 yüksek hastalık aktivitesidir ve 6 ayda hedefe ulaşılamamıştır; yüksek titreli anti-CCP ve başlangıç erozyonu gibi kötü prognostik etkenler varlığında metotreksata bir biyolojik veya hedefe yönelik sentetik ajan eklenir ve 3 ayda bir yeniden değerlendirme yapılır.",
+      "aciklama_detay": "Hedefe göre tedavi ilkesi üç bileşen taşır: tanımlı bir hedef (remisyon, ulaşılamıyorsa düşük hastalık aktivitesi), düzenli ve nesnel ölçüm (DAS28, SDAI veya CDAI) ve hedefe ulaşılmadığında tedavinin değiştirilmesi. Eşikler: DAS28 <2.6 remisyon, ≤3.2 düşük aktivite, >5.1 yüksek aktivite. Bu hastanın skoru 5.2'dir; yani 6 ayın sonunda hedefin çok uzağındadır ve metotreksat hem doz hem uyum açısından optimize edilmiş durumdadır. Sonraki basamağı belirleyen etken kötü prognostik etkenlerin varlığıdır: yüksek titreli romatoid faktör/anti-CCP, başlangıçta erozyon varlığı ve yüksek akut faz reaktanları. Bunlar mevcutsa konvansiyonel üçlü kombinasyon yerine doğrudan bir biyolojik (TNF inhibitörü, IL-6 reseptör blokörü, abatasept, rituksimab) veya hedefe yönelik sentetik ajan (JAK inhibitörü) eklenmesi tercih edilir; kötü prognostik etken yoksa konvansiyonel kombinasyon (metotreksat + sülfasalazin + hidroksiklorokin) bir seçenektir. Glukokortikoid yalnızca köprü tedavisi olarak, mümkün olan en kısa sürede ve düşük dozda kullanılır; uzun süreli idame osteoporoz, hipertansiyon, dislipidemi ve enfeksiyon yükü nedeniyle kabul edilebilir bir strateji değildir. Yeniden değerlendirme aralığı 3 aydır; hedefe ulaşıldıktan sonra izlem seyreltilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Hedefe ulaşılmadığında 3-6 ayda tedavi değiştirilir; 12 ay beklemek eklem hasarına zemin hazırlar.",
+        "B": "YANLIS — Glukokortikoid yalnızca köprü tedavisidir; uzun süreli idame uygun değildir.",
+        "C": "YANLIS — Etkili çapa ilacını kesip daha zayıf bir ajanla devam etmek aktiviteyi artırır.",
+        "D": "DOGRU — Yüksek aktivite + kötü prognostik etkenler; biyolojik veya hedefe yönelik sentetik ajan eklenir, 3 ayda bir yeniden değerlendirilir.",
+        "E": "YANLIS — DAS28 >5.1 yüksek hastalık aktivitesidir; düşük aktivite eşiği ≤3.2'dir."
+      },
+      "etiketler": [
+        "Hedefe Göre Tedavi",
+        "DAS28 Eşikleri",
+        "Kötü Prognostik Etkenler",
+        "Basamak Yükseltme",
+        "Glukokortikoid Köprü Tedavisi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Smolen JS & Aletaha D, UpToDate — Hastalık aktivitesi ve fonksiyonun değerlendirilmesi; Konu anlatımı (MediSea premium)"
+    }
+  ]
+}

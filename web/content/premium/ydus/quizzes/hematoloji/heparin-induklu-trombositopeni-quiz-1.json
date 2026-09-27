@@ -1,0 +1,458 @@
+{
+  "id": "quiz-hema-heparin-induklu-trombositopeni-001",
+  "baslik": "Heparin İlişkili Trombositopeni (HİT) — Soru Seti 1",
+  "branch": "hematoloji",
+  "topic": "heparin-induklu-trombositopeni",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "68 yaşında erkek hasta, koroner arter baypas cerrahisinin 7. gününde profilaktik unfraksiyone heparin (UFH) almaktadır. Sağ bacakta yeni gelişen ağrı ve ödem üzerine yapılan Doppler incelemede popliteal derin ven trombozu saptanıyor.\n\nTetkikler:\nTrombosit (post-op 1. gün): 260 × 10⁹/L\nTrombosit (bugün): 88 × 10⁹/L\nSepsis, ilaç değişikliği veya kanama yok; fibrinojen ve INR normal\n\nBu hastada 4Ts skoru ve izlenmesi gereken yol hangisidir?",
+      "secenekler": {
+        "A": "4Ts skoru 4; orta olasılık kabul edilip heparin sürdürülmeli, yalnızca anti-PF4 testi istenmelidir.",
+        "B": "4Ts skoru 8; heparin sürdürülerek ELISA ve serotonin salınım testi sonuçları beklenmeli, sonuç pozitif çıkarsa tedavi değiştirilmelidir.",
+        "C": "4Ts skoru 8 (yüksek olasılık); tüm heparin kaynakları derhal kesilmeli ve test sonucu beklenmeden tam doz non-heparin antikoagülan başlanmalıdır.",
+        "D": "4Ts skoru 6; UFH kesilip düşük molekül ağırlıklı heparine geçilmeli, böylece çapraz reaktivite sorunu çözülmelidir.",
+        "E": "4Ts skoru 8; heparin kesilmeli ancak trombositopeni nedeniyle yalnızca profilaktik doz antikoagülasyon verilmelidir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Dört bileşenin tümü 2 puan alır (düşüş >%50 ve nadir ≥20 × 10⁹/L · 5-10. gün · kanıtlanmış yeni tromboz · başka neden yok) ve skor 8'dir; yüksek olasılıkta laboratuvar beklenmeden tüm heparinler kesilir ve TERAPÖTİK doz non-heparin antikoagülan başlanır.",
+      "aciklama_detay": "4Ts bileşenleri: trombosit düşüşü bazale göre %66 (>%50) ve nadir 88 × 10⁹/L (≥20) → 2 puan; düşüşün 5-10. günde başlaması → 2 puan; kanıtlanmış yeni tromboz → 2 puan; açıklayıcı başka neden olmaması → 2 puan; toplam 8 (yüksek olasılık, HİT riski yaklaşık %50-64). Yüksek ve orta olasılıkta yönetim kuralı aynıdır: tanısal doğrulama beklenmez, çünkü tedavi edilmeyen HİT'te tromboz riski günlük yaklaşık %5-10'dur. Kritik iki nokta: (1) yalnızca heparini kesmek yetersizdir — heparin kesilse bile hastaların yaklaşık yarısında yeni tromboz gelişir, çünkü patojenik antikorlar dolaşımdan kaybolana kadar trombin jenerasyonu sürer; (2) trombositopeni varlığında dahi doz PROFİLAKTİK değil terapötik olmalıdır. Düşük molekül ağırlıklı heparine geçmek çözüm değildir: HİT antikorları LMWH-PF4 kompleksleriyle de çapraz reaksiyon verir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Dört bileşen de tam puan alıyor; skor 4 değil 8'dir ve heparinin sürdürülmesi kontrendikedir.",
+        "B": "YANLIS — Skor doğru hesaplanmış ancak yönetim yanlış: orta/yüksek olasılıkta test sonucu beklenmeden heparin kesilir.",
+        "C": "DOGRU — Skor 8 (yüksek olasılık); tüm heparinler kesilir, terapötik doz non-heparin antikoagülan hemen başlanır.",
+        "D": "YANLIS — LMWH, HİT antikorlarıyla çapraz reaksiyon verir; yasak olan heparin sınıfının tamamıdır (kateter yıkama dozları dahil).",
+        "E": "YANLIS — Profilaktik doz yetersizdir; HİT primer bir hiperkoagülabilite tablosudur ve trombositopeniye rağmen tam doz antikoagülasyon gerekir."
+      },
+      "etiketler": [
+        "4Ts Skoru",
+        "Tip II HİT",
+        "Non-Heparin Antikoagülan",
+        "Terapötik Doz",
+        "Kardiyak Cerrahi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Arachchillage ve ark. Br J Haematol 2024 (HİT tanı ve yönetim kılavuzu, 3. baskı)"
+    },
+    {
+      "id": "s2",
+      "metin": "72 yaşında kadın hastada 4Ts skoru 5 olarak hesaplanıyor; heparin kesilip argatroban başlanmış. IgG-spesifik anti-PF4/heparin ELISA sonucu optik dansite (OD) 0.85 olarak geliyor.\n\nBu laboratuvar sonucunun yorumu ve sonraki en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "Sonuç belirsiz/zayıf pozitif aralıktadır; tanı için fonksiyonel bir test (serotonin salınım testi veya HIPA) istenmeli, bu sürede non-heparin antikoagülasyon sürdürülmelidir.",
+        "B": "ELISA pozitif olduğu için HİT kesinleşmiştir; ek test gereksizdir ve ömür boyu antikoagülasyon planlanmalıdır.",
+        "C": "OD 0.85 negatif kabul edilir; HİT ekarte edilir ve heparine geri dönülebilir.",
+        "D": "ELISA'nın özgüllüğü yüksek olduğundan bu değer kesin tanı koydurur; fonksiyonel test yalnızca OD <0.40 olduğunda istenir.",
+        "E": "Poliklonal IgM/IgA antikorları ölçülmediği için test geçersizdir; polispesifik ELISA ile tekrarlanmalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "OD 0.40-1.99 aralığı belirsiz/orta pozitifliktir: SRA pozitifliği olasılığı bu aralıkta %1 ile %58 arasında değişir, dolayısıyla fonksiyonel doğrulama gerekir; bu sırada non-heparin antikoagülasyon kesilmez.",
+      "aciklama_detay": "ELISA ikili (pozitif/negatif) değil, BÜYÜKLÜĞÜYLE okunur. OD <0.40'ta SRA pozitifliği olasılığı %0-0.1'dir (HİT ekarte edilir); OD 0.40-0.99'da %1-5, OD 1.00-1.39'da %18-30, OD 1.40-1.99'da %50-58, OD ≥2.00'da %89-100'dür. Bu hastada OD 0.85 zayıf pozitiftir: antikor saptanmıştır ama bu antikorların TROMBOSİT AKTİVE EDİCİ (patojenik) olup olmadığı gösterilmemiştir — ELISA duyarlılığı >%98 olmasına karşın özgüllüğü düşüktür ve klinik önemi olmayan antikorları da yakalar (kardiyak cerrahi sonrası hastaların önemli bir kısmı seropozitiftir, çok azında HİT gelişir). Bu nedenle ara değerlerde altın standart fonksiyonel test (SRA) veya HIPA ile doğrulama gerekir. Doğrulama beklenirken 4Ts orta olduğu için non-heparin antikoagülasyon sürdürülür; aşırı tanının bedeli kanama, eksik tanının bedeli uzuv/yaşam kaybıdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — OD 0.40-1.99 belirsiz aralıktır; fonksiyonel test doğrulaması gerekir ve bu sürede non-heparin antikoagülasyon sürer.",
+        "B": "YANLIS — Bu OD değeri kesin tanı koydurmaz; ayrıca HİT'te antikoagülasyon süresi trombozun varlığına göre belirlenir, ömür boyu değildir.",
+        "C": "YANLIS — Negatiflik eşiği OD <0.40'tır; 0.85 negatif değildir ve heparine dönmek tehlikelidir.",
+        "D": "YANLIS — ELISA'nın duyarlılığı yüksek, ÖZGÜLLÜĞÜ düşüktür; kesin tanı ancak OD ≥2.00 gibi güçlü pozitiflikte veya fonksiyonel testle konur.",
+        "E": "YANLIS — Tam tersine IgG-spesifik kit tercih edilir; IgM/IgA antikorları klinik olarak anlamsızdır ve polispesifik kit özgüllüğü düşürür."
+      },
+      "etiketler": [
+        "Anti-PF4 ELISA",
+        "Optik Dansite",
+        "Fonksiyonel Test",
+        "Özgüllük",
+        "Tanı Algoritması"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Pishko & Crowther, UpToDate — HİT tanısı; Arachchillage ve ark. Br J Haematol 2024"
+    },
+    {
+      "id": "s3",
+      "metin": "HİT şüpheli bir hastanın serumu ile yapılan ¹⁴C-serotonin salınım testi (SRA) sonucu şöyle bildiriliyor:\n\n0.1 IU/mL heparin varlığında: %62 serotonin salınımı\n100 IU/mL heparin varlığında: %6 serotonin salınımı\nHeparin eklenmeden (0 IU/mL): %4 serotonin salınımı\n\nBu sonucun yorumu hangisidir?",
+      "secenekler": {
+        "A": "Test geçersizdir; pozitiflik için her iki heparin konsantrasyonunda da salınım >%20 olmalıdır.",
+        "B": "Yüksek heparin konsantrasyonunda salınımın baskılanması, sonucun yalancı pozitif olduğunu gösterir.",
+        "C": "Sonuç otoimmün HİT ile uyumludur; heparinsiz ortamda güçlü aktivasyon vardır.",
+        "D": "Sonuç pozitif ve heparin bağımlılığı doğrulanmıştır; klasik HİT ile uyumludur.",
+        "E": "Salınım oranı %80'in altında kaldığı için sonuç negatif kabul edilir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Terapötik heparin konsantrasyonunda >%20 salınım POZİTİFLİK, supraterapötik konsantrasyonda (100 IU/mL) salınımın BASKILANMASI ise heparin bağımlılığının doğrulanmasıdır; ikisi birlikte klasik HİT'i gösterir.",
+      "aciklama_detay": "SRA'nın iki basamaklı okunması patofizyolojiden doğar. İmmün kompleks oluşumu için PF4:heparin molar oranı dar bir aralıkta (yaklaşık 1:1-1:2) olmalıdır; terapötik konsantrasyonda (0.1-0.3 IU/mL, bazı laboratuvarlarda 0.5 IU/mL'ye kadar) ultra-büyük kompleksler oluşur, FcγRIIa çapraz bağlanır ve trombositler serotonin salar (>%20 pozitif kabul edilir). Supraterapötik heparin (100 IU/mL) ise PF4'ü tek tek bağlayarak stokiyometriyi bozar, kompleksleri çözer ve aktivasyonu BASKILAR. Bu inhibisyonun gösterilmesi, sonucun heparin bağımlı gerçek HİT reaktivitesi olduğunu doğrular; inhibisyon yoksa (özellikle heparinsiz ortamda güçlü salınım varsa) otoimmün HİT/VITT spektrumu düşünülür. Bu olguda heparinsiz salınım %4'tür, yani otoimmün fenotip yoktur. Bir ek tuzak: tikagrelor alan hastaların serumu test donör trombositlerini inhibe ederek SRA'da yalancı negatiflik yapabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kriter tam tersidir: terapötik dozda salınım, yüksek dozda İNHİBİSYON beklenir.",
+        "B": "YANLIS — Yüksek heparinde baskılanma yalancı pozitifliğin değil, gerçek heparin bağımlılığının kanıtıdır.",
+        "C": "YANLIS — Otoimmün HİT için heparinsiz (0 IU/mL) ortamda güçlü aktivasyon (spontan HİT'te >%50 salınım) gerekir; burada bu değer %4'tür.",
+        "D": "DOGRU — Terapötik dozda >%20 salınım + yüksek dozda inhibisyon = pozitif SRA, klasik heparin bağımlı HİT.",
+        "E": "YANLIS — Pozitiflik eşiği %20'dir; %80 gibi bir eşik yoktur."
+      },
+      "etiketler": [
+        "Serotonin Salınım Testi",
+        "Heparin Bağımlılığı",
+        "Stokiyometri",
+        "Fonksiyonel Assay",
+        "Altın Standart"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Arachchillage ve ark. Br J Haematol 2024; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s4",
+      "metin": "Derin ven trombozu nedeniyle UFH ve eş zamanlı varfarin başlanan 61 yaşında hastada, 8. günde trombosit sayısı 240 × 10⁹/L'den 52 × 10⁹/L'ye düşüyor. Muayenede sol bacak distalinde ilerleyici mor renk değişimi ve soğukluk var; ancak femoral, popliteal ve dorsalis pedis nabızları PALPABL.\n\nTetkikler:\nINR: 4.9\nFibrinojen: normal\n\nBu tabloyu açıklayan mekanizma ve ilk yapılması gerekenler hangisidir?",
+      "secenekler": {
+        "A": "Arteriyel embolizasyon gelişmiştir; acil arteriyografi ve kateter aracılı trombektomi planlanmalıdır.",
+        "B": "Venöz uzuv gangreni gelişmektedir: varfarin derhal kesilmeli, intravenöz K vitamini (5-10 mg) verilmeli ve tam doz non-heparin antikoagülana geçilmelidir.",
+        "C": "INR yüksekliği aşırı antikoagülasyonu gösterir; varfarin dozu azaltılıp izlem yeterlidir.",
+        "D": "Tablo varfarin ilişkili kanama komplikasyonudur; taze donmuş plazma ve trombosit transfüzyonu ile INR düzeltilmelidir.",
+        "E": "Tablo kompartman sendromudur; acil fasyotomi ve heparin infüzyonunun sürdürülmesi gerekir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Akut HİT zemininde varfarin verilmesi kısa yarı ömürlü Protein C'yi hızla tüketir, prokoagülan faktörler dolaşımda kalır ve nabızların korunduğu mikrovasküler tromboz (venöz uzuv gangreni) gelişir; varfarin kesilir, IV K vitamini verilir, tam doz non-heparin antikoagülasyon sürdürülür.",
+      "aciklama_detay": "Akut HİT'te masif trombin jenerasyonu vardır. Bu zeminde K vitamini antagonisti verildiğinde, yarı ömrü yaklaşık 6 saat olan Protein C (ve Protein S) hızla düşerken, Faktör II ve X henüz baskılanmamıştır; denge aşırı protrombotik yöne kayar ve DVT olan ekstremitede mikrovasküler yatak tıkanır. Ayırt edici klinik imza, arteriyel nabızların KORUNMUŞ olmasına karşın distal doku nekrozunun ilerlemesidir — tıkanıklık arteriyel değil mikrovaskülerdir. INR'nin >4.0-5.0 yükselmesi burada antikoagülasyonu değil Protein C çöküşünü yansıtır; bu nedenle INR'ye bakarak antikoagülanı azaltmak ölümcül bir yanılgıdır. Yönetim: varfarini kes, IV K vitamini (5-10 mg) ile Protein C sentezini geri kazandır, tam doz non-heparin antikoagülanı sürdür. Varfarin ancak non-heparin antikoagülan altında trombositler ≥150 × 10⁹/L düzeyine geldikten sonra, düşük dozda (2.5-5 mg) ve en az 5 gün çakıştırmayla başlanabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Nabızların palpabl olması makrovasküler arteriyel tıkanıklığı dışlar; sorun mikrovasküler trombozdur.",
+        "B": "DOGRU — Varfarin ilişkili venöz uzuv gangreni; varfarini kes, IV K vitamini ver, tam doz non-heparin antikoagülana geç.",
+        "C": "YANLIS — INR yüksekliği Protein C çöküşünün göstergesidir; antikoagülasyonu azaltmak trombozu hızlandırır.",
+        "D": "YANLIS — Tablo trombotiktir, kanama değildir; ayrıca HİT'te profilaktik trombosit transfüzyonu trombozu şiddetlendirir.",
+        "E": "YANLIS — Kompartman sendromu bu tabloyu açıklamaz ve heparinin sürdürülmesi mutlak kontrendikedir."
+      },
+      "etiketler": [
+        "Venöz Uzuv Gangreni",
+        "Protein C",
+        "Varfarin",
+        "K Vitamini",
+        "Mikrovasküler Tromboz"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Crowther & Pishko, UpToDate — HİT yönetimi; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s5",
+      "metin": "Son dönem böbrek yetmezliği nedeniyle haftada üç kez hemodiyaliz uygulanan 58 yaşında hastada, diyaliz devresinin heparinizasyonu sırasında tekrarlayan devre pıhtılaşması ve trombosit düşüşü gelişiyor. Anti-PF4 ELISA OD 2.4 ve SRA pozitif. Karaciğer fonksiyon testleri normal.\n\nSistemik antikoagülasyon için en uygun ajan ve gerekçesi hangisidir?",
+      "secenekler": {
+        "A": "Fondaparinuks; PF4 ile oligomer yapmadığı için böbrek yetmezliğinde de ilk tercihtir.",
+        "B": "Düşük molekül ağırlıklı heparin; anti-Xa düzeyi ile izlenerek güvenle kullanılabilir.",
+        "C": "Varfarin; trombosit sayısı beklenmeden hemen başlanmalıdır.",
+        "D": "Rivaroksaban; akut fazda ilk saatlerde parenteral tedaviye üstündür.",
+        "E": "Argatroban; hepatobiliyer yolla elimine edildiği için böbrek yetmezliğinde doz ayarı gerektirmez."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Argatroban yalnızca hepatobiliyer yolla atılır; böbrek yetmezliği ve hemodiyalizde doz ayarı gerekmediği için ilk tercihtir (yarı ömrü 40-50 dakika, aPTT ile bazalin 1.5-3.0 katı hedeflenir).",
+      "aciklama_detay": "HİT'te non-heparin antikoagülan seçimi organ fonksiyonuna göre yapılır. Argatroban hepatobiliyer klirensli bir doğrudan trombin inhibitörüdür: böbrek yetmezliğinde/diyalizde doz ayarı gerekmez (1-2 µg/kg/dk), buna karşın karaciğer yetmezliği, yoğun bakım, kalp yetmezliği veya kardiyak cerrahi sonrası başlangıç dozu 0.5 µg/kg/dk'ya düşürülür. Bivalirudin ise %80 enzimatik, %20 renal atılımlıdır; böbrek yetmezliğinde doz azaltılır. Fondaparinuks böbrekle atılır ve CrCl <30 mL/dk'da kontrendikedir — PF4 ile oligomer yapmaması onu immünolojik olarak güvenli kılar ama farmakokinetik engeli kaldırmaz. Diyaliz devresinin kendisi için heparin yerine sitrat antikoagülasyonu kullanılır. Varfarin akut fazda trombositler ≥150 × 10⁹/L olmadan asla başlanmaz (venöz uzuv gangreni riski). DOAC'lar idame ve klinik olarak stabil hastalarda onay dışı seçenektir; ağır böbrek yetmezliğinde rivaroksaban da kısıtlıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Fondaparinuks renal atılımlıdır ve CrCl <30 mL/dk'da kontrendikedir.",
+        "B": "YANLIS — LMWH dahil tüm heparinler HİT'te mutlak kontrendikedir (çapraz reaktivite).",
+        "C": "YANLIS — Akut fazda ve trombositler ≥150 × 10⁹/L'ye çıkmadan varfarin başlamak venöz uzuv gangreni riskini doğurur.",
+        "D": "YANLIS — Akut, ağır trombositopenik ve diyalize bağlı bu tabloda parenteral ve kısa yarı ömürlü bir ajan tercih edilir; ağır böbrek yetmezliğinde rivaroksaban da uygun değildir.",
+        "E": "DOGRU — Argatroban hepatobiliyer eliminasyonu sayesinde böbrek yetmezliği ve hemodiyalizde doz ayarı gerektirmez."
+      },
+      "etiketler": [
+        "Argatroban",
+        "Doğrudan Trombin İnhibitörü",
+        "Böbrek Yetmezliği",
+        "Hemodiyaliz",
+        "İlaç Seçimi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Stojadinovic ve ark. Eur J Clin Pharmacol 2025; Arachchillage ve ark. Br J Haematol 2024"
+    },
+    {
+      "id": "s6",
+      "metin": "Yoğun bakımda izlenen, dekompanse karaciğer sirozu (Child-Pugh C) ve akut HİT tanısı olan 64 yaşında hastada tam doz parenteral antikoagülasyon planlanıyor. Böbrek fonksiyonları normal.\n\nBu hastada antikoagülan seçimi için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Argatroban standart dozda (2 µg/kg/dk) başlanmalı; karaciğer yetmezliği farmakokinetiğini etkilemez.",
+        "B": "Fondaparinuks tercih edilmeli; karaciğer yetmezliğinde en güvenli ajandır.",
+        "C": "Bivalirudin tercih edilebilir; plazma esterazlarıyla yıkıldığı için karaciğer yetmezliğinde doz ayarı gerekmez, argatroban seçilirse doz 0.5 µg/kg/dk'ya düşürülmelidir.",
+        "D": "Antikoagülasyondan kaçınılmalı; sirozun kendisi yeterli otoantikoagülasyon sağlar.",
+        "E": "Apiksaban oral yolla başlanmalı; yoğun bakımda parenteral ajanlara üstündür."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Bivalirudin başlıca enzimatik (plazma esterazları) yolla temizlendiği için karaciğer yetmezliğinde doz ayarı gerektirmez; argatroban kullanılacaksa hepatobiliyer eliminasyonu nedeniyle başlangıç dozu 0.5 µg/kg/dk'ya düşürülmelidir.",
+      "aciklama_detay": "İki doğrudan trombin inhibitörünün eliminasyon yolları birbirinin aynası gibidir ve seçim buna göre yapılır. Argatroban hepatobiliyer atılımlıdır: karaciğer yetmezliği, yoğun bakım hastası, kalp yetmezliği veya kardiyak cerrahi sonrası dönemde başlangıç dozu 0.5 µg/kg/dk'ya indirilir, aksi halde birikip kanama yapar. Bivalirudin %80 plazma esterazları/proteolizle, %20 böbrekle temizlenir; yarı ömrü yaklaşık 25 dakikadır, karaciğer yetmezliğinde doz ayarı gerekmezken ağır böbrek yetmezliğinde doz azaltılır. Sirozda uzamış bazal aPTT ve INR ek bir tuzaktır: bu değerler antikoagülan etkinliği değil sentez yetersizliğini yansıtır, dolayısıyla aPTT hedefi bazal değere göre tanımlanmalı, gerekirse anti-IIa kromojenik düzey kullanılmalıdır. Sirozda kanama ve tromboz riski birlikte artar; 'otoantikoagülasyon' kavramı yanlıştır ve HİT'te antikoagülasyondan kaçınmak uzuv/yaşam kaybı riskini artırır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Karaciğer yetmezliğinde argatroban birikir; başlangıç dozu 0.5 µg/kg/dk'ya düşürülmelidir.",
+        "B": "YANLIS — Fondaparinuks karaciğer yetmezliğinde doz ayarı gerektirmese de uzun yarı ömrü (17 saat) ve antidotsuzluğu nedeniyle kanama riski yüksek yoğun bakım hastasında ilk tercih değildir.",
+        "C": "DOGRU — Bivalirudin karaciğer yetmezliğinde doz ayarı gerektirmez; argatroban seçilirse doz 0.5 µg/kg/dk'ya düşürülür.",
+        "D": "YANLIS — Siroz koruyucu değildir; akut HİT'te tam doz antikoagülasyon zorunludur.",
+        "E": "YANLIS — Akut fazda, hemodinamisi kırılgan yoğun bakım hastasında kısa yarı ömürlü parenteral ajan tercih edilir; DOAC'lar stabil/idame dönem seçeneğidir."
+      },
+      "etiketler": [
+        "Bivalirudin",
+        "Argatroban Doz Ayarı",
+        "Karaciğer Yetmezliği",
+        "Yoğun Bakım",
+        "Farmakokinetik"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Arachchillage ve ark. Br J Haematol 2024; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s7",
+      "metin": "Akut HİT tanılı 55 yaşında hastada trombosit sayısı 19 × 10⁹/L'ye kadar düşüyor. Aktif kanama yok, planlanmış invaziv girişim de yok. Servis hekimi kanama profilaksisi amacıyla trombosit transfüzyonu istemi yapmak istiyor.\n\nBu istem için en doğru değerlendirme hangisidir?",
+      "secenekler": {
+        "A": "Profilaktik trombosit transfüzyonu kontrendikedir; verilen trombositler dolaşımdaki antikorlarca aktive edilerek tromboz riskini artırır.",
+        "B": "Trombosit sayısı <20 × 10⁹/L olduğu için transfüzyon mutlak endikasyondur.",
+        "C": "Transfüzyon yapılmalı, ancak öncesinde IVIG verilerek trombositler korunmalıdır.",
+        "D": "Transfüzyon yerine eltrombopag başlanmalı; HİT'te trombopoietin reseptör agonistleri standart tedavidir.",
+        "E": "Transfüzyon yapılmalı ve antikoagülan geçici olarak kesilmelidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "HİT'te profilaktik trombosit transfüzyonu kontrendikedir: verilen trombositler dolaşımdaki patojenik antikorlarca anında aktive edilerek arteriyel/venöz tromboz ve uzuv kaybı riskini artırır; yalnızca yaşamı tehdit eden kanama veya zorunlu invaziv girişim varlığında düşünülür.",
+      "aciklama_detay": "HİT'te trombositopeni bir kanama hastalığı değil, tüketim ve aktivasyonun göstergesidir; nadir seviye tipik olarak 20-60 × 10⁹/L bandındadır ve spontan kanama nadirdir. Transfüze edilen trombositler, dolaşımda hâlâ bulunan IgG-PF4-heparin immün kompleksleri için yeni FcγRIIa yüzeyi sunar; sonuç ek trombin jenerasyonu ve trombozdur — yani 'yakıt eklemek'. Bu nedenle transfüzyon yalnızca aktif, yaşamı tehdit eden kanamada veya ertelenemez invaziv girişim öncesinde, antikoagülasyon sürdürülerek düşünülür. Aynı mantıkla akut HİT'te vena kava filtresi takılmasından da kaçınılır (filtrede trombotik oklüzyon ve venöz gangren riski). Trombosit sayısı <10-20 × 10⁹/L'ye inmesi HİT için atipiktir ve DİK ya da otoimmün HİT gibi ek bir süreci düşündürür. Trombopoietin reseptör agonistlerinin HİT'te yeri yoktur; trombosit sayısı etkin antikoagülasyon altında günler içinde kendiliğinden düzelir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Profilaktik transfüzyon kontrendikedir; trombotik riski artırır.",
+        "B": "YANLIS — HİT'te eşik değere dayalı profilaktik transfüzyon kuralı uygulanmaz; tablo trombotiktir.",
+        "C": "YANLIS — IVIG refrakter otoimmün HİT/VITT ve zorunlu cerrahi öncesinde kullanılır; profilaktik transfüzyonu meşrulaştırmak için değil.",
+        "D": "YANLIS — Trombopoietin reseptör agonistleri HİT tedavisinde yer almaz; trombositler antikoagülasyon altında kendiliğinden yükselir.",
+        "E": "YANLIS — Antikoagülanı kesmek en tehlikeli adımdır; tromboz riski antikoagülasyon kesildiğinde yükselir."
+      },
+      "etiketler": [
+        "Trombosit Transfüzyonu",
+        "Kontrendikasyon",
+        "Vena Kava Filtresi",
+        "Tromboz Riski",
+        "Tedavi Tuzakları"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Crowther & Pishko, UpToDate — HİT yönetimi; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s8",
+      "metin": "Total diz artroplastisinden 12 gün sonra taburcu edilmiş 70 yaşında hastada bilateral pulmoner emboli ve trombosit sayısında 14 × 10⁹/L'ye kadar düşüş saptanıyor. Dosya incelemesinde hastanın ameliyat döneminde ve sonrasında hiç heparin (kateter yıkama dahil) almadığı doğrulanıyor.\n\nTetkikler:\nAnti-PF4 IgG ELISA OD: 2.9\nSRA (0 IU/mL heparin): %68 serotonin salınımı\nSRA (100 IU/mL heparin): %5 serotonin salınımı\n\nEn olası tanı ve tedavi yaklaşımı hangisidir?",
+      "secenekler": {
+        "A": "İmmün trombositopeni (İTP) ve rastlantısal pulmoner emboli; yüksek doz steroid başlanmalıdır.",
+        "B": "Antifosfolipid sendromu; lupus antikoagülanı ve anti-kardiyolipin testleri ile doğrulanmalıdır.",
+        "C": "Post-operatif dilüsyonel trombositopeni; izlem yeterlidir.",
+        "D": "Spontan (otoimmün) HİT sendromu; heparinden kaçınılarak tam doz non-heparin antikoagülan başlanmalı, ağır/refrakter seyirde yüksek doz IVIG eklenmelidir.",
+        "E": "Trombotik trombositopenik purpura; acil plazma değişimi ve ADAMTS13 düzeyi istenmelidir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Heparin maruziyeti olmaksızın yüksek OD ve heparinsiz ortamda >%50 serotonin salınımı (100 IU/mL'de inhibisyon ile) spontan/otoimmün HİT sendromunun tanımıdır; tedavi non-heparin antikoagülasyon, ağır seyirde yüksek doz IVIG'dir.",
+      "aciklama_detay": "Spontan HİT sendromu, yakın heparin maruziyeti olmaksızın — sıklıkla ortopedik cerrahi (özellikle diz artroplastisi) veya ağır bakteriyel/viral enfeksiyon sonrası — gelişen otoimmün HİT fenotipidir. Bakteriyel hücre duvarı bileşenlerinin (lipid A/polisakkarit) PF4 ile kompleks yapıp ön-immünizasyon oluşturması mekanizma olarak öne sürülür. Tanı üç ayağa dayanır: (1) heparin maruziyetinin olmaması, (2) yüksek ELISA OD pozitifliği, (3) fonksiyonel testte 0 IU/mL heparinde >%50 serotonin salınımı ve 100 IU/mL'de inhibisyon. Otoimmün fenotipte trombositopeni klasik HİT'e göre daha derindir (<20 × 10⁹/L olabilir), seyir daha uzun sürer ve heparin kesilmesiyle düzelmez — çünkü antikorlar heparinden bağımsız çalışır. Tedavide tam doz non-heparin antikoagülan temeldir; refrakter/ağır olgularda FcγRIIa'yı doyuran yüksek doz IVIG (toplam 2 g/kg) ve gerektiğinde plazma değişimi eklenir. Steroid bu tabloda ana tedavi değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İTP masif trombozla seyretmez; ayrıca yüksek titreli anti-PF4 ve fonksiyonel test pozitifliği tanıyı HİT spektrumuna oturtur.",
+        "B": "YANLIS — Antifosfolipid sendromu düşünülebilir ancak anti-PF4 ve fonksiyonel test bulguları HİT spektrumu için tanı koydurucudur.",
+        "C": "YANLIS — Dilüsyonel trombositopeni bu derinlikte olmaz ve pulmoner emboliyi açıklamaz.",
+        "D": "DOGRU — Spontan (otoimmün) HİT; non-heparin antikoagülasyon, ağır seyirde yüksek doz IVIG.",
+        "E": "YANLIS — TTP'de mikroanjiyopatik hemoliz ve şistositler beklenir; burada tablo anti-PF4 aracılı immünotrombozdur."
+      },
+      "etiketler": [
+        "Spontan HİT",
+        "Otoimmün HİT",
+        "Heparinden Bağımsız Aktivasyon",
+        "IVIG",
+        "Diz Artroplastisi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Scully & Lester, Hematology Am Soc Hematol Educ Program 2024"
+    },
+    {
+      "id": "s9",
+      "metin": "Adenovirüs vektörlü aşıdan 11 gün sonra şiddetli baş ağrısı ile başvuran 34 yaşında kadın hastada serebral venöz sinüs trombozu ve trombosit sayısı 28 × 10⁹/L saptanıyor. D-dimer ileri derecede yüksek, fibrinojen düşük. Hastanın hiç heparin kullanmadığı biliniyor. Hızlı otomatize kemilüminesans anti-PF4 testi NEGATİF geliyor.\n\nBu aşamada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Hızlı test negatif olduğu için anti-PF4 aracılı bir bozukluk ekarte edilir; heparin infüzyonu güvenle başlanabilir.",
+        "B": "Aşı ilişkili immün trombotik trombositopeni düşünülmeli: tanı anti-PF4 ELISA ve PF4 eklenmiş fonksiyonel testle konur; heparinden kaçınılarak non-heparin antikoagülan ve yüksek doz IVIG başlanmalıdır.",
+        "C": "Tablo dissemine intravasküler koagülasyondur; tek başına taze donmuş plazma ve fibrinojen replasmanı yeterlidir.",
+        "D": "Antikoagülasyon kontrendikedir; yalnızca trombosit transfüzyonu ve steroid verilmelidir.",
+        "E": "Serebral venöz tromboz nedeniyle acil trombolitik tedavi ilk seçenektir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Adenoviral vektörlü aşı sonrası tromboz + trombositopenide hızlı testlerin (CLIA/LIA) NEGATİF olması tanıyı dışlamaz — tanı anti-PF4 ELISA ve PF4 eklenmiş fonksiyonel testle konur; tedavi heparinden kaçınma, non-heparin antikoagülasyon ve yüksek doz IVIG'dir.",
+      "aciklama_detay": "Aşı ilişkili immün trombotik trombositopenide (VITT) antikorlar PF4 üzerindeki heparin bağlanma bölgesine doğrudan ve yüksek afiniteyle bağlanır; oligo/monoklonaldir ve heparinden bağımsız çalışır. Bu yapısal fark bir laboratuvar paradoksu yaratır: hızlı otomatize testler (CLIA, LIA) bu antikorları KAÇIRIR ve yanlış negatif verir; tanı ancak standart anti-PF4 IgG ELISA'da yüksek OD ve PF4 eklenmiş fonksiyonel testlerle (PF4-enhanced SRA, akım sitometrik P-selektin ekspresyon tayini) konur. Klinik imza tipik olarak aşıdan 5-30 gün sonra atipik bölge trombozu (serebral venöz sinüs, splanknik ven), derin trombositopeni, çok yüksek D-dimer ve düşük fibrinojendir. Tedavide heparinden kaçınılır, non-heparin antikoagülan verilir ve FcγRIIa'yı doyuran yüksek doz IVIG (toplam 2 g/kg) esastır; refrakter olguda plazma değişimi eklenir. Profilaktik trombosit transfüzyonu ve tek başına destek tedavisi yetersizdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Hızlı testlerin negatifliği tanıyı dışlamaz; bu tabloda heparin başlamak tehlikelidir.",
+        "B": "DOGRU — ELISA + PF4 eklenmiş fonksiyonel test ile tanı; heparinsiz antikoagülasyon ve yüksek doz IVIG.",
+        "C": "YANLIS — Tüketim koagülopatisi bulguları eşlik etse de altta yatan immünotromboz tedavi edilmeden replasman yeterli değildir.",
+        "D": "YANLIS — Antikoagülasyon (non-heparin) tedavinin temelidir; trombosit transfüzyonu trombozu şiddetlendirir.",
+        "E": "YANLIS — Trombolitik ilk seçenek değildir; tedavinin omurgası non-heparin antikoagülasyon ve immünomodülasyondur."
+      },
+      "etiketler": [
+        "VITT",
+        "Anti-PF4",
+        "Hızlı Test Yanlış Negatifliği",
+        "Serebral Venöz Sinüs Trombozu",
+        "IVIG"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Scully & Lester, Hematology Am Soc Hematol Educ Program 2024; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s10",
+      "metin": "Üç hafta önce akut HİT tanısı almış, argatroban ile tedavi edilen ve trombosit sayısı normale dönen 66 yaşında hastada, ciddi aort darlığı için ELEKTİF aort kapak replasmanı planlanıyor. Kontrol testlerinde anti-PF4 ELISA pozitif (OD 1.8) ve SRA pozitif.\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Trombosit sayısı normale döndüğü için intraoperatif standart heparin güvenle kullanılabilir.",
+        "B": "Ameliyat hemen yapılmalı, yalnızca ameliyat sonrası dönemde heparinden kaçınılmalıdır.",
+        "C": "Ameliyat hemen yapılmalı ve intraoperatif düşük molekül ağırlıklı heparin kullanılmalıdır.",
+        "D": "Ameliyat öncesi profilaktik trombosit transfüzyonu ile hazırlık yapılmalıdır.",
+        "E": "Elektif cerrahi, fonksiyonel antikorlar negatifleşene kadar (tipik olarak yaklaşık 100 gün) ertelenmelidir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Fonksiyonel antikorlar (SRA) hâlâ pozitifken elektif kardiyak cerrahi ertelenir; antikorlar tipik olarak 50-100 gün içinde kaybolur ve ancak negatifleştikten sonra (uzak/remote HİT) intraoperatif kısa süreli heparin düşünülebilir.",
+      "aciklama_detay": "HİT'in evreleri tedavi kararını belirler. Trombosit sayısının normale dönmesi antikorların kaybolduğu anlamına GELMEZ: subakut HİT A evresinde trombositler düzelmiştir ama hem immünolojik hem fonksiyonel testler pozitiftir; bu evrede heparin verilmesi hızlı ve ağır bir anamnestik yanıt doğurabilir. Bu nedenle ertelenebilir (elektif) girişimler, fonksiyonel test negatifleşene kadar — pratikte yaklaşık 100 gün — bekletilir. Uzak (remote) HİT evresinde, yani ELISA ve SRA'nın ikisi de negatifleştiğinde, zorunlu kardiyak cerrahide YALNIZCA intraoperatif kısa süreli heparin kullanılabilir; ameliyat öncesi ve sonrası dönemde tüm heparinler (yıkama dozları dahil) yasaktır, non-heparin antikoagülan kullanılır. Ertelenemeyen acil cerrahide seçenekler bivalirudin temelli kardiyopulmoner baypas, preoperatif plazma değişimi (taze donmuş plazma ile) veya yüksek doz IVIG'dir. Trombosit transfüzyonu bir hazırlık stratejisi değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Trombosit normalleşmesi antikor kaybını göstermez; SRA pozitifken heparin anamnestik ağır yanıt doğurur.",
+        "B": "YANLIS — Risk intraoperatif maruziyette de vardır; elektif girişim ertelenebilir olduğu için beklenmelidir.",
+        "C": "YANLIS — LMWH çapraz reaksiyon verir ve hiçbir evrede alternatif değildir.",
+        "D": "YANLIS — Trombosit transfüzyonu bu tabloda trombotik riski artırır ve cerrahi hazırlık yöntemi değildir.",
+        "E": "DOGRU — Elektif cerrahi fonksiyonel antikorlar negatifleşene kadar (yaklaşık 100 gün) ertelenir."
+      },
+      "etiketler": [
+        "Subakut HİT",
+        "Remote HİT",
+        "Elektif Cerrahi",
+        "Antikor Kinetiği",
+        "Kardiyak Cerrahi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Ortel & Welsby, UpToDate — Kardiyak/vasküler cerrahide HİT yönetimi"
+    },
+    {
+      "id": "s11",
+      "metin": "Akut HİT tanılı (SRA pozitif) 59 yaşında hastada, sol ana koroner darlığı ve tekrarlayan istirahat anjinası nedeniyle ERTELENEMEYEN koroner baypas cerrahisi kararı veriliyor. Kardiyopulmoner baypas gerekecek.\n\nİntraoperatif antikoagülasyon için en uygun strateji hangisidir?",
+      "secenekler": {
+        "A": "Bivalirudin temelli kardiyopulmoner baypas antikoagülasyonu (bolus + infüzyon, prime solüsyona ek doz, aktive pıhtılaşma zamanı hedefi >480 saniye).",
+        "B": "Standart heparin ile baypas; intraoperatif heparinin kısa süreli olması riski ortadan kaldırır.",
+        "C": "Fondaparinuks infüzyonu ile baypas antikoagülasyonu.",
+        "D": "Antikoagülansız kardiyopulmoner baypas; devre pıhtılaşması trombositopeni nedeniyle beklenmez.",
+        "E": "Varfarin ile INR 3-4 aralığına getirilerek cerrahiye alınması."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Akut HİT'te ertelenemeyen kardiyopulmoner baypasta en güvenli seçenek bivalirudin temelli antikoagülasyondur (1.0 mg/kg bolus + 2.5 mg/kg/saat infüzyon, prime solüsyona 50 mg, hedef aktive pıhtılaşma zamanı >480 saniye); alternatif hazırlık yolları plazma değişimi ve yüksek doz IVIG'dir.",
+      "aciklama_detay": "Kardiyopulmoner baypas devresinin çok yüksek doz antikoagülasyon gerektirmesi, akut HİT'te ciddi bir ikilem yaratır. Bivalirudin bu bağlamda heparinin en güvenli alternatifidir: kısa yarı ömrü (yaklaşık 25 dakika) ve büyük ölçüde enzimatik eliminasyonu yönetimi kolaylaştırır. Pratikte 1.0 mg/kg IV bolus ardından 2.5 mg/kg/saat infüzyon uygulanır, prime solüsyona 50 mg eklenir ve hedef aktive pıhtılaşma zamanı >480 saniyedir. Bivalirudinin özgün tuzağı, durgun kan bulunan alanlarda (kardiyotomi rezervuarı, ven greft segmentleri) peptidin proteolitik yıkımı nedeniyle lokal pıhtı oluşabilmesidir; bu yüzden devre içinde sürekli akış sağlanır. İkinci strateji preoperatif antikor yükünü düşürmektir: 1-2 seans plazma değişimi (albümin değil TAZE DONMUŞ PLAZMA ile — donör poliklonal IgG2'si FcγRIIa'yı kompetitif bloke eder) veya yüksek doz IVIG (1-2 g/kg) sonrası standart heparin ile cerrahi mümkün hale gelebilir. Antikoagülansız baypas ölümcül devre trombozu demektir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Bivalirudin temelli baypas antikoagülasyonu; hedef aktive pıhtılaşma zamanı >480 saniye.",
+        "B": "YANLIS — Akut evrede (SRA pozitif) kısa süreli heparin dahi ağır trombotik reaksiyon doğurur; intraoperatif tek doz heparin yalnızca uzak (remote) evrede düşünülür.",
+        "C": "YANLIS — Fondaparinuks uzun yarı ömürlü, izlemi güç ve baypas antikoagülasyonu için onaylı/uygun bir ajan değildir.",
+        "D": "YANLIS — Trombositopeni koruyucu değildir; antikoagülansız baypas devre trombozuyla sonuçlanır.",
+        "E": "YANLIS — Akut HİT'te varfarin venöz uzuv gangreni riski doğurur ve baypas antikoagülasyonu sağlamaz."
+      },
+      "etiketler": [
+        "Kardiyopulmoner Baypas",
+        "Bivalirudin",
+        "Plazma Değişimi",
+        "IVIG",
+        "Acil Cerrahi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Ortel & Welsby, UpToDate — Kardiyak/vasküler cerrahide HİT yönetimi; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s12",
+      "metin": "Akut HİT ve derin ven trombozu nedeniyle argatroban infüzyonu alan hastada trombosit sayısı 168 × 10⁹/L'ye yükseliyor ve oral antikoagülasyona geçiş planlanıyor. Hasta varfarin ile idame edilecek.\n\nGeçiş için en uygun protokol hangisidir?",
+      "secenekler": {
+        "A": "Argatroban kesilip ertesi gün varfarin 10 mg yükleme dozu ile başlanmalı; çakıştırma gereksizdir.",
+        "B": "Varfarin başlanmalı ve INR 2-3 aralığına gelince argatroban derhal kesilmelidir.",
+        "C": "Argatroban sürdürülürken düşük dozda (≤5 mg) varfarin başlanmalı, en az 5 gün çakıştırılmalı; argatroban PT/INR'yi yapay yükselttiği için çakıştırma döneminde daha yüksek bir INR hedefi kullanılmalı ve argatroban kesildikten 4-6 saat sonra INR ile doğrulanmalıdır.",
+        "D": "Varfarin yerine hemen düşük molekül ağırlıklı heparine geçilip ardından varfarin eklenmelidir.",
+        "E": "Trombosit sayısı 150 × 10⁹/L'nin üzerine çıktığı için antikoagülasyon tamamen kesilebilir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Varfarin ancak trombositler ≥150 × 10⁹/L olduktan sonra düşük dozda başlanır, en az 5 gün argatrobanla çakıştırılır; argatroban INR'yi yapay yükselttiği için çakıştırmada daha yüksek INR hedefi kullanılır ve gerçek INR ilaç kesildikten 4-6 saat sonra ölçülerek doğrulanır.",
+      "aciklama_detay": "Bu geçişte iki ayrı tuzak üst üste biner. Birincisi zamanlama: trombosit sayısı ≥150 × 10⁹/L'ye ulaşmadan varfarin başlanması Protein C çöküşü yoluyla venöz uzuv gangrenine yol açar; bu yüzden düşük doz (2.5-5 mg) ve en az 5 günlük çakıştırma kuralı vardır. İkincisi laboratuvar: argatroban bir doğrudan trombin inhibitörü olarak protrombin zamanını ve dolayısıyla INR'yi yapay olarak uzatır. Çakıştırma döneminde ölçülen INR, varfarinin gerçek K vitamini bağımlı faktör baskılanmasını olduğundan yüksek gösterir; INR 2-3 görüldüğünde argatroban kesilirse hasta aslında yetersiz antikoagülandır ve rebound tromboz gelişir. Bu nedenle kombinasyon döneminde daha yüksek bir INR hedefi (yaklaşık >4.0) benimsenir ve karar, argatroban kesildikten 4-6 saat sonra ölçülen INR veya kromojenik Faktör X düzeyi ile doğrulanır. Antikoagülasyon süresi trombozun varlığına göre belirlenir; trombositler düzeldi diye kesilmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yükleme dozu ve çakıştırmasız geçiş, K vitamini bağımlı antikoagülan boşluğu ve Protein C düşüşü riski doğurur.",
+        "B": "YANLIS — Argatroban INR'yi yapay yükselttiği için INR 2-3'te kesmek yetersiz antikoagülasyon bırakır.",
+        "C": "DOGRU — Düşük doz varfarin + en az 5 gün çakıştırma + yüksek INR hedefi + ilaç kesildikten 4-6 saat sonra doğrulama.",
+        "D": "YANLIS — HİT'te heparin sınıfının tamamı kontrendikedir.",
+        "E": "YANLIS — Trombotik olay varlığında antikoagülasyon trombosit normalleşmesiyle kesilmez."
+      },
+      "etiketler": [
+        "Varfarin Geçişi",
+        "Argatroban INR Etkisi",
+        "Çakıştırma",
+        "Kromojenik Faktör X",
+        "İdame Antikoagülasyon"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Arachchillage ve ark. Br J Haematol 2024; Crowther & Pishko, UpToDate"
+    },
+    {
+      "id": "s13",
+      "metin": "Ağır HİT ve yaygın tromboz nedeniyle argatroban alan hastada tüketim koagülopatisi (yaygın damar içi pıhtılaşma) gelişiyor. Bazal aPTT infüzyon öncesinde de uzamış (52 saniye). Argatroban dozu aPTT hedefine göre ayarlanırken doz giderek azaltılmış; bu sırada ayak parmaklarında yeni iskemik lezyonlar ortaya çıkıyor.\n\nBu sorunun kaynağı ve çözümü hangisidir?",
+      "secenekler": {
+        "A": "Argatroban dozu fazladır; uzamış aPTT toksisiteyi gösterir ve infüzyon kesilmelidir.",
+        "B": "Tüketim koagülopatisi bazal aPTT'yi uzattığı için aPTT hedefine göre doz yapay olarak kısılmış ve hasta yetersiz antikoagülan kalmıştır; izlem anti-IIa kromojenik düzey ile yapılmalıdır.",
+        "C": "Yeni iskemik lezyonlar argatrobanın bilinen bir yan etkisidir; ajan fondaparinuks ile değiştirilmelidir.",
+        "D": "aPTT güvenilir bir izlem parametresi olduğundan sorun antikoagülasyon dışı nedenlerde aranmalıdır.",
+        "E": "Trombosit sayısı düşük olduğu için antikoagülan dozu bilinçli olarak azaltılmalıdır; iskemi kaçınılmazdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Tüketim koagülopatisi bazal aPTT'yi uzatır; hedef aPTT'ye ulaşmak için doz gereksiz yere kısılır ve hasta yetersiz antikoagülan kalır — bu olgularda izlem anti-IIa kromojenik doğrudan trombin inhibitörü düzeyi ile yapılmalıdır.",
+      "aciklama_detay": "aPTT, doğrudan trombin inhibitörü izleminde yaygın ama kırılgan bir parametredir. Ağır HİT'te gelişen tüketim koagülopatisi (faktör tüketimi, yüksek D-dimer, düşük fibrinojen) bazal aPTT'yi zaten uzatır; bu zeminde 'bazalin 1.5-3.0 katı' hedefi, aynı aPTT değerine çok daha DÜŞÜK argatroban dozuyla ulaşılması anlamına gelir. Sonuç, kâğıt üzerinde hedefte görünen ama gerçekte yetersiz antikoagülan alan bir hastadır ve mikrovasküler tromboz ilerler — buradaki yeni dijital iskemik lezyonlar tam olarak bunun işaretidir. Aynı yanılgı karaciğer yetmezliği, lupus antikoagülanı ve faktör eksikliklerinde de görülür. Çözüm parametre değiştirmektir: anti-IIa kromojenik doğrudan trombin inhibitörü düzeyi, aPTT'nin karışıklık yaratan etkilerinden bağımsız olarak ilaç maruziyetini ölçer. Antikoagülanı kesmek ya da trombositopeni nedeniyle dozu bilinçli düşürmek bu tabloda trombotik ilerlemeyi hızlandırır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Uzamış aPTT'nin kaynağı koagülopatidir; infüzyonu kesmek trombozu ağırlaştırır.",
+        "B": "DOGRU — Bazal aPTT uzaması dozun yapay kısılmasına yol açmıştır; anti-IIa kromojenik düzey ile izlenmelidir.",
+        "C": "YANLIS — Yeni iskemi argatroban yan etkisi değil, yetersiz antikoagülasyonun sonucudur; fondaparinuks bu akut tabloda izlem sorununu çözmez.",
+        "D": "YANLIS — aPTT bu bağlamda tam olarak güvenilmez parametredir.",
+        "E": "YANLIS — HİT'te trombositopeniye rağmen tam doz antikoagülasyon kuralı geçerlidir."
+      },
+      "etiketler": [
+        "aPTT Yanılgısı",
+        "Tüketim Koagülopatisi",
+        "Anti-IIa Kromojenik Düzey",
+        "Doz İzlemi",
+        "Mikrovasküler Tromboz"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Arachchillage ve ark. Br J Haematol 2024; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s14",
+      "metin": "Pulmoner emboli nedeniyle unfraksiyone heparin infüzyonu başlanan 47 yaşında hastada, tedavinin 2. gününde trombosit sayısı 230 × 10⁹/L'den 168 × 10⁹/L'ye düşüyor. Yeni tromboz, cilt lezyonu veya sistemik reaksiyon yok; son 100 günde heparin öyküsü bulunmuyor. Sepsis bulgusu yok.\n\nBu bulgunun en olası açıklaması ve yönetimi hangisidir?",
+      "secenekler": {
+        "A": "Tip II immün HİT; heparin kesilip argatroban başlanmalı ve anti-PF4 testi istenmelidir.",
+        "B": "Otoimmün HİT; heparinsiz ortamda trombosit aktivasyonu araştırılmalıdır.",
+        "C": "Aşı ilişkili immün trombotik trombositopeni; anti-PF4 ELISA istenmelidir.",
+        "D": "Non-immün Tip I heparin ilişkili trombositopeni; 4Ts skoru düşük olduğundan antikor testi istenmez, heparin kesilmeden izlem yapılır.",
+        "E": "Heparin ilişkili trombositopeni dışlanamaz; hem heparin kesilmeli hem trombosit transfüzyonu yapılmalıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "İlk 1-4 günde görülen, %30'un altında ve >100 × 10⁹/L düzeyinde kalan, trombozsuz hafif düşüş non-immün Tip I tablosudur; 4Ts skoru düşük olduğu için antikor testi istenmez ve heparin kesilmez.",
+      "aciklama_detay": "Tip I heparin ilişkili trombositopeni, heparinin trombositler üzerindeki doğrudan, antikor bağımsız agregasyon/sekestrasyon etkisiyle ilk 1-4 günde gelişen, hafif (genellikle >100 × 10⁹/L), geçici ve iyi seyirli bir tablodur; heparin kesilmeden kendiliğinden düzelir ve tromboembolik risk taşımaz. Bu olguda 4Ts bileşenleri: düşüş %27 (<%30) → 0 puan; zamanlama ≤4. gün ve son 100 günde maruziyet yok → 0 puan; tromboz yok → 0 puan; başka olası neden yok → 2 puan; toplam 2 puan, yani düşük olasılık. Düşük 4Ts skorunun negatif prediktif değeri >%99'un üzerindedir: bu grupta antikor testi istenmemesi ve heparinin kesilmemesi önerilir. Buradaki asıl kusur sınıfı aşırı tanıdır — HİT, klinikte en sık gereksiz tanı konulan hematolojik acillerden biridir ve gereksiz kesme/alternatif antikoagülan kanama riski ve maliyet doğurur. Yine de trombosit izlemi sürdürülür; 5-10. günlerde belirgin düşüş olursa skor yeniden hesaplanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Zamanlama, düşüş derinliği ve tromboz yokluğu Tip II immün tablo ile uyumlu değildir; 4Ts düşüktür.",
+        "B": "YANLIS — Otoimmün HİT derin trombositopeni ve trombozla seyreder; burada böyle bir tablo yok.",
+        "C": "YANLIS — Aşı ilişkili tablo için uyumlu bir aşı öyküsü ve atipik bölge trombozu beklenir.",
+        "D": "DOGRU — Tip I non-immün tablo; 4Ts düşük, test istenmez, heparin sürdürülerek izlem yapılır.",
+        "E": "YANLIS — Hem gereksiz kesme hem de kontrendike olan profilaktik trombosit transfüzyonu önerilmiş."
+      },
+      "etiketler": [
+        "Tip I HİT",
+        "Non-immün Trombositopeni",
+        "4Ts Düşük Olasılık",
+        "Aşırı Tanı",
+        "Negatif Prediktif Değer"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Pishko & Crowther, UpToDate — HİT klinik tablo ve tanı; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s15",
+      "metin": "26 haftalık gebe, 31 yaşında kadın hastada derin ven trombozu nedeniyle düşük molekül ağırlıklı heparin kullanılırken 9. günde trombosit sayısı %60 düşüyor ve anti-PF4 ELISA ile SRA pozitif geliyor. Böbrek ve karaciğer fonksiyonları normal.\n\nBu hastada antikoagülasyon için en uygun seçim hangisidir?",
+      "secenekler": {
+        "A": "Varfarin; gebeliğin ikinci trimesterinde güvenli kabul edilir.",
+        "B": "Rivaroksaban; oral kullanım kolaylığı nedeniyle tercih edilir.",
+        "C": "Unfraksiyone heparine geçilmesi; molekül farkı çapraz reaktiviteyi ortadan kaldırır.",
+        "D": "Aspirin ile antiplatelet tedavi; gebelikte antikoagülan yerine kullanılabilir.",
+        "E": "Danaparoid; plasentayı geçmediği için birincil seçenektir, bulunamazsa fondaparinuks veya argatroban kullanılabilir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Gebelikte HİT'te tüm heparinler kesilir; varfarin ve doğrudan oral antikoagülanlar kontrendikedir. Plasentayı geçmeyen danaparoid birincil seçenektir; bulunamadığında fondaparinuks veya argatroban kullanılabilir.",
+      "aciklama_detay": "Gebelikte HİT nadirdir ama seçenek havuzunu daraltan iki kısıt taşır: teratojenite ve plasenta geçişi. Varfarin embriyopati ve fetal kanama riski nedeniyle (özellikle birinci trimester ve doğuma yakın dönem) kontrendikedir; doğrudan oral antikoagülanlar plasentayı geçer ve gebelikte kullanılmaz. Heparin sınıfının tamamı — unfraksiyone ve düşük molekül ağırlıklı — HİT antikorlarıyla çapraz reaksiyon verdiği için yasaktır; molekül boyutu farkı immünolojik sorunu çözmez. Danaparoid bir heparinoid Faktör Xa inhibitörüdür, plasentayı geçmez ve gebelikte birincil seçenek kabul edilir (heparinle yaklaşık %3 çapraz reaktivite bildirilmiştir, anti-Xa düzeyiyle izlenir). Danaparoid birçok ülkede bulunmadığından pratikte fondaparinuks (böbrek fonksiyonu uygunsa) ya da kısa yarı ömrü nedeniyle doğuma yakın dönemde yönetilmesi kolay olan argatroban kullanılır. Antiplatelet tedavi HİT'te terapötik antikoagülasyonun yerini alamaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Varfarin gebelikte kontrendikedir; ayrıca akut HİT'te venöz uzuv gangreni riski taşır.",
+        "B": "YANLIS — Doğrudan oral antikoagülanlar plasentayı geçer ve gebelikte kullanılmaz.",
+        "C": "YANLIS — HİT antikorları unfraksiyone heparinle de reaksiyon verir; heparin sınıfının tamamı yasaktır.",
+        "D": "YANLIS — Antiplatelet tedavi, HİT'in trombin jenerasyonuna dayalı protrombotik durumunda terapötik antikoagülasyonun yerini almaz.",
+        "E": "DOGRU — Danaparoid plasentayı geçmediği için birincil seçenek; yoksa fondaparinuks veya argatroban."
+      },
+      "etiketler": [
+        "Gebelikte HİT",
+        "Danaparoid",
+        "Fondaparinuks",
+        "Plasenta Geçişi",
+        "Kontrendikasyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Arachchillage ve ark. Br J Haematol 2024; Konu anlatımı (MediSea premium)"
+    }
+  ]
+}

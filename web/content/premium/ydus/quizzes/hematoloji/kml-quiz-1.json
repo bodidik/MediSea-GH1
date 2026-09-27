@@ -1,0 +1,458 @@
+{
+  "id": "quiz-hema-kml-001",
+  "baslik": "Kronik Miyeloid Lösemi (KML) — Soru Seti 1",
+  "branch": "hematoloji",
+  "topic": "kml",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "54 yaşında erkek hasta halsizlik ve sol üst kadranda dolgunluk yakınmasıyla başvuruyor. Muayenede dalak kosta kenarını 6 cm geçiyor.\n\nTetkikler:\nLökosit: 148 × 10⁹/L (tüm olgunlaşma evrelerinde granülositer seri, bazofil %6)\nTrombosit: 520 × 10⁹/L\nKemik iliği blast oranı: %3\nKonvansiyonel karyotip: 46,XY (t(9;22) SAPTANMADI)\n\nBu hastada tanıyı kesinleştirmek için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Karyotip normal olduğu için kronik miyeloid lösemi dışlanır; JAK2 V617F mutasyonu araştırılmalıdır.",
+        "B": "Kriptik BCR::ABL1 füzyonu olabileceğinden FISH veya kantitatif RT-PCR ile BCR::ABL1 araştırılmalıdır.",
+        "C": "Lökosit alkalen fosfataz skoru ölçülmeli; düşük bulunursa tanı doğrulanmış kabul edilmelidir.",
+        "D": "Doğrudan imatinib başlanmalı, yanıt alınırsa tanı geriye dönük olarak doğrulanmış sayılmalıdır.",
+        "E": "CSF3R T618I mutasyonu araştırılmalı; bu tablo kronik nötrofilik lösemi ile uyumludur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Olguların %1-5'inde Philadelphia kromozomu konvansiyonel karyotipte görülmez (kriptik/varyant translokasyon); tanı FISH veya kantitatif RT-PCR ile BCR::ABL1 füzyonunun gösterilmesine dayanır.",
+      "aciklama_detay": "Kronik miyeloid lösemi tanısı için BCR::ABL1 füzyonunun gösterilmesi şarttır; t(9;22)(q34;q11) klasik sitogenetik karşılığıdır ancak olguların yaklaşık %1-5'inde füzyon kriptiktir — karmaşık veya maskelenmiş translokasyonlar nedeniyle bantlama yöntemiyle saptanamaz. Bu nedenle klinik ve hematolojik tablo uyumluyken karyotip negatifse tanı FISH veya kantitatif RT-PCR ile aranır; RT-PCR aynı zamanda transkript tipini (e13a2/e14a2 → p210, e1a2 → p190, e19a2 → p230) belirler ve bu bilgi hem izlemin hangi ölçekte yapılacağını hem de tedavisiz remisyon adaylığını etkiler. Bazofili, tüm olgunlaşma evrelerinde granülositoz ve splenomegali klasik üçlüdür ama tanısal değildir; lökosit alkalen fosfataz skoru tarihsel bir testtir ve moleküler tanının yerini almaz. Ayırıcı tanıda BCR::ABL1 negatif tablolar (kronik nötrofilik lösemide CSF3R T618I, atipik kronik miyeloid lösemide SETBP1/ETNK1) ancak füzyon dışlandıktan sonra gündeme gelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Normal karyotip füzyonu dışlamaz; kriptik olgular FISH/RT-PCR ile yakalanır.",
+        "B": "DOGRU — Kriptik BCR::ABL1 için FISH veya kantitatif RT-PCR yapılmalıdır.",
+        "C": "YANLIS — Lökosit alkalen fosfataz skoru tarihsel bir göstergedir; moleküler doğrulama şarttır.",
+        "D": "YANLIS — Tanı konmadan hedefe yönelik tedavi başlanması ve yanıtla geriye dönük tanı kabul edilemez.",
+        "E": "YANLIS — Kronik nötrofilik lösemi ancak BCR::ABL1 negatifliği gösterildikten sonra düşünülür; ayrıca bazofili ve bu tablo füzyonu güçlü biçimde düşündürür."
+      },
+      "etiketler": [
+        "BCR::ABL1",
+        "Kriptik Philadelphia",
+        "FISH",
+        "RT-PCR",
+        "Tanı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Cross ve ark. Leukemia 2023 (European LeukemiaNet laboratuvar önerileri)"
+    },
+    {
+      "id": "s2",
+      "metin": "BCR::ABL1 pozitif hastada kemik iliği incelemesinde blast oranı %14 olarak bildiriliyor; ek sitogenetik anormallik yok, miyeloid sarkom bulgusu yok.\n\nBu bulgunun sınıflama karşılığı hangisidir?",
+      "secenekler": {
+        "A": "Hem WHO 2022 hem ICC 2022 sınıflamasında blastik faz kabul edilir.",
+        "B": "Her iki sınıflamada da akselere faz kabul edilir.",
+        "C": "Her iki sınıflamada da kronik faz kabul edilir; akselere faz tanımı iki sistemden de çıkarılmıştır.",
+        "D": "WHO 2022 akselere faz kategorisini kaldırdığı için kronik faz kabul edilir; ICC 2022'de ise %10-19 blast eşiğiyle akselere faz olarak sınıflanır.",
+        "E": "Blast oranı tek başına sınıflama için kullanılamaz; yalnızca ek sitogenetik anormallikler faz belirler."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "WHO 2022 akselere fazı kaldırmış ve hastalığı kronik faz ile blastik faz olarak ikiye indirmiştir; ICC 2022 ise %10-19 blast eşiğiyle akselere fazı korumuştur — aynı hasta iki sistemde farklı adlandırılır.",
+      "aciklama_detay": "İki güncel sınıflama bu noktada ayrışır ve ayrışmanın nedeni tedavi çağının değişmesidir. Tirozin kinaz inhibitörleri öncesinde akselere faz, blastik krize geçişin habercisi olarak bağımsız prognostik anlam taşıyordu; günümüzde etkin tedavi altındaki hastalarda bu ara kategorinin ayırt edici gücü zayıflamıştır. WHO 2022 bu gerekçeyle akselere fazı kaldırmış, yalnızca kronik faz (blastik faz ölçütlerini karşılamayan hastalık; blast <%20) ve blastik faz (≥%20 blast veya miyeloid sarkom) tanımlarını bırakmıştır; %10-19 blast, kronik faz içinde yüksek risk özelliği olarak not edilir. ICC 2022 ise %10-19 blast aralığını akselere faz olarak korumaya devam etmiştir. Pratik sonuç: %14 blast oranı olan bir hasta WHO'ya göre kronik faz, ICC'ye göre akselere fazdır. Bu ayrım kâğıt üstünde kalmaz — dirençli hastalık tanımı, allojenik nakil zamanlaması ve çalışma kayıt ölçütleri hangi sistemin kullanıldığına göre değişebilir; bu nedenle raporlarda hangi sınıflamanın esas alındığı açıkça belirtilmelidir. Blastik faz her iki sistemde ortaktır: ≥%20 blast veya ekstramedüller blastik proliferasyon (miyeloid sarkom).",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Blastik faz eşiği her iki sistemde ≥%20 blasttır.",
+        "B": "YANLIS — Akselere faz tanımı yalnızca ICC 2022'de korunmuştur.",
+        "C": "YANLIS — Akselere fazı kaldıran WHO 2022'dir; ICC bu kategoriyi sürdürmektedir.",
+        "D": "DOGRU — WHO 2022'de kronik faz, ICC 2022'de akselere faz olarak sınıflanır.",
+        "E": "YANLIS — Blast oranı faz tanımının temel ölçütüdür; ek anormallikler ilave prognostik bilgi verir."
+      },
+      "etiketler": [
+        "WHO 2022",
+        "ICC 2022",
+        "Akselere Faz",
+        "Blastik Faz",
+        "Sınıflama"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium); Apperley ve ark. Leukemia 2025 (European LeukemiaNet önerileri)"
+    },
+    {
+      "id": "s3",
+      "metin": "Yeni tanı konmuş, kronik fazda kronik miyeloid lösemi hastasında risk sınıflaması yapılacak.\n\nTirozin kinaz inhibitörü çağında tercih edilmesi önerilen skor ve bileşenleri hangisidir?",
+      "secenekler": {
+        "A": "ELTS skoru; yaş, dalak boyutu, periferik blast yüzdesi ve trombosit sayısını içerir ve yaşın olumsuz katkısı Sokal skoruna göre daha azdır.",
+        "B": "Sokal skoru; tirozin kinaz inhibitörü alan hastalardan türetildiği için güncel standarttır.",
+        "C": "IPSS-R skoru; blast oranı, sitogenetik ve sitopenileri birleştirir.",
+        "D": "Revize IPSET-Tromboz skoru; trombotik riski öngörür ve tedavi yoğunluğunu belirler.",
+        "E": "Hasford skoru; yalnızca lökosit sayısı ve hemoglobin düzeyine dayanır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Tirozin kinaz inhibitörü çağında önerilen skor ELTS'tir: yaş, dalak boyutu, periferik blast yüzdesi ve trombosit sayısını kullanır; yaşın olumsuz ağırlığı Sokal'a göre belirgin biçimde daha azdır.",
+      "aciklama_detay": "Sokal ve Hasford skorları interferon ve kemoterapi dönemlerinin verilerinden türetilmişti; bu kohortlarda ileri yaş güçlü bir olumsuz belirteçti. Tirozin kinaz inhibitörleriyle tedavi edilen hastalardan türetilen ELTS (EUTOS Long-Term Survival) skoru ise hastalığa özgü ölümü hedef alır ve aynı dört değişkeni (yaş, kosta kenarını geçen dalak boyutu, periferik kanda blast yüzdesi, trombosit sayısı) kullanmasına karşın yaşa çok daha küçük bir ağırlık verir. Bunun klinik sonucu somuttur: Sokal'a göre yüksek riskli görünen yaşlı hastaların önemli bir kısmı ELTS'e göre düşük risk grubuna düşer ve gereksiz tedavi yoğunlaştırmasından korunur. Güncel öneri, başlangıç risk değerlendirmesinin ELTS ile yapılmasıdır; ek sitogenetik anormalliklerin (yüksek riskli ek anormallikler) varlığı bağımsız olumsuz bilgi ekler. IPSS-R miyelodisplastik sendromlara, IPSET-Tromboz esansiyel trombositemiye özgü skorlardır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — ELTS skoru; yaş, dalak boyutu, blast yüzdesi ve trombosit sayısı; yaşın ağırlığı daha azdır.",
+        "B": "YANLIS — Sokal skoru tirozin kinaz inhibitörü öncesi dönemden türemiştir; ELTS'ten türetim farkı tam tersidir.",
+        "C": "YANLIS — IPSS-R miyelodisplastik sendromların risk skorudur.",
+        "D": "YANLIS — Revize IPSET-Tromboz esansiyel trombositemide trombotik risk skorudur.",
+        "E": "YANLIS — Hasford skoru daha fazla değişken içerir ve güncel önerilerde ELTS'in yerini almamıştır."
+      },
+      "etiketler": [
+        "ELTS Skoru",
+        "Sokal Skoru",
+        "Risk Sınıflaması",
+        "Prognoz",
+        "Yeni Tanı"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Apperley ve ark. Leukemia 2025; Iezza ve ark. Cells 2023"
+    },
+    {
+      "id": "s4",
+      "metin": "Kronik fazda tanı alan ve imatinib 400 mg/gün başlanan hastada moleküler izlem sonuçları şöyle:\n\n3. ay BCR::ABL1 (uluslararası ölçek): %22\n6. ay BCR::ABL1 (uluslararası ölçek): %14\nHasta ilacı düzenli kullandığını belirtiyor; eş zamanlı ilaç listesinde etkileşim yaratacak ajan yok.\n\nBu tablonun yorumu ve en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Yanıt optimaldir; aynı dozla izleme devam edilir.",
+        "B": "Yanıt uyarı düzeyindedir; 12. aya kadar değişiklik yapılmadan beklenmelidir.",
+        "C": "6. ayda uluslararası ölçekte >%10 değer tedavi başarısızlığıdır; uyum ve etkileşimler doğrulandıktan sonra BCR::ABL1 kinaz alanı mutasyon analizi yapılmalı ve ikinci kuşak bir tirozin kinaz inhibitörüne geçilmelidir.",
+        "D": "İmatinib dozu 800 mg/güne çıkarılmalı; doz artışı her zaman kuşak değişiminden üstündür.",
+        "E": "Doğrudan allojenik kök hücre nakli planlanmalıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "6. ayda uluslararası ölçekte BCR::ABL1 >%10 olması tedavi başarısızlığıdır; uyum ve ilaç etkileşimleri doğrulandıktan sonra kinaz alanı mutasyon analizi yapılır ve etkili başka bir tirozin kinaz inhibitörüne geçilir.",
+      "aciklama_detay": "Moleküler izlem eşikleri karar noktalarıdır: 3. ayda uluslararası ölçekte ≤%10, 6. ayda ≤%1, 12. ayda ≤%0.1 (major moleküler yanıt) optimal kabul edilir. 3. ayda >%10 bir uyarıdır ve öncelikle uyum ile ilaç etkileşimleri sorgulanır; 6. ayda hâlâ >%10 olması ise başarısızlık tanımına girer ve tedavi değişikliği gerektirir. Değişiklik öncesinde iki şey yapılır: (1) gerçek nedenin direnç mi uyumsuzluk/etkileşim mi olduğu doğrulanır, (2) BCR::ABL1 kinaz alanı mutasyon analizi istenir — çünkü saptanan mutasyon sonraki ajanın seçimini doğrudan belirler (örneğin T315I varlığında ikinci kuşak ajanlar etkisizdir). Sonrasında ikinci kuşak bir inhibitöre (dasatinib, nilotinib, bosutinib) veya mutasyon profiline göre daha ileri bir ajana geçilir. İmatinib dozunu yükseltmek sınırlı ve geçici yanıt sağlar, günümüzde tercih edilen strateji değildir. Allojenik nakil, kronik fazda ancak birden fazla etkili ajan tükendikten sonra veya blastik fazda gündeme gelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — 6. ayda optimal yanıt ≤%1'dir; %14 optimal değildir.",
+        "B": "YANLIS — Bu değer uyarı değil başarısızlık aralığındadır; beklemek yanıt kaybını derinleştirir.",
+        "C": "DOGRU — Başarısızlık; mutasyon analizi sonrası etkili başka bir tirozin kinaz inhibitörüne geçilir.",
+        "D": "YANLIS — Doz yükseltme sınırlı fayda sağlar; günümüzde kuşak değişimi tercih edilir.",
+        "E": "YANLIS — Kronik fazda nakil, etkili ilaç seçenekleri tükendikten sonra düşünülür."
+      },
+      "etiketler": [
+        "Moleküler İzlem",
+        "Uluslararası Ölçek",
+        "Tedavi Başarısızlığı",
+        "Kinaz Alanı Mutasyonu",
+        "Kuşak Değişimi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Apperley ve ark. Leukemia 2025; Hochhaus ve ark. Leukemia 2020"
+    },
+    {
+      "id": "s5",
+      "metin": "Dasatinib ile izlenen ve 12. ayda major moleküler yanıtta olan hastada, son 4 ayda BCR::ABL1 değeri uluslararası ölçekte %0.05'ten %1.2'ye yükseliyor. Hasta ilacını hiç atlamadığını söylüyor. Sorgulamada son 5 aydır reflü yakınması için günde 40 mg omeprazol kullandığı öğreniliyor.\n\nEn olası açıklama hangisidir?",
+      "secenekler": {
+        "A": "Omeprazol dasatinibin karaciğer metabolizmasını hızlandırarak etkisini azaltmıştır.",
+        "B": "Bu tablo kesinlikle T315I mutasyonunun gelişmesine bağlıdır.",
+        "C": "Proton pompası inhibitörleri dasatinibin plazma düzeyini yükselterek toksisite ve yanıt kaybı yapar.",
+        "D": "Omeprazolün bu etkileşimde rolü yoktur; yanıt kaybı hastalığın doğal seyridir.",
+        "E": "Dasatinibin emilimi asidik ortama bağımlıdır; proton pompası inhibitörü mide pH'sını yükselterek emilimi azaltmış ve ilaç maruziyetini düşürmüştür."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Dasatinibin çözünürlüğü pH'ya bağımlıdır ve emilimi asidik ortam gerektirir; proton pompası inhibitörleri mide pH'sını yükselterek ilaç maruziyetini belirgin biçimde azaltır ve yanıt kaybına yol açar.",
+      "aciklama_detay": "Yanıt kaybının ayırıcı tanısında ilk sırada uyumsuzluk ve ilaç etkileşimleri gelir; direnç mutasyonu bunlar dışlandıktan sonra aranır. Dasatinib zayıf bazik bir moleküldür ve çözünürlüğü asidik pH'da belirgin şekilde yüksektir; bu nedenle proton pompası inhibitörleriyle birlikte kullanıldığında maruziyet (eğri altındaki alan) ciddi biçimde düşer ve bu etkileşim klinik yanıt kaybına dönüşebilir. Pratik yönetim: proton pompası inhibitörlerinden kaçınmak, gerekiyorsa antasit kullanmak ve antasidi dasatinibden en az 2 saat ayırmak; alternatif olarak asit baskılamasından etkilenmeyen bir tirozin kinaz inhibitörüne geçmek. Benzer bir tuzak nilotinibde gıdadır (yemekle alınırsa maruziyet artar, aç karnına alınması ve alım öncesi/sonrası saat kuralına uyulması gerekir). Ayrıca güçlü CYP3A4 indükleyicileri (rifampisin, karbamazepin, St. John's wort) tüm bu ajanların düzeyini düşürür, güçlü inhibitörler (azol grubu antifungaller, klaritromisin) yükseltir. Mutasyon analizi elbette istenir, ancak düzeltilebilir bir maruziyet sorunu varken doğrudan mutasyona atfetmek erken bir sonuçtur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Omeprazol bir enzim indükleyicisi değildir; mekanizma metabolizma hızlanması değil emilim azalmasıdır.",
+        "B": "YANLIS — Mutasyon araştırılmalıdır ancak düzeltilebilir bir etkileşim varken kesin atıf yapılamaz.",
+        "C": "YANLIS — Etkileşim plazma düzeyini yükseltmez, DÜŞÜRÜR.",
+        "D": "YANLIS — Etkileşim iyi tanımlanmıştır ve yanıt kaybını açıklayabilir.",
+        "E": "DOGRU — Asit baskılaması dasatinibin emilimini azaltır ve ilaç maruziyetini düşürür."
+      },
+      "etiketler": [
+        "Dasatinib",
+        "İlaç Etkileşimi",
+        "Proton Pompası İnhibitörü",
+        "Yanıt Kaybı",
+        "Emilim"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium); Kantarjian ve ark. Cancer 2025"
+    },
+    {
+      "id": "s6",
+      "metin": "İmatinib ve ardından dasatinib ile tedavi edilen, iki ajanla da yanıt kaybı gelişen hastada BCR::ABL1 kinaz alanı dizi analizinde T315I mutasyonu saptanıyor. Hasta 46 yaşında, kardiyovasküler risk faktörü yok, kronik fazda.\n\nEn uygun tedavi seçeneği hangisidir?",
+      "secenekler": {
+        "A": "Bosutinib; T315I mutasyonunda en etkili ikinci kuşak ajandır.",
+        "B": "T315I'ye etkili bir ajana geçilmelidir: ponatinib (arteriyel/venöz tromboz riski gözetilerek) veya miristoil cebine bağlanan asiminib; eş zamanlı olarak allojenik nakil için değerlendirme yapılmalıdır.",
+        "C": "İmatinib dozu 800 mg/güne yükseltilmelidir.",
+        "D": "Nilotinibe geçilmelidir; T315I bu ajanla duyarlılığı korur.",
+        "E": "Hidroksiüre ile sitoredüksiyon yeterlidir; hedefe yönelik tedavi seçeneği kalmamıştır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "T315I 'kapı bekçisi' mutasyonu birinci ve ikinci kuşak ajanların tümüne direnç verir; etkili seçenekler ponatinib (vasküler oklüzif olay riski nedeniyle dikkatli doz ve risk değerlendirmesi ile) ve allosterik asiminibdir, eş zamanlı nakil değerlendirmesi yapılır.",
+      "aciklama_detay": "T315I, ABL1 kinaz alanının ATP bağlanma cebindeki 'kapı bekçisi' (gatekeeper) kalıntısını değiştirir; imatinib, dasatinib, nilotinib ve bosutinibin tümü bu değişiklik karşısında etkisizdir. İki yol açıktır. Ponatinib, T315I dahil geniş mutasyon spektrumuna etkili üçüncü kuşak bir inhibitördür; ancak arteriyel ve venöz oklüzif olaylar (miyokard enfarktüsü, inme, periferik arter hastalığı) açısından belirgin risk taşır, bu nedenle kardiyovasküler risk değerlendirmesi, kan basıncı ve lipid kontrolü ile yanıta göre doz azaltma stratejileri kullanılır. Asiminib ise klasik ATP cebi yerine ABL1'in MİRİSTOİL CEBİNE bağlanan allosterik (STAMP) bir inhibitördür; farklı bağlanma yeri sayesinde ATP cebi mutasyonlarından etkilenmez ve T315I taşıyan olgularda etkilidir (bu mutasyon için daha yüksek doz kullanılır). Her iki yol izlenirken, birden fazla ajana direnç gelişmiş genç bir hastada allojenik nakil için donör taraması eş zamanlı başlatılır — zaman kazanmak sonraki basamakta kritik olabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bosutinib T315I'de etkisizdir.",
+        "B": "DOGRU — Ponatinib veya asiminib; eş zamanlı allojenik nakil değerlendirmesi.",
+        "C": "YANLIS — Doz yükseltmek T315I direncini aşmaz.",
+        "D": "YANLIS — Nilotinib de T315I karşısında etkisizdir.",
+        "E": "YANLIS — Hedefe yönelik seçenekler tükenmemiştir; ponatinib ve asiminib etkilidir."
+      },
+      "etiketler": [
+        "T315I",
+        "Ponatinib",
+        "Asiminib",
+        "Direnç",
+        "Allojenik Nakil"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Cruz-Rodriguez & Deininger Blood 2025; Costa ve ark. Future Oncol 2025"
+    },
+    {
+      "id": "s7",
+      "metin": "Asiminib, diğer tirozin kinaz inhibitörlerinden farklı bir bağlanma bölgesi kullandığı için ayrı bir sınıfta değerlendirilir.\n\nBu ajanın etki mekanizması hangisidir?",
+      "secenekler": {
+        "A": "ABL1'in ATP bağlanma cebine kompetitif olarak bağlanır; diğer ajanlarla aynı bölgeyi paylaşır.",
+        "B": "BCR::ABL1 mRNA'sını hedefleyen antisens oligonükleotid etkisiyle füzyon proteininin sentezini engeller.",
+        "C": "Proteazom inhibisyonu yoluyla füzyon proteininin yıkımını engelleyerek apoptoz tetikler.",
+        "D": "ABL1'in miristoil cebine bağlanarak kinazı inaktif konformasyonda kilitler; yani allosterik (ATP-kompetitif olmayan) bir inhibitördür.",
+        "E": "Tirozin kinaz aktivitesini değiştirmez; yalnızca hücre yüzeyinde immün aracılı sitotoksisite oluşturur."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Asiminib, ABL1'in miristoil cebine bağlanarak kinazı otoinhibe (inaktif) konformasyonda kilitleyen allosterik bir inhibitördür; ATP cebine bağlanmadığı için o bölgedeki direnç mutasyonlarından etkilenmez.",
+      "aciklama_detay": "Normal ABL1'de N-terminal miristoil grubu, kinaz alanındaki bir cebe girerek proteini otoinhibe konformasyonda tutar. BCR::ABL1 füzyonunda bu N-terminal bölge kaybolduğu için otoinhibisyon ortadan kalkar ve kinaz sürekli aktif hale gelir. Asiminib boş kalan bu miristoil cebine bağlanır ve otoinhibe konformasyonu farmakolojik olarak yeniden kurar — bu nedenle 'miristoil cebini spesifik hedefleyen' allosterik inhibitör olarak tanımlanır. Mekanizmanın iki pratik sonucu vardır: (1) ATP cebindeki direnç mutasyonlarıyla (T315I dahil) çapraz direnç göstermez, bu yüzden çok basamaklı dirençli olgularda etkilidir; (2) ATP cebine bağlanan ajanların hedef dışı kinaz etkilerinden görece bağımsız bir yan etki profili sunar, ancak izlem gerektiren etkileri (lipaz yüksekliği, hipertansiyon, sitopeniler) vardır. Asiminib önceden tedavi almış olgularda ve yeni tanılı kronik fazda kullanım için onay almıştır. Geniş mutasyon spektrumuna etkili olverembatinib de dirençli olgularda öne çıkan bir seçenektir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Asiminib ATP cebine bağlanmaz; ayırt edici özelliği tam olarak budur.",
+        "B": "YANLIS — Bir oligonükleotid tedavisi değildir; protein düzeyinde etkilidir.",
+        "C": "YANLIS — Proteazom inhibitörü değildir.",
+        "D": "DOGRU — Miristoil cebine bağlanan allosterik inhibitör; kinazı inaktif konformasyonda kilitler.",
+        "E": "YANLIS — Kinaz inhibitörüdür; immün aracılı sitotoksisiteye dayanmaz."
+      },
+      "etiketler": [
+        "Asiminib",
+        "Miristoil Cebi",
+        "Allosterik İnhibisyon",
+        "STAMP",
+        "Direnç"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Costa ve ark. Future Oncol 2025; Cruz-Rodriguez & Deininger Blood 2025"
+    },
+    {
+      "id": "s8",
+      "metin": "Dasatinib 100 mg/gün kullanan, major moleküler yanıtta olan 62 yaşında hastada son üç haftada eforla artan nefes darlığı gelişiyor. Ateş yok, enfeksiyon bulgusu yok. Akciğer grafisinde sağda orta miktarda plevral efüzyon; torasentezde eksüdatif, lenfositten zengin sıvı saptanıyor, sitolojik incelemede malign hücre yok, kültürler negatif.\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Dasatinibe bağlı plevral efüzyon düşünülmeli: ilaç geçici olarak kesilmeli, gerekirse diüretik ve kısa süreli kortikosteroid verilmeli; düzelme sonrası azaltılmış dozla sürdürülmeli ya da efüzyon riski daha düşük başka bir TKİ’ye geçilmelidir.",
+        "B": "Efüzyon hastalık progresyonunu gösterir; doğrudan allojenik nakil planlanmalıdır.",
+        "C": "Dasatinib dozu yükseltilmeli; efüzyon yetersiz hastalık kontrolünün sonucudur.",
+        "D": "Efüzyon dasatinibin bilinen bir etkisi olmadığından yalnızca kardiyak nedenler araştırılmalıdır.",
+        "E": "Plörodez ilk seçenek tedavidir; ilaç değişikliği gerekmez."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Plevral efüzyon dasatinibin sınıf içi ayırt edici yan etkisidir (%20-30); ilaç kesilir, gerekirse diüretik ve kısa süreli kortikosteroid verilir, düzelmeden sonra azaltılmış dozla devam edilir veya başka bir inhibitöre geçilir.",
+      "aciklama_detay": "Tirozin kinaz inhibitörlerinin ajan bazlı yan etki imzaları tedavi seçimini yönlendirir. Dasatinibin en karakteristik etkisi plevral efüzyondur (kümülatif sıklık %20-30, ileri yaş ve günde iki kez dozlama ile artar); sıvı tipik olarak eksüdatif ve lenfositten zengindir, mekanizmada hedef dışı kinaz inhibisyonuna bağlı lenfatik/geçirgenlik değişiklikleri ve bazı hastalarda görülen büyük granüler lenfositoz rol oynar. Yönetim basamaklıdır: ilacı geçici kesme, semptomatikse diüretik ve kısa süreli kortikosteroid, büyük efüzyonda torasentez; düzelmeden sonra daha düşük dozla yeniden başlama ya da ajan değişimi. Nadir ama ciddi bir diğer etki pulmoner arteriyel hipertansiyondur ve dispnesi efüzyonla açıklanamayan hastada araştırılmalıdır. Karşılaştırma için: imatinib ödem ve kas krampları, nilotinib QT uzaması/arteriyel oklüzif olaylar/hiperglisemi, bosutinib ishal, ponatinib arteriyel-venöz tromboz ve hipertansiyon yapar. Efüzyonun varlığı hastalık progresyonu göstergesi değildir — bu hasta moleküler yanıttadır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — İlaca bağlı efüzyon; ilacı kes, gerekirse diüretik/steroid, sonra azaltılmış doz veya ajan değişimi.",
+        "B": "YANLIS — Efüzyon progresyon göstergesi değildir; hasta moleküler yanıttadır.",
+        "C": "YANLIS — Doz artışı efüzyonu ağırlaştırır.",
+        "D": "YANLIS — Plevral efüzyon dasatinibin en iyi tanımlanmış yan etkisidir.",
+        "E": "YANLIS — Plörodez ilk basamak değildir; sorunun kaynağı ilaçtır ve geri dönüşlüdür."
+      },
+      "etiketler": [
+        "Dasatinib",
+        "Plevral Efüzyon",
+        "Yan Etki Yönetimi",
+        "Pulmoner Arteriyel Hipertansiyon",
+        "Doz Azaltma"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Kantarjian ve ark. Cancer 2025; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s9",
+      "metin": "Yeni tanı kronik faz hastası 67 yaşında, ELTS düşük risk. Özgeçmişinde iki yıl önce geçirilmiş miyokard enfarktüsü, periferik arter hastalığı, tip 2 diyabet ve aktif sigara kullanımı var.\n\nBirinci basamak tedavi seçimi için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Ponatinib; geniş etkinliği nedeniyle yüksek kardiyovasküler riskli hastada bile ilk tercih olmalıdır.",
+        "B": "Nilotinib; hiperglisemi ve vasküler olay riski bu hastada tedavi seçimini etkilemez.",
+        "C": "Vasküler oklüzif olay riski yüksek ajanlardan (nilotinib, ponatinib) kaçınılmalı; güvenlilik profili en iyi olan imatinib (veya uygun bir alternatif) tercih edilmeli ve kardiyovasküler risk etkenleri agresif biçimde yönetilmelidir.",
+        "D": "Tedavi başlanmadan önce allojenik nakil planlanmalıdır.",
+        "E": "Hidroksiüre ile izlenmeli; ileri yaşta hedefe yönelik tedavi endike değildir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Kronik fazda birinci basamak ajanlar sağkalım açısından benzerdir; bu nedenle seçim eşlik eden hastalıklara göre yapılır — belirgin aterosklerotik hastalıkta nilotinib ve ponatinib gibi vasküler oklüzif olay riski yüksek ajanlardan kaçınılır, güvenlilik profili en iyi ajan tercih edilir.",
+      "aciklama_detay": "Birinci basamakta imatinib ile ikinci kuşak ajanlar benzer sağkalım sunar; ikinci kuşaklar daha hızlı ve derin moleküler yanıt sağlar, dolayısıyla tedavisiz remisyon hedefi öne çıktığında avantajlıdır. Ancak bu avantaj sağkalıma dönüşmediği için seçim büyük ölçüde bir TOKSİSİTE eşleştirme kararıdır. Nilotinib arteriyel oklüzif olaylar, QT uzaması, hiperglisemi ve dislipidemi ile ilişkilidir; ponatinib ise arteriyel ve venöz tromboz açısından en yüksek riski taşır. Bu hastada geçirilmiş miyokard enfarktüsü, periferik arter hastalığı, diyabet ve sigara birlikteliği vardır; bu profilde imatinib (sıvı retansiyonu ve kas krampları ana yan etkileri) ya da vasküler risk yükü düşük bir alternatif tercih edilir. Aynı derecede önemli ikinci adım, tedaviye paralel olarak kan basıncı, lipid, glisemi kontrolü ve sigara bırakma desteğidir — vasküler olay riski hem hastalığın hem de ilacın ötesinde bu etkenlerle belirlenir. Allojenik nakil ve sitoredüktif tek başına tedavi bu hastada endike değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ponatinib birinci basamak standart değildir ve bu risk profilinde en riskli seçenektir.",
+        "B": "YANLIS — Nilotinibin vasküler ve metabolik yan etkileri bu hastada tam olarak belirleyicidir.",
+        "C": "DOGRU — Vasküler riski yüksek ajanlardan kaçınılır, güvenlilik öncelikli ajan seçilir, risk etkenleri yönetilir.",
+        "D": "YANLIS — Kronik fazda birinci basamak nakil endikasyonu yoktur.",
+        "E": "YANLIS — Hedefe yönelik tedavi yaş sınırı tanımaz; hidroksiüre yalnızca geçici sitoredüksiyon aracıdır."
+      },
+      "etiketler": [
+        "Birinci Basamak Seçimi",
+        "Nilotinib",
+        "Ponatinib",
+        "Vasküler Oklüzif Olay",
+        "Eşlik Eden Hastalık"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Apperley ve ark. Leukemia 2025; Jabbour & Kantarjian JAMA 2025"
+    },
+    {
+      "id": "s10",
+      "metin": "42 yaşında kadın hasta 7 yıldır imatinib kullanıyor; kronik fazdan hiç çıkmamış, son 3 yıl boyunca tüm ölçümlerde BCR::ABL1 uluslararası ölçekte ≤%0.01 (MR4) düzeyinde. Transkript tipi e14a2. Hasta ilacı bırakmak istiyor.\n\nTedavisiz remisyon denemesi için en doğru değerlendirme hangisidir?",
+      "secenekler": {
+        "A": "Uygun değildir; ilaç kesilmesi yalnızca ikinci kuşak ajan kullananlarda denenebilir.",
+        "B": "Uygundur ve ilaç kesildikten sonra rutin izlem seyrekleştirilebilir; nüks hematolojik bulgularla fark edilir.",
+        "C": "Uygun değildir; ilacın kesilebilmesi için en az 15 yıl kesintisiz tedavi süresi şarttır.",
+        "D": "Uygundur; başarısızlık oranı %10'un altındadır ve nüks eden hastalarda yeniden yanıt genellikle alınamaz.",
+        "E": "Ölçütleri karşılamaktadır (kronik faz, ≥3-5 yıl kesintisiz tedavi, ≥2 yıl derin moleküler yanıt, ölçülebilir tipik transkript); ilaç kesilebilir ancak sık moleküler izlem şarttır — başarısızlık ~%50 ve nüksler çoğunlukla ilk 6 ayda."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Hasta ölçütleri karşılıyor (kronik faz, ≥3-5 yıl tedavi, ≥2 yıl derin moleküler yanıt, tipik e14a2 transkript); ilaç kesilebilir ama sık moleküler izlem zorunludur — başarısızlık yaklaşık %50'dir ve nüksler çoğunlukla ilk 6 ayda görülür.",
+      "aciklama_detay": "Tedavisiz remisyon, günümüzde tedavinin önemli hedeflerinden biridir ancak dar bir ölçüt kümesine bağlıdır: hastanın yalnızca kronik fazda kalmış olması, en az 3-5 yıl kesintisiz tirozin kinaz inhibitörü kullanmış olması, en az 2 yıl boyunca derin moleküler yanıtta (MR4 veya MR4.5) bulunması ve transkriptin standart uluslararası ölçekte güvenilir biçimde ölçülebilir tipte olması (e13a2/e14a2). Deneme ilaç kesmekle bitmez, izlemle sürer: ilk 6 ayda aylık, sonra 6. aydan 12. aya iki-üç ayda bir, ardından üç ayda bir kantitatif ölçüm yapılır; major moleküler yanıtın kaybı (uluslararası ölçekte >%0.1) tedaviye derhal dönüş ölçütüdür. Sayısal gerçekler iki yönlüdür: girişim yaklaşık yarı olguda başarısız olur ve nükslerin büyük çoğunluğu ilk 6 ayda ortaya çıkar; buna karşın yeniden başlanan tedaviye yanıt genellikle iyidir, bu da denemeyi güvenli kılan asıl unsurdur. İzlem altyapısı ve hasta uyumu garanti edilemiyorsa deneme yapılmamalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ölçütler ajan kuşağına değil tedavi süresi, faz ve yanıt derinliğine dayanır.",
+        "B": "YANLIS — İzlem seyrekleştirilemez; ilk 6 ay aylık ölçüm şarttır ve nüks hematolojik bulgu vermeden moleküler düzeyde saptanır.",
+        "C": "YANLIS — Gerekli süre en az 3-5 yıldır; 15 yıl gibi bir ölçüt yoktur.",
+        "D": "YANLIS — Başarısızlık oranı yaklaşık %50'dir ve yeniden yanıt genellikle ALINIR.",
+        "E": "DOGRU — Ölçütler karşılanıyor; sık izlemle deneme yapılabilir, başarısızlık ~%50 ve nüksler çoğunlukla ilk 6 ayda."
+      },
+      "etiketler": [
+        "Tedavisiz Remisyon",
+        "Derin Moleküler Yanıt",
+        "İzlem Sıklığı",
+        "Nüks Zamanlaması",
+        "Hasta Seçimi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Apperley ve ark. Leukemia 2025; Rinaldi & Winston J Blood Med 2023"
+    },
+    {
+      "id": "s11",
+      "metin": "Tedavisiz remisyon denemesi kapsamında tirozin kinaz inhibitörünü bırakan hastada, kesmeden 3 hafta sonra yaygın kas-eklem ağrıları, omuz ve kalça kuşağında tutukluk başlıyor. BCR::ABL1 hâlâ saptanamaz düzeyde; akut faz reaktanları hafif yüksek, otoantikorlar negatif.\n\nEn olası tanı ve yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Hastalık nüksü; derhal tirozin kinaz inhibitörü yeniden başlanmalıdır.",
+        "B": "Tirozin kinaz inhibitörü yoksunluk sendromu; ilacı bırakanların yaklaşık %20-30'unda görülür, genellikle kendiliğinden geriler ve semptomatik tedavi (analjezik, kısa süreli antiinflamatuar, dirençli olguda kısa steroid) uygulanır.",
+        "C": "Kemik iliği fibrozisi gelişmiştir; kemik iliği biyopsisi ve nakil değerlendirmesi gerekir.",
+        "D": "Romatoid artrit tanısı konmalı ve metotreksat başlanmalıdır.",
+        "E": "Semptomlar ilaç birikimine bağlıdır; dozun kademeli azaltılmasıyla geçer."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Tirozin kinaz inhibitörünü bırakanların yaklaşık %20-30'unda polimiyalji benzeri kas-eklem ağrıları görülür (yoksunluk sendromu); moleküler nüks göstergesi değildir, genellikle kendiliğinden geriler ve semptomatik tedavi yeterlidir.",
+      "aciklama_detay": "Tedavisiz remisyon denemesinin en sık ama en az beklenen sorunu, ilaç kesildikten sonraki haftalarda ortaya çıkan polimiyalji benzeri kas-iskelet ağrılarıdır; olguların yaklaşık %20-30'unda görülür, tipik olarak omuz ve kalça kuşağını tutar ve hafif akut faz yanıtı eşlik edebilir. Mekanizma tam aydınlatılmamıştır; hedef dışı kinaz inhibisyonunun (özellikle c-KIT ve PDGFR yolakları) ortadan kalkmasıyla ortaya çıkan bir immün/inflamatuar yeniden düzenlenme öne sürülür. Kritik nokta ayırıcı tanıdır: bu tablo moleküler nüks DEĞİLDİR ve tek başına tedaviye dönme gerekçesi oluşturmaz — dönüş kararı yalnızca moleküler ölçüme (major moleküler yanıtın kaybı, uluslararası ölçekte >%0.1) dayanır. Yönetim semptomatiktir: analjezik, kısa süreli antiinflamatuar, dirençli olguda kısa süreli düşük doz kortikosteroid; semptomlar çoğu hastada haftalar-aylar içinde geriler, bir kısmında daha uzun sürebilir. Hastaya bu olasılık deneme ÖNCESİNDE anlatılmalıdır, aksi halde ağrı nedeniyle plansız ilaç dönüşleri olur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Moleküler ölçüm saptanamaz düzeydedir; nüks tanımı moleküler eşiğe dayanır.",
+        "B": "DOGRU — Yoksunluk sendromu; %20-30 sıklık, semptomatik tedavi, moleküler izlemle dönüş kararı.",
+        "C": "YANLIS — Tablo kas-iskelet kaynaklıdır; fibrozis veya nakil gerekçesi yoktur.",
+        "D": "YANLIS — Otoantikorlar negatif ve tablo zamansal olarak ilaç kesilmesine bağlıdır; ayrı bir romatolojik tanı gerektirmez.",
+        "E": "YANLIS — Semptomlar ilaç birikiminden değil ilacın KESİLMESİNDEN kaynaklanır."
+      },
+      "etiketler": [
+        "Yoksunluk Sendromu",
+        "Tedavisiz Remisyon",
+        "Polimiyalji Benzeri Tablo",
+        "Ayırıcı Tanı",
+        "Semptomatik Tedavi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Konu anlatımı (MediSea premium); Rinaldi & Winston J Blood Med 2023"
+    },
+    {
+      "id": "s12",
+      "metin": "29 yaşında kadın hasta imatinib ile major moleküler yanıtta izlenirken 6 haftalık gebelik saptanıyor. Hasta gebeliği sürdürmek istiyor.\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "İmatinib aynı dozda sürdürülmelidir; gebelikte güvenli kabul edilir.",
+        "B": "Doz yarıya indirilerek imatinib birinci trimester boyunca sürdürülmelidir.",
+        "C": "İkinci kuşak bir ajana geçilmelidir; bunlar plasentayı geçmez.",
+        "D": "Tirozin kinaz inhibitörü kesilmeli (özellikle organogenez dönemi için), sık moleküler izlem yapılmalı; sitoredüksiyon gerekirse interferon-alfa kullanılmalı ve tedaviye dönüş kararı moleküler yanıta göre verilmelidir.",
+        "E": "Gebelik sonlandırılmalıdır; hastalığın seyri gebelikle bağdaşmaz."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Tüm tirozin kinaz inhibitörleri teratojeniktir ve özellikle organogenez döneminde kesilmelidir; gebelikte gerekirse plasentayı geçmeyen interferon-alfa kullanılır ve yönetim sık moleküler izleme dayanır.",
+      "aciklama_detay": "Tirozin kinaz inhibitörleri plasentayı geçer ve embriyotoksik/teratojenik etkileri bildirilmiştir; bu nedenle gebelik saptandığında, özellikle organogenez döneminde ilaç kesilir. Yönetim hastanın yanıt derinliğine göre bireyselleştirilir: derin moleküler yanıtta olan bir hastada ilaçsız izlem sıklıkla gebelik boyunca sürdürülebilir; yanıt kaybı gelişirse veya hasta tanı anında gebe ve yüksek lökosit yüküyle başvurduysa, plasentayı geçmeyen interferon-alfa güvenli seçenektir. Lökoferez de sitoredüksiyon için kullanılabilir. Hidroksiüre teratojeniktir, gebelikte tercih edilmez. Bu senaryonun ikinci yarısı planlamadır: doğurganlık çağındaki hastalarda gebelik isteği önceden konuşulmalı, mümkünse derin moleküler yanıt sağlandıktan sonra planlı ilaç kesilmesi tercih edilmeli, emzirme döneminde de ilaç anne sütüne geçtiği için tedaviye dönüş zamanlaması birlikte kararlaştırılmalıdır. Erkek hastalarda ise baba adayı tedavi altındayken gebelik açısından benzer bir kısıt gösterilmemiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İmatinib gebelikte güvenli kabul edilmez; teratojenik potansiyeli vardır.",
+        "B": "YANLIS — Doz azaltmak teratojenik riski ortadan kaldırmaz.",
+        "C": "YANLIS — İkinci kuşak ajanlar da plasentayı geçer ve gebelikte önerilmez.",
+        "D": "DOGRU — İlaç kesilir, sık moleküler izlem yapılır, gerekirse interferon-alfa kullanılır.",
+        "E": "YANLIS — Hastalık uygun yönetimle gebelikle bağdaşır; sonlandırma gerekçesi yoktur."
+      },
+      "etiketler": [
+        "Gebelik",
+        "Teratojenite",
+        "İnterferon-alfa",
+        "İlaç Kesilmesi",
+        "Moleküler İzlem"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Smith ve ark. Br J Haematol 2020; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s13",
+      "metin": "İki yıldır imatinib kullanan hastada halsizlik, ateş ve hızla büyüyen dalak ile başvuru sonrası yapılan incelemede periferik kanda %38 blast saptanıyor. Akım sitometrisi blastların miyeloid belirteç taşıdığını gösteriyor. Ek sitogenetik anormallikler mevcut.\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Blastik faz tanımlanmıştır: mutasyon profiline göre etkili bir tirozin kinaz inhibitörü blast hattına uygun yoğun kemoterapi ile birleştirilmeli ve uygun hastada allojenik kök hücre nakli hedeflenmelidir.",
+        "B": "İmatinib dozu 800 mg/güne yükseltilmeli, başka bir değişiklik yapılmamalıdır.",
+        "C": "Yalnızca hidroksiüre ile sitoredüksiyon yapılmalı ve destek tedavisiyle izlenmelidir.",
+        "D": "Tirozin kinaz inhibitörü kesilmeli; blastik fazda bu ajanların yeri yoktur.",
+        "E": "Tedavisiz remisyon denemesi için uygun bir dönemdir; ilaç kesilip izlenmelidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Periferik kan veya kemik iliğinde ≥%20 blast blastik fazı tanımlar; tedavi, mutasyon profiline uygun bir tirozin kinaz inhibitörünün blast hattına göre seçilen yoğun kemoterapiyle birleştirilmesi ve uygun hastada allojenik nakle köprülenmesidir.",
+      "aciklama_detay": "Blastik faz, hem WHO 2022 hem ICC 2022 sınıflamasında ≥%20 blast veya ekstramedüller blastik proliferasyon (miyeloid sarkom) ile tanımlanır ve prognozu kronik fazdan kökten farklıdır. Tedavi üç bileşen üzerine kurulur: (1) mutasyon analizi sonucuna göre seçilmiş, tercihen ikinci/üçüncü kuşak veya allosterik bir tirozin kinaz inhibitörü — tek başına hiçbir ajan yeterli değildir ama omurgayı oluşturur; (2) blast hattına uygun yoğun kemoterapi — miyeloid blastik fazda akut miyeloid lösemi benzeri, lenfoid blastik fazda akut lenfoblastik lösemi benzeri rejimler (lenfoid hatta merkezi sinir sistemi profilaksisi de gerekir); (3) yanıt elde edilen uygun hastada allojenik kök hücre nakli, çünkü ilaçla sağlanan ikinci kronik faz genellikle kalıcı değildir. Ek sitogenetik anormalliklerin varlığı klonal evrimi ve daha kötü prognozu gösterir. İmatinib dozunu yükseltmek, yalnızca sitoredüksiyon veya tirozin kinaz inhibitörünü tümüyle kesmek bu tabloda uygun değildir; tedavisiz remisyon ise yalnızca hiç blastik/ileri faz geçirmemiş, derin yanıtta olan hastalarda gündeme gelir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Blastik faz; mutasyona uygun inhibitör + hatta özgü yoğun kemoterapi + uygun hastada allojenik nakil.",
+        "B": "YANLIS — Doz artışı blastik fazda yetersizdir.",
+        "C": "YANLIS — Hidroksiüre yalnızca geçici sitoredüksiyon sağlar; küratif niyetli tedavi gerekir.",
+        "D": "YANLIS — Tirozin kinaz inhibitörü blastik fazda da tedavinin omurgasıdır.",
+        "E": "YANLIS — Tedavisiz remisyon ölçütleri yalnızca kronik fazdan çıkmamış, derin yanıtta hastalar içindir."
+      },
+      "etiketler": [
+        "Blastik Faz",
+        "Klonal Evrim",
+        "Yoğun Kemoterapi",
+        "Allojenik Nakil",
+        "Mutasyon Profili"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Negrin, Schiffer & Atallah, UpToDate — Blastik faz tanı ve tedavisi"
+    },
+    {
+      "id": "s14",
+      "metin": "BCR::ABL1 pozitif, kronik fazda kabul edilen bir hastada periferik yaymada belirgin MONOSİTOZ dikkat çekiyor. Moleküler incelemede füzyon transkripti e1a2 (p190) olarak bildiriliyor.\n\nBu bulgunun klinik ve laboratuvar sonuçları hangisidir?",
+      "secenekler": {
+        "A": "e1a2 transkripti en sık görülen tiptir; klasik kronik miyeloid lösemi fenotipiyle birebir örtüşür.",
+        "B": "p190 transkripti indolent seyirli, belirgin nötrofili ile giden bir fenotip oluşturur.",
+        "C": "p190 fenotipi belirgin monositozla seyredip kronik miyelomonositik lösemiyi taklit edebilir; atipik transkript olduğu için standart uluslararası ölçekle güvenilir izlem yapılamaz ve bu olgular tedavisiz remisyon denemesine uygun kabul edilmez.",
+        "D": "Atipik transkriptler standart kantitatif yöntemle sorunsuz izlenir; ek bir laboratuvar düzenlemesi gerekmez.",
+        "E": "e1a2 transkripti saptandığında tanı otomatik olarak blastik faz kabul edilir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "p190 (e1a2) fenotipi belirgin monositozla kronik miyelomonositik lösemiyi taklit edebilir; atipik bir transkript olduğu için standart uluslararası ölçekte izlenemez (transkripte özgü/nested yöntem gerekir) ve bu olgular tedavisiz remisyon adayı sayılmaz.",
+      "aciklama_detay": "Transkript tipi hem fenotipi hem izlem altyapısını belirler. Olguların yaklaşık %95'inde majör kırılma bölgesinden p210 (e13a2 veya e14a2) oluşur ve klasik tablo görülür. p190 (e1a2) daha kısa bir füzyon proteinidir; kronik miyeloid lösemide nadirdir, belirgin monositozla seyredebilir ve kronik miyelomonositik lösemiyi taklit eder — ayrıca Philadelphia kromozomu pozitif akut lenfoblastik löseminin en sık transkriptidir. p230 (e19a2) ise belirgin nötrofili ve indolent, kronik nötrofilik lösemi benzeri bir tablo yapar. Laboratuvar sonucu kritik: uluslararası ölçek (IS) p210 transkriptleri için standardize edilmiştir; atipik transkriptlerde standart kitler ya hiç çoğaltmaz ya da sonucu ölçeğe dönüştürülemez, bu yüzden transkripte özgü primerlerle kurulmuş kantitatif yöntem gerekir ve mutlak değerler bazale göre izlenir. Standart ölçekte güvenilir derin yanıt belgelenemediği için bu olgular tedavisiz remisyon denemesine uygun kabul edilmez. Tedavi yanıtı ise tirozin kinaz inhibitörleriyle korunur — sorun etkinlikte değil ölçmededir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — En sık transkript p210'dur (e13a2/e14a2); e1a2 nadirdir ve fenotipi farklıdır.",
+        "B": "YANLIS — İndolent nötrofilik fenotip p230 (e19a2) ile ilişkilidir.",
+        "C": "DOGRU — Monositoz ile taklit, standart ölçekle izlenemez, tedavisiz remisyon adayı değildir.",
+        "D": "YANLIS — Atipik transkriptler için transkripte özgü kantitatif yöntem kurulması gerekir.",
+        "E": "YANLIS — Transkript tipi faz belirlemez; faz blast oranıyla tanımlanır."
+      },
+      "etiketler": [
+        "p190 / e1a2",
+        "p230 / e19a2",
+        "Atipik Transkript",
+        "Monositoz",
+        "İzlem Kısıtı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Cross ve ark. Leukemia 2023; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s15",
+      "metin": "Tedavisiz remisyon denemesi kapsamında ilacını 4 ay önce bırakan hastanın aylık moleküler izleminde BCR::ABL1 uluslararası ölçekte saptanamaz düzeyden sırasıyla %0.02 ve ardından %0.35'e yükseliyor. Hasta asemptomatik, kan sayımı normal.\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Değerler düşük olduğu için izleme devam edilmeli; müdahale ancak lökositoz geliştiğinde yapılmalıdır.",
+        "B": "Doğrudan allojenik kök hücre nakli planlanmalıdır.",
+        "C": "Yeni bir tedavisiz remisyon denemesi için 12. aya kadar beklenmelidir.",
+        "D": "Yalnızca kemik iliği biyopsisi yapılmalı, tedavi kararı sitogenetik sonuca göre verilmelidir.",
+        "E": "Major moleküler yanıt kaybedilmiştir (uluslararası ölçekte >%0.1); önceki tirozin kinaz inhibitörü gecikmeden yeniden başlanmalıdır — bu hastaların büyük çoğunluğu yeniden derin yanıta ulaşır."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Tedavisiz remisyon denemesinde tedaviye dönüş ölçütü major moleküler yanıtın kaybıdır (uluslararası ölçekte >%0.1); bu eşik aşıldığında önceki ajan gecikmeden yeniden başlanır ve hastaların büyük çoğunluğu yeniden derin moleküler yanıta ulaşır.",
+      "aciklama_detay": "Tedavisiz remisyon denemesinin güvenliği, nüksün hematolojik değil MOLEKÜLER düzeyde yakalanmasına dayanır; bu nedenle lökositoz veya semptom beklemek yönteme aykırıdır. Kabul gören dönüş eşiği major moleküler yanıtın kaybıdır, yani uluslararası ölçekte BCR::ABL1 >%0.1. Bu hastada iki ardışık ölçümde artış ve son değerin %0.35 olması eşiğin aşıldığını gösterir; önceki ajan gecikmeden yeniden başlanır. Sonuç genellikle iyidir: yeniden tedavi edilen hastaların büyük bölümü major moleküler yanıta, önemli bir kısmı yeniden derin moleküler yanıta ulaşır — nükslerin çoğunun ilk 6 ayda olması ve yeniden yanıtın yüksek olması, denemeyi kabul edilebilir kılan iki gerçektir. Tedaviye dönen hastada izlem sıklığı yeniden artırılır (ilk aylarda aylık), yanıt geri geldikten sonra rutin üç aylık izleme dönülür. Kemik iliği biyopsisi ve allojenik nakil bu aşamada endike değildir; nakil yalnızca gerçek direnç, ileri faz veya seçenek tükenmesi durumunda gündeme gelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Dönüş ölçütü moleküler eşiktir; hematolojik nüksü beklemek yöntemin mantığına aykırıdır.",
+        "B": "YANLIS — Moleküler nüks sonrası standart yaklaşım aynı ajanla tedaviye dönüştür.",
+        "C": "YANLIS — Eşik aşıldıktan sonra beklemek yanıt kaybını derinleştirir.",
+        "D": "YANLIS — Karar kantitatif moleküler ölçüme dayanır; biyopsi bu aşamada gerekli değildir.",
+        "E": "DOGRU — Major moleküler yanıt kaybı; önceki ajan gecikmeden yeniden başlanır, yeniden yanıt olasılığı yüksektir."
+      },
+      "etiketler": [
+        "Moleküler Nüks",
+        "Major Moleküler Yanıt",
+        "Tedaviye Dönüş",
+        "Tedavisiz Remisyon",
+        "İzlem"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Apperley ve ark. Leukemia 2025; Rinaldi & Winston J Blood Med 2023"
+    }
+  ]
+}
