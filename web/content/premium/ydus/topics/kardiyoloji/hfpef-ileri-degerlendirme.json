@@ -1,8 +1,9 @@
 {
   "meta": {
+    "kaynakca": "kalp-yetersizligi",
     "id": "hfpef-ileri-degerlendirme",
     "branch": "kardiyoloji",
-    "baslik": "HFpEF — İleri Görüntüleme, Biyobelirteçler ve Tanı Skorlamaları",
+    "baslik": "Korunmuş EF'li Kalp Yetersizliği (HFpEF)",
     "altbaslik": "ASE/EACVI diyastolik fonksiyon algoritması, GLS/apikal sparing, NT-proBNP/CA-125/hsTnT yorumlama tuzakları, H2FPEF ve HFA-PEFF skorlamaları, invaziv egzersiz hemodinamisi ve obez HFpEF fenotipi",
     "rozetler": [
       "SINAV SPOTU",
