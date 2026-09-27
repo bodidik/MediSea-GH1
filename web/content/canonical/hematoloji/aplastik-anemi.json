@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "14 Mar 2026",
     "tags": ["Hematoloji", "Anemi", "Aplastik Anemi", "Pansitopeni", "Kemik İliği Yetmezliği", "ATG", "Eltrombopag"],
-    "parent": "anemiler-genel-bakis",
+    "parent": "anemiler",
     "order": 40
   },
   "sections": [

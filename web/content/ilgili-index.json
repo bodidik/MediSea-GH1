@@ -232,6 +232,11 @@
    "brans": "endokrinoloji",
    "slug": "adrenal-yetmezlik",
    "baslik": "Adrenal Yetmezlik (Addison ve Santral)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "ektopik-acth-sendromu",
+   "baslik": "Ektopik ACTH Sendromu: Etiyopatogenez, Hücresel Tanı Kriterleri ve Tedavi Algoritmaları"
   }
  ],
  "endokrinoloji/diabetes-mellitus-ana": [
@@ -692,31 +697,31 @@
    "baslik": "Hipokalsemi ve Hipoparatiroidi"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "kalsiyum-homeostazi-fizyoloji",
-   "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi"
+   "brans": "nefroloji",
+   "slug": "FGF-23 vs PTH",
+   "baslik": "FGF-23 ve PTH Arasındaki Moleküler Çapraz Konuşma (Crosstalk)"
   }
  ],
  "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma": [
   {
    "brans": "endokrinoloji",
-   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
-   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
+   "slug": "men1-ektopik-cushing-sendromu",
+   "baslik": "MEN1'de Ektopik Cushing Sendromu: Diagnostik Kusursuz Fırtına"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler",
-   "baslik": "SGLT2 İnhibitörleri: Pleiotropik Etkiler ve Advers Profil"
+   "slug": "men1-meme-kanseri-tarama",
+   "baslik": "MEN1'de Meme Kanseri Riski ve Tarama Protokolü"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "siadh-sendromu",
-   "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi"
+   "slug": "men1-menin-molekuler-gelismeler",
+   "baslik": "Menin Proteini: Son Dönem Moleküler ve Klinik Gelişmeler"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "tiroid-hastaliklari-ana",
-   "baslik": "Tiroid Hastalıkları"
+   "slug": "men1-osilodrostat-block-replace",
+   "baslik": "MEN1'de Osilodrostat: Block-and-Replace Protokolü ve Klinik Avantajları"
   }
  ],
  "endokrinoloji/hipertiroidi": [
@@ -1025,11 +1030,6 @@
    "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "kalsiyum-homeostazi-fizyoloji",
-   "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi"
-  },
-  {
    "brans": "nefroloji",
    "slug": "FGF-23 vs PTH",
    "baslik": "FGF-23 ve PTH Arasındaki Moleküler Çapraz Konuşma (Crosstalk)"
@@ -1108,21 +1108,6 @@
   }
  ],
  "endokrinoloji/kalsiyum-homeostazi-fizyoloji": [
-  {
-   "brans": "endokrinoloji",
-   "slug": "vitamin-d-bozukluklari",
-   "baslik": "Vitamin D Bozuklukları: Raşitizm ve Osteomalazi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hiperparatiroidizm",
-   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipokalsemi-ve-hipoparatiroidi",
-   "baslik": "Hipokalsemi ve Hipoparatiroidi"
-  },
   {
    "brans": "nefroloji",
    "slug": "FGF-23 vs PTH",
@@ -1807,23 +1792,23 @@
  "endokrinoloji/paratiroid-karsinomu-histolojik-tuzaklar": [
   {
    "brans": "endokrinoloji",
-   "slug": "osteoporoz-tedavisi",
-   "baslik": "Osteoporoz Tedavisi: Farmakoterapi Endikasyonları, Modaliteler ve Yönetim Stratejileri"
+   "slug": "adrenal-bez-hastaliklari",
+   "baslik": "Adrenal (Sürrenal) Bez Hastalıkları"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "prolaktinoma-yeni-biyobelirtecler",
-   "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler"
+   "slug": "adrenal-korteks-hastaliklari",
+   "baslik": "Adrenal Korteks Hastalıkları"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "santral-hipotiroidizm",
-   "baslik": "Santral Hipotiroidizm"
+   "slug": "adrenal-yetmezlik",
+   "baslik": "Adrenal Yetmezlik (Addison ve Santral)"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
-   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
+   "slug": "arka-hipofiz-bozukluklari-di-ve-siadh",
+   "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH"
   }
  ],
  "endokrinoloji/pbmah-genetik-temeller-ailevi-riskler": [
@@ -2354,15 +2339,20 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men1-osilodrostat-mineralokortikoid",
-   "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi"
+   "slug": "kalsiyum-homeostazi-fizyoloji",
+   "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi"
   }
  ],
  "endokrinoloji/vitamin-d-bozukluklari": [
   {
    "brans": "endokrinoloji",
-   "slug": "kalsiyum-homeostazi-fizyoloji",
-   "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi"
+   "slug": "hiperparatiroidizm",
+   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipokalsemi-ve-hipoparatiroidi",
+   "baslik": "Hipokalsemi ve Hipoparatiroidi"
   }
  ],
  "endokrinoloji/yaslida-hipertiroidizm": [
@@ -3438,23 +3428,18 @@
  "gastroenteroloji/bilirubin-metabolizmasi": [
   {
    "brans": "gastroenteroloji",
-   "slug": "bagirsak-hastaliklari",
-   "baslik": "Bağırsak Hastalıkları"
+   "slug": "karaciger-hastasina-yaklasim",
+   "baslik": "Karaciğer Hastasına Yaklaşım: Anamnez ve Fizik Muayene"
   },
   {
    "brans": "gastroenteroloji",
-   "slug": "colyak-akdeniz-beslenme",
-   "baslik": "Çölyak Hastalığında Akdeniz Tipi Glutensiz Beslenme"
+   "slug": "safra-kesesi-hastaliklari",
+   "baslik": "Safra Kesesi Hastalıkları (Kolelityazis ve Kolesistit)"
   },
   {
    "brans": "gastroenteroloji",
-   "slug": "colyak-beslenme",
-   "baslik": "Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "colyak-pseudotahillar",
-   "baslik": "Psödotahıllar ve Çölyak Diyetindeki Avantajları"
+   "slug": "siroz-ve-komplikasyonlari",
+   "baslik": "Siroz ve Komplikasyonları"
   }
  ],
  "gastroenteroloji/colyak": [
@@ -3900,23 +3885,18 @@
  "gastroenteroloji/safra-kesesi-hastaliklari": [
   {
    "brans": "gastroenteroloji",
-   "slug": "bagirsak-hastaliklari",
-   "baslik": "Bağırsak Hastalıkları"
+   "slug": "bilirubin-metabolizmasi",
+   "baslik": "Bilirubin Metabolizması ve Fizyolojisi"
   },
   {
    "brans": "gastroenteroloji",
-   "slug": "colyak-akdeniz-beslenme",
-   "baslik": "Çölyak Hastalığında Akdeniz Tipi Glutensiz Beslenme"
+   "slug": "karaciger-hastasina-yaklasim",
+   "baslik": "Karaciğer Hastasına Yaklaşım: Anamnez ve Fizik Muayene"
   },
   {
    "brans": "gastroenteroloji",
-   "slug": "colyak-beslenme",
-   "baslik": "Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "colyak-pseudotahillar",
-   "baslik": "Psödotahıllar ve Çölyak Diyetindeki Avantajları"
+   "slug": "siroz-ve-komplikasyonlari",
+   "baslik": "Siroz ve Komplikasyonları"
   }
  ],
  "gastroenteroloji/siroz-ve-komplikasyonlari": [
@@ -4258,16 +4238,6 @@
  "hematoloji/anemiler": [
   {
    "brans": "hematoloji",
-   "slug": "aplastik-anemi",
-   "baslik": "Aplastik Anemi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
-   "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "besinsel-b12",
    "baslik": "Besinsel B12 Vitamini Eksikliği"
   },
@@ -4275,6 +4245,16 @@
    "brans": "hematoloji",
    "slug": "demir-eksikligi",
    "baslik": "Demir Eksikliği Anemisi (DEA)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "demir-eksikligi-anemisi",
+   "baslik": "Demir Eksikliği Anemisi (DEA)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "folat-eksikligi",
+   "baslik": "Folat (B9 Vitamini) Eksikliği"
   }
  ],
  "hematoloji/antikoagulasyon-stratejileri": [
@@ -4616,6 +4596,26 @@
    "brans": "hematoloji",
    "slug": "hemofili-b",
    "baslik": "Hemofili B (Christmas Hastalığı)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "hemofililer-ve-sekonder-hemostaz",
+   "baslik": "Hemofililer ve Sekonder Hemostaz Bozuklukları"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "trombofililer-hiperkoagulabilite",
+   "baslik": "Trombofililer ve Hiperkoagülabilite"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "trombosit-hastaliklari-genel-bakis",
+   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "von-willebrand-hastaligi-vwd",
+   "baslik": "von Willebrand Hastalığı (vWD)"
   }
  ],
  "hematoloji/hemofili-b": [
@@ -4623,6 +4623,26 @@
    "brans": "hematoloji",
    "slug": "hemofili-a",
    "baslik": "Hemofili A (Faktör VIII Eksikliği)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "hemofililer-ve-sekonder-hemostaz",
+   "baslik": "Hemofililer ve Sekonder Hemostaz Bozuklukları"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "trombofililer-hiperkoagulabilite",
+   "baslik": "Trombofililer ve Hiperkoagülabilite"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "trombosit-hastaliklari-genel-bakis",
+   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "von-willebrand-hastaligi-vwd",
+   "baslik": "von Willebrand Hastalığı (vWD)"
   }
  ],
  "hematoloji/hemofililer-ve-sekonder-hemostaz": [
@@ -4650,6 +4670,16 @@
   }
  ],
  "hematoloji/hemolitik-anemiler-genel-bakis": [
+  {
+   "brans": "hematoloji",
+   "slug": "aplastik-anemi",
+   "baslik": "Aplastik Anemi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
+   "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
+  },
   {
    "brans": "hematoloji",
    "slug": "makrositer-anemiler",
@@ -4751,18 +4781,18 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "inme-sonrasi-gizli-af",
-   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
+   "slug": "gilteritinib-flt3-aml",
+   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
   },
   {
    "brans": "hematoloji",
-   "slug": "lenfomalar",
-   "baslik": "Lenfomalar (Hodgkin ve NHL)"
+   "slug": "hematolojik-maligniteler",
+   "baslik": "Hematolojik Maligniteler"
   },
   {
    "brans": "hematoloji",
-   "slug": "losemiler",
-   "baslik": "Lösemiler"
+   "slug": "hemolitik-anemiler-genel-bakis",
+   "baslik": "Hemolitik Anemiler"
   }
  ],
  "hematoloji/kanser-iliskili-tromboz": [
@@ -4892,6 +4922,11 @@
    "brans": "hematoloji",
    "slug": "polisitemia-vera",
    "baslik": "Polistemia Vera (PV) Kapsamlı Özeti"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "sistemik-mastositoz-sm",
+   "baslik": "Sistemik Mastositoz (SM)"
   }
  ],
  "hematoloji/kronik-notrofilik-losemi-cnl": [
@@ -4909,6 +4944,11 @@
    "brans": "hematoloji",
    "slug": "polisitemia-vera",
    "baslik": "Polistemia Vera (PV) Kapsamlı Özeti"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "sistemik-mastositoz-sm",
+   "baslik": "Sistemik Mastositoz (SM)"
   }
  ],
  "hematoloji/kursun-zehirlenmesi-anemisi": [
@@ -5045,6 +5085,16 @@
  "hematoloji/mikrositer-anemiler": [
   {
    "brans": "hematoloji",
+   "slug": "aplastik-anemi",
+   "baslik": "Aplastik Anemi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
+   "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "hemolitik-anemiler-genel-bakis",
    "baslik": "Hemolitik Anemiler"
   },
@@ -5062,11 +5112,6 @@
    "brans": "hematoloji",
    "slug": "talasemiler-ana",
    "baslik": "Talasemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "yapim-azligi-anemiler",
-   "baslik": "Yapım Azlığına Bağlı Anemiler"
   }
  ],
  "hematoloji/miyelodisplastik-sendrom-mds": [
@@ -5128,6 +5173,16 @@
   }
  ],
  "hematoloji/olgunlasma-bozukluklari": [
+  {
+   "brans": "hematoloji",
+   "slug": "aplastik-anemi",
+   "baslik": "Aplastik Anemi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
+   "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
+  },
   {
    "brans": "hematoloji",
    "slug": "hemolitik-anemiler-genel-bakis",
@@ -5269,23 +5324,23 @@
  "hematoloji/porfiriler-aip-pct": [
   {
    "brans": "hematoloji",
-   "slug": "hemofililer-ve-sekonder-hemostaz",
-   "baslik": "Hemofililer ve Sekonder Hemostaz Bozuklukları"
+   "slug": "makrositer-anemiler",
+   "baslik": "Makrositer Anemiler"
   },
   {
    "brans": "hematoloji",
-   "slug": "trombofililer-hiperkoagulabilite",
-   "baslik": "Trombofililer ve Hiperkoagülabilite"
+   "slug": "megaloblastik-anemi",
+   "baslik": "Megaloblastik Anemiler (Genel)"
   },
   {
    "brans": "hematoloji",
-   "slug": "trombosit-hastaliklari-genel-bakis",
-   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
+   "slug": "miyeloproliferatif",
+   "baslik": "Miyeloproliferatif Neoplazmlar (MPN)"
   },
   {
    "brans": "hematoloji",
-   "slug": "von-willebrand-hastaligi-vwd",
-   "baslik": "von Willebrand Hastalığı (vWD)"
+   "slug": "nhl-genel",
+   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
   }
  ],
  "hematoloji/primer-miyelofibrozis": [
@@ -5320,6 +5375,16 @@
   }
  ],
  "hematoloji/talasemiler-ana": [
+  {
+   "brans": "hematoloji",
+   "slug": "aplastik-anemi",
+   "baslik": "Aplastik Anemi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
+   "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
+  },
   {
    "brans": "hematoloji",
    "slug": "hemolitik-anemiler-genel-bakis",
@@ -5468,6 +5533,16 @@
   }
  ],
  "hematoloji/yapim-azligi-anemiler": [
+  {
+   "brans": "hematoloji",
+   "slug": "aplastik-anemi",
+   "baslik": "Aplastik Anemi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
+   "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
+  },
   {
    "brans": "hematoloji",
    "slug": "hemolitik-anemiler-genel-bakis",
@@ -5793,6 +5868,21 @@
  "kardiyoloji/hiperlipidemi-dusuk-ldl-hedefleri": [
   {
    "brans": "kardiyoloji",
+   "slug": "anti-hmgcr-otoantikorlari",
+   "baslik": "Anti-HMGCR Otoantikorları: IMNM Biyobelirteci"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "bempedoik-ezetimib-mace",
+   "baslik": "Bempedoik Asit + Ezetimib ve MACE Etkisi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "klinik-sams",
+   "baslik": "SAMS Nasıl Tanırız? (Statin Miyopatisi)"
+  },
+  {
+   "brans": "kardiyoloji",
    "slug": "lipid-hedef-itirazlari",
    "baslik": "Agresif LDL Hedeflerine Yönelik Akademik İtirazlar"
   },
@@ -5805,11 +5895,6 @@
    "brans": "kardiyoloji",
    "slug": "lipidoloji-statin-miyopatisi-sams",
    "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "lipidoloji-tedavi-ana",
-   "baslik": "Klinik Lipidoloji tedavi"
   }
  ],
  "kardiyoloji/hiperlipidemi-log-dogrusal-risk": [
@@ -5981,8 +6066,23 @@
  "kardiyoloji/lipid-hedef-itirazlari": [
   {
    "brans": "kardiyoloji",
+   "slug": "anti-hmgcr-otoantikorlari",
+   "baslik": "Anti-HMGCR Otoantikorları: IMNM Biyobelirteci"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "bempedoik-ezetimib-mace",
+   "baslik": "Bempedoik Asit + Ezetimib ve MACE Etkisi"
+  },
+  {
+   "brans": "kardiyoloji",
    "slug": "hiperlipidemi-dusuk-ldl-hedefleri",
    "baslik": "Hiperlipidemi: Düşük LDL-C Hedeflerinin Klinik Rasyoneli"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "klinik-sams",
+   "baslik": "SAMS Nasıl Tanırız? (Statin Miyopatisi)"
   },
   {
    "brans": "kardiyoloji",
@@ -5993,11 +6093,6 @@
    "brans": "kardiyoloji",
    "slug": "lipidoloji-statin-miyopatisi-sams",
    "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "lipidoloji-tedavi-ana",
-   "baslik": "Klinik Lipidoloji tedavi"
   }
  ],
  "kardiyoloji/lipidoloji-bempedoik-asit": [
@@ -6222,11 +6317,6 @@
   },
   {
    "brans": "klinik-nutrisyon",
-   "slug": "klinik-nutrisyon-ana-unite",
-   "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar"
-  },
-  {
-   "brans": "klinik-nutrisyon",
    "slug": "peg-enteral-beslenme-refeeding",
    "baslik": "PEG ve Enteral Beslenme: Realimentasyon ve Refeeding Yönetimi"
   }
@@ -6244,11 +6334,6 @@
   }
  ],
  "klinik-nutrisyon/klinik-nutrisyon-ana-unite": [
-  {
-   "brans": "klinik-nutrisyon",
-   "slug": "enteral-parenteral",
-   "baslik": "Ch 328: Nütrisyonel Destek Tedavisi"
-  },
   {
    "brans": "hematoloji",
    "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",

@@ -4,7 +4,7 @@
     "kaynakca": "tirzepatid",
     "updatedAt": "27 May 2026",
     "tags": ["Endokrinoloji", "Obezite", "Tirzepatid", "GLP-1", "GIP", "Diyabet", "YDUS"],
-    "parent": null,
+    "parent": "diyabet-farmakolojik-tedavi",
     "order": 4
   },
   "sections": [

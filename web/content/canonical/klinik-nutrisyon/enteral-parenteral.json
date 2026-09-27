@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Nütrisyon", "PEG", "TPN", "Refeeding"],
-    "parent": "nutrisyon-hastaliklari",
+    "parent": "klinik-nutrisyon-ana-unite",
     "order": 2
   },
   "sections": [

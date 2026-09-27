@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "14 Mar 2026",
     "tags": ["Hematoloji", "Anemi", "Megaloblastik", "B12 Vitamini", "Pernisiyöz Anemi", "Nörolojik Bulgular"],
-    "parent": "anemiler-genel-bakis",
+    "parent": "anemiler",
     "order": 34
   },
   "sections": [

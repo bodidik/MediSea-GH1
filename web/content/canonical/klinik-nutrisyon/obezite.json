@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "16 Mar 2026",
     "tags": ["Nütrisyon", "BMI", "Bariatrik", "GLP-1"],
-    "parent": "nutrisyon-hastaliklari",
+    "parent": "klinik-nutrisyon-ana-unite",
     "order": 4
   },
   "sections": [

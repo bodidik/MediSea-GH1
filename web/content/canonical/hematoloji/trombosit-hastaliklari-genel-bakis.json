@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "14 Mar 2026",
     "tags": ["Hematoloji", "Trombosit", "Hemostaz", "Glanzmann", "Bernard-Soulier", "Trombositopeni", "Kategori"],
-    "parent": "benign-hematoloji",
+    "parent": "kanama-bozukluklari",
     "order": 44
   },
   "sections": [

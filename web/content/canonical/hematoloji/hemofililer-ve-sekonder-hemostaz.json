@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "15 Mar 2026",
     "tags": ["Hematoloji", "Hemostaz", "Koagülasyon", "Hemofili", "Faktör VIII", "Faktör IX", "aPTT", "Hemartroz"],
-    "parent": "benign-hematoloji",
+    "parent": "kanama-bozukluklari",
     "order": 46
   },
   "sections": [

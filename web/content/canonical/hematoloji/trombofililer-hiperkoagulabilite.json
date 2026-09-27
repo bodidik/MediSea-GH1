@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "15 Mar 2026",
     "tags": ["Hematoloji", "Trombofili", "Faktör V Leiden", "Antifosfolipid Sendromu", "Protein C", "Antitrombin", "Virchow Triadı", "DVT"],
-    "parent": "benign-hematoloji",
+    "parent": "kanama-bozukluklari",
     "order": 48
   },
   "sections": [

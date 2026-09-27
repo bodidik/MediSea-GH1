@@ -3,7 +3,7 @@
   "meta": {
     "updatedAt": "03 Nis 2026",
     "tags": ["Nefroloji", "Farmakoloji", "Diüretikler", "Furosemid", "Tiyazid", "Hipertansiyon", "Kalp Yetmezliği"],
-    "parent": "nefroloji-ana-sayfa",
+    "parent": null,
     "order": 6
   },
   "sections": [
