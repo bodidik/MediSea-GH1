@@ -5,6 +5,7 @@ import { useUser } from '@/app/(ydus)/context/UserContext';
 import { useSession } from 'next-auth/react';
 import { useMemo } from 'react';
 import { rutbe } from '@/app/lib/rutbe';
+import { XP_KURALI_METNI } from '@/app/lib/xp';
 
 // --- MOCK VERİTABANI (ZIRH: Statik veriler render dışında tutuldu) ---
 const MOCK_LEADERS = [
@@ -80,6 +81,8 @@ export default function LeadershipBoard() {
             `_nefroloji`), yani rotaya alınmıyor. `premium/ydus/` altında
             `simulasyon` rotası da yok. Sonuç: canlıda XP kazandıran hiçbir
             yol yok, her kullanıcının satırı kalıcı olarak 0 nm ve sonuncu.
+            (27 Eyl: kapandı — soru, set ve vaka artık puan veriyor; kural
+            app/lib/xp.ts, metin oradan basılıyor.)
 
             Aynı sınıfın kardeşi profil sayfasındaki rozet kutusuydu ve o tur
             düzeltilmişti; bu kopya süpürmenin dışında kalmış. Yeni metin
@@ -89,8 +92,7 @@ export default function LeadershipBoard() {
           */}
           <p className="text-slate-400 font-medium relative z-10">
             Örnek sıralama — aşağıdaki isimler tanıtım amaçlı, gerçek kullanıcı değil.
-            Sıralama henüz açık değil; XP kazandıran modüller hazır olduğunda kendi
-            ilerlemen burada görünür.
+            Senin satırın gerçek puanını gösterir: {XP_KURALI_METNI}
           </p>
         </div>
 

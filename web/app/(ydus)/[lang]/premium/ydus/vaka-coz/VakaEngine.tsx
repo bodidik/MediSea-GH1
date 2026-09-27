@@ -1,8 +1,10 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { kalinIsle, duzMetin } from '@/app/lib/metin';
 import { useSonucuGoster, useSoruKlavyesi, useGecisteBasaDon } from '@/app/lib/soru-akisi';
+import { useUser } from '@/app/(ydus)/context/UserContext';
+import { XP, xpKimligi } from '@/app/lib/xp';
 
 /* ──────────────────── TYPES ──────────────────── */
 interface Adim {
@@ -66,6 +68,8 @@ interface Props {
   veri: VakaVeri;
   lang: string;
   branch: string;
+  /** Adresteki vaka kimliği — XP kimliği bundan (dosyanın iç `id` alanı tutarsız). */
+  vakaId: string;
 }
 
 /* ──────────────────── HELPERS ──────────────────── */
@@ -103,12 +107,15 @@ function AdimKarti({
   toplamAdim,
   onNext,
   isLast,
+  onBitti,
 }: {
   adim: Adim;
   adimNo: number;
   toplamAdim: number;
   onNext: () => void;
   isLast: boolean;
+  /** Vaka bittiğinde bir kez çağrılır (puan). */
+  onBitti: () => void;
 }) {
   const [secim, setSecim] = useState<string | null>(null);
   const [yanitAcik, setYanitAcik] = useState(false);
@@ -122,6 +129,11 @@ function AdimKarti({
      metni kalmadı (ya açıldı ya da hiç yok). Aşağıdaki bayrak ve sesli
      duyuru AYNI koşuldan besleniyor — iki gerçeklik olmasın. */
   const vakaBitti = isLast && cevapVerildi && (sonrakiAcik || !adim.sonraki_bilgi);
+  // Bayrak ve duyuruyla AYNI koşul: "Vaka tamamlandı" görünen an puan da yazılır.
+  useEffect(() => {
+    if (vakaBitti) onBitti();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [vakaBitti]);
   /* Şık açıklamaları iki addan biriyle gelebiliyor; hiç gelmeyebilir de.
      Korumasız okuma bir vakayı ÇÖKERTİYORDU (bkz. Adim tipindeki not). */
   const sikAciklamalari = adim.secenekAciklamalari ?? adim.aciklamalar;
@@ -474,7 +486,8 @@ function AdimKarti({
 }
 
 /* ──────────────────── ANA BİLEŞEN ──────────────────── */
-export default function VakaEngine({ veri, lang, branch }: Props) {
+export default function VakaEngine({ veri, lang, branch, vakaId }: Props) {
+  const { kazan } = useUser();
   const [adimIndex, setAdimIndex] = useState(0);
 
   const adimlar = veri.adimlar ?? [];
@@ -595,6 +608,7 @@ export default function VakaEngine({ veri, lang, branch }: Props) {
           toplamAdim={toplamAdim}
           onNext={() => setAdimIndex(i => Math.min(i + 1, toplamAdim - 1))}
           isLast={adimIndex === toplamAdim - 1}
+          onBitti={() => kazan(xpKimligi.vaka(branch, vakaId), XP.vakaBitir)}
         />
 
       </div>

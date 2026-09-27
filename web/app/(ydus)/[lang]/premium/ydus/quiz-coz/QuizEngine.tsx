@@ -4,6 +4,8 @@ import { useState, useCallback, useEffect, useRef } from 'react';
 import { kalinIsle, duzMetin } from '@/app/lib/metin';
 import { guvenliCozumle } from '@/app/lib/depo';
 import { useSonucuGoster, useSoruKlavyesi, useGecisteBasaDon } from '@/app/lib/soru-akisi';
+import { useUser } from '@/app/(ydus)/context/UserContext';
+import { XP, xpKimligi } from '@/app/lib/xp';
 
 /* ────────────────────────── TYPES ────────────────────────── */
 interface Soru {
@@ -579,6 +581,7 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
   const [bitti, setBitti] = useState(false);
   // Yalnızca yanlışları çözmek için daraltılmış set; null = bütün sorular.
   const [aktifIdler, setAktifIdler] = useState<string[] | null>(null);
+  const { kazan, completeModule } = useUser();
 
   const sorular = aktifIdler
     ? tumSorular.filter((s) => aktifIdler.includes(s.id))
@@ -673,6 +676,19 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
     'soru-basi',
     sessizGecis,
   );
+
+  /**
+   * SET BİTTİ → puan + konu tamamlandı. Çalışma planı ("X / Y konu
+   * tamamlandı") `completedModules`teki KONU kimliğini okuyor ve canlıda ona
+   * yazan hiçbir şey yoktu: plan hiç ilerlemiyordu. Yalnızca yanlışlar turu
+   * sayılmaz — konunun bütün setini bitirmek gerekir.
+   */
+  useEffect(() => {
+    if (!bitti || aktifIdler !== null) return;
+    kazan(xpKimligi.set(veri.id), XP.setBitir);
+    if (veri.topic) completeModule(veri.topic, 0);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [bitti, aktifIdler]);
 
   /**
    * BOŞ DURUM ÇIKIŞ YOLU İSTER — bir dönem yalnızca tek bir cümleydi.
@@ -812,7 +828,11 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
         soruNo={soruIndex + 1}
         toplamSoru={sorular.length}
         onNext={ilerle}
-        onAnswer={(d) => setSonuclar((p) => ({ ...p, [aktifSoru.id]: d }))}
+        onAnswer={(d) => {
+          setSonuclar((p) => ({ ...p, [aktifSoru.id]: d }));
+          // İlk doğru cevap puan verir; kimlik bir kez sayılır (app/lib/xp.ts).
+          if (d) kazan(xpKimligi.soru(veri.id, aktifSoru.id), XP.dogruCevap);
+        }}
         skor={skor}
         lang={lang}
         branch={branch}

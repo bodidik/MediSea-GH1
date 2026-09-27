@@ -325,5 +325,5 @@ export default async function VakaCozPage(props: {
     );
   }
 
-  return <VakaEngine veri={veri} lang={lang} branch={branch} />;
+  return <VakaEngine veri={veri} lang={lang} branch={branch} vakaId={id ?? ''} />;
 }

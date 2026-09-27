@@ -75,7 +75,15 @@ export default function YdusDashboardClient({
   sinavlar?: Sinav[];
   hazirKonular?: { brans: string; id: string; baslik: string }[];
 }) {
-  const { xp, completedModules } = useUser();
+  const { xp, kazanimlar } = useUser();
+  // Kendi çalışmasının özeti KAZANIMLARDAN (app/lib/xp.ts). Bu satır bir dönem
+  // `completedModules.length` için "vaka tamamladınız" diyordu — o dizi konu
+  // kimliği taşıyor ve canlıda hiç dolmuyordu.
+  const cozum = {
+    soru: kazanimlar.filter((k) => k.startsWith("soru:")).length,
+    set: kazanimlar.filter((k) => k.startsWith("set:")).length,
+    vaka: kazanimlar.filter((k) => k.startsWith("vaka:")).length,
+  };
   const progressPct = overall.totalTopics > 0
     ? Math.round((overall.readyTopics / overall.totalTopics) * 100)
     : 0;
@@ -333,9 +341,9 @@ export default function YdusDashboardClient({
           </>
         )}
 
-        {completedModules.length > 0 && (
-          <p className="text-center text-[11px] text-slate-400 mt-6">
-            {completedModules.length} vaka tamamladınız
+        {cozum.soru + cozum.set + cozum.vaka > 0 && (
+          <p className="text-center text-[12px] text-slate-500 mt-6">
+            {`${cozum.soru} soruyu doğru cevapladın · ${cozum.set} set · ${cozum.vaka} vaka bitirdin`}
           </p>
         )}
 

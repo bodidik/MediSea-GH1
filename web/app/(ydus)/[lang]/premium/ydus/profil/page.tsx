@@ -8,6 +8,7 @@ import { branchSlugOf, collectAll } from '@/app/lib/study-index';
 import { SPECIALTIES } from '@/app/lib/specialties';
 import { localStats } from '@/app/lib/study-stats';
 import { rutbe } from '@/app/lib/rutbe';
+import { XP_KURALI_METNI } from '@/app/lib/xp';
 
 /**
  * Bu sayfa bir dönem `STATIC_USER_DATA` diye bir sabitten besleniyordu:
@@ -157,10 +158,12 @@ export default function ProfileDashboard() {
                 <span className="text-2xl font-black text-orange-500">{seri} <span className="text-sm text-slate-500">GÜN 🔥</span></span>
               </div>
               <div className="bg-black/40 px-4 py-3 rounded-2xl border border-white/5">
-                <span className="block text-slate-400 text-[10px] font-bold uppercase mb-1">Bitirilen Modül</span>
+                <span className="block text-slate-400 text-[10px] font-bold uppercase mb-1">Bitirilen Konu</span>
                 <span className="text-2xl font-black text-emerald-400">{completedModules.length} <span className="text-sm text-slate-500">ADET 📚</span></span>
               </div>
             </div>
+            {/* Puanın NEREDEN geldiği — kural tek kaynakta (app/lib/xp.ts). */}
+            <p className="mt-4 text-xs font-medium text-slate-400">{XP_KURALI_METNI}</p>
           </div>
 
           <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
