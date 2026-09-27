@@ -115,22 +115,54 @@ export function AdaSilueti({ className = "" }: Props) {
 }
 
 /**
- * Hero süsü — koyu zeminde birkaç martı ve altta iki ince dalga.
- * Ana sayfanın lacivert bölümünde ızgara deseninin yerini alır.
+ * Sabah denizi — ana sayfa hero'sunun açık zemini için (27 Eylül 2026,
+ * kullanıcı kararı: "tema sabah güneşli, gece ya da derin değil, çizimsel,
+ * çok belirgin olmasın"). Gökyüzünün rengi çağıranın zemininde; bu katman
+ * yalnızca ufku çizer: doğan güneş, suya düşen parıltı, pastel dalga
+ * katmanları, ufukta sallanan bir yelkenli, birkaç martı ve bulut.
+ * Dalga bandı ~96px; çağıran içerik altına o kadar dolgu bırakır.
  */
-export function HeroDenizi({ className = "" }: Props) {
+export function SabahDenizi({ className = "" }: Props) {
   return (
     <div aria-hidden="true" className={`pointer-events-none absolute inset-0 ${className}`}>
-      <svg className="absolute right-6 top-6 h-10 w-28 text-white/25" viewBox="0 0 120 34">
+      {/* bulutlar — beyaz gövde, ince gri-mavi kalem hattı */}
+      <svg className="absolute left-4 top-8 h-12 w-40" viewBox="0 0 160 48">
+        <path d="M22 40 c-12 0 -16 -14 -4 -18 c0 -12 18 -16 26 -6 c6 -14 30 -14 34 2 c12 -4 24 6 18 16 c8 2 8 6 0 6 Z" fill="#ffffff" stroke="#9fb7c9" strokeOpacity="0.55" strokeWidth="1.2" strokeLinejoin="round" />
+        <path d="M112 30 c-8 0 -10 -9 -2 -12 c2 -8 14 -9 18 -2 c6 -6 18 -2 16 6 c6 0 6 8 0 8 Z" fill="#ffffff" stroke="#9fb7c9" strokeOpacity="0.45" strokeWidth="1.1" strokeLinejoin="round" />
+      </svg>
+      <svg className="absolute right-6 top-10 h-10 w-28 text-blue-950/30" viewBox="0 0 120 34">
         <g className="deniz-suzulus">
           <Marti x={8} y={16} />
           <Marti x={40} y={24} s={0.7} />
           <Marti x={70} y={10} s={0.55} />
         </g>
       </svg>
+
+      {/* ufuk bandı — deniz katmanları genişliğe esner */}
       <svg className="absolute inset-x-0 bottom-0 h-24 w-full" viewBox="0 0 400 96" preserveAspectRatio="none">
-        <path d="M0 58 C 60 44, 120 44, 200 58 S 340 72, 400 56 V96 H0 Z" fill="#bfe8e6" opacity="0.06" />
-        <path d="M0 74 C 80 62, 150 64, 220 74 S 350 86, 400 72 V96 H0 Z" fill="#ffffff" opacity="0.05" />
+        <path d="M0 30 H400 V96 H0 Z" fill="#d6eef2" />
+        <path d="M0 50 C 70 42, 140 44, 210 52 S 340 60, 400 48 V96 H0 Z" fill="#bfe8e6" />
+        <path d="M0 70 C 80 62, 160 64, 240 72 S 350 80, 400 68 V96 H0 Z" fill="#a9dbe3" />
+        <path d="M0 30 H400" stroke="#8fb9c9" strokeOpacity="0.6" strokeWidth="1" vectorEffect="non-scaling-stroke" />
+      </svg>
+
+      {/* doğan güneş ve suya düşen parıltı — esnemesin diye ayrı katman;
+          alt kenarı bandın dibine, ufku bandın ufkuna oturur */}
+      <svg className="absolute bottom-0 right-[8%] h-[8.5rem] w-32" viewBox="0 0 128 136">
+        <ellipse cx="64" cy="70" rx="60" ry="30" fill="#fde68a" opacity="0.4" />
+        <path d="M42 70 a22 22 0 0 1 44 0 Z" fill="#fcd34d" />
+        <path d="M64 38 v-8 M40 48 l-6 -5 M88 48 l6 -5 M30 64 h-8 M98 64 h8" stroke="#f59e0b" strokeOpacity="0.55" strokeWidth="1.4" strokeLinecap="round" />
+        <path d="M56 76 h14 M50 82 h10 M66 83 h12 M44 90 h14 M64 92 h18 M38 100 h16 M60 102 h22 M46 114 h20 M72 118 h18" stroke="#fffbeb" strokeWidth="1.8" strokeLinecap="round" />
+      </svg>
+
+      {/* ufukta yelkenli — en-boy oranı korunan ayrı katman */}
+      <svg className="absolute bottom-[3.9rem] left-[12%] h-9 w-9" viewBox="0 0 40 40">
+        <g className="deniz-salinim">
+          <path d="M20 4 Q29 16 31 28 H20 Z" fill="#ffffff" stroke="#1a3a6b" strokeOpacity="0.55" strokeWidth="1.1" strokeLinejoin="round" />
+          <path d="M18 8 Q11 18 8 28 H18 Z" fill="#f8fafc" stroke="#1a3a6b" strokeOpacity="0.55" strokeWidth="1.1" strokeLinejoin="round" />
+          <path d="M5 30 H35 L31 35 H9 Z" fill="#1a3a6b" fillOpacity="0.7" />
+          <path d="M19 3 L25 5 L19 7" fill="#f59e0b" />
+        </g>
       </svg>
     </div>
   );

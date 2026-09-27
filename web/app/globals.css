@@ -1209,3 +1209,16 @@ html {
   100% { opacity: 0; transform: translate(-50%, 0); }
 }
 .deniz-yazi { animation: deniz-yazi 14s ease-in-out 2s both; }
+
+/* ANA SAYFA SABAH PANELİ — geniş ve yeterince UZUN ekranda panel yerinde
+   durur, branş listesi yanında kayar; böylece dipteki deniz bandı ilk
+   görünümde ekranda kalır. Kısa ekranda (içerik ~700px) yapışmaz, yoksa
+   panel içeriği kırpılırdı. Başlık yüksekliği 64px. */
+@media (min-width: 1024px) and (min-height: 780px) {
+  .hero-sabah {
+    position: sticky;
+    top: 64px;
+    height: calc(100vh - 64px);
+    align-self: flex-start;
+  }
+}

@@ -303,6 +303,156 @@
       ],
       "zorluk": "zor",
       "kaynak": "Bassetti et al. Lancet Infect Dis 2021 (Cefiderocol); Suh et al. Antimicrob Agents Chemother 2022 (Phage-Antibiotic Synergy)"
+    },
+    {
+      "id": "s11",
+      "metin": "Altmış sekiz yaşında erkek hasta, kolon rezeksiyonundan sonraki 9. günde yoğun bakımda ateş (39.1 °C), hipotansiyon (KB 82/48 mmHg, sıvıya yanıtsız, noradrenalin başlandı) ve laktat 4.8 mmol/L ile septik şok tablosuna giriyor. Bir hafta önce yapılan rektal sürveyans kültüründe KPC üreten CRKP kolonizasyonu saptanmış. Kan kültürleri alındı, karın BT istendi.\n\nAmpirik antibiyotik seçimi için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kolonizasyon enfeksiyon demek değildir; kültür sonucu çıkana kadar piperasilin-tazobaktam ile başlanmalıdır.",
+        "B": "Bilinen KPC kolonizasyonu ve septik şok nedeniyle ampirik tedaviye KPC'ye etkin bir yeni beta-laktam/beta-laktamaz inhibitörü (ör. seftazidim-avibaktam ya da meropenem-vaborbaktam) katılmalı, kaynak kontrolü sağlanmalı ve kültür/duyarlılık sonucuna göre daraltılmalıdır.",
+        "C": "Meropenem monoterapisi yüksek doz uzatılmış infüzyonla başlanmalıdır; KPC'de bu yeterlidir.",
+        "D": "Kolistin + tigesiklin kombinasyonu ampirik standarttır.",
+        "E": "Karın BT sonucu ve kan kültürü duyarlılığı gelene kadar antibiyotik başlanmamalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Bilinen CRKP kolonizasyonu, sonraki enfeksiyonun en güçlü öngörücülerinden biridir. Septik şokta uygunsuz ampirik tedavi mortaliteyi artırdığı için kolonize suşun direnç mekanizmasına etkin ajan ampirik rejime katılır, kaynak kontrolü yapılır ve kültüre göre daraltılır.",
+      "aciklama_detay": "Rektal sürveyansta CRKP kolonizasyonu saptanan hastalar, özellikle yoğun bakım, abdominal cerrahi ve invaziv girişim sonrasında aynı suşla enfeksiyon için yüksek risk taşır. Septik şokta ilk saatteki ampirik tedavinin etkin olmaması mortaliteyi belirgin artırır; bu nedenle bilinen kolonizasyonu olan septik şok hastasında ampirik rejim kolonize suşu kapsamalıdır. KPC üreten suşlarda IDSA 2024 rehberi seftazidim-avibaktam, meropenem-vaborbaktam ve imipenem-relebaktamı tercih edilen ajanlar olarak sayar; polimiksinler ve tigesiklin daha az etkili ve daha toksik oldukları için tercih edilmez. Ampirik tedavinin ikinci ayağı kaynak kontrolüdür (anastomoz kaçağı, apse drenajı). Kültür ve duyarlılık sonuçlanınca tedavi daraltılır; CRKP üremezse ve başka etken bulunursa yeni ajan kesilerek gereksiz seçici baskıdan kaçınılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kolonizasyon her zaman enfeksiyon değildir, ancak septik şokta bilinen KPC suşu en olası etkenlerdendir; piperasilin-tazobaktam KPC'ye etkisizdir.",
+        "B": "DOGRU — Kolonize suşa etkin yeni BL/BLI ampirik rejime katılır, kaynak kontrolü sağlanır, kültüre göre daraltılır.",
+        "C": "YANLIS — KPC karbapenemleri hidrolize eder; meropenem tek başına güvenilir değildir.",
+        "D": "YANLIS — Kolistin ve tigesiklin yeni BL/BLI'lere göre daha az etkili ve daha toksiktir; IDSA 2024'e göre tercih edilmez.",
+        "E": "YANLIS — Septik şokta antibiyotik ilk saat içinde başlanmalıdır; sonuç beklemek mortaliteyi artırır."
+      },
+      "etiketler": [
+        "Ampirik Tedavi",
+        "Septik Şok",
+        "Rektal Kolonizasyon",
+        "KPC",
+        "Kaynak Kontrolü"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Tamma PD et al. Clin Infect Dis 2024 (IDSA 2024 Guidance on AMR Gram-Negative Infections); Surviving Sepsis Campaign 2021"
+    },
+    {
+      "id": "s12",
+      "metin": "Elli beş yaşında kadın hasta, üç gündür dizüri ve sık idrara çıkma yakınmasıyla başvuruyor. Ateş, yan ağrısı ya da sistemik bulgu yok; üriner kateteri yok, gebe değil. Kreatinin normal. İdrar kültüründe >10⁵ CFU/mL KPC üreten Klebsiella pneumoniae üredi.\n\nAntibiyogram:\nMeropenem: dirençli\nSeftazidim-avibaktam: duyarlı\nSiprofloksasin: dirençli\nTrimetoprim-sülfametoksazol: duyarlı\nGentamisin: duyarlı\n\nEn uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Seftazidim-avibaktam IV 7 gün",
+        "B": "Oral fosfomisin tek doz",
+        "C": "Kolistin IV",
+        "D": "Oral trimetoprim-sülfametoksazol",
+        "E": "Meropenem yüksek doz uzatılmış infüzyon"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Karbapeneme dirençli Enterobacterales'e bağlı komplike olmayan sistitte, duyarlıysa klasik oral ajanlar (TMP-SMX, kinolon, nitrofurantoin) ya da tek doz aminoglikozid tercih edilir; yeni BL/BLI'ler daha ağır enfeksiyonlara saklanır (IDSA 2024).",
+      "aciklama_detay": "Komplike olmayan sistitte ilaç idrarda çok yüksek konsantrasyona ulaştığı için, karbapenem direnci olan bir suşta bile duyarlılığı korunan eski ajanlar etkilidir. IDSA 2024 rehberi, CRE'ye bağlı sistitte duyarlılık varsa siprofloksasin, levofloksasin, trimetoprim-sülfametoksazol, nitrofurantoin ya da tek doz aminoglikozidi tercih edilen seçenekler olarak sayar; bu ajanlar kullanılamıyorsa seftazidim-avibaktam, meropenem-vaborbaktam, imipenem-relebaktam ya da sefiderokol gibi ajanlara geçilir. Bu hastada kinolon dirençli, TMP-SMX duyarlıdır; oral TMP-SMX yeterlidir ve geniş spektrumlu yeni ajanları direnç baskısından korur. Oral fosfomisin rehberde yalnızca E. coli sistiti için önerilir; Klebsiella pneumoniae'nin kromozomal fosA geni fosfomisini inaktive edebildiğinden bu türde güvenilir değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Etkili olur, ancak komplike olmayan sistitte duyarlı oral ajan varken IV yeni BL/BLI gereksiz seçici baskı yaratır.",
+        "B": "YANLIS — Oral fosfomisin rehberde yalnız E. coli sistiti için önerilir; K. pneumoniae'de kromozomal fosA nedeniyle güvenilir değildir.",
+        "C": "YANLIS — Nefrotoksik ve daha az etkili bir son çare ajanıdır; bu hastada yeri yoktur.",
+        "D": "DOGRU — Duyarlı ise TMP-SMX CRE sistitinde tercih edilen ajanlardandır; yeni ajanlar saklanır.",
+        "E": "YANLIS — Suş meropeneme dirençlidir; sistitte de etkinliğine güvenilmez ve yeni seçici baskı yaratır."
+      },
+      "etiketler": [
+        "Sistit",
+        "CRE",
+        "Antimikrobiyal Yönetim",
+        "TMP-SMX",
+        "Fosfomisin Sınırlılığı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Tamma PD et al. Clin Infect Dis 2024 (IDSA 2024 Guidance on AMR Gram-Negative Infections)"
+    },
+    {
+      "id": "s13",
+      "metin": "Kırk dokuz yaşında erkek hasta, akut miyeloid lösemi indüksiyonu sırasında febril nötropeni ve bakteriyemi gelişiyor. Kan kültüründe karbapeneme dirençli Klebsiella pneumoniae üredi; hızlı moleküler testte karbapenemaz geni olarak yalnızca blaOXA-48 saptandı (KPC, NDM, VIM, IMP negatif). Hemodinamisi stabil, santral kateteri çekildi.\n\nKesin tedavi için en uygun ajan hangisidir?",
+      "secenekler": {
+        "A": "Seftazidim-avibaktam",
+        "B": "Meropenem-vaborbaktam",
+        "C": "Aztreonam monoterapisi",
+        "D": "Ertapenem",
+        "E": "Tigesiklin monoterapisi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "OXA-48 benzeri karbapenemazlarda IDSA 2024'e göre tercih edilen ajan seftazidim-avibaktamdır: avibaktam OXA-48'i inhibe eder, vaborbaktam ve relebaktam ise etmez. Bakteriyemide tigesiklin serum düzeyi yetersizdir.",
+      "aciklama_detay": "Karbapenemaz tipini bilmek kesin tedaviyi belirler. OXA-48 benzeri enzimler sınıf D serin karbapenemazlardır. Avibaktam (diazabisiklooktan) sınıf A, C ve bazı sınıf D enzimleri, bu arada OXA-48'i de inhibe eder; bu nedenle IDSA 2024 rehberi OXA-48 benzeri karbapenemaz üreten Enterobacterales'te seftazidim-avibaktamı tercih edilen ajan, sefiderokolu alternatif olarak sayar. Vaborbaktam (boronik asit) ve relebaktam OXA-48'e karşı anlamlı inhibisyon sağlamaz; meropenem-vaborbaktam ve imipenem-relebaktam bu enzimde güvenilir değildir. Aztreonam OXA-48 tarafından zayıf hidrolize edilse de suşların çoğu eşlik eden ESBL/AmpC taşıdığı için tek başına güvenilmez. Tigesiklin geniş dağılım hacmi nedeniyle düşük serum düzeyi yapar; bakteriyemide monoterapi olarak uygun değildir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Avibaktam OXA-48'i inhibe eder; IDSA 2024'te OXA-48 benzeri karbapenemazda tercih edilen ajan.",
+        "B": "YANLIS — Vaborbaktam OXA-48'i inhibe etmez; meropenem-vaborbaktam bu enzimde güvenilir değildir.",
+        "C": "YANLIS — OXA-48 aztreonamı zayıf hidrolize etse de eşlik eden ESBL/AmpC nedeniyle aztreonam tek başına güvenilmez.",
+        "D": "YANLIS — Suş karbapeneme dirençlidir; ertapenem OXA-48'de en çok etkilenen karbapenemdir.",
+        "E": "YANLIS — Tigesiklin düşük serum düzeyi nedeniyle bakteriyemide monoterapi olarak uygun değildir."
+      },
+      "etiketler": [
+        "OXA-48",
+        "Seftazidim-avibaktam",
+        "Karbapenemaz Tiplendirmesi",
+        "Bakteriyemi",
+        "Kesin Tedavi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Tamma PD et al. Clin Infect Dis 2024 (IDSA 2024 Guidance on AMR Gram-Negative Infections)"
+    },
+    {
+      "id": "s14",
+      "metin": "Altmış bir yaşında kadın hasta, hemodiyaliz kateterine bağlı bakteriyemi nedeniyle izleniyor. Kan kültüründe KPC üreten Klebsiella pneumoniae üredi; suş seftazidim-avibaktama duyarlı, kolistine ve gentamisine duyarlı, tigesikline orta duyarlı. Kateter 1. günde çekildi. Seftazidim-avibaktam (böbrek fonksiyonuna göre doz ayarlı) monoterapisinin 3. gününde ateşi düştü, hemodinamisi stabil; ekokardiyografide vejetasyon yok, metastatik odak bulgusu yok.\n\nTedavinin sürdürülmesi için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Direnç gelişimini önlemek için kolistin eklenmelidir.",
+        "B": "Sinerji için gentamisin eklenmeli ve tedavi boyunca sürdürülmelidir.",
+        "C": "Oral tedaviye geçmek için tigesikline geçilmelidir.",
+        "D": "Ateş düştüğü için antibiyotik 3. günde kesilebilir.",
+        "E": "Seftazidim-avibaktam monoterapisi sürdürülmeli; kaynak kontrolü sağlandığı ve yanıt alındığı için ek ajan eklenmez, süre klinik seyre göre belirlenir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Duyarlı olduğu bir yeni BL/BLI ile tedavi edilen CRE enfeksiyonunda rutin kombinasyon önerilmez (IDSA 2024); kombinasyon toksisiteyi artırır, sonucu iyileştirmez. Kaynak kontrolü ve klinik yanıt olan hastada monoterapi sürdürülür.",
+      "aciklama_detay": "Eski dönemde CRE enfeksiyonlarında polimiksin ya da tigesiklin temelli kombinasyonlar, tek başına zayıf olan bu ajanları güçlendirmek için kullanılıyordu. Seftazidim-avibaktam, meropenem-vaborbaktam ve imipenem-relebaktam gibi yeni ajanlar in vitro etkin olduğunda IDSA 2024 rehberi rutin kombinasyon tedavisini önermez: gözlemsel veriler ek aminoglikozid ya da polimiksinin mortaliteyi azaltmadığını, nefrotoksisiteyi ise artırdığını göstermiştir. Bu hastada kaynak (kateter) çıkarılmış, endokardit ve metastatik odak yoktur, klinik yanıt alınmıştır; seftazidim-avibaktam monoterapisi sürdürülür ve toplam süre kaynak kontrolü ve klinik seyir göz önüne alınarak belirlenir. Böbrek fonksiyonuna göre doz ayarı ve diyaliz sonrası doz zamanlaması unutulmamalıdır. Tigesiklin düşük serum düzeyi nedeniyle bakteriyemide uygun değildir ve oral formu yoktur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yeni BL/BLI'ye duyarlı suşta kolistin eklenmesi sonucu iyileştirmez; nefrotoksisite ve nörotoksisite riski ekler (diyaliz hastasında rezidüel böbrek fonksiyonu da korunmalıdır).",
+        "B": "YANLIS — Rutin aminoglikozid eklenmesi önerilmez; ek yarar göstermeden nefro- ve ototoksisite riski taşır.",
+        "C": "YANLIS — Tigesiklin bakteriyemide düşük serum düzeyi yapar ve oral formu yoktur.",
+        "D": "YANLIS — Üç günlük tedavi bakteriyemi için yetersizdir; ateşin düşmesi tedavinin tamamlandığı anlamına gelmez.",
+        "E": "DOGRU — Duyarlı yeni BL/BLI ile monoterapi; kaynak kontrolü ve klinik yanıt varsa kombinasyon gereksizdir."
+      },
+      "etiketler": [
+        "Monoterapi vs Kombinasyon",
+        "Seftazidim-avibaktam",
+        "Kateter İlişkili Bakteriyemi",
+        "Kaynak Kontrolü",
+        "Antimikrobiyal Yönetim"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Tamma PD et al. Clin Infect Dis 2024 (IDSA 2024 Guidance on AMR Gram-Negative Infections); Paul M et al. Clin Microbiol Infect 2022 (ESCMID)"
+    },
+    {
+      "id": "s15",
+      "metin": "Otuz iki yataklı bir genel yoğun bakım ünitesinde, başka bir hastaneden 5 gün önce transfer edilen ve ateşi olmayan bir hastanın kabul sırasında alınan rektal sürveyans sürüntüsünde KPC üreten CRKP saptanıyor. Hasta açık serviste diğer hastalarla aynı alanda yatıyor. Klinik enfeksiyon bulgusu yok.\n\nEnfeksiyon kontrol ekibinin ilk olarak uygulaması gereken yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Taşıyıcıya oral kolistin + gentamisin ile bağırsak dekolonizasyonu yapılmalıdır.",
+        "B": "Taşıyıcıya CRKP'yi eradike etmek için 7 gün seftazidim-avibaktam verilmelidir.",
+        "C": "Hasta tek kişilik odaya alınmalı (olmazsa kohortlanmalı), temas izolasyonu ve el hijyeni uygulanmalı, aynı alanda yatan temaslılara rektal sürveyans taraması yapılmalı ve çevre temizliği güçlendirilmelidir.",
+        "D": "Klinik enfeksiyon olmadığı için herhangi bir önlem gerekmez; yalnızca hasta izlenmelidir.",
+        "E": "Yoğun bakım ünitesi yeni hasta kabulüne hemen kapatılmalı ve tüm hastalara ampirik antibiyotik başlanmalıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "CRE taşıyıcılığında çekirdek önlem paketi: izolasyon/kohortlama, temas önlemleri, el hijyeni, temaslı taraması ve çevre temizliği (WHO 2017). Rutin antibiyotikle dekolonizasyon önerilmez (ESCMID-EUCIC 2019).",
+      "aciklama_detay": "CRKP'nin hastane içi yayılımı büyük ölçüde sağlık çalışanlarının elleri, ortak ekipman ve çevre yüzeyleri aracılığıyla, kolonize hastalardan olur; taşıyıcıların çoğunda klinik enfeksiyon yoktur ve yalnızca sürveyansla saptanırlar. WHO 2017 CRE önleme rehberi çok bileşenli bir paket önerir: hastanın tek kişilik odaya alınması ya da kohortlanması, temas önlemleri (eldiven, önlük), el hijyeni uyumunun izlenmesi, aktif sürveyans (temaslıların ve riskli kabullerin rektal taraması) ve çevre temizliğinin güçlendirilmesi. Taşıyıcılara bağırsak dekolonizasyonu için rutin antibiyotik verilmesi önerilmez; kalıcı başarı gösterilmemiştir ve direnç seçilimi riski vardır (ESCMID-EUCIC 2019). Klinik enfeksiyonu olmayan taşıyıcıya sistemik antibiyotik verilmez. Ünite kapatılması, önlemlere rağmen süren salgın gibi istisnai durumlar için düşünülür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Rutin dekolonizasyon önerilmez; kalıcı etkisi gösterilmemiştir ve direnç seçilimi riski taşır.",
+        "B": "YANLIS — Enfeksiyonu olmayan taşıyıcıya sistemik antibiyotik verilmez; kolonizasyonu kalıcı olarak ortadan kaldırmaz, direnç seçimini hızlandırır.",
+        "C": "DOGRU — İzolasyon/kohortlama, temas önlemleri, el hijyeni, temaslı taraması ve çevre temizliği CRE kontrolünün çekirdeğidir.",
+        "D": "YANLIS — Taşıyıcı, yayılımın ana kaynağıdır; klinik enfeksiyon olmaması önlem gerekmediği anlamına gelmez.",
+        "E": "YANLIS — Tek taşıyıcı için ünite kapatma ve toplu ampirik antibiyotik orantısızdır; ampirik antibiyotik direnç baskısını artırır."
+      },
+      "etiketler": [
+        "Enfeksiyon Kontrolü",
+        "Temas İzolasyonu",
+        "Aktif Sürveyans",
+        "Dekolonizasyon",
+        "Kohortlama"
+      ],
+      "zorluk": "orta",
+      "kaynak": "WHO 2017 Guidelines for the prevention and control of carbapenem-resistant Enterobacteriaceae, Acinetobacter baumannii and Pseudomonas aeruginosa; Tacconelli E et al. Clin Microbiol Infect 2019 (ESCMID-EUCIC dekolonizasyon kılavuzu)"
     }
   ]
 }
