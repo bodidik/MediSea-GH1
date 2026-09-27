@@ -1,0 +1,368 @@
+{
+  "id": "quiz-endo-temd-obezite-001",
+  "baslik": "TEMD Obezite — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "temd-obezite",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Yirmi dokuz yaşında erkek, profesyonel güreşçi; işyeri sağlık taramasında beden kitle indeksi 31,2 kg/m² bulunup 'evre 1 obezite' tanısıyla yönlendirilmiş. Yakınması yok.\n\nBulgular:\nBel çevresi: 88 cm\nVücut yağ oranı (biyoelektrik impedans): %13\nKan basıncı: 118/74 mmHg\nAçlık glukozu, lipid profili ve ALT: normal\n\nBu hasta için en doğru değerlendirme hangisidir?",
+      "secenekler": {
+        "A": "BKİ ≥30 kg/m² olduğundan evre 1 obezitedir ve farmakoterapi başlanmalıdır",
+        "B": "Bel çevresi Türkiye kesim noktasının üzerindedir; abdominal obezite vardır",
+        "C": "Metabolik açıdan sağlıklı obezitedir; yalnızca yıllık izlem yeterlidir",
+        "D": "Obezite yoktur; yüksek BKİ kas kitlesini yansıtır",
+        "E": "Tanıda bel çevresi değil BKİ esas alındığından yaşam tarzı programına alınmalıdır"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "BKİ yağı kastan ayırt etmez; kas kitlesi yüksek sporcuda evre 1 obeziteye karşılık gelen BKİ'ye rağmen vücut yağ oranı normal olabilir. Bel çevresi (erkekte Türkiye kesim noktası 100 cm) ve yağ oranı normal olan bu hastada obezite yoktur.",
+      "aciklama_detay": "TEMD, BKİ'nin farklı cinsiyet, yaş ve vücut tipi için aynı kesim noktalarını kullanmasını önemli bir dezavantaj olarak sayar ve üç tipik yanılgı örneği verir: kas kitlesi yüksek sporcuda BKİ obezite aralığında olup yağ oranı normal olabilir; zayıf, çelimsiz bir kişide visseral yağ fazlayken BKİ normal görünebilir; yaşlıda boy kısaldığı için BKİ olduğundan yüksek çıkar. Bel çevresi yaş, cinsiyet ve kas kitlesinden etkilenmez ve abdominal obeziteyi göstermede BKİ'den daha duyarlıdır; tanısal değeri BKİ 25–35 kg/m² aralığında geçerlidir. Türkiye için kabul edilen kesim noktaları kadında 90 cm, erkekte 100 cm'dir. Bu hastada bel çevresi 88 cm, yağ oranı %13 ve metabolik parametreler normaldir; dolayısıyla obezite tanısı ve tedavisi gerekmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — BKİ bu hastada kas kitlesini yansıtıyor; obezite yok, ilaç endikasyonu da yok.",
+        "B": "YANLIS — Türkiye'de erkek için kesim noktası 100 cm; 88 cm normaldir.",
+        "C": "YANLIS — Yağ oranı normal; 'metabolik sağlıklı obezite' tanımı için önce obezite olmalıdır.",
+        "D": "DOGRU — Sporcuda BKİ yanıltır; yağ oranı ve bel çevresi obeziteyi dışlar.",
+        "E": "YANLIS — BKİ 25–35 aralığında bel çevresi tanıya katkı sağlar; tek başına BKİ yanıltıcıdır."
+      },
+      "etiketler": ["beden kitle indeksi", "bel çevresi", "obezite tanısı"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 1"
+    },
+    {
+      "id": "s2",
+      "metin": "Endokrinoloji konseyinde bariatrik-metabolik cerrahi için beş hasta değerlendiriliyor. Tümü en az 6 aydır deneyimli bir ekip tarafından yaşam tarzı ve farmakolojik tedaviyle izleniyor ve yeterli kilo kaybı sağlayamamış.\n\nTEMD Obezite 2024 kılavuzuna göre hangisi cerrahi için uygun adaydır?",
+      "secenekler": {
+        "A": "BKİ 36 kg/m²; tip 2 diyabet, hipertansiyon ve orta şiddette OSAS; Edmonton evre 2",
+        "B": "BKİ 38 kg/m²; komorbiditesi yok, günlük yaşamı kısıtlanmamış; Edmonton evre 0",
+        "C": "BKİ 32 kg/m²; metforminle HbA1c %6,6 olan tip 2 diyabet; Edmonton evre 2",
+        "D": "BKİ 28 kg/m²; üç ilaca rağmen HbA1c %9,4, geçirilmiş miyokard infarktüsü; Edmonton evre 3",
+        "E": "BKİ 44 kg/m²; Child-Pugh C siroz ve kanamış özofagus varisleri"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "TEMD'e göre cerrahi adayları: BKİ ≥40; BKİ 35–39,9 ve Edmonton evre ≥2; BKİ 30–34,9 ve başka yöntemlerle kontrol edilemeyen tip 2 diyabetle Edmonton evre ≥3. BKİ <30'da cerrahi yapılmaz; Child B–C siroz kontrendikasyondur.",
+      "aciklama_detay": "TEMD, cerrahi kararında BKİ'nin tek ölçüt olmamasını ve Edmonton Obezite Evrelemesinin (tıbbi, mental ve işlevsel eksenlerde 0–4) yol gösterici kullanılmasını ister. Karar öncesinde deneyimli ekip tarafından en az 6 ay yaşam tarzı ve farmakolojik tedavi uygulanmış olmalıdır. Cerrahi düşünülebilecek gruplar: BKİ ≥40 kg/m²; BKİ 35–39,9 kg/m² ve Edmonton evre 2 ve üzeri; BKİ 30–34,9 kg/m² olup kan şekeri başka yöntemlerle düzenlenemeyen tip 2 diyabetli ve Edmonton evre 3 ve üzeri. BKİ 30 kg/m² altındaki olgulara bariatrik-metabolik cerrahi uygulanmaz. Kontrendikasyonlar arasında dekompanse kalp ve akciğer hastalığı, ileri evre siroz (Child B veya C), ciddi koagülopati, kontrol altında olmayan majör depresyon ya da psikoz, madde ve alkol bağımlılığı, işlemi anlamama ve gerçekçi olmayan beklentiler sayılır. A seçeneğindeki hasta BKİ 35–39,9 aralığında ve tedavi gerektiren yerleşik komorbiditelerle evre 2'dedir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — BKİ 35–39,9 ve Edmonton evre 2: cerrahi düşünülebilir.",
+        "B": "YANLIS — BKİ 35–39,9 aralığında evre 0 hastada cerrahi ölçütü karşılanmaz.",
+        "C": "YANLIS — BKİ 30–34,9'da diyabetin kontrol edilemiyor olması ve evre ≥3 gerekir; bu hasta kontrollü.",
+        "D": "YANLIS — BKİ 30 kg/m² altında bariatrik-metabolik cerrahi uygulanmaz.",
+        "E": "YANLIS — BKİ ≥40 olsa da Child C siroz cerrahi kontrendikasyonudur."
+      },
+      "etiketler": ["bariatrik cerrahi endikasyonu", "Edmonton evrelemesi", "kontrendikasyon"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 5 ve 6.5"
+    },
+    {
+      "id": "s3",
+      "metin": "Kırk yedi yaşında kadın, beden kitle indeksi 34 kg/m², hipertansiyon ve dislipidemisi var. Yapılandırılmış yaşam tarzı programına ek olarak liraglutid başlanmış; haftalık titrasyonla 5. haftada 3,0 mg/gün idame dozuna ulaşılmış, yan etki olmadan kullanıyor. Tedavinin 4. ayının sonunda (idame dozunun 3. ayı) ağırlığı 92 kg'dan 89,5 kg'a inmiş. Diyete uyumu iyi.\n\nTEMD kılavuzuna göre en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kilo kaybı sürdüğü için liraglutide aynı dozla en az 1 yıl devam etmek",
+        "B": "Yanıtı artırmak için liraglutid dozunu 4,5 mg/gün'e çıkarmak",
+        "C": "Liraglutidi kesip tedavi seçeneklerini yeniden değerlendirmek",
+        "D": "Liraglutide orlistat ekleyerek kombinasyon tedavisine geçmek",
+        "E": "Yanıt 6. ayda değerlendirildiği için 6. aya kadar aynı dozla beklemek"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "TEMD'e göre hedef doza ulaşıldıktan sonraki 3 ayda %5 ve üzerinde kilo kaybı sağlanamazsa tedavi sonlandırılır. Bu hastanın kaybı yaklaşık %2,7'dir.",
+      "aciklama_detay": "Farmakoterapinin sürdürülüp sürdürülmeyeceği erken yanıta göre belirlenir: TEMD, hedef doza ulaşıldıktan sonraki 3 aylık sürede %5 ve üzerinde kilo kaybı sağlanamayan olgularda tedavinin sonlandırılmasını önerir. Bu hastada 2,5 kg kayıp, başlangıç ağırlığının yaklaşık %2,7'sidir. Erken yanıtsızlık uzun dönem yanıtsızlığın güçlü öngördürücüsüdür; yanıt vermeyen ilacı sürdürmek hastayı maliyet ve yan etkiye gereksiz yere maruz bırakır. Yanıt veren hastada ise tedavinin en az 1 yıl sürdürülmesi önerilir; yıllık %10'luk kayıp varsa devam edilir. Liraglutidin obezite dozu 3,0 mg/gün'dür, üzerine çıkılmaz. Kesildikten sonra yaşam tarzı programı sürdürülerek farklı bir ajan ya da uygun ise başka tedavi seçenekleri değerlendirilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bir yıl sürdürme önerisi yanıt veren hasta içindir; bu hasta yanıtsız.",
+        "B": "YANLIS — Liraglutidin obezitedeki onaylı en yüksek dozu 3,0 mg/gün'dür.",
+        "C": "DOGRU — Hedef dozda 3 ayda <%5 kayıp: ilaç kesilir, tedavi yeniden planlanır.",
+        "D": "YANLIS — Yanıtsız ilaca ikinci ajan eklemek kılavuzun durdurma kuralını atlar.",
+        "E": "YANLIS — Değerlendirme hedef dozda 3. aydadır; beklemek yanıtsız tedaviyi uzatır."
+      },
+      "etiketler": ["obezite farmakoterapisi", "liraglutid", "yanıt değerlendirmesi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 6.4"
+    },
+    {
+      "id": "s4",
+      "metin": "Elli bir yaşında kadın, Hashimoto tiroiditine bağlı hipotiroidi nedeniyle 3 yıldır levotiroksin 100 µg ile ötiroid (son TSH 1,8 mIU/L). Beden kitle indeksi 32 kg/m². Üç ay önce orlistat 120 mg günde üç kez başlanmış; hasta sabah ilaçlarının hepsini kahvaltıda birlikte alıyor. Son haftalarda halsizlik ve üşüme tanımlıyor.\n\nTetkikler:\nTSH: 7,9 mIU/L\nSerbest T4: 0,82 ng/dL (N: 0,9–1,7)\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Levotiroksin dozunu 150 µg'a çıkarıp ilaçları aynı düzende almayı sürdürmek",
+        "B": "Orlistatı kesip yerine semaglutid başlamak",
+        "C": "Hashimoto progresyonu düşünüp tiroid otoantikorlarını yeniden ölçmek",
+        "D": "Levotiroksini akşam yemeğinde orlistatla birlikte almaya geçmek",
+        "E": "İki ilaç arasına en az 4 saat koyup 6–8 hafta sonra TSH bakmak"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Orlistat levotiroksin emilimini azaltır; TEMD iki ilaç arasına 4 saat konmasını önerir. Levotiroksin aç karnına ayrı alınmaya başlandıktan 6–8 hafta sonra TSH yeniden değerlendirilir; doz ancak o zaman gerekirse değiştirilir.",
+      "aciklama_detay": "Orlistat gastrointestinal lipaz inhibitörüdür ve yağ emilimini azaltırken yağda çözünen vitaminlerin ve bazı ilaçların emilimini de değiştirir. TEMD, levotiroksinle birlikte kullanımda araya 4 saatlik ara konmasını; warfarin, antiepileptikler ve siklosporin gibi ilaçların emiliminin de değişebileceğini belirtir. Bu hastada orlistat başlandıktan sonra, daha önce stabil olan TSH yükselmiştir ve levotiroksin yemekle birlikte alınmaktadır; yani iki ayrı emilim sorunu vardır. Önce alım düzeni düzeltilir: levotiroksin sabah aç karnına, kahvaltıdan 30–60 dakika önce; orlistat yağ içeren öğünlerle ve levotiroksinden en az 4 saat sonra. Levotiroksinin kararlı duruma ulaşması 6–8 hafta sürdüğü için TSH o zaman ölçülür. Uzun süreli orlistat kullanımında yağda çözünen vitamin düzeyleri izlenip eksiklik takviye edilmelidir; orlistat gebelikte kontrendikedir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sorun doz değil emilimdir; düzen düzeltildiğinde yüksek doz aşırı replasmana yol açar.",
+        "B": "YANLIS — Etkileşim ilaçların zamanlamasıyla çözülebilir; ilacı değiştirmek gerekli değildir.",
+        "C": "YANLIS — TSH artışı orlistat başlanmasıyla zamansal olarak ilişkili; antikor düzeyi tedaviyi değiştirmez.",
+        "D": "YANLIS — Birlikte almak etkileşimi en üst düzeye çıkarır; levotiroksin aç karnına alınmalıdır.",
+        "E": "DOGRU — 4 saat ara ve 6–8 hafta sonra TSH kontrolü."
+      },
+      "etiketler": ["orlistat", "ilaç etkileşimi", "levotiroksin"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 6.4"
+    },
+    {
+      "id": "s5",
+      "metin": "Otuz sekiz yaşında kadın, beden kitle indeksi 33 kg/m², hipertansiyon ve dislipidemisi var. Jüvenil miyoklonik epilepsi nedeniyle levetirasetam kullanıyor; iki yıl önce majör depresif epizot geçirmiş, halen sertralinle remisyonda. Diyabet, pankreatit, glokom ya da tiroid kanseri öyküsü yok. Altı aylık yapılandırılmış yaşam tarzı programına rağmen yalnızca %2 kilo verebilmiş; ilaç tedavisi planlanıyor.\n\nTEMD kılavuzuna göre bu hastada hangi ajan kullanılmamalıdır?",
+      "secenekler": {
+        "A": "Orlistat",
+        "B": "Naltrekson/bupropion",
+        "C": "Liraglutid",
+        "D": "Semaglutid",
+        "E": "Tirzepatid"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Bupropion nöbet eşiğini düşürür; TEMD epilepsi hastalarına naltrekson/bupropion verilmemesini, yoğun depresyon tedavisi alan ya da depresyon eğilimi olanlarda da önerilmemesini söyler. Bu hastada iki neden birden var.",
+      "aciklama_detay": "Obezite ilacı seçimi büyük ölçüde komorbiditelerin elediği ajanlara göre yapılır. TEMD'e göre epilepsiyle izlenen hastalara ve alkolü bırakma sürecinde olanlara naltrekson/bupropion verilmemelidir; bupropion doza bağımlı olarak nöbet eşiğini düşürür. Depresyonla izlenen hastalarda orlistat, liraglutid, semaglutid ve düşük dozda fentermin/topiramat kullanılabilir; naltrekson/bupropion ve setmelanotid ise yoğun depresyon tedavisi alanlarda ve depresyon eğilimi olanlarda önerilmez. Ayrıca bupropion güçlü bir CYP2D6 inhibitörüdür ve bazı antidepresanlarla etkileşir. Kilo kaybı tedavisi alan tüm hastalar duygulanım bozukluğu, depresyon ve intihar düşüncesi açısından izlenmelidir. Glokom fentermin/topiramatı, geçirilmiş pankreatit liraglutid, semaglutid ve tirzepatidi eler; bu hastada ikisi de yok.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Orlistat epilepsi ve depresyonda kullanılabilir; antiepileptik emilimi açısından izlenir.",
+        "B": "DOGRU — Epilepsi ve depresyon öyküsü naltrekson/bupropionu eler.",
+        "C": "YANLIS — Liraglutid depresyonda kullanılabilir; pankreatit ya da medüller kanser öyküsü yok.",
+        "D": "YANLIS — Semaglutid bu hastada kontrendike değildir.",
+        "E": "YANLIS — Tirzepatidi eleyen durum (pankreatit, medüller tiroid kanseri) bu hastada yok."
+      },
+      "etiketler": ["obezite farmakoterapisi", "naltrekson/bupropion", "komorbiditeye göre seçim"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 6.4"
+    },
+    {
+      "id": "s6",
+      "metin": "Elli beş yaşında erkek, beden kitle indeksi 35 kg/m², hipertansiyon ve obstrüktif uyku apnesi var; diyabeti yok. Üç yıl önce hipertrigliseridemiye bağlı akut pankreatit geçirmiş; trigliseridi şimdi fenofibratla 180 mg/dL. Dar açılı glokom nedeniyle göz damlası kullanıyor. Epilepsi ya da depresyon öyküsü yok; böbrek ve karaciğer işlevleri normal. Yaşam tarzı değişikliğine rağmen yeterli kilo kaybı sağlanamamış.\n\nTEMD kılavuzuna göre seçeneklerden hangisi bu hasta için en uygun ajandır?",
+      "secenekler": {
+        "A": "Semaglutid 2,4 mg/hafta",
+        "B": "Liraglutid 3,0 mg/gün",
+        "C": "Fentermin/topiramat",
+        "D": "Tirzepatid",
+        "E": "Orlistat"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Geçirilmiş pankreatit liraglutid, semaglutid ve tirzepatidi; glokom ya da glokom eğilimi fentermin/topiramatı eler. Seçenekler arasında bu hastada kullanılabilecek ajan orlistattır.",
+      "aciklama_detay": "TEMD, geçirilmiş pankreatiti olan hastalarda liraglutid, semaglutid ve tirzepatidin kullanılmamasını önerir; kılavuz bu konuda pankreatitin nedenine göre ayrım yapmaz. Glokomu olan ya da buna eğilimi bulunan hastalarda fentermin/topiramat göz içi basıncını artırabildiği için kullanılmamalıdır; topiramat özellikle akut açı kapanması glokomuyla ilişkilidir. Orlistat bu iki durumdan etkilenmez. Orlistat kullanımında yağda çözünen vitaminler izlenir, levotiroksin, warfarin, antiepileptikler ve siklosporinle etkileşime dikkat edilir; okzalat nefropatisinde kullanılmaz. Naltrekson/bupropion da bu hastada teorik olarak seçenek olabilirdi (epilepsi ve depresyon yok), ancak seçenekler arasında değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Geçirilmiş pankreatitte semaglutid kullanılmamalıdır.",
+        "B": "YANLIS — Geçirilmiş pankreatit liraglutid için kontrendikasyondur.",
+        "C": "YANLIS — Fentermin/topiramat göz içi basıncını artırır; glokomda kullanılmaz.",
+        "D": "YANLIS — Tirzepatid de geçirilmiş pankreatitte kullanılmaz.",
+        "E": "DOGRU — Pankreatit ve glokom orlistatı elemez."
+      },
+      "etiketler": ["obezite farmakoterapisi", "kontrendikasyon", "orlistat"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 6.4"
+    },
+    {
+      "id": "s7",
+      "metin": "Kırk dört yaşında kadın; 5 yıl önce beden kitle indeksi 46 kg/m² iken Roux-en-Y gastrik bypass yapılmış, ağırlığı 128 kg'dan en düşük 82 kg'a inmiş. Son 2 yılda diyet ve egzersiz önerilerine uymasına rağmen 97 kg'a çıkmış. Cerrahi ekip revizyon önermiyor. Glokom, pankreatit ya da medüller tiroid kanseri öyküsü yok.\n\nTEMD kılavuzuna göre en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kaybedilen kilonun yarısı geri alınmadıkça farmakoterapi önerilmez",
+        "B": "Orlistat başlamak; bariatrik cerrahi sonrası en güçlü kanıta sahip ajandır",
+        "C": "Monogenik obezite olasılığı nedeniyle setmelanotid başlamak",
+        "D": "Liraglutid, semaglutid ya da fentermin/topiramat başlamak",
+        "E": "Bariatrik cerrahi sonrası farmakoterapi kontrendikedir; yalnızca diyet önerilir"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Kaybedilen kilonun %25'inden fazlasını geri alan, yaşam tarzıyla yanıt alınamayan ve yeni cerrahi düşünülmeyen hastada TEMD liraglutid, semaglutid ya da fentermin/topiramat önerir. Bu hasta kaybettiği 46 kg'ın 15 kg'ını (%33) geri almıştır.",
+      "aciklama_detay": "Bariatrik cerrahi sonrası kilo geri alımı sıktır ve yoğun yaşam tarzı önerilerine uyum yaşam boyu sürmelidir. TEMD, kaybedilen kilonun %25'inden fazlasını geri alan olgularda, özellikle yaşam tarzı değişikliklerine yanıt alınamıyorsa ve yeni bir cerrahi girişim düşünülmüyorsa liraglutid, semaglutid ve fentermin/topiramatın önerilebileceğini belirtir; diğer ilaçların bu grupta etkinliği ve güvenliği tam değerlendirilmemiştir. Orlistatın bariatrik cerrahi sonrasında kullanımına ilişkin yeterli kanıt yoktur ve RYGB sonrası zaten bozulmuş yağ ve yağda çözünen vitamin emilimini daha da azaltır. Ülkemizde fentermin/topiramat bulunmadığından pratikte GLP-1 reseptör agonistleri öne çıkar. Kilo geri alımında anastomoz genişlemesi, gastro-gastrik fistül ve yeme davranışı bozuklukları da gözden geçirilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — TEMD eşiği kaybedilen kilonun %25'inden fazlasıdır; bu hasta %33 geri almıştır.",
+        "B": "YANLIS — Orlistatın bariatrik cerrahi sonrası kullanımına ilişkin yeterli kanıt yoktur.",
+        "C": "YANLIS — Setmelanotid yalnızca genetik olarak kanıtlanmış belirli monogenik obezitelerde kullanılır.",
+        "D": "DOGRU — %25'i aşan geri alımda bu üç ajan önerilebilir.",
+        "E": "YANLIS — Cerrahi sonrası farmakoterapi kontrendike değildir; seçilmiş ajanlar önerilir."
+      },
+      "etiketler": ["bariatrik cerrahi sonrası", "kilo geri alımı", "GLP-1 reseptör agonisti"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 6.4"
+    },
+    {
+      "id": "s8",
+      "metin": "Yirmi yaşında erkek, 1 yaşından beri ağır obezite ve doyumsuz iştahla izleniyor. Yenidoğan döneminde hipoglisemi ve uzamış sarılık nedeniyle incelenip sekonder adrenal yetmezlik tanısı almış, hidrokortizon kullanıyor. Açık tenli, saçları kızıl. Beden kitle indeksi 49 kg/m². Genetik incelemede POMC geninde homozigot patojenik varyant saptanmış. Bariatrik cerrahi için başvuruyor.\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Setmelanotid (MC4R agonisti) başlamak ve cerrahi kararını bu tedaviye yanıta göre yeniden değerlendirmek",
+        "B": "Rekombinant leptin (metreleptin) başlamak",
+        "C": "Monogenik obezitede cerrahi yanıt poligenik obeziteyle aynı olduğundan hemen Roux-en-Y gastrik bypass planlamak",
+        "D": "Setmelanotid yalnızca MC4R heterozigot mutasyonunda etkili olduğundan farmakoterapi seçeneği bulunmadığını söylemek",
+        "E": "Obezite glukokortikoide bağlı olduğundan yalnızca hidrokortizon dozunu azaltmak"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Erken başlangıçlı ağır obezite, hiperfaji, sekonder adrenal yetmezlik ve kızıl saç POMC eksikliğidir. Setmelanotid, genetik testle kanıtlanmış POMC, PCSK1 ya da LEPR eksikliğinde onaylı MC4R agonistidir; genetik obezite bariatrik cerrahiden önce düşünülmelidir.",
+      "aciklama_detay": "POMC eksikliğinde α-MSH üretilemediği için hipotalamik MC4R uyarılamaz (hiperfaji ve erken ağır obezite), ACTH üretilemediği için sekonder adrenal yetmezlik gelişir ve melanokortin-1 reseptörü uyarılmadığından açık ten ve kızıl saç görülür. Reseptör sağlam olduğundan eksik ligandın yerine geçen MC4R agonisti setmelanotid etkilidir; 2020'de ABD'de genetik testle kanıtlanmış POMC, PCSK1 ya da LEPR eksikliği olan 6 yaş ve üzeri hastalarda onay almıştır. TEMD, setmelanotidin genetik tanı olmadan verilmemesini ve bariatrik cerrahiden önce genetik obezitenin düşünülmesini vurgular. Erişkinde başlangıç dozu 2 mg/gün cilt altı, gerekirse 3 mg/gün'dür; sık yan etkiler enjeksiyon yeri reaksiyonu, hiperpigmentasyon, bulantı ve baş ağrısıdır. Hidrokortizon replasmanı fizyolojik dozda sürmelidir. En sık monogenik neden MC4R mutasyonlarıdır, ancak reseptör işlevi kaybında agonistin yeri sınırlıdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Genetik olarak kanıtlanmış POMC eksikliği setmelanotid endikasyonudur.",
+        "B": "YANLIS — Metreleptin konjenital leptin eksikliğinde etkilidir; POMC eksikliğinde leptin zaten yüksektir.",
+        "C": "YANLIS — Genetik obezitede cerrahi sonuçlar sınırlı olabilir; önce hedefe yönelik tedavi düşünülür.",
+        "D": "YANLIS — Onay tam tersine POMC, PCSK1 ve LEPR eksikliği içindir.",
+        "E": "YANLIS — Hidrokortizon replasman dozundadır ve adrenal yetmezlik nedeniyle zorunludur; obezitenin nedeni değildir."
+      },
+      "etiketler": ["monogenik obezite", "POMC eksikliği", "setmelanotid"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 3 ve 6.4"
+    },
+    {
+      "id": "s9",
+      "metin": "Otuz sekiz yaşında erkek, beden kitle indeksi 41 kg/m², tip 2 diyabetli. Libido azalması ve yorgunluk tanımlıyor; sakal tıraşı sıklığı değişmemiş, testis hacimleri normal. Dış merkezde saat 16.00'da alınan tek ölçümde total testosteron 238 ng/dL (N: 264–916) bulunmuş ve testosteron jeli önerilmiş.\n\nTEMD kılavuzuna göre en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Testosteron jelini başlatıp 3 ay sonra klinik yanıtı değerlendirmek",
+        "B": "Tek düşük değer yeterli olduğundan doğrudan hipofiz MR'ı istemek",
+        "C": "İki ayrı sabah ölçümü ve SHBG ile tanıyı doğrulamak",
+        "D": "Hipogonadotropik hipogonadizm kabul edip klomifen sitrat başlamak",
+        "E": "Obez erkekte testosteron düşüklüğü fizyolojik sayıldığından değerlendirme yapmamak"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Hipogonadizm tanısı, testosteronun iki farklı günde sabah erken saatte ölçülüp düşük bulunmasına dayanır. Obezitede SHBG düştüğü için total testosteron yalancı düşük görünebilir; SHBG ile serbest testosteron değerlendirilir.",
+      "aciklama_detay": "Testosteron diürnal ritimle sabah en yüksektir; öğleden sonra alınan tek örnek düşük sonuç vermeye eğilimlidir. TEMD, hipogonadizm tanısı için testosteronun iki farklı günde sabah erken saatlerde ölçülüp düşük bulunmasını ister. Obeziteli erkeklerde bel çevresi arttıkça total testosteron, serbest testosteron ve SHBG düşer; SHBG azalması total testosteronu serbest fraksiyon normalken düşük gösterebilir, bu yüzden SHBG ile hesaplanmış ya da ölçülmüş serbest testosteron değerlendirilmelidir. Kilo kaybı (yaşam tarzı, ilaç ya da cerrahi) testosteronu belirgin artırır ve artış kaybedilen kiloyla ilişkilidir. Testosteron replasmanı obeziteli erkeğe rutin önerilmez, semptomatik ve doğrulanmış hipogonadizmde olgu bazında değerlendirilir; androjen düzeyi normal olan obezite hastasına yağ kitlesini azaltmak için testosteron vermek son derece risklidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tanı doğrulanmadan replasman başlanmaz; obezitede rutin replasman önerilmez.",
+        "B": "YANLIS — Tanı doğrulanmadan ve gonadotropinler bilinmeden görüntüleme istenmez.",
+        "C": "DOGRU — İki ayrı sabah ölçümü ve SHBG ile doğrulama.",
+        "D": "YANLIS — Tanı kesinleşmemiş, LH ve FSH ölçülmemiş; ilaç başlamak için erkendir.",
+        "E": "YANLIS — Semptomatik hastada değerlendirme gerekir; kilo kaybı da testosteronu artırır."
+      },
+      "etiketler": ["erkek hipogonadizmi", "obezite komorbiditesi", "testosteron ölçümü"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 4"
+    },
+    {
+      "id": "s10",
+      "metin": "Otuz iki yaşında kadın, beden kitle indeksi 38 kg/m². Haftada 2–3 akşam kısa sürede çok miktarda yediğini ve duramadığını, aç olmadan ve gizlice yediğini, ardından yoğun suçluluk duyduğunu anlatıyor; bu durum 8 aydır sürüyor. Kendini kusturma, laksatif ya da diüretik kullanımı, aşırı egzersiz ya da aç kalma yok. Gece uykudan uyanıp yeme tanımlamıyor, kahvaltısını düzenli yapıyor.\n\nEn olası tanı ve bunun tedavi planına etkisi hangisidir?",
+      "secenekler": {
+        "A": "Bulimia nervoza; kilo programından önce yatırılarak psikiyatrik tedavi ve beslenme desteği gerekir",
+        "B": "Tıkınırcasına yeme bozukluğu; bu bozukluk tedavi edilmeden kilo kontrolü başarılı olamaz",
+        "C": "Gece yeme sendromu; akşam öğününü kaldırmak yeterlidir",
+        "D": "Monogenik hiperfaji; genetik test sonucu beklenmeden setmelanotid başlanmalıdır",
+        "E": "Normal yeme davranışı; çok düşük kalorili diyet başlanabilir"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "En az 3 aydır haftada birden sık, kontrol kaybıyla giden aşırı yeme atakları ve telafi davranışının yokluğu tıkınırcasına yeme bozukluğudur. TEMD'e göre yeme davranışı bozukluğu tedavi edilmedikçe obeziteyle mücadelede başarı mümkün değildir; bilişsel davranışçı terapi planlanmalıdır.",
+      "aciklama_detay": "Tıkınırcasına yeme bozukluğu obezite hastalarında en sık rastlanan yeme davranışı bozukluğudur; haftada bir defadan sık ve en az üç ay süren, aşırı miktarda yeme atakları ile tanımlanır. Tanı için yeme sonrasında kendini kusturma ya da egzersiz gibi telafi davranışları olmamalıdır. Bulimia nervozada ise ataklar kusma, laksatif ya da diüretik kullanımı, fazladan egzersiz veya aç kalma ile izlenir. Gece yeme sendromunda hasta yeme isteğiyle uykudan uyanır, yemeden tekrar uyuyamaz, günlük kalorinin en az %25'i akşam yemeğinden sonra alınır ve kahvaltı atlanır. TEMD, yeme davranışı bozukluğu tedavi edilmediği sürece obeziteyle mücadelede başarılı olunamayacağını vurgular. Bilişsel davranışçı terapi bu hastalar için uygun bir yaklaşımdır; çok düşük kalorili, katı diyetler tıkınırcasına yeme ataklarını tetikleyebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Telafi davranışı olmadığı için bulimia değildir; yatış endikasyonu da yok.",
+        "B": "DOGRU — Telafisiz, kontrol kaybıyla giden ataklar; önce bu bozukluk ele alınır.",
+        "C": "YANLIS — Gece uyanıp yeme ve kahvaltı atlama yok; gece yeme sendromu ölçütleri karşılanmıyor.",
+        "D": "YANLIS — Erişkin başlangıçlı, atak şeklinde yeme monogenik hiperfajiyi düşündürmez; setmelanotid genetik tanısız verilmez.",
+        "E": "YANLIS — Tablo bir yeme bozukluğudur; katı kısıtlama atakları artırabilir."
+      },
+      "etiketler": ["tıkınırcasına yeme bozukluğu", "yeme davranışı", "bilişsel davranışçı terapi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 5"
+    },
+    {
+      "id": "s11",
+      "metin": "Otuz altı yaşında kadın, beden kitle indeksi 34 kg/m²; 4 ay önce endoskopik olarak sıvı dolu intragastrik balon yerleştirilmiş, profilaktik proton pompa inhibitörü kullanıyor. Bu sabah idrarının mavi-yeşil renkte olduğunu fark ederek başvuruyor. Karın ağrısı, bulantı ya da kusma yok; vital bulguları normal.\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Balon rüptürü düşünüp balonu gecikmeden endoskopik olarak çıkarmak",
+        "B": "Pseudomonas idrar yolu enfeksiyonu düşünüp kültür alarak antibiyotik başlamak",
+        "C": "Belirti olmadığı için balonun 6 ayı tamamlamasını bekleyip planlı çıkarmak",
+        "D": "Sönen balonun dışkıyla atılacağını söyleyip dışkı takibi önermek",
+        "E": "Proton pompa inhibitörü dozunu artırıp poliklinik izlemine almak"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Balon sıvısına metilen mavisi eklenir; rüptür olursa boya sistemik dolaşıma geçip idrarı maviye boyar. Sönen balon ince bağırsağa geçip tıkanma yapabileceği için gecikmeden endoskopik olarak çıkarılmalıdır.",
+      "aciklama_detay": "TEMD, balonda rüptür olursa metilen mavisinin sistemik dolaşıma geçip idrarı maviye boyayarak hastanın durumu fark etmesini sağladığını belirtir; bu, sessiz sönmeyi erkenden yakalamak için tasarlanmış bir güvenlik düzeneğidir. Sönen balon pilordan geçip ince bağırsağa göç edebilir ve bağırsak tıkanmasına yol açabilir; bu nedenle belirti olmasa da balon gecikmeden endoskopik olarak çıkarılmalıdır. İntragastrik balon BKİ 30–40 kg/m² arasında, yaşam tarzıyla yeterli kilo veremeyen ya da cerrahi istemeyen hastalarda yaklaşık 6 ay süreyle uygulanır; her hastaya profilaktik proton pompa inhibitörü, işlem sırasında ve sonraki iki hafta antiemetik, balon midede kaldığı sürece günlük multivitamin önerilir. Dokuz ayda %7,5–10,9 kilo kaybı bildirilir; balon çıkarıldıktan sonra kaybın yaklaşık %25'i geri alınır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Mavi idrar balon rüptürünün işaretidir; göç ve tıkanmadan önce çıkarılır.",
+        "B": "YANLIS — Renk metilen mavisinden kaynaklanır; enfeksiyon bulgusu yok.",
+        "C": "YANLIS — Sönmüş balonu beklemek göç ve ince bağırsak tıkanması riskini artırır.",
+        "D": "YANLIS — Kendiliğinden atılma güvenilir değildir; tıkanma riski nedeniyle çıkarılmalıdır.",
+        "E": "YANLIS — Sorun peptik değil mekaniktir; PPİ artışı riski ortadan kaldırmaz."
+      },
+      "etiketler": ["intragastrik balon", "endoskopik bariatrik tedavi", "komplikasyon"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 7"
+    },
+    {
+      "id": "s12",
+      "metin": "Kırk bir yaşında kadın, beden kitle indeksi 44 kg/m², tip 2 diyabet ve hipertansiyonu var; 8 aydır ekip izleminde yeterli kilo veremediği için bariatrik cerrahi kararı alınmış. Günlük reflü yakınması var, proton pompa inhibitörü kullanıyor. Cerrahi öncesi özofagogastroduodenoskopide LA evre C özofajit ve 2 cm'lik hiatal herni saptanıyor.\n\nBu hasta için en uygun cerrahi yöntem hangisidir?",
+      "secenekler": {
+        "A": "Sleeve gastrektomi; pilor korunduğu için reflüyü de azaltır",
+        "B": "Ayarlanabilir gastrik band",
+        "C": "İntragastrik balon",
+        "D": "Roux-en-Y gastrik bypass",
+        "E": "Biliopankreatik diversiyon/duodenal switch"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Sleeve gastrektomi sonrası reflü artabilir; reflü nedeniyle revizyon gerektiğinde tercih edilen yöntem RYGB'dir. Ağır özofajitli ve diyabetli, BKİ 44 hastada RYGB en uygun seçenektir; TEMD bu yüzden cerrahi öncesi endoskopiyi önerir.",
+      "aciklama_detay": "TEMD'e göre sleeve gastrektomi sonrasında reflü sıklığında %2 ile %35 arasında değişen artışlar bildirilmiştir; reflü nedeniyle revizyon gerektiğinde genellikle Roux-en-Y gastrik bypass tercih edilir. Bu yüzden bariatrik cerrahi öncesinde özofagogastroduodenoskopi önerilir: ağır özofajit, Barrett ya da büyük hiatal herni saptanan hastada yöntem seçimi değişir. RYGB, restriktif ve malabsorptif etkili kombine bir yöntemdir; uzun dönem güvenlik ve etkinlik verileri nedeniyle evre 3 obezitede altın standart kabul edilir ve diyabet remisyonu açısından sleeve gastrektomiden daha etkilidir. Bedeli malnütrisyon, vitamin ve mineral eksiklikleri ve dumping riskidir; yaşam boyu takviye ve izlem gerekir. Sleeve gastrektomide pilor korunduğu için dumping olmaz, ancak bu reflüyü azaltmaz. BPD-DS en etkili fakat nütrisyonel riski en yüksek yöntemdir; balon ise BKİ 30–40 aralığında uygulanır ve özofajit kontrendikasyondur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Pilorun korunması dumpingi önler; sleeve sonrası reflü artabilir.",
+        "B": "YANLIS — Band uzun dönemde kilo geri alımıyla sonuçlanır ve reflüyü artırabilir.",
+        "C": "YANLIS — BKİ 44 balon endikasyon aralığının dışında; özofajit kontrendikasyondur.",
+        "D": "DOGRU — Reflü ve diyabet varlığında en uygun kombine yöntemdir.",
+        "E": "YANLIS — Nütrisyonel riski en yüksek yöntemdir; bu hastada ilk seçenek değildir."
+      },
+      "etiketler": ["bariatrik cerrahi seçimi", "gastroözofageal reflü", "Roux-en-Y gastrik bypass"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 4 ve 6.5"
+    },
+    {
+      "id": "s13",
+      "metin": "Kırk dokuz yaşında erkek, 6 yıldır tip 2 diyabetli; beden kitle indeksi 34 kg/m², aterosklerotik kardiyovasküler hastalığı yok, eGFR 84 mL/dk/1,73 m². Metformin 2×1000 mg, gliklazid MR 90 mg ve pioglitazon 30 mg kullanıyor. Son 1 yılda 7 kg almış; HbA1c %8,1. Kilo vermek için bir 'zayıflama ilacı' eklenmesini istiyor.\n\nTEMD Obezite kılavuzuna göre en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Mevcut antidiyabetik tedaviye dokunmadan orlistat eklemek",
+        "B": "Gliklazid ve pioglitazonu kesip GLP-1 RA ve/veya SGLT2 inhibitörüne geçmek",
+        "C": "Glisemiyi düzeltmek için bazal insülin ekleyip glukoz hedefe ulaşınca obezite ilacı başlamak",
+        "D": "Mevcut tedaviye fentermin/topiramat eklemek",
+        "E": "Diyabet ve obezite birlikte olduğu için öncelikle bariatrik cerrahiye yönlendirmek"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Sülfonilüre, tiazolidindion ve insülin kilo aldırır; metformin, SGLT2 inhibitörleri ve GLP-1 RA kilo kaybettirir. TEMD, kilo fazlası olan tip 2 diyabetlide obezite ilacından önce bu ajanlardan bir ya da birkaçının denenmesini önerir.",
+      "aciklama_detay": "TEMD'e göre antidiyabetiklerden metformin, SGLT2 inhibitörleri ve GLP-1 RA kilo kaybı sağlar; DPP-4 ve alfa-glukozidaz inhibitörleri kilo açısından nötrdür; sülfonilüre, glinidler, tiazolidindionlar ve insülin kilo artışına yol açar. İnsülin salgılatıcılar ve tiazolidindionlarla 3–6 ay gibi kısa sürede 10 kg'a varan kilo artışı görülebilir; karşılaştırmalı çalışmalarda GLP-1 RA ile ortalama 5,5–8 kg, metformin ve SGLT2 inhibitörleriyle 1–3 kg kayıp bildirilmiştir. Bu yüzden kilo fazlası olan tip 2 diyabetlide, obezite ilacı eklemeden önce antidiyabetik rejim kilo lehine düzenlenmelidir. Bu hastada gliklazid ve pioglitazon kilo artışının olası kaynağıdır; GLP-1 RA hem HbA1c'yi hem kiloyu düşürür, SGLT2 inhibitörü ek kazanç sağlar. BKİ 34 kg/m² ve kontrol edilebilir diyabet, TEMD'in cerrahi ölçütlerini (BKİ 30–34,9'da başka yöntemlerle düzenlenemeyen diyabet ve Edmonton evre ≥3) karşılamaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kilo aldıran ajanlar sürerken obezite ilacı eklemek, önce denenmesi gereken adımı atlar.",
+        "B": "DOGRU — Kilo aldıran ajanlar çıkarılıp kilo kaybettiren antidiyabetiklere geçilir.",
+        "C": "YANLIS — İnsülin kilo artışını hızlandırır; önce kilo lehine ajanlar denenmelidir.",
+        "D": "YANLIS — TEMD önce antidiyabetik düzenlemesini önerir; ayrıca ilaç ülkemizde bulunmuyor.",
+        "E": "YANLIS — BKİ 30–34,9'da cerrahi ancak başka yöntemlerle kontrol edilemeyen diyabette ve evre ≥3'te düşünülür."
+      },
+      "etiketler": ["tip 2 diyabet ve obezite", "antidiyabetiklerin kilo etkisi", "ilaç seçimi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 6.4"
+    },
+    {
+      "id": "s14",
+      "metin": "Elli üç yaşında erkek, beden kitle indeksi 36 kg/m², prediyabet (HbA1c %6,2) ve metabolik sendromu var. Koroner arter hastalığı, kalp yetersizliği ya da taşiaritmi yok. İki yıldır hipertansiyon nedeniyle atenolol 50 mg ve hidroklorotiyazid 25 mg kullanıyor; bu sürede 6 kg almış. Kan basıncı 148/94 mmHg.\n\nTEMD Obezite kılavuzuna göre antihipertansif tedavide en uygun değişiklik hangisidir?",
+      "secenekler": {
+        "A": "Atenolol dozunu 100 mg/gün'e çıkarmak",
+        "B": "Hidroklorotiyazid dozunu 50 mg/gün'e çıkarmak",
+        "C": "Atenololü, kardiyoselektif olduğu için metabolik açıdan nötr kabul edilen metoprolol ile değiştirmek",
+        "D": "Mevcut rejime doksazosin eklemek",
+        "E": "ACE-İ ya da ARB ile KKB temelli rejime geçip beta blokeri azaltarak kesmek"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Diüretikler ve beta blokerler glukoz intoleransına, beta blokerler ayrıca kilo artışına eğilim yaratır. TEMD obez hipertansifte ilk sırada ACE inhibitörü, ARB ve kalsiyum kanal blokerlerini önerir; beta bloker gerekiyorsa karvedilol ya da nebivolol tercih edilir.",
+      "aciklama_detay": "Diüretik, beta bloker, kalsiyum kanal blokeri ve ACE inhibitörlerini karşılaştıran meta-analizlerde bütün grupların BKİ'den bağımsız olarak kardiyovasküler olayları benzer oranda önlediği gösterilmiştir. Yine de TEMD, diüretiklerin ve beta blokerlerin glukoz intoleransı yapıcı etkileri ve beta blokerlerin kilo artışına meylettirici özellikleri nedeniyle obeziteli hipertansiflerde ilk sırada ACE inhibitörü, ARB ve kalsiyum kanal blokerlerinin düşünülmesini önerir. Beta bloker için zorlayıcı endikasyon (koroner arter hastalığı, kalp yetersizliği, taşiaritmi) yoksa ilaç kademeli azaltılarak kesilir; ani kesilme rebound taşikardi ve hipertansiyona yol açabilir. Beta bloker gerekiyorsa metabolik açıdan daha nötr olan karvedilol ya da nebivolol tercih edilmelidir. Obeziteli hastada kan basıncı her vizitte ölçülmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Beta blokerin dozunu artırmak metabolik olumsuz etkileri ve kilo artışını büyütür.",
+        "B": "YANLIS — Yüksek doz tiyazid glukoz intoleransını ve hipokalemiyi artırır.",
+        "C": "YANLIS — Metoprolol de klasik beta blokerdir; tercih edilecekse karvedilol ya da nebivolol olmalıdır.",
+        "D": "YANLIS — Alfa bloker ilk basamak değildir; metabolik açıdan sorunlu rejimi düzeltmez.",
+        "E": "DOGRU — ACE-İ/ARB ve KKB temelli tedavi; zorlayıcı endikasyonu olmayan beta bloker azaltılıp kesilir."
+      },
+      "etiketler": ["obezite ve hipertansiyon", "beta bloker", "antihipertansif seçimi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 4"
+    },
+    {
+      "id": "s15",
+      "metin": "Kırk sekiz yaşında erkek, beden kitle indeksi 39 kg/m², boyun çevresi 45 cm, hipertansiyonu var. Eşi yüksek sesli horlama ve uykuda solunum duraklamaları tarif ediyor; gündüz aşırı uykululuğu var. STOP-BANG skoru 7 olduğu için polisomnografi yapılıyor: apne-hipopne indeksi 24/saat, en düşük oksijen satürasyonu %84.\n\nBu hastadaki uyku apnesinin şiddeti ve en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Hafif OSAS; yalnızca uyku hijyeni önerileri yeterlidir",
+        "B": "Şiddetli OSAS; kilo kaybı apne indeksini etkilemediğinden cerrahi uvulopalatofaringoplasti gerekir",
+        "C": "Orta şiddette OSAS; pozitif hava yolu basıncı tedavisiyle birlikte kilo kaybı hedeflenir",
+        "D": "Orta şiddette OSAS; kilo kaybı sağlanana kadar başka tedavi ertelenir",
+        "E": "İndeks 30'un altında olduğundan OSAS tanısı konmaz"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "TEMD'e göre saatte 5–15 olay hafif, 16–30 orta, >30 şiddetli OSAS'tır; indeks 24 orta şiddettir. Semptomatik orta OSAS'ta pozitif hava yolu basıncı tedavisi kilo kaybıyla birlikte uygulanır; ılımlı kilo kaybı bile apne indeksini belirgin düşürür.",
+      "aciklama_detay": "Polisomnografi OSAS'ın ideal tanı yöntemidir; ancak her obezite hastasına yapmak yerine STOP-BANG gibi formlarla tarama yapıp riskli hastaları yönlendirmek kaynakları etkin kullanmayı sağlar. TEMD sınıflamasında uykuda saatte 5–15 apne/hipopne hafif, 16–30 orta, 30'un üzeri şiddetli OSAS'tır. Bu hastada indeks 24/saat, belirgin desatürasyon ve gündüz uykululuğu vardır; yani semptomatik orta şiddette OSAS söz konusudur ve standart tedavi pozitif hava yolu basıncıdır. Kilo kaybı tedavinin ayrılmaz parçasıdır: TEMD'e göre ılımlı kilo kaybı bile apne-hipopne indeksini yaklaşık yarıya indirebilir. Tedaviyi yalnızca kilo kaybına bağlayıp ertelemek, gündüz uykululuğuna bağlı kaza riskini ve kardiyovasküler yükü sürdürür. OSAS obeziteli hastada hipertansiyonun direncine de katkıda bulunur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İndeks 24/saat hafif değil orta şiddettir; yalnızca uyku hijyeni yetersizdir.",
+        "B": "YANLIS — Şiddetli sınıf >30 olaydır; kilo kaybı indeksi belirgin azaltır.",
+        "C": "DOGRU — Orta şiddette OSAS; PAP tedavisi ve kilo kaybı birlikte.",
+        "D": "YANLIS — Semptomatik orta OSAS'ta tedaviyi ertelemek kaza ve kardiyovasküler riski sürdürür.",
+        "E": "YANLIS — Saatte 5 ve üzeri olay OSAS'tır; 30 tanı eşiği değil, orta ile şiddetli sınıf arasındaki sınırdır."
+      },
+      "etiketler": ["obstrüktif uyku apnesi", "polisomnografi", "obezite komorbiditesi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Obezite Tanı ve Tedavi Kılavuzu 2024, Bölüm 4; konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    }
+  ]
+}

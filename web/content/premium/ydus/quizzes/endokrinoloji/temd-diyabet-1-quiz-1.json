@@ -1,0 +1,368 @@
+{
+  "id": "quiz-endo-temd-diyabet-1-001",
+  "baslik": "TEMD Diyabet 1 — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "temd-diyabet-1",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Elli sekiz yaşında erkek hasta, 4 yıldır haftada üç gün hemodiyalize giriyor ve renal anemi nedeniyle eritropoetin kullanıyor. Rutin kontrolde açlık glukozunun yüksek bulunması üzerine değerlendiriliyor. Poliüri ya da polidipsi tanımlamıyor.\n\nTetkikler:\nAçlık plazma glukozu (1. gün): 138 mg/dL\nAçlık plazma glukozu (8. gün): 131 mg/dL\nHbA1c: %5,6\nHemoglobin: 10,4 g/dL\n\nTEMD kılavuzuna göre bu bulguların en doğru yorumu hangisidir?",
+      "secenekler": {
+        "A": "Diyabet tanısı konur; bu hastada HbA1c yalancı düşüktür ve tanı plazma glukozuna dayanır.",
+        "B": "HbA1c %5,7'nin altında olduğu için glisemi normaldir; yüksek açlık değerleri diyalize bağlı bir artefakttır.",
+        "C": "Bozulmuş açlık glukozu tanısı konur; HbA1c ile açlık glukozu uyumsuzsa düşük kategoriyi veren test esas alınır.",
+        "D": "Tanı için 75 g OGTT zorunludur; iki ayrı günde ölçülen açlık değerleri tek başına tanı koydurmaz.",
+        "E": "HbA1c 3 ay sonra tekrarlanmalıdır; ikinci HbA1c ≥%6,5 bulunmadıkça diyabet tanısı konamaz."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "İki ayrı günde açlık plazma glukozu ≥126 mg/dL diyabet tanısını doğrular. Hemodiyaliz ve eritropoetin eritrosit ömrünü kısalttığı için HbA1c yalancı düşüktür; TEMD bu durumlarda tanının yalnızca plazma glukozuyla konmasını ister.",
+      "aciklama_detay": "HbA1c, eritrositin dolaşımda kaldığı süre boyunca maruz kaldığı glukozu yansıtır. Eritrosit ömrünü kısaltan ya da genç eritrosit oranını artıran durumlarda (orak hücreli anemi, G6PD eksikliği, hemodiyaliz, yakın zamanda kanama veya transfüzyon, eritropoetin tedavisi, gebeliğin ikinci-üçüncü trimesteri ve postpartum dönem) HbA1c gerçek glisemiyi olduğundan düşük gösterir. TEMD bu gruplarda diyabet tanısının yalnızca plazma glukozuna göre konmasını önerir. Bu hastada iki ayrı günde açlık plazma glukozu ≥126 mg/dL olduğundan tanı doğrulanmıştır; ek bir OGTT ya da HbA1c tekrarı gerekmez. Klinik inci: diyaliz hastasında glisemik izlemde de HbA1c tek başına yetersizdir; kapiller ya da sürekli glukoz izlemi kararları yönlendirmelidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — İki açlık değeri ≥126 mg/dL tanıyı doğrular; bu hastada HbA1c güvenilir değildir.",
+        "B": "YANLIS — HbA1c burada yalancı düşüktür; plazma glukozu diyalizle yalancı yükselmez.",
+        "C": "YANLIS — Uyumsuzlukta 'düşük olanı seç' kuralı yoktur; üstelik bu hastada HbA1c geçersizdir.",
+        "D": "YANLIS — İki ayrı günde ≥126 mg/dL açlık glukozu tanı için yeterlidir; OGTT zorunlu değildir.",
+        "E": "YANLIS — Eritrosit ömrü kısa olduğu sürece HbA1c tekrarlansa da yalancı düşük kalır; tanıyı geciktirir."
+      },
+      "etiketler": ["tanı kriterleri", "HbA1c yanılgısı", "hemodiyaliz"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 1"
+    },
+    {
+      "id": "s2",
+      "metin": "Yirmi dört yaşında kadın hasta, 2 yıl önce tip 2 diyabet tanısı alıp gliklazid MR 30 mg/gün başlanmış; o günden beri öğleden sonraları tekrarlayan hipoglisemi (52–60 mg/dL) yaşıyor. Annesine 23, dayısına 27 yaşında diyabet tanısı konmuş; ikisi de yıllarca tabletle izlenmiş. Beden kitle indeksi 22 kg/m², akantozis nigrikans yok.\n\nTetkikler:\nHbA1c (gliklazid öncesi): %7,8\nAnti-GAD ve anti-IA-2: negatif\nAçlık C-peptid: 1,9 ng/mL\nhsCRP: 0,2 mg/L\nTam idrar: glukozüri (eşzamanlı plazma glukozu 142 mg/dL)\n\nEn olası tanı ve bu tanıya uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "GCK-MODY; ilaç kesilmeli ve hasta yalnızca diyetle izlenmelidir.",
+        "B": "Erişkinde latent otoimmün diyabet; sülfonilüre kesilip bazal insülin başlanmalıdır.",
+        "C": "HNF1A-MODY; genetik testle doğrulanmalı ve düşük doz sülfonilüreyle sürdürülmelidir.",
+        "D": "HNF1B-MODY; böbrek görüntülemesi yapılıp tedavi insüline çevrilmelidir.",
+        "E": "İnsülin direnci belirgin tip 2 diyabet; sülfonilüre yerine pioglitazon başlanmalıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Genç başlangıç, ardışık kuşaklarda (anne ve dayı) erken başlangıçlı diyabetle otozomal dominant geçişi düşündüren aile öyküsü, otoantikor negatifliği, korunmuş C-peptid, sülfonilüreye aşırı duyarlılık, düşük hsCRP ve düşük böbrek eşiğiyle glukozüri HNF1A-MODY'yi düşündürür; tedavi düşük doz sülfonilüredir.",
+      "aciklama_detay": "TEMD, genç yaşta başlayan, insülin direnci bulunmayan ve sülfonilüreye aşırı yanıt veren hastada MODY'nin akla getirilmesini ister. HNF1A-MODY'de hsCRP tip 1, tip 2 ve diğer MODY tiplerinden belirgin düşüktür; genetik teste erişim güç olduğunda ayırıcı olarak kullanılabilir (kılavuz metinde <0,3 mg/L, algoritmada <0,75 mg/L eşiğini verir; bu hasta her ikisinin de altında). HNF1A mutasyonu proksimal tübülde SGLT2 ekspresyonunu azalttığı için glukozüri görece düşük plazma glukozunda ortaya çıkar. Bu hastalar sülfonilüreye çok duyarlıdır; hipoglisemi dozun azaltılmasıyla yönetilir ve çoğu hasta yıllarca insülinsiz izlenebilir. GCK-MODY ise hafif, sabit açlık hiperglisemisi (HbA1c genellikle <%7,5) ile seyreder ve ilaç gerektirmez; bu hastanın HbA1c'si ve belirgin ilaç yanıtı buna uymaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — GCK-MODY hafif, stabil açlık hiperglisemisidir; HbA1c %7,8 ve belirgin sülfonilüre duyarlılığı beklenmez.",
+        "B": "YANLIS — Otoantikorlar negatif ve C-peptid korunmuş; LADA düşündürmez.",
+        "C": "DOGRU — Klinik tablo ve düşük hsCRP HNF1A-MODY ile uyumlu; düşük doz sülfonilüre ilk seçenektir.",
+        "D": "YANLIS — HNF1B'de böbrek kistleri ve genital anomaliler öne çıkar, sülfonilüreye aşırı duyarlılık tipik değildir.",
+        "E": "YANLIS — BKİ 22, akantozis yok; insülin direnci göstergesi bulunmuyor."
+      },
+      "etiketler": ["MODY", "HNF1A", "hsCRP"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 1"
+    },
+    {
+      "id": "s3",
+      "metin": "On dokuz yaşında erkek, kardeşinin 2 yıl önce tip 1 diyabet tanısı alması üzerine tarama amacıyla başvuruyor. Yakınması yok, fizik muayene normal.\n\nTetkikler:\nAnti-GAD: pozitif\nAnti-IA-2: pozitif\nAnti-ZnT8: pozitif\nAçlık plazma glukozu: 108 mg/dL\n75 g OGTT 2. saat: 168 mg/dL\nHbA1c: %5,9\n\nTEMD kılavuzuna göre bu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Klinik tip 1 diyabet (evre 3) kabul edilip bazal-bolus insülin başlanmalıdır.",
+        "B": "Evre 1 kabul edilip yalnızca 5 yıl sonra otoantikorlarla yeniden taranmalıdır.",
+        "C": "Otoimmün süreci yavaşlatmak için metformin başlanıp yıllık izlenmelidir.",
+        "D": "Teplizumabın yeri yalnızca evre 3 yeni tanıda beta hücre korunmasıdır; burada izlem yeterlidir.",
+        "E": "Evre 2 tip 1 diyabettir; seçilmiş hastada teplizumab düşünülüp yakın izlenmelidir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "İki ya da daha fazla adacık otoantikoru ve disglisemi (bozulmuş açlık glukozu ve glukoz toleransı) ama klinik diyabet eşiklerinin altında değerler evre 2 tip 1 diyabettir. TEMD, 8 yaş üzerindeki seçilmiş evre 2 hastada evre 3'ü geciktirmek için teplizumabı düşünülebilir sayar.",
+      "aciklama_detay": "Presemptomatik tip 1 diyabet üç evrede tanımlanır: evre 1 ≥2 otoantikor ve normoglisemi, evre 2 ≥2 otoantikor ve disglisemi, evre 3 klinik diyabet. Bu hastanın açlık glukozu 100–125, OGTT 2. saat değeri 140–199 ve HbA1c %5,7–6,4 aralığındadır; yani disglisemi var ama diyabet eşiklerine ulaşılmamış, dolayısıyla evre 2'dir. Anti-CD3 monoklonal antikor teplizumab, FDA onaylı 14 günlük intravenöz infüzyon şeklinde evre 3'ün başlangıcını geciktirmek amacıyla kullanılır; TEMD bunu 8 yaş üzerindeki seçilmiş evre 2 hastalarda, deneyimli ve eğitimli personelin bulunduğu merkezlerde önerir. Başlıca yan etkiler geçici lenfopeni, döküntü, baş ağrısı, geçici transaminaz yüksekliği ve bulantıdır. Presemptomatik hastalar HbA1c ve yıllık OGTT ile izlenir ve hipergliseminin belirtileri konusunda eğitilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Hiçbir değer klinik diyabet eşiğinde değil; bu evre 3 değildir, insülin endikasyonu yoktur.",
+        "B": "YANLIS — Disglisemi olduğu için evre 1 değil evre 2'dir; 5 yıllık aralık çok uzundur.",
+        "C": "YANLIS — Metforminin otoimmün tip 1 diyabette evre ilerlemesini geciktirdiğine dair öneri yoktur.",
+        "D": "YANLIS — Teplizumabın onaylı endikasyonu tam olarak evre 2'de evre 3'ü geciktirmektir.",
+        "E": "DOGRU — Evre 2, 19 yaş; seçilmiş hastada teplizumab düşünülür ve yakın glisemik izlem sürdürülür."
+      },
+      "etiketler": ["presemptomatik tip 1 diyabet", "teplizumab", "evreleme"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 3"
+    },
+    {
+      "id": "s4",
+      "metin": "Kırk dört yaşında kadın hasta; 6 yıl önce gestasyonel diyabet öyküsü var. Beden kitle indeksi 37 kg/m². Altı aydır yapılandırılmış yaşam tarzı programına katılıyor ancak yalnızca %2 kilo verebilmiş.\n\nTetkikler:\nAçlık plazma glukozu: 114 mg/dL\n75 g OGTT 2. saat: 176 mg/dL\nHbA1c: %6,2\neGFR: 96 mL/dk/1,73 m²\n\nTEMD kılavuzuna göre bu hastada farmakolojik önleme için en uygun seçim hangisidir?",
+      "secenekler": {
+        "A": "Akarboz; prediyabette ilk basamak ilaçtır ve bu profildeki hastada en etkili ajandır.",
+        "B": "Metformin; 2×500 mg ile başlanıp tolere edilirse 2×850 mg'a çıkılmalı, yılda bir B12 bakılmalıdır.",
+        "C": "Pioglitazon; insülin direncini azalttığı için obez prediyabetik hastada ilk seçenektir.",
+        "D": "Sülfonilüre; bozulmuş glukoz toleransında erken faz insülin salınımını düzelttiği için tercih edilir.",
+        "E": "Prediyabette ilaç önerilmez; yalnızca yaşam tarzı programının sürdürülmesi yeterlidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Prediyabette ilk basamak ilaç metformindir; DPP'de en çok BKİ ≥35 kg/m², 60 yaş altı ve gestasyonel diyabet öyküsü olanlarda yarar sağlamıştır. Doz 1000–1700 mg/gün, uzun kullanımda yıllık B12 ölçümü önerilir.",
+      "aciklama_detay": "Bu hastada hem bozulmuş açlık glukozu hem bozulmuş glukoz toleransı hem de prediyabet aralığında HbA1c vardır; yaşam tarzı programına rağmen hedef kilo kaybına (%7) ulaşılamamıştır. TEMD'e göre prediyabette farmakolojik önlemenin ilk basamağı metformindir; DPP alt analizlerinde yararı özellikle BKİ ≥35 kg/m² ve 60 yaş altındaki bireylerde belirgin, 60 yaş üstünde ise anlamlı değildir. Tedaviye iki kez 500 mg ile başlanıp tolere edilirse iki kez 850 mg'a çıkılır; uzun süreli kullanımda yılda bir B12 düzeyi ölçülmelidir. Akarboz ise alt analizlerde 55 yaş üstü ve BKİ <30 kg/m² olanlarda daha etkili bulunduğu için düşük BKİ'li yaşlı hastada tercih edilebilir; bu hastanın profili tam tersidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Akarboz ilk basamak değildir; 55 yaş üstü ve BKİ <30 kg/m² hastada öne çıkar.",
+        "B": "DOGRU — Genç, BKİ ≥35 ve gestasyonel diyabet öyküsü: metforminden en çok yarar gören profil.",
+        "C": "YANLIS — Pioglitazon kilo artışı, ödem ve kırık riski nedeniyle prediyabette ilk seçenek değildir.",
+        "D": "YANLIS — Sülfonilürelerin diyabeti önlemede yeri yoktur; hipoglisemi ve kilo artışı yapar.",
+        "E": "YANLIS — Yüksek riskli ve yaşam tarzıyla hedefe ulaşamayan prediyabetik hastada metformin önerilir."
+      },
+      "etiketler": ["prediyabet", "diyabet önleme", "metformin"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 3; Diabetes Prevention Program (DPP)"
+    },
+    {
+      "id": "s5",
+      "metin": "Elli bir yaşında erkek hasta, 2 aydır giderek artan poliüri, polidipsi, noktüri ve 7 kg kilo kaybı ile başvuruyor. Beden kitle indeksi 29 kg/m². Bilinci açık, hafif dehidrate.\n\nTetkikler:\nRastgele plazma glukozu: 386 mg/dL\nHbA1c: %11,4\nKan β-hidroksibütirat: 0,8 mmol/L\nVenöz pH: 7,38; HCO3: 24 mEq/L\nTrigliserid: 410 mg/dL\neGFR: 88 mL/dk/1,73 m²\n\nTEMD kılavuzuna göre bu hastada başlangıç tedavisi için en uygun seçim hangisidir?",
+      "secenekler": {
+        "A": "Metformin ve DPP-4 inhibitörü kombinasyonu; 3 ay sonra HbA1c ile yeniden değerlendirme",
+        "B": "Metformin ve SGLT2 inhibitörü; kilo ve glukoz birlikte düşeceği için insüline gerek yoktur",
+        "C": "Metformin ile birlikte haftalık GLP-1 reseptör agonisti; insülin ancak yanıtsızlıkta eklenir",
+        "D": "Tercihen bazal-bolus insülin ile başlanması ve mümkünse metforminin de eklenmesi",
+        "E": "Sülfonilüre ve metformin; insülin salgısını artırarak glukoz toksisitesini hızla kırar"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "HbA1c ≥%9, rastgele glukoz >300 mg/dL, belirgin hiperglisemi semptomları ve kilo kaybı TEMD'e göre tedaviye insülinle başlamayı gerektirir; tercihen bazal-bolus, mümkünse metforminle birlikte.",
+      "aciklama_detay": "TEMD, yeni tanı tip 2 diyabette başlangıç HbA1c ≥%9, açlık plazma glukozu >250 mg/dL ya da rastgele plazma glukozu >300 mg/dL olan hastalarda ve poliüri-polidipsi, kilo kaybı ya da katastrofik tablo (belirgin hipertrigliseridemi, DKA, HHD) gösterenlerde tedaviye insülinle başlanmasını önerir. Bu tablodaki bazı hastalar aslında tanı almamış tip 1 diyabetli, bazıları ciddi insülin eksikliği olan tip 2 diyabetlidir. Katabolik bulgular (kilo kaybı, ketozis eğilimi, hipertrigliseridemi) insülin eksikliğinin göstergesidir. Glukoz toksisitesi kırıldıktan sonra insülin dozu azaltılabilir, hatta bazı hastalarda oral tedaviye dönülebilir. Katabolik ve hafif ketotik hastada SGLT2 inhibitörü öglisemik ketoasidoz riskini artırır; sülfonilüre ise baskılanmış beta hücresinden yeterli yanıt alamaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Semptomatik, katabolik ve HbA1c %11,4 olan hastada oral ajanlar yetersiz kalır.",
+        "B": "YANLIS — Katabolik, ketozis eğilimli hastada SGLT2 inhibitörü ketoasidoz riskini artırır.",
+        "C": "YANLIS — GLP-1 RA'nın titrasyonu haftalar sürer; semptomatik insülin eksikliğini karşılamaz.",
+        "D": "DOGRU — HbA1c ≥%9, rastgele glukoz >300 mg/dL, semptomlar ve kilo kaybı mevcut: bazal-bolus insülin ve mümkünse metformin.",
+        "E": "YANLIS — Glukoz toksisitesiyle baskılanmış beta hücresi sülfonilüreye yeterli yanıt vermez."
+      },
+      "etiketler": ["tip 2 diyabet tedavi algoritması", "insülin endikasyonu", "glukoz toksisitesi"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 8–9"
+    },
+    {
+      "id": "s6",
+      "metin": "Altmış iki yaşında erkek, 12 yıldır tip 2 diyabetli. Metformin 2×1000 mg, empagliflozin 10 mg ve akşam insülin glarjin 54 IU kullanıyor; glarjin son 6 ayda 3 günde bir titre edilerek bu doza çıkmış. Vücut ağırlığı 90 kg. Daha önce GLP-1 reseptör agonisti kullanmamış.\n\nTetkikler:\nAçlık kapiller glukoz (son 2 hafta): 102–128 mg/dL\nAkşam yemeği sonrası 2. saat: 238–265 mg/dL\nYatma saatinden sabaha glukoz düşüşü: ortalama 110 mg/dL\nHbA1c: %8,4\n\nTEMD kılavuzuna göre en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Açlık glukozu 80–100 mg/dL olana dek glarjini 3 günde bir 2 IU artırmayı sürdürmek",
+        "B": "Glarjini kesip aynı toplam dozu sabah ve akşam iki doz NPH insülin olarak vermek",
+        "C": "Glarjin dozunu artırmadan tedaviyi yoğunlaştırmak ve GLP-1 reseptör agonisti eklemek",
+        "D": "Akşam yemeğinden önce gliklazid ekleyip glarjin dozunu aynı tutmak",
+        "E": "Tedaviyi değiştirmeden 3 ay sonra HbA1c'yi tekrarlayıp yanıtı değerlendirmek"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Açlık glukozu hedefte, HbA1c yüksek, tokluk glukozu yüksek ve bazal doz 0,6 IU/kg: bu aşırı bazalizasyondur. TEMD bazal >0,5 IU/kg'da dozu artırmak yerine rejimi yoğunlaştırmayı (GLP-1 RA, bazal plus ya da bifazik insülin) önerir.",
+      "aciklama_detay": "Bazal insülin açlık glukozunu kontrol eder; açlık hedefteyken HbA1c'nin yüksek kalması kalan yükün tokluk hiperglisemisinden geldiğini gösterir. Bazal doz uygun düzeyin ötesine çıkarıldığında (TEMD'de >0,5 IU/kg/gün; bu hastada 54/90 ≈ 0,6 IU/kg) aşırı bazalizasyon gelişir: gece hipoglisemi riski artar, kilo alınır, tokluk sorunu çözülmez. Yatma saatinden sabaha belirgin glukoz düşüşü de bunun ipucudur. TEMD bu durumda daha önce kullanılmamışsa GLP-1 RA eklenmesini, bazal plus (en yüksek glukoz yükselmesi olan öğüne 4 IU hızlı/kısa etkili insülin, tokluk ≤160 mg/dL olana dek 3 günde bir 2 IU artırma) ya da bifazik insüline geçişi önerir. GLP-1 RA hem tokluk glukozunu hem kiloyu düşürür ve hipoglisemi riskini artırmaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Açlık zaten hedefte; bazalı artırmak aşırı bazalizasyonu ve hipoglisemiyi derinleştirir.",
+        "B": "YANLIS — NPH'ye geçiş tokluk hiperglisemisini çözmez, gece hipoglisemi riskini artırır.",
+        "C": "DOGRU — Bazal >0,5 IU/kg ve tokluk hiperglisemisi: bazalı artırmadan GLP-1 RA ile yoğunlaştırma.",
+        "D": "YANLIS — Yüksek doz bazal insüline sülfonilüre eklemek hipoglisemi ve kilo artışı getirir; TEMD önermez.",
+        "E": "YANLIS — HbA1c %8,4 ve nedeni belli; beklemek klinik atalet örneğidir."
+      },
+      "etiketler": ["bazal insülin", "aşırı bazalizasyon", "tedavi yoğunlaştırma"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 8–9"
+    },
+    {
+      "id": "s7",
+      "metin": "Yirmi iki yaşında kadın, tip 1 diyabetli; 2 gündür süren kusma ve karın ağrısı ile acile getiriliyor. Kussmaul solunumu var, kan basıncı 96/60 mmHg.\n\nTetkikler:\nPlazma glukozu: 486 mg/dL\nArteriyel pH: 7,12; HCO3: 8 mEq/L; anyon açığı: 26\nKan β-hidroksibütirat: 5,8 mmol/L\nSerum K: 3,1 mEq/L\nSerum Na: 131 mEq/L; kreatinin: 1,3 mg/dL\n\nİlk saatte izotonik NaCl infüzyonu başlanmış ve idrar çıkışı var. TEMD kılavuzuna göre bir sonraki en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "Önce saatte 10–20 mEq potasyum vermek, K ≥3,5 mEq/L olunca insüline başlamak",
+        "B": "0,1 IU/kg/saat regüler insülin infüzyonunu hemen başlatıp potasyumu 4 saat sonra kontrol etmek",
+        "C": "pH 7,2'nin altında olduğu için 100 mmol sodyum bikarbonat infüzyonu vermek",
+        "D": "İnsülin infüzyonunu başlatıp her litre sıvıya 10 mEq potasyum ekleyerek ikisini eşzamanlı yürütmek",
+        "E": "Potasyum açığının tamamını K2PO4 formunda vererek hipofosfatemiyi de aynı anda düzeltmek"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "DKA'da başlangıç potasyumu <3,5 mEq/L ise insülin bekletilir, önce potasyum (saatte 10–20 mEq) verilir. İnsülin potasyumu hücre içine sokarak ölümcül hipokalemi ve aritmiye yol açabilir.",
+      "aciklama_detay": "Bu hastada pH (7,12) orta, bikarbonat (8 mEq/L) ciddi DKA aralığındadır. Asidoz ve insülin eksikliği potasyumu hücre dışına kaydırdığı için başvuruda normal hatta yüksek potasyum bile total vücut eksikliğini gizler; başvuruda düşük potasyum çok derin bir açığı gösterir. TEMD'e göre başlangıç potasyumu <3,5 mEq/L ise önce potasyum düzeltilir, sonra insüline geçilir; hedef 4,0–5,0 mEq/L'dir. Potasyum normalse her litre sıvıya 10–20 mEq, düşükse saatte 10–20 mEq verilir, yüksekse ara verilir. Fosfat açığı için potasyumun 2/3'ü KCl, 1/3'ü K2PO4 olarak önerilir: yalnızca KCl hiperkloremik asidoz, yalnızca K2PO4 hipokalsemi riski taşır. Potasyum 2–4 saatte bir ölçülür, gerekirse EKG monitörizasyonu yapılır. Bikarbonat yalnızca pH <7,0'da verilir ve kendisi de hipokalemiyi derinleştirir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — K <3,5 mEq/L: önce potasyum, K ≥3,5 olunca insülin infüzyonu.",
+        "B": "YANLIS — Düşük potasyumla insülin başlamak ağır hipokalemi ve aritmiye yol açar.",
+        "C": "YANLIS — Bikarbonat yalnızca pH <7,0'da endikedir ve hipokalemiyi artırır.",
+        "D": "YANLIS — Litre başına 10–20 mEq rejimi potasyumu normal olan hasta içindir; burada insülin beklemelidir.",
+        "E": "YANLIS — Yalnız K2PO4 hipokalsemi riski taşır; önerilen karışım 2/3 KCl, 1/3 K2PO4'tür."
+      },
+      "etiketler": ["diyabetik ketoasidoz", "potasyum replasmanı", "acil"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 12"
+    },
+    {
+      "id": "s8",
+      "metin": "Yirmi yaşında erkek, yeni tanı tip 1 diyabet ve orta şiddette DKA ile yatırılmış; intravenöz insülin infüzyonu ve sıvı tedavisi alıyor. Tedavinin 16. saatinde bulantısı geçmiş, yemek yemek istiyor. Vücut ağırlığı 64 kg.\n\nTetkikler (16. saat):\nPlazma glukozu: 176 mg/dL\nVenöz pH: 7,34; HCO3: 19 mEq/L\nKan β-hidroksibütirat: 0,4 mmol/L\nİdrar ketonu: 2+\nSerum K: 4,2 mEq/L\n\nTEMD kılavuzuna göre en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "İdrar ketonu negatifleşene kadar intravenöz insülin infüzyonunu aynı hızla sürdürmek",
+        "B": "İnfüzyonu hemen kesip 1 saat sonra ilk cilt altı bazal insülin dozunu uygulamak",
+        "C": "İnfüzyonu kesip yalnızca kaydırma ölçeğine göre öğün öncesi hızlı etkili insülin vermek",
+        "D": "0,2 IU/kg/gün bazal insülinle başlayıp öğün bolus dozlarını bir hafta sonra eklemek",
+        "E": "0,5–0,8 IU/kg/gün bazal-bolus cilt altı rejim başlatıp ilk dozdan 1–2 saat sonrasına dek infüzyonu sürdürmek"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Glukoz <200 mg/dL, HCO3 ≥18 mEq/L, venöz pH >7,30 ve kan ketonu <0,6 mmol/L: DKA düzelmiştir. Ağızdan alabilen hastada bazal-bolus cilt altı insüline geçilir ve infüzyon ilk cilt altı dozdan 1–2 saat sonrasına kadar sürdürülür.",
+      "aciklama_detay": "TEMD DKA'nın düzeldiğini dört ölçütle tanımlar: glisemi <200 mg/dL, serum bikarbonat ≥18 mEq/L, venöz pH >7,30 ve plazma ketonu <0,6 mmol/L. Bu hasta dördünü de karşılıyor. İdrar ketonu yanıltıcıdır: nitroprussid testi asetoasetat ve aseton ölçer, β-hidroksibütiratı görmez; tedaviyle β-hidroksibütirat asetoasetata dönüştükçe idrar ketonu geçici olarak artabilir ve düzelen DKA'yı ağırlaşmış gösterir. Yeni tanı tip 1 diyabette cilt altı toplam doz 0,5–0,8 IU/kg/gün (bu hastada yaklaşık 32–51 IU/gün) hesaplanır ve bazal-bolus olarak dağıtılır. Cilt altı insülinin emilip etki göstermesi zaman aldığından intravenöz infüzyon ilk cilt altı dozdan 1–2 saat sonrasına kadar sürdürülmelidir; aksi halde insülinsiz kalan birkaç saat ketoasidozun geri dönmesine yol açar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İdrar ketonu düzelen DKA'yı ağırlaşmış gösterir; kan ketonu 0,4 mmol/L ile ölçüt karşılanmıştır.",
+        "B": "YANLIS — Önce kesip sonra cilt altı vermek insülinsiz bir boşluk yaratır, DKA nüks edebilir.",
+        "C": "YANLIS — Tip 1 diyabette bazal insülinsiz kaydırma ölçeği ketoasidoza zemin hazırlar.",
+        "D": "YANLIS — 0,2 IU/kg/gün yeni tanı tip 1 diyabet için yetersizdir; bolus ertelenmemelidir.",
+        "E": "DOGRU — DKA düzelmiş; bazal-bolus başlanır, infüzyon ilk dozla 1–2 saat örtüştürülür."
+      },
+      "etiketler": ["diyabetik ketoasidoz", "cilt altı insüline geçiş", "keton izlemi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 12"
+    },
+    {
+      "id": "s9",
+      "metin": "Yetmiş sekiz yaşında kadın, 3 gündür artan uykuya meyil ve ağız kuruluğu ile getiriliyor. Daha önce diyabet tanısı yok. Kan basıncı 100/62 mmHg, mukozalar kuru.\n\nBaşvuru tetkikleri:\nPlazma glukozu: 940 mg/dL\nSerum Na: 147 mEq/L\nHesaplanan efektif ozmolalite: 346 mOsm/kg\nVenöz pH: 7,34; HCO3: 21 mEq/L\nKan β-hidroksibütirat: 0,5 mmol/L\n\nİzotonik NaCl ve 0,05 IU/kg/saat regüler insülin infüzyonu başlanıyor. Dördüncü saatte glukoz 560 mg/dL, serum Na 150 mEq/L, efektif ozmolalite 331 mOsm/kg; idrar çıkışı yeterli.\n\nTEMD kılavuzuna göre bu aşamada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Sodyum yükseldiği için sıvıyı hemen %0,45 NaCl'ye çevirmek",
+        "B": "Glukozu 6 saat içinde 200 mg/dL'nin altına indirmek için insülin hızını iki katına çıkarmak",
+        "C": "Beyin ödemi riski nedeniyle sıvıyı durdurup yalnızca insülin infüzyonuna devam etmek",
+        "D": "İzotonik sıvı ve aynı insülin hızıyla sürdürmek, DMAH profilaksisi eklemek",
+        "E": "Asidoz eğilimi nedeniyle tedaviye sodyum bikarbonat infüzyonu eklemek"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Glukoz saatte ~95 mg/dL düşüyor (hedef 90–120) ve ozmolalite azalıyor. Glukoz düştükçe suyun hücre içine geçmesiyle sodyumun geçici yükselmesi beklenir ve TEMD'e göre hipotonik sıvı gerektirmez; kontrendikasyon yoksa tromboprofilaksi önerilir.",
+      "aciklama_detay": "HHD tanısı plazma glukozu >600 mg/dL ve ozmolalite ≥320 mOsm/kg ile, belirgin ketoz ve asidoz yokluğunda konur. Tedavide en kritik unsur sıvının türü ve hızıdır. Serebral ödem ve nörolojik komplikasyonlardan korunmak için glukozdaki düşüş saatte 90–120 mg/dL'yi, serum sodyumundaki düşüş 24 saatte 10 mmol/L'yi aşmamalıdır. Tedavinin başında ozmolalite azaldıkça su hücre içine kayar ve ölçülen sodyum geçici olarak yükselebilir; TEMD bunun hipotonik sıvı gerekliliği göstermediğini açıkça belirtir. %0,45 NaCl ancak uygun sıvı dengesi ve yeterli insüline rağmen ozmolalite düşmüyorsa düşünülür; bu hastada ozmolalite düşüyor. İnsülin 0,05 IU/kg/saat ile başlar, ilk saatte glukoz 50–75 mg/dL düşmezse artırılır; mental durum düzelene dek glukoz 200–250 mg/dL civarında tutulur. HHD'de tromboemboli riski yüksektir; kontrendikasyon yoksa heparin ya da DMAH önerilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ozmolalite düşerken görülen sodyum artışı beklenen bir kaymadır; hipotonik sıvıya geçişi gerektirmez.",
+        "B": "YANLIS — Glukozun saatte 120 mg/dL'den hızlı düşürülmesi serebral ödem riskini artırır.",
+        "C": "YANLIS — Tahmini 8–10 litre su açığı olan hastada sıvıyı kesmek dolaşımı bozar; insülin tek başına su kaydırır.",
+        "D": "DOGRU — Düşüş hızları hedefte; izotonik sıvı ve aynı insülin sürer, tromboprofilaksi eklenir.",
+        "E": "YANLIS — pH 7,34 ve HCO3 21 ile belirgin asidoz yoktur; HHD'de bikarbonatın yeri yoktur."
+      },
+      "etiketler": ["hiperozmolar hiperglisemik durum", "sodyum ve ozmolalite", "tromboprofilaksi"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 12"
+    },
+    {
+      "id": "s10",
+      "metin": "Yetmiş altı yaşında erkek, tip 2 diyabet ve evre 4 kronik böbrek hastalığı (eGFR 24 mL/dk/1,73 m²) ile izleniyor; glibenklamid 2×5 mg kullanıyor. Sabah evde bilinci bulanık bulunuyor, kapiller glukoz 34 mg/dL. Acilde 25 g intravenöz glukozla bilinci düzeliyor ve %10 dekstroz infüzyonu başlanıyor. İzleyen 6 saatte infüzyon hızı artırılmasına rağmen glukoz iki kez 48 ve 51 mg/dL'ye düşüyor.\n\nBu hastada bir sonraki en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "1 mg intramüsküler glukagon uygulayıp dekstroz infüzyonunu sonlandırmak",
+        "B": "Dekstroz infüzyonunu sürdürürken tedaviye oktreotid eklemek",
+        "C": "100 mg intravenöz hidrokortizon verip dekstroz hızını azaltmak",
+        "D": "Glukoz normale dönünce glibenklamid dozunu yarıya indirip taburcu etmek",
+        "E": "Hipoglisemi dirençli olduğu için ilacı uzaklaştırmak üzere acil hemodiyaliz yapmak"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Sülfonilüreye bağlı, glukoz infüzyonuyla kontrol edilemeyen ağır hipoglisemide dekstrozla birlikte oktreotid (ya da diazoksid) kullanılır. Glukagon insülin salınımını artıracağı için bu tabloda uygun değildir.",
+      "aciklama_detay": "Glibenklamid uzun etkili, aktif metabolitleri böbrekten atılan bir sülfonilüredir; ileri KBH'de birikerek uzamış ve tekrarlayan hipoglisemiye yol açar. Verilen her glukoz yükü beta hücresinden yeni insülin salınımını uyarır ve tablo 'rebound' hipoglisemilerle sürer. TEMD, sülfonilüreye bağlı ve glukoz infüzyonuyla kontrol edilemeyen ciddi hipoglisemide dekstrozla birlikte diazoksid ya da oktreotidin yararlı olabileceğini belirtir; oktreotid beta hücresinden insülin salınımını doğrudan baskılar. Aynı nedenle glukagon sülfonilüre hipoglisemisinde uygun değildir: kısa süreli glukoz yükselişi insülin salınımını daha da artırır. Hasta en az 24–72 saat monitörize edilmeli, glibenklamid kalıcı olarak kesilmeli ve ileri KBH'de güvenli bir ajana geçilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Glukagon sülfonilüre hipoglisemisinde insülin salınımını artırır; dekstrozu kesmek tehlikelidir.",
+        "B": "DOGRU — Dirençli sülfonilüre hipoglisemisinde oktreotid insülin salınımını baskılar.",
+        "C": "YANLIS — Adrenal yetmezlik bulgusu yok; hidrokortizon sülfonilüre etkisini ortadan kaldırmaz.",
+        "D": "YANLIS — Glibenklamid KBH'de birikir; hipoglisemi saatler-günler sürer, ilaç kalıcı kesilmelidir.",
+        "E": "YANLIS — Glibenklamid proteine yüksek oranda bağlıdır; hemodiyalizle etkin biçimde uzaklaştırılamaz."
+      },
+      "etiketler": ["hipoglisemi", "sülfonilüre", "oktreotid"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 12"
+    },
+    {
+      "id": "s11",
+      "metin": "Altmış sekiz yaşında erkek, 20 yıllık tip 2 diyabet ve evre 3b kronik böbrek hastalığı ile izleniyor. Sağ ayak ikinci parmağında 6 haftadır iyileşmeyen, temiz tabanlı, 1 cm'lik ülser var. Dorsalis pedis ve tibialis posterior nabızları zor alınıyor; aralıklı topallama tanımlamıyor.\n\nTetkikler:\nAyak bileği-kol indeksi (ABİ): sağ 1,52; sol 1,48\nDirekt grafi: tibial arterlerde boru şeklinde kalsifikasyon; kemik tutulumu yok\n\nBu hastada bir sonraki en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "ABİ normalin üstünde olduğundan periferik arter hastalığı dışlanmıştır; yerel yara bakımı sürdürülür",
+        "B": "ABİ'yi 1 ay sonra egzersiz sonrası ölçümle tekrarlayıp değişikliği izlemek",
+        "C": "Revaskülarizasyon olasılığını değerlendirmeden parmak amputasyonu planlamak",
+        "D": "Yara yüzeyinden sürüntü kültürü alıp ampirik antibiyotik başlamak",
+        "E": "Ayak başparmağı-kol indeksi ya da TcPO2 ile arteriyel akımı değerlendirmek"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "ABİ >1,40 damarın sağlam değil sert (medial kalsinoz) olduğunu düşündürür ve iskemiyi gizler. Dijital arterler kalsinozdan az etkilendiği için ayak başparmağı-kol indeksi (TBİ <0,70 tanısal) ya da TcPO2 ile değerlendirilmelidir.",
+      "aciklama_detay": "Normal ABİ 1,00–1,40 aralığındadır; ≤0,90 periferik arter hastalığını düşündürür. ABİ >1,40 ise ya üst ekstremitede ciddi arter hastalığı ya da medial kalsinoza bağlı komprese edilemeyen ayak arterlerini gösterir; özellikle KBH'li yaşlı diyabetlilerde sıktır. Bu durumda ABİ iskemiyi saklar. Medial kalsinoz dijital arterleri çok az etkilediği için ayak başparmağı-kol indeksi yararlıdır: TBİ <0,70 tanısaldır, TBİ >0,70 ya da yara çevresinden ölçülen TcPO2 >40 mmHg yeterli akımı düşündürür. Dupleks ultrasonografi de seçenektir. Nabızların zor alındığı ve 6 haftadır iyileşmeyen bir ülserde TEMD, 4–6 haftada iyileşmeyen lezyonun revaskülarizasyon açısından değerlendirilmesini ister; bunun ilk adımı akımın doğru ölçülmesidir. İskemik ülserde nöropati nedeniyle klodikasyon olmaması sık rastlanan bir yanılgı kaynağıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — ABİ >1,40 sertleşmiş damarı gösterir; iskemiyi dışlamaz, gizler.",
+        "B": "YANLIS — Komprese edilemeyen arterde egzersiz ABİ'si de güvenilmezdir; 6 haftalık ülserde gecikme kabul edilemez.",
+        "C": "YANLIS — Akım ölçülmeden ve revaskülarizasyon değerlendirilmeden amputasyon uygun değildir.",
+        "D": "YANLIS — Enfeksiyon bulgusu yok; yüzeyel sürüntü kolonizasyonu yansıtır ve önerilmez.",
+        "E": "DOGRU — Medial kalsinozda TBİ ya da TcPO2 gerçek arteriyel akımı gösterir."
+      },
+      "etiketler": ["periferik arter hastalığı", "medial kalsinoz", "diyabetik ayak"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 13–14"
+    },
+    {
+      "id": "s12",
+      "metin": "Elli dört yaşında kadın, 18 yıllık tip 2 diyabet ve periferik nöropati ile izleniyor. Üç haftadır sol ayağında şişlik ve kızarıklık var; ağrı tanımlamıyor, travma hatırlamıyor. Ayakta ülser ya da cilt bütünlüğünde bozulma yok. Orta ayak karşı tarafa göre belirgin sıcak (cilt ısı farkı 3 °C), ödemli ve eritemli. Monofilament duyusu alınmıyor.\n\nTetkikler:\nLökosit: 7800/mm³; CRP: 4 mg/L\nDirekt grafi: kemik yapıda belirgin değişiklik yok\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Selülit kabul edip 2 hafta oral amoksisilin-klavulanat başlamak",
+        "B": "Akut Charcot ayağı kabul edip ayağı hemen yükten kurtarmak, MR ile değerlendirmek ve diyabetik ayak merkezine yönlendirmek",
+        "C": "Grafi normal olduğu için Charcot dışlanmıştır; NSAİİ ile 4 hafta normal aktivitede izlemek",
+        "D": "Akut gut artriti kabul edip kolşisin başlamak ve ayağın kullanılmasına izin vermek",
+        "E": "Osteomiyelit olasılığı nedeniyle önce kemik biyopsisi yapmak"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Nöropatik diyabetlide sıcak, kırmızı, ödemli ve ağrısız ayak, aksi kanıtlanana dek akut Charcot ayağıdır. Erken dönemde grafi normal olabilir; hemen yük boşaltma ve immobilizasyon, MR ve deneyimli merkeze sevk gerekir.",
+      "aciklama_detay": "TEMD, diyabetli hastada ayağın sıcak, kırmızı, ödemli ve çoğunlukla ağrısız olmasını aksi ispat edilinceye kadar Charcot ayağı olarak değerlendirmeyi önerir. En sık orta ayak tutulur; tedavi edilmezse sertleşme döneminde sallanan iskemle tabanı deformitesi gelişir ve ülser-amputasyon riski belirgin artar. Akut dönemde direkt grafi normal olabilir; kemik iliği ödemi ve mikrokırıkları MR erken gösterir. Karşı ayağa göre ≥2 °C ısı farkı aktif Charcot'yu destekler. Kılavuz, olguların çoğunun yanlışlıkla enfeksiyon sanılıp antibiyotikle tedavi edildiğini vurgular. Ülser yokken ve inflamatuvar belirteçler normalken osteomiyelit olası değildir. Temel tedavi ayağın hemen yükten kurtarılmasıdır (tam temaslı alçı ya da çıkarılamayan yürüme botu); hasta vakit kaybetmeden diyabetik ayak merkezine ya da deneyimli bir ortopediste yönlendirilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ülser, giriş kapısı ve inflamatuvar yanıt yok; Charcot'yu selülit sanmak en sık hatadır.",
+        "B": "DOGRU — Akut Charcot'da yük boşaltma, MR ve sevk deformiteyi önler.",
+        "C": "YANLIS — Erken Charcot'da grafi normaldir; yüklenmeye devam etmek çöküşü hızlandırır.",
+        "D": "YANLIS — Gut tipik olarak çok ağrılıdır; ağrısız, nöropatik ayakta Charcot öncelikle düşünülmelidir.",
+        "E": "YANLIS — Açık yara ve inflamatuvar yanıt yokken osteomiyelit düşük olasılıklıdır; öncelik yük boşaltmadır."
+      },
+      "etiketler": ["Charcot ayağı", "diyabetik nöropati", "diyabetik ayak"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 14"
+    },
+    {
+      "id": "s13",
+      "metin": "Altmış bir yaşında erkek, tip 2 diyabetli; sağ birinci metatars başı altında 2 aydır süren, 2 cm çaplı nöropatik ülser var. Ateş ve sistemik bulgu yok; yara çevresinde 1 cm'lik eritem mevcut. Steril metal probla ülser tabanında kemiğe dokunuluyor.\n\nTetkikler:\nSedimantasyon: 88 mm/saat; CRP: 32 mg/L\nDirekt grafi: birinci metatars başında kortikal düzensizlik şüphesi\nYara yüzeyinden alınmış sürüntü kültürü: S. aureus, Enterococcus faecalis, Pseudomonas aeruginosa\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kemik biyopsisiyle etkeni belirleyip kemiğe iyi geçen ajanla 4–6 hafta tedavi etmek",
+        "B": "Sürüntü kültüründeki üç etkeni birden kapsayan bir antibiyotikle 2 hafta tedavi etmek",
+        "C": "Sistemik bulgu olmadığı için osteomiyeliti dışlayıp yalnızca debridman ve yük boşaltma uygulamak",
+        "D": "Antibiyotik vermeden gümüş içeren antimikrobiyal sargıyla iyileşmeyi hızlandırmaya çalışmak",
+        "E": "Grafi bulgusu kesinleşene dek 4 hafta bekleyip direkt grafiyi tekrarlamak"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Probla kemiğe dokunulması osteomiyeliti gösterir; sedimantasyonun >70 mm/saat olması destekler. Tanı ve etken için altın standart kemik biyopsisidir, yüzeyel sürüntü önerilmez; tedavi kemiğe iyi geçen ajanla 4–6 haftadır.",
+      "aciklama_detay": "TEMD'e göre kemik açıkta ya da steril metal probla dokunulabiliyorsa osteomiyelit vardır. Sedimantasyonun >70 mm/saat olması tanıyı destekler, ancak duyarlılığı düşüktür. Yüzeyel sürüntü kültürleri kolonizasyonu yansıttığı için önerilmez; bu hastadaki üç mikroorganizmalı sonuç tipik bir kolonizasyon tablosudur ve tedaviyi yanlış yönlendirir. Tanıda altın standart kemik biyopsi materyalinin histopatolojik ve mikrobiyolojik incelenmesidir. Osteomiyelitte kemiğe iyi penetre olan ajanlarla (örneğin kinolonlar) 4–6 haftalık tedavinin sıklıkla remisyon sağladığı gösterilmiştir; osteomiyeliti olmayan hafif yumuşak doku enfeksiyonlarında ise ortalama 2 hafta yeterlidir. Antimikrobiyal içeren sargılar enfeksiyonu önlemek ya da iyileşmeyi hızlandırmak amacıyla kullanılmamalıdır. Sepsis bulgusu olsaydı doku kültürü alınıp sonuç beklenmeden geniş spektrumlu ampirik tedavi başlanırdı.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Probla kemik teması osteomiyelittir; kemik biyopsisi ve 4–6 hafta hedefe yönelik tedavi.",
+        "B": "YANLIS — Sürüntü kolonizasyonu gösterir; osteomiyelitte 2 hafta yetersizdir.",
+        "C": "YANLIS — Diyabetik ayak osteomiyelitinde sistemik bulgu çoğunlukla yoktur; dışlamaz.",
+        "D": "YANLIS — Antimikrobiyal sargıların iyileşmeyi hızlandırmak için kullanılmaması önerilir.",
+        "E": "YANLIS — Probla kemik teması ve yüksek sedimantasyonla tanı kliniktir; beklemek kemik yıkımını ilerletir."
+      },
+      "etiketler": ["diyabetik ayak osteomiyeliti", "proba kemik teması", "antibiyotik süresi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 14"
+    },
+    {
+      "id": "s14",
+      "metin": "Otuz dört yaşında kadın, 9 yıldır tip 2 diyabetli; 10 haftalık gebe. Gebelik öncesi metformin ve lisinopril kullanıyormuş; gebeliği öğrenince lisinopril kesilmiş, insüline geçilmiş. Kan basıncı 124/78 mmHg. Önceki gebeliği sorunsuz geçmiş, başka preeklampsi risk faktörü tanımlanmıyor. Günde 5 mg folik asit kullanıyor.\n\nTEMD kılavuzuna göre preeklampsiden korunma için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Ek risk faktörü olmadığı için aspirin önerilmez; yalnızca kan basıncı izlenir",
+        "B": "20. gebelik haftasından sonra 75 mg/gün aspirin başlanır",
+        "C": "Aspirin ancak kan basıncı 140/90 mmHg'yi aştığında başlanır",
+        "D": "12. haftadan itibaren 100–150 mg/gün aspirin başlanıp doğuma dek sürdürülür",
+        "E": "Hemen 81 mg/gün aspirin başlanır ve 28. haftada kesilir"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "TEMD, kontrendikasyon yoksa tüm tip 1 ve tip 2 diyabetli gebelere preeklampsiyi önlemek için 12. haftadan itibaren 100–150 mg/gün aspirin başlanmasını ve gebelik sonlanıncaya dek sürdürülmesini önerir.",
+      "aciklama_detay": "Pregestasyonel diyabet (tip 1 ya da tip 2) başlı başına yüksek preeklampsi riskidir; ek risk faktörü aranmaz. TEMD'e göre kontrendikasyon yoksa 12. haftadan itibaren 100–150 mg/gün aspirin başlanmalı ve gebelik sonlanıncaya dek sürdürülmelidir; son kanıtlar daha düşük dozların preeklampsiyi önlemede yeterince etkili olmadığını göstermektedir. Gestasyonel diyabette ise rutin aspirin önerisi yoktur, ancak ek risk faktörü olan gebede düşünülebilir. Diyabetli gebede kan basıncı hedefi sistolik 110–135, diyastolik 80–85 mmHg'dır; ACE inhibitörü, ARB ve statinler gebelik öncesinde kesilmelidir. Konsepsiyondan en az 3 ay önce başlanan 5 mg/gün folik asit 12. haftadan sonra 0,4–1 mg/gün dozuna indirilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ek risk aranması gestasyonel diyabet için geçerlidir; pregestasyonel diyabet tek başına endikasyondur.",
+        "B": "YANLIS — 20. haftadan sonra başlamak geç kalır; 75 mg da kılavuzun önerdiği dozun altındadır.",
+        "C": "YANLIS — Aspirin önleyici amaçla verilir; hipertansiyonun gelişmesi beklenmez.",
+        "D": "DOGRU — 12. haftadan itibaren 100–150 mg/gün, gebelik sonlanıncaya dek.",
+        "E": "YANLIS — Doz düşük ve 28. haftada kesmek korumayı en riskli dönemde kaldırır."
+      },
+      "etiketler": ["pregestasyonel diyabet", "preeklampsi", "aspirin"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 15"
+    },
+    {
+      "id": "s15",
+      "metin": "Altmış dört yaşında kadın, tip 2 diyabetli; metformin 2×1000 mg ve yatarken insülin glarjin 18 IU ile HbA1c %7,1. Polimiyalji romatika tanısıyla her sabah 08.00'de prednizolon 20 mg başlanmış. Başlangıçtan 5 gün sonraki kapiller glukoz ölçümleri:\n\nSabah açlık (07.00): 84–96 mg/dL\nÖğle yemeği sonrası: 248–286 mg/dL\nAkşam yemeği öncesi: 262–310 mg/dL\nGece 03.00: 62–68 mg/dL\n\nTEMD kılavuzuna göre en uygun düzenleme hangisidir?",
+      "secenekler": {
+        "A": "Yatarken yapılan glarjin dozunu %50 artırmak",
+        "B": "Mevcut rejimi sürdürüp yalnızca >250 mg/dL değerlerde kaydırma ölçeğiyle insülin vermek",
+        "C": "Bazal insülini sabaha almak ve öğle-akşam öğünlerine prandiyal insülin eklemek",
+        "D": "Akşam yemeğinden önce glibenklamid eklemek",
+        "E": "Glukokortikoid hiperglisemisi geçici olduğu için tedaviyi değiştirmemek"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Sabah alınan orta etkili glukokortikoid öğleden sonra ve akşam hiperglisemisi yapar, açlık glukozu normal kalır, sabaha karşı hipoglisemi olabilir. TEMD bazal-bolus düzeni önerir ve gece bazal dozunun sabaha çekilebileceğini belirtir.",
+      "aciklama_detay": "Prednizolonun hiperglisemik etkisi alımdan birkaç saat sonra başlar, öğleden sonra ve akşam doruğa ulaşır, gece azalır. Bu yüzden glukokortikoid kullanan diyabetlide açlık glukozu nispeten normaldir; öğle ve akşam tokluk değerleri yükselir, sabaha karşı hipoglisemi bile görülebilir. Bu hastada gece 03.00'teki düşük değerler yatarken yapılan bazalın bu dönemde fazla geldiğini, gündüz yüksekleri ise insülinin yanlış zamanda olduğunu gösterir. TEMD, steroid başlandıktan sonra glukozun 48 saat izlenmesini, önceden insülin kullananlarda gereksinimin yaklaşık %50 artabileceğini, bazal-bolus rejimin kaydırma ölçeğinden daha güvenli ve etkili olduğunu ve sabah steroid alan hastada gece bazal dozunun sabaha çekilebileceğini belirtir. Steroid dozu azaltıldıkça insülin dozları da eşzamanlı düşürülmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Açlık zaten normal ve gece hipoglisemi var; yatarken dozu artırmak hipoglisemiyi derinleştirir.",
+        "B": "YANLIS — Kaydırma ölçeği tek başına hiperglisemiyi önlemez; TEMD bazal-bolusu daha güvenli bulur.",
+        "C": "DOGRU — İnsülin, steroid etkisinin doruğuna göre zamanlanır; gece hipoglisemisi de önlenir.",
+        "D": "YANLIS — Glibenklamid uzun etkilidir, steroid etkisi azaldığında gece hipoglisemisi yapar.",
+        "E": "YANLIS — Steroid haftalarca sürecek; 250–300 mg/dL düzeyleri tedavi gerektirir."
+      },
+      "etiketler": ["glukokortikoid hiperglisemisi", "bazal-bolus insülin", "özel durumlar"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2026 (17. baskı), Bölüm 18"
+    }
+  ]
+}

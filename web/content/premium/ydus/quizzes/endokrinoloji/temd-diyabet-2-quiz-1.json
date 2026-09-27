@@ -1,0 +1,368 @@
+{
+  "id": "quiz-endo-temd-diyabet-2-001",
+  "baslik": "TEMD Diyabet 2 — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "temd-diyabet-2",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Altmış altı yaşında kadın, diyabetik böbrek hastalığına bağlı son dönem böbrek yetersizliği nedeniyle sürekli ayaktan periton diyalizi uyguluyor; gece değişiminde ikodekstrin içeren solüsyon kullanıyor. İnsülin glarjin ve öğün insülini alıyor. Sabah terleme, çarpıntı ve konfüzyonla getiriliyor. Evde yakınının glukometreyle ölçtüğü kapiller glukoz 146 mg/dL. Acilde alınıp hemen analiz edilen venöz plazma glukozu 38 mg/dL; 25 g intravenöz glukozla belirtiler dakikalar içinde düzeliyor. Hematokrit %33, lökosit 7200/mm³.\n\nEvdeki ölçüm ile laboratuvar sonucu arasındaki farkın en olası açıklaması hangisidir?",
+      "secenekler": {
+        "A": "Yüksek hematokritin kapiller ölçümü yalancı yüksek göstermesi",
+        "B": "Maltozun GDH-PQQ enzimli şeritte glukoz olarak okunması",
+        "C": "Bekleyen tüpte glikoliz nedeniyle laboratuvar değerinin yalancı düşük çıkması",
+        "D": "İnterstisyel sıvı ile kan glukozu arasındaki 5–10 dakikalık fizyolojik gecikme",
+        "E": "Glukoz oksidaz yönteminin evdeki ortam oksijeninde yalancı düşük ölçmesi"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "İkodekstrinin yıkım ürünü maltoz, glukoz dehidrogenaz pirolokinolinkinon (GDH-PQQ) kullanan şeritlerde glukoz gibi okunur ve hipoglisemiyi maskeler. Bu hastalarda GDH-PQQ şeritler kullanılmamalı; NAD-GDH ya da glukoz oksidaz yöntemi tercih edilmelidir.",
+      "aciklama_detay": "Periton diyalizinde kullanılan ikodekstrin içerikli solüsyon sistemik dolaşıma geçer ve maltoza yıkılır. GDH-PQQ enzimi maltozu glukozdan ayırt edemediği için bu şeritler hatalı yüksek değer verir; hasta gerçek hipoglisemideyken ölçüm normal ya da yüksek görünür, hatta ek insülin verilmesine yol açabilir. TEMD, periton diyalizi hastalarında GDH-PQQ enzimli cihaz ve şeritlerin kullanılmamasını, hem cihazın hem de şeridin ölçüm yönteminin kontrol edilmesini ve NAD-GDH ya da glukoz oksidaz yöntemli sistemlerin tercih edilmesini önerir. Bu vakada örnek hemen analiz edilmiş ve hasta glukozla hızla düzelmiştir; bu da laboratuvar değerinin gerçek olduğunu, tüp içi glikolizin açıklama olmadığını gösterir. Yüksek hematokrit ise kapiller ölçümü yalancı düşük gösterir; hastanın hematokriti de zaten düşüktür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yüksek hematokrit yalancı düşük değer verir; hastanın hematokriti %33'tür.",
+        "B": "DOGRU — Maltoz GDH-PQQ şeritte glukoz olarak okunur ve hipoglisemiyi gizler.",
+        "C": "YANLIS — Örnek hemen analiz edilmiş ve hasta glukozla düzelmiş; hipoglisemi gerçektir.",
+        "D": "YANLIS — İnterstisyel gecikme sensörler için geçerlidir; kapiller glukometre kan ölçer.",
+        "E": "YANLIS — Oksijen tedavisi glukoz oksidaz ölçümünü etkileyebilir; bu hastada o durum yok ve fark çok büyük."
+      },
+      "etiketler": ["kapiller glukoz ölçümü", "periton diyalizi", "ölçüm etkileşimi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 1"
+    },
+    {
+      "id": "s2",
+      "metin": "Kırk beş yaşında erkek, 20 yıldır tip 1 diyabetli; Dexcom G7 sensörü ve çoklu doz insülin kullanıyor. Diz artroplastisi sonrası taburcu edilmiş, ağrı için 6 saatte bir 1000 mg parasetamol alıyor. Gece terleyerek uyanıyor; sensör 118 mg/dL gösteriyor ve alarm vermemiş, eşzamanlı parmak ucu glukozu 49 mg/dL. Sensör 4 gün önce kolun arka yüzüne takılmış; hasta sırtüstü yatıyormuş.\n\nBu uyumsuzluğun en olası nedeni ve uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kompresyon artefaktı; sensör basınç altında kalmayacak bir bölgeye taşınmalıdır",
+        "B": "Sensör hâlâ ısınma dönemindedir; ilk günlerin verileri dikkate alınmamalıdır",
+        "C": "Askorbik asit etkileşimidir; C vitamini içeren besinler kısıtlanmalıdır",
+        "D": "Yüksek doz parasetamol etkileşimi; kararlar kapiller ölçümle doğrulanmalıdır",
+        "E": "İnterstisyel gecikmedir; 10 dakika sonra sensör değerine göre davranılmalıdır"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Günde ≥4 g asetaminofen Dexcom G6, G7 ve Guardian Connect ölçümlerini hatalı yüksek gösterebilir ve hipoglisemiyi gizler. Etkileşen bir ilaç kullanıldığı sürece sistemin çalışması kapiller ölçümle izlenmelidir.",
+      "aciklama_detay": "Sensörlerdeki enzim reaksiyonu elektroaktif maddelerden etkilenebilir. TEMD, günde 4 g ve üzerinde asetaminofenin (örneğin 500 mg tabletten 4×2) Dexcom G6, G7 ve Guardian Connect ölçümlerini hatalı yüksek gösterebileceğini ve mevcut hipogliseminin saptanamamasına yol açabileceğini belirtir. Hidroksiüre de aynı sistemlerde benzer etki yapar; Eversense'te intravenöz ya da periton diyalizi solüsyonlarındaki mannitol ve sorbitol hatalı yüksek ölçüm yaptırır. Dexcom sensörlerindeki permselektif membran etkiyi azaltır ama ortadan kaldırmaz. Kılavuzun önerisi, etkileşen molekül kullanılırken sistemin kapiller ölçümle takip edilmesidir. Kompresyon artefaktı ise ters yönde, yalancı düşük değer üretir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kompresyon perfüzyonu azaltıp yalancı DÜŞÜK değer verir; burada sensör yüksek okuyor.",
+        "B": "YANLIS — Isınma süresi çoğu sistemde saatlerle sınırlıdır; sensör 4 gündür takılı.",
+        "C": "YANLIS — Askorbik asit etkileşimi Libre sistemlerinde tanımlanır ve takviye dozuyla ilgilidir.",
+        "D": "DOGRU — Yüksek doz parasetamol Dexcom ölçümünü yükseltir; kapiller doğrulama gerekir.",
+        "E": "YANLIS — Birkaç dakikalık gecikme 69 mg/dL'lik bir farkı açıklamaz; semptomatik hastada beklemek tehlikelidir."
+      },
+      "etiketler": ["sürekli glukoz izlemi", "ilaç etkileşimi", "parasetamol"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 2"
+    },
+    {
+      "id": "s3",
+      "metin": "Otuz iki yaşında kadın, tip 1 diyabetli; gerçek zamanlı sürekli glukoz izlemi (SGM) ve çoklu doz insülin kullanıyor. Son iki haftada gece 02.00–04.00 arasında birkaç kez 'düşük glukoz' alarmıyla uyanmış; sensör 52–58 mg/dL gösterirken belirtisi yok, o anda parmak ucu glukozu 128–140 mg/dL. Dönünce sensör değerleri dakikalar içinde yükseliyor. Sensörü kolunun arka yüzüne takıyor ve o tarafa yatarak uyuyor. Gündüz sensör ile parmak ucu değerleri uyumlu.\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kompresyon artefaktı deyip sensörün yerini değiştirmek",
+        "B": "Gece hipoglisemisi kabul edip bazal insülin dozunu %20 azaltmak",
+        "C": "Sensörü arızalı kabul edip SGM'yi bırakıp yalnızca parmak ucu ölçümüne dönmek",
+        "D": "Düşük glukoz alarm eşiğini 55 mg/dL'nin altına indirip alarmları susturmak",
+        "E": "Her gece yatmadan önce 15 g karbonhidrat almasını önermek"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Sensörün üzerine yatılması perfüzyonu azaltır ve yalancı düşük değer üretir (kompresyon hipoglisemisi); basınç kalkınca değer hızla düzelir. Çözüm tedaviyi değiştirmek değil sensörün yerini değiştirmektir.",
+      "aciklama_detay": "TEMD, sensöre dışarıdan doğrudan basınç uygulanmasının lokal perfüzyonu azaltarak glukozun yanlış düşük ölçülmesine yol açtığını belirtir; buna kompresyon artefaktı ya da kompresyon hipoglisemisi denir. Tipik imzası: uykuda, belirtisiz, parmak ucuyla doğrulanmayan ve pozisyon değişince dakikalar içinde düzelen ani düşüşlerdir. Kılavuz, özellikle uyurken yanlış hipoglisemi uyarılarından kaçınmak için sensörün takılacağı yerin dikkatle seçilmesini önerir. Sensör hipoglisemi gösterdiğinde tedaviden önce parmak ucu doğrulaması yapılması da bu tür artefaktların gereksiz tedaviye dönüşmesini önler. Bazal dozu azaltmak ya da yatmadan karbonhidrat vermek gerçek glukozu yükselterek gereksiz hiperglisemi yaratır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Uyku pozisyonuna bağlı, doğrulanmayan, hızla düzelen düşüş kompresyon artefaktıdır.",
+        "B": "YANLIS — Parmak ucu değerleri normal; bazal azaltmak gece hiperglisemisine yol açar.",
+        "C": "YANLIS — Gündüz ölçümler uyumlu; sensör arızalı değil, yeri uygun değil.",
+        "D": "YANLIS — Alarmları susturmak gerçek hipoglisemileri de kaçırtır; 55 mg/dL altı acil düşük alarmı bazı sistemlerde kapatılamaz.",
+        "E": "YANLIS — Gerçek hipoglisemi yok; gereksiz karbonhidrat gece hiperglisemisi yapar."
+      },
+      "etiketler": ["sürekli glukoz izlemi", "kompresyon artefaktı", "yalancı hipoglisemi"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 2 ve 4"
+    },
+    {
+      "id": "s4",
+      "metin": "Yetmiş iki yaşında erkek, 25 yıldır tip 2 diyabetli; koroner arter hastalığı ve evre 3a kronik böbrek hastalığı var. Akşam insülin glarjin 26 IU ve üç öğünde insülin aspart kullanıyor. 14 günlük SGM raporu:\n\nAktif sensör kullanımı: %94\nHedef aralıkta süre (70–180 mg/dL): %56\nHedef üstü süre: 181–250 mg/dL %26; >250 mg/dL %12\nHedef altı süre: 54–69 mg/dL %4,6; <54 mg/dL %1,4\nVaryasyon katsayısı (%CV): %42\nAGP: %5'lik eğri 01.00–05.00 arasında 70 mg/dL çizgisini kesiyor; öğle ve akşam yemeği sonrasında %50 eğrisi 220–240 mg/dL'ye çıkıyor.\n\nTEMD kılavuzuna göre tedavi düzenlemesine nereden başlanmalıdır?",
+      "secenekler": {
+        "A": "Hedef üstü süre en büyük sorun olduğundan öğle ve akşam bolus dozlarını artırmak",
+        "B": "Hedefte kalma süresini yükseltmek için glarjin dozunu artırmak",
+        "C": "Rapordaki veri yetersiz olduğundan karar vermeden 14 gün daha kayıt almak",
+        "D": "Glisemik değişkenlik hedefte olduğu için yalnızca beslenme eğitimi vermek",
+        "E": "Önce gece hipoglisemisi için glarjin dozunu azaltmak"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "AGP okumaya hipoglisemiden başlanır: %5'lik eğrinin 70 mg/dL çizgisini kestiği zaman dilimi tedavi düzenlemesinin başlangıç noktasıdır. İleri yaşta 70 mg/dL altı süre ≤%1 hedeflenir; bu hastada %6'dır.",
+      "aciklama_detay": "TEMD, ambulatuvar glukoz profili değerlendirilirken önce hedef altında geçirilen sürenin ele alınmasını ve tedavinin bu süre önceliklendirilerek düzenlenmesini önerir. Raporda alt hedef çizgisine değen bir yüzdelik eğri varsa (burada %5'lik eğri 01.00–05.00 arasında) düzenleme oradan başlar; gece yarısından sabaha uzanan bu örüntü aşırı bazal insülini düşündürür. İleri yaş ve yüksek riskli hastalarda 70 mg/dL altında geçen sürenin ≤%1 olması hedeflenir; daha genç bireylerde ≤%4 tolere edilir ama öncelik yine hipoglisemidir. Hipogliseminin düzeltilmesi ardından gelen rebound hiperglisemiyi de önleyerek glisemik değişkenliği azaltır; bu hastanın %CV'si %42'dir (hedef ≤%36). Rapor yeterli veri içerir (aktif kullanım >%70). Hipoglisemi giderildikten sonra tokluk hiperglisemisi için bolus dozları ele alınır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bolus artışı hipoglisemi çözülmeden yapılırsa hedef altı süreyi daha da artırır.",
+        "B": "YANLIS — Gece hipoglisemisinin kaynağı büyük olasılıkla bazaldır; artırmak tehlikelidir.",
+        "C": "YANLIS — Aktif kullanım %94; rapor karar için yeterlidir.",
+        "D": "YANLIS — %CV %42, hedef olan ≤%36'nın üzerindedir.",
+        "E": "DOGRU — Önce hipoglisemi (gece, bazal) düzeltilir; ardından tokluk hiperglisemisi ele alınır."
+      },
+      "etiketler": ["ambulatuvar glukoz profili", "hedef altı süre", "yaşlı diyabetli"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 2"
+    },
+    {
+      "id": "s5",
+      "metin": "Otuz dokuz yaşında kadın, tip 1 diyabetli; aralıklı taramalı SGM kullanıyor. Kontrole getirdiği 14 günlük raporda şu değerler var:\n\nAktif sensör verisi: %54 (gün içinde 8 saati aşan çok sayıda veri boşluğu)\nHedef aralıkta süre: %76\nHedef altı süre: %2\nGlukoz yönetim göstergesi (GMI): %6,7\nLaboratuvar HbA1c: %8,3\n\nBu rapor için en doğru yorum hangisidir?",
+      "secenekler": {
+        "A": "Hedefte süre %70'in üzerinde olduğundan mevcut tedavi değiştirilmeden sürdürülmelidir",
+        "B": "GMI laboratuvar HbA1c'sinden daha güvenilirdir; HbA1c'nin hatalı olduğu kabul edilmelidir",
+        "C": "Aktif veri %70'in altında; rapor karar için yetersizdir, yeniden kayıt alınmalıdır",
+        "D": "Hedef altı süre %4'ün altında olduğundan bazal insülin dozu güvenle artırılabilir",
+        "E": "Veri boşlukları sensörün arızalı olduğunu gösterir; farklı marka bir sensöre geçilmelidir"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Standart SGM raporu 14 günlük izlem ve bu sürenin en az %70'inde aktif veri ister. Taramalı sensör yaklaşık 8 saatlik veri depoladığından 8 saati aşan tarama aralıkları kalıcı veri kaybıdır; bu rapordaki metrikler güvenilir değildir.",
+      "aciklama_detay": "TEMD, klinik karar için standartlaştırılmış SGM raporunda 14 günlük kullanım ve bu süre boyunca verilerin en az %70'inin aktif olmasını ister; yalnızca bu koşulu sağlayan raporlar değerlendirilmelidir. Aralıklı taramalı sensörlerde okuyucu ya da telefon sensörü taramadığında veriler sınırlı süre saklanır; 8 saati aşan boşluklar kalıcı veri kaybıdır. Bu hastada verinin yaklaşık yarısı eksiktir ve eksik dönemler rastgele değildir; hastanın taramadığı saatler (gece, iş saatleri, yüksek glukozlu dönemler) sistematik olarak dışarıda kalabilir. Metrikleri iyi gösteren rapor ile HbA1c %8,3 arasındaki uyumsuzluk da bu seçim yanlılığıyla uyumludur. Doğru adım, düzenli tarama (en az 8 saatte bir) ya da alarmlı gerçek zamanlı sisteme geçiş konusunda eğitim ve yeterli verili yeni bir rapordur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Veri %54 aktifken hedefte süre gerçeği yansıtmaz; HbA1c de tabloyla çelişiyor.",
+        "B": "YANLIS — GMI eksik veriden hesaplanmıştır; tek başına HbA1c'yi geçersiz kılamaz.",
+        "C": "DOGRU — %70 aktif veri eşiği karşılanmadan rapor klinik karar için kullanılmaz.",
+        "D": "YANLIS — Eksik veriyle hipoglisemi süresi de güvenilir değildir; doz artırmak riskli olabilir.",
+        "E": "YANLIS — Taramalı sensörde 8 saati aşan boşluk tarama sıklığının sonucudur, arıza değildir."
+      },
+      "etiketler": ["SGM raporu", "aktif veri oranı", "aralıklı taramalı SGM"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 2"
+    },
+    {
+      "id": "s6",
+      "metin": "Yirmi dokuz yaşında kadın, 14 yıldır tip 1 diyabetli, 11 haftalık gebe; gerçek zamanlı SGM ve çoklu doz insülin kullanıyor. Gebelik boyunca hangi glisemik hedefleri izleyeceğini soruyor.\n\nTEMD kılavuzuna göre bu hasta için doğru hedef tanımı hangisidir?",
+      "secenekler": {
+        "A": "SGM'de 63–140 mg/dL aralığında ≥%70 süre; açlık <95, 1. saat <140, 2. saat <120 mg/dL kapiller hedefleri de sürer",
+        "B": "SGM'de 70–180 mg/dL aralığında ≥%70 süre; SGM kullanıldığı için öğün öncesi ve sonrası kapiller hedeflere artık gerek kalmaz",
+        "C": "SGM'de 63–140 mg/dL aralığında ≥%50 süre; hedef altı sürenin alt sınırı 54 mg/dL olarak alınır",
+        "D": "Yalnızca HbA1c <%7 hedeflenir; gebelikte SGM'ye dayalı hedefler henüz tanımlanmamıştır",
+        "E": "SGM'de 70–140 mg/dL aralığında ≥%90 süre; hedef altı süre için eşik 70 mg/dL'dir"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Tip 1 diyabetli gebede SGM hedef aralığı 63–140 mg/dL, bu aralıkta ≥%70 süre hedeflenir; hedef altı süre için alt eşik 63 mg/dL'dir. Kılavuz, parmak ucu hedeflerinin (açlık <95, 1. saat <140, 2. saat <120 mg/dL) SGM hedefleriyle birlikte sürdürülmesini önerir.",
+      "aciklama_detay": "TEMD, gebe ve tip 1 diyabetli SGM kullanıcıları için hedef aralığı 63–140 mg/dL olarak tanımlar ve bu aralıkta geçirilen sürenin ≥%70 olmasını hedefler; tip 2 diyabetli gebede daha yüksek bir oran hedeflenmelidir, ancak tip 2 diyabet ve gestasyonel diyabet için net hedef henüz yoktur. Hedef altı süre ve hedefte süre hesabında alt eşik 63 mg/dL (3,5 mmol/L) kabul edilir. Önemli bir ayrıntı, SGM hedeflerinin kapiller hedeflerin yerine değil yanına eklenmesidir: gebelikte öğün öncesi ve sonrası parmak ucu hedefleri (açlık <95, 1. saat <140, 2. saat <120 mg/dL) geçerliliğini korur. Dexcom G7 ve Libre sensörler gebelikte verileriyle doğrudan tedavi kararı verilebilecek şekilde onaylıdır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — 63–140 mg/dL'de ≥%70 süre ve kapiller hedefler birlikte kullanılır.",
+        "B": "YANLIS — 70–180 mg/dL gebelik dışı aralıktır; kapiller hedefler gebelikte sürer.",
+        "C": "YANLIS — Tip 1 diyabetli gebede hedef ≥%70'tir ve alt eşik 63 mg/dL'dir.",
+        "D": "YANLIS — Gebelikte SGM hedefleri tanımlıdır; HbA1c tek başına yetersizdir.",
+        "E": "YANLIS — Aralık ve eşik gebelik için tanımlanan değerler değildir."
+      },
+      "etiketler": ["gebelik", "SGM hedefleri", "tip 1 diyabet"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 2"
+    },
+    {
+      "id": "s7",
+      "metin": "Otuz bir yaşında, tip 1 diyabetli gebe (10. hafta); çoklu doz insülin ve günde 7 parmak ucu ölçümüyle HbA1c %6,9. Gerçek zamanlı SGM'ye geçmenin kendisine ve bebeğine ne kazandıracağını soruyor.\n\nCONCEPTT çalışmasının bulgularına göre en doğru bilgilendirme hangisidir?",
+      "secenekler": {
+        "A": "HbA1c'yi yaklaşık 1 puan düşürür, maternal ağır hipoglisemiyi ve hipoglisemide geçen süreyi belirgin olarak azaltır",
+        "B": "Sezaryen oranını ve konjenital malformasyon sıklığını anlamlı olarak azaltır",
+        "C": "HbA1c farkı küçüktür; hedefte süre artar, iri bebek, neonatal hipoglisemi ve yenidoğan yoğun bakım yatışı azalır",
+        "D": "Gebelikte SGM'nin fetüs için kanıtlanmış bir yararı yoktur; yalnızca ölçüm konforu sağlar",
+        "E": "Hipoglisemide geçen süreyi yarıya indirir, ancak yenidoğan sonlanımlarını değiştirmez"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "CONCEPTT'te gerçek zamanlı SGM HbA1c'de yalnızca küçük bir fark (ortalama −%0,19) yarattı, hedefte süreyi artırdı; ancak klinik yansıması belirgindi: daha az iri bebek, daha az neonatal hipoglisemi ve daha kısa yenidoğan yoğun bakım yatışı.",
+      "aciklama_detay": "CONCEPTT, 18–40 yaş arasındaki tip 1 diyabetli gebelerde ve gebelik planlayan kadınlarda gerçek zamanlı SGM ile parmak ucu izlemini karşılaştıran randomize kontrollü bir çalışmadır. Gebelik kolunda SGM grubunda HbA1c farkı küçüktü (ortalama −%0,19); hedefte süre %68'e karşı %61, hiperglisemide süre %27'ye karşı %32 bulundu, hipoglisemide geçen sürede anlamlı fark yoktu. Buna karşın gebelik yaşına göre iri bebek doğumu, neonatal hipoglisemi ve 24 saati aşan yenidoğan yoğun bakım yatışları anlamlı azaldı. Çalışmanın dersi, HbA1c'deki küçük farkın klinik kazancı yansıtmadığıdır: glisemik maruziyetin zaman içindeki dağılımı fetal sonuçlar için belirleyicidir. Bu nedenle TEMD tip 1 diyabetli gebede SGM'yi destekler.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — HbA1c farkı yalnızca yaklaşık 0,19 puandı; hipoglisemi süresi anlamlı değişmedi.",
+        "B": "YANLIS — Sezaryen oranında anlamlı fark yoktu; malformasyon çalışmanın sonlanımı değildi.",
+        "C": "DOGRU — Küçük HbA1c farkına karşın belirgin yenidoğan kazancı CONCEPTT'in ana bulgusudur.",
+        "D": "YANLIS — Yenidoğan sonlanımlarında anlamlı iyileşme gösterildi.",
+        "E": "YANLIS — Hipoglisemi süresi değişmedi; asıl kazanç yenidoğan sonlanımlarındaydı."
+      },
+      "etiketler": ["CONCEPTT", "gebelik", "gerçek zamanlı SGM"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 6; CONCEPTT (Feig ve ark., Lancet 2017)"
+    },
+    {
+      "id": "s8",
+      "metin": "Otuz yedi yaşında kadın, tip 1 diyabetli, 70 kg. Çoklu doz insülinle HbA1c %6,8; ciddi hipoglisemi öyküsü yok. Günlük dozu insülin degludek 24 IU ve toplam 26 IU öğün insülini. İnsülin pompasına geçilecek.\n\nTEMD kılavuzuna göre başlangıç pompa ayarı için en uygun hesap hangisidir?",
+      "secenekler": {
+        "A": "Toplam doz 50 IU olarak aynen korunur; bazal 24 IU/gün, yani 1,0 IU/saat verilir",
+        "B": "Toplam doz 60 IU'ya çıkarılır; bazal 36 IU/gün, yani 1,5 IU/saat verilir",
+        "C": "Toplam doz 25 IU'ya indirilir; bazal 12 IU/gün, yani 0,5 IU/saat verilir",
+        "D": "Toplam doz 50 IU korunur ve tamamı bazal olarak 2,1 IU/saat verilir, öğün bolusu kullanılmaz",
+        "E": "Toplam doz %10–20 azaltılarak 40–45 IU; bunun %40–50'si bazal, yaklaşık 0,7–0,9 IU/saat"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Çoklu doz rejimle hedefte (HbA1c <%7) olan hastada pompa başlangıç toplam dozu önceki toplam dozun %10–20 altında seçilir; bunun %40–50'si bazal oran olarak verilir. 50 IU → 40–45 IU → bazal 16–22 IU/gün ≈ 0,7–0,9 IU/saat.",
+      "aciklama_detay": "TEMD'e göre pompa öncesi kronik glisemi düzeyi başlangıç ayarını belirler. Çoklu doz rejimiyle glisemik hedeflere ulaşmış bir kişide (örneğin HbA1c <%7) pompa ile başlangıç toplam günlük dozu, önceki rejimin toplam dozundan (hem uzun hem kısa etkili insülin dahil) %10–20 daha az olabilir; pompada insülin emilimi daha öngörülebilir olduğu için aynı doz hipoglisemiye yol açabilir. Hedefin üzerinde, hipoglisemisi olmayan yüksek HbA1c'li bireyler ise aynı dozla başlatılabilir. Toplam günlük insülinin yaklaşık %40–50'si bazal oran olarak uygulanır; yetişkinde bu genellikle 0,01–0,015 IU/kg/saattir (70 kg için 0,7–1,05 IU/saat), iki hesap birbirini doğrular. Önce tek bazal hızla başlanır, 2–3 günde bir glukoz düzeyine göre ayar yapılır; dawn fenomeni gibi örüntüler için daha sonra farklı bazal dilimler eklenir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Aynı dozla başlamak yüksek HbA1c'li hastalar içindir; bu hasta hedefte.",
+        "B": "YANLIS — Dozu artırmak ve bazalı %60'a çıkarmak hipoglisemiye yol açar.",
+        "C": "YANLIS — Yarı doz belirgin hiperglisemi ve ketoz riskine yol açar.",
+        "D": "YANLIS — Pompada öğün insülini bolus olarak verilir; tüm dozu bazal vermek hem gece hipoglisemisi hem tokluk hiperglisemisi yapar.",
+        "E": "DOGRU — %10–20 azaltılmış toplam dozun %40–50'si bazal; kiloya göre hesapla da uyumlu."
+      },
+      "etiketler": ["insülin pompası", "bazal oran", "doz hesaplama"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 3"
+    },
+    {
+      "id": "s9",
+      "metin": "Yirmi altı yaşında erkek, tip 1 diyabetli; zayıf yapılı ve insüline duyarlı, pompada toplam günlük dozu 40 IU. Hedef glukoz 120 mg/dL. Akşam yemeği öncesi glukoz 204 mg/dL; pompada aktif insülin yok. Yiyeceği öğünün karbonhidrat içeriği 66 g.\n\nTEMD kılavuzundaki formüller (insüline duyarlı bireyde KH/İ = 450/TİD; İDF = 1700/TİD) kullanıldığında bu öğün için toplam bolus dozu yaklaşık kaç IU'dur?",
+      "secenekler": {
+        "A": "Yaklaşık 6 IU; yalnızca öğün dozu verilir, düzeltme eklenmez",
+        "B": "Yaklaşık 8 IU; öğün dozu 6 IU ve düzeltme dozu 2 IU",
+        "C": "Yaklaşık 11 IU; öğün dozu 9 IU ve düzeltme dozu 2 IU",
+        "D": "Yaklaşık 3 IU; yalnızca düzeltme verilir, öğün dozu yemekten sonra",
+        "E": "Yaklaşık 16 IU; toplam günlük dozun %40'ı öğün dozu olarak"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "KH/İ = 450/40 ≈ 11 g/IU → 66 g için yaklaşık 6 IU. İDF = 1700/40 ≈ 42 mg/dL/IU → (204 − 120)/42 ≈ 2 IU. Toplam yaklaşık 8 IU.",
+      "aciklama_detay": "İnsülin-karbonhidrat oranı (KH/İ), 1 IU insülinin karşıladığı karbonhidrat gramını gösterir. TEMD pratik hesapta insülin direnci olan ya da obez hastalarda 300/TİD, insüline duyarlı zayıf hastada 450/TİD formülünü önerir (alternatif: 5,7 × ağırlık/TİD). Bu hastada 450/40 ≈ 11,25 g/IU; 66 g karbonhidrat için 66/11,25 ≈ 5,9 IU. İnsülin düzeltme (duyarlılık) faktörü İDF = 1700/TİD (dirençlide 1500, duyarlıda 1800 seçilebilir) ya da 4,44 × KH/İ ile hesaplanır: 1700/40 ≈ 42,5 mg/dL/IU. Hedefin üzerindeki 84 mg/dL için 84/42,5 ≈ 2 IU düzeltme gerekir. Aktif insülin olmadığı için düşülecek bir şey yoktur; toplam yaklaşık 8 IU. Oranlar ilk haftalarda tokluk ölçümüne göre (2. saatte öğün öncesine göre yaklaşık 60 mg/dL artış beklenir) %10–20'lik adımlarla ayarlanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Glukoz hedefin 84 mg/dL üzerinde; düzeltme dozu eklenmelidir.",
+        "B": "DOGRU — Öğün 66/11,25 ≈ 6 IU + düzeltme 84/42,5 ≈ 2 IU.",
+        "C": "YANLIS — Öğün dozu dirençli hasta formülüyle (300/TİD) hesaplanmış; bu hasta insüline duyarlı.",
+        "D": "YANLIS — Öğün bolusunu yemekten sonraya bırakmak tokluk hiperglisemisini artırır.",
+        "E": "YANLIS — Öğün dozu karbonhidrat miktarına göre hesaplanır; toplam dozun sabit bir oranı değildir."
+      },
+      "etiketler": ["karbonhidrat sayımı", "insülin duyarlılık faktörü", "bolus hesabı"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 3"
+    },
+    {
+      "id": "s10",
+      "metin": "Otuz dört yaşında kadın, tip 1 diyabetli; insülin pompası kullanıyor, SGM kullanmıyor. Öğleden sonraları tekrarlayan hafif hipoglisemi tanımlıyor. Bazal hızı değerlendirmek için bir gün öğle yemeğini ve öğle bolusunu atlıyor.\n\nÖlçümler:\nÖğle öncesi (12.00): 128 mg/dL\n14.00: 104 mg/dL\nAkşam yemeği öncesi (18.00): 66 mg/dL\n\nTEMD kılavuzuna göre en uygun yorum ve düzenleme hangisidir?",
+      "secenekler": {
+        "A": "Düşüş kabul edilebilir sınırdadır; bazal doğrudur, öğle KH/İ oranı değiştirilmelidir",
+        "B": "Öğle yemeği atlandığı için test geçersizdir; öğün alınarak tekrarlanmalıdır",
+        "C": "Bazal hız yetersizdir; öğleden sonraki bazal hız artırılmalıdır",
+        "D": "Öğleden sonra bazal hız fazladır; düşüşün başladığı saatten yaklaşık 2 saat önceden azaltılmalıdır",
+        "E": "Günün tüm bazal hızları %30 azaltılmalı ve ertesi gün aynı öğle öğünü yeniden atlanarak test tekrarlanmalıdır"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Öğün atlama testinde öğün öncesi, 2 saat sonra ve bir sonraki öğün öncesi değerler arasındaki farkın <35 mg/dL olması beklenir. Burada düşüş 62 mg/dL; öğleden sonra bazal fazladır. Emilim gecikmesi nedeniyle bazal hız, değişiklik gereken dönemden yaklaşık 2 saat önce değiştirilir.",
+      "aciklama_detay": "TEMD, bazal infüzyon hızının uygunluğunun öğün atlama yöntemiyle değerlendirilebileceğini belirtir: değerlendirilecek öğünde yemek yenmez ve bolus verilmez; öğün öncesi, 2 saat sonra ve bir sonraki öğün öncesi glukoz ölçülür. Değerler arasındaki farkın <35 mg/dL olması beklenir; daha büyükse o dönemi etkileyen bazal hız değiştirilir. Bu hastada 12.00–18.00 arasında 62 mg/dL düşüş vardır ve öğün ile bolus olmadığına göre düşüşü bazal yapıyordur. Cilt altı hızlı etkili insülinde bazal hız değişikliğinin plazma düzeyine yansıması gecikmeli olduğundan hız, ihtiyacın değiştiği saatten yaklaşık 2 saat önce ayarlanmalıdır. Kılavuz her gün farklı bir öğünün atlanarak bütün günün sırayla test edilmesini önerir; SGM kullanan hastada bu teste gerek kalmaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Düşüş 62 mg/dL; 35 mg/dL eşiğini aşar ve bolus verilmediği için KH/İ ile ilgisi yoktur.",
+        "B": "YANLIS — Testin kendisi öğünü ve bolusu atlamaktır; geçerlidir.",
+        "C": "YANLIS — Glukoz düşüyor; bazal yetersiz değil fazladır.",
+        "D": "DOGRU — Fark >35 mg/dL: ilgili dilimde bazal azaltılır, değişiklik 2 saat önceden yapılır.",
+        "E": "YANLIS — Sorun öğleden sonra dilimindedir; tüm günü azaltmak diğer saatlerde hiperglisemi yapar."
+      },
+      "etiketler": ["insülin pompası", "bazal test", "öğün atlama yöntemi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 3"
+    },
+    {
+      "id": "s11",
+      "metin": "Yirmi dört yaşında erkek, tip 1 diyabetli; 6 aydır hibrit kapalı döngü (otomatik insülin iletim) sistemi kullanıyor. İlk 3 ayda HbA1c %7,9'dan %7,0'a inmiş, son kontrolde %7,8. Otomatik modda kalma oranı %95. Pompa kayıtlarında son 2 ayda öğle ve akşam öğünlerinin çoğunda bolus girilmemiş; hasta 'sistem artık kendisi ayarlıyor' diye düşünüyor. Tokluk glukozu sıklıkla 250–300 mg/dL.\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Otomatik modda glukoz hedefini 120 mg/dL'ye yükseltmek",
+        "B": "Öğün bolusunun hastanın görevi olduğunu anlatıp bolus eğitimini yinelemek",
+        "C": "Otomatik moddan çıkıp manuel moda geçmek",
+        "D": "Programlı bazal hızları %30 artırmak",
+        "E": "Pompaya ek olarak akşamları uzun etkili insülin enjeksiyonu ekleyip otomatik modu sürdürmek"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Hibrit sistem bazal insülini ve bazılarında düzeltme dozlarını otomatik ayarlar, ancak öğün bolusunu kullanıcı belirler ve uygular; sisteme 'hibrit' denmesinin nedeni budur. Atlanan öğün bolusu tokluk hiperglisemisinin ve HbA1c artışının nedenidir.",
+      "aciklama_detay": "Hibrit kapalı döngü sistemi, manuel moddaki sabit bazal yerine algoritmanın belirlediği ve her beş dakikada bir değişen mini boluslar verir; bazı gelişmiş sistemler otomatik düzeltme dozu da uygular. Ancak öğün öncesi bolusu kullanıcının belirleyip vermesi gerekir; doz KH/İ oranı ve düzeltme faktörüyle hesaplanır, pompanın bolus hesaplayıcısı işi kolaylaştırır. Algoritma yemek sonrası yükselen glukozu ancak gecikmeli ve sınırlı ölçüde karşılayabilir. TEMD, otomatik insülin iletiminde ilk 3–6 ayın kritik dönem olduğunu ve başarının otomatik modda yüksek kalmaya (yaklaşık %90) bağlı olduğunu vurgular; bu hastada otomatik mod oranı yüksektir ama öğün bolusları eksiktir. Çözüm cihaz ayarı değil yeniden eğitimdir: karbonhidrat sayımı ve bolusun öğünden önce verilmesi.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Hedefi yükseltmek ortalama glukozu daha da artırır; sorun bolus eksikliğidir.",
+        "B": "DOGRU — Hibrit sistemde öğün bolusu hastanın sorumluluğundadır; eğitim sorunu çözer.",
+        "C": "YANLIS — Otomatik mod iyi kullanılıyor; manuele geçmek kazancı kaybettirir.",
+        "D": "YANLIS — Otomatik modda programlı bazal kullanılmaz; bazal artışı öğün eksikliğini karşılamaz.",
+        "E": "YANLIS — Otomatik sisteme ek uzun etkili insülin hipoglisemi ve algoritma karmaşası yaratır."
+      },
+      "etiketler": ["otomatik insülin iletimi", "hibrit kapalı döngü", "öğün bolusu"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 3"
+    },
+    {
+      "id": "s12",
+      "metin": "Elli iki yaşında kadın, tip 2 diyabetli; bazal-bolus insülin enjeksiyonlarını karın bölgesine yapıyor. Yeni başladığı aralıklı taramalı SGM sensörünü de karnına, enjeksiyon yaptığı alanın içine, göbeğin 2 cm yanına takmış. Öğün insülini enjeksiyonlarından sonra sensör değerleri parmak ucu ölçümlerinden belirgin farklı çıkıyor. Muayenede aynı bölgede lipohipertrofi var.\n\nEn uygun öneri hangisidir?",
+      "secenekler": {
+        "A": "Sensör değerlerine öncelik verip öğün insülin dozlarını sensöre göre azaltmak",
+        "B": "Sensörü aynı bölgede tutup her ölçümü parmak ucu değeriyle karşılaştırarak düzeltmek",
+        "C": "Enjeksiyonları sensörün yanına yapmayı sürdürüp SGM kullanımını bırakmak",
+        "D": "Sensörü emilimi yavaş olan lipohipertrofik alana bilerek takmak",
+        "E": "Sensörü sağlam cilde, enjeksiyon bölgesinden en az 2,5 cm uzağa takmak"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Sensör yara izi, ben, çatlak ya da yumru bulunan bölgelere takılmamalı ve çoğu sensör için insülin enjeksiyon bölgesinden en az 2,5 cm uzakta olmalıdır. Lipohipertrofi ayrıca enjeksiyon bölgesi rotasyonu gerektirir.",
+      "aciklama_detay": "Sensör uygulandığında cildin hemen altına 4–5 mm'lik bir filament yerleşir ve interstisyel sıvıdaki glukozu ölçer. Enjekte edilen insülin lokal glukoz kullanımını ve doku sıvısını değiştirerek sensör okumalarını bozabilir; bu yüzden TEMD çoğu sensör için insülin enjeksiyon bölgesinden en az 2,5 cm uzak bir bölge seçilmesini önerir. Yara izi, ben, çatlak ya da yumru (lipohipertrofi dahil) bulunan alanlardan da kaçınılmalıdır, çünkü değişmiş dokuda perfüzyon ve interstisyel sıvı dinamiği farklıdır. Kolun arka yüzü çoğu sistem için uygun bir yerdir. Lipohipertrofi aynı zamanda insülin emilimini düzensizleştirip glisemik değişkenliği artırır; hastaya enjeksiyon bölgesi rotasyonu ve iğne tekrar kullanımından kaçınma eğitimi verilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Enjeksiyon alanındaki sensör güvenilir değildir; dozu buna göre azaltmak hatalıdır.",
+        "B": "YANLIS — Sorun kalibrasyon değil yerleşim yeridir; bu sensör fabrika kalibrasyonludur.",
+        "C": "YANLIS — SGM'yi bırakmak gereksizdir; sensörün yeri değiştirilmelidir.",
+        "D": "YANLIS — Lipohipertrofik alan hem sensör hem insülin için kaçınılması gereken bölgedir.",
+        "E": "DOGRU — Sağlam cilt ve enjeksiyondan en az 2,5 cm uzaklık önerilir."
+      },
+      "etiketler": ["sensör yerleşimi", "lipohipertrofi", "SGM"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 4"
+    },
+    {
+      "id": "s13",
+      "metin": "Otuz yaşında kadın, tip 1 diyabetli; insülin pompası kullanıyor, uzun etkili insülini yok. Sabah glukozu 318 mg/dL; pompadan iki kez düzeltme bolusu vermesine rağmen 3 saat sonra 342 mg/dL. Bulantısı başlamış. Kan ketonu 1,8 mmol/L. İnfüzyon setini ve rezervuarı 4 gündür değiştirmediği, kanül bölgesinde hafif kızarıklık olduğu öğreniliyor. Kusması yok, ağızdan sıvı alabiliyor.\n\nEn uygun ilk yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kalem ya da enjektörle cilt altı düzeltme dozu yapmak, set ve rezervuarı yeni bölgede yenilemek, sıvı alıp keton izlemek",
+        "B": "Pompadan üçüncü kez düzeltme bolusu verip 3 saat sonra glukozu yeniden ölçmek",
+        "C": "Hipoglisemi riskine karşı geçici bazal hızı %50 azaltmak",
+        "D": "Pompayı durdurup glukoz 250 mg/dL'nin altına inene kadar insülin vermemek",
+        "E": "Kan ketonu 3 mmol/L'yi aşmadıkça herhangi bir değişiklik yapmamak"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Pompada yalnızca hızlı etkili insülin vardır; iletim durursa birkaç saatte ketoz gelişir. Düzeltme bolusuna yanıt yoksa iletim sorunu varsayılır: insülin kalem/enjektörle verilir, set ve rezervuar değiştirilir. TEMD teknik sorunda alternatif insülin tedavisiyle devam etmeyi önerir.",
+      "aciklama_detay": "Pompa kullanıcısında cilt altında depo bazal insülin bulunmadığından, set tıkanması, kanül kıvrılması, bölge enflamasyonu ya da rezervuar sorunu gibi iletim kesintileri birkaç saat içinde hiperglisemi ve ketoza yol açar. İki düzeltme bolusuna yanıt alınamaması iletim sorununun güçlü işaretidir; aynı yoldan bolus tekrarlamak sorunu çözmez. TEMD, pompa rezervuarının 2–3 günde bir değiştirilmesini, insülin iletim sistemlerinde teknik sorun yaşandığında çözüm sağlanana kadar alternatif insülin tedavisiyle devam edilmesini önerir. Pratikte düzeltme dozu kalemle cilt altına yapılır, set ve rezervuar farklı bölgede yenilenir, bol sıvı alınır, glukoz ve keton 1–2 saatte bir izlenir; kusma, keton yükselmesi ya da bilinç değişikliği gelişirse acile başvurulur. Kanül bölgesindeki kızarıklık emilimi bozabilen lokal enflamasyonun işaretidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — İletim şüphesinde insülin alternatif yoldan verilir ve set/rezervuar yenilenir.",
+        "B": "YANLIS — İletim bozuksa aynı yoldan bolus etkisizdir; zaman kaybı ketoasidoza ilerletir.",
+        "C": "YANLIS — Hiperglisemi ve ketoz varken bazal azaltmak insülin eksikliğini derinleştirir.",
+        "D": "YANLIS — Pompada depo bazal yoktur; insülinsiz kalmak hızla DKA'ya yol açar.",
+        "E": "YANLIS — Keton 1,8 mmol/L ve bulantı zaten müdahale gerektirir; beklemek DKA'ya zemin hazırlar."
+      },
+      "etiketler": ["insülin pompası", "infüzyon seti sorunu", "ketoz"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 3–4; konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s14",
+      "metin": "Kırk bir yaşında erkek, tip 1 diyabetli; MARD değeri %10'un altında olan, fabrika kalibrasyonlu gerçek zamanlı SGM'ye yeni geçiyor. Öğün ve düzeltme insülin dozlarını sensör verisine göre belirleyip belirleyemeyeceğini ve glukometresini taşımaya devam etmesi gerekip gerekmediğini soruyor. Şehirlerarası otobüs şoförü olarak çalışıyor.\n\nTEMD kılavuzuna göre en doğru danışmanlık hangisidir?",
+      "secenekler": {
+        "A": "Sensör yalnızca eğilim gösterir; her insülin dozundan önce parmak ucu doğrulaması zorunludur",
+        "B": "Sensör hiçbir koşulda doğrulama gerektirmez; glukometre tamamen bırakılabilir",
+        "C": "Rutin dozlar sensöre göre verilebilir; hipoglisemi, belirti uyumsuzluğu, ilk 12 saat ve araç kullanımı öncesinde parmak ucuyla doğrulamalıdır",
+        "D": "Sensörü günde iki kez, eğilim oku varken parmak ucu değeriyle kalibre etmelidir",
+        "E": "Sensör değerleri yalnızca gece için güvenilirdir; gündüz dozları parmak ucuna göre belirlenmelidir"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "MARD <%10 olan sistemlerle insülin dozu parmak doğrulaması olmadan belirlenebilir. Ancak sensör hipoglisemi bildirdiğinde, belirtiler değerle uyumsuzsa, takıldıktan sonraki ilk 12 saatte ve araç kullanmak gibi kritik görevlerden önce parmak ucu doğrulaması önerilir; glukometre her zaman yanında bulunmalıdır.",
+      "aciklama_detay": "MARD (ortalama mutlak bağıl fark), sensör ile referans ölçümler arasındaki ortalama farktır; TEMD'e göre MARD'ı %10'un altında olan cihazlar parmaktan doğrulama gerekmeden insülin dozu belirlemede kullanılabilir. Buna karşın interstisyel glukoz kapiller glukozu 5–10 dakika geriden izler ve hem gerçek zamanlı hem taramalı sistemler yanlış düşük ya da yüksek değer verebilir; gerçek hipoglisemi sensörün gösterdiğinden derin olabilir. Bu nedenle hipoglisemi bildirildiğinde ya da beklenen ile gösterilen değer uyumsuz olduğunda tedaviden önce parmak ucu ölçümü, cihaz takıldıktan sonraki ilk 12 saatte doğruluğun teyidi ve araç kullanımı gibi kritik görevlerden önce ve sırasında kontrol önerilir. TEMD, SGM kullanan hastanın da glukometresini bulundurmasını ister. Kalibrasyon gerektiren sistemlerde ise kalibrasyon, eğilim okunun olmadığı stabil dönemlerde (sabah açlık, yatma saati) yapılmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — MARD <%10 sistemler rutin doz kararı için onaylıdır; her dozda doğrulama gerekmez.",
+        "B": "YANLIS — Hipoglisemi, uyumsuzluk, ilk 12 saat ve kritik görevlerde doğrulama gerekir.",
+        "C": "DOGRU — Rutin kullanım sensörle, belirli durumlarda parmak ucu doğrulamasıyla yapılır.",
+        "D": "YANLIS — Fabrika kalibrasyonlu sistem kalibrasyon istemez; kalibrasyon hiçbir zaman eğilim oku varken yapılmaz.",
+        "E": "YANLIS — Sensörün gündüz güvenilirliği geceden düşük değildir; bu ayrım kılavuzda yoktur."
+      },
+      "etiketler": ["MARD", "parmak ucu doğrulaması", "SGM güvenliği"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 1–2"
+    },
+    {
+      "id": "s15",
+      "metin": "Yirmi dokuz yaşında kadın, tip 1 diyabetli; çoklu doz insülin ve aralıklı taramalı SGM kullanıyor. HbA1c %8,6. AGP'de öğle yemeği sonrasında %50 eğrisi 260 mg/dL'ye çıkıyor, diğer öğünler kabul edilebilir düzeyde. Hasta öğle bolusunu 'hiç atlamadığını' söylüyor. Yeni başladığı akıllı insülin kaleminin kaydında son 14 günde 6 öğle bolusunun hiç yapılmadığı, 2 gün ise 40 dakika arayla iki öğle dozu uygulandığı görülüyor; o iki günün öğleden sonrasında hipoglisemi var.\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Öğle yemeği KH/İ oranını %20 artırarak öğle dozunu yükseltmek",
+        "B": "Tokluk yüksekliğini dengelemek için bazal insülin dozunu %10 artırıp öğle dozunu aynı bırakmak",
+        "C": "Öğle hiperglisemisi için tedaviye kısa etkili sülfonilüre eklemek",
+        "D": "Oranlara dokunmadan atlanan ve yinelenen dozlar için eğitim ve kalem hatırlatıcıları",
+        "E": "Hipoglisemiler nedeniyle öğle bolusunu tümüyle kesmek"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Akıllı kalem atlanan ve üst üste yapılan dozları görünür kılar; burada sorun doz oranı değil doz davranışıdır. Kalemin doz önerisi aktif insülini hesaba katar ve üst üste doz riskini azaltır. Haftada 2 bolus atlamak bile HbA1c'yi yaklaşık 0,4 puan yükseltir.",
+      "aciklama_detay": "Öğle tokluk hiperglisemisinin nedeni doz oranı sanılırsa, KH/İ oranını artırmak bolusun yapıldığı günlerde hipoglisemiye yol açar, üstelik atlanan günlerin sorununu çözmez. TEMD akıllı insülin kalemlerinin atlanan ve üst üste yapılan dozları görünür kıldığını, doz önerisi sunan kalemlerin sistemdeki aktif insülini hesaba kattığını belirtir. Bu vakada kayıt iki ayrı davranış hatası gösteriyor: atlanan öğle bolusları (öğle sonrası hiperglisemi) ve unutulup tekrarlanan dozlar (insülin istiflenmesiyle öğleden sonra hipoglisemi). Kılavuzda aktarılan verilere göre haftada iki bolus atlamak HbA1c'yi yaklaşık 0,4 puan yükseltir. Doğru yaklaşım, doz oranlarına dokunmadan önce davranışı düzeltmektir: eğitim, hatırlatıcılar, kalemin son doz zamanını ve aktif insülini gösteren özelliklerinin kullanılması; oranlar ancak düzenli dozlamayla elde edilen yeni veriye göre ayarlanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Oranı artırmak, bolusun yapıldığı günlerde hipoglisemi yaratır; sorun davranışsaldır.",
+        "B": "YANLIS — Tokluk hiperglisemisi bazalla düzeltilmez; aşırı bazalizasyon gece hipoglisemisi yapar.",
+        "C": "YANLIS — Tip 1 diyabette sülfonilürenin yeri yoktur.",
+        "D": "DOGRU — Atlanan ve istiflenen dozlar eğitim ve kalem özellikleriyle düzeltilir.",
+        "E": "YANLIS — Hipoglisemi tekrarlanan dozdan kaynaklanıyor; bolusu kesmek hiperglisemiyi ağırlaştırır."
+      },
+      "etiketler": ["akıllı insülin kalemi", "atlanan bolus", "insülin istiflenmesi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diyabet Teknolojileri Kılavuzu 2025 (1. baskı), Bölüm 1 ve 6"
+    }
+  ]
+}

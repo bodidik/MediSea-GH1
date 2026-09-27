@@ -571,6 +571,13 @@ düzeltilmiyor, okuma adımı onarıyor:
 - **premium konu sayfası** — sayılar ilana değil DOSYAYA bakar, bağlantı ancak
   dosya gerçekten varsa kurulur.
 
+- **branş İçindekiler'i (27 Eyl)** — `content/brans-icindekiler.json` üst düzey
+  konuları ders kitabı kısımlarına dağıtır (`lib/icindekiler.ts`); içerikte
+  olmayan ebeveyn adı sanal bölüm olur (`viral-hepatitler`). Düzende adı
+  geçmeyen YENİ üst düzey konu kaybolmaz, "Diğer Konular" kısmına düşer —
+  yeni hub/ana konu girince kimliğini uygun kısma yaz. `parent`/`order`a
+  dokunulmadı. Ölçüt: arama listesindeki konu sayısı = görünür konu sayısı.
+
 **İLAN YETMEZ, dosyayı sor.** Aynı kalıp: quiz künyesi, modül kartları,
 `hazir` bayrağı. Bir ölçüm yaparken de bunu bil — içerikten hesaplanan bir
 taban, onarımın eklediği kaydı bilemez.
@@ -713,6 +720,7 @@ Yeni bir yüzeye dokunurken bunları sor. Hepsi bu depoda ölçüldü.
 | **Kaydırma kabı ipuçsuz** | `overflow-x:auto` bir kapasite, affordans değil (odak · ad · **görünür ipucu**) |
 | **Sonuç foldun altında** | doğru olması yetmiyor, girdinin yanında görünür olmalı |
 | **Zamana bağlı değeri saklama** | `now`un fonksiyonu olan sayı saklandığı anda donuyor (streak, due, `mtime`) |
+| **Cevap harfi kilidi** | quiz motoru şık KARIŞTIRMIYOR; bir sette doğru harf >%50 ise cevap harften tahmin edilir (27 Eyl: 26 set, 173 soru tek transpozisyonla dengelendi). Yeni sette harfleri dengeli yaz |
 | **Yorum/etiket bayat** | ŞİMDİKİ ZAMANLI iddia sayıdan arındırılmalı; geçmiş zamanlı ölçüm kaydına dokunulmaz |
 
 ---
