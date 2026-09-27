@@ -81,13 +81,15 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
   const [flipped, setFlipped] = useState(false);
   const [bilinen, setBilinen] = useState<Set<string>>(new Set());
   const [bitti, setBitti] = useState(false);
+  /** Açılışta desteden çıkarılan (zaten bilinen) kart sayısı — şerit bunu söyler. */
+  const [atlanan, setAtlanan] = useState(0);
   const yuklendi = useRef(false);
   const baslangic = useRef<{ x: number; y: number } | null>(null);
 
   const depoAnahtari = `medisea:kartlar:v1:${setId}`;
 
   useEffect(() => {
-    setDeck(shuffle(cards));
+    let bilinenIlk = new Set<string>();
     try {
       const yuklenen = guvenliDiziOku<unknown>(depoAnahtari);
       if (yuklenen) {
@@ -115,15 +117,27 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
          * ilk işaretlemede kaydetme etkisi onun üzerine yazıyor ve
          * kullanıcının bütün "biliyorum" işaretleri gidiyordu.
          */
-        setBilinen(
-          new Set(
-            yuklenen.filter(
-              (id): id is string => typeof id === "string" && gecerliIdler.has(id)
-            )
+        bilinenIlk = new Set(
+          yuklenen.filter(
+            (id): id is string => typeof id === "string" && gecerliIdler.has(id)
           )
         );
+        setBilinen(bilinenIlk);
       }
     } catch {}
+    /**
+     * DESTE BİLİNMEYENLERLE BAŞLAR — açılışta deste HER ZAMAN bütün kartlardı:
+     * 80 kartın 70'ini "biliyorum" diye işaretlemiş kullanıcı her dönüşünde
+     * yine 80 kartı eliyordu; işaretler yalnızca sayaçta işe yarıyordu.
+     * Hiç bilinen yoksa ya da hepsi biliniyorsa (tekrar turu) bütün set.
+     */
+    const bilinmeyen = cards.filter((c) => !bilinenIlk.has(c.id));
+    if (bilinenIlk.size > 0 && bilinmeyen.length > 0) {
+      setDeck(shuffle(bilinmeyen));
+      setAtlanan(cards.length - bilinmeyen.length);
+    } else {
+      setDeck(shuffle(cards));
+    }
     yuklendi.current = true;
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -233,6 +247,7 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
       setIndex(0);
       setFlipped(false);
       setBitti(false);
+      setAtlanan(0);
     };
     return (
       <div style={{
@@ -386,6 +401,27 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
         >
           {`Kart ${index + 1} / ${total}. ${flipped ? `Yanıt: ${card.back}` : `Soru: ${card.front}`}`}
         </div>
+
+        {/* Açılışta atlanan kartlar SÖYLENİR ve geri alınabilir — sessizce
+            eksik deste, "kartlar nereye gitti?" sorusu doğururdu. */}
+        {atlanan > 0 && (
+          <div style={{
+            display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '8px',
+            border: '0.5px solid #b8cfe8', background: '#f5f9ff', borderRadius: '10px',
+            padding: '8px 12px', marginBottom: '1rem', fontSize: '13px', color: '#1a3a6b',
+          }}>
+            <span>{`Bildiğin ${atlanan} kartı atladık — bilmediğin ${deck.length} kartla başlıyorsun.`}</span>
+            <button
+              onClick={() => { setDeck(shuffle(cards)); setIndex(0); setFlipped(false); setAtlanan(0); }}
+              style={{
+                fontSize: '12px', fontWeight: 600, color: '#1a3a6b', background: '#fff',
+                border: '0.5px solid #b8cfe8', borderRadius: '8px', padding: '6px 10px', minHeight: '32px', cursor: 'pointer',
+              }}
+            >
+              Tümünü çalış ({cards.length})
+            </button>
+          </div>
+        )}
 
         {/* BREADCRUMB */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
