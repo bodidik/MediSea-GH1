@@ -303,6 +303,153 @@
       ],
       "zorluk": "orta",
       "kaynak": "Horn et al. N Engl J Med 2018 (IMpower133); Paz-Ares et al. Lancet 2019 (CASPIAN)"
+    },
+    {
+      "id": "s11",
+      "metin": "Elli altı yaşında, hiç sigara içmemiş kadın hastaya sağ üst lob kitlesi nedeniyle lobektomi ve sistematik mediastinal lenf nodu diseksiyonu yapılıyor.\n\nPatoloji ve moleküler sonuçlar:\nAdenokarsinom, 4.5 cm; 14 lenf nodundan 2 hiler nod pozitif (pT2bN1, evre IIB); cerrahi sınırlar negatif\nNGS: EGFR ekzon 19 delesyonu; ALK negatif\nPD-L1 TPS: %60\nECOG performans durumu 0, organ işlevleri normal\n\nBu hasta için en uygun adjuvan tedavi planı hangisidir?",
+      "secenekler": {
+        "A": "Yalnızca izlem; tam rezeksiyon yapılmış evre II hastalıkta ek tedavi yarar sağlamaz",
+        "B": "PD-L1 yüksek olduğundan adjuvan kemoterapi sonrası 1 yıl atezolizumab",
+        "C": "Adjuvan platin bazlı kemoterapi ve ardından 3 yıl osimertinib",
+        "D": "Postoperatif mediastinal radyoterapi",
+        "E": "Kemoterapi yapılmadan 2 yıl gefitinib"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Tam rezeke evre IB–IIIA, EGFR ekzon 19 del/L858R KHDAK'ta standart: uygun hastada adjuvan platin kemoterapisi, ardından 3 yıl osimertinib (ADAURA; DFS, SSS nüksü ve OS yararı). PD-L1 yüksekliği EGFR mutant hastada immünoterapiyi öne çıkarmaz.",
+      "aciklama_detay": "ADAURA çalışmasında tam rezeke evre IB–IIIA, EGFR ekzon 19 delesyonu ya da L858R taşıyan hastalarda (önceden adjuvan kemoterapi alıp almamasından bağımsız olarak) 3 yıl osimertinib hastalıksız sağkalımı belirgin uzatmış, SSS nüksünü azaltmış ve genel sağkalım yararı da göstermiştir. Evre II–IIIA hastalıkta, uygun hastada önce adjuvan platin bazlı kemoterapi verilir (5 yıllık sağkalıma mutlak katkısı yaklaşık %5), ardından osimertinib başlanır. Bu nedenle rezeke erken evre skuamöz dışı KHDAK'ta da EGFR ve ALK testi zorunludur. PD-L1 yüksek olsa da EGFR/ALK pozitif hastalarda adjuvan immünoterapinin yararı gösterilmemiştir; immünoterapi sonrası osimertinib kullanımında pnömonit riski de artabilir. Tam rezeke N1 hastalıkta postoperatif radyoterapi önerilmez; N2 hastalıkta bile Lung ART çalışmasında sağkalım yararı gösterilmemiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Evre IIB'de nüks riski yüksektir; adjuvan kemoterapi ve EGFR mutant hastada osimertinib sağkalım yararı sağlar.",
+        "B": "YANLIS — EGFR mutant hastada adjuvan immünoterapinin yararı gösterilmemiştir; PD-L1 yüksekliği bu kararı değiştirmez.",
+        "C": "DOGRU — ADAURA: kemoterapi sonrası 3 yıl osimertinib DFS, SSS nüksü ve OS üzerinde yarar sağlar.",
+        "D": "YANLIS — Tam rezeke N1 hastalıkta postoperatif radyoterapi rutin değildir; N2'de bile Lung ART'ta sağkalım yararı gösterilmemiştir.",
+        "E": "YANLIS — Adjuvan standart TKİ SSS etkinliği ve OS yararı gösterilmiş osimertinibdir; evre II'de uygun hastada kemoterapinin atlanması da önerilmez."
+      },
+      "etiketler": [
+        "Adjuvan Tedavi",
+        "ADAURA",
+        "Osimertinib",
+        "EGFR Mutasyonu",
+        "Rezeke KHDAK"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ADAURA (Wu YL ve ark. N Engl J Med 2020; Tsuboi M ve ark. N Engl J Med 2023); ESMO 2025 erken ve lokal ileri KHDAK kılavuzu (Zer A ve ark.)"
+    },
+    {
+      "id": "s12",
+      "metin": "Elli dört yaşında erkek hasta, sol akciğerde kitle, çok sayıda kemik lezyonu ve en büyüğü 9 mm olan 3 asemptomatik beyin metastazıyla başvuruyor. Biyopsi: adenokarsinom. NGS: EGFR L858R; başka sürücü değişiklik yok. PD-L1 TPS %5. ECOG performans durumu 0, organ işlevleri normal; hasta kemoterapiyi tolere edebilecek durumda ve yoğun tedaviyi tercih ediyor.\n\nBu hasta için tek ajan osimertinibe kıyasla faz 3 çalışmada genel sağkalım yararı gösterilmiş birinci basamak strateji hangisidir?",
+      "secenekler": {
+        "A": "Karboplatin + pemetreksed + pembrolizumab",
+        "B": "Osimertinib + durvalumab",
+        "C": "Tüm beyin radyoterapisi ve ardından osimertinib",
+        "D": "Afatinib + bevasizumab",
+        "E": "Osimertinib + platin-pemetreksed, ardından osimertinib + pemetreksed idamesi"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "FLAURA2: EGFR mutant ileri KHDAK'ta osimertinibe platin-pemetreksed eklenmesi medyan OS'yi 37.6'dan 47.5 aya uzattı (HR 0.77); yarar L858R ve SSS metastazlı alt gruplarda da korundu. Bedeli daha sık derece ≥3 toksisitedir.",
+      "aciklama_detay": "FLAURA2'de (n=557) tedavi almamış EGFR ekzon 19 del/L858R ileri KHDAK'ta osimertinib + platin-pemetreksed (4 kür, ardından osimertinib + pemetreksed idamesi) progresyonsuz sağkalımı uzatmış; nihai analizde medyan genel sağkalım 47.5 aya karşı 37.6 ay (HR 0.77) bulunmuştur. 36. ay OS oranı SSS metastazlılarda %57'ye karşı %40, L858R'de %54'e karşı %42'dir; yani prognozu daha kötü olan ve kombinasyondan en çok yarar gören alt gruplar bu hastanın özellikleridir. Derece ≥3 advers olay %70'e karşı %34'tür (çoğu miyelosüpresyon); karar performans durumu ve hasta tercihiyle ortak verilir. Amivantamab + lazertinib (MARIPOSA) diğer yoğunlaştırılmış birinci basamak seçenektir. Asemptomatik küçük beyin metastazlarında osimertinibin SSS etkinliği yüksek olduğundan beyin radyoterapisi ertelenebilir. EGFR mutant hastalıkta PD-(L)1 inhibitörleri etkisizdir; osimertinible eşzamanlı kullanımda (TATTON) pnömonit riski belirgin artmıştır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — EGFR mutant hastalıkta kemoimmünoterapi TKİ temelli tedaviye üstün değildir; birinci basamak standardı TKİ temellidir.",
+        "B": "YANLIS — Osimertinib + PD-(L)1 inhibitörü kombinasyonunda (TATTON) yüksek pnömonit oranı görülmüş ve geliştirme durdurulmuştur.",
+        "C": "YANLIS — Asemptomatik küçük beyin metastazlarında osimertinibin SSS etkinliği yüksektir; tüm beyin RT'si nörokognitif bedeli nedeniyle ertelenir ve OS yararı göstermemiştir.",
+        "D": "YANLIS — İkinci kuşak TKİ + antianjiyojenik kombinasyonun osimertinibe karşı OS yararı gösterilmemiştir.",
+        "E": "DOGRU — FLAURA2 nihai analizi: medyan OS 47.5'e karşı 37.6 ay (HR 0.77); L858R ve SSS metastazlı alt gruplarda da yarar."
+      },
+      "etiketler": [
+        "FLAURA2",
+        "Osimertinib",
+        "EGFR L858R",
+        "Beyin Metastazı",
+        "Birinci Basamak"
+      ],
+      "zorluk": "zor",
+      "kaynak": "FLAURA2 nihai genel sağkalım analizi (N Engl J Med); MediSea journal club — FLAURA2"
+    },
+    {
+      "id": "s13",
+      "metin": "Altmış bir yaşında kadın hasta, EGFR ekzon 19 delesyonlu metastatik akciğer adenokarsinomu nedeniyle 26 aydır birinci basamak osimertinib alıyor. Son değerlendirmede karaciğer ve kemikte yeni lezyonlarla progresyon saptanıyor. ECOG 1.\n\nKaraciğer lezyonundan yeniden biyopsi:\nAdenokarsinom; küçük hücreli ya da skuamöz dönüşüm yok\nDoku ve plazma NGS: EGFR ekzon 19 delesyonu devam ediyor; MET amplifikasyonu, füzyon ya da başka hedeflenebilir değişiklik yok\n\nBu durumda randomize faz 3 çalışmada platin-pemetreksed kemoterapisine karşı monoterapi olarak hem progresyonsuz hem genel sağkalım üstünlüğü gösteren tedavi hangisidir?",
+      "secenekler": {
+        "A": "Nivolumab monoterapisi",
+        "B": "Trop-2 hedefli antikor-ilaç konjugatı sacituzumab tirumotecan (sac-TMT)",
+        "C": "Osimertinib dozunun 160 mg/güne çıkarılması",
+        "D": "Karboplatin + pemetreksed + pembrolizumab",
+        "E": "Gefitinibe geçiş"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Osimertinib direncinde önce yeniden biyopsiyle histolojik dönüşüm ve hedeflenebilir direnç (MET vb.) aranır. Hedef yoksa sac-TMT, OptiTROP-Lung04'te platin-pemetreksede karşı PFS (8.3'e karşı 4.3 ay, HR 0.49) ve OS (HR 0.60) üstünlüğü gösterdi.",
+      "aciklama_detay": "Osimertinib sonrası progresyonda ilk adım yeniden doku ve plazma genotiplemesidir: küçük hücreli ya da skuamöz dönüşüm (histolojiye uygun kemoterapi), MET amplifikasyonu (osimertinib + MET inhibitörü) ya da füzyonlar gibi hedeflenebilir mekanizmalar tedaviyi değiştirir. Hedeflenebilir değişiklik yoksa standart, platin-pemetreksed temelli kemoterapiydi. Çin'de 66 merkezde yürütülen OptiTROP-Lung04'te (n=376) Trop-2 hedefli ADC sacituzumab tirumotecan monoterapisi, platin-pemetreksede karşı medyan PFS'yi 8.3'e karşı 4.3 ay (HR 0.49) uzatmış, OS'de de anlamlı üstünlük göstermiştir (HR 0.60; kemoterapi kolunda medyan OS 17.4 ay). ORR %60.6'ya karşı %43.1'dir; ciddi advers olaylar daha az, stomatit daha sık görülmüş, ILD bildirilmemiştir. Popülasyonun tek ülkeden olması genellenebilirlik açısından bir sınırlılıktır. EGFR mutant hastalıkta PD-1 inhibitörü monoterapisi etkisizdir; TKİ direnci sonrası kemoterapiye pembrolizumab eklenmesi de (KEYNOTE-789) anlamlı sağkalım yararı göstermemiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — EGFR mutant KHDAK'ta PD-1 inhibitörü monoterapisinin yanıt oranı çok düşüktür; TKİ direncinde etkili değildir.",
+        "B": "DOGRU — sac-TMT, platin-pemetreksede karşı PFS (HR 0.49) ve OS (HR 0.60) üstünlüğü gösteren monoterapidir.",
+        "C": "YANLIS — Doz artırımı edinsel direnç mekanizmalarını aşmaz; kanıta dayalı bir strateji değildir.",
+        "D": "YANLIS — KEYNOTE-789'da TKİ direnci sonrası kemoterapiye pembrolizumab eklenmesi anlamlı PFS/OS yararı sağlamamıştır.",
+        "E": "YANLIS — Hedeflenebilir özgül bir direnç değişikliği gösterilmeden birinci kuşak TKİ'ye geçişin etkinliği yoktur."
+      },
+      "etiketler": [
+        "Osimertinib Direnci",
+        "Sacituzumab Tirumotecan",
+        "Trop-2 ADC",
+        "Yeniden Biyopsi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "OptiTROP-Lung04 (N Engl J Med); MediSea journal club — sac-TMT"
+    },
+    {
+      "id": "s14",
+      "metin": "Altmış üç yaşında, 40 paket-yıl sigara öyküsü olan erkek hasta, 3 aydır merdiven çıkmada ve oturduğu yerden kalkmada güçlük, ağız kuruluğu ve erektil disfonksiyon tarifliyor. Muayenede proksimal bacak kaslarında güçsüzlük ve derin tendon reflekslerinde azalma saptanıyor; kısa süreli maksimal kasılmanın hemen ardından refleksler belirginleşiyor ve kas gücü artıyor. Pitoz ve diplopi yok.\n\nTetkikler:\nSinir iletimi: bileşik kas aksiyon potansiyeli (BKAP) amplitüdleri düşük; 10 saniyelik maksimal eforun ardından amplitüdde %150 artış\nToraks BT: sağ hiler kitle ve mediastinal lenfadenopati\n\nBu hastada en olası tanı ve beklenen antikor hangisidir?",
+      "secenekler": {
+        "A": "Miyastenia gravis — asetilkolin reseptörü antikoru; timoma taraması",
+        "B": "Paraneoplastik dermatomiyozit — anti-TIF1γ antikoru",
+        "C": "Paraneoplastik duysal nöronopati — anti-Hu antikoru",
+        "D": "Lambert-Eaton miyastenik sendromu — P/Q tipi voltaj kapılı kalsiyum kanalı antikoru",
+        "E": "Kanser kaşeksisine bağlı miyopati — otoantikor beklenmez"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Proksimal güçsüzlük + otonom bulgular + hiporefleksi; eforla güç ve reflekste artış, eforsonrası BKAP'ta >%100 artış = Lambert-Eaton miyastenik sendromu. Antikor presinaptik P/Q tipi VGCC'ye karşıdır; olguların yaklaşık yarısında altta küçük hücreli akciğer kanseri vardır.",
+      "aciklama_detay": "Lambert-Eaton miyastenik sendromunda (LEMS) P/Q tipi voltaj kapılı kalsiyum kanallarına karşı antikorlar presinaptik kalsiyum girişini ve asetilkolin salınımını azaltır. Klinik üçlü: proksimal (özellikle bacak) güçsüzlük, otonom işlev bozukluğu (ağız kuruluğu, erektil disfonksiyon, kabızlık) ve hiporefleksi/arefleksi. Kısa maksimal eforla presinaptik terminalde kalsiyum birikir ve salınım geçici olarak artar: kas gücü ve refleksler düzelir (fasilitasyon); elektrofizyolojide eforsonrası ya da yüksek frekanslı uyarımda BKAP amplitüdü %100'ün üzerinde artar. Miyastenia gravisteki postsinaptik bozuklukta ise efor güçsüzlüğü artırır, oküler bulgular öndedir ve refleksler korunur. LEMS olgularının yaklaşık %50–60'ı paraneoplastiktir ve neden çoğunlukla KHAK'tır (SOX1 antikoru paraneoplastik LEMS'i destekler). Sigara öyküsü ve hiler kitle bu hastayı yüksek riskli yapar. Tedavi altta yatan tümörün tedavisi ve 3,4-diaminopiridin (amifampridin) ile semptomatik iyileştirmedir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Miyastenide güçsüzlük eforla artar, oküler bulgular öndedir ve refleksler korunur; eforsonrası fasilitasyon postsinaptik bozuklukta görülmez.",
+        "B": "YANLIS — Dermatomiyozitte deri bulguları ve CK artışı beklenir; fasilitasyon ve otonom bulgular bu tabloya ait değildir.",
+        "C": "YANLIS — Anti-Hu sendromu duysal ataksi ve duyu kaybıyla seyreder; motor fasilitasyon ve presinaptik elektrofizyolojik bulgu vermez.",
+        "D": "DOGRU — Presinaptik P/Q tipi VGCC antikoru; olguların yaklaşık yarısında altta KHAK vardır.",
+        "E": "YANLIS — Miyopatide otonom bulgular ve eforla reflekslerin belirginleşmesi görülmez; eforsonrası BKAP artışı presinaptik bir bozukluğu gösterir."
+      },
+      "etiketler": [
+        "Lambert-Eaton Miyastenik Sendromu",
+        "Paraneoplastik Sendrom",
+        "KHAK",
+        "VGCC Antikoru"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s15",
+      "metin": "Altmış altı yaşında erkek hasta, sürücü mutasyonu olmayan, PD-L1 TPS %80 metastatik skuamöz dışı KHDAK nedeniyle 4 aydır tek ajan pembrolizumab alıyor ve kısmi yanıt elde edilmiş. Son 10 günde giderek artan efor dispnesi ve kuru öksürük gelişiyor; ateş yok.\n\nBulgular:\nSS 26/dk, SpO₂ oda havasında %87; öz bakım etkinliklerinde belirgin kısıtlanma\nToraks BT: yeni bilateral buzlu cam alanları ve periferik organize pnömoni paterni; tümör yükünde artış yok\nSolunum yolu PCR paneli, kan kültürleri ve Pneumocystis PCR negatif\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Pembrolizumabı kalıcı olarak kesmek, hastaneye yatırmak ve IV metilprednizolon 1–2 mg/kg/gün başlamak",
+        "B": "Pembrolizumaba devam edip oral prednizolon 10 mg/gün eklemek",
+        "C": "Pembrolizumaba ara verip yalnızca ampirik geniş spektrumlu antibiyotik başlamak",
+        "D": "Tabloyu progresyon kabul edip platin bazlı kemoterapiye geçmek",
+        "E": "Pembrolizumaba ara vermek, steroid vermeden 2 hafta izleyip BT'yi tekrarlamak"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Oksijen gerektiren ve öz bakımı kısıtlayan immün kontrol noktası inhibitörü pnömoniti derece 3'tür: ICI kalıcı olarak kesilir, hasta yatırılır, IV metilprednizolon 1–2 mg/kg/gün verilir; 48 saatte yanıt yoksa infliksimab, mikofenolat ya da IVIG eklenir.",
+      "aciklama_detay": "İmmün kontrol noktası inhibitörü (ICI) ilişkili pnömonit KHDAK'ta sık görülen ve ölümcül olabilen bir immün ilişkili advers olaydır; BT'de organize pnömoni, NSIP ya da buzlu cam paternleri görülür. Önce enfeksiyon (Pneumocystis dahil) ve tümör progresyonu dışlanır. Derecelendirme tedaviyi belirler: derece 1 (yalnız radyolojik) — ICI'ye ara verilebilir, yakın izlem; derece 2 (semptomatik, günlük etkinlikleri sınırlayan) — ICI'ye ara verilir, prednizolon 1–2 mg/kg/gün; derece 3–4 (ağır semptom, oksijen gereksinimi, öz bakımın kısıtlanması, yaşamı tehdit eden tablo) — ICI kalıcı olarak kesilir, hasta yatırılır ve IV metilprednizolon 1–2 mg/kg/gün başlanır; enfeksiyon kesin dışlanana dek ampirik antibiyotik eklenebilir. 48 saatte düzelme yoksa infliksimab, mikofenolat mofetil, IVIG ya da siklofosfamid eklenir. Steroid en az 4–6 haftada azaltılarak kesilir; uzun süreli yüksek doz steroidde Pneumocystis profilaksisi verilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Derece 3 pnömonit: ICI kalıcı kesilir, yatış ve IV yüksek doz steroid; yanıtsızlıkta ek immünsüpresyon.",
+        "B": "YANLIS — Düşük doz steroid derece 3 pnömonitte yetersizdir; ICI'ye devam etmek ölümcül ilerlemeye yol açabilir.",
+        "C": "YANLIS — Enfeksiyon kapsamlı biçimde dışlanmıştır; steroid verilmeden yalnız antibiyotik immün aracılı inflamasyonu durdurmaz.",
+        "D": "YANLIS — Tümör yükü artmamıştır; tablo immün ilişkili pnömonittir ve tedavi değişikliği değil steroid gerektirir.",
+        "E": "YANLIS — Oksijen gerektiren pnömonitte steroidsiz izlem kabul edilemez; gecikme solunum yetmezliğine ilerleme riskini artırır."
+      },
+      "etiketler": [
+        "İmmün İlişkili Pnömonit",
+        "Pembrolizumab",
+        "İmmün Kontrol Noktası İnhibitörü",
+        "Kortikosteroid"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ASCO 2021 immün ilişkili advers olay kılavuzu (Schneider BJ ve ark.); SITC 2022 akciğer kanseri ve mezotelyoma immünoterapi kılavuzu (Govindan R ve ark.)"
     }
   ]
 }

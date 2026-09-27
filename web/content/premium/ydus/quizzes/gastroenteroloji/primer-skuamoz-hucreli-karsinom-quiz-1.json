@@ -303,6 +303,150 @@
       ],
       "zorluk": "orta",
       "kaynak": "Fanciullo et al. World J Gastrointest Oncol 2020; O'Sullivan et al. HPB Surg 1998"
+    },
+    {
+      "id": "s11",
+      "metin": "Altmış iki yaşında kadın hasta, 10 yıldır izlenen sağ lobdaki 7 cm'lik basit karaciğer kisti öyküsüyle başvuruyor. Son 4 ayda sağ üst kadran ağrısı ve 5 kg kilo kaybı gelişmiş. Kronik karaciğer hastalığı yok; ekinokok serolojisi negatif.\n\nTetkikler:\n- Kontrastlı MRG: kist 9 cm'e büyümüş; duvarda düzensiz kalınlaşma ve kontrast tutan 2 cm solid mural nodül\n- AFP normal, CA 19-9 88 U/mL, SCC antijeni yüksek\n- PET-BT: yalnızca kist duvarındaki nodülde FDG tutulumu; ekstrahepatik odak yok\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kistin bütünüyle çıkarıldığı cerrahi rezeksiyon",
+        "B": "Perkütan aspirasyon ve alkol skleroterapisi",
+        "C": "Laparoskopik kist fenestrasyonu (tavanının açılması)",
+        "D": "Üç ay sonra kontrol MRG ile izlem",
+        "E": "Sitoloji için perkütan kist sıvısı aspirasyonu"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Uzun süredir izlenen kistte büyüme, duvar kalınlaşması ve kontrast tutan mural nodül malign dönüşümü düşündürür; yaklaşım kistin bütünüyle cerrahi rezeksiyonudur.",
+      "aciklama_detay": "Non-parazitik karaciğer kistleri PSCCL'nin tanımlanmış zeminlerinden biridir: kronik irritasyon kist epitelinde skuamöz metaplaziye ve zamanla neoplastik dönüşüme yol açabilir. Basit kistte beklenmeyen büyüme, düzensiz duvar kalınlaşması, kontrast tutan mural nodül ve yeni semptomlar, kistin artık basit olmadığını ve malignite (skuamöz hücreli karsinom ya da biliyer kistik neoplazi) olasılığını gösterir. ACG 2024 fokal karaciğer lezyonu kılavuzu, neoplazi düşündüren özellikler taşıyan kistik lezyonlarda tam cerrahi rezeksiyonu önerir. Aspirasyon, skleroterapi ya da fenestrasyon kist duvarındaki tümörü yerinde bırakır, tanıyı geciktirir ve periton ile iğne yoluna ekim riski taşır; kist sıvısı sitolojisinin duyarlılığı da düşüktür. PET-BT'de ekstrahepatik odak olmaması primer karaciğer kökenini destekler, kesin tanı rezeksiyon materyalinin histolojisi ve immünhistokimyasıyla konur. Tam rezeksiyon bu hastalıkta sağkalımı uzatan tek küratif seçenektir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Malignite özellikleri taşıyan kistte hem tanı hem tedavi için tam cerrahi rezeksiyon gerekir.",
+        "B": "YANLIS — Skleroterapi basit semptomatik kistlerin tedavisidir; duvardaki tümörü yerinde bırakır ve ekim riski taşır.",
+        "C": "YANLIS — Fenestrasyon kist duvarının büyük kısmını geride bırakır; neoplazi şüphesinde uygun değildir.",
+        "D": "YANLIS — Büyüyen, mural nodüllü ve FDG tutan lezyonda izlem küratif rezeksiyon şansını kaçırır.",
+        "E": "YANLIS — Kist sıvısı sitolojisinin duyarlılığı düşüktür ve ekim riski taşır; sonuç rezeksiyon kararını değiştirmez."
+      },
+      "etiketler": [
+        "Non-Parazitik Kist",
+        "Mural Nodül",
+        "Malign Dönüşüm",
+        "Cerrahi Rezeksiyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Frenette C ve ark. ACG Klinik Kılavuzu: Fokal Karaciğer Lezyonları (Am J Gastroenterol 2024); Weimann A ve ark. HPB Surg 1996"
+    },
+    {
+      "id": "s12",
+      "metin": "Elli sekiz yaşında erkek hasta, 3 haftadır süren ateş, sağ üst kadran ağrısı ve halsizlik ile yatırılıyor. Öyküsünde tekrarlayan kolanjit atakları ile seyreden sol lob hepatolitiazisi var.\n\nTetkikler:\n- Lökosit 17.800/µL, CRP 145 mg/L, AFP normal\n- BT: sol lobda 6 cm, düzensiz kalın duvarlı, santrali hipodens kistik-solid lezyon; duvarda periferik tutulum\n\nKaraciğer apsesi ön tanısıyla geniş spektrumlu antibiyotik başlanıyor ve perkütan kateter yerleştiriliyor. Kateterden az miktarda nekrotik materyal geliyor, kültürler steril. İki haftalık tedaviye karşın ateş sürüyor ve kontrol BT'de lezyonun solid duvar komponenti büyüyor.\n\nBu aşamada en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Antifungal eklenerek antibiyotik süresinin 6 haftaya uzatılması",
+        "B": "Amip serolojisi beklenmeden metronidazol eklenmesi",
+        "C": "Lezyonun solid duvar komponentinden görüntüleme eşliğinde kor biyopsi",
+        "D": "Drenaj kateterinin daha büyük çaplı bir kateterle değiştirilmesi",
+        "E": "Kateter sıvısının yeniden kültürü ve aynı tedavinin 2 hafta sürdürülmesi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Steril nekrotik içerik, tedaviye yanıtsızlık ve büyüyen solid duvar ‘apse’ tanısını çürütür; hepatolitiazis zemininde malignite (PSCCL, kolanjiyokarsinom) için solid komponentten biyopsi gerekir.",
+      "aciklama_detay": "PSCCL ateş, lökositoz ve santral nekroz/kistik dejenerasyon içeren kalın duvarlı görünümüyle karaciğer apsesini taklit edebilir; tümörün sitokin (IL-6) salgılaması sistemik inflamatuar tabloya katkıda bulunur. Hepatolitiazis ve tekrarlayan kolanjit hem PSCCL hem de intrahepatik kolanjiyokarsinom için bilinen bir zemindir. Bu hastada drenajla pürülan değil nekrotik materyal gelmesi, kültürlerin steril kalması, yeterli süre antibiyotiğe karşın ateşin sürmesi ve solid duvar komponentinin büyümesi apse tanısıyla bağdaşmaz. Bir sonraki adım doku tanısıdır; nekrotik merkezden alınan örnekler çoğu kez tanısal olmadığı için biyopsi canlı tümörün bulunduğu solid, kontrast tutan duvar komponentinden hedeflenmelidir. Histolojide skuamöz diferansiyasyon görülürse immünhistokimya (P40/P63/CK5-6) ve ekstrahepatik primer taraması tamamlanır. Antibiyotik süresini uzatmak ya da ampirik ajan eklemek tanıyı geciktirerek rezeksiyon şansını azaltır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Steril kültür ve büyüyen solid komponent karşısında ampirik tedaviyi uzatmak malignite tanısını geciktirir.",
+        "B": "YANLIS — Tablo amip apsesiyle uyumlu değildir; ampirik metronidazol tanısal sorunu çözmez.",
+        "C": "DOGRU — Canlı tümörün bulunduğu solid duvar komponentinden alınan kor biyopsi tanıyı koyar.",
+        "D": "YANLIS — Sorun drenaj yetersizliği değil, lezyonun apse olmamasıdır.",
+        "E": "YANLIS — Aynı tedaviyi sürdürmek ve kültürü tekrarlamak tanıyı geciktirir."
+      },
+      "etiketler": [
+        "Apse Taklidi",
+        "Hepatolitiazis",
+        "Doku Tanısı",
+        "Ayırıcı Tanı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel literatür derlemeleri"
+    },
+    {
+      "id": "s13",
+      "metin": "Altmış yaşında erkek hastada karaciğer sağ lobundaki 8 cm kitleye hepatektomi uygulanıyor. Rezeksiyon materyalinde tümörün bir bölümünde keratin incileri ve hücreler arası köprüler içeren skuamöz yuvalar, başka bir bölümünde ise müsin üreten, CK7 pozitif bez yapıları oluşturan adenokarsinom alanları izleniyor; iki komponent iç içe ve her biri tümörün belirgin bir oranını oluşturuyor. HepPar-1 ve arginaz-1 negatif. PET-BT, gastroskopi, kolonoskopi ve KBB muayenesinde ekstrahepatik primer odak yok.\n\nBu tümör için en doğru patolojik sınıflama hangisidir?",
+      "secenekler": {
+        "A": "Karaciğerin primer skuamöz hücreli karsinomu",
+        "B": "Hepatosellüler karsinomun skuamöz varyantı",
+        "C": "Metastatik akciğer skuamöz hücreli karsinomu",
+        "D": "Kombine hepatosellüler-kolanjiyokarsinom",
+        "E": "Karaciğerin primer adenoskuamöz karsinomu"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Aynı tümörde belirgin skuamöz komponent ile müsin üreten glandüler komponentin birlikte bulunması adenoskuamöz karsinomdur; PSCCL tanısı saf skuamöz tümör gerektirir.",
+      "aciklama_detay": "Karaciğerin primer skuamöz hücreli karsinomu tanısı, ekstrahepatik primer dışlandıktan sonra saf skuamöz diferansiyasyon gösteren tümörde konur. Bu olguda skuamöz alanlara (keratin incileri, hücreler arası köprüler) ek olarak müsin üreten, CK7 pozitif bez yapıları oluşturan belirgin bir adenokarsinom komponenti bulunmaktadır; bu karışım primer adenoskuamöz karsinom olarak sınıflanır. Adenoskuamöz karsinomun biliyer epitelden köken aldığı ve kolanjiyokarsinomun nadir bir varyantı olduğu düşünülür; skuamöz komponentin glandüler hücrelerin skuamöz diferansiyasyonu ya da metaplazisiyle geliştiği öne sürülür. HepPar-1 ve arginaz-1 negatifliği hepatosit kökenini, dolayısıyla HCC'yi ve kombine hepatosellüler-kolanjiyokarsinomu (hepatosellüler komponent gerektirir) dışlar. Kapsamlı taramada ekstrahepatik odak olmaması metastazı olası kılmaz. Doğru sınıflama önemlidir: adenoskuamöz karsinom agresif seyirlidir ve tedavi planlamasında biliyer kanser yaklaşımı esas alınır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PSCCL saf skuamöz tümördür; belirgin glandüler komponent varlığında bu tanı konmaz.",
+        "B": "YANLIS — HepPar-1 ve arginaz-1 negatifliği hepatosit kökenini dışlar.",
+        "C": "YANLIS — Kapsamlı taramada ekstrahepatik odak yoktur ve glandüler komponent akciğer SCC metastazıyla açıklanamaz.",
+        "D": "YANLIS — Kombine tümör hepatosellüler komponent gerektirir; hepatosit belirteçleri negatiftir.",
+        "E": "DOGRU — Belirgin skuamöz ve müsinöz glandüler komponentin birlikteliği adenoskuamöz karsinomu tanımlar."
+      },
+      "etiketler": [
+        "Adenoskuamöz Karsinom",
+        "Histopatoloji",
+        "İmmünhistokimya",
+        "Ayırıcı Tanı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Bai Z ve ark. Front Immunol 2025 (primer karaciğer adenoskuamöz karsinomu); Suriawinata A. Pathology of malignant liver tumors. UpToDate"
+    },
+    {
+      "id": "s14",
+      "metin": "Elli dört yaşında kadın hastaya sol lobda 7 cm'lik kitle nedeniyle yapılan biyopsiyle karaciğerin primer skuamöz hücreli karsinomu tanısı konmuş (P40 ve CK5/6 pozitif; TTF-1, HepPar-1 ve arginaz-1 negatif; PET-BT ve endoskopik incelemelerle ekstrahepatik primer dışlanmış). Evrelemede hiler ve paraaortik lenf nodlarında ve her iki akciğerde çok sayıda metastatik nodül saptanıyor. ECOG 1, karaciğer fonksiyonları korunmuş. Tümörde MSS, düşük TMB, PD-L1 negatif.\n\nBu hasta için en uygun tedavi yaklaşımı hangisidir?",
+      "secenekler": {
+        "A": "Sol hepatektomi ile sitoredüktif rezeksiyon",
+        "B": "Sisplatin ve 5-florourasil temelli sistemik kemoterapi",
+        "C": "Sorafenib ile hedefe yönelik tedavi",
+        "D": "Yalnızca transarteriyel kemoembolizasyon",
+        "E": "Pembrolizumab monoterapisi"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Yaygın ekstrahepatik yayılımı olan, biyobelirteç negatif PSCCL'de cerrahi ve karaciğere yönelik tedavilerin yeri yoktur; en sık bildirilen yaklaşım sisplatin + 5-FU temelli sistemik kemoterapidir.",
+      "aciklama_detay": "PSCCL'de tek küratif şans, ekstrahepatik yayılım yokken yapılan tam rezeksiyondur. Bu hastada uzak lenf nodu (paraaortik) ve bilateral akciğer metastazları vardır; sitoredüktif hepatektomi sağkalım kazandırmaz ve yalnızca morbidite ekler. Karaciğere sınırlı tedaviler (TACE, alkol enjeksiyonu) ekstrahepatik hastalığı kontrol etmediği için tek başına uygun değildir. Bu nadir tümör için randomize veri yoktur; olgu serileri ve derlemelerde en sık kullanılan ve yanıt bildirilen rejimler, diğer organların skuamöz karsinomlarından uyarlanan sisplatin + 5-florourasil kombinasyonlarıdır. Sorafenib HCC'ye özgü bir ajandır ve skuamöz histolojide etkinliği gösterilmemiştir. PD-1 inhibitörleriyle umut verici yanıtlar özellikle MSI-H veya yüksek TMB'li olgularda bildirilmiştir; MSS, düşük TMB ve PD-L1 negatif bu hastada immünoterapi monoterapisi ilk tercih olarak savunulamaz. Performans durumunun korunmuş olması sistemik tedaviyi mümkün kılar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Uzak lenf nodu ve akciğer metastazı varlığında karaciğer rezeksiyonu sağkalım kazandırmaz.",
+        "B": "DOGRU — Yaygın hastalıkta en sık bildirilen ve tercih edilen yaklaşım platin + 5-FU temelli sistemik kemoterapidir.",
+        "C": "YANLIS — Sorafenib HCC'ye özgüdür; skuamöz histolojide etkinlik kanıtı yoktur.",
+        "D": "YANLIS — TACE yalnızca karaciğerdeki tümörü hedefler; yaygın ekstrahepatik hastalıkta tek başına yetersizdir.",
+        "E": "YANLIS — PD-1 inhibitörü yanıtları MSI-H/yüksek TMB'li olgularda bildirilmiştir; biyobelirteç negatif hastada ilk tercih değildir."
+      },
+      "etiketler": [
+        "Metastatik PSCCL",
+        "Sistemik Kemoterapi",
+        "Sisplatin + 5-FU",
+        "Tedavi Seçimi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel literatür derlemeleri"
+    },
+    {
+      "id": "s15",
+      "metin": "Kırk dokuz yaşında erkek hastaya karaciğerin primer skuamöz hücreli karsinomu nedeniyle R0 hepatektomi yapılıyor. Preoperatif tetkiklerde AFP 3 ng/mL, CEA 2,1 ng/mL, CA 19-9 30 U/mL (hepsi normal) ve SCC antijeni 14 ng/mL (normal <1,5) bulunmuş. Postoperatif 1. ayda SCC antijeni normale inmiş.\n\nNüks izleminde görüntülemeye ek olarak en anlamlı serum belirteci hangisidir?",
+      "secenekler": {
+        "A": "AFP",
+        "B": "CEA",
+        "C": "CA 19-9",
+        "D": "SCC antijeni",
+        "E": "Des-gama-karboksi protrombin (PIVKA-II)"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Tümör belirteci izlemi, tanıda yüksek olup rezeksiyonla normale inen belirteçle yapılır; bu hastada o belirteç SCC antijenidir.",
+      "aciklama_detay": "PSCCL için özgül bir biyobelirteç yoktur; AFP çoğunlukla normaldir ve olguların bir kısmında CEA, CA 19-9 ya da SCC antijeni yükselebilir. Bir belirtecin nüks izleminde kullanılabilmesi için tanıda yüksek olması ve küratif tedaviyle normale inmesi gerekir; bu, belirtecin o hastanın tümörünü yansıttığını gösterir. Bu hastada yalnızca SCC antijeni yüksekti ve R0 rezeksiyon sonrası normalleşti; izlemde yeniden yükselmesi görüntülemeden önce nüksü düşündürebilir. Tanıda normal olan AFP, CEA ve CA 19-9 bu hastanın tümörünü yansıtmadığı için izlemde bilgi vermez. AFP ve PIVKA-II hepatosellüler karsinomun belirteçleridir; skuamöz tümörde yükselmeleri beklenmez. Belirteç izlemi görüntülemenin yerini tutmaz; görüntüleme ile birlikte değerlendirilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — AFP HCC belirtecidir; bu hastada tanıda normaldi ve tümörü yansıtmaz.",
+        "B": "YANLIS — CEA tanıda normaldi; nüks izleminde bilgi vermez.",
+        "C": "YANLIS — CA 19-9 tanıda normal sınırdaydı; bu tümör için izlem belirteci değildir.",
+        "D": "DOGRU — Tanıda yüksek olup rezeksiyonla normale inen SCC antijeni bu hastanın izlem belirtecidir.",
+        "E": "YANLIS — PIVKA-II HCC'ye özgü bir belirteçtir; skuamöz tümörde anlamlı değildir."
+      },
+      "etiketler": [
+        "SCC Antijeni",
+        "Tümör Belirteçleri",
+        "Nüks İzlemi"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel literatür derlemeleri"
     }
   ]
 }

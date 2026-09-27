@@ -424,6 +424,36 @@
       ],
       "zorluk": "orta",
       "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Erkek Osteoporozu"
+    },
+    {
+      "id": "s15",
+      "metin": "Kırk altı yaşında erkek hasta, eğilip kalkarken başlayan bel ağrısı nedeniyle çekilen grafide L1 kompresyon kırığı saptanıyor. Son 5 yılda üç kez kalsiyum oksalat böbrek taşı düşürmüş. Glukokortikoid, antiepileptik ya da PPI kullanmıyor; alkol ve sigara yok. Kilosu 81 kg.\n\nTetkikler:\nDXA: lomber Z-skoru −2.4, femur boynu Z-skoru −1.8\nKalsiyum: 9.6 mg/dL, fosfor: 3.3 mg/dL, PTH: 22 pg/mL (N: 15–65)\n25(OH)D: 36 ng/mL, kreatinin: 0.9 mg/dL\nTSH, sabah total testosteron, serum protein elektroforezi: normal\nDoku transglutaminaz IgA: negatif (total IgA normal)\n24 saatlik idrar: kalsiyum 390 mg/gün ↑, sodyum 140 mmol/gün, kreatinin atılımı yeterli\n\nOsteoporoz için bisfosfonat başlanıyor. Altta yatan mekanizmaya yönelik olarak eklenecek en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Diyet kalsiyumunun günde 400 mg'ın altına kısıtlanması",
+        "B": "Furosemid ile idrar akımının artırılması",
+        "C": "Kalsitriol ile bağırsak kalsiyum emiliminin desteklenmesi",
+        "D": "Tiyazid diüretiği (normal kalsiyum ve kısıtlı sodyum alımıyla birlikte)",
+        "E": "Testosteron replasmanıyla kemik yapımının uyarılması"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Genç erkekte frajilite kırığı + tekrarlayan kalsiyum taşı + normokalsemi + düşük-normal PTH + hiperkalsiüri (>300 mg/gün ya da >4 mg/kg/gün) = idiyopatik hiperkalsiüriye bağlı sekonder osteoporoz. Tiyazid idrar kalsiyumunu azaltır, taş oluşumunu önler ve kemik dengesini destekler.",
+      "aciklama_detay": "Erkek osteoporozunun yaklaşık yarısında sekonder bir neden bulunur ve özellikle 50 yaşın altındaki erkekte kapsamlı araştırma gerekir; 24 saatlik idrar kalsiyumu bu araştırmanın parçasıdır. İdiyopatik hiperkalsiüride bağırsaktan artmış kalsiyum emilimi, böbrekte azalmış tübüler geri emilim ve kemikten artmış kalsiyum salınımı birlikte rol oynar; sonuç negatif kalsiyum dengesi, düşük kemik kütlesi ve kalsiyum taşlarıdır. Serum kalsiyumunun normal ve PTH'nin düşük-normal olması primer hiperparatiroidiyi dışlar; normal sodyum atılımı, yüksek tuz alımına bağlı hiperkalsiüriyi olası dışı bırakır. Tiyazidler distal tübülde kalsiyum geri emilimini artırarak idrar kalsiyumunu azaltır; taş nüksünü önler ve gözlemsel çalışmalarda KMY artışı ve daha düşük kırık riskiyle ilişkilidir. Diyette kalsiyum kısıtlaması yapılmaz: bağırsakta oksalatı bağlayacak kalsiyum azalınca oksalat emilimi ve taş riski artar, kemik dengesi daha da bozulur. Tiyazid tedavisinde hipokalemi (potasyum sitratla birlikte verilebilir), hiponatremi ve serum kalsiyumu izlenir; tiyazid altında belirgin hiperkalsemi gelişirse gizli primer hiperparatiroidi araştırılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kalsiyum kısıtlaması negatif kalsiyum dengesini ve kemik kaybını artırır; bağırsakta bağlanmayan oksalat emilimi artacağından taş riski de yükselir.",
+        "B": "YANLIS — Kıvrım diüretikleri idrarla kalsiyum atılımını artırır; hiperkalsiüriyi ağırlaştırır.",
+        "C": "YANLIS — D vitamini düzeyi yeterlidir; kalsitriol bağırsak emilimini artırarak hiperkalsiüriyi ve taş riskini artırır.",
+        "D": "DOGRU — Tiyazid, hiperkalsiürinin mekanizmasını hedefler: idrar kalsiyumunu azaltır, taşı önler, kemik dengesini destekler.",
+        "E": "YANLIS — Testosteron normaldir; hipogonadizm yokken androjen replasmanının endikasyonu yoktur."
+      },
+      "etiketler": [
+        "Erkek Osteoporozu",
+        "İdiyopatik Hiperkalsiüri",
+        "Tiyazid",
+        "Sekonder Osteoporoz",
+        "Nefrolitiazis"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Endocrine Society 2012 Erkek Osteoporozu Kılavuzu (Watts ve ark. J Clin Endocrinol Metab 2012); Konu anlatımı (MediSea premium)"
     }
   ]
 }

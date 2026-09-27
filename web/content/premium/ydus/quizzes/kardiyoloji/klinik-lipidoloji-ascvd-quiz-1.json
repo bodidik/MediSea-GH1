@@ -363,6 +363,93 @@
       ],
       "zorluk": "zor",
       "kaynak": "NDQG sistematik meta-analizi ve farmakovijilans verileri"
+    },
+    {
+      "id": "s13",
+      "metin": "32 yaşında erkek hasta, rutin kontrolde hiperkolesterolemi saptanması nedeniyle başvuruyor. Babası 48 yaşında miyokard enfarktüsü geçirmiş. Muayenede her iki Aşil tendonunda kalınlaşma ve nodüler ksantomlar var. Sigara içmiyor, KB 122/76 mmHg, VKİ 24 kg/m².\n\nTetkikler (tedavisiz):\n- Total kolesterol 330 mg/dL, LDL-K 262 mg/dL, HDL-K 48 mg/dL, TG 105 mg/dL\n- TSH, açlık glukozu, karaciğer ve böbrek fonksiyonları, idrar tetkiki normal\n\nBu hastanın değerlendirilmesi ve yönetimi ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": {
+        "A": "Genç yaşı nedeniyle 10 yıllık risk düşük olduğundan önce 6 ay yaşam tarzı değişikliği denenir, ilaç kararı risk skoruna göre verilir",
+        "B": "Tanı için LDLR, APOB ya da PCSK9 genlerinde mutasyon gösterilmesi zorunludur; sonuç gelmeden tedavi başlanmaz",
+        "C": "Koroner arter kalsiyum skoru 0 çıkarsa statin tedavisi güvenle ertelenebilir",
+        "D": "Kesin ailesel hiperkolesterolemidir; yüksek yoğunluklu statin başlanır ve akrabalara kaskat tarama yapılır",
+        "E": "Tendon ksantomları HDL düşüklüğünü gösterir; öncelikle HDL'yi yükseltmek için niasin başlanmalıdır"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Dutch Lipid Clinic Network skoru: tendon ksantomu 6 + LDL-K 250–329 mg/dL 5 + erken KAH'lı birinci derece akraba 1 = 12 puan (>8 kesin FH). FH'de popülasyon risk skoru kullanılmaz; yüksek yoğunluklu statin başlanır, hedefe ulaşılamazsa ezetimib/PCSK9 inhibitörü eklenir ve kaskat tarama yapılır.",
+      "aciklama_detay": "Heterozigot ailesel hiperkolesterolemi (FH) yaklaşık 250–300 kişide bir görülen, çoğunlukla LDLR (daha az APOB ve PCSK9) mutasyonuna bağlı otozomal dominant bir hastalıktır. Doğumdan itibaren yüksek LDL-K'ye maruz kalındığı için erken ASCVD riski çok yüksektir; SCORE2 ya da PREVENT gibi popülasyon denklemleri FH'de riski olduğundan düşük gösterir ve kullanılmaz. Klinik tanıda Dutch Lipid Clinic Network (DLCN) ölçütleri kullanılır: bu hastada tendon ksantomu (6 puan), tedavisiz LDL-K 262 mg/dL (6.5–8.4 mmol/L aralığı, 5 puan) ve erken koroner hastalığı olan birinci derece akraba (1 puan) toplam 12 puan eder; >8 puan kesin FH'dir. Genetik test tanıyı doğrular ve kaskat taramayı kolaylaştırır ama tedaviyi bekletmez. ESC/EAS 2019'a göre ASCVD'si ve başka majör risk faktörü olmayan FH hastası yüksek risk grubundadır; hedef, LDL-K'de bazale göre ≥%50 düşüş ve <70 mg/dL'dir. Yüksek yoğunluklu statinle başlanır; hedefe ulaşılamazsa ezetimib, ardından PCSK9 inhibitörü eklenir. Birinci derece akrabalara kaskat tarama önerilir; çocuklarda tarama erken yaşta başlar.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — FH'de popülasyon risk denklemleri riski olduğundan düşük gösterir; ömür boyu yüksek LDL-K maruziyeti nedeniyle tanı konduğunda ilaç tedavisi geciktirilmez.",
+        "B": "YANLIS — Genetik test tanıyı doğrular ve kaskat taramaya yardım eder, ancak klinik ölçütlerle kesin FH tanısı konabilir; negatif genetik sonuç da tedavi kararını değiştirmez.",
+        "C": "YANLIS — CAC=0 ile statin erteleme yaklaşımı FH'de uygulanmaz; genç FH hastasında kalsifikasyon henüz gelişmemiş olabilir ama ömür boyu risk yüksektir.",
+        "D": "DOGRU — DLCN skoru 12 (kesin FH); yüksek yoğunluklu statin başlanır, gerekirse kombinasyona gidilir ve birinci derece akrabalar taranır.",
+        "E": "YANLIS — Tendon ksantomu uzun süreli LDL-K yüksekliğinin göstergesidir; niasin ASCVD olaylarını azaltmamış (AIM-HIGH, HPS2-THRIVE) ve yan etkileri artırmıştır."
+      },
+      "etiketler": [
+        "Ailesel Hiperkolesterolemi",
+        "DLCN Skoru",
+        "Kaskat Tarama",
+        "Yüksek Yoğunluklu Statin"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ESC/EAS 2019 Dislipidemi Kılavuzu · Dutch Lipid Clinic Network ölçütleri"
+    },
+    {
+      "id": "s14",
+      "metin": "66 yaşında kadın hasta, 8 ay önce geçirdiği NSTEMI sonrası atorvastatin 80 mg/gün kullanıyor. Son 6 haftadır her iki uyluk ve baldırda simetrik, sızlayıcı ağrı ve halsizlik tarifliyor; ilacı 1 haftadır kendisi bırakmış ve yakınmaları azalmaya başlamış. Kas gücü muayenesi normal.\n\nTetkikler:\n- CK 180 U/L (üst sınır 170)\n- TSH 2.1 mIU/L, 25-OH D vitamini 28 ng/mL, kreatinin normal\n- LDL-K (statin kullanırken): 64 mg/dL\n- Eşlik eden ilaçlar: aspirin, tikagrelor, metoprolol, ramipril\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Statinleri kalıcı olarak kesip yalnızca ezetimib ile devam etmek",
+        "B": "Atorvastatin 80 mg'a hemen yeniden başlayıp kas ağrısı için koenzim Q10 eklemek",
+        "C": "Kas biyopsisi ve anti-HMGCR antikoru istemek",
+        "D": "Bempedoik asit monoterapisine geçmek; statin yeniden denenmemelidir",
+        "E": "Yakınmalar gerileyince düşük doz rosuvastatinle yeniden başlayıp titre etmek"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "CK <4×ÜSN ve statin kesilince gerileyen simetrik proksimal kas yakınması tipik statinle ilişkili kas semptomudur (SAMS). Yakınmalar geçince farklı bir statinle düşük dozda yeniden denenir; çok yüksek riskli hastada statin kalıcı bırakılmaz, hedef için ezetimib/PCSK9 inhibitörü eklenir.",
+      "aciklama_detay": "EAS konsensüsüne göre SAMS değerlendirmesinde yakınmanın niteliği (simetrik, proksimal, büyük kas grupları), başlama zamanı (genellikle ilk haftalar-aylar ya da doz artışı sonrası), ilaç kesilince 2–4 haftada gerilemesi ve yeniden başlanınca tekrarlaması aranır. CK <4×ÜSN ise ilaç kesilir, yakınmalar geçince aynı ya da farklı bir statinle daha düşük dozda yeniden deneme yapılır; hastaların büyük kısmı bu yolla bir statini tolere eder ve n-of-1 çalışmaları (SAMSON, StatinWISE) yakınmaların önemli bölümünün nosebo etkisi olduğunu göstermiştir. CK >10×ÜSN ya da rabdomiyoliz varsa statin kesilir ve yeniden deneme çok dikkatle yapılır; ilaç kesildiği hâlde süren güçsüzlük ve çok yüksek CK'da anti-HMGCR antikorlu immün aracılı nekrotizan miyopati düşünülür. Hipotiroidi ve D vitamini eksikliği gibi yatkınlaştırıcılar dışlanmalıdır. Tikagrelor alan hastada CYP3A4 ile yıkılan simvastatin ve lovastatinin yüksek dozlarından kaçınılır; rosuvastatin CYP3A4'e bağımlı değildir. Yakın zamanda AKS geçirmiş çok yüksek riskli hastada statinin kalıcı bırakılması büyük olay riskini artırır; tolere edilen en yüksek statin dozuna rağmen LDL-K hedefin üzerindeyse ezetimib, ardından PCSK9 inhibitörü eklenir. Gerçek statin intoleransında bempedoik asit (CLEAR Outcomes) bir seçenektir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tek bir statinle yaşanan kas yakınması statin intoleransı tanısı için yeterli değildir; çok yüksek riskli hastada statini kalıcı bırakmak olay riskini artırır ve ezetimib tek başına yeterli LDL-K düşüşü sağlamaz.",
+        "B": "YANLIS — Yakınmalar gerilemeden aynı yüksek dozla yeniden başlamak semptomu tekrarlatır; koenzim Q10'un SAMS'ta etkinliği gösterilmemiştir.",
+        "C": "YANLIS — CK <4×ÜSN, normal kas gücü ve ilaç kesilince gerileyen yakınma immün aracılı nekrotizan miyopatiyi düşündürmez; biyopsi ve anti-HMGCR endikasyonu yoktur.",
+        "D": "YANLIS — Bempedoik asit gerçek statin intoleransında (en az iki statin, biri en düşük dozda, tolere edilemediğinde) seçenektir; bu hastada önce statin yeniden denenmelidir.",
+        "E": "DOGRU — Semptomlar geçince farklı bir statinle düşük dozda yeniden başlanır ve titre edilir; hedefe ulaşılamazsa ezetimib eklenir."
+      },
+      "etiketler": [
+        "Statin Miyopatisi",
+        "SAMS",
+        "Yeniden Deneme",
+        "Statin İntoleransı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "EAS Statinle İlişkili Kas Semptomları Konsensüsü (2015) · SAMSON · StatinWISE"
+    },
+    {
+      "id": "s15",
+      "metin": "56 yaşında erkek hasta, tip 2 diyabet ve geçirilmiş PCI öyküsüyle atorvastatin 40 mg/gün kullanıyor. Alkolü bırakmış, diyet ve glisemik kontrol optimize edilmiş (HbA1c %6.9). Böbrek fonksiyonları normal. 2 yıl önce hipertrigliseridemiye bağlı akut pankreatit geçirmiş.\n\nTetkikler (statin altında, açlık):\n- TG 640 mg/dL\n- LDL-K 62 mg/dL, HDL-K 31 mg/dL\n- TSH normal\n\nBu hastada trigliserid düşürücü tedavi ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": {
+        "A": "Fibrat gerekiyorsa gemfibrozil seçilmelidir; statinle kombinasyonda en güvenli fibrattır",
+        "B": "Statin kesilip fibrat monoterapisine geçilmelidir; iki ilaç birlikte kullanılamaz",
+        "C": "Fenofibrat eklenebilir; gemfibrozil ise statinle kombine edilmemelidir",
+        "D": "Niasin eklenmesi hem trigliseridi hem kardiyovasküler olayları anlamlı azaltır",
+        "E": "Ezetimib eklenmesi trigliseridi pankreatit eşiğinin altına indirmek için yeterlidir"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "TG ≥500 mg/dL'de (özellikle pankreatit öyküsünde) sekonder nedenler düzeltildikten sonra fibrat eklenir. Statinle birlikte fenofibrat kullanılır; gemfibrozil statin glukuronidasyonunu ve OATP1B1 taşınmasını inhibe ederek miyopati/rabdomiyoliz riskini belirgin artırdığı için statinle kombine edilmez.",
+      "aciklama_detay": "Belirgin hipertrigliseridemide (≥500 mg/dL, özellikle ≥880–1000 mg/dL) öncelikli hedef pankreatitten korunmaktır. İlk adım sekonder nedenlerin (kontrolsüz diyabet, alkol, hipotiroidi, östrojen, bazı ilaçlar) düzeltilmesi ve yağdan kısıtlı diyettir. Buna rağmen TG yüksek kalırsa fibrat eklenir; yüksek doz omega-3 yağ asitleri de TG'yi düşürür. Statin alan hastada tercih edilen fibrat fenofibrattır: gemfibrozil statinlerin glukuronidasyonunu ve hepatik OATP1B1 aracılı alımını inhibe ederek plazma statin düzeyini artırır ve miyopati/rabdomiyoliz riskini yükseltir; bu nedenle gemfibrozil-statin kombinasyonundan kaçınılır. Fenofibratta bu etkileşim anlamlı değildir; ancak böbrek fonksiyonuna göre doz ayarı gerekir ve kreatinini geri dönüşümlü yükseltebilir. Fibratlar statin üzerine eklendiğinde kardiyovasküler olayları azaltmamıştır (ACCORD-Lipid, PROMINENT); bu hastada fibratın amacı pankreatitten korunmadır, ASCVD riskini azaltmak değil. Statin ASCVD koruması için sürdürülür. Niasin AIM-HIGH ve HPS2-THRIVE'da olayları azaltmamış, yan etkileri artırmıştır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Gemfibrozil statin düzeyini artırarak rabdomiyoliz riskini belirgin yükseltir; statinle birlikte kullanılmaz.",
+        "B": "YANLIS — Geçirilmiş PCI'lı diyabetik hastada statin ASCVD korumasının temelidir ve kesilmez; fenofibrat statinle birleştirilebilir.",
+        "C": "DOGRU — Pankreatit öyküsü ve TG 640 mg/dL'de fenofibrat eklenir; gemfibrozil statinle kombine edilmez.",
+        "D": "YANLIS — Niasin statin üzerine eklendiğinde (AIM-HIGH, HPS2-THRIVE) kardiyovasküler olayları azaltmamış, yan etkileri artırmıştır.",
+        "E": "YANLIS — Ezetimibin trigliserid üzerindeki etkisi sınırlıdır; bu düzeydeki hipertrigliseridemiyi pankreatit eşiğinin altına indirmez."
+      },
+      "etiketler": [
+        "Hipertrigliseridemi",
+        "Fenofibrat",
+        "Gemfibrozil Etkileşimi",
+        "Pankreatit"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ESC/EAS 2019 Dislipidemi Kılavuzu · ACCORD-Lipid · PROMINENT · AIM-HIGH · HPS2-THRIVE"
     }
   ]
 }

@@ -272,7 +272,7 @@
         "Dışlama Tanısı"
       ],
       "zorluk": "orta",
-      "kaynak": "Malamut & Cellier Gastroenterology 2015; Rubio-Tapia & Murray Curr Opin Gastroenterol 2010"
+      "kaynak": "Malamut G, Cellier C. Refractory Celiac Disease. Gastroenterol Clin North Am 2019; Rubio-Tapia & Murray Curr Opin Gastroenterol 2010"
     },
     {
       "id": "s10",
@@ -302,7 +302,155 @@
         "Kladribin"
       ],
       "zorluk": "zor",
-      "kaynak": "Malamut & Cellier Gastroenterology 2015; Al-Toma et al. United European Gastroenterol J 2019"
+      "kaynak": "Malamut G, Cellier C. Refractory Celiac Disease. Gastroenterol Clin North Am 2019; Al-Toma et al. United European Gastroenterol J 2019"
+    },
+    {
+      "id": "s11",
+      "metin": "Otuz dört yaşında kadın hasta, 2 yıl önce şişkinlik ve ishal yakınmaları nedeniyle hiçbir test yaptırmadan kendi kararıyla glutensiz diyete başlamış; yakınmaları belirgin gerilemiş. Kız kardeşine yakın zamanda biyopsiyle çölyak hastalığı tanısı konmuş; hasta kendi tanısının netleştirilmesini istiyor. Diyetine halen sıkı uyuyor.\n\nTetkikler:\n- tTG-IgA: negatif (total IgA normal)\n- HLA tiplemesi: HLA-DQ2.5 pozitif\n\nBu hastada tanıya ulaşmak için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "tTG-IgA negatif olduğundan çölyak hastalığı dışlanmıştır; glutensiz diyet bırakılabilir.",
+        "B": "Diyet sürerken hemen üst GİS endoskopisi yapılıp duodenumdan çoklu biyopsi alınmalıdır.",
+        "C": "Günde en az 3 g gluten ile yaklaşık 6 haftalık yükleme sonrası seroloji ve duodenal biyopsi yapılmalıdır.",
+        "D": "HLA-DQ2 pozitifliği ve kardeş öyküsü tanı için yeterlidir; ömür boyu diyet önerilmelidir.",
+        "E": "Diyet sürerken DGP-IgG bakılmalı; negatif çıkarsa çölyak hastalığı kesin olarak dışlanır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Glutensiz diyetteki hastada seroloji ve histoloji yalancı negatiftir. HLA-DQ2/DQ8 pozitifliği tanı koydurmadığından tanı ancak gluten yüklemesi (erişkinde günde ≥3 g, ~6 hafta) sonrası seroloji ve biyopsi ile konur.",
+      "aciklama_detay": "Glutensiz diyet mukozayı iyileştirir ve antikorları negatifleştirir; 2 yıldır diyette olan bir hastada negatif tTG-IgA hastalığı dışlamaz. Bu durumda algoritmanın ilk adımı HLA-DQ2/DQ8 tiplemesidir: negatif olsaydı çölyak hastalığı yüksek güvenle dışlanır ve yüklemeye gerek kalmazdı. Ancak bu hastada HLA-DQ2.5 pozitiftir; bu bulgu toplumun %30-40'ında bulunduğu için tanı koydurmaz, yalnızca hastalığın mümkün olduğunu gösterir. Tanıyı kesinleştirmek için hastanın yeniden gluten tüketmesi gerekir: erişkinde günde en az 3 g gluten (yaklaşık 1-2 dilim buğday ekmeği) yaklaşık 6 hafta boyunca verilir, ardından tTG-IgA tekrarlanır ve bulbustan 1-2, distal duodenumdan en az 4 biyopsi alınır. Yükleme sırasında belirgin yakınma gelişirse süre kısaltılıp daha erken biyopsiye gidilebilir. Yükleme sonrası hem seroloji hem histoloji normal kalırsa çölyak hastalığı dışlanır ve tablo çölyak dışı gluten hassasiyeti ya da irritabl bağırsak sendromu yönünden değerlendirilir. Kardeş öyküsü ön test olasılığını artırır ama tanı yerine geçmez; ömür boyu sürecek ve maliyetli bir diyet kanıtsız başlatılmamalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Glutensiz diyette tTG-IgA beklenen biçimde negatifleşir; HLA-DQ2 pozitif hastada negatif seroloji hastalığı dışlamaz.",
+        "B": "YANLIS — İki yıllık diyet sonrası mukoza büyük olasılıkla iyileşmiştir; gluten yüklemesi yapılmadan alınan biyopsi yalancı negatif çıkar.",
+        "C": "DOGRU — HLA pozitif, diyetteki hastada tanı yolu gluten yüklemesi ve ardından seroloji + çoklu duodenal biyopsidir.",
+        "D": "YANLIS — HLA-DQ2/DQ8 pozitifliği yalnızca yatkınlığı gösterir; aile öyküsüyle birlikte bile tanı koydurmaz.",
+        "E": "YANLIS — DGP-IgG de gluten alımına bağımlı bir antikordur; diyet altındaki negatif sonuç hastalığı dışlamaz."
+      },
+      "etiketler": [
+        "Gluten Yüklemesi",
+        "Tanısız Glutensiz Diyet",
+        "HLA-DQ2/DQ8",
+        "Tanı Algoritması"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Al-Toma A ve ark. ESsCD 2025 erişkin çölyak kılavuzu, Bölüm 1: Tanısal yaklaşım (United European Gastroenterol J 2025)"
+    },
+    {
+      "id": "s12",
+      "metin": "Kırk bir yaşında erkek hasta, 4 aydır dirsek ekstansör yüzleri, dizler ve sakral bölgede simetrik yerleşimli, çok kaşıntılı, gruplaşmış papüloveziküler döküntü ile başvuruyor. Gastrointestinal yakınması yok.\n\nTetkikler:\n- Lezyon komşuluğundaki sağlam deriden alınan biyopside direkt immünofloresan: dermal papilla uçlarında granüler IgA birikimi\n- tTG-IgA: normalin üst sınırının 6 katı\n\nDermatitis herpetiformis tanısı konuyor. Glutensiz diyetle birlikte kaşıntının hızlı kontrolü için dapson başlanması planlanıyor.\n\nDapson başlanmadan önce hangi tetkik yapılmalıdır?",
+      "secenekler": {
+        "A": "Tiyopürin metiltransferaz (TPMT) enzim aktivitesi",
+        "B": "HLA-B*58:01 taşıyıcılığı",
+        "C": "Dihidropirimidin dehidrogenaz (DPYD) genotiplemesi",
+        "D": "Duodenal biyopsi ile villüs atrofisinin gösterilmesi",
+        "E": "Glukoz-6-fosfat dehidrogenaz (G6PD) düzeyi"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Dapson oksidan stres yoluyla hemoliz ve methemoglobinemi yapar; G6PD eksikliğinde hemoliz ağır olabileceğinden tedavi öncesi G6PD bakılır.",
+      "aciklama_detay": "Dermatitis herpetiformis çölyak hastalığının deri bulgusudur; tanı, lezyon komşuluğundaki sağlam deriden alınan biyopside dermal papillalarda granüler IgA birikiminin direkt immünofloresanla gösterilmesiyle konur. Temel tedavi ömür boyu glutensiz diyettir, ancak deri bulgularının diyetle gerilemesi aylar hatta yıllar alabilir. Bu nedenle kaşıntıyı günler içinde kontrol eden dapson köprü tedavisi olarak eklenir; dapson enteropatiyi düzeltmez. Dapsonun en önemli toksisitesi doza bağlı oksidatif hemoliz ve methemoglobinemidir; G6PD eksikliği olan hastada hemoliz ağır seyredebileceği için başlamadan önce G6PD düzeyi ölçülür. Başlangıçta ve ilk aylarda sık aralıklarla tam kan sayımı (agranülositoz, hemoliz) ve karaciğer testleri izlenir; ateş, döküntü ve hepatitle giden dapson aşırı duyarlılık sendromu da akılda tutulmalıdır. Serolojisi pozitif ve deri biyopsisiyle doğrulanmış dermatitis herpetiformiste çölyak tanısı için ayrıca duodenal biyopsi zorunlu değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — TPMT azatiyoprin ve 6-merkaptopürin öncesinde bakılır; dapson metabolizmasıyla ilgisi yoktur.",
+        "B": "YANLIS — HLA-B*58:01 allopurinole bağlı ağır deri reaksiyonlarıyla ilişkilidir.",
+        "C": "YANLIS — DPYD eksikliği florourasil ve kapesitabin toksisitesini öngörür.",
+        "D": "YANLIS — Pozitif seroloji ve deride granüler IgA ile dermatitis herpetiformis tanısı konmuşsa duodenal biyopsi dapson için ön koşul değildir.",
+        "E": "DOGRU — G6PD eksikliğinde dapson ağır oksidatif hemolize yol açabilir; tedavi öncesi bakılır."
+      },
+      "etiketler": [
+        "Dermatitis Herpetiformis",
+        "Dapson",
+        "G6PD Eksikliği",
+        "Granüler IgA",
+        "İlaç Güvenliği"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s13",
+      "metin": "Elli yaşında kadın hasta, 9 ay önce tTG-IgA normalin üst sınırının 80 katı ve Marsh 3c histoloji ile çölyak hastalığı tanısı almış ve glutensiz diyete başlamış. Diyete uyduğunu belirtmesine karşın günde 3-4 kez sulu dışkılama ve şişkinlik sürüyor. İş gereği haftanın çoğu günü dışarıda yemek yiyor.\n\nTetkikler:\n- tTG-IgA: normalin üst sınırının 6 katı\n- Hemoglobin 11,8 g/dL, ferritin 9 ng/mL\n- Albümin 3,9 g/dL\n\nBu hastada en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Uzman diyetisyenle ayrıntılı diyet değerlendirmesi, gerekirse idrar/dışkıda gluten immünojenik peptid ölçümü",
+        "B": "Refrakter çölyak hastalığı düşünülerek açık kapsül budesonid başlanması",
+        "C": "İntraepitelyal lenfositlerde akım sitometrisi ve T-hücre klonalite analizi",
+        "D": "Lenfoma araştırması için video kapsül endoskopi ve BT enterografi",
+        "E": "Mikroskobik kolit düşünülerek kolonoskopi ve basamaklı kolon biyopsisi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Yanıtsız çölyak hastalığının en sık nedeni süregiden (çoğu kez farkında olunmayan) gluten alımıdır; hâlâ pozitif seroloji bunu destekler. İlk adım uzman diyetisyen değerlendirmesi ve gerekirse gluten immünojenik peptid ile objektif ölçümdür.",
+      "aciklama_detay": "Glutensiz diyete karşın semptomları süren hasta ‘yanıtsız çölyak hastalığı’ olarak ele alınır ve olguların büyük çoğunluğunda neden gizli ya da çapraz bulaşma yoluyla gluten alımıdır. Bu hastada tTG-IgA 9. ayda hâlâ normalin 6 katıdır; titre düşmüş olsa da süren seropozitiflik devam eden gluten maruziyetini düşündürür, sık dışarıda yemek de bulaşma riskini artırır. Sıralama önemlidir: önce uzman diyetisyen ayrıntılı diyet öyküsü alır; uyumun belirsiz kaldığı durumda idrar veya dışkıda gluten immünojenik peptid ölçümü yakın zamandaki gluten alımını objektif olarak gösterir. Gluten maruziyeti dışlandıktan sonra mikroskobik kolit, ince bağırsakta bakteri aşırı çoğalması, pankreas yetmezliği, laktoz intoleransı ve irritabl bağırsak sendromu araştırılır. Refrakter çölyak hastalığı ancak diyetisyence doğrulanmış en az 12 aylık sıkı diyete karşın villüs atrofisi sürüyorsa ve diğer nedenler dışlanmışsa düşünülür; bu aşamada akım sitometrisi, klonalite ve lenfoma taraması yapılır. Demir eksikliği de süregiden mukozal hasarla uyumludur ve replase edilmelidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Süren seropozitiflik gluten maruziyetini düşündürür; ilk adım diyetisyen değerlendirmesi ve gerekirse gluten immünojenik peptid testidir.",
+        "B": "YANLIS — Refrakter çölyak için en az 12 aylık doğrulanmış sıkı diyet ve diğer nedenlerin dışlanması gerekir; 9. ayda ve pozitif serolojiyle bu tanı konamaz.",
+        "C": "YANLIS — İntraepitelyal lenfosit fenotiplemesi refrakter çölyak tanısı kesinleştikten sonra alt tiplemede kullanılır.",
+        "D": "YANLIS — Alarm bulgusu olmayan, olası gluten maruziyeti açıklanmamış hastada lenfoma araştırması erken ve gereksizdir.",
+        "E": "YANLIS — Mikroskobik kolit yanıtsız çölyağın nedenlerinden biridir ancak süren seropozitiflik varken önce gluten maruziyeti dışlanmalıdır."
+      },
+      "etiketler": [
+        "Yanıtsız Çölyak Hastalığı",
+        "Gizli Gluten Maruziyeti",
+        "Gluten İmmünojenik Peptid",
+        "Diyet Uyumu",
+        "Seroloji İzlemi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Al-Toma A ve ark. ESsCD 2025 erişkin çölyak kılavuzu, Bölüm 2: Yönetim, izlem ve karmaşık seyir (United European Gastroenterol J 2026)"
+    },
+    {
+      "id": "s14",
+      "metin": "Yirmi dokuz yaşında erkek, kardeşinde çölyak hastalığı saptanması üzerine taranıyor. Tamamen asemptomatik; kilo kaybı, anemi ya da ekstraintestinal bulgusu yok. Glutenli beslenmeye devam ediyor.\n\nTetkikler:\n- tTG-IgA: normalin üst sınırının 3 katı; EMA-IgA pozitif\n- Total IgA, hemogram, ferritin ve folat normal\n- Üst GİS endoskopisi: bulbustan 2, distal duodenumdan 4 biyopsi — villüs/kript oranı normal, IEL 100 enterosit başına 22\n\nBu hastanın tanısı ve yönetimi için en uygun ifade hangisidir?",
+      "secenekler": {
+        "A": "Subklinik çölyak hastalığıdır; ömür boyu sıkı glutensiz diyet hemen başlanmalıdır.",
+        "B": "Seroloji yalancı pozitiftir; başka tetkik yapılmadan izlem sonlandırılabilir.",
+        "C": "Tanı serolojiyle konmuştur; biyopsi sonucundan bağımsız olarak glutensiz diyet başlanmalıdır.",
+        "D": "Potansiyel çölyak hastalığıdır; glutenli diyete devam edilerek klinik ve serolojik izlem yapılabilir.",
+        "E": "Çölyak dışı gluten hassasiyetidir; düşük FODMAP diyeti önerilmelidir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Pozitif tTG-IgA ve EMA ile yeterli örneklemeye karşın normal mukoza (Marsh 0-1) potansiyel çölyak hastalığıdır. Asemptomatik hastada glutensiz diyet zorunlu değildir; glutenli diyette klinik ve serolojik izlem uygundur.",
+      "aciklama_detay": "Oslo sınıflamasında potansiyel çölyak hastalığı, çölyak serolojisinin (tTG-IgA ve/veya EMA) pozitif, duodenal mukozanın ise normal (Marsh 0-1) olduğu durumdur. Bu hastada örnekleme standarda uygundur (bulbus 2 + distal duodenum 4), villüs/kript oranı korunmuştur ve IEL sayısı 25 eşiğinin altındadır. Subklinik (sessiz) çölyak hastalığından farkı villüs atrofisinin olmamasıdır. Potansiyel çölyaklı hastaların bir bölümü yıllar içinde villüs atrofisi geliştirir; önemli bir bölümü ise stabil kalır ya da serolojisi kendiliğinden normalleşir. Bu nedenle asemptomatik ve beslenme eksikliği olmayan hastada glutensiz diyet zorunlu tutulmaz; glutenli diyete devam edilerek belirli aralıklarla klinik değerlendirme ve seroloji yapılır, semptom gelişirse ya da titre yükselirse biyopsi tekrarlanır. Semptomatik potansiyel çölyaklı hastalarda ise diyet denemesi uygun olabilir. Erişkinde biyopsisiz tanı ölçütü tTG-IgA ≥10 kat ULN gerektirir; 3 kat yükseklik bu eşiğin altındadır ve biyopsi normal olduğu için tanıyı serolojiye dayandırmak doğru değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Subklinik çölyakta villüs atrofisi vardır; bu hastada mukoza mimarisi normaldir.",
+        "B": "YANLIS — EMA-IgA pozitifliği çok yüksek özgüllüktedir; bulgu yalancı pozitif sayılıp izlem bırakılamaz.",
+        "C": "YANLIS — tTG-IgA 3 kat ULN biyopsisiz tanı eşiğinin (≥10 kat) çok altındadır; normal biyopsi karşısında seroloji tek başına tanı koydurmaz.",
+        "D": "DOGRU — Pozitif seroloji + normal mukoza potansiyel çölyaktır; asemptomatik hastada glutenli diyette izlem uygundur.",
+        "E": "YANLIS — Çölyak dışı gluten hassasiyetinde çölyak serolojisi negatiftir; bu hastada tTG-IgA ve EMA pozitiftir."
+      },
+      "etiketler": [
+        "Potansiyel Çölyak Hastalığı",
+        "Oslo Sınıflaması",
+        "EMA-IgA",
+        "Aile Taraması",
+        "İzlem Stratejisi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Al-Toma et al. United European Gastroenterol J 2019 (ESsCD kılavuzu); Ludvigsson et al. Gut 2013 (Oslo tanımları)"
+    },
+    {
+      "id": "s15",
+      "metin": "Elli sekiz yaşında kadın hasta, 7 yıldır çölyak hastalığı tanısıyla uzman diyetisyen denetiminde sıkı glutensiz diyet uyguluyor; tekrarlayan idrar gluten immünojenik peptid testleri negatif. Son 1,5 yıldır kronik ishal, kilo kaybı ve hipoalbüminemi gelişmiş. Mikroskobik kolit, ince bağırsakta bakteri aşırı çoğalması, pankreas yetmezliği ve giardiyaz dışlanmış.\n\nTetkikler:\n- tTG-IgA: negatif\n- Duodenal biyopsi: total villüs atrofisi (Marsh 3c)\n- IEL akım sitometrisi: aberran (yüzey CD3 negatif, hücre içi CD3 pozitif) IEL oranı %4\n- TCR gen yeniden düzenlenmesi: poliklonal\n- BT enterografi: kitle ya da ülseratif jejunit bulgusu yok\n\nBeslenme desteğine ek olarak en uygun ilk basamak tedavi hangisidir?",
+      "secenekler": {
+        "A": "Kladribin (2-CdA) kürleri",
+        "B": "Açık kapsül budesonid",
+        "C": "Otolog hematopoetik kök hücre nakli",
+        "D": "Tofasitinib ile JAK inhibisyonu",
+        "E": "İnfliksimab indüksiyonu"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Aberran IEL oranı düşük (<%20) ve poliklonal TCR = Tip 1 refrakter çölyak. İlk basamak tedavi, ilacın proksimal ince bağırsağa ulaşması için açık kapsül budesoniddir.",
+      "aciklama_detay": "Doğrulanmış sıkı diyete ve negatif gluten immünojenik peptid testlerine karşın 12 aydan uzun süren villüs atrofisi, diğer nedenlerin dışlanmasıyla birlikte refrakter çölyak hastalığı tanısını karşılar. Alt tipleme için belirleyici olan intraepitelyal lenfosit fenotipi ve klonalitedir: aberran IEL oranı %20'nin altında ve TCR poliklonal olduğunda Tip 1 refrakter çölyak söz konusudur. Tip 1'de EATL'ye ilerleme riski düşük, prognoz görece iyidir. Beslenme desteği (gerekirse enteral/parenteral) ve mikrobesin replasmanı her iki tipte de ilk adımdır. Tip 1'de ilk basamak ilaç açık kapsül budesoniddir: kapsül açılıp içeriği yutulduğunda ilaç duodenum ve jejunuma ulaşır, yüksek ilk geçiş metabolizması sayesinde sistemik steroid yan etkileri azdır. Yanıtsız ya da steroid bağımlı Tip 1 hastada idame için tiyopürinler (azatiyoprin, 6-merkaptopürin) kullanılabilir. Kladribin, otolog kök hücre nakli ve JAK inhibitörleri pre-lenfomatöz Tip 2 refrakter çölyak için ayrılmış seçeneklerdir; anti-TNF ajanlar ise dirençli olgularda kurtarma tedavisi olarak bildirilmiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kladribin aberran klonu hedefleyen sitotoksik bir ajandır ve Tip 2 refrakter çölyakta kullanılır.",
+        "B": "DOGRU — Tip 1 refrakter çölyakta beslenme desteğine ek ilk basamak tedavi açık kapsül budesoniddir.",
+        "C": "YANLIS — Otolog kök hücre nakli kladribine dirençli, yüksek riskli Tip 2 olgulara ayrılmıştır.",
+        "D": "YANLIS — JAK inhibitörleri aberran klonun JAK/STAT bağımlılığı nedeniyle Tip 2'de araştırılan tedavilerdir; Tip 1'de ilk basamak değildir.",
+        "E": "YANLIS — Anti-TNF tedavisi dirençli olgularda kurtarma seçeneği olarak bildirilmiştir; ilk basamak tedavi değildir."
+      },
+      "etiketler": [
+        "Refrakter Çölyak Tip 1",
+        "Açık Kapsül Budesonid",
+        "Poliklonal IEL",
+        "Tedavi Seçimi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Al-Toma A ve ark. ESsCD 2025 erişkin çölyak kılavuzu, Bölüm 2: Yönetim, izlem ve karmaşık seyir (United European Gastroenterol J 2026); Malamut G, Cellier C. Refractory Celiac Disease. Gastroenterol Clin North Am 2019"
     }
   ]
 }

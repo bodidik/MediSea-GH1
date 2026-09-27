@@ -303,6 +303,156 @@
       ],
       "zorluk": "zor",
       "kaynak": "Aster & Bougie N Engl J Med 2007; Curtis BR. Immunohematology 2014"
+    },
+    {
+      "id": "s11",
+      "metin": "45 yaşında kadın hasta, elektif inguinal herni ameliyatı öncesi rutin tetkiklerde düşük trombosit saptanması üzerine iç hastalıkları polikliniğine yönlendiriliyor. Kanama yakınması yok; daha önce tonsillektomi ve iki doğumu kanamasız geçmiş. Fizik muayenede peteşi, ekimoz, lenfadenopati ya da splenomegali yok. İlaç kullanmıyor.\n\nTetkikler (EDTA'lı tüp):\nTrombosit: 38.000/µL\nHemoglobin: 13.4 g/dL, lökosit 7.100/µL\nOtomatik sayıcı uyarısı: “trombosit kümesi”\nPT ve aPTT: normal\n\nBu hastada en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Prednizon 1 mg/kg/gün başlanıp ameliyatın ertelenmesi",
+        "B": "MDS'yi dışlamak için kemik iliği aspirasyonu ve biyopsisi",
+        "C": "Ameliyat öncesi profilaktik trombosit süspansiyonu transfüzyonu",
+        "D": "Periferik yaymanın incelenmesi ve trombosit sayımının sitratlı tüpte tekrarlanması",
+        "E": "Anti-GPIIb/IIIa trombosit otoantikoru istenmesi"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Kanama öyküsü ve bulgusu olmayan, sayıcının küme uyarısı verdiği hastada ilk olasılık EDTA'ya bağlı psödotrombositopenidir; yayma ve sitratlı tüpte sayım tanıyı koyar.",
+      "aciklama_detay": "İTP bir dışlama tanısıdır ve ilk dışlanması gereken durum yapay (psödo) trombositopenidir. EDTA bazı bireylerde trombosit GPIIb/IIIa üzerindeki kriptik epitopları açığa çıkarır; doğal olarak bulunan antikorlar bu epitoplara bağlanarak trombositleri tüpte kümeler (ya da nötrofillerin çevresine dizer — trombosit satellitizmi). Otomatik sayıcı kümeleri trombosit olarak saymaz ve sayı yapay olarak düşük çıkar.\n\nİpuçları: kanama öyküsü ve bulgusunun olmaması, sayıcının küme/uyarı işareti vermesi, diğer serilerin normal olması. Tanı periferik yaymada kümelerin görülmesi ve sayımın sodyum sitratlı (ya da heparinli) tüpte, örnek alındıktan hemen sonra tekrarlanmasıyla konur; sitratlı tüpte seyreltme düzeltmesi yapılır.\n\nPsödotrombositopeni dışlanmadan steroid, transfüzyon ya da kemik iliği incelemesi gereksiz ve zararlıdır. Kemik iliği yaşa bakılmaksızın yalnızca ek sitopeni, sistemik semptom, yaymada displazi ya da tedaviye yanıtsızlık durumunda gerekir. Trombosit otoantikorlarının duyarlılığı düşüktür ve rutin tanıda yeri yoktur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Gerçek trombositopeni doğrulanmadan steroid başlamak gereksiz toksisite ve ameliyat gecikmesi demektir.",
+        "B": "YANLIS — İzole ve muhtemelen yapay trombositopenide kemik iliği incelemesi endike değildir.",
+        "C": "YANLIS — Trombosit sayısı büyük olasılıkla gerçekte normaldir; profilaktik transfüzyon gereksiz risk taşır.",
+        "D": "DOGRU — Yaymada küme aranması ve sitratlı tüpte tekrar sayım psödotrombositopeniyi doğrular ya da dışlar.",
+        "E": "YANLIS — Trombosit otoantikor testlerinin duyarlılığı düşüktür; psödotrombositopeni ayrımında da yeri yoktur."
+      },
+      "etiketler": [
+        "Psödotrombositopeni",
+        "EDTA",
+        "Periferik Yayma",
+        "Dışlama Tanısı",
+        "Laboratuvar Yorumu"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Arnold DM, Cuker A. Immune thrombocytopenia (ITP) in adults: Clinical manifestations and diagnosis. UpToDate"
+    },
+    {
+      "id": "s12",
+      "metin": "29 yaşında erkek hasta, 1 haftadır bacaklarda peteşi ve kendiliğinden birkaç dakikada duran burun kanaması nedeniyle başvuruyor. İlaç, bitkisel ürün ya da yakın zamanda aşı öyküsü yok. Fizik muayenede alt ekstremitelerde peteşi dışında bulgu yok; splenomegali ve lenfadenopati yok.\n\nTetkikler:\nTrombosit: 14.000/µL (sitratlı tüpte doğrulandı)\nHemoglobin: 14.8 g/dL, lökosit 6.900/µL\nPeriferik yayma: iri trombositler dışında normal\nHIV ve HCV serolojisi: negatif\nDAT: negatif\n\nASH 2019 İTP kılavuzuna göre bu hasta için en uygun başlangıç tedavisi hangisidir?",
+      "secenekler": {
+        "A": "Kanama hafif olduğu için tedavisiz izlem",
+        "B": "Kısa süreli kortikosteroid: 6 hafta içinde azaltılıp kesilen prednizon ya da 4 gün deksametazon 40 mg/gün",
+        "C": "Prednizon 1 mg/kg/gün ile 3 ay, ardından uzun süreli düşük doz idame",
+        "D": "Tanı anında splenektomi",
+        "E": "Trombosit transfüzyonu ile birlikte IVIG ve ardından aylık IVIG idamesi"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Yeni tanı erişkin İTP'de trombosit <30.000/µL ise (asemptomatik ya da hafif mukokütanöz kanama) kortikosteroid önerilir; prednizon toplam 6 haftayı aşmamalıdır.",
+      "aciklama_detay": "ASH 2019 kılavuzu, yeni tanı almış ve trombosit sayısı <30.000/µL olan erişkinde — asemptomatik ya da yalnızca hafif mukokütanöz kanama olsa bile — izlem yerine kortikosteroid tedavisini önerir. Seçenekler: prednizon (0.5–2 mg/kg/gün) ya da deksametazon 40 mg/gün × 4 gün; ikisi arasında kalıcı yanıt açısından belirgin üstünlük gösterilmemiştir, deksametazon daha hızlı yanıt verebilir.\n\nKılavuzun kritik uyarısı süreyle ilgilidir: prednizon, azaltma dahil toplam 6 haftayı aşmamalıdır. Uzun süreli steroid kalıcı remisyon oranını artırmaz; osteoporoz, hiperglisemi, enfeksiyon, katarakt ve psikiyatrik yan etkileri biriktirir. Steroid bağımlılığı gelişirse ikinci basamak tedaviye geçilir.\n\nIVIG hızlı trombosit artışı gerektiğinde (aktif kanama, işlem öncesi) steroide eklenir; etkisi 2–4 haftalık ve geçicidir, idame tedavi değildir. Kanama yokken trombosit transfüzyonu yararsızdır. Splenektomi, kendiliğinden ya da tedaviyle remisyon şansı yüksek olan ilk yılda önerilmez. ASH 2019 ayrıca yeni tanı ve trombosit <20.000/µL olan hastada koşullu olarak hastaneye yatışı önerir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Trombosit <30.000/µL olan yeni tanı erişkinde ASH 2019 izlem yerine kortikosteroidi önerir.",
+        "B": "DOGRU — Prednizon (toplam ≤6 hafta) ya da kısa deksametazon kürü birinci basamak standarttır.",
+        "C": "YANLIS — 6 haftayı aşan steroid kalıcı yanıtı artırmadan toksisiteyi biriktirir; ASH 2019 buna karşı öneride bulunur.",
+        "D": "YANLIS — İlk 12 ay içinde spontan ya da tedaviyle remisyon olasılığı yüksektir; splenektomi ertelenir.",
+        "E": "YANLIS — Kanamasız hastada transfüzyon gereksizdir; IVIG geçici etkilidir ve idame olarak kullanılmaz."
+      },
+      "etiketler": [
+        "Yeni Tanı İTP",
+        "Kortikosteroid",
+        "Deksametazon",
+        "ASH 2019",
+        "Birinci Basamak"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ASH 2019 İTP kılavuzu (Neunert ve ark., Blood Adv 2019); Liu XG, Hou Y, Hou M. J Hematol Oncol 2023"
+    },
+    {
+      "id": "s13",
+      "metin": "67 yaşında kadın hasta, 3 yıldır kronik İTP tanısıyla izlenmekte; eltrombopag tedavisini 1 ay önce kendi isteğiyle bırakmış. Evde düşme sonrası şiddetli baş ağrısı ve kusma ile getiriliyor; GKS 14. Beyin BT'de sağ temporal lobda 2 cm'lik intraparankimal hemoraji saptanıyor.\n\nTetkikler:\nTrombosit: 6.000/µL\nHemoglobin: 11.9 g/dL\nPT, aPTT, fibrinojen: normal\n\nBu hastada en uygun acil tedavi yaklaşımı hangisidir?",
+      "secenekler": {
+        "A": "Yalnızca IVIG 1 g/kg verilip 48 saat sonra trombosit sayısının değerlendirilmesi",
+        "B": "Yalnızca trombosit transfüzyonu; kortikosteroid ve IVIG kanama durduktan sonra",
+        "C": "Medikal tedavi denenmeden acil splenektomi",
+        "D": "Rituksimab 375 mg/m² haftalık 4 doz başlanması",
+        "E": "Trombosit transfüzyonu + IV yüksek doz metilprednizolon + IVIG; TPO reseptör agonistinin eklenmesi"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "İTP'de kafa içi kanama gibi yaşamı tehdit eden kanamada tek ajan değil, trombosit transfüzyonu + yüksek doz IV steroid + IVIG birlikte verilir; TPO-RA ve antifibrinolitik eklenebilir.",
+      "aciklama_detay": "İTP'de kritik kanamada (kafa içi, hemodinamiyi bozan GI kanama) hedef trombosit sayısını olabildiğince hızlı yükseltmektir ve farklı mekanizmalarla etki eden ajanlar eş zamanlı kullanılır:\n• Trombosit transfüzyonu: otoantikor nedeniyle ömrü kısa olsa da anlık hemostatik katkı sağlar; tekrarlayan dozlar ya da sürekli infüzyon kullanılabilir. IVIG ile birlikte verildiğinde transfüzyon yanıtı iyileşir.\n• Yüksek doz IV metilprednizolon (1 g/gün × 3 gün): antikor aracılı yıkımı hızla baskılar.\n• IVIG (1 g/kg/gün, 1–2 gün): makrofaj Fcγ reseptörlerini bloke eder, 1–3 günde yanıt verir.\n• TPO reseptör agonisti (ör. romiplostim) yanıtı sürdürmek için eklenir; etkisi günler sonra başlar. Traneksamik asit destekleyici olarak verilebilir.\n\nTedavi basamaklı değil eş zamanlıdır; IVIG'in 48 saat sonrasını beklemek kafa içi hematom büyümesi için yeterli süredir. Rituksimabın etkisi haftalar içinde başlar. Splenektomi, maksimum medikal tedaviye yanıtsız nadir hastada kurtarma seçeneğidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tek ajan ve bekleme yaklaşımı kafa içi kanamada yetersizdir; tedaviler eş zamanlı verilmelidir.",
+        "B": "YANLIS — Transfüze trombositler otoantikorla hızla yıkılır; steroid ve IVIG eş zamanlı verilmezse kalıcı artış sağlanamaz.",
+        "C": "YANLIS — Splenektomi, maksimum medikal tedaviye yanıtsız nadir durumlar için kurtarma seçeneğidir.",
+        "D": "YANLIS — Rituksimabın etkisi haftalar içinde başlar; acil kanamada yeri yoktur.",
+        "E": "DOGRU — Transfüzyon + yüksek doz IV steroid + IVIG kombinasyonu, gerekirse TPO-RA ve antifibrinolitik ile birlikte standarttır."
+      },
+      "etiketler": [
+        "Kafa İçi Kanama",
+        "Acil Yönetim",
+        "IVIG",
+        "Metilprednizolon",
+        "Trombosit Transfüzyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Chowdhury SR ve ark. Treatment of Critical Bleeds in Patients With Immune Thrombocytopenia: A Systematic Review. Eur J Haematol 2025; ASH 2019 İTP kılavuzu"
+    },
+    {
+      "id": "s14",
+      "metin": "42 yaşında kadın hasta, 5 ay önce İTP tanısı almış. Prednizon 1 mg/kg/gün ile trombosit sayısı 150.000/µL'ye yükselmiş; ancak iki kez, doz 15 mg/günün altına indirildiğinde trombosit sayısı 15.000/µL'ye düşmüş ve peteşi gelişmiştir. Bu süreçte 8 kg kilo almış, açlık kan şekeri 138 mg/dL saptanmıştır. Cerrahiden kaçınmak istediğini belirtiyor; gebelik planı yok.\n\nTetkikler:\nHBsAg, anti-HBc, HIV, HCV: negatif\nKemik iliği: artmış megakaryosit, başka bulgu yok\n\nBu hastada en uygun sonraki tedavi hangisidir?",
+      "secenekler": {
+        "A": "Trombosit sayısını koruyacak en düşük dozda (10–15 mg/gün) uzun süreli prednizon",
+        "B": "Tanıdan 5 ay sonra splenektomi",
+        "C": "Trombopoietin reseptör agonisti (eltrombopag, romiplostim ya da avatrombopag)",
+        "D": "Her ay tekrarlanan IVIG ile idame",
+        "E": "Azatiyoprin + siklosporin kombinasyonu"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Steroide bağımlı, ≥3 aydır süren İTP'de ASH 2019 ikinci basamakta TPO-RA'yı önerir; splenektomi tanıdan en az 12 ay sonrasına ertelenir.",
+      "aciklama_detay": "Hasta 3 aydan uzun süredir İTP'lidir (persistan evre) ve kortikosteroide bağımlıdır: yanıt vardır ama doz azaltıldığında kaybolur. Bu, ikinci basamak tedaviye geçiş endikasyonudur; kilo artışı ve hiperglisemi steroid toksisitesinin başladığını gösterir.\n\nASH 2019 bu hastalar için TPO-RA ya da splenektomiyi önerir; TPO-RA'yı rituksimaba, rituksimabı splenektomiye tercih eder ve splenektomi kararının tanıdan en az 12 ay sonrasına ertelenmesini önerir (ilk yılda kendiliğinden remisyon olabilir). Cerrahiden kaçınmak isteyen bu hastada en uygun seçenek TPO-RA'dır. TPO-RA'lar megakaryosit üretimini doğrudan uyarır ve %70–90 yanıt sağlar; bir ajan başarısız olursa diğerine geçişle yeniden yanıt alınabilir.\n\nPratik noktalar: eltrombopag hepatotoksisite izlemi gerektirir ve kalsiyum, demir gibi çok değerlikli katyonlardan (süt ürünleri, antiasit) en az 4 saat ayrı alınır; avatrombopagda besin kısıtlaması yoktur; romiplostim haftalık subkutan verilir. Uzun süreli kullanımda tromboz riski ve kemik iliği retikülin fibrozu izlenir.\n\nİVIG'in etkisi geçicidir ve idame için uygun değildir. Azatiyoprin ve siklosporin, çoklu dirençli hastada sonraki basamak seçenekleridir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kalıcı steroid bağımlılığı ikinci basamağa geçiş endikasyonudur; uzun süreli düşük doz steroid toksisiteyi biriktirir.",
+        "B": "YANLIS — Splenektomi ilk 12 ay içinde önerilmez; hasta ayrıca cerrahiden kaçınmak istiyor.",
+        "C": "DOGRU — Steroide bağımlı persistan İTP'de ASH 2019'un önerdiği ikinci basamak tedavi TPO-RA'dır.",
+        "D": "YANLIS — IVIG'in yanıtı 2–4 hafta süren geçici bir yanıttır; idame tedavi olarak kullanılmaz.",
+        "E": "YANLIS — Klasik immünsüpresanlar çoklu dirençli hastada sonraki basamaklarda kullanılır."
+      },
+      "etiketler": [
+        "Steroid Bağımlılığı",
+        "TPO Reseptör Agonisti",
+        "İkinci Basamak",
+        "Splenektomi Zamanlaması",
+        "ASH 2019"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ASH 2019 İTP kılavuzu (Neunert ve ark., Blood Adv 2019); Arnold DM, Cuker A. Second-line and subsequent therapies for immune thrombocytopenia (ITP) in adults. UpToDate"
+    },
+    {
+      "id": "s15",
+      "metin": "31 yaşında, 36 haftalık gebe kadın, gebelik öncesinden bilinen İTP ile izlenmektedir. Kanama yakınması yok. Vajinal doğum planlanıyor ve hasta doğumda epidural analjezi istiyor.\n\nTetkikler:\nTrombosit: 38.000/µL (2 hafta önce 45.000/µL)\nKan basıncı: 118/72 mmHg; proteinüri yok\nKaraciğer enzimleri ve LDH: normal\nPeriferik yayma: şistosit yok\n\nBu hastada doğum öncesi en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "IVIG (ya da düşük doz prednizon) ile trombosit sayısının nöraksiyel anestezi için ≥70.000–80.000/µL'ye yükseltilmesi",
+        "B": "Hızlı yanıt için eltrombopag başlanması",
+        "C": "Fetal kafa içi kanamayı önlemek için elektif sezaryen planlanması",
+        "D": "Deksametazon 40 mg/gün × 4 gün ile hızlı yanıt sağlanması",
+        "E": "Rituksimab 375 mg/m² haftalık uygulanması"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Gebelikte İTP'de birinci basamak IVIG ya da prednizondur; vajinal doğum için ≥50.000/µL, nöraksiyel anestezi için ≥70.000–80.000/µL hedeflenir, hızlı yanıt gerektiğinde IVIG tercih edilir.",
+      "aciklama_detay": "Kanaması olmayan ve trombosit sayısı 20.000–30.000/µL'nin üzerinde seyreden gebede 36. haftaya kadar izlem yeterlidir; doğum yaklaştığında hedef, planlanan girişime göre belirlenir: vajinal doğum için ≥50.000/µL, spinal/epidural anestezi için epidural hematom riskini azaltmak amacıyla ≥70.000–80.000/µL.\n\nBirinci basamak ajanlar IVIG ve prednizondur. Prednizon plasentada büyük ölçüde inaktive edilir; deksametazon ise plasentayı geçerek fetüsü etkileyebileceğinden gebelikte kaçınılır. Doğuma kısa süre kala hızlı artış gerektiğinde IVIG (1 g/kg, gerekirse tekrarlanır) öne çıkar.\n\nDoğum şekli obstetrik endikasyonlara göre belirlenir; maternal İTP tek başına sezaryen gerekçesi değildir, çünkü sezaryenin fetal kafa içi kanamayı azalttığı gösterilmemiştir. Fetal skalp elektrodu, skalp kan örneklemesi ve vakum gibi girişimlerden kaçınılır; yenidoğanın trombosit sayısı doğumdan sonra izlenir (anneden geçen IgG ile neonatal trombositopeni olabilir).\n\nTPO-RA'lar gebelikte rutin önerilmez; rituksimab fetal B hücre baskılanması nedeniyle tercih edilmez.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Gebelikte birinci basamak IVIG/prednizondur; nöraksiyel anestezi için ≥70.000–80.000/µL hedeflenir.",
+        "B": "YANLIS — TPO-RA'lar gebelikte güvenlilik verisi sınırlı olduğundan rutin kullanılmaz; yalnızca dirençli, yaşamı tehdit eden durumlarda tartışılır.",
+        "C": "YANLIS — Doğum şekli obstetrik endikasyona göre seçilir; sezaryen fetal kafa içi kanamayı azaltmaz.",
+        "D": "YANLIS — Deksametazon plasentayı geçer; gebelikte steroid seçimi prednizondur.",
+        "E": "YANLIS — Rituksimabın etkisi yavaştır ve fetal B hücre baskılanmasına yol açabilir; doğum öncesi hazırlıkta yeri yoktur."
+      },
+      "etiketler": [
+        "Gebelik",
+        "İTP",
+        "IVIG",
+        "Nöraksiyel Anestezi",
+        "Doğum Yönetimi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Gebelikte İmmün İTP Yönetimi; ASH 2019 İTP kılavuzu"
     }
   ]
 }

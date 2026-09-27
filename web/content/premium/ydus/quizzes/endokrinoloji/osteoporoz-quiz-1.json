@@ -303,6 +303,156 @@
       ],
       "zorluk": "orta",
       "kaynak": "ISCD Official Positions 2023; Diez-Perez et al. Bone 2012 (Treatment Failure Definition)"
+    },
+    {
+      "id": "s11",
+      "metin": "Altmış yedi yaşında postmenopozal kadın, femur boynu T-skoru -2,7 bulunduğu için 5 yıldır haftalık oral alendronat kullanıyor; ilacı düzenli ve doğru biçimde aldığını belirtiyor. Hiç frajilite kırığı olmamış, glukokortikoid ya da aromataz inhibitörü kullanmıyor, son bir yılda düşme öyküsü yok.\n\nKontrol değerlendirmesi:\nFemur boynu T-skoru: -2,1\nTotal kalça T-skoru: -1,8\nLomber omurga T-skoru: -1,9\nVertebral kırık değerlendirmesi: kırık yok\nFRAX (KMY ile): 10 yıllık majör osteoporotik kırık %12, kalça kırığı %2,1\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Alendronata süresiz olarak devam edilmesi",
+        "B": "Daha güçlü antirezorptif etki için denosumaba geçilmesi",
+        "C": "Kazanımları artırmak için teriparatide geçilmesi",
+        "D": "Alendronata ara verilmesi (ilaç tatili), kırık riskinin 1–2 yıl aralarla KMY ve klinik değerlendirmeyle izlenmesi",
+        "E": "Yıllık IV zoledronik aside geçilip 3 yıl daha tedavi verilmesi"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Beş yıllık oral bisfosfonattan sonra kırığı olmayan, femur boynu T-skoru -2,5'in üzerine çıkmış ve kırık riski orta-düşük düzeye inmiş hastada ilaç tatili uygundur. Bisfosfonat kemikte birikerek etkisini sürdürürken çene osteonekrozu ve atipik femur kırığı riski azaltılır.",
+      "aciklama_detay": "Bisfosfonatlar hidroksiapatite bağlanarak kemikte yıllarca kalır; bu nedenle kesildikten sonra da antirezorptif etki bir süre devam eder. Buna karşın kullanım süresi uzadıkça atipik femur kırığı ve (daha az ölçüde) çene osteonekrozu riski artar. Bu dengeyi gözeterek TEMD ve ASBMR önerileri, kırık riski stabil, orta-düşük düzeydeki hastalarda oral bisfosfonat için 5 yıl, IV zoledronik asit için 3 yıl sonra tedavinin yeniden değerlendirilmesini ve ilaç tatili verilmesini önerir. Tatil için lehine noktalar: tedavi altında kırık olmaması, femur boynu T-skorunun -2,5'in üzerinde olması ve FRAX ile hesaplanan riskin yüksek olmaması. Bu hastada üçü de sağlanmıştır. Tedavi altında kırık geçiren, kalça T-skoru ≤-2,5 kalan ya da çok yüksek riskli hastalarda ise oral tedavi 10 yıla, zoledronik asit 6 yıla kadar uzatılabilir. İlaç tatilinde hasta 1–2 yıl aralarla KMY ve klinik risk açısından izlenir; yeni kırık, anlamlı KMY kaybı ya da risk artışı olursa tedaviye dönülür. Bu kural denosumab için geçerli değildir: denosumab kesilirse rebound kemik kaybı gelişir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kırık riski stabil ve orta-düşük olan hastada 5 yıldan sonra süresiz devam, ek kazanç sağlamadan atipik femur kırığı riskini artırır.",
+        "B": "YANLIS — Tedavi yanıtı iyi olan, riski azalmış hastada güçlendirme gerekmez; denosumab ayrıca kesilince rebound riski taşır ve ilaç tatiline izin vermez.",
+        "C": "YANLIS — Anabolik tedavi çok yüksek riskli hastalara ayrılır; bu hasta o grupta değildir.",
+        "D": "DOGRU — 5 yıllık oral tedaviden sonra kırıksız, femur boynu T-skoru >-2,5 ve riski azalmış hastada ilaç tatili ve periyodik yeniden değerlendirme uygundur.",
+        "E": "YANLIS — Tedaviyi uzatma gerekçesi yoktur; toplam bisfosfonat maruziyetini artırmak yan etki riskini yükseltir."
+      },
+      "etiketler": [
+        "İlaç Tatili",
+        "Bisfosfonat",
+        "Atipik Femur Kırığı",
+        "Tedavi Süresi",
+        "Yeniden Değerlendirme"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD Osteoporoz ve Metabolik Kemik Hastalıkları Tanı ve Tedavi Kılavuzu 2025; Adler et al. J Bone Miner Res 2016 (ASBMR görev grubu, uzun süreli bisfosfonat)"
+    },
+    {
+      "id": "s12",
+      "metin": "Yetmiş bir yaşında kadın hasta, 8 yıldır alendronat kullanıyor. Son 6 haftadır sağ uyluk ön-dış yüzünde, yük vermekle artan künt ağrı tarif ediyor; travma öyküsü yok. Fizik muayenede sağ femur diafizi hizasında hafif hassasiyet var, yürüyüşü antaljik.\n\nTetkikler:\nSağ femur grafisi: diafiz lateral korteksinde lokalize kalınlaşma ve gagalanma (beaking); tam kat kırık hattı yok\nSerum Ca, P, ALP, 25(OH)D: normal\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Alendronata devam, NSAİİ ve fizik tedavi ile 6 hafta izlem",
+        "B": "Alendronatı kesmek, karşı femuru da görüntülemek ve ağrılı inkomplet lezyon için profilaktik intramedüller çivileme açısından ortopediye yönlendirmek",
+        "C": "Oral emilim sorununu aşmak için yıllık IV zoledronik aside geçmek",
+        "D": "Metastaz dışlamak için kemik sintigrafisi yapıp ardından denosumab başlamak",
+        "E": "Yalnızca etkilenen femurun MR'ını çekip alendronatı 6 ay sonra yeniden değerlendirmek"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Uzun süreli bisfosfonat kullanan hastada prodromal uyluk ağrısı ile lateral kortekste lokalize kalınlaşma, gelişmekte olan atipik femur kırığıdır. Antirezorptif kesilir, karşı taraf da görüntülenir (sıklıkla bilateraldir) ve ağrılı inkomplet lezyonda profilaktik çivileme değerlendirilir.",
+      "aciklama_detay": "Atipik femur kırığı (AFK), subtrokanterik bölge ile suprakondiler bölge arasındaki femur diafizinde, minimal travma ya da travmasız gelişen, lateral korteksten başlayan transvers veya kısa oblik kırıktır. ASBMR görev grubu ölçütlerinde lateral kortekste lokalize periostal ya da endosteal kalınlaşma (gagalanma), komün olmayan kırık hattı ve prodromal kasık ya da uyluk ağrısı belirleyicidir. Risk, bisfosfonat kullanım süresiyle (özellikle 5 yıldan sonra) belirgin artar; denosumab ile de bildirilmiştir. Olguların önemli bir kısmında karşı femurda da benzer lezyon bulunduğundan kontralateral femur grafisi (gerekirse MR ya da DXA ile tüm femur görüntüleme) şarttır. Yaklaşım: bisfosfonat (ve varsa denosumab) kesilir, kalsiyum ve D vitamini yeterliliği sağlanır, yük azaltılır. Ağrılı inkomplet kırıkta tam kırığa ilerleme riski yüksek olduğundan profilaktik intramedüller çivileme önerilir; ağrısız ve yalnız görüntülemede saptanan lezyonlarda yük kısıtlamasıyla izlem denenebilir. Kırık iyileşmesini desteklemek ve osteoporoz tedavisini sürdürmek için anabolik ajan (teriparatid) seçilebilir. Uzun bisfosfonat kullanımında yeni başlayan uyluk ya da kasık ağrısı her zaman bu açıdan sorgulanmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bisfosfonata devam, kortikal lezyonun tam kırığa ilerlemesine zemin hazırlar; NSAİİ ve fizik tedavi altta yatan sorunu çözmez.",
+        "B": "DOGRU — Antirezorptif kesilir, lezyon sıklıkla bilateral olduğundan karşı femur görüntülenir, ağrılı inkomplet lezyonda profilaktik çivileme değerlendirilir.",
+        "C": "YANLIS — Sorun emilim değil, uzun süreli baskılanmış kemik döngüsüdür; bir başka bisfosfonata geçmek riski artırır.",
+        "D": "YANLIS — Lateral kortikal gagalanma tipik AFK bulgusudur; denosumab da AFK ile ilişkilidir ve bu aşamada verilmez.",
+        "E": "YANLIS — Karşı femur görüntülenmeden bilateral tutulum atlanır; ilacı 6 ay daha sürdürmek ilerleme riskini artırır."
+      },
+      "etiketler": [
+        "Atipik Femur Kırığı",
+        "Bisfosfonat Yan Etkisi",
+        "Prodromal Uyluk Ağrısı",
+        "Bilateral Görüntüleme",
+        "Profilaktik Çivileme"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Shane et al. J Bone Miner Res 2014 (ASBMR atipik femur kırığı görev grubu 2. raporu); Rosen HN. Risks of bisphosphonate therapy in patients with osteoporosis. UpToDate"
+    },
+    {
+      "id": "s13",
+      "metin": "Yetmiş dört yaşında kadın hasta, basit düşme sonrası gelişen kalça kırığı nedeniyle opere edilmiş. Taburculuk öncesi osteoporoz tedavisi olarak IV zoledronik asit planlanıyor. Evde kapalı yaşıyor, güneşe çıkmıyor.\n\nTetkikler:\nSerum Ca (albümine göre düzeltilmiş): 8,4 mg/dL\nSerum P: 2,4 mg/dL\nALP: 210 U/L (↑)\n25(OH)D: 7 ng/mL\nİntakt PTH: 145 pg/mL (↑)\neGFR: 64 mL/dk/1,73 m²\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kırık sonrası erken tedavi mortaliteyi azalttığından zoledronik asidin hemen, taburculuk öncesi verilmesi",
+        "B": "PTH yüksekliği nedeniyle primer hiperparatiroidi düşünülüp paratiroid sintigrafisi istenmesi",
+        "C": "Zoledronik asit yerine hemen oral alendronat başlanması",
+        "D": "Böbrekten bağımsız olduğu için bisfosfonat yerine denosumab başlanması",
+        "E": "Antirezorptif tedavinin ertelenmesi; D vitamini ve kalsiyum replasmanıyla 25(OH)D, kalsiyum ve PTH düzeltildikten sonra zoledronik asit verilmesi"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Ağır D vitamini eksikliği ve sekonder hiperparatiroidide (düşük-normal Ca, düşük P, yüksek ALP ve PTH) güçlü bir antirezorptif verilirse ciddi hipokalsemi gelişebilir; tablo osteomalaziyi de düşündürür. Önce D vitamini ve kalsiyum yerine konur, ardından antirezorptif başlanır.",
+      "aciklama_detay": "Osteoporoz tedavisine başlamadan önce sekonder nedenler ve mineral metabolizması değerlendirilir. Bu hastada 25(OH)D 7 ng/mL, kalsiyum düşük-normal, fosfor düşük, ALP ve PTH yüksektir: ağır D vitamini eksikliğine bağlı sekonder hiperparatiroidi ve olası osteomalazi tablosu. Bu durumda kalsiyum dengesi PTH'nin kemikten kalsiyum mobilizasyonuna dayanır; zoledronik asit ya da denosumab gibi güçlü antirezorptifler bu mobilizasyonu keserek ciddi ve semptomatik hipokalsemiye yol açabilir. Ayrıca osteomalazide mineralizasyon kusuru düzeltilmeden antirezorptif vermek uygun değildir. Doğru yaklaşım, D vitamini (yükleme ve idame) ve yeterli kalsiyum ile 25(OH)D'yi en az 20–30 ng/mL'nin üzerine çıkarmak, kalsiyum-fosfor dengesini ve PTH'yi düzeltmek, ardından antirezorptif başlamaktır. Kalça kırığı sonrası zoledronik asidin kırık ve mortaliteyi azalttığı HORIZON-RFT çalışmasında ilk doz kırıktan ortalama birkaç hafta sonra ve D vitamini yüklemesinin ardından verilmiştir. Primer hiperparatiroidide kalsiyum yüksek ya da yüksek-normaldir; burada kalsiyum düşüktür ve PTH artışı sekonderdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ağır D vitamini eksikliğinde hemen verilen zoledronik asit ciddi hipokalsemiye yol açabilir; erken tedavinin faydası önce D vitamini yerine konarak sağlanır.",
+        "B": "YANLIS — Kalsiyum düşük-normal, fosfor düşük ve 25(OH)D çok düşüktür; PTH yüksekliği sekonderdir, primer hiperparatiroidi araştırması bu aşamada yanlış yönlendirir.",
+        "C": "YANLIS — Oral bisfosfonat da antirezorptiftir; D vitamini ve kalsiyum eksikliği düzeltilmeden başlanmaz, olası osteomalazi sorunu çözülmez.",
+        "D": "YANLIS — Denosumab da güçlü antirezorptiftir ve hipokalsemi riski en az zoledronik asit kadar yüksektir; hipokalsemi ve D vitamini eksikliği düzeltilmeden başlanmaz.",
+        "E": "DOGRU — Önce D vitamini ve kalsiyum ile mineral dengesi düzeltilir, ardından antirezorptif verilir."
+      },
+      "etiketler": [
+        "D Vitamini Eksikliği",
+        "Sekonder Hiperparatiroidi",
+        "Hipokalsemi Riski",
+        "Zoledronik Asit",
+        "Osteomalazi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD Osteoporoz ve Metabolik Kemik Hastalıkları Tanı ve Tedavi Kılavuzu 2025; Lyles et al. N Engl J Med 2007 (HORIZON-RFT); Rosen HN. Calcium and vitamin D supplementation in osteoporosis. UpToDate"
+    },
+    {
+      "id": "s14",
+      "metin": "Altmış üç yaşında postmenopozal kadında osteoporoz nedeniyle haftalık 70 mg oral alendronat başlanıyor. Tedavi öncesi sabah açlık serum CTX düzeyi ölçülmüş. Altıncı ayda yine sabah açlığında tekrarlanan CTX'te belirgin değişiklik yok.\n\nTetkikler:\nBaşlangıç CTX: 0,64 ng/mL\n6. ay CTX: 0,60 ng/mL (%6 düşüş)\nSerum Ca, 25(OH)D, TSH, PTH: normal\nAnti-doku transglutaminaz IgA: negatif (total IgA normal)\n\nHasta ilacı haftada bir, kahvaltıda kahve ve kalsiyum tabletiyle birlikte aldığını söylüyor.\n\nBu bulguların yorumu ve en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "DXA yapılmadan yorum yapılamaz; tedavi 2 yıl sürdürülüp sonra değerlendirilmelidir",
+        "B": "CTX'teki düşüş yeterli yanıttır; tedaviye aynen devam edilmelidir",
+        "C": "Beklenen CTX düşüşü yoktur; olası neden hatalı kullanıma bağlı emilim yetersizliğidir — doğru kullanım anlatılıp CTX tekrarlanmalı, yanıt yoksa IV zoledronik aside geçilmelidir",
+        "D": "Tedavi başarısızlığı kesindir; hemen teriparatide geçilmelidir",
+        "E": "CTX gıda alımından ve günün saatinden etkilenmediği için izlemde güvenilmez; tetkik bırakılmalıdır"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Oral bisfosfonat altında 3–6. ayda rezorpsiyon belirteci CTX'in yaklaşık %30'dan fazla düşmesi beklenir; düşüş olmaması uyum ya da emilim sorununu gösterir. Kahve ve kalsiyumla birlikte alınan alendronat neredeyse hiç emilmez.",
+      "aciklama_detay": "Kemik döngü belirteçleri tedavi yanıtını DXA'dan çok daha erken gösterir. Antirezorptif tedavide rezorpsiyon belirteci serum CTX'in 3–6. ayda, yöntemin en küçük anlamlı değişiminin (yaklaşık %30) üzerinde düşmesi ya da premenopozal referans aralığın alt yarısına inmesi yeterli yanıt kabul edilir. Anabolik tedavide ise yapım belirteci P1NP'nin artması beklenir. CTX'in belirgin sirkadiyen ritmi vardır ve gıda alımıyla düşer; bu nedenle örnek sabah, gece açlığı sonrası alınmalı ve seri ölçümler aynı koşullarda yapılmalıdır. Bu hastada iki ölçüm de standart koşullarda alınmış ve düşüş yalnızca %6'dır: yanıt yetersizdir. Oral alendronatın biyoyararlanımı %1'in altındadır; sabah aç karnına yalnız düz suyla alınmalı, en az 30 dakika dik durulmalı ve bu sürede yiyecek, içecek (kahve, meyve suyu, maden suyu) ya da kalsiyum-demir gibi başka ilaç alınmamalıdır. Kalsiyum ve kahve emilimi neredeyse tümüyle engeller. Çölyak gibi malabsorpsiyon nedenleri de dışlanmıştır. Uygun yaklaşım doğru kullanımı anlatıp CTX'i tekrarlamak, yanıt yine yoksa ya da uyum sağlanamıyorsa emilim sorunu olmayan IV zoledronik aside geçmektir. Altı aylık tek bir belirteç sonucuyla anabolik tedaviye geçmek için çok yüksek kırık riski kanıtı yoktur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Belirteçler tam da DXA'dan önce uyum ve emilimi değerlendirmek için kullanılır; 2 yıl beklemek etkisiz tedaviyi sürdürmek olur.",
+        "B": "YANLIS — %6 düşüş anlamlı değişim eşiğinin (yaklaşık %30) çok altındadır; yeterli yanıt değildir.",
+        "C": "DOGRU — Yetersiz CTX yanıtı ve yanlış alım şekli emilim sorununu gösterir; önce kullanım düzeltilir, gerekirse IV forma geçilir.",
+        "D": "YANLIS — Önce düzeltilebilir neden (hatalı kullanım) ele alınır; hasta çok yüksek riskli değildir, anabolik tedavi endikasyonu kanıtlanmamıştır.",
+        "E": "YANLIS — CTX gıda ve günün saatinden belirgin etkilenir; bu yüzden sabah açlığında standart koşulda alınır. Doğru alındığında izlemde değerlidir."
+      },
+      "etiketler": [
+        "Kemik Döngü Belirteçleri",
+        "CTX",
+        "Oral Bisfosfonat Emilimi",
+        "Tedavi Uyumu",
+        "Tedavi İzlemi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "TEMD Osteoporoz ve Metabolik Kemik Hastalıkları Tanı ve Tedavi Kılavuzu 2025; Rosen HN. Use of biochemical markers of bone turnover in osteoporosis. UpToDate"
+    },
+    {
+      "id": "s15",
+      "metin": "Elli sekiz yaşında postmenopozal kadın, hormon reseptörü pozitif erken evre meme kanseri nedeniyle opere edilmiş; 5 yıllık adjuvan anastrozol başlanacak. Sigara içiyor, VKİ 19 kg/m². Frajilite kırığı öyküsü yok.\n\nDXA:\nLomber omurga T-skoru: -2,1\nFemur boynu T-skoru: -1,9\n\nSerum Ca, 25(OH)D, kreatinin: normal\n\nBu hastada kemik sağlığı açısından en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Anastrozole başlanması, kalsiyum-D vitamini ile birlikte bisfosfonat (tercihen zoledronik asit) ya da denosumab eklenmesi",
+        "B": "T-skoru -2,5'in üzerinde olduğundan yalnızca kalsiyum-D vitamini verilip 2 yıl sonra DXA tekrarı",
+        "C": "Kemik kaybını önlemek için anastrozol yerine raloksifen verilmesi",
+        "D": "Anastrozole raloksifen eklenmesi",
+        "E": "Anastrozole başlanması ve 18 ay teriparatid eklenmesi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Aromataz inhibitörü östrojeni derinden baskılayarak hızlı kemik kaybı yapar. T-skoru <-2,0 ya da ek risk etkenleri olan hastada KMY -2,5'e inmesi beklenmeden antirezorptif başlanır; adjuvan bisfosfonatın postmenopozal kadında kemik metastazını azaltıcı yararı da vardır.",
+      "aciklama_detay": "Aromataz inhibitörleri postmenopozal kadında periferik androjen-östrojen dönüşümünü engelleyerek östrojeni çok düşük düzeye indirir; yıllık kemik kaybı doğal menopozdakinin birkaç katıdır ve kırık riski artar. Bu nedenle tedavi karar eşiği primer osteoporozdan farklıdır: uluslararası uzlaşı önerilerinde T-skoru <-2,0 olan ya da -1,5 ile -2,0 arasında olup ek risk etkeni (sigara, düşük VKİ, ebeveynde kalça kırığı, glukokortikoid, 65 yaş üstü gibi) taşıyan hastalarda antirezorptif tedavi başlanması önerilir. Bu hastada hem T-skoru -2,1 hem de iki ek risk etkeni (sigara, düşük VKİ) vardır. Seçenekler bisfosfonat (oral ya da IV zoledronik asit) veya 6 ayda bir denosumab 60 mg'dır; denosumab kesilirse rebound kemik kaybı olacağından çıkış stratejisi baştan planlanır. Postmenopozal erken meme kanserinde adjuvan bisfosfonatın kemik metastazı ve meme kanserine bağlı ölümü azalttığı gösterilmiştir; bu yüzden zoledronik asit ya da oral bisfosfonat çoğu zaman tercih edilir. Raloksifen (SERM) aromataz inhibitörüyle birlikte kullanılmaz ve anastrozolün yerine konamaz; onkolojik tedavi kemik kaybı nedeniyle değiştirilmez. Teriparatid bu risk düzeyinde endike değildir ve iskelet malignitesi ya da kemik radyoterapisi öyküsünde kaçınılır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Aromataz inhibitörü alacak, T-skoru <-2,0 ve ek risk etkeni taşıyan hastada antirezorptif başlanır; adjuvan bisfosfonat ayrıca onkolojik yarar sağlar.",
+        "B": "YANLIS — Aromataz inhibitörüyle ilişkili kemik kaybında karar eşiği -2,5 değildir; T-skoru <-2,0 ve ek risk etkenleri tedavi gerektirir.",
+        "C": "YANLIS — Onkolojik tedavi kemik kaybı gerekçesiyle değiştirilmez; raloksifen adjuvan tedavide anastrozolün yerini tutmaz.",
+        "D": "YANLIS — SERM ile aromataz inhibitörü birlikte kullanılmaz; osteoporoz tedavisi için uygun kombinasyon değildir.",
+        "E": "YANLIS — Anabolik ajan bu risk düzeyinde endike değildir; malignite öyküsü olan hastada teriparatid ilk seçenek olarak düşünülmez."
+      },
+      "etiketler": [
+        "Aromataz İnhibitörü",
+        "Meme Kanseri",
+        "Sekonder Osteoporoz",
+        "Adjuvan Bisfosfonat",
+        "Tedavi Eşiği"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Hadji et al. J Bone Oncol 2017 (aromataz inhibitörüne bağlı kemik kaybı ortak görüş bildirisi); Van Poznak C. Osteoclast inhibitors as adjuvant anticancer therapy in early breast cancer. UpToDate"
     }
   ]
 }

@@ -303,6 +303,156 @@
       ],
       "zorluk": "zor",
       "kaynak": "Sallis et al. Kidney Int 2023 (Neandertal introgression in MN)"
+    },
+    {
+      "id": "s11",
+      "metin": "Kırk sekiz yaşında erkek hasta, iki aydır giderek artan bacak ödemi ile başvuruyor. Diyabeti yok; düzenli ilaç, bitkisel ürün ya da NSAİİ kullanmıyor.\n\nTetkikler:\n- Proteinüri: 7.5 g/gün, idrar sedimenti: eritrosit silendiri yok\n- Serum albümin: 2.4 g/dL, eGFR: 95 mL/dk/1.73 m²\n- ANA, anti-dsDNA negatif; C3/C4 normal\n- HBsAg, anti-HCV, anti-HIV negatif\n- Yaşa uygun kanser taraması (kolonoskopi, akciğer grafisi, PSA) normal\n- Serum anti-PLA2R (ELISA): 180 RU/mL\n\nKDIGO 2021 glomerüler hastalıklar kılavuzuna göre en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Biyopsisiz primer MN tanısı koyup destek tedavisi başlatmak ve riski sınıflamak",
+        "B": "Anti-PLA2R pozitifliği tanı koydurmadığından tedaviden önce böbrek biyopsisi yapmak",
+        "C": "Anti-PLA2R yüksekliği gizli malignite göstergesi olduğundan tüm vücut PET/BT istemek",
+        "D": "Biyopsisiz hemen rituksimab başlamak; RAAS blokajı ve diğer destek önlemlerine gerek olmadığını belirtmek",
+        "E": "Prednizolon monoterapisi başlayıp anti-PLA2R titresini bir ay sonra yeniden ölçmek"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Nefrotik sendromu ve pozitif anti-PLA2R'si olan, eGFR'si korunmuş ve sekonder neden bulgusu olmayan hastada KDIGO 2021'e göre MN tanısı için biyopsi gerekmez. Destek tedavisi başlanır ve ilerleme riski sınıflanır.",
+      "aciklama_detay": "Anti-PLA2R antikorunun primer MN için özgüllüğü çok yüksektir. KDIGO 2021, nefrotik sendromu olan ve anti-PLA2R'si pozitif hastada tanıyı doğrulamak için böbrek biyopsisinin zorunlu olmadığını belirtir; yine de sekonder nedenler (enfeksiyon, ilaç, otoimmünite, malignite) dışlanmalıdır. eGFR düşükse ya da atipik bulgu (aktif sediment, hızlı fonksiyon kaybı) varsa biyopsi, eşlik eden ve tedaviyi değiştiren lezyonları (kresent, interstisyel nefrit, ATN) göstermek için yapılır. Bu hastada eGFR normaldir ve sekonder neden yoktur; biyopsisiz tanı uygundur. Ardından RAAS blokajı, sodyum kısıtlaması, KB hedefi, lipid yönetimi ve tromboz riskinin değerlendirilmesini içeren destek tedavisi başlatılır; KDIGO risk sınıflamasına göre (proteinüri, albümin, anti-PLA2R düzeyi ve seyri, eGFR) immünsüpresyon kararı verilir. Yüksek anti-PLA2R titresi spontan remisyon olasılığının düşük olduğunu düşündürür ve tedavi kararında dikkate alınır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Pozitif anti-PLA2R, normal eGFR ve sekonder neden yokluğunda biyopsisiz tanı + destek tedavisi + risk sınıflaması KDIGO 2021 yaklaşımıdır.",
+        "B": "YANLIS — Bu klinik bağlamda biyopsi tanı için zorunlu değildir; eGFR düşüklüğü ya da atipik bulgu varlığına ayrılır.",
+        "C": "YANLIS — Anti-PLA2R pozitifliği primer (otoimmün) MN'yi düşündürür; yaşa uygun kanser taraması yeterlidir, rutin PET/BT gerekmez.",
+        "D": "YANLIS — Destek tedavisi her MN hastasının temelidir; immünsüpresyon kararı ise risk sınıflamasına göre verilir.",
+        "E": "YANLIS — KDIGO, MN'de glukokortikoid monoterapisini etkisiz olduğu için önermez."
+      },
+      "etiketler": [
+        "Anti-PLA2R",
+        "Biyopsisiz Tanı",
+        "KDIGO 2021",
+        "Destek Tedavisi",
+        "Risk Sınıflaması"
+      ],
+      "zorluk": "orta",
+      "kaynak": "KDIGO 2021 Glomerüler Hastalıklar Kılavuzu"
+    },
+    {
+      "id": "s12",
+      "metin": "Elli beş yaşında erkek hasta, biyopsiyle doğrulanmış primer membranöz nefropati tanısı alıyor. Tromboz öyküsü yok. Aktif kanama, yakın zamanda cerrahi, düşme öyküsü ya da antiagregan kullanımı yok.\n\nTetkikler:\n- Proteinüri: 11 g/gün\n- Serum albümin: 1.9 g/dL\n- eGFR: 72 mL/dk/1.73 m², trombosit: 260.000/mm³\n- BKİ: 36 kg/m²\n\nBu hastada tromboembolizm açısından en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Antikoagülasyonu yalnızca venöz ya da renal ven trombozu gösterildiğinde başlatmak",
+        "B": "VTE önlemek için yalnızca düşük doz aspirin başlamak",
+        "C": "Bilateral renal ven Doppler ultrasonografisi yapıp trombüs yoksa antikoagülasyon vermemek",
+        "D": "Hipoalbüminemi sürdükçe profilaktik antikoagülasyon (DMAH, ardından varfarin)",
+        "E": "İdrarla kaybedilen antitrombin III'ü konsantre ile düzenli yerine koymak"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "MN, VTE riski en yüksek glomerülopatidir. Serum albümini <2.0–2.5 g/dL olan ve ek risk etkeni (proteinüri >10 g/gün, BKİ >35 gibi) taşıyan, kanama riski düşük hastada KDIGO 2021 profilaktik antikoagülasyonu önerir; varfarin ilk tercih ajandır.",
+      "aciklama_detay": "Nefrotik sendromda idrarla antitrombin III ve plazminojen kaybı, karaciğerde fibrinojen ve faktör VIII sentez artışı, trombosit aktivasyonu ve hemokonsantrasyon hiperkoagülabilite yaratır; MN bu açıdan diğer nefrotik nedenlerden daha risklidir ve risk özellikle ilk 6–12 ayda, albümin düştükçe katlanarak artar. KDIGO 2021, serum albümini 2.0–2.5 g/dL'nin altında olan ve ek risk etkeni (proteinüri >10 g/gün, BKİ >35, VTE öyküsü, ağır kalp yetmezliği, yakın cerrahi, uzun immobilizasyon) bulunan hastalarda kanama riski kabul edilebilirse profilaktik antikoagülasyon önerir; karar kanama riski skoruyla (ör. ATRIA) birlikte verilir. Varfarin en çok deneyim olan ajandır; başlangıçta DMAH köprülemesi yapılabilir. DOAC'lar hakkında veri sınırlıdır ve nefrotik ortamda farmakokinetikleri belirsizdir. Antikoagülasyon, albümin eşik değerin üzerine çıkana (remisyon) kadar sürdürülür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Birincil profilaksi amacı trombozu olmadan önlemektir; ilk bulgu ölümcül pulmoner emboli olabilir.",
+        "B": "YANLIS — Aspirin, arteriyel tromboz riski yüksek ama VTE profilaksisi endikasyonu karşılanmayan hastalar için düşünülür; bu hastada venöz risk ön plandadır.",
+        "C": "YANLIS — Asemptomatik trombozu taramak ve negatifse profilaksi vermemek önerilen bir strateji değildir; karar albümin düzeyi, ek risk etkenleri ve kanama riskine dayanır.",
+        "D": "DOGRU — Albümin 1.9 g/dL + proteinüri >10 g/gün + BKİ >35 + düşük kanama riski profilaktik antikoagülasyon endikasyonudur.",
+        "E": "YANLIS — Antitrombin III replasmanı rutin profilaksi yöntemi değildir; kayıp sürdükçe etkisiz kalır."
+      },
+      "etiketler": [
+        "Venöz Tromboembolizm",
+        "Profilaktik Antikoagülasyon",
+        "Hipoalbüminemi",
+        "Renal Ven Trombozu",
+        "KDIGO 2021"
+      ],
+      "zorluk": "orta",
+      "kaynak": "KDIGO 2021 Glomerüler Hastalıklar Kılavuzu"
+    },
+    {
+      "id": "s13",
+      "metin": "Elli iki yaşında erkek hasta, anti-PLA2R pozitif primer membranöz nefropati tanısıyla altı aydır maksimum tolere edilen dozda ACE inhibitörü, diüretik, statin ve tuz kısıtlaması ile izleniyor. Sekonder neden taraması negatif.\n\nTetkikler:\n- Proteinüri: başlangıçta 10 g/gün, altıncı ayda 9.2 g/gün\n- Serum albümin: 2.1 g/dL\n- eGFR: 88 mL/dk/1.73 m² (stabil)\n- Anti-PLA2R: 150 → 210 RU/mL (artıyor)\n\nBu hastada en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Spontan remisyon olasılığı nedeniyle destek tedavisine altı ay daha devam etmek",
+        "B": "Rituksimab başlamak",
+        "C": "Prednizolon 1 mg/kg/gün monoterapisi başlamak",
+        "D": "Mikofenolat mofetil monoterapisi başlamak",
+        "E": "Anti-PLA2R'yi uzaklaştırmak için plazmaferez uygulamak"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Altı aylık destek tedavisine rağmen >8 g/gün süren proteinüri, belirgin hipoalbüminemi ve artan anti-PLA2R titresi KDIGO 2021'e göre yüksek riski gösterir; rituksimab (alternatif olarak siklofosfamid + glukokortikoid) önerilir.",
+      "aciklama_detay": "KDIGO 2021 immünsüpresyon kararını ilerleme riskine göre verir. Düşük riskte (normal eGFR, proteinüri <3.5 g/gün ya da albümin korunmuş) yalnızca destek tedavisi, orta riskte rituksimab veya kalsinörin inhibitörü (± glukokortikoid) önerilir. Yüksek riskte (altı aylık destek tedavisine rağmen proteinürinin %50'den fazla azalmaması ile birlikte ağır hipoalbüminemi, yüksek ya da artan anti-PLA2R, tübüler hasar belirteçleri ya da >8 g/gün süren proteinüri, eGFR düşüşü) rituksimab, siklofosfamid + glukokortikoid ya da kalsinörin inhibitörü + rituksimab seçenektir; çok yüksek riskte (yaşamı tehdit eden nefrotik sendrom, açıklanamayan hızlı eGFR kaybı) siklofosfamid + glukokortikoid tercih edilir. Bu hastada proteinüri altı ayda yalnızca %8 azalmış, albümin 2.1 g/dL ve anti-PLA2R artmaktadır; spontan remisyon beklenmez. MENTOR çalışmasında rituksimab 24. ayda siklosporinden üstün kalıcı remisyon sağlamıştır. Glukokortikoid ve MMF monoterapileri MN'de etkisizdir ve KDIGO tarafından önerilmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yüksek risk özellikleri (azalmayan ağır proteinüri, hipoalbüminemi, artan anti-PLA2R) varken beklemek geri dönüşsüz nefron kaybı ve tromboz riskini uzatır.",
+        "B": "DOGRU — Yüksek riskli primer MN'de rituksimab önerilen birinci basamak seçeneklerdendir.",
+        "C": "YANLIS — Glukokortikoid monoterapisi MN'de etkisizdir; KDIGO önermez.",
+        "D": "YANLIS — MMF monoterapisi remisyon sağlamada yetersiz bulunmuştur; önerilmez.",
+        "E": "YANLIS — Plazmaferezin primer MN tedavisinde kanıtlanmış bir yeri yoktur; antikor üretimini durdurmaz."
+      },
+      "etiketler": [
+        "KDIGO 2021 Risk Sınıflaması",
+        "Rituksimab",
+        "Yüksek Riskli MN",
+        "MENTOR",
+        "İmmünsüpresyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "KDIGO 2021 Glomerüler Hastalıklar Kılavuzu; Fervenza et al. N Engl J Med 2019 (MENTOR)"
+    },
+    {
+      "id": "s14",
+      "metin": "Kırk altı yaşında erkek hasta, yüksek riskli primer membranöz nefropati nedeniyle altı ay önce rituksimab (1 g, iki doz) almış; RAAS blokajı sürüyor.\n\nİzlem:\n- Anti-PLA2R: 160 RU/mL (başlangıç) → 3. ayda <2 RU/mL → 6. ayda <2 RU/mL\n- Proteinüri: 9.0 g/gün (başlangıç) → 6. ayda 4.1 g/gün\n- Serum albümin: 2.6 → 3.1 g/dL\n- eGFR: stabil (84 mL/dk/1.73 m²)\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tedavi direnci kabul edip tip II anti-CD20 obinutuzumaba geçmek",
+        "B": "Rituksimaba siklofosfamid + glukokortikoid eklemek",
+        "C": "Anti-rituksimab antikoru geliştiğini varsayıp daratumumab başlamak",
+        "D": "Tedavi başarısızlığını doğrulamak için tekrar böbrek biyopsisi yapmak",
+        "E": "Ek immünsüpresyon vermeden destek tedavisiyle izlemek"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Anti-PLA2R'nin negatifleşmesi (immünolojik remisyon) klinik remisyondan aylar önce gerçekleşir. Antikoru negatifleşmiş, proteinürisi azalan ve eGFR'si stabil hastada tedavi başarısız sayılmaz; podosit onarımı için zaman tanınır.",
+      "aciklama_detay": "Primer MN'de patojenik süreç antikor üretimidir; anti-PLA2R'nin kaybolması hastalık aktivitesinin durduğunu gösterir. Ancak subepitelyal immün birikimlerin temizlenmesi ve GBM ile podositlerin yeniden şekillenmesi aylar sürdüğü için proteinürinin gerilemesi (klinik remisyon) sıklıkla 6–24 ay gecikir. Bu nedenle 6. ayda antikoru negatifleşmiş, proteinürisi belirgin azalmış (9.0 → 4.1 g/gün), albümini yükselen ve eGFR'si stabil bir hastada tedavi değiştirilmez; destek tedavisi sürdürülür, anti-PLA2R ve proteinüri 3–6 ay aralıklarla izlenir. Antikorun yeniden yükselmesi nüksü proteinüriden önce haber verir. Anti-rituksimab antikorları ya da CD20 dışı plazma hücreleri gibi direnç mekanizmaları, antikor titresinin düşmediği ya da yeniden yükseldiği durumlarda akla gelmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İmmünolojik remisyon sağlanmıştır; direnç yoktur, obinutuzumab gereksiz immünsüpresyon olur.",
+        "B": "YANLIS — Antikoru negatifleşmiş hastaya siklofosfamid eklemek toksisiteyi artırır, ek yarar sağlamaz.",
+        "C": "YANLIS — Anti-rituksimab antikoru, antikor titresinin düşmediği yanıtsızlıkta düşünülür; bu hastada anti-PLA2R negatifleşmiştir.",
+        "D": "YANLIS — Proteinürideki beklenen gecikme biyopsi gerektirmez; eGFR stabil ve seyir olumludur.",
+        "E": "DOGRU — İmmünolojik remisyon klinik remisyondan önce gelir; destek tedavisi ve serolojik izlem uygundur."
+      },
+      "etiketler": [
+        "İmmünolojik Remisyon",
+        "Anti-PLA2R İzlemi",
+        "Rituksimab",
+        "Klinik Remisyon",
+        "Tedavi Yanıtı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "KDIGO 2021 Glomerüler Hastalıklar Kılavuzu; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s15",
+      "metin": "Yirmi yedi yaşında kadın hasta, nefrotik sendrom tablosuyla başvuruyor (proteinüri 5.8 g/gün, albümin 2.3 g/dL, eGFR 96 mL/dk/1.73 m²). Serum anti-PLA2R negatif. HBsAg, anti-HCV ve anti-HIV negatif.\n\nBöbrek biyopsisi:\n- Işık mikroskobu: GBM kalınlaşması ve 'spike' formasyonu, hafif mezangiyal genişleme\n- İmmünofloresan: IgG, IgA, IgM, C3 ve C1q pozitif ('full house'); IgG alt tiplerinde IgG1 ve IgG3 baskın; doku PLA2R boyası negatif\n- Elektron mikroskobu: subepitelyal ve mezangiyal elektron yoğun birikimler, endotel hücrelerinde tübüloretiküler inklüzyonlar\n\nBu biyopsi tablosunda en olası tanı hangisidir?",
+      "secenekler": {
+        "A": "PLA2R ilişkili primer membranöz nefropati",
+        "B": "THSD7A ilişkili membranöz nefropati",
+        "C": "Membranöz lupus nefriti (ISN/RPS sınıf V)",
+        "D": "Maskelenmiş IgG-kappa ile seyreden membranöz benzeri glomerülopati",
+        "E": "NELL-1 ilişkili membranöz nefropati"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Genç kadında 'full house' immünofloresan, C1q pozitifliği, IgG1/IgG3 baskınlığı, mezangiyal birikimler ve tübüloretiküler inklüzyonlar membranöz lupus nefritini (sınıf V) gösterir; seroloji (ANA, anti-dsDNA, C3/C4) istenmelidir.",
+      "aciklama_detay": "Primer MN'de birikimler yalnızca subepitelyaldir, IgG4 baskındır, C1q genellikle negatif ya da zayıftır ve mezangiyal birikim beklenmez. Sekonder MN'yi düşündüren biyopsi ipuçları şunlardır: IgG1/IgG3 baskınlığı, C1q pozitifliği, IgA ve IgM ile birlikte 'full house' boyanma, mezangiyal ya da subendotelyal birikimler ve endotel hücrelerinde tübüloretiküler inklüzyonlar (interferon imzası). Bu bulguların bir arada olması, hele genç kadında, membranöz lupus nefriti (sınıf V) için tipiktir; lupus serolojisi başvuruda negatif olsa bile bazı hastalarda nefrit sistemik bulgulardan önce ortaya çıkabilir. Sınıf V lupus nefritinde EXT1/EXT2, NCAM1 ve TGFBR3 gibi hedef antijenler tanımlanmıştır. Tübüloretiküler inklüzyonlar HIV ve HCV gibi interferon yüksekliği yapan durumlarda da görülebilir; bu hastada bu enfeksiyonlar dışlanmıştır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Serum ve doku PLA2R negatiftir; ayrıca full house boyanma, C1q ve mezangiyal birikimler primer MN ile uyumsuzdur.",
+        "B": "YANLIS — THSD7A ilişkili MN de primer paternde (IgG4 baskın, yalnızca subepitelyal birikim) seyreder; full house ve tübüloretiküler inklüzyonları açıklamaz.",
+        "C": "DOGRU — Full house, C1q, IgG1/IgG3 baskınlığı, mezangiyal birikim ve tübüloretiküler inklüzyonlar sınıf V lupus nefritinin imzasıdır.",
+        "D": "YANLIS — Maskelenmiş IgG-kappa glomerülopatisinde rutin immünofloresan yalancı negatiftir ve birikimler pronaz sindirimiyle ortaya çıkar; burada immünofloresan zaten güçlü pozitiftir.",
+        "E": "YANLIS — NELL-1 MN'de segmental, IgG1 baskın birikim görülür ama full house boyanma ve tübüloretiküler inklüzyonlar beklenmez; genç kadında klinik bağlam da lupusu düşündürür."
+      },
+      "etiketler": [
+        "Sekonder MN",
+        "Lupus Nefriti Sınıf V",
+        "Full House",
+        "Tübüloretiküler İnklüzyon",
+        "IgG Alt Tipleri"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Bajema et al. Kidney Int 2018 (ISN/RPS sınıflaması); KDIGO 2021 Glomerüler Hastalıklar Kılavuzu"
     }
   ]
 }

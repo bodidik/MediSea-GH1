@@ -303,6 +303,156 @@
       ],
       "zorluk": "zor",
       "kaynak": "Zhang et al. Hepatol Int 2023; Kalambokis et al. Liver Int 2022"
+    },
+    {
+      "id": "s11",
+      "metin": "Elli dört yaşında kadın hasta, tip 2 diyabet nedeniyle metformin ve empagliflozin 25 mg kullanıyor. Laparoskopik kolesistektomi sonrası 2. günde bulantı, kusma, karın ağrısı ve hızlı derin solunum gelişiyor; ameliyattan beri çok az yiyebilmiş. Empagliflozin ameliyat sabahına kadar alınmış.\n\nTetkikler:\nKan glukozu: 176 mg/dL\nArteriyel pH: 7,14, HCO3: 9 mEq/L, anyon açığı: 24\nKan β-hidroksibütirat: 5,6 mmol/L\nLaktat: 1,3 mmol/L\nSerum K: 4,6 mEq/L, kreatinin: 1,1 mg/dL\n\nBu hastada en uygun tedavi yaklaşımı hangisidir?",
+      "secenekler": {
+        "A": "Glukoz 250 mg/dL'nin altında olduğundan DKA dışlanır; metformine bağlı laktik asidoz için hemodiyaliz planlanır",
+        "B": "Glukoz yüksek olmadığından yalnızca IV izotonik sıvı verilir; hipoglisemi riski nedeniyle insülin verilmez",
+        "C": "Empagliflozin kesilir; IV izotonik sıvı ve sabit hızlı IV insülin infüzyonu başlangıçtan itibaren %5–10 dekstrozla birlikte verilir, ketonemi ve asidoz düzelene dek sürdürülür",
+        "D": "Asidozun hızla düzeltilmesi için bikarbonat infüzyonu verilir; ketonemi kendiliğinden geriler",
+        "E": "Tablo açlık ketozudur; oral beslenme başlatılıp empagliflozine devam edilir"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "SGLT2 inhibitörü kullanan hastada cerrahi stres ve açlıkla gelişen, glukozun <250 mg/dL olduğu ağır ketoasidoz öglisemik DKA'dır. Ketogenezi durdurmak için insülin şarttır; glukoz düşük olduğundan insülin başlangıçtan itibaren dekstrozla birlikte verilir.",
+      "aciklama_detay": "SGLT2 inhibitörleri glukozüri ile plazma glukozunu düşürerek insülin salgısını azaltır, glukagonu artırır ve böbrekten keton geri emilimini artırır; sonuçta insülin/glukagon oranı ketogenez lehine döner. Cerrahi, akut hastalık, uzun açlık, düşük karbonhidratlı diyet, alkol ya da insülin dozunun ani azaltılması bu eğilimi açık ketoasidoza çevirebilir. Glukoz genellikle <250 mg/dL (çoğu zaman <200) kaldığı için tablo kolayca atlanır; ADA/EASD 2024 hiperglisemik kriz uzlaşısı ve TEMD, SGLT2 inhibitörü kullanan ve DKA belirtisi olan hastada glukoz yüksek olmasa bile kan ketonuna bakılmasını önerir. Bu hastada β-hidroksibütirat ≥3 mmol/L, pH <7,3, HCO3 <18 ve artmış anyon açığı ile ağır DKA vardır; laktat normaldir. Tedavi klasik DKA ile aynı temellere dayanır: SGLT2 inhibitörü kesilir, IV izotonik sıvı verilir, potasyum izlenerek sabit hızlı IV insülin infüzyonu başlanır. Glukoz baştan düşük olduğundan hipoglisemiyi önlemek için %5–10 dekstroz insülinle eşzamanlı başlanır; insülin, glukoz normal seyretse bile ketonemi ve asidoz düzelene dek kesilmez. Bikarbonat yalnızca çok ağır asidozda (pH <7,0) düşünülür. SGLT2 inhibitörü ancak hasta iyileşip normal beslenmeye döndükten sonra, tetikleyici netse yeniden değerlendirilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Öglisemik DKA'da glukoz <250 mg/dL olabilir; yüksek β-hidroksibütirat ve normal laktat tabloyu ketoasidoz olarak tanımlar.",
+        "B": "YANLIS — Sıvı tek başına ketogenezi durdurmaz; insülin şarttır, hipoglisemi dekstrozla önlenir.",
+        "C": "DOGRU — SGLT2 inhibitörü kesilir; sıvı + IV insülin, glukoz düşük olduğu için baştan dekstrozla birlikte verilir ve ketoz düzelene dek sürdürülür.",
+        "D": "YANLIS — Bikarbonat pH ≥7,0'da önerilmez ve ketogenezi durdurmaz; tedavinin temeli insülindir.",
+        "E": "YANLIS — Açlık ketozunda HCO3 bu derece düşmez ve β-hidroksibütirat bu kadar yükselmez; ilaca devam etmek tabloyu ağırlaştırır."
+      },
+      "etiketler": [
+        "Öglisemik DKA",
+        "SGLT2 İnhibitörü",
+        "Perioperatif Dönem",
+        "İnsülin + Dekstroz",
+        "Keton Ölçümü"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD Diabetes Mellitus Kılavuzu 2026; Umpierrez et al. Diabetes Care 2024 (ADA/EASD hiperglisemik kriz uzlaşı raporu)"
+    },
+    {
+      "id": "s12",
+      "metin": "Altmış üç yaşında erkek hasta, 12 yıllık tip 2 diyabet ve diyabetik böbrek hastalığı nedeniyle izleniyor. Metformin 1000 mg/gün ve maksimum dozda ramipril kullanıyor. Kan basıncı 132/78 mmHg; aterosklerotik kardiyovasküler hastalık ya da kalp yetersizliği yok.\n\nTetkikler (3 ay arayla iki ölçüm benzer):\nHbA1c: %6,9\neGFR: 34 mL/dk/1,73 m²\nİdrar albümin/kreatinin oranı: 820 mg/g\nSerum K: 4,9 mEq/L\n\nKDIGO 2022 diyabet ve KBH kılavuzuna göre bu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "HbA1c hedefte olduğundan ek ilaç gerekmez; 3 ay sonra kontrol",
+        "B": "eGFR <45'te glisemik etkisi azaldığı için SGLT2 inhibitörü yerine DPP-4 inhibitörü eklenmesi",
+        "C": "Albüminüriyi azaltmak için ramiprile ARB eklenerek çift RAS blokajı",
+        "D": "Metforminin kesilip hipoglisemi riski düşük olduğu için sülfonilüre başlanması",
+        "E": "HbA1c'den bağımsız olarak SGLT2 inhibitörü eklenmesi ve diyaliz ya da nakle dek sürdürülmesi"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "KDIGO 2022, tip 2 diyabet ve eGFR ≥20 mL/dk olan KBH'de glisemik durumdan bağımsız olarak SGLT2 inhibitörünü birinci basamak böbrek-kalp koruyucu tedavi olarak önerir. Glisemik etki eGFR düştükçe azalsa da böbrek koruması sürer.",
+      "aciklama_detay": "SGLT2 inhibitörlerinin böbrek ve kardiyovasküler yararı glukoz düşürücü etkilerinden büyük ölçüde bağımsızdır. CREDENCE, DAPA-CKD ve EMPA-KIDNEY çalışmalarında eGFR'si 20–25 mL/dk'ya kadar inen, albüminürili hastalarda böbrek yetmezliğine ilerleme, kardiyovasküler ölüm ve kalp yetersizliği hastaneye yatışı anlamlı azalmıştır. Bu kanıtla KDIGO 2022 kılavuzu, tip 2 diyabet ve KBH'si olan, eGFR ≥20 mL/dk hastalarda SGLT2 inhibitörünün (HbA1c hedefte olsa bile) başlanmasını ve iyi tolere edildiği sürece diyaliz ya da nakle dek sürdürülmesini önerir. Glisemik etki eGFR <45'te belirgin azalır; bu hastada glisemik hedef zaten sağlandığından amaç organ korumadır. Metformin eGFR 30–44 aralığında günde en fazla 1000 mg ile sürdürülebilir, <30'da kesilir. RAS blokajı maksimum dozdadır; ACE inhibitörü ile ARB'nin birlikte kullanımı hiperkalemi ve AKI riskini artırıp ek yarar sağlamadığı için önerilmez. SGLT2 inhibitörüne rağmen albüminüri sürerse (K ≤4,8–5,0 ve eGFR ≥25 iken) steroid olmayan MRA finerenon sonraki basamaktır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Endikasyon glisemik değil organ korumasıdır; ağır albüminürili KBH'de SGLT2 inhibitörü HbA1c'den bağımsız önerilir.",
+        "B": "YANLIS — Glisemik etki azalsa da böbrek-kalp koruması eGFR ≥20'de korunur; DPP-4 inhibitörünün böbrek sonlanımlarına yararı gösterilmemiştir.",
+        "C": "YANLIS — ACE inhibitörü + ARB kombinasyonu hiperkalemi ve AKI riskini artırır, sert sonlanımlarda yarar sağlamaz; önerilmez.",
+        "D": "YANLIS — Metformin bu eGFR'de azaltılmış dozla sürdürülebilir; sülfonilüre KBH'de hipoglisemi riski yüksek ve organ koruması olmayan bir seçimdir.",
+        "E": "DOGRU — eGFR ≥20 ve albüminürili tip 2 diyabet-KBH hastasında SGLT2 inhibitörü HbA1c'den bağımsız başlanır, diyaliz ya da nakle dek sürdürülür."
+      },
+      "etiketler": [
+        "KDIGO 2022",
+        "Diyabetik Böbrek Hastalığı",
+        "Albüminüri",
+        "Organ Koruması",
+        "eGFR Eşiği"
+      ],
+      "zorluk": "orta",
+      "kaynak": "KDIGO 2022 Diyabet ve KBH Kılavuzu; Heerspink et al. N Engl J Med 2020 (DAPA-CKD); EMPA-KIDNEY Collaborative Group N Engl J Med 2023"
+    },
+    {
+      "id": "s13",
+      "metin": "Altmış altı yaşında erkek hasta, tip 2 diyabet, kronik böbrek hastalığı ve düşük ejeksiyon fraksiyonlu kalp yetersizliği (LVEF %32) nedeniyle izleniyor. Sakubitril/valsartan, bisoprolol ve spironolakton kullanıyor; tedavisine dapagliflozin 10 mg ekleniyor. Üçüncü haftada yapılan kontrolde yakınması yok; ortostatik hipotansiyon, kusma-ishal ya da NSAİİ kullanımı yok.\n\nTetkikler:\nBaşlangıç kreatinin: 1,40 mg/dL (eGFR 51)\n3. hafta kreatinin: 1,60 mg/dL (eGFR 44; yaklaşık %14 düşüş)\nSerum K: 4,7 mEq/L\nKan basıncı: 118/72 mmHg\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Dapagliflozine aynı dozda devam edilmesi ve rutin izlem",
+        "B": "Nefrotoksisite nedeniyle dapagliflozinin kalıcı olarak kesilmesi",
+        "C": "Dapagliflozin dozunun 5 mg'a azaltılması",
+        "D": "Renal arter stenozunu dışlamak için renal arter Doppler USG istenmesi",
+        "E": "Sakubitril/valsartan ve spironolaktonun kesilmesi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "SGLT2 inhibitörü başlandıktan sonraki ilk haftalarda eGFR'de %30'a kadar düşüş, tübüloglomerüler geri bildirimin onarılmasına bağlı beklenen hemodinamik bir etkidir. Volüm kaybı yoksa ilaç sürdürülür; uzun dönemde eGFR kaybı yavaşlar.",
+      "aciklama_detay": "Diyabette proksimal tübülde artmış sodyum-glukoz geri emilimi makula densaya ulaşan sodyumu azaltır; tübüloglomerüler geri bildirim afferent arteriyolü genişletir ve glomerüler hiperfiltrasyon oluşur. SGLT2 inhibitörü makula densaya ulaşan sodyumu artırarak afferent vazokonstriksiyonu geri getirir, intraglomerüler basıncı düşürür. Bunun sonucu olarak tedavinin ilk 2–4 haftasında eGFR'de ortalama 3–5 mL/dk'lık, genellikle %10–20'lik, geri dönüşlü bir düşüş görülür (eGFR “dip”). Bu düşüş böbrek hasarı değil, koruyucu mekanizmanın göstergesidir; DAPA-CKD, EMPA-KIDNEY ve DAPA-HF'te başlangıç düşüşüne karşın uzun dönem eGFR eğimi plasebodan daha yavaş seyretmiştir. KDIGO 2022'ye göre tedavi başlangıcındaki geri dönüşlü eGFR düşüşü tek başına ilacı kesme gerekçesi değildir; pratikte %30'u aşmayan düşüşte ilaç kesilmez ve doz azaltılmaz. %30'dan büyük düşüşte volüm kaybı, eşzamanlı nefrotoksik ilaç, ağır diüretik etkisi ve renal arter stenozu araştırılır. Böbrek ve kalp koruyucu kanıtlar dapagliflozin 10 mg ile elde edilmiştir; doz azaltmanın bir yararı yoktur. Kalp yetersizliğine yönelik diğer ilaçların bu düzeyde bir kreatinin artışı nedeniyle kesilmesi prognozu kötüleştirir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — %30'un altındaki başlangıç eGFR düşüşü beklenen hemodinamik etkidir; ilaç sürdürülür.",
+        "B": "YANLIS — Düşüş nefrotoksisite değildir; ilacı kesmek uzun dönem böbrek ve kalp yararını ortadan kaldırır.",
+        "C": "YANLIS — Kanıtlı doz 10 mg'dır; doz azaltmanın yararı yoktur ve bu düşüş doz ayarlaması gerektirmez.",
+        "D": "YANLIS — Renal arter stenozu araştırması %30'u aşan düşüşte gündeme gelir; %14'lük düşüşte gerekli değildir.",
+        "E": "YANLIS — Bu düzeyde kreatinin artışı ve normal potasyumda prognozu düzelten kalp yetersizliği ilaçlarının kesilmesi zararlıdır."
+      },
+      "etiketler": [
+        "eGFR Başlangıç Düşüşü",
+        "Tübüloglomerüler Geri Bildirim",
+        "Kalp Yetersizliği",
+        "Böbrek Koruması",
+        "İlaç Sürdürme"
+      ],
+      "zorluk": "orta",
+      "kaynak": "KDIGO 2022 Diyabet ve KBH Kılavuzu; McMurray et al. N Engl J Med 2019 (DAPA-HF); Heerspink et al. N Engl J Med 2020 (DAPA-CKD)"
+    },
+    {
+      "id": "s14",
+      "metin": "Altmış bir yaşında erkek hasta, 18 aydır empagliflozin kullanıyor. İki gündür 39 °C ateş, perine ve skrotumda hızla artan, muayene bulgusuyla orantısız şiddetli ağrı tarif ediyor.\n\nFizik muayene:\nNabız 118/dk, kan basıncı 102/64 mmHg\nPerine ve skrotumda koyu kırmızı-mor renk değişikliği, yaygın ödem, palpasyonda krepitasyon\n\nTetkikler:\nLökosit: 22.000/mm³\nCRP: 310 mg/L\nKan glukozu: 262 mg/dL\nKreatinin: 1,7 mg/dL\nSerum Na: 131 mEq/L\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Genital mantar enfeksiyonu: topikal azol, empagliflozine devam",
+        "B": "Epididimo-orşit: oral kinolonla ayaktan tedavi",
+        "C": "BT ya da MR sonucu beklenene dek yalnızca IV antibiyotik; cerrahi kararın görüntülemeye bırakılması",
+        "D": "Empagliflozinin kesilmesi, geniş spektrumlu IV antibiyotik ve acil cerrahi debridman",
+        "E": "Selülit: oral sefaleksin, empagliflozin dozunun azaltılması"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "SGLT2 inhibitörü kullanan diyabetik hastada ateş, orantısız perineal ağrı, renk değişikliği ve krepitasyon Fournier gangrenidir (perineal nekrotizan fasiit). Tedavi gecikmeden cerrahi debridman ve geniş spektrumlu antibiyotiktir; ilaç kesilir.",
+      "aciklama_detay": "SGLT2 inhibitörlerinin en sık yan etkisi glukozüriye bağlı genital mantar enfeksiyonlarıdır. Çok daha nadir ama ölümcül olabilen tablo, perine, genital bölge ve perianal dokunun polimikrobiyal nekrotizan fasiiti olan Fournier gangrenidir. ABD FDA 2018'de bu sınıf için güvenlilik uyarısı yayımlamıştır. Diyabet kendi başına ana risk etkenidir; SGLT2 inhibitörü kullanan hastada bu tanının akılda tutulması erken tanıyı sağlar. Tipik bulgular: muayeneyle orantısız ağrı ve hassasiyet, hızla yayılan eritem ya da morarma, ödem, krepitasyon, ateş ve sepsis bulguları. LRINEC gibi skorlar ve görüntüleme (BT'de fasya boyunca gaz) destekleyicidir, ancak klinik tanı belirgin olduğunda görüntüleme için cerrahiyi geciktirmek mortaliteyi artırır. Tedavi: acil ve gerektiğinde tekrarlanan cerrahi debridman; gram pozitif (MRSA dahil), gram negatif ve anaerobik bakterileri kapsayan geniş spektrumlu IV antibiyotik (ör. karbapenem ya da piperasilin-tazobaktam + vankomisin + toksin üretimini baskılamak için klindamisin); sıvı resüsitasyonu ve glisemik kontrol (IV insülin). SGLT2 inhibitörü kesilir ve yeniden başlanmaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Mantar enfeksiyonu sistemik toksisite, krepitasyon ve orantısız ağrı yapmaz; hayatı tehdit eden tablo atlanmış olur.",
+        "B": "YANLIS — Epididimo-orşitte krepitasyon ve yayılan perineal nekroz beklenmez; septik hasta ayaktan tedavi edilemez.",
+        "C": "YANLIS — Klinik tanı açıkken görüntüleme için debridmanı geciktirmek mortaliteyi artırır; antibiyotik tek başına nekrotik dokuyu temizlemez.",
+        "D": "DOGRU — Fournier gangreni: ilaç kesilir, geniş spektrumlu IV antibiyotik ve acil cerrahi debridman yapılır.",
+        "E": "YANLIS — Krepitasyon ve sepsis bulguları basit selülitle açıklanamaz; oral tedavi ve doz azaltımı yetersizdir."
+      },
+      "etiketler": [
+        "Fournier Gangreni",
+        "Nekrotizan Fasiit",
+        "SGLT2 İnhibitörü Güvenliliği",
+        "Genital Enfeksiyon",
+        "Acil Cerrahi"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "FDA İlaç Güvenliliği Bildirimi 2018 (SGLT2 inhibitörleri ve Fournier gangreni); DeSantis A. Sodium-glucose cotransporter 2 inhibitors for the treatment of hyperglycemia in type 2 diabetes mellitus. UpToDate"
+    },
+    {
+      "id": "s15",
+      "metin": "Elli sekiz yaşında kadın hasta, tip 2 diyabet nedeniyle metformin, sitagliptin ve dapagliflozin 10 mg kullanıyor; HbA1c %7,1. Bir hafta sonra elektif total diz protezi ameliyatı planlanmış; preoperatif değerlendirme için başvuruyor.\n\nBu hastada dapagliflozinle ilgili en uygun perioperatif plan hangisidir?",
+      "secenekler": {
+        "A": "Ameliyat sabahına dek sürdürülmesi, yalnızca ameliyat sabahı dozunun atlanması",
+        "B": "Ameliyattan en az 3 gün önce kesilmesi; oral alım normale dönüp hasta klinik olarak stabil olunca yeniden başlanması, perioperatif dönemde gerekirse kan ketonu ölçülmesi",
+        "C": "İki hafta önce kesilip yerine glimepirid başlanması",
+        "D": "Ketoasidoz riski yalnızca tip 1 diyabette bulunduğundan kesilmeden sürdürülmesi",
+        "E": "Ameliyat gecesi kesilip ameliyattan sonraki ilk gün, oral alım olmasa da glisemik kontrol için yeniden başlanması"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Öglisemik DKA riskini azaltmak için SGLT2 inhibitörü planlı cerrahiden önce kesilir (dapagliflozin, empagliflozin, kanagliflozin için en az 3 gün; ertugliflozin için 4 gün). Hasta normal yiyip içmeye başlayınca ve klinik olarak stabilse yeniden başlanır.",
+      "aciklama_detay": "Cerrahi stres, perioperatif açlık ve azalan karbonhidrat alımı SGLT2 inhibitörü kullanan hastada ketogenezi artırır ve öglisemik DKA'ya zemin hazırlar. ABD FDA 2020'de prospektüsleri güncelleyerek planlı cerrahiden en az 3 gün (ertugliflozinde 4 gün) önce ilacın kesilmesini önermiş; ADA bakım standartları da bu süreyi benimser. TEMD Diabetes Mellitus 2026 kılavuzu majör cerrahiden 1–3 gün önce kesilmesini, acil cerrahide ise hemen kesilip keton izlenmesini önerir; üç günlük ara her iki öneriyle uyumludur. İlaç, ameliyat sonrası oral alım yeterli düzeye dönüp hasta hemodinamik olarak stabil, volüm açısından dengede olduğunda yeniden başlanır; yatan hastada yalnızca glisemik kontrol amacıyla erken başlatılmaz. Kesinti döneminde glisemi gerekirse insülinle yönetilir; bulantı, kusma, halsizlik ya da açıklanamayan metabolik asidozda glukoz normal olsa bile kan ketonu ölçülmelidir. İki haftalık gereksiz uzun kesinti ve yerine sülfonilüre başlanması, perioperatif açlık döneminde hipoglisemi riskini artırır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yalnızca ameliyat sabahı dozunu atlamak, ilacın etkisinin ve ketoz eğiliminin sürmesini engellemez.",
+        "B": "DOGRU — Planlı cerrahiden en az 3 gün önce kesilir; oral alım normalleşip hasta stabil olunca yeniden başlanır, şüphede keton ölçülür.",
+        "C": "YANLIS — İki haftalık kesinti gereksizdir; perioperatif açlıkta sülfonilüre hipoglisemi riskini artırır.",
+        "D": "YANLIS — Öglisemik DKA tip 2 diyabette de, özellikle cerrahi ve açlık sırasında gelişir.",
+        "E": "YANLIS — Bir günlük kesinti yetersizdir; oral alım yokken ve cerrahinin hemen ardından yeniden başlamak ketoasidoz riskini artırır."
+      },
+      "etiketler": [
+        "Perioperatif Yönetim",
+        "İlaç Kesme Süresi",
+        "Öglisemik DKA",
+        "Elektif Cerrahi",
+        "Yeniden Başlama"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Diabetes Mellitus Kılavuzu 2026 (Bölüm 18); ADA Standards of Care in Diabetes; FDA prospektüs güncellemesi 2020 (SGLT2 inhibitörleri ve cerrahi)"
     }
   ]
 }

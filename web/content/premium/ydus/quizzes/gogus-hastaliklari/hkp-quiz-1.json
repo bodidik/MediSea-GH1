@@ -245,6 +245,94 @@
       "etiketler": ["HAP/VAP de-eskalasyon", "MRSA nazal PCR", "antipsödomonal beta-laktam", "7 gün HAP tedavisi", "prokalsitonin kullanımı"],
       "zorluk": "zor",
       "kaynak": "ATS/IDSA HAP/VAP Guidelines 2016; Kalil AC et al. Clin Infect Dis 2016"
+    },
+    {
+      "id": "s15",
+      "metin": "Yetmiş bir yaşında erkek hasta, kolon cerrahisi sonrası 9. günde genel cerrahi servisinde yatarken ateş, pürülan balgam ve sağ alt lobda yeni infiltrat gelişiyor; mekanik ventilasyonda değil. Son 90 günde IV antibiyotik almış; ünitenin S. aureus izolatlarında MRSA oranı %30. Ampirik antipsödomonal β-laktama ek olarak anti-MRSA ajan eklenmesine karar veriliyor. Kreatinin klirensi 55 mL/dk.\n\nAşağıdaki anti-MRSA ajanlardan hangisi bu endikasyonda KULLANILMAMALIDIR?",
+      "secenekler": {
+        "A": "Vankomisin (AUC rehberli dozlama ile)",
+        "B": "Linezolid",
+        "C": "Teikoplanin (yükleme dozlarıyla)",
+        "D": "Daptomisin"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Daptomisin pulmoner sürfaktan tarafından bağlanıp inaktive edilir; pnömonide başarısız olduğu gösterilmiştir. MRSA pnömonisinde vankomisin ya da linezolid (ülkemizde teikoplanin de) kullanılır.",
+      "aciklama_detay": "Daptomisin, kalsiyuma bağımlı olarak bakteri membranına yerleşen lipopeptit yapılı bir antibiyotiktir. Pulmoner sürfaktanın fosfolipidleriyle etkileşerek sekestre edilir ve alveol içinde etkinliğini kaybeder; toplum kökenli pnömoni çalışmasında seftriaksona karşı eşdeğerlik gösterilememiştir. Bu nedenle pnömonide (hematojen septik emboliler dışında) endikasyonu yoktur. ATS/IDSA 2016 HKP/VİP kılavuzu anti-MRSA seçenek olarak vankomisin ya da linezolid önerir. Vankomisinde güncel dozlama AUC/MİK 400–600 hedefiyle yapılır; piperasilin-tazobaktamla birlikte kullanımda nefrotoksisite yakından izlenmelidir. Linezolid akciğer epitel sıvısına iyi geçer ve böbrek yetmezliğinde doz ayarı gerektirmez; uzun kullanımda trombositopeni, serotonin sendromu ve laktik asidoz riski vardır. Teikoplanin Avrupa'da ve ülkemizde kullanılan bir glikopeptittir; yeterli düzeye ulaşmak için yükleme dozları gerekir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Vankomisin HKP/VİP'te önerilen anti-MRSA ajanlardandır; AUC rehberli dozlamayla uygun seçenektir.",
+        "B": "YANLIŞ — Linezolid akciğere iyi geçer ve MRSA pnömonisinde önerilen ajanlardandır.",
+        "C": "YANLIŞ — Teikoplanin glikopeptit sınıfında bir alternatiftir; yeterli yükleme dozuyla kullanılabilir.",
+        "D": "DOĞRU — Sürfaktan tarafından inaktive edilir; pnömoni tedavisinde kullanılmaz."
+      },
+      "etiketler": ["MRSA pnömonisi", "daptomisin", "sürfaktan inaktivasyonu", "anti-MRSA seçimi"],
+      "zorluk": "orta",
+      "kaynak": "ATS/IDSA HAP/VAP Guidelines 2016 (Kalil AC ve ark.)"
+    },
+    {
+      "id": "s16",
+      "metin": "Altmış dört yaşında kadın hasta, akut pankreatit nedeniyle 18 gündür iç hastalıkları servisinde yatıyor ve yatışı sırasında meropenem almış. Yeni ateş, pürülan balgam ve sol alt lob infiltratı gelişiyor; hemodinamisi stabil, mekanik ventilasyonda değil.\n\nMikrobiyoloji (balgam ve kan kültürü):\nKlebsiella pneumoniae — karbapenemlere dirençli\nHızlı karbapenemaz testi: NDM pozitif; KPC ve OXA-48 negatif\n\nIDSA antimikrobiyal direnç rehberine göre bu hasta için en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Seftazidim-avibaktam + aztreonam",
+        "B": "Meropenem-vaborbaktam",
+        "C": "Seftazidim-avibaktam monoterapisi",
+        "D": "İmipenem-relebaktam"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "NDM bir metallo-β-laktamazdır; avibaktam, vaborbaktam ve relebaktam onu inhibe etmez. Aztreonam MBL'ye dayanıklıdır, eşlik eden serin β-laktamazları avibaktam kapatır: seftazidim-avibaktam + aztreonam (alternatif: sefiderokol).",
+      "aciklama_detay": "Karbapenem dirençli Enterobacterales'te tedavi karbapenemazın tipine göre seçilir. KPC (sınıf A serin karbapenemaz) için meropenem-vaborbaktam, seftazidim-avibaktam ya da imipenem-relebaktam; OXA-48 benzeri (sınıf D) için seftazidim-avibaktam uygundur. NDM, VIM ve IMP gibi metallo-β-laktamazlar (sınıf B) çinkoya bağımlıdır ve yeni β-laktamaz inhibitörlerinin hiçbiriyle inhibe edilmez. Aztreonam MBL tarafından hidrolize edilmez; ancak bu suşlar çoğunlukla aztreonamı yıkan ESBL ya da AmpC de taşır. Avibaktam bu enzimleri inhibe ederek aztreonamı korur. IDSA rehberi MBL üreten Enterobacterales için seftazidim-avibaktam + aztreonam ya da sefiderokol önerir; aztreonam-avibaktam sabit kombinasyonu da kullanıma girmiştir. Kolistin, daha yüksek mortalite ve nefrotoksisite nedeniyle tercih edilmez.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Aztreonam MBL'ye dayanıklıdır, avibaktam eşlik eden serin β-laktamazları inhibe eder.",
+        "B": "YANLIŞ — Vaborbaktam KPC'ye etkilidir; metallo-β-laktamazları inhibe etmez.",
+        "C": "YANLIŞ — Avibaktam NDM'yi inhibe etmez; seftazidim tek başına hidrolize olur.",
+        "D": "YANLIŞ — Relebaktam da sınıf B metallo-β-laktamazlara etkisizdir."
+      },
+      "etiketler": ["karbapenem dirençli Enterobacterales", "NDM", "metallo-β-laktamaz", "seftazidim-avibaktam + aztreonam"],
+      "zorluk": "zor",
+      "kaynak": "IDSA antimikrobiyal direnç tedavi rehberi 2024 (Tamma PD ve ark.)"
+    },
+    {
+      "id": "s17",
+      "metin": "Bir hastanenin inme ve geriatri servislerinde, mekanik ventilasyonda olmayan hastalarda gelişen hastane kökenli pnömoni (nvHAP) hızı son bir yılda artmıştır. Enfeksiyon kontrol komitesi bu hastalar için bir önleme programı hazırlıyor.\n\nAşağıdaki uygulamalardan hangisi nvHAP'yi azaltmak için kanıtla en iyi desteklenen yaklaşımdır?",
+      "secenekler": {
+        "A": "Tüm yatan hastalara rutin stres ülseri profilaksisi olarak proton pompa inhibitörü verilmesi",
+        "B": "Yüksek riskli hastalara profilaktik sistemik antibiyotik başlanması",
+        "C": "Düzenli diş fırçalamayı içeren ağız bakımı, oral beslenme öncesi disfaji taraması ve erken mobilizasyon",
+        "D": "Günde iki kez klorheksidinli ağız gargarası ve rutin nazal mupirosin dekolonizasyonu"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "nvHAP'nin ana mekanizması orofaringeal floranın mikroaspirasyonudur; düzenli diş fırçalamayla ağız bakımı, disfaji taraması ve erken mobilizasyon en iyi desteklenen önlemlerdir. Endikasyonsuz asit baskılama ve profilaktik antibiyotik riski artırır.",
+      "aciklama_detay": "HKP olgularının çoğunluğu mekanik ventilasyonda olmayan hastalarda gelişir ve mortalitesi VİP'e yakındır. Patogenezde dental plakta kolonize olan patojenlerin mikroaspirasyonu merkezi rol oynar; inme, bilinç bozukluğu ve disfaji riski artırır. SHEA/IDSA/APIC 2022 güncellemesi nvHAP önleminde düzenli ağız bakımı (diş fırçalama), disfajinin taranması ve yönetimi, erken mobilizasyon ve solunum viruslarına karşı çok bileşenli önlemleri (aşılama dahil) önerir; kanıt düzeyleri orta-düşük olsa da girişim çalışmalarında nvHAP hızlarında belirgin azalma bildirilmiştir. Endikasyonsuz asit baskılama gastrik kolonizasyonu artırarak pnömoni riskini yükseltir; profilaktik antibiyotik direnç seçer. Klorheksidinle ağız dekontaminasyonu, olası mortalite artışı sinyali nedeniyle ventilatördeki hastalarda da terk edilmiştir ve rutin nazal dekolonizasyonun nvHAP'yi azalttığı gösterilmemiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Endikasyonsuz PPI gastrik kolonizasyonu artırır ve pnömoni riskiyle ilişkilidir.",
+        "B": "YANLIŞ — Profilaktik antibiyotik nvHAP önleminde önerilmez; direnç ve C. difficile riskini artırır.",
+        "C": "DOĞRU — Ağız bakımı (diş fırçalama), disfaji taraması ve erken mobilizasyon nvHAP önleminin temelidir.",
+        "D": "YANLIŞ — Klorheksidinle ağız dekontaminasyonu artık önerilmez; rutin nazal dekolonizasyonun nvHAP'yi azalttığı gösterilmemiştir."
+      },
+      "etiketler": ["nvHAP", "korunma", "ağız bakımı", "disfaji taraması", "SHEA/IDSA 2022"],
+      "zorluk": "orta",
+      "kaynak": "Klompas M ve ark. SHEA/IDSA/APIC 2022 güncellemesi (Infect Control Hosp Epidemiol 2022)"
+    },
+    {
+      "id": "s18",
+      "metin": "Altmış dokuz yaşında erkek hasta, açık kolesistektomi sonrası genel cerrahi servisinde 7. günde HKP tanısı alıyor; ampirik vankomisin + sefepim başlanıyor. İki set kan kültüründe ve balgam kültüründe MRSA üremiş. Hastada kalp kapak hastalığı, intrakardiyak cihaz ya da protez yok. 72. saatte ateşi düşmüş, klinik düzeliyor; sefepim kesilip vankomisine devam ediliyor.\n\nBu hastada tedavi süresi ve ek değerlendirme açısından en doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Komplikasyonsuz HKP olduğundan toplam 7 günde tedaviyi kesmek",
+        "B": "Ekokardiyografi ve kontrol kan kültürleri; ilk negatif kültürden itibaren en az 14 gün IV tedavi",
+        "C": "Prokalsitonin %80 düştüğünde 5. günde tedaviyi kesmek",
+        "D": "Vankomisini oral linezolide çevirip toplam 7 günde bitirmek"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "HKP/VİP'te 7 gün kuralı komplikasyonsuz pnömoni içindir; S. aureus bakteriyemisi eşlik ediyorsa ekokardiyografi, kontrol kan kültürleri ve en az 14 gün IV tedavi gerekir.",
+      "aciklama_detay": "ATS/IDSA 2016 kılavuzundaki 7 günlük tedavi önerisi komplikasyonsuz HKP/VİP içindir; ampiyem, akciğer apsesi, nekrotizan pnömoni ve endovasküler enfeksiyon bu kuralın dışındadır. S. aureus bakteriyemisi, kaynağı pnömoni olsa bile endokardit, septik tromboflebit ve metastatik odak riski taşır. Standart yaklaşım: 2–4 günde kontrol kan kültürleri, ekokardiyografi (gerekirse transözofageal), metastatik odak araştırması ve enfeksiyon hastalıkları konsültasyonu. Komplikasyonsuz bakteriyemi ölçütlerini (endokardit ve implant yokluğu, kan kültürlerinin 2–4 gün içinde negatifleşmesi, 72 saatte ateşin düşmesi, metastatik odak olmaması) karşılayan hastada ilk negatif kan kültüründen itibaren en az 14 gün IV tedavi; karşılamayanlarda 4–6 hafta verilir. PCT rehberli erken kesim ve kısa oral tedavi bu grupta geçerli değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — 7 gün kuralı komplikasyonsuz pnömoni içindir; S. aureus bakteriyemisi bu kuralın dışındadır.",
+        "B": "DOĞRU — S. aureus bakteriyemisinde ekokardiyografi ve kontrol kültürleri zorunludur; komplikasyonsuz olsa bile en az 14 gün IV tedavi verilir.",
+        "C": "YANLIŞ — PCT rehberli erken kesim bakteriyemik S. aureus enfeksiyonunda geçerli değildir.",
+        "D": "YANLIŞ — Kısa oral tedavi S. aureus bakteriyemisinde nüks ve metastatik odak riskini artırır; süre ve yol bakteriyemiye göre belirlenir."
+      },
+      "etiketler": ["S. aureus bakteriyemisi", "MRSA", "tedavi süresi", "7 gün kuralının istisnası"],
+      "zorluk": "orta",
+      "kaynak": "IDSA 2011 MRSA tedavi kılavuzu (Liu C ve ark.); ATS/IDSA HAP/VAP Guidelines 2016"
     }
   ]
 }

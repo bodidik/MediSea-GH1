@@ -1,6 +1,6 @@
 {
   "id": "quiz-endo-men-001",
-  "baslik": "MEN Sendromları — YDUS Soru Seti (11 Soru)",
+  "baslik": "MEN Sendromları — YDUS Soru Seti (15 Soru)",
   "branch": "endokrinoloji",
   "topic": "men-sendromlari",
   "sorular": [
@@ -267,6 +267,126 @@
       "etiketler": ["Somatotropinoma", "Akromegali", "Plürihormonoal", "Prolaktin", "MEN1 Hipofiz"],
       "zorluk": "orta",
       "kaynak": "Trouillas J et al. Eur J Endocrinol 2021; Beckers A et al. Endocr Rev 2013"
+    },
+    {
+      "id": "s12",
+      "metin": "Yirmi altı yaşında erkek hasta, son 2 yılda üç kez böbrek taşı düşürmüş. Babası 48 yaşında metastatik pankreas nöroendokrin tümöründen kaybedilmiş. Hastada germline patojenik MEN1 varyantı saptanmış.\n\nTetkikler:\nKalsiyum: 11.4 mg/dL ↑, fosfor: 2.3 mg/dL ↓\nPTH: 168 pg/mL ↑\n25(OH)D: 28 ng/mL\n24 saatlik idrar kalsiyumu: 410 mg/gün ↑\nBoyun USG: sağ alt paratiroid lojunda 9 mm lezyon\nTc-99m sestamibi: sağ altta tek odak tutulum\n\nBu hasta için en uygun cerrahi yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Görüntülemeyle uyumlu tek odak için minimal invaziv odaklı paratiroidektomi (yalnızca sağ alt bez).",
+        "B": "Total paratiroidektomi ve ön kola ototransplantasyon; timektomi yapılmaz.",
+        "C": "Cerrahi 40 yaşına kadar ertelenir, bu süre sinakalset ile köprülenir.",
+        "D": "Dört bezin eksplorasyonu ile subtotal (3,5 bez) paratiroidektomi ve transservikal timektomi.",
+        "E": "Sağ alt bez eksizyonu ve intraoperatif PTH izlemi; PTH %50 düşerse işlem sonlandırılır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "MEN1'de primer hiperparatiroidi dört bezi asenkron tutan hiperplazidir; tek odak görüntülemesi yanıltır. Standart: bilateral eksplorasyon + subtotal (3,5 bez) paratiroidektomi + transservikal timektomi.",
+      "aciklama_detay": "MEN1 ilişkili primer hiperparatiroidide bezler asimetrik ve asenkron büyüdüğü için görüntüleme çoğu kez yalnızca en büyük bezi gösterir; diğer bezler de hiperplaziktir. Odaklı paratiroidektomi bu nedenle yüksek persistan/nüks oranı taşır ve intraoperatif PTH düşüşü de çok bezli hastalıkta güvenilir değildir. 2012 MEN1 klinik uygulama kılavuzu (Thakker ve ark.) subtotal (en az 3,5 bez) paratiroidektomiyi önerir; total paratiroidektomi + ototransplantasyon alternatiftir ama kalıcı hipoparatiroidi riski daha yüksektir. Her iki seçeneğe de transservikal timektomi eklenir: timüsteki ektopik ya da fazla sayıdaki paratiroid dokusu çıkarılır ve MEN1'in en ölümcül tümörlerinden timik nöroendokrin tümör riski azaltılır. Bu hastada tekrarlayan nefrolitiazis ve hiperkalsiüri cerrahi endikasyonudur; beklemek böbrek ve kemik hasarını artırır. Nüks uzun dönemde sık olduğundan cerrahi sonrası kalsiyum izlemi ömür boyu sürer.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tek odak görüntülemesi MEN1'de diğer hiperplazik bezleri dışlamaz; odaklı cerrahi persistan hastalıkla sonuçlanır.",
+        "B": "YANLIS — Total paratiroidektomi + ototransplantasyon kabul edilen bir alternatiftir ama timektominin atlanması ektopik paratiroid dokusunu ve timik NET riskini bırakır; hipoparatiroidi riski de daha yüksektir.",
+        "C": "YANLIS — Tekrarlayan taş ve hiperkalsiüri cerrahi endikasyonudur; sinakalset cerrahiye aday olmayan ya da nüks eden hastalık içindir.",
+        "D": "DOGRU — Subtotal paratiroidektomi + transservikal timektomi MEN1'de standart yaklaşımdır.",
+        "E": "YANLIS — İntraoperatif PTH izlemi tek adenomlu sporadik hastalıkta işe yarar; çok bezli hiperplazide PTH düşüşü yanıltıcıdır."
+      },
+      "etiketler": [
+        "MEN1",
+        "Primer Hiperparatiroidi",
+        "Subtotal Paratiroidektomi",
+        "Transservikal Timektomi",
+        "Çok Bezli Hastalık"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MEN1 Klinik Uygulama Kılavuzu (Thakker ve ark. J Clin Endocrinol Metab 2012)"
+    },
+    {
+      "id": "s13",
+      "metin": "Otuz sekiz yaşında kadın hasta, 2 yıl önce akromegali nedeniyle transsfenoidal cerrahi geçirmiş. Şimdi primer hiperparatiroidi saptanmış ve ameliyat edilmiş; ameliyatta yalnızca sol üst bezde tek adenom bulunmuş, diğer bezler normal görünümde. Annesinde 55 yaşında primer hiperparatiroidi öyküsü var.\n\nGenetik inceleme:\nMEN1 geni dizi analizi: patojenik varyant yok\nMEN1 delesyon/duplikasyon analizi (MLPA): negatif\n\nKlinik olarak MEN1'i taklit eden bu tabloda sıradaki genetik inceleme hangi gene yönelmelidir?",
+      "secenekler": {
+        "A": "CDKN1B (p27Kip1)",
+        "B": "AIP",
+        "C": "CDC73 (parafibromin)",
+        "D": "CASR",
+        "E": "RET"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "MEN1 fenotipi (paratiroid + hipofiz) olup MEN1 geni negatif olan hastada ilk düşünülecek gen CDKN1B'dir (MEN4). MEN4'te paratiroid tutulumu çoğunlukla tek/çift bez adenomu, başlangıç daha geç, penetrans daha düşüktür.",
+      "aciklama_detay": "MEN4, 12p13 üzerindeki CDKN1B geninin (siklin bağımlı kinaz inhibitörü p27Kip1) germline inaktive edici varyantlarıyla oluşur ve MEN1 fenotipini taşıyıp MEN1 mutasyonu bulunmayan ailelerde tanımlanmıştır (Pellegata ve ark. 2006). Klinik spektrum MEN1 ile örtüşür: primer hiperparatiroidi en sık bulgudur; hipofiz adenomları (GH, ACTH salgılayan ya da fonksiyonsuz), gastroenteropankreatik NET'ler ve adrenal lezyonlar görülebilir. MEN1'den farkları: penetrans düşük, primer hiperparatiroidi daha ileri yaşta başlar ve tek ya da çift bez adenomu şeklindedir; bu nedenle cerrahi yaklaşım sporadik hastalığa daha yakındır. Çeldiricilerdeki genler başka sendromları açıklar: AIP ailesel izole hipofiz adenomu (genç erkekte GH salgılayan makroadenom, paratiroid tutulumu yok), CDC73 hiperparatiroidi-çene tümörü sendromu (paratiroid karsinomu riski, çene kemiğinde ossifiye fibrom, böbrek kistleri, uterus tümörleri), CASR ailesel hipokalsiürik hiperkalsemi (düşük idrar kalsiyum/kreatinin klirens oranı, cerrahi gerekmez), RET ise MEN2 (medüller tiroid kanseri ve feokromositoma; hipofiz tümörü yok).",
+      "secenekAciklamalari": {
+        "A": "DOGRU — MEN1 benzeri fenotip + negatif MEN1 analizi → CDKN1B (MEN4).",
+        "B": "YANLIS — AIP ailesel izole hipofiz adenomuna yol açar; paratiroid tutulumu bu sendromun parçası değildir.",
+        "C": "YANLIS — CDC73 hiperparatiroidi-çene tümörü sendromudur; paratiroid karsinomu ve çene tümörleri öne çıkar, akromegali beklenmez.",
+        "D": "YANLIS — CASR varyantı ailesel hipokalsiürik hiperkalsemi yapar; adenom ve hipofiz tümörü açıklamaz.",
+        "E": "YANLIS — RET MEN2'nin genidir; tabloda medüller tiroid kanseri ya da feokromositoma yok, hipofiz tümörü MEN2'de görülmez."
+      },
+      "etiketler": [
+        "MEN4",
+        "CDKN1B",
+        "p27Kip1",
+        "Genetik Tanı",
+        "MEN1 Fenokopisi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Pellegata ve ark. PNAS 2006; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s14",
+      "metin": "Otuz bir yaşında kadın hasta, 2 yıl önce medüller tiroid kanseri ve bilateral feokromositoma nedeniyle opere edilmiş; germline RET kodon 634 (C634R) varyantı taşıyor. Aile taramasında 3 yaşındaki oğlunda aynı varyant saptanıyor, 1 yaşındaki kızında varyant yok. Oğlunun boyun USG'si normal, serum kalsitonini yaşına göre referansın hafif üst sınırında.\n\nAmerikan Tiroid Derneği (ATA) 2015 medüller tiroid kanseri kılavuzuna göre oğlu için en uygun plan hangisidir?",
+      "secenekler": {
+        "A": "Erişkin yaşa kadar yıllık kalsitonin ile izlenir; kalsitonin belirgin yükseldiğinde tiroidektomi yapılır.",
+        "B": "Hemen total tiroidektomi ile birlikte profilaktik bilateral lateral boyun diseksiyonu yapılır.",
+        "C": "Yalnızca yıllık boyun USG ile izlenir; nodül saptanırsa ince iğne aspirasyonu yapılır.",
+        "D": "Doğumdan itibaren yıllık feokromositoma taraması yapılır; tiroidektomi 10 yaşında planlanır.",
+        "E": "Total tiroidektomi ≤5 yaşta, zamanlama kalsitonine göre; feokromositoma ve hiperparatiroidi taraması 11 yaşında başlar."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "RET C634 ATA'nın yüksek risk grubudur: profilaktik total tiroidektomi ≤5 yaş (kalsitonin rehberliğinde), feokromositoma ve primer hiperparatiroidi taraması 11 yaşından itibaren. M918T (MEN2B, en yüksek risk) ise ilk yılda tiroidektomi gerektirir.",
+      "aciklama_detay": "MEN2'de medüller tiroid kanserinin penetransı neredeyse %100'dür ve agresifliği RET kodonuna bağlıdır. ATA 2015 kılavuzu üç risk grubu tanımlar: en yüksek risk (M918T, MEN2B) — tiroidektomi yaşamın ilk yılında; yüksek risk (C634 ve A883F) — tiroidektomi 5 yaşında ya da daha önce, kesin zamanlama serum kalsitonin düzeyine göre; orta risk (diğer kodonlar) — kalsitonin 6 aylık-yıllık izlenir, kalsitonin yükselmeye başladığında ya da aile uzun izlemi istemiyorsa çocuklukta tiroidektomi. Merkezi boyun diseksiyonu yalnızca kalsitonin belirgin yüksekse (>40 pg/mL) ya da lenf nodu tutulumu kanıtı varsa eklenir; profilaktik lateral diseksiyonun bu yaşta yeri yoktur ve paratiroid/sinir hasarı riskini artırır. Feokromositoma taraması (plazma serbest ya da idrar fraksiyone metanefrinleri) ve hiperparatiroidi taraması (kalsiyum) yüksek ve en yüksek risk grubunda 11 yaşında, orta risk grubunda 16 yaşında başlar. Varyant taşımayan kardeşin genel popülasyondan fazla riski yoktur ve izlem gerekmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kalsitoninin belirgin yükselmesini beklemek lenf nodu metastazı gelişmiş olabileceği anlamına gelir; C634'te tiroidektomi ≤5 yaşta yapılır.",
+        "B": "YANLIS — Tiroidektomi zamanlaması uygun olabilir ama profilaktik lateral boyun diseksiyonu endike değildir ve morbiditeyi artırır.",
+        "C": "YANLIS — USG ve İİAB medüller kanseri mikroskobik aşamada yakalayamaz; profilaktik yaklaşım genotipe ve kalsitonine dayanır.",
+        "D": "YANLIS — Feokromositoma taraması yüksek risk grubunda 11 yaşında başlar; tiroidektomiyi 10 yaşa ertelemek C634 için geçtir.",
+        "E": "DOGRU — ATA 2015 yüksek risk grubunun (C634) önerisi budur."
+      },
+      "etiketler": [
+        "MEN2A",
+        "RET C634",
+        "Profilaktik Tiroidektomi",
+        "Kalsitonin",
+        "ATA 2015"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ATA 2015 Medüller Tiroid Kanseri Kılavuzu (Wells ve ark. Thyroid 2015)"
+    },
+    {
+      "id": "s15",
+      "metin": "Kırk altı yaşında erkek hasta, MEN1 tanılı. On iki yıl önce subtotal paratiroidektomi geçirmiş; o ameliyatta timektomi yapılmamış. Otuz paket-yıl sigara öyküsü var. Yakınması yok; sürveyans kapsamında çekilen toraks BT'de ön mediastende 4.2 cm düzensiz sınırlı kitle saptanıyor.\n\nTetkikler:\nKalsiyum: 9.6 mg/dL, PTH: 38 pg/mL\nSabah kortizolü ve ACTH: normal\nMiyasteni bulgusu yok\nKitleden alınan kesici iğne biyopsisi: iyi diferansiye nöroendokrin tümör, Ki-67 %8\n\nBu kitle ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "secenekler": {
+        "A": "Tanı timomadır; asetilkolin reseptör antikoru bakılıp timektomi planlanmalıdır.",
+        "B": "Kitle ektopik (timik) paratiroid adenomudur; sestamibi ile doğrulanıp mediastinal paratiroidektomi yapılmalıdır.",
+        "C": "Timik NET'tir; MEN1'de çoğunlukla sigara içen erkeklerde görülür, genellikle fonksiyonsuz ve agresiftir; tedavisi cerrahidir.",
+        "D": "MEN1'deki timik NET'ler çoğunlukla ektopik ACTH ile Cushing sendromu yapar; bu nedenle tedavi planı hormonal sendroma göre yapılır.",
+        "E": "MEN1'deki timik NET'ler iyi huyludur; pankreas NET'lerindeki gibi 2 cm eşiğine dayanarak aktif izlem uygulanır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "MEN1'de ön mediasten NET'i = timik NET: erkek ve sigara içen hastada, çoğu fonksiyonsuz, geç tanı alan ve MEN1'e bağlı ölümlerin önemli bir kısmından sorumlu agresif tümör. Tedavi mümkünse R0 rezeksiyon; paratiroid cerrahisine transservikal timektomi eklenmesi bu yüzden önerilir.",
+      "aciklama_detay": "Timik nöroendokrin tümörler MEN1 hastalarının az bir kısmında (%2–8) görülür, ancak MEN1'e bağlı ölümlerin önde gelen nedenlerindendir: çoğu hormonal sendrom oluşturmadığından geç, büyük ve invaziv evrede yakalanır; yerel nüks ve uzak metastaz sıktır. Avrupa kohortlarında olguların neredeyse tamamı erkek ve çoğu sigara içicidir; Japon serilerinde kadın olgular da bildirilmiştir. Ektopik ACTH salgısı ve karsinoid sendrom nadirdir. Bu nedenle MEN1 sürveyansında toraks BT ya da MRG belirli aralıklarla yapılır ve paratiroid cerrahisi sırasında transservikal timektomi önerilir; ancak transservikal timektomi timusu tümüyle çıkaramayabileceğinden timektomi sonrası da timik NET bildirilmiştir. Tedavi, mümkünse tam cerrahi rezeksiyondur (sternotomi); rezidü ya da nüks hastalıkta radyoterapi, somatostatin analoğu, everolimus, peptid reseptör radyonüklid tedavisi ya da kemoterapi düşünülür. Bu hastada kalsiyum ve PTH normal olduğundan kitlenin ektopik paratiroid olması beklenmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Biyopsi nöroendokrin tümör göstermiştir; timoma epitelyal bir tümördür ve MEN1 ile ilişkili değildir.",
+        "B": "YANLIS — Kalsiyum ve PTH normal; biyopsi de nöroendokrin tümör gösteriyor. Ektopik paratiroid bu tabloyu açıklamaz.",
+        "C": "DOGRU — MEN1'de timik NET erkek ve sigara içenlerde görülen, çoğu fonksiyonsuz, agresif tümördür; tedavi cerrahi rezeksiyondur.",
+        "D": "YANLIS — Timik NET'lerin çoğu fonksiyonsuzdur; ektopik ACTH salgısı nadirdir ve bu hastada kortizol/ACTH normaldir.",
+        "E": "YANLIS — 2 cm eşiği fonksiyonsuz pankreas NET'leri içindir; timik NET'ler agresiftir ve izleme bırakılmaz."
+      },
+      "etiketler": [
+        "MEN1",
+        "Timik NET",
+        "Sigara",
+        "Timektomi",
+        "Sürveyans"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MEN1 Klinik Uygulama Kılavuzu (Thakker ve ark. J Clin Endocrinol Metab 2012); Konu anlatımı (MediSea premium)"
     }
   ]
 }

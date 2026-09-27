@@ -289,6 +289,50 @@
       "etiketler": ["VİP tanı yönetimi", "Multiplex PCR panelleri", "bronkoskopik BAL vs ETA", "prokalsitonin", "enteral beslenme GRV"],
       "zorluk": "zor",
       "kaynak": "ERS/ESICM/ESCMID/ALAT Guidelines 2017; INHALE Trial (Rello J et al. Crit Care 2019); ATS/IDSA HAP/VAP Guidelines 2016"
+    },
+    {
+      "id": "s14",
+      "metin": "Elli iki yaşında erkek hasta, politravma nedeniyle 12 gündür mekanik ventilatörde. VİP tanısıyla ampirik meropenem + amikasin + vankomisin başlanmış. Endotrakeal aspirat kültüründe ≥10⁵ CFU/mL Pseudomonas aeruginosa üremiş; nazal MRSA PCR negatif.\n\nAntibiyogram:\nPiperasilin-tazobaktam, sefepim, seftazidim, aztreonam: dirençli\nMeropenem, imipenem: dirençli\nSiprofloksasin, levofloksasin: dirençli\nSeftolozan-tazobaktam, seftazidim-avibaktam: duyarlı\nAmikasin ve kolistin: duyarlı\n\nBu hasta için en uygun hedefe yönelik tedavi hangisidir?",
+      "secenekler": {
+        "A": "Kolistin monoterapisi",
+        "B": "Uzatılmış infüzyonla yüksek doz meropenem + amikasin",
+        "C": "Amikasin monoterapisi",
+        "D": "Seftolozan-tazobaktam (pnömoni dozu: 3 g, 8 saatte bir) ve vankomisinin kesilmesi"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Tüm geleneksel antipsödomonal ajanlara dirençli (DTR) P. aeruginosa'da tercih, duyarlı olduğu yeni β-laktam/β-laktamaz inhibitörüdür; pnömonide seftolozan-tazobaktam yüksek dozda (3 g/8 saat) verilir. Aminoglikozid ve kolistin monoterapisi pnömonide yetersizdir.",
+      "aciklama_detay": "IDSA rehberi piperasilin-tazobaktam, seftazidim, sefepim, aztreonam, karbapenemler ve florokinolonlara dirençli P. aeruginosa'yı 'tedavisi güç direnç' (DTR) olarak tanımlar; duyarlılık varsa seftolozan-tazobaktam, seftazidim-avibaktam ya da imipenem-silastatin-relebaktam önerir. Seftolozan-tazobaktam HKP/VİP'te ASPECT-NP çalışmasına dayanarak komplike karın içi ve idrar yolu enfeksiyonu dozunun iki katıyla (3 g, 8 saatte bir) kullanılır. Duyarlı bir yeni β-laktam varken kombinasyon tedavisinin ek yararı gösterilmemiştir. Aminoglikozidler akciğerin asidik ortamında ve epitel sıvısında zayıf etkinlik gösterir; kolistin ise nefrotoksisite, dar terapötik aralık ve düşük akciğer penetrasyonu nedeniyle son seçeneklerdendir. MRSA dışlandığı için vankomisin kesilir; komplikasyonsuz VİP'te toplam süre 7 gündür.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Yeni β-laktam/β-laktamaz inhibitörüne duyarlılık varken kolistin monoterapisi daha toksik ve daha az etkilidir.",
+        "B": "YANLIŞ — Karbapeneme dirençli suşta uzatılmış infüzyon direnci aşmaz; aminoglikozid eklemek bu açığı kapatmaz.",
+        "C": "YANLIŞ — Aminoglikozidler asidik akciğer ortamında zayıf etkilidir; pnömonide monoterapi olarak kullanılmaz.",
+        "D": "DOĞRU — DTR P. aeruginosa'da duyarlı yeni β-laktam/β-laktamaz inhibitörü tercih edilir; MRSA dışlandığından vankomisin kesilir."
+      },
+      "etiketler": ["DTR Pseudomonas aeruginosa", "seftolozan-tazobaktam", "ASPECT-NP", "hedefe yönelik tedavi"],
+      "zorluk": "zor",
+      "kaynak": "IDSA antimikrobiyal direnç tedavi rehberi 2024 (Tamma PD ve ark.); ASPECT-NP (Kollef MH ve ark. Lancet Infect Dis 2019)"
+    },
+    {
+      "id": "s15",
+      "metin": "Altmış yaşında kadın hasta, subaraknoid kanama nedeniyle 8 gündür mekanik ventilatörde. Son 48 saatte ateşi 38.3°C'ye yükseliyor, trakeal sekresyonları pürülanlaşıyor ve miktarı artıyor.\n\nBulgular:\nPaO₂/FiO₂ 320 (stabil); FiO₂ ve PEEP gereksiniminde artış yok\nHemodinami stabil; vazopresör yok\nAkciğer grafisi ve akciğer USG: yeni infiltrat ya da konsolidasyon yok\nEndotrakeal aspirat: bol nötrofil; kültürde P. aeruginosa 10⁶ CFU/mL\n\nATS/IDSA 2016 kılavuzuna göre bu tablo ve yönetimi için en uygun seçenek hangisidir?",
+      "secenekler": {
+        "A": "Ventilatör ilişkili trakeobronşit; rutin antibiyotik tedavisi önerilmez, yakın izlem",
+        "B": "VİP; 7 gün antipsödomonal kombinasyon tedavisi",
+        "C": "VİP; 14 gün antipsödomonal tedavi",
+        "D": "Ventilatör ilişkili trakeobronşit; inhale aminoglikozid + sistemik antipsödomonal tedavi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Yeni infiltrat yokken ateş + pürülan sekresyon + kültür üremesi = ventilatör ilişkili trakeobronşit (VAT). ATS/IDSA 2016 ve ERS/ESICM 2017 VAT'ta antibiyotik tedavisi önermez; kültür üremesi tek başına tedavi endikasyonu değildir.",
+      "aciklama_detay": "VİP tanısı yeni ya da ilerleyici bir akciğer infiltratı gerektirir. İnfiltrat olmadan ateş, pürülan sekresyon ve alt solunum yolu kültüründe üreme, ventilatör ilişkili trakeobronşit (VAT) olarak adlandırılır. ATS/IDSA 2016 (zayıf öneri, düşük kanıt) ve ERS/ESICM 2017 kılavuzları VAT'ta antibiyotik tedavisi vermemeyi önerir; antibiyotiğin mortalite, ventilasyon süresi ya da VİP'e ilerleme üzerinde tutarlı yararı gösterilmemiştir, direnç ve toksisite riski ise açıktır. Entübe hastanın trakeası kısa sürede kolonize olur; kültürde yüksek bakteri sayısı kolonizasyonla enfeksiyonu ayırmaz. Hasta oksijenasyon, hemodinami ve görüntüleme açısından yakından izlenir; VİP ya da sepsis bulguları gelişirse tedavi başlanır. Subaraknoid kanamada ateşin santral ve ilaca bağlı nedenleri de ayırıcı tanıda yer alır.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — İnfiltrat yok, oksijenasyon stabil: VAT; kılavuzlar rutin antibiyotik önermez, yakın izlem yapılır.",
+        "B": "YANLIŞ — Görüntülemede yeni infiltrat olmadan VİP tanısı konmaz; kültür üremesi kolonizasyonu yansıtabilir.",
+        "C": "YANLIŞ — Hem tanı yanlıştır hem de 14 gün, kılavuzların VİP için önerdiği sürenin iki katıdır.",
+        "D": "YANLIŞ — VAT'ta inhale ya da sistemik antibiyotiğin rutin kullanımı kılavuzlarca önerilmez."
+      },
+      "etiketler": ["ventilatör ilişkili trakeobronşit", "kolonizasyon", "VİP tanısı", "antibiyotik yönetimi"],
+      "zorluk": "orta",
+      "kaynak": "ATS/IDSA HAP/VAP Guidelines 2016 (Kalil AC ve ark.); ERS/ESICM/ESCMID/ALAT Guidelines 2017"
     }
   ]
 }

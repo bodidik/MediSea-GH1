@@ -154,6 +154,300 @@
       ],
       "zorluk": "zor",
       "kaynak": "Evrensel MI tanımı · PURSUIT · TACTICS-TIMI 18 · CRUSADE"
+    },
+    {
+      "id": "s6",
+      "metin": "54 yaşında erkek hasta, yaklaşık **5 saat önce** başlayıp 25 dakika süren ve kendiliğinden geçen retrosternal baskı tarzında göğüs ağrısı ile acil servise başvuruyor. Başvuruda ağrısız; vital bulgular stabil, fizik muayene doğal.\n\nTetkikler:\n- EKG: sinüs ritmi, iskemik ST-T değişikliği yok\n- 0. saat hs-cTnT: **4 ng/L**\n- Laboratuvarın kullandığı test için 0/1-saat algoritması eşikleri: çok düşük <5 ng/L · düşük <12 ng/L ve 1. saat farkı <3 ng/L (dışlama) · ≥52 ng/L ya da 1. saat farkı ≥5 ng/L (dahil etme)\n\nESC 2023 AKS Kılavuzu'na göre bu hastanın miyokard enfarktüsü açısından değerlendirilmesi ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": {
+        "A": "Tek ölçümle dışlama yapılamaz; 1. saat ölçümü sonuçlanmadan hasta hiçbir koşulda taburcu edilemez.",
+        "B": "Ağrı başlangıcından 3 saatten fazla geçtiği ve 0. saat değeri çok düşük olduğu için MI tek ölçümle dışlanabilir.",
+        "C": "hs-cTn kullanılsa da güvenilir dışlama için 0., 3. ve 6. saatte seri ölçüm zorunludur.",
+        "D": "Troponin tanı eşiğinin altında olduğundan karar CK-MB kütle düzeyine göre verilir; CK-MB yüksekse NSTEMI kabul edilir.",
+        "E": "Tipik öykü nedeniyle troponinden bağımsız olarak 24 saat içinde invaziv koroner anjiyografi yapılmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "0/1-saat algoritmasında 0. saat değeri 'çok düşük' ve göğüs ağrısı başlangıcı 3 saatten eski ise MI tek ölçümle dışlanır; 1. saat ölçümü erken başvuranlar ve ara değerler içindir.",
+      "aciklama_detay": "hs-cTn tabanlı 0/1-saat algoritmasının üç kolu vardır: dışlama, gözlem ve dahil etme. Dışlama iki yoldan yapılır: (1) 0. saat değeri 'çok düşük' eşiğin altındaysa ve göğüs ağrısı başlangıcının üzerinden 3 saatten fazla geçmişse tek ölçüm yeterlidir; (2) 0. saat değeri 'düşük' ve 1. saatteki mutlak değişim küçükse MI dışlanır. Dahil etme 0. saatte yüksek değer ya da 1. saatte belirgin artışla olur; arada kalan gözlem kolunda 3. saat ölçümü ve ekokardiyografi önerilir. Eşikler teste özgüdür; kullanılan platformun eşikleri uygulanmalıdır. Çok erken başvuran hastada (ağrı <3 saat) troponin henüz yükselmemiş olabileceğinden tek ölçümle dışlama yapılmaz. Dışlama 'kardiyak değil' anlamına gelmez; yalnızca MI dışlanmıştır ve klinik olasılığa göre koroner BT anjiyografi ya da fonksiyonel test ayaktan planlanabilir. Algoritma ST yükselmesi olmayan, hemodinamik olarak stabil hastalar içindir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ağrı başlangıcı 3 saatten eski ve 0. saat değeri 'çok düşük' eşiğin altındayken tek ölçümle dışlama algoritmanın parçasıdır; bu hastada 1. saat ölçümü zorunlu değildir.",
+        "B": "DOGRU — Çok düşük 0. saat değeri ile 3 saatten uzun semptom süresi birlikte dışlama ölçütünü karşılar.",
+        "C": "YANLIS — 0/3/6 saat şeması konvansiyonel troponin dönemine aittir; hs-cTn ile 0/1 (ya da 0/2) saat algoritmaları hem hızlı hem güvenlidir.",
+        "D": "YANLIS — CK-MB, hs-cTn'ye göre duyarlılık ve özgüllükte geridedir; güncel MI tanı ölçütlerinde yeri yoktur.",
+        "E": "YANLIS — Biyobelirteç yüksekliği, dinamik EKG değişikliği ya da başka yüksek risk ölçütü olmayan hastada rutin erken invaziv anjiyografi endikasyonu yoktur."
+      },
+      "etiketler": [
+        "hs-cTn",
+        "0/1-saat Algoritması",
+        "MI Dışlama",
+        "ESC 2023"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ESC 2023 AKS Kılavuzu · Dördüncü Evrensel MI Tanımı (2018)"
+    },
+    {
+      "id": "s7",
+      "metin": "49 yaşında erkek hasta, 40 dakikadır süren şiddetli sıkıştırıcı göğüs ağrısı ve soğuk terleme ile primer PCI yapılabilen bir merkezin acil servisine başvuruyor. KB 138/84 mmHg, nabız 92/dk, SpO₂ %97.\n\nTetkikler:\n- EKG: V1–V5'te J noktasından başlayan 2 mm **yukarı eğimli ST depresyonu** ve bunu izleyen **uzun, simetrik, sivri T dalgaları**; aVR'de 1 mm ST yükselmesi; hiçbir derivasyonda STEMI ölçütünü karşılayan ST yükselmesi yok\n- 0. saat hs-cTnI: cinsiyete özgü 99. persentilin hafifçe üzerinde\n\nBu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "1. saat troponin sonucunu bekleyip yükselme/düşme dinamiği doğrulanırsa 24 saat içinde anjiyografi planlamak",
+        "B": "NSTE-AKS kabul edip fondaparinuks başlamak ve iskemi rehberli strateji izlemek",
+        "C": "Tenekteplaz ile fibrinoliz yapıp 2–24 saat içinde anjiyografiye almak",
+        "D": "STEMI eşdeğeri kabul edip kateter laboratuvarını hemen aktive etmek ve primer PCI yapmak",
+        "E": "Hiperkalemiyi dışlamak için potasyum sonucu gelene kadar reperfüzyon kararını ertelemek"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "de Winter paterni (prekordiyal yukarı eğimli ST depresyonu + uzun simetrik T) akut proksimal LAD tıkanıklığını gösterir; ST yükselmesi olmasa da STEMI eşdeğeridir ve acil primer PCI gerektirir.",
+      "aciklama_detay": "Klasik ST yükselmesi ölçütlerini karşılamayan ama akut koroner tıkanıklığı düşündüren EKG paternleri (dal bloğu ya da pace ritmi zemininde iskemi, izole posterior MI, de Winter paterni) süren iskemik semptomla birlikteyse STEMI gibi yönetilir. de Winter paterninde V1–V6'da J noktasından yukarı eğimli 1–3 mm ST depresyonu ve uzun, simetrik T dalgaları vardır; olguların çoğunda aVR'de hafif ST yükselmesi eşlik eder. Altta yatan lezyon çoğunlukla proksimal LAD'nin tam tıkanmasıdır ve patern klasik ST yükselmesine dönüşmeden saatlerce sabit kalabilir; bu yüzden troponin dinamiğini beklemek miyokard kaybettirir. PCI merkezindeki hastada reperfüzyon yöntemi primer PCI'dır; fibrinoliz yalnızca zamanında PCI yapılamayacaksa düşünülür. Hiperkalemi ile karışabilen sivri T dalgalarından ayırt ettiren, iskemik klinik ile yukarı eğimli ST depresyonunun birlikteliğidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Troponin dinamiğini beklemek tam tıkalı LAD'de reperfüzyonu geciktirir; de Winter bulgusu tedavi kararı için yeterlidir.",
+        "B": "YANLIS — Tablo NSTE-AKS gibi görünse de altta tam tıkanıklık vardır; iskemi rehberli strateji ciddi miyokard kaybına yol açar.",
+        "C": "YANLIS — Hasta primer PCI yapılabilen merkezdedir; bu koşulda fibrinoliz primer PCI'dan daha az etkilidir ve daha fazla kanamaya yol açar.",
+        "D": "DOGRU — de Winter paterni proksimal LAD oklüzyonunun STEMI eşdeğeridir; acil primer PCI gerekir.",
+        "E": "YANLIS — Hiperkalemide T dalgası sivrileşir ama yukarı eğimli ST depresyonu ve iskemik ağrıyı açıklamaz; potasyumu beklemek reperfüzyonu geciktirir."
+      },
+      "etiketler": [
+        "de Winter Paterni",
+        "OMI",
+        "STEMI Eşdeğeri",
+        "Primer PCI",
+        "Proksimal LAD"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ESC 2023 AKS Kılavuzu · Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s8",
+      "metin": "68 yaşında kadın hasta, dün akşam 30 dakika süren istirahat göğüs ağrısı nedeniyle başvuruyor; şu anda ağrısız. Tip 2 diyabet ve evre 3a kronik böbrek hastalığı var. KB 142/80 mmHg, nabız 78/dk, akciğer sesleri doğal (Killip I).\n\nTetkikler:\n- EKG: sinüs ritmi, ST-T değişikliği yok\n- hs-cTnI: 0. saat 45 ng/L → 1. saat 118 ng/L (99. persentil 16 ng/L)\n- eGFR 48 mL/dk/1.73 m²\n- GRACE skoru 128\n\nESC 2023 AKS Kılavuzu'na göre invaziv koroner anjiyografinin zamanlaması hangisi olmalıdır?",
+      "secenekler": {
+        "A": "İlk 24 saat içinde (erken invaziv strateji)",
+        "B": "İlk 2 saat içinde (ivedi invaziv strateji)",
+        "C": "24–72 saat içinde; diyabet, böbrek hastalığı ve GRACE 109–140 aralığı gecikmiş invaziv stratejiyi gerektirir",
+        "D": "Önce non-invaziv stres testi; iskemi gösterilirse anjiyografi",
+        "E": "Kontrast nefropatisi riski nedeniyle anjiyografi yapılmamalı, medikal tedavi sürdürülmeli"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Troponin yükselme dinamiğiyle doğrulanmış NSTEMI, ESC 2023'te tek başına yüksek risk ölçütüdür ve <24 saat içinde erken invaziv strateji düşünülmelidir. Eski '24–72 saat' ara kategorisi 2023 kılavuzunda yoktur.",
+      "aciklama_detay": "ESC 2023 AKS Kılavuzu NSTE-AKS'de invaziv zamanlamayı sadeleştirdi. Çok yüksek risk ölçütleri (hemodinamik instabilite ya da kardiyojenik şok, medikal tedaviye dirençli tekrarlayan ağrı, başvuru sonrası arrest ya da hayatı tehdit eden aritmi, mekanik komplikasyon, iskemiye bağlı akut kalp yetersizliği, tekrarlayan dinamik ST-T değişikliği) varsa ivedi (<2 saat) anjiyografi önerilir. Yüksek risk ölçütlerinden biri — doğrulanmış NSTEMI, dinamik ST/T değişiklikleri, geçici ST yükselmesi ya da GRACE >140 — varsa erken (<24 saat) invaziv strateji düşünülmelidir (IIa). Bu hastada ölçüt doğrulanmış NSTEMI'dir; GRACE'in 140'ın altında olması bunu değiştirmez. Eski kılavuzlardaki 'diyabet, böbrek yetersizliği, GRACE 109–140 → 72 saat içinde' kategorisi kaldırıldı. Orta evre KBH anjiyografiden vazgeçme gerekçesi değildir; yeterli hidrasyon ve kontrast hacmini sınırlama ile risk azaltılır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Doğrulanmış NSTEMI yüksek risk ölçütüdür; erken (<24 saat) invaziv strateji düşünülmelidir.",
+        "B": "YANLIS — İvedi strateji çok yüksek risk ölçütleri (şok, dirençli ağrı, ciddi aritmi, akut KY, mekanik komplikasyon) içindir; hasta ağrısız ve stabildir.",
+        "C": "YANLIS — 24–72 saatlik ara kategori eski kılavuzlara aittir ve ESC 2023'te yer almaz; ayrıca doğrulanmış NSTEMI hastayı yüksek risk grubuna koyar.",
+        "D": "YANLIS — İskemi rehberli strateji troponin negatif, düşük riskli hastalar içindir; doğrulanmış NSTEMI'de stres testine öncelik verilmez.",
+        "E": "YANLIS — eGFR 48 kontrast için engel değildir; hidrasyon ve düşük kontrast hacmiyle anjiyografi yapılır, invaziv stratejiden kaçınmak prognozu kötüleştirir."
+      },
+      "etiketler": [
+        "NSTEMI",
+        "İnvaziv Zamanlama",
+        "GRACE",
+        "ESC 2023"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ESC 2023 AKS Kılavuzu"
+    },
+    {
+      "id": "s9",
+      "metin": "61 yaşında erkek hasta (82 kg), 6 saattir süren göğüs ağrısı ile başvuruyor. hs-cTnI yükselme dinamiği ile **NSTEMI** tanısı konuyor; hemodinamik olarak stabil ve ağrısız. İnme/GİA öyküsü, kanama öyküsü ve oral antikoagülan kullanımı yok. Aspirin yüklemesi yapılmış, enoksaparin başlanmış; koroner anjiyografi **ertesi sabah (ilk 24 saat içinde)** planlanıyor.\n\nESC 2023 AKS Kılavuzu'na göre P2Y12 inhibitörü yönetiminde en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Acil serviste hemen tikagrelor 180 mg yükleyerek anjiyografi öncesinde trombosit inhibisyonunu sağlamak",
+        "B": "Acil serviste hemen prasugrel 60 mg yükleyerek anatomiden bağımsız olarak en güçlü inhibisyonu sağlamak",
+        "C": "Her NSTE-AKS'de rutin olarak klopidogrel 600 mg yükleyip PCI sonrasında tikagrelora geçmek",
+        "D": "P2Y12 inhibitörü vermeden 12 ay aspirin monoterapisi ve yüksek yoğunluklu statin ile izlemek",
+        "E": "Anatomiyi beklemek; PCI kararı verilirse prasugrel 60 mg yükleyip 12 ay ikili antiplatelet sürdürmek"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Erken (<24 saat) invaziv planlanan NSTE-AKS'de koroner anatomi bilinmeden rutin P2Y12 ön yüklemesi önerilmez (Sınıf III); PCI yapılacak hastada prasugrel tikagrelora tercih edilebilir (IIa).",
+      "aciklama_detay": "NSTE-AKS'de ön yükleme tartışması iki gözleme dayanır: ACCOAST'ta anjiyografi öncesi prasugrel yüklemesi iskemik yarar sağlamadan kanamayı artırdı; ayrıca anjiyografi sonrasında hastaların bir kısmı CABG'ye yönlenir ya da AKS dışı bir tanı alır ve bu hastalarda güçlü P2Y12 yüklemesi cerrahiyi geciktirip kanamayı artırır. Bu nedenle ESC 2023, erken (<24 saat) invaziv strateji planlanan ve anatomisi bilinmeyen NSTE-AKS hastalarında rutin ön yüklemeyi önermez (III). Erken invaziv strateji beklenmiyorsa ve kanama riski yüksek değilse ön yükleme düşünülebilir (IIb); primer PCI planlanan STEMI'de de ön yükleme düşünülebilir (IIb). ISAR-REACT 5'te PCI'a giden AKS hastalarında prasugrel temelli strateji, tikagrelor temelli stratejiye göre ölüm/MI/inme bileşiğini azalttı; bu yüzden PCI yapılan NSTE-AKS'de prasugrel tercih edilebilir (IIa). Prasugrel: 60 mg yükleme, 10 mg/gün idame; ≥75 yaş ya da <60 kg'da idame 5 mg/gün; geçirilmiş inme/GİA'da kontrendike. Varsayılan DAPT süresi 12 aydır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Erken invaziv planlanan ve anatomisi bilinmeyen NSTE-AKS'de rutin ön yükleme önerilmez; CABG'ye yönlenecek hastada kanamayı artırır, iskemik yararı gösterilmemiştir.",
+        "B": "YANLIS — Prasugrel ön yüklemesi ACCOAST'ta iskemik yarar sağlamadan majör kanamayı artırdı; NSTE-AKS'de prasugrel anatomi bilindikten sonra, PCI kararıyla verilir.",
+        "C": "YANLIS — Rutin klopidogrel yüklemesi de ön yükleme kapsamındadır ve önerilmez; ayrıca güçlü ajanlar kontrendike değilken klopidogrel ilk tercih değildir.",
+        "D": "YANLIS — AKS'de aspirin + P2Y12 inhibitörü ile ikili antiplatelet tedavi standarttır; aspirin monoterapisi iskemik olayları artırır.",
+        "E": "DOGRU — Anatomi görülene dek ön yükleme yapılmaz; PCI yapılacaksa prasugrel tikagrelora tercih edilebilir ve varsayılan DAPT süresi 12 aydır."
+      },
+      "etiketler": [
+        "P2Y12 Ön Yükleme",
+        "Prasugrel",
+        "ISAR-REACT 5",
+        "ACCOAST",
+        "NSTE-AKS"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ESC 2023 AKS Kılavuzu · ISAR-REACT 5 · ACCOAST"
+    },
+    {
+      "id": "s10",
+      "metin": "57 yaşında erkek hasta, 2 saattir süren göğüs ağrısı ile PCI imkânı olmayan bir ilçe hastanesine başvuruyor. EKG'de V1–V5'te 4 mm ST yükselmesi saptanıyor (anterior STEMI). En yakın PCI merkezine beklenen transfer ile tel geçişi süresi **yaklaşık 150 dakika**. Kontrendikasyon olmadığından aspirin, klopidogrel 300 mg, enoksaparin ve tam doz tenekteplaz uygulanıyor.\n\nFibrinolitik bolusundan 75 dakika sonra:\n- Göğüs ağrısı sürüyor\n- En yüksek ST yükselmesindeki gerileme **%30**\n- KB 112/70 mmHg, nabız 104/dk\n\nBu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Tenekteplazın ikinci dozunu uygulayıp 60 dakika sonra yeniden değerlendirmek",
+        "B": "Tedaviyi sürdürüp 24. saatte rutin anjiyografi için sevk etmek",
+        "C": "Hemen PCI merkezine transfer edip kurtarıcı (rescue) PCI yapmak",
+        "D": "GP IIb/IIIa inhibitörü ekleyip yerel hastanede izlemek",
+        "E": "Yanıtı değerlendirmek için 6 saat bekleyip EKG'yi tekrarlamak"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Fibrinoliz sonrası 60–90. dakikada ST gerilemesi <%50 ise ya da iskemik ağrı/instabilite sürüyorsa fibrinoliz başarısızdır; derhal kurtarıcı PCI yapılır. Tekrar fibrinoliz yarar sağlamaz.",
+      "aciklama_detay": "Beklenen tanı→tel geçişi gecikmesi 120 dakikayı aşacaksa ve semptom süresi <12 saatse fibrinoliz seçilir; ESC 2023'e göre STEMI tanısından fibrinolitik bolusuna hedef ≤10 dakikadır. Fibrinoliz uygulanan her hasta, sonucundan bağımsız olarak PCI merkezine transfer edilir. Başarı 60–90. dakikada değerlendirilir: en belirgin ST yükselmesinin gerilemesi <%50 ise, iskemik ağrı sürüyorsa ya da hemodinamik veya elektriksel instabilite varsa fibrinoliz başarısız kabul edilir ve derhal kurtarıcı PCI endikedir (Sınıf I). Başarılı fibrinolizde ise rutin anjiyografi 2–24 saat içinde yapılır (farmako-invaziv strateji). Fibrinolize eşlik eden P2Y12 inhibitörü klopidogreldir; parenteral antikoagülan olarak enoksaparin tercih edilir. Tekrarlanan fibrinoliz kurtarıcı PCI'a üstünlük göstermemiş, kanamayı artırmıştır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tekrarlanan fibrinoliz, kurtarıcı PCI'a göre reperfüzyon yararı sağlamaz ve özellikle intrakraniyal kanama riskini artırır.",
+        "B": "YANLIS — 2–24 saatlik rutin anjiyografi fibrinolizi BAŞARILI olan hasta içindir; ağrısı süren ve ST gerilemesi <%50 olan hastada beklemek infarktı büyütür.",
+        "C": "DOGRU — ST gerilemesinin <%50 olması ve süren iskemik ağrı başarısız fibrinoliz demektir; derhal transfer ve kurtarıcı PCI önerilir.",
+        "D": "YANLIS — Tam doz fibrinolitik üzerine GP IIb/IIIa inhibitörü eklemek kanamayı belirgin artırır ve mekanik reperfüzyonun yerini tutmaz.",
+        "E": "YANLIS — Başarı 60–90. dakikada değerlendirilir; başarısızlık kanıtı varken beklemek miyokard kaybettirir."
+      },
+      "etiketler": [
+        "Fibrinoliz",
+        "Kurtarıcı PCI",
+        "Farmako-invaziv Strateji",
+        "STEMI"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ESC 2023 AKS Kılavuzu"
+    },
+    {
+      "id": "s11",
+      "metin": "81 yaşında kadın hasta, NSTEMI nedeniyle yapılan koroner anjiyografide sirkumfleks arterde tek damar hastalığı saptanıyor ve tek bir ilaç salınımlı stent (DES) ile başarılı PCI uygulanıyor. Atriyal fibrilasyon ya da başka bir oral antikoagülan endikasyonu yok.\n\nÖzgeçmiş ve tetkikler:\n- 4 ay önce kan transfüzyonu gerektiren ve hastaneye yatırılan peptik ülser kanaması\n- Hb 10.2 g/dL\n- eGFR 27 mL/dk/1.73 m²\n\nESC 2023 AKS Kılavuzu'na göre bu hastada en uygun antiplatelet tedavi planı hangisidir?",
+      "secenekler": {
+        "A": "PPI eşliğinde 1 ay aspirin + klopidogrel, sonra tek antiplatelet ajan",
+        "B": "12 ay aspirin + tikagrelor, ardından tikagrelor 2×60 mg ile uzatılmış tedavi",
+        "C": "12 ay aspirin + prasugrel 10 mg/gün",
+        "D": "12 ay aspirin + klopidogrel, ardından rivaroksaban 2×2.5 mg eklenmesi",
+        "E": "Aspirin başlamadan tam doz apiksaban + klopidogrel ikili yol tedavisi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "ARC-HBR ölçütlerini karşılayan hastada (yakın dönemde transfüzyon gerektiren kanama, Hb <11 g/dL, eGFR <30, yaş ≥75) DAPT 1 ayda kesilip tek antiplatelet ajanla devam edilmesi düşünülebilir; PPI eklenir.",
+      "aciklama_detay": "ESC 2023 AKS Kılavuzu'nda varsayılan DAPT süresi 12 aydır; kanama riski yüksek hastada süre kısaltılır. Yüksek kanama riski (HBR) ARC-HBR ölçütleri ya da PRECISE-DAPT skoru ile belirlenir. Bu hastada birden fazla majör ölçüt vardır: son 6 ayda hastaneye yatış/transfüzyon gerektiren spontan kanama, Hb <11 g/dL ve eGFR <30 mL/dk; ≥75 yaş da minör ölçüttür. HBR'de 1 aylık DAPT sonrasında aspirin ya da P2Y12 inhibitörü monoterapisi düşünülebilir (IIb); MASTER DAPT'ta bu yaklaşım iskemik olayları artırmadan kanamayı azalttı. Yüksek iskemik riski olmayan ve 3–6 ay olaysız geçen hastada da tek antiplatelet (tercihen P2Y12 inhibitörü) monoterapisine geçiş düşünülmelidir (IIa). DAPT alan ve GİS kanama riski yüksek hastada PPI önerilir. Güçlü P2Y12 inhibitörleri ve uzatılmış yoğun antitrombotik rejimler bu hastada kanama/iskemi dengesini bozar.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Birden çok majör HBR ölçütü olan hastada 1 aylık DAPT sonrası tek antiplatelet ajan ve PPI koruması en uygun dengedir.",
+        "B": "YANLIS — Uzatılmış tikagrelor (PEGASUS-TIMI 54) kanama riski düşük, iskemik riski yüksek hastalar içindir; yakın zamanda transfüzyon gerektiren kanaması olan hastada uygun değildir.",
+        "C": "YANLIS — Prasugrel ≥75 yaşta genellikle önerilmez (kullanılacaksa 5 mg); HBR'de 12 ay güçlü DAPT majör kanamayı artırır.",
+        "D": "YANLIS — Çok düşük doz rivaroksabanla ikili yol stratejisi yüksek iskemik ve DÜŞÜK kanama riskli hastada düşünülür; HBR'de uygun değildir.",
+        "E": "YANLIS — Hastanın oral antikoagülan endikasyonu yoktur; tam doz DOAC eklemek yarar sağlamadan kanamayı artırır."
+      },
+      "etiketler": [
+        "Yüksek Kanama Riski",
+        "ARC-HBR",
+        "DAPT Kısaltma",
+        "MASTER DAPT",
+        "PPI"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ESC 2023 AKS Kılavuzu · MASTER DAPT"
+    },
+    {
+      "id": "s12",
+      "metin": "41 yaşında kadın hasta, doğumdan 3 hafta sonra, şiddetli bir duygusal stresin ardından başlayan göğüs ağrısı ile başvuruyor. Kardiyovasküler risk faktörü yok. EKG'de anterior derivasyonlarda T dalga inversiyonu var; hs-cTnI yükselme dinamiği gösteriyor. Hemodinamik olarak stabil, göğüs ağrısı nitrat sonrası geçmiş, ritim sinüs.\n\nKoroner anjiyografi:\n- LAD orta-distal segmentte başlayıp damar sonuna uzanan **35 mm uzunluğunda, düzgün kenarlı, difüz daralma**; intimal flep ya da kontrast tutulumu yok\n- TIMI 3 akım; sol ana koroner ve diğer damarlar düzgün, ateroskleroz bulgusu yok\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Daralan segmente uzun ilaç salınımlı stent yerleştirip 12 ay ikili antiplatelet vermek",
+        "B": "Acil koroner bypass cerrahisine yönlendirmek",
+        "C": "Aterosklerotik AKS protokolüyle yüksek yoğunluklu statin, aspirin ve tikagrelor başlayıp 3 ay sonra elektif PCI planlamak",
+        "D": "Konservatif izlem, beta-bloker tedavisi ve ekstrakoroner arterlerin fibromüsküler displazi yönünden görüntülenmesi",
+        "E": "Damar içindeki pıhtıyı eritmek için intrakoroner alteplaz vermek"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Postpartum genç kadında aterosklerozsuz, uzun, düzgün difüz daralma Saw Tip 2 SCAD'dir. Stabil, iskemisi geçmiş ve TIMI 3 akımlı hastada konservatif izlem esastır; beta-bloker nüksü azaltır ve FMD taraması yapılır.",
+      "aciklama_detay": "Spontan koroner arter disseksiyonu, genç kadınlarda ve gebelikle ilişkili MI'da en sık nedenlerdendir. En sık anjiyografik görünüm Saw Tip 2'dir: intimal flep olmadan uzun (>20–30 mm), düzgün, difüz daralma; Tip 2B'de darlık damarın distal ucuna kadar uzanır. Tanı kuşkuluysa (özellikle aterosklerozu taklit eden Tip 3) intrakoroner görüntüleme düşünülür; ancak kılavuz tel ve görüntüleme kateteri disseksiyonu ilerletebilir. Lezyonların büyük çoğunluğu haftalar-aylar içinde kendiliğinden iyileşir. ESC 2023'e göre PCI yalnızca süren iskemi, geniş risk altındaki miyokard ve azalmış antegrad akım birlikteyse düşünülür; SCAD'de PCI'ın başarısızlık ve iyatrojenik disseksiyon oranı yüksektir. Beta-blokerler nüks riskini azaltır. Fibromüsküler displazi SCAD'li hastaların yarısından fazlasında bulunur ve beyin-pelvis arası BT ya da MR anjiyografi ile taranır. Ateroskleroz olmadığı için statinin rutin yeri yoktur; uzun süreli yoğun antitrombotik tedavi intramural hematomu büyütebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Stabil, akımı korunmuş SCAD'de stentleme gereksizdir; tel ve balon hematomu ilerletebilir, hematom rezorbe olunca stent malapozisyonda kalabilir.",
+        "B": "YANLIS — CABG, sol ana koroner tutulumu ya da PCI'ın başarısız olduğu süren iskemi gibi seçilmiş durumlar içindir; stabil hastada endikasyon yoktur.",
+        "C": "YANLIS — Aterosklerotik AKS protokolü SCAD'e uymaz: statinin rutin yeri yoktur, yoğun antitrombotik tedavi hematomu büyütebilir ve lezyon çoğunlukla kendiliğinden iyileştiğinden elektif PCI planlanmaz.",
+        "D": "DOGRU — Stabil SCAD'de konservatif izlem, beta-bloker ve FMD taraması önerilen yaklaşımdır.",
+        "E": "YANLIS — Lezyon trombüs değil intramural hematomdur; fibrinolitik hematomu büyütüp disseksiyonu ilerletebilir."
+      },
+      "etiketler": [
+        "SCAD",
+        "Saw Sınıflaması",
+        "Gebelikle İlişkili MI",
+        "Fibromüsküler Displazi",
+        "Beta-bloker"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ESC 2023 AKS Kılavuzu · Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s13",
+      "metin": "34 yaşında, 30 haftalık gebe kadın, 1 saattir süren göğüs ağrısı ile primer PCI yapılabilen bir merkeze başvuruyor. EKG'de D2, D3 ve aVF'de 3 mm ST yükselmesi saptanıyor. KB 118/72 mmHg, nabız 96/dk; obstetrik muayene ve fetal kalp atımı normal.\n\nBu hastanın yönetimi ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": {
+        "A": "Fetal radyasyon riski nedeniyle anjiyografiden kaçınılmalı, tenekteplaz ile fibrinoliz yapılıp anjiyografi doğum sonrasına bırakılmalıdır",
+        "B": "Radyal erişim ve abdominal korumayla primer PCI yapılmalı; UFH, düşük doz aspirin ve klopidogrel verilmelidir",
+        "C": "Primer PCI sonrası ikincil korunma için ramipril, prasugrel ve atenolol başlanmalıdır",
+        "D": "Önce acil sezaryenle doğum gerçekleştirilmeli, PCI doğumdan sonra yapılmalıdır",
+        "E": "PCI sırasında antikoagülan olarak apiksaban, sonrasında warfarin tercih edilmelidir"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Gebelikte STEMI'de ilk seçenek primer PCI'dır; anjiyografinin fetal dozu hasar eşiğinin çok altındadır. UFH, düşük doz aspirin ve klopidogrel tercih edilir; ACE inhibitörü, atenolol, DOAC ve warfarinden kaçınılır.",
+      "aciklama_detay": "Gebelikte AKS nadirdir; en sık neden SCAD'dir (özellikle üçüncü trimester ve postpartum), ardından ateroskleroz ve tromboemboli gelir. STEMI'de tanı ve tedavinin temeli primer PCI'dır; tanısal koroner anjiyografide fetal doz çok düşüktür ve radyal erişim, abdominal kalkan, kısa floroskopi süresiyle daha da azaltılır. Fibrinoliz plasental ayrılma ve maternal kanama riski nedeniyle ancak PCI yapılamıyorsa son seçenektir. İlaçlarda: düşük doz aspirin güvenlidir; P2Y12 inhibitörleri arasında en çok veri klopidogrel içindir; UFH ve LMWH plasentayı geçmez. ACE inhibitörü/ARB/MRA fetotoksiktir; atenolol fetal büyüme kısıtlılığına yol açtığından beta-1 selektif metoprolol tercih edilir. Doğum, obstetrik zorunluluk yoksa MI sonrası en az 2–3 hafta ertelenir ve çoğunlukla vajinal yol (erken epidural analjezi ile) seçilir; sezaryen obstetrik ya da ağır hemodinamik endikasyonla yapılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Anjiyografinin fetal dozu hasar eşiğinin çok altındadır; fibrinoliz gebelikte kanama ve plasental ayrılma riski nedeniyle yalnızca PCI imkânı yoksa düşünülür.",
+        "B": "DOGRU — Primer PCI, radyasyon koruma önlemleri ve gebelikte en güvenli antitrombotik seçimler (UFH, düşük doz aspirin, klopidogrel) doğru yaklaşımdır.",
+        "C": "YANLIS — ACE inhibitörleri gebelikte fetotoksiktir, atenolol fetal büyüme kısıtlılığı yapar ve prasugrel için gebelik verisi sınırlıdır.",
+        "D": "YANLIS — Stabil anne ve fetüste acil sezaryen maternal riski artırır ve reperfüzyonu geciktirir; doğum MI sonrası mümkünse 2–3 hafta ertelenir.",
+        "E": "YANLIS — DOAC'lar plasentayı geçer ve gebelikte kullanılmaz; warfarin teratojeniktir. Kateter laboratuvarında UFH tercih edilir."
+      },
+      "etiketler": [
+        "Gebelikte AKS",
+        "Primer PCI",
+        "Fetal Radyasyon",
+        "İlaç Güvenliği"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ESC 2023 AKS Kılavuzu · Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s14",
+      "metin": "66 yaşında erkek hasta, 30 saat geç başvurduğu ve reperfüzyon uygulanamayan inferoposterior STEMI nedeniyle koroner yoğun bakımda izleniyor. Yatışının 3. gününde ani başlayan şiddetli nefes darlığı gelişiyor.\n\nBulgular:\n- KB 84/50 mmHg, nabız 118/dk, SpO₂ %84\n- Her iki akciğerde yaygın raller\n- Apekste yumuşak, kısa sistolik üfürüm; tril yok\n- Ekokardiyografi: arka mitral yaprakçıkta flail hareket, şiddetli eksantrik mitral yetersizliği; perikardiyal efüzyon ve septal defekt yok\n\nEn olası tanı ve yönetim hangisidir?",
+      "secenekler": {
+        "A": "Anterolateral papiller kas yırtılması; diüretik ve vazodilatörle medikal izlem",
+        "B": "Ventriküler septal rüptür; perkütan kapatma için 2 hafta beklenmesi",
+        "C": "Sol ventrikül serbest duvar yırtılması; acil perikardiyosentez",
+        "D": "İskemik fonksiyonel mitral yetersizliği; yalnızca diüretik ve ACE inhibitörü",
+        "E": "Posteromedial papiller kas yırtılması; köprü destekle acil cerrahi"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "İnferior MI sonrası ilk günlerde ani akciğer ödemi, şok, yumuşak/kısa üfürüm ve ekoda flail yaprakçık = posteromedial papiller kas yırtılması. Tek kaynaklı (PDA) kanlanma nedeniyle posteromedial kas yırtılır; tedavi acil cerrahidir.",
+      "aciklama_detay": "Posteromedial papiller kas çoğunlukla yalnızca PDA'dan beslenir; anterolateral kas ise LAD ve LCx'ten çift kanlanır. Bu nedenle papiller kas yırtılması en sık inferior/inferoposterior MI'de, özellikle geç başvuran ya da reperfüze edilmemiş hastalarda görülür. Akut şiddetli mitral yetersizliğinde sol atriyum ile ventrikül arasındaki basınç hızla eşitlendiği için üfürüm yumuşak, kısa ya da hiç duyulmayabilir; üfürümün sessizliği yırtılmayı dışlamaz. Tanı ekokardiyografiyle konur. ESC 2023 AKS Kılavuzu mekanik komplikasyonlarda acil cerrahiyi önerir; bu sürede vazodilatör ve diüretikle ard yük azaltılır, gerekirse IABP ya da diğer mekanik dolaşım destekleriyle köprüleme yapılır. VSD'de tril ve sol-sağ şant, serbest duvar yırtılmasında ise tamponad ve elektromekanik ayrışma beklenir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Anterolateral kas LAD ve LCx'ten çift kanlandığı için daha nadir yırtılır; ayrıca yırtılmada medikal tedavi yalnızca köprüdür, cerrahisiz mortalite çok yüksektir.",
+        "B": "YANLIS — Ekoda septal defekt yoktur ve tril duyulmaz; şoktaki mekanik komplikasyonda beklemek de önerilmez.",
+        "C": "YANLIS — Perikardiyal efüzyon yoktur; serbest duvar yırtılması tamponad ve elektromekanik ayrışma ile gelir.",
+        "D": "YANLIS — Flail yaprakçık yapısal bir yırtılmayı gösterir; fonksiyonel mitral yetersizliği ani şoka ve flail harekete yol açmaz.",
+        "E": "DOGRU — İnferoposterior MI, flail yaprakçık ve akut şiddetli mitral yetersizliği posteromedial papiller kas yırtılmasını gösterir; köprü destekle acil cerrahi gerekir."
+      },
+      "etiketler": [
+        "Mekanik Komplikasyon",
+        "Papiller Kas Yırtılması",
+        "İnferior MI",
+        "Kardiyojenik Şok"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "ESC 2023 AKS Kılavuzu"
+    },
+    {
+      "id": "s15",
+      "metin": "57 yaşında erkek hasta, son 2 gündür eforla gelen ve 10–15 dakika süren göğüs ağrısı atakları nedeniyle başvuruyor; muayene sırasında ağrısız. Sigara içiyor ve hipertansif.\n\nTetkikler:\n- EKG (ağrısız dönem): V2–V3'te **derin, simetrik T dalga inversiyonu**; ST segmenti izoelektrik, prekordiyal R dalgaları korunmuş, patolojik Q dalgası yok\n- hs-cTnI: 0. saat 22 ng/L → 1. saat 25 ng/L (99. persentil 16 ng/L)\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Ağrısız olduğu için taburcu edip ayaktan efor testi planlamak",
+        "B": "Risk sınıflaması için aynı gün efor stres testi yapıp sonuca göre anjiyografi kararı vermek",
+        "C": "Yatırıp antitrombotik tedavi başlamak ve kısa sürede koroner anjiyografi yapmak",
+        "D": "Tam oklüzyon kabul edip fibrinolitik vermek",
+        "E": "Bulguları benign erken repolarizasyon varyantı kabul edip Holter ile izlemek"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Ağrısız dönemde V2–V3'te bifazik ya da derin simetrik T inversiyonu (Wellens) kritik proksimal LAD darlığını gösterir; stres testi tehlikelidir, hasta yatırılıp kısa sürede anjiyografiye alınır.",
+      "aciklama_detay": "Wellens paterni, proksimal LAD'deki kritik darlığın geçici olarak tıkanıp yeniden açıldığı (reperfüze) evreyi yansıtır. İki tipi vardır: Tip A'da V2–V3'te bifazik T (önce pozitif, sonra negatif), daha sık görülen Tip B'de derin simetrik T inversiyonu. Tipik olarak ağrısız dönemde görülür; ST segmenti izoelektrik ya da hafif yüksektir, R dalgası korunur, Q dalgası yoktur ve troponin normal ya da hafif yüksek olabilir. Hastaların önemli bir kısmı günler-haftalar içinde geniş anterior MI geçirir. Efor testi tıkanıklığı tetikleyebileceğinden yapılmaz. Dinamik ST/T değişiklikleri ESC 2023'te yüksek risk ölçütüdür; hasta yatırılır, antitrombotik tedavi verilir ve kısa sürede (tercihen 24 saat içinde) koroner anjiyografi yapılır. Damar o anda açık olduğu için fibrinolizin yeri yoktur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ağrısızlık yanıltıcıdır; Wellens paterni olan hastaların önemli kısmı yakın dönemde geniş anterior MI geçirir, ayaktan izlem uygun değildir.",
+        "B": "YANLIS — Kritik proksimal LAD darlığında efor testi akut tıkanıklığı ve MI'yi tetikleyebilir; kontrendikedir.",
+        "C": "DOGRU — Wellens yüksek riskli bir NSTE-AKS paternidir; yatış, antitrombotik tedavi ve erken invaziv anjiyografi gerekir.",
+        "D": "YANLIS — Wellens döneminde damar açıktır (reperfüze evre); fibrinoliz yarar sağlamadan kanama riski yaratır.",
+        "E": "YANLIS — Erken repolarizasyonda T dalgaları pozitiftir ve J noktası yüksektir; iskemik öyküyle birlikte derin simetrik T inversiyonu benign varyantla açıklanmaz."
+      },
+      "etiketler": [
+        "Wellens Sendromu",
+        "Proksimal LAD",
+        "NSTE-AKS",
+        "Stres Testi Kontrendikasyonu"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "ESC 2023 AKS Kılavuzu · Konu anlatımı (MediSea premium)"
     }
   ]
 }

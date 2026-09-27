@@ -277,6 +277,186 @@
       ],
       "zorluk": "zor",
       "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Subklinik Tiroid Hastalıkları"
+    },
+    {
+      "id": "s10",
+      "metin": "Otuz sekiz yaşında kadın, yorgunluk yakınması sırasında istenen tetkiklerde ilk kez TSH yüksekliği saptanıyor. Bilinen hastalığı ve ilaç kullanımı yok, gebelik planı yok; muayenede guatr yok.\n\nTetkikler:\nTSH: 7.2 mU/L (N: 0.4–4.0)\nsT4: 1.12 ng/dL (normal)\n\nBu aşamada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Subklinik hipotiroidi tanısı konmuştur; levotiroksin 1.6 µg/kg/gün tam dozla başlanmalıdır.",
+        "B": "TSH 10 mU/L'nin altında olduğundan tiroid açısından izlem gerekmez.",
+        "C": "Etiyoloji için tiroid sintigrafisi ve radyoaktif iyot tutulum testi yapılmalıdır.",
+        "D": "TSH, sT4 ile birlikte 1–3 ay sonra tekrarlanmalı ve anti-TPO bakılmalıdır; yükseklik kalıcı değilse tanı konmamalıdır.",
+        "E": "sT4 normal olduğundan TSH yüksekliği laboratuvar hatasıdır; tekrar ölçüm gerekmez."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Tek bir hafif TSH yüksekliği tanı için yetmez: TSH biyolojik olarak dalgalanır ve antikor negatif, TSH <10 olguların önemli kısmı kendiliğinden normale döner. Tanı, 1–3 ay arayla tekrarlanan ölçümle doğrulanır.",
+      "aciklama_detay": "TEMD 2025'e göre subklinik hipotiroidi tanısından önce TSH 1–3 ay arayla en az iki kez ölçülerek yüksekliğin kalıcı olduğu gösterilmelidir. Aynı kişide farklı zamanlarda ölçülen TSH'de 0.2–1.6 mU/L'lik oynama normal kabul edilir; TSH kış aylarında, VKİ >40 obezitede, TDHS'nin iyileşme fazında, tedavi edilmemiş adrenal yetmezlikte ya da makroTSH/heterofil antikor varlığında gerçek hipotiroidi olmadan yükselebilir. Anti-TPO hem etiyolojiyi (Hashimoto) gösterir hem de ilerleme riskini belirler: antikor pozitifliği ve TSH'nin 12–15 mU/L üzerinde olması aşikâr hipotiroidiye geçişi (yılda %2–4) hızlandırır; antikor negatif ve TSH <10 olanlarda TSH 1–2 yılda kendiliğinden normale dönebilir. Kalıcı yükseklik doğrulanırsa TSH 4.5–9.9 aralığında karar yaş, yakınma ve risk faktörüne göre bireyselleştirilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tek ölçümle tanı konmaz; ayrıca subklinik hipotiroidide tedavi gerekirse genç hastada tam replasmanın altındaki dozla (yaklaşık 1.0 µg/kg/gün) başlanır.",
+        "B": "YANLIS — TSH <10 olması izlem gereksinimini ortadan kaldırmaz; önce yükseklik doğrulanmalı, anti-TPO durumu öğrenilmelidir.",
+        "C": "YANLIS — Sintigrafi ve iyot tutulumu hipotiroidinin değerlendirilmesinde yer almaz; etiyoloji anti-TPO (gerekirse ultrasonografi) ile belirlenir.",
+        "D": "DOGRU — TSH'nin 1–3 ay sonra sT4 ile tekrarlanması ve anti-TPO bakılması TEMD önerisidir; kalıcı yükseklik doğrulanmadan tanı konmaz.",
+        "E": "YANLIS — Normal sT4 ile yüksek TSH subklinik hipotiroidinin tanımıdır, laboratuvar hatası değildir; doğrulama gerekir ama izlemden vazgeçilmez."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "subklinik hipotiroidizm",
+        "tanının doğrulanması",
+        "anti-TPO"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (Subklinik hipotiroidi)"
+    },
+    {
+      "id": "s11",
+      "metin": "Altmış yaşında erkek hasta, 3 hafta önce septik şok nedeniyle yoğun bakımda yatmış ve 5 gün dopamin infüzyonu almış. Serviste kliniği hızla düzeliyor. Tiroid hastalığı öyküsü yok, guatr yok, amiodaron ya da iyotlu kontrast almamış.\n\nYoğun bakımda: TSH 0.2 mU/L, sT4 0.78 ng/dL (hafif ↓), sT3 düşük\nŞimdi: TSH 13.8 mU/L ↑, sT4 0.92 ng/dL (normal), sT3 düşük-normal\nAnti-TPO: negatif\n\nEn uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "TSH ≥10 mU/L olduğundan Evre 2 subklinik hipotiroidi vardır; levotiroksin başlanmalıdır.",
+        "B": "Tablo tiroid dışı hastalık sendromunun iyileşme fazıyla uyumludur; levotiroksin başlanmamalı, testler 4–6 hafta sonra tekrarlanmalıdır.",
+        "C": "Dopamin kesilince ortaya çıkan primer hipotiroidi vardır; tam doz levotiroksin başlanmalıdır.",
+        "D": "TSH'nin yükselmesi TSH salgılayan hipofiz adenomunu düşündürür; hipofiz MRG istenmelidir.",
+        "E": "sT3 düşük olduğundan tabloya liyotironin (T3) replasmanı eklenmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Ağır hastalıktan çıkarken baskılanmış tiroid ekseni toparlanır ve TSH geçici olarak 20 mU/L'ye kadar yükselebilir. Bu, tek başına subklinik hipotiroidi değildir; tedavi etmeden 4–6 hafta sonra tekrar ölçülür.",
+      "aciklama_detay": "Tiroid dışı hastalık sendromunda (TDHS) akut fazda TSH düşük-normal, sT3 düşük, sT4 normal ya da hafif düşüktür; dopamin ve yüksek doz glukokortikoid TSH'yi ayrıca baskılar. Hasta iyileşirken hipotalamo-hipofizer eksen 'yeniden açılır' ve TSH geçici olarak referansın üstüne çıkabilir. TEMD 2025: TDHS'den çıkan hastada TSH'nin 20 mU/L'ye kadar yükselmesi toparlanmayı gösterebilir ve tek başına hipotiroidi demek değildir; tiroid hormonu ancak sT4 düşük, TSH ≥20 mU/L ve klinik şüphe varsa başlanır. Bu hastada sT4 normale dönmüş, TSH <20, anti-TPO negatif, guatr yok: iyileşme fazı. Testler hasta tamamen iyileştikten sonra (4–6 hafta) tekrarlanır; TSH yüksek kalırsa gerçek subklinik hipotiroidi olarak değerlendirilir. Ters yöndeki tuzak da akılda tutulmalıdır: dopamin gerçek hipotiroidisi olan hastada yüksek TSH'yi maskeleyebilir; bu yüzden karar tek ölçüme değil, seyre dayanır. TDHS'de tiroid hormonu verilmemesi önerilir (TEMD Grade 1B).",
+      "secenekAciklamalari": {
+        "A": "YANLIS — TSH ≥10 eşiği, yüksekliği doğrulanmış ve ağır hastalıktan bağımsız subklinik hipotiroidi için geçerlidir. İyileşme fazındaki geçici yükselme bu tanıyı koydurmaz.",
+        "B": "DOGRU — sT4 normal, TSH <20, anti-TPO negatif ve yakın zamanda ağır hastalık + dopamin: TDHS iyileşme fazı. Tedavisiz tekrar ölçüm uygundur.",
+        "C": "YANLIS — Dopamin kesilmesi gerçek hipotiroidiyi açığa çıkarabilir, ancak bu hastada sT4 normal ve antikor negatif; tanı için tekrar ölçüm gerekir. Tam doz LT4 60 yaşında ve doğrulanmamış tanıyla uygun değildir.",
+        "D": "YANLIS — TSH-oma'da sT4 yüksektir; burada sT4 normal ve TSH yükselmesi geçici toparlanmayla açıklanır.",
+        "E": "YANLIS — Düşük sT3 TDHS'nin beklenen bulgusudur (periferik dönüşüm azalması); T3 replasmanının yararı gösterilmemiştir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "tiroid dışı hastalık sendromu",
+        "iyileşme fazı",
+        "yalancı subklinik hipotiroidi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (Tiroid dışı hastalık sendromu)"
+    },
+    {
+      "id": "s12",
+      "metin": "Yetmiş dört yaşında erkek hasta; stabil anjina ve hipertansiyon nedeniyle izleniyor. Üç ay arayla yapılan iki ölçümde TSH yüksek bulunuyor:\n\nTSH: 12.1 ve 12.8 mU/L\nsT4: normalin alt sınırına yakın\nAnti-TPO: pozitif\n\nHafif yorgunluk dışında yakınması yok. TEMD 2025 Tiroid Kılavuzu'na göre en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "65 yaş üstünde subklinik hipotiroidi tedavi edilmez; yılda bir TSH izlemi yeterlidir.",
+        "B": "Tam replasman dozuyla (1.6 µg/kg/gün) başlanmalı ve TSH 0.5–2.5 mU/L hedeflenmelidir.",
+        "C": "Anti-TPO pozitifliği nedeniyle önce tiroid ince iğne aspirasyon biyopsisi yapılmalıdır.",
+        "D": "Levotiroksin yalnızca TSH 20 mU/L'yi aşarsa başlanmalıdır.",
+        "E": "Levotiroksin 25–50 µg/gün gibi düşük dozla başlanmalı, 6 haftada bir TSH'ye göre ayarlanmalı; bu yaşta hedef TSH yaklaşık 3–6 mU/L'dir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Doğrulanmış TSH ≥10 subklinik hipotiroidi yaştan bağımsız tedavi edilir; yaşlı ve koroner hastada LT4 25–50 µg ile başlanır, hedef TSH 65 yaş üstünde 3–6 mU/L'dir.",
+      "aciklama_detay": "TEMD 2025: TSH ≥10 mU/L olan subklinik hipotiroidilerin hepsi tedavi edilir; TSH 4.5–9.9 aralığında karar yakınma ve risk faktörüne göre verilir. Bu hastada yükseklik iki kez doğrulanmış, anti-TPO pozitif (aşikâr hipotiroidiye ilerleme riski yüksek) ve sT4 alt sınıra yakın. Yaşlıda ve kardiyovasküler öyküde LT4 25–50 µg/gün ile başlanır, doz TSH'ye bakılarak yaklaşık 6 haftada bir ayarlanır; genç Hashimoto hastasında ise yaklaşık 1.0 µg/kg/gün ile başlanabilir. Hedef TSH genç ve orta yaşta 0.5–2.5 mU/L iken 65 yaş üstünde 3–6 mU/L'dir; 80–85 yaşın üstünde TSH ≤10 mU/L yeterli sayılır. Aşırı replasman yaşlıda atriyal fibrilasyon, anjina ve kemik kaybı riski taşır. TSH ≥10 düzeyinde subklinik hipotiroidi; diyastolik disfonksiyon, dislipidemi ve kalp yetmezliği riskiyle ilişkilidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yaş, TSH 4.5–9.9 aralığındaki kararı etkiler; TSH ≥10 olduğunda tedavi yaştan bağımsız önerilir (en ileri yaş hariç).",
+        "B": "YANLIS — Koroner hastalığı olan 74 yaşındaki hastada tam dozla başlamak anjina ve aritmiyi tetikleyebilir; 0.5–2.5 hedefi genç ve orta yaş içindir.",
+        "C": "YANLIS — Anti-TPO pozitifliği biyopsi endikasyonu değildir; biyopsi nodülün ultrasonografik özelliklerine göre yapılır.",
+        "D": "YANLIS — 20 mU/L eşiği TDHS'nin iyileşme fazına özgüdür. Doğrulanmış TSH ≥10 subklinik hipotiroidide tedavi eşiği aşılmıştır.",
+        "E": "DOGRU — Doğrulanmış TSH ≥10, yaşlı ve koroner hasta: düşük dozla başla, 6 haftada bir titre et, hedef TSH yaklaşık 3–6."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "subklinik hipotiroidizm",
+        "yaşlı hasta",
+        "LT4 dozu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (Hipotiroidi; Subklinik hipotiroidi)"
+    },
+    {
+      "id": "s13",
+      "metin": "Yetmiş yaşında kadın, 8 hafta arayla iki ölçümde TSH baskılı bulunuyor. Levotiroksin, amiodaron, glukokortikoid ya da biyotin kullanımı yok; yakın zamanda iyotlu kontrast almamış. Muayenede tiroid nodüler ve hafif büyük; orbitopati yok. EKG sinüs ritminde.\n\nTetkikler:\nTSH: 0.05 ve 0.04 mU/L\nsT4 ve sT3: normal\n\nBu hastada bir sonraki en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "Etiyoloji için tiroid ultrasonografisiyle birlikte sintigrafi (Tc-99m ya da radyoaktif iyot tutulumu) yapılmalı, tedavi (ör. RAI) buna göre planlanmalıdır.",
+        "B": "sT4 ve sT3 normal olduğundan hasta ötiroiddir; tedavi ya da ek tetkik gerekmez.",
+        "C": "Fonksiyon durumuna bakılmaksızın bütün nodüllere ince iğne aspirasyon biyopsisi yapılmalıdır.",
+        "D": "Nodülleri küçültmek için levotiroksin supresyon tedavisi başlanmalıdır.",
+        "E": "Tablo sessiz tiroidittir; yalnızca beta-bloker verilip bir yıl sonra yeniden değerlendirilmelidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "65 yaş üstünde doğrulanmış subklinik hipertiroidi tedavi edilir; önce etiyoloji (toksik MNG/adenom, Graves, tiroidit) belirlenir. Nodüler guatrda sintigrafi hem otonom nodülü gösterir hem de biyopsi gereksinimini azaltır.",
+      "aciklama_detay": "Subklinik hipertiroidi tanısından önce TSH'yi baskılayan ilaçlar (dopamin, yüksek doz glukokortikoid, somatostatin analogları, beksaroten), ağır tiroid dışı hastalık, iyot yükü ve laboratuvar girişimleri (biyotin) dışlanmalı ve düşüklük tekrar ölçümle doğrulanmalıdır; bu hastada hepsi yapılmış. TEMD 2025: 65 yaşın üstünde subklinik hipertiroidi tedavi edilir; Grade 2'de (TSH <0.1) hastalık genellikle kalıcıdır, aşikâr hipertiroidiye ilerleme yılda %5–8'dir ve atriyal fibrilasyon ile kemik kaybı riski belirgindir. Tedaviyi seçmek için etiyoloji gerekir: yaşlı ve nodüler guatrlı kadında en olası neden toksik multinodüler guatr ya da toksik adenomdur. Sintigrafi sıcak (otonom) nodülleri gösterir; sıcak nodül malignite açısından düşük risklidir ve biyopsi gerektirmez, biyopsi soğuk/indetermine alanlardaki şüpheli nodüllere yapılır. Otonom nodüler hastalıkta RAI (ya da seçilmiş olguda cerrahi) kesin tedavidir; Graves'te ATİ de seçenektir, tiroiditte ise tablo geçicidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Doğrulanmış Grade 2 subklinik hipertiroidide, özellikle nodüler guatrda, etiyolojiyi sintigrafi belirler; tedavi buna göre seçilir.",
+        "B": "YANLIS — 'Subklinik' hastalık zararsız değildir; 65 yaş üstünde TSH <0.1 olan hastada AF, kalp yetmezliği ve kemik kaybı riski nedeniyle tedavi önerilir.",
+        "C": "YANLIS — Önce fonksiyon belirlenir; sıcak nodüller düşük risklidir ve biyopsi gerektirmez. Biyopsi kararı ultrasonografi ve sintigrafiyle birlikte verilir.",
+        "D": "YANLIS — Baskılı TSH'li hastaya levotiroksin vermek tirotoksikozu ağırlaştırır; nodüler guatrda LT4 süpresyonu zaten önerilmez.",
+        "E": "YANLIS — Sessiz tiroidit geçicidir; 8 hafta arayla süren baskılanma ve nodüler guatr otonom hastalığı düşündürür. Tiroidit ayrımı da sintigrafiyle (düşük tutulum) yapılır."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "subklinik hipertiroidi",
+        "toksik multinodüler guatr",
+        "sintigrafi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (Subklinik hipertiroidi); Ross DS. Subclinical hyperthyroidism in nonpregnant adults. UpToDate; son güncelleme 27 Oca 2026"
+    },
+    {
+      "id": "s14",
+      "metin": "Yetmiş iki yaşında kadın, 15 yıldır Hashimoto hipotiroidisi nedeniyle levotiroksin 125 µg/gün kullanıyor. Yeni başlayan çarpıntı nedeniyle çekilen EKG'de atriyal fibrilasyon saptanıyor. Son bir yılda 6 kg kilo vermiş; ilaç kullanımında değişiklik yok.\n\nTetkikler:\nTSH: 0.06 mU/L\nsT4: 1.72 ng/dL (N: 0.80–1.80)\nsT3: normal\n\nBu hastada tiroid açısından en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "sT4 referans aralığında olduğundan doz değiştirilmemelidir; AF tiroidle ilişkisizdir.",
+        "B": "Hashimoto zemininde endojen hipertiroidi eklenmiştir; metimazol başlanmalıdır.",
+        "C": "Tablo eksojen subklinik hipertiroididir; levotiroksin dozu azaltılmalı (ör. 100 µg/gün), 6–8 hafta sonra TSH bakılmalı ve yaşa uygun hedefe (yaklaşık 3–6 mU/L) ulaşılmalıdır.",
+        "D": "Levotiroksin kalıcı olarak kesilmelidir; Hashimoto'da ilaç ömür boyu gerekmez.",
+        "E": "Doz değişikliğinden önce tiroid sintigrafisi ile otonom nodül dışlanmalıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Subklinik hipertiroidinin en sık nedeni eksojendir. LT4 alan yaşlı hastada TSH <0.1 + yeni AF = aşırı replasman; doz azaltılır ve 65 yaş üstü hedefe (TSH 3–6) göre ayarlanır.",
+      "aciklama_detay": "Levotiroksin alan hastalarda TSH'nin baskılanması subklinik hipertiroidinin en sık nedenidir. TSH <0.1 mU/L düzeyinde, özellikle 65 yaş üstünde, atriyal fibrilasyon riski belirgin artar ve postmenopozal kadında kemik kaybı hızlanır; kilo kaybı da aşırı replasmanla uyumludur. Tedavi basittir: doz azaltılır (bu düzeyde yaklaşık %15–25, ör. 125 → 100 µg), 6–8 hafta sonra TSH yeniden ölçülür. TEMD 2025'e göre LT4 replasmanında TSH hedefi yaşa göre kademelidir: genç-orta yaşta 0.4–2.5, 65–70 yaş ve üstünde 3–6 mU/L, 80–85 yaş üstünde ≤10 mU/L. Yıllar içinde yaş ilerledikçe, kilo azaldıkça ya da emilimi artıran değişiklikler oldukça (ör. PPI kesilmesi) doz ihtiyacı düşebilir; bu yüzden yaşlı hastada TSH düzenli izlenmelidir. AF'nin kendi yönetimi (hız kontrolü, CHA₂DS₂-VASc'a göre antikoagülasyon) paralel yürütülür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — sT4'ün referans içinde olması aşırı replasmanı dışlamaz; TSH <0.1 dokuda tiroid hormonu fazlalığını gösterir ve AF ile ilişkilidir.",
+        "B": "YANLIS — LT4 alan hastada baskılı TSH'nin en olası açıklaması eksojen fazlalıktır. Önce doz azaltılır; TSH buna rağmen baskılı kalırsa endojen neden araştırılır.",
+        "C": "DOGRU — Eksojen subklinik hipertiroidi: LT4 dozu azaltılır, 6–8 hafta sonra TSH bakılır, hedef 65 yaş üstünde yaklaşık 3–6 mU/L.",
+        "D": "YANLIS — 15 yıllık Hashimoto hipotiroidisi kalıcıdır; ilacı kesmek aşikâr hipotiroidiye yol açar.",
+        "E": "YANLIS — Sintigrafi, doz ayarından sonra TSH baskılı kalırsa gündeme gelir; önce en olası ve düzeltilebilir neden olan aşırı doz düzeltilir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "eksojen subklinik hipertiroidi",
+        "atriyal fibrilasyon",
+        "LT4 doz azaltımı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (Hipotiroidi; Subklinik hipertiroidi)"
+    },
+    {
+      "id": "s15",
+      "metin": "Otuz üç yaşında kadın, 2 yıldır süren infertilite nedeniyle tüp bebek (IVF/ICSI) tedavisine hazırlanıyor. Adetleri düzenli, sistemik hastalığı yok.\n\nTetkikler (2 ay arayla iki ölçüm):\nTSH: 5.6 ve 5.9 mU/L\nsT4: normal\nAnti-TPO: pozitif\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "TSH 10 mU/L'nin altında olduğundan tedavi gerekmez; gebelik gerçekleşince TSH yeniden değerlendirilmelidir.",
+        "B": "Anti-TPO pozitifliği nedeniyle IVF öncesi prednizolon başlanmalıdır.",
+        "C": "Levotiroksin ancak embriyo transferinden sonra, gebelik testi pozitifleşince başlanmalıdır.",
+        "D": "Liyotironin (T3) ile TSH baskılanmalı, hedef TSH <0.1 mU/L olmalıdır.",
+        "E": "Levotiroksin başlanmalı; IVF ve gebelik öncesinde TSH <2.5 mU/L hedeflenmelidir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Yardımcı üreme tekniği uygulanacak subklinik hipotiroidili kadında LT4 başlanır, TSH gebelik öncesinde <2.5 mU/L'ye indirilir; gebe kalınca doz derhal artırılır.",
+      "aciklama_detay": "ATA 2017 gebelik kılavuzu, IVF ya da ICSI planlanan subklinik hipotiroidili kadınların levotiroksinle tedavi edilmesini ve TSH'nin 2.5 mU/L altında tutulmasını önerir. TEMD 2025 de ovulatuvar disfonksiyon ya da infertilitede TSH yorumunda ilk trimester aralığının (0.1–2.5 mU/L) kullanılmasını ve gebelik planlayan kadında hedef TSH'nin 0.4–2.5 mU/L olmasını önerir; TSH'yi aralığın alt yarısında tutmak, gebe kalındıktan ilk ölçüme kadar TSH'nin 2.5'i aşmasını önler. Anti-TPO pozitifliği ek bir nedendir: gebelikte hipotiroidi gelişme riski artar. Ayrım: TSH'si NORMAL olan, yalnızca anti-TPO pozitif ötiroid kadınlarda rutin LT4'ün canlı doğum oranını artırmadığı randomize çalışmalarda (TABLET, T4LIFE gibi) gösterilmiştir; bu hastada ise TSH doğrulanmış biçimde yüksektir. Kontrollü over stimülasyonu östrojeni ve TBG'yi artırarak TSH'yi yükseltebileceğinden stimülasyon sırasında ve sonrasında TSH izlenir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Gebelik planlayan ve yardımcı üreme tekniği uygulanacak kadında 10 mU/L eşiği kullanılmaz; gebelik öncesi TSH <2.5 hedeflenir.",
+        "B": "YANLIS — Tiroid otoimmünitesinde glukokortikoidin IVF sonuçlarını iyileştirdiği gösterilmemiştir; yan etki riski taşır.",
+        "C": "YANLIS — Transferden sonra başlamak erken gebeliği hedef dışı TSH ile karşılamak demektir; tedavi stimülasyondan önce başlanıp hedefe ulaşılmalıdır.",
+        "D": "YANLIS — Amaç TSH'yi baskılamak değil fizyolojik aralığa (<2.5) getirmektir. Gebelik planında tercih edilen ajan levotiroksindir.",
+        "E": "DOGRU — Yardımcı üreme tekniği öncesi subklinik hipotiroidide LT4 başlanır, TSH <2.5 mU/L hedeflenir."
+      },
+      "etiketler": [
+        "endokrinoloji",
+        "tiroid",
+        "subklinik hipotiroidizm",
+        "infertilite",
+        "gebelik planlaması"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Alexander et al. Thyroid 2017; TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (Subklinik hipotiroidi)"
     }
   ]
 }

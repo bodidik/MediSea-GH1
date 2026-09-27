@@ -335,6 +335,125 @@
       ],
       "zorluk": "zor",
       "kaynak": "ESC/HFA HFA-PEFF algoritması; ASE/EACVI diyastolik fonksiyon değerlendirme kılavuzu; H2FPEF (Mayo Clinic) skoru"
+    },
+    {
+      "id": "s12",
+      "metin": "74 yaşında kadın hasta, 1 yıldır giderek artan efor dispnesi (NYHA III) ve bacaklarda ödem nedeniyle izleniyor. Hipertansiyon ve evre 3b kronik böbrek hastalığı var; diyabeti yok. Furosemid 40 mg/gün, amlodipin 10 mg/gün ve kandesartan 16 mg/gün kullanıyor.\n\nTetkikler:\n- LVEF %58, LAVI 41 mL/m², ortalama E/e' 15\n- NT-proBNP 1250 pg/mL\n- eGFR 42 mL/dk/1.73 m², K 4.6 mEq/L\n- KB 132/78 mmHg, nabız 74/dk, sinüs ritmi\n\nESC 2023 Kalp Yetersizliği Kılavuzu odaklı güncellemesine göre, kardiyovasküler ölüm ya da kalp yetersizliği nedeniyle hastaneye yatış riskini azaltmak için bu hastaya eklenmesi Sınıf I öneri taşıyan tedavi hangisidir?",
+      "secenekler": {
+        "A": "Kandesartan yerine sakubitril/valsartan",
+        "B": "Spironolakton 25 mg/gün",
+        "C": "Bisoprolol 5 mg/gün",
+        "D": "İvabradin 2×5 mg",
+        "E": "Dapagliflozin 10 mg/gün"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "EMPEROR-Preserved ve DELIVER sonrasında ESC 2023 odaklı güncellemesi, LVEF >%40 kalp yetersizliğinde SGLT2 inhibitörünü (empagliflozin ya da dapagliflozin) KV ölüm veya KY yatışını azaltmak için Sınıf I olarak önerir; diyabet varlığı şart değildir.",
+      "aciklama_detay": "HFpEF'te uzun yıllar hiçbir ajan sert sonlanımları anlamlı azaltamamıştı. EMPEROR-Preserved (empagliflozin, LVEF >%40) ve DELIVER (dapagliflozin, LVEF >%40, iyileşmiş EF'li hastalar dahil) çalışmalarında SGLT2 inhibitörleri KV ölüm veya KY kötüleşmesi bileşik sonlanımını yaklaşık %20 azalttı; yarar esas olarak KY yatışlarındaki düşüşten geldi ve diyabetten bağımsızdı. ESC 2023 odaklı güncellemesi bu nedenle HFmrEF ve HFpEF'te empagliflozin ya da dapagliflozini Sınıf I olarak önerdi. eGFR 42 SGLT2 inhibitörü başlamaya engel değildir; başlangıçta beklenen hafif eGFR düşüşü ilacı kesme nedeni sayılmaz. Konjesyonu olan hastada diüretik semptom kontrolü için sürdürülür. PARAGON-HF (sakubitril/valsartan) ve TOPCAT (spironolakton) birincil sonlanımda anlamlı sonuç vermedi; bu ajanlar LVEF'si normalin alt sınırında olan seçilmiş hastalarda düşünülebilir ama Sınıf I değildir. Başka endikasyonu olmayan HFpEF hastasında beta-bloker ve ivabradinin kanıtlanmış yararı yoktur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PARAGON-HF'de sakubitril/valsartan birincil bileşik sonlanımı anlamlı azaltmadı; yarar düşük-normal LVEF'li hastalar ve kadınlarda alt grup düzeyinde kaldı, Sınıf I öneri yoktur.",
+        "B": "YANLIS — TOPCAT'te spironolakton tüm popülasyonda birincil sonlanımı azaltmadı (bölgesel farklılıklar tartışmalı); HFpEF'te Sınıf I önerisi yoktur, ayrıca eGFR 42 ve K 4.6 ile hiperkalemi riski hesaba katılmalıdır.",
+        "C": "YANLIS — Başka endikasyonu (AF, angina, geçirilmiş MI) olmayan HFpEF hastasında beta-blokerin yararı gösterilmemiştir; kronotropik yetersizliği artırıp efor kapasitesini düşürebilir.",
+        "D": "YANLIS — İvabradin HFrEF'te sinüs ritmi ve kalp hızı ≥70/dk koşuluyla kullanılır; HFpEF'te (EDIFY) yarar göstermemiştir.",
+        "E": "DOGRU — SGLT2 inhibitörü LVEF'den ve diyabetten bağımsız olarak HFpEF'te KV ölüm/KY yatışını azaltır ve Sınıf I öneri taşır."
+      },
+      "etiketler": [
+        "HFpEF Tedavisi",
+        "SGLT2 İnhibitörü",
+        "EMPEROR-Preserved",
+        "DELIVER",
+        "ESC 2023"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ESC 2023 Kalp Yetersizliği Kılavuzu Odaklı Güncellemesi · EMPEROR-Preserved · DELIVER · PARAGON-HF · TOPCAT"
+    },
+    {
+      "id": "s13",
+      "metin": "79 yaşında erkek hasta, 2 yıldır giderek artan efor dispnesi ve ödem nedeniyle HFpEF tanısıyla izleniyor. 8 yıl önce iki taraflı karpal tünel ameliyatı olmuş; son aylarda daha önce kullandığı antihipertansifler hipotansiyon nedeniyle bırakılmış.\n\nTetkikler:\n- EKG: ekstremite derivasyonlarında düşük voltaj, V1–V3'te psödoinfarkt paterni\n- Ekokardiyografi: LVEF %52, septum ve arka duvar 17 mm, GLS -%11 ve **apikal korunma** paterni\n- hs-cTnT persistan hafif yüksek, NT-proBNP 3400 pg/mL\n- Tc-99m PYP sintigrafisi: **Grade 3** miyokardiyal tutulum\n- Serum protein elektroforezi: monoklonal bant saptanmadı\n\nBu hastada ATTR kardiyomiyopati tanısını biyopsisiz koymadan önce yapılması gereken adım hangisidir?",
+      "secenekler": {
+        "A": "Endomiyokardiyal biyopsi; kardiyak amiloidoz tanısı ancak doku örneğiyle kesin olarak konur",
+        "B": "Ek test gerekmez; SPEP normal ve PYP Grade 3 olduğundan tafamidis hemen başlanır",
+        "C": "Serum ve idrar immünfiksasyon elektroforezi ile serum serbest hafif zincir analizi",
+        "D": "Kardiyak MR'da T1 haritalama; ECV >%40 ise tanı kesinleşir ve AL dışlanmış olur",
+        "E": "Abdominal yağ dokusu aspirasyonu; negatifse amiloidoz dışlanır"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Kemik sintigrafisinde Grade 2–3 tutulum, monoklonal protein serum/idrar immünfiksasyonu ve serbest hafif zincir analiziyle dışlanmışsa ATTR tanısını biyopsisiz koydurur. SPEP tek başına AL'yi dışlamaya yetmez.",
+      "aciklama_detay": "HFpEF olarak izlenen yaşlı hastalarda ATTR kardiyomiyopati sık atlanan bir nedendir; uyarıcı işaretler iki taraflı karpal tünel, lomber dar kanal, biseps tendon rüptürü, antihipertansiflere giderek artan intolerans, EKG voltajı ile duvar kalınlığı arasındaki uyumsuzluk, persistan troponin yüksekliği ve apikal korunmalı GLS'dir. Biyopsisiz tanı algoritmasında Tc-99m PYP/DPD/HMDP sintigrafisinde Grade 2–3 tutulum ATTR için çok özgüldür, ANCAK yalnızca monoklonal protein dışlandığında. AL amiloidoz da sintigrafide (genellikle düşük dereceli) tutulum gösterebilir ve AL hızla ilerleyen, acil hematolojik tedavi gerektiren bir hastalıktır; yanlışlıkla ATTR tanısı almak ölümcül gecikmeye yol açar. Bu yüzden serum ve idrar immünfiksasyonu ile serum serbest hafif zincir (kappa/lambda) oranı istenir; SPEP'in duyarlılığı yetersizdir. Monoklonal protein bulunursa doku biyopsisi (gerekirse endomiyokardiyal) ve amiloid tiplendirmesi şarttır. ATTR tanısı konunca TTR gen analiziyle yabanıl tip ve varyant ayrılır, ardından TTR stabilizatörü (tafamidis gibi) başlanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Monoklonal protein dışlanmış ve sintigrafi Grade 2–3 ise ATTR tanısı biyopsisiz konabilir; endomiyokardiyal biyopsi monoklonal protein varlığında ya da belirsiz tabloda gerekir.",
+        "B": "YANLIS — SPEP'in monoklonal proteini saptama duyarlılığı düşüktür; AL dışlanmadan ATTR tanısı konup tedavi başlanması AL tanısını ölümcül biçimde geciktirebilir.",
+        "C": "DOGRU — Serum/idrar immünfiksasyonu ve serbest hafif zincir analizi AL'yi dışlamak için gereklidir; ancak ondan sonra sintigrafi ATTR tanısı koydurur.",
+        "D": "YANLIS — Yüksek ECV amiloid infiltrasyonunu destekler ama AL ile ATTR'yi ayırmaz; tiplendirme yapmaz.",
+        "E": "YANLIS — Yağ dokusu aspirasyonunun ATTR'de (özellikle yabanıl tipte) duyarlılığı düşüktür; negatif sonuç amiloidozu dışlamaz."
+      },
+      "etiketler": [
+        "Kardiyak Amiloidoz",
+        "ATTR",
+        "Kemik Sintigrafisi",
+        "Hafif Zincir",
+        "HFpEF Etiyolojisi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Gillmore ve ark. 2016 (biyopsisiz ATTR tanı algoritması) · ESC 2021 kardiyak amiloidoz pozisyon bildirisi"
+    },
+    {
+      "id": "s14",
+      "metin": "71 yaşında kadın hasta, kalıcı atriyal fibrilasyon ve hipertansiyon öyküsüyle 6 aydır süren efor dispnesi nedeniyle başvuruyor. Muayenede hafif pretibial ödem var; ventrikül hızı kontrol altında (istirahatte 76/dk). Akciğer grafisi ve solunum fonksiyon testleri olağan.\n\nTetkikler:\n- LVEF %60, sol ventrikül duvar kalınlığı 12 mm\n- LAVI 46 mL/m², pik TR hızı 3.0 m/sn\n- NT-proBNP 480 pg/mL\n\nESC 2021 Kalp Yetersizliği Kılavuzu ölçütlerine göre bu hastanın değerlendirilmesi ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": {
+        "A": "AF'ye uyarlanmış NT-proBNP ve LAVI eşikleri aşıldığından bulgular HFpEF tanısını destekler",
+        "B": "AF natriüretik peptidi yükselttiği için NT-proBNP bu hastada tanısal amaçla hiç kullanılamaz",
+        "C": "NT-proBNP >900 pg/mL olmadıkça bu yaştaki hastada kalp yetersizliği tanısı konamaz",
+        "D": "AF'de sol atriyum zaten büyük olduğundan LAVI tanı ölçütü olarak kullanılamaz",
+        "E": "Tanı yalnızca istirahat ve egzersiz sağ kalp kateterizasyonuyla konabilir; eko ve NP bulguları yetersizdir"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "ESC 2021'e göre HFpEF: semptom/bulgu + LVEF ≥%50 + dolum basıncı artışının ya da diyastolik disfonksiyonun objektif kanıtı (NP artışı dahil). NT-proBNP eşiği sinüs ritminde >125, AF'de >365 pg/mL; LAVI eşiği sinüs ritminde >34, AF'de >40 mL/m².",
+      "aciklama_detay": "ESC 2021 kılavuzu HFpEF tanısını sadeleştirdi: kalp yetersizliği semptom ve bulguları, LVEF ≥%50 ve yapısal/fonksiyonel bozukluğun ya da artmış LV dolum basıncının objektif kanıtı. Bu kanıtlar arasında LV kütle indeksi, rölatif duvar kalınlığı, LAVI (>34 mL/m² sinüs ritminde, >40 mL/m² AF'de), istirahatte E/e' >9, pik TR hızı >2.8 m/sn (PASP >35 mmHg) ve natriüretik peptidler (NT-proBNP >125 pg/mL sinüs ritminde, >365 pg/mL AF'de; BNP >35 ve >105 pg/mL) yer alır. AF natriüretik peptidi ve sol atriyum boyutunu kendi başına artırdığı için eşikler yükseltilmiştir, ama ölçütler yok sayılmaz. Bu hastada NT-proBNP 480 (>365), LAVI 46 (>40) ve TR hızı 3.0 (>2.8) AF'ye uyarlanmış eşikleri aşar. Yaşa göre 450/900/1800 pg/mL eşikleri akut dispnede akut kalp yetersizliğini dahil etmek içindir; kronik ayaktan değerlendirmede kullanılmaz. Belirsiz olgularda HFA-PEFF/H2FPEF skorları, diyastolik stres ekosu ya da invaziv egzersiz hemodinamisi devreye girer; bu hastada tanı o basamağa gerek kalmadan desteklenmektedir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — AF'ye uyarlanmış eşikler (NT-proBNP >365 pg/mL, LAVI >40 mL/m²) aşılmıştır ve TR hızı da artmıştır; bulgular HFpEF tanısını destekler.",
+        "B": "YANLIS — AF NP'yi yükseltir ama NP kullanılmaya devam eder; yalnızca eşik yükseltilir (>365 pg/mL).",
+        "C": "YANLIS — 450/900/1800 pg/mL yaşa göre eşikleri akut dispnede akut KY'yi dahil etmek içindir; kronik HFpEF değerlendirmesinde eşik çok daha düşüktür.",
+        "D": "YANLIS — AF'de LAVI eşiği >40 mL/m²'ye yükseltilir; ölçüt kullanılmaya devam eder.",
+        "E": "YANLIS — İnvaziv egzersiz hemodinamisi ara olasılıklı ya da belirsiz olgular içindir; bu hastada invaziv olmayan bulgular tanıyı zaten desteklemektedir."
+      },
+      "etiketler": [
+        "HFpEF Tanı",
+        "Atriyal Fibrilasyon",
+        "NT-proBNP",
+        "LAVI",
+        "ESC 2021"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ESC 2021 Kalp Yetersizliği Kılavuzu"
+    },
+    {
+      "id": "s15",
+      "metin": "58 yaşında erkek hasta, 2 yıl önce idiyopatik dilate kardiyomiyopati tanısı aldığında LVEF %28 ölçülmüş. Sakubitril/valsartan, bisoprolol, spironolakton ve dapagliflozin ile izleniyor; 18 aydır NYHA I, KY nedeniyle yatışı yok.\n\nSon değerlendirme:\n- Ekokardiyografi: **LVEF %56**, sol ventrikül boyutları normale yakın\n- NT-proBNP 110 pg/mL\n\nHasta 'kalbim düzeldi' diyerek ilaçlarını bırakmak istiyor. Bu hastanın sınıflandırılması ve yönetimi ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": {
+        "A": "LVEF ≥%50 olduğundan artık HFpEF olarak sınıflanır ve yalnızca SGLT2 inhibitörü sürdürülür",
+        "B": "Miyokardiyal iyileşme tamamlandığı için tedavi 3 ay içinde kademeli olarak tamamen kesilebilir",
+        "C": "Önce beta-bloker kesilmeli, 6 ay sonra LVEF korunuyorsa diğer ilaçlar da bırakılmalıdır",
+        "D": "Hasta HFimpEF grubundadır; nüks riski nedeniyle GDMT sürdürülmelidir",
+        "E": "LVEF normale döndüğü için KY tanısı silinir ve kardiyoloji izlemine gerek kalmaz"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Başlangıçta LVEF ≤%40 olup tedaviyle ≥10 puan artarak %40'ın üzerine çıkan hasta HFimpEF'tir, HFpEF değildir. TRED-HF'de tedavisi kesilen iyileşmiş DKMP hastalarının %40'tan fazlasında 6 ayda nüks gelişti; GDMT sürdürülür.",
+      "aciklama_detay": "Kalp yetersizliğinin evrensel tanımı (2021) iyileşmiş EF'li KY'yi (HFimpEF) ayrı bir grup olarak tanımlar: başlangıç LVEF ≤%40, izlemde başlangıca göre ≥10 puan artış ve ikinci ölçümde LVEF >%40. Bu hastalar LVEF'si %50'nin üzerine çıksa bile HFpEF'e yeniden sınıflanmaz; patofizyolojileri, prognozları ve tedavi gereksinimleri farklıdır — iyileşme çoğunlukla remisyondur, kür değildir. TRED-HF çalışmasında iyileşmiş dilate kardiyomiyopatili hastalarda tedavi kademeli olarak kesildiğinde 6 ay içinde hastaların %40'tan fazlasında LVEF düşüşü, LV genişlemesi ya da NT-proBNP artışıyla nüks gelişti. Bu nedenle ACC/AHA/HFSA 2022 kılavuzu HFimpEF'te GDMT'nin sürdürülmesini önerir. NT-proBNP ve ekokardiyografiyle düzenli izlem devam eder, nüks erken fark edilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Başlangıçta LVEF ≤%40 olan ve tedaviyle iyileşen hasta HFimpEF'tir; HFpEF'e yeniden sınıflanmaz ve tam GDMT'yi sürdürür.",
+        "B": "YANLIS — TRED-HF'de tedavinin kademeli kesilmesi, iyileşmiş DKMP hastalarının %40'tan fazlasında 6 ay içinde nükse yol açtı.",
+        "C": "YANLIS — Tek tek kesme stratejisinin güvenli olduğu gösterilmemiştir; beta-bloker kesilmesi de nüksü tetikleyebilir.",
+        "D": "DOGRU — HFimpEF'te iyileşme çoğunlukla remisyondur; GDMT sürdürülür ve hasta düzenli izlenir.",
+        "E": "YANLIS — LVEF'nin normalleşmesi KY'nin ortadan kalktığı anlamına gelmez; nüks riski nedeniyle izlem sürer."
+      },
+      "etiketler": [
+        "HFimpEF",
+        "TRED-HF",
+        "LVEF Sınıflaması",
+        "GDMT"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Kalp yetersizliğinin evrensel tanımı (2021) · TRED-HF · ACC/AHA/HFSA 2022 Kalp Yetersizliği Kılavuzu"
     }
   ]
 }

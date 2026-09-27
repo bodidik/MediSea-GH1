@@ -333,6 +333,126 @@
       ],
       "zorluk": "zor",
       "kaynak": "UpToDate — Lab Interpretation: Low TSH and high free T4 in adults; High free T4 in adults"
+    },
+    {
+      "id": "s12",
+      "metin": "Otuz bir yaşında kadın hasta, 4 yıldır Hashimoto tiroiditi nedeniyle levotiroksin 100 µg/gün kullanıyor. Üç ay önceki kontrolünde TSH 1.6 mU/L imiş. Evde yaptığı gebelik testi pozitif çıkmış; son adet tarihine göre 5 haftalık gebe. Yakınması yok.\n\nTetkikler:\nβ-hCG: pozitif\nTSH ve sT4: gönderildi, sonuç 2 gün sonra çıkacak\n\nAmerikan Tiroid Derneği (ATA) 2017 gebelik kılavuzuna göre bu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Doz değiştirilmez; ilk trimester sonunda (12. hafta) TSH ölçülüp gerekirse ayarlanır.",
+        "B": "Organogenez tamamlanana kadar levotiroksine ara verilir, 14. haftada yeniden başlanır.",
+        "C": "Doz beklemeden yaklaşık %25–30 artırılır (haftada iki ek tablet); TSH ilk yarıda 4 haftada bir izlenir.",
+        "D": "Fetal beyin gelişimi için T3 gerektiğinden levotiroksin + liotironin kombinasyonuna geçilir.",
+        "E": "Doz iki katına çıkarılarak TSH <0.1 mU/L düzeyine baskılanır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Levotiroksin kullanan kadında gebelik doğrulanınca doz beklemeden ~%20–30 artırılır (haftada 7 yerine 9 tablet pratik yoldur); TSH 20. haftaya kadar 4 haftada bir bakılır, hedef trimestere özgü aralığın alt yarısıdır.",
+      "aciklama_detay": "Gebelikte tiroksin gereksinimi ilk haftalardan itibaren artar: östrojen etkisiyle TBG yükselir, dağılım hacmi büyür, plasentadaki tip 3 deiyodinaz T4'ü yıkar ve fetüse transplasental T4 geçişi olur. Fetal tiroid ancak 12. hafta civarında hormon üretmeye başladığından ilk trimesterde fetal beyin tamamen annenin T4'üne bağımlıdır; bu dönemdeki hipotiroksinemi nörokognitif gelişim ve gebelik kaybı riskiyle ilişkilidir. Rezervi sınırlı olan Hashimoto hastası bu artışı kendi bezinden karşılayamaz. ATA 2017 kılavuzu bu nedenle gebelik doğrulanır doğrulanmaz dozun yaklaşık %20–30 artırılmasını önerir; en pratik yol haftada iki ek günlük doz almaktır. TSH, gebeliğin ilk yarısında 4 haftada bir, sonra en az bir kez 30. hafta civarında ölçülür; hedef trimestere özgü referans aralığın alt yarısıdır (özgün aralık yoksa <2.5 mU/L). Doğumdan sonra doz gebelik öncesi düzeye döndürülür ve 6 haftada TSH bakılır. Fetal beyin, annenin T4'ünü yerel tip 2 deiyodinazla T3'e çevirerek kullanır; bu yüzden T3 içeren preparatlar gebelikte önerilmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İlk trimester fetüsün tamamen maternal T4'e bağımlı olduğu dönemdir; 12. haftayı beklemek bu kritik pencereyi hipotiroksinemiyle geçirme riskidir.",
+        "B": "YANLIS — Levotiroksin teratojenik değildir; kesmek ilk trimesterde maternal ve fetal hipotiroksinemiye yol açar.",
+        "C": "DOGRU — Doğrulanan gebelikte beklemeden %25–30 doz artışı ve 4 haftalık TSH izlemi ATA 2017 önerisidir.",
+        "D": "YANLIS — Fetal beyin annenin T4'ünü kullanır; T3 plasentayı yeterince geçmez ve kombinasyon gebelikte önerilmez.",
+        "E": "YANLIS — Hedef ötiroidizmdir (trimestere özgü aralığın alt yarısı); baskılanmış TSH iyatrojenik tirotoksikoz demektir."
+      },
+      "etiketler": [
+        "Gebelik",
+        "Levotiroksin Doz Artışı",
+        "Hashimoto",
+        "Maternal Hipotiroksinemi",
+        "TSH İzlemi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ATA 2017 Gebelik ve Doğum Sonrası Tiroid Hastalıkları Kılavuzu (Alexander ve ark. Thyroid 2017)"
+    },
+    {
+      "id": "s13",
+      "metin": "Otuz altı yaşında kadın hasta, 2 aydır halsizlik, iştahsızlık, bulantı, 5 kg kilo kaybı ve ayağa kalkınca baş dönmesi yakınmasıyla başvuruyor. Fizik muayenede avuç içi çizgilerinde ve dişetlerinde koyulaşma var; tiroid hafif büyük, lastik kıvamında.\n\nKB: 92/58 mmHg (ayakta 78/50 mmHg), nabız: 104/dk\n\nTetkikler:\nTSH: 14.8 mU/L ↑\nsT4: 0.72 ng/dL ↓ (N: 0.8–1.8)\nAnti-TPO: 860 IU/mL ↑\nNa⁺: 129 mEq/L, K⁺: 5.6 mEq/L\nAçlık glukozu: 68 mg/dL\nKreatinin: 1.1 mg/dL\n\nBu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Kortizol ve ACTH için kan alınıp sonuç beklenmeden hidrokortizon başlanmalı; levotiroksin sonra eklenmelidir.",
+        "B": "Levotiroksin tam replasman dozunda hemen başlanmalıdır; hiponatremi ve hipotansiyon hipotiroidiye bağlıdır ve düzelecektir.",
+        "C": "Levotiroksin düşük dozla başlanmalı, TSH normalleşince adrenal eksen değerlendirilmelidir.",
+        "D": "Hiperkalemiyi düzeltmek için yalnızca fludrokortizon başlanmalı, ardından levotiroksin eklenmelidir.",
+        "E": "Tanıyı doğrulamak için önce tiroid ultrasonografisi ve ince iğne aspirasyonu yapılmalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Hashimoto + hiperpigmentasyon, hipotansiyon, hiponatremi, hiperkalemi, hipoglisemi = otoimmün poliglandüler sendrom tip 2 (Addison eşlik ediyor). Levotiroksin kortizol yıkımını hızlandırıp adrenal krizi tetikleyebileceğinden önce glukokortikoid verilir.",
+      "aciklama_detay": "Otoimmün poliglandüler sendrom tip 2 (Schmidt sendromu), Addison hastalığının otoimmün tiroid hastalığı ve/veya tip 1 diyabetle birlikteliğidir. Bu hastada deri-mukoza hiperpigmentasyonu (ACTH yüksekliği), ortostatik hipotansiyon, hiponatremi, hiperkalemi (mineralokortikoid eksikliği) ve hipoglisemi primer adrenal yetmezliği düşündürür. Levotiroksin metabolizmayı ve kortizolün karaciğerde yıkımını artırır; tanınmamış adrenal yetmezlikte önce tiroid hormonu verilmesi adrenal krizi başlatabilir. Doğru sıra: kortizol ve ACTH için kan alınır, sonuç beklenmeden hidrokortizon başlanır (hemodinamik bozukluk varsa IV stres dozu ve serum fizyolojik), mineralokortikoid eksikliği kesinleşince fludrokortizon eklenir, glukokortikoid sağlandıktan sonra levotiroksin başlanır. İnci: adrenal yetmezliğin kendisi TSH'yi hafifçe (çoğunlukla <10 mU/L) yükseltebilir ve glukokortikoid replasmanıyla düzelebilir; bu hastada sT4 düşük ve anti-TPO yüksek olduğundan gerçek hipotiroidi de vardır, ancak tedavi sırası değişmez.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Önce glukokortikoid, sonra levotiroksin; tanı için kan örneği tedaviyi geciktirmeden alınır.",
+        "B": "YANLIS — Hiperkalemi, hiperpigmentasyon ve hipoglisemi hipotiroidiyle açıklanamaz; glukokortikoidsiz levotiroksin adrenal kriz riskidir.",
+        "C": "YANLIS — Doz düşük olsa da sıra yanlıştır; adrenal değerlendirmeyi haftalarca ertelemek ölümcül olabilir.",
+        "D": "YANLIS — Fludrokortizon glukokortikoid eksikliğini karşılamaz; primer adrenal yetmezlikte önce hidrokortizon gerekir.",
+        "E": "YANLIS — Hashimoto tanısı klinik, anti-TPO ve TSH ile konmuştur; İİAB endikasyonu yoktur ve öncelik adrenal yetmezliktir."
+      },
+      "etiketler": [
+        "Poliglandüler Sendrom Tip 2",
+        "Addison",
+        "Hashimoto",
+        "Adrenal Kriz",
+        "Tedavi Sırası"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Endocrine Society 2016 Primer Adrenal Yetmezlik Kılavuzu (Bornstein ve ark.); Chaker ve ark. Lancet 2017"
+    },
+    {
+      "id": "s14",
+      "metin": "Yetmiş dokuz yaşında kadın hasta, bakımevinden uykuya meyil ve uyandırılamama nedeniyle getiriliyor. Bilinen Hashimoto tiroiditi var; 6 aydır levotiroksinini almadığı öğreniliyor. Son 3 gündür öksürüğü varmış.\n\nBulgular:\nRektal ısı: 33.9 °C, nabız: 46/dk, KB: 88/50 mmHg, solunum sayısı: 9/dk\nGlasgow koma skalası: 9\nYüzde ve göz kapaklarında ödem, makroglossi, derin tendon reflekslerinde gevşeme fazı uzamış\n\nTetkikler:\nTSH: 68 mU/L, sT4: <0.3 ng/dL\nNa⁺: 124 mEq/L, glukoz: 64 mg/dL\nArter kan gazı: pH 7.26, pCO₂ 64 mmHg\nAkciğer grafisi: sağ alt zonda konsolidasyon\nKortizol: gönderildi\n\nHasta entübe edildi. Tiroid ve adrenal yönünden en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Oral levotiroksin 25 µg/gün; yaşlı hastada kardiyak risk nedeniyle düşük dozla başlanıp yavaşça artırılır.",
+        "B": "Yalnızca yüksek doz IV liotironin; miksödem komasında T4 periferde T3'e hiç dönüşmediği için levotiroksin verilmez.",
+        "C": "Önce ısıtıcı battaniyeyle aktif dış ısıtma yapılır; levotiroksin vücut ısısı normale dönünce başlanır.",
+        "D": "Sodyumu 24 saatte 12 mEq/L yükseltecek şekilde %3 NaCl verilir; levotiroksin sodyum düzeldikten sonra başlanır.",
+        "E": "IV hidrokortizon ile birlikte IV levotiroksin yüklemesi (200–400 µg) ve günlük IV idame; pnömoni tedavisi."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Miksödem koması: IV levotiroksin yüklemesi (200–400 µg; küçük yapılı, yaşlı ya da koroner hastada alt uç) + adrenal yetmezlik dışlanana kadar stres dozu hidrokortizon + destek tedavisi + tetikleyicinin (burada pnömoni) tedavisi.",
+      "aciklama_detay": "Miksödem koması, tedavisiz ya da tedavisi kesilmiş hipotiroidinin bir tetikleyiciyle (enfeksiyon, soğuk, sedatif, cerrahi) dekompanse olmasıdır; mortalitesi yüksektir. Temel bulgular bilinç bozukluğu, hipotermi, bradikardi, hipoventilasyona bağlı hiperkapni, hiponatremi ve hipoglisemidir. ATA 2014 hipotiroidi kılavuzuna göre tedavi IV levotiroksinle yapılır: 200–400 µg yükleme, ardından günlük IV idame (oral dozun yaklaşık %75'i). Yükleme dozu küçük yapılı, yaşlı ya da koroner hastalıklı hastada alt uçtan seçilir, ancak oral düşük doz titrasyon kronik hipotiroidinin yaklaşımıdır, komanın değil. Eşlik eden adrenal yetmezlik (otoimmün ya da hipofizer) dışlanana kadar hidrokortizon stres dozu levotiroksinden önce ya da birlikte verilir; levotiroksin kortizol yıkımını artırır. IV liotironin bazı merkezlerde düşük dozda eklenebilir, ancak tek başına yüksek doz T3 aritmi ve miyokard iskemisi riski taşır. Isıtma pasif olmalıdır: aktif dış ısıtma periferik vazodilatasyonla kollapsa yol açabilir. Hiponatremi çoğunlukla levotiroksin ve sıvı kısıtlamasıyla düzelir; hipertonik salin yalnızca ağır semptomlu hiponatremide, düzeltme sınırları gözetilerek kullanılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Oral düşük doz titrasyon kronik hipotiroidide uygundur; miksödem komasında emilim güvenilmezdir ve gecikme ölümcüldür.",
+        "B": "YANLIS — T4'ün T3'e dönüşümü azalır ama durmaz; standart tedavi IV levotiroksindir, tek başına yüksek doz T3 aritmi ve iskemi riski taşır.",
+        "C": "YANLIS — Aktif dış ısıtma vazodilatasyon ve kollapsa yol açabilir; ısıtma pasif yapılır ve hormon tedavisi ertelenmez.",
+        "D": "YANLIS — 24 saatte 12 mEq/L osmotik demiyelinizasyon riski taşır; hiponatremi hormon tedavisiyle düzelir, levotiroksin ertelenmez.",
+        "E": "DOGRU — IV levotiroksin yüklemesi + stres dozu hidrokortizon + tetikleyicinin tedavisi."
+      },
+      "etiketler": [
+        "Miksödem Koması",
+        "IV Levotiroksin",
+        "Hidrokortizon",
+        "Hipotermi",
+        "Hashimoto"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ATA 2014 Hipotiroidi Tedavi Kılavuzu (Jonklaas ve ark. Thyroid 2014)"
+    },
+    {
+      "id": "s15",
+      "metin": "Kırk sekiz yaşında kadın hasta, 3 haftadır dalgalanan konfüzyon, ellerde tremor, miyoklonik sıçramalar ve bir kez jeneralize tonik-klonik nöbet nedeniyle yatırılıyor. Sekiz yıldır Hashimoto tiroiditi nedeniyle levotiroksin 75 µg/gün kullanıyor. Ateşi yok.\n\nTetkikler:\nTSH: 2.3 mU/L, sT4: 1.2 ng/dL\nAnti-TPO: 3100 IU/mL ↑\nBOS: hücre 3/mm³, protein 68 mg/dL (hafif ↑), glukoz normal\nBOS HSV-1/2 PCR: negatif (başvurunun 5. gününde tekrarı da negatif)\nSerum ve BOS nöronal antikor paneli (NMDA reseptörü, LGI1, CASPR2, GABA-B dahil): negatif\nKraniyal MRG: normal\nEEG: diffüz yavaşlama, epileptiform odak yok\nToksik-metabolik tarama, vitamin B12 ve amonyak: normal\n\nBu hasta için en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Levotiroksin dozu artırılmalı; tablo beyin dokusundaki hipotiroidiye bağlıdır.",
+        "B": "Birinci basamak olarak plazmaferez yapılmalı; glukokortikoid yalnızca plazmaferez yanıtsızlığında düşünülmelidir.",
+        "C": "PCR negatifliği HSV ensefalitini dışlamadığı için 21 günlük tam doz asiklovir verilmelidir.",
+        "D": "Yüksek doz glukokortikoid (ör. IV metilprednizolon 3–5 gün, ardından oral azaltma) başlanmalıdır; belirgin yanıt tanıyı destekler.",
+        "E": "Anti-TPO titresi ensefalopatinin şiddetini belirlediği için titreyi düşürmek amacıyla selenyum başlanmalıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Ötiroid Hashimoto hastasında açıklanamayan ensefalopati + çok yüksek anti-TPO + enfeksiyöz, otoimmün ensefalit antikoru ve yapısal nedenlerin dışlanması = otoimmün tiroiditle ilişkili steroide yanıtlı ensefalopati (SREAT). Tedavi yüksek doz glukokortikoiddir.",
+      "aciklama_detay": "Hashimoto ensefalopatisi (SREAT), tiroid fonksiyonundan bağımsız gelişen, konfüzyon, nöbet, miyoklonus, tremor, inme benzeri ataklar ya da psikozla seyreden nadir bir ensefalopatidir. Tanı dışlama tanısıdır: ötiroidizm ya da hafif hipotiroidi, yüksek tiroid otoantikorları, normal ya da nonspesifik MRG, BOS'ta hafif protein artışı ve iyi tanımlanmış nöronal antikorların, enfeksiyonun ve metabolik nedenlerin yokluğu (Graus ve ark. 2016 otoimmün ensefalit yaklaşımındaki ölçütler). Anti-TPO patojenik değildir, bir belirteçtir; titresi klinik şiddetle korele değildir ve sağlıklı bireylerin %10'undan fazlasında pozitiftir; anti-TPO yüksekliğini tek başına tanı saymak en sık hatadır. Tedavi yüksek doz glukokortikoiddir (IV metilprednizolon, ardından aylar içinde azaltılan oral prednizolon); çoğu hasta belirgin yanıt verir. Glukokortikoid yanıtsızlığında ya da bağımlılıkta IVIG, plazmaferez veya steroid koruyucu immünsüpresifler (azatiyoprin, mikofenolat, rituksimab) eklenir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Hasta ötiroiddir (TSH ve sT4 normal); ensefalopati tiroid hormon düzeyinden bağımsızdır.",
+        "B": "YANLIS — Plazmaferez glukokortikoide dirençli ya da bağımlı olgularda ikinci basamaktır.",
+        "C": "YANLIS — Ateşsiz, BOS hücresi normal, MRG normal ve tekrar PCR'ı negatif hastada HSV ensefaliti olası değildir; tanı zaten dışlanmıştır.",
+        "D": "DOGRU — SREAT'te birinci basamak yüksek doz glukokortikoiddir; yanıt tanıyı destekler.",
+        "E": "YANLIS — Anti-TPO patojenik değildir ve titresi şiddetle korele değildir; selenyumun ensefalopatide yeri yoktur."
+      },
+      "etiketler": [
+        "Hashimoto Ensefalopatisi",
+        "SREAT",
+        "Glukokortikoid",
+        "Anti-TPO",
+        "Dışlama Tanısı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Graus ve ark. Lancet Neurol 2016 (otoimmün ensefalit tanı yaklaşımı); Konu anlatımı (MediSea premium)"
     }
   ]
 }

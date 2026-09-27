@@ -241,6 +241,214 @@
       ],
       "zorluk": "zor",
       "kaynak": "UpToDate — Lab Interpretation: High free T4 in adults; Abnormal thyroid profile: Low TSH and high free T4 in adults"
+    },
+    {
+      "id": "s9",
+      "metin": "Yetmiş altı yaşında erkek hasta; 2 ay önce görme alanı defekti nedeniyle opere edilen fonksiyonsuz hipofiz makroadenomu, 2 yıl önce stent takılan koroner arter hastalığı ve paroksismal atriyal fibrilasyon öyküsü var. Ameliyat sonrası sabah kortizolü düşük bulunarak hidrokortizon 15 mg/gün (sabah 10 mg, akşamüstü 5 mg) başlanmış; hasta klinik olarak stabil.\n\nKontrol tetkikleri:\nsT4: 0.58 ng/dL (N: 0.80–1.80) ↓\nTSH: 0.9 mU/L\nVücut ağırlığı: 80 kg\n\nBu hastada levotiroksin tedavisi için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tam replasman dozuyla (1.6 µg/kg/gün ≈ 125 µg) başlanmalı; TSH <0.1 mU/L'ye inince doz yeterli kabul edilmelidir.",
+        "B": "Düşük dozla (yaklaşık 0.25–0.5 µg/kg/gün, ör. 25 µg) başlanmalı, 3–4 hafta arayla kademeli artırılmalı; doz sT4 ve kliniğe göre ayarlanmalıdır.",
+        "C": "Yaşa göre TSH hedefi 3–6 mU/L alınmalı ve levotiroksin bu aralık sağlanana kadar TSH'ye göre titre edilmelidir.",
+        "D": "Levotiroksinden önce santral nedeni doğrulamak için TRH uyarı testi ve serbest T3 ölçümü tamamlanmalıdır.",
+        "E": "Koroner hastalık nedeniyle levotiroksin kontrendikedir; kısa etkili liyotironin (T3) ile replasman tercih edilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Yaşlı ve koroner hastada santral hipotiroidi: glukokortikoid zaten verilmiş, L-T4 düşük dozla (0.25–0.5 µg/kg) başlanır, 3–4 haftada bir artırılır; izlem TSH ile değil sT4 ve klinikle yapılır.",
+      "aciklama_detay": "TEMD Hipofiz Kılavuzu'nun yaşlanma bölümüne göre yaşlıda santral hipotiroidi tanısı düşük sT4 ile konur; serbest T3 ölçümü ve TRH testi gerekmez. ACTH eksikliği varsa L-T4 ancak yeterli glukokortikoid replasmanından sonra başlanır — bu hastada hidrokortizon zaten başlanmış. L-T4 0.25–0.5 µg/kg ile başlanır, 3–4 haftada bir artırılarak 1.2–1.6 µg/kg tam doza çıkılır; fazla doz kemik kaybı ve atriyal fibrilasyon riskini artırır. Koroner arter hastalığı ve paroksismal AF, tam dozla başlamamak için ek gerekçedir (anjina, iskemi, AF tetiklenmesi). Santral hipotiroidide TSH doz ayarında kullanılamaz: sT4 normale geldiğinde TSH çoğu hastada 0.5 mU/L altına iner ve bu 'aşırı doz' anlamına gelmez; yaşa özgü TSH hedefleri (3–6 mU/L) yalnızca primer hipotiroidi içindir. Yaşlıda hedef sT4, gençteki gibi zorla üst yarıya itilmez; klinik ve komorbiditeye göre daha temkinli tutulur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — 1.6 µg/kg tam doz genç-orta yaş hasta içindir; 76 yaşında, koroner hastalığı ve AF'si olan hastada iskemi ve aritmi riski nedeniyle doz kademeli artırılır. Ayrıca TSH'nin baskılanması santral hipotiroidide yeterliliğin ölçütü değildir.",
+        "B": "DOGRU — Glukokortikoid replasmanı sağlanmış yaşlı hastada 0.25–0.5 µg/kg ile başlayıp 3–4 haftada bir artırmak ve sT4 ile izlemek TEMD önerisidir.",
+        "C": "YANLIS — Yaşa göre TSH hedefleri (65–70 yaş üstünde 3–6 mU/L) primer hipotiroidide kullanılır. Santral hipotiroidide TSH biyolojik olarak anlamsızdır; bu hedefe göre titre etmek hastayı kalıcı olarak yetersiz ya da rastgele dozda bırakır.",
+        "D": "YANLIS — Bilinen hipofiz makroadenomu ve düşük sT4 ile uygunsuz normal TSH tanı için yeterlidir; TEMD yaşlıda sT3 ölçümünü ve TRH testini gereksiz sayar. TRH ülkemizde pratikte bulunmaz; tedaviyi geciktirmek için gerekçe değildir.",
+        "E": "YANLIS — Koroner hastalık levotiroksini kontrendike kılmaz; yalnızca düşük dozla başlayıp yavaş artırmayı gerektirir. Liyotironin kısa yarı ömürlü, dalgalı T3 düzeyleri oluşturur ve kalp hastasında daha az güvenlidir."
+      },
+      "etiketler": [
+        "Santral Hipotiroidi",
+        "Yaşlı Hasta",
+        "LT4 Başlangıç Dozu",
+        "Koroner Arter Hastalığı",
+        "sT4 İzlemi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Kılavuzu 2022 (Yaşlanma ve Hipofiz); Paragliola RM ve ark. Treating Hypopituitarism in the Over 65s. Clin Interv Aging 2023"
+    },
+    {
+      "id": "s10",
+      "metin": "Kırk bir yaşında kadın hasta, Graves hastalığı nedeniyle 14 hafta önce radyoaktif iyot (RAI) almış; RAI öncesinde 8 ay metimazol kullanmış. Son 3 haftadır halsizlik, soğuk intoleransı, kabızlık ve 3 kg kilo alımı var. Başka ilaç kullanmıyor.\n\nTetkikler:\nsT4: 0.52 ng/dL (N: 0.80–1.80) ↓\nsT3: 2.0 pg/mL (N: 2.3–4.2) ↓\nTSH: 0.02 mU/L ↓\n\nBu tablonun en doğru yorumu ve yaklaşımı hangisidir?",
+      "secenekler": {
+        "A": "TSH baskılı olduğundan tablo süren hipertiroidiyle uyumludur; metimazol yeniden başlanmalıdır.",
+        "B": "sT4 ve TSH birlikte düşük olduğundan kalıcı hipofiz yetmezliği vardır; levotiroksinden önce hipofiz MRG ve dinamik testler tamamlanmalıdır.",
+        "C": "TSH yükselmeden hipotiroidi tanısı konamaz; tetkikler 6–8 hafta sonra tekrarlanmalı, bu sürede tedavi verilmemelidir.",
+        "D": "Uzun süren tirotoksikozun baskıladığı tirotroplar henüz toparlanmamıştır; RAI sonrası hipotiroidi gelişmiştir, levotiroksin sT4'e göre başlanıp ayarlanmalıdır.",
+        "E": "Tablo tiroid dışı hastalık sendromudur; tiroid hormonu verilmemeli, tanı için rT3 ölçülmelidir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Hipertiroidi tedavisinden sonra TSH haftalarca-aylarca baskılı kalabilir (geçici santral patern). Düşük sT4/sT3 + belirgin hipotiroidi yakınması = RAI sonrası hipotiroidi; bu dönemde karar sT4'e göre verilir.",
+      "aciklama_detay": "Uzun süreli tirotoksikoz hipofizdeki tirotrop hücreleri baskılar. Tiroid hormonu düzeyleri düştükten sonra TSH'nin yeniden yükselmesi haftalar, bazen birkaç ay alır. Bu arada hasta RAI'ye bağlı olarak hipotiroid hâle gelebilir: sT4 ve sT3 düşük, TSH ise hâlâ baskılıdır. Bu tablo geçici santral hipotiroidi paternidir ve konu anlatımındaki 'hipertiroidi tedavisini takiben geçici santral hipotiroidi' başlığının klinik karşılığıdır. Burada TSH'ye bakarak karar vermek iki yönde de hata doğurur: 'TSH baskılı, hâlâ hipertiroid' deyip antitiroid ilaç başlamak hipotiroidiyi derinleştirir; 'TSH yükselmedi, bekleyelim' demek semptomatik hipotiroidiyi uzatır. Doğru yaklaşım levotiroksini sT4 (ve klinik) izlemiyle başlatmak, TSH toparlandıktan sonra izlemi TSH'ye geri devretmektir. RAI sonrası 3–6. aylar hipotiroidinin en sık ortaya çıktığı dönemdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — sT4 ve sT3 düşükken 'hipertiroidi' tanısı konamaz. TSH'nin baskılı kalması tirotropların gecikmiş toparlanmasıdır; metimazol hastayı daha da hipotiroid yapar.",
+        "B": "YANLIS — Bu tablo kalıcı hipofiz hastalığı değildir; yakın zamanda tedavi edilmiş tirotoksikoz öyküsü baskılı TSH'yi tek başına açıklar. Hipofiz MRG ve dinamik test gerekmez, tedaviyi geciktirmek de gereksizdir.",
+        "C": "YANLIS — TSH'nin yükselmesini beklemek yakınmaları haftalarca sürdürür. Geçici santral fazda tanı ve tedavi sT4'e dayanır.",
+        "D": "DOGRU — RAI sonrası hipotiroidi ile tirotrop baskılanmasının birlikte olduğu geçici santral paterndir; levotiroksin başlanır ve TSH toparlanana kadar sT4 ile ayarlanır.",
+        "E": "YANLIS — Hastada ağır sistemik hastalık yok; öykü RAI tedavisi. TDHS'de tiroid hormonu verilmez ama bu hasta TDHS değil, gerçek hipotiroididir."
+      },
+      "etiketler": [
+        "Geçici Santral Hipotiroidi",
+        "Graves Hastalığı",
+        "RAI Sonrası",
+        "Tirotrop Baskılanması",
+        "sT4 İzlemi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium); Ross DS ve ark. 2016 ATA Hipertiroidi Kılavuzu (Thyroid 2016)"
+    },
+    {
+      "id": "s11",
+      "metin": "Altmış sekiz yaşında kadın hasta, giderek artan uyuklama ve bilinç bulanıklığıyla acil servise getiriliyor. Yakınları 30 yıl önce doğumda ağır kanama geçirdiğini, o günden beri adet görmediğini ve son aylarda giderek içine kapandığını belirtiyor. Hiçbir ilaç kullanmıyor.\n\nVücut ısısı: 34.6 °C, KB: 85/50 mmHg, nabız: 52/dk\nNa: 121 mEq/L, glukoz: 58 mg/dL\nsT4: 0.21 ng/dL ↓↓, TSH: 1.3 mU/L\nKortizol: örnek alındı, sonuç bekleniyor\n\nBu hastada en uygun ilk tedavi yaklaşımı hangisidir?",
+      "secenekler": {
+        "A": "Sonuç beklenmeden IV hidrokortizon (ör. 100 mg, ardından 6–8 saatte bir 50–100 mg) başlanmalı; IV levotiroksin yüklemesi glukokortikoidle birlikte verilmelidir.",
+        "B": "IV levotiroksin 300 µg yükleme dozu hemen verilmeli; hidrokortizon ancak kortizol sonucu düşük gelirse eklenmelidir.",
+        "C": "Önce ACTH uyarı testi yapılmalı; adrenal yetmezlik doğrulanmadan glukokortikoid verilmemelidir.",
+        "D": "Hiponatremi %3 NaCl ile hızla düzeltilmeli; hormon replasmanına sodyum 130 mEq/L'ye ulaşınca başlanmalıdır.",
+        "E": "TSH normal olduğundan miksödem koması olası değildir; önce kraniyal görüntüleme ve lomber ponksiyon yapılmalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Sheehan zemininde santral hipotiroidiye bağlı miksödem koması: ACTH eksikliği varsayılır, kortizol örneği alınıp sonucu beklenmeden IV hidrokortizon başlanır; IV L-T4 glukokortikoid şemsiyesi altında verilir.",
+      "aciklama_detay": "Doğumda ağır kanama, ardından amenore, hipotermi, bradikardi, hipotansiyon, hiponatremi ve hipoglisemi: Sheehan sendromuna bağlı panhipopitüitarizm ve miksödem koması. TSH'nin 'normal' olması santral hipotiroidinin beklenen bulgusudur, hastalığı dışlamaz. Hipoglisemi ve hipotansiyon eşlik eden ACTH eksikliğini güçlü biçimde düşündürür. Kural: tiroid hormonu kortizol yetersizliği giderilmeden verilirse kortizol klerensi ve tüketimi artar, adrenal kriz derinleşir. Acil durumda aksı test edecek zaman yoktur; kortizol için kan alınır ve IV hidrokortizon (100 mg bolus, ardından 6–8 saatte bir 50–100 mg) hemen başlanır. IV levotiroksin (TEMD 2025: 200–400 µg yükleme, ardından günlük idame; ülkemizde 2024'ten beri IV preparat var) glukokortikoidle eş zamanlı verilir. Destek tedavisi: dekstroz, dikkatli sıvı, pasif ısıtma, gerekirse solunum desteği.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Kortizol örneği alınır, sonuç beklenmez; IV hidrokortizon şemsiyesi altında IV levotiroksin verilir. Santral miksödem komasında standart yaklaşım budur.",
+        "B": "YANLIS — Glukokortikoid olmadan tiroid hormonu yüklemek, ACTH eksikliği olan hastada kortizol ihtiyacını artırıp adrenal krizi derinleştirir. Hipoglisemi ve hipotansiyon zaten adrenal yetmezliği düşündürüyor.",
+        "C": "YANLIS — Hemodinamisi bozuk, bilinci kapalı hastada tanısal test için tedaviyi geciktirmek ölümcüldür. Test, hasta stabil olduktan sonra yapılabilir.",
+        "D": "YANLIS — Hiponatremi kortizol ve tiroid hormonu eksikliğinin sonucudur; asıl tedavi hormon replasmanıdır. Hormonları ertelemek yanlıştır; kortizol verilince su atılımı hızla düzelir ve sodyum aşırı hızlı yükselebilir, bu yüzden sodyum yakından izlenir.",
+        "E": "YANLIS — Santral hipotiroidide TSH düşük, normal ya da hafif yüksek olabilir. sT4 0.21 ng/dL ve klinik tablo miksödem komasıyla uyumludur."
+      },
+      "etiketler": [
+        "Miksödem Koması",
+        "Sheehan Sendromu",
+        "Önce Glukokortikoid",
+        "IV Levotiroksin",
+        "Panhipopitüitarizm"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (Miksödem koması); TEMD Hipofiz Kılavuzu 2022"
+    },
+    {
+      "id": "s12",
+      "metin": "Otuz dört yaşında erkek hasta, kraniyofarenjiyom cerrahisi sonrası panhipopitüitarizm nedeniyle hidrokortizon 20 mg/gün, levotiroksin 100 µg/gün, testosteron ve desmopressin kullanıyor. Erişkin büyüme hormonu (GH) eksikliği tanısıyla 3 ay önce rekombinant GH başlanmış; IGF-1 yaşa göre referansın ortasına ulaşmış. Son haftalarda yeniden halsizlik ve soğuğa tahammülsüzlük tarif ediyor. İlaç uyumu tam, levotiroksini aç karnına alıyor.\n\nGH öncesi: sT4 1.45 ng/dL (N: 0.80–1.80)\nŞimdi: sT4 0.86 ng/dL, sT3 3.4 pg/mL (N: 2.3–4.2)\nTSH: <0.05 mU/L (her iki ölçümde)\n\nBu değişikliğin en olası açıklaması ve uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "GH tiroid bezinde doğrudan hormon sentezini baskılamıştır; GH tedavisi kesilmelidir.",
+        "B": "TSH baskılı olduğundan levotiroksin dozu fazladır; doz azaltılmalıdır.",
+        "C": "sT4 hâlâ referans aralığında olduğundan doz değişikliği gerekmez; yakınmalar GH yan etkisidir.",
+        "D": "GH, TBG'yi artırarak serbest T4'ü düşürmüştür; total T4 normal olacağından işlem gerekmez.",
+        "E": "GH, periferik T4→T3 dönüşümünü artırarak sT4'ü düşürmüştür; levotiroksin dozu sT4 yeniden üst yarıya çıkacak şekilde artırılmalıdır."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "GH replasmanı deiyodinaz aracılı T4→T3 dönüşümünü artırır: sT4 düşer, sT3 korunur. Santral hipotiroidide bu, L-T4 ihtiyacını artırır ya da gizli TSH eksikliğini açığa çıkarır; doz sT4'e göre yükseltilir.",
+      "aciklama_detay": "GH/IGF-1 periferde T4'ün T3'e dönüşümünü artırır. Tiroid ekseni sağlam kişide TSH artışı bunu telafi eder; santral hipotiroidide ise telafi yoktur, sT4 düşer. İki klinik sonucu vardır: (1) L-T4 alan hastada doz ihtiyacı artar, (2) daha önce 'ötiroid' sayılan GH eksikli hastada gizli santral hipotiroidi açığa çıkar. Bu nedenle GH başlandıktan sonraki aylarda sT4 yeniden ölçülmelidir. Hastada sT4 üst yarıdan (1.45) alt sınıra yakın düzeye (0.86) inmiş, yakınmaları geri gelmiş; sT3'ün korunması dönüşüm artışıyla uyumludur. Santral hipotiroidide hedef sT4'ü referansın üst yarısında tutmaktır, TSH doz kararında kullanılmaz. Benzer bir etkileşim glukokortikoid tarafında da vardır: GH, 11β-HSD1'i baskılayarak kortizon→kortizol dönüşümünü azaltır ve hidrokortizon ihtiyacını artırabilir; bu hastada adrenal yeterlilik de klinik olarak gözden geçirilmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — GH tiroid bezinde sentezi baskılamaz; etki periferik dönüşüm üzerindendir. GH'nin kesilmesi gerekmez, L-T4 dozu ayarlanır.",
+        "B": "YANLIS — Santral hipotiroidide TSH, L-T4 alan hastaların çoğunda baskılıdır ve doz kararı için kullanılamaz. sT4 düşerken doz azaltmak hastayı daha da hipotiroid yapar.",
+        "C": "YANLIS — Santral hipotiroidide hedef yalnızca 'referans içinde' olmak değil, üst yarıdır. sT4'ün belirgin düşüşü ve geri gelen yakınmalar doz artışını gerektirir.",
+        "D": "YANLIS — TBG'yi artıran östrojendir (özellikle oral), GH değil. GH'nin sT4'ü düşürme mekanizması dönüşüm artışıdır ve klinik olarak anlamlıdır.",
+        "E": "DOGRU — GH T4→T3 dönüşümünü artırır, sT4 düşer; santral hipotiroidide L-T4 dozu sT4'e göre artırılır. GH başlandıktan sonra sT4 izlenmelidir."
+      },
+      "etiketler": [
+        "Santral Hipotiroidi",
+        "GH Replasmanı",
+        "Deiyodinaz",
+        "İlaç Etkileşimi",
+        "Panhipopitüitarizm"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Persani L ve ark. 2018 ETA Santral Hipotiroidi Kılavuzu (Eur Thyroid J 2018); Fleseriu M ve ark. Endocrine Society Hipofiz Yetmezliğinde Hormon Replasmanı Kılavuzu 2016"
+    },
+    {
+      "id": "s13",
+      "metin": "On dokuz yaşında erkek hasta, rutin tetkiklerde saptanan düşük sT4 nedeniyle yönlendiriliyor. Boyu ve kilosu normal. Testis büyümesi zamanında başlamış, ancak testosteron artışı ve büyüme atağı akranlarına göre gecikmeli olmuş. Muayenede guatr yok, testis hacimleri her iki tarafta 35 mL (makroorşidizm). Dayısında da “tiroid hormonu düşüklüğü” olduğu biliniyor.\n\nsT4: 0.62 ng/dL ↓, TSH: 1.4 mU/L\nProlaktin: 1.8 ng/mL ↓ (N: 4–15)\nSabah kortizolü, LH, FSH, testosteron: normal\nIGF-1: yaşa göre alt sınırda\nHipofiz MRG: normal\n\nBu tablonun en olası genetik nedeni hangisidir?",
+      "secenekler": {
+        "A": "PROP1 mutasyonu",
+        "B": "TSH-β alt birim (TSHB) mutasyonu",
+        "C": "IGSF1 mutasyonu",
+        "D": "HESX1 mutasyonu",
+        "E": "Tiroid hormon reseptörü β (THRB) mutasyonu"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "X'e bağlı kalıtım (etkilenen dayı) + santral hipotiroidi + hipoprolaktinemi + erişkin makroorşidizm + gecikmiş puberte testosteron artışı = IGSF1 eksikliği sendromu.",
+      "aciklama_detay": "IGSF1 (immünoglobulin süper ailesi üyesi 1) mutasyonları X'e bağlı santral hipotiroidinin en sık genetik nedenlerindendir. IGSF1 hipofiz tirotroplarında TRH reseptörü sinyalini düzenler; eksikliğinde TSH salgısı azalır. Klinik dörtlü: santral hipotiroidi (çoğu kez hafif, yenidoğan TSH taramasında kaçar), hipoprolaktinemi, erişkinde makroorşidizm (testis büyümesi zamanında ya da erken, ama testosteron artışı gecikmeli) ve bazen geçici kısmi GH eksikliği. Kadın taşıyıcıların bir kısmında hafif santral hipotiroidi görülebilir. Aile ağacında anne tarafından erkek akrabanın (dayı) etkilenmesi X'e bağlı kalıtımı düşündürür. Konu anlatımındaki genetik tabloda IGSF1 'izole' santral hipotiroidi nedenleri arasında yer alır; hipofiz MRG'nin normal olması da uyumludur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PROP1 otozomal resesiftir; GH, PRL, TSH ve gonadotropin eksiklikleri birliktedir, hipogonadizm belirgindir, MRG'de hipofiz sıklıkla hipoplazik ya da geçici büyük görünür. Makroorşidizm beklenmez.",
+        "B": "YANLIS — TSHB mutasyonu otozomal resesiftir, izole ve genellikle yenidoğan döneminde ağır seyreden santral hipotiroidi yapar. Prolaktin normaldir, makroorşidizm yoktur.",
+        "C": "DOGRU — X'e bağlı kalıtım, hipoprolaktinemi, makroorşidizm ve gecikmiş puberte testosteron artışıyla birlikte santral hipotiroidi IGSF1 eksikliğinin tipik tablosudur.",
+        "D": "YANLIS — HESX1 septo-optik displazi ile ilişkilidir: optik sinir hipoplazisi, orta hat beyin anomalileri ve çoklu hipofiz eksikliği. MRG normal olmazdı.",
+        "E": "YANLIS — THRB mutasyonu tiroid hormonu direnci yapar: sT4 ve sT3 YÜKSEK, TSH normal ya da yüksektir. Bu hastada sT4 düşük."
+      },
+      "etiketler": [
+        "Santral Hipotiroidi",
+        "Genetik Nedenler",
+        "IGSF1",
+        "Makroorşidizm",
+        "Hipoprolaktinemi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Sun Y ve ark. Loss-of-function mutations in IGSF1 cause an X-linked syndrome of central hypothyroidism and testicular enlargement. Nat Genet 2012; Persani L ve ark. 2018 ETA Santral Hipotiroidi Kılavuzu (Eur Thyroid J 2018)"
+    },
+    {
+      "id": "s14",
+      "metin": "Elli iki yaşında kadın hasta, Sheehan sendromu nedeniyle hidrokortizon ve levotiroksin 100 µg/gün kullanıyor. Levotiroksini her sabah 06:00'da aç karnına alıyor. Kontrol kanı aynı sabah 09:30'da alınıyor.\n\nsT4: 1.92 ng/dL (N: 0.80–1.80) ↑\nTSH: <0.01 mU/L\n\nHasta kendini iyi hissediyor; çarpıntı, tremor, kilo kaybı yok. Kalp hızı 72/dk. Önceki üç kontrolde (kan hep ilaçtan önce alınmış) sT4 1.35–1.50 ng/dL arasındaymış.\n\nBu sonuç karşısında en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "Örnek levotiroksin alımından birkaç saat sonra alındığı için sT4 yalancı yüksek olabilir; ölçüm günlük doz alınmadan önce alınan örnekle tekrarlanmalıdır.",
+        "B": "sT4 referansın üzerinde olduğundan levotiroksin dozu hemen %25 azaltılmalıdır.",
+        "C": "TSH <0.01 mU/L iatrojenik tirotoksikozu doğrular; levotiroksin bir hafta kesilmelidir.",
+        "D": "Santral hipotiroidide sT4'ün üst sınırı aşması hedeftir; bu değer korunmalıdır.",
+        "E": "Tablo TSH salgılayan adenomu düşündürür; α-alt birim ölçümü ve hipofiz MRG istenmelidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Oral L-T4 sonrası sT4 birkaç saat içinde geçici olarak yükselir. Santral hipotiroidide doz yalnızca sT4'e göre ayarlandığından kan, günlük dozdan ÖNCE alınmalıdır; asemptomatik hastada önce ölçüm doğru koşulda tekrarlanır.",
+      "aciklama_detay": "Santral hipotiroidide TSH doz ayarında kullanılamadığı için tek biyokimyasal ölçüt sT4'tür; bu yüzden ölçümün koşulu önem kazanır. Oral levotiroksin alındıktan sonraki 2–4 saatte sT4 geçici olarak yükselir (yaklaşık %10–20). Kan ilaçtan sonra alınırsa sT4 olduğundan yüksek görünür ve gereksiz doz azaltımına yol açar; bu da hastayı yetersiz tedaviye iter. ETA 2018 santral hipotiroidi kılavuzu sT4'ün günlük L-T4 dozundan önce alınan örnekte ölçülmesini ve referansın üst yarısında tutulmasını önerir. Bu hastada önceki ilaç öncesi değerler hedefte, klinik ötiroid, tek fark örnekleme saati; doğru adım ölçümü ilaçtan önce tekrarlamaktır. Ölçüm ilaç öncesi de yüksek çıkarsa doz azaltılır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Örnekleme ilaçtan 3.5 saat sonra yapılmış; önceki ilaç öncesi değerler hedefte ve hasta asemptomatik. Ölçüm doz öncesi tekrarlanmadan karar verilmez.",
+        "B": "YANLIS — Yanlış koşulda alınmış tek ölçüme göre doz azaltmak, önceki değerleri hedefte olan hastayı yetersiz tedaviye iter.",
+        "C": "YANLIS — Santral hipotiroidide TSH'nin baskılı olması beklenen bir bulgudur, tirotoksikozu göstermez. İlacı kesmek bu hastada gereksiz ve zararlıdır.",
+        "D": "YANLIS — Hedef sT4'ün referansın üst yarısında olmasıdır, üst sınırın üzerinde değil. İlaç öncesi ölçümde de yüksek çıkarsa doz azaltılmalıdır.",
+        "E": "YANLIS — TSH-oma'da TSH baskılanmaz, normal ya da yüksektir. Burada TSH <0.01 ve hasta bilinen Sheehan sendromlu; TSH-oma düşünülmez."
+      },
+      "etiketler": [
+        "Santral Hipotiroidi",
+        "sT4 Örnekleme Zamanı",
+        "LT4 İzlemi",
+        "Sheehan Sendromu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Persani L ve ark. 2018 ETA Santral Hipotiroidi Kılavuzu (Eur Thyroid J 2018)"
+    },
+    {
+      "id": "s15",
+      "metin": "Kırk dört yaşında erkek hasta, 18 mm fonksiyonsuz hipofiz makroadenomu nedeniyle cerrahi yapılmadan izleniyor; görme alanı normal. Tanı anında tüm ön hipofiz aksları normal bulunmuş. İki yıl sonraki kontrolde hafif halsizlik ve soğuğa tahammülsüzlük tarif ediyor. Ölçümler aynı laboratuvarda aynı yöntemle yapılmış.\n\nTanı anı → şimdi\nsT4: 1.42 → 0.98 ng/dL (N: 0.80–1.80)\nTSH: 1.6 → 1.2 mU/L\nAnti-TPO: negatif\nSabah kortizolü, testosteron, IGF-1: normal\n\nBu sonucun yorumu için en doğru ifade hangisidir?",
+      "secenekler": {
+        "A": "sT4 referans aralığında olduğundan tiroid işlevi normaldir; santral hipotiroidi tanısı sT4 alt sınırın altına inmeden konamaz.",
+        "B": "TSH normal ve anti-TPO negatif olduğundan tiroid hastalığı dışlanmıştır; yakınmalar adenomla ilişkisizdir.",
+        "C": "Tanı için TRH uyarı testi zorunludur; bu test yapılmadan tedavi kararı verilemez.",
+        "D": "Hipofiz hastalığında sT4'ün önceki değerine göre %20'den fazla düşmesi, referans içinde kalsa bile hafif santral hipotiroidiyi düşündürür; adrenal aks yeterliyse L-T4 düşünülebilir.",
+        "E": "sT4 düşüşü adenomun TSH salgılamaya başladığını gösterir; somatostatin analoğu başlanmalıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Bilinen hipotalamo-hipofizer hastalıkta sT4'ün bireysel bazal değerine göre >%20 düşmesi (burada ~%31), referans içinde kalsa bile hafif santral hipotiroidiyi düşündürür; kortizol yeterliliği teyit edilince L-T4 denenebilir.",
+      "aciklama_detay": "Referans aralığı toplum içindir; bir bireyin kendi sT4 'set noktası' çok daha dardır. Santral hipotiroidi çoğu kez hafiftir ve TSH düşük, normal ya da hafif yüksek görünür; yani TSH'nin normal olması güven vermez. ETA 2018 kılavuzu, hipotalamo-hipofizer hastalığı olan bir kişide sT4'ün önceki değerine göre %20'den fazla düşmesinin, sT4 referansın alt kısmında kalsa bile santral hipotiroidiyi düşündürdüğünü belirtir. Bu hastada düşüş (1.42 → 0.98) yaklaşık %31'dir, yakınmalar uyumludur ve anti-TPO negatifliği primer otoimmün nedeni daha az olası kılar. Tedavi öncesi adrenal aks yeterliliği gösterilmiş olmalıdır (burada sabah kortizolü normal). Makroadenomun izleminde TSH eksikliği, GH ve gonadotropin eksikliklerinden sonra ortaya çıkma eğilimindedir; diğer akslar yeniden değerlendirilmeli ve MRG izlemi sürdürülmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Toplum referans aralığı bireysel değişimi yakalamaz. Hipofiz hastasında sT4'ün kendi bazaline göre belirgin düşüşü anlamlıdır; 'alt sınırın altına inmesini beklemek' hafif santral hipotiroidiyi kaçırır.",
+        "B": "YANLIS — Santral hipotiroidide TSH sıklıkla normaldir; normal TSH ve negatif anti-TPO santral nedeni dışlamaz, yalnızca primer otoimmün nedeni daha az olası kılar.",
+        "C": "YANLIS — TRH testi ülkemizde pratikte bulunmaz ve güncel kılavuzlar tanı için zorunlu görmez; sT4'ün seyri ve klinik bağlam karar için yeterlidir.",
+        "D": "DOGRU — Bilinen hipofiz lezyonunda sT4'te >%20 düşüş hafif santral hipotiroidiyi düşündürür; kortizol yeterliliği gösterildiğinde L-T4 başlanabilir ve sT4 ile izlenir.",
+        "E": "YANLIS — TSH-oma'da sT4 yüksektir, düşmez. Burada sT4 düşerken TSH yükselmemiş; tablo TSH eksikliğini gösterir."
+      },
+      "etiketler": [
+        "Santral Hipotiroidi",
+        "Hafif Santral Hipotiroidi",
+        "sT4 Trendi",
+        "Hipofiz Makroadenomu"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Persani L ve ark. 2018 ETA Santral Hipotiroidi Kılavuzu (Eur Thyroid J 2018); TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025"
     }
   ]
 }

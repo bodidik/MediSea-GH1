@@ -303,6 +303,156 @@
       ],
       "zorluk": "zor",
       "kaynak": "Meijer et al. JAMA 2018 (DIPAK-1); Caroli et al. Lancet 2013 (ALADIN)"
+    },
+    {
+      "id": "s11",
+      "metin": "Otuz bir yaşında erkek hasta, ADPKD tanısıyla izleniyor. Yakınması yok; herhangi bir ilaç kullanmıyor.\n\nBulgular:\n- Evde standart koşullarda ölçülen KB ortalaması: 136/86 mmHg\n- eGFR: 92 mL/dk/1.73 m²\n- İdrar albümin/kreatinin oranı: 60 mg/g\n- Serum K: 4.3 mmol/L\n- MR: bilateral çok sayıda kist, Mayo sınıfı 1C\n\nBu hastada kan basıncı yönetimi için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "ACE inhibitörü ile ARB'yi birlikte başlayıp çift RAAS blokajı ile böbrek hacim artışını yavaşlatmak",
+        "B": "İlk basamakta amlodipin başlamak; RAAS blokajını eGFR 60'ın altına düştüğünde eklemek",
+        "C": "ACE inhibitörü monoterapisiyle ev KB'yi tolere edildiği ölçüde ≤110/75 mmHg'ye indirmek",
+        "D": "Hedefi <140/90 mmHg kabul edip altı ay yalnızca yaşam tarzı değişikliği ile izlemek",
+        "E": "Poliüriyi azaltacağı için ilk basamakta tiyazid diüretik başlamak"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Elli yaş altı, eGFR >60 olan ADPKD hastasında ilk basamak RAAS blokajıdır (ACEi, intoleransta ARB) ve tolere edilirse ev KB hedefi ≤110/75 mmHg'dir (HALT-PKD A çalışması). ACEi + ARB kombinasyonu ek fayda sağlamaz.",
+      "aciklama_detay": "ADPKD'de hipertansiyon, kistlerin intrarenal damarlara basısıyla gelişen lokal iskemi ve RAAS aktivasyonuna bağlıdır; eGFR henüz normalken, genellikle 30'lu yaşlarda başlar ve kardiyovasküler mortalitenin ana zeminidir. HALT-PKD A çalışmasında 15–49 yaş, eGFR >60 olan hastalarda düşük KB hedefi (95/60–110/75 mmHg), standart hedefe (120/70–130/80 mmHg) göre yıllık toplam böbrek hacmi artışını yavaşlattı, sol ventrikül kitle indeksini ve albüminüriyi daha çok azalttı. Aynı programın her iki kolunda ACEi + ARB kombinasyonu, ACEi monoterapisine göre ne hacim ne eGFR üzerinde ek fayda sağladı; bu nedenle çift blokaj önerilmez. KDIGO 2025 ADPKD kılavuzu da 18–49 yaş ve eGFR >60 olan hastalarda tolere edildiği ölçüde ≤110/75 mmHg ev KB hedefini ve ilk basamak ACEi (intoleransta ARB) kullanımını önerir. Tedavi sırasında baş dönmesi/ortostaz, potasyum ve kreatinin izlenmelidir. Hastanın Mayo 1C olması ayrıca tolvaptan açısından da değerlendirilmesini gerektirir; ancak soru KB yönetimini sorgulamaktadır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — HALT-PKD'de ACEi + ARB kombinasyonu ACEi monoterapisine göre ek fayda sağlamadı; hiperkalemi ve AKI riskini artırdığı için önerilmez.",
+        "B": "YANLIS — ADPKD hipertansiyonu RAAS aracılıdır; ilk basamak ACEi/ARB'dir, kalsiyum kanal blokeri ek ajan olarak yer alır.",
+        "C": "DOGRU — Genç ve eGFR >60 olan hastada ACEi monoterapisi ve tolere edilirse ≤110/75 mmHg ev KB hedefi (HALT-PKD A, KDIGO 2025).",
+        "D": "YANLIS — <140/90 hedefi bu grup için fazla gevşektir; 136/86 mmHg ve albüminüri varlığında ilacı ertelemek hacim artışı ve LVH açısından fırsat kaybıdır.",
+        "E": "YANLIS — İlk basamak RAAS blokörüdür; tiyazid ancak ek ajan olarak yer alır ve poliüriyi azaltma beklentisi antihipertansif seçiminin ölçütü değildir."
+      },
+      "etiketler": [
+        "Hipertansiyon",
+        "HALT-PKD",
+        "RAAS Blokajı",
+        "KB Hedefi",
+        "KDIGO 2025"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Schrier et al. N Engl J Med 2014 (HALT-PKD A); KDIGO 2025 ADPKD Kılavuzu"
+    },
+    {
+      "id": "s12",
+      "metin": "Kırk dört yaşında kadın hasta, ADPKD tanısıyla izleniyor (eGFR 48 mL/dk/1.73 m²). Üç gündür 39 °C ateş ve sağ yan ağrısı ile başvuruyor. Dizüri yok.\n\nTetkikler:\n- CRP: 186 mg/L, lökosit 15.800/mm³\n- İdrar mikroskopisi: piyüri yok; idrar kültürü: üreme yok\n- Kan kültürleri: gönderildi, sonuç bekleniyor\n- Kontrastsız BT: her iki böbrekte çok sayıda kist, birkaçı hiperdens (kanamalı), hangisinin enfekte olduğu ayırt edilemiyor\n- Difüzyon ağırlıklı MR: kesin bir odak gösterilemiyor\n\nEnfekte kisti lokalize etmek için en uygun sonraki tetkik hangisidir?",
+      "secenekler": {
+        "A": "18F-FDG PET/BT",
+        "B": "Tüm büyük kistlerin sırayla perkütan aspirasyonu",
+        "C": "Tc-99m DMSA böbrek sintigrafisi",
+        "D": "Negatif idrar kültürü nedeniyle kist enfeksiyonunu dışlayıp başka ateş odağı aramak",
+        "E": "Kontrastlı BT'nin bir hafta sonra tekrarlanması"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "ADPKD'de kist enfeksiyonunda BT/MR çoğu zaman kanamalı kistlerle enfekte kisti ayıramaz; enfekte kisti lokalize etmede en duyarlı yöntem 18F-FDG PET/BT'dir. İdrar kültürünün negatif olması kist enfeksiyonunu dışlamaz.",
+      "aciklama_detay": "Kist enfeksiyonu ateş, lokalize yan ağrısı ve yüksek CRP ile gelir. Kistlerin çoğu toplayıcı sistemle ilişkili olmadığından idrar kültürü sıklıkla negatiftir; kan kültürleri de mutlaka alınmalıdır, ancak onlar da olguların ancak bir kısmında pozitiftir. Ultrasonografi, BT ve MR, özellikle çok sayıda kanamalı/komplike kist varlığında enfekte kisti güvenilir biçimde ayırt edemez. 18F-FDG PET/BT, inflamatuvar metabolik aktiviteyi gösterdiği için enfekte kisti (ve karaciğer kisti enfeksiyonunu) lokalize etmede en yüksek duyarlılığa sahip yöntemdir; kontrast gerektirmemesi azalmış eGFR'de ek avantajdır. Lokalizasyon, hedefe yönelik aspirasyon/drenaj kararına (büyük kist, 48–72 saatlik uygun antibiyotiğe yanıtsızlık) yol gösterir. Ampirik tedavi kiste iyi geçen lipofilik ajanlarla (florokinolon, TMP-SMX) yapılır ve genellikle 4–6 hafta sürer.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — FDG PET/BT, BT/MR'ın ayıramadığı enfekte kisti metabolik aktiviteyle en duyarlı biçimde lokalize eder.",
+        "B": "YANLIS — Körlemesine çoklu aspirasyon invazif ve komplikasyonludur; aspirasyon, lokalize edilmiş ve tedaviye yanıtsız/büyük kist için ayrılır.",
+        "C": "YANLIS — DMSA kortikal skar/fonksiyon gösterir; polikistik böbrekte enfekte kisti ayırt etmez.",
+        "D": "YANLIS — Kistler çoğunlukla toplayıcı sistemle ilişkisiz olduğundan idrar kültürü sık negatiftir; kist enfeksiyonunu dışlamaz.",
+        "E": "YANLIS — Kontrastlı BT, kanamalı kistlerle enfekte kisti ayırmada yine yetersiz kalır; beklemek tanıyı geciktirir ve eGFR 48'de kontrast yükü getirir."
+      },
+      "etiketler": [
+        "Kist Enfeksiyonu",
+        "FDG PET/BT",
+        "Görüntüleme",
+        "Ateş",
+        "ADPKD Komplikasyonları"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Sallée et al. Clin J Am Soc Nephrol 2009; KDIGO 2025 ADPKD Kılavuzu"
+    },
+    {
+      "id": "s13",
+      "metin": "Yirmi altı yaşında kadın, ADPKD nedeniyle son dönem böbrek yetmezliğine giren ağabeyine canlı böbrek vericisi olmak istiyor. Ailede ağabeyde PKD1 geninde patojenik truncating varyant gösterilmiş. Adayın KB'si 118/72 mmHg, eGFR 108 mL/dk/1.73 m², idrar tetkiki normal. Böbrek ultrasonografisinde hiç kist izlenmiyor.\n\nVericilik değerlendirmesinde en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Ultrasonografide kist olmadığı için ADPKD dışlanmıştır; vericilik süreci sürdürülür",
+        "B": "Kırk yaşına kadar beklenip ultrasonografinin o zaman tekrarlanması",
+        "C": "eGFR ve idrar tetkiki normal olduğundan ek tetkik gerekmez",
+        "D": "Ailede gösterilen PKD1 varyantı için adayda hedefe yönelik genetik test yapılması",
+        "E": "Adaydan perkütan böbrek biyopsisi alınması"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Otuz yaş altında normal ultrasonografi ADPKD'yi güvenle dışlamaz (özellikle PKD2 ve hafif PKD1'de). Ailedeki varyant biliniyorsa en kesin ve hızlı yol hedefe yönelik genetik testtir; alternatif olarak MR kullanılabilir.",
+      "aciklama_detay": "Pei-Ravine ultrasonografi ölçütlerinin dışlama gücü yaşla artar: 40 yaş ve üstünde risk altındaki bireyde hiç kist olmaması hastalığı dışlar; ancak 30 yaşın altında kist henüz görüntülenebilir boyuta ulaşmamış olabileceğinden normal ultrasonografinin negatif prediktif değeri yetersizdir. Canlı vericilik gibi yüksek riskli bir kararda yanlış negatif, hem vericiyi (tek böbrekle ilerleyici hastalık) hem alıcıyı etkiler. Ailede patojenik varyant tanımlanmışsa hedefe yönelik genetik test kesin sonuç verir; negatifse değerlendirme sürdürülür. Varyant bilinmediğinde MR (duyarlılığı ultrasonografiden yüksek; genç risk altındaki bireyde çok az sayıda kist bulunması hastalığı büyük olasılıkla dışlar) ya da genişletilmiş gen paneli seçenektir. Konu anlatımında da 30 yaş altı canlı verici adayı genetik test endikasyonları arasında sayılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Otuz yaş altında normal ultrasonografi ADPKD'yi dışlamaya yetmez; yanlış negatif olasılığı vericilik için kabul edilemez.",
+        "B": "YANLIS — On dört yıl beklemek alıcının nakil şansını gereksiz yere geciktirir; kesin sonuç veren test bugün yapılabilir.",
+        "C": "YANLIS — ADPKD'de eGFR yıllarca hiperfiltrasyonla korunur; normal fonksiyon ve idrar tetkiki hastalığı dışlamaz.",
+        "D": "DOGRU — Ailedeki varyant bilindiğinde hedefe yönelik genetik test genç verici adayında en kesin dışlama yöntemidir.",
+        "E": "YANLIS — Biyopsi ADPKD tanısında yeri olmayan, sağlıklı adaya gereksiz risk yükleyen invazif bir işlemdir."
+      },
+      "etiketler": [
+        "Canlı Verici",
+        "Genetik Test",
+        "Pei-Ravine Kriterleri",
+        "Tanıda Dışlama",
+        "Transplantasyon"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Pei et al. J Am Soc Nephrol 2009; KDIGO 2025 ADPKD Kılavuzu"
+    },
+    {
+      "id": "s14",
+      "metin": "Otuz sekiz yaşında kadın hasta, hızlı ilerleyen ADPKD (Mayo 1D, eGFR 58 mL/dk/1.73 m²) nedeniyle bir yıldır tolvaptan 90/30 mg/gün kullanıyor; transaminazları normal. Dispepsi yakınması nedeniyle yapılan tetkikte Helicobacter pylori pozitif bulunuyor. Aile hekimi klaritromisin, amoksisilin ve PPI içeren üçlü tedavi planlıyor.\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Planlanan üçlü tedavi değişiklik yapılmadan verilir; etkileşim klinik açıdan önemsizdir",
+        "B": "Klaritromisinli rejim verilir, tolvaptan dozu yarıya indirilir",
+        "C": "Tolvaptan kalıcı olarak kesilir ve somatostatin analoğuna geçilir",
+        "D": "Klaritromisin yerine eritromisin kullanılır, tolvaptan aynı dozda sürdürülür",
+        "E": "Klaritromisin içermeyen bir eradikasyon rejimi (ör. bizmutlu dörtlü tedavi) seçilir"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Tolvaptan CYP3A4 substratıdır; güçlü CYP3A inhibitörleri (klaritromisin, ketokonazol, itrakonazol, ritonavir) ile birlikte kullanımı kontrendikedir. Klaritromisinsiz bir eradikasyon rejimi seçmek hem güvenli hem de yüksek klaritromisin direnci olan bölgelerde zaten önerilen yoldur.",
+      "aciklama_detay": "Tolvaptan neredeyse tamamen CYP3A4 ile metabolize edilir. Güçlü CYP3A inhibitörleri ilaç maruziyetini birkaç kat artırarak aşırı akuaretik etki (dehidratasyon, hipernatremi) ve hepatotoksisite riskini yükseltir; bu nedenle ürün bilgisinde birlikte kullanım kontrendikasyon olarak yer alır. Orta güçte inhibitörlerle (ör. flukonazol, eritromisin, diltiazem, verapamil) ise tolvaptan dozunun azaltılması gerekir; yani doz azaltma stratejisi güçlü inhibitörler için geçerli değildir. Bu hastada en doğru yol etkileşimi tümüyle ortadan kaldırmaktır: klaritromisin içermeyen bir rejim (bizmutlu dörtlü tedavi gibi) seçilir. Tolvaptanın diğer kontrendikasyonları da bilinmelidir: düzeltilmemiş serum sodyum bozukluğu, susamayı algılayamama ya da sıvıya ulaşamama, hipovolemi, idrar çıkış obstrüksiyonu, anüri ve ciddi karaciğer hastalığı öyküsü (komplike olmayan polikistik karaciğer hariç). Grepfurt suyu da tolvaptanla birlikte tüketilmemelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Klaritromisin güçlü CYP3A inhibitörüdür; tolvaptanla birlikte kullanımı kontrendikedir, etkileşim klinik olarak önemlidir.",
+        "B": "YANLIS — Doz azaltma orta güçte CYP3A inhibitörleri için geçerlidir; güçlü inhibitörle birlikte kullanım dozdan bağımsız olarak kontrendikedir.",
+        "C": "YANLIS — Etkileşim geçici ve kaçınılabilir bir durumdur; kanıtlanmış hastalık modifiye edici tedaviyi kalıcı kesmek gereksizdir, somatostatin analogları eGFR'yi korumaz.",
+        "D": "YANLIS — Eritromisin de CYP3A inhibitörüdür ve aynı dozda sürdürmek uygun değildir; ayrıca H. pylori eradikasyon rejimlerinin standart bileşeni değildir.",
+        "E": "DOGRU — Klaritromisinsiz rejim etkileşimi ortadan kaldırır ve tolvaptan kesintisiz sürdürülebilir."
+      },
+      "etiketler": [
+        "Tolvaptan",
+        "CYP3A4",
+        "İlaç Etkileşimi",
+        "Klaritromisin",
+        "Kontrendikasyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Tolvaptan (Jynarque) ürün bilgisi; KDIGO 2025 ADPKD Kılavuzu"
+    },
+    {
+      "id": "s15",
+      "metin": "Otuz yaşında kadın hasta, ADPKD tanısıyla izleniyor (eGFR 78 mL/dk/1.73 m², Mayo 1B; tolvaptan kullanmıyor). Hipertansiyonu ramipril 10 mg/gün ile kontrol altında (ev KB ortalaması 112/74 mmHg). Altı ay içinde gebe kalmayı planladığını söylüyor.\n\nBu hastaya gebelik öncesi en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Ramipril böbrek koruyucu olduğu için gebelik boyunca aynı dozda sürdürülür",
+        "B": "Konsepsiyon öncesi ramipril kesilip labetalol ya da nifedipine geçilir",
+        "C": "Ramipril yerine losartan başlanır; ARB'ler gebelikte ACE inhibitörlerinden güvenlidir",
+        "D": "Gebelikte KB fizyolojik olarak düşeceğinden tüm antihipertansifler kesilir",
+        "E": "ADPKD'li kadınlarda gebelik kontrendikedir; etkin kontrasepsiyon önerilir"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "ACE inhibitörleri ve ARB'ler fetotoksiktir; gebelik planlayan kadında konsepsiyon öncesi gebelikte güvenli ajana (labetalol, nifedipin, metildopa) geçilir. Hipertansif ADPKD'li kadında preeklampsi riski artmıştır; gebelik kontrendike değildir.",
+      "aciklama_detay": "Korunmuş böbrek fonksiyonu olan ADPKD'li kadınların çoğu gebeliği başarıyla tamamlar; ancak gebelik öncesi hipertansiyonu olanlarda preeklampsi ve gebelik hipertansiyonu riski belirgin artar. RAAS blokörleri ikinci ve üçüncü trimesterde fetal böbrek gelişimini bozar (oligohidramniyos, renal disgenezi, kafatası hipoplazisi); ARB'ler de aynı sınıf etkisini taşır. Planlı gebelikte konsepsiyon öncesi labetalol ya da uzun etkili nifedipine geçmek ve KB kontrolünü gebelik öncesinde bu ajanlarla sağlamak en güvenli yaklaşımdır. Gebelik boyunca KB, proteinüri ve böbrek fonksiyonu yakından izlenir; kronik hipertansiyon ve KBH gibi risk etkenleri varlığında preeklampsi profilaksisi için düşük doz aspirin obstetrik ekiple değerlendirilir. Danışmanlıkta çocuğa geçiş olasılığının %50 olduğu ve çoklu gebeliklerin karaciğer kist yükünü (östrojen etkisi) artırabileceği de konuşulmalıdır. Tolvaptan gebelikte kullanılmaz; bu hasta zaten almıyor.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — ACE inhibitörleri özellikle ikinci-üçüncü trimesterde fetotoksiktir; gebelikte sürdürülmez.",
+        "B": "DOGRU — Konsepsiyon öncesi gebelikte güvenli antihipertansife geçiş ve preeklampsi açısından yakın izlem doğru yaklaşımdır.",
+        "C": "YANLIS — ARB'ler ACE inhibitörleriyle aynı fetotoksik etkiyi taşır; gebelikte kontrendikedir.",
+        "D": "YANLIS — Kronik hipertansiyonu olan hastada antihipertansifleri tümden kesmek kontrolsüz KB ve preeklampsi riskini artırır; ilaç kesilmez, güvenli ajana geçilir.",
+        "E": "YANLIS — Korunmuş böbrek fonksiyonunda gebelik kontrendike değildir; risk yakın izlemle yönetilir."
+      },
+      "etiketler": [
+        "Gebelik",
+        "Hipertansiyon",
+        "ACE İnhibitörü",
+        "Preeklampsi",
+        "Genetik Danışmanlık"
+      ],
+      "zorluk": "orta",
+      "kaynak": "KDIGO 2025 ADPKD Kılavuzu; Konu anlatımı (MediSea premium)"
     }
   ]
 }

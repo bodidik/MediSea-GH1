@@ -303,6 +303,156 @@
       ],
       "zorluk": "orta",
       "kaynak": "Kalantar-Zadeh et al. Clin J Am Soc Nephrol 2010; KDIGO 2017 CKD-MBD Guideline Update"
+    },
+    {
+      "id": "s11",
+      "metin": "Altmış dört yaşında erkek hasta, diyabetik böbrek hastalığına bağlı evre G3b KBH ile izleniyor.\n\nTetkikler (üç ay arayla iki ölçüm, benzer):\n- eGFR: 34 mL/dk/1.73 m²\n- Serum fosfor: 4.1 mg/dL\n- Düzeltilmiş kalsiyum: 9.3 mg/dL\n- PTH: 110 pg/mL (üst sınır 65)\n- 25(OH)D: 14 ng/mL\n\nAsistan, 'FGF-23'ü düşürüp vasküler kalsifikasyonu önlemek için' sevelamer başlamayı öneriyor.\n\nKDIGO 2017 KBH-MKB kılavuzuna göre bu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "FGF-23'ü baskılayıp vasküler kalsifikasyonu önlemek amacıyla sevelamer karbonat başlamak",
+        "B": "Ucuz ve etkili olduğu için kalsiyum asetat başlamak",
+        "C": "PTH'yi normal aralığa indirmek için kalsitriol başlamak",
+        "D": "Hap yükü düşük olduğu için tenapanor başlamak",
+        "E": "Bağlayıcı başlamamak; D vitaminini yerine koyup Ca/P/PTH'yi seri izlemek"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "KDIGO 2017 yüksek fosforun normale doğru indirilmesini önerir; normofosfatemik hastada 'önleyici' bağlayıcı önerilmez. Hafif PTH yüksekliğinde önce düzeltilebilir etkenler (D vitamini eksikliği, yüksek fosfor alımı) ele alınır; kalsitriol diyaliz dışı KBH'de rutin kullanılmaz.",
+      "aciklama_detay": "KDIGO 2017 güncellemesi hiperfosfatemi tedavisini 'yükselmiş fosforu normal aralığa doğru indirmek' olarak tanımlar ve kararların fosfor, kalsiyum ve PTH'nin birlikte, seri ölçümlerine dayanmasını ister. Serum fosforu normal olan KBH G3–G4 hastalarında fosfat bağlayıcıların yarar gösterdiği bir kanıt yoktur; Block ve arkadaşlarının çalışmasında normofosfatemik orta evre KBH'de bağlayıcılar serum fosforunu çok az düşürdü ve aktif bağlayıcı alan hastalarda (üç ajanın toplu analizi) koroner ve abdominal aort kalsifikasyonu plaseboya göre daha çok arttı. Bu hastada PTH hafif yüksektir ve 25(OH)D eksikliği vardır; KDIGO, PTH'si yükselen hastada önce düzeltilebilir etkenlerin (hiperfosfatemi, hipokalsemi, yüksek fosfor alımı, D vitamini eksikliği) değerlendirilmesini önerir. Kalsitriol ve D vitamini analogları diyaliz dışı G3a–G5'te rutin önerilmez; ağır ve ilerleyici hiperparatiroidisi olan G4–G5 hastaları için ayrılır. İşlenmiş gıdalardaki inorganik fosfor katkılarının neredeyse tamamen emildiği anlatılarak diyet danışmanlığı verilmesi bu evrede en akılcı önlemdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Normofosfatemide FGF-23'ü düşürmek amacıyla bağlayıcı başlamanın klinik yararı gösterilmemiştir; KDIGO önermez.",
+        "B": "YANLIS — Endikasyon yoktur; ayrıca kalsiyum bazlı bağlayıcılar pozitif kalsiyum dengesi ve kalsifikasyon riski nedeniyle kısıtlanmalıdır.",
+        "C": "YANLIS — Diyaliz dışı KBH'de kalsitriol rutin kullanılmaz; hiperkalsemi riski taşır ve ağır/ilerleyici hiperparatiroidi için ayrılır.",
+        "D": "YANLIS — Serum fosforu normal olan hastada fosfor düşürücü ilaç endikasyonu yoktur; tenapanor da bu amaçla kullanılmaz.",
+        "E": "DOGRU — Bağlayıcı yok; D vitamini eksikliğinin düzeltilmesi, diyet danışmanlığı ve seri Ca/P/PTH izlemi KDIGO 2017 ile uyumludur."
+      },
+      "etiketler": [
+        "KDIGO 2017",
+        "Normofosfatemi",
+        "Fosfat Bağlayıcı Endikasyonu",
+        "Sekonder Hiperparatiroidi",
+        "D Vitamini"
+      ],
+      "zorluk": "orta",
+      "kaynak": "KDIGO 2017 CKD-MBD Guideline Update; Block et al. J Am Soc Nephrol 2012"
+    },
+    {
+      "id": "s12",
+      "metin": "Elli sekiz yaşında kadın hasta, dört yıldır hemodiyalize giren tip 2 diyabetik ve obez bir hasta. Atriyal fibrilasyon nedeniyle varfarin, ayrıca kalsiyum asetat ve kalsitriol kullanıyor. Son üç haftada her iki uyluk iç yüzü ve karın alt bölgesinde çok ağrılı, mor-livedoid plaklar gelişmiş; ikisi siyah eskarlı nekrotik ülsere dönüşmüş. Periferik nabızlar alınıyor.\n\nTetkikler:\n- Fosfor: 7.1 mg/dL\n- Düzeltilmiş kalsiyum: 10.2 mg/dL\n- PTH: 650 pg/mL\n- INR: 2.6\n\nBu hastada en uygun tedavi yaklaşımı hangisidir?",
+      "secenekler": {
+        "A": "Selülit kabul edip geniş spektrumlu IV antibiyotik ve cerrahi debridman ile tek başına tedavi etmek",
+        "B": "Varfarin, kalsiyum ve kalsitriolü kesip diyalizi yoğunlaştırmak, IV sodyum tiyosülfat vermek",
+        "C": "Fosforu düşürmek için kalsiyum asetat dozunun artırılması",
+        "D": "Mikrotromboz düşünülerek varfarin dozunun INR 3–4 hedefine çıkarılması",
+        "E": "Kutanöz vaskülit düşünülerek yüksek doz glukokortikoid başlanması"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Diyaliz hastasında ağrılı livedoid plaklar ve nekrotik eskarlar kalsifilaksiyi düşündürür. Tedavi çok yönlüdür: tetikleyicilerin (varfarin, kalsiyum yükü, kalsitriol) kesilmesi, Ca×P ve PTH kontrolü, yoğun diyaliz, sodyum tiyosülfat ve yara-ağrı yönetimi.",
+      "aciklama_detay": "Kalsifilaksi (kalsifik üremik arteriolopati), deri ve deri altı yağ dokusundaki küçük arteriollerin medial kalsifikasyonu ve intimal proliferasyonu sonucu gelişen iskemik nekrozdur. Risk etkenleri: diyaliz, kadın cinsiyet, obezite, diyabet, varfarin (MGP'nin K vitaminine bağımlı karboksilasyonunu bozar), kalsiyum bazlı bağlayıcılar, aktif D vitamini, hiperfosfatemi ve hiperparatiroidi. Klinik tablo orantısız ağrı, livedo benzeri mor plaklar ve siyah eskarlı ülserlerdir; yağ dokusundan zengin santral bölgeler (uyluk, karın) kötü prognozla ilişkilidir. Tanı çoğu zaman kliniktir; biyopsi yeni ülser başlatabileceği için dikkatle değerlendirilir. Tedavide randomize kanıt sınırlı olsa da uzlaşı; varfarinin kesilip başka antikoagülasyon seçeneğinin tartışılması, kalsiyum bazlı bağlayıcı ve kalsitriolün kesilmesi, kalsiyumsuz bağlayıcı, gerekirse kalsimimetik ile PTH kontrolü, diyaliz sıklığı/süresinin artırılması, IV sodyum tiyosülfat, titiz yara bakımı ve güçlü analjezidir. Sepsis önde gelen ölüm nedeni olduğundan enfeksiyon yakından izlenir ama antibiyotik tek başına tedavi değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tablo selülit değil kalsifilaksidir; enfeksiyon eşlik ederse antibiyotik gerekir ama altta yatan süreç tedavi edilmeden ülserler ilerler.",
+        "B": "DOGRU — Tetikleyicileri kesmek, mineral metabolizmasını düzeltmek, diyalizi yoğunlaştırmak ve sodyum tiyosülfat uzlaşı tedavisidir.",
+        "C": "YANLIS — Kalsiyum yükünü artırmak kalsifikasyonu hızlandırır; kalsiyum bazlı bağlayıcı kesilmelidir.",
+        "D": "YANLIS — Varfarin K vitaminine bağımlı kalsifikasyon inhibitörü MGP'yi inaktive ederek kalsifilaksiyi kolaylaştırır; dozu artırmak zararlıdır.",
+        "E": "YANLIS — Süreç vaskülit değil arteriolar kalsifikasyondur; glukokortikoid yara iyileşmesini bozar ve enfeksiyon riskini artırır."
+      },
+      "etiketler": [
+        "Kalsifilaksi",
+        "Kalsifik Üremik Arteriolopati",
+        "Sodyum Tiyosülfat",
+        "Varfarin",
+        "Hemodiyaliz"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Nigwekar et al. N Engl J Med 2018 (Calciphylaxis); KDIGO 2017 CKD-MBD Guideline Update"
+    },
+    {
+      "id": "s13",
+      "metin": "Kırk dokuz yaşında erkek hasta, altı yıldır hemodiyalize giriyor. Kemik ağrısı ve kaşıntı yakınması var. Fosfat bağlayıcı olarak kalsiyum karbonat kullanıyor; diyet uyumu iyi.\n\nTetkikler (son iki ay, tekrarlayan):\n- PTH: 1150 pg/mL (üst sınır 65)\n- Düzeltilmiş kalsiyum: 10.3 mg/dL\n- Fosfor: 6.9 mg/dL\n- Alkalen fosfataz: 310 U/L (yüksek)\n- 25(OH)D: 34 ng/mL\n\nBu hastada ilk tercih edilecek tedavi değişikliği hangisidir?",
+      "secenekler": {
+        "A": "Kalsitriol pulse dozu başlanması",
+        "B": "Medikal tedavi denenmeden acil paratiroidektomi",
+        "C": "Hiperkalsemiye rağmen parikalsitol başlanması",
+        "D": "Kalsiyum karbonatı kesip kalsiyumsuz bağlayıcı ve kalsimimetik başlamak",
+        "E": "PTH'yi normal aralığa indirmek hedefiyle kalsiyum karbonat dozunun artırılması"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Diyaliz hastasında PTH yükselmişken kalsiyum ve fosfor da yüksekse aktif D vitamini (kalsitriol/analoglar) her ikisini daha da artırır; kalsimimetik PTH ile birlikte Ca ve P'yi de düşürdüğü için bu tabloda tercih edilir. Kalsiyum yükü azaltılır.",
+      "aciklama_detay": "KDIGO 2017, PTH düşürücü tedavi gereken G5D hastalarında kalsimimetikleri, kalsitriolü ya da D vitamini analoglarını (veya kombinasyonlarını) seçenek olarak sunar; seçim eşlik eden kalsiyum ve fosfor düzeylerine göre yapılır. Bu hastada PTH üst sınırın yaklaşık 18 katıdır (KDIGO hedefi 2–9 kat), üstelik hiperkalsemi ve hiperfosfatemi vardır. Kalsitriol ve analoglar bağırsaktan kalsiyum ve fosfor emilimini artırarak Ca×P yükünü yükseltir, vasküler kalsifikasyonu hızlandırır. Kalsimimetikler paratiroid kalsiyum algılayıcı reseptörünün duyarlılığını artırarak PTH'yi, dolayısıyla kemikten Ca/P salınımını azaltır; EVOLVE çalışmasında sinakalset birincil birleşik sonlanımı ITT analizinde anlamlı azaltmasa da paratiroidektomi gereksinimini azalttı. Başlıca yan etkileri hipokalsemi ve bulantı-kusmadır. Eş zamanlı olarak kalsiyum bazlı bağlayıcı kesilip sevelamer, lantan ya da demir bazlı bağlayıcıya geçilmelidir. Paratiroidektomi, medikal tedaviye dirençli ağır hiperparatiroidide gündeme gelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kalsitriol hiperkalsemi ve hiperfosfatemiyi ağırlaştırır; bu biyokimyasal profilde uygun değildir.",
+        "B": "YANLIS — Paratiroidektomi medikal tedaviye dirençli olgulara ayrılır; ilk adım değildir.",
+        "C": "YANLIS — Parikalsitol kalsiyumu kalsitriolden daha az artırsa da mevcut hiperkalsemi ve hiperfosfatemide ilk tercih değildir.",
+        "D": "DOGRU — Kalsiyum yükü kaldırılır, kalsimimetik PTH ile birlikte Ca ve P'yi de düşürür.",
+        "E": "YANLIS — Diyaliz hastasında PTH'yi normal aralığa indirmek hedef değildir (adinamik kemik riski) ve kalsiyum yükünü artırmak hiperkalsemiyi ağırlaştırır."
+      },
+      "etiketler": [
+        "Sekonder Hiperparatiroidi",
+        "Kalsimimetik",
+        "Sinakalset",
+        "PTH Hedefi",
+        "Hiperkalsemi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "KDIGO 2017 CKD-MBD Guideline Update; EVOLVE Trial Investigators. N Engl J Med 2012"
+    },
+    {
+      "id": "s14",
+      "metin": "Yetmiş bir yaşında erkek hasta, 15 yıldır hemodiyalize giriyor. Diyalizin ilk yıllarında uzun süre alüminyum hidroksit içeren fosfat bağlayıcı kullanmış; hâlâ reçetesiz alüminyumlu antasit alıyor. Son aylarda kekemeliğe benzeyen konuşma bozukluğu, miyoklonik sıçramalar, ilerleyici unutkanlık, yaygın kemik ağrısı ve iki kez düşük enerjili kırık gelişmiş.\n\nTetkikler:\n- Hb: 9.1 g/dL, MCV: 74 fL, ferritin: 420 ng/mL, TSAT: %32\n- PTH: 45 pg/mL (düşük-normal)\n- Alkalen fosfataz: normal\n\nBu tabloyu en iyi açıklayan tanı hangisidir?",
+      "secenekler": {
+        "A": "Alüminyum birikimi (ensefalopati, osteomalazi, mikrositer anemi)",
+        "B": "Alzheimer tipi demans ve eşlik eden yaşa bağlı osteoporoz",
+        "C": "Tiamin eksikliğine bağlı Wernicke ensefalopatisi ve düşme",
+        "D": "Osteitis fibrosa sistika ile birlikte üremik ensefalopati",
+        "E": "Lantan karbonat birikimine bağlı nörotoksisite ve kemik hastalığı"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Uzun süreli alüminyum maruziyeti olan diyaliz hastasında konuşma bozukluğu + miyoklonus + demans (diyaliz ensefalopatisi), düşük döngülü kemik hastalığı/osteomalazi ve demir depoları dolu mikrositer anemi üçlüsü alüminyum toksisitesini düşündürür.",
+      "aciklama_detay": "Alüminyum böbrekle atıldığı için KBH'de birikir; alüminyum içeren bağlayıcılar, antasitler ve geçmişte kirlenmiş diyalizat başlıca kaynaklardır. Birikim üç organda iz bırakır: (1) SSS — kekemeliğe benzeyen dizartri/afazi, miyoklonus, nöbet ve ilerleyici demans ile karakterize diyaliz ensefalopatisi; (2) kemik — mineralizasyon cephesinde alüminyum birikimiyle osteomalazi/adinamik kemik, kemik ağrısı ve kırıklar, PTH'nin baskılanması; (3) kemik iliği — hem sentezinin bozulmasıyla demir depoları dolu olmasına karşın mikrositer anemi ve ESA direnci. Tanıda serum alüminyum düzeyi, deferoksamin uyarı testi ve gerekirse alüminyum boyalı kemik biyopsisi kullanılır; tedavi kaynağın kesilmesi ve deferoksamin şelasyonudur. KDIGO 2017, alüminyum içeren fosfat bağlayıcıların uzun süreli kullanılmamasını ve diyalizatın alüminyumla kirlenmesinin önlenmesini önerir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Ensefalopati + osteomalazi/düşük döngülü kemik + demir depoları dolu mikrositer anemi alüminyum birikiminin klasik üçlüsüdür.",
+        "B": "YANLIS — Alzheimer hastalığı miyoklonus, kekemeliğe benzeyen konuşma bozukluğu, mikrositer anemi ve kırıklardan oluşan bu bütünü açıklamaz.",
+        "C": "YANLIS — Wernicke ensefalopatisi oftalmopleji, ataksi ve konfüzyonla gelir; kemik ve hematolojik bulguları açıklamaz.",
+        "D": "YANLIS — Osteitis fibrosa sistika yüksek PTH ve yüksek ALP ile gider; bu hastada PTH düşük-normal, ALP normaldir.",
+        "E": "YANLIS — Lantan kemikte birikebilse de alüminyumdaki gibi ensefalopati, osteomalazi ve mikrositer anemi tablosu tanımlanmamıştır."
+      },
+      "etiketler": [
+        "Alüminyum Toksisitesi",
+        "Diyaliz Ensefalopatisi",
+        "Osteomalazi",
+        "Mikrositer Anemi",
+        "Fosfat Bağlayıcı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "KDIGO 2017 CKD-MBD Guideline Update; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s15",
+      "metin": "Altmış yedi yaşında kadın hasta, evre G4 KBH (eGFR 22 mL/dk/1.73 m²) ile izleniyor; diyalize girmiyor. Ev içinde düşme sonrası L1 kompresyon kırığı saptanıyor. Uzun süredir kalsiyum karbonat ve kalsitriol kullanıyor.\n\nTetkikler:\n- DXA: lomber T skoru −3.1, femur boynu −2.8\n- PTH: 18 pg/mL (düşük)\n- Kemiğe özgü alkalen fosfataz: düşük\n- Düzeltilmiş kalsiyum: 10.1 mg/dL, fosfor: 4.6 mg/dL\n\nOrtopedi, alendronat başlanmasını öneriyor.\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Bisfosfonatlarda eGFR sınırı olmadığından alendronat başlanması",
+        "B": "Daha etkin olduğu için IV zoledronik asit uygulanması",
+        "C": "Adinamik kemik düşünüp kalsiyum/kalsitriolü azaltmak; gerekirse kemik biyopsisi",
+        "D": "Kırığı önlemek için kalsitriol dozunun artırılması",
+        "E": "Böbrekten atılmadığı ve hipokalsemi riski taşımadığı için hemen denosumab başlanması"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "İleri KBH'de düşük PTH ve düşük kemiğe özgü ALP adinamik kemik hastalığını düşündürür; bu durumda antirezorptif döngüyü daha da baskılar. Önce kalsiyum/kalsitriol yükü azaltılır; renal osteodistrofi tipinin bilinmesi tedaviyi değiştirecekse kemik biyopsisi yapılır (KDIGO 2017).",
+      "aciklama_detay": "KBH G3a–G5D'de KBH-MKB bulgusu olan hastada kırılganlık kırığı her zaman postmenopozal osteoporoz değildir; osteitis fibrosa, adinamik kemik, osteomalazi ya da mikst renal osteodistrofi olabilir ve tedavileri birbirine zıttır. Bu hastada PTH düşük, kemiğe özgü ALP düşük ve uzun süreli kalsiyum + kalsitriol maruziyeti vardır; tablo aşırı baskılanmış PTH'ye bağlı adinamik kemik hastalığıyla uyumludur. Adinamik kemikte bisfosfonat, zaten durmuş kemik döngüsünü daha da baskılayarak mikrohasar onarımını engeller ve Ca/P'nin kemiğe alınamayıp damara yönelmesine katkı yapar. KDIGO 2017, renal osteodistrofi tipinin bilinmesi tedavi kararını etkileyecekse kemik biyopsisinin (tetrasiklin çift işaretli) makul olduğunu belirtir. Ayrıca alendronat eGFR <35 mL/dk'da, zoledronik asit eGFR <35 mL/dk'da önerilmez; denosumab ise ileri KBH'de ağır ve uzun süreli hipokalsemi riski taşır. İlk adım kalsiyum bazlı bağlayıcı ve kalsitriolün azaltılıp kesilmesi, PTH'nin fizyolojik aralığa dönmesine izin verilmesidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Alendronat eGFR <35 mL/dk'da önerilmez; üstelik düşük döngülü kemikte döngüyü daha da baskılar.",
+        "B": "YANLIS — Zoledronik asit eGFR <35 mL/dk'da kontrendikedir ve adinamik kemikte aynı sakıncayı taşır.",
+        "C": "DOGRU — Adinamik kemik olasılığı yönetilmeli, kalsiyum/kalsitriol yükü azaltılmalı; tedaviyi değiştirecekse biyopsi yapılmalıdır.",
+        "D": "YANLIS — Kalsitriol PTH'yi daha da baskılayarak adinamik kemiği ve kalsifikasyon riskini ağırlaştırır.",
+        "E": "YANLIS — Denosumab böbrekten atılmasa da ileri KBH'de ağır hipokalsemi riski yüksektir ve düşük döngülü kemikte döngüyü daha da baskılar."
+      },
+      "etiketler": [
+        "Adinamik Kemik Hastalığı",
+        "Renal Osteodistrofi",
+        "Bisfosfonat",
+        "Kemik Biyopsisi",
+        "KBH-MKB"
+      ],
+      "zorluk": "zor",
+      "kaynak": "KDIGO 2017 CKD-MBD Guideline Update"
     }
   ]
 }

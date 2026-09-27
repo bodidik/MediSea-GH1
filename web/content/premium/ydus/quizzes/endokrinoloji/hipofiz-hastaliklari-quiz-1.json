@@ -1,0 +1,368 @@
+{
+  "id": "quiz-endo-hipofiz-hastaliklari-001",
+  "baslik": "Hipofiz Hastalıkları — İleri Klinik ve Akademik Doküman — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "hipofiz-hastaliklari",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "47 yaşında kadın hasta, 6 aydır giderek artan baş ağrısı ve yan görme alanlarında daralma yakınmasıyla başvuruyor. Muayenede bitemporal hemianopsi saptanıyor; Cushing sendromunu düşündüren bulgu (mor geniş stria, proksimal miyopati, kolay morarma) yok.\n\nTetkikler:\n• Hipofiz MRG: 28 mm makroadenom, sağ kavernöz sinüs invazyonu (Knosp 3)\n• 1 mg gece deksametazon baskılama testi: sabah kortizolü 1,2 µg/dL\n• 24 saatlik idrar serbest kortizolü: normal (iki ölçüm)\n• Prolaktin: 34 ng/mL; IGF-1: normal\n\nHastaya transsfenoidal cerrahi uygulanıyor. Patoloji raporu:\n• Hormon immünohistokimyası: ACTH ile zayıf ve fokal boyanma; GH, PRL, TSH, FSH, LH negatif\n• Transkripsiyon faktörleri: TPIT yaygın nükleer pozitif; PIT1 ve SF1 negatif\n• Ki-67: %2\n\nBu tümörün sınıflandırılması ve izlemi için aşağıdakilerden hangisi en doğrudur?",
+      "secenekler": {
+        "A": "Klinik olarak sessiz olduğu için gonadotrop PitNET kabul edilir; standart fonksiyonsuz adenom izlemi yeterlidir",
+        "B": "Hormon boyanması belirgin olmadığından null hücreli tümördür; Ki-67 düşük olduğu için ek izleme gerek yoktur",
+        "C": "Sessiz kortikotrop PitNET'tir; nüks ve agresif seyir eğilimi nedeniyle daha sık MRG izlemi ve hiperkortizolizm açısından dönemsel tarama gerekir",
+        "D": "ACTH boyanması zayıf olduğundan tümör kortikotrop soydan sayılmaz; Ki-67 %3'ün altında olduğu için MRG izlemi gereksizdir",
+        "E": "Plurihormonal PIT1 pozitif tümördür; tiroid fonksiyonları ve IGF-1 ile yakın izlenmelidir"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "DSÖ 2022 sınıflaması soyu transkripsiyon faktörüyle tanımlar: TPIT pozitif, klinik olarak hiperkortizolizm yapmayan tümör sessiz kortikotrop PitNET'tir ve fonksiyonsuz adenomlar içinde nüks ve invazyon eğilimi yüksek bir alt gruptur.",
+      "aciklama_detay": "Güncel DSÖ (2022, 5. baskı) yaklaşımında hipofiz tümörleri PitNET olarak adlandırılır ve soy, hormon boyanmasından çok nükleer transkripsiyon faktörüne göre belirlenir: PIT1 (somatotrop, laktotrop, tirotrop), TPIT (kortikotrop) ve SF1 (gonadotrop). Üç faktörün de negatif olduğu tümör null hücreli tümördür; bu hastada TPIT yaygın pozitif olduğu için null hücreli ya da gonadotrop sayılamaz. Klinik ve biyokimyasal hiperkortizolizm olmadan TPIT soyu gösteren tümör sessiz kortikotrop PitNET'tir. Bu alt tip klinik olarak fonksiyonsuz makroadenomların önemli bir kısmını oluşturur, sıklıkla makroadenom ve kavernöz sinüs invazyonuyla başvurur, nüks oranı gonadotrop tümörlerden yüksektir ve apopleksi eğilimi bildirilmiştir. Bir kısmı zamanla fonksiyonel hale gelip Cushing hastalığına dönüşebildiği için izlemde hiperkortizolizm belirtileri sorgulanmalı ve gerektiğinde tarama testleri yinelenmelidir. Ki-67 tek başına agresifliği dışlamaz; kavernöz sinüs invazyonu ve soy bilgisi birlikte değerlendirilir. Rezidü ya da nüks durumunda adjuvan radyoterapi eşiği daha düşük tutulur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Gonadotrop PitNET SF1 soyundandır; bu tümörde SF1 negatif, TPIT pozitiftir. Sessiz olması soyu değiştirmez.",
+        "B": "YANLIS — Null hücreli tümör tanısı için PIT1, TPIT ve SF1'in üçü de negatif olmalıdır; burada TPIT yaygın pozitiftir.",
+        "C": "DOGRU — TPIT pozitif, klinik olarak sessiz tümör sessiz kortikotrop PitNET'tir; agresif seyir eğilimi yakın MRG izlemi, fonksiyonel dönüşüm olasılığı da hiperkortizolizm taraması gerektirir.",
+        "D": "YANLIS — Soy, hormon boyanmasının yoğunluğuyla değil transkripsiyon faktörüyle belirlenir. Ki-67 düşüklüğü invaziv bir makroadenomda izlemi gereksiz kılmaz.",
+        "E": "YANLIS — Plurihormonal PIT1 tümör tanısı PIT1 pozitifliği gerektirir; bu tümörde PIT1 negatiftir."
+      },
+      "etiketler": ["PitNET", "DSÖ 2022 sınıflaması", "TPIT", "Sessiz kortikotrop tümör", "Fonksiyonsuz makroadenom"],
+      "zorluk": "zor",
+      "kaynak": "DSÖ 2022 Endokrin ve Nöroendokrin Tümör Sınıflaması (5. baskı); Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s2",
+      "metin": "22 yaşında erkek hasta, 16 yaşından beri ayakkabı numarasının büyüdüğünü, baş ağrısı ve aşırı terleme yakınmalarını anlatıyor. Boyu 198 cm; dayısında da jigantizm öyküsü var.\n\nTetkikler:\n• IGF-1: normalin üst sınırının 3,4 katı\n• Hipofiz MRG: 26 mm makroadenom, T2 ağırlıklı kesitlerde hiperintens, kavernöz sinüs invazyonu\n• Germline genetik inceleme: AIP geninde patojenik varyant\n\nSubtotal transsfenoidal rezeksiyon sonrası 6 ay boyunca en yüksek dozda oktreotid LAR (30 mg/4 hafta) kullanan hastada:\n• IGF-1: normalin üst sınırının 2,6 katı\n• GH: 6 µg/L\n• Görme alanı normal, rezidü tümör kavernöz sinüs içinde ve stabil\n\nBu hasta için en uygun sonraki tedavi adımı hangisidir?",
+      "secenekler": {
+        "A": "Pasireotid LAR ya da pegvisomanta geçmek (gerekirse kombinasyon)",
+        "B": "Oktreotidi kesip kabergolin monoterapisine geçmek",
+        "C": "Medikal tedaviyi kesip bir yıl sonra MRG ile yeniden değerlendirmek",
+        "D": "Aynı dozda oktreotid LAR ile 12 ay daha yanıt beklemek",
+        "E": "Konvansiyonel radyoterapi uygulayıp etkisi görülene kadar tüm medikal tedaviyi kesmek"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "AIP mutasyonlu, T2 hiperintens (çoğunlukla seyrek granüllü) somatotrop tümörler birinci kuşak SRL'ye dirençlidir; 6 ay en yüksek dozda yetersiz yanıt varsa ikinci basamak medikal tedaviye (pasireotid ya da pegvisomant) geçilir.",
+      "aciklama_detay": "AIP germline mutasyonu genç yaşta, erkeklerde baskın, büyük ve invaziv somatotrop ya da miks tümörlerle ilişkilidir. Bu tümörlerde SSTR2 ekspresyonu azalmıştır ve birinci kuşak somatostatin reseptör ligandlarına (oktreotid, lanreotid) yanıt zayıftır. T2 ağırlıklı MRG'de hiperintensite seyrek granüllü alt tipe ve SRL direncine işaret eden bir biyobelirteçtir. TEMD 2022 kılavuzu AIP pozitif akromegalide pasireotid ile daha iyi yanıt bildirildiğini belirtir. Pituitary Society güncellemesi de birinci kuşak SRL'ye yetersiz yanıtta pasireotid LAR ya da pegvisomanta geçişi (ya da kombinasyonu) önerir. Kabergolin yalnızca IGF-1'i hafif yüksek (yaklaşık 2 katın altında) olgularda tek başına etkili olabilir. Radyoterapi dirençli rezidü tümörde bir seçenektir, ancak etkisi yıllar içinde ortaya çıktığından bu dönemde medikal tedaviyle köprüleme gerekir; medikal tedaviyi kesmek kontrolsüz GH fazlalığının kardiyovasküler ve metabolik yükünü sürdürür.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Birinci kuşak SRL'ye en yüksek dozda 6 aylık yetersiz yanıt dirence işaret eder; SSTR5 afinitesi yüksek pasireotid ya da GH reseptör antagonisti pegvisomant ikinci basamaktır.",
+        "B": "YANLIS — Kabergolin monoterapisi yalnızca hafif IGF-1 yüksekliğinde etkilidir; normalin 2,6 katı IGF-1'de yeterli olmaz.",
+        "C": "YANLIS — Kontrolsüz akromegali mortaliteyi artırır; tedavisiz izlem kabul edilemez.",
+        "D": "YANLIS — Yanıt 3–6 ayda değerlendirilir; AIP ve T2 hiperintensite zaten direnci öngörür, aynı tedaviyi uzatmak yarar sağlamaz.",
+        "E": "YANLIS — Radyoterapinin biyokimyasal etkisi yıllar alır; bu sürede medikal tedavi kesilmez, köprü olarak sürdürülür."
+      },
+      "etiketler": ["Akromegali", "AIP mutasyonu", "SRL direnci", "Pasireotid", "Pegvisomant"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022; Fleseriu ve ark., Pituitary Society akromegali güncellemesi, Pituitary 2021"
+    },
+    {
+      "id": "s3",
+      "metin": "41 yaşında erkek hasta, baş ağrısı, çarpıntı ve terleme ataklarıyla başvuruyor. 3 yıl önce makroprolaktinoma tanısı almış; kabergolin 3,5 mg/haftaya rağmen prolaktin normale inmediği için opere edilmiş. Patoloji raporunda tümör hücrelerinde belirgin sitoplazmik vakuolizasyon not edilmiş. Babası 50 yaşında böbrek kanserinden ölmüş.\n\nTetkikler:\n• Plazma normetanefrin: normalin üst sınırının 6 katı; metanefrin normal\n• Kalsiyum ve PTH: normal\n• Kalsitonin: normal\n• Abdomen MRG: 4 cm para-aortik (retroperitoneal) paraganglioma\n\nBu hastada germline mutasyon açısından en olası gen hangisidir?",
+      "secenekler": {
+        "A": "MEN1",
+        "B": "AIP",
+        "C": "RET",
+        "D": "SDHB (SDHx)",
+        "E": "PRKAR1A"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Hipofiz adenomu ile feokromositoma/paraganglioma birlikteliği 3PA sendromudur; en sık SDHx (özellikle SDHB) ve MAX mutasyonlarıyla ilişkilidir. Aile öyküsündeki böbrek kanseri de SDHB lehinedir.",
+      "aciklama_detay": "3PA (pitüiter adenom + feokromositoma/paraganglioma birlikteliği) nadir bir sendromdur ve süksinat dehidrogenaz alt birim genleri (SDHA, SDHB, SDHC, SDHD) ile MAX mutasyonları sorumludur. SDHx ilişkili hipofiz tümörleri sıklıkla prolaktinoma ya da somatotrop tümördür, agresif seyirli ve dopamin agonistine dirençli olabilir; histolojide belirgin sitoplazmik vakuolizasyon karakteristiktir. Ekstra-adrenal, noradrenalin salgılayan (normetanefrin baskın) paraganglioma SDHB için tipiktir; SDHB aynı zamanda böbrek hücreli kanser ve gastrointestinal stromal tümör riskini artırır. MEN1 sendromunda feokromositoma çok nadirdir ve primer hiperparatiroidi hemen her zaman ilk bulgudur; burada kalsiyum ve PTH normaldir. RET (MEN2) medüller tiroid kanseri ve adrenal feokromositoma yapar, hipofiz tümörü beklenmez. AIP ailevi izole hipofiz adenomuna yol açar, paraganglioma yapmaz. PRKAR1A (Carney kompleksi) PPNAD, miksoma ve lentiginoz ile seyreder. Paraganglioma cerrahisinden önce alfa blokajı şarttır ve birinci derece akrabalara genetik danışmanlık önerilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — MEN1'de feokromositoma çok nadirdir ve primer hiperparatiroidi hastaların büyük çoğunluğunda ilk bulgudur; kalsiyum/PTH normaldir.",
+        "B": "YANLIS — AIP mutasyonu ailevi izole hipofiz adenomuna yol açar; paraganglioma ile ilişkili değildir.",
+        "C": "YANLIS — RET (MEN2) medüller tiroid kanseri ve adrenal feokromositoma yapar; hipofiz tümörü tabloya girmez, kalsitonin normaldir.",
+        "D": "DOGRU — Hipofiz adenomu + paraganglioma (3PA), vakuolize tümör hücreleri, ekstra-adrenal noradrenerjik tümör ve ailede böbrek kanseri SDHB'yi düşündürür.",
+        "E": "YANLIS — PRKAR1A (Carney kompleksi) GH/PRL fazlalığı yapabilir ama paraganglioma değil PPNAD, miksoma ve pigmente deri lezyonlarıyla seyreder."
+      },
+      "etiketler": ["3PA sendromu", "SDHx", "Paraganglioma", "Genetik hipofiz tümörü", "Dopamin agonisti direnci"],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s4",
+      "metin": "29 yaşında kadın hasta, 6 mm mikroprolaktinoma nedeniyle 14 aydır kabergolin 0,5 mg/hafta kullanıyor; prolaktini normal, adetleri düzenli. Gebelik testi pozitif çıkıyor (son adete göre 5. hafta). Baş ağrısı ve görme yakınması yok, konfrontasyonla görme alanı normal.\n\nBu hasta için gebelik boyunca en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kabergolini gebelik boyunca sürdürmek ve prolaktini ayda bir ölçmek",
+        "B": "Kabergolini kesmek; rutin prolaktin ve MRG yapmadan klinik izlemek, baş ağrısı ya da görme yakınması olursa görme alanı ve kontrastsız MRG istemek",
+        "C": "Kabergolini bromokriptine çevirip doğuma kadar sürdürmek",
+        "D": "Kabergolini kesip prolaktin iki katına çıkarsa yeniden başlamak",
+        "E": "Her trimesterde gadolinyumlu hipofiz MRG ile tümör boyutunu izlemek"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Mikroprolaktinomada gebelik saptanınca dopamin agonisti kesilir; semptomatik büyüme riski yaklaşık %2–3 olduğundan rutin prolaktin ve MRG izlemi yapılmaz, yalnızca bası bulgusu olursa görme alanı ve kontrastsız MRG istenir.",
+      "aciklama_detay": "Gebelikte östrojen laktotrop hiperplazisi yapar ve hipofiz fizyolojik olarak büyür. Mikroprolaktinomada klinik anlamlı tümör büyümesi yaklaşık %2,4 iken, tedavi edilmemiş makroprolaktinomada bu oran %21'e çıkar. Bu nedenle Endocrine Society 2011 ve TEMD 2022 kılavuzları mikroprolaktinoma ve sella içinde sınırlı makroadenomda gebelik doğrulanınca dopamin agonistinin kesilmesini önerir; invaziv ya da suprasellar uzanımlı makroadenomda ise tedavinin sürdürülmesi düşünülür. Gebelikte prolaktin normalde de yükseldiği için seri prolaktin ölçümü tümör büyümesini yansıtmaz ve karar vermede kullanılmaz. Rutin MRG de gerekmez; şiddetli baş ağrısı ya da görme alanı defekti gelişirse görme alanı incelemesi ve kontrastsız MRG yapılır, büyüme doğrulanırsa dopamin agonisti (bromokriptin ya da kabergolin) yeniden başlanır. Gadolinyum gebelikte rutin kullanılmaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Mikroprolaktinomada tedaviyi sürdürmek gerekmez; gebelikte prolaktin fizyolojik olarak yükseldiği için seri ölçüm yol göstermez.",
+        "B": "DOGRU — Mikroprolaktinomada DA kesilir; izlem klinik yapılır, bası bulgusu çıkarsa görme alanı ve kontrastsız MRG istenir.",
+        "C": "YANLIS — Bromokriptin, gebelikte DA gerekirse tercih edilebilecek ajandır; ancak bu hastada DA sürdürme endikasyonu yoktur.",
+        "D": "YANLIS — Gebelikte prolaktin artışı fizyolojiktir; tedavi kararı prolaktin düzeyine değil klinik bası bulgusuna göre verilir.",
+        "E": "YANLIS — Rutin MRG önerilmez ve gebelikte gadolinyumdan kaçınılır; görüntüleme yalnızca semptom varsa kontrastsız yapılır."
+      },
+      "etiketler": ["Prolaktinoma", "Gebelik", "Kabergolin", "Mikroadenom", "İzlem"],
+      "zorluk": "kolay",
+      "kaynak": "Endocrine Society 2011 hiperprolaktinemi kılavuzu (Melmed ve ark.); TEMD Hipofiz Hastalıkları Kılavuzu 2022"
+    },
+    {
+      "id": "s5",
+      "metin": "36 yaşında erkek hasta, 30 ay önce 17 mm makroprolaktinoma (başlangıç prolaktini 1450 ng/mL) tanısıyla kabergolin başlanmış; doz 1 mg/haftada sabit. Son 2 yıldır prolaktin normal sınırlarda (son ölçüm 9 ng/mL), libido ve testosteron düzelmiş. İlacı bırakmak istiyor.\n\nKontrol MRG:\n• Rezidü 5 mm doku (tümör hacminde %80'in üzerinde küçülme)\n• Kavernöz sinüs invazyonu yok\n• Rezidü ile optik kiazma arası 8 mm\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Makroadenom olduğu için kabergolini ömür boyu sürdürmek",
+        "B": "Kabergolini bir anda kesip yalnızca 2 yıl sonra MRG çekmek",
+        "C": "İlacı kesmeden önce rezidü dokuyu transsfenoidal cerrahiyle çıkarmak",
+        "D": "Kabergolini kesip prolaktini yalnızca yakınma olursa ölçmek",
+        "E": "Dozu azaltarak kesmek; ilk yıl 3 ayda bir, sonra yılda bir prolaktin ölçmek"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "En az 2 yıl DA tedavisi, sağlanmış normoprolaktinemi, %50'den fazla küçülme, kavernöz sinüs invazyonu yokluğu ve kiazmaya 5 mm'den uzaklık varsa makroprolaktinomada ilaç dozu azaltılarak kesilebilir; nüks çoğunlukla ilk yılda olduğu için yakın prolaktin izlemi gerekir.",
+      "aciklama_detay": "TEMD 2022 kılavuzu makroprolaktinomada dopamin agonistinin kesilmesini ancak şu koşulların hepsi sağlandığında önerir: en az 2 yıl tedavi, normoprolaktinemi, tümör hacminde %50'den fazla küçülme, kavernöz sinüs invazyonunun olmaması ve tümörün optik kiazmaya 5 mm'den uzak olması. Bu hasta ölçütlerin tümünü karşılıyor. İlaç doz yavaşça azaltılarak kesilir. Nüks riski %26–69 arasında bildirilir ve çoğu ilk 12 ayda ortaya çıkar; bu yüzden ilk yıl 3 ayda bir, sonrasında yılda bir prolaktin ölçülür. Hiperprolaktinemi yinelediğinde, özellikle semptom ya da tümör büyümesi varsa, kabergolin yeniden başlanır ve genellikle yine etkilidir. Kesme sonrası prolaktin 120 güne kadar baskılı kalabildiği için ilk ölçümlerin normal olması tek başına kalıcı remisyon anlamına gelmez. Cerrahi, ilaca yanıtlı ve küçülmüş bir tümörde endike değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Makroadenom olması tek başına ömür boyu tedavi gerektirmez; ölçütleri karşılayan hastada kesme denemesi uygundur.",
+        "B": "YANLIS — İlaç ani değil azaltılarak kesilir ve izlem MRG ile değil öncelikle seri prolaktinle yapılır.",
+        "C": "YANLIS — DA'ya iyi yanıt veren, küçülmüş rezidü dokuda cerrahi endikasyonu yoktur.",
+        "D": "YANLIS — Nüks çoğu zaman sessizdir ve ilk yılda sıktır; semptom beklemek geç tanıya yol açar.",
+        "E": "DOGRU — Beş ölçütü karşılayan hastada doz azaltılarak kesilir; nüks için ilk yıl 3 ayda bir, sonra yılda bir prolaktin izlenir."
+      },
+      "etiketler": ["Makroprolaktinoma", "Kabergolin kesme", "Nüks", "Prolaktin izlemi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022; Endocrine Society 2011 hiperprolaktinemi kılavuzu (Melmed ve ark.)"
+    },
+    {
+      "id": "s6",
+      "metin": "52 yaşında erkek hasta, 8 yıl önce makroprolaktinoma tanısı almış. Başlangıçta kabergolin ile prolaktin kontrol altına alınmış; sonrasında tümör büyümesi nedeniyle iki kez transsfenoidal cerrahi ve 4 yıl önce fraksiyone radyoterapi uygulanmış.\n\nSon 12 ayda:\n• Kabergolin 7 mg/hafta altında prolaktin 380 → 2100 ng/mL\n• MRG: rezidü tümör hacminde %40 artış, sol kavernöz sinüse yeni uzanım\n• Son cerrahi patolojisi: Ki-67 %8, p53 pozitif, mitoz artmış\n• Spinal ve kraniyal MRG ile tüm vücut taramasında metastaz yok\n\nBu hasta için en uygun sonraki tedavi hangisidir?",
+      "secenekler": {
+        "A": "Kabergolin dozunu 11 mg/haftaya çıkarmak",
+        "B": "Hipofiz karsinomu tanısıyla platin–etoposid kemoterapisi başlamak",
+        "C": "Temozolomid başlamak ve 3 kür sonra MRG ile yanıtı değerlendirmek",
+        "D": "Kabergolini kesip bromokriptine geçmek",
+        "E": "Tedaviyi everolimus monoterapisiyle sürdürmek"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Standart tedavilere (DA, tekrarlı cerrahi, radyoterapi) rağmen büyüyen agresif hipofiz tümöründe ilk basamak sistemik tedavi temozolomiddir; yanıt 3 kür sonra değerlendirilir, yanıt varsa en az 6 ay sürdürülür.",
+      "aciklama_detay": "Agresif hipofiz tümörü, radyolojik olarak invaziv olup standart tedavilere rağmen olağandışı hızla büyüyen ya da nükseden tümördür; metastaz yoksa karsinom (güncel adıyla metastatik PitNET) tanısı konmaz. Ki-67 %3'ün üzerinde, p53 pozitifliği ve mitoz artışı agresif potansiyeli düşündürür ama malignite tanısı için yetmez. ESE 2018 kılavuzu ve TEMD 2022, dopamin agonisti, tekrarlanan cerrahi ve radyoterapi sonrası ilerleyen tümörde temozolomidi birinci basamak kemoterapi olarak önerir: 150–200 mg/m² dozunda, 28 günlük döngülerde 5 gün. Üç kür sonra MRG ile yanıt değerlendirilir, yanıt varsa en az 6 ay sürdürülür. Düşük MGMT ekspresyonu daha iyi yanıtı öngörür. Bu hastada 7 mg/haftaya rağmen prolaktinin yükselmesi ikincil DA direncidir ve tedavi sırasında gelişen ikincil direnç malign dönüşümü düşündürmelidir; dozu daha da artırmak ya da bromokriptine geçmek anlamlı yarar sağlamaz. Platin–etoposid gibi rejimler ve everolimus birinci basamakta yer almaz; temozolomid başarısızlığında sınırlı veriyle denenen seçeneklerdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — 7 mg/haftada ilerleyen tümör DA direncini gösterir; doz artışı bu noktada anlamlı yanıt sağlamaz.",
+        "B": "YANLIS — Metastaz olmadığı için karsinom tanısı konmaz; ayrıca birinci basamak kemoterapi platin–etoposid değil temozolomiddir.",
+        "C": "DOGRU — DA, cerrahi ve radyoterapiye rağmen ilerleyen agresif hipofiz tümöründe temozolomid birinci basamak sistemik tedavidir.",
+        "D": "YANLIS — Bromokriptin kabergolinden daha az etkilidir; kabergolin direncinde geçiş yarar sağlamaz.",
+        "E": "YANLIS — Everolimusun agresif hipofiz tümöründe verisi sınırlıdır; temozolomid öncesi birinci seçenek değildir."
+      },
+      "etiketler": ["Agresif hipofiz tümörü", "Temozolomid", "Dopamin agonisti direnci", "Ki-67", "Prolaktinoma"],
+      "zorluk": "zor",
+      "kaynak": "ESE 2018 agresif hipofiz tümörleri ve karsinomları kılavuzu (Raverot ve ark.); TEMD Hipofiz Hastalıkları Kılavuzu 2022"
+    },
+    {
+      "id": "s7",
+      "metin": "45 yaşında kadın hasta, akromegali nedeniyle transsfenoidal cerrahi sonrası persistan hastalık nedeniyle 9 ay en yüksek dozda lanreotid kullanmış; IGF-1 normale inmediği için pasireotid LAR 40 mg/4 hafta başlanmış. Tedavi öncesi HbA1c %5,9 imiş.\n\nPasireotid başlandıktan 3 ay sonra:\n• IGF-1: yaşa göre normal aralıkta\n• Açlık plazma glukozu: 168 mg/dL\n• HbA1c: %7,4\n• Karaciğer ve böbrek fonksiyonları normal\n\nBu hastadaki hiperglisemi ve yönetimi için aşağıdakilerden hangisi en doğrudur?",
+      "secenekler": {
+        "A": "SSTR5 aracılı insülin ve inkretin (GLP-1, GIP) salgısının baskılanmasına bağlıdır; metformin, gerekirse DPP-4 inhibitörü ya da GLP-1 RA eklenerek pasireotide devam edilir",
+        "B": "Pasireotidin artırdığı GH'ye bağlı insülin direncinden kaynaklanır; tedavi hemen oktreotide çevrilmelidir",
+        "C": "Otoimmün β hücre hasarıdır; pasireotid kesilip bazal–bolus insülin başlanmalıdır",
+        "D": "Pasireotidin ACTH üzerinden kortizolü artırmasına bağlı steroid diyabetidir; hidrokortizon dozu azaltılmalıdır",
+        "E": "Hiperglisemi yetersiz hastalık kontrolünü gösterir; pasireotid dozu 60 mg'a çıkarılmalıdır"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Pasireotid SSTR5 ve SSTR2 üzerinden insülin ile GLP-1/GIP salgısını baskılar, glukagonu ise daha az etkiler; hiperglisemi IGF-1 kontrolünden bağımsızdır ve inkretin temelli tedaviyle yönetilerek ilaca devam edilebilir.",
+      "aciklama_detay": "Pasireotid çoklu reseptör ligandıdır ve SSTR5 afinitesi yüksektir. Pankreas β hücrelerinde ve bağırsak L/K hücrelerinde SSTR5 baskın olduğundan insülin salgısı ve inkretin (GLP-1, GIP) yanıtı belirgin azalır; α hücrelerinde baskın olan SSTR2 üzerindeki etkisi görece zayıf olduğu için glukagon yeterince baskılanmaz. Sonuç, insülin duyarlılığında değişiklik olmaksızın gelişen salgısal hiperglisemidir. Tedavi öncesi prediyabet ya da diyabet risk faktörüdür. Yönetimde yaşam tarzı ve metformin ilk basamaktır; mekanizmaya uygun olarak DPP-4 inhibitörü ya da GLP-1 reseptör agonisti eklenir, gerekirse insüline geçilir. IGF-1 normale inmiş bir hastada glisemi yönetilebildiği sürece pasireotid sürdürülür. GH fazlalığı insülin direnci yapar, ancak burada IGF-1 normalleşmiştir; hiperglisemi hastalık aktivitesini değil ilacın doğrudan etkisini yansıtır. Birinci kuşak SRL'ye dönüş, zaten yetersiz kalmış bir tedaviye dönmek olur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Mekanizma insülin ve inkretin salgısının azalmasıdır; metformin ile inkretin temelli tedavi eklenerek hastalık kontrolü sağlayan ilaç sürdürülür.",
+        "B": "YANLIS — IGF-1 normalleşmiştir; hiperglisemi GH fazlalığına değil insülin salgısının baskılanmasına bağlıdır. Oktreotid zaten yetersiz kalmış sınıftandır.",
+        "C": "YANLIS — Tablo otoimmün değildir ve ilacın öngörülebilir farmakolojik etkisidir; ilacı kesmek gerekmez.",
+        "D": "YANLIS — Pasireotid ACTH ve kortizolü artırmaz, aksine azaltabilir; Cushing hastalığında da bu nedenle kullanılır.",
+        "E": "YANLIS — IGF-1 normaldir; doz artışı hiperglisemiyi kötüleştirir ve endike değildir."
+      },
+      "etiketler": ["Pasireotid", "Hiperglisemi", "SSTR5", "İnkretin", "Akromegali"],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium); Fleseriu ve ark., Pituitary Society akromegali güncellemesi, Pituitary 2021"
+    },
+    {
+      "id": "s8",
+      "metin": "31 yaşında kadın hasta, kanama ya da hipotansiyon olmadan normal vajinal doğum yaptıktan 3 hafta sonra şiddetli baş ağrısı, bulantı, halsizlik ve günde yaklaşık 6 litre idrar yapma yakınmasıyla başvuruyor. Bebeğini emzirebiliyor. Görme alanı normal.\n\nTetkikler:\n• Serum Na: 146 mEq/L; idrar osmolalitesi: 110 mOsm/kg\n• Sabah kortizolü: 2,1 µg/dL; ACTH: 6 pg/mL\n• Serbest T4: 0,9 ng/dL (0,8–1,8); TSH: 1,1 mIU/L\n• Prolaktin: 48 ng/mL; IGF-1: yaşa göre normal\n• Hipofiz MRG: 14 mm simetrik, homojen yoğun kontrast tutan bez büyümesi, sap 5 mm kalın, T1'de nörohipofiz parlak noktası yok, komşu durada kontrast tutulumu; kiazma basısı yok\n\nBu hasta için en olası tanı ve en uygun başlangıç yaklaşımı hangisidir?",
+      "secenekler": {
+        "A": "Sheehan sendromu; hidrokortizon ve levotiroksin aynı gün başlanmalı",
+        "B": "Fonksiyonsuz makroadenom; transsfenoidal cerrahi planlanmalı",
+        "C": "Prolaktinoma; kabergolin başlanmalı",
+        "D": "Lenfositik hipofizit; önce hidrokortizon, ardından desmopressin başlanıp izlenmeli",
+        "E": "Lenfositik hipofizit; yüksek doz metilprednizolon ve tanısal biyopsi yapılmalı"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Komplikasyonsuz doğum sonrası, önce ACTH kaybı, eşlik eden AVP eksikliği ve simetrik homojen bez büyümesi lenfositik hipofiziti düşündürür; kitle etkisi yoksa tedavi hormon replasmanıdır (önce glukokortikoid) ve izlemdir.",
+      "aciklama_detay": "Lenfositik hipofizit en sık gebeliğin son trimesteri ve lohusalıkta görülür. Adenomdan ayıran ipuçları: hipofiz yetmezliğinin kitle boyutuyla orantısız olması, ilk kaybedilen aksın ACTH olması (adenomda önce GH ve gonadotropinler), eşlik eden AVP eksikliği (santral diabetes insipidus; adenomda nadirdir), MRG'de simetrik yoğun homojen kontrast tutulumu, kalın sap, parlak noktanın kaybı ve dural kuyruk. Sheehan sendromu doğumda masif kanama ve hipotansiyon öyküsü gerektirir, laktasyon yetersizliği tipiktir ve akut dönem sonrası sella boşalır; bu hastada kanama yok ve emzirebiliyor. Tedavide ilk adım glukokortikoid replasmanıdır; glukokortikoid eksikliği AVP eksikliğini maskeleyebildiği için hidrokortizon sonrası poliüri artabilir ve desmopressin gerekir. Santral hipotiroidi gelişirse levotiroksin glukokortikoidden sonra başlanır. Spontan gerileme sık olduğundan görme alanı defekti, kraniyal sinir tutulumu ya da dirençli baş ağrısı yoksa yüksek doz glukokortikoid veya cerrahi gerekmez; seri MRG ve hormon değerlendirmesiyle izlenir. Biyopsi yalnızca tanı belirsizse ya da tedaviye yanıtsız kitlede düşünülür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sheehan sendromu doğumda kanama/şok gerektirir ve laktasyon yetersizliğiyle başlar; ayrıca levotiroksin glukokortikoidle aynı gün değil sonra başlanır.",
+        "B": "YANLIS — Adenomda ilk kaybedilen aks ACTH değildir ve AVP eksikliği nadirdir; kitle etkisi olmayan hipofizitte cerrahi gereksizdir.",
+        "C": "YANLIS — Prolaktin 48 ng/mL sap etkisi ve lohusalıkla uyumludur; prolaktinoma bu tabloyu açıklamaz.",
+        "D": "DOGRU — Peripartum dönem, erken ACTH kaybı, AVP eksikliği ve tipik MRG lenfositik hipofiziti gösterir; önce hidrokortizon, sonra desmopressin ve izlem.",
+        "E": "YANLIS — Görme alanı ve kraniyal sinir tutulumu olmayan hastada yüksek doz steroid ve biyopsi ilk basamak değildir; spontan gerileme sıktır."
+      },
+      "etiketler": ["Lenfositik hipofizit", "Postpartum", "AVP eksikliği", "Sheehan sendromu", "Glukokortikoid replasmanı"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 5)"
+    },
+    {
+      "id": "s9",
+      "metin": "27 yaşında erkek hasta, 4 aydır günde 7 litre su içme ve sık idrara çıkma yakınmasıyla başvuruyor. Günde 1,5 paket sigara içiyor. Sol kulak arkasında ağrısız şişlik fark etmiş.\n\nTetkikler:\n• Susuzluk testi ve desmopressin yanıtı: santral AVP eksikliği ile uyumlu\n• Hipofiz MRG: hipofiz sapında 5,5 mm kalınlaşma, T1'de parlak nokta yok\n• Toraks BT: üst loblarda baskın, kostofrenik açıları koruyan nodüller ve düzensiz şekilli kistler\n• Kranyum BT: sol temporal kemikte keskin sınırlı litik lezyon\n• Serum ve BOS β-hCG ile AFP: normal; serum ACE: normal\n\nBu hasta için en olası tanı ve tanıyı koydurmak için en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "Nörosarkoidoz; transbronşiyal biyopsi",
+        "B": "Langerhans hücreli histiyositoz; kemik lezyonundan biyopsi (CD1a, langerin ve BRAF V600E)",
+        "C": "Germinom; hipofiz sapından stereotaktik biyopsi",
+        "D": "IgG4 ilişkili hipofizit; serum IgG4 ölçümü ve ampirik prednizolon",
+        "E": "Lenfositik infundibulonörohipofizit; ampirik yüksek doz glukokortikoid"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Santral AVP eksikliği, sap kalınlaşması, sigara içen gençte üst lob baskın nodül-kist paterni ve litik kemik lezyonu Langerhans hücreli histiyositozu düşündürür; tanı en kolay ulaşılan lezyonun biyopsisiyle konur.",
+      "aciklama_detay": "Langerhans hücreli histiyositoz (LHH) erişkinde santral AVP eksikliğinin önemli nedenlerindendir ve AVP eksikliği LHH tanısından önce, aynı anda ya da sonra ortaya çıkabilir; TEMD 2022 açıklanamayan her AVP eksikliğinde LHH'nin düşünülmesini ister. Sigara içen genç erişkinde üst loblarda baskın, bazalleri koruyan nodüller ve düzensiz kistler pulmoner LHH için tipiktir; temporal kemik ve kranyumdaki litik lezyonlar da sık tutulum yerleridir. Tanı, hipofiz sapı yerine en kolay ve güvenli ulaşılan lezyondan (bu hastada temporal kemik) alınan biyopside CD1a ve langerin (CD207) pozitif histiyositlerin gösterilmesiyle konur; olguların çoğunda BRAF V600E ya da MAPK yolağında başka aktive edici mutasyon bulunur ve hedefe yönelik tedavi seçeneği sağlar. Normal β-hCG ve AFP germinomu tümüyle dışlamasa da akciğer ve kemik bulguları germinomla açıklanmaz. Nörosarkoidozda akciğerde hiler lenfadenopati ve perilenfatik nodüller beklenir, litik kemik lezyonu tipik değildir. Ampirik glukokortikoid tanı konmadan verilmemelidir; LHH ve lenfoma gibi süreçlerde histolojiyi bozabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sarkoidozda hiler lenfadenopati ve perilenfatik nodüller beklenir; sigara ile ilişkili üst lob kistleri ve litik kafatası lezyonu LHH'yi gösterir.",
+        "B": "DOGRU — AVP eksikliği + sap kalınlaşması + pulmoner nodül-kist + litik kemik lezyonu LHH'dir; en erişilebilir lezyondan biyopsi ve BRAF analizi yapılır.",
+        "C": "YANLIS — Germinom akciğer kistlerini ve litik kemik lezyonunu açıklamaz; daha kolay biyopsi yapılabilecek lezyon varken sap biyopsisi tercih edilmez.",
+        "D": "YANLIS — IgG4 hastalığı bu akciğer ve kemik paternini açıklamaz; ampirik steroid tanıyı geciktirir.",
+        "E": "YANLIS — Sistemik bulgular primer hipofiziti dışlar; tanısız ampirik steroid uygun değildir."
+      },
+      "etiketler": ["Langerhans hücreli histiyositoz", "Santral AVP eksikliği", "Sap kalınlaşması", "BRAF V600E", "İnfiltratif hipofiz hastalığı"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 11)"
+    },
+    {
+      "id": "s10",
+      "metin": "63 yaşında erkek hasta, atriyal fibrilasyon nedeniyle apiksaban kullanıyor. 6 saat önce aniden başlayan çok şiddetli baş ağrısı, kusma ve sağ göz kapağında düşüklük ile çift görme yakınmasıyla acile getiriliyor.\n\nMuayene: Bilinç açık (GKS 15), sağ tam pitoz, sağ gözde addüksiyon ve elevasyon kısıtlı, pupil dilate (sağ III. kraniyal sinir felci). Görme keskinliği her iki gözde tam, perimetride görme alanı normal. TA 108/64 mmHg.\n\nTetkikler:\n• Na: 131 mEq/L, glukoz: 72 mg/dL\n• Kontrastsız BT: sellar bölgede hiperdens alan içeren kitle, subaraknoid kanama yok\n• MRG: 24 mm hemorajik makroadenom, kiazma basısı yok\n• Kortizol ve diğer hormonlar için kan alındı, sonuçlar bekleniyor\n\nBu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Kortizol sonucunu bekleyip 5 µg/dL altında ise hidrokortizon başlamak",
+        "B": "Kraniyal sinir felci olduğu için ilk 24 saatte acil transsfenoidal dekompresyon yapmak",
+        "C": "Prolaktinoma olasılığına karşı sonucu beklemeden kabergolin başlamak",
+        "D": "Glukokortikoid başlamadan önce subaraknoid kanamayı dışlamak için lomber ponksiyon yapmak",
+        "E": "Sonucu beklemeden IV hidrokortizon başlayıp yakın nöro-oftalmolojik izlemle konservatif yönetmek"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Hipofiz apopleksisinde kortizol için kan alınır alınmaz sonuç beklenmeden yüksek doz parenteral hidrokortizon başlanır; görme keskinliği ve alanı korunmuş, bilinci açık hastada izole okülomotor felç konservatif izlenebilir.",
+      "aciklama_detay": "Apopleksi olgularının çoğunda adenom önceden bilinmez; antikoagülan kullanımı gibi kolaylaştırıcı bir etken yaklaşık %40 olguda vardır. En sık ve hayatı tehdit eden eksiklik ACTH'dir; hipotansiyon, hiponatremi ve düşük-normal glukoz akut adrenal yetmezliği düşündürür. TEMD 2022 ve İngiltere hipofiz apopleksisi kılavuzu (2011), kortizol için kan alındıktan hemen sonra 100–200 mg IV hidrokortizon bolusu, ardından infüzyon ya da 6 saatte bir 50–100 mg IM/IV önerir; sonuç beklemek ölümcül olabilir. Cerrahi kararı nöro-oftalmolojik bulgulara göre verilir: ciddi görme keskinliği kaybı, kalıcı ya da kötüleşen görme alanı defekti veya bilinç bozukluğu erken transsfenoidal cerrahiyi düşündürür. Bilinci açık, görme keskinliği ve alanı normal, yalnızca okülomotor felci olan hastalar yakın izlemle konservatif yönetilebilir; kavernöz sinüs kaynaklı oküler felçler çoğunlukla medikal tedaviyle de düzelir. BT'de subaraknoid kanama olmaması ve kanamanın sellar kitle içinde gösterilmesi lomber ponksiyonu gereksiz kılar. Dopamin agonisti ancak prolaktinoma doğrulanırsa gündeme gelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Apopleksi, sınırda düşük kan basıncı ve hiponatremi varken kortizol sonucunu beklemek adrenal krize yol açabilir; tedavi ampirik ve hemen başlanır.",
+        "B": "YANLIS — İzole oküler felç, görme keskinliği ve alanı normal, bilinci açık hastada acil cerrahi için tek başına yeterli değildir; kötüleşme olursa cerrahi düşünülür.",
+        "C": "YANLIS — Prolaktin bilinmeden DA başlanmaz; akut dönemde öncelik glukokortikoiddir.",
+        "D": "YANLIS — BT ve MRG kanamanın adenom içinde olduğunu gösteriyor; LP tanıya katkı sağlamaz ve steroidi geciktirir.",
+        "E": "DOGRU — Kan örneği alındıktan sonra hemen IV hidrokortizon; ağır görme kaybı ya da bilinç bozukluğu yoksa konservatif izlem."
+      },
+      "etiketler": ["Hipofiz apopleksisi", "Hidrokortizon", "Okülomotor felç", "Konservatif yönetim", "Adrenal kriz"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 6); İngiltere hipofiz apopleksisi kılavuzu 2011 (Rajasekaran ve ark.)"
+    },
+    {
+      "id": "s11",
+      "metin": "44 yaşında kadın hasta, 18 mm fonksiyonsuz makroadenom nedeniyle transsfenoidal cerrahi geçiriyor; perioperatif hidrokortizon alıyor ve taburculukta günde 20 mg hidrokortizonla devam ediyor.\n\nPostoperatif seyir:\n• 1.–4. gün: günde 5–6 litre idrar, serum Na 147 mEq/L, idrar osmolalitesi 140 mOsm/kg → oral desmopressin 0,1 mg günde 2 kez başlanıyor, hastaya susadıkça bol su içmesi öneriliyor\n• 5. gün: taburcu\n• 8. gün: bulantı, baş ağrısı ve halsizlikle başvuruyor; idrar miktarı belirgin azalmış\n\n8. gün tetkikler:\n• Serum Na: 122 mEq/L; serum osmolalitesi: 256 mOsm/kg\n• İdrar osmolalitesi: 540 mOsm/kg\n• Klinik olarak övolemik\n\nBu tablonun mekanizması ve en uygun yaklaşım için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": {
+        "A": "Trifazik yanıtın ikinci (antidiüretik) fazıdır; desmopressin kesilir, sıvı kısıtlanır ve üçüncü faz açısından sodyum yakın izlenir",
+        "B": "Serebral tuz kaybıdır; izotonik salin ve fludrokortizon başlanmalıdır",
+        "C": "Desmopressin dozu yetersizdir; doz artırılarak diabetes insipidus tam kontrol altına alınmalıdır",
+        "D": "Santral adrenal yetmezliktir; hidrokortizon dozu üç katına çıkarılıp desmopressin sürdürülmelidir",
+        "E": "Kalıcı uygunsuz ADH salınımıdır; desmopressinle birlikte tolvaptan 15 mg başlanmalıdır"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Sap/nörohipofiz hasarından sonra DI'yi 7.–12. günlerde dejenere aksonlardan kontrolsüz AVP boşalmasına bağlı antidiüretik faz izleyebilir; bu fazda desmopressin ve fazla su hiponatremiyi ağırlaştırır.",
+      "aciklama_detay": "Sellar cerrahi ya da travma sonrası AVP eksikliği geçici, kalıcı ya da trifazik olabilir. Birinci faz ameliyattan hemen sonra başlar ve aksonal iletimin bozulmasına bağlı DI ile seyreder (yaklaşık 5–6 gün). İkinci fazda (yaklaşık 7.–12. günler) hasarlı nörohipofiz aksonlarından depolanmış vazopressin kontrolsüz boşalır; bu dönemde desmopressin almaya ve bol su içmeye devam eden hastada ağır hiponatremi gelişir. Depo tükenince üçüncü faz olarak kalıcı DI ortaya çıkabilir. Bu hastada idrar azalmış, idrar yoğun, serum hipotonik ve hasta övolemik: tipik antidiüretik faz. Yönetim desmopressinin kesilmesi, sıvı kısıtlaması ve semptom ağırsa hipertonik salin ile sodyumun kontrollü düzeltilmesidir; kronik hiponatremide 24 saatte 8 mEq/L sınırı aşılmamalıdır. Üçüncü fazı yakalamak için idrar miktarı ve sodyum yakından izlenir; desmopressin yeniden ancak poliüri ve hipernatremi eğilimi dönerse, ihtiyaç halinde tek doz verilerek başlanır. Serebral tuz kaybında hipovolemi beklenir. Hasta fizyolojik dozda hidrokortizon aldığı için adrenal yetmezlik birincil açıklama değildir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Postoperatif 8. günde DI sonrası gelişen övolemik, idrarı yoğun hiponatremi ikinci fazdır; desmopressin kesilir, sıvı kısıtlanır, üçüncü faz beklenir.",
+        "B": "YANLIS — Serebral tuz kaybında hipovolemi vardır; bu hasta övolemiktir ve zamanlama trifazik yanıta uyar.",
+        "C": "YANLIS — Antidiüretik fazda desmopressin artışı hiponatremiyi derinleştirir.",
+        "D": "YANLIS — Hasta fizyolojik dozda hidrokortizon alıyor; desmopressini sürdürmek hiponatremiyi ağırlaştırır.",
+        "E": "YANLIS — Tablo geçicidir; desmopressinle tolvaptanı birlikte vermek çelişkilidir ve aşırı düzeltme riski taşır."
+      },
+      "etiketler": ["Trifazik yanıt", "Postoperatif hiponatremi", "AVP eksikliği", "Transsfenoidal cerrahi", "Desmopressin"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 8)"
+    },
+    {
+      "id": "s12",
+      "metin": "49 yaşında erkek hasta, 8 aydır görmesinde azalma, halsizlik ve libido kaybı yakınmasıyla başvuruyor.\n\nTetkikler:\n• MRG: üçüncü ventrikül tabanına uzanan, 32 mm, iyi sınırlı, büyük ölçüde solid suprasellar kitle; kistik bileşen minimal\n• BT: kitlede kalsifikasyon yok\n• Hormonlar: santral hipotiroidi, hipogonadotropik hipogonadizm, düşük IGF-1, santral AVP eksikliği\n\nHipotalamusa yapışıklık nedeniyle subtotal rezeksiyon yapılıyor. Patoloji: papiller kraniyofarenjiyom, BRAF V600E pozitif. Altı ay sonra rezidü tümör 18 mm'ye büyüyor.\n\nBu hastada rezidü tümör için en uygun sistemik tedavi seçeneği hangisidir?",
+      "secenekler": {
+        "A": "Temozolomid",
+        "B": "Yüksek doz kabergolin",
+        "C": "BRAF ve MEK inhibitörü kombinasyonu",
+        "D": "Kist içine interferon-α uygulaması",
+        "E": "Platin–etoposid kemoterapisi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Papiller kraniyofarenjiyom erişkinde görülür, genellikle solid ve kalsifikasyonsuzdur ve büyük çoğunluğu BRAF V600E taşır; bu mutasyon BRAF–MEK inhibisyonuyla yüksek yanıt oranı sağlar.",
+      "aciklama_detay": "Kraniyofarenjiyomun iki alt tipi moleküler olarak farklıdır. Adamantinomatöz tip her yaşta (5–15 ve 45–60 yaş pikleri) görülür, CTNNB1 (β-katenin) mutasyonu taşır, ağırlıkla kistik ve kalsifiye olup ıslak keratin içerir. Papiller tip başlıca erişkinlerde görülür, BRAF V600E mutasyonu taşır, solid ve kalsifikasyonsuzdur. Hipotalamik yapışıklık nedeniyle tam rezeksiyon çoğu kez mümkün değildir ve tam rezeksiyonda bile nüks sıktır. Papiller kraniyofarenjiyomda BRAF–MEK inhibitörü kombinasyonuyla (faz 2 çalışmada vemurafenib ve kobimetinib) tümör hacminde belirgin küçülme ve yüksek yanıt oranı gösterilmiştir; bu yaklaşım rezidü ya da nüks tümörde radyoterapiye alternatif ya da ondan önce kullanılabilen bir seçenek olmuştur. Temozolomid agresif hipofiz nöroendokrin tümörlerinin ilacıdır. Kist içi interferon-α ya da aspirasyon monokistik adamantinomatöz tümörde bir seçenektir; solid papiller tümörde yeri yoktur. Klasik sitotoksik kemoterapi kraniyofarenjiyomda genellikle etkisizdir, kabergolinin ise tümör üzerine etkisi yoktur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Temozolomid agresif hipofiz nöroendokrin tümörlerinde kullanılır; kraniyofarenjiyomda etkinliği gösterilmemiştir.",
+        "B": "YANLIS — Kraniyofarenjiyom dopamin reseptörü aracılı büyüme göstermez; kabergolinin tümör üzerine etkisi yoktur.",
+        "C": "DOGRU — BRAF V600E pozitif papiller kraniyofarenjiyomda BRAF–MEK inhibisyonu yüksek yanıt oranı sağlar.",
+        "D": "YANLIS — Kist içi tedaviler monokistik adamantinomatöz tipte düşünülür; solid papiller tümörde uygulanamaz.",
+        "E": "YANLIS — Klasik sitotoksik kemoterapi kraniyofarenjiyomda genellikle etkisizdir."
+      },
+      "etiketler": ["Kraniyofarenjiyom", "Papiller tip", "BRAF V600E", "Hedefe yönelik tedavi", "Sellar kitle"],
+      "zorluk": "zor",
+      "kaynak": "Brastianos ve ark., N Engl J Med 2023 (papiller kraniyofarenjiyomda BRAF–MEK inhibisyonu, faz 2); TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 4)"
+    },
+    {
+      "id": "s13",
+      "metin": "58 yaşında kadın hasta, vertigo nedeniyle çekilen beyin MRG'sinde rastlantısal sellar kitle saptanarak yönlendiriliyor. Görme yakınması, baş ağrısı, adet öyküsünde değişiklik ya da hormon fazlalığını düşündüren bulgu yok (menopozda).\n\nHipofiz MRG:\n• 14 mm, suprasellar uzanımlı adenom ile uyumlu kitle\n• Kitlenin üst sınırı optik kiazmanın 2 mm altında, kiazmaya temas ya da bası yok\n• Kavernöz sinüs invazyonu yok\n\nBu hasta için en uygun başlangıç değerlendirmesi ve izlem planı hangisidir?",
+      "secenekler": {
+        "A": "Yalnızca prolaktin ölçmek; normal ise ileri izleme gerek yoktur",
+        "B": "Makroadenom olduğu için hormon sonuçlarını beklemeden cerrahiye yönlendirmek",
+        "C": "Tüm akslar için insülin tolerans testi, α-subünit ve gonadotropin panelini rutin yapmak",
+        "D": "Hormon incelemesi yapmadan 5 yıl sonra kontrol MRG çekmek",
+        "E": "Prolaktin, IGF-1 ve hipopitüitarizm taraması ile görme alanı; 6. ayda kontrol MRG"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Her insidentalomada prolaktin ve IGF-1 ölçülür; makroinsidentalomada hipopitüitarizm taraması yapılır, kiazmaya yakın kitlede görme alanı istenir ve ilk kontrol MRG 6. ayda çekilir.",
+      "aciklama_detay": "Endocrine Society 2011 hipofiz insidentaloması kılavuzu ve TEMD 2022, tüm insidentalomalarda hormon fazlalığı açısından en az prolaktin ve IGF-1 ölçülmesini önerir; somatotrop tümörlerin bir kısmı klinik olarak sessizdir. Hiperkortizolizm taraması yalnızca klinik şüphede yapılır. Makroinsidentalomada (≥10 mm) hipopitüitarizm açısından sabah kortizolü, serbest T4 ve TSH, gonadal steroidler ve gonadotropinler değerlendirilir; büyük insidentalomalarda gonadotropin eksikliği yaklaşık %30, TSH eksikliği %28, ACTH eksikliği %18 oranında bildirilir. Kiazmaya yakın ya da bası yapan kitlede, yakınma olmasa da, formal görme alanı incelemesi istenir. Cerrahi kriteri taşımayan makroinsidentalomada ilk kontrol MRG 6. ayda çekilir; stabil ise 3 yıl boyunca yılda bir, sonra aralıklar uzatılarak izlenir. Görme alanı defekti, kiazma basısı, apopleksi ya da izlemde belirgin büyüme cerrahi endikasyonudur; baş ağrısı tek başına endikasyon değildir. İnsülin tolerans testi gibi dinamik testler ancak tarama sonuçları sınırda ise yapılır; α-subünit ve gonadotropin panelinin rutin hormon fazlalığı taramasında yeri yoktur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yalnızca prolaktin yetmez; IGF-1 de zorunludur ve makroadenom izlem gerektirir.",
+        "B": "YANLIS — Görme defekti ya da kiazma basısı olmayan insidentalomada cerrahi ilk adım değildir; prolaktinoma olasılığı da dışlanmalıdır.",
+        "C": "YANLIS — Dinamik testler tarama sonucuna göre yapılır; α-subünit ve gonadotropinler rutin taramada önerilmez.",
+        "D": "YANLIS — Makroinsidentalomada hormon değerlendirmesi zorunludur ve ilk kontrol MRG 6. aydadır.",
+        "E": "DOGRU — Prolaktin + IGF-1, makroadenomda hipopitüitarizm taraması, kiazmaya yakın kitlede görme alanı ve 6. ayda MRG."
+      },
+      "etiketler": ["Hipofiz insidentaloması", "Makroadenom", "Hipopitüitarizm taraması", "Görme alanı", "İzlem"],
+      "zorluk": "kolay",
+      "kaynak": "Endocrine Society 2011 hipofiz insidentaloması kılavuzu (Freda ve ark.); TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 3)"
+    },
+    {
+      "id": "s14",
+      "metin": "36 yaşında kadın hasta, MRG'de 7 mm adenom saptanan Cushing hastalığı nedeniyle transsfenoidal cerrahi geçiriyor. Remisyonu değerlendirmek için postoperatif dönemde glukokortikoid verilmeden yakın izleniyor.\n\nPostoperatif 2. gün:\n• Sabah serum kortizolü: 1,1 µg/dL\n• Bulantı, iştahsızlık, yaygın eklem ve kas ağrısı, derinin soyulması, belirgin halsizlik ve duygu durumunda çökme\n• TA 104/66 mmHg, Na 136 mEq/L\n\nBu hasta için aşağıdakilerden hangisi en doğrudur?",
+      "secenekler": {
+        "A": "Kortizol ölçülemeyecek kadar düşük olduğu için rezidü tümör düşünülüp erken reoperasyon planlanmalıdır",
+        "B": "Bulgu remisyonu gösterir; fizyolojik hidrokortizon replasmanı ve stres dozu eğitimi verilir, aks toparlanması aylar sürdüğü için dönemsel değerlendirme ve nüks izlemi yapılır",
+        "C": "Kortizol düşüklüğü kalıcı panhipopitüitarizmi gösterir; ömür boyu replasman gerekir ve nüks izlemine gerek yoktur",
+        "D": "Kortizol ilk haftada 5 µg/dL altına indiği için remisyon tanımlanamaz; 1 mg DST ile yeniden değerlendirilmelidir",
+        "E": "Yakınmalar psikiyatrik kökenlidir; kortizol düşük olsa da replasman yapılmadan izlenmelidir"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Cushing hastalığı cerrahisinden sonraki ilk hafta içinde serum kortizolünün 2 µg/dL altına inmesi remisyonun en çok kabul gören ölçütüdür; baskılanmış normal kortikotroplar nedeniyle hasta adrenal yetmezliktedir ve replasman gerekir.",
+      "aciklama_detay": "Uzun süreli hiperkortizolizm normal kortikotrop hücreleri baskılar. Adenom tamamen çıkarıldığında kortizol hızla düşer; TEMD 2022'ye göre ilk haftada kortizolün 2 µg/dL (55 nmol/L) altına inmesi cerrahi remisyonun en güvenilir göstergesidir ve deneyimli merkezlerde mikroadenomda yaklaşık %80 remisyon sağlanır. Bu dönemde hasta gerçek bir adrenal yetmezlik ile glukokortikoid çekilme sendromunu (miyalji, artralji, deri soyulması, duygu durumu bozukluğu) birlikte yaşar; fizyolojik dozda hidrokortizon başlanır, stres dozu ve acil durum eğitimi verilir. HPA aksının toparlanması genellikle 6–18 ay sürer; bu süreçte sabah kortizolü ve gerekirse ACTH uyarı testiyle dönemsel değerlendirme yapılarak replasman azaltılıp kesilir. Remisyon kalıcı olmayabilir; nüks uzun yıllar içinde görülebildiği için gece tükürük kortizolü, 1 mg DST ve idrar serbest kortizolü ile yaşam boyu izlem önerilir. Kortizolün geç düşebileceği de bilinmelidir; ilk günlerde düşmeyen kortizol hemen reoperasyon gerektirmez. Düşük kortizol burada başarıyı gösterir, rezidü tümörü değil.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ölçülemeyecek kadar düşük kortizol rezidü tümörü değil tam rezeksiyonu gösterir.",
+        "B": "DOGRU — İlk hafta kortizol <2 µg/dL remisyondur; replasman, stres dozu eğitimi, aks toparlanmasının izlenmesi ve uzun dönem nüks izlemi gerekir.",
+        "C": "YANLIS — Baskılanma genellikle geçicidir ve aylar içinde toparlanır; nüks olasılığı nedeniyle izlem ömür boyu sürer.",
+        "D": "YANLIS — Remisyon eşiği 2 µg/dL'dir ve hasta bunu karşılıyor; erken dönemde 1 mg DST remisyon değerlendirmesinde kullanılmaz.",
+        "E": "YANLIS — Kortizol 1,1 µg/dL iken replasman vermemek adrenal kriz riski taşır; yakınmalar gerçek yetmezlik ve çekilme bulgularıdır."
+      },
+      "etiketler": ["Cushing hastalığı", "Cerrahi remisyon", "Postoperatif kortizol", "Glukokortikoid çekilme sendromu", "Nüks izlemi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022; Endocrine Society 2015 Cushing sendromu tedavi kılavuzu (Nieman ve ark.)"
+    },
+    {
+      "id": "s15",
+      "metin": "54 yaşında erkek hasta, 2 yıl önce timoma nedeniyle opere edilmiş. Son aylarda halsizlik, kilo alma, üşüme ve ciltte kuruluk yakınmaları var. Boyu 176 cm, ergenliği ve fertilitesi normal seyretmiş; iki çocuğu var. Poliüri yok.\n\nTetkikler:\n• Serbest T4: 0,6 ng/dL (0,8–1,8); TSH: 0,9 mIU/L\n• IGF-1: yaşa göre −2,6 SDS\n• Prolaktin: 1,1 ng/mL (4–15)\n• Sabah kortizolü: 14,2 µg/dL; 250 µg ACTH testinde pik kortizol 21 µg/dL\n• Total testosteron: 520 ng/dL; LH ve FSH normal\n• Hipofiz MRG: normal\n\nBu tablonun en olası mekanizması hangisidir?",
+      "secenekler": {
+        "A": "PROP1 mutasyonuna bağlı kombine hipofiz hormon eksikliği",
+        "B": "İmmün kontrol noktası inhibitörü ilişkili hipofizit",
+        "C": "Lenfositik hipofizit",
+        "D": "PIT1'e karşı gelişen paraneoplastik sitotoksik T hücre yanıtı (anti-PIT1 hipofiziti)",
+        "E": "Germline POU1F1 (PIT1) mutasyonu"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Erişkin yaşta kazanılmış, yalnızca GH, prolaktin ve TSH eksikliği (PIT1 soyu) ile ACTH ve gonadotropinlerin korunması, özellikle timoma öyküsünde anti-PIT1 hipofizitini düşündürür.",
+      "aciklama_detay": "Anti-PIT1 hipofiziti paraneoplastik bir sendromdur: timoma ya da başka tümörlerde ektopik olarak eksprese edilen PIT1 proteinine karşı gelişen sitotoksik T lenfosit yanıtı, PIT1 soyundan gelen somatotrop, laktotrop ve tirotrop hücreleri hedef alır. Sonuç kazanılmış GH, prolaktin ve TSH eksikliği triadıdır; TPIT soyu (ACTH) ve SF1 soyu (gonadotropinler) korunur. Görüntüleme genellikle normaldir ve baş ağrısı yoktur; tablo altta yatan tümörden yıllar önce ya da sonra çıkabilir. Hipopitüitarizm genellikle geri dönmez; tedavi levotiroksin replasmanı (hidrokortizon gerekmez, ACTH aksı sağlam) ve altta yatan tümörün değerlendirilmesidir; bu hastada timoma nüksü araştırılmalıdır. PROP1 ve POU1F1 mutasyonları konjenitaldir ve çocuklukta büyüme geriliğiyle kendini gösterir; bu hastanın boyu ve ergenliği normaldir. PROP1'de ayrıca gonadotropin ve ileride ACTH eksikliği eklenir. İmmün kontrol noktası inhibitörü öyküsü yoktur; o tabloda en sık ACTH ve TSH eksikliği görülür. Lenfositik hipofizitte ilk kaybedilen aks ACTH'dir ve MRG'de bez büyümesi beklenir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PROP1 konjenitaldir, çocuklukta büyüme geriliği ve ergenlik gecikmesi yapar; gonadotropin eksikliği de eklenir.",
+        "B": "YANLIS — İmmünoterapi öyküsü yoktur; ICI hipofizitinde ACTH eksikliği baskındır, burada ACTH aksı sağlamdır.",
+        "C": "YANLIS — Lenfositik hipofizitte ilk kaybedilen aks ACTH'dir ve MRG'de bez büyümesi beklenir.",
+        "D": "DOGRU — Timoma zemininde kazanılmış izole GH, PRL ve TSH eksikliği anti-PIT1 hipofizitidir.",
+        "E": "YANLIS — POU1F1 mutasyonu aynı hormon paternini yapar ama doğuştandır; normal boy ve erişkin başlangıç bununla bağdaşmaz."
+      },
+      "etiketler": ["Anti-PIT1 hipofiziti", "Paraneoplastik sendrom", "Timoma", "Santral hipotiroidi", "PIT1 soyu"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 5); Yamamoto M, Takahashi Y. Pituitary-Immune Interface. In: The Pituitary. Elsevier; 2022"
+    }
+  ]
+}

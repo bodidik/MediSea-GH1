@@ -303,6 +303,151 @@
       ],
       "zorluk": "zor",
       "kaynak": "Smith et al. J Clin Oncol 2015 (ASCO Guideline); Clark et al. J Clin Oncol 2005 (meta-analysis)"
+    },
+    {
+      "id": "s11",
+      "metin": "52 yaşında kadın; erken evre meme kanseri nedeniyle adjuvan kemoterapinin 2. kürünün 9. gününde evde 38,6 °C ateş gelişiyor ve acil servise başvuruyor. Hafif halsizlik dışında yakınması yok. Kemoterapi süresince herhangi bir antibakteriyel profilaksi almıyor. Eşiyle birlikte hastaneye 10 dakika uzaklıkta yaşıyor, 24 saat telefonla ulaşılabilir durumda.\n\nFizik muayene:\nTA 118/72 mmHg, nabız 96/dk, SpO₂ %98\nMukozit yok, santral kateter yok, odak bulgusu yok\nDehidratasyon bulgusu yok; KOAH öyküsü yok\n\nTetkikler:\nNötrofil 300/µL\nKreatinin ve karaciğer testleri normal\nAkciğer grafisi normal\nKan ve idrar kültürleri alındı\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Yatış; nötrofil sayısı 500/µL'nin üzerine çıkana dek İV piperasilin-tazobaktam",
+        "B": "Yatış; İV meropenem + vankomisin kombinasyonu",
+        "C": "İlk antibiyotik dozu hastanede verilip birkaç saat gözlem sonrası oral siprofloksasin + amoksisilin-klavulanat ile ayaktan, yakın izlemli tedavi",
+        "D": "Antibiyotik başlamadan 24 saat sonra tam kan sayımı tekrarı ve kültür sonucuna göre karar",
+        "E": "Oral amoksisilin-klavulanat monoterapisi ile ayaktan izlem"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "MASCC skoru 26 (≥21 = düşük risk) ve mutlak yatış kriteri yok; ilk doz hastanede verilip gözlem sonrası oral florokinolon + amoksisilin-klavulanat ile ayaktan tedavi uygundur.",
+      "aciklama_detay": "MASCC hesabı: hastalık yükü hafif (5) + hipotansiyon yok (5) + KOAH yok (4) + solid tümör (4) + parenteral sıvı gerektiren dehidratasyon yok (3) + ateş başladığında ayaktan (3) + yaş <60 (2) = 26. MASCC ≥21 düşük riski gösterir; bu grupta ciddi komplikasyon oranı düşüktür. ASCO/IDSA 2018 ayaktan yönetim kılavuzuna göre düşük riskli hastada ilk ampirik doz hastanede verilir, hasta birkaç saat gözlenir ve stabil kalırsa oral siprofloksasin (ya da levofloksasin) + amoksisilin-klavulanat ile evde tedavi sürdürülür. Ayaktan kararın ön koşulları bu hastada karşılanmıştır: evde refakatçi, hastaneye yakınlık, kesintisiz iletişim, oral alımı engelleyen mukozit yok, pulmoner infiltrat yok, kateter tünel enfeksiyonu yok ve öncesinde kinolon profilaksisi almamış olması (kinolon profilaksisi alan hastada ayaktan kinolon temelli rejim uygun değildir). Gereksiz yatış hastayı nozokomiyal ve çoklu ilaca dirençli etkenlere maruz bırakır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Etkili bir rejimdir ancak MASCC ≥21 olan, yatış kriteri taşımayan hastada gereksiz yatıştır; nozokomiyal maruziyeti artırır.",
+        "B": "YANLIS — Hemodinamik instabilite, kateter enfeksiyonu, MRSA ya da pnömoni gibi bir vankomisin endikasyonu yok; bu rejim düşük riskli hasta için aşırı tedavidir.",
+        "C": "DOGRU — MASCC 26, lojistik ve klinik koşullar uygun; ilk doz ve gözlem sonrası oral florokinolon + amoksisilin-klavulanat ile ayaktan tedavi.",
+        "D": "YANLIS — Nötropenik ateş acil bir durumdur; ampirik antibiyotik triyajdan sonra en geç 60 dakika içinde başlanmalıdır, kültür beklenmez.",
+        "E": "YANLIS — Amoksisilin-klavulanat tek başına gram-negatif, özellikle P. aeruginosa kapsamı için yetersizdir; rejimin florokinolon bileşeni vazgeçilmezdir."
+      },
+      "etiketler": [
+        "MASCC Risk İndeksi",
+        "Düşük Riskli Febril Nötropeni",
+        "Ayaktan Tedavi",
+        "Oral Antibiyotik"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Klastersky et al. J Clin Oncol 2000 (MASCC risk indeksi); ASCO/IDSA 2018 ayaktan febril nötropeni kılavuzu (Taplitz ve ark.)"
+    },
+    {
+      "id": "s12",
+      "metin": "45 yaşında erkek; metastatik kolon kanseri nedeniyle subkütan port kateterden FOLFOX alıyor. Kürün 10. gününde 38,4 °C ateşle başvuruyor. Genel durumu iyi; tek yakınması port bölgesinde ağrı.\n\nFizik muayene:\nTA 124/78 mmHg, nabız 92/dk, SpO₂ %98\nPort rezervuarının üzerinde ve kateterin cilt altı seyri boyunca rezervuardan 3 cm uzağa uzanan eritem, endurasyon ve hassasiyet\nMukozit yok; akciğer ve batın muayenesi normal\n\nTetkikler:\nNötrofil 400/µL\nAkciğer grafisi normal\nMASCC skoru 26\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "MASCC ≥21 olduğundan ayaktan oral siprofloksasin + amoksisilin-klavulanat, 48 saat sonra port kontrolü",
+        "B": "Ayaktan oral tedavi ile birlikte port bölgesine topikal mupirosin",
+        "C": "Yatış; port yerinde bırakılarak porttan İV sefepim ve antibiyotik kilit tedavisi",
+        "D": "Yatış; İV antipsödomonal beta-laktam + ampirik ekinokandin",
+        "E": "Yatış; İV antipsödomonal beta-laktam + vankomisin, portun çıkarılması ve kültüre göre düzenleme"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Kateter tünel enfeksiyonu MASCC skorundan bağımsız bir mutlak yatış kriteridir; vankomisin eklenir ve tünel enfeksiyonunda kateter çıkarılır.",
+      "aciklama_detay": "MASCC skoru yüksek olsa da risk indeksleri lokalize ve bariyeri bozan enfeksiyonları yakalayamaz. Aktif kateter tünel enfeksiyonu (çıkış yerinden ya da rezervuardan 2 cm'yi aşan, cilt altı seyir boyunca eritem-endurasyon-hassasiyet) ayaktan tedaviyi dışlayan kırmızı bayraklardandır. IDSA febril nötropeni kılavuzu kateter ilişkili enfeksiyon şüphesini vankomisin ekleme endikasyonları arasında sayar; dolayısıyla antipsödomonal beta-laktama vankomisin eklenir. Tünel ve port cebi enfeksiyonlarında sistemik antibiyotik tek başına yetersizdir, antibiyotik kilit tedavisi de yalnızca lümen içi (komplike olmayan) enfeksiyon için düşünülebilir; bu nedenle portun çıkarılması önerilir. Kan kültürü sonuçları (özellikle S. aureus, P. aeruginosa, Candida üremesi) tedavi süresini ve seçimini belirler; vankomisin 48–72 saatte dirençli gram-pozitif etken gösterilmezse kesilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Skor ne olursa olsun tünel enfeksiyonu mutlak yatış kriteridir; oral rejim ne MRSA/CoNS'u ne de kaynak kontrolünü karşılar.",
+        "B": "YANLIS — Topikal tedavi derin tünel enfeksiyonunu tedavi etmez; nötropenik hastada ayaktan izlem uygun değildir.",
+        "C": "YANLIS — Kilit tedavisi yalnızca lümen içi enfeksiyonda kateter kurtarma seçeneğidir; tünel enfeksiyonunda kateter çıkarılmalıdır ve gram-pozitif kapsam eksik kalır.",
+        "D": "YANLIS — Ampirik antifungal ilk başvuruda endike değildir; bu hastada eksik olan gram-pozitif kapsam ve kaynak kontrolüdür.",
+        "E": "DOGRU — Yatış, antipsödomonal beta-laktam + vankomisin (kateter ilişkili enfeksiyon endikasyonu) ve tünel enfeksiyonu nedeniyle portun çıkarılması."
+      },
+      "etiketler": [
+        "Mutlak Yatış Kriterleri",
+        "Kateter Tünel Enfeksiyonu",
+        "Vankomisin Endikasyonu",
+        "Kaynak Kontrolü"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Freifeld et al. Clin Infect Dis 2011 (IDSA Guideline); Mermel et al. Clin Infect Dis 2009 (IDSA kateter ilişkili enfeksiyon kılavuzu)"
+    },
+    {
+      "id": "s13",
+      "metin": "58 yaşında erkek; AML indüksiyon kemoterapisinin 12. gününde ateş ve TA 84/50 mmHg ile değerlendiriliyor. Kültürler alınıp meropenem + vankomisin başlanıyor; sıvı resüsitasyonuyla, vazopressör gerekmeden hemodinami düzeliyor. Tünelli santral kateterin giriş yeri temiz.\n\n72. saatte:\nAteş 36 saattir yok, TA 122/74 mmHg\nKan kültürleri (kateter lümenleri ve periferik) üremesiz\nBurun MRSA taraması negatif\nToraks BT: infiltrat yok\nNötrofil 50/µL\n\nBu aşamada antibiyotik tedavisine ilişkin en uygun karar hangisidir?",
+      "secenekler": {
+        "A": "Vankomisini nötrofil 500/µL'yi geçene kadar sürdürüp meropenemi kesmek",
+        "B": "Vankomisini linezolide çevirip meropenemle devam etmek",
+        "C": "Tüm antibiyotikleri kesip hastayı antibiyotiksiz izlemek",
+        "D": "Vankomisini kesmek, meropenemi sürdürmek",
+        "E": "Vankomisin vadi düzeyini ölçüp hedef aralıktaysa kombinasyonu sürdürmek"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Vankomisin başlangıçtaki instabilite nedeniyle eklenmişti; 48–72 saatte dirençli gram-pozitif etken gösterilmediğinden kesilir, derin nötropenide antipsödomonal beta-laktam sürdürülür.",
+      "aciklama_detay": "Febril nötropenide vankomisin rutin başlanmaz; bu hastada ilk başvurudaki hipotansiyon geçerli bir endikasyondu. IDSA kılavuzu, 48–72 saat içinde MRSA ya da VRE gibi dirençli bir gram-pozitif etken veya kateter enfeksiyonu gibi bir gerekçe ortaya çıkmazsa vankomisinin kesilmesini önerir; gereksiz sürdürmek nefrotoksisite ve VRE seçilimi riskini artırır. Antipsödomonal beta-laktam ise nötrofil toparlanmadığı sürece (derin nötropeni, 50/µL) sürdürülür. Bazı Avrupa önerileri nedeni bilinmeyen ateşte en az 72 saat İV tedavi ve 48 saat ateşsizlik sonrası nötropeni sürse de antibiyotiğin kesilmesine izin verir; ancak bu hasta henüz 48 saatlik ateşsizlik ölçütünü doldurmamıştır ve başvuruda hemodinamik instabilite yaşamıştır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tam tersi: gram-negatif kapsam derin nötropenide vazgeçilmezdir, gerekçesi kalmayan ajan vankomisindir.",
+        "B": "YANLIS — Dirençli gram-pozitif etken yokken anti-MRSA kapsamı sürdürmek gereksizdir; linezolid ayrıca kemik iliği baskılanmasına katkı yapabilir.",
+        "C": "YANLIS — Derin nötropeni sürerken, ateşsizlik 48 saati doldurmamışken ve başvuruda instabilite yaşanmışken tüm tedavinin kesilmesi en uygun karar değildir.",
+        "D": "DOGRU — 72. saatte dirençli gram-pozitif etken ya da kateter enfeksiyonu kanıtı yok; vankomisin kesilir, meropenem sürdürülür.",
+        "E": "YANLIS — İlaç düzeyinin hedefte olması endikasyonun sürdüğünü göstermez; soru dozlama değil endikasyondur."
+      },
+      "etiketler": [
+        "Vankomisinin Kesilmesi",
+        "De-eskalasyon",
+        "Derin Nötropeni",
+        "Antimikrobiyal Yönetim"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Freifeld et al. Clin Infect Dis 2011 (IDSA Guideline); Averbuch et al. Haematologica 2013 (ECIL-4)"
+    },
+    {
+      "id": "s14",
+      "metin": "Onkoloji konseyinde, kemoterapi süresince oral levofloksasin ile antibakteriyel profilaksi başlanıp başlanmayacağı tartışılan beş hasta değerlendiriliyor.\n\nBu hastalardan hangisinde florokinolon profilaksisi için en güçlü gerekçe vardır?",
+      "secenekler": {
+        "A": "48 yaşında kadın; erken evre meme kanseri, adjuvan doksorubisin-siklofosfamid; beklenen nötropeni süresi 5 gün",
+        "B": "66 yaşında erkek; akciğer adenokarsinomu, karboplatin-pemetrekset; önceki kürlerde nötropeni yok",
+        "C": "55 yaşında erkek; yeni tanı AML, 7+3 indüksiyonu; nötrofilin 100/µL altında 7 günden uzun kalması bekleniyor",
+        "D": "60 yaşında kadın; kolon kanseri, FOLFOX; ilk kürde evre 2 ishal öyküsü",
+        "E": "52 yaşında erkek; testis tümörü, BEP; her kürde pegfilgrastim ile primer profilaksi uygulanıyor"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Florokinolon profilaksisi derin (<100/µL) ve 7 günü aşan nötropeni beklenen yüksek riskli hastalarda (akut lösemi indüksiyonu, allojenik HKHN) endikedir; düşük riskli solid tümörde önerilmez.",
+      "aciklama_detay": "ASCO/IDSA 2018 antimikrobiyal profilaksi kılavuzu, florokinolon profilaksisini derin nötropeninin (<100/µL) 7 günden uzun sürmesi beklenen hastalarla sınırlar; akut miyeloid lösemi indüksiyonu bu grubun tipik örneğidir. Bu hastalarda profilaksi febril atak ve bakteriyemi sıklığını azaltır. Standart kemoterapi alan, nötropenisi kısa süren solid tümör hastalarında mutlak yarar küçüktür; buna karşın kinolon direnci, C. difficile enfeksiyonu, tendon ve QT yan etkileri gibi bedeller vardır. Ayrıca kinolon profilaksisi alan hastada gelişen ateşte ayaktan kinolon temelli tedavi seçeneği ortadan kalkar ve şiddetli mukozitle birlikte viridans streptokok bakteriyemisi riski artar (vankomisin endikasyonlarından biri). G-CSF desteği alan (E) ya da gastrointestinal toksisite öyküsü olan (D) solid tümör hastasında da kinolon profilaksisi için rasyonel gerekçe yoktur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kısa süreli (≤7 gün) nötropeni beklenen solid tümör hastasıdır; profilaksinin yararı direnç ve yan etki bedelini karşılamaz.",
+        "B": "YANLIS — Nötropeni öyküsü olmayan, düşük riskli rejim alan solid tümör hastasıdır; profilaksi endikasyonu yoktur.",
+        "C": "DOGRU — AML indüksiyonu, <100/µL nötropeninin 7 günü aşması beklenen yüksek riskli gruptur; florokinolon profilaksisinin asıl endikasyonudur.",
+        "D": "YANLIS — İshal öyküsü profilaksi gerekçesi değildir; aksine kinolonlar C. difficile riskini artırabilir.",
+        "E": "YANLIS — Pegfilgrastim ile nötropeni süresi kısaltılmış solid tümör hastasıdır; rutin kinolon profilaksisi önerilmez."
+      },
+      "etiketler": [
+        "Florokinolon Profilaksisi",
+        "AML İndüksiyonu",
+        "Risk Sınıflaması",
+        "Antimikrobiyal Yönetim"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ASCO/IDSA 2018 antimikrobiyal profilaksi kılavuzu (Taplitz ve ark.); Freifeld et al. Clin Infect Dis 2011 (IDSA Guideline)"
+    },
+    {
+      "id": "s15",
+      "metin": "63 yaşında kadın; metastatik over kanseri nedeniyle karboplatin-paklitaksel alıyor. Kürün 11. gününde evde 38,5 °C ateş gelişiyor ve ayaktan başvuruyor. Hafif halsizlik dışında yakınması yok; kendi bakımını yapabiliyor, gününün çoğunu ayakta geçiriyor (ECOG 1). Diyabet öyküsü yok. 3 yıldır iskemik kalp hastalığı ve kronik kalp yetersizliği (EF %40) tanısıyla izleniyor; KOAH yok.\n\nFizik muayene:\nTA 116/70 mmHg, nabız 98/dk, SpO₂ %97\nDilde yutmayı engellemeyen hafif eritem (evre 1 mukozit)\nDehidratasyon yok, odak bulgusu yok\n\nTetkikler:\nNötrofil 350/µL\nMonosit 120/µL\nGlukoz 232 mg/dL (HbA1c %5,4)\nAkciğer grafisi normal\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "MASCC skoru 24 olduğundan ayaktan oral siprofloksasin + amoksisilin-klavulanat",
+        "B": "CISNE skoru 2 (orta risk); lojistik koşullar uygun olduğundan ayaktan oral tedavi",
+        "C": "Ayaktan oral antibiyotik ile birlikte terapötik filgrastim",
+        "D": "CISNE skoru 4 (yüksek risk); yatış ve İV antipsödomonal beta-laktam",
+        "E": "Yatış; kronik kalp hastalığı nedeniyle İV sefepim + ampirik vankomisin"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Stabil görünen solid tümör hastasında MASCC 24 olsa da CISNE 4'tür (strese bağlı hiperglisemi 2 + kronik kardiyovasküler hastalık 1 + monosit <200/µL 1); yüksek risk yatış ve İV tedavi gerektirir.",
+      "aciklama_detay": "CISNE, klinik olarak stabil görünen solid tümörlü febril nötropeni hastalarında MASCC'nin düşük risk diye sınıflayıp komplike seyredecek hastaları ayırmak için geliştirilmiştir. Parametreler: ECOG ≥2 (2), strese bağlı hiperglisemi (2), KOAH (1), kronik kardiyovasküler hastalık (1), NCI evre ≥2 mukozit (1), monosit <200/µL (1). Bu hastada diyabeti olmayan (HbA1c normal) birinde glukoz 232 mg/dL → 2 puan; kronik kalp yetersizliği → 1; monosit 120/µL → 1; ECOG 1 ve evre 1 mukozit puan almaz. Toplam 4 = yüksek risk (≥3; komplikasyon oranı yaklaşık %36). Aynı hastanın MASCC'si 5+5+4+4+3+3+0 = 24'tür ve tek başına ayaktan tedaviye yönlendirirdi; solid tümörde iki indeksin birlikte kullanılması bu tuzağı önler. Doğru yaklaşım yatış ve sefepim gibi İV antipsödomonal beta-laktamdır; kalp hastalığı vankomisin endikasyonu değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — MASCC hesabı doğru olsa da stabil görünen solid tümör hastasında CISNE yüksek risk gösteriyor; MASCC tek başına bu hastayı yanlışlıkla düşük riske atar.",
+        "B": "YANLIS — Hesap hatalı: diyabeti olmayan hastada 232 mg/dL glukoz strese bağlı hiperglisemidir (2 puan); toplam 2 değil 4'tür.",
+        "C": "YANLIS — Hem risk yanlış sınıflanmıştır hem de terapötik G-CSF sepsis/ciddi solunum yetmezliği dışında rutin önerilmez.",
+        "D": "DOGRU — CISNE 4 = yüksek risk; yatış ve İV antipsödomonal beta-laktam.",
+        "E": "YANLIS — Yatış doğrudur ancak kronik kalp hastalığı vankomisin endikasyonu değildir; hemodinami stabil, kateter veya MRSA kanıtı yok."
+      },
+      "etiketler": [
+        "CISNE Risk İndeksi",
+        "MASCC Sınırlılıkları",
+        "Solid Tümör",
+        "Strese Bağlı Hiperglisemi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Carmona-Bayonas et al. J Clin Oncol 2015 (CISNE doğrulama çalışması); Klastersky et al. Ann Oncol 2016 (ESMO)"
     }
   ]
 }

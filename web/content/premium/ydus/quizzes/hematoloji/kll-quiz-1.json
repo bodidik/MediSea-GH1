@@ -303,6 +303,156 @@
       ],
       "zorluk": "orta",
       "kaynak": "Hallek et al. Blood 2018; Rozman et al. Blood 1984"
+    },
+    {
+      "id": "s11",
+      "metin": "67 yaşında erkek hasta, rutin kontrolde saptanan lenfositoz nedeniyle değerlendirilmiş ve akım sitometri ile KLL tanısı almıştır. Yakınması yok; ateş, gece terlemesi ya da kilo kaybı tanımlamıyor. Fizik muayenede servikal bölgede 1.5 cm'lik birkaç lenf nodu var; hepatosplenomegali yok.\n\nTetkikler:\nMutlak lenfosit: 38.000/µL (6 ay önce 31.000/µL)\nHemoglobin: 14.1 g/dL\nTrombosit: 196.000/µL\nFISH: izole del(13q); TP53 mutasyonu: yok\nIGHV: mutasyonsuz (unmutated)\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "IGHV mutasyonsuz olduğu için hemen ibrutinib başlanması",
+        "B": "Genç ve fit olduğu için FCR kemoimmünoterapisi başlanması",
+        "C": "Tedavisiz izlem: 3–6 ayda bir muayene ve tam kan sayımı",
+        "D": "Lenfosit sayısı 30.000/µL'yi aştığı için sabit süreli venetoklaks + obinutuzumab başlanması",
+        "E": "Progresyonu geciktirmek için erken rituksimab monoterapisi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Asemptomatik erken evre KLL'de iwCLL 2018 tedavi endikasyonu yoksa tedavi verilmez; lenfosit sayısı ve olumsuz prognostik belirteçler tek başına tedavi gerekçesi değildir.",
+      "aciklama_detay": "KLL'de tedavi kararı prognostik belirteçlere değil aktif hastalık ölçütlerine dayanır. iwCLL 2018'e göre tedavi endikasyonları: ilerleyici kemik iliği yetmezliği (Hb <10 g/dL ya da trombosit <100.000/µL), masif (kaburga kavsinin ≥6 cm altında) ya da ilerleyici splenomegali, masif (≥10 cm) ya da ilerleyici lenfadenopati, lenfosit sayısının 6 aydan kısa sürede ikiye katlanması (başlangıç ≥30.000/µL ise), steroide yetersiz yanıt veren otoimmün sitopeni, semptomatik ekstranodal tutulum ve konstitüsyonel semptomlar (6 ayda >%10 kilo kaybı, belirgin yorgunluk, >2 hafta enfeksiyonsuz ateş, >1 ay gece terlemesi).\n\nBu hastada hiçbiri yoktur: sayımlar normal, nodlar küçük, lenfosit sayısı 6 ayda 31.000'den 38.000'e çıkmış (katlanma süresi 6 aydan çok uzun). Lenfosit sayısının yüksekliği tek başına endikasyon değildir; lökostaz KLL'de çok nadirdir.\n\nMutasyonsuz IGHV, tedavi gerekeceği zamanın daha erken geleceğini öngörür ve ajan seçimini etkiler, ama tedaviyi başlatma nedeni değildir. Erken tedavi çalışmalarında (klorambusil dönemi, CLL12'de ibrutinib) olaysız sağkalım uzasa da genel sağkalım yararı gösterilmemiştir; toksisite ve direnç gelişimi ise gerçektir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Mutasyonsuz IGHV prognostiktir, tedavi endikasyonu değildir; erken ibrutinib genel sağkalımı uzatmamıştır.",
+        "B": "YANLIS — Endikasyon yoktur; ayrıca mutasyonsuz IGHV'de FCR'nin kalıcı yanıt yararı sınırlıdır.",
+        "C": "DOGRU — iwCLL 2018 aktif hastalık ölçütü olmayan asemptomatik hastada izlemi önerir.",
+        "D": "YANLIS — 30.000/µL eşiği yalnızca lenfosit katlanma süresini yorumlamak için kullanılır; tek başına endikasyon değildir.",
+        "E": "YANLIS — Erken rituksimab monoterapisinin sağkalım yararı yoktur ve önerilmez."
+      },
+      "etiketler": [
+        "Tedavi Endikasyonu",
+        "iwCLL 2018",
+        "İzle ve Bekle",
+        "IGHV",
+        "Erken Evre KLL"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Hallek et al. Blood 2018 (iwCLL); CLL12 çalışması (erken ibrutinib)"
+    },
+    {
+      "id": "s12",
+      "metin": "59 yaşında kadın hasta, 4 yıldır izlenen KLL nedeniyle kontrole geliyor. Son 3 ayda gece terlemesi başlamış ve dalak kaburga kavsinin 7 cm altına ulaşmış.\n\nTetkikler:\nHemoglobin: 9.6 g/dL\nTrombosit: 88.000/µL\nFISH: del(17p) — hücrelerin %45'inde\nTP53 mutasyonu: pozitif (VAF %30)\nIGHV: mutasyonsuz\nKreatinin klerensi: 90 mL/dk; komorbidite yükü düşük; antikoagülan kullanmıyor\n\nBu hasta için en uygun birinci basamak tedavi hangisidir?",
+      "secenekler": {
+        "A": "FCR (fludarabin, siklofosfamid, rituksimab) 6 kür",
+        "B": "Bendamustin + rituksimab 6 kür",
+        "C": "Klorambusil + obinutuzumab",
+        "D": "Önce indüksiyon vermeden birinci basamakta allojenik kök hücre nakli",
+        "E": "Kovalent BTK inhibitörü (akalabrutinib ya da zanubrutinib) ile süreğen tedavi"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "del(17p)/TP53 mutasyonlu KLL kemoimmünoterapiye dirençlidir; birinci basamakta hedefe yönelik tedavi, en güçlü veriyle süreğen BTK inhibitörü tercih edilir.",
+      "aciklama_detay": "Hastada tedavi endikasyonu vardır (Hb <10 g/dL, trombosit <100.000/µL, masif splenomegali, gece terlemesi). Tedavi seçiminden önce her basamakta TP53 durumu (FISH ile del(17p) ve TP53 mutasyon analizi) ile IGHV durumu belirlenir.\n\ndel(17p) ve/veya TP53 mutasyonu, DNA hasarına yanıtı bozduğu için alkilleyici ve pürin analoğu temelli kemoimmünoterapiye (FCR, BR, klorambusil kombinasyonları) yanıtı kısa kılar; bu hastalarda kemoimmünoterapi kullanılmaz. Hedefe yönelik ajanlar p53'ten bağımsız etki eder.\n\nBu grupta en sağlam veri süreğen BTK inhibitörüne aittir; ikinci kuşak kovalent BTK inhibitörleri (akalabrutinib, zanubrutinib) ibrutinibe göre daha az kardiyak toksisite ile tercih edilir (SEQUOIA'nın del(17p) kolu, ELEVATE-TN). Venetoklaks + obinutuzumab da kullanılabilir, ancak TP53 bozukluğunda sabit süreli tedavi sonrası progresyonsuz sağkalım daha kısadır.\n\nAllojenik nakil, hedefe yönelik ajanlara dirençli genç hastalarda sonraki basamak seçeneğidir; birinci basamak değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — FCR'ye del(17p)/TP53 mutasyonlu hastalarda yanıt kısa sürelidir; bu grupta kullanılmaz.",
+        "B": "YANLIS — Bendamustin + rituksimab da p53 yolağına bağımlı kemoimmünoterapidir; TP53 bozukluğunda etkinliği düşüktür.",
+        "C": "YANLIS — Klorambusil + obinutuzumab kemoterapiye dayandığı için TP53 bozukluğunda uygun değildir; ayrıca fit hastada tercih edilmez.",
+        "D": "YANLIS — Allojenik nakil hedefe yönelik tedavilere direnç gelişmiş hastalarda düşünülür; birinci basamakta yeri yoktur.",
+        "E": "DOGRU — TP53 bozukluğunda süreğen ikinci kuşak BTK inhibitörü en güçlü veriye sahip birinci basamak seçenektir."
+      },
+      "etiketler": [
+        "del(17p)",
+        "TP53",
+        "BTK İnhibitörü",
+        "Birinci Basamak",
+        "Kemoimmünoterapi Direnci"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Hallek et al. Blood 2018 (iwCLL); SEQUOIA (zanubrutinib); ELEVATE-TN (akalabrutinib)"
+    },
+    {
+      "id": "s13",
+      "metin": "71 yaşında erkek hasta, tedavi endikasyonu gelişen KLL nedeniyle venetoklaks + obinutuzumab tedavisine başlamıştır. Obinutuzumabın ilk kürü tamamlanmış; 22. günde venetoklaksın doz basamaklandırması (20 mg/gün ile) başlanacaktır.\n\nVenetoklaks öncesi tetkikler:\nBT: en büyük lenf nodu 10.8 cm (retroperitoneal)\nMutlak lenfosit: 48.000/µL\nKreatinin klerensi: 58 mL/dk\nÜrik asit: 7.9 mg/dL, potasyum ve fosfor normal\n\nBu hastada tümör lizis sendromu (TLS) riski ve yönetimi ile ilgili en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Düşük risk; ayaktan oral hidrasyon ve allopurinol yeterlidir.",
+        "B": "Süreyi kısaltmak için venetoklaks doğrudan 400 mg/gün ile başlanmalıdır.",
+        "C": "Rasburikaz verildiğinde basamaklandırmaya gerek kalmaz; 100 mg/gün ile başlanabilir.",
+        "D": "Yüksek risk; 20 ve 50 mg dozlarında yatış, IV hidrasyon, ürik asit düşürücü tedavi ve doz öncesi ile doz sonrası 4., 8., 12. ve 24. saatlerde TLS laboratuvar izlemi gerekir.",
+        "E": "10 cm üzeri lenf nodunda venetoklaks kontrendikedir; FCR'ye geçilmelidir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Herhangi bir lenf nodunun ≥10 cm olması (ya da lenfosit ≥25.000/µL ile birlikte ≥5 cm nod) venetoklaksla yüksek TLS riskidir; ilk iki basamakta hastane yatışı ve yakın laboratuvar izlemi gerekir.",
+      "aciklama_detay": "Venetoklaks KLL hücrelerinde apoptozu saatler içinde başlattığı için ilk dozlarda TLS riski taşır. Risk, tümör yükü ile belirlenir:\n• Düşük: tüm nodlar <5 cm ve lenfosit <25.000/µL\n• Orta: herhangi bir nod 5 – <10 cm ya da lenfosit ≥25.000/µL\n• Yüksek: herhangi bir nod ≥10 cm ya da lenfosit ≥25.000/µL ile birlikte herhangi bir nod ≥5 cm\nBozulmuş böbrek işlevi (CrCl <80 mL/dk) riski ayrıca artırır.\n\nBu hastada 10.8 cm'lik nod ve CrCl 58 mL/dk vardır: yüksek risk. Yönetim: obinutuzumabın ilk kürü tümör yükünü azaltmak için venetoklakstan önce verilir; 5 haftalık doz basamaklandırması (20 → 50 → 100 → 200 → 400 mg) atlanmaz. Yüksek riskte 20 ve 50 mg dozlarında hastaneye yatırılır, oral ve IV hidrasyon sağlanır, allopurinol başlanır (ürik asit yüksekse rasburikaz düşünülür) ve TLS laboratuvarları doz öncesi ile 4., 8., 12. ve 24. saatlerde izlenir.\n\nBasamaklandırma TLS riskinin temel güvenlik önlemidir; rasburikaz onun yerini tutmaz. Büyük nod venetoklaks için kontrendikasyon değil, önlem düzeyini artıran bir risk faktörüdür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — ≥10 cm nod yüksek risk ölçütüdür; ayaktan yaklaşım uygun değildir.",
+        "B": "YANLIS — Basamaklandırmayı atlamak ölümcül TLS riskini belirgin artırır.",
+        "C": "YANLIS — Rasburikaz ürik asidi düşürür ama hiperkalemi ve hiperfosfatemiyi önlemez; basamaklandırmanın yerini tutmaz.",
+        "D": "DOGRU — Yüksek TLS riskinde ilk iki basamakta yatış, IV hidrasyon, ürik asit düşürücü tedavi ve sık laboratuvar izlemi gerekir.",
+        "E": "YANLIS — Büyük nod kontrendikasyon değildir; önlemleri artırır. Ayrıca bu hastada kemoimmünoterapiye geçişin gerekçesi yoktur."
+      },
+      "etiketler": [
+        "Venetoklaks",
+        "Tümör Lizis Sendromu",
+        "Doz Basamaklandırma",
+        "Risk Sınıflaması",
+        "Obinutuzumab"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Venetoklaks ürün bilgisi (FDA etiketi); CLL14 (venetoklaks + obinutuzumab)"
+    },
+    {
+      "id": "s14",
+      "metin": "74 yaşında kadın hasta, KLL nedeniyle 2 yıldır ibrutinib 420 mg/gün kullanmakta ve hastalığı kısmi yanıtla stabil seyretmektedir. Bir haftadır çarpıntı yakınması var; EKG'de atriyal fibrilasyon saptanıyor, bisoprolol ile hız kontrolü sağlanmış. Hipertansiyonu var.\n\nDeğerlendirme:\nCHA2DS2-VASc: 4\nHAS-BLED: 2\nKreatinin klerensi: 62 mL/dk\nEkokardiyografi: yapısal kalp hastalığı yok\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "İbrutinibe devam edilip varfarin (hedef INR 2.0–3.0) başlanması",
+        "B": "İkinci kuşak kovalent BTK inhibitörüne geçilmesi ve inme önlenmesi için DOAC başlanması",
+        "C": "BTK inhibitörünün kalıcı olarak kesilip klorambusile geçilmesi, antikoagülan verilmemesi",
+        "D": "İbrutinibe devam edilip antikoagülan yerine aspirin + klopidogrel eklenmesi",
+        "E": "Hastalık kontrolünü artırmak için ibrutinib dozunun 560 mg/güne çıkarılması"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "İbrutinib ilişkili AF'de inme riski yüksekse antikoagülasyon (DOAC) gerekir; kanama riskini azaltmak için AF sıklığı daha düşük olan ikinci kuşak BTK inhibitörüne (akalabrutinib/zanubrutinib) geçilir.",
+      "aciklama_detay": "İbrutinib, kısmen BTK dışı kinazların (ör. CSK) inhibisyonu yoluyla atriyal fibrilasyon ve hipertansiyon riskini artırır; ayrıca trombosit GPVI sinyalini bozarak kanama eğilimi yaratır.\n\nCHA2DS2-VASc 4 olan hastada inme önlenmesi için oral antikoagülasyon gerekir. BTK inhibitörü + antikoagülan birlikteliği kanama riskini artırdığından iki ayar yapılır:\n• BTK inhibitörünün değiştirilmesi: ELEVATE-RR'de (akalabrutinib vs ibrutinib) ve ALPINE'da (zanubrutinib vs ibrutinib) ikinci kuşak ajanlarla AF belirgin daha az görülmüştür; hastalık yanıtı korunurken sınıf içi geçiş yapılır.\n• Antikoagülan seçimi: DOAC (ör. apiksaban) tercih edilir; ibrutinibin pivotal çalışmalarında varfarin kullanan hastalar dışlanmıştı ve ciddi kanamalar bildirilmiştir. CYP3A4 ve P-gp etkileşimleri gözden geçirilir.\n\nİkili antiplatelet tedavi AF'de inmeyi OAC kadar önlemez ve BTK inhibitörüyle birlikte kanamayı artırır. Kontrol altındaki KLL'de etkili tedaviyi kemoterapiye çevirmek gereksizdir. Doz artırımı hem gerekçesiz hem de toksisiteyi artırıcıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Varfarin ibrutinib çalışmalarında dışlanmıştır ve ciddi kanama bildirimleri nedeniyle kaçınılır.",
+        "B": "DOGRU — AF daha az olan ikinci kuşak BTK inhibitörüne geçiş ve DOAC ile inme önlenmesi en dengeli yaklaşımdır.",
+        "C": "YANLIS — Stabil yanıtlı hastada etkin tedaviyi bırakmak gereksizdir; CHA2DS2-VASc 4'te antikoagülan da verilmelidir.",
+        "D": "YANLIS — İkili antiplatelet AF'de inmeyi OAC kadar önlemez ve BTK inhibitörüyle kanama riskini artırır.",
+        "E": "YANLIS — KLL'de ibrutinib dozu 420 mg/gündür; artırım gerekçesizdir ve kardiyak toksisiteyi artırabilir."
+      },
+      "etiketler": [
+        "İbrutinib",
+        "Atriyal Fibrilasyon",
+        "BTK İnhibitörü",
+        "Antikoagülasyon",
+        "Kardiyotoksisite"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Byrd et al. JCO 2021 (ELEVATE-RR); Brown et al. NEJM 2023 (ALPINE)"
+    },
+    {
+      "id": "s15",
+      "metin": "69 yaşında erkek hasta, 6 yıldır KLL tanısıyla izleniyor; 2 yıl önce venetoklaks + obinutuzumab ile tedavi edilmiş. Son 4 haftadır sol aksillada hızla büyüyen kitle, 38.4°C'ye varan ateş, gece terlemesi ve 5 kg kilo kaybı tanımlıyor. Diğer lenf nodları stabil.\n\nTetkikler:\nSol aksiller kitle: 6 cm (4 hafta önce palpe edilmiyordu)\nLDH: 820 U/L (üst sınırın ~3 katı)\nKalsiyum: 11.2 mg/dL\nTam kan sayımı: lenfosit 12.000/µL, Hb 11.8 g/dL, trombosit 142.000/µL\n\nBu hastada en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "PET-BT ile en yüksek FDG tutulumu gösteren lezyonun eksizyonel ya da kalın iğne biyopsisi",
+        "B": "Richter dönüşümü kabul edilip biyopsisiz R-CHOP başlanması",
+        "C": "Periferik kanda akım sitometrinin tekrarlanıp dönüşümün kanda araştırılması",
+        "D": "BTK inhibitörü ile ampirik tedaviye başlanıp yanıtın değerlendirilmesi",
+        "E": "Aksiller kitleden ince iğne aspirasyon sitolojisi yapılması"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Hızla büyüyen asimetrik nod, B semptomları, yüksek LDH ve hiperkalsemi Richter dönüşümünü düşündürür; tanı PET-BT ile yönlendirilen, en yüksek SUVmax'lı lezyondan doku biyopsisiyle konur.",
+      "aciklama_detay": "Richter dönüşümü, KLL'nin agresif lenfomaya (çoğunlukla DLBCL, nadiren Hodgkin lenfoma) dönüşmesidir ve hastaların yaklaşık %2–10'unda görülür. Şüphe uyandıran bulgular: tek bölgede orantısız ve hızlı büyüyen nod, ateş-terleme-kilo kaybı, belirgin LDH artışı, hiperkalsemi ve ekstranodal tutulum.\n\nKLL nodları genellikle düşük FDG tutulumu gösterir. PET-BT'de yüksek SUVmax (sıklıkla >10) dönüşüm lehinedir ve en önemlisi biyopsi yerini belirler: örneklem hatasını azaltmak için en yüksek tutulum gösteren lezyondan eksizyonel ya da kalın iğne biyopsisi yapılır. Negatif öngörü değeri yüksektir; düşük SUVmax dönüşümü büyük olasılıkla dışlar.\n\nİnce iğne aspirasyonu doku mimarisini göstermez, DLBCL'yi KLL'nin proliferasyon merkezlerinden (hızlanmış KLL) güvenilir biçimde ayıramaz. Kandaki akım sitometri dokudaki dönüşümü göstermez. Biyopsisiz tedavi hem yanlış tanı riskini hem de klonal ilişki (KLL ile klonal ilişkili dönüşümün prognozu daha kötüdür) ve EBV durumu gibi prognostik bilgilerin kaybını taşır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Richter şüphesinde PET-BT yönlendirmeli, en yüksek SUVmax'lı lezyondan doku biyopsisi tanının standart yoludur.",
+        "B": "YANLIS — Tanı histolojik olarak doğrulanmadan agresif kemoimmünoterapi başlanmaz; klonal ilişki ve histolojik tip (DLBCL / Hodgkin) tedaviyi değiştirir.",
+        "C": "YANLIS — Dönüşüm dokuda olur; periferik kan akım sitometrisi KLL klonunu gösterir, dönüşümü göstermez.",
+        "D": "YANLIS — Ampirik tedavi tanıyı geciktirir; Richter dönüşümü BTK inhibitörü monoterapisine kalıcı yanıt vermez.",
+        "E": "YANLIS — İnce iğne aspirasyonu doku mimarisini göstermez ve dönüşümü güvenilir biçimde ayıramaz."
+      },
+      "etiketler": [
+        "Richter Dönüşümü",
+        "PET-BT",
+        "SUVmax",
+        "Biyopsi",
+        "DLBCL"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Hallek et al. Blood 2018 (iwCLL); MediSea Kanonik İçerik — KLL (Richter transformasyonu)"
     }
   ]
 }

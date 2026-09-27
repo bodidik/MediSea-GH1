@@ -303,6 +303,156 @@
       ],
       "zorluk": "orta",
       "kaynak": "Kural-Seyahi et al. Medicine (Baltimore) 2003; Alibaz-Oner & Direskeneli Clin Exp Rheumatol 2019"
+    },
+    {
+      "id": "s11",
+      "metin": "Yirmi dokuz yaşında kadın hasta, üç yıldır Behçet hastalığı tanısıyla izleniyor. Ayda ortalama 4–5 kez çıkan, yemek yemesini ve konuşmasını zorlaştıran ağrılı oral aftları var; seyrek genital ülser ve papülopüstüler lezyonlar eşlik ediyor. Göz, damar, sinir sistemi ya da GİS tutulumu yok. Altı aydır düzenli kolşisin 1.5 mg/gün ve topikal steroid kullanıyor; oral aftların sıklığı değişmemiş.\n\nBu hastada oral aftlar için en uygun sonraki tedavi hangisidir?",
+      "secenekler": {
+        "A": "Aylık IV siklofosfamid",
+        "B": "Uzun süreli prednizolon 40 mg/gün",
+        "C": "Apremilast",
+        "D": "Sekukinumab",
+        "E": "Kolşisin dozunun 4 mg/gün'e çıkarılması"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Major organ tutulumu olmayan, kolşisine rağmen sık ve ağrılı oral aftları süren hastada EULAR 2018'e göre fosfodiesteraz-4 inhibitörü apremilast uygun sonraki basamaktır (RELIEF çalışması).",
+      "aciklama_detay": "Mukokutanöz Behçet'te tedavi, yaşam kalitesini bozan lezyonları baskılamayı amaçlar ve major organ tutulumu yoksa sitotoksik ya da uzun süreli yüksek doz steroid gerekmez. EULAR 2018 önerilerinde topikal önlemler (steroid gargarası/pomadı) ilk basamaktır; kolşisin özellikle eritema nodozum ve genital ülserin baskın olduğu hastalarda tekrarları önlemek için önerilir. Oral ülserlerde apremilast önerilir: RELIEF faz 3 çalışmasında plaseboya göre oral ülser sayısını ve ağrısını anlamlı azalttı. En sık yan etkileri ishal, bulantı ve baş ağrısıdır; genellikle ilk haftalarda azalır. Dirençli seçilmiş olgularda azatiyoprin, talidomid, interferon-alfa ya da anti-TNF ajanlar kullanılabilir. IL-17 inhibitörleri Behçet'te yararsız bulunmuş, hatta mukokutanöz ya da bağırsak alevlenmesine yol açabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Siklofosfamid pulmoner arter anevrizması gibi hayatı tehdit eden tutulumlara ayrılır; izole mukokutanöz hastalıkta toksisitesi kabul edilemez.",
+        "B": "YANLIS — Uzun süreli yüksek doz steroid mukokutanöz hastalıkta önerilmez; ancak kısa süreli ve düşük dozda alevlenme kontrolü için kullanılabilir.",
+        "C": "DOGRU — Kolşisine rağmen süren oral aftlarda apremilast EULAR 2018 önerisidir ve RELIEF çalışmasında etkinliği gösterilmiştir.",
+        "D": "YANLIS — IL-17 blokajı Behçet'te etkisiz bulunmuş, paradoksal alevlenme riski taşır.",
+        "E": "YANLIS — Behçet'te kolşisin genellikle 1–2 mg/gün kullanılır; 4 mg/gün hiçbir endikasyonda önerilen doz değildir ve ciddi toksisite riski taşır."
+      },
+      "etiketler": [
+        "Oral Aft",
+        "Apremilast",
+        "Mukokutanöz Tutulum",
+        "EULAR 2018",
+        "RELIEF"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Hatemi et al. Ann Rheum Dis 2018 (EULAR Behçet önerileri); Hatemi et al. N Engl J Med 2019 (RELIEF)"
+    },
+    {
+      "id": "s12",
+      "metin": "Yirmi yedi yaşında erkek hasta, iki yıldır tekrarlayan oral aft, genital ülser ve eritema nodozum nedeniyle Behçet hastalığı tanısıyla kolşisin kullanıyor. İki haftadır giderek artan baş ağrısı ve bulanık görme ile başvuruyor. Muayenede bilateral papil ödemi dışında nörolojik defisit yok.\n\nTetkikler:\n- Beyin MR: parankimal lezyon yok\n- MR venografi: süperior sagittal sinüs ve sağ transvers sinüste tromboz\n- Lomber ponksiyon: açılış basıncı 34 cmH₂O, hücre ve protein normal\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Yalnızca ömür boyu varfarin",
+        "B": "Siklosporin başlanması",
+        "C": "Trombofili paneli isteyip sonuca göre yalnızca DMAH ile uzun süreli antikoagülasyon tedavisi",
+        "D": "Acil endovasküler mekanik trombektomi",
+        "E": "Yüksek doz glukokortikoid ± kısa süreli antikoagülan, diğer damar tutulumunu tarama"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Behçet'te serebral venöz sinüs trombozu (non-parankimal nöro-Behçet) vaskülitik bir süreçtir. EULAR 2018'e göre ilk atak yüksek doz glukokortikoidle tedavi edilir, kısa süreli antikoagülan eklenebilir ve başka yerdeki damar tutulumu taranmalıdır.",
+      "aciklama_detay": "Nöro-Behçet iki ana biçimde görülür: parankimal (beyin sapı, bazal ganglion, diensefalon; kötü prognoz) ve non-parankimal (serebral venöz sinüs trombozu; görece iyi prognoz). Sinüs trombozu genç erkeklerde, çoğunlukla sinsi başlayan baş ağrısı, papil ödemi ve kafa içi basınç artışıyla gelir; periferik ven trombozlarıyla birlikte kümelenme eğilimindedir. Behçet'te tromboz koagülopatiden değil damar duvarı inflamasyonundan kaynaklandığı için tedavinin temeli immünsüpresyondur. EULAR 2018 önerileri, ilk serebral venöz trombozun yüksek doz glukokortikoid ve ardından azaltma ile tedavisini, antikoagülanın kısa süreli eklenebileceğini ve başka yerdeki vasküler hastalığın taranmasını önerir; pulmoner arter anevrizması varken antikoagülan kanama riski taşır. Görmeyi tehdit eden kafa içi basınç artışında asetazolamid ve gerekirse görme koruyucu girişimler eklenir. Tekrarlayan ya da ek damar tutulumu olan olgularda azatiyoprin gibi idame immünsüpresyon gerekir. Siklosporin nörotoksik olduğundan nöro-Behçet'te kaçınılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tek başına ve ömür boyu antikoagülan, vaskülitik süreci baskılamaz; ayrıca gizli pulmoner arter anevrizmasında kanama riski taşır.",
+        "B": "YANLIS — Siklosporin nörotoksiktir ve nöro-Behçet'te kaçınılması gereken bir ajandır.",
+        "C": "YANLIS — Tromboz trombofiliye değil vaskülite bağlıdır; immünsüpresyon olmadan yalnızca DMAH yetersizdir.",
+        "D": "YANLIS — Nörolojik defisiti olmayan, görece iyi prognozlu sinüs trombozunda endovasküler girişim ilk basamak değildir.",
+        "E": "DOGRU — Yüksek doz glukokortikoid, gerekirse kısa süreli antikoagülan ve diğer vasküler tutulum taraması EULAR 2018 yaklaşımıdır."
+      },
+      "etiketler": [
+        "Nöro-Behçet",
+        "Serebral Venöz Sinüs Trombozu",
+        "Glukokortikoid",
+        "Antikoagülasyon",
+        "EULAR 2018"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Hatemi et al. Ann Rheum Dis 2018 (EULAR Behçet önerileri)"
+    },
+    {
+      "id": "s13",
+      "metin": "Otuz bir yaşında erkek hasta, sol bacakta şişlik ve ağrıyla başvuruyor; Doppler ultrasonografide sol femoral ven trombozu saptanıyor. Son iki yıldır yılda 5–6 kez tekrarlayan oral aftları var. Genital ülser, göz tutulumu, deri lezyonu ya da nörolojik bulgu öyküsü yok. Paterji testi pozitif.\n\nBu hasta ISG 1990 ve ICBD 2014 ölçütlerine göre değerlendirildiğinde hangisi doğrudur?",
+      "secenekler": {
+        "A": "Her iki ölçüt seti de karşılanır",
+        "B": "ISG 1990 karşılanmaz; ICBD 2014 ile 4 puan olduğundan karşılanır",
+        "C": "ISG 1990 karşılanır; ICBD 2014 ile 3 puan olduğundan karşılanmaz",
+        "D": "Her iki ölçüt seti de karşılanmaz",
+        "E": "Her iki ölçüt setinin uygulanabilmesi için HLA-B*51 pozitifliği gerekir"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "ISG 1990'da zorunlu oral afta ek olarak genital ülser, göz, deri ya da paterjiden en az 2'si gerekir; vasküler tutulum bu listede yoktur, yani yalnızca paterji ile karşılanmaz. ICBD 2014'te oral aft (2) + vasküler tutulum (1) + pozitif paterji (1) = 4 puan ile ölçüt karşılanır.",
+      "aciklama_detay": "ISG 1990 ölçütleri: yılda en az 3 kez tekrarlayan oral aft zorunludur ve buna ek olarak tekrarlayan genital ülser, göz lezyonu, deri lezyonu (eritema nodozum, psödofolikülit, papülopüstüler lezyon, akneiform nodül) ya da pozitif paterji testinden en az ikisi bulunmalıdır. Vasküler ve nörolojik tutulum ISG'de yer almaz; bu nedenle ISG, oral aft ve damar tutulumuyla gelen hastaları kaçırabilir. ICBD 2014 ağırlıklı puanlama kullanır: oral aft, genital aft ve oküler lezyon 2'şer puan; deri lezyonu, nörolojik bulgu ve vasküler bulgu 1'er puan; paterji testi yapılırsa pozitifliği 1 puan. Toplam ≥4 puan Behçet hastalığı olarak sınıflama sağlar ve duyarlılığı ISG'den yüksek, özgüllüğü daha düşüktür. Bu hastada 2 + 1 + 1 = 4 puan vardır. Klinikte bu ayrım önemlidir: genç erkekte açıklanamayan femoral ven trombozu ve oral aft Behçet'i düşündürmeli ve tedavi antikoagülan değil immünsüpresyon eksenli planlanmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — ISG'de vasküler tutulum ek kriter değildir; yalnızca paterji ile ek kriter sayısı 1'de kalır.",
+        "B": "DOGRU — ISG için ikinci ek kriter eksiktir; ICBD'de 2 + 1 + 1 = 4 puan ile eşik karşılanır.",
+        "C": "YANLIS — ISG karşılanmaz; ICBD puanı paterji dahil 4'tür, 3 değil.",
+        "D": "YANLIS — ICBD 2014, vasküler tutulumu ve paterjiyi puanladığı için bu hastada karşılanır.",
+        "E": "YANLIS — HLA-B*51 en güçlü genetik risk etkeni olsa da hiçbir ölçüt setinin bileşeni değildir."
+      },
+      "etiketler": [
+        "ISG 1990",
+        "ICBD 2014",
+        "Sınıflama Ölçütleri",
+        "Paterji",
+        "Vasküler Behçet"
+      ],
+      "zorluk": "orta",
+      "kaynak": "International Study Group for Behçet's Disease. Lancet 1990; ITR-ICBD. J Eur Acad Dermatol Venereol 2014"
+    },
+    {
+      "id": "s14",
+      "metin": "Yirmi dört yaşında erkek hasta, bir yıldır oral aft ve papülopüstüler lezyonlar nedeniyle Behçet hastalığı tanısıyla kolşisin kullanıyor. İki gündür sağ gözde ani görme azalması ve uçuşan cisimler var. Görme keskinliği sağda 0.2. Oftalmolojik muayenede vitrit, retinal vaskülit ve retinada yama tarzı infiltratlar saptanıyor (panüveit, posterior segment tutulumu). Sol göz normal.\n\nBu hastada en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Topikal steroid ve sikloplejik damla ile izlem",
+        "B": "Sistemik immünsüpresif eklemeden yüksek doz oral prednizolon monoterapisi",
+        "C": "Kolşisin dozunun artırılması",
+        "D": "Yüksek doz glukokortikoid + infliksimab (ya da interferon-alfa)",
+        "E": "Apremilast"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Görmeyi tehdit eden ilk ya da tekrarlayan akut posterior üveit/panüveitte EULAR 2018, yüksek doz glukokortikoid ile birlikte infliksimab ya da interferon-alfa önerir. Sistemik steroid tek başına kullanılmaz.",
+      "aciklama_detay": "Oküler Behçet, özellikle genç erkeklerde ağır seyreder ve tedavisiz kalırsa tekrarlayan ataklarla kalıcı görme kaybına ilerler. EULAR 2018 önerilerine göre posterior segment tutulumu olan her hasta azatiyoprin, siklosporin, interferon-alfa ya da monoklonal anti-TNF antikoru gibi sistemik bir immünsüpresif rejimle tedavi edilmelidir; sistemik glukokortikoidler yalnızca bu ajanlarla birlikte kullanılır. Akut, görmeyi tehdit eden ilk ya da tekrarlayan üveit atağında yüksek doz glukokortikoid ile birlikte hızlı etkili infliksimab ya da interferon-alfa önerilir; tek taraflı alevlenmede intravitreal steroid sistemik tedaviye ek seçenektir. Adalimumab da anti-TNF seçeneği olarak kullanılır. Nörolojik tutulum riski olan hastada siklosporinden kaçınılması gerektiği unutulmamalıdır. Kolşisin ve apremilast mukokutanöz ve eklem tutulumuna yöneliktir; posterior üveitte etkisizdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Topikal tedavi ön segmente yöneliktir; posterior segment tutulumu ve retinal vaskülitte yetersizdir.",
+        "B": "YANLIS — EULAR 2018'e göre sistemik glukokortikoid posterior üveitte tek başına değil, sistemik immünsüpresifle birlikte kullanılır.",
+        "C": "YANLIS — Kolşisinin posterior üveit ve retinal vaskülitte etkinliği yoktur.",
+        "D": "DOGRU — Görmeyi tehdit eden akut posterior üveitte yüksek doz glukokortikoid + infliksimab ya da interferon-alfa önerilir.",
+        "E": "YANLIS — Apremilast oral ülserlere yöneliktir; oküler tutulumda yeri yoktur."
+      },
+      "etiketler": [
+        "Oküler Behçet",
+        "Posterior Üveit",
+        "İnfliksimab",
+        "İnterferon-alfa",
+        "EULAR 2018"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Hatemi et al. Ann Rheum Dis 2018 (EULAR Behçet önerileri)"
+    },
+    {
+      "id": "s15",
+      "metin": "Otuz beş yaşında erkek hasta, altı yıldır Behçet hastalığı tanısıyla izleniyor. Sağ diz arkasında fark ettiği nabız atan bir şişlik nedeniyle başvuruyor. Ağrı, iskemi bulgusu ya da rüptür belirtisi yok. Doppler ultrasonografide 3.5 cm popliteal arter anevrizması saptanıyor. Toraks BT anjiyografide pulmoner arter anevrizması yok.\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Onarım öncesi siklofosfamid + yüksek doz glukokortikoid, sonra onarım",
+        "B": "İmmünsüpresyon başlamadan hemen açık cerrahi onarım ve greft interpozisyonu",
+        "C": "Antikoagülan ve antiagregan ile medikal izlem",
+        "D": "Kolşisine devam edip altı ay sonra kontrol Doppler",
+        "E": "Asemptomatik olduğu için yalnızca yıllık izlem"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Behçet'te aort ve periferik arter anevrizmalarında EULAR 2018'e göre onarımdan önce siklofosfamid + glukokortikoid ile medikal tedavi gerekir; hasta semptomatikse girişim ertelenmez. İmmünsüpresyon olmadan onarım anastomoz yerinde psödoanevrizma ve nüks riskini artırır.",
+      "aciklama_detay": "Behçet'te arteriyel tutulum oklüzyondan çok anevrizma ve psödoanevrizma şeklindedir ve vaza vazorumun vasküliti sonucu gelişir. Aktif inflamasyon sürerken yapılan onarımda anastomoz yerinde yeni psödoanevrizma, greft oklüzyonu ve girişim yerinde (paterji benzeri) anevrizma gelişme riski yüksektir. Bu nedenle EULAR 2018, aort ve periferik arter anevrizmalarında onarım öncesi siklofosfamid ve glukokortikoid ile medikal tedaviyi gerekli görür; hasta semptomatikse (rüptür tehdidi, iskemi) cerrahi ya da stent ertelenmez. Onarımdan sonra da immünsüpresyon sürdürülür. Dirençli olgularda monoklonal anti-TNF antikorları seçenektir. Pulmoner arter anevrizmasında da yüksek doz glukokortikoid + siklofosfamid önerilir ve büyük kanama riskinde açık cerrahi yerine embolizasyon tercih edilir. Anevrizmayı büyütebileceği ve kanama riski taşıdığı için antikoagülan tedavinin yeri yoktur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Asemptomatik periferik anevrizmada onarım öncesi siklofosfamid + glukokortikoid ile inflamasyon kontrolü EULAR 2018 önerisidir.",
+        "B": "YANLIS — İmmünsüpresyonsuz onarım anastomoz psödoanevrizması ve nüks riskini artırır; semptomsuz hastada önce medikal kontrol sağlanır.",
+        "C": "YANLIS — Anevrizmada antikoagülan/antiagregan vasküliti tedavi etmez ve kanama riskini artırır.",
+        "D": "YANLIS — Kolşisin arteriyel tutulumda etkisizdir; beklemek rüptür riskini sürdürür.",
+        "E": "YANLIS — Behçet anevrizması aktif vaskülitin göstergesidir; asemptomatik olması tedavisiz izlemi haklı kılmaz."
+      },
+      "etiketler": [
+        "Arteriyel Tutulum",
+        "Periferik Arter Anevrizması",
+        "Siklofosfamid",
+        "Psödoanevrizma",
+        "EULAR 2018"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Hatemi et al. Ann Rheum Dis 2018 (EULAR Behçet önerileri)"
     }
   ]
 }

@@ -336,6 +336,126 @@
       ],
       "zorluk": "zor",
       "kaynak": "UpToDate — Overview of the management of benign goiter"
+    },
+    {
+      "id": "s12",
+      "metin": "Altmış üç yaşında erkek hasta, karotis Doppler incelemesinde tesadüfen tiroid nodülü saptanmış. Dış merkezde yapılan değerlendirmede:\n\nTSH: 1.9 mU/L\nTiroid USG: sağ lob orta kesimde 8 mm, çok hipoekoik, düzensiz sınırlı nodül (TR5); tiroid kapsülüyle teması yok, trakea ve trakeoözofageal oluktan uzak\nBoyun USG: şüpheli lenf nodu yok\nİİAB: Bethesda VI — klasik papiller karsinom; agresif alt tip bulgusu yok\n\nHastanın iki yıl önce koroner stent öyküsü var ve mümkünse ameliyattan kaçınmak istiyor. En uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Total tiroidektomi, profilaktik santral boyun diseksiyonu ve radyoaktif iyot ablasyonu.",
+        "B": "Aktif izlem: 6–12 ayda bir boyun USG; boyutta ≥3 mm artış, ekstratiroidal yayılım ya da lenf nodu metastazı gelişirse cerrahi.",
+        "C": "Cerrahi yapılmadan radyoaktif iyot ile ablasyon.",
+        "D": "Levotiroksinle TSH <0.1 mU/L'ye baskılanarak tümörün geriletilmesi; izlem gerekmez.",
+        "E": "Mikrokarsinomlar ilerlemediğinden hiçbir izlem ya da tedavi gerekmez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Klinik lenf nodu ya da invazyon bulgusu olmayan, kritik yapılardan uzak papiller mikrokarsinomda (≤1 cm) aktif izlem, ATA 2015'e göre hemen cerrahiye kabul edilebilir bir alternatiftir; özellikle ileri yaş ve komorbiditede uygundur.",
+      "aciklama_detay": "Papiller tiroid mikrokarsinomlarının (≤1 cm) büyük çoğunluğu yıllar boyunca klinik olarak ilerlemez. Japonya'daki uzun izlem serileri, aktif izlemdeki hastaların küçük bir kısmında tümörün büyüdüğünü ya da lenf nodu metastazı geliştiğini, bu hastalarda gecikmeli cerrahinin sonucu kötüleştirmediğini göstermiştir; ilerleme riski gençlerde daha yüksek, ileri yaşta daha düşüktür. ATA 2015 kılavuzu, klinik olarak saptanan metastazı ya da yerel invazyonu olmayan ve sitolojide agresif hastalık kanıtı bulunmayan çok düşük riskli tümörlerde aktif izlemi hemen cerrahiye alternatif olarak kabul eder. Uygun aday seçiminde tümörün trakeaya, trakeoözofageal oluğa (rekürren sinir) ya da kapsüle yakın olmaması, hastanın düzenli izleme uyumu ve tercihi önemlidir. İzlem genellikle ilk yıllarda 6–12 ayda bir boyun USG ile yapılır; boyutta ≥3 mm artış, yeni lenf nodu metastazı ya da ekstratiroidal yayılım cerrahiye geçiş ölçütleridir. Cerrahi tercih edilirse bu boyutta lobektomi yeterlidir; profilaktik santral diseksiyon ve radyoaktif iyot endike değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Çok düşük riskli mikrokarsinomda total tiroidektomi, profilaktik santral diseksiyon ve RAİ aşırı tedavidir; cerrahi seçilse bile lobektomi yeterlidir.",
+        "B": "DOGRU — Uygun seçilmiş papiller mikrokarsinomda USG ile aktif izlem kabul edilen bir seçenektir; ilerleme ölçütleri belirlenmiştir.",
+        "C": "YANLIS — RAİ, tiroid dokusu yerindeyken tümörü ablate etmek için kullanılmaz; normal lob iyodu tümörden çok daha fazla tutar.",
+        "D": "YANLIS — TSH baskılaması mikrokarsinomu geriletmez; üstelik koroner hastalığı olan ileri yaştaki hastada atriyal fibrilasyon ve kemik kaybı riski taşır.",
+        "E": "YANLIS — Mikrokarsinomların bir kısmı ilerler; aktif izlem 'izlemsizlik' değil, düzenli USG ile yapılandırılmış bir takiptir."
+      },
+      "etiketler": [
+        "Papiller Mikrokarsinom",
+        "Aktif İzlem",
+        "Çok Düşük Risk",
+        "ATA 2015",
+        "Aşırı Tedavi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ATA 2015 Erişkin Tiroid Nodülleri ve Diferansiye Tiroid Kanseri Kılavuzu (Haugen ve ark. Thyroid 2016)"
+    },
+    {
+      "id": "s13",
+      "metin": "Otuz yedi yaşında kadın hasta, boynunda sol tarafta ele gelen şişlik nedeniyle başvuruyor.\n\nTetkikler:\nTSH: 1.4 mU/L\nTiroid USG: sol lobda 2.4 cm, çok hipoekoik, mikrokalsifikasyonlu nodül (TR5)\nNodül İİAB: Bethesda VI — papiller karsinom\nBoyun USG: sol seviye III'te 1.6 cm, yuvarlak, yağlı hilusu kaybolmuş, mikrokalsifikasyonlu lenf nodu\nLenf nodu İİAB: papiller karsinom metastazı; aspirat yıkama sıvısında tiroglobulin çok yüksek\nToraks BT: uzak metastaz yok\n\nBu hasta için en uygun cerrahi yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Sol lobektomi ve istmusektomi; lateral lenf nodu metastazı postoperatif radyoaktif iyotla tedavi edilir.",
+        "B": "Total tiroidektomi; boyun diseksiyonu yapılmaz, lenf nodu metastazı radyoaktif iyotla tedavi edilir.",
+        "C": "Total tiroidektomi ve yalnızca metastatik lenf nodunun seçici eksizyonu.",
+        "D": "Önce radyoaktif iyot, 6 ay sonra görüntülemeye göre lobektomi.",
+        "E": "Total tiroidektomi + santral (seviye VI) ve sol lateral kompartman (IIa–IV, gerekirse Vb) diseksiyonu."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Sitolojiyle kanıtlanmış lateral boyun metastazı (cN1b) olan papiller kanserde tedavi total tiroidektomi + kompartman temelli lateral boyun diseksiyonudur; bu hastalarda santral kompartman da çoğu kez tutulduğundan santral diseksiyon eklenir. Seçici lenf nodu eksizyonu yapılmaz.",
+      "aciklama_detay": "Preoperatif boyun USG, papiller tiroid kanserinde cerrahi planı belirleyen temel tetkiktir. Şüpheli lateral lenf nodu İİAB ile (ve gerekirse aspirat yıkama sıvısında tiroglobulin ölçümüyle) doğrulanmışsa hasta cN1b'dir. ATA 2015 kılavuzuna göre: 4 cm'den büyük tümör, belirgin ekstratiroidal yayılım, klinik lenf nodu metastazı ya da uzak metastaz varsa ilk cerrahi total tiroidektomidir; lobektomi yalnızca 1–4 cm, klinik N0, düşük riskli hastalıkta seçenek olabilir. Biyopsiyle kanıtlanmış lateral metastazda terapötik lateral kompartman diseksiyonu yapılır (genellikle seviye IIa, III, IV ve Vb); tek tek lenf nodu çıkarmak (seçici eksizyon) kompartmanda mikroskobik hastalık bıraktığı için nüks ve yeniden ameliyat riskini artırır. Lateral tutulumu olan hastaların çoğunda santral kompartman da tutulduğundan santral (seviye VI) diseksiyon eklenir. RAİ, cerrahiyle çıkarılabilecek makroskobik lenf nodu hastalığının yerine geçmez; ameliyattan sonra risk değerlendirmesine göre adjuvan olarak verilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Klinik lenf nodu metastazı lobektomi seçeneğini dışlar; makroskobik nodal hastalık RAİ ile yeterince tedavi edilemez.",
+        "B": "YANLIS — Kanıtlanmış lateral metastaz cerrahi olarak çıkarılmalıdır; RAİ makroskobik hastalıkta cerrahinin yerini tutmaz.",
+        "C": "YANLIS — Seçici lenf nodu eksizyonu kompartmanda hastalık bırakır; standart kompartman temelli diseksiyondur.",
+        "D": "YANLIS — Tiroid yerindeyken RAİ normal doku tarafından tutulur; neoadjuvan RAİ yaklaşımı yoktur.",
+        "E": "DOGRU — cN1b papiller kanserde total tiroidektomi + santral ve lateral kompartman diseksiyonu standarttır."
+      },
+      "etiketler": [
+        "Papiller Tiroid Kanseri",
+        "Lateral Lenf Nodu Metastazı",
+        "Boyun Diseksiyonu",
+        "Total Tiroidektomi",
+        "Preoperatif USG"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ATA 2015 Erişkin Tiroid Nodülleri ve Diferansiye Tiroid Kanseri Kılavuzu (Haugen ve ark. Thyroid 2016)"
+    },
+    {
+      "id": "s14",
+      "metin": "Yetmiş bir yaşında kadın hasta, 3 haftada hızla büyüyen boyun kitlesi, ses kısıklığı ve katı gıdaları yutmada güçlük nedeniyle başvuruyor. Performans durumu iyi (ECOG 1); solunum sıkıntısı yok.\n\nTetkikler:\nBoyun-toraks BT: sağ lobda 6 cm, trakea duvarına invaze kitle; her iki akciğerde çok sayıda nodül\nKesici iğne biyopsisi: anaplastik tiroid karsinomu\nHavayolu değerlendirmesi: stabil\n\nBu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Tümörde BRAF V600E hızla (ör. immünohistokimyayla) araştırılmalı; pozitifse dabrafenib + trametinib başlanmalıdır.",
+        "B": "Yüksek doz radyoaktif iyot tedavisi verilmelidir.",
+        "C": "Akciğer metastazlarına rağmen total tiroidektomi ve radikal boyun diseksiyonu hemen yapılmalıdır.",
+        "D": "Levotiroksinle TSH baskılanmalı ve 3 ay sonra görüntülemeyle yanıt değerlendirilmelidir.",
+        "E": "Moleküler inceleme tedavi kararını değiştirmeyeceğinden hasta doğrudan palyatif bakıma yönlendirilmelidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Anaplastik tiroid kanserinde tanı konar konmaz BRAF V600E hızla (günler içinde, immünohistokimyayla) bakılır; olguların yaklaşık %40–45'inde pozitiftir ve dabrafenib + trametinib yanıt ve sağkalımı belirgin iyileştirir.",
+      "aciklama_detay": "Anaplastik tiroid karsinomu en agresif tiroid kanseridir; tanıda hastaların çoğu yerel ileri ya da metastatiktir (bu hasta evre IVC). Dediferansiye olduğu için iyot tutmaz ve TSH'ye bağımlı değildir; bu nedenle RAİ ve TSH baskılamanın yeri yoktur. ATA 2021 anaplastik tiroid kanseri kılavuzu, tanı konar konmaz hızlı moleküler değerlendirmeyi, özellikle BRAF V600E'nin immünohistokimyayla günler içinde araştırılmasını önerir. BRAF V600E pozitif hastalıkta dabrafenib (BRAF inhibitörü) + trametinib (MEK inhibitörü) yüksek yanıt oranı sağlar ve standart birinci basamak sistemik tedavidir; yerel ileri hastalıkta neoadjuvan kullanıldığında daha önce çıkarılamayan tümörün rezeksiyonunu mümkün kılabilir. BRAF negatif hastada NTRK, RET füzyonları ve PD-L1 gibi diğer hedefler araştırılır. Uzak metastazlı hastada makroskobik tam rezeksiyon amaçlı agresif boyun cerrahisi sağkalım yararı sağlamaz. Tedavi hedefleri, havayolu planı ve palyatif bakım en baştan hastayla birlikte konuşulur; ancak hedefe yönelik tedavi seçeneği değerlendirilmeden doğrudan yalnızca palyasyona geçmek artık uygun değildir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Hızlı BRAF V600E testi ve pozitiflikte dabrafenib + trametinib anaplastik kanserde güncel standarttır.",
+        "B": "YANLIS — Anaplastik kanser iyot tutmaz; RAİ etkisizdir.",
+        "C": "YANLIS — Uzak metastazlı (evre IVC) hastada agresif boyun cerrahisi sağkalımı iyileştirmez; önce sistemik tedavi seçeneği belirlenir.",
+        "D": "YANLIS — Anaplastik kanser TSH'ye bağımlı değildir; 3 ay beklemek bu hızla büyüyen tümörde kabul edilemez.",
+        "E": "YANLIS — Moleküler test tedaviyi doğrudan belirler; BRAF pozitif hastalarda hedefe yönelik tedavi anlamlı yarar sağlar."
+      },
+      "etiketler": [
+        "Anaplastik Tiroid Kanseri",
+        "BRAF V600E",
+        "Dabrafenib + Trametinib",
+        "Moleküler Test",
+        "Hedefe Yönelik Tedavi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ATA 2021 Anaplastik Tiroid Kanseri Kılavuzu (Bible ve ark. Thyroid 2021)"
+    },
+    {
+      "id": "s15",
+      "metin": "Kırk iki yaşında kadın hasta, sağ lobdaki 1.6 cm Bethesda VI nodül nedeniyle sağ lobektomi geçirmiş. Preoperatif USG'de sol lob normal, klinik lenf nodu yokmuş.\n\nPatoloji:\nKlasik papiller karsinom, 1.6 cm, tiroid içinde sınırlı\nCerrahi sınırlar negatif, vasküler invazyon yok\nÇıkarılan 2 santral lenf nodu: metastaz yok\n\nPostoperatif 6. hafta:\nTSH: 3.1 mU/L (N: 0.4–4.0), sT4 normal; levotiroksin kullanmıyor\nBoyun USG: sol lob normal, şüpheli lenf nodu yok\n\nBu hasta için en uygun sonraki yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tamamlayıcı tiroidektomi yapılmalı, ardından radyoaktif iyot ablasyonu verilmelidir.",
+        "B": "Tamamlayıcı cerrahi gerekmez; kalan sol lob radyoaktif iyotla ablate edilmelidir.",
+        "C": "Levotiroksinle TSH <0.1 mU/L düzeyine baskılanmalıdır.",
+        "D": "Ek cerrahi ve RAİ gerekmez; TSH 0.5–2 mU/L'de tutulur (gerekirse düşük doz levotiroksin), boyun USG ile izlenir.",
+        "E": "3 ayda bir uyarılmış tiroglobulin ölçülmeli; tiroglobulin 1 ng/mL'yi aşarsa tamamlayıcı tiroidektomi yapılmalıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Lobektomi yapılmış düşük riskli papiller kanserde (1–4 cm, tiroid içinde, N0) tamamlayıcı tiroidektomi ve RAİ gerekmez; ATA 2015'e göre TSH 0.5–2 mU/L'de tutulur ve izlem boyun USG ile yapılır.",
+      "aciklama_detay": "ATA 2015 kılavuzu 1–4 cm, ekstratiroidal yayılımı ve klinik lenf nodu metastazı olmayan diferansiye tiroid kanserinde ilk cerrahi olarak lobektomiyi total tiroidektomiye kabul edilebilir bir alternatif sayar. Patoloji düşük riski doğrularsa (tiroid içinde sınırlı, negatif sınır, vasküler invazyon yok, N0) tamamlayıcı tiroidektomi gerekmez; RAİ ise lob yerindeyken zaten anlamsızdır ve düşük riskli hastalıkta total tiroidektomi sonrasında bile rutin önerilmez. Lobektomi sonrası TSH düşük-normal aralıkta (0.5–2 mU/L) tutulur; hasta bu aralıkta kalıyorsa levotiroksin gerekmeyebilir, bu hastada olduğu gibi TSH daha yüksekse düşük doz eklenir. TSH baskılaması (<0.1 mU/L) düşük riskli hastada yarar sağlamaz; atriyal fibrilasyon ve kemik kaybı riski taşır. İzlemin temeli periyodik boyun USG'dir. Kalan lob tiroglobulin ürettiğinden lobektomi sonrasında tiroglobulin için geçerli bir eşik yoktur; ancak zaman içindeki belirgin yükselme trendi araştırma nedeni olabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Düşük riskli, tiroid içinde sınırlı, N0 tümörde tamamlayıcı tiroidektomi ve RAİ ek yarar sağlamaz.",
+        "B": "YANLIS — Bütün bir lobun RAİ ile ablasyonu önerilmez; bu hastada ablasyon endikasyonu da yoktur.",
+        "C": "YANLIS — TSH baskılaması yüksek riskli ya da yapısal hastalığı süren hastalar içindir; düşük riskte yarar yok, yan etki riski var.",
+        "D": "DOGRU — Düşük riskli lobektomi hastasında hedef TSH 0.5–2 mU/L, izlem boyun USG iledir.",
+        "E": "YANLIS — Karşı lob yerinde durduğu sürece tiroglobulin nüks belirteci olarak eşik değerle yorumlanamaz; uyarılmış tiroglobulin bu hastada kullanılmaz."
+      },
+      "etiketler": [
+        "Lobektomi",
+        "Düşük Risk",
+        "TSH Hedefi",
+        "Tamamlayıcı Tiroidektomi",
+        "ATA 2015"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ATA 2015 Erişkin Tiroid Nodülleri ve Diferansiye Tiroid Kanseri Kılavuzu (Haugen ve ark. Thyroid 2016)"
     }
   ]
 }

@@ -1,0 +1,368 @@
+{
+  "id": "quiz-endo-hipofiz-kesim-degerleri-001",
+  "baslik": "Hipofiz Hastalıkları — Kesim Değerleri ve Ayırıcı Tanı — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "hipofiz-kesim-degerleri-ayirici-tani",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "34 yaşında kadın hasta, rutin kontrolde prolaktin yüksekliği saptanarak yönlendiriliyor. Adetleri düzenli, galaktore, libido kaybı ya da baş ağrısı yok. İlaç kullanmıyor; gebelik testi negatif, TSH ve kreatinin normal.\n\nTetkikler (uyandıktan 3 saat sonra, stressiz koşulda):\n• Prolaktin: 78 ng/mL; tekrarında 74 ng/mL (kadında üst sınır 25 ng/mL)\n• Polietilen glikol (PEG) ile çöktürme sonrası prolaktin: 16 ng/mL (geri kazanım %21)\n\nTEMD 2022 kılavuzunun eşiklerine göre bu sonucun yorumu ve en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Mikroprolaktinoma olasılığı yüksektir; hipofiz MRG çekilip kabergolin başlanmalıdır",
+        "B": "Makroprolaktinemi vardır; semptomsuz hastada ileri tetkik ve tedavi gerekmez",
+        "C": "Geri kazanım gri zondadır; hipofiz MRG ile tümör dışlanmalıdır",
+        "D": "Kanca etkisi olasıdır; örnek 1:100 seyreltilerek ölçüm yinelenmelidir",
+        "E": "Stres hiperprolaktinemisidir; kanül takılarak 20 dakika arayla üç örnek alınmalıdır"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "PEG sonrası prolaktinde %60'tan fazla azalma (geri kazanım %40'ın altında) makroprolaktinemiyi gösterir; biyolojik olarak etkisiz olan bu form semptomsuz hastada ileri tetkik ya da tedavi gerektirmez.",
+      "aciklama_detay": "Hiperprolaktinemi eşiği TEMD 2022'ye göre erkekte 20, kadında 25 ng/mL'dir; stres yoksa tek ölçüm yeterlidir. Makroprolaktin, prolaktinin IgG ile oluşturduğu büyük kompleks formdur; kapiller endotelden geçemez, reseptöre bağlanamaz ve klinik etki göstermez, ancak immünoassaylerde ölçülür. Klasik semptomu olmayan hiperprolaktinemide ilk düşünülmesi gereken budur. Rutin yöntem PEG ile çöktürmedir: kılavuza göre PRL'deki azalma %40'ın altındaysa makroprolaktinemi yoktur, %60'ın üzerindeyse vardır (geri kazanım %40'ın altı), %40–60 arası gri zondur ve karar klinikle verilir. Bu hastada azalma %79'dur (geri kazanım %21), yani makroprolaktinemi kesindir ve PEG sonrası kalan monomerik prolaktin normal sınırdadır. Asemptomatik makroprolaktinemide MRG ve dopamin agonisti gereksizdir; gereksiz görüntüleme ve rastlantısal insidentaloma zincirinden kaçınılır. Prolaktinomaların da makroprolaktin salgılayabileceği unutulmamalıdır; semptom varsa ya da PEG sonrası monomerik prolaktin yüksek kalıyorsa ileri inceleme yapılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PEG sonrası monomerik prolaktin normaldir; yükseklik biyolojik olarak etkisiz makroprolaktinden kaynaklanır.",
+        "B": "DOGRU — Geri kazanım %21 (azalma %79): makroprolaktinemi; semptomsuz hastada ileri tetkik ve tedavi gerekmez.",
+        "C": "YANLIS — Gri zon %40–60 azalmadır; %79 azalma kesin makroprolaktinemidir.",
+        "D": "YANLIS — Kanca etkisi dev makroadenomda yalancı düşük prolaktin sorunudur; burada kitle yoktur.",
+        "E": "YANLIS — Stressiz koşulda iki kez benzer sonuç alınmış ve PEG açıklamayı vermiştir; kanüllü seri örnekleme gereksizdir."
+      },
+      "etiketler": ["Makroprolaktinemi", "PEG çöktürme", "Hiperprolaktinemi eşikleri", "Laboratuvar yorumu"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 1); Endocrine Society 2011 hiperprolaktinemi kılavuzu (Melmed ve ark.)"
+    },
+    {
+      "id": "s2",
+      "metin": "42 yaşında erkek hasta, 3 aydır baş ağrısı, yan görmede azalma ve libido kaybı yakınmasıyla başvuruyor. Muayenede bitemporal hemianopsi var.\n\nTetkikler:\n• Hipofiz MRG: 46 mm, her iki kavernöz sinüsü saran, suprasellar uzanımla optik kiazmaya bası yapan invaziv makroadenom\n• Prolaktin (iki bölgeli immünometrik yöntem): 96 ng/mL\n• Total testosteron: 140 ng/dL; LH: 1,2 mIU/mL\n• Sabah kortizolü: 16 µg/dL; serbest T4 normal\n\nBeyin cerrahisi ekibi hastayı gelecek hafta transsfenoidal cerrahiye almayı planlıyor.\n\nTedavi kararından önce en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Prolaktin 200 ng/mL'nin altında olduğu için sap etkisi kabul edip cerrahiyi planlandığı gibi yapmak",
+        "B": "Prolaktin 25 ng/mL'nin üzerinde olduğu için cerrahiyi iptal edip kabergolin başlamak",
+        "C": "Dinamik kontrastlı MRG ile adenom tipini belirlemek",
+        "D": "Serumu 1:100 seyrelterek prolaktin ölçümünü yinelemek",
+        "E": "Makroprolaktin için PEG ile çöktürme yapmak"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Dev invaziv makroadenomda prolaktinin beklenenden düşük çıkması kanca etkisini düşündürür; seyreltilmiş ölçüm, cerrahi (fonksiyonsuz adenom) ile dopamin agonisti (dev prolaktinoma) arasındaki kararı belirler.",
+      "aciklama_detay": "İki bölgeli (sandviç) immünometrik yöntemlerde çok yüksek prolaktin, yakalayıcı ve işaretli antikorların her ikisini ayrı ayrı doyurur ve sandviç oluşamaz; ölçülen değer yalancı olarak düşük ya da ılımlı yüksek çıkar (kanca etkisi). TEMD 2022'ye göre makroadenomda prolaktin beklenen kadar yüksek değilse iki olasılık vardır: fonksiyonsuz adenoma bağlı sap basısı ya da kanca etkisi. Ayrım için serum 1:100 seyreltilerek ölçüm yinelenir; dev prolaktinomada seyreltme sonrası değer çoğu zaman binlerle ifade edilir. Sonuç tedaviyi kökten değiştirir: dev prolaktinomada görme alanı defekti olsa bile birinci basamak tedavi kabergolindir ve çoğu hastada tümör küçülüp görme düzelir; fonksiyonsuz adenomda ise tedavi cerrahidir ve dopamin agonisti prolaktini düşürse de tümörü küçültmez. Sap etkisinde prolaktin genellikle 100 ng/mL'nin altındadır, nadiren 200'e ulaşır; ancak bu eşik kanca etkisi dışlanmadan kullanılamaz. Hafif prolaktin yüksekliği olan bir adenoma kesin prolaktinoma tanısı konamayacağı için seyreltme yapılmadan kabergolin başlamak da doğru değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — 46 mm invaziv tümörde kanca etkisi dışlanmadan sap etkisi varsayılamaz; dev prolaktinoma gereksiz cerrahiye verilmiş olur.",
+        "B": "YANLIS — Hafif prolaktin yüksekliği sap etkisiyle de açıklanabilir; seyreltme yapılmadan prolaktinoma tanısı konamaz.",
+        "C": "YANLIS — Görüntüleme prolaktinomayı fonksiyonsuz adenomdan güvenilir biçimde ayırmaz; sorun ölçüm artefaktıdır.",
+        "D": "DOGRU — 1:100 seyreltme kanca etkisini ortaya çıkarır ve tedavi yolunu (kabergolin ya da cerrahi) belirler.",
+        "E": "YANLIS — PEG çöktürme makroprolaktin içindir; kanca etkisinde yalancı düşüklüğü düzeltmez."
+      },
+      "etiketler": ["Kanca etkisi", "Dev prolaktinoma", "Sap etkisi", "Seyreltme", "Laboratuvar yorumu"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 1); Endocrine Society 2011 hiperprolaktinemi kılavuzu (Melmed ve ark.)"
+    },
+    {
+      "id": "s3",
+      "metin": "51 yaşında postmenopozal kadın hasta, 3 yıldır oral konjuge östrojen içeren hormon replasman tedavisi kullanıyor. Yüzüğünün dar geldiğini, çene yapısının değiştiğini, aşırı terlediğini anlatıyor; karpal tünel sendromu ve horlama nedeniyle izleniyor.\n\nTetkikler:\n• IGF-1: normalin üst sınırının 0,95 katı (referans aralığın üst ucunda)\n• 75 g OGTT (ultrasensitif GH yöntemi):\n  – Glukoz: 0. dk 98 mg/dL, 120. dk 162 mg/dL\n  – GH en düşük değeri: 1,3 µg/L\n\nBu bulguların yorumu için aşağıdakilerden hangisi en doğrudur?",
+      "secenekler": {
+        "A": "Oral östrojen hepatik IGF-1 üretimini baskıladığından IGF-1 yalancı normal olabilir; baskılanmayan GH akromegaliyi destekler, hipofiz MRG çekilmelidir",
+        "B": "Yaşa ve cinse göre normal IGF-1 akromegaliyi kesin olarak dışlar; ileri tetkik gerekmez",
+        "C": "Bozulmuş glukoz toleransı OGTT'yi geçersiz kılar; tanı için rastgele GH ölçülmelidir",
+        "D": "Tanıyı kesinleştirmek için IGFBP-3 ölçülmelidir",
+        "E": "Östrojen IGF-1'i yalancı yükselttiği için hormon tedavisi kesilip 3 ay sonra değerlendirme yinelenmelidir"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Oral östrojen karaciğerde GH direnci yaratarak IGF-1'i düşürür ve akromegaliyi maskeleyebilir; OGTT'de GH'nin 0,4 µg/L (TEMD 2022, ultrasensitif yöntem) altına inmemesi otonom GH salınımını gösterir.",
+      "aciklama_detay": "Akromegali taramasında ilk basamak yaşa ve cinse göre yorumlanan IGF-1'dir ve normal IGF-1 genellikle akromegaliyi dışlar. Ancak IGF-1 üretimini etkileyen durumlar bilinmelidir: oral östrojen (ilk geçiş etkisiyle hepatik GH reseptör sinyalini baskılar), malnütrisyon, hipotiroidi, kontrolsüz diyabet, karaciğer ve böbrek yetmezliği IGF-1'i düşürür; gebelik ve ergenlik yükseltir. Endocrine Society 2014 akromegali kılavuzu bu durumlarda IGF-1'in dikkatle yorumlanmasını vurgular. Belirgin klinik şüphe olan ve IGF-1'i sınırda çıkan hastada doğrulama testi OGTT'dir. TEMD 2022 ultrasensitif yöntemlerde GH'nin 0,4 µg/L altına inmesini normal kabul eder; eski yöntemlerle kullanılan eşik 1 µg/L'dir. Bu hastada en düşük GH 1,3 µg/L ile her iki eşiğin de üzerindedir. Bozulmuş glukoz toleransı OGTT'yi geçersiz kılmaz (TEMD'de uygun olmayan durum aşikar diyabettir); ayrıca glukoz intoleransı akromegalinin kendisinin bulgusu olabilir. Rastgele GH tanıda anlamlı değildir, IGFBP-3'ün tanısal değeri yoktur. Hipofiz MRG çekilmeli, izlemde kıyaslanabilir IGF-1 için mümkünse transdermal östrojene geçilmelidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Oral östrojen IGF-1'i düşürür; klinik şüphe + OGTT'de baskılanmayan GH (1,3 µg/L) akromegaliyi destekler, MRG gerekir.",
+        "B": "YANLIS — Oral östrojen kullanan hastada normal IGF-1 akromegaliyi dışlamaz; klinik ve OGTT tabloyla çelişir.",
+        "C": "YANLIS — Bozulmuş glukoz toleransı testi geçersiz kılmaz; rastgele GH tanı için anlamlı değildir.",
+        "D": "YANLIS — IGFBP-3 akromegalide yükselebilir ama tanısal değeri yoktur.",
+        "E": "YANLIS — Oral östrojen IGF-1'i yükseltmez, düşürür; yorumun yönü terstir."
+      },
+      "etiketler": ["Akromegali", "IGF-1", "Oral östrojen", "OGTT GH baskılama", "Laboratuvar yorumu"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 1); Endocrine Society 2014 akromegali kılavuzu (Katznelson ve ark.)"
+    },
+    {
+      "id": "s4",
+      "metin": "48 yaşında erkek hasta, kavernöz sinüse uzanan rezidü tümörü olan ve birinci kuşak SRL'ye dirençli akromegali nedeniyle 6 aydır pegvisomant 15 mg/gün kullanıyor.\n\nTedavi öncesi → şimdi:\n• IGF-1: normalin üst sınırının 2,4 katı → 0,9 katı\n• GH: 7 µg/L → 14 µg/L\n• ALT: 24 → 38 U/L (üst sınır 40)\n• Açlık glukozu: 131 → 104 mg/dL\n• MRG: rezidü tümör boyutu stabil\n\nBu sonuçların yorumu ve izlem için aşağıdakilerden hangisi doğrudur?",
+      "secenekler": {
+        "A": "GH'nin iki katına çıkması tedavi başarısızlığıdır; pegvisomant kesilmelidir",
+        "B": "Hastalık kontrolünü belirlemek için OGTT ile GH baskılanması değerlendirilmelidir",
+        "C": "GH artışı tümör büyümesini gösterir; hasta yeniden cerrahiye yönlendirilmelidir",
+        "D": "GH normale inene kadar pegvisomant dozu 30 mg/güne çıkarılmalıdır",
+        "E": "Hastalık kontrol altındadır; izlem IGF-1 ile yapılır, karaciğer testleri ve rezidü tümör boyutu takip edilir"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Pegvisomant GH reseptörünü bloke eder, hipofize etki etmez; IGF-1'in negatif geri bildirimi azaldığı için GH yükselir. Etkinlik yalnızca IGF-1 ile değerlendirilir.",
+      "aciklama_detay": "Pegvisomant GH reseptör antagonistidir; fonksiyonel reseptör dimerizasyonunu ve JAK2/STAT5 sinyalini engelleyerek periferik IGF-1 üretimini düşürür. Tümöre etkisi yoktur ve IGF-1 düştükçe hipotalamus-hipofize negatif geri bildirim azaldığı için serum GH yükselir; bu beklenen bir farmakolojik bulgudur ve hastalık aktivitesini yansıtmaz. Bu nedenle TEMD 2022 ve Pituitary Society güncellemesi pegvisomant tedavisinde izlemi yalnızca IGF-1 ile önerir; yaşa göre normal IGF-1 kontroldür. OGTT tedavi altındaki hastada kontrol değerlendirmesinde kullanılmaz. Güvenlik izleminde karaciğer testleri ilk 6 ay ayda bir, sonra 6 ayda bir bakılır; transaminazlar üst sınırın 3 katını aşarsa ilaç kesilir. Az sayıda hastada tümör büyümesi bildirildiği için, özellikle radyoterapi almamış rezidü tümörde MRG ile boyut izlenir. Pegvisomantın glisemi üzerine olumlu etkisi vardır; bu hastadaki açlık glukozu düzelmesi de bununla uyumludur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — GH artışı pegvisomantın beklenen etkisidir; IGF-1 normalleşmiştir, tedavi başarılıdır.",
+        "B": "YANLIS — Tedavi altındaki hastada OGTT kontrolü değerlendirmez; pegvisomantta ölçüt IGF-1'dir.",
+        "C": "YANLIS — Tümör boyutu MRG ile stabildir; GH artışı tümör büyümesinin göstergesi değildir.",
+        "D": "YANLIS — Hedef GH değil IGF-1'dir; IGF-1 normalken doz artışı IGF-1 eksikliğine yol açar.",
+        "E": "DOGRU — IGF-1 normal = kontrol; izlem IGF-1, karaciğer testleri ve rezidü tümör için MRG ile yapılır."
+      },
+      "etiketler": ["Pegvisomant", "IGF-1 izlemi", "Akromegali tedavisi", "GH yorumu"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 1); Fleseriu ve ark., Pituitary Society akromegali güncellemesi, Pituitary 2021"
+    },
+    {
+      "id": "s5",
+      "metin": "38 yaşında kadın hasta, epilepsi nedeniyle 5 yıldır karbamazepin 800 mg/gün kullanıyor. Son 2 yılda 9 kg alan, yeni tanı hipertansiyonu olan hastada Cushing sendromu taraması isteniyor. Mor geniş stria, proksimal kas güçsüzlüğü ya da kolay morarma yok.\n\nTetkik:\n• 1 mg gece deksametazon baskılama testi: sabah serum kortizolü 4,6 µg/dL\n\nBu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Cushing sendromu tanısı kesinleşmiştir; plazma ACTH ölçülmelidir",
+        "B": "Kaynağı belirlemek için 8 mg yüksek doz deksametazon baskılama testi yapılmalıdır",
+        "C": "Sonuç yalancı pozitif olabilir; 24 saatlik idrar serbest kortizolü ve gece tükürük kortizolü ile tarama yapılmalıdır",
+        "D": "Aynı ilaçla iki gün 2 mg/gün düşük doz deksametazon testi yapılması sorunu çözer",
+        "E": "Test tekrarı için karbamazepin bir hafta kesilmelidir"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Karbamazepin CYP3A4'ü indükleyerek deksametazonun yıkımını hızlandırır; baskılanma yetersiz görünür. Bu hastada deksametazondan etkilenmeyen testler (idrar serbest kortizolü, gece tükürük kortizolü) tercih edilir.",
+      "aciklama_detay": "1 mg gece deksametazon testinde sabah kortizolünün 1,8 µg/dL (50 nmol/L) altına inmesi Cushing sendromunu kuvvetle dışlar (Endocrine Society 2008, TEMD 2022). Ancak testin geçerliliği yeterli deksametazon düzeyine bağlıdır. Karbamazepin, fenitoin, fenobarbital ve rifampisin gibi CYP3A4 indükleyicileri deksametazon klirensini artırır ve yalancı pozitif sonuç verir; östrojen ve gebelik CBG'yi artırarak aynı yönde etkiler. TEMD 2022, antiepileptik ve oral kontraseptif kullananlarda idrar serbest kortizolü ve gece yarısı (tükürük) kortizolünü öncelikli tarama olarak önerir. Eş zamanlı serum deksametazon düzeyi ölçülebiliyorsa, yeterli düzeye ulaşılıp ulaşılmadığını göstererek testi yorumlanabilir kılar. Aynı metabolizma iki günlük düşük doz testini de etkiler. Antiepileptiği kesmek nöbet riski nedeniyle kabul edilemez. Hiperkortizolizm doğrulanmadan ACTH ölçümü ya da yüksek doz testleriyle kaynak araştırması yapılmaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Enzim indükleyici kullanan hastada tek bir anormal DST tanıyı kesinleştirmez; kaynak araştırması hiperkortizolizm doğrulandıktan sonra yapılır.",
+        "B": "YANLIS — Yüksek doz test kaynak ayrımı içindir; hiperkortizolizm doğrulanmamıştır ve aynı ilaç etkileşimi bu testi de bozar.",
+        "C": "DOGRU — CYP3A4 indüksiyonu yalancı pozitiflik yapar; deksametazondan bağımsız testlerle (UFC, gece tükürük kortizolü) tarama yapılır.",
+        "D": "YANLIS — İki günlük düşük doz test de deksametazonun hızlanmış yıkımından etkilenir.",
+        "E": "YANLIS — Antiepileptiği kesmek nöbet riski taşır ve indüksiyon bir haftada ortadan kalkmaz."
+      },
+      "etiketler": ["1 mg DST", "Yalancı pozitiflik", "CYP3A4 indüksiyonu", "Cushing taraması", "Laboratuvar yorumu"],
+      "zorluk": "orta",
+      "kaynak": "Endocrine Society 2008 Cushing sendromu tanı kılavuzu (Nieman ve ark.); TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 1)"
+    },
+    {
+      "id": "s6",
+      "metin": "33 yaşında kadın hasta, ACTH bağımlı Cushing sendromu tanısı almış (iki kez yüksek idrar serbest kortizolü, yüksek gece tükürük kortizolü, sabah ACTH 58 pg/mL). Hipofiz MRG'de adenom görülmüyor. CRH uyarılı bilateral inferior petrozal sinüs örneklemesi (BIPSS) yapılıyor.\n\nSonuçlar:\n• Bazal ACTH: sağ IPS 72, sol IPS 64, periferik 50 pg/mL → en yüksek santral/periferik oran 1,44\n• CRH sonrası en yüksek ACTH: sağ IPS 118, sol IPS 104, periferik 70 pg/mL → oran 1,69\n• Bazal prolaktin: sağ IPS 14, sol IPS 13, periferik 12 ng/mL → IPS/periferik prolaktin oranı 1,17\n\nBu sonucun yorumu için aşağıdakilerden hangisi en doğrudur?",
+      "secenekler": {
+        "A": "Bazal oran 2'nin, uyarılmış oran 3'ün altında olduğu için ektopik ACTH sendromu kesinleşmiştir",
+        "B": "Prolaktin oranı 1,8'in altında olduğundan kanülasyon doğrulanamamıştır; sonuç ektopik ACTH lehine yorumlanamaz",
+        "C": "Sağ/sol oranı lateralizasyonu gösterir; sağ hemihipofizektomi planlanmalıdır",
+        "D": "CRH'ye zayıf yanıt psödo-Cushing durumunu gösterir; tedavi gerekmez",
+        "E": "Bazal oran 1,44 olduğu için Cushing hastalığı kesinleşmiştir; hipofiz cerrahisi yapılmalıdır"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "BIPSS'te IPS/periferik prolaktin oranı yaklaşık 1,8'in altındaysa örneğin hipofiz venöz drenajını yansıttığı doğrulanamaz; düşük ACTH gradyanı yalancı negatif olabilir ve ektopik kaynak kanıtı sayılmaz.",
+      "aciklama_detay": "BIPSS'te santral/periferik ACTH oranının bazalde 2'nin, CRH ya da desmopressin sonrası 3'ün üzerinde olması Cushing hastalığını gösterir. Ancak gradyanın olmaması yalnızca örneğin gerçekten hipofiz venöz akımından alındığı durumda ektopik ACTH lehine yorumlanabilir. Kateter yerleşimi yetersizse ya da venöz drenaj anomalisi (hipoplastik inferior petrozal sinüs, pleksiform drenaj) varsa Cushing hastalığında yalancı negatif sonuç alınır. Bunu anlamak için eş zamanlı prolaktin ölçülür: IPS/periferik prolaktin oranının 1,8 ve üzerinde olması başarılı kanülasyonu gösterir (konu anlatımındaki eşik). Bu hastada oran 1,17'dir; örnek hipofiz drenajını temsil etmiyor olabilir. Prolaktinle normalize ACTH oranı (ACTH oranı / prolaktin oranı = 1,44 / 1,17 ≈ 1,23) de santral kaynakla uyumludur. Bu durumda sonuç ektopik ACTH lehine yorumlanmaz; işlem deneyimli merkezde yinelenebilir ya da diğer dinamik testler ve görüntülemeyle birlikte değerlendirilir. Lateralizasyon için sağ/sol oranının 1,4'ün üzerinde olması gerekir (TEMD 2022) ve güvenilirliği sınırlıdır; burada oran yaklaşık 1,1'dir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Kanülasyon prolaktinle doğrulanmadan gradyan yokluğu ektopik kaynak kanıtı sayılmaz.",
+        "B": "DOGRU — IPS/periferik prolaktin 1,17 (<1,8): örnek hipofiz drenajını yansıtmıyor olabilir; düşük gradyan yalancı negatif olabilir.",
+        "C": "YANLIS — Sağ/sol oranı yaklaşık 1,1'dir (lateralizasyon eşiği 1,4) ve örnek güvenilir değildir.",
+        "D": "YANLIS — Hiperkortizolizm biyokimyasal olarak doğrulanmış, ACTH bağımlıdır; BIPSS psödo-Cushing ayrımı için yapılan bir test değildir.",
+        "E": "YANLIS — Cushing hastalığı için bazal oran eşiği 2'dir; 1,44 tek başına tanı koydurmaz."
+      },
+      "etiketler": ["BIPSS", "Prolaktin normalizasyonu", "ACTH gradyanı", "Cushing hastalığı", "Ektopik ACTH ayrımı"],
+      "zorluk": "zor",
+      "kaynak": "Konu anlatımı (MediSea premium); TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 1); Findling ve ark., J Clin Endocrinol Metab 2004 (petrozal örneklemede prolaktin ile doğrulama)"
+    },
+    {
+      "id": "s7",
+      "metin": "27 yaşında kadın hasta, 16 mm fonksiyonsuz makroadenom nedeniyle 3 ay önce transsfenoidal cerrahi geçirmiş. Taburculukta başlanan hidrokortizon 6. haftada kesilmiş. 2 yıldır etinilestradiol içeren kombine oral kontraseptif kullanıyor. Halsizlik, bulantı ve ayağa kalkınca baş dönmesi yakınmaları var.\n\nTetkikler (08:00, hidrokortizon kullanmıyor):\n• Serum kortizolü (immünoassay): 17,2 µg/dL\n• Serbest T4: 0,85 ng/dL (0,8–1,8); TSH: 1,0 mIU/L\n• Na: 135 mEq/L\n\nBu hastanın adrenal aks değerlendirmesi için aşağıdakilerden hangisi en doğrudur?",
+      "secenekler": {
+        "A": "Sabah kortizolü 15 µg/dL'nin üzerinde olduğu için aks sağlamdır; ileri değerlendirme gerekmez",
+        "B": "Plazma ACTH normal çıkarsa adrenal yetmezlik dışlanmış olur",
+        "C": "Önce levotiroksin başlanmalı, adrenal aks sonra değerlendirilmelidir",
+        "D": "Cerrahiden sonraki ilk yıl içinde hiçbir adrenal test güvenilir değildir",
+        "E": "Östrojen CBG'yi artırdığından total kortizol yalancı yüksek olabilir; OKS kesildikten en az 6 hafta sonra değerlendirme yinelenmelidir"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Serum kortizolünün yaklaşık %90'ı CBG'ye bağlıdır; oral östrojen CBG'yi artırarak total kortizolü yükseltir ve 15 µg/dL üzerindeki sabah değeri yanlış güven verir. Güvenilir ölçüm için OKS en az 6 hafta önce kesilmiş olmalıdır.",
+      "aciklama_detay": "TEMD 2022'ye göre sabah bazal kortizolü 15 µg/dL ve üzerindeyse HPA aksı normal, 3 µg/dL altındaysa büyük olasılıkla yetmezlik vardır; arada kalan değerler dinamik test gerektirir. Bu eşikler normal CBG düzeyi varsayar. Oral östrojen (kombine OKS, oral HRT) ve gebelik hepatik CBG sentezini artırır; serbest kortizol değişmese de total kortizol belirgin yükselir. Bu nedenle kılavuz, OKS kullanan hastada plazma kortizolünün ancak ilaç en az 6 hafta önce kesilmişse güvenilir olduğunu belirtir; Endocrine Society 2016 hipopitüitarizm kılavuzu da östrojen kullanımında kortizol eşiklerinin dikkatle yorumlanmasını ister. ACTH testinde ölçülen yanıt da total kortizol olduğu için aynı sorundan etkilenir. Bu hastada semptomlar ve yeni cerrahi öyküsü santral adrenal yetmezlik olasılığını düşündürüyor; değerlendirme tamamlanana kadar semptomatik hastaya düşük doz hidrokortizonla güvenlik sağlanabilir (dinamik testten 18–24 saat önce kesilmek üzere). Serbest T4 alt sınıra yakındır; santral hipotiroidi doğrulanırsa levotiroksin ancak adrenal aks güvenceye alındıktan sonra başlanır. Normal ACTH santral yetmezliği dışlamaz; bu hastalarda ACTH çoğu zaman uygunsuz normaldir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — OKS kullanan hastada total kortizol CBG artışı nedeniyle yalancı yüksektir; 15 µg/dL eşiği güven vermez.",
+        "B": "YANLIS — Santral adrenal yetmezlikte ACTH düşük ya da uygunsuz normal olabilir; normal ACTH yetmezliği dışlamaz.",
+        "C": "YANLIS — Adrenal aks güvenceye alınmadan levotiroksin başlamak adrenal krizi tetikleyebilir.",
+        "D": "YANLIS — Cerrahiden 4–6 hafta sonra dinamik testler güvenilir hale gelir; 1 yıl beklemek gerekmez.",
+        "E": "DOGRU — Östrojen CBG'yi artırır; güvenilir kortizol değerlendirmesi için OKS en az 6 hafta kesilmelidir."
+      },
+      "etiketler": ["Santral adrenal yetmezlik", "CBG", "Oral kontraseptif", "Sabah kortizolü eşiği", "Laboratuvar yorumu"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 1 ve 7); Endocrine Society 2016 hipopitüitarizmde hormon replasmanı kılavuzu (Fleseriu ve ark.)"
+    },
+    {
+      "id": "s8",
+      "metin": "46 yaşında erkek hasta, 3 yıl önce fonksiyonsuz makroadenom nedeniyle cerrahi ve radyoterapi almış. Santral adrenal yetmezlik nedeniyle hidrokortizon, hipogonadotropik hipogonadizm nedeniyle testosteron kullanıyor; tiroid aksı normal. Yorgunluk ve karın çevresinde artış yakınmaları var. Vücut kitle indeksi 34 kg/m², ağırlığı 104 kg. Koroner stent öyküsü nedeniyle insülin tolerans testi yapılmıyor.\n\nTetkikler:\n• IGF-1: yaşa göre normal aralığın alt yarısında (−0,8 SDS)\n• Glukagon uyarı testi (1,5 mg IM, 8 saatlik açlık sonrası, testten önceki gün akşam hidrokortizon dozu alınmamış): 180. dakikada en yüksek GH 1,6 µg/L\n\nAACE 2019 kılavuzuna göre bu sonucun yorumu hangisidir?",
+      "secenekler": {
+        "A": "VKİ 30 kg/m² üzerinde eşik 1 µg/L olduğundan yanıt normaldir; erişkin GH eksikliği gösterilmemiştir",
+        "B": "Pik GH 3 µg/L altında olduğu için ağır GH eksikliği vardır; GH replasmanı başlanmalıdır",
+        "C": "IGF-1 normal olduğu için test gereksizdir; normal IGF-1 GH eksikliğini dışlar",
+        "D": "Kardiyak öyküye rağmen tanı için insülin tolerans testi yapılmalıdır",
+        "E": "Hidrokortizon kullanımı glukagon testini geçersiz kılar; sonuç yorumlanamaz"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Obezite GH yanıtını baskıladığı için glukagon testinde eşik vücut kitle indeksine göre düşürülür; AACE 2019'a göre VKİ 30 kg/m² üzerinde pik GH 1 µg/L ve üzeri normal kabul edilir.",
+      "aciklama_detay": "Glukagon uyarı testi, insülin tolerans testinin kontrendike olduğu (koroner arter hastalığı, epilepsi, ileri yaş) durumlarda GH ve ACTH rezervini değerlendirmek için kullanılır; 90 kg üzerindeki hastada doz 1,5 mg'dır ve örnekler 90–240. dakikalar arasında alınır. Obezite GH salgısını fizyolojik olarak azalttığı için tek bir eşik yanlış pozitif GH eksikliği tanısına yol açar. AACE 2019 kılavuzu glukagon testinde VKİ 25 kg/m² altında 3 µg/L, 25–30 arasında ön test olasılığına göre 3 ya da 1 µg/L, 30 kg/m² üzerinde 1 µg/L eşiğini önerir. TEMD 2022 de glukagon testinde pik GH'nin 1 µg/L ve üzerini normal sayar. Bu hastada VKİ 34 ve pik GH 1,6 µg/L olduğundan erişkin GH eksikliği gösterilmemiştir ve GH replasmanı endikasyonu yoktur. Yaşa göre normal IGF-1 GH eksikliğini dışlamaz; bu nedenle ön test olasılığı yüksek hastada test yapmak doğrudur. Hasta GH dışında yalnızca iki aks eksikliğine sahip olduğundan testsiz tanı ölçütü (üç ya da daha fazla eksiklik ve düşük IGF-1) karşılanmıyor. Yeterli dozda hidrokortizon replasmanı testi geçersiz kılmaz; diğer eksikliklerin yerine konmuş olması aksine ön koşuldur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — VKİ 34 kg/m²'de eşik 1 µg/L'dir; pik GH 1,6 µg/L normal yanıttır.",
+        "B": "YANLIS — 3 µg/L eşiği zayıf hastalar içindir; obez hastada kullanılırsa yanlış pozitif GH eksikliği tanısı konur.",
+        "C": "YANLIS — Normal IGF-1 GH eksikliğini dışlamaz; ön test olasılığı yüksek hastada uyarı testi gerekir.",
+        "D": "YANLIS — Koroner arter hastalığında insülin tolerans testi kontrendikedir; glukagon testi geçerli alternatiftir.",
+        "E": "YANLIS — Diğer eksik hormonların yerine konmuş olması testin ön koşuludur; fizyolojik hidrokortizon sonucu geçersiz kılmaz."
+      },
+      "etiketler": ["Erişkin GH eksikliği", "Glukagon uyarı testi", "Obezite", "GH eşikleri", "Laboratuvar yorumu"],
+      "zorluk": "orta",
+      "kaynak": "AACE 2019 erişkin ve geçiş dönemi GH eksikliği kılavuzu (Yuen ve ark.); TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 7)"
+    },
+    {
+      "id": "s9",
+      "metin": "36 yaşında erkek hasta, 2 ay önce geçirdiği kafa travması sonrası başlayan günde 7 litre idrar, gece sık idrara kalkma ve soğuk su içme isteğiyle başvuruyor. Tiroid ve adrenal aks değerlendirmesi normal.\n\nBazal:\n• Serum Na: 143 mEq/L; plazma osmolalitesi: 294 mOsm/kg; idrar osmolalitesi: 95 mOsm/kg\n\nSusuzluk testi (7. saat):\n• Vücut ağırlığında kayıp: %3,2\n• Serum Na: 149 mEq/L; plazma osmolalitesi: 306 mOsm/kg\n• İdrar osmolalitesi: 150 mOsm/kg (son iki ölçüm arasında fark %5)\n\nDesmopressin 2 µg IV sonrası 2. saat:\n• İdrar osmolalitesi: 780 mOsm/kg\n\nTEMD 2022 ölçütlerine göre en olası tanı hangisidir?",
+      "secenekler": {
+        "A": "Primer polidipsi",
+        "B": "AVP direnci (nefrojenik diabetes insipidus)",
+        "C": "Parsiyel santral AVP eksikliği",
+        "D": "Komplet santral AVP eksikliği (santral diabetes insipidus)",
+        "E": "Normal su dengesi"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Hiperosmolaliteye rağmen idrar 300 mOsm/kg altında kalıyor ve desmopressinle %100'ün üzerinde artıp 750 mOsm/kg'ı aşıyor: komplet santral AVP eksikliği.",
+      "aciklama_detay": "TEMD 2022'ye göre susuzluk testinde plazma osmolalitesi 300 mOsm/kg üzerine (Na 145 mEq/L üzeri) çıktığında, ardışık iki idrar osmolalitesi arasındaki fark %10'un altına indiğinde ya da ağırlığın %3'ü kaybedildiğinde desmopressin verilir; bu hastada üç koşul da sağlanmıştır. Yorum: dehidratasyon ve desmopressin sonrası idrar osmolalitesi 750 mOsm/kg üzerindeyse normal; dehidratasyonda 300 altında, desmopressin sonrası 750 üzerindeyse santral DI; her ikisinde de 300 altındaysa nefrojenik DI. Desmopressin sonrası idrar osmolalitesinin %100'den fazla artması komplet, %15–50 artması parsiyel santral DI'yı düşündürür. Bu hastada idrar 150'den 780 mOsm/kg'a çıkmıştır (yaklaşık %420 artış): komplet santral AVP eksikliği. Primer polidipside bazal sodyum düşük-normaldir ve dehidratasyonla idrar belirgin yoğunlaşır. 2022'de önerilen güncel adlandırmada santral DI 'AVP eksikliği', nefrojenik DI 'AVP direnci' olarak anılır. Kafa travması sonrası AVP eksikliği ön hipofiz eksiklikleriyle birlikte olabileceği için diğer akslar da izlenmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Primer polidipside sodyum düşük-normaldir ve dehidratasyonla idrar yoğunlaşır; burada hipernatremiye rağmen idrar dilüedir.",
+        "B": "YANLIS — AVP direncinde desmopressin idrarı yoğunlaştırmaz; burada idrar osmolalitesi 780 mOsm/kg'a çıkmıştır.",
+        "C": "YANLIS — Parsiyel santral eksiklikte dehidratasyonla idrar kısmen yoğunlaşır ve desmopressin yanıtı %15–50 civarındadır.",
+        "D": "DOGRU — Dehidratasyonda idrar <300, desmopressin sonrası >750 mOsm/kg ve %100'ün üzerinde artış: komplet santral AVP eksikliği.",
+        "E": "YANLIS — Normal bireyde dehidratasyonla idrar 750 mOsm/kg'ın üzerine çıkar ve desmopressine ek yanıt olmaz."
+      },
+      "etiketler": ["Susuzluk testi", "Santral diabetes insipidus", "AVP eksikliği", "Desmopressin testi", "Laboratuvar yorumu"],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 8)"
+    },
+    {
+      "id": "s10",
+      "metin": "58 yaşında kadın hasta, bipolar bozukluk nedeniyle 15 yıldır lityum kullanıyor. Son 1 yıldır günde yaklaşık 5 litre idrar yaptığını, gece defalarca kalktığını anlatıyor. Kan şekeri ve kalsiyum normal.\n\nTetkikler (susuzluk ya da uyarı uygulanmadan, sabah):\n• Serum Na: 145 mEq/L; plazma osmolalitesi: 298 mOsm/kg\n• İdrar osmolalitesi: 160 mOsm/kg\n• Bazal plazma kopeptin: 34 pmol/L\n\nBu hasta için en olası tanı ve en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Komplet santral AVP eksikliği; desmopressin başlanmalıdır",
+        "B": "Primer polidipsi; sıvı kısıtlaması önerilmelidir",
+        "C": "AVP direnci (nefrojenik DI); psikiyatriyle lityum değerlendirilmeli, tiyazid ve amilorid düşünülmelidir",
+        "D": "Lityuma bağlı uygunsuz ADH salınımı; tolvaptan başlanmalıdır",
+        "E": "Bazal kopeptin tanısal değildir; önce hipertonik salin uyarılı kopeptin ölçülmelidir"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Susuzluk uygulanmadan bazal kopeptinin 21,4 pmol/L üzerinde olması AVP direncini gösterir; uzun süreli lityum kullanımı nefrojenik diabetes insipidusun en sık ilaç nedenidir.",
+      "aciklama_detay": "Kopeptin, AVP prohormonunun C terminal parçasıdır ve AVP ile eşit oranda salınır; AVP'nin aksine örnekte stabildir. Poliüri-polidipsi ayırıcı tanısında yapılan prospektif çok merkezli çalışmada (Timper ve ark., 2015) önceden susuzluk uygulanmadan ölçülen bazal kopeptinin 21,4 pmol/L üzerinde olması nefrojenik diabetes insipidusu yüksek doğrulukla gösterdi. Santral AVP eksikliği ile primer polidipsi ayrımında ise hipertonik salin (Na ≥150 mEq/L'de kopeptin >4,9 pmol/L primer polidipsi lehine; Fenske ve ark., NEJM 2018) ya da arjinin uyarısı kullanılır; bu ayrım bazal değerle yapılamaz. Not: TEMD 2022, kitin yaygın olmaması ve normal yanıt verisinin yetersizliği nedeniyle kopeptinin henüz susuzluk testinin yerini almadığını belirtir; bu ölçüm yapılabilen merkezlerde bazal yüksek değer tanıyı doğrudan destekler. Lityum toplayıcı kanal esas hücrelerine ENaC üzerinden girer, GSK-3β inhibisyonu ve akuaporin-2 ekspresyonunun azalmasıyla AVP direnci yapar. Yönetim: lityumun gerekliliği ve alternatifleri psikiyatriyle değerlendirilir; amilorid ENaC'ı bloke ederek lityum girişini azaltır, tiyazid proksimal geri emilimi artırarak idrar hacmini düşürür (lityum düzeyi yakından izlenmelidir); düşük solüt diyeti önerilir. Desmopressin yanıtsızdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Santral AVP eksikliğinde hiperosmolaliteye rağmen kopeptin düşüktür; 34 pmol/L bununla bağdaşmaz.",
+        "B": "YANLIS — Primer polidipside sodyum düşük-normal ve kopeptin düşüktür; bu hastada sodyum ve osmolalite yüksek sınırda.",
+        "C": "DOGRU — Bazal kopeptin >21,4 pmol/L AVP direncini gösterir; lityum nedeni değerlendirilir, amilorid ve tiyazid seçenektir.",
+        "D": "YANLIS — Uygunsuz ADH hiponatremi ve yoğun idrarla seyreder; bu hastada idrar dilüe, sodyum yüksek sınırdadır.",
+        "E": "YANLIS — Uyarılı kopeptin santral eksiklik ile primer polidipsiyi ayırır; bazal değerin 21,4 pmol/L üzerinde olması tek başına AVP direncini gösterir."
+      },
+      "etiketler": ["Kopeptin", "Nefrojenik diabetes insipidus", "AVP direnci", "Lityum", "Poliüri ayırıcı tanısı"],
+      "zorluk": "zor",
+      "kaynak": "Timper ve ark., J Clin Endocrinol Metab 2015 (kopeptin ile poliüri-polidipsi ayırıcı tanısı); Fenske ve ark., N Engl J Med 2018; TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 8)"
+    },
+    {
+      "id": "s11",
+      "metin": "74 yaşında kadın hasta, son 2 ayda tekrarlayan düşme, iştahsızlık ve dalgınlık nedeniyle getiriliyor. Diüretik, antidepresan ya da antiepileptik kullanmıyor. Klinik olarak övolemik; TA 112/70 mmHg.\n\nTetkikler:\n• Na: 123 mEq/L; K: 4,1 mEq/L; plazma osmolalitesi: 256 mOsm/kg\n• İdrar osmolalitesi: 410 mOsm/kg; idrar Na: 62 mEq/L\n• Ürik asit: 2,8 mg/dL; üre: 18 mg/dL; glukoz: 88 mg/dL; kreatinin: 0,7 mg/dL\n• TSH: 1,2 mIU/L; serbest T4: 0,78 ng/dL (0,8–1,8)\n• Sabah 08:00 kortizolü: 2,6 µg/dL; ACTH: 9 pg/mL\n• 48 saatlik 800 mL/gün sıvı kısıtlaması sonrası Na: 124 mEq/L\n\nBu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Hidrokortizon başlamak, sodyumu aşırı düzeltmeye karşı yakından izlemek ve hipofiz aksları ile MRG'yi değerlendirmek",
+        "B": "Uygunsuz ADH sendromu tanısıyla tolvaptan başlamak",
+        "C": "Serbest T4 düşük olduğu için önce levotiroksin başlamak",
+        "D": "Mineralokortikoid eksikliği için fludrokortizon başlamak",
+        "E": "İdiyopatik uygunsuz ADH kabul edip oral üre eklemek ve sıvı kısıtlamasını sıkılaştırmak"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Santral adrenal yetmezlik uygunsuz ADH'nin bütün laboratuvar ölçütlerini taklit eder; kortizol 3 µg/dL altındayken uygunsuz ADH tanısı konamaz. Tedavi glukokortikoiddir ve sodyum hızla yükselebileceği için aşırı düzeltmeye karşı izlem gerekir.",
+      "aciklama_detay": "Bartter–Schwartz ölçütleri (düşük serum osmolalitesi, idrar osmolalitesi >100 mOsm/kg, normal tuz alımında idrar Na >40 mEq/L, övolemi, düşük ürik asit ve üre) uygunsuz ADH ile uyumlu görünse de tanı ancak tiroid, adrenal ve böbrek işlevleri normalse konabilir. Glukokortikoid eksikliğinde CRH ile birlikte salınan AVP üzerindeki kortizol baskısı kalkar ve AVP salgısı artar; kortizolün serbest su atılımına doğrudan katkısı da kaybolur. Sonuç, uygunsuz ADH'den ayırt edilemeyen övolemik hiponatremidir. Santral yetmezlikte aldosteron RAAS kontrolünde olduğu için potasyum normaldir ve hiperpigmentasyon yoktur; bu yüzden tablo kolayca atlanır. TEMD 2022 yaşlıda hiponatreminin hipopitüitarizm için uyarı işareti olduğunu, ayırıcı tanıda önce adrenal yetmezlik ve hipotiroidinin dışlanmasını vurgular. Sabah kortizolünün 3 µg/dL altında olması yetmezliği büyük olasılıkla gösterir. Hidrokortizon başlanınca AVP baskılanır ve su diürezi başlar; sodyum hızla yükselebileceği için 24 saatte 8–10 mEq/L sınırı aşılmamalı, gerekirse desmopressin ve dekstrozlu sıvıyla düzeltme frenlenmelidir. Levotiroksin, glukokortikoid replasmanından sonra ve serbest T4 yeniden değerlendirilerek başlanır. Diğer akslar ve hipofiz MRG ile nedene yönelik değerlendirme yapılır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Kortizol 2,6 µg/dL ile santral adrenal yetmezlik uygunsuz ADH'yi taklit eder; hidrokortizon, aşırı düzeltme izlemi ve hipofiz değerlendirmesi gerekir.",
+        "B": "YANLIS — Adrenal yetmezlik dışlanmadan uygunsuz ADH tanısı konamaz; tolvaptan altta yatan nedeni tedavi etmez ve aşırı düzeltme riski taşır.",
+        "C": "YANLIS — Glukokortikoid eksikliği düzeltilmeden levotiroksin başlamak adrenal krizi tetikleyebilir.",
+        "D": "YANLIS — Santral adrenal yetmezlikte aldosteron korunur; potasyum normaldir, fludrokortizon gerekmez.",
+        "E": "YANLIS — Tanı idiyopatik değildir; neden glukokortikoid eksikliğidir ve sıvı kısıtlamasına yanıtsızlık da bunu destekler."
+      },
+      "etiketler": ["Hiponatremi", "Santral adrenal yetmezlik", "Uygunsuz ADH taklidi", "Yaşlı hasta", "Laboratuvar yorumu"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 9 ve 12); Avrupa hiponatremi tanı ve tedavi kılavuzu 2014 (Spasovski ve ark.)"
+    },
+    {
+      "id": "s12",
+      "metin": "39 yaşında kadın hasta, çarpıntı, kilo kaybı ve el titremesi yakınmalarıyla başvuruyor. Muayenede diffüz guatr var; oftalmopati ve pretibial miksödem yok. Anne ve babasının tiroid testleri normal.\n\nTetkikler:\n• Serbest T4: 2,9 ng/dL (0,8–1,8); serbest T3: 7,1 pg/mL (2,3–4,2)\n• TSH: 3,8 mIU/L (0,4–4,0)\n• Farklı platformda ve heterofil antikor blokajıyla tekrarlanan ölçümler aynı\n• TSH reseptör antikoru negatif\n• Hipofiz MRG: 9 mm mikroadenom\n\nAşağıdaki bulgu kümelerinden hangisi TSH salgılayan adenomu tiroid hormonu direncinden (RTHβ) ayırmada en çok TSH salgılayan adenom lehinedir?",
+      "secenekler": {
+        "A": "Normal SHBG, TRH'ye abartılı TSH yanıtı ve T3 baskılama testinde TSH'nin baskılanması",
+        "B": "α-subünit/TSH molar oranının 0,8 bulunması",
+        "C": "THRB geninde heterozigot patojenik varyant saptanması",
+        "D": "Düşük SHBG ve düşük kemik döngüsü belirteçleri",
+        "E": "Yüksek SHBG, TRH'ye küt TSH yanıtı ve T3 baskılama testinde TSH'nin baskılanmaması"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "TSH salgılayan adenomda periferik dokular tirotoksiktir (SHBG yüksek) ve otonom TSH salgısı TRH ile uyarılmaz, T3 ile baskılanmaz; tiroid hormonu direncinde ise SHBG normal, TRH yanıtı korunmuş ve T3 ile baskılanma vardır.",
+      "aciklama_detay": "Yüksek serbest T4 ve T3'e karşın baskılanmamış TSH, önce ölçüm interferansı dışlandıktan sonra, iki ana tanıyı düşündürür: TSH salgılayan hipofiz adenomu (TSHoma) ve tiroid hormonu direnci (çoğunlukla THRB mutasyonu, otozomal dominant, ailede benzer tablo). ETA 2013 kılavuzu ve TEMD 2022'ye göre ayırıcı ipuçları: TSHoma'da SHBG ve kemik döngüsü belirteçleri periferik tirotoksikoz nedeniyle yüksektir; RTHβ'de karaciğer de dirençli olduğu için SHBG normaldir. TSHoma hastalarının yaklaşık %90'ında TRH'ye TSH yanıtı azalmıştır; RTHβ'de yanıt normal ya da abartılıdır. T3 baskılama testinde (7–10 gün 75–150 µg T3) TSH'nin baskılanmaması TSHoma lehinedir; test yaşlılarda ve koroner arter hastalığında kontrendikedir. α-subünit/TSH molar oranı sağlıklı bireylerde cinsiyet ve menopoz durumuna göre çok geniş değiştiği için tek eşik olarak 1'in üzeri artık geçerli kabul edilmez ve oran mikroadenomda normal çıkabilir; 0,8 değeri TSHoma'yı dışlamaz. Hipofizde görülen mikroadenom da tek başına tanı koydurmaz; genel toplumda rastlantısal adenom sıktır ve RTHβ'li hastada da bulunabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Normal SHBG, abartılı TRH yanıtı ve T3 ile baskılanma tiroid hormonu direncinin özellikleridir.",
+        "B": "YANLIS — α-subünit/TSH oranında 1 eşiği artık geçerli değildir ve oran mikroadenomda normal olabilir; 0,8 TSHoma'yı dışlamaz.",
+        "C": "YANLIS — THRB varyantı tiroid hormonu direncini gösterir.",
+        "D": "YANLIS — TSHoma'da periferik tirotoksikoz SHBG'yi ve kemik döngüsünü artırır, düşürmez.",
+        "E": "DOGRU — Yüksek SHBG, küt TRH yanıtı ve T3 ile baskılanmayan TSH otonom TSH salgısını, yani TSHoma'yı gösterir."
+      },
+      "etiketler": ["TSHoma", "Tiroid hormonu direnci", "SHBG", "T3 baskılama testi", "Santral hipertiroidi"],
+      "zorluk": "orta",
+      "kaynak": "ETA 2013 TSH salgılayan hipofiz tümörleri kılavuzu (Beck-Peccoz ve ark.); TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 1)"
+    },
+    {
+      "id": "s13",
+      "metin": "33 yaşında kadın hasta, 6 aydır adet düzensizliği, pelvik ağrı ve karında şişkinlik yakınmasıyla başvuruyor. Fertilite tedavisi ya da hormon kullanımı yok.\n\nTetkikler:\n• Pelvik USG: her iki overde çok sayıda kist içeren belirgin büyüme (sağ 9 cm, sol 8 cm), kalın endometriyum\n• FSH: 24 mIU/mL (foliküler faz 3–10); LH: 1,4 mIU/mL\n• Östradiol: 1450 pg/mL\n• Prolaktin: 38 ng/mL; TSH ve serbest T4 normal\n• Hipofiz MRG: 23 mm makroadenom\n\nBu hasta için en olası tanı ve en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Polikistik over sendromu; kombine oral kontraseptif başlanmalıdır",
+        "B": "Primer over yetmezliği; hormon replasman tedavisi başlanmalıdır",
+        "C": "Prolaktinoma; kabergolin başlanmalıdır",
+        "D": "Fonksiyonel gonadotrop adenom (FSH salgılayan); transsfenoidal cerrahi yapılmalıdır",
+        "E": "Fonksiyonel gonadotrop adenom; FSH'yi baskılamak için depo GnRH agonisti başlanmalıdır"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Premenopozal kadında yüksek FSH, baskılı LH, 500 pg/mL üzerinde östradiol ve spontan over hiperstimülasyonu ile birlikte hipofiz makroadenomu fonksiyonel gonadotrop adenomu gösterir; tedavi cerrahidir.",
+      "aciklama_detay": "Gonadotrop adenomların çoğu klinik olarak sessizdir, ancak nadiren biyolojik olarak aktif FSH salgılayarak premenopozal kadında spontan over hiperstimülasyon sendromuna, adet düzensizliğine ve çok yüksek östradiol düzeylerine yol açar. TEMD 2022'ye göre hipofiz adenomuna yüksek FSH ile düşük LH eşlik etmesi gonadotropinomayı düşündürür; östradiolün 500 pg/mL üzerinde olması PKOS'tan çok gonadotropinoma lehinedir. PKOS'ta LH yüksek, FSH düşük-normal olma eğilimindedir ve östradiol bu düzeye çıkmaz. Primer over yetmezliğinde FSH yüksektir ama östradiol düşüktür. Prolaktin 38 ng/mL makroadenomdaki sap etkisiyle uyumludur ve prolaktinoma bu tabloyu açıklamaz. Tedavinin ilk basamağı transsfenoidal cerrahidir; cerrahi sonrası FSH, östradiol ve over boyutları genellikle hızla normale döner. Medikal tedavi primer tedavi olarak önerilmez; GnRH agonistleri kadında yararsızdır ve başlangıçtaki uyarıcı etkiyle gonadotropin salgısını artırıp tabloyu kötüleştirebilir. Somatostatin analogları ve dopamin agonistlerinin etkisi sınırlıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PKOS'ta LH yüksek, FSH düşük-normaldir; bu düzeyde östradiol ve over hiperstimülasyonu beklenmez.",
+        "B": "YANLIS — Primer over yetmezliğinde östradiol düşüktür; burada 1450 pg/mL'dir.",
+        "C": "YANLIS — Prolaktin 38 ng/mL sap etkisiyle uyumludur; prolaktinoma FSH yüksekliği ve over hiperstimülasyonunu açıklamaz.",
+        "D": "DOGRU — Yüksek FSH, düşük LH, çok yüksek östradiol ve over hiperstimülasyonu + makroadenom: fonksiyonel gonadotrop adenom; ilk tedavi cerrahidir.",
+        "E": "YANLIS — GnRH agonisti kadında yararsızdır ve gonadotropin salgısını uyararak tabloyu kötüleştirebilir."
+      },
+      "etiketler": ["Gonadotrop adenom", "Over hiperstimülasyonu", "FSH", "PKOS ayırıcı tanısı", "Laboratuvar yorumu"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 1)"
+    },
+    {
+      "id": "s14",
+      "metin": "52 yaşında erkek hasta, fonksiyonsuz makroadenom nedeniyle cerrahi ve radyoterapi sonrası gelişen panhipopitüitarizm nedeniyle hidrokortizon, testosteron ve levotiroksin 100 µg/gün kullanıyor. Kendini iyi hissediyor.\n\nRutin kontrol (levotiroksin sabah dozu alınmadan önce):\n• TSH: 0,02 mIU/L (0,4–4,0)\n• Serbest T4: 1,45 ng/dL (0,8–1,8)\n• Serbest T3: 3,4 pg/mL (2,3–4,2)\n• Nabız 72/dk, ritim düzenli; tremor yok\n\nAile hekimi TSH baskılı olduğu için levotiroksin dozunun azaltılmasını öneriyor. En uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "TSH baskılı olduğu için dozu 75 µg/güne azaltmak",
+        "B": "Aynı dozla devam etmek; santral hipotiroidide doz serbest T4'ün referans aralığın üst yarısında tutulmasına göre ayarlanır",
+        "C": "Serbest T4'ü referans aralığın alt sınırına indirmek için dozu 50 µg/güne azaltmak",
+        "D": "Tiroid aksını yeniden değerlendirmek için TRH uyarı testi yapmak",
+        "E": "TSH'yi normale getirmek için tedaviye liyotironin eklemek"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Santral hipotiroidide TSH doz ayarında kullanılamaz; levotiroksin alan hastada TSH'nin baskılı olması beklenir. Hedef, doz öncesi alınan örnekte serbest T4'ün referans aralığın üst yarısında olmasıdır.",
+      "aciklama_detay": "Santral hipotiroidide sorun tirotrop hücre ya da TRH düzeyindedir; TSH düşük, normal ya da hafif yüksek olabilir ve biyoaktivitesi azalmıştır. Levotiroksin başlandıktan sonra kalan TSH salgısı da baskılanır; bu nedenle TSH hem tanıda hem izlemde güvenilir değildir. TEMD 2022 ve Endocrine Society 2016 hipopitüitarizm kılavuzu doz ayarını serbest T4'e göre yapmayı, hedefi referans aralığın üst yarısı olarak almayı önerir; kan örneği levotiroksin dozundan önce alınmalıdır, çünkü doz sonrası birkaç saat serbest T4 geçici yükselir. Klinik bulgular, yaş ve eşlik eden hastalıklar da dikkate alınır; yaşlı ve kardiyak hastada hedef daha temkinli tutulur, aşırı doz kemik kaybı ve atriyal fibrilasyon riskini artırır. Bu hastada serbest T4 üst yarıda, serbest T3 normal ve hasta klinik olarak ötiroid olduğu için doz uygundur. Ayrıca GH replasmanı başlanırsa T4'ün T3'e dönüşümü arttığından serbest T4 düşebilir ve doz ayarı gerekebilir; östrojen başlanması da ihtiyacı artırır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Santral hipotiroidide TSH doz ayarı için kullanılmaz; baskılı TSH aşırı dozu göstermez.",
+        "B": "DOGRU — Serbest T4 üst yarıda ve hasta ötiroid; doz uygundur, izlem serbest T4 ile sürdürülür.",
+        "C": "YANLIS — Hedef alt sınır değil üst yarıdır; bu azaltma hastayı yetersiz replasmana iter.",
+        "D": "YANLIS — Tanı zaten konmuştur; TRH testinin izlemde yeri yoktur.",
+        "E": "YANLIS — TSH'yi normalleştirmek bir hedef değildir; liyotironin eklenmesi aşırı tedavi riski taşır."
+      },
+      "etiketler": ["Santral hipotiroidi", "Levotiroksin titrasyonu", "Serbest T4 hedefi", "Panhipopitüitarizm"],
+      "zorluk": "kolay",
+      "kaynak": "Endocrine Society 2016 hipopitüitarizmde hormon replasmanı kılavuzu (Fleseriu ve ark.); TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 7)"
+    },
+    {
+      "id": "s15",
+      "metin": "35 yaşında erkek hasta, 14 mm fonksiyonsuz makroadenom nedeniyle 6 ay önce transsfenoidal cerrahi geçirmiş. Sabah kortizolü 9,8 µg/dL bulunduğu için insülin tolerans testi (İTT) planlanıyor. Kardiyovasküler hastalığı ve epilepsisi yok, EKG normal.\n\nİTT (regüler insülin 0,1 U/kg IV bolus):\n• Glukoz: 0. dk 92, 15. dk 58, 30. dk 51, 45. dk 55, 60. dk 68 mg/dL\n• Hasta test boyunca terleme, çarpıntı ya da nöroglikopenik yakınma tanımlamıyor\n• En yüksek kortizol: 15,2 µg/dL (60. dk; monoklonal immünoassay)\n• En yüksek GH: 4,1 µg/L\n\nBu testin yorumu için aşağıdakilerden hangisi en doğrudur?",
+      "secenekler": {
+        "A": "Pik kortizol 18 µg/dL altında olduğu için santral adrenal yetmezlik kesinleşmiştir; ömür boyu hidrokortizon başlanmalıdır",
+        "B": "Pik GH 3 µg/L üzerinde olduğu için hem GH hem ACTH aksı sağlam kabul edilir",
+        "C": "Yeterli hipoglisemi sağlanmadığı için test yorumlanamaz; insülin dozu tekrarlanmalı ya da başka bir uyarı testi seçilmelidir",
+        "D": "Monoklonal yöntemde eşik yaklaşık 14,5 µg/dL olduğundan kortizol yanıtı normaldir; aks sağlamdır",
+        "E": "Kortizol 60. dakikada ölçüldüğü için test geçersizdir; ölçüm 120. dakikada yinelenmelidir"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "İTT ancak semptomatik hipoglisemi ile birlikte glukoz 40 mg/dL altına indiğinde geçerlidir; bu uyarı sağlanmadan alınan kortizol ve GH değerleri hiçbir aks için yorumlanamaz.",
+      "aciklama_detay": "İTT, HPA aksı ve GH rezervi için altın standarttır; ancak geçerliliği yeterli stres uyarısına bağlıdır. Konu anlatımı ve TEMD 2022'ye göre semptomatik hipoglisemi (kan şekeri 40 mg/dL altında) sağlanmalıdır; semptomatik hipoglisemi anı 0. dakika kabul edilir ve 30, 60, 90, 120. dakikalarda örnek alınır. 45 dakika içinde hipoglisemi gelişmezse insülin dozu tekrarlanabilir. Bu hastada en düşük glukoz 51 mg/dL ve semptom yok; test yetersizdir. Bu durumda pik kortizolün 18 µg/dL'nin altında kalması yetmezliği kanıtlamaz, çünkü uyarı yetersizdir; monoklonal ya da LC-MS/MS yöntemleri için önerilen daha düşük eşikler (yaklaşık 14–15 µg/dL) de ancak geçerli bir testte uygulanabilir. Aynı mantıkla GH değeri de yorumlanamaz. İnsülin dozu tekrarlanarak test tamamlanabilir ya da cerrahiden 4–6 haftadan uzun süre geçtiği için 250 µg ACTH testi ya da glukagon testi gibi alternatifler seçilebilir. Sabah kortizolü 3–15 µg/dL arasında olduğundan dinamik test gereklidir ve sonuç çıkana kadar semptom olursa stres dozu hidrokortizon hakkında hasta bilgilendirilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yetersiz hipoglisemide düşük kortizol yanıtı yetmezliği kanıtlamaz.",
+        "B": "YANLIS — Yetersiz uyarıda GH değeri de yorumlanamaz; ayrıca GH yanıtı ACTH aksı hakkında bilgi vermez.",
+        "C": "DOGRU — Glukoz 40 mg/dL altına inmemiş ve semptom yok; test geçersizdir, doz tekrarı ya da alternatif test gerekir.",
+        "D": "YANLIS — Yöntem eşiği ancak geçerli uyarı sağlanmış testte uygulanır; burada uyarı yetersizdir.",
+        "E": "YANLIS — 60. dakika standart örnekleme zamanlarındandır; sorun zamanlama değil yetersiz hipoglisemidir."
+      },
+      "etiketler": ["İnsülin tolerans testi", "Santral adrenal yetmezlik", "Test geçerliliği", "Kortizol eşiği", "Laboratuvar yorumu"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Kılavuzu 2022 (Bölüm 7); Konu anlatımı (MediSea premium)"
+    }
+  ]
+}

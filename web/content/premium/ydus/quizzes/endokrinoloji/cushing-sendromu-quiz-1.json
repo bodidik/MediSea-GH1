@@ -303,6 +303,156 @@
       ],
       "zorluk": "orta",
       "kaynak": "Assié et al. J Clin Endocrinol Metab 2007; Reincke et al. Pituitary 2015"
+    },
+    {
+      "id": "s11",
+      "metin": "Otuz sekiz yaşında kadın hasta, son 4 ayda hızla gelişen kilo artışı, yüzde ve göğüste kıllanma, sivilce, ses kalınlaşması ve amenore yakınmasıyla başvuruyor. Kan basıncı 168/102 mmHg.\n\nTetkikler:\nSerum K: 3,1 mEq/L\n1-mg gece boyu DST sonrası kortizol: 19 µg/dL\n24 saatlik idrar serbest kortizolü: normalin üst sınırının 6 katı\nPlazma ACTH: <5 pg/mL\nDHEA-S: yaş referansının belirgin üzerinde\nTotal testosteron: 2,6 ng/mL (↑)\nAdrenal BT: sağ adrenalde 9 cm, düzensiz sınırlı, heterojen, santral nekroz alanları içeren kitle; kontrastsız dansite 38 HU\n\nBu hastada en olası tanı ve bu aşamadaki en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kortizol salgılayan benign adrenal adenom; evreleme gerekmeden laparoskopik adrenalektomi",
+        "B": "Adrenokortikal karsinom; tanıyı doğrulamak için önce BT eşliğinde perkütan adrenal biyopsi",
+        "C": "Adrenokortikal karsinom; feokromositoma dışlanıp toraks BT ile evrelendikten sonra deneyimli merkezde açık, R0 hedefli adrenalektomi",
+        "D": "Ektopik ACTH sendromu; primer tümörü bulmak için Ga-68 DOTATATE PET/BT",
+        "E": "Primer bilateral makronodüler adrenal hiperplazi; bilateral adrenalektomi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Baskılanmış ACTH ile birlikte kortizol ve androjen fazlalığı, hızlı seyir ve >4 cm, heterojen, yüksek dansiteli kitle adrenokortikal karsinomu gösterir. Metanefrin ölçümü ve evrelemeden sonra ilk yaklaşım deneyimli bir merkezde tam (R0) cerrahi rezeksiyondur; kitle rezektabl ise perkütan biyopsi yapılmaz.",
+      "aciklama_detay": "ACTH'nin baskılanmış olması (<10 pg/mL) hiperkortizolizmin adrenal kaynaklı olduğunu gösterir. Adrenal adenomlar genellikle yalnızca kortizol salgılar; buna karşılık adrenokortikal karsinomda (ACC) steroidogenez düzensizdir, androjen öncüllerinin (DHEA-S, androstenedion, testosteron) birikimiyle hirsutizm ve virilizasyon eşlik eder. Klinik tablo aylar içinde gelişir. Görüntülemede büyük boyut (özellikle >4–6 cm), düzensiz sınır, heterojenite, nekroz ve kontrastsız BT dansitesinin >10 HU olması (yağdan fakir doku) malignite lehinedir. ESE/ENSAT 2018 kılavuzuna göre ACC şüphesi olan her hastada ameliyat öncesinde feokromositoma plazma veya idrar metanefrinleriyle dışlanır ve toraks-batın-pelvis BT ile evreleme yapılır. Rezektabl hastalıkta tedavi, deneyimli merkezde tümör kapsülünü açmadan yapılan tam (R0) cerrahi rezeksiyondur; yayılım riski yüksek büyük kitlelerde genellikle açık cerrahi tercih edilir. Perkütan biyopsi hem tanısal değeri düşük olduğu (benign-malign ayrımını sitoloji yapamaz) hem de iğne trakti boyunca tümör ekimi ve kapsül bütünlüğünün bozulması riski taşıdığı için, rezeke edilebilir ACC şüphesinde yapılmaz. Ameliyat sonrası karşı adrenal baskılanmış olduğundan glukokortikoid replasmanı gerekir; yüksek nüks riskli hastalarda adjuvan mitotan değerlendirilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Adenom tipik olarak yalnızca kortizol salgılar; belirgin androjen fazlalığı, 9 cm boyut, heterojenite ve nekroz benign adenomla uyumsuzdur. Malignite şüphesinde evreleme atlanamaz.",
+        "B": "YANLIS — Rezeke edilebilir ACC şüphesinde perkütan biyopsi önerilmez: tanısal değeri sınırlıdır, tümör ekimi ve kapsül yırtılması riski taşır.",
+        "C": "DOGRU — ACTH baskılanmış, kortizol + androjen fazlalığı, büyük heterojen kitle: ACC. Metanefrinle feokromositoma dışlanır, evrelenir ve R0 rezeksiyon hedeflenir.",
+        "D": "YANLIS — Ektopik ACTH sendromunda ACTH yüksektir; burada ölçülemeyecek kadar düşüktür ve kaynak adrenaldir.",
+        "E": "YANLIS — PBMAH bilateral, çok sayıda nodülle seyreder ve genellikle yavaş ilerler; tek taraflı 9 cm nekrotik kitle ve androjen fazlalığı bu tabloya uymaz."
+      },
+      "etiketler": [
+        "Adrenokortikal Karsinom",
+        "ACTH Bağımsız",
+        "Androjen Fazlalığı",
+        "Adrenal Görüntüleme",
+        "Cerrahi Yaklaşım"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ESE/ENSAT 2018 adrenokortikal karsinom kılavuzu; Nieman LK. Establishing the cause of Cushing syndrome. UpToDate"
+    },
+    {
+      "id": "s12",
+      "metin": "Elli iki yaşında erkek hasta, metastatik pankreatik nöroendokrin tümöre bağlı ektopik ACTH sendromu nedeniyle izlenirken pnömoni ve septik şok tablosuyla yoğun bakıma alınıyor. Entübe; paralitik ileus nedeniyle oral ve nazogastrik yolla ilaç verilemiyor. Ajitasyon ve psikotik bulgular öncesinde mevcutmuş.\n\nTetkikler:\nSerum kortizol: 78 µg/dL\n24 saatlik idrar serbest kortizolü: normalin üst sınırının 12 katı\nSerum K: 2,4 mEq/L (replasmana dirençli)\nKan glukozu: 380 mg/dL\n\nBu hastada hiperkortizolizmin kontrolü için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Yoğun bakımda düşük doz, hipnotik olmayan IV etomidat infüzyonu; tam blokaj hedefleniyorsa IV hidrokortizon replasmanı eklenerek “bloke et ve yerine koy” uygulaması",
+        "B": "Hemodinamik stabilite beklenmeden acil bilateral adrenalektomi",
+        "C": "Nazogastrik tüpten mifepriston başlanması ve dozun serum kortizol düzeyine göre ayarlanması",
+        "D": "Subkütan pasireotid başlanıp 2–3 hafta sonra yanıtın değerlendirilmesi",
+        "E": "Kabergolin başlanması ve doz titrasyonunun haftalık yapılması"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Sepsis, psikoz ve dirençli hipokalemiyle seyreden, oral yolun kullanılamadığı şiddetli Cushing sendromunda seçilecek ajan parenteral tek adrenal steroidogenez inhibitörü olan etomidattır. Tam blokaj yapılıyorsa adrenal krizi önlemek için hidrokortizon eklenir.",
+      "aciklama_detay": "Şiddetli Cushing sendromu (UFC'nin normalin üst sınırının 5–10 katından fazla olması ya da sepsis, fırsatçı enfeksiyon, akut psikoz, dirençli hipokalemi, kontrolsüz hiperglisemi gibi hayatı tehdit eden komplikasyon) bir endokrin acildir ve hızlı kortizol kontrolü gerektirir. Oral alım ve enteral emilim güvenilir değilse seçenek, 11β-hidroksilazı (CYP11B1) güçlü biçimde inhibe eden etomidattır. Anestezi dozunun çok altında, hipnotik olmayan dozda sürekli infüzyonla verilir; yoğun bakım ortamında sedasyon düzeyi ve serum kortizolü sık izlenir. Kortizol ya hedef bir aralığa titre edilir ya da üretim tamamen durdurulup fizyolojik veya stres dozunda IV hidrokortizon eklenir (“bloke et ve yerine koy”); ikinci yaklaşım dalgalanan kortizol düzeylerinden ve adrenal yetmezlik atağından korur. Bu hastalarda Pneumocystis jirovecii profilaksisi ve tromboprofilaksi de düşünülmelidir. Tümör kaynağına yönelik tedavi ve gerekirse bilateral adrenalektomi, hasta stabilize edildikten sonra planlanır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Parenteral, hızlı etkili tek steroidogenez inhibitörü etomidattır; tam blokajda hidrokortizon replasmanı eklenir.",
+        "B": "YANLIS — Bilateral adrenalektomi dirençli olgularda kesin çözüm olabilir, ancak septik şokta ve kontrolsüz hiperkortizolizmde önce medikal kontrol ve stabilizasyon sağlanır.",
+        "C": "YANLIS — İleus varken enteral emilim güvenilmez; ayrıca mifepriston kortizolü yükseltir, kortizol düzeyiyle izlenemez ve yüksek kortizolün mineralokortikoid etkisiyle hipokalemiyi ağırlaştırabilir.",
+        "D": "YANLIS — Pasireotid etkisi yavaştır, ektopik ACTH kaynaklı tümörlerde yanıt öngörülemez ve hiperglisemiyi belirgin kötüleştirir.",
+        "E": "YANLIS — Kabergolin yalnızca hafif-orta Cushing hastalığında yavaş ve sınırlı etkilidir; acil kontrol sağlamaz."
+      },
+      "etiketler": [
+        "Şiddetli Cushing Sendromu",
+        "Etomidat",
+        "Bloke Et ve Yerine Koy",
+        "Ektopik ACTH",
+        "Yoğun Bakım"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Muthukuda DT ve ark. Etomidate in Severe Cushing Syndrome: A Systematic Review. J Endocr Soc 2025; Araujo-Castro M ve ark. SEEN şiddetli Cushing sendromu uzlaşı belgesi 2025"
+    },
+    {
+      "id": "s13",
+      "metin": "Yirmi dokuz yaşında kadın, 27 haftalık gebe. Gebeliğin başından beri artan kilo, geniş mor strialar, proksimal kas güçsüzlüğü ve ağır hipertansiyon nedeniyle değerlendirilmiş; sol adrenalde 3,5 cm adenoma bağlı ACTH bağımsız Cushing sendromu tanısı konmuş. Multidisipliner kurul cerrahiyi doğum sonrasına bırakmaya karar veriyor; bu süre içinde hiperkortizolizmin medikal kontrolü gerekiyor.\n\nBu hasta için en uygun ilaç hangisidir?",
+      "secenekler": {
+        "A": "Mifepriston",
+        "B": "Mitotan",
+        "C": "Osilodrostat",
+        "D": "Pasireotid",
+        "E": "Metirapon"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Gebelikte hiperkortizolizmin medikal kontrolünde en fazla deneyim metiraponla birikmiştir ve tercih edilen ajandır. Birikmiş mineralokortikoid öncüllerin hipertansiyon ve preeklampsiyi kötüleştirebileceği bilinerek yakın izlenir.",
+      "aciklama_detay": "Gebelikte Cushing sendromu anne ve fetüs için yüksek morbiditeyle (preeklampsi, gestasyonel diyabet, erken doğum, fetal kayıp) seyreder. Adrenal adenomda tercihen ikinci trimesterde adrenalektomi önerilir. Cerrahinin mümkün olmadığı ya da ertelendiği durumda, gebelikte güvenlilik deneyimi en fazla olan ilaç metirapondur (11β-hidroksilaz inhibitörü). Metirapon plasentayı geçer ve fetal adrenalde de etkili olabilir; ayrıca 11-deoksikortikosteron birikimi hipertansiyon ve hipokalemiye yol açıp preeklampsi riskini artırabileceğinden kan basıncı ve potasyum yakından izlenir. Ketokonazol hayvan verilerinde teratojenik ve antiandrojeniktir (erkek fetüste virilizasyon kusuru endişesi); yalnızca seçilmiş olgularda kullanılmıştır. Mifepriston progesteron reseptörü antagonisti olduğu için gebeliği sonlandırır ve kontrendikedir. Mitotan adrenolitik ve teratojeniktir. Osilodrostat için gebelik verisi yok denecek kadar azdır; pasireotid ise adrenal kaynaklı hastalıkta etkisizdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Progesteron reseptör antagonizması nedeniyle gebeliği sonlandırır; gebelikte kontrendikedir.",
+        "B": "YANLIS — Adrenolitik ve teratojeniktir; gebelikte kullanılmaz.",
+        "C": "YANLIS — Gebelikte güvenlilik verisi yetersizdir; birinci seçenek değildir.",
+        "D": "YANLIS — Hipofizer kortikotrop adenoma yöneliktir; ACTH bağımsız adrenal adenomda etkisizdir ve gebelik verisi yoktur.",
+        "E": "DOGRU — Gebelikte en çok deneyim birikmiş, tercih edilen steroidogenez inhibitörüdür; hipertansiyon ve preeklampsi açısından izlenir."
+      },
+      "etiketler": [
+        "Gebelik",
+        "Metirapon",
+        "Adrenal Adenom",
+        "Medikal Tedavi",
+        "Kontrendikasyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Nieman LK. Diagnosis and management of Cushing syndrome during pregnancy. UpToDate; konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s14",
+      "metin": "Kırk altı yaşında kadın hasta, son bir yılda santral kilo artışı, kolay morarma, proksimal kas güçsüzlüğü ve yeni başlayan hipertansiyon nedeniyle hiperkortizolizm açısından değerlendirilecek. Üç yıldır gece vardiyalı çalışan bir hemşire. Tip 2 diyabete bağlı kronik böbrek hastalığı mevcut; eGFR 38 mL/dk/1,73 m². Östrojen içeren ilaç, glukokortikoid (inhaler ve topikal dahil) ya da enzim indükleyici ilaç kullanmıyor.\n\nBu hastada hiperkortizolizmi araştırmak için ilk tercih edilecek test hangisidir?",
+      "secenekler": {
+        "A": "24 saatlik idrar serbest kortizolü",
+        "B": "1-mg gece boyu deksametazon süpresyon testi",
+        "C": "Gece yarısı tükürük kortizolü",
+        "D": "Sabah 08.00 serum kortizolü ve eşzamanlı ACTH",
+        "E": "8-mg (yüksek doz) deksametazon süpresyon testi"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "eGFR <60 mL/dk'da idrar serbest kortizolü yalancı negatif çıkabilir; vardiyalı çalışanda sirkadiyen ritim bozulduğundan gece tükürük kortizolü yanıltıcıdır. Bu hastada en güvenilir ilk test 1-mg deksametazon süpresyon testidir.",
+      "aciklama_detay": "Endojen hiperkortizolizm taramasında üç birinci basamak test vardır ve test seçimi hastanın özelliklerine göre yapılır. Böbrek fonksiyonu azaldığında (özellikle eGFR/KrCl <60 mL/dk) idrarla kortizol atılımı düşer ve 24 saatlik idrar serbest kortizolü gerçek hiperkortizolizmi gözden kaçırabilir (yalancı negatif). Gece yarısı tükürük kortizolü sirkadiyen ritmin kaybını ölçer; gece vardiyasında çalışanlarda ritim zaten kaydığı için sonuç yorumlanamaz. 1-mg DST'yi bozan başlıca durumlar östrojene bağlı CBG artışı ve CYP3A4 indükleyicileriyle deksametazonun hızlı yıkımıdır; bu hastada ikisi de yoktur. Bu nedenle 1-mg DST (süpresyon sonrası kortizol <1,8 µg/dL normal) ilk tercih edilir. Tanı için birbirinden bağımsız en az iki testin anormal çıkması aranır; ikinci test olarak gerekirse 2 gün 2 mg/gün DST ya da (uygunsa) serum deksametazon düzeyiyle birlikte tekrar edilen 1-mg DST kullanılabilir. Tek bir sabah kortizolü hiperkortizolizm tanısında değersizdir; yüksek doz DST ise tanı değil, ACTH bağımlı olgularda kaynak ayırımı için kullanılan eski bir testtir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — eGFR 38'de idrar kortizol atılımı azalır; test yalancı negatif çıkabilir.",
+        "B": "DOGRU — Böbrek fonksiyonundan etkilenmez; bu hastada CBG'yi artıran ya da deksametazon yıkımını hızlandıran bir etken de yoktur.",
+        "C": "YANLIS — Gece vardiyalı çalışmada sirkadiyen ritim bozuktur; gece tükürük kortizolü yorumlanamaz.",
+        "D": "YANLIS — Tek bir sabah kortizolü hiperkortizolizmi ne doğrular ne dışlar; ACTH ölçümü hiperkortizolizm kanıtlandıktan sonraki adımdır.",
+        "E": "YANLIS — Yüksek doz DST tarama testi değildir; ACTH bağımlı hastalıkta hipofizer-ektopik ayırımında kullanılır."
+      },
+      "etiketler": [
+        "Tarama Testi Seçimi",
+        "Kronik Böbrek Hastalığı",
+        "Vardiyalı Çalışma",
+        "1-mg DST",
+        "İdrar Serbest Kortizolü"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Nieman et al. J Clin Endocrinol Metab 2008 (Endocrine Society tanı kılavuzu); Nieman LK. Establishing the diagnosis of Cushing syndrome. UpToDate"
+    },
+    {
+      "id": "s15",
+      "metin": "Otuz dört yaşında kadın hasta, 7 mm kortikotrop mikroadenoma bağlı Cushing hastalığı nedeniyle transsfenoidal cerrahi geçiriyor. Ameliyat öncesi ve sırasında glukokortikoid verilmemiş (merkezin remisyon değerlendirme protokolü). Postoperatif 2. gün sabahı halsizlik, bulantı ve iştahsızlık tarif ediyor.\n\nBulgular:\nKan basıncı: 98/62 mmHg, nabız 104/dk\nSabah 08.00 serum kortizolü: 1,1 µg/dL\nSerum Na: 136 mEq/L, K: 4,1 mEq/L\n\nBu bulguların yorumu ve en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kalıcı panhipopituitarizm gelişmiştir; ömür boyu hidrokortizon ve fludrokortizon başlanır",
+        "B": "Rezidü tümör göstergesidir; erken dönemde yeniden transsfenoidal cerrahi planlanır",
+        "C": "Ölçüm hatası olasıdır; replasman öncesi 1-mg DST ile sonuç doğrulanır",
+        "D": "Güçlü bir remisyon göstergesidir; baskılanmış kortikotroplara bağlı sekonder adrenal yetmezlik için hidrokortizon başlanır ve aks toparlanana dek aylar içinde azaltılır",
+        "E": "Yıllarca süren yüksek kortizol nedeniyle adrenal yetmezlik beklenmez; yakınmalar glukokortikoid çekilme sendromudur ve replasman gerekmez"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Transsfenoidal cerrahi sonrası ilk günlerde sabah kortizolünün <2 µg/dL'ye düşmesi başarılı rezeksiyonun ve remisyonun en güçlü erken göstergesidir. Normal kortikotroplar uzun süre baskılandığından sekonder adrenal yetmezlik gelişir; glukokortikoid replasmanı gerekir ve aks çoğunlukla 6–18 ayda toparlanır.",
+      "aciklama_detay": "Cushing hastalığında adenomdan salgılanan ACTH'nin yarattığı kronik hiperkortizolizm, sağlam kortikotrop hücreleri uzun süre baskılar. Adenom tamamen çıkarıldığında ACTH ve kortizol hızla düşer; postoperatif ilk 24–72 saat içinde sabah serum kortizolünün <2 µg/dL (bazı merkezlerde <5 µg/dL) olması yüksek olasılıkla remisyonu gösterir ve nüks riskinin düşük olduğunu öngörür. Bu tablo aynı zamanda sekonder adrenal yetmezlik demektir: halsizlik, bulantı, hipotansiyon ve taşikardi adrenal krize ilerleyebileceğinden glukokortikoid (hidrokortizon) replasmanı hemen başlanır, hastaya stres dozu ve acil durum eğitimi verilir. Replasman, HPA aksı toparlanana dek (çoğunlukla 6–18 ay) sürdürülür ve sabah kortizolü ya da uyarı testleriyle izlenerek kademeli azaltılır. Aldosteron salgısı esas olarak renin-anjiyotensin sistemine bağlı olduğundan sekonder adrenal yetmezlikte mineralokortikoid replasmanı gerekmez. Replasman dozuna rağmen eklem ağrısı, halsizlik, deride soyulma gibi glukokortikoid çekilme bulguları görülebilir; bu durum replasmanı gereksiz kılmaz. Remisyondaki hastada da nüks yıllar sonra gelişebildiğinden uzun süreli izlem gerekir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tablo kalıcı değil, geri dönüşlü baskılanmadır; sekonder adrenal yetmezlikte aldosteron korunur, fludrokortizon gerekmez.",
+        "B": "YANLIS — Çok düşük postoperatif kortizol rezidü tümörü değil, tam rezeksiyonu düşündürür; rezidü hastalıkta kortizol yüksek kalır.",
+        "C": "YANLIS — Klinik ve laboratuvar uyumludur; hipotansif hastada replasmanı geciktirmek adrenal kriz riski taşır. DST baskılanmış bir aksı değerlendirmez.",
+        "D": "DOGRU — <2 µg/dL remisyonun güçlü göstergesidir; hidrokortizon başlanır, aks toparlanana dek sürdürülüp kademeli azaltılır.",
+        "E": "YANLIS — Baskılanmış aks nedeniyle gerçek adrenal yetmezlik vardır ve replasman şarttır; çekilme sendromu buna ek olarak görülebilir."
+      },
+      "etiketler": [
+        "Transsfenoidal Cerrahi",
+        "Remisyon",
+        "Sekonder Adrenal Yetmezlik",
+        "Postoperatif Kortizol",
+        "Glukokortikoid Replasmanı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Nieman et al. J Clin Endocrinol Metab 2015 (Endocrine Society tedavi kılavuzu); Nieman LK. Overview of the treatment of Cushing syndrome. UpToDate"
     }
   ]
 }

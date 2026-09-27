@@ -303,6 +303,154 @@
       ],
       "zorluk": "orta",
       "kaynak": "Roberts et al. Pancreatology 2017 (PERT Guidelines); Khorana et al. J Thromb Haemost 2018 (Cancer-Associated Thrombosis)"
+    },
+    {
+      "id": "s11",
+      "metin": "Altmış bir yaşında kadın hasta, ağrısız sarılık ve kaşıntı ile başvuruyor. Pankreas protokolü BT'de pankreas başında 3 cm kitle; SMV ile 200° temas ve kontur düzensizliği var, venöz rekonstrüksiyon mümkün; arteriyel temas ve uzak metastaz yok. EUS-İİAB ile adenokarsinom doğrulanıyor. Konsey sınırda rezektabl hastalık nedeniyle 4-6 ay neoadjuvan mFOLFIRINOX planlıyor.\n\nTetkikler:\n- Total bilirubin 13,2 mg/dL, ALP 610 U/L\n- Ateş ya da kolanjit bulgusu yok\n\nBu aşamada biliyer drenaj için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kolanjit olmadığı için drenaj yapılmaz; mFOLFIRINOX hemen başlanır.",
+        "B": "ERCP ile plastik stent yerleştirilir, 3 ayda bir değiştirilir.",
+        "C": "Birinci tercih olarak perkütan transhepatik drenaj uygulanır.",
+        "D": "ERCP ile kendiliğinden genişleyen metal stent (SEMS) yerleştirilir.",
+        "E": "Önce cerrahi hepatikojejunostomi yapılır, sonra kemoterapi başlanır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Neoadjuvan tedavi planlanan sarılıklı hastada kemoterapi için bilirubinin düşmesi gerekir ve drenajın aylarca işlemesi beklenir; bu nedenle ERCP ile SEMS tercih edilir.",
+      "aciklama_detay": "Erken cerrahiye (yaklaşık bir hafta içinde) gidecek rezektabl hastada rutin preoperatif biliyer drenaj, van der Gaag ve arkadaşlarının randomize çalışmasında komplikasyonları artırdığı için önerilmez. Ancak sınırda rezektabl hastalıkta cerrahiden önce 4-6 aylık neoadjuvan kemoterapi uygulanır. İrinotekan ve oksaliplatin içeren mFOLFIRINOX yüksek bilirubinle güvenle verilemez; bu nedenle önce biliyer dekompresyon gerekir. Drenajın aylarca açık kalması gerektiğinden kısa ömürlü plastik stentler sık tıkanma, kolanjit ve tekrarlayan işlem nedeniyle tedavi kesintilerine yol açar. Kendiliğinden genişleyen metal stentler daha uzun açık kalır, kemoterapi gecikmelerini azaltır ve distal koledoğa yerleştirildiğinde sonraki pankreatoduodenektomiyi engellemez. Endoskopik yol perkütan drenaja göre daha az komplikasyonlu ve hasta konforu açısından üstündür; perkütan drenaj ERCP'nin başarısız olduğu durumlara ayrılır. Cerrahi bypass bu aşamada gereksiz ve küratif rezeksiyonu zorlaştıran bir girişimdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bilirubin 13 mg/dL iken irinotekan/oksaliplatin içeren mFOLFIRINOX güvenle verilemez; neoadjuvan planda drenaj gerekir.",
+        "B": "YANLIS — Aylar süren neoadjuvan dönemde plastik stent sık tıkanma ve kolanjit nedeniyle tedavi kesintilerine yol açar.",
+        "C": "YANLIS — Perkütan drenaj ERCP'nin başarısız ya da uygulanamadığı durumlar için ikinci seçenektir.",
+        "D": "DOGRU — Neoadjuvan tedavi süresince uzun açık kalan metal stent, kemoterapiyi aksatmadan dekompresyon sağlar ve rezeksiyonu engellemez.",
+        "E": "YANLIS — Cerrahi bypass küratif rezeksiyon planlanan hastada gereksiz morbidite ekler."
+      },
+      "etiketler": [
+        "Sınırda Rezektabl",
+        "Neoadjuvan Tedavi",
+        "Biliyer Drenaj",
+        "SEMS",
+        "ERCP"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Conroy T ve ark. ESMO 2023 Pankreas Kanseri Klinik Uygulama Kılavuzu (Ann Oncol 2023); van der Gaag et al. N Engl J Med 2010"
+    },
+    {
+      "id": "s12",
+      "metin": "Altmış dört yaşında erkek hasta, karaciğer metastazlı pankreas adenokarsinomu nedeniyle birinci basamakta gemsitabin + nab-paklitaksel almış; 7. ayda karaciğerde yeni metastazlar ve CA 19-9 artışı ile progresyon saptanıyor. ECOG 1, bilirubin normal, derece 1 periferik nöropati var. Germline test negatif; tümörde MSS, KRAS G12D mutasyonu, füzyon saptanmamış.\n\nBu hasta için en uygun ikinci basamak tedavi hangisidir?",
+      "secenekler": {
+        "A": "Gemsitabin monoterapisine geçilmesi",
+        "B": "Lipozomal irinotekan + 5-FU/lökovorin",
+        "C": "Pembrolizumab monoterapisi",
+        "D": "Olaparib ile idame tedavisi",
+        "E": "Gemsitabin + erlotinib"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Gemsitabin temelli birinci basamak sonrası progresyonda, performansı korunmuş hastada florourasil temelli rejime geçilir; lipozomal irinotekan + 5-FU/lökovorin NAPOLI-1'de sağkalımı uzatmıştır.",
+      "aciklama_detay": "Metastatik pankreas kanserinde ardışık tedavi ilkesi, birinci basamakta kullanılmayan ilaç omurgasına geçmektir: gemsitabin temelli tedavi sonrası florourasil temelli, FOLFIRINOX sonrası gemsitabin temelli rejim. NAPOLI-1 çalışmasında gemsitabin temelli tedavi sonrası progresyon gösteren hastalarda lipozomal irinotekan + 5-FU/lökovorin, tek başına 5-FU/lökovorine kıyasla genel sağkalımı anlamlı uzatmıştır. ECOG 1 ve normal bilirubin bu rejim için uygun koşullardır; FOLFOX gibi başka florourasil temelli seçenekler de kullanılabilir. Gemsitabin monoterapisi aynı ilaç omurgasına direnç gelişmiş hastada anlamlı yarar sağlamaz; gemsitabin + erlotinib de gemsitabin temellidir ve yararı marjinaldir. Pembrolizumab yalnızca MSI-H/dMMR tümörlerde etkilidir; bu tümör MSS'dir. Olaparib idamesi germline BRCA taşıyıcısı olup platine yanıt veren hastalara ayrılmıştır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Gemsitabin temelli tedaviye progresyon gösteren hastada aynı omurgayla devam anlamlı yarar sağlamaz.",
+        "B": "DOGRU — NAPOLI-1'de gemsitabin sonrası lipozomal irinotekan + 5-FU/lökovorin sağkalımı uzatmıştır.",
+        "C": "YANLIS — İmmün kontrol noktası inhibitörü monoterapisi yalnızca MSI-H/dMMR tümörlerde etkilidir; bu tümör MSS'dir.",
+        "D": "YANLIS — Olaparib idamesi germline BRCA1/2 taşıyıcısı ve platin indüksiyonuna yanıtlı hastalar içindir.",
+        "E": "YANLIS — Gemsitabin + erlotinib gemsitabin temellidir ve birinci basamakta bile yararı marjinaldir."
+      },
+      "etiketler": [
+        "Metastatik PDAC",
+        "İkinci Basamak",
+        "NAPOLI-1",
+        "Lipozomal İrinotekan"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Wang-Gillam et al. Lancet 2016 (NAPOLI-1); Conroy T ve ark. ESMO 2023 Pankreas Kanseri Klinik Uygulama Kılavuzu (Ann Oncol 2023)"
+    },
+    {
+      "id": "s13",
+      "metin": "Altmış yedi yaşında kadın hastaya pankreas başı adenokarsinomu nedeniyle pankreatoduodenektomi yapılmış (R0, pT2N1) ve adjuvan mFOLFIRINOX planlanıyor. Ailesinde bilinen kanser öyküsü yok; Aşkenazi Yahudi kökenli değil. Kişisel başka kanser öyküsü de bulunmuyor.\n\nKalıtsal kanser yatkınlığı açısından en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Aile öyküsü olmadığından germline test endike değildir.",
+        "B": "Germline test yalnızca 50 yaşından önce tanı alanlarda yapılır.",
+        "C": "Önce tümörde somatik BRCA bakılır, pozitifse germline teste geçilir.",
+        "D": "Germline test ancak metastatik nüks gelişirse gündeme gelir.",
+        "E": "Aile öyküsünden bağımsız olarak çoklu gen panelli germline test önerilir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Pankreas adenokarsinomu tanısı alan her hastaya aile öyküsü, yaş ve evreden bağımsız olarak çoklu gen panelli germline test önerilir.",
+      "aciklama_detay": "Pankreas adenokarsinomunda BRCA1, BRCA2, PALB2, ATM, CDKN2A, STK11 ve MMR genleri gibi yatkınlık genlerinde patojenik germline varyant taşıyan hastaların önemli bir bölümünün aile öyküsü yoktur; aile öyküsüne ya da yaşa dayalı seçim bu taşıyıcıların bir kısmını kaçırır. Bu nedenle güncel kılavuzlar tanı alan her hastaya çoklu gen panelli germline test önerir. Sonuç üç düzeyde değer taşır: tedavi (BRCA/PALB2 taşıyıcısında platin içeren rejim tercihi, ileri evrede olaparib idamesi, Lynch sendromunda immünoterapi), ikincil kanser riskinin yönetimi ve akrabalarda kaskad test ile yüksek riskli bireylerin sürveyansa alınması. Testin zamanlaması evreye bağlanmamalıdır; rezeksiyon sonrası hastada da sonuç aile bireyleri ve olası nüks tedavisi için bugünden önemlidir. Somatik profil germline testin yerini tutmaz: somatik paneller germline kökeni ayırt edemeyebilir ve bazı yatkınlık genlerini kapsamaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Germline taşıyıcıların önemli bir bölümünün aile öyküsü yoktur; öykü test için ön koşul değildir.",
+        "B": "YANLIS — Yaş sınırı konmaz; ileri yaşta tanı alanlarda da patojenik varyant saptanabilir.",
+        "C": "YANLIS — Somatik test germline testin yerini tutmaz ve bazı yatkınlık varyantlarını kaçırır.",
+        "D": "YANLIS — Sonuç tedavi seçimi ve akrabaların sürveyansı için tanı anında değerlidir; nüks beklenmez.",
+        "E": "DOGRU — Tüm pankreas adenokarsinomlu hastalara aile öyküsünden bağımsız germline panel testi önerilir."
+      },
+      "etiketler": [
+        "Germline Test",
+        "BRCA1/2",
+        "PALB2",
+        "Kaskad Test",
+        "Kalıtsal Yatkınlık"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "NCCN Pankreas Adenokarsinomu Kılavuzu; Conroy T ve ark. ESMO 2023 Pankreas Kanseri Klinik Uygulama Kılavuzu (Ann Oncol 2023)"
+    },
+    {
+      "id": "s14",
+      "metin": "Otuz dokuz yaşında erkek hasta, akciğer ve karaciğer metastazlı pankreas adenokarsinomu tanısı alıyor. Sigara ve alkol kullanmıyor; aile öyküsü yok. Birinci basamak mFOLFIRINOX başlanıyor. DNA tabanlı tümör yeni nesil dizilemesinde KRAS yabanıl tip bulunuyor; BRCA1/2, PALB2 ve MMR genlerinde değişiklik yok, MSS.\n\nBu bulgu karşısında moleküler değerlendirmede en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "RNA tabanlı füzyon analizi ile NRG1, NTRK, ALK, RET gibi füzyonların araştırılması",
+        "B": "KRAS sonucunun hatalı kabul edilip aynı DNA panelinin tekrarlanması",
+        "C": "Sotorasib başlamak için KRAS G12C'ye özgü PCR yapılması",
+        "D": "KRAS yabanıl tip tedaviyi etkilemediği için moleküler incelemenin sonlandırılması",
+        "E": "PD-L1 ekspresyonuna göre tedaviye pembrolizumab eklenmesi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "KRAS yabanıl tip PDAC (özellikle gençlerde) hedeflenebilir füzyonlardan zengindir; DNA panelleri füzyonları kaçırabildiği için RNA tabanlı füzyon analizi yapılmalıdır.",
+      "aciklama_detay": "Pankreas adenokarsinomlarının yaklaşık %90'ından fazlasında KRAS mutasyonu vardır; KRAS yabanıl tip azınlık, özellikle genç hastalarda, alternatif sürücü değişiklikler açısından zengindir: NRG1, NTRK, ALK, RET, ROS1 ve FGFR2 füzyonları, BRAF değişiklikleri ve MSI-H. DNA tabanlı paneller özellikle uzun intronlu genlerdeki (ör. NRG1) füzyonları kaçırabilir; bu nedenle KRAS yabanıl tip sonuç, RNA tabanlı füzyon analizine yönlendirmelidir. Bulunacak değişiklik tedaviyi doğrudan değiştirir: NTRK füzyonunda larotrektinib/entrektinib, RET füzyonunda selperkatinib, NRG1 füzyonunda HER2/HER3 bispesifik antikoru zenokutuzumab gibi hedefe yönelik seçenekler vardır. KRAS yabanıl tip sonucu otomatik olarak hata saymak doğru değildir; tümör hücreselliği yeterliyse biyolojik bir alt grubu temsil eder. KRAS G12C'ye özgü test bu hastada anlamsızdır, çünkü KRAS zaten yabanıl tiptir. MSS tümörde PD-L1'e dayalı immünoterapi pankreas kanserinde yararlı bulunmamıştır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — KRAS yabanıl tip PDAC'ta hedeflenebilir füzyonlar için RNA tabanlı analiz önerilir.",
+        "B": "YANLIS — KRAS yabanıl tip gerçek bir biyolojik alt gruptur; aynı DNA paneli füzyonları yine kaçırır.",
+        "C": "YANLIS — KRAS yabanıl tipte G12C mutasyonu yoktur; bu test sonuç değiştirmez.",
+        "D": "YANLIS — KRAS yabanıl tip tam tersine hedeflenebilir değişiklik olasılığını artırır.",
+        "E": "YANLIS — MSS pankreas kanserinde PD-L1'e dayalı immünoterapinin yararı gösterilmemiştir."
+      },
+      "etiketler": [
+        "KRAS Yabanıl Tip",
+        "NRG1 Füzyonu",
+        "NTRK Füzyonu",
+        "RNA Tabanlı Dizileme",
+        "Hassas Tıp"
+      ],
+      "zorluk": "zor",
+      "kaynak": "NCCN Pankreas Adenokarsinomu Kılavuzu; Conroy T ve ark. ESMO 2023 Pankreas Kanseri Klinik Uygulama Kılavuzu (Ann Oncol 2023)"
+    },
+    {
+      "id": "s15",
+      "metin": "Yetmiş yaşında erkek hasta, 3 haftalık ağrısız sarılık ile başvuruyor. Pankreas protokolü BT'de pankreas başında 2,6 cm kitle var; damar teması ve uzak metastaz yok (rezektabl). Karaciğerde lezyon saptanmıyor.\n\nTetkikler:\n- Total bilirubin 11,8 mg/dL\n- CA 19-9: 2.450 U/mL\n\nAsistan hekim, CA 19-9 bu denli yüksek olduğu için hastalığın büyük olasılıkla metastatik olduğunu ve cerrahinin anlamsız kaldığını öne sürüyor.\n\nBu hastada CA 19-9 ile ilgili en doğru yorum hangisidir?",
+      "secenekler": {
+        "A": "CA 19-9 1.000 U/mL'nin üzerindeyse tek başına metastatik hastalık tanısı koydurur.",
+        "B": "Bu düzey yalnızca Lewis-negatif hastalarda görülür; laboratuvar hatası düşünülmelidir.",
+        "C": "Kolestaz CA 19-9'u yükseltir; değer bilirubin normalleşince yeniden yorumlanmalıdır.",
+        "D": "CA 19-9 yüksekliği tanıyı kesinleştirdiği için evreleme gerekmez.",
+        "E": "CA 19-9'un bu hastada prognostik değeri yoktur; izlemde de kullanılmaz."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Biliyer tıkanma CA 19-9'u tümör yükünden bağımsız olarak yükseltir; sarılıklı hastadaki değer rezektabiliteyi tek başına belirlemez ve bilirubin normalleştikten sonra yeniden değerlendirilmelidir.",
+      "aciklama_detay": "CA 19-9 safra yolu epitelinde de üretilir ve kolestaz, kolanjit gibi durumlarda tümör yükünden bağımsız olarak belirgin yükselir. Bu nedenle tıkanma sarılığı olan hastada ölçülen değer olduğundan yüksek çıkar ve tek başına metastaz tanısı koydurmaz. Doğru yaklaşım, görüntülemeye dayalı evrelemeyi esas almak ve CA 19-9'u bilirubin normalleştikten sonra (dekompresyon ya da rezeksiyon sonrası) yeniden ölçerek taban değer olarak kullanmaktır. Bilirubin normalken de belirgin yüksek kalan değer (ör. >500 U/mL) gizli metastatik hastalık ve kötü prognozla ilişkilidir; bu durumda evreleme laparoskopisi ve neoadjuvan tedavi gündeme gelebilir. Postoperatif ve tedavi süresince CA 19-9 yanıt ve nüks izleminde değerlidir. Lewis-negatif fenotipte CA 19-9 hiç sentezlenemez, yani bu hastalar yüksek değil düşük/ölçülemeyen değerlerle karşımıza çıkar. Tümör belirteci doku tanısının ve evrelemenin yerini tutmaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sarılıkta CA 19-9 tümörden bağımsız yükselir; tek başına metastaz tanısı koymaz ve cerrahiden vazgeçirmez.",
+        "B": "YANLIS — Lewis-negatif bireyler CA 19-9 sentezleyemez; bu fenotip yüksek değil düşük değerle ilişkilidir.",
+        "C": "DOGRU — Kolestaz yalancı yükseklik yapar; değer bilirubin normalleşince yeniden yorumlanır.",
+        "D": "YANLIS — CA 19-9 tanı ve evrelemenin yerini tutmaz; özgüllüğü sınırlıdır.",
+        "E": "YANLIS — Bilirubin normalken ölçülen CA 19-9 prognostiktir ve tedavi yanıtı ile nüks izleminde kullanılır."
+      },
+      "etiketler": [
+        "CA 19-9",
+        "Tıkanma Sarılığı",
+        "Rezektabilite",
+        "Tümör Belirteci Yorumu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Fernandez-del Castillo C, Singh H. Clinical presentation, diagnosis, and staging of exocrine pancreatic cancer. UpToDate; NCCN Pankreas Adenokarsinomu Kılavuzu"
     }
   ]
 }

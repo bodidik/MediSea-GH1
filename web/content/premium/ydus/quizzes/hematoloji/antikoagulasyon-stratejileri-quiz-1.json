@@ -123,6 +123,246 @@
       "etiketler": ["hematoloji", "antikoagülasyon", "dabigatran", "perioperatif yönetim", "bridging"],
       "zorluk": "zor",
       "kaynak": "MediSea Kanonik İçerik — Hematoloji / Antikoagülasyon Stratejileri ve Klinik Yönetim"
+    },
+    {
+      "id": "s6",
+      "metin": "63 yaşında erkek hasta, rezeke edilmemiş lokal ileri mide adenokarsinomu nedeniyle kemoterapi almaktadır. Sağ bacakta 3 gündür süren şişlik nedeniyle yapılan Doppler ultrasonografide akut proksimal (popliteal–femoral) derin ven trombozu saptanıyor. Son endoskopide tümör yüzeyinde ülserasyon görülmüş, aktif kanama izlenmemiş.\n\nTetkikler:\nHemoglobin: 10.8 g/dL\nTrombosit: 210.000/µL\nKreatinin klerensi: 78 mL/dk\nEşlik eden CYP3A4/P-gp etkileşimli ilaç yok\n\nBu hastada akut ve en az 6 aylık antikoagülan tedavi için en uygun seçenek hangisidir?",
+      "secenekler": {
+        "A": "5 günlük LMWH ön tedavisinin ardından edoksaban 60 mg günde tek doz",
+        "B": "Rivaroksaban 21 gün 15 mg günde iki kez, ardından 20 mg günde tek doz",
+        "C": "LMWH ile örtüşmeli başlanan varfarin, hedef INR 2.0–3.0",
+        "D": "Terapötik dozda LMWH (ör. dalteparin 200 U/kg/gün ilk ay, ardından 150 U/kg/gün)",
+        "E": "Vena kava inferior filtresi takılıp antikoagülasyondan tümüyle kaçınılması"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Rezeke edilmemiş, ülsere luminal GI tümörde edoksaban ve rivaroksaban majör mukozal GI kanamayı artırır; bu hastada tercih terapötik doz LMWH'dir.",
+      "aciklama_detay": "Kanser ilişkili trombozda (CAT) GI kanama riski yoksa DOAC'lar LMWH'ye tercih edilir; ancak bu tercihin en önemli istisnası rezeke edilmemiş luminal gastrointestinal (mide, özofagus, kolorektal) tümördür.\n\nHokusai-VTE Cancer (edoksaban vs dalteparin) ve SELECT-D (rivaroksaban vs dalteparin) çalışmalarında VTE nüksü açısından DOAC'lar dalteparinden geri kalmamış, fakat majör kanama fazlalığı özellikle GI tümörlü alt grupta yoğunlaşmıştır. Ülsere tümör yüzeyi bu hastada mukozal kanama riskini daha da belirginleştirir.\n\nCLOT ve CATCH çalışmaları LMWH'nin varfarine göre VTE nüksünü daha iyi önlediğini göstermiştir; bu nedenle kanser hastasında VKA ilk seçenek değildir. IVC filtresi yalnızca antikoagülasyonun kesin kontrendike olduğu durumlarda düşünülür; bu hastada trombosit sayısı normaldir ve aktif kanama yoktur.\n\nKlinik inci: CAT'ta ajan seçiminde üç soru sorulur — rezeke edilmemiş luminal GI/GU tümör var mı, GI rezeksiyonu sonrası emilim sorunu var mı, güçlü CYP3A4/P-gp etkileşimi var mı? Birine evet yanıtı LMWH'ye yönlendirir.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Hokusai-VTE Cancer'da edoksabanın majör kanama fazlası özellikle GI tümörlü hastalarda görülmüştür; ülsere mide tümöründe ilk tercih değildir.",
+        "B": "Yanlış — SELECT-D'de rivaroksaban özellikle üst GI (gastroözofageal) tümörlerde klinik olarak anlamlı kanamayı artırmıştır.",
+        "C": "Yanlış — CLOT ve CATCH'te LMWH, varfarine göre kanser hastalarında VTE nüksünü daha etkili önlemiştir; INR dalgalanması ve kemoterapi etkileşimleri de dezavantajdır.",
+        "D": "Doğru — Rezeke edilmemiş luminal GI tümörde mukozal kanama riski nedeniyle terapötik doz LMWH en az 6 ay tercih edilir.",
+        "E": "Yanlış — Antikoagülasyon için kontrendikasyon (aktif majör kanama, ağır trombositopeni) yoktur; filtre tek başına tedavi değildir."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "kanser ilişkili tromboz", "LMWH", "gastrointestinal kanser"],
+      "zorluk": "orta",
+      "kaynak": "Hokusai-VTE Cancer; SELECT-D; CLOT — MediSea Kanonik İçerik: Kanser İlişkili Tromboz"
+    },
+    {
+      "id": "s7",
+      "metin": "58 yaşında kadın hasta, metastatik pankreas kanseri nedeniyle kemoterapi almaya devam etmektedir. Yedi ay önce akut pulmoner emboli tanısı almış ve 6 ay boyunca apiksaban 5 mg günde iki kez kullanmıştır. Bu sürede nüks tromboz ya da kanama olmamıştır. Kreatinin klerensi 72 mL/dk, trombosit 245.000/µL, vücut ağırlığı 64 kg.\n\nBu hastada antikoagülasyonun bundan sonraki yönetimi için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Apiksaban 2.5 mg günde iki kez ile kanser aktif kaldıkça süresiz devam",
+        "B": "6 aylık tedavi tamamlandığı için antikoagülanın kesilip klinik izlem",
+        "C": "Apiksabanın kesilip düşük doz aspirin (100 mg/gün) ile devam",
+        "D": "Apiksaban 5 mg günde iki kez; düşük doz yalnız CrCl <30 mL/dk'da kullanılır",
+        "E": "Apiksabanın kesilip profilaktik doz enoksaparin (40 mg/gün) ile devam"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Aktif kanseri süren ve ilk 6 ayı sorunsuz tamamlayan CAT hastasında uzatılmış fazda apiksaban 2.5 mg günde iki kez, tam doz kadar koruyucu ve daha az kanatıcıdır (API-CAT).",
+      "aciklama_detay": "Kanser ilişkili trombozda tedavi en az 6 ay sürer; kanser aktif kaldığı (metastatik hastalık, süren kemoterapi) sürece nüks riski devam ettiğinden antikoagülasyon süresiz uzatılır.\n\nUzatılmış fazda dozun azaltılıp azaltılamayacağı API-CAT çalışmasıyla yanıtlanmıştır: ilk 6–12 ayı tamamlamış, kanseri aktif hastalarda apiksaban 2.5 mg günde iki kez, 5 mg günde iki kez ile karşılaştırıldığında rekürren VTE açısından geri kalmamış (non-inferior), klinik olarak anlamlı kanama (majör + klinik ilgili non-majör) ise daha düşük bulunmuştur.\n\nAspirin kanser ilişkili VTE'nin sekonder önlenmesinde yeterli değildir. Profilaktik doz LMWH uzatılmış fazda apiksaban 2.5 mg ile eşdeğer kanıta sahip değildir ve günlük enjeksiyon yükü getirir.\n\nDikkat: Apiksabanın AF'deki doz azaltma ölçütleri (yaş ≥80, kilo ≤60 kg, kreatinin ≥1.5 mg/dL) VTE uzatılmış fazındaki 2.5 mg kararıyla karıştırılmamalıdır; buradaki azaltım endikasyona bağlıdır, böbrek işlevine değil.",
+      "secenekAciklamalari": {
+        "A": "Doğru — API-CAT: uzatılmış fazda 2.5 mg günde iki kez non-inferior etkinlik ve daha az klinik anlamlı kanama sağlar; aktif kanserde tedavi süresizdir.",
+        "B": "Yanlış — Metastatik hastalık ve süren kemoterapi kalıcı risk faktörüdür; 6. ayda kesmek yüksek nüks riski taşır.",
+        "C": "Yanlış — Aspirin kanser ilişkili VTE'nin sekonder önlenmesinde yeterli değildir.",
+        "D": "Yanlış — Tam doz kabul edilebilir olsa da daha fazla kanama pahasına ek koruma sağlamaz; uzatılmış fazdaki doz azaltımı böbrek işlevine bağlı değildir.",
+        "E": "Yanlış — Profilaktik doz LMWH'nin uzatılmış CAT tedavisinde düşük doz apiksabana eşdeğer olduğu gösterilmemiştir."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "kanser ilişkili tromboz", "API-CAT", "apiksaban"],
+      "zorluk": "orta",
+      "kaynak": "API-CAT (NEJM 2025) — MediSea Kanonik İçerik: Kanser İlişkili Tromboz"
+    },
+    {
+      "id": "s8",
+      "metin": "71 yaşında erkek hasta, non-valvüler atriyal fibrilasyon nedeniyle 4 yıldır varfarin kullanmaktadır. Son 6 aydaki INR değerleri 1.6 ile 4.2 arasında dalgalanmış; terapötik aralıkta kalma süresi (TTR) %48 hesaplanıyor. Apiksabana geçilmesine karar veriliyor.\n\nTetkikler:\nBugünkü INR: 2.7\nKreatinin: 1.0 mg/dL (CrCl 71 mL/dk)\nVücut ağırlığı: 78 kg\n\nGeçiş için en uygun protokol hangisidir?",
+      "secenekler": {
+        "A": "Varfarin bugün kesilir ve apiksaban 5 mg günde iki kez aynı gün başlanır.",
+        "B": "Apiksaban başlanır; INR ≥2.0 kalana kadar varfarinle birlikte sürdürülür.",
+        "C": "Varfarin kesilir, terapötik LMWH köprülemesi yapılır, INR <1.5 olunca apiksabana geçilir.",
+        "D": "Varfarin kesilir ve INR ≤2.5 olduğunda apiksaban 2.5 mg günde iki kez başlanır.",
+        "E": "Varfarin kesilir, INR izlenir ve INR <2.0 olduğunda apiksaban 5 mg günde iki kez başlanır."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Varfarinden apiksabana geçişte varfarin kesilir, INR <2.0'a indiğinde apiksaban başlanır; bu hastada doz azaltma ölçütü olmadığından doz 5 mg günde iki kezdir.",
+      "aciklama_detay": "Varfarinden DOAC'a geçişte amaç hem antikoagülasyonda boşluk bırakmamak hem de iki ilacın etkisini üst üste bindirmemektir. Bunun için varfarin kesilir, INR izlenir ve ajana özgü eşik değere ulaşıldığında DOAC başlanır:\n• Dabigatran ve apiksaban: INR <2.0\n• Edoksaban: INR ≤2.5\n• Rivaroksaban: INR <3.0 (AF endikasyonunda)\n\nBu hastada apiksaban doz azaltma ölçütlerinin (yaş ≥80, vücut ağırlığı ≤60 kg, kreatinin ≥1.5 mg/dL) hiçbiri yoktur; doz 5 mg günde iki kezdir.\n\nİki oral ajanın INR terapötik olana kadar birlikte kullanılması ters yöndeki (DOAC → varfarin) geçişin mantığıdır; varfarinin etkisi yavaş başladığı için orada örtüşme gerekir. Varfarinden DOAC'a geçişte LMWH köprülemesi gereksizdir ve kanama riskini artırır.\n\nKlinik inci: TTR <%70 olan varfarin hastası DOAC'a geçiş için en güçlü adaylardan biridir.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — INR 2.7 iken apiksaban eklemek supraterapötik antikoagülasyon ve kanama riski doğurur.",
+        "B": "Yanlış — Bu, DOAC'tan varfarine geçişteki örtüşme mantığıdır; varfarinden DOAC'a geçişte iki ilaç birlikte sürdürülmez.",
+        "C": "Yanlış — LMWH köprülemesi gereksizdir; INR <1.5'i beklemek de koruyucu olmayan bir boşluk yaratır.",
+        "D": "Yanlış — INR ≤2.5 edoksaban eşiğidir; ayrıca hastada doz azaltma ölçütü olmadığından 2.5 mg günde iki kez yetersiz dozdur.",
+        "E": "Doğru — Apiksaban için eşik INR <2.0'dır; hiçbir azaltma ölçütü yoktur, doz 5 mg günde iki kezdir."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "varfarin", "apiksaban", "geçiş protokolü"],
+      "zorluk": "orta",
+      "kaynak": "MediSea Kanonik İçerik — Hematoloji / VKA ve DOAC Karşılaştırması (geçiş protokolleri)"
+    },
+    {
+      "id": "s9",
+      "metin": "41 yaşında kadın hasta, 8 ay önce provoke edilmemiş sol femoral DVT nedeniyle rivaroksaban 20 mg/gün kullanmaktadır. Sağ kolda ani güçsüzlük ve konuşma bozukluğu ile başvuruyor; MR'da sol orta serebral arter dal alanında akut iskemik infarkt saptanıyor. Kardiyak ritim ve ekokardiyografi normal.\n\nTetkikler (12 hafta arayla iki kez):\nLupus antikoagülanı: pozitif\nAntikardiyolipin IgG: yüksek titrede pozitif\nAnti-β2 glikoprotein I IgG: yüksek titrede pozitif\n\nAkut dönem sonrası uzun dönem antitrombotik tedavi için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Rivaroksabana devam edilip tedaviye düşük doz aspirin eklenmesi",
+        "B": "Rivaroksabandan apiksaban 5 mg günde iki keze geçilmesi",
+        "C": "Heparin ile örtüşmeli varfarine geçiş, hedef INR 2.0–3.0 (kanama riskine göre daha yüksek hedef ya da aspirin eklenmesi)",
+        "D": "Rivaroksabandan dabigatran 150 mg günde iki keze geçilmesi",
+        "E": "Antikoagülanın kesilip tek başına klopidogrel 75 mg/gün ile devam"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Üçlü pozitif ve arteriyel olay geçirmiş antifosfolipid sendromunda DOAC'lar varfarinden daha fazla arteriyel olaya yol açar; standart tedavi VKA'dır.",
+      "aciklama_detay": "Hastada venöz (DVT) ve arteriyel (iskemik inme) tromboz ile 12 hafta arayla iki kez pozitif üç antikor (lupus antikoagülanı, antikardiyolipin, anti-β2GPI) vardır: üçlü pozitif, yüksek riskli antifosfolipid sendromu (APS).\n\nTRAPS çalışmasında üçlü pozitif APS hastalarında rivaroksaban, varfarine kıyasla arteriyel olayları (özellikle iskemik inme) ve majör kanamayı artırmış, çalışma erken sonlandırılmıştır. Apiksaban ile yapılan çalışmada da benzer bir inme sinyali görülmüştür; yani sorun tek bir DOAC'a değil sınıfa aittir. EULAR 2019 APS önerileri bu nedenle üçlü pozitif ve/veya arteriyel olay geçirmiş hastada DOAC kullanılmamasını önerir.\n\nArteriyel olay geçirmiş APS'de EULAR 2019: VKA ile hedef INR 2.0–3.0 ya da 3.0–4.0, veya INR 2.0–3.0 + düşük doz aspirin; seçim kanama riskine göre bireyselleştirilir. Tüm seçeneklerin ortak noktası VKA temelli tedavidir.\n\nKlinik inci: DOAC altında yeni arteriyel olay geçiren genç hastada antifosfolipid antikorları mutlaka istenmelidir; sonuç ajan seçimini tümüyle değiştirir.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Sorun rivaroksabanın kendisidir; üzerine aspirin eklemek DOAC başarısızlığını düzeltmez, yalnızca kanamayı artırır.",
+        "B": "Yanlış — Apiksaban ile de APS'de inme fazlalığı görülmüştür; üçlü pozitif APS'de DOAC sınıfından kaçınılır.",
+        "C": "Doğru — Üçlü pozitif, arteriyel olay geçirmiş APS'de VKA (varfarin) standarttır; hedef INR ve aspirin eklenmesi kanama riskine göre belirlenir.",
+        "D": "Yanlış — Dabigatranın APS'de varfarine eşdeğer olduğu gösterilmemiştir; kılavuzlar yüksek riskli APS'de tüm DOAC'lardan kaçınmayı önerir.",
+        "E": "Yanlış — Venöz tromboz öyküsü olan üçlü pozitif APS'de antikoagülanı kesip yalnız antiplatelete geçmek hem venöz hem arteriyel nüks riskini artırır."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "antifosfolipid sendromu", "TRAPS", "varfarin"],
+      "zorluk": "zor",
+      "kaynak": "TRAPS (Pengo ve ark., Blood 2018); EULAR 2019 erişkin APS önerileri"
+    },
+    {
+      "id": "s10",
+      "metin": "49 yaşında erkek hasta, hemodinamik olarak stabil, düşük riskli akut pulmoner emboli tanısıyla yatırılmış ve enoksaparin 1 mg/kg günde iki kez başlanmıştır. Hastanede 2. günündedir. Uzun dönem tedavi için edoksaban planlanıyor.\n\nTetkikler:\nVücut ağırlığı: 88 kg\nKreatinin klerensi: 82 mL/dk\nP-gp inhibitörü kullanımı: yok\n\nEdoksabana geçiş için en uygun plan hangisidir?",
+      "secenekler": {
+        "A": "Enoksaparin bugün kesilir ve edoksaban 60 mg günde tek doz hemen başlanır.",
+        "B": "Enoksaparin en az 5 gün tamamlanır; edoksaban 60 mg bir sonraki enoksaparin dozu saatinde, örtüşmesiz başlanır.",
+        "C": "Edoksaban 60 mg hemen başlanır, INR ≥2.0 olana kadar enoksaparinle birlikte verilir.",
+        "D": "Edoksaban 7 gün 30 mg günde iki kez yükleme, ardından 60 mg günde tek doz olarak başlanır.",
+        "E": "Edoksaban akut VTE'de kullanılamaz; taburculukta yalnızca apiksaban ya da rivaroksaban seçilebilir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Dabigatran ve edoksaban akut VTE'de tek başına başlanamaz; en az 5 gün parenteral antikoagülandan sonra örtüşmesiz geçilir.",
+      "aciklama_detay": "Akut VTE'de apiksaban ve rivaroksaban yükleme dozlarıyla doğrudan oral monoterapi olarak başlanabilir. Dabigatran (RE-COVER) ve edoksaban (Hokusai-VTE) çalışmalarında ise tüm hastalar önce parenteral antikoagülan almıştır; bu nedenle bu iki ajan en az 5 günlük (çalışmalarda 5–10 gün) terapötik LMWH/UFH ön tedavisinden sonra başlanır.\n\nGeçiş saat düzeyinde örtüşmesiz yapılır: ilk edoksaban dozu, bir sonraki LMWH enjeksiyonunun yapılacağı saatte verilir. Aynı gün hem tam doz LMWH hem DOAC vermek supraterapötik etki yaratır.\n\nEdoksaban dozu 60 mg/gündür; kreatinin klerensi 15–50 mL/dk, vücut ağırlığı ≤60 kg ya da güçlü P-gp inhibitörü kullanımı varsa 30 mg'a azaltılır. Bu hastada azaltma ölçütü yoktur.\n\nINR'ye göre örtüşme varfarinin mantığıdır; edoksabanın yükleme dozu yoktur.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — 2 günlük parenteral tedavi yetersizdir; edoksaban için en az 5 günlük ön tedavi gerekir.",
+        "B": "Doğru — En az 5 gün LMWH, ardından bir sonraki LMWH dozu saatinde örtüşmesiz edoksaban 60 mg/gün.",
+        "C": "Yanlış — INR'ye göre örtüşme varfarinin geç etki başlangıcı nedeniyle yapılır; DOAC ile LMWH'yi birlikte vermek kanama riskini artırır.",
+        "D": "Yanlış — Edoksabanın yükleme dozu yoktur; yükleme şeması apiksaban (7 gün 10 mg BID) ve rivaroksabana (21 gün 15 mg BID) aittir.",
+        "E": "Yanlış — Edoksaban akut VTE'de onaylıdır; yalnızca parenteral ön tedavi gerektirir."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "edoksaban", "pulmoner emboli", "parenteral ön tedavi"],
+      "zorluk": "orta",
+      "kaynak": "Hokusai-VTE; RE-COVER — MediSea Kanonik İçerik: Antikoagülasyon Stratejileri (VTE inisiasyon fazı)"
+    },
+    {
+      "id": "s11",
+      "metin": "83 yaşında kadın hasta, yeni tanı non-valvüler atriyal fibrilasyon nedeniyle değerlendiriliyor. Hipertansiyon ve tip 2 diyabeti var; CHA2DS2-VASc skoru 5. Kanama öyküsü yok.\n\nTetkikler:\nVücut ağırlığı: 57 kg\nSerum kreatinin: 1.1 mg/dL\nHesaplanan kreatinin klerensi: ~35 mL/dk\nHemoglobin: 12.6 g/dL, trombosit 230.000/µL\n\nBu hasta için en uygun oral antikoagülan ve dozu, gerekçesiyle birlikte hangisidir?",
+      "secenekler": {
+        "A": "Apiksaban 5 mg günde iki kez; kreatinin <1.5 mg/dL olduğu için doz azaltılmaz",
+        "B": "Apiksaban 2.5 mg günde iki kez; CrCl <50 mL/dk olan her hastada doz yarıya iner",
+        "C": "Dabigatran 150 mg günde iki kez; böbrek işlevinden en az etkilenen DOAC olduğu için",
+        "D": "Apiksaban 2.5 mg günde iki kez; yaş ≥80 ve vücut ağırlığı ≤60 kg ölçütleri birlikte karşılandığı için",
+        "E": "Antikoagülan yerine aspirin + klopidogrel; 80 yaş üzerinde kanama riski yararı aşar"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "AF'de apiksaban dozu, yaş ≥80, kilo ≤60 kg ve kreatinin ≥1.5 mg/dL ölçütlerinden en az ikisi varsa 2.5 mg günde ikiye iner; bu hastada yaş ve kilo ölçütü vardır.",
+      "aciklama_detay": "Non-valvüler AF'de apiksaban dozu, CrCl değerine göre değil üç klinik ölçütün sayısına göre belirlenir: yaş ≥80, vücut ağırlığı ≤60 kg ve serum kreatinin ≥1.5 mg/dL. En az ikisi varsa doz 5 mg'dan 2.5 mg günde iki keze iner. Bu hastada kreatinin 1.5'in altındadır ama yaş (83) ve kilo (57 kg) ölçütleri birlikte karşılandığı için azaltılmış doz uygundur.\n\nCrCl eşiğine dayalı azaltım rivaroksaban (15–49 mL/dk'da 15 mg/gün) ve edoksaban (15–50 mL/dk'da 30 mg/gün) için geçerlidir; apiksabana taşımak ya gereksiz düşük doza ya da gerekçesi yanlış karara götürür.\n\nDabigatran %80–85 böbrekten atılır; böbrek işlevinden EN ÇOK etkilenen DOAC'tır. İleri yaş tek başına OAC'dan vazgeçme nedeni değildir; ikili antiplatelet tedavi yaşlıda OAC kadar kanatıcı olup inmeyi daha az önler.\n\nKlinik inci: Gereksiz doz azaltımı gerçek yaşamda sık görülen bir hatadır ve inme riskini artırır; ölçütleri tek tek say.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Kreatinin ölçütü tek başına belirleyici değildir; yaş ≥80 ve kilo ≤60 kg ölçütleri birlikte karşılanmıştır.",
+        "B": "Yanlış — Doz doğru ama gerekçe yanlış: apiksabanda CrCl'ye dayalı bir azaltma kuralı yoktur, bu kural rivaroksaban ve edoksabana aittir.",
+        "C": "Yanlış — Dabigatran böbrekten en çok atılan DOAC'tır; CrCl ~35 mL/dk olan 83 yaşında hastada 150 mg günde iki kez uygun değildir.",
+        "D": "Doğru — Üç ölçütten ikisi (yaş ≥80, kilo ≤60 kg) karşılandığı için apiksaban 2.5 mg günde iki kez.",
+        "E": "Yanlış — İkili antiplatelet tedavi yaşlıda kanama riskini OAC'ye yakın düzeyde artırırken inmeyi daha az önler; CHA2DS2-VASc 5'te OAC endikedir."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "apiksaban", "doz ayarı", "atriyal fibrilasyon"],
+      "zorluk": "orta",
+      "kaynak": "ARISTOTLE; MediSea Kanonik İçerik — Antikoagülasyon Stratejileri (apiksaban doz ölçütleri)"
+    },
+    {
+      "id": "s12",
+      "metin": "79 yaşında erkek hasta, AF nedeniyle dabigatran 110 mg günde iki kez kullanmaktadır. Masif üst GI kanama ve hipotansiyonla getiriliyor; dehidratasyona bağlı akut böbrek hasarı var (kreatinin klerensi 24 mL/dk). İdarusizumab 5 g IV uygulanıyor, endoskopik hemostaz sağlanıyor, seyreltik trombin zamanı (dTT) normale dönüyor.\n\nİdarusizumabdan 18 saat sonra yeniden hematemez ve hipotansiyon gelişiyor.\n\nTetkikler:\ndTT: yeniden uzamış\naPTT: 58 sn\nHemoglobin: 7.1 g/dL\nFibrinojen: 240 mg/dL\n\nBu aşamada en uygun hemostatik girişim hangisidir?",
+      "secenekler": {
+        "A": "Aktive olmayan 4F-PCC 50 IU/kg ile dabigatran etkisinin bypass edilmesi",
+        "B": "Rekombinant aktive faktör VIIa bolus uygulanması",
+        "C": "Andeksanet alfa ile kalan dabigatranın nötralize edilmesi",
+        "D": "Protamin sülfat ile antikoagülan etkinin geri çevrilmesi",
+        "E": "İkinci doz idarusizumab 5 g IV uygulanması"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Böbrek işlevi bozuk hastada idarusizumabdan 12–24 saat sonra damar dışı dabigatranın plazmaya dönmesiyle rebound gelişebilir; pıhtılaşma testleri yeniden uzamış ve kanama sürüyorsa ikinci 5 g doz verilir.",
+      "aciklama_detay": "İdarusizumab, dabigatrana trombinden çok daha yüksek afiniteyle bağlanan insanlaştırılmış bir Fab fragmanıdır ve etkisini dakikalar içinde geri çevirir. Ancak dabigatranın bir kısmı damar dışı alandadır; böbrek işlevi bozuk hastalarda bu havuz yavaş temizlenir ve 12–24 saat içinde plazmaya geri dönerek antikoagülan etkiyi yeniden başlatabilir (rebound).\n\nKanamanın yeniden başlaması ve dTT/aPTT'nin yeniden uzaması bu tabloya uyar. Ürün bilgisi ve kılavuzlar, klinik olarak anlamlı kanama sürerken pıhtılaşma testleri yeniden uzamışsa ikinci bir 5 g idarusizumab dozunu önerir. Dabigatran düşük protein bağlama oranı (~%35) nedeniyle hemodiyalizle de uzaklaştırılabilir; hipotansif hastada ise antidot önceliklidir.\n\nFibrinojen 240 mg/dL olduğu için ek kriyopresipitat gerekmez (eşik <200 mg/dL). PCC spesifik antidota ulaşılamadığında düşünülen ikinci seçenektir; rFVIIa etkisizdir ve tromboz riski taşır. Andeksanet alfa yalnızca faktör Xa inhibitörlerine bağlanır; protamin heparin antidotudur.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — 4F-PCC spesifik antidot yoksa düşünülen seçenektir; idarusizumab varken ve rebound gösterilmişken önce ikinci antidot dozu verilir.",
+        "B": "Yanlış — rFVIIa DOAC kanamasında etkisizdir ve arteriyel tromboz riskini artırır.",
+        "C": "Yanlış — Andeksanet alfa faktör Xa inhibitörlerini bağlayan tuzak moleküldür; dabigatrana etkisi yoktur.",
+        "D": "Yanlış — Protamin heparinin (UFH, kısmen LMWH) antidotudur; direkt trombin inhibitörünü etkilemez.",
+        "E": "Doğru — Rebound ile uyumlu tabloda (süren kanama + yeniden uzamış dTT) ikinci 5 g idarusizumab önerilir."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "dabigatran", "idarusizumab", "rebound"],
+      "zorluk": "zor",
+      "kaynak": "Garcia DA, Crowther M. Management of bleeding in patients receiving direct oral anticoagulants. UpToDate; RE-VERSE AD"
+    },
+    {
+      "id": "s13",
+      "metin": "76 yaşında kadın hasta, non-valvüler AF nedeniyle varfarin kullanmaktadır. Evde düştükten sonra gelişen baş ağrısı ve uykuya meyil nedeniyle getiriliyor; Glasgow Koma Skoru 13. Beyin BT'de sol frontoparyetal akut subdural hematom saptanıyor.\n\nTetkikler:\nINR: 3.4\nTrombosit: 188.000/µL\nKreatinin: 0.9 mg/dL\n\nAntikoagülan etkinin geri çevrilmesi için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Varfarinin kesilmesi, INR ve kiloya göre 4F-PCC ile birlikte 10 mg IV vitamin K",
+        "B": "Taze donmuş plazma 15 mL/kg ile birlikte oral 2.5 mg vitamin K",
+        "C": "Yalnızca 10 mg IV vitamin K verilip INR'nin kendiliğinden düşmesinin beklenmesi",
+        "D": "İdarusizumab 5 g IV ile INR'nin hızla normalleştirilmesi",
+        "E": "Varfarinin kesilip 24 saat sonra INR'nin yeniden ölçülmesi, ek tedavi verilmemesi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Varfarinle ilişkili hayatı tehdit eden kanamada (kafa içi) hızlı reversiyon için 4F-PCC ile birlikte kalıcı etki için yavaş IV vitamin K verilir.",
+      "aciklama_detay": "Kafa içi kanama, VKA altında en ağır kanama tipidir ve hematom büyümesini önlemek için INR dakikalar içinde düzeltilmelidir.\n\n4F-PCC (faktör II, VII, IX, X) INR'yi dakikalar içinde düzeltir; dozu INR ve vücut ağırlığına göre ayarlanır. Ancak PCC'deki faktörlerin yarı ömrü sınırlıdır (özellikle faktör VII), varfarinin etkisi ise günlerce sürer. Bu nedenle karaciğerde fonksiyonel faktör sentezini yeniden başlatmak için eş zamanlı 5–10 mg yavaş IV vitamin K verilir; yalnız PCC verilirse INR saatler içinde yeniden yükselir (rebound).\n\nTaze donmuş plazma büyük hacim gerektirir, çözülme ve kan grubu uyumu nedeniyle gecikir ve INR'yi PCC kadar hızlı düzeltmez; yalnızca PCC'ye ulaşılamıyorsa kullanılır. Oral vitamin K acil kanamada yavaştır. Tek başına IV vitamin K'nın etkisi 1–2 saatte başlasa da INR'yi düzeltmesi 12–24 saat sürer; kafa içi kanamada kabul edilemez gecikmedir.",
+      "secenekAciklamalari": {
+        "A": "Doğru — Hızlı düzeltme için 4F-PCC, kalıcı etki ve rebound'u önlemek için eş zamanlı 10 mg yavaş IV vitamin K.",
+        "B": "Yanlış — TDP hacim yükü getirir ve INR'yi geç düzeltir; oral vitamin K acil kanamada yavaştır.",
+        "C": "Yanlış — IV vitamin K'nın etkisi saatler sürer; kafa içi kanamada hızlı düzeltme için PCC gereklidir.",
+        "D": "Yanlış — İdarusizumab yalnızca dabigatranın antidotudur; VKA etkisini geri çevirmez.",
+        "E": "Yanlış — Varfarinin yarı ömrü uzundur (36–42 saat); INR kendiliğinden günler içinde düşer ve hematom büyür."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "varfarin", "4F-PCC", "kafa içi kanama"],
+      "zorluk": "kolay",
+      "kaynak": "MediSea Kanonik İçerik — Antikoagülasyon Stratejileri (varfarin reversiyonu); Garcia DA. Management of warfarin-associated bleeding or supratherapeutic INR. UpToDate"
+    },
+    {
+      "id": "s14",
+      "metin": "74 yaşında erkek hasta, sağ kolda güçsüzlük ve disfazi ile başvuruyor. MR'da sol orta serebral arterin yüzeyel kortikal dal alanında yaklaşık 2 cm'lik akut iskemik infarkt saptanıyor; NIHSS 6. Monitorizasyonda daha önce bilinmeyen atriyal fibrilasyon görülüyor; CHA2DS2-VASc 5. Trombolitik almamış. 24. saatte tekrarlanan BT'de hemorajik transformasyon yok; kan basıncı 150/85 mmHg.\n\nBu hastada oral antikoagülasyonun zamanlaması için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Hemen IV unfraksiyone heparin infüzyonu başlanıp 7. günde DOAC'a geçilmesi",
+        "B": "En az 14 gün beklenmesi ve bu sürede hiçbir antitrombotik verilmemesi",
+        "C": "Heparin köprüsü olmadan DOAC'ın erken (yaklaşık 48 saat – 4. gün arasında) başlanması",
+        "D": "21 gün aspirin + klopidogrel, ardından 3. ayda oral antikoagülana geçilmesi",
+        "E": "Terapötik doz LMWH'nin hemen başlanıp taburculukta DOAC'a geçilmesi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Hafif-orta iskemik inme sonrası AF'de DOAC'ın erken (≤4 gün) başlanması güvenli ve etkilidir (ELAN, CATALYST); parenteral heparin köprüsü kanamayı artırır ve önerilmez.",
+      "aciklama_detay": "İnme sonrası AF'de antikoagülasyon zamanlaması, tekrarlayan iskemik inme riski ile hemorajik transformasyon riskinin dengesine dayanır. Eski '1-3-6-12 gün' kuralı randomize kanıtla güncellenmiştir.\n\nELAN çalışmasında küçük-orta infarktta 48 saat içinde, büyük infarktta 6.–7. günde başlanan DOAC, geç başlamaya kıyasla iskemik olayları azaltırken semptomatik kafa içi kanamayı artırmamıştır. START, TIMING, ELAN ve OPTIMAS'ı havuzlayan CATALYST meta-analizinde erken başlama (≤4 gün), geç başlamaya (≥5 gün) göre 30 günlük bileşik sonlanımı (iskemik inme, semptomatik intraserebral kanama, sınıflanamayan inme) azaltmıştır.\n\nErken dönemde terapötik IV UFH ya da LMWH, tekrarlayan inmeyi azaltmadan semptomatik kafa içi kanamayı artırdığından önerilmez. OAC 48 saatten fazla gecikecekse arada aspirin verilir, OAC başlanınca kesilir. AF kaynaklı inmede ikili antiplatelet, OAC'nin yerini tutmaz.\n\nKlinik inci: Geniş infarkt, kontrolsüz hipertansiyon ya da hemorajik transformasyon varsa başlama ertelenir ve başlamadan önce görüntüleme tekrarlanır.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Erken terapötik heparin inme nüksünü azaltmadan semptomatik kafa içi kanamayı artırır.",
+        "B": "Yanlış — Hafif-orta infarktta 14 gün beklemek erken nüks riskini gereksiz yere uzatır; bu süre yalnızca geniş infarkt/kanama durumunda gündeme gelir.",
+        "C": "Doğru — Küçük-orta infarktta, hemorajik transformasyon yoksa DOAC erken ve köprüsüz başlanır.",
+        "D": "Yanlış — İkili antiplatelet tedavi kardiyoembolik inme önlenmesinde OAC'nin yerini tutmaz; 3 ay beklemek yüksek nüks riski demektir.",
+        "E": "Yanlış — Terapötik LMWH, erken dönemde parenteral köprülemenin taşıdığı kafa içi kanama riskini aynen taşır."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "iskemik inme", "atriyal fibrilasyon", "ELAN"],
+      "zorluk": "orta",
+      "kaynak": "ELAN (Fischer ve ark., NEJM 2023); CATALYST meta-analizi — MediSea Kanonik İçerik: İnme Sonrası Gizli AF"
+    },
+    {
+      "id": "s15",
+      "metin": "64 yaşında kadın hasta, 10 yıl önce takılmış mekanik mitral kapak nedeniyle varfarin kullanmaktadır (hedef INR 2.5–3.5). Semptomatik kolelitiazis nedeniyle elektif laparoskopik kolesistektomi planlanıyor. Son INR 3.0; kreatinin klerensi 84 mL/dk; kanama öyküsü yok.\n\nBu hastada perioperatif antikoagülasyon yönetimi için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Varfarinin ameliyat sabahı kesilmesi; köprüleme gerekmez",
+        "B": "Varfarinin 5 gün önce kesilip terapötik LMWH (ya da UFH) ile köprüleme yapılması; son LMWH dozunun ameliyattan yaklaşık 24 saat önce verilmesi",
+        "C": "Varfarinden apiksabana geçilip ameliyattan 48 saat önce apiksabanın kesilmesi",
+        "D": "Varfarinin 5 gün önce kesilmesi; BRIDGE çalışmasına göre köprüleme yapılmaması",
+        "E": "Varfarine ara verilmeden INR 2.5–3.5 aralığında ameliyata alınması"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Mekanik mitral kapak, VKA kesildiğinde köprüleme gerektiren en yüksek tromboembolik risk grubudur; varfarin 5 gün önce kesilir, terapötik heparin/LMWH ile köprülenir.",
+      "aciklama_detay": "Perioperatif antikoagülasyon kararında iki eksen vardır: işlemin kanama riski ve hastanın tromboembolik riski. Mekanik mitral kapak (ayrıca eski tip kafesli-tek diskli aort kapağı, son 3 ayda inme/GİA, son 3 ayda VTE) VKA kesildiğinde köprüleme gerektiren yüksek risk grubundadır.\n\nUygulama: varfarin ameliyattan 5 gün önce kesilir (hedef ameliyat günü INR <1.5). INR terapötik aralığın altına indiğinde terapötik doz LMWH (ya da böbrek yetmezliğinde UFH infüzyonu) başlanır; son LMWH dozu ameliyattan yaklaşık 24 saat önce verilir. Ameliyat sonrası hemostaz sağlanınca varfarin 12–24 saat içinde yeniden başlanır; terapötik LMWH yüksek kanama riskli işlemlerde 48–72 saat ertelenir.\n\nBRIDGE çalışması köprülemenin AF'de gereksiz olduğunu göstermiştir, ancak mekanik kapaklı hastalar çalışmaya alınmamıştır; sonucu bu gruba taşınamaz. DOAC'lar mekanik kapakta kontrendikedir (RE-ALIGN, PROACT Xa). Terapötik INR ile karın cerrahisi kabul edilemez kanama riski taşır.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Varfarinin yarı ömrü uzundur; ameliyat sabahı kesilirse INR ameliyatta hâlâ terapötiktir. Mekanik mitral kapakta köprüleme de gerekir.",
+        "B": "Doğru — Yüksek tromboembolik riskli mekanik mitral kapakta 5 gün önce kesme + terapötik LMWH/UFH köprüleme standarttır.",
+        "C": "Yanlış — DOAC'lar mekanik kapakta kontrendikedir (RE-ALIGN'da kapak trombozu ve kanama arttı).",
+        "D": "Yanlış — BRIDGE yalnızca AF hastalarını kapsar; mekanik kapaklı hastalar dışlanmıştır.",
+        "E": "Yanlış — Terapötik INR ile karın cerrahisi kabul edilemez kanama riski taşır."
+      },
+      "etiketler": ["hematoloji", "antikoagülasyon", "mekanik kapak", "köprüleme", "perioperatif yönetim"],
+      "zorluk": "orta",
+      "kaynak": "Douketis JD, Lip GYH. Perioperative management of patients receiving anticoagulants. UpToDate; BRIDGE (Douketis ve ark., NEJM 2015); ACC/AHA 2020 kapak hastalığı kılavuzu"
     }
   ]
 }

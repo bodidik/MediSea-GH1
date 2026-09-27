@@ -396,6 +396,66 @@
       ],
       "zorluk": "zor",
       "kaynak": "MediSea Kanonik İçerik — Endokrinoloji / Kalsinörin İnhibitörü Alternatifi İmmünsüpresif Stratejiler"
+    },
+    {
+      "id": "s14",
+      "metin": "Kırk dört yaşında erkek hasta, 14 ay önce canlı vericiden böbrek nakli olmuş. Nakil öncesinde 6 yıl hemodiyaliz almış ve sekonder hiperparatiroidi için sinakalset ile kalsitriol kullanmış; ikisi de nakilden sonra kesilmiş. Takrolimus, mikofenolat mofetil ve prednizolon 5 mg/gün kullanıyor.\n\nTetkikler:\nKreatinin: 1.3 mg/dL, eGFR: 62 mL/dk/1.73 m²\nDüzeltilmiş kalsiyum: 11.3 mg/dL ↑ (nakil sonrası 3. ayda 11.0)\nFosfor: 2.0 mg/dL ↓\nPTH: 410 pg/mL ↑ (nakil sonrası 3. ayda 520)\n25(OH)D: 32 ng/mL\nDXA: femur boynu T-skoru −2.6, lomber T-skoru −1.9\nBoyun USG: dört paratiroid bezinde büyüme\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "IV zoledronik asit verilmesi; hem hiperkalsemiyi hem kemik kaybını kalıcı olarak düzeltir.",
+        "B": "PTH'yi baskılamak için kalsitriol yeniden başlanıp dozu artırılması.",
+        "C": "Nakil sonrası hiperparatiroidi kendiliğinden gerilediği için 2 yıl daha izlem.",
+        "D": "Subtotal paratiroidektomi.",
+        "E": "Hiperkalsemi akut rejeksiyonu düşündürdüğü için prednizolon dozunun artırılması."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Nakilden 1 yıl sonra süren PTH bağımlı hiperkalsemi + hipofosfatemi = persistan (tersiyer) hiperparatiroidi. Kemik kaybı eşlik ediyorsa kesin tedavi paratiroidektomidir; sinakalset cerrahiye aday olmayanlarda alternatiftir.",
+      "aciklama_detay": "Uzun süre diyaliz alan hastalarda paratiroid bezleri hiperplazik ve çoğu kez nodüler hale gelir; başarılı nakilden sonra kalsiyum, fosfor ve kalsitriol dengesi düzelse de bezler otonom salgıyı sürdürebilir. Nakil sonrası hiperkalsemi ve hipofosfatemi (PTH'nin fosfatürik etkisi) ilk aylarda sıktır ve çoğu hastada ilk yıl içinde geriler; 12 ayı aşan hiperkalsemi ise persistan (tersiyer) hiperparatiroidi olarak kabul edilir. Bu tablo greft fonksiyonunu (nefrokalsinoz, tübülointerstisyel hasar), kemik kütlesini ve kırık riskini olumsuz etkiler. Nakil sonrası kemik kaybının sebepleri arasında glukokortikoid ve kalsinörin inhibitörlerinin yanında süregelen hiperparatiroidi de vardır; kaynağı düzeltilmeden verilen antirezorptif tedavi sonucu kalıcı değiştirmez. Randomize bir çalışmada subtotal paratiroidektomi, sinakalsete göre 12. ayda normokalsemiyi daha sık sağlamış ve femur boynu KMY'sini iyileştirmiştir; sinakalset nakilde endikasyon dışıdır ve cerrahiye aday olmayanlarda seçenektir. Kalsitriol kalsiyumu daha da yükseltir. Hiperkalsemi rejeksiyon bulgusu değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Bisfosfonat PTH kaynaklı hiperkalsemiyi geçici olarak düşürür ama nedeni ortadan kaldırmaz; süregelen hiperparatiroidi kemik kaybını sürdürür.",
+        "B": "YANLIS — Hasta zaten hiperkalsemiktir; kalsitriol bağırsaktan kalsiyum emilimini artırarak hiperkalsemiyi ve nefrokalsinoz riskini ağırlaştırır.",
+        "C": "YANLIS — Nakil sonrası hiperparatiroidinin çoğu ilk yılda geriler; 14. ayda süren hiperkalsemi ve femurda osteoporoz beklemenin süresinin dolduğunu gösterir.",
+        "D": "DOGRU — 12 ayı aşan persistan hiperparatiroidi, hiperkalsemi ve kemik kaybında subtotal paratiroidektomi kesin tedavidir.",
+        "E": "YANLIS — Greft fonksiyonu stabildir; hiperkalsemi rejeksiyon bulgusu değildir ve glukokortikoid artışı kemik kaybını hızlandırır."
+      },
+      "etiketler": [
+        "Böbrek Nakli",
+        "Tersiyer Hiperparatiroidi",
+        "Paratiroidektomi",
+        "Hiperkalsemi",
+        "Nakil Sonrası Kemik Kaybı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "KDIGO 2017 KBH-MKB Kılavuz Güncellemesi; Konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s15",
+      "metin": "Elli sekiz yaşında erkek hasta, 5 ay önce MASH ilişkili siroz nedeniyle karaciğer nakli olmuş. Takrolimus ve prednizolon (şu an 7.5 mg/gün, azaltılıyor) kullanıyor; kalsiyum ve D vitamini alıyor. Bir haftadır sırt ağrısı var; belirgin bir travma tanımlamıyor.\n\nTetkikler:\nNakil öncesi DXA: lomber T-skoru −1.4, femur boynu −1.2\nŞimdiki DXA: lomber T-skoru −1.7, femur boynu −1.5\nTorakolomber grafi: T12'de yeni, %30 yükseklik kaybı gösteren kompresyon kırığı\neGFR: 68 mL/dk/1.73 m², kalsiyum: 9.2 mg/dL, 25(OH)D: 34 ng/mL\nTotal testosteron: 420 ng/dL\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "T-skoru osteoporoz eşiğinin üstünde olduğundan kalsiyum ve D vitaminiyle devam edilir, DXA 1 yıl sonra tekrarlanır.",
+        "B": "Düşük enerjili vertebra kırığı KMY'den bağımsız tedavi endikasyonudur; bisfosfonat (ör. IV zoledronik asit) başlanır.",
+        "C": "Kemik kaybını azaltmak için takrolimus siklosporine değiştirilir.",
+        "D": "Kırık ağrısı ve yeni kırıkların önlenmesi için birinci seçenek intranazal kalsitonindir.",
+        "E": "Kırığın sebebi prednizolon olduğundan glukokortikoid tamamen kesilene kadar ilaç tedavisi ertelenir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Glukokortikoid kullanan nakil hastasında kırık, postmenopozal osteoporozdakinden daha yüksek KMY düzeylerinde olur; düşük enerjili vertebra kırığı T-skorundan bağımsız olarak farmakolojik tedavi endikasyonudur.",
+      "aciklama_detay": "Nakil sonrası ilk 6–12 ay, yüksek doz glukokortikoid ve kalsinörin inhibitörü nedeniyle kemik kaybının ve kırık riskinin en yüksek olduğu dönemdir; kayıp özellikle trabeküler kemikte (vertebra) belirgindir. Glukokortikoidler kemik kalitesini KMY'nin yansıttığından daha fazla bozar (osteoblast ve osteosit apoptozu, formasyonun baskılanması); bu yüzden glukokortikoid kullananlarda kırıklar osteopenik, hatta normal KMY düzeylerinde görülür ve T-skoru güven verici bir ölçüt değildir. Düşük enerjili (frajilite) vertebra kırığı, KMY'den bağımsız olarak osteoporoz tanısı ve tedavi endikasyonudur. eGFR 30'un üzerinde olduğundan bisfosfonat uygundur; IV zoledronik asit, nakil sonrası çoklu ilaç yükü taşıyan hastada uyum açısından avantajlıdır. Teriparatid glukokortikoid ilişkili osteoporozda güçlü bir alternatiftir; denosumab da seçenektir ancak kesilince rebound kırık riski nedeniyle ardından bisfosfonat gerekir. Glukokortikoid en düşük etkili doza indirilir, ama antiosteoporotik tedavi bunun tamamlanmasını beklemez. Testosteron normal olduğundan androjen replasmanı endikasyonu yoktur. Siklosporinin kemik üzerindeki olumsuz etkisi takrolimustan daha belirgindir. Kalsitonin zayıf antikırık etkinliği ve uzun süreli kullanımda malignite sinyali nedeniyle osteoporoz tedavisinde önerilmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Glukokortikoid kullanıcısında kırık daha yüksek KMY'de olur; frajilite kırığı varken T-skoruna bakarak tedaviyi ertelemek yeni kırık riskini göze almaktır.",
+        "B": "DOGRU — Frajilite vertebra kırığı KMY'den bağımsız tedavi endikasyonudur; eGFR uygun, bisfosfonat birinci seçenektir.",
+        "C": "YANLIS — Kalsinörin inhibitörleri arasında kemiğe daha zararlı olan siklosporindir; değişiklik ters yöndedir.",
+        "D": "YANLIS — Kalsitoninin kırık önleme etkinliği zayıftır ve uzun süreli kullanımı önerilmez; osteoporozda birinci seçenek değildir.",
+        "E": "YANLIS — Glukokortikoid azaltılırken de kırık riski yüksektir; tedaviyi steroidin kesilmesine bağlamak en riskli dönemi korumasız bırakır."
+      },
+      "etiketler": [
+        "Karaciğer Nakli",
+        "Glukokortikoid Osteoporozu",
+        "Frajilite Kırığı",
+        "Bisfosfonat",
+        "KMY Tuzağı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ACR 2022 Glukokortikoid İlişkili Osteoporoz Kılavuzu; Konu anlatımı (MediSea premium)"
     }
   ]
 }

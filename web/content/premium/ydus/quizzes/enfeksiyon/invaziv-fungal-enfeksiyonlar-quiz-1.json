@@ -303,6 +303,151 @@
       ],
       "zorluk": "orta",
       "kaynak": "Husain & Camargo Am J Transplant 2019; Pappas et al. Clin Infect Dis 2016"
+    },
+    {
+      "id": "s11",
+      "metin": "58 yaşında erkek; kolon rezeksiyonu sonrası yoğun bakımda total parenteral nütrisyon alırken ateş gelişiyor. İki set kan kültüründe C. albicans üreyince santral venöz kateter ilk gün çıkarılıyor ve kaspofungin başlanıyor. Nötropenisi yok.\n\n5. gün:\nAteş yok, hemodinami stabil, oral alımı var\n2. günden beri alınan kontrol kan kültürleri: üreme yok\nİzolat flukonazole duyarlı\n\nBu aşamada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kaspofungini ilk negatif kültürden itibaren 6 hafta sürdürmek",
+        "B": "Kültürler negatifleştiği için antifungali 7. günde kesmek",
+        "C": "Flukonazole geçmek, dilate fundus muayenesi yaptırmak ve tedaviyi ilk negatif kültürden itibaren 14 güne tamamlamak",
+        "D": "Kaspofungini kesip vorikonazole geçmek",
+        "E": "Üremeyi kateter kolonizasyonu kabul edip antifungali hemen kesmek"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Komplike olmayan kandidemide klinik olarak stabil, kültürü negatifleşmiş ve flukonazole duyarlı izolatı olan hastada 5–7. günde flukonazole geçilir; göz muayenesi yapılır ve tedavi ilk negatif kültürden sonra 14 gün sürer.",
+      "aciklama_detay": "IDSA 2016 kandidiyazis kılavuzuna göre kandidemide başlangıç tedavisi ekinokandindir. Klinik olarak stabil, izlem kültürleri negatifleşmiş ve izolatı flukonazole duyarlı hastada genellikle 5–7 gün içinde flukonazole geçiş önerilir. Metastatik odak yoksa tedavi süresi, kan kültürlerinin negatifleştiği ilk günden ve semptomların düzelmesinden itibaren 14 gündür. Nötropenik olmayan hastada Candida endoftalmitini dışlamak için ilk hafta içinde dilate fundus muayenesi yapılmalıdır; endoftalmit saptanırsa süre ve ilaç seçimi değişir. Santral kateterin erken çıkarılması kaynak kontrolünün temelidir. Candida kan kültüründe asla kontaminasyon ya da kolonizasyon sayılmaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — 6 haftalık tedavi endokardit, osteomiyelit gibi komplike tutulumlar içindir; komplike olmayan kandidemide gereksizdir.",
+        "B": "YANLIS — 7 gün yetersizdir; süre ilk negatif kültürden itibaren 14 gündür ve göz muayenesi henüz yapılmamıştır.",
+        "C": "DOGRU — Stabil hastada duyarlı izolatla flukonazole geçiş, dilate fundus muayenesi ve ilk negatif kültürden sonra 14 gün.",
+        "D": "YANLIS — Vorikonazol ancak C. krusei ya da vorikonazole duyarlı C. glabrata gibi özel durumlarda oral geçiş seçeneğidir; flukonazole duyarlı C. albicans'ta gereksiz etkileşim ve toksisite getirir.",
+        "E": "YANLIS — Kan kültüründe Candida üremesi her zaman gerçek enfeksiyon kabul edilir ve tedavi edilir."
+      },
+      "etiketler": [
+        "Kandidemi",
+        "Flukonazole Geçiş",
+        "Tedavi Süresi",
+        "Candida Endoftalmiti"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Pappas et al. Clin Infect Dis 2016 (IDSA Candidiasis Guideline)"
+    },
+    {
+      "id": "s12",
+      "metin": "49 yaşında kadın; AML nedeniyle allojenik kök hücre naklinin 40. gününde, flukonazol profilaksisi altındayken ateş ve öksürük gelişiyor. Kalsinörin inhibitörü ile GVHH profilaksisi alıyor; aynı zamanda QT süresini uzatan ondansetron ve bir makrolid kullanıyor.\n\nTetkikler:\nToraks BT: sağ üst lobda halo işaretli 2 cm nodül\nSerum galaktomannan indeksi 2,1\nEKG: QTc 510 ms\nKaraciğer ve böbrek fonksiyonları normal\n\nBu hasta için en uygun başlangıç antifungal tedavisi hangisidir?",
+      "secenekler": {
+        "A": "Vorikonazol",
+        "B": "Kaspofungin monoterapisi",
+        "C": "Flukonazol dozunun 800 mg/gün'e artırılması",
+        "D": "Amfoterisin B deoksikolat",
+        "E": "İzavukonazol"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Olası invaziv aspergillozda birinci basamak vorikonazol ya da izavukonazoldür; QTc uzamış hastada QT'yi kısaltan ve etkileşim yükü daha az olan izavukonazol tercih edilir.",
+      "aciklama_detay": "Halo işaretli nodül ve yüksek serum galaktomannan, nakil alıcısında olası invaziv aspergillozu düşündürür. IDSA 2016 kılavuzunda birinci basamak vorikonazoldür; SECURE çalışmasında izavukonazol vorikonazole göre daha az hepatobiliyer, göz ve deri yan etkisiyle eşdeğer (non-inferior) bulunmuştur ve birinci basamak alternatif kabul edilir. Vorikonazol QT uzaması yapar; bazal QTc'si 510 ms olan ve QT uzatan başka ilaçlar kullanan hastada torsades de pointes riski belirgindir. İzavukonazol ise QT'yi kısaltır (ailesel kısa QT sendromunda kontrendikedir) ve kalsinörin inhibitörleriyle etkileşimi daha öngörülebilirdir; yine de kalsinörin inhibitörü düzeyi izlenmelidir. Ekinokandinler invaziv aspergillozda birinci basamak monoterapi olarak önerilmez; flukonazolün küflere etkisi yoktur; amfoterisin B deoksikolat nefrotoksisitesi nedeniyle lipid formülasyonlarının gerisinde kalır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Normalde birinci basamaktır ancak QTc 510 ms ve QT uzatan eşlik eden ilaçlar varken aritmi riski daha düşük seçenek varken tercih edilmez.",
+        "B": "YANLIS — Ekinokandinler invaziv aspergillozda birinci basamak monoterapi değildir; kurtarma ya da kombinasyonda kullanılır.",
+        "C": "YANLIS — Flukonazolün Aspergillus ve diğer küflere etkinliği yoktur; hasta zaten flukonazol altında enfeksiyon geliştirmiştir.",
+        "D": "YANLIS — Deoksikolat formu nefrotoksisitesi nedeniyle önerilmez; kalsinörin inhibitörü alan nakil hastasında böbrek riski daha da artar.",
+        "E": "DOGRU — Aspergillozda birinci basamak alternatif; QT'yi kısaltır ve bu hastanın aritmi riskine uygundur."
+      },
+      "etiketler": [
+        "İnvaziv Aspergilloz",
+        "İzavukonazol",
+        "QT Uzaması",
+        "Kök Hücre Nakli"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Patterson et al. Clin Infect Dis 2016 (IDSA Aspergillosis Guideline); Maertens et al. Lancet 2016 (SECURE)"
+    },
+    {
+      "id": "s13",
+      "metin": "52 yaşında erkek; düzensiz insülin kullanan tip 2 diyabet hastası diyabetik ketoasidozla yatırılıyor. 3 gündür sağ yüzde ağrı, sağ göz çevresinde şişlik ve burun tıkanıklığı var.\n\nFizik muayene:\nSağ periorbital ödem, oftalmopleji\nSert damakta siyah nekrotik eskar\n\nTetkikler:\nParanazal sinüs BT: sağ maksiller ve etmoid sinüste opasite, kemik erozyonu\nEndoskopik biyopsi: dik açıyla dallanan, geniş, septasız hifler; doku invazyonu\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "İV vorikonazol başlayıp ketoasidozu düzeltmek",
+        "B": "İV kaspofungin başlayıp cerrahiyi yanıta göre planlamak",
+        "C": "Tür tayini ve duyarlılık sonucu çıkana dek antifungali ertelemek",
+        "D": "Acil cerrahi debridman, yüksek doz lipozomal amfoterisin B ve ketoasidozun düzeltilmesi",
+        "E": "Yalnızca geniş cerrahi debridman; antifungal ancak kültür üremesi olursa"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Ketoasidozlu diyabet hastasında nekrotik eskarla seyreden rinoorbital tablo ve septasız geniş hifler mukormikozdur; tedavi acil cerrahi debridman + yüksek doz lipozomal amfoterisin B + altta yatan hastalığın düzeltilmesidir.",
+      "aciklama_detay": "Rino-orbito-serebral mukormikoz, özellikle ketoasidozdaki diyabetiklerde hızla ilerleyen anjiyoinvaziv bir enfeksiyondur; nekrotik eskar, kemik erozyonu ve oftalmopleji tipiktir. Histopatolojide geniş, septasız ya da seyrek septalı, dik açıyla dallanan hifler tanı koydurur. ECMM/MSG 2019 küresel kılavuzuna göre birinci basamak tedavi yüksek doz lipozomal amfoterisin B'dir (5–10 mg/kg/gün); bununla birlikte erken ve gerekirse tekrarlanan cerrahi debridman sağkalım için belirleyicidir. Ketoasidoz ve hiperglisemi hızla düzeltilir, mümkünse immünsüpresyon azaltılır. Antifungal tedavinin gecikmesi mortaliteyi artırır; kültür sıklıkla negatif kalır, histopatoloji yeterlidir. Vorikonazol ve ekinokandinlerin Mucorales'e etkinliği yoktur; hatta vorikonazol profilaksisi altında mukormikoz gelişebilir. İzavukonazol ve posakonazol alternatif ya da idame seçenekleridir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Vorikonazolün Mucorales'e etkinliği yoktur; cerrahi de atlanmıştır.",
+        "B": "YANLIS — Ekinokandinler Mucorales'e etkisizdir ve cerrahiyi ertelemek hastalığın hızla yayılmasına yol açar.",
+        "C": "YANLIS — Histopatoloji tanıyı koydurmuştur; kültür sıklıkla negatiftir ve tedaviyi geciktirmek mortaliteyi artırır.",
+        "D": "DOGRU — Mukormikozun üç ayağı: acil cerrahi debridman, yüksek doz lipozomal amfoterisin B ve ketoasidoz/risk faktörünün düzeltilmesi.",
+        "E": "YANLIS — Cerrahi tek başına yetersizdir; tanı histopatolojiyle konmuştur ve antifungal hemen başlanmalıdır."
+      },
+      "etiketler": [
+        "Mukormikoz",
+        "Diyabetik Ketoasidoz",
+        "Lipozomal Amfoterisin B",
+        "Cerrahi Debridman"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Cornely et al. Lancet Infect Dis 2019 (ECMM/MSG Global Mucormycosis Guideline)"
+    },
+    {
+      "id": "s14",
+      "metin": "34 yaşında erkek; yeni tanı HIV enfeksiyonu (CD4 25/µL, antiretroviral tedavi almıyor), 2 haftadır giderek artan baş ağrısı ve bulanık görme ile başvuruyor.\n\nLomber ponksiyon:\nAçılış basıncı 34 cmH₂O\nBOS kriptokok antijeni pozitif, mürekkep boyamasında kapsüllü mayalar\n\nLipozomal amfoterisin B + flusitozin indüksiyonu başlanıyor. 2. günde baş ağrısı ve bulanık görme sürüyor; tekrarlanan ponksiyonda açılış basıncı 32 cmH₂O. Beyin BT'de kitle ya da hidrosefali yok.\n\nKafa içi basınç yönetiminde en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "Asetazolamid başlamak",
+        "B": "Deksametazon başlamak",
+        "C": "Mannitol infüzyonu",
+        "D": "Hemen ventriküloperitoneal şant takılması",
+        "E": "Açılış basıncı <20 cmH₂O'ya ya da yarısına inene dek günlük terapötik lomber ponksiyon"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Kriptokok menenjitinde yüksek kafa içi basınç (≥25 cmH₂O ve semptom) tekrarlayan terapötik lomber ponksiyonla düşürülür; asetazolamid, kortikosteroid ve mannitol önerilmez.",
+      "aciklama_detay": "Kriptokok menenjitinde kafa içi basınç artışı erken mortalitenin ve görme kaybının başlıca nedenidir; mekanizma araknoid villuslarda BOS emiliminin kapsüler polisakkaritle engellenmesidir, bu yüzden hidrosefali olmadan da basınç yüksektir. IDSA 2010 kılavuzu ve DSÖ 2022 önerilerine göre açılış basıncı ≥25 cmH₂O olan ve semptomu süren hastada, basınç %50 azalana ya da <20 cmH₂O olana dek BOS boşaltılır ve bu işlem basınç ile semptomlar düzelene dek günlük tekrarlanır. Tekrarlanan ponksiyonlara rağmen yüksek basınç sürerse lomber dren ya da ventriküloperitoneal şant düşünülür. Asetazolamid ve mannitolün yararı gösterilmemiştir; deksametazon ise HIV ilişkili kriptokok menenjitinde daha kötü sonuçlarla ilişkili bulunmuştur. Antiretroviral tedavi, immün yeniden yapılanma sendromu riski nedeniyle antifungal başlangıcından 4–6 hafta sonraya ertelenir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Asetazolamidin yararı gösterilmemiş, asidoz ve elektrolit bozukluğu nedeniyle zararlı bulunmuştur.",
+        "B": "YANLIS — HIV ilişkili kriptokok menenjitinde deksametazon fungal klirensi yavaşlatır ve kötü sonuçlarla ilişkilidir; önerilmez.",
+        "C": "YANLIS — Mannitolün bu tabloda yeri yoktur; basınç artışının mekanizması emilim bozukluğudur.",
+        "D": "YANLIS — Şant, tekrarlanan terapötik ponksiyonlara rağmen basıncı kontrol edilemeyen hastalar içindir; ilk basamak değildir.",
+        "E": "DOGRU — Semptomatik yüksek basınçta günlük terapötik lomber ponksiyon, basınç <20 cmH₂O ya da %50 azalana dek."
+      },
+      "etiketler": [
+        "Kriptokok Menenjiti",
+        "Kafa İçi Basınç",
+        "Terapötik Lomber Ponksiyon",
+        "HIV"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Perfect et al. Clin Infect Dis 2010 (IDSA Cryptococcal Disease Guideline); WHO 2022 Kriptokok Hastalığı Kılavuzu"
+    },
+    {
+      "id": "s15",
+      "metin": "71 yaşında kadın; C. auris salgını bildirilen bir uzun süreli bakım merkezinden yoğun bakıma nakledilmiş. Santral venöz kateteri olan hastada 3. günde ateş gelişiyor; kan kültüründe MALDI-TOF ile C. auris tanımlanıyor. Duyarlılık sonucu henüz yok. Hemodinami stabil.\n\nBu hastanın tedavisi ve enfeksiyon kontrolü açısından en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Flukonazol 800 mg yükleme ve 400 mg/gün idame; standart önlemler",
+        "B": "Ekinokandin; kateter yerinde bırakılır, çevre temizliği kuaterner amonyum bileşikleriyle",
+        "C": "Ekinokandin, kateterin çıkarılması, tek kişilik odada temas izolasyonu ve klor bazlı ya da sporisidal ajanlarla çevre dezenfeksiyonu",
+        "D": "Vorikonazol; kolonizasyon mukozal olduğundan temas izolasyonu gereksiz",
+        "E": "Flusitozin monoterapisi; temas izolasyonu"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "C. auris kandidemisinde ampirik tedavi ekinokandindir; kateter çıkarılır, hasta temas izolasyonuna alınır ve çevre, kuaterner amonyum yerine C. auris'e etkinliği gösterilmiş (klor bazlı/sporisidal) ajanlarla dezenfekte edilir.",
+      "aciklama_detay": "C. auris izolatlarının büyük çoğunluğu flukonazole dirençlidir ve bir kısmı amfoterisin B'ye de dirençli olabilir; bu nedenle duyarlılık sonucu beklenirken ekinokandin başlanır. Kaynak kontrolü için santral kateter çıkarılır. Tedavi altında kültür pozitifliği 5 günden uzun sürerse ekinokandin direnci araştırılmalı, gerekirse lipozomal amfoterisin B'ye geçilmelidir. C. auris deride kalıcı kolonize olur, çevreye saçılır ve yüzeylerde haftalarca canlı kalır; bu yüzden tek kişilik oda ve temas izolasyonu gerekir. Yaygın kullanılan kuaterner amonyum bileşikleri yetersiz kalabildiğinden çevre dezenfeksiyonunda klor bazlı ya da C. auris'e etkinliği kanıtlanmış sporisidal ajanlar önerilir. Flusitozin monoterapisi hızla direnç geliştirdiği için kullanılmaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — C. auris izolatlarının çoğu flukonazole dirençlidir; ampirik tedavide kullanılmaz, standart önlemler de yayılımı önlemez.",
+        "B": "YANLIS — İlaç doğru ancak kateter kaynak kontrolü için çıkarılmalıdır ve kuaterner amonyum bileşikleri C. auris'e karşı yetersiz kalabilir.",
+        "C": "DOGRU — Ekinokandin + kateterin çıkarılması + tek kişilik oda ve temas izolasyonu + etkinliği kanıtlanmış ajanlarla çevre dezenfeksiyonu.",
+        "D": "YANLIS — C. auris mukozadan çok deride kolonize olur ve çevreye saçılır; temas izolasyonu zorunludur. Azollere direnç de sıktır.",
+        "E": "YANLIS — Flusitozin monoterapisinde direnç hızla gelişir; tek başına kullanılmaz."
+      },
+      "etiketler": [
+        "Candida auris",
+        "Ekinokandin",
+        "Temas İzolasyonu",
+        "Çevre Dezenfeksiyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "CDC Candida auris klinik ve enfeksiyon kontrol önerileri; Pappas et al. Clin Infect Dis 2016 (IDSA Candidiasis Guideline)"
     }
   ]
 }

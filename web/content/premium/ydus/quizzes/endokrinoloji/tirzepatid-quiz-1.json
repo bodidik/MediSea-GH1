@@ -303,6 +303,156 @@
       ],
       "zorluk": "zor",
       "kaynak": "ClinicalTrials.gov NCT04255433 (SURPASS-CVOT); Malhotra et al. N Engl J Med 2024 (SURMOUNT-OSA)"
+    },
+    {
+      "id": "s11",
+      "metin": "Elli yedi yaşında erkek hasta, 14 yıllık tip 2 diyabet ve obezite (VKİ 36 kg/m², 112 kg) nedeniyle izleniyor. Glimepirid 4 mg/gün ve bazal insülin glarjin 40 IU/gün kullanıyor. Son 3 ayda iki kez hafif hipoglisemi (68 ve 64 mg/dL) yaşamış; açlık glukozları 90–120 mg/dL arasında. HbA1c %7,6.\n\nKilo ve glisemik kontrol amacıyla tirzepatid 2,5 mg/hafta başlanacak.\n\nBu aşamada mevcut tedaviyle ilgili en uygun düzenleme hangisidir?",
+      "secenekler": {
+        "A": "Tirzepatid glukoza bağımlı etki gösterdiği için glimepirid ve insülinin aynı dozda sürdürülmesi",
+        "B": "Tirzepatid başlanırken bazal insülinin tümüyle kesilmesi",
+        "C": "Tirzepatidin 5 mg ile başlanıp insülin dozunun sabit tutulması",
+        "D": "İnsülinle birlikte kullanımı kontrendike olduğundan tirzepatid yerine DPP-4 inhibitörü eklenmesi",
+        "E": "Glimepiridin kesilmesi ya da belirgin azaltılması, bazal insülinin yaklaşık %10–20 azaltılıp evde glukoz ölçümüyle titre edilmesi"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Tirzepatid tek başına hipoglisemi yapmaz, ancak sülfonilüre ya da insülinle birlikte hipoglisemi riskini artırır. Özellikle hipoglisemi öyküsü olan hastada başlarken sülfonilüre kesilir ya da azaltılır, bazal insülin azaltılıp glukoz izlemine göre titre edilir.",
+      "aciklama_detay": "Tirzepatidin insülin salgılatıcı etkisi glukoza bağımlıdır; bu nedenle monoterapide hipoglisemi riski düşüktür. Buna karşılık glukozdan bağımsız insülin salgılatan sülfonilüreler ve dışarıdan verilen insülin, tirzepatidin artırdığı insülin duyarlılığı, baskılanan glukagon ve azalan besin alımıyla birleşince hipoglisemi riski belirgin artar. Prospektüs, insülin salgılatıcı ya da insülinle birlikte kullanımda bu ilaçların dozunun azaltılmasını önerir. Bu hasta zaten hipoglisemi yaşamakta ve açlık glukozu hedefin alt sınırına yakındır; en güvenli düzenleme sülfonilüreyi kesmek (ya da en azından belirgin azaltmak) ve bazal insülini yaklaşık %10–20 azaltarak açlık glukoz ölçümüne göre titre etmektir. Tirzepatid insülin tedavisine eklendiğinde (SURPASS-5) HbA1c ve kilo belirgin düşmüş, insülin gereksinimi azalmıştır; insülinle birlikte kullanım kontrendikasyon değildir. İnsülinin tümüyle kesilmesi, uzun süreli diyabeti olan ve insülin eksikliği bulunabilecek hastada hiperglisemi ve ketoz riski taşır. Başlangıç dozu 2,5 mg etkinlik için değil, gastrointestinal tolerans için seçilmiştir; hızlı doz artırma yan etkileri artırır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Glukoza bağımlı etki monoterapide geçerlidir; sülfonilüre ve insülinle birlikte hipoglisemi riski artar, hele hipoglisemi öyküsü olan bu hastada.",
+        "B": "YANLIS — Uzun süreli diyabette insülinin tümden kesilmesi hiperglisemi ve ketoz riski taşır; azaltıp titre etmek yeterlidir.",
+        "C": "YANLIS — Başlangıç dozu tolerans içindir; 5 mg ile başlamak gastrointestinal yan etkileri artırır ve hipoglisemi sorununu çözmez.",
+        "D": "YANLIS — İnsülinle birlikte kullanım kontrendike değildir; SURPASS-5 bu kombinasyonun etkinliğini göstermiştir.",
+        "E": "DOGRU — Sülfonilüre kesilir ya da azaltılır, bazal insülin azaltılıp glukoz izlemine göre titre edilir."
+      },
+      "etiketler": [
+        "Hipoglisemi Riski",
+        "Sülfonilüre",
+        "Bazal İnsülin",
+        "Doz Düzenlemesi",
+        "SURPASS-5"
+      ],
+      "zorluk": "orta",
+      "kaynak": "FDA Prescribing Information — Tirzepatide; Dahl et al. JAMA 2022 (SURPASS-5); TEMD Diabetes Mellitus Kılavuzu 2026"
+    },
+    {
+      "id": "s12",
+      "metin": "Kırk dokuz yaşında kadın hasta, 5 aydır obezite tedavisi için tirzepatid kullanıyor; iki hafta önce doz 7,5 mg'dan 10 mg'a çıkarılmış. Bir gündür sırta yayılan şiddetli epigastrik ağrı ve kusma ile acile başvuruyor. Alkol kullanmıyor.\n\nTetkikler:\nLipaz: 1150 U/L (normalin üst sınırı 60)\nTrigliserit: 180 mg/dL\nSerum Ca: 9,3 mg/dL\nALT, AST, ALP, bilirubin: normal\nBatın USG: safra kesesinde taş ya da çamur yok, koledok çapı normal\n\nBu hastada tirzepatidle ilgili en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Dozun 5 mg'a düşürülmesi ve lipaz normale dönünce tedaviye devam edilmesi",
+        "B": "Pankreatit riskinin GIP bileşenine özgü olduğu kabul edilip semaglutide geçilmesi",
+        "C": "Tirzepatidin derhal kesilmesi, akut pankreatitin standart tedavisi ve bu hastada tirzepatid ile GLP-1 reseptör agonistlerinin yeniden başlanmaması",
+        "D": "Hafif pankreatit tablosunda tirzepatide ara verilmemesi, kilo kaybının pankreatit riskini azaltacağı düşüncesiyle sürdürülmesi",
+        "E": "Lipaz yüksekliğinin bu ilaç sınıfında sık görülen asemptomatik bir bulgu olduğu kabul edilip tedavinin aynen sürdürülmesi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Tipik ağrı ve normalin üst sınırının 3 katını aşan lipaz ile akut pankreatit tanısı konur; safra taşı, hipertrigliseridemi, hiperkalsemi ve alkol dışlanmıştır. İlaç derhal kesilir ve pankreatit doğrulandığında tirzepatid ile GLP-1 reseptör agonistleri yeniden başlanmaz.",
+      "aciklama_detay": "Akut pankreatit tanısı üç ölçütün ikisiyle konur: tipik karın ağrısı, lipaz ya da amilazın normalin üst sınırının 3 katını aşması ve görüntüleme bulgusu. Bu hastada ilk ikisi vardır; en sık nedenler (safra taşı, alkol, hipertrigliseridemi, hiperkalsemi) dışlanmıştır ve tablo ilaç ilişkili pankreatit olarak değerlendirilmelidir. Tirzepatid ve GLP-1 reseptör agonistlerinin prospektüsleri, akut pankreatit şüphesinde ilacın derhal kesilmesini, tanı doğrulanırsa yeniden başlanmamasını önerir. TEMD Obezite 2024 kılavuzu da geçirilmiş pankreatiti olanlarda liraglutid, semaglutid ve tirzepatidin kullanılmamasını önerir. Risk yalnızca GIP bileşenine özgü değildir; tüm inkretin bazlı ajanlar için aynı uyarı geçerlidir, bu yüzden semaglutide geçiş uygun değildir. Bu ilaçlarla asemptomatik lipaz ve amilaz yükselmeleri görülebilir ve klinik bulgu yoksa tek başına kesme gerekçesi değildir; ancak burada klinik tablo belirgindir. Hızlı kilo kaybı ayrıca safra taşı ve kolesistit riskini artırdığından inkretin tedavisi altındaki pankreatitte biliyer neden özenle araştırılmalıdır. Hastaya kilo yönetimi için inkretin dışı seçenekler değerlendirilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Pankreatit doz azaltımıyla yönetilmez; ilaç kesilir ve doğrulanan pankreatitte yeniden başlanmaz.",
+        "B": "YANLIS — Pankreatit uyarısı tüm GLP-1 temelli ajanlar için geçerlidir; semaglutid de geçirilmiş pankreatitte önerilmez.",
+        "C": "DOGRU — Tirzepatid derhal kesilir, standart destek tedavisi verilir; doğrulanan pankreatitte tirzepatid ve GLP-1 reseptör agonistleri yeniden kullanılmaz.",
+        "D": "YANLIS — Şiddetin hafif olması ilaca devam gerekçesi değildir; pankreatit şüphesinde ilaç kesilir.",
+        "E": "YANLIS — Asemptomatik enzim yüksekliği kavramı klinik bulgusu olmayan hastalar içindir; tipik ağrı ve kusmayla birlikte 3 kat üzeri lipaz akut pankreatittir."
+      },
+      "etiketler": [
+        "Akut Pankreatit",
+        "İlaç Güvenliliği",
+        "İnkretin Tedavisi",
+        "Yeniden Başlamama",
+        "Kontrendikasyon"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "FDA Prescribing Information — Tirzepatide; TEMD Obezite Tanı ve Tedavi Kılavuzu 2024 (Bölüm 6.4)"
+    },
+    {
+      "id": "s13",
+      "metin": "Altmış sekiz yaşında kadın hasta, korunmuş ejeksiyon fraksiyonlu kalp yetersizliği (LVEF %60, NYHA II–III, NT-proBNP yüksek) ve obezite (VKİ 37 kg/m²) nedeniyle izleniyor. Diyabeti yok; empagliflozin ve furosemid kullanıyor. Kardiyoloji, tirzepatid eklenmesini tartışıyor.\n\nSUMMIT çalışmasının bu hasta grubundaki bulgularıyla ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "Tirzepatid kardiyovasküler ölüm ya da kötüleşen kalp yetersizliği olayı bileşik sonlanımını plaseboya göre azalttı ve KCCQ ile ölçülen semptom-fiziksel kapasiteyi iyileştirdi; yarar esas olarak kötüleşen kalp yetersizliği olaylarından kaynaklandı",
+        "B": "SUMMIT yalnızca düşük ejeksiyon fraksiyonlu kalp yetersizliğini içerdi; korunmuş ejeksiyon fraksiyonunda veri yoktur",
+        "C": "Tirzepatid sıvı tutulumuna yol açarak kalp yetersizliği nedeniyle hastaneye yatışları artırdı",
+        "D": "Tirzepatid kardiyovasküler mortaliteyi tek başına anlamlı azalttığı için bu hastada SGLT2 inhibitörünün yerine konmalıdır",
+        "E": "Yarar yalnızca tip 2 diyabetli alt grupta görüldü; diyabeti olmayan hastalarda etkisizdi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "SUMMIT, obezitesi olan HFpEF hastalarında tirzepatidin kardiyovasküler ölüm ya da kötüleşen kalp yetersizliği bileşik sonlanımını yaklaşık %38 azalttığını (HR ~0,62) ve semptomları iyileştirdiğini gösterdi. Yarar kötüleşen kalp yetersizliği olaylarından geldi; kardiyovasküler ölümde tek başına anlamlı fark yoktu.",
+      "aciklama_detay": "SUMMIT çalışmasına LVEF ≥%50, VKİ ≥30 kg/m² olan ve kalp yetersizliği semptomları bulunan 731 hasta alınmış; tirzepatid (15 mg'a kadar) plaseboyla karşılaştırılmıştır. Yaklaşık iki yıllık medyan izlemde kardiyovasküler ölüm ya da kötüleşen kalp yetersizliği olayı (hastaneye yatış, acil IV tedavi ya da oral diüretik yoğunlaştırması) bileşik sonlanımı tirzepatid kolunda anlamlı olarak daha az görülmüştür (HR yaklaşık 0,62). Bu fark büyük ölçüde kötüleşen kalp yetersizliği olaylarındaki azalmadan kaynaklanmış; kardiyovasküler ölüm sayısı iki kolda da az olduğundan anlamlı fark gösterilememiştir. Kansas City Kardiyomiyopati Anketi (KCCQ) klinik özet skoru ve 6 dakika yürüme mesafesi de tirzepatidle daha fazla düzelmiş, kilo ve CRP belirgin azalmıştır. Çalışmaya diyabetli ve diyabetsiz hastalar birlikte alınmıştır. Bu nedenle obezite fenotipli HFpEF'te tirzepatid, SGLT2 inhibitörünün yerine değil, onun yanına eklenebilecek bir seçenek olarak görülmektedir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Bileşik sonlanım azaldı (HR ~0,62), semptom ve fiziksel kapasite düzeldi; yarar kötüleşen kalp yetersizliği olaylarından kaynaklandı.",
+        "B": "YANLIS — SUMMIT özellikle LVEF ≥%50 ve obezitesi olan hastaları, yani korunmuş ejeksiyon fraksiyonunu inceledi.",
+        "C": "YANLIS — Tiyazolidindionların aksine tirzepatid sıvı tutulumu yapmaz; kalp yetersizliği olayları azaldı.",
+        "D": "YANLIS — Kardiyovasküler ölümde tek başına anlamlı azalma gösterilmedi; tirzepatid SGLT2 inhibitörünün yerine değil, yanına eklenen bir seçenektir.",
+        "E": "YANLIS — Çalışmaya diyabetsiz hastalar da alındı; yarar diyabet varlığıyla sınırlı değildi."
+      },
+      "etiketler": [
+        "SUMMIT",
+        "HFpEF",
+        "Obezite",
+        "Kalp Yetersizliği Olayları",
+        "KCCQ"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Packer et al. N Engl J Med 2025 (SUMMIT)"
+    },
+    {
+      "id": "s14",
+      "metin": "Elli iki yaşında erkek hasta, uzun süredir kontrolsüz tip 2 diyabet ve obezite (VKİ 33 kg/m²) nedeniyle başvuruyor. Metformin ve bazal insülin kullanıyor; HbA1c %11,2. İki yıl önce göz muayenesinde her iki gözde şiddetli nonproliferatif diyabetik retinopati saptanmış, sonrasında kontrole gitmemiş. Tirzepatid başlanması planlanıyor.\n\nBu hastada retinopatiyle ilgili en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Şiddetli retinopati tirzepatid için mutlak kontrendikasyondur; ilaç başlanmaz",
+        "B": "Retinopatinin ilerlemesini önlemek için tirzepatid hızla 15 mg'a titre edilip glukoz olabildiğince çabuk düşürülür",
+        "C": "Erken kötüleşme yalnızca insülin tedavisinde görüldüğünden göz muayenesine gerek yoktur",
+        "D": "Tedavi öncesi güncel dilate fundus muayenesi yapılır, tedavi sırasında retinopati yakından izlenir; hızlı glisemik düzelmenin retinopatiyi geçici kötüleştirebileceği bilinir",
+        "E": "Tirzepatid retinopatiyi doğrudan gerilettiği için planlanan lazer ya da anti-VEGF tedavisi ertelenebilir"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Uzun süre yüksek seyreden glukozun hızla düşürülmesi diyabetik retinopatide erken (geçici) kötüleşmeye yol açabilir. Retinopatisi olan hastada tirzepatid kontrendike değildir; tedavi öncesi güncel göz muayenesi ve tedavi sırasında yakın göz izlemi gerekir.",
+      "aciklama_detay": "Kronik hiperglisemiden sonra hızlı glisemik düzelmenin diyabetik retinopatide “erken kötüleşme”ye yol açabileceği DCCT döneminden beri bilinir; semaglutidin SUSTAIN-6 çalışmasında retinopati komplikasyonlarındaki artış da büyük ölçüde başlangıçta retinopatisi olan ve HbA1c'si hızla düşen hastalarda görülmüştür. Tirzepatidin prospektüsü de diyabetik retinopati öyküsü olan hastaların izlenmesini önerir; SURPASS çalışmalarına proliferatif retinopati ya da acil tedavi gerektiren makülopati olan hastalar alınmamıştır. Bu nedenle şiddetli nonproliferatif retinopatisi olan ve iki yıldır muayene olmamış bu hastada tirzepatid başlamadan önce güncel dilate fundus muayenesi yapılmalı, tedavi gerektiren bir lezyon varsa (proliferatif retinopati, diyabetik makula ödemi) önce göz tedavisi planlanmalı, ilaç başlandıktan sonra da göz izlemi sıklaştırılmalıdır. Erken kötüleşme riski, uzun dönemde iyi glisemik kontrolün retinopatiyi önleyici yararını ortadan kaldırmaz; amaç ilacı esirgemek değil, geçici kötüleşmeyi erken yakalamaktır. Tolerans için dörder haftalık standart titrasyon korunur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Retinopati kontrendikasyon değildir; hasta izlenerek tedavi verilebilir.",
+        "B": "YANLIS — Hızlı titrasyon hem gastrointestinal yan etkileri hem de hızlı glisemik düzelmeye bağlı erken kötüleşme riskini artırır.",
+        "C": "YANLIS — Erken kötüleşme hızlı glisemik düzelmeyle ilişkilidir; insülinle sınırlı değildir, GLP-1 temelli ajanlarla da bildirilmiştir.",
+        "D": "DOGRU — Tedavi öncesi dilate fundus muayenesi ve tedavi sırasında yakın göz izlemi önerilir.",
+        "E": "YANLIS — Tirzepatidin retinopatiyi doğrudan geriletici etkisi yoktur; gerekli göz tedavisi ertelenmez."
+      },
+      "etiketler": [
+        "Diyabetik Retinopati",
+        "Erken Kötüleşme",
+        "Hızlı Glisemik Düzelme",
+        "Göz İzlemi",
+        "İlaç Güvenliliği"
+      ],
+      "zorluk": "orta",
+      "kaynak": "FDA Prescribing Information — Tirzepatide; Marso et al. N Engl J Med 2016 (SUSTAIN-6); konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s15",
+      "metin": "Altmış dört yaşında kadın hasta, tip 2 diyabet, hipertansiyon ve evre 3a kronik böbrek hastalığı nedeniyle metformin, empagliflozin, ramipril ve hidroklorotiyazid kullanıyor. Beş gün önce tirzepatid dozu 7,5 mg'dan 10 mg'a çıkarılmış. Üç gündür günde birkaç kez kusma ve sulu ishal, ayağa kalkınca baş dönmesi tarif ediyor.\n\nBulgular:\nKan basıncı: 96/58 mmHg, nabız 108/dk; mukozalar kuru\nKreatinin: 2,3 mg/dL (bazal 1,1)\nSerum K: 5,3 mEq/L, HCO3: 20 mEq/L\nLaktat: 1,8 mmol/L\nKan glukozu: 142 mg/dL; kan ketonu: 0,4 mmol/L\nİdrar sedimenti: inaktif\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tirzepatid böbrekten atılmadığı için sürdürülür; yalnızca ramipril kesilir",
+        "B": "IV izotonik sıvı; tirzepatid geçici olarak kesilir, hasta günü kuralıyla empagliflozin, metformin, ramipril ve tiyazid de geçici durdurulur; düzelince tirzepatide tolere edilen son dozdan dönülür",
+        "C": "Tirzepatide bağlı akut interstisyel nefrit düşünülerek sistemik steroid başlanır",
+        "D": "Hiperkalemi ve AKI nedeniyle acil hemodiyaliz planlanır",
+        "E": "Metformine bağlı laktik asidoz düşünülerek bikarbonat infüzyonu verilir, diğer ilaçlar sürdürülür"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Doz artışını izleyen gastrointestinal kayıplar, RAS blokörü, tiyazid ve SGLT2 inhibitörüyle birleşerek prerenal AKI'ye yol açmıştır. Sıvı verilir, tirzepatid ve hemodinamiyi bozan ilaçlar geçici durdurulur; iyileşince tirzepatide tolere edilen dozdan dönülür.",
+      "aciklama_detay": "Tirzepatidin en sık yan etkileri bulantı, kusma ve ishaldir ve özellikle doz artışlarından sonraki günlerde yoğunlaşır. Ciddi gastrointestinal kayıp hipovolemiye ve prerenal akut böbrek hasarına yol açabilir; prospektüs, böbrek yetmezliği olan ya da ağır gastrointestinal yan etki yaşayan hastalarda böbrek fonksiyonunun izlenmesini önerir. Bu hastada volüm kaybına ek olarak ACE inhibitörü (efferent dilatasyon), tiyazid (ek sıvı kaybı) ve SGLT2 inhibitörü (natriürez, afferent vazokonstriksiyon) glomerüler filtrasyonu daha da düşürmüştür; inaktif sediment ve klinik tablo prerenal nedeni destekler. Tedavi: IV izotonik sıvı ile volüm yerine konur; tirzepatid geçici kesilir; “hasta günü” kuralı gereği SGLT2 inhibitörü, metformin (AKI'de laktik asidoz riski), ACE inhibitörü ve diüretik geçici durdurulur, potasyum ve kreatinin izlenir. Laktat normal ve anyon açığı belirgin değildir; K 5,3 mEq/L düzeyinde, ağır asidoz ya da sıvı yüklenmesi olmadan acil diyaliz endikasyonu yoktur. Akut interstisyel nefritte sediment genellikle aktiftir (lökosit, lökosit silendiri) ve bu tabloyu desteklemez. Hasta iyileşip oral alımı normale dönünce ilaçlar kademeli yeniden başlanır; tirzepatide daha önce tolere ettiği dozdan (7,5 mg) dönmek ve doz artışını daha yavaş yapmak yan etkileri azaltır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Doz ayarlamasının gerekmemesi, yan etkisinin sıvı kaybıyla AKI'ye yol açabileceği gerçeğini değiştirmez; ilaç geçici kesilir ve diğer hemodinamik ajanlar da durdurulur.",
+        "B": "DOGRU — Prerenal AKI: sıvı yerine konur, tirzepatid ve hasta günü ilaçları geçici durdurulur, düzelince tolere edilen dozdan dönülür.",
+        "C": "YANLIS — İnaktif sediment ve hipovolemik tablo akut interstisyel nefriti desteklemez; steroid endikasyonu yoktur.",
+        "D": "YANLIS — K 5,3 mEq/L, belirgin asidoz ya da hipervolemi yoktur; prerenal AKI sıvıyla geri döner, acil diyaliz gerekmez.",
+        "E": "YANLIS — Laktat normaldir; laktik asidoz yoktur. Diğer ilaçları sürdürmek AKI'yi derinleştirir."
+      },
+      "etiketler": [
+        "Prerenal AKI",
+        "Gastrointestinal Yan Etki",
+        "Hasta Günü Kuralı",
+        "Doz Artışı",
+        "Kronik Böbrek Hastalığı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "FDA Prescribing Information — Tirzepatide; TEMD Diabetes Mellitus Kılavuzu 2026"
     }
   ]
 }

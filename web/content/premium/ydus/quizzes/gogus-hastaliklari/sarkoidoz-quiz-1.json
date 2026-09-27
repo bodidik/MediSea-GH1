@@ -9,18 +9,18 @@
       "metin": "Otuz iki yaşında bir kadın hasta, ani başlayan ateş, her iki ayak bileğinde şişlik ve ağrı ile her iki bacakta kızarık, hassas, kabarık deri lezyonları nedeniyle başvuruyor. Akciğer grafisinde bilateral hiler lenfadenopati (BHL) saptanıyor; parankimde infiltrasyon yok. HLA tiplemesinde HLA-DRB1*0301 ve DQB1*0201 pozitif, HLA-DRB1*15 negatif bulunuyor.\n\nBu hastanın prognozunu ve biyopsi kararını en doğru şekilde açıklayan ifade hangisidir?",
       "secenekler": {
         "A": "HLA-DRB1*0301 pozitifliği kötü prognozla ilişkilidir; tanıyı doğrulamak için bacak lezyonlarından hemen biyopsi alınmalıdır.",
-        "B": "Bu tablo klasik Löfgren sendromudur; HLA-DRB1*15 negatifliği hastalığın kronik artrite ilerleyebileceğine işaret eder. Deri lezyonundan biyopsi zorunlu değildir.",
-        "C": "HLA-DRB1*0301 pozitifliği spontan remisyonla güçlü ilişkilidir ve HLA-DRB1*15 negatifliğinin ek olumsuz etkisi yoktur; hasta tamamen iyi prognozludur.",
+        "B": "Bu tablo klasik Löfgren sendromudur; HLA-DRB1*03 pozitifliği (DRB1*15 yokluğuyla birlikte) yüksek spontan remisyon olasılığına işaret eder. Deri lezyonundan biyopsi zorunlu değildir.",
+        "C": "HLA-DRB1*0301 pozitifliği spontan remisyonla ilişkilidir; ancak tanının doğrulanması için tedavi öncesi transbronşiyal biyopsiyle granülom gösterilmesi zorunludur.",
         "D": "Löfgren sendromunun tanısı için bacaktaki eritema nodozum lezyonundan biyopsi alınmalı, kazeifiye olmayan granülom gösterilmelidir.",
         "E": "BHL varlığında lenfoma dışlanamayacağından tanısal amaçlı mediastinoskopi planlanmalıdır."
       },
       "dogru": "B",
-      "aciklama_kisa": "Löfgren sendromu (ateş + BHL + EN + ayak bileği artriti) = klinik tanı, biyopsi gerekmez. HLA-DRB1*0301 iyi prognozla ilişkili olmakla birlikte HLA-DRB1*15 yokluğu bu hastada kronik artrit ve nüks riskini artırır. EN lezyonu septal panikülit olduğundan granülom içermez, biyopsi gereksiz ve yanıltıcıdır.",
-      "aciklama_detay": "HLA-DRB1*0301 ve DQB1*0201 allelleri Löfgren sendromunun akut başlangıçlı formunun genetik belirtecidir ve spontan remisyonla güçlü ilişkilidir. Ancak aynı hastada HLA-DRB1*15'in bulunmaması, hastalığın kronik artrit ve nükse ilerlemesi için ayrı bir kötü prognostik faktördür. Bu çift genetik bilginin birleşimi sınav sorusunda sık kullanılır. Löfgren sendromu (klasik üçlü: BHL + EN + ayak bileği artriti + ateş) klinik olarak tanı konulabilir, biyopsi zorunlu değildir. Eritema nodozum lezyonunun histolojik alt yapısı septal panikülit olup granülom içermediğinden biyopsi alınması hem tanısal kazanç sağlamaz hem de gereksiz müdahale olur.",
+      "aciklama_kisa": "Löfgren sendromu (ateş + BHL + EN + ayak bileği artriti) klinik tanıdır, biyopsi gerekmez. HLA-DRB1*03 pozitifliği hastaların büyük çoğunluğunda 2 yıl içinde kendiliğinden remisyonu öngörür; kronik seyir riskini DRB1*15 ALLELİNİN VARLIĞI artırır — bu hastada DRB1*15 yoktur, prognoz iyidir.",
+      "aciklama_detay": "HLA-DRB1*0301 ve DQB1*0201 allelleri Löfgren sendromunun akut başlangıçlı formunun genetik belirtecidir ve spontan remisyonla güçlü ilişkilidir: DRB1*03 pozitif Löfgren hastalarının büyük çoğunluğu (~%95) iki yıl içinde iyileşir. DRB1*03 negatif hastalarda ve özellikle HLA-DRB1*15 TAŞIYANLARDA hastalığın kronikleşme riski belirgin artar. Bu hasta DRB1*03 pozitif ve DRB1*15 negatif olduğundan en iyi prognostik gruptadır. Löfgren sendromu (BHL + EN + ayak bileği artriti + ateş) klinik olarak tanı konulabilir, doku tanısı zorunlu değildir. Eritema nodozum lezyonunun histolojik alt yapısı septal panikülit olup granülom içermediğinden biyopsi hem tanısal kazanç sağlamaz hem de gereksiz müdahale olur.",
       "secenekAciklamalari": {
         "A": "YANLIŞ — HLA-DRB1*0301, kötü değil iyi prognozla ilişkilidir. Ayrıca deri lezyonu septal panikülit (EN) olup granülom içermez; buradan biyopsi almak tanısal değer taşımaz.",
-        "B": "DOĞRU — Klasik Löfgren sendromu klinik tanı alır, biyopsi gerekmez. HLA-DRB1*0301 iyi prognozu desteklese de HLA-DRB1*15 yokluğu kronik seyir riskini artırır — bu ikili bilgi sınavın temel sorguladığı noktadır.",
-        "C": "YANLIŞ — HLA-DRB1*15 yokluğu, Löfgren hastasında nüks ve kronik artrit için bağımsız kötü prognostik işarettir. Sadece HLA-DRB1*0301 pozitifliğine bakarak tam iyi prognoz demek eksik ve hatalıdır.",
+        "B": "DOĞRU — Klasik Löfgren sendromu klinik tanı alır, biyopsi gerekmez. DRB1*03 pozitif, DRB1*15 negatif genotip yüksek spontan remisyon olasılığıyla ilişkilidir.",
+        "C": "YANLIŞ — Allel yorumu doğru, ancak klasik Löfgren sendromunda doku tanısı zorunlu değildir; tipik tabloda biyopsi yalnızca atipik seyir ya da ayırıcı tanı şüphesinde gerekir.",
         "D": "YANLIŞ — Eritema nodozum lezyonunun biyopsisi Löfgren sendromunun tanısında zorunlu değildir. EN kazeifiye olmayan granülom içermez; biyopsi gereksizdir.",
         "E": "YANLIŞ — Asemptomatik veya klasik Löfgren sendromlu BHL vakalarında lenfoma dışlanması için mediastinoskopi gerekmez. Yalnızca atipik prezantasyonlarda (tek taraflı adenopati, sistemik B semptomu, atipik yaş) invazif tanı düşünülür."
       },
@@ -212,6 +212,241 @@
       ],
       "zorluk": "zor",
       "kaynak": "Adams JS et al. J Clin Invest 1985; Baughman RP et al. Sarcoidosis 2020"
+    },
+    {
+      "id": "s8",
+      "metin": "Kırk dört yaşında erkek hasta, 2 yıldır evre II pulmoner sarkoidoz nedeniyle izleniyor ve son 8 aydır tedavi almıyor. Son iki haftada iki kez senkop geçiriyor.\n\nTetkikler:\nEKG: tam AV blok, ventrikül hızı 38/dk\nTranstorasik EKO: LVEF %48, bazal septumda incelme\nKardiyak MR: bazal septumda midmiyokardiyal geç gadolinyum tutulumu (LGE)\nFDG-PET/BT: bazal septumda fokal FDG tutulumu (aktif inflamasyon)\nKoroner BT anjiyografi: anlamlı darlık yok\n\nGeçici pacing sonrasında bu hasta için en uygun kalıcı yönetim hangisidir?",
+      "secenekler": {
+        "A": "Yalnızca kalıcı pacemaker; LVEF %35'in üzerinde olduğundan ICD endikasyonu yoktur",
+        "B": "Kortikosteroid başlanıp AV iletimin düzelmesi beklenmeli; iletim düzelirse cihaz gerekmez",
+        "C": "Kortikosteroid temelli immünsüpresyon ve pacing özellikli ICD implantasyonu",
+        "D": "Etanercept ile TNF blokajı; cihaz kararı 3 ay sonra yeniden değerlendirilir",
+        "E": "Kateter ablasyonu ve amiodaron idamesi; immünsüpresyona gerek yoktur"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Aktif kardiyak sarkoidozda tam AV blok: immünsüpresyon + cihaz. Kalıcı pacing endikasyonu olan kardiyak sarkoidozda ani ölüm riski nedeniyle ICD tercih edilir; AV iletimin steroidle düzelmesi cihaz kararını ortadan kaldırmaz.",
+      "aciklama_detay": "Sarkoidozlu hastada (ya da 60 yaş altında açıklanamayan) yüksek dereceli AV blok kardiyak sarkoidozu akla getirmelidir. Tanı kardiyak MR'da yama tarzı, midmiyokardiyal ya da subepikardiyal LGE (özellikle bazal septum) ve FDG-PET'te fokal tutulumla desteklenir. PET aktif inflamasyonu gösterdiği için immünsüpresyon (kortikosteroid ± metotreksat, dirençte infliksimab) endikedir. HRS 2014 uzlaşı raporuna göre kalıcı pacing endikasyonu olan kardiyak sarkoidoz hastasında ICD implantasyonu makuldür; granülom ve skar ventriküler aritmi substratıdır ve ani ölüm riski LVEF korunmuş olsa bile artmıştır. Senkop ve LGE varlığı da başlı başına ICD lehine faktörlerdir. AV blok steroidle geriye dönebilir, ancak nüks öngörülemez; bu nedenle cihaz kararı immünsüpresyon yanıtına bırakılmaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kardiyak sarkoidozda ani ölüm riski LVEF'ten bağımsız olarak artmıştır; pacing endikasyonu, senkop ve LGE varlığında düz pacemaker yerine ICD tercih edilir.",
+        "B": "YANLIŞ — AV blok steroidle kısmen geriye dönebilir ama nüksü öngörülemez; cihaz kararı immünsüpresyon yanıtına ertelenmez.",
+        "C": "DOĞRU — PET'teki aktif inflamasyon immünsüpresyonu; tam AV blok + senkop + LGE ise pacing özellikli ICD implantasyonunu gerektirir.",
+        "D": "YANLIŞ — Etanercept sarkoidozda etkisizdir; ayrıca tam AV blok ve senkop varken cihaz kararı ertelenemez.",
+        "E": "YANLIŞ — Ablasyon, tedaviye dirençli VT'de seçilmiş hastalarda kullanılır; bradiaritmiyi çözmez ve aktif inflamasyonda immünsüpresyonun yerini tutmaz."
+      },
+      "etiketler": [
+        "Kardiyak Sarkoidoz",
+        "Tam AV Blok",
+        "ICD",
+        "Kardiyak MR",
+        "FDG-PET"
+      ],
+      "zorluk": "zor",
+      "kaynak": "HRS 2014 kardiyak sarkoidoz uzlaşı raporu (Birnie DH ve ark. Heart Rhythm 2014); ATS 2020 sarkoidoz tanı ve tarama kılavuzu"
+    },
+    {
+      "id": "s9",
+      "metin": "Otuz dört yaşında kadın hasta, işe giriş muayenesinde çekilen akciğer grafisinde bilateral hiler lenfadenopati saptanması üzerine değerlendiriliyor. Yakınması yok; fizik muayene normal. EBUS-TBNA ile alınan lenf nodu örneklerinde kazeifiye olmayan granülomlar görülüyor; ARB boyası, mikobakteri kültürü ve mantar boyaları negatif.\n\nTetkikler:\nToraks BT: bilateral hiler ve paratrakeal lenfadenopati, parankim normal\nSFT: FVC %96, DLCO %90\n\nBu hastada başlangıç yönetimi açısından en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Nüksü önlemek için prednizolon 20 mg/gün başlanmalı ve 6 ay sürdürülmelidir",
+        "B": "Semptom olmasa da kardiyak tutulumu dışlamak için kardiyak MR ve FDG-PET/BT çekilmelidir",
+        "C": "Tedavi kararı serum ACE düzeyine göre verilmeli; ACE yüksekse sistemik tedavi başlanmalıdır",
+        "D": "Nörosarkoidozu dışlamak için kraniyal MR ve lomber ponksiyon rutin olarak yapılmalıdır",
+        "E": "Tedavisiz izlem; başlangıçta EKG, göz muayenesi, serum kalsiyum, kreatinin ve ALP bakılmalıdır"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Asemptomatik, işlev kaybı olmayan evre I sarkoidozda sistemik tedavi endikasyonu yoktur (spontan remisyon %60–80). ATS 2020'ye göre her hastada sessiz tutulum taraması yapılır: EKG, göz muayenesi, serum kalsiyum, kreatinin ve ALP.",
+      "aciklama_detay": "Sarkoidozda tedavinin iki gerekçesi vardır: organ işlevini ya da yaşamı tehdit eden tutulum (kardiyak, nörolojik, oküler, hiperkalsemi, ilerleyici akciğer hastalığı) ve yaşam kalitesini bozan semptomlar. Bu hastada ikisi de yoktur; evre I hastalıkta spontan remisyon oranı yüksek olduğundan izlem uygundur. ATS 2020 tanı kılavuzu yeni tanı alan her hastada sessiz ama tehlikeli tutulumların taranmasını önerir: kardiyak tarama için 12 derivasyonlu EKG (semptom yoksa ileri görüntüleme rutin değildir; EKG anormalse ya da çarpıntı/senkop varsa kardiyak MR veya FDG-PET), göz muayenesi (üveit semptomsuz olabilir), serum kalsiyum (hiperkalsemi), kreatinin (nefrokalsinozis, granülomatöz interstisyel nefrit) ve ALP (hepatik tutulum). İzlemde semptom ve SFT takibi yapılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Asemptomatik ve işlev kaybı olmayan evre I hastalıkta tedavi endike değildir; kortikosteroid yarar sağlamadan yan etki yükü getirir.",
+        "B": "YANLIŞ — Semptomsuz ve EKG'si normal hastada kardiyak MR/FDG-PET rutin tarama aracı değildir; EKG anormalliği ya da kardiyak semptom varlığında istenir.",
+        "C": "YANLIŞ — ACE'nin duyarlılık ve özgüllüğü düşüktür; tedavi kararı biyobelirteç düzeyine değil organ tutulumu ve semptomlara göre verilir.",
+        "D": "YANLIŞ — Nörolojik semptom ya da bulgu yokken kraniyal MR ve LP tarama amacıyla yapılmaz.",
+        "E": "DOĞRU — Tedavi endikasyonu yoktur; ATS 2020'nin önerdiği başlangıç taraması (EKG, göz, kalsiyum, kreatinin, ALP) yapılarak izlenir."
+      },
+      "etiketler": [
+        "Evre I Sarkoidoz",
+        "Tedavi Endikasyonu",
+        "Organ Taraması",
+        "ATS 2020"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ATS 2020 sarkoidoz tanı ve tarama kılavuzu; ERS 2021 sarkoidoz tedavi kılavuzu"
+    },
+    {
+      "id": "s10",
+      "metin": "Otuz dokuz yaşında kadın hasta, 3 aydır baş ağrısı, aşırı susama, günde 6–7 litre idrar yapma ve adet düzensizliği yakınmalarıyla başvuruyor. Bir yıl önce EBUS-TBNA ile pulmoner sarkoidoz tanısı almış, tedavi almamış.\n\nTetkikler:\nSerum Na 146 mEq/L; idrar osmolalitesi 110 mOsm/kg; desmopresin sonrası idrar osmolalitesinde belirgin artış\nKontrastlı kraniyal MR: hipotalamus ve hipofiz sapında kalınlaşma ve kontrast tutulumu, bazal leptomeningeal kontrastlanma\nBOS: lenfositik pleositoz (45 hücre/mm³), protein 95 mg/dL, glukoz hafif düşük; ARB, mikobakteri kültürü, mantar antijeni ve sitoloji negatif\n\nBu hastada en uygun tedavi yaklaşımı hangisidir?",
+      "secenekler": {
+        "A": "Yüksek doz glukokortikoid, erken dönemde steroid koruyucu ajan (ör. metotreksat), yanıtsızlıkta infliksimab; santral diyabet insipidus için desmopresin",
+        "B": "Ampirik dörtlü antitüberküloz tedavi başlanması ve immünsüpresyondan kaçınılması",
+        "C": "Yalnızca desmopresin ile semptomatik tedavi; tutulumun kendiliğinden gerilemesi beklenir",
+        "D": "Düşük doz prednizolon (5–10 mg/gün) ve 6 ay sonra MR ile yeniden değerlendirme",
+        "E": "Hipofiz sapı lezyonunun cerrahi eksizyonu ve ardından stereotaktik radyoterapi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Bilinen sarkoidozda hipotalamus-hipofiz ve leptomeningeal tutulum = nörosarkoidoz. Organ tehdit eden tutulum olduğundan yüksek doz steroid + erken steroid koruyucu ajan, dirençte infliksimab. Hipotalamik diyabet insipidus çoğunlukla kalıcıdır; desmopresin gerekir.",
+      "aciklama_detay": "Nörosarkoidoz hastaların yaklaşık %5–10'unda klinik olarak belirgindir. En sık tablo kraniyal nöropati (özellikle fasiyal) olmakla birlikte leptomeningeal tutulum ve hipotalamus-hipofiz infiltrasyonu (santral diyabet insipidus, hipogonadotropik hipogonadizm, hiperprolaktinemi) tipiktir. BOS'ta lenfositik pleositoz, protein artışı ve bazen düşük glukoz görülür; bu nedenle tüberküloz menenjiti, fungal enfeksiyon ve lenfoma dışlanmalıdır — bu hastada mikrobiyoloji ve sitoloji negatif, ekstranöral histolojik tanı mevcuttur. Organ işlevini tehdit eden bu tutulumda yüksek doz glukokortikoid (ağır olguda IV metilprednizolon pulse) başlanır; tedavi uzun süreceği için erken dönemde metotreksat gibi steroid koruyucu ajan eklenir. Ağır ya da dirençli nörosarkoidozda infliksimab en güçlü kanıta sahip ajandır. Hipotalamik diyabet insipidus immünsüpresyonla çoğu zaman geri dönmez; desmopresin replasmanı sürdürülür.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Organ tehdit eden nörosarkoidozda yüksek doz steroid + erken steroid koruyucu ajan, dirençte infliksimab; santral diyabet insipidus için desmopresin.",
+        "B": "YANLIŞ — BOS bulguları tüberküloz menenjitini düşündürebilir; ancak mikrobiyoloji negatif, ekstranöral granülomatöz tanı mevcut ve hipotalamik-leptomeningeal tutulum tipik. Ampirik antitüberküloz tedavi gerekli immünsüpresyonu geciktirir.",
+        "C": "YANLIŞ — Leptomeningeal ve hipotalamik tutulum kendiliğinden gerilemesi beklenmeyen, kalıcı sekel bırakabilen bir tutulumdur; yalnız semptomatik tedavi yetersizdir.",
+        "D": "YANLIŞ — Düşük doz steroid organ tehdit eden nörolojik tutulumda yetersizdir; SARCORT'taki 20 mg verisi pulmoner hastalığa aittir.",
+        "E": "YANLIŞ — Nörosarkoidoz inflamatuar bir hastalıktır ve tedavisi immünsüpresyondur; cerrahi yalnızca tanı konamayan izole lezyonda biyopsi amacıyla düşünülür."
+      },
+      "etiketler": [
+        "Nörosarkoidoz",
+        "Santral Diyabet İnsipidus",
+        "Leptomeningeal Tutulum",
+        "İnfliksimab",
+        "Steroid Koruyucu Tedavi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ERS 2021 sarkoidoz tedavi kılavuzu (Baughman RP ve ark. Eur Respir J 2021); Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s11",
+      "metin": "Elli iki yaşında erkek hasta, rezeke edilmiş evre III melanom nedeniyle 5 aydır adjuvan nivolumab alıyor. Rutin kontrolde çekilen FDG-PET/BT'de yeni gelişen, simetrik bilateral hiler ve mediastinal lenfadenopati (SUVmax 9) saptanıyor; başka yeni lezyon yok. Hasta tamamen asemptomatik; SpO₂ %98, SFT ve serum kalsiyum normal, göz muayenesi normal.\n\nEBUS-TBNA: kazeifiye olmayan epiteloid granülomlar; malign hücre yok; ARB ve mantar boyaları negatif.\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Bulgu progresyon kabul edilmeli; nivolumab kesilip ipilimumab + nivolumab kombinasyonuna geçilmeli",
+        "B": "Nivolumab kalıcı olarak kesilmeli ve prednizolon 1 mg/kg/gün başlanmalı",
+        "C": "Granülomatöz reaksiyon tüberküloz kabul edilerek dörtlü antitüberküloz tedavi başlanmalı",
+        "D": "İlaca bağlı sarkoid benzeri reaksiyon olarak değerlendirilip immünoterapiye devam edilmeli ve izlenmeli",
+        "E": "Tanının kesinleşmesi için mediastinoskopi ile eksizyonel lenf nodu biyopsisi yapılmalı"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "İmmün kontrol noktası inhibitörü sırasında simetrik hiler-mediastinal FDG tutulumu + nekrozsuz granülom = ilaca bağlı sarkoid benzeri reaksiyon. Metastaz ve enfeksiyon doku ile dışlandıysa, asemptomatik hastada immünoterapi sürdürülür ve izlenir.",
+      "aciklama_detay": "İmmün kontrol noktası inhibitörleri (anti-PD-1/PD-L1, anti-CTLA-4), BRAF/MEK inhibitörleri, interferon ve antiretroviral tedavi gibi ilaçlar sarkoidozdan histolojik olarak ayırt edilemeyen granülomatöz bir reaksiyon (ilaca bağlı sarkoid benzeri reaksiyon) yapabilir. En sık tablo simetrik hiler/mediastinal lenfadenopati ve deri lezyonlarıdır. FDG-PET/BT metastazı bu reaksiyondan ayıramaz; bu nedenle doku tanısı (EBUS-TBNA) gerekir. Metastaz ve enfeksiyon dışlandıktan sonra asemptomatik, organ işlevi bozulmamış hastada immünoterapiye devam edilir ve klinik-radyolojik izlem yapılır; reaksiyon çoğunlukla kendiliğinden ya da ilaç kesildiğinde geriler. Semptomatik ya da organ tehdit eden tutulumda (hiperkalsemi, üveit, kardiyak tutulum gibi) kortikosteroid ve immünoterapiye ara verme gündeme gelir. En önemli hata, reaksiyonu progresyon sanıp etkili onkolojik tedaviyi bırakmaktır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Histoloji metastazı değil granülomatöz reaksiyonu gösteriyor; PET tutulumu tek başına progresyon kanıtı değildir.",
+        "B": "YANLIŞ — Asemptomatik ve organ işlevi normal hastada immünoterapinin kalıcı kesilmesi ve yüksek doz steroid gereksizdir; bu yaklaşım semptomatik ya da organ tehdit eden tutuluma ayrılır.",
+        "C": "YANLIŞ — ARB/mantar boyaları negatif, nekrozsuz granülom ve immünoterapiyle zamansal ilişki ilaca bağlı reaksiyon lehinedir; ampirik antitüberküloz tedavi endikasyonu yoktur.",
+        "D": "DOĞRU — Doku tanısıyla metastaz ve enfeksiyon dışlanmış, asemptomatik reaksiyonda immünoterapi sürdürülür ve izlenir.",
+        "E": "YANLIŞ — EBUS-TBNA tanısal örnek sağlamıştır; daha invaziv cerrahi örnekleme ek bilgi getirmez."
+      },
+      "etiketler": [
+        "İlaca Bağlı Sarkoid Benzeri Reaksiyon",
+        "İmmün Kontrol Noktası İnhibitörü",
+        "Ayırıcı Tanı",
+        "FDG-PET"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Konu anlatımı (MediSea açık site — sarkoidoz ayırıcı tanısı) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s12",
+      "metin": "Kırk yedi yaşında erkek hasta, 1 yıldır giderek artan efor dispnesi ve kuru öksürükle başvuruyor. 15 yıldır bir diş protez laboratuvarında metal alaşım döküm ve tesviye işinde çalışıyor. Sigara içmiyor.\n\nTetkikler:\nToraks BT: bilateral hiler lenfadenopati, üst-orta zon ağırlıklı perilenfatik mikronodüller\nBAL: lenfosit %38, CD4/CD8 oranı 5.2\nTransbronşiyal biyopsi: kazeifiye olmayan granülomlar\nSerum ACE: hafif yüksek\n\nBu tabloyu sarkoidozdan ayırmak için en uygun test hangisidir?",
+      "secenekler": {
+        "A": "Serum çözünür IL-2 reseptörü (sIL-2R) düzeyi",
+        "B": "Kan ya da BAL lenfositleriyle berilyum lenfosit proliferasyon testi (BeLPT)",
+        "C": "BAL'da CD4/CD8 oranının tekrarlanması",
+        "D": "Serum 1,25-(OH)₂ vitamin D düzeyi",
+        "E": "Serum ACE düzeyinin seri takibi"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Diş protez, havacılık-uzay ya da elektronik sektöründe berilyum maruziyeti + sarkoidoz benzeri tablo → kronik berilyum hastalığı. Granülom, BAL lenfositozu ve CD4/CD8 artışı iki hastalıkta ortaktır; ayırt ettiren test BeLPT'dir.",
+      "aciklama_detay": "Kronik berilyum hastalığı (KBH), berilyuma karşı HLA-DPB1 Glu69 ile ilişkili gecikmiş tip aşırı duyarlılık yanıtıdır ve klinik, radyolojik ve histolojik olarak sarkoidozun neredeyse birebir ikizidir: nekrozsuz granülom, perilenfatik nodüller, hiler lenfadenopati, BAL'da CD4+ lenfositoz ve yüksek CD4/CD8 oranı, hatta ACE artışı ve hiperkalsemi görülebilir. Bu nedenle sarkoidoz tanısı konmadan önce ayrıntılı meslek öyküsü alınmalıdır; diş protez alaşımları, havacılık-uzay, elektronik, nükleer ve metal işleme sektörleri risklidir. Ayırt edici test berilyum lenfosit proliferasyon testidir (BeLPT): hastanın kan ya da BAL lenfositleri berilyum tuzlarıyla uyarıldığında çoğalır. Ayrım tedaviyi değiştirir: KBH'de maruziyetin tamamen kesilmesi tedavinin temelidir; meslek hastalığı bildirimi ve aynı iş yerindeki çalışanların taranması gerekir. Kortikosteroid gerektiğinde her iki hastalıkta da kullanılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — sIL-2R T hücre aktivasyonunu gösterir; KBH'de de yükselebilir ve iki hastalığı ayırmaz.",
+        "B": "DOĞRU — BeLPT berilyuma özgü hücresel duyarlılığı gösterir; KBH'yi sarkoidozdan ayıran testtir.",
+        "C": "YANLIŞ — CD4/CD8 artışı KBH'de de görülür; testi tekrarlamak ayırıcı bilgi vermez.",
+        "D": "YANLIŞ — Granülom makrofajlarının kalsitriol üretimi KBH'de de olabilir; ayırıcı değildir.",
+        "E": "YANLIŞ — ACE her iki granülomatöz hastalıkta yükselebilir; duyarlılığı ve özgüllüğü düşüktür."
+      },
+      "etiketler": [
+        "Kronik Berilyum Hastalığı",
+        "BeLPT",
+        "Meslek Öyküsü",
+        "Ayırıcı Tanı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea açık site — sarkoidoz ayırıcı tanısı) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s13",
+      "metin": "Elli sekiz yaşında kadın hasta, 12 yıldır sarkoidoz tanısıyla izleniyor; son iki yıldır evre IV (fibrotik) hastalığı var ve metotreksat + prednizolon 5 mg/gün kullanıyor. Son 6 ayda efor dispnesi belirgin artmış, SFT değerleri ise stabil.\n\nTetkikler:\nFVC %62 (1 yıl önce %64); DLCO %28 (1 yıl önce %45)\n6 dakika yürüme testi: 260 m, SpO₂ %96'dan %84'e düşüyor\nNT-proBNP 1150 pg/mL\nTTE: triküspit yetersizlik hızı 3.6 m/sn, sağ ventrikül dilate, LVEF %60\nFDG-PET/BT: parankimde ve kalpte aktif tutulum yok\n\nBu hastada en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Prednizolon dozunun 40 mg/güne çıkarılması",
+        "B": "Metotreksat yerine infliksimab başlanması",
+        "C": "Sağ kalp kateterizasyonu ile tanının doğrulanması ve hemodinamik fenotipin belirlenmesi",
+        "D": "Ekokardiyografik bulguya dayanarak ampirik bosentan başlanması",
+        "E": "Serum ACE ve sIL-2R ile hastalık aktivitesinin yeniden değerlendirilmesi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Fibrotik sarkoidozda SFT'ye orantısız dispne, DLCO'da hızlı düşüş ve eforla desatürasyon = sarkoidoz ilişkili pulmoner hipertansiyon şüphesi. Tanı ve fenotip sağ kalp kateterizasyonuyla konur; ampirik PAH ilacı başlanmaz.",
+      "aciklama_detay": "Sarkoidoz ilişkili pulmoner hipertansiyon (SAPH), ileri evre sarkoidozun en güçlü mortalite belirleyicilerinden biridir ve mekanizması çok etkenlidir: fibrozise bağlı vasküler yıkım ve hipoksi, granülomatöz vaskülopati (pulmoner venookluzif hastalık benzeri), büyümüş lenf nodu ya da fibrozan mediastinite bağlı damar basısı ve kardiyak sarkoidoza bağlı sol kalp hastalığı. ESC/ERS 2022 kılavuzuna göre ekokardiyografi yalnızca PH olasılığını gösterir; tanı ve prekapiller/postkapiller ayrımı için sağ kalp kateterizasyonu gerekir. Postkapiller PH'de PAH ilaçları zararlı olabilir; venookluzif fenotipte vazodilatörler akciğer ödemi yapabilir. Bu hastada PET'te aktif inflamasyon olmadığından immünsüpresyonu artırmak yarar sağlamaz. Doğrulanmış prekapiller SAPH'de uzman merkezde seçilmiş hastalarda PAH ilaçları ve erken akciğer nakli değerlendirmesi gündeme gelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — PET'te aktif granülomatöz inflamasyon yok; fibrotik hastalıkta steroid artışı PH'yi düzeltmez, yalnızca yan etki yükünü artırır.",
+        "B": "YANLIŞ — Aktif inflamasyon kanıtı olmadan anti-TNF'ye geçmek endike değildir; öncelik PH'nin doğrulanmasıdır.",
+        "C": "DOĞRU — Ekokardiyografi olasılık verir; SAPH tanısı ve prekapiller/postkapiller ayrımı sağ kalp kateterizasyonuyla yapılır.",
+        "D": "YANLIŞ — Hemodinamik doğrulama olmadan PAH ilacı başlanmaz; postkapiller ya da venookluzif fenotipte vazodilatör zararlı olabilir.",
+        "E": "YANLIŞ — Bu biyobelirteçler granülomatöz aktiviteyi yansıtır, pulmoner dolaşımı değerlendirmez."
+      },
+      "etiketler": [
+        "Sarkoidoz İlişkili Pulmoner Hipertansiyon",
+        "Sağ Kalp Kateterizasyonu",
+        "Evre IV Sarkoidoz",
+        "DLCO"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ESC/ERS 2022 pulmoner hipertansiyon kılavuzu; Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s14",
+      "metin": "Otuz dokuz yaşında erkek hasta, 4 aydır kuru öksürük ve yorgunlukla başvuruyor. Deri, göz ve eklem bulgusu yok. Toraks BT'de bilateral simetrik hiler ve subkarinal lenfadenopati ile perilenfatik mikronodüller izleniyor. Serum kalsiyum ve ACE normal; tüberkülin deri testi 0 mm.\n\nSarkoidoz ön tanısıyla doku tanısı planlanıyor. İlk tercih edilmesi gereken örnekleme yöntemi hangisidir?",
+      "secenekler": {
+        "A": "EBUS eşliğinde transbronşiyal iğne aspirasyonu (EBUS-TBNA)",
+        "B": "Mediastinoskopi ile lenf nodu eksizyonu",
+        "C": "VATS ile cerrahi akciğer biyopsisi",
+        "D": "BT eşliğinde transtorasik iğne biyopsisi",
+        "E": "Biyopsi gerekmez; tanı klinik-radyolojik olarak konabilir"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Mediastinal/hiler lenfadenopatisi olan ve yüksek özgüllüklü bir sendromla gelmeyen sarkoidoz şüphesinde ATS 2020, doku tanısı için ilk yöntem olarak EBUS eşliğinde örneklemeyi mediastinoskopiye tercih eder.",
+      "aciklama_detay": "Sarkoidoz tanısı üç ayaklıdır: uyumlu klinik-radyolojik tablo, nekrozsuz granülomun gösterilmesi ve granülomatöz hastalığın diğer nedenlerinin dışlanması. Löfgren sendromu, Heerfordt sendromu ve lupus pernio gibi yüksek özgüllüklü tablolar dışında doku tanısı gerekir. ATS 2020 kılavuzu, örnekleme gerektiğinde EBUS eşliğinde lenf nodu örneklemesini mediastinoskopiye tercih eder: tanısal verimi yüksek, komplikasyonu azdır ve aynı işlemde BAL ile transbronşiyal (ya da kriyo) biyopsi eklenebilir. Mediastinoskopi ve cerrahi biyopsi EBUS'un tanısal olmadığı olgulara ayrılır. Tüberkülozun sık görüldüğü bölgelerde örneklerden ARB ve mantar boyaları ile kültür mutlaka istenmelidir; sarkoidozda tüberkülin anerjisi sık olduğundan negatif deri testi tüberkülozu dışlamaz.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Minimal invaziv ve tanısal verimi yüksek; ATS 2020'de ilk tercih.",
+        "B": "YANLIŞ — Tanısaldır ama daha invazivdir; EBUS tanısal olmazsa ikinci basamaktır.",
+        "C": "YANLIŞ — Lenf nodu kolay ulaşılabilir durumdayken gereksiz derecede invazivdir.",
+        "D": "YANLIŞ — Periferik kitlelerde kullanılır; mediastinal-hiler lenfadenopatiye uygun değildir ve pnömotoraks riski taşır.",
+        "E": "YANLIŞ — Löfgren, Heerfordt ya da lupus pernio gibi yüksek özgüllüklü bir tablo yok; semptomatik hastada doku tanısı ve alternatif nedenlerin dışlanması gerekir."
+      },
+      "etiketler": [
+        "EBUS-TBNA",
+        "Doku Tanısı",
+        "Mediastinal Lenfadenopati",
+        "ATS 2020"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "ATS 2020 sarkoidoz tanı ve tarama kılavuzu"
+    },
+    {
+      "id": "s15",
+      "metin": "Elli bir yaşında kadın hasta, 2 yıldır burun kanatları, yanaklar ve kulak memelerinde giderek büyüyen, mor-viyole renkli, endüre plaklar nedeniyle başvuruyor. Son aylarda burun tıkanıklığı ve kabuklanma eklenmiş. Toraks BT'de üst zon ağırlıklı retiküler opasiteler ve fibrotik değişiklikler izleniyor. El grafisinde falankslarda kistik litik lezyonlar görülüyor.\n\nBu hastanın tablosu için aşağıdaki ifadelerden hangisi doğrudur?",
+      "secenekler": {
+        "A": "Lezyonlar Löfgren sendromunun deri bileşenidir; iki yıl içinde spontan remisyon beklenir",
+        "B": "Lezyonlar septal panikülit yapısındadır; biyopsi granülom göstermez",
+        "C": "Deri tutulumu sınırlı olduğundan topikal tedavi yeterlidir; sistemik tedavi gerekmez",
+        "D": "Kronik ve dirençli seyrin göstergesidir; sistemik tedavi gerekir, dirençte infliksimab etkilidir",
+        "E": "Tipik olarak evre I hiler lenfadenopatiyle birliktedir ve iyi prognozun belirtecidir"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Lupus pernio sarkoidozun kronik fenotipinin göstergesidir: sinonazal tutulum, kistik kemik lezyonları ve fibrotik akciğer hastalığıyla birliktedir, kendiliğinden gerilemez; sistemik tedavi gerekir, dirençte infliksimab en etkili seçeneklerdendir.",
+      "aciklama_detay": "Lupus pernio burun, yanak, kulak ve dudaklarda mor-viyole, endüre, kozmetik açıdan yıkıcı plaklardır; klinik tabloyla birlikte sarkoidoza oldukça özgüldür ve ATS 2020'de biyopsisiz tanıya izin veren tablolardan biri olarak kabul edilir. Eritema nodozumun tersine, lezyon biyopsisi nekrozsuz granülom gösterir. Kötü prognostik bir belirteçtir: sinonazal/üst hava yolu tutulumu (burun tıkanıklığı, kabuklanma, septum perforasyonu), falankslarda kistik kemik lezyonları, kronik üveit ve fibrotik (evre IV) akciğer hastalığıyla sık birliktedir. Spontan remisyon beklenmez; sistemik tedavi (glukokortikoid, metotreksat, hidroksiklorokin) gerekir ve dirençli olgularda infliksimab en güçlü kanıta sahip ajanlardandır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Löfgren'in deri bileşeni eritema nodozumdur; lupus pernio kronik fenotipin belirtecidir ve kendiliğinden gerilemez.",
+        "B": "YANLIŞ — Septal panikülit eritema nodozumun histolojisidir; lupus pernio biyopsisinde nekrozsuz granülom görülür.",
+        "C": "YANLIŞ — Lupus pernio yıkıcı ve kronik seyirlidir; eşlik eden sinonazal, kemik ve akciğer tutulumu sistemik tedavi gerektirir.",
+        "D": "DOĞRU — Kronik fenotipin göstergesidir; sistemik tedavi gerekir, dirençli olguda infliksimab etkilidir.",
+        "E": "YANLIŞ — Lupus pernio evre I hiler lenfadenopatiden çok fibrotik akciğer hastalığıyla birliktedir ve kötü prognozu gösterir."
+      },
+      "etiketler": [
+        "Lupus Pernio",
+        "Kronik Sarkoidoz",
+        "Sinonazal Tutulum",
+        "İnfliksimab",
+        "Prognoz"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ATS 2020 sarkoidoz tanı ve tarama kılavuzu; ERS 2021 sarkoidoz tedavi kılavuzu"
     }
   ]
 }

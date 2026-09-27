@@ -4,7 +4,7 @@
     "quizId": "tkp-quiz-1",
     "branch": "gogus-hastaliklari",
     "baslik": "TKP Soru Bankası — Bölüm 1",
-    "toplam": 7
+    "toplam": 15
   },
   "sorular": [
     {
@@ -12,18 +12,18 @@
       "metin": "65 yaşında erkek hasta; 3 gündür öksürük, ateş ve pürülan balgam şikâyetiyle başvuruyor. Muayenede konfüzyon (+), solunum sayısı 32/dk, TA 85/55 mmHg, BUN 28 mg/dL. Akciğer grafisinde sağ alt lobda konsolidasyon saptanıyor. Bu hastanın CURB-65 skoru kaçtır ve doğru yönetim nedir?",
       "secenekler": {
         "A": "CURB-65: 3 — Ayaktan oral antibiyotik tedavisi",
-        "B": "CURB-65: 4 — YBÜ transferi değerlendirmesi gerekir",
+        "B": "CURB-65: 5 — YBÜ transferi değerlendirmesi gerekir",
         "C": "CURB-65: 3 — Servis yatışı, IV antibiyotik",
         "D": "CURB-65: 5 — Direkt ayaktan tedavi"
       },
       "dogru": "B",
-      "aciklama_kisa": "Konfüzyon + Üre↑ + SFH≥30 + Hipotansiyon = 4 puan → YBÜ değerlendirmesi",
-      "aciklama_detay": "CURB-65: Konfüzyon (1) + BUN >20 mg/dL (1) + Solunum ≥30 (1) + sistolik KB <90 (1) + Yaş ≥65 (1) = toplam 5 üzerinden bu hastada 4 puan. CURB-65 ≥3 → YBÜ transferi değerlendirilmeli. Dikkat: Hipotansiyon tek başına ATS/IDSA major YBÜ kriteri için vazopresör gerektirip gerektirmediğine bakılmalı; ancak CURB-65 ≥3 yatış endikasyonunu zaten belirler.",
+      "aciklama_kisa": "Konfüzyon + Üre↑ + SFH≥30 + Hipotansiyon + Yaş ≥65 = 5 puan → YBÜ değerlendirmesi",
+      "aciklama_detay": "CURB-65: Konfüzyon (1) + BUN >20 mg/dL (1) + Solunum ≥30 (1) + sistolik KB <90 (1) + Yaş ≥65 (1) = bu hastada beş ölçütün beşi de var, 5 puan. CURB-65 ≥3 → YBÜ transferi değerlendirilmeli. Dikkat: Hipotansiyon tek başına ATS/IDSA major YBÜ kriteri için vazopresör gerektirip gerektirmediğine bakılmalı; ancak CURB-65 ≥3 yatış endikasyonunu zaten belirler.",
       "secenekAciklamalari": {
-        "A": "Yanlış — CURB-65 skoru 4; ayaktan tedavi ağır TKP'de kontrendike.",
-        "B": "Doğru — 4 puan, YBÜ değerlendirmesi gerektirir.",
-        "C": "Yanlış — Skor 3 değil 4; ayrıca 4 puan servis değil YBÜ kararı alınmasını gerektirir.",
-        "D": "Yanlış — Skor 5 değil 4; ayaktan tedavi hiç uygun değil."
+        "A": "Yanlış — CURB-65 skoru 5; ayaktan tedavi ağır TKP'de kontrendike.",
+        "B": "Doğru — 5 puan (hasta 65 yaşında, yaş ölçütü de sayılır), YBÜ değerlendirmesi gerektirir.",
+        "C": "Yanlış — Skor 3 değil 5; ayrıca bu puan servis değil YBÜ kararı alınmasını gerektirir.",
+        "D": "Yanlış — Skor 5 doğru, ancak 5 puanlı ağır TKP'de ayaktan tedavi hiç uygun değil."
       },
       "etiketler": [
         "CURB-65",
@@ -191,6 +191,222 @@
       ],
       "zorluk": "orta",
       "kaynak": "ATS/IDSA TKP Kılavuzu, PCT çalışmaları"
+    },
+    {
+      "id": "tkp-s8",
+      "metin": "Altmış bir yaşında erkek hasta, sağ alt lob pnömonisi nedeniyle 4 gündür seftriakson + azitromisin alıyor. Ateşi sürüyor, sağ yan ağrısı artmış. Kontrol grafisinde sağ hemitoraksın yarısını dolduran plevral efüzyon saptanıyor; toraks USG'de septasyonlar izleniyor.\n\nTorasentez:\nGörünüm: bulanık, pürülan değil\npH 7.02; glukoz 32 mg/dL; LDH 2100 U/L\nGram boyama: mikroorganizma görülmedi\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tüp torakostomi ile drenaj; septasyonlu toplamada intraplevral tPA + DNaz, yanıtsızlıkta VATS",
+        "B": "Gram boyama negatif olduğundan antibiyotiğe devam edip 48 saat sonra torasentezi tekrarlamak",
+        "C": "Antibiyotiği meropenem + vankomisine yükseltip drenaj yapmadan izlemek",
+        "D": "Sistemik kortikosteroid ekleyip efüzyonun rezorbe olmasını beklemek"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Plevral sıvıda pH <7.20 ve glukoz <60 mg/dL = komplike parapnömonik efüzyon; Gram boyama negatif olsa bile drenaj gerekir. Septasyonda intraplevral tPA + DNaz, başarısızlıkta VATS.",
+      "aciklama_detay": "Pnömoni tedavisine rağmen ateşin sürmesi parapnömonik efüzyon ve ampiyem açısından değerlendirilmelidir. Plevral sıvı pH'sının 7.20'nin, glukozun 60 mg/dL'nin altında olması (belirgin LDH yüksekliği de destekler) plevral boşlukta bakteriyel invazyonu ve yoğun metabolik etkinliği gösterir; bu sıvı antibiyotikle kendiliğinden temizlenmez ve drenaj gerektirir. Pürülan görünüm ya da Gram boyama/kültür pozitifliği ampiyem demektir; ancak bunların negatif olması drenaj kararını değiştirmez. Septasyonlu, lokülasyonlu toplamada MIST2 çalışmasıyla desteklenen intraplevral tPA + DNaz kombinasyonu drenajı artırır ve cerrahi gereksinimini azaltır; yanıtsız olgularda VATS dekortikasyon yapılır. Plevral enfeksiyonda anaerop kapsamı da sağlanır ve antibiyotik süresi uzatılır.",
+      "secenekAciklamalari": {
+        "A": "Doğru — Komplike parapnömonik efüzyon ölçütleri karşılanıyor; drenaj + gerekirse fibrinolitik/DNaz, yanıtsızlıkta VATS.",
+        "B": "Yanlış — Gram boyamanın negatif olması komplike efüzyonu dışlamaz; pH <7.20 ve düşük glukoz tek başına drenaj endikasyonudur.",
+        "C": "Yanlış — Sorun antibiyotik spektrumu değil, drene edilmemiş enfekte plevral toplamadır; spektrum genişletmek drenajın yerini tutmaz.",
+        "D": "Yanlış — Kortikosteroidin parapnömonik efüzyonun rezorpsiyonunda yeri yoktur."
+      },
+      "etiketler": [
+        "Parapnömonik efüzyon",
+        "Ampiyem",
+        "Tüp torakostomi",
+        "tPA + DNaz"
+      ],
+      "zorluk": "orta",
+      "kaynak": "BTS 2023 plevral hastalık kılavuzu; MIST2 (Rahman NM ve ark. NEJM 2011)"
+    },
+    {
+      "id": "tkp-s9",
+      "metin": "Yirmi sekiz yaşında, bilinen hastalığı olmayan kadın hasta, 3 gündür ateş, balgamlı öksürük ve sağ yan ağrısıyla başvuruyor. Son 3 ayda antibiyotik kullanmamış; sigara ve alkol kullanmıyor.\n\nBulgular:\nAteş 38.4°C, SS 20/dk, TA 118/74 mmHg, SpO₂ %96 (oda havası), bilinç açık\nÜre normal; akciğer grafisinde sağ alt lobda konsolidasyon\n\nBölgede pnömokokların makrolid direnci %35 olarak bildiriliyor. ATS/IDSA 2019 kılavuzuna göre bu hasta için en uygun ampirik tedavi hangisidir?",
+      "secenekler": {
+        "A": "Azitromisin monoterapisi",
+        "B": "Levofloksasin 750 mg/gün",
+        "C": "Yüksek doz amoksisilin (1 g, günde 3 kez)",
+        "D": "Amoksisilin-klavulanat + azitromisin"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Komorbiditesi olmayan, MRSA/Pseudomonas riski taşımayan ayaktan TKP'de ilk seçenek yüksek doz amoksisilindir; makrolid monoterapisi yalnızca yerel direnç <%25 ise, florokinolon ise komorbiditeli hastalar için saklanır.",
+      "aciklama_detay": "Hastanın CURB-65 skoru 0'dır ve ayaktan izlenebilir. ATS/IDSA 2019 kılavuzu komorbiditesi olmayan ayaktan erişkinde amoksisilin 1 g günde 3 kez (güçlü öneri), doksisiklin ya da — yalnızca pnömokok makrolid direncinin %25'in altında olduğu bölgelerde — makrolid monoterapisi önerir. Direnç %35 olduğundan azitromisin uygun değildir. Solunum florokinolonları etkili olsa da tendinopati, QT uzaması, disglisemi, C. difficile ve direnç seçilimi riskleri nedeniyle komorbiditesiz hastada ilk seçenek değildir. Beta-laktam + makrolid kombinasyonu ya da florokinolon monoterapisi, komorbiditeli (kronik kalp, akciğer, karaciğer, böbrek hastalığı, diyabet, alkolizm, malignite, asplenia) ayaktan hastalar için ayrılmıştır. Tedavi en az 5 gün sürer ve klinik stabilite sağlanınca kesilir.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Yerel pnömokok makrolid direnci %25'in üzerinde; makrolid monoterapisi önerilmez.",
+        "B": "Yanlış — Etkili, ancak komorbiditesiz ayaktan hastada yan etki ve direnç kaygısı nedeniyle ilk seçenek değildir; komorbiditeli gruba saklanır.",
+        "C": "Doğru — Komorbiditesiz ayaktan TKP'de güçlü öneriyle ilk seçenek.",
+        "D": "Yanlış — Kombinasyon komorbiditeli ayaktan hastalar içindir; bu hastada gereksiz spektrum genişliği ve yan etki yükü getirir."
+      },
+      "etiketler": [
+        "Ayaktan TKP",
+        "Amoksisilin",
+        "Makrolid direnci",
+        "ATS/IDSA 2019"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "ATS/IDSA 2019 TKP Kılavuzu (Metlay JP ve ark.)"
+    },
+    {
+      "id": "tkp-s10",
+      "metin": "Yetmiş iki yaşında erkek hasta, 2 ay önce geçirdiği inme sonrası disfajiyle evde izleniyor. Yemek sırasında gelişen öksürük ve boğulma epizodundan 1 gün sonra ateş ve nefes darlığı başlıyor. Son 90 günde hastane yatışı ve IV antibiyotik kullanımı yok.\n\nBulgular:\nAteş 38.3°C, SS 24/dk, TA 128/76 mmHg, SpO₂ %92 (oda havası)\nAkciğer grafisi: sağ alt lob posterobazal segmentte konsolidasyon; kavite ya da plevral efüzyon yok\nAğız hijyeni iyi\n\nServise yatırılan bu hasta için ATS/IDSA 2019 kılavuzuna göre en uygun ampirik tedavi hangisidir?",
+      "secenekler": {
+        "A": "Seftriakson + azitromisin + metronidazol",
+        "B": "Klindamisin monoterapisi",
+        "C": "Meropenem + vankomisin",
+        "D": "Seftriakson + azitromisin; ek anaerop kapsamı olmadan"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Aspirasyon şüphesi olan TKP'de akciğer apsesi ya da ampiyem yoksa rutin anaerop kapsamı eklenmez; standart servis rejimi (β-laktam + makrolid) yeterlidir.",
+      "aciklama_detay": "Klasik öğretiye göre aspirasyon pnömonisi anaerop enfeksiyonudur; ancak güncel mikrobiyolojik çalışmalarda aspirasyonla ilişkili pnömonilerde etkenler çoğunlukla aerob solunum patojenleridir (S. pneumoniae, H. influenzae, S. aureus, gram-negatifler) ve anaeropların rolü sınırlıdır. ATS/IDSA 2019 kılavuzu bu nedenle aspirasyon şüphesinde rutin anaerop kapsamı eklenmemesini, akciğer apsesi ya da ampiyem varlığında eklenmesini önerir. Gereksiz metronidazol ya da klindamisin C. difficile riskini ve ilaç yükünü artırır. Bu hastada MRSA/Pseudomonas risk faktörü (son 90 günde yatış ve IV antibiyotik, önceki izolasyon) de yoktur; karbapenem ve anti-MRSA ajan gereksizdir. Disfaji değerlendirmesi ve beslenmenin düzenlenmesi tekrarı önlemenin parçasıdır.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Apse ya da ampiyem yokken metronidazol eklemek önerilmez; ek yarar göstermeden C. difficile riskini artırır.",
+        "B": "Yanlış — Klindamisin monoterapisi pnömokok ve H. influenzae kapsamı açısından güvenilmez; C. difficile riski yüksektir.",
+        "C": "Yanlış — MRSA/Pseudomonas risk faktörü yok; geniş spektrum gereksizdir.",
+        "D": "Doğru — Apse/ampiyem yokluğunda aspirasyon şüphesinde de standart servis rejimi yeterlidir."
+      },
+      "etiketler": [
+        "Aspirasyon pnömonisi",
+        "Anaerop kapsamı",
+        "Servis tedavisi",
+        "ATS/IDSA 2019"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ATS/IDSA 2019 TKP Kılavuzu (Metlay JP ve ark.)"
+    },
+    {
+      "id": "tkp-s11",
+      "metin": "Altmış yedi yaşında kadın hasta, 2 gündür yüksek ateş, nefes darlığı ve öksürükle başvuruyor.\n\nBulgular:\nBilinç açık, oryante\nAteş 39.1°C, SS 32/dk, TA 104/66 mmHg, nabız 112/dk\nArter kan gazı (2 L/dk nazal O₂ ile): PaO₂/FiO₂ 210\nBUN 26 mg/dL, lökosit 3.600/mm³, trombosit 140.000/mm³\nAkciğer grafisi: sağ alt ve sol alt lobda konsolidasyon\nVazopresör ihtiyacı yok; mekanik ventilasyon gerekmedi\n\nATS/IDSA ölçütlerine göre bu hastanın sınıflandırılması ve ampirik tedavisi için en doğru seçenek hangisidir?",
+      "secenekler": {
+        "A": "Majör ölçüt olmadığından ağır TKP değil; servis yatışı ve seftriakson + azitromisin",
+        "B": "Ağır TKP (≥3 minör ölçüt); YBÜ düzeyinde izlem ve β-laktam + makrolid",
+        "C": "Ağır TKP; YBÜ düzeyinde izlem ve levofloksasin monoterapisi",
+        "D": "Ağır TKP değil; servis yatışı ve levofloksasin monoterapisi"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Majör ölçüt olmasa da ≥3 minör ölçüt (burada 5: SS ≥30, PaO₂/FiO₂ ≤250, multilober tutulum, BUN ≥20, lökopeni) ağır TKP demektir; YBÜ düzeyinde izlem ve β-laktam + makrolid (ya da β-laktam + solunum florokinolonu) gerekir.",
+      "aciklama_detay": "ATS/IDSA ağır TKP tanımı: 1 majör ölçüt (vazopresör gerektiren septik şok ya da mekanik ventilasyon gerektiren solunum yetmezliği) veya ≥3 minör ölçüt. Minör ölçütler: SS ≥30/dk, PaO₂/FiO₂ ≤250, multilober infiltrat, konfüzyon/dezoryantasyon, üremi (BUN ≥20 mg/dL), enfeksiyona bağlı lökopeni (<4.000/mm³), trombositopeni (<100.000/mm³), hipotermi (<36°C) ve agresif sıvı resüsitasyonu gerektiren hipotansiyon. Bu hastada beş minör ölçüt vardır; lökopeni özellikle pnömokok ve gram-negatif bakteremiyle ilişkili kötü prognostik bir bulgudur. Ağır TKP'de ampirik tedavi β-laktam (seftriakson, sefotaksim, ampisilin-sulbaktam) + makrolid ya da β-laktam + solunum florokinolonudur; bu grupta florokinolon monoterapisi önerilmez. MRSA/Pseudomonas kapsamı yalnızca ilgili risk faktörleri varsa eklenir; kan ve balgam kültürleri ile idrar pnömokok ve Legionella antijenleri istenir.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Majör ölçüt şart değildir; ≥3 minör ölçüt tek başına ağır TKP tanımını karşılar ve servis düzeyi yetersizdir.",
+        "B": "Doğru — Beş minör ölçüt var; YBÜ düzeyinde izlem ve β-laktam + makrolid kombinasyonu.",
+        "C": "Yanlış — Sınıflama doğru, ancak ağır TKP'de florokinolon monoterapisi önerilmez; kombinasyon gerekir.",
+        "D": "Yanlış — Hem sınıflama (ağır TKP) hem tedavi (monoterapi) yanlıştır."
+      },
+      "etiketler": [
+        "Ağır TKP",
+        "ATS/IDSA minör ölçütler",
+        "YBÜ kararı",
+        "Kombinasyon tedavisi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "IDSA/ATS 2007 ağır TKP ölçütleri; ATS/IDSA 2019 TKP Kılavuzu (Metlay JP ve ark.)"
+    },
+    {
+      "id": "tkp-s12",
+      "metin": "Elli dokuz yaşında erkek hasta, 5 hafta önce selülit nedeniyle hastanede yatmış ve IV vankomisin almış. Şimdi ağır TKP tanısıyla YBÜ'ye alınıyor; kültürler alındıktan sonra seftriakson + azitromisin + vankomisin başlanıyor.\n\n48. saat:\nAteş düşmüş, vazopresör gerekmemiş, oksijen ihtiyacı azalıyor\nNazal MRSA PCR: negatif\nKan kültürleri ve kaliteli balgam kültürü: üreme yok\nİdrar pnömokok antijeni: pozitif\n\nBu aşamada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Vankomisine 7 gün tamamlanana kadar devam etmek",
+        "B": "Vankomisini linezolide değiştirmek",
+        "C": "Vankomisini kesip seftriakson temelli tedaviye devam etmek",
+        "D": "Tüm tedaviyi meropeneme değiştirmek"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Nazal MRSA PCR'ın pnömonide negatif prediktif değeri çok yüksektir; kültürleri negatif ve klinik yanıtı iyi olan hastada 48. saatte anti-MRSA tedavi kesilir.",
+      "aciklama_detay": "ATS/IDSA 2019 kılavuzu, son 90 günde hastane yatışı ve IV antibiyotik öyküsü olan ağır TKP hastasında kültürler alınarak ampirik anti-MRSA tedavi başlanmasını ve kültür ya da nazal PCR sonucuna göre de-eskalasyon yapılmasını önerir. Nazal MRSA PCR'ın pnömonideki negatif prediktif değeri %95'in üzerindedir; negatif sonuç, kültür negatifliği ve klinik iyileşme birlikte olduğunda vankomisin güvenle kesilir. Gereksiz vankomisin devamı akut böbrek hasarı (özellikle piperasilin-tazobaktamla birlikte), direnç ve maliyet artışı demektir. İdrar pnömokok antijeninin pozitifliği etkeni büyük olasılıkla S. pneumoniae olarak gösterir; β-laktam temelli tedaviye devam edilir ve toplam süre klinik stabiliteye göre belirlenir (en az 5 gün).",
+      "secenekAciklamalari": {
+        "A": "Yanlış — MRSA dışlanmışken anti-MRSA tedaviye devam etmek gereksiz nefrotoksisite ve direnç riski getirir.",
+        "B": "Yanlış — Sorun ajan seçimi değil endikasyonun kalmamasıdır; linezolide geçmek de gereksiz anti-MRSA kapsamını sürdürür.",
+        "C": "Doğru — Nazal PCR ve kültürler negatif, klinik yanıt var: anti-MRSA kesilir, pnömokok tedavisi sürdürülür.",
+        "D": "Yanlış — Klinik olarak iyileşen ve etkeni pnömokok olan hastada spektrumu genişletmek de-eskalasyon ilkesine terstir."
+      },
+      "etiketler": [
+        "MRSA nazal PCR",
+        "De-eskalasyon",
+        "Ağır TKP",
+        "Vankomisin"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ATS/IDSA 2019 TKP Kılavuzu (Metlay JP ve ark.)"
+    },
+    {
+      "id": "tkp-s13",
+      "metin": "Yirmi iki yaşında erkek üniversite öğrencisi, 10 gündür yavaş başlayan kuru öksürük, baş ağrısı, halsizlik ve düşük dereceli ateşle başvuruyor. Yurtta aynı odayı paylaştığı arkadaşında da benzer yakınmalar var. Otoskopide timpan zarında büllöz lezyonlar izleniyor. Akciğer grafisinde bilateral yamalı interstisyel infiltratlar var; fizik muayene bulguları radyolojiye göre silik.\n\nTetkikler:\nHb 9.8 g/dL, retikülosit %6, LDH ↑, indirekt bilirubin ↑, haptoglobin ↓\nDirekt Coombs: C3d pozitif, IgG negatif\nOda ısısında bekletilen tüpte eritrosit kümelenmesi\n\nBu hastadaki aneminin mekanizması ve uygun antimikrobiyal tedavi hangisidir?",
+      "secenekler": {
+        "A": "Anti-I özgüllüklü IgM soğuk aglütininler — azitromisin",
+        "B": "IgG sıcak otoantikorlar — yüksek doz amoksisilin",
+        "C": "Anti-i özgüllüklü IgM soğuk aglütininler — seftriakson",
+        "D": "Donath-Landsteiner (IgG anti-P) antikoru — doksisiklin"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Genç hasta, toplu yaşam, büllöz miringit, radyoloji-muayene uyumsuzluğu ve soğuk aglütinin hemolizi = Mycoplasma pneumoniae. Antikor anti-I IgM'dir; hücre duvarı olmadığından β-laktamlar etkisizdir, makrolid (ya da doksisiklin/solunum florokinolonu) kullanılır.",
+      "aciklama_detay": "M. pneumoniae 'yürüyen pnömoni' tablosu yapar: yavaş başlangıç, kuru öksürük, baş ağrısı ve muayeneye göre belirgin radyolojik tutulum. Ekstrapulmoner bulgular arasında büllöz miringit, mukozit/eritema multiforme, ensefalit ve soğuk aglütinin hemolizi sayılır. Mycoplasma antijenlerine karşı gelişen ve eritrosit I antijeniyle çapraz reaksiyon veren IgM soğuk aglütininler (anti-I) eritrositlere düşük ısıda bağlanır, kompleman aktivasyonuyla ağırlıklı olarak ekstravasküler (karaciğerde, C3b aracılı) hemoliz yapar; direkt Coombs tipik olarak yalnız C3d ile pozitiftir. Anti-i özgüllüğü ise EBV enfeksiyonuna özgüdür. Hücre duvarı içermeyen Mycoplasma'ya β-laktamlar etkisizdir; tedavide azitromisin, doksisiklin ya da solunum florokinolonu kullanılır (makrolid direncinin yüksek olduğu bölgelerde doksisiklin ya da florokinolon seçilir). Soğuk aglütinin hemolizi çoğunlukla geçicidir; hastanın soğuktan korunması önerilir.",
+      "secenekAciklamalari": {
+        "A": "Doğru — Mycoplasma ile ilişkili soğuk aglütininler anti-I özgüllüklü IgM'dir; makrolid etkili tedavidir.",
+        "B": "Yanlış — Coombs'ta IgG yok, yalnız C3d var; sıcak otoimmün hemoliz değildir. Amoksisilin hücre duvarsız Mycoplasma'ya etkisizdir.",
+        "C": "Yanlış — Anti-i özgüllüğü EBV ile ilişkilidir; seftriakson da Mycoplasma'ya etkisizdir.",
+        "D": "Yanlış — Donath-Landsteiner antikoru bifazik, intravasküler hemoliz yapan bir IgG'dir ve aglütinasyon yapmaz; paroksismal soğuk hemoglobinüride, çoğunlukla çocuklarda görülür."
+      },
+      "etiketler": [
+        "Mycoplasma pneumoniae",
+        "Soğuk aglütinin",
+        "Büllöz miringit",
+        "Atipik pnömoni"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    },
+    {
+      "id": "tkp-s14",
+      "metin": "Altmış yedi yaşında erkek hasta, bakteriyemik pnömokok pnömonisi nedeniyle 6 gün yatarak tedavi görmüş ve taburculuk planlanıyor. Tip 2 diyabeti var. Daha önce hiç pnömokok aşısı olmamış; bu sonbaharda influenza aşısı da yapılmamış.\n\nACIP 2024 önerilerine göre pnömokok aşılaması için en uygun plan hangisidir?",
+      "secenekler": {
+        "A": "Pnömokok enfeksiyonu geçirdiği için bağışıklık gelişmiştir; aşı gerekmez",
+        "B": "Yalnızca PPSV23; 5 yılda bir tekrarlanarak",
+        "C": "PCV13 ve 1 hafta sonra PPSV23",
+        "D": "Tek doz PCV20 ya da PCV21; ayrıca PPSV23 gerekmez"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Daha önce konjuge pnömokok aşısı almamış ≥50 yaş erişkinde ACIP 2024: tek doz PCV20 ya da PCV21 yeterlidir (alternatif: PCV15 ve ≥1 yıl sonra PPSV23). Geçirilmiş pnömokok enfeksiyonu diğer serotiplere karşı koruma sağlamaz.",
+      "aciklama_detay": "Pnömokok enfeksiyonu yalnızca etken serotipe karşı ve sınırlı süreli bağışıklık bırakır; invaziv pnömokok hastalığı geçiren kişi yeniden risk altındadır ve aşılanmalıdır. ACIP Ekim 2024'te konjuge pnömokok aşısı için yaş eşiğini 65'ten 50'ye indirmiştir. Daha önce konjuge aşı almamış erişkinde tek doz PCV20 ya da PCV21 yeterlidir; PCV15 seçilirse en az 1 yıl sonra (immünsüpresyon, koklear implant ya da BOS kaçağında en az 8 hafta sonra) PPSV23 eklenir. PCV13 artık erişkin şemasında yer almaz. PPSV23 tek başına T hücreden bağımsız yanıt oluşturduğu için bellek yanıtı zayıftır. Akut hastalık düzeldikten sonra aşı taburculukta yapılabilir; mevsiminde influenza aşısı da eklenmelidir.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Geçirilmiş enfeksiyon yalnızca tek serotipe sınırlı bağışıklık bırakır; aşılama endikedir.",
+        "B": "Yanlış — PPSV23 tek başına artık önerilmez; T hücreden bağımsız yanıt nedeniyle bellek oluşturmaz ve rutin 5 yıllık tekrar şeması yoktur.",
+        "C": "Yanlış — PCV13 erişkin şemasından çıkmıştır; ayrıca PPSV23 konjuge aşıdan en az 1 yıl (seçilmiş risk gruplarında en az 8 hafta) sonra yapılır.",
+        "D": "Doğru — Konjuge aşı almamış ≥50 yaş erişkinde tek doz PCV20 ya da PCV21 yeterlidir."
+      },
+      "etiketler": [
+        "Pnömokok aşısı",
+        "PCV20/PCV21",
+        "ACIP 2024",
+        "Korunma"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "ACIP 2024 erişkin pnömokok aşısı önerileri"
+    },
+    {
+      "id": "tkp-s15",
+      "metin": "Otuz dokuz yaşında, bilinen hastalığı olmayan kadın hasta, 4 gündür ateş ve öksürükle başvuruyor.\n\nBulgular:\nBilinç açık; ateş 38.6°C; SS 22/dk; nabız 104/dk; TA 122/78 mmHg\nSpO₂ oda havasında %86; arter kan gazında PaO₂ 54 mmHg\nBUN, glukoz, hematokrit ve sodyum normal\nAkciğer grafisi: sol alt lob konsolidasyonu, plevral efüzyon yok\nPSI: düşük risk sınıfı; CURB-65: 0\n\nBu hasta için en uygun bakım yeri kararı hangisidir?",
+      "secenekler": {
+        "A": "Düşük risk skoru nedeniyle ayaktan oral amoksisilin ve 48 saat sonra kontrol",
+        "B": "Hastaneye yatış ve oksijen tedavisi; hipoksemi skordan bağımsız yatış gerektirir",
+        "C": "Acil serviste tek doz IV seftriakson sonrası ayaktan tedavi",
+        "D": "Ayaktan tedavi; oksijen gereksinimi evde oksijen konsantratörüyle karşılanır"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "PSI ve CURB-65 kararı destekler, belirlemez: oda havasında SpO₂ <%90 ya da PaO₂ <60 mmHg olan hasta skor düşük olsa bile yatırılır.",
+      "aciklama_detay": "ATS/IDSA 2019 kılavuzu bakım yeri kararında PSI'yi (CURB-65'e tercihen) klinik yargıyla birlikte kullanmayı önerir. Skorlar bazı önemli yatış gerekçelerini ya hiç içermez ya da düşük ağırlıkla içerir: yeni oksijen gereksinimi ya da hipoksemi (PSI'de yalnız 10 puan, CURB-65'te hiç yok), oral alamama, psikososyal sorunlar, kontrolsüz komorbidite. Genç ve komorbiditesiz hastada yaş puanı düşük olduğundan ağır hipoksemi bile skoru düşük risk sınıfında tutabilir. PaO₂ <60 mmHg ya da SpO₂ <%90 olan hasta ayaktan izlenmez; yatırılır, oksijen verilir ve servis rejimi (β-laktam + makrolid ya da solunum florokinolonu) başlanır. Genç hastada beklenenden ağır hipoksemi Legionella, influenza, COVID-19 gibi etkenler açısından da ipucudur.",
+      "secenekAciklamalari": {
+        "A": "Yanlış — Skor düşük olsa da ağır hipoksemi başlı başına yatış endikasyonudur; skorlar klinik yargının yerini almaz.",
+        "B": "Doğru — Oda havasında PaO₂ <60 mmHg: yatış ve oksijen; skor kararı destekler, belirlemez.",
+        "C": "Yanlış — Tek doz IV antibiyotik hipoksemiyi düzeltmez; oksijen gereksinimi ayaktan izlemi güvensiz kılar.",
+        "D": "Yanlış — Akut pnömonide yeni gelişen hipoksemi, gözlem ve tedavi yanıtının izlenmesini gerektiren bir ağırlık bulgusudur; evde oksijenle ayaktan izlem önerilmez."
+      },
+      "etiketler": [
+        "PSI",
+        "Bakım yeri kararı",
+        "Hipoksemi",
+        "Klinik yargı"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "ATS/IDSA 2019 TKP Kılavuzu (Metlay JP ve ark.)"
     }
   ]
 }

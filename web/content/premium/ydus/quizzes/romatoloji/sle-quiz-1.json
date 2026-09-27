@@ -303,6 +303,156 @@
       ],
       "zorluk": "orta",
       "kaynak": "Fanouriakis et al. Ann Rheum Dis 2019 (EULAR Recommendations); Md Yusof et al. Ann Rheum Dis 2017"
+    },
+    {
+      "id": "s11",
+      "metin": "Otuz üç yaşında kadın hasta, altı yıldır SLE tanısıyla izleniyor. Hidroksiklorokin 400 mg/gün (80 kg), metotreksat 20 mg/hafta ve prednizolon 10 mg/gün kullanmasına rağmen altı eklemde aktif artrit ve yaygın subakut kutanöz lupus lezyonları sürüyor. Böbrek ve SSS tutulumu yok. Anifrolumab başlanması planlanıyor.\n\nBu ilacın etki mekanizması ve tedavi öncesi danışmanlıkta öne çıkarılması gereken ilaca özgü risk hangisidir?",
+      "secenekler": {
+        "A": "BLyS/BAFF blokajı — depresyon ve intihar düşüncesi uyarısı",
+        "B": "CD20 pozitif B hücre deplesyonu — PML ve hipogamaglobulinemi",
+        "C": "Kalsinörin inhibisyonu — eGFR düşüşü ve hipertansiyon",
+        "D": "Tip I interferon reseptörü (IFNAR1) blokajı — herpes zoster",
+        "E": "IL-6 reseptör blokajı — divertikül perforasyonu"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Anifrolumab, tip I interferon reseptörünün 1. alt birimine (IFNAR1) bağlanan monoklonal antikordur; standart tedaviye rağmen aktif orta-ağır SLE'de (özellikle deri ve eklem) kullanılır. TULIP çalışmalarında en belirgin güvenlik sinyali herpes zoster artışıdır.",
+      "aciklama_detay": "SLE hastalarının çoğunda kanda tip I interferonla uyarılan genlerin ekspresyonu artmıştır (interferon imzası). Anifrolumab, IFNAR1'e bağlanarak tüm tip I interferonların sinyalini keser. TULIP-2 çalışmasında standart tedaviye eklenen anifrolumab, BICLA yanıtını, glukokortikoid azaltmayı ve deri hastalığı aktivitesini plaseboya göre anlamlı iyileştirdi. Aktif ağır lupus nefriti ve nöropsikiyatrik lupus çalışmalara alınmadığından bu tablolarda kullanılmaz. En sık ve ilaca özgü güvenlik sorunu herpes zoster (çoğunlukla deri ile sınırlı) ve üst solunum yolu enfeksiyonlarıdır; bu nedenle tedavi öncesi rekombinant zoster aşısı düşünülmelidir. EULAR 2023 SLE önerileri, HCQ ve glukokortikoide yanıtsız ya da steroid azaltılamayan hastalarda belimumab ya da anifrolumab eklenmesini önerir. Diğer şıklardaki mekanizma-risk eşleşmeleri başka ilaçlara aittir: belimumab (BAFF, psikiyatrik olaylar), rituksimab (CD20, PML, hipogamaglobulinemi), voklosporin (kalsinörin, eGFR düşüşü), tosilizumab (IL-6R, divertikül perforasyonu).",
+      "secenekAciklamalari": {
+        "A": "YANLIS — BAFF blokajı ve psikiyatrik olay uyarısı belimumaba aittir.",
+        "B": "YANLIS — CD20 deplesyonu, PML ve hipogamaglobulinemi rituksimaba aittir.",
+        "C": "YANLIS — Kalsinörin inhibisyonu ve eGFR düşüşü voklosporin/takrolimusa aittir.",
+        "D": "DOGRU — Anifrolumab IFNAR1 antagonistidir; herpes zoster riski artışı ilaca özgü başlıca güvenlik sinyalidir.",
+        "E": "YANLIS — IL-6R blokajı ve divertikül perforasyonu tosilizumaba aittir."
+      },
+      "etiketler": [
+        "Anifrolumab",
+        "Tip I İnterferon",
+        "Herpes Zoster",
+        "Biyolojik Tedavi",
+        "TULIP-2"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Morand et al. N Engl J Med 2020 (TULIP-2); Fanouriakis et al. Ann Rheum Dis 2024 (EULAR 2023 SLE önerileri)"
+    },
+    {
+      "id": "s12",
+      "metin": "Otuz sekiz yaşında kadın hasta, SLE tanısıyla izleniyor. İki yıl önce provoke edici etken olmadan sol proksimal derin ven trombozu geçirmiş. On iki hafta arayla tekrarlanan testlerde lupus antikoagülanı, yüksek titre antikardiyolipin IgG ve anti-β2-glikoprotein I IgG pozitif. O zamandan beri varfarin kullanıyor; INR düzenli olarak 2–3 aralığında, kanama olmamış. INR takibinden sıkıldığı için rivaroksabana geçmek istiyor.\n\nBu hasta için en uygun antitrombotik yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Varfarine hedef INR 2–3 ile devam etmek",
+        "B": "Rivaroksaban 20 mg/gün'e geçmek; DOAC'lar tüm APS hastalarında varfarinle eşdeğerdir",
+        "C": "Antikoagülanı kesip düşük doz aspirine geçmek",
+        "D": "İdame için apiksaban 2.5 mg günde iki kez başlamak",
+        "E": "Varfarinin hedef INR aralığını 3–4'e yükseltmek"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Üçlü antifosfolipid pozitifliği olan APS'de rivaroksaban, özellikle arteriyel olaylarda artmış tekrarlama riski nedeniyle önerilmez (TRAPS). İlk venöz trombozdan sonra standart tedavi hedef INR 2–3 ile uzun süreli K vitamini antagonistidir.",
+      "aciklama_detay": "SLE'deki antifosfolipid antikorlar tromboz, gebelik kaybı ve hasar birikimiyle ilişkilidir. Bu hastada provoke edilmemiş DVT ve kalıcı üçlü pozitiflik (LA + aCL + anti-β2GPI) ile kesin APS vardır; bu, en yüksek tekrarlama riski profilidir. TRAPS çalışmasında yüksek riskli (üçlü pozitif) APS hastalarında rivaroksaban kolunda, özellikle arteriyel olaylar (inme, MI) varfarine göre fazla görüldü ve çalışma erken durduruldu. EULAR 2019 APS önerileri, ilk venöz trombozdan sonra hedef INR 2–3 ile K vitamini antagonistini önerir; rivaroksaban üçlü pozitif hastalarda kullanılmamalıdır. DOAC'lar, uyumlu olmasına rağmen hedef INR'ye ulaşamayan ya da VKA kontrendikasyonu olan seçilmiş hastalarda düşünülebilir. Provoke edilmemiş olayda antikoagülasyon uzun sürelidir; yüksek yoğunluklu (INR 3–4) tedavi ilk venöz olay için önerilmez. Bu hastada INR takibini kolaylaştırmak için evde INR ölçüm cihazı gibi seçenekler konuşulabilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Üçlü pozitif APS'de ilk venöz trombozdan sonra hedef INR 2–3 ile varfarin standart ve güvenli seçenektir.",
+        "B": "YANLIS — TRAPS çalışmasında üçlü pozitif hastalarda rivaroksabanla tromboembolik olaylar arttı; DOAC'lar tüm APS'de eşdeğer değildir.",
+        "C": "YANLIS — Provoke edilmemiş tromboz geçirmiş yüksek riskli APS'de antikoagülanı kesmek tekrarlama riskini belirgin artırır; aspirin yeterli değildir.",
+        "D": "YANLIS — DOAC'lar üçlü pozitif APS'de önerilmez; azaltılmış doz apiksaban bu grupta daha da yetersizdir.",
+        "E": "YANLIS — Yüksek yoğunluklu varfarin ilk venöz olay için önerilmez ve kanama riskini artırır."
+      },
+      "etiketler": [
+        "Antifosfolipid Sendromu",
+        "Üçlü Pozitiflik",
+        "Varfarin",
+        "DOAC",
+        "TRAPS"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Tektonidou et al. Ann Rheum Dis 2019 (EULAR APS önerileri); Pengo et al. Blood 2018 (TRAPS)"
+    },
+    {
+      "id": "s13",
+      "metin": "Altmış dokuz yaşında erkek hasta, altı haftadır ateş, eklem ağrısı, kas ağrısı ve plöritik göğüs ağrısıyla başvuruyor. Üç yıldır dirençli hipertansiyon ve kalp yetmezliği nedeniyle hidralazin 50 mg günde üç kez, isosorbid dinitrat ve diüretik kullanıyor.\n\nTetkikler:\n- Akciğer grafisi: sol küçük plevral efüzyon\n- ANA: 1:1280, homojen patern\n- Anti-histon antikoru: pozitif\n- Anti-dsDNA ve anti-Sm: negatif\n- C3, C4: normal\n- Tam idrar tetkiki ve kreatinin: normal\n- ANCA: negatif\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Hidralazine devam edip hidroksiklorokin eklemek",
+        "B": "Sistemik SLE kabul edip mikofenolat mofetil ile indüksiyon başlamak",
+        "C": "Böbrek tutulumunu dışlamak için böbrek biyopsisi yapmak",
+        "D": "Anti-dsDNA negatif olduğundan lupus dışlanır; hidralazine devam edip başka neden aramak",
+        "E": "Hidralazini kesip gerekirse kısa süreli semptomatik tedavi vermek"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "İleri yaşta, uzun süreli hidralazin kullanımı sonrası ateş, artralji ve serozit; yüksek titre ANA, anti-histon pozitifliği, negatif anti-dsDNA, normal kompleman ve böbrek tutulumu olmaması ilaca bağlı lupusu gösterir. Tedavinin temeli ilacın kesilmesidir.",
+      "aciklama_detay": "İlaca bağlı lupus en sık hidralazin, prokainamid, izoniazid, minosiklin, kinidin ve anti-TNF ajanlarla ilişkilidir. Hidralazin ve prokainamidde risk doz ve süreyle artar ve yavaş asetilleyicilerde daha yüksektir. Klinik tablo genellikle hafiftir: ateş, artralji/artrit, miyalji ve serozit (plörit, perikardit). Böbrek ve SSS tutulumu nadirdir. Anti-histon antikorları olguların büyük çoğunluğunda pozitiftir; anti-dsDNA ve anti-Sm genellikle negatif, kompleman normaldir. İstisna anti-TNF ile ilişkili lupustur: burada anti-dsDNA sıklıkla pozitiftir ve anti-histon daha az sıktır. Tedavi sorumlu ilacın kesilmesidir; semptomlar genellikle haftalar içinde geriler, serolojinin normalleşmesi aylar sürebilir. Belirgin serozitte NSAİİ ya da kısa süreli düşük doz glukokortikoid verilebilir. Hidralazin ayrıca MPO-ANCA ile ilişkili vaskülit ve glomerülonefrite yol açabilir; bu nedenle ANCA ve idrar tetkiki kontrol edilmelidir. Kalp yetmezliğindeki hidralazin-nitrat kombinasyonunun yerine uygun bir alternatif kardiyolojiyle planlanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sorumlu ilaca devam edildikçe tablo sürer; önce ilacın kesilmesi gerekir.",
+        "B": "YANLIS — Organ tehdit eden tutulumu olmayan ilaca bağlı lupusta indüksiyon immünsüpresyonu gereksizdir.",
+        "C": "YANLIS — İdrar tetkiki ve kreatinin normaldir; böbrek biyopsisi endikasyonu yoktur.",
+        "D": "YANLIS — İlaca bağlı lupusta anti-dsDNA tipik olarak negatiftir; negatifliği lupusu dışlamaz, ilaca devam etmek yanlıştır.",
+        "E": "DOGRU — Hidralazinin kesilmesi tedavinin temelidir; semptomlar kısa süreli semptomatik tedaviyle kontrol edilir."
+      },
+      "etiketler": [
+        "İlaca Bağlı Lupus",
+        "Hidralazin",
+        "Anti-histon",
+        "Serozit",
+        "Ayırıcı Tanı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Loscalzo J ve ark., ed. Harrison's Principles of Internal Medicine. 22. baskı. McGraw Hill; 2025 (SLE bölümü)"
+    },
+    {
+      "id": "s14",
+      "metin": "Otuz bir yaşında kadın hasta, dört yıl önce sınıf III lupus nefriti geçirmiş; iki yıldır hidroksiklorokin ve azatiyoprin ile tam remisyonda. İlk gebeliğinin 32. haftasında baş ağrısı ve bacak ödemiyle başvuruyor. Gebelik öncesi proteinüri 0.2 g/gün, KB normalmiş.\n\nTetkikler:\n- KB: 158/102 mmHg\n- Proteinüri: 2.4 g/gün; idrar sedimenti: dismorfik eritrosit ve silendir yok\n- Trombosit: 92.000/mm³, AST/ALT: 110/130 U/L, LDH: 620 U/L\n- C3 ve C4: normal (ilk trimesterdekinden yüksek)\n- Anti-dsDNA: düşük titre, önceki ölçümlerle aynı\n- Antifosfolipid antikorları: negatif\n- sFlt-1/PlGF oranı: 180\n\nEn olası tanı ve yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Lupus nefriti alevlenmesi — pulse metilprednizolon ve mikofenolat mofetil",
+        "B": "Lupus nefriti alevlenmesi ayrımı için acil böbrek biyopsisi",
+        "C": "HELLP bulgulu preeklampsi — magnezyum sülfat, KB kontrolü, doğum planı",
+        "D": "Trombotik trombositopenik purpura — ADAMTS13 beklenmeden plazma değişimi",
+        "E": "Katastrofik antifosfolipid sendromu — antikoagülan, steroid ve IVIG"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Gebeliğin ikinci yarısında yeni hipertansiyon + proteinüri, trombositopeni, transaminaz ve LDH yüksekliği, inaktif sediment, normal/yükselen kompleman, stabil anti-dsDNA ve yüksek sFlt-1/PlGF oranı lupus alevlenmesinden çok preeklampsiyi (HELLP) gösterir.",
+      "aciklama_detay": "Lupus nefriti öyküsü olan gebede proteinüri artışı iki ana tabloyu düşündürür: lupus nefriti alevlenmesi ve preeklampsi. Ayırımda yardımcı ipuçları: alevlenmede aktif idrar sedimenti (dismorfik eritrosit, eritrosit silendiri), düşen C3/C4 ve yükselen anti-dsDNA, sıklıkla ekstrarenal lupus bulguları beklenir; gebelikte kompleman fizyolojik olarak yükseldiğinden 'normal' düzey bile önceki değere göre düşüş anlamına gelebilir, bu yüzden eğilim önemlidir. Preeklampside ise yirminci haftadan sonra yeni ya da ağırlaşan hipertansiyon, inaktif sediment, hiperürisemi, trombositopeni, karaciğer enzim yüksekliği (HELLP) ve yüksek sFlt-1/PlGF oranı görülür. Bu hastada kompleman yükselmiş, anti-dsDNA stabil, sediment inaktif ve sFlt-1/PlGF oranı belirgin yüksektir. Tedavi obstetriktir: nöbet profilaksisi için magnezyum sülfat, ağır hipertansiyonun kontrolü, fetal değerlendirme ve doğum zamanlaması. Mikofenolat gebelikte teratojeniktir; böbrek biyopsisi üçüncü trimesterde yüksek risklidir ve yönetimi değiştirmeyecektir. Lupus gebeliklerinde düşük doz aspirin preeklampsi profilaksisi olarak ilk trimesterden itibaren önerilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Aktif sediment, kompleman düşüşü ve anti-dsDNA yükselişi yoktur; ayrıca MMF gebelikte teratojeniktir.",
+        "B": "YANLIS — Üçüncü trimesterde biyopsinin riski yüksektir; klinik ve biyokimyasal veriler zaten preeklampsiyi göstermektedir.",
+        "C": "DOGRU — Yeni hipertansiyon, proteinüri, HELLP bulguları, inaktif serolojik profil ve yüksek sFlt-1/PlGF preeklampsiyi gösterir; tedavi obstetriktir.",
+        "D": "YANLIS — TTP'de ağır hipertansiyon ve belirgin transaminaz yüksekliği beklenmez; gebeliğin 32. haftasında bu tablo öncelikle HELLP'i düşündürür.",
+        "E": "YANLIS — Antifosfolipid antikorları negatiftir ve çoklu organ trombozu kanıtı yoktur."
+      },
+      "etiketler": [
+        "Gebelik",
+        "Preeklampsi",
+        "Lupus Nefriti Alevlenmesi",
+        "HELLP",
+        "sFlt-1/PlGF"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Andreoli et al. Ann Rheum Dis 2017 (EULAR gebelik önerileri); Bermas BL, Smith NA. Pregnancy in women with systemic lupus erythematosus. UpToDate"
+    },
+    {
+      "id": "s15",
+      "metin": "Yirmi dört yaşında kadın hasta, üç aydır halsizlik ve saç dökülmesi yakınmasıyla başvuruyor. Muayenede ağrısız oral ülserler ve skarsız yaygın saç dökülmesi var. Son iki haftada enfeksiyon odağı bulunamayan 38.6 °C ateşi olmuş; kültürler ve viral testler negatif. Eklem, deri döküntüsü, serozit ya da nörolojik bulgu yok.\n\nTetkikler:\n- ANA: 1:640, homojen\n- Anti-dsDNA ve anti-Sm: negatif\n- C3: düşük, C4: normal\n- Antikardiyolipin IgG: orta-yüksek titre pozitif\n- Tam kan sayımı ve tam idrar tetkiki: normal\n\n2019 EULAR/ACR SLE sınıflama ölçütlerine göre bu hasta için hangisi doğrudur?",
+      "secenekler": {
+        "A": "Toplam 11 puan; SLE olarak sınıflanır",
+        "B": "Toplam 9 puan; sınıflama eşiği karşılanmaz",
+        "C": "ANA ≥1:80 ve en az bir klinik ölçüt bulunduğu için puandan bağımsız sınıflanır",
+        "D": "Toplam 7 puan; antifosfolipid antikorları puanlamaya katılmaz",
+        "E": "Anti-dsDNA ve anti-Sm negatif olduğu için ölçütler uygulanamaz"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Her alanda yalnızca en yüksek puanlı ölçüt sayılır: mukokutanöz alanda oral ülser ve skarsız alopesi (2'şer) birlikte 2 puan verir. Ateş (2) + tek başına düşük C3 (3) + antikardiyolipin (2) ile toplam 9 puandır; eşik ≥10 olduğundan sınıflanmaz.",
+      "aciklama_detay": "2019 EULAR/ACR ölçütlerinde giriş koşulu ANA ≥1:80'dir. Ardından klinik (anayasal, hematolojik, nöropsikiyatrik, mukokutanöz, seröz, kas-iskelet, renal) ve immünolojik (antifosfolipid, kompleman, SLE'ye özgü antikor) alanlarda ağırlıklı puanlama yapılır. Sınıflama için toplam ≥10 puan ve en az bir klinik ölçüt gerekir. Kritik kurallar: her alanda yalnızca en yüksek puanlı ölçüt toplama eklenir; bir ölçüt başka bir nedenle daha iyi açıklanıyorsa sayılmaz; ölçütün en az bir kez görülmüş olması yeterlidir. Bu hastada: ateş 2 puan (enfeksiyon dışlanmış), mukokutanöz alanda skarsız alopesi 2 ve oral ülser 2 olmakla birlikte yalnızca biri sayılır (2 puan), düşük C3 ya da düşük C4 tek başına 3 puan (ikisi birlikte düşük olsaydı 4), antikardiyolipin antikoru 2 puan. Toplam 2 + 2 + 3 + 2 = 9 puandır. Sınıflama ölçütlerinin tanı ölçütü olmadığı unutulmamalıdır: bu hasta yakından izlenir, idrar ve kan sayımı tekrarlanır; hekim uygun görürse erken dönemde hidroksiklorokin başlanabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Oral ülser ve alopesi aynı alanda olduğundan ikisi toplanamaz; 11 puan hatalı hesaptır.",
+        "B": "DOGRU — Ateş 2 + mukokutanöz 2 + düşük C3 3 + antikardiyolipin 2 = 9; eşik olan 10'un altındadır.",
+        "C": "YANLIS — ANA yalnızca giriş koşuludur; sınıflama için ayrıca ≥10 puan gerekir.",
+        "D": "YANLIS — Antifosfolipid antikorları immünolojik alanda 2 puan olarak sayılır; toplam 7 değil 9'dur.",
+        "E": "YANLIS — Anti-dsDNA/anti-Sm yalnızca bir immünolojik alandır; negatif olmaları ölçütlerin uygulanmasını engellemez."
+      },
+      "etiketler": [
+        "2019 EULAR/ACR Ölçütleri",
+        "Sınıflama",
+        "Puanlama",
+        "ANA",
+        "Kompleman"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Aringer et al. Arthritis Rheumatol 2019 (2019 EULAR/ACR SLE Classification Criteria)"
     }
   ]
 }

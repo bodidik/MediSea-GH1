@@ -303,6 +303,156 @@
       ],
       "zorluk": "zor",
       "kaynak": "Ugurlu et al. Rheumatology 2017; Akar & Ozen Int J Rheum Dis 2020"
+    },
+    {
+      "id": "s11",
+      "metin": "Yirmi üç yaşında erkek hasta, son bir yılda dört kez tekrarlayan ateş ve sağ ayak bileği-ayak sırtında ağrılı kızarıklık ile başvuruyor. Lezyon 10–15 cm çapında, sıcak, hassas ve sınırları keskin; her seferinde antibiyotik verilmeden 48–72 saatte iz bırakmadan geçmiş. Daha önce 1–2 gün süren ateşli karın ağrısı atakları olmuş; ağabeyine normal apendiks çıkarılan bir apendektomi yapılmış. Atak sırasında CRP 120 mg/L, ataklar arasında normal.\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tekrarlayan selülit kabul edilip uzun süreli penisilin profilaksisi başlamak",
+        "B": "Eritema nodozum kabul edilip Behçet hastalığı ve sarkoidoz yönünden araştırmak",
+        "C": "Akut gut artriti kabul edilip serum ürik asit düzeyine göre allopürinol başlamak",
+        "D": "Erizipel benzeri eritem (FMF) düşünüp MEFV analizi istemek ve kolşisin başlamak",
+        "E": "Sweet sendromu düşünüp kemik iliği incelemesi yapmak"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Alt ekstremitede, çoğunlukla ayak bileği-ayak sırtında, 2–3 günde kendiliğinden geçen, sınırları keskin, sıcak ve ağrılı eritem FMF'nin patognomonik deri bulgusu olan erizipel benzeri eritemdir (ELE). Eşlik eden ateşli karın ağrısı atakları tanıyı destekler.",
+      "aciklama_detay": "Erizipel benzeri eritem (ELE) FMF hastalarının bir kısmında görülür ve tipik olarak alt bacak, ayak bileği ya da ayak sırtında tek taraflı, sıcak, hassas, keskin sınırlı eritemli plak şeklindedir. Ateşle birlikte olabilir, egzersiz ya da uzun süre ayakta kalmayla tetiklenebilir ve 48–72 saatte kendiliğinden geriler. Histolojide dermiste nötrofilik perivasküler infiltrasyon ve C3 birikimi görülür. Selülitten ayırt ettiren özellikler: tekrarlayıcı olması, antibiyotiksiz kısa sürede düzelmesi ve diğer FMF ataklarıyla (steril peritonit, plörit, monoartrit) birlikteliğidir. Bu hastada ateşli karın ağrısı atakları, ailede normal apendiksli apendektomi ve ataklar arası CRP'nin normalleşmesi FMF'yi destekler. Kolşisin hem atak sıklığını azaltır hem de AA amiloidozdan korur; MEFV analizi tanıyı destekler ama tek mutasyon ya da negatif sonuç klinik tanıyı dışlamaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Antibiyotiksiz 48–72 saatte geçen, tekrarlayan ve ateşli serozit atakları eşlik eden tablo selülit değildir.",
+        "B": "YANLIS — Eritema nodozum genellikle bilateral pretibial, nodüler ve haftalar süren lezyonlardır; ayak sırtında keskin sınırlı 2–3 günlük plak değildir.",
+        "C": "YANLIS — Gut, 23 yaşında ateşli karın ağrısı ataklarıyla birlikte değil, eklem merkezli artritle gelir; tablo eklem değil deri lezyonudur.",
+        "D": "DOGRU — Keskin sınırlı, kısa süreli, tekrarlayan ayak bileği eritemi + ateşli peritonit atakları ELE ve FMF'yi gösterir.",
+        "E": "YANLIS — Sweet sendromu ağrılı, ödemli papül-plaklarla gelir, genellikle üst gövde ve yüzü tutar ve kendiliğinden 2–3 günde gerilemez."
+      },
+      "etiketler": [
+        "Erizipel Benzeri Eritem",
+        "Deri Bulguları",
+        "Ayırıcı Tanı",
+        "Kolşisin",
+        "Fenotip 1"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Ozen et al. Ann Rheum Dis 2016 (EULAR FMF önerileri); Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s12",
+      "metin": "On dokuz yaşında kadın hasta, homozigot M694V taşıyan ve düzenli kolşisin 1.5 mg/gün kullanan FMF hastası. On gündür 38.5–39 °C ateş, her iki baldır ve uylukta yürümesini engelleyen çok şiddetli kas ağrısı ve karın ağrısı var. Muayenede kaslar yaygın hassas; fokal şişlik ya da fluktuasyon yok.\n\nTetkikler:\n- CRP: 210 mg/L, ESH: 95 mm/sa\n- CK: 85 U/L (normal)\n- Kan kültürleri: üreme yok\n\nBu hastada en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Kolşisin dozunu 3 mg/gün'e çıkarmak ve başka ilaç eklememek",
+        "B": "Prednizolon başlayıp birkaç haftada azaltmak",
+        "C": "Piyomiyozit düşünüp geniş spektrumlu IV antibiyotik başlamak",
+        "D": "Dermatomiyozit düşünüp IVIG başlamak",
+        "E": "Kolşisin miyopatisi düşünüp kolşisini kesmek"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "FMF'de ateşle birlikte günler-haftalar süren şiddetli miyalji, çok yüksek akut faz ve normal CK uzamış febril miyalji sendromunu gösterir; kolşisine yanıt vermez ve glukokortikoidlere hızla yanıt verir.",
+      "aciklama_detay": "Uzamış febril miyalji sendromu (PFMS), özellikle M694V homozigotlarında görülen ve tipik FMF ataklarından farklı olarak haftalarca (tedavisiz 6 haftaya kadar) sürebilen bir tablodur: ateş, alt ekstremitelerde ağırlıklı çok şiddetli kas ağrısı, karın ağrısı, artrit-artralji ve bazen geçici vaskülitik purpura. ESH ve CRP çok yüksek, CK ise tipik olarak normaldir; bu, onu inflamatuvar miyopatilerden ve kolşisin toksisitesinden ayırır. EULAR 2016 FMF önerileri PFMS'nin glukokortikoidlere yanıt verdiğini, NSAİİ ve IL-1 blokajının alternatif olabileceğini belirtir; genellikle 1 mg/kg/gün prednizolon birkaç haftada azaltılarak verilir, steroid bağımlılığında anakinra kullanılabilir. Kolşisin dozunu artırmak bu tabloyu düzeltmez; kolşisin amiloidoz koruması için sürdürülür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PFMS kolşisine yanıt vermez; doz artırımı tabloyu çözmez, yalnızca toksisite riskini artırır.",
+        "B": "DOGRU — PFMS glukokortikoidlere hızla yanıt verir; prednizolon azaltılarak kesilir, kolşisin sürdürülür.",
+        "C": "YANLIS — Fokal şişlik/fluktuasyon yok, kültürler negatif ve tutulum yaygın simetriktir; piyomiyozit düşündürmez.",
+        "D": "YANLIS — Dermatomiyozitte proksimal güçsüzlük, tipik deri bulguları ve CK yüksekliği beklenir; burada CK normaldir.",
+        "E": "YANLIS — Kolşisin miyopatisi ateşsiz, CK yüksekliği ve proksimal güçsüzlükle seyreder; bu hastada CK normaldir ve kolşisin kesilmemelidir."
+      },
+      "etiketler": [
+        "Uzamış Febril Miyalji",
+        "Glukokortikoid",
+        "M694V",
+        "Kolşisin Yanıtsızlığı",
+        "Kas Tutulumu"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Ozen et al. Ann Rheum Dis 2016 (EULAR FMF önerileri)"
+    },
+    {
+      "id": "s13",
+      "metin": "Yirmi yedi yaşında kadın hasta, yılda 3–4 kez tekrarlayan ateş atakları nedeniyle değerlendiriliyor. Her atak 1–2 gün sürüyor ve karın ağrısı eşlik ediyor; göğüs ağrısı ya da artrit öyküsü yok. Ataklar arasında tamamen iyi. Enfeksiyon, inflamatuvar bağırsak hastalığı ve malignite dışlanmış. MEFV analizinde yalnızca heterozigot M694V saptanıyor (ikinci alel normal).\n\nEurofever/PRINTO 2019 sınıflama ölçütlerine göre bu hasta için en doğru değerlendirme hangisidir?",
+      "secenekler": {
+        "A": "Tek patojenik varyant taşıyıcılık anlamına gelir; FMF olarak sınıflanamaz",
+        "B": "Heterozigot M694V doğrulayıcı genotiptir; tek klinik bulgu sınıflama için yeterlidir",
+        "C": "Doğrulayıcı olmayan genotipte en az üç klinik bulgu gerekir; bu hasta sınıflanamaz",
+        "D": "Genetik sonuç varken klinik ölçütler uygulanmaz; tanı yalnızca ikinci alelin gösterilmesiyle konur",
+        "E": "Doğrulayıcı olmayan genotip ve iki klinik bulguyla FMF olarak sınıflanır"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Eurofever/PRINTO 2019'da doğrulayıcı MEFV genotipi (iki patojenik varyant) + 1 klinik bulgu ya da doğrulayıcı olmayan genotip (ör. tek heterozigot patojenik varyant) + en az 2 klinik bulgu FMF sınıflaması için yeterlidir. Bu hastada atak süresi 1–3 gün ve karın ağrısı vardır.",
+      "aciklama_detay": "Eurofever/PRINTO sınıflama ölçütleri klinik ve genetik veriyi birleştirir. Klinik bulgular: atak süresinin 1–3 gün olması, artrit, göğüs ağrısı ve karın ağrısı. Doğrulayıcı genotip (homozigot ya da bileşik heterozigot patojenik MEFV varyantları) varsa bu bulgulardan en az biri; doğrulayıcı olmayan genotip (tek heterozigot patojenik varyant ya da önemi belirsiz varyantlar) varsa en az ikisi gereklidir. Ölçütler, başka nedenlerin (enfeksiyon, malignite, diğer otoinflamatuvar ve otoimmün hastalıklar) dışlandığı tekrarlayan ateşli hastalarda uygulanır. FMF hastalarının yaklaşık üçte birinde yalnızca tek patojenik varyant saptanır ve bu, klinik tablo uyumluysa tanıyı dışlamaz. Bu hasta aynı zamanda Tel-Hashomer'e göre de major kriteri (tekrarlayan ateşli peritonit atakları) karşılamaktadır; kolşisin başlanması ve yanıtın izlenmesi uygundur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tek patojenik varyant doğrulayıcı olmayan genotip olarak kabul edilir; iki klinik bulguyla birlikte sınıflama mümkündür.",
+        "B": "YANLIS — Heterozigot tek varyant doğrulayıcı genotip değildir; sonuç doğru olsa da gerekçe (tek bulgu yeterli) yanlıştır.",
+        "C": "YANLIS — Doğrulayıcı olmayan genotipte gereken klinik bulgu sayısı ikidir, üç değil.",
+        "D": "YANLIS — Ölçütler genetik ve klinik veriyi birlikte kullanır; ikinci alelin gösterilmesi şart değildir.",
+        "E": "DOGRU — Doğrulayıcı olmayan genotip + 1–3 gün süren atak ve karın ağrısı (iki bulgu) sınıflamayı karşılar."
+      },
+      "etiketler": [
+        "Eurofever/PRINTO",
+        "Sınıflama Ölçütleri",
+        "Heterozigot MEFV",
+        "Genotip",
+        "Tanı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Gattorno et al. Ann Rheum Dis 2019 (Eurofever/PRINTO sınıflama ölçütleri)"
+    },
+    {
+      "id": "s14",
+      "metin": "Otuz iki yaşında erkek hasta, çocukluktan beri tekrarlayan ateş atakları nedeniyle başvuruyor. Ataklar 2–3 hafta sürüyor. Atak sırasında uylukta başlayıp aşağıya doğru yer değiştiren şiddetli kas ağrısı, bu bölgenin üzerinde ağrılı eritemli yama, periorbital ödem ve konjonktivit gelişiyor. Babası ve halasında benzer ataklar var. Altı ay düzenli kolşisin 2 mg/gün kullanımı atakları etkilememiş; kısa süreli prednizolon atakları hafifletiyor. MEFV analizi negatif.\n\nEn olası tanı hangisidir?",
+      "secenekler": {
+        "A": "TNF reseptörü ilişkili periyodik sendrom (TRAPS)",
+        "B": "Mevalonat kinaz eksikliği (hiper-IgD sendromu)",
+        "C": "Kriyopirin ilişkili periyodik sendrom (CAPS, NLRP3)",
+        "D": "Kolşisine dirençli FMF",
+        "E": "Erişkin başlangıçlı Still hastalığı"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Otozomal dominant geçiş, 1–3 hafta süren uzun ataklar, altındaki eritemle birlikte göç eden miyalji, periorbital ödem/konjonktivit ve kolşisine yanıtsızlık TRAPS'ı (TNFRSF1A) gösterir.",
+      "aciklama_detay": "TRAPS, TNFRSF1A genindeki (TNF reseptör süperailesi 1A) mutasyonlarla gelişen otozomal dominant bir otoinflamatuvar hastalıktır. FMF'den ayırt ettiren özellikleri: ataklar uzundur (genellikle 1–3 hafta), miyalji altındaki ağrılı eritemle birlikte merkezden çevreye doğru göç eder (fasiit/miyozit), periorbital ödem ve konjonktivit sıktır, kolşisine yanıt yoktur ve glukokortikoidlere yanıt verir. AA amiloidoz riski taşır. Uzun dönem tedavide IL-1 blokajı (kanakinumab; CLUSTER çalışmasında TRAPS'ta etkin) tercih edilir; monoklonal anti-TNF antikorları paradoksal alevlenmeye yol açabilir. Mevalonat kinaz eksikliği otozomal resesiftir, genellikle bebeklikte başlar, 3–7 gün süren ataklarda servikal lenfadenopati, ishal ve aftlarla gider. CAPS'ta soğukla tetiklenen ürtiker benzeri döküntü, işitme kaybı ve kısa ataklar öne çıkar. Negatif MEFV analizi, dominant aile öyküsü ve kolşisine hiç yanıt olmaması, dirençli FMF'den çok başka bir periyodik ateş sendromunu düşündürmelidir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Dominant geçiş, uzun ataklar, göç eden miyalji ve eritem, periorbital ödem ve kolşisin yanıtsızlığı TRAPS'ın klasik bulgularıdır.",
+        "B": "YANLIS — Mevalonat kinaz eksikliği otozomal resesiftir, bebeklikte başlar ve 3–7 günlük ataklarda lenfadenopati, ishal, aftlarla gider.",
+        "C": "YANLIS — CAPS'ta soğukla tetiklenen ürtiker benzeri döküntü ve sensörinöral işitme kaybı öne çıkar; göç eden miyalji ve haftalarca süren ataklar tipik değildir.",
+        "D": "YANLIS — FMF atakları 12–72 saat sürer, genellikle otozomal resesiftir ve kolşisine en azından kısmi yanıt verir; bu tablo FMF ile uyumlu değildir.",
+        "E": "YANLIS — Still hastalığında somon renkli geçici döküntü, günlük çift pik ateş, artrit, ferritin yüksekliği beklenir; ailevi ve periyodik bir örüntü göstermez."
+      },
+      "etiketler": [
+        "TRAPS",
+        "TNFRSF1A",
+        "Periyodik Ateş Sendromları",
+        "Ayırıcı Tanı",
+        "Otoinflamatuvar Hastalık"
+      ],
+      "zorluk": "zor",
+      "kaynak": "De Benedetti et al. N Engl J Med 2018 (CLUSTER); Gattorno et al. Ann Rheum Dis 2019 (Eurofever/PRINTO)"
+    },
+    {
+      "id": "s15",
+      "metin": "Kırk dört yaşında erkek hasta, FMF'ye bağlı AA amiloidoz nedeniyle bir yıl önce böbrek nakli olmuş. Siklosporin, mikofenolat mofetil, prednizolon 5 mg/gün ve kolşisin 1.5 mg/gün kullanıyor; greft eGFR'si 38 mL/dk/1.73 m². Statin kullanmıyor. Üç haftadır merdiven çıkmada zorlanma, kollarını başının üstüne kaldırmada güçsüzlük ve ayaklarında uyuşma var.\n\nTetkikler:\n- CK: 2800 U/L\n- EMG: proksimal kaslarda miyopatik değişiklikler ve distal aksonal duyu-motor polinöropati\n- TSH normal\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Steroid miyopatisi düşünüp prednizolonu kesmek, kolşisine aynı dozda devam etmek",
+        "B": "Polimiyozit düşünüp yüksek doz glukokortikoid başlamak",
+        "C": "Kolşisin nöromiyopatisi düşünüp kolşisini geçici kesmek",
+        "D": "CMV miyoziti düşünüp ampirik gansiklovir başlamak",
+        "E": "Amiloid nöropatisi düşünüp anakinra eklemek"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Azalmış GFR ve siklosporinin P-gp/CYP3A4 inhibisyonu kolşisin birikimine yol açar: CK yüksekliğiyle proksimal miyopati + aksonal polinöropati (nöromiyopati). Kolşisin kesilince haftalar içinde düzelir; amiloid nüksünü önlemek için sonra doz azaltılarak yeniden başlanır.",
+      "aciklama_detay": "Kolşisin nöromiyopatisi, kolşisinin mikrotübül işlevini bozmasıyla kas liflerinde otofajik vakuoler miyopati ve aksonal polinöropatiye yol açmasıdır. Başlıca risk etkenleri böbrek yetmezliği (atılımın azalması) ve CYP3A4/P-glikoprotein inhibitörleriyle (siklosporin, klaritromisin, azoller) birlikte kullanımdır; statinler de miyopati riskini artırır. Klinikte subakut proksimal güçsüzlük, belirgin CK yüksekliği, EMG'de miyopatik değişiklikler ve distal duyusal nöropati görülür. Kolşisin kesildikten sonra güçsüzlük ve CK genellikle 3–4 haftada düzelir. FMF'ye bağlı amiloidoz nedeniyle nakil yapılan hastada kolşisin greftte amiloid nüksünü önlemek için gereklidir; bu yüzden düzelme sonrası eGFR ve etkileşimler göz önünde bulundurularak düşük dozla ve CK izlemiyle yeniden başlanır. EULAR 2016 FMF önerileri böbrek ya da karaciğer yetmezliğinde kolşisin toksisitesinin izlenmesini ve doz ayarlanmasını vurgular.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Steroid miyopatisinde CK normaldir ve nöropati eşlik etmez; ayrıca 5 mg prednizolon bu tabloyu açıklamaz ve kolşisine devam etmek hasarı sürdürür.",
+        "B": "YANLIS — Aksonal nöropati ile birlikte yüksek CK, kolşisin birikimi riski olan hastada önce ilaç toksisitesini düşündürür; yüksek doz steroid gereksiz ve zararlıdır.",
+        "C": "DOGRU — Azalmış GFR + siklosporin etkileşimiyle gelişen kolşisin nöromiyopatisinde ilaç geçici kesilir, düzelince düşük dozla yeniden başlanır.",
+        "D": "YANLIS — CMV miyoziti nadirdir ve polinöropatiyle birlikte bu tabloyu açıklamaz; ilaç etkileşimi çok daha olasıdır.",
+        "E": "YANLIS — Amiloid nöropatisi CK yüksekliği ve miyopati yapmaz; anakinra eklemek sorunu çözmez."
+      },
+      "etiketler": [
+        "Kolşisin Toksisitesi",
+        "Nöromiyopati",
+        "Siklosporin Etkileşimi",
+        "Böbrek Nakli",
+        "AA Amiloidoz"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Ozen et al. Ann Rheum Dis 2016 (EULAR FMF önerileri); Konu anlatımı (MediSea premium)"
     }
   ]
 }

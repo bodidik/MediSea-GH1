@@ -13,7 +13,7 @@
   "moduller": {
     "flashcard": false,
     "inciler": false,
-    "quiz": false,
+    "quiz": true,
     "vaka": false,
     "video": false
   },

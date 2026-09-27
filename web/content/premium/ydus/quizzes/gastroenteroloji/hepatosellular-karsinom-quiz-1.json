@@ -303,6 +303,153 @@
       ],
       "zorluk": "orta",
       "kaynak": "Finn et al. N Engl J Med 2020 (IMbrave150); Abou-Alfa et al. NEJM Evid 2022 (HIMALAYA/STRIDE)"
+    },
+    {
+      "id": "s11",
+      "metin": "Elli dokuz yaşında erkek hasta, MASH ilişkili kompanse siroz (Child-Pugh A5) nedeniyle HCC sürveyansında. Beden kitle indeksi 41 kg/m². Son iki sürveyans ultrasonografisinde radyolog, vücut yapısı ve belirgin steatoz nedeniyle karaciğerin büyük bölümünün değerlendirilemediğini bildiriyor (US LI-RADS görüntüleme skoru C). AFP 4 ng/mL. Hasta ileride nakil adayı olabilecek durumda.\n\nBu hastada sürveyans nasıl sürdürülmelidir?",
+      "secenekler": {
+        "A": "Ultrasonografi aynı merkezde 3 ayda bir tekrarlanarak sürdürülmelidir.",
+        "B": "AFP normal olduğundan 6 ayda bir yalnızca AFP ile izlem yeterlidir.",
+        "C": "Displastik nodül araştırmak için perkütan karaciğer biyopsisi yapılmalıdır.",
+        "D": "Kısaltılmış protokollü MRG ya da çok fazlı kontrastlı BT/MRG ile sürveyansa geçilmelidir.",
+        "E": "Görüntüleme yetersiz kaldığından sürveyans sonlandırılmalıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Obezite ve MASH zemininde ultrasonografinin görüntüleme kalitesi yetersizse (US LI-RADS C) sürveyans kısaltılmış MRG ya da çok fazlı BT/MRG gibi alternatif bir yöntemle sürdürülür.",
+      "aciklama_detay": "Standart HCC sürveyansı 6 ayda bir ultrasonografi ± AFP'dir; ancak ultrasonografinin erken evre HCC'yi yakalama duyarlılığı obezite, belirgin steatoz ve MASH sirozunda belirgin düşer. US LI-RADS görüntüleme skoru C, karaciğerin önemli bir bölümünün görülemediğini ve sürveyansın fiilen yapılamadığını gösterir. Bu durumda aynı yöntemi daha sık tekrarlamak sorunu çözmez; güncel öneriler kısaltılmış (abbreviated) MRG protokolü ya da çok fazlı kontrastlı BT/MRG ile sürveyansa geçmeyi önerir. Sürveyansın amacı küratif tedavi (rezeksiyon, ablasyon, nakil) şansı olan hastada tümörü erken yakalamaktır; Child-Pugh A5, potansiyel nakil adayı bu hasta sürveyanstan en çok yarar görecek gruptadır. AFP tek başına yetersiz duyarlılıktadır ve görüntülemenin yerini tutmaz. Biyopsi sürveyans aracı değildir; ancak görüntülemede belirsiz (ör. LR-M ya da küçük LR-4) lezyonlarda doku tanısı için kullanılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sorun aralık değil yöntemin kör kalmasıdır; kötü görüntülenen karaciğerde sık ultrasonografi de yetersiz kalır.",
+        "B": "YANLIS — AFP'nin erken HCC'yi yakalama duyarlılığı düşüktür; tek başına sürveyans yöntemi olarak kabul edilmez.",
+        "C": "YANLIS — Biyopsi sürveyans aracı değildir; lezyon yokken displastik nodül aramak için yapılmaz.",
+        "D": "DOGRU — Ultrasonografinin yetersiz kaldığı hastada kısaltılmış MRG veya çok fazlı BT/MRG alternatif sürveyans yöntemidir.",
+        "E": "YANLIS — Kompanse ve nakil adayı olabilecek hastada sürveyans bırakılmaz, yöntem değiştirilir."
+      },
+      "etiketler": [
+        "HCC Sürveyansı",
+        "MASH Sirozu",
+        "US LI-RADS Görüntüleme Skoru",
+        "Kısaltılmış MRG"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Singal AG ve ark. AASLD 2023 HCC pratik rehberi (Hepatology 2023); Colombo MG, Sirlin CB. Surveillance for hepatocellular carcinoma in adults. UpToDate"
+    },
+    {
+      "id": "s12",
+      "metin": "Altmış sekiz yaşında erkek hasta, HCV ilişkili siroz (kalıcı viral yanıt sağlanmış), Child-Pugh A6, ECOG 0. Sürveyansta segment 6'da, büyük damar ve safra yollarından uzak, perkütan ulaşıma uygun 2,4 cm tek nodül saptanıyor; dinamik MRG'de LR-5. Vasküler invazyon ve ekstrahepatik yayılım yok. Ciddi koroner arter hastalığı nedeniyle nakil ekibi hastayı aday kabul etmiyor.\n\nTetkikler:\n- Trombosit 82.000/µL\n- EGD: küçük özofagus varisleri\n- Hepatik venöz basınç gradiyenti: 13 mmHg\n- Bilirubin 1,1 mg/dL, albümin 3,5 g/dL\n\nBu hasta için en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Perkütan termal ablasyon (radyofrekans ya da mikrodalga)",
+        "B": "Anatomik segmentektomi ile cerrahi rezeksiyon",
+        "C": "Transarteriyel kemoembolizasyon (TACE)",
+        "D": "Atezolizumab + bevacizumab",
+        "E": "Üç ay sonra kontrol MRG ile izlem"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Klinik olarak anlamlı portal hipertansiyonu (HVPG ≥10 mmHg, varis) olan, nakil adayı olmayan hastada ≤3 cm tek HCC için küratif seçenek termal ablasyondur.",
+      "aciklama_detay": "BCLC 2022'ye göre tek nodüllü erken evre HCC'de rezeksiyon, klinik olarak anlamlı portal hipertansiyonu olmayan ve karaciğer rezervi iyi olan hastaya önerilir. Bu hastada HVPG 13 mmHg (≥10), özofagus varisi ve trombositopeni klinik olarak anlamlı portal hipertansiyonu gösterir; bu zeminde yapılan hepatektomi postoperatif dekompanzasyon ve karaciğer yetmezliği riskini belirgin artırır. Portal hipertansiyonlu hastada tercih nakildir; ancak hasta aday değildir. Bu durumda ≤3 cm tümörde radyofrekans ya da mikrodalga ablasyon, küçük tümörlerde rezeksiyona yakın sağkalım sunan küratif bir seçenektir; nodülün büyük damar ve safra yollarından uzak, perkütan ulaşılabilir olması teknik başarıyı destekler. TACE küratif tedaviye uygun olmayan ara evre (BCLC B) hastalık için standarttır; burada ancak ablasyon teknik olarak mümkün değilse gündeme gelir. Sistemik tedavi ileri evreye aittir, küçük LR-5 lezyonu izlemek ise küratif pencereyi kaçırır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Portal hipertansiyonlu, nakil adayı olmayan hastada ≤3 cm tek HCC için küratif tedavi termal ablasyondur.",
+        "B": "YANLIS — Klinik olarak anlamlı portal hipertansiyon varlığında rezeksiyon postoperatif dekompanzasyon riskini belirgin artırır.",
+        "C": "YANLIS — TACE ara evre ya da ablasyon/rezeksiyona uygun olmayan hastalar içindir; küratif seçeneğin yerine konmaz.",
+        "D": "YANLIS — Atezolizumab + bevacizumab vasküler invazyon veya ekstrahepatik yayılım olan ileri evre (BCLC C) hastalıkta kullanılır.",
+        "E": "YANLIS — LR-5 lezyon biyopsisiz HCC tanısıdır; izlem küratif tedavi şansını kaçırır."
+      },
+      "etiketler": [
+        "BCLC A",
+        "Portal Hipertansiyon",
+        "HVPG",
+        "Termal Ablasyon",
+        "Rezeksiyon Seçimi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Reig M ve ark. BCLC 2022 güncellemesi (J Hepatol 2022); EASL Clinical Practice Guidelines 2018"
+    },
+    {
+      "id": "s13",
+      "metin": "Altmış altı yaşında erkek hasta, alkol ilişkili siroz ve multifokal HCC tanılı. Son 3 ayda iki kez hepatik ensefalopati atağı ve diüretiğe dirençli asit gelişmiş; günün çoğunu yatakta geçiriyor (ECOG 3). Alkol kullanımı sürüyor.\n\nTetkikler:\n- Child-Pugh C11 (bilirubin 3,6 mg/dL, albümin 2,4 g/dL, INR 1,9)\n- MRG: sağ lobda en büyüğü 4 cm olan 5 adet LR-5 nodül; vasküler invazyon yok\n- AFP 620 ng/mL\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Atezolizumab + bevacizumab ile birinci basamak sistemik tedavi",
+        "B": "Konvansiyonel TACE ve ardından yanıt değerlendirmesi",
+        "C": "Lenvatinib ile tirozin kinaz inhibisyonu",
+        "D": "Karaciğer nakli bekleme listesine alınması",
+        "E": "En iyi destek tedavisi ve palyatif bakım"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Child-Pugh C ve ECOG 3 = BCLC D (son evre). Nakil adayı olmayan bu hastada tümöre yönelik tedavi sağkalım kazandırmaz; yaklaşım en iyi destek tedavisidir.",
+      "aciklama_detay": "BCLC sisteminde tümör yükünden bağımsız olarak ağır karaciğer yetmezliği (nakil adayı olmayan Child-Pugh C) ya da belirgin performans kaybı (ECOG >2) hastayı son evreye (BCLC D) yerleştirir; beklenen sağkalım aylarla sınırlıdır. Bu evrede tümöre yönelik tedavilerin sağkalım yararı gösterilmemiştir ve tedavi toksisitesi zaten dekompanse karaciğeri hızla bozabilir. Sistemik tedavilerin (atezolizumab + bevacizumab, lenvatinib) etkinliği Child-Pugh A ve iyi performanslı hastalarda kanıtlanmıştır. TACE dekompanse sirozda (asit, ensefalopati, yüksek bilirubin) kontrendikedir ve karaciğer yetmezliğini tetikleyebilir. Karaciğer nakli Child-Pugh C hastada hem sirozu hem tümörü tedavi edebilecek tek seçenek olsa da bu hastada tümör yükü Milan ölçütlerini aşmaktadır (5 nodül) ve süren alkol kullanımı adaylığı ayrıca engeller. Uygun yaklaşım ağrı, asit ve ensefalopati kontrolüne odaklanan en iyi destek tedavisi ve palyatif bakımdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İmmünoterapi kombinasyonlarının yararı Child-Pugh A, iyi performanslı hastalarda gösterilmiştir; BCLC D'de endike değildir.",
+        "B": "YANLIS — Dekompanse sirozda TACE kontrendikedir; karaciğer yetmezliğini hızlandırabilir.",
+        "C": "YANLIS — Lenvatinib de Child-Pugh A hastalarda sınanmıştır; son evre hastada sağkalım yararı yoktur.",
+        "D": "YANLIS — Beş nodüllü tümör Milan ölçütlerini aşar ve süren alkol kullanımı nakil adaylığını engeller.",
+        "E": "DOGRU — BCLC D (Child-Pugh C, ECOG 3, nakil adayı değil) hastada yaklaşım en iyi destek tedavisidir."
+      },
+      "etiketler": [
+        "BCLC D",
+        "Child-Pugh C",
+        "Performans Durumu",
+        "Palyatif Bakım"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Reig M ve ark. BCLC 2022 güncellemesi (J Hepatol 2022); EASL Clinical Practice Guidelines 2018"
+    },
+    {
+      "id": "s14",
+      "metin": "Elli beş yaşında kadın hasta, HBV ilişkili kompanse siroz nedeniyle sürveyansta. Ultrasonografide yeni 3,2 cm nodül saptanıyor. Çok fazlı MRG'de nodül arteriyel fazda halka (rim) tarzı periferik tutulum, portal venöz fazda periferik ‘washout’ ve geç fazda santral progresif kontrastlanma gösteriyor; difüzyon ağırlıklı görüntülerde hedef (targetoid) görünüm ve komşu kapsülde çekinti var. Rapor: LR-M.\n\nTetkikler:\n- AFP 6 ng/mL\n- CA 19-9 210 U/mL\n\nBu hastada en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Siroz zemininde HCC kesindir; biyopsisiz tedavi planlanır.",
+        "B": "Üç ay sonra aynı protokolle MRG tekrarlanır.",
+        "C": "Lezyondan görüntüleme eşliğinde biyopsi alınır.",
+        "D": "AFP normal olduğundan rutin sürveyansa dönülür.",
+        "E": "Biyopsi yapılmadan doğrudan TACE uygulanır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "LR-M ‘kesin ya da olası malign, HCC'ye özgü değil’ demektir; intrahepatik kolanjiyokarsinom veya kombine HCC-kolanjiyokarsinom olasılığı nedeniyle doku tanısı gerekir.",
+      "aciklama_detay": "Siroz zemininde biyopsisiz HCC tanısı yalnızca LR-5 lezyonlarda (arteriyel faz hiperenhansmanı + washout ve/veya kapsül, büyüme) geçerlidir. LR-M kategorisi ise malignite düşündüren ama HCC'ye özgü olmayan özellikleri tanımlar: halka tarzı arteriyel tutulum, periferik washout, geç santral kontrastlanma, targetoid difüzyon kısıtlaması ve kapsüler çekinti. Bu patern sirotik karaciğerde intrahepatik kolanjiyokarsinomu, kombine HCC-kolanjiyokarsinomu ya da daha az sıklıkla atipik HCC ve metastazı düşündürür. Yükselmiş CA 19-9 ve normal AFP de biliyer kökeni destekler. Histolojik ayrım tedaviyi doğrudan değiştirir: kolanjiyokarsinom ya da kombine tümörde nakil sonuçları farklıdır, sistemik tedavi seçenekleri ve lenf nodu değerlendirmesi ayrıdır. Bu nedenle LR-M lezyonda bir sonraki adım görüntüleme eşliğinde biyopsi ve multidisipliner değerlendirmedir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Biyopsisiz HCC tanısı LR-5 için geçerlidir; LR-M HCC'ye özgü değildir.",
+        "B": "YANLIS — Malignite düşündüren 3 cm'lik lezyonda izlem tanı ve tedaviyi geciktirir.",
+        "C": "DOGRU — LR-M lezyonda tanı ve tedaviyi belirlemek için doku tanısı gerekir.",
+        "D": "YANLIS — AFP normalliği maligniteyi dışlamaz; biliyer kökenli tümörlerde AFP genellikle normaldir.",
+        "E": "YANLIS — Tanı kesinleşmeden HCC'ye özgü loko-rejyonel tedavi uygulanmaz."
+      },
+      "etiketler": [
+        "LI-RADS",
+        "LR-M",
+        "İntrahepatik Kolanjiyokarsinom",
+        "Kombine HCC-Kolanjiyokarsinom",
+        "Biyopsi Endikasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Chernyak et al. Radiology 2018 (LI-RADS v2018); Singal AG ve ark. AASLD 2023 HCC pratik rehberi (Hepatology 2023)"
+    },
+    {
+      "id": "s15",
+      "metin": "Kırk yedi yaşında erkek hastaya, HBeAg-negatif kronik HBV zemininde sirozsuz karaciğerde gelişen 5 cm tek HCC nedeniyle sağ hepatektomi ile R0 rezeksiyon uygulanmış. Daha önce antiviral tedavi almamış.\n\nTetkikler (postoperatif 4. hafta):\n- HBsAg pozitif, HBeAg negatif, anti-HBe pozitif\n- HBV DNA: 850 IU/mL\n- ALT 28 U/L\n\nBu hastada HBV yönetimi için en uygun karar hangisidir?",
+      "secenekler": {
+        "A": "HBV DNA 2.000 IU/mL altında ve ALT normal olduğundan tedavisiz izlem",
+        "B": "Tenofovir ya da entekavir ile uzun süreli nükleoz(t)id analoğu tedavisi",
+        "C": "Pegile interferon-α ile 48 haftalık sonlu tedavi",
+        "D": "HBV DNA 20.000 IU/mL'yi aşarsa lamivudin başlanması",
+        "E": "Adjuvan sorafenib başlanması, antiviral tedaviye gerek olmaması"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "HBV ilişkili HCC'si olan ve HBV DNA'sı saptanabilen her hastaya ALT ve viral yük eşiğinden bağımsız olarak güçlü bir nükleoz(t)id analoğu (tenofovir/entekavir) başlanır.",
+      "aciklama_detay": "HBV ilişkili HCC'de antiviral tedavi yalnızca karaciğer hastalığının ilerlemesini engellemek için değil, onkolojik sonuç için de önemlidir: viral replikasyonun baskılanması rezeksiyon ya da ablasyon sonrası geç (de novo) nüksü azaltır, karaciğer fonksiyonunu korur ve sağkalımı iyileştirir. Ayrıca hepatektomi, TACE ve sistemik tedaviler HBV reaktivasyonunu tetikleyebilir. Bu nedenle EASL 2017 HBV kılavuzu, HCC'si olan ve HBV DNA'sı saptanabilen hastalarda, HBeAg-negatif ‘inaktif taşıyıcı’ eşiklerini (HBV DNA <2.000 IU/mL, normal ALT) bu gruba uygulamadan, nükleoz(t)id analoğu tedavisini önerir. Tercih yüksek genetik bariyerli tenofovir ya da entekavirdir. Lamivudin yüksek direnç oranı nedeniyle uygun değildir; pegile interferon major hepatektomi sonrası rezerv azalmış karaciğerde ve yan etki profili nedeniyle tercih edilmez. Adjuvan sorafenib STORM çalışmasında nüksü azaltmamıştır ve antiviral tedavinin yerini tutmaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İnaktif taşıyıcı eşikleri HCC'si olan hastaya uygulanmaz; saptanabilir HBV DNA tedavi endikasyonudur.",
+        "B": "DOGRU — HBV ilişkili HCC + saptanabilir HBV DNA'da yüksek bariyerli nükleoz(t)id analoğu nüksü azaltır ve reaktivasyonu önler.",
+        "C": "YANLIS — Major hepatektomi sonrası rezervi azalmış karaciğerde interferon hem riskli hem daha az uygundur.",
+        "D": "YANLIS — Eşik beklemek yanlıştır; ayrıca lamivudin yüksek direnç oranı nedeniyle tercih edilmez.",
+        "E": "YANLIS — Adjuvan sorafenib STORM çalışmasında nüksü azaltmamıştır; antiviral tedavi yine gereklidir."
+      },
+      "etiketler": [
+        "HBV İlişkili HCC",
+        "Nükleoz(t)id Analoğu",
+        "Rezeksiyon Sonrası Nüks",
+        "HBV Reaktivasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "EASL 2017 Kronik HBV Klinik Uygulama Kılavuzu; Bruix et al. Lancet Oncol 2015 (STORM)"
     }
   ]
 }

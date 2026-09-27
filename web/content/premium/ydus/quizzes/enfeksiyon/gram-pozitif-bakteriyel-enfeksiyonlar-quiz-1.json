@@ -303,6 +303,151 @@
       ],
       "zorluk": "orta",
       "kaynak": "Rybak et al. Am J Health Syst Pharm 2020 (Vancomycin AUC-guided Dosing Consensus); Lodise et al. Clin Infect Dis 2020"
+    },
+    {
+      "id": "s11",
+      "metin": "62 yaşında diyabetik erkek; sol bacakta 4 gündür yayılan selülit, 39,2 °C ateş ve titreme ile yatırılıyor. Kan kültürleri alınıp ampirik vankomisin başlanıyor. İlaç alerjisi öyküsü yok; böbrek fonksiyonları normal.\n\n48. saatte:\nİki set kan kültüründe S. aureus\nOksasilin (sefoksitin tarama) duyarlı, penisilin dirençli\nVankomisin MİK 1 mg/L\nAteş sürüyor, hemodinami stabil\n\nBu hastada antibiyotik tedavisinin düzenlenmesine ilişkin en uygun karar hangisidir?",
+      "secenekler": {
+        "A": "Vankomisin MİK düşük olduğundan tedaviyi değiştirmeden sürdürmek",
+        "B": "Vankomisine rifampisin ekleyerek kombinasyona geçmek",
+        "C": "Vankomisini daptomisin 6 mg/kg ile değiştirmek",
+        "D": "Vankomisini kesip İV sefazoline geçmek",
+        "E": "Oral linezolide geçip ayaktan izleme almak"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Metisiline duyarlı S. aureus bakteriyemisinde kesin tedavi beta-laktamdır (sefazolin ya da antistafilokokal penisilin); vankomisin MSSA'da daha yavaş bakterisidal ve klinik olarak daha az etkilidir.",
+      "aciklama_detay": "MSSA bakteriyemisinde gözlemsel çalışmalar tutarlı biçimde, vankomisinle sürdürülen tedavinin sefazolin ya da antistafilokokal penisilinlere (kloksasilin/nafsilin/oksasilin) göre daha yüksek başarısızlık, nüks ve mortaliteyle ilişkili olduğunu gösterir; MİK'in düşük olması bu farkı ortadan kaldırmaz. Bu nedenle duyarlılık bilinir bilinmez vankomisinden beta-laktama geçilir. Sefazolin, antistafilokokal penisilinlere benzer etkinlikte olup daha iyi tolere edilir (daha az nefrotoksisite ve ilaç kesilmesi). S. aureus bakteriyemisinin öteki temel adımları da atlanmamalıdır: 48–72 saatte tekrar kan kültürü, ekokardiyografi, metastatik odak araştırması ve kaynak kontrolü. Rifampisin eklenmesi ARREST çalışmasında genel sonucu iyileştirmemiştir; oral step-down ise tekrar kültürlerin negatifleştiği, komplike olmadığı gösterilmiş seçilmiş hastada gündeme gelir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — MİK'ten bağımsız olarak vankomisin MSSA bakteriyemisinde beta-laktamdan daha az etkilidir; duyarlılık bilindiğinde değiştirilmelidir.",
+        "B": "YANLIS — Rifampisin ekleme rutin önerilmez (ARREST); asıl eksik, vankomisinin beta-laktamla değiştirilmesidir.",
+        "C": "YANLIS — Daptomisin MRSA ya da beta-laktam intoleransında seçenektir; ilaca engeli olmayan MSSA hastasında beta-laktamın yerini almaz.",
+        "D": "DOGRU — MSSA bakteriyemisinde kesin tedavi sefazolin (ya da antistafilokokal penisilin); vankomisin kesilir.",
+        "E": "YANLIS — Ateşi süren, kültür temizliği ve komplike olup olmadığı henüz gösterilmemiş bakteriyemide erken oral geçiş uygun değildir; linezolid MSSA bakteriyemisinde birinci seçenek de değildir."
+      },
+      "etiketler": [
+        "MSSA Bakteriyemisi",
+        "Sefazolin",
+        "Beta-laktam Üstünlüğü",
+        "Hedefe Yönelik Tedavi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel kılavuzlar; Thwaites et al. Lancet 2018 (ARREST)"
+    },
+    {
+      "id": "s12",
+      "metin": "70 yaşında kadın; periferik venöz kateter yerinde tromboflebit sonrası gelişen S. aureus bakteriyemisi nedeniyle izleniyor. Kateter ilk gün çıkarılmış, hedefe yönelik uygun beta-laktam başlanmış. Protez kapak, kalp pili ya da ortopedik implantı yok.\n\nİzlem:\nTedavinin 72. saatinde alınan kan kültürleri: S. aureus üremesi sürüyor\n5. gün kan kültürleri: üreme yok\nAteş 5. günde düşüyor\nTranstorasik ekokardiyografi: vejetasyon yok\nMetastatik odağa işaret eden bulgu yok\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "TTE normal ve kateter çıkarıldığı için ilk negatif kültürden itibaren 14 gün İV tedavi",
+        "B": "Kaynak kontrol altında olduğundan toplam 7 günlük tedavi",
+        "C": "5. günde oral tedaviye geçip toplam 14 güne tamamlamak",
+        "D": "14 günlük tedaviye rifampisin ekleyerek süreyi kısa tutmak",
+        "E": "Transözofageal ekokardiyografi ve ilk negatif kültürden itibaren en az 4 haftalık tedavi"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Kan kültürü pozitifliğinin 72 saati aşması ve ateşin 72 saatte düşmemesi bakteriyemiyi komplike kılar; TEE yapılır ve tedavi 4–6 haftaya uzatılır.",
+      "aciklama_detay": "Komplike olmayan S. aureus bakteriyemisi (en az 14 gün tedavi) için tüm ölçütlerin birlikte bulunması gerekir: endokarditin dışlanması, implante protez materyal olmaması, izlem kültürlerinin 2–4 gün içinde negatifleşmesi, uygun tedavinin 72 saati içinde ateşin düşmesi ve metastatik odak olmaması. Bu hastada izlem kültürleri 72. saatte hâlâ pozitif ve ateş ancak 5. günde düşmüş; dolayısıyla tablo komplikedir ve tedavi ilk negatif kültürden itibaren 4–6 haftaya uzatılır. Persistan bakteriyemi gizli endokardit ve metastatik odak olasılığını artırır; TTE'nin normal olması endokarditi dışlamaz, TEE yapılmalıdır. Kaynağın çıkarılmış olması komplike ölçütleri ortadan kaldırmaz.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — TTE endokarditi dışlamaz ve 72. saatteki pozitif kültür ile geç ateş düşüşü komplike olmayan bakteriyemi ölçütlerini bozar; 14 gün yetersizdir.",
+        "B": "YANLIS — S. aureus bakteriyemisinde 7 gün, komplike olmayan olguda bile yetersizdir.",
+        "C": "YANLIS — Komplike bakteriyemide TEE ve metastatik odak araştırılmadan erken oral geçiş ve kısa süre uygun değildir.",
+        "D": "YANLIS — Rifampisin ekleme tedavi süresini kısaltmaz ve rutin önerilmez; sorun sürenin yetersizliğidir.",
+        "E": "DOGRU — Persistan bakteriyemi (>72 saat) ve geç ateş düşüşü komplike S. aureus bakteriyemisidir: TEE ve en az 4 hafta tedavi."
+      },
+      "etiketler": [
+        "S. aureus Bakteriyemisi",
+        "Komplike Bakteriyemi",
+        "Tedavi Süresi",
+        "Transözofageal Ekokardiyografi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Liu et al. Clin Infect Dis 2011 (IDSA MRSA Kılavuzu); Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s13",
+      "metin": "57 yaşında erkek; yoğun bakımda mekanik ventilasyonun 6. gününde ateş, pürülan sekresyon ve yeni sağ alt lob infiltratı gelişiyor. Trakeal aspirat kültüründe MRSA üremiş. Vankomisin tedavisinin 3. gününde kreatinin 0,9'dan 2,1 mg/dL'ye yükseliyor; AUC 580 mg·h/L olarak hesaplanıyor. Ekip vankomisinin yerine başka bir anti-MRSA ajan seçmek istiyor.\n\nBu hasta için en uygun seçenek hangisidir?",
+      "secenekler": {
+        "A": "Daptomisin 6 mg/kg/gün",
+        "B": "Yüksek doz daptomisin 10 mg/kg/gün",
+        "C": "Linezolid 600 mg günde iki kez",
+        "D": "Vankomisini vadi düzeyi 20 mg/L hedefiyle sürdürmek",
+        "E": "Tigesiklin monoterapisi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "MRSA pnömonisinde vankomisin kullanılamıyorsa linezolid uygun seçenektir; daptomisin akciğer sürfaktanı tarafından inaktive edildiği için pnömonide etkisizdir.",
+      "aciklama_detay": "Nozokomiyal ve ventilatör ilişkili MRSA pnömonisinde önerilen ajanlar vankomisin ve linezoliddir. Bu hastada AUC hedef aralıkta olmasına karşın vankomisinle ilişkili akut böbrek hasarı gelişmiştir; linezolid böbrek fonksiyonundan bağımsız dozlanır ve akciğer epitel sıvısına iyi geçer. Daptomisin sürfaktan fosfolipitlerine bağlanıp inaktive olduğundan pnömonide klinik olarak başarısızdır; doz artırmak bunu düzeltmez (septik pulmoner emboli gibi hematojen akciğer tutulumu ayrı bir durumdur). Vadi düzeyi odaklı yüksek hedef, AUC 400–600 çağında nefrotoksisiteyi artırır. Tigesiklin nozokomiyal pnömonide artmış mortalite sinyali nedeniyle önerilmez. Linezolid kullanırken 2 haftayı aşan tedavide trombositopeni ve serotonerjik ilaç etkileşimi izlenmelidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Daptomisin sürfaktan tarafından inaktive edilir; MRSA pnömonisinde kullanılmaz.",
+        "B": "YANLIS — Doz artırmak sürfaktan inaktivasyonunu aşmaz; pnömonide daptomisin yine uygun değildir.",
+        "C": "DOGRU — MRSA pnömonisinde vankomisine eşdeğer, böbrek dozlaması gerektirmeyen önerilen alternatif.",
+        "D": "YANLIS — Böbrek hasarı gelişmiş hastada daha yüksek vadi hedefi nefrotoksisiteyi artırır; güncel yaklaşım AUC 400–600'dür.",
+        "E": "YANLIS — Tigesiklin nozokomiyal/ventilatör ilişkili pnömonide artmış mortaliteyle ilişkilendirilmiştir ve önerilmez."
+      },
+      "etiketler": [
+        "MRSA Pnömonisi",
+        "Daptomisin Sürfaktan İnaktivasyonu",
+        "Linezolid",
+        "Vankomisin Nefrotoksisitesi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Kalil et al. Clin Infect Dis 2016 (IDSA/ATS HAP/VAP Kılavuzu); Liu et al. Clin Infect Dis 2011 (IDSA MRSA Kılavuzu)"
+    },
+    {
+      "id": "s14",
+      "metin": "67 yaşında kadın; E. faecium (VRE) kaynaklı komplike idrar yolu enfeksiyonu nedeniyle linezolid tedavisinin 4. gününde. Majör depresyon nedeniyle 2 yıldır sertralin 100 mg/gün kullanıyor. Son 12 saattir huzursuzluk, terleme, titreme ve ishal gelişiyor.\n\nFizik muayene:\nAteş 38,6 °C, nabız 124/dk, TA 158/92 mmHg\nMidriyazis, hiperrefleksi, alt ekstremitelerde belirgin indüklenebilir klonus\nKas rijiditesi yok\n\nTetkikler:\nLökosit 9800/µL, laktat 1,6 mmol/L\nKreatin kinaz normal\nİdrar kültürü kontrolü: üreme yok\n\nEn olası tanı ve en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Linezolide bağlı laktik asidoz; linezolidi sürdürüp tiamin eklemek",
+        "B": "Nöroleptik malign sendrom; dantrolen ve bromokriptin başlamak",
+        "C": "Tedaviye yanıtsız enfeksiyon; tedaviye meropenem eklemek",
+        "D": "Serotonin sendromu; linezolid ve sertralini kesmek, destek tedavisi ve benzodiazepin, VRE için daptomisine geçmek",
+        "E": "C. difficile enfeksiyonu; oral vankomisin başlayıp linezolidi sürdürmek"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Linezolid zayıf, geri dönüşümlü bir MAO inhibitörüdür; SSRI ile birlikte serotonin sendromuna (klonus, hiperrefleksi, hipertermi, otonom instabilite) yol açabilir. Her iki ilaç kesilir, destek tedavisi verilir, VRE tedavisi başka ajanla sürdürülür.",
+      "aciklama_detay": "İndüklenebilir klonus, hiperrefleksi, midriyazis, terleme, taşikardi, hipertermi ve ishal serotonerjik ilaç kullanan hastada Hunter ölçütleriyle serotonin sendromunu düşündürür. Linezolidin monoamin oksidaz inhibisyonu SSRI, SNRI, triptan, tramadol ve metilen mavisi gibi ajanlarla etkileşir. Yönetim: serotonerjik ilaçların kesilmesi, sıvı ve ateş kontrolü, ajitasyon için benzodiazepin; ağır olguda siproheptadin düşünülebilir. VRE tedavisi linezolid dışı bir ajanla (ör. daptomisin) sürdürülür. Nöroleptik malign sendromda yavaş başlangıç, kurşun boru rijiditesi ve belirgin CK artışı beklenir; klonus tipik değildir. Linezolidle ilişkili laktik asidoz uzun kullanımda görülür ve bu hastada laktat normaldir. Kontrol kültürünün negatif olması tedavi başarısızlığı lehine değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Laktat normal; linezolid laktik asidozu genellikle uzun süreli kullanımda görülür ve tedavisi ilacın kesilmesidir, tiamin değil.",
+        "B": "YANLIS — NMS yavaş gelişir, belirgin rijidite ve CK yüksekliği ile seyreder; klonus/hiperrefleksi serotonin sendromunu gösterir. Nöroleptik kullanımı da yok.",
+        "C": "YANLIS — Kontrol kültürü negatif; tablo enfeksiyonun ilerlemesiyle değil ilaç etkileşimiyle açıklanır.",
+        "D": "DOGRU — Linezolid (MAO inhibisyonu) + sertralin kaynaklı serotonin sendromu; iki ilaç kesilir, destek ve benzodiazepin, VRE için daptomisine geçilir.",
+        "E": "YANLIS — İshal tabloyu açıklamaz; klonus, midriyazis ve hipertermi C. difficile ile uyumlu değildir."
+      },
+      "etiketler": [
+        "Linezolid",
+        "Serotonin Sendromu",
+        "İlaç Etkileşimi",
+        "VRE"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s15",
+      "metin": "60 yaşında erkek; 2 gün önce MRSA'lı apse ve selülit nedeniyle acil serviste drenaj ve tek doz İV oritavansin 1200 mg ile tedavi edilmiş. Bugün sol bacakta şişlik ve nefes darlığıyla başvuruyor; BT anjiyografide segmental pulmoner emboli ve alt ekstremitede proksimal DVT saptanıyor. Hemodinami stabil, kanama öyküsü yok, kreatinin klirensi 85 mL/dk.\n\nTetkikler (henüz hiçbir antikoagülan verilmemiş):\naPTT 68 sn (üst sınır 35 sn)\nPT/INR 1,1\nTrombosit 240.000/µL\n\nBu hastada antikoagülasyon için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Anfraksiyone heparin infüzyonu; aPTT kontrolüyle titrasyon",
+        "B": "Anfraksiyone heparin infüzyonu; bazal aPTT uzun olduğundan hedef aPTT'yi bazalin 1,5 katı almak",
+        "C": "Koagülopati araştırması tamamlanıp aPTT normalleşene dek antikoagülasyonu ertelemek",
+        "D": "Heparin köprülemesi yapmadan tek başına varfarin başlamak",
+        "E": "Kilo temelli subkütan düşük molekül ağırlıklı heparin (enoksaparin)"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Oritavansin fosfolipit bağımlı pıhtılaşma testlerini yapay olarak uzatır; aPTT tek dozdan sonra 5 güne dek güvenilmez olduğundan bu dönemde anfraksiyone heparin kullanılmaz, izlem gerektirmeyen DMAH tercih edilir.",
+      "aciklama_detay": "Oritavansin, test reaktifindeki fosfolipitlere bağlanarak in vivo pıhtılaşmayı etkilemeden aPTT'yi (1200 mg tek dozdan sonra yaklaşık 120 saate kadar) ve PT/INR'yi (daha kısa süre) yapay olarak uzatır. Bu nedenle ürün bilgisi, oritavansinden sonraki 5 gün içinde aPTT izlemine dayanan anfraksiyone heparin kullanımını kontrendike sayar: yanlış yüksek aPTT, heparinin yetersiz dozlanmasına ve tedavi başarısızlığına yol açar. Anti-Xa ile izlenen ya da izlem gerektirmeyen DMAH (veya uygun hastada doğrudan oral antikoagülan) güvenli seçenektir. Hastanın bazal aPTT'sinin uzun olması gerçek bir koagülopatiyi değil, ilaç etkileşimini yansıtır; pulmoner emboli tedavisi ertelenmemelidir. Varfarin başlanacaksa hem başlangıçta parenteral köprüleme gerekir hem de INR ölçümü erken dönemde yapay olarak yüksek çıkabilir; oritavansin ayrıca varfarin maruziyetini artırabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — aPTT oritavansin nedeniyle yapay olarak uzundur; titrasyon heparinin yetersiz dozlanmasına yol açar. Bu dönemde anfraksiyone heparin kontrendikedir.",
+        "B": "YANLIS — Test yapay olarak etkilendiği sürece hiçbir aPTT hedefi güvenilir değildir; hedefi değiştirmek sorunu çözmez.",
+        "C": "YANLIS — Uzamış aPTT bir laboratuvar artefaktıdır; akut pulmoner emboli tedavisini geciktirmek zararlıdır.",
+        "D": "YANLIS — Akut VTE'de varfarin tek başına başlanmaz (başlangıçta protrombotik dönem); ayrıca oritavansin INR ölçümünü ve varfarin maruziyetini etkileyebilir.",
+        "E": "DOGRU — aPTT izlemi gerektirmeyen DMAH, oritavansin sonrası güvenli antikoagülasyon seçeneğidir."
+      },
+      "etiketler": [
+        "Oritavansin",
+        "Laboratuvar Etkileşimi",
+        "Heparin İzlemi",
+        "Uzun Etkili Lipoglikopeptitler"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel kılavuzlar; oritavansin ürün bilgisi"
     }
   ]
 }

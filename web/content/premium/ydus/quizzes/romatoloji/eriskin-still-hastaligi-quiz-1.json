@@ -144,6 +144,297 @@
         "Hedefli Biyolojik/Sentetik Tedavi"
       ],
       "zorluk": "zor"
+    },
+    {
+      "id": "s6",
+      "metin": "34 yaşında kadın hasta, 4 haftadır her akşam 39.5°C'ye çıkıp sabaha düşen ateş, ateşle birlikte ortaya çıkan kaşıntısız somon pembesi döküntü, boğaz ağrısı ve el bileği-diz artraljisi ile yatırılıyor. Hemodinamik olarak stabil. Muayenede 2.5 cm çaplı, lastik kıvamında sol supraklaviküler lenf nodu ve splenomegali saptanıyor.\n\nTetkikler:\n- Lökosit 21.400/mm³ (%88 nötrofil), Hb 10.4 g/dL, trombosit 486.000/mm³\n- CRP 168 mg/L, ferritin 5.200 ng/mL, glikozile ferritin %14\n- ALT 96 U/L, LDH 520 U/L\n- ANA ve RF negatif; kan kültürleri 48. saatte üremesiz\n\nHastaya henüz tedavi başlanmamıştır. En uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Tablo tipik olduğundan Still hastalığı kabul edip yüksek doz prednizolon başlamak",
+        "B": "Glikozile ferritin %20'nin altında olduğundan tanıyı kesin sayıp ek inceleme yapmadan anakinra başlamak",
+        "C": "Lenf nodu eksizyonel biyopsisiyle lenfomayı dışlamak, tedaviyi biyopsi sonrasına bırakmak",
+        "D": "Ampirik geniş spektrumlu antibiyotik başlayıp yanıt alınmazsa Still hastalığı tanısı koymak",
+        "E": "İlk adım olarak kemik iliği biyopsisi yapıp lenf nodunu izleme almak"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Still hastalığı bir dışlama tanısıdır; belirgin lenfadenopati varlığında lenfoma doku tanısıyla dışlanmadan glukokortikoid başlanmamalıdır — steroid histolojiyi bozup tanıyı geciktirir.",
+      "aciklama_detay": "Ateş, somon pembesi döküntü, boğaz ağrısı, artralji, nötrofilik lökositoz, çok yüksek ferritin ve düşük glikozile ferritin Still hastalığını güçlü biçimde düşündürür; ancak benzer tablo lenfomalarda (özellikle Hodgkin lenfoma, anjiyoimmünoblastik T hücreli lenfoma, intravasküler lenfoma) ve bazı enfeksiyonlarda (EBV, CMV, parvovirüs B19, tüberküloz, endokardit) görülebilir. Yamaguchi ölçütleri bu nedenle enfeksiyon, malignite ve diğer romatizmal hastalıkların dışlanmasını zorunlu tutar. Büyük, sert ya da supraklaviküler lenf nodu ve beklenmedik LDH yüksekliği lenfoma olasılığını artırır. FDG-PET/BT en aktif ve ulaşılabilir nodu seçmeye yardım eder; tanı ince iğne aspirasyonu yerine eksizyonel biyopsiyle konmalıdır. Glukokortikoid lenfoma hücrelerinde apoptoza yol açarak histolojiyi bozabilir; bu yüzden stabil hastada doku örneği alınmadan başlanmaz. Glikozile ferritin ≤%20 özgüllüğü artırır ama lenfoma, HLH ve ağır enfeksiyonlarda da düşebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Dışlama yapılmadan başlanan yüksek doz steroid olası bir lenfomanın histolojisini bozar ve tanıyı haftalarca geciktirebilir.",
+        "B": "YANLIS — Glikozile ferritin düşüklüğü özgüllüğü artırır ama lenfoma, HLH ve ağır enfeksiyonda da görülebilir; tek başına tanı koydurmaz.",
+        "C": "DOGRU — Supraklaviküler büyük lenf nodu olan hastada lenfoma doku tanısıyla dışlanmalıdır; PET/BT biyopsi yerini seçmeye yardım eder.",
+        "D": "YANLIS — Ampirik antibiyotiğe yanıtsızlık Still tanısı koydurmaz; odak araştırılmadan antibiyotik başlamak kültür ve biyopsi verimini düşürür.",
+        "E": "YANLIS — Kemik iliği incelemesi değerlendirmenin parçası olabilir, ancak erişilebilir büyük bir lenf nodu varken lenfomayı dışlamada en verimli adım nodun eksizyonel biyopsisidir."
+      },
+      "etiketler": [
+        "Dışlama Tanısı",
+        "Lenfoma",
+        "Ayırıcı Tanı",
+        "Nedeni Bilinmeyen Ateş"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Yamaguchi ölçütleri (1992) · EULAR/PReS Still hastalığı önerileri (Fautrel ve ark. 2024)"
+    },
+    {
+      "id": "s7",
+      "metin": "29 yaşında erkek hasta, 3 haftadır her gün 39°C'nin üzerine çıkan ateş ve 3 haftadır süren diz ve el bileği ağrısı ile başvuruyor. Hasta döküntü fark etmemiş; muayenede de döküntü yok.\n\nBulgular:\n- Boğaz ağrısı ve hiperemik farenks (boğaz kültürü negatif)\n- İki taraflı servikal lenfadenopati, splenomegali\n- Lökosit 17.600/mm³ (%86 nötrofil)\n- ALT 88 U/L, AST 74 U/L\n- ANA ve RF negatif\n- Ferritin 3.900 ng/mL\n\nBu hasta için Yamaguchi sınıflama ölçütleri ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "secenekler": {
+        "A": "Tipik döküntü zorunlu majör ölçüt olduğundan ölçütler karşılanmaz",
+        "B": "Ferritin >3000 ng/mL majör ölçüt olduğundan hasta 4 majör ölçütü karşılar",
+        "C": "Glikozile ferritin ölçülmeden Yamaguchi ölçütleri uygulanamaz",
+        "D": "3 majör ölçüt bulunduğundan enfeksiyon, malignite ve diğer romatizmal hastalıkların dışlanmasına gerek yoktur",
+        "E": "3 majör ve 4 minör ölçüt vardır; dışlama da tamamlanırsa sınıflama için yeterlidir"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Yamaguchi: en az 2'si majör olmak üzere ≥5 ölçüt ve dışlama. Bu hastada 3 majör (ateş, artralji, nötrofilik lökositoz) + 4 minör (boğaz ağrısı, LAP/splenomegali, karaciğer enzim yüksekliği, ANA/RF negatifliği) = 7 ölçüt vardır; döküntü şart değildir, ferritin ölçütlerde yer almaz.",
+      "aciklama_detay": "Yamaguchi ölçütleri (1992) en yüksek duyarlılığa sahip sınıflama setidir. Majör ölçütler: ≥1 hafta süren ≥39°C ateş, ≥2 hafta süren artralji/artrit, tipik döküntü ve ≥%80 granülosit içeren ≥10.000/mm³ lökositoz. Minör ölçütler: boğaz ağrısı, lenfadenopati ve/veya splenomegali, karaciğer enzim yüksekliği, ANA ve RF negatifliği. Sınıflama için en az 2'si majör olmak üzere toplam 5 ölçüt gerekir ve enfeksiyon, malignite (özellikle lenfoma) ile diğer romatizmal hastalıklar dışlanmalıdır. Döküntü sık görülür ama zorunlu değildir; geçici olduğu için hasta tarafından fark edilmeyebilir, bu yüzden ateş pikinde muayene tekrarlanmalıdır. Ferritin ve glikozile ferritin Yamaguchi setinde yoktur; glikozile ferritin ≤%20 Fautrel ölçütlerinin parçasıdır ve Fautrel seti dışlama ölçütü içermez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Döküntü dört majör ölçütten biridir ama zorunlu değildir; en az 2 majör ölçüt yeterlidir.",
+        "B": "YANLIS — Ferritin yüksekliği tanıyı destekler, ancak Yamaguchi ölçütlerinde yer almaz.",
+        "C": "YANLIS — Glikozile ferritin Fautrel ölçütlerinin parçasıdır; Yamaguchi ölçütleri onsuz uygulanır.",
+        "D": "YANLIS — Yamaguchi ölçütlerinde dışlama, majör ölçüt sayısından bağımsız olarak zorunludur.",
+        "E": "DOGRU — 3 majör + 4 minör = 7 ölçüt; dışlama tamamlanırsa Yamaguchi sınıflaması karşılanır."
+      },
+      "etiketler": [
+        "Yamaguchi Ölçütleri",
+        "Sınıflama",
+        "Fautrel Ölçütleri",
+        "Dışlama"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Yamaguchi ölçütleri (1992) · Fautrel ölçütleri (2002)"
+    },
+    {
+      "id": "s8",
+      "metin": "31 yaşında kadın hasta, 3 hafta önce Still hastalığı tanısı almış ve prednizolon 40 mg/gün ile izleniyor. Son 3 gündür ateşi gün boyu düşmüyor, bilinç bulanıklığı başlamış.\n\nTetkikler (tanı anı → bugün):\n- Trombosit 512.000 → 138.000/mm³; lökosit 19.800 → 3.900/mm³\n- Ferritin 4.100 → 38.600 ng/mL\n- ESH 104 → 18 mm/saat; CRP 150 → 96 mg/L\n- Fibrinojen 520 → 110 mg/dL; trigliserid 410 mg/dL\n- AST 340 U/L, LDH 1.850 U/L\n- Kan kültürleri ve viral PCR'ler gönderilmiş, sonuçlar bekleniyor\n\nBu hastada en uygun tedavi yaklaşımı hangisidir?",
+      "secenekler": {
+        "A": "Prednizolonu kesip yalnızca geniş spektrumlu antibiyotikle kültür sonuçlarını beklemek",
+        "B": "IV pulse metilprednizolon + yüksek doz anakinra, gerekirse siklosporin",
+        "C": "Metotreksat 15 mg/hafta ekleyip prednizolon dozunu sabit tutmak",
+        "D": "Yalnızca taze donmuş plazma ve trombosit süspansiyonuyla destek tedavisi uygulamak",
+        "E": "Etanersept başlayıp 4 hafta sonra yanıtı değerlendirmek"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Sürekli ateş, sitopenilere dönüş, ferritinde patlama, ESH'de paradoksal düşüş, hipofibrinojenemi ve hipertrigliseridemi MAS'ı gösterir. Tedavi: yüksek doz (pulse) glukokortikoid + yüksek doz anakinra, gerekirse siklosporin; dirençte emapalumab. Enfeksiyon taraması eşzamanlı sürer.",
+      "aciklama_detay": "MAS, Still hastalığının en ölümcül komplikasyonudur ve tanıdan kısa süre sonra ya da alevlenmede gelişebilir. Klinik ipuçları: quotidian ateşin sürekli ateşe dönüşmesi, hepatosplenomegali, ensefalopati ve kanama. Laboratuvarda 'normal görünen' değerler yanıltıcıdır: aktif Still hastalığında beklenen lökositoz ve trombositozun normale ya da altına inmesi, ferritinin katlanarak artması, fibrinojen tüketimine bağlı olarak ESH'nin CRP'ye göre orantısız düşmesi, trigliserid, AST ve LDH artışı tipiktir. EULAR/PReS önerilerine göre MAS'ta yüksek doz glukokortikoid (çoğu zaman IV pulse metilprednizolon) ile birlikte anakinra (MAS'ta yüksek dozlarda, gerekirse IV) ve/veya siklosporin kullanılır; bunlara dirençli olgularda anti-IFN-γ emapalumab düşünülür. Anakinranın kısa yarı ömrü, eşlik eden enfeksiyon kuşkusunda hızla kesilebilmesini sağlar. Tetikleyici enfeksiyon (özellikle EBV, CMV) araştırması eşzamanlı yapılır; tedavi kültür sonuçlarını beklemek için geciktirilmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — MAS'ta immünsüpresyonu kesmek sitokin fırtınasını hızlandırır; enfeksiyon taraması tedaviyle eşzamanlı yürütülür.",
+        "B": "DOGRU — Pulse glukokortikoid ile yüksek doz anakinra (± siklosporin) MAS'ın ilk basamak tedavisidir.",
+        "C": "YANLIS — Metotreksat MAS'ta etkili değildir; etkisi haftalar içinde başlar ve karaciğer hasarını artırabilir.",
+        "D": "YANLIS — Kan ürünleri kanamayı yönetir ama hiperinflamasyonu durdurmaz; neden tedavisi olmadan mortalite yüksektir.",
+        "E": "YANLIS — TNF inhibitörleri sistemik Still hastalığında ve MAS'ta yetersizdir, MAS tetikleyicisi olarak da bildirilmiştir; 4 hafta beklemek kabul edilemez."
+      },
+      "etiketler": [
+        "Makrofaj Aktivasyon Sendromu",
+        "Anakinra",
+        "Siklosporin",
+        "Pulse Glukokortikoid"
+      ],
+      "zorluk": "zor",
+      "kaynak": "EULAR/PReS Still hastalığı önerileri (Fautrel ve ark. 2024)"
+    },
+    {
+      "id": "s9",
+      "metin": "27 yaşında erkek hasta, 5 haftadır süren quotidian ateş, somon pembesi döküntü, boğaz ağrısı, poliartralji, nötrofilik lökositoz (22.000/mm³) ve ferritin 6.800 ng/mL ile başvuruyor. Enfeksiyon ve malignite ayrıntılı incelemeyle dışlanmış, Still hastalığı tanısı konmuş. MAS bulgusu ve ağır organ tutulumu (miyokardit, tamponad) yok. 10 gündür naproksen kullanmasına karşın ateşi sürüyor.\n\nEULAR/PReS önerilerine göre bu hastada en uygun tedavi yaklaşımı hangisidir?",
+      "secenekler": {
+        "A": "Prednizolon 1 mg/kg/gün başlayıp en az 6 ay yüksek dozda sürdürmek, nüks olursa metotreksat eklemek",
+        "B": "Naproksen monoterapisini 3 ay daha sürdürüp yanıtı değerlendirmek",
+        "C": "İlk basamakta TNF inhibitörü (infliksimab) başlamak",
+        "D": "Erken IL-1 ya da IL-6 inhibitörü; glukokortikoidi kısa tutup hızla azaltmak",
+        "E": "Hidroksiklorokin ve sülfasalazin kombinasyonu başlamak"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "EULAR/PReS önerileri, Still hastalığında tanı konur konmaz IL-1 (anakinra, kanakinumab) ya da IL-6 (tosilizumab) inhibitörü başlanmasını önerir; bu 'fırsat penceresi' kronikleşmeyi azaltabilir. Glukokortikoid gerekirse verilir ama amaç en kısa sürede kesmektir.",
+      "aciklama_detay": "Still hastalığının erken döneminde IL-1 ve IL-18 baskın doğal bağışıklık yanıtı öndedir; erken biyolojik tedavinin kronik artiküler seyre geçişi önleyebileceği düşünülür (fırsat penceresi). EULAR/PReS önerileri bu nedenle IL-1 ya da IL-6 inhibitörlerinin tanı konduktan sonra mümkün olan en erken dönemde başlanmasını, glukokortikoidlerin ise gerekiyorsa kullanılıp hızla azaltılarak kesilmesini önerir; uzun süreli glukokortikoid bağımlılığı hem yan etki hem kronik seyir açısından istenmez. NSAİİ'ler tanı sürecinde kısa süreli kullanılabilir; ancak yalnızca NSAİİ ile kontrol altına giren hasta azdır ve yüksek dozda hepatotoksisite ile MAS riski söz konusudur. Metotreksat esas olarak kronik artiküler fenotipte steroid koruyucu ajan olarak yer alır; sistemik fenotipte ilk seçenek değildir. TNF inhibitörlerinin sistemik bulgulardaki etkinliği zayıftır. Sülfasalazin Still hastalığında yüksek oranda ciddi yan etkiyle ilişkilidir ve kaçınılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Uzun süreli yüksek doz glukokortikoid, erken biyolojik tedavinin yerine önerilmez; amaç steroidi mümkün olan en kısa sürede kesmektir.",
+        "B": "YANLIS — 10 günlük NSAİİ'ye yanıtsız aktif sistemik hastalıkta NSAİİ'yi uzatmak tedaviyi geciktirir, hepatotoksisite ve MAS riski taşır.",
+        "C": "YANLIS — TNF inhibitörleri sistemik bulgularda yetersizdir; yalnızca dirençli kronik artiküler formda düşünülür.",
+        "D": "DOGRU — Erken IL-1/IL-6 inhibisyonu ve steroid maruziyetini en aza indirmek güncel önerilerin temelidir.",
+        "E": "YANLIS — Hidroksiklorokinin sistemik Still hastalığında kanıtı yoktur; sülfasalazin bu hastalarda yüksek toksisite nedeniyle kaçınılan bir ilaçtır."
+      },
+      "etiketler": [
+        "Tedavi",
+        "IL-1 İnhibitörü",
+        "IL-6 İnhibitörü",
+        "Fırsat Penceresi",
+        "EULAR/PReS"
+      ],
+      "zorluk": "orta",
+      "kaynak": "EULAR/PReS Still hastalığı önerileri (Fautrel ve ark. 2024)"
+    },
+    {
+      "id": "s10",
+      "metin": "33 yaşında kadın hasta (70 kg), 3 ay önce Still hastalığı tanısıyla anakinra 100 mg/gün ve prednizolon 40 mg/gün ile tedaviye başlanmış. 1. haftada ateşi kontrol altına alınmış ve CRP %70 düşmüş; 4. haftada ateşsiz, CRP normal. Prednizolonu 15 mg/gün'ün altına indirme denemelerinin her birinde ateş ve artralji yeniden başlıyor. Şu an prednizolon 15 mg/gün altında ateşsiz, aktif artriti yok, CRP normal.\n\nEULAR/PReS hedefe yönelik tedavi (T2T) yaklaşımına göre bu hastada en uygun karar hangisidir?",
+      "secenekler": {
+        "A": "3. ay hedefi karşılanmadığından tedaviyi değiştirmek, örneğin IL-6 inhibitörüne geçmek",
+        "B": "Hasta klinik inaktif olduğundan mevcut tedaviyi aynen sürdürüp 12. ayda değerlendirmek",
+        "C": "Prednizolonu yeniden 1 mg/kg/gün'e çıkarıp 6 ay bu dozda sürdürmek",
+        "D": "Anakinrayı kesip metotreksat monoterapisine geçmek",
+        "E": "Anakinra tedavisine TNF inhibitörü eklemek"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "T2T hedefleri: 7. gün ateşsizlik + CRP'de >%50 düşüş; 4. hafta ateşsizlik, CRP normal, aktif eklem sayısında >%50 azalma; 3. ay glukokortikoid <0.1 mg/kg/gün ile klinik inaktif hastalık; 6. ay glukokortikoidsiz klinik inaktif hastalık. 15 mg/gün (0.21 mg/kg) ile sağlanan inaktivite 3. ay hedefini karşılamaz; tedavi değiştirilir.",
+      "aciklama_detay": "EULAR/PReS önerileri Still hastalığında zamana bağlı hedefler tanımlar ve hedefe ulaşılamadığında tedavinin değiştirilmesini ister. Bu hastada ilk iki hedef (7. gün ve 4. hafta) karşılanmıştır; ancak 3. ayda klinik inaktivite yalnızca 0.21 mg/kg/gün prednizolonla (70 kg için 15 mg) sağlanabilmekte ve steroid azaltılamamaktadır — hasta steroid bağımlıdır ve 3. ay hedefinde başarısızdır. Bu durumda biyolojik tedavi optimize edilir ya da değiştirilir: IL-1 inhibitörüne kısmi yanıtta IL-6 inhibitörüne (tosilizumab) geçiş yaygın bir seçenektir; anakinra dozunun artırılması ya da kanakinumaba geçiş de düşünülebilir. Uzun süreli yüksek doz glukokortikoid hedefin tam tersidir. Metotreksat monoterapisi sistemik hastalığı kontrol etmez; TNF inhibitörü sistemik bulgularda yetersizdir ve iki biyolojiğin birlikte kullanımı enfeksiyon riskini artırır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — 3. ay hedefi (steroid <0.1 mg/kg/gün ile inaktivite) karşılanmamıştır; tedavi değiştirilir, örneğin IL-6 inhibitörüne geçilir.",
+        "B": "YANLIS — Steroide bağımlı inaktivite hedef sayılmaz; T2T yaklaşımı hedefe ulaşılamayınca beklemeyi değil tedaviyi değiştirmeyi öngörür.",
+        "C": "YANLIS — Uzun süreli yüksek doz glukokortikoid, T2T'nin temel amacı olan steroid maruziyetini azaltmanın tersidir ve toksisitesi yüksektir.",
+        "D": "YANLIS — Metotreksat monoterapisi sistemik Still hastalığını kontrol etmez; biyolojiği kesmek alevlenmeye yol açar.",
+        "E": "YANLIS — TNF inhibitörleri sistemik bulgularda yetersizdir; iki biyolojiğin birlikte kullanımı ciddi enfeksiyon riskini artırır."
+      },
+      "etiketler": [
+        "Hedefe Yönelik Tedavi",
+        "Klinik İnaktif Hastalık",
+        "Steroid Bağımlılığı",
+        "EULAR/PReS"
+      ],
+      "zorluk": "zor",
+      "kaynak": "EULAR/PReS Still hastalığı önerileri (Fautrel ve ark. 2024)"
+    },
+    {
+      "id": "s11",
+      "metin": "61 yaşında erkek hasta, 2 yıldır tekrarlayan ateş atakları, gövde ve ekstremitelerde hafif kaşıntılı, 24–48 saatte kaybolan ürtikeryal döküntü, uyluk ve tibialarda kemik ağrısı ve halsizlik nedeniyle başvuruyor. Antihistaminiklerden yarar görmemiş. Eklem şişliği yok.\n\nTetkikler:\n- Lökosit 13.800/mm³ (%82 nötrofil), CRP 74 mg/L\n- Serum immünfiksasyon: **monoklonal IgM kappa** (0.8 g/dL)\n- Ferritin 620 ng/mL, glikozile ferritin %48\n- Kompleman C3/C4 normal, kriyoglobulin negatif\n- Deri biyopsisi: vaskülit olmaksızın dermal nötrofilik infiltrasyon\n- Kemik MR: distal femurlarda osteosklerozla uyumlu sinyal değişiklikleri\n\nEn olası tanı hangisidir?",
+      "secenekler": {
+        "A": "Erişkin başlangıçlı Still hastalığı",
+        "B": "Normokomplementemik ürtikeryal vaskülit",
+        "C": "Waldenström makroglobulinemisi",
+        "D": "Kriyoglobulinemik vaskülit",
+        "E": "Schnitzler sendromu"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Kronik ürtikeryal döküntü + monoklonal IgM + ateş, kemik yeniden şekillenmesi, nötrofilik dermal infiltrat ve lökositoz/CRP artışı = Schnitzler sendromu (Strasbourg ölçütleri). IL-1 aracılı edinsel otoinflamatuar bir hastalıktır ve anakinraya çarpıcı yanıt verir.",
+      "aciklama_detay": "Schnitzler sendromu genellikle orta-ileri yaşta başlayan, IL-1 aracılı edinsel bir otoinflamatuar hastalıktır ve erişkinde ateş-döküntü ayırıcı tanısında Still hastalığının önemli bir taklitçisidir. Strasbourg ölçütlerinde iki zorunlu ölçüt vardır: kronik ürtikeryal döküntü ve monoklonal IgM (ya da IgG). Minör ölçütler: açıklanamayan tekrarlayan ateş, kemik yeniden şekillenmesinin objektif kanıtı (sintigrafi, MR ya da ALP artışı; sıklıkla distal femur ve proksimal tibiada osteoskleroz), deri biyopsisinde nötrofilik dermal infiltrat ve lökositoz ve/veya CRP >30 mg/L. IgM'li hastada 2 minör ölçütle kesin tanı konur; bu hastada dört minör ölçütün tamamı vardır. Still hastalığından ayrımı: Still çoğunlukla genç erişkinde başlar, döküntüsü kaşıntısız somon pembesidir, ferritin çok yüksek ve glikozile ferritin düşüktür, monoklonal gamopati beklenmez. Hastaların bir kısmında zamanla Waldenström makroglobulinemisi ya da başka lenfoproliferatif hastalık gelişir; bu yüzden hematolojik izlem sürer. Tedavide anakinra ya da diğer IL-1 inhibitörleri yakınmaları genellikle günler içinde ortadan kaldırır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Still hastalığı çoğunlukla genç erişkinde görülür; döküntüsü kaşıntısız somon pembesidir, ferritin çok yüksek ve glikozile ferritin düşüktür; monoklonal IgM ve osteoskleroz beklenmez.",
+        "B": "YANLIS — Ürtikeryal vaskülitte deri biyopsisinde lökositoklastik vaskülit görülür; bu hastada vaskülit yoktur ve monoklonal IgM ile kemik bulguları tabloyu açıklamaz.",
+        "C": "YANLIS — Monoklonal IgM düzeyi düşüktür; hiperviskozite, sitopeni ve organomegali yoktur. Waldenström izlemde gelişebilir ama mevcut tablo otoinflamatuardır.",
+        "D": "YANLIS — Kriyoglobulin negatif ve kompleman normaldir; biyopside vaskülit yoktur.",
+        "E": "DOGRU — Kronik ürtikeryal döküntü, monoklonal IgM ve dört minör Strasbourg ölçütü Schnitzler sendromunu gösterir."
+      },
+      "etiketler": [
+        "Ayırıcı Tanı",
+        "Schnitzler Sendromu",
+        "Monoklonal IgM",
+        "Otoinflamatuar Hastalık"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Strasbourg ölçütleri (Simon ve ark. 2013)"
+    },
+    {
+      "id": "s12",
+      "metin": "38 yaşında kadın hasta, 2 yıldır Still hastalığı nedeniyle anakinra 100 mg/gün kullanıyor. Ateş, döküntü ve boğaz ağrısı 1 yıldır yok; CRP son aylarda hafif yüksek seyrediyor. Buna karşın her iki el bileği, MKF eklemleri ve sağ kalçada kalıcı sinovit var; prednizolon 7.5 mg/gün'ün altına inilemiyor.\n\nEl bileği grafisi: karpal eklem aralıklarında daralma, perikapitat bölgeden başlayan interkarpal ankiloz\n\nBu hastada en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Prednizolonu 1 mg/kg/gün'e çıkarıp uzun süre bu dozda sürdürmek",
+        "B": "Sistemik bulgular düzeldiği için anakinrayı kesip yalnızca NSAİİ ile izlemek",
+        "C": "IL-6 inhibitörüne (tosilizumab) geçmek ya da metotreksat eklemek",
+        "D": "Hidroksiklorokin eklemek",
+        "E": "Anakinraya kanakinumab ekleyerek çift IL-1 blokajı yapmak"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Sistemik bulguları sönmüş, eroziv/ankilozan artriti süren hasta kronik artiküler fenotiptedir; bu fenotipte IL-6 yolağı öne çıkar ve IL-6 inhibitörüne geçiş ya da steroid koruyucu metotreksat eklenmesi uygun seçeneklerdir.",
+      "aciklama_detay": "Still hastalığının seyri monofazik, polisiklik ve kronik artiküler olmak üzere üç kalıpta ilerler. Kronik artiküler fenotipte sistemik bulgular geri planda kalır; romatoid artrite benzeyen, eroziv ve ankiloza gidebilen poliartrit baskındır. El bileğinde perikapitat bölgeden başlayan interkarpal ankiloz Still hastalığının karakteristik radyolojik bulgusudur; kalça ve omuz gibi kök eklem tutulumu kötü prognozu gösterir. Patofizyolojik dikotomiye göre sistemik fenotipte IL-1/IL-18, kronik artiküler fenotipte IL-6 (ve IL-17) yolağı daha belirgindir; bu nedenle IL-1 inhibitörüne karşın artriti süren hastada tosilizumaba geçiş sık uygulanan bir seçenektir. Metotreksat kronik artiküler fenotipte steroid koruyucu olarak ve eklem hasarını sınırlamak için eklenebilir. Uzun süreli yüksek doz glukokortikoid hem toksik hem de hedefle çelişkilidir. İki IL-1 inhibitörünün birlikte kullanımı mantıksızdır ve enfeksiyon riskini artırır; TNF inhibitörleri ise ancak dirençli kronik artrit formunda düşünülür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Uzun süreli yüksek doz glukokortikoid eklem hasarını durdurmaz ve ağır toksisite yaratır; hedef steroidi azaltmaktır.",
+        "B": "YANLIS — Artrit aktif ve steroid bağımlılığı sürerken biyolojiği kesip NSAİİ ile izlemek eklem yıkımını hızlandırır.",
+        "C": "DOGRU — Kronik artiküler fenotipte IL-6 inhibisyonu ve/veya metotreksat eklem kontrolü ve steroid azaltma için uygundur.",
+        "D": "YANLIS — Hidroksiklorokinin Still hastalığının eroziv artritinde etkinliği gösterilmemiştir.",
+        "E": "YANLIS — Aynı yolağı hedefleyen iki biyolojiğin birlikte kullanımı ek yarar sağlamaz ve ciddi enfeksiyon riskini artırır."
+      },
+      "etiketler": [
+        "Kronik Artiküler Fenotip",
+        "Tosilizumab",
+        "Metotreksat",
+        "İnterkarpal Ankiloz"
+      ],
+      "zorluk": "orta",
+      "kaynak": "EULAR/PReS Still hastalığı önerileri (Fautrel ve ark. 2024) · Konu anlatımı (MediSea premium)"
+    },
+    {
+      "id": "s13",
+      "metin": "36 yaşında erkek hasta, 5 aydır Still hastalığı nedeniyle tosilizumab kullanıyor ve klinik inaktif hastalıkla izleniyor. Son 4 gündür halsizlik ve hafif baş ağrısı var; vücut ısısı 37.4°C.\n\nTetkikler (1 ay önce → bugün):\n- Trombosit 268.000 → 96.000/mm³; lökosit 7.100 → 2.900/mm³\n- Ferritin 210 → 9.400 ng/mL\n- CRP 1.2 → 4.8 mg/L\n- AST 28 → 310 U/L, LDH 240 → 980 U/L\n- Fibrinojen 280 → 130 mg/dL\n\nBu tablonun en olası açıklaması hangisidir?",
+      "secenekler": {
+        "A": "Tosilizumaba bağlı izole ilaç hepatotoksisitesi; tosilizumabı kesmek yeterlidir",
+        "B": "Makrofaj aktivasyon sendromu; IL-6 blokajı ateşi ve CRP'yi maskelemektedir",
+        "C": "CRP normal olduğundan hiperinflamasyon ve ciddi enfeksiyon dışlanır; viral hepatit düşünülmelidir",
+        "D": "Still hastalığının alışılmış alevlenmesi; tosilizumab dozunu artırmak yeterlidir",
+        "E": "Tosilizumaba bağlı izole nötropeni; granülosit koloni uyarıcı faktör başlamak yeterlidir"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "IL-6 blokajı altındaki hastada MAS ateşsiz ve CRP'si neredeyse normal seyredebilir. Ferritinde katlanan artış, sitopeniler, AST/LDH yükselmesi ve fibrinojen düşüşü MAS'ı gösterir; tanı ateşe ve CRP'ye değil bu parametrelere dayanır.",
+      "aciklama_detay": "Tosilizumab IL-6 reseptörünü bloke ettiği için hepatik akut faz yanıtını (CRP ve fibrinojen üretimi) ve ateşi baskılar. Bu nedenle tosilizumab ya da kanakinumab gibi biyolojikler altında gelişen MAS'ta klasik bulgular silikleşir: ateş hafif ya da yoktur, CRP normale yakındır ve ferritin artışı klasik MAS'a göre daha sınırlı kalabilir. Tanı için ferritin dinamiği, trombosit ve lökositlerdeki düşüş, AST/ALT ve LDH artışı, fibrinojen tüketimi ve trigliserid artışı izlenmelidir; önceki değerlerle karşılaştırma belirleyicidir. Tosilizumab transaminazları yükseltebilir ve nötropeni yapabilir; ancak ferritinin yaklaşık 45 kat artması, iki seride sitopeni ve fibrinojen düşüşü izole ilaç etkisiyle açıklanmaz. Tedavi klasik MAS'taki gibidir: yüksek doz glukokortikoid, anakinra ve/veya siklosporin; tetikleyici enfeksiyon eşzamanlı araştırılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Tosilizumab transaminaz yüksekliği yapabilir, ancak ferritinde katlanan artış, iki seride sitopeni ve fibrinojen düşüşü izole hepatotoksisiteyle açıklanmaz.",
+        "B": "DOGRU — IL-6 blokajı ateşi ve CRP'yi maskeler; ferritin, sitopeniler, AST/LDH ve fibrinojen değişimleri MAS'ı gösterir.",
+        "C": "YANLIS — Tosilizumab altında CRP ne hiperinflamasyonu ne de ciddi enfeksiyonu dışlar; bu hastalarda CRP güvenilir bir belirteç değildir.",
+        "D": "YANLIS — Aktif Still alevlenmesinde lökositoz ve trombositoz beklenir; sitopeni ve fibrinojen düşüşü MAS'a işaret eder ve doz artışı tedavi değildir.",
+        "E": "YANLIS — Tosilizumab nötropeni yapabilir ama trombositopeni, ferritin artışı, karaciğer hasarı ve hipofibrinojenemiyi açıklamaz."
+      },
+      "etiketler": [
+        "Makrofaj Aktivasyon Sendromu",
+        "Tosilizumab",
+        "Maskelenmiş Bulgular",
+        "Ferritin"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel kılavuzlar"
+    },
+    {
+      "id": "s14",
+      "metin": "27 yaşında kadın hasta, 6 haftadır süren quotidian ateş, boğaz ağrısı, artrit, nötrofilik lökositoz ve ferritin 5.600 ng/mL ile Still hastalığı ön tanısıyla izleniyor. Gövde ve sırtında ateş pikleri arasında da kaybolmayan, kaşıntılı, kahverengimsi-eritemli, bir kısmı çizgisel (flagellat) dizilim gösteren papül ve plaklar var. Kas gücü ve CK normal; ANA negatif; yeni başlanan ilaç yok.\n\nDeri biyopsisi: üst epidermiste tek tek diskeratotik keratinositler, dermiste nötrofilden zengin seyrek infiltrasyon; vaskülit yok.\n\nBu deri bulgusu ile ilgili en doğru yorum hangisidir?",
+      "secenekler": {
+        "A": "Flagellat eritem dermatomiyozite özgüdür; tanı dermatomiyozit olarak değiştirilmelidir",
+        "B": "Döküntü ilaç reaksiyonudur; DRESS açısından tüm ilaçlar kesilmelidir",
+        "C": "Still döküntüsü tanım gereği geçici ve kaşıntısızdır; kalıcı kaşıntılı lezyon Still hastalığını dışlar",
+        "D": "Still hastalığının atipik kalıcı döküntüsüdür; diskeratotik keratinositler karakteristiktir",
+        "E": "Lezyonlar ürtikeryal vaskülittir; kompleman düzeyleri istenip vaskülit tedavisi planlanmalıdır"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Still hastalığında tipik somon pembesi geçici döküntünün yanı sıra kalıcı, kaşıntılı papül ve plaklar (bazen flagellat dizilimli) görülebilir; histolojide üst epidermiste diskeratotik keratinositler karakteristiktir ve tanıyı destekler.",
+      "aciklama_detay": "Still hastalığının klasik döküntüsü ateş pikleriyle ortaya çıkan, kaşıntısız, somon pembesi, geçici makülopapüler döküntüdür ve Koebner fenomeni gösterebilir. Hastaların bir kısmında ise kalıcı kaşıntılı papül ve plaklar gelişir: gövde, boyun ve ekstremitelerde yerleşen, kahverengi-kırmızı, bazen çizgisel ya da flagellat dizilimli lezyonlardır. Histolojide üst epidermiste diskeratotik keratinositler ve dermiste nötrofil içeren infiltrasyon görülür; bu görünüm tanıyı destekleyen bir ipucudur. Flagellat görünüm dermatomiyozit, bleomisin ve shiitake mantarı dermatitinde de görülebilir; ancak kas tutulumunun olmaması, ANA negatifliği ve tipik sistemik tablo dermatomiyoziti düşündürmez. Atipik döküntü Still hastalığı tanısını dışlatmaz; dışlama ve tedavi yaklaşımı klasik tablodaki gibi sürdürülür.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Flagellat görünüm dermatomiyozit dışında Still hastalığı, bleomisin ve shiitake dermatitinde de görülür; kas gücü ve CK normal, ANA negatiftir.",
+        "B": "YANLIS — Yeni başlanan ilaç yoktur ve biyopsi bulguları ilaç reaksiyonundan çok Still hastalığının atipik döküntüsüyle uyumludur.",
+        "C": "YANLIS — Klasik döküntü geçici ve kaşıntısızdır, ancak kalıcı kaşıntılı papül-plak tipi Still hastalığında tanımlanmıştır ve tanıyı dışlamaz.",
+        "D": "DOGRU — Kalıcı kaşıntılı papül-plaklar ve üst epidermiste diskeratotik keratinositler Still hastalığının atipik deri tutulumunun karakteristik özelliğidir.",
+        "E": "YANLIS — Biyopside vaskülit yoktur; lezyonlar ürtikeryal vaskülitle uyumlu değildir."
+      },
+      "etiketler": [
+        "Deri Tutulumu",
+        "Atipik Döküntü",
+        "Diskeratotik Keratinosit",
+        "Ayırıcı Tanı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Konu anlatımı (MediSea premium) ve güncel literatür"
+    },
+    {
+      "id": "s15",
+      "metin": "24 yaşında kadın hasta, Still hastalığı zemininde gelişen makrofaj aktivasyon sendromu nedeniyle yoğun bakımda izleniyor. 3 gündür IV pulse metilprednizolon, yüksek doz IV anakinra ve siklosporin almasına karşın ateşi sürüyor; ferritin 52.000 ng/mL'ye yükselmiş, trombosit 34.000/mm³. Serum CXCL9 düzeyi belirgin yüksek.\n\nBu aşamada MAS patogenezindeki merkezi sitokini doğrudan nötralize eden ve eklenmesi düşünülecek ajan hangisidir?",
+      "secenekler": {
+        "A": "Emapalumab (anti-IFN-γ monoklonal antikor)",
+        "B": "Tosilizumab (anti-IL-6 reseptör monoklonal antikoru)",
+        "C": "İnfliksimab (anti-TNF-α antikoru)",
+        "D": "Rituksimab (anti-CD20 antikoru)",
+        "E": "Abatasept (CTLA-4-Ig füzyon proteini)"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "MAS'ın merkezi sitokini IFN-γ'dır; CXCL9 IFN-γ aktivitesinin göstergesidir. Glukokortikoid, anakinra ve siklosporine dirençli MAS'ta anti-IFN-γ emapalumab eklenmesi düşünülür.",
+      "aciklama_detay": "MAS'ta NK hücre ve sitotoksik T lenfosit sitolitik işlevinin bozulması, antijen sunan hücrelerin temizlenememesine ve T hücre-makrofaj etkileşiminin sürmesine yol açar; bu döngünün merkezinde IFN-γ vardır. IL-18, NK ve T hücrelerinden IFN-γ salınımını güçlendirir; IFN-γ makrofajları aktive ederek hemofagositozu ve sitokin fırtınasını sürdürür. CXCL9, IFN-γ ile indüklenen bir kemokindir ve IFN-γ aktivitesinin serumdaki en kullanışlı göstergesidir. EULAR/PReS önerileri ilk basamakta yüksek doz glukokortikoid, anakinra ve/veya siklosporini, bunlara yanıtsız MAS'ta emapalumabı önerir; emapalumab primer HLH'de onaylıdır ve Still ilişkili MAS'ta da etkinliği gösterilmiştir. JAK inhibitörleri (ruksolitinib) IFN-γ sinyalini reseptörün aşağısında keserek dirençli olgularda ayrı bir seçenektir, ancak sitokini doğrudan nötralize etmez. TNF inhibitörleri, rituksimab ve abatasept MAS'ın temel yolağını hedeflemez.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Emapalumab IFN-γ'yı doğrudan nötralize eder; ilk basamak tedaviye dirençli MAS'ta önerilen ajandır.",
+        "B": "YANLIS — Tosilizumab MAS'ı önlemez; IL-6 blokajı altında da MAS gelişebilir ve bulguları maskelenir. IFN-γ'yı hedeflemez.",
+        "C": "YANLIS — TNF inhibitörleri MAS'ın merkezi yolağını hedeflemez; Still hastalığında MAS tetikleyicisi olarak da bildirilmiştir.",
+        "D": "YANLIS — Rituksimab B hücrelerini hedefler; EBV ilişkili HLH'de yeri olsa da IFN-γ aracılı makrofaj aktivasyonunu doğrudan kesmez.",
+        "E": "YANLIS — Abatasept T hücre ko-uyarımını bloke eder; MAS'ta etkinliği gösterilmemiştir ve IFN-γ'yı nötralize etmez."
+      },
+      "etiketler": [
+        "Makrofaj Aktivasyon Sendromu",
+        "IFN-γ",
+        "Emapalumab",
+        "CXCL9"
+      ],
+      "zorluk": "orta",
+      "kaynak": "EULAR/PReS Still hastalığı önerileri (Fautrel ve ark. 2024)"
     }
   ]
 }

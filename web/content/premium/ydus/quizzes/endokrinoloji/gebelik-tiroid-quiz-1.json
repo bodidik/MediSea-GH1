@@ -272,6 +272,183 @@
       ],
       "zorluk": "zor",
       "kaynak": "UpToDate — Overview of thyroid disease and pregnancy"
+    },
+    {
+      "id": "s10",
+      "metin": "Yirmi dokuz yaşında kadın, ilk gebeliğinin 8. haftasında. Bilinen tiroid hastalığı yok; annesinde Hashimoto tiroiditi var. Yakınması yok.\n\nTetkikler:\nTSH: 4.8 mU/L ↑ (laboratuvarın trimestere özgü aralığı yok)\nsT4: 1.10 ng/dL (normal)\nAnti-TPO: 420 IU/mL ↑\n\nTEMD 2025 Tiroid Kılavuzu'na göre bu gebe için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "TSH 10 mU/L'nin altında olduğundan tedavi gerekmez; 4 hafta sonra TSH tekrarlanmalıdır.",
+        "B": "Önce tiroid ultrasonografisi yapılmalı; nodül yoksa tedavi gerekmez.",
+        "C": "Anti-TPO pozitif subklinik hipotiroidi vardır; levotiroksin başlanmalı (ör. 50 µg/gün) ve ilk yarıda 4 haftada bir TSH izlenmelidir.",
+        "D": "Anti-TPO pozitifliği için selenyum desteği başlanmalı, levotiroksine gerek yoktur.",
+        "E": "Fetal beyne daha hızlı ulaştığı için levotiroksin yerine liyotironin (T3) tercih edilmelidir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "İlk trimesterde TSH üst sınırı 2.5 mU/L (trimester aralığı yoksa 4.0). TSH 4.8 + sT4 normal = subklinik hipotiroidi; anti-TPO pozitifse LT4 önerilir.",
+      "aciklama_detay": "TEMD 2025 gebelikte TSH üst sınırını ilk trimesterde 2.5, ikinci ve üçüncü trimesterde 3.0 mU/L alır; trimestere özgü aralık yoksa 4.0 mU/L kullanılır. Bu hastada TSH her iki ölçüte göre de yüksektir, sT4 normaldir: subklinik hipotiroidi. TEMD'ye göre gebelikte subklinik hipotiroidide LT4 kararını anti-TPO belirler: antikor pozitifse LT4 önerilir, çünkü randomize çalışmalarda obstetrik riski (düşük, erken doğum) azaltmıştır; antikor negatifse karar tartışmalıdır ve TSH ≥10 mU/L olduğunda tartışmasız tedavi edilir. Başlangıçta düşük-orta doz yeterlidir, TSH ilk 24 haftada 4 haftada bir izlenir; hedef trimestere özgü aralığın alt yarısıdır. Fetüs yaklaşık 10–12. haftaya kadar tiroid hormonu için anneye bağımlıdır ve fetal beyin T3'ü yerel olarak T4'ten üretir; bu yüzden tek uygun ajan levotiroksindir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Gebelikte 10 mU/L eşiği aşikâr hipotiroidi sınırıdır; subklinik hipotiroidide tedavi kararı anti-TPO'ya göre verilir. Anti-TPO pozitif hastada beklemek obstetrik riski sürdürür.",
+        "B": "YANLIS — Ultrasonografi tedavi kararını belirlemez; karar TSH düzeyi ve anti-TPO durumuna göre verilir.",
+        "C": "DOGRU — Anti-TPO pozitif subklinik hipotiroidide TEMD LT4 önerir; TSH ilk 24 haftada 4 haftada bir izlenir.",
+        "D": "YANLIS — Selenyumun gebelikte hipotiroidiyi önlediği ya da tedavi ettiği gösterilmemiştir; LT4'ün yerini tutmaz.",
+        "E": "YANLIS — Fetal beyin T3'ü dolaşımdaki anne T4'ünden yerel deiyodinasyonla üretir; T3 preparatları anne T4'ünü sağlamaz. Gebelikte tek ajan levotiroksindir."
+      },
+      "etiketler": [
+        "Gebelikte Subklinik Hipotiroidi",
+        "Anti-TPO",
+        "Trimester TSH Aralığı",
+        "Levotiroksin"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (Gebelik ve hipotiroidi); Alexander et al. Thyroid 2017"
+    },
+    {
+      "id": "s11",
+      "metin": "Otuz bir yaşında kadın, 11. gebelik haftasında. Yüksek tansiyon korkusuyla tuz tüketimini belirgin kısıtladığını, evde iyotlu tuz kullanmadığını belirtiyor; iyot içeren vitamin almıyor. Tiroid hastalığı öyküsü yok.\n\nTetkikler:\nTSH: 1.4 mU/L (normal)\nsT4: gebeliğe özgü referansın 2.5. persantilinin altında\nAnti-TPO: negatif\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Levotiroksin 50 µg/gün başlanmalı ve sT4 referansın ortasına çıkarılmalıdır.",
+        "B": "Tablo santral hipotiroidiyi düşündürür; gebelikte kontrastsız hipofiz MRG istenmelidir.",
+        "C": "Levotiroksin ve liyotironin kombinasyonu başlanmalıdır.",
+        "D": "Müdahale gerekmez; tiroid testleri doğumdan sonra tekrarlanmalıdır.",
+        "E": "Rutin levotiroksin önerilmez; öncelikle iyot eksikliği düşünülerek günlük iyot desteği başlanmalı (tuz kısıtlayan gebede 200–250 µg/gün) ve laktasyon sonuna kadar sürdürülmelidir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "İzole maternal hipotiroksinemi (TSH normal, sT4 düşük): LT4'ün obstetrik ya da nörogelişimsel yararı gösterilmemiş. Türkiye'de önce iyot eksikliği düşünülür ve iyot desteği verilir.",
+      "aciklama_detay": "İzole hipotiroksinemi; TSH normalken sT4'ün gebelik referansının alt 2.5–5. persantilinde olmasıdır. Randomize çalışmalarda gebelikte başlanan LT4, çocukta IQ ya da nörogelişimsel sonuçları ve erken doğum, preeklampsi gibi obstetrik sonuçları iyileştirmemiştir; bu nedenle rutin LT4 önerilmez. Ülkemiz iyot yetersizliğinin sürdüğü bir bölgedir: İstanbul'da gebelerin büyük çoğunluğunda idrar iyot düzeyi yetersiz bulunmuştur. TEMD 2025, gebeye idrar iyodu ölçülmeksizin, tuz tüketimi ve yaşadığı bölgeye göre günde 100–300 µg iyot desteğini; tuzu kısıtlanan gebede 200–250 µg/gün iyodu önerir. Destek gebelik planlanınca başlar, laktasyon bitene kadar sürer. İzole hipotiroksinemi görüldüğünde ilk düşünülecek neden iyot eksikliğidir. Gebelik gibi TBG'nin arttığı bir durumda sT4 immünoölçümleri de yanıltıcı olabilir; sınırda uyumsuzlukta total T4 (gebe olmayan üst sınırın 1.5 katı) yardımcıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İzole hipotiroksinemide rutin LT4'ün yararı gösterilmemiştir; TEMD ve ATA bunu önermez.",
+        "B": "YANLIS — Gebelikte TSH normal, sT4 hafif düşük tablonun olağan açıklaması izole hipotiroksinemidir (iyot eksikliği, TBG artışının ölçüme etkisi). Hipofiz hastalığını düşündüren başka bulgu yoktur.",
+        "C": "YANLIS — Kombinasyon tedavisinin gebelikte yeri yoktur; fetal beyin anne T4'üne gereksinim duyar ve izole hipotiroksinemide hormon tedavisi zaten önerilmez.",
+        "D": "YANLIS — Hormon tedavisi gerekmese de iyot desteği gereklidir; özellikle tuz kısıtlayan gebede iyot alımı belirgin yetersizdir.",
+        "E": "DOGRU — Rutin LT4 yerine iyot desteği; tuzu kısıtlanan gebede 200–250 µg/gün, laktasyon sonuna kadar."
+      },
+      "etiketler": [
+        "İzole Hipotiroksinemi",
+        "İyot Desteği",
+        "Gebelik",
+        "TEMD 2025"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (İyot eksikliği; Gebelik ve hipotiroidi)"
+    },
+    {
+      "id": "s12",
+      "metin": "Otuz yaşında kadın, Graves hastalığı nedeniyle 20 aydır metimazol kullanıyor; son 8 aydır 5 mg/gün ile ötiroid. Gebelik testi pozitif çıkınca 5. gebelik haftasında başvuruyor. Guatr ve orbitopati yok.\n\nTetkikler:\nTSH: 0.9 mU/L\nsT4: 1.15 ng/dL (normal)\nTRAb: negatif\n\nTEMD 2025'e göre bu gebe için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Antitiroid ilaç kesilmeli; tiroid testleri 1–2 haftada bir izlenmeli, ilk trimesterde nüks olursa PTU başlanmalıdır.",
+        "B": "Metimazol aynı dozla sürdürülmelidir; 5 mg/gün dozda embriyopati riski yoktur.",
+        "C": "Metimazol PTU'ya (günde 2×50 mg) çevrilmeli ve PTU 16. haftaya kadar sürdürülmelidir.",
+        "D": "İlk haftalardaki metimazol maruziyeti embriyopatiyi kesinleştirdiğinden gebeliğin sonlandırılması önerilmelidir.",
+        "E": "Metimazol kesilmeli ve 12. gebelik haftasında radyoaktif iyot ile kesin tedavi planlanmalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Düşük dozla uzun süredir ötiroid, TRAb negatif, guatrsız Graves hastası yeni gebe kalmışsa organogenez döneminde her türlü ATİ'den kaçınmak için ilaç kesilir ve 1–2 haftada bir TFT izlenir.",
+      "aciklama_detay": "TEMD 2025: Graves'i olup ötiroid seyreden ve düşük doz alan (MMI 5–10 mg/gün ya da PTU 100–200 mg/gün) yeni gebede antitiroid ilacın kesilmesi düşünülebilir; kesilirse tiroid testleri 1–2 haftada bir yapılır. Nüks olasılığını düşüren özellikler bu hastada bir aradadır: 18 aydan uzun tedavi, düşük idame dozu, TRAb negatifliği, guatr yokluğu. Organogenez (yaklaşık 6–10. haftalar) teratojenite açısından en kritik dönem olduğundan, ilacı kesmek fetüsü her iki ATİ'nin riskinden de korur. Nüks olursa ilk trimesterde PTU, 16. haftadan sonra 1:20 oranla MMI kullanılır. Nüks riskinin yüksek olduğu durumlarda (yüksek TRAb, büyük guatr, yakın zamanda ötiroidi) ilaç kesilmez, PTU'ya geçilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Düşük riskli, düşük dozla ötiroid Graves'te gebelik saptanınca ATİ kesilip 1–2 haftada bir TFT izlenmesi TEMD önerisidir.",
+        "B": "YANLIS — Metimazol embriyopatisi (aplasia cutis, koanal/özofageal atrezi, omfalosel) doza bağlıdır ama düşük dozda da tanımlanmıştır; organogenez döneminde MMI sürdürülmez.",
+        "C": "YANLIS — Nüks riski yüksek olsaydı makul olurdu; ancak bu hastada ilacın kesilebilme olasılığı yüksektir. PTU'nun da (daha hafif) doğumsal anomali ve maternal hepatotoksisite riski vardır; gereksiz ATİ maruziyetinden kaçınmak daha uygundur.",
+        "D": "YANLIS — 5. haftadaki maruziyet embriyopatiyi kesinleştirmez; mutlak risk düşüktür ve gebeliğin sonlandırılması için gerekçe değildir.",
+        "E": "YANLIS — Radyoaktif iyot gebelikte kesinlikle kontrendikedir; fetal tiroid 10–12. haftadan itibaren iyot tutar ve ablasyona uğrar."
+      },
+      "etiketler": [
+        "Graves Hastalığı",
+        "Erken Gebelik",
+        "ATİ Kesilmesi",
+        "Metimazol Embriyopatisi",
+        "PTU"
+      ],
+      "zorluk": "zor",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (Gebelik ve hipertiroidi); Alexander et al. Thyroid 2017"
+    },
+    {
+      "id": "s13",
+      "metin": "Yirmi yedi yaşında kadın, doğumdan 3 ay sonra çarpıntı, sinirlilik ve uykusuzlukla başvuruyor. Bebeğini emziriyor. İlk trimesterde anti-TPO pozitif bulunmuş. Muayenede tiroid hafif büyük ve ağrısız; orbitopati yok. Nabız 106/dk.\n\nTetkikler:\nTSH: <0.01 mU/L\nsT4: 2.3 ng/dL ↑\nsT3: 5.6 pg/mL ↑\n\nBu hastada ayırıcı tanı ve başlangıç yaklaşımı için en uygun seçenek hangisidir?",
+      "secenekler": {
+        "A": "I-131 ile radyoaktif iyot tutulum testi yapılmalı; emzirmeye 24 saat ara vermek yeterlidir.",
+        "B": "Graves ayrımı için TRAb bakılmalı; yakınmalar için emzirmeyle uyumlu propranolol verilmeli, sonuç gelmeden antitiroid ilaç başlanmamalıdır.",
+        "C": "Anti-TPO pozitif olduğundan tanı postpartum tiroidittir; ek tetkik gerekmez, metimazol 20 mg/gün başlanmalıdır.",
+        "D": "Emzirme sırasında antitiroid ilaçlar kontrendike olduğundan emzirme kesilmeli ve metimazol başlanmalıdır.",
+        "E": "Tablo Graves hastalığıdır; postpartum dönemde ilk seçenek radyoaktif iyot tedavisidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Postpartum tirotoksikozda asıl soru: yıkıcı postpartum tiroidit mi, Graves mi? Emziren annede sintigrafi yerine TRAb bakılır; yakınmalar propranololle kontrol edilir. PPT'de ATİ etkisizdir.",
+      "aciklama_detay": "İlk trimesterde tiroid antikoru pozitif olan kadında postpartum tiroidit riski %33–50'dir; tirotoksik faz tipik olarak doğumdan sonraki 1–4. aylarda görülür. Ancak Graves hastalığı da postpartum dönemde sıklıkla alevlenir ve tedavileri tamamen farklıdır: PPT yıkıcı bir tiroidittir, yeni hormon sentezi olmadığı için antitiroid ilaç etkisizdir; Graves'te ATİ gerekir. TEMD 2025'e göre ayrım için TRAb bakılır; emzirme sürdüğü için sintigrafi gerekmedikçe yapılmaz. Graves'i düşündüren ipuçları: T3/T4 oranının yüksekliği (>20, total değerlerle), belirgin guatr, orbitopati, Doppler'de artmış kanlanma. Tirotoksik yakınmalar için emzirmeyle uyumlu propranolol önerilir. Graves doğrulanırsa emzirme sırasında MMI ≤20 mg/gün ya da PTU ≤300 mg/gün güvenle kullanılabilir. Perteknetat sintigrafisi zorunlu olursa emzirmeye yaklaşık 12 saat ara verilmesi yeterlidir; I-131 ise emzirmeyi pratikte sonlandırır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — I-131 anne sütüne geçer ve bebeğin tiroidinde birikir; iyot izotoplarıyla yapılan incelemeden sonra emzirme pratikte sona erer. Tanı için önce TRAb yeterlidir.",
+        "B": "DOGRU — TRAb ile Graves ayrılır; propranolol emzirmeyle uyumludur. PPT'de ATİ etkisiz olduğundan sonuç gelmeden başlanmaz.",
+        "C": "YANLIS — Anti-TPO pozitifliği Graves'te de sıktır, ayırıcı değildir. PPT'de metimazol etkisizdir, yalnızca yan etki riski getirir.",
+        "D": "YANLIS — Emzirme döneminde MMI ≤20 mg/gün ve PTU ≤300 mg/gün güvenlidir; emzirmenin kesilmesi gerekmez.",
+        "E": "YANLIS — Tanı henüz kesin değildir; ayrıca emziren annede radyoaktif iyot emzirmenin kesilmesini ve bebekle yakın temasın kısıtlanmasını gerektirir, ilk seçenek değildir."
+      },
+      "etiketler": [
+        "Postpartum Tiroidit",
+        "Graves Ayırıcı Tanısı",
+        "TRAb",
+        "Emzirme",
+        "Propranolol"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (Tiroiditler); Alexander et al. Thyroid 2017"
+    },
+    {
+      "id": "s14",
+      "metin": "Otuz dört yaşında kadın, Hashimoto hipotiroidisi nedeniyle gebelik öncesi levotiroksin 75 µg/gün kullanıyordu. Gebelik boyunca doz 112 µg/gün'e çıkarılmış ve TSH hedefte seyretmiş. Dün komplikasyonsuz vajinal doğum yaptı; bebeğini emzirmeyi planlıyor.\n\nLevotiroksin tedavisi için en uygun öneri hangisidir?",
+      "secenekler": {
+        "A": "Gebelikteki doz (112 µg/gün) emzirme bitene kadar sürdürülmeli, sonra azaltılmalıdır.",
+        "B": "Hormon anne sütüne geçtiği için emzirme süresince levotiroksin kesilmelidir.",
+        "C": "Mevcut doz sürdürülmeli, doz kararı 6 ay sonra bakılacak TSH'ye göre verilmelidir.",
+        "D": "Gebelik öncesi doza (75 µg/gün) dönülmeli ve yaklaşık 6 hafta sonra TSH ölçülmelidir.",
+        "E": "Postpartum tiroidit riski nedeniyle doz iki katına çıkarılmalıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Doğumdan sonra LT4 ihtiyacı hızla gebelik öncesi düzeye iner: gebelik öncesi doza dönülür, 6. haftada TSH bakılır. Levotiroksin emzirmeyle uyumludur.",
+      "aciklama_detay": "Gebelikteki doz artışı; TBG artışı, plasental deiyodinaz aktivitesi, dağılım hacmindeki büyüme ve fetüse T4 aktarımı nedeniyledir. Bu etkenler doğumla birlikte ortadan kalkar. TEMD 2025: doğumdan sonra gebelik öncesi doza dönülür ve yaklaşık 6. haftada TSH ölçülür. Gebelik dozunun sürdürülmesi iatrojenik tirotoksikoza (çarpıntı, uykusuzluk, emzirmeyi olumsuz etkileyebilen anksiyete) yol açar. Levotiroksin fizyolojik bir hormondur, anne sütüne klinik olarak anlamlı miktarda geçmez; emzirme sırasında kesilmez. Not: gebelikte LT4'e yeni başlanmış subklinik hipotiroidili (özellikle anti-TPO negatif, düşük dozlu) kadınlarda doğumdan sonra ilacın kesilip yeniden değerlendirilmesi de bir seçenektir; bu hasta ise gebelik öncesinden beri tedavi gerektiren Hashimoto hipotiroidisidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Emzirme LT4 ihtiyacını artırmaz; gebelik dozu doğumdan sonra aşırı replasmana yol açar.",
+        "B": "YANLIS — Levotiroksin emzirmeyle tam uyumludur; kesilirse anne hipotiroid olur ve süt üretimi de olumsuz etkilenebilir.",
+        "C": "YANLIS — Doz ihtiyacı doğumla hemen düşer; 6 ay beklemek aylarca sürecek aşırı replasman demektir.",
+        "D": "DOGRU — TEMD: doğumdan sonra gebelik öncesi doza dönülür, 6. haftada TSH kontrol edilir.",
+        "E": "YANLIS — Postpartum tiroidit bu hastada zaten var olan hipotiroidinin ilaç ihtiyacını iki katına çıkarmaz; doz artışı gerekçesizdir."
+      },
+      "etiketler": [
+        "Postpartum Dönem",
+        "Levotiroksin Doz Ayarı",
+        "Hashimoto Tiroiditi",
+        "Emzirme"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025 (Gebelik ve hipotiroidi)"
+    },
+    {
+      "id": "s15",
+      "metin": "Yirmi sekiz yaşında kadın, bir yıl içinde gebelik planlıyor. Graves hastalığı nedeniyle 26 aydır metimazol kullanıyor; iki kez doz azaltma denemesinde nüks gelişmiş. Tiroid belirgin diffüz büyük (tahmini 60 g); orbitopati yok.\n\nTetkikler (metimazol 10 mg/gün altında):\nsT4: normal, TSH: 0.3 mU/L\nTRAb: normal üst sınırın 6 katı\n\nGebelik öncesi kesin tedavi seçimi için en uygun öneri hangisidir?",
+      "secenekler": {
+        "A": "Radyoaktif iyot uygulanmalı; ötiroidi sağlanır sağlanmaz, tedaviden bir ay sonra gebe kalınabilir.",
+        "B": "Radyoaktif iyot uygulanmalı; TRAb tedaviden sonra hızla düşeceğinden fetal risk ortadan kalkar.",
+        "C": "Total tiroidektomi tercih edilmelidir; RAI sonrası TRAb aylarca yükselip yıllarca yüksek kalabilir ve gebelikte fetal-neonatal hipertiroidi riskini artırır.",
+        "D": "Metimazol aynı dozla sürdürülmeli, gebelik boyunca ilaç değiştirilmemelidir.",
+        "E": "Blok-replasman rejimine (metimazol + levotiroksin) geçilmeli ve gebelik boyunca bu tedavi sürdürülmelidir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Yüksek TRAb'lı, büyük guatrlı ve tekrarlayan nükslü Graves hastası gebelik planlıyorsa kesin tedavide cerrahi öne çıkar: RAI TRAb'ı artırır ve yüksek TRAb plasentayı geçerek fetüsü etkiler.",
+      "aciklama_detay": "Gebelik planlayan Graves hastasında kesin tedavinin amacı gebeliği hem ötiroid hem de mümkün olduğunca düşük TRAb düzeyiyle karşılamaktır. RAI sonrası TRAb tipik olarak birkaç ay yükselir ve yıllarca yüksek kalabilir; IgG yapısındaki TRAb plasentayı geçerek fetal hipertiroidi, fetal guatr ve neonatal tirotoksikoza yol açabilir. Tiroidektomiden sonra ise TRAb aylar içinde giderek düşer. ATA 2016 hipertiroidi ve 2017 gebelik kılavuzları, TRAb düzeyi yüksek olup gebelik planlayan kadında cerrahiyi tercih nedeni sayar; büyük guatr (bu hastada ~60 g) ve tekrarlayan nüks cerrahiyi ayrıca destekler. RAI seçilseydi gebelik en az 6 ay (tercihen 12 ay) ertelenmeliydi. Tiroidektomiden sonra LT4 dozu gebelik öncesi TSH 0.4–2.5 mU/L hedefine göre ayarlanır, gebe kalınınca derhal artırılır; TRAb gebelikte yine izlenir, çünkü geçmiş Graves öyküsünde fetal risk sürebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — RAI sonrası gebelik en az 6 ay (tercihen 12 ay) ertelenmelidir; bir ay yetersizdir. Ayrıca yüksek TRAb'lı hastada RAI, TRAb'ı daha da artırır.",
+        "B": "YANLIS — Tersine; RAI sonrası TRAb aylarca yükselir ve yıllarca pozitif kalabilir. Fetal risk sürer.",
+        "C": "DOGRU — Yüksek TRAb, büyük guatr ve nüks öyküsüyle gebelik planlayan hastada total tiroidektomi en uygun kesin tedavidir.",
+        "D": "YANLIS — Gebelik boyunca metimazol ilk trimesterde embriyopati riski taşır; kesin tedavi sağlanmadan gebe kalmak hem maternal hem fetal riski sürdürür.",
+        "E": "YANLIS — Blok-replasman gebelikte kontrendikedir: ATİ plasentayı geçerken LT4 çok az geçer, fetüs hipotiroid ve guatrlı olur."
+      },
+      "etiketler": [
+        "Graves Hastalığı",
+        "Gebelik Planlaması",
+        "TRAb",
+        "Tiroidektomi",
+        "Radyoaktif İyot"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Ross et al. Thyroid 2016; Alexander et al. Thyroid 2017; TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025"
     }
   ]
 }

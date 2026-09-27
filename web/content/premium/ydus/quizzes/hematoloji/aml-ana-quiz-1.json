@@ -219,6 +219,150 @@
       "etiketler": ["PGA", "Edmonton Frail Scale", "Kırılganlık", "Medikal Fitness", "Ven+HMA", "Geriatri"],
       "zorluk": "orta",
       "kaynak": "Mohile et al. JCO 2018; Klepin et al. JCO 2020; ELN 2022; NCCN AML v2024"
+    },
+    {
+      "id": "s10",
+      "metin": "36 yaşında kadın hasta, diş eti kanaması ve ekimozlarla başvurmuş; APL şüphesiyle aynı gün ATRA başlanmış ve kemik iliğinde RT-PCR ile PML::RARA füzyonu doğrulanmıştır.\n\nBaşvuru tetkikleri:\nLökosit: 4.200/µL\nTrombosit: 28.000/µL\nFibrinojen: 110 mg/dL\nEKG: QTc 440 ms\nPotasyum: 3.4 mEq/L, magnezyum: 1.6 mg/dL\nSol ventrikül ejeksiyon fraksiyonu: %60\n\nBu hasta için remisyon indüksiyonunda en uygun rejim hangisidir?",
+      "secenekler": {
+        "A": "ATRA + idarubisin (AIDA), ardından antrasiklin temelli konsolidasyon",
+        "B": "Standart 7+3 indüksiyonuna ATRA eklenmesi",
+        "C": "ATRA kesilerek tek başına arsenik trioksit",
+        "D": "Tam remisyona dek ATRA monoterapisi, ardından izlem",
+        "E": "Kemoterapisiz ATRA + arsenik trioksit; ATO öncesi potasyum ve magnezyumun düzeltilmesi ve QTc izlemi"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Başvuru lökositi ≤10.000/µL olan düşük/orta riskli APL'de standart tedavi kemoterapisiz ATRA + ATO'dur; ATO QT uzattığı için elektrolitler düzeltilir ve QTc izlenir.",
+      "aciklama_detay": "APL'de risk sınıflaması başvurudaki lökosit sayısına dayanır: ≤10.000/µL düşük/orta risk, >10.000/µL yüksek risk. Bu hasta düşük/orta risk grubundadır.\n\nAPL0406 çalışmasında düşük/orta riskli APL'de ATRA + arsenik trioksit (ATO), ATRA + idarubisin (AIDA) şemasına kıyasla olaysız sağkalım ve genel sağkalımda üstün bulunmuş, miyelosupresyon ve tedaviye bağlı ölüm daha az görülmüştür. ELN 2019 APL önerileri bu grupta kemoterapisiz ATRA + ATO'yu birinci seçenek kabul eder; AIDA, ATO'ya erişilemediğinde ya da kontrendike olduğunda kullanılır.\n\nATO QT aralığını uzatır ve torsades de pointes riski taşır: başlamadan önce potasyum >4.0 mEq/L, magnezyum >1.8 mg/dL düzeyine getirilir, QT uzatan diğer ilaçlar gözden geçirilir ve tedavi boyunca EKG ile QTc izlenir. Diferansiyasyon sendromu için yakın izlem ve şüphede deksametazon da rejimin ayrılmaz parçasıdır.\n\nKlinik inci: Yüksek riskli APL'de (lökosit >10.000/µL) ATRA + ATO'ya sitoredüksiyon için antrasiklin (ya da gemtuzumab ozogamisin) eklenir; lökoferez ise koagülopatiyi ağırlaştırdığı için APL'de önerilmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — AIDA etkili ama APL0406'da düşük/orta riskli grupta ATRA + ATO'nun gerisinde kalmıştır; ATO'ya erişilemediğinde tercih edilir.",
+        "B": "YANLIŞ — APL'de sitarabin temelli 7+3 standart değildir; hedefe yönelik ATRA/ATO tedavisi kür sağlar.",
+        "C": "YANLIŞ — Standart şema ATRA ile ATO'nun birlikte kullanımıdır; ATRA'yı kesmek gerekçesizdir.",
+        "D": "YANLIŞ — ATRA monoterapisiyle elde edilen remisyonlar kalıcı değildir; ikinci ajan olmadan nüks kaçınılmazdır.",
+        "E": "DOĞRU — Düşük/orta riskli APL'de ATRA + ATO standarttır; QT güvenliği için elektrolit düzeltme ve QTc izlemi şarttır."
+      },
+      "etiketler": ["APL", "ATRA", "Arsenik Trioksit", "APL0406", "Risk Sınıflaması", "QTc"],
+      "zorluk": "orta",
+      "kaynak": "Lo-Coco et al. NEJM 2013 (APL0406); Sanz et al. Blood 2019 (ELN APL önerileri)"
+    },
+    {
+      "id": "s11",
+      "metin": "77 yaşında erkek hasta, yeni tanı AML nedeniyle azasitidin + venetoklaks tedavisine başlayacaktır. Uzamış nötropeni beklendiği için antifungal profilaksi olarak posakonazol planlanıyor. Böbrek ve karaciğer fonksiyonları normal, lökosit 6.800/µL, ürik asit normal.\n\nPosakonazol ile birlikte venetoklaks dozlaması için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Standart 400 mg/gün dozu değiştirilmez; posakonazol yalnızca azasitidin düzeyini etkiler.",
+        "B": "Doz basamakla 10–20–50 mg'a, 4. günden itibaren 70 mg/gün sabit doza çıkarılır.",
+        "C": "Azol etkileşimini dengelemek için venetoklaks dozu 800 mg/güne çıkarılır.",
+        "D": "Posakonazol venetoklaksla mutlak kontrendikedir; antifungal profilaksi hiç verilmez.",
+        "E": "Doz %50 azaltılarak 200 mg/gün verilir; bu ayar güçlü ve orta CYP3A4 inhibitörlerinde aynıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Posakonazol güçlü CYP3A4 inhibitörüdür ve venetoklaks maruziyetini birkaç kat artırır; AML'de doz 10–20–50 mg basamaklarıyla 70 mg/güne ayarlanır.",
+      "aciklama_detay": "Venetoklaks CYP3A4 ile metabolize edilir. Güçlü CYP3A4 inhibitörleri (posakonazol, vorikonazol, klaritromisin gibi) venetoklaks plazma maruziyetini belirgin biçimde artırır; ayarsız kullanım derin ve uzamış sitopeni ile tümör lizis riskini artırır.\n\nAML'de ürün bilgisine göre posakonazol ile birlikte venetoklaks 1. gün 10 mg, 2. gün 20 mg, 3. gün 50 mg ve 4. günden itibaren 70 mg/gün verilir. Diğer güçlü CYP3A4 inhibitörlerinde sabit doz 100 mg/gündür; orta düzey inhibitörlerde (ör. flukonazol, siprofloksasin) doz yaklaşık %50 azaltılır. İnhibitör kesildiğinde 2–3 gün sonra standart doza dönülür.\n\nAzol profilaksisi, uzun nötropeni beklenen AML hastasında invaziv fungal enfeksiyonu önlemede önemlidir; çözüm profilaksiden vazgeçmek değil, dozu ayarlamaktır. Güçlü CYP3A4 indükleyicilerinden (rifampisin, karbamazepin) ise kaçınılır, çünkü venetoklaks düzeyini etkisiz düzeye düşürür.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Posakonazol venetoklaksın CYP3A4 metabolizmasını güçlü biçimde inhibe eder; 400 mg ile maruziyet aşırı yükselir.",
+        "B": "DOĞRU — Posakonazol ile AML'de venetoklaks 10–20–50 mg basamaklarının ardından 70 mg/gün verilir.",
+        "C": "YANLIŞ — Doz artırılmaz, azaltılır; inhibitör maruziyeti artırır.",
+        "D": "YANLIŞ — Kombinasyon doz ayarıyla kullanılır; profilaksiden vazgeçmek fungal enfeksiyon riskini artırır.",
+        "E": "YANLIŞ — %50 azaltma orta düzey CYP3A4 inhibitörleri içindir; güçlü inhibitör posakonazolde doz 70 mg/gündür."
+      },
+      "etiketler": ["Venetoklaks", "Posakonazol", "CYP3A4", "İlaç Etkileşimi", "Ven+HMA", "Antifungal Profilaksi"],
+      "zorluk": "orta",
+      "kaynak": "Venetoklaks ürün bilgisi (FDA etiketi); DiNardo et al. NEJM 2020 (VIALE-A)"
+    },
+    {
+      "id": "s12",
+      "metin": "74 yaşında kadın hasta, yoğun kemoterapiye uygun olmayan yeni tanı AML nedeniyle azasitidin (7 gün) + venetoklaks (400 mg/gün, 1–28. günler) ile ilk kürü tamamlamıştır. Ateş ya da aktif enfeksiyon yok.\n\n28. gün tetkikleri:\nKemik iliği: blast <%5, hücresellik %10\nMutlak nötrofil sayısı: 250/µL\nTrombosit: 22.000/µL\nHemoglobin: 8.4 g/dL\n\nBu hastada bir sonraki adım olarak en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "İkinci kürün aynı şema ve dozla zaman kaybetmeden başlanması",
+        "B": "Venetoklaksın kalıcı olarak kesilip azasitidin monoterapisiyle devam",
+        "C": "Remisyon sağlandığı için yoğun 7+3 konsolidasyonuna geçilmesi",
+        "D": "Sonraki kürün sayılar toparlanana kadar ertelenmesi, sonraki kürlerde venetoklaks süresinin kısaltılması",
+        "E": "Kemik iliği hiposelüler olduğu için tedavi başarısızlığı kabul edilip kurtarma tedavisine geçilmesi"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Ven+HMA'nın ilk kürü sonunda blast <%5 ve derin sitopeni varsa sonraki kür sayılar toparlanana dek ertelenir (ANC ≥500/µL, trombosit ≥50.000/µL), sonraki kürlerde venetoklaks günleri kısaltılır.",
+      "aciklama_detay": "Azasitidin + venetoklaks ile yanıtların çoğu ilk bir-iki kürde elde edilir; bu nedenle 1. kürün sonunda (21–28. gün) kemik iliği değerlendirilir. Blast <%5 ise sitopeni hastalığa değil tedaviye bağlıdır.\n\nVIALE-A deneyimi ve ürün bilgisine dayalı yaklaşım: kemik iliği remisyonu varsa ve derin sitopeni sürüyorsa bir sonraki kür, nötrofil ≥500/µL ve trombosit ≥50.000/µL olana dek (genellikle en fazla ~14 gün) ertelenir; nötropeni süresini kısaltmak için G-CSF kullanılabilir. Sonraki kürlerde venetoklaks süresi 28 günden 21 güne (gerekirse daha kısaya) indirilir. Bu ayarlama etkinliği korurken enfeksiyon ve uzamış sitopeni sorununu azaltır.\n\nAynı dozla hemen devam etmek uzamış nötropeniye ve ölümcül enfeksiyonlara yol açabilir. Venetoklaksı kalıcı kesmek, sağkalım yararının kaynağı olan kombinasyonu terk etmektir. Unfit hastada 7+3 konsolidasyonu uygun değildir. Hiposelüler ilik ve blast <%5, tedavi başarısızlığı değil yanıt göstergesidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Derin nötropeni sürerken aynı yoğunlukta devam etmek uzamış sitopeni ve enfeksiyon ölümü riskini artırır.",
+        "B": "YANLIŞ — Sağkalım yararı kombinasyondan gelir; sorun venetoklaksın süresi ile çözülür, ilacın kendisi bırakılmaz.",
+        "C": "YANLIŞ — Yoğun kemoterapiye uygun görülmeyen hastada 7+3 konsolidasyonu kabul edilemez toksisite taşır.",
+        "D": "DOĞRU — Remisyondaki hastada sayılar toparlanana dek erteleme ve sonraki kürlerde venetoklaks süresini kısaltma önerilen yaklaşımdır.",
+        "E": "YANLIŞ — Blast <%5 olan hiposelüler ilik yanıtı gösterir; sitopeni tedaviye bağlıdır."
+      },
+      "etiketler": ["Venetoklaks", "Azasitidin", "Sitopeni Yönetimi", "VIALE-A", "Unfit AML", "Kür Ayarlaması"],
+      "zorluk": "zor",
+      "kaynak": "DiNardo et al. NEJM 2020 (VIALE-A); venetoklaks ürün bilgisi"
+    },
+    {
+      "id": "s13",
+      "metin": "52 yaşında erkek hasta, NPM1 mutasyonlu, FLT3-ITD negatif, normal karyotipli AML (ELN 2022 favorable) nedeniyle 7+3 indüksiyonu ile tam remisyona girmiş, 3 kür yüksek doz sitarabin konsolidasyonu almıştır. İkinci konsolidasyondan sonra periferik kanda NPM1 kantitatif PCR ile MRD negatif saptanmıştır. Üç ayda bir izleniyor.\n\nİzlem tetkikleri (9. ay):\nNPM1 transkripti: pozitif (yeni)\n4 hafta sonra tekrar: bir önceki değere göre >1 log artış\nTam kan sayımı: normal\nKemik iliği: blast %2\nHLA-tam uyumlu kardeş donör mevcut\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Moleküler nüks kabul edilip morfolojik nüks beklenmeden kurtarma tedavisi ve ardından allojenik nakil planlanması",
+        "B": "Blast oranı <%5 olduğu için morfolojik nüks gelişene dek 3 aylık izleme devam edilmesi",
+        "C": "Bulgunun klonal hematopoezi yansıttığı kabul edilip MRD sonucunun göz ardı edilmesi",
+        "D": "Sayımlar normal olduğu için tek başına G-CSF ile izlem",
+        "E": "Kendi kök hücreleriyle otolog nakil yapılması"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "MRD negatifliğinden pozitifliğe dönüş ya da ardışık iki örnekte ≥1 log artış ELN MRD tanımına göre moleküler nükstür; morfolojik nüks beklenmeden tedavi edilir.",
+      "aciklama_detay": "NPM1 mutasyonu AML'de hem tanısal hem de kantitatif PCR ile izlenebilen en güvenilir MRD belirteçlerinden biridir. ELN 2021 MRD önerileri, tamamlanmış tedavi sonrası MRD negatiflikten pozitifliğe dönüşü (doğrulanmış) ya da ardışık iki pozitif örnek arasında ≥1 log10 artışı 'moleküler progresyon/nüks' olarak tanımlar.\n\nBu tanım klinik olarak önemlidir: NPM1 transkriptlerinin yükselmesi morfolojik nüksü genellikle haftalar-aylar önceden haber verir ve hastalık yükü düşükken başlanan tedavi (kurtarma kemoterapisi, uygun hastada venetoklaks temelli rejim ya da klinik çalışma) ile ardından allojenik nakil daha iyi sonuç verir. Nakil öncesi MRD düzeyi nakil sonrası nüksün en güçlü belirleyicilerinden biridir.\n\nNPM1 mutasyonu klonal hematopoezde görülmez; MRD takibinden dışlanan belirteçler DNMT3A, TET2 ve ASXL1 (DTA) mutasyonlarıdır. Otolog nakil lösemik klonu yeniden verme riski taşır ve graft-versus-lösemi etkisi sağlamaz.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Doğrulanmış MRD dönüşümü ve >1 log artış moleküler nükstür; erken kurtarma ve allojenik nakil hedeflenir.",
+        "B": "YANLIŞ — Morfolojik nüksü beklemek, düşük hastalık yükü penceresini kaçırmak demektir.",
+        "C": "YANLIŞ — Klonal hematopoezde görülen ve MRD'den dışlanan belirteçler DNMT3A, TET2, ASXL1'dir; NPM1 lösemik klona özgüdür.",
+        "D": "YANLIŞ — G-CSF antilösemik tedavi değildir; sayımların normal olması moleküler nüksü dışlamaz.",
+        "E": "YANLIŞ — Otolog nakil graft-versus-lösemi etkisi sağlamaz ve MRD pozitif klonu geri verme riski taşır."
+      },
+      "etiketler": ["NPM1", "MRD", "Moleküler Nüks", "ELN MRD", "Allo-HCT", "qPCR"],
+      "zorluk": "zor",
+      "kaynak": "Heuser et al. Blood 2021 (ELN MRD önerileri); Döhner et al. Blood 2022"
+    },
+    {
+      "id": "s14",
+      "metin": "66 yaşında erkek hasta, yorgunluk ve pansitopeni nedeniyle değerlendiriliyor. Kemik iliği hiposelüler, eritroid diseritropoez var, blast %24; AML tanısı konuyor. Babasının 70'li yaşlarında MDS tanısı aldığı öğreniliyor.\n\nKemik iliği NGS paneli:\nDDX41 çerçeve kayması varyantı: VAF %49\nDDX41 R525H: VAF %9\nTP53, FLT3, NPM1: negatif\n\nHasta yoğun tedaviye uygun; remisyon sonrası allojenik nakil planlanıyor ve 60 yaşındaki HLA-tam uyumlu erkek kardeşi donör adayı olarak düşünülüyor.\n\nDonör seçimi açısından bu aşamada en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "VAF %49'un lösemik klonun baskınlığını yansıttığı kabul edilip donör planlamasında dikkate alınmaması",
+        "B": "HLA tam uyumlu olduğu için kardeşin ek inceleme yapılmadan donör olarak kullanılması",
+        "C": "Germ hattı varyantının yalnızca hastanın prognozunu etkilediği, donör seçimini etkilemediği kabulü",
+        "D": "Allojenik nakil yerine otolog nakil planlanması",
+        "E": "Varyantın hematopoetik olmayan dokuda germ hattı testiyle doğrulanması, genetik danışmanlık ve kardeş donörün aynı varyant için taranması"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "VAF ~%50 olan DDX41 çerçeve kayması + düşük VAF'lı somatik R525H, germ hattı DDX41 yatkınlığını düşündürür; akraba donör taşıyıcıysa donör-kökenli lösemi riski nedeniyle kullanılmaz.",
+      "aciklama_detay": "DDX41 ilişkili miyeloid neoplazi, erişkinde en sık germ hattı yatkınlık sendromudur. Tipik profil: ileri yaşta (sıklıkla 60'lı yaşlar), erkek ağırlıklı, hiposelüler ilik, düşük lökosit sayısı ve ailede geç yaşta MDS/AML öyküsü. Moleküler imza, ~%50 VAF'lı germ hattı (çoğunlukla kesici — çerçeve kayması/nonsens) DDX41 varyantı ile düşük VAF'lı ikinci somatik vuruştur (en sık R525H).\n\nWHO 5 ve ICC 2022 germ hattı yatkınlıklı miyeloid neoplazileri ayrı tanır; ELN 2022 VAF'ı ~%50 olan ve bilinen yatkınlık genlerinde saptanan varyantlarda germ hattı araştırmasını önerir. Germ hattı doğrulaması kan ya da ağız içi sürüntü yerine hematopoetik olmayan dokuda (ör. deri fibroblast kültürü) yapılır, çünkü kan hücreleri ve sürüntüdeki lökositler tümör DNA'sı taşıyabilir.\n\nDonör açısından sonuç kritiktir: taşıyıcı kardeşten yapılan nakil donör-kökenli lösemi ve kötü engrafman riski taşır. Bu nedenle akraba donör aynı varyant için taranır; taşıyıcıysa başka donör aranır. Aile üyeleri için genetik danışmanlık da sürecin parçasıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — %50 civarı VAF, heterozigot germ hattı varyantının tipik göstergesidir; klon baskınlığı ile açıklamak germ hattı tanısını kaçırtır.",
+        "B": "YANLIŞ — HLA uyumu yeterli değildir; taşıyıcı akraba donörden nakil donör-kökenli lösemiye yol açabilir.",
+        "C": "YANLIŞ — Germ hattı yatkınlığın en doğrudan klinik sonucu tam da akraba donör seçimidir.",
+        "D": "YANLIŞ — Otolog nakil hastanın germ hattı varyantını ve lösemik klonu geri verir; çözüm değildir.",
+        "E": "DOĞRU — Hematopoetik olmayan dokuda germ hattı doğrulaması, genetik danışmanlık ve akraba donörün taranması önerilen yaklaşımdır."
+      },
+      "etiketler": ["DDX41", "Germ Hattı Yatkınlık", "Donör Seçimi", "VAF", "Allo-HCT", "ELN 2022"],
+      "zorluk": "zor",
+      "kaynak": "Döhner et al. Blood 2022 (ELN 2022); WHO 5 ve ICC 2022 germ hattı yatkınlıklı miyeloid neoplaziler"
+    },
+    {
+      "id": "s15",
+      "metin": "38 yaşında kadın hasta, t(9;11)(p21.3;q23.3) KMT2A::MLLT3 pozitif AML nedeniyle 7+3 ile tam remisyona girmiş ve birinci remisyonda HLA-uyumlu kardeşten allojenik nakil yapılmıştır. Nakilden 10 ay sonra yorgunluk ve periferik blast ile başvuruyor.\n\nTetkikler:\nKemik iliği blastı: %45\nKMT2A yeniden düzenlenmesi: pozitif (devam ediyor)\nFLT3-ITD/TKD: negatif\nIDH1 ve IDH2: negatif\nNPM1: yabanıl tip\nECOG performans durumu: 1\n\nBu hastada hedefe yönelik tedavi olarak en uygun ajan hangisidir?",
+      "secenekler": {
+        "A": "Gilteritinib",
+        "B": "İvosidenib",
+        "C": "Revumenib",
+        "D": "Enasidenib",
+        "E": "Midostaurin monoterapisi"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "KMT2A yeniden düzenlenmeli nüks/dirençli akut lösemide menin–KMT2A etkileşimini kesen menin inhibitörü revumenib hedefe yönelik seçenektir; diferansiyasyon sendromu ve QTc uzaması izlenir.",
+      "aciklama_detay": "KMT2A (MLL) füzyon proteinleri, lösemojenik gen programını (HOXA kümesi, MEIS1) sürdürmek için kromatine menin aracılığıyla bağlanır. Menin inhibitörleri bu etkileşimi keserek HOX/MEIS1 ekspresyonunu düşürür ve blastların farklılaşmasını sağlar.\n\nRevumenib, AUGMENT-101 çalışmasına dayanarak KMT2A yeniden düzenlenmeli nüks/dirençli akut lösemide onay almış ilk menin inhibitörüdür (FDA, 2024); daha sonra NPM1 mutasyonlu nüks/dirençli AML'de de kullanım alanı genişlemiştir. Bu hastada FLT3, IDH1/2 hedefleri yoktur; KMT2A yeniden düzenlenmesi tek hedeflenebilir değişikliktir.\n\nÖnemli toksisiteler: farklılaşma yoluyla etki ettiği için diferansiyasyon sendromu (şüphede deksametazon) ve QTc uzaması (başlangıçta ve izlemde EKG, elektrolit düzeltme). Revumenib CYP3A4 substratıdır; nakil sonrası sık kullanılan güçlü azol antifungallerle doz ayarı gerekir.\n\nYanıt alınırsa uygun hastada ikinci nakil ya da idame tedavi tartışılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Gilteritinib FLT3 mutasyonlu nüks/dirençli AML içindir; bu hastada FLT3 negatiftir.",
+        "B": "YANLIŞ — İvosidenib IDH1 mutasyonu gerektirir; hasta IDH1 negatiftir.",
+        "C": "DOĞRU — KMT2A yeniden düzenlenmeli nüks/dirençli AML'de menin inhibitörü revumenib hedefe yönelik seçenektir.",
+        "D": "YANLIŞ — Enasidenib IDH2 mutasyonunu hedefler; hasta IDH2 negatiftir.",
+        "E": "YANLIŞ — Midostaurin FLT3 mutasyonlu yeni tanı AML'de 7+3 ile birlikte kullanılır; FLT3 negatif nüks hastada monoterapi yeri yoktur."
+      },
+      "etiketler": ["Menin İnhibitörü", "Revumenib", "KMT2A", "Relaps/Refrakter AML", "Diferansiyasyon Sendromu", "QTc"],
+      "zorluk": "orta",
+      "kaynak": "Issa et al. Nature 2023 (revumenib); AUGMENT-101 çalışması"
     }
   ]
 }

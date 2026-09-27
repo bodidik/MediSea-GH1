@@ -194,6 +194,183 @@
         "Yaşlıda Hormon Replasmanı"
       ],
       "zorluk": "zor"
+    },
+    {
+      "id": "s10",
+      "metin": "Elli altı yaşında erkek hasta, 2 saat önce aniden başlayan çok şiddetli baş ağrısı, kusma ve çift görme ile acil servise başvuruyor. Bilinen hipofiz hastalığı yok; hipertansiyon için tedavi alıyor.\n\nKB: 96/58 mmHg, nabız: 108/dk\nSol gözde pitoz ve midriyazis (okülomotor sinir felci); görme keskinliği korunmuş, hafif bitemporal alan daralması\nNa: 131 mEq/L, glukoz: 72 mg/dL\nBeyin BT: subaraknoid kanama yok\nHipofiz MRG: sellar kitle içinde akut kanamayla uyumlu görünüm\n\nBu aşamada en uygun ilk adım hangisidir?",
+      "secenekler": {
+        "A": "Kortizol için kan alınıp sonucu beklenmeden IV hidrokortizon (100–200 mg bolus, ardından infüzyon ya da 6 saatte bir 50–100 mg) başlanmalıdır.",
+        "B": "Önce 250 µg ACTH uyarı testi yapılmalı; adrenal yetmezlik doğrulanırsa hidrokortizon başlanmalıdır.",
+        "C": "Oral hidrokortizon ve levotiroksin birlikte başlanmalı; cerrahi kararı sabah kortizolü sonucuna göre verilmelidir.",
+        "D": "Okülomotor felç nedeniyle glukokortikoid verilmeden hemen transsfenoidal cerrahiye alınmalıdır.",
+        "E": "Ödem için deksametazon başlanmalı; hidrokortizon ancak kortizol sonucu düşük gelirse eklenmelidir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Hipofiz apopleksisinde en sık ve hayatı tehdit eden eksiklik ACTH'dir: kortizol kanı alınır, sonuç beklenmeden parenteral yüksek doz hidrokortizon başlanır. Cerrahi kararı görme ve bilinç durumuna göre sonra verilir.",
+      "aciklama_detay": "Ani şiddetli baş ağrısı, kusma, görme bozukluğu ve okülomotor felç hipofiz apopleksisinin klasik tablosudur; vakaların yaklaşık %80'inde adenom önceden bilinmez. Hipotansiyon, taşikardi, hiponatremi ve düşük-normal glukoz akut ACTH eksikliğini düşündürür. TEMD Hipofiz Kılavuzu: kortizol için kan alınır alınmaz, sonuç beklenmeden 100–200 mg IV hidrokortizon bolus verilir; ardından 2–4 mg/saat infüzyon ya da 6 saatte bir 50–100 mg IM uygulanır. Hemodinamik destek %0.9 NaCl ile sağlanır, gerekirse dekstroz eklenir. Levotiroksin, glukokortikoid replasmanı sağlanmadan başlanmaz ve akut dönemde öncelik değildir. Cerrahi seçimi tartışmalıdır: ağır görme keskinliği kaybı, kalıcı ya da kötüleşen görme alanı defekti veya bilinç bozukluğunda erken (ilk 8 gün) transsfenoidal cerrahi düşünülür; görmesi korunmuş, bilinci açık hastalar multidisipliner değerlendirmeyle konservatif izlenebilir. İzole okülomotor felç genellikle konservatif tedaviyle de düzelir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Kan alınıp sonuç beklenmeden parenteral yüksek doz hidrokortizon, apopleksinin ilk ve hayat kurtaran adımıdır.",
+        "B": "YANLIS — Akut ACTH eksikliğinde adrenal henüz atrofiye olmadığı için ACTH testi yalancı normal çıkar; ayrıca hemodinamisi bozuk hastada test için tedavi geciktirilmez.",
+        "C": "YANLIS — Kusan, hipotansif hastada oral tedavi güvenilir değildir; levotiroksinin akut dönemde yeri yoktur ve kortizol sonucu beklenmez.",
+        "D": "YANLIS — Cerrahi gerekse bile glukokortikoid örtüsü olmadan ameliyat adrenal krize yol açar. Görme keskinliği korunmuş bu hastada acil cerrahi zorunlu da değildir.",
+        "E": "YANLIS — Deksametazon mineralokortikoid etkisi olmayan ve akut adrenal yetmezlikte standart olmayan bir seçenektir; hidrokortizonu kortizol sonucuna bağlamak kabul edilemez gecikmedir."
+      },
+      "etiketler": [
+        "Hipofiz Apopleksisi",
+        "Akut ACTH Eksikliği",
+        "IV Hidrokortizon",
+        "Okülomotor Felç"
+      ],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Kılavuzu 2022 (Hipofiz Apopleksisi); Seitz AP, Ishii M. Pituitary Apoplexy. In: Endocrine Emergencies. Elsevier; 2022"
+    },
+    {
+      "id": "s11",
+      "metin": "Kırk dört yaşında kadın, bulantı, halsizlik ve konfüzyonla başvuruyor. Altı yıl önce doğumda masif kanama nedeniyle 6 ünite kan almış; doğumdan sonra bebeğini emziremediğini ve o günden beri adet görmediğini söylüyor. Diüretik ya da başka ilaç kullanmıyor.\n\nKB: 104/66 mmHg (ortostatik düşüş yok), ödem ve dehidratasyon bulgusu yok\nNa: 118 mEq/L, K: 4.1 mEq/L\nSerum osmolalitesi: 250 mOsm/kg\nİdrar osmolalitesi: 410 mOsm/kg, idrar Na: 52 mEq/L\nSabah kortizolü: 2.1 µg/dL, ACTH: 9 pg/mL\nsT4: 0.55 ng/dL ↓, TSH: 1.8 mU/L\n\nBu hastadaki hiponatreminin mekanizması ve tedavisi ile ilgili en doğru ifade hangisidir?",
+      "secenekler": {
+        "A": "Aldosteron eksikliğine bağlı renal tuz kaybı vardır; tedavinin temeli fludrokortizondur.",
+        "B": "Hiponatreminin ana nedeni hipotiroididir; önce levotiroksin başlanmalı, ardından hidrokortizon eklenmelidir.",
+        "C": "Kortizol eksikliği AVP üzerindeki baskıyı kaldırıp SIADH benzeri tablo yapar; tedavi glukokortikoiddir ve sodyum hızla yükselebileceğinden yakından izlenmelidir.",
+        "D": "Tablo primer SIADH'dir; tolvaptan başlanmalı, hormon replasmanına gerek yoktur.",
+        "E": "Sıvı kısıtlaması tek başına yeterlidir; glukokortikoid sodyumu daha da düşürür."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Sheehan sendromunda övolemik hiponatreminin ana nedeni santral kortizol eksikliğidir: AVP salgısı artar, serbest su atılımı bozulur. Hidrokortizon verilince su diürezi başlar; ozmotik demiyelinizasyon için sodyum yakından izlenir.",
+      "aciklama_detay": "Doğumda masif kanama, ardından agalakti ve amenore Sheehan sendromunu düşündürür; tanı yıllarca gecikebilir ve hiponatremi sık başvuru nedenidir. Santral adrenal yetmezlikte renin-anjiyotensin-aldosteron sistemi korunur; tuz kaybı ve hiperkalemi beklenmez (K normal). Kortizol normalde AVP salgısını baskılar; eksikliğinde CRH ile birlikte AVP salgısı artar, ayrıca kortizol eksikliği renal serbest su atılımını bozar. Sonuç: övolemik, idrarı uygunsuz konsantre, idrar Na'sı yüksek, SIADH ile ayırt edilemeyen bir tablo. Bu nedenle 'SIADH' tanısından önce adrenal yetmezlik ve hipotiroidi dışlanmalıdır. Hipotiroidi de katkıda bulunabilir ama ana etken kortizol eksikliğidir. Tedavi: hidrokortizon (semptomatik ağır hiponatremide stres dozu) ve ardından levotiroksin. Kortizol yerine konunca AVP baskılanır, su diürezi başlar ve sodyum 24 saatte güvenli sınırın üzerinde yükselebilir; kronik hiponatremide ozmotik demiyelinizasyonu önlemek için sodyum sık ölçülür, gerekirse desmopressin ve dekstrozlu sıvıyla düzeltme hızı sınırlanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Santral (sekonder) adrenal yetmezlikte aldosteron salgısı RAAS ile korunur; tuz kaybı ve hiperkalemi beklenmez, fludrokortizon gerekmez.",
+        "B": "YANLIS — Hipotiroidinin katkısı ikincildir; asıl önemlisi, ACTH eksikliği olan hastada levotiroksini glukokortikoidden önce vermek adrenal krizi tetikleyebilir.",
+        "C": "DOGRU — Kortizol eksikliğine bağlı uygunsuz AVP salgısı; tedavi glukokortikoid replasmanıdır ve su diürezine bağlı aşırı hızlı düzelme açısından sodyum yakından izlenir.",
+        "D": "YANLIS — Adrenal yetmezlik ve hipotiroidi dışlanmadan SIADH tanısı konamaz; tolvaptan altta yatan kortizol eksikliğini gidermez ve bu hastada aşırı hızlı düzelme riski taşır.",
+        "E": "YANLIS — Sıvı kısıtlaması kortizol eksikliğini düzeltmez; glukokortikoid sodyumu düşürmez, tersine serbest su atılımını düzelterek yükseltir."
+      },
+      "etiketler": [
+        "Sheehan Sendromu",
+        "Hiponatremi",
+        "Santral Adrenal Yetmezlik",
+        "SIADH Ayırıcı Tanısı",
+        "Ozmotik Demiyelinizasyon"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Snyder PJ. Clinical manifestations of hypopituitarism. UpToDate; son güncelleme 8 May 2026; TEMD Hipofiz Kılavuzu 2022"
+    },
+    {
+      "id": "s12",
+      "metin": "Otuz bir yaşında kadın, gebeliğin son haftalarında başlayan ve giderek artan baş ağrısı, halsizlik ve bulantı ile doğumdan 3 hafta sonra başvuruyor. Doğum komplikasyonsuz; kanama ya da hipotansiyon olmamış, emzirme sürüyor. Baş ağrısı parasetamolle kontrol altına alınabiliyor. Görme alanı normal.\n\nSabah kortizolü: 2.4 µg/dL, ACTH: 6 pg/mL (düşük)\nsT4: 0.95 ng/dL, TSH: 1.9 mU/L\nProlaktin: 42 ng/mL\nNa: 133 mEq/L; idrar miktarı normal\nHipofiz MRG: simetrik, homojen ve yoğun kontrast tutan bez büyümesi (12 mm), kalınlaşmış sap, komşu durada kontrast tutulumu; optik kiazmaya bası yok\n\nEn olası tanı ve en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Makroadenom apopleksisi; acil transsfenoidal cerrahi yapılmalıdır.",
+        "B": "Sheehan sendromu; yalnızca levotiroksin başlanması yeterlidir.",
+        "C": "Prolaktinoma; kabergolin başlanmalı ve emzirme kesilmelidir.",
+        "D": "Lenfositik hipofizit; kitle etkisi olmasa da tanı için hemen transsfenoidal biyopsi yapılmalıdır.",
+        "E": "Lenfositik hipofizit; hidrokortizon replasmanı başlanmalı ve kitle bulgusu olmadığı için cerrahi yapılmadan izlenmelidir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Peripartum dönem + önce ACTH eksikliği + simetrik yoğun kontrastlanan bez ve kalın sap = lenfositik hipofizit. Kitle etkisi yoksa tedavi hormon replasmanı ve izlemdir; spontan gerileme sıktır.",
+      "aciklama_detay": "Lenfositik hipofizit primer hipofizitlerin yaklaşık üçte ikisidir, kadınlarda daha sıktır ve kadın hastaların yarısından fazlasında gebeliğin son dönemi ya da lohusalıkta ortaya çıkar. Kanama veya hipotansiyonla komplike olmamış bir gebelikte gelişen hipofiz yetmezliği ve kitle boyutuyla orantısız hormon kaybı tanıyı destekler. Hormon kaybı sırası ayırıcıdır: adenomda ilk GH, en son ACTH etkilenir; hipofizitte ise ilk eksilen ACTH'dir. MRG'de simetrik suprasellar büyüme, yoğun homojen kontrast tutulumu, kalın sap, sağlam sella tabanı ve dural kontrast tutulumu (dural kuyruk) tipiktir. TEMD'ye göre spontan remisyon olabildiğinden kitle bulgusu olmayan hasta eksik hormonları yerine konarak izlenir; görme alanı bozukluğu, kraniyal sinir tutulumu ya da analjeziğe dirençli baş ağrısında ilk basamak yüksek doz glukokortikoiddir (ör. prednizolon 1 mg/kg/gün). Cerrahi tanı belirsizliği ya da tedaviye dirençli kitle etkisi için ayrılır. Emzirmede hidrokortizon güvenlidir. Hipofizit sonrası ACTH eksikliği kalıcı olabileceğinden izlemde aks yeniden değerlendirilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ani başlangıç, çok şiddetli baş ağrısı ve kanama bulgusu yok; MRG simetrik ve homojen kontrastlanan inflamatuar bir tablo gösteriyor. Görme korunmuşken acil cerrahi endikasyonu yoktur.",
+        "B": "YANLIS — Sheehan sendromu doğumda ağır kanama/hipotansiyon gerektirir ve MRG bezin büyümesini değil, nekroz ve sonrasında boş sellayı gösterir. Ayrıca ACTH eksikliği varken yalnızca levotiroksin başlamak adrenal krize yol açabilir.",
+        "C": "YANLIS — Emziren kadında prolaktin 42 ng/mL fizyolojik sınırdadır; prolaktinoma ACTH eksikliği ve bu MRG görünümünü açıklamaz.",
+        "D": "YANLIS — Tipik klinik ve MRG bulgularıyla tanı konabilir; kitle etkisi olmayan hastada biyopsi gereksiz risk taşır ve hipofiz işlevini kalıcı bozabilir.",
+        "E": "DOGRU — Kitle etkisi olmayan lenfositik hipofizitte eksik hormonların (burada hidrokortizon) yerine konması ve izlem önerilir; cerrahi gerekmez."
+      },
+      "etiketler": [
+        "Lenfositik Hipofizit",
+        "Peripartum Dönem",
+        "ACTH Eksikliği",
+        "Hipofiz MRG",
+        "Sheehan Ayırıcı Tanısı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "TEMD Hipofiz Kılavuzu 2022 (Hipofizitler); Yamamoto M, Takahashi Y. Pituitary-Immune Interface. In: The Pituitary. Elsevier; 2022"
+    },
+    {
+      "id": "s13",
+      "metin": "Kırk dokuz yaşında kadın, hipofiz makroadenomu cerrahisinden sonra gelişen santral adrenal yetmezlik nedeniyle hidrokortizon 20 mg/gün (sabah 10 mg, öğle 5 mg, akşamüstü 5 mg) kullanıyor. Poliklinik kontrolünde hastalandığında ne yapması gerektiğini soruyor.\n\nBu hastaya verilecek en doğru eğitim hangisidir?",
+      "secenekler": {
+        "A": "Ateşli hastalıkta doz değiştirilmemeli; yalnızca bol sıvı alınmalıdır.",
+        "B": "Steroid enfeksiyonu ağırlaştırabileceği için ateşli günlerde hidrokortizon kesilmelidir.",
+        "C": "Stres dozu yalnızca ameliyat için gereklidir; kusma ya da ishalde oral dozun iki katına çıkarılması yeterlidir.",
+        "D": "38 °C üzeri ateşte günlük doz 2–3 katına çıkarılmalı; kusma nedeniyle ilaç alınamıyorsa 100 mg hidrokortizon kas içine yapılıp acile başvurulmalıdır.",
+        "E": "Tedaviye fludrokortizon eklenirse hastalık günlerinde doz artışına gerek kalmaz."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Hastalık günü kuralları: ateşli hastalıkta hidrokortizon dozu 2–3 kat artırılır; kusma/ishal nedeniyle oral alınamıyorsa parenteral hidrokortizon (100 mg IM) yapılır ve acile başvurulur. Hasta kimlik kartı ya da künye taşır.",
+      "aciklama_detay": "Santral adrenal yetmezlikli hasta strese kortizol artışıyla yanıt veremez; adrenal kriz ölümlerinin önemli kısmı hastalık günlerinde yetersiz doz artışından kaynaklanır. Endocrine Society 2016 hipofiz yetmezliği kılavuzu ve TEMD Hipofiz Kılavuzu hastaya hastalık günü eğitimi verilmesini önerir: ateşli (≥38 °C) ya da ciddi hastalıkta günlük doz 2–3 katına çıkarılır ve iyileşince 2–3 gün içinde olağan doza dönülür. Kusma veya ishal oral emilimi güvenilmez kılar; bu durumda evde bulundurulan hidrokortizon (100 mg) kas içine yapılır ve hasta acil servise başvurur. Büyük cerrahi, doğum ya da yoğun bakım gerektiren hastalıkta parenteral stres dozu (ör. 100 mg IV, ardından 50 mg 6 saatte bir ya da 200 mg/gün infüzyon) gerekir. Hasta hastalığını gösteren kimlik kartı ya da künye taşımalı, yakınları da enjeksiyon konusunda eğitilmelidir. Sekonder adrenal yetmezlikte aldosteron korunduğundan fludrokortizon gerekmez ve stres yanıtında yeri yoktur.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Ateşli hastalıkta kortizol ihtiyacı artar; dozun artırılmaması adrenal krizin başlıca nedenidir.",
+        "B": "YANLIS — Fizyolojik replasman bağışıklığı baskılamaz; kesilmesi en tehlikeli hatadır ve krize yol açar.",
+        "C": "YANLIS — Stres dozu ateşli hastalık için de gereklidir. Kusma ya da ishal varken oral doz emilmez; iki kat oral doz güvenli değildir, parenteral hidrokortizon gerekir.",
+        "D": "DOGRU — Ateşte 2–3 kat oral doz, oral alınamıyorsa 100 mg IM hidrokortizon ve acile başvuru; kimlik kartı/künye.",
+        "E": "YANLIS — Santral adrenal yetmezlikte aldosteron salgısı korunur, fludrokortizon endike değildir ve glukokortikoid stres dozunun yerini tutmaz."
+      },
+      "etiketler": [
+        "Santral Adrenal Yetmezlik",
+        "Hastalık Günü Kuralları",
+        "Stres Dozu",
+        "Adrenal Kriz Önlemi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Fleseriu M ve ark. Endocrine Society Hipofiz Yetmezliğinde Hormon Replasmanı Kılavuzu 2016; TEMD Hipofiz Kılavuzu 2022"
+    },
+    {
+      "id": "s14",
+      "metin": "Yirmi altı yaşında erkek hasta, 3 hafta önce trafik kazasında orta-ağır travmatik beyin hasarı geçirmiş; taburculuk öncesi endokrin değerlendirmesi isteniyor. Hemodinamisi stabil, Na: 138 mEq/L, idrar miktarı normal.\n\nSabah kortizolü: 16.8 µg/dL\nsT4: 0.76 ng/dL (hafif ↓), TSH: 0.9 mU/L\nTotal testosteron: 180 ng/dL ↓, LH: 1.6 IU/L\nIGF-1: yaşa göre alt sınırda\n\nBu hastada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Adrenal aks yeterlidir; tiroid, gonad ve GH aksları akut hastalıktan etkilenebildiği için taburculuk sonrası 3. ve 6. aylarda yeniden değerlendirilmelidir.",
+        "B": "Kalıcı santral hipogonadizm gelişmiştir; testosteron replasmanı hemen başlanmalıdır.",
+        "C": "Erişkin GH eksikliği tanısı konup GH replasmanı başlanmalıdır.",
+        "D": "Hidrokortizon replasmanı başlanmalı, ardından levotiroksin eklenmelidir.",
+        "E": "Akut dönemde hipofiz testleri anlamsız olduğundan hiçbir aks değerlendirilmemeli, ilk değerlendirme 5. yılda yapılmalıdır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Travmatik beyin hasarının akut döneminde yalnızca hayatı tehdit eden ACTH ve AVP eksiklikleri aranıp tedavi edilir. Gonad, tiroid ve GH aksları kritik hastalıktan geçici etkilenir; kalıcılık 3. ve 6. aylarda yeniden test edilerek gösterilir.",
+      "aciklama_detay": "Travmatik beyin hasarı ve anevrizmal subaraknoid kanama hipopitüitarizmin önemli ve tanıda sıkça atlanan nedenleridir. Akut dönemde ACTH eksikliği (hipotansiyon, hiponatremi, hipoglisemi) ve AVP eksikliği (poliüri, hipernatremi) hayatı tehdit ettiğinden hemen taranır ve tedavi edilir. Buna karşılık kritik hastalık, stres ve ilaçlar (opioid, glukokortikoid, dopamin) gonadotropin, TSH ve GH aksını geçici olarak baskılar; bu dönemdeki düşük testosteron, hafif düşük sT4 ve düşük-normal IGF-1 kalıcı eksikliği göstermez ve çoğu kendiliğinden düzelir. Bu nedenle bu akslar taburculuk sonrası 3. ve 6. aylarda (kalıcılık kuşkusunda 12. ayda) yeniden değerlendirilir; GH eksikliği tanısı için dinamik test, iyileşme tamamlandıktan sonra yapılır. Bu hastada sabah kortizolü 15 µg/dL üzerindedir; TEMD'ye göre HPA aksı yeterli kabul edilir, glukokortikoid gerekmez. Hafif düşük sT4 belirgin semptom yoksa kısa aralıkla tekrarlanır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Akut dönemde ACTH ve AVP taranır (burada normal); diğer akslar geçici etkilenebildiğinden 3. ve 6. aylarda yeniden değerlendirilir.",
+        "B": "YANLIS — Kritik hastalık ve travma sonrası hipogonadotropik tablo sıklıkla geçicidir; kalıcılığı gösterilmeden testosteron başlanmaz.",
+        "C": "YANLIS — Akut dönemde IGF-1 ve GH aksı güvenilir değerlendirilemez; erişkin GH eksikliği tanısı dinamik testle ve iyileşmeden sonra konur.",
+        "D": "YANLIS — Sabah kortizolü 16.8 µg/dL ile HPA aksı yeterlidir; gereksiz glukokortikoid yan etki ve aks baskılanmasına yol açar.",
+        "E": "YANLIS — ACTH ve AVP eksiklikleri akut dönemde hayatı tehdit eder ve mutlaka değerlendirilmelidir; diğer akslar için de yıllarca beklenmez, 3.–6. aylarda test edilir."
+      },
+      "etiketler": [
+        "Travmatik Beyin Hasarı",
+        "Akut Dönem Değerlendirmesi",
+        "Geçici Hipopitüitarizm",
+        "Sabah Kortizolü"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Snyder PJ. Causes of hypopituitarism. UpToDate; son güncelleme 8 May 2026; Konu anlatımı (MediSea) — Hipofiz Yetmezliği: Özel Klinik Durumlar"
+    },
+    {
+      "id": "s15",
+      "metin": "Otuz iki yaşında kadın; 12 yaşında medulloblastom nedeniyle kraniyospinal radyoterapi almış, 5 yıldır GH eksikliği nedeniyle izleniyor. Son aylarda halsizlik, iştahsızlık ve 4 kg kilo kaybı tarif ediyor. Akne nedeniyle 1 yıldır etinilestradiol içeren oral kombine kontraseptif kullanıyor.\n\nSabah 08:00 total serum kortizolü: 17.5 µg/dL\nNa: 134 mEq/L, K: 4.2 mEq/L\n\nBu kortizol değerinin yorumu için en doğru ifade hangisidir?",
+      "secenekler": {
+        "A": "Sabah kortizolü 15 µg/dL'nin üzerinde olduğundan adrenal yetmezlik güvenle dışlanmıştır.",
+        "B": "Kortizol normal olduğundan yakınmalar için psikiyatrik değerlendirme istenmelidir.",
+        "C": "Oral östrojen kortizol bağlayan globulini (CBG) artırıp total kortizolü yükseltir; bu değer güven vermez, kontraseptif kesildikten 6 hafta sonra yeniden değerlendirilmelidir.",
+        "D": "Oral östrojen kortizol yıkımını hızlandırdığından gerçek kortizol ölçülenden yüksektir; ek değerlendirme gerekmez.",
+        "E": "Radyoterapiye bağlı hipopitüitarizm yalnızca ilk yıl içinde gelişir; bu hastada yeni ACTH eksikliği olası değildir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Oral östrojen karaciğerde CBG'yi artırır ve total kortizolü yükseltir; ACTH eksikliği olan kadında bile sabah kortizolü 'normal' görünebilir. Total kortizole dayalı değerlendirme oral östrojen kesildikten en az 6 hafta sonra yapılır.",
+      "aciklama_detay": "Kortizolün büyük kısmı dolaşımda CBG'ye bağlıdır ve rutin testler total kortizolü ölçer. Oral östrojen (kombine kontraseptif, oral HRT) karaciğerde CBG sentezini artırır; total kortizol yükselir, biyolojik olarak aktif serbest kortizol ise değişmez. Bu nedenle oral östrojen alan kadında sabah kortizolü ve uyarı testlerindeki pik kortizol yalancı güven verebilir; TEMD, östrojen içeren doğum kontrol hapının kortizol ölçümlerini bozduğunu ve değerlendirmeden en az 6 hafta önce kesilmesi gerektiğini belirtir. Klinik şüphe güçlüyse (radyoterapi öyküsü, halsizlik, kilo kaybı, hafif hiponatremi) bu bekleme döneminde glukokortikoid koruması düşünülebilir. Transdermal östrojen CBG'yi belirgin artırmaz. Kraniyal radyoterapi sonrası hipopitüitarizm doza bağlıdır ve yıllar içinde ilerler: en önce GH, ardından gonadotropin, TSH ve ACTH etkilenir; yeni hormon eksiklikleri 10 yıldan sonra bile ortaya çıkabileceğinden izlem ömür boyu sürer.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — 15 µg/dL eşiği CBG'si normal kişiler içindir; oral östrojen alan kadında total kortizol CBG artışı nedeniyle yalancı yüksektir ve adrenal yetmezliği dışlamaz.",
+        "B": "YANLIS — Radyoterapi öyküsü, kilo kaybı ve hafif hiponatremi organik nedeni düşündürür; kortizol değeri yanıltıcı olabileceğinden organik neden dışlanmadan psikiyatrik açıklamaya gidilmez.",
+        "C": "DOGRU — CBG artışı total kortizolü yükseltir; değerlendirme oral östrojen kesildikten en az 6 hafta sonra (klinik şüphe güçlüyse glukokortikoid koruması altında) yapılır.",
+        "D": "YANLIS — Oral östrojenin başlıca etkisi CBG artışıdır ve yön tersidir: ölçülen total kortizol serbest (aktif) kortizolü olduğundan yüksek gösterir.",
+        "E": "YANLIS — Radyoterapiye bağlı hipopitüitarizm yıllar içinde ilerler; GH'den sonra gonadotropin, TSH ve ACTH eksiklikleri 10 yıl ve sonrasında da gelişebilir."
+      },
+      "etiketler": [
+        "ACTH Eksikliği",
+        "Kortizol Bağlayan Globulin",
+        "Oral Östrojen",
+        "Radyoterapi Sonrası Hipopitüitarizm",
+        "Laboratuvar Tuzağı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "TEMD Hipofiz Kılavuzu 2022; Varlamov EV, Fleseriu M. Anterior Pituitary Failure. In: The Pituitary. Elsevier; 2022"
     }
   ]
 }
