@@ -104,7 +104,7 @@
     },
     {
       "tip": "tablo",
-      "baslik": "Moleküler Genetik — YDUS Spot Bilgiler",
+      "baslik": "Moleküler Genetik — Spot Bilgiler",
       "kolonlar": [
         "Tutulum",
         "Gen / Mutasyon",
@@ -162,7 +162,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Klinik Sınav Spotu: USP8 mutasyonlu kortikotrop adenomlar SSTR5 ekspresyonu yüksek olduğundan pasireotide daha duyarlıdır. PRKACA mutasyonu = unilateral adrenal adenomda en sık somatik mutasyon (L205R/L206R). ARMC5 = PBMAH'ta hem daha ağır hastalık hem ailevi menenjiyom riski ile hatırlanır."
+      "metin": "Kritik Nokta: USP8 mutasyonlu kortikotrop adenomlar SSTR5 ekspresyonu yüksek olduğundan pasireotide daha duyarlıdır. PRKACA mutasyonu = unilateral adrenal adenomda en sık somatik mutasyon (L205R/L206R). ARMC5 = PBMAH'ta hem daha ağır hastalık hem ailevi menenjiyom riski ile hatırlanır."
     },
     {
       "tip": "metin",

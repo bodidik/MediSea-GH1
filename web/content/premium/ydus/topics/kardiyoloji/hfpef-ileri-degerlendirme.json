@@ -71,7 +71,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Sınav Kuralı — 4 Parametre Yorumlama: 4'ü veya 3'ü pozitifse → Diyastolik Disfonksiyon KESİNLEŞİR. Yalnızca 1'i pozitif veya hepsi negatifse → fonksiyon NORMAL kabul edilir. 2'si pozitifse → durum 'BELİRSİZ (indeterminate)' olarak değerlendirilir."
+      "metin": "Algoritma — 4 Parametre Yorumlama: 4'ü veya 3'ü pozitifse → Diyastolik Disfonksiyon KESİNLEŞİR. Yalnızca 1'i pozitif veya hepsi negatifse → fonksiyon NORMAL kabul edilir. 2'si pozitifse → durum 'BELİRSİZ (indeterminate)' olarak değerlendirilir."
     },
     {
       "tip": "tablo",
