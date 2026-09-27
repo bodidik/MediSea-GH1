@@ -4177,5 +4177,743 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "asit": {
+    "baslik": "Asit",
+    "aciklama": "Asit sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Bathobakae L, Farhan H, Mücahit D, ve ark. Pancreatic ascites: update on diagnosis and management. Ann Gastroenterol 2025;38(3):247-254",
+        "yil": 2025,
+        "url": "https://doi.org/10.20524/aog.2025.0961",
+        "tur": "makale"
+      },
+      {
+        "ad": "Thabut D, Dasari BVM, Allaire M, ve ark. EASL Clinical Practice Guidelines on extrahepatic abdominal surgery in patients with cirrhosis and advanced chronic liver disease. J Hepatol 2025;83(3):768-789",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.jhep.2025.04.008",
+        "tur": "makale"
+      },
+      {
+        "ad": "Verma S, Pinter M, Macken L, ve ark. EASL position paper on palliative care in advanced chronic liver disease. JHEP Rep 2026;8(4):101686",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.jhepr.2025.101686",
+        "tur": "makale"
+      },
+      {
+        "ad": "Juncu S, Minea H, Lungu A, ve ark. Fluoroquinolones for the Prophylaxis of Spontaneous Bacterial Peritonitis in Patients with Liver Cirrhosis: Are They Losing Ground? Life (Basel) 2025;15(4):586",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/life15040586",
+        "tur": "makale"
+      },
+      {
+        "ad": "Rautou PE, Moga L, Hernandez-Gea V, ve ark. EASL Clinical Practice Guidelines on vascular diseases of the liver. J Hepatol 2026;84(2):399-456",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.jhep.2025.08.001",
+        "tur": "makale"
+      },
+      {
+        "ad": "Gao Y, Liu X, Gao Y, Duan M, Hou B, Chen Y. Pharmacological Interventions for Cirrhotic Ascites: From Challenges to Emerging Therapeutic Horizons. Gut Liver 2024;18(6):934-948",
+        "yil": 2024,
+        "url": "https://doi.org/10.5009/gnl240038",
+        "tur": "makale"
+      },
+      {
+        "ad": "Garcia-Tsao G, Abraldes JG, Rich NE, Wong VWS. AGA Clinical Practice Update on the Use of Vasoactive Drugs and Intravenous Albumin in Cirrhosis: Expert Review. Gastroenterology 2024;166(1):202-210",
+        "yil": 2024,
+        "url": "https://doi.org/10.1053/j.gastro.2023.10.016",
+        "tur": "makale"
+      },
+      {
+        "ad": "Orman ES, Fortune BE, John BV, Asrani SK. AGA Clinical Practice Update on the Management of Ascites, Volume Overload, and Hyponatremia in Cirrhosis: Expert Review. Gastroenterology 2025;169(7):1547-1557",
+        "yil": 2025,
+        "url": "https://doi.org/10.1053/j.gastro.2025.08.029",
+        "tur": "makale"
+      },
+      {
+        "ad": "Roy A, Kulkarni AV. Ascites in patients with end-stage renal disease: Challenges and solutions from diagnosis to management. Hepatol Commun 2025;9(4):e0687",
+        "yil": 2025,
+        "url": "https://doi.org/10.1097/HC9.0000000000000687",
+        "tur": "makale"
+      },
+      {
+        "ad": "Vierra MA, Morgan RB, Bhutiani N, White MG, Eng OS. Contemporary Management of Malignant Ascites. J Surg Res 2025;307:157-175",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.jss.2025.01.025",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yang JX, Peng YM, Zeng HT, Lin XM, Xu ZL. Drainage of ascites in cirrhosis. World J Hepatol 2024;16(9):1245-1257",
+        "yil": 2024,
+        "url": "https://doi.org/10.4254/wjh.v16.i9.1245",
+        "tur": "makale"
+      },
+      {
+        "ad": "Stern SDC, Cifu AS, Altkorn D. Symptom to Diagnosis: An Evidence-Based Guide. 4. baskı. McGraw-Hill; 2020. Bölüm: Ascites",
+        "yil": 2020,
+        "url": "https://accessmedicine.mhmedical.com/content.aspx?bookId=2715&sectionId=249060017",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Vincent JL, Moore FA, Bellomo R, Marini JJ, ed. Textbook of Critical Care. 8. baskı. Elsevier; 2022. Bölüm: Ascites",
+        "yil": 2022,
+        "url": "https://shop.elsevier.com/books/textbook-of-critical-care/vincent/978-0-323-75929-8",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Feldman M, Friedman LS, Brandt LJ, ed. Sleisenger and Fordtran's Gastrointestinal and Liver Disease. 11. baskı. Elsevier; 2020. Bölüm: Ascites and Spontaneous Bacterial Peritonitis (Solà E, Ginès P)",
+        "yil": 2020,
+        "url": "https://shop.elsevier.com/books/sleisenger-and-fordtrans-gastrointestinal-and-liver-disease-2-volume-set/feldman/978-0-323-60962-3",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Ferri FF. Ferri's Clinical Advisor 2026. Elsevier; 2025",
+        "yil": 2025,
+        "url": "https://shop.elsevier.com/books/ferris-clinical-advisor-2026/ferri/978-0-443-11723-7",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Shah NL. Ascites in adults with cirrhosis: Initial therapy. UpToDate; son güncelleme 14 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/ascites-in-adults-with-cirrhosis-initial-therapy",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Shah NL. Ascites in adults with cirrhosis: Refractory ascites. UpToDate; son güncelleme 23 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/ascites-in-adults-with-cirrhosis-refractory-ascites",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Cárdenas A, Gelrud A, Chopra S. Chylous, bloody, and pancreatic ascites. UpToDate; son güncelleme 24 Oca 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/chylous-bloody-and-pancreatic-ascites",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Biggins SW. Evaluation of adults with ascites. UpToDate; son güncelleme 9 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/evaluation-of-adults-with-ascites",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Miner T, Cohen JT. Malignancy-related ascites. UpToDate; son güncelleme 27 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/malignancy-related-ascites",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Shah NL. Pathogenesis of ascites in patients with cirrhosis. UpToDate; son güncelleme 26 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/pathogenesis-of-ascites-in-patients-with-cirrhosis",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "kisa-bagirsak": {
+    "baslik": "Kısa bağırsak sendromu",
+    "aciklama": "Kısa bağırsak sendromu sayfası bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konunun kaynakçasıdır; her künye her bölümün dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Feldman M, Friedman LS, Brandt LJ, ed. Sleisenger and Fordtran's Gastrointestinal and Liver Disease. 11. baskı. Elsevier; 2020. Bölüm: Short Bowel Syndrome (Buchman AL)",
+        "yil": 2020,
+        "url": "https://shop.elsevier.com/books/sleisenger-and-fordtrans-gastrointestinal-and-liver-disease-2-volume-set/feldman/978-0-323-60962-3",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Loscalzo J, Fauci AS, Kasper DL, Hauser SL, Longo DL, Jameson JL, ed. Harrison's Principles of Internal Medicine. 22. baskı. McGraw Hill; 2025. Bölüm: Disorders of Absorption (Rubin DC)",
+        "yil": 2025,
+        "url": "https://accessmedicine.mhmedical.com/book.aspx?bookid=3541",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Goldman L, Cooney KA, ed. Goldman-Cecil Medicine. 27. baskı. Elsevier; 2023. Bölüm: Approach to the Patient with Diarrhea and Malabsorption",
+        "yil": 2023,
+        "url": "https://shop.elsevier.com/books/goldman-cecil-medicine-2-volume-set/goldman/978-0-323-93038-3",
+        "tur": "kitap"
+      },
+      {
+        "ad": "DiBaise JK. Chronic complications of the short bowel syndrome in adults. UpToDate; son güncelleme 28 Ağu 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/chronic-complications-of-the-short-bowel-syndrome-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "DiBaise JK. Management of short bowel syndrome in adults. UpToDate; son güncelleme 6 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-short-bowel-syndrome-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "DiBaise JK. Pathophysiology of short bowel syndrome. UpToDate; son güncelleme 5 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/pathophysiology-of-short-bowel-syndrome",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "sarilik": {
+    "baslik": "Sarılık ve bilirubin metabolizması",
+    "aciklama": "Bilirubin metabolizması sayfası bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (PubMed, Crossref), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konunun kaynakçasıdır; her künye her bölümün dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Creeden JF, Gordon DM, Stec DE, Hinds TD Jr. Bilirubin as a metabolic hormone: the physiological relevance of low levels. Am J Physiol Endocrinol Metab 2021;320(2):E191-E207",
+        "yil": 2021,
+        "url": "https://doi.org/10.1152/ajpendo.00405.2020",
+        "tur": "makale"
+      },
+      {
+        "ad": "Huang MJ, Chen PL, Huang CS. Bilirubin metabolism and UDP-glucuronosyltransferase 1A1 variants in Asians: Pathogenic implications and therapeutic response. Kaohsiung J Med Sci 2022;38(8):729-738",
+        "yil": 2022,
+        "url": "https://doi.org/10.1002/kjm2.12579",
+        "tur": "makale"
+      },
+      {
+        "ad": "Jayanti S, Dalla Verde C, Tiribelli C, Gazzin S. Inflammation, Dopaminergic Brain and Bilirubin. Int J Mol Sci 2023;24(14):11478",
+        "yil": 2023,
+        "url": "https://doi.org/10.3390/ijms241411478",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kipp ZA, Pauss SN, Martinez GJ, Hinds TD Jr, Lee WH. Bilirubin Hepatic and Intestinal Transport and Catabolism: Physiology, Pathophysiology, and Benefits. Antioxidants (Basel) 2025;14(11):1326",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/antiox14111326",
+        "tur": "makale"
+      },
+      {
+        "ad": "Morais MB, Machado MV. Benign inheritable disorders of bilirubin metabolism manifested by conjugated hyperbilirubinemia-A narrative review. United European Gastroenterol J 2022;10(7):745-753",
+        "yil": 2022,
+        "url": "https://doi.org/10.1002/ueg2.12279",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ramírez-Mejía MM, Castillo-Castañeda SM, Pal SC, Qi X, Méndez-Sánchez N. The Multifaceted Role of Bilirubin in Liver Disease: A Literature Review. J Clin Transl Hepatol 2024;12(11):939-948",
+        "yil": 2024,
+        "url": "https://doi.org/10.14218/jcth.2024.00156",
+        "tur": "makale"
+      },
+      {
+        "ad": "Vitek L, Hinds TD Jr, Stec DE, Tiribelli C. The physiology of bilirubin: health and disease equilibrium. Trends Mol Med 2023;29(4):315-328",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.molmed.2023.01.007",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yi F, Tao S, Wu H. Bilirubin metabolism in relation to cancer. Front Oncol 2025;15:1570288",
+        "yil": 2025,
+        "url": "https://doi.org/10.3389/fonc.2025.1570288",
+        "tur": "makale"
+      },
+      {
+        "ad": "Pramanik S, Palui R, Ray S. Hepatic osteodystrophy: An underrecognized metabolic bone disease. World J Hepatol 2025;17(8):109093",
+        "yil": 2025,
+        "url": "https://doi.org/10.4254/wjh.v17.i8.109093",
+        "tur": "makale"
+      },
+      {
+        "ad": "Czyszczon A, Maczkowski B, Tkaczyk A, ve ark. Hyperbilirubinemia as a Marker for Complicated Acute Appendicitis: A Systematic Review. Cureus 2025;17(9):e93197",
+        "yil": 2025,
+        "url": "https://doi.org/10.7759/cureus.93197",
+        "tur": "makale"
+      },
+      {
+        "ad": "Fiore M, Cosenza G, Coppolino F, ve ark. Hypertransaminasemia in non-cirrhotic critically-ill patients. World J Hepatol 2025;17(11):109645",
+        "yil": 2025,
+        "url": "https://doi.org/10.4254/wjh.v17.i11.109645",
+        "tur": "makale"
+      },
+      {
+        "ad": "Badmus OO, Hillhouse SA, Anderson CD, Hinds TD, Stec DE. Molecular mechanisms of metabolic associated fatty liver disease (MAFLD): functional analysis of lipid metabolism pathways. Clin Sci (Lond) 2022;136(18):1347-1366",
+        "yil": 2022,
+        "url": "https://doi.org/10.1042/cs20220572",
+        "tur": "makale"
+      },
+      {
+        "ad": "Loscalzo J, Fauci AS, Kasper DL, Hauser SL, Longo DL, Jameson JL, ed. Harrison's Principles of Internal Medicine. 22. baskı. McGraw Hill; 2025. Bölümler: Jaundice; The Hyperbilirubinemias",
+        "yil": 2025,
+        "url": "https://accessmedicine.mhmedical.com/book.aspx?bookid=3541",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Kennelly PJ, Botham KM, McGuinness OP, Rodwell VW, Weil PA. Harper's Illustrated Biochemistry. 33. baskı. McGraw Hill; 2026. Bölüm: Porphyrins & Bile Pigments",
+        "yil": 2026,
+        "url": "https://accessmedicine.mhmedical.com/book.aspx?bookid=3634",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Laposata M, ed. Laposata's Laboratory Medicine: Diagnosis of Disease in the Clinical Laboratory. 4. baskı. McGraw Hill; 2025",
+        "yil": 2025,
+        "url": "https://accessmedicine.mhmedical.com/book.aspx?bookid=3574",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Papadakis MA, Rabow MW, McQuaid KR, Nadler PL, Leemann Price E, ed. Current Medical Diagnosis & Treatment 2026. McGraw Hill; 2026. Bölüm: Liver, Biliary Tract, & Pancreas Disorders",
+        "yil": 2026,
+        "url": "https://accessmedicine.mhmedical.com/book.aspx?bookid=3594",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Roy-Chowdhury N, Roy-Chowdhury J. Bilirubin metabolism. UpToDate; son güncelleme 25 Eyl 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/bilirubin-metabolism",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Roy-Chowdhury N, Roy-Chowdhury J. Classification and causes of jaundice or asymptomatic hyperbilirubinemia. UpToDate; son güncelleme 2 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/classification-and-causes-of-jaundice-or-asymptomatic-hyperbilirubinemia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Roy-Chowdhury N, Roy-Chowdhury J. Diagnostic approach to the adult with jaundice or asymptomatic hyperbilirubinemia. UpToDate; son güncelleme 7 Eki 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/diagnostic-approach-to-the-adult-with-jaundice-or-asymptomatic-hyperbilirubinemia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Friedman LS. Approach to the patient with abnormal liver tests. UpToDate; son güncelleme 15 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/approach-to-the-patient-with-abnormal-liver-tests",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Fink SA. Approach to the patient with postoperative jaundice. UpToDate; son güncelleme 23 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/approach-to-the-patient-with-postoperative-jaundice",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Roy-Chowdhury J, Roy-Chowdhury N, Wang X. Gilbert syndrome. UpToDate; son güncelleme 17 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/gilbert-syndrome",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Roy-Chowdhury N, Roy-Chowdhury J. Crigler-Najjar syndrome. UpToDate; son güncelleme 31 Mar 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/crigler-najjar-syndrome",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "fmf": {
+    "baslik": "Ailesel Akdeniz ateşi",
+    "aciklama": "Ailesel Akdeniz ateşi sayfası bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (PubMed, Crossref), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konunun kaynakçasıdır; her künye her bölümün dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Bildirici AE. Familial Mediterranean fever and microRNAs. Int J Immunogenet 2023;50(6):273-280",
+        "yil": 2023,
+        "url": "https://doi.org/10.1111/iji.12640",
+        "tur": "makale"
+      },
+      {
+        "ad": "Bolla E, Karamanakos A, Fragoulis GE, Iliopoulos A. Familial mediterranean fever in a patient with ankylosing spondylitis: could familial mediterranean fever explain a typical eight-year ankylosing spondylitis? Rheumatol Int 2024;44(12):3119-3125",
+        "yil": 2024,
+        "url": "https://doi.org/10.1007/s00296-024-05736-9",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chaaban A, Salman Z, Karam L, Kobeissy PH, Ibrahim JN. Updates on the role of epigenetics in familial mediterranean fever (FMF). Orphanet J Rare Dis 2024;19(1):90",
+        "yil": 2024,
+        "url": "https://doi.org/10.1186/s13023-024-03098-w",
+        "tur": "makale"
+      },
+      {
+        "ad": "Di Ciaula A, Stella A, Bonfrate L, Wang DQH, Portincasa P. Gut Microbiota between Environment and Genetic Background in Familial Mediterranean Fever (FMF). Genes (Basel) 2020;11(9):1041",
+        "yil": 2020,
+        "url": "https://doi.org/10.3390/genes11091041",
+        "tur": "makale"
+      },
+      {
+        "ad": "Elhani I, Dumont A, Vergneault H, ve ark. Association between familial Mediterranean fever and multiple sclerosis: A case series from the JIR cohort and systematic literature review. Mult Scler Relat Disord 2021;50:102834",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/j.msard.2021.102834",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kaye AD, Islam RK, Nguyen ID, ve ark. Familial Mediterranean Fever (FMF): Emerging Concepts in Diagnosis, Pain Management, and Novel Treatment Options: A Narrative Review. Curr Pain Headache Rep 2025;29(1):22",
+        "yil": 2025,
+        "url": "https://doi.org/10.1007/s11916-024-01345-0",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kharouf F, Tsemach-Toren T, Ben-Chetrit E. IL-1 inhibition in familial Mediterranean fever: clinical outcomes and expectations. Clin Exp Rheumatol 2022;40(8):1567-1574",
+        "yil": 2022,
+        "url": "https://doi.org/10.55563/clinexprheumatol/obb2ds",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kilic B, Guler Y, Azman FN, Bostanci E, Ugurlu S. Efficacy and safety of anti-interleukin-1 treatment in familial Mediterranean fever patients: a systematic review and meta-analysis. Rheumatology (Oxford) 2024;63(4):925-935",
+        "yil": 2024,
+        "url": "https://doi.org/10.1093/rheumatology/kead514",
+        "tur": "makale"
+      },
+      {
+        "ad": "Malik J, Shabbir A, Nazir A. Cardiovascular Sequelae and Genetics of Familial Mediterranean Fever: A Literature Review. Pulse (Basel) 2021;8(3-4):78-85",
+        "yil": 2021,
+        "url": "https://doi.org/10.1159/000516182",
+        "tur": "makale"
+      },
+      {
+        "ad": "Mansueto P, Seidita A, Chiavetta M, ve ark. Familial Mediterranean Fever and Diet: A Narrative Review of the Scientific Literature. Nutrients 2022;14(15):3216",
+        "yil": 2022,
+        "url": "https://doi.org/10.3390/nu14153216",
+        "tur": "makale"
+      },
+      {
+        "ad": "Mertz P, Hentgen V, Georgin-Lavialle S. Could tocilizumab be used in familial Mediterranean fever? A systematic review. Rheumatology (Oxford) 2025;64(1):12-21",
+        "yil": 2025,
+        "url": "https://doi.org/10.1093/rheumatology/keae338",
+        "tur": "makale"
+      },
+      {
+        "ad": "Mezher N, Mroweh O, Karam L, Ibrahim JN, Kobeissy PH. Experimental models in Familial Mediterranean Fever (FMF): Insights into pathophysiology and therapeutic strategies. Exp Mol Pathol 2024;135:104883",
+        "yil": 2024,
+        "url": "https://doi.org/10.1016/j.yexmp.2024.104883",
+        "tur": "makale"
+      },
+      {
+        "ad": "Motawea KR, El-Sakka AA, Kandil OA, ve ark. Relation Between Familial Mediterranean Fever and QT Markers (QTc, QTd, and QTcd): A Systematic Review and Meta-Analysis. Cureus 2022;14(10):e30585",
+        "yil": 2022,
+        "url": "https://doi.org/10.7759/cureus.30585",
+        "tur": "makale"
+      },
+      {
+        "ad": "Motawea KR, Kandil OA, Varney J, ve ark. Association of familial Mediterranean fever and epicardial adipose tissue: A systematic review and meta-analysis. Health Sci Rep 2022;5(4):e693",
+        "yil": 2022,
+        "url": "https://doi.org/10.1002/hsr2.693",
+        "tur": "makale"
+      },
+      {
+        "ad": "Romano M, Piskin D, Kul Cinar O, Sag E. Familial Mediterranean Fever; Recent Advances, Future Prospectives. Diagnostics (Basel) 2025;15(7):813",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/diagnostics15070813",
+        "tur": "makale"
+      },
+      {
+        "ad": "Seyahi E, Ugurlu S, Amikishiyev S, Gul A. Behçet disease, familial Mediterranean fever and MEFV variations: More than just an association. Clin Immunol 2023;251:109630",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.clim.2023.109630",
+        "tur": "makale"
+      },
+      {
+        "ad": "Shohat M, Halpern GJ. Familial Mediterranean fever--a review. Genet Med 2011;13(6):487-98",
+        "yil": 2011,
+        "url": "https://doi.org/10.1097/gim.0b013e3182060456",
+        "tur": "makale"
+      },
+      {
+        "ad": "Siligato R, Gembillo G, Calabrese V, Conti G, Santoro D. Amyloidosis and Glomerular Diseases in Familial Mediterranean Fever. Medicina (Kaunas) 2021;57(10):1049",
+        "yil": 2021,
+        "url": "https://doi.org/10.3390/medicina57101049",
+        "tur": "makale"
+      },
+      {
+        "ad": "Stella A, Lamkanfi M, Portincasa P. Familial Mediterranean Fever and COVID-19: Friends or Foes? Front Immunol 2020;11:574593",
+        "yil": 2020,
+        "url": "https://doi.org/10.3389/fimmu.2020.574593",
+        "tur": "makale"
+      },
+      {
+        "ad": "Tufan A, Lachmann HJ. Familial Mediterranean fever, from pathogenesis to treatment: a contemporary review. Turk J Med Sci 2020;50(SI-2):1591-1610",
+        "yil": 2020,
+        "url": "https://doi.org/10.3906/sag-2008-11",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yin X, Tian F, Wu B, Xu T. Interventions for reducing inflammation in familial Mediterranean fever. Cochrane Database Syst Rev 2022;3(3):CD010893",
+        "yil": 2022,
+        "url": "https://doi.org/10.1002/14651858.cd010893.pub4",
+        "tur": "makale"
+      },
+      {
+        "ad": "Nas K, Eryilmaz N, Geyik MF, Altaş A. COVID-19 in patients with familial Mediterranean fever treated with colchicine: case based review. Rheumatol Int 2021;41(4):811-817",
+        "yil": 2021,
+        "url": "https://doi.org/10.1007/s00296-021-04809-3",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chen KR. Cutaneous vasculitis in autoinflammatory diseases. J Dermatol 2024;51(2):150-159",
+        "yil": 2024,
+        "url": "https://doi.org/10.1111/1346-8138.17030",
+        "tur": "makale"
+      },
+      {
+        "ad": "Symmank D, Borst C, Drach M, Weninger W. Dermatologic Manifestations of Noninflammasome-Mediated Autoinflammatory Diseases. JID Innov 2023;3(2):100176",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.xjidi.2022.100176",
+        "tur": "makale"
+      },
+      {
+        "ad": "Delplanque M, Fayand A, Boursier G, Grateau G, Savey L, Georgin-Lavialle S. Diagnostic and therapeutic algorithms for monogenic autoinflammatory diseases presenting with recurrent fevers among adults. Rheumatology (Oxford) 2023;62(8):2665-2672",
+        "yil": 2023,
+        "url": "https://doi.org/10.1093/rheumatology/keac712",
+        "tur": "makale"
+      },
+      {
+        "ad": "Korkmaz C, Üsküdar Cansu D, Kabay SC. Familial coexistence of demyelinating diseases and familial Mediterranean fever. Rheumatol Int 2022;42(1):167-173",
+        "yil": 2022,
+        "url": "https://doi.org/10.1007/s00296-021-04821-7",
+        "tur": "makale"
+      },
+      {
+        "ad": "Merashli M, Bucci T, Pastori D, Pignatelli P, Ames PRJ. Intima media thickness of carotid arteries in familial Mediterranean fever: a systematic review and meta-analysis. Clin Rheumatol 2022;41(12):3769-3776",
+        "yil": 2022,
+        "url": "https://doi.org/10.1007/s10067-022-06326-5",
+        "tur": "makale"
+      },
+      {
+        "ad": "Biasizzo M, Kopitar-Jerala N. Interplay Between NLRP3 Inflammasome and Autophagy. Front Immunol 2020;11:591803",
+        "yil": 2020,
+        "url": "https://doi.org/10.3389/fimmu.2020.591803",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cansu DÜ, Teke HÜ, Arik D, Korkmaz C. Menorrhagia due to uterine amyloidosis in familial Mediterranean fever: case-based review. Rheumatol Int 2021;41(1):205-211",
+        "yil": 2021,
+        "url": "https://doi.org/10.1007/s00296-020-04721-2",
+        "tur": "makale"
+      },
+      {
+        "ad": "de Jesus AA, Canna SW, Liu Y, Goldbach-Mansky R. Molecular mechanisms in genetically defined autoinflammatory diseases: disorders of amplified danger signaling. Annu Rev Immunol 2015;33:823-74",
+        "yil": 2015,
+        "url": "https://doi.org/10.1146/annurev-immunol-032414-112227",
+        "tur": "makale"
+      },
+      {
+        "ad": "Hamad M, Mohammad T, Bishtawi M, ve ark. Prevalence of neurological manifestation in familial mediterranean fever patients: systematic review & meta-analysis. Neurol Sci 2025;46(10):4943-4953",
+        "yil": 2025,
+        "url": "https://doi.org/10.1007/s10072-025-08351-z",
+        "tur": "makale"
+      },
+      {
+        "ad": "Arnold DD, Yalamanoglu A, Boyman O. Systematic Review of Safety and Efficacy of IL-1-Targeted Biologics in Treating Immune-Mediated Disorders. Front Immunol 2022;13:888392",
+        "yil": 2022,
+        "url": "https://doi.org/10.3389/fimmu.2022.888392",
+        "tur": "makale"
+      },
+      {
+        "ad": "Loscalzo J, Fauci AS, Kasper DL, Hauser SL, Longo DL, Jameson JL, ed. Harrison's Principles of Internal Medicine. 21. baskı. McGraw Hill; 2022. Bölüm: Familial Mediterranean Fever and Other Hereditary Autoinflammatory Diseases",
+        "yil": 2022,
+        "url": "https://accessmedicine.mhmedical.com/book.aspx?bookID=3095",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Ben-Chetrit E. Familial Mediterranean fever: Epidemiology, genetics, and pathogenesis. UpToDate; son güncelleme 12 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/familial-mediterranean-fever-epidemiology-genetics-and-pathogenesis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ben-Chetrit E. Familial Mediterranean fever: Clinical manifestations and diagnosis. UpToDate; son güncelleme 9 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/familial-mediterranean-fever-clinical-manifestations-and-diagnosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ben-Chetrit E. Management of familial Mediterranean fever. UpToDate; son güncelleme 9 Oca 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/management-of-familial-mediterranean-fever",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ben-Chetrit E. Gene test interpretation: MEFV (familial Mediterranean fever gene). UpToDate; son güncelleme 28 Şub 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/gene-test-interpretation-mefv-familial-mediterranean-fever-gene",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nigrovic PA. The autoinflammatory diseases: An overview. UpToDate; son güncelleme 28 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/the-autoinflammatory-diseases-an-overview",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nigrovic PA. Autoinflammatory diseases mediated by inflammasomes and related IL-1 family cytokines (inflammasomopathies). UpToDate; son güncelleme 27 Haz 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/autoinflammatory-diseases-mediated-by-inflammasomes-and-related-il-1-family-cytokines-inflammasomopathies",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "sle": {
+    "baslik": "Sistemik lupus eritematozus",
+    "aciklama": "Sistemik lupus eritematozus sayfası bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (PubMed, Crossref), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konunun kaynakçasıdır; her künye her bölümün dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Drosos GC, Vedder D, Houben E, ve ark. EULAR recommendations for cardiovascular risk management in rheumatic and musculoskeletal diseases, including systemic lupus erythematosus and antiphospholipid syndrome. Ann Rheum Dis 2022;81(6):768-779",
+        "yil": 2022,
+        "url": "https://doi.org/10.1136/annrheumdis-2021-221733",
+        "tur": "makale"
+      },
+      {
+        "ad": "Fanouriakis A, Kostopoulou M, Cheema K, ve ark. 2019 Update of the Joint European League Against Rheumatism and European Renal Association–European Dialysis and Transplant Association (EULAR/ERA–EDTA) recommendations for the management of lupus nephritis. Ann Rheum Dis 2020;79(6):713-723",
+        "yil": 2020,
+        "url": "https://doi.org/10.1136/annrheumdis-2020-216924",
+        "tur": "makale"
+      },
+      {
+        "ad": "Parodis I, Girard-Guyonvarc'h C, Arnaud L, ve ark. EULAR recommendations for the non-pharmacological management of systemic lupus erythematosus and systemic sclerosis. Ann Rheum Dis 2024;83(6):720-729",
+        "yil": 2024,
+        "url": "https://doi.org/10.1136/ard-2023-224416",
+        "tur": "makale"
+      },
+      {
+        "ad": "Salmen T, Cobilinschi C, Mihăilescu A, ve ark. Could Skin Autofluorescence Be a Useful Biomarker in Systemic Lupus Erythematosus? A Systematic Review. Int J Mol Sci 2025;26(14):6934",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/ijms26146934",
+        "tur": "makale"
+      },
+      {
+        "ad": "Staveri C, Vartela V, Mavrogeni SI, Liossis SNC. Combining Laboratory and Imaging Evaluation for Cardiovascular Risk Stratification in Systemic Lupus Erythematosus. J Clin Med 2025;14(14):5085",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/jcm14145085",
+        "tur": "makale"
+      },
+      {
+        "ad": "Sammaritano LR, Bermas BL, Chakravarty EE, ve ark. 2020 American College of Rheumatology Guideline for the Management of Reproductive Health in Rheumatic and Musculoskeletal Diseases. Arthritis Rheumatol 2020;72(4):529-556",
+        "yil": 2020,
+        "url": "https://doi.org/10.1002/art.41191",
+        "tur": "makale"
+      },
+      {
+        "ad": "Papadakis MA, Rabow MW, McQuaid KR, ed. Current Medical Diagnosis & Treatment 2025. McGraw Hill; 2025. Bölüm: Rheumatologic, Immunologic, & Allergic Disorders (Manno RL, Yazdany J, Tarrant TK, Kwan M)",
+        "yil": 2025,
+        "url": "https://accessmedicine.mhmedical.com/book.aspx?bookid=3495",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Loscalzo J, Fauci AS, Kasper DL, Hauser SL, Longo DL, Jameson JL, ed. Harrison's Principles of Internal Medicine. 22. baskı. McGraw Hill; 2025. Bölüm: Systemic Lupus Erythematosus (Smith CJF, Hoover PJ, Kalunian K)",
+        "yil": 2025,
+        "url": "https://accessmedicine.mhmedical.com/book.aspx?bookid=3541",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Bermas BL, Sammaritano LR. Approach to contraception in women with systemic lupus erythematosus. UpToDate; son güncelleme 13 Mar 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/approach-to-contraception-in-women-with-systemic-lupus-erythematosus",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Wallace DJ. Systemic lupus erythematosus: Arthritis and other musculoskeletal manifestations. UpToDate; son güncelleme 11 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/systemic-lupus-erythematosus-arthritis-and-other-musculoskeletal-manifestations",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Lipsker D. Bullous systemic lupus erythematosus. UpToDate; son güncelleme 8 Ara 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/bullous-systemic-lupus-erythematosus",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Cluett JL. Evaluation of secondary hypertension. UpToDate; son güncelleme 9 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/evaluation-of-secondary-hypertension",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Massarotti EM. Gastrointestinal manifestations of systemic lupus erythematosus. UpToDate; son güncelleme 10 Mar 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/gastrointestinal-manifestations-of-systemic-lupus-erythematosus",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Merola JF. Overview of cutaneous lupus erythematosus. UpToDate; son güncelleme 29 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-cutaneous-lupus-erythematosus",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Bermas BL, Smith NA. Pregnancy in women with systemic lupus erythematosus. UpToDate; son güncelleme 18 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/pregnancy-in-women-with-systemic-lupus-erythematosus",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Hahn BYH, Kang I, Yazdany J. Systemic lupus erythematosus: Epidemiology and pathogenesis. UpToDate; son güncelleme 21 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/systemic-lupus-erythematosus-epidemiology-and-pathogenesis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Berliner N, Costenbader KH. Systemic lupus erythematosus: Hematologic manifestations. UpToDate; son güncelleme 7 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/systemic-lupus-erythematosus-hematologic-manifestations",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Costenbader KH. Systemic lupus erythematosus in adults: Coronary artery disease. UpToDate; son güncelleme 13 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/systemic-lupus-erythematosus-in-adults-coronary-artery-disease",
+        "tur": "uptodate"
+      }
+    ]
+  },
+  "splenomegali": {
+    "baslik": "Splenomegali",
+    "aciklama": "Splenomegali konusu için bir kaynak defterinden hazırlanan kaynakça. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konunun kaynakçasıdır; her künye her bölümün dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Jerves Serrano T, Gold J, Cooper JA, ve ark. Hepatomegaly and Splenomegaly: An Approach to the Diagnosis of Lysosomal Storage Diseases. J Clin Med 2024;13(5):1465",
+        "yil": 2024,
+        "url": "https://doi.org/10.3390/jcm13051465",
+        "tur": "makale"
+      },
+      {
+        "ad": "Bernstein JA, ed. Primary and Secondary Immunodeficiency: A Case-Based Guide to Evaluation and Management. Springer; 2021",
+        "yil": 2021,
+        "url": "https://doi.org/10.1007/978-3-030-57157-3",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Cappellini MD, Farmakis D, Porter J, Taher A, ed. 2021 Guidelines: For the Management of Transfusion Dependent Thalassaemia (TDT). 4. baskı. Thalassaemia International Federation; 2023. Bölüm: Splenomegaly and splenectomy (Daar S, Taher A)",
+        "yil": 2023,
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK603091/",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Goldman L, Cooney KA, ed. Goldman-Cecil Medicine. 27. baskı. Elsevier; 2023. Bölüm: Approach to the Patient with Lymphadenopathy or Splenomegaly",
+        "yil": 2023,
+        "url": "https://shop.elsevier.com/books/goldman-cecil-medicine/goldman/978-0-323-93038-3",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Hoffman R, Benz EJ, Silberstein LE, Salama ME, ed. Hematology: Basic Principles and Practice. 8. baskı. Elsevier; 2022. Bölümler: Lysosomal Storage Diseases, Focusing on Gaucher Disease: Perspectives and Principles; Hematologic Aspects of Parasitic Diseases; The Spleen and Its Disorders",
+        "yil": 2022,
+        "url": "https://shop.elsevier.com/books/hematology/hoffman/978-0-323-73388-5",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Kumar V, Abbas AK, Aster JC, Deyrup AT, ed. Robbins & Kumar Basic Pathology. 11. baskı. Elsevier; 2022. Bölüm: Hematopoietic and Lymphoid Systems",
+        "yil": 2022,
+        "url": "https://shop.elsevier.com/books/robbins-and-kumar-basic-pathology/kumar/978-0-323-79018-5",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Hagen-Ansert SL. Textbook of Diagnostic Sonography. 9. baskı. Elsevier; 2022. Bölüm: Spleen",
+        "yil": 2022,
+        "url": "https://shop.elsevier.com/books/textbook-of-diagnostic-sonography/hagen-ansert/978-0-323-82646-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Stern SDC, Cifu AS, Altkorn D. Symptom to Diagnosis: An Evidence-Based Guide. 4. baskı. McGraw-Hill; 2020. Bölüm: Hypersplenism",
+        "yil": 2020,
+        "url": "https://accessmedicine.mhmedical.com/content.aspx?bookId=2715&sectionId=249060060",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Loscalzo J, Fauci AS, Kasper DL, Hauser SL, Longo DL, Jameson JL, ed. Harrison's Principles of Internal Medicine. 22. baskı. McGraw Hill; 2025",
+        "yil": 2025,
+        "url": "https://accessmedicine.mhmedical.com/book.aspx?bookid=3541",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Bona R. Splenomegaly and other splenic disorders in adults. UpToDate; son güncelleme 29 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/splenomegaly-and-other-splenic-disorders-in-adults",
+        "tur": "uptodate"
+      }
+    ]
   }
 }
