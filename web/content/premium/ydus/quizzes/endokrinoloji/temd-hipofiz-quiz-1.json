@@ -1,0 +1,368 @@
+{
+  "id": "quiz-endo-temd-hipofiz-001",
+  "baslik": "TEMD Hipofiz — Soru Seti 1",
+  "branch": "endokrinoloji",
+  "topic": "temd-hipofiz",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "34 yaşında kadın hasta, 7 mm mikroprolaktinoma nedeniyle 3 yıldır haftada 1 mg kabergolin kullanıyor. Prolaktin normal, adetleri düzenli. Kardiyak yakınması yok, oskültasyonda üfürüm duyulmuyor. Tedaviye başlarken ve 1. yılda yapılan ekokardiyografiler normal. Hasta internette okuduğu kalp kapağı riskinden endişelenerek her yıl ekokardiyografi yaptırması gerekip gerekmediğini soruyor.\n\nTEMD Hipofiz Kılavuzu 2022'ye göre bu hasta için en uygun izlem yaklaşımı hangisidir?",
+      "secenekler": {
+        "A": "Kabergolin kullanan her hastada, doz ne olursa olsun, yılda bir ekokardiyografi sürdürülmelidir",
+        "B": "Kapak riskinden kaçınmak için kabergolin kesilip bromokriptine geçilmeli, ekokardiyografi izlemi bırakılmalıdır",
+        "C": "Yıllık ekokardiyografi gerekmez; dürtü kontrol bozukluğu her kontrolde sorgulanmalıdır",
+        "D": "Ekokardiyografi 6 ayda bir yapılmalı, kapak kalınlaşması görülmese de 5. yılda tedavi kesilmelidir",
+        "E": "Ekokardiyografi yerine yılda bir NT-proBNP ölçümü kapak hastalığını izlemek için yeterlidir"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Prolaktinoma için kullanılan standart dozda kabergolinle valvülopati bildirilmemiştir; herkese yıllık ekokardiyografi gerekmez. Ekokardiyografi (en az 2 yılda bir) üfürüm duyulanlarda, 5 yıldan uzun süre 3 mg/hafta üzerinde kullananlarda ya da 50 yaşından sonra tedaviyi sürdüreceklerde önerilir.",
+      "aciklama_detay": "Kabergolinle ilişkili restriktif valvülopati, Parkinson hastalığında kullanılan yüksek dozlarda (günde birkaç mg) 5-HT2B reseptör agonizmiyle ortaya çıkar. Prolaktinomada kullanılan dozlar (0,5–3 mg/hafta) bunun çok altındadır ve TEMD 2022 bu dozda valvülopati bildirilmediğini vurgular. Bu nedenle rutin yıllık ekokardiyografi önerilmez. Ekokardiyografi (en az 2 yılda bir) üç durumda istenir: muayenede üfürüm duyulması, 5 yıldan uzun süre 3 mg/hafta üzerinde doz kullanılması ya da tedavinin 50 yaşından sonra sürdürülecek olması. Bu hastada hiçbiri yok. Buna karşılık dürtü kontrol bozukluğu (patolojik kumar, hiperseksüalite, kompulsif alışveriş) dozdan bağımsız görülebilir. Bu yüzden hasta ve yakını bilgilendirilmeli, hasta her kontrolde sorgulanmalıdır. Klinik inci: kalp kapağı riski doza bağlıdır, dürtü kontrol bozukluğu ise her dozda sorulmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Standart dozda valvülopati bildirilmediği için herkese yıllık ekokardiyografi gerekmez; kılavuz bunu açıkça reddeder.",
+        "B": "YANLIS — Kabergolin etkinlik ve tolerans açısından ilk seçenektir (intolerans oranı bromokriptinde çok daha yüksektir); endişe tek başına ilaç değişikliği gerekçesi değildir.",
+        "C": "DOGRU — Rutin ekokardiyografi gerekmez; üfürüm, uzun süreli yüksek doz ya da 50 yaş sonrası sürdürme durumunda en az 2 yılda bir yapılır. Dürtü kontrol bozukluğu her kontrolde sorgulanır.",
+        "D": "YANLIS — 6 ayda bir ekokardiyografi ve belirli bir yılda koşulsuz kesme önerisi yoktur; kesme kararı tedavi süresi, normoprolaktinemi ve tümör küçülmesine göre verilir.",
+        "E": "YANLIS — NT-proBNP kapak morfolojisini değerlendirmez; valvülopati izlemi gerektiğinde ekokardiyografiyle yapılır."
+      },
+      "etiketler": ["Prolaktinoma", "Kabergolin", "Valvülopati izlemi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    },
+    {
+      "id": "s2",
+      "metin": "29 yaşında erkek hasta, libido kaybı ve baş ağrısı nedeniyle incelenirken 18 mm makroprolaktinoma saptanmış; başlangıç prolaktini 950 ng/mL. Bromokriptin tedrici olarak artırılarak 4 aydır 15 mg/gün dozunda kullanılıyor ve ilacı iyi tolere ediyor. İlaç uyumu tam.\n\nKontrol tetkikleri:\n• Prolaktin: 180 ng/mL\n• Hipofiz MRG: tümör boyutunda yaklaşık %30 küçülme, optik kiazmaya bası yok\n• Görme alanı: normal\n\nBu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Kabergoline geçip dozu 4–6 haftalık prolaktin ölçümlerine göre tedricen artırmak",
+        "B": "Dopamin agonisti direnci geliştiği için vakit kaybetmeden transsfenoidal cerrahi planlamak",
+        "C": "Stereotaktik radyocerrahi uygulayıp bromokriptini aynı dozda sürdürmek",
+        "D": "Agresif prolaktinoma kabul edip temozolomid tedavisi başlamak",
+        "E": "Bromokriptin dozunu 30 mg/güne çıkarıp 3 ay daha aynı ilaçla izlemek"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "En az 3 ay bromokriptin 15 mg/gün ile prolaktinin normale gelmemesi dopamin agonisti direncidir. Bromokriptin direncinde kabergoline geçilip doz tedricen artırılınca olguların yaklaşık %80'inde normoprolaktinemi sağlanır.",
+      "aciklama_detay": "TEMD 2022, dopamin agonisti direncini en az 3 ay süreyle bromokriptin 15 mg/gün, kabergolin 3 mg/hafta ya da kinagolid 300 μg/gün dozuna rağmen prolaktinin normale gelmemesi olarak tanımlar. Direnç erkeklerde ve makroprolaktinomada daha sıktır; bu hasta tipik bir örnektir. İlk adım cerrahi değil, D2 reseptörüne daha yüksek afinitesi ve daha uzun yarı ömrü olan kabergoline geçmektir. Kabergolin 4–6 haftalık prolaktin ölçümlerine göre tedricen artırılır (nadiren 11 mg/haftaya kadar çıkılabilir). Bu yolla bromokriptine dirençli olguların yaklaşık %80'inde normoprolaktinemi sağlanır. Maksimum tolere edilen kabergolin dozuna rağmen direnç sürerse ya da intolerans gelişirse cerrahi gündeme gelir. Radyoterapi ve temozolomid ise tekrarlayan cerrahi ve medikal tedavilere yanıt vermeyen agresif olgular için saklanır. Klinik inci: tedavi sırasında YENİ gelişen (sekonder) direnç malign dönüşümü düşündürmelidir, bu hastadaki primer direnç ise öyle değildir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Bromokriptin direncinde ilk adım kabergoline geçip dozu tedricen artırmaktır; olguların yaklaşık %80'inde prolaktin normale gelir.",
+        "B": "YANLIS — Cerrahi, kabergolinin maksimum tolere edilen dozuna direnç ya da intolerans varlığında düşünülür; henüz kabergolin denenmemiştir. Bası bulgusu da yoktur.",
+        "C": "YANLIS — Radyoterapi medikal ve cerrahi tedaviye yanıtsız olgulara saklanır; ilk basamak medikal seçenekler tükenmemiştir.",
+        "D": "YANLIS — Temozolomid, dopamin agonisti, tekrarlı cerrahi ya da radyoterapiye rağmen ilerleyen agresif tümörlerde kullanılır; burada tümör küçülüyor.",
+        "E": "YANLIS — 15 mg/gün bromokriptine yanıtsızlık direnç tanımını karşılar; bromokriptin dozunu artırmak yerine daha etkili ajan olan kabergoline geçilir."
+      },
+      "etiketler": ["Prolaktinoma", "Dopamin agonisti direnci", "Kabergolin"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    },
+    {
+      "id": "s3",
+      "metin": "52 yaşında erkek hasta, 6 yıldır tip 2 diyabet nedeniyle metformin ve bazal insülin kullanıyor. Son 2 yılda ayakkabı numarasının büyüdüğünü, yüzük takamadığını söylüyor. Obstrüktif uyku apnesi ve iki taraflı karpal tünel sendromu tanıları var.\n\nTetkikler:\n• HbA1c: %9,1\n• IGF-1: yaş ve cinsiyete göre normalin üst sınırının 2,4 katı\n• Aynı örnekte eş zamanlı plazma glukozu: 248 mg/dL, GH: 3,8 μg/L\n• Karaciğer ve böbrek fonksiyonları normal\n\nBu hasta için en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Tanıyı kesinleştirmek için 75 g oral glukoz tolerans testiyle GH baskılanmasını değerlendirmek",
+        "B": "Günün farklı saatlerinde random GH ölçümlerini tekrarlayıp ortalamasına göre karar vermek",
+        "C": "Tanısal değeri daha yüksek olduğu için serum IGFBP-3 düzeyini ölçmek",
+        "D": "Kontrolsüz diyabet IGF-1'i yalancı yükselttiğinden, glisemi düzeldikten sonra IGF-1'i yinelemek",
+        "E": "Biyokimyasal tanı yeterli kabul edilip kontrastlı hipofiz MRG istemek"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Akromegalide tarama testi yaş ve cinsiyete göre yorumlanan IGF-1'dir. Diyabetli hastada OGTT uygun değildir; yüksek kan şekeriyle eş zamanlı baskılanmamış GH tanıda değerlidir. Klinik, yüksek IGF-1 ve hiperglisemiye rağmen baskılanmayan GH birlikte tanıyı destekler; sıradaki adım hipofiz MRG'dir.",
+      "aciklama_detay": "TEMD 2022'ye göre akromegali tanısında ilk basamak serum IGF-1'dir; random GH ölçümü tanıda anlamlı değildir, IGFBP-3 de tanısal değer taşımaz. Standart doğrulama testi OGTT'dir (GH'nin 0,4 μg/L altına inmesi akromegaliyi dışlar). Ancak kılavuz, diyabetli hastada OGTT'nin uygun olmadığını, yüksek kan şekeriyle eş zamanlı GH ölçümünün tanıda değerli olduğunu belirtir. Normal bir bireyde 248 mg/dL glukozla GH belirgin biçimde baskılanır. 3,8 μg/L gibi bir değer otonom GH salgısını gösterir. Tipik akral değişiklikler, uyku apnesi, karpal tünel sendromu ve diyabet birlikteliği ön test olasılığını zaten yükseltmektedir. Biyokimyasal tanı konduktan sonra kaynağı göstermek için hipofiz MRG istenir. Mekanizma notu: kontrolsüz diyabet ve portal insülin eksikliği hepatik GH direnci yaratır ve IGF-1'i DÜŞÜRÜR; yani bu hastadaki yükseklik gerçek olmakla kalmaz, gerçek düzeyin altında bile olabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Diyabetli hastada OGTT kılavuza göre uygun değildir; eş zamanlı hiperglisemi ve GH değeri aynı bilgiyi zaten vermektedir.",
+        "B": "YANLIS — Random GH pulsatil salgı nedeniyle akromegali tanısında anlamlı değildir.",
+        "C": "YANLIS — IGFBP-3 akromegalide yüksek olabilir ama tanısal değeri yoktur.",
+        "D": "YANLIS — Kontrolsüz diyabet hepatik GH direnciyle IGF-1'i düşürür, yükseltmez; yüksek IGF-1 bu koşulda da gerçektir.",
+        "E": "DOGRU — Klinik tablo, yüksek IGF-1 ve hiperglisemiye rağmen baskılanmayan GH tanıyı destekler; kaynağı göstermek için hipofiz MRG yapılır."
+      },
+      "etiketler": ["Akromegali", "Tanı", "Diyabet ve OGTT"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    },
+    {
+      "id": "s4",
+      "metin": "47 yaşında kadın hasta, GH salgılayan makroadenom nedeniyle 6 ay önce transsfenoidal cerrahi geçirmiş. Kavernöz sinüs içinde rezidü tümör kalmış ve postoperatif 3. ayda IGF-1 yüksek bulunduğu için 4 aydır 28 günde bir oktreotid LAR 20 mg kas içi uygulanıyor. Hasta bir sonraki kontrolünde yanıtın nasıl değerlendirileceğini soruyor.\n\nTEMD Hipofiz Kılavuzu 2022'ye göre somatostatin reseptör ligandı yanıtının değerlendirilmesi için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Enjeksiyondan 1 hafta sonra, ilacın doruk etkisinde IGF-1 ölçmek",
+        "B": "Bir sonraki enjeksiyondan hemen önce, aynı yöntem ve kitle GH ve IGF-1 ölçmek",
+        "C": "75 g OGTT yapıp GH'nin 0,4 μg/L altına baskılanıp baskılanmadığına bakmak",
+        "D": "Hormon ölçümü yapmadan yalnızca 1 yıl sonra MRG ile rezidü tümör boyutunu izlemek",
+        "E": "Yalnızca random GH ölçmek; IGF-1 SRL tedavisi altında güvenilir değildir"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "SRL etkinliği 3–6 aylık tedaviden sonra, bir sonraki enjeksiyondan hemen önce ölçülen GH ve IGF-1 ile değerlendirilir; tedavi sırasında OGTT ile GH baskılanması değerlendirilmez. Hedef GH < 1 μg/L ve IGF-1'in üst sınırın en fazla 1,2–1,3 katı olmasıdır.",
+      "aciklama_detay": "TEMD 2022'ye göre oktreotid LAR (başlangıç 20 mg/ay) ya da lanreotid Autogel (başlangıç 90 mg) ile tedavinin etkinliği 3–6 aylık tedaviden sonra değerlendirilir. GH ve IGF-1, bir sonraki enjeksiyondan hemen önce, yani ilacın en düşük düzeyinde ölçülür; böylece doz aralığının tamamında kontrol sağlanıp sağlanmadığı görülür. SRL tedavisi altında OGTT ile GH baskılanması değerlendirilmez; SRL ve antidiyabetikler testi etkiler. Tedavi hedefi GH'nin 1 μg/L altında, IGF-1'in ise yaş ve cinsiyete göre üst sınırın en fazla 1,2–1,3 katı olmasıdır. Kitler arası fark büyük olduğundan izlemde aynı yöntem ve kit kullanılmalıdır. Hedefe ulaşılamazsa doz artırılır ya da pasireotid, pegvisomant veya kombinasyona geçilir. Ek bilgi: MRG'de T2 ağırlıklı kesitlerde hipointens adenomlar SRL'ye daha iyi yanıt verir. SRL safra çamuru ve taşı yapabilir; belirti gelişirse abdominal USG yapılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Doruk etkide ölçüm, doz aralığının sonundaki kaçağı gizler; ölçüm bir sonraki enjeksiyondan hemen önce yapılır.",
+        "B": "DOGRU — Kılavuz, 3–6 aylık tedaviden sonra bir sonraki enjeksiyondan hemen önce GH ve IGF-1 ölçülmesini, izlemde aynı yöntem ve kitin kullanılmasını önerir.",
+        "C": "YANLIS — SRL tedavisi sırasında OGTT ile GH baskılanması değerlendirilmez; 0,4 μg/L eşiği tanı ve cerrahi remisyon içindir.",
+        "D": "YANLIS — Biyokimyasal kontrol mortaliteyi belirler; hormon izlemi yapılmadan yalnızca görüntülemeyle izlem yetersizdir.",
+        "E": "YANLIS — IGF-1 izlemin temel parametresidir; random GH tek başına yeterli değildir."
+      },
+      "etiketler": ["Akromegali", "Somatostatin reseptör ligandı", "Tedavi izlemi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    },
+    {
+      "id": "s5",
+      "metin": "58 yaşında erkek hasta, 4 yıl önce akromegali nedeniyle opere edilmiş; o zamandan beri GH ve IGF-1 normal. Tanı anında santral hipogonadizmi vardı, 3 yıldır testosteron replasmanı alıyor. Tip 2 diyabeti var. Son aylarda sırt ağrısı tarifliyor.\n\nKemik mineral yoğunluğu (DXA):\n• Lomber omurga (L1–L4) T skoru: −0,2\n• Femur boynu T skoru: −2,1\n• Raporda lomber bölgede belirgin osteofitler ve dejeneratif değişiklikler not edilmiş\n\nBu hastanın kemik değerlendirmesi için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Lomber T skoru normal olduğundan vertebra kırığı olasılığı düşüktür; ek değerlendirme gerekmez",
+        "B": "Biyokimyasal kür sağlandığından kırık riski genel popülasyon düzeyine inmiştir; 5 yıl sonra DXA yinelenir",
+        "C": "Femur boynu değeri teknik hatadır; izlem en güvenilir bölge olan lomber omurga ile sürdürülür",
+        "D": "Kalça ve ön kol KMY ölçülmeli, vertebralar morfometrik olarak incelenmelidir",
+        "E": "Kırık riskini artırdığı için testosteron replasmanı kesilmeli, DXA 1 yıl sonra yinelenmelidir"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Akromegalide omurgadaki dejeneratif değişiklikler ve osteofitler lomber KMY'yi yalancı yüksek gösterir. Kalça ve ön kol KMY ölçülmeli, vertebralar ayrıca radyolojik olarak incelenmelidir; hastaların üçte birinde KMY düşüklüğü olmadan radyolojik vertebra kırığı vardır.",
+      "aciklama_detay": "TEMD 2022'nin hipofiz ve kemik bölümüne göre akromegalide lomber DXA yanıltıcıdır. Akromegalik artropati, osteofitler ve dejeneratif değişiklikler lomber KMY'yi olduğundan yüksek gösterir. Bu nedenle kalça ve ön kol KMY ölçülür, vertebralar ayrıca radyolojik (morfometrik) olarak incelenir. Akromegalide kemik kalitesi bozulmuştur; hastaların yaklaşık üçte birinde KMY düşüklüğü olmadan radyolojik vertebra kırığı saptanır. Kür sağlanan hastada da önceki kırık, hipogonadizm, diyabet ya da azalan femur boynu KMY'si kırık riskini artırmaya devam eder. Bu hastada üç risk faktörü birden var (hipogonadizm öyküsü, diyabet, düşük femur boynu KMY'si) ve sırt ağrısı tarifliyor; morfometrik vertebra değerlendirmesi şarttır. İyileşmeden sonra da izlem özellikle femur DXA ile sürer. Klinik inci: akromegalide 'normal lomber DXA' güven verici değildir, kırık riskini femur ve vertebra morfometrisi gösterir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Lomber KMY osteofitler nedeniyle yalancı yüksektir; KMY normal görünse de vertebra kırığı sıktır.",
+        "B": "YANLIS — Kür sonrasında da hipogonadizm, diyabet ve femur boynu KMY düşüklüğü kırık riskini artırmaya devam eder.",
+        "C": "YANLIS — Tersine, akromegalide güvenilmez olan lomber ölçümdür; femur boynu izlemi tercih edilir.",
+        "D": "DOGRU — Kılavuz akromegalide kalça ve ön kol KMY ölçümünü ve vertebraların radyolojik incelemesini önerir.",
+        "E": "YANLIS — Hipogonadizm kırık riskini artırır; uygun testosteron replasmanı kemiği korur, kesilmesi riski artırır."
+      },
+      "etiketler": ["Akromegali", "Osteoporoz", "Vertebra kırığı"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    },
+    {
+      "id": "s6",
+      "metin": "38 yaşında kadın hasta, yoğun bakım hemşiresi ve 8 yıldır dönüşümlü gece vardiyasında çalışıyor. Son bir yılda 11 kg aldığını, kolay morardığını ve merdiven çıkarken uyluklarının yorulduğunu söylüyor. Yeni tanı hipertansiyonu var. IgA nefropatisine bağlı kronik böbrek hastalığı nedeniyle izleniyor. Oral kontraseptif, antiepileptik ya da başka enzim indükleyici ilaç kullanmıyor; sigara içmiyor.\n\nTetkikler:\n• eGFR: 42 mL/dk/1,73 m²\n• Plazma glukozu (açlık): 118 mg/dL\n\nCushing sendromu taraması için bu hastada ilk tercih edilmesi gereken test hangisidir?",
+      "secenekler": {
+        "A": "Gece 1 mg deksametazon sonrası sabah serum kortizolü",
+        "B": "Üç ayrı gün, yatmadan hemen önce alınan gece tükürük kortizolü",
+        "C": "Böbrek işlevinden etkilenmediği için en az iki kez 24 saatlik idrar serbest kortizolü",
+        "D": "Sabah 08:00'de tek bir serum kortizolü ölçülmesi",
+        "E": "Sabah plazma ACTH düzeyi ölçülmesi"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Vardiyalı çalışanda sirkadiyen ritim bozuk olduğundan gece tükürük kortizolü uygun değildir. GFR 60 mL/dk altında 24 saatlik idrar serbest kortizolü yalancı negatif çıkabilir. Enzim indükleyici ya da östrojen kullanmayan bu hastada en güvenilir tarama 1 mg gece deksametazon baskılama testidir.",
+      "aciklama_detay": "TEMD 2022, Cushing sendromu taramasında üç testin tuzaklarını ayrıntılı verir. (1) Gece tükürük kortizolü duyarlı ve özgüldür, CBG'den etkilenmez; ancak sirkadiyen ritmi bozuk olan vardiyalı çalışanlarda uygun değildir, ağız içi yara ve tütün de sonucu bozar. (2) 24 saatlik idrar serbest kortizolü CBG'den etkilenmez ama GFR 60 mL/dk altında yalancı negatif çıkabilir; beş litreyi aşan idrar ya da egzersiz sonrası toplama ise yalancı pozitifliği artırır. (3) 1 mg gece DST'de sabah kortizolünün 1,8 μg/dL altında olması Cushing sendromunu kuvvetle dışlar. Enzim indükleyiciler (fenitoin, karbamazepin, rifampin, barbitürat), CBG'yi artıran östrojen ve gebelik, deksametazon emilimini bozan çölyak ya da kronik diyare yanlış pozitiflik yapar. Bu hastada bunların hiçbiri yoktur; bu nedenle en uygun ilk test 1 mg DST'dir. Tek sabah kortizolü ve ACTH tarama testi değildir. ACTH, hiperkortizolizm kanıtlandıktan sonra ACTH bağımlılığını ayırmak için kullanılır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Vardiya ve böbrek yetmezliği diğer iki tarama testini bozarken DST'yi yanıltacak ilaç ya da durum yoktur; 1,8 μg/dL altı değer dışlar.",
+        "B": "YANLIS — Vardiyalı çalışanlarda gece tükürük kortizolü uygun değildir; kortizol ritmi kaymıştır.",
+        "C": "YANLIS — GFR 60 mL/dk altında idrar serbest kortizolü yalancı negatif çıkabilir; bu hastada eGFR 42.",
+        "D": "YANLIS — Tek sabah kortizolü Cushing sendromu için tarama testi değildir; sabah kortizolü normal ya da hafif yüksek olabilir.",
+        "E": "YANLIS — ACTH hiperkortizolizm kanıtlandıktan sonra ACTH bağımlılığını ayırmak için istenir; tarama testi değildir."
+      },
+      "etiketler": ["Cushing sendromu", "Tarama testleri", "Test tuzakları"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    },
+    {
+      "id": "s7",
+      "metin": "34 yaşında kadın hasta, Cushing hastalığı nedeniyle deneyimli bir merkezde 5 mm mikroadenomu transsfenoidal yolla çıkarılıyor. Patoloji ACTH pozitif kortikotrop adenom olarak raporlanıyor. Perioperatif dönemde glukokortikoid verilmiyor, hasta klinik olarak stabil; hipotansiyon, bulantı ya da hiponatremi yok.\n\nPostoperatif sabah serum kortizolü:\n• 3. gün: 6,8 μg/dL\n• 7. gün: 4,1 μg/dL\n\nBeyin cerrahı remisyon ölçütü karşılanmadığı için erken reoperasyon planlıyor. Bu aşamada en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Kortizol ilk haftada 2 μg/dL altına inmediği için kalıcı hastalık kesindir; bu hafta reoperasyon yapılmalıdır",
+        "B": "Hiperkortizolizmi hızla gidermek için vakit kaybetmeden bilateral adrenalektomi uygulanmalıdır",
+        "C": "Hemen reoperasyon yapılmaz; kortizol geç düşebileceğinden seri kortizol ve klinikle izlenir",
+        "D": "Kortizol 5 μg/dL altına indiği için remisyon sağlanmıştır; ömür boyu fizyolojik hidrokortizon başlanmalıdır",
+        "E": "Rezidü tümör olasılığı nedeniyle postoperatif 2. haftada hipofiz radyoterapisi başlanmalıdır"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "En çok kabul gören remisyon ölçütü cerrahiden sonraki ilk haftada kortizolün 2 μg/dL altına inmesidir. Ancak kortizol geç de düşebilir (rezidü adenomda geç nekroz, adrenal hiperplazinin gerilemesi); bunu bilmek gereksiz erken reoperasyonu önler.",
+      "aciklama_detay": "TEMD 2022, Cushing hastalığında cerrahi remisyonun en çok kabul gören ölçütünü ilk hafta içinde serum kortizolünün 2 μg/dL (55 nmol/L) altına inmesi olarak verir. Bu ölçütle deneyimli merkezlerde remisyon mikroadenomda yaklaşık %80, makroadenomda %60'tır. Kılavuz, kortizolün geç de düşebileceğini ayrıca vurgular. Uzun süreli ACTH uyarısıyla hiperplazik hale gelmiş adrenal bezin gerilemesi ya da rezidü adenom dokusunda geç nekroz buna yol açar. Bu hastada kortizol düşme eğiliminde, hasta stabil ve patoloji adenomu doğruluyor. Bu yüzden ilk haftada eşik karşılanmadı diye hemen reoperasyon yapmak gereksiz bir ikinci girişim riskidir. Doğru yaklaşım; seri sabah kortizolü, klinik ve gerekirse gece tükürük kortizolüyle izlemek, adrenal yetmezlik belirtisinde hidrokortizon başlamak ve hastayı stres dozu konusunda eğitmektir. Kalıcı hastalık haftalar içinde netleşirse reoperasyon, radyoterapi, medikal tedavi ya da bilateral adrenalektomi seçenekleri tartışılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İlk hafta ölçütü karşılanmasa da kortizol geç düşebilir; erken reoperasyon gereksiz olabilir.",
+        "B": "YANLIS — Bilateral adrenalektomi kalıcı adrenal yetmezlik ve Nelson sendromu riski taşıyan son basamak seçenektir; kalıcı hastalık henüz kanıtlanmamıştır.",
+        "C": "DOGRU — Kılavuz geç kortizol düşüşünü tanımlar ve bunun bilinmesinin gereksiz erken reoperasyonu önlediğini vurgular.",
+        "D": "YANLIS — Remisyon ölçütü 2 μg/dL altıdır; 4,1 μg/dL remisyonu kanıtlamaz ve ömür boyu replasman kararı için erkendir.",
+        "E": "YANLIS — Radyoterapi kalıcı ya da nükseden hastalıkta düşünülür; kalıcılık henüz belli değildir."
+      },
+      "etiketler": ["Cushing hastalığı", "Cerrahi remisyon", "Postoperatif kortizol"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    },
+    {
+      "id": "s8",
+      "metin": "55 yaşında erkek hasta, iki transsfenoidal cerrahiye rağmen süren Cushing hastalığı ve kötü kontrollü tip 2 diyabet nedeniyle izleniyor. Hipofiz radyoterapisi planlanmış; etkisi beklenirken hiperkortizolizme bağlı hiperglisemiyi kontrol etmek için mifepriston başlanıyor.\n\nBaşlangıç tetkikleri:\n• 24 saatlik idrar serbest kortizolü: normalin 3,5 katı\n• HbA1c: %9,4\n• Potasyum: 3,9 mEq/L\n\nBu hastada mifepriston tedavisinin izlemi için en doğru ifade hangisidir?",
+      "secenekler": {
+        "A": "Aylık 24 saatlik idrar serbest kortizolü ile izlenir; değer normale inince doz sabitlenir",
+        "B": "Gece tükürük kortizolü normale indiğinde tedavi yanıtı kabul edilir",
+        "C": "Sabah serum kortizolü 5 μg/dL altına inerse adrenal yetmezlik tanısı konup doz azaltılır",
+        "D": "Yanıt plazma ACTH'nin baskılanmasıyla gösterilir; ACTH düşmezse doz artırılır",
+        "E": "Kortizol yanıtı göstermez; izlem glisemi, kan basıncı, kilo ve potasyumla yapılır"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Medikal tedavi izleminde idrar serbest kortizolü tercih edilir; istisna mifepristondur. Glukokortikoid reseptör antagonisti olduğundan kortizolü düşürmez (hatta artırır). Bu nedenle yanıtı ya da adrenal yetmezliği gösterecek bir kortizol düzeyi yoktur, izlem klinik ve metabolik parametrelerle yapılır.",
+      "aciklama_detay": "TEMD 2022'ye göre Cushing hastalığında medikal tedavinin izleminde 24 saatlik idrar serbest kortizolü tercih edilir. Adrenal yetmezliği yakalamada ise sabah kortizolü daha değerlidir. Kılavuzun açıkça belirttiği istisna mifepristondur. Mifepriston glukokortikoid reseptörünü bloke eder; kortizol sentezini azaltmaz. Hipotalamo-hipofizer geri bildirim de engellendiği için ACTH ve kortizol çoğu kez yükselir. Bu nedenle ne tedavi yanıtını ne de aşırı blokajı (klinik adrenal yetmezlik) gösterecek bir kortizol eşiği vardır. İzlem klinik yanıta dayanır: glisemi ve HbA1c, kan basıncı, kilo, Cushing bulgularının gerilemesi, yorgunluk, bulantı ya da hipotansiyon gibi yetmezlik belirtileri. Yükselen kortizol böbrekte 11β-HSD2'nin kapasitesini aşıp mineralokortikoid reseptörünü uyarır. Bu yüzden hipokalemi ve hipertansiyon gelişebilir, potasyum yakından izlenmeli, gerekirse spironolakton eklenmelidir. Kadında endometrial kalınlaşma da izlenmesi gereken bir yan etkidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İdrar serbest kortizolü diğer ilaçlarda izlem ölçütüdür; mifepristonla kortizol düşmez, yanıtı göstermez.",
+        "B": "YANLIS — Mifepriston kortizolü azaltmadığından tükürük kortizolü de yanıtı yansıtmaz.",
+        "C": "YANLIS — Mifepristonla kortizol yüksek kalabilirken hasta klinik adrenal yetmezliğe girebilir; kortizol eşiği yetmezliği göstermez.",
+        "D": "YANLIS — Reseptör blokajı geri bildirimi kaldırdığı için ACTH düşmez, genellikle yükselir.",
+        "E": "DOGRU — Mifepristonda kortizol yanıtı ya da yetmezliği göstermez; izlem klinik ve metabolik parametrelerle yapılır, mineralokortikoid etkiye bağlı hipokalemi izlenir."
+      },
+      "etiketler": ["Cushing hastalığı", "Mifepriston", "Medikal tedavi izlemi"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    },
+    {
+      "id": "s9",
+      "metin": "41 yaşında kadın hasta, 8 ay önce çarpıntı, kilo kaybı ve sıcak intoleransı nedeniyle başka bir merkezde Graves hastalığı tanısı almış ve metimazol başlanmış. Metimazol dozu artırılmasına rağmen yakınmaları sürüyor ve son aylarda baş ağrısı eklenmiş.\n\nTetkikler:\n• Serbest T4: 3,1 ng/dL (0,8–1,8); serbest T3: 7,4 pg/mL (2,3–4,2)\n• TSH: 3,2 mIU/L (0,4–4,0)\n• TSH reseptör antikoru: negatif; oftalmopati ve dermopati yok\n• SHBG: yüksek; α-subünit/TSH molar oranı: yüksek\n• Hipofiz MRG: 14 mm makroadenom, kiazmaya bası yok\n\nBu hasta için en uygun yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tirotoksikozu kalıcı olarak kontrol etmek için radyoaktif iyot ablasyonu uygulamak",
+        "B": "Transsfenoidal cerrahi; cerrahi öncesi ötiroidizmi somatostatin analoğuyla sağlamak",
+        "C": "Total tiroidektomi yapıp ardından levotiroksin replasmanı başlamak",
+        "D": "Metimazol dozunu artırıp tedaviyi uzun süre sürdürmek, hipofiz adenomunu yıllık MRG ile izlemek",
+        "E": "Metimazole levotiroksin ekleyerek blok-replasman tedavisine geçmek"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Yüksek serbest hormonlara karşın TSH'nin baskılanmaması, yüksek SHBG ve α-subünit/TSH oranı ile makroadenom TSHoma'yı gösterir. Antitiroid ilaç önerilmez, çünkü uzun süreli kullanım hipofiz tümörünü büyütebilir; tedavi transsfenoidal cerrahidir.",
+      "aciklama_detay": "TEMD 2022'ye göre TSHomaların yaklaşık %30'u, baskılanmamış TSH değeri gözden kaçırıldığı için yanlışlıkla Graves hastalığı tanısı alır. Bu hastalara gereksiz tiroidektomi ya da radyoaktif iyot uygulanır. Graves'e özgü oftalmopati ve dermopati TSHoma'da yoktur, TSH reseptör antikoru negatiftir. Periferik tiroid hormonu etkisini gösteren SHBG genellikle yüksektir; normal SHBG ise tiroid hormonu direnci ya da TSH ölçüm interferansını düşündürür. Tiroide yönelik ablatif tedaviler hipofiz tümörü üzerindeki negatif geri bildirimi daha da azaltarak tümörü büyütebilir. Antitiroid ilaçlar da aynı nedenle uzun süreli kullanılmaz; kılavuz yalnızca cerrahi öncesinde ötiroidizm sağlanamayan olguda kısa süreli kullanıma izin verir. İlk tedavi transsfenoidal cerrahidir; cerrahi öncesi ötiroidizm çoğunlukla somatostatin analoğuyla (gerekirse beta blokerle) sağlanır. Cerrahi sonrası 7. günde TSH'nin ölçülemeyecek kadar düşük olması başarıyı öngörür. Tanıda ayrıca her hastada DXA ve morfometrik vertebra değerlendirmesi önerilir; santral hipertiroidizm vertebra kırığı riskini artırır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Radyoaktif iyot TSHoma'nın kaynağını tedavi etmez; negatif geri bildirimi azaltarak tümör büyümesine katkıda bulunabilir.",
+        "B": "DOGRU — TSHoma'da uzun süreli antitiroid ilaç önerilmez; tedavi transsfenoidal cerrahidir, cerrahi öncesi ötiroidizm somatostatin analoğuyla sağlanır.",
+        "C": "YANLIS — Tiroidektomi tümörü tedavi etmez ve TSHoma'nın yanlışlıkla Graves sanılmasının tipik gereksiz sonucudur.",
+        "D": "YANLIS — Uzun süreli antitiroid tedavi hipofiz tümörünü büyütebilir; kılavuz önermez.",
+        "E": "YANLIS — Blok-replasman tedavisi yine uzun süreli antitiroid ilaç içerir ve altta yatan adenomu tedavi etmez."
+      },
+      "etiketler": ["TSHoma", "Santral hipertiroidizm", "Graves ayırıcı tanısı"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    },
+    {
+      "id": "s10",
+      "metin": "24 yaşında erkek hasta, baş ağrısı ve libido azalması nedeniyle incelenirken 22 mm makroprolaktinoma saptanıyor; prolaktin 1450 ng/mL. Kabergolin başlanıyor. Öyküsünde 20 yaşında geçirdiği sol böbrek taşı var. Babası 45 yaşında 'mide ülseri ve böbrek taşı' nedeniyle izlenirken ölmüş, ayrıntılı bilgi yok.\n\nBu hastanın değerlendirmesinde bir sonraki en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "Plazma serbest metanefrinlerini ölçmek",
+        "B": "Serum kalsitonini ve boyun USG ile medüller tiroid kanserini araştırmak",
+        "C": "Tümörün dopamin agonistine direncini öngörmek için 3 ay sonra MRG ile yanıta bakmak",
+        "D": "Serum kalsiyumu ve PTH ile primer hiperparatiroidiyi araştırmak",
+        "E": "Pankreatik nöroendokrin tümör için doğrudan tüm vücut 68Ga-DOTATATE PET/BT çekmek"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Prolaktinoma MEN1'in ilk bulgusu olabilir. MEN1'in en sık ve çoğu kez ilk bileşeni primer hiperparatiroididir (40 yaşından önce %80–100). Genç makroprolaktinomada hiperkalsemi mutlaka araştırılır; kılavuz algoritması tüm hipofiz adenomlarında hiperparatiroidinin araştırılmasını ister.",
+      "aciklama_detay": "TEMD 2022'nin ailesel hipofiz adenomları bölümüne göre MEN1'de primer hiperparatiroidi hastaların %80–100'ünde 40 yaşından önce ortaya çıkar ve genellikle ilk bulgudur. Hipofiz adenomu hastaların %35–40'ında görülür; prolaktinoma (%15–20) ilk bulgu olabilir. MEN1'deki hipofiz adenomları daha büyük ve daha agresif seyretme eğilimindedir. Bu hastada genç yaş, makroadenom, böbrek taşı öyküsü ve olası Zollinger-Ellison ile hiperparatiroidiyi düşündüren aile öyküsü MEN1 olasılığını yükseltir. İlk ve en verimli adım serum kalsiyumu ve PTH ile primer hiperparatiroidiyi aramaktır. Hiperparatiroidi doğrulanırsa MEN1 genetik testi ve diğer bileşenlere (gastrinoma dahil pankreatik NET, timik ve bronşiyal karsinoid, adrenal) yönelik biyokimyasal ve görüntüleme taraması yapılır. MEN1 taşıyıcılarında tarama 5 yaşında başlar: yıllık prolaktin ve IGF-1, 3 yılda bir hipofiz MRG. Genç makroadenomlu hastada AIP mutasyonu da ayrıca akla gelmelidir, ancak bu hastada klinik ipuçları öncelikle MEN1'i gösteriyor.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Feokromositoma MEN2'nin bileşenidir; MEN2'de hipofiz adenomu beklenmez.",
+        "B": "YANLIS — Medüller tiroid kanseri MEN2'nin bileşenidir; hipofiz adenomu ve böbrek taşı birlikteliği MEN1'i düşündürür.",
+        "C": "YANLIS — Tedavi yanıtının izlenmesi gerekir ama sendromik tanıyı atlatır; genç makroprolaktinomada ilk adım hiperkalsemiyi araştırmaktır.",
+        "D": "DOGRU — MEN1'in en sık ve çoğu kez ilk bileşeni primer hiperparatiroididir; kılavuz genç makroprolaktinomada kalsiyumun mutlaka araştırılmasını ister.",
+        "E": "YANLIS — Pankreatik NET taraması MEN1 olasılığı biyokimyasal ya da genetik olarak desteklendikten sonra planlanır; ilk adım değildir."
+      },
+      "etiketler": ["MEN1", "Makroprolaktinoma", "Primer hiperparatiroidi"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    },
+    {
+      "id": "s11",
+      "metin": "19 yaşında erkek hasta, son 3 yılda 14 cm uzadığı ve el-ayaklarının büyüdüğü için başvuruyor. Boyu 197 cm. Hipofiz MRG'de sağ kavernöz sinüse invaze 28 mm makroadenom saptanıyor. Transsfenoidal cerrahiden sonra rezidü tümör kalıyor. Altı aydır oktreotid LAR 30 mg/ay kullanıyor; IGF-1 tedavi öncesi normalin 2,9 katıyken şimdi 2,8 katı. Babasının kuzeninin gençlik çağında hipofiz adenomu nedeniyle ameliyat olduğu öğreniliyor. Kalsiyum, PTH ve prolaktin normal.\n\nBu hasta için en doğru ifade hangisidir?",
+      "secenekler": {
+        "A": "AIP mutasyonu olasıdır; pasireotide yanıt daha iyidir ve aile taraması gerekir",
+        "B": "MEN1 en olası tanıdır; taşıyıcı akrabalarda hipofiz taraması ancak 30 yaşından sonra başlatılır",
+        "C": "X-LAG sendromudur; GPR101 duplikasyonuna bağlı bu tabloda ilk tercih dopamin agonistidir",
+        "D": "Carney kompleksidir; bu sendromda en sık endokrinopati akromegalidir ve adenom her olguda görüntülenir",
+        "E": "AIP ilişkili adenomlarda SRL yanıtsızlığı nadirdir; oktreotid LAR dozu 60 mg/aya çıkarılmalıdır"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Genç yaş, erkek cinsiyet, büyük ve invaziv adenom, birinci kuşak SRL'ye direnç ve ailede hipofiz adenomu AIP mutasyonunu düşündürür. AIP pozitif somatotropinomalarda pasireotid yanıtı daha iyi bildirilmiştir; aile bireylerinde genetik test ve taşıyıcı taraması gerekir.",
+      "aciklama_detay": "TEMD 2022'ye göre AIP mutasyonu taşıyan hastalar daha genç (çoğu 30 yaş altı), çoğunlukla erkektir ve adenomları daha büyüktür. Akromegalide birinci kuşak somatostatin analoglarına (oktreotid, lanreotid) genellikle direnç vardır; pasireotid ile yanıt daha iyi bildirilmiştir. AIP pozitif prolaktinomaların yarısında dopamin agonisti direnci görülebilir, apopleksi riski de yüksektir (%8). AIP testi FIPA ölçütü taşıyanlara, 18 yaşından önce hipofiz adenomu tanısı alanlara ve 30 yaşından önce makroadenom saptananlara önerilir; bu hasta FIPA ve 30 yaş altında makroadenom ölçütlerini karşılıyor (tanı 19 yaşında konmuş olsa da büyüme hızlanması 16 yaşında, epifizler kapanmadan başlamıştır). Mutasyon saptanırsa taşıyıcı akrabalarda tarama 10 yaşından önce başlar: yıllık GH, IGF-1 ve prolaktin, 5 yılda bir hipofiz MRG. X-LAG erken çocuklukta (3 yaşa kadar) başlayan jigantizmdir. Carney kompleksinde en sık endokrinopati PPNAD'a bağlı ACTH bağımsız Cushing sendromudur. Olguların yaklaşık %75'inde GH aksı bozuk olsa da klinik akromegali yalnızca %10'unda görülür.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Klinik profil AIP mutasyonuyla uyumludur; birinci kuşak SRL direnci tipiktir, pasireotid daha etkilidir ve aile taraması gerekir.",
+        "B": "YANLIS — Kalsiyum ve PTH normal, genç ve SRL'ye dirençli izole somatotropinoma AIP'yi düşündürür. MEN1 taşıyıcılarında tarama 5 yaşında başlar.",
+        "C": "YANLIS — X-LAG yaşamın ilk yıllarında (3 yaşa kadar) başlayan jigantizmdir; 16 yaşında başlayan hızlı büyüme bu tabloya uymaz.",
+        "D": "YANLIS — Carney kompleksinde en sık endokrinopati PPNAD'dır; klinik akromegali olguların yaklaşık %10'unda görülür, gerçek adenom azınlıkta görüntülenir.",
+        "E": "YANLIS — AIP ilişkili somatotropinomalarda birinci kuşak SRL direnci sıktır; önerilen doz aralığının üstüne çıkmak yerine pasireotid ya da pegvisomanta geçilir."
+      },
+      "etiketler": ["Ailesel hipofiz adenomu", "AIP mutasyonu", "Akromegali"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    },
+    {
+      "id": "s12",
+      "metin": "63 yaşında erkek hasta, 2 aydır günde 6 litreye varan idrar, susama ve halsizlik yakınmasıyla başvuruyor. Fizik muayenede her iki submandibular bezde sert, ağrısız büyüme saptanıyor.\n\nTetkikler:\n• Sabah kortizolü: 4,2 μg/dL; serbest T4 düşük, TSH normal\n• Susuzluk ve desmopressin testleri santral diabetes insipidus ile uyumlu\n• Hipofiz MRG: kalınlaşmış hipofiz sapı, homojen kontrast tutan simetrik bez büyümesi, nörohipofiz parlak noktası yok\n• Serum IgG4: 110 mg/dL (normal < 140)\n\nHidrokortizon ve ardından levotiroksin ile desmopressin başlanıyor. Tanı için bir sonraki en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "Serum IgG4 normal olduğundan IgG4 ilişkili hastalık dışlanır; hipofiz biyopsisi ile diğer nedenler araştırılır",
+        "B": "Kitle etkisini gidermek için transsfenoidal rezeksiyon yapılır",
+        "C": "Hipofiz ve sap tutulumu için fraksiyone radyoterapi planlanır",
+        "D": "Doku tanısı beklenmeden ampirik rituksimab başlanır",
+        "E": "Submandibular bez biyopsisi yapılır; tanı doğrulanırsa glukokortikoid başlanır"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Hastaların bir bölümünde (%15–30) tipik histolojiye rağmen serum IgG4 normaldir; normal düzey IgG4 hipofizitini dışlamaz. Hipofiz dışındaki tutulan organın biyopsisi, görüntüleme bulgularıyla birlikte tanı koydurur; böylece hipofiz biyopsisinden kaçınılabilir.",
+      "aciklama_detay": "TEMD 2022'ye göre IgG4 ilişkili hipofizitte serum IgG4 > 140 mg/dL ve tutulan dokudan biyopsi tanıyı kesinleştirir. Ancak olguların yaklaşık %15–25'inde (sistemik hastalık bölümünde %30'a varan oranda) serum IgG4 normal çıkar; bu, hipofize sınırlı ya da atipik olgularda daha sıktır. Tanı ölçütleri şöyledir: hipofiz biyopsisinde yüksek büyütme alanında 10'dan fazla IgG4 pozitif hücre (tek başına yeterli, ölçüt 1); sellar kitle ya da sap kalınlaşması (ölçüt 2); başka bir organ tutulumunun biyopsiyle kanıtı (ölçüt 3); serum IgG4 yüksekliği (ölçüt 4); glukokortikoide yanıt (ölçüt 5). Ölçüt 1 tek başına, ölçüt 2+3 ya da 2+4+5 birlikte tanı koydurur. Bu hastada MRG bulgusu (ölçüt 2) vardır. Submandibular bez tutulumu, invaziv hipofiz biyopsisi yerine kolay ulaşılan bir dokudan ölçüt 3'ü karşılama fırsatı sunar. Tedavinin temeli glukokortikoiddir; nüks ya da steroide direnç durumunda rituksimab önerilir. Hormon eksiklikleri sıklıkla kalıcıdır ve replasman sürer.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Normal serum IgG4 IgG4 hipofizitini dışlamaz; ulaşılabilir başka bir tutulum varken invaziv hipofiz biyopsisi ilk adım değildir.",
+        "B": "YANLIS — İnflamatuvar hipofizitte görme kaybı gibi kitle bulgusu yokken cerrahi endike değildir; ilk basamak tedavi glukokortikoiddir.",
+        "C": "YANLIS — Radyoterapinin IgG4 hipofizitinde yeri yoktur.",
+        "D": "YANLIS — Rituksimab nüks ya da steroide direnç durumunda kullanılır; tanı doğrulanmadan ve glukokortikoid denenmeden başlanmaz.",
+        "E": "DOGRU — Başka organ tutulumunun biyopsiyle kanıtı ve MRG bulgusu birlikte tanı koydurur (ölçüt 2+3); doğrulanınca glukokortikoid başlanır."
+      },
+      "etiketler": ["Hipofizit", "IgG4 ilişkili hastalık", "Diabetes insipidus"],
+      "zorluk": "zor",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    },
+    {
+      "id": "s13",
+      "metin": "58 yaşında erkek hasta, 18 saat önce başlayan ani ve çok şiddetli baş ağrısı, kusma ve görme kaybıyla acile getiriliyor. Daha önce bilinen bir hipofiz hastalığı yok. Bilinci açık, koopere. Kan basıncı 104/62 mmHg.\n\nBulgular:\n• Görme keskinliği: sağda 1/10, solda parmak sayma (başvurudan bu yana giderek kötüleşiyor)\n• Görme alanı: bitemporal defekt, son saatlerde genişliyor\n• Beyin BT: subaraknoid kanama yok\n• Hipofiz MRG: optik kiazmayı yukarı iten 26 mm hemorajik makroadenom\n• Na: 131 mEq/L; glukoz: 74 mg/dL\n\nKortizol için kan alındıktan hemen sonra 100 mg hidrokortizon IV bolus verilip infüzyona geçiliyor. Bu aşamada en uygun sonraki adım hangisidir?",
+      "secenekler": {
+        "A": "Konservatif izlem; görme muayenesini 4–6. haftada, hipofiz MRG'yi 3. ayda tekrarlamak",
+        "B": "Hemorajik adenomu küçültmek için kabergolin başlamak",
+        "C": "Tümör hacmini azaltmak için acil fraksiyone radyoterapi planlamak",
+        "D": "Glukokortikoid sürerken erken transsfenoidal dekompresyon yapmak",
+        "E": "Hidrokortizonu kesip adrenal aksı değerlendirmek için 250 μg ACTH testi yapmak"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Hipofiz apopleksisinde ağır görme keskinliği kaybı, kalıcı ya da kötüleşen görme alanı defekti veya bilinç bozukluğu varsa erken transsfenoidal cerrahi düşünülür. Bazı çalışmalarda ilk 8 gün içindeki cerrahi görme sonuçlarında daha fazla yarar sağlamıştır.",
+      "aciklama_detay": "TEMD 2022'ye göre hipofiz apopleksisinde ilk ve hayat kurtarıcı adım, kortizol için kan alınır alınmaz sonuç beklenmeden parenteral yüksek doz glukokortikoid başlamaktır (100–200 mg hidrokortizon IV bolus, ardından 2–4 mg/saat infüzyon ya da 6 saatte bir 50–100 mg IM). Bu hastada bu adım atılmıştır. Medikal ya da cerrahi tedavi seçimi tartışmalı olsa da kılavuz ciddi görme keskinliği kaybı, kalıcı ya da kötüleşen görme alanı defekti veya bilinç bozukluğunda erken transsfenoidal cerrahiyi önerir. Bazı çalışmalarda ilk 8 gün içinde yapılan cerrahi, görme keskinliği ve görme alanında daha fazla yarar sağlamıştır. Bu hastada iki gözde ağır ve ilerleyen görme kaybı vardır; konservatif izlem kalıcı görme kaybı riski taşır. Bilinci açık, görme bulgusu minimal ya da düzelen hafif olgular multidisipliner değerlendirmeyle konservatif izlenebilir. Göz ve görme alanı muayenesi mümkün olan en erken zamanda yapılır; hipofiz fonksiyonları 4–6. haftada yeniden değerlendirilir. Klinik inci: olguların yaklaşık %80'inde apopleksiden önce adenomun varlığı bilinmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Konservatif izlem görme bulgusu minimal ya da düzelen hafif olgular içindir; ağır ve ilerleyen görme kaybında erken cerrahi düşünülür.",
+        "B": "YANLIS — Kabergolin prolaktinomada etkilidir; hemorajik makroadenomun akut kiazma basısını gidermez. Dopamin agonistleri apopleksiyi tetikleyen durumlar arasında da sayılır.",
+        "C": "YANLIS — Radyoterapinin etkisi aylar içinde ortaya çıkar; akut optik bası tedavisinde yeri yoktur.",
+        "D": "DOGRU — Ağır ve kötüleşen görme kaybı erken transsfenoidal cerrahi endikasyonudur; glukokortikoid perioperatif dönemde sürdürülür.",
+        "E": "YANLIS — Akut dönemde hidrokortizon kesilmez; ACTH testi yeni gelişen eksiklikte adrenal henüz atrofiye olmadığı için yalancı normal çıkabilir."
+      },
+      "etiketler": ["Hipofiz apopleksisi", "Cerrahi endikasyon", "Görme kaybı"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    },
+    {
+      "id": "s14",
+      "metin": "29 yaşında kadın hasta, ilk gebeliğinin 33. haftasında son 3 haftadır giderek artan susama ve günde yaklaşık 6 litre idrar yapma yakınmasıyla başvuruyor. Gebelik öncesinde benzer yakınması olmamış. Baş ağrısı ya da görme yakınması yok, kan basıncı normal.\n\nTetkikler:\n• Serum Na: 146 mEq/L; serum osmolalitesi: 298 mOsm/kg\n• İdrar osmolalitesi: 110 mOsm/kg\n• Plazma glukozu, kalsiyum, potasyum ve kreatinin normal\n• Karaciğer enzimleri normal\n\nBu tablonun mekanizması ve yönetimi için en doğru ifade hangisidir?",
+      "secenekler": {
+        "A": "Tanıyı kesinleştirmek için gebelikte de susuzluk testi yapılmalı, tedavi test sonucuna göre planlanmalıdır",
+        "B": "Plasental vazopressinaz AVP'yi yıkar; yıkıma dirençli desmopressin güvenle kullanılır",
+        "C": "Nefrojenik diabetes insipidustur; tiyazid diüretik ve tuz kısıtlaması başlanmalıdır",
+        "D": "Plasental enzim yıkımını aşmak için vazopressin (AVP) infüzyonu desmopressinden daha etkilidir",
+        "E": "Gebeliğe bağlı primer polidipsidir; sıvı alımı kısıtlanarak izlenmelidir"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Gestasyonel diabetes insipidusta plasental sistein aminopeptidaz (vazopressinaz) AVP'yi yıkar, artan GFR de vazopressin klirensini artırır. Desmopressin bu enzime dirençlidir ve gebelik ile lohusalıkta kullanılabilir. Tablo doğumdan sonraki 2–3 haftada geçer, ancak altta yatan patoloji için ileri tetkik yapılmalıdır.",
+      "aciklama_detay": "TEMD 2022'ye göre gebelikte diabetes insipidus yılda yüz bin gebelikte 2–6 sıklıkla görülür. Plasentanın ürettiği sistein aminopeptidaz AVP'yi yıkar; artan glomerüler filtrasyon da vazopressin klirensini artırır. Böylece altta yatan hafif AVP eksikliği ortaya çıkar. Enzim aktivitesi üçüncü trimesterde en yüksek düzeydedir ve karaciğer yağlanması ya da preeklampside (azalmış hepatik yıkım) daha da artabilir. Hipotonik poliüri ile birlikte serum sodyumunun ve osmolalitenin yüksek olması primer polidipsiden çok DI'yı gösterir; gebelikte normal serum osmolalitesi zaten yaklaşık 10 mOsm/kg daha düşüktür. Gebelikte susuzluk testi dehidratasyon riski nedeniyle önerilmez. Desmopressin, N-terminal değişikliği sayesinde vazopressinaza dirençlidir ve gebelik ile lohusalıkta güvenle kullanılabilir. Doğal AVP ise hızla yıkıldığı için etkisizdir. Yeterince tedavi edilmeyen DI gebelikte oligohidramniyos, preeklampsi ve hepatik disfonksiyona yol açabilir. Gestasyonel DI doğumdan sonraki 2–3 hafta içinde kendiliğinden geçer. Yine de altta yatan hafif santral DI ya da hipotalamo-hipofizer patoloji için doğum sonrası değerlendirme ve gerektiğinde MRG yapılır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Gebelikte susuzluk testi dehidratasyon riski nedeniyle uygun değildir; klinik ve laboratuvar tablo tedaviye başlamak için yeterlidir.",
+        "B": "DOGRU — Vazopressinaz AVP'yi yıkar, desmopressin yıkıma dirençlidir; tablo doğumdan sonra geçer ama altta yatan neden araştırılır.",
+        "C": "YANLIS — Gestasyonel DI plasental AVP yıkımına bağlıdır, böbrek direnci değildir; tiyazid ve tuz kısıtlaması gebelikte uygun değildir.",
+        "D": "YANLIS — Doğal AVP vazopressinaz tarafından hızla yıkılır; tercih edilen ajan desmopressindir.",
+        "E": "YANLIS — Primer polidipside serum sodyumu ve osmolalitesi düşük ya da düşük-normaldir; Na 146 mEq/L su eksikliğini gösterir, sıvı kısıtlaması tehlikelidir."
+      },
+      "etiketler": ["Diabetes insipidus", "Gebelik", "Desmopressin"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    },
+    {
+      "id": "s15",
+      "metin": "71 yaşında kadın hasta, küçük hücreli akciğer kanseri tanısıyla izlenirken son 2 gündür artan bulantı ve konfüzyon nedeniyle getiriliyor. Acil serviste jeneralize tonik-klonik nöbet geçiriyor. Klinik olarak övolemik; ödem ya da dehidratasyon bulgusu yok. Diüretik kullanmıyor.\n\nTetkikler:\n• Serum Na: 114 mEq/L\n• Serum osmolalitesi: 238 mOsm/kg\n• İdrar osmolalitesi: 520 mOsm/kg; idrar Na: 62 mEq/L\n• Glukoz, TSH ve sabah kortizolü normal\n\nBu hastada ilk saat için en uygun tedavi hangisidir?",
+      "secenekler": {
+        "A": "Günlük sıvı alımını 800 mL ile kısıtlayıp sodyumu 6 saatte bir izlemek",
+        "B": "Oral tolvaptan 15 mg başlayıp sıvı kısıtlaması yapmamak",
+        "C": "20 dakikada 150 mL %3 NaCl; sodyum 5 mEq/L artana kadar yinelemek",
+        "D": "2 litre %0,9 NaCl'yi 2 saatte hızla infüze etmek",
+        "E": "%3 NaCl infüzyonuyla sodyumu ilk 24 saatte 135 mEq/L'ye yükseltmek"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Ciddi semptomlu hiponatremide akut-kronik ayrımı yapmadan ilk saatte 20 dakikada 150 mL %3 NaCl verilir. Kan alınıp sonuç beklenmeden ikinci doz başlanır ve sodyum 5 mEq/L artana kadar yinelenir. Sonrasında sodyum 130 mEq/L olana dek artış 24 saatte 8 mEq/L'yi geçmemelidir.",
+      "aciklama_detay": "Bu tablo malignite ilişkili uygunsuz ADH sendromuna uyuyor: hipotonik hiponatremi, uygunsuz yoğun idrar, idrar Na > 40 mEq/L, övolemi, normal tiroid ve adrenal işlev, diüretik yok. Nöbet ciddi semptom olduğundan tedavinin önceliği etiyoloji değil, beyin ödemini hızla gidermektir. TEMD 2022'ye göre ciddi semptomlu hiponatremide akut ya da kronik ayrımı yapılmadan ilk saatte 20 dakikada 150 mL %3 NaCl verilir. Sodyum için kan alınır ve sonuç beklenmeden ikinci 150 mL başlanır; sodyum 5 mEq/L artana kadar yinelenir (%3 NaCl 513 mEq/L sodyum içerir). Semptomlar düzelirse %3 NaCl kesilir ve damar yolu %0,9 NaCl ile açık tutulur. Sodyum 130 mEq/L olana dek artış 24 saatte 8 mEq/L'yi geçmemelidir. Amaç normal sodyum değil, güvenli sodyumdur. Hızlı düzeltme 2–6 gün sonra spastik kuadriparezi ve psödobulber palsi ile giden ozmotik demiyelinizasyona yol açabilir. Sıvı kısıtlaması, üre ve vaptanlar kronik SIADH yönetiminin araçlarıdır, ciddi semptomlu akut tabloda yeri yoktur. İdrar osmolalitesi yüksek SIADH'de izotonik salin sodyumu düzeltmez, hatta suyu tutulup tuzu atıldığı için düşürebilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sıvı kısıtlaması sodyumu günler içinde yükseltir; nöbet geçiren hastada acil hipertonik salin gerekir.",
+        "B": "YANLIS — Tolvaptanın etkisi öngörülemez ve yavaştır; ciddi semptomlu hiponatremide ilk tedavi değildir, aşırı düzeltme riski de taşır.",
+        "C": "DOGRU — Kılavuz ciddi semptomlu hiponatremide 20 dakikada 150 mL %3 NaCl bolus ve sodyum 5 mEq/L artana kadar yinelenmesini önerir.",
+        "D": "YANLIS — Yüksek idrar osmolalitesi olan SIADH'de izotonik salin sodyumu düzeltmez, tuz atılıp su tutulduğu için hiponatremiyi derinleştirebilir.",
+        "E": "YANLIS — Sodyumu 24 saatte 21 mEq/L yükseltmek ozmotik demiyelinizasyon riski taşır; ilk 24 saatte artış 8 mEq/L'yi geçmemelidir."
+      },
+      "etiketler": ["Uygunsuz ADH sendromu", "Semptomatik hiponatremi", "Hipertonik salin"],
+      "zorluk": "orta",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022"
+    }
+  ]
+}
