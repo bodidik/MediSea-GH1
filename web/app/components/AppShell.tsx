@@ -88,10 +88,11 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <p className="text-sm leading-relaxed max-w-sm mb-6 font-medium">
                 Tıp profesyonelleri ve asistan hekimler için güncel, kanıta dayalı ve pratik iç hastalıkları klinik rehberi. Nöbetlerde ve YDUS sürecinde en güçlü silahınız.
               </p>
-              {/* Yalnızca tarayıcı kurulum sunabildiğinde çizilir (Android). */}
+              {/* Dokunmatik cihazda ya da tarayıcı kurulum sunduğunda çizilir. */}
               <AnaEkranaEkle
                 etiket="MediSea'yı ana ekrana ekle"
                 className="rounded-xl border-2 border-blue-700 px-4 py-3 text-sm font-black text-white hover:bg-blue-900"
+                tarifClassName="mt-3 max-w-sm text-sm font-semibold leading-relaxed text-white"
               />
               {/* Sosyal medya ikonları (𝕏, in) kaldırıldı: <span> olarak
                   duruyorlardı — imleç "pointer", üzerine gelince hareket

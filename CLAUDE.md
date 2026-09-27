@@ -389,9 +389,13 @@ Site manifesti `app/manifest.ts`; her araç layout'u kendi manifestini bağlar
 simge ana sayfaya değil O araca açılır, `id`/`scope` aracın yolu. Simgeler
 `/ikon/{192,512,maskable-512}.png`, işaret tek kopya `lib/marka-isareti.tsx`
 (apple-icon da oradan; çıktı eskisiyle aynı 3850 bayt). Service worker YOK,
-bilerek. Düğme (`AnaEkranaEkle`) yalnız `beforeinstallprompt` gelince çizilir;
-olay kök layout'taki satır içi betikle yakalanır ve yakalandığı andaki
-manifestle eşleşmezse gizlenir (site→araç istemci gezinmesi). **Ölçüm notu:**
+bilerek. Düğme (`AnaEkranaEkle`): `beforeinstallprompt` varsa kurar, yoksa
+DOKUNMATİK cihazda tarayıcıya göre menü yolunu tarif eder (`ana-ekran.dil.json`:
+android · samsung · ios · diger); masaüstünde olaysız çizilmez, standalone'da
+hiç. **Yalnız olaya bağlıyken telefonda düğme BULUNAMADI** — Chrome olayı ancak
+dokunma + ~30 sn sonra atıyor, iOS/Firefox hiç atmıyor. Olay kök layout'taki
+satır içi betikle yakalanır; yakalandığı andaki manifestle eşleşmezse tarife
+düşülür (site→araç istemci gezinmesi). **Ölçüm notu:**
 istemci gezinmesinden sonra gövdede eski manifest bağı KALIYOR; tarayıcı ilkini
 alır ve ilk olan her yönde `<head>`deki doğru bağ (ölçüldü). Panel olayı hiç
 atmaz — düğmeyi sahte `beforeinstallprompt` ile sür; gerçek Android'de

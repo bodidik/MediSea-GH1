@@ -1,0 +1,16 @@
+{
+  "tr": {
+    "android": "Tarayıcının sağ üstündeki ⋮ menüsünü aç ve “Ana ekrana ekle” ya da “Uygulamayı yükle” seçeneğine dokun.",
+    "samsung": "Alttaki ≡ menüsünü aç, “Sayfayı ekle” seçeneğine dokun ve “Ana ekran”ı seç.",
+    "ios": "Safari'de alttaki Paylaş düğmesine (yukarı oklu kare) dokun ve “Ana Ekrana Ekle”yi seç.",
+    "diger": "Tarayıcı menüsünden “Ana ekrana ekle” seçeneğini kullan.",
+    "kapat": "Kapat"
+  },
+  "en": {
+    "android": "Open the ⋮ menu at the top right of the browser and tap “Add to Home screen” or “Install app”.",
+    "samsung": "Open the ≡ menu at the bottom, tap “Add page to” and choose “Home screen”.",
+    "ios": "In Safari, tap the Share button (a square with an up arrow) and choose “Add to Home Screen”.",
+    "diger": "Use “Add to Home screen” in the browser menu.",
+    "kapat": "Close"
+  }
+}

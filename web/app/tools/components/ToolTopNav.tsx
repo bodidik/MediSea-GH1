@@ -119,11 +119,13 @@ export default function ToolTopNav({ toolSlug }: { toolSlug: string }) {
       {/* Yalnızca öteki dilde karşılığı olan araçta çizilir (bkz. lib/dil.ts). */}
       <DilDegistir className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-blue-900 hover:border-blue-900/30 transition-all shadow-sm" />
 
-      {/* Yalnızca tarayıcı kurulum sunabildiğinde çizilir; kurulan simge
-          ana sayfaya değil BU araca açılır (araç başına manifest). */}
+      {/* Dokunmatik cihazda ya da tarayıcı kurulum sunduğunda çizilir;
+          kurulan simge ana sayfaya değil BU araca açılır (araç başına
+          manifest). Tarif paragrafı `basis-full` ile alt satıra iner. */}
       <AnaEkranaEkle
         etiket={t.anaEkran}
         className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-blue-900 hover:border-blue-900/30 transition-all shadow-sm"
+        tarifClassName="basis-full rounded-xl border border-blue-200 bg-blue-50 px-3.5 py-2.5 text-sm font-semibold normal-case tracking-normal leading-relaxed text-blue-950"
       />
       </nav>
 
