@@ -201,18 +201,11 @@ function SoruKarti({
           <p style={{ fontSize: '15px', lineHeight: 1.75, color: '#1a2a3a', fontWeight: 500, whiteSpace: 'pre-line' }}>
             {kalinIsle(soru.metin)}
           </p>
-          {soru.etiketler && soru.etiketler.length > 0 && (
-            <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap', marginTop: '.65rem' }}>
-              {soru.etiketler.map((t, i) => (
-                <span key={i} style={{
-                  fontSize: '10px', padding: '2px 7px', borderRadius: '4px',
-                  background: '#e6f0fb', color: '#1a3a6b', border: '0.5px solid #b8cfe8',
-                }}>
-                  {t}
-                </span>
-              ))}
-            </div>
-          )}
+          {/* ETİKETLER BURADA BASILMAZ — cevabı ele veriyorlardı. Etiket
+              içerikte sorunun ÇÖZÜMÜNÜ adlandırıyor ("Total Tiroidektomi",
+              "Ektopik ACTH"); cevaptan önce görünen etiketin sözcüğü doğru
+              şıkta geçip hiçbir çeldiricide geçmeyen soru 1072'nin 697'siydi
+              (66 set). Etiket öğrenme işareti olarak açıklama kartında. */}
         </div>
 
         {/* SEÇENEKLER */}
@@ -392,6 +385,19 @@ function SoruKarti({
                 <div style={{ marginTop: '.85rem', fontSize: '12px', color: '#4a6a8a', borderTop: '0.5px solid #e8f0f8', paddingTop: '.65rem' }}>
                   Kaynak: {soru.kaynak}
                 </div>
+              )}
+
+              {soru.etiketler && soru.etiketler.length > 0 && (
+                <ul aria-label="Sorunun anahtar kavramları" style={{ display: 'flex', gap: '5px', flexWrap: 'wrap', marginTop: '.85rem', listStyle: 'none', padding: 0 }}>
+                  {soru.etiketler.map((t, i) => (
+                    <li key={i} style={{
+                      fontSize: '12px', padding: '2px 8px', borderRadius: '4px',
+                      background: '#e6f0fb', color: '#1a3a6b', border: '0.5px solid #b8cfe8',
+                    }}>
+                      {t}
+                    </li>
+                  ))}
+                </ul>
               )}
             </div>
 
