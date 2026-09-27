@@ -350,7 +350,7 @@
       "id": "p-temd-ht-050",
       "level": "Kılavuz",
       "title": "Yaşam tarzının kazandırdığı milimetreler: tuz, diyet, egzersiz, kilo",
-      "content": "Tuz kısıtlaması sistolik kan basıncında yaklaşık 5 mmHg, diyastolikte 6 mmHg azalma sağlar. Sağlıklı beslenme, yani DASH uygulaması, hipertansif bireylerde sistolik basınçta 11 mmHg azalma sağlayabilmektedir. Düzenli egzersiz uygulayanlarda sistolikte 5 mmHg, diyastolikte 8 mmHg azalma olur; önerilen, haftada en az 3 gün maksimum kalp hızının %65-75'ini sağlayacak 90-150 dakika yürüme, koşma ya da yüzmedir. Kilolu erişkinlerde her 1 kg azalma sistolik basınçta 5 mmHg azalmaya yol açar. Kılavuz, non-farmakolojik tedavinin yerini tutacak farmakolojik bir tedavi olmadığını ve her aşamada sürdürülmesi gerektiğini vurgular. (TEMD Hipertansiyon 2022, Bölüm 6, s. 93)",
+      "content": "Tuz kısıtlaması sistolik kan basıncında yaklaşık 5 mmHg, diyastolikte 6 mmHg azalma sağlar. Sağlıklı beslenme, yani DASH uygulaması, hipertansif bireylerde sistolik basınçta 11 mmHg azalma sağlayabilmektedir. Düzenli egzersiz uygulayanlarda sistolikte 5 mmHg, diyastolikte 8 mmHg azalma olur; önerilen, haftada en az 3 gün maksimum kalp hızının %65-75'ini sağlayacak 90-150 dakika yürüme, koşma ya da yüzmedir. Kilolu erişkinlerde her 1 kg azalma sistolik basınçta yaklaşık 1 mmHg azalmaya yol açar (kılavuz metninde 5 mmHg yazılıdır; meta-analizlerdeki etki ≈1 mmHg/kg). Kılavuz, non-farmakolojik tedavinin yerini tutacak farmakolojik bir tedavi olmadığını ve her aşamada sürdürülmesi gerektiğini vurgular. (TEMD Hipertansiyon 2022, Bölüm 6, s. 93)",
       "trigger": "Yaşam Tarzı Değişikliği"
     },
     {
@@ -434,7 +434,7 @@
       "id": "p-temd-ht-062",
       "level": "Kılavuz",
       "title": "Gebelikte ciddi hipertansiyon 150/95, düşürme kademeli olmalı",
-      "content": "Gebelikte hipertansiyon tanısı için sistolik kan basıncı ≥140 mmHg, diyastolik ≥90 mmHg veya her ikisi birden yeterlidir; sistolik ≥150 mmHg, diyastolik ≥95 mmHg ise ciddi hipertansiyon sayılır. Etyoloji ne olursa olsun ciddi maternal hipertansiyon varlığında derhal farmakolojik tedavi başlanmalıdır. Genel prensip kan basıncını ciddi yüksek aralıktan hafif yüksek aralığa kademeli düşürmektir; böylece ani hipotansiyondan ve uterin arterlerde akımın azalmasından kaçınılmış olur. Akut düşürmede intravenöz labetalol, intravenöz hidralazin veya oral nifedipin kullanılır; bir meta-analizde bu ilaçların birinin diğerine üstünlüğü gösterilmemiştir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 119)",
+      "content": "Gebelikte hipertansiyon tanısı için sistolik kan basıncı ≥140 mmHg, diyastolik ≥90 mmHg veya her ikisi birden yeterlidir; sistolik ≥150 mmHg, diyastolik ≥95 mmHg ise ciddi hipertansiyon sayılır (ESC ve ACOG'da ciddi hipertansiyon ≥160/110 mmHg'dir; 150/95 ESC'de gebelikte tedavi başlama eşiğidir). Etyoloji ne olursa olsun ciddi maternal hipertansiyon varlığında derhal farmakolojik tedavi başlanmalıdır. Genel prensip kan basıncını ciddi yüksek aralıktan hafif yüksek aralığa kademeli düşürmektir; böylece ani hipotansiyondan ve uterin arterlerde akımın azalmasından kaçınılmış olur. Akut düşürmede intravenöz labetalol, intravenöz hidralazin veya oral nifedipin kullanılır; bir meta-analizde bu ilaçların birinin diğerine üstünlüğü gösterilmemiştir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 119)",
       "trigger": "Gebelikte Hipertansiyon"
     },
     {
@@ -532,7 +532,7 @@
       "id": "p-temd-ht-076",
       "level": "Kılavuz",
       "title": "Tromboliz öncesi 185/110, sonrası 24 saat 185/105",
-      "content": "Trombolitik tedavi için uygun olan akut iskemik inmeli hastada, tedavi uygulanmadan önce antihipertansif tedavi ile sistolik kan basıncı 185 mmHg ve altına, diyastolik kan basıncı 110 mmHg ve altına indirilmelidir. Trombolitik tedaviden sonra en az 24 saat boyunca kan basıncı 185/105 mmHg ve altında tutulmalıdır. Trombolitik tedavi planlanan hastalarda kan basıncını düşürmek için intravenöz nitrogliserin tercih edilmelidir. Bu hastalarda esmolol, furosemid ve kaptopril de seçilebilir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 153)",
+      "content": "Trombolitik tedavi için uygun olan akut iskemik inmeli hastada, tedavi uygulanmadan önce antihipertansif tedavi ile sistolik kan basıncı 185 mmHg ve altına, diyastolik kan basıncı 110 mmHg ve altına indirilmelidir. Trombolitik tedaviden sonra en az 24 saat boyunca kan basıncı 185/105 mmHg ve altında tutulmalıdır (AHA/ASA 2019: ≤180/105 mmHg). Trombolitik tedavi planlanan hastalarda kan basıncını düşürmek için intravenöz nitrogliserin tercih edilmelidir. Bu hastalarda esmolol, furosemid ve kaptopril de seçilebilir. (TEMD Hipertansiyon 2022, Bölüm 7, s. 153)",
       "trigger": "Akut İskemik İnmede Hipertansiyon"
     },
     {
@@ -616,7 +616,7 @@
       "id": "p-temd-ht-088",
       "level": "Kılavuz",
       "title": "Feokromositoma krizinde fentolamin, eklampside hidralazin",
-      "content": "Fenoldopam kan basıncını düşürürken renal kan akımını koruduğu için renal yetersizlikte tercih edilir; başlangıç dozu 0,1 mcg/kg/dk olup 15 dakikada bir artırılarak 1,6 mcg/kg/dk'ya dek çıkılabilir, intrakraniyal basınç artışında ve glokomu olanlarda kullanımından kaçınılmalıdır. Fentolamin nonspesifik alfa adrenerjik bloker olup her 10-15 dakikada bir 5-15 mg intravenöz bolus şeklinde kullanılır ve feokromositoma krizi, kokain alımı ile indüklenen hipertansiyon gibi artmış katekolamin aktivitesi bulunan durumlarda kullanılmalıdır. Hidralazinin hipotansif etkisi öngörülemez olup spesifik olarak eklampsi ve preeklampsi durumlarında kullanımı önerilmektedir. Enalaprilat yüksek plazma renin aktiviteli hipovolemik hastalarda tercih edilmelidir. Kılavuzun tablosunda eklampsi ve ağır preeklampsi ile HELLP sendromunda acil olarak sistolik kan basıncı 160 mmHg altı ve diyastolik 105 mmHg üzeri yazılmış, tedavi olarak labetalol ya da nikardipin ve magnezyum sülfat verilmiştir. (TEMD Hipertansiyon 2022, Bölüm 8, s. 180)",
+      "content": "Fenoldopam kan basıncını düşürürken renal kan akımını koruduğu için renal yetersizlikte tercih edilir; başlangıç dozu 0,1 mcg/kg/dk olup 15 dakikada bir artırılarak 1,6 mcg/kg/dk'ya dek çıkılabilir, intrakraniyal basınç artışında ve glokomu olanlarda kullanımından kaçınılmalıdır. Fentolamin nonspesifik alfa adrenerjik bloker olup her 10-15 dakikada bir 5-15 mg intravenöz bolus şeklinde kullanılır ve feokromositoma krizi, kokain alımı ile indüklenen hipertansiyon gibi artmış katekolamin aktivitesi bulunan durumlarda kullanılmalıdır. Hidralazinin hipotansif etkisi öngörülemez olup spesifik olarak eklampsi ve preeklampsi durumlarında kullanımı önerilmektedir. Enalaprilat yüksek plazma renin aktiviteli hipovolemik hastalarda tercih edilmelidir. Kılavuzun tablosunda eklampsi ve ağır preeklampsi ile HELLP sendromunda acil olarak sistolik kan basıncı 160 mmHg altı ve diyastolik 105 mmHg altı hedeflenmiş (tabloda yazım hatasıyla “105 mmHg üzeri” geçer), tedavi olarak labetalol ya da nikardipin ve magnezyum sülfat verilmiştir. (TEMD Hipertansiyon 2022, Bölüm 8, s. 180)",
       "trigger": "Hipertansif Acilde Ajan Seçimi"
     },
     {

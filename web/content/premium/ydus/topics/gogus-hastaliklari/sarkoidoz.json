@@ -48,7 +48,7 @@
         },
         {
           "renk": "kirmizi",
-          "hucreler": ["HLA-DRB1*15 (yokluğu)", "Kötü prognoz", "Löfgren'de kronik artrit, nüks ve persistan seyir göstergesi"]
+          "hucreler": ["HLA-DRB1*15 (varlığı) · DRB1*03 negatifliği", "Kötü prognoz", "Kronik, nükseden ve persistan seyir göstergesi; Löfgren'de DRB1*03 negatifliği spontan remisyon şansını düşürür (Grunewald)"]
         },
         {
           "hucreler": ["Antijenik Hedefler", "mKatG, Vimentin, NDPD peptid", "mKatG: mikobakteriyel; NDPD: A. nidulans kökenli, Löfgren'de CD4+ T hücrelerini uyarır"]
@@ -185,7 +185,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Pratik Özet — Sarkoidoz 5 Altın Spot: (1) Löfgren EN'den biyopsi alma — septal panikülit, granülom içermez. (2) HLA-DRB1*15 yokluğu = Löfgren'de kötü prognoz. (3) sT4↓ + TSH hafif↑ değil, bu AML — burada: sIL-2R > ACE tanıda. (4) Hiperkalsemide PTH↓ + 1,25(OH)₂D↑ = otonom makrofaj 1-alfa-hidroksilaz. (5) Anti-TNF lazımsa infliksimab — etanercept sarkoidozda ETKİSİZ."
+      "metin": "Pratik Özet — Sarkoidoz 5 Altın Spot: (1) Löfgren EN'den biyopsi alma — septal panikülit, granülom içermez. (2) Löfgren'de HLA-DRB1*03 pozitifliği = spontan remisyon; DRB1*03 negatifliği ve özellikle DRB1*15 varlığı = kronik seyir. (3) Biyobelirteçte sIL-2R > ACE — tanıda ve aktivite izleminde daha duyarlı. (4) Hiperkalsemide PTH↓ + 1,25(OH)₂D↑ = otonom makrofaj 1-alfa-hidroksilaz. (5) Anti-TNF lazımsa infliksimab — etanercept sarkoidozda ETKİSİZ."
     }
   ]
 }

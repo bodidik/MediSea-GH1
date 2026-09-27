@@ -187,8 +187,8 @@
         },
         {
           "hucreler": [
-            "Gecikmiş (24-72 saat)",
-            "GRACE 109-140 veya TIMI ≥3 · diabetes mellitus veya KBY (eGFR <60) · erken post-infarktüs anjinası veya geçirilmiş PCI/CABG öyküsü"
+            "Seçici invaziv (hastane yatışında)",
+            "Çok yüksek/yüksek risk ölçütü yok (ESC 2023 ayrı bir 24-72 saatlik “gecikmiş” kategori tanımlamaz) · diabetes mellitus veya KBY (eGFR <60), erken post-infarktüs anjinası veya geçirilmiş PCI/CABG öyküsü invaziv anjiyografi kararını destekler"
           ]
         },
         {
@@ -205,10 +205,10 @@
       "baslik": "STEMI Reperfüzyon Zaman Pencereleri ve Farmako-invaziv Strateji",
       "satirlar": [
         {
-          "metin": "**Primer PCI (PPCI):** semptom başlangıcından itibaren **<12 saat** içinde başvuran STEMI olgularında ana reperfüzyon seçeneğidir. İlk tıbbi temas — tel geçişi (FMC-to-wire) hedef süresi PCI merkezinde **<60-90 dakika**, transfer olgularında **<120 dakika** olmalıdır."
+          "metin": "**Primer PCI (PPCI):** semptom başlangıcından itibaren **<12 saat** içinde başvuran STEMI olgularında ana reperfüzyon seçeneğidir. STEMI tanısından tel geçişine hedef süre primer PCI merkezine doğrudan başvuruda **≤60 dakika**, transfer olgularında **≤90 dakikadır** (ESC 2023)."
         },
         {
-          "metin": "**Fibrinolitik tedavi:** PCI yapılmayan merkezde FMC-to-PCI gecikmesi **>120 dakikayı** aşacaksa, kontrendikasyonu olmayan ve semptom süresi <12 saat olan hastalara uygulanır. İlk tıbbi temas — iğne (FMC-to-needle) hedef süresi **<30 dakikadır**."
+          "metin": "**Fibrinolitik tedavi:** PCI yapılmayan merkezde STEMI tanısından PCI'ye beklenen gecikme **>120 dakikayı** aşacaksa, kontrendikasyonu olmayan ve semptom süresi <12 saat olan hastalara uygulanır. STEMI tanısından fibrinolitik bolusuna hedef süre **≤10 dakikadır** (ESC 2023)."
         },
         {
           "metin": "**Farmako-invaziv PCI:** fibrinoliz sonrası başarılı ST gerilemesi sağlanmış olsa dahi hasta **2-24 saat içinde** rutin koroner anjiyografiye alınmalıdır. Fibrinoliz başarısız olursa derhal **kurtarıcı (rescue) PCI** uygulanır."
@@ -218,14 +218,14 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
-      "metin": "Sınav ayrımı: 90 dakika PCI MERKEZİNDE hedef süredir; 120 dakika ise TRANSFER kararının eşiğidir. \"Beklenen FMC-to-PCI gecikmesi >120 dk\" ise hasta transfer edilmez, yerinde fibrinolize (<30 dk) alınır ve ardından 2-24 saat içinde anjiyografi için sevk edilir."
+      "metin": "Klinik ayrım: 60 dakika PCI MERKEZİNE doğrudan başvuruda, 90 dakika TRANSFER olgusunda tanı→tel hedef süresidir; 120 dakika ise fibrinoliz seçme eşiğidir. \"Tanıdan PCI'ye beklenen gecikme >120 dk\" ise hasta primer PCI için beklenmez, yerinde fibrinolize (tanıdan ≤10 dk) alınır ve ardından 2-24 saat içinde anjiyografi için sevk edilir."
     },
     {
       "tip": "metin",
       "baslik": "Antitrombotik ve Parenteral Antikoagülasyon Yönetimi",
       "satirlar": [
         {
-          "metin": "**Aspirin:** AKS şüphesi olan tüm hastalara kontrendikasyon yoksa derhal **162-325 mg çiğnetilerek** yüklenir, **75-100 mg/gün** idame ile sürdürülür."
+          "metin": "**Aspirin:** AKS şüphesi olan tüm hastalara kontrendikasyon yoksa derhal **150-300 mg oral** (çiğnetilerek) yüklenir (ESC 2023), **75-100 mg/gün** idame ile sürdürülür."
         },
         {
           "metin": "**Prasugrel** (60 mg yükleme, 10 mg/gün): koroner anatomisi görülen ve PCI planlanan hastalar ile STEMI olgularında tercih edilir; **geçirilmiş inme/GİA öyküsünde KONTRENDİKEDİR**. **Tikagrelor** (180 mg yükleme, 2×90 mg/gün): geri dönüşümlü P2Y12 antagonistidir, medikal ya da invaziv izlenen tüm AKS spektrumunda ilk seçenekler arasındadır. **Klopidogrel** (300-600 mg yükleme, 75 mg/gün): güçlü ajanlar kontrendike/tolere edilemezse veya fibrinoliz uygulanan STEMI'de kullanılır."

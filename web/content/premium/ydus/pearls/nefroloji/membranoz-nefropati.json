@@ -77,7 +77,7 @@
       "id": "p-nef-mn-011",
       "level": "Klinik",
       "title": "KDIGO 2021 Risk Stratifikasyonu ve Bekle-Gör Stratejisi",
-      "content": "<p>Spontan remisyon oranı %30 civarında olduğundan, düşük-orta riskli hastalarda immünsüpresyon öncesi 3-6 ay boyunca RAS blokajı ve destek tedavi ile izlem önerilir. KDIGO sınıflamasında persistent proteinüri &gt;8 g/gün, eGFR &lt;60 mL/dk, serum albümin &lt;2.5 g/dL veya anti-PLA2R antikor titresinin &gt;150 RU/mL olması Yüksek Risk kriteridir ve doğrudan immünsüpresif tedavi gerektirir.</p>",
+      "content": "<p>Spontan remisyon oranı %30 civarında olduğundan, düşük-orta riskli hastalarda immünsüpresyon öncesi 3-6 ay boyunca RAS blokajı ve destek tedavi ile izlem önerilir. KDIGO 2021 sınıflamasında eGFR &lt;60 mL/dk ve/veya 6 aydan uzun süren &gt;8 g/gün proteinüri ya da normal eGFR'de 6 aylık destek tedavisine rağmen %50'den fazla azalmayan &gt;3.5 g/gün proteinüriye eşlik eden serum albümin &lt;2.5 g/dL, anti-PLA2R &gt;50 RU/mL veya artmış düşük molekül ağırlıklı proteinüri bulgularından en az biri Yüksek Risk kriteridir ve immünsüpresif tedavi gerektirir.</p>",
       "trigger": "Risk Sınıflaması"
     },
     {

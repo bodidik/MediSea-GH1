@@ -147,7 +147,7 @@
           "renk": "sari",
           "hucreler": [
             "Nefrolitiyazis ★",
-            "%20-30'unda görülür. İdrar stazı + düşük idrar sitratı nedeniyle EN SIK ÜRİK ASİT taşları (genel popülasyondan farklı!), ikinci sıklıkta kalsiyum oksalat"
+            "%20-30'unda görülür. İdrar stazı + düşük idrar sitratı nedeniyle en sık iki tip ÜRİK ASİT ve kalsiyum oksalat taşlarıdır; ürik asit taşı oranı genel popülasyona göre belirgin yüksektir"
           ]
         },
         {
@@ -351,7 +351,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Pratik Özet — ADPKD 8 Altın Kural: (1) PKD1 (%78-85, ağır, SDBY~55-58y) vs PKD2 (%10-15, hafif, SDBY~70ler). (2) Kistogenez: Ca2+↓→cAMP↑→PKA/ERK proliferasyon + CFTR sıvı sekresyonu + mTOR hiperaktivasyonu. (3) HT genellikle GFR normalken, 30'lu yaşlarda başlar — RAAS aracılı. (4) ADPKD'de en sık taş tipi ÜRİK ASİT'tir (genel popülasyondan farklı!). (5) PLD kadınlarda östrojenle hızlanır, KCFT genelde normal kalır. (6) Aile öyküsünde İKA/SAK varsa MRA taraması endike (%25 risk). (7) Tolvaptan (V2R antagonisti) hızlı progresörlerde (MIC 1C-1E) endike; hepatotoksisite riski nedeniyle ilk 18 ay aylık transaminaz takibi şart. (8) Somatostatin analogları TKV/TLV'yi durdurur ama eGFR'yi korumaz — rutin önerilmez."
+      "metin": "Pratik Özet — ADPKD 8 Altın Kural: (1) PKD1 (%78-85, ağır, SDBY~55-58y) vs PKD2 (%10-15, hafif, SDBY~70ler). (2) Kistogenez: Ca2+↓→cAMP↑→PKA/ERK proliferasyon + CFTR sıvı sekresyonu + mTOR hiperaktivasyonu. (3) HT genellikle GFR normalken, 30'lu yaşlarda başlar — RAAS aracılı. (4) ADPKD'de en sık iki taş tipi ÜRİK ASİT ve kalsiyum oksalattır; ürik asit oranı genel popülasyondan belirgin yüksektir. (5) PLD kadınlarda östrojenle hızlanır, KCFT genelde normal kalır. (6) Aile öyküsünde İKA/SAK varsa MRA taraması endike (%25 risk). (7) Tolvaptan (V2R antagonisti) hızlı progresörlerde (MIC 1C-1E) endike; hepatotoksisite riski nedeniyle ilk 18 ay aylık transaminaz takibi şart. (8) Somatostatin analogları TKV/TLV'yi durdurur ama eGFR'yi korumaz — rutin önerilmez."
     }
   ]
 }

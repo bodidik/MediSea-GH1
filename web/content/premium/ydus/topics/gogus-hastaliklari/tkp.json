@@ -248,14 +248,14 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
-      "metin": "Kortikosteroid — CAPE COD Kuralı: Şiddetli TKP (sCAP) tablolarında sistemik kortikosteroid (hidrokortizon sürekli infüzyon veya metilprednizolon bölünmüş doz) önerilmektedir. ANCAK İNFLUENZA PNÖMONİSİNDE STEROİD KONTRENDIKE — sekonder bakteriyel enfeksiyonlar ve mortaliteyi artırır. CAPE COD çalışması ve ATS/IDSA güncellemeleri baz alınmalıdır."
+      "metin": "Kortikosteroid — CAPE COD Kuralı: Şiddetli TKP (sCAP) tablolarında sistemik kortikosteroid (hidrokortizon sürekli infüzyon veya metilprednizolon bölünmüş doz) önerilmektedir. ANCAK İNFLUENZA PNÖMONİSİNDE STEROİD RUTİN ÖNERİLMEZ (ATS/IDSA 2019) — gözlemsel verilerde sekonder bakteriyel enfeksiyon ve mortalite artışıyla ilişkili bulunmuştur. CAPE COD çalışması ve ATS/IDSA güncellemeleri baz alınmalıdır."
     },
     {
       "tip": "metin",
       "baslik": "Tedavi Süresi ve Taburculuk",
       "satirlar": [
         {
-          "metin": "Uzamış antibiyotik tedavisi direnç gelişimine ve **C. difficile enfeksiyonuna** yol açar. **Klinik stabilizasyon kriterleri:** 48-72 saatte ateşsiz + O2 saturasyonu stabil + kalp hızı ≤100, solunum hızı ≤24, sistolik KB >90 → **3-5 günlük kısa süreli tedavi yeterlidir.**"
+          "metin": "Uzamış antibiyotik tedavisi direnç gelişimine ve **C. difficile enfeksiyonuna** yol açar. **Klinik stabilizasyon kriterleri:** 48-72 saatte ateşsiz + O2 saturasyonu stabil + kalp hızı ≤100, solunum hızı ≤24, sistolik KB >90 → tedavi klinik stabilite sağlanana dek ve **toplam en az 5 gün** sürdürülür; kısa süreli tedavi yeterlidir (ATS/IDSA 2019)."
         },
         {
           "metin": "Komplike enfeksiyonlarda (apse, ampiyem, nekrotizan pnömoni, Pseudomonas) süre uzatılmalıdır. Klinik stabilizasyon sağlandığı anda **IV'den oral tedaviye geçilmeli** ve taburculuk planlanmalıdır."
@@ -310,7 +310,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "TKP — 7 Altın Kural: (1) HCAP terimi artık kullanılmıyor — gereksiz geniş spektrum tetikler. (2) AB'yi ilk 4 saatte başla. (3) PSI/PORT tercih edilen triage sistemi; YBÜ için 1 majör VEYA ≥3 minör ATS/IDSA kriteri. (4) Ağır TKP'de β-laktam + makrolid kombinasyonu (immünomodülatör avantaj); YBÜ'de florokinolon monoterapisi önerilmez. (5) Viral kanıt = Yatan/komorbiditeli hastaya AB yine de ver. (6) Şiddetli TKP'de steroid ver ama influenzada KESİNLİKLE VERme. (7) PCT rehberliğiyle AB'yi 3-5 günde kes — kısa tedavi yeterli."
+      "metin": "TKP — 7 Altın Kural: (1) HCAP terimi artık kullanılmıyor — gereksiz geniş spektrum tetikler. (2) AB'yi ilk 4 saatte başla. (3) PSI/PORT tercih edilen triage sistemi; YBÜ için 1 majör VEYA ≥3 minör ATS/IDSA kriteri. (4) Ağır TKP'de β-laktam + makrolid kombinasyonu (immünomodülatör avantaj); YBÜ'de florokinolon monoterapisi önerilmez. (5) Viral kanıt = Yatan/komorbiditeli hastaya AB yine de ver. (6) Şiddetli TKP'de steroid ver ama influenza pnömonisinde rutin VERme (ATS/IDSA 2019). (7) AB'yi klinik stabiliteye kadar, toplam en az 5 gün ver; PCT kesme kararını destekler — kısa tedavi yeterli."
     }
   ]
 }
