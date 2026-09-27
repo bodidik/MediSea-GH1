@@ -41,7 +41,7 @@ const WIDTH_KEY = "medisea:notew";
 const PAPER_KEY = "medisea:notepaper";
 
 const INKS = ["#1E293B", "#2563EB", "#DC2626", "#16A34A", "#D97706", "#7C3AED"];
-const FOSFORLAR = ["#FACC15", "#4ADE80", "#F472B6", "#60A5FA"];
+const FOSFORLAR = ["#FACC15", "#FB923C", "#4ADE80", "#F472B6", "#60A5FA"];
 
 /**
  * Renklerin ADI — dördünün de `title`ı "Renk"ti ve erişilebilir adları
@@ -60,6 +60,7 @@ const INK_ADI: Record<string, string> = {
   "#4ADE80": "açık yeşil",
   "#F472B6": "pembe",
   "#60A5FA": "açık mavi",
+  "#FB923C": "turuncu",
 };
 const NIBS = [2, 4, 7];
 /** Geri alma geçmişinin tavanı (durum anlık görüntüsü sayısı). */
