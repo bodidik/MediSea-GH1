@@ -5545,5 +5545,227 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "gi-motilite": {
+    "baslik": "Gastrointestinal motilite hastalıkları",
+    "aciklama": "Gastrointestinal motilite hastalıkları sayfası bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler ve kitap bölümleri yayın kaydıyla (Crossref), kitaplar yayımcı sayfasıyla. Liste konunun kaynakçasıdır; her künye her bölümün dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Yadlapati R, Kahrilas PJ, Fox MR, ve ark. Esophageal motility disorders on high-resolution manometry: Chicago classification version 4.0©. Neurogastroenterol Motil 2021;33(1):e14058",
+        "yil": 2021,
+        "url": "https://doi.org/10.1111/nmo.14058",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ahuja NK. Gastroparesis from other causes. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 283-290",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00021-1",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Bridges M. Dietary therapy for gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 311-321",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00023-5",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Camilleri M. Gastric dysmotility at the organ level in gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 47-67",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00005-3",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Chikkamenahalli LL, Grover M. Cellular pathogenesis of gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 69-80",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00006-5",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Davis BR, McCallum RW. Surgical management of gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 431-439",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00031-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Fletcher R, Swanström LL. Postsurgical gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 255-263",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00019-3",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Fox M, Banerjee S, Parker H, Marciani L. Magnetic resonance imaging for gastric motility and function. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 175-187",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00014-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Gajendran M, Parkman HP, Gonzalez Z, McCallum RW. Abdominal pain in gastroparesis: Prevalence, potential causes and management. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 361-375",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00026-0",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Gajula P, Tansel A, Quigley EMM. Epidemiology of gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 13-17",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00002-8",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Gonzalez Z, McCallum RW. Idiopathic gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 265-281",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00020-X",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Gonzalez Z, McCallum RW. Natural history of patients with gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 35-44",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00004-1",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Harris C, Schey R. Breath tests for the assessment of gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 161-174",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00013-2",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Hasler WL. Ancillary testing including barostat, SPECT, and satiety testing. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 215-234",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00017-X",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Itzoe M, Lee TY, Lee LA. Alternative, complementary medicine and cannabinoids for gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 389-396",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00028-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Koch KL. Electrogastrography for suspected gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 189-205",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00015-6",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Lee A. The use of wireless motility capsule in the diagnosis and monitoring of gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 143-159",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00012-0",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Maurer AH, Friedman MI, Diaz J, Parkman HP. Gastric emptying scintigraphy. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 125-142",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00011-9",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Moshiree B, Douglas Y. Clinical presentations of gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 19-33",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00003-X",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Parkman H, McCallum RW. Historical perspectives on gastric motility and gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 3-11",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00001-6",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Parkman HP. Prokinetic agents for gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 323-339",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00024-7",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Rayner CK, Jones KL, Horowitz M. Diabetic gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 237-253",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00018-1",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Sarosiek I, McCallum R. Gastric electrical stimulation for gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 413-429",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00030-2",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Simons M, Bulat R. Enteric tube placement for gastroparesis: Gastrostomy, gastrojejunostomy and jejunostomy. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 397-411",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00029-6",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Sinn DI, Jaradeh S. Autonomic neuropathies and gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 109-121",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00010-7",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Smith TK, Bashashati M. Pathology of gastroparesis: ICC, enteric neurons and fibrosis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 85-94",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00008-9",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Snape WJ. Antroduodenal manometry for the evaluation of patients with suspected gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 207-214",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00016-8",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Tack J, Schol J, Carbone F. Sensory dysfunction in gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 81-84",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00007-7",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Treisman GJ, King JE. Psychiatric aspects of gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 377-388",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00027-2",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Vélez CD, Kuo B. Gastroparesis and the brain-gut axis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 95-107",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00009-0",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Wo JM, McCallum RW, Gonzalez Z. Antiemetic therapy for gastroparesis. In: McCallum RW, Parkman HP, Clarke JO, Kuo B, ed. Gastroparesis: Pathophysiology, Clinical Presentation, Diagnosis and Treatment. Elsevier; 2021. p. 341-359",
+        "yil": 2021,
+        "url": "https://doi.org/10.1016/B978-0-12-818586-5.00025-9",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Hennig GW, Spencer NJ. Physiology of Gastric Motility Patterns. In: Said HM, ed. Physiology of the Gastrointestinal Tract. 6. baskı. Elsevier; 2018. p. 469-484",
+        "yil": 2018,
+        "url": "https://doi.org/10.1016/B978-0-12-809954-4.00021-9",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Miller L, Roland BC, Whitson M, Passi M, Cheung M, Vegesna A. Clinical and Translational Aspects of Normal and Abnormal Motility in the Esophagus, Small Intestine and Colon. In: Said HM, ed. Physiology of the Gastrointestinal Tract. 6. baskı. Elsevier; 2018. p. 485-516",
+        "yil": 2018,
+        "url": "https://doi.org/10.1016/B978-0-12-809954-4.00022-0",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Bharucha AE, Brookes SJH. Neurophysiologic Mechanisms of Human Large Intestinal Motility. In: Said HM, ed. Physiology of the Gastrointestinal Tract. 6. baskı. Elsevier; 2018. p. 517-564",
+        "yil": 2018,
+        "url": "https://doi.org/10.1016/B978-0-12-809954-4.00023-2",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Floch MH, Pitchumoni CS, Floch NR, Rosenthal RJ, Scolapio JS, Lim JK. Netter's Gastroenterology. 3. baskı. Elsevier; 2019. Bölümler: Motility of the Stomach; Gastroparesis and Gastric Motility Disorders; Motility and Dysmotility of the Small Intestine; Motility and Dysmotility of the Large Intestine",
+        "yil": 2019,
+        "url": "https://shop.elsevier.com/books/netters-gastroenterology/floch/978-0-323-59624-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Johnson LR. Gastrointestinal Physiology. 9. baskı. Elsevier; 2018. Bölümler: Gastric Emptying; Motility of the Small Intestine; Motility of the Large Intestine",
+        "yil": 2018,
+        "url": "https://shop.elsevier.com/books/gastrointestinal-physiology/johnson/978-0-323-59563-6",
+        "tur": "kitap"
+      }
+    ]
   }
 }

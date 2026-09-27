@@ -415,6 +415,13 @@
         "eslesen": "Metabolik Sendrom"
       }
     ],
+    "gastroenteroloji/gastrointestinal-motilite-hastaliklari": [
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
+      }
+    ],
     "gastroenteroloji/kisa-bagirsak-sendromu": [
       {
         "slug": "anion-gap",
@@ -1175,6 +1182,11 @@
         "eslesen": "QTc"
       },
       {
+        "yol": "gastroenteroloji/gastrointestinal-motilite-hastaliklari",
+        "baslik": "Gastrointestinal Motilite Hastalıkları",
+        "eslesen": "QTc"
+      },
+      {
         "yol": "hematoloji/gilteritinib-flt3-aml",
         "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi",
         "eslesen": "QTc"
@@ -1197,11 +1209,6 @@
       {
         "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
         "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
-        "eslesen": "QTc"
-      },
-      {
-        "yol": "endokrinoloji/men1-insulinoma",
-        "baslik": "MEN1 İlişkili İnsülinoma: Klinik Davranış, Hipoglisemi Yönetimi ve Cerrahi Strateji",
         "eslesen": "QTc"
       }
     ],
@@ -2009,10 +2016,10 @@
     ]
   },
   "olcum": {
-    "konu": 521,
+    "konu": 522,
     "arac": 257,
-    "araciOlanKonu": 134,
+    "araciOlanKonu": 135,
     "konusuOlanArac": 58,
-    "bag": 177
+    "bag": 178
   }
 }

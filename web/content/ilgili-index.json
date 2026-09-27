@@ -3445,6 +3445,11 @@
  "gastroenteroloji/colyak": [
   {
    "brans": "gastroenteroloji",
+   "slug": "gastrointestinal-motilite-hastaliklari",
+   "baslik": "Gastrointestinal Motilite Hastalıkları"
+  },
+  {
+   "brans": "gastroenteroloji",
    "slug": "kisa-bagirsak-sendromu",
    "baslik": "Kısa Bağırsak Sendromu (KBS)"
   }
@@ -3643,6 +3648,38 @@
    "baslik": "Psödotahılların Mikrobesin Profili ve Klinik Değeri"
   }
  ],
+ "gastroenteroloji/gastrointestinal-motilite-hastaliklari": [
+  {
+   "brans": "gastroenteroloji",
+   "slug": "colyak",
+   "baslik": "Çölyak Hastalığı (Gluten Enteropatisi)"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "gastroozofageal-reflu-gorh",
+   "baslik": "Gastroözofageal Reflü (GÖRH) ve Barrett Özofagusu"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "kisa-bagirsak-sendromu",
+   "baslik": "Kısa Bağırsak Sendromu (KBS)"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "konjenital-ozofagus-anomalileri",
+   "baslik": "Konjenital Özofagus Anomalileri ve Halkalar"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ozofagus-hastaliklarina-yaklasim",
+   "baslik": "Özofagus Hastalıklarına Yaklaşım ve Tanı"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ozofagus-motilite-bozukluklari",
+   "baslik": "Özofagus Motilite Bozuklukları"
+  }
+ ],
  "gastroenteroloji/gastroozofageal-reflu-gorh": [
   {
    "brans": "nefroloji",
@@ -3775,6 +3812,11 @@
  "gastroenteroloji/konjenital-ozofagus-anomalileri": [
   {
    "brans": "gastroenteroloji",
+   "slug": "gastrointestinal-motilite-hastaliklari",
+   "baslik": "Gastrointestinal Motilite Hastalıkları"
+  },
+  {
+   "brans": "gastroenteroloji",
    "slug": "gastroozofageal-reflu-gorh",
    "baslik": "Gastroözofageal Reflü (GÖRH) ve Barrett Özofagusu"
   },
@@ -3797,11 +3839,6 @@
    "brans": "gastroenteroloji",
    "slug": "sistemik-ozofagus-tutulumu",
    "baslik": "Sistemik Hastalıkların Özofagus Tutulumu"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "yapisal-enfeksiyoz-ozofagus",
-   "baslik": "Yapısal ve Enfeksiyöz Özofagus Hastalıkları"
   }
  ],
  "gastroenteroloji/ozofagus-hastaliklarina-yaklasim": [
@@ -3826,6 +3863,11 @@
  "gastroenteroloji/ozofagus-travmalari-ve-yaniklar": [
   {
    "brans": "gastroenteroloji",
+   "slug": "gastrointestinal-motilite-hastaliklari",
+   "baslik": "Gastrointestinal Motilite Hastalıkları"
+  },
+  {
+   "brans": "gastroenteroloji",
    "slug": "gastroozofageal-reflu-gorh",
    "baslik": "Gastroözofageal Reflü (GÖRH) ve Barrett Özofagusu"
   },
@@ -3848,11 +3890,6 @@
    "brans": "gastroenteroloji",
    "slug": "sistemik-ozofagus-tutulumu",
    "baslik": "Sistemik Hastalıkların Özofagus Tutulumu"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "yapisal-enfeksiyoz-ozofagus",
-   "baslik": "Yapısal ve Enfeksiyöz Özofagus Hastalıkları"
   }
  ],
  "gastroenteroloji/refrakter-colyak-hastaligi-rcd": [
@@ -3973,6 +4010,11 @@
  "gastroenteroloji/yapisal-enfeksiyoz-ozofagus": [
   {
    "brans": "gastroenteroloji",
+   "slug": "gastrointestinal-motilite-hastaliklari",
+   "baslik": "Gastrointestinal Motilite Hastalıkları"
+  },
+  {
+   "brans": "gastroenteroloji",
    "slug": "gastroozofageal-reflu-gorh",
    "baslik": "Gastroözofageal Reflü (GÖRH) ve Barrett Özofagusu"
   },
@@ -3995,11 +4037,6 @@
    "brans": "gastroenteroloji",
    "slug": "ozofagus-travmalari-ve-yaniklar",
    "baslik": "Özofagus Travmaları, Perforasyon ve Yanıklar"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "sistemik-ozofagus-tutulumu",
-   "baslik": "Sistemik Hastalıkların Özofagus Tutulumu"
   }
  ],
  "genel-dahiliye/asamali-lenfodem-cerrahisi": [
