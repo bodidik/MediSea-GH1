@@ -21,7 +21,7 @@
         "A": "DOĞRU — Prolaktinoma (hipofiz kitlesi) + sT4↓ + TSH hafif↑ + guatr yok + tiroid antikorları negatif: santral hipotiroidinin klasik tablosudur. TRH eksikliği → anormal TSH glikozilasyonu → biyolojik inaktif TSH → immünolojik ölçümde hafif yüksek görünür.",
         "B": "YANLIŞ — 'TSH yüksek = primer hipotiroidi' ezberi santral hipotiroidide tuzağa düşürür. Bu hastada hipofiz kitlesi öyküsü var, guatr yok, tiroid antikorları negatif. Levotiroksin başlamadan önce santral hipotiroidi ekarte edilmeli ve adrenal aks değerlendirilmelidir.",
         "C": "YANLIŞ — Anti-TPO/anti-tiroglobulin negatifliği yalnızca otoimmün hipotiroidisi dışlar; santral hastalığı dışlamaz. Santral hipotiroidide tiroid bezinin kendisi sağlıklıdır, otoimmün hasar yoktur zaten.",
-        "D": "YANLIŞ — TSH'ın santral hastalıkta asla yükselmeyeceği bilgisi yanlıştır. Biyolojik olarak inaktif ama immünolojik olarak ölçülebilen TSH molekülleri nedeniyle TSH 5–10 mU/L arasında saptanabilir. Bu, santral hipotiroidinin önemli bir sınav tuzağıdır.",
+        "D": "YANLIŞ — TSH'ın santral hastalıkta asla yükselmeyeceği bilgisi yanlıştır. Biyolojik olarak inaktif ama immünolojik olarak ölçülebilen TSH molekülleri nedeniyle TSH 5–10 mU/L arasında saptanabilir. Bu, santral hipotiroidinin önemli bir tanı tuzağıdır.",
         "E": "YANLIŞ — Kabergolin dopamin agonisti olarak TSH'ı suprese etme değil, prolaktini düşürme etkisi gösterir. Kabergolin TSH veya sT4 üzerinde primer etkisi olmayan bir ilaçtır; bu tablo kabergoline bağlanamaz."
       },
       "etiketler": [
@@ -108,7 +108,7 @@
       "aciklama_detay": "Mitotan, beksaroten, immün kontrol noktası inhibitörleri ve bazı psikotrop ilaçlar santral hipotiroidiye özgü ajanlardır. Mitotan hipofizer TSH salgısını bozar; sonuçta tiroid bezi uyarı almadan sT4 düşer, ancak TSH paradoks biçimde normal kalabilir. Primer hipotiroidide TSH belirgin yükselirdi. Anti-TPO negatif + hipofize yönelik ilaç öyküsü + sT4↓ + TSH normal = ilaç kaynaklı santral hipotiroidi.",
       "secenekAciklamalari": {
         "A": "YANLIS — Tiroid antikorlarının negatif olması santral hipotiroidisi dışlamaz; santral hastalıkta tiroid bezinin kendisi sağlıklıdır, otoimmün hasar yoktur zaten.",
-        "B": "DOGRU — Mitotan santral hipotiroidiye yol açan, sınav spotlarında özellikle sorulan bir onkoloji ajanıdır. Beksaroten (RXR ligandı) ile birlikte en spesifik ilaç nedenlerinden biridir.",
+        "B": "DOGRU — Mitotan santral hipotiroidiye yol açan, özellikle akılda tutulması gereken bir onkoloji ajanıdır. Beksaroten (RXR ligandı) ile birlikte en spesifik ilaç nedenlerinden biridir.",
         "C": "YANLIS — Fenitoin ve karbamazepin sT4 klerensini artırarak artefakt düşüklük yapabilir; bu durum TSH normal kalırken sT4'ü düşük gösterir. Ancak mitotan mekanizması farklıdır: hipofizer TSH salgısını baskılar.",
         "D": "YANLIS — Mitotan santral hipotiroidiye yol açabilir; bu iyi belgelenmiş bir ilaç yan etkisidir.",
         "E": "YANLIS — Santral hipotiroidinin lab paradoksu: sT4 düşük + TSH normal/hafif yüksek. TSH'ın normal olması hipotiroidisi olmadığı anlamına gelmez; aksine santral hastalığın karakteristik bulgusudur."
@@ -139,7 +139,7 @@
         "A": "YANLIS — ICI'ler Hashimoto tiroiditini tetikleyebilir (primer hipotiroidi yapabilir); ancak bu hastada MRG'de hipofizit bulgusu var ve TSH normal — bu santral hipotiroididir.",
         "B": "YANLIS — ICI'ler hipofizi etkileyebilir; bu iyi bilinen bir irAE'dir. MRG'de hipofizit bulgusu bu mekanizmayı doğruluyor.",
         "C": "YANLIS — Nivolumab primer hipotiroidiye de yol açabilir, ancak bu hastada MRG hipofizit bulgusu santral hipotiroidiye işaret ediyor. Primer hipotiroidide TSH belirgin yükselirdi.",
-        "D": "DOGRU — İpilimumab (anti-CTLA-4) lenfositik hipofizit ile santral hipotiroidinin en iyi bilinen ilişkisini oluşturur. Sınav spotlarında özellikle ipilimumab + hipofizit + santral hipotiroidi üçlüsü sorulur.",
+        "D": "DOGRU — İpilimumab (anti-CTLA-4) lenfositik hipofizit ile santral hipotiroidinin en iyi bilinen ilişkisini oluşturur. Özellikle ipilimumab + hipofizit + santral hipotiroidi üçlüsü akılda tutulmalıdır.",
         "E": "YANLIS — sT4 0.65 ng/dL ile belirgin düşük; bu patolojik bir bulgudur. TSH'ın normal sınırda olması santral hipotiroidinin lab paradoksudur."
       },
       "etiketler": [
