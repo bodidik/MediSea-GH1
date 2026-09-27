@@ -3176,21 +3176,6 @@
    "brans": "endokrinoloji",
    "slug": "men1-insulinoma",
    "baslik": "MEN1 İlişkili İnsülinoma: Klinik Davranış, Hipoglisemi Yönetimi ve Cerrahi Strateji"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "antikoagulasyon-stratejileri",
-   "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
-   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "vka-doac-karsilastirma",
-   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   }
  ],
  "enfeksiyon/tigesiklin-uyarilar-yan-etkiler": [
@@ -4299,16 +4284,6 @@
    "brans": "kardiyoloji",
    "slug": "aks-oac-antitrombotik-yonetim",
    "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "tigesiklin-ilac-etkilesimleri",
-   "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "uclu-tedavi-uzatma-risk-faktorleri",
-   "baslik": "Üçlü Tedavi Süresini Etkileyen Yüksek İskemi ve Stent Trombozu Riskleri"
   }
  ],
  "hematoloji/aplastik-anemi": [
@@ -4415,6 +4390,18 @@
    "brans": "hematoloji",
    "slug": "nhl-genel",
    "baslik": "Non-Hodgkin Lenfomalar (NHL)"
+  }
+ ],
+ "hematoloji/doac-warfarin-patofizyolojik-karsilastirma": [
+  {
+   "brans": "hematoloji",
+   "slug": "vka-doac-karsilastirma",
+   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
   }
  ],
  "hematoloji/esansiyel-trombositoz": [
@@ -4762,6 +4749,11 @@
  "hematoloji/inme-sonrasi-gizli-af": [
   {
    "brans": "hematoloji",
+   "slug": "doac-warfarin-patofizyolojik-karsilastirma",
+   "baslik": "Doğrudan Oral Antikoagülanlar (DOAC/NOAC) ve Warfarin’in Patofizyolojik, Farmakolojik ve Klinik Karşılaştırması"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "kanser-iliskili-tromboz",
    "baslik": "Kanser İlişkili Tromboz (CAT): Risk Sınıflaması, Profilaksi ve Tedavi"
   },
@@ -4846,11 +4838,6 @@
    "baslik": "Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları"
   },
   {
-   "brans": "hematoloji",
-   "slug": "vka-doac-karsilastirma",
-   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
-  },
-  {
    "brans": "klinik-nutrisyon",
    "slug": "espen-enteral-beslenme-intoleransi",
    "baslik": "ESPEN Kılavuzu: Enteral Beslenme İntoleransı ve Yönetimi"
@@ -4861,9 +4848,14 @@
    "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar"
   },
   {
-   "brans": "enfeksiyon",
-   "slug": "tigesiklin-ilac-etkilesimleri",
-   "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
+   "brans": "hematoloji",
+   "slug": "doac-warfarin-patofizyolojik-karsilastirma",
+   "baslik": "Doğrudan Oral Antikoagülanlar (DOAC/NOAC) ve Warfarin’in Patofizyolojik, Farmakolojik ve Klinik Karşılaştırması"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "vka-doac-karsilastirma",
+   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   }
  ],
  "hematoloji/kll": [
@@ -5511,6 +5503,11 @@
  "hematoloji/vka-doac-karsilastirma": [
   {
    "brans": "hematoloji",
+   "slug": "doac-warfarin-patofizyolojik-karsilastirma",
+   "baslik": "Doğrudan Oral Antikoagülanlar (DOAC/NOAC) ve Warfarin’in Patofizyolojik, Farmakolojik ve Klinik Karşılaştırması"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "trombofililer-hiperkoagulabilite",
    "baslik": "Trombofililer ve Hiperkoagülabilite"
   },
@@ -5518,21 +5515,6 @@
    "brans": "hematoloji",
    "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
    "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "tigesiklin-ilac-etkilesimleri",
-   "baslik": "Tigesiklin: Kritik İlaç Etkileşimleri ve Yönetimi"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "aks-oac-antitrombotik-yonetim",
-   "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "uclu-tedavi-uzatma-risk-faktorleri",
-   "baslik": "Üçlü Tedavi Süresini Etkileyen Yüksek İskemi ve Stent Trombozu Riskleri"
   }
  ],
  "hematoloji/von-willebrand-hastaligi-vwd": [
@@ -5674,11 +5656,6 @@
    "brans": "hematoloji",
    "slug": "antikoagulasyon-stratejileri",
    "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "vka-doac-karsilastirma",
-   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   },
   {
    "brans": "kardiyoloji",
@@ -6329,16 +6306,6 @@
    "brans": "kardiyoloji",
    "slug": "aks-oac-antitrombotik-yonetim",
    "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "antikoagulasyon-stratejileri",
-   "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "vka-doac-karsilastirma",
-   "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
   },
   {
    "brans": "kardiyoloji",

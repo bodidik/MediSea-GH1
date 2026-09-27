@@ -5767,5 +5767,161 @@
         "tur": "kitap"
       }
     ]
+  },
+  "asit-baz": {
+    "baslik": "Asit-baz denge bozuklukları",
+    "aciklama": "Asit-baz sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler ve kitap bölümleri yayın kaydıyla (Crossref), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Moody M, Zainadine N, Doktorski T, Trivedi R, Schmidt TA, Deymier A. Potassium bicarbonate, not sodium bicarbonate, maintains acidosis-mediated bone dissolution. Bone 2025;192:117369",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.bone.2024.117369",
+        "tur": "makale"
+      },
+      {
+        "ad": "Baynes JW, Dominiczak MH, ed. Medical Biochemistry. 6. baskı. Elsevier; 2023. Bölüm: The Lung and the Regulation of Hydrogen Ion Concentration (Acid–Base Balance)",
+        "yil": 2023,
+        "url": "https://shop.elsevier.com/books/medical-biochemistry/baynes/978-0-323-83450-6",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Co IN, Gunnerson KJ. Iatrogenic and Poison-Derived Acid Base Disorders. In: Ronco C, Bellomo R, Kellum JA, Ricci Z, ed. Critical Care Nephrology. 3. baskı. Elsevier; 2019. p. 417-423.e2",
+        "yil": 2019,
+        "url": "https://doi.org/10.1016/B978-0-323-44942-7.00071-6",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Hall JE, Hall ME. Guyton and Hall Textbook of Medical Physiology. 15. baskı. Elsevier; 2025. Bölümler: Acid–Base Regulation; Organization of the Nervous System, Basic Functions of Synapses and Neurotransmitters",
+        "yil": 2025,
+        "url": "https://shop.elsevier.com/books/guyton-and-hall-textbook-of-medical-physiology/hall/978-0-443-11101-3",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Kamel KS, Schreiber M, Halperin ML. Balance and the pathophysiology of acid–base, fluid, and electrolyte disorders. In: Alpern RJ, Caplan MJ, Moe OW, Quaggin SE, ed. Seldin and Giebisch's The Kidney: Physiology and Pathophysiology. 6. baskı. Elsevier; 2026. p. 1009-1029",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/B978-0-12-815389-5.00058-7",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Koeppen BM, Stanton BA. Renal Physiology. 6. baskı. Elsevier; 2018. Bölüm: Regulation of Acid-Base Balance",
+        "yil": 2018,
+        "url": "https://shop.elsevier.com/books/renal-physiology/koeppen/978-0-323-59568-1",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Murphy M, Srivastava R, Deans K. Clinical Biochemistry: An Illustrated Colour Text. 7. baskı. Elsevier; 2023. Bölüm: Acid–base disorders: diagnosis and management",
+        "yil": 2023,
+        "url": "https://shop.elsevier.com/books/clinical-biochemistry/murphy/978-0-323-88057-2",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Randall D, Booth J, Wiles K, ed. Kumar and Clark's Clinical Medicine. 11. baskı. Elsevier; 2025. Bölüm: Water balance, fluids, and electrolytes",
+        "yil": 2025,
+        "url": "https://shop.elsevier.com/books/kumar-and-clarks-clinical-medicine/randall/978-0-443-12594-2",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Yu ASL, Chertow GM, Luyckx VA, Marsden PA, Skorecki K, Taal MW, ed. Brenner and Rector's The Kidney. 11. baskı. Elsevier; 2019. Bölüm: Disorders of Acid-Base Balance",
+        "yil": 2019,
+        "url": "https://shop.elsevier.com/books/brenner-and-rectors-the-kidney-2-volume-set/yu/978-0-323-53265-5",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Emmett M, Hoorn EJ. Serum anion gap in conditions other than metabolic acidosis. UpToDate; son güncelleme 21 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/serum-anion-gap-in-conditions-other-than-metabolic-acidosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Emmett M, Palmer BF. Acid-base and electrolyte abnormalities with diarrhea. UpToDate; son güncelleme 14 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/acid-base-and-electrolyte-abnormalities-with-diarrhea",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Emmett M, Palmer BF. Simple and mixed acid-base disorders. UpToDate; son güncelleme 23 Eyl 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/simple-and-mixed-acid-base-disorders",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Emmett M, Palmer BF. The delta anion gap/delta HCO3 ratio in patients with a high anion gap metabolic acidosis. UpToDate; son güncelleme 1 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/the-delta-anion-gap-delta-hco3-ratio-in-patients-with-a-high-anion-gap-metabolic-acidosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Emmett M, Palmer BF. Urine anion and osmolal gaps in metabolic acidosis. UpToDate; son güncelleme 30 Oca 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/urine-anion-and-osmolal-gaps-in-metabolic-acidosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Emmett M, Szerlip H. Approach to the adult with metabolic acidosis. UpToDate; son güncelleme 17 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/approach-to-the-adult-with-metabolic-acidosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Emmett M, Szerlip H. Causes of metabolic alkalosis. UpToDate; son güncelleme 7 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/causes-of-metabolic-alkalosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Emmett M, Szerlip H. Clinical manifestations and evaluation of metabolic alkalosis. UpToDate; son güncelleme 17 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-manifestations-and-evaluation-of-metabolic-alkalosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Feller-Kopman DJ, Schwartzstein RM. Mechanisms, causes, and effects of hypercapnia. UpToDate; son güncelleme 10 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/mechanisms-causes-and-effects-of-hypercapnia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Feller-Kopman DJ, Schwartzstein RM. The evaluation and management of the nonventilated adult with acute hypercapnic respiratory failure. UpToDate; son güncelleme 14 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/the-evaluation-and-management-of-the-nonventilated-adult-with-acute-hypercapnic-respiratory-failure",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Hyzy RC, Hidalgo J. Permissive hypercapnia during mechanical ventilation in adults. UpToDate; son güncelleme 1 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/permissive-hypercapnia-during-mechanical-ventilation-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Hyzy RC, McSparron JI. Noninvasive ventilation in adults with acute respiratory failure: Benefits and contraindications. UpToDate; son güncelleme 28 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/noninvasive-ventilation-in-adults-with-acute-respiratory-failure-benefits-and-contraindications",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kovesdy CP. Pathogenesis, consequences, and treatment of metabolic acidosis in chronic kidney disease. UpToDate; son güncelleme 28 Eki 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/pathogenesis-consequences-and-treatment-of-metabolic-acidosis-in-chronic-kidney-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Malhotra A, Schwartzstein RM. Adverse effects of supplemental oxygen. UpToDate; son güncelleme 16 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/adverse-effects-of-supplemental-oxygen",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Mount DB. Potassium balance in acid-base disorders. UpToDate; son güncelleme 25 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/potassium-balance-in-acid-base-disorders",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Theodore AC. Arterial blood gases. UpToDate; son güncelleme 14 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/arterial-blood-gases",
+        "tur": "uptodate"
+      }
+    ]
   }
 }

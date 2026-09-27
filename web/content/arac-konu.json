@@ -570,6 +570,18 @@
         "eslesen": "IPI Skoru"
       }
     ],
+    "hematoloji/doac-warfarin-patofizyolojik-karsilastirma": [
+      {
+        "slug": "chads-vasc",
+        "name": "CHA₂DS₂-VASc Skoru",
+        "eslesen": "CHA2DS2-VASc"
+      },
+      {
+        "slug": "has-bled",
+        "name": "HAS-BLED Skoru",
+        "eslesen": "HAS-BLED"
+      }
+    ],
     "hematoloji/folikuler-lenfoma": [
       {
         "slug": "flipi",
@@ -1727,6 +1739,11 @@
         "yol": "hematoloji/chase-less-skoru",
         "baslik": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli",
         "eslesen": "CHA2DS2-VASc"
+      },
+      {
+        "yol": "hematoloji/doac-warfarin-patofizyolojik-karsilastirma",
+        "baslik": "Doğrudan Oral Antikoagülanlar (DOAC/NOAC) ve Warfarin’in Patofizyolojik, Farmakolojik ve Klinik Karşılaştırması",
+        "eslesen": "CHA2DS2-VASc"
       }
     ],
     "khorana": [
@@ -1770,6 +1787,13 @@
         "yol": "hematoloji/dlbcl",
         "baslik": "Diffüz Büyük B Hücreli Lenfoma (DLBCL)",
         "eslesen": "IPI Skoru"
+      }
+    ],
+    "has-bled": [
+      {
+        "yol": "hematoloji/doac-warfarin-patofizyolojik-karsilastirma",
+        "baslik": "Doğrudan Oral Antikoagülanlar (DOAC/NOAC) ve Warfarin’in Patofizyolojik, Farmakolojik ve Klinik Karşılaştırması",
+        "eslesen": "HAS-BLED"
       }
     ],
     "flipi": [
@@ -2016,10 +2040,10 @@
     ]
   },
   "olcum": {
-    "konu": 522,
+    "konu": 523,
     "arac": 257,
-    "araciOlanKonu": 135,
-    "konusuOlanArac": 58,
-    "bag": 178
+    "araciOlanKonu": 136,
+    "konusuOlanArac": 59,
+    "bag": 180
   }
 }
