@@ -151,6 +151,8 @@ module.exports = {
       //    308'leniyordu. PremiumDailyProgram ve PremiumQuizHistory
       //    bileşenleri bu uçları çağırıyor; ikisi de erişim kapısının
       //    arkasındaki panoda olduğu için kusur birkaç tur fark edilmedi.
+      //    (28 Eyl: iki bileşen ve o uçlar silindi — hiçbir sayfa kullanmıyordu,
+      //    arka uçta karşılıkları yoktu. `api` elemesi GENEL güvenlik olarak kalır.)
       {
         source: '/:lang((?!tr/|api/)[^/]+)/premium/:yol*',
         destination: '/tr/premium/:yol*',
