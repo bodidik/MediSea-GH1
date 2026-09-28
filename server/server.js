@@ -1,22 +1,11 @@
 ﻿// FILE: server/server.js
 import express from "express";
 import mongoose from "mongoose";
-import contentRoutes from './routes/content.js';
 import dotenv from "dotenv";
 import cors from "cors";
 import morgan from "morgan";
 
-import questionsRoutes from "./routes/questions.js";
-import examsRoutes from "./routes/exams.js";
-import medseaCompatRoutes from "./routes/medsea.compat.routes.js";
-import protectedRoutes from "./routes/protected.routes.js";
-import caseRoutes from "./routes/case.routes.js";
-import sectionsContentRoutes from "./routes/sections.js";
-import sectionsCountsRoutes from "./routes/sectionsCounts.js";
 import topicRoutes from "./routes/topic.routes.js";
-import guidelinesRoutes from "./routes/guidelines.routes.js";
-import topicAdminRoutes from "./routes/topic.admin.routes.js"; 
-import translateRoutes from "./routes/translate.routes.js"; // 🆕 Translate ekledik
 import aiRoutes from "./routes/ai.routes.js"; // 🆕 AI asistan (kredi sınırlı)
 
 dotenv.config();
@@ -92,22 +81,20 @@ export function yazmaKilidi(req, res, next) {
 }
 app.use(yazmaKilidi);
 
-/* --- API Routes --- */
-app.use("/api/section-content", sectionsContentRoutes);
-app.use("/api/sections", sectionsCountsRoutes);
-app.use("/api/questions", questionsRoutes);
-app.use("/api/exams", examsRoutes);
-app.use("/api/cases", caseRoutes);
-app.use("/api", medseaCompatRoutes);
-app.use("/api/protected", protectedRoutes);
+/* --- API Routes ---
+   YALNIZ WEB'İN KULLANDIĞI İKİ GRUP BAĞLI (28 Eyl, kullanıcı kararı).
+   Envanter: web bu arka uçta yalnız /api/ai/ask'i (kendi kapısı var) ve
+   /api/topics'i OKUMA için kullanıyor (yönetici içerik sayfası). Sökülen
+   gruplar — section-content, sections, questions, exams, cases, compat
+   (/api: counts, user, plan, progress, premium/quiz, review, guidelines),
+   protected, guidelines, admin/topics, content, translate — ya yazma
+   (kimlik doğrulamasız; yazma kilidi zaten 405'liyordu) ya da premium
+   içeriği DOĞRULAMASIZ okuyordu: /api/questions doğru cevap ve açıklamayla
+   (günlük sınır ?dev=1 ile atlanıyordu), /api/cases, /api/content tam belge.
+   Denetleyici ve rota dosyaları DURUYOR; geri bağlamak tek satır — ama
+   bağlamadan önce gerçek bir kimlik doğrulaması şart. */
 app.use("/api/topics", topicRoutes);
-app.use("/api/guidelines", guidelinesRoutes);
-app.use("/api/admin/topics", topicAdminRoutes);
-app.use('/api/content', contentRoutes);
-app.use("/api/ai", aiRoutes); // 🆕 AI asistan
-
-// 🆕 Translate endpoint
-app.use("/translate", translateRoutes);
+app.use("/api/ai", aiRoutes); // AI asistan — AI_ICERI_ANAHTARI kapısı
 
 /* --- Healthcheck --- */
 app.get("/health", (_req, res) => {
