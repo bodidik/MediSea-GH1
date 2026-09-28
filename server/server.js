@@ -63,12 +63,34 @@ async function connectMongo() {
 }
 connectMongo();
 
-/* --- Basit rol taşıma --- */
+/* --- Rol: İSTEMCİDEN ALINMAZ ---
+   Burası rolü doğrudan `?role=` sorgusundan alıyordu: `?role=P` yazan
+   herkes premium sayılıyor, /api/exams açıklamaları ve /api/protected
+   kapısı açılıyordu (ölçüldü, 28 Eyl). Web bu uçları kullanmıyor; gerçek
+   bir kimlik kaynağı bağlanana kadar herkes V. */
 app.use((req, _res, next) => {
-  const role = (req.query.role || "V").toString(); // V / M / P
-  req.user = { role };
+  req.user = { role: "V" };
   next();
 });
+
+/* --- YAZMA KİLİDİ ---
+   Envanter (28 Eyl): bağlı HİÇBİR yazma ucunda kimlik doğrulama yoktu —
+   DELETE /api/topics/:slug, DELETE ve filtresiz PUT /api/content/:slug,
+   POST /api/admin/topics/bulk (üzerine yazma), kılavuz/konu oluşturma,
+   plan/set · progress · quiz/submit (istenen kimlik adına). `adminKey`
+   ara katmanı hiçbir rotaya bağlı değildi. Veritabanı web'in üretim
+   kümesiyle AYNI.
+
+   Web bu arka uçta yalnız POST /api/ai/ask'i yazma için kullanıyor (kendi
+   kapısı var: AI_ICERI_ANAHTARI) ve /api/topics'i yalnız OKUYOR. Geri
+   kalan her yazma isteği 405. Yerel geliştirme / bilinçli yönetim işi için
+   ARKA_UC_YAZMA_ACIK=1 kilidi açar. */
+export function yazmaKilidi(req, res, next) {
+  const yazma = ["POST", "PUT", "PATCH", "DELETE"].includes(req.method);
+  if (!yazma || req.path.startsWith("/api/ai/") || process.env.ARKA_UC_YAZMA_ACIK === "1") return next();
+  return res.status(405).json({ ok: false, error: "yazma_kapali" });
+}
+app.use(yazmaKilidi);
 
 /* --- API Routes --- */
 app.use("/api/section-content", sectionsContentRoutes);
