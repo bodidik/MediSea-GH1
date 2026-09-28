@@ -1,7 +1,28 @@
 // FILE: server/controllers/aiController.js
 // MediSea AI asistanı — SADECE site içeriğine dayalı, kredi (token) sınırlı soru-cevap.
+import crypto from "crypto";
 import Anthropic from "@anthropic-ai/sdk";
 import User from "../models/User.js";
+
+/**
+ * YALNIZ WEB SUNUCUSU ÇAĞIRABİLİR — ölçüldü (28 Eyl): bu uç herkese açık
+ * adreste (web `NEXT_PUBLIC_BACKEND_URL`) duruyor, hiçbir doğrulama yapmıyor
+ * ve `context` alanını istemciden olduğu gibi alıyordu. Adresi bilen herkes
+ * istediği metni ve soruyu gönderip Anthropic anahtarımızı açık bir vekil
+ * gibi kullanabiliyor, her istekte yeni `externalId` ile kotayı da
+ * atlayabiliyordu.
+ *
+ * `AI_ICERI_ANAHTARI` iki tarafta da tanımlıysa, `x-medisea-iceri` başlığı
+ * tutmayan istek 401 alır. TANIMLI DEĞİLSE eski davranış sürer (canlıyı
+ * kırmamak için) — dönüş `null`. Sabit zamanlı karşılaştırma.
+ */
+export function iceridenMi(req) {
+  const beklenen = process.env.AI_ICERI_ANAHTARI;
+  if (!beklenen) return null;
+  const gelen = Buffer.from(String(req.get?.("x-medisea-iceri") || ""));
+  const hedef = Buffer.from(beklenen);
+  return gelen.length === hedef.length && crypto.timingSafeEqual(gelen, hedef);
+}
 
 const AI_MODEL = process.env.AI_MODEL || "claude-sonnet-5";
 const MAX_TOKENS = Number(process.env.AI_MAX_TOKENS || 1024);
@@ -26,6 +47,8 @@ KURALLAR:
 
 export async function askQuestion(req, res) {
   try {
+    const icerden = iceridenMi(req);
+    if (icerden === false) return res.status(401).json({ ok: false, error: "yetkisiz" });
     const b = (req.body && typeof req.body === "object") ? req.body : {};
     const externalId = String(b.externalId || "").trim();
     const isGuest = Boolean(b.isGuest);
@@ -42,6 +65,15 @@ export async function askQuestion(req, res) {
     let user = await User.findOne({ externalId });
     if (!user) {
       user = await User.create({ externalId, guest: isGuest, name: isGuest ? "Misafir" : "Anon" });
+    }
+    // Plan YALNIZ ortak sır doğrulanınca dikkate alınır (aksi hâlde istemci
+    // "premium" yazıp kota büyütebilirdi). Web planı: free | member | premium.
+    if (icerden === true && !isGuest) {
+      const plan = b.plan === "premium" ? "premium" : "free";
+      if (user.plan !== plan) {
+        user.plan = plan;
+        user.aiCredits = null; // yeni plana göre yeniden dolsun
+      }
     }
 
     // Kotayı gerekiyorsa yenile
@@ -122,6 +154,7 @@ export async function askQuestion(req, res) {
 // GET /api/ai/credits — kalan hakkı göstermek için (opsiyonel UI amaçlı)
 export async function getCredits(req, res) {
   try {
+    if (iceridenMi(req) === false) return res.status(401).json({ ok: false, error: "yetkisiz" });
     const externalId = String(req.query.externalId || "").trim();
     const isGuest = String(req.query.isGuest || "") === "1";
     if (!externalId) return res.status(400).json({ ok: false, error: "externalId gerekli" });
