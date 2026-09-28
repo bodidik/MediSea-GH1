@@ -6115,5 +6115,53 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "linezolid": {
+    "baslik": "Linezolid",
+    "aciklama": "Linezolid sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref), kitaplar yayımcı sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Abdelgawad N, Wasserman S, Abdelwahab MT, ve ark. Linezolid Population Pharmacokinetic Model in Plasma and Cerebrospinal Fluid Among Patients With Tuberculosis Meningitis. J Infect Dis 2024;229(4):1200-1208",
+        "yil": 2024,
+        "url": "https://doi.org/10.1093/infdis/jiad413",
+        "tur": "makale"
+      },
+      {
+        "ad": "Fei ZT, Huang W, Zhou DP, ve ark. Clinical efficacy of linezolid in the treatment of tuberculous meningitis: a retrospective analysis and literature review. BMC Infect Dis 2025;25(1):467",
+        "yil": 2025,
+        "url": "https://doi.org/10.1186/s12879-025-10874-x",
+        "tur": "makale"
+      },
+      {
+        "ad": "Heidari S, Khalili H. Linezolid pharmacokinetics: a systematic review for the best clinical practice. Eur J Clin Pharmacol 2023;79(2):195-206",
+        "yil": 2023,
+        "url": "https://doi.org/10.1007/s00228-022-03446-4",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lino GM, Galvão PVM, Magalhães JJF, Conrado GAM. Adjunctive linezolid in patients with tuberculous meningitis for the prevention of mortality or neurologic disability: a meta-analysis of randomized controlled trials. BMC Infect Dis 2026;26(1):1320",
+        "yil": 2026,
+        "url": "https://doi.org/10.1186/s12879-026-13604-z",
+        "tur": "makale"
+      },
+      {
+        "ad": "Makin MA, Subki AH, Bokhary MI. Linezolid-Associated Triad of Acute Pancreatitis, Lactic Acidosis, and Hypoglycemia: A Rare Case Report and Literature Review. Am J Case Rep 2026;27:e950688",
+        "yil": 2026,
+        "url": "https://doi.org/10.12659/AJCR.950688",
+        "tur": "makale"
+      },
+      {
+        "ad": "Bennett JE, Dolin R, Blaser MJ, ed. Mandell, Douglas, and Bennett's Principles and Practice of Infectious Diseases. 9. baskı. Elsevier; 2019. Bölüm: Linezolid, Tedizolid, and Other Oxazolidinones",
+        "yil": 2019,
+        "url": "https://shop.elsevier.com/books/mandell-douglas-and-bennetts-principles-and-practice-of-infectious-diseases/bennett/978-0-323-48255-4",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Drew RH, Peel TN. Linezolid and tedizolid (oxazolidinones): An overview. UpToDate; son güncelleme 2 Haz 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/linezolid-and-tedizolid-oxazolidinones-an-overview",
+        "tur": "uptodate"
+      }
+    ]
   }
 }

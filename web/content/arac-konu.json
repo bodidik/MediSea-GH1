@@ -341,6 +341,13 @@
         "eslesen": "Potasyum Replasmanı"
       }
     ],
+    "enfeksiyon/linezolid-derleme": [
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      }
+    ],
     "enfeksiyon/prokalsitonin-genel": [
       {
         "slug": "sofa",
@@ -2649,6 +2656,34 @@
         "slug": "cockcroft-gault",
         "name": "Cockcroft-Gault Kreatinin Klirensi",
         "eslesen": "glikopeptit",
+        "kaynak": "kavram"
+      }
+    ],
+    "enfeksiyon/linezolid-kritik-hasta-avantajlari": [
+      {
+        "slug": "apache2",
+        "name": "APACHE II",
+        "eslesen": "yoğun bakım",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cam-icu",
+        "name": "CAM-ICU",
+        "eslesen": "yoğun bakım",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "rass",
+        "name": "RASS",
+        "eslesen": "yoğun bakım",
+        "kaynak": "kavram"
+      }
+    ],
+    "enfeksiyon/linezolid-vankomisin-tdm-rehberi": [
+      {
+        "slug": "cockcroft-gault",
+        "name": "Cockcroft-Gault Kreatinin Klirensi",
+        "eslesen": "vankomisin",
         "kaynak": "kavram"
       }
     ],
@@ -5926,8 +5961,8 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "enfeksiyon/vanco-bobrek",
-        "baslik": "Vankomisin: Eliminasyon, Nefrotoksisite ve AUC Kılavuzluğunda Dozlama",
+        "yol": "enfeksiyon/linezolid-vankomisin-tdm-rehberi",
+        "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi",
         "eslesen": "vankomisin",
         "kaynak": "kavram"
       },
@@ -5935,6 +5970,12 @@
         "yol": "hematoloji/vka-doac-karsilastirma",
         "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri",
         "eslesen": "DOAC",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "enfeksiyon/vanco-bobrek",
+        "baslik": "Vankomisin: Eliminasyon, Nefrotoksisite ve AUC Kılavuzluğunda Dozlama",
+        "eslesen": "vankomisin",
         "kaynak": "kavram"
       },
       {
@@ -5947,6 +5988,30 @@
         "yol": "enfeksiyon/vankomisin-master-rehber",
         "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç",
         "eslesen": "vankomisin",
+        "kaynak": "kavram"
+      }
+    ],
+    "apache2": [
+      {
+        "yol": "enfeksiyon/linezolid-kritik-hasta-avantajlari",
+        "baslik": "Kritik Yoğun Bakım Hastasında Linezolidin Klinik Avantajları",
+        "eslesen": "yoğun bakım",
+        "kaynak": "kavram"
+      }
+    ],
+    "cam-icu": [
+      {
+        "yol": "enfeksiyon/linezolid-kritik-hasta-avantajlari",
+        "baslik": "Kritik Yoğun Bakım Hastasında Linezolidin Klinik Avantajları",
+        "eslesen": "yoğun bakım",
+        "kaynak": "kavram"
+      }
+    ],
+    "rass": [
+      {
+        "yol": "enfeksiyon/linezolid-kritik-hasta-avantajlari",
+        "baslik": "Kritik Yoğun Bakım Hastasında Linezolidin Klinik Avantajları",
+        "eslesen": "yoğun bakım",
         "kaynak": "kavram"
       }
     ],
@@ -7126,11 +7191,11 @@
     ]
   },
   "olcum": {
-    "konu": 465,
+    "konu": 469,
     "arac": 257,
-    "araciOlanKonu": 320,
-    "konusuOlanArac": 148,
-    "bag": 584,
-    "kavramBag": 422
+    "araciOlanKonu": 323,
+    "konusuOlanArac": 151,
+    "bag": 589,
+    "kavramBag": 426
   }
 }

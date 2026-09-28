@@ -1730,16 +1730,6 @@
    "brans": "endokrinoloji",
    "slug": "tiroid-yaslanmasi-fizyolojisi",
    "baslik": "Tiroid Yaşlanması (Thyroid Aging): Fizyolojik TSH Yüksekliği"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "asit-baz-denge-bozukluklari",
-   "baslik": "Asit-Baz Denge Bozuklukları"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "tls-elektrolit-diyaliz-yonetimi",
-   "baslik": "TLS: Elektrolit Yönetimi ve Renal Replasman Tedavisi"
   }
  ],
  "endokrinoloji/paratiroid-karsinomu-histolojik-tuzaklar": [
@@ -2754,6 +2744,11 @@
   },
   {
    "brans": "enfeksiyon",
+   "slug": "linezolid-derleme",
+   "baslik": "Linezolid: Farmakolojik Özellikleri, Etki Spektrumu, Klinik Kullanımı ve Güvenlilik Profili"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "vankomisin-master-rehber",
    "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç"
   }
@@ -2903,6 +2898,11 @@
   },
   {
    "brans": "enfeksiyon",
+   "slug": "fosfomisin-beta-laktam-sinerji",
+   "baslik": "Fosfomisin ve Beta-Laktam Sinerjisi"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "antibiyotikler-ana-sayfa",
    "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
   },
@@ -2910,11 +2910,6 @@
    "brans": "enfeksiyon",
    "slug": "dalbavansin-derleme",
    "baslik": "Dalbavansin"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "fosfomisin-beta-laktam-sinerji",
-   "baslik": "Fosfomisin ve Beta-Laktam Sinerjisi"
   }
  ],
  "enfeksiyon/fosfomisin-daptomisin-sinerji": [
@@ -2981,18 +2976,18 @@
   },
   {
    "brans": "enfeksiyon",
+   "slug": "linezolid-derleme",
+   "baslik": "Linezolid: Farmakolojik Özellikleri, Etki Spektrumu, Klinik Kullanımı ve Güvenlilik Profili"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
    "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "dalbavansin-VISA-VRSA",
-   "baslik": "VISA ve VRSA: İleri Düzey Direnç Mekanizmaları"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "fosfomisin-daptomisin-mprf",
-   "baslik": "Daptomisin Direncinin Kırılması (mprF Mutasyon Baskılaması)"
+   "slug": "linezolid-vankomisin-tdm-rehberi",
+   "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi"
   }
  ],
  "enfeksiyon/hucre-duvari-sentez-inhibitorleri": [
@@ -3000,6 +2995,11 @@
    "brans": "enfeksiyon",
    "slug": "fosfomisin-beta-laktam-sinerji",
    "baslik": "Fosfomisin ve Beta-Laktam Sinerjisi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "linezolid-derleme",
+   "baslik": "Linezolid: Farmakolojik Özellikleri, Etki Spektrumu, Klinik Kullanımı ve Güvenlilik Profili"
   },
   {
    "brans": "enfeksiyon",
@@ -3044,7 +3044,88 @@
    "baslik": "Brucella'nın İntrasellüler Yaşam Döngüsü: BCV Biyojenezi, T4SS Efektörleri ve Egress"
   }
  ],
- "enfeksiyon/mantar-enfeksiyon-ana-sayfa": [
+ "enfeksiyon/linezolid-ciddi-komplikasyonlar": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "linezolid-vankomisin-tdm-rehberi",
+   "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "delta-anyon-acigi-delta-delta-orani",
+   "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "linezolid-kritik-hasta-avantajlari",
+   "baslik": "Kritik Yoğun Bakım Hastasında Linezolidin Klinik Avantajları"
+  }
+ ],
+ "enfeksiyon/linezolid-derleme": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "glikopeptit-antibiyotikler",
+   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "hucre-duvari-sentez-inhibitorleri",
+   "baslik": "Hücre Duvarı Sentez İnhibitörleri"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "dalbavansin-derleme",
+   "baslik": "Dalbavansin"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "fosfomisin-daptomisin-mprf",
+   "baslik": "Daptomisin Direncinin Kırılması (mprF Mutasyon Baskılaması)"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "fosfomisin-daptomisin-sinerji",
+   "baslik": "Fosfomisin ve Daptomisin Sinerjisi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "vankomisin-master-rehber",
+   "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç"
+  }
+ ],
+ "enfeksiyon/linezolid-kritik-hasta-avantajlari": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "linezolid-vankomisin-tdm-rehberi",
+   "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "linezolid-ciddi-komplikasyonlar",
+   "baslik": "Linezolid Tedavisinde Ciddi Komplikasyonlar ve Klinik Yönetim Stratejileri"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "glikopeptit-antibiyotikler",
+   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "hucre-duvari-sentez-inhibitorleri",
+   "baslik": "Hücre Duvarı Sentez İnhibitörleri"
+  }
+ ],
+ "enfeksiyon/linezolid-vankomisin-tdm-rehberi": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "linezolid-ciddi-komplikasyonlar",
+   "baslik": "Linezolid Tedavisinde Ciddi Komplikasyonlar ve Klinik Yönetim Stratejileri"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "linezolid-kritik-hasta-avantajlari",
+   "baslik": "Kritik Yoğun Bakım Hastasında Linezolidin Klinik Avantajları"
+  },
   {
    "brans": "enfeksiyon",
    "slug": "vanco-bobrek",
@@ -3052,18 +3133,35 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "vankomisin-master-rehber",
-   "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç"
+   "slug": "vankomisin-auc-dozlama",
+   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama ve Akademik Nüanslar"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "antibiyotikler-ana-sayfa",
-   "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
+   "slug": "glikopeptit-antibiyotikler",
+   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
+  }
+ ],
+ "enfeksiyon/mantar-enfeksiyon-ana-sayfa": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "hucre-duvari-sentez-inhibitorleri",
+   "baslik": "Hücre Duvarı Sentez İnhibitörleri"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "bruselloz",
-   "baslik": "Bruselloz: Epidemiyoloji, Mikrobiyoloji, Patogenez, Klinik Prezantasyon, Tanı ve Tedavi"
+   "slug": "linezolid-derleme",
+   "baslik": "Linezolid: Farmakolojik Özellikleri, Etki Spektrumu, Klinik Kullanımı ve Güvenlilik Profili"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "prokalsitonin-genel",
+   "baslik": "Prokalsitonin (PCT) ve Klinik Kullanımı"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "tigesiklin-derleme",
+   "baslik": "Tigesiklin (Tigecycline): İleri Düzey Derleme"
   }
  ],
  "enfeksiyon/prokalsitonin-biyobelirtec-karsilastirmasi": [
@@ -3074,11 +3172,6 @@
   }
  ],
  "enfeksiyon/prokalsitonin-genel": [
-  {
-   "brans": "enfeksiyon",
-   "slug": "mantar-enfeksiyon-ana-sayfa",
-   "baslik": "Mantar Enfeksiyonları"
-  },
   {
    "brans": "enfeksiyon",
    "slug": "tigesiklin-derleme",
@@ -3093,6 +3186,11 @@
    "brans": "enfeksiyon",
    "slug": "vankomisin-master-rehber",
    "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "antibiyotikler-ana-sayfa",
+   "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
   }
  ],
  "enfeksiyon/prokalsitonin-yukselme-paterni": [
@@ -3122,6 +3220,11 @@
    "brans": "enfeksiyon",
    "slug": "hucre-duvari-sentez-inhibitorleri",
    "baslik": "Hücre Duvarı Sentez İnhibitörleri"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "linezolid-derleme",
+   "baslik": "Linezolid: Farmakolojik Özellikleri, Etki Spektrumu, Klinik Kullanımı ve Güvenlilik Profili"
   }
  ],
  "enfeksiyon/tigesiklin-ilac-etkilesimleri": [
@@ -3156,6 +3259,11 @@
  "enfeksiyon/vanco-bobrek": [
   {
    "brans": "enfeksiyon",
+   "slug": "linezolid-vankomisin-tdm-rehberi",
+   "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "dalbavansin-VISA-VRSA",
    "baslik": "VISA ve VRSA: İleri Düzey Direnç Mekanizmaları"
   },
@@ -3170,6 +3278,11 @@
    "brans": "enfeksiyon",
    "slug": "antibiyotikler-ana-sayfa",
    "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "linezolid-vankomisin-tdm-rehberi",
+   "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi"
   },
   {
    "brans": "enfeksiyon",
@@ -6180,14 +6293,24 @@
  ],
  "nefroloji/asit-baz-denge-bozukluklari": [
   {
-   "brans": "endokrinoloji",
-   "slug": "otiroid-hasta-sendromu-ntis",
-   "baslik": "Ötiroid Hasta Sendromu"
+   "brans": "nefroloji",
+   "slug": "iga-nefropatisi-berger",
+   "baslik": "IgA Nefropatisi ve IgA Vasküliti (HSP)"
   },
   {
-   "brans": "onkoloji",
-   "slug": "tls-elektrolit-diyaliz-yonetimi",
-   "baslik": "TLS: Elektrolit Yönetimi ve Renal Replasman Tedavisi"
+   "brans": "nefroloji",
+   "slug": "kbh-hiperfosfatemi-yonetimi",
+   "baslik": "Kronik Böbrek Hastalığında Hiperfosfatemi Yönetimi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "kbh-mkb-kapsamli-inceleme",
+   "baslik": "KBH-Mineral ve Kemik Bozukluğu (CKD-MBD): Kapsamlı İnceleme"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "membranoz-nefropati-mn",
+   "baslik": "Membranöz nefropati"
   }
  ],
  "nefroloji/asit-baz-fizyopatoloji": [
@@ -6241,6 +6364,11 @@
    "brans": "nefroloji",
    "slug": "asit-baz-kompanzasyon-ilkeleri",
    "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "linezolid-ciddi-komplikasyonlar",
+   "baslik": "Linezolid Tedavisinde Ciddi Komplikasyonlar ve Klinik Yönetim Stratejileri"
   },
   {
    "brans": "nefroloji",
@@ -7661,16 +7789,6 @@
    "brans": "enfeksiyon",
    "slug": "fosfomisin-hipokalemi",
    "baslik": "Fosfomisin Sodyum Yükü ve Hipokalemi Yönetimi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "otiroid-hasta-sendromu-ntis",
-   "baslik": "Ötiroid Hasta Sendromu"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "asit-baz-denge-bozukluklari",
-   "baslik": "Asit-Baz Denge Bozuklukları"
   },
   {
    "brans": "nefroloji",
