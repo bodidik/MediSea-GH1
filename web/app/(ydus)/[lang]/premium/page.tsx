@@ -233,32 +233,36 @@ export default function PremiumPage() {
         {/* KLİNİK OPERASYONLAR */}
         <div className="mt-8 mb-4 border-l-4 border-blue-600 pl-4">
           <h2 className="text-xl font-black text-white uppercase tracking-tight">Klinik Operasyonlar</h2>
-          <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-1">Yapay Zeka Destekli Çalışma Modülleri</p>
+          {/* "Yapay Zeka Destekli Çalışma Modülleri" diyordu — ölçüldü (28 Eyl):
+              altı kartın beşinin kodda karşılığı yok, sitedeki tek yapay zekâ
+              konu sayfasındaki "Sor" düğmesi. Kullanıcı kararı: kartlar kalır,
+              olmayanlar "Yakında" rozetiyle; iddia başlıktan düşer. */}
+          <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-1">Çalışma modülleri ve yol haritası</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-          <PremiumCard plan={role} title="Günlük Program (AI)" min="P">
+          <PremiumCard plan={role} title="Günlük Program (AI)" min="P" yakinda>
             <div className="flex items-start gap-4 mt-2">
               <div className="w-10 h-10 rounded-lg bg-blue-900/30 flex items-center justify-center text-blue-400 shrink-0"><BrainCircuit size={20}/></div>
               <p className="text-sm font-medium text-slate-400 italic">Haftalık zayıf alanlarına göre yapay zeka tarafından hazırlanan 20 soruluk odaklı çalışma seti.</p>
             </div>
           </PremiumCard>
 
-          <PremiumCard plan={role} title="Zor Soru Analizi" min="P">
+          <PremiumCard plan={role} title="Zor Soru Analizi" min="P" yakinda>
             <div className="flex items-start gap-4 mt-2">
               <div className="w-10 h-10 rounded-lg bg-rose-900/30 flex items-center justify-center text-rose-400 shrink-0"><Activity size={20}/></div>
               <p className="text-sm font-medium text-slate-400 italic">En çok yanlış yapılan 10 soru, çeldirici analizleri ve konunun nokta atışı özetleri.</p>
             </div>
           </PremiumCard>
 
-          <PremiumCard plan={role} title="Video Radar" min="P">
+          <PremiumCard plan={role} title="Video Radar" min="P" yakinda>
             <div className="flex items-start gap-4 mt-2">
               <div className="w-10 h-10 rounded-lg bg-purple-900/30 flex items-center justify-center text-purple-400 shrink-0"><PlaySquare size={20}/></div>
               <p className="text-sm font-medium text-slate-400 italic">Son çözdüğün denemelere ve ilerlemene göre sistemin önerdiği 3 kritik kısa video.</p>
             </div>
           </PremiumCard>
 
-          <PremiumCard plan={role} title="Sınav Simülatörü" min="P">
+          <PremiumCard plan={role} title="Sınav Simülatörü" min="P" yakinda>
             <div className="flex items-start gap-4 mt-2">
               <div className="w-10 h-10 rounded-lg bg-emerald-900/30 flex items-center justify-center text-emerald-400 shrink-0"><Target size={20}/></div>
               <p className="text-sm font-medium text-slate-400 italic">Gerçek sınav süresi, optik form ve soru dağılımıyla tam zamanlı YDUS/USMLE simülasyonu.</p>
@@ -268,11 +272,19 @@ export default function PremiumPage() {
           <PremiumCard plan={role} title="Vaka Kokpiti" min="P">
             <div className="flex items-start gap-4 mt-2">
               <div className="w-10 h-10 rounded-lg bg-amber-900/30 flex items-center justify-center text-amber-400 shrink-0"><Stethoscope size={20}/></div>
-              <p className="text-sm font-medium text-slate-400 italic">Güncel 5 karmaşık klinik vaka üzerinden interaktif tanı ve tedavi tartışma akışı.</p>
+              <div>
+                {/* Bu modül GERÇEK (vaka motoru). "Güncel 5" sayısı uydurmaydı
+                    ve kart hiçbir yere bağlanmıyordu; vakalar konu sayfalarının
+                    Vaka modülünden açılıyor, bağlantı oraya giden panoya. */}
+                <p className="text-sm font-medium text-slate-400 italic">Adım adım klinik vakalar: her adımda karar, gerekçe ve klinik seyir.</p>
+                <Link href="/tr/premium/ydus" className="mt-3 inline-block text-sm font-bold text-amber-300 hover:text-amber-200">
+                  Vakalara git →
+                </Link>
+              </div>
             </div>
           </PremiumCard>
 
-          <PremiumCard plan={role} title="Konu Haritası" min="P">
+          <PremiumCard plan={role} title="Konu Haritası" min="P" yakinda>
             <div className="flex items-start gap-4 mt-2">
               <div className="w-10 h-10 rounded-lg bg-indigo-900/30 flex items-center justify-center text-indigo-400 shrink-0"><Map size={20}/></div>
               <p className="text-sm font-medium text-slate-400 italic">Tıbbi konular arası bağlantı grafiği (Knowledge Graph) ile eksiklerini harita üzerinde gör.</p>

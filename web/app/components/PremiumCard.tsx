@@ -8,11 +8,19 @@ export default function PremiumCard({
   children,
   min = "P",
   plan = "P",
+  yakinda = false,
 }: {
   title: string;
   children: React.ReactNode;
   min?: "V" | "M" | "P";
   plan?: "V" | "M" | "P";
+  /**
+   * Özellik HENÜZ YOK — görünür rozet taşır ve kilitlenmez. Satış sayfası
+   * bir dönem "Yapay Zeka Destekli" başlığıyla altı modül vaat ediyordu,
+   * beşinin kodda karşılığı yoktu (ölçüldü, 28 Eyl). Olmayan bir özellik
+   * için "Planları gör" kilidi de aynı yanlış iddiayı taşırdı.
+   */
+  yakinda?: boolean;
 }) {
   return (
     <div className="rounded-2xl border border-slate-700/60 bg-slate-800/30 p-5 shadow-lg backdrop-blur-sm transition-all hover:bg-slate-800/50">
@@ -24,16 +32,25 @@ export default function PremiumCard({
           </svg>
           {title}
         </h2>
+        {yakinda && (
+          <span className="shrink-0 rounded-full border border-slate-500/60 bg-slate-900 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-slate-200">
+            Yakında
+          </span>
+        )}
       </div>
-      
-      {/* `baslik`: kilitli kartın erişilebilir adını ayırt etmek için. Bu
-          sayfada yedi kilitli kart var; başlık geçilmezse hepsi ekran
-          okuyucuda birbirinin aynı ("Planları gör") okunurdu. */}
-      <RequirePlan min={min} plan={plan} baslik={title}>
-        <div className="text-slate-300">
-          {children}
-        </div>
-      </RequirePlan>
+
+      {yakinda ? (
+        <div className="text-slate-300">{children}</div>
+      ) : (
+        /* `baslik`: kilitli kartın erişilebilir adını ayırt etmek için. Bu
+           sayfada yedi kilitli kart var; başlık geçilmezse hepsi ekran
+           okuyucuda birbirinin aynı ("Planları gör") okunurdu. */
+        <RequirePlan min={min} plan={plan} baslik={title}>
+          <div className="text-slate-300">
+            {children}
+          </div>
+        </RequirePlan>
+      )}
     </div>
   );
 }
