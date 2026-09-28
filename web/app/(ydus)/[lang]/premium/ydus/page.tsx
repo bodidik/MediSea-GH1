@@ -8,6 +8,8 @@ import { envanterAl } from '@/lib/premium-envanter';
 import { listelenmeyenKategori, guncellemeAyi, premiumEnYeniAy } from '@/lib/premium-brans';
 import { icerikSayilari } from '@/lib/icerik-sayaci';
 import { rotaMeta } from "@/lib/site";
+import { icerikOzeti } from '@/app/lib/icerik-ozeti';
+import type { AranabilirKonu } from './PremiumKonuAra';
 
 export const revalidate = 3600;
 
@@ -167,6 +169,8 @@ export default async function YdusAnaSayfa({
   // işaretli konular. Hazır olmayan bir konuyu programa koymak, kullanıcıyı
   // olmayan içeriğe göndermek olurdu.
   const hazirKonular: { brans: string; id: string; baslik: string }[] = [];
+  // Panodaki konu araması için — aynı döngüden, aynı sayaçla (PremiumKonuAra).
+  const aranabilir: AranabilirKonu[] = [];
 
   for (const id of bransKimlikleri()) {
     const veri = bransYukle(id);
@@ -197,6 +201,14 @@ export default async function YdusAnaSayfa({
         toplam.kart += sayi.kart;
         toplam.inci += sayi.inci;
         toplam.vaka += sayi.vaka;
+        aranabilir.push({
+          brans: id,
+          bransAdi: veri.meta.baslik,
+          id: konu.id,
+          baslik: konu.baslik,
+          altbaslik: (konuVerisi?.meta as { altbaslik?: string } | undefined)?.altbaslik,
+          icerik: icerikOzeti(sayi),
+        });
 
         newest.push({
           topicId: konu.id,
@@ -273,6 +285,7 @@ export default async function YdusAnaSayfa({
       overall={overall}
       sinavlar={sinavlariOku()}
       hazirKonular={hazirKonular}
+      aranabilir={aranabilir}
     />
   );
 }

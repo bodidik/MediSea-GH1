@@ -16,6 +16,7 @@ import GeriSayim from "@/app/components/GeriSayim";
 import CalismaPlani from "@/app/components/CalismaPlani";
 import SinavTakvimiUyarisi from "@/app/components/SinavTakvimiUyarisi";
 import { icerikOzeti, type IcerikSayisi } from "@/app/lib/icerik-ozeti";
+import PremiumKonuAra, { type AranabilirKonu } from "./PremiumKonuAra";
 import type { Sinav } from "@/lib/sinav";
 
 export interface BranchCard extends IcerikSayisi {
@@ -64,6 +65,7 @@ export default function YdusDashboardClient({
   overall,
   sinavlar = [],
   hazirKonular = [],
+  aranabilir = [],
 }: {
   lang: string;
   branches: BranchCard[];
@@ -72,6 +74,7 @@ export default function YdusDashboardClient({
   overall: Overall;
   sinavlar?: Sinav[];
   hazirKonular?: { brans: string; id: string; baslik: string }[];
+  aranabilir?: AranabilirKonu[];
 }) {
   const { xp, kazanimlar } = useUser();
   // Kendi çalışmasının özeti KAZANIMLARDAN (app/lib/xp.ts). Bu satır bir dönem
@@ -234,6 +237,9 @@ export default function YdusDashboardClient({
             <p className="text-2xl font-semibold text-slate-800">{xp ?? 0}<span className="text-sm text-slate-400 font-normal"> xp</span></p>
           </div>
         </div>
+
+        {/* KONU ARAMASI — gerekçe PremiumKonuAra.tsx içinde */}
+        <PremiumKonuAra lang={lang} konular={aranabilir} />
 
         {/* ÖNE ÇIKAN / YENİ EKLENEN */}
         {featured && (
