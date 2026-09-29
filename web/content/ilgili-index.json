@@ -1778,24 +1778,9 @@
  ],
  "endokrinoloji/polikistik-over-sendromu-pcos": [
   {
-   "brans": "endokrinoloji",
-   "slug": "amenore-ve-kadin-hipogonadizmi",
-   "baslik": "Amenore ve Kadın Hipogonadizmi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "erkek-hipogonadizmi",
-   "baslik": "Erkek Hipogonadizmi: Tanı ve Tedavi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hhg-aksi-ve-fizyoloji",
-   "baslik": "HHG Aksı ve Steroidogenez Fizyolojisi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hirsutizm-ve-virilizasyon",
-   "baslik": "Hirsutizm ve Virilizasyon Yaklaşımı"
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-metabolik-sendrom",
+   "baslik": "ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu"
   }
  ],
  "endokrinoloji/prolaktinoma-yeni-biyobelirtecler": [
@@ -3599,6 +3584,11 @@
   }
  ],
  "gastroenteroloji/colyak-glutensiz-obezite": [
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-metabolik-sendrom",
+   "baslik": "ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu"
+  },
   {
    "brans": "gastroenteroloji",
    "slug": "colyak-akdeniz-beslenme",
@@ -7071,11 +7061,6 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "polikistik-bobrek-kardiyovaskuler",
-   "baslik": "ADPKD İleri Okuma: Kardiyovasküler Tutulum ve Tarama Kılavuzları"
-  },
-  {
-   "brans": "nefroloji",
    "slug": "polikistik-bobrek-vasculary",
    "baslik": "ADPKD İleri Okuma: Vasküler Patofizyoloji ve Anevrizma"
   },
@@ -7083,6 +7068,11 @@
    "brans": "nefroloji",
    "slug": "kbh-hiperfosfatemi-yonetimi",
    "baslik": "Kronik Böbrek Hastalığında Hiperfosfatemi Yönetimi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "kbh-mkb-kapsamli-inceleme",
+   "baslik": "KBH-Mineral ve Kemik Bozukluğu (CKD-MBD): Kapsamlı İnceleme"
   }
  ],
  "nefroloji/polikistik-bobrek-kardiyovaskuler": [
@@ -7112,11 +7102,33 @@
    "baslik": "Spontan Koroner Arter Disseksiyonu (SCAD)"
   }
  ],
+ "nefroloji/polikistik-bobrek-metabolik-sendrom": [
+  {
+   "brans": "gastroenteroloji",
+   "slug": "colyak-glutensiz-obezite",
+   "baslik": "Çölyak Hastalığında Glutensiz Diyet ve Obezite Paradoksu"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-molekuler",
+   "baslik": "ADPKD İleri Okuma: Moleküler Fizyopatoloji ve Sinyal Yolakları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "polikistik-over-sendromu-pcos",
+   "baslik": "Polikistik Over Sendromu (PCOS)"
+  }
+ ],
  "nefroloji/polikistik-bobrek-molekuler": [
   {
    "brans": "nefroloji",
    "slug": "polikistik-bobrek-ekstrarenal",
    "baslik": "ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-metabolik-sendrom",
+   "baslik": "ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu"
   }
  ],
  "nefroloji/polikistik-bobrek-tedavi": [
@@ -7129,8 +7141,23 @@
  "nefroloji/polikistik-bobrek-vasculary": [
   {
    "brans": "nefroloji",
+   "slug": "polikistik-bobrek-hastaligi-pkd",
+   "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "polikistik-bobrek-kardiyovaskuler",
    "baslik": "ADPKD İleri Okuma: Kardiyovasküler Tutulum ve Tarama Kılavuzları"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-metabolik-sendrom",
+   "baslik": "ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-molekuler",
+   "baslik": "ADPKD İleri Okuma: Moleküler Fizyopatoloji ve Sinyal Yolakları"
   }
  ],
  "nefroloji/renal-arter-stenozu-ras": [
