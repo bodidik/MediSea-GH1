@@ -1,0 +1,61 @@
+{
+  "title": "ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu",
+  "meta": {
+    "updatedAt": "29 Eyl 2026",
+    "tags": ["Nefroloji", "ADPKD", "Metabolik Sendrom", "Obezite", "Warburg Etkisi", "İnsülin Direnci"],
+    "parent": "polikistik-bobrek-hastaligi-pkd",
+    "order": 6,
+    "kaynaklar": [
+      {
+        "ad": "KDIGO 2025 Clinical Practice Guideline for the Evaluation, Management, and Treatment of ADPKD",
+        "yil": 2025,
+        "url": "https://kdigo.org/wp-content/uploads/2025/01/KDIGO-2025-ADPKD-Guideline.pdf"
+      },
+      {
+        "ad": "Overweight and Obesity and Progression of ADPKD",
+        "yil": 2021,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34117082/"
+      },
+      {
+        "ad": "Feasibility and impact of ketogenic dietary interventions in polycystic kidney disease: KETO-ADPKD—a randomized controlled trial",
+        "yil": 2023,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37935200/"
+      },
+      {
+        "ad": "Effect of pravastatin on total kidney volume, left ventricular mass index, and microalbuminuria in pediatric ADPKD",
+        "yil": 2014,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24721893/"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "🧬 Metabolik Sendrom ve ADPKD: Klinik Çerçeve",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">ADPKD, böbrek kistlerinin yanı sıra hücresel enerji metabolizmasında değişikliklerle seyreden sistemik bir hastalıktır. Obezite, hipertansiyon, glukoz metabolizması bozukluğu ve dislipidemi ADPKD'de klinik açıdan önem taşır; ancak bu bileşenlerin kist büyümesi ve böbrek fonksiyon kaybı üzerindeki etkilerine ilişkin kanıtların gücü aynı değildir. Bu nedenle mekanistik veriler, gözlemsel ilişkiler ve kılavuz önerileri birbirinden ayrılarak değerlendirilmelidir.</p>"
+    },
+    {
+      "heading": "1. Hücresel Metabolizma: Warburg Etkisi ve Sinyal Yolakları",
+      "html": "<div class=\"space-y-3 text-sm leading-relaxed text-slate-700\"><p>ADPKD kistik epitelinde glikoliz artışı, mitokondriyal oksidatif fosforilasyonda ve yağ asidi oksidasyonunda değişiklikler bildirilmiştir. Bu metabolik yeniden programlama, hücre çoğalması ve kist büyümesini destekleyen cAMP, mTOR ve c-Myc gibi yolaklarla etkileşebilir.</p><div class=\"bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-xl\"><strong class=\"text-indigo-900\">Klinik yorum:</strong> Bu mekanizmalar metabolik hedeflere yönelik araştırmalar için biyolojik gerekçe sağlar; tek başına belirli bir diyetin veya metabolik ilacın ADPKD progresyonunu yavaşlattığını kanıtlamaz.</div></div>"
+    },
+    {
+      "heading": "2. Obezite ve Böbrek Hacmi Progresyonu",
+      "html": "<div class=\"space-y-3 text-sm leading-relaxed text-slate-700\"><p>HALT-PKD ve TEMPO 3:4 kohortlarının analizlerinde, böbrek ve karaciğer kütlesi için düzeltilmiş daha yüksek BMI, daha hızlı yıllık TKV artışıyla ilişkili bulunmuştur. Bir analizde normal kilolu, fazla kilolu ve obez gruplarda ortalama yıllık TKV artışı sırasıyla yaklaşık %6,1, %7,9 ve %9,4'tür. Bu gözlemsel ilişki nedenselliği göstermez; aynı çalışmalarda BMI ile eGFR düşüşü arasında tutarlı bir ilişki saptanmamıştır.</p><p><strong>Düzeltilmiş BMI:</strong> Böbrek ve karaciğer hacmi belirgin artmış hastalarda tartı ağırlığı, gerçek yağ ve kas kütlesini olduğundan fazla gösterebilir. KDIGO, böbrek ve karaciğer ağırlığının toplam vücut ağırlığından çıkarılarak daha doğru ağırlık/BMI değerlendirmesi yapılmasını ve sağlıklı vücut ağırlığının korunmasını önerir. Kılavuz bu amaçla herkese uygulanacak sabit bir 20–25 kg/m² hedefi tanımlamaz.</p><p>Obezitenin eşlik eden hipertansiyon, diyabet ve genel KBH riskini artırabileceği göz önünde bulundurulmalı; kilo yönetimi kişiye özgü planlanmalıdır.</p></div>"
+    },
+    {
+      "heading": "3. Glukoz Metabolizması ve İnsülin Direnci",
+      "html": "<div class=\"space-y-3 text-sm leading-relaxed text-slate-700\"><p>ADPKD hücrelerinde glukoz kullanımı ve insülin sinyallemesi araştırılmaktadır. İnsülin/IGF-1 sinyallerinin proliferasyon yolaklarıyla etkileşimi ve glukoza duyarlı klorür kanallarının kist sıvısı sekresyonundaki olası rolü ağırlıkla deneysel verilere dayanır; bunlar hastalarda metabolik sendromun kist büyümesine doğrudan neden olduğunu kanıtlamaz.</p><p>ADPKD'li kişide diyabet varsa glisemik kontrol, standart diyabet ve KBH ilkeleriyle yönetilir; ADPKD'ye özgü hedef veya ilaç etkinliği konusunda klinik sonuç verisi sınırlıdır. Metformin, yalnızca kist büyümesini yavaşlatmak amacıyla rutin ADPKD tedavisi olarak önerilmez; diyabet endikasyonu ve böbrek fonksiyonu çerçevesinde değerlendirilir.</p></div>"
+    },
+    {
+      "heading": "4. Hipertansiyon, Lipidler ve Diğer Kardiyometabolik Etmenler",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-sm leading-relaxed text-slate-700\"><li><strong>Hipertansiyon:</strong> ADPKD'de erken görülebilir; kistlerin intrarenal damarları sıkıştırması, RAAS aktivasyonu ve vasküler işlev değişiklikleri olası mekanizmalardır. Kan basıncı tanı ve tedavisi ADPKD kılavuzundaki yaş ve böbrek fonksiyonu temelli hedeflere göre yapılır.</li><li><strong>Dislipidemi:</strong> Dislipidemi, kardiyovasküler riski artıran eşlik eden bir durumdur. Statinler ADPKD'de kist progresyonunu önlemek amacıyla herkese verilmez; erişkinlerde lipid düşürücü tedavi kardiyovasküler risk ve KDIGO lipid kılavuzu doğrultusunda değerlendirilir.</li><li><strong>Pravastatin verisi:</strong> Çocuk ve genç erişkinlerde yapılan tek bir kontrollü çalışmada htTKV ve sol ventrikül kitle indeksi gibi yapısal sonuçlarda olumlu bulgular bildirilmiştir. Bu sonuç, erişkinlerde klinik böbrek sonlanımlarını iyileştirdiğini veya rutin ADPKD tedavisi olduğunu göstermez.</li><li><strong>Ürik asit:</strong> Hiperürisemi ile böbrek progresyonu arasındaki ilişkiler gözlemsel düzeydedir; serum ürik asidi tek başına ADPKD'ye özgü tedavi hedefi olarak kabul edilmez.</li></ul>"
+    },
+    {
+      "heading": "5. Beslenme ve Metabolik Tedavilere Kanıt Temelli Yaklaşım",
+      "html": "<div class=\"space-y-3 text-sm leading-relaxed text-slate-700\"><p><strong>Ağırlık ve beslenme:</strong> Sağlıklı vücut ağırlığını koruma, aşırı tuzdan kaçınma ve bireyselleştirilmiş beslenme danışmanlığı temel yaklaşımlardır. Böbrek/karaciğer hacmi yüksek olanlarda ağırlık değerlendirmesi düzeltilmiş ölçümle yapılmalıdır.</p><p><strong>Ketojenik diyet ve açlık:</strong> Hayvan modelleri ve küçük, kısa süreli insan çalışmaları araştırma sinyalleri sunmuştur; böbrek hacmi veya eGFR üzerinde uzun dönem klinik yarar gösterilmiş değildir. KDIGO, kontrollü çalışma verileri oluşana kadar ADPKD progresyonunu yavaşlatmak amacıyla ketojenik müdahalelerin uygulanmamasını belirtir.</p><p><strong>Metformin:</strong> Hücresel AMPK/mTOR etkileri araştırılmaktadır, ancak ADPKD progresyonunu yavaşlattığı kanıtlanmış standart tedavi değildir. Kılavuz, metforminin bu amaçla kullanımını klinik araştırmalarla sınırlar.</p><p><strong>SGLT2 inhibitörleri:</strong> KDIGO, bu ilaçların ADPKD'de eGFR düşüşünü yavaşlatmak amacıyla kullanılmamasını önerir; ozmotik diürezin vazopressin üzerindeki olası etkisi ve ADPKD hastalarının temel çalışmalara alınmamış olması belirsizlik yaratır. Kalp yetersizliği veya diyabet gibi ayrı bir endikasyon varsa karar, ilgili yarar-risk değerlendirmesiyle hekim tarafından verilir.</p><p><strong>GLP-1 reseptör agonistleri:</strong> Kilo ve kardiyometabolik risk yönetiminde genel endikasyonları olabilir; ADPKD'ye özgü kist veya böbrek sonlanımlarını iyileştirdiklerini gösteren yeterli çalışma bulunmamaktadır.</p></div>"
+    },
+    {
+      "heading": "📌 Klinik Özet",
+      "html": "<div class=\"bg-amber-50 border border-amber-200 p-5 rounded-2xl text-sm leading-relaxed text-amber-950\"><p>ADPKD'de metabolik yeniden programlama güçlü bir araştırma alanıdır. Obezite, daha hızlı TKV büyümesiyle ilişkili görünür; fakat gözlemsel ilişki nedensellik veya eGFR üzerinde kesin etki anlamına gelmez. Klinik pratikte sağlıklı ağırlığın korunması, hipertansiyon ve diyabetin standartlara göre tedavisi, kardiyovasküler riskin yönetimi ve kanıtı sınırlı diyet/ilaç yaklaşımlarını hastalık modifiye edici tedavi gibi sunmamak esastır.</p></div>"
+    }
+  ]
+}
