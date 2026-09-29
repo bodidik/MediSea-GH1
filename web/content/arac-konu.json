@@ -1440,6 +1440,18 @@
         "eslesen": "eGFR"
       }
     ],
+    "nefroloji/polikistik-bobrek-metabolik-sendrom": [
+      {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
     "nefroloji/polikistik-bobrek-tedavi": [
       {
         "slug": "egfr",
@@ -4378,6 +4390,11 @@
         "eslesen": "Metabolik Sendrom"
       },
       {
+        "yol": "nefroloji/polikistik-bobrek-metabolik-sendrom",
+        "baslik": "ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
         "yol": "gastroenteroloji/colyak-beslenme",
         "baslik": "Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları",
         "eslesen": "Metabolik Sendrom"
@@ -4396,11 +4413,6 @@
       {
         "yol": "gastroenteroloji/colyak-glutensiz-obezite",
         "baslik": "Çölyak Hastalığında Glutensiz Diyet ve Obezite Paradoksu",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
-        "yol": "gastroenteroloji/colyak-lif-alimi",
-        "baslik": "Akdeniz Tipi Glutensiz Diyette Lif Alımının Artırılması",
         "eslesen": "Metabolik Sendrom"
       }
     ],
@@ -7191,11 +7203,11 @@
     ]
   },
   "olcum": {
-    "konu": 469,
+    "konu": 470,
     "arac": 257,
-    "araciOlanKonu": 323,
+    "araciOlanKonu": 324,
     "konusuOlanArac": 151,
-    "bag": 589,
+    "bag": 591,
     "kavramBag": 426
   }
 }
