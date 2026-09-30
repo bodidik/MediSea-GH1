@@ -122,6 +122,11 @@
    "baslik": "MEN1'de Akromegali ve Somatotropinoma: Tanısal Zorluklar ve Yönetim"
   },
   {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-yenilikci-tedaviler",
+   "baslik": "ADPKD İleri Okuma: Araştırılan Yenilikçi ve Rejeneratif Moleküler Tedaviler"
+  },
+  {
    "brans": "endokrinoloji",
    "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
    "baslik": "Hipofiz Hastalıkları"
@@ -231,6 +236,11 @@
    "brans": "onkoloji",
    "slug": "pankreas-kanseri-neden-inkretin",
    "baslik": "İnkretin Temelli Tedaviler ve Pankreas Kanseri Riski: Farmakoepidemiyolojik, Preklinik ve Klinik Kanıt Matrisi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-metabolik-sendrom",
+   "baslik": "ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu"
   }
  ],
  "endokrinoloji/dopamin-agonistleri-kalp-kapak": [
@@ -1932,6 +1942,11 @@
    "brans": "endokrinoloji",
    "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
    "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-yenilikci-tedaviler",
+   "baslik": "ADPKD İleri Okuma: Araştırılan Yenilikçi ve Rejeneratif Moleküler Tedaviler"
   }
  ],
  "endokrinoloji/sglt2-inhibitorleri-kardiyorenal-metabolik": [
@@ -1944,6 +1959,11 @@
    "brans": "endokrinoloji",
    "slug": "sglt2-hasta-gunler-kurali-sick-day",
    "baslik": "SGLT2 İnhibitörleri: Hasta Günler Kuralı (Sick Day Rules)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-yenilikci-tedaviler",
+   "baslik": "ADPKD İleri Okuma: Araştırılan Yenilikçi ve Rejeneratif Moleküler Tedaviler"
   }
  ],
  "endokrinoloji/sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler": [
@@ -1951,6 +1971,11 @@
    "brans": "endokrinoloji",
    "slug": "sevelamer-derleme",
    "baslik": "Sevelamer: KBH-Hiperfosfatemi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-yenilikci-tedaviler",
+   "baslik": "ADPKD İleri Okuma: Araştırılan Yenilikçi ve Rejeneratif Moleküler Tedaviler"
   }
  ],
  "endokrinoloji/sheehan-sendromu-postpartum-felaket": [
@@ -6199,23 +6224,23 @@
  "nefroloji/akut-bobrek-hasari": [
   {
    "brans": "nefroloji",
-   "slug": "kbh-mkb-kapsamli-inceleme",
-   "baslik": "KBH-Mineral ve Kemik Bozukluğu (CKD-MBD): Kapsamlı İnceleme"
+   "slug": "polikistik-bobrek-tedavi",
+   "baslik": "ADPKD İleri Okuma: Uzman Düzeyi Tedavi ve Yönetim Kılavuzu"
   },
   {
    "brans": "nefroloji",
-   "slug": "membranoz-nefropati-mn",
-   "baslik": "Membranöz nefropati"
+   "slug": "renovaskuler-hastaliklar",
+   "baslik": "Trombotik ve Renovasküler Hastalıklar"
   },
   {
    "brans": "nefroloji",
-   "slug": "polikistik-bobrek-ekstrarenal",
-   "baslik": "ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar"
+   "slug": "tubulointerstisiyel-hastaliklar",
+   "baslik": "Tübüler ve İnterstisiyel Hastalıklar"
   },
   {
    "brans": "nefroloji",
-   "slug": "polikistik-bobrek-hastaligi-pkd",
-   "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
+   "slug": "aldosteron-mekanizmalari",
+   "baslik": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları"
   }
  ],
  "nefroloji/akut-interstisiyel-nefrit-ain": [
@@ -7066,13 +7091,13 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "kbh-hiperfosfatemi-yonetimi",
-   "baslik": "Kronik Böbrek Hastalığında Hiperfosfatemi Yönetimi"
+   "slug": "polikistik-bobrek-yenilikci-tedaviler",
+   "baslik": "ADPKD İleri Okuma: Araştırılan Yenilikçi ve Rejeneratif Moleküler Tedaviler"
   },
   {
    "brans": "nefroloji",
-   "slug": "kbh-mkb-kapsamli-inceleme",
-   "baslik": "KBH-Mineral ve Kemik Bozukluğu (CKD-MBD): Kapsamlı İnceleme"
+   "slug": "kbh-hiperfosfatemi-yonetimi",
+   "baslik": "Kronik Böbrek Hastalığında Hiperfosfatemi Yönetimi"
   }
  ],
  "nefroloji/polikistik-bobrek-kardiyovaskuler": [
@@ -7112,6 +7137,11 @@
    "brans": "nefroloji",
    "slug": "polikistik-bobrek-molekuler",
    "baslik": "ADPKD İleri Okuma: Moleküler Fizyopatoloji ve Sinyal Yolakları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "diyabet-farmakolojik-tedavi",
+   "baslik": "Diyabet Farmakoterapisi: OAD ve Yeni Nesil Ajanlar"
   },
   {
    "brans": "endokrinoloji",
@@ -7158,6 +7188,28 @@
    "brans": "nefroloji",
    "slug": "polikistik-bobrek-molekuler",
    "baslik": "ADPKD İleri Okuma: Moleküler Fizyopatoloji ve Sinyal Yolakları"
+  }
+ ],
+ "nefroloji/polikistik-bobrek-yenilikci-tedaviler": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "akromegali-ve-gigantizm",
+   "baslik": "Büyüme Hormonu Patolojileri: Akromegali ve Gigantizm"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "sglt2-hasta-gunler-kurali-sick-day",
+   "baslik": "SGLT2 İnhibitörleri: Hasta Günler Kuralı (Sick Day Rules)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
+   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler",
+   "baslik": "SGLT2 İnhibitörleri: Pleiotropik Etkiler ve Advers Profil"
   }
  ],
  "nefroloji/renal-arter-stenozu-ras": [
@@ -7329,23 +7381,23 @@
  "nefroloji/tubulointerstisiyel-hastaliklar": [
   {
    "brans": "nefroloji",
-   "slug": "asit-baz-denge-bozukluklari",
-   "baslik": "Asit-Baz Denge Bozuklukları"
+   "slug": "polikistik-bobrek-hastaligi-pkd",
+   "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
   },
   {
    "brans": "nefroloji",
-   "slug": "diuretikler",
-   "baslik": "Klinik Farmakoloji: Diüretikler ve Etki Mekanizmaları"
+   "slug": "polikistik-bobrek-tedavi",
+   "baslik": "ADPKD İleri Okuma: Uzman Düzeyi Tedavi ve Yönetim Kılavuzu"
   },
   {
    "brans": "nefroloji",
-   "slug": "farmakoloji-finerenon",
-   "baslik": "Yeni Nesil ns-MRA Finerenon"
+   "slug": "renovaskuler-hastaliklar",
+   "baslik": "Trombotik ve Renovasküler Hastalıklar"
   },
   {
    "brans": "nefroloji",
-   "slug": "glomeruler-hastaliklar",
-   "baslik": "Glomerüler Hastalıklar"
+   "slug": "aldosteron-mekanizmalari",
+   "baslik": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları"
   }
  ],
  "nefroloji/zona-glomeruloza-steroid": [

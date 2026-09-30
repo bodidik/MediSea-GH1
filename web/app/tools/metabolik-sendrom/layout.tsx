@@ -58,8 +58,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/gastroenteroloji/colyak-beslenme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları
+              <Link href="/topics/nefroloji/polikistik-bobrek-metabolik-sendrom" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu
               </Link>
             </li>
           </ul>

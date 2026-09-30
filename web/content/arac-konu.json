@@ -1459,6 +1459,13 @@
         "eslesen": "eGFR"
       }
     ],
+    "nefroloji/polikistik-bobrek-yenilikci-tedaviler": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
     "nefroloji/respiratuvar-alkaloz": [
       {
         "slug": "anion-gap",
@@ -7203,11 +7210,11 @@
     ]
   },
   "olcum": {
-    "konu": 470,
+    "konu": 471,
     "arac": 257,
-    "araciOlanKonu": 324,
+    "araciOlanKonu": 325,
     "konusuOlanArac": 151,
-    "bag": 591,
+    "bag": 592,
     "kavramBag": 426
   }
 }
