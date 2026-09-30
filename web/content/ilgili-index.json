@@ -2599,6 +2599,37 @@
    "baslik": "Candidozyma auris: Klinik Prezentasyon ve Pratik İpuçları"
   }
  ],
+ "enfeksiyon/ceftazidim-avibaktam": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "fosfomisin-cza-sinerjisi",
+   "baslik": "Fosfomisin ve Ceftazidime-Avibactam (CZA) Sinerjisi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "fosfomisin-beta-laktam-sinerji",
+   "baslik": "Fosfomisin ve Beta-Laktam Sinerjisi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "febril-notropeni-konu",
+   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
+  }
+ ],
+ "enfeksiyon/ceftazidim-avibaktam-mbl-aztreonam": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "fosfomisin-cza-sinerjisi",
+   "baslik": "Fosfomisin ve Ceftazidime-Avibactam (CZA) Sinerjisi"
+  }
+ ],
+ "enfeksiyon/ceftazidim-avibaktam-pbp3": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "ceftazidim-avibaktam-mbl-aztreonam",
+   "baslik": "İleri Okuma: MBL Üreten Enterobacterales’te Aztreonam-Avibaktam"
+  }
+ ],
  "enfeksiyon/cr-hvkp-endoftalmi-komplikasyonu": [
   {
    "brans": "enfeksiyon",
@@ -2836,6 +2867,11 @@
    "baslik": "Fosfomisin ve Ceftazidime-Avibactam (CZA) Sinerjisi"
   },
   {
+   "brans": "enfeksiyon",
+   "slug": "ceftazidim-avibaktam",
+   "baslik": "Ceftazidim-Avibaktam (CZA): Klinik Kullanım ve Direnç"
+  },
+  {
    "brans": "onkoloji",
    "slug": "febril-notropeni-konu",
    "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
@@ -2844,14 +2880,14 @@
    "brans": "enfeksiyon",
    "slug": "fosfomisin-daptomisin-biyofilm",
    "baslik": "Biyofilm İçi Sinerji ve Protez Eklem Enfeksiyonları"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "fosfomisin-daptomisin-mprf",
-   "baslik": "Daptomisin Direncinin Kırılması (mprF Mutasyon Baskılaması)"
   }
  ],
  "enfeksiyon/fosfomisin-cza-sinerjisi": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "ceftazidim-avibaktam",
+   "baslik": "Ceftazidim-Avibaktam (CZA): Klinik Kullanım ve Direnç"
+  },
   {
    "brans": "enfeksiyon",
    "slug": "crkp-enfeksiyonu",
@@ -2861,6 +2897,11 @@
    "brans": "enfeksiyon",
    "slug": "fosfomisin-beta-laktam-sinerji",
    "baslik": "Fosfomisin ve Beta-Laktam Sinerjisi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "ceftazidim-avibaktam-mbl-aztreonam",
+   "baslik": "İleri Okuma: MBL Üreten Enterobacterales’te Aztreonam-Avibaktam"
   },
   {
    "brans": "onkoloji",
@@ -3155,23 +3196,23 @@
  "enfeksiyon/mantar-enfeksiyon-ana-sayfa": [
   {
    "brans": "enfeksiyon",
-   "slug": "hucre-duvari-sentez-inhibitorleri",
-   "baslik": "Hücre Duvarı Sentez İnhibitörleri"
+   "slug": "antibiyotikler-ana-sayfa",
+   "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "linezolid-derleme",
-   "baslik": "Linezolid: Farmakolojik Özellikleri, Etki Spektrumu, Klinik Kullanımı ve Güvenlilik Profili"
+   "slug": "bruselloz",
+   "baslik": "Bruselloz: Epidemiyoloji, Mikrobiyoloji, Patogenez, Klinik Prezantasyon, Tanı ve Tedavi"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "prokalsitonin-genel",
-   "baslik": "Prokalsitonin (PCT) ve Klinik Kullanımı"
+   "slug": "candidozyma-auris-nozokomiyal-persistans",
+   "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "tigesiklin-derleme",
-   "baslik": "Tigesiklin (Tigecycline): İleri Düzey Derleme"
+   "slug": "ceftazidim-avibaktam",
+   "baslik": "Ceftazidim-Avibaktam (CZA): Klinik Kullanım ve Direnç"
   }
  ],
  "enfeksiyon/prokalsitonin-biyobelirtec-karsilastirmasi": [
@@ -3182,11 +3223,6 @@
   }
  ],
  "enfeksiyon/prokalsitonin-genel": [
-  {
-   "brans": "enfeksiyon",
-   "slug": "tigesiklin-derleme",
-   "baslik": "Tigesiklin (Tigecycline): İleri Düzey Derleme"
-  },
   {
    "brans": "enfeksiyon",
    "slug": "vanco-bobrek",
@@ -3201,6 +3237,11 @@
    "brans": "enfeksiyon",
    "slug": "antibiyotikler-ana-sayfa",
    "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz",
+   "baslik": "Bruselloz: Epidemiyoloji, Mikrobiyoloji, Patogenez, Klinik Prezantasyon, Tanı ve Tedavi"
   }
  ],
  "enfeksiyon/prokalsitonin-yukselme-paterni": [
@@ -7474,6 +7515,11 @@
   }
  ],
  "onkoloji/febril-notropeni-konu": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "ceftazidim-avibaktam",
+   "baslik": "Ceftazidim-Avibaktam (CZA): Klinik Kullanım ve Direnç"
+  },
   {
    "brans": "enfeksiyon",
    "slug": "fosfomisin-beta-laktam-sinerji",

@@ -1,0 +1,22 @@
+{
+  "title": "İleri Okuma: PBP-3 Değişiklikleri ve Beta-Laktam Direnci",
+  "meta": {
+    "updatedAt": "30 Eyl 2026",
+    "tags": ["Enfeksiyon", "PBP-3", "ftsI", "Aztreonam", "Cefiderocol", "Antibiyotik Direnci"],
+    "parent": "ceftazidim-avibaktam",
+    "order": 2,
+    "kaynaklar": [
+      {"ad":"IDSA 2026 Guidance on the Treatment of Antimicrobial-Resistant Gram-Negative Infections","yil":2026,"tur":"makale","url":"https://www.idsociety.org/practice-guideline/amr-guidance/"},
+      {"ad":"Activity of cefepime/zidebactam against MDR E. coli harbouring PBP3 insertions","yil":2020,"tur":"makale","url":"https://academic.oup.com/jac/article/75/12/3563/5890038"},
+      {"ad":"Effect of PBP3 alterations on beta-lactam susceptibility in E. coli","yil":2024,"tur":"makale","url":"https://pmc.ncbi.nlm.nih.gov/articles/10989025/"}
+    ]
+  },
+  "sections": [
+    {"heading":"Hedef ve mekanizma","html":"<p class=\"text-sm leading-relaxed text-slate-700\">PBP-3, Gram-negatif bakterilerde septum oluşumu ve hücre duvarı sentezinde rol alan bir penisilin bağlayan proteindir; <em>Enterobacterales</em> ve <em>Pseudomonas aeruginosa</em>’da <em>ftsI</em> geni tarafından kodlanır. Aztreonamın ve birçok sefalosporinin hücre duvarı hedeflerinden biridir. Hedef proteindeki değişiklikler bazı beta-laktamların bağlanmasını azaltabilir; etkisi tür, varyant ve eşlik eden direnç mekanizmalarına bağlıdır.</p>"},
+    {"heading":"E. coli’de YRIN/YRIK insersiyonları","html":"<p class=\"text-sm leading-relaxed text-slate-700\">Bazı NDM üreten <em>E. coli</em> soylarında PBP-3’te YRIN veya YRIK insersiyonları bildirilmiştir. Bu değişiklikler aztreonam-avibaktam ve cefiderocol duyarlılığını azaltabilir; klinik etkileri sıklıkla CMY tipi AmpC gibi eşlik eden mekanizmalarla birlikte değerlendirilir. Ancak insersiyon varlığı tek başına her izolatta direnç veya tedavi başarısızlığı anlamına gelmez. Fenotipik duyarlılık testi tedavi seçiminin temelidir.</p>"},
+    {"heading":"CZA + aztreonam ve cefiderocol açısından anlamı","html":"<p class=\"text-sm leading-relaxed text-slate-700\">Avibaktam serin beta-laktamazları baskılasa bile PBP-3 hedefindeki değişikliği geri çevirmez. Bu nedenle belirli PBP-3 varyantları, MBL varlığında kullanılan aztreonam-avibaktam/CZA + aztreonam rejimlerinin etkinliğini azaltabilir. IDSA 2026, YRIN/YRIK insersiyonları ve çoğu kez CMY tipi AmpC ile aztreonam-avibaktam ile cefiderocol duyarlılığında azalma bildirmekte; duyarlılık testinin önemini vurgulamaktadır.</p>"},
+    {"heading":"P. aeruginosa: aynı mekanizma, farklı mutasyonlar","html":"<p class=\"text-sm leading-relaxed text-slate-700\"><em>P. aeruginosa</em>’da <em>ftsI</em>/PBP-3 değişiklikleri direnç ağına katkı sağlayabilir; ancak <em>E. coli</em>’deki YRIN/YRIK insersiyonlarıyla aynı değişiklikler gibi sunulmamalıdır. CZA veya diğer yeni beta-laktamlara direnç çoğunlukla AmpC (PDC) değişikliği/aşırı üretimi, geçirgenlik, eflüks ve hedef değişikliklerinin farklı bileşimlerinden doğar. DTR/MBL-üreten <em>P. aeruginosa</em> için etkinlik oranlarını tek bir mekanizmaya bağlamak doğru değildir.</p>"},
+    {"heading":"Çift PBP hedefleme: araştırma yaklaşımı","html":"<p class=\"text-sm leading-relaxed text-slate-700\">Zidebaktam ve nacubaktam, bazı beta-laktamazları inhibe etmenin yanı sıra PBP-2’ye bağlanarak beta-laktam etkinliğini artırabilen moleküllerdir; cefepim ise başlıca PBP-3’ü hedefler. Cefepim-zidebaktam kombinasyonu, PBP-3 insersiyonlu bazı MDR <em>E. coli</em> izolatlarında laboratuvar ortamında etkinlik göstermiştir. Bu sonuç klinik etkinliğin kanıtı veya tüm suşlarda mutasyonu aşmanın garantisi değildir. Geliştirme/ruhsat durumu ülke ve tarihe göre değişebileceğinden rutin tedavi önerisi olarak yorumlanmamalıdır.</p>"},
+    {"heading":"Klinik çıkarım","html":"<ul class=\"list-disc list-inside space-y-2 text-sm text-slate-700\"><li>Mekanizma bilgisi duyarlılık testinin yerini tutmaz.</li><li>Tür, PBP-3 varyantı ve eşlik eden beta-laktamazlar birlikte değerlendirilmelidir.</li><li>Dirençli enfeksiyonlarda klinik mikrobiyoloji ve enfeksiyon hastalıkları uzmanıyla karar verilmelidir.</li></ul><p class=\"text-sm leading-relaxed text-slate-700 mt-3\"><a class=\"text-teal-700 underline font-semibold\" href=\"/topics/enfeksiyon/ceftazidim-avibaktam\">Ana CZA konusuna dön</a></p>"}
+  ]
+}
