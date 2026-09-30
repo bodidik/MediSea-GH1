@@ -3,8 +3,8 @@
   "meta": {
     "updatedAt": "30 Eyl 2026",
     "tags": ["Enfeksiyon", "Antimikrobiyal Tedavi", "Ceftazidim-Avibaktam", "CZA", "CRE", "Pseudomonas"],
-    "parent": null,
-    "order": 20,
+    "parent": "antibiyotikler-ana-sayfa",
+    "order": 5,
     "kaynaklar": [
       {"ad":"IDSA 2026 Guidance on the Treatment of Antimicrobial-Resistant Gram-Negative Infections","yil":2026,"tur":"makale","url":"https://www.idsociety.org/practice-guideline/amr-guidance/"},
       {"ad":"AVYCAZ (ceftazidime and avibactam) Prescribing Information","yil":2025,"tur":"makale","url":"https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/206494s013lbl.pdf"},

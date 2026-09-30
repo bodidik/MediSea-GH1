@@ -3264,6 +3264,11 @@
  "enfeksiyon/tigesiklin-derleme": [
   {
    "brans": "enfeksiyon",
+   "slug": "ceftazidim-avibaktam",
+   "baslik": "Ceftazidim-Avibaktam (CZA): Klinik Kullanım ve Direnç"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "fidaksomisin-ileri-duzey",
    "baslik": "Fidaksomisin: Clostridioides difficile Yönetiminde İleri Düzey Derleme"
   },
