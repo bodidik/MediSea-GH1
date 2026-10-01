@@ -52,31 +52,44 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
          damgası) Mongo `_id`sine bakıyor. E-postayla eşlenir: kayıtlı hesap
          varsa ona bağlanır (aynı kişi, Google e-postayı doğruladı), yoksa
          parolasız hesap açılır. Veritabanı yoksa giriş DÜŞER — Mongo kimliği
-         olmayan oturum uygulamanın geri kalanında sessizce kırılırdı. */
+         olmayan oturum uygulamanın geri kalanında sessizce kırılırdı.
+
+         İLK SÜRÜM SESSİZCE DÜŞÜYORDU (canlıda, 1 Eki): hata yakalanıp `null`
+         dönülüyordu → Auth.js oturumu açmadan geri adrese yolluyor, kullanıcı
+         ana sayfaya "girişsiz" düşüyor, günlükte TEK satır yok. Kayıtlı
+         hesapta `save()` kaydın TAMAMINI yeniden doğruluyordu (eski kayıttaki
+         bir alan kurala uymazsa düşer). Şimdi: tek atomik upsert (yalnız
+         değişen alan yazılır), hata günlüğe yazılıp FIRLATILIR → `pages.error`
+         ile `/giris?error=…` Türkçe uyarı gösterir. */
       if (params.user && params.account?.provider === 'google') {
         const eposta = params.user.email?.toLowerCase();
-        if (!eposta) return null as never;
+        if (!eposta) throw new Error('Google profili e-posta taşımıyor');
         try {
           await dbConnect();
-          let k = await User.findOne({ email: eposta });
-          if (!k) {
-            k = await User.create({
-              name: params.user.name || eposta.split('@')[0],
-              email: eposta,
-              googleId: params.account.providerAccountId,
-              plan: 'free',
-            });
-          } else if (!k.googleId) {
-            k.googleId = params.account.providerAccountId;
-            await k.save();
-          }
+          const k = await User.findOneAndUpdate(
+            { email: eposta },
+            {
+              $set: { googleId: params.account.providerAccountId },
+              $setOnInsert: {
+                name: params.user.name || eposta.split('@')[0],
+                email: eposta,
+                plan: 'free',
+                institution: null,
+                password: null,
+              },
+            },
+            { upsert: true, returnDocument: 'after' }
+          ).lean();
+          if (!k) throw new Error('kullanıcı kaydı dönmedi');
           token.id = k._id.toString();
           token.plan = k.plan;
           token.institution = k.institution ?? null;
           token.sonKontrol = Math.floor(Date.now() / 1000);
           return token as never;
-        } catch {
-          return null as never;
+        } catch (e) {
+          const h = e as { name?: string; message?: string; code?: unknown };
+          console.error('[google-giris] hesap eşlenemedi:', h?.name, h?.code ?? '', h?.message);
+          throw e;
         }
       }
 

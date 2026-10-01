@@ -32,5 +32,8 @@ export const authConfig = {
 
   pages: {
     signIn: '/giris',
+    /* Auth.js'nin İngilizce, çıkışsız hata sayfası yerine giriş sayfası
+       `?error=…` ile Türkçe uyarı gösterir (app/giris/page.tsx). */
+    error: '/giris',
   },
 } satisfies NextAuthConfig;

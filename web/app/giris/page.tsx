@@ -13,8 +13,12 @@ import { geriAdresi, geriyleBagla } from '@/app/lib/geri';
    /giris'te 0 başlık, kardeşi /kayit'ta 1). Sınır artık yalnızca bu uyarıyı
    sarıyor; form ve başlık sunucuda basılıyor. */
 function GirisUyarisi() {
-  const gerekli = useSearchParams().get('gerekli');
+  const ara = useSearchParams();
+  const gerekli = ara.get('gerekli');
+  const hata = ara.get('error');
   const uyari =
+    hata === 'AccessDenied' ? 'Google girişi reddedildi: Google hesabının e-posta adresi doğrulanmamış görünüyor. E-postayla giriş yapabilir ya da kayıt olabilirsin.' :
+    hata ? 'Google ile giriş şu an tamamlanamadı. Birazdan tekrar dene ya da e-posta ve şifreyle giriş yap.' :
     gerekli === 'premium'   ? 'Bu alana erişmek için Premium üyelik gereklidir.' :
     gerekli === 'kayseritip'? 'Bu alan yalnızca KayseriTıp üyelerine açıktır.' :
     null;
