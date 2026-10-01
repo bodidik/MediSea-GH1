@@ -21,9 +21,10 @@ const M = sozluk(metin);
  * düğme tam da ilk bakışta YOKTU. Tarif, basınca hiçbir şey yapmayan bir
  * düğme değil — ekleme yolunu gösteren bir düğme.
  *
- * Görünme kuralı: kurulum olayı varsa her cihazda; yoksa yalnız dokunmatik
- * cihazda (masaüstünde tarif gürültü). Uygulama olarak açılmışsa (standalone)
- * hiç çizilmez — zaten ana ekrandan gelinmiş.
+ * Görünme kuralı: her cihazda (kullanıcı kararı, 30 Eyl: masaüstünde de
+ * kısayol önerilsin). Masaüstünde ad "Masaüstüne kısayol ekle" olur, tarif
+ * tarayıcıya göre (chrome · edge · safari · firefox). Uygulama olarak
+ * açılmışsa (standalone) hiç çizilmez — zaten kısayoldan gelinmiş.
  *
  * Olay kök layout'taki satır içi betikle yakalanır (`app/lib/kurulum.ts`) ve
  * yakalandığı andaki MANİFESTE aittir: site sayfasında yakalanan olay bir araç
@@ -48,15 +49,25 @@ function gecerliIstem(): KurulumOlayi | null {
   return l && l.getAttribute("href") === k.manifest ? k.olay : null;
 }
 
-type Platform = "android" | "samsung" | "ios" | "diger";
+type Platform =
+  | "android" | "samsung" | "ios" | "diger"
+  | "chrome" | "edge" | "safari" | "firefox" | "masaustuDiger";
 
-function platformBul(): Platform {
+function platformBul(dokunmatik: boolean): Platform {
   const ua = navigator.userAgent;
-  if (/SamsungBrowser/i.test(ua)) return "samsung";
-  // iPadOS 13+ kendini Mac olarak tanıtıyor; dokunma noktası ayırıyor.
-  if (/iPad|iPhone|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) return "ios";
-  if (/Android/i.test(ua)) return "android";
-  return "diger";
+  if (dokunmatik) {
+    if (/SamsungBrowser/i.test(ua)) return "samsung";
+    // iPadOS 13+ kendini Mac olarak tanıtıyor; dokunma noktası ayırıyor.
+    if (/iPad|iPhone|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) return "ios";
+    if (/Android/i.test(ua)) return "android";
+    return "diger";
+  }
+  // Sıra önemli: Edge ve Opera "Chrome" dizesini de taşıyor.
+  if (/Edg\//.test(ua)) return "edge";
+  if (/Firefox\//.test(ua)) return "firefox";
+  if (/Chrome\/|Chromium\//.test(ua)) return "chrome";
+  if (/Macintosh/.test(ua) && /Safari\//.test(ua)) return "safari";
+  return "masaustuDiger";
 }
 
 function uygulamaIcinde(): boolean {
@@ -70,11 +81,17 @@ export default function AnaEkranaEkle({
   etiket,
   className,
   tarifClassName,
+  ikon = false,
+  masaustuEtiket,
 }: {
   etiket: string;
+  /** Masaüstünde gösterilecek ad; verilmezse sözlükteki genel ad. */
+  masaustuEtiket?: string;
   className: string;
   /** Tarif paragrafının sınıfı — açık ve koyu zeminde farklı. */
   tarifClassName: string;
+  /** Yalnız simge çizilir, etiket erişilebilir ad olur (dar başlık şeridi). */
+  ikon?: boolean;
 }) {
   const t = M(useDil());
   const [istem, setIstem] = React.useState<KurulumOlayi | null>(null);
@@ -82,13 +99,18 @@ export default function AnaEkranaEkle({
      belirir, sunucu HTML'i cihazdan bağımsız kalır. */
   const [tarifYolu, setTarifYolu] = React.useState<Platform | null>(null);
   const [acik, setAcik] = React.useState(false);
+  const [masaustu, setMasaustu] = React.useState(false);
   const tarifId = React.useId();
+  /* Masaüstünde "ana ekran" yok — aynı düğme masaüstü kısayolu önerir. */
+  const ad = masaustu ? (masaustuEtiket ?? t.masaustu) : etiket;
 
   React.useEffect(() => {
     const oku = () => setIstem(gecerliIstem());
     oku();
-    if (!uygulamaIcinde() && window.matchMedia("(pointer: coarse)").matches) {
-      setTarifYolu(platformBul());
+    if (!uygulamaIcinde()) {
+      const dokunmatik = window.matchMedia("(pointer: coarse)").matches;
+      setMasaustu(!dokunmatik);
+      setTarifYolu(platformBul(dokunmatik));
     }
     window.addEventListener("kurulum-hazir", oku);
     return () => window.removeEventListener("kurulum-hazir", oku);
@@ -101,8 +123,11 @@ export default function AnaEkranaEkle({
       <button
         type="button"
         className={className}
+        aria-label={ikon ? ad : undefined}
+        title={ikon ? ad : undefined}
         aria-expanded={istem ? undefined : acik}
-        aria-controls={istem ? undefined : tarifId}
+        /* Tarif KOŞULLU çiziliyor; kapalıyken var olmayan kimliği gösterme. */
+        aria-controls={!istem && acik ? tarifId : undefined}
         onClick={async () => {
           if (!istem) {
             setAcik((a) => !a);
@@ -116,7 +141,7 @@ export default function AnaEkranaEkle({
         }}
       >
         <span aria-hidden="true">📲</span>
-        {" " + etiket}
+        {ikon ? null : " " + ad}
       </button>
       {!istem && acik && tarifYolu && (
         <p id={tarifId} className={tarifClassName}>

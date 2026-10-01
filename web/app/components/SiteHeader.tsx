@@ -6,6 +6,7 @@ import { useRouter, usePathname } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import { searchAction } from "@/app/actions"; // Senin orijinal arama eylemin
 import { SPECIALTIES } from "@/app/lib/specialties";
+import AnaEkranaEkle from "@/app/components/AnaEkranaEkle";
 
 // Arama sonucu tipi
 type SearchResult = {
@@ -649,6 +650,21 @@ export default function SiteHeader() {
             </>
           )}
 
+          {/* ANA EKRANA EKLE — yalnız simge; tarif başlığın ALTINDA açılır
+              kutu (başlık `sticky`, `absolute` ona göre konumlanır).
+              Genişlik eşiği ÖLÇÜLDÜ (simge 44px + boşluk = 50px ister):
+              oturum kapalıyken 320px'te belge 39px taşıyordu, 360px'te 0.
+              Oturum açıkken ad kutusu (en çok 160px) simgesiz bile 390px'e
+              kadar taşıyor; simge onu 50px daha büyütürdü — orada `sm`.
+              Daha dar ekranda simge menüde duruyor. */}
+          <AnaEkranaEkle
+            ikon
+            etiket="MediSea'yı ana ekrana ekle"
+            masaustuEtiket="MediSea'yı masaüstüne ekle"
+            className={`${girisli ? "hidden sm:flex" : "hidden min-[360px]:flex"} items-center justify-center w-11 h-11 rounded-full border border-slate-200 text-lg hover:border-blue-300 transition-colors shrink-0`}
+            tarifClassName="absolute right-3 top-full mt-2 w-[min(20rem,calc(100vw-1.5rem))] rounded-2xl border border-blue-200 bg-white p-4 text-sm font-semibold leading-relaxed text-blue-950 shadow-lg"
+          />
+
           {/* HAMBURGER (branşlar / araçlar / premium - 2xl altında) */}
           <button
             ref={menuButonRef}
@@ -747,6 +763,13 @@ export default function SiteHeader() {
               >
                 <span aria-hidden="true">🧪</span> KLİNİK ARAÇLAR
               </Link>
+              {/* Dokunmatik cihazda ya da tarayıcı kurulum sunduğunda çizilir. */}
+              <AnaEkranaEkle
+                etiket="ANA EKRANA EKLE"
+                masaustuEtiket="MASAÜSTÜNE EKLE"
+                className="bg-slate-50 hover:bg-slate-100 border border-slate-200 text-blue-950 text-xs font-black tracking-widest px-4 py-3 rounded-2xl flex items-center justify-center gap-2 transition-all"
+                tarifClassName="sm:col-span-2 rounded-2xl border border-blue-200 bg-blue-50 px-4 py-3 text-sm font-semibold leading-relaxed text-blue-950"
+              />
             </div>
 
             {/* Giriş / Çıkış (md altı - sağdaki link gizliyken) */}

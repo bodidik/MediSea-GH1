@@ -91,6 +91,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               {/* Dokunmatik cihazda ya da tarayıcı kurulum sunduğunda çizilir. */}
               <AnaEkranaEkle
                 etiket="MediSea'yı ana ekrana ekle"
+                masaustuEtiket="MediSea'yı masaüstüne ekle"
                 className="rounded-xl border-2 border-blue-700 px-4 py-3 text-sm font-black text-white hover:bg-blue-900"
                 tarifClassName="mt-3 max-w-sm text-sm font-semibold leading-relaxed text-white"
               />

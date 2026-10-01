@@ -4,6 +4,12 @@
     "samsung": "Alttaki ≡ menüsünü aç, “Sayfayı ekle” seçeneğine dokun ve “Ana ekran”ı seç.",
     "ios": "Safari'de alttaki Paylaş düğmesine (yukarı oklu kare) dokun ve “Ana Ekrana Ekle”yi seç.",
     "diger": "Tarayıcı menüsünden “Ana ekrana ekle” seçeneğini kullan.",
+    "chrome": "Sağ üstteki ⋮ menüsünden “Yayınla, kaydet ve paylaş” → “Kısayol oluştur…” seç; “Pencere olarak aç” kutusunu işaretlersen ayrı bir pencerede açılır.",
+    "edge": "Sağ üstteki … menüsünden “Uygulamalar” → “Bu siteyi uygulama olarak yükle” seç.",
+    "safari": "Safari'nin Dosya menüsünden “Dock'a Ekle” seçeneğini kullan.",
+    "firefox": "Firefox masaüstü kısayolu oluşturmuyor: adres çubuğunun solundaki kilit simgesini masaüstüne sürükle ya da sayfayı yer imlerine ekle (Ctrl+D).",
+    "masaustuDiger": "Tarayıcı menüsünde “Kısayol oluştur” ya da “Uygulama olarak yükle” seçeneğini ara; yoksa sayfayı yer imlerine ekle.",
+    "masaustu": "Masaüstüne kısayol ekle",
     "kapat": "Kapat"
   },
   "en": {
@@ -11,6 +17,12 @@
     "samsung": "Open the ≡ menu at the bottom, tap “Add page to” and choose “Home screen”.",
     "ios": "In Safari, tap the Share button (a square with an up arrow) and choose “Add to Home Screen”.",
     "diger": "Use “Add to Home screen” in the browser menu.",
+    "chrome": "In the ⋮ menu at the top right, choose “Cast, save and share” → “Create shortcut…”; tick “Open as window” to open it in its own window.",
+    "edge": "In the … menu at the top right, choose “Apps” → “Install this site as an app”.",
+    "safari": "In Safari's File menu, choose “Add to Dock”.",
+    "firefox": "Firefox does not create desktop shortcuts: drag the padlock icon left of the address bar onto your desktop, or bookmark the page (Ctrl+D).",
+    "masaustuDiger": "Look for “Create shortcut” or “Install as app” in the browser menu; otherwise bookmark the page.",
+    "masaustu": "Add a desktop shortcut",
     "kapat": "Close"
   }
 }
