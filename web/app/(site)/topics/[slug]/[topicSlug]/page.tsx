@@ -25,6 +25,7 @@ import { htmlKapat } from "@/lib/icerik-html";
 import { kaynaklariAl, kaynakcaAl } from "@/lib/kaynaklar";
 import KaynakListesi from "@/app/components/KaynakListesi";
 import KaynakcaBlogu from "@/app/components/KaynakcaBlogu";
+import PdfIndir from "@/app/components/PdfIndir";
 
 /**
  * force-dynamic KALDIRILDI, yerine ISR.
@@ -655,6 +656,7 @@ export default async function TopicDetailPage({
                   </div>
                 ) : null;
               })()}
+              <PdfIndir baslik={topicItem.title} />
             </div>
 
             {/* Alt Başlıklar Menüsü (Hub Çocukları) — konuyu bulana kadar menü açılmaya devam eder */}

@@ -7,6 +7,7 @@ import { useSession, signOut } from "next-auth/react";
 import { searchAction } from "@/app/actions"; // Senin orijinal arama eylemin
 import { SPECIALTIES } from "@/app/lib/specialties";
 import AnaEkranaEkle from "@/app/components/AnaEkranaEkle";
+import { geriyleBagla } from "@/app/lib/geri";
 
 // Arama sonucu tipi
 type SearchResult = {
@@ -611,10 +612,10 @@ export default function SiteHeader() {
               {/* py-1.5: 20px yüksekliğindeydi. `hidden md:block` olduğu için
                   telefon genişliğinde hiç render edilmiyor — bu yüzden
                   önceki dokunma hedefi taramalarında görünmedi. */}
-              <Link href="/giris" className="hidden md:block py-1.5 text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors">
+              <Link href={geriyleBagla("/giris", suAnkiYol)} className="hidden md:block py-1.5 text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors">
                 Giriş
               </Link>
-              <Link href="/kayit" className="bg-blue-950 text-white text-xs sm:text-sm font-bold px-3 sm:px-6 py-2.5 rounded-full hover:bg-blue-800 hover:shadow-lg transition-all active:scale-95 flex items-center gap-2 whitespace-nowrap">
+              <Link href={geriyleBagla("/kayit", suAnkiYol)} className="bg-blue-950 text-white text-xs sm:text-sm font-bold px-3 sm:px-6 py-2.5 rounded-full hover:bg-blue-800 hover:shadow-lg transition-all active:scale-95 flex items-center gap-2 whitespace-nowrap">
                 <span>Üye Ol</span>
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse hidden sm:block"></span>
               </Link>
@@ -783,7 +784,7 @@ export default function SiteHeader() {
                 </button>
               ) : (
                 <Link
-                  href="/giris"
+                  href={geriyleBagla("/giris", suAnkiYol)}
                   onClick={() => setMenuOpen(false)}
                   className="block text-center text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors py-2"
                 >

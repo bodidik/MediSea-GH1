@@ -1,5 +1,6 @@
 import NextAuth from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
+import Google from 'next-auth/providers/google';
 import bcrypt from 'bcryptjs';
 import { dbConnect } from '@/lib/db';
 import User from '@/lib/models/User';
@@ -35,10 +36,49 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
   callbacks: {
     ...authConfig.callbacks,
+    /* Google yalnız DOĞRULANMIŞ e-postayla kabul edilir: hesap e-postaya göre
+       eşleniyor, doğrulanmamış adres başkasının hesabına girmek demek olurdu. */
+    async signIn({ account, profile }) {
+      if (account?.provider === 'google') return profile?.email_verified === true;
+      return true;
+    },
     async jwt(params) {
       const temel = await authConfig.callbacks.jwt(params);
       const token = temel as Record<string, unknown> | null;
       if (!token) return token as never;
+
+      /* GOOGLE GİRİŞİ → MONGO KULLANICISI. Adaptör yok; jetondaki `id` Google'ın
+         kimliği olarak geliyor ve bütün uygulama (senkron, ilerleme, parola
+         damgası) Mongo `_id`sine bakıyor. E-postayla eşlenir: kayıtlı hesap
+         varsa ona bağlanır (aynı kişi, Google e-postayı doğruladı), yoksa
+         parolasız hesap açılır. Veritabanı yoksa giriş DÜŞER — Mongo kimliği
+         olmayan oturum uygulamanın geri kalanında sessizce kırılırdı. */
+      if (params.user && params.account?.provider === 'google') {
+        const eposta = params.user.email?.toLowerCase();
+        if (!eposta) return null as never;
+        try {
+          await dbConnect();
+          let k = await User.findOne({ email: eposta });
+          if (!k) {
+            k = await User.create({
+              name: params.user.name || eposta.split('@')[0],
+              email: eposta,
+              googleId: params.account.providerAccountId,
+              plan: 'free',
+            });
+          } else if (!k.googleId) {
+            k.googleId = params.account.providerAccountId;
+            await k.save();
+          }
+          token.id = k._id.toString();
+          token.plan = k.plan;
+          token.institution = k.institution ?? null;
+          token.sonKontrol = Math.floor(Date.now() / 1000);
+          return token as never;
+        } catch {
+          return null as never;
+        }
+      }
 
       const simdi = Math.floor(Date.now() / 1000);
       const sonKontrol = typeof token.sonKontrol === 'number' ? token.sonKontrol : 0;
@@ -66,6 +106,10 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   },
 
   providers: [
+    /* Anahtarlar (AUTH_GOOGLE_ID / AUTH_GOOGLE_SECRET) yoksa sağlayıcı HİÇ
+       eklenmez; giriş sayfası düğmeyi `/api/auth/providers`a bakarak çizer,
+       yani yarım kurulumda tıklanınca hata veren bir düğme görünmez. */
+    ...(process.env.AUTH_GOOGLE_ID && process.env.AUTH_GOOGLE_SECRET ? [Google] : []),
     Credentials({
       name: 'credentials',
       credentials: {
@@ -77,7 +121,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
         await dbConnect();
         const user = await User.findOne({ email: credentials.email }).lean();
-        if (!user) return null;
+        /* Google'la açılmış hesabın parolası yok; parola sıfırlamayla edinir. */
+        if (!user || !user.password) return null;
 
         const ok = await bcrypt.compare(credentials.password as string, user.password);
         if (!ok) return null;

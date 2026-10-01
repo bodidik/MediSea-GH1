@@ -403,6 +403,21 @@ alır ve ilk olan her yönde `<head>`deki doğru bağ (ölçüldü). Panel olay�
 atmaz — düğmeyi sahte `beforeinstallprompt` ile sür; gerçek Android'de
 sınanmadı.
 
+### Üyelik: Google girişi · `?geri=` · günlük PDF hakkı (1 Eki 2026)
+
+Ziyaretçi her şeyi kayıtsız gezer (middleware yalnız `/admin`, `/kayseritip`).
+**Google:** `auth.ts` sağlayıcıyı YALNIZ `AUTH_GOOGLE_ID`+`AUTH_GOOGLE_SECRET`
+varsa ekler; düğme (`GoogleIleDevam`) `/api/auth/providers`a bakar. Hesap
+e-postayla eşlenir (doğrulanmamış e-posta reddedilir), yoksa parolasız açılır
+(`User.password` artık isteğe bağlı, `googleId`). **`?geri=`** (`app/lib/geri.ts`)
+giriş/kayıttan kalınan sayfaya döndürür; yalnız `/` ile başlayan site içi yol
+(`//` ve `/\` reddedilir — ölçüldü). **PDF:** `PdfIndir` = tarayıcı baskısı;
+üye günde `GUNLUK_PDF_HAKKI` (3) konu, sayaç SUNUCUDA `User.pdfIndirme`
+(Türkiye günü, aynı konu hak yemez, atomik — 5 eşzamanlı istekte 3 geçti).
+Ctrl+P'yi engellemez; kilit değil kolaylık. Ziyaretçiye "üye girişi gerekir"
+kutusu. Ölçüm: geçici `mongo:6.0` kabı + YALNIZ o sunucuya ait `AUTH_SECRET`
+ile üretilmiş jeton (`.env.local` anahtarıyla üretme — canlıda geçerli olabilir).
+
 ### Görsel rotalarının (opengraph-image) üç tuzağı
 
 Üçü de sessizce kırıyor: hata mesajı görünmüyor, istek bağlantısı düşüyor.

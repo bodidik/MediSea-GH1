@@ -3,6 +3,8 @@ import { Suspense, useState } from 'react';
 import { signIn } from 'next-auth/react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+import GoogleIleDevam from '@/app/components/GoogleIleDevam';
+import { geriAdresi, geriyleBagla } from '@/app/lib/geri';
 
 /* Sorguya bağlı TEK parça bu. Ayrı bir bileşen, çünkü `useSearchParams()`
    kullanan alt ağacı Next sunucuda HİÇ üretmiyor — yalnızca fallback
@@ -45,7 +47,7 @@ function GirisFormu() {
     if (res?.error) {
       setHata('E-posta veya şifre hatalı.');
     } else {
-      router.push('/');
+      router.push(geriAdresi());
       router.refresh();
     }
   }
@@ -92,6 +94,8 @@ function GirisFormu() {
         <Suspense fallback={null}>
           <GirisUyarisi />
         </Suspense>
+
+        <GoogleIleDevam />
 
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           {/* htmlFor + id: etiketler vardı ama alana BAĞLI değildi; ölçümde
@@ -168,7 +172,7 @@ function GirisFormu() {
 
         <p style={{ textAlign: 'center', fontSize: '13px', color: '#4a6a8a', marginTop: '0.25rem' }}>
           Hesabın yok mu?{' '}
-          <Link href="/kayit" style={{ color: '#1a3a6b', fontWeight: 600, textDecoration: 'none', display: 'inline-block', padding: '4px 4px' }}>
+          <Link href="/kayit" onClick={(e) => { const g = geriAdresi(); if (g !== "/") { e.preventDefault(); router.push(geriyleBagla("/kayit", g)); } }} style={{ color: '#1a3a6b', fontWeight: 600, textDecoration: 'none', display: 'inline-block', padding: '4px 4px' }}>
             Kayıt ol
           </Link>
         </p>

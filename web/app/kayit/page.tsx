@@ -4,6 +4,8 @@ import { SIFRE_KISA_MESAJ, SIFRE_MIN } from '@/app/lib/kimlik';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import GoogleIleDevam from '@/app/components/GoogleIleDevam';
+import { geriAdresi, geriyleBagla } from '@/app/lib/geri';
 
 export default function KayitPage() {
   const router = useRouter();
@@ -111,7 +113,7 @@ export default function KayitPage() {
       setYukleniyor(false);
       return;
     }
-    router.push('/');
+    router.push(geriAdresi());
     router.refresh();
   }
 
@@ -167,6 +169,8 @@ export default function KayitPage() {
             Vurguların ve notların hesabına kaydedilir, cihazların arasında taşınır.
           </p>
         </div>
+
+        <GoogleIleDevam />
 
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           {/* htmlFor + id: etiketler görsel olarak duruyordu ama alana BAĞLI
@@ -227,7 +231,7 @@ export default function KayitPage() {
 
         <p style={{ textAlign: 'center', fontSize: '13px', color: '#4a6a8a', marginTop: '1.25rem' }}>
           Hesabın var mı?{' '}
-          <Link href="/giris" style={{ color: '#1a3a6b', fontWeight: 600, textDecoration: 'none', display: 'inline-block', padding: '4px 4px' }}>
+          <Link href="/giris" onClick={(e) => { const g = geriAdresi(); if (g !== "/") { e.preventDefault(); router.push(geriyleBagla("/giris", g)); } }} style={{ color: '#1a3a6b', fontWeight: 600, textDecoration: 'none', display: 'inline-block', padding: '4px 4px' }}>
             Giriş yap
           </Link>
         </p>

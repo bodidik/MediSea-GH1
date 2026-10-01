@@ -6,7 +6,12 @@ export type UserInstitution = 'kayseritip' | null;
 export interface IUser extends Document {
   name: string;
   email: string;
-  password: string;
+  /** Google ile açılmış hesapta YOK; parola sıfırlamayla edinilir. */
+  password?: string | null;
+  /** Google hesabının kimliği (sub); e-postayla eşlenen hesaba ilk Google girişinde yazılır. */
+  googleId?: string | null;
+  /** Günlük PDF hakkı: Türkiye günü + o gün indirilen konu yolları (lib/pdf-hak.ts). */
+  pdfIndirme?: { gun: string; konular: string[] } | null;
   plan: UserPlan;
   institution: UserInstitution;
   trialEndsAt: Date | null;
@@ -27,7 +32,9 @@ const UserSchema = new Schema<IUser>(
   {
     name:        { type: String, required: true },
     email:       { type: String, required: true, unique: true, lowercase: true, trim: true },
-    password:    { type: String, required: true },
+    password:    { type: String, default: null },
+    googleId:    { type: String, default: null },
+    pdfIndirme:  { type: { gun: String, konular: [String] }, default: null },
     plan:        { type: String, enum: ['free', 'member', 'premium'], default: 'free' },
     institution: { type: String, enum: ['kayseritip', null], default: null },
     trialEndsAt: { type: Date, default: null },
