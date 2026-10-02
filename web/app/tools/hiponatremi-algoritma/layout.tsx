@@ -58,8 +58,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/endokrinoloji/sclc-paraneoplastik-siadh" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı
+              <Link href="/topics/endokrinoloji/diabetes-insipidus" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Arginin Vazopressin Bozuklukları: AVP-D, SIADH ve Vaptan Tedavileri İleri Klinik Rehberi
               </Link>
             </li>
           </ul>

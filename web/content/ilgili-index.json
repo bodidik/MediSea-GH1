@@ -224,6 +224,23 @@
    "baslik": "Ektopik ACTH Sendromu: Etiyopatogenez, Hücresel Tanı Kriterleri ve Tedavi Algoritmaları"
   }
  ],
+ "endokrinoloji/diabetes-insipidus": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "kopeptin-ve-ndi-molekuler-analiz",
+   "baslik": "Kopeptin Algoritması ve NDI Moleküler Tedavi Paradoksları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "siadh-ods-ve-relowering",
+   "baslik": "Modül 5: ODS Patofizyolojisi ve Re-lowering (Geri Düşürme) Stratejileri"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "von-willebrand-hastaligi-vwd",
+   "baslik": "von Willebrand Hastalığı (vWD)"
+  }
+ ],
  "endokrinoloji/diabetes-mellitus-ana": [
   {
    "brans": "endokrinoloji",
@@ -1155,6 +1172,11 @@
  "endokrinoloji/kopeptin-ve-ndi-molekuler-analiz": [
   {
    "brans": "endokrinoloji",
+   "slug": "diabetes-insipidus",
+   "baslik": "Arginin Vazopressin Bozuklukları: AVP-D, SIADH ve Vaptan Tedavileri İleri Klinik Rehberi"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "siadh-avp-fizyolojisi",
    "baslik": "Modül 1: AVP Fizyolojisi, Reseptör Dinamikleri ve Kopeptin"
   },
@@ -2080,6 +2102,11 @@
    "baslik": "Hiponatremi: Patofizyolojik Mekanizmalar, Etiyolojik Sınıflandırma, Tanısal Yaklaşım ve Tedavi Protokolleri"
   },
   {
+   "brans": "endokrinoloji",
+   "slug": "diabetes-insipidus",
+   "baslik": "Arginin Vazopressin Bozuklukları: AVP-D, SIADH ve Vaptan Tedavileri İleri Klinik Rehberi"
+  },
+  {
    "brans": "hematoloji",
    "slug": "von-willebrand-hastaligi-vwd",
    "baslik": "von Willebrand Hastalığı (vWD)"
@@ -2088,11 +2115,6 @@
    "brans": "endokrinoloji",
    "slug": "hashimoto-ensefaliti",
    "baslik": "Hashimoto Ensefalopatisi (SREAT) ve Miksödem Psikozu Ayrımı"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hashimoto-ensefalopati-alfa-enolaz-otoantikor",
-   "baslik": "Hashimoto Ensefalopatisinde Alfa-Enolaz Otoantikorları ve Klinik Önemi"
   }
  ],
  "endokrinoloji/siadh-onb-derin-analiz": [
@@ -5432,6 +5454,11 @@
    "brans": "hematoloji",
    "slug": "hemofililer-ve-sekonder-hemostaz",
    "baslik": "Hemofililer ve Sekonder Hemostaz Bozuklukları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "diabetes-insipidus",
+   "baslik": "Arginin Vazopressin Bozuklukları: AVP-D, SIADH ve Vaptan Tedavileri İleri Klinik Rehberi"
   },
   {
    "brans": "endokrinoloji",

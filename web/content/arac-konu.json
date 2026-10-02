@@ -1900,6 +1900,32 @@
         "kaynak": "kavram"
       }
     ],
+    "endokrinoloji/diabetes-insipidus": [
+      {
+        "slug": "fraksiyonel-atilim",
+        "name": "Fraksiyonel Magnezyum ve Ürik Asit Atılımı",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "hiponatremi-algoritma",
+        "name": "Hiponatremi Tanı Algoritması",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "serbest-su-klirensi",
+        "name": "Elektrolitsiz Serbest Su Klirensi",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "sodium",
+        "name": "Sodyum Yönetimi",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      }
+    ],
     "endokrinoloji/diyabet-farmakolojik-tedavi": [
       {
         "slug": "hba1c-eag",
@@ -5524,6 +5550,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "endokrinoloji/diabetes-insipidus",
+        "baslik": "Arginin Vazopressin Bozuklukları: AVP-D, SIADH ve Vaptan Tedavileri İleri Klinik Rehberi",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "endokrinoloji/sclc-paraneoplastik-siadh",
         "baslik": "İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı",
         "eslesen": "SIADH",
@@ -5574,6 +5606,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "endokrinoloji/diabetes-insipidus",
+        "baslik": "Arginin Vazopressin Bozuklukları: AVP-D, SIADH ve Vaptan Tedavileri İleri Klinik Rehberi",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "endokrinoloji/sclc-paraneoplastik-siadh",
         "baslik": "İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı",
         "eslesen": "SIADH",
@@ -5594,12 +5632,6 @@
       {
         "yol": "endokrinoloji/siadh-sendromu",
         "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/siadh-tani-algoritmasi",
-        "baslik": "Modül 2: SIADH Tanı Kriterleri ve FE-Ürik Asit Analizi",
         "eslesen": "SIADH",
         "kaynak": "kavram"
       }
@@ -5624,6 +5656,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "endokrinoloji/diabetes-insipidus",
+        "baslik": "Arginin Vazopressin Bozuklukları: AVP-D, SIADH ve Vaptan Tedavileri İleri Klinik Rehberi",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "endokrinoloji/sclc-paraneoplastik-siadh",
         "baslik": "İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı",
         "eslesen": "SIADH",
@@ -5644,12 +5682,6 @@
       {
         "yol": "endokrinoloji/siadh-sendromu",
         "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/siadh-tani-algoritmasi",
-        "baslik": "Modül 2: SIADH Tanı Kriterleri ve FE-Ürik Asit Analizi",
         "eslesen": "SIADH",
         "kaynak": "kavram"
       }
@@ -5674,6 +5706,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "endokrinoloji/diabetes-insipidus",
+        "baslik": "Arginin Vazopressin Bozuklukları: AVP-D, SIADH ve Vaptan Tedavileri İleri Klinik Rehberi",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "endokrinoloji/sclc-paraneoplastik-siadh",
         "baslik": "İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı",
         "eslesen": "SIADH",
@@ -5694,12 +5732,6 @@
       {
         "yol": "endokrinoloji/siadh-sendromu",
         "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/siadh-tani-algoritmasi",
-        "baslik": "Modül 2: SIADH Tanı Kriterleri ve FE-Ürik Asit Analizi",
         "eslesen": "SIADH",
         "kaynak": "kavram"
       }
@@ -7210,11 +7242,11 @@
     ]
   },
   "olcum": {
-    "konu": 471,
+    "konu": 472,
     "arac": 257,
-    "araciOlanKonu": 325,
+    "araciOlanKonu": 326,
     "konusuOlanArac": 151,
-    "bag": 592,
-    "kavramBag": 426
+    "bag": 596,
+    "kavramBag": 430
   }
 }
