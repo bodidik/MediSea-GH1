@@ -248,6 +248,31 @@
         "kaynak": "kavram"
       }
     ],
+    "endokrinoloji/siadh-tedavi-protokolleri": [
+      {
+        "slug": "potasyum-replasman",
+        "name": "Potasyum Replasmanı",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "slug": "hiponatremi-algoritma",
+        "name": "Hiponatremi Tanı Algoritması",
+        "eslesen": "hiponatremi",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "serbest-su-klirensi",
+        "name": "Elektrolitsiz Serbest Su Klirensi",
+        "eslesen": "hiponatremi",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "sodium",
+        "name": "Sodyum Yönetimi",
+        "eslesen": "hiponatremi",
+        "kaynak": "kavram"
+      }
+    ],
     "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma": [
       {
         "slug": "potasyum-replasman",
@@ -2572,26 +2597,6 @@
         "kaynak": "kavram"
       }
     ],
-    "endokrinoloji/siadh-tedavi-protokolleri": [
-      {
-        "slug": "hiponatremi-algoritma",
-        "name": "Hiponatremi Tanı Algoritması",
-        "eslesen": "hiponatremi",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "serbest-su-klirensi",
-        "name": "Elektrolitsiz Serbest Su Klirensi",
-        "eslesen": "hiponatremi",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "sodium",
-        "name": "Sodyum Yönetimi",
-        "eslesen": "hiponatremi",
-        "kaynak": "kavram"
-      }
-    ],
     "endokrinoloji/tiroid-hastaliklari-ana": [
       {
         "slug": "tft",
@@ -4367,6 +4372,11 @@
       {
         "yol": "endokrinoloji/men1-osilodrostat-yan-etkiler",
         "baslik": "Osilodrostat: Yan Etki Profili ve Klinik Yönetim Protokolleri",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "yol": "endokrinoloji/siadh-tedavi-protokolleri",
+        "baslik": "Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü",
         "eslesen": "Potasyum Replasmanı"
       },
       {
@@ -7246,7 +7256,7 @@
     "arac": 257,
     "araciOlanKonu": 326,
     "konusuOlanArac": 151,
-    "bag": 596,
+    "bag": 597,
     "kavramBag": 430
   }
 }
