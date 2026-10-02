@@ -1,5 +1,6 @@
 // FILE: web/app/sitemap.ts
 import fs from "fs";
+import { hazirlaniyorMu } from "@/lib/hazirlaniyor";
 import path from "path";
 import type { MetadataRoute } from "next";
 import { siteUrl } from "@/lib/site";
@@ -96,7 +97,7 @@ function konular(brans: string): { slug: string; dosya: string }[] {
         .filter(({ dosya }) =>
           guvenliOku(() => {
             const veri = JSON.parse(fs.readFileSync(dosya, "utf-8"));
-            return veri?.meta?.hidden !== true;
+            return veri?.meta?.hidden !== true && !hazirlaniyorMu(veri);
           }, true)
         ),
     []

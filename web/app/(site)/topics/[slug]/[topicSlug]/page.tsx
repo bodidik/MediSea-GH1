@@ -26,6 +26,7 @@ import { kaynaklariAl, kaynakcaAl } from "@/lib/kaynaklar";
 import KaynakListesi from "@/app/components/KaynakListesi";
 import KaynakcaBlogu from "@/app/components/KaynakcaBlogu";
 import PdfIndir from "@/app/components/PdfIndir";
+import { hazirlaniyorMu } from "@/lib/hazirlaniyor";
 
 /**
  * force-dynamic KALDIRILDI, yerine ISR.
@@ -193,7 +194,7 @@ export async function generateMetadata({
   if (!veri) return { title: "Konu bulunamadı", robots: { index: false, follow: false } };
 
   const baslik = veri.title || topicSlug.replace(/-/g, " ");
-  const aciklama = ozetCikar(veri);
+  const aciklama = hazirlaniyorMu(veri) ? "" : ozetCikar(veri);
   const yol = `/topics/${slug}/${topicSlug}`;
 
   /**
@@ -224,7 +225,9 @@ export async function generateMetadata({
    * 404'e ÇEVRİLMİYOR — adresle erişim bilinçli bir karar (bkz.
    * `generateStaticParams` notu) ve paylaşılmış bağlantılar kırılmamalı.
    */
-  const gizli = veri?.meta?.hidden === true;
+  // Hazırlanıyor konusu: taslak metin özete de, arama motoruna da sızmasın.
+  const hazirlaniyor = hazirlaniyorMu(veri);
+  const gizli = veri?.meta?.hidden === true || hazirlaniyor;
 
   return {
     title: baslik,
@@ -301,13 +304,16 @@ export default async function TopicDetailPage({
    */
   const kullanilanTabloAdlari = new Set<string>();
 
+  // Taslak gövde gösterilmez; özet ve bölümler boş, yerine kart (lib/hazirlaniyor.ts).
+  const hazirlaniyor = hazirlaniyorMu(rawData);
+
   const topicItem = {
     slug: topicSlug,
     branch: slug,
     title: rawData.title || topicSlug.replace(/-/g, " "),
-    summary: kisaltmaAc(rawData.summary || rawData.meta?.summary || "", gorulenKisaltmalar),
+    summary: hazirlaniyor ? "" : kisaltmaAc(rawData.summary || rawData.meta?.summary || "", gorulenKisaltmalar),
     parent: rawData.meta?.parent || null,
-    sections: Array.isArray(rawData.sections)
+    sections: !hazirlaniyor && Array.isArray(rawData.sections)
       ? rawData.sections.map((s: any) => ({
           heading: s.heading || s.title || "Başlıksız Blok",
           // basliklariDuzenle: icerik HTML'i h4 ile basliyor ama bolum
@@ -537,7 +543,7 @@ export default async function TopicDetailPage({
       <JsonLd
         veri={konuSemasi({
           baslik: topicItem.title,
-          aciklama: ozetCikar(rawData),
+          aciklama: hazirlaniyor ? "" : ozetCikar(rawData),
           yol: `/topics/${slug}/${topicSlug}`,
           guncelleme: rawData?.meta?.updatedAt,
           etiketler: Array.isArray(rawData?.meta?.tags) ? rawData.meta.tags : undefined,
@@ -807,6 +813,24 @@ export default async function TopicDetailPage({
                   <Link
                     href={`/topics/${slug}`}
                     className="inline-block rounded-full bg-amber-900 px-5 py-2.5 text-xs font-black uppercase tracking-widest text-white transition-colors hover:bg-amber-800"
+                  >
+                    {bransAdi} başlıklarına dön
+                  </Link>
+                </div>
+              )}
+
+              {hazirlaniyor && (
+                <div className="bg-sky-50 border-2 border-sky-200 rounded-3xl p-6">
+                  <h2 className="text-base font-black text-blue-900 uppercase tracking-wide mb-2">
+                    Bu konu hazırlanıyor
+                  </h2>
+                  <p className="text-sm text-slate-700 font-medium leading-relaxed mb-4">
+                    Metni kaynaklarıyla birlikte yeniden yazıyoruz; hazır olduğunda bu sayfada yayımlanacak.
+                    Bu arada aynı branştaki diğer başlıklara göz atabilirsin.
+                  </p>
+                  <Link
+                    href={`/topics/${slug}`}
+                    className="inline-block rounded-full bg-blue-900 px-5 py-2.5 text-xs font-black uppercase tracking-widest text-white transition-colors hover:bg-blue-800"
                   >
                     {bransAdi} başlıklarına dön
                   </Link>
