@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { kisayolSusmali } from '@/app/lib/klavye';
 import { degistiBildir, guvenliDiziOku } from '@/app/lib/depo';
+import { premiumGunIsle } from '@/app/lib/premium-gun';
 
 interface Card {
   id: string;
@@ -16,6 +17,9 @@ interface Props {
   topic: string;
   backHref: string;
   setId: string;
+  /** Konunun soru seti (varsa) — bitiş ekranında "soruları çöz" köprüsü. */
+  quizHref?: string | null;
+  quizSoru?: number;
 }
 
 /** Yatay hareket bu eşiği geçerse tıklama değil, kaydırma sayılır (px). */
@@ -75,7 +79,7 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props) {
+export default function FlashcardPlayer({ cards, topic, backHref, setId, quizHref, quizSoru }: Props) {
   const [deck, setDeck] = useState<Card[]>(cards); // SSR'da orijinal sıra
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -210,7 +214,12 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
     setTimeout(() => setIndex(i => (i - 1 + total) % total), 150);
   }, [total]);
 
-  const flip = useCallback(() => setFlipped(f => !f), []);
+  // Yanıtı açmak çalışma eylemidir → günlük seri (app/lib/premium-gun.ts).
+  // Yan etki güncelleyicinin DIŞINDA: StrictMode güncelleyiciyi iki kez çağırır.
+  const flip = useCallback(() => {
+    if (!flipped) premiumGunIsle();
+    setFlipped(f => !f);
+  }, [flipped]);
 
   const toggleBilinen = useCallback(() => {
     if (!card) return;
@@ -316,6 +325,15 @@ export default function FlashcardPlayer({ cards, topic, backHref, setId }: Props
             >
               Baştan karıştır
             </button>
+            {quizHref && (
+              <a href={quizHref} style={{
+                padding: '12px', borderRadius: '10px', border: '0.5px solid #14532d',
+                background: '#14532d', color: '#fff', fontWeight: 600, fontSize: '13px',
+                textDecoration: 'none', textAlign: 'center',
+              }}>
+                Şimdi bu konunun {quizSoru ? `${quizSoru} sorusunu` : 'sorularını'} çöz →
+              </a>
+            )}
             <a href={backHref} style={{
               padding: '12px', borderRadius: '10px', border: '0.5px solid #d0e4f5',
               background: '#fff', color: '#4a6a8a', fontWeight: 500, fontSize: '13px',

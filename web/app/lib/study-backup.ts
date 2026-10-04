@@ -16,6 +16,7 @@ import type { NoteDoc } from "@/app/lib/study-index";
 import { BOZUK_EK, guvenliDiziOku, guvenliNesneOku } from "@/app/lib/depo";
 import { SEYIR_KEY, seyirBirlestir, seyirNormalize, seyirOku, type Seyir } from "@/app/lib/seyir";
 import { PUAN_KEY, puanBirlestir, puanBosMu, puanNormalize, type PuanKaydi } from "@/app/lib/xp";
+import { PREMIUM_GUN_KEY, premiumGunBirlestir, premiumGunNormalize, type PremiumGun } from "@/app/lib/premium-gun";
 
 const MARK_PREFIX = "medisea:marks:v2:";
 const NOTE_PREFIX = "medisea:notes:v1:";
@@ -63,6 +64,12 @@ export type Backup = {
    * birleştirdiği için TEKRARDA SABİT olmak zorunda.
    */
   puan: PuanKaydi;
+  /**
+   * Premium çalışma günlüğü (gün → eylem sayısı; app/lib/premium-gun.ts).
+   * Seri bundan ve `log`dan birlikte hesaplanır. Eski yedeklerde alan yok;
+   * `parseBackup` boş nesneye çevirir. Birleştirme: gün başına büyük olan.
+   */
+  pgun: PremiumGun;
 };
 
 export type BackupSummary = {
@@ -157,6 +164,7 @@ export function readAll(): Backup {
     kartlar,
     seyir: seyirOku(),
     puan: puanNormalize(guvenliNesneOku<unknown>(PUAN_KEY)),
+    pgun: premiumGunNormalize(guvenliNesneOku<unknown>(PREMIUM_GUN_KEY)),
   };
 }
 
@@ -224,6 +232,8 @@ function parseBackup(text: string): { b: Backup | null; hata?: string } {
       seyir: seyirNormalize(b.seyir),
       // Aynı gerekçe: puan alanı eklenmeden önceki yedeklerde yok.
       puan: puanNormalize(b.puan),
+      // Aynı gerekçe: premium günlüğü eklenmeden önceki yedeklerde yok.
+      pgun: premiumGunNormalize(b.pgun),
     },
   };
 }
@@ -312,7 +322,7 @@ export function applyImport(text: string, mode: ImportMode): { ok: boolean; hata
       // Yalnızca write()'ın GERİ KOYACAĞI anahtarları sil. Kullanıcı tercihleri
       // (notew, notepaper), tanıtım kartları (hint:*) ve senkron durumu (sync:*)
       // yedekte YOKTUR; silinirse geri gelmezler — bu sessiz veri kaybıdır.
-      const VERİ_ONEKI = [MARK_PREFIX, NOTE_PREFIX, REVIEW_KEY, INDEX_KEY, LOG_KEY, KART_PREFIX, SEYIR_KEY, PUAN_KEY];
+      const VERİ_ONEKI = [MARK_PREFIX, NOTE_PREFIX, REVIEW_KEY, INDEX_KEY, LOG_KEY, KART_PREFIX, SEYIR_KEY, PUAN_KEY, PREMIUM_GUN_KEY];
       const silinecek: string[] = [];
       for (let i = 0; i < localStorage.length; i++) {
         const k = localStorage.key(i);
@@ -380,7 +390,10 @@ export function applyImport(text: string, mode: ImportMode): { ok: boolean; hata
     // puan: kazanımlar birleşim, XP onlardan türer (tekrarda sabit)
     const puan = puanBirlestir(mevcut.puan, gelen.puan);
 
-    write({ app: "medisea", v: 1, at: Date.now(), marks, notes, review, index, log, kartlar, seyir, puan });
+    // premium günlüğü: gün başına BÜYÜK olan (log ile aynı gerekçe — toplama yok)
+    const pgun = premiumGunBirlestir(mevcut.pgun, gelen.pgun);
+
+    write({ app: "medisea", v: 1, at: Date.now(), marks, notes, review, index, log, kartlar, seyir, puan, pgun });
     return { ok: true };
   } catch (e) {
     return { ok: false, hata: "Yazma başarısız — tarayıcı depolama alanı dolu olabilir." };
@@ -406,6 +419,7 @@ function write(b: Backup) {
     localStorage.setItem(SEYIR_KEY, JSON.stringify(b.seyir));
   }
   if (!puanBosMu(b.puan)) localStorage.setItem(PUAN_KEY, JSON.stringify(b.puan));
+  if (Object.keys(b.pgun).length) localStorage.setItem(PREMIUM_GUN_KEY, JSON.stringify(b.pgun));
 }
 
 /* ── Depolama ölçümü ───────────────────────────────────────────────────── */

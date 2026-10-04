@@ -175,12 +175,21 @@ async function oynatici(branch: string, id: string, lang: string, kapi = false) 
 
   const backHref = `/${lang}/premium/ydus/${branch}/${konu}`;
 
+  // Kartlardan sorulara köprü: bitiş ekranı yalnız bu desteye dönüyordu.
+  // Bağlantı ancak quiz dosyası GERÇEKTEN dolu ise kurulur (envanter sayar).
+  const env = envanterAl(branch, konu);
+  const quizHref = env.quizVar
+    ? `/${lang}/premium/ydus/quiz-coz?branch=${branch}&id=${konu}-quiz-1`
+    : null;
+
   return (
     <FlashcardPlayer
       cards={veri.cards}
       topic={veri.topic}
       backHref={backHref}
       setId={veri.id || id}
+      quizHref={quizHref}
+      quizSoru={env.soru}
     />
   );
 }

@@ -5,6 +5,7 @@ import { kalinIsle, duzMetin } from '@/app/lib/metin';
 import { useSonucuGoster, useSoruKlavyesi, useGecisteBasaDon } from '@/app/lib/soru-akisi';
 import { useUser } from '@/app/(ydus)/context/UserContext';
 import { xpKimligi } from '@/app/lib/xp';
+import { premiumGunIsle } from '@/app/lib/premium-gun';
 
 /* ──────────────────── TYPES ──────────────────── */
 interface Adim {
@@ -70,6 +71,8 @@ interface Props {
   branch: string;
   /** Adresteki vaka kimliği — XP kimliği bundan (dosyanın iç `id` alanı tutarsız). */
   vakaId: string;
+  /** Vaka bitince önerilen adımlar (sunucu hesaplar — page.tsx → vakaSonrasi). */
+  sonra?: { href: string; etiket: string }[];
 }
 
 /* ──────────────────── HELPERS ──────────────────── */
@@ -108,12 +111,14 @@ function AdimKarti({
   onNext,
   isLast,
   onBitti,
+  sonra = [],
 }: {
   adim: Adim;
   adimNo: number;
   toplamAdim: number;
   onNext: () => void;
   isLast: boolean;
+  sonra?: { href: string; etiket: string }[];
   /** Vaka bittiğinde bir kez çağrılır (puan). */
   onBitti: () => void;
 }) {
@@ -470,6 +475,21 @@ function AdimKarti({
                 <span style={{ fontSize: '13px', fontWeight: 700, color: '#1a6640' }}>Vaka tamamlandı!</span>
               </div>
             )}
+            {vakaBitti && sonra.length > 0 && (
+              <div style={{ padding: '0 1.1rem .9rem', background: '#f0fbf5', display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                {sonra.map((s, k) => (
+                  <a key={s.href} href={s.href} style={{
+                    fontSize: '12px', fontWeight: 700, padding: '9px 14px', borderRadius: '8px',
+                    textDecoration: 'none',
+                    background: k === 0 ? '#14532d' : '#fff',
+                    color: k === 0 ? '#fff' : '#14532d',
+                    border: '1px solid #14532d',
+                  }}>
+                    {s.etiket}
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       )}
@@ -486,7 +506,7 @@ function AdimKarti({
 }
 
 /* ──────────────────── ANA BİLEŞEN ──────────────────── */
-export default function VakaEngine({ veri, lang, branch, vakaId }: Props) {
+export default function VakaEngine({ veri, lang, branch, vakaId, sonra }: Props) {
   const { kazan } = useUser();
   const [adimIndex, setAdimIndex] = useState(0);
 
@@ -608,7 +628,8 @@ export default function VakaEngine({ veri, lang, branch, vakaId }: Props) {
           toplamAdim={toplamAdim}
           onNext={() => setAdimIndex(i => Math.min(i + 1, toplamAdim - 1))}
           isLast={adimIndex === toplamAdim - 1}
-          onBitti={() => kazan(xpKimligi.vaka(branch, vakaId))}
+          onBitti={() => { kazan(xpKimligi.vaka(branch, vakaId)); premiumGunIsle(); }}
+          sonra={sonra}
         />
 
       </div>

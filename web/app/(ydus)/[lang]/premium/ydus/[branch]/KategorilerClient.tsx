@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useUser } from '@/app/(ydus)/context/UserContext';
 
 const ROZET_STILLERI: Record<string, { arka: string; renk: string; kenar: string }> = {
   'POPÜLER':     { arka: '#e6f0fb', renk: '#1a3a6b', kenar: '#b8cfe8' },
@@ -21,6 +22,9 @@ interface Konu {
   brans?: string;
   /** Sunucuda sayılmış içerik özeti ("15 soru · 80 kart"). */
   icerik?: string;
+  /** Kişisel ilerleme rozeti: quizin iç kimliği ve soru sayısı. */
+  quizId?: string;
+  soruSayisi?: number;
 }
 
 interface Kategori {
@@ -40,6 +44,7 @@ interface Props {
 }
 
 export default function KategorilerClient({ kategoriler, bransRenk, lang, branch }: Props) {
+  const { kazanimlar } = useUser();
   /* İlk render SUNUCUYLA AYNI olmalı (hidrasyon): varsayılan = ilk kategori
      açık. Adresten gelen durum aşağıdaki mount effect'inde uygulanıyor. */
   const [acik, setAcik] = useState<Record<string, boolean>>(() => {
@@ -251,6 +256,20 @@ export default function KategorilerClient({ kategoriler, bransRenk, lang, branch
                         {konu.icerik && (
                           <span style={{ fontSize: '11px', color: '#4a6a8a', marginTop: '2px' }}>
                             {konu.icerik}
+                            {/* Kişisel ilerleme: ilk kez doğru cevaplanan soru sayısı
+                                (XP kazanımlarından; app/lib/xp.ts). Hiç yoksa yazılmaz. */}
+                            {(() => {
+                              if (!konu.quizId || !konu.soruSayisi) return null;
+                              const onek = `soru:${konu.quizId}:`;
+                              const d = Math.min(kazanimlar.filter((k) => k.startsWith(onek)).length, konu.soruSayisi);
+                              if (!d) return null;
+                              const tam = d >= konu.soruSayisi;
+                              return (
+                                <span style={{ color: tam ? '#15803d' : '#1d4ed8', fontWeight: 700 }}>
+                                  {' · '}{tam ? '✓ tamam' : `✓ ${d}/${konu.soruSayisi} doğru`}
+                                </span>
+                              );
+                            })()}
                           </span>
                         )}
                       </span>

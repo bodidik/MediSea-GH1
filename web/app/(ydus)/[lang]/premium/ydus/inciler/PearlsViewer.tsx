@@ -20,7 +20,7 @@ type PearlsData = {
   pearls: Pearl[];
 };
 
-export default function PearlsViewer({ data, konuHref }: { data: PearlsData; konuHref: string }) {
+export default function PearlsViewer({ data, konuHref, quizHref, quizSoru }: { data: PearlsData; konuHref: string; quizHref?: string | null; quizSoru?: number }) {
   const [searchTerm, setSearchTerm] = useState('');
 
   /**
@@ -207,6 +207,22 @@ export default function PearlsViewer({ data, konuHref }: { data: PearlsData; kon
               <h3 className="text-lg font-black text-slate-200 uppercase tracking-widest mb-1">Sonuç bulunamadı</h3>
               <p className="text-slate-200 text-sm font-medium">Başka bir kelimeyle aramayı deneyebilirsin.</p>
             </div>
+          )}
+
+          {/* SONRAKİ ADIM — liste bir çıkmaz sokakla bitiyordu (yalnız tepedeki
+              "Konuya dön"). Okunan bilgiyi sınamak için konunun soru setine
+              köprü; quiz dosyası gerçekten doluysa (sunucu envanterden sayar). */}
+          {quizHref && (
+            <a
+              href={quizHref}
+              className="mt-6 flex items-center justify-between gap-4 rounded-2xl border border-emerald-500/60 bg-emerald-900/40 px-5 py-4 text-emerald-50 no-underline hover:bg-emerald-900/60 transition-colors"
+            >
+              <span>
+                <span className="block text-[12px] text-emerald-200">İncileri okudun — şimdi sına</span>
+                <span className="block text-[15px] font-bold">Bu konunun {quizSoru ? `${quizSoru} sorusunu` : "sorularını"} çöz</span>
+              </span>
+              <span aria-hidden="true" className="text-lg">→</span>
+            </a>
           )}
         </div>
 

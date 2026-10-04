@@ -77,6 +77,9 @@ interface Konu {
   brans?: string;
   /** "15 soru · 80 kart" — yalnız hazır konuda, dosyadan sayılır. */
   icerik?: string;
+  /** Kişisel ilerleme rozeti: quizin iç kimliği ve soru sayısı. */
+  quizId?: string;
+  soruSayisi?: number;
 }
 
 interface Kategori {
@@ -115,6 +118,15 @@ function bransYukle(branch: string): BransVerisi | null {
         if (konu.hazir) {
           const e = envanterAl(konu.brans ?? branch, konu.id);
           konu.icerik = icerikOzeti({ soru: e.soru, kart: e.flashcard, inci: e.inci, vaka: e.vaka });
+          // Kişisel ilerleme rozeti için quizin İÇ kimliği (kazanımlar onunla
+          // saklanıyor — dosya adıyla aramak her zaman 0 verirdi).
+          if (e.quizVar) {
+            try {
+              const q = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'content', 'premium', 'ydus', 'quizzes', konu.brans ?? branch, `${konu.id}-quiz-1.json`), 'utf-8'));
+              const qid = q.id ?? q.meta?.quizId;
+              if (typeof qid === 'string') { konu.quizId = qid; konu.soruSayisi = e.soru; }
+            } catch {}
+          }
         }
       }
     }

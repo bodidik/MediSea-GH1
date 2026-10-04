@@ -17,6 +17,10 @@ import CalismaPlani from "@/app/components/CalismaPlani";
 import SinavTakvimiUyarisi from "@/app/components/SinavTakvimiUyarisi";
 import { icerikOzeti, type IcerikSayisi } from "@/app/lib/icerik-ozeti";
 import PremiumKonuAra, { type AranabilirKonu } from "./PremiumKonuAra";
+import KaldiginYer from "./KaldiginYer";
+import GunlukSeri from "./GunlukSeri";
+import GununSorusu from "./GununSorusu";
+import { rutbe, yakinHedef } from "@/app/lib/rutbe";
 import type { Sinav } from "@/lib/sinav";
 
 export interface BranchCard extends IcerikSayisi {
@@ -235,8 +239,27 @@ export default function YdusDashboardClient({
                 samimi dize vardı; depo genelinde oran 12 / 55. */}
             <p className="text-[11px] text-slate-400 mb-1 flex items-center gap-1"><Award size={12} /> Puanın</p>
             <p className="text-2xl font-semibold text-slate-800">{xp ?? 0}<span className="text-sm text-slate-400 font-normal"> xp</span></p>
+            {/* Yakın hedef — gerekçe app/lib/rutbe.ts → yakinHedef */}
+            {(() => {
+              const h = yakinHedef(xp ?? 0);
+              return (
+                <>
+                  <div aria-hidden="true" className="h-1.5 rounded-full bg-amber-50 mt-2 overflow-hidden">
+                    <div className="h-full bg-amber-400 rounded-full" style={{ width: `${Math.round(h.oran * 100)}%` }} />
+                  </div>
+                  <p className="text-[11px] text-slate-600 mt-1">
+                    {rutbe(xp ?? 0)} · {h.hedef.toLocaleString("tr-TR")} xp hedefine {h.kalan} xp
+                  </p>
+                </>
+              );
+            })()}
           </div>
         </div>
+
+        {/* GÜNLÜK SERİ + KALDIĞIN YERDEN DEVAM — gerekçeleri kendi dosyalarında */}
+        <GunlukSeri />
+        <KaldiginYer lang={lang} />
+        <GununSorusu lang={lang} />
 
         {/* KONU ARAMASI — gerekçe PremiumKonuAra.tsx içinde */}
         <PremiumKonuAra lang={lang} konular={aranabilir} />

@@ -4,6 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import SoruSor from './SoruSor';
+import KonuIlerleme from './KonuIlerleme';
 import { AccessGate } from '@/lib/AccessGate';
 import { envanterAl } from '@/lib/premium-envanter';
 import IcerikRenderer, { bolumBasliklari, type IcerikBlok } from './IcerikBloklari';
@@ -132,6 +133,30 @@ const MODUL_BILGI = {
   // `moduller.video` ilanı kalıyor; burada karşılığı olmadığı için çizilmez.
 };
 
+/**
+ * KonuIlerleme için depo kimlikleri. Quiz ve deste tarayıcıda DOSYA ADIYLA
+ * değil dosyanın İÇ kimliğiyle (`id` / `meta.quizId`) saklanıyor; vaka ise
+ * dosya adıyla (`vaka:<branş>/<dosya>`). Okunamayan dosya sessizce atlanır —
+ * şerit o modülü göstermez, sayfa kırılmaz.
+ */
+function ilerlemeKimlikleriniBul(branch: string, topic: string, env: ReturnType<typeof envanterAl>) {
+  const kok = path.join(process.cwd(), 'content', 'premium', 'ydus');
+  const oku = (p: string) => { try { return JSON.parse(fs.readFileSync(p, 'utf-8')); } catch { return null; } };
+  const q = env.quizVar ? oku(path.join(kok, 'quizzes', branch, `${topic}-quiz-1.json`)) : null;
+  const quizId: string | null = q ? (q.id ?? q.meta?.quizId ?? null) : null;
+  const desteler = env.flashcardSetleri.map((s) => {
+    const d = oku(path.join(kok, 'flashcards', branch, `${s.id}.json`));
+    return { id: String(d?.id || s.id), sayi: s.sayi };
+  });
+  let vakaIdler: string[] = [];
+  try {
+    vakaIdler = fs.readdirSync(path.join(kok, 'vakalar', branch))
+      .filter((f) => f.startsWith(`${topic}-vaka-`) && f.endsWith('.json'))
+      .map((f) => f.replace(/\.json$/, ''));
+  } catch {}
+  return { quizId, soruSayisi: env.soru, desteler, vakaIdler };
+}
+
 const MODUL_HREF: Record<string, (lang: string, branch: string, topic: string) => string> = {
   flashcard: (l, b, t) => `/${l}/premium/ydus/hizli-tekrar?branch=${b}&topic=${t}`,
   inciler:   (l, b, t) => `/${l}/premium/ydus/inciler?branch=${b}&id=${t}`,
@@ -209,6 +234,7 @@ export default async function KonuSayfasi({
    * dosyası yoktu. Artık hem sayı hem bağlantı gerçeğe bakıyor.
    */
   const envanter = envanterAl(branch, topic);
+  const ilerlemeKimlikleri = ilerlemeKimlikleriniBul(branch, topic, envanter);
   const istatistikler = {
     soru: envanter.soru,
     flashcard: envanter.flashcard,
@@ -325,6 +351,9 @@ export default async function KonuSayfasi({
             </p>
           )}
         </div>
+
+        {/* KİŞİSEL İLERLEME — gerekçe KonuIlerleme.tsx içinde */}
+        <KonuIlerleme branch={branch} {...ilerlemeKimlikleri} />
 
         {/* DAR EKRANDA MODÜLLER BAŞTA — ölçüldü (375px, hipertiroidi): metin
             1.794–17.017px arasında, yan sütun ızgara tek kolona düşünce metnin

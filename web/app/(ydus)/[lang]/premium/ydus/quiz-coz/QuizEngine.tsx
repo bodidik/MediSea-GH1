@@ -5,7 +5,8 @@ import { kalinIsle, duzMetin } from '@/app/lib/metin';
 import { guvenliCozumle } from '@/app/lib/depo';
 import { useSonucuGoster, useSoruKlavyesi, useGecisteBasaDon } from '@/app/lib/soru-akisi';
 import { useUser } from '@/app/(ydus)/context/UserContext';
-import { xpKimligi } from '@/app/lib/xp';
+import { xpKimligi, kazanimDegeri } from '@/app/lib/xp';
+import { premiumGunIsle } from '@/app/lib/premium-gun';
 
 /* ────────────────────────── TYPES ────────────────────────── */
 interface Soru {
@@ -33,6 +34,8 @@ interface Props {
   veri: QuizVeri;
   lang: string;
   branch: string;
+  /** Branş sırasında bir sonraki soru seti (sunucu hesaplar; yoksa null). */
+  sonraki?: { id: string; baslik: string } | null;
 }
 
 /* ────────────────────────── HELPERS ────────────────────────── */
@@ -455,12 +458,20 @@ function SonucEkrani({
   sorular,
   sonuclar,
   backHref,
+  sonrakiHref,
+  sonrakiBaslik,
+  oturumXp,
+  enUzunSeri,
   onBastan,
   onYanlislar,
 }: {
   sorular: Soru[];
   sonuclar: Record<string, boolean>;
   backHref: string;
+  sonrakiHref: string | null;
+  sonrakiBaslik: string | null;
+  oturumXp: number;
+  enUzunSeri: number;
   onBastan: () => void;
   onYanlislar: () => void;
 }) {
@@ -521,6 +532,11 @@ function SonucEkrani({
             */}
           <div role="alert" style={{ fontSize: '14px', fontWeight: 600, color: '#4a6a8a' }}>
             {cevaplanan.length} soruda {dogru} doğru · {yanlislar.length} yanlış
+            {(oturumXp > 0 || enUzunSeri >= 3) && (
+              <span style={{ display: 'block', marginTop: '6px', fontWeight: 700, color: '#14532d' }}>
+                {[oturumXp > 0 && `+${oturumXp} xp kazandın`, enUzunSeri >= 3 && `🔥 en uzun serin ${enUzunSeri}`].filter(Boolean).join(' · ')}
+              </span>
+            )}
           </div>
         </div>
 
@@ -565,13 +581,23 @@ function SonucEkrani({
             ← Konuya dön
           </a>
         </div>
+        {/* Sıradaki set — gerekçe page.tsx → sonrakiSet. */}
+        {sonrakiHref && sonrakiBaslik && (
+          <a href={sonrakiHref} style={{
+            display: 'block', marginTop: '18px', padding: '12px 16px', borderRadius: '10px',
+            background: '#14532d', color: '#fff', textDecoration: 'none', textAlign: 'left',
+          }}>
+            <span style={{ display: 'block', fontSize: '11px', opacity: 0.85 }}>Sıradaki set</span>
+            <span style={{ display: 'block', fontSize: '14px', fontWeight: 700 }}>{sonrakiBaslik} →</span>
+          </a>
+        )}
       </div>
     </div>
   );
 }
 
 /* ────────────────────────── ANA BİLEŞEN ────────────────────────── */
-export default function QuizEngine({ veri, lang, branch }: Props) {
+export default function QuizEngine({ veri, lang, branch, sonraki }: Props) {
   const storageKey = `quiz-progress-${veri.id}`;
   const tumSorular = veri.sorular ?? [];
 
@@ -581,7 +607,24 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
   const [bitti, setBitti] = useState(false);
   // Yalnızca yanlışları çözmek için daraltılmış set; null = bütün sorular.
   const [aktifIdler, setAktifIdler] = useState<string[] | null>(null);
-  const { kazan, completeModule } = useUser();
+  const { kazan, completeModule, kazanimlar } = useUser();
+  /**
+   * MOMENTUM GERİ BİLDİRİMİ — doğru cevap XP kazandırıyordu ama kullanıcı
+   * bunu hiç görmüyordu: puan sessizce artıyor, panoya dönmeden fark
+   * edilmiyordu. Üst üste doğru sayısı (seri) ve "+10 xp" kısa bir rozetle
+   * söylenir. XP rozeti yalnız GERÇEKTEN ödenen kazanımda çıkar (aynı soruyu
+   * ikinci kez doğru cevaplamak puan vermez — rozet de çıkmaz).
+   */
+  const [seri, setSeri] = useState(0);
+  // Bu oturumda kazanılan XP ve en uzun seri — sonuç ekranında ödül satırı.
+  const [oturumXp, setOturumXp] = useState(0);
+  const [enUzunSeri, setEnUzunSeri] = useState(0);
+  const [rozet, setRozet] = useState<{ metin: string; anahtar: number } | null>(null);
+  useEffect(() => {
+    if (!rozet) return;
+    const z = setTimeout(() => setRozet(null), 1800);
+    return () => clearTimeout(z);
+  }, [rozet]);
 
   const sorular = aktifIdler
     ? tumSorular.filter((s) => aktifIdler.includes(s.id))
@@ -650,12 +693,25 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
         kayitli && typeof kayitli === 'object' && kayitli.s && typeof kayitli.s === 'object'
           ? kayitli.s
           : {};
+      // t · b · u · ad · n: panodaki "Kaldığın yerden devam" kartı için. Okuyucu
+      // bunları taşımayan eski kayıtları yok sayar; sürdürme yalnız i/s okur.
+      // `u` ADRESTEKİ kimlik: depo anahtarı dosyanın İÇ kimliğini (`veri.id`,
+      // ör. quiz-endo-hipertiroidi-001) taşıyor, oysa sayfa dosya adını
+      // istiyor (hipertiroidi-quiz-1). İç kimlikle kurulan bağlantı 404 verdi.
       localStorage.setItem(
         storageKey,
-        JSON.stringify({ i: soruIndex, s: { ...eski, ...sonuclar } }),
+        JSON.stringify({
+          i: soruIndex,
+          s: { ...eski, ...sonuclar },
+          t: Date.now(),
+          b: branch,
+          u: new URLSearchParams(window.location.search).get('id') ?? undefined,
+          ad: veri.baslik,
+          n: tumSorular.length,
+        }),
       );
     } catch {}
-  }, [soruIndex, sonuclar, bitti, storageKey]);
+  }, [soruIndex, sonuclar, bitti, storageKey, branch, veri.baslik, tumSorular.length]);
 
   const backHref = veri.topic
     ? `/${lang}/premium/ydus/${branch}/${veri.topic}`
@@ -685,6 +741,7 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
    */
   useEffect(() => {
     if (!bitti || aktifIdler !== null) return;
+    if (!kazanimlar.includes(xpKimligi.set(veri.id))) setOturumXp((x) => x + kazanimDegeri(xpKimligi.set(veri.id)));
     kazan(xpKimligi.set(veri.id));
     if (veri.topic) completeModule(veri.topic, 0);
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -746,11 +803,18 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
         sorular={sorular}
         sonuclar={sonuclar}
         backHref={backHref}
+        sonrakiHref={sonraki ? `/${lang}/premium/ydus/quiz-coz?branch=${branch}&id=${sonraki.id}` : null}
+        sonrakiBaslik={sonraki?.baslik ?? null}
+        oturumXp={oturumXp}
+        enUzunSeri={enUzunSeri}
         onBastan={() => {
           setAktifIdler(null);
           setSonuclar({});
           setSoruIndex(0);
           setBitti(false);
+          // Ödül satırı TURA aittir: sıfırlanmazsa ikinci turda kazanılmamış
+          // "+200 xp" yeniden yazılırdı.
+          setOturumXp(0); setEnUzunSeri(0); setSeri(0);
         }}
         onYanlislar={() => {
           const yanlisIdler = sorular
@@ -760,6 +824,7 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
           setSonuclar({});
           setSoruIndex(0);
           setBitti(false);
+          setOturumXp(0); setEnUzunSeri(0); setSeri(0);
         }}
       />
     );
@@ -821,6 +886,23 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
           ⏎ Kaldığın yerden devam ediyorsun — {soruIndex + 1}. soru
         </div>
       )}
+      {/* Rozet canlı bölgede: ekran okuyucu da "+10 xp" ve seriyi duyar.
+          Bölge HEP DOM'da durur (içeriği değişir) — sonradan eklenen canlı
+          bölge duyurulmaz. */}
+      <div role="status" aria-live="polite" style={{
+        position: 'fixed', bottom: '1.25rem', left: '50%', transform: 'translateX(-50%)',
+        zIndex: 1000, pointerEvents: 'none',
+      }}>
+        {rozet && (
+          <span key={rozet.anahtar} style={{
+            display: 'inline-block', background: '#14532d', color: '#fff',
+            borderRadius: '999px', padding: '7px 16px', fontSize: '13px', fontWeight: 700,
+            boxShadow: '0 4px 16px rgba(0,0,0,.25)', animation: 'fadeIn .25s ease',
+          }}>
+            {rozet.metin}
+          </span>
+        )}
+      </div>
       <SoruKarti
         key={aktifSoru.id}
         soru={aktifSoru}
@@ -830,8 +912,19 @@ export default function QuizEngine({ veri, lang, branch }: Props) {
         onNext={ilerle}
         onAnswer={(d) => {
           setSonuclar((p) => ({ ...p, [aktifSoru.id]: d }));
+          premiumGunIsle(); // günlük seri (app/lib/premium-gun.ts)
+          const yeniSeri = d ? seri + 1 : 0;
+          setSeri(yeniSeri);
           // İlk doğru cevap puan verir; kimlik bir kez sayılır (app/lib/xp.ts).
-          if (d) kazan(xpKimligi.soru(veri.id, aktifSoru.id));
+          const kimlik = xpKimligi.soru(veri.id, aktifSoru.id);
+          const yeniXp = d && !kazanimlar.includes(kimlik);
+          if (d) kazan(kimlik);
+          if (yeniXp) setOturumXp((x) => x + kazanimDegeri(kimlik));
+          setEnUzunSeri((m) => Math.max(m, yeniSeri));
+          const parcalar: string[] = [];
+          if (yeniXp) parcalar.push(`+${kazanimDegeri(kimlik)} xp`);
+          if (yeniSeri >= 3) parcalar.push(`🔥 ${yeniSeri} doğru üst üste`);
+          if (parcalar.length) setRozet({ metin: parcalar.join(" · "), anahtar: Date.now() });
         }}
         skor={skor}
         lang={lang}

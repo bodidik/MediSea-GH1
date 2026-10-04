@@ -6,6 +6,7 @@ import { redirect } from 'next/navigation';
 import VakaEngine from './VakaEngine';
 import { AccessGate } from '@/lib/AccessGate';
 import { rotaMeta } from "@/lib/site";
+import { envanterAl } from '@/lib/premium-envanter';
 
 /**
  * KULLANICIYA ÖZEL — her istekte yeniden üretilir.
@@ -84,6 +85,28 @@ function vakaYukle(branch: string, id: string) {
   } catch {
     return null;
   }
+}
+
+/**
+ * VAKA SONRASI — "Vaka tamamlandı!" bayrağı bir çıkmaz sokaktı. Önce aynı
+ * konunun bir sonraki vakası (`<konu>-vaka-<n+1>`), o yoksa konunun soru seti
+ * önerilir; ikisi de yalnız dosya GERÇEKTEN varsa (quizde soru sayısı > 0).
+ */
+function vakaSonrasi(lang: string, branch: string, id: string): { href: string; etiket: string }[] {
+  const out: { href: string; etiket: string }[] = [];
+  const m = id.match(/^(.+)-vaka-(\d+)$/);
+  if (!m || !isValidParam(id)) return out;
+  const [, konu, no] = m;
+  const kok = path.join(process.cwd(), 'content', 'premium', 'ydus');
+  const sonraki = `${konu}-vaka-${Number(no) + 1}`;
+  if (fs.existsSync(path.join(kok, 'vakalar', branch, `${sonraki}.json`))) {
+    out.push({ href: `/${lang}/premium/ydus/vaka-coz?branch=${branch}&id=${sonraki}`, etiket: `Sıradaki vaka (${Number(no) + 1}. vaka) →` });
+  }
+  const env = envanterAl(branch, konu);
+  if (env.quizVar) {
+    out.push({ href: `/${lang}/premium/ydus/quiz-coz?branch=${branch}&id=${konu}-quiz-1`, etiket: `Bu konunun ${env.soru} sorusunu çöz →` });
+  }
+  return out;
 }
 
 function vakaListele(branch: string, topic: string) {
@@ -325,5 +348,5 @@ export default async function VakaCozPage(props: {
     );
   }
 
-  return <VakaEngine veri={veri} lang={lang} branch={branch} vakaId={id ?? ''} />;
+  return <VakaEngine veri={veri} lang={lang} branch={branch} vakaId={id ?? ''} sonra={vakaSonrasi(lang, branch, id ?? '')} />;
 }

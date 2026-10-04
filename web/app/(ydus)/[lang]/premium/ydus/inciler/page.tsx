@@ -5,6 +5,7 @@ import Link from 'next/link';
 import PearlsViewer from './PearlsViewer';
 import { AccessGate } from '@/lib/AccessGate';
 import { rotaMeta } from "@/lib/site";
+import { envanterAl } from '@/lib/premium-envanter';
 
 // Güvenlik: Sadece harf, rakam ve tire (-) işaretine izin veren kalkan
 const isValidParam = (param: string) => /^[a-zA-Z0-9-]+$/.test(param);
@@ -142,7 +143,10 @@ export default async function PearlsPage({
     }
 
     // 5. Veriyi o mükemmel PearlsViewer arayüzüne iletiyoruz
-    return <PearlsViewer data={data} konuHref={`/${lang}/premium/ydus/${branch}/${id}`} />;
+    // Liste sonunda soru setine köprü — yalnız quiz gerçekten doluysa.
+    const env = envanterAl(branch, id);
+    const quizHref = env.quizVar ? `/${lang}/premium/ydus/quiz-coz?branch=${branch}&id=${id}-quiz-1` : null;
+    return <PearlsViewer data={data} konuHref={`/${lang}/premium/ydus/${branch}/${id}`} quizHref={quizHref} quizSoru={env.soru} />;
   } catch (error) {
     console.error("İnciler veri okuma hatası:", error);
     return (

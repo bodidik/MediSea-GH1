@@ -115,6 +115,32 @@ function quizYukle(branch: string, id: string) {
  * sürüyor (`/tools/bmi` ikisini birden yapıyor). İnancın bedeli, sekme
  * başlığı düzelmişken PAYLAŞIM KARTININ hâlâ ana sayfayı göstermesiydi.
  */
+/**
+ * SIRADAKİ SET — sonuç ekranı bir çıkmaz sokaktı ("Baştan çöz / Konuya dön"):
+ * seti bitiren kullanıcıya bir sonraki adım önerilmiyordu. Sıra branşın KENDİ
+ * düzeninden (branches/<branş>.json → kategoriler → konular) gelir; yalnız
+ * soru dosyası GERÇEKTEN var olan konular sayılır (ilan yetmez). Son konudan
+ * sonra branşın başına dönülür; tek setli branşta öneri çıkmaz.
+ */
+function sonrakiSet(branch: string, id: string): { id: string; baslik: string } | null {
+  try {
+    const kok = path.join(process.cwd(), 'content', 'premium', 'ydus');
+    const b = JSON.parse(fs.readFileSync(path.join(kok, 'branches', `${branch}.json`), 'utf-8'));
+    const konular: { id: string; baslik: string }[] = (b.kategoriler ?? [])
+      .flatMap((k: { konular?: { id: string; baslik: string; brans?: string }[] }) => k.konular ?? [])
+      .filter((k: { id: string; brans?: string }) => !k.brans && isValidParam(k.id)
+        && fs.existsSync(path.join(kok, 'quizzes', branch, `${k.id}-quiz-1.json`)));
+    const simdiki = id.replace(/-quiz-\d+$/, '');
+    const i = konular.findIndex((k) => k.id === simdiki);
+    if (konular.length < 2) return null;
+    const s = konular[(i + 1) % konular.length];
+    if (!s || s.id === simdiki) return null;
+    return { id: `${s.id}-quiz-1`, baslik: s.baslik };
+  } catch {
+    return null;
+  }
+}
+
 export const metadata: Metadata = {
   ...rotaMeta({
     baslik: "Soru Çöz — YDUS",
@@ -185,5 +211,5 @@ export default async function QuizCozPage(props: {
     );
   }
 
-  return <QuizEngine veri={veri} lang={lang} branch={branch} />;
+  return <QuizEngine veri={veri} lang={lang} branch={branch} sonraki={sonrakiSet(branch, id)} />;
 }

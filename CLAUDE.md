@@ -178,6 +178,9 @@ medisea:notes:v1:<yol>    not + çizim         medisea:log:v1      günlük çal
 medisea:index:v1          yol → başlık        medisea:hint:…      tanıtım kartı
 medisea:seyir:v1          seyir defteri       medisea:deniz:kapali  sürpriz tercihi (yedeğe GİRMEZ)
 ydus_premium_user         premium puan (XP · kazanımlar · konular) — yedek+senkronda; birleştirme `puanBirlestir` (app/lib/xp.ts)
+medisea:pgun:v1           premium günlük çalışma (gün → eylem) — seri = bu + log birleşimi (app/lib/premium-gun.ts); yedek+senkronda, gün başına büyük olan
+medisea:gununsorusu       günün sorusuna o gün verilen cevap (yedeğe GİRMEZ, ertesi gün anlamsız); soru /api/gunun-sorusu'dan, erişim kapısının arkasında
+quiz-progress-<iç id>     yarım quiz imleci (cihaza özel, yedeğe GİRMEZ); t·b·u·ad·n alanları panodaki "Kaldığın yerden devam" kartı için — u = ADRESTEKİ dosya kimliği
 ```
 
 ### Deniz sürprizleri (19 Eylül 2026)
