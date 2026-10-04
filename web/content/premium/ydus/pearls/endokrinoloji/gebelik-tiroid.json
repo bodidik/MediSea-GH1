@@ -154,7 +154,7 @@
       "id": "gt-inci-022",
       "level": "Klinik",
       "title": "Gebelikte Antitiroid İlaç Teratojenitesi ve Trimester-Spesifik Doz Yönetimi",
-      "content": "<p>Metimazolün ilk trimesterda kullanımı <em>aplasia cutis, koanal/özofageal atrezi ve omfalofer</em> gibi spesifik embriyopatilerle ilişkili olduğundan, gebelik öncesinde veya doğrulanır doğrulanmaz <strong>1. trimesterda Propiltiourasil (PTU) tercih edilmelidir</strong>. Ancak PTU'nun fulminan hepatotoksisite riski nedeniyle 1. trimester sonrasında (16. haftadan itibaren) hastalar tekrar <strong>Metimazol'e geçirilebilir</strong>. Gebelik boyunca fetal iyatrojenik hipotiroidi ve guatrı önlemek için ATD en düşük etkili dozda tutulmalı ve maternal serbest T4 normal aralığın üst sınırında hedeflenmelidir.</p>",
+      "content": "<p>Metimazolün ilk trimesterda kullanımı <em>aplasia cutis, koanal/özofageal atrezi ve omfalosel</em> gibi spesifik embriyopatilerle ilişkili olduğundan, gebelik öncesinde veya doğrulanır doğrulanmaz <strong>1. trimesterda Propiltiourasil (PTU) tercih edilmelidir</strong>. Ancak PTU'nun fulminan hepatotoksisite riski nedeniyle 1. trimester sonrasında (16. haftadan itibaren) hastalar tekrar <strong>Metimazol'e geçirilebilir</strong>. Gebelik boyunca fetal iyatrojenik hipotiroidi ve guatrı önlemek için ATD en düşük etkili dozda tutulmalı ve maternal serbest T4 normal aralığın üst sınırında hedeflenmelidir.</p>",
       "trigger": "Gebelikte Antitiroid İlaç Teratojenitesi ve Trimester-Spesifik Doz Yönetimi"
     },
     {
@@ -167,9 +167,9 @@
     {
       "id": "gt-inci-024",
       "level": "Klinik",
-      "title": "Gebelikte Euthyroid Anti-TPO Pozitifliği",
+      "title": "Gebelikte Ötiroid Anti-TPO Pozitifliği",
       "content": "<p>Ötiroid olup Anti-TPO pozitif olan gebe kadınlarda gebelik boyunca subklinik hipotiroidi ve postpartum tiroidit gelişme riski yüksektir. Ayrıca bu antikor varlığı spontan abortus ve erken doğum (prematüre) riskini 2-3 kat artırmaktadır.</p>",
-      "trigger": "Gebelikte Euthyroid Anti-TPO Pozitifliği"
+      "trigger": "Gebelikte Ötiroid Anti-TPO Pozitifliği"
     },
     {
       "id": "gt-inci-025",

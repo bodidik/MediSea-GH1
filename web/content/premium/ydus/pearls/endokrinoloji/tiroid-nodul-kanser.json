@@ -21,15 +21,15 @@
       "id": "tnk-inci-003",
       "level": "Klinik",
       "title": "Subsantimetrik (<1 cm) Nodüllerde Biyopsi İstisnaları",
-      "content": "<p>Yüksek riskli (TR5) nodüllerde kural olarak biyopsi eşiği ≥10 mm'dir. Ancak nodül 10 mm'nin altında olsa dahi trakea/reküren sinir komşuluğu, ekstratiroidal uzanım, sert kapsül kalsifikasyonundan dışa taşım veya şüpheli lenf nodu varlığında TİİAB yapılmalıdır.</p>",
+      "content": "<p>Yüksek riskli (TR5) nodüllerde kural olarak biyopsi eşiği ≥10 mm'dir. Ancak nodül 10 mm'nin altında olsa dahi trakea/reküren sinir komşuluğu, ekstratiroidal uzanım, sert kapsül kalsifikasyonundan dışa taşma veya şüpheli lenf nodu varlığında TİİAB yapılmalıdır.</p>",
       "trigger": "Subsantimetrik"
     },
     {
       "id": "tnk-inci-004",
       "level": "Klinik",
-      "title": "Indetermine Sitolojide Moleküler Testler",
+      "title": "İndetermine Sitolojide Moleküler Testler",
       "content": "<p>Bethesda III (AUS) ve Bethesda IV (Foliküler Neoplazi) gelen indetermine nodüllerde gereksiz tanısal lobektomileri önlemek için ThyroSeq v3 veya Afirma GSC gibi moleküler genetik test panelleri kullanılır.</p>",
-      "trigger": "Indetermine Sitolojide Moleküler Testler"
+      "trigger": "İndetermine Sitolojide Moleküler Testler"
     },
     {
       "id": "tnk-inci-005",

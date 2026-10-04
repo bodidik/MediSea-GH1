@@ -7,21 +7,21 @@
       "id": "ht-inci-001",
       "level": "Klinik",
       "title": "Amiodarona Bağlı Tirotoksikozda (AIT) Tip 1 ve Tip 2 Ayırıcı Tanısı",
-      "content": "<p>Amiodarone tedavisi alan hastalarda tirotoksikoz geliştiğinde tedavi yaklaşımını belirleyen en kritik adım Tip 1 ve Tip 2 AIT ayrımıdır. Otonom tiroid nodülü veya latent Graves hastalığı zemininde fazla iyot yükünün tetiklediği hormon sentez artışı <strong>Tip 1 AIT</strong> iken; doğrudan amiodaron toksisitesine bağlı gelişen destruktif tiroidit tablosu <strong>Tip 2 AIT</strong>'dir. Renkli Doppler ultrasonografide <strong>Tip 1 AIT'de tiroid parankim vaskülaritesi belirgin şekilde artmış (hypervascularity)</strong> izlenirken, <strong>Tip 2 AIT'de kan akımı yok veya belirgin derecede azalmıştır (absent/low flow)</strong>.</p>",
+      "content": "<p>Amiodaron tedavisi alan hastalarda tirotoksikoz geliştiğinde tedavi yaklaşımını belirleyen en kritik adım Tip 1 ve Tip 2 AIT ayrımıdır. Otonom tiroid nodülü veya latent Graves hastalığı zemininde fazla iyot yükünün tetiklediği hormon sentez artışı <strong>Tip 1 AIT</strong> iken; doğrudan amiodaron toksisitesine bağlı gelişen destruktif tiroidit tablosu <strong>Tip 2 AIT</strong>'dir. Renkli Doppler ultrasonografide <strong>Tip 1 AIT'de tiroid parankim vaskülaritesi belirgin şekilde artmış (hypervascularity)</strong> izlenirken, <strong>Tip 2 AIT'de kan akımı yok veya belirgin derecede azalmıştır (absent/low flow)</strong>.</p>",
       "trigger": "Amiodarona Bağlı Tirotoksikozda"
     },
     {
       "id": "ht-inci-002",
       "level": "Klinik",
       "title": "Tip 2 AIT Tedavisinde Glukokortikoid Stratejisi ve Karışık (Mixed) Formlar",
-      "content": "<p>Spesifik destruktif tiroidit olan <strong>Tip 2 AIT hastalarında ilk tercih tedavi oral glukokortikoidlerdir</strong> (prednizon 30–40 mg/gün). Tip 2 AIT olguları glukokortikoid tedavisine hızlı klinik ve biyokimyasal yanıt verir; ancak etiyolojisi net ayırt edilemeyen veya her iki mekanizmanın bir arada bulunduğu <strong>karma (mixed) AIT vakalarında başlangıçta prednizon (40 mg/gün) ve metimazol (40 mg/gün) kombinasyonu verilmesi önerilir</strong>. Metimazoleye hızlı yanıt alınması Tip 2'yi destekler ve metimazol kademeli olarak kesilir.</p>",
+      "content": "<p>Spesifik destruktif tiroidit olan <strong>Tip 2 AIT hastalarında ilk tercih tedavi oral glukokortikoidlerdir</strong> (prednizon 30–40 mg/gün). Tip 2 AIT olguları glukokortikoid tedavisine hızlı klinik ve biyokimyasal yanıt verir; ancak etiyolojisi net ayırt edilemeyen veya her iki mekanizmanın bir arada bulunduğu <strong>karma (mixed) AIT vakalarında başlangıçta prednizon (40 mg/gün) ve metimazol (40 mg/gün) kombinasyonu verilmesi önerilir</strong>. Metimazole hızlı yanıt alınması Tip 2'yi destekler ve metimazol kademeli olarak kesilir.</p>",
       "trigger": "Tip 2 AIT Tedavisinde Glukokortikoid Stratejisi ve Karışık"
     },
     {
       "id": "ht-inci-003",
       "level": "Klinik",
       "title": "Amiodarona Bağlı Hipotiroidizmde Levotiroksin Replasman İlkeleri",
-      "content": "<p>Amiodarone kullanan ve özellikle zemininde otoimmün tiroiditi (anti-TPO pozitifliği) bulunan bireylerde <strong>Wolff-Chaikoff etkisinden kaçamama</strong> sonucu amiodarona bağlı hipotiroidizm (AIH) gelişir. AIH gelişen hastalarda amiodaron tedavisinin kesilmesi zorunlu değildir; antiaritmik ilaca devam edilerek levotiroksin (L-T4) replasmanı başlanabilir. Ancak amiodaronun hipofizer ve periferik T4-T3 dönüşümünü ve T3 reseptör bağlanmasını engellemesi nedeniyle, TSH'yi normale getirmek için <strong>standart replasman dozlarından daha yüksek L-T4 dozları gerekebilmektedir</strong>.</p>",
+      "content": "<p>Amiodaron kullanan ve özellikle zemininde otoimmün tiroiditi (anti-TPO pozitifliği) bulunan bireylerde <strong>Wolff-Chaikoff etkisinden kaçamama</strong> sonucu amiodarona bağlı hipotiroidizm (AIH) gelişir. AIH gelişen hastalarda amiodaron tedavisinin kesilmesi zorunlu değildir; antiaritmik ilaca devam edilerek levotiroksin (L-T4) replasmanı başlanabilir. Ancak amiodaronun hipofizer ve periferik T4-T3 dönüşümünü ve T3 reseptör bağlanmasını engellemesi nedeniyle, TSH'yi normale getirmek için <strong>standart replasman dozlarından daha yüksek L-T4 dozları gerekebilmektedir</strong>.</p>",
       "trigger": "Amiodarona Bağlı Hipotiroidizmde Levotiroksin Replasman İlkeleri"
     },
     {
@@ -35,7 +35,7 @@
       "id": "ht-inci-005",
       "level": "Klinik",
       "title": "Tiroid Fırtınasında Tanı Kriterleri: Burch-Wartofsky ve JTA Sistemleri",
-      "content": "<p>Tiroid fırtınası tanısı biyokimyasal tiroid hormon düzeylerinin yüksekliği ile koyulamaz; çünkü fırtıradaki T4/T3 seviyeleri komplikasyonsuz aşikar hipertiroidi hastaları ile benzerdir. Tanı uç organ disfonksiyonlarının klinik derecelendirilmesine dayanır. <strong>Burch-Wartofsky Skorlama Sisteminde ≥45 puan</strong> (termoregülasyon bozukluğu, SSS etkileri, kardiyovasküler disfonksiyon, GIS/hepatik yetmezlik) tiroid fırtınasını güçlü şekilde destekler. Japon Tiroid Derneği (JTA) kriterleri de benzer şekilde SSS tutulumu (restless, deliryum, koma) ile birlikte ateş, taşikardi, AF, kalp yetmezliği veya sarılık varlığını şart koşar.</p>",
+      "content": "<p>Tiroid fırtınası tanısı biyokimyasal tiroid hormon düzeylerinin yüksekliği ile koyulamaz; çünkü fırtınadaki T4/T3 seviyeleri komplikasyonsuz aşikar hipertiroidi hastaları ile benzerdir. Tanı uç organ disfonksiyonlarının klinik derecelendirilmesine dayanır. <strong>Burch-Wartofsky Skorlama Sisteminde ≥45 puan</strong> (termoregülasyon bozukluğu, SSS etkileri, kardiyovasküler disfonksiyon, GIS/hepatik yetmezlik) tiroid fırtınasını güçlü şekilde destekler. Japon Tiroid Derneği (JTA) kriterleri de benzer şekilde SSS tutulumu (restless, deliryum, koma) ile birlikte ateş, taşikardi, AF, kalp yetmezliği veya sarılık varlığını şart koşar.</p>",
       "trigger": "Tiroid Fırtınasında Tanı Kriterleri"
     },
     {
@@ -55,9 +55,9 @@
     {
       "id": "ht-inci-008",
       "level": "Klinik",
-      "title": "Tirotoksikozda Hiperkoagülabillite ve Serebral Venöz Tromboz (SVT) Riski",
-      "content": "<p>Tirotoksikoz, karaciğerden pıhtılaşma faktörlerinin sentezini artırarak sistemik bir <strong>hiperkoagülabillite</strong> tablosu oluşturur. Hastalarda <strong>Faktör VIII, Faktör IX, XI ve fibrinojen düzeyleri yükselirken, doğal antikoagülan olan Protein C aktivitesi azalır</strong>. Bu durum atrial fibrilasyon olmasa dahi serebral venöz tromboz (SVT) ve tromboemboli riskini artırır. Ayrıca hipertiroidide K vitamini bağımlı faktörlerin klerensi hızlandığı için eş zamanlı kullanılan <strong>warfarin antikoagülasyon yanıtı belirgin şekilde potansiyalize olur (warfarin duyarlılığı artar)</strong>.</p>",
-      "trigger": "Tirotoksikozda Hiperkoagülabillite ve Serebral Venöz Tromboz"
+      "title": "Tirotoksikozda Hiperkoagülabilite ve Serebral Venöz Tromboz (SVT) Riski",
+      "content": "<p>Tirotoksikoz, karaciğerden pıhtılaşma faktörlerinin sentezini artırarak sistemik bir <strong>hiperkoagülabilite</strong> tablosu oluşturur. Hastalarda <strong>Faktör VIII, Faktör IX, XI ve fibrinojen düzeyleri yükselirken, doğal antikoagülan olan Protein C aktivitesi azalır</strong>. Bu durum atrial fibrilasyon olmasa dahi serebral venöz tromboz (SVT) ve tromboemboli riskini artırır. Ayrıca hipertiroidide K vitamini bağımlı faktörlerin klerensi hızlandığı için eş zamanlı kullanılan <strong>warfarin antikoagülasyon yanıtı belirgin şekilde potansiyalize olur (warfarin duyarlılığı artar)</strong>.</p>",
+      "trigger": "Tirotoksikozda Hiperkoagülabilite ve Serebral Venöz Tromboz"
     },
     {
       "id": "ht-inci-009",
