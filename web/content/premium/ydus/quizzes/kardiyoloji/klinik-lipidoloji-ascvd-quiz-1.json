@@ -479,6 +479,35 @@
       ],
       "zorluk": "zor",
       "kaynak": "2026 ACC/AHA Dislipidemi Kılavuzu · KDIGO · 4D · AURORA"
+    },
+    {
+      "id": "s17",
+      "metin": "56 yaşında erkek hasta, Tip 2 Diyabet ve Ailevi Kombine Hiperlipidemi tanılarıyla takip edilmekte olup yaklaşık 2 yıldır düzenli rosuvastatin (20 mg/gün) kullanmaktadır. Hastanın serum lipid parametreleri hedef aralığa çekilmiş olmasına rağmen (LDL-K: 68 mg/dL), hasta son 3 aydır her iki ayağında simetrik uyuşma, karıncalanma ve yanıcı ağrı şikayetleriyle başvuruyor. İnternette statinlerin sinir hasarına yol açabileceğini okuduğunu belirten hasta, ilacını kesmek istediğini ifade ediyor.\n\nStatin tedavisi, nöropatik ağrı / periferik nöropati ilişkisi, hipotez edilen biyokimyasal mekanizmalar ve epidemiyolojik kanıtlar (Pergolizzi Jr. JV ve ark., Pain and Therapy, 2020) ekseninde değerlendirildiğinde aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Statinlerin LDL-K düzeylerini düşürmesi sonucu dokulara α-tokoferol (E vitamini) teslimatının azalması, uzun aksonal liflerin distal uçlarında mitokondriyal transport bozukluğuna ve \"dying-back\" aksonopatiye zemin hazırlayabilecek hipotez edilen biyokimyasal mekanizmalardan biridir.",
+        "B": "2002 yılında Gaist ve ark. tarafından yapılan Danimarka vaka-kontrol çalışmasında statin kullanımı ile idiyopatik polinöropati arasında saptanan yüksek risk (OR = 26.4), 2017 yılında aynı araştırma ekibi (Svendsen ve ark.) tarafından yayımlanan 370 olgu ve 7.400 kontrollük geniş çalışmayla da doğrulanmış ve nedensel ilişki kesinleşmiştir.",
+        "C": "Statinlerin ve nöropatik ağrının incelendiği deneysel çalışmalarda paradoksal bir tablo mevcuttur; statinler insanlarda pleiotropik anti-inflamatuar etkileriyle nöropatik ağrıyı belirgin şekilde azaltırken, kemirgen hayvan modellerinde doğrudan nörotoksisiteye ve belirgin nöropatik ağrıya yol açmaktadır.",
+        "D": "Amerikan Kalp Derneği (AHA) 2019 bilimsel bildirisinde, statin kullanımı ile periferik nöropati arasında %14'lük bağımsız bir risk artışı olduğu ilan edilmiş ve nöropatik semptom geliştiren hastalarda statinlerin derhal kesilmesi gerektiği vurgulanmıştır.",
+        "E": "Tip 2 diyabetik hastalarda gelişen distal simetrik polinöropatide tek nedensel faktör kronik hiperglisemi olup; hiperlipidemi, reaktif oksijen türleri (ROS) ve oxLDL/LOX-1 sinyal kaskadlarının nöropatogenezde bağımsız bir rolü bulunmamaktadır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "α-Tokoferol (E vitamini) periferik dokulara esas olarak LDL partikülleriyle taşınır; statinle LDL-K'nın belirgin düşmesi sinir dokusuna E vitamini teslimatını azaltabilir. Bu, uzun aksonların distal uçlarında mitokondriyal transport bozukluğu ve \"dying-back\" aksonopati için hipotez edilen mekanizmalardan biridir. Epidemiyolojik kanıt ise nedensel bir ilişkiyi desteklemez (Svendsen 2017, AHA 2019).",
+      "aciklama_detay": "Lipoprotein taşınması ve E vitamini: Yağda çözünen temel bir nöroprotektif faktör olan α-tokoferol (E vitamini), periferik dokulara ve sinir hücrelerine esas olarak LDL partikülleri aracılığıyla taşınır. Statin tedavisiyle plazma LDL-K seviyelerinin belirgin şekilde düşürülmesi, periferik sinir dokularına sunulan α-tokoferol miktarının azalmasına yol açabilir.\n\nAksonal mitokondriyal transport bozukluğu: E vitamini eksikliği, özellikle en uzun aksonal liflere sahip nöronların distal uçlarını etkiler. Sinir hücrelerinin mitokondriyal membranları, hızlı anterograd ve retrograd transport için yüksek enerjiye ihtiyaç duyar. Oksidatif strese açık mitokondriyal membranların E vitamini eksikliğinde peroksidasyona uğraması, organellerin hücresel transportunu bozar.\n\n\"Dying-back\" aksonopati: Taşınamayan mitokondriler aksonal uçlarda birikerek dejenere olur ve periferik nöropatilerde karakteristik olan \"dying-back\" aksonopati tablosuna zemin hazırlar.\n\nEpidemiyolojik çalışmaların seyri: 2002 yılında Gaist ve ark. tarafından yayımlanan küçük vaka-kontrol çalışmasında statinlerin idiyopatik polinöropati riskini 26.4 kat artırdığı bildirilmiştir. Ancak aynı araştırma ekibi 2017 yılında 370 onaylanmış olgu ve 7.400 kontrolü kapsayan metodolojik olarak çok daha güçlü yeni çalışmada (Svendsen ve ark.), statin kullanımı (mevcut, geçmiş veya uzun süreli) ile polinöropati riski arasında hiçbir anlamlı ilişki saptamamıştır. Araştırmacılar 2002'deki ilk sonucun küçük örneklem büyüklüğünden kaynaklanan yalancı bir ilişki olduğunu belirtmişlerdir.\n\nKemirgen ve insan paradoksu: Statinler kemirgen hayvan modellerinde (vinkristin, paklitaksel, siyatik sinir ligasyonu vb.) anti-inflamatuar, eNOS artırıcı ve sitokin baskılayıcı etkileriyle nöropatik ağrıyı ve nöronal hasarı belirgin şekilde azaltmaktadır; insanlarda ise olgu bildirimleri düzeyinde nöropati ile ilişkilendirilmiştir.\n\nAHA 2019 görüşü: Amerikan Kalp Derneği (AHA) 2019 bilimsel bildirisinde, mevcut tüm epidemiyolojik ve klinik verileri değerlendirerek statin kullanımı ile periferik nöropati arasında nedensel bir ilişki olduğuna dair ikna edici hiçbir kanıt bulunmadığını (\"no convincing evidence for a causal relationship\") ilan etmiştir.\n\nDiyabetik nöropatide hiperlipidemi rolü: Tip 2 diyabet hastalarında iyi glisemik kontrole rağmen nöropatinin gelişebildiğini gösteren çalışmalar (VA Cooperative Study) odağı hiperlipidemiye kaydırmıştır. Hiperlipidemi; artmış oksitlenmiş LDL (oxLDL), LOX-1 ve RAGE reseptör aktivasyonu, NADPH oksidaz enzim uyarımı ve NF-κB yolağı üzerinden diyabetik nöropatogenezde bağımsız bir risk faktörüdür.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — LDL ile taşınan α-tokoferolün azalması, uzun aksonlarda mitokondriyal transport bozukluğu ve \"dying-back\" aksonopati için hipotez edilen mekanizmalardandır.",
+        "B": "YANLIS — 2017'deki geniş çalışma (Svendsen ve ark., 370 olgu / 7.400 kontrol) statin ile polinöropati arasında anlamlı ilişki saptamamıştır; 2002'deki OR = 26.4 küçük örneklemden kaynaklanan yalancı bir ilişki olarak değerlendirilmiştir.",
+        "C": "YANLIS — Paradoks tersidir: statinler kemirgen modellerinde nöropatik ağrıyı ve nöronal hasarı azaltır; insanlarda ise olgu bildirimleri düzeyinde nöropatiyle ilişkilendirilmiştir.",
+        "D": "YANLIS — AHA 2019 bildirisi statin ile periferik nöropati arasında nedensel ilişkiye dair ikna edici kanıt bulunmadığını belirtmiştir.",
+        "E": "YANLIS — Hiperlipidemi (oxLDL, LOX-1 ve RAGE aktivasyonu, NADPH oksidaz, NF-κB) diyabetik nöropatogenezde bağımsız bir risk faktörüdür."
+      },
+      "etiketler": [
+        "Statin ve Periferik Nöropati",
+        "α-Tokoferol",
+        "Statin Güvenliği",
+        "Diyabetik Nöropati"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Pergolizzi JV Jr ve ark. Pain Ther 2020 · Gaist 2002 · Svendsen 2017 · AHA 2019 Bilimsel Bildirisi"
     }
   ]
 }
