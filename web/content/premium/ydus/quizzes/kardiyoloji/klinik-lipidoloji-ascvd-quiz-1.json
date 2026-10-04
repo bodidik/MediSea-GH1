@@ -508,6 +508,35 @@
       ],
       "zorluk": "zor",
       "kaynak": "Pergolizzi JV Jr ve ark. Pain Ther 2020 · Gaist 2002 · Svendsen 2017 · AHA 2019 Bilimsel Bildirisi"
+    },
+    {
+      "id": "s18",
+      "metin": "52 yaşında erkek hasta, hafif düzey hiperkolesterolemi (LDL-K: 154 mg/dL) ve statin kullanımı sırasında gelişen kas ağrıları (nocebo/drucebo etkisi şüpheli statin intoleransı) nedeniyle polikliniğe başvuruyor. Statin tedavisini reddeden ve reçetesiz besinsel takviyelere (nütrasötiklere) yönelmek isteyen hastada, doğal ürünlerin klinik etkinliği ve kanıt kalitesi değerlendirilmektedir.\n\nStatin intoleransı olan veya reçeteli lipid düşürücü tedaviyi reddeden erişkin hastalarda nütrasötiklerin lipid profili üzerindeki bağıl etkinliğini ve kanıt kalitesini 131 randomize kontrollü çalışma ve 13.062 katılımcıyı kapsayan çoklu tedavi meta-analizi (Network Meta-Analysis - NMA) verileriyle (Osadnik T, Banach M ve ark., 2022) değerlendiren klinik yaklaşıma dair aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Küba dışındaki bağımsız akademik merkezlerde yürütülen çalışmalara göre Polikosanoller (policosanols), plaseboya kıyasla LDL-kolesterol ve total kolesterol düzeylerinde en güçlü düşüşü sağlayan nütrasötik ajandır.",
+        "B": "Bergamot ve Kırmızı Maya Pirinci (Red Yeast Rice - RYR), LDL-kolesterol ve total kolesterol düşürmede en yüksek P-skoruna ve mutlak etki büyüklüğüne sahiptir; ancak GRADE yaklaşımına göre kanıt kalitesi en yüksek (\"High\") olan tek nütrasötik grubu Bitkisel Sterol/Stanollardır.",
+        "C": "Berberin, HMG-CoA redüktaz enzimini doğrudan inhibe ederek çalışır ve hepatik HNF-1α ekspresyonunu artırarak plazma PCSK9 düzeylerini belirgin şekilde yükseltir.",
+        "D": "Kırmızı Maya Pirinci (RYR) içeriğindeki Monakolin K, fitoöstrojenik yapıda bir flavonoid olup HMG-CoA redüktaz yolaklarından bağımsız olarak yalnızca bağırsak lümeninde kolesterol emilimini engeller.",
+        "E": "Yeşil çay ekstresi ve Sarımsak (garlic), GRADE sınıflamasına göre \"Yüksek\" kanıt kalitesine sahip olup LDL-kolesterol seviyesinde Kırmızı Maya Pirincinden daha güçlü bir azalma sağlar."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Network meta-analizde LDL-K ve total kolesterolü en çok düşüren ajanlar Bergamot (LDL-K −1.21 mmol/L) ve Kırmızı Maya Pirincidir (−0.94 mmol/L); ancak ikisinin de GRADE kanıt kalitesi \"Düşük\"tür. İncelenen 10 nütrasötik arasında kanıt kalitesi \"Yüksek\" olan tek grup, mütevazı etkili (LDL-K −0.29 mmol/L) Bitkisel Sterol/Stanollardır.",
+      "aciklama_detay": "Etkinlik sıralaması (P-skoru / SUCRA): Network meta-analiz verilerine göre LDL-kolesterol (LDL-K) ve Total Kolesterol (TC) düzeylerini düşürmede en yüksek etki büyüklüğüne ve P-skoruna sahip ajanlar Bergamot (LDL-K'de −1.21 mmol/L [−46.8 mg/dL] azalma) ve Kırmızı Maya Pirinci (RYR)'dir (LDL-K'de −0.94 mmol/L [−36.4 mg/dL] azalma). Ayrıca Bergamot trigliserit (TG) düşürmede de en yüksek P-skorunu elde etmiştir (−0.93 mmol/L [−82 mg/dL]).\n\nGRADE kanıt kalitesi ayrımı: Bergamot ve RYR'nin sağladığı güçlü düşüşe rağmen, çalışma sayısının azlığı, metodolojik yanlılık riski ve tutarsızlıklar nedeniyle GRADE kanıt kalitesi bu iki ajan için \"Düşük\" (Low) olarak derecelendirilmiştir. İncelenen 10 nütrasötik arasında GRADE metodolojisine göre kanıt kalitesi \"YÜKSEK\" (High) olarak sınıflandırılan TEK grup Bitkisel Sterol ve Stanollardır. Bitkisel sterol/stanollar LDL-K'de −0.29 mmol/L (−11.2 mg/dL) oranında mütevazı bir düşüş sağlasa da kanıt temeli en sağlam gruptur.\n\nPolikosanol paradoksu: Küba dışındaki ülkelerde yapılan kaliteli randomize kontrollü çalışmalar analiz edildiğinde, Polikosanollerin lipid profili (LDL-K, TC, HDL-K veya TG) üzerinde hiçbir istatistiksel veya klinik etkisi bulunmamaktadır (LDL-K değişimi: −0.02 mmol/L; p>0.05). Küba çıkışlı çalışmalarda bildirilen aşırı yüksek etkilerin metodolojik olarak hatalı/yanlı olduğu gösterilmiştir.\n\nBerberin ve PCSK9: Berberin bir HMG-CoA redüktaz inhibitörü değildir. Berberin, hepatosit nükleer faktör 1-alfayı (HNF-1α) ubikitinasyon yoluyla yıkarak PCSK9 gen transkripsiyonunu ve sentezini baskılar (inhibe eder). PCSK9'un baskılanması sonucu membran LDL reseptörlerinin (LDLR) lizozomal yıkımı engellenir ve yüzeydeki LDLR sayısı artarak plazma LDL klerensi hızlanır.\n\nMonakolin K biyokimyası: Kırmızı Maya Pirinci (Monascus purpureus ile fermente edilmiş pirinç) içeriğinde bulunan ana biyoaktif bileşen Monakolin K, kimyasal yapı ve etki mekanizması bakımından lovastatin ile tamamen özdeştir. Karaciğerde HMG-CoA redüktaz enzimini doğrudan inhibe ederek kolesterol sentezini durdurur.\n\nYeşil çay ve sarımsak: Yeşil çay ekstresi (LDL-K: −0.17 mmol/L) ve Sarımsak (LDL-K: −0.21 mmol/L) LDL düzeylerinde son derece kısıtlı ve mütevazı düşüşler sağlar. Ayrıca GRADE sınıflamasına göre yeşil çay \"Düşük\" (Low), sarımsak ise \"Çok Düşük\" (Very Low) kanıt kalitesine sahiptir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Küba dışındaki kaliteli RKÇ'lerde polikosanollerin lipid profili üzerinde anlamlı etkisi yoktur (LDL-K −0.02 mmol/L; p>0.05).",
+        "B": "DOGRU — En büyük LDL-K/TC düşüşü Bergamot ve RYR'de (ikisi de GRADE \"Düşük\"); GRADE \"Yüksek\" kanıta sahip tek grup Bitkisel Sterol/Stanollardır.",
+        "C": "YANLIS — Berberin HMG-CoA redüktaz inhibitörü değildir; HNF-1α'yı yıkarak PCSK9'u baskılar ve LDLR sayısını artırır.",
+        "D": "YANLIS — Monakolin K lovastatin ile özdeştir; hepatik HMG-CoA redüktazı doğrudan inhibe eder.",
+        "E": "YANLIS — Yeşil çay (−0.17 mmol/L, \"Düşük\") ve sarımsak (−0.21 mmol/L, \"Çok Düşük\") mütevazı etkili ve düşük kanıt kaliteli ajanlardır."
+      },
+      "etiketler": [
+        "Nütrasötikler",
+        "Kırmızı Maya Pirinci",
+        "Bitkisel Sterol/Stanol",
+        "Statin İntoleransı"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Osadnik T, Banach M ve ark. Network meta-analizi, 2022 (131 RKÇ, 13.062 katılımcı)"
     }
   ]
 }
