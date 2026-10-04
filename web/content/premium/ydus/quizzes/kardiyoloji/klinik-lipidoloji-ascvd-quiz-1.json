@@ -595,6 +595,35 @@
       ],
       "zorluk": "zor",
       "kaynak": "2026 ACC/AHA Dislipidemi Yönetimi Klinik Uygulama Kılavuzu"
+    },
+    {
+      "id": "s21",
+      "metin": "76 yaşında erkek hasta, dislipidemi ve hipertansiyon tanılarıyla birincil koruma (primary prevention) kapsamında takip edilmektedir. Lipid düşürücü tedavi (statin) başlanması planlanan hastanın yakınları; ileri yaşlı bireylerde statin kullanımının kardiyovasküler ölümleri azaltsa dahi, kanser kaynaklı ölümleri artırarak genel sağkalım üzerinde nötral veya olumsuz bir etki yaratabileceği (kardiyovasküler ölümden kanser ölümüne kayma / \"shift\" fenomeni) yönünde endişelerini dile getirmektedir.\n\nLipid düşürücü tedavilerin (LLT) kardiyovasküler ölüm ile kanser ölümü arasındaki olası kayma dinamiklerini, yaş gruplarına göre risk dağılımını ve 27 randomize kontrollü çalışmanın (188.259 hasta) meta-analiz verilerini (Bolt L, Rodondi N ve ark., PLOS ONE, 2024) esas alan klinik değerlendirmede aşağıdakilerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Lipid düşürücü tedaviler, genel popülasyonda ve tüm yaş gruplarında toplam kanser mortalitesini (%11 ila %21 oranında) istatistiksel olarak anlamlı düzeyde artırmakta ve bu durum kardiyovasküler ölüm azalmasını tamamen sıfırlamaktadır.",
+        "B": "Birincil ve ikincil koruma çalışmalarının genel meta-analizinde lipid düşürücü tedavi alan grupta kanser mortalitesinde anlamlı bir artış saptanmamış olup (RR: 1.03, %95 GA: 0.97–1.10); ancak ≥75 yaş katılımcı oranı ≥%15 olan çalışmalarda kanser mortalitesinde artış yönünde olası bir kayma (RR: 1.11, %95 GA: 1.00–1.23) kalıbı gözlenmiştir.",
+        "C": "İkincil koruma çalışmalarında lipid düşürücü tedavi alan hastalarda kanser mortalitesi riski, birincil koruma çalışmalarına kıyasla belirgin şekilde daha yüksek saptanmış (RR: 1.42) ve bu durum evreye özgü kanser latansı ile açıklanmıştır.",
+        "D": "PCSK9 inhibitörleri ve bempedoik asit ile yapılan devasa kardiyovasküler sonuç çalışmalarında (CVOT), statinlerin aksine kanser kaynaklı ölümler detaylı olarak raporlanmış ve bu ajanların kansere karşı doğrudan koruyucu olduğu kanıtlanmıştır.",
+        "E": "Lipid düşürücü tedavi altında kardiyovasküler ölümlerde sağlanan azalma, kanser ölümlerine kıyasla mutlak sayıda 10 kat daha az bulunmuş ve bu durum yaşlı popülasyonda statin kullanımını tamamen kontrendike kılmıştır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "27 RKÇ'lik (188.259 katılımcı) meta-analizde lipid düşürücü tedavi genel olarak kanser mortalitesini artırmamıştır (RR 1.03, %95 GA 0.97–1.10). Yalnızca ≥75 yaş katılımcı oranı ≥%15 olan çalışmalarda kanser ölümünde artış yönünde, hipotez üretici bir kayma kalıbı görülmüştür (RR 1.11, %95 GA 1.00–1.23).",
+      "aciklama_detay": "Genel kanser mortalitesi riski: 27 randomize kontrollü çalışmayı (23 statin, 4 ezetimib çalışması; toplam 188.259 katılımcı) kapsayan meta-analiz sonuçlarına göre; lipid düşürücü tedavi (LLT) alan grupta genel kanser mortalitesinde istatistiksel olarak anlamlı bir artış saptanmamıştır (RR: 1.03, %95 GA: 0.97–1.10).\n\nİleri yaş popülasyonundaki \"shift\" kalıbı: ≥75 yaşındaki katılımcı oranı ≥%15 olan klinik çalışmalarda yapılan alt grup analizinde, LLT grubunda kanser mortalitesi bağıl riski RR: 1.11 (%95 GA: 1.00–1.23) bulunurken, aynı grupta kardiyovasküler ölüm riski RR: 0.96 (%95 GA: 0.91–1.01) olarak izlenmiştir. Benzer şekilde, ortalama yaşı ≥70 olan çalışmalarda kanser ölümü bağıl riski RR: 1.21 (%95 GA: 0.99–1.47) olarak saptanmıştır. Bu bulgular, genel popülasyonda net bir kayma olmasa da, özellikle 75 yaş üstü ileri yaşlı bireylerde kardiyovasküler ölümlerin azalmasıyla birlikte kanser kaynaklı ölümlerin öne çıkabileceği yönünde hipotez üretici bir kalıba işaret etmektedir.\n\nBirincil ve ikincil koruma: Kanser mortalitesi açısından birincil koruma (RR: 1.00, %95 GA: 0.82–1.22) ile ikincil koruma (RR: 0.99, %95 GA: 0.88–1.10) çalışmaları arasında anlamlı fark saptanmamıştır.\n\nPCSK9 inhibitörleri ve bempedoik asit: Büyük PCSK9 inhibitörü çalışmaları (FOURIER, ODYSSEY OUTCOMES) ve geniş ölçekli bempedoik asit çalışması (CLEAR Outcomes), kanser kaynaklı ölümleri (cancer death) spesifik olarak raporlamamıştır.\n\nKardiyovasküler ve kanser ölüm sıklığı: Bu çalışmalarda kardiyovasküler ölümler (10.434 olay), kanser kaynaklı ölümlere (4.056 olay) kıyasla yaklaşık 2.5 kat daha sık görülmektedir. Statinler kardiyovasküler ölümleri belirgin şekilde azalttığı için (RR: 0.78–0.83), yaşlı popülasyonda statin kullanımı kontrendike değildir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — LLT genel popülasyonda kanser mortalitesini artırmaz (RR 1.03, %95 GA 0.97–1.10); kardiyovasküler yararı sıfırladığı iddiası geçersizdir.",
+        "B": "DOGRU — Genel analizde anlamlı artış yok (RR 1.03); ≥75 yaş oranı ≥%15 olan çalışmalarda kanser ölümünde artış yönünde olası kayma (RR 1.11, %95 GA 1.00–1.23).",
+        "C": "YANLIS — Kanser mortalitesinde birincil (RR 1.00) ve ikincil koruma (RR 0.99) çalışmaları arasında fark yoktur.",
+        "D": "YANLIS — FOURIER, ODYSSEY OUTCOMES ve CLEAR Outcomes kanser ölümünü ayrıca raporlamamıştır; koruyucu etki kanıtlanmamıştır.",
+        "E": "YANLIS — Kardiyovasküler ölümler (10.434) kanser ölümlerinden (4.056) ~2.5 kat sıktır; statinler yaşlıda kontrendike değildir."
+      },
+      "etiketler": [
+        "Statin ve Kanser Mortalitesi",
+        "İleri Yaş",
+        "Birincil Koruma",
+        "Meta-analiz"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Bolt L, Rodondi N ve ark. PLOS ONE 2024 (27 RKÇ, 188.259 katılımcı)"
     }
   ]
 }
