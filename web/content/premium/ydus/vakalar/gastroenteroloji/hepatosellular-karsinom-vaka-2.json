@@ -12,7 +12,7 @@
     {
       "adim": 1,
       "baslik": "Birinci Basamak Rejim Seçimi",
-      "klinik_bilgi": "58 yaşında kadın hasta.\n\nEtiyoloji ve karaciğer rezervi: Metabolik disfonksiyon ilişkili steatohepatit (MASH) zemininde gelişmiş siroz. Child-Pugh A (6 puan: Albümin 3.4 g/dL, Bilirubin 1.2 mg/dL, INR 1.2, hafif asit [diüretikle kontrollü], ensefalopati yok), ECOG Performans Skoru: 1.\n\nTümör yükü ve evreleme: Karaciğer sağ lobunda 7.5 cm infiltratif kitle, sağ portal ven ana dalında tümör trombozu (Vp3 PVTT) ve toraks BT'de her iki akciğerde subplevral metastatik mikronodüller (BCLC-C evresi).\n\nLaboratuvar: Serum AFP: 1250 ng/mL, Platelet: 88.000/µL.",
+      "klinik_bilgi": "58 yaşında kadın hasta.\n\nEtiyoloji ve karaciğer rezervi: Metabolik disfonksiyon ilişkili steatohepatit (MASH) zemininde gelişmiş siroz. Child-Pugh A (6 puan: Albümin 3.6 g/dL, Bilirubin 1.2 mg/dL, INR 1.2, hafif asit [diüretikle kontrollü], ensefalopati yok), ECOG Performans Skoru: 1.\n\nTümör yükü ve evreleme: Karaciğer sağ lobunda 7.5 cm infiltratif kitle, sağ portal ven ana dalında tümör trombozu (Vp3 PVTT) ve toraks BT'de her iki akciğerde subplevral metastatik mikronodüller (BCLC-C evresi).\n\nLaboratuvar: Serum AFP: 1250 ng/mL, Platelet: 88.000/µL.",
       "soru": "Konseyin bu hasta için ilk seçenek olarak belirlediği tedavi aşağıdakilerden hangisidir?",
       "secenekler": {
         "A": "TACE",

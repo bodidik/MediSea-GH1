@@ -480,7 +480,7 @@
         "D": "YANLIS — Ritüksimab ile B-hücre deplasmanı (CD20+), sadece antikor üreten kısa ömürlü plazma hücrelerinin yenilenmesini durdurmakla kalmaz. B hücrelerinin ortadan kaldırılması, T hücrelerine sürekli antijen sunulmasını engelleyerek CD4+ sitotoksik T hücrelerinin aktivasyonunu ve patolojik fonksiyonlarını doğrudan baskılar — bu, ritüksimabın en kritik etki mekanizmalarından biridir.",
         "E": "YANLIS — Çok yüksek serum IgG4 konsantrasyonlarına sahip hastalarda nefelometri ölçümleri sırasında antijen-antikor oranının bozulmasına bağlı olarak 'prozon etkisi' (kanca etkisi / hook effect) gelişebilir. Bu etki, serumda aslında çok yüksek olan IgG4 düzeylerinin laboratuvar cihazında yanıltıcı şekilde normal veya çok düşük ölçülmesine neden olur. Bu hata, serum örneğinin seyreltilmesi (dilüsyon) yoluyla kolaylıkla çözülebilir."
       },
-      "etiketler": ["IgG4-iliskili hastalik", "IgG4-RD", "retroperitoneal fibrozis", "storiform fibrozis", "obliteratif flebit", "CD4+ sitotoksik T hucreleri", "ritüksimab", "prozon etkisi"],
+      "etiketler": ["IgG4 ilişkili hastalık", "IgG4-RD", "retroperitoneal fibrozis", "storiform fibrozis", "obliteratif flebit", "CD4+ sitotoksik T hücreleri", "ritüksimab", "prozon etkisi"],
       "zorluk": "zor",
       "kaynak": "Harrison's Principles of Internal Medicine, 22nd Edition"
     },

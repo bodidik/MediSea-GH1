@@ -288,21 +288,21 @@
       "level": "Kılavuz",
       "title": "Ablasyon sonrası ses değişikliği laringeal muayene gerektirir",
       "content": "İşlem sonrasında ablasyon öncesine göre hastanın bildirdiği ya da hekimin saptadığı ses değişikliği, laringeal muayeneyle vokal kord hareketliliğinin değerlendirilmesini gerektirir (kanıt düzeyi orta). Tedaviden önce ve takip döneminde hem objektif hem de subjektif ölçümlerin ayrıntılı belgelenmesi önemlidir. Bu belgeleme hem tedavi etkinliğini değerlendirmeye hem de hastada gerçekçi beklenti oluşturmaya yarar. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 2, s. 41)",
-      "trigger": "Ablasyon Sonrasi Ses Degerlendirmesi"
+      "trigger": "Ablasyon Sonrası Ses Değerlendirmesi"
     },
     {
       "id": "p-temd-tir2-042",
       "level": "Kılavuz",
       "title": "Ablasyon öncesi eğitim: fantom, gözlem, yeterlilik",
       "content": "US eşliğinde herhangi bir termal ablasyon tedavisi uygulamadan önce, tiroid ve boyun ultrasonu konusunda ileri eğitim ve yeterlilik gerekir (kanıt düzeyi orta). Uygulayacak kişi fantom bir model üzerinde pratik yapmalı, deneyimli bir uygulayıcının yanında işlemi gözlemlemelidir. Seçilen ablasyon tekniği hakkında özel eğitim de almalıdır (kanıt düzeyi düşük). (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 2, s. 41)",
-      "trigger": "Ablasyon Uygulayicisinin Egitimi"
+      "trigger": "Ablasyon Uygulayıcısının Eğitimi"
     },
     {
       "id": "p-temd-tir2-043",
       "level": "Kılavuz",
       "title": "Alkol ablasyonunda hacim ve işlemi durdurma kuralı",
       "content": "Paratiroid kistinde önce kist aspire edilir, sonra %95-99 alkol enjekte edilir; verilen hacim aspire edilen sıvının yaklaşık %50'si kadardır. Adenom ya da hiperplazide alkol aspirasyon yapılmadan doğrudan enjekte edilir; adenomlarda verilecek hacim lezyonun vaskülaritesine ve boyutuna göre 3-6 mL'dir. İğne çekilip işlem bittikten sonra hasta 30 dakika gözlemlenir. Eş zamanlı ultrasonda alkolün lezyon dışına kaçtığı görülürse ya da hasta ciddi ağrıdan yakınırsa işlem hemen sonlandırılmalıdır. Solid paratiroid lezyonları genellikle 3-5 seans gerektirir. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 46)",
-      "trigger": "Paratiroidde Alkol Ablasyon Yontemi"
+      "trigger": "Paratiroidde Alkol Ablasyon Yöntemi"
     },
     {
       "id": "p-temd-tir2-044",
@@ -316,7 +316,7 @@
       "level": "Kılavuz",
       "title": "Tekrarlayan kistte reaspirasyon değil alkol ablasyonu",
       "content": "Semptomatik nonfonksiyone paratiroid kistlerinin tanı ve tedavisinde ilk seçenek basit aspirasyondur. Aspirasyonla tedavi başarısı sınırlı sayıda vaka serisinde %33-%92 bildirilmiştir; en büyük seride 12 hastada tek başına aspirasyonla %33 başarı sağlanmıştır. Rekürren kistlerde reaspirasyon etkili olmamış, alkol ablasyonu ile bu hastalar majör komplikasyon gelişmeden başarıyla tedavi edilmiştir. Sekiz nonfonksiyone kist hastasına alkol ablasyonu uygulanan yeni bir seride başarı %100'e ulaşmıştır. İşlem başarısında operatörün deneyimi önemlidir. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 47)",
-      "trigger": "Paratiroid Kistinde Tedavi Basamaklari"
+      "trigger": "Paratiroid Kistinde Tedavi Basamakları"
     },
     {
       "id": "p-temd-tir2-046",
@@ -330,13 +330,13 @@
       "level": "Kılavuz",
       "title": "5 mm altındaki paratiroid lezyonuna alkol verme",
       "content": "Çapı 5 mm'den küçük paratiroid lezyonlarında alkol ekstravazasyon riski yüksek olduğu için alkol ablasyonu yapılmamalıdır. Bildirilen komplikasyonlar rekürren laringeal sinir hasarı, geçici disfoni, hipokalsemi ve periglandüler fibrozistir. Sekonder hiperparatiroidili hastalarda yapılan bir çalışmada 2 hastada sinirde kalıcı hasar gelişmiştir. İğne paratiroidden çıkarılırken genellikle hafif bir ağrı olur ve birkaç dakika içinde kendiliğinden geçer. Komplikasyonları azaltmak için tiroid nodüllerinde kullanılan transistmik yaklaşım paratiroid kistlerinde de kullanılabilir. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 47)",
-      "trigger": "Alkol Ablasyonunun Komplikasyonlari"
+      "trigger": "Alkol Ablasyonunun Komplikasyonları"
     },
     {
       "id": "p-temd-tir2-048",
       "level": "Kılavuz",
       "title": "Paratiroid nodülü komşu yapılardan en az 5 mm uzakta",
-      "content": "Paratiroid bezini özefagus, trakea, karotis arter ve rekürren laringeal sinirden ayırıp termal hasarı engellemek için US eşliğinde sürekli sıvı enjeksiyonuyla hidrodiseksiyon sağlanmalıdır; kullanılan sıvı %5 dekstroz ya da serum fizyolojiktir. Radyofrekans ablasyonda izotonik salin elektriği ilettiği için hidrodiseksiyon sıvısı olarak kullanılmaz. Paratiroid nodülü, etrafındaki önemli yapılardan en az 5 mm uzak tutulmalıdır. Komşu dokulara zararı azaltmak için iğnenin transistmik yerleştirilmesi önerilir. Ablasyonun her aşamasında iğne pozisyonu ultrasonla izlenmelidir. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 48)",
+      "content": "Paratiroid bezini özofagus, trakea, karotis arter ve rekürren laringeal sinirden ayırıp termal hasarı engellemek için US eşliğinde sürekli sıvı enjeksiyonuyla hidrodiseksiyon sağlanmalıdır; kullanılan sıvı %5 dekstroz ya da serum fizyolojiktir. Radyofrekans ablasyonda izotonik salin elektriği ilettiği için hidrodiseksiyon sıvısı olarak kullanılmaz. Paratiroid nodülü, etrafındaki önemli yapılardan en az 5 mm uzak tutulmalıdır. Komşu dokulara zararı azaltmak için iğnenin transistmik yerleştirilmesi önerilir. Ablasyonun her aşamasında iğne pozisyonu ultrasonla izlenmelidir. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 48)",
       "trigger": "Termal Ablasyonda Hidrodiseksiyon"
     },
     {
@@ -344,35 +344,35 @@
       "level": "Kılavuz",
       "title": "1 cm eşiği: moving-shot mu sabit ablasyon mu",
       "content": "Mikrodalga ve radyofrekans ablasyonda genel olarak 1 cm'den büyük lezyonlarda hareketli atış (moving-shot), 1 cm'den küçük lezyonlarda sabit ablasyon metodu kullanılır. İğneler önce nodülün en dip kısmına yerleştirilir, ablasyon sağlandıkça proksimale doğru hareket ettirilir. Ablasyondan sonra birkaç adenomatoz paratiroid hücresinin bile kalmış olması ablasyonun suboptimal olduğunu ve daha fazla seans gerekeceğini gösterir. Bu nedenle adenomun periferinin tamamen ablate olması, marjinal tekrar büyümenin engellenmesi açısından önemlidir. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 48)",
-      "trigger": "Paratiroidde Termal Ablasyon Teknigi"
+      "trigger": "Paratiroidde Termal Ablasyon Tekniği"
     },
     {
       "id": "p-temd-tir2-050",
       "level": "Kılavuz",
       "title": "Görüntülenemeyen paratiroid bezi ablate edilemez",
       "content": "İşlem boyunca hasta ses değerlendirmesi için aralıklı konuşturulur. Tedavi bittikten sonra kanama komplikasyonunu azaltmak için 15 dakika hafifçe kompresyon yapılır, hasta 30-60 dakika komplikasyon gelişimi açısından izlenir. Mediastinal veya retrotrakeal yerleşimli bezlerin ultrasonografik görüntülenmesi zordur; US ile lokalizasyonu saptanamayan bezlerde US eşliğinde termal ya da alkol tedavisi gerçekleştirilemez. Paratiroid adenomlarında komplikasyonu azaltmak için tiroid nodüllerine göre daha düşük güç çıkışı ve daha küçük aktif uç önerilir. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 49)",
-      "trigger": "Termal Ablasyonda Islem Izlemi"
+      "trigger": "Termal Ablasyonda İşlem İzlemi"
     },
     {
       "id": "p-temd-tir2-051",
       "level": "Kılavuz",
       "title": "İntratiroidal adenom: ablasyonun en ideal hedefi",
       "content": "Fransız Endokrinoloji Derneği 2025 ulusal kılavuzunda, nadir görülen (%0,2) intratiroidal paratiroid adenomunda termal ablasyonu birinci basamak tedavi olarak önermiştir. Tiroid parankimi içindeki konum termal yayılımı sınırlayarak çevre dokulara olası zararı önlemekte, böylece lobektomi ihtiyacını ortadan kaldırabilmektedir. Bu lokalizasyondaki adenomların termal ablasyonla tedavi edildiği vaka raporlarında komplikasyon gelişmeksizin PTH ve serum kalsiyumunun normale döndüğü bildirilmiştir. Termal ablasyon, multidisipliner ekip onayı alındıktan sonra ameliyata uygun olmayan ya da cerrahiden kaçınan hastalarda ikinci basamak seçenek olarak değerlendirilebilir. Ancak intratiroidal yerleşim dışındaki adenomlarda kanıtlar oldukça sınırlıdır. TEMD de intratiroidal yerleşimli adenomlarda termal ablasyonu lobektomiye alternatif olarak önerilebilir buluyor. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 49)",
-      "trigger": "Intratiroidal Paratiroid Adenomu"
+      "trigger": "İntratiroidal Paratiroid Adenomu"
     },
     {
       "id": "p-temd-tir2-052",
       "level": "Kılavuz",
       "title": "Paratiroid ablasyonunda dört yöntemin kanıt düzeyi ayrışıyor",
       "content": "Primer hiperparatiroidide mikrodalga ablasyon araştırmaları nispeten daha büyük örneklemli ve daha uzun takiplidir; kür oranı yaklaşık %82,1-%89,4 bildirilmektedir. Radyofrekans ablasyonda bir seride 11 hasta tedavi edilmiş, adenomun tamamen kaybolması ve biyokimyasal remisyon 7 hastada (%63,6) bildirilmiştir. Lazer ablasyonda sonuçlar seriden seriye ayrışır: altı hastalık bir seride hastaların yarısı persistan hastalık nedeniyle ameliyat edilmiş, buna karşılık 21 hastalık seride %81, 12 hastalık seride 11/12 (%92) başarı bildirilmiştir; kaynak lazeri etkili bir seçenek olarak görmekle birlikte daha geniş serilere ihtiyaç olduğunu belirtir. Yüksek yoğunluklu odaklanmış ultrason verisi daha da sınırlıdır: 13 hastalık seride bir yıl sonra üç hastada (%23) tam remisyon görülmüş, 10 hastada (%76,9) PTH yüksek seyretmeye devam etmiştir. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 50)",
-      "trigger": "Primer Hiperparatiroidide Ablasyon Yontemleri"
+      "trigger": "Primer Hiperparatiroidide Ablasyon Yöntemleri"
     },
     {
       "id": "p-temd-tir2-053",
       "level": "Kılavuz",
       "title": "6 mm altındaki lezyon operatörü yanlış hedefe çeker",
       "content": "Çok merkezli çalışmada tedavi başarısı %89,9 saptanmış, 18 aylık takipte %80'in üzerinde tutulmuştur; tedavi olamayan yedi küçük adenom hesaplamalardan çıkarıldığında oran %95'e, yani cerrahiye benzer düzeye ulaşmıştır. Hidrodiseksiyon sıvısı düzensiz dağılabilir; paratiroid lezyonu 6 mm'den küçük olduğunda sıvının ekojenitesi paratiroid nodülününkine benzer, her ikisi de hipoekoiktir ve operatörü kolayca yanlış hedeflere yönlendirebilir. Etkin ablasyon için hipoekoik hiperplastik nodülün hem merkezinin hem çevresinin tamamen ablasyonu gerekir; bez tümüyle ablate edilemezse yalnızca kısmi remisyon sağlanabilir. İşlem sırasında intakt PTH ölçümü yapabilmek tam ablasyona yardımcı olabilir. İşlem öncesi belirgin D vitamini eksikliği ve ablasyon sonrası yetersiz suplementasyon da tam iyileşmeyi engelleyebilir. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 51)",
-      "trigger": "Termal Ablasyonda Kur Belirleyicileri"
+      "trigger": "Termal Ablasyonda Kür Belirleyicileri"
     },
     {
       "id": "p-temd-tir2-054",
@@ -393,35 +393,35 @@
       "level": "Kılavuz",
       "title": "Malignite işareti taşıyan paratiroid lezyonu ablate edilmez",
       "content": "Paratiroid karsinomu şüphesi taşıyan hastalarda termal ablasyon, cerrahi için mutlak kontrendikasyon olmadığı sürece önerilmez. Malignite özellikleri gösteren lezyonlar da kontrendike kabul edilir: çapı 3 cm'yi aşan, hızlı büyüyen, düzensiz şekilli, kesintili kapsüllü, sınır invazyonu olan ya da anormal büyüklükte periferik lenf nodlarıyla birlikte seyreden lezyonlar. Eşzamanlı tiroid kanseri veya boyunda başka bir malign neoplazi varlığı da işlemin yapılmasına engeldir. Bozulmuş mental durum nedeniyle işbirliği yapılamayan hastalar uygun değildir; antikoagülan tedavinin yeterli süre kesilemediği veya ağır pıhtılaşma bozukluğu bulunan durumlar da kontrendikasyon oluşturur. Ağır kardiyopulmoner yetersizlik nedeniyle hastanın supin pozisyona alınamaması işlemi engelleyen bir faktördür. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 53)",
-      "trigger": "Termal Ablasyon Kontrendikasyonlari"
+      "trigger": "Termal Ablasyon Kontrendikasyonları"
     },
     {
       "id": "p-temd-tir2-057",
       "level": "Kılavuz",
       "title": "Ablasyon yanıtı PTH düşüşüne göre üçe ayrılır",
       "content": "Termal ablasyon dokuyu çıkarmak yerine yerinde inaktive ettiği için etkinliği klasik cerrahi ölçütlerinden farklı değerlendirilir; 2024 konsensüsü üç sonuç kategorisi tanımlar. Etkili: hedef lezyonun görüntülemede tam inaktivasyonu doğrulanır, ablasyondan 3 gün sonra PTH %80 veya daha fazla azalır, kalsiyum ve fosfor normale döner, klinik semptomlar belirgin düzelir ya da kaybolur. Kısmen etkili: lezyon inaktive edilmiştir ancak PTH düşüşü %50-80'dir, kalsiyum-fosfor metabolizması iyileşmiş ve semptomlar belirgin azalmıştır. Geçersiz: görüntülemede lezyonun aktif ya da yetersiz inaktive olduğu doğrulanır, PTH %50'den az düşer ve klinik tabloda anlamlı iyileşme olmaz. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 53)",
-      "trigger": "Termal Ablasyon Yanit Olcutleri"
+      "trigger": "Termal Ablasyon Yanıt Ölçütleri"
     },
     {
       "id": "p-temd-tir2-058",
       "level": "Kılavuz",
       "title": "Sinir boyunca lokal anestezik hasarı gizler",
       "content": "Primer hiperparatiroidi ablasyonu çalışmalarında geçici ses kısıklığı %4,2-%38 arasında bildirilmiştir; bu oran paratiroidektomilerde (%3,9) ve tiroid nodüllerinin termal ablasyonunda (%1,5) bildirilenden yüksektir. Buna karşılık kalıcı sinir felcine bağlı ses kısıklığı ablasyonda daha düşüktür: tiroidektomi ya da paratiroidektomideki kalıcı sinir hasarı %3,9 iken ablasyonda %0,8'dir. Rekürren laringeal sinir boyunca hidrodiseksiyon sırasında lokal anestezik kullanılması, işlem esnasında sinir termal hasarının erken tespitini güçleştireceğinden önerilmez. Üst paratiroid bezleri sinire özellikle yakındır ve büyümüş bezler siniri yukarı kaldırabilir; periparatiroid fasiyal aralığa hidrodiseksiyon bu riski azaltır. Tek taraflı ablasyon sonrası sinir hasarından şüphelenildiğinde karşı taraf ablasyonu, sinir fonksiyonu iyileşene kadar ertelenmelidir. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 54)",
-      "trigger": "Ablasyonda Ses Kisikligi ve Sinir Korumasi"
+      "trigger": "Ablasyonda Ses Kısıklığı ve Sinir Koruması"
     },
     {
       "id": "p-temd-tir2-059",
       "level": "Kılavuz",
       "title": "Hipokalsemi: en sık ve en kritik komplikasyon",
       "content": "Hipokalsemi termal ablasyonun en sık görülen ve klinik açıdan en kritik komplikasyonudur. 2024 konsensüsü kapsamında 1.963 hastalık seride tüm hipokalsemi %21,2, ağır hipokalsemi %14,1, kalıcı hipoparatiroidi %0,8 oranında bildirilmiştir. Klinik tablo hipotansiyon, uyuşma, konvülsiyon ve dispneden; ağır vakalarda kardiyak arrest veya ani ölüme kadar uzanabilir. Çoklu lezyon ablasyonu yapılan veya işlem sonrasında PTH'de ani düşüş saptanan hastalarda yakın takip gerekir. Ağır hipokalsemi risk faktörleri yüksek preoperatif PTH düzeyi, hızlı PTH düşüşü, çoklu sekonder hiperparatiroidi lezyonu, düşük preoperatif serum kalsiyumu, kaşıntı olmaması, erkek cinsiyet ve genç yaştır. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 54)",
-      "trigger": "Ablasyon Sonrasi Hipokalsemi"
+      "trigger": "Ablasyon Sonrası Hipokalsemi"
     },
     {
       "id": "p-temd-tir2-060",
       "level": "Kılavuz",
       "title": "Multiglandüler hastalıkta nüks riski belirgin yüksek",
       "content": "TEMD, sekonder hiperparatiroidide ve multiglandüler primer hiperparatiroidide termal ablasyonu; semptomatik hastalarda konservatif tedaviye direnç gelişmesi durumunda ya da cerrahi için uygun olmayan olgularda tercih edilebilir bir seçenek sayıyor (kanıt düzeyi orta). Ancak multiglandüler hastalıkta tüm bezlerin eksiksiz ablasyonu teknik açıdan güçtür; persistan veya rekürren hastalık riski, tek bezin tutulduğu olgulara kıyasla belirgin biçimde daha yüksektir. Hastaların bu olasılık hakkında önceden bilgilendirilmesi ve uzun vadeli izlem planının buna göre düzenlenmesi gerekir. Komplikasyon oranları operatör deneyimiyle ters orantılı olduğundan, yıllık en az 30 ablasyon prosedürü gerçekleştiren deneyimli merkezlerde işlem yapılması tavsiye edilir. (TEMD Tiroid-Paratiroid Girişimsel 2026, Bölüm 3, s. 55)",
-      "trigger": "Multiglanduler Hastalikta Termal Ablasyon"
+      "trigger": "Multiglandüler Hastalıkta Termal Ablasyon"
     }
   ]
 }

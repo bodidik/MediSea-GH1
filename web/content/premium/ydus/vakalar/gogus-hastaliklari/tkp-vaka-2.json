@@ -39,7 +39,7 @@
       },
       "dogru": "A",
       "secenekAciklamalari": {
-        "A": "DOĞRU — Güncel ERS/ESICM kılavuzları ve CAPE COD gibi yüksek kanıt düzeyli çalışmalar ışığında, influenza dışı ağır sCAP ve septik şok tablolarında adjuvan hidrokortizon kullanımı mortaliteyi belirgin şekilde azaltmaktadır.",
+        "A": "DOĞRU — Vazopresör gerektiren septik şokta hidrokortizon Surviving Sepsis kılavuzunca önerilir. Ağır TKP'de (influenza dışı) ERS/ESICM/ESCMID/ALAT 2023 kılavuzu adjuvan kortikosteroidi önerir; CAPE COD çalışmasında hidrokortizon ağır TKP'de 28 günlük mortaliteyi azaltmıştır (bu çalışma vazopresör gerektiren şoktaki hastaları dışlamıştı).",
         "B": "YANLIŞ — ATS/IDSA kılavuzları, sCAP hastalarında tedavi süresinin en az 5 gün olmasını önermektedir. Klinik stabilite sağlandıktan sonra komplikasyonsuz vakalarda tedaviyi 5-7 günde sonlandırmak güvenlidir; rutin olarak 14 güne uzatılması önerilmez.",
         "C": "YANLIŞ — İnfluenza pnömonilerinde adjuvan kortikosteroid kullanımı, sekonder bakteriyel/fungal enfeksiyon riskini ve viral replikasyonu artırdığı için kaçınılması gereken bir uygulamadır.",
         "D": "YANLIŞ — Sepsis ve YBÜ'de yatan sCAP hastalarında seri prokalsitonin takibi yapılması ve pik değerden ≥%80 düşüş görülmesi durumunda tedavinin kesilmesi, mortaliteyi artırmadan antibiyotik maruziyetini azaltan kanıta dayalı ve güvenli bir yaklaşımdır."

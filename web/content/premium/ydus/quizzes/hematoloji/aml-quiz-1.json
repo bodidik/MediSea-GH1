@@ -38,7 +38,7 @@
         { "id": "A", "text": "Derhal ATRA başlanmalıdır; Hidroksiüre verilmesinden kaçınılmalıdır." },
         { "id": "B", "text": "Acil lökoferez ve/veya sitoredüktif kemoterapi başlanmalıdır; zorunlu olmadıkça Eritrosit (RBC) transfüzyonu yapmaktan kaçınılmalıdır." },
         { "id": "C", "text": "Agresif hidrasyon ve Rasburikaz başlanmalıdır; Trombosit transfüzyonu yapmaktan kaçınılmalıdır." },
-        { "id": "D", "text": "Proflaktik kranial ışınlama yapılmalıdır; Deksametazon kullanımından kaçınılmalıdır." },
+        { "id": "D", "text": "Profilaktik kranial ışınlama yapılmalıdır; Deksametazon kullanımından kaçınılmalıdır." },
         { "id": "E", "text": "Hedefe yönelik Venetoklaks başlanmalıdır; Lökoferez yapmaktan kesinlikle kaçınılmalıdır." }
       ],
       "correctAnswer": "B",

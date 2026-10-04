@@ -12,8 +12,8 @@
       "klinik_bilgi": "Yetmiş dört yaşında erkek hasta, 6 haftadır giderek artan yorgunluk, 4 kg istemsiz kilo kaybı ve son 2 ayda 3 kez alt solunum yolu enfeksiyonu geçirme yakınmalarıyla başvuruyor.\n\nÖzgeçmiş: Tip 2 DM (insülin), Atriyal Fibrilasyon (antikoagülan), KOAH (DLCO %62), Kronik Böbrek Hastalığı (Kreatinin 1.9 mg/dL, eGFR 38 mL/dk). 5'ten fazla ilaç kullanıyor (polifarmasi).\n\nFizik muayene: ECOG PS 2. Soluk görünüm, bilateral bazallerde ronküsler.\n\nLaboratuvar:\nHb: 7.8 g/dL ↓ | WBC: 18.400/µL (diferansiyelde %38 blast) | PLT: 42.000/µL ↓\nKemik iliği biyopsisi planlandı.",
       "soru": "Bu hastanın tedavi yoğunluğuna karar verirken en belirleyici yaklaşım hangisidir?",
       "secenekler": {
-        "A": "Hasta 74 yaşında olduğundan kroniksel yaş tek başına yoğun kemoterapi kontrendikasyonu oluşturur; düşük yoğunluklu tedaviye geçilmelidir.",
-        "B": "Tedavi yoğunluğu kararı kroniksel yaşa değil; HCT-CI skoru, organ fonksiyonları ve kapsamlı kırılganlık değerlendirmesine (performans, polifarmasi, beslenme) göre bireyselleştirilmelidir.",
+        "A": "Hasta 74 yaşında olduğundan kronolojik yaş tek başına yoğun kemoterapi kontrendikasyonu oluşturur; düşük yoğunluklu tedaviye geçilmelidir.",
+        "B": "Tedavi yoğunluğu kararı kronolojik yaşa değil; HCT-CI skoru, organ fonksiyonları ve kapsamlı kırılganlık değerlendirmesine (performans, polifarmasi, beslenme) göre bireyselleştirilmelidir.",
         "C": "WBC 18.400/µL ile dolaşımda %38 blast var; lösemi yükü yüksek olduğu için yoğun kemoterapi şarttır.",
         "D": "KOAH tanısı tek başına tüm sistemik kemoterapiler için kontrendikasyon oluşturur; bu hasta tedavi edilemez.",
         "E": "İleri yaş AML'de tedavi etkinliği çok düşüktür; en uygun yaklaşım palyatif destek tedavidir."
@@ -60,23 +60,23 @@
       "klinik_bilgi": "Ven+HMA başlandı. Venetoklaks: 400 mg/gün.\nFungal profilaksi olarak Flukonazol 200 mg/gün mevcut (daha önce başlanmış, devam ediyor).\nHemşire ilaç mutabakatı sırasında bu kombinasyonu fark etti.",
       "soru": "Flukonazol + Venetoklaks kombinasyonunda doğru yönetim hangisidir?",
       "secenekler": {
-        "A": "Flukonazol güçlü bir CYP3A4 inhibitörüdür; birlikte verilirse venetoklaks plazma düzeyi 5-6 kat artar. Venetoklaks dozu 400 mg'dan 100 mg'a düşürülmelidir.",
+        "A": "Flukonazol güçlü bir CYP3A4 inhibitörüdür; venetoklaks dozu 400 mg'dan 100 mg'a düşürülmelidir.",
         "B": "Flukonazol orta düzey bir CYP3A4 inhibitörüdür; venetoklaks dozu 400 mg'dan 200 mg'a düşürülmesi yeterlidir.",
         "C": "Flukonazol–venetoklaks etkileşimi klinik olarak önemsizdir; doz değişikliği gerekmez.",
         "D": "Venetoklaks kesilmeli, flukonazol ile eş zamanlı kullanım mutlak kontrendikasyondur.",
         "E": "Flukonazol yerine vorikonazol kullanılmalıdır; vorikonazol CYP3A4 ile etkileşmez."
       },
-      "dogru": "A",
-      "aciklama_kisa": "Flukonazol güçlü CYP3A4 inhibitörüdür. Venetoklaks maruziyetini 5-6 kat artırır → doz 400 mg'dan 100 mg'a düşürülür. Azaltılmadan verilmek ciddi hematolojik toksisite yaratır.",
-      "aciklama_detay": "Venetoklaks, karaciğerde CYP3A4 enzimi aracılığıyla metabolize edilir. Flukonazol güçlü bir CYP3A4 inhibitörü olarak bu enzimi baskılar ve venetoklaks AUC'unu yaklaşık 5.8 kat artırır. Bu durum aşırı hematolojik toksisiteye (ağır nötropeni, trombositopeni, enfeksiyon) ve tümör lizis sendromu riskinde artışa yol açabilir. Kılavuz önerisi nettir: flukonazol (ve diğer güçlü CYP3A4 inhibitörleri) ile birlikte kullanımda venetoklaks dozu 400 mg → 100 mg'a düşürülür. Flukonazol'ün alternatif bir fungal profilaksi ile değiştirilmesi de bir seçenektir (örn. mikafungin IV, anidulafungin gibi CYP3A4'ü etkilemeyenler).",
+      "dogru": "B",
+      "aciklama_kisa": "Flukonazol orta düzey CYP3A4 inhibitörüdür → venetoklaks dozu en az %50 azaltılır (400 → 200 mg). Güçlü inhibitörlerde (posakonazol, vorikonazol) azaltma daha fazladır (70–100 mg). Azaltılmadan verilmek ciddi hematolojik toksisite yaratır.",
+      "aciklama_detay": "Venetoklaks, karaciğerde CYP3A4 enzimi aracılığıyla metabolize edilir. Flukonazol orta düzey bir CYP3A4 inhibitörü olarak bu enzimi baskılar ve venetoklaks maruziyetini artırır. Bu durum aşırı hematolojik toksisiteye (ağır nötropeni, trombositopeni, enfeksiyon) ve tümör lizis sendromu riskinde artışa yol açabilir. Etiket önerisi nettir: orta düzey CYP3A4 inhibitörleriyle (flukonazol gibi) birlikte venetoklaks dozu en az %50 azaltılır (400 mg → 200 mg); güçlü inhibitörlerle (vorikonazol 100 mg, posakonazol 70 mg) daha fazla azaltılır. Flukonazol'ün alternatif bir fungal profilaksi ile değiştirilmesi de bir seçenektir (örn. mikafungin IV, anidulafungin gibi CYP3A4'ü etkilemeyenler).",
       "secenekAciklamalari": {
-        "A": "DOĞRU — Flukonazol güçlü CYP3A4 inhibitörüdür (zayıf değil). Venetoklaks dozunun 100 mg'a düşürülmesi FDA onaylı etiket bilgisinde açıkça yer almaktadır. Bu ilaç mutabakatı adımı hayat kurtarıcıdır.",
-        "B": "YANLIŞ — Flukonazol orta değil güçlü CYP3A4 inhibitörüdür. 200 mg'a düşürme yeterli değildir; hedef doz 100 mg. Vorikonazol da güçlü CYP3A4 inhibitörüdür — aynı sorun geçerlidir.",
+        "A": "YANLIŞ — Flukonazol güçlü değil orta düzey bir CYP3A4 inhibitörüdür. 100 mg (ya da posakonazolde 70 mg) dozları güçlü CYP3A4 inhibitörleri (posakonazol, vorikonazol) için önerilir; flukonazolle bu kadar azaltmak gereksiz düşük doza yol açar.",
+        "B": "DOĞRU — Flukonazol orta düzey bir CYP3A4 inhibitörüdür. Venetoklaks etiketine göre orta düzey CYP3A4 inhibitörüyle birlikte venetoklaks dozu en az %50 azaltılır (400 mg → 200 mg). Bu ilaç mutabakatı adımı ciddi toksisiteyi önler.",
         "C": "YANLIŞ — Etkileşim klinik olarak son derece önemlidir; göz ardı edilmesi ağır hematolojik toksisite ve artmış TLS riskine yol açar. Bu kombinasyon için doz ayarı zorunludur.",
         "D": "YANLIŞ — Venetoklaks mutlak kontrendike değildir; doz ayarı ile güvenle kullanılabilir. Doz ayarı yapılmadan kesme, hastayı antilösemik tedavisiz bırakır.",
         "E": "YANLIŞ — Vorikonazol da CYP3A4'ün güçlü inhibitörüdür. Flukonazol yerine vorikonazol geçmek etkileşimi ortadan kaldırmaz; sorun aynı şekilde devam eder. CYP3A4'ü etkilemeyen ajanlar (mikafungin, anidulafungin) gerçek alternatiflerdir."
       },
-      "sonraki_bilgi": "Venetoklaks 400 mg → 100 mg'a düşürüldü. Flukonazol mikafungine değiştirildi (alternatif: venetoklaks 400 mg olarak sürebilirdi).\n\n1. kür tamamlandı. 28. gün kemik iliği değerlendirmesi:\n— Blast oranı: %3\n— ANC (Mutlak Nötrofil Sayısı): 820/µL\n— Trombosit: 68.000/µL\n— Hemoglobin: 9.2 g/dL"
+      "sonraki_bilgi": "Flukonazol mikafungine değiştirildi; etkileşim ortadan kalktığı için venetoklaks 400 mg olarak sürdürüldü (flukonazole devam edilseydi venetoklaks 200 mg'a düşürülecekti).\n\n1. kür tamamlandı. 28. gün kemik iliği değerlendirmesi:\n— Blast oranı: %3\n— ANC (Mutlak Nötrofil Sayısı): 820/µL\n— Trombosit: 68.000/µL\n— Hemoglobin: 9.2 g/dL"
     },
     {
       "adim": 4,
@@ -87,7 +87,7 @@
         "A": "Tam Remisyon (CR): blast <%5 kriterleri karşılandı; tam hematolojik iyileşme sağlandı.",
         "B": "Tam Remisyon — Eksik Hematolojik İyileşme (CRi): blast <%5 ancak ANC <1.000/µL ve/veya PLT <100.000/µL. Ven+HMA'ya devam edilmeli; ilerleyen kürlerde sayımların normalleşmesi beklenir.",
         "C": "Yanıtsızlık (refrakter): blast %3 yeterli azalma sağlanmadı; tedavi değiştirilmelidir.",
-        "D": "Morfololojik Lösemisiz Durum (MLFS): blast <%5 ama sayımlar tam normalleşmedi; CR ile aynı prognostik önemi taşır.",
+        "D": "Morfolojik Lösemisiz Durum (MLFS): blast <%5 ama sayımlar tam normalleşmedi; CR ile aynı prognostik önemi taşır.",
         "E": "Kısmi Remisyon (PR): blast ≥%5'ten <%25'e düştü, bu sınıflandırmaya girer."
       },
       "dogru": "B",
@@ -97,7 +97,7 @@
         "A": "YANLIŞ — CR için ANC ≥1.000/µL VE PLT ≥100.000/µL birlikte gereklidir. Bu hastada her ikisi de eşiğin altında; dolayısıyla CR kriterleri karşılanmıyor.",
         "B": "DOĞRU — Blast <%5 ✓ + ANC <1.000 + PLT <100.000 = CRi tanımı. Unfit AML'de CRi prognostik açıdan anlamlıdır; Ven+HMA'ya devam edilir, ilerleyen kürlerde hematolojik iyileşme beklenir.",
         "C": "YANLIŞ — Refrakter hastalık, birden fazla kür sonrası blast ≥%5 veya blast temizlenmemesi anlamına gelir. Bu hastada blast %3; tek kür sonrasında bu yanıt, özellikle unfit hasta ve Ven+HMA rejimi düşünüldüğünde, başarılı bir erken yanıttır.",
-        "D": "YANLIŞ — MLFS (Morfololojik Lösemisiz Durum), blast <%5 ama ANC ve/veya PLT düşük olan ve CRi kriterlerinin sınırında kaldığı durumlar için kullanılır; CRi'dan daha düşük bir kategoridir. Bu hastada ANC 820 ve PLT 68.000 ile CRi kriterleri karşılanıyor; MLFS bu tablo için değil.",
+        "D": "YANLIŞ — MLFS (Morfolojik Lösemisiz Durum), blast <%5 ama ANC ve/veya PLT düşük olan ve CRi kriterlerinin sınırında kaldığı durumlar için kullanılır; CRi'dan daha düşük bir kategoridir. Bu hastada ANC 820 ve PLT 68.000 ile CRi kriterleri karşılanıyor; MLFS bu tablo için değil.",
         "E": "YANLIŞ — Kısmi Remisyon (PR), blast sayısının ≥%5'ten <%25'e düşmesi ve kemik iliğinin henüz tam temizlenmediği durumlar için tanımlanır. Bu hastada blast %3; PR değil, daha derin bir yanıt (CRi) mevcut."
       },
       "sonraki_bilgi": "CRi olarak değerlendirildi. Ven+HMA 2. küre geçildi. 2. kür sonrası ANC 1.200/µL, PLT 112.000/µL → CR elde edildi.\n\nHasta 6. kürde hâlâ CR'da. Fonksiyonel performansı düzeldi (ECOG PS 1'e geriledi), yaşam kalitesi anlamlı biçimde arttı. Ven+HMA; yaşlı ve unfit AML hastalarına kür değil, anlamlı yaşam süresi ve kalite kazandıran modern hematolojinin başarı öykülerinden biri."

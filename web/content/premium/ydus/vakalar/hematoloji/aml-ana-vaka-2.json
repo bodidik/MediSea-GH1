@@ -28,7 +28,7 @@
         "D": "YANLIŞ — Lökoferez APL'de kesinlikle kontrendikedir. Zaten DİK zemininde yapılacak bir lökoferez, trombotik ve hemorajik komplikasyon riskini dramatik biçimde artırır. Ayrıca WBC 3.800/µL — hiperlökositoz yok.",
         "E": "YANLIŞ — APL'de 7+3 standart indüksiyon değildir. APL'nin tedavisi ATRA + ATO (veya yüksek riskli olgularda antrasiklindir); sitozin arabinozid bazlı 7+3 bu alt tipte gereksiz toksisite üretir ve etkinliği düşüktür."
       },
-      "sonraki_bilgi": "ATRA başlandı. Ertesi gün genetik sonuçlar geldi:\nt(15;17)/PML::RARA pozitif ✓ — APL tanısı teyit edildi.\nCD33 pozitif. WBC başvuruda 3.800/µL iken bugün 4.200/µL.\n\nSellow kriterleri: WBC <10.000/µL → Düşük/Orta risk APL."
+      "sonraki_bilgi": "ATRA başlandı. Ertesi gün genetik sonuçlar geldi:\nt(15;17)/PML::RARA pozitif ✓ — APL tanısı teyit edildi.\nCD33 pozitif. WBC başvuruda 3.800/µL iken bugün 4.200/µL.\n\nSanz risk sınıflaması: WBC <10.000/µL → Düşük/Orta risk APL."
     },
     {
       "adim": 2,
@@ -62,21 +62,21 @@
       "secenekler": {
         "A": "ATRA ve ATO kalıcı olarak kesilmeli, derhal yoğun kemoterapi başlanmalıdır.",
         "B": "Tablo ağır pnömoni ile uyumludur; geniş spektrumlu antibiyotik başla, ATRA/ATO'ya devam et.",
-        "C": "Diferansiyasyon sendromu (DS) düşünülerek deksametazon hemen başlanmalı; ATRA/ATO geçici olarak kesilmeli, enfeksiyon paralelde dışlanmalıdır.",
+        "C": "Tablo panik gerektirmez; hasta izleme alınmalı, 24 saat beklenmelidir.",
         "D": "WBC yükseldiğinden lökoferez yapılmalı; DS'de hücre yükünü hızla düşürmek gerekir.",
-        "E": "Tablo panik gerektirmez; hasta izleme alınmalı, 24 saat beklenmelidir."
+        "E": "Diferansiyasyon sendromu (DS) düşünülerek deksametazon hemen başlanmalı; ATRA/ATO geçici olarak kesilmeli, enfeksiyon paralelde dışlanmalıdır."
       },
-      "dogru": "C",
+      "dogru": "E",
       "aciklama_kisa": "ATRA + ATO altında WBC artışı + pulmoner infiltrat + ödem = Diferansiyasyon Sendromu. Deksametazon derhal; ATRA/ATO geçici kes; enfeksiyonu paralelde dışla.",
       "aciklama_detay": "Diferansiyasyon Sendromu (DS), ATRA ve/veya ATO ile APL blastlarının hızla olgunlaşmasına bağlı sitokin salınımı ve kapiller kaçak ile karakterizedir. Tanı kriterleri: ≥2 bulgu — ateş, pulmoner infiltrat, plevral/perikardiyal efüzyon, hipotansiyon, böbrek yetmezliği, kilo artışı/ödem ve açıklanamayan WBC artışı. Bu hastada 5 kriter mevcut. Yönetim: (1) Deksametazon 10 mg IV günde iki kez hemen başla; (2) ATRA ve ATO geçici olarak kes; (3) tablonun 48 saat içinde belirgin düzelmesi beklenir; düzelirse ilaçlar yeniden başlanır; (4) Enfeksiyon DS ile birlikte olabilir — paralelde değerlendir.",
       "secenekAciklamalari": {
         "A": "YANLIŞ — DS, ilaçların kalıcı kesilmesi için endikasyon değildir. Geçici kesilme + deksametazon ile tablo genellikle hızla düzelir ve tedaviye devam edilebilir. Kalıcı kesme ve acele kemoterapi DS yönetiminde yeri yoktur.",
-        "B": "YANLIŞ — Prokalsitonin hafif yüksek ve kültürler negatif; ağır pnömoni tanısı bu tabloda yetersiz kanıta dayanır. Sadece antibiyotik vermek DS'ye özgü müdahaleyi (deksametazon) geciktirir ve solunum yetmezliğine zemin hazırlar.",
-        "C": "DOĞRU — Ateş + WBC artışı + bilateral infiltrat + ödem → DS kriterleri karşılanıyor. Deksametazon hemen başlanmalı, ATRA/ATO geçici kesilmeli, enfeksiyon paralelde dışlanmalıdır. 48 saatte düzelme olursa tedaviye devam edilir.",
+        "B": "YANLIŞ — Prokalsitonin yalnızca hafif yüksek ve kültürler henüz sonuçlanmadı; ağır pnömoni tanısı bu tabloda yetersiz kanıta dayanır. Sadece antibiyotik vermek DS'ye özgü müdahaleyi (deksametazon) geciktirir ve solunum yetmezliğine zemin hazırlar.",
+        "C": "YANLIŞ — SpO₂ %93 ve solunum sıkıntısı mevcut; bu aktif bir klinik acildir. Bekleme solunum yetmezliğinin ilerlemesine ve fatal seyre yol açabilir.",
         "D": "YANLIŞ — Lökoferez APL'de kontrendikedir ve DS yönetiminde yeri yoktur. WBC 17.400/µL hiperlökositoz eşiğinin çok altındadır; WBC artışının nedeni diferansiyasyona bağlı olgunlaşmadır.",
-        "E": "YANLIŞ — SpO₂ %93 ve solunum sıkıntısı mevcut; bu aktif bir klinik acildir. Bekleme solunum yetmezliğinin ilerlemesine ve fatal seyre yol açabilir."
+        "E": "DOĞRU — Ateş + WBC artışı + bilateral infiltrat + ödem → DS kriterleri karşılanıyor. Deksametazon hemen başlanmalı, ATRA/ATO geçici kesilmeli, enfeksiyon paralelde dışlanmalıdır. 48 saatte düzelme olursa tedaviye devam edilir."
       },
-      "sonraki_bilgi": "Deksametazon başlandı. ATRA + ATO geçici olarak kesildi. 36 saat içinde hasta dramatik biçimde düzeldi: ateş geriledi, SpO₂ %98'e çıktı, infiltratlar belirgin azaldı. Kültürler negatif geldi. Deksametazon 15 günlük kür tamamlandıktan sonra ATRA + ATO yeniden başlandı; hasta toleransı iyi.\n\nİndüksiyon + 2 konsolidasyon küründen sonra kemik iliği: blast yok, PML::RARA PCR: NEGATİF (moleküler tam remisyon)."
+      "sonraki_bilgi": "Deksametazon başlandı. ATRA + ATO geçici olarak kesildi. 36 saat içinde hasta dramatik biçimde düzeldi: ateş geriledi, SpO₂ %98'e çıktı, infiltratlar belirgin azaldı. Kültürler negatif geldi. Belirtiler tamamen gerileyince ATRA + ATO yeniden başlandı, deksametazon azaltılarak kesildi; hasta toleransı iyi.\n\nİndüksiyon + 2 konsolidasyon küründen sonra kemik iliği: blast yok, PML::RARA PCR: NEGATİF (moleküler tam remisyon)."
     },
     {
       "adim": 4,
@@ -86,21 +86,21 @@
       "secenekler": {
         "A": "Allo-HCT planlanmalıdır; APL'de CR1'de nakil standarttır ve kür için zorunludur.",
         "B": "Otolog kök hücre nakli yapılmalıdır; moleküler remisyon donörden bağımsız kürü mümkün kılar.",
-        "C": "ATRA + ATO ile idame tedavisi ve seri PCR izlemi; Allo-HCT planlanmaz.",
-        "D": "Konsolidasyona ek yoğun kemoterapi kürleri verilmeli, ardından HCT değerlendirilmelidir.",
+        "C": "Konsolidasyona ek yoğun kemoterapi kürleri verilmeli, ardından HCT değerlendirilmelidir.",
+        "D": "İdame tedavisi verilmeden seri PML::RARA PCR izlemi; Allo-HCT planlanmaz.",
         "E": "Moleküler remisyon sağlandığı için hiçbir tedavi gerekmez; hasta taburcu edilir."
       },
-      "dogru": "C",
+      "dogru": "D",
       "aciklama_kisa": "Düşük/orta riskli APL + moleküler remisyon = Allo-HCT yok. ATRA + ATO ile >%90 kür; nakil yalnızca relaps için düşünülür.",
-      "aciklama_detay": "APL, hematolojik maligniteler içinde en yüksek kür oranına sahip alt tiptir; düşük/orta riskli olgularda ATRA + ATO ile kür %90'ın üzerindedir. Moleküler remisyon elde edilmesi — PML::RARA PCR negatifliği — uzun dönem hastalıksız sağkalımın güçlü prediktörüdür. Bu tabloda Allo-HCT'nin potansiyel GVHD ve TRM riski, sağlanacak faydayı çoktan aşar. Standart yaklaşım: tamamlanan konsolidasyon ardından idame (ATRA ± ATO ± 6-merkaptopürin) ve seri PCR takibi. Nakil ancak relaps ya da moleküler relaps varlığında gündeme gelir.",
+      "aciklama_detay": "APL, hematolojik maligniteler içinde en yüksek kür oranına sahip alt tiptir; düşük/orta riskli olgularda ATRA + ATO ile kür %90'ın üzerindedir. Moleküler remisyon elde edilmesi — PML::RARA PCR negatifliği — uzun dönem hastalıksız sağkalımın güçlü prediktörüdür. Bu tabloda Allo-HCT'nin potansiyel GVHD ve TRM riski, sağlanacak faydayı çoktan aşar. ATRA + ATO ile tedavi edilen düşük/orta riskli olgularda konsolidasyon sonrası idame gerekmez; seri PCR takibi yapılır. (ATRA + kemoterapi ile tedavi edilen eski protokollerde ATRA ± 6-merkaptopürin/metotreksat idamesi kullanılıyordu.) Nakil ancak relaps ya da moleküler relaps varlığında gündeme gelir.",
       "secenekAciklamalari": {
         "A": "YANLIŞ — APL'de CR1 Allo-HCT için endikasyon değildir. Yüksek kür oranları nedeniyle nakil riski fayda dengesini geçmektedir; kılavuzlar CR1'de rutin HCT önermez.",
         "B": "YANLIŞ — Otolog HCT de CR1'de önerilmez. Ayrıca otolog nakil sadece PCR-negatif apheresis ürünü toplanabildiğinde ve yalnızca relaps vakalarında gündemdedir.",
-        "C": "DOĞRU — Moleküler remisyon + düşük/orta risk = ATRA + ATO ile idame ve seri PCR izlemi. Allo-HCT planlanmaz. Bu hasta >%90 ihtimalle hastalıksız yaşayacak.",
-        "D": "YANLIŞ — Ek yoğun kemoterapi gereksiz toksisite üretir ve sağ kalıma katkısı kanıtlanmamıştır. Moleküler remisyona ulaşmış hastada kemoterapiyi artırmak için endikasyon yoktur.",
+        "C": "YANLIŞ — Ek yoğun kemoterapi gereksiz toksisite üretir ve sağ kalıma katkısı kanıtlanmamıştır. Moleküler remisyona ulaşmış hastada kemoterapiyi artırmak için endikasyon yoktur.",
+        "D": "DOĞRU — ATRA + ATO ile indüksiyon ve konsolidasyon alan düşük/orta riskli APL'de idame tedavisi gerekmez (APL0406'da ATRA + ATO kolunda idame yoktu); seri PCR izlemi yapılır, Allo-HCT planlanmaz. Bu hasta >%90 ihtimalle hastalıksız yaşayacak.",
         "E": "YANLIŞ — Moleküler remisyon kalıcı değildir; PCR ile izlem şarttır. Sessiz moleküler relaps erken tespit edilmezse klinik relaps kaçınılmazdır. Takipsiz bırakmak ciddi bir hatadır."
       },
-      "sonraki_bilgi": "Hasta ATRA + ATO ile idame tedavisine alındı. Seri PML::RARA PCR takibi planlandı. 3 yıllık izlemde PCR negatif, hasta hastalıksız ve aktif iş hayatında. APL; doğru tanı ve zamanında ATRA ile %90+ kür sağlanan, hematolojinin en başarılı hikayelerinden biridir."
+      "sonraki_bilgi": "İdame tedavisi verilmedi; seri PML::RARA PCR takibi planlandı. 3 yıllık izlemde PCR negatif, hasta hastalıksız ve aktif iş hayatında. APL; doğru tanı ve zamanında ATRA ile %90+ kür sağlanan, hematolojinin en başarılı hikayelerinden biridir."
     }
   ]
 }
