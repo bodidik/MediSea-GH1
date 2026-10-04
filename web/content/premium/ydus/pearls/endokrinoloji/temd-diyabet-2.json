@@ -329,7 +329,7 @@
       "id": "p-temd-dm2-047",
       "level": "Kılavuz",
       "title": "G7'de kritik düşük alarmı bile sessize alınabiliyor",
-      "content": "Dexcom G7'de düşük değer uyarısının varsayılanı 70 mg/dL'dir ve 60-150 mg/dL arasında, yüksek değer uyarısının varsayılanı 250 mg/dL'dir ve 100-400 mg/dL arasında değiştirilebilir. Ciddi hipoglisemik durum (55 mg/dL) için 20 dakika öncesinde uyarı verir. Dexcom G6'dan farklı olarak herşey için sessiz modu vardır; bu modda kritik düşük ve teknik uyarılar dahil tüm alarmlar 6 saate kadar sessize alınabilir, yalnızca görsel uyarılar görüntülenmeye devam eder. Yine G6'dan farklı olarak sensör, alıcı veya telefon menzili dışındayken 24 saate kadar veri depolayabilir. Üreticiye göre sensör 2,4 metre derinliğe kadar su geçirmezdir, ancak alıcı su geçirmez değildir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 62)",
+      "content": "Dexcom G7'de düşük değer uyarısının varsayılanı 70 mg/dL'dir ve 60-150 mg/dL arasında, yüksek değer uyarısının varsayılanı 250 mg/dL'dir ve 100-400 mg/dL arasında değiştirilebilir. Ciddi hipoglisemik durum (55 mg/dL) için 20 dakika öncesinde uyarı verir. Dexcom G6'dan farklı olarak her şey için sessiz modu vardır; bu modda kritik düşük ve teknik uyarılar dahil tüm alarmlar 6 saate kadar sessize alınabilir, yalnızca görsel uyarılar görüntülenmeye devam eder. Yine G6'dan farklı olarak sensör, alıcı veya telefon menzili dışındayken 24 saate kadar veri depolayabilir. Üreticiye göre sensör 2,4 metre derinliğe kadar su geçirmezdir, ancak alıcı su geçirmez değildir. (TEMD Diyabet Teknolojileri 2025, Bölüm 4, s. 62)",
       "trigger": "Dexcom G7"
     },
     {
