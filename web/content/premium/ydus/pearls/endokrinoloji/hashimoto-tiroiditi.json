@@ -1,0 +1,91 @@
+{
+  "id": "pearl-endo-hashimoto-tiroiditi-001",
+  "accessLevel": "premium",
+  "topic": "Hashimoto Tiroiditi",
+  "pearls": [
+    {
+      "id": "hst-inci-001",
+      "level": "Klinik",
+      "title": "Subakut Tiroiditte Sintigrafi ve Doppler USG Ayrımı",
+      "content": "<p>Subakut tiroiditin (De Quervain) tirotoksikoz evresinde radyoaktif iyot veya teknetyum tutulumu (RAIU) belirgin şekilde düşüktür (&lt;%1-3). Renkli Doppler USG'de inflamasyona uğrayan hipoekoik alanlarda kan akımının (vaskülarite) azalmış olması, aşırı kanlanma izlenen (\"tiroid inferno\") Graves hastalığından klinik ayrımda en güvenilir bulgudur.</p>",
+      "trigger": "Subakut Tiroiditte Sintigrafi ve Doppler USG Ayrımı"
+    },
+    {
+      "id": "hst-inci-002",
+      "level": "Klinik",
+      "title": "Subakut Tiroiditte T3/T4 Oranı",
+      "content": "<p>Subakut tiroiditte gelişen tirotoksikoz, yeni hormon sentezinden değil, zedelenen folliküllerden depolanmış T4 ve T3 hormonlarının kana dökülmesinden kaynaklanır. Dolaşıma salınan ana hormon T4 olduğundan serum serbest T3/T4 oranı Graves hastalığının aksine &lt;20'dir.</p>",
+      "trigger": "Subakut Tiroiditte T3/T4 Oranı"
+    },
+    {
+      "id": "hst-inci-003",
+      "level": "Klinik",
+      "title": "Subakut Tiroiditte Akut Faz Reaktantları ve Antikorlar",
+      "content": "<p>Hastalıkta eritrosit sedimentasyon hızı (ESR) sıklıkla &gt;50 mm/saat olup tipik olarak 100 mm/saat'in üzerindedir. Serolojik incelemede Anti-TPO ve Anti-Tg otoantikorları genellikle negatiftir veya çok düşük titrede pozitif bulunur.</p>",
+      "trigger": "Subakut Tiroiditte Akut Faz Reaktantları ve Antikorlar"
+    },
+    {
+      "id": "hst-inci-004",
+      "level": "Klinik",
+      "title": "Riedel Tiroiditinin Histopatolojik Üçlüsü",
+      "content": "<p>IgG4 ilişkili sistemik hastalıklar (IgG4-RD) spektrumunda yer alan Riedel tiroiditinde kesin tanı histopatoloji ile konur. Karakteristik histopatolojik bulgular: Hasır örgüsü benzeri (storiform) fibrozis, damarları tıkayan iltihap (obliteratif flebit) ve dokuda belirgin IgG4(+) plazma hücresi infiltrasyonudur.</p>",
+      "trigger": "Riedel Tiroiditinin Histopatolojik Üçlüsü"
+    },
+    {
+      "id": "hst-inci-005",
+      "level": "Klinik",
+      "title": "Riedel Tiroiditinde Biyopsi ve Cerrahi Yaklaşım",
+      "content": "<p>Bezin \"taş/demir sertliğinde\" olması nedeniyle İİAB sıklıkla yetersiz/hücreden fakir materyal (Bethesda I) verir; tanı için açık biyopsi gereklidir. Anjiyoz-fibröz yapışıklıklar nedeniyle total tiroidektomi kalıcı reküren sinir felci ve hipoparatiroidi riski taşıdığından kontrendikedir; cerrahi sadece trakeal basıyı rahatlatmaya yönelik kama ismusektomisi (dekompresyon) ile sınırlandırılır.</p>",
+      "trigger": "Riedel Tiroiditinde Biyopsi ve Cerrahi Yaklaşım"
+    },
+    {
+      "id": "hst-inci-006",
+      "level": "Klinik",
+      "title": "Riedel Tiroiditinin Medikal Tedavisi",
+      "content": "<p>Medikal tedavide ilk tercih sistemik glikokortikoidlerdir. Steroide dirençli veya nüks vakalarda TGF-beta üzerinden fibroblast proliferasyonunu inhibe eden tamoksifen veya B-hücre baskılayıcı rituksimab ve mikofenolat mofetil kullanılır.</p>",
+      "trigger": "Riedel Tiroiditinin Medikal Tedavisi"
+    },
+    {
+      "id": "hst-inci-007",
+      "level": "Klinik",
+      "title": "Hashimoto Tiroiditinin Sitolojik Özellikleri",
+      "content": "<p>İnce iğne aspirasyon biyopsisinde yaygın lenfosit ve plazma hücresi infiltrasyonu, germinal merkezli lenfoid folliküller ve folliküler epitel hücrelerinde onkositik metaplazi (Hürthle hücreleri) görülmesi Hashimoto tiroiditi için patognomoniktir.</p>",
+      "trigger": "Hashimoto Tiroiditinin Sitolojik Özellikleri"
+    },
+    {
+      "id": "hst-inci-008",
+      "level": "Klinik",
+      "title": "Hashimoto Tiroiditi ve Lenfoma Riski",
+      "content": "<p>Hashimoto tiroiditi, primer tiroid lenfoması gelişimi için en önemli risk faktörüdür. Hashimoto öyküsü olan bir hastada hızla büyüyen, ağrısız ve bası semptomları yaratan yeni kitlelerde tiroid lenfoması ekarte edilmelidir.</p>",
+      "trigger": "Hashimoto Tiroiditi ve Lenfoma Riski"
+    },
+    {
+      "id": "hst-inci-009",
+      "level": "Klinik",
+      "title": "Hashimoto USG Görünümü",
+      "content": "<p>Ultrasonografide tiroid bezinin diffüz büyümüş ve belirgin derecede hipoekoik olması tipiktir. Parankimdeki fibrotik bantlara bağlı oluşan \"mikronodüler\" veya \"psödonodül (yalancı nodül)\" görünümü hastalığa özgüdür.</p>",
+      "trigger": "Hashimoto USG Görünümü"
+    },
+    {
+      "id": "hst-inci-010",
+      "level": "Klinik",
+      "title": "Sessiz (Ağrısız) Tiroidit Ayrımı",
+      "content": "<p>Geçici tirotoksikozla başvuran ağrısız tiroiditlerde TSH reseptör antikorları (TRAb/TSAb) negatiftir ve radyoaktif iyot tutulumu (RAIU) düşüktür; bu sayede Graves hastalığından ayırt edilir.</p>",
+      "trigger": "Sessiz"
+    },
+    {
+      "id": "hst-inci-011",
+      "level": "Klinik",
+      "title": "İlaçlara Bağlı (Drug-Induced) Tiroiditler",
+      "content": "<p>Follikül yıkımına yol açarak destrüktif tiroidit yapabilen başlıca ajanlar: Amiodaron, lityum, interferon-alfa, interlökin-2, tirozin kinaz inhibitörleri (sunitinib) ve immün kontrol noktası inhibitörleridir (ipilimumab, nivolumab vb.).</p>",
+      "trigger": "İlaçlara Bağlı"
+    },
+    {
+      "id": "hst-inci-012",
+      "level": "Klinik",
+      "title": "Amiodarona Bağlı Tirotoksikoz Tipleri",
+      "content": "<p>Tip 1 amiodaron tirotoksikozu aşırı iyot yüküne bağlı hormon sentez artışıyla (Jod-Basedow) gelişirken; Tip 2 amiodaron tirotoksikozu doğrudan follikül toksisitesine bağlı destrüktif tiroidit tablosudur.</p>",
+      "trigger": "Amiodarona Bağlı Tirotoksikoz Tipleri"
+    }
+  ]
+}

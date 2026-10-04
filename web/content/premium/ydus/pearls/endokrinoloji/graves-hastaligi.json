@@ -1,0 +1,49 @@
+{
+  "id": "pearl-endo-graves-hastaligi-001",
+  "accessLevel": "premium",
+  "topic": "Graves Hastalığı ve Graves Orbitopatisi",
+  "pearls": [
+    {
+      "id": "gr-inci-001",
+      "level": "Klinik",
+      "title": "Graves Hastalığında Uzun Dönem Antitiroid İlaç (LT-ATD) Tedavisi ve Remisyon Kinetiği",
+      "content": "<p>Graves hastalığında konvansiyonel 12–18 aylık antitiroid ilaç (ATD) tedavisi sonrasında nüks oranı ortalama %50 civarındadır. Tedavinin 18. ayında serum TSH reseptör antikoru (TRAb) düzeyi &lt;0.9 IU/L olan hastalarda ilaç kesildiğinde kalıcı remisyon şansı %80'in üzerindeyken; TRAb ≥0.9 IU/L seyreden olgularda nüks riski %80–85'tir. Graves hastalarının yaklaşık %40'ında serum TRAb düzeylerinin normale dönmesi 5-6 yıla kadar uzayabildiğinden, 18. ayda TRAb yüksekliği devam eden hastalarda tedavinin kesintisiz olarak <strong>≥5 yıl (≥60 ay) düşük doz metimazol (LT-MMI)</strong> ile sürdürülmesi kalıcı remisyon oranını %80–85'e çıkarmakta ve ablasyon tedavilerine (RAI/Cerrahi) güçlü bir alternatif oluşturmaktadır.</p>",
+      "trigger": "Graves Hastalığında Uzun Dönem Antitiroid İlaç"
+    },
+    {
+      "id": "gr-inci-002",
+      "level": "Klinik",
+      "title": "Graves Orbitopatisinde Klinik Aktivite Skoru (CAS) ve NO SPECS Sınıflaması",
+      "content": "<p>Graves orbitopatisinde (TED) tedavi seçimini belirleyen en temel iki unsur <strong>hastalık aktivitesi</strong> ve <strong>hastalık şiddetidir</strong>. Hastalık aktivitesi <strong>Klinik Aktivite Skoru (CAS ≥3/7 veya takipte ≥4/10)</strong> ile değerlendirilir ve yüksek CAS immünomodülatör/antiinflamatuar tedavilere yanıtı öngörür. Hastalık şiddeti ise NO SPECS sınıflaması (Soft tissue, Proptosis, Extraocular muscle, Cornea, Sight loss) ve EUGOGO kriterleri ile <em>hafif, orta-şiddetli ve görmeyi tehdit eden (dysthyroid optic neuropathy)</em> olarak kategorize edilir.</p>",
+      "trigger": "Graves Orbitopatisinde Klinik Aktivite Skoru"
+    },
+    {
+      "id": "gr-inci-003",
+      "level": "Klinik",
+      "title": "Radyoaktif İyot (RAI) Tedavisi ve Graves Orbitopatisi Risk Profilaksisi",
+      "content": "<p>Graves hastalığında radyoaktif iyot (131-I) tedavisi, otoantijen yıkımına ikincil olarak serum TRAb düzeylerinde geçici yükselmeye neden olur; bu durum <strong>Graves orbitopatisinin ilk kez ortaya çıkmasını veya alevlenmesini</strong> tetikleyebilir. Aktif veya risk faktörü taşıyan (özellikle sigara içen veya yüksek başlangıç TRAb/T3 düzeyleri olan) hafif orbitopatili olgularda RAI verilecekse, tedaviye <strong>RAI'den 1-3 gün sonra başlanıp 6-8 haftada azaltılarak kesilecek şekilde oral glukokortikoid (prednizon 0.3–0.5 mg/kg/gün) profilaksisi</strong> eklenmelidir.</p>",
+      "trigger": "Radyoaktif İyot"
+    },
+    {
+      "id": "gr-inci-004",
+      "level": "Klinik",
+      "title": "Refrakter ve Aktif Graves Orbitopatisinde Biyolojik Tedavi Seçenekleri",
+      "content": "<p>Glukokortikoid tedavisine dirençli veya belirgin proptozis/diplopisi olan aktif orta-şiddetli Graves orbitopatisinde <strong>IGF-1 reseptör monoklonal antikoru Teprotumumab</strong>, orbital fibroblast apoptozunu uyararak proptozis ve CAS skorunda belirgin gerileme sağlar. Glukokortikoide dirençli vakalarda alternatif hedefe yönelik tedaviler arasında <strong>Tocilizumab (anti-IL-6R)</strong>, <strong>Rituksimab (anti-CD20)</strong> ve glukokortikoidle kombine edilen <strong>Mikofenolat Mofetil (MMF)</strong> yer almaktadır.</p>",
+      "trigger": "Refrakter ve Aktif Graves Orbitopatisinde Biyolojik Tedavi Seçenekleri"
+    },
+    {
+      "id": "gr-inci-005",
+      "level": "Klinik",
+      "title": "Hipertiroidizm ve Miyastenia Gravis Birlikteliğinde İki Bileşenli Fenotip",
+      "content": "<p>Otoimmün tiroid hastalıkları (Graves ve Hashimoto) ile Miyastenia Gravis (MG) arasında ortak immünogenetik yatkınlık bulunmaktadır [A]. Otoimmün tiroid hastalığının eşlik ettiği MG olguları klinik olarak farklı bir fenotip gösterir: Bu hastalarda izolasyon gösteren MG hastalarına kıyasla <strong>oküler MG oranı anlamlı derecede daha yüksek (%41'e karşı %21)</strong>, buna karşılık <strong>timik hastalık sıklığı (%27'ye karşı %60)</strong> ve <strong>AChR antikor pozitifliği (%36'ya karşı %57)</strong> belirgin şekilde daha düşük saptanmaktadır [A].</p>",
+      "trigger": "Hipertiroidizm ve Miyastenia Gravis Birlikteliğinde İki Bileşenli Fenotip"
+    },
+    {
+      "id": "gr-inci-006",
+      "level": "Klinik",
+      "title": "Graves Hastalığında Nüks Öngörüsünde Genotip-Fenotip Korelasyonu ve GREAT+ Skoru",
+      "content": "<p>Graves hastalığında antitiroid ilaç kesilmesi sonrasındaki nüks riskini başlangıçta öngörmek için geliştirilen <strong>GREAT skoru</strong> (yaş, sT4, guatr boyutu, TRAb); klinik parametrelere spesifik genetik risk allellerinin eklendiği <strong>GREAT+ skoru</strong> ile daha yüksek bir öngörü değerine ulaşır. GREAT+ skoruna eklenen <strong>PTPN22 (<em>rs2476601</em>) ve HLA-DRB1*03, DQA1*05, DQB1*02 polimorfizmleri</strong>, özellikle orta riskli hastaların yaklaşık %33'ünde klinik yönetim ve ablasyon/LT-ATD kararını doğrudan değiştirmektedir.</p>",
+      "trigger": "Graves Hastalığında Nüks Öngörüsünde Genotip-Fenotip Korelasyonu ve GREAT+ Skoru"
+    }
+  ]
+}

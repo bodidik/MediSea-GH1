@@ -1,0 +1,70 @@
+{
+  "id": "pearl-endo-hipertiroidi-001",
+  "accessLevel": "premium",
+  "topic": "Hipertiroidi ve Tirotoksikoz",
+  "pearls": [
+    {
+      "id": "ht-inci-001",
+      "level": "Klinik",
+      "title": "Amiodarona Bağlı Tirotoksikozda (AIT) Tip 1 ve Tip 2 Ayırıcı Tanısı",
+      "content": "<p>Amiodarone tedavisi alan hastalarda tirotoksikoz geliştiğinde tedavi yaklaşımını belirleyen en kritik adım Tip 1 ve Tip 2 AIT ayrımıdır. Otonom tiroid nodülü veya latent Graves hastalığı zemininde fazla iyot yükünün tetiklediği hormon sentez artışı <strong>Tip 1 AIT</strong> iken; doğrudan amiodaron toksisitesine bağlı gelişen destruktif tiroidit tablosu <strong>Tip 2 AIT</strong>'dir. Renkli Doppler ultrasonografide <strong>Tip 1 AIT'de tiroid parankim vaskülaritesi belirgin şekilde artmış (hypervascularity)</strong> izlenirken, <strong>Tip 2 AIT'de kan akımı yok veya belirgin derecede azalmıştır (absent/low flow)</strong>.</p>",
+      "trigger": "Amiodarona Bağlı Tirotoksikozda"
+    },
+    {
+      "id": "ht-inci-002",
+      "level": "Klinik",
+      "title": "Tip 2 AIT Tedavisinde Glukokortikoid Stratejisi ve Karışık (Mixed) Formlar",
+      "content": "<p>Spesifik destruktif tiroidit olan <strong>Tip 2 AIT hastalarında ilk tercih tedavi oral glukokortikoidlerdir</strong> (prednizon 30–40 mg/gün). Tip 2 AIT olguları glukokortikoid tedavisine hızlı klinik ve biyokimyasal yanıt verir; ancak etiyolojisi net ayırt edilemeyen veya her iki mekanizmanın bir arada bulunduğu <strong>karma (mixed) AIT vakalarında başlangıçta prednizon (40 mg/gün) ve metimazol (40 mg/gün) kombinasyonu verilmesi önerilir</strong>. Metimazoleye hızlı yanıt alınması Tip 2'yi destekler ve metimazol kademeli olarak kesilir.</p>",
+      "trigger": "Tip 2 AIT Tedavisinde Glukokortikoid Stratejisi ve Karışık"
+    },
+    {
+      "id": "ht-inci-003",
+      "level": "Klinik",
+      "title": "Amiodarona Bağlı Hipotiroidizmde Levotiroksin Replasman İlkeleri",
+      "content": "<p>Amiodarone kullanan ve özellikle zemininde otoimmün tiroiditi (anti-TPO pozitifliği) bulunan bireylerde <strong>Wolff-Chaikoff etkisinden kaçamama</strong> sonucu amiodarona bağlı hipotiroidizm (AIH) gelişir. AIH gelişen hastalarda amiodaron tedavisinin kesilmesi zorunlu değildir; antiaritmik ilaca devam edilerek levotiroksin (L-T4) replasmanı başlanabilir. Ancak amiodaronun hipofizer ve periferik T4-T3 dönüşümünü ve T3 reseptör bağlanmasını engellemesi nedeniyle, TSH'yi normale getirmek için <strong>standart replasman dozlarından daha yüksek L-T4 dozları gerekebilmektedir</strong>.</p>",
+      "trigger": "Amiodarona Bağlı Hipotiroidizmde Levotiroksin Replasman İlkeleri"
+    },
+    {
+      "id": "ht-inci-004",
+      "level": "Klinik",
+      "title": "Tiroid Fırtınasında Tionamid ve İnorganik İyot Uygulama Sıralaması",
+      "content": "<p>Tiroid fırtınası veya şiddetli tirotoksikoz tablosunda depolanmış hormon salınımını akut olarak engellemek için inorganik iyot (SSKI veya Lugol çözeltisi) tedavisi şarttır. Ancak <strong>inorganik iyot tedavisi, ilk tionamid (PTU veya Metimazol) dozundan en az 1 saat sonra verilmelidir</strong>. Tionamid ile organifikasyon ve de novo hormon sentezi blokajı sağlanmadan verilen iyot, tiroid bezi tarafından hormon sentezinde substrat olarak kullanılarak tirotoksikoz krizini daha da şiddetlendirebilir (<em>Jod-Basedow etkisi</em>).</p>",
+      "trigger": "Tiroid Fırtınasında Tionamid ve İnorganik İyot Uygulama Sıralaması"
+    },
+    {
+      "id": "ht-inci-005",
+      "level": "Klinik",
+      "title": "Tiroid Fırtınasında Tanı Kriterleri: Burch-Wartofsky ve JTA Sistemleri",
+      "content": "<p>Tiroid fırtınası tanısı biyokimyasal tiroid hormon düzeylerinin yüksekliği ile koyulamaz; çünkü fırtıradaki T4/T3 seviyeleri komplikasyonsuz aşikar hipertiroidi hastaları ile benzerdir. Tanı uç organ disfonksiyonlarının klinik derecelendirilmesine dayanır. <strong>Burch-Wartofsky Skorlama Sisteminde ≥45 puan</strong> (termoregülasyon bozukluğu, SSS etkileri, kardiyovasküler disfonksiyon, GIS/hepatik yetmezlik) tiroid fırtınasını güçlü şekilde destekler. Japon Tiroid Derneği (JTA) kriterleri de benzer şekilde SSS tutulumu (restless, deliryum, koma) ile birlikte ateş, taşikardi, AF, kalp yetmezliği veya sarılık varlığını şart koşar.</p>",
+      "trigger": "Tiroid Fırtınasında Tanı Kriterleri"
+    },
+    {
+      "id": "ht-inci-006",
+      "level": "Klinik",
+      "title": "Tiroid Fırtınasında İkincil ve Destekleyici Tedavi Yolları",
+      "content": "<p>Tiroid fırtınasında yüksek doz glukokortikoidler (hidrokortizon 300 mg IV yükleme, ardından 100 mg 8 saatte bir); periferik T4-T3 dönüşümünü inhibe etmek, adrenerjik stabilite sağlamak ve olası rölatif adrenal yetmezliği tedavi etmek amacıyla rutin tedaviye eklenir. Enterohepatik dolaşımdaki tiroid hormonlarının geri emilimini engellemek için <strong>safra asidi bağlayıcıları (kolestiramin 4 g 6 saatte bir)</strong> başlanabilir. Tionamidle agranülositoz gelişen veya medikal tedaviye dirençli seyreden akut fırtına vakalarında ise dolaşımdaki antikor ve hormonları hızla uzaklaştırmak için <strong>terapötik plazmaferez (TPE)</strong> cerrahi öncesi köprü tedavisi olarak kullanılır.</p>",
+      "trigger": "Tiroid Fırtınasında İkincil ve Destekleyici Tedavi Yolları"
+    },
+    {
+      "id": "ht-inci-007",
+      "level": "Klinik",
+      "title": "Eksojen Tirotoksikoz (Thyrotoxicosis Factitia) ve Serum Tiroglobulin (Tg) Ayrımı",
+      "content": "<p>Aşırı tiroid hormonu alımına bağlı eksojen tirotoksikozda (yanlışlıkla yüksek doz L-T4 kullanımı, zayıflama takviyeleri veya <em>hamburger tirotoksikozu</em>), endojen hipertiroidilerden farklı olarak <strong>tiroid bezi atrofiktir ve 24 saatlik RAIU alımı ile renkli Doppler ultrason kan akımı tamamen baskılanmıştır</strong>. Ayırıcı tanıda en kritik laboratuvar parametresi <strong>serum tiroglobulin (Tg) düzeyidir</strong>: Endojen hormon sentezi ve destruktif tiroiditlerde Tg yüksek saptanırken, eksojen hormon alımında serum Tg seviyesi <strong>baskılanmış/ölçülemez</strong> düzeydedir.</p>",
+      "trigger": "Eksojen Tirotoksikoz"
+    },
+    {
+      "id": "ht-inci-008",
+      "level": "Klinik",
+      "title": "Tirotoksikozda Hiperkoagülabillite ve Serebral Venöz Tromboz (SVT) Riski",
+      "content": "<p>Tirotoksikoz, karaciğerden pıhtılaşma faktörlerinin sentezini artırarak sistemik bir <strong>hiperkoagülabillite</strong> tablosu oluşturur. Hastalarda <strong>Faktör VIII, Faktör IX, XI ve fibrinojen düzeyleri yükselirken, doğal antikoagülan olan Protein C aktivitesi azalır</strong>. Bu durum atrial fibrilasyon olmasa dahi serebral venöz tromboz (SVT) ve tromboemboli riskini artırır. Ayrıca hipertiroidide K vitamini bağımlı faktörlerin klerensi hızlandığı için eş zamanlı kullanılan <strong>warfarin antikoagülasyon yanıtı belirgin şekilde potansiyalize olur (warfarin duyarlılığı artar)</strong>.</p>",
+      "trigger": "Tirotoksikozda Hiperkoagülabillite ve Serebral Venöz Tromboz"
+    },
+    {
+      "id": "ht-inci-009",
+      "level": "Klinik",
+      "title": "Non-Tiroid Cerrahisi Öncesi Acil Hipertiroidi Yönetimi",
+      "content": "<p>Aşikar hipertiroidisi olup acil non-tiroid cerrahiye giden Graves hastalarında; perioperatif tiroid fırtınasını önlemek için beta-bloker ve tionamid tedavisine ek olarak <strong>potasyum iyodür (SSKI), tionamid verildikten en az 1 saat sonra eklenmelidir</strong>. Ancak ameliyat sonrasında oral veya rektal tionamid alamayacak <strong>toksik adenom veya toksik multinodüler guatrlı (TMNG) hastalarda potasyum iyodür verilmesi kesinlikle kontrendikedir</strong>; çünkü tionamid koruması olmadan verilen iyot otonom dokuda Jod-Basedow etkisiyle hipertiroidiyi alevlendirir.</p>",
+      "trigger": "Non-Tiroid Cerrahisi Öncesi Acil Hipertiroidi Yönetimi"
+    }
+  ]
+}

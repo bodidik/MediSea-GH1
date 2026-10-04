@@ -142,6 +142,41 @@
       "title": "Post-RAI Gebelik Planlaması",
       "content": "<p>Graves veya DTK nedeniyle Radyoaktif İyot (RAI) tedavisi alan kadınlarda, over radyasyon maruziyetini engellemek ve stabil bir ötiroid duruma ulaşılmasını teyit etmek amacıyla **gebelik en az 6 ay (tercihen 12 ay) ertelenmelidir**. Erkek hastalarda ise spermatogenez döngüsü nedeniyle RAI sonrası en az 3–4 ay gebelik planlanmamalıdır.</p>",
       "trigger": "RAI Sonrası Gebelik"
+    },
+    {
+      "id": "gt-inci-021",
+      "level": "Klinik",
+      "title": "Gebelikte Geçici Gestasyonel Tirotoksikoz (GTT) ile Graves Hastalığı Ayrımı",
+      "content": "<p>Gebeliğin ilk trimesterında tepe noktasına ulaşan insan koryonik gonadotropini (hCG), TSH reseptörü ile gösterdiği yapısal benzerlik (cross-reaktivite) nedeniyle <strong>Geçici Gestasyonel Tirotoksikoz (GTT)</strong> tablosuna yol açabilir. Fizyolojik kabul edilen ve sıklıkla hiperemezis gravidarum veya çoğul gebeliklere eşlik eden GTT'de antitiroid ilaç (ATD) tedavisi gerekmez. Graves hastalığından ayrımında; <strong>serum TRAb/TSI pozitifliği, diffüz guatr varlığı ve otoreaktif göz bulgularının mevcudiyeti</strong> belirleyicidir.</p>",
+      "trigger": "Gebelikte Geçici Gestasyonel Tirotoksikoz"
+    },
+    {
+      "id": "gt-inci-022",
+      "level": "Klinik",
+      "title": "Gebelikte Antitiroid İlaç Teratojenitesi ve Trimester-Spesifik Doz Yönetimi",
+      "content": "<p>Metimazolün ilk trimesterda kullanımı <em>aplasia cutis, koanal/özofageal atrezi ve omfalofer</em> gibi spesifik embriyopatilerle ilişkili olduğundan, gebelik öncesinde veya doğrulanır doğrulanmaz <strong>1. trimesterda Propiltiourasil (PTU) tercih edilmelidir</strong>. Ancak PTU'nun fulminan hepatotoksisite riski nedeniyle 1. trimester sonrasında (16. haftadan itibaren) hastalar tekrar <strong>Metimazol'e geçirilebilir</strong>. Gebelik boyunca fetal iyatrojenik hipotiroidi ve guatrı önlemek için ATD en düşük etkili dozda tutulmalı ve maternal serbest T4 normal aralığın üst sınırında hedeflenmelidir.</p>",
+      "trigger": "Gebelikte Antitiroid İlaç Teratojenitesi ve Trimester-Spesifik Doz Yönetimi"
+    },
+    {
+      "id": "gt-inci-023",
+      "level": "Klinik",
+      "title": "Maternal TRAb Transplasental Geçişi ve Fetal Tirotoksikoz Riski",
+      "content": "<p>Graves öyküsü olan gebe kadınlarda maternal IgG yapısındaki TRAb'lar 20. gebelik haftasından itibaren plasentayı geçerek fetüste uyarılmaya yol açabilir. Maternal TRAb düzeyleri <strong>gebelik başında, 20–24. haftalarda ve 30–32. haftalarda</strong> kontrol edilmelidir. Maternal TRAb düzeyinin referans üst sınırın <strong>&gt;3 katı</strong> olması durumunda fetüs, fetal tirotoksikoz, fetal guatr, gelişme geriliği ve ileri kemik yaşı açısından yakın ultrasonografik takibe alınmalıdır.</p>",
+      "trigger": "Maternal TRAb Transplasental Geçişi ve Fetal Tirotoksikoz Riski"
+    },
+    {
+      "id": "gt-inci-024",
+      "level": "Klinik",
+      "title": "Gebelikte Euthyroid Anti-TPO Pozitifliği",
+      "content": "<p>Ötiroid olup Anti-TPO pozitif olan gebe kadınlarda gebelik boyunca subklinik hipotiroidi ve postpartum tiroidit gelişme riski yüksektir. Ayrıca bu antikor varlığı spontan abortus ve erken doğum (prematüre) riskini 2-3 kat artırmaktadır.</p>",
+      "trigger": "Gebelikte Euthyroid Anti-TPO Pozitifliği"
+    },
+    {
+      "id": "gt-inci-025",
+      "level": "Klinik",
+      "title": "Gebelikte Levotiroksin Doz Artışı",
+      "content": "<p>Hipotiroidi nedeniyle önceden LT4 alan kadınların gebelikte hormon gereksinimi ortalama %30-50 oranında artar. Bu doz artış ihtiyacı gebeliğin 5. haftası gibi çok erken bir dönemde başlar.</p>",
+      "trigger": "Gebelikte Levotiroksin Doz Artışı"
     }
   ]
 }

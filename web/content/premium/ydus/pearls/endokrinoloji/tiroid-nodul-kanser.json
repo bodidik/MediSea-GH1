@@ -1,0 +1,49 @@
+{
+  "id": "pearl-endo-tiroid-nodul-kanser-001",
+  "accessLevel": "premium",
+  "topic": "Tiroid Nodülleri ve Kanserleri",
+  "pearls": [
+    {
+      "id": "tnk-inci-001",
+      "level": "Klinik",
+      "title": "Benign Nodüler Guatrlarda Subtotal vs. Total Tiroidektomi Nüks Oranları",
+      "content": "<p>Semptomatik, büyüyen veya bası oluşturan benign nodüler guatrlarda cerrahi tedavi gerektiğinde tercih edilecek rezeksiyon genişliği <strong>total veya totale yakın (near-total) tiroidektomidir</strong>. Cochrane derlemeleri ve klinik çalışmalarda; subtotal tiroidektomi uygulanan olgularda uzun dönemde guatr nüksü ve tekrarlayan cerrahi ihtiyacı <strong>%8.4</strong> civarında izlenirken, total tiroidektomi sonrasında doku nüksü oranı <strong>%0.2</strong> olarak saptanmıştır.</p>",
+      "trigger": "Benign Nodüler Guatrlarda Subtotal vs. Total Tiroidektomi Nüks Oranları"
+    },
+    {
+      "id": "tnk-inci-002",
+      "level": "Klinik",
+      "title": "Tiroid Nodüllerinde Biyopsi Endikasyonu",
+      "content": "<p>TİİAB kararı nodülün tek başına boyutuna göre değil, ultrasonografik risk sınıflandırmasına (ACR-TIRADS veya ATA) göre verilir. Saf (pure) kistik nodüllerde malignite riski &lt;%1 olduğundan tanısal biyopsi önerilmez.</p>",
+      "trigger": "Tiroid Nodüllerinde Biyopsi Endikasyonu"
+    },
+    {
+      "id": "tnk-inci-003",
+      "level": "Klinik",
+      "title": "Subsantimetrik (<1 cm) Nodüllerde Biyopsi İstisnaları",
+      "content": "<p>Yüksek riskli (TR5) nodüllerde kural olarak biyopsi eşiği ≥10 mm'dir. Ancak nodül 10 mm'nin altında olsa dahi trakea/reküren sinir komşuluğu, ekstratiroidal uzanım, sert kapsül kalsifikasyonundan dışa taşım veya şüpheli lenf nodu varlığında TİİAB yapılmalıdır.</p>",
+      "trigger": "Subsantimetrik"
+    },
+    {
+      "id": "tnk-inci-004",
+      "level": "Klinik",
+      "title": "Indetermine Sitolojide Moleküler Testler",
+      "content": "<p>Bethesda III (AUS) ve Bethesda IV (Foliküler Neoplazi) gelen indetermine nodüllerde gereksiz tanısal lobektomileri önlemek için ThyroSeq v3 veya Afirma GSC gibi moleküler genetik test panelleri kullanılır.</p>",
+      "trigger": "Indetermine Sitolojide Moleküler Testler"
+    },
+    {
+      "id": "tnk-inci-005",
+      "level": "Klinik",
+      "title": "Bethesda III (AUS) Alt Tiplerinde Kanser Riski",
+      "content": "<p>Bethesda III nodüllerde nükleer atipi varlığı (%46 kanser riski), mimari (%22) veya onkositik (%13) atipiye kıyasla belirgin şekilde daha yüksek malignite potansiyeli taşır. Onkositik (Hürthle hücreli) lezyonlarda moleküler testlerin yanlış pozitiflik oranı oldukça yüksektir (%38-41).</p>",
+      "trigger": "Bethesda III"
+    },
+    {
+      "id": "tnk-inci-006",
+      "level": "Klinik",
+      "title": "Levotiroksin Süpresyon Tedavisinin Sakıncaları",
+      "content": "<p>Benign nodülleri küçültmek amacıyla rutin T4 süpresyon tedavisi önerilmez. T4 süpresyonu subklinik hipertiroidi yaratarak hastada atriyal fibrilasyon, kardiyak komplikasyonlar ve kemik mineral yoğunluğunda azalmaya (osteoporoz) yol açar.</p>",
+      "trigger": "Levotiroksin Süpresyon Tedavisinin Sakıncaları"
+    }
+  ]
+}

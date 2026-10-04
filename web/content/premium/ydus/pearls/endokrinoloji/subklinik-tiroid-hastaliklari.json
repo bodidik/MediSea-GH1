@@ -1,0 +1,14 @@
+{
+  "id": "pearl-endo-subklinik-tiroid-hastaliklari-001",
+  "accessLevel": "premium",
+  "topic": "Subklinik Tiroid Hastalıkları",
+  "pearls": [
+    {
+      "id": "skt-inci-001",
+      "level": "Klinik",
+      "title": "Subklinik Hipertiroidizmde Tedavi Endikasyonları ve Kardiyovasküler/Kemik Riskleri",
+      "content": "<p>Subklinik hipertiroidizm (baskılı TSH, normal sT4/sT3) özellikle serum TSH seviyesi <strong>&lt;0.1 mU/L</strong> olan bireylerde kardiyovasküler mortalite, atriyal fibrilasyon, koroner kalp hastalığı ve trabeküler/kortikal kemik kaybı riskinde belirgin artışla ilişkilidir. <strong>TSH &lt;0.1 mU/L saptanan, &gt;65 yaş üzeri tüm hastalara, postmenopozal kadınlara veya eşlik eden kardiyovasküler hastalığı/osteoporozu bulunan bireylere</strong> antitiroid tedavi (düşük doz metimazol) başlanması güçlü şekilde önerilmektedir.</p>",
+      "trigger": "Subklinik Hipertiroidizmde Tedavi Endikasyonları ve Kardiyovasküler/Kemik Riskleri"
+    }
+  ]
+}
