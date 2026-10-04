@@ -653,6 +653,93 @@
       ],
       "zorluk": "zor",
       "kaynak": "Savulescu-Fiedler I, Benea SN, Caruntu C, Scheau C ve ark. Curr Issues Mol Biol 2025"
+    },
+    {
+      "id": "s23",
+      "metin": "16 yaşında kız çocuk hasta, her iki el ve dirsek ekstansör tendonlarında ksantomlar, aort kapağında kalsifik darlık ve şiddetli erken dönem koroner arter hastalığı nedeniyle pediatrik endokrinoloji ve kardiyoloji konseyine konsülte ediliyor. Biyokimyasal incelemesinde açlık plazma Total Kolesterolü: 780 mg/dL, LDL-K: 710 mg/dL, Trigliserit: 150 mg/dL saptanıyor. Genetik analiz sonucunda hastanın her iki LDLR alelinde tam fonksiyon kaybına yol açan reseptör-negatif (null/null) delesyonel mutasyon taşıdığı (Homozigot Ailesel Hiperkolesterolemi - HoFH) doğrulanıyor. Yüksek yoğunluklu statin, ezetimib ve PCSK9 inhibitörüne direnç gösteren hastanın tedavi rejimine evinacumab (anti-ANGPTL3 monoklonal antikor) eklenmesi planlanıyor.\n\nLipoprotein metabolizması bozukluklarının genetik, patofizyolojik ve moleküler mekanizmaları (Williams Textbook of Endocrinology, 15. Baskı, Bölüm 41: Disorders of Lipoprotein Metabolism) esas alındığında aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Abetalipoproteinemi, APOB genindeki mutasyonlara bağlı olarak MTP proteininin aşırı sentezlenmesiyle seyreder; karaciğerde yağ birikimi (steatoz) tamamen önlenir ve E vitamini emilimi artar.",
+        "B": "Tangier hastalığı ABCG5 ve ABCG8 gen mutasyonlarına bağlı gelişir; hastaların damak bademcikleri (tonsiller) turuncu-sarı renkte büyümüştür ve dolaşımda aşırı yüksek LDL-K ve HDL-K seviyeleri izlenir.",
+        "C": "ANGPTL3 inhibitörü evinacumab, LDL reseptörü tam eksik (LDLR-null) HoFH hastalarında LDL-kolesterol düzeylerini yaklaşık %50 oranında düşürür; bu etkinin temel mekanizması, ANGPTL3 inhibisyonunun Endotelyal Lipaz (EL) aracılı VLDL işlenmesini ve LDL reseptöründen bağımsız (non-canonical) hepatik klerensi açığa çıkarmasıdır.",
+        "D": "Tip III Hiperlipoproteinemi (Familyal Disbetalipoproteinemi), APOE4/E4 homozigotluğu zemininde gelişir; patognomonik olarak tendon ksantomları görülür ve periferik arter hastalığı gelişme riski kesinlikle bulunmaz.",
+        "E": "Sitosterolemi (Fitosterolemi), enterositlerde NPC1L1 transporterının aşırı çalışmasıyla ortaya çıkar; tedavisinde ezetimib kullanımı kontrendikedir ve tek geçerli seçenek yüksek doz statin monoterapisidir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Evinacumab, ANGPTL3'ü engelleyip Endotelyal Lipazı (EL) aktive ederek LDLR-null HoFH hastalarında LDL-K'yi ~%50 düşürür. Tangier hastalığı ABCA1 eksikliğidir; sitosterolemi ise ABCG5/ABCG8 mutasyonudur ve ezetimible tedavi edilir. Abetalipoproteinemi MTTP eksikliğidir; E vitamini eksikliği ve karaciğer yağlanması yapar. Tip III disbetalipoproteinemide APOE2/E2 homozigotluğu bulunur ve palmar ksantomlar patognomoniktir.",
+      "aciklama_detay": "ANGPTL3 ve Endotelyal Lipaz (EL) etkileşimi: Fizyolojik koşullarda Angiopoietin-like protein 3 (ANGPTL3), Endotelyal Lipaz (EL) enzimini inhibe eder.\n\nReseptörden bağımsız klerens: ANGPTL3 işlevinin evinacumab monoklonal antikoru ile bloke edilmesi durumunda, baskıdan kurtulan Endotelyal Lipaz (EL) VLDL partiküllerini işlemeye başlar. Bu durum, LDL reseptör fonksiyonundan tamamen bağımsız (non-canonical) alternatif bir VLDL klerens yolağını aktive eder.\n\nHoFH'da klinik önemi: Klasik tedavilerin (statin, ezetimib, PCSK9 inhibitörleri) çalışma mekanizması hepatik LDL reseptör upregülasyonuna dayandığından, çift null mutasyonlu (reseptörsüz) HoFH olgularında etkisizdir. Evinacumab ise reseptörden bağımsız bu mekanizmayla null/null HoFH hastalarında dahi LDL-K düzeylerinde yaklaşık %50 oranında düşüş sağlar.\n\nTangier hastalığı biyokimyası: Tangier hastalığı ABCG5/ABCG8 değil, ABCA1 genindeki bialelik mutasyonlardan kaynaklanır. Hücresel serbest kolesterolün ApoA-1'e aktarılamaması nedeniyle dolaşımda HDL-K neredeyse tamamen yok olmuştur (<5 mg/dL) ve LDL-K belirgin şekilde düşüktür. Doku makrofajlarında kolesterol ester birikimi sonucu tonsiller sarı-turuncu renkte büyür; karaciğer, dalak ve lenf nodları genişler.\n\nAbetalipoproteinemi ve MTP eksikliği: Abetalipoproteinemi, APOB mutasyonundan değil, mikrozomal trigliserit transfer proteinini kodlayan MTTP genindeki fonksiyon kaybı (loss-of-function) mutasyonlarından kaynaklanır. MTP eksikliğinde ApoB lipitlenemediği için VLDL ve şilomikron montajı yapılamaz; dolaşımda şilomikron, VLDL ve LDL tamamen kaybolur. Yağda çözünen vitaminlerin (özellikle E vitamini) emilimi durarak nörodejenerasyona ve akantositoza yol açar. Lipoprotein olarak salınamayan yağlar hepatositlerde birikerek ağır karaciğer yağlanmasına (steatoz) ve siroza neden olur.\n\nTip III hiperlipoproteinemi / disbetalipoproteinemi: Tablonun gelişimi E4/E4 değil, LDL reseptörüne bağlanma kapasitesi düşük olan APOE2/E2 homozigotluğu zemininde ikincil faktörlerin (diyabet, obezite, hipotiroidi) eklenmesini gerektirir. Tendon ksantomları Ailesel Hiperkolesterolemiye özgüyken; Tip III klinik tablosu için el ayası çizgilerinde sarımsı renk değişimi ile seyreden palmar ksantomlar patognomoniktir. Ayrıca FH'dan farklı olarak bu hastalarda erken gelişen periferik arter hastalığı (PAH) sıklıkla izlenir.\n\nSitosterolemi patofizyolojisi ve tedavisi: Sitosterolemi, enterosit ve hepatositlerde bitkisel sterollerin (sitosterol) lümene/safraya geri pompalanmasını sağlayan ABCG5 veya ABCG8 ABC transporter genlerindeki inaktivasyondan kaynaklanır. NPC1L1 ise sterol emilimini sağlayan proteindir. Sitosterolemi tedavisinde NPC1L1 üzerinden sterol emilimini bloke eden ezetimib temel birinci basamak tedavidir. Statinler sitosterol düzeylerini düşürmez.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Abetalipoproteinemi MTTP genindeki fonksiyon kaybından kaynaklanır; VLDL/şilomikron montajı yapılamaz, ağır steatoz ve E vitamini eksikliği gelişir.",
+        "B": "YANLIS — Tangier hastalığı ABCA1 mutasyonudur; HDL-K neredeyse yoktur (<5 mg/dL), LDL-K düşüktür.",
+        "C": "DOGRU — Evinacumab ANGPTL3'ü inhibe ederek EL aracılı, LDL reseptöründen bağımsız klerensi açığa çıkarır; LDLR-null HoFH'da da LDL-K'yi ~%50 düşürür.",
+        "D": "YANLIS — Tip III APOE2/E2 homozigotluğu zemininde gelişir; palmar ksantomlar patognomoniktir ve erken periferik arter hastalığı sıktır.",
+        "E": "YANLIS — Sitosterolemi ABCG5/ABCG8 inaktivasyonudur; ezetimib birinci basamak tedavidir, statinler sitosterolü düşürmez."
+      },
+      "etiketler": [
+        "Homozigot Ailesel Hiperkolesterolemi",
+        "Evinacumab / ANGPTL3",
+        "Monogenik Lipid Bozuklukları",
+        "Sitosterolemi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Williams Textbook of Endocrinology, 15. baskı, Bölüm 41: Disorders of Lipoprotein Metabolism"
+    },
+    {
+      "id": "s24",
+      "metin": "66 yaşında erkek hasta, sol bacağında yaklaşık 150 metre yürümekle ortaya çıkan ve dinlenmekle geçen kladikasyon intermittan şikayetiyle kardiyoloji ve damar cerrahisi polikliniğine başvuruyor. Tıbbi öyküsünden 5 yıl önce miyokard enfarktüsü (koroner arter hastalığı) geçirdiği öğreniliyor. Fizik muayenesinde sol ayak nabızları (dorsalis pedis, tibialis posterior) zayıf alınıyor; Ayak Bileği-Kol İndeksi (ABI) sol tarafta 0.62 saptanıyor. Yüksek yoğunluklu statin (rosuvastatin 40 mg/gün) tedavisi altında biyokimyasal analizinde plazma LDL kolesterolü: 88 mg/dL, Trigliserit: 165 mg/dL ölçülüyor.\n\nPeriferik Arter Hastalığı (PAH) varlığında dislipidemi epidemiyolojisi, polivasküler hastalık riski ve lipid düşürücü tedavilerin ekstremite koruma (limb salvage) ile kardiyovasküler olaylar üzerindeki etkilerini inceleyen derleme verileri (Yadav A, Sawant V, Bedi VS, Yadav K. Indian Heart Journal, 2024) esas alındığında aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Pemafibrat ile yürütülen PROMINENT çalışmasında, pemafibratın trigliserit ve kalıntı (remnant) kolesterolü düşürmesi Tip 2 diyabetik hastalarda kardiyovasküler olay sıklığını %25 oranında istatistiksel olarak anlamlı düzeyde azaltmıştır.",
+        "B": "REACH kaydı (registry) verilerine göre stabil koroner arter hastalarının yalnızca %1'inde polivasküler hastalık görülürken; kritik ekstremite iskemisine (KEİ) ilerleyen PAH hastalarında kardiyovasküler ölüm riski artışı 2 ila 3 kat ile sınırlıdır.",
+        "C": "Vasküler cerrahi operasyonu geçirecek olgularda perioperatif statin tedavisinin ameliyattan hemen önce kesilmesi, akut kardiyak olay ve iskemi riskini azaltan standart bir yaklaşımdır.",
+        "D": "PCSK9 inhibitörü evolocumab ile yürütülen FOURIER çalışmasında, statin tedavisine eklenen evolocumab majör olumsuz kardiyovasküler olayları (MACE) %21 azaltmanın yanı sıra majör olumsuz ekstremite olaylarını (MALE: Major Adverse Limb Events) %42 oranında düşürmüş ve yoğun LDL-K düşürülmesinin akut ekstremite iskemisi riskini azaltmadaki güvenliliğini ve etkinliğini kanıtlayan ilk randomize kontrollü çalışma olmuştur.",
+        "E": "ESC/EAS dislipidemi kılavuzlarına göre polivasküler hastalığı olan çok yüksek riskli PAH olgularında birincil LDL-K hedefi <70 mg/dL olup; statin tedavisi tüm nedenlere bağlı mortaliteyi etkilemezken yalnızca ekstremite ampütasyon riskini artırmaktadır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "PAH hastalarında PCSK9 inhibitörü evolocumab (FOURIER) MACE'yi %21 azaltırken MALE (majör ekstremite olayları) riskini %42 düşürür. Kritik ekstremite iskemisi gelişen olgularda kardiyovasküler mortalite 10–15 kat artar. Polivasküler PAH hastalarında ESC/EAS hedefi LDL-K <55 mg/dL'dir; statinler ampütasyonu %35, mortaliteyi %39 azaltır.",
+      "aciklama_detay": "FOURIER çalışması verileri: Statin tedavisi alan aterosklerotik kardiyovasküler hastalıklı olgularda PCSK9 inhibitörü evolocumab'ın eklendiği FOURIER çalışmasında, LDL kolesterol düzeylerinde %47 oranında ek düşüş sağlanmıştır.\n\nMACE ve MALE azalması: Evolocumab tedavisi majör olumsuz kardiyovasküler olayları (MACE) %21 oranında azaltırken, majör olumsuz ekstremite olaylarını (MALE) %42 oranında düşürmüştür.\n\nKanıtın önemi: FOURIER çalışması, yoğun LDL-K düşürülmesinin akut ekstremite iskemisi riskini azaltmada güvenli ve etkili olduğunu gösteren ilk randomize kontrollü klinik çalışmadır.\n\nREACH kaydı ve kritik ekstremite iskemisi: REACH (Reduction of Atherothrombosis for Continued Health) kaydı verilerine göre stabil koroner hastalarında polivasküler hastalık (birden fazla damar yatağının tutulumu) nadir değildir; her 6 hastadan 1'inde (yaklaşık %16.7) çoklu damar yatağı tutulumu mevcuttur. PAH hastalarının yılda %1'i kritik ekstremite iskemisine ilerler; kritik ekstremite iskemisi gelişen olgularda kardiyovasküler ölüm riski 2–3 kat değil, 10 ila 15 kat artış göstermektedir.\n\nPerioperatif statin: Kalp dışı vasküler cerrahi geçiren hastalarda perioperatif statin tedavisi ölümcül/ölümcül olmayan kardiyak olayları, inmeyi, ampütasyonları ve perioperatif mortaliteyi belirgin şekilde azaltır. Aksine, perioperatif dönemde statin tedavisinin kesilmesi kardiyak olay ve iskemi riskini artırmaktadır.\n\nPROMINENT çalışması: PROMINENT çalışmasında pemafibrat, Tip 2 diyabetli hastalarda trigliserit, VLDL-K ve kalıntı (remnant) kolesterol düzeylerini düşürmüş olmasına rağmen kardiyovasküler olay insidansını plaseboya kıyasla düşürmemiştir.\n\nESC/EAS hedefleri ve statinin sağkalım faydası: 2019 ESC/EAS Dislipidemi Kılavuzu'na göre, PAH gibi çok yüksek riskli olgularda bazale göre >%50 LDL-K düşüşü ile birlikte hedef LDL-K <55 mg/dL (1.4 mmol/L) olarak belirlenmiştir. Statin tedavisi PAH hastalarında tüm nedenlere bağlı mortaliteyi %39, kardiyovasküler ölümü %41, akut ekstremite iskemisini %30 ve ampütasyon riskini %35 oranında azaltmaktadır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — PROMINENT'te pemafibrat trigliserit ve kalıntı kolesterolü düşürdüğü halde kardiyovasküler olayları azaltmamıştır.",
+        "B": "YANLIS — REACH'te stabil koroner hastaların ~6'da 1'inde polivasküler hastalık vardır; kritik ekstremite iskemisinde kardiyovasküler ölüm riski 10–15 kat artar.",
+        "C": "YANLIS — Perioperatif statin kardiyak olay, inme, ampütasyon ve mortaliteyi azaltır; kesilmesi riski artırır.",
+        "D": "DOGRU — FOURIER'de evolocumab MACE'yi %21, MALE'yi %42 azaltmıştır.",
+        "E": "YANLIS — Çok yüksek riskli PAH'ta ESC/EAS hedefi LDL-K <55 mg/dL'dir; statinler mortaliteyi %39, ampütasyonu %35 azaltır."
+      },
+      "etiketler": [
+        "Periferik Arter Hastalığı",
+        "FOURIER / MALE",
+        "Polivasküler Hastalık",
+        "PROMINENT"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Yadav A, Sawant V, Bedi VS, Yadav K. Indian Heart J 2024 · FOURIER · REACH · PROMINENT · 2019 ESC/EAS"
+    },
+    {
+      "id": "s25",
+      "metin": "58 yaşında Tip 2 Diyabet ve bilinen koroner arter hastalığı (sekonder koruma) tanılı erkek hasta; yüksek yoğunluklu statin tedavisine (rosuvastatin 40 mg/gün) ek olarak ezetimib (10 mg/gün) almasına rağmen LDL-kolesterol düzeyi hedeflenen eşiğin üzerinde (92 mg/dL) seyretmektedir. Hastanın biyokimyasal incelemesinde açlık trigliserit düzeyi 320 mg/dL, hs-CRP düzeyi ise 3.8 mg/L (yüksek kardiyovasküler risk) saptanmıştır. Hastaya ek lipid düşürücü farmakoterapi başlanması planlanmakta ve alternatif non-statin ajanların biyokimyasal, klinik ve güvenlik profilleri değerlendirilmektedir.\n\nErişkinlerde dislipidemi tanısı, risk sınıflandırması ve non-statin farmakoterapi yönetim ilkeleri (ClinicalKey - Dyslipidemia in Adults Monografı) esas alındığında aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "İnklisiran, dolaşımdaki PCSK9 proteinini nötralize eden insan kaynaklı bir monoklonal antikor olup; yılda bir kez intravenöz infüzyon şeklinde uygulanır.",
+        "B": "Safra asidi bağlayıcı reçineler (kolesevelam, kolestipol), hepatik kolesterol klerensini artırdıkları için başlangıç açlık trigliserit düzeyi yüksek olan hastalarda güvenle tercih edilecek birinci basamak non-statin seçenektir.",
+        "C": "Homozigot Ailesel Hiperkolesterolemi (HoFH) tedavisinde kullanılan mikrozomal trigliserit transfer proteini (MTP) inhibitörü lomitapid, yağda çözünen besin öğesi eksikliğini önlemek amacıyla günlük K vitamini ve demir takviyesi ile birlikte verilmeli; E vitamini kullanımı ise kontrendike kabul edilmelidir.",
+        "D": "Sitosterolemi (Fitosterolemi), enterosit ve hepatositlerde LDLRAP1 geni mutasyonuna bağlı gelişen otozomal dominant bir bozukluk olup; tedavisinde ezetimib kullanımı etkisizdir ve tek tedavi yöntemi LDL aferezidir.",
+        "E": "Bempedoik asit, kolesterol biyosentez yolunda HMG-CoA redüktazın hemen üst basamağında yer alan ATP-sitrat liyaz (ACL) enzimini inhibe ederek LDL-K düzeylerini düşürür; ayrıca dislipidemisi olan diyabetik hastalarda glisemik kontrolü iyileştirirken hs-CRP seviyelerinde %15 ila %25 oranında belirgin bir azalma sağlar."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Bempedoik asit HMG-CoA redüktazın üst basamağındaki ATP-sitrat liyazı inhibe eder; LDL-K'nin yanında hs-CRP'yi %15–25 düşürür. Safra asidi bağlayıcılar yüksek trigliseridde önerilmez; lomitapid E vitamini ve omega-3 desteği gerektirir; sitosterolemi ABCG5/ABCG8 mutasyonudur ve ezetimible tedavi edilir; inklisiran bir siRNA'dır, 6 ayda bir subkutan uygulanır.",
+      "aciklama_detay": "Enzim inhibisyonu: Bempedoik asit, karaciğerde kolesterol biyosentez yolağında HMG-CoA redüktazın hemen üst basamağında (upstream) görev yapan ATP-sitrat liyaz (ACL) enzimini inhibe eder.\n\nDiyabetik ve inflamatuar etkiler: Bempedoik asit, LDL-K ve aterojenik lipoproteinleri düşürmenin yanı sıra dislipidemik diyabetik olgularda glisemik kontrolü iyileştirir. Ayrıca yüksek duyarlılıklı C-reaktif protein (hs-CRP) düzeylerinde %15 ila %25 oranında belirgin bir azalma meydana getirir.\n\nSafra asidi bağlayıcı reçineler ve hipertrigliseridemi riski: Safra asidi bağlayıcı reçineler (kolestiramin, kolestipol, kolesevelam) VLDL sentezini ikincil olarak uyarabildiklerinden, başlangıç açlık trigliserit düzeyi yüksek olan hastalarda şiddetli hipertrigliseridemiye yol açabilirler. Bu nedenle başlangıç trigliserit düzeyi yüksek olan olgularda safra asidi bağlayıcı reçinelerin kullanımı önerilmez.\n\nLomitapid ve E vitamini desteği: Mikrozomal trigliserit transfer proteini (MTP) inhibitörü lomitapid, bağırsaktan yağda çözünen vitaminlerin emilimini ve şilomikron taşımasını engellediği için yağda çözünen besin öğesi eksikliği riski yaratır. Bu eksikliği önlemek amacıyla lomitapid alan hastaların her gün 400 IU E vitamini ile birlikte esansiyel yağ asidi (EPA ve DHA dahil) takviyesi alması gerekir.\n\nSitosterolemi genetiği ve ezetimib tedavisi: Sitosterolemi (Fitosterolemi), enterosit ve hepatositlerde bitkisel sterollerin atılımını sağlayan ABCG5 veya ABCG8 genlerindeki mutasyonlara bağlı gelişen nadir otozomal resesif bir hastalıktır. NPC1L1 üzerinden bitkisel sterol emilimini bloke eden ezetimib, bitkisel sterol kısıtlı diyetle birlikte sitosterolemi tedavisinde birinci basamak temel tedavidir.\n\nİnklisiran ve PCSK9 monoklonal antikor ayrımı: İnklisiran bir monoklonal antikor değil; hücre içinde PCSK9 mRNA'sını hedef alarak PCSK9 sentezini engelleyen küçük interferans RNA (siRNA) molekülüdür. Dolaşımdaki PCSK9'a bağlanan monoklonal antikorlar evolocumab ve alirocumab'dır. İnklisiran subkutan yoldan başlangıçta, 3. ayda ve ardından 6 ayda bir uygulanır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — İnklisiran monoklonal antikor değil, PCSK9 mRNA'sını hedefleyen bir siRNA'dır; başlangıçta, 3. ayda ve sonra 6 ayda bir subkutan uygulanır.",
+        "B": "YANLIS — Safra asidi bağlayıcılar VLDL sentezini uyarıp trigliseridi yükseltebilir; başlangıç trigliseridi yüksek hastada önerilmez.",
+        "C": "YANLIS — Lomitapid alan hastaya günlük 400 IU E vitamini ve esansiyel yağ asidi (EPA/DHA) desteği verilir.",
+        "D": "YANLIS — Sitosterolemi ABCG5/ABCG8 mutasyonuna bağlı otozomal resesif bir hastalıktır; ezetimib birinci basamak tedavidir.",
+        "E": "DOGRU — Bempedoik asit ATP-sitrat liyazı inhibe eder; LDL-K'nin yanında hs-CRP'yi %15–25 düşürür."
+      },
+      "etiketler": [
+        "Non-Statin Tedaviler",
+        "Bempedoik Asit",
+        "İnklisiran",
+        "Lomitapid"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ClinicalKey — Dyslipidemia in Adults Monografı"
     }
   ]
 }
