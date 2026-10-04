@@ -731,6 +731,35 @@
       ],
       "zorluk": "zor",
       "kaynak": "CURRENT Medical Diagnosis & Treatment 2025 — Bölüm 2-12: Dizüri"
+    },
+    {
+      "id": "s26",
+      "metin": "Onkoloji servisinde Multipl Miyelom tanısıyla takip edilmekte olan ve bortezomib + talidomid içeren kemoterapi rejimi uygulanan 61 yaşındaki erkek hasta; eş zamanlı aritmi nedeniyle amiodaron (200 mg/gün) ve latent tüberküloz profili nedeniyle izoniazid (300 mg/gün) kullanmaktadır. Tedavinin 3. ayında hastada her iki ayakta belirginleşen, gece uykudan uyandıran şiddetli yanıcı ağrı, sızlama ve çorap tarzı uyuşma gelişiyor. Nörolojik muayenesinde bilateral alt ekstremitelerde distal duysal kayıp ve parestezi saptanıyor.\n\nİlaç indüklü periferik nöropatilerin (DIPN) hücresel patofizyolojisi, ilaca özgü nörotoksisite mekanizmaları ve tedavi yaklaşımları (Jones MR, Urits I, Viswanath O ve ark., Current Clinical Pharmacology, 2020) göz önüne alındığında aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Bortezomib indüklü nöropatide temel olarak distal küçük C-lifleri tutulur ve dorsal kök gangliyonunda (DRG) Activating Transcription Factor 3 (ATF3) aktivasyonu süreçte rol oynar; izoniazidin yol açtığı nöropati ise piridoksinin (B6 vitamini) hidrazon kompleksiyle inaktivasyonu ve artmış renal atılımına bağlı gelişen B6 eksikliğinden kaynaklanır ve eş zamanlı B6 takviyesiyle geriletilebilir.",
+        "B": "Oxaliplatin indüklü akut soğuk hiperaljezisi ve nörotoksisite, duysal nöronlardaki voltaj bağımlı potasyum kanallarının irreversible blokajına dayanır.",
+        "C": "Levodopa tedavisi altında gelişen periferik nöropatide temel patofizyolojik düzenek; serum homosistein düzeylerinin düşmesi ve B12 vitamini seviyelerinin aşırı yükselmesine bağlı olarak gelişen demyelinizan motor nöropatidir.",
+        "D": "Amiodaron kullanımı ile gelişen nöropatide yalnızca duysal lifler tutulur; Schwann hücrelerinde lizozomal degradasyonun uyarılması ve antioksidan kapasitenin artması patogenezin ana nedenidir.",
+        "E": "NRTİ grubu antiretroviral ilaçlar (zalcitabin, didanozin, stavudin), nöronal çekirdekteki RNA polimeraz II enzimini bloke ederek merkezî sinir sisteminde miyelin kaybına ve spastik felce yol açarlar."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Bortezomib distal küçük C-liflerini tutar; DRG'de ATF3 aktivasyonu nöropatogenezde rol oynar. İzoniazid piridoksal fosfatla hidrazon kompleksi oluşturup B6'yı inaktive eder ve renal atılımını artırır; gelişen B6 eksikliği nöropatiye yol açar ve eş zamanlı piridoksin takviyesiyle önlenir.",
+      "aciklama_detay": "Bortezomib nöropatisi ve ATF3 yolağı: Proteazom inhibitörü bortezomib, özellikle alt ekstremite distallerinde küçük C-liflerini tutarak şiddetli, keskin ve yanıcı ağrı ile seyreden duysal nöropatiye yol açar. Dorsal kök gangliyonunda (DRG) ve primer kültür nöronlarında Activating Transcription Factor 3 (ATF3) ekspresyonunun ve nöronal stresin artması bortezomib indüklü nöropatogenezin temel halkalarından biridir.\n\nİzoniazid (INH) ve B6 vitamini (piridoksin) metabolizması: İnsan B6 vitaminini sentezleyemez; diyetle alınması gereken esansiyel bir kofaktördür. İzoniazid, B6 vitaminini bağlayarak izoniazid-piridoksal hidrazon kompleksi oluşturur. Bu durum piridoksal kinaz enzimini inhibe ederek B6 vitaminini inaktive eder ve idrarla atılımını hızlandırır. Oluşan B6 deplesyonu kümülatif doza bağımlı olarak (%2–44 sıklık) duysal nöropatiye yol açar; eş zamanlı piridoksin (B6 vitamini) takviyesiyle önlenebilir, gelişmiş nöropati de çoğu olguda geriler.\n\nOxaliplatin ve kanalopatiler: Oxaliplatin'e bağlı gelişen akut, soğukla tetiklenen paresteziler potasyum kanallarından değil; dorsal kök gangliyonundaki (DRG) duysal nöronlardaki voltaj bağımlı sodyum (Na+) kanallarının disfonksiyonundan ve hücresel refrakter periyodun uzamasından kaynaklanır.\n\nLevodopa ve homosistein/B12 metabolizması: Levodopa tedavisi sırasında dopamin dönüşümü S-adenozilmetionin tüketir; bu durum serum homosistein, metilmalonik asit (MMA) ve kobalamin metabolitlerinin birikmesine, B12 vitamini seviyelerinin ise düşmesine yol açar. Gelişen nöropati tablosu motor değil, aksonal tipte duysal periferik nöropatidir.\n\nAmiodaron nöropatisi patofizyolojisi: Sınıf III antiaritmik amiodaron, hem duysal hem motor kayıplara (sensörimotor) yol açar. Demyelinizasyon ve büyük akson kaybının yanı sıra Schwann hücrelerinde artmış oksidatif stres ve bozulmuş lizozomal degradasyon (impaired lysosomal degradation) hücresel hasardan sorumludur.\n\nNRTİ nörotoksisite yolağı: NRTİ'ler (zalcitabin, didanozin, stavudin) RNA polimerazı değil; mitokondriyal DNA replikasyonundan sorumlu olan mitokondriyal DNA polimeraz γ enzimini inhibe ederler. Bu durum mitokondriyal disfonksiyona, laktat birikimine ve kan-sinir bariyeri daha geçirgen olan periferik sinirlerde distal aksonal duysal nöropatiye (yanıcı ağrı, hiporefleksi) neden olur.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Bortezomib distal küçük C-liflerini tutar (DRG'de ATF3 aktivasyonu); izoniazid nöropatisi piridoksinin hidrazon kompleksiyle inaktivasyonu ve artmış atılımına bağlı B6 eksikliğindendir, piridoksinle önlenir.",
+        "B": "YANLIS — Oxaliplatinin akut soğuk paresteziler voltaj bağımlı sodyum kanalı disfonksiyonu ve uzamış refrakter periyottan kaynaklanır, potasyum kanalı blokajından değil.",
+        "C": "YANLIS — Levodopa homosistein ve MMA'yı artırır, B12'yi düşürür; nöropati aksonal duysal tiptedir.",
+        "D": "YANLIS — Amiodaron nöropatisi sensörimotordur; Schwann hücrelerinde artmış oksidatif stres ve BOZULMUŞ lizozomal degradasyon sorumludur.",
+        "E": "YANLIS — NRTİ'ler mitokondriyal DNA polimeraz γ'yı inhibe eder; sonuç periferik distal aksonal duysal nöropatidir."
+      },
+      "etiketler": [
+        "İlaca Bağlı Periferik Nöropati",
+        "Bortezomib",
+        "İzoniazid ve B6",
+        "Klinik Farmakoloji"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Jones MR, Urits I, Viswanath O ve ark. Curr Clin Pharmacol 2020"
     }
   ]
 }
