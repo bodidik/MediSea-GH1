@@ -760,6 +760,35 @@
       ],
       "zorluk": "zor",
       "kaynak": "Jones MR, Urits I, Viswanath O ve ark. Curr Clin Pharmacol 2020"
+    },
+    {
+      "id": "s27",
+      "metin": "Romatoid Artrit (RA) tanısıyla takip edilen 52 yaşındaki kadın hastaya, hastalığın aktif seyretmesi üzerine biyolojik ajan olarak infliximab (TNF-α inhibitörü) ve immünosüpresif olarak leflunomid tedavisi başlanmıştır. Tedavinin 3. ayında hastada ataksi, dizartri, hiporefleksi, çift görme (bilateral abdusens sinir felci) ve ellerinde/ayaklarında ilerleyici parestezi gelişmiştir. Olgu, klinik ve elektrofizyolojik değerlendirmeler sonucunda immün-ilişkili bir polinöropati tablosu olan Miller-Fisher Sendromu tanısı almıştır. Tıbbi öyküsünden hastanın geçmişte geçirdiği bir pelvik enfeksiyon nedeniyle uzun süreli metronidazol kullandığı ve bu dönemde geçici otonom nöropati belirtileri yaşadığı öğrenilmiştir.\n\nİlaç indüklü periferik nöropatilerin (DIPN) etyopatogenezi, immünoterapötiklerin nörolojik komplikasyonları ve antimikrobiyal/kemoterapötik ajanların hücresel etki mekanizmaları (Jones MR, Urits I, Viswanath O ve ark., Current Clinical Pharmacology, 2020) göz önüne alındığında aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Metronidazol'ün yol açtığı periferik ve otonom nöropatide temel biyokimyasal mekanizma voltaj bağımlı potasyum kanallarının blokajı olup; hücresel aksonal dejenerasyon ve nöronal RNA'ya bağlanma özelliği bulunmamaktadır.",
+        "B": "TNF-α inhibitörleri (infliximab, etanercept, adalimumab) periferik miyeline yönelik T-hücresi ve humoral immün saldırıyı uyararak veya vaskülitik sinir iskemisini tetikleyerek Guillain-Barré Sendromu, Miller-Fisher Sendromu ve CIDP gibi demyelinizan polinöropatilere yol açabilir; leflunomid ise epineöral perivasküler inflamasyon ve vaskülit mekanizmasıyla reversibl distal sensörimotor nöropatiye neden olabilir.",
+        "C": "Etambutol kullanımına bağlı gelişen optik nöropatide temel patogenez piridoksin (B6 vitamini) deplesyonu olup; retinal ganglion hücrelerinde çinko şelasyonu veya mitokondriyal metal içeren enzimlerin inhibisyonu görülmez.",
+        "D": "Taksan grubu (paklitaksel, dosetaksel) kemoterapötiklerin hücresel nörotoksisite mekanizması yalnızca DNA'ya kovalent bağlanma ile sınırlı olup; mikrotübül depolimerizasyonu, endoplazmik retikulum kalsiyum salınımı veya mitokondriyal membran geçirgenlik porlarının açılması bu süreçte rol oynamaz.",
+        "E": "Gabapentinoidler (gabapentin, pregabalin) nöropatik ağrı tedavisinde doğrudan merkezi GABA-A reseptör agonisti olarak etki gösterir; voltaj bağımlı kalsiyum kanallarının α2δ alt birimine bağlanarak eksitatör nörotransmitter salınımını baskılama özellikleri yoktur."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "TNF-α inhibitörleri periferik miyeline immün saldırı ile Miller-Fisher Sendromu ve GBS yapabilir. Metronidazol nöronal RNA'ya bağlanıp aksonal dejenerasyon ve otonom nöropati oluşturur. Etambutol çinko şelasyonu ile optik nöropati yaparken, taksanlar mitokondriyal kalsiyum porlarını açarak apoptoza yol açar.",
+      "aciklama_detay": "TNF-α inhibitörleri ve otoimmün nöropati: İnfliksimab, etanercept ve adalimumab gibi biyolojik ajanlar immün sistemi baskılarken paradoksal olarak otoreaktif hücresel ve humoral immün yanıtları tetikleyebilir. Periferik miyeline yönelik antikor/T-hücre saldırısı, vaskülite bağlı sinir iskemisi ve aksonal sinyalizasyon inhibisyonu sonucunda Guillain-Barré Sendromu (GBS), Miller-Fisher Sendromu ve Kronik İnflamatuar Demyelinizan Polinöropati (CIDP) gelişebilmektedir. Tedavinin kesilmesi ve IVIG/plazmaferez uygulanması ile klinik tablo hızla geriler.\n\nLeflunomid nöropatisi: Dihidroorotat dehidrogenaz inhibisyonu ile T-hücresi proliferasyonunu ve pirimidin sentezini engelleyen leflunomid; hastaların %5–10'unda ilaca bağlı nörolojik vaskülit ve epineöral perivasküler inflamasyon üzerinden reversibl distal aksonal duysal veya sensörimotor polinöropatiye yol açmaktadır.\n\nMetronidazol nörotoksisite mekanizması: Metronidazol, nöronal RNA'ya doğrudan bağlanarak aksonal dejenerasyona yol açar. Uzun süreli kullanımında duysal ve motor periferik nöropatinin yanı sıra optik nöropati ve otonom nöropatiye (örneğin vajinit tedavisi alan adolesanda otonom disfonksiyon) neden olabilmektedir. Potasyum kanalı blokajı mekanizması yoktur.\n\nEtambutol ve çinko şelasyonu: Etambutol kullanımına bağlı gelişen optik nörit / optik nöropatide temel biyokimyasal mekanizma; çinko şelasyonu üzerinden retinal ganglion hücrelerindeki mitokondriyal metal içeren enzimlerin bozulmasıdır. Piridoksin (B6 vitamini) eksikliği yapan ajan ise izoniaziddir (INH).\n\nTaksanlar ve organel hasarı: DNA'ya kovalent bağlanarak tübüler hasar ve apoptoz oluşturan grup platin türevleridir (sisplatin). Taksanlar (paklitaksel) ise mikrotübül depolimerizasyonunu bozarak endoplazmik retikulum kalsiyum kanallarını açar; açılan kanallar mitokondriyal membran geçirgenlik porlarını (MTPP) uyararak reaktif oksijen türleri (ROS) ve sitokrom C salınımı ile apoptozu başlatır.\n\nGabapentinoidlerin farmakodinamiği: Gabapentin ve pregabalin yapısal olarak GABA'ya benzemelerine rağmen GABA reseptörlerine bağlanmazlar. Ağrı kesici etkilerini voltaj bağımlı kalsiyum kanallarının α2δ alt birimine bağlanarak presinaptik alana kalsiyum girişini ve dolayısıyla glutamat gibi eksitatör nörotransmitterlerin salınımını baskılayarak gösterirler.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Metronidazol nöronal RNA'ya bağlanarak aksonal dejenerasyon yapar; potasyum kanalı blokajı mekanizması yoktur.",
+        "B": "DOGRU — TNF-α inhibitörleri GBS, Miller-Fisher ve CIDP gibi demyelinizan polinöropatilere yol açabilir; leflunomid vaskülit/epineöral perivasküler inflamasyonla reversibl distal nöropati yapar.",
+        "C": "YANLIS — Etambutol optik nöropatisi çinko şelasyonu ve mitokondriyal metal içeren enzimlerin bozulmasına bağlıdır; B6 eksikliği yapan izoniaziddir.",
+        "D": "YANLIS — DNA'ya kovalent bağlanan platin türevleridir; taksanlar mikrotübül dinamiğini bozup ER kalsiyum salınımı ve mitokondriyal geçirgenlik porları üzerinden apoptozu başlatır.",
+        "E": "YANLIS — Gabapentinoidler GABA reseptörlerine bağlanmaz; voltaj bağımlı kalsiyum kanallarının α2δ alt birimine bağlanarak eksitatör nörotransmitter salınımını baskılar."
+      },
+      "etiketler": [
+        "İlaca Bağlı Periferik Nöropati",
+        "TNF-α İnhibitörleri",
+        "Miller-Fisher Sendromu",
+        "Klinik Farmakoloji"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Jones MR, Urits I, Viswanath O ve ark. Curr Clin Pharmacol 2020"
     }
   ]
 }
