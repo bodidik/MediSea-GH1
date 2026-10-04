@@ -769,6 +769,35 @@
       ],
       "zorluk": "zor",
       "kaynak": "Cholesterol Treatment Trialists' (CTT) Collaboration. Lancet 2026"
+    },
+    {
+      "id": "s27",
+      "metin": "Aterosklerotik kardiyovasküler hastalık (ASCVD) ve dirençli hiperkolesterolemi tanılı hastalarda LDL-kolesterol düzeylerini düşürmek ve majör kardiyovasküler olayları engellemek amacıyla monoklonal antikor yapısındaki PCSK9 inhibitörleri (evolocumab ve alirocumab) yaygın şekilde kullanılmaktadır. Klinik uygulama kılavuzlarına yön veren FOURIER (evolocumab) ve ODYSSEY OUTCOMES (alirocumab) gibi büyük faz 3 kardiyovasküler sonuç çalışmaları ile lipid düşürücü faz 2/3 randomize araştırmaların metodolojik kalitesi, bazal değişken dengesizlikleri (baseline imbalances) ve bunların klinik sonlanımlar üzerindeki olası etkileri değerlendirilmektedir.\n\nPCSK9 inhibitörü randomize klinik çalışmalarındaki bazal dengesizlikleri, standart sapma (SD) farklılıklarını ve bunların kardiyovasküler/güvenlilik sonlanımlarıyla ilişkisini 43 çalışmayı (63.193 hasta) kapsayan meta-epidemiyolojik araştırma (van Bruggen FH, Zuidema SU, Luijendijk HJ. BMC Medical Research Methodology, 2024) ışığında inceleyen aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+      "secenekler": {
+        "A": "Çalışmaların hiçbirinde bazal değişken dengesizlikleri için istatistiksel düzeltme (adjustment) yapılmadığı, ilaç gruplarında yaş, BMI ve LDL-K standart sapmalarının (SD) kontrol gruplarına kıyasla sistematik olarak daha geniş olduğu saptanmıştır; meta-regresyon analizinde ilaç grubunda daha yüksek ortalama BMI bulunması tüm nedenlere bağlı mortalitede belirgin azalma (beta: -0.56) ile, daha yüksek diyabetli hasta oranı bulunması ise advers olay riskinde artış (beta: 0.02) ile istatistiksel olarak anlamlı ilişkili bulunmuştur.",
+        "B": "Cochrane sistematik derlemesi verilerine göre, hem evolocumab hem de alirocumab plaseboya kıyasla tüm nedenlere bağlı mortaliteyi istatistiksel olarak anlamlı düzeyde azaltmış olup; evolocumab'ın mortaliteyi düşürme etkisi ezetimib kontrol grubuna kıyasla da belirgin şekilde üstün bulunmuştur.",
+        "C": "İncelenen 43 faz 2 ve faz 3 çalışmanın tamamında rastgele dizi oluşturma (random sequence generation) ve alokasyon gizleme (allocation concealment) metodolojileri eksiksiz raporlanmış ve çalışmaların tamamı yanlılık riski açısından \"düşük riskli\" olarak sınıflandırılmıştır.",
+        "D": "ODYSSEY OUTCOMES çalışmasında evolocumab alan grupta ortalama vücut ağırlığı plaseboya kıyasla 5 kg daha yüksek bulunmuş; FOURIER çalışmasında ise alirocumab grubunda hipertansiyon insidansı %80'in üzerine çıkmıştır.",
+        "E": "Levene testi analizlerinde yaş değişkenine ait standart sapma p-değerlerinin dağılımı sola çarpık bulunurken; BMI ve LDL-K standart sapmalarında ilaç ve kontrol grupları arasında hiçbir fark izlenmemiştir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "PCSK9 inhibitörü çalışmalarında bazal dengesizlikler (BMI, diyabet, sigara vb.) hiçbir çalışmada düzeltmeye tabi tutulmamıştır. İlaç gruplarında yaş, BMI ve LDL-K standart sapmaları sistematik olarak daha geniştir. Meta-regresyonda ilaç grubunda daha yüksek BMI daha düşük tüm nedenlere bağlı mortaliteyle, daha yüksek diyabet oranı daha fazla advers olayla ilişkilidir. Evolocumab kardiyovasküler olayları azaltırken tüm nedenlere bağlı mortaliteyi değiştirmemektedir (Cochrane, OR 1.04).",
+      "aciklama_detay": "Düzeltme yapılmaması ve SD farklılıkları: 43 çalışmanın (63.193 hasta) dahil edildiği meta-epidemiyolojik araştırmada; incelenen çalışmaların hiçbirinde (%0) bazal değişken dengesizlikleri için analizlerde istatistiksel düzeltme yapılmadığı saptanmıştır. Ayrıca tek yönlü işaret testinde (sign-test), PCSK9 inhibitörü alan ilaç gruplarının yaş (p=0.014), LDL-K (p=0.014) ve BMI (p=0.049) değişkenlerinde kontrol gruplarına kıyasla sistematik olarak daha geniş standart sapmalara (SD) sahip olduğu gösterilmiştir.\n\nMeta-regresyon sonuçları: İlaç ve kontrol grupları arasındaki bazal dengesizliklerin klinik sonlanımlarla ilişkisi incelendiğinde iki parametre istatistiksel olarak anlamlı bulunmuştur:\n1. İlaç grubunda kontrol grubuna göre ortalama Vücut Kitle İndeksinin (BMI) 1 puan daha yüksek olması, tüm nedenlere bağlı mortalitede belirgin bir azalma ile ilişkilidir (beta: −0.56, %95 GA: −1.10 ila −0.02).\n2. İlaç grubunda diyabetli hasta oranının %1 daha yüksek olması, herhangi bir advers olay (any adverse event) riskinde artış ile ilişkilidir (beta: 0.02, %95 GA: 0.01 ila 0.04).\n\nCochrane meta-analiz sonuçları: Cochrane derlemesinde alirocumab tüm nedenlere bağlı mortalite riskini azaltırken (OR: 0.83, %95 GA: 0.72–0.96); evolocumab tüm nedenlere bağlı mortalite riskinde anlamlı bir azalma sağlamamıştır (OR: 1.04, %95 GA: 0.91–1.19). Ayrıca ne evolocumab ne de alirocumab, ezetimib grubuna kıyasla kardiyovasküler hastalık veya mortalite riskini daha fazla düşürememiştir.\n\nRandomizasyon raporlama eksikliği: 43 çalışmanın yalnızca 5'inde rastgele dizi oluşturma yöntemi, 13'ünde ise alokasyon gizleme yöntemi açıkça raporlanmıştır. Çoğu çalışmada bu bilgiler eksik olduğundan yanlılık riski \"belirsiz\" olarak değerlendirilmiştir.\n\nÇalışma–ilaç eşleşmesi: FOURIER çalışması evolocumab ile (27.564 hasta), ODYSSEY OUTCOMES çalışması ise alirocumab ile (18.924 hasta) yürütülmüştür. FOURIER'de ortalama vücut ağırlığı 85.0 kg (evolocumab) ve 85.5 kg (plasebo); ODYSSEY OUTCOMES'ta ise hipertansiyon oranı %65.6 (alirocumab) ve %63.9 (plasebo) olarak raporlanmıştır.\n\nLevene testi dağılım özellikleri: Levene testi sonuçlarına göre yaş değişkenine ait p-değerleri 0 ile 1 arasında görece düzgün bir dağılım gösterirken; LDL-K ve BMI standart sapma p-değerleri sola çarpık bulunmuş ve çalışmaların %19–23'ünde istatistiksel olarak anlamlı SD farklılıkları (p<0.05) saptanmıştır.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — Hiçbir çalışmada bazal dengesizlik düzeltmesi yapılmamış; ilaç gruplarında yaş, BMI ve LDL-K SD'leri daha geniş; daha yüksek BMI daha düşük mortaliteyle (beta −0.56), daha yüksek diyabet oranı daha fazla advers olayla (beta 0.02) ilişkili.",
+        "B": "YANLIS — Cochrane'de alirocumab mortaliteyi azaltmış (OR 0.83), evolocumab azaltmamıştır (OR 1.04); ikisi de ezetimibe üstün bulunmamıştır.",
+        "C": "YANLIS — 43 çalışmanın yalnızca 5'inde dizi oluşturma, 13'ünde alokasyon gizleme raporlanmış; çoğunda yanlılık riski belirsizdir.",
+        "D": "YANLIS — FOURIER evolocumab, ODYSSEY OUTCOMES alirocumab çalışmasıdır; kollar arasında ağırlık ve hipertansiyon oranları birbirine yakındır.",
+        "E": "YANLIS — Yaş p-değerleri düzgün dağılmış; BMI ve LDL-K p-değerleri sola çarpık bulunmuş ve çalışmaların %19–23'ünde anlamlı SD farkı saptanmıştır."
+      },
+      "etiketler": [
+        "PCSK9 İnhibitörleri",
+        "Klinik Araştırma Metodolojisi",
+        "Bazal Dengesizlik",
+        "Meta-epidemiyoloji"
+      ],
+      "zorluk": "zor",
+      "kaynak": "van Bruggen FH, Zuidema SU, Luijendijk HJ. BMC Med Res Methodol 2024"
     }
   ]
 }
