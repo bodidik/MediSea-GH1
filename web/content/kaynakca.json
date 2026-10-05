@@ -6163,5 +6163,131 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "adrenal-yetmezlik": {
+    "baslik": "Adrenal yetmezlik",
+    "aciklama": "Adrenal yetmezlik sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), ulusal kılavuz derneğin yayın sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Abdallah N, Mohamoud A, Daher H, Abdallah M, Mehfooz A. Relationships between adrenal insufficiency and cardiovascular outcomes in patients with congestive heart failure. Nutr Metab Cardiovasc Dis 2025;35(4):103835",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.numecd.2024.103835",
+        "tur": "makale"
+      },
+      {
+        "ad": "Abdallah N, Mohamoud A, Kearns A, Abdallah M, Linzer M. Relationships between adrenal insufficiency and cardiovascular outcomes in patients with atrial fibrillation, atrial flutter and paroxysmal supraventricular tachycardia. Curr Probl Cardiol 2024;49(8):102641",
+        "yil": 2024,
+        "url": "https://doi.org/10.1016/j.cpcardiol.2024.102641",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ben-Shlomo A, Koh M, Kremen S, Wertheimer J. Cognitive Assessment in Adults With Adrenal Cortisol Insufficiency: Challenges and Opportunities. Endocr Rev 2026;47(1):24-51",
+        "yil": 2026,
+        "url": "https://doi.org/10.1210/endrev/bnaf029",
+        "tur": "makale"
+      },
+      {
+        "ad": "Beuschlein F, Else T, Bancos I, ve ark. European Society of Endocrinology and Endocrine Society Joint Clinical Guideline: Diagnosis and therapy of glucocorticoid-induced adrenal insufficiency. Eur J Endocrinol 2024;190(5):G25-G51",
+        "yil": 2024,
+        "url": "https://doi.org/10.1093/ejendo/lvae029",
+        "tur": "makale"
+      },
+      {
+        "ad": "Bouki K, Venetsanaki V, Chrysoulaki M, ve ark. Primary adrenal insufficiency due to bilateral adrenal hemorrhage-adrenal infarction in a patient with systemic lupus erythematosus and antiphospholipid syndrome: case presentation and review of the literature. Hormones (Athens) 2023;22(3):521-531",
+        "yil": 2023,
+        "url": "https://doi.org/10.1007/s42000-023-00463-5",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cappa M, Todisco T, Bizzarri C. X-linked adrenoleukodystrophy and primary adrenal insufficiency. Front Endocrinol (Lausanne) 2023;14:1309053",
+        "yil": 2023,
+        "url": "https://doi.org/10.3389/fendo.2023.1309053",
+        "tur": "makale"
+      },
+      {
+        "ad": "Graves LE, Torpy DJ, Coates PT, Alexander IE, Bornstein SR, Clarke B. Future Directions for Adrenal Insufficiency: Cellular Transplantation and Genetic Therapies. J Clin Endocrinol Metab 2023;108(6):1273-1289",
+        "yil": 2023,
+        "url": "https://doi.org/10.1210/clinem/dgac751",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lee SC, Baranowski ES, Sakremath R, Saraff V, Mohamed Z. Hypoglycaemia in adrenal insufficiency. Front Endocrinol (Lausanne) 2023;14:1198519",
+        "yil": 2023,
+        "url": "https://doi.org/10.3389/fendo.2023.1198519",
+        "tur": "makale"
+      },
+      {
+        "ad": "Li SG, Long T, Yu R, ve ark. Adrenal involvement in antiphospholipid syndrome and SLE-spectrum disease: a systematic review and pooled individual-patient analysis. Front Immunol 2026;17:1851029",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fimmu.2026.1851029",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lundholm MD, Ambalavanan J, Rao PP. Primary adrenal insufficiency in adults: When to suspect, how to diagnose and manage. Cleve Clin J Med 2024;91(9):553-562",
+        "yil": 2024,
+        "url": "https://doi.org/10.3949/ccjm.91a.23072",
+        "tur": "makale"
+      },
+      {
+        "ad": "Thakkar S, Kantroo V, Nagendra L, ve ark. Endocrine consequences of antifungal therapy: A missed entity. World J Clin Cases 2026;14(2):117140",
+        "yil": 2026,
+        "url": "https://doi.org/10.12998/wjcc.v14.i2.117140",
+        "tur": "makale"
+      },
+      {
+        "ad": "Türkiye Endokrinoloji ve Metabolizma Derneği. Adrenal ve Gonadal Hastalıklar Kılavuzu. Ankara: TEMD; 2025",
+        "yil": 2025,
+        "url": "https://file.temd.org.tr/Uploads/publications/guides/documents/AdrenalKilavuz2025.pdf",
+        "tur": "makale"
+      },
+      {
+        "ad": "Wentworth BJ, Siragy HM. Adrenal Insufficiency in Cirrhosis. J Endocr Soc 2022;6(10):bvac115",
+        "yil": 2022,
+        "url": "https://doi.org/10.1210/jendso/bvac115",
+        "tur": "makale"
+      },
+      {
+        "ad": "Mount DB. Hyponatremia and hyperkalemia in adrenal insufficiency. UpToDate; son güncelleme 3 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/hyponatremia-and-hyperkalemia-in-adrenal-insufficiency",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nieman LK. Causes of primary adrenal insufficiency (Addison disease). UpToDate; son güncelleme 23 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/causes-of-primary-adrenal-insufficiency-addison-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nieman LK. Causes of secondary and tertiary adrenal insufficiency in adults. UpToDate; son güncelleme 13 Mar 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/causes-of-secondary-and-tertiary-adrenal-insufficiency-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nieman LK. Clinical manifestations of adrenal insufficiency in adults. UpToDate; son güncelleme 16 Tem 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/clinical-manifestations-of-adrenal-insufficiency-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nieman LK, DeSantis A. Determining the etiology of adrenal insufficiency in adults. UpToDate; son güncelleme 6 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/determining-the-etiology-of-adrenal-insufficiency-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nieman LK, Raff H, DeSantis A. Diagnosis of adrenal insufficiency in adults. UpToDate; son güncelleme 2 Eki 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/diagnosis-of-adrenal-insufficiency-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Nieman LK, DeSantis A. Treatment of adrenal insufficiency in adults. UpToDate; son güncelleme 14 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-adrenal-insufficiency-in-adults",
+        "tur": "uptodate"
+      }
+    ]
   }
 }

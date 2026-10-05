@@ -1,15 +1,12 @@
 {
   "aciklama": "26 Eylul 2026 oncesi yazilmis, meta.kaynaklar tasimayan konular. Liste YALNIZCA KUCULUR: kaynak eklenen konu scripts/kaynak-denetim.cjs --guncelle ile cikar. Yeni konu bu listeye EKLENMEZ, kaynakla girer.",
   "konular": [
-    "endokrinoloji/addison",
     "endokrinoloji/adrenal-bez-hastaliklari",
     "endokrinoloji/adrenal-fizyoloji-ve-steroidogenez",
     "endokrinoloji/adrenal-insidentaloma-yaklasimi",
     "endokrinoloji/adrenal-korteks-hastaliklari",
-    "endokrinoloji/adrenal-kriz",
     "endokrinoloji/adrenal-tuberkuloz",
     "endokrinoloji/adrenal-yetmezlik",
-    "endokrinoloji/adrenal-yetmezlik-tani",
     "endokrinoloji/amenore-ve-kadin-hipogonadizmi",
     "endokrinoloji/arka-hipofiz-bozukluklari-di-ve-siadh",
     "endokrinoloji/diabetes-mellitus-ana",
