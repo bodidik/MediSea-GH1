@@ -6,15 +6,15 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "ESAS — Edmonton Semptom Değerlendirme",
-  description: "ESAS: Edmonton Semptom Değerlendirme — 9 semptom, 0–10 skala. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/esas" },
-  manifest: "/manifest/arac/esas",
+  title: "Abbey Ağrı Skalası — Sözel iletişim kuramayan demans",
+  description: "Abbey Ağrı Skalası: Sözel iletişim kuramayan demans hastasında ağrı — 6 madde, 0–18. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/abbey" },
+  manifest: "/manifest/arac/abbey",
   openGraph: {
     type: "website",
-    title: "ESAS — Edmonton Semptom Değerlendirme",
-    description: "ESAS: Edmonton Semptom Değerlendirme — 9 semptom, 0–10 skala. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/esas",
+    title: "Abbey Ağrı Skalası — Sözel iletişim kuramayan demans",
+    description: "Abbey Ağrı Skalası: Sözel iletişim kuramayan demans hastasında ağrı — 6 madde, 0–18. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/abbey",
   },
 };
 
@@ -23,16 +23,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "ESAS",
-          aciklama: "ESAS: Edmonton Semptom Değerlendirme — 9 semptom, 0–10 skala. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/esas",
+          ad: "Abbey Ağrı Skalası",
+          aciklama: "Abbey Ağrı Skalası: Sözel iletişim kuramayan demans hastasında ağrı — 6 madde, 0–18. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/abbey",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "ESAS", yol: "/tools/esas" },
+          { ad: "Abbey Ağrı Skalası", yol: "/tools/abbey" },
         ])}
       />
       {children}
@@ -47,21 +47,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
                 Palyatif Bakımda Ağrı Yönetimi
               </Link>
             </li>
-            <li>
-              <Link href="/topics/onkoloji/kanser-agrisi-yonetimi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Kanser Ağrısı Yönetimi
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/palyatif/pankreas-agrisinda-tanisal-degerlendirme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Pankreas Kanseri Ağrısında Tanısal Değerlendirme
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/onkoloji/opioid-rotasyonu-2025-konsensus" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs
-              </Link>
-            </li>
           </ul>
         </div>
       </nav>
@@ -71,6 +56,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Palyatif Bakım kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/esas" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ESAS
+              </Link>
+            </li>
             <li>
               <Link href="/tools/karnofsky" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Karnofsky (KPS)
@@ -94,11 +84,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/ppi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Palyatif Prognostik İndeks (PPI)
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/pap-score" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                PaP Score
               </Link>
             </li>
           </ul>

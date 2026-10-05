@@ -257,6 +257,11 @@ const TOOLS_DATABASE = [
       { slug: "ppi", name: "Palyatif Prognostik İndeks (PPI)", desc: "Terminal kanserde hayatta kalma tahmini (<3 / <6 hafta)" },
       { slug: "pap-score", name: "PaP Score", desc: "Palyatif Prognostik Skor — 30 günlük sağkalım (Grup A/B/C)" },
       { slug: "esas", name: "ESAS", desc: "Edmonton Semptom Değerlendirme — 9 semptom, 0–10 skala" },
+      { slug: "opioid-donusum", name: "Opioid Eşdeğer Doz", desc: "Günlük oral morfin eşdeğeri (OME) ve opioid değişiminde hedef + kurtarma dozu" },
+      { slug: "painad", name: "PAINAD", desc: "İleri demansta ağrı — 5 gözlem maddesi, 0–10" },
+      { slug: "abbey", name: "Abbey Ağrı Skalası", desc: "Sözel iletişim kuramayan demans hastasında ağrı — 6 madde, 0–18" },
+      { slug: "rdos", name: "RDOS", desc: "Solunum sıkıntısı gözlem skalası — dispnesini bildiremeyen hasta, 0–16" },
+      { slug: "spict", name: "SPICT", desc: "Destekleyici ve palyatif bakım göstergeleri — tarama listesi" },
     ]
   },
   {

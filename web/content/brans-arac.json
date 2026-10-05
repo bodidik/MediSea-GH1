@@ -966,6 +966,31 @@
     "slug": "esas",
     "name": "ESAS",
     "icon": "🕊️"
+   },
+   {
+    "slug": "opioid-donusum",
+    "name": "Opioid Eşdeğer Doz",
+    "icon": "🕊️"
+   },
+   {
+    "slug": "painad",
+    "name": "PAINAD",
+    "icon": "🕊️"
+   },
+   {
+    "slug": "abbey",
+    "name": "Abbey Ağrı Skalası",
+    "icon": "🕊️"
+   },
+   {
+    "slug": "rdos",
+    "name": "RDOS",
+    "icon": "🕊️"
+   },
+   {
+    "slug": "spict",
+    "name": "SPICT",
+    "icon": "🕊️"
    }
   ]
  },

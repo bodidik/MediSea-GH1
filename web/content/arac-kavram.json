@@ -75,6 +75,11 @@
     "pps": ["palyatif bakım"],
     "ppi": ["palyatif bakım"],
     "pap-score": ["palyatif bakım"],
+    "opioid-donusum": ["opioid rotasyon", "eşdeğer doz", "kanser ağrı", "opioidler"],
+    "painad": ["palyatif bakımda ağrı"],
+    "abbey": ["palyatif bakımda ağrı"],
+    "rdos": ["palyatif bakım"],
+    "spict": ["palyatif bakım"],
     "naloksan-infuzyon": ["opioidler", "opioid zehirlen", "opioid intoksikasyon"],
 
     "vazoaktif-infuzyon": ["kardiyojenik şok", "şok", "akut dekompanse", "akut kalp yetersizli", "hipertansif acil"],

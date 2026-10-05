@@ -10,6 +10,11 @@
   "desc": "Heparine bağlı trombositopeni klinik olasılık skoru (4 kriter, 0–8 puan)"
  },
  {
+  "slug": "abbey",
+  "name": "Abbey Ağrı Skalası",
+  "desc": "Sözel iletişim kuramayan demans hastasında ağrı — 6 madde, 0–18"
+ },
+ {
   "slug": "abc2-hematom",
   "name": "ABC/2 Hematom Hacmi",
   "desc": "İntraserebral kanamada BT'den hacim — ağırlıklı kesit sayımıyla"
@@ -905,6 +910,11 @@
   "desc": "T2DM/prediyabet, gestasyonel diyabet (GDM), akromegali GH süpresyonu"
  },
  {
+  "slug": "opioid-donusum",
+  "name": "Opioid Eşdeğer Doz",
+  "desc": "Günlük oral morfin eşdeğeri (OME) ve opioid değişiminde hedef + kurtarma dozu"
+ },
+ {
   "slug": "orbit",
   "name": "ORBIT Kanama Skoru",
   "desc": "AF'de antikoagülasyon altında majör kanama riski — 0–7"
@@ -923,6 +933,11 @@
   "slug": "padua",
   "name": "Padua Skoru",
   "desc": "Yatan dahili hastalarda VTE profilaksi kararı"
+ },
+ {
+  "slug": "painad",
+  "name": "PAINAD",
+  "desc": "İleri demansta ağrı — 5 gözlem maddesi, 0–10"
  },
  {
   "slug": "pap-score",
@@ -1023,6 +1038,11 @@
   "slug": "rass",
   "name": "RASS",
   "desc": "Richmond Ajitasyon–Sedasyon Skalası — −5/+4, sedasyon hedefi"
+ },
+ {
+  "slug": "rdos",
+  "name": "RDOS",
+  "desc": "Solunum sıkıntısı gözlem skalası — dispnesini bildiremeyen hasta, 0–16"
  },
  {
   "slug": "recist",
@@ -1143,6 +1163,11 @@
   "slug": "spesifik-ige",
   "name": "Spesifik IgE Sınıfı",
   "desc": "ImmunoCAP kU/L değerinden sınıf 0–6 — çoklu allerjen, ≥ 0,35 pozitif"
+ },
+ {
+  "slug": "spict",
+  "name": "SPICT",
+  "desc": "Destekleyici ve palyatif bakım göstergeleri — tarama listesi"
  },
  {
   "slug": "spot-urine",

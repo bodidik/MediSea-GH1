@@ -6,15 +6,15 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Palliative Performance Scale",
-  description: "Palliative Performance Scale: PPS v2 — palyatif bakımda 5 domain fonksiyonel durum. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/pps" },
-  manifest: "/manifest/arac/pps",
+  title: "Opioid Eşdeğer Doz — Günlük oral morfin eşdeğeri (OME)",
+  description: "Opioid Eşdeğer Doz: Günlük oral morfin eşdeğeri (OME) ve opioid değişiminde hedef + kurtarma dozu. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/opioid-donusum" },
+  manifest: "/manifest/arac/opioid-donusum",
   openGraph: {
     type: "website",
-    title: "Palliative Performance Scale",
-    description: "Palliative Performance Scale: PPS v2 — palyatif bakımda 5 domain fonksiyonel durum. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/pps",
+    title: "Opioid Eşdeğer Doz — Günlük oral morfin eşdeğeri (OME)",
+    description: "Opioid Eşdeğer Doz: Günlük oral morfin eşdeğeri (OME) ve opioid değişiminde hedef + kurtarma dozu. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/opioid-donusum",
   },
 };
 
@@ -23,16 +23,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Palliative Performance Scale",
-          aciklama: "Palliative Performance Scale: PPS v2 — palyatif bakımda 5 domain fonksiyonel durum. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/pps",
+          ad: "Opioid Eşdeğer Doz",
+          aciklama: "Opioid Eşdeğer Doz: Günlük oral morfin eşdeğeri (OME) ve opioid değişiminde hedef + kurtarma dozu. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/opioid-donusum",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Palliative Performance Scale", yol: "/tools/pps" },
+          { ad: "Opioid Eşdeğer Doz", yol: "/tools/opioid-donusum" },
         ])}
       />
       {children}
@@ -43,8 +43,23 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/palyatif/palyatif-bakim-ana-sayfa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Palyatif Bakım: Kapsamlı Bir Genel Bakış
+              <Link href="/topics/palyatif/opioid-rotasyonu-ilkeleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/onkoloji/opioid-rotasyonu-2025-konsensus" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/palyatif/noropatik-agrida-koadjuvan-tedavi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Kanser Ağrısında Nöropatik Koadjuvan Tedavi
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/onkoloji/kanser-agrisi-yonetimi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Kanser Ağrısı Yönetimi
               </Link>
             </li>
           </ul>
@@ -56,6 +71,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Palyatif Bakım kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/painad" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                PAINAD
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/pps" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Palliative Performance Scale
+              </Link>
+            </li>
             <li>
               <Link href="/tools/ppi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Palyatif Prognostik İndeks (PPI)
@@ -74,16 +99,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/spict" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 SPICT
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/abbey" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Abbey Ağrı Skalası
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/esas" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ESAS
               </Link>
             </li>
           </ul>

@@ -6,15 +6,15 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Palyatif Prognostik İndeks (PPI) — Terminal kanserde",
-  description: "Palyatif Prognostik İndeks (PPI): Terminal kanserde hayatta kalma tahmini (<3 / <6 hafta). Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/ppi" },
-  manifest: "/manifest/arac/ppi",
+  title: "RDOS — Solunum sıkıntısı gözlem skalası",
+  description: "RDOS: Solunum sıkıntısı gözlem skalası — dispnesini bildiremeyen hasta, 0–16. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/rdos" },
+  manifest: "/manifest/arac/rdos",
   openGraph: {
     type: "website",
-    title: "Palyatif Prognostik İndeks (PPI) — Terminal kanserde",
-    description: "Palyatif Prognostik İndeks (PPI): Terminal kanserde hayatta kalma tahmini (<3 / <6 hafta). Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/ppi",
+    title: "RDOS — Solunum sıkıntısı gözlem skalası",
+    description: "RDOS: Solunum sıkıntısı gözlem skalası — dispnesini bildiremeyen hasta, 0–16. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/rdos",
   },
 };
 
@@ -23,16 +23,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Palyatif Prognostik İndeks (PPI)",
-          aciklama: "Palyatif Prognostik İndeks (PPI): Terminal kanserde hayatta kalma tahmini (<3 / <6 hafta). Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/ppi",
+          ad: "RDOS",
+          aciklama: "RDOS: Solunum sıkıntısı gözlem skalası — dispnesini bildiremeyen hasta, 0–16. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/rdos",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Palyatif Prognostik İndeks (PPI)", yol: "/tools/ppi" },
+          { ad: "RDOS", yol: "/tools/rdos" },
         ])}
       />
       {children}
@@ -47,6 +47,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
                 Palyatif Bakım: Kapsamlı Bir Genel Bakış
               </Link>
             </li>
+            <li>
+              <Link href="/topics/palyatif/palyatif-bakimda-agri-yonetimi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Palyatif Bakımda Ağrı Yönetimi
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
@@ -56,16 +61,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Palyatif Bakım kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/pap-score" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                PaP Score
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/rdos" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                RDOS
-              </Link>
-            </li>
             <li>
               <Link href="/tools/spict" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 SPICT
@@ -84,6 +79,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/karnofsky" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Karnofsky (KPS)
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/opioid-donusum" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Opioid Eşdeğer Doz
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/painad" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                PAINAD
               </Link>
             </li>
           </ul>
