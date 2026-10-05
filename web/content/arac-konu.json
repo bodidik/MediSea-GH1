@@ -2460,6 +2460,20 @@
         "kaynak": "kavram"
       }
     ],
+    "endokrinoloji/santral-adrenal-yetmezlik": [
+      {
+        "slug": "acth-stim",
+        "name": "ACTH Stimülasyon Testi",
+        "eslesen": "adrenal yetmezli",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "steroid-dose",
+        "name": "Steroid Eşdeğer Doz",
+        "eslesen": "adrenal yetmezli",
+        "kaynak": "kavram"
+      }
+    ],
     "endokrinoloji/santral-hipotiroidizm": [
       {
         "slug": "tft",
@@ -7394,11 +7408,11 @@
     ]
   },
   "olcum": {
-    "konu": 472,
+    "konu": 473,
     "arac": 262,
-    "araciOlanKonu": 327,
+    "araciOlanKonu": 328,
     "konusuOlanArac": 156,
-    "bag": 607,
-    "kavramBag": 441
+    "bag": 609,
+    "kavramBag": 443
   }
 }

@@ -113,6 +113,11 @@
    "brans": "endokrinoloji",
    "slug": "adrenal-tuberkuloz",
    "baslik": "Adrenal Tüberküloz (Tuberculous Adrenalitis)"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "santral-adrenal-yetmezlik",
+   "baslik": "Santral Adrenal Yetmezlik (Sekonder ve Tersiyer)"
   }
  ],
  "endokrinoloji/akromegali-ve-gigantizm": [
@@ -900,6 +905,11 @@
  "endokrinoloji/hipofiz-yetmezligi-klinik-tablo": [
   {
    "brans": "endokrinoloji",
+   "slug": "santral-adrenal-yetmezlik",
+   "baslik": "Santral Adrenal Yetmezlik (Sekonder ve Tersiyer)"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "hipofiz-yetmezligi-etiyoloji-ve-patofizyoloji",
    "baslik": "Hipofiz Yetmezliği: Etiyoloji ve Patofizyoloji"
   },
@@ -922,11 +932,6 @@
    "brans": "endokrinoloji",
    "slug": "hipofiz-yetmezligi-ve-enfeksiyonlar",
    "baslik": "Hipofiz Yetmezliği ve Enfeksiyonlar"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
-   "baslik": "Hipofiz Hastalıkları"
   }
  ],
  "endokrinoloji/hipofiz-yetmezligi-ozel-klinik-durumlar": [
@@ -1038,6 +1043,11 @@
   }
  ],
  "endokrinoloji/hipopituitarizm-ve-sheehan-sendromu": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "santral-adrenal-yetmezlik",
+   "baslik": "Santral Adrenal Yetmezlik (Sekonder ve Tersiyer)"
+  },
   {
    "brans": "endokrinoloji",
    "slug": "hipofiz-yetmezligi",
@@ -1852,6 +1862,18 @@
    "brans": "endokrinoloji",
    "slug": "santral-hipotiroidizm",
    "baslik": "Santral Hipotiroidizm"
+  }
+ ],
+ "endokrinoloji/santral-adrenal-yetmezlik": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipofiz-yetmezligi-klinik-tablo",
+   "baslik": "Hipofiz Yetmezliği: Klinik Tablo ve Hormonal Kayıp Hiyerarşisi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hipopituitarizm-ve-sheehan-sendromu",
+   "baslik": "Hipopitüitarizm ve Sheehan Sendromu"
   }
  ],
  "endokrinoloji/santral-hipotiroidizm": [
