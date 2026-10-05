@@ -1,6 +1,7 @@
 {
   "title": "Adrenal Yetmezlik (Addison ve Santral)",
   "meta": {
+    "kaynakca": "adrenal-yetmezlik",
     "updatedAt": "15 Mar 2026",
     "tags": ["Endokrin", "Kortizol", "Addison", "Adrenal Kriz"],
     "parent": "adrenal-korteks-hastaliklari",
