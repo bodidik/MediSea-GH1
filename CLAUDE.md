@@ -358,6 +358,14 @@ sessizce kırar; doğru cevabı olmayan bir soru, kullanıcıya konuyu yanlış
 hedef yeniden adlandırılmışsa yönlendirme ekle, hedef gerçekten yoksa
 içerikteki bağlantıyı kaldır.
 
+**Kavşak terimleri (5 Eki 2026)** — konu metnindeki hastalık adı o konuya
+bağlanır (`app/lib/kavsak.ts`, render anında; içerik dosyasına dokunmaz).
+Sözlük ELLE: `content/kavsak-terim.json` (terim kökü → `branş/konu`;
+"-k" ile biten kök "ğ"yi de tutar, küçük harfli terim ek alır, BÜYÜK harfli
+kısaltma birebir). Sayfa başına her hedef YALNIZ ilk geçişte; kendine bağ
+yok; `<a>`/başlık/`<pre>` içine girmez. Gizli/silinmiş hedef sayfada sessizce
+atlanır, `link-denetim` onu CI'da düşürür (SLE konusu gizli — eklenemedi).
+
 `ilgili-index.cjs` akrabalığı ortak etiket SAYISINDAN değil NADİRLİĞİNDEN
 çıkarır. Klinik niteleyiciler (`akut`, `acil`, `tanı`, `tedavi`…) bilerek
 elenir: elenmeden önce "Akut Koroner Sendromlar" ile "Safra Kesesi

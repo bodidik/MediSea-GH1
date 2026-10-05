@@ -392,6 +392,31 @@ async function main() {
   console.log(`içerikteki iç bağlantı: ${toplam}${yonlendirilmis ? ` (${yonlendirilmis}'i yönlendirmeyle çalışıyor)` : ''}`);
   console.log(`kendi alanında duran adres: ${alanToplam}${alanKirik.length ? ` (${alanKirik.length}'i kırık)` : ''}`);
   console.log(`kaynakta düz yazılmış adres: ${kaynakToplam}${kaynakKirik.length ? ` (${kaynakKirik.length}'i kırık)` : ''}`);
+  /* KAVŞAK SÖZLÜĞÜ (content/kavsak-terim.json → app/lib/kavsak.ts).
+   * Sayfa görünür olmayan hedefe bağ KURMUYOR — yani bayat bir kayıt
+   * ekranda kırık bağ değil, SESSİZ bir eksik olur. Sessizliği burada
+   * kapı yapıyoruz: hedef dosya yoksa ya da gizliyse düşer. */
+  const kavsakYolu = path.join(KOK, 'content', 'kavsak-terim.json');
+  if (fs.existsSync(kavsakYolu)) {
+    const sozluk = JSON.parse(fs.readFileSync(kavsakYolu, 'utf-8'));
+    let kavsakSayisi = 0;
+    for (const [terim, hedef] of Object.entries(sozluk)) {
+      kavsakSayisi++;
+      const dosya = path.join(CANONICAL, ...String(hedef).split('/')) + '.json';
+      let sebep = null;
+      if (!fs.existsSync(dosya)) sebep = 'konu dosyası yok';
+      else {
+        try {
+          if (JSON.parse(fs.readFileSync(dosya, 'utf-8'))?.meta?.hidden === true) sebep = 'konu gizli';
+        } catch {
+          sebep = 'konu dosyası ayrıştırılamadı';
+        }
+      }
+      if (sebep) kirik.push({ alan: 'kavşak', tur: sebep, kaynak: `kavsak-terim.json "${terim}"`, hedef });
+    }
+    console.log(`kavşak sözlüğü: ${kavsakSayisi} terim denetlendi.`);
+  }
+
   if (kaynakKirik.length) {
     console.log('');
     console.log(KAYNAK_UYARI

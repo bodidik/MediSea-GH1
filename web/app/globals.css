@@ -1235,3 +1235,15 @@ html {
     align-self: flex-start;
   }
 }
+
+/* Kavşak terimi bağı (app/lib/kavsak.ts): metin içi konu bağlantısı.
+   Okumayı bölmesin diye noktalı alt çizgi; üzerine gelince düz. */
+.kavsak-bag {
+  color: #1d4ed8;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+}
+.kavsak-bag:hover,
+.kavsak-bag:focus-visible {
+  text-decoration-style: solid;
+}

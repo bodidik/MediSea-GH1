@@ -17,6 +17,7 @@ import { DalgaCizgisi, DumenSimgesi } from "@/app/components/DenizSusu";
 import { gorunurlukRozeti } from "@/app/lib/gorunurluk";
 import { premiumBransSlug } from "@/lib/premium-brans";
 import { kisaltmaAc } from "@/app/lib/kisaltma";
+import { kavsakBagla } from "@/app/lib/kavsak";
 import { getSpecialty } from "@/app/lib/specialties";
 import ilgiliIndex from "@/content/ilgili-index.json";
 import aracKonuIndex from "@/content/arac-konu.json";
@@ -297,6 +298,9 @@ export default async function TopicDetailPage({
    */
   const gorulenKisaltmalar = new Set<string>();
 
+  /** Kavşak terimi bağları (app/lib/kavsak.ts) — aynı "sayfa başına ilk geçiş" kuralı, hedef bazında. */
+  const gorulenKavsaklar = new Set<string>();
+
   /**
    * Tablo bölgelerinin adları SAYFA ömrü boyunca benzersiz olmalı: aynı ad
    * iki landmark'a verilirse ekran okuyucu ikisini ayırt edemiyor. Küme
@@ -328,7 +332,11 @@ export default async function TopicDetailPage({
             basliklariDuzenle(
               // htmlKapat: kapatılmamış biçim etiketi kabın DIŞINA sızmasın
               // (gerekçe ve ölçüm lib/icerik-html.ts). Metni değiştirmez.
-              kisaltmaAc(htmlKapat(s.text || s.html || ""), gorulenKisaltmalar)
+              kavsakBagla(
+                kisaltmaAc(htmlKapat(s.text || s.html || ""), gorulenKisaltmalar),
+                gorulenKavsaklar,
+                `${slug}/${topicSlug}`
+              )
             ),
             {
               bolumBasligi: s.heading || s.title || "",
