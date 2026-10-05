@@ -364,7 +364,9 @@ Sözlük ELLE: `content/kavsak-terim.json` (terim kökü → `branş/konu`;
 "-k" ile biten kök "ğ"yi de tutar, küçük harfli terim ek alır, BÜYÜK harfli
 kısaltma birebir). Sayfa başına her hedef YALNIZ ilk geçişte; kendine bağ
 yok; `<a>`/başlık/`<pre>` içine girmez. Gizli/silinmiş hedef sayfada sessizce
-atlanır, `link-denetim` onu CI'da düşürür (SLE konusu gizli — eklenemedi).
+atlanır ve yayımlanınca kendiliğinden bağlanır (SLE böyle bekliyor); var
+olmayan hedefi `link-denetim` CI'da düşürür. Yeni konu metni bağları kendiliğinden
+alır; yeni konuyu HEDEF yapmak için sözlüğe satır eklenir. Premium: KAPSAM DIŞI.
 
 `ilgili-index.cjs` akrabalığı ortak etiket SAYISINDAN değil NADİRLİĞİNDEN
 çıkarır. Klinik niteleyiciler (`akut`, `acil`, `tanı`, `tedavi`…) bilerek

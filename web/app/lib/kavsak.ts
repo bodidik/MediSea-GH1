@@ -13,7 +13,8 @@
  *  - Sayfanın kendisine bağ verilmez.
  *  - Hedef görünür bir konu değilse (gizli, silinmiş, yeniden adlandırılmış)
  *    bağ KURULMAZ — `baslik-index.json` yalnız görünür konuları taşır.
- *    Bayat sözlük kaydını `link-denetim` CI'da düşürür.
+ *    Gizli hedef sözlükte BEKLER; konu yayımlanınca bağ kendiliğinden çıkar.
+ *    Var olmayan hedefi `link-denetim` CI'da düşürür.
  *  - `<a>`, başlık, `<pre>` (ASCII şema), `<code>`, `<button>`, `<summary>`
  *    içine girilmez.
  *  - Bağ yalnız etiket EKLER, metni değiştirmez — vurgu ofsetleri
