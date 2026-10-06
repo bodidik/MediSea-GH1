@@ -44,7 +44,8 @@
   "fosfomisin": "enfeksiyon/fosfomisin-klinik-rehber",
   "dalbavansin": "enfeksiyon/dalbavansin-derleme",
   "prokalsitonin": "enfeksiyon/prokalsitonin-genel",
-  "çölyak": "gastroenteroloji/colyak",
+  "çölyak hastalık": "gastroenteroloji/colyak",
+  "gluten enteropati": "gastroenteroloji/colyak",
   "lenfödem": "genel-dahiliye/lenfodem",
   "lenfadenopati": "genel-dahiliye/lenfadenopati-yaklasimi",
   "esansiyel trombositemi": "hematoloji/esansiyel-trombositoz",
@@ -62,5 +63,8 @@
   "febril nötropeni": "onkoloji/febril-notropeni-konu",
   "pankreas kanser": "onkoloji/pankreas-kanseri-ana-sayfa",
   "KBH": "nefroloji/kronik-bobrek-hastaligi",
-  "ADPKD": "nefroloji/polikistik-bobrek-hastaligi-pkd"
+  "ADPKD": "nefroloji/polikistik-bobrek-hastaligi-pkd",
+  "opioid toleransı": "palyatif/opioid-toleransi-mekanizmalari",
+  "opioid rotasyonu": "palyatif/opioid-rotasyonu-ilkeleri",
+  "opioid kaynaklı hiperaljezi": "palyatif/oih-ve-tolerans-ayirici-tani"
 }
