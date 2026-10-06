@@ -1,0 +1,764 @@
+{
+  "id": "quiz-onko-agri-001",
+  "baslik": "Kanser Ağrısı Yönetimi — Kapsamlı Soru Seti",
+  "branch": "onkoloji",
+  "topic": "agri-yonetimi",
+  "sorular": [
+    {
+      "id": "s1",
+      "metin": "Metastatik meme kanseri nedeniyle kronik opioid tedavisi alan ve tolere edilemeyen opioid yan etkileri gelişen 58 yaşında bir kadın hasta buprenorfine dönüştürülmek isteniyor. Hastanın günlük oral morfin eşdeğer dozu (MEDD) 120 mg/gün.\n\nNCCN 2025 Erişkin Kanser Ağrısı Kılavuzuna göre buprenorfine bağlı presipite yoksunluğu önlemek ve güvenli geçiş sağlamak için ilk basamak yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "Tam agonist opioid aniden kesilmeli ve 12 saat sonra 20 mcg/saat transdermal buprenorfin bant uygulanmalıdır.",
+        "B": "Mevcut opioid dozu oral MEDD ≤30 mg/gün düzeyine düşürüldükten sonra buprenorfin başlanmalıdır.",
+        "C": "Mevcut opioid dozu değiştirilmeden doğrudan 900 mcg/12 saat bukkal buprenorfin film tedaviye eklenmelidir.",
+        "D": "Yalnızca buprenorfin-nalokson kombinasyonu reçete edilmeli ve ilk gün 16 mg sublingual yükleme yapılmalıdır.",
+        "E": "Opioid tedavisi 72 saat tamamen kesilmeli (washout), nalokson provokasyon testinden sonra buprenorfin başlanmalıdır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Tam agonistten buprenorfine geçişte presipite yoksunluğu önlemek için mevcut opioid önce oral MEDD ≤30 mg/gün düzeyine (yalnızca kısa etkili formlarla) indirilir, sonra buprenorfin başlanır.",
+      "aciklama_detay": "NCCN 2025 Erişkin Kanser Ağrısı Kılavuzuna göre opioid-toleran hastada tam agonistten buprenorfine geçerken presipite yoksunluk riskini azaltmak için mevcut opioid dozu, buprenorfin başlamadan önce oral MEDD ≤30 mg/gün düzeyine indirilmelidir. Bu dönemde yalnızca kısa etkili (immediate-release) formlar kullanılır. Kronik tam agonist alan hastada indüksiyondan önce 24 saati kapsayan uzun etkili opioidler kesilmeli ya da deneyimli uzmanlar düşük doz başlangıç (mikro-indüksiyon) stratejisi uygulamalıdır.\n\nNeden? Buprenorfin mü reseptörlerinde yüksek afiniteli ama düşük intrinsik aktiviteli bir parsiyel agonisttir ve reseptöre morfinden çok daha yüksek afiniteyle bağlanır. Tam agonist alan hastada opioid aniden kesilip doğrudan yüksek doz buprenorfine geçilirse ('stop-start'), buprenorfin tam agonisti reseptörden hızla söker. Sonuç akut presipite yoksunluk krizi ve şiddetli ağrı alevlenmesidir.\n\nNCCN 2025 / MASCC kademeli dönüşüm şeması (sitedeki Buprenorfin Rotasyonu sayfası):\n• MEDD <30 mg/gün: transdermal 5 mcg/saat ya da bukkal 75 mcg günde 1–2 kez.\n• MEDD 30–80 mg/gün: opioid yaklaşık 7 günde ≤30 mg/gün düzeyine azaltılır, bir sonraki doz zamanında 10 mcg/saat bant başlanır; bukkal karşılığı 150 mcg 12 saatte bir.\n• MEDD 81–160 mg/gün (bu hasta, 120 mg): transdermal formla yeterli analjezi sağlanamayabilir; bukkal karşılığı 300 mcg 12 saatte bir.\n• MEDD >160 mg/gün: transdermal bant önerilmez; alternatif analjezik ya da ağrı/palyatif bakım konsültasyonu düşünülür.\nQTc uyarısı nedeniyle transdermal formda 20 mcg/saat, bukkal formda 900 mcg/12 saat aşılmamalıdır.\n\nMikro-indüksiyon (Bern yöntemi), mevcut opioidin kesilmesinin ağrı krizi ya da yoksunluk riski taşıdığı hastalarda tercih edilir. Tam agonist kesilmeden çok düşük doz buprenorfin eklenir ve günler içinde artırılır; terapötik düzeye ulaşınca tam agonist kesilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Ani kesip doğrudan buprenorfine geçmek ('stop-start') presipite yoksunluk ve ağrı alevlenmesi riski taşır. Ayrıca 20 mcg/saat transdermal formun önerilen en yüksek dozudur, başlangıç dozu değildir.",
+        "B": "DOĞRU — NCCN 2025'e göre geçişten önce opioid dozu oral MEDD ≤30 mg/gün düzeyine (yalnızca kısa etkili formlar) indirilir.",
+        "C": "YANLIŞ — Mevcut tam agonist dozu sürerken buprenorfin eklemek presipite yoksunluğu tetikleyebilir. Ayrıca 900 mcg/12 saat bukkal formun aşılmaması gereken üst sınırıdır, başlangıç dozu değildir.",
+        "D": "YANLIŞ — Kılavuzun ilk basamağı doz azaltımıdır. Tam agonist alan hastaya doğrudan yüksek doz buprenorfin presipite yoksunluk riski taşır.",
+        "E": "YANLIŞ — Kılavuzda 72 saatlik washout ya da nalokson provokasyonu yer almaz. İlk basamak MEDD ≤30 mg/gün düzeyine azaltım ya da deneyimli ellerde mikro-indüksiyondur."
+      },
+      "etiketler": [
+        "onkoloji",
+        "kanser ağrısı",
+        "buprenorfin",
+        "presipite yoksunluk",
+        "opioid rotasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "NCCN Clinical Practice Guidelines in Oncology: Adult Cancer Pain, Version 2.2025"
+    },
+    {
+      "id": "s2",
+      "metin": "2025 yılında MASCC, ASCO, AAHPM, HPNA ve NICSO ortaklığıyla yayımlanan ilk uluslararası Kanser Hastalarında Opioid Dönüşüm Kılavuzu paneli, geleneksel dönüşüm tabloları ve hesaplama ilkeleri hakkında önemli bir kavramsal uzlaşıya varmıştır.\n\nPanele göre önerilen dönüşüm oranlarının uygulanmasıyla ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "Kılavuzdaki dönüşüm oranları mutlak 'eş-analjezik' değerlerdir; hesaplanan yeni dozda bireysel değişikliğe gerek yoktur.",
+        "B": "Rotasyon sırasında çapraz tolerans kaybı nedeniyle tüm hastalarda otomatik %50 ampirik doz indirimi zorunludur.",
+        "C": "Önerilen dönüşüm oranları eş-analjezik diye adlandırılmamalıdır; toksisiteyi ve yetersiz dozu önleyen güvenli bir başlangıç dozu parametresi kabul edilip kişiselleştirilmiş titrasyon yapılmalıdır.",
+        "D": "Oral morfinden oral oksikodona geçişte kılavuzun uzlaştığı standart dönüşüm oranı 1:5'tir.",
+        "E": "Parenteral yoldan subkutan yola geçişte doz otomatik olarak 3 katına çıkarılmalıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "2025 uluslararası kılavuzu dönüşüm oranlarının 'eş-analjezik' olarak adlandırılmamasını, güvenli başlangıç dozu sağlayan parametreler olarak görülmesini ve ardından bireysel titrasyon yapılmasını vurgular.",
+      "aciklama_detay": "2025 MASCC-ASCO-AAHPM-HPNA-NICSO kılavuz paneli, önerilen dönüşüm oranlarının 'doğrudan eş-analjezik' olarak adlandırılmaması gerektiğini vurgulamıştır. Bu oranlar yalnızca yoksunluk ve toksisite (aşırı doz ya da yetersiz doz) riskini sınırlayan güvenli bir başlangıç dozu parametresi sunar. Hedeflenen analjeziye ulaşmak için hasta bazında bireyselleştirilmiş takip ve titrasyon şarttır.\n\nPanel, çapraz tolerans kaybı gerekçesiyle yapılan klasik otomatik %25–50'lik ampirik doz azaltımını da desteklememektedir. Gerekçe, bu azaltımın yetersiz tedaviye, ağrı krizine ve yoksunluğa yol açabilmesidir. Bireysel klinik değerlendirme öne çıkarılmıştır.\n\nPanelde en az %75 uzlaşıyla kabul edilen oranlardan bazıları (sitedeki 2025 Konsensüs sayfası):\n• Oral morfin → oral oksikodon: 1,5:1 (uzlaşı %89,4).\n• Oral morfin → oral hidromorfon: 5:1.\n• Subkutan → intravenöz (aynı opioid): 1:1 (uzlaşı %91,6).\n\nDönüşüm sonrası izlem: Kısa etkili opioidlerde kararlı duruma 24–48 saatte ulaşılır; bu süreden önce sabit doz artışı yapılmaz. Hasta hem yetersiz doz (huzursuzluk, uykusuzluk) hem de toksisite (sedasyon, miyoklonus, deliryum, halüsinasyon) açısından izlenir. Kırılma ağrısı için kurtarma dozu günlük MEDD'nin %10–15'idir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Panel oranların doğrudan eş-analjezik sayılmaması gerektiğini vurgular. Hesaplanan doz bir başlangıç noktasıdır ve titrasyonla bireyselleştirilir.",
+        "B": "YANLIŞ — Rutin %25–50'lik ampirik azaltım, yetersiz tedavi ve ağrı krizi/yoksunluk riski nedeniyle desteklenmemektedir.",
+        "C": "DOĞRU — Oranlar güvenli başlangıç dozu parametresidir; ardından kişiselleştirilmiş titrasyon gerekir.",
+        "D": "YANLIŞ — Uzlaşılan oral morfin : oral oksikodon oranı 1,5:1'dir.",
+        "E": "YANLIŞ — Panelde subkutan ile intravenöz yol (aynı opioid) arasındaki oran 1:1'dir; dozu otomatik 3 katına çıkarma kuralı yoktur."
+      },
+      "etiketler": [
+        "onkoloji",
+        "kanser ağrısı",
+        "opioid dönüşümü",
+        "eş-analjezik",
+        "titrasyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "MASCC-ASCO-AAHPM-HPNA-NICSO Guideline: Opioid Conversion in Adults With Cancer (2025)"
+    },
+    {
+      "id": "s3",
+      "metin": "Rezeke edilemeyen evre IV pankreas başı kanseri ve şiddetli, kuşak tarzı üst abdominal/sırt ağrısı olan 62 yaşında erkek hastaya EUS rehberliğinde girişimsel ağrı tedavisi planlanıyor.\n\nEUS rehberliğinde çölyak pleksus ve ganglion nöroliz tekniklerinin (EUS-CPN / EUS-CGN) etkinliği, zamanlaması ve güvenliği ile ilgili hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "EUS-CPN, hastaların %50–80'inde yaklaşık 2–3 ay süren belirgin analjezik rahatlama sağlar.",
+        "B": "Ağrının erken döneminde (tanısal EUS sırasında) yapılan EUS-CPN, opioid yetersizliğini beklemeye kıyasla daha iyi ağrı kontrolü ve daha az opioid tüketimi sağlar.",
+        "C": "EUS-CPN sonrası geçici diyare ve hipotansiyon sempatik blokajın beklenen fizyolojik sonuçlarıdır; hipotansiyon IV hidrasyonla yönetilir.",
+        "D": "EUS-CGN, EUS-CPN ile kombine edildiğinde toplam sağkalımı istatistiksel olarak anlamlı düzeyde uzatır.",
+        "E": "Çölyak pleksus nörolizinde nöral yıkım için sıklıkla lokal anestezikle birlikte mutlak alkol (%70–100) enjekte edilir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Çölyak ganglion nörolizinin (EUS-CGN) eklenmesi ya da tek başına uygulanması sağkalımı uzatmaz; bazı çalışmalarda daha kısa sağkalımla ilişkili bulunmuştur (HR 1,49).",
+      "aciklama_detay": "Klinik çalışmalarda ve randomize araştırmalarda, çölyak ganglion nörolizinin (EUS-CGN) çölyak pleksus nörolizine (EUS-CPN) eklenmesinin ya da tek başına uygulanmasının EUS-CPN'ye kıyasla sağkalımı uzatmadığı gösterilmiştir. Bazı çalışmalarda CGN daha kısa sağkalım süreleriyle ilişkili bulunmuştur (HR 1,49).\n\nDiğer ifadeler doğrudur:\n• Etkinlik: EUS-CPN hastaların %50–80'inde 2–3 ay süreyle etkili ağrı kontrolü sağlar.\n• Zamanlama: Erken dönemde uygulanması, opioid yetersizliğini beklemeye göre opioid tüketimini azaltmada daha üstündür.\n• Güvenlik: Hipotansiyon ve diyare sempatik blokaja bağlı, sık görülen ve yönetilebilir yan etkilerdir.\n• Ajan: Nöral yıkım için sıklıkla lokal anestezikle birlikte mutlak alkol kullanılır.\n\nSitedeki kanser ağrısı sayfalarında da bu yöntem WHO 4. basamak girişimsel tedaviler arasında yer alır. Pankreas, mide ve üst abdominal organ tümörlerine bağlı viseral ağrıda EUS, BT veya skopi rehberliğinde alkol/fenol ile yapılan çölyak pleksus/splanknik nörolizi, ağrı skorlarını ve sistemik opioid ihtiyacını belirgin düzeyde düşürür.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU İFADE — EUS-CPN hastaların %50–80'inde 2–3 ay süreyle etkili ağrı kontrolü sağlar.",
+        "B": "DOĞRU İFADE — Erken dönemde uygulanan EUS-CPN, opioid tüketimini azaltmada daha üstündür.",
+        "C": "DOĞRU İFADE — Hipotansiyon ve diyare sempatik blokaja bağlı sık ve yönetilebilir yan etkilerdir.",
+        "D": "YANLIŞ İFADE (cevap) — CGN sağkalımı uzatmaz; bazı çalışmalarda daha kısa sağkalımla ilişkili bulunmuştur (HR 1,49).",
+        "E": "DOĞRU İFADE — Nörolitik ajan olarak sıklıkla lokal anestezikle birlikte mutlak alkol kullanılır."
+      },
+      "etiketler": [
+        "onkoloji",
+        "pankreas kanseri",
+        "çölyak pleksus nörolizi",
+        "EUS",
+        "girişimsel ağrı tedavisi"
+      ],
+      "zorluk": "zor",
+      "kaynak": "UpToDate — Endoscopic ultrasound-guided celiac plexus interventions for pain related to pancreatic disease"
+    },
+    {
+      "id": "s4",
+      "metin": "Küratif meme kanseri cerrahisi ve adjuvan radyoterapi sonrası 3 yıldır hastalıksız izlenen 45 yaşında kadın hastada, göğüs ön duvarı ve aksillada medikal tedaviye yanıtsız, dirençli ve fokal nöropatik ağrı (post-mastektomi ağrı sendromu, PMPS) var.\n\nUzun yaşam beklentisi olan kanser sağkalanlarında ağrı yönetimi ilkeleri düşünüldüğünde güncel nöroşirürjik yaklaşım açısından hangisi en uygundur?",
+      "secenekler": {
+        "A": "Kalıcı motor defisit riskine rağmen kontralateral analjezi için perkütan servikal kordotomi uygulanmalıdır.",
+        "B": "Ağrı iletimini kalıcı olarak kesmek için posterior dorsal kök rezeksiyonu (dorsal rizotomi) yapılmalıdır.",
+        "C": "Geri dönüşümsüz nöroablatif cerrahiler yerine fokal nöropatik tabloyu hedefleyen periferik sinir stimülasyonu (PNS) veya spinal kord stimülasyonu (SCS) gibi nöromodülasyon teknikleri tercih edilmelidir.",
+        "D": "Ağrının affektif bileşenini ablate etmek için derhal singulotomi yapılmalıdır.",
+        "E": "Sağkalanlarda tüm girişimsel ve nöromodülatör yöntemler kontrendikedir; yalnızca yüksek doz sistemik opioid kullanılmalıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Uzun yaşam beklentili sağkalanlarda geri dönüşümsüz nöroablatif girişimler yerine geri dönüşümlü nöromodülasyon (PNS, SCS) tercih edilir.",
+      "aciklama_detay": "Uzun yaşam beklentisine sahip kanser sağkalanlarında kordotomi ya da dorsal kök lezyonlaması gibi geri dönüşümsüz nöroablatif cerrahiler kalıcı nörolojik defisit ve doku hasarı riski taşır. Bu nedenle ilk planda tercih edilmezler. Güncel nöroşirürjik yaklaşımda, fonksiyonel iyileşme sağlayan ve geri dönüşümlü olan periferik sinir stimülasyonu (PNS) ya da spinal kord stimülasyonu (SCS) gibi nöromodülasyon yöntemleri ön plana çıkmaktadır.\n\nSitedeki kanser ağrısı sayfaları da aynı ayrımı yapar:\n• Post-cerrahi nöropatik ağrılarda SCS kullanılır.\n• Perkütan kordotomi, unilateral refrakter gövde/ekstremite ağrısında (örneğin mezotelyoma) uygulanabilen ablatif bir seçenektir. DREZ lezyonlama da lokalize refrakter ağrılarda değerlendirilir.\n• Sistemik ilaçlara dirençli yaygın ağrıda intratekal ilaç pompaları (morfin, bupivakain, klonidin, zikonotid) seçenektir.\n\nSağkalanlarda opioid kullanımına da sınırlı yaklaşılır. Remisyondaki ya da stabil seyreden sağkalanlarda opioid dozu kademeli azaltılır; yoksunluk sendromu ve ağrı nüksü yakından izlenir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Kordotomi geri dönüşümsüzdür ve kalıcı defisit riski taşır. Unilateral refrakter ağrıda (ör. mezotelyoma) düşünülür; uzun yaşam beklentili sağkalanda ilk tercih değildir.",
+        "B": "YANLIŞ — Dorsal kök lezyonlaması geri dönüşümsüz nöroablatif bir girişimdir ve sağkalanda ilk planda tercih edilmez.",
+        "C": "DOĞRU — Geri dönüşümlü ve fonksiyonel iyileşme sağlayan nöromodülasyon (PNS, SCS) ön plandadır.",
+        "D": "YANLIŞ — Singulotomi geri dönüşümsüz ablatif bir girişimdir; fokal PMPS'de yeri yoktur.",
+        "E": "YANLIŞ — Nöromodülasyon sağkalanlarda kontrendike değil, öne çıkan yaklaşımdır. Sağkalanlarda opioid dozu ise artırılmaz, kademeli olarak azaltılır."
+      },
+      "etiketler": [
+        "onkoloji",
+        "kanser sağkalanı",
+        "post-mastektomi ağrı sendromu",
+        "nöromodülasyon",
+        "nöroşirürji"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Neurosurgical Techniques for Chronic Pain in Adult Cancer Survivors — Stereotact Funct Neurosurg 2025"
+    },
+    {
+      "id": "s5",
+      "metin": "İleri evre kanser hastalarında opioid yanıtındaki bireysel farkları inceleyen farmakogenetik çalışmalarda, mü-opioid reseptör geni OPRM1 üzerindeki en sık çalışılan varyant A118G polimorfizmidir (rs1799971).\n\nBu polimorfizm ve klinik yansımaları ile ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "Adenin yerine guanin gelmesi (Asn40Asp), mü-opioid reseptörünün hücre dışı N-terminal bölgesinde bir N-glikozilasyon alanının kaybına yol açar.",
+        "B": "G-alleli taşıyıcılarında metadon dozu ve analjezik yanıt tüm etnik gruplarda (Avrupa ve Doğu Asya) aynıdır.",
+        "C": "Çin popülasyonundaki çalışmalarda G-alleli (AG/GG) taşıyan hastaların opioid doz ihtiyacı AA genotipine göre anlamlı derecede daha düşüktür.",
+        "D": "A118G yalnızca CYP3A4 aktivitesini değiştirerek farmakokinetik düzeyde etki eder.",
+        "E": "OPRM1 yalnızca karaciğer parankim hücrelerinde eksprese edilir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "A118G (Asn40Asp) hücre dışı N-terminal bölgede bir N-glikozilasyon alanını ortadan kaldırır. Çin popülasyonunda G-alleli daha YÜKSEK opioid ihtiyacıyla ilişkilidir; Avrupa kökenlilerde ilişki tutarsızdır.",
+      "aciklama_detay": "OPRM1 geninin ekzon 1'indeki A118G polimorfizmi (rs1799971), guanin ikamesi sonucu Asn40Asp amino asit değişimine ve hücre dışı N-terminal bölgede bir N-glikozilasyon alanının kaybına yol açar. Değişiklik ilacın düzeyini etkileyen bir enzimde değil, mü-opioid reseptörünün kendisindedir.\n\nEtnik farklılıklar belirgindir. Çin popülasyonundaki çalışmalarda G-alleli taşıyıcıları (AG/GG) daha yüksek opioid doz ihtiyacı göstermiştir. Avrupa kökenli popülasyonlarda ise bu ilişki değişken ya da anlamsız bulunmuştur. Bu nedenle bir popülasyonda elde edilen farmakogenetik bulgu diğerine doğrudan genellenemez.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Asn40Asp değişimi hücre dışı N-terminal bölgede bir N-glikozilasyon alanının kaybına yol açar.",
+        "B": "YANLIŞ — Etnik farklılık belirgindir: Çin popülasyonunda ilişki gösterilmiş, Avrupa kökenlilerde değişken ya da anlamsız bulunmuştur.",
+        "C": "YANLIŞ — Tam tersi: Çin popülasyonunda G-alleli taşıyıcılarının opioid ihtiyacı daha YÜKSEK bulunmuştur.",
+        "D": "YANLIŞ — A118G bir enzim geninde değil, mü-opioid reseptör geninde (OPRM1) yer alan bir varyanttır.",
+        "E": "YANLIŞ — OPRM1 mü-opioid reseptörünü kodlar; reseptör yalnızca karaciğere özgü değildir."
+      },
+      "etiketler": [
+        "onkoloji",
+        "farmakogenetik",
+        "OPRM1",
+        "A118G",
+        "metadon"
+      ],
+      "zorluk": "zor",
+      "kaynak": "The effects of OPRM1 118A>G on methadone response in pain management in advanced cancer at end of life — Scientific Reports"
+    },
+    {
+      "id": "s6",
+      "metin": "Aktif kemoterapi gören evre IV kolon kanserli 64 yaşında erkek hastaya orta-şiddetli kanser ağrısı nedeniyle ilk kez oral uzun etkili morfin (30 mg/gün) başlanması planlanıyor.\n\nASCO kılavuzuna göre opioid ilişkili konstipasyonun (OIC) önlenmesi, izlenmesi ve tedavisi ile ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "Opioid başlanırken laksatif profilaksisine gerek yoktur; yalnızca 3 günden uzun süren konstipasyon gelişirse laksatif eklenmelidir.",
+        "B": "OIC önlenmesinde tek başına stimülan laksatif (senna) etkilidir; dokuzat (dışkı yumuşatıcı) eklenmesinin senna'ya ek bir fayda sağlamadığı gösterilmiştir.",
+        "C": "OIC tedavisinde birinci basamakta doğrudan sistemik nalokson (oral 40 mg/gün) başlanmalı ve tüm laksatifler kesilmelidir.",
+        "D": "Periferik etkili mü-opioid reseptör antagonistleri (PAMORA; naldemedin, metilnaltrekson), konvansiyonel laksatiflere yanıt veren hafif konstipasyonda ilk tercihtir.",
+        "E": "Trombositopenisi (PLT <20.000/mcL) olan hastada OIC geliştiğinde ilk müdahale rektal süpozituvar veya lavmandır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Opioid başlanan her kanser hastasında eş zamanlı profilaktik bağırsak rejimi başlanır. Senna tek başına etkilidir, dokuzat eklemek fayda katmaz. PAMORA'lar laksatife dirençli OIC içindir.",
+      "aciklama_detay": "ASCO kılavuzu, opioid tedavisi başlanan tüm kanser hastalarında eş zamanlı profilaktik bağırsak rejimi başlanmasını önerir. Opioidler gastrointestinal sistemdeki mü reseptörlerini uyararak motiliteyi azaltır ve sekresyonları kurutur. Bu yan etkiye tolerans gelişmez; bu yüzden konstipasyonun ortaya çıkması beklenmeden profilaktik müdahale gerekir.\n\nASCO kanıt sentezine göre OIC profilaksisinde stimülan laksatif senna tek başına etkilidir. Klinik çalışmalarda senna'ya dokuzat eklenmesinin ek fayda sağlamadığı ve bağırsak hareketlerini anlamlı biçimde artırmadığı gösterilmiştir.\n\nTedavi basamakları:\n• Konvansiyonel laksatifler (senna, polietilen glikol, bisakodil) ilk basamaktır.\n• Periferik etkili mü-opioid reseptör antagonistleri (PAMORA: naldemedin, metilnaltrekson, naloksegol), konvansiyonel laksatiflere dirençli OIC'de ya da özel endikasyonlarda ikinci/üçüncü basamakta kullanılır. Bu ajanlar kan-beyin bariyerini geçmez.\n• Sistemik nalokson santral sinir sistemine geçerek analjeziyi bozabilir ve yoksunluk tetikleyebilir; bu yüzden OIC tedavisinde kullanılmaz.\n\nÖzel durum: Trombositopenik ya da nötropenik kanser hastalarında rektal süpozituvar, lavman ve rektal muayene kanama ve bakteriyel translokasyon/sepsis riski nedeniyle kontrendikedir.\n\nRutin laksatif kullanımı opioid rotasyonundan sonra da sürdürülür.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Profilaktik bağırsak rejimi opioidle eş zamanlı başlanır. Konstipasyona tolerans gelişmediği için beklemek uygun değildir.",
+        "B": "DOĞRU — Senna tek başına etkilidir; dokuzat eklemenin ek fayda sağlamadığı gösterilmiştir.",
+        "C": "YANLIŞ — Sistemik nalokson santral etkiyle analjeziyi bozabilir ve yoksunluk tetikleyebilir. Laksatifler kesilmez.",
+        "D": "YANLIŞ — PAMORA'lar konvansiyonel laksatiflere dirençli OIC'de ikinci/üçüncü basamakta kullanılır.",
+        "E": "YANLIŞ — Trombositopeni ve nötropenide rektal girişimler kanama ve sepsis riski nedeniyle kontrendikedir."
+      },
+      "etiketler": [
+        "onkoloji",
+        "kanser ağrısı",
+        "opioid ilişkili konstipasyon",
+        "laksatif",
+        "PAMORA"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Paice JA et al. Use of Opioids for Adults With Pain From Cancer or Cancer Treatment: ASCO Guideline (2022)"
+    },
+    {
+      "id": "s7",
+      "metin": "Optimize edilmiş güçlü opioid tedavisine (oral morfin eşdeğeri >120 mg/gün) rağmen orta-şiddetli kanser ağrısı süren 55 yaşında hastaya adjuvan olarak kanabinoid bazlı ilaç (oromukozal nabiksimols — THC:CBD sprey ya da sentetik THC türevleri) eklenmesi düşünülüyor.\n\n2023 Cochrane sistematik derlemesine (CD014915) göre opioide dirençli kanser ağrısında kanabinoidlerin etkinliği ve güvenliği hakkında orta kesinlikte kanıta dayanan temel sonuç hangisidir?",
+      "secenekler": {
+        "A": "Nabiksimols, plaseboya kıyasla ortalama ağrı şiddetinde ve klinik olarak anlamlı ağrı rahatlamasında (PGIC) belirgin üstünlük sağlamıştır.",
+        "B": "Oromukozal nabiksimols ve THC, opioidle kontrol edilemeyen kanser ağrısını hafifletmede plaseboya kıyasla klinik olarak anlamlı üstünlük göstermemiştir.",
+        "C": "Sentetik THC analoğu nabilon, baş-boyun ve akciğer kanserli hastalarda radyoterapiye bağlı ağrıyı %80 azaltmıştır.",
+        "D": "CBD yağı, uzman palyatif bakıma eklendiğinde ağrı skorlarında dramatik düşüş sağlamıştır.",
+        "E": "Kanabinoid kullanımı santral sinir sistemi yan etkilerinde (baş dönmesi, sedasyon) plaseboya göre hiçbir artışa yol açmamıştır."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Cochrane 2023'e göre opioide dirençli kanser ağrısında nabiksimols ya da THC eklemek plasebodan klinik olarak anlamlı fark yaratmaz (orta kesinlik). Buna karşılık SSS yan etkileri artar.",
+      "aciklama_detay": "2023 Cochrane derlemesi 14 çalışmayı ve 1823 katılımcıyı kapsar. Optimize opioid tedavisine rağmen süren kanser ağrısında oromukozal nabiksimols (THC/CBD) ya da THC eklenmesi, ortalama ağrı yoğunluğunda (SMD −0,19) ve hastanın küresel izlenim ölçeğinde (PGIC) plasebodan klinik olarak anlamlı fark oluşturmamıştır. Bu sonuç orta kesinlikte kanıta dayanır.\n\nDiğer kanabinoidler:\n• Nabilon: Radyoterapi/kemoterapiye bağlı ağrıda plaseboya üstünlüğü gösterilememiştir (düşük kesinlik).\n• CBD yağı: Uzman palyatif bakıma eklenmesi ağrı kontrolünde ek fayda sağlamamıştır (MedCan1-CBD; düşük kesinlik).\n\nGüvenlik: Kanabinoid grubunda somnolans, konfüzyon ve baş dönmesi gibi SSS yan etkileri plasebo grubuna göre anlamlı derecede fazladır (risk farkı 0,11; %95 GA 0,05–0,17).\n\nÖzetle, opioide dirençli kanser ağrısında kanabinoid eklemenin analjezik kazancı gösterilememişken SSS yan etki yükü artmaktadır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Meta-analizde nabiksimolsün ortalama ağrıda ve PGIC'de plaseboya üstünlüğü bulunmamıştır.",
+        "B": "DOĞRU — Orta kesinlikte kanıt: nabiksimols ve THC opioidle kontrol edilemeyen kanser ağrısında plasebodan klinik olarak anlamlı biçimde iyi değildir.",
+        "C": "YANLIŞ — Nabilonun radyoterapi/kemoterapiye bağlı ağrıda plaseboya üstünlüğü gösterilememiştir (düşük kesinlik).",
+        "D": "YANLIŞ — CBD yağı uzman palyatif bakıma eklendiğinde ek fayda sağlamamıştır (düşük kesinlik).",
+        "E": "YANLIŞ — SSS yan etkileri kanabinoid grubunda anlamlı derecede fazladır (risk farkı 0,11)."
+      },
+      "etiketler": [
+        "onkoloji",
+        "kanser ağrısı",
+        "kanabinoid",
+        "nabiksimols",
+        "Cochrane"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Cochrane Database of Systematic Reviews 2023 (CD014915): Cannabis-based medicines for cancer pain"
+    },
+    {
+      "id": "s8",
+      "metin": "Sistemik yüksek doz opioidlere ve antikonvülzan koanaljeziklere rağmen şiddetli nöropatik bileşenli refrakter kanser ağrısı olan, yatarak izlenen 50 yaşında hastaya subanestezik ketamin eklenmesi planlanıyor.\n\n2024 sistematik derleme ve meta-analizine (J Pain Symptom Manage) göre ketaminin analjezik etkinliği, uygulama yolları ve yan etki profili ile ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "Subanestezik ketamin, kontrol grubuna kıyasla 24 saatlik PCA (hasta kontrollü analjezi) basma sayısını ve toplam morfin tüketimini anlamlı ölçüde azaltır.",
+        "B": "Subkutan ketamin, hasta kontrollü epidural analjeziye (PCEA) göre çok daha yüksek etki büyüklüğüne sahiptir.",
+        "C": "Ketamin eklenen hastalarda Ramsay sedasyon skorları dramatik biçimde yükselir ve derin sedasyon gelişir.",
+        "D": "Ketamin, opioide bağlı bulantı, kusma ve konstipasyon sıklığını artırır.",
+        "E": "Ketaminin NMDA antagonist ve anti-inflamatuvar etkileri depresif semptomlar (HAMD skoru) üzerinde hiçbir olumlu değişiklik oluşturmaz."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "2024 meta-analizinde (35 RKÇ, 2279 hasta) ketamin VAS ağrı skorunu, 24 saatlik PCA basma sayısını ve opioid tüketimini azaltmıştır. Sedasyonu anlamlı artırmamış, opioid yan etkilerini azaltmıştır.",
+      "aciklama_detay": "35 randomize kontrollü çalışmayı ve 2279 hastayı kapsayan 2024 meta-analizine göre ketamin VAS ağrı skorlarını anlamlı ölçüde düşürmüş, 24 saatlik PCA basma sayısını ve toplam morfin/opioid gereksinimini istatistiksel olarak anlamlı düzeyde azaltmıştır.\n\nUygulama yolu: Alt grup analizlerinde en belirgin analjezik üstünlük epidural (PCEA) yolla sağlanmıştır. Epidural ve IV yollar subkutan yola göre daha etkilidir.\n\nYan etkiler:\n• Ramsay sedasyon skorlarında ketamin alan ve almayan gruplar arasında anlamlı fark bulunmamıştır; ketamin derin sedasyona yol açmamıştır.\n• Ketamin opioid dozunu düşürdüğü için (opioid koruyucu etki) bulantı, kusma, konstipasyon, kaşıntı ve solunum depresyonu ketamin grubunda kontrol grubuna göre daha az görülmüştür.\n• Ketaminin bilinen hızlı antidepresan etkisiyle uyumlu olarak Hamilton Depresyon Ölçeği (HAMD) skorlarında iyileşme saptanmıştır.\n\nSitedeki kanser ağrısı sayfalarında da düşük doz ketamin, santral sensitizasyonu ve opioid toleransını kırmak amacıyla refrakter ağrıda koadjuvan olarak yer alır.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Ketamin 24 saatlik PCA basma sayısını ve toplam morfin tüketimini anlamlı ölçüde azaltmıştır.",
+        "B": "YANLIŞ — En belirgin analjezik üstünlük epidural (PCEA) yolla sağlanmıştır; epidural ve IV yollar subkutan yoldan daha etkilidir.",
+        "C": "YANLIŞ — Ramsay sedasyon skorlarında gruplar arasında anlamlı fark yoktur.",
+        "D": "YANLIŞ — Opioid koruyucu etki nedeniyle bulantı, kusma ve konstipasyon ketamin grubunda daha AZ görülmüştür.",
+        "E": "YANLIŞ — HAMD skorlarında iyileşme saptanmıştır."
+      },
+      "etiketler": [
+        "onkoloji",
+        "kanser ağrısı",
+        "ketamin",
+        "NMDA antagonisti",
+        "opioid koruyucu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Efficacy and Safety of Ketamine to Treat Cancer Pain: Systematic Review and Meta-Analysis — J Pain Symptom Manage 2024"
+    },
+    {
+      "id": "s9",
+      "metin": "Metastatik prostat kanseri nedeniyle enzalutamid alan 68 yaşında erkek hastaya kemik metastazlarına bağlı şiddetli ağrı için uzun etkili oral oksikodon başlanmıştır. Doz kademeli artırılmasına rağmen ağrı kontrol edilemiyor ve hastada terleme, uykusuzluk, taşikardi ve diyare gibi opioid yoksunluk belirtileri gelişiyor.\n\nİlaç etkileşim mekanizmaları düşünüldüğünde bu tablonun temel nedeni hangisidir?",
+      "secenekler": {
+        "A": "Enzalutamidin CYP2D6'yı bloke ederek oksikodonun aktif metaboliti oksimorfona dönüşümünü tamamen durdurması.",
+        "B": "Enzalutamidin güçlü bir CYP3A4 indükleyicisi olarak oksikodon metabolizmasını hızlandırıp plazma düzeylerini dramatik olarak düşürmesi.",
+        "C": "Enzalutamidin P-glikoproteini inhibe ederek oksikodonun kan-beyin bariyerini geçişini engellemesi.",
+        "D": "Oksikodon ile enzalutamid arasında renal tübüler atılım düzeyinde kompetitif yarışma gelişmesi.",
+        "E": "Enzalutamidin mü-opioid reseptöründe doğrudan antagonist etkiyle oksikodonu reseptörden sökmesi."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Enzalutamid güçlü CYP3A4 indükleyicisidir. Oksikodonun yıkımını hızlandırır, plazma düzeyini düşürür; analjezi çöker ve yoksunluk gelişir. Çare glukuronidasyonla metabolize olan bir opioide rotasyondur.",
+      "aciklama_detay": "Mekanizma: Oksikodon ve fentanil esas olarak CYP3A4 enzimi üzerinden inaktif metabolitlerine dönüştürülür. Enzalutamid güçlü bir CYP3A4 indükleyicisidir; fosfenitoin, rifampisin ve karbamazepin de bu gruptadır. Kronik enzalutamid alan hastada CYP3A4 aktivitesi belirgin artar. Bunun sonucunda eş zamanlı verilen oksikodon ya da fentanilin yarılanma ömrü ve eğri altı alanı (EAA) %80'e varan oranlarda düşebilir. Analjezik etki çöker; hasta hem yetersiz analjezi hem de akut opioid yoksunluk tablosu yaşar.\n\nKlinik çözüm: CYP3A4 indükleyicisi alan hastada CYP3A4'e bağımlı opioidler (oksikodon, fentanil, metadon) yerine, metabolizması glukuronidasyon (UGT) üzerinden yürüyen opioidlere geçilmelidir: morfin, hidromorfon, oksimorfon veya tapentadol (opioid rotasyonu).\n\nTers yön de önemlidir: Sitedeki metadon sayfasında belirtildiği gibi CYP3A4 inhibitörleri (ör. vorikonazol, klaritromisin) metadon metabolizmasını baskılayıp plazma düzeyini artırabilir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Tablo CYP2D6 blokajıyla değil, CYP3A4 indüksiyonuyla açıklanır.",
+        "B": "DOĞRU — Güçlü CYP3A4 indüksiyonu oksikodonun yıkımını hızlandırır ve plazma düzeyini düşürür; sonuç analjezi kaybı ve yoksunluktur.",
+        "C": "YANLIŞ — Tablonun açıklaması P-gp değil, CYP3A4 indüksiyonudur.",
+        "D": "YANLIŞ — Oksikodon esas olarak CYP3A4 üzerinden metabolize edilir. Renal tübüler yarışma bu tabloyu açıklamaz.",
+        "E": "YANLIŞ — Enzalutamidin mü-opioid reseptöründe antagonist etkisi yoktur. Etkileşim metabolik düzeydedir (CYP3A4 indüksiyonu)."
+      },
+      "etiketler": [
+        "onkoloji",
+        "kanser ağrısı",
+        "ilaç etkileşimi",
+        "CYP3A4",
+        "oksikodon",
+        "enzalutamid"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Clinically significant drug-drug interactions involving opioid analgesics used for pain — Expert Opin Drug Metab Toxicol 2025"
+    },
+    {
+      "id": "s10",
+      "metin": "İleri evre akciğer kanseri ve yaygın akciğer metastazları olan 71 yaşında kadın hastada, optimal bronkodilatör ve oksijen tedavisine rağmen istirahatte şiddetli nefes darlığı (refrakter dispne) var.\n\n2023 Int J Clin Oncol meta-analizi ve uluslararası palyatif bakım kılavuzlarına göre kansere bağlı refrakter dispnede opioid kullanımıyla ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "Sistemik morfin, refrakter dispneyi hafifletmede plaseboya kıyasla istatistiksel olarak anlamlı derecede etkilidir (SMD −0,43).",
+        "B": "Nebülize morfin, sistemik morfine göre dispne kontrolünde çok daha yüksek etki ve kanıt düzeyine sahiptir.",
+        "C": "Düşük doz sistemik opioid titrasyonu yapılan dispneik kanser hastalarında hayatı tehdit eden solunum depresyonu ve hiperkapni riski %50'nin üzerindedir.",
+        "D": "Dispne tedavisinde ilk tercih tek başına yüksek doz IV midazolamdır.",
+        "E": "Transdermal fentanil bant akut dispne krizlerinin tedavisinde ilk basamak seçenektir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Sistemik opioidler (özellikle oral/parenteral morfin) kanserle ilişkili refrakter dispnede plasebodan anlamlı derecede etkilidir (SMD −0,43). Nebülize morfin önerilmez, benzodiazepin yalnızca ek ajandır.",
+      "aciklama_detay": "2023'te yayımlanan sistematik derleme ve meta-analiz 12 RKÇ'yi ve 300'ü aşkın hastayı kapsar. Sistemik opioidlerin (özellikle oral/parenteral morfin) kanser hastalarında refrakter dispneyi azaltmada plaseboya göre anlamlı derecede etkili olduğu gösterilmiştir (SMD −0,43; %95 GA −0,75 ile −0,12).\n\nUygulama yolu: Nebülize morfinin salin inhalasyonuna üstünlüğü gösterilememiştir. Kılavuzlar nebülize morfini önermez, sistemik yolu (oral/SC/IV) vurgular.\n\nGüvenlik: Düşük dozla başlanıp dispne şiddetine göre dikkatle titre edilen sistemik opioidlerin son dönem kanser hastalarında solunum depresyonuna ya da yaşam süresinde kısalmaya yol açmadığı gösterilmiştir.\n\nİlk tercih ve diğer ajanlar: İlk tercih düşük doz sistemik morfindir (opioid-naiv hastada 1–5 mg oral morfin, 4 saatte bir). Benzodiazepinler yalnızca opioidle kontrol edilemeyen eş zamanlı anksiyetede ek ajan olarak kullanılır. Transdermal fentanil bantlar yavaş salınımlı olduğu için akut dispne krizinde kullanılmaz.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Sistemik opioidler refrakter dispnede plasebodan anlamlı derecede etkilidir (SMD −0,43).",
+        "B": "YANLIŞ — Nebülize morfinin salin inhalasyonuna üstünlüğü gösterilememiştir ve kılavuzlar bu yolu önermez.",
+        "C": "YANLIŞ — Dikkatle titre edilen düşük doz sistemik opioid solunum depresyonu ya da yaşam süresinde kısalma ile ilişkili bulunmamıştır.",
+        "D": "YANLIŞ — İlk tercih düşük doz sistemik morfindir. Benzodiazepin yalnızca eş zamanlı anksiyetede ek ajandır.",
+        "E": "YANLIŞ — Transdermal fentanil yavaş salınımlıdır ve akut dispne krizinde kullanılmaz."
+      },
+      "etiketler": [
+        "onkoloji",
+        "palyatif bakım",
+        "dispne",
+        "morfin",
+        "semptom yönetimi"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Opioids for the management of dyspnea in cancer patients — Int J Clin Oncol 2023"
+    },
+    {
+      "id": "s11",
+      "metin": "Palyatif bakım ünitesinde pankreas kanseri nedeniyle yüksek doz parenteral morfin (300 mg/gün IV morfin eşdeğeri) alan ve böbrek fonksiyonları bozulan (eGFR 22 mL/dk) 72 yaşında erkek hastada belirgin somnolans, huzursuzluk, halüsinasyonlar ve tüm vücutta ani sıçramalar şeklinde miyoklonus gelişiyor.\n\nBu hastadaki opioid ilişkili nörotoksisitenin (OIN) yönetimiyle ilgili hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "Tablonun temel nedeni morfinin renal yolla atılan aktif metabolitleri morfin-3-glukuronid (M3G) ve morfin-6-glukuronid (M6G) birikimidir.",
+        "B": "Miyoklonusu kontrol altına almak için düşük doz klonazepam (0,5 mg oral/SC) veya lorazepam eklenebilir.",
+        "C": "Morfin dozu artırılarak IV bolus morfin uygulanmalı ve nalokson ile tam reversal yapılmalıdır.",
+        "D": "Toksik metabolit birikimini durdurmak için aktif metaboliti olmayan ya da renal yoldan atılmayan bir opioide (fentanil, buprenorfin veya metadon) rotasyon yapılmalıdır.",
+        "E": "Hidrasyon durumu değerlendirilmeli; kontrendikasyon yoksa renal metabolit eliminasyonunu desteklemek için IV hidrasyon sağlanmalıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "OIN'de opioid dozunu artırmak tabloyu kötüleştirir; ani tam doz nalokson ise ağrı krizi ve sempatik deşarj yaratır. Doğru yaklaşım doz azaltımı veya rotasyon, hidrasyon ve gerekirse benzodiazepindir.",
+      "aciklama_detay": "Opioid ilişkili nörotoksisitede (OIN: miyoklonus, deliryum, hiperaljezi) opioid dozunu artırmak tabloyu ağırlaştırır ve nörotoksisiteyi tırmandırır. Ani tam doz nalokson ise şiddetli ağrı krizine, masif sempatik deşarja ve akciğer ödemine yol açabilir.\n\nMekanizma: Böbrek yetmezliğinde (eGFR <30 mL/dk) morfin ve kodein gibi ilaçların aktif metabolitleri böbrekten atılamaz ve birikir. Bunlar morfin-3-glukuronid (M3G: nörotoksik, miyoklonus ve hiperaljezi yapıcı) ve morfin-6-glukuronid (M6G: güçlü sedatif ve analjezik) metabolitleridir. Sonuç şiddetli nörotoksisite, sedasyon ve solunum depresyonudur.\n\nTedavi:\n1. Miyoklonik sıçramalar için benzodiazepin (klonazepam, lorazepam) verilir.\n2. Nörotoksik opioidin dozu düşürülür ya da metaboliti böbrekten atılmayan bir opioide rotasyon yapılır. Sitedeki rotasyon sayfalarına göre böbrek yetmezliğinde öne çıkan opioidler buprenorfin, fentanil ve metadondur.\n3. Renal klirensi desteklemek için hidrasyon optimize edilir.\n\nMiyoklonus ve deliryum, opioid rotasyonu gerektiren başlıca yan etkiler arasındadır. Kanser hastalarının yaklaşık %20–40'ında rotasyon gerekir. Rotasyondan sonra hasta sedasyon, miyoklonus, deliryum ve halüsinasyon açısından izlenmeye devam eder.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU İFADE — Böbrek yetmezliğinde M3G (nörotoksik) ve M6G (sedatif/analjezik) birikimi OIN'in temel mekanizmasıdır.",
+        "B": "DOĞRU İFADE — Miyoklonus için benzodiazepin (klonazepam, lorazepam) eklenebilir.",
+        "C": "YANLIŞ İFADE (cevap) — Doz artırmak nörotoksisiteyi tırmandırır. Ani tam doz nalokson ağrı krizi, sempatik deşarj ve akciğer ödemi yaratabilir.",
+        "D": "DOĞRU İFADE — Fentanil, buprenorfin veya metadona rotasyon metabolit birikimini durdurur.",
+        "E": "DOĞRU İFADE — Hidrasyon renal metabolit eliminasyonunu destekler."
+      },
+      "etiketler": [
+        "onkoloji",
+        "palyatif bakım",
+        "opioid nörotoksisitesi",
+        "miyoklonus",
+        "böbrek yetmezliği",
+        "opioid rotasyonu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "UpToDate — Prevention and management of side effects in patients receiving opioids for chronic pain"
+    },
+    {
+      "id": "s12",
+      "metin": "Sırt ağrısı ve kemik metastazları olan 82 yaşında kadın hastada (eGFR 25 mL/dk, serum kreatinin 2,1 mg/dL) kronik opioid tedavisi planlanıyor.\n\nGeriatrik popülasyonda opioid kullanımı ve güvenliği üzerine öneriler dikkate alındığında hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "Geriatrik hastada opioid tedavisinde 'düşük dozla başla, yavaş titre et' ilkesi uygulanmalıdır.",
+        "B": "eGFR <30 mL/dk olan bu yaşlı hastada idame tedavide morfin ve kodein ilk tercih edilecek en güvenli opioidlerdir.",
+        "C": "Sedasyon, kognitif bozulma, düşme riski ve ilaç etkileşimleri yakından izlenmeli; proaktif laksatif rejim başlanmalıdır.",
+        "D": "Opioidlerin benzodiazepin veya gabapentinoidlerle birlikte reçete edilmesi somnolans, solunum depresyonu ve aşırı doz riskini belirgin biçimde artırır.",
+        "E": "Transdermal buprenorfin (5 mcg/saat), renal metabolit birikimi riskinin düşük olması nedeniyle güvenli bir başlangıç seçeneğidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Böbrek yetmezliği olan yaşlıda morfin ve kodein aktif metabolit birikimi nedeniyle kaçınılacak ilaçlardır. Buprenorfin, fentanil ve metadon daha güvenlidir.",
+      "aciklama_detay": "Yaşlı ve böbrek yetmezliği (eGFR <30 mL/dk) olan hastalarda morfin, kodein ve meperidin birikim ve nörotoksisite riski nedeniyle kaçınılması ya da çok büyük dikkatle kullanılması gereken ilaçlardır. Morfinin M3G/M6G metabolitleri ve kodeinin aktif metabolitleri böbrekten atılamaz. Bu hastalarda buprenorfin, fentanil ve metadonun metabolitleri renal yolla atılmadığı için çok daha güvenli seçeneklerdir.\n\nBuprenorfin bu bağlamda öne çıkar (sitedeki Buprenorfin Rotasyonu sayfası): Esas olarak karaciğerde metabolize edilir, metabolitleri büyük oranda safra/feçesle atılır. Nörotoksik aktif renal metaboliti olmadığından kronik böbrek yetmezliği ve diyaliz hastalarında doz ayarı gerektirmeyen ilk seçenek opioidler arasındadır. Solunum depresyonunda tavan etkisi vardır; tam agonistlere göre daha az konstipasyon, sedasyon ve bilişsel bozukluk yapar. Transdermal form 5 mcg/saat ile başlar.\n\nDiğer ifadeler: Yaşlıda değişen farmakokinetik (yağ dokusunda artış, su oranında azalma, karaciğer/böbrek klirensinde düşüş) nedeniyle 'düşük dozla başla, yavaş titre et' ilkesi geçerlidir. Gabapentinoid ve benzodiazepin kombinasyonları düşme ve solunum depresyonu riskini artırır. Rutin laksatif kullanımı sürdürülmelidir.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU İFADE — Yaşlıda değişen farmakokinetik nedeniyle düşük dozla başlanır, yavaş titre edilir.",
+        "B": "YANLIŞ İFADE (cevap) — eGFR <30 mL/dk'da morfin ve kodein metabolit birikimi ve nörotoksisite nedeniyle kaçınılacak ilaçlardır.",
+        "C": "DOĞRU İFADE — Sedasyon, bilişsel bozulma, düşme ve etkileşimler izlenir; proaktif laksatif rejim başlanır.",
+        "D": "DOĞRU İFADE — Gabapentinoid ve benzodiazepin kombinasyonları düşme ve solunum depresyonu riskini artırır.",
+        "E": "DOĞRU İFADE — Buprenorfin renal birikim yapmaz; transdermal 5 mcg/saat uygun bir başlangıçtır."
+      },
+      "etiketler": [
+        "onkoloji",
+        "geriatri",
+        "kanser ağrısı",
+        "böbrek yetmezliği",
+        "opioid seçimi"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Opioids to Treat Chronic Pain in the Older Adult — 2024 Review"
+    },
+    {
+      "id": "s13",
+      "metin": "Mide kanseri ve yaygın kemik metastazı olan 52 yaşında erkek hastada uyluk ve pelviste kemik yıkımına bağlı şiddetli künt ağrının yanı sıra bacağa yayılan, elektrik çarpması benzeri saplayıcı nöropatik ağrı ve belirgin anksiyete var. Opioid tedavisine koanaljezik eklenmesi planlanıyor.\n\nMide kanseri kemik metastazına bağlı refrakter ağrı yönetimi literatürü ışığında hangisi en doğrudur?",
+      "secenekler": {
+        "A": "Kemik metastazı ağrısında inflamatuvar ve osteoklastik süreci baskılamak için selektif COX-2 inhibitörü (selekoksib) eklenmesi opioid ihtiyacını ve yan etkilerini azaltmada etkilidir.",
+        "B": "Kemik metastazında tek başına morfin tüm nöropatik ve somatik bileşenleri tamamen çözer; koanaljeziğe gerek yoktur.",
+        "C": "Nöropatik saplayıcı ağrı ve anksiyetesi olan bu hastada presinaptik kalsiyum kanallarını etkileyen gabapentinoidlerin (gabapentin/pregabalin) duygudurum düzenleyici koanaljeziklerle kombinasyonu multimodal fayda sağlar.",
+        "D": "Mide kanserli hastalarda tüm NSAİİ ve COX-2 inhibitörleri gastrointestinal kanama riski nedeniyle evrensel olarak kontrendikedir.",
+        "E": "Hem A hem C doğrudur."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Kemik metastazı ağrısı nosiseptif-inflamatuvar ve nöropatik bileşenler içerdiği için multimodal tedavi gerekir. Selekoksib inflamatuvar bileşeni, gabapentinoid ise nöropatik bileşeni hedefler.",
+      "aciklama_detay": "Mide kanseri kemik metastazlarında ağrı hem nosiseptif/inflamatuvar (kemik yıkımı, prostaglandin artışı) hem de nöropatik (sinir invazyonu/basısı) mekanizmalar içerir. Bu yüzden iki bileşen ayrı ayrı hedeflenir:\n\n1. Selekoksib (COX-2 inhibitörü): Kemik metastazı alanındaki PGE2 sentezini ve osteoklastik aktiviteyi baskılayarak opioid doz artışını ve opioid yan etkilerini azaltır.\n2. Gabapentinoidler (gabapentin/pregabalin): Voltaj kapılı kalsiyum kanallarının α2δ alt birimine bağlanarak nöropatik saplayıcı ağrıyı kontrol altına alır. Eş zamanlı anksiyetesi olan hastada antidepresan/gabapentinoid kombinasyonu hem ağrıyı hem psikolojik stresi modüle eder.\n\nSitedeki kanser ağrısı sayfalarına göre kanserin neden olduğu kemik ağrısında (CIBP) mekanizma karmaşıktır. NSAİİ'ler, kortikosteroidler (deksametazon; inflamasyonu ve periostal ödemi azaltır), bisfosfonatlar (zoledronik asit) ve denosumab kombinasyon halinde kullanılır. Ağrılı kemik metastazlarında tek ya da fraksiyone palyatif radyoterapi analjezinin temel taşlarındandır. Nöropatik bileşende birinci basamak gabapentinoidler ve SNRI'lar (duloksetin) yer alır.\n\nNSAİİ'ler böbrek veya GİS kontrendikasyonu yoksa kullanılır. Mide kanserinde bu kontrendikasyonlar bireysel olarak değerlendirilir; evrensel bir yasak yoktur.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Selekoksib PGE2 ve osteoklastik aktiviteyi baskılayarak opioid ihtiyacını ve yan etkilerini azaltır. Ancak E daha kapsamlıdır.",
+        "B": "YANLIŞ — Ağrı karma mekanizmalıdır; koanaljezikler multimodal tedavinin parçasıdır.",
+        "C": "DOĞRU — Gabapentinoidler α2δ alt birimi üzerinden nöropatik ağrıyı azaltır; anksiyetede ek yarar sağlar. Ancak E daha kapsamlıdır.",
+        "D": "YANLIŞ — NSAİİ'ler böbrek/GİS kontrendikasyonu yoksa kullanılır; evrensel bir kontrendikasyon yoktur.",
+        "E": "DOĞRU (cevap) — A ve C birlikte karma kemik metastazı ağrısının iki bileşenini hedefleyen multimodal yaklaşımı tanımlar."
+      },
+      "etiketler": [
+        "onkoloji",
+        "kemik metastazı",
+        "koanaljezik",
+        "gabapentinoid",
+        "NSAİİ",
+        "multimodal analjezi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Analgesic treatment for refractory cancer pain caused by gastric cancer bone metastasis"
+    },
+    {
+      "id": "s14",
+      "metin": "2025 Cochrane sistematik derlemesi (67 RKÇ, 2309 hasta), kronik ağrı tedavisinde NMDA reseptör antagonistlerinin (ketamin, memantin, dekstrometorfan, amantadin, magnezyum) plasebo ve aktif kontrollere karşı etkinliğini ve güvenliğini incelemiştir.\n\nDerlemenin temel metodolojik ve klinik sonuçlarıyla ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "IV ketamin infüzyonlarının kronik ağrıda orta ve uzun dönemde ağrı şiddetini kalıcı olarak düşürdüğü yüksek kesinlikte kanıtla gösterilmiştir.",
+        "B": "Oral memantin ve oral dekstrometorfan, plaseboya kıyasla ağrı skorlarında %80'in üzerinde iyileşme sağlamıştır.",
+        "C": "NMDA antagonistlerinin kronik ağrıdaki net yarar ve zararları, belirgin metodolojik kısıtlılıklar ve düşük/çok düşük kesinlikte kanıt nedeniyle hâlâ belirsizdir.",
+        "D": "IV magnezyum infüzyonları tüm kronik nöropatik ağrılarda birinci basamak standart tedavi kabul edilmiştir.",
+        "E": "Ketamin uygulamalarında psikotomimetik yan etkiler (halüsinasyon, disosiyasyon) hiç gözlenmemiştir."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Cochrane 2025: NMDA antagonistlerinin kronik ağrıdaki yararı ve zararı, düşük/çok düşük kesinlikteki kanıt nedeniyle belirsizdir. IV ketaminde psikotomimetik yan etkiler ve bulantı-kusma artmıştır.",
+      "aciklama_detay": "2025 Cochrane derlemesinin ana sonucu, NMDA reseptör antagonistlerinin (ketamin, memantin, dekstrometorfan, amantadin, magnezyum) kronik ağrıdaki klinik yararlarının ve zararlarının belirsiz olduğudur. Bunun nedeni kanıtların düşük ya da çok düşük kesinlikte olmasıdır. Çalışmaların çoğunun örneklemi küçüktür ve uzun dönem takip eksiktir.\n\nAyrıntılar:\n• IV ketamin: Psikotomimetik yan etkiler, bulantı ve kusma riski artmıştır (RR 3,26). Ağrı azaltıcı etkisine dair kanıt ise kesinsizlik nedeniyle çok düşük kesinliktedir.\n• Memantin ve magnezyum: Belirgin üstünlük gösterilememiştir.\n\nBu sonuç kanser ağrısındaki kullanımla çelişmez. Sitedeki kanser ağrısı sayfalarında düşük doz ketamin, refrakter kanser ağrısında santral sensitizasyonu ve opioid toleransını kırmak için koadjuvan olarak değerlendirilebilecek bir seçenektir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — IV ketaminin ağrı azaltıcı etkisine dair kanıt çok düşük kesinliktedir.",
+        "B": "YANLIŞ — Memantinin belirgin üstünlüğü gösterilememiştir; '%80 iyileşme' gibi bir bulgu yoktur.",
+        "C": "DOĞRU — Düşük ve çok düşük kesinlikteki kanıt nedeniyle yarar-zarar dengesi belirsizdir.",
+        "D": "YANLIŞ — Magnezyumun belirgin üstünlüğü gösterilememiştir.",
+        "E": "YANLIŞ — IV ketaminde psikotomimetik yan etkiler artmıştır (RR 3,26)."
+      },
+      "etiketler": [
+        "onkoloji",
+        "kronik ağrı",
+        "NMDA antagonisti",
+        "ketamin",
+        "Cochrane",
+        "kanıt kesinliği"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Cochrane Database of Systematic Reviews 2025: Ketamine and other NMDA receptor antagonists for chronic pain"
+    },
+    {
+      "id": "s15",
+      "metin": "Evde günlük 120 mg oral morfin idamesi alan, akut abdominal cerrahi sonrasında servise alınan ve şiddetli akut ağrısı (NRS 9/10) olan 55 yaşında hastada akut ağrı yönetimi planlanıyor.\n\nKronik opioid toleransı olan bu hastada IV opioid yükleme ve PCA titrasyonu yapılırken izlenecek yol ile ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "Evdeki bazal opioid derhal kesilmeli ve yalnızca parasetamol verilmelidir.",
+        "B": "Evdeki oral bazal opioid IV forma çevrilirken eksik çapraz tolerans nedeniyle hesaplanan toplam doz ampirik olarak yaklaşık %25 azaltılarak bazal infüzyon/idame düzenlenmelidir.",
+        "C": "İlk IV yükleme dozundan 30 dakika sonra ağrı hâlâ >3 ise ikinci IV bolus ilk dozun 10 katına çıkarılmalıdır.",
+        "D": "Opioid toleransı olan hastalarda IV PCA kilit süresi (lockout) 60 dakika olarak ayarlanmalıdır.",
+        "E": "Kronik opioid alan hastalarda akut ağrıda IV opioid titrasyonu solunum durmasına yol açacağı için kontrendikedir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Kronik opioid alan hastada bazal ihtiyaç sürdürülür. Oral doz IV eşdeğerine çevrilir, eksik çapraz tolerans için yaklaşık %25 azaltılır ve akut ağrı bunun üzerine bolus/PCA ile titre edilir.",
+      "aciklama_detay": "Kronik opioid alan hasta akut cerrahi ya da ağrı kriziyle başvurduğunda evdeki bazal ihtiyaç parenteral IV forma dönüştürülür. Eksik çapraz tolerans riski göz önüne alınarak hesaplanan eşdeğer doz ampirik olarak %25 azaltılır. Kısa etkili bolus yükleme dozu, bu azaltılmış günlük IV dozun %10'u kadardır.\n\nDiğer seçenekler:\n• Bazal opioid kesilirse hasta hemen akut yoksunluğa girer. Bazal ihtiyaç sürdürülmeli, akut ağrı için üzerine ek bolus/PCA titrasyonu yapılmalıdır.\n• İlk yüklemeden 20–30 dakika sonra ağrı kontrol edilemediyse (NRS >3) ikinci IV bolus önceki dozun 1,5 katı olarak ayarlanır, 10 katı değil.\n• Standart PCA kilit süreleri IV morfin/hidromorfon için 6–10 dakika, IV fentanil için 4–8 dakikadır.\n\nSitedeki palyatif ağrı sayfasına göre yatarak izlenen ağrı krizlerinde IV ya da subkutan sürekli infüzyon / PCA titrasyonu tercih edilir. Hastalar günde en az 60 mg oral morfini (ya da eşdeğerini) en az 1 haftadır alıyorsa opioid-toleran kabul edilir; bu hasta (120 mg/gün) bu tanıma uyar.\n\nNot: Kronik ağrıda %25'lik bu azaltım akut ağrı/yol değişikliği bağlamındaki bir öneridir. 2025 kanser ağrısı rotasyon uzlaşısı ise opioidler arası rotasyonda rutin otomatik %25–50 azaltımı desteklememektedir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Bazal ihtiyaç karşılanmazsa hasta yoksunluğa girer. Bazal sürdürülür, akut ağrı için ek bolus/PCA yapılır.",
+        "B": "DOĞRU — Bazal doz IV eşdeğerine çevrilir ve eksik çapraz tolerans için yaklaşık %25 azaltılır; bolus bu dozun %10'udur.",
+        "C": "YANLIŞ — İkinci bolus önceki dozun 1,5 katıdır, 10 katı değil.",
+        "D": "YANLIŞ — Standart PCA kilit süresi IV morfin/hidromorfon için 6–10 dk, IV fentanil için 4–8 dk'dır.",
+        "E": "YANLIŞ — Akut ağrıda IV opioid titrasyonu kontrendike değildir. Yatarak izlenen ağrı krizlerinde IV/SC infüzyon ve PCA titrasyonu tercih edilir."
+      },
+      "etiketler": [
+        "onkoloji",
+        "akut ağrı",
+        "opioid toleransı",
+        "PCA",
+        "perioperatif ağrı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "UpToDate — Management of acute pain in the patient chronically using opioids for non-cancer pain"
+    },
+    {
+      "id": "s16",
+      "metin": "Dirençli kemik ve viseral metastazlar nedeniyle yüksek doz oral morfin (OMEDD 360 mg/gün) alan 61 yaşında erkek hastada, yetersiz analjezi ve ağır opioid ilişkili konstipasyon nedeniyle oral metadona rotasyon yapılmasına karar veriliyor.\n\nÇin Erişkin Kanser Ağrısı Tanı ve Tedavi Kılavuzu (2025) önerileri doğrultusunda metadon rotasyonu, kararlı durum zamanlaması ve klinik izlem ile ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "OMEDD ≥300 mg/gün olan hastalarda doğrudan 1:1 oranında tek doz yükleme yapılmalı ve hasta aynı gün taburcu edilmelidir.",
+        "B": "Transdermal fentanilden oral metadona geçişte özel izlem veya titrasyon gerekmez; bant çıkarıldığı an tam doz oral metadon başlanır.",
+        "C": "Metadon başlandıktan sonra ağrı kontrol edilemezse ilk 24 saat içinde günlük doz %200 artırılmalıdır.",
+        "D": "OMEDD ≥300 mg/gün olan hastalarda 3 günlük geçiş (3-day switch) veya ihtiyaca göre (on-demand) geçiş yöntemi önerilir; metadonun kararlı duruma ulaşması 3–7 gün (bazı hastalarda 25 güne kadar) sürebileceği için rotasyon tercihen yatarak izlenerek tamamlanmalıdır.",
+        "E": "Yaşlı ve böbrek fonksiyonu bozuk hastalarda metadon başlangıç dozu böbrek klirensine göre 3 katına çıkarılmalıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "OMEDD ≥300 mg/gün'den metadona geçişte 3 günlük geçiş ya da ihtiyaca göre yöntem önerilir. Metadonun kararlı duruma ulaşması günler-haftalar sürdüğü için rotasyon tercihen yatarak ve yakın izlemle yapılır.",
+      "aciklama_detay": "Çin 2025 Kanser Ağrısı Kılavuzu (Öneri 16), OMEDD ≥300 mg/gün olan hastalarda metadon rotasyonu için 3 günlük geçiş (3-day switch) ya da ihtiyaca göre (on-demand) yöntemi önerir (kanıt düzeyi 1B). Metadonun yarılanma ömrü çok uzun ve değişken olduğundan (15–120 saat) plazma kararlı durumuna ulaşması 3–7 gün, bazı hastalarda 25 güne kadar sürer. Bu süreçte birikim toksisitesi (aşırı sedasyon, solunum depresyonu) ve kardiyak riskler gelişebileceği için rotasyonun yatarak ve yakın klinik izlemle yapılması önerilir. OMEDD <300 mg/gün olanlarda NCCN dönüşüm oranları temel alınabilir.\n\n3 günlük geçiş şeması (sitedeki Metadon Rotasyonu sayfası):\n• 1. gün: Mevcut opioid 1/3 azaltılır (%67'si verilir); hesaplanan metadon dozunun 1/3'ü başlanır.\n• 2. gün: Mevcut opioid %33'e iner; metadon 2/3'e çıkar.\n• 3. gün: Mevcut opioid kesilir; metadon tam doza ulaşır.\nGeçiş süresince kırılma ağrısı için kısa etkili opioid kurtarma dozu reçete edilir. Ani 'stop-and-go' geçişte metadonun tam etkiye ulaşması zaman alacağı için ağrı krizi ve yoksunluk tetiklenebilir; 3 günlük yöntem bu analjezik boşluğu kapatır.\n\nTitrasyon: Geçiş tamamlandıktan sonra metadon dozu hemen artırılmaz. Yeni bir titrasyondan önce en az 5–7 gün beklenir. 2025 rotasyon uzlaşısı da metadonun doğrusal olmayan farmakokinetiği nedeniyle rotasyonun deneyimli uzmanlarca yürütülmesini ister.\n\nKardiyak güvenlik: Metadon QTc'yi uzatabilir. Başlangıçta ve doz yaklaşık 40 ile 100 mg/gün düzeylerine ulaştığında EKG çekilir. QTc >500 msn'de metadon kullanılmaz.\n\nTransdermal fentanilden geçiş: Bant çıkarıldıktan sonra cilt altı depolardan 12–24 saat boyunca fentanil salınımı sürer. Bu nedenle metadon hemen tam dozla başlanmaz, dikkatli titrasyon gerekir (Öneri 15).",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Metadonda 1:1 doğrudan geçiş ölümcül aşırı doza yol açar. Birikim toksisitesi günler içinde geliştiği için aynı gün taburculuk uygun değildir.",
+        "B": "YANLIŞ — Bant çıkarıldıktan sonra cilt altı depolardan 12–24 saat fentanil salınımı sürer; metadon hemen tam dozla başlanmaz, dikkatli titre edilir.",
+        "C": "YANLIŞ — Kararlı duruma ulaşılmadan (en az 3–5 gün) agresif doz artışı ölümcül birikim toksisitesine yol açar. Yeni titrasyon için 5–7 gün beklenir.",
+        "D": "DOĞRU — OMEDD ≥300 mg/gün'de 3 günlük ya da ihtiyaca göre geçiş önerilir. Kararlı duruma ulaşma 3–7 gün (25 güne kadar) sürebildiği için yatarak izlem önerilir.",
+        "E": "YANLIŞ — Metadon dozu böbrek klirensine göre artırılmaz. Metadonun metabolitleri renal yolla birikmez; ancak doğrusal olmayan farmakokinetiği nedeniyle doz dikkatle ve uzman kontrolünde belirlenir."
+      },
+      "etiketler": [
+        "onkoloji",
+        "kanser ağrısı",
+        "metadon",
+        "opioid rotasyonu",
+        "kararlı durum"
+      ],
+      "zorluk": "zor",
+      "kaynak": "Chinese Guidelines for Adult Cancer Pain Management (2025 Edition) — 中国成人癌痛诊疗指南（2025版）"
+    },
+    {
+      "id": "s17",
+      "metin": "Meme kanseri nedeniyle mastektomi ve eş zamanlı meme rekonstrüksiyonu yapılan hastaların %25–60'ında gelişen post-mastektomi ağrı sendromu (PMPS), anterolateral göğüs duvarı, aksilla ve ipsilateral kol medialinde 3–6 aydan uzun süren kronik ağrıyla karakterizedir.\n\nGüncel literatür ve 2025 derleme verileri (BJPS 2025) ışığında PMPS'nin etiyopatofizyolojisi, risk faktörleri ve rekonstrüksiyon tipiyle ilişkisine dair hangisi doğrudur?",
+      "secenekler": {
+        "A": "PMPS gelişimi için bilinen en güçlü intraoperatif etiyolojik faktör interkostobrakiyal sinirin (ICBN) cerrahi diseksiyon/rezeksiyon yaralanması veya koter travmasıdır.",
+        "B": "İmplant bazlı rekonstrüksiyonda kronik ağrı oranı, otolog doku ile rekonstrüksiyona kıyasla anlamlı derecede daha düşüktür.",
+        "C": "Genç yaş (<40), preoperatif anksiyete/depresyon ve adjuvan radyoterapi PMPS riskini belirgin azaltan koruyucu faktörlerdir.",
+        "D": "PMPS tanısı yalnızca kas-iskelet sistemi disfonksiyonlarına dayanır; hiçbir zaman nöropatik duyusal bozukluk (allodini, hipoestezi) içermez.",
+        "E": "Adjuvan aromataz inhibitörleri ve taksan tedavileri PMPS riskini ve ağrı şiddetini hiçbir şekilde etkilemez."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "PMPS'nin en önemli nöral mekanizması interkostobrakiyal sinir (ICBN) yaralanmasıdır. Genç yaş, anksiyete, şiddetli akut ağrı ve radyoterapi riski artırır; implant rekonstrüksiyonu ağrıyı azaltmaz.",
+      "aciklama_detay": "Patofizyoloji: PMPS'deki en önemli periferik nöral yaralanma, interkostobrakiyal sinir (ICBN) zedelenmesidir. ICBN, T2–T3 interkostal sinirlerin lateral kutanöz dalıdır ve aksiller diseksiyon/mastektomi sırasında yaralanmaya çok açıktır. Yaralanması üst kol medialinde, aksillada ve göğüs duvarında nöropatik yanma, batma ve allodiniye yol açar.\n\nRekonstrüksiyon: 2025 BJPS kapsam derlemesine göre implant bazlı rekonstrüksiyonda kronik ağrı sıklığı (%54), otolog flep rekonstrüksiyonuna göre daha yüksek ya da benzerdir. Subpektoral implant yerleştirilirken pektoralis majörün kaldırılması miyofasyal ağrı bileşenini tetikler. Bu da prepektoral tekniklere yönelimin bir nedenidir.\n\nRisk faktörleri: Genç yaş (<40), preoperatif yüksek anksiyete/stres, şiddetli akut postoperatif ağrı öyküsü, yüksek BMI ve aksiller radyoterapi PMPS riskini artıran temel bağımsız risk faktörleridir.\n\nSistemik etkenler: Taksanlara bağlı kemoterapi nöropatisi (KİPN) ve aromataz inhibitörü ilişkili artralji/miyalji mevcut PMPS tablosunu ağırlaştırır.\n\nSitedeki kanser ağrısı sayfalarına göre radyoterapi ya da cerrahi sonrası nöropatik ağrıda birinci basamak gabapentinoidler (gabapentin, pregabalin) veya SNRI'lardır (duloksetin). Dirençli post-cerrahi nöropatik ağrıda SCS seçenektir.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — ICBN'nin diseksiyon veya koter yaralanması PMPS'nin en önemli intraoperatif nöral mekanizmasıdır.",
+        "B": "YANLIŞ — İmplant rekonstrüksiyonunda kronik ağrı (%54) otolog flebe göre daha yüksek ya da benzerdir.",
+        "C": "YANLIŞ — Genç yaş, preoperatif anksiyete ve aksiller radyoterapi PMPS riskini ARTIRIR.",
+        "D": "YANLIŞ — ICBN yaralanması nöropatik yanma, batma ve allodiniye yol açar; PMPS nöropatik bileşen içerir.",
+        "E": "YANLIŞ — Taksanlara bağlı nöropati ve aromataz inhibitörü artraljisi PMPS'yi ağırlaştırır."
+      },
+      "etiketler": [
+        "onkoloji",
+        "meme kanseri",
+        "post-mastektomi ağrı sendromu",
+        "interkostobrakiyal sinir",
+        "rekonstrüksiyon"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Characterization of post-mastectomy pain syndrome in breast cancer — BJPS 2025; Chapter 44"
+    },
+    {
+      "id": "s18",
+      "metin": "İnopere abdominopelvik kanserlere bağlı dirençli viseral ağrısı olan erişkinlerde sempatik nörolitik blokların (çölyak pleksus, splanknik sinir, superior/inferior hipogastrik pleksus, ganglion impar) standart tedaviye ya da kombinasyon bloklara karşı etkinliğini değerlendiren 2024 Cochrane derlemesi (CD015229) yayımlanmıştır.\n\nDerlemenin GRADE kanıt değerlendirmesi ve klinik sonuçlarıyla ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "Sempatik bloklar 14. günde günlük opioid tüketimini ortalama 41,63 mg oral morfin eşdeğeri azaltabilir; ancak genel kanıt kesinliği çalışmaların metodolojik kısıtlılıkları nedeniyle 'çok düşük' olarak derecelendirilmiştir.",
+        "B": "Kombinasyon sempatik blokların (ör. çölyak + splanknik) tekli bloklara kıyasla yaşam kalitesini ve ağrı skorlarını %90 artırdığı yüksek kesinlikte kanıtla gösterilmiştir.",
+        "C": "Sempatik blok yapılan tüm hastalarda 14. günde ağrının tamamen kaybolduğu ve ek opioide hiç gerek kalmadığı kanıtlanmıştır.",
+        "D": "Sempatik bloklar ile standart medikal tedavi arasında opioid tüketimi açısından hiçbir fark oluşmamıştır.",
+        "E": "Sempatik sinir blokları tüm hastalarda kalıcı parapleji yaptığı için kılavuzlarca yasaklanmıştır."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Cochrane 2024: tekli sempatik bloklar 14. günde opioid gereksinimini ortalama 41,63 mg MME/gün azaltabilir; ancak kanıt kesinliği çok düşüktür. Ağrı skorundaki fark (−0,44) klinik anlamlılık sınırının altındadır.",
+      "aciklama_detay": "2024 Cochrane derlemesi 17 çalışmayı ve 1025 hastayı kapsar. Tekli sempatik nörolitik blokların standart tedaviye göre 14. günde günlük opioid gereksinimini ortalama 41,63 mg MME/gün azaltabileceği gösterilmiştir (MD −41,63 mg; %95 GA −78,54 ile −4,72). Ancak körleme eksikliği ve yüksek yanlılık riski (RoB 2) nedeniyle bu bulgunun kesinliği GRADE'e göre 'çok düşük' olarak sınıflandırılmıştır.\n\nDiğer bulgular:\n• Kombinasyon sempatik blokların tekli bloklara üstünlüğünü gösteren yeterli ve güvenilir veri yoktur; kanıt çok belirsizdir.\n• Bloklar opioid ihtiyacını orta derecede düşürebilir ama tamamen sıfırlamaz. 14. gündeki VAS farkı ortalama −0,44 puandır ve klinik anlamlılık sınırının altında kalır.\n\nBlok düzeyleri (sitedeki kanser ağrısı sayfaları):\n• Çölyak pleksus / splanknik nöroliz: Pankreas, mide ve üst abdominal organ tümörlerine bağlı viseral ağrı.\n• Süperior hipogastrik pleksus bloğu: Pelvik organ (uterus, over, prostat, rektum) malignitelerine bağlı ağrı.\n• Ganglion impar bloğu: Perineal ve rektal bölge ağrısı.\nBu yöntemler farmakoterapiye yanıt vermeyen ya da opioid yan etkilerini tolere edemeyen hastalarda, multidisipliner değerlendirmeyle uygulanan WHO 4. basamak girişimlerdir.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — 14. günde yaklaşık 41,63 mg MME/gün azalma; GRADE'e göre çok düşük kesinlikte kanıt.",
+        "B": "YANLIŞ — Kombinasyon blokların tekli bloklara üstünlüğü için güvenilir veri yoktur; kanıt çok belirsizdir.",
+        "C": "YANLIŞ — Bloklar opioidi sıfırlamaz; VAS farkı −0,44 ile klinik anlamlılık sınırının altındadır.",
+        "D": "YANLIŞ — Opioid tüketiminde istatistiksel olarak anlamlı bir azalma bulunmuştur.",
+        "E": "YANLIŞ — Sempatik bloklar yasaklanmış değildir; kılavuzlarda WHO 4. basamak girişimler arasında yer alır."
+      },
+      "etiketler": [
+        "onkoloji",
+        "kanser ağrısı",
+        "sempatik blok",
+        "çölyak pleksus",
+        "Cochrane",
+        "GRADE"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Cochrane Database of Systematic Reviews 2024 (CD015229): Sympathetic nerve blocks for persistent pain in adults with inoperable abdominopelvic cancer"
+    },
+    {
+      "id": "s19",
+      "metin": "Uzun süredir yüksek doz opioid (180 MME/gün) kullanan, ancak fonksiyonel kazanç sağlamayan ve belirgin kognitif yavaşlama gösteren 54 yaşında hastada opioid dozunun azaltılması (tapering) planlanıyor.\n\nKronik opioid azaltımının hızı, yoksunluk belirtileri ve kantitatif duyusal test (QST) bulguları ile ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "Azaltım sırasında gelişen geçici ağrı artışı kesinlikle hastalığın ilerlediğini gösterir; derhal eski yüksek doza dönülmelidir.",
+        "B": "Azaltım sırasında QST'de görülen ağrı eşiği düşüklüğü (geçici yoksunluk hiperaljezisi) kalıcı sinir hasarıdır ve hiçbir zaman düzelmez.",
+        "C": "Azaltım sürecinde hastalar mental sağlık krizleri, depresyon ve intihar riski açısından izlenmemelidir.",
+        "D": "Azaltımda başarısız olan ve sürekli doz artıran hastalarda opioid kullanım bozukluğu (OUD) dışlanmadan tüm ilaçlar aniden kesilmelidir.",
+        "E": "1 yıldan uzun süredir uzun etkili opioid kullananlarda önerilen güvenli hız başlangıç dozunun %10'u kadar aylık azaltımdır; 1 yıldan kısa kullanımda haftalık %10 azaltım uygulanabilir."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Uzun süreli (>1 yıl) uzun etkili opioid kullanımında ayda %10, daha kısa kullanımda haftada %10 azaltım önerilir. Azaltımdaki geçici hiperaljezi düzelir. Hasta ruhsal kriz açısından izlenir, OUD varsa MOUD'a geçilir.",
+      "aciklama_detay": "UpToDate ile CDC/VA-DoD kılavuz protokollerine göre kronik opioid kullanan hastada hızlı kesme ciddi depresyon, intihar ve yasa dışı maddeye yönelim riski taşır. 1 yıldan uzun süre uzun etkili opioid kullananlarda en güvenli yöntem başlangıç dozunun %10'u kadar aylık azaltımdır. 1 yıldan kısa süreli tedavilerde haftalık %10 azaltım uygulanabilir.\n\nYoksunluk hiperaljezisi: Doz azaltımının ilk haftalarında nosiseptif sistemin duyarlılaşmasına bağlı geçici yoksunluk hiperaljezisi gelişebilir. Bu, hastalığın ilerlediği anlamına gelmez. Longitudinal QST çalışmalarında (Wang ve ark.) hızlı ya da yavaş azaltım sırasında 3. haftada artan hiperaljezi 6. ayda tamamen düzelmiş, ağrı eşikleri opioid-naiv bireylerinkine eşitlenmiştir.\n\nİzlem: Opioid azaltımında hastalar en az 1–2 yıl boyunca depresyon ve intihar düşüncesi açısından taranmalıdır. Azaltımı yapamayan dirençli hastalarda altta yatan opioid kullanım bozukluğu (OUD) araştırılmalı, gerekirse buprenorfin/metadon tedavisine (MOUD) geçilmelidir. Sitedeki rotasyon sayfasına göre madde kullanım bozukluğu ya da bağımlılık riski olan hastalarda öne çıkan opioidler buprenorfin ve metadondur.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Azaltımın ilk haftalarında geçici yoksunluk hiperaljezisi gelişebilir; bu hastalık ilerlemesi anlamına gelmez.",
+        "B": "YANLIŞ — QST çalışmalarında 3. haftadaki hiperaljezi 6. ayda tamamen düzelmiştir; kalıcı sinir hasarı değildir.",
+        "C": "YANLIŞ — Hastalar en az 1–2 yıl boyunca depresyon ve intihar düşüncesi açısından taranmalıdır.",
+        "D": "YANLIŞ — Ani kesme yerine OUD araştırılır; gerekirse buprenorfin/metadon tedavisine (MOUD) geçilir.",
+        "E": "DOĞRU — >1 yıl uzun etkili kullanımda ayda %10, daha kısa kullanımda haftada %10 azaltım."
+      },
+      "etiketler": [
+        "onkoloji",
+        "kronik ağrı",
+        "opioid azaltımı",
+        "yoksunluk hiperaljezisi",
+        "opioid kullanım bozukluğu"
+      ],
+      "zorluk": "orta",
+      "kaynak": "UpToDate — Opioid tapering for patients with chronic pain"
+    },
+    {
+      "id": "s20",
+      "metin": "Meme kanseri nedeniyle anastrozol (aromataz inhibitörü) kullanan ve buna bağlı şiddetli eklem ağrıları gelişen 52 yaşında kadın hasta farmakolojik olmayan tamamlayıcı bir tedavi istiyor.\n\nSociety for Integrative Oncology (SIO) ve ASCO 2022 ortak kılavuzu ışığında kanserle ilişkili ağrı tablolarında entegratif tedavilerin kanıt düzeyleriyle ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "Ameliyat sonrası akut cerrahi ağrıda tek başına refleksoloji yüksek kanıt düzeyiyle morfinin yerini alır.",
+        "B": "Kemoterapiye bağlı nöropatide (KİPN) hidroterapi birinci basamak standart tedavidir.",
+        "C": "Palyatif bakımdaki kanser hastalarında masaj terapisi solunum durmasına yol açtığı için kesinlikle kontrendikedir.",
+        "D": "Aromataz inhibitörüne bağlı eklem ağrılarında akupunktur, orta kanıt düzeyi ve güçlü öneriyle önerilen tablodur.",
+        "E": "Prosedürel ağrılarda klinik hipnozun faydasız olduğu ve anksiyeteyi artırdığı gösterilmiştir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "SIO-ASCO 2022'de aromataz inhibitörüne bağlı artraljide akupunktur orta kanıt düzeyi ve güçlü öneriyle yer alır. Masaj palyatif bakımda, klinik hipnoz prosedürel ağrıda desteklenir.",
+      "aciklama_detay": "SIO-ASCO 2022 entegratif onkoloji kılavuzunda, meme kanseri hastalarında aromataz inhibitörüne bağlı artraljide akupunktur (ve elektroakupunktur) güçlü kanıt ve orta etki büyüklüğüyle önerilmektedir. Akupunkturun genel kas-iskelet ağrıları ve palyatif bakımda da faydası gösterilmiştir.\n\nDiğer yöntemler:\n• Refleksoloji ve hidroterapi: KİPN ya da akut cerrahi ağrıda güçlü kanıt yoktur. KİPN'de güçlü kanıtlı tek medikal ajan duloksetindir.\n• Masaj: Palyatif bakımda kas sertliğini azaltmak, gevşeme sağlamak ve ağrı algısını hafifletmek için güvenle önerilir (yararı zararından fazla).\n• Klinik hipnoz: Prosedürel (girişimsel) ağrıda ağrı ve anksiyeteyi azaltmada kanıta dayalı olarak desteklenir (orta kesinlik).\n\nSitedeki kanser ağrısı sayfalarına göre akupunktur, egzersiz, masaj, TENS, bilişsel davranışçı terapi (BDT), mindfulness ve fizik tedavi modaliteleri multimodal ağrı şemasına entegre edilmelidir. Bu yöntemler farmakolojik tedavinin yerine geçmez, onu tamamlar.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Refleksoloji akut cerrahi ağrıda morfinin yerini alacak kanıta sahip değildir.",
+        "B": "YANLIŞ — KİPN'de hidroterapi için güçlü kanıt yoktur; güçlü kanıtlı ajan duloksetindir.",
+        "C": "YANLIŞ — Masaj palyatif bakımda güvenle önerilen bir yöntemdir.",
+        "D": "DOĞRU — Aromataz inhibitörü artraljisinde akupunktur orta kanıt ve güçlü öneriyle önerilir.",
+        "E": "YANLIŞ — Klinik hipnoz prosedürel ağrı ve anksiyetede kanıta dayalı olarak desteklenir."
+      },
+      "etiketler": [
+        "onkoloji",
+        "entegratif onkoloji",
+        "akupunktur",
+        "aromataz inhibitörü",
+        "SIO-ASCO"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "UpToDate — Rehabilitative and integrative therapies for pain in patients with cancer; SIO-ASCO Guideline 2022"
+    },
+    {
+      "id": "s21",
+      "metin": "Reçeteli güçlü opioidlerini uygunsuz kullanan ve opioid kullanım bozukluğu (OUD) tanısı konan 42 yaşında erkek hastada sublingual buprenorfin/nalokson başlanacak. Presipite yoksunluğu önlemek için indüksiyondan önce Klinik Opiat Yoksunluk Ölçeği (COWS) ile değerlendirme yapılıyor.\n\nUpToDate ve SAMHSA standartlarına göre buprenorfin indüksiyonuyla ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "İlk buprenorfin dozundan önce hastanın objektif olarak hafif-orta düzeyde yoksunluğa girmesi beklenmeli ve COWS skorunun en az 5 ila 12 arasında olduğu doğrulanmalıdır.",
+        "B": "Hasta son opioid dozundan 1 saat sonra, hiç yoksunluk belirtisi yokken (COWS 0) yüksek doz (32 mg) buprenorfin yüklenmelidir.",
+        "C": "COWS skoru yalnızca hastanın kendi beyanına dayanır; terleme, piloereksiyon, tremor ve midriyazis gibi objektif bulguları içermez.",
+        "D": "Acil serviste yapılan yüksek doz buprenorfin indüksiyonları (8–32 mg) mortaliteyi ve tedaviye katılımı olumsuz etkiler.",
+        "E": "Uzun etkili enjektabl buprenorfin kesildikten sonra ilacın plazma ve idrarda saptanma süresi en fazla 24 saattir."
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Geleneksel indüksiyonda buprenorfin, hasta objektif olarak hafif-orta yoksunluğa girdiğinde (COWS en az 5–12) başlanır. Böylece reseptörden sökülecek tam agonist kalmaz ve presipite yoksunluk önlenir.",
+      "aciklama_detay": "Buprenorfin mü-opioid reseptörlerinde yüksek afiniteli bir parsiyel agonisttir. Vücutta tam agonist opioidler (morfin, oksikodon, fentanil) varken verilirse onları reseptörden hızla söker ve şiddetli presipite yoksunluğa yol açar. Bu nedenle geleneksel indüksiyonda hastanın tam agonistten uzak kalıp hafif-orta yoksunluğa girmesi şarttır. Bu durum objektif olarak COWS skorunun 5–12 ya da üzerinde olmasıyla belgelenir.\n\nCOWS (Klinik Opiat Yoksunluk Ölçeği) hem subjektif hem objektif bulguları puanlar: nabız, terleme, pupil çapı, kemik/eklem ağrısı, rinore/lakrimasyon, GİS huzursuzluğu, tremor, esneme, anksiyete ve piloereksiyon.\n\nYoksunluk gelişmeden (COWS <5) verilen buprenorfin masif presipite yoksunluk krizini tetikler. Bu durum yalnızca mikro-indüksiyon (Bern) tekniğinde çok küçük dozlarla aşılır. Sitedeki Buprenorfin Rotasyonu sayfasına göre mikro-indüksiyonda tam agonist kesilmeden ve azaltılmadan çok düşük doz buprenorfin eklenir. Çok küçük dozlar reseptörlerin yalnızca küçük bir bölümünü işgal ettiği için presipite yoksunluk yapmaz. Doz günler içinde artırıldıkça reseptörler kademeli olarak buprenorfinle doyar ve terapötik düzeye ulaşınca tam agonist kesilir.\n\nUzun etkili enjektabl buprenorfin kesildikten sonra dokularda biriken ilacın temizlenmesi uzun sürer; ilaç plazma ve idrarda 12 aya kadar saptanabilir.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU — Geleneksel indüksiyon objektif hafif-orta yoksunlukta (COWS en az 5–12) başlatılır.",
+        "B": "YANLIŞ — Yoksunluk yokken (COWS <5) verilen buprenorfin masif presipite yoksunluğu tetikler; bu ancak mikro-indüksiyonda çok küçük dozlarla aşılır.",
+        "C": "YANLIŞ — COWS nabız, terleme, pupil çapı, tremor ve piloereksiyon gibi objektif bulguları da puanlar.",
+        "D": "YANLIŞ — Kaynakta acil serviste yüksek doz indüksiyonun mortaliteyi ya da tedaviye katılımı olumsuz etkilediğine dair bir bulgu yoktur.",
+        "E": "YANLIŞ — Uzun etkili enjektabl buprenorfin kesildikten sonra plazma ve idrarda 12 aya kadar saptanabilir."
+      },
+      "etiketler": [
+        "onkoloji",
+        "opioid kullanım bozukluğu",
+        "buprenorfin indüksiyonu",
+        "COWS",
+        "presipite yoksunluk"
+      ],
+      "zorluk": "orta",
+      "kaynak": "UpToDate — Opioid use disorder: Pharmacologic management"
+    },
+    {
+      "id": "s22",
+      "metin": "NCCN Kanser Sağkalımı Kılavuzu, kanser ağrısının multimodal yönetiminde aerobik ve direnç egzersizlerini güçlü biçimde önermektedir.\n\nEgzersizin kanser hastalarında analjezik etkilerinin altında yatan temel hücresel ve nörokimyasal mekanizmalarla ilgili hangisi doğrudur?",
+      "secenekler": {
+        "A": "Terapötik egzersiz pro-inflamatuvar TNF-α düzeyini 100 kat artırarak spinal kordda masif nöroinflamasyon oluşturur.",
+        "B": "Egzersiz, kemoterapi ve radyoterapinin antitümoral etkisini tamamen bloke eder ve ağrı eşiğini düşürür.",
+        "C": "Aerobik egzersizin kanser ağrısı üzerindeki tek etkisi plasebo yanıtıdır; hiçbir fizyolojik veya hümoral değişiklik oluşturmaz.",
+        "D": "Egzersiz sırasında kas dokusundan salınan laktat mü-opioid reseptörlerini kalıcı olarak bloke ederek opioid analjezisini engeller.",
+        "E": "Egzersiz, endojen beta-endorfin, anti-inflamatuvar sitokinler (IL-10, IL-1ra) ve endokanabinoidlerin (anandamid) salınımını artırarak endojen inen ağrı inhibisyon yollarını aktive eder."
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Egzersiz endojen opioid, endokanabinoid ve anti-inflamatuvar mediatör salınımını artırır. İnen inhibitör yolları aktive ederek omurilik arka boynuzunda nosiseptif iletimi baskılar.",
+      "aciklama_detay": "Moleküler ve sistematik derleme verilerine göre (Heliyon 2024) aerobik ve direnç egzersizleri, endojen opioid peptitlerin (beta-endorfin, enkefalin), endokanabinoidlerin (anandamid, 2-AG) ve anti-inflamatuvar miyokin/sitokinlerin (IL-10, IL-1ra) sistemik ve santral salınımını uyarır.\n\nBu nörokimyasal salınım, periakuaduktal gri madde (PAG) ve rostral ventromedial medulla (RVM) kaynaklı inen inhibitör yolları aktive eder. Bu yollar omurilik arka boynuzunda nosiseptif iletimi baskılar.\n\nEgzersiz ayrıca pro-inflamatuvar sitokinleri (TNF-α, IL-1β) baskılar ve nöroinflamasyonu hafifletir. Kanser hastalarında yorgunluğu, uyku bozukluğunu ve ağrı krizlerini azaltarak onkolojik tedavilerin tolerabilitesini ve yaşam kalitesini artırır.\n\nSitedeki kanser ağrısı sayfalarına göre egzersiz; akupunktur, bilişsel davranışçı terapi ve fizik tedavi modaliteleriyle birlikte multimodal ağrı şemasına entegre edilmesi gereken entegratif ve rehabilitatif yaklaşımlardandır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Egzersiz pro-inflamatuvar sitokinleri (TNF-α, IL-1β) baskılar ve nöroinflamasyonu hafifletir.",
+        "B": "YANLIŞ — Egzersiz onkolojik tedavilerin tolerabilitesini ve yaşam kalitesini artırır.",
+        "C": "YANLIŞ — Egzersizin analjezik etkisinin endojen opioid, endokanabinoid ve sitokin düzeyinde ölçülebilir nörokimyasal temeli vardır.",
+        "D": "YANLIŞ — Egzersiz endojen opioid sistemini baskılamaz, aksine aktive eder.",
+        "E": "DOĞRU — Endojen opioid, endokanabinoid ve anti-inflamatuvar mediatörler, PAG–RVM kaynaklı inen inhibitör yolları aktive eder."
+      },
+      "etiketler": [
+        "onkoloji",
+        "kanser ağrısı",
+        "egzersiz",
+        "endojen opioid",
+        "inen inhibisyon"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Effects of Exercise in Adults With Cancer Pain — Heliyon 2024; NCCN Survivorship Guidelines"
+    },
+    {
+      "id": "s23",
+      "metin": "Meme kanseri nedeniyle aksiller lenf nodu diseksiyonu ve radyoterapi öyküsü olan 65 yaşında kadın hastanın ipsilateral kolunda 5 yıldır stabil seyreden hafif lenfödem var. Son 3 haftada aynı kolda ani başlayan ve hızla ilerleyen şiddetli ağrı, morumsu nodüler cilt lezyonları ve nöropatik yanma yakınmasıyla başvuruyor.\n\nLenfödemli bir ekstremitede yeni gelişen şiddetli/progresif ağrıda öncelikli yaklaşım ve şüphelenilmesi gereken nadir sekonder malignite hangisidir?",
+      "secenekler": {
+        "A": "Ağrı lenfödemin doğal seyridir; tetkik gerekmez, yalnızca lenfatik masaj artırılmalıdır.",
+        "B": "Tablo derhal tümör nüksü, derin doku enfeksiyonu veya kronik lenfödem zemininde gelişen nadir bir anjiyosarkom olan Stewart-Treves sendromu açısından yeniden değerlendirilmeli; görüntüleme ve biyopsi yapılmalıdır.",
+        "C": "Derhal yüksek doz IV kortikosteroid verilip tüm klinik takipler sonlandırılmalıdır.",
+        "D": "Bu tablo tipik bir brakiyal pleksus avülsiyonudur; elektromiyografi yapılmadan kol cerrahi olarak ampute edilmelidir.",
+        "E": "Lenfödem zeminindeki ağrılar yalnızca psikojeniktir; antidepresan başlanıp hasta eve gönderilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Kronik lenfödemli ekstremitede yeni, şiddetli ve progresif ağrı alarm bulgusudur. Tümör nüksü, ağır enfeksiyon ve Stewart-Treves anjiyosarkomu araştırılır; görüntüleme ve biyopsi gerekir.",
+      "aciklama_detay": "UpToDate'in kanser ağrısına genel bakış kaynağına göre kronik lenfödemli bir ekstremitede yeni başlayan, şiddetli ya da progresif ağrı bir alarm bulgusudur (kırmızı bayrak). Bu tablo şunları düşündürmelidir:\n1. Bölgesel tümör nüksü ya da metastatik pleksus basısı,\n2. Ağır doku enfeksiyonu (selülit/lenfanjit),\n3. Uzun süreli kronik lenfödem zemininde gelişen ve mortalitesi yüksek kutanöz anjiyosarkom: Stewart-Treves sendromu.\n\nAcil radyolojik değerlendirme (MRG/USG) ve şüpheli lezyonlardan biyopsi yapılmalıdır. Bu vakadaki morumsu nodüler cilt lezyonları biyopsi gerektiren bulgulardır. Ağrının lenfödemin doğal seyri sayılıp geçiştirilmesi hayati tanıları geciktirir.\n\nSitedeki kanser ağrısı sayfalarındaki genel ilke de aynıdır: akut ya da kontrolsüz şiddetli ağrıyla başvuran hastada, analjezik titrasyonundan önce ya da onunla eş zamanlı olarak altta yatan acil nedenler (nöral doku tehdidi, enfeksiyon, tromboembolik olaylar) dışlanmalıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Yeni, şiddetli ya da progresif ağrı lenfödemin doğal seyri değil, alarm bulgusudur.",
+        "B": "DOĞRU — Nüks/pleksus basısı, ağır enfeksiyon ve Stewart-Treves sendromu araştırılır; görüntüleme ve biyopsi yapılır.",
+        "C": "YANLIŞ — Tanı konmadan steroid verilip izlemin sonlandırılması hayati tanıları geciktirir.",
+        "D": "YANLIŞ — Tablo tanısal değerlendirme gerektirir; tanı konmadan amputasyon kabul edilemez.",
+        "E": "YANLIŞ — Organik nedenler dışlanmadan ağrıyı psikojenik kabul etmek tanı gecikmesine yol açar."
+      },
+      "etiketler": [
+        "onkoloji",
+        "meme kanseri",
+        "lenfödem",
+        "Stewart-Treves sendromu",
+        "anjiyosarkom",
+        "brakiyal pleksopati"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "UpToDate — Overview of cancer pain: General principles of management and pain syndromes"
+    },
+    {
+      "id": "s24",
+      "metin": "Kronik ağrı veya opioid kullanım bozukluğu nedeniyle evde idame sublingual buprenorfin (8 mg/gün) kullanan 48 yaşında hasta, travma/acil cerrahi sonrası yoğun bakım ya da cerrahi servise yatırılıyor. Postoperatif şiddetli akut ağrısı (NRS 8/10) var.\n\nGüncel yatan hasta ve akut ağrı yönetimi kılavuzlarına göre bu hastadaki buprenorfin idamesi ve akut ağrı yönetimi stratejisi hakkında hangisi doğrudur?",
+      "secenekler": {
+        "A": "Buprenorfin yüksek afiniteli olduğu için üzerine hiçbir tam agonist etki edemez; buprenorfin derhal kesilmeli ve hasta 48 saat ağrı içinde bekletilmelidir.",
+        "B": "İdame buprenorfin kesilmeden sürdürülmeli; akut ağrı için üzerine titre edilmiş tam agonist opioidler (IV morfin, fentanil, hidromorfon) eklenerek multimodal analjezi sağlanmalıdır.",
+        "C": "Buprenorfin kullanan hastalarda epidural ve rejyonal blok uygulamaları kesinlikle kontrendikedir.",
+        "D": "Derhal tam doz IV nalokson verilerek buprenorfin vücuttan temizlenmelidir.",
+        "E": "Akut ağrıda buprenorfin kesilip hastaya yalnızca yüksek doz oral parasetamol verilmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Güncel yaklaşım buprenorfini KESMEMEKTİR. İdame sürdürülür, akut ağrı için üzerine titre edilmiş tam agonist ve multimodal analjezi eklenir.",
+      "aciklama_detay": "Yakın zamana kadar buprenorfin alan hastada akut ağrının tedavi edilemeyeceği yönünde yanlış bir klinik varsayım vardı. Güncel kanıtlar ve rehberler, akut cerrahi ya da travmatik ağrı geliştiğinde buprenorfinin KESİLMEDEN sürdürülmesini önerir.\n\nBuprenorfin reseptörlerin tamamını doyurmaz. İdame sürdürülürken üzerine eklenen kısa etkili tam agonistler (IV morfin, fentanil vb.) ek reseptör aktivasyonu sağlayarak etkili analjezi oluşturur. Sitedeki Buprenorfin Rotasyonu sayfasına göre buprenorfinin yüksek afinitesi, uygun dozdaki tam agonistin analjezik yanıtını engellemez. Aynı ilke buprenorfin idamesindeki kanser hastasının kırılma ağrısı için de geçerlidir.\n\nPerioperatif dönem: Cerrahiye giden ya da hastaneye yatırılan, buprenorfin kullanan hastalarda (opioid kullanım bozukluğu öyküsü olanlar dahil) buprenorfinin sürdürülmesi önerilir. Sürdürülen hastalarda postoperatif toplam opioid ihtiyacının ve nüks riskinin azaldığı gösterilmiştir.\n\nDiğer seçenekler:\n• Buprenorfini kesmek hastayı akut yoksunluğa ve kontrolsüz ağrı krizine sokar.\n• Rejyonal ve nöroaksiyel bloklar (epidural, sinir blokları) buprenorfin kullanan hastalarda son derece etkili ve önerilen multimodal bileşenlerdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIŞ — Buprenorfini kesmek akut yoksunluk ve kontrolsüz ağrı krizine yol açar. Tam agonistler buprenorfin üzerine etkili analjezi sağlar.",
+        "B": "DOĞRU — Buprenorfin sürdürülür, akut ağrı için titre edilmiş tam agonist ve multimodal analjezi eklenir.",
+        "C": "YANLIŞ — Rejyonal ve nöroaksiyel bloklar bu hastalarda etkili ve önerilen bileşenlerdir.",
+        "D": "YANLIŞ — Buprenorfin sürdürülmelidir; nalokson ile 'temizleme' bir tedavi stratejisi değildir ve yoksunluk tetikler.",
+        "E": "YANLIŞ — Buprenorfinin kesilmesi yoksunluğa yol açar ve tek başına parasetamol şiddetli postoperatif ağrıda yetersizdir."
+      },
+      "etiketler": [
+        "onkoloji",
+        "akut ağrı",
+        "buprenorfin",
+        "perioperatif ağrı",
+        "multimodal analjezi"
+      ],
+      "zorluk": "orta",
+      "kaynak": "ClinicalKey — Pain Management in the Critically Ill Adult Patient; Acute Pain Management in Adults"
+    },
+    {
+      "id": "s25",
+      "metin": "Buprenorfin, moleküler yapısı ve reseptör etkileşim profiliyle klasik tam agonist opioidlerden (morfin, oksikodon, fentanil) ayrılan sentetik bir ajandır.\n\nBuprenorfinin reseptör düzeyindeki etki mekanizmaları ve klinik yansımalarıyla ilgili hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "Mü-opioid reseptöründe parsiyel agonist, delta ve kappa reseptörlerinde antagonist, NOP (nosiseptin) reseptöründe zayıf parsiyel agonisttir.",
+        "B": "Yüksek lipofilitesi ve belirgin reseptör afinitesi nedeniyle analjezik potensi morfinden çok daha yüksektir.",
+        "C": "Oddi sfinkteri tonusunu artırıcı etkisi morfine göre çok daha belirgindir; bu nedenle biliyer kolikte kesinlikle kontrendikedir.",
+        "D": "Solunum depresyonunda tavan etkisi (ceiling effect) bulunduğu için yüksek dozlarda dahi ölümcül apne riski tam agonistlere göre belirgin şekilde düşüktür.",
+        "E": "Schedule II opioidlere göre daha az kötüye kullanım potansiyeline sahip olup ABD'de Schedule III sınıfındadır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Buprenorfinin Oddi sfinkteri tonusuna etkisi tam agonistlerden DAHA AZDIR. Pankreatobiliyer ağrıda kontrendike değildir. Diğer ifadeler buprenorfinin farmakolojisini doğru tanımlar.",
+      "aciklama_detay": "Buprenorfinin önemli klinik avantajlarından biri, Oddi sfinkteri tonusu üzerindeki olumsuz etkisinin morfin ve diğer tam agonistlere göre belirgin derecede az olmasıdır. Bu nedenle pankreatobiliyer ağrılarda ve biliyer spazmda güvenle kullanılabilir; kontrendike değildir.\n\nDoğru ifadelerin dayanağı (kaynak ve sitedeki Buprenorfin Rotasyonu sayfası):\n• Reseptör profili: Mü reseptöründe yüksek afiniteli ama düşük intrinsik aktiviteli parsiyel agonist, kappa ve delta reseptörlerinde antagonisttir. Mü reseptörüne morfinden çok daha yüksek afiniteyle bağlanır.\n• Tavan etkisi: Solunum depresyonunda belirgin tavan etkisi vardır; yüksek dozlarda bile ölümcül apne riski belirgin düşüktür. Analjezide ise klinik olarak anlamlı bir tavan etkisi gözlenmez.\n• Kötüye kullanım: Bağımlılık ve kötüye kullanım riski tam agonistlerden düşüktür; ABD'de Schedule III sınıfındadır.\n• Diğer avantajlar: Tam agonistlere göre daha az analjezik tolerans, konstipasyon, sedasyon ve bilişsel bozukluk yapar. Metabolitleri büyük oranda safra/feçesle atıldığı için böbrek yetmezliğinde doz ayarı gerektirmez.\n• Kardiyak güvenlik: Metadona göre anlamlı QTc uzaması ve Torsades riski belirgin düşüktür. Yine de FDA etiketine göre transdermal formda 20 mcg/saat, bukkal formda 900 mcg/12 saat aşılmamalıdır.",
+      "secenekAciklamalari": {
+        "A": "DOĞRU İFADE — Mü reseptöründe parsiyel agonist; kappa ve delta reseptörlerinde antagonist.",
+        "B": "DOĞRU İFADE — Mü reseptörüne morfinden çok daha yüksek afiniteyle bağlanır ve yüksek lipofiliktir.",
+        "C": "YANLIŞ İFADE (cevap) — Oddi sfinkteri tonusuna etkisi tam agonistlerden AZDIR; biliyer ağrıda kontrendike değildir.",
+        "D": "DOĞRU İFADE — Solunum depresyonunda tavan etkisi vardır; ölümcül apne riski belirgin düşüktür.",
+        "E": "DOĞRU İFADE — Kötüye kullanım riski tam agonistlerden düşüktür; ABD'de Schedule III sınıfındadır."
+      },
+      "etiketler": [
+        "onkoloji",
+        "buprenorfin",
+        "farmakoloji",
+        "opioid reseptörleri",
+        "tavan etkisi"
+      ],
+      "zorluk": "kolay",
+      "kaynak": "Chapter 6 — Opioids: Buprenorphine Pharmacodynamics & Tapering Protocols"
+    }
+  ]
+}
