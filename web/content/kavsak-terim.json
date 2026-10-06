@@ -66,5 +66,8 @@
   "ADPKD": "nefroloji/polikistik-bobrek-hastaligi-pkd",
   "opioid toleransı": "palyatif/opioid-toleransi-mekanizmalari",
   "opioid rotasyonu": "palyatif/opioid-rotasyonu-ilkeleri",
-  "opioid kaynaklı hiperaljezi": "palyatif/oih-ve-tolerans-ayirici-tani"
+  "opioid kaynaklı hiperaljezi": "palyatif/oih-ve-tolerans-ayirici-tani",
+  "buprenorfin": "onkoloji/buprenorfin-rotasyonu-ve-induksiyon",
+  "opioid kaynaklı solunum depresyon": "onkoloji/opioidler-ve-solunum",
+  "metadon rotasyon": "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik"
 }

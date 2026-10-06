@@ -1,0 +1,54 @@
+{
+  "title": "İleri Okuma: Opioidler ve Solunum — Solunum Depresyonu Mekanizmaları ve Yönetimi",
+  "meta": {
+    "kaynakca": "opioid-kanser-agrisi",
+    "updatedAt": "6 Eki 2026",
+    "tags": [
+      "Onkoloji",
+      "Palyatif Bakım",
+      "Kanser Ağrısı",
+      "Opioid",
+      "Solunum Depresyonu",
+      "Nalokson",
+      "Buprenorfin",
+      "Kapnografi",
+      "Dispne"
+    ],
+    "parent": "kanser-agrisi-yonetimi",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "Genel Bakış",
+      "html": "<p class=\"mb-4\">Opioidlerin solunum üzerindeki etkisi, hücre içi sinyal iletiminden beyin sapındaki ritim üreten nöronlara ve kemoreseptör yanıtına uzanan mekanizmalara dayanır. Onkoloji ve algoloji pratiğinde güvenliği sağlamak ve <strong>opioid kaynaklı solunum depresyonunu (OIRD)</strong> doğru yönetmek için bu ilişkinin nöroanatomik, biyokimyasal ve klinik boyutları aşağıda özetlenmiştir.</p>"
+    },
+    {
+      "heading": "1. Nöroanatomik Substrat ve Solunum Merkezleri",
+      "html": "<p class=\"mb-4\">Opioidler, solunum ritminin üretimi ve modülasyonundan sorumlu yapılarda yoğun bulunan mü-opioid reseptörleri (MOP) üzerinden etki eder:</p><ul class=\"list-disc ml-5 space-y-2 mb-4\"><li><strong>Pre-Bötzinger kompleksi (preBötC):</strong> Ventral solunum grubunda yer alan ve spontan solunum ritmini üreten primer nöronal pacemaker alanı; MOP yoğunluğu çok yüksektir.</li><li><strong>Parabrakiyal / Kölliker-Fuse çekirdeği:</strong> Ponsta, inspiryum-ekspiryum geçişini düzenleyen nöral ağ.</li><li><strong>Nükleus traktus solitarius (NTS) ve medüller kemoreseptör alanlar:</strong> O<sub>2</sub>, CO<sub>2</sub> ve pH değişimlerini algılayan santral ve periferik aferentlerin entegre edildiği merkez.</li></ul>"
+    },
+    {
+      "heading": "2. Hücre İçi Sinyal Yolları",
+      "html": "<p class=\"mb-4\">Solunum nöronlarındaki baskılayıcı etki G<sub>i/o</sub> kenetli yolaklarla gerçekleşir:</p><ol class=\"list-decimal ml-5 space-y-2 mb-4\"><li><strong>Adenilat siklaz inhibisyonu:</strong> G<sub>αi/o</sub> alt birimi adenilat siklazı baskılar; hücre içi cAMP düşer.</li><li><strong>GIRK kanal aktivasyonu:</strong> G<sub>βγ</sub> alt birimi G-proteini kapılı içe doğrultucu potasyum kanallarını açar; potasyum çıkışıyla membran hiperpolarize olur ve preBötC nöronlarının spontan ateşleme frekansı düşer.</li><li><strong>Voltaj kapılı kalsiyum kanal inhibisyonu:</strong> Presinaptik N ve P/Q tipi kanallar inhibe edilir; kalsiyum girişi azaldığından eksitatör nörotransmitter (glutamat, P maddesi) salınımı baskılanır.</li></ol>"
+    },
+    {
+      "heading": "3. Solunum Fizyolojisindeki Değişiklikler",
+      "html": "<ul class=\"list-disc ml-5 space-y-2 mb-4\"><li><strong>Kemoreseptör yanıtının baskılanması:</strong> Opioidler hiperkapnik ventilatuvar yanıt (HCVR) eğrisini sağa ve aşağı kaydırır, hipoksik yanıtı da küntleştirir; vücut yükselen CO<sub>2</sub>'ye solunum sayısı ve derinliğini artırarak yanıt veremez.</li><li><strong>Kan gazı sıralaması:</strong> Hiperkapni (PaCO<sub>2</sub> artışı) hipoksemiden (SpO<sub>2</sub> düşüşü) çok önce gelişir — özellikle ek oksijen alan hastada. Yalnız puls oksimetreyle izlem hipoventilasyonu erken evrede kaçırabilir; <strong>kapnografi (EtCO<sub>2</sub>)</strong> daha duyarlıdır.</li><li><strong>Solunum paterni:</strong> Solunum sayısında azalma (&lt;10/dk), tidal hacimde düşme, düzensiz/ataksik solunum ve santral apneler.</li><li><strong>Öksürük refleksinin baskılanması:</strong> Medüller öksürük merkezinin baskılanmasıyla sekresyonlar birikip hava yolu obstrüksiyonuna yol açabilir.</li></ul>"
+    },
+    {
+      "heading": "4. Klinik Risk Faktörleri ve Özel Tablolar",
+      "html": "<ul class=\"list-disc ml-5 space-y-2 mb-4\"><li><strong>Sedasyon önce gelir:</strong> Solunum depresyonu hemen her zaman belirgin ve ilerleyici sedasyonu izler. Kronik kullanımda sedasyon ve solunum depresyonuna tolerans gelişse de titrasyon dönemlerinde sedasyon skoru (örn. Pasero skalası, POSS) en erken uyarı parametresidir.</li><li><strong>Sinerjik ilaç etkileşimleri (FDA kutulu uyarı):</strong> Opioidlerin benzodiazepin, gabapentinoid (gabapentin, pregabalin), Z-ilaçları, barbitürat veya alkolle birlikte kullanımı solunum depresyonu ve ölümcül aşırı doz riskini belirgin artırır (bazı çalışmalarda 10 kata varan).</li><li><strong>Böbrek yetmezliğinde metabolit birikimi:</strong> Morfinin renal atılan aktif metaboliti morfin-6-glukuronid (M6G) birikerek uzamış ve şiddetli solunum depresyonuna yol açar.</li><li><strong>Göğüs duvarı rijiditesi (\"wooden chest\"):</strong> Yüksek doz lipofilik opioidlerin (özellikle fentanil ve türevleri) hızlı IV uygulamasında gövde ve göğüs duvarı kaslarında masif rijidite gelişir; torasik kompliyans bozulur ve ventilasyon güçleşir.</li></ul>"
+    },
+    {
+      "heading": "5. Tam Agonistler ve Buprenorfinin Tavan Etkisi",
+      "html": "<ul class=\"list-disc ml-5 space-y-2 mb-4\"><li><strong>Tam μ-agonistler</strong> (morfin, oksikodon, fentanil, hidromorfon): Doza bağımlı ve kuramsal olarak tavanı olmayan solunum depresyonu riski taşır.</li><li><strong>Buprenorfin</strong> (parsiyel agonist): MOP'a çok yüksek afiniteyle bağlanır ama düşük intrinsik aktivite gösterir ve β-arrestin rekrütmanını daha az uyarır. Analjezide tavan etkisi göstermezken <strong>solunum depresyonunda belirgin tavan etkisi</strong> vardır; yüksek dozlarda bile ölümcül apne riski tam agonistlerden anlamlı düşüktür.</li></ul>"
+    },
+    {
+      "heading": "6. Akut Solunum Depresyonunda İzlem ve Nalokson",
+      "html": "<ul class=\"list-disc ml-5 space-y-2 mb-4\"><li><strong>Alarm bulguları:</strong> Solunum sayısı &lt;10/dk, SpO<sub>2</sub> &lt;%90, belirgin somnolans ve CO<sub>2</sub> retansiyonu (PaCO<sub>2</sub> &gt;45–50 mmHg).</li><li><strong>Ayırıcı tanı:</strong> Ağrılı, anksiyöz ve taşipneik bir kanser hastasındaki solunum sıkıntısı opioid toksisitesi DEĞİLDİR; opioid kaynaklı depresyon yavaş, yüzeyel solunum ve sedasyonla gelir.</li></ul><div class=\"border-l-4 border-red-500 bg-red-50 p-4 mb-4 text-slate-800\"><strong>Kronik opioid alan / kanser ağrılı hastada nalokson:</strong> Tam doz (örn. 0,4–2 mg IV bolus) şiddetli ağrı krizi, masif sempatik deşarj, nöbet ve akut akciğer ödemine yol açabilir. <strong>Hedef bilinci tamamen açmak değil, yeterli ventilasyonu (solunum sayısı ≥10–12/dk) sağlamaktır.</strong></div><ul class=\"list-disc ml-5 space-y-2 mb-4\"><li><strong>Titrasyon:</strong> Nalokson sulandırılarak 0,04–0,1 mg IV kademelerle, yanıt alınana kadar 2–3 dakikada bir verilir.</li><li><strong>Renarkotizasyon:</strong> Naloksonun etki süresi (yaklaşık 30–90 dakika) uzun etkili veya yavaş salınımlı opioidlerden kısadır; etkisi geçince depresyon yinelenebilir. Sürekli nalokson infüzyonu veya yakın izlem gerekir.</li></ul>"
+    },
+    {
+      "heading": "7. Palyatif Bakımda Terapötik Kullanım: Refrakter Dispne",
+      "html": "<p class=\"mb-4\">İleri evre kanserde refrakter dispne tedavisinde düşük doz sistemik opioidler (özellikle oral/parenteral morfin) santral nefes darlığı algısını modüle ederek sıkıntıyı güvenle azaltır; doğru titrasyonla klinik olarak anlamlı solunum depresyonu yapmaz.</p>"
+    }
+  ]
+}

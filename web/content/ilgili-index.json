@@ -7495,9 +7495,9 @@
    "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
   },
   {
-   "brans": "palyatif",
-   "slug": "opioid-toleransi-mekanizmalari",
-   "baslik": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Toleransı Kırma Stratejileri"
+   "brans": "onkoloji",
+   "slug": "opioidler-ve-solunum",
+   "baslik": "İleri Okuma: Opioidler ve Solunum — Solunum Depresyonu Mekanizmaları ve Yönetimi"
   },
   {
    "brans": "palyatif",
@@ -7506,8 +7506,8 @@
   },
   {
    "brans": "palyatif",
-   "slug": "opioidler-ana-sayfa",
-   "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları"
+   "slug": "opioid-toleransi-mekanizmalari",
+   "baslik": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Toleransı Kırma Stratejileri"
   },
   {
    "brans": "palyatif",
@@ -7627,13 +7627,13 @@
  "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik": [
   {
    "brans": "onkoloji",
-   "slug": "buprenorfin-rotasyonu-ve-induksiyon",
-   "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
+   "slug": "opioid-rotasyonu-2025-konsensus",
+   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
   },
   {
    "brans": "onkoloji",
-   "slug": "opioid-rotasyonu-2025-konsensus",
-   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
+   "slug": "buprenorfin-rotasyonu-ve-induksiyon",
+   "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
   },
   {
    "brans": "palyatif",
@@ -7641,9 +7641,9 @@
    "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
   },
   {
-   "brans": "palyatif",
-   "slug": "opioid-toleransi-mekanizmalari",
-   "baslik": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Toleransı Kırma Stratejileri"
+   "brans": "onkoloji",
+   "slug": "opioidler-ve-solunum",
+   "baslik": "İleri Okuma: Opioidler ve Solunum — Solunum Depresyonu Mekanizmaları ve Yönetimi"
   },
   {
    "brans": "palyatif",
@@ -7651,9 +7651,9 @@
    "baslik": "Palyatif Bakımda Ağrı Yönetimi"
   },
   {
-   "brans": "kardiyoloji",
-   "slug": "akut-perikardit",
-   "baslik": "Akut Perikardit"
+   "brans": "palyatif",
+   "slug": "opioid-toleransi-mekanizmalari",
+   "baslik": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Toleransı Kırma Stratejileri"
   }
  ],
  "onkoloji/onkolojik-aciller": [
@@ -7705,9 +7705,41 @@
    "baslik": "Palyatif Bakımda Ağrı Yönetimi"
   },
   {
+   "brans": "onkoloji",
+   "slug": "opioidler-ve-solunum",
+   "baslik": "İleri Okuma: Opioidler ve Solunum — Solunum Depresyonu Mekanizmaları ve Yönetimi"
+  }
+ ],
+ "onkoloji/opioidler-ve-solunum": [
+  {
+   "brans": "onkoloji",
+   "slug": "buprenorfin-rotasyonu-ve-induksiyon",
+   "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
+   "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
+  },
+  {
    "brans": "palyatif",
-   "slug": "noropatik-agrida-koadjuvan-tedavi",
-   "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi"
+   "slug": "palyatif-bakimda-agri-yonetimi",
+   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "opioid-toleransi-mekanizmalari",
+   "baslik": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Toleransı Kırma Stratejileri"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "opioidler-ana-sayfa",
+   "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "opioid-rotasyonu-2025-konsensus",
+   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
   }
  ],
  "onkoloji/pankreas-kanseri-ana-sayfa": [
@@ -8034,13 +8066,8 @@
  "palyatif/opioidler-ana-sayfa": [
   {
    "brans": "onkoloji",
-   "slug": "buprenorfin-rotasyonu-ve-induksiyon",
-   "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
-   "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
+   "slug": "opioidler-ve-solunum",
+   "baslik": "İleri Okuma: Opioidler ve Solunum — Solunum Depresyonu Mekanizmaları ve Yönetimi"
   }
  ],
  "palyatif/palyatif-bakim-ana-sayfa": [
@@ -8068,13 +8095,13 @@
  "palyatif/palyatif-bakimda-agri-yonetimi": [
   {
    "brans": "onkoloji",
-   "slug": "kanser-agrisi-yonetimi",
-   "baslik": "Kanser Ağrısı Yönetimi"
+   "slug": "buprenorfin-rotasyonu-ve-induksiyon",
+   "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
   },
   {
    "brans": "onkoloji",
-   "slug": "buprenorfin-rotasyonu-ve-induksiyon",
-   "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
   },
   {
    "brans": "onkoloji",
@@ -8087,14 +8114,14 @@
    "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
   },
   {
-   "brans": "palyatif",
-   "slug": "opioid-toleransi-mekanizmalari",
-   "baslik": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Toleransı Kırma Stratejileri"
+   "brans": "onkoloji",
+   "slug": "opioidler-ve-solunum",
+   "baslik": "İleri Okuma: Opioidler ve Solunum — Solunum Depresyonu Mekanizmaları ve Yönetimi"
   },
   {
    "brans": "palyatif",
-   "slug": "pankreas-agrisinda-tanisal-degerlendirme",
-   "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme"
+   "slug": "opioid-toleransi-mekanizmalari",
+   "baslik": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Toleransı Kırma Stratejileri"
   }
  ],
  "palyatif/pankreas-agrisinda-tanisal-degerlendirme": [
@@ -8124,9 +8151,9 @@
    "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
   },
   {
-   "brans": "palyatif",
-   "slug": "palyatif-bakimda-agri-yonetimi",
-   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
+   "brans": "onkoloji",
+   "slug": "opioidler-ve-solunum",
+   "baslik": "İleri Okuma: Opioidler ve Solunum — Solunum Depresyonu Mekanizmaları ve Yönetimi"
   }
  ],
  "palyatif/pankreas-kanserinde-refrakter-agri": [
@@ -8154,6 +8181,11 @@
    "brans": "onkoloji",
    "slug": "opioid-rotasyonu-2025-konsensus",
    "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "opioidler-ve-solunum",
+   "baslik": "İleri Okuma: Opioidler ve Solunum — Solunum Depresyonu Mekanizmaları ve Yönetimi"
   }
  ],
  "romatoloji/anca-iliskili-vaskulitler": [

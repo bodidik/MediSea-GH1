@@ -6289,5 +6289,149 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "opioid-kanser-agrisi": {
+    "baslik": "Opioidler ve kanser ağrısı",
+    "aciklama": "Opioid toleransı, buprenorfin ve opioid–solunum sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler ve kılavuzlar yayın kaydıyla (Crossref, PubMed), NCCN kılavuzu kurum sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Altamirano JM, Khalid SI, Slavin KV. Neurosurgical Techniques for Chronic Pain in Adult Cancer Survivors. Stereotact Funct Neurosurg 2025;103(6):566-575",
+        "yil": 2025,
+        "url": "https://doi.org/10.1159/000547391",
+        "tur": "makale"
+      },
+      {
+        "ad": "Biswas A, Weitzner AS, Zhu L, ve ark. Characterization of post-mastectomy pain syndrome in breast cancer patients undergoing subsequent reconstruction: A scoping review. J Plast Reconstr Aesthet Surg 2025;107:73-84",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.bjps.2025.06.001",
+        "tur": "makale"
+      },
+      {
+        "ad": "Davis MP, Davies A, McPherson ML, ve ark. Opioid conversion in adults with cancer: MASCC-ASCO-AAHPM-HPNA-NICSO guideline. Support Care Cancer 2025;33(3):243",
+        "yil": 2025,
+        "url": "https://doi.org/10.1007/s00520-025-09286-z",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ferraro MC, Cashin AG, Visser EJ, ve ark. Ketamine and other NMDA receptor antagonists for chronic pain. Cochrane Database Syst Rev 2025;(8):CD015373",
+        "yil": 2025,
+        "url": "https://doi.org/10.1002/14651858.CD015373.pub2",
+        "tur": "makale"
+      },
+      {
+        "ad": "Haupt LM, Haywood A, Sutherland HG, ve ark. The effects of OPRM1 118A>G on methadone response in pain management in advanced cancer at end of life. Sci Rep 2024;14(1):3411",
+        "yil": 2024,
+        "url": "https://doi.org/10.1038/s41598-024-54009-9",
+        "tur": "makale"
+      },
+      {
+        "ad": "Häuser W, Welsch P, Radbruch L, Fisher E, Bell RF, Moore RA. Cannabis-based medicines and medical cannabis for adults with cancer pain. Cochrane Database Syst Rev 2023;(6):CD014915",
+        "yil": 2023,
+        "url": "https://doi.org/10.1002/14651858.CD014915.pub2",
+        "tur": "makale"
+      },
+      {
+        "ad": "Jiao J, Fan J, Zhang Y, Chen L. Efficacy and Safety of Ketamine to Treat Cancer Pain in Adult Patients: A Systematic Review. J Pain Symptom Manage 2024;67(3):e185-e210",
+        "yil": 2024,
+        "url": "https://doi.org/10.1016/j.jpainsymman.2023.11.004",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kotlińska-Lemieszek A, Klepstad P, Haugen DF. Clinically significant drug-drug interactions involving opioid analgesics used for pain treatment in patients with cancer: update of a systematic review. Expert Opin Drug Metab Toxicol 2025;21(6):703-715",
+        "yil": 2025,
+        "url": "https://doi.org/10.1080/17425255.2025.2491743",
+        "tur": "makale"
+      },
+      {
+        "ad": "Nagar SD, Nagar SJ, Jordan V, Dawson J. Sympathetic nerve blocks for persistent pain in adults with inoperable abdominopelvic cancer. Cochrane Database Syst Rev 2024;(6):CD015229",
+        "yil": 2024,
+        "url": "https://doi.org/10.1002/14651858.CD015229.pub2",
+        "tur": "makale"
+      },
+      {
+        "ad": "National Comprehensive Cancer Network. NCCN Clinical Practice Guidelines in Oncology: Adult Cancer Pain. Version 2.2025",
+        "yil": 2025,
+        "url": "https://www.nccn.org/guidelines/guidelines-detail?category=3&id=1413",
+        "tur": "makale"
+      },
+      {
+        "ad": "Paice JA, Bohlke K, Barton D, ve ark. Use of Opioids for Adults With Pain From Cancer or Cancer Treatment: ASCO Guideline. J Clin Oncol 2023;41(4):914-930",
+        "yil": 2023,
+        "url": "https://doi.org/10.1200/JCO.22.02198",
+        "tur": "makale"
+      },
+      {
+        "ad": "Russin NH, Koskan AM, Martin MP. Art Therapy and Art Making for Addressing Cancer-Related Pain and Distress in Adult Populations: A Scoping Review. Int J Environ Res Public Health 2025;22(12):1877",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/ijerph22121877",
+        "tur": "makale"
+      },
+      {
+        "ad": "Wang D, Jiang T, Zheng L, ve ark. Analgesic treatment for refractory cancer pain caused by gastric cancer bone metastasis: A case report and literature review. Medicine (Baltimore) 2024;103(28):e38851",
+        "yil": 2024,
+        "url": "https://doi.org/10.1097/MD.0000000000038851",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yang M, Smeets L, Ahmed I, ve ark. The association among psychological factors, pain severity and quality of life in people living beyond adolescent and young adult cancer: a systematic review and meta-analysis. Qual Life Res 2026;35(3):75",
+        "yil": 2026,
+        "url": "https://doi.org/10.1007/s11136-026-04181-4",
+        "tur": "makale"
+      },
+      {
+        "ad": "Carr D. Management of acute pain in the patient chronically using opioids for non-cancer pain. UpToDate; son güncelleme 4 Haz 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/management-of-acute-pain-in-the-patient-chronically-using-opioids-for-non-cancer-pain",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Dhingra LK, Blinderman CD. Overview of cancer pain: General principles of management and pain syndromes. UpToDate; son güncelleme 9 Tem 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/overview-of-cancer-pain-general-principles-of-management-and-pain-syndromes",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Pisansky AJB, Berna C, Rathmell JP. Opioid tapering for patients with chronic pain. UpToDate; son güncelleme 28 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/opioid-tapering-for-patients-with-chronic-pain",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Portenoy RK, Mehta Z, Ahmed E. Cancer pain management with opioids: Optimizing analgesia. UpToDate; son güncelleme 10 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/cancer-pain-management-with-opioids-optimizing-analgesia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Portenoy RK, Mehta Z, Ahmed E. Prevention and management of side effects in patients receiving opioids for chronic pain. UpToDate; son güncelleme 12 Ara 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/prevention-and-management-of-side-effects-in-patients-receiving-opioids-for-chronic-pain",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosenquist R. Use of opioids in the management of chronic pain in adults. UpToDate; son güncelleme 15 Nis 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/use-of-opioids-in-the-management-of-chronic-pain-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Strada EA, Portenoy RK. Rehabilitative and integrative therapies for pain in patients with cancer. UpToDate; son güncelleme 2 Nis 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/rehabilitative-and-integrative-therapies-for-pain-in-patients-with-cancer",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Strain E. Opioid use disorder: Pharmacologic management. UpToDate; son güncelleme 12 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/opioid-use-disorder-pharmacologic-management",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Wiersema MJ, Saumoy M. Endoscopic ultrasound-guided celiac plexus interventions for pain related to pancreatic disease. UpToDate; son güncelleme 28 May 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/endoscopic-ultrasound-guided-celiac-plexus-interventions-for-pain-related-to-pancreatic-disease",
+        "tur": "uptodate"
+      }
+    ]
   }
 }
