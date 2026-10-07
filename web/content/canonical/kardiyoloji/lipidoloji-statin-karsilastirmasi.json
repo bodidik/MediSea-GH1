@@ -1,6 +1,7 @@
 {
   "title": "Statin Kıyaslaması",
   "meta": {
+    "kaynakca": "lipidoloji",
     "updatedAt": "03 Nis 2026",
     "tags": ["Lipidoloji", "Farmakoloji", "Rosuvastatin", "Atorvastatin", "Pravastatin", "CYP3A4", "Farmakokinetik"],
     "parent": "lipidoloji-guncel-kilavuz",

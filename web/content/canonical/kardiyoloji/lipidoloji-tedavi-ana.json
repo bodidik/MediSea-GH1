@@ -1,6 +1,7 @@
 {
   "title": "Klinik Lipidoloji tedavi",
   "meta": {
+    "kaynakca": "lipidoloji",
     "updatedAt": "22 Haz 2026",
     "tags": ["Kardiyoloji", "Lipid Yönetimi", "ASCVD", "Statinler", "PCSK9 İnhibitörleri", "Bempedoik Asit", "HoFH"],
     "parent": "lipidoloji-guncel-kilavuz",
