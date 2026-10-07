@@ -1,0 +1,304 @@
+{
+  "meta": {
+    "kaynakca": "opioid-kanser-agrisi",
+    "id": "agri-yonetimi",
+    "branch": "onkoloji",
+    "baslik": "Kanser Ağrısı Yönetimi",
+    "altbaslik": "Toplam ağrı ve onkolojik aciller, opioid toleransı ve titrasyon, MASCC-ASCO 2025 dönüşüm oranları, metadon/QTc ve buprenorfin geçişi, tolerans biyolojisi, koanaljezikler, girişimsel yöntemler ve opioid toksisitesi",
+    "rozetler": ["SINAV SPOTU", "YENİ"],
+    "guncelleme": "2026-10"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Kapsam",
+      "satirlar": [
+        { "metin": "Bu özet; NCCN 2025 (Version 2.2025), MASCC-ASCO-AAHPM-HPNA-NICSO 2025 Opioid Dönüşüm Kılavuzu, ASCO, ESMO, SIO-ASCO 2022, Cochrane derlemeleri ve UpToDate kaynaklarını temel farmakolojik ve fizyopatolojik mekanizmalarla birlikte ele alır." }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "1. Etiyopatofizyoloji ve Değerlendirme",
+      "satirlar": [
+        { "metin": "Kanser ağrısı hastaların **%59–90**'ını etkiler; hastalığın evresi ve tedavilerle ilişkili, dinamik bir süreçtir. Değerlendirmede ağrının mekanizması, ölçüm ölçekleri ve onkolojik acil tabloların ayrımı belirleyicidir." },
+        { "metin": "**Toplam ağrı (total pain):** Cicely Saunders'ın tanımladığı bu kavram; fiziksel nosisepsiyonun yanı sıra psikolojik stresi (anksiyete, depresyon), sosyal izolasyonu, ekonomik yükleri ve varoluşsal/spiritüel kaygıları kapsar. **Kritik nokta:** Kontrol edilemeyen fiziksel ağrıda psikososyal bileşenlerin atlanması gereksiz opioid doz artışına ve opioid toksisitesine yol açar." }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Ağrı Derecelendirme Ölçekleri",
+      "kolonlar": ["Grup", "Ölçekler"],
+      "satirlar": [
+        { "hucreler": ["Tek boyutlu", "Sayısal Derecelendirme Ölçeği (NRS 0–10), Görsel Analog Ölçek (VAS), Wong-Baker İfadeler Ölçeği"] },
+        { "hucreler": ["Çok boyutlu / palyatif", "Kısa Ağrı Envanteri (BPI), Edmonton Semptom Değerlendirme Sistemi (ESAS), Entegre Palyatif Bakım Sonuç Ölçeği (IPOS), EORTC QLQ-C30"] },
+        { "hucreler": ["Bilişsel kısıtlılık / iletişim engeli", "Behavioral Pain Scale (BPS), Critical Care Pain Observation Tool (CPOT), PAINAD, Doloplus-2"] }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Onkolojik Ağrı Acilleri (Kırmızı Bayraklar)",
+      "kolonlar": ["Acil durum", "Klinik ipucu ve yaklaşım"],
+      "satirlar": [
+        { "renk": "kirmizi", "hucreler": ["Malign spinal kord basısı (MSCC)", "Sırt/bel ağrısına eşlik eden motor kayıp, duyu seviyesi ve sfinkter kusuru. Acil MRG ve yüksek doz deksametazon endikasyonudur."] },
+        { "renk": "kirmizi", "hucreler": ["Patolojik kırık veya kırık riski", "Uzun kemiklerde (femur, humerus) Mirels skoru ≥8 olan litik metastazlar acil ortopedi/radyoterapi konsültasyonu gerektirir."] },
+        { "hucreler": ["İçi boş organ perforasyonu veya obstrüksiyonu", "Akut batın bulgularıyla başvuran intestinal obstrüksiyon."] },
+        { "hucreler": ["Enfeksiyon / apse", "Nötropenik hastalarda perianal veya epidural apseler."] },
+        { "hucreler": ["Tromboembolik olaylar", "Derin ven trombozu / akut akciğer embolisi."] }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "baslik": "Analjezi ile eş zamanlı",
+      "metin": "Akut ağrı krizinde bu acil durumlar analjezik titrasyonuyla **eş zamanlı** olarak dışlanmalıdır."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "2. Opioid Toleransı Tanımı (NCCN 2025 / FDA)",
+      "kolonlar": ["Opioid", "En az 1 hafta boyunca her gün"],
+      "satirlar": [
+        { "renk": "mavi", "hucreler": ["Oral morfin", "≥60 mg/gün"] },
+        { "hucreler": ["Transdermal fentanil", "≥25 mcg/saat"] },
+        { "hucreler": ["Oral oksikodon", "≥30 mg/gün"] },
+        { "hucreler": ["Oral hidromorfon", "≥8 mg/gün"] },
+        { "hucreler": ["Oral oksimorfon", "≥25 mg/gün"] },
+        { "hucreler": ["Başka bir güçlü opioid", "Ekvianaljezik doz"] }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "baslik": "Opioid-naiv mi, opioid-toleran mı?",
+      "metin": "Hastanın **opioid-naiv** mi **opioid-toleran** mı olduğunun ayırt edilmesi en kritik basamaktır. Toleran kabul edilmek için yukarıdaki dozlardan en az birinin **en az 1 hafta boyunca** her gün alınıyor olması şarttır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Opioid Başlangıcı ve Titrasyon",
+      "satirlar": [
+        { "metin": "**Opioid-naiv hastada başlangıç:** Orta-şiddetli ağrıda (NRS ≥4) kısa etkili (immediate-release, IR) oral morfin (5–10 mg oral, 4 saatte bir) veya eşdeğer kısa etkili opioidle başlanır." },
+        { "metin": "**Analjezik asansör (analgesic elevator):** ESMO/ASCO'ya göre orta dereceli ağrıda (NRS 4–6) geleneksel zayıf opioid basamağı (kodein, tramadol) atlanarak doğrudan düşük doz güçlü opioid (oral morfin 15–30 mg/gün) başlanabilir." },
+        { "metin": "**Titrasyon hızı:** Şiddetli ağrıda oral IR opioidler 24 saatlik toplam ihtiyaca göre her gün **%30–50** artırılır. IV titrasyonda değerlendirme **15–30 dakikada** bir yapılır." }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Kırılma Ağrısı (BTcP)",
+      "satirlar": [
+        { "metin": "**Tanım:** Düzenli idame analjezik tedavi altında stabil seyreden bazal ağrı zemininde aniden ortaya çıkan, tepe noktasına yaklaşık 10 dakikada ulaşan, geçici şiddetli ağrı ataklarıdır." },
+        { "metin": "**Kurtarma dozu:** NCCN ve ASCO'ya göre kısa etkili kurtarma dozu, günlük toplam oral morfin eşdeğer dozunun (**MEDD**) **%10–15**'i (ya da yaklaşık 1/6'sı) olarak hesaplanır." },
+        { "metin": "**Klinik gerçek:** Kurtarma dozu ile bazal doz arasındaki korelasyon zayıf olabildiği için kurtarma dozu hasta yanıtına göre bireysel titre edilir." }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "3. Uluslararası Opioid Dönüşüm Konsensüsü (MASCC-ASCO 2025)",
+      "satirlar": [
+        { "metin": "2025'te MASCC, ASCO, AAHPM, HPNA ve NICSO ortaklığında yayımlanan ilk küresel **Opioid Dönüşüm Kılavuzu**, geleneksel eş-analjezik yaklaşımı yeniden tanımlamıştır. İki temel paradigma değişimi:" },
+        { "metin": "**1. 'Eş-analjezik' teriminin reddi:** Dönüşüm oranları doğrudan eş-analjezik kabul edilmez. Bu oranlar yoksunluğu ve toksisiteyi önleyen **güvenli bir başlangıç dönüşüm oranı** sunar; analjezik idame için bireysel titrasyon şarttır." },
+        { "metin": "**2. Rutin otomatik doz indiriminin desteklenmemesi:** Çapraz tolerans kaybı gerekçesiyle yapılan rutin **%25–50'lik ampirik doz azaltımı**, hastayı yetersiz analjezi ve yoksunluk krizine sokabileceği için rutin olarak önerilmez." }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Uzlaşılan Opioid Dönüşüm Oranları (MASCC 2025)",
+      "kolonlar": ["Başlangıç opioidi", "Hedef opioid", "Dönüşüm oranı", "Uzlaşı"],
+      "satirlar": [
+        { "renk": "mavi", "hucreler": ["Oral morfin", "Oral oksikodon", "1,5 : 1 (15 mg morfin = 10 mg oksikodon)", "%89,4"] },
+        { "renk": "mavi", "hucreler": ["Oral morfin", "Oral hidromorfon", "5 : 1 (25 mg morfin = 5 mg hidromorfon)", "%89,1"] },
+        { "hucreler": ["Oral morfin", "Oral oksimorfon", "3 : 1", "%80,0"] },
+        { "hucreler": ["Oral oksikodon", "Oral morfin", "1:1 ile 1:2 arası", "%84,2"] },
+        { "hucreler": ["Oral oksikodon", "Oral oksimorfon", "2 : 1", "%89,4"] },
+        { "hucreler": ["Oral oksikodon", "Oral tapentadol", "1 : 5", "%83,3"] },
+        { "hucreler": ["Oral oksikodon", "IV oksikodon", "2 : 1", "%88,0"] },
+        { "hucreler": ["Oral hidrokodon", "Oral morfin", "1 : 1", "%88,4"] },
+        { "hucreler": ["Oral tramadol", "Oral morfin", "10 : 1", "%80,5"] },
+        { "hucreler": ["Oral tapentadol", "Oral morfin", "3 : 1", "%84,0"] },
+        { "renk": "yesil", "hucreler": ["Subkutan (herhangi bir opioid)", "IV (aynı opioid)", "1 : 1", "%91,6"] }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "4. Metadon Rotasyonu ve Kardiyak İzlem",
+      "satirlar": [
+        { "metin": "Metadon; NMDA reseptör antagonizması, monoamin geri alım blokajı ve böbrek yetmezliğinde aktif metabolitinin olmaması nedeniyle karmaşık ağrılarda güçlü bir seçenektir. Ancak doğrusal olmayan farmakokinetiği ve **QTc uzaması (torsades de pointes)** riski taşır." },
+        { "metin": "**Kararlı durum:** Metadonun kararlı duruma ulaşması 3–7 gün sürer. Doz 5–7 günden önce artırılmaz." }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "3 Günlük Geçiş Yöntemi (3-Day Switch)",
+      "kolonlar": ["Gün", "Eski opioid", "Metadon (hesaplanan günlük doz)"],
+      "satirlar": [
+        { "hucreler": ["1. gün", "%33 azaltılır (%67'si verilir)", "%33'ü verilir"] },
+        { "hucreler": ["2. gün", "%67 azaltılır (%33'ü verilir)", "%67'si verilir"] },
+        { "renk": "kirmizi", "hucreler": ["3. gün", "KESİLİR", "%100'ü verilir"] }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "EKG / QTc İzlem Algoritması (NCCN 2025 / UpToDate)",
+      "kolonlar": ["Durum", "Eylem"],
+      "satirlar": [
+        { "hucreler": ["Başlangıç EKG'si", "Metadon başlanacak hastada veya doz 30–40 mg/gün üzerine çıkacağında çekilir."] },
+        { "hucreler": ["Kontrol EKG'si", "Doz 40 mg/gün ve 100 mg/gün düzeylerine ulaştığında tekrarlanır."] },
+        { "renk": "yesil", "hucreler": ["QTc <450 ms", "Güvenli; metadon başlanabilir/sürdürülür."] },
+        { "renk": "sari", "hucreler": ["QTc 450–500 ms", "Artmış risk. Elektrolitler (K⁺, Mg²⁺) düzeltilir, QTc uzatan ilaçlar kesilir, dikkatle titre edilir."] },
+        { "renk": "kirmizi", "hucreler": ["QTc >500 ms", "Metadon KONTRENDİKE / KESİLMELİ. Buprenorfin veya fentanile geçilir."] }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Buprenorfin Rotasyonu (NCCN 2025 ve Bern Mikro-İndüksiyonu)",
+      "satirlar": [
+        { "metin": "Buprenorfin; mü-opioid reseptör parsiyel agonisti, kappa ve delta antagonistidir. **Solunum depresyonunda tavan etkisi** gösterir, Oddi sfinkteri tonusuna etkisi tam agonistlerden azdır, bilişsel bozukluk yapma riski düşüktür ve **böbrek yetmezliğinde doz ayarı gerektirmeyen** ilk tercih opioidlerdendir." },
+        { "metin": "**Presipite yoksunluk riski:** Tam agonistten buprenorfine geçerken buprenorfinin yüksek reseptör afinitesi tam agonistleri reseptörden söküp akut yoksunluk krizine yol açabilir." },
+        { "metin": "**NCCN 2025 dönüşüm kuralı:** Tam agonist alan hastada buprenorfine geçmeden önce mevcut opioid dozu **oral MEDD ≤30 mg/gün** düzeyine düşürülmelidir." },
+        { "metin": "**Doz sınırları:** Transdermal bant en fazla **20 mcg/saat** (20 mcg/saat buprenorfin ≈ 25 mcg/saat transdermal fentanil). Bukkal film en fazla **900 mcg/12 saat** (QTc uyarısı nedeniyle aşılmaz)." }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Bern Mikro-İndüksiyon Protokolü (Tam Agonist Kesilmeden Geçiş)",
+      "kolonlar": ["Gün", "Buprenorfin (SL)", "Mevcut tam agonist"],
+      "satirlar": [
+        { "hucreler": ["1", "0,2 mg 24 saatte bir", "Tam doz"] },
+        { "hucreler": ["2", "0,2 mg 12 saatte bir", "Tam doz"] },
+        { "hucreler": ["3", "0,5 mg 12 saatte bir", "Tam doz"] },
+        { "hucreler": ["4", "1,0 mg 12 saatte bir", "Tam doz"] },
+        { "hucreler": ["5", "2,0 mg 12 saatte bir", "Tam doz"] },
+        { "hucreler": ["6", "4,0 mg 12 saatte bir", "Tam doz"] },
+        { "renk": "kirmizi", "hucreler": ["7", "8,0 mg hedef doz", "KESİLİR"] }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "5. Opioid Reseptör Biyolojisi ve Tolerans Mekanizmaları",
+      "satirlar": [
+        { "metin": "**Akut sinyal iletimi:** Mü-opioid reseptör (MOP) uyarımıyla Gi/o proteini aktifleşir. Adenilat siklaz inhibe edilerek cAMP düşer, GIRK potasyum kanalları açılarak membran hiperpolarize olur, presinaptik Ca²⁺ kanalları kapanarak glutamat salınımı baskılanır." },
+        { "metin": "**GRK / β-arrestin-2 desensitizasyonu:** Kronik maruziyette MOP, GRK2/3 ve PKC kinazlarınca fosforile edilir. Sitoplazmik **β-arrestin-2** fosforile reseptöre bağlanarak Gi/o etkileşimini sterik olarak engeller (**desensitizasyon**) ve klatrin kaplı çukurlar aracılığıyla endositozu (**internalizasyon**) başlatır." },
+        { "metin": "**Adenilat siklaz süperaktivasyonu (cAMP rebound):** Opioidlerin adenilat siklazı sürekli baskılamasına karşı nöron enzim ekspresyonunu artırır. Opioid dozu düştüğünde masif cAMP sıçraması olur ve hücresel aşırı uyarılabilirlik (tolerans ve yoksunluk) tetiklenir." },
+        { "metin": "**NMDA ve santral sensitizasyon:** Sürekli opioid uyarımı spinal kordda NMDA reseptörlerinin Mg²⁺ blokajını kaldırır. Hücreye giren Ca²⁺, nNOS aktivasyonuyla nitrik oksit (NO) üreterek **opioid ilişkili hiperaljeziye (OIH)** yol açar. Ketamin ve metadon NMDA blokajıyla bu süreci kırar." },
+        { "metin": "**Glial TLR4 aktivasyonu:** Opioidler mikroglial **Toll-like reseptör 4 (TLR4)** kompleksini uyararak pro-inflamatuvar sitokin (TNF-α, IL-1β) salınımına ve nöroinflamasyona neden olur." },
+        { "metin": "**OPRM1 A118G polimorfizmi (rs1799971):** Ekzon 1'deki A118G değişimi N-glikozilasyon alanının kaybına yol açar ve reseptör yoğunluğunu düşürür. Çin popülasyonunda G-alleli taşıyıcılarında daha yüksek opioid doz ihtiyacı gözlenmiştir; Avrupa kökenli popülasyonlarda bu ilişki tutarsızdır." }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "6. Nöropatik Ağrıda Koanaljezikler",
+      "kolonlar": ["Sınıf", "Mekanizma ve yeri"],
+      "satirlar": [
+        { "renk": "yesil", "hucreler": ["SNRI (duloksetin)", "Kemoterapiye bağlı periferik nöropatide (KİPN) duloksetin (60 mg/gün), ASCO, ESMO ve NCCN kılavuzlarında **Seviye-1 güçlü kanıta sahip TEK ilaçtır**."] },
+        { "hucreler": ["Gabapentinoidler (gabapentin, pregabalin)", "Voltaj kapılı kalsiyum kanallarının α2δ alt birimini bloke eder. Tümör basısına bağlı pleksopati ve radikülopatilerde ilk tercih koanaljeziklerdir."] },
+        { "renk": "sari", "hucreler": ["Trisiklik antidepresanlar (amitriptilin, nortriptilin)", "İnen inhibitör serotonin/noradrenalin yollarını güçlendirir. Yaşlılarda antikolinerjik yan etkiler ve kardiyotoksisite nedeniyle dikkatli kullanılır."] },
+        { "hucreler": ["Kortikosteroidler (deksametazon)", "Tümöral sinir/pleksus basısı, kemik metastazı ve kapsül gerilmesine bağlı viseral ağrıda perinöral ödemi azaltan güçlü koanaljeziktir."] }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Özel Kanser Ağrısı Sendromları",
+      "satirlar": [
+        { "metin": "**Post-mastektomi ağrı sendromu (PMPS):** Mastektomi/aksiller diseksiyon sonrası T2–T3 kökenli **interkostobrakiyal sinir (ICBN)** yaralanmasıyla gelişen fokal nöropatik ağrıdır. İlk tercih duloksetin/gabapentinoidler ya da fokal alanlarda **%5 topikal lidokain flaster**dir." },
+        { "metin": "**Kanserin neden olduğu kemik ağrısı (CIBP):** Osteoklastik yıkım ve prostaglandin artışı vardır. Multimodal şemada **NSAİİ/selekoksib + bisfosfonat (zoledronik asit) / denosumab + radyoterapi** birlikte kullanılır." }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "7. Girişimsel Yöntemler: Sempatik Nörolitik Bloklar",
+      "satirlar": [
+        { "metin": "Farmakoterapiye yanıtsız ya da tolere edilemeyen opioid toksisitesi gelişen hastalarda WHO 4. basamak girişimsel yöntemler devreye girer." },
+        { "metin": "**Çölyak pleksus nörolizi (CPN):** Pankreas, mide, karaciğer ve üst GİS malignitelerine bağlı viseral ağrıda EUS, BT veya skopi rehberliğinde %70–100 etil alkol ya da fenol ile uygulanır. Hastaların %50–80'inde birkaç ay süren analjezik rahatlama sağlar." },
+        { "metin": "**Sık yan etkiler:** Sempatik blokaja bağlı **geçici hipotansiyon** (IV hidrasyonla yönetilir) ve **geçici diyare**." },
+        { "metin": "**Cochrane 2024:** Tekli sempatik nörolitik bloklar opioid tüketimini ortalama **41,63 mg MME/gün** azaltır (GRADE: çok düşük kesinlik)." },
+        { "metin": "**Splanknik sinir nörolizi:** T5–T12 kaynaklı splanknik sinirlere uygulanır. Çölyak bölgesinde tümör invazyonuna bağlı anatomik bozulma ya da başarısız CPN öyküsünde tercih edilir." },
+        { "metin": "**Süperior hipogastrik pleksus bloğu:** Pelvik organ (uterus, over, prostat, rektum) tümörlerinde kullanılır." },
+        { "metin": "**Ganglion impar bloğu:** Perineal ve rektal bölge ağrılarında etkilidir." }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "İntratekal İlaç Dağıtım Sistemleri ve Entegratif Tedavi",
+      "satirlar": [
+        { "metin": "**İntratekal pompalar (ITDD):** Sistemik tedaviye dirençli yaygın ağrılarda **intratekal morfin, bupivakain, zikonotid veya klonidin** kombinasyonları sürekli infüze edilir. Sistemik opioid dozunun yaklaşık 1/300'ü kadar intratekal doz yeterli analjezi sağlar." },
+        { "metin": "**SIO-ASCO 2022 — aromataz inhibitörüne bağlı artralji:** Meme kanseri hastalarında **akupunktur**, güçlü öneri ve orta kesinlikte kanıtla önerilir." }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "8. Opioid İlişkili Solunum Depresyonu (OIRD) ve Nalokson",
+      "satirlar": [
+        { "metin": "**Fizyopatoloji:** Medulladaki pre-Bötzinger kompleksindeki MOP reseptörlerinin uyarılmasıyla hiperkapnik solunum yanıtı baskılanır. **Hiperkapni (PaCO₂ artışı), hipoksiden (SpO₂ düşüşü) çok daha önce gelişir.**" },
+        { "metin": "**Kronik opioid alan hastada nalokson kuralı:** Ani tam doz (0,4–2,0 mg IV bolus) nalokson **masif ağrı krizine, şiddetli sempatik deşarja, konvülsiyonlara ve akut akciğer ödemine** yol açar." },
+        { "metin": "**Hedef:** Hastayı tamamen uyandırmak değil, solunum sayısını **≥10–12/dk** düzeyine getirmektir." },
+        { "metin": "**Titrasyon:** Nalokson sulandırılarak **0,04–0,1 mg IV** düşük doz kademeleriyle, yanıt alınana kadar 2–3 dakikada bir titre edilir. Yeniden narkotizasyon riski nedeniyle yakın izlem şarttır." }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Opioid İlişkili Nörotoksisite (OIN) ve Miyoklonus",
+      "satirlar": [
+        { "metin": "**Etiyoloji:** Yüksek doz opioid (özellikle morfin ve hidromorfon) ve eş zamanlı böbrek yetmezliğinde nörotoksik metabolit **morfin-3-glukuronid (M3G)** birikimi." },
+        { "metin": "**Klinik tablo:** Miyoklonik sıçramalar, hiperaljezi, allodini, halüsinasyonlar ve deliryum." },
+        { "metin": "**Yönetim:** Nörotoksik opioidin dozu düşürülür ya da aktif metaboliti böbrekten atılmayan **fentanil, buprenorfin veya metadona** rotasyon yapılır. Miyoklonus için **klonazepam** veya lorazepam eklenir; hidrasyon optimize edilir." }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Opioid İlişkili Konstipasyon (OIC) ve PAMORA",
+      "satirlar": [
+        { "metin": "**ASCO/ESMO ilkesi:** Opioid başlanan her kanser hastasında eş zamanlı **profilaktik laksatif (senna)** başlanır. Senna'ya dokuzat eklenmesinin ek laksatif fayda sağlamadığı gösterilmiştir." },
+        { "metin": "**PAMORA (periferik etkili mü-opioid antagonistleri):** Kan-beyin bariyerini geçmeden bağırsaktaki MOP reseptörlerini bloke eder. Konvansiyonel laksatiflere dirençli OIC'de **naldemedin (0,2 mg/gün oral)**, **metilnaltrekson (SC)** veya **naloksegol** kullanılır." }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "baslik": "PAMORA kontrendikasyonu",
+      "metin": "Mekanik intestinal obstrüksiyonu ya da obstrüksiyon riski olan hastada perforasyon tehlikesi nedeniyle PAMORA'lar **kontrendikedir**."
+    },
+    {
+      "tip": "metin",
+      "baslik": "9. Klinik Vaka Sentezleri",
+      "satirlar": [
+        { "metin": "**Vaka 1 — Metadon rotasyonu ve QTc:** Evre IV prostat kanserli 66 yaşında erkek, kemik metastazı ağrısı için oral oksikodon (120 mg/gün) alıyor. Ağrı kontrolü yetersiz (NRS 8/10), koanaljezik olarak sitalopram (40 mg/gün) kullanıyor. Metadon rotasyonu planlanıyor; QTc 475 ms." },
+        { "metin": "→ **Risk analizi:** QTc 450–500 ms aralığında (artmış risk); ayrıca QTc'yi uzatan sitalopram kullanılıyor. → **İlk adım:** Sitalopram dozu düşürülür ya da QTc'yi etkilemeyen bir antidepresana geçilir; serum K⁺ ve Mg²⁺ kontrol edilip optimize edilir. → **Rotasyon:** Oksikodon MEDD'ye çevrilir (120 mg × 1,5 = 180 mg MEDD) ve 3 günlük geçiş uygulanır. → **İzlem:** Kararlı duruma 3–7 günde ulaşılır. Doz 40 mg/gün'e ulaşınca kontrol EKG'si çekilir; QTc >500 ms olursa metadon kesilip buprenorfine geçilir." },
+        { "metin": "**Vaka 2 — Böbrek yetmezliğinde opioid seçimi:** Evre IV rektum kanserli, diyalize girmeyen kronik böbrek yetmezliği (eGFR 20 mL/dk) olan 74 yaşında kadın; şiddetli pelvik ağrı (NRS 9/10), opioid-naiv." },
+        { "metin": "→ **Kaçınılacaklar:** Morfin ve kodein. Morfinin renal yolla atılan M3G (nörotoksik/miyoklonus) ve M6G (sedasyon/solunum depresyonu) metabolitleri birikerek ölümcül toksisite yapar. → **Tercih edilecekler:** Buprenorfin, fentanil veya metadon. → **Reçete:** Opioid-naiv hastada **transdermal buprenorfin 5 mcg/saat** (7 günde bir değişim) başlanır. Ağrı atakları için böbrekte metabolit biriktirmeyen kısa etkili fentanil ya da düşük doz hidromorfon kurtarma dozu olarak planlanır." },
+        { "metin": "**Vaka 3 — Dirençli pankreas kanseri ağrısı ve EUS-CPN:** Rezeke edilemeyen pankreas başı kanserli 55 yaşında erkek; sırta vuran şiddetli epigastrik ağrı (NRS 9/10). Yüksek doz transdermal fentanil (100 mcg/saat) ve pregabaline (300 mg/gün) rağmen ağrı kontrol edilemiyor; ağır sedasyon ve konstipasyon gelişmiş." },
+        { "metin": "→ **Endikasyon:** Sistemik tedaviye dirençli, opioid yan etkileri tolere edilemeyen üst abdominal viseral kanser ağrısında **EUS rehberliğinde çölyak pleksus nörolizi** endikedir. → **Teknik:** EUS ile mide arka duvarından geçilerek çölyak arter köküne ulaşılır; aspirasyonla kan gelmediği doğrulandıktan sonra %70–100 etil alkol + bupivakain enjekte edilir. → **Yan etki yönetimi:** Sempatik blokaja bağlı geçici hipotansiyon için işlem öncesi/sonrası IV izotonik hidrasyon; artan parasempatik tonusa bağlı geçici diyare için loperamid." },
+        { "metin": "**Vaka 4 — KİPN ve koanaljezik seçimi:** Kolorektal kanser nedeniyle oksaliplatin bazlı kemoterapi alan 58 yaşında hasta; iki ayakta eldiven-çorap tarzında, soğukla tetiklenen parestezi, yanma ve batma (NRS 8/10)." },
+        { "metin": "→ **Tanı:** Oksaliplatine bağlı kemoterapi ilişkili periferik nöropati (KİPN). → **Kanıta dayalı tedavi:** ASCO ve ESMO'da KİPN için Seviye-1 güçlü kanıta sahip tek ilaç **duloksetin**dir. → **Doz şeması:** Duloksetin 30 mg/gün başlanır, 1 hafta sonra 60 mg/gün idameye çıkılır. Yetersiz kalırsa ikinci basamakta pregabalin (75–150 mg/gün) eklenir." },
+        { "metin": "**Vaka 5 — Bern mikro-indüksiyonuyla buprenorfine geçiş:** Yüksek doz oral oksikodon (160 mg/gün = 240 MME/gün) alan, şiddetli opioid ilişkili konstipasyon ve hiperaljezi nedeniyle buprenorfine geçirilmek istenen hasta; tam agonistin kesilmesi masif ağrı krizi riski taşıyor." },
+        { "metin": "→ **Rasyonel:** Tam agonist kesilmeden mikro doz buprenorfin verilir ve MOP reseptörleri kademeli olarak buprenorfinle doyurulur. → **Uygulama:** 1–2. gün buprenorfin 0,2 mg SL; 3–4. gün 0,5–1 mg SL 12 saatte bir; 5–6. gün 2–4 mg SL 12 saatte bir (oksikodon 160 mg bu süre boyunca aynen sürer); 7. gün 8 mg SL hedef doza ulaşılır ve **oksikodon tamamen kesilir**." }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "10. Terimler Sözlüğü",
+      "kolonlar": ["Terim", "Tanım"],
+      "satirlar": [
+        { "hucreler": ["α2δ alt birimi", "Gabapentinoidlerin bağlandığı voltaj kapılı kalsiyum kanalı alt birimi; presinaptik glutamat salınımını engeller."] },
+        { "hucreler": ["β-arrestin-2", "MOP C-terminali fosforile edildikten sonra reseptöre bağlanan, G-protein sinyalini sterik olarak engelleyen (desensitizasyon) ve klatrin aracılı endositozu (internalizasyon) başlatan sitoplazmik protein."] },
+        { "hucreler": ["Bern yöntemi", "Tam agonist kesilmeden mikro doz buprenorfinle başlanıp doz kademeli artırılarak yapılan buprenorfin indüksiyon tekniği."] },
+        { "hucreler": ["Buprenorfin", "Mü parsiyel agonisti, kappa ve delta antagonisti. Solunum depresyonunda tavan etkisi gösterir; böbrek yetmezliğinde ilk seçeneklerdendir."] },
+        { "hucreler": ["Çölyak pleksus nörolizi (CPN)", "T12–L1 düzeyinde çölyak arter çevresindeki sempatik pleksusun %70–100 etil alkolle kimyasal ablasyonu; pankreas ve üst GİS kanserlerinde viseral ağrıyı azaltır."] },
+        { "hucreler": ["Duloksetin", "SNRI grubu antidepresan; ASCO/ESMO'da KİPN tedavisinde Seviye-1 güçlü kanıta sahip tek ilaç."] },
+        { "hucreler": ["Ekvianaljezik doz", "Farklı opioidlerin aynı analjezik etkiyi sağlayan oral/parenteral doz karşılığı."] },
+        { "hucreler": ["Metadon", "Mü agonisti, NMDA reseptör antagonisti ve monoamin geri alım inhibitörü; QTc uzaması riski nedeniyle EKG takibi gerektirir."] },
+        { "hucreler": ["Miyoklonus", "OIN'de M3G birikimine bağlı ani kas sıçramaları; tedavide klonazepam ve opioid rotasyonu kullanılır."] },
+        { "hucreler": ["Naldemedin", "Kan-beyin bariyerini geçmeyen PAMORA; OIC tedavisinde oral 0,2 mg/gün."] },
+        { "hucreler": ["Nalokson", "Kısa etkili mü-opioid reseptör antagonisti; kronik opioid alanlarda OIRD geri çevirmesi için 0,04–0,1 mg IV yavaş titrasyonla verilir."] },
+        { "hucreler": ["Opioid ilişkili hiperaljezi (OIH)", "Kronik opioid uyarımıyla NMDA aracılı spinal sensitizasyon sonucu, opioid dozu artırıldıkça ağrının şiddetlenmesi."] },
+        { "hucreler": ["Opioid rotasyonu", "Analjezik yetersizlik ya da tolere edilemeyen yan etki nedeniyle mevcut opioidin başka bir opioide dönüştürülmesi."] },
+        { "hucreler": ["PAMORA", "Periferik etkili mü-opioid reseptör antagonistleri (naldemedin, metilnaltrekson, naloksegol); OIC tedavisinde kullanılır."] },
+        { "hucreler": ["Pre-Bötzinger kompleksi", "Medulla oblongatada spontan solunum ritmini üreten, MOP reseptörlerinden zengin pacemaker bölgesi."] }
+      ]
+    }
+  ]
+}

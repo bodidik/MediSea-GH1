@@ -23,6 +23,15 @@
           "hazir": true
         },
         {
+          "id": "agri-yonetimi",
+          "baslik": "Kanser Ağrısı Yönetimi",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
+        },
+        {
           "id": "tumor-lizis-sendromu",
           "baslik": "Tümör Lizis Sendromu",
           "rozetler": [
