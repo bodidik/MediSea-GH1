@@ -3512,6 +3512,14 @@
         "kaynak": "kavram"
       }
     ],
+    "kardiyoloji/lipidoloji-diyet-ve-ldl": [
+      {
+        "slug": "ldl-hesaplama",
+        "name": "LDL Kolesterol Hesaplama",
+        "eslesen": "LDL",
+        "kaynak": "kavram"
+      }
+    ],
     "kardiyoloji/lipidoloji-guncel-kilavuz": [
       {
         "slug": "ldl-hesaplama",
@@ -3537,6 +3545,20 @@
       }
     ],
     "kardiyoloji/lipidoloji-tedavi-ana": [
+      {
+        "slug": "ldl-hesaplama",
+        "name": "LDL Kolesterol Hesaplama",
+        "eslesen": "lipid",
+        "kaynak": "kavram"
+      }
+    ],
+    "kardiyoloji/lipidoloji-tirzepatid-lipid-profili": [
+      {
+        "slug": "bmi",
+        "name": "BMI & İdeal Vücut Ağırlığı",
+        "eslesen": "tirzepatid",
+        "kaynak": "kavram"
+      },
       {
         "slug": "ldl-hesaplama",
         "name": "LDL Kolesterol Hesaplama",
@@ -6048,6 +6070,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "kardiyoloji/lipidoloji-tirzepatid-lipid-profili",
+        "baslik": "Tirzepatid ve Lipid Profili",
+        "eslesen": "tirzepatid",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "klinik-nutrisyon/klinik-nutrisyon-glim-kriterleri",
         "baslik": "GLIM Kriterleri: Malnütrisyon Tanısında Küresel Standart",
         "eslesen": "malnütrisyon",
@@ -7446,11 +7474,11 @@
     ]
   },
   "olcum": {
-    "konu": 474,
+    "konu": 476,
     "arac": 262,
-    "araciOlanKonu": 329,
+    "araciOlanKonu": 331,
     "konusuOlanArac": 156,
-    "bag": 612,
-    "kavramBag": 446
+    "bag": 615,
+    "kavramBag": 449
   }
 }

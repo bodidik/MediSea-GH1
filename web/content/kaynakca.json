@@ -6433,5 +6433,167 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "lipidoloji": {
+    "baslik": "Lipidoloji",
+    "aciklama": "Lipidoloji sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler ve kılavuzlar yayın kaydıyla (Crossref), UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. ClinicalKey derlemeleri doğrulanamadığı için listede yok. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Attardo S, Musumeci O, Velardo D, Toscano A. Statins Neuromuscular Adverse Effects. Int J Mol Sci 2022;23(15):8364",
+        "yil": 2022,
+        "url": "https://doi.org/10.3390/ijms23158364",
+        "tur": "makale"
+      },
+      {
+        "ad": "Bétrisey S, Haller ML, Efthimiou O, ve ark. Lipid-Lowering Therapy and Risk of Hemorrhagic Stroke: A Systematic Review and Meta-Analysis of Randomized Controlled Trials. J Am Heart Assoc 2024;13(4):e030714",
+        "yil": 2024,
+        "url": "https://doi.org/10.1161/JAHA.123.030714",
+        "tur": "makale"
+      },
+      {
+        "ad": "Blumenthal RS, Morris PB, ve ark. 2026 ACC/AHA/AACVPR/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Management of Dyslipidemia. JACC 2026;87(19):2624-2757",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.jacc.2025.11.016",
+        "tur": "makale"
+      },
+      {
+        "ad": "Bolt L, Speierer A, Bétrisey S, ve ark. Is there a shift from cardiovascular to cancer death in lipid-lowering trials? A systematic review and meta-analysis. PLoS One 2024;19(2):e0297852",
+        "yil": 2024,
+        "url": "https://doi.org/10.1371/journal.pone.0297852",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cholesterol Treatment Trialists' (CTT) Collaboration. Assessment of adverse effects attributed to statin therapy in product labels: a meta-analysis of double-blind randomised controlled trials. Lancet 2026;407(10529):689-703",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/S0140-6736(25)01578-8",
+        "tur": "makale"
+      },
+      {
+        "ad": "Emanuelsson F, Nordestgaard BG, Tybjærg-Hansen A, Benn M. Impact of LDL Cholesterol on Microvascular Versus Macrovascular Disease. J Am Coll Cardiol 2019;74(11):1465-1476",
+        "yil": 2019,
+        "url": "https://doi.org/10.1016/j.jacc.2019.07.037",
+        "tur": "makale"
+      },
+      {
+        "ad": "Fu B, Shang Z, Song S, ve ark. Adverse reactions of Niaoduqing granules: A systematic review and meta-analysis. Phytomedicine 2023;109:154535",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.phymed.2022.154535",
+        "tur": "makale"
+      },
+      {
+        "ad": "Iannuzzo G, Calcaterra IL, Gentile M, ve ark. New insights into the management of homozygous familial hypercholesterolemia patients treated with lomitapide: a single-center experience. Front Endocrinol 2024;15:1515846",
+        "yil": 2024,
+        "url": "https://doi.org/10.3389/fendo.2024.1515846",
+        "tur": "makale"
+      },
+      {
+        "ad": "Jones MR, Urits I, Wolf J, ve ark. Drug-Induced Peripheral Neuropathy: A Narrative Review. Curr Clin Pharmacol 2020;15(1):38-48",
+        "yil": 2020,
+        "url": "https://doi.org/10.2174/1574884714666190121154813",
+        "tur": "makale"
+      },
+      {
+        "ad": "Khan SU, Yedlapati SH, Lone AN, ve ark. PCSK9 inhibitors and ezetimibe with or without statin therapy for cardiovascular risk reduction: a systematic review and network meta-analysis. BMJ 2022;377:e069116",
+        "yil": 2022,
+        "url": "https://doi.org/10.1136/bmj-2021-069116",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kosmas CE, Bousvarou MD, Papakonstantinou EJ, ve ark. Novel Pharmacological Therapies for the Management of Hyperlipoproteinemia(a). Int J Mol Sci 2023;24(17):13622",
+        "yil": 2023,
+        "url": "https://doi.org/10.3390/ijms241713622",
+        "tur": "makale"
+      },
+      {
+        "ad": "Newman CB, Preiss D, Tobert JA, ve ark. Statin Safety and Associated Adverse Events: A Scientific Statement From the American Heart Association. Arterioscler Thromb Vasc Biol 2019;39(2):e38-e81",
+        "yil": 2019,
+        "url": "https://doi.org/10.1161/ATV.0000000000000073",
+        "tur": "makale"
+      },
+      {
+        "ad": "Osadnik T, Goławski M, Lewandowski P, ve ark. A network meta-analysis on the comparative effect of nutraceuticals on lipid profile in adults. Pharmacol Res 2022;183:106402",
+        "yil": 2022,
+        "url": "https://doi.org/10.1016/j.phrs.2022.106402",
+        "tur": "makale"
+      },
+      {
+        "ad": "Pergolizzi JV, Magnusson P, LeQuang JA, Razmi R, Zampogna G, Taylor R. Statins and Neuropathic Pain: A Narrative Review. Pain Ther 2020;9(1):97-111",
+        "yil": 2020,
+        "url": "https://doi.org/10.1007/s40122-020-00153-9",
+        "tur": "makale"
+      },
+      {
+        "ad": "Sałat K, Gryzło B, Kulig K. Experimental Drugs for Neuropathic Pain. Curr Neuropharmacol 2018;16(8):1193-1209",
+        "yil": 2018,
+        "url": "https://doi.org/10.2174/1570159x16666180510151241",
+        "tur": "makale"
+      },
+      {
+        "ad": "Savulescu-Fiedler I, Dorobantu-Lungu LR, Dragosloveanu S, ve ark. The Cross-Talk Between the Peripheral and Brain Cholesterol Metabolisms. Curr Issues Mol Biol 2025;47(2):115",
+        "yil": 2025,
+        "url": "https://doi.org/10.3390/cimb47020115",
+        "tur": "makale"
+      },
+      {
+        "ad": "Sydhom P, Al-Quraishi B, El-Shawaf M, ve ark. The clinical effectiveness and safety of low/moderate-intensity statins & ezetimibe combination therapy vs. high-intensity statin monotherapy: a systematic review and meta-analysis. BMC Cardiovasc Disord 2024;24(1):660",
+        "yil": 2024,
+        "url": "https://doi.org/10.1186/s12872-024-04144-y",
+        "tur": "makale"
+      },
+      {
+        "ad": "van Bruggen FH, Zuidema SU, Luijendijk HJ. Quantitative assessment of baseline imbalances in evolocumab and alirocumab trials: a meta-epidemiological study. BMC Med Res Methodol 2024;24(1):137",
+        "yil": 2024,
+        "url": "https://doi.org/10.1186/s12874-024-02260-z",
+        "tur": "makale"
+      },
+      {
+        "ad": "Vuorio A, Kovanen PT, Strandberg T. Ezetimibe alone for over 75 years old as a primary prevention to decrease cardiovascular events. Ann Med 2026;58(1):2634484",
+        "yil": 2026,
+        "url": "https://doi.org/10.1080/07853890.2026.2634484",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yadav A, Sawant V, Singh Bedi V, Yadav K. Dyslipidemia and peripheral arterial disease. Indian Heart J 2024;76:S86-S89",
+        "yil": 2024,
+        "url": "https://doi.org/10.1016/j.ihj.2024.01.010",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cheung AK. Secondary prevention of cardiovascular disease in end-stage kidney disease (dialysis). UpToDate; son güncelleme 21 Kas 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/secondary-prevention-of-cardiovascular-disease-in-end-stage-kidney-disease-dialysis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Cheung AK, Kronenberg F. Lipid management in patients with nondialysis chronic kidney disease. UpToDate; son güncelleme 2 Eyl 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/lipid-management-in-patients-with-nondialysis-chronic-kidney-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Fornoni A, Radhakrishnan J. Lipid abnormalities in nephrotic syndrome. UpToDate; son güncelleme 28 Nis 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/lipid-abnormalities-in-nephrotic-syndrome",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosenson RS. Statins: Actions, side effects, and administration. UpToDate; son güncelleme 9 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/statins-actions-side-effects-and-administration",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosenson RS, Baker SK. Statin muscle-related adverse events. UpToDate; son güncelleme 9 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/statin-muscle-related-adverse-events",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Rosenson RS, Lopez-Sendon J. Management of low-density lipoprotein cholesterol (LDL-C) in the secondary prevention of cardiovascular disease. UpToDate; son güncelleme 14 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-low-density-lipoprotein-cholesterol-ldl-c-in-the-secondary-prevention-of-cardiovascular-disease",
+        "tur": "uptodate"
+      }
+    ]
   }
 }

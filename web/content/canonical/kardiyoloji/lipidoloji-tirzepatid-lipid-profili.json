@@ -1,0 +1,32 @@
+{
+  "title": "Tirzepatid ve Lipid Profili",
+  "meta": {
+    "kaynakca": "lipidoloji",
+    "updatedAt": "7 Eki 2026",
+    "tags": ["Lipidoloji", "Tirzepatid", "GIP/GLP-1", "LDL-K", "Trigliserit", "ApoB", "CKM"],
+    "parent": "lipidoloji-tedavi-ana",
+    "order": 37
+  },
+  "sections": [
+    {
+      "heading": "💉 Uzman Özeti: Çift GIP/GLP-1 Agonisti",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">Tirzepatid, çift <strong>GIP</strong> (glikoz bağımlı insülinotropik polipeptit) ve <strong>GLP-1</strong> (glukagon benzeri peptit-1) reseptör agonisti yapısında, obezite ve Tip 2 diyabet tedavisinde kullanılan güçlü bir metabolik ajandır. Plazma LDL-kolesterol (LDL-K) ve genel lipid profili üzerindeki etkileri doğrudan ve dolaylı mekanizmalarla özetlenebilir.</p>"
+    },
+    {
+      "heading": "1. LDL-Kolesterol (LDL-K) Üzerindeki Etkisi",
+      "html": "<ul class=\"space-y-3 text-sm leading-relaxed text-slate-700\"><li><strong>Kilo Kaybıyla Orantılı Mütevazı Düşüş:</strong> Kilo verme müdahalelerinde elde edilen lipid yanıtlarında, vücut ağırlığındaki her 1 kg'lık kayıp LDL-K düzeylerinde yaklaşık <strong>0.3 ila 1.7 mg/dL</strong> arasında ılımlı (modest) bir azalma sağlar. Tirzepatid ile yapılan klinik çalışmalarda (SURPASS ve SURMOUNT serisi meta-analizleri) LDL-K düzeylerinde mütevazı ancak istatistiksel olarak anlamlı bir düşüş gözlenmektedir.</li><li><strong>Aterojenik Partikül Kalitesinde İyileşme (sdLDL ve ApoB):</strong> Obezite ve insülin direncinde baskın olan, kolesterol içeriği azalmış ancak vasküler duvara sızma kapasitesi yüksek <strong>küçük-yoğun LDL (sdLDL)</strong> partiküllerinin oranı tirzepatid tedavisiyle azalır. Ayrıca toplam aterojenik partikül sayısını doğrudan gösteren <strong>ApoB</strong> ve <strong>non-HDL-K</strong> seviyelerinde de belirgin gerileme elde edilir.</li></ul>"
+    },
+    {
+      "heading": "2. Genel Lipid Profiline Bütüncül Etkileri",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Tirzepatidin lipid metabolizması üzerindeki en belirgin ve güçlü etkisi LDL-K'den ziyade <strong>trigliseritler (TG)</strong> ve insülin direnci parametreleri üzerindedir:</p><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700\"><li><strong>Trigliseritler (TG):</strong> Vücut ağırlığındaki belirgin azalma (kg başına ~1.3–4.0 mg/dL TG düşüşü) ve visseral yağ dokusunun gerilemesiyle birlikte, tirzepatid kullanımı açlık ve postprandiyal trigliserit düzeylerinde <strong>%15 ila %30</strong>'a varan belirgin düşüşler sağlar.</li><li><strong>HDL-Kolesterol (HDL-K):</strong> İnsülin duyarlılığının artması ve VLDL klerensinin hızlanmasıyla ilişkili olarak HDL-K düzeylerinde ılımlı artışlar izlenebilir.</li></ul>"
+    },
+    {
+      "heading": "3. Klinik Yaklaşım ve Kılavuz Pozisyonu (2026 ACC/AHA Kılavuzu)",
+      "html": "<ul class=\"space-y-3 text-sm leading-relaxed text-slate-700\"><li><strong>Kardiyovasküler-Böbrek-Metabolik (CKM) Fayda:</strong> 2026 ACC/AHA Dislipidemi Yönetimi Kılavuzu'na göre, tirzepatid gibi GLP-1/GIP türevi reseptör agonistleri; kilo kaybı, kan basıncı kontrolü, glisemik regülasyon ve trigliserit/LDL-K düşüşünü kapsayan çok yönlü bir kardiyovasküler koruma sağlar.</li><li><strong>Tamamlayıcı Rol:</strong> Tirzepatid tek başına primer bir statin alternatifi (lipid düşürücü monoterapisi) <strong>değildir</strong>. Yüksek veya çok yüksek kardiyovasküler riskli olgularda hedeflenen agresif LDL-K hedeflerine (<strong>&lt;55 mg/dL</strong> veya <strong>&lt;70 mg/dL</strong>) ulaşılabilmesi için statin ve/veya ezetimib tedavilerine ek olarak, yaşam tarzı ve kilo yönetimini destekleyici bir bileşen olarak değerlendirilmektedir.</li></ul>"
+    },
+    {
+      "heading": "💡 Klinik Özet",
+      "html": "<div class=\"bg-indigo-50 border-l-4 border-indigo-500 p-4 shadow-sm\"><p class=\"text-sm text-indigo-900 leading-relaxed\">Tirzepatid, sağladığı belirgin kilo kaybı ve insülin duyarlılığı artışına bağlı olarak LDL-K ve ApoB seviyelerinde <strong>ılımlı düşüş</strong>, trigliserit düzeylerinde ise <strong>güçlü bir gerileme</strong> meydana getirerek aterojenik lipid profilini düzeltir.</p></div>"
+    }
+  ]
+}

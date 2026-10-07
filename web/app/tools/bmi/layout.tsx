@@ -53,13 +53,13 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/klinik-nutrisyon/klinik-nutrisyon-glim-kriterleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                GLIM Kriterleri: Malnütrisyon Tanısında Küresel Standart
+              <Link href="/topics/kardiyoloji/lipidoloji-tirzepatid-lipid-profili" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Tirzepatid ve Lipid Profili
               </Link>
             </li>
             <li>
-              <Link href="/topics/endokrinoloji/tirzepatid-kardiyorenal-koruma" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Tirzepatid: Kardiyorenal Koruma ve Pleiotropik Etkiler
+              <Link href="/topics/klinik-nutrisyon/klinik-nutrisyon-glim-kriterleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                GLIM Kriterleri: Malnütrisyon Tanısında Küresel Standart
               </Link>
             </li>
           </ul>
