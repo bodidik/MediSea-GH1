@@ -1,0 +1,147 @@
+{
+  "id": "pearl-gogu-koah-001",
+  "accessLevel": "premium",
+  "topic": "KOAH — Tanı, Fenotipler, Tedavi, Alevlenme ve Perioperatif Yönetim",
+  "pearls": [
+    {
+      "id": "p-gog-koah-001",
+      "level": "Kılavuz",
+      "title": "Pre-KOAH ve PRISm Tanısal Ayrımı",
+      "content": "<p>Post-bronkodilatör <strong>FEV₁/FVC ≥ 0,70</strong> olmasına karşın solunumsal semptom, amfizem veya gaz hapsi gösteren olgular <strong>pre-KOAH</strong>; oran korunmuşken (FEV₁/FVC ≥ 0,70) <strong>FEV₁ &lt; %80</strong> beklenen olması <strong>PRISm</strong> (Preserved Ratio Impaired Spirometry) olarak tanımlanır.</p>",
+      "trigger": "Tanı"
+    },
+    {
+      "id": "p-gog-koah-002",
+      "level": "Klinik",
+      "title": "Küçük Hava Yolu Mukus Tıkaçlarının Bağımsız Risk Yükü",
+      "content": "<p>Göğüs BT'de veya histopatolojide <strong>&lt; 2 mm</strong> çaplı küçük hava yollarında saptanan mukus tıkaçları (MUC5AC/MUC5B aşırı üretimi), spirometrik obstrüksiyon derecesinden bağımsız olarak tüm nedenlere bağlı mortalite riskini anlamlı derecede artırır.</p>",
+      "trigger": "Prognoz"
+    },
+    {
+      "id": "p-gog-koah-003",
+      "level": "Klinik",
+      "title": "MOLT (Multiple Organs Loss of Tissue) Fenotipi",
+      "content": "<p>İleri derece amfizem, <strong>BMI ≤ 21 kg/m²</strong>, sarkopeni ve osteoporozun bir arada bulunduğu; aşırı sistemik katabolizma ve doku kaybıyla seyreden ağır fenotiptir.</p>",
+      "trigger": "Fenotip"
+    },
+    {
+      "id": "p-gog-koah-004",
+      "level": "Klinik",
+      "title": "Sentrilobüler, Paraseptal ve Panlobüler Amfizem",
+      "content": "<p><strong>Sentrilobüler amfizem</strong> varlığı ve radyolojik şiddeti, paraseptal amfizeme göre yıllık FEV₁ ve DLCO kaybı ile mortalite artışıyla doğrudan ilişkilidir; <strong>panlobüler amfizem</strong> klasik olarak α₁-antitripsin eksikliğinde baskındır.</p>",
+      "trigger": "Prognoz"
+    },
+    {
+      "id": "p-gog-koah-005",
+      "level": "Kılavuz",
+      "title": "GOLD 2026: Grup E'de Başlangıç Eozinofil Eşiği",
+      "content": "<p>Yeni tanı GOLD <strong>Grup E</strong> hastasında idame tedaviye başlanırken kan eozinofil sayısı (BEC) <strong>≥ 300/µL</strong> ise doğrudan <strong>üçlü idame tedavi (ICS + LABA + LAMA)</strong> seçilir; BEC &lt; 300/µL ise LABA + LAMA.</p>",
+      "trigger": "Tedavi"
+    },
+    {
+      "id": "p-gog-koah-006",
+      "level": "Kılavuz",
+      "title": "Dupilumab Endikasyonu",
+      "content": "<p>Üçlü (ICS + LABA + LAMA) idameye rağmen alevlenen, <strong>kronik bronşit fenotipli</strong> ve <strong>BEC ≥ 300/µL</strong> olan olgularda onaylanan ilk biyolojik ajan olan <strong>dupilumab (anti-IL-4Rα)</strong>, yıllık orta-ağır alevlenme oranını yaklaşık <strong>%30</strong> azaltır; pre-BD FEV₁'de plaseboya göre yaklaşık 80 mL ek artış sağlar (BOREAS, NOTUS).</p>",
+      "trigger": "Biyolojik"
+    },
+    {
+      "id": "p-gog-koah-007",
+      "level": "Klinik",
+      "title": "BODE İndeksindeki Değişimin Sağkalım Değeri",
+      "content": "<p>BODE skoru mortaliteyi tek başına FEV₁'den daha iyi öngörür; tıbbi veya cerrahi (LVRS) girişim sonrası BODE skorunda <strong>1 puanlık düşüş</strong> uzun dönem sağkalımın güçlü bir göstergesidir.</p>",
+      "trigger": "Prognoz"
+    },
+    {
+      "id": "p-gog-koah-008",
+      "level": "Klinik",
+      "title": "Transfer Katsayısının (KCO) Bağımsız Prognostik Gücü",
+      "content": "<p>Tek nefes <strong>DLCO</strong> ve <strong>KCO</strong> (DLCO/VA) düşüklüğü, FEV₁'den bağımsız olarak artmış alevlenme, efor intoleransı ve solunumsal mortalitenin güçlü öngördürücüsüdür.</p>",
+      "trigger": "Prognoz"
+    },
+    {
+      "id": "p-gog-koah-009",
+      "level": "Kılavuz",
+      "title": "Alevlenmede Steroid Dozu ve Süresi",
+      "content": "<p>Akut KOAH alevlenmesinde oral prednizolon <strong>40 mg/gün</strong> eşdeğeri <strong>5 gün</strong> verilir; 5 günün üzerine uzatmak ek klinik fayda sağlamaz, advers etkileri artırır.</p>",
+      "trigger": "Alevlenme"
+    },
+    {
+      "id": "p-gog-koah-010",
+      "level": "Kılavuz",
+      "title": "Alevlenmede Antibiyotik Kriterleri",
+      "content": "<p>Ampirik antibiyotik; <strong>üç kardinal semptomun</strong> (dispne artışı, balgam hacmi artışı, balgam pürülansı) üçü de olan, ya da <strong>biri pürülan balgam olmak üzere ikisi</strong> olan hastalarda veya mekanik ventilasyon gerektiren olgularda <strong>5 gün</strong> verilir (Anthonisen).</p>",
+      "trigger": "Alevlenme"
+    },
+    {
+      "id": "p-gog-koah-011",
+      "level": "Kılavuz",
+      "title": "Akut Alevlenmede NIMV (BiPAP)",
+      "content": "<p>Solunumsal asidozlu (<strong>pH &lt; 7,35, PaCO₂ > 45 mmHg</strong>) alevlenmede NIMV, entübasyon riskini yaklaşık üçte bire indirir (RR ≈ 0,36) ve hastane mortalitesini yaklaşık yarıya düşürür (RR ≈ 0,54).</p>",
+      "trigger": "Ventilasyon"
+    },
+    {
+      "id": "p-gog-koah-012",
+      "level": "Klinik",
+      "title": "Yüksek İrtifa Seyahat Kontrendikasyonları",
+      "content": "<p><strong>FEV₁ &lt; %30</strong>, istirahat <strong>SpO₂ ≤ %88</strong> (PaO₂ &lt; 55 mmHg), kronik hiperkapni (<strong>PaCO₂ ≥ 52 mmHg</strong>) veya sistolik PAB <strong>> 60 mmHg</strong> olan KOAH hastasının <strong>2500 m</strong> (8200 ft) üzerine çıkması kontrendikedir.</p>",
+      "trigger": "Seyahat"
+    },
+    {
+      "id": "p-gog-koah-013",
+      "level": "Klinik",
+      "title": "Yüksek İrtifada Asetazolamid Tehlikesi",
+      "content": "<p>Kronik hiperkapnik KOAH'ta <strong>asetazolamid</strong>, solunumla kompanse edilemeyen ağır metabolik asidoza yol açar ve eritrosit karbonik anhidrazını inhibe ederek doku CO₂ taşınmasını bozar; hiperkapnik komayı tetikleyebilir.</p>",
+      "trigger": "Seyahat"
+    },
+    {
+      "id": "p-gog-koah-014",
+      "level": "Klinik",
+      "title": "Uçuş Öncesi HAST (Hipoksi İrtifa Simülasyon Testi)",
+      "content": "<p>Deniz seviyesinde istirahat <strong>SpO₂ %92–95</strong> olan KOAH hastasına 20 dakika <strong>%15 O₂</strong> solutularak uygulanır; test sırasında <strong>PaO₂ &lt; 50 mmHg</strong> veya <strong>SpO₂ &lt; %85</strong> uçuşta ek oksijen gereğini gösterir.</p>",
+      "trigger": "Seyahat"
+    },
+    {
+      "id": "p-gog-koah-015",
+      "level": "Klinik",
+      "title": "Anestezide Akciğer Koruyucu Ventilasyon",
+      "content": "<p>Tidal hacim <strong>6–8 mL/kg</strong> ideal vücut ağırlığı, sürücü basınç <strong>≤ 15 cmH₂O</strong>, plato basıncı <strong>≤ 28–30 cmH₂O</strong>; plato basıncının <strong>> 35 cmH₂O</strong> olması barotravma için kritik eşiktir.</p>",
+      "trigger": "Anestezi"
+    },
+    {
+      "id": "p-gog-koah-016",
+      "level": "Klinik",
+      "title": "İntraoperatif Oto-PEEP ve Devre Ayırma",
+      "content": "<p>Genel anestezide ani hipotansiyon ve tepe hava yolu basıncı artışında (oto-PEEP / breath-stacking) anestezi devresi kısa süreliğine (&lt; 1 dk) <strong>ayrılır</strong>; hapsolan hava boşalınca venöz dönüş ve hemodinami hızla düzelir.</p>",
+      "trigger": "Anestezi"
+    },
+    {
+      "id": "p-gog-koah-017",
+      "level": "Kılavuz",
+      "title": "LVRS Yüksek Risk Grubu (NETT)",
+      "content": "<p>Post-BD <strong>FEV₁ ≤ %20</strong> ile birlikte <strong>DLCO ≤ %20</strong> ya da <strong>homojen amfizem</strong> varlığı LVRS'yi kontrendike kılar; NETT'te bu grupta 30 günlük cerrahi mortalite yaklaşık %16 bulunmuştur.</p>",
+      "trigger": "Girişimsel"
+    },
+    {
+      "id": "p-gog-koah-018",
+      "level": "Klinik",
+      "title": "Endobronşiyal Valfte Fissür Şartı",
+      "content": "<p>Hedef lob ile komşu loblar arasında interlober fissür bütünlüğünün <strong>> %90</strong> olması ve <strong>kollateral ventilasyonun bulunmaması</strong> (CV negatif) EBV başarısı için zorunludur.</p>",
+      "trigger": "Girişimsel"
+    },
+    {
+      "id": "p-gog-koah-019",
+      "level": "Klinik",
+      "title": "Postoperatif Torasik Epidural Analjezi",
+      "content": "<p>Orta torasik epidural analjezi (T1–T8) interkostal parezi yapsa da <strong>frenik sinir (C3–C5) korunduğu</strong> için diyafram işlevi bozulmaz; opioid tasarrufu sağlayarak pnömoni ve uzamış ventilasyon riskini azaltır.</p>",
+      "trigger": "Anestezi"
+    },
+    {
+      "id": "p-gog-koah-020",
+      "level": "Kılavuz",
+      "title": "Uzun Süreli Oksijen Tedavisi (LTOT) Kriteri",
+      "content": "<p>Stabil KOAH'ta istirahat <strong>PaO₂ ≤ 55 mmHg</strong> (SaO₂ ≤ %88) veya kor pulmonale / sekonder polisitemi varlığında <strong>PaO₂ 56–59 mmHg</strong> ise günde <strong>≥ 15 saat</strong> LTOT mortaliteyi azaltır.</p>",
+      "trigger": "Tedavi"
+    }
+  ]
+}
