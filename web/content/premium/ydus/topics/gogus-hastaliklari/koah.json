@@ -1,0 +1,301 @@
+{
+  "meta": {
+    "kaynakca": "koah",
+    "id": "koah",
+    "branch": "gogus-hastaliklari",
+    "baslik": "KOAH",
+    "altbaslik": "Yüksek verimli noktalar: spirometrik tanı, pre-KOAH ve PRISm, küçük hava yolu patolojisi, mortaliteyi azaltan tedaviler, GOLD ABE, biyolojikler, Roma alevlenme sınıflaması ve girişimsel yöntemler",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-10"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": false,
+    "quiz": false,
+    "vaka": false,
+    "video": false
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Tanı ve Sınıflama",
+      "satirlar": [
+        {
+          "metin": "**Spirometrik tanı kriteri:** Post-bronkodilatör **FEV₁/FVC < 0,70** sabit oranı. Yaşa bağlı yanlış pozitifliği önlemek için alt normal sınır (LLN, z-skoru −1,645) önerilse de GOLD klinik basitlik nedeniyle **< 0,70** sabit eşiğini standart kabul eder."
+        },
+        {
+          "metin": "**En sık etiyolojik etken (etiyotip):** Tütün dumanı maruziyeti (**COPD-C**). Genetik olarak en iyi tanımlanmış etken **α₁-antitripsin eksikliğidir** (**COPD-G**, PiZZ genotipi)."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Pre-KOAH ve PRISm Ayrımı",
+      "kolonlar": [
+        "Durum",
+        "Spirometri",
+        "Özellik"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "**Pre-KOAH**",
+            "Post-BD FEV₁/FVC **≥ 0,70**",
+            "Solunumsal semptomlar, yapısal BT anomalileri (amfizem, gaz hapsi) veya hızlanmış FEV₁ kaybı"
+          ]
+        },
+        {
+          "hucreler": [
+            "**PRISm** (Preserved Ratio Impaired Spirometry)",
+            "Post-BD FEV₁/FVC **≥ 0,70** (korunmuş oran) ve **FEV₁ < %80** beklenen",
+            "KOAH'a ilerleme ve artmış mortalite riski"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Patofizyoloji ve Histopatoloji",
+      "satirlar": [
+        {
+          "metin": "**Obstrüksiyonun birincil anatomik odağı:** İç çapı **< 2 mm** olan küçük hava yolları (terminal ve respiratuvar bronşiyoller). Lümen daralması peribronşiyoler fibrozis, goblet hücre metaplazisi ve alveoler tutunma kaybıyla (loss of alveolar tethering) gelişir."
+        },
+        {
+          "metin": "**Fonksiyon kaybı ve mortaliteyle en güçlü ilişkili amfizem tipi:** **Sentrilobüler amfizem** — paraseptal amfizeme göre yıllık FEV₁ ve DLCO kaybı ve mortalite artışıyla doğrudan ilişkilidir. **Panlobüler amfizem** ise sıklıkla α₁-antitripsin eksikliğinde görülür."
+        },
+        {
+          "metin": "**Mukus tıkaçları:** Küçük hava yollarında (< 2 mm) BT'de veya histopatolojik olarak saptanan yaygın lüminal mukus tıkaçları, spirometrik evreden bağımsız olarak tüm nedenlere bağlı mortaliteyi artırır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Stabil KOAH'ta Mortaliteyi Azalttığı Gösterilen Yaklaşımlar",
+      "kolonlar": [
+        "Yaklaşım",
+        "Endikasyon / koşul"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "**Sigaranın bırakılması**",
+            "Hastalık seyrini değiştiren ve mortaliteyi düşüren en etkili girişim"
+          ]
+        },
+        {
+          "hucreler": [
+            "**Uzun süreli oksijen tedavisi (LTOT)**",
+            "PaO₂ ≤ 55 mmHg veya SaO₂ ≤ %88; ya da kor pulmonale / sekonder polisitemi varlığında PaO₂ 56–59 mmHg. Günde **≥ 15 saat** kullanım"
+          ]
+        },
+        {
+          "hucreler": [
+            "**Pulmoner rehabilitasyon**",
+            "Alevlenme nedeniyle hastaneye yatış sonrası, taburculuğu izleyen **4 hafta içinde** başlatıldığında mortaliteyi azaltır"
+          ]
+        },
+        {
+          "hucreler": [
+            "**Akciğer hacim azaltma cerrahisi (LVRS)**",
+            "Üst lob baskın amfizem ve rehabilitasyon sonrası düşük egzersiz kapasitesi olan seçilmiş olgular"
+          ]
+        },
+        {
+          "hucreler": [
+            "**Uzun süreli NPPV (evde BiPAP)**",
+            "Belirgin, kalıcı gündüz hiperkapnisi (**PaCO₂ ≥ 52 mmHg**, ≥ 7 kPa) olan stabil olgular"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Prognoz ve Biyobelirteçler",
+      "satirlar": [
+        {
+          "metin": "**En çok boyutlu prognoz skoru:** **BODE indeksi** — BMI, Obstrüksiyon (FEV₁), Dispne (mMRC), Egzersiz (6 dakika yürüme mesafesi). LVRS sonrası BODE skorunda 1 puanlık düşüş sağkalım artışının güçlü bir göstergesidir."
+        },
+        {
+          "metin": "**Duyarlı gaz değişimi parametresi:** Transfer katsayısı (**KCO**, DLCO/VA) ve **DLCO** düşüklüğü. AATD'li ve AATD'siz KOAH'ta KCO düşüşü tüm nedenlere bağlı ve solunumsal mortalitenin bağımsız öngördürücüsüdür."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "GOLD ABE: Başlangıç Farmakoterapisi",
+      "kolonlar": [
+        "Grup",
+        "Tanım",
+        "İlk seçenek"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "**A**",
+            "mMRC 0–1 / CAT < 10; yılda 0–1 orta alevlenme (hastane yatışı yok)",
+            "Tekli bronkodilatör (**LAMA veya LABA**)"
+          ]
+        },
+        {
+          "hucreler": [
+            "**B**",
+            "mMRC ≥ 2 / CAT ≥ 10; yılda 0–1 orta alevlenme",
+            "İkili bronkodilatör (**LABA + LAMA**)"
+          ]
+        },
+        {
+          "hucreler": [
+            "**E**, kan eozinofili < 300/µL",
+            "Yılda ≥ 2 orta veya ≥ 1 hastane yatışlı alevlenme",
+            "**LABA + LAMA**"
+          ]
+        },
+        {
+          "hucreler": [
+            "**E**, kan eozinofili ≥ 300/µL",
+            "Aynı",
+            "**ICS + LABA + LAMA** (üçlü tedavi)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "İnhale Kortikosteroid ve Hedefli Tedaviler",
+      "satirlar": [
+        {
+          "metin": "**ICS yanıtını öngören en güçlü biyobelirteç:** Kan eozinofil sayısı (BEC). **BEC ≥ 300/µL** ICS'nin ve üçlü tedavinin en net endikasyonudur; **BEC < 100/µL** ise ICS önerilmez (pnömoni riski artar, fayda yok)."
+        },
+        {
+          "metin": "**Dupilumab (anti-IL-4Rα):** Üçlü tedaviye rağmen alevlenen, kronik bronşitli ve **BEC ≥ 300/µL** KOAH'ta onaylanan ilk biyolojik ajan; alevlenmeleri yaklaşık **%30** azaltır ve pre-BD FEV₁'de anlamlı artış sağlar."
+        },
+        {
+          "metin": "**Mepolizumab (anti-IL-5):** Üçlü tedavi alan ve **BEC ≥ 300/µL** olan grupta alevlenmeleri azaltır."
+        },
+        {
+          "metin": "**Roflumilast (oral PDE4 inhibitörü):** **FEV₁ < %50**, kronik bronşit fenotipi ve sık alevlenme öyküsü olanlarda."
+        },
+        {
+          "metin": "**Ensifentrin:** İnhale dual PDE3/PDE4 inhibitörü; bronkodilatasyon ve antiinflamatuvar etkiyi birleştirir, mukosiliyer klirensi artırır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Akut Alevlenme (ECOPD)",
+      "satirlar": [
+        {
+          "metin": "**En sık neden:** Solunum yolu enfeksiyonları (%70–80). Virüslerden **rinovirüs ve influenza**; bakterilerden **tiplendirilemeyen Haemophilus influenzae, Streptococcus pneumoniae ve Moraxella catarrhalis**. Ağır obstrüksiyonda (FEV₁ < %30) **Pseudomonas aeruginosa** riski eklenir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Alevlenme Şiddeti — Roma Sınıflaması",
+      "kolonlar": [
+        "Şiddet",
+        "Kriterler"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "**Hafif**",
+            "Dispne VAS < 5, solunum sayısı < 24/dk, kalp hızı < 95/dk, SaO₂ ≥ %92, CRP < 10 mg/L"
+          ]
+        },
+        {
+          "hucreler": [
+            "**Orta**",
+            "Şu beş kriterden **en az üçü**: dispne VAS ≥ 5, solunum sayısı ≥ 24/dk, kalp hızı ≥ 95/dk, SaO₂ < %92, CRP ≥ 10 mg/L"
+          ]
+        },
+        {
+          "hucreler": [
+            "**Ağır**",
+            "Hiperkapni ve asidoz: **PaCO₂ > 45 mmHg ve pH < 7,35**"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Alevlenmede Tedavi Süreleri ve Ventilatuvar Destek",
+      "satirlar": [
+        {
+          "metin": "**Sistemik glukokortikoid:** Oral prednizolon 40 mg/gün eşdeğeri **5 gün**; 5 günün üzerine uzatmak ek fayda sağlamaz, yan etkiyi artırır."
+        },
+        {
+          "metin": "**Antibiyotik:** Pürülan balgam ve kardinal semptomları (Anthonisen kriterleri) olanlarda **5 gün**."
+        },
+        {
+          "metin": "**Ventilatuvar destek:** Solunumsal asidozlu (pH < 7,35, PaCO₂ > 45 mmHg) akut solunum yetmezliğinde **NIMV (BiPAP) ilk seçenektir**; entübasyon gereksinimini ve mortaliteyi azaltır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Girişimsel, Cerrahi ve Özel Durumlar",
+      "kolonlar": [
+        "Başlık",
+        "Kritik nokta"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "**LVRS yüksek risk grubu (NETT)**",
+            "Post-BD **FEV₁ ≤ %20** ve beraberinde **DLCO ≤ %20** ya da BT'de **homojen amfizem** → mortalite belirgin artar; LVRS yapılmaz"
+          ]
+        },
+        {
+          "hucreler": [
+            "**Endobronşiyal valf**",
+            "Hedef lob ile komşu loblar arasında **kollateral ventilasyon olmamalı** (CV negatif); BT'de interlober fissür bütünlüğü **> %90**"
+          ]
+        },
+        {
+          "hucreler": [
+            "**Yüksek irtifada asetazolamid**",
+            "Kronik hiperkapnik KOAH'ta oluşturduğu metabolik asidoz yetersiz ventilatuvar kompansasyonla ağırlaşır; eritrosit karbonik anhidraz inhibisyonu doku-akciğer CO₂ taşınmasını bozarak hiperkapnik komayı tetikleyebilir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Anestezide Akciğer Koruyucu Ventilasyon",
+      "kolonlar": [
+        "Parametre",
+        "Hedef"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Tidal hacim",
+            "**6–8 mL/kg** ideal vücut ağırlığı"
+          ]
+        },
+        {
+          "hucreler": [
+            "Sürücü basınç",
+            "**≤ 15 cmH₂O**"
+          ]
+        },
+        {
+          "hucreler": [
+            "Plato basıncı",
+            "**≤ 28–30 cmH₂O**; barotravma riskinin belirgin arttığı eşik **> 35 cmH₂O**"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "baslik": "Anestezide akut hipotansiyon ve oto-PEEP",
+      "metin": "Ventilatör devresi geçici olarak **ayrılır**; hapsolan havanın boşalmasıyla venöz dönüş düzelir ve hemodinami toparlanır."
+    }
+  ]
+}

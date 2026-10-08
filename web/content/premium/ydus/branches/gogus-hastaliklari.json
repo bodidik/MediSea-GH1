@@ -50,9 +50,10 @@
           "id": "koah",
           "baslik": "KOAH",
           "rozetler": [
-            "YAKINDA"
+            "YENİ",
+            "SINAV SPOTU"
           ],
-          "hazir": false
+          "hazir": true
         },
         {
           "id": "astim",
