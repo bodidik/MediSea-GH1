@@ -53,13 +53,13 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/gogus/koah-ucus-oksijen-hesaplama" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması
+              <Link href="/topics/gogus/koah-cpet-ve-ebv" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi
               </Link>
             </li>
             <li>
-              <Link href="/topics/gogus/koah-yuksek-rakim-seyahat" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                KOAH ve Yüksek Rakım / Hava Yolculuğu
+              <Link href="/topics/gogus/koah-fizyolojisi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler
               </Link>
             </li>
           </ul>

@@ -2995,7 +2995,121 @@
         "kaynak": "kavram"
       }
     ],
+    "gogus/koah-cpet-ve-ebv": [
+      {
+        "slug": "bap65",
+        "name": "BAP-65",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bode",
+        "name": "BODE İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "decaf",
+        "name": "DECAF Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "gold-koah",
+        "name": "GOLD KOAH Sınıflaması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "mmrc",
+        "name": "mMRC Dispne",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
+    "gogus/koah-fizyolojisi": [
+      {
+        "slug": "bap65",
+        "name": "BAP-65",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bode",
+        "name": "BODE İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "decaf",
+        "name": "DECAF Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "gold-koah",
+        "name": "GOLD KOAH Sınıflaması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "mmrc",
+        "name": "mMRC Dispne",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
     "gogus/koah-ucus-oksijen-hesaplama": [
+      {
+        "slug": "bap65",
+        "name": "BAP-65",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bode",
+        "name": "BODE İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "decaf",
+        "name": "DECAF Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "gold-koah",
+        "name": "GOLD KOAH Sınıflaması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "mmrc",
+        "name": "mMRC Dispne",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
+    "gogus/koah-yuksek-rakim-kontrendikasyonlar": [
       {
         "slug": "bap65",
         "name": "BAP-65",
@@ -6525,8 +6639,26 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-cpet-ve-ebv",
+        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-fizyolojisi",
+        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-ucus-oksijen-hesaplama",
         "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-yuksek-rakim-kontrendikasyonlar",
+        "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
@@ -6551,8 +6683,26 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-cpet-ve-ebv",
+        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-fizyolojisi",
+        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-ucus-oksijen-hesaplama",
         "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-yuksek-rakim-kontrendikasyonlar",
+        "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
@@ -6577,8 +6727,26 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-cpet-ve-ebv",
+        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-fizyolojisi",
+        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-ucus-oksijen-hesaplama",
         "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-yuksek-rakim-kontrendikasyonlar",
+        "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
@@ -6603,8 +6771,26 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-cpet-ve-ebv",
+        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-fizyolojisi",
+        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-ucus-oksijen-hesaplama",
         "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-yuksek-rakim-kontrendikasyonlar",
+        "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
@@ -6629,8 +6815,26 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-cpet-ve-ebv",
+        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-fizyolojisi",
+        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-ucus-oksijen-hesaplama",
         "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-yuksek-rakim-kontrendikasyonlar",
+        "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
@@ -6655,8 +6859,26 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-cpet-ve-ebv",
+        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-fizyolojisi",
+        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-ucus-oksijen-hesaplama",
         "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-yuksek-rakim-kontrendikasyonlar",
+        "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
@@ -7781,11 +8003,11 @@
     ]
   },
   "olcum": {
-    "konu": 481,
+    "konu": 484,
     "arac": 262,
-    "araciOlanKonu": 335,
+    "araciOlanKonu": 338,
     "konusuOlanArac": 162,
-    "bag": 639,
-    "kavramBag": 473
+    "bag": 657,
+    "kavramBag": 491
   }
 }

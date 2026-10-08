@@ -4239,6 +4239,11 @@
  "gogus/koah-ana": [
   {
    "brans": "gogus",
+   "slug": "koah-yuksek-rakim-kontrendikasyonlar",
+   "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar"
+  },
+  {
+   "brans": "gogus",
    "slug": "sarkoidoz-ana",
    "baslik": "Sarkoidoz"
   }
@@ -4248,6 +4253,20 @@
    "brans": "nefroloji",
    "slug": "respiratuvar-asidoz",
    "baslik": "Respiratuvar Asidoz"
+  }
+ ],
+ "gogus/koah-cpet-ve-ebv": [
+  {
+   "brans": "gogus",
+   "slug": "koah-fizyolojisi",
+   "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler"
+  }
+ ],
+ "gogus/koah-fizyolojisi": [
+  {
+   "brans": "gogus",
+   "slug": "koah-cpet-ve-ebv",
+   "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi"
   }
  ],
  "gogus/koah-hast-testi": [
@@ -4264,11 +4283,43 @@
    "baslik": "Uçuş Öncesi Hipoksi Simülasyon Testi (HAST)"
   }
  ],
+ "gogus/koah-yuksek-rakim-kontrendikasyonlar": [
+  {
+   "brans": "gogus",
+   "slug": "koah-ana",
+   "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-asetazolamid",
+   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-cpet-ve-ebv",
+   "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-fizyolojisi",
+   "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler"
+  }
+ ],
  "gogus/koah-yuksek-rakim-seyahat": [
   {
    "brans": "gogus",
    "slug": "koah-asetazolamid",
    "baslik": "KOAH'ta Asetazolamid Tehlikesi"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-cpet-ve-ebv",
+   "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-fizyolojisi",
+   "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler"
   },
   {
    "brans": "gogus",

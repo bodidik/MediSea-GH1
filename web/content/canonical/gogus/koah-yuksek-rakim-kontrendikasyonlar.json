@@ -1,0 +1,38 @@
+{
+  "title": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar",
+  "meta": {
+    "kaynakca": "koah",
+    "updatedAt": "8 Eki 2026",
+    "tags": [
+      "Göğüs Hastalıkları",
+      "KOAH",
+      "Yüksek İrtifa",
+      "Kontrendikasyon",
+      "Seyahat"
+    ],
+    "parent": "koah-yuksek-rakim-seyahat",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "⛰️ Uzman Özeti",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Yüksek irtifaya seyahat veya uçuş sırasındaki hipobarik ortam, Kronik Obstrüktif Akciğer Hastalığı (KOAH) olgularında gaz değişimi dengesini, solunum mekaniğini ve pulmoner vasküler hemodinamiyi ileri derecede zorlar. Deniz seviyesindeki kısıtlı ventilatuar rezerv ve ventilasyon/perfüzyon (V/Q) uyumsuzluğu, yükseklikle azalan ortam barometrik basıncına bağlı olarak gelişen hipobarik hipoksi karşısında yetersiz kalır.</p><p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Klinik rehberler ve göğüs hastalıkları konsensus raporları doğrultusunda, 2500 metrenin (8200 feet) üzerindeki rakımlara seyahat öncesinde belirlenmiş kontrendikasyonlar ve klinik kısıtlılıklar aşağıda fizyopatolojik mekanizmalarıyla ayrıntılandırılmıştır.</p>"
+    },
+    {
+      "heading": "1. 2500 m (8200 ft) Üzerine Seyahat İçin Kesin (Mutlak) Kontrendikasyonlar",
+      "html": "<div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-rose-900 text-xs uppercase mb-2 tracking-wider\">Mutlak kontrendikasyon</h4><p class=\"text-sm leading-relaxed mb-3 text-rose-900\">Aşağıdaki ölçütlerden en az birini karşılayan ağır kardiyopulmoner bozukluğu olan KOAH hastalarının 2500 metrenin üzerindeki yüksekliklere seyahat etmesi güvenli kabul edilmez ve kontrendikedir:</p></div><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>İleri Derecede Hava Akımı Kısıtlanması (Ağır KOAH):</strong> Post-bronkodilatör FEV₁ &lt; %30 predikte olan olgular. Bu hastalarda dinamik hiperinflasyon ve solunum kaslarının mekanik dezavantajı nedeniyle hipoksik ventilatuar yanıt (HVR) artırılamaz.</li><li><strong>Deniz Seviyesinde İstirahat Hipoksemisi:</strong> Oda havasında istirahat halinde SpO₂ ≤ %88 veya PaO₂ &lt; 55 mmHg saptanması. İrtifadaki ek parsiyel basınç düşüşü, bu olgularda doku hipoksisini ve hayati organ iskemisini tetikler.</li><li><strong>Deniz Seviyesinde Kronik Hiperkapni:</strong> İstirahat kan gazında PaCO₂ ≥ 52 mmHg olması. Kronik karbondioksit retansiyonu olan hastalar, irtifadaki ekstra ventilasyon yükünü tolere edemez ve akut-kronik solunum yetmezliği tablosuna girebilirler.</li><li><strong>Kesintisiz Oksijen Desteği Bağımlılığı:</strong> Eksojen oksijen tedavisinin kısa sürelerle dahi kesilmesini tolere edemeyen hastalar. Güç kesintisi, tüp yetersizliği veya ekipman arızası durumunda bu olgularda hızla ağır asfiksi gelişme riski mevcuttur.</li><li><strong>Eşlik Eden Ağır Pulmoner Hipertansiyon:</strong> Sistolik pulmoner arter basıncı (PAP) &gt; 60 mmHg veya sağ ventrikül yetmezliği varlığı. Hipoksiye yanıt olarak gelişen yaygın Hipoksik Pulmoner Vazokonstriksiyon (HPV), pulmoner vasküler direnci (PVR) aşırı artırarak akut sağ kalp dekompansasyonuna yol açabilir.</li></ul>"
+    },
+    {
+      "heading": "2. Göreceli Kontrendikasyonlar ve İleri Risk Grupları",
+      "html": "<ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Ekstrem Rakım (&gt; 3100 m / 10.200 ft) Seyahati:</strong> Stabil ve hafif-orta KOAH olgularında (FEV₁ &gt; %30–40, normoksik/normokapnik) 2500–3100 metre aralığına dikkatli seyahat düşünülebilirse de, 3100 metrenin üzerindeki yükseklikler yüksek advers olay (şiddetli hipoksemi, AMS, akut alevlenme) sıklığı nedeniyle tüm KOAH hastalarında önerilmez.</li><li><strong>Sık Alevlenme ve Yakın Zamanda Hastaneye Yatış Öyküsü:</strong> Son 1 yılda sık KOAH alevlenmesi (ECOPD) geçiren, yakın zamanda solunumsal enfeksiyon veya hastaneye yatış öyküsü olan olgular irtifadaki soğuk/kuru hava irritasyonundan olumsuz etkilenir.</li><li><strong>Ağır Kırılganlık (Frailty) ve İleri Yaş Komorbiditeleri:</strong> Ağır kardiyovasküler hastalık, böbrek yetmezliği, belirgin kaşeksi veya evde mekanik ventilatör/NIV desteği ihtiyacı olan hastalarda yüksek irtifa seyahati yüksek risk taşır.</li></ul>"
+    },
+    {
+      "heading": "3. Farmakolojik Kontrendikasyon: Asetazolamid (Diamox) Uyarısı",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Sağlıklı bireylerde Akut Dağ Hastalığı (AMS) profilaksisinde sıkça kullanılan asetazolamid, kronik hiperkapnisi bulunan KOAH hastalarında kesinlikle kullanılmamalıdır ve kontrendikedir:</p><ol class=\"list-decimal pl-5 space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Kompanze Edilemeyen Metabolik Asidoz:</strong> Asetazolamid böbreklerden bikarbonat atılımını (bikarbonatüri) indükler. Solunum mekaniği bozuk KOAH hastaları, ilacın yarattığı metabolik asidozu kompanze etmek için dakika ventilasyonunu yeterince artıramaz ve ağır sistemik asidemi gelişir.</li><li><strong>Karbondioksit Taşınmasının Bozulması:</strong> Yüksek serum asetazolamid düzeyleri eritrosit içi karbonik anhidraz enzimini inhibe ederek dokulardan akciğere CO₂ transferini bozar; bu durum hiperkapniyi belirgin şekilde ağırlaştırır.</li><li><strong>Respiratuar Kas (Diyafram) Asidozu:</strong> İlacın indüklediği asidoz, solunum kaslarında (özellikle diyaframda) intrasellüler asidoza neden olarak kas performansını ve solunum çabasını düşürür.</li></ol><p class=\"text-sm leading-relaxed mb-3 text-slate-700\"><em>Not: Yalnızca kronik karbondioksit retansiyonu ve hiperkapnisi bulunmayan, hafif/orta düzeydeki seçilmiş KOAH hastalarında AMS profilaksisi amacıyla asetazolamid veya alternatif olarak deksametazon dikkatle değerlendirilebilir.</em></p>"
+    },
+    {
+      "heading": "4. Klinik Değerlendirme ve Risk Azaltıcı Yönetim Protokolü",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Seyahat etmesi mutlak kontrendike olmayan (FEV₁ &gt; %30–40, normokapnik) KOAH hastalarında seyahat öncesi şu adımlar izlenmelidir:</p><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Hipoksi Simülasyon Testi (HAST) veya Dereceli Maruziyet:</strong> Laboratuvar ortamında %15 O₂ solutularak (HAST) veya kademeli tırmanışla hastanın hipoksiye ve efora yanıtı değerlendirilir.</li><li><strong>Titre Eksojen Oksijen Tedavisi:</strong> Seyahat sırasında istirahatte, eforda ve gece uykusunda hedef SpO₂ ≥ %90 olacak şekilde eksojen oksijen desteği ve parmak tipi pulse oksimetre ile izlem sağlanmalıdır.</li><li><strong>Noktürnal Oksijen Desteği:</strong> Gece uykusundaki fizyolojik desatürasyonu ve hipoksik pulmoner vazokonstriksiyonu kırmak amacıyla gece 2–3 L/dk oksijen desteği verilmesi önerilir.</li></ul>"
+    }
+  ]
+}
