@@ -2957,6 +2957,44 @@
         "kaynak": "kavram"
       }
     ],
+    "gogus/koah-akciger-koruyucu-ventilasyon": [
+      {
+        "slug": "bap65",
+        "name": "BAP-65",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bode",
+        "name": "BODE İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "decaf",
+        "name": "DECAF Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "gold-koah",
+        "name": "GOLD KOAH Sınıflaması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "mmrc",
+        "name": "mMRC Dispne",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
     "gogus/koah-asetazolamid": [
       {
         "slug": "bap65",
@@ -3110,6 +3148,82 @@
       }
     ],
     "gogus/koah-postoperatif-niv": [
+      {
+        "slug": "bap65",
+        "name": "BAP-65",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bode",
+        "name": "BODE İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "decaf",
+        "name": "DECAF Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "gold-koah",
+        "name": "GOLD KOAH Sınıflaması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "mmrc",
+        "name": "mMRC Dispne",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
+    "gogus/koah-postoperatif-niv-hfnc": [
+      {
+        "slug": "bap65",
+        "name": "BAP-65",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bode",
+        "name": "BODE İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "decaf",
+        "name": "DECAF Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "gold-koah",
+        "name": "GOLD KOAH Sınıflaması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "mmrc",
+        "name": "mMRC Dispne",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
+    "gogus/koah-torasik-epidural-analjezi": [
       {
         "slug": "bap65",
         "name": "BAP-65",
@@ -6709,6 +6823,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-asetazolamid",
         "baslik": "KOAH'ta Asetazolamid Tehlikesi",
         "eslesen": "KOAH",
@@ -6739,14 +6859,8 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "gogus/koah-ucus-oksijen-hesaplama",
-        "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gogus/koah-yuksek-rakim-kontrendikasyonlar",
-        "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar",
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -6759,6 +6873,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-asetazolamid",
         "baslik": "KOAH'ta Asetazolamid Tehlikesi",
         "eslesen": "KOAH",
@@ -6789,14 +6909,8 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "gogus/koah-ucus-oksijen-hesaplama",
-        "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gogus/koah-yuksek-rakim-kontrendikasyonlar",
-        "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar",
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -6809,6 +6923,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-asetazolamid",
         "baslik": "KOAH'ta Asetazolamid Tehlikesi",
         "eslesen": "KOAH",
@@ -6839,14 +6959,8 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "gogus/koah-ucus-oksijen-hesaplama",
-        "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gogus/koah-yuksek-rakim-kontrendikasyonlar",
-        "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar",
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -6859,6 +6973,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-asetazolamid",
         "baslik": "KOAH'ta Asetazolamid Tehlikesi",
         "eslesen": "KOAH",
@@ -6889,14 +7009,8 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "gogus/koah-ucus-oksijen-hesaplama",
-        "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gogus/koah-yuksek-rakim-kontrendikasyonlar",
-        "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar",
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -6909,6 +7023,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-asetazolamid",
         "baslik": "KOAH'ta Asetazolamid Tehlikesi",
         "eslesen": "KOAH",
@@ -6939,14 +7059,8 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "gogus/koah-ucus-oksijen-hesaplama",
-        "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gogus/koah-yuksek-rakim-kontrendikasyonlar",
-        "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar",
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -6959,6 +7073,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-asetazolamid",
         "baslik": "KOAH'ta Asetazolamid Tehlikesi",
         "eslesen": "KOAH",
@@ -6989,15 +7109,17 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "gogus/koah-ucus-oksijen-hesaplama",
-        "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
         "eslesen": "KOAH",
         "kaynak": "kavram"
-      },
+      }
+    ],
+    "rox-indeksi": [
       {
-        "yol": "gogus/koah-yuksek-rakim-kontrendikasyonlar",
-        "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar",
-        "eslesen": "KOAH",
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
+        "eslesen": "HFNC",
         "kaynak": "kavram"
       }
     ],
@@ -8115,11 +8237,11 @@
     ]
   },
   "olcum": {
-    "konu": 486,
+    "konu": 489,
     "arac": 262,
-    "araciOlanKonu": 340,
-    "konusuOlanArac": 162,
-    "bag": 669,
-    "kavramBag": 503
+    "araciOlanKonu": 343,
+    "konusuOlanArac": 163,
+    "bag": 687,
+    "kavramBag": 522
   }
 }

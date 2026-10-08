@@ -1,0 +1,31 @@
+{
+  "title": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+  "meta": {
+    "kaynakca": "koah",
+    "updatedAt": "8 Eki 2026",
+    "tags": [
+      "Göğüs Hastalıkları",
+      "KOAH",
+      "Mekanik Ventilasyon",
+      "Akciğer Koruyucu Ventilasyon",
+      "Oto-PEEP",
+      "Sürücü Basınç"
+    ],
+    "parent": "koah-perioperatif-anestezi",
+    "order": 4
+  },
+  "sections": [
+    {
+      "heading": "⚙️ Uzman Özeti",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Akciğer koruyucu ventilasyon (lung-protective ventilation), gerek genel anestezi altındaki cerrahi hastalarında gerekse yoğun bakımda mekanik ventilasyon uygulanan olgularda (özellikle KOAH gibi obstrüktif akciğer patolojisi zemininde) volütravma, barotravma, atelektravma ve ergotravmayı önlemeyi hedefleyen fizyolojik ventilasyon kriterleri bütünüdür.</p>"
+    },
+    {
+      "heading": "1. Temel Ventilasyon Parametreleri ve Hedef Eşikler",
+      "html": "<ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Düşük Tidal Hacim (V<sub>t</sub>):</strong><ul class=\"list-disc pl-5 mt-2 space-y-2\"><li><strong>Kriter:</strong> İdeal vücut ağırlığına (IBW/PBW) göre 6–8 mL/kg.</li><li><strong>Mekanizma:</strong> Alveoler overdistansiyonu (aşırı gerilmeyi) önler. Büyük tidal hacimlerin yarattığı akut parankim hasarı ve endotel/epitel bariyer harabiyeti (volütravma) engellenmiş olur.</li></ul></li><li><strong>Kısıtlı Sürücü Basınç (Driving Pressure – DP):</strong><ul class=\"list-disc pl-5 mt-2 space-y-2\"><li><strong>Kriter:</strong> DP ≤ 15 cmH₂O.</li><li><strong>Mekanizma:</strong> Sürücü basınç (DP = P<sub>plat</sub> − PEEP), ventilatörün akciğer-göğüs duvarı sistemine uyguladığı dinamik stresi ve solunum sistemi kompliyansını (C<sub>RS</sub> = V<sub>t</sub> / DP) temsil eder. DP'nin 15 cmH₂O üzerinde seyretmesi akciğer komplikasyonları riskini belirgin şekilde artırır.</li></ul></li><li><strong>Plato Basıncı Sınırı (P<sub>plat</sub>):</strong><ul class=\"list-disc pl-5 mt-2 space-y-2\"><li><strong>Kriter:</strong> Güvenli alveoler hedef P<sub>plat</sub> ≤ 28–30 cmH₂O'dur. P<sub>plat</sub> &gt; 35 cmH₂O değerleri en yüksek barotravma (plevral bül rüptürü, pnömotoraks) riskini taşır.</li><li><strong>Mekanizma:</strong> İnspiratuar duraklatma (inspiratory hold) esnasında ölçülen P<sub>plat</sub>, son alveoler gerilim basıncını yansıtır.</li></ul></li><li><strong>Düşük Solunum Sayısı ve Uzatılmış Ekspirasyon Süresi (I:E Oranı):</strong><ul class=\"list-disc pl-5 mt-2 space-y-2\"><li><strong>Kriter:</strong> Solunum frekansı 8–10 soluk/dakika tutulur; inspirasyon:ekspirasyon (I:E) oranı 1:3 ile 1:4 olarak ayarlanır.</li><li><strong>Mekanizma:</strong> KOAH hastalarında yüksek havayolu direnci nedeniyle pasif ekspirasyon süresi uzar. Ekspirasyon süresi yetersiz kaldığında bir sonraki inspiryum başlar ve hava hapsi (breath-stacking) sonucu dinamik hiperinflasyon (oto-PEEP) gelişir.</li></ul></li><li><strong>İhtiyatlı PEEP (Ekstrinsik PEEP):</strong><ul class=\"list-disc pl-5 mt-2 space-y-2\"><li><strong>Kriter:</strong> Başlangıçta 5 cmH₂O düzeyinde PEEP uygulanır.</li><li><strong>Mekanizma:</strong> PEEP, küçük havayollarının ekspiryum sonunda erkenden kollabe olmasını engeller ve atelektaziyi önler. Oto-PEEP varlığında uygulanan dış PEEP, inspiratuar tetikleme eforunu düşürmek için ölçülen oto-PEEP değerinin %80'ini geçmeyecek şekilde dikkatle artırılır.</li></ul></li><li><strong>Permisif Hiperkapni (Permissive Hypercapnia):</strong><ul class=\"list-disc pl-5 mt-2 space-y-2\"><li><strong>Kriter:</strong> Düşük dakika ventilasyonu uygulandığında gelişen karbondioksit yükselmesi tolere edilir; sistemik pH ≥ 7.25 sınırında tutulmalıdır.</li><li><strong>Mekanizma:</strong> Kafa içi basınç artışı gibi spesifik bir kontrendikasyon yoksa, hiperkapnik asidoz kademeli olarak tolere edilerek akciğere yüksek basınç/hacim uygulanmasının önüne geçilir.</li></ul></li><li><strong>Titre FiO₂ ve Hedef Satürasyon:</strong><ul class=\"list-disc pl-5 mt-2 space-y-2\"><li><strong>Kriter:</strong> Hedef SpO₂ %88–92 (normokapnik hastada &gt; %94) sağlayacak en düşük FiO₂.</li><li><strong>Mekanizma:</strong> Yüksek FiO₂ maruziyeti reaktif oksijen türlerini (ROS) artırır, emilim atelektazisine (absorption atelectasis) yol açar ve KOAH hastalarında hipoksik pulmoner vazokonstriksiyonu (HPV) bozarak CO₂ retansiyonunu ağırlaştırır.</li></ul></li></ul>"
+    },
+    {
+      "heading": "2. Dinamik Hiperinflasyon (Oto-PEEP) İzlemi ve Müdahalesi",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Mekanik ventilasyon esnasında tepe havayolu basıncında yükselme, ekshale edilen hacimde düşüş, akım-hacim halkalarında ekspiratuar akımın bir sonraki soluktan önce sıfıra ulaşmaması ve aniden gelişen hipotansiyon, oto-PEEP / breath-stacking varlığını gösterir.</p><div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-rose-900 text-xs uppercase mb-2 tracking-wider\">Diskonneksiyon testi</h4><p class=\"text-sm leading-relaxed mb-3 text-rose-900\">Oto-PEEP şüphesinde anestezi/ventilatör devresinin geçici olarak (&lt; 1 dakika) ayrılması (disconnection) hapsolan havanın tahliyesini sağlar. Venöz dönüşün rahatlamasıyla kan basıncının hızla düzelmesi hem tanısal hem de tedavi edicidir.</p></div>"
+    }
+  ]
+}

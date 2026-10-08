@@ -4236,7 +4236,12 @@
    "baslik": "Aşamalı (Staged) Lenfödem Cerrahisi: SAPL–VLNT Zamanlaması ve Donör Saha Seçimi"
   }
  ],
- "gogus/koah-ana": [
+ "gogus/koah-akciger-koruyucu-ventilasyon": [
+  {
+   "brans": "gogus",
+   "slug": "koah-postoperatif-niv-hfnc",
+   "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol"
+  },
   {
    "brans": "gogus",
    "slug": "koah-postoperatif-niv",
@@ -4244,13 +4249,30 @@
   },
   {
    "brans": "gogus",
-   "slug": "koah-yuksek-rakim-kontrendikasyonlar",
-   "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar"
+   "slug": "koah-torasik-epidural-analjezi",
+   "baslik": "KOAH'ta Torasik Epidural Analjezi ve Solunum Mekaniği"
+  }
+ ],
+ "gogus/koah-ana": [
+  {
+   "brans": "gogus",
+   "slug": "koah-akciger-koruyucu-ventilasyon",
+   "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)"
   },
   {
    "brans": "gogus",
-   "slug": "sarkoidoz-ana",
-   "baslik": "Sarkoidoz"
+   "slug": "koah-postoperatif-niv",
+   "baslik": "KOAH'ta Postoperatif Non-İnvaziv Ventilasyon (NIV)"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-postoperatif-niv-hfnc",
+   "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-torasik-epidural-analjezi",
+   "baslik": "KOAH'ta Torasik Epidural Analjezi ve Solunum Mekaniği"
   }
  ],
  "gogus/koah-asetazolamid": [
@@ -4316,23 +4338,37 @@
  "gogus/koah-postoperatif-niv": [
   {
    "brans": "gogus",
-   "slug": "koah-ana",
-   "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)"
+   "slug": "koah-postoperatif-niv-hfnc",
+   "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol"
   },
   {
    "brans": "gogus",
-   "slug": "koah-asetazolamid",
-   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
+   "slug": "koah-torasik-epidural-analjezi",
+   "baslik": "KOAH'ta Torasik Epidural Analjezi ve Solunum Mekaniği"
+  }
+ ],
+ "gogus/koah-postoperatif-niv-hfnc": [
+  {
+   "brans": "gogus",
+   "slug": "koah-postoperatif-niv",
+   "baslik": "KOAH'ta Postoperatif Non-İnvaziv Ventilasyon (NIV)"
   },
   {
    "brans": "gogus",
-   "slug": "koah-cpet-ve-ebv",
-   "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi"
+   "slug": "koah-torasik-epidural-analjezi",
+   "baslik": "KOAH'ta Torasik Epidural Analjezi ve Solunum Mekaniği"
+  }
+ ],
+ "gogus/koah-torasik-epidural-analjezi": [
+  {
+   "brans": "gogus",
+   "slug": "koah-postoperatif-niv",
+   "baslik": "KOAH'ta Postoperatif Non-İnvaziv Ventilasyon (NIV)"
   },
   {
    "brans": "gogus",
-   "slug": "koah-fizyolojisi",
-   "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler"
+   "slug": "koah-postoperatif-niv-hfnc",
+   "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol"
   }
  ],
  "gogus/koah-ucus-oksijen-hesaplama": [
@@ -4345,6 +4381,11 @@
  "gogus/koah-yuksek-rakim-kontrendikasyonlar": [
   {
    "brans": "gogus",
+   "slug": "koah-akciger-koruyucu-ventilasyon",
+   "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)"
+  },
+  {
+   "brans": "gogus",
    "slug": "koah-ana",
    "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)"
   },
@@ -4357,11 +4398,6 @@
    "brans": "gogus",
    "slug": "koah-cpet-ve-ebv",
    "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi"
-  },
-  {
-   "brans": "gogus",
-   "slug": "koah-fizyolojisi",
-   "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler"
   }
  ],
  "gogus/koah-yuksek-rakim-seyahat": [
@@ -8193,11 +8229,6 @@
   },
   {
    "brans": "onkoloji",
-   "slug": "kanser-agrisi-yonetimi",
-   "baslik": "Kanser Ağrısı Yönetimi"
-  },
-  {
-   "brans": "onkoloji",
    "slug": "opioid-rotasyonu-2025-konsensus",
    "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
   },
@@ -8205,6 +8236,11 @@
    "brans": "palyatif",
    "slug": "noropatik-agrida-koadjuvan-tedavi",
    "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
   },
   {
    "brans": "onkoloji",
@@ -8249,11 +8285,6 @@
   },
   {
    "brans": "onkoloji",
-   "slug": "kanser-agrisi-yonetimi",
-   "baslik": "Kanser Ağrısı Yönetimi"
-  },
-  {
-   "brans": "onkoloji",
    "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
    "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
   },
@@ -8261,6 +8292,11 @@
    "brans": "onkoloji",
    "slug": "opioid-rotasyonu-2025-konsensus",
    "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
   },
   {
    "brans": "onkoloji",
