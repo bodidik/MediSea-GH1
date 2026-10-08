@@ -47,6 +47,21 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
                 Kronik Obstrüktif Akciğer Hastalığı (KOAH)
               </Link>
             </li>
+            <li>
+              <Link href="/topics/gogus/koah-asetazolamid" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                KOAH'ta Asetazolamid Tehlikesi
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/gogus/koah-ucus-oksijen-hesaplama" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/gogus/koah-yuksek-rakim-seyahat" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                KOAH ve Yüksek Rakım / Hava Yolculuğu
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

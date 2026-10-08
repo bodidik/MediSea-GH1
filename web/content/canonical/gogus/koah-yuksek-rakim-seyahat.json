@@ -1,0 +1,50 @@
+{
+  "title": "KOAH ve Yüksek Rakım / Hava Yolculuğu",
+  "meta": {
+    "kaynakca": "koah",
+    "updatedAt": "8 Eki 2026",
+    "tags": [
+      "Göğüs Hastalıkları",
+      "KOAH",
+      "Yüksek İrtifa",
+      "Hipobarik Hipoksi",
+      "Seyahat"
+    ],
+    "parent": "koah-ana",
+    "order": 1
+  },
+  "sections": [
+    {
+      "heading": "🏔️ Uzman Özeti",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Yüksek rakımlı bölgelere seyahat veya hava yolculuğu (kabindeki hipobarik ortam), Kronik Obstrüktif Akciğer Hastalığı (KOAH) olgularında entegre solunumsal, vasküler ve kardiyovasküler uyum mekanizmalarını ciddi şekilde zorlar. Göğüs hastalıkları perspektifinden bakıldığında, yüksek irtifada maruz kalınan hipobarik hipoksi, KOAH patofizyolojisindeki mevcut bozuklukları derinleştirerek bir dizi klinik ve hemodinamik riski beraberinde getirir.</p>"
+    },
+    {
+      "heading": "1. Patofizyolojik Altyapı: Hipobarik Hipoksi ve Gaz Değişim Dinamikleri",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Yüksek rakımda ortam sıcaklığı ve mutlak nem düşerken, barometrik basınç yükseklikle lineer olmayan bir şekilde azalır. Bu durum, solunan havadaki oksijenin parsiyel basıncını (PO₂) düşürerek alveolden doku düzeyine kadar tüm oksijen taşıma kaskadında parsiyel basınç gradiyentini daraltır.</p><p class=\"text-sm leading-relaxed mb-3 text-slate-700\">KOAH hastalarında bazal seviyede mevcut olan ventilasyon/perfüzyon (V/Q) uyumsuzluğu, amfizematöz parankim harabiyetine bağlı azalmış difüzyon kapasitesi (DL<sub>CO</sub>) ve havayolu obstrüksiyonu, hipobarik ortama fizyolojik adaptasyonu kısıtlar.</p>"
+    },
+    {
+      "heading": "2. Abartılı Hipoksemi (Exaggerated Hypoxemia) ve Doku Hipoksisi",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Sağlıklı bireyler hipoksiye karşı kemoreseptör uyarısı ile Hipoksik Ventilatuar Yanıt (HVR) geliştirerek dakika ventilasyonunu (V<sub>E</sub>) artırır. KOAH hastalarında ise riskler şu mekanizmalarla katlanır:</p><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Bloke Olmuş / Azalmış HVR:</strong> İleri KOAH hastalarında mekanik solunum sınırlılığı (akım kısıtlanması, respiratuar kas yorgunluğu) ve bloke olmuş periferik kemoreseptör yanıtı nedeniyle kompanzatuar hiperventilasyon yeterli düzeyde sağlanamaz.</li><li><strong>Derinleşen Arteriyel Desatürasyon:</strong> Deniz seviyesinde istirahatte normoksik olan orta-ağır KOAH hastalarında dahi, 1500–2500 metrenin üzerindeki rakımlarda belirgin arteriyel hipoksemi (SpO₂ &lt; %80–85) gelişebilir.</li><li><strong>Egzersiz ve Uyku ile Kötüleşme:</strong> Hafif fiziksel aktivite sırasında doku oksijen tüketiminin artmasıyla hipoksemi hızla derinleşir. Gece uykusunda fizyolojik ventilatuar uyarının (drive) düşmesi sonucu şiddetli noktürnal hipoksemi, santral apne ve solunum bozuklukları tetiklenir.</li></ul>"
+    },
+    {
+      "heading": "3. Hipoksik Pulmoner Vazokonstriksiyon (HPV) ve Sağ Kalp Yükü",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Alveoler PO₂ düşüşü, pulmoner arteriyollerde dakikalar içinde Hipoksik Pulmoner Vazokonstriksiyona (HPV) yol açar.</p><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Diffüz Vasküler Direnç Artışı:</strong> Deniz seviyesinde fokal patolojilerde perfüzyonu sağlıklı alanlara yönlendiren HPV, yüksek rakımda tüm alveollerde PO₂ düştüğü için akciğer genelinde yaygın vazokonstriksiyona neden olur.</li><li><strong>Pulmoner Hipertansiyon ve Sağ Ventrikül Disfonksiyonu:</strong> Akut HPV; Pulmoner Vasküler Direnç (PVR) ve Pulmoner Arter Basıncında (PAP) akut yükselmeye yol açar. Altta yatan vasküler remodeling veya sekonder pulmoner hipertansiyonu olan KOAH olgularında bu durum, sağ ventrikül art yükünü (afterload) aşırı artırarak sağ kalp yetmezliği dekompansasyonuna veya Yüksek İrtifa Pulmoner Ödemi (HAPE) riskine zemin hazırlar.</li></ul>"
+    },
+    {
+      "heading": "4. Otonomik ve Kardiyovasküler Stres",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Hipoksi, sempatoadrenal sistemi aktive ederek kalp hızını ve kardiyak debiyi artırır.</p><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Sempatik Overaktivite:</strong> KOAH hastalarında zaten artmış olan istirahat kas sempatik sinir aktivitesi (MSNA), hipoksik uyarı ile daha da yükselir.</li><li><strong>Kardiyak Komplikasyon Riski:</strong> Miyokardiyal oksijen sunumunun azaldığı, sempatik tonusun ve kardiyak debi ihtiyacının arttığı bu tabloda; miyokard iskemisi, sistemik hipertansiyon atakları ve atriyal fibrilasyon başta olmak üzere kardiyak aritmiler tetiklenebilir.</li></ul>"
+    },
+    {
+      "heading": "5. Dinamik Hiperinflasyon, Solunum İş Yükü ve Solunumsal Sıkıntı",
+      "html": "<ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Hava Hapsi (Gas Trapping):</strong> Hipoksiye yanıt olarak artırılmaya çalışılan solunum frekansı, ekspirasyon süresini kısaltarak dinamik hiperinflasyonu ve hava hapsini artırır.</li><li><strong>Soğuk ve Kuru Hava İritasyonu:</strong> Yüksek rakımdaki düşük nem ve soğuk hava, havayolu reaktivitesini artırarak bronşiyal konstriksiyona, mukozal irritasyona ve artmış mukus birikimine sebep olur. Bu durum solunum işini (work of breathing) belirgin şekilde artırarak şiddetli dispne ve egzersiz intoleransı yaratır.</li></ul>"
+    },
+    {
+      "heading": "6. Akut İrtifa Hastalıkları ve Alevlenme (ECOPD) Riski",
+      "html": "<ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>AMS ve HAPE Riskinde Artış:</strong> Akut Dağ Hastalığı (AMS) semptomlarının (baş ağrısı, bulantı, halsizlik) görülme sıklığı artar.</li><li><strong>Akut Alevlenme Tetiklenmesi:</strong> İrtifadaki çevresel stresörler, hipoksi ve artan sistemik inflamasyon; havayolu enfeksiyonlarına yatkınlığı artırarak akut KOAH alevlenmesini (ECOPD) indükleyebilir.</li></ul>"
+    },
+    {
+      "heading": "7. Klinik Risk Stratifikasyonu, Kontrendikasyonlar ve Yönetim",
+      "html": "<div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-rose-900 text-xs uppercase mb-2 tracking-wider\">🚨 Yüksek Rakım (&gt; 2500 m / 8200 ft) Seyahat Kontrendikasyonları</h4><p class=\"text-sm leading-relaxed mb-3 text-rose-900\">İleri düzey kardiyopulmoner bozukluğu olan ve şu kriterleri taşıyan KOAH hastalarının 2500 metrenin üzerindeki rakımlara seyahat etmesi güvenli değildir ve önerilmez:</p><ol class=\"list-decimal pl-5 space-y-3 text-sm leading-relaxed text-rose-900 mb-4\"><li><strong>İleri derecede hava akımı kısıtlanması:</strong> Post-bronkodilatör FEV₁ &lt; %30 predikte.</li><li><strong>Deniz seviyesinde istirahat hipoksemisi:</strong> SpO₂ ≤ %88 veya PaO₂ &lt; 55 mmHg.</li><li><strong>Deniz seviyesinde kronik hiperkapni:</strong> PaCO₂ ≥ 52 mmHg.</li><li><strong>Sürekli oksijen tedavisi bağımlılığı:</strong> Oksijen desteğinin kısa süreli dahi kesilmesini tolere edemeyen hastalar.</li><li><strong>Ciddi / dekompanse pulmoner hipertansiyon:</strong> Sistolik PAP &gt; 60 mmHg.</li></ol></div><h3 class=\"font-black text-slate-900 text-base mt-6 mb-3\">🔬 Seyahat Öncesi Değerlendirme ve Testler</h3><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Hipoksi İrtifa Simülasyon Testi (HAST):</strong> Orta-ağır KOAH hastalarında normobarik hipoksik gaz karışımı (FiO₂ %15) solutularak uçuştaki veya irtifadaki hipoksemi yanıtı ve eksojen oksijen ihtiyacı simüle edilir.</li><li><strong>Dereceli Hipoksiye Maruziyet (Graded Exposure):</strong> Doğrudan yüksek rakıma çıkmak yerine kademeli tırmanış ile adaptasyon ve semptom takibi yapılması önerilir.</li></ul><div class=\"bg-amber-50 border-l-4 border-amber-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-amber-900 text-xs uppercase mb-2 tracking-wider\">⚠️ Farmakolojik Kontrendikasyon: Asetazolamid</h4><ul class=\"space-y-3 text-sm leading-relaxed text-amber-900 mb-4\"><li><strong>Asetazolamid (Diamox) Riski:</strong> Akut Dağ Hastalığı (AMS) profilaksisinde kullanılan asetazolamid, kronik hiperkapnisi olan KOAH hastalarında kontrendikedir / kaçınılmalıdır.<ul class=\"list-disc pl-5 mt-2 space-y-2\"><li><strong>Mekanizma:</strong> Bu hastalarda ventilatuar uyarı mekanik sınırlamalar nedeniyle artırılamaz; asetazolamidin indüklediği metabolik asidoz solunumsal kompanzasyonla karşılanamaz. Ayrıca yüksek dozlarda eritrosit karbonik anhidraz inhibisyonu yaparak CO₂ taşınmasını bozar ve hiperkapnik solunum yetmezliğini derinleştirir.</li><li><strong>İstisna:</strong> İdrar alkalinizasyonu ve respiratuar alkaloz kontrolü amacıyla yalnızca kronik hiperkapnisi bulunmayan normokapnik hafif/orta KOAH hastalarında dikkatle düşünülebilir.</li></ul></li></ul></div><h3 class=\"font-black text-slate-900 text-base mt-6 mb-3\">🩺 Risk Azaltıcı Stratejiler</h3><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Titre Oksijen Desteği:</strong> Seyahat esnasında istirahatte, egzersizde ve gece uykusunda hedef SpO₂ ≥ %90 olacak şekilde oksijen akış hızı taşınabilir konsantratörlerle titre edilmelidir.</li><li><strong>Noktürnal Oksijen:</strong> Gece uyku kalitesini artırmak, santral apneleri engellemek ve noktürnal HPV kaskadını kırabilmek için gece 2–3 L/dk eksojen oksijen desteği verilmesi önerilir.</li></ul><p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Yüksek rakım seyahati planlayan KOAH olgularında bazal spirometrik evre, gaz değişim performansı, pulmoner vasküler basınç ve hiperkapni varlığı ayrıntılı şekilde taranmalı ve seyahat öncesinde HAST veya oksijen titrasyon protokolleri hazırlanmalıdır.</p>"
+    }
+  ]
+}

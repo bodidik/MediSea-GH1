@@ -1,0 +1,38 @@
+{
+  "title": "KOAH'ta Asetazolamid Tehlikesi",
+  "meta": {
+    "kaynakca": "koah",
+    "updatedAt": "8 Eki 2026",
+    "tags": [
+      "Göğüs Hastalıkları",
+      "KOAH",
+      "Asetazolamid",
+      "Hiperkapni",
+      "Akut Dağ Hastalığı"
+    ],
+    "parent": "koah-ana",
+    "order": 2
+  },
+  "sections": [
+    {
+      "heading": "💊 Uzman Özeti",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Asetazolamid (bir karbonik anhidraz inhibitörü), sağlıklı bireylerde yüksek irtifaya bağlı gelişen Akut Dağ Hastalığı'nın (AMS) önlenmesinde ve aklimatizasyonun hızlandırılmasında yaygın olarak kullanılan bir ajandır. Ancak kronik obstrüktif akciğer hastalığı (KOAH) olan olgularda, özellikle kronik hiperkapni varlığında kullanımı oldukça tehlikelidir ve kaçınılmalıdır.</p><p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Bu tehlikenin arkasında hücresel, biyokimyasal ve solunum mekaniği düzeyinde üç temel patofizyolojik mekanizma yatar.</p>"
+    },
+    {
+      "heading": "1. Ventilatuar Kompanzasyon Yetersizliği ve Derinleşen Asidemi",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Asetazolamid, böbrek proksimal tübüllerinde karbonik anhidrazı inhibe ederek bikarbonat atılımını (bikarbonatüri) indükler ve yapay bir metabolik asidoz oluşturur.</p><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Fizyolojik Yanıt (Sağlıklı Bireyler):</strong> Sağlıklı kişilerde bu metabolik asidoz, santral ve periferik kemoreseptörleri uyararak dakika ventilasyonunu artırır; gelişen respiratuar alkalozla metabolik asidoz kompanze edilir ve kanda oksijenasyon iyileşir.</li><li><strong>KOAH Olgularındaki Bozukluk:</strong> Ağır KOAH hastalarında halihazırda var olan şiddetli mekanik sınırlamalar (hava akımı kısıtlanması, dinamik hiperinflasyon ve solunum kas yorgunluğu) nedeniyle dakika ventilasyonu yeterli düzeyde artırılamaz. Asetazolamidin indüklediği metabolik asidoz solunumsal olarak kompanze edilemediği için hastada ağır ve kontrolsüz bir asidemi gelişir.</li></ul>"
+    },
+    {
+      "heading": "2. Eritrosit Karbonik Anhidraz İnhibisyonu ve CO₂ Taşınmasının Bozulması",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Yüksek serum asetazolamid konsantrasyonlarında ilaç sadece böbreklerde değil, eritrosit içindeki karbonik anhidraz enziminde de belirgin inhibisyona yol açar.</p><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Taşınma Bozukluğu:</strong> Periferik dokularda üretilen CO₂'nin bikarbonat şeklinde eritrosit içinde taşınması ve akciğer alveollerine ulaştığında tekrar CO₂'ye dönüştürülerek elimine edilmesi kaskadı bozulur.</li><li><strong>Kötüleşen Hiperkapni:</strong> Dokulardan akciğere CO₂ transferi engellendiği için, atılamayan karbondioksit kanda ve dokularda birikerek mevcut hiperkapniyi ağırlaştırır ve hastayı akut solunum yetmezliğine sürükleyebilir.</li></ul>"
+    },
+    {
+      "heading": "3. Solunum Kaslarında İntrasellüler Asidoz ve Performans Kaybı",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">İlacın indüklediği sistemik ve doku düzeyindeki asidoz, ana solunum kası olan diyaframda intrasellüler asidoza neden olur. Solunum kaslarında gelişen bu mekanik ve biyokimyasal performans kaybı (respiratuar kas asidozu), zaten aşırı yük altında çalışan solunum kaslarının yorulmasına ve ventile etme kapasitesinin daha da düşmesine yol açar.</p>"
+    },
+    {
+      "heading": "4. Klinik Risk Sınıflandırması ve Alternatif Stratejiler",
+      "html": "<div class=\"bg-rose-50 border-l-4 border-rose-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-rose-900 text-xs uppercase mb-2 tracking-wider\">Kesin Kontrendike Olduğu Grup</h4><p class=\"text-sm leading-relaxed mb-3 text-rose-900\">Kronik hiperkapnisi (dinlenme anında PaCO₂ ≥ 45–52 mmHg) veya ağır hava akımı kısıtlanması (FEV₁ &lt; %30) olan KOAH hastalarında AMS profilaksisi amacıyla asetazolamid kesinlikle verilmemelidir.</p></div><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Seçilmiş KOAH Grubunda Kullanım:</strong> Dinlenme anında hiperkapnisi ve belirgin istirahat hipoksemisi olmayan, hafif ila orta şiddetteki KOAH hastalarında, irtifaya bağlı advers etkileri ve AMS riskini azaltmak amacıyla asetazolamid (veya alternatif olarak deksametazon) dikkatle değerlendirilebilir.</li><li><strong>Tercih Edilecek Alternatif Yaklaşım:</strong> Yüksek irtifaya seyahat edecek hiperkapnik KOAH hastalarında aklimatizasyon için farmakolojik uyarıcılar yerine titre eksojen oksijen desteği (hedef SpO₂ ≥ %90) ve geceleri gece oksijeni / NIPPV (CPAP/BiPAP) kullanımı ana korunma yaklaşımıdır.</li></ul>"
+    }
+  ]
+}

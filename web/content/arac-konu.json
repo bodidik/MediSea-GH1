@@ -2957,6 +2957,120 @@
         "kaynak": "kavram"
       }
     ],
+    "gogus/koah-asetazolamid": [
+      {
+        "slug": "bap65",
+        "name": "BAP-65",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bode",
+        "name": "BODE İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "decaf",
+        "name": "DECAF Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "gold-koah",
+        "name": "GOLD KOAH Sınıflaması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "mmrc",
+        "name": "mMRC Dispne",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
+    "gogus/koah-ucus-oksijen-hesaplama": [
+      {
+        "slug": "bap65",
+        "name": "BAP-65",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bode",
+        "name": "BODE İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "decaf",
+        "name": "DECAF Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "gold-koah",
+        "name": "GOLD KOAH Sınıflaması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "mmrc",
+        "name": "mMRC Dispne",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
+    "gogus/koah-yuksek-rakim-seyahat": [
+      {
+        "slug": "bap65",
+        "name": "BAP-65",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bode",
+        "name": "BODE İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "decaf",
+        "name": "DECAF Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "gold-koah",
+        "name": "GOLD KOAH Sınıflaması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "mmrc",
+        "name": "mMRC Dispne",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
     "gogus/sarkoidoz-hiperkalsemi": [
       {
         "slug": "corrected-calcium",
@@ -6403,6 +6517,24 @@
         "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
         "eslesen": "kronik obstrüktif",
         "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-asetazolamid",
+        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-ucus-oksijen-hesaplama",
+        "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-yuksek-rakim-seyahat",
+        "baslik": "KOAH ve Yüksek Rakım / Hava Yolculuğu",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
       }
     ],
     "bode": [
@@ -6410,6 +6542,24 @@
         "yol": "gogus/koah-ana",
         "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
         "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-asetazolamid",
+        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-ucus-oksijen-hesaplama",
+        "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-yuksek-rakim-seyahat",
+        "baslik": "KOAH ve Yüksek Rakım / Hava Yolculuğu",
+        "eslesen": "KOAH",
         "kaynak": "kavram"
       }
     ],
@@ -6419,6 +6569,24 @@
         "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
         "eslesen": "kronik obstrüktif",
         "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-asetazolamid",
+        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-ucus-oksijen-hesaplama",
+        "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-yuksek-rakim-seyahat",
+        "baslik": "KOAH ve Yüksek Rakım / Hava Yolculuğu",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
       }
     ],
     "decaf": [
@@ -6426,6 +6594,24 @@
         "yol": "gogus/koah-ana",
         "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
         "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-asetazolamid",
+        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-ucus-oksijen-hesaplama",
+        "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-yuksek-rakim-seyahat",
+        "baslik": "KOAH ve Yüksek Rakım / Hava Yolculuğu",
+        "eslesen": "KOAH",
         "kaynak": "kavram"
       }
     ],
@@ -6435,6 +6621,24 @@
         "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
         "eslesen": "kronik obstrüktif",
         "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-asetazolamid",
+        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-ucus-oksijen-hesaplama",
+        "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-yuksek-rakim-seyahat",
+        "baslik": "KOAH ve Yüksek Rakım / Hava Yolculuğu",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
       }
     ],
     "mmrc": [
@@ -6442,6 +6646,24 @@
         "yol": "gogus/koah-ana",
         "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
         "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-asetazolamid",
+        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-ucus-oksijen-hesaplama",
+        "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-yuksek-rakim-seyahat",
+        "baslik": "KOAH ve Yüksek Rakım / Hava Yolculuğu",
+        "eslesen": "KOAH",
         "kaynak": "kavram"
       }
     ],
@@ -7559,11 +7781,11 @@
     ]
   },
   "olcum": {
-    "konu": 477,
+    "konu": 481,
     "arac": 262,
-    "araciOlanKonu": 332,
+    "araciOlanKonu": 335,
     "konusuOlanArac": 162,
-    "bag": 621,
-    "kavramBag": 455
+    "bag": 639,
+    "kavramBag": 473
   }
 }

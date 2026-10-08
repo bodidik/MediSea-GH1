@@ -4243,6 +4243,44 @@
    "baslik": "Sarkoidoz"
   }
  ],
+ "gogus/koah-asetazolamid": [
+  {
+   "brans": "nefroloji",
+   "slug": "respiratuvar-asidoz",
+   "baslik": "Respiratuvar Asidoz"
+  }
+ ],
+ "gogus/koah-hast-testi": [
+  {
+   "brans": "gogus",
+   "slug": "koah-ucus-oksijen-hesaplama",
+   "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması"
+  }
+ ],
+ "gogus/koah-ucus-oksijen-hesaplama": [
+  {
+   "brans": "gogus",
+   "slug": "koah-hast-testi",
+   "baslik": "Uçuş Öncesi Hipoksi Simülasyon Testi (HAST)"
+  }
+ ],
+ "gogus/koah-yuksek-rakim-seyahat": [
+  {
+   "brans": "gogus",
+   "slug": "koah-asetazolamid",
+   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-hast-testi",
+   "baslik": "Uçuş Öncesi Hipoksi Simülasyon Testi (HAST)"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-ucus-oksijen-hesaplama",
+   "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması"
+  }
+ ],
  "gogus/sarkoidoz-ana": [
   {
    "brans": "endokrinoloji",
@@ -7369,34 +7407,9 @@
  ],
  "nefroloji/respiratuvar-asidoz": [
   {
-   "brans": "nefroloji",
-   "slug": "asit-baz-fizyopatoloji",
-   "baslik": "Asit-Baz Homeostazının Fizyopatolojik Temelleri"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "asit-baz-kompanzasyon-ilkeleri",
-   "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "delta-anyon-acigi-delta-delta-orani",
-   "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "metabolik-alkaloz",
-   "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "metabolik-asidoz",
-   "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "respiratuvar-alkaloz",
-   "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim"
+   "brans": "gogus",
+   "slug": "koah-asetazolamid",
+   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
   }
  ],
  "nefroloji/sistemik-hastaliklarda-glomeruler-tutulumlar": [

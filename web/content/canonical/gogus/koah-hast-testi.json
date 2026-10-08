@@ -1,0 +1,38 @@
+{
+  "title": "Uçuş Öncesi Hipoksi Simülasyon Testi (HAST)",
+  "meta": {
+    "kaynakca": "koah",
+    "updatedAt": "8 Eki 2026",
+    "tags": [
+      "Göğüs Hastalıkları",
+      "KOAH",
+      "HAST",
+      "Hava Yolculuğu",
+      "Oksijen Titrasyonu"
+    ],
+    "parent": "koah-ana",
+    "order": 3
+  },
+  "sections": [
+    {
+      "heading": "✈️ Uzman Özeti",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Uçuş Öncesi Hipoksi Simülasyon Testi (HAST – Hypoxia Altitude Simulation Test), ticari yolcu uçaklarının kabin içi basınçlandırma seviyesinde (~2400 metre / 8000 feet irtifa) gelişen normobarik hipoksiye hastanın fizyolojik yanıtını laboratuvar ortamında değerlendiren, invaziv ve non-invaziv parametreleri içeren standart bir işlevsel testtir.</p><p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Deniz seviyesinde istirahat anında kan gazı değerleri kabul edilebilir sınırlarda olan KOAH hastalarında dahi; var olan ventilasyon/perfüzyon (V/Q) eşitsizliği, amfizeme bağlı difüzyon kısıtlılığı ve zayıflamış Hipoksik Ventilatuar Yanıt (HVR) nedeniyle uçuş sırasında ağır arteriyel desatürasyon (in-flight exaggerated hypoxemia) gelişebilmektedir. HAST, bu riski önceden saptamak ve uçuş sırasında ihtiyaç duyulacak eksojen oksijen debisini (L/dk) belirlemek amacıyla uygulanır.</p>"
+    },
+    {
+      "heading": "1. Test Öncesi Değerlendirme ve Endikasyonlar",
+      "html": "<h4 class=\"font-bold text-slate-800 text-sm mt-4 mb-2\">🎯 Test Edilme Kriterleri</h4><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li>Deniz seviyesinde istirahat SpO₂ değeri %92 ile %95 arasında olan KOAH hastaları.</li><li>İleri derecede hava akımı kısıtlanması (FEV₁ &lt; %50 predikte) olan, efor desatürasyonu öyküsü veya belirgin kardiyopulmoner komorbiditesi (ör. pulmoner hipertansiyon) bulunan olgular.</li></ul><h4 class=\"font-bold text-slate-800 text-sm mt-4 mb-2\">⛔ Doğrudan Oksijen Reçete Edilen / Test Gerektirmeyen Durumlar</h4><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li>Deniz seviyesinde istirahatte halihazırda hipoksik olan (SpO₂ ≤ %88 veya PaO₂ &lt; 55 mmHg) veya sürekli evde oksijen tedavisi (LTOT) alan hastalar için test yapılmaksızın uçuş sırasında eksojen oksijen reçete edilir.</li><li>Çok ağır KOAH (FEV₁ &lt; %30) veya kronik hiperkapnisi (PaCO₂ ≥ 52 mmHg) olan hastaların ise 2500 m üzerindeki rakımlara seyahat etmesi kontrendikedir.</li></ul>"
+    },
+    {
+      "heading": "2. HAST Uygulama Protokolü (Adım Adım)",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">HAST uygulaması, solunum laboratuvarında sıkı biyomonitörizasyon altında ve aşağıdaki standart adımlarla gerçekleştirilir:</p><h4 class=\"font-bold text-slate-800 text-sm mt-4 mb-2\">A. Hazırlık ve Bazal Veri Toplama</h4><ol class=\"list-decimal pl-5 space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>İstirahat ve Vital Bulgular:</strong> Hasta test öncesinde en az 10–15 dakika istirahat ettirilir. Bazal nabız, kan basıncı, solunum frekansı ve EKG izlemi alınır.</li><li><strong>Bazal Kan Gazı:</strong> Oda havasında (FiO₂ = 0.21) istirahat halindeyken bazal arteriyel kan gazı (AKG) örneği alınır (PaO₂, PaCO₂, pH, SaO₂) ve periferik SpO₂ kaydedilir.</li></ol><h4 class=\"font-bold text-slate-800 text-sm mt-4 mb-2\">B. Hipoksik Gaz Karışımının Solutulması (Simülasyon Aşaması)</h4><ol class=\"list-decimal pl-5 space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Gaz İçeriği:</strong> Hastaya deniz seviyesinde, 2438 m (8000 ft) kabin irtifasındaki alveoler PO₂ seviyesini simüle eden %15 O₂ ve %85 N₂ içeren normobarik hipoksik gaz karışımı (FiO₂ = 0.15) verilir.</li><li><strong>İletim Sistemi:</strong> Gaz karışımı, sızıntıyı önleyen sıkı oturan bir yüz maskesi (tight-fitting facemask) veya iki yönlü rezervuar valf sistemine bağlı Douglas torbası aracılığıyla iletilir.</li><li><strong>Uygulama Süresi:</strong> Hasta %15 O₂ karışımını istirahatte 15 ile 20 dakika boyunca kesintisiz olarak solur.</li></ol><h4 class=\"font-bold text-slate-800 text-sm mt-4 mb-2\">C. Sürekli Monitörizasyon ve Güvenlik Parametreleri</h4><p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Test boyunca şu parametreler anlık takip edilir:</p><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Sürekli Pulse Oksimetre (SpO₂):</strong> Düşüş trendi izlenir.</li><li><strong>Kardiyak Monitörizasyon:</strong> İskemi, ST segment değişiklikleri veya ritim bozuklukları (aritmiler) EKG ile taranır.</li><li><strong>Semptom Kontrolü:</strong> Dispne derecesi (Borg skoru), göğüs ağrısı, baş dönmesi, çarpıntı veya konfüzyon varlığı sorgulanır.</li></ul><h4 class=\"font-bold text-slate-800 text-sm mt-4 mb-2\">D. Arteriyel Kan Gazı Örneklemesi</h4><p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Hipoksik gaz solutulmasının 20. dakikasında (veya hasta hedeflenen süreden önce belirgin semptomatik duruma gelirse hemen), hasta %15 O₂ gazını solumaya devam ederken ikinci bir arteriyel kan gazı (AKG) örneği alınır.</p>"
+    },
+    {
+      "heading": "3. Pozitif Test Kriterleri ve Eksojen Oksijen Titrasyonu",
+      "html": "<div class=\"bg-indigo-50 border-l-4 border-indigo-500 p-4 shadow-sm mb-4\"><h4 class=\"font-black text-indigo-900 text-xs uppercase mb-2 tracking-wider\">📊 Test Pozitifliği (Uçuş İçi Oksijen İhtiyacı Kriteri)</h4><p class=\"text-sm leading-relaxed mb-3 text-indigo-900\">AKG analizinde veya pulse oksimetrede aşağıdaki eşiklerin saptanması testin pozitif olduğunu (uçuşta akut hipoksemi gelişeceğini) doğrular:</p><ul class=\"space-y-3 text-sm leading-relaxed text-indigo-900 mb-4\"><li>PaO₂ &lt; 50 mmHg (6.7 kPa) veya</li><li>SpO₂ &lt; %85–90 düşüşü veya</li><li>Belirgin klinik semptomatoloji (ağır dispne, anginal ağrı, disritmi).</li></ul></div><h4 class=\"font-bold text-slate-800 text-sm mt-4 mb-2\">🎚️ Oksijen Titrasyon Aşaması</h4><p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Test pozitif saptandığında, %15 O₂ solunumu kesilmeksizin devreye (nazal kanül aracılığıyla) eksojen O₂ (1–3 L/dk) eklenir.</p><ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Hedef:</strong> Hastanın PaO₂ değerini ≥ 50–60 mmHg (SpO₂ ≥ %90) seviyesinde tutacak minimum oksijen akış hızı (L/dk) tespit edilir.</li><li>Reçete edilecek Portatif Oksijen Konsantratörü (POC) veya uçuş içi oksijen desteği bu titre edilen doz üzerinden ayarlanır.</li></ul>"
+    },
+    {
+      "heading": "4. Testin Klinik Değerlendirmesi ve Kısıtlılıkları",
+      "html": "<ul class=\"space-y-3 text-sm leading-relaxed text-slate-700 mb-4\"><li><strong>Yüksek Pozitif Prediktif Değer:</strong> HAST esnasında 20 dakikalık kısa sürede semptomatik olan veya ağır desatüre olan hastaların, gerçek uçuş şartlarında klinik komplikasyon yaşama riski son derece yüksektir.</li><li><strong>Testin Kısıtlılıkları (Negatif Test Yanılsaması):</strong> HAST istirahat halinde uygulanır. Ancak gerçek seyahatlerde hastanın uçak içerisinde yürümesi (efor), uçuş stresi veya saatler süren uzun maruziyetler ventilatuar yükü artırır. Bu nedenle test sonucu negatif çıksa dahi (ek oksijen gereksinimi saptanmasa bile), hastaların seyahat sırasında eforla gelişebilecek desatürasyona karşı taşınabilir parmak oksimetresi ile takip yapmaları önerilir.</li></ul>"
+    }
+  ]
+}
