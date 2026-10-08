@@ -6,15 +6,15 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Morse Düşme Riski — Hastanede düşme riski değerlendirme",
-  description: "Morse Düşme Riski: Hastanede düşme riski değerlendirme skalası — 6 madde. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/morse-fall" },
-  manifest: "/manifest/arac/morse-fall",
+  title: "Norton Ölçeği — Bası yarası riski",
+  description: "Norton Ölçeği: Bası yarası riski — 5 madde, 5–20 (≤ 14 risk). Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/norton" },
+  manifest: "/manifest/arac/norton",
   openGraph: {
     type: "website",
-    title: "Morse Düşme Riski — Hastanede düşme riski değerlendirme",
-    description: "Morse Düşme Riski: Hastanede düşme riski değerlendirme skalası — 6 madde. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/morse-fall",
+    title: "Norton Ölçeği — Bası yarası riski",
+    description: "Norton Ölçeği: Bası yarası riski — 5 madde, 5–20 (≤ 14 risk). Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/norton",
   },
 };
 
@@ -23,16 +23,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Morse Düşme Riski",
-          aciklama: "Morse Düşme Riski: Hastanede düşme riski değerlendirme skalası — 6 madde. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/morse-fall",
+          ad: "Norton Ölçeği",
+          aciklama: "Norton Ölçeği: Bası yarası riski — 5 madde, 5–20 (≤ 14 risk). Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/norton",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Morse Düşme Riski", yol: "/tools/morse-fall" },
+          { ad: "Norton Ölçeği", yol: "/tools/norton" },
         ])}
       />
       {children}
@@ -43,11 +43,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Geriatri kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/norton" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Norton Ölçeği
-              </Link>
-            </li>
             <li>
               <Link href="/tools/prisma-7" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 PRISMA-7
@@ -71,6 +66,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/tilburg-kirilganlik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Tilburg Kırılganlık Göstergesi (TFI)
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/tinetti" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Tinetti POMA
               </Link>
             </li>
           </ul>

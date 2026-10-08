@@ -40,6 +40,11 @@
   "desc": "250 μg / 1 μg protokol — adrenal yetmezlik kortizol yanıtı"
  },
  {
+  "slug": "ad8",
+  "name": "AD8",
+  "desc": "Bilgi verenle demans taraması — 8 madde, ≥ 2 bilişsel bozukluk olası"
+ },
+ {
   "slug": "adrenal-yikanma",
   "name": "Adrenal Kitle BT Yıkanma Hesabı",
   "desc": "Kontrastsız HU, mutlak ve göreli kontrast yıkanması — adenom ayrımı"
@@ -208,6 +213,11 @@
   "slug": "calvert",
   "name": "Calvert Formülü",
   "desc": "Karboplatin AUC bazlı doz hesaplama"
+ },
+ {
+  "slug": "cam",
+  "name": "CAM",
+  "desc": "Confusion Assessment Method — servis hastasında deliryum tanı algoritması"
  },
  {
   "slug": "cam-icu",
@@ -695,6 +705,11 @@
   "desc": "0–100 performans skalası — fonksiyonel kapasite ve prognoz"
  },
  {
+  "slug": "katz-adl",
+  "name": "Katz GYA İndeksi",
+  "desc": "Temel günlük yaşam aktiviteleri — 6 madde, 0–6"
+ },
+ {
   "slug": "kdigo-aki",
   "name": "KDIGO AKI Evrelemesi",
   "desc": "Akut böbrek hasarı evrelemesi (kreatinin + idrar çıkışı)"
@@ -895,6 +910,11 @@
   "desc": "NIH İnme Skalası — 11 alan, akut inme şiddet değerlendirmesi"
  },
  {
+  "slug": "norton",
+  "name": "Norton Ölçeği",
+  "desc": "Bası yarası riski — 5 madde, 5–20 (≤ 14 risk)"
+ },
+ {
   "slug": "nrs-2002",
   "name": "NRS-2002",
   "desc": "Yatan hastalarda beslenme riski taraması"
@@ -1085,6 +1105,11 @@
   "desc": "Revize Travma Skoru — GCS + SKB + Solunum hızı, tahmini sağkalım"
  },
  {
+  "slug": "rucam",
+  "name": "RUCAM",
+  "desc": "İlaç/bitki kaynaklı karaciğer hasarında nedensellik — R oranı ve güncel 2016 ölçeği"
+ },
+ {
   "slug": "same-tt2r2",
   "name": "SAMe-TT₂R₂",
   "desc": "AF'de varfarinle iyi INR kontrolü olasılığı — VKA ya da DOAK seçimi"
@@ -1173,6 +1198,11 @@
   "slug": "spot-urine",
   "name": "Spot İdrar Hesaplamaları",
   "desc": "PCR · ACR · FENa · FEÜre · TTKG · İdrar Anyon Açığı · İdrar Osmolal Gap"
+ },
+ {
+  "slug": "sppb",
+  "name": "SPPB",
+  "desc": "Kısa fiziksel performans bataryası — denge, yürüme, sandalye testi, 0–12"
  },
  {
   "slug": "ssc-2013",

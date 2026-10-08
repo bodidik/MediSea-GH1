@@ -647,6 +647,11 @@
         "eslesen": "GDS-15"
       },
       {
+        "slug": "sppb",
+        "name": "SPPB",
+        "eslesen": "SPPB"
+      },
+      {
         "slug": "eln-2022-aml",
         "name": "ELN 2022 AML Genetik Riski",
         "eslesen": "akut miyeloid",
@@ -670,6 +675,11 @@
         "eslesen": "GDS-15"
       },
       {
+        "slug": "sppb",
+        "name": "SPPB",
+        "eslesen": "SPPB"
+      },
+      {
         "slug": "barthel",
         "name": "Barthel ADL İndeksi",
         "eslesen": "geriatrik değerlendirme",
@@ -678,12 +688,6 @@
       {
         "slug": "frail",
         "name": "FRAIL Skalası",
-        "eslesen": "geriatrik değerlendirme",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "g8",
-        "name": "G8 Tarama Aracı",
         "eslesen": "geriatrik değerlendirme",
         "kaynak": "kavram"
       }
@@ -925,10 +929,9 @@
         "eslesen": "GDS-15"
       },
       {
-        "slug": "barthel",
-        "name": "Barthel ADL İndeksi",
-        "eslesen": "geriatrik değerlendirme",
-        "kaynak": "kavram"
+        "slug": "sppb",
+        "name": "SPPB",
+        "eslesen": "SPPB"
       }
     ],
     "hematoloji/hemolitik-anemiler-genel-bakis": [
@@ -5284,6 +5287,23 @@
         "kaynak": "kavram"
       }
     ],
+    "sppb": [
+      {
+        "yol": "hematoloji/aml",
+        "baslik": "Akut Miyeloid Lösemi (AML)",
+        "eslesen": "SPPB"
+      },
+      {
+        "yol": "hematoloji/aml-geriatrik-degerlendirme",
+        "baslik": "Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)",
+        "eslesen": "SPPB"
+      },
+      {
+        "yol": "hematoloji/hct-ci-geriatrik-degerlendirme",
+        "baslik": "HCT-CI ve Kapsamlı Geriatrik Değerlendirme: Allo-HCT'de Hasta Seçimi",
+        "eslesen": "SPPB"
+      }
+    ],
     "tumor-lizis": [
       {
         "yol": "onkoloji/onkolojik-aciller",
@@ -8238,10 +8258,10 @@
   },
   "olcum": {
     "konu": 489,
-    "arac": 262,
+    "arac": 268,
     "araciOlanKonu": 343,
-    "konusuOlanArac": 163,
-    "bag": 687,
+    "konusuOlanArac": 164,
+    "bag": 688,
     "kavramBag": 522
   }
 }

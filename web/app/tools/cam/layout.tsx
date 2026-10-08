@@ -6,15 +6,15 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Antikolinerjik Yük (ACB) — İlaç listesinden",
-  description: "Antikolinerjik Yük (ACB): İlaç listesinden antikolinerjik bilişsel yük skoru — ≥ 3 klinik anlamlı. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/antikolinerjik-yuk" },
-  manifest: "/manifest/arac/antikolinerjik-yuk",
+  title: "CAM — Confusion Assessment Method",
+  description: "CAM: Confusion Assessment Method — servis hastasında deliryum tanı algoritması. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/cam" },
+  manifest: "/manifest/arac/cam",
   openGraph: {
     type: "website",
-    title: "Antikolinerjik Yük (ACB) — İlaç listesinden",
-    description: "Antikolinerjik Yük (ACB): İlaç listesinden antikolinerjik bilişsel yük skoru — ≥ 3 klinik anlamlı. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/antikolinerjik-yuk",
+    title: "CAM — Confusion Assessment Method",
+    description: "CAM: Confusion Assessment Method — servis hastasında deliryum tanı algoritması. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/cam",
   },
 };
 
@@ -23,16 +23,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Antikolinerjik Yük (ACB)",
-          aciklama: "Antikolinerjik Yük (ACB): İlaç listesinden antikolinerjik bilişsel yük skoru — ≥ 3 klinik anlamlı. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/antikolinerjik-yuk",
+          ad: "CAM",
+          aciklama: "CAM: Confusion Assessment Method — servis hastasında deliryum tanı algoritması. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/cam",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Antikolinerjik Yük (ACB)", yol: "/tools/antikolinerjik-yuk" },
+          { ad: "CAM", yol: "/tools/cam" },
         ])}
       />
       {children}
@@ -43,16 +43,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Geriatri kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/barthel" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Barthel ADL İndeksi
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/cam" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                CAM
-              </Link>
-            </li>
             <li>
               <Link href="/tools/edmonton-kirilganlik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Edmonton Kırılganlık Ölçeği (EFS)
@@ -71,6 +61,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/g8" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 G8 Tarama Aracı
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/gds-15" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                GDS-15
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/groningen-kirilganlik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Groningen Kırılganlık Göstergesi (GFI)
               </Link>
             </li>
           </ul>

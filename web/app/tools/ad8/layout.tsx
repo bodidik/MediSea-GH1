@@ -6,15 +6,15 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "VES-13 — Vulnerable Elders Survey",
-  description: "VES-13: Vulnerable Elders Survey — 13 soru, 2 yıllık ölüm/gerileme riski (≥ 3). Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/ves-13" },
-  manifest: "/manifest/arac/ves-13",
+  title: "AD8 — Bilgi verenle demans taraması",
+  description: "AD8: Bilgi verenle demans taraması — 8 madde, ≥ 2 bilişsel bozukluk olası. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/ad8" },
+  manifest: "/manifest/arac/ad8",
   openGraph: {
     type: "website",
-    title: "VES-13 — Vulnerable Elders Survey",
-    description: "VES-13: Vulnerable Elders Survey — 13 soru, 2 yıllık ölüm/gerileme riski (≥ 3). Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/ves-13",
+    title: "AD8 — Bilgi verenle demans taraması",
+    description: "AD8: Bilgi verenle demans taraması — 8 madde, ≥ 2 bilişsel bozukluk olası. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/ad8",
   },
 };
 
@@ -23,16 +23,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "VES-13",
-          aciklama: "VES-13: Vulnerable Elders Survey — 13 soru, 2 yıllık ölüm/gerileme riski (≥ 3). Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/ves-13",
+          ad: "AD8",
+          aciklama: "AD8: Bilgi verenle demans taraması — 8 madde, ≥ 2 bilişsel bozukluk olası. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/ad8",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "VES-13", yol: "/tools/ves-13" },
+          { ad: "AD8", yol: "/tools/ad8" },
         ])}
       />
       {children}
@@ -43,16 +43,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Geriatri kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/4at" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                4AT
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/ad8" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                AD8
-              </Link>
-            </li>
             <li>
               <Link href="/tools/antikolinerjik-yuk" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Antikolinerjik Yük (ACB)
@@ -71,6 +61,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/edmonton-kirilganlik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Edmonton Kırılganlık Ölçeği (EFS)
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/frail" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                FRAIL Skalası
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/fried-fenotip" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Fried Kırılganlık Fenotipi
               </Link>
             </li>
           </ul>
