@@ -6,15 +6,15 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "GOLD KOAH Sınıflaması — Spirometrik derece GOLD 1–4 ve",
-  description: "GOLD KOAH Sınıflaması: Spirometrik derece GOLD 1–4 ve ABE grubu — FEV1/FVC ≥ 0,70 ise sınıflamaz. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/gold-koah" },
-  manifest: "/manifest/arac/gold-koah",
+  title: "KOAH DOSE İndeksi — KOAH şiddeti",
+  description: "KOAH DOSE İndeksi: KOAH şiddeti — dispne, obstrüksiyon, sigara, alevlenme; ≥ 4 yatış riski yüksek. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/dose-indeksi" },
+  manifest: "/manifest/arac/dose-indeksi",
   openGraph: {
     type: "website",
-    title: "GOLD KOAH Sınıflaması — Spirometrik derece GOLD 1–4 ve",
-    description: "GOLD KOAH Sınıflaması: Spirometrik derece GOLD 1–4 ve ABE grubu — FEV1/FVC ≥ 0,70 ise sınıflamaz. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/gold-koah",
+    title: "KOAH DOSE İndeksi — KOAH şiddeti",
+    description: "KOAH DOSE İndeksi: KOAH şiddeti — dispne, obstrüksiyon, sigara, alevlenme; ≥ 4 yatış riski yüksek. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/dose-indeksi",
   },
 };
 
@@ -23,16 +23,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "GOLD KOAH Sınıflaması",
-          aciklama: "GOLD KOAH Sınıflaması: Spirometrik derece GOLD 1–4 ve ABE grubu — FEV1/FVC ≥ 0,70 ise sınıflamaz. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/gold-koah",
+          ad: "KOAH DOSE İndeksi",
+          aciklama: "KOAH DOSE İndeksi: KOAH şiddeti — dispne, obstrüksiyon, sigara, alevlenme; ≥ 4 yatış riski yüksek. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/dose-indeksi",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "GOLD KOAH Sınıflaması", yol: "/tools/gold-koah" },
+          { ad: "KOAH DOSE İndeksi", yol: "/tools/dose-indeksi" },
         ])}
       />
       {children}
@@ -72,11 +72,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/tools/dose-indeksi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                KOAH DOSE İndeksi
-              </Link>
-            </li>
-            <li>
               <Link href="/tools/light-kriterleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Light Kriterleri
               </Link>
@@ -99,6 +94,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/rapid-plevral" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 RAPID Skoru
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/roma-alevlenme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Roma Alevlenme Şiddeti
               </Link>
             </li>
           </ul>

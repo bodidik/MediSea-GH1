@@ -463,6 +463,36 @@
     "icon": "🫁"
    },
    {
+    "slug": "ado",
+    "name": "ADO İndeksi",
+    "icon": "🫁"
+   },
+   {
+    "slug": "dose-indeksi",
+    "name": "KOAH DOSE İndeksi",
+    "icon": "🫁"
+   },
+   {
+    "slug": "roma-alevlenme",
+    "name": "Roma Alevlenme Şiddeti",
+    "icon": "🫁"
+   },
+   {
+    "slug": "anthonisen",
+    "name": "Anthonisen Kriterleri",
+    "icon": "🫁"
+   },
+   {
+    "slug": "ucus-pao2",
+    "name": "Uçuşta PaO₂ Tahmini",
+    "icon": "🫁"
+   },
+   {
+    "slug": "surucu-basinc",
+    "name": "Sürücü Basınç",
+    "icon": "🫁"
+   },
+   {
     "slug": "light-kriterleri",
     "name": "Light Kriterleri",
     "icon": "🫁"
@@ -560,6 +590,36 @@
    {
     "slug": "decaf",
     "name": "DECAF Skoru",
+    "icon": "🫁"
+   },
+   {
+    "slug": "ado",
+    "name": "ADO İndeksi",
+    "icon": "🫁"
+   },
+   {
+    "slug": "dose-indeksi",
+    "name": "KOAH DOSE İndeksi",
+    "icon": "🫁"
+   },
+   {
+    "slug": "roma-alevlenme",
+    "name": "Roma Alevlenme Şiddeti",
+    "icon": "🫁"
+   },
+   {
+    "slug": "anthonisen",
+    "name": "Anthonisen Kriterleri",
+    "icon": "🫁"
+   },
+   {
+    "slug": "ucus-pao2",
+    "name": "Uçuşta PaO₂ Tahmini",
+    "icon": "🫁"
+   },
+   {
+    "slug": "surucu-basinc",
+    "name": "Sürücü Basınç",
     "icon": "🫁"
    },
    {

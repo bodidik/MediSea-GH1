@@ -45,6 +45,11 @@
   "desc": "Bilgi verenle demans taraması — 8 madde, ≥ 2 bilişsel bozukluk olası"
  },
  {
+  "slug": "ado",
+  "name": "ADO İndeksi",
+  "desc": "KOAH 3 yıllık mortalite — yaş + mMRC + FEV1, güncellenmiş 0–14 puan ve risk yüzdesi"
+ },
+ {
   "slug": "adrenal-yikanma",
   "name": "Adrenal Kitle BT Yıkanma Hesabı",
   "desc": "Kontrastsız HU, mutlak ve göreli kontrast yıkanması — adenom ayrımı"
@@ -83,6 +88,11 @@
   "slug": "ann-arbor-lugano",
   "name": "Ann Arbor / Lugano Evrelemesi",
   "desc": "Hodgkin ve non-Hodgkin lenfoma evresi — E eki, bulky, B semptomları"
+ },
+ {
+  "slug": "anthonisen",
+  "name": "Anthonisen Kriterleri",
+  "desc": "KOAH alevlenmesi tip 1–3 ve GOLD antibiyotik kararı"
  },
  {
   "slug": "antikoagulan-geri-dondurme",
@@ -383,6 +393,11 @@
   "slug": "dlqi",
   "name": "DLQI",
   "desc": "Dermatoloji Yaşam Kalitesi İndeksi — 10 madde, 0–30"
+ },
+ {
+  "slug": "dose-indeksi",
+  "name": "KOAH DOSE İndeksi",
+  "desc": "KOAH şiddeti — dispne, obstrüksiyon, sigara, alevlenme; ≥ 4 yatış riski yüksek"
  },
  {
   "slug": "dst",
@@ -1090,6 +1105,11 @@
   "desc": "Üst GİS kanaması — yeniden kanama ve mortalite"
  },
  {
+  "slug": "roma-alevlenme",
+  "name": "Roma Alevlenme Şiddeti",
+  "desc": "KOAH alevlenmesinde hafif / orta / ağır — VAS, SS, nabız, SaO₂, CRP, kan gazı"
+ },
+ {
   "slug": "rosier",
   "name": "ROSIER",
   "desc": "Acil serviste inmeyi taklitçilerinden ayırma — −2 ile +5, > 0 inme olası"
@@ -1235,6 +1255,11 @@
   "desc": "Obstrüktif uyku apnesi taraması — 0–8, STOP + erkek/BMI/boyun ek kuralı"
  },
  {
+  "slug": "surucu-basinc",
+  "name": "Sürücü Basınç",
+  "desc": "Mekanik ventilasyonda ΔP, plato hedefi, statik kompliyans ve oto-PEEP sınırı"
+ },
+ {
   "slug": "tft",
   "name": "Tiroid Fonksiyon Testi (TFT)",
   "desc": "TSH / FT4 / FT3 patern tanıma — hipo, hiper, subklinik, santral"
@@ -1293,6 +1318,11 @@
   "slug": "uas7",
   "name": "UAS7",
   "desc": "Ürtikar Aktivite Skoru (7 gün) — 0–42, omalizumab eşiği"
+ },
+ {
+  "slug": "ucus-pao2",
+  "name": "Uçuşta PaO₂ Tahmini",
+  "desc": "Dillard denklemi — deniz seviyesi PaO₂ ve FEV1 ile 8000 ft kabinde beklenen PaO₂"
  },
  {
   "slug": "unit-converter",

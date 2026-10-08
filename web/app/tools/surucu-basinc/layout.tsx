@@ -6,15 +6,15 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "ROX İndeksi — Yüksek akımlı nazal oksijende entübasyon",
-  description: "ROX İndeksi: Yüksek akımlı nazal oksijende entübasyon riski — 2/6/12. saat eşikleri. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/rox-indeksi" },
-  manifest: "/manifest/arac/rox-indeksi",
+  title: "Sürücü Basınç — Mekanik ventilasyonda ΔP, plato hedefi",
+  description: "Sürücü Basınç: Mekanik ventilasyonda ΔP, plato hedefi, statik kompliyans ve oto-PEEP sınırı. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/surucu-basinc" },
+  manifest: "/manifest/arac/surucu-basinc",
   openGraph: {
     type: "website",
-    title: "ROX İndeksi — Yüksek akımlı nazal oksijende entübasyon",
-    description: "ROX İndeksi: Yüksek akımlı nazal oksijende entübasyon riski — 2/6/12. saat eşikleri. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/rox-indeksi",
+    title: "Sürücü Basınç — Mekanik ventilasyonda ΔP, plato hedefi",
+    description: "Sürücü Basınç: Mekanik ventilasyonda ΔP, plato hedefi, statik kompliyans ve oto-PEEP sınırı. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/surucu-basinc",
   },
 };
 
@@ -23,16 +23,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "ROX İndeksi",
-          aciklama: "ROX İndeksi: Yüksek akımlı nazal oksijende entübasyon riski — 2/6/12. saat eşikleri. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/rox-indeksi",
+          ad: "Sürücü Basınç",
+          aciklama: "Sürücü Basınç: Mekanik ventilasyonda ΔP, plato hedefi, statik kompliyans ve oto-PEEP sınırı. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/surucu-basinc",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "ROX İndeksi", yol: "/tools/rox-indeksi" },
+          { ad: "Sürücü Basınç", yol: "/tools/surucu-basinc" },
         ])}
       />
       {children}
@@ -43,8 +43,13 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/gogus/koah-postoperatif-niv-hfnc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol
+              <Link href="/topics/gogus/koah-akciger-koruyucu-ventilasyon" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/gogus/koah-perioperatif-anestezi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                KOAH'ta Perioperatif Yönetim ve Anestezi
               </Link>
             </li>
           </ul>
@@ -56,16 +61,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Göğüs Hastalıkları & Enfeksiyon kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/stop-bang" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                STOP-Bang
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/surucu-basinc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Sürücü Basınç
-              </Link>
-            </li>
             <li>
               <Link href="/tools/ucus-pao2" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Uçuşta PaO₂ Tahmini
@@ -84,6 +79,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/anthonisen" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Anthonisen Kriterleri
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/ariscat" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ARISCAT
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/bap65" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                BAP-65
               </Link>
             </li>
           </ul>

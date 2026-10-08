@@ -581,11 +581,59 @@
         "kaynak": "kavram"
       }
     ],
+    "gogus/koah-akciger-koruyucu-ventilasyon": [
+      {
+        "slug": "surucu-basinc",
+        "name": "Sürücü Basınç",
+        "eslesen": "Sürücü Basınç"
+      },
+      {
+        "slug": "ado",
+        "name": "ADO İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "anthonisen",
+        "name": "Anthonisen Kriterleri",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bap65",
+        "name": "BAP-65",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bode",
+        "name": "BODE İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
     "gogus/koah-ana": [
+      {
+        "slug": "anthonisen",
+        "name": "Anthonisen Kriterleri",
+        "eslesen": "Anthonisen"
+      },
       {
         "slug": "qtc",
         "name": "QTc Hesaplayıcı",
         "eslesen": "QTc"
+      },
+      {
+        "slug": "ado",
+        "name": "ADO İndeksi",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
       },
       {
         "slug": "bap65",
@@ -604,17 +652,42 @@
         "name": "CAT Skoru",
         "eslesen": "kronik obstrüktif",
         "kaynak": "kavram"
+      }
+    ],
+    "gogus/koah-perioperatif-anestezi": [
+      {
+        "slug": "surucu-basinc",
+        "name": "Sürücü Basınç",
+        "eslesen": "Sürücü Basınç"
       },
       {
-        "slug": "decaf",
-        "name": "DECAF Skoru",
-        "eslesen": "kronik obstrüktif",
+        "slug": "ado",
+        "name": "ADO İndeksi",
+        "eslesen": "KOAH",
         "kaynak": "kavram"
       },
       {
-        "slug": "gold-koah",
-        "name": "GOLD KOAH Sınıflaması",
-        "eslesen": "kronik obstrüktif",
+        "slug": "anthonisen",
+        "name": "Anthonisen Kriterleri",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bap65",
+        "name": "BAP-65",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bode",
+        "name": "BODE İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
+        "eslesen": "KOAH",
         "kaynak": "kavram"
       }
     ],
@@ -2960,46 +3033,20 @@
         "kaynak": "kavram"
       }
     ],
-    "gogus/koah-akciger-koruyucu-ventilasyon": [
-      {
-        "slug": "bap65",
-        "name": "BAP-65",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "bode",
-        "name": "BODE İndeksi",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "cat-copd",
-        "name": "CAT Skoru",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "decaf",
-        "name": "DECAF Skoru",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "gold-koah",
-        "name": "GOLD KOAH Sınıflaması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "mmrc",
-        "name": "mMRC Dispne",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      }
-    ],
     "gogus/koah-asetazolamid": [
       {
+        "slug": "ado",
+        "name": "ADO İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "anthonisen",
+        "name": "Anthonisen Kriterleri",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "slug": "bap65",
         "name": "BAP-65",
         "eslesen": "KOAH",
@@ -3020,24 +3067,24 @@
       {
         "slug": "decaf",
         "name": "DECAF Skoru",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "gold-koah",
-        "name": "GOLD KOAH Sınıflaması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "mmrc",
-        "name": "mMRC Dispne",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
     ],
     "gogus/koah-cpet-ve-ebv": [
       {
+        "slug": "ado",
+        "name": "ADO İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "anthonisen",
+        "name": "Anthonisen Kriterleri",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "slug": "bap65",
         "name": "BAP-65",
         "eslesen": "KOAH",
@@ -3058,24 +3105,24 @@
       {
         "slug": "decaf",
         "name": "DECAF Skoru",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "gold-koah",
-        "name": "GOLD KOAH Sınıflaması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "mmrc",
-        "name": "mMRC Dispne",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
     ],
     "gogus/koah-fizyolojisi": [
       {
+        "slug": "ado",
+        "name": "ADO İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "anthonisen",
+        "name": "Anthonisen Kriterleri",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "slug": "bap65",
         "name": "BAP-65",
         "eslesen": "KOAH",
@@ -3096,62 +3143,32 @@
       {
         "slug": "decaf",
         "name": "DECAF Skoru",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "gold-koah",
-        "name": "GOLD KOAH Sınıflaması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "mmrc",
-        "name": "mMRC Dispne",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
     ],
-    "gogus/koah-perioperatif-anestezi": [
+    "gogus/koah-hast-testi": [
       {
-        "slug": "bap65",
-        "name": "BAP-65",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "bode",
-        "name": "BODE İndeksi",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "cat-copd",
-        "name": "CAT Skoru",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "decaf",
-        "name": "DECAF Skoru",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "gold-koah",
-        "name": "GOLD KOAH Sınıflaması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "mmrc",
-        "name": "mMRC Dispne",
-        "eslesen": "KOAH",
+        "slug": "ucus-pao2",
+        "name": "Uçuşta PaO₂ Tahmini",
+        "eslesen": "uçuş",
         "kaynak": "kavram"
       }
     ],
     "gogus/koah-postoperatif-niv": [
       {
+        "slug": "ado",
+        "name": "ADO İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "anthonisen",
+        "name": "Anthonisen Kriterleri",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "slug": "bap65",
         "name": "BAP-65",
         "eslesen": "KOAH",
@@ -3172,24 +3189,24 @@
       {
         "slug": "decaf",
         "name": "DECAF Skoru",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "gold-koah",
-        "name": "GOLD KOAH Sınıflaması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "mmrc",
-        "name": "mMRC Dispne",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
     ],
     "gogus/koah-postoperatif-niv-hfnc": [
       {
+        "slug": "ado",
+        "name": "ADO İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "anthonisen",
+        "name": "Anthonisen Kriterleri",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "slug": "bap65",
         "name": "BAP-65",
         "eslesen": "KOAH",
@@ -3210,24 +3227,24 @@
       {
         "slug": "decaf",
         "name": "DECAF Skoru",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "gold-koah",
-        "name": "GOLD KOAH Sınıflaması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "mmrc",
-        "name": "mMRC Dispne",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
     ],
     "gogus/koah-torasik-epidural-analjezi": [
       {
+        "slug": "ado",
+        "name": "ADO İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "anthonisen",
+        "name": "Anthonisen Kriterleri",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "slug": "bap65",
         "name": "BAP-65",
         "eslesen": "KOAH",
@@ -3248,24 +3265,24 @@
       {
         "slug": "decaf",
         "name": "DECAF Skoru",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "gold-koah",
-        "name": "GOLD KOAH Sınıflaması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "mmrc",
-        "name": "mMRC Dispne",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
     ],
     "gogus/koah-ucus-oksijen-hesaplama": [
       {
+        "slug": "ado",
+        "name": "ADO İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "anthonisen",
+        "name": "Anthonisen Kriterleri",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "slug": "bap65",
         "name": "BAP-65",
         "eslesen": "KOAH",
@@ -3286,24 +3303,24 @@
       {
         "slug": "decaf",
         "name": "DECAF Skoru",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "gold-koah",
-        "name": "GOLD KOAH Sınıflaması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "mmrc",
-        "name": "mMRC Dispne",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
     ],
     "gogus/koah-yuksek-rakim-kontrendikasyonlar": [
       {
+        "slug": "ado",
+        "name": "ADO İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "anthonisen",
+        "name": "Anthonisen Kriterleri",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "slug": "bap65",
         "name": "BAP-65",
         "eslesen": "KOAH",
@@ -3324,24 +3341,30 @@
       {
         "slug": "decaf",
         "name": "DECAF Skoru",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "gold-koah",
-        "name": "GOLD KOAH Sınıflaması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "mmrc",
-        "name": "mMRC Dispne",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
     ],
     "gogus/koah-yuksek-rakim-seyahat": [
       {
+        "slug": "ucus-pao2",
+        "name": "Uçuşta PaO₂ Tahmini",
+        "eslesen": "hava yolculuğu",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "ado",
+        "name": "ADO İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "anthonisen",
+        "name": "Anthonisen Kriterleri",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "slug": "bap65",
         "name": "BAP-65",
         "eslesen": "KOAH",
@@ -3356,24 +3379,6 @@
       {
         "slug": "cat-copd",
         "name": "CAT Skoru",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "decaf",
-        "name": "DECAF Skoru",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "gold-koah",
-        "name": "GOLD KOAH Sınıflaması",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "mmrc",
-        "name": "mMRC Dispne",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -5206,6 +5211,67 @@
         "kaynak": "kavram"
       }
     ],
+    "surucu-basinc": [
+      {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "Sürücü Basınç"
+      },
+      {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
+        "eslesen": "Sürücü Basınç"
+      }
+    ],
+    "anthonisen": [
+      {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "Anthonisen"
+      },
+      {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-asetazolamid",
+        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-cpet-ve-ebv",
+        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-fizyolojisi",
+        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv",
+        "baslik": "KOAH'ta Postoperatif Non-İnvaziv Ventilasyon (NIV)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
     "ipss-r": [
       {
         "yol": "hematoloji/akut-lenfoblastik-losemi-all",
@@ -6835,6 +6901,56 @@
         "kaynak": "kavram"
       }
     ],
+    "ado": [
+      {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-asetazolamid",
+        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-cpet-ve-ebv",
+        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-fizyolojisi",
+        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv",
+        "baslik": "KOAH'ta Postoperatif Non-İnvaziv Ventilasyon (NIV)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
     "bap65": [
       {
         "yol": "gogus/koah-ana",
@@ -7035,6 +7151,56 @@
         "kaynak": "kavram"
       }
     ],
+    "dose-indeksi": [
+      {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-asetazolamid",
+        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-cpet-ve-ebv",
+        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-fizyolojisi",
+        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv",
+        "baslik": "KOAH'ta Postoperatif Non-İnvaziv Ventilasyon (NIV)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
     "gold-koah": [
       {
         "yol": "gogus/koah-ana",
@@ -7132,6 +7298,76 @@
         "yol": "gogus/koah-postoperatif-niv-hfnc",
         "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
         "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
+    "roma-alevlenme": [
+      {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-asetazolamid",
+        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-cpet-ve-ebv",
+        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-fizyolojisi",
+        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv",
+        "baslik": "KOAH'ta Postoperatif Non-İnvaziv Ventilasyon (NIV)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
+    "ucus-pao2": [
+      {
+        "yol": "gogus/koah-yuksek-rakim-seyahat",
+        "baslik": "KOAH ve Yüksek Rakım / Hava Yolculuğu",
+        "eslesen": "hava yolculuğu",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-hast-testi",
+        "baslik": "Uçuş Öncesi Hipoksi Simülasyon Testi (HAST)",
+        "eslesen": "uçuş",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-ucus-oksijen-hesaplama",
+        "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
+        "eslesen": "uçuş",
         "kaynak": "kavram"
       }
     ],
@@ -8258,10 +8494,10 @@
   },
   "olcum": {
     "konu": 489,
-    "arac": 268,
-    "araciOlanKonu": 343,
-    "konusuOlanArac": 164,
-    "bag": 688,
-    "kavramBag": 522
+    "arac": 274,
+    "araciOlanKonu": 344,
+    "konusuOlanArac": 170,
+    "bag": 689,
+    "kavramBag": 572
   }
 }
