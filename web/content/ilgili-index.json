@@ -4239,6 +4239,11 @@
  "gogus/koah-ana": [
   {
    "brans": "gogus",
+   "slug": "koah-postoperatif-niv",
+   "baslik": "KOAH'ta Postoperatif Non-İnvaziv Ventilasyon (NIV)"
+  },
+  {
+   "brans": "gogus",
    "slug": "koah-yuksek-rakim-kontrendikasyonlar",
    "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar"
   },
@@ -4306,6 +4311,28 @@
    "brans": "gogus",
    "slug": "koah-yuksek-rakim-seyahat",
    "baslik": "KOAH ve Yüksek Rakım / Hava Yolculuğu"
+  }
+ ],
+ "gogus/koah-postoperatif-niv": [
+  {
+   "brans": "gogus",
+   "slug": "koah-ana",
+   "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-asetazolamid",
+   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-cpet-ve-ebv",
+   "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-fizyolojisi",
+   "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler"
   }
  ],
  "gogus/koah-ucus-oksijen-hesaplama": [
