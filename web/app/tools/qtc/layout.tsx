@@ -58,8 +58,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/hematoloji/gilteritinib-flt3-aml" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi
+              <Link href="/topics/gogus/koah-ana" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Kronik Obstrüktif Akciğer Hastalığı (KOAH)
               </Link>
             </li>
           </ul>

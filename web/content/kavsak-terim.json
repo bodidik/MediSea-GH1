@@ -69,5 +69,7 @@
   "opioid kaynaklı hiperaljezi": "palyatif/oih-ve-tolerans-ayirici-tani",
   "buprenorfin": "onkoloji/buprenorfin-rotasyonu-ve-induksiyon",
   "opioid kaynaklı solunum depresyon": "onkoloji/opioidler-ve-solunum",
-  "metadon rotasyon": "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik"
+  "metadon rotasyon": "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik",
+  "KOAH": "gogus/koah-ana",
+  "kronik obstrüktif akciğer hastalı": "gogus/koah-ana"
 }

@@ -6595,5 +6595,238 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "koah": {
+    "baslik": "KOAH",
+    "aciklama": "KOAH sayfası bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler ve kılavuzlar yayın kaydıyla (Crossref), GOLD raporu kurum sayfasıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. ClinicalKey derlemesi doğrulanamadığı için listede yok. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Alshahrani M, Alshehri A, Sapey E, Stockley R. The Relationship Between Gas Transfer Measurements, Lung Volumes, and Spirometric Indices in Alpha-1 Antitrypsin Deficiency and Non-AATD COPD: A Systematic Review. Int J Chron Obstruct Pulmon Dis 2026;21:1-22",
+        "yil": 2026,
+        "url": "https://doi.org/10.2147/COPD.S598023",
+        "tur": "makale"
+      },
+      {
+        "ad": "Brightling CE, Rabe KF, Singh D, ve ark. Efficacy of Biologics in Patients with Moderate to Very Severe COPD: A Systematic Review. Int J Chron Obstruct Pulmon Dis 2026;21:1-19",
+        "yil": 2026,
+        "url": "https://doi.org/10.2147/COPD.S603471",
+        "tur": "makale"
+      },
+      {
+        "ad": "Bush A. Childhood Environmental Exposures and Adult Disease. Pediatr Pulmonol 2026;61(4):e71591",
+        "yil": 2026,
+        "url": "https://doi.org/10.1002/ppul.71591",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chamaon D, Lenferink A, Bucsán C, ve ark. Predictors of Acute Exacerbations in COPD: A Systematic Review. Int J Chron Obstruct Pulmon Dis 2026;21:1-26",
+        "yil": 2026,
+        "url": "https://doi.org/10.2147/COPD.S540753",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chen S, Shang B, Bi Y, ve ark. Exercise Training Improves Depression and Anxiety in Patients with COPD: A Dose-Response Meta-Analysis of Randomized Controlled Trials. Int J Chron Obstruct Pulmon Dis 2026;21:1-20",
+        "yil": 2026,
+        "url": "https://doi.org/10.2147/COPD.S578054",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chen S, Liu Z, Luo Y, Gong F, Wen H. Effects of Virtual Reality Interventions on Anxiety and Depression in Patients with Chronic Obstructive Pulmonary Disease: A Systematic Review and Meta-Analysis. Int J Chron Obstruct Pulmon Dis 2026;21:1-23",
+        "yil": 2026,
+        "url": "https://doi.org/10.2147/COPD.S605739",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chow R, Pham M, Cope M, ve ark. Sexually dimorphic response to tobacco exposure in COPD: a systematic review and meta-analysis. BMC Pulm Med 2026;26(1):45",
+        "yil": 2026,
+        "url": "https://doi.org/10.1186/s12890-025-04079-w",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cruz AA, Mortimer KJ, Sepúlveda-Pachón IT, Vroling H, Williams C. Global herpes zoster burden in adults with COPD: a systematic review and meta-analysis. Eur Respir Rev 2026;35(179):250167",
+        "yil": 2026,
+        "url": "https://doi.org/10.1183/16000617.0167-2025",
+        "tur": "makale"
+      },
+      {
+        "ad": "Duiker B, Shirazi S, Sivak A, Stickland MK, Davenport MH, Steinback CD. Muscle sympathetic nerve activity in COPD: a systematic review and meta-analysis. Eur Respir Rev 2026;35(180):250267",
+        "yil": 2026,
+        "url": "https://doi.org/10.1183/16000617.0267-2025",
+        "tur": "makale"
+      },
+      {
+        "ad": "Global Initiative for Chronic Obstructive Lung Disease (GOLD). Global Strategy for the Diagnosis, Management, and Prevention of Chronic Obstructive Pulmonary Disease: 2026 Report",
+        "yil": 2026,
+        "url": "https://goldcopd.org/2026-gold-report/"
+      },
+      {
+        "ad": "Griffiths B, Alajmi R, Clifton IJ, Birch RJ, Peckham D, Price OJ. Physical inactivity in chronic airways disease: an important candidate in the treatable traits paradigm. Eur Respir Rev 2026;35(179):250165",
+        "yil": 2026,
+        "url": "https://doi.org/10.1183/16000617.0165-2025",
+        "tur": "makale"
+      },
+      {
+        "ad": "Huang X, Li H, Yao H, ve ark. Disability in Older Adults with COPD: Prevalence, Assessment, and Influencing Factors — A Scoping Review. Clin Interv Aging 2026;21:1-16",
+        "yil": 2026,
+        "url": "https://doi.org/10.2147/CIA.S610177",
+        "tur": "makale"
+      },
+      {
+        "ad": "Massetti G, Martella M, Ruini C, Ruggieri V, Beghe B. Is blood eosinophilia a treatable trait in chronic obstructive airway diseases? Front Immunol 2026;17:1868910",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fimmu.2026.1868910",
+        "tur": "makale"
+      },
+      {
+        "ad": "Niedermaier T, Mansmann U, Holle R. Estimation of mortality hazard ratios by COPD grade using a systematic review and network meta-analysis: deriving grade-, sex-, and age-specific mortality for a German COPD decision model. Sci Rep 2026;16(1):28241",
+        "yil": 2026,
+        "url": "https://doi.org/10.1038/s41598-026-68641-0",
+        "tur": "makale"
+      },
+      {
+        "ad": "Pereira K, Rosser F, Han YY, Jaspers I, Crotty Alexander LE, Celedón JC. Use of electronic cigarettes and asthma across the lifespan. J Allergy Clin Immunol 2026;158(4):927-943",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.jaci.2026.07.009",
+        "tur": "makale"
+      },
+      {
+        "ad": "Salvi B, Paneroni M, Simonelli C, Murgia R, Negro F, Vitacca M. Exercise-Induced Desaturation in COPD Patients Postexacerbation: Impact of Different Definitions on Prevalence Rates in a Rehabilitation Setting. Clin Respir J 2026;20(6):e70199",
+        "yil": 2026,
+        "url": "https://doi.org/10.1111/crj.70199",
+        "tur": "makale"
+      },
+      {
+        "ad": "Sepúlveda-Loyola W, Aguayo JC, Pasten JG, Cuyul-Vásquez I, Valenzuela-Fuenzalida JJ, Carvalho CR. Effects of adding balance training to pulmonary rehabilitation in individuals with COPD: A systematic review and meta-analysis of randomized controlled trials. Respir Med 2026;256:108799",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.rmed.2026.108799",
+        "tur": "makale"
+      },
+      {
+        "ad": "Shabil M, Jan A, Shamim MA, ve ark. Impact of antidiabetic agents on COPD exacerbations in patients with type 2 diabetes mellitus: A systematic review and network meta-analysis. Diab Vasc Dis Res 2026;23(5):14791641261487590",
+        "yil": 2026,
+        "url": "https://doi.org/10.1177/14791641261487590",
+        "tur": "makale"
+      },
+      {
+        "ad": "Sugiura H, Fujino N, Shibata Y, ve ark. The JRS guideline for the management of chronic obstructive pulmonary disease 7th edition 2026. Respir Investig 2026;64(5):101482",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.resinv.2026.101482",
+        "tur": "makale"
+      },
+      {
+        "ad": "Thathera P, Garg A, Ahmed S, Khan MA. Safety and efficacy of budesonide/glycopyrrolate/formoterol fumarate compared with glycopyrrolate/formoterol fumarate for the treatment of COPD: A systematic review and meta-analysis. J Am Pharm Assoc 2025:102906",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.japh.2025.102906",
+        "tur": "makale"
+      },
+      {
+        "ad": "Wan X, Du Y, Zhang C, ve ark. Outcomes of pulmonary rehabilitation in older adults with chronic obstructive pulmonary disease: a systematic review. BMC Geriatr 2026;26(1):1071",
+        "yil": 2026,
+        "url": "https://doi.org/10.1186/s12877-026-07810-2",
+        "tur": "makale"
+      },
+      {
+        "ad": "Watson A, Davidson R, Kon FC, ve ark. Definitions of early COPD and predictors for disease progression: a systematic review. Eur Respir Rev 2026;35(179):250182",
+        "yil": 2026,
+        "url": "https://doi.org/10.1183/16000617.0182-2025",
+        "tur": "makale"
+      },
+      {
+        "ad": "Xie W, Zhang X, Wei W, ve ark. Pharmacist-Driven Outcomes in Asthma and COPD: A Meta-Analysis of Clinical Outcomes and Medication Adherence. Int J Chron Obstruct Pulmon Dis 2026;21:1-15",
+        "yil": 2026,
+        "url": "https://doi.org/10.2147/COPD.S547614",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yang L, Llanos-Paez C, Yang S, ve ark. A Combined Model-Based Meta-Analysis of Aggregated and Individual FEV1 Data From Randomized COPD Trials. CPT Pharmacometrics Syst Pharmacol 2025;15(2):e70059",
+        "yil": 2025,
+        "url": "https://doi.org/10.1002/psp4.70059",
+        "tur": "makale"
+      },
+      {
+        "ad": "Yudhawati R, Aini F, Wicaksono N. A Systematic Review and Meta-Analysis of Immunogenicity and Safety of the Influenza Vaccine in COPD Patients, and Its Relevance with Real-World Effectiveness. Int J Chron Obstruct Pulmon Dis 2026;21:1-19",
+        "yil": 2026,
+        "url": "https://doi.org/10.2147/COPD.S561711",
+        "tur": "makale"
+      },
+      {
+        "ad": "Aboussouan LS. Role of mucoactive agents and secretion clearance techniques in COPD. UpToDate; son güncelleme 24 Eki 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/role-of-mucoactive-agents-and-secretion-clearance-techniques-in-copd",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Budithi R, Dolinski SY. Anesthesia for patients with chronic obstructive pulmonary disease. UpToDate; son güncelleme 24 Oca 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/anesthesia-for-patients-with-chronic-obstructive-pulmonary-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Han MK, Dransfield MT. Management of refractory chronic obstructive pulmonary disease. UpToDate; son güncelleme 22 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-refractory-chronic-obstructive-pulmonary-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Han MK, Dransfield MT. Stable COPD: Initial pharmacologic management. UpToDate; son güncelleme 28 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/stable-copd-initial-pharmacologic-management",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Han MK, Dransfield MT. Stable COPD: Overview of management. UpToDate; son güncelleme 28 Eyl 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/stable-copd-overview-of-management",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Han MK, Dransfield MT, Martinez FJ. Chronic obstructive pulmonary disease: Diagnosis and staging. UpToDate; son güncelleme 5 Eki 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/chronic-obstructive-pulmonary-disease-diagnosis-and-staging",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Kaminsky DA. Overview of pulmonary function testing in adults. UpToDate; son güncelleme 10 Eyl 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/overview-of-pulmonary-function-testing-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Luks AM, Forbes L. Approach to patients with pulmonary diseases who wish to travel to high altitude. UpToDate; son güncelleme 11 Ara 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/approach-to-patients-with-pulmonary-diseases-who-wish-to-travel-to-high-altitude",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Martinez FJ. Lung volume reduction surgery in COPD. UpToDate; son güncelleme 13 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/lung-volume-reduction-surgery-in-copd",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Sethi S. Management of infection in exacerbations of chronic obstructive pulmonary disease. UpToDate; son güncelleme 25 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-infection-in-exacerbations-of-chronic-obstructive-pulmonary-disease",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Stoller JK, Hatipoğlu U. COPD exacerbations: Clinical manifestations and evaluation. UpToDate; son güncelleme 5 Ağu 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/copd-exacerbations-clinical-manifestations-and-evaluation",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Stoller JK, Hatipoğlu U. COPD exacerbations: Management. UpToDate; son güncelleme 7 Eki 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/copd-exacerbations-management",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Weiss ST. Chronic obstructive pulmonary disease: Prognostic factors and comorbid conditions. UpToDate; son güncelleme 6 Tem 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/chronic-obstructive-pulmonary-disease-prognostic-factors-and-comorbid-conditions",
+        "tur": "uptodate"
+      }
+    ]
   }
 }

@@ -581,6 +581,43 @@
         "kaynak": "kavram"
       }
     ],
+    "gogus/koah-ana": [
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
+      },
+      {
+        "slug": "bap65",
+        "name": "BAP-65",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bode",
+        "name": "BODE İndeksi",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "decaf",
+        "name": "DECAF Skoru",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "gold-koah",
+        "name": "GOLD KOAH Sınıflaması",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      }
+    ],
     "hematoloji/akut-lenfoblastik-losemi-all": [
       {
         "slug": "ipss-r",
@@ -4238,6 +4275,11 @@
         "eslesen": "QTc"
       },
       {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "QTc"
+      },
+      {
         "yol": "hematoloji/gilteritinib-flt3-aml",
         "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi",
         "eslesen": "QTc"
@@ -4255,11 +4297,6 @@
       {
         "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
         "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
-        "eslesen": "QTc"
-      },
-      {
-        "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
-        "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
         "eslesen": "QTc"
       }
     ],
@@ -6360,6 +6397,54 @@
         "kaynak": "kavram"
       }
     ],
+    "bap65": [
+      {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      }
+    ],
+    "bode": [
+      {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      }
+    ],
+    "cat-copd": [
+      {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      }
+    ],
+    "decaf": [
+      {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      }
+    ],
+    "gold-koah": [
+      {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      }
+    ],
+    "mmrc": [
+      {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      }
+    ],
     "eln-2022-aml": [
       {
         "yol": "hematoloji/aml",
@@ -7474,11 +7559,11 @@
     ]
   },
   "olcum": {
-    "konu": 476,
+    "konu": 477,
     "arac": 262,
-    "araciOlanKonu": 331,
-    "konusuOlanArac": 156,
-    "bag": 615,
-    "kavramBag": 449
+    "araciOlanKonu": 332,
+    "konusuOlanArac": 162,
+    "bag": 621,
+    "kavramBag": 455
   }
 }
