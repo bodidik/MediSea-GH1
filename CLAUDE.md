@@ -824,7 +824,7 @@ Hepsi ölçüldü, kapsamı yazıldı, **bilerek değiştirilmedi.**
 | **parola kurtarma** | **KURULDU** (10 Eyl) — Resend seçildi; akış uçtan uca hazır, **taşıyıcı anahtarı bekliyor**. Mutlu yol GERÇEK hesapla sınanmadı. Arşivde |
 | **`/tools` hub tekrarı** | **KAPANDI** (9 Eyl) — kullanıcı kararı: çip eşiği `md:` → `lg:`. 768px'te sayfa **12498 → 1978px**, çip duvarı yerine 18 kategorilik katlanmış dizin. Arşivde |
 | **masaüstü satır uzunluğu** | **KAPANDI** (6 Eylül 2026) — 99 → **70 karakter**, arşivde |
-| **`benzer-govde`: demir eksikliği anemisi iki kez yayında** | **KARAR BEKLİYOR** — `demir-eksikligi-anemisi` ↔ `demir-eksikligi` başlık ve 6 bölüm aynı, ikisi de `order` 30. Hangisi kalır + yönlendirme içerik kararı. Arşivde |
+| **`benzer-govde`: demir eksikliği anemisi iki kez yayında** | **KAPANDI** (8 Eki) — kullanıcı ikisini de yer tutucu sayıp sildi; iki adres de `mikrositer-anemiler`e 301. Araç layout'ları + indeksler yeniden üretildi |
 | **premium yetim quiz/kart dosyaları** | **KARAR BEKLİYOR** — ad değil ŞEMA sorunu (üç ayrı şema, motor birini okuyor). Birleştirme ve şık açıklamalarının bölünmesi tıbbi metin işi. Arşivde: "Kalan yetimler AD sorunu DEĞİL" |
 
 ---

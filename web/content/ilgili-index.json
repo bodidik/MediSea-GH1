@@ -4636,16 +4636,6 @@
  "hematoloji/anemiler": [
   {
    "brans": "hematoloji",
-   "slug": "demir-eksikligi",
-   "baslik": "Demir Eksikliği Anemisi (DEA)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "demir-eksikligi-anemisi",
-   "baslik": "Demir Eksikliği Anemisi (DEA)"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "folat-eksikligi",
    "baslik": "Folat (B9 Vitamini) Eksikliği"
   },
@@ -4653,6 +4643,16 @@
    "brans": "hematoloji",
    "slug": "g6pd-eksikligi",
    "baslik": "G6PD (Glukoz-6-Fosfat Dehidrogenaz) Eksikliği"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "hemolitik-anemiler-aiha",
+   "baslik": "Otoimmün Hemolitik Anemiler (AİHA)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kursun-zehirlenmesi-anemisi",
+   "baslik": "Kurşun Zehirlenmesi ve Anemi"
   }
  ],
  "hematoloji/antikoagulasyon-stratejileri": [
@@ -4713,35 +4713,6 @@
    "brans": "hematoloji",
    "slug": "allojenik-kok-hucre-nakli",
    "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
-  }
- ],
- "hematoloji/demir-eksikligi": [
-  {
-   "brans": "hematoloji",
-   "slug": "demir-eksikligi-anemisi",
-   "baslik": "Demir Eksikliği Anemisi (DEA)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "sistemik-mastositoz-sm",
-   "baslik": "Sistemik Mastositoz (SM)"
-  },
-  {
-   "brans": "romatoloji",
-   "slug": "romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi",
-   "baslik": "Romatoid Artritte Serum Ferritin: Anemi Ayırıcı Tanısı ve Eşik Değerler"
-  }
- ],
- "hematoloji/demir-eksikligi-anemisi": [
-  {
-   "brans": "hematoloji",
-   "slug": "demir-eksikligi",
-   "baslik": "Demir Eksikliği Anemisi (DEA)"
-  },
-  {
-   "brans": "romatoloji",
-   "slug": "romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi",
-   "baslik": "Romatoid Artritte Serum Ferritin: Anemi Ayırıcı Tanısı ve Eşik Değerler"
   }
  ],
  "hematoloji/dlbcl": [
@@ -5266,13 +5237,23 @@
  "hematoloji/kursun-zehirlenmesi-anemisi": [
   {
    "brans": "hematoloji",
-   "slug": "demir-eksikligi-anemisi",
-   "baslik": "Demir Eksikliği Anemisi (DEA)"
+   "slug": "aplastik-anemi",
+   "baslik": "Aplastik Anemi"
   },
   {
    "brans": "hematoloji",
-   "slug": "demir-eksikligi",
-   "baslik": "Demir Eksikliği Anemisi (DEA)"
+   "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
+   "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "folat-eksikligi",
+   "baslik": "Folat (B9 Vitamini) Eksikliği"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "g6pd-eksikligi",
+   "baslik": "G6PD (Glukoz-6-Fosfat Dehidrogenaz) Eksikliği"
   }
  ],
  "hematoloji/lenfomalar": [
@@ -5623,8 +5604,18 @@
  "hematoloji/sistemik-mastositoz-sm": [
   {
    "brans": "hematoloji",
-   "slug": "demir-eksikligi",
-   "baslik": "Demir Eksikliği Anemisi (DEA)"
+   "slug": "esansiyel-trombositoz",
+   "baslik": "Esansiyel Trombositemi (ET)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kml",
+   "baslik": "Kronik Miyeloid Lösemi (KML)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "polisitemia-vera",
+   "baslik": "Polistemia Vera (PV) Kapsamlı Özeti"
   }
  ],
  "hematoloji/trombofililer-hiperkoagulabilite": [
@@ -8543,16 +8534,6 @@
   }
  ],
  "romatoloji/romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi": [
-  {
-   "brans": "hematoloji",
-   "slug": "demir-eksikligi",
-   "baslik": "Demir Eksikliği Anemisi (DEA)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "demir-eksikligi-anemisi",
-   "baslik": "Demir Eksikliği Anemisi (DEA)"
-  },
   {
    "brans": "romatoloji",
    "slug": "anti-ccp-negatif-romatoid-artrit",

@@ -821,66 +821,6 @@
         "kaynak": "kavram"
       }
     ],
-    "hematoloji/demir-eksikligi": [
-      {
-        "slug": "mentzer",
-        "name": "Mentzer İndeksi",
-        "eslesen": "Mentzer İndeksi"
-      },
-      {
-        "slug": "anaphylaxis",
-        "name": "Anafilaksi Kriterleri",
-        "eslesen": "Anafilaksi"
-      },
-      {
-        "slug": "demir-parametreleri",
-        "name": "Demir Parametreleri",
-        "eslesen": "demir eksikliği",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "ganzoni",
-        "name": "Ganzoni Demir Açığı",
-        "eslesen": "demir eksikliği",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "retikulosit-indeksi",
-        "name": "Retikülosit Üretim İndeksi",
-        "eslesen": "anemi",
-        "kaynak": "kavram"
-      }
-    ],
-    "hematoloji/demir-eksikligi-anemisi": [
-      {
-        "slug": "mentzer",
-        "name": "Mentzer İndeksi",
-        "eslesen": "Mentzer İndeksi"
-      },
-      {
-        "slug": "anaphylaxis",
-        "name": "Anafilaksi Kriterleri",
-        "eslesen": "Anafilaksi"
-      },
-      {
-        "slug": "demir-parametreleri",
-        "name": "Demir Parametreleri",
-        "eslesen": "demir eksikliği",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "ganzoni",
-        "name": "Ganzoni Demir Açığı",
-        "eslesen": "demir eksikliği",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "retikulosit-indeksi",
-        "name": "Retikülosit Üretim İndeksi",
-        "eslesen": "anemi",
-        "kaynak": "kavram"
-      }
-    ],
     "hematoloji/dlbcl": [
       {
         "slug": "ipi",
@@ -5088,8 +5028,8 @@
         "eslesen": "Anafilaksi"
       },
       {
-        "yol": "hematoloji/demir-eksikligi",
-        "baslik": "Demir Eksikliği Anemisi (DEA)",
+        "yol": "hematoloji/sistemik-mastositoz-sm",
+        "baslik": "Sistemik Mastositoz (SM)",
         "eslesen": "Anafilaksi"
       },
       {
@@ -5108,18 +5048,13 @@
         "eslesen": "Anafilaksi"
       },
       {
-        "yol": "hematoloji/demir-eksikligi-anemisi",
-        "baslik": "Demir Eksikliği Anemisi (DEA)",
-        "eslesen": "Anafilaksi"
-      },
-      {
         "yol": "enfeksiyon/dalbavansin-mrsa-bakteriyemisi",
         "baslik": "Dalbavansin: MRSA Bakteriyemisi ve Step-Down Stratejisi",
         "eslesen": "Anafilaksi"
       },
       {
-        "yol": "hematoloji/sistemik-mastositoz-sm",
-        "baslik": "Sistemik Mastositoz (SM)",
+        "yol": "enfeksiyon/tigesiklin-uyarilar-yan-etkiler",
+        "baslik": "Tigesiklin Tedavisinde Kritik Uyarılar",
         "eslesen": "Anafilaksi"
       }
     ],
@@ -5445,20 +5380,20 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "hematoloji/demir-eksikligi",
-        "baslik": "Demir Eksikliği Anemisi (DEA)",
-        "eslesen": "anemi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/demir-eksikligi-anemisi",
-        "baslik": "Demir Eksikliği Anemisi (DEA)",
-        "eslesen": "anemi",
-        "kaynak": "kavram"
-      },
-      {
         "yol": "hematoloji/hemolitik-anemiler-aiha",
         "baslik": "Otoimmün Hemolitik Anemiler (AİHA)",
+        "eslesen": "anemi",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "hematoloji/kursun-zehirlenmesi-anemisi",
+        "baslik": "Kurşun Zehirlenmesi ve Anemi",
+        "eslesen": "anemi",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "hematoloji/makrositer-anemiler",
+        "baslik": "Makrositer Anemiler",
         "eslesen": "anemi",
         "kaynak": "kavram"
       }
@@ -5518,23 +5453,6 @@
         "yol": "hematoloji/chase-less-skoru",
         "baslik": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli",
         "eslesen": "NIHSS"
-      }
-    ],
-    "mentzer": [
-      {
-        "yol": "hematoloji/demir-eksikligi",
-        "baslik": "Demir Eksikliği Anemisi (DEA)",
-        "eslesen": "Mentzer İndeksi"
-      },
-      {
-        "yol": "hematoloji/demir-eksikligi-anemisi",
-        "baslik": "Demir Eksikliği Anemisi (DEA)",
-        "eslesen": "Mentzer İndeksi"
-      },
-      {
-        "yol": "hematoloji/mikrositer-anemiler",
-        "baslik": "Mikrositer Anemiler",
-        "eslesen": "Mentzer İndeksi"
       }
     ],
     "ipi": [
@@ -5679,6 +5597,13 @@
         "yol": "hematoloji/kronik-eozinofilik-losemi-cel",
         "baslik": "Kronik Eozinofilik Lösemi (CEL)",
         "eslesen": "Mutlak Eozinofil Sayısı"
+      }
+    ],
+    "mentzer": [
+      {
+        "yol": "hematoloji/mikrositer-anemiler",
+        "baslik": "Mikrositer Anemiler",
+        "eslesen": "Mentzer İndeksi"
       }
     ],
     "r-iss": [
@@ -7757,46 +7682,6 @@
         "kaynak": "kavram"
       }
     ],
-    "demir-parametreleri": [
-      {
-        "yol": "hematoloji/demir-eksikligi",
-        "baslik": "Demir Eksikliği Anemisi (DEA)",
-        "eslesen": "demir eksikliği",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "romatoloji/romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi",
-        "baslik": "Romatoid Artritte Serum Ferritin: Anemi Ayırıcı Tanısı ve Eşik Değerler",
-        "eslesen": "ferritin",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/demir-eksikligi-anemisi",
-        "baslik": "Demir Eksikliği Anemisi (DEA)",
-        "eslesen": "demir eksikliği",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/mikrositer-anemiler",
-        "baslik": "Mikrositer Anemiler",
-        "eslesen": "mikrositer",
-        "kaynak": "kavram"
-      }
-    ],
-    "ganzoni": [
-      {
-        "yol": "hematoloji/demir-eksikligi",
-        "baslik": "Demir Eksikliği Anemisi (DEA)",
-        "eslesen": "demir eksikliği",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/demir-eksikligi-anemisi",
-        "baslik": "Demir Eksikliği Anemisi (DEA)",
-        "eslesen": "demir eksikliği",
-        "kaynak": "kavram"
-      }
-    ],
     "cns-ipi": [
       {
         "yol": "hematoloji/dlbcl",
@@ -7962,6 +7847,20 @@
         "yol": "hematoloji/losemiler",
         "baslik": "Lösemiler",
         "eslesen": "lösemiler",
+        "kaynak": "kavram"
+      }
+    ],
+    "demir-parametreleri": [
+      {
+        "yol": "hematoloji/mikrositer-anemiler",
+        "baslik": "Mikrositer Anemiler",
+        "eslesen": "mikrositer",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "romatoloji/romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi",
+        "baslik": "Romatoid Artritte Serum Ferritin: Anemi Ayırıcı Tanısı ve Eşik Değerler",
+        "eslesen": "ferritin",
         "kaynak": "kavram"
       }
     ],
@@ -8643,11 +8542,11 @@
     ]
   },
   "olcum": {
-    "konu": 489,
+    "konu": 487,
     "arac": 277,
-    "araciOlanKonu": 344,
-    "konusuOlanArac": 173,
-    "bag": 689,
-    "kavramBag": 608
+    "araciOlanKonu": 342,
+    "konusuOlanArac": 172,
+    "bag": 679,
+    "kavramBag": 602
   }
 }

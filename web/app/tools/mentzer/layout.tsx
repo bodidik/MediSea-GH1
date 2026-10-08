@@ -43,16 +43,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/hematoloji/demir-eksikligi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Demir Eksikliği Anemisi (DEA)
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/hematoloji/demir-eksikligi-anemisi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Demir Eksikliği Anemisi (DEA)
-              </Link>
-            </li>
-            <li>
               <Link href="/topics/hematoloji/mikrositer-anemiler" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Mikrositer Anemiler
               </Link>
