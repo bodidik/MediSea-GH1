@@ -612,8 +612,8 @@
         "kaynak": "kavram"
       },
       {
-        "slug": "cat-copd",
-        "name": "CAT Skoru",
+        "slug": "capture-koah",
+        "name": "CAPTURE",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -648,8 +648,8 @@
         "kaynak": "kavram"
       },
       {
-        "slug": "cat-copd",
-        "name": "CAT Skoru",
+        "slug": "capture-koah",
+        "name": "CAPTURE",
         "eslesen": "kronik obstrüktif",
         "kaynak": "kavram"
       }
@@ -685,8 +685,8 @@
         "kaynak": "kavram"
       },
       {
-        "slug": "cat-copd",
-        "name": "CAT Skoru",
+        "slug": "capture-koah",
+        "name": "CAPTURE",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -3059,14 +3059,14 @@
         "kaynak": "kavram"
       },
       {
-        "slug": "cat-copd",
-        "name": "CAT Skoru",
+        "slug": "capture-koah",
+        "name": "CAPTURE",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
       {
-        "slug": "decaf",
-        "name": "DECAF Skoru",
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -3097,14 +3097,14 @@
         "kaynak": "kavram"
       },
       {
-        "slug": "cat-copd",
-        "name": "CAT Skoru",
+        "slug": "capture-koah",
+        "name": "CAPTURE",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
       {
-        "slug": "decaf",
-        "name": "DECAF Skoru",
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -3135,14 +3135,14 @@
         "kaynak": "kavram"
       },
       {
-        "slug": "cat-copd",
-        "name": "CAT Skoru",
+        "slug": "capture-koah",
+        "name": "CAPTURE",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
       {
-        "slug": "decaf",
-        "name": "DECAF Skoru",
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -3181,14 +3181,14 @@
         "kaynak": "kavram"
       },
       {
-        "slug": "cat-copd",
-        "name": "CAT Skoru",
+        "slug": "capture-koah",
+        "name": "CAPTURE",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
       {
-        "slug": "decaf",
-        "name": "DECAF Skoru",
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -3219,14 +3219,14 @@
         "kaynak": "kavram"
       },
       {
-        "slug": "cat-copd",
-        "name": "CAT Skoru",
+        "slug": "capture-koah",
+        "name": "CAPTURE",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
       {
-        "slug": "decaf",
-        "name": "DECAF Skoru",
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -3257,14 +3257,14 @@
         "kaynak": "kavram"
       },
       {
-        "slug": "cat-copd",
-        "name": "CAT Skoru",
+        "slug": "capture-koah",
+        "name": "CAPTURE",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
       {
-        "slug": "decaf",
-        "name": "DECAF Skoru",
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -3295,14 +3295,14 @@
         "kaynak": "kavram"
       },
       {
-        "slug": "cat-copd",
-        "name": "CAT Skoru",
+        "slug": "capture-koah",
+        "name": "CAPTURE",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
       {
-        "slug": "decaf",
-        "name": "DECAF Skoru",
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -3333,14 +3333,14 @@
         "kaynak": "kavram"
       },
       {
-        "slug": "cat-copd",
-        "name": "CAT Skoru",
+        "slug": "capture-koah",
+        "name": "CAPTURE",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
       {
-        "slug": "decaf",
-        "name": "DECAF Skoru",
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -3377,8 +3377,8 @@
         "kaynak": "kavram"
       },
       {
-        "slug": "cat-copd",
-        "name": "CAT Skoru",
+        "slug": "capture-koah",
+        "name": "CAPTURE",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       }
@@ -7051,6 +7051,56 @@
         "kaynak": "kavram"
       }
     ],
+    "capture-koah": [
+      {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-asetazolamid",
+        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-cpet-ve-ebv",
+        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-fizyolojisi",
+        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv",
+        "baslik": "KOAH'ta Postoperatif Non-İnvaziv Ventilasyon (NIV)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
     "cat-copd": [
       {
         "yol": "gogus/koah-ana",
@@ -7301,7 +7351,107 @@
         "kaynak": "kavram"
       }
     ],
+    "otur-kalk-5": [
+      {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-asetazolamid",
+        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-cpet-ve-ebv",
+        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-fizyolojisi",
+        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv",
+        "baslik": "KOAH'ta Postoperatif Non-İnvaziv Ventilasyon (NIV)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
     "roma-alevlenme": [
+      {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-asetazolamid",
+        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-cpet-ve-ebv",
+        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-fizyolojisi",
+        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv",
+        "baslik": "KOAH'ta Postoperatif Non-İnvaziv Ventilasyon (NIV)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
+    "star-evreleme": [
       {
         "yol": "gogus/koah-ana",
         "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
@@ -8494,10 +8644,10 @@
   },
   "olcum": {
     "konu": 489,
-    "arac": 274,
+    "arac": 277,
     "araciOlanKonu": 344,
-    "konusuOlanArac": 170,
+    "konusuOlanArac": 173,
     "bag": 689,
-    "kavramBag": 572
+    "kavramBag": 608
   }
 }

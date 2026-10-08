@@ -6,15 +6,15 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "ADO İndeksi — KOAH 3 yıllık mortalite",
-  description: "ADO İndeksi: KOAH 3 yıllık mortalite — yaş + mMRC + FEV1, güncellenmiş 0–14 puan ve risk yüzdesi. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/ado" },
-  manifest: "/manifest/arac/ado",
+  title: "CAPTURE — Birinci basamakta tanı almamış KOAH taraması",
+  description: "CAPTURE: Birinci basamakta tanı almamış KOAH taraması — 5 soru + zirve akım. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/capture-koah" },
+  manifest: "/manifest/arac/capture-koah",
   openGraph: {
     type: "website",
-    title: "ADO İndeksi — KOAH 3 yıllık mortalite",
-    description: "ADO İndeksi: KOAH 3 yıllık mortalite — yaş + mMRC + FEV1, güncellenmiş 0–14 puan ve risk yüzdesi. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/ado",
+    title: "CAPTURE — Birinci basamakta tanı almamış KOAH taraması",
+    description: "CAPTURE: Birinci basamakta tanı almamış KOAH taraması — 5 soru + zirve akım. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/capture-koah",
   },
 };
 
@@ -23,16 +23,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "ADO İndeksi",
-          aciklama: "ADO İndeksi: KOAH 3 yıllık mortalite — yaş + mMRC + FEV1, güncellenmiş 0–14 puan ve risk yüzdesi. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/ado",
+          ad: "CAPTURE",
+          aciklama: "CAPTURE: Birinci basamakta tanı almamış KOAH taraması — 5 soru + zirve akım. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/capture-koah",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "ADO İndeksi", yol: "/tools/ado" },
+          { ad: "CAPTURE", yol: "/tools/capture-koah" },
         ])}
       />
       {children}
@@ -72,33 +72,33 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/tools/anthonisen" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Anthonisen Kriterleri
+              <Link href="/tools/cat-copd" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                CAT Skoru
               </Link>
             </li>
             <li>
-              <Link href="/tools/ariscat" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ARISCAT
+              <Link href="/tools/curb65" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                CURB-65 Skoru
               </Link>
             </li>
             <li>
-              <Link href="/tools/bap65" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                BAP-65
+              <Link href="/tools/decaf" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                DECAF Skoru
               </Link>
             </li>
             <li>
-              <Link href="/tools/berlin-ards" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Berlin ARDS Kriterleri
+              <Link href="/tools/epworth" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Epworth Uykululuk Ölçeği
               </Link>
             </li>
             <li>
-              <Link href="/tools/bode" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                BODE İndeksi
+              <Link href="/tools/esc-pe-risk" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ESC 2019 PE Risk Sınıflaması
               </Link>
             </li>
             <li>
-              <Link href="/tools/capture-koah" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                CAPTURE
+              <Link href="/tools/gap-ipf" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                GAP İndeksi
               </Link>
             </li>
           </ul>

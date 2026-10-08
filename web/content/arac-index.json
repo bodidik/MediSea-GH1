@@ -245,6 +245,11 @@
   "desc": "Cerrahi hastada VTE risk modeli — skoru değiştirmeden kanama riskini ayrıca okur"
  },
  {
+  "slug": "capture-koah",
+  "name": "CAPTURE",
+  "desc": "Birinci basamakta tanı almamış KOAH taraması — 5 soru + zirve akım"
+ },
+ {
   "slug": "caspar",
   "name": "CASPAR Kriterleri",
   "desc": "Psoriatik artrit sınıflaması — psoriazis, tırnak, RF, daktilit, yeni kemik (≥ 3)"
@@ -965,6 +970,11 @@
   "desc": "Akut baş ağrısında subaraknoid kanama araştırma kararı — 6 ölçüt"
  },
  {
+  "slug": "otur-kalk-5",
+  "name": "5 Kez Otur-Kalk Testi",
+  "desc": "5STS — yaşa göre referans, EWGSOP2 düşük kas gücü, KOAH MCID 1,7 sn"
+ },
+ {
   "slug": "padua",
   "name": "Padua Skoru",
   "desc": "Yatan dahili hastalarda VTE profilaksi kararı"
@@ -1228,6 +1238,11 @@
   "slug": "ssc-2013",
   "name": "ACR/EULAR 2013 Sistemik Skleroz",
   "desc": "SSc sınıflama kriterleri — alan başına en yüksek madde (≥ 9)"
+ },
+ {
+  "slug": "star-evreleme",
+  "name": "STAR Evrelemesi",
+  "desc": "KOAH obstrüksiyon şiddeti FEV1/FVC oranına göre — STAR 1–4"
  },
  {
   "slug": "status-epileptikus",

@@ -64,13 +64,13 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/tools/stop-bang" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                STOP-Bang
+              <Link href="/tools/star-evreleme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                STAR Evrelemesi
               </Link>
             </li>
             <li>
-              <Link href="/tools/surucu-basinc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Sürücü Basınç
+              <Link href="/tools/stop-bang" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                STOP-Bang
               </Link>
             </li>
           </ul>

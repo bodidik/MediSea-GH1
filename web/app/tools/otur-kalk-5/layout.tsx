@@ -6,15 +6,15 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "ADO İndeksi — KOAH 3 yıllık mortalite",
-  description: "ADO İndeksi: KOAH 3 yıllık mortalite — yaş + mMRC + FEV1, güncellenmiş 0–14 puan ve risk yüzdesi. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/ado" },
-  manifest: "/manifest/arac/ado",
+  title: "5 Kez Otur-Kalk Testi",
+  description: "5 Kez Otur-Kalk Testi: 5STS — yaşa göre referans, EWGSOP2 düşük kas gücü, KOAH MCID 1,7 sn. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/otur-kalk-5" },
+  manifest: "/manifest/arac/otur-kalk-5",
   openGraph: {
     type: "website",
-    title: "ADO İndeksi — KOAH 3 yıllık mortalite",
-    description: "ADO İndeksi: KOAH 3 yıllık mortalite — yaş + mMRC + FEV1, güncellenmiş 0–14 puan ve risk yüzdesi. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/ado",
+    title: "5 Kez Otur-Kalk Testi",
+    description: "5 Kez Otur-Kalk Testi: 5STS — yaşa göre referans, EWGSOP2 düşük kas gücü, KOAH MCID 1,7 sn. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/otur-kalk-5",
   },
 };
 
@@ -23,16 +23,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "ADO İndeksi",
-          aciklama: "ADO İndeksi: KOAH 3 yıllık mortalite — yaş + mMRC + FEV1, güncellenmiş 0–14 puan ve risk yüzdesi. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/ado",
+          ad: "5 Kez Otur-Kalk Testi",
+          aciklama: "5 Kez Otur-Kalk Testi: 5STS — yaşa göre referans, EWGSOP2 düşük kas gücü, KOAH MCID 1,7 sn. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/otur-kalk-5",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "ADO İndeksi", yol: "/tools/ado" },
+          { ad: "5 Kez Otur-Kalk Testi", yol: "/tools/otur-kalk-5" },
         ])}
       />
       {children}
@@ -43,13 +43,13 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/gogus/koah-ana" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Kronik Obstrüktif Akciğer Hastalığı (KOAH)
+              <Link href="/topics/gogus/koah-akciger-koruyucu-ventilasyon" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)
               </Link>
             </li>
             <li>
-              <Link href="/topics/gogus/koah-akciger-koruyucu-ventilasyon" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)
+              <Link href="/topics/gogus/koah-ana" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Kronik Obstrüktif Akciğer Hastalığı (KOAH)
               </Link>
             </li>
             <li>
@@ -72,6 +72,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
+              <Link href="/tools/act" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ACT
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/ado" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ADO İndeksi
+              </Link>
+            </li>
+            <li>
               <Link href="/tools/anthonisen" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Anthonisen Kriterleri
               </Link>
@@ -89,16 +99,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/berlin-ards" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Berlin ARDS Kriterleri
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/bode" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                BODE İndeksi
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/capture-koah" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                CAPTURE
               </Link>
             </li>
           </ul>

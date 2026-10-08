@@ -493,6 +493,21 @@
     "icon": "🫁"
    },
    {
+    "slug": "star-evreleme",
+    "name": "STAR Evrelemesi",
+    "icon": "🫁"
+   },
+   {
+    "slug": "otur-kalk-5",
+    "name": "5 Kez Otur-Kalk Testi",
+    "icon": "🫁"
+   },
+   {
+    "slug": "capture-koah",
+    "name": "CAPTURE",
+    "icon": "🫁"
+   },
+   {
     "slug": "light-kriterleri",
     "name": "Light Kriterleri",
     "icon": "🫁"
@@ -620,6 +635,21 @@
    {
     "slug": "surucu-basinc",
     "name": "Sürücü Basınç",
+    "icon": "🫁"
+   },
+   {
+    "slug": "star-evreleme",
+    "name": "STAR Evrelemesi",
+    "icon": "🫁"
+   },
+   {
+    "slug": "otur-kalk-5",
+    "name": "5 Kez Otur-Kalk Testi",
+    "icon": "🫁"
+   },
+   {
+    "slug": "capture-koah",
+    "name": "CAPTURE",
     "icon": "🫁"
    },
    {

@@ -67,6 +67,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
+              <Link href="/tools/otur-kalk-5" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                5 Kez Otur-Kalk Testi
+              </Link>
+            </li>
+            <li>
               <Link href="/tools/act" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 ACT
               </Link>
@@ -89,11 +94,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/bap65" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 BAP-65
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/berlin-ards" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Berlin ARDS Kriterleri
               </Link>
             </li>
           </ul>

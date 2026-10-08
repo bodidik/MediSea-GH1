@@ -6,15 +6,15 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "ADO İndeksi — KOAH 3 yıllık mortalite",
-  description: "ADO İndeksi: KOAH 3 yıllık mortalite — yaş + mMRC + FEV1, güncellenmiş 0–14 puan ve risk yüzdesi. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/ado" },
-  manifest: "/manifest/arac/ado",
+  title: "STAR Evrelemesi — KOAH obstrüksiyon şiddeti FEV1/FVC",
+  description: "STAR Evrelemesi: KOAH obstrüksiyon şiddeti FEV1/FVC oranına göre — STAR 1–4. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/star-evreleme" },
+  manifest: "/manifest/arac/star-evreleme",
   openGraph: {
     type: "website",
-    title: "ADO İndeksi — KOAH 3 yıllık mortalite",
-    description: "ADO İndeksi: KOAH 3 yıllık mortalite — yaş + mMRC + FEV1, güncellenmiş 0–14 puan ve risk yüzdesi. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/ado",
+    title: "STAR Evrelemesi — KOAH obstrüksiyon şiddeti FEV1/FVC",
+    description: "STAR Evrelemesi: KOAH obstrüksiyon şiddeti FEV1/FVC oranına göre — STAR 1–4. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/star-evreleme",
   },
 };
 
@@ -23,16 +23,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "ADO İndeksi",
-          aciklama: "ADO İndeksi: KOAH 3 yıllık mortalite — yaş + mMRC + FEV1, güncellenmiş 0–14 puan ve risk yüzdesi. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/ado",
+          ad: "STAR Evrelemesi",
+          aciklama: "STAR Evrelemesi: KOAH obstrüksiyon şiddeti FEV1/FVC oranına göre — STAR 1–4. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/star-evreleme",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "ADO İndeksi", yol: "/tools/ado" },
+          { ad: "STAR Evrelemesi", yol: "/tools/star-evreleme" },
         ])}
       />
       {children}
@@ -72,33 +72,33 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/tools/anthonisen" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Anthonisen Kriterleri
+              <Link href="/tools/stop-bang" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                STOP-Bang
               </Link>
             </li>
             <li>
-              <Link href="/tools/ariscat" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ARISCAT
+              <Link href="/tools/surucu-basinc" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Sürücü Basınç
               </Link>
             </li>
             <li>
-              <Link href="/tools/bap65" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                BAP-65
+              <Link href="/tools/ucus-pao2" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Uçuşta PaO₂ Tahmini
               </Link>
             </li>
             <li>
-              <Link href="/tools/berlin-ards" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Berlin ARDS Kriterleri
+              <Link href="/tools/otur-kalk-5" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                5 Kez Otur-Kalk Testi
               </Link>
             </li>
             <li>
-              <Link href="/tools/bode" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                BODE İndeksi
+              <Link href="/tools/act" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ACT
               </Link>
             </li>
             <li>
-              <Link href="/tools/capture-koah" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                CAPTURE
+              <Link href="/tools/ado" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                ADO İndeksi
               </Link>
             </li>
           </ul>
