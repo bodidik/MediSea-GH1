@@ -4276,6 +4276,38 @@
    "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması"
   }
  ],
+ "gogus/koah-perioperatif-anestezi": [
+  {
+   "brans": "gogus",
+   "slug": "koah-asetazolamid",
+   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-cpet-ve-ebv",
+   "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-fizyolojisi",
+   "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-hast-testi",
+   "baslik": "Uçuş Öncesi Hipoksi Simülasyon Testi (HAST)"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-ucus-oksijen-hesaplama",
+   "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-yuksek-rakim-seyahat",
+   "baslik": "KOAH ve Yüksek Rakım / Hava Yolculuğu"
+  }
+ ],
  "gogus/koah-ucus-oksijen-hesaplama": [
   {
    "brans": "gogus",
@@ -4325,6 +4357,11 @@
    "brans": "gogus",
    "slug": "koah-hast-testi",
    "baslik": "Uçuş Öncesi Hipoksi Simülasyon Testi (HAST)"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-perioperatif-anestezi",
+   "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi"
   },
   {
    "brans": "gogus",

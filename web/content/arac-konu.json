@@ -3071,6 +3071,44 @@
         "kaynak": "kavram"
       }
     ],
+    "gogus/koah-perioperatif-anestezi": [
+      {
+        "slug": "bap65",
+        "name": "BAP-65",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bode",
+        "name": "BODE İndeksi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "decaf",
+        "name": "DECAF Skoru",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "gold-koah",
+        "name": "GOLD KOAH Sınıflaması",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "mmrc",
+        "name": "mMRC Dispne",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
     "gogus/koah-ucus-oksijen-hesaplama": [
       {
         "slug": "bap65",
@@ -6651,6 +6689,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-ucus-oksijen-hesaplama",
         "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
         "eslesen": "KOAH",
@@ -6691,6 +6735,12 @@
       {
         "yol": "gogus/koah-fizyolojisi",
         "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
@@ -6739,6 +6789,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-ucus-oksijen-hesaplama",
         "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
         "eslesen": "KOAH",
@@ -6779,6 +6835,12 @@
       {
         "yol": "gogus/koah-fizyolojisi",
         "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
@@ -6827,6 +6889,12 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/koah-ucus-oksijen-hesaplama",
         "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması",
         "eslesen": "KOAH",
@@ -6867,6 +6935,12 @@
       {
         "yol": "gogus/koah-fizyolojisi",
         "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
         "eslesen": "KOAH",
         "kaynak": "kavram"
       },
@@ -8003,11 +8077,11 @@
     ]
   },
   "olcum": {
-    "konu": 484,
+    "konu": 485,
     "arac": 262,
-    "araciOlanKonu": 338,
+    "araciOlanKonu": 339,
     "konusuOlanArac": 162,
-    "bag": 657,
-    "kavramBag": 491
+    "bag": 663,
+    "kavramBag": 497
   }
 }
