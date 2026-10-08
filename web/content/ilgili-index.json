@@ -712,23 +712,23 @@
  "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma": [
   {
    "brans": "endokrinoloji",
-   "slug": "men1-ektopik-cushing-sendromu",
-   "baslik": "MEN1'de Ektopik Cushing Sendromu: Diagnostik Kusursuz Fırtına"
+   "slug": "siadh-nadir-onb-baglantisi",
+   "baslik": "Modül 6: Nadir Paraneoplastik SIADH ve Olfaktör Nöroblastoma (ONB)"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men1-meme-kanseri-tarama",
-   "baslik": "MEN1'de Meme Kanseri Riski ve Tarama Protokolü"
+   "slug": "siadh-ods-ve-relowering",
+   "baslik": "Modül 5: ODS Patofizyolojisi ve Re-lowering (Geri Düşürme) Stratejileri"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men1-menin-molekuler-gelismeler",
-   "baslik": "Menin Proteini: Son Dönem Moleküler ve Klinik Gelişmeler"
+   "slug": "siadh-sendromu",
+   "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "men1-osilodrostat-block-replace",
-   "baslik": "MEN1'de Osilodrostat: Block-and-Replace Protokolü ve Klinik Avantajları"
+   "slug": "tiroid-hastaliklari-ana",
+   "baslik": "Tiroid Hastalıkları"
   }
  ],
  "endokrinoloji/hipertiroidi": [
@@ -1091,11 +1091,6 @@
    "brans": "endokrinoloji",
    "slug": "gebelikte-hipotiroidizm-yonetimi",
    "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "santral-hipotiroidizm",
-   "baslik": "Santral Hipotiroidizm"
   }
  ],
  "endokrinoloji/hirsutizm-ve-virilizasyon": [
@@ -1590,6 +1585,11 @@
   },
   {
    "brans": "endokrinoloji",
+   "slug": "santral-hipotiroidizm",
+   "baslik": "Santral Hipotiroidizm"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "tiroid-yaslanmasi-fizyolojisi",
    "baslik": "Tiroid Yaşlanması (Thyroid Aging): Fizyolojik TSH Yüksekliği"
   }
@@ -1777,23 +1777,23 @@
  "endokrinoloji/paratiroid-karsinomu-histolojik-tuzaklar": [
   {
    "brans": "endokrinoloji",
-   "slug": "adrenal-bez-hastaliklari",
-   "baslik": "Adrenal (Sürrenal) Bez Hastalıkları"
+   "slug": "hipotiroidi-hashimoto-miksoedem",
+   "baslik": "Hashimoto Tiroiditi (Kronik Lenfositik Tiroidit)"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "adrenal-korteks-hastaliklari",
-   "baslik": "Adrenal Korteks Hastalıkları"
+   "slug": "hipotiroidizm-anasayfa-sistemik-etkiler",
+   "baslik": "Hipotiroidizm"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "adrenal-yetmezlik",
-   "baslik": "Adrenal Yetmezlik (Addison ve Santral)"
+   "slug": "kalsiyum-homeostazi-fizyoloji",
+   "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "arka-hipofiz-bozukluklari-di-ve-siadh",
-   "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH"
+   "slug": "kbh-adinamizm-vaskuler-kalsifikasyon",
+   "baslik": "Adinamik Kemik Hastalığı: Vasküler Kalsifikasyon ve Kısır Döngü"
   }
  ],
  "endokrinoloji/pbmah-genetik-temeller-ailevi-riskler": [
@@ -1860,8 +1860,8 @@
   },
   {
    "brans": "endokrinoloji",
-   "slug": "santral-hipotiroidizm",
-   "baslik": "Santral Hipotiroidizm"
+   "slug": "subklinik-tiroid-hastaliklari",
+   "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)"
   }
  ],
  "endokrinoloji/santral-adrenal-yetmezlik": [
@@ -1901,11 +1901,6 @@
    "brans": "endokrinoloji",
    "slug": "gebelikte-hipotiroidizm-yonetimi",
    "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipotiroidizm-anasayfa-sistemik-etkiler",
-   "baslik": "Hipotiroidizm"
   }
  ],
  "endokrinoloji/santral-hipotiroidizm-lt4-adrenal-kriz": [
@@ -2076,16 +2071,36 @@
  "endokrinoloji/siadh-nadir-onb-baglantisi": [
   {
    "brans": "endokrinoloji",
-   "slug": "siadh-onb-derin-analiz",
-   "baslik": "Modül 6 (Genişletilmiş): Nadir Ektopik AVP Kaynakları ve ONB Patolojisi"
-  }
- ],
- "endokrinoloji/siadh-ods-derin-analiz": [
+   "slug": "sclc-paraneoplastik-siadh",
+   "baslik": "İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "siadh-avp-fizyolojisi",
+   "baslik": "Modül 1: AVP Fizyolojisi, Reseptör Dinamikleri ve Kopeptin"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "siadh-direncli-farmakoterapi",
+   "baslik": "Modül 4: Dirençli SIADH ve Modern Farmakoterapi Seçenekleri"
+  },
   {
    "brans": "endokrinoloji",
    "slug": "siadh-ods-ve-relowering",
    "baslik": "Modül 5: ODS Patofizyolojisi ve Re-lowering (Geri Düşürme) Stratejileri"
   },
+  {
+   "brans": "endokrinoloji",
+   "slug": "siadh-tani-algoritmasi",
+   "baslik": "Modül 2: SIADH Tanı Kriterleri ve FE-Ürik Asit Analizi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "siadh-tedavi-protokolleri",
+   "baslik": "Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü"
+  }
+ ],
+ "endokrinoloji/siadh-ods-derin-analiz": [
   {
    "brans": "endokrinoloji",
    "slug": "siadh-tedavi-protokolleri",
@@ -2110,11 +2125,6 @@
  "endokrinoloji/siadh-ods-ve-relowering": [
   {
    "brans": "endokrinoloji",
-   "slug": "siadh-ods-derin-analiz",
-   "baslik": "Modül 5 (Genişletilmiş): ODS Patofizyolojisi ve Aktif Re-lowering Yönetimi"
-  },
-  {
-   "brans": "endokrinoloji",
    "slug": "siadh-tedavi-protokolleri",
    "baslik": "Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü"
   },
@@ -2137,13 +2147,33 @@
    "brans": "endokrinoloji",
    "slug": "hashimoto-ensefaliti",
    "baslik": "Hashimoto Ensefalopatisi (SREAT) ve Miksödem Psikozu Ayrımı"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "hashimoto-ensefalopati-alfa-enolaz-otoantikor",
+   "baslik": "Hashimoto Ensefalopatisinde Alfa-Enolaz Otoantikorları ve Klinik Önemi"
   }
  ],
  "endokrinoloji/siadh-onb-derin-analiz": [
   {
    "brans": "endokrinoloji",
-   "slug": "siadh-nadir-onb-baglantisi",
-   "baslik": "Modül 6: Nadir Paraneoplastik SIADH ve Olfaktör Nöroblastoma (ONB)"
+   "slug": "arka-hipofiz-bozukluklari-di-ve-siadh",
+   "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "sclc-paraneoplastik-siadh",
+   "baslik": "İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler",
+   "baslik": "SGLT2 İnhibitörleri: Pleiotropik Etkiler ve Advers Profil"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "siadh-direncli-farmakoterapi",
+   "baslik": "Modül 4: Dirençli SIADH ve Modern Farmakoterapi Seçenekleri"
   }
  ],
  "endokrinoloji/siadh-sendromu": [
@@ -4659,8 +4689,8 @@
  "hematoloji/burkitt": [
   {
    "brans": "hematoloji",
-   "slug": "nhl-genel",
-   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
+   "slug": "folikuler-lenfoma",
+   "baslik": "Foliküler Lenfoma"
   }
  ],
  "hematoloji/chase-less-skoru": [
@@ -4717,8 +4747,8 @@
  "hematoloji/dlbcl": [
   {
    "brans": "hematoloji",
-   "slug": "nhl-genel",
-   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
+   "slug": "folikuler-lenfoma",
+   "baslik": "Foliküler Lenfoma"
   }
  ],
  "hematoloji/doac-warfarin-patofizyolojik-karsilastirma": [
@@ -5452,8 +5482,8 @@
  "hematoloji/periferik-t-hucreli-lenfomalar": [
   {
    "brans": "hematoloji",
-   "slug": "nhl-genel",
-   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
+   "slug": "folikuler-lenfoma",
+   "baslik": "Foliküler Lenfoma"
   }
  ],
  "hematoloji/pernisiyoz-anemi": [
@@ -5771,11 +5801,6 @@
  ],
  "kardiyoloji/aks-oac-antitrombotik-yonetim": [
   {
-   "brans": "kardiyoloji",
-   "slug": "uclu-tedavi-uzatma-risk-faktorleri",
-   "baslik": "Üçlü Tedavi Süresini Etkileyen Yüksek İskemi ve Stent Trombozu Riskleri"
-  },
-  {
    "brans": "hematoloji",
    "slug": "antikoagulasyon-stratejileri",
    "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
@@ -5798,6 +5823,11 @@
    "brans": "kardiyoloji",
    "slug": "akut-miyokardit",
    "baslik": "Akut Miyokardit"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "uclu-tedavi-uzatma-risk-faktorleri",
+   "baslik": "Üçlü Tedavi Süresini Etkileyen Yüksek İskemi ve Stent Trombozu Riskleri"
   }
  ],
  "kardiyoloji/akut-miyokardit": [
@@ -5839,23 +5869,23 @@
  "kardiyoloji/aprocitentan-direncli-hipertansiyon": [
   {
    "brans": "kardiyoloji",
-   "slug": "lipidoloji-guncel-kilavuz",
-   "baslik": "Lipidoloji ve Dislipidemi Yönetimi"
+   "slug": "aks-oac-antitrombotik-yonetim",
+   "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
   },
   {
    "brans": "kardiyoloji",
-   "slug": "lipidoloji-statin-miyopatisi-sams",
-   "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
+   "slug": "akut-koroner-sendromlar",
+   "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)"
   },
   {
    "brans": "kardiyoloji",
-   "slug": "lipidoloji-tedavi-ana",
-   "baslik": "Klinik Lipidoloji tedavi"
+   "slug": "hiperlipidemi-dusuk-ldl-hedefleri",
+   "baslik": "Hiperlipidemi: Düşük LDL-C Hedeflerinin Klinik Rasyoneli"
   },
   {
    "brans": "kardiyoloji",
-   "slug": "pcsk9-inhibitorleri",
-   "baslik": "PCSK9 İnhibisyonu"
+   "slug": "hipertansiyon-ve-aciller",
+   "baslik": "Esansiyel Hipertansiyon"
   }
  ],
  "kardiyoloji/aprocitentan-direncsiz-kbh-kullanimi": [
@@ -6014,23 +6044,23 @@
  "kardiyoloji/hipertansiyon-ve-aciller": [
   {
    "brans": "kardiyoloji",
-   "slug": "lipid-ezetimibe",
-   "baslik": "Ezetimib: Hücresel Mekanizma, Majör Klinik Çalışmalar ve ACC/AHA 2026"
+   "slug": "aprocitentan-direncli-hipertansiyon",
+   "baslik": "Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA"
   },
   {
    "brans": "kardiyoloji",
-   "slug": "lipidoloji-guncel-kilavuz",
-   "baslik": "Lipidoloji ve Dislipidemi Yönetimi"
+   "slug": "hiperlipidemi-dusuk-ldl-hedefleri",
+   "baslik": "Hiperlipidemi: Düşük LDL-C Hedeflerinin Klinik Rasyoneli"
   },
   {
    "brans": "kardiyoloji",
-   "slug": "lipidoloji-statin-miyopatisi-sams",
-   "baslik": "Statin Miyopatisi ve SAMS Yönetimi"
+   "slug": "kalp-yetersizligi-arni-tedavisi",
+   "baslik": "ARNI (Sakubitril/Valsartan) Tedavisi: Mekanizma, Kanıtlar ve Yönetim"
   },
   {
    "brans": "kardiyoloji",
-   "slug": "lipidoloji-tedavi-ana",
-   "baslik": "Klinik Lipidoloji tedavi"
+   "slug": "kalp-yetmezligi",
+   "baslik": "Kalp Yetersizliği: Kapsamlı Tanı ve Yönetim"
   }
  ],
  "kardiyoloji/infektif-endokardit": [
@@ -6401,8 +6431,8 @@
  "kardiyoloji/uclu-tedavi-uzatma-risk-faktorleri": [
   {
    "brans": "kardiyoloji",
-   "slug": "aks-oac-antitrombotik-yonetim",
-   "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması"
+   "slug": "akut-koroner-sendromlar",
+   "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)"
   },
   {
    "brans": "kardiyoloji",
@@ -6483,23 +6513,23 @@
  "nefroloji/akut-bobrek-hasari": [
   {
    "brans": "nefroloji",
+   "slug": "membranoz-nefropati-mn",
+   "baslik": "Membranöz nefropati"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-ekstrarenal",
+   "baslik": "ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-hastaligi-pkd",
+   "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "polikistik-bobrek-tedavi",
    "baslik": "ADPKD İleri Okuma: Uzman Düzeyi Tedavi ve Yönetim Kılavuzu"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "renovaskuler-hastaliklar",
-   "baslik": "Trombotik ve Renovasküler Hastalıklar"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "tubulointerstisiyel-hastaliklar",
-   "baslik": "Tübüler ve İnterstisiyel Hastalıklar"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "aldosteron-mekanizmalari",
-   "baslik": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları"
   }
  ],
  "nefroloji/akut-interstisiyel-nefrit-ain": [
@@ -6541,6 +6571,11 @@
    "brans": "nefroloji",
    "slug": "enac-epitelyal-sodyum-kanali",
    "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "kortizol-mr-koruma-mekanizmalari",
+   "baslik": "Kortizolün Mineralokortikoid Reseptöre Bağlanmasının Engellenmesi"
   }
  ],
  "nefroloji/amilorid-spironolakton-karsilastirma": [
@@ -6568,23 +6603,23 @@
  "nefroloji/asit-baz-denge-bozukluklari": [
   {
    "brans": "nefroloji",
-   "slug": "iga-nefropatisi-berger",
-   "baslik": "IgA Nefropatisi ve IgA Vasküliti (HSP)"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "kbh-hiperfosfatemi-yonetimi",
-   "baslik": "Kronik Böbrek Hastalığında Hiperfosfatemi Yönetimi"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "kbh-mkb-kapsamli-inceleme",
-   "baslik": "KBH-Mineral ve Kemik Bozukluğu (CKD-MBD): Kapsamlı İnceleme"
-  },
-  {
-   "brans": "nefroloji",
    "slug": "membranoz-nefropati-mn",
    "baslik": "Membranöz nefropati"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-ekstrarenal",
+   "baslik": "ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-hastaligi-pkd",
+   "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-tedavi",
+   "baslik": "ADPKD İleri Okuma: Uzman Düzeyi Tedavi ve Yönetim Kılavuzu"
   }
  ],
  "nefroloji/asit-baz-fizyopatoloji": [
@@ -6792,11 +6827,6 @@
   }
  ],
  "nefroloji/fizyoloji-mr-regulasyon-mekanizmalari": [
-  {
-   "brans": "nefroloji",
-   "slug": "kortizol-mr-koruma-mekanizmalari",
-   "baslik": "Kortizolün Mineralokortikoid Reseptöre Bağlanmasının Engellenmesi"
-  },
   {
    "brans": "nefroloji",
    "slug": "kalitsal-tubulopatiler-tuz-kaybettiren",
@@ -7079,11 +7109,6 @@
  "nefroloji/kortizol-mr-koruma-mekanizmalari": [
   {
    "brans": "nefroloji",
-   "slug": "fizyoloji-mr-regulasyon-mekanizmalari",
-   "baslik": "Mineralokortikoid Reseptör Regülasyonu"
-  },
-  {
-   "brans": "nefroloji",
    "slug": "meyan-koku-kazanilmis-ame",
    "baslik": "Meyan Kökü ve Kazanılmış Görünür Mineralokortikoid Fazlalığı"
   },
@@ -7091,6 +7116,11 @@
    "brans": "nefroloji",
    "slug": "aldosteron-bobrek-fizyolojisi",
    "baslik": "Aldosteron ve Böbrek Fizyolojisi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "aldosteron-mekanizmalari",
+   "baslik": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları"
   }
  ],
  "nefroloji/kronik-bobrek-hastaligi": [
@@ -7355,8 +7385,8 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "kbh-hiperfosfatemi-yonetimi",
-   "baslik": "Kronik Böbrek Hastalığında Hiperfosfatemi Yönetimi"
+   "slug": "membranoz-nefropati-mn",
+   "baslik": "Membranöz nefropati"
   }
  ],
  "nefroloji/polikistik-bobrek-kardiyovaskuler": [
@@ -7615,6 +7645,16 @@
  "nefroloji/tubulointerstisiyel-hastaliklar": [
   {
    "brans": "nefroloji",
+   "slug": "membranoz-nefropati-mn",
+   "baslik": "Membranöz nefropati"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "polikistik-bobrek-ekstrarenal",
+   "baslik": "ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "polikistik-bobrek-hastaligi-pkd",
    "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
   },
@@ -7622,16 +7662,6 @@
    "brans": "nefroloji",
    "slug": "polikistik-bobrek-tedavi",
    "baslik": "ADPKD İleri Okuma: Uzman Düzeyi Tedavi ve Yönetim Kılavuzu"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "renovaskuler-hastaliklar",
-   "baslik": "Trombotik ve Renovasküler Hastalıklar"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "aldosteron-mekanizmalari",
-   "baslik": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları"
   }
  ],
  "nefroloji/zona-glomeruloza-steroid": [
@@ -7729,23 +7759,23 @@
  "onkoloji/hepatosellular-karsinom-kapsamli-klinik-rehber": [
   {
    "brans": "onkoloji",
+   "slug": "febril-notropeni-konu",
+   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "onkolojik-aciller",
+   "baslik": "Onkolojik Aciller"
+  },
+  {
+   "brans": "onkoloji",
    "slug": "pankreas-kanseri-ana-sayfa",
    "baslik": "Pankreas Kanseri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-neden-ilaç-vs",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "tumor-lizis-sendromu-kapsamli",
-   "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "akciger-kanseri-ana-sayfa",
-   "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
   }
  ],
  "onkoloji/kanser-agrisi-yonetimi": [
@@ -7783,23 +7813,23 @@
  "onkoloji/karaciger-kanserleri": [
   {
    "brans": "onkoloji",
-   "slug": "akciger-kanseri-ana-sayfa",
-   "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "febril-notropeni-konu",
-   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "kanser-agrisi-yonetimi",
-   "baslik": "Kanser Ağrısı Yönetimi"
-  },
-  {
-   "brans": "onkoloji",
    "slug": "onkolojik-aciller",
    "baslik": "Onkolojik Aciller"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-ana-sayfa",
+   "baslik": "Pankreas Kanseri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-ileri-tedaviler",
+   "baslik": "Pankreas Duktal Adenokarsinomunda İleri Onkolojik Tedavi Protokolleri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-kras-mutasyonu",
+   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) KRAS Mutasyon Haritası ve Yeni Nesil İnhibitör Protokolleri"
   }
  ],
  "onkoloji/khdak-tani-algoritma-evreleme": [
@@ -7844,11 +7874,6 @@
  "onkoloji/onkolojik-aciller": [
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-neden-ilaç-vs",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
-  },
-  {
-   "brans": "onkoloji",
    "slug": "akciger-kanseri-ana-sayfa",
    "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
   },
@@ -7861,6 +7886,11 @@
    "brans": "onkoloji",
    "slug": "karaciger-kanserleri",
    "baslik": "Karaciğer Kanserleri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-ana-sayfa",
+   "baslik": "Pankreas Kanseri"
   }
  ],
  "onkoloji/opioid-rotasyonu-2025-konsensus": [
@@ -7954,15 +7984,30 @@
  "onkoloji/pankreas-kanseri-ileri-tedaviler": [
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-kras-mutasyonu",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) KRAS Mutasyon Haritası ve Yeni Nesil İnhibitör Protokolleri"
+   "slug": "pankreas-kanseri-diabetes",
+   "baslik": "Diabetes Mellitus ve Pankreas Duktal Adenokarsinomu (PDAC) Arasındaki Çift Yönlü Patofizyolojik İlişki"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-neden-ilaç-vs",
+   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-smad4",
+   "baslik": "Pankreas Duktal Adenokarsinomunda SMAD4 (DPC4) Gen İnaktivasyonu"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-surveyans",
+   "baslik": "Yüksek Riskli Popülasyonlarda Pankreas Kanseri Tarama ve Sürveyans Protokolleri"
   }
  ],
  "onkoloji/pankreas-kanseri-kras-mutasyonu": [
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ileri-tedaviler",
-   "baslik": "Pankreas Duktal Adenokarsinomunda İleri Onkolojik Tedavi Protokolleri"
+   "slug": "pankreas-kanseri-rna-asilar",
+   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) İmmüno-Onkoloji ve Yeni Nesil RNA Neoantijen Aşı Terapileri"
   }
  ],
  "onkoloji/pankreas-kanseri-neden-ilaç-vs": [
@@ -7978,23 +8023,13 @@
   },
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-kras-mutasyonu",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) KRAS Mutasyon Haritası ve Yeni Nesil İnhibitör Protokolleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-rna-asilar",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) İmmüno-Onkoloji ve Yeni Nesil RNA Neoantijen Aşı Terapileri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-setidegrasib-protokolu",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) KRAS G12D Hedefli Tedavi ve Setidegrasib Protokolü"
-  },
-  {
-   "brans": "onkoloji",
    "slug": "pankreas-kanseri-smad4",
    "baslik": "Pankreas Duktal Adenokarsinomunda SMAD4 (DPC4) Gen İnaktivasyonu"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "pankreas-kanseri-surveyans",
+   "baslik": "Yüksek Riskli Popülasyonlarda Pankreas Kanseri Tarama ve Sürveyans Protokolleri"
   }
  ],
  "onkoloji/pankreas-kanseri-neden-inkretin": [
@@ -8007,65 +8042,30 @@
  "onkoloji/pankreas-kanseri-rna-asilar": [
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-diabetes",
-   "baslik": "Diabetes Mellitus ve Pankreas Duktal Adenokarsinomu (PDAC) Arasındaki Çift Yönlü Patofizyolojik İlişki"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ileri-tedaviler",
-   "baslik": "Pankreas Duktal Adenokarsinomunda İleri Onkolojik Tedavi Protokolleri"
-  },
-  {
-   "brans": "onkoloji",
    "slug": "pankreas-kanseri-kras-mutasyonu",
    "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) KRAS Mutasyon Haritası ve Yeni Nesil İnhibitör Protokolleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-neden-ilaç-vs",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-setidegrasib-protokolu",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) KRAS G12D Hedefli Tedavi ve Setidegrasib Protokolü"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-smad4",
-   "baslik": "Pankreas Duktal Adenokarsinomunda SMAD4 (DPC4) Gen İnaktivasyonu"
   }
  ],
  "onkoloji/pankreas-kanseri-setidegrasib-protokolu": [
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-diabetes",
-   "baslik": "Diabetes Mellitus ve Pankreas Duktal Adenokarsinomu (PDAC) Arasındaki Çift Yönlü Patofizyolojik İlişki"
+   "slug": "febril-notropeni-konu",
+   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
   },
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ileri-tedaviler",
-   "baslik": "Pankreas Duktal Adenokarsinomunda İleri Onkolojik Tedavi Protokolleri"
+   "slug": "kanser-agrisi-yonetimi",
+   "baslik": "Kanser Ağrısı Yönetimi"
   },
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-kras-mutasyonu",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) KRAS Mutasyon Haritası ve Yeni Nesil İnhibitör Protokolleri"
+   "slug": "karaciger-kanserleri",
+   "baslik": "Karaciğer Kanserleri"
   },
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-neden-ilaç-vs",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-rna-asilar",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) İmmüno-Onkoloji ve Yeni Nesil RNA Neoantijen Aşı Terapileri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-smad4",
-   "baslik": "Pankreas Duktal Adenokarsinomunda SMAD4 (DPC4) Gen İnaktivasyonu"
+   "slug": "onkolojik-aciller",
+   "baslik": "Onkolojik Aciller"
   }
  ],
  "onkoloji/pankreas-kanseri-smad4": [
@@ -8081,23 +8081,13 @@
   },
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-kras-mutasyonu",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) KRAS Mutasyon Haritası ve Yeni Nesil İnhibitör Protokolleri"
-  },
-  {
-   "brans": "onkoloji",
    "slug": "pankreas-kanseri-neden-ilaç-vs",
    "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) Farmakolojik, Çevresel ve Yaşam Tarzı Risk Faktörleri"
   },
   {
    "brans": "onkoloji",
-   "slug": "pankreas-kanseri-rna-asilar",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) İmmüno-Onkoloji ve Yeni Nesil RNA Neoantijen Aşı Terapileri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-setidegrasib-protokolu",
-   "baslik": "Pankreas Duktal Adenokarsinomunda (PDAC) KRAS G12D Hedefli Tedavi ve Setidegrasib Protokolü"
+   "slug": "pankreas-kanseri-surveyans",
+   "baslik": "Yüksek Riskli Popülasyonlarda Pankreas Kanseri Tarama ve Sürveyans Protokolleri"
   }
  ],
  "onkoloji/pankreas-kanseri-surveyans": [
@@ -8190,8 +8180,8 @@
  "palyatif/oih-ve-tolerans-ayirici-tani": [
   {
    "brans": "palyatif",
-   "slug": "opioid-toleransi-mekanizmalari",
-   "baslik": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Toleransı Kırma Stratejileri"
+   "slug": "opioidler-ana-sayfa",
+   "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları"
   }
  ],
  "palyatif/opioid-rotasyonu-ilkeleri": [
@@ -8219,11 +8209,6 @@
  "palyatif/opioid-toleransi-mekanizmalari": [
   {
    "brans": "palyatif",
-   "slug": "oih-ve-tolerans-ayirici-tani",
-   "baslik": "İleri Okuma: OIH ve Toleransın Ayırıcı Tanısı"
-  },
-  {
-   "brans": "palyatif",
    "slug": "opioid-rotasyonu-ilkeleri",
    "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
   },
@@ -8246,9 +8231,19 @@
    "brans": "onkoloji",
    "slug": "buprenorfin-rotasyonu-ve-induksiyon",
    "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
+   "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
   }
  ],
  "palyatif/opioidler-ana-sayfa": [
+  {
+   "brans": "palyatif",
+   "slug": "oih-ve-tolerans-ayirici-tani",
+   "baslik": "İleri Okuma: OIH ve Toleransın Ayırıcı Tanısı"
+  },
   {
    "brans": "onkoloji",
    "slug": "opioidler-ve-solunum",
@@ -8392,14 +8387,14 @@
    "baslik": "Seropozitif RA'da Antikor Titrelerinin Takibi ve Biyolojik Ajan Seçimi"
   },
   {
-   "brans": "romatoloji",
-   "slug": "romatoid-artritte-rf-ve-anti-ccp-prognostik-onemi",
-   "baslik": "Romatoid Artritte RF ve Anti-CCP Düzeylerinin Prognostik Önemi"
-  },
-  {
    "brans": "nefroloji",
    "slug": "membranoz-nefropati-tedavi-yonetimi",
    "baslik": "Klinik Yönetim: Primer Membranöz Nefropati Tedavisi"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "romatoid-artrit",
+   "baslik": "Romatoid Artrit (RA)"
   },
   {
    "brans": "romatoloji",
@@ -8543,18 +8538,8 @@
  "romatoloji/romatoid-artrit": [
   {
    "brans": "romatoloji",
-   "slug": "vaskulit-sendromlari",
-   "baslik": "Vaskülit Sendromları"
-  },
-  {
-   "brans": "romatoloji",
-   "slug": "behcet-hastaligi-yonetimi",
-   "baslik": "Behçet Hastalığı: Patogenez, Klinik ve Yönetim Algoritması"
-  },
-  {
-   "brans": "romatoloji",
-   "slug": "behcet-vaskuler-tutulum",
-   "baslik": "Behçet Sendromunda Vasküler Tutulum ve Yönetimi"
+   "slug": "anti-ccp-negatif-romatoid-artrit",
+   "baslik": "Anti-CCP (ACPA) Negatif Romatoid Artrit: Prognostik Profil ve Tedavi Seçimi"
   }
  ],
  "romatoloji/romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi": [
@@ -8585,11 +8570,6 @@
   }
  ],
  "romatoloji/romatoid-artritte-rf-ve-anti-ccp-prognostik-onemi": [
-  {
-   "brans": "romatoloji",
-   "slug": "anti-ccp-negatif-romatoid-artrit",
-   "baslik": "Anti-CCP (ACPA) Negatif Romatoid Artrit: Prognostik Profil ve Tedavi Seçimi"
-  },
   {
    "brans": "romatoloji",
    "slug": "seropozitif-ra-antikor-takibi-ve-biyolojik-ajan-secimi",

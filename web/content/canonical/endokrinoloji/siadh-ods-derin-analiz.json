@@ -4,8 +4,8 @@
     "kaynakca": "siadh",
     "updatedAt": "19 Mar 2026",
     "tags": ["Nöroloji", "ODS", "Krenasyon", "Re-lowering", "Ozmolitler", "Hipokalemi"],
-    "parent": "siadh-sendromu",
-    "order": 5
+    "parent": "siadh-ods-ve-relowering",
+    "order": 1
   },
   "sections": [
     {

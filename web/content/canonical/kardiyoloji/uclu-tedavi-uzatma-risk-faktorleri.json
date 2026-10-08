@@ -12,8 +12,8 @@
       "Klopidogrel",
       "Kanama Riski"
     ],
-    "parent": "akut-koroner-sendromlar",
-    "order": 2
+    "parent": "aks-oac-antitrombotik-yonetim",
+    "order": 1
   },
   "sections": [
     {

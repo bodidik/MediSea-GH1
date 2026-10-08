@@ -4,8 +4,8 @@
     "kaynakca": "pankreas-kanseri",
     "updatedAt": "12 Haz 2026",
     "tags": ["Onkoloji", "Gastroenteroloji", "KRAS G12D", "Setidegrasib", "NEJM", "Klinik Çalışma"],
-    "parent": "pankreas-kanseri-ana-sayfa",
-    "order": 4
+    "parent": "pankreas-kanseri-kras-mutasyonu",
+    "order": 1
   },
   "sections": [
     {

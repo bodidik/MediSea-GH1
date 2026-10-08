@@ -3,8 +3,8 @@
   "meta": {
     "updatedAt": "14 Mar 2026",
     "tags": ["Hematoloji", "NHL", "DLBCL", "Agresif Lenfoma", "R-CHOP", "CAR-T", "Yapay Zeka Taslağı"],
-    "parent": "lenfomalar",
-    "order": 18
+    "parent": "nhl-genel",
+    "order": 8
   },
   "sections": [
     {

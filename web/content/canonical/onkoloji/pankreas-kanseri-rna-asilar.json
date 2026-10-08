@@ -4,8 +4,8 @@
     "kaynakca": "pankreas-kanseri",
     "updatedAt": "12 Haz 2026",
     "tags": ["Onkoloji", "Gastroenteroloji", "İmmünoterapi", "RNA Aşıları", "KRAS Mutasyonu"],
-    "parent": "pankreas-kanseri-ana-sayfa",
-    "order": 6
+    "parent": "pankreas-kanseri-ileri-tedaviler",
+    "order": 2
   },
   "sections": [
     {

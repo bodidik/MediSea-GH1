@@ -3,8 +3,8 @@
   "meta": {
     "updatedAt": "14 Mar 2026",
     "tags": ["Hematoloji", "NHL", "Burkitt Lenfoma", "c-MYC", "Tümör Lizis Sendromu", "Yapay Zeka Taslağı"],
-    "parent": "lenfomalar",
-    "order": 17
+    "parent": "nhl-genel",
+    "order": 10
   },
   "sections": [
     {

@@ -3,8 +3,8 @@
   "meta": {
     "updatedAt": "28 Mar 2026",
     "tags": ["Algoloji", "Opioid", "OIH", "Hiperaljezi", "Tolerans", "NMDA", "Ayırıcı Tanı"],
-    "parent": "opioidler-ana-sayfa",
-    "order": 3
+    "parent": "opioid-toleransi-mekanizmalari",
+    "order": 1
   },
   "sections": [
     {

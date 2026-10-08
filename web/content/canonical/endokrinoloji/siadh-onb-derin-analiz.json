@@ -4,8 +4,8 @@
     "kaynakca": "siadh",
     "updatedAt": "19 Mar 2026",
     "tags": ["Onkoloji", "SIADH", "ONB", "Estezinöroblastom", "DOTANOC", "Homer-Wright"],
-    "parent": "siadh-sendromu",
-    "order": 6
+    "parent": "siadh-nadir-onb-baglantisi",
+    "order": 1
   },
   "sections": [
     {

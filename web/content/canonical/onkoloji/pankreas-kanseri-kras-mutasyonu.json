@@ -4,8 +4,8 @@
     "kaynakca": "pankreas-kanseri",
     "updatedAt": "12 Haz 2026",
     "tags": ["Onkoloji", "Gastroenteroloji", "KRAS İnhibitörleri", "Daraxonrasib", "Adagrasib", "Sotorasib"],
-    "parent": "pankreas-kanseri-ana-sayfa",
-    "order": 3
+    "parent": "pankreas-kanseri-ileri-tedaviler",
+    "order": 1
   },
   "sections": [
     {

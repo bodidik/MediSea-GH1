@@ -3,8 +3,8 @@
   "meta": {
     "updatedAt": "01 Jul 2026",
     "tags": ["Endokrinoloji", "Hipotiroidizm", "Santral Hipotiroidi", "Hipofiz", "TSH", "Adrenal Yetmezlik"],
-    "parent": "tiroid-hastaliklari-ana",
-    "order": 11
+    "parent": "hipotiroidizm-anasayfa-sistemik-etkiler",
+    "order": 4
   },
   "sections": [
     {
