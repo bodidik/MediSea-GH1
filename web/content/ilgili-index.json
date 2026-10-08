@@ -4291,18 +4291,18 @@
   },
   {
    "brans": "gogus",
+   "slug": "koah-asetazolamid",
+   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-hast-testi",
+   "baslik": "Uçuş Öncesi Hipoksi Simülasyon Testi (HAST)"
+  },
+  {
+   "brans": "gogus",
    "slug": "koah-postoperatif-niv",
    "baslik": "KOAH'ta Postoperatif Non-İnvaziv Ventilasyon (NIV)"
-  },
-  {
-   "brans": "gogus",
-   "slug": "koah-postoperatif-niv-hfnc",
-   "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol"
-  },
-  {
-   "brans": "gogus",
-   "slug": "koah-torasik-epidural-analjezi",
-   "baslik": "KOAH'ta Torasik Epidural Analjezi ve Solunum Mekaniği"
   }
  ],
  "gogus/koah-asetazolamid": [
@@ -4336,11 +4336,6 @@
  "gogus/koah-perioperatif-anestezi": [
   {
    "brans": "gogus",
-   "slug": "koah-asetazolamid",
-   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
-  },
-  {
-   "brans": "gogus",
    "slug": "koah-cpet-ve-ebv",
    "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi"
   },
@@ -4348,16 +4343,6 @@
    "brans": "gogus",
    "slug": "koah-fizyolojisi",
    "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler"
-  },
-  {
-   "brans": "gogus",
-   "slug": "koah-hast-testi",
-   "baslik": "Uçuş Öncesi Hipoksi Simülasyon Testi (HAST)"
-  },
-  {
-   "brans": "gogus",
-   "slug": "koah-ucus-oksijen-hesaplama",
-   "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması"
   },
   {
    "brans": "gogus",
@@ -4411,31 +4396,21 @@
  "gogus/koah-yuksek-rakim-kontrendikasyonlar": [
   {
    "brans": "gogus",
-   "slug": "koah-akciger-koruyucu-ventilasyon",
-   "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)"
-  },
-  {
-   "brans": "gogus",
-   "slug": "koah-ana",
-   "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)"
-  },
-  {
-   "brans": "gogus",
    "slug": "koah-asetazolamid",
    "baslik": "KOAH'ta Asetazolamid Tehlikesi"
   },
   {
    "brans": "gogus",
-   "slug": "koah-cpet-ve-ebv",
-   "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi"
+   "slug": "koah-hast-testi",
+   "baslik": "Uçuş Öncesi Hipoksi Simülasyon Testi (HAST)"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-ucus-oksijen-hesaplama",
+   "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması"
   }
  ],
  "gogus/koah-yuksek-rakim-seyahat": [
-  {
-   "brans": "gogus",
-   "slug": "koah-asetazolamid",
-   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
-  },
   {
    "brans": "gogus",
    "slug": "koah-cpet-ve-ebv",
@@ -4448,18 +4423,8 @@
   },
   {
    "brans": "gogus",
-   "slug": "koah-hast-testi",
-   "baslik": "Uçuş Öncesi Hipoksi Simülasyon Testi (HAST)"
-  },
-  {
-   "brans": "gogus",
    "slug": "koah-perioperatif-anestezi",
    "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi"
-  },
-  {
-   "brans": "gogus",
-   "slug": "koah-ucus-oksijen-hesaplama",
-   "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması"
   }
  ],
  "gogus/sarkoidoz-ana": [

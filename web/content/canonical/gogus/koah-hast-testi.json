@@ -10,8 +10,8 @@
       "Hava Yolculuğu",
       "Oksijen Titrasyonu"
     ],
-    "parent": "koah-ana",
-    "order": 3
+    "parent": "koah-yuksek-rakim-seyahat",
+    "order": 2
   },
   "sections": [
     {

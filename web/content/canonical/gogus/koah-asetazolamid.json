@@ -10,8 +10,8 @@
       "Hiperkapni",
       "Akut Dağ Hastalığı"
     ],
-    "parent": "koah-ana",
-    "order": 2
+    "parent": "koah-yuksek-rakim-seyahat",
+    "order": 4
   },
   "sections": [
     {
