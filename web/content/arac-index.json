@@ -415,6 +415,11 @@
   "desc": "Egzersiz EKG testinde prognoz — süre, ST sapması, angina indeksi"
  },
  {
+  "slug": "dxa-skoru",
+  "name": "DXA T ve Z Skoru Yorumu",
+  "desc": "DSÖ sınıflaması — normal, osteopeni, osteoporoz; Z ≤ −2,0 yaşa göre düşük kemik kütlesi"
+ },
+ {
   "slug": "ecog",
   "name": "ECOG Performans Durumu",
   "desc": "Fonksiyonel kapasite / tedavi uygunluğu"
@@ -558,6 +563,11 @@
   "slug": "gds-15",
   "name": "GDS-15",
   "desc": "Geriatrik Depresyon Ölçeği kısa form — 15 madde tarama aracı"
+ },
+ {
+  "slug": "genant-vertebra",
+  "name": "Genant Vertebral Kırık Derecesi",
+  "desc": "Ön/orta/arka yükseklik kaybından derece 0–3 ve kırık şekli"
  },
  {
   "slug": "gh-test",
@@ -965,6 +975,11 @@
   "desc": "Ölçülen − hesaplanan osmolalite · toksik alkol taraması · tahmini madde düzeyleri"
  },
  {
+  "slug": "osta",
+  "name": "OSTA",
+  "desc": "Kilo ve yaşla DXA öncesi osteoporoz taraması — 0,2 × (kilo − yaş)"
+ },
+ {
   "slug": "ottawa-sak",
   "name": "Ottawa SAK Kuralı",
   "desc": "Akut baş ağrısında subaraknoid kanama araştırma kararı — 6 ölçüt"
@@ -1273,6 +1288,11 @@
   "slug": "surucu-basinc",
   "name": "Sürücü Basınç",
   "desc": "Mekanik ventilasyonda ΔP, plato hedefi, statik kompliyans ve oto-PEEP sınırı"
+ },
+ {
+  "slug": "temd-kirik-riski",
+  "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
+  "desc": "TEMD 2025 düşük–çok yüksek risk; FRAX, T skoru, kırık öyküsü + anabolik başlama ölçütü"
  },
  {
   "slug": "tft",

@@ -283,6 +283,26 @@
     "icon": "🦋"
    },
    {
+    "slug": "dxa-skoru",
+    "name": "DXA T ve Z Skoru Yorumu",
+    "icon": "🦋"
+   },
+   {
+    "slug": "temd-kirik-riski",
+    "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
+    "icon": "🦋"
+   },
+   {
+    "slug": "osta",
+    "name": "OSTA",
+    "icon": "🦋"
+   },
+   {
+    "slug": "genant-vertebra",
+    "name": "Genant Vertebral Kırık Derecesi",
+    "icon": "🦋"
+   },
+   {
     "slug": "dst",
     "name": "Deksametazon Süpresyon Testi (DST)",
     "icon": "🦋"

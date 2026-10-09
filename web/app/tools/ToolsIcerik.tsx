@@ -110,6 +110,10 @@ const TOOLS_DATABASE = [
       { slug: "adrenal-yikanma", name: "Adrenal Kitle BT Yıkanma Hesabı", desc: "Kontrastsız HU, mutlak ve göreli kontrast yıkanması — adenom ayrımı" },
       { slug: "cccr", name: "Kalsiyum/Kreatinin Klirens Oranı", desc: "FHH ile primer hiperparatiroidi ayrımı — CCCR" },
       { slug: "makroprolaktin", name: "Makroprolaktin (PEG Geri Kazanımı)", desc: "Hiperprolaktinemide makroprolaktin ve monomerik prolaktin ayrımı" },
+      { slug: "dxa-skoru", name: "DXA T ve Z Skoru Yorumu", desc: "DSÖ sınıflaması — normal, osteopeni, osteoporoz; Z ≤ −2,0 yaşa göre düşük kemik kütlesi" },
+      { slug: "temd-kirik-riski", name: "Osteoporoz Kırık Riski Kategorisi (TEMD)", desc: "TEMD 2025 düşük–çok yüksek risk; FRAX, T skoru, kırık öyküsü + anabolik başlama ölçütü" },
+      { slug: "osta", name: "OSTA", desc: "Kilo ve yaşla DXA öncesi osteoporoz taraması — 0,2 × (kilo − yaş)" },
+      { slug: "genant-vertebra", name: "Genant Vertebral Kırık Derecesi", desc: "Ön/orta/arka yükseklik kaybından derece 0–3 ve kırık şekli" },
     ]
   },
   {

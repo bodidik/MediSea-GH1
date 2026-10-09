@@ -6,15 +6,15 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Metabolik Sendrom — NCEP ATP III ve IDF tanımları yan",
-  description: "Metabolik Sendrom: NCEP ATP III ve IDF tanımları yan yana — bel çevresi, lipit, KB, glukoz. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/metabolik-sendrom" },
-  manifest: "/manifest/arac/metabolik-sendrom",
+  title: "OSTA — Kilo ve yaşla DXA öncesi osteoporoz taraması",
+  description: "OSTA: Kilo ve yaşla DXA öncesi osteoporoz taraması — 0,2 × (kilo − yaş). Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/osta" },
+  manifest: "/manifest/arac/osta",
   openGraph: {
     type: "website",
-    title: "Metabolik Sendrom — NCEP ATP III ve IDF tanımları yan",
-    description: "Metabolik Sendrom: NCEP ATP III ve IDF tanımları yan yana — bel çevresi, lipit, KB, glukoz. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/metabolik-sendrom",
+    title: "OSTA — Kilo ve yaşla DXA öncesi osteoporoz taraması",
+    description: "OSTA: Kilo ve yaşla DXA öncesi osteoporoz taraması — 0,2 × (kilo − yaş). Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/osta",
   },
 };
 
@@ -23,16 +23,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Metabolik Sendrom",
-          aciklama: "Metabolik Sendrom: NCEP ATP III ve IDF tanımları yan yana — bel çevresi, lipit, KB, glukoz. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/metabolik-sendrom",
+          ad: "OSTA",
+          aciklama: "OSTA: Kilo ve yaşla DXA öncesi osteoporoz taraması — 0,2 × (kilo − yaş). Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/osta",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Metabolik Sendrom", yol: "/tools/metabolik-sendrom" },
+          { ad: "OSTA", yol: "/tools/osta" },
         ])}
       />
       {children}
@@ -43,23 +43,23 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/gastroenteroloji/colyak-akdeniz-beslenme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Çölyak Hastalığında Akdeniz Tipi Glutensiz Beslenme
+              <Link href="/topics/endokrinoloji/erkek-osteoporozu-ana-sayfa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Erkek Osteoporozu
               </Link>
             </li>
             <li>
-              <Link href="/topics/endokrinoloji/subklinik-tiroid-hastaliklari" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Subklinik Tiroid Hastalıkları (Giriş Ünitesi)
+              <Link href="/topics/endokrinoloji/erkek-osteoporozu-testosteron" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Erkek Osteoporozu: Seks Steroidleri Aksı
               </Link>
             </li>
             <li>
-              <Link href="/topics/kardiyoloji/statin-intolerans-ezetimibe" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Statin İntoleransı (SAMS) Yönetimi ve Non-Statin Lipid Düşürücü Ajanlar
+              <Link href="/topics/endokrinoloji/kbh-osteoporoz-ckd-mbd" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                KBH İlişkili Osteoporoz (CKD-MBD)
               </Link>
             </li>
             <li>
-              <Link href="/topics/nefroloji/polikistik-bobrek-metabolik-sendrom" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu
+              <Link href="/topics/endokrinoloji/osteoporoz-ana-sayfa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Osteoporoz ve Metabolik Kemik Hastalıkları
               </Link>
             </li>
           </ul>
@@ -71,11 +71,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Endokrinoloji & Metabolizma kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <li>
-              <Link href="/tools/osta" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                OSTA
-              </Link>
-            </li>
             <li>
               <Link href="/tools/temd-kirik-riski" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Osteoporoz Kırık Riski Kategorisi (TEMD)
@@ -99,6 +94,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/aldosteron-renin" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Aldosteron/Renin Oranı
+              </Link>
+            </li>
+            <li>
+              <Link href="/tools/bazal-bolus-insulin" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Bazal-Bolus İnsülin Başlangıcı
               </Link>
             </li>
           </ul>

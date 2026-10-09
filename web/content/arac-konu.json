@@ -2063,6 +2063,58 @@
         "kaynak": "kavram"
       }
     ],
+    "endokrinoloji/erkek-osteoporozu-ana-sayfa": [
+      {
+        "slug": "dxa-skoru",
+        "name": "DXA T ve Z Skoru Yorumu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "genant-vertebra",
+        "name": "Genant Vertebral Kırık Derecesi",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "osta",
+        "name": "OSTA",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "temd-kirik-riski",
+        "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      }
+    ],
+    "endokrinoloji/erkek-osteoporozu-testosteron": [
+      {
+        "slug": "dxa-skoru",
+        "name": "DXA T ve Z Skoru Yorumu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "genant-vertebra",
+        "name": "Genant Vertebral Kırık Derecesi",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "osta",
+        "name": "OSTA",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "temd-kirik-riski",
+        "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      }
+    ],
     "endokrinoloji/etelcalcetide-evocalcet-kalsimimetikler": [
       {
         "slug": "corrected-calcium",
@@ -2433,6 +2485,30 @@
     ],
     "endokrinoloji/kbh-osteoporoz-ckd-mbd": [
       {
+        "slug": "dxa-skoru",
+        "name": "DXA T ve Z Skoru Yorumu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "genant-vertebra",
+        "name": "Genant Vertebral Kırık Derecesi",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "osta",
+        "name": "OSTA",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "temd-kirik-riski",
+        "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
         "slug": "egfr-sistatin",
         "name": "Sistatin C ile eGFR",
         "eslesen": "KBH",
@@ -2494,6 +2570,162 @@
         "slug": "tft",
         "name": "Tiroid Fonksiyon Testi (TFT)",
         "eslesen": "hipotiroidi",
+        "kaynak": "kavram"
+      }
+    ],
+    "endokrinoloji/osteoporoz-ana-sayfa": [
+      {
+        "slug": "dxa-skoru",
+        "name": "DXA T ve Z Skoru Yorumu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "genant-vertebra",
+        "name": "Genant Vertebral Kırık Derecesi",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "osta",
+        "name": "OSTA",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "temd-kirik-riski",
+        "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      }
+    ],
+    "endokrinoloji/osteoporoz-organ-nakli-kaynakli": [
+      {
+        "slug": "dxa-skoru",
+        "name": "DXA T ve Z Skoru Yorumu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "genant-vertebra",
+        "name": "Genant Vertebral Kırık Derecesi",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "osta",
+        "name": "OSTA",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "temd-kirik-riski",
+        "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      }
+    ],
+    "endokrinoloji/osteoporoz-postransplant-kalsinorin-inh": [
+      {
+        "slug": "dxa-skoru",
+        "name": "DXA T ve Z Skoru Yorumu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "genant-vertebra",
+        "name": "Genant Vertebral Kırık Derecesi",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "osta",
+        "name": "OSTA",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "temd-kirik-riski",
+        "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      }
+    ],
+    "endokrinoloji/osteoporoz-tedavi-kilavuz-karsilastirma": [
+      {
+        "slug": "dxa-skoru",
+        "name": "DXA T ve Z Skoru Yorumu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "genant-vertebra",
+        "name": "Genant Vertebral Kırık Derecesi",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "osta",
+        "name": "OSTA",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "temd-kirik-riski",
+        "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      }
+    ],
+    "endokrinoloji/osteoporoz-tedavisi": [
+      {
+        "slug": "dxa-skoru",
+        "name": "DXA T ve Z Skoru Yorumu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "genant-vertebra",
+        "name": "Genant Vertebral Kırık Derecesi",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "osta",
+        "name": "OSTA",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "temd-kirik-riski",
+        "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      }
+    ],
+    "endokrinoloji/osteoporoz-TEMDtedavi-ozet": [
+      {
+        "slug": "dxa-skoru",
+        "name": "DXA T ve Z Skoru Yorumu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "genant-vertebra",
+        "name": "Genant Vertebral Kırık Derecesi",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "osta",
+        "name": "OSTA",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "temd-kirik-riski",
+        "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
+        "eslesen": "osteoporoz",
         "kaynak": "kavram"
       }
     ],
@@ -6368,6 +6600,206 @@
         "kaynak": "kavram"
       }
     ],
+    "dxa-skoru": [
+      {
+        "yol": "endokrinoloji/erkek-osteoporozu-ana-sayfa",
+        "baslik": "Erkek Osteoporozu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/erkek-osteoporozu-testosteron",
+        "baslik": "Erkek Osteoporozu: Seks Steroidleri Aksı",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/kbh-osteoporoz-ckd-mbd",
+        "baslik": "KBH İlişkili Osteoporoz (CKD-MBD)",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-ana-sayfa",
+        "baslik": "Osteoporoz ve Metabolik Kemik Hastalıkları",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-organ-nakli-kaynakli",
+        "baslik": "Transplantasyon Sonrası Osteoporoz: Risk Faktörleri, Profilaksi ve Klinik Yönetim Protokolleri",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-postransplant-kalsinorin-inh",
+        "baslik": "İmmünsüpresif İlişkili Osteoporoz: Kalsinörin İnhibitörleri: Siklosporin ve Takrolimus",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-tedavi-kilavuz-karsilastirma",
+        "baslik": "Global Osteoporoz Kılavuzları Karşılaştırmalı Analizi: Avrupa, Amerika ve Türkiye (TEMD) Protokolleri",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-tedavisi",
+        "baslik": "Osteoporoz Tedavisi: Farmakoterapi Endikasyonları, Modaliteler ve Yönetim Stratejileri",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      }
+    ],
+    "genant-vertebra": [
+      {
+        "yol": "endokrinoloji/erkek-osteoporozu-ana-sayfa",
+        "baslik": "Erkek Osteoporozu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/erkek-osteoporozu-testosteron",
+        "baslik": "Erkek Osteoporozu: Seks Steroidleri Aksı",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/kbh-osteoporoz-ckd-mbd",
+        "baslik": "KBH İlişkili Osteoporoz (CKD-MBD)",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-ana-sayfa",
+        "baslik": "Osteoporoz ve Metabolik Kemik Hastalıkları",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-organ-nakli-kaynakli",
+        "baslik": "Transplantasyon Sonrası Osteoporoz: Risk Faktörleri, Profilaksi ve Klinik Yönetim Protokolleri",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-postransplant-kalsinorin-inh",
+        "baslik": "İmmünsüpresif İlişkili Osteoporoz: Kalsinörin İnhibitörleri: Siklosporin ve Takrolimus",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-tedavi-kilavuz-karsilastirma",
+        "baslik": "Global Osteoporoz Kılavuzları Karşılaştırmalı Analizi: Avrupa, Amerika ve Türkiye (TEMD) Protokolleri",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-tedavisi",
+        "baslik": "Osteoporoz Tedavisi: Farmakoterapi Endikasyonları, Modaliteler ve Yönetim Stratejileri",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      }
+    ],
+    "osta": [
+      {
+        "yol": "endokrinoloji/erkek-osteoporozu-ana-sayfa",
+        "baslik": "Erkek Osteoporozu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/erkek-osteoporozu-testosteron",
+        "baslik": "Erkek Osteoporozu: Seks Steroidleri Aksı",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/kbh-osteoporoz-ckd-mbd",
+        "baslik": "KBH İlişkili Osteoporoz (CKD-MBD)",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-ana-sayfa",
+        "baslik": "Osteoporoz ve Metabolik Kemik Hastalıkları",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-organ-nakli-kaynakli",
+        "baslik": "Transplantasyon Sonrası Osteoporoz: Risk Faktörleri, Profilaksi ve Klinik Yönetim Protokolleri",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-postransplant-kalsinorin-inh",
+        "baslik": "İmmünsüpresif İlişkili Osteoporoz: Kalsinörin İnhibitörleri: Siklosporin ve Takrolimus",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-tedavi-kilavuz-karsilastirma",
+        "baslik": "Global Osteoporoz Kılavuzları Karşılaştırmalı Analizi: Avrupa, Amerika ve Türkiye (TEMD) Protokolleri",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-tedavisi",
+        "baslik": "Osteoporoz Tedavisi: Farmakoterapi Endikasyonları, Modaliteler ve Yönetim Stratejileri",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      }
+    ],
+    "temd-kirik-riski": [
+      {
+        "yol": "endokrinoloji/erkek-osteoporozu-ana-sayfa",
+        "baslik": "Erkek Osteoporozu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/erkek-osteoporozu-testosteron",
+        "baslik": "Erkek Osteoporozu: Seks Steroidleri Aksı",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/kbh-osteoporoz-ckd-mbd",
+        "baslik": "KBH İlişkili Osteoporoz (CKD-MBD)",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-ana-sayfa",
+        "baslik": "Osteoporoz ve Metabolik Kemik Hastalıkları",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-organ-nakli-kaynakli",
+        "baslik": "Transplantasyon Sonrası Osteoporoz: Risk Faktörleri, Profilaksi ve Klinik Yönetim Protokolleri",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-postransplant-kalsinorin-inh",
+        "baslik": "İmmünsüpresif İlişkili Osteoporoz: Kalsinörin İnhibitörleri: Siklosporin ve Takrolimus",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-tedavi-kilavuz-karsilastirma",
+        "baslik": "Global Osteoporoz Kılavuzları Karşılaştırmalı Analizi: Avrupa, Amerika ve Türkiye (TEMD) Protokolleri",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/osteoporoz-tedavisi",
+        "baslik": "Osteoporoz Tedavisi: Farmakoterapi Endikasyonları, Modaliteler ve Yönetim Stratejileri",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      }
+    ],
     "graves-cas": [
       {
         "yol": "endokrinoloji/graves-hcp5-lncrna-ve-epigenetik",
@@ -8543,10 +8975,10 @@
   },
   "olcum": {
     "konu": 487,
-    "arac": 277,
-    "araciOlanKonu": 342,
-    "konusuOlanArac": 172,
-    "bag": 679,
-    "kavramBag": 602
+    "arac": 281,
+    "araciOlanKonu": 350,
+    "konusuOlanArac": 176,
+    "bag": 715,
+    "kavramBag": 638
   }
 }

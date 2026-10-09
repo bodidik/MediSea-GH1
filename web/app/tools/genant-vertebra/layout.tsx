@@ -6,15 +6,15 @@ import type { ReactNode } from "react";import Link from "next/link";
 import { JsonLd, aracSemasi, kirintiSemasi } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Graves Orbitopatisi CAS — Klinik Aktivite Skoru",
-  description: "Graves Orbitopatisi CAS: Klinik Aktivite Skoru — ilk değerlendirme ≥ 3/7, izlem ≥ 4/10. Ücretsiz klinik hesaplayıcı — MediSea.",
-  alternates: { canonical: "/tools/graves-cas" },
-  manifest: "/manifest/arac/graves-cas",
+  title: "Genant Vertebral Kırık Derecesi — Ön/orta/arka",
+  description: "Genant Vertebral Kırık Derecesi: Ön/orta/arka yükseklik kaybından derece 0–3 ve kırık şekli. Ücretsiz klinik hesaplayıcı — MediSea.",
+  alternates: { canonical: "/tools/genant-vertebra" },
+  manifest: "/manifest/arac/genant-vertebra",
   openGraph: {
     type: "website",
-    title: "Graves Orbitopatisi CAS — Klinik Aktivite Skoru",
-    description: "Graves Orbitopatisi CAS: Klinik Aktivite Skoru — ilk değerlendirme ≥ 3/7, izlem ≥ 4/10. Ücretsiz klinik hesaplayıcı — MediSea.",
-    url: "/tools/graves-cas",
+    title: "Genant Vertebral Kırık Derecesi — Ön/orta/arka",
+    description: "Genant Vertebral Kırık Derecesi: Ön/orta/arka yükseklik kaybından derece 0–3 ve kırık şekli. Ücretsiz klinik hesaplayıcı — MediSea.",
+    url: "/tools/genant-vertebra",
   },
 };
 
@@ -23,16 +23,16 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
     <>
       <JsonLd
         veri={aracSemasi({
-          ad: "Graves Orbitopatisi CAS",
-          aciklama: "Graves Orbitopatisi CAS: Klinik Aktivite Skoru — ilk değerlendirme ≥ 3/7, izlem ≥ 4/10. Ücretsiz klinik hesaplayıcı — MediSea.",
-          yol: "/tools/graves-cas",
+          ad: "Genant Vertebral Kırık Derecesi",
+          aciklama: "Genant Vertebral Kırık Derecesi: Ön/orta/arka yükseklik kaybından derece 0–3 ve kırık şekli. Ücretsiz klinik hesaplayıcı — MediSea.",
+          yol: "/tools/genant-vertebra",
         })}
       />
       <JsonLd
         veri={kirintiSemasi([
           { ad: "MediSea", yol: "/" },
           { ad: "Klinik Araçlar", yol: "/tools" },
-          { ad: "Graves Orbitopatisi CAS", yol: "/tools/graves-cas" },
+          { ad: "Genant Vertebral Kırık Derecesi", yol: "/tools/genant-vertebra" },
         ])}
       />
       {children}
@@ -43,13 +43,23 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/endokrinoloji/graves-hcp5-lncrna-ve-epigenetik" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Graves Hastalığında HCP5 (lncRNA) Varyantı ve Epigenetik Mekanizmalar
+              <Link href="/topics/endokrinoloji/erkek-osteoporozu-ana-sayfa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Erkek Osteoporozu
               </Link>
             </li>
             <li>
-              <Link href="/topics/endokrinoloji/graves-nuks-ongorusu-great-skoru" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları
+              <Link href="/topics/endokrinoloji/erkek-osteoporozu-testosteron" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Erkek Osteoporozu: Seks Steroidleri Aksı
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/endokrinoloji/kbh-osteoporoz-ckd-mbd" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                KBH İlişkili Osteoporoz (CKD-MBD)
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/endokrinoloji/osteoporoz-ana-sayfa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Osteoporoz ve Metabolik Kemik Hastalıkları
               </Link>
             </li>
           </ul>
@@ -61,6 +71,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             Endokrinoloji & Metabolizma kategorisinden
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <li>
+              <Link href="/tools/graves-cas" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Graves Orbitopatisi CAS
+              </Link>
+            </li>
             <li>
               <Link href="/tools/hba1c-eag" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 HbA1c → Ortalama Glukoz
@@ -84,11 +99,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/tools/metabolik-sendrom" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Metabolik Sendrom
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/osta" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                OSTA
               </Link>
             </li>
           </ul>
