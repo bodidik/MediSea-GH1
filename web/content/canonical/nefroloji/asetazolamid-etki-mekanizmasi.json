@@ -1,8 +1,16 @@
 {
   "title": "Asetazolamid: Proksimal Tübülde Etki Mekanizması",
   "meta": {
-    "updatedAt": "09 Eki 2026",
-    "tags": ["Nefroloji", "Farmakoloji", "Diüretikler", "Asetazolamid", "Karbonik Anhidraz", "Proksimal Tübül", "Asit-Baz"],
+    "updatedAt": "10 Eki 2026",
+    "tags": [
+      "Nefroloji",
+      "Farmakoloji",
+      "Diüretikler",
+      "Asetazolamid",
+      "Karbonik Anhidraz",
+      "Proksimal Tübül",
+      "Asit-Baz"
+    ],
     "parent": "diuretikler",
     "order": 1,
     "kaynakca": "diuretikler"
@@ -35,6 +43,10 @@
     {
       "heading": "6. Monoterapide Sınırlı Natriürez",
       "html": "<p class=\"text-sm leading-relaxed text-slate-700\">Asetazolamid tek başına kullanıldığında natriüretik etkisi mütevazıdır (FENa yaklaşık %3–5). Proksimalden kaçan sodyum yükü Henle kulbunda (NKCC2) ve distal kıvrımlı tübülde (NCC) kompanzatuar olarak geri emilir. Bu yüzden asetazolamid güçlü bir ödem ilacı değildir; değeri, aşağı segmentleri bloke eden diüretiklerle birlikte kullanıldığında ve metabolik alkalozun düzeltilmesinde ortaya çıkar.</p>"
+    },
+    {
+      "heading": "7. Böbrek Dışı Etki: Solunum Kontrolü ve Uyku Apnesi",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-sm leading-relaxed text-slate-700\"><li><strong>Apne eşiği ve döngü kazancı:</strong> Santral apnede (Cheyne-Stokes solunumu, yüksek irtifada periyodik solunum) hiperventilasyon PaCO₂'yi apne eşiğinin altına iter ve solunum durur. Asetazolamidin yaptığı hafif metabolik asidoz, olağan PaCO₂ ile apne eşiği arasındaki farkı açar ve solunum kontrolündeki <strong>döngü kazancını (loop gain)</strong> düşürür; periyodik solunum ve santral apneler azalır.</li><li><strong>Sempatik etki:</strong> Tekrarlayan hipoksi-reoksijenasyon döngüleri ve uyanmalar gece sempatik deşarjı artırır. Döngüleri azaltmanın bu deşarjı da azaltması beklenir; ancak asetazolamidin uzun dönemde kan basıncı, aritmi ya da ventrikül yeniden şekillenmesi üzerine yararı randomize çalışmada gösterilmemiştir.</li><li><strong>Dikkat:</strong> Ventilatuar rezervi kısıtlı hastada (ileri KOAH, hiperkapni) asetazolamid asidemiyi derinleştirebilir — bkz. <a href=\"/topics/gogus/koah-asetazolamid\">KOAH'ta asetazolamid</a>.</li></ul>"
     }
   ]
 }

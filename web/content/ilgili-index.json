@@ -5779,14 +5779,19 @@
  ],
  "kardiyoloji/akut-kalp-yetersizligi": [
   {
+   "brans": "endokrinoloji",
+   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
+   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
+  },
+  {
    "brans": "nefroloji",
    "slug": "ardisik-nefron-blokaji-advor-clorotic",
    "baslik": "Ardışık Nefron Blokajı: ADVOR ve CLOROTIC"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
-   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
+   "brans": "nefroloji",
+   "slug": "diuretik-direnci-basamakli-yonetim",
+   "baslik": "Diüretik Direnci: Erken Tanı ve Basamaklı Yönetim"
   }
  ],
  "kardiyoloji/akut-koroner-sendromlar": [
@@ -6569,28 +6574,18 @@
    "brans": "nefroloji",
    "slug": "aldosteron-bobrek-fizyolojisi",
    "baslik": "Aldosteron ve Böbrek Fizyolojisi"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "ardisik-nefron-blokaji-advor-clorotic",
-   "baslik": "Ardışık Nefron Blokajı: ADVOR ve CLOROTIC"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "asetazolamid-etki-mekanizmasi",
-   "baslik": "Asetazolamid: Proksimal Tübülde Etki Mekanizması"
   }
  ],
  "nefroloji/ardisik-nefron-blokaji-advor-clorotic": [
   {
    "brans": "nefroloji",
-   "slug": "asetazolamid-etki-mekanizmasi",
-   "baslik": "Asetazolamid: Proksimal Tübülde Etki Mekanizması"
+   "slug": "diuretik-direnci-basamakli-yonetim",
+   "baslik": "Diüretik Direnci: Erken Tanı ve Basamaklı Yönetim"
   },
   {
-   "brans": "kardiyoloji",
-   "slug": "akut-kalp-yetersizligi",
-   "baslik": "Akut Dekompanse Kalp Yetersizliği (ADKY): Kapsamlı Yönetim"
+   "brans": "nefroloji",
+   "slug": "asetazolamid-etki-mekanizmasi",
+   "baslik": "Asetazolamid: Proksimal Tübülde Etki Mekanizması"
   },
   {
    "brans": "gogus",
@@ -6598,9 +6593,9 @@
    "baslik": "KOAH'ta Asetazolamid Tehlikesi"
   },
   {
-   "brans": "nefroloji",
-   "slug": "amilorid-spironolakton-karsilastirma",
-   "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji"
+   "brans": "kardiyoloji",
+   "slug": "akut-kalp-yetersizligi",
+   "baslik": "Akut Dekompanse Kalp Yetersizliği (ADKY): Kapsamlı Yönetim"
   }
  ],
  "nefroloji/asetazolamid-etki-mekanizmasi": [
@@ -6613,11 +6608,6 @@
    "brans": "gogus",
    "slug": "koah-asetazolamid",
    "baslik": "KOAH'ta Asetazolamid Tehlikesi"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "amilorid-spironolakton-karsilastirma",
-   "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji"
   }
  ],
  "nefroloji/asit-baz-denge-bozukluklari": [
@@ -6703,6 +6693,18 @@
    "brans": "nefroloji",
    "slug": "respiratuvar-alkaloz",
    "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim"
+  }
+ ],
+ "nefroloji/diuretik-direnci-basamakli-yonetim": [
+  {
+   "brans": "nefroloji",
+   "slug": "ardisik-nefron-blokaji-advor-clorotic",
+   "baslik": "Ardışık Nefron Blokajı: ADVOR ve CLOROTIC"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "akut-kalp-yetersizligi",
+   "baslik": "Akut Dekompanse Kalp Yetersizliği (ADKY): Kapsamlı Yönetim"
   }
  ],
  "nefroloji/diuretikler": [

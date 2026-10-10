@@ -1378,6 +1378,13 @@
         "eslesen": "Anyon Açığı"
       }
     ],
+    "nefroloji/diuretik-direnci-basamakli-yonetim": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
     "nefroloji/farmakoloji-finerenon": [
       {
         "slug": "egfr",
@@ -5012,8 +5019,8 @@
         "eslesen": "eGFR"
       },
       {
-        "yol": "nefroloji/farmakoloji-finerenon",
-        "baslik": "Yeni Nesil ns-MRA Finerenon",
+        "yol": "nefroloji/diuretik-direnci-basamakli-yonetim",
+        "baslik": "Diüretik Direnci: Erken Tanı ve Basamaklı Yönetim",
         "eslesen": "eGFR"
       }
     ],
@@ -8993,11 +9000,11 @@
     ]
   },
   "olcum": {
-    "konu": 489,
+    "konu": 490,
     "arac": 281,
-    "araciOlanKonu": 352,
+    "araciOlanKonu": 353,
     "konusuOlanArac": 176,
-    "bag": 717,
+    "bag": 718,
     "kavramBag": 638
   }
 }

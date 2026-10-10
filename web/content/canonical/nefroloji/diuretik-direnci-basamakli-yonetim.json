@@ -1,0 +1,32 @@
+{
+  "title": "Diüretik Direnci: Erken Tanı ve Basamaklı Yönetim",
+  "meta": {
+    "updatedAt": "10 Eki 2026",
+    "tags": ["Nefroloji", "Kardiyoloji", "Diüretikler", "Diüretik Direnci", "Spot İdrar Sodyumu", "Kardiyorenal Sendrom", "Akut Kalp Yetersizliği"],
+    "parent": "diuretikler",
+    "order": 3,
+    "kaynakca": "diuretikler"
+  },
+  "sections": [
+    {
+      "heading": "💊 Uzman Özeti",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">Akut dekompanse kalp yetersizliğinde (ADKY) diüretik direnci, kilo alınamadığı ya da ödemin sürdüğü günlerde değil, <strong>ilk saatlerde</strong> idrar sodyumu ve idrar debisiyle tanınır. Yanıt yetersizse önce kıvrım diüretiği dozu artırılır, sonra ikinci bir nefron segmenti bloke edilir. İkinci ilacın seçimi hastanın asit-baz durumuna ve potasyumuna göre yapılır; dirençli olguda ultrafiltrasyon düşünülür.</p>"
+    },
+    {
+      "heading": "1. Erken Tanı Araçları",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-sm leading-relaxed text-slate-700\"><li><strong>Spot idrar sodyumu:</strong> IV kıvrım diüretiğinden yaklaşık 2 saat sonra alınan spot idrar sodyumunun <strong>&lt;50–70 mmol/L</strong> olması natriüretik yanıtın yetersiz olduğunu, böbreğin sodyum tutmayı sürdürdüğünü gösterir.</li><li><strong>İdrar debisi:</strong> İlk 6 saatte saatlik idrar <strong>&lt;100–150 mL</strong> yetersiz yanıt kabul edilir.</li><li><strong>Furosemid stres testi:</strong> Akut böbrek hasarında tübüler rezervi sınamak için geliştirildi (diüretik naif hastada 1,0 mg/kg, önceden kıvrım diüretiği alanlarda 1,5 mg/kg IV). 2 saatte <strong>&lt;200 mL</strong> idrar, hasarın ilerleyeceğini öngörür. ADKY'deki diüretik direnci için tasarlanmış bir test değildir.</li><li><strong>Risk skorları:</strong> Yatış anındaki klinik ve laboratuvar değişkenlerinden diüretik direncini öngören skorlar geliştirildi (ör. BAN-ADHF); spot idrar sodyumunun yerini almazlar.</li></ul>"
+    },
+    {
+      "heading": "2. Basamaklı Akış",
+      "html": "<ol class=\"list-decimal pl-5 space-y-3 text-sm leading-relaxed text-slate-700\"><li><strong>Başlangıç — yüksek doz IV kıvrım diüretiği:</strong> Evde kullanılan günlük oral dozun yaklaşık 2–2,5 katı IV (ADVOR'da iki katı). Diüretik naif hastada 20–40 mg IV furosemid ile başlanabilir.</li><li><strong>2. ve 6. saatte yanıt değerlendirmesi:</strong> Spot idrar sodyumu &gt;50–70 mmol/L ve idrar debisi yeterliyse aynı doz sürdürülür. Yetersizse kıvrım diüretiği dozu <strong>iki katına</strong> çıkarılır (tavan dozlara kadar).</li><li><strong>Hâlâ yetersizse — ardışık nefron blokajı:</strong> ikinci segment eklenir (aşağıdaki tablo).</li><li><strong>Dirençli olgu:</strong> Üç segmentin birlikte bloke edilmesi (proksimal + kıvrım + distal) ve en sonunda ekstrakorporeal <strong>ultrafiltrasyon</strong>. Ultrafiltrasyonun sert sonlanıma üstünlüğü gösterilmemiştir; seçilmiş, dirençli hastalar içindir.</li></ol>"
+    },
+    {
+      "heading": "3. İkinci Segmenti Seçmek",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-xs border border-slate-200\"><thead class=\"bg-slate-100\"><tr><th class=\"p-2 text-left\">Durum</th><th class=\"p-2 text-left\">Mantıklı seçim</th><th class=\"p-2 text-left\">Gerekçe</th></tr></thead><tbody><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Serum HCO₃⁻ ≥27 mmol/L (kontraksiyon alkalozu)</td><td class=\"p-2\">Asetazolamid 500 mg IV/gün</td><td class=\"p-2\">ADVOR alt analizinde etki bu grupta daha büyüktü; alkalozu da düzeltir.</td></tr><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Düşük eGFR</td><td class=\"p-2\">İkisi de kullanılabilir</td><td class=\"p-2\">ADVOR'da yarar tüm eGFR aralığında korundu; CLOROTIC'te kilo yanıtı düşük eGFR'de sayısal olarak küçüktü ama etkileşim anlamlı değildi.</td></tr><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Hipokalemi eğilimi, MRA kullanmıyor</td><td class=\"p-2\">Tiyazide temkinle; asetazolamid ya da MRA</td><td class=\"p-2\">CLOROTIC post hoc analizinde HCTZ ile hipokalemi belirgin arttı; risk bazal K⁺ ≤4,3 mmol/L ve MRA yokken yüksekti.</td></tr><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Metabolik asidoz, HCO₃⁻ düşük</td><td class=\"p-2\">Tiyazid (metolazon, HCTZ)</td><td class=\"p-2\">Asetazolamid asidozu derinleştirir.</td></tr></tbody></table></div>"
+    },
+    {
+      "heading": "4. İzlem",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-sm leading-relaxed text-slate-700\"><li><strong>Kreatinin:</strong> İki kombinasyon da kreatinini daha sık yükseltir (ADVOR %40,5 ve %18,9; CLOROTIC %46,5 ve %17,2). Dekonjesyon sürüyor ve hasta hemodinamik olarak stabilse bu artış tek başına kesme sebebi değildir; ADVOR'da 3. ayda kreatinin farkı kalmadı.</li><li><strong>Potasyum ve sodyum:</strong> Günlük ölçülür; tiyazid eklenen hastada daha sık.</li><li><strong>Bikarbonat:</strong> Asetazolamid alan hastada asidoz derinleşirse kesilir; ADVOR'da süre 3 gündü.</li><li><strong>Dekonjesyonu tamamlamak:</strong> Taburculukta kalan konjesyon kötü sonlanımla ilişkilidir; kreatinin yükselmesinden korkup dekonjesyonu yarım bırakmamak gerekir.</li></ul>"
+    }
+  ]
+}
