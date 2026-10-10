@@ -43,8 +43,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/nefroloji/asit-baz-denge-bozukluklari" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Asit-Baz Denge Bozuklukları
+              <Link href="/topics/nefroloji/asetazolamid-etki-mekanizmasi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Asetazolamid: Proksimal Tübülde Etki Mekanizması
               </Link>
             </li>
             <li>
@@ -53,13 +53,13 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/nefroloji/asit-baz-kompanzasyon-ilkeleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi
+              <Link href="/topics/nefroloji/asit-baz-denge-bozukluklari" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Asit-Baz Denge Bozuklukları
               </Link>
             </li>
             <li>
-              <Link href="/topics/nefroloji/delta-anyon-acigi-delta-delta-orani" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama
+              <Link href="/topics/nefroloji/asit-baz-kompanzasyon-ilkeleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi
               </Link>
             </li>
           </ul>

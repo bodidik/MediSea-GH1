@@ -43,8 +43,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/nefroloji/farmakoloji-finerenon" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Yeni Nesil ns-MRA Finerenon
+              <Link href="/topics/nefroloji/ardisik-nefron-blokaji-advor-clorotic" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Ardışık Nefron Blokajı: ADVOR ve CLOROTIC
               </Link>
             </li>
             <li>

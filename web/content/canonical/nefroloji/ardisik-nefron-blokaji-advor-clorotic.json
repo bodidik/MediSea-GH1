@@ -1,0 +1,40 @@
+{
+  "title": "Ardışık Nefron Blokajı: ADVOR ve CLOROTIC",
+  "meta": {
+    "updatedAt": "09 Eki 2026",
+    "tags": ["Nefroloji", "Kardiyoloji", "Diüretikler", "Diüretik Direnci", "Asetazolamid", "Hidroklorotiyazid", "Akut Kalp Yetersizliği"],
+    "parent": "diuretikler",
+    "order": 2,
+    "kaynakca": "diuretikler"
+  },
+  "sections": [
+    {
+      "heading": "💊 Uzman Özeti",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">Akut dekompanse kalp yetersizliğinde (ADKY) IV kıvrım diüretiğine ikinci bir nefron segmentini bloke eden ilaç eklemek (<strong>ardışık nefron blokajı</strong>) iki randomize, çift kör, plasebo kontrollü çalışmada sınandı: proksimal tübülü hedefleyen <strong>ADVOR</strong> (IV asetazolamid) ve distal kıvrımlı tübülü hedefleyen <strong>CLOROTIC</strong> (oral hidroklorotiyazid). İkisi de diüretik yanıtı artırdı; ikisi de mortalite ya da yeniden yatışı değiştirmedi.</p>"
+    },
+    {
+      "heading": "1. Neden İkinci Segment? Fizyolojik Gerekçe",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-sm leading-relaxed text-slate-700\"><li><strong>Proksimal sodyum tutulumu:</strong> ADKY'de nörohormonal aktivasyon (RAAS, sempatik sistem) proksimal tübülde NHE3 aracılı sodyum geri emilimini artırır; kıvrım diüretiğinin etki ettiği segmente daha az sodyum ulaşır.</li><li><strong>Distal adaptasyon:</strong> Uzun süreli kıvrım diüretiği kullanımında distal kıvrımlı tübül hipertrofiye olur, NCC aracılı geri emilim artar ve Henle'de kaçan sodyumu yakalar.</li><li><strong>Kontraksiyon alkalozu:</strong> Kıvrım diüretiği metabolik alkaloz yapar; yükselen bikarbonat proksimal NaHCO₃ tutulumunu besler. Asetazolamid bikarbonatüriyle bu alkalozu düzeltir.</li></ul>"
+    },
+    {
+      "heading": "2. Çalışma Tasarımları",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-xs border border-slate-200\"><thead class=\"bg-slate-100\"><tr><th class=\"p-2 text-left\">Parametre</th><th class=\"p-2 text-left\">ADVOR (NEJM 2022)</th><th class=\"p-2 text-left\">CLOROTIC (Eur Heart J 2023)</th></tr></thead><tbody><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Hedef segment</td><td class=\"p-2\">Proksimal tübül (karbonik anhidraz)</td><td class=\"p-2\">Distal kıvrımlı tübül (NCC)</td></tr><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Eklenen ilaç</td><td class=\"p-2\">IV asetazolamid 500 mg, günde bir kez</td><td class=\"p-2\">Oral hidroklorotiyazid, eGFR'ye göre ayarlanmış doz</td></tr><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Zemin tedavi</td><td class=\"p-2\">Standart IV kıvrım diüretiği (oral idame dozunun iki katı)</td><td class=\"p-2\">IV furosemid rejimi</td></tr><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Hasta sayısı</td><td class=\"p-2\">519</td><td class=\"p-2\">230 (ortanca yaş 83)</td></tr><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Birincil sonlanım</td><td class=\"p-2\">3 gün içinde başarılı dekonjesyon (ödem, plevral efüzyon, asit kalmaması; tedavi tırmandırma gerekmemesi)</td><td class=\"p-2\">72. saatte vücut ağırlığı değişimi ve hastanın bildirdiği dispne (eş-birincil)</td></tr></tbody></table></div>"
+    },
+    {
+      "heading": "3. Etkinlik Sonuçları",
+      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">ADVOR</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Başarılı dekonjesyon <strong>%42,2 ve %30,5</strong> (RR 1,46; %95 GA 1,17–1,82; p&lt;0,001). Kümülatif idrar çıkışı ve natriürez asetazolamid kolunda daha yüksekti; hastanede kalış daha kısaydı.</p></div></div><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">CLOROTIC</h4><p class=\"text-xs text-slate-600 leading-relaxed\">72. saatte kilo kaybı <strong>2,3 ve 1,5 kg</strong> (p=0,002); 24 saatlik diürez 1775 ve 1400 mL; 40 mg furosemid başına kilo kaybı daha fazla. <strong>Dispnede fark yok</strong> (eş-birincil sonlanım tutmadı). Sonuçlar 96. saatte benzerdi.</p></div></div></div>"
+    },
+    {
+      "heading": "4. Böbrek Fonksiyonu ve Elektrolitler",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-sm leading-relaxed text-slate-700\"><li><strong>ADVOR:</strong> Böbrek fonksiyonunda kötüleşme, hipokalemi, hipotansiyon ve yan etki sıklığı iki kolda <strong>benzerdi</strong>.</li><li><strong>CLOROTIC:</strong> Böbrek fonksiyonunda kötüleşme (kreatininde ≥26,5 µmol/L artış ya da eGFR'de ≥%50 düşüş) hidroklorotiyazid kolunda belirgin olarak daha sıktı: <strong>%46,5 ve %17,2</strong> (p&lt;0,001). Hipokalemi ve hiponatremi sıklığı ise iki kolda benzerdi.</li><li>Dekonjesyon sırasında görülen kreatinin artışı her zaman tübüler hasar anlamına gelmez; hemokonsantrasyonla birlikte, dekonjesyon başarılıyken görülen artış çoğu kez hemodinamiktir. Yine de bu iki çalışma bu ayrımı test etmek için tasarlanmamıştır.</li></ul>"
+    },
+    {
+      "heading": "5. Uzun Dönem Sonlanımlar",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-sm leading-relaxed text-slate-700\"><li><strong>ADVOR:</strong> 3 ayda tüm nedenlere bağlı ölüm ya da kalp yetersizliği nedeniyle yeniden yatış %29,7 ve %27,8 (HR 1,07; %95 GA 0,78–1,48) — fark yok.</li><li><strong>CLOROTIC:</strong> 30 ve 90 günde mortalite ve yeniden yatışta fark yok.</li></ul>"
+    },
+    {
+      "heading": "6. Karşılaştırma ve Klinik Yorum",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-xs border border-slate-200\"><thead class=\"bg-slate-100\"><tr><th class=\"p-2 text-left\">Parametre</th><th class=\"p-2 text-left\">ADVOR (asetazolamid)</th><th class=\"p-2 text-left\">CLOROTIC (HCTZ)</th></tr></thead><tbody><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Mekanizma</td><td class=\"p-2\">Proksimal NaHCO₃ geri emilim blokajı</td><td class=\"p-2\">Distal NaCl geri emilim blokajı</td></tr><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Diüretik yanıt</td><td class=\"p-2\">Arttı (dekonjesyon, diürez, natriürez)</td><td class=\"p-2\">Arttı (kilo kaybı, diürez)</td></tr><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Semptom</td><td class=\"p-2\">Birincil sonlanım klinik dekonjesyondu</td><td class=\"p-2\">Dispnede fark yok</td></tr><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Böbrek fonksiyonunda kötüleşme</td><td class=\"p-2\">Plaseboya benzer</td><td class=\"p-2\">Daha sık (%46,5 ve %17,2)</td></tr><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Asit-baz</td><td class=\"p-2\">Alkalozu düzeltir</td><td class=\"p-2\">Alkaloz eğilimini korur</td></tr><tr class=\"border-t\"><td class=\"p-2 font-semibold\">Ölüm / yeniden yatış</td><td class=\"p-2\">Nötr</td><td class=\"p-2\">Nötr</td></tr></tbody></table></div><div class=\"bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl mt-4\"><p class=\"text-xs text-amber-900 leading-relaxed\"><strong>Dikkat:</strong> İki çalışma birbirleriyle değil, plaseboyla karşılaştırıldı; hasta grupları, zemin diüretik rejimi ve birincil sonlanımlar farklı. Bu tablo bir ilacın ötekinden üstün olduğunu göstermez. Ortak ders: diüretik direnci olan ADKY hastasında ikinci segmenti erken bloke etmek natriüretik verimi artırır, ancak sert sonlanımlara etkisi gösterilmemiştir.</p></div>"
+    }
+  ]
+}

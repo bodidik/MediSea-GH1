@@ -1,0 +1,40 @@
+{
+  "title": "Asetazolamid: Proksimal Tübülde Etki Mekanizması",
+  "meta": {
+    "updatedAt": "09 Eki 2026",
+    "tags": ["Nefroloji", "Farmakoloji", "Diüretikler", "Asetazolamid", "Karbonik Anhidraz", "Proksimal Tübül", "Asit-Baz"],
+    "parent": "diuretikler",
+    "order": 1,
+    "kaynakca": "diuretikler"
+  },
+  "sections": [
+    {
+      "heading": "💊 Uzman Özeti",
+      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700\">Asetazolamid, proksimal tübül epitelindeki <strong>karbonik anhidraz (CA)</strong> izoformlarını inhibe ederek sodyum bikarbonat (NaHCO₃) geri emilimini azaltır. Sonuç <strong>bikarbonatüri</strong>, alkali diürez ve zamanla <strong>hiperkloremik (normal anyon açıklı) metabolik asidozdur</strong>. Tek başına natriüretik etkisi mütevazıdır; proksimalden kaçan sodyum aşağı segmentlerde büyük ölçüde geri emilir.</p>"
+    },
+    {
+      "heading": "1. Renal Karbonik Anhidraz İzoformları",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Süzülen bikarbonatın yaklaşık %70–80'i ve sodyumun %60–65'i proksimal kıvrımlı tübülde geri emilir. Bu yüksek kapasiteli taşımada iki izoform rol alır:</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">CA IV (membrana bağlı)</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Apikal fırçamsı kenarda, lümene bakan yüzeyde glikozilfosfatidilinositol (GPI) çıpasıyla tutunur.</p></div></div><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-xs uppercase mb-2\">CA II (sitozolik)</h4><p class=\"text-xs text-slate-600 leading-relaxed\">Epitel hücresinin sitoplazmasında yüksek konsantrasyonda çözünmüş hâlde bulunur.</p></div></div></div>"
+    },
+    {
+      "heading": "2. Proksimal Tübülde NaHCO₃ Geri Emilimi",
+      "html": "<ol class=\"list-decimal pl-5 space-y-2 text-sm leading-relaxed text-slate-700\"><li><strong>Apikal proton salgısı:</strong> Bazolateral Na⁺/K⁺-ATPaz hücre içi sodyumu düşük tutar; oluşan gradyan apikal <strong>NHE3</strong>'ü çalıştırır — lümenden 1 Na⁺ girerken lümene 1 H⁺ çıkar.</li><li><strong>Lümende karbonik asit:</strong> Salgılanan H⁺, süzülen HCO₃⁻ ile birleşip H₂CO₃ oluşturur.</li><li><strong>CA IV ile dehidratasyon:</strong> H₂CO₃ hızla CO₂ ve H₂O'ya ayrışır. Enzim olmadan bu reaksiyon tübüler akış hızına göre çok yavaştır.</li><li><strong>CA II ile rehidratasyon:</strong> Hücreye difüzyonla giren CO₂, sitoplazmada su ile birleşip yeniden H⁺ ve HCO₃⁻ oluşturur.</li><li><strong>Bazolateral çıkış:</strong> H⁺ yeniden NHE3 ile lümene döner; HCO₃⁻ bazolateral <strong>NBCe1-A</strong> (elektrojenik Na⁺/HCO₃⁻ kotransportörü) ile peritübüler kapillere geçer.</li></ol>"
+    },
+    {
+      "heading": "3. Asetazolamidin İnhibisyon Mekanizması",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Asetazolamid hem luminal CA IV'ü hem sitoplazmik CA II'yi geri dönüşlü olarak inhibe eder:</p><ul class=\"list-disc pl-5 space-y-2 text-sm leading-relaxed text-slate-700\"><li><strong>Luminal etki:</strong> H₂CO₃ CO₂ ve suya dönüşemez, lümende birikir; lümen pH'sı düşer. Bu asidifikasyon NHE3'e karşı bir gradyan oluşturarak Na⁺/H⁺ değişimini yavaşlatır.</li><li><strong>Sitoplazmik etki:</strong> Hücre içi H⁺ üretimi azalır, NHE3'ün proton kaynağı tükenir; bazolateral NBCe1 üzerinden kana geçen HCO₃⁻ de azalır.</li></ul><div class=\"bg-sky-50 border-l-4 border-sky-500 p-4 rounded-r-xl mt-4\"><p class=\"text-xs text-sky-900 leading-relaxed\"><strong>Fizyolojik sonuç:</strong> Proksimal NaHCO₃ ve su geri emilimi azalır; idrarla HCO₃⁻, Na⁺, K⁺ ve su atılımı artar (bikarbonatüri, alkali idrar).</p></div>"
+    },
+    {
+      "heading": "4. Sistemik Elektrolit ve Asit-Baz Sonuçları",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-sm leading-relaxed text-slate-700\"><li><strong>Hiperkloremik metabolik asidoz:</strong> Bikarbonat idrarla kaybedildikçe plazma HCO₃⁻ düşer, elektronötralite için klor yükselir; anyon açığı normaldir. Asidoz derinleştikçe süzülen bikarbonat azalır ve etki kendini sınırlar.</li><li><strong>Kaliürez ve hipokalemi:</strong> Distal nefrona ulaşan sodyum ve sıvı akışı artar; toplayıcı kanalda ENaC aracılı sodyum emilimi lümen-negatif potansiyel oluşturur ve ROMK üzerinden K⁺ salgısını artırır.</li><li><strong>Kalsiyum ve taş:</strong> Metabolik asidoz renal kalsiyum atılımını artırır (distal kalsiyum taşıyıcılarının baskılanması). Klinikte daha belirgin olan, asidozun yol açtığı <strong>hipositratüri</strong> ile alkali idrarın birleşmesidir: <strong>kalsiyum fosfat taşı</strong> riski artar.</li></ul>"
+    },
+    {
+      "heading": "5. Renal Hemodinami: Tübüloglomerüler Geri Bildirim",
+      "html": "<ol class=\"list-decimal pl-5 space-y-2 text-sm leading-relaxed text-slate-700\"><li>Proksimalde geri emilemeyen NaCl macula densa'ya ulaşır; NKCC2 üzerinden algılanır.</li><li>Macula densa ATP ve adenozin salgılar; adenozin A1 reseptörleri üzerinden <strong>afferent arteriyolde vazokonstriksiyon</strong> yapar.</li><li>İntraglomerüler basınç ve GFR geçici olarak düşer; klinikte serum kreatininde hafif, geçici bir yükselme olarak görülebilir.</li></ol>"
+    },
+    {
+      "heading": "6. Monoterapide Sınırlı Natriürez",
+      "html": "<p class=\"text-sm leading-relaxed text-slate-700\">Asetazolamid tek başına kullanıldığında natriüretik etkisi mütevazıdır (FENa yaklaşık %3–5). Proksimalden kaçan sodyum yükü Henle kulbunda (NKCC2) ve distal kıvrımlı tübülde (NCC) kompanzatuar olarak geri emilir. Bu yüzden asetazolamid güçlü bir ödem ilacı değildir; değeri, aşağı segmentleri bloke eden diüretiklerle birlikte kullanıldığında ve metabolik alkalozun düzeltilmesinde ortaya çıkar.</p>"
+    }
+  ]
+}

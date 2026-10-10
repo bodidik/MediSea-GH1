@@ -6828,5 +6828,125 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "diuretikler": {
+    "baslik": "Diüretikler",
+    "aciklama": "Diüretik sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref, PubMed), kitaplar yayımcı kaydıyla, UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Mullens W, Dauw J, Martens P, ve ark. Acetazolamide in Acute Decompensated Heart Failure with Volume Overload. N Engl J Med 2022;387(13):1185-1195",
+        "yil": 2022,
+        "url": "https://doi.org/10.1056/NEJMoa2203094",
+        "tur": "makale"
+      },
+      {
+        "ad": "Trullàs JC, Morales-Rull JL, Casado J, ve ark. Combining loop with thiazide diuretics for decompensated heart failure: the CLOROTIC trial. Eur Heart J 2023;44(5):411-421",
+        "yil": 2023,
+        "url": "https://doi.org/10.1093/eurheartj/ehac689",
+        "tur": "makale"
+      },
+      {
+        "ad": "Charaya K, Shchekochikhin D, Agadzhanyan A, ve ark. Impact of Dapagliflozin Treatment on Serum Sodium Concentrations in Acute Heart Failure. Cardiorenal Med 2023;13:101-108",
+        "yil": 2023,
+        "url": "https://doi.org/10.1159/000529614",
+        "tur": "makale"
+      },
+      {
+        "ad": "Cobo Marcos M, Romero-González G, Núñez J. Fluid Overload in Cardiorenal Medicine: From Bench to Bedside. Cardiorenal Med 2025;15(1):427-429",
+        "yil": 2025,
+        "url": "https://doi.org/10.1159/000546349",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ellison DH. Mechanism of action of diuretics. UpToDate; son güncelleme 1 Eki 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/mechanism-of-action-of-diuretics",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Ho KM, Morgan DJR. The Proximal Tubule as the Pathogenic and Therapeutic Target in Acute Kidney Injury. Nephron 2022;146(5):494-502",
+        "yil": 2022,
+        "url": "https://doi.org/10.1159/000522341",
+        "tur": "makale"
+      },
+      {
+        "ad": "Inokuchi R, Maeda A, Komaru Y, Takahashi T, Doi K. Severe metabolic alkalosis and hypernatremia induced by excessive sodium bicarbonate intake: A case report and literature review. Am J Emerg Med 2026;103:45-49",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.ajem.2026.01.014",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kato ET, Miura Y, Rosner MH. Fast Facts: Heart Failure and Chronic Kidney Disease. S. Karger; 2026",
+        "yil": 2026,
+        "url": "https://doi.org/10.1159/isbn.978-3-318-07519-9",
+        "tur": "kitap"
+      },
+      {
+        "ad": "Kazory A. The War of Attrition on Diuretic Resistance: We Need to Open a Third Front. Cardiorenal Med 2023;13(1):259-262",
+        "yil": 2023,
+        "url": "https://doi.org/10.1159/000533478",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kazory A, Ronco C. Tackling Congestion in Acute Heart Failure: Is It the Primetime for “Combo Diuretic Therapy?”. Cardiorenal Med 2023;13:184-188",
+        "yil": 2023,
+        "url": "https://doi.org/10.1159/000529646",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kazory A, Ronco C. Advances in Cardiorenal Medicine; the Year 2023 in Review. Cardiorenal Med 2024",
+        "yil": 2024,
+        "url": "https://doi.org/10.1159/000537785",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kazory A, Ronco C, Koratala A. Cardiorenal Interactions in Acute Heart Failure; Renal Proximal Tubules in the Spotlight. Cardiorenal Med 2024",
+        "yil": 2024,
+        "url": "https://doi.org/10.1159/000536294",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kim GH. Renal Mechanisms for Hypercalciuria Induced by Metabolic Acidosis. Am J Nephrol 2022;53(11-12):839-846",
+        "yil": 2022,
+        "url": "https://doi.org/10.1159/000528089",
+        "tur": "makale"
+      },
+      {
+        "ad": "Marques P, Blydt-Hansen M, Takano T, ve ark. Systematic Review on the Management of Diuretic Resistance in Acute Heart Failure across the Spectrum of Kidney Disease. Cardiorenal Med 2025;15(1):462-483",
+        "yil": 2025,
+        "url": "https://doi.org/10.1159/000546520",
+        "tur": "makale"
+      },
+      {
+        "ad": "Núñez-Marín G, Santas E. Cardiorenal disease and heart failure with preserved ejection fraction: Two sides of the same coin. Cardiorenal Med 2025",
+        "yil": 2025,
+        "url": "https://doi.org/10.1159/000543390",
+        "tur": "makale"
+      },
+      {
+        "ad": "Reis T, Ronco F, Ostermann M. Diuretics and Ultrafiltration in Heart Failure. Cardiorenal Med 2023;13:56-65",
+        "yil": 2023,
+        "url": "https://doi.org/10.1159/000529068",
+        "tur": "makale"
+      },
+      {
+        "ad": "Schmickl CN, Owens RL, Orr JE, Edwards BA, Malhotra A. Side effects of acetazolamide: a systematic review and meta-analysis assessing overall risk and dose dependence. BMJ Open Respir Res 2020;7(1):e000557",
+        "yil": 2020,
+        "url": "https://doi.org/10.1136/bmjresp-2020-000557",
+        "tur": "makale"
+      },
+      {
+        "ad": "Sevik A, Gaisl T, Forrer A, ve ark. High altitudes and partial pressure of arterial oxygen in patients with chronic obstructive pulmonary disease - A systematic review and meta-analysis. Pulmonology 2025;31(1)",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.pulmoe.2024.06.002",
+        "tur": "makale"
+      },
+      {
+        "ad": "Van den Eynde J, Verbrugge FH. Renal Sodium Avidity in Heart Failure. Cardiorenal Med 2024",
+        "yil": 2024,
+        "url": "https://doi.org/10.1159/000538601",
+        "tur": "makale"
+      }
+    ]
   }
 }

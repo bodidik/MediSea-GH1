@@ -1331,6 +1331,20 @@
         "eslesen": "Aldosteron/Renin Oranı"
       }
     ],
+    "nefroloji/ardisik-nefron-blokaji-advor-clorotic": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      }
+    ],
+    "nefroloji/asetazolamid-etki-mekanizmasi": [
+      {
+        "slug": "anion-gap",
+        "name": "Anyon Açığı",
+        "eslesen": "Anyon Açığı"
+      }
+    ],
     "nefroloji/asit-baz-denge-bozukluklari": [
       {
         "slug": "anion-gap",
@@ -4963,8 +4977,8 @@
     ],
     "egfr": [
       {
-        "yol": "nefroloji/farmakoloji-finerenon",
-        "baslik": "Yeni Nesil ns-MRA Finerenon",
+        "yol": "nefroloji/ardisik-nefron-blokaji-advor-clorotic",
+        "baslik": "Ardışık Nefron Blokajı: ADVOR ve CLOROTIC",
         "eslesen": "eGFR"
       },
       {
@@ -4998,8 +5012,8 @@
         "eslesen": "eGFR"
       },
       {
-        "yol": "nefroloji/iga-nefropatisi-berger",
-        "baslik": "IgA Nefropatisi ve IgA Vasküliti (HSP)",
+        "yol": "nefroloji/farmakoloji-finerenon",
+        "baslik": "Yeni Nesil ns-MRA Finerenon",
         "eslesen": "eGFR"
       }
     ],
@@ -5342,13 +5356,18 @@
     ],
     "anion-gap": [
       {
-        "yol": "nefroloji/asit-baz-denge-bozukluklari",
-        "baslik": "Asit-Baz Denge Bozuklukları",
+        "yol": "nefroloji/asetazolamid-etki-mekanizmasi",
+        "baslik": "Asetazolamid: Proksimal Tübülde Etki Mekanizması",
         "eslesen": "Anyon Açığı"
       },
       {
         "yol": "gastroenteroloji/kisa-bagirsak-sendromu",
         "baslik": "Kısa Bağırsak Sendromu (KBS)",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/asit-baz-denge-bozukluklari",
+        "baslik": "Asit-Baz Denge Bozuklukları",
         "eslesen": "Anyon Açığı"
       },
       {
@@ -8974,11 +8993,11 @@
     ]
   },
   "olcum": {
-    "konu": 487,
+    "konu": 489,
     "arac": 281,
-    "araciOlanKonu": 350,
+    "araciOlanKonu": 352,
     "konusuOlanArac": 176,
-    "bag": 715,
+    "bag": 717,
     "kavramBag": 638
   }
 }

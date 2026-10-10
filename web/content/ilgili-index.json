@@ -4310,6 +4310,16 @@
    "brans": "nefroloji",
    "slug": "respiratuvar-asidoz",
    "baslik": "Respiratuvar Asidoz"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "ardisik-nefron-blokaji-advor-clorotic",
+   "baslik": "Ardışık Nefron Blokajı: ADVOR ve CLOROTIC"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "asetazolamid-etki-mekanizmasi",
+   "baslik": "Asetazolamid: Proksimal Tübülde Etki Mekanizması"
   }
  ],
  "gogus/koah-cpet-ve-ebv": [
@@ -5769,6 +5779,11 @@
  ],
  "kardiyoloji/akut-kalp-yetersizligi": [
   {
+   "brans": "nefroloji",
+   "slug": "ardisik-nefron-blokaji-advor-clorotic",
+   "baslik": "Ardışık Nefron Blokajı: ADVOR ve CLOROTIC"
+  },
+  {
    "brans": "endokrinoloji",
    "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
    "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
@@ -6554,6 +6569,55 @@
    "brans": "nefroloji",
    "slug": "aldosteron-bobrek-fizyolojisi",
    "baslik": "Aldosteron ve Böbrek Fizyolojisi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "ardisik-nefron-blokaji-advor-clorotic",
+   "baslik": "Ardışık Nefron Blokajı: ADVOR ve CLOROTIC"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "asetazolamid-etki-mekanizmasi",
+   "baslik": "Asetazolamid: Proksimal Tübülde Etki Mekanizması"
+  }
+ ],
+ "nefroloji/ardisik-nefron-blokaji-advor-clorotic": [
+  {
+   "brans": "nefroloji",
+   "slug": "asetazolamid-etki-mekanizmasi",
+   "baslik": "Asetazolamid: Proksimal Tübülde Etki Mekanizması"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "akut-kalp-yetersizligi",
+   "baslik": "Akut Dekompanse Kalp Yetersizliği (ADKY): Kapsamlı Yönetim"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-asetazolamid",
+   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "amilorid-spironolakton-karsilastirma",
+   "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji"
+  }
+ ],
+ "nefroloji/asetazolamid-etki-mekanizmasi": [
+  {
+   "brans": "nefroloji",
+   "slug": "ardisik-nefron-blokaji-advor-clorotic",
+   "baslik": "Ardışık Nefron Blokajı: ADVOR ve CLOROTIC"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-asetazolamid",
+   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "amilorid-spironolakton-karsilastirma",
+   "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji"
   }
  ],
  "nefroloji/asit-baz-denge-bozukluklari": [
