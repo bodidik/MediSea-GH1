@@ -177,6 +177,33 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Klinik ipuçları",
+      "kaynak": "TEMD Adrenal ve Gonadal Hastalıklar Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Beklenmeyen yaşta (genç kişide osteoporoz-kırık ve/veya hipertansiyon) ya da beklenmeyen biçimde (immünsüpresyonda görülen infeksiyonlar) ortaya çıkan bulgular CS açısından şüphe uyandırmalıdır; diyabet/hipertansiyon kontrolünün bozulması da uyarıcı olabilir.",
+          "sayfa": "32"
+        },
+        {
+          "metin": "CS hastalarının yaklaşık **%80'inde hipertansiyon** vardır ve gece tansiyon düşüşü kaybolur. **Hipopotasemi**, hiperkortizoleminin ağır olduğunun bir göstergesi kabul edilebilir (11β-HSD tip 2 satürasyonu).",
+          "sayfa": "34"
+        },
+        {
+          "metin": "Adrenal kökenli CS'de ACTH baskılı olduğundan DHEAS düşük, hirsutizm Cushing hastalığına göre daha seyrek ve hiperpigmentasyon beklenmez; androjen düzeyi düşük olduğu için osteoporoz ACTH bağımlı CS'ye göre daha sık ve ağır olabilir.",
+          "sayfa": "33–35"
+        },
+        {
+          "metin": "Adrenal karsinomda kortizol fazlalığı bulguları **3–6 ay** gibi kısa sürede gelişir; şiddetli hirsutizm ve virilizasyon eşlik edebilir.",
+          "sayfa": "33"
+        },
+        {
+          "metin": "CS'de mortalite genel popülasyona göre **2,1–17,9 kat** artmıştır; başlıca nedenler kardiyovasküler/serebrovasküler olaylar, infeksiyon ve pulmoner embolidir.",
+          "sayfa": "35"
+        }
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "metin": "Kardiyovasküler ve Koagülasyon: Hiperkortizolizm Faktör VIII ve vWF sentezini artırır, fibrinolizi bozar → DVT/PE riski belirgin yüksek. Aktif hastalık döneminde, perioperatif dönemde ve remisyon sonrası bir süre daha tromboprofilaksi (DMAH) gerekir. Şiddetli hiperkortizolizmde böbrekte 11-beta HSD2 satüre olur → kortizol mineralokortikoid reseptörü uyarır → şiddetli hipokalemik alkaloz + HT (özellikle ektopik ACTH sendromunda)."
@@ -192,6 +219,37 @@
       "satirlar": [
         {
           "metin": "Dışarıdan glukokortikoid kullanımı (inhaler, topikal, eklem içi dahil) dışlandıktan sonra, birinci basamak testlerden **en az ikisinin anormal olması** ile tanı konur."
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Kimi, nasıl tarayalım",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "Nadir olduğu için **rutin tarama önerilmez**. Taranacaklar: tipik bulguları olanlar, rastlantısal adrenal lezyonu olanlar, travmasız kırık/açıklanamayan osteoporoz ve/veya kontrolsüz diyabet ve hipertansiyonu olanlar, boy uzaması geri kalıp kilo alan çocuklar.",
+          "sayfa": "23–24"
+        },
+        {
+          "metin": "Spot plazma ACTH/kortizol ölçümü tanı için **önerilmez**. OKS kullananlarda plazma kortizolü ancak ilaç **en az 6 hafta** önce kesilirse sağlıklı sonuç verir.",
+          "sayfa": "24"
+        },
+        {
+          "metin": "Bir tanı testi pozitifse başka bir yöntemle doğrulanmalı; testler negatif ama şüphe sürüyorsa **6 ay sonra** yeniden değerlendirilmelidir. Biyokimyasal hiperkortizolemi gösterilmeden **görüntüleme yapılmamalıdır** (insidentalomalar).",
+          "sayfa": "25"
+        },
+        {
+          "metin": "Gece tükürük kortizolü **>4 nmol/L** CS lehinedir; üç ayrı günde örnek, en az iki ölçüm önerilir. Ağız içi yara ve tütünden etkilenir, vardiyalı çalışanda uygun değildir.",
+          "sayfa": "25"
+        },
+        {
+          "metin": "Özel gruplarda öncelikli test: gebelikte **UFC (>3–4 kat)**; kronik böbrek hastalığında **1 mg DST**; siklik CS'de gece yarısı kortizolü, 1 mg DST; antiepileptik ve OKS kullanımında UFC, gece yarısı kortizolü.",
+          "sayfa": "26"
+        },
+        {
+          "metin": "Psödo-CS ayrımı: 2 günlük 2 mg DST'nin son dozundan 2 saat sonra 100 µg CRH IV; 15. dakika kortizolü **>1,4 µg/dL** Cushing hastalığı için tanısal kabul edilir.",
+          "sayfa": "26"
         }
       ]
     },
@@ -229,11 +287,76 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Tarama testleri ve hafif otonom kortizol sekresyonu",
+      "kaynak": "TEMD Adrenal ve Gonadal Hastalıklar Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "1 mg DST sonrası kortizol **<1,8 µg/dL** endojen hiperkortizolemiyi %99'un üstünde dışlar. Baskılanmayan değerler kategorik değil **sürekli değişken** olarak yorumlanmalı; gerçek endojen hiperkortizolemi daha çok **>5 µg/dL** ile ilişkilidir.",
+          "sayfa": "36"
+        },
+        {
+          "metin": "Morbid obezite, kronik psikiyatrik sorun, uyku/uyanıklık bozukluğunda 1 mg DST sonrası 1,8–5 µg/dL görülebilir; bu hastalarda **2 gün 6 saatte bir 0,5 mg** deksametazon (düşük doz DST) akılcıdır, eşik yine 1,8 µg/dL.",
+          "sayfa": "36"
+        },
+        {
+          "metin": "UFC için **en az iki-üç farklı günde** örnekleme yapılmalı; düşük GFR veya aşikar poliüride tercih edilmemelidir. Gece tükürük kortizolü vardiyalı çalışanlarda ve ağır diş/dişeti hastalığında uygun değildir.",
+          "sayfa": "36"
+        },
+        {
+          "metin": "Özel durumlar: **gebelikte UFC** ile tarama; **vardiyalı çalışmada DST** öncelikli; **siklik CS** kuşkusunda semptomlar belirginken farklı günlerde gece tükürük kortizolü.",
+          "sayfa": "39"
+        },
+        {
+          "metin": "Adrenal insidentalomada aşikar CS bulgusu yoksa 1 mg DST sonrası **>1,8 µg/dL**, ek alt sınıflama yapılmadan **hafif otonom kortizol sekresyonu** sayılmalıdır (eski 1,9–5 / >5 ayrımı terk edilmiş); ACTH bağımsızlığı gösterilmeli ve 1 mg DST tekrarlanarak doğrulanmalıdır.",
+          "sayfa": "20"
+        },
+        {
+          "metin": "Hafif otonom kortizol sekresyonunda tedavi multidisipliner belirlenir; cerrahi planlanmayanlar kortizolle ilişkili komorbiditeler açısından **yıllık** değerlendirilir, kötüleşmede cerrahi yeniden tartışılır.",
+          "sayfa": "23, 25"
+        }
+      ]
+    },
+    {
       "tip": "metin",
       "baslik": "Tanı Adım 2 — ACTH Bağımlılığının Saptanması",
       "satirlar": [
         {
           "metin": "Hiperkortizolizm doğrulandıktan sonra plazma ACTH ölçülür. **ACTH <10 pg/mL:** ACTH-bağımsız (adrenal) CS → sonraki adım ince kesitli adrenal BT. **ACTH >20 pg/mL:** ACTH-bağımlı CS (hipofizer veya ektopik). **ACTH 10-20 pg/mL (gri zon):** CRH veya desmopressin stimülasyon testleriyle ayırım yapılır."
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "ACTH ölçümü",
+      "kaynak": "TEMD Adrenal ve Gonadal Hastalıklar Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "ACTH **<10 pg/mL** ACTH bağımsız (adrenal), **>20 pg/mL** ACTH bağımlı CS ile uyumludur. Hafif adrenal CS'de ACTH 10–20 arasında seyredebilir; bu aralıkta tanı **yine büyük olasılıkla adrenal** olsa da ACTH bağımlı CS akılda tutulmalıdır.",
+          "sayfa": "37"
+        },
+        {
+          "metin": "Aynı kılavuzun TEMD Önerileri kutusu daha katı bir eşik verir: ACTH **<5 pg/mL (1,1 pmol/L)** ise adrenal kökenli CS düşünülür ve adrenal görüntülemeye geçilebilir (metindeki <10 pg/mL eşiğiyle kılavuz içinde tutarsızdır).",
+          "sayfa": "45"
+        },
+        {
+          "metin": "ACTH örneği mutlaka **EDTA'lı tüpe** alınmalı ve soğuk zincirde taşınmalıdır; klinikle uyumsuzlukta laboratuvar hatası veya immunassay interferansı düşünülmelidir.",
+          "sayfa": "37"
+        },
+        {
+          "metin": "Adrenal görüntülemede seçilecek yöntem **BT**'dir ve mutlaka **Hounsfield Ünitesi** ile değerlendirilmelidir. PPNAD'de adrenaller normal veya lobüle görünebilir.",
+          "sayfa": "38, 45"
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "ACTH eşikleri (Hipofiz kılavuzu)",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "ACTH eşikleri: **<5 pg/mL** ACTH bağımsız, **>20 pg/mL** ACTH bağımlı; **5–20 pg/mL** arasında her ikisi de olabilir ve ek test gerekebilir. Örnek buzda taşınmalıdır.",
+          "sayfa": "27"
         }
       ]
     },
@@ -246,6 +369,33 @@
         },
         {
           "metin": "**BIPSS (Bilateral İnferior Petrozal Sinüs Örneklemesi) ★ — Altın Standart:** Hipofiz MRG normal veya lezyon <6 mm ise uygulanır. Merkez(petrozal)/Perifer ACTH oranı bazalde ≥2, veya CRH/Desmopressin uyarısı sonrası ≥3 ise Cushing Hastalığı kanıtlanır. Gradiyent yoksa Ektopik ACTH düşünülerek Toraks/Batın BT, Ga-68 DOTATATE veya FDG-PET çekilir."
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Lokalizasyon",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "1,5T MR mikroadenomların yalnız **%50'sini** net saptar. MR'da **>9 mm** tümör CH lehine düşünülür; bazı uzmanlar **>6 mm**'yi yeterli kabul eder.",
+          "sayfa": "27"
+        },
+        {
+          "metin": "IPSS **<6 mm** adenomda gereklidir, **>9 mm**'de gerek kalmaz; **6–9 mm** arasında tam fikir birliği yoktur. MR'da net adenom yoksa ya da CRH, desmopressin, yüksek doz DST diskordansa IPSS gerekir.",
+          "sayfa": "27"
+        },
+        {
+          "metin": "IPSS: santral/periferik ACTH oranı CRH öncesi **>2**, sonrası **>3** CH için tanı koydurur. Adenom görünmüyorsa sağ/sol oranı **>1,4** ile lateralizasyon (%70) sağlanabilir. Hiperkoagülopati nedeniyle testin **heparinle** yapılması önerilir.",
+          "sayfa": "27"
+        },
+        {
+          "metin": "Yüksek doz DST (2 gün 6 saatte bir 2 mg): kortizolün bazalin %50'sinden düşük olması veya UFC'nin >%50 azalması hipofizer kaynağa işaret eder; duyarlılık %77–92, özgüllük %57–100.",
+          "sayfa": "28"
+        },
+        {
+          "metin": "CRH testinde CH'de bazale göre ACTH'de **>%30–50**, kortizolde **>%20** artış beklenir; desmopressin testinde ACTH'de **>6 pmol/L** artış CH lehinedir.",
+          "sayfa": "27–28"
         }
       ]
     },
@@ -292,6 +442,65 @@
             "Bilateral Adrenalektomi",
             "Hayat kurtarıcı olabilir; ömür boyu steroid replasmanı gerekir; hipofizer kaynaklıysa **Nelson Sendromu** riski (artan ACTH'ye bağlı agresif tümör büyümesi + hiperpigmentasyon)"
           ]
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Cushing hastalığında cerrahi ve sonrası",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "Remisyon için en çok kabul gören ölçüt: cerrahi sonrası **ilk hafta** kortizolün **<2 µg/dL (55 nmol/L)** olması. Deneyimli merkezlerde remisyon mikroadenomda **%80**, makroadenomda **%60**.",
+          "sayfa": "30"
+        },
+        {
+          "metin": "5–10 yılda nüks mikroadenomda **%23**, makroadenomda **%33** civarındadır; makroadenom, kavernöz sinüs/dura invazyonu, **Ki-67 >%3** veya p53 pozitifliği nüks belirleyicileridir. Kortizolde geç düşüşler olabileceği gereksiz erken cerrahiden kaçınmak için önemlidir.",
+          "sayfa": "30"
+        },
+        {
+          "metin": "Rezidü görünüyorsa reoperasyon ilk tercihtir; total hipofizektomi önerilmez. İlk **2 ay** içindeki reoperasyonlar erken dönem cerrahidir ve sıklıkla önerilir.",
+          "sayfa": "30"
+        },
+        {
+          "metin": "Radyoterapide stereotaktik radyocerrahi tercih edilir (tümör optik sinirden **en az 3 mm** uzakta olmalı); etki yıllar alacağından bu süreçte **medikal tedavi** verilmelidir.",
+          "sayfa": "30–31"
+        },
+        {
+          "metin": "Bilateral adrenalektomi CH tedavisinde **son tercih** olmalıdır. Nelson sendromu (%0–34) için cerrahiden **6 ay sonra** başlayarak 3–6 ayda bir ACTH ve yıllık hipofiz MRG ile izlenir; neoadjuvan konvansiyonel radyoterapi artık önerilmez.",
+          "sayfa": "31"
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Adrenal kökenli CS'de cerrahi",
+      "kaynak": "TEMD Adrenal ve Gonadal Hastalıklar Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Kortizol salgılayan adenomda tek taraflı adrenalektomi; uygun olgularda (**6 cm'den küçük**) laparoskopik cerrahi. Karsinom şüphesinde laparoskopik adrenalektomi genelde önerilmez.",
+          "sayfa": "43"
+        },
+        {
+          "metin": "Bilateral adrenalektomi yapılmamışsa operasyon günü **150–200 mg hidrokortizon** infüzyonla veya bölünmüş dozda verilir; sonra doz %50 azaltılarak idameye (genellikle **10–12 mg/m²/gün**, 2–3 doz) inilir. Replasman ortalama **18 ay** sürer.",
+          "sayfa": "43"
+        },
+        {
+          "metin": "İzlemde 3 ayda bir sabah kortizolü: **10,5 µg/dL (300 nmol/L)** ise tedavi kesilir; **>7,4 µg/dL** ise ACTH uyarı testi, bazal/uyarılmış kortizol **~18 µg/dL** ve üzerindeyse güvenle kesilir; **<5 µg/dL** ise sürdürülür.",
+          "sayfa": "43"
+        },
+        {
+          "metin": "PPNAD'de nüks nedeniyle tek taraflı değil **bilateral adrenalektomi**; BMAH'ta açık CS (UFC normalin **>3 katı**) ve benzer boyutlu bezlerde bilateral adrenalektomi düşünülebilir; ılımlı yükseklikte (UFC normalin <3 katı) ve obezite, hipertansiyon, diyabet, osteoporoz gibi kortizol fazlalığı bulguları varsa tek taraflı adrenalektomi uygulanabilir.",
+          "sayfa": "43–44"
+        },
+        {
+          "metin": "Aberan reseptörü saptanan BMAH'ta medikal tedavi uygulanabilir (β-reseptörde propranolol, LH/hCG reseptöründe GnRH agonisti); GİP bağımlı CS'de oktreotid/pasireotid etkisi uzun sürmediğinden **cerrahi önerilir**.",
+          "sayfa": "44"
+        },
+        {
+          "metin": "Postür testinde β-adrenerjik yanıtın doğrulanmasında **izoproterenol ülkemizde olmadığından** yerine **salbutamol 5 mg inhalasyon** verilebilir.",
+          "sayfa": "42",
+          "fark": true
         }
       ]
     },
@@ -369,9 +578,65 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Medikal tedavi — doz ve Türkiye'de bulunabilirlik",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "**Pasireotid** hipofizer etkili tek EMA/FDA onaylı ajandır: **600–900 µg günde iki kez** SC; 6 ayda remisyon ~%25. Pasireotid-LAR CH endikasyonu almış olsa da **ülkemizde henüz yoktur**.",
+          "sayfa": "31–32",
+          "fark": true
+        },
+        {
+          "metin": "**Kabergolin**: haftalık **7 mg**'a kadar çıkılabilir, yanıt %30–40; uzun dönemde %31 hastada etki kaybı.",
+          "sayfa": "32"
+        },
+        {
+          "metin": "**Ketokonazol**: başlangıç 200 mg/gün, maksimum 1200 mg/gün; mide asiditesi gerektiğinden **PPI ile birlikte kullanılmamalı**. Jinekomasti nedeniyle **erkeklerde ilk seçenek değildir**, kadınlarda anti-androjenik etki avantajdır.",
+          "sayfa": "32–33"
+        },
+        {
+          "metin": "**Metirapon** ülkemizde temin edilebilir (500 mg/gün → 6 g/gün); **osilodrostat** (başlangıç 2 mg/gün, maks. 30 mg/gün) ve **levoketokonazol ülkemizde henüz yoktur**.",
+          "sayfa": "33",
+          "fark": true
+        },
+        {
+          "metin": "Gebelikte **onaylı ilaç yoktur**; kabergolin ve metirapon seçili hastalarda kullanılabilir.",
+          "sayfa": "34"
+        },
+        {
+          "metin": "Takipte (mifepriston hariç) **UFC** tercih edilir, adrenal yetmezlik için sabah kortizolü daha değerlidir. Mifepristonda yanıtı veya adrenal yetmezliği gösterecek kortizol düzeyi yoktur; makroadenomda adenom büyümesine yol açabilir.",
+          "sayfa": "34"
+        },
+        {
+          "metin": "Tedavi değişikliği, maksimum tolere edilen doz **en az 2–3 ay** kullanıldıktan sonra kortizol progresif artıyorsa düşünülür; dirençte önce doz artırılır. Steroidogenez inhibitörlerinde ACTH izlenmeli, tümör görüntülemesi ilk kez **6–12 ay sonra**, ardından kliniğe göre yapılmalı; büyüme varsa tedavi yeniden değerlendirilmelidir.",
+          "sayfa": "34"
+        }
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "metin": "Şiddetli (Severe) Cushing Sendromu Acil Yönetimi: UFC'nin normalin üst sınırının 5-10 katından fazla olması veya hayatı tehdit eden komplikasyon (sepsis, akut psikoz, ciddi hipokalemi) varlığında hastalar yoğun bakımda izlenmelidir. Geleneksel titrasyon yerine **'Bloke et ve yerine koy' (Block and Replace)** stratejisi tercih edilir: Etomidat, osilodrostat veya yüksek doz ketokonazol+metirapon kombinasyonuyla adrenal üretim tamamen durdurulur; Addison krizini önlemek için fizyolojik dozda dışarıdan kortikosteroid replasmanı eklenir. Bu yöntem dalgalı kortizol düzeylerinden ve prekürsör birikiminin yaratacağı biyokimyasal kafa karışıklığından kaçınmayı sağlar."
+    },
+    {
+      "tip": "temd",
+      "konu": "Hızlı kontrol",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "Ağır hiperkortizolemide, preoperatif ya da hızlı kontrol gerektiğinde **osilodrostat ve metirapon saatler**, **ketokonazol günler** içinde etki gösterir.",
+          "sayfa": "34"
+        },
+        {
+          "metin": "**Etomidat** oral alamayanlarda hızlı yanıt için, genelde yoğun bakımda **0,025–0,1 mg/kg/saat** dozunda kullanılır; yan etkileri sedasyon, myoklonus, adrenal yetmezlik.",
+          "sayfa": "33–34"
+        },
+        {
+          "metin": "Steroidogenez inhibitörleriyle adrenal yetersizlik gelişebileceğinden gerektiğinde **\"block and replace\"** rejimiyle glukokortikoid replasmanı birlikte uygulanmalıdır.",
+          "sayfa": "32"
+        }
+      ]
     },
     {
       "tip": "bilgi_kutusu",

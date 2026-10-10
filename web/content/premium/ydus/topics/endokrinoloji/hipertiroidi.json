@@ -401,6 +401,33 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Etiyolojik ayrım",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Tirotoksikoz tanısı **TSH düşüklüğü (<0,1 mU/L)** ve/veya sT4 ve/veya sT3 yüksekliği ile konur. Bezde üretimin arttığı durumlarda T3 yüksekliği, yıkıma bağlı nedenlerde T4 artışı daha ön plandadır.",
+          "sayfa": "101, 113"
+        },
+        {
+          "metin": "Tirotoksikoz laboratuvarla doğrulandıktan sonra **en kritik ayırt ettirici test RAIU**'dur; ayırıcı tanıda kuşku varsa sintigrafi veya RAIU ölçülmelidir. Bu sonuca varmak için iyot içeren ilaç maruziyeti dışlanmalıdır.",
+          "sayfa": "101, 113, 48"
+        },
+        {
+          "metin": "Tiroid hormonları yüksekken TSH **normal veya yüksek** ise TSH salgılayan adenom veya tiroid hormon direnci düşünülmelidir.",
+          "sayfa": "101"
+        },
+        {
+          "metin": "Tiroglobulin ölçümünün tirotoksikoz ayırıcı tanısında yeri **yalnızca ekzojen tiroid hormonu şüphesinde** (düşük Tg) vardır.",
+          "sayfa": "102"
+        },
+        {
+          "metin": "Ciddi kronik hastalıkta RAIU azalırken **böbrek yetmezliğinde genellikle artmış** RAIU görülür; destrüktif tiroiditin dinamik seyri nedeniyle RAIU güncel tiroid testleriyle birlikte yorumlanmalıdır.",
+          "sayfa": "50"
+        }
+      ]
+    },
+    {
       "tip": "metin",
       "baslik": "Özel Etiyolojik Durumlar ve Ayırıcı Tanı Püf Noktaları",
       "satirlar": [
@@ -469,6 +496,41 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Amiodarona bağlı tirotoksikoz",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "200 mg'lık tablet **75 mg iyot** içerir. Prevalans iyot yeterli bölgelerde **%6**, iyot eksikliği bölgelerinde **%10**; ortalama ortaya çıkış **720 gün** (225–1145).",
+          "sayfa": "109"
+        },
+        {
+          "metin": "TFT amiodarona **başlamadan önce, 3. ayda ve sonra 3–6 ayda bir** izlenmelidir. Ötiroid hastada ilk aylarda sT4 hafif yüksek, sT3 alt sınıra yakın ve geçici TSH yükselmesi beklenir.",
+          "sayfa": "109"
+        },
+        {
+          "metin": "Tip 2 AİT'de ek belirteçler: **CRP, IL-6, beta glukuronidaz** yüksekliği ve kontrastsız BT'de yüksek tiroid dansitesi (**\"beyaz tiroid\"**). Klasik ajanlarla (99mTcO4, 123I) bez görünmez; ayrım **99mTc-sestamibi** ile yapılabilir.",
+          "sayfa": "110, 47"
+        },
+        {
+          "metin": "Tip 1'de tionamid genelde **40 mg/gün** ile başlanır; intratiroidal iyot yükü nedeniyle yüksek doz ve uzun süre gerekebilir. **Sodyum perklorat** (250 mg günde 4 kez) eklenmesi önerilebilir. Bu hastalarda agranülositoz daha sık bildirildiği için daha yakın takip önerilir.",
+          "sayfa": "110"
+        },
+        {
+          "metin": "Tip 2'de glukokortikoid (**30–40 mg/gün prednizolon veya eşdeğeri**) kendini sınırlayan tirotoksikozun süresini kısaltır; 2–4 hafta bu dozdan sonra 2–3 ayda klinik yanıta göre yavaşça kesilir.",
+          "sayfa": "110"
+        },
+        {
+          "metin": "Mikst/ayrılamayan formda seçenekler: önce antitiroid, **4–6 haftada** yanıt yoksa glukokortikoid eklemek ya da ikisini birlikte başlamak; klinik **şiddetliyse kombine** başlanması önerilir.",
+          "sayfa": "110, 113"
+        },
+        {
+          "metin": "Amiodaronun kesilip kesilmeyeceği olgu bazında **kardiyologla** tartışılmalıdır: Tip 1'de kesilmesi düşünülebilir; Tip 2'de devam etmek ötiroidiye gidişi engellemez ama geciktirebilir. Ağır olgularda acil tiroidektomi gerekebilir.",
+          "sayfa": "110"
+        }
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "baslik": "Ayırt Edilemeyen / Miks Vakalar",
@@ -480,6 +542,34 @@
       "satirlar": [
         {
           "metin": "Otonom odakları bulunan (tMNG, Toksik Adenom) bireylerin, radyokontrast maddeler (BT, anjiyografi) veya iyotlu preparatlarla karşılaşması sonucu gelişir. Otonom nodüller otoregülasyonu (Wolff-Chaikoff etkisi) kaybettiği için aşırı iyodu hammadde olarak kullanıp kontrolsüz hormon sentezler. Kontrast maruziyetinden **2 ila 12 hafta sonra** ortaya çıkar."
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "İyot ve ilaçlar",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Risk grubu: otonom nodül, latent Graves ve **antitiroidle remisyona girmiş Graves öyküsü**. İyotlu kontrastın tek dozundan sonra subklinik hipertiroidi riski yaklaşık **%2**.",
+          "sayfa": "110"
+        },
+        {
+          "metin": "Türkiye'den bir çalışmada koroner anjiyografi sonrası subklinik hipertiroidi sıklığı **%5,9** bulunmuştur.",
+          "sayfa": "110",
+          "fark": true
+        },
+        {
+          "metin": "Riskli olgularda veya kalbi olası bir hipertiroidiyi kaldıramayacak hastada **antitiroid profilaksisi düşünülebilir**. Tedavide **20–40 mg/gün metimazol** kullanılır; idrar iyotu çoğu olguda 1–2 ayda normale döner.",
+          "sayfa": "110"
+        },
+        {
+          "metin": "İnterferon alfa ve IL-2 ağrısız tiroidit veya Graves; **sunitinib, sorafenib, nilotinib** yıkıma bağlı geçici tirotoksikoz yapabilir. Lityum daha çok hipotiroidi, seyrek olarak hipertiroidi yapar.",
+          "sayfa": "111"
+        },
+        {
+          "metin": "**Alemtuzumab** (MS tedavisinde) sonrası en sık tiroid sorunu Graves hastalığıdır (%20–30); çoğunlukla ilk 3 yılda ve en sık TRAb pozitiflerde görülür.",
+          "sayfa": "283"
         }
       ]
     },
@@ -580,6 +670,29 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Beta bloker ve yaşlı hasta",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Semptomlar çoğunlukla artmış beta adrenerjik uyarıya bağlı olduğundan **beta blokerler semptom kontrolünde ana seçenektir**; propranolol T4→T3 dönüşümünü de azaltarak ek avantaj sağlayabilir.",
+          "sayfa": "103"
+        },
+        {
+          "metin": "Reaktif havayolu hastalığı veya beta bloker intoleransında **oral verapamil veya diltiazem** kalp hızı kontrolü için kullanılabilir.",
+          "sayfa": "103"
+        },
+        {
+          "metin": "RAI tedavisi geçici alevlenme yapabileceğinden **asemptomatik hastada bile beta blokaj** uygulanmalıdır.",
+          "sayfa": "106"
+        },
+        {
+          "metin": "Yaşlıda kardiyak semptomlar (taşikardi/AF, efor dispnesi, ödem) ağır basar; iştah artışı silik, kilo kaybı belirgindir. Yalnızca halsizlik-güçsüzlükle giden **apatetik tirotoksikoz** akılda tutulmalıdır.",
+          "sayfa": "111, 113"
+        }
+      ]
+    },
+    {
       "tip": "metin",
       "baslik": "B. Antitiroid İlaçlar (Tionamidler)",
       "satirlar": [
@@ -606,6 +719,29 @@
       "satirlar": [
         {
           "metin": "Aşırı doz inorganik iyot, depolanmış hormonların salınımını hızla inhibe eder ve geçici olarak hormon sentezini durdurur (akut Wolff-Chaikoff etkisi)."
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "İnorganik iyot",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Fırtınada iyot **tionamidlerden en az 30 dk sonra** (Bölüm 9) / **en az 1 saat sonra** (Bölüm 28) verilmelidir — kılavuzun iki bölümü farklı süre yazar.",
+          "sayfa": "111, 321"
+        },
+        {
+          "metin": "İyot RAI etkinliğini azaltır; bu yüzden **nihai hedef cerrahi ise** tercih edilmelidir. RAI planlanıyorsa önce intratiroidal iyot klirensi beklenmelidir.",
+          "sayfa": "111–112"
+        },
+        {
+          "metin": "Preoperatif hazırlıkta (Graves): **5–7 damla Lugol** (8 mg I/damla) veya **1–2 damla SSKI** (50 mg I/damla) günde 3 kez, cerrahiden **10 gün önce** başlanabilir; bez kanlanmasını da azaltır.",
+          "sayfa": "107"
+        },
+        {
+          "metin": "İyot alerjisi ya da RAI planı nedeniyle iyot verilemiyorsa **lityum** 300 mg 6–8 saatte bir, düzey 0,6–1 mEq/L hedeflenerek verilebilir.",
+          "sayfa": "111"
         }
       ]
     },
@@ -648,6 +784,37 @@
             "Birey ≥65 yaşında ise ve kardiyak/kemik risk faktörleri taşıyorsa veya sintigrafide otonom sıcak nodül saptanmışsa",
             "**Tedavi değerlendirilmelidir**"
           ]
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Subklinik hipertiroidi",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Grade 1: TSH **0,1–0,4 mIU/L**; Grade 2: TSH **<0,1 mIU/L**. Olguların %65–75'i Grade 1'dir. Ekzojen neden endojenden çok daha yaygındır.",
+          "sayfa": "115"
+        },
+        {
+          "metin": "**≥65 yaşta** subklinik hipertiroidi tedavisi önerilir. <65 yaşta TSH **<0,1** ise tedavi önerilir; **0,1–0,4** ve asemptomatik ise takip edilir.",
+          "sayfa": "116–117"
+        },
+        {
+          "metin": "<65 yaş ve TSH 0,1–0,4'te semptom, kalp hastalığı veya osteoporoz varsa tedavi düşünülmelidir; östrojen/bifosfonat almayan postmenopozal kadında tedavi düşünülebilir.",
+          "sayfa": "117"
+        },
+        {
+          "metin": "Hafif olguda aşikar hipertiroidiye ilerleme 7 yılda **%0,5–0,7** iken TSH <0,1'de yıllık **%5–8**'dir.",
+          "sayfa": "116"
+        },
+        {
+          "metin": "Graves'e bağlı subklinik hipertiroidide **ATİ**, toksik adenom/TMNG'de **radyoiyot** düşünülür; cerrahi büyük guatr, bası, eşlik eden hiperparatiroidi veya kanser şüphesinde öne çıkar. Yüksek iyot alımı şüphesinde 24 saatlik idrar iyotu ölçülebilir.",
+          "sayfa": "117–118"
+        },
+        {
+          "metin": "Ayırıcı tanıda TSH'yi baskılayan ilaçlar (dopamin, yüksek doz glukokortikoid, somatostatin analogları, dobutamin, beksaroten…), psikiyatrik ve tiroid dışı hastalık, hipotalamik-hipofizer hastalık dışlanmalıdır.",
+          "sayfa": "115–116"
         }
       ]
     },
@@ -708,6 +875,29 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Fırtına tanısı",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Skor **≥45 olası fırtına, 25–44 kriz tehdidi, <25 olası değil**. Sistem duyarlıdır ama spesifik değildir — yüksek ateşli influenzayı fırtınadan ayıramaz. Japon Tiroid Cemiyeti skoru tanıda Burch-Wartofsky kadar hassas değildir.",
+          "sayfa": "319–320"
+        },
+        {
+          "metin": "En sık presipitan **enfeksiyondur**; immün kontrol noktası inhibitörleri de destrüktif tiroiditle nadiren fırtınaya yol açabilir.",
+          "sayfa": "319"
+        },
+        {
+          "metin": "Hormon düzeyleri **hiçbir zaman** doğrudan fırtına göstergesi değildir; klinisyenlerin çoğu **mental durum değişikliğini** diğer bulgulardan daha çok işaret edici sayar.",
+          "sayfa": "319"
+        },
+        {
+          "metin": "Mortalite **%8–25**; fırtına kuşkusunda tedaviye ivedilikle, mümkünse **yoğun bakımda** başlanmalıdır.",
+          "sayfa": "319, 322"
+        }
+      ]
+    },
+    {
       "tip": "tablo",
       "baslik": "Tiroid Fırtınasında Beşli Tedavi Protokolü",
       "kolonlar": [
@@ -755,6 +945,38 @@
             "Kolestiramin: 4 g oral (6 saatte bir)",
             "Atılan hormonların emilimini engeller."
           ]
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Fırtına tedavisinde TEMD ayrıntıları",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "İlk 24 saatte T3'ü **PTU yaklaşık %45**, **MMI %10–15** azaltır — PTU'nun öncelik nedeni budur. Enteral yol yoksa rektal (süpozituvar/lavman) kullanılabilir.",
+          "sayfa": "111, 321"
+        },
+        {
+          "metin": "**Selektif olmayan beta bloker (propranolol)** tercih edilmelidir; Bölüm 28 6 saatte bir **60–80 mg** önerir, Bölüm 9 fırtınada ilaç metabolizması hızlandığı için dozun 6 saatte bir **120 mg**'a kadar çıkabileceğini yazar.",
+          "sayfa": "112, 321"
+        },
+        {
+          "metin": "**Türkiye'de IV propranolol ticari olarak bulunmamaktadır**; IV seçenek esmolol (0,25–0,5 mg/kg bolus, ardından 0,05–0,1 mg/kg/dk).",
+          "sayfa": "112",
+          "fark": true
+        },
+        {
+          "metin": "Ateş için periferik soğutma ve **asetaminofen**; **salisilatlar** TBG bağlanmasını azaltıp serbest hormonu artırdığından fırtınayı kötüleştirebilir. Kalp yetmezliğinde IV sıvı dikkatli monitörizasyonla verilir.",
+          "sayfa": "112"
+        },
+        {
+          "metin": "Glukokortikoid stres dozunda verilir (adrenal rezerv yetersiz kalır); Bölüm 28'deki doz **hidrokortizon 50–100 mg IV, 6–8 saatte bir**.",
+          "sayfa": "112, 322"
+        },
+        {
+          "metin": "Plazmaferez etkisi geçicidir (**1–2 gün**); sonrasında kalıcı tedavi olarak tiroid cerrahisi düşünülmelidir. Acil tiroidektomide mortalite %0–20 bildirilmiştir.",
+          "sayfa": "112, 322"
         }
       ]
     },

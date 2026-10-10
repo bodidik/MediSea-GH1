@@ -418,12 +418,12 @@
           "sayfa": "128–129"
         },
         {
-          "metin": "EUGOGO 2021 IV MP + **mikofenolatı** birinci basamak sayar. TEMD'e göre ise ilacın ülkemizde GO endikasyonu onaylı değildir ve maliyeti yüksektir; bu yüzden **aktivitesi ve şiddeti yüksek hastalarda** düşünülmesi daha makuldür.",
-          "sayfa": "129",
+          "metin": "EUGOGO 2021 IV MP + **mikofenolatı** birinci basamak sayar; TEMD de ilk basamak tedaviye eklenmesinin önerildiğini yazar. Ancak ilacın ülkemizde GO endikasyonu onaylı değildir ve maliyeti yüksektir; TEMD bu nedenle **aktivitesi ve şiddeti yüksek hastalarda** düşünülmesini daha makul bulur.",
+          "sayfa": "127–129",
           "fark": true
         },
         {
-          "metin": "**Teprotumumab** ATA-ETA 2022'de birinci, EUGOGO 2021'de ikinci basamaktır. TEMD'e göre yalnız ABD'de onaylı, pahalı ve IV steroidle karşılaştırmalı çalışması yok; bu nedenle ilk basamak için **erken**. Gebelikte kontrendikedir.",
+          "metin": "**Teprotumumab** ATA-ETA 2022'de birinci, EUGOGO 2021'de ikinci basamaktır. TEMD; yalnız ABD'de onaylı olması, çok pahalı olması, yan etkilerinin fazla ve uzun dönem etkisinin bilinmemesi, IV steroidle karşılaştırmalı çalışması bulunmaması nedeniyle ilk basamak için **erken** olduğu görüşünü aktarır. Gebelikte kontrendikedir.",
           "sayfa": "129–130",
           "fark": true
         },
@@ -510,7 +510,7 @@
           "sayfa": "104"
         },
         {
-          "metin": "Mutlak nötrofil **<1000/mm³** ya da transaminazlar **>5 kat** ise antitiroid başlanmaz. Takipte transaminaz >3 kata çıkarsa kesilmesi gündeme gelir.",
+          "metin": "Mutlak nötrofil **<1000/mm³** ya da transaminazlar **>5 kat** ise antitiroid başlanmaz. Takipte transaminaz 3 katın üstüne çıkarsa ya da zaten yüksek olan transaminaz daha da yükselirse ilacın kesilmesi gündeme gelir.",
           "sayfa": "105"
         },
         {
@@ -518,7 +518,7 @@
           "sayfa": "104"
         },
         {
-          "metin": "Kür sonunda hâlâ hipertiroid olan nispeten genç, stabil ve düşük doz MMI alan hastada **uzun dönem antitiroid** kalıcı tedaviye alternatiftir. İkinci kür önerilebilir ama remisyon oranı düşüktür.",
+          "metin": "Kür sonunda hâlâ hipertiroid olan hastada **RAI veya tiroidektomi** önerilebilir; nispeten genç, stabil ve düşük doz MMI alan hastada **uzun dönem antitiroid** de kalıcı tedaviye alternatiftir. Kesimden sonra nüks gelişirse RAI veya cerrahi önerilebilir; ikinci antitiroid kürü de önerilebilir ama remisyon oranı düşüktür.",
           "sayfa": "104, 113"
         },
         {

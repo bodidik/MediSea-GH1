@@ -80,9 +80,57 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Gebelikte tanı eşikleri",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Gebelikte TSH üst referans sınırı **1. trimesterde 2,5 mU/L**, **2. ve 3. trimesterde 3,0 mU/L**; trimestere özgü üst sınır verilemiyorsa **>4,0 mU/L** alınır.",
+          "sayfa": "307"
+        },
+        {
+          "metin": "TSH **>10 mU/L** olan gebe, sT4 düzeyine bakılmaksızın aşikâr hipotiroidi kabul edilir; **subklinik hipotiroidi** TSH 2,5–10 mU/L ve normal sT4'tür.",
+          "sayfa": "307"
+        },
+        {
+          "metin": "Tarama yapılan gebede TSH trimestere özgü alt sınır ile 2,5 mU/L arasındaysa bir şey yapmaya gerek yoktur; **TSH >2,5** ise TPO antikoru ölçülür, **TSH >4** ise hipotiroidinin derecesi için sT4 ölçülür.",
+          "sayfa": "308"
+        },
+        {
+          "metin": "Santral hipotiroidisi olan gebe **yalnız TSH ile değerlendirilmez**, sT4 düzeyine bakılmalıdır.",
+          "sayfa": "308"
+        }
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "ek_bilgi",
       "metin": "İyot İhtiyacı: Artan renal iyot atılımı ve fetal ihtiyaç nedeniyle gebelik/laktasyonda günlük iyot gereksinimi 250 µg'ye çıkar (WHO ve TEMD önerisi). Türkiye gibi endemik bölgelerde rutin diyet + iyotlu tuz tüketimine ek olarak 100–150 µg/gün potasyum iyodür takviyesi şiddetle tavsiye edilir."
+    },
+    {
+      "tip": "temd",
+      "konu": "Gebelikte iyot desteği",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Gebe ve laktasyondaki kadınlar iyot eksikliği için özel risk grubudur; iyotlu tuz tüketimine ve bölgeye göre, **ÜİK tayini yapılmaksızın günde 100–300 µg** iyot desteği almaları gerekir.",
+          "sayfa": "66"
+        },
+        {
+          "metin": "Türkiye'de standart iyotlu tuz tüketen gebede alım ortalama 100–150 µg/gün varsayılır; **tuz kısıtlaması yapılan gebeye 200–250 µg/gün** iyot desteği yapılmalıdır.",
+          "sayfa": "309, 65",
+          "fark": true
+        },
+        {
+          "metin": "Destek multivitamin, folik asitli kombine preparat ya da yalnız KI tabletiyle verilebilir; **gebelik planlandığında başlanıp** gebelik ve laktasyon bitene kadar sürdürülmelidir.",
+          "sayfa": "66"
+        },
+        {
+          "metin": "İyot yeterli ilan edilen bölgelerde bile gebelerde ciddi eksiklik ölçülmüştür (İstanbul'da 3543 gebede medyan ÜİK 77 µg/L, gebelerin %90'ında yetersiz).",
+          "sayfa": "65",
+          "fark": true
+        }
+      ]
     },
     {
       "tip": "metin",
@@ -142,9 +190,52 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Subklinik hipotiroidi ve hipotiroksinemi",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Randomize çalışmalarda LT4 **anti-TPO pozitif** subklinik hipotiroidide obstetrik riskleri azaltmıştır; bu grupta **LT4 önerilmelidir**. Antikor negatif subklinik hipotiroidide tedavi gerekliliği **hâlen tartışmalıdır**.",
+          "sayfa": "308"
+        },
+        {
+          "metin": "**İzole hipotiroksinemide** rutin LT4 önerilmez; gebenin iyot durumu ve otoantikorları bilinmeli, öncelikle optimal iyot desteği (ülkemizde 100–150 µg/gün) yapılır. Ülkemizde bu tabloda **iyot eksikliği düşünülmeli** ve önce iyot verilmelidir.",
+          "sayfa": "308, 65–66",
+          "fark": true
+        },
+        {
+          "metin": "Gebelik öncesi anti-TPO pozitif ötiroid kadında gebelikte TSH yükselme riski **%20**'dir; bu hastaların özellikle ilk 24 haftada **4–6 haftada bir** izlenmesi uygun görünmektedir.",
+          "sayfa": "309"
+        }
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "metin": "LT4 Doz Artışı — Kritik Kural: Gebelik öncesi hipotiroid + LT4 kullanan kadınlarda gebe kalındığı öğrenilir öğrenilmez doz %25–50 artırılmalıdır. Pratik yöntem: haftanın 2 gününde çift doz al (7 günlük doz = 9 günlük). Her 4 haftada TSH kontrolü; hedef TSH: **0.4–2.5 mU/L**."
+    },
+    {
+      "tip": "temd",
+      "konu": "Bilinen hipotiroidide doz ve izlem",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Gebelik doğrulanır doğrulanmaz LT4 dozu artırılır: **haftanın iki günü çift doz** (günlük ~%29 artışa denk) ya da günlük dozu **%25–30** artırmak. Ablasyon (cerrahi/RAI) sonrası hastada artış ihtiyacı Hashimoto'ya göre daha yüksektir.",
+          "sayfa": "309"
+        },
+        {
+          "metin": "Santral hipotiroidili gebede LT4 dozu **%25–50** artırılır; sT4 normal aralığın **üst çeyreğinde** hedeflenir.",
+          "sayfa": "309"
+        },
+        {
+          "metin": "Gebelik planlayan/doğurganlık çağındaki hipotiroid kadında LT4 altında **TSH <2,5 mU/L** tutulması önerilir; gebelikte hedef TSH'nin trimestere özgü değerlere göre normalize edilmesidir. İhtiyaçtan fazla LT4 erken doğumla ilişkilidir.",
+          "sayfa": "309"
+        },
+        {
+          "metin": "İzlem ilk 24 haftada **4 haftada bir**, sonrasında doğuma kadar bir kez yeterlidir; doğumdan sonra doz **gebelik öncesi doza** indirilir ve **postpartum 6. haftada** TSH bakılır.",
+          "sayfa": "309"
+        }
+      ]
     },
     {
       "tip": "metin",
@@ -219,9 +310,55 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Gebelikte hipertiroidinin tanısı",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Klinik hipertiroidi şüphesinde önce TSH; **TSH <0,1 mU/L** ise serbest/total T4, T4 normalse total T3 ölçülür. Aşikâr hipertiroidi tanısı baskılanmış (<0,1) veya saptanamayan (<0,01) TSH ile gebelik aralığını aşan sT4 ve/veya sT3'e dayanır.",
+          "sayfa": "315"
+        },
+        {
+          "metin": "**TRAb** Graves hastalarının %96–97'sinde pozitiftir ve tanıyı doğrular; gebelikte **radyonüklid görüntüleme kontrendikedir**.",
+          "sayfa": "314"
+        },
+        {
+          "metin": "Gestasyonel geçici tirotoksikoz/hiperemezis gravidarumda **ATD önerilmez**; dehidratasyonun düzeltilmesi ve antiemetik destek önerilir. Aşikâr hipertiroidi birkaç haftadan uzun ya da ilk trimesterden sonra sürerse hCG aracılı olmadığı düşünülür.",
+          "sayfa": "314, 316"
+        },
+        {
+          "metin": "Trofoblastik hastalıkta kadınların yaklaşık **%55–60**'ında tanı anında belirgin hipertiroidi vardır; tedavi trofoblastik hastalığın tedavisidir, erken cerrahi gerektiği için öncelikli ajan **β-blokerdir**.",
+          "sayfa": "315, 317"
+        }
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "metin": "PTU ↔ MMI Geçiş Kuralı — Kritik Nokta:\n• 1. Trimester (organogenez): PTU tercih et — MMI metimazol embriyopatisine (aplasia cutis, koanal atrezi, omfalosel) neden olabilir.\n• 16. haftadan sonra: PTU'dan MMI'ye geç (1:20 doz oranı: PTU 100 mg = MMI 5 mg) — PTU uzun süreli fulminan karaciğer yetmezliği riski taşır.\n• Radyoaktif iyot (RAI): Gebelikte kesinlikle kontrendike. RAI sonrası en az 6 ay gebe kalınmamalı."
+    },
+    {
+      "tip": "temd",
+      "konu": "Antitiroid ilaç seçimi ve doz",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Mümkünse ilk trimesterde ilaçtan kaçınılması önerilir; tedavi gerekliyse **ilk trimesterde PTU**, **16. haftadan sonra MMI** (annede karaciğer yetmezliği riski).",
+          "sayfa": "316"
+        },
+        {
+          "metin": "Genel olarak düşük dozla başlanır: **MMI 5–10 mg/gün**, CM 5–10 mg/gün, **PTU 100–150 mg/gün**. Geçişte doz oranı yaklaşık **1:20** (MMI 5 mg/gün = PTU günde iki kez 50 mg).",
+          "sayfa": "316"
+        },
+        {
+          "metin": "Düşük doz ATD (MMI 5–10 mg/gün ya da PTU 100–200 mg/gün) ile ötiroid, yeni gebe Graves hastasında **tüm ATD'leri kesmek düşünülebilir**; kesildikten sonra 1–2 haftada bir TFT ve muayene yapılır, ötiroid kalırsa 2.–3. trimesterde aralık 2–4 haftaya uzatılabilir.",
+          "sayfa": "316"
+        },
+        {
+          "metin": "β-bloker (metoprolol 25–50 mg/gün; propranolol 6–8 saatte bir 20 mg) ötiroidiye dek verilebilir, **2–6 haftada kesilmesi** önerilir — uzun kullanım büyüme geriliği, fetal bradikardi ve neonatal hipoglisemiyle ilişkilidir.",
+          "sayfa": "316"
+        }
+      ]
     },
     {
       "tip": "bilgi_kutusu",
@@ -229,11 +366,57 @@
       "metin": "Graves Tedavisinde Hedef Doz: Anneyi tam ötiroid yapmak fetüste guatr + hipotiroidiye neden olur (ATİ plasentayı geçer, fetal tiroid daha duyarlı). Bu nedenle mümkün olan en düşük ATİ dozu kullan, annenin sT4 düzeyini normalin üst sınırında veya hafifçe üzerinde tut. 'Blok ve replasman' (ATİ + LT4) yöntemi gebelikte KESİNLİKLE KONTRENDİKE."
     },
     {
+      "tip": "temd",
+      "konu": "Hedef ve cerrahi",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Maternal sT4 trimestere özgü aralığın **üst sınırında ya da hemen üzerinde** tutulur; trimestere özgü sT4 yoksa TT4/TT3 gebelik dışı aralığın **1,5 katı**, TSH referansın altında (**~0,1–0,3 mU/L**). TFT **2–4 haftada bir** ölçülür.",
+          "sayfa": "316–317"
+        },
+        {
+          "metin": "3. trimesterde TRAb azalmasıyla hastaların **%20–30**'unda ATD kesilebilir; maternal TRAb'nin kaybolması kesme olasılığının yüksek olduğunu gösterir.",
+          "sayfa": "317"
+        },
+        {
+          "metin": "Blok-replasmanın gebelikteki **tek endikasyonu**, daha önce ablatif tedavi almış annede TRAb'ye bağlı **izole fetal hipertiroidi**dir (ATD fetüsü, LT4 anneyi tedavi eder).",
+          "sayfa": "317"
+        },
+        {
+          "metin": "İki ATD'ye alerji/kontrendikasyon, uyumsuzluk ya da yüksek dozla ötiroidi sağlanamaması → tiroidektomi; en uygun zaman **2. trimester**. Hazırlıkta β-bloker + kısa süreli (**7–10 gün**) potasyum iyodür (50–100 mg/gün) kullanılabilir.",
+          "sayfa": "317"
+        },
+        {
+          "metin": "Gebelikte cerrahi 2. trimesterde bile erken doğum riskini artırır (**%4,5–5,5**).",
+          "sayfa": "107"
+        }
+      ]
+    },
+    {
       "tip": "metin",
       "baslik": "Fetal İzlem: TRAb ve Fetal Hipertiroidi",
       "satirlar": [
         {
           "metin": "Annedeki **TRAb (TSH Reseptör Antikoru) plasentayı geçer** → fetal tiroid bezini uyarır → fetal hipertiroidi + kalp yetmezliği riski. Riskli gebelerde (özellikle yüksek TRAb titresinde) **18–22. haftada TRAb ölçülmeli**; titreleri yüksekse **fetal guatr ve taşikardi için USG ile sıkı takip** yapılmalıdır. Daha önce RAI veya tiroidektomi geçirmiş Graves hastalarında da TRAb kanda yıllarca pozitif kalabileceğinden bu takip ihmal edilmemelidir."
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "TRAb ve fetüs",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "TRAb'nin plasenta geçişine bağlı fetal hipertiroidi tipik olarak **18–20. haftada veya sonrasında** gelişir; ATD'ler de plasentayı geçer ve fetüste anneye göre daha güçlü etki gösterir.",
+          "sayfa": "316"
+        },
+        {
+          "metin": "Tiroidektomi sonrası TRAb kademeli kaybolur; cerrahi öncesi yüksek TRAb izole fetal hipertiroidi riskini gösterir ve ATD kesildikten sonra **dikkatli fetal izlem** gerekir.",
+          "sayfa": "317"
+        },
+        {
+          "metin": "Toksik adenom/TMNG'de TRAb olmadığı için anneyi tam ötiroid yapmak **fetal hipotiroidi ve guatr** riskini ciddi artırır; düşük doz ATD ile anne sT4/TT4'ü normalin üst limitinde ya da orta derecede üstünde tutulmalıdır. İdeali gebelik öncesi ablatif tedavidir.",
+          "sayfa": "317"
         }
       ]
     },
@@ -294,6 +477,25 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Gebelikte nodül",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Nodüle yaklaşım gebe olmayanlarla aynıdır; radyonüklid yöntemlerden kaçınılır. Biyopsi endikasyonu varsa **gestasyon haftasından bağımsız** kontrendikasyon yoktur; gebelik sitolojiyi etkilemez.",
+          "sayfa": "141"
+        },
+        {
+          "metin": "**İndetermine sitolojide** US takibi sürdürülür, cerrahi kararı doğum sonrasına kaydırılır; **1. veya 2. trimesterde malign sitolojide 2. trimesterde cerrahi** önerilir.",
+          "sayfa": "141"
+        },
+        {
+          "metin": "İyot yetersiz bölgede yaşayan gebeye nodülü olsa da **iyot desteği** önerilmelidir.",
+          "sayfa": "141"
+        }
+      ]
+    },
+    {
       "tip": "metin",
       "baslik": "Postpartum Tiroidit (PPT)",
       "satirlar": [
@@ -305,6 +507,29 @@
         },
         {
           "metin": "**Tedavi:** Tirotoksikoz fazı semptomluysa β-bloker (propranolol) kullanılır — ATİ verilmez (yıkım kaynaklı, yeni sentez yok). Hipotiroidi fazı semptomluysa LT4 başlanır. Emziren annelerde ATİ gerekirse: PTU max 300 mg/gün, MMI max 20 mg/gün, emzirmeden hemen sonra alınarak etkiye uğramadan önce süt üretimi tamamlanmış olur."
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Postpartum tiroidit",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "PPT gebeliklerin yaklaşık **%8–10**'unda görülür; ilk trimesterde antikor pozitif olanlarda risk **%33–50**'dir. Fonksiyonlar genellikle tedavisiz 3–6 ayda düzelir; kalıcı hipotiroidi **%5** (öneri kutusunda %5–10) olguda gelişir.",
+          "sayfa": "267, 272"
+        },
+        {
+          "metin": "Graves'ten ayırmak için **TRAb** bakılmalıdır; laktasyon nedeniyle gerekmedikçe sintigrafi yapılmamalıdır. Graves'te T3/T4 oranı **>20**'dir.",
+          "sayfa": "267"
+        },
+        {
+          "metin": "Kalıcı hipotiroidi riskini artıranlar: yüksek TSH ve antikor titresi, multiparite, yaş, US'de hipoekojen heterojen parankim, yüksek LT4 ihtiyacı (>50–75 µg/gün). Tirotoksikoz semptomlarında laktasyonda kullanılabildiği için **propranolol** önerilir.",
+          "sayfa": "267"
+        },
+        {
+          "metin": "Hashimoto'lu gebede antikorlar gebelikte düşer, postpartum artarak hipotiroidi yeniden gelişebilir.",
+          "sayfa": "269"
         }
       ]
     },

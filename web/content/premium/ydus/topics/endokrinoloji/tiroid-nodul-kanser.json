@@ -32,10 +32,93 @@
         "Yönetim"
       ],
       "satirlar": [
-        { "hucreler": ["I", "Tanısız / Yetersiz", "Tekrar İİAB"] },
-        { "hucreler": ["II", "Benign (sıklıkla kolloidal)", "Klinik izlem"] },
-        { "hucreler": ["III / IV", "Belirsiz (AUS/FLUS / Foliküler Neoplazi)", "Moleküler test veya cerrahi"] },
-        { "renk": "kirmizi", "hucreler": ["V / VI", "Malignite şüphesi / Malign", "Cerrahi (Tiroidektomi)"] }
+        {
+          "hucreler": [
+            "I",
+            "Tanısız / Yetersiz",
+            "Tekrar İİAB"
+          ]
+        },
+        {
+          "hucreler": [
+            "II",
+            "Benign (sıklıkla kolloidal)",
+            "Klinik izlem"
+          ]
+        },
+        {
+          "hucreler": [
+            "III / IV",
+            "Belirsiz (AUS/FLUS / Foliküler Neoplazi)",
+            "Moleküler test veya cerrahi"
+          ]
+        },
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "V / VI",
+            "Malignite şüphesi / Malign",
+            "Cerrahi (Tiroidektomi)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Nodül değerlendirme ve İİAB endikasyonu",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "İlk basamak laboratuvar tetkiki **TSH**, ilk basamak görüntüleme **tiroid US**'dir; rutin tarama amaçlı US önerilmez.",
+          "sayfa": "141"
+        },
+        {
+          "metin": "TEMD, İİAB kararını **EU-TIRADS** skoruna göre önerir: **EU-TIRADS 3 >20 mm**, **EU-TIRADS 4 >15 mm**, **EU-TIRADS 5 >10 mm** nodüllerde İİAB yapılmalıdır.",
+          "kanit": "yüksek",
+          "sayfa": "139"
+        },
+        {
+          "metin": "Multinodüler guatrda malignite riski soliter nodüle benzer ve nodül sayısından bağımsızdır: dominant nodül yerine **her nodül ayrı değerlendirilir**, endikasyonu olan her nodülden İİAB yapılır. Karışık yapıdaki nodülde **solid komponentten** biyopsi alınır.",
+          "kanit": "yüksek",
+          "sayfa": "139"
+        },
+        {
+          "metin": "18-FDG PET'te insidental fokal tiroid tutulumu US ile değerlendirilmelidir; PET tutulumlu **>1 cm EU-TIRADS 4–5** ve **>2 cm EU-TIRADS 3** nodüllere biyopsi yapılmalıdır.",
+          "kanit": "yüksek",
+          "sayfa": "139"
+        },
+        {
+          "metin": "BT ve MRG ilk değerlendirmede veya takipte gerekli değildir; substernal/retrosternal nodülde bası, invazyon, vasküler anatomi ve lenf nodu değerlendirmesi için US'ye ek olarak kullanılabilir.",
+          "kanit": "yüksek",
+          "sayfa": "140"
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Bethesda kategorisine göre yaklaşım",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Bethesda 2023 malignite riskleri: yetersiz **%13**, benign **%4**, AUS **%22**, foliküler neoplazi **%30**, malignite şüphesi **%74**, malign **%97**.",
+          "sayfa": "139"
+        },
+        {
+          "metin": "Tanısal olmayan sitolojide biyopsi tekrarı, reaktif değişiklikler nedeniyle **en az 1 ay sonra** yapılmalıdır; tekrarlayan tanısal olmayan solid nodülde 6–12 ayda bir US takibi ya da ek şüpheli özellik varsa cerrahi düşünülebilir.",
+          "sayfa": "140"
+        },
+        {
+          "metin": "Benign sitolojide 12–24 ay aralıklarla US takibi yapılabilir. Büyüme: en az 2 boyutta **en az 2 mm** büyüme veya **hacimde >%50 artış**; US özellikleri stabilse 2 yılda bir takip edilebilir. Benign nodülde boyut küçültmek için **LT4 supresyonu önerilmez**.",
+          "sayfa": "140"
+        },
+        {
+          "metin": "İndetermine sitolojide (Bethesda 3–4) mümkünse BRAF, RET/PTC, PAX8/PPARG ve RAS mutasyonları gereksiz cerrahiyi önlemede yardımcı olabilir; BRAF, TERT promoter ve TP53 araması Bethesda V ve fokal PTK özellikli Bethesda 3'te önerilir.",
+          "sayfa": "140"
+        },
+        {
+          "metin": "Gebelikte indetermine sitolojide US takibi sürdürülüp cerrahi doğum sonrasına bırakılır; 1. veya 2. trimesterde **malign** sitolojide cerrahi **2. trimesterde** önerilir.",
+          "sayfa": "141"
+        }
       ]
     },
     {
@@ -44,6 +127,35 @@
       "satirlar": [
         {
           "metin": "Bu soru seti; tiroid nodülüne ilk yaklaşım (TSH+USG, sıcak/soğuk nodül ayrımı), ACR TI-RADS skorlama kriterleri ve boyuta göre İİAB eşikleri, Bethesda sitoloji sınıflaması, tiroid kanseri alt tipleri (papiller, foliküler, medüller, anaplastik — sıklık, yayılım paterni, histopatoloji, genetik profil), medüller kanserde feokromositoma/MEN2 taraması, RAİ ablasyonu ve TSH supresyonunun yalnızca diferansiye kanserlerde etkili olması (ATA 2015: baskılama yüksek risk/yapısal hastalıkta; düşük riskte hedef 0,5–2 mU/L) ve tiroglobulin ile takibi kapsar."
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "DTK: cerrahi sonrası risk ve RAI",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "TEMD risk değerlendirmede **ATA 2015** risk sınıflamasını benimser; **düşük riskli hastada RAI gerekmez**, RAI yalnızca orta ve yüksek riskliye gereken dozda verilmelidir.",
+          "sayfa": "197"
+        },
+        {
+          "metin": "TEMD, ülkemizde DTK'da **gereğinden sık ve yüksek dozda RAI** kullanıldığını gözlemlemektedir.",
+          "sayfa": "197",
+          "fark": true
+        },
+        {
+          "metin": "RAI verilecekse postoperatif **1–3 ay** içinde verilmelidir; bakiye ablasyonu için genellikle **30 mCi** yeterlidir, yüksek riskte yüksek doz (**>100–150 mCi**) önerilir. Tedaviden **5–8 gün sonra** mutlaka TVT yapılmalıdır.",
+          "sayfa": "197"
+        },
+        {
+          "metin": "Postoperatif Tg yaklaşık **4. haftada** en düşük düzeyine iner (özellikle anti-Tg negatifte değerli); ülkemizde deneyimli cerrah elinde hastaların önemli kısmında 1. ay Tg **<0,5 ng/mL** bulunabilir. Yüksek kalan 1. ay Tg rezidü/yetersiz cerrahi için uyarıdır.",
+          "sayfa": "194",
+          "fark": true
+        },
+        {
+          "metin": "İlk yıl hedef TSH: Tg <0,2 ng/mL düşük riskli (veya lobektomi) **0,5–2 mU/L**; ölçülebilir Tg'li düşük risk ve orta risk **0,1–0,5 mU/L**; yüksek risk **<0,1 mU/L**.",
+          "sayfa": "198"
         }
       ]
     }

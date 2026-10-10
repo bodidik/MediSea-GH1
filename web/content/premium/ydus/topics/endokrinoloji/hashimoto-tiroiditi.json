@@ -175,14 +175,75 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Doğal seyir ve izlem",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Tanı anında olguların **%75'i ötiroid**, %25'i subklinik ya da aşikâr hipotiroidi gösterir. Subklinik hipotiroididen aşikâr hipotiroidiye geçiş yılda yaklaşık **%3–5**'tir; başlangıçta **TSH ve antikor düzeyi ne kadar yüksekse** risk o kadar fazladır.",
+          "sayfa": "269, 272"
+        },
+        {
+          "metin": "Normal TSH ve otoantikor varlığında tiroid fonksiyonları **6–12 aylık** aralarla izlenmelidir.",
+          "sayfa": "269"
+        },
+        {
+          "metin": "Atrofik formda **HLA-DR3**, guatrla seyreden formda **HLA-DR5** ilişkisi tespit edilmiştir; atrofik formdan tiroid uyarımını bloke eden antikorlar (TSBAb) sorumlu tutulur.",
+          "sayfa": "268, 272"
+        },
+        {
+          "metin": "**IgG4 ilişkili** formlar erkeklerde daha sıktır; antikor düzeyleri daha yüksek, ilerleme hızlı ve agresiftir.",
+          "sayfa": "269"
+        },
+        {
+          "metin": "Hashimoto'lu gebede antikorlar genellikle düşer, hastalık remisyona girebilir; **postpartum** antikorlar artarak yeniden hipotiroidi gelişebilir. Antikor pozitif kadınlarda düşük riski çok daha yüksektir.",
+          "sayfa": "269"
+        }
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "metin": "Haşitoksikoz (Hashitoxicosis) — Kritik Nokta: Hashimoto zemininde nadir görülen geçici bir tirotoksikoz dönemidir. İki mekanizma: (1) Follikül yıkımıyla depolardan kana kaçan tiroid hormonu (yıkım tirotoksikozu = ATİ'siz geçer), (2) TSH reseptörü uyarıcı antikorların (TSHSAb) geçici etkisi. Hastalık önce hipertiroidi, sonra hipotiroidi ile seyreder. Geçici olduğundan ATİ verilmez — tedavi semptomatik (beta-bloker)."
     },
     {
+      "tip": "temd",
+      "konu": "Haşitoksikoz",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "TEMD haşitoksikozu, nadiren hastalığın başlangıcında **stimüle eden TSHRAb** nedeniyle gelişen hipertiroidi (**RAIU yüksek**), ardından lenfositik infiltrasyonla bez harabiyetine bağlı hipotiroidi olarak tanımlar.",
+          "sayfa": "269"
+        },
+        {
+          "metin": "Hashimoto olgularının **%10'unda** TSH reseptör antikoru pozitifliği görülebilir.",
+          "sayfa": "268"
+        }
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "metin": "Tiroid Lenfoması — Kritik Uyarı: Hashimoto tiroiditi, primer tiroid lenfoması için bilinen en önemli risk faktörüdür. Hashimoto zemininde hızlı büyüyen, asimetrik, ağrılı ve bası bulgusu yaratan kitlede TİROİD LENFOMASINI MUTLAKA DÜŞÜN. İİAB veya tru-cut biyopsiyle ekarte edilmelidir."
+    },
+    {
+      "tip": "temd",
+      "konu": "Lenfoma ve kanser",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Hashimoto'da **asimetrik bez büyümesi, ağrı, hassasiyet, ses kısıklığı, lenf nodu** gelişirse tiroid lenfoması mutlaka akla getirilmelidir.",
+          "sayfa": "269"
+        },
+        {
+          "metin": "Tiroid lenfomasında genellikle **çok yüksek anti-TPO** titreleri bulunur. US'de kronik tiroiditten ayırımı güç hipoekoik görünüm verir.",
+          "sayfa": "7, 36"
+        },
+        {
+          "metin": "Hashimoto ile papiller tiroid kanseri arasında ilişki bildiren yayınlar olsa da **tersini savunan yayınlar da** mevcuttur.",
+          "sayfa": "269"
+        }
+      ]
     },
     {
       "tip": "tablo",
@@ -274,6 +335,37 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Antikorlar ve ultrason",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "OİTH tanısı için **anti-TPO genellikle yeterlidir**. **Anti-Tg** yalnızca klinik olarak OİTH düşünülen, **anti-TPO negatif** hastada bakılmalıdır; rutin anti-Tg önerilmez (anti-TPO düşük/negatif, anti-Tg yüksek OİTH sıklığı ~%5).",
+          "sayfa": "6, 12"
+        },
+        {
+          "metin": "Tiroiditler bölümündeki oranlar: anti-TPO Hashimoto hastalarının **%90**'ında, anti-Tg **%2–50**'sinde pozitiftir; genel popülasyonun ~%10'unda da yüksek titrede saptanabilir. Erken dönemde anti-Tg belirgin yüksek olabilir, ilerledikçe kaybolur; anti-TPO uzun yıllar pozitif kalır.",
+          "sayfa": "268"
+        },
+        {
+          "metin": "Subklinik hipotiroidide **anti-TPO** kalıcı hipotiroidiye ilerlemeyi öngörmede önemlidir; anti-TPO yüksekliği amiodaron, interferon, IL-2 ve lityumla tiroid disfonksiyonunun habercisidir.",
+          "sayfa": "6–7"
+        },
+        {
+          "metin": "US'de hipoekojenite OİTH belirteci olarak **PPD %88, NPD %95**'tir. Milimetrik, parankimden net ayrılmayan **mikronodüller** (yalancı nodül) Hashimoto için oldukça spesifiktir.",
+          "sayfa": "34–35"
+        },
+        {
+          "metin": "Diffüz Hashimoto zemininde gelişen benign/malign nodüllerin US özellikleri genel popülasyondakine benzer; bu nedenle **biyopsi kararında aynı US ölçütleri** kullanılmalıdır.",
+          "sayfa": "36"
+        },
+        {
+          "metin": "Primer aşikâr veya subklinik hipotiroidi saptanan tüm hastalar en azından tedavi başında bir kez **US ile mutlaka** değerlendirilmelidir.",
+          "sayfa": "89"
+        }
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
       "metin": "USG Ayırımı — Hashimoto vs Graves: Hashimoto'da parankim kanlanması AZALMIŞ (hipoekojen, heterojen). Graves'te parankim kanlanması AŞIRI ARTMIŞ — 'tiroid inferno' olarak tanımlanır. Doppler USG iki hastalığı birbirinden ayırt etmede kritik rol oynar."
@@ -345,6 +437,41 @@
             "Klinik eksiklikte düşün; rutin replasman önerilmez",
             "Anti-TPO titrelerini düşürebilir; glutatyon peroksidaz aktivasyonu, Treg güçlendirme. Hipotiroidisi önlemez."
           ]
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Levotiroksin tedavisi",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Aşikâr hipotiroidide tüm olgulara LT4 verilir; **TSH 10 mU/L** olan olguların tedavisinde genel fikir birliği vardır. Planlanan doz yaklaşık **1,2–1,8 µg/kg/gün** düşünülebilir; kısmi rezervi olanlarda başlangıç ihtiyacı ortalama 1,2–1,6 µg/kg (~75–100 µg/gün).",
+          "sayfa": "90, 93"
+        },
+        {
+          "metin": "Genç olgularda **tam dozla** başlanabilir. 60 yaş üstü KKH'si olmayanda başlangıç **50 µg/gün**, KKH varsa **12,5–25 µg/gün**; yaşlıda 7–10 günde bir 12,5 µg/gün artırılır ve hasta göğüs ağrısı açısından uyarılır.",
+          "sayfa": "90, 92"
+        },
+        {
+          "metin": "TSH hedefi: genç/orta yaşta **0,4–2,5 mU/L**, ≥65–70 yaşta **3–6 mU/L**, >80–85 yaşta **≤10 mU/L**. Gebelik planlayanda 0,4–2,5 mU/L, düşük tarafta tutulması önerilir.",
+          "sayfa": "91, 93"
+        },
+        {
+          "metin": "LT4 öğünden **en az 30 dk önce** alınır; demir sülfat, kalsiyum karbonat ile **en az 4 saat** ara bırakılır. Mümkünse aynı ticari preparatla devam edilir; değişirse 6–8 hafta sonra TSH bakılır.",
+          "sayfa": "91, 93"
+        },
+        {
+          "metin": "Günlük doz **200 µg** üzerine çıktığı hâlde TSH uygun değilse **uyumsuzluk veya emilim sorunu** düşünülmelidir. LT3+LT4 kombinasyonunun üstünlüğüne kanıt yetersizdir; **tiroid ekstresi ve T3 kullanılmamalıdır**.",
+          "sayfa": "91"
+        },
+        {
+          "metin": "Selenyum otoantikorları düşürebilir ancak **hipotiroidiyi engellediğine yeterli veri yoktur**; rutin kullanımı önerilmez. D vitamini eksikliği standart yaklaşımla tedavi edilir; düzeyi fizyolojik değerlerin üzerine çıkaracak doz, artmış kırık ve mortalite riski nedeniyle **önerilmez**.",
+          "sayfa": "269, 76"
+        },
+        {
+          "metin": "Uygun tedaviye rağmen yakınması süren hastada vitamin ve mineral düzeyleri ölçülmeli, özellikle **demir, iyot ve selenyum** yakın izlenmelidir.",
+          "sayfa": "76"
         }
       ]
     },

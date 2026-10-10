@@ -109,6 +109,30 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Etiyoloji ve hormon kaybı sırası",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "Hipofiz kompresyonuna bağlı hipopituitarizmde hormon yetmezliği zaman içinde genellikle **GH → FSH/LH → TSH → ACTH** sırasıyla gelişir.",
+          "sayfa": "91"
+        },
+        {
+          "metin": "**Lenfositik hipofizitte** ACTH veya TSH ilk eksilen hormonlar olabilir; kafa travmasına bağlı hipopituitarizmde de izole hormon eksiklikleri daha sık görülür.",
+          "sayfa": "91"
+        },
+        {
+          "metin": "Ülkemizde kadın hastalarda **Sheehan sendromu** hâlâ en sık hipofiz yetmezliği nedenlerinden biridir; obstetrik öykü ve laktasyon durumu dikkatle sorgulanmalıdır.",
+          "sayfa": "100",
+          "fark": true
+        },
+        {
+          "metin": "Hipopituitarizm prevalansı 45/100.000, insidansı yaklaşık 4/100.000/yıl; olguların yaklaşık yarısında çoklu hormon eksikliği vardır. Mortalite normal bireylere göre **1,2–2,2 kat** artmıştır.",
+          "sayfa": "89"
+        }
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "ek_bilgi",
       "metin": "Geçici Santral Hipotiroidi: Ağrısız tiroidit, postpartum tiroidit veya subakut tiroiditin iyileşme fazında, hipertiroidi tedavisini takiben (uzun süreli tirotoksikoz sonrası tirotrop hücre baskılanması) ve ağır tiroid dışı hastalık sendromu (TDHS) sırasında geçici olarak ortaya çıkabilir. Altta yatan durum düzelince kendiliğinden normalleşir."
@@ -132,6 +156,25 @@
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "metin": "Kritik Lab Paradoksu: Santral hipotiroidide sT4 düşük olmasına karşın TSH düşük, normal veya hafif yüksek (5–10 mU/L) saptanabilir. Mekanizma: TRH eksikliğine bağlı TSH glikozilasyon bozukluğu → immünolojik olarak ölçülebilen ama biyolojik olarak inaktif TSH molekülleri. Ayrıca fizyolojik noktürnal TSH piki (gece geç saatlerde hipotalamik kontrol altında gerçekleşen) kaybolur → günlük total TSH salgısı düşer → klinik hipotiroidi. sT4↓ + TSH düşük/normal/hafif↑ = Santral hipotiroidi düşün."
+    },
+    {
+      "tip": "temd",
+      "konu": "Tanı",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "TSH eksikliği tanısı: **sT4 düşükken TSH düşük, uyumsuz olarak normal ya da hafif yüksek** ise konur.",
+          "sayfa": "93"
+        },
+        {
+          "metin": "TSH ve gonadotropin eksikliğinde bazal hipofiz ve hedef bez hormonlarının eşzamanlı ölçümü tanı için çoğunlukla yeterlidir; rutin pratikte **stimülasyon testleri** (istisnai durumlar dışında) artık kullanılmamaktadır.",
+          "sayfa": "93, 100"
+        },
+        {
+          "metin": "Laboratuvar değerlendirme bazal hipofiz ve hedef bez hormonlarının birlikte ölçümüyle başlar: TSH/sT4, ACTH/bazal kortizol, GH/IGF-1, FSH/LH ile estradiol/testosteron, PRL.",
+          "sayfa": "92"
+        }
+      ]
     },
     {
       "tip": "tablo",
@@ -242,6 +285,33 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Tiroid dışı hastalık sendromundan ayırım",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "TDHS'de tablo faza göre değişir: **akut fazda** TSH normal, T4/sT4 normal ya da yüksek, T3 düşük, rT3 yüksek; **kronik fazda** TSH, T4, sT4 düşük, T3 belirgin düşük, rT3 normal/yüksek. Santral hipotiroidide rT3 düşüktür.",
+          "sayfa": "298"
+        },
+        {
+          "metin": "Bilinen hipotalamo-hipofizer hastalığı olmayan birinde TDHS'yi sekonder hipotiroididen ayırmak için **normal veya yüksek kortizol, gonadotropin ve normal prolaktin** gibi ön hipofiz hormonlarından yararlanılabilir; yine de tanı hastalığın düzelmesine kadar gecikebilir.",
+          "sayfa": "302"
+        },
+        {
+          "metin": "TDHS'de TRH'ya TSH yanıtı **değişkendir**; şiddetli TDHS'de görülen edinilmiş geçici santral hipotiroidizmde ise genellikle TRH'ye normal TSH yanıtı vardır.",
+          "sayfa": "301–302"
+        },
+        {
+          "metin": "Bazı hastalarda TSH'de yükselme, baskılanmış hipofizer-tiroid aksın **düzelmeye** başladığını gösterir.",
+          "sayfa": "302"
+        },
+        {
+          "metin": "Altta yatan hastalık düzeldikten sonra TFT yenilenmelidir; ayırıcı tanıda santral hipotiroidi düşünülürse diğer hipofiz hormonları ve **özellikle kortizol** ile tanı desteklenebilir.",
+          "sayfa": "304"
+        }
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "ek_bilgi",
       "metin": "TRH Stimülasyon Testi: Santral hipotiroidi–TDHS ayırımında kullanılır (ülkemizde pratikte nadiren bulunur). İV TRH sonrası TSH ölçülür: TDHS'de normal TSH yanıtı alınırken, hipofizer hastalıkta yanıt alınamaz, hipotalamik hastalıkta ise gecikmiş TSH yanıtı gözlenir."
@@ -250,6 +320,29 @@
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "metin": "Tedavi Öncesi Altın Kural — Adrenal Yetmezlik Önce Dışlanmalı: LT4 başlanmadan önce hipofizer-adrenal aks (ACTH stimülasyon testi veya bazal kortizol) değerlendirilmeli ve sekonder adrenal yetmezlik ekarte edilmelidir. Tanısız adrenal yetmezlikte LT4 → metabolizma hızlanması → karaciğerde kortizol klerensi artar → akut adrenal kriz (ölümcül). Kural: Adrenal yetmezlik saptanırsa LT4'ten ÖNCE veya eş zamanlı hidrokortizon başla."
+    },
+    {
+      "tip": "temd",
+      "konu": "Replasman sırası",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "ACTH eksikliğiyle birlikte TSH ve/veya GH eksikliği olan hastada adrenal kriz gelişmemesi için **önce glukokortikoid** replasmanı verilmelidir.",
+          "sayfa": "99"
+        },
+        {
+          "metin": "Glukokortikoid olarak öncelikle **hidrokortizon 15–20 mg/gün** (2 ya da 3 doza bölünmüş) önerilir; sekonder adrenal yetmezlikte fludrokortizon gerekmez.",
+          "sayfa": "98–99"
+        },
+        {
+          "metin": "Sabah 8–9'da bazal kortizol **≥15 μg/dl** HPA aksın normal olduğunu, **<3 μg/dl** büyük olasılıkla adrenal yetmezliği gösterir; 3–15 μg/dl arasında stimülasyon testi önerilir.",
+          "sayfa": "100"
+        },
+        {
+          "metin": "İTT ya da ACTH stimülasyon testinde **pik kortizol ≥18 μg/dl** ACTH rezervinin normal olduğunu gösterir.",
+          "sayfa": "100"
+        }
+      ]
     },
     {
       "tip": "tablo",
@@ -298,6 +391,29 @@
             "LT4 dozu %25–50 artır; sT4'ü gebeliğe özgü referans aralığının üst çeyreğinde (upper quartile) tut",
             "TSH kullanılamaz; fetüs tiroid hormona muhtaç — doz yetersizliği nörolojik zarar riski taşır"
           ]
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "LT4 tedavisi ve izlem",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Santral hipotiroidide LT4 **1,6 µg/kg** hesaplanarak başlanabilir; takip ve doz ayarlamaları **sT4** düzeyine göre yapılmalıdır, TSH ölçümü takipte yardımcı olmaz.",
+          "sayfa": "91"
+        },
+        {
+          "metin": "Tiroid dokusu hiç olmayan ve santral hipotiroidisi olan hastalarda daha yüksek dozlar (**100–250 µg/gün**) gerekebilir.",
+          "sayfa": "90"
+        },
+        {
+          "metin": "Adrenal yetmezlik eşlik ediyorsa önce mutlaka glukokortikoid, sonra tiroid hormonu başlanmalıdır; tersi yapılırsa sorun yaşanabilir.",
+          "sayfa": "91"
+        },
+        {
+          "metin": "Replasman dozu ayarlandıktan sonra izlem **6–12 ay** aralıklarla yapılmalıdır; mümkünse aynı ticari preparatla devam edilmelidir.",
+          "sayfa": "93"
         }
       ]
     },

@@ -50,6 +50,64 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Subklinik hipotiroidi",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Tanı için TSH **1–3 aylık aralıkla en az iki kez** ölçülerek yüksekliğin kalıcı olduğuna karar verilmelidir; tekrar ölçümde serbest T4 de birlikte bakılır.",
+          "sayfa": "95, 98"
+        },
+        {
+          "metin": "Ovulatuvar disfonksiyon veya infertilitede tanı için gebeliğin ilk trimesterindeki referans kullanılmalıdır (**TSH 0,1–2,5 mU/L**); gebelerde trimestere özgü aralıklar kullanılır.",
+          "sayfa": "96, 98"
+        },
+        {
+          "metin": "Aşikar hipotiroidiye ilerleme yıllık **%2–4**; risk başlangıç **TSH >12–15 mU/L** ve **anti-TPO** varlığında artar. Antikor negatif, TSH <10 olan olgularda 1–2 yıl içinde TSH normale dönebilir.",
+          "sayfa": "96"
+        },
+        {
+          "metin": "**TSH ≥10 mU/L** olan tüm hastalar tedavi edilmelidir; **TSH 4,5–9,9 mU/L**'de karar semptom ve ek risk faktörlerine göre verilir (algoritmada 4,5–6,9 takip; 7–9,9 aralığında <65–70 yaşta semptom varsa LT4).",
+          "sayfa": "98"
+        },
+        {
+          "metin": "LT4 başlangıcı: yaşlı ve kardiyovasküler hastalık öyküsü olanda **25–50 mcg/gün**; genç Hashimoto olgusunda tam replasmanın altında **1,0 mcg/kg/gün**. TSH **6 haftada bir** kontrol edilerek titre edilir.",
+          "sayfa": "97"
+        },
+        {
+          "metin": "Hedef TSH genç ve orta yaşta **0,5–2,5 mU/L**, **65 yaş üstünde 3–6 mU/L**; hedefe ulaşınca 6–12 ayda bir izlenir.",
+          "sayfa": "97"
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Subklinik hipertiroidi",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Hafif vakalarda (Grade 1) TSH **0,1–0,4 mIU/L**, şiddetli vakalarda (Grade 2) **<0,1 mIU/L**; hastaların %65–75'i hafif gruptadır. Eksojen neden endojenden çok daha yaygındır.",
+          "sayfa": "115"
+        },
+        {
+          "metin": "Hafif olguda aşikar hipertiroidiye ilerleme 7 yılda **%0,5–0,7**; **TSH <0,1**'de genellikle kalıcı hastalık veya ilerleme görülür (yıllık **%5–8**).",
+          "sayfa": "116"
+        },
+        {
+          "metin": "**TSH <0,1** ise tedavi önerilir; **0,1–0,4** aralığında ≥65 yaş, kardiyovasküler hastalık, osteoporoz, hipertiroidi semptomu ya da östrojen/bifosfonat almayan postmenopozal durumdan **en az biri** varsa tedavi düşünülür (algoritma), hiçbiri yoksa takip edilir.",
+          "sayfa": "117"
+        },
+        {
+          "metin": "Nedeni ayırmak için **sintigrafi ve 24 saatlik RAIU** kullanılabilir; yüksek iyot alımından şüphelenilirse 24 saatlik idrar iyot atılımı ölçülebilir.",
+          "sayfa": "116, 118"
+        },
+        {
+          "metin": "Graves'e bağlı olguda **ATİ**, toksik adenom/toksik MNG'de **radyoiyot** düşünülür; cerrahi büyük guatr, kompresyon, eşlik eden hiperparatiroidi veya kanser şüphesinde öne çıkar.",
+          "sayfa": "117–118"
+        }
+      ]
+    },
+    {
       "tip": "metin",
       "baslik": "Kapsam",
       "satirlar": [

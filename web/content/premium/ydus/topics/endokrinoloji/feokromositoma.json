@@ -5,7 +5,10 @@
     "branch": "endokrinoloji",
     "baslik": "Feokromositoma ve Paraganglioma",
     "altbaslik": "Adrenal medulla ve ekstra-adrenal kromafinlerden kaynaklanan katekolamin salgılayan tümörler; tanı, genetik değerlendirme ve cerrahi yönetim",
-    "rozetler": ["YENİ", "SINAV SPOTU"],
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
     "guncelleme": "2026-08"
   },
   "moduller": {
@@ -50,6 +53,33 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Kimler araştırılmalı?",
+      "kaynak": "TEMD Adrenal ve Gonadal Hastalıklar Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Klasik semptom üçlüsü (çarpıntı, baş ağrısı, terleme) vakaların yalnızca **%40–50**'sinde vardır; hastaların **%15–40** kadarında kan basıncı normal bulunabilir.",
+          "sayfa": "48"
+        },
+        {
+          "metin": "Araştırılacaklar: hiperadrenerjik atakları olanlar, **dirençli hipertansiyon**, ailede feokromositoma/MEN-2/VHL/NF1, adrenal insidentaloma, genç yaşta hipertansiyon, idiopatik dilate kardiyomiyopati.",
+          "sayfa": "48"
+        },
+        {
+          "metin": "Anestezi, entübasyon, cerrahi, gebelik veya anjiyografi sırasında hipertansif atak ya da açıklanamayan şok; gastrik stromal tümör veya pulmoner kondroma öyküsü (Carney triadı) de araştırma nedenidir.",
+          "sayfa": "48"
+        },
+        {
+          "metin": "Atak tetikleyicileri arasında tiramin zengini gıdalar (peynir, şarap, bira), **metoklopramid**, iyonik kontrastlar, trisiklik antidepresanlar, MAO inhibitörleri, dekonjestanlar ve **β-blokerler** sayılır.",
+          "sayfa": "50"
+        },
+        {
+          "metin": "Geçmişteki **\"%10 kuralı\"** güncel çalışmaların ışığında artık geçerli kabul edilmemektedir; FPGL'lerin yaklaşık **%30–40**'ı kalıtsaldır (çocuklarda %70–80).",
+          "sayfa": "47"
+        }
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "ek_bilgi",
       "baslik": "Geroula Pre-test Klinik Skorlaması",
@@ -71,6 +101,33 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Biyokimyasal tanı",
+      "kaynak": "TEMD Adrenal ve Gonadal Hastalıklar Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Taramada önerilen testler **plazma serbest metanefrinleri** ve **24 saatlik idrar fraksiyone metanefrinleridir**; katekolamin ölçümü yanlış pozitifliğe yol açabilir, ancak dopamin salgılayan tümörden şüpheleniliyorsa kullanılır.",
+          "sayfa": "52"
+        },
+        {
+          "metin": "Düşük olasılıkta iki testin duyarlılığı benzerdir; **yüksek riskli** hastalarda plazma serbest metanefrinleri daha duyarlı, dolayısıyla daha üstündür. Kriz sırasında veya hemen sonrasında yapılan ölçümler daha değerlidir.",
+          "sayfa": "52"
+        },
+        {
+          "metin": "Metanefrin/normetanefrinde üst sınırın **≥2 katı** FPGL tanısı için anlamlıdır ve lokalizasyon görüntülemesine geçilir; **2 katından az** yükseklik indetermine kabul edilir ve **testin tekrarı** önerilir.",
+          "sayfa": "53"
+        },
+        {
+          "metin": "İnsidentalomada kontrastsız BT'de **HU ≤10** kitlenin feokromositoma olması beklenmez, tetkike gerek yoktur. İdrar fraksiyone metanefrini öncesi **VMA kısıtlı diyete gerek yoktur**; ELISA ile hastaların dörtte biri kaçırılabilir, alternatifi varken rutin önerilmez.",
+          "sayfa": "21"
+        },
+        {
+          "metin": "Serum **kromogranin A** alternatif testtir: antihipertansifler etkilemez, ancak orta derecede böbrek bozukluğu bile anlamlı artışa neden olur.",
+          "sayfa": "53"
+        }
+      ]
+    },
+    {
       "tip": "metin",
       "baslik": "Test Seçimi ve 3-Metoksitiramin (3-MT)",
       "satirlar": [
@@ -83,6 +140,29 @@
       "tur": "pratik",
       "baslik": "Preanalitik Hayati Kurallar: Yalancı Pozitifliği Önleme",
       "metin": "Kan örnekleri alınırken hasta gece yarısından itibaren aç olmalı ve en az 20-30 dakika sessiz, loş bir odada sırtüstü (supine) yatarak dinlendirildikten sonra önceden takılmış kalıcı damar yolu (branül) aracılığıyla alınmalıdır. Ayakta veya oturur pozisyonda yapılan normal venöz ponksiyonlarda adrenerjik deşaja bağlı yalancı pozitiflik oranı dramatik şekilde artar. Supine branül alımında feokromositomayı dışlama eşikleri: metanefrin <0.3 nmol/L ve normetanefrin <0.66 nmol/L. Ayakta/oturur alımlarda eşikler metanefrin <0.5 nmol/L ve normetanefrin <0.9 nmol/L'ye yükselir. Testten 12 saat önce kafein, alkol, tütün ve egzersiz kısıtlanmalıdır."
+    },
+    {
+      "tip": "temd",
+      "konu": "Preanalitik ve ilaçlar",
+      "kaynak": "TEMD Adrenal ve Gonadal Hastalıklar Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Plazma metanefrini için ideal örnek: **en az 30 dakika sırtüstü** yatar pozisyonda, önceden yerleştirilmiş kateterden. (Bölüm 2'de bu süre en az 20 dakika, ölçüm ideal olarak **LC-MS/MS** ile.)",
+          "sayfa": "21, 53"
+        },
+        {
+          "metin": "Test günü **alkol, nikotin ve kafeinden** kaçınılmalıdır; akut hastalık durumları yanlış pozitifliğe yol açabilir.",
+          "sayfa": "53"
+        },
+        {
+          "metin": "Yanlış yükseklik yapabilen ilaçlar: trisiklik antidepresanlar, dopamin içerenler (kabergolin), kokain, SSRI/SNRI, alfa blokerler, **fenoksibenzamin**, MAO inhibitörleri, sempatomimetikler (amfetamin, albuterol). Bu ilaçlar yarı ömre göre ortalama **5–14 gün** önce kesilmelidir.",
+          "sayfa": "53"
+        },
+        {
+          "metin": "Normotansif ve asemptomatik hastada normal plazma katekolaminleri feokromositomayı ekarte ettirmez; hipertansif ve semptomatik hastada ise tanıdan büyük ölçüde uzaklaştırır.",
+          "sayfa": "53"
+        }
+      ]
     },
     {
       "tip": "metin",
@@ -122,6 +202,34 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Görüntüleme",
+      "kaynak": "TEMD Adrenal ve Gonadal Hastalıklar Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Önce anatomik görüntüleme, sonra gereğinde fonksiyonel görüntüleme kullanılmalıdır. Kontrastsız BT'de dansite **10 HU üstündedir** (genellikle 30–40); kontrast öncesi α-blokaj sağlanmalı, noniyonik kontrastın güvenli olabileceği belirtilmiştir.",
+          "sayfa": "54, 62"
+        },
+        {
+          "metin": "Fonksiyonel görüntüleme endikasyonları: **tüm paragangliomalar**, **>5 cm** feokromositoma, nüks/metastatik hastalık, bilinen mutasyon taşıyıcılarının izlemi ve radyonüklid tedavi uygunluğu.",
+          "sayfa": "55"
+        },
+        {
+          "metin": "**SDHx** ve baş-boyun PGL'de **68Ga-DOTA PET/BT**; küme 2 (NF1, RET, MAX), EPAS1 ve VHL'de **18F-DOPA PET/BT** en duyarlı ve ilk seçilecek yöntemdir. 123I-MIBG yalnızca 131I-MIBG tedavisi şiddetle düşünülen inoperabl/metastatik olgularda kullanılır.",
+          "sayfa": "56"
+        },
+        {
+          "metin": "Metastatik FPGL'de duyarlılık: 68Ga-DOTA-SSA **%93**, 18F-FDOPA %80, 18F-FDG %74, MIBG **%38**.",
+          "sayfa": "56"
+        },
+        {
+          "metin": "18F-fluorodopamin, Cu64 DOTATATE ve In-111 pentetreotid **ülkemizde yaygın olarak kullanılmayan** yöntemlerdir.",
+          "sayfa": "56",
+          "fark": true
+        }
+      ]
+    },
+    {
       "tip": "metin",
       "baslik": "Moleküler Sınıflandırma ve Genetik Sendromlar",
       "satirlar": [
@@ -132,11 +240,41 @@
     {
       "tip": "tablo",
       "baslik": "PPGL Moleküler Küme Sınıflaması",
-      "kolonlar": ["Biyolojik Küme", "Temel Genler", "Patofizyoloji", "Biyokimyasal Fenotip", "Klinik Özellikler"],
+      "kolonlar": [
+        "Biyolojik Küme",
+        "Temel Genler",
+        "Patofizyoloji",
+        "Biyokimyasal Fenotip",
+        "Klinik Özellikler"
+      ],
       "satirlar": [
-        {"hucreler": ["Küme 1 — Yalancı Hipoksi", "SDHA, SDHB, SDHC, SDHD, SDHAF2, VHL, FH, EPAS1 (HIF2A)", "Süksinat/fumarat birikimi veya hipoksi sinyal yolaklarının stabilizasyonu → sürekli anjiyojenez", "Noradrenerjik (norepinefrin/normetanefrin) veya Dopaminerjik. PNMT eksprese edilmez.", "Sıklıkla ekstraadrenal paragangliyoma (VHL hariç) ve kalıcı hipertansiyon. Yüksek metastaz riski."]},
-        {"hucreler": ["Küme 2 — Kinaz Sinyali", "RET, NF1, TMEM127, MAX, HRAS", "Hücre proliferasyonu, büyümesi ve sağkalım yolaklarının (mTOR, MAPK) aşırı aktivasyonu", "Adrenerjik (epinefrin/metanefrin). PNMT aşırı eksprese edilir.", "Sıklıkla adrenal feokromositoma (RET ve MAX'ta bilateral sık) ve paroksismal ataklar. Düşük metastaz riski."]},
-        {"hucreler": ["Küme 3 — Wnt Sinyali", "CSDE1, UBTF::MAML3 füzyonları", "Wnt sinyal yolağının aberran aktivasyonu", "Değişken (noradrenerjik veya adrenerjik)", "Sıklıkla sporadik, agresif seyirli, nüks ve metastaz riski yüksek."]}
+        {
+          "hucreler": [
+            "Küme 1 — Yalancı Hipoksi",
+            "SDHA, SDHB, SDHC, SDHD, SDHAF2, VHL, FH, EPAS1 (HIF2A)",
+            "Süksinat/fumarat birikimi veya hipoksi sinyal yolaklarının stabilizasyonu → sürekli anjiyojenez",
+            "Noradrenerjik (norepinefrin/normetanefrin) veya Dopaminerjik. PNMT eksprese edilmez.",
+            "Sıklıkla ekstraadrenal paragangliyoma (VHL hariç) ve kalıcı hipertansiyon. Yüksek metastaz riski."
+          ]
+        },
+        {
+          "hucreler": [
+            "Küme 2 — Kinaz Sinyali",
+            "RET, NF1, TMEM127, MAX, HRAS",
+            "Hücre proliferasyonu, büyümesi ve sağkalım yolaklarının (mTOR, MAPK) aşırı aktivasyonu",
+            "Adrenerjik (epinefrin/metanefrin). PNMT aşırı eksprese edilir.",
+            "Sıklıkla adrenal feokromositoma (RET ve MAX'ta bilateral sık) ve paroksismal ataklar. Düşük metastaz riski."
+          ]
+        },
+        {
+          "hucreler": [
+            "Küme 3 — Wnt Sinyali",
+            "CSDE1, UBTF::MAML3 füzyonları",
+            "Wnt sinyal yolağının aberran aktivasyonu",
+            "Değişken (noradrenerjik veya adrenerjik)",
+            "Sıklıkla sporadik, agresif seyirli, nüks ve metastaz riski yüksek."
+          ]
+        }
       ]
     },
     {
@@ -149,12 +287,66 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Genetik",
+      "kaynak": "TEMD Adrenal ve Gonadal Hastalıklar Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "FPGL tanısı alan **bütün hastalar** genetik analiz açısından değerlendirilmelidir; genetik analiz yalnızca tarama değil, tanı ve prognoz belirlemede de kullanılır.",
+          "sayfa": "62"
+        },
+        {
+          "metin": "Paraganglioma saptanan tüm hastalarda mutasyon analizine baş-boyun yerleşiminde **SDHD ve SDHC**, boyun altı yerleşimde **SDHB** ile başlanır.",
+          "sayfa": "52"
+        },
+        {
+          "metin": "Metastatik FPGL'lerin yaklaşık **%40–45**'inden SDHB mutasyonu sorumludur; SDHx taşıyıcıları RCC ve GIST açısından da risk altındadır.",
+          "sayfa": "49, 52"
+        },
+        {
+          "metin": "VHL'de olguların **%10–20**'sinde feokromositoma gelişir ve **yıllık biyokimyasal tarama** yapılmalıdır; NF1'de feokromositoma sıklıkla bilateraldir ve metastatik hastalık riski yüksektir.",
+          "sayfa": "51"
+        },
+        {
+          "metin": "Sporadik sanılan olguların bir kısmı herediter olabilir; takipte sendromik bulgular açısından izlenmelidir.",
+          "sayfa": "52"
+        }
+      ]
+    },
+    {
       "tip": "metin",
       "baslik": "Preoperatif Medikal Hazırlık: Adım 1 — Alfa-Adrenerjik Blokaj",
       "satirlar": [
         "Feokromositoma cerrahisi esnasında ölümcül olabilecek intraoperatif katekolamin salınımlarını ve cerrahi sonrası gelişebilecek dirençli hipotansiyonu engellemek amacıyla, asemptomatik veya normotansif olsalar dahi tüm aktif hastalara en az 7 ila 14 gün boyunca kombine adrenerjik blokaj tedavisi uygulanmalıdır. Uygulama sırası: Adım 1 → Alfa blokaj (7-14 gün) | Adım 2 → Sodyum + hidrasyon yüklemesi (2-3. gün) | Adım 3 → Beta blokaj (alfa blokajdan en az 2-3 gün sonra).",
         "Doxazosin (Selektif Alfa-1 Bloker — İlk Tercih): Günümüzde daha hafif yan etki profili, düşük maliyeti ve ameliyat sonrası uzamış ağır hipotansiyon riskini en aza indirmesi nedeniyle klinik pratikte ilk tercih edilen ajandır. Dozaj: Gece 1-2 mg olarak başlanır, kan basıncı takibine göre her 2-3 günde bir artırılarak günde iki kez 10-15 mg düzeyine kadar titre edilir.",
         "Phenoxybenzamine (Non-selektif, İrreversibl Alfa Bloker): Alfa-1 ve alfa-2 reseptörlerini irreversibl bloke eder. İntraoperatif hemodinamik instabiliteyi önlemede hafifçe daha etkin olabileceğini gösteren çalışmalar bulunsa da; yüksek maliyeti, şiddetli yan etkileri ve ameliyat sonrası dirençli uzamış hipotansiyon riski kullanımını kısıtlar. Dozaj: Günde bir veya iki kez 10 mg başlanır, her 2-3 günde bir 10-20 mg artırılarak günde 30-40 mg (maksimum 100 mg/gün) düzeyine kadar titre edilir."
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Preoperatif hazırlık",
+      "kaynak": "TEMD Adrenal ve Gonadal Hastalıklar Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Fenoksibenzaminin **yüksek maliyeti ve ulaşılabilirlikteki zorluklar** ile karşılaştırılabilir etkinlik nedeniyle **prazosin ve doksazosin** perioperatif tedavide ön plandadır (kılavuzun algoritma şekli ise \"tercihen fenoksibenzamin\" der).",
+          "sayfa": "58–59"
+        },
+        {
+          "metin": "Prazosin/doksazosin **1–2 mg/gün** yatmadan önce başlanır, hedef kan basıncına (**<110–120/80 mmHg**) ulaşılana dek 2–3 günde bir 1–2 mg artırılır; hedef α-blokaj ortalama **10–14 günde** sağlanır.",
+          "sayfa": "59"
+        },
+        {
+          "metin": "Fenoksibenzamin: 12 saatte bir **10 mg** başlanıp 8 saatte bir **10–40 mg**'a çıkılabilir; ortostatik hipotansiyon ve refleks taşikardiye dikkat edilmelidir.",
+          "sayfa": "59"
+        },
+        {
+          "metin": "Hazırlık yalnızca feokromositoma cerrahisini kapsamaz: başka bir cerrahi, biyopsi, endoskopi ve radyofrekans ablasyonu öncesinde de yapılmalıdır.",
+          "sayfa": "58"
+        },
+        {
+          "metin": "Algoritmada ayaktan takip **7–14 gün**, ardından **1–3 gün** hospitalizasyon ve sıvı replasmanı yer alır; tüm antihipertansiflerin son dozu **operasyon sabahı** alınmalıdır.",
+          "sayfa": "58, 60"
+        }
       ]
     },
     {
@@ -170,6 +362,25 @@
       "tur": "uyari",
       "baslik": "Adım 3 — Beta-Blokörde Hayati Kural: Önce Alfa!",
       "metin": "BETA-BLOKÖR ASLA ALFA-BLOKAJ TAM OLARAK SAĞLANMADAN BAŞLANMAMALIDIR. Alfa reseptörleri bloke edilmeden beta-reseptörler bloke edilirse, katekolaminler beta-2 reseptörleri aracılığıyla yaptıkları vazodilatasyonu yapamazlar ve boşta kalan uyarılmamış alfa-reseptörleri üzerinden aşırı vazokonstriksiyona (unopposed alpha stimulation) yol açarak öldürücü hipertansif krizleri, akut akciğer ödemini ve koroner spazmı tetiklerler. Alfa-blokajdan en az 2-3 gün sonra refleks taşikardi veya aritmiyi kontrol etmek için eklenir. Dozaj: Metoprolol 25-50 mg/gün veya Propranolol 10 mg 4-6 saatte bir. Kalp hızı hedefi oturur pozisyonda 60-70 bpm, ayakta 70-80 bpm (Endocrine Society 2014)."
+    },
+    {
+      "tip": "temd",
+      "konu": "β-blokaj ve ek ilaçlar",
+      "kaynak": "TEMD Adrenal ve Gonadal Hastalıklar Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Taşikardi/aritmide β-bloker yeterli α-blokajı takip eden **2–3. günlerde** başlanır; öncesinde başlanması hipertansif krizi tetikleyebilir, yapılmamalıdır. Labetalol ve karvedilol de yeterli α-blokaj olmadan verilmemelidir.",
+          "sayfa": "59"
+        },
+        {
+          "metin": "Başlangıç dozları: **propranolol 20 mg/12 saat**, metoprolol 25 mg/12 saat, atenolol 25 mg/gün.",
+          "sayfa": "59"
+        },
+        {
+          "metin": "İkinci basamakta **amlodipin** 5→10 mg/gün veya **nifedipin** 30→60 mg/12 saat; yeterli α ve β blokaj sağlanamazsa **α-metil tirozin** 250 mg/12 saat başlanır (sedasyon, ekstrapiramidal belirtiler, depresyon yapabilir). Kontrol edilemeyen hipertansiyonda ACE inhibitörü/ARB eklenebilir.",
+          "sayfa": "59–60"
+        }
+      ]
     },
     {
       "tip": "metin",
@@ -189,11 +400,41 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Cerrahi ve intraoperatif yönetim",
+      "kaynak": "TEMD Adrenal ve Gonadal Hastalıklar Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "İntraoperatif hipertansif krizde **fentolamin 2,5–5 mg IV bolus**, 3–5 dakikada bir tekrarlanır; infüzyon olarak da verilebilir. Diğer seçenekler: nikardipin, klevidipin, **sodyum nitroprussid 0,5–1,5 mcg/kg/dk**, magnezyum sülfat.",
+          "sayfa": "60"
+        },
+        {
+          "metin": "Çoğu vakada **laparoskopik adrenalektomi** önerilir; özellikle **6 cm üzeri invaziv** tümörlerde açık cerrahi tercih edilir. Bilateral feokromositomada **korteks koruyucu** cerrahi tercih edilir.",
+          "sayfa": "57"
+        }
+      ]
+    },
+    {
       "tip": "metin",
       "baslik": "Postoperatif Kritik Komplikasyonlar (İlk 24-48 Saat)",
       "satirlar": [
         "Dirençli Hipotansiyon: Tümör çıkarıldıktan sonra katekolamin vazokonstriksiyonunun aniden ortadan kalkması ve vücutta kalan alfa-blokörlerin uzun yarı ömrüne bağlı olarak gelişir. Öncelikli tedavi hızlı sıvı resüsitasyonudur (kristalloid/kolloid); dirençli vakalarda geçici vazopressörler kullanılabilir. Bilateral sürrenalektomi yapılanlarda akut sürrenal yetmezlik ekarte edilmeli ve hemen steroid başlanmalıdır.",
         "Kalıcı Hipertansiyon: Cerrahi sonrası hastaların bir kısmında tansiyon hemen normale dönmeyebilir. Bu durum baroreseptörlerin yeniden ayarlanmasına, damar duvarındaki yapısal değişikliklere, esansiyel hipertansiyona veya cerrahiye bağlı gelişen renal hasara bağlı olabileceği gibi rezidüel tümör varlığı veya metastatik hastalık açısından da uyarıcı olmalıdır."
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Postoperatif dönem",
+      "kaynak": "TEMD Adrenal ve Gonadal Hastalıklar Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Preoperatif başlanıp intra- ve postoperatif sürdürülen **%0,9 NaCl** ile hidrasyon yapılmalıdır; postoperatif sıvı ihtiyacı artmıştır, hipovolemi ve hipotansiyon açısından yakın izlem gerekir.",
+          "sayfa": "60"
+        },
+        {
+          "metin": "Postoperatif nadir de olsa geçici hipoglisemi riski nedeniyle kan şekeri takip edilmelidir. Bazı hastalarda hipertansiyon **4–8 hafta** sürebilir ya da kalıcı olabilir.",
+          "sayfa": "60"
+        }
       ]
     },
     {
@@ -207,6 +448,33 @@
       "tur": "pratik",
       "baslik": "Uzun Dönem Takip Protokolü",
       "metin": "Ameliyattan 2 ila 6 hafta sonra plazma veya idrar metanefrin düzeyleri ölçülerek cerrahi kür doğrulanmalıdır (operatif adrenerjik dalgalanmaların geçmesi için test en az 5-7 gün geciktirilmelidir). Benign tümörlerde dahi nüks ve metastaz riski ilk cerrahiden onlarca yıl sonra ortaya çıkabileceğinden, tüm hastalara yıllık biyokimyasal tarama ile en az 10 yıl, ideal olarak ömür boyu izlem önerilmektedir."
+    },
+    {
+      "tip": "temd",
+      "konu": "İzlem ve metastatik hastalık",
+      "kaynak": "TEMD Adrenal ve Gonadal Hastalıklar Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Postoperatif **3–8. haftalar** arasında metanefrinler ölçülür; **6. ay ve 1. yılda** tekrarlanır. Takip bütün hastalarda **ömür boyu** olmalıdır, biyokimyasal testler yıllık tekrarlanır.",
+          "sayfa": "61–62"
+        },
+        {
+          "metin": "Preoperatif metanefrinleri normal ama **CgA yüksek** olan hastada postoperatif takipte CgA ölçümü önerilir.",
+          "sayfa": "62"
+        },
+        {
+          "metin": "**SDHx** taşıyıcılarında yıllık biyokimya normal olsa bile **2–3 yılda bir görüntüleme** şarttır (ön planda MRG, gerekirse 68Ga-DOTA PET/BT).",
+          "sayfa": "56"
+        },
+        {
+          "metin": "Metastaz risk faktörleri: feokromositoma **>5 cm**, paraganglioma **>4 cm**, yüksek Ki-67, damar invazyonu, ekstra-adrenal yerleşim, SDHB, genç yaş, postoperatif sürekli yüksek katekolamin. Malignite tanısı yalnızca **metastaz varlığıyla** konur (PASS/GAPP yetersiz).",
+          "sayfa": "60–61"
+        },
+        {
+          "metin": "Metastatik FPGL'de ilk yıl **3–6 ayda bir** biyokimya ve görüntüleme; hastalık stabilse aralık 6–12 aya uzatılabilir. Sistemik/ablatif tedavi öncesi alfa bloker planlanmalıdır.",
+          "sayfa": "61–62"
+        }
+      ]
     }
   ]
 }

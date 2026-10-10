@@ -51,6 +51,42 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Akromegali: tanı ve hedef eşikleri",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "**Random GH ölçümü tanıda anlamlı değildir**; ilk basamak yaşa ve cinsiyete göre değerlendirilen **IGF-1**'dir. Normal bir IGF-1 düzeyi ile akromegali dışlanabilir.",
+          "sayfa": "15"
+        },
+        {
+          "metin": "OGTT: **75 g** glukoz sonrası glukoz ve GH **0., 30., 60., 90. ve 120. dakikalarda** ölçülür; GH **<0,4 μg/L** ise akromegali dışlanır. Antidiyabetik ve/veya SRL tedavisi sonucu etkiler.",
+          "sayfa": "15"
+        },
+        {
+          "metin": "Diyabetli akromegalide OGTT ile GH yanıtına bakmak uygun değildir; **yüksek kan şekeriyle eş zamanlı GH** tanı için değerlidir. Puberte, gebelik, karaciğer/böbrek hastalığı ve anoreksiya nervozada da GH baskılanmaz; **IGFBP-3'ün tanısal değeri yoktur**.",
+          "sayfa": "15"
+        },
+        {
+          "metin": "Tedavi hedefi: **açlık GH <1 μg/L** ve IGF-1'in yaş/cinse göre normalin üst sınırının **en fazla 1,2–1,3 katı**; ölçümler takip boyunca aynı yöntem ve kitle yapılmalı.",
+          "sayfa": "15–16"
+        },
+        {
+          "metin": "Postoperatif GH **<0,4 μg/L \"cerrahi remisyon\"**, **<1 μg/L \"kontrol\"** olarak kabul edilir. Değerlendirme için en uygun zaman **3. ay**dır; IGF-1'in stabilleşmesi **12. aya** kadar sürebilir.",
+          "sayfa": "16"
+        },
+        {
+          "metin": "SRL etkinliği 3–6 aylık tedaviden sonra, bir sonraki enjeksiyondan hemen önce GH ve IGF-1 ile değerlendirilir; **tedavi sırasında OGTT ile GH supresyonu önerilmez**. Pegvisomantta etkinlik **IGF-1** ile izlenir.",
+          "sayfa": "17–18"
+        },
+        {
+          "metin": "Ülkemizde akromegali tedavisinde **pasireotid için kullanım ruhsatı henüz yoktur**.",
+          "sayfa": "17",
+          "fark": true
+        }
+      ]
+    },
+    {
       "tip": "metin",
       "baslik": "B. Cushing Hastalığı (Kortikotrop PitNET) ve Ektopik ACTH Ayrımı",
       "satirlar": [
@@ -84,6 +120,45 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Cushing: tarama ve ayırıcı tanı eşikleri",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "**1 mg DST**: deksametazon 23.00–24.00'te, kortizol ertesi sabah 08.00–09.00'da; normal **<1,8 µg/dL (50 nmol/L)**. Adrenal insidentalomada **>5 µg/dL** aşikar CS'yi gösterebilir.",
+          "sayfa": "25"
+        },
+        {
+          "metin": "**Gece tükürük kortizolü >4 nmol/L** (ELISA, LC-MS) CS tanısını %92–100 duyarlılık ve %93–100 özgüllükle koydurur; en az iki ölçüm önerilir, vardiyalı çalışanlarda uygun değildir. **UFC** en az 2–3 kez, idrar kreatininiyle; **GFR <60 ml/dk**'da yalancı negatif olabilir.",
+          "sayfa": "25–26"
+        },
+        {
+          "metin": "Oral kontraseptif kullananda plazma kortizolü ancak ilaç **en az 6 hafta** önce kesilirse sağlıklı sonuç verir. Gece yarısı serum kortizolü (uyanık) **>7,5 µg/dL**, uyku kortizolü **>1,8 µg/dL** CS lehinedir.",
+          "sayfa": "24, 26"
+        },
+        {
+          "metin": "Sabah **ACTH <5 pg/mL** ACTH-bağımsız, **>20 pg/mL** ACTH-bağımlı CS; **5–20 pg/mL** arası ek test gerektirebilir. Örnek buzda taşınmalı.",
+          "sayfa": "27"
+        },
+        {
+          "metin": "Hipofiz MR'da **>9 mm** tümör CH lehine düşünülür (bazı uzmanlar **>6 mm**'yi yeterli sayar). IPSS **<6 mm**'de gereklidir, **>9 mm**'de gerek kalmaz; 6–9 mm'de fikir birliği yoktur.",
+          "sayfa": "27"
+        },
+        {
+          "metin": "IPSS: CRH (100 µg i.v.) öncesi santral/periferik ACTH **>2**, sonrası **>3** CH için tanı koydurucudur; adenom görülmüyorsa santral sağ/sol oranı **>1,4** ile lateralizasyon (%70). Doğruluğu artırmak için eş zamanlı **PRL** çalışılabilir; CS'deki hiperkoagülopati nedeniyle işlemin heparinle yapılması önerilir.",
+          "sayfa": "27"
+        },
+        {
+          "metin": "CRH testinde CH'de bazale göre **ACTH'de >%30–50, kortizolde >%20** artış beklenir. Desmopressin (10 µg i.v.) testinde ACTH'de **>6 pmol/L** artış CH lehinedir. Yüksek doz DST'de kortizolün bazalin **%50'sinin altına** inmesi hipofizer kaynağa işaret eder.",
+          "sayfa": "27–28"
+        },
+        {
+          "metin": "Cerrahi sonrası **ilk haftada kortizol <2 µg/dL (55 nmol/L)** remisyon için en çok kabul gören ölçüttür.",
+          "sayfa": "30"
+        }
+      ]
+    },
+    {
       "tip": "metin",
       "baslik": "C. Prolaktinoma ve Hiperprolaktinemi Tablosu",
       "satirlar": [
@@ -92,6 +167,33 @@
         },
         {
           "metin": "**Sap Etkisi (Stalk Disconnection):** Non-fonksiyonel sellar kitlelerin dopaminerjik iletimi engellemesine bağlı gelişir; prolaktin seviyeleri **genellikle < 150–200 ng/mL** düzeyindedir."
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Hiperprolaktinemi: ölçüm tuzakları",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "Hiperprolaktinemi: PRL **erkekte >20, kadında >25 ng/mL**. Stres yoksa tek ölçüm genellikle yeterlidir; dinamik testlerin tanıda yeri yoktur.",
+          "sayfa": "1, 4"
+        },
+        {
+          "metin": "Makroprolaktinemi **PEG ile çöktürme** ile bakılır: azalma **<%40 yok, %40–60 gri zon, >%60 var**. Asemptomatik hastada makroprolaktinemi saptanırsa ileri tetkike gerek kalmaz.",
+          "sayfa": "3"
+        },
+        {
+          "metin": "Hiperprolaktinemi yapan ilaçlar **en az 3 gün** kesildikten sonra PRL ölçümü tekrarlanmalıdır.",
+          "sayfa": "10"
+        },
+        {
+          "metin": "Makroadenomda PRL kitleyle uyumlu değilse: nonfonksiyone adenomun **sap basısı** ya da **kanca etkisi** düşünülür; serum **1/100 dilüe** edilerek ölçüm tekrarlanır.",
+          "sayfa": "5, 10"
+        },
+        {
+          "metin": "Çapı **>4 cm** olan dev prolaktinomalarda PRL genellikle **>1000 ng/mL**'dir; tümör boyutu ile PRL paralel değilse kanca etkisi mutlaka araştırılmalıdır.",
+          "sayfa": "9"
         }
       ]
     },
@@ -128,6 +230,43 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Santral adrenal yetmezlik: TEMD eşikleri",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "Sabah 08.00–09.00 bazal kortizol **≥15 μg/dL** HPA aksı normal, **<3 μg/dL** büyük olasılıkla adrenal yetmezlik (özgüllük %99,7); **3–15 μg/dL** arasında stimülasyon testi önerilir.",
+          "sayfa": "93"
+        },
+        {
+          "metin": "Dinamik testten **en az 18–24 saat önce hidrokortizon kesilmelidir**; uzun yarı ömürlü sentetik steroidlerde daha uzun süre gerekebilir.",
+          "sayfa": "93"
+        },
+        {
+          "metin": "**İTT**: 0,1–0,15 U/kg i.v. regüler insülin; semptomatik hipoglisemi anı 0. dakika sayılır, 45 dakikada gelişmezse doz tekrarlanabilir. Pik kortizol **≥18 μg/dL (500 nmol/L)** normaldir. Kardiyovasküler, serebrovasküler hastalık ve epilepside **kontrendike**.",
+          "sayfa": "94"
+        },
+        {
+          "metin": "Standart **250 μg** ACTH testinde (TEMD **i.v.** uygulamayı öneriyor) pik **≥18 μg/dL** normaldir. ACTH eksikliğinin **ilk 4 haftasında** adrenal atrofi gelişmediğinden yanıt yanlışlıkla normal çıkabilir.",
+          "sayfa": "94"
+        },
+        {
+          "metin": "**1 μg** ACTH testi hafif santral yetmezlikte daha duyarlıdır. Ülkemiz çalışmalarında **12,5** ve **14,5 μg/dL** eşikleri incelenmiştir; ancak hem uluslararası kılavuzlar hem TEMD özeti **≥18 μg/dL**'yi normal yanıt kabul eder.",
+          "sayfa": "95, 100",
+          "fark": true
+        },
+        {
+          "metin": "**Glukagon testi (GST)**: 1 mg i.m. (>90 kg'da 1,5 mg), 240. dakikaya kadar örnek. 18 μg/dL eşiğinde özgüllük düşüktür; ülkemiz çalışmalarında **9,1 μg/dL** eşiği tanısal gücü artırmıştır, pik kortizol **9–10 μg/dL ve üzeri** normal kabul edilir.",
+          "sayfa": "95",
+          "fark": true
+        },
+        {
+          "metin": "**CRH ve metirapon** testleri ACTH eksikliğinde sınırlılıkları nedeniyle TEMD kılavuzunda **önerilmemiştir**.",
+          "sayfa": "93"
+        }
+      ]
+    },
+    {
       "tip": "metin",
       "baslik": "B. Erişkin Büyüme Hormonu Eksikliği (aGHD)",
       "satirlar": [
@@ -140,10 +279,67 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Erişkin GH eksikliği: test seçimi ve kesim değerleri",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "Yaşa göre normal IGF-1 GH eksikliğini **ekarte ettirmez**; tanı dinamik testle konur. GH dışında **≥3 hipofiz hormon eksikliği** ve **IGF-1 ≤95 ng/mL** olan erişkinde GH eksikliği olasılığı **%95'in üzerindedir** (ülkemiz ve ABD verisi).",
+          "sayfa": "96",
+          "fark": true
+        },
+        {
+          "metin": "Organik lezyon, travmatik beyin hasarı ya da başka hormon eksikliği olanda **bir** stimülasyon testi yeterli; izole/idiyopatik GH eksikliğinde **iki test** gerekir. Testten önce diğer eksik hormonlar tedavi edilmiş olmalı.",
+          "sayfa": "96"
+        },
+        {
+          "metin": "**İTT**'de pik GH **<3 µg/L** erişkinde ağır GH eksikliğini gösterir.",
+          "sayfa": "97"
+        },
+        {
+          "metin": "GHRH+arginin eşikleri VKİ'ye göre: **<25 kg/m²: 11 µg/L · 25–30: 8 µg/L · >30: 4 µg/L**; ancak GHRH ülkemizde bulunmadığından kullanımı azalmıştır. Klonidin ve levodopa testleri erişkinde önerilmez.",
+          "sayfa": "96–97",
+          "fark": true
+        },
+        {
+          "metin": "**GST**: AACE'ye göre VKİ **<25'te 3 µg/L**, **≥25'te 1 µg/L**; TEMD sonucu olarak GST sonrası pik GH **≥1 µg/L** normal yanıt kabul edilir.",
+          "sayfa": "98"
+        },
+        {
+          "metin": "Ülkemiz şartlarında TEMD, GH replasmanını **sıkı kriterlerle ağır GH eksikliği tanısı konan genç erişkin veya orta yaş** hastalara önerir. Başlangıç 30–60 yaşta **0,2–0,3 mg/gün**, <30 yaşta **0,4–0,5 mg/gün**; 1 yılda fayda yoksa kesilmesi önerilir.",
+          "sayfa": "99–100",
+          "fark": true
+        }
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "baslik": "Hormon Replasman Sıralaması — Hayati Kural",
       "metin": "Sekonder adrenal yetmezlik ve sekonder hipotiroidizm birlikte bulunduğunda, **Glukokortikoid tedavisi HER ZAMAN Levotiroksin tedavisinden en az 24–48 saat ÖNCE başlanmalıdır**. Levotiroksinin tek başına verilmesi kortizol klirensini hızlandırarak hastayı **akut adrenal krize** sokar. Santral hipotiroidizm takibinde **TSH DÜZEYİ KULLANILMAZ**; doz titrasyonu serum **Serbest T4 (fT4)** seviyesine göre yapılır."
+    },
+    {
+      "tip": "temd",
+      "konu": "Replasman",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "ACTH eksikliğiyle birlikte TSH ve/veya GH eksikliği olanda adrenal kriz gelişmemesi için **önce glukokortikoid** replasmanı verilmelidir. Sekonder adrenal yetmezlikte **fludrokortizon gerekli değildir**.",
+          "sayfa": "99"
+        },
+        {
+          "metin": "Hidrokortizon **15–20 mg/gün** (2 veya 3 doz; ör. 10–5–5 mg). Güvenilir izlem belirteci yoktur; doz klinik bulgulara göre ayarlanır, hasta **yılda en az iki kez** kontrol edilir.",
+          "sayfa": "98–99"
+        },
+        {
+          "metin": "Santral hipotiroidide L-T4 ortalama **1,6 µg/kg/gün** (genellikle 75–150 µg); TSH izlemde kullanılamaz, **sT4 referans aralığın üst yarısında** olacak şekilde ayarlanır.",
+          "sayfa": "99"
+        },
+        {
+          "metin": "ACTH eksikliği olan hasta tanıtıcı kimlik/kolye/künye taşımalı ve stres dozunu artırma konusunda eğitilmelidir.",
+          "sayfa": "98"
+        }
+      ]
     },
     {
       "tip": "metin",
@@ -191,6 +387,37 @@
             "Ektopik PIT1 ekspresyonuna bağlı sitotoksik yanıt; kazanılmış **izole GH, PRL ve TSH eksikliği triadı**.",
             "Yoktur (Gonadotrop ve Kortikotrop korunur)."
           ]
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Hipofizit",
+      "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
+      "maddeler": [
+        {
+          "metin": "Lenfositik, immünoterapi ilişkili ve inflamatuar hipofizitte ilk bulgu **ACTH eksikliği**dir (ardından FSH/LH, TSH); adenomda ise ilk eksilen **GH**, ACTH genellikle en son etkilenir.",
+          "sayfa": "76"
+        },
+        {
+          "metin": "IgG4 ilişkili hipofizit: serum **IgG4 >140 mg/dL** tanıyı destekler (vakaların %15–25'inde normal olabilir); doku ölçütü **>10 IgG4-pozitif hücre/HPF**. Tedavi genellikle **30–40 mg/gün prednizon** 1–2 ay.",
+          "sayfa": "80–81"
+        },
+        {
+          "metin": "Anti-CTLA-4 hipofizit sıklığı ortalama **%4,5** (%0,6–17), anti-PD-1 ile **%0,6**; risk faktörleri erkek cinsiyet, ileri yaş, yüksek doz. Dİ **atipiktir**, varsa pitüiter metastazı düşündürür; sekonder adrenal yetmezlik genellikle **kalıcıdır**.",
+          "sayfa": "81"
+        },
+        {
+          "metin": "İmmünoterapi öncesi ve başladıktan **8. ve 16. haftada** hormon profiliyle tarama önerilir; yan etkiler kesilmeden **6–15 ay** sonra da çıkabilir.",
+          "sayfa": "81–82"
+        },
+        {
+          "metin": "Primer hipofizitte görme alanı bozukluğu, kraniyal sinir tutulumu ve dirençli baş ağrısında birinci basamak glukokortikoid; genellikle **1 mg/kg/gün prednizolon**, 6–8 haftada kesilir.",
+          "sayfa": "77"
+        },
+        {
+          "metin": "Anti-PIT-1 hipofizit (en çok timoma, lenfoma) **GH, PRL ve TSH** yetersizliği yapar; hipopitüitarizm geri dönmez.",
+          "sayfa": "82–83"
         }
       ]
     },
