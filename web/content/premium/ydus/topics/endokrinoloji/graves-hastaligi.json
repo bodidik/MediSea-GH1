@@ -214,6 +214,29 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Tanı",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "İlk istenecek testler **TSH ve sT4**; klinik tirotoksikozu düşündürüyorsa sT3 de ilk vizitte istenmelidir.",
+          "sayfa": "101"
+        },
+        {
+          "metin": "Yüksek doz **biotin** kullanan hastada ilaç ölçümden **48 saat önce** kesilmelidir — sonuçlar hipertiroidiyle karışabilir.",
+          "sayfa": "101"
+        },
+        {
+          "metin": "Tipik klinik ve US bulguları (diffüz büyüme, hipoekoik parankim, artmış kanlanma), özellikle göz bulgusu da varsa **RAIU'ya gerek olmadan** Graves tanısı konabilir; ayırıcı tanıda kuşku varsa sintigrafi veya RAIU ölçülmelidir.",
+          "sayfa": "102, 113"
+        },
+        {
+          "metin": "**TRAb** Graves için spesifik biyobelirteçtir: ayırıcı tanının yanı sıra ilaç kesimi sonrası relaps riskini ve gebelikte fetal/neonatal tirotoksikozu öngörmede yararlıdır.",
+          "sayfa": "102"
+        }
+      ]
+    },
+    {
       "tip": "metin",
       "baslik": "Graves Orbitopatisi (GO) — Patogenez",
       "satirlar": [
@@ -312,6 +335,27 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Orbitopatide aktivite ve şiddet",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "KAS 7 maddedir, **≥3/7 aktif hastalık**. Takipte progresyon için 3 ölçüt eklenir (son 1–3 ayda egzoftalmusta ≥2 mm artış, motilitede ≥8° azalma, görme keskinliğinde azalma) → 10 maddelik KAS.",
+          "sayfa": "122"
+        },
+        {
+          "metin": "TEMD şiddet değerlendirmesinde **EUGOGO ölçütlerini** önerir; NOSPECT, VISA ve Total Göz Skoru valide edilmemiştir. Sınıflama: hafif · orta-ciddi · görmeyi tehdit eden; değerlendirmeye **GO-yaşam kalitesi anketi** dahil edilmelidir.",
+          "kanit": "orta",
+          "sayfa": "123–124"
+        },
+        {
+          "metin": "Egzoftalmus eşiği için Türkiye verisi: büyük bir çalışmada medyan Hertel **13 mm**, toplumun %95 üst sınırı **17 mm** (cinsiyet ayrımı yapılmamış).",
+          "sayfa": "124",
+          "fark": true
+        }
+      ]
+    },
+    {
       "tip": "tablo",
       "baslik": "GO Tedavi Algoritması (EUGOGO)",
       "kolonlar": [
@@ -351,6 +395,46 @@
             "Yüksek doz IVMP 1 g/gün × 3 (ardışık günler)",
             "2 haftada yanıt yoksa: Acil orbital dekompresyon cerrahisi. Rehabilitatif cerrahi (dekompresyon → şaşılık → kapak) INAKTİF fazda (≥6 ay)"
           ]
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Orbitopati tedavisi",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Yeni başlayan **hafif ve aktif** GO'ya **6 ay selenyum** (100 µg günde iki kez) önerilir; selenyum eksikliği olmayan bölgelerdeki etkisi bilinmemektedir.",
+          "kanit": "orta",
+          "sayfa": "127"
+        },
+        {
+          "metin": "Orta-ciddi aktif GO'da standart protokol: **6 hafta haftada 500 mg + 6 hafta haftada 250 mg IV metilprednizolon** (kümülatif 4,5 g). Daha ciddi olgularda 750 mg → 500 mg (kümülatif 7,5 g).",
+          "kanit": "yüksek / orta",
+          "sayfa": "128"
+        },
+        {
+          "metin": "Kümülatif metilprednizolon **kür başına 8 g'ı geçmemeli** (akut hepatik yetmezlik). İlk basamakta **oral steroid önerilmez**.",
+          "sayfa": "128–129"
+        },
+        {
+          "metin": "EUGOGO 2021 IV MP + **mikofenolatı** birinci basamak sayar. TEMD'e göre ise ilacın ülkemizde GO endikasyonu onaylı değildir ve maliyeti yüksektir; bu yüzden **aktivitesi ve şiddeti yüksek hastalarda** düşünülmesi daha makuldür.",
+          "sayfa": "129",
+          "fark": true
+        },
+        {
+          "metin": "**Teprotumumab** ATA-ETA 2022'de birinci, EUGOGO 2021'de ikinci basamaktır. TEMD'e göre yalnız ABD'de onaylı, pahalı ve IV steroidle karşılaştırmalı çalışması yok; bu nedenle ilk basamak için **erken**. Gebelikte kontrendikedir.",
+          "sayfa": "129–130",
+          "fark": true
+        },
+        {
+          "metin": "**DON:** IV metilprednizolon 500 mg–1 g, üç gün art arda ya da tercihen gün aşırı. **1–2 haftada** yanıt yoksa veya yetersizse acil cerrahi dekompresyon yapılmalıdır.",
+          "kanit": "orta",
+          "sayfa": "131"
+        },
+        {
+          "metin": "Rekonstrüktif cerrahi için hastalık en az **6 aydır inaktif** olmalıdır. Sıra: orbital dekompresyon → şaşılık → kapak cerrahisi.",
+          "sayfa": "130"
         }
       ]
     },
@@ -413,9 +497,66 @@
       ]
     },
     {
+      "tip": "temd",
+      "konu": "Antitiroid tedavi",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Nüks açısından kötü prognostik faktör olsa bile **öncelikle tıbbi tedavi** önerilir; karar kâr/zarar ortaya konarak hastayla birlikte bireyselleştirilir.",
+          "sayfa": "113"
+        },
+        {
+          "metin": "MMI başlangıç dozu sT4 yüksekliğine göre belirlenir: **1–1,5 kat → 5–10 mg · 1,5–2 kat → 10–20 mg · 2–3 kat → 30–40 mg**. Kontrol 2–6 haftada sT4 + total T3 ile yapılır; erken dönemde **TSH takipte kullanılmaz**.",
+          "sayfa": "104"
+        },
+        {
+          "metin": "Mutlak nötrofil **<1000/mm³** ya da transaminazlar **>5 kat** ise antitiroid başlanmaz. Takipte transaminaz >3 kata çıkarsa kesilmesi gündeme gelir.",
+          "sayfa": "105"
+        },
+        {
+          "metin": "Optimal süre **12–18 ay**; 6 ayda kesilirse nüks riski yüksektir. Kesmeden önce **TRAb** bakılır; TRAb negatifse ve kür tamamlandıysa ilaç kesilir.",
+          "sayfa": "104"
+        },
+        {
+          "metin": "Kür sonunda hâlâ hipertiroid olan nispeten genç, stabil ve düşük doz MMI alan hastada **uzun dönem antitiroid** kalıcı tedaviye alternatiftir. İkinci kür önerilebilir ama remisyon oranı düşüktür.",
+          "sayfa": "104, 113"
+        },
+        {
+          "metin": "Hayatı tehdit eden yan etkide ilaç kesilir ve çapraz reaksiyon nedeniyle **diğer antitiroid de kullanılmaz**. Kalıcı tedaviye kadar ötiroidizm için **plazmaferez** kullanılabilir.",
+          "sayfa": "105, 113"
+        }
+      ]
+    },
+    {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "metin": "RAI + GO Tuzağı: RAI tedavisi TRAb titrelerini dramatik artırarak GO'yu alevlendirebilir. Hafif aktif GO veya yüksek risk (sigara, yüksek TRAb) varsa RAI planlanıyorsa 1–3 aylık düşük doz oral prednizon profilaksisi mutlak uygulanmalıdır."
+    },
+    {
+      "tip": "temd",
+      "konu": "Orbitopatisi olan hastada hipertiroidi tedavisi",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Hafif ve aktif GO'da ATİ veya tiroidektomi tercih edilir; RAI seçilirse **steroid profilaksisiyle** verilir.",
+          "kanit": "orta",
+          "sayfa": "125"
+        },
+        {
+          "metin": "**Orta-ciddi aktif** ya da **görmeyi tehdit eden** GO'da hipertiroidi, GO tedavisi bitene kadar **ATİ ile** tedavi edilir.",
+          "kanit": "orta",
+          "sayfa": "125"
+        },
+        {
+          "metin": "Profilaksi dozu: yüksek riskte RAI'den **1–3 gün sonra** prednizolon **0,3–0,5 mg/kg/gün** başlanır ve 3 ayda azaltılarak kesilir. Düşük riskte **0,1–0,2 mg/kg** başlanır, 6 haftada kesilir.",
+          "kanit": "yüksek",
+          "sayfa": "126"
+        },
+        {
+          "metin": "Profilaksi her hastaya mutlak değildir: GO'su **hafif-inaktif** olan, en az **6 aydır stabil** seyreden ve risk faktörü (ör. sigara) taşımayan hasta, RAI sonrası hipotiroididen kaçınılırsa **steroidsiz** RAI alabilir.",
+          "sayfa": "126"
+        }
+      ]
     },
     {
       "tip": "tablo",
@@ -448,6 +589,29 @@
             "TRAb plasentayı geçer → fetal/neonatal hipertiroidizm. Fetal kalp hızı + fetal guatr USG ile izle",
             "Hedef: Anne sT4'ünü gebelik referansının üst sınırında tut → fetal hipotiroididen kaçın"
           ]
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Gebelik",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Tedavi gerekiyorsa ilk trimesterde **PTU**, annede karaciğer yetmezliği riskini azaltmak için **16. haftadan sonra MMI** önerilir. MMI'dan PTU'ya geçişte doz oranı yaklaşık 1:20'dir.",
+          "sayfa": "316"
+        },
+        {
+          "metin": "Hedef, maternal sT4'ü trimestere özgü aralığın **üst sınırında ya da hemen üzerinde** tutmaktır; mümkün olan en düşük doz kullanılır.",
+          "sayfa": "316"
+        },
+        {
+          "metin": "TRAb'nin plasentadan geçişine bağlı fetal hipertiroidi tipik olarak **18–20. haftada veya sonrasında** gelişir. 3. trimesterde hastaların **%20–30'unda** ATİ kesilebilir.",
+          "sayfa": "316–317"
+        },
+        {
+          "metin": "Cerrahi gerekiyorsa en uygun zaman **2. trimesterdir**; ancak erken doğum riski her koşulda artar (%4,5–5,5).",
+          "sayfa": "107"
         }
       ]
     },
@@ -504,6 +668,30 @@
             "Dirençli olgularda",
             "Hızla hormon düzeylerini düşürür; kesin çözüm değil"
           ]
+        }
+      ]
+    },
+    {
+      "tip": "temd",
+      "konu": "Tiroid fırtınası",
+      "kaynak": "TEMD Tiroid Hastalıkları Tanı ve Tedavi Kılavuzu 2025",
+      "maddeler": [
+        {
+          "metin": "Tionamidlerden **PTU tercih edilir**: ilk 24 saatte T3'ü yaklaşık **%45** düşürür, MMI ise %10–15. Doz: PTU 600–1500 mg/gün ya da MMI 80–120 mg/gün, 4–6 saatte bir.",
+          "sayfa": "111"
+        },
+        {
+          "metin": "İnorganik iyot, tionamidden **en az 30 dakika sonra** verilir (SSKI 6 saatte bir 5 damla ya da Lugol 6 saatte bir 8 damla). Kesin tedavi RAI olacaksa iyot etkinliği azaltır; hedef cerrahiyse tercih edilmelidir.",
+          "sayfa": "111"
+        },
+        {
+          "metin": "IV propranolol **Türkiye'de ticari olarak bulunmuyor**: esmolol 0,25–0,5 mg/kg bolus, ardından 0,05–0,1 mg/kg/dk infüzyon.",
+          "sayfa": "112",
+          "fark": true
+        },
+        {
+          "metin": "Ateş için asetaminofen kullanılır; **salisilat** serbest hormonu artırır. Glukokortikoid **stres dozunda** verilir. Mortalite %8–25'tir.",
+          "sayfa": "111–112"
         }
       ]
     },

@@ -57,7 +57,18 @@ export type IcerikBlok =
    * veri bir alan beyan ediyor, render onu yok sayıyor ve hiçbir kapı görmüyor
    * — üstelik tip tanımı alanı hiç bilmediği için `tsc` de sessiz kalıyordu.
    */
-  | { tip: 'bilgi_kutusu'; tur: 'ek_bilgi' | 'uyari' | 'pratik'; baslik?: string; metin: string };
+  | { tip: 'bilgi_kutusu'; tur: 'ek_bilgi' | 'uyari' | 'pratik'; baslik?: string; metin: string }
+  /**
+   * "TEMD ne diyor?" — ilgili bölümün hemen ardına konan ulusal kılavuz özeti.
+   * `baslik` alanı BİLEREK yok, onun yerine `konu` var: `bolumBasliklari`
+   * yalnız `baslik` okuyor, yani kutular İçindekiler'e girmiyor. Her bölümün
+   * yanında bir "TEMD" satırı listeyi ikiye katlardı.
+   * `sayfa` kılavuzun BASILI sayfa numarası; `fark` uluslararası kılavuzdan
+   * ayrılan ya da Türkiye koşullarına özgü (onay, bulunabilirlik, yerel norm) maddeyi işaretler.
+   */
+  | { tip: 'temd'; konu?: string; kaynak: string; maddeler: TemdMadde[] };
+
+export type TemdMadde = { metin: string; sayfa?: string; kanit?: string; fark?: boolean };
 
 const KUTU_STILLLERI = {
   ek_bilgi: {
@@ -295,6 +306,81 @@ function BilgiKutusu({ blok, id }: { blok: Extract<IcerikBlok, { tip: 'bilgi_kut
   );
 }
 
+/* Renkler bilgi kutularının mavi/sarı/yeşil ailesinden BİLEREK ayrı: kılavuz
+   sesi gövde metninden ve "Uyarı"/"Pratik not"tan bir bakışta ayrılsın.
+   Metin renkleri #fdf7f4 zeminde: #7f1d1d 9.9 · #1a2a3a 14.2 · #6b4a3a 7.6 */
+const TEMD = {
+  arka: '#fdf7f4',
+  kenar: '#e8c4b4',
+  vurgu: '#7f1d1d',
+  ikincil: '#6b4a3a',
+};
+
+const ROZET: React.CSSProperties = {
+  fontSize: '11px',
+  fontWeight: 600,
+  borderRadius: '4px',
+  padding: '1px 6px',
+  whiteSpace: 'nowrap',
+};
+
+function TemdKutusu({ blok }: { blok: Extract<IcerikBlok, { tip: 'temd' }> }) {
+  return (
+    <aside
+      aria-label={`TEMD ne diyor${blok.konu ? `: ${blok.konu}` : ''}`}
+      style={{
+        background: TEMD.arka,
+        border: `1px solid ${TEMD.kenar}`,
+        borderLeft: `5px solid ${TEMD.vurgu}`,
+        borderRadius: '0 10px 10px 0',
+        padding: '0.85rem 1rem 0.75rem',
+        margin: '0.25rem 0 1.5rem',
+        maxWidth: '36rem',
+      }}
+    >
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', marginBottom: '0.55rem' }}>
+        <span style={{
+          background: TEMD.vurgu,
+          color: '#fff',
+          fontSize: '11px',
+          fontWeight: 800,
+          letterSpacing: '0.12em',
+          padding: '3px 8px',
+          borderRadius: '4px',
+        }}>
+          TEMD
+        </span>
+        <span style={{ fontSize: '15px', fontWeight: 700, color: TEMD.vurgu }}>
+          ne diyor?{blok.konu ? ` — ${blok.konu}` : ''}
+        </span>
+      </div>
+      <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+        {blok.maddeler.map((m, i) => (
+          <li key={i} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
+            <span aria-hidden="true" style={{ color: TEMD.vurgu, fontWeight: 800, lineHeight: 1.6 }}>§</span>
+            <p style={{ fontSize: '15px', lineHeight: 1.6, margin: 0, color: '#1a2a3a' }}>
+              {m.fark && (
+                <span style={{ ...ROZET, background: TEMD.vurgu, color: '#fff', marginRight: '6px' }}>
+                  Türkiye farkı
+                </span>
+              )}
+              {kalinIsle(m.metin)}
+              {(m.kanit || m.sayfa) && (
+                <span style={{ fontSize: '12px', color: TEMD.ikincil, whiteSpace: 'nowrap' }}>
+                  {' (' + [m.kanit ? `${m.kanit} kanıt` : '', m.sayfa ? `s. ${m.sayfa}` : ''].filter(Boolean).join(' · ') + ')'}
+                </span>
+              )}
+            </p>
+          </li>
+        ))}
+      </ul>
+      <div style={{ fontSize: '12px', color: TEMD.ikincil, marginTop: '0.6rem', paddingTop: '0.4rem', borderTop: `1px dashed ${TEMD.kenar}` }}>
+        Kaynak: {blok.kaynak}
+      </div>
+    </aside>
+  );
+}
+
 /**
  * Bölüm başlıkları ve KARARLI kimlikleri — içindekiler ile render AYNI
  * kaynaktan besleniyor.
@@ -328,6 +414,7 @@ export default function IcerikRenderer({ bloklar }: { bloklar: IcerikBlok[] }) {
         if (blok.tip === 'metin')        return <MetinBlok key={i} blok={blok} id={id} />;
         if (blok.tip === 'tablo')        return <TabloBlok key={i} blok={blok} id={id} />;
         if (blok.tip === 'bilgi_kutusu') return <BilgiKutusu key={i} blok={blok} id={id} />;
+        if (blok.tip === 'temd')         return <TemdKutusu key={i} blok={blok} />;
         return null;
       })}
     </>

@@ -14,6 +14,7 @@ interface Blok {
   tur?: string;
   satirlar?: (Satir | TabloSatir)[];
   kolonlar?: string[];
+  maddeler?: { metin?: string }[];
 }
 interface Konu {
   meta?: { baslik?: string; altbaslik?: string };
@@ -39,6 +40,10 @@ function bloklariMetne(bloklar: Blok[]): string {
       }
     } else if (b.tip === "bilgi_kutusu" && b.metin) {
       parcalar.push(`(${b.tur || "bilgi"}) ${b.metin}`);
+    } else if (b.tip === "temd" && Array.isArray(b.maddeler)) {
+      for (const m of b.maddeler) {
+        if (m.metin) parcalar.push(`(TEMD) ${m.metin}`);
+      }
     }
   }
   // Markdown vurgu işaretlerini temizle

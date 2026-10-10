@@ -104,6 +104,15 @@ export function kisaltmaAcBloklar<T>(bloklar: T[], gorulen: Set<string>): T[] {
       return { ...blok, metin: kisaltmaAc(blok.metin, gorulen) } as T;
     }
 
+    if (blok.tip === "temd" && Array.isArray(blok.maddeler)) {
+      return {
+        ...blok,
+        maddeler: (blok.maddeler as Record<string, unknown>[]).map((m) =>
+          typeof m?.metin === "string" ? { ...m, metin: kisaltmaAc(m.metin as string, gorulen) } : m
+        ),
+      } as T;
+    }
+
     return b;
   });
 }
