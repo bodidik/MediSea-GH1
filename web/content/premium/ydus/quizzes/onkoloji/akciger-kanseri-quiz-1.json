@@ -463,7 +463,7 @@
       },
       "dogru": "B",
       "aciklama_kisa": "MET amplifikasyonu EGFR-bağımsız bir bypass yoludur: osimertinib sürdürülür, MET inhibitörü eklenir.",
-      "aciklama_detay": "Osimertinib direnç spektrumu: Birinci basamak osimertinib altında direnç geliştiğinde mekanizmalar EGFR-bağımlı (ör. C797S mutasyonu) ve EGFR-bağımsız bypass yolları (en sık MET amplifikasyonu, HER2 amplifikasyonu, PIK3CA mutasyonları ve küçük hücreli nöroendokrin dönüşüm) olarak ikiye ayrılır. Bypass yolu blokajı: MET amplifikasyonu saptanan olgularda, EGFR sinyali osimertinib ile baskılanmaya devam ederken paralel olarak aktive olan MET/Akt/Snail yolağını bloke etmek için osimertinib + MET inhibitörü (ör. tepotinib, capmatinib veya savolitinib) kombinasyonu uygulanır. Yapılan çalışmalarda (INSIGHT 2, SACHI) bu kombinasyon kemoterapiye kıyasla belirgin progresyonsuz sağkalım (PFS) avantajı sağlamıştır. Gefitinib/erlotinib gibi 1. kuşak TKI'lar bu direnç tablosunu aşamaz. Tek ajan immünoterapi ise sürücü mutasyonlu olgularda etkisizdir.",
+      "aciklama_detay": "Osimertinib direnç spektrumu: Birinci basamak osimertinib altında direnç geliştiğinde mekanizmalar EGFR-bağımlı (ör. C797S mutasyonu) ve EGFR-bağımsız bypass yolları (en sık MET amplifikasyonu, HER2 amplifikasyonu, PIK3CA mutasyonları ve küçük hücreli nöroendokrin dönüşüm) olarak ikiye ayrılır. Bypass yolu blokajı: MET amplifikasyonu saptanan olgularda, EGFR sinyali osimertinib ile baskılanmaya devam ederken paralel olarak aktive olan MET/Akt/Snail yolağını bloke etmek için osimertinib + MET inhibitörü (ör. tepotinib, capmatinib veya savolitinib) kombinasyonu uygulanır. INSIGHT 2 (tepotinib + osimertinib) tek kollu bir Faz II çalışmadır ve kombinasyonun yanıt oranlarını göstermiştir; kemoterapiye karşı randomize Faz III kanıt SACHI'den gelir (savolitinib + osimertinib, platinli ikili kemoterapiye kıyasla belirgin progresyonsuz sağkalım avantajı). Gefitinib/erlotinib gibi 1. kuşak TKI'lar bu direnç tablosunu aşamaz. Tek ajan immünoterapi ise sürücü mutasyonlu olgularda etkisizdir.",
       "secenekAciklamalari": {
         "A": "YANLIS — Direnç mekanizması hedeflenebilir (MET); EGFR baskısını kaldırıp tek ajan kemoterapiye geçmek tercih edilen yaklaşım değildir.",
         "B": "DOGRU — EGFR baskısı sürerken aktive olan MET bypass yolu MET inhibitörüyle bloke edilir (INSIGHT 2, SACHI).",
@@ -477,7 +477,7 @@
         "MET Amplifikasyonu"
       ],
       "zorluk": "zor",
-      "kaynak": "INSIGHT 2 (tepotinib + osimertinib); SACHI (savolitinib + osimertinib)"
+      "kaynak": "INSIGHT 2 (tepotinib + osimertinib, tek kollu Faz II); SACHI (savolitinib + osimertinib vs platinli ikili kemoterapi, randomize Faz III)"
     },
     {
       "id": "s17",
@@ -491,7 +491,7 @@
       },
       "dogru": "A",
       "aciklama_kisa": "Perioperatif kemoimmünoterapide pCR elde edilsin ya da edilmesin adjuvan immünoterapi 1 yıla tamamlanır.",
-      "aciklama_detay": "KEYNOTE-671 ve perioperatif immünoterapi: Resektabl Evre II-IIIB KHDAK hastalarında neoadjuvan 4 siklus kemoterapi + pembrolizumabı takiben cerrahi ve sonrasında 13 siklus (1 yıl) adjuvan pembrolizumab idamesini değerlendiren KEYNOTE-671, neoadjuvan yalnız kemoterapiye kıyasla olaysız sağkalımda (EFS HR: 0.58) ve genel sağkalımda (3 yıllık OS %71 vs %64, HR: 0.72) anlamlı üstünlük göstermiştir. pCR ve adjuvan fazın değeri: Neoadjuvan kemoimmünoterapi ile pCR elde edilmesi (%18.1 vs %4.0) mümkün olan en yüksek sağkalım oranlarıyla (%95 üzeri 5 yıllık OS) ilişkilidir. Mevcut onaylı standart (KEYNOTE-671, CheckMate 77T, AEGEAN), pCR elde edilsin ya da edilmesin planlanan adjuvan immünoterapi idamesinin 1 yıla tamamlanması yönündedir.",
+      "aciklama_detay": "KEYNOTE-671 ve perioperatif immünoterapi: Resektabl Evre II-IIIB KHDAK hastalarında neoadjuvan 4 siklus kemoterapi + pembrolizumabı takiben cerrahi ve sonrasında 13 siklus (1 yıl) adjuvan pembrolizumab idamesini değerlendiren KEYNOTE-671, neoadjuvan yalnız kemoterapiye kıyasla olaysız sağkalımda (EFS HR: 0.58) ve genel sağkalımda (3 yıllık OS %71 vs %64, HR: 0.72) anlamlı üstünlük göstermiştir. pCR ve adjuvan fazın değeri: KEYNOTE-671'de pCR oranı %18.1 vs %4.0'tır. pCR en güçlü olumlu prognostik göstergedir: CheckMate 816'nın 5 yıllık analizinde neoadjuvan nivolumab + kemoterapi ile pCR elde eden hastalarda 5 yıllık genel sağkalım %95.3'tür. Mevcut onaylı standart (KEYNOTE-671, CheckMate 77T, AEGEAN), pCR elde edilsin ya da edilmesin planlanan adjuvan immünoterapi idamesinin 1 yıla tamamlanması yönündedir.",
       "secenekAciklamalari": {
         "A": "DOGRU — KEYNOTE-671 protokolü: cerrahi sonrası 13 siklus (1 yıl) adjuvan pembrolizumab; pCR bu fazı kaldırmaz.",
         "B": "YANLIS — Protokolün adjuvan fazı kemoterapi değil pembrolizumab monoterapisidir.",
@@ -506,7 +506,7 @@
         "Pembrolizumab"
       ],
       "zorluk": "orta",
-      "kaynak": "KEYNOTE-671; CheckMate 77T; AEGEAN"
+      "kaynak": "KEYNOTE-671; CheckMate 816 (5 yıllık analiz); CheckMate 77T; AEGEAN"
     },
     {
       "id": "s18",
@@ -549,7 +549,7 @@
       },
       "dogru": "C",
       "aciklama_kisa": "Önceden tedavi almış HER2 mutant KHDAK'ta tercih edilen ADC trastuzumab deruxtecandır (DESTINY-Lung01/02).",
-      "aciklama_detay": "HER2 mutasyonu ve T-DXd: HER2 (ERBB2) mutasyonları (sıklıkla ekzon 20 insersiyonları) KHDAK olgularının %2-4'ünde izlenir ve sigara içmeyen adenokarsinomlu kadınlarda daha sık görülür. DESTINY-Lung01 ve DESTINY-Lung02: Anti-HER2 antikoru ile topoizomeraz I inhibitörü yükünün birleşiminden oluşan fam-trastuzumab deruxtecan (T-DXd), önceden tedavi almış HER2 mutant KHDAK hastalarında %49-55 objektif yanıt oranı (ORR) ve uzun yanıt süresi sağlayarak agnostik/spesifik onay almıştır. Datopotamab deruxtecan (Dato-DXd) Trop-2 hedefli ADC'dir. Telisotuzumab vedotin ise c-Met aşırı ekspresyonu gösteren olgularda kullanılan c-Met hedefli ADC'dir.",
+      "aciklama_detay": "HER2 mutasyonu ve T-DXd: HER2 (ERBB2) mutasyonları (sıklıkla ekzon 20 insersiyonları) KHDAK olgularının %2-4'ünde izlenir ve sigara içmeyen adenokarsinomlu kadınlarda daha sık görülür. DESTINY-Lung01 ve DESTINY-Lung02: Anti-HER2 antikoru ile topoizomeraz I inhibitörü yükünün birleşiminden oluşan fam-trastuzumab deruxtecan (T-DXd), önceden tedavi almış HER2 mutant KHDAK hastalarında %49-55 objektif yanıt oranı (ORR) ve uzun yanıt süresi sağlamıştır. Bu onay akciğere özgüdür (HER2 mutant metastatik KHDAK). İki onayı karıştırma: T-DXd'nin tümörden bağımsız (agnostik) onayı ise HER2 IHC 3+ aşırı ekspresyonu gösteren anrezektabl/metastatik solid tümörler içindir (DESTINY-PanTumor02). Datopotamab deruxtecan (Dato-DXd) Trop-2 hedefli ADC'dir. Telisotuzumab vedotin ise c-Met aşırı ekspresyonu gösteren olgularda kullanılan c-Met hedefli ADC'dir.",
       "secenekAciklamalari": {
         "A": "YANLIS — HER2 mutant KHDAK için önerilen ADC değildir.",
         "B": "YANLIS — Trop-2 hedefli ADC'dir.",
@@ -563,7 +563,7 @@
         "Trastuzumab Deruxtecan"
       ],
       "zorluk": "orta",
-      "kaynak": "DESTINY-Lung01; DESTINY-Lung02"
+      "kaynak": "DESTINY-Lung01; DESTINY-Lung02; DESTINY-PanTumor02"
     },
     {
       "id": "s20",
