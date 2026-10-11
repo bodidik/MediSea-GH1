@@ -151,13 +151,6 @@
       "trigger": "EGFR"
     },
     {
-      "id": "p-onk-akc-002",
-      "level": "Klinik",
-      "title": "ALK Pozitif KHDAK'ta Adjuvan Tedavi",
-      "content": "<p>Rezeke Evre IB-IIIA ALK pozitif KHDAK'ta 2 yıl adjuvan <strong>alectinib</strong> (ALINA) kemoterapiye üstündür.</p>",
-      "trigger": "ALK"
-    },
-    {
       "id": "p-onk-akc-003",
       "level": "Klinik",
       "title": "T790M ve Likit Biyopsi",
@@ -172,24 +165,10 @@
       "trigger": "İmmünoterapi"
     },
     {
-      "id": "p-onk-akc-005",
-      "level": "Klinik",
-      "title": "EGFR Ekzon 20 İnsersiyonu",
-      "content": "<p>Klasik TKI'lara yanıtsızdır; birinci basamakta IV <strong>amivantamab + kemoterapi</strong> endikedir.</p>",
-      "trigger": "EGFR"
-    },
-    {
       "id": "p-onk-akc-006",
       "level": "Klinik",
       "title": "Tarlatamab Etki Mekanizması",
       "content": "<p>KHAK tümör hücrelerinin yaklaşık %90'ında eksprese edilen <strong>DLL3</strong> ile T hücresi CD3 kompleksini birleştiren <strong>BiTE</strong> ajanıdır.</p>",
-      "trigger": "KHAK"
-    },
-    {
-      "id": "p-onk-akc-007",
-      "level": "Klinik",
-      "title": "Sınırlı Evre KHAK'ta Yeni İdame Standardı",
-      "content": "<p>Kemoradyoterapi sonrası tam/parsiyel yanıtlı sınırlı evre KHAK'ta 2 yıl <strong>durvalumab</strong> konsolidasyonu (ADRIATIC) medyan OS'yi <strong>55.9 aya</strong> çıkarmıştır.</p>",
       "trigger": "KHAK"
     },
     {
