@@ -675,27 +675,25 @@ export default async function TopicDetailPage({
 
             {/* Alt Başlıklar Menüsü (Hub Çocukları) — konuyu bulana kadar menü açılmaya devam eder */}
             {hubChildren.length > 0 && (
-              <div className="bg-white rounded-[2.5rem] border border-slate-200 shadow-sm p-6 md:p-8">
-                <div className="flex items-center justify-between mb-5">
-                  <h2 className="text-xs font-black text-blue-950 uppercase tracking-[0.2em]">
+              <div className="overflow-hidden bg-white rounded-2xl border border-slate-200 shadow-sm">
+                <div className="flex items-center justify-between gap-3 border-l-4 border-sky-400 bg-sky-50 px-5 py-3.5 md:px-6">
+                  <h2 className="mt-0 mb-0 text-xs font-black text-blue-950 uppercase tracking-[0.2em]">
                     Alt Başlıklar
                   </h2>
-                  <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+                  <span className="rounded-md bg-blue-950 px-2 py-0.5 text-[11px] font-bold text-white uppercase tracking-wider">
                     {hubChildren.length} kategori
                   </span>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 border-t border-sky-100 p-4 md:p-5">
                   {hubChildren.map(child => (
                     <Link
                       key={child.slug}
                       href={`/topics/${slug}/${child.slug}`}
-                      className="group p-3 bg-slate-50 border border-slate-100 rounded-[1.75rem] hover:border-blue-900 hover:bg-white hover:shadow-xl transition-all duration-300 flex justify-between items-center"
+                      className="group flex h-full items-center justify-between gap-3 rounded-lg border border-slate-200 bg-white px-3 py-2.5 transition hover:border-sky-300 hover:bg-sky-50"
                     >
-                      <div className="flex items-center gap-4">
-                        <span className="text-xs font-black text-blue-900/80 group-hover:text-blue-900/80 transition-colors italic">
-                          #{child.order < 99 ? child.order : "•"}
-                        </span>
-                        <h3 className="text-base font-black text-blue-950 uppercase italic group-hover:text-blue-700">
+                      <div className="flex items-baseline gap-2">
+                        <span aria-hidden="true" className="text-sky-500">›</span>
+                        <h3 className="mt-0 mb-0 font-serif text-[15px] font-bold leading-snug text-blue-950 group-hover:text-blue-700">
                           {child.title}
                         </h3>
                       </div>
@@ -971,12 +969,12 @@ export default async function TopicDetailPage({
                     İleri Okuma
                   </h2>
 
-                  <ul className="space-y-4">
+                  <ul className="space-y-1.5">
                     {leafChildren.map(child => (
                       <li key={child.slug}>
                         <Link
                           href={`/topics/${slug}/${child.slug}`}
-                          className="group flex items-start gap-3 py-1 text-sm font-bold text-slate-700 hover:text-blue-700 transition-colors"
+                          className="group flex items-start gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-700 transition hover:border-sky-300 hover:bg-sky-50 hover:text-blue-700"
                         >
                           {/* Süsleme oku — bağlantının adı yanındaki başlık. */}
                           <span className="text-blue-300 group-hover:text-blue-500 mt-0.5" aria-hidden="true">↳</span>
