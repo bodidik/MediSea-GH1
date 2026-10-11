@@ -34,10 +34,20 @@ import { useEffect, useState } from "react";
  * paneli ve iletişim kutuları üstte kalır. Baskıda basılmaz.
  */
 
-const CIZGI = "rgba(21, 78, 99, 0.055)";
-const DOLGU = "rgba(21, 78, 99, 0.02)";
-const GUNES = "rgba(214, 142, 24, 0.1)";
-const GUNES_DOLGU = "rgba(250, 204, 21, 0.045)";
+// 11 Eki 2026, kullanıcı isteği: "okunmayı etkilemeden biraz daha belirgin".
+// Alfa 0.055 → 0.08: en koyu çizgi beyaz zeminde ~#eef3f5'e çıkıyor, slate-600
+// metnin kontrastı 7.6 → 7.2 (AA'nın çok üstünde).
+// Ardından: "okuma kısmı silik, yanlara doğru belirgin". Renkler KENAR
+// değeridir; yatay maske ortadaki okuma sütununu ~%35'e indirir (orada çizgi
+// ~0.045 — ilk sürümün düzeyi). Dar ekranda metin tam genişlik: düz %60.
+const CIZGI = "rgba(21, 78, 99, 0.13)";
+const DOLGU = "rgba(21, 78, 99, 0.05)";
+const GUNES = "rgba(214, 142, 24, 0.22)";
+const GUNES_DOLGU = "rgba(250, 204, 21, 0.09)";
+
+const GENIS_MASKE =
+  "linear-gradient(to right, #000 0%, #000 8%, rgba(0,0,0,.35) 26%, rgba(0,0,0,.35) 74%, #000 92%, #000 100%)";
+const DAR_MASKE = "linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6))";
 
 function ozet(s: string): number {
   let h = 2166136261;
@@ -222,6 +232,53 @@ function Marti({ x, y, s = 1 }: { x: number; y: number; s?: number }) {
   return <path d={`M${x} ${y} q${7 * s} ${-8 * s} ${14 * s} 0 q${7 * s} ${-8 * s} ${14 * s} 0`} strokeLinecap="round" />;
 }
 
+/** Marina — yüzer iskele ve bağlı, direkleri dikili teknecikler. */
+function Marina({ x, s = 1 }: { x: number; s?: number }) {
+  const tekne = (dx: number, h: number) => (
+    <g key={dx} transform={`translate(${dx} 0)`}>
+      <path d={`M-22 -6 H22 Q18 4 10 6 H-14 Q-20 2 -22 -6 Z`} fill={DOLGU} />
+      <path d={`M0 -6 V${-h} M0 ${-h + 6} L16 -8 M0 ${-h + 10} L-12 -8`} />
+    </g>
+  );
+  return (
+    <g transform={`translate(${x} ${UFUK + 60}) scale(${s})`}>
+      {/* yüzer iskele ve kazıkları */}
+      <path d="M-120 10 H120 M-120 14 H120 M-100 14 v10 M-40 14 v10 M20 14 v10 M80 14 v10" />
+      {tekne(-80, 70)}
+      {tekne(-20, 84)}
+      {tekne(40, 62)}
+      {tekne(96, 76)}
+      <path d="M-110 30 h20 M-50 32 h26 M10 30 h22 M70 32 h20" strokeLinecap="round" />
+    </g>
+  );
+}
+
+/** Çapa — halka, şiş, çipo ve iki tırnak. */
+function Capa({ x, y, s = 1 }: { x: number; y: number; s?: number }) {
+  return (
+    <g transform={`translate(${x} ${y}) scale(${s})`}>
+      <circle cx="0" cy="-34" r="6" />
+      <path d="M0 -28 V24 M-16 -16 H16 M-26 6 Q-24 24 0 26 Q24 24 26 6 M-30 10 l4 -6 l5 5 M30 10 l-4 -6 l-5 5" strokeLinecap="round" />
+    </g>
+  );
+}
+
+/** Dümen — sekiz kollu tekerlek. */
+function Dumen({ x, y, s = 1 }: { x: number; y: number; s?: number }) {
+  const kollar = Array.from({ length: 8 }, (_, i) => {
+    const a = (i * Math.PI) / 4;
+    return `M${r1(Math.cos(a) * 8)} ${r1(Math.sin(a) * 8)} L${r1(Math.cos(a) * 40)} ${r1(Math.sin(a) * 40)}`;
+  }).join(" ");
+  return (
+    <g transform={`translate(${x} ${y}) scale(${s})`}>
+      <circle r="28" />
+      <circle r="24" />
+      <circle r="8" fill={DOLGU} />
+      <path d={kollar} strokeLinecap="round" />
+    </g>
+  );
+}
+
 /** Ön plan: iskelenin tahtaları, kenar kirişleri, kazıklar, baba ve halat. */
 function Iskele({ babaX }: { babaX: number }) {
   // Tahtalar ufka doğru sıklaşır; her tahta çift çizgi (aradaki derz).
@@ -279,6 +336,7 @@ export default function DenizFiligrani() {
       className="pointer-events-none fixed inset-0 z-[1] h-full w-full print:hidden"
       viewBox="0 0 1440 900"
       preserveAspectRatio="xMidYMax slice"
+      style={{ maskImage: dar ? DAR_MASKE : GENIS_MASKE, WebkitMaskImage: dar ? DAR_MASKE : GENIS_MASKE }}
       fill="none"
       stroke={CIZGI}
       strokeWidth={1.3}
@@ -339,6 +397,17 @@ export default function DenizFiligrani() {
             <Silep x={dar ? 780 : 760} s={dar ? 0.45 : 0.7} />
           </>
         )}
+
+        {/* her sahnede: marina, gökte martılar, iskelede çapa ve dümen */}
+        {sahne !== 4 && <Marina x={dar ? 820 : 1180} s={dar ? 0.55 : 1} />}
+        {sahne !== 0 && sahne !== 2 && (
+          <>
+            <Marti x={L.x0 + (L.x1 - L.x0) * 0.62} y={dar ? 380 : 300} s={k} />
+            <Marti x={L.x0 + (L.x1 - L.x0) * 0.62 + 40 * k} y={dar ? 360 : 280} s={0.7 * k} />
+          </>
+        )}
+        <Capa x={dar ? 900 : 1060} y={858} s={dar ? 0.7 : 1} />
+        {!dar && <Dumen x={1330} y={840} />}
 
         <Iskele babaX={L.baba} />
       </g>

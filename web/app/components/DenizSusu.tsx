@@ -65,6 +65,14 @@ export function KiyiDalgasi({ className = "" }: Props) {
         </g>
       </svg>
 
+      {/* çapa — dalgaya yarı gömülü */}
+      <svg className="absolute bottom-2 left-[46%] h-9 w-9 text-blue-950/40 sm:h-11 sm:w-11" viewBox="0 0 40 40">
+        <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+          <circle cx="20" cy="7" r="3.5" />
+          <path d="M20 10.5 V34 M13 16 H27 M8 26 Q9 34 20 35 Q31 34 32 26" />
+        </g>
+      </svg>
+
       <svg className="absolute right-[10%] top-0 h-10 w-28 sm:w-36" viewBox="0 0 120 34">
         <g className="deniz-suzulus">
           <Marti x={6} y={18} />
