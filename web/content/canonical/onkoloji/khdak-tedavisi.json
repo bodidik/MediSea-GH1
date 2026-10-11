@@ -10,7 +10,12 @@
       "Hedefe Yönelik Tedavi",
       "İmmünoterapi",
       "Osimertinib",
-      "PACIFIC"
+      "PACIFIC",
+      "Akciğer Kanseri",
+      "Driver Mutasyonlar",
+      "PD-L1",
+      "EGFR",
+      "ALK"
     ],
     "parent": "akciger-kanseri-ana-sayfa",
     "order": 3

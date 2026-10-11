@@ -2360,24 +2360,9 @@
  ],
  "endokrinoloji/usp8-mutasyonu-ve-pasireotid": [
   {
-   "brans": "endokrinoloji",
-   "slug": "dopamin-agonistleri-kalp-kapak",
-   "baslik": "Dopamin Agonistleri ve Kardiyak Valvülopati Riski"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "izole-maternal-hipotiroksinemi-yonetimi",
-   "baslik": "İzole Maternal Hipotiroksinemi: Yönetim ve İyot Desteği"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "pbmah-genetik-temeller-ailevi-riskler",
-   "baslik": "PBMAH: Genetik Temeller ve Ailevi Riskler (İleri Okuma)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "sf3b1-mutasyonu-metastatik-prolaktinoma",
-   "baslik": "SF3B1 Mutasyonu: Agresif ve Metastatik Prolaktinomalar"
+   "brans": "onkoloji",
+   "slug": "khdak-tedavisi",
+   "baslik": "Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tedavisi: Erken Evreden Metastatik Hastalığa - Bölüm 3"
   }
  ],
  "endokrinoloji/vitamin-d-bozukluklari": [
@@ -7866,6 +7851,11 @@
  ],
  "onkoloji/khdak-tani-algoritma-evreleme": [
   {
+   "brans": "onkoloji",
+   "slug": "khdak-tedavisi",
+   "baslik": "Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tedavisi: Erken Evreden Metastatik Hastalığa - Bölüm 3"
+  },
+  {
    "brans": "hematoloji",
    "slug": "m7-flipi-ngs-paneli",
    "baslik": "m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri"
@@ -7873,9 +7863,19 @@
  ],
  "onkoloji/khdak-tedavisi": [
   {
+   "brans": "onkoloji",
+   "slug": "khdak-tani-algoritma-evreleme",
+   "baslik": "Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tanısal Algoritma, Evreleme ve Moleküler Patobiyoloji - Bölüm 2"
+  },
+  {
    "brans": "journal-club",
    "slug": "flaura2-osimertinib-kemoterapi-nejm",
    "baslik": "NEJM: FLAURA2 Faz 3 - EGFR-Mutant KHDAK'de Osimertinib ve Kemoterapi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "usp8-mutasyonu-ve-pasireotid",
+   "baslik": "Cushing Hastalığı: USP8 Mutasyonu ve Pasireotid Yanıtı (İleri Okuma)"
   },
   {
    "brans": "hematoloji",
