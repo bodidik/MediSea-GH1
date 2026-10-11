@@ -694,7 +694,7 @@
       },
       "dogru": "A",
       "aciklama_kisa": "CodeBreaK 200 (sotorasib) ve KRYSTAL-12 (adagrasib), ikinci basamakta dosetaksele göre PFS'i uzattı.",
-      "aciklama_detay": "KRAS G12C epidemiyolojisi: KRAS mutasyonları akciğer adenokarsinomunda en sık sürücü değişikliktir (%20–30) ve sigarayla güçlü ilişkilidir; yaklaşık %40'ı G12C varyantıdır. Kovalent inhibitörler: Sotorasib ve adagrasib, mutant KRAS'ın sistein-12 kalıntısına kovalent bağlanarak proteini inaktif GDP bağlı durumda sabitler. Önceden platin ve/veya ICI almış olgularda dosetakselle karşılaştırılan faz III çalışmalarda (sotorasib: CodeBreaK 200; adagrasib: KRYSTAL-12) progresyonsuz sağkalım uzamış, genel sağkalımda anlamlı fark gösterilmemiştir; ikinci basamakta hedefe yönelik seçenektir.",
+      "aciklama_detay": "KRAS G12C epidemiyolojisi: KRAS mutasyonları akciğer adenokarsinomunda en sık sürücü değişikliktir (%20–30) ve sigarayla güçlü ilişkilidir; yaklaşık %40'ı G12C varyantıdır. Kovalent inhibitörler: Sotorasib ve adagrasib, mutant KRAS'ın sistein-12 kalıntısına kovalent bağlanarak proteini inaktif GDP bağlı durumda sabitler. Önceden platin ve/veya ICI almış olgularda dosetakselle karşılaştırılan faz III çalışmalarda (sotorasib: CodeBreaK 200; adagrasib: KRYSTAL-12) progresyonsuz sağkalım uzamıştır; CodeBreaK 200'de genel sağkalım farkı gösterilmemiş, KRYSTAL-12'de ise sağkalım verisi ilk analizde olgunlaşmamıştı; ikinci basamakta hedefe yönelik seçenektir.",
       "secenekAciklamalari": {
         "A": "DOGRU — CodeBreaK 200 sotorasib, KRYSTAL-12 adagrasib çalışmasıdır.",
         "B": "YANLIS — RET füzyonunda selpercatinib (LIBRETTO-431) ve pralsetinib (ARROW) çalışmalarıdır.",
