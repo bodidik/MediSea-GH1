@@ -412,10 +412,12 @@ export default function DenizFiligrani() {
         {!dar && <Capa x={1110} y={858} />}
         {!dar && <Dumen x={1330} y={840} />}
 
-        {/* geniş ekranda iskele küçülüp sol kenara çekilir */}
-        <g transform={dar ? undefined : "translate(-252 360) scale(0.6)"}>
-          <Iskele babaX={L.baba} />
-        </g>
+        {/* geniş ekranda iskele küçülüp sol kenara çekilir; telefonda hiç çizilmez */}
+        {!dar && (
+          <g transform="translate(-252 360) scale(0.6)">
+            <Iskele babaX={L.baba} />
+          </g>
+        )}
       </g>
     </svg>
   );
