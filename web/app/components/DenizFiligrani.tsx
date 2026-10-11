@@ -39,7 +39,8 @@ import { useEffect, useState } from "react";
 // metnin kontrastı 7.6 → 7.2 (AA'nın çok üstünde).
 // Ardından: "okuma kısmı silik, yanlara doğru belirgin". Renkler KENAR
 // değeridir; yatay maske ortadaki okuma sütununu ~%35'e indirir (orada çizgi
-// ~0.045 — ilk sürümün düzeyi). Dar ekranda metin tam genişlik: düz %60.
+// ~0.045 — ilk sürümün düzeyi). Dar ekranda metin tam genişlik: düz %45 ve
+// marina/çapa çizilmez (telefonda yazının tam arkasına düşüyorlardı).
 const CIZGI = "rgba(21, 78, 99, 0.13)";
 const DOLGU = "rgba(21, 78, 99, 0.05)";
 const GUNES = "rgba(214, 142, 24, 0.22)";
@@ -47,7 +48,7 @@ const GUNES_DOLGU = "rgba(250, 204, 21, 0.09)";
 
 const GENIS_MASKE =
   "linear-gradient(to right, #000 0%, #000 8%, rgba(0,0,0,.35) 26%, rgba(0,0,0,.35) 74%, #000 92%, #000 100%)";
-const DAR_MASKE = "linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6))";
+const DAR_MASKE = "linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45))";
 
 function ozet(s: string): number {
   let h = 2166136261;
@@ -401,14 +402,14 @@ export default function DenizFiligrani() {
         )}
 
         {/* her sahnede: marina, gökte martılar, iskelede çapa ve dümen */}
-        {sahne !== 4 && <Marina x={dar ? 820 : 1180} s={dar ? 0.55 : 1} />}
+        {!dar && sahne !== 4 && <Marina x={dar ? 820 : 1180} s={dar ? 0.55 : 1} />}
         {sahne !== 0 && sahne !== 2 && (
           <>
             <Marti x={L.x0 + (L.x1 - L.x0) * (dar ? 0.62 : 0.86)} y={dar ? 380 : 300} s={k} />
             <Marti x={L.x0 + (L.x1 - L.x0) * (dar ? 0.62 : 0.86) + 40 * k} y={dar ? 360 : 280} s={0.7 * k} />
           </>
         )}
-        <Capa x={dar ? 900 : 1110} y={858} s={dar ? 0.7 : 1} />
+        {!dar && <Capa x={1110} y={858} />}
         {!dar && <Dumen x={1330} y={840} />}
 
         {/* geniş ekranda iskele küçülüp sol kenara çekilir */}
