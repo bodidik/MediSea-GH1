@@ -204,7 +204,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
-      "metin": "Haşitoksikoz (Hashitoxicosis) — Kritik Nokta: Hashimoto zemininde nadir görülen geçici bir tirotoksikoz dönemidir. İki mekanizma: (1) Follikül yıkımıyla depolardan kana kaçan tiroid hormonu (yıkım tirotoksikozu = ATİ'siz geçer), (2) TSH reseptörü uyarıcı antikorların (TSHSAb) geçici etkisi. Hastalık önce hipertiroidi, sonra hipotiroidi ile seyreder. Geçici olduğundan ATİ verilmez — tedavi semptomatik (beta-bloker)."
+      "metin": "Haşitoksikoz (Hashitoxicosis) — Kritik Nokta: Hashimoto zemininde nadir görülen geçici bir tirotoksikoz dönemidir. Mekanizma: hastalığın başlangıcında stimüle eden TSH reseptör antikorları (TSHRAb) nedeniyle hipertiroidi (RAIU yüksek); ardından lenfositik infiltrasyonla bez harabiyetine bağlı hipotiroidi gelişir. Geçici olduğundan ATİ verilmez — tedavi semptomatik (beta-bloker)."
     },
     {
       "tip": "temd",
@@ -298,14 +298,14 @@
           "renk": "mavi",
           "hucreler": [
             "Anti-TPO ★",
-            "%90–95 pozitif",
+            "%90 pozitif",
             "Birincil tanı belirteci; yüksekliği aşikar hipotiroidiye ilerlemenin en güçlü prediktörü"
           ]
         },
         {
           "hucreler": [
             "Anti-Tg",
-            "%60–80 pozitif",
+            "%2–50 pozitif",
             "Tek başına daha az spesifik; Anti-TPO negatif şüpheli vakalarda bakılır"
           ]
         },
@@ -395,15 +395,15 @@
           "renk": "mavi",
           "hucreler": [
             "Aşikar Hipotiroidi — Genç/Sağlıklı",
-            "LT4: 1.5–1.7 µg/kg/gün tam replasman",
-            "Hedef TSH normal aralık; 6–8 haftada kontrol"
+            "LT4: 1,2–1,8 µg/kg/gün tam replasman",
+            "Hedef TSH 0,4–2,5 mU/L (genç/orta yaş); ≥65–70 yaş 3–6; >80–85 yaş ≤10 mU/L; 6–8 haftada kontrol"
           ]
         },
         {
           "renk": "sari",
           "hucreler": [
             "Aşikar Hipotiroidi — Yaşlı/KAH ★",
-            "LT4: 12.5–25 µg/gün ile başla, her 6–8 haftada titre et",
+            "LT4: 12,5–25 µg/gün ile başla (>60 yaş KKH yoksa 50 µg/gün), 7–10 günde bir 12,5 µg artır",
             "Hızlı doz artışı → anjina, aritmi riski"
           ]
         },
@@ -478,7 +478,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Pratik Özet — Hashimoto 6 Altın Kural: (1) Anti-TPO %90–95 pozitif — birincil tanı belirteci; Anti-Tg %60–80. (2) %75'i ötiroid başlar; yılda %3–5 aşikar hipotiroidiye ilerler. (3) Haşitoksikozda ATİ verme — yıkım tirotoksikozu, beta-bloker yeterli. (4) Hızlı büyüyen asimetrik kitle = tiroid lenfomasını düşün. (5) USG: hipoekojen + heterojen + psödonodül + Doppler↓ (Graves: inferno↑). (6) LT4 dozu: genç/sağlıklı 1.5–1.7 µg/kg; yaşlı/KAH 12.5–25 µg ile başla titre et."
+      "metin": "Pratik Özet — Hashimoto 6 Altın Kural: (1) Anti-TPO %90 pozitif — birincil tanı belirteci; Anti-Tg %2–50. (2) %75'i ötiroid başlar; yılda %3–5 aşikar hipotiroidiye ilerler. (3) Haşitoksikoz: stimüle eden TSHRAb ile hipertiroidi (RAIU yüksek), ardından hipotiroidi. (4) Hızlı büyüyen asimetrik kitle = tiroid lenfomasını düşün. (5) USG: hipoekojen + heterojen + psödonodül + Doppler↓ (Graves: inferno↑). (6) LT4 dozu: genç/sağlıklı 1,2–1,8 µg/kg; yaşlı/KAH 12,5–25 µg ile başla, 7–10 günde bir 12,5 µg artır."
     }
   ]
 }

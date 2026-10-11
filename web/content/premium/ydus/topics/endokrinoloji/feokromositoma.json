@@ -139,7 +139,7 @@
       "tip": "bilgi_kutusu",
       "tur": "pratik",
       "baslik": "Preanalitik Hayati Kurallar: Yalancı Pozitifliği Önleme",
-      "metin": "Kan örnekleri alınırken hasta gece yarısından itibaren aç olmalı ve en az 20-30 dakika sessiz, loş bir odada sırtüstü (supine) yatarak dinlendirildikten sonra önceden takılmış kalıcı damar yolu (branül) aracılığıyla alınmalıdır. Ayakta veya oturur pozisyonda yapılan normal venöz ponksiyonlarda adrenerjik deşaja bağlı yalancı pozitiflik oranı dramatik şekilde artar. Supine branül alımında feokromositomayı dışlama eşikleri: metanefrin <0.3 nmol/L ve normetanefrin <0.66 nmol/L. Ayakta/oturur alımlarda eşikler metanefrin <0.5 nmol/L ve normetanefrin <0.9 nmol/L'ye yükselir. Testten 12 saat önce kafein, alkol, tütün ve egzersiz kısıtlanmalıdır."
+      "metin": "Kan örnekleri alınırken hasta gece yarısından itibaren aç olmalı ve en az 20 dakika (ideal olarak en az 30 dakika) sessiz, loş bir odada sırtüstü (supine) yatarak dinlendirildikten sonra önceden takılmış kalıcı damar yolu (branül) aracılığıyla alınmalıdır. Ayakta veya oturur pozisyonda yapılan normal venöz ponksiyonlarda adrenerjik deşaja bağlı yalancı pozitiflik oranı dramatik şekilde artar. Supine branül alımında feokromositomayı dışlama eşikleri: metanefrin <0.3 nmol/L ve normetanefrin <0.66 nmol/L. Ayakta/oturur alımlarda eşikler metanefrin <0.5 nmol/L ve normetanefrin <0.9 nmol/L'ye yükselir. Test günü kafein, alkol, tütün ve egzersiz kısıtlanmalıdır."
     },
     {
       "tip": "temd",
@@ -176,7 +176,7 @@
       "tip": "metin",
       "baslik": "Borderline Yükseklikler ve Klonidin Baskılama Testi",
       "satirlar": [
-        "Tek bir metabolitin normal üst sınırın 2 katından daha az yüksek saptandığı sınırda durumlarda, yalancı pozitifliği dışlamak amacıyla Klonidin Baskılama Testi uygulanmalıdır.",
+        "Tek bir metabolitin normal üst sınırın 2 katından daha az yüksek saptandığı sınırda durumlarda sonuç indetermine kabul edilir ve öncelikle testin (uygun koşullarda) tekrarı önerilir (TEMD); yalancı pozitifliği dışlamak için ek olarak Klonidin Baskılama Testi uygulanabilir.",
         "Klonidin, merkezi etkili bir alfa-2 adrenerjik agonisttir; normal bireylerde sempatik sinir sisteminden nöral katekolamin salınımını baskılarken, PPGL tümörlerindeki otonom salınımı etkilemez.",
         "Protokol: Hasta gecelik açlığı takiben 20-30 dakika supine dinlendirilir, bazal kan alınır. Ardından oral yolla 0.3 mg/70 kg klonidin uygulanır ve 3 saat sonra tekrar kan alınır. Normetanefrin düzeyinde bazale göre %40'tan az baskılanma izlenmesi veya referans değerlerin üzerinde kalması PPGL lehinedir."
       ]
@@ -318,8 +318,8 @@
       "baslik": "Preoperatif Medikal Hazırlık: Adım 1 — Alfa-Adrenerjik Blokaj",
       "satirlar": [
         "Feokromositoma cerrahisi esnasında ölümcül olabilecek intraoperatif katekolamin salınımlarını ve cerrahi sonrası gelişebilecek dirençli hipotansiyonu engellemek amacıyla, asemptomatik veya normotansif olsalar dahi tüm aktif hastalara en az 7 ila 14 gün boyunca kombine adrenerjik blokaj tedavisi uygulanmalıdır. Uygulama sırası: Adım 1 → Alfa blokaj (7-14 gün) | Adım 2 → Sodyum + hidrasyon yüklemesi (2-3. gün) | Adım 3 → Beta blokaj (alfa blokajdan en az 2-3 gün sonra).",
-        "Doxazosin (Selektif Alfa-1 Bloker — İlk Tercih): Günümüzde daha hafif yan etki profili, düşük maliyeti ve ameliyat sonrası uzamış ağır hipotansiyon riskini en aza indirmesi nedeniyle klinik pratikte ilk tercih edilen ajandır. Dozaj: Gece 1-2 mg olarak başlanır, kan basıncı takibine göre her 2-3 günde bir artırılarak günde iki kez 10-15 mg düzeyine kadar titre edilir.",
-        "Phenoxybenzamine (Non-selektif, İrreversibl Alfa Bloker): Alfa-1 ve alfa-2 reseptörlerini irreversibl bloke eder. İntraoperatif hemodinamik instabiliteyi önlemede hafifçe daha etkin olabileceğini gösteren çalışmalar bulunsa da; yüksek maliyeti, şiddetli yan etkileri ve ameliyat sonrası dirençli uzamış hipotansiyon riski kullanımını kısıtlar. Dozaj: Günde bir veya iki kez 10 mg başlanır, her 2-3 günde bir 10-20 mg artırılarak günde 30-40 mg (maksimum 100 mg/gün) düzeyine kadar titre edilir."
+        "Doxazosin (Selektif Alfa-1 Bloker — İlk Tercih): Günümüzde daha hafif yan etki profili, düşük maliyeti ve ameliyat sonrası uzamış ağır hipotansiyon riskini en aza indirmesi nedeniyle klinik pratikte ilk tercih edilen ajandır. Dozaj: Gece 1-2 mg olarak başlanır, kan basıncı takibine göre hedef kan basıncına (<110-120/80 mmHg) ulaşılana dek her 2-3 günde bir 1-2 mg artırılarak titre edilir.",
+        "Phenoxybenzamine (Non-selektif, İrreversibl Alfa Bloker): Alfa-1 ve alfa-2 reseptörlerini irreversibl bloke eder. İntraoperatif hemodinamik instabiliteyi önlemede hafifçe daha etkin olabileceğini gösteren çalışmalar bulunsa da; yüksek maliyeti, şiddetli yan etkileri ve ameliyat sonrası dirençli uzamış hipotansiyon riski kullanımını kısıtlar. Dozaj: 12 saatte bir 10 mg başlanır, 8 saatte bir 10-40 mg dozuna kadar çıkılabilir."
       ]
     },
     {
@@ -361,7 +361,7 @@
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "baslik": "Adım 3 — Beta-Blokörde Hayati Kural: Önce Alfa!",
-      "metin": "BETA-BLOKÖR ASLA ALFA-BLOKAJ TAM OLARAK SAĞLANMADAN BAŞLANMAMALIDIR. Alfa reseptörleri bloke edilmeden beta-reseptörler bloke edilirse, katekolaminler beta-2 reseptörleri aracılığıyla yaptıkları vazodilatasyonu yapamazlar ve boşta kalan uyarılmamış alfa-reseptörleri üzerinden aşırı vazokonstriksiyona (unopposed alpha stimulation) yol açarak öldürücü hipertansif krizleri, akut akciğer ödemini ve koroner spazmı tetiklerler. Alfa-blokajdan en az 2-3 gün sonra refleks taşikardi veya aritmiyi kontrol etmek için eklenir. Dozaj: Metoprolol 25-50 mg/gün veya Propranolol 10 mg 4-6 saatte bir. Kalp hızı hedefi oturur pozisyonda 60-70 bpm, ayakta 70-80 bpm (Endocrine Society 2014)."
+      "metin": "BETA-BLOKÖR ASLA ALFA-BLOKAJ TAM OLARAK SAĞLANMADAN BAŞLANMAMALIDIR. Alfa reseptörleri bloke edilmeden beta-reseptörler bloke edilirse, katekolaminler beta-2 reseptörleri aracılığıyla yaptıkları vazodilatasyonu yapamazlar ve boşta kalan uyarılmamış alfa-reseptörleri üzerinden aşırı vazokonstriksiyona (unopposed alpha stimulation) yol açarak öldürücü hipertansif krizleri, akut akciğer ödemini ve koroner spazmı tetiklerler. Alfa-blokajdan en az 2-3 gün sonra refleks taşikardi veya aritmiyi kontrol etmek için eklenir. Dozaj: Propranolol 20 mg/12 saatte bir, Metoprolol 25 mg/12 saatte bir veya Atenolol 25 mg/gün ile başlanır. Kalp hızı hedefi oturur pozisyonda 60-70 bpm, ayakta 70-80 bpm (Endocrine Society 2014)."
     },
     {
       "tip": "temd",
@@ -447,7 +447,7 @@
       "tip": "bilgi_kutusu",
       "tur": "pratik",
       "baslik": "Uzun Dönem Takip Protokolü",
-      "metin": "Ameliyattan 2 ila 6 hafta sonra plazma veya idrar metanefrin düzeyleri ölçülerek cerrahi kür doğrulanmalıdır (operatif adrenerjik dalgalanmaların geçmesi için test en az 5-7 gün geciktirilmelidir). Benign tümörlerde dahi nüks ve metastaz riski ilk cerrahiden onlarca yıl sonra ortaya çıkabileceğinden, tüm hastalara yıllık biyokimyasal tarama ile en az 10 yıl, ideal olarak ömür boyu izlem önerilmektedir."
+      "metin": "Ameliyattan 3 ila 8 hafta sonra (ardından 6. ay ve 1. yılda) plazma veya idrar metanefrin düzeyleri ölçülerek cerrahi kür doğrulanmalıdır (operatif adrenerjik dalgalanmaların geçmesi için test en az 5-7 gün geciktirilmelidir). Benign tümörlerde dahi nüks ve metastaz riski ilk cerrahiden onlarca yıl sonra ortaya çıkabileceğinden, tüm hastalara yıllık biyokimyasal tarama ile ömür boyu izlem önerilmektedir."
     },
     {
       "tip": "temd",

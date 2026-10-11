@@ -106,7 +106,7 @@
           "metin": "**Etiyolojik Ayırıcı Tanı Testleri:**"
         },
         {
-          "metin": "• **CRH Uyarım Testi:** IV 100 µg (veya 1 µg/kg) CRH enjeksiyonu sonrası plazma **ACTH düzeyinde > %37** ve **serum kortizolünde > %17** artış olması Cushing Hastalığı lehine %97 pozitif prediktif değere sahiptir."
+          "metin": "• **CRH Uyarım Testi:** IV 100 µg (veya 1 µg/kg) CRH enjeksiyonu sonrası plazma **ACTH düzeyinde > %30–50** ve **serum kortizolünde > %20** artış olması Cushing Hastalığı lehine %97 pozitif prediktif değere sahiptir."
         },
         {
           "metin": "• **Desmopressin (dDAVP) Testi:** Kortikotrop adenomlarda aberran **V2R ve V3R** vasopressin reseptör ekspresyonundan yararlanılır; enjeksiyon sonrası ACTH ve kortizolda belirgin yükselme izlenir."
@@ -115,7 +115,7 @@
           "metin": "• **Bilateral İnferior Petrosal Sinüs Örneklemesi (BIPSS - Altın Standart):** Nörogörüntülemede açık adenom saptanamayan (veya < 6 mm lezyonu olan) vakalarda uygulanır."
         },
         {
-          "metin": "• **BIPSS Tanısal Kesim Değerleri:** Petrosal/Periferik ACTH oranı **bazal koşulda ≥ 2.0**, **CRH veya dDAVP uyarısı sonrasında ise ≥ 3.0** bulunması Cushing Hastalığını doğrular. Petrosal kanülasyon başarısını doğrulamak için **Petrosal/Periferik Prolaktin Oranı ≥ 1.8** olmalıdır."
+          "metin": "• **BIPSS Tanısal Kesim Değerleri:** Petrosal/Periferik ACTH oranı **bazal koşulda > 2**, **CRH veya dDAVP uyarısı sonrasında ise > 3** bulunması Cushing Hastalığını doğrular. Petrosal kanülasyon başarısını doğrulamak için **Petrosal/Periferik Prolaktin Oranı ≥ 1.8** olmalıdır."
         }
       ]
     },
@@ -210,22 +210,22 @@
           "metin": "**Açlık Sabah Kortizolü (08:00–09:00):**"
         },
         {
-          "metin": "• **> 13–15 µg/dL (370–415 nmol/L):** Kortikotrop aks sağlam kabul edilir."
+          "metin": "• **≥ 15 µg/dL (415 nmol/L):** Kortikotrop aks sağlam kabul edilir."
         },
         {
-          "metin": "• **< 3–5 µg/dL (80–140 nmol/L):** Santral adrenal yetmezlik doğrulanır."
+          "metin": "• **< 3 µg/dL (80 nmol/L):** Santral adrenal yetmezlik doğrulanır."
         },
         {
           "metin": "• **3–15 µg/dL Arası:** Dinamik uyarım testi gerektirir."
         },
         {
-          "metin": "**İnsülin Tolerans Testi (ITT - Altın Standart):** IV 0.1 U/kg insülin ile semptomatik hipoglisemi (**kan şekeri < 40 mg/dL**) sağlandığında pik kortizolün **≥ 18 µg/dL** olması normal yanıttır."
+          "metin": "**İnsülin Tolerans Testi (ITT - Altın Standart):** IV 0,1–0,15 U/kg insülin ile **semptomatik hipoglisemi** sağlandığında pik kortizolün **≥ 18 µg/dL** olması normal yanıttır."
         },
         {
           "metin": "**Cosyntropin (250 µg ACTH) Testi:** Pik kortizol **< 18 µg/dL** ise yetersizlik kanıtlanır."
         },
         {
-          "metin": "• ⚠️ **KRİTİK UYARI:** Pitüiter cerrahi, apopleksi veya travmayı takip eden **ilk 4–6 hafta içinde** adrenal korteks henüz atrofiye uğramadığı için Cosyntropin testi **yalancı normal (false-negative)** yanıt verebilir."
+          "metin": "• ⚠️ **KRİTİK UYARI:** Pitüiter cerrahi, apopleksi veya travmayı takip eden **ilk 4 hafta içinde** adrenal korteks henüz atrofiye uğramadığı için Cosyntropin testi **yalancı normal (false-negative)** yanıt verebilir."
         }
       ]
     },
@@ -271,10 +271,10 @@
       "baslik": "B. Erişkin Büyüme Hormonu Eksikliği (aGHD)",
       "satirlar": [
         {
-          "metin": "**Dinamik Test Zorunluluğu Olmayan Durum:** Organik hipofiz/hipotalamus hastalığı olan bir hastada **3 veya daha fazla ön hipofiz hormon eksikliği (panhipopitüitarizm) VE düşük serum IGF-1 düzeyi** bulunuyorsa doğrudan aGHD tanısı konur; uyarım testi yapılmasına gerek yoktur."
+          "metin": "**Yüksek Olasılıklı Durum:** Organik hipofiz/hipotalamus hastalığı olan bir hastada **3 veya daha fazla ön hipofiz hormon eksikliği (panhipopitüitarizm) VE düşük serum IGF-1 düzeyi (≤95 ng/mL)** bulunuyorsa aGHD olasılığı %95'in üzerindedir; tanı yine de dinamik testle konur."
         },
         {
-          "metin": "**ITT ve Alternatif Test Kesim Değerleri:** ITT sırasında pik GH **< 3 µg/L** olması ağır aGHD göstergesidir. Glukagon testinde obeziteye göre kesim değerleri değişir (BMI < 30 kg/m² için GH < 3 µg/L; BMI > 30 kg/m² için GH < 1 µg/L)."
+          "metin": "**ITT ve Alternatif Test Kesim Değerleri:** ITT sırasında pik GH **< 3 µg/L** olması ağır aGHD göstergesidir. Glukagon testinde obeziteye göre kesim değerleri değişir (BMI < 25 kg/m² için GH < 3 µg/L; BMI ≥ 25 kg/m² için GH < 1 µg/L)."
         }
       ]
     },
@@ -377,7 +377,7 @@
             "**IgG4-İlişkili Hipofizit**",
             "IgG4 plazma hücre infiltrasyonu; otoimmün pankreatit ve retroperitoneal fibrozis eşlik edebilir.",
             "Serum IgG4 yüksekliği; hipofiz sapı ve bezinde homojen büyüme.",
-            "Sık görülür. Steroid tedavisine yanıtı mükemmeldir."
+            "TEMD Tablo 5.3'te ender; metinde vakaların %20–40'ında Dİ + kombine ön hipofiz yetersizliği. Steroid tedavisine yanıtı mükemmeldir."
           ]
         },
         {

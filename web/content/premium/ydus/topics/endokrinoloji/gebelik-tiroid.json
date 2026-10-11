@@ -105,7 +105,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "ek_bilgi",
-      "metin": "İyot İhtiyacı: Artan renal iyot atılımı ve fetal ihtiyaç nedeniyle gebelik/laktasyonda günlük iyot gereksinimi 250 µg'ye çıkar (WHO ve TEMD önerisi). Türkiye gibi endemik bölgelerde rutin diyet + iyotlu tuz tüketimine ek olarak 100–150 µg/gün potasyum iyodür takviyesi şiddetle tavsiye edilir."
+      "metin": "İyot İhtiyacı: Artan renal iyot atılımı ve fetal ihtiyaç nedeniyle gebelik/laktasyonda günlük iyot gereksinimi 250 µg'ye çıkar (WHO ve TEMD önerisi). Türkiye gibi endemik bölgelerde rutin diyet + iyotlu tuz tüketimine ek olarak 100–300 µg/gün (tuz kısıtında 200–250 µg/gün) potasyum iyodür takviyesi şiddetle tavsiye edilir."
     },
     {
       "tip": "temd",
@@ -212,7 +212,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "uyari",
-      "metin": "LT4 Doz Artışı — Kritik Kural: Gebelik öncesi hipotiroid + LT4 kullanan kadınlarda gebe kalındığı öğrenilir öğrenilmez doz %25–50 artırılmalıdır. Pratik yöntem: haftanın 2 gününde çift doz al (7 günlük doz = 9 günlük). Her 4 haftada TSH kontrolü; hedef TSH: **0.4–2.5 mU/L**."
+      "metin": "LT4 Doz Artışı — Kritik Kural: Gebelik öncesi hipotiroid + LT4 kullanan kadınlarda gebe kalındığı öğrenilir öğrenilmez doz %25–30 artırılmalıdır. Pratik yöntem: haftanın 2 gününde çift doz al (7 günlük doz = 9 günlük; ~%29 artış). Her 4 haftada TSH kontrolü; hedef TSH: **trimestere özgü aralık** (gebelik planlarken <2,5 mU/L)."
     },
     {
       "tip": "temd",
@@ -281,7 +281,7 @@
           "renk": "mavi",
           "hucreler": [
             "Hiperemezis Gravidarum",
-            "Sık birliktelik (%50–60)",
+            "Sık birliktelik",
             "Yok / tesadüf"
           ]
         },
@@ -363,7 +363,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Graves Tedavisinde Hedef Doz: Anneyi tam ötiroid yapmak fetüste guatr + hipotiroidiye neden olur (ATİ plasentayı geçer, fetal tiroid daha duyarlı). Bu nedenle mümkün olan en düşük ATİ dozu kullan, annenin sT4 düzeyini normalin üst sınırında veya hafifçe üzerinde tut. 'Blok ve replasman' (ATİ + LT4) yöntemi gebelikte KESİNLİKLE KONTRENDİKE."
+      "metin": "Graves Tedavisinde Hedef Doz: Anneyi tam ötiroid yapmak fetüste guatr + hipotiroidiye neden olur (ATİ plasentayı geçer, fetal tiroid daha duyarlı). Bu nedenle mümkün olan en düşük ATİ dozu kullan, annenin sT4 düzeyini normalin üst sınırında veya hafifçe üzerinde tut. 'Blok ve replasman' (ATİ + LT4) yöntemi gebelikte KONTRENDİKE (fetal guatr/hipotiroidi); tek endikasyon, daha önce ablatif tedavi almış annede TRAb'ye bağlı izole fetal hipertiroidi."
     },
     {
       "tip": "temd",
@@ -454,8 +454,8 @@
           "renk": "yesil",
           "hucreler": [
             "DTK — agresif değil",
-            "Cerrahiyi doğum sonrasına ertele",
-            "Çoğu DTK yavaş seyirli; gebelik süresince izle"
+            "Malign sitoloji (1.–2. tri): 2. trimesterde cerrahi; indetermine sitolojide doğum sonrasına ertele",
+            "Çoğu DTK yavaş seyirli; cerrahi ertelenen olgu gebelik süresince izlenir"
           ]
         },
         {
@@ -500,10 +500,10 @@
       "baslik": "Postpartum Tiroidit (PPT)",
       "satirlar": [
         {
-          "metin": "Doğum sonrası immün reboundla birlikte otoimmün hastalıklar alevlenir. **PPT**, doğumdan sonraki **ilk 1 yıl** içinde görülen ağrısız tiroidittir. Anti-TPO pozitif kadınların **%50**'sinde gelişme riski vardır."
+          "metin": "Doğum sonrası immün reboundla birlikte otoimmün hastalıklar alevlenir. **PPT**, doğumdan sonraki **ilk 1 yıl** içinde görülen ağrısız tiroidittir. İlk trimesterde anti-TPO pozitif kadınlarda gelişme riski **%33–50**'dir."
         },
         {
-          "metin": "**Klasik trifazik seyir:** (1) **Tirotoksikoz fazı** (1–4. ay, yıkım kaynaklı) → (2) **Hipotiroidi fazı** (4–8. ay) → (3) **Ötiroidiye dönüş** (6–12. ay). Olguların **%20–30'unda kalıcı hipotiroidi** gelişir; bu grupta uzun süreli LT4 tedavisi gerekir."
+          "metin": "**Klasik trifazik seyir:** (1) **Tirotoksikoz fazı** (1–4. ay, yıkım kaynaklı) → (2) **Hipotiroidi fazı** (4–8. ay) → (3) **Ötiroidiye dönüş** (6–12. ay). Olguların **%5–10'unda kalıcı hipotiroidi** gelişir; bu grupta uzun süreli LT4 tedavisi gerekir."
         },
         {
           "metin": "**Tedavi:** Tirotoksikoz fazı semptomluysa β-bloker (propranolol) kullanılır — ATİ verilmez (yıkım kaynaklı, yeni sentez yok). Hipotiroidi fazı semptomluysa LT4 başlanır. Emziren annelerde ATİ gerekirse: PTU max 300 mg/gün, MMI max 20 mg/gün, emzirmeden hemen sonra alınarak etkiye uğramadan önce süt üretimi tamamlanmış olur."
@@ -536,7 +536,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Pratik Özet — Gebelik + Tiroid 6 Altın Kural: (1) 1. trimesterde TSH üst sınırı 2.5 mU/L. (2) LT4 gebe kalır kalınmaz %25–50 artır; hedef TSH 0.4–2.5. (3) Gebelikte hipertiroidi → önce GTT mi Graves mı? TRAb ayırt eder. (4) 1. trimesterde ATİ lazımsa PTU; 16. haftadan sonra MMI'ye geç. (5) Blok + replasman gebelikte kontrendike. (6) RAI/sintigrafi kesinlikle yasak."
+      "metin": "Pratik Özet — Gebelik + Tiroid 6 Altın Kural: (1) 1. trimesterde TSH üst sınırı 2.5 mU/L. (2) LT4 gebe kalır kalınmaz %25–30 artır; hedef TSH trimestere özgü aralık. (3) Gebelikte hipertiroidi → önce GTT mi Graves mı? TRAb ayırt eder. (4) 1. trimesterde ATİ lazımsa PTU; 16. haftadan sonra MMI'ye geç. (5) Blok + replasman gebelikte kontrendike (tek istisna: ablasyon sonrası izole fetal hipertiroidi). (6) RAI/sintigrafi kesinlikle yasak."
     }
   ]
 }

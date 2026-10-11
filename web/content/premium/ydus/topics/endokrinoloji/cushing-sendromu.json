@@ -266,7 +266,7 @@
           "renk": "mavi",
           "hucreler": [
             "1-mg Gece Boyu DST ★",
-            "<1.8 mcg/dL normal; 1.8-5 mcg/dL = MACS (Hafif Otonom Kortizol Sekresyonu); >5 mcg/dL = Overt CS",
+            "<1.8 mcg/dL normal; aşikar CS bulgusu yoksa >1.8 mcg/dL = MACS (Hafif Otonom Kortizol Sekresyonu), alt sınıflama yapılmaz; >5 mcg/dL gerçek hiperkortizolemi olasılığını artırır (sürekli değişken)",
             "OKS → CBG↑ ile yalancı pozitif; CYP3A4 indükleyicisi → hızlı klirens ile yalancı pozitif"
           ]
         },
@@ -322,7 +322,7 @@
       "baslik": "Tanı Adım 2 — ACTH Bağımlılığının Saptanması",
       "satirlar": [
         {
-          "metin": "Hiperkortizolizm doğrulandıktan sonra plazma ACTH ölçülür. **ACTH <10 pg/mL:** ACTH-bağımsız (adrenal) CS → sonraki adım ince kesitli adrenal BT. **ACTH >20 pg/mL:** ACTH-bağımlı CS (hipofizer veya ektopik). **ACTH 10-20 pg/mL (gri zon):** CRH veya desmopressin stimülasyon testleriyle ayırım yapılır."
+          "metin": "Hiperkortizolizm doğrulandıktan sonra plazma ACTH ölçülür. **ACTH <10 pg/mL:** ACTH-bağımsız (adrenal) CS → sonraki adım ince kesitli adrenal BT (TEMD öneri kutusu adrenal görüntülemeye geçiş eşiği olarak **<5 pg/mL** alır). **ACTH >20 pg/mL:** ACTH-bağımlı CS (hipofizer veya ektopik). **ACTH 10-20 pg/mL (gri zon):** tanı yine büyük olasılıkla adrenal CS'dir; ACTH-bağımlı CS dışlanamazsa CRH veya desmopressin stimülasyon testleriyle ayırım yapılır."
         }
       ]
     },
@@ -365,7 +365,7 @@
       "baslik": "Tanı Adım 3 — Cushing Hastalığı vs Ektopik ACTH (Lokalizasyon)",
       "satirlar": [
         {
-          "metin": "**Hipofiz MRG:** Adenom >6 mm ise ve klinik/biyokimyasal uyum varsa (örn. Yüksek Doz [8mg] DST'de kortizolün %50'den fazla baskılanması veya CRH/Desmopressin testinde kortizol/ACTH artışı) doğrudan Cushing Hastalığı tanısı konur."
+          "metin": "**Hipofiz MRG:** Adenom >9 mm ise (bazı uzmanlar >6 mm'yi yeterli sayar; 6–9 mm'de IPSS konusunda fikir birliği yok) ve klinik/biyokimyasal uyum varsa (örn. Yüksek Doz [8mg] DST'de kortizolün %50'den fazla baskılanması veya CRH/Desmopressin testinde kortizol/ACTH artışı) doğrudan Cushing Hastalığı tanısı konur."
         },
         {
           "metin": "**BIPSS (Bilateral İnferior Petrozal Sinüs Örneklemesi) ★ — Altın Standart:** Hipofiz MRG normal veya lezyon <6 mm ise uygulanır. Merkez(petrozal)/Perifer ACTH oranı bazalde ≥2, veya CRH/Desmopressin uyarısı sonrası ≥3 ise Cushing Hastalığı kanıtlanır. Gradiyent yoksa Ektopik ACTH düşünülerek Toraks/Batın BT, Ga-68 DOTATATE veya FDG-PET çekilir."
@@ -526,7 +526,7 @@
           "hucreler": [
             "Metirapon (Metyrapone)",
             "11-beta hidroksilaz (CYP11B1) inhibisyonu",
-            "Etkisi hızlı başlar; biriken androjen/DOC → şiddetli hipokalemi, HT, akne, hirsutizm. **Gebede tercih edilen ajan**"
+            "Etkisi hızlı başlar; biriken androjen/DOC → şiddetli hipokalemi, HT, akne, hirsutizm. **Gebelikte onaylı ilaç yok; seçili gebelerde kullanılabilir**"
           ]
         },
         {
@@ -641,7 +641,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Pratik Özet — Cushing Sendromu 6 Altın Kural: (1) ACTH <10 = adrenal kaynak, >20 = ACTH-bağımlı, 10-20 = gri zon (CRH/DDAVP testi). (2) BIPSS = MRG negatif/<6mm'de altın standart lokalizasyon testi. (3) USP8 mutasyonu → SSTR5↑ → pasireotide iyi yanıt; PRKACA → unilateral adrenal adenomun en sık mutasyonu. (4) Gebede metirapon tercih edilir. (5) Mifepriston tedavisi kortizol ile TAKİP EDİLEMEZ — klinik + glukoz + K ile izlenir. (6) Şiddetli acil CS'de 'block and replace' stratejisi (etomidat/osilodrostat + fizyolojik steroid replasmanı)."
+      "metin": "Pratik Özet — Cushing Sendromu 6 Altın Kural: (1) ACTH <10 (TEMD öneri kutusu: <5) = adrenal kaynak, >20 = ACTH-bağımlı, 10-20 = gri zon, büyük olasılıkla adrenal (gerekirse CRH/DDAVP testi). (2) BIPSS = MRG negatif/<6mm'de altın standart lokalizasyon testi. (3) USP8 mutasyonu → SSTR5↑ → pasireotide iyi yanıt; PRKACA → unilateral adrenal adenomun en sık mutasyonu. (4) Gebelikte onaylı ilaç yok; kabergolin ve metirapon seçili hastalarda kullanılabilir. (5) Mifepriston tedavisi kortizol ile TAKİP EDİLEMEZ — klinik + glukoz + K ile izlenir. (6) Şiddetli acil CS'de 'block and replace' stratejisi (etomidat/osilodrostat + fizyolojik steroid replasmanı)."
     }
   ]
 }

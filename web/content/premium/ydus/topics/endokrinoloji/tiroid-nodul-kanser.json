@@ -3,7 +3,7 @@
     "id": "tiroid-nodul-kanser",
     "branch": "endokrinoloji",
     "baslik": "Tiroid Nodülleri ve Kanserleri",
-    "altbaslik": "TSH/USG ile ilk değerlendirme, ACR TI-RADS skorlaması, İİAB endikasyon eşikleri, Bethesda sitoloji sistemi, tiroid kanseri alt tipleri ve tedavi/takip stratejileri",
+    "altbaslik": "TSH/USG ile ilk değerlendirme, ACR TI-RADS skorlaması (TEMD 2025 EU-TIRADS önerir), İİAB endikasyon eşikleri, Bethesda sitoloji sistemi, tiroid kanseri alt tipleri ve tedavi/takip stratejileri",
     "rozetler": [
       "SINAV SPOTU",
       "YENİ"
@@ -50,7 +50,7 @@
           "hucreler": [
             "III / IV",
             "Belirsiz (AUS/FLUS / Foliküler Neoplazi)",
-            "Moleküler test veya cerrahi"
+            "III: biyopsi tekrarı / moleküler test / lobektomi / sürveyans; IV: moleküler test / lobektomi"
           ]
         },
         {
@@ -58,7 +58,7 @@
           "hucreler": [
             "V / VI",
             "Malignite şüphesi / Malign",
-            "Cerrahi (Tiroidektomi)"
+            "V: moleküler test / lobektomi / tiroidektomi; VI: lobektomi veya tiroidektomi"
           ]
         }
       ]

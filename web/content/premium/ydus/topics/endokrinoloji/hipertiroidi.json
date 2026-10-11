@@ -489,7 +489,7 @@
           "renk": "kirmizi",
           "hucreler": [
             "İlk Basamak Tedavi",
-            "**Antitiroid İlaçlar** (Metimazol 30-40 mg/gün ± Perklorat)",
+            "**Antitiroid İlaçlar** (Metimazol genelde 40 mg/gün ± Perklorat)",
             "**Oral Glukokortikoidler** (Prednizon 30-40 mg/gün)"
           ]
         }
@@ -534,7 +534,7 @@
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "baslik": "Ayırt Edilemeyen / Miks Vakalar",
-      "metin": "Metimazol + Prednizon kombine başlanır."
+      "metin": "Önce metimazol; 4–6 haftada yanıt yoksa prednizon eklenir ya da ikisi birlikte başlanır. Klinik şiddetliyse Metimazol + Prednizon kombine başlanır."
     },
     {
       "tip": "metin",
@@ -756,7 +756,7 @@
       "baslik": "D. Subklinik Hipertiroidizmde Tedavi Endikasyonları",
       "satirlar": [
         {
-          "metin": "Subklinik hipertiroidi (normal fT4/fT3, TSH <0.5 mU/L) varlığında tedavi kararı TSH baskılanmasının derecesine ve risk faktörlerine göre verilir:"
+          "metin": "Subklinik hipertiroidi (normal fT4/fT3, TSH <0.4 mU/L) varlığında tedavi kararı TSH baskılanmasının derecesine ve risk faktörlerine göre verilir:"
         }
       ]
     },
@@ -773,7 +773,7 @@
           "renk": "kirmizi",
           "hucreler": [
             "Ağır Baskılanmış TSH (<0.1 mU/L - Grade 2)",
-            "**Yaşı ≥65 olan tüm bireylerde**, kardiyovasküler hastalığı/riski olanlarda, osteoporozu bulunanlarda veya semptomatik hastalarda",
+            "**Yaştan bağımsız tüm hastalarda** (≥65 ve <65 yaş)",
             "**Tedavi VERİLMELİDİR**"
           ]
         },
@@ -781,7 +781,7 @@
           "renk": "sari",
           "hucreler": [
             "Hafif Baskılanmış TSH (0.1 - 0.4 mU/L - Grade 1)",
-            "Birey ≥65 yaşında ise ve kardiyak/kemik risk faktörleri taşıyorsa veya sintigrafide otonom sıcak nodül saptanmışsa",
+            "En az biri varsa: ≥65 yaş, kalp hastalığı, osteoporoz, hipertiroidi semptomları, östrojen/bifosfonat almayan postmenopozal kadın (hiçbiri yoksa takip)",
             "**Tedavi değerlendirilmelidir**"
           ]
         }
@@ -910,7 +910,7 @@
           "renk": "mavi",
           "hucreler": [
             "1. ADRENERJİK BLOKAJ",
-            "Propranolol: 60-80 mg oral (4-6 saatte bir) veya IV Esmolol yükleme/infüzyonu.",
+            "Propranolol: 60-80 mg oral (6 saatte bir; 120 mg'a kadar çıkılabilir) veya IV Esmolol yükleme/infüzyonu.",
             "—"
           ]
         },
@@ -934,7 +934,7 @@
           "renk": "sari",
           "hucreler": [
             "4. PERİFERİK T4-T3 DÖNÜŞÜMÜNÜN İNHİBİSYONU VE SÜRRENAL DESTEK",
-            "Hidrokortizon: 300 mg IV yükleme, ardından 100 mg (8 saatte bir).",
+            "Hidrokortizon: 50-100 mg IV (6-8 saatte bir).",
             "—"
           ]
         },
@@ -942,7 +942,7 @@
           "renk": "mavi",
           "hucreler": [
             "5. ENTEROHEPATİK DOLAŞIMIN KESİLMESİ",
-            "Kolestiramin: 4 g oral (6 saatte bir)",
+            "Kolestiramin: 1-4 g oral (günde 2 kez)",
             "Atılan hormonların emilimini engeller."
           ]
         }

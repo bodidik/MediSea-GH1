@@ -260,9 +260,9 @@
           "renk": "kirmizi",
           "hucreler": [
             "Tiroid Dışı Hastalık Sendromu (TDHS)",
-            "↓ (ağırlıklı sT3↓↓)",
+            "Akut faz N/↑, kronik faz ↓ (ağırlıklı sT3↓↓)",
             "↓ / N",
-            "rT3 ↑ (periferik dönüşüm bozukluğu), ağır akut hastalık zemini; TRH stimülasyon testinde TDHS'de normal yanıt, santral hipotiroidide yanıt yok (hipofizer) ya da gecikmiş (hipotalamik)"
+            "rT3 ↑ (periferik dönüşüm bozukluğu), ağır akut hastalık zemini; TRH stimülasyon testinde TDHS'de değişken yanıt, santral hipotiroidide yanıt yok (hipofizer) ya da gecikmiş (hipotalamik)"
           ]
         },
         {
@@ -314,7 +314,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "ek_bilgi",
-      "metin": "TRH Stimülasyon Testi: Santral hipotiroidi–TDHS ayırımında kullanılır (ülkemizde pratikte nadiren bulunur). İV TRH sonrası TSH ölçülür: TDHS'de normal TSH yanıtı alınırken, hipofizer hastalıkta yanıt alınamaz, hipotalamik hastalıkta ise gecikmiş TSH yanıtı gözlenir."
+      "metin": "TRH Stimülasyon Testi: Santral hipotiroidi–TDHS ayırımında kullanılır (ülkemizde pratikte nadiren bulunur). İV TRH sonrası TSH ölçülür: TDHS'de TSH yanıtı değişkenken, hipofizer hastalıkta yanıt alınamaz, hipotalamik hastalıkta ise gecikmiş TSH yanıtı gözlenir."
     },
     {
       "tip": "bilgi_kutusu",

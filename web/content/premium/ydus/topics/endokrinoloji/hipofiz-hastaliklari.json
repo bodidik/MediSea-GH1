@@ -636,7 +636,7 @@
       "baslik": "C. Erişkin Büyüme Hormonu Eksikliği (aGHD)",
       "satirlar": [
         {
-          "metin": "3 veya daha fazla tropik hormon eksikliği bulunan ve serum IGF-1 seviyesi düşük olan hastalarda **uyarım testi yapılmasına gerek yoktur**; aGHD tanısı kesin kabul edilir."
+          "metin": "3 veya daha fazla tropik hormon eksikliği bulunan ve serum IGF-1 seviyesi düşük (≤95 ng/mL) olan hastalarda aGHD olasılığı **%95'in üzerindedir**; tanı yine de dinamik testle konur."
         },
         {
           "metin": "Diğer hastalarda doğrulama için **İnsülin Tolerans Testi (ITT)** (kan şekeri <40 mg/dL iken **pik GH <3 µg/L** ağır GH eksikliği), **Glukagon Uyarım Testi** (BMI <30 kg/m² için kesim <3 µg/L; BMI >30 kg/m² için kesim <1 µg/L) veya oral ghrelin mimetik **Macimorelin Testi** (pik GH <2.8-5.1 ng/mL) uygulanır."
@@ -733,7 +733,7 @@
           "metin": "• En sık izole veya kombine **ACTH ve TSH yetersizliği** ile klinik verir. MRG tamamen normal olabilir veya hafif simetrik büyüme gösterebilir."
         },
         {
-          "metin": "**IgG4-İlişkili Hipofizit:** Sistemik fibrosklerozan hastalığın (otoimmün pankreatit, retroperitoneal fibrozis, Riedel tiroiditi) parçasıdır. Tanıda serum IgG4 düzeyi yükselir (>135 mg/dL); biyopsisinde HPF başına >10 IgG4(+) plazma hücresi veya IgG4+/IgG+ plazma hücresi oranının > %40 olması patognomoniktir. Glukokortikoid tedavisine yanıtı mükemmeldir."
+          "metin": "**IgG4-İlişkili Hipofizit:** Sistemik fibrosklerozan hastalığın (otoimmün pankreatit, retroperitoneal fibrozis, Riedel tiroiditi) parçasıdır. Tanıda serum IgG4 düzeyi yükselir (>140 mg/dL); biyopsisinde HPF başına >10 IgG4(+) plazma hücresi veya IgG4+/IgG+ plazma hücresi oranının > %40 olması patognomoniktir. Glukokortikoid tedavisine yanıtı mükemmeldir."
         },
         {
           "metin": "**Anti-PIT1 Hipofizit:** Paraneoplastik bir sendromdur (özellikle timoma veya nöroendokrin tümörlerle ilişkili). Tümör hücrelerindeki ektopik PIT1 ekspresyonuna karşı gelişen sitotoksik T-lenfosit yanıtı sonucunda hastada kazanılmış **izole GH, PRL ve TSH eksikliği triadı** gelişir."
@@ -783,7 +783,7 @@
       "tip": "bilgi_kutusu",
       "tur": "uyari",
       "baslik": "Acil Yönetim",
-      "metin": "Nörogörüntüleme (kontrastsız BT veya MRG) sonrasında acilen **yüksek doz parenteral glukokortikoid (100 mg IV hidrokortizon)** replasmanı başlanmalıdır. Bilinç bozukluğu veya ciddi nöro-oftalmolojik kayıp varlığında acil transsfenoidal dekompresyon cerrahisi uygulanır."
+      "metin": "Kortizol için kan alındıktan hemen sonra, sonuç beklenmeden acilen **yüksek doz parenteral glukokortikoid (100–200 mg IV bolus hidrokortizon)** replasmanı başlanmalıdır. Bilinç bozukluğu veya ciddi nöro-oftalmolojik kayıp varlığında erken (ilk 8 gün içinde) transsfenoidal dekompresyon cerrahisi düşünülmelidir."
     },
     {
       "tip": "temd",
