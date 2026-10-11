@@ -4854,9 +4854,9 @@
  ],
  "hematoloji/gilteritinib-flt3-aml": [
   {
-   "brans": "onkoloji",
-   "slug": "khdak-tedavisi",
-   "baslik": "Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tedavisi: Erken Evreden Metastatik Hastalığa - Bölüm 3"
+   "brans": "hematoloji",
+   "slug": "allojenik-kok-hucre-nakli",
+   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
   }
  ],
  "hematoloji/hct-ci-geriatrik-degerlendirme": [
@@ -7876,11 +7876,6 @@
    "brans": "endokrinoloji",
    "slug": "usp8-mutasyonu-ve-pasireotid",
    "baslik": "Cushing Hastalığı: USP8 Mutasyonu ve Pasireotid Yanıtı (İleri Okuma)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "gilteritinib-flt3-aml",
-   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
   },
   {
    "brans": "onkoloji",
