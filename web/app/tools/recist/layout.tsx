@@ -43,23 +43,23 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/journal-club/flaura2-osimertinib-kemoterapi-nejm" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                NEJM: FLAURA2 Faz 3 - EGFR-Mutant KHDAK'de Osimertinib ve Kemoterapi
-              </Link>
-            </li>
-            <li>
               <Link href="/topics/onkoloji/khdak-tani-algoritma-evreleme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tanısal Algoritma, Evreleme ve Moleküler Patobiyoloji - Bölüm 2
               </Link>
             </li>
             <li>
-              <Link href="/topics/journal-club/sac-tmt-optitrop-lung04-nejm" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                NEJM: EGFR-Mutant KHDAK'de Yeni Standart Adayı Sacituzumab Tirumotecan
+              <Link href="/topics/journal-club/flaura2-osimertinib-kemoterapi-nejm" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                NEJM: FLAURA2 Faz 3 - EGFR-Mutant KHDAK'de Osimertinib ve Kemoterapi
               </Link>
             </li>
             <li>
-              <Link href="/topics/onkoloji/pankreas-kanseri-ileri-tedaviler" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Pankreas Duktal Adenokarsinomunda İleri Onkolojik Tedavi Protokolleri
+              <Link href="/topics/onkoloji/khdak-tedavisi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tedavisi: Erken Evreden Metastatik Hastalığa - Bölüm 3
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/journal-club/sac-tmt-optitrop-lung04-nejm" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                NEJM: EGFR-Mutant KHDAK'de Yeni Standart Adayı Sacituzumab Tirumotecan
               </Link>
             </li>
           </ul>

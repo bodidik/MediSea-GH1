@@ -58,8 +58,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/onkoloji/pankreas-kanseri-ileri-tedaviler" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Pankreas Duktal Adenokarsinomunda İleri Onkolojik Tedavi Protokolleri
+              <Link href="/topics/onkoloji/khdak-tedavisi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tedavisi: Erken Evreden Metastatik Hastalığa - Bölüm 3
               </Link>
             </li>
           </ul>

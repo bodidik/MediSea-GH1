@@ -4596,6 +4596,20 @@
         "kaynak": "kavram"
       }
     ],
+    "onkoloji/khdak-tedavisi": [
+      {
+        "slug": "ecog",
+        "name": "ECOG Performans Durumu",
+        "eslesen": "küçük hücreli dışı",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "recist",
+        "name": "RECIST 1.1 Yanıt Değerlendirmesi",
+        "eslesen": "küçük hücreli dışı",
+        "kaynak": "kavram"
+      }
+    ],
     "onkoloji/opioidler-ve-solunum": [
       {
         "slug": "gds-15",
@@ -8374,15 +8388,21 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "onkoloji/pankreas-kanseri-ileri-tedaviler",
-        "baslik": "Pankreas Duktal Adenokarsinomunda İleri Onkolojik Tedavi Protokolleri",
-        "eslesen": "ileri onkolojik",
+        "yol": "onkoloji/khdak-tedavisi",
+        "baslik": "Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tedavisi: Erken Evreden Metastatik Hastalığa - Bölüm 3",
+        "eslesen": "küçük hücreli dışı",
         "kaynak": "kavram"
       },
       {
         "yol": "journal-club/sac-tmt-optitrop-lung04-nejm",
         "baslik": "NEJM: EGFR-Mutant KHDAK'de Yeni Standart Adayı Sacituzumab Tirumotecan",
         "eslesen": "KHDAK",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "onkoloji/pankreas-kanseri-ileri-tedaviler",
+        "baslik": "Pankreas Duktal Adenokarsinomunda İleri Onkolojik Tedavi Protokolleri",
+        "eslesen": "ileri onkolojik",
         "kaynak": "kavram"
       },
       {
@@ -8394,14 +8414,20 @@
     ],
     "recist": [
       {
+        "yol": "onkoloji/khdak-tani-algoritma-evreleme",
+        "baslik": "Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tanısal Algoritma, Evreleme ve Moleküler Patobiyoloji - Bölüm 2",
+        "eslesen": "küçük hücreli dışı",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "journal-club/flaura2-osimertinib-kemoterapi-nejm",
         "baslik": "NEJM: FLAURA2 Faz 3 - EGFR-Mutant KHDAK'de Osimertinib ve Kemoterapi",
         "eslesen": "KHDAK",
         "kaynak": "kavram"
       },
       {
-        "yol": "onkoloji/khdak-tani-algoritma-evreleme",
-        "baslik": "Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tanısal Algoritma, Evreleme ve Moleküler Patobiyoloji - Bölüm 2",
+        "yol": "onkoloji/khdak-tedavisi",
+        "baslik": "Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tedavisi: Erken Evreden Metastatik Hastalığa - Bölüm 3",
         "eslesen": "küçük hücreli dışı",
         "kaynak": "kavram"
       },
@@ -9000,11 +9026,11 @@
     ]
   },
   "olcum": {
-    "konu": 490,
+    "konu": 491,
     "arac": 281,
-    "araciOlanKonu": 353,
+    "araciOlanKonu": 354,
     "konusuOlanArac": 176,
-    "bag": 718,
-    "kavramBag": 638
+    "bag": 720,
+    "kavramBag": 640
   }
 }
