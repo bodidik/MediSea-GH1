@@ -305,7 +305,9 @@ function Iskele({ babaX }: { babaX: number }) {
 
 /** Sahne yerleşimi: geniş ekranda tüm 1440, dar ekranda ortadaki dilim. */
 type Yerlesim = { gunes: number; x0: number; x1: number; a: number; b: number; baba: number; olcek: number };
-const GENIS: Yerlesim = { gunes: 1130, x0: 0, x1: 1440, a: 700, b: 330, baba: 392, olcek: 1 };
+// Geniş ekranda ORTA (x 380–1080) okuma sütununun arkası: orada yalnız ufuk
+// ve dalga kalır, bütün ögeler kenarlara yerleşir.
+const GENIS: Yerlesim = { gunes: 1130, x0: 0, x1: 1440, a: 240, b: 120, baba: 995, olcek: 1 };
 const DAR: Yerlesim = { gunes: 860, x0: 480, x1: 960, a: 600, b: 560, baba: 520, olcek: 0.62 };
 
 export default function DenizFiligrani() {
@@ -327,7 +329,7 @@ export default function DenizFiligrani() {
   const L = dar ? DAR : GENIS;
   const k = L.olcek;
   const rnd = uretec(h);
-  const bulutX = L.x0 + (L.x1 - L.x0) * (0.18 + ((h >> 7) % 20) / 100);
+  const bulutX = L.x0 + (L.x1 - L.x0) * (dar ? 0.18 + ((h >> 7) % 20) / 100 : 0.06 + ((h >> 7) % 12) / 100);
 
   return (
     <svg
@@ -355,7 +357,7 @@ export default function DenizFiligrani() {
 
         {/* gökte bulutlar */}
         <Bulut x={bulutX} y={dar ? 250 : 190} s={dar ? 0.7 : 1} />
-        {!dar && <Bulut x={bulutX + 520} y={280} s={0.7} />}
+        {!dar && <Bulut x={1300} y={280} s={0.7} />}
 
         {/* ufuk, dalga vuruşları ve güneş yolu */}
         <path d={`M0 ${UFUK} H1440`} />
@@ -371,30 +373,30 @@ export default function DenizFiligrani() {
             <Marti x={L.b + 80 * k} y={344} s={0.55 * k} />
           </>
         )}
-        {sahne === 1 && <FenerBurnu x={dar ? 600 : L.b} s={dar ? 0.8 : 1} />}
+        {sahne === 1 && <FenerBurnu x={dar ? 600 : 220} s={0.8} />}
         {sahne === 2 && (
           <>
-            <Silep x={dar ? 620 : 520} s={dar ? 0.7 : 1} />
-            <Marti x={dar ? 540 : 860} y={350} s={0.8 * k} />
-            <Marti x={dar ? 576 : 900} y={326} s={0.6 * k} />
+            <Silep x={dar ? 620 : 230} s={dar ? 0.7 : 1} />
+            <Marti x={dar ? 540 : 120} y={350} s={0.8 * k} />
+            <Marti x={dar ? 576 : 160} y={326} s={0.6 * k} />
           </>
         )}
         {sahne === 3 && (
           <>
-            <Ada x={dar ? 620 : 380} s={dar ? 0.55 : 1} />
-            {!dar && <Yelkenli x={820} s={0.7} />}
+            <Ada x={dar ? 620 : 230} s={dar ? 0.55 : 0.8} />
+            {!dar && <Yelkenli x={1380} s={0.7} />}
           </>
         )}
         {sahne === 4 && (
           <>
             <Kayik x={dar ? 600 : 250} y={680} s={dar ? 0.8 : 1} />
-            <Yelkenli x={dar ? 720 : 760} s={0.6 * k} />
+            <Yelkenli x={dar ? 720 : 1340} s={0.6 * k} />
           </>
         )}
         {sahne === 5 && (
           <>
-            <UzakKiyi x0={L.x0} x1={L.x0 + (L.x1 - L.x0) * 0.55} />
-            <Silep x={dar ? 780 : 760} s={dar ? 0.45 : 0.7} />
+            <UzakKiyi x0={L.x0} x1={L.x0 + (L.x1 - L.x0) * (dar ? 0.55 : 0.26)} />
+            <Silep x={dar ? 780 : 1340} s={dar ? 0.45 : 0.5} />
           </>
         )}
 
@@ -402,14 +404,17 @@ export default function DenizFiligrani() {
         {sahne !== 4 && <Marina x={dar ? 820 : 1180} s={dar ? 0.55 : 1} />}
         {sahne !== 0 && sahne !== 2 && (
           <>
-            <Marti x={L.x0 + (L.x1 - L.x0) * 0.62} y={dar ? 380 : 300} s={k} />
-            <Marti x={L.x0 + (L.x1 - L.x0) * 0.62 + 40 * k} y={dar ? 360 : 280} s={0.7 * k} />
+            <Marti x={L.x0 + (L.x1 - L.x0) * (dar ? 0.62 : 0.86)} y={dar ? 380 : 300} s={k} />
+            <Marti x={L.x0 + (L.x1 - L.x0) * (dar ? 0.62 : 0.86) + 40 * k} y={dar ? 360 : 280} s={0.7 * k} />
           </>
         )}
-        <Capa x={dar ? 900 : 1060} y={858} s={dar ? 0.7 : 1} />
+        <Capa x={dar ? 900 : 1110} y={858} s={dar ? 0.7 : 1} />
         {!dar && <Dumen x={1330} y={840} />}
 
-        <Iskele babaX={L.baba} />
+        {/* geniş ekranda iskele küçülüp sol kenara çekilir */}
+        <g transform={dar ? undefined : "translate(-252 360) scale(0.6)"}>
+          <Iskele babaX={L.baba} />
+        </g>
       </g>
     </svg>
   );
