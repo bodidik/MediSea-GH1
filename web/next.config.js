@@ -112,6 +112,8 @@ module.exports = {
       // kullanıcı ikisini de yer tutucu sayıp sildi — üst konu mikrositer anemiler (8 Eki 2026).
       { source: '/topics/hematoloji/demir-eksikligi', destination: '/topics/hematoloji/mikrositer-anemiler', permanent: true },
       { source: '/topics/hematoloji/demir-eksikligi-anemisi', destination: '/topics/hematoloji/mikrositer-anemiler', permanent: true },
+      // Kalsiyum homeostazı iki kopya duruyordu; gizli kopya silindi, yayındaki kalsiyum-homeostazi-fizyoloji kaldı (11 Eki 2026).
+      { source: '/topics/endokrinoloji/kalsiyum-metabolizmasi-ana', destination: '/topics/endokrinoloji/kalsiyum-homeostazi-fizyoloji', permanent: true },
       // Bilirubin metabolizması (sarılık) sayfası kullanıcı kararıyla Genel Dahiliye'ye taşındı (27 Eyl 2026).
       { source: '/topics/gastroenteroloji/bilirubin-metabolizmasi', destination: '/topics/genel-dahiliye/bilirubin-metabolizmasi', permanent: true },
       // AYNI SKOR İKİ AYRI ARAÇ OLARAK DURUYORDU: /tools/heart-score (Kardiyoloji)

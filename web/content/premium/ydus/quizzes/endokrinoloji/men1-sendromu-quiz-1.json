@@ -381,6 +381,263 @@
       "etiketler": ["Zollinger-Ellison sendromu", "PPİ dozu", "duodenal gastrinoma", "medikal tedavi"],
       "zorluk": "orta",
       "kaynak": "Bergsland E, Ge PS. Management and prognosis of gastrinoma (Zollinger-Ellison syndrome). UpToDate; Thakker et al. J Clin Endocrinol Metab 2012"
+    },
+    {
+      "id": "s16",
+      "metin": "MEN1 zemininde ektopik Cushing sendromu nedeniyle osilodrostat 60 mg/gün başlanan bir hastada 3. günde K⁺: 2.9 mmol/L, KB: 175/105 mmHg, QTc: 468 ms saptanıyor. Tedaviye spironolakton ekleniyor.\n\nSpironolaktonun eklenmesinin birincil patofizyolojik gerekçeleri aşağıdakilerin hangisinde doğru ve eksiksiz olarak verilmiştir?",
+      "secenekler": {
+        "A": "DOC birikiminin MR uyarmasıyla gelişen K⁺ atılımını engellemek ve hERG blokajıyla sinerjize olan hipokalemiyi düzeltmek",
+        "B": "Kortizolü normalleştirerek CYP11B1 üzerindeki osilodrostat blokajını kaldırmak",
+        "C": "Aldosteron salgısını doğrudan bloke ederek hipertansiyonu kontrol altına almak",
+        "D": "Osilodrostatın hERG blokajını reseptör düzeyinde antagonize etmek",
+        "E": "ACTH salgısını azaltarak DOC birikiminin önüne geçmek"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Osilodrostat CYP11B1 blokajı → ACTH ↑ → DOC birikimi zincirini ve bunun MR ile hERG üzerindeki çift tehlikesini soran bir mekanizma sorusudur.",
+      "aciklama_detay": "**DOC birikimi:** Osilodrostat CYP11B1'i bloke ettiğinde kortizol düşer, negatif geri bildirim kalkar, ACTH artar ve blokaj gerisinde **11-deoksikortikosteron (DOC)** birikir. DOC güçlü bir mineralokortikoid reseptör agonistidir; renal distal tübülden K⁺ atılımını artırır, Na⁺/su tutarak hipertansiyon + hipokalemi üçlüsünü oluşturur. Spironolakton bu etkiyi **MR antagonizması** ile kırar.\n\n**Aritmi riski:** Osilodrostat kardiyak **hERG** kanallarını doğrudan inhibe ederek QTc'yi uzatır. DOC kaynaklı hipokalemi bu etkiyle sinerjize olunca torsades de pointes / VF riski dramatik artar. Spironolakton K⁺ tutarak bu sinerjistik riski azaltır. MEN1 hastalarında K⁺ hedefi **4.5–5.0 mmol/L**'dir.\n\n• **B:** Spironolakton osilodrostat blokajını kaldırmaz.\n• **C:** Osilodrostat sürecindeki temel sorun DOC'tur, aldosteron değil.\n• **D:** Spironolakton hERG antagonisti değildir; K⁺ düzeltmesi aracılığıyla dolaylı koruma sağlar.\n• **E:** Spironolakton ACTH'ı etkilemez.",
+      "etiketler": [
+        "MEN1",
+        "Osilodrostat",
+        "DOC",
+        "Spironolakton",
+        "QTc",
+        "Mineralokortikoid"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s17",
+      "metin": "MEN2A tanılı bir hastanın aile taramasında MEN1 mutasyon taşıyıcısı olan 38 yaşındaki kız kardeşinde biyokimyasal feokromositoma saptanıyor. Hastada aynı zamanda iyonize kalsiyum 1.42 mmol/L ve PTH 148 pg/mL ile primer hiperparatiroidi mevcuttur.\n\nEş zamanlı feokromositoma ve primer hiperparatiroidide cerrahi öncelik nasıl belirlenmelidir?",
+      "secenekler": {
+        "A": "Hiperkalsemi hayatı tehdit ettiğinden önce paratiroidektomi yapılmalı, ardından adrenalektomi planlanmalıdır.",
+        "B": "Feokromositoma intraoperatif hipertansif kriz riski nedeniyle önce adrenalektomi ile tedavi edilmeli; paratiroidektomi sonraya bırakılmalıdır.",
+        "C": "Her iki ameliyat eş zamanlı tek seansta yapılmalıdır; ayrı ayrı cerrahi her zaman kontrendikedir.",
+        "D": "Feokromositoma asemptomatik ise paratiroidektomi önce yapılabilir.",
+        "E": "Her iki patoloji de radyofrekans ablasyon ile tedavi edilmelidir; açık cerrahi kontrendikedir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "MEN sendromlarında feokromositoma ve başka endokrin tümörün birlikte bulunduğu durumlarda cerrahi sıralama kuralını soran klasik bir öncelik sorusudur.",
+      "aciklama_detay": "Feokromositoma medikal olarak hazırlanmadan (alfa blokaj) herhangi bir anestezi veya cerrahi girişim, **intraoperatif ölümcül hipertansif kriz** riskini taşır. Bu kural, hipertansif tablonun MTC cerrahisi veya paratiroidektomi sırasında tetiklenmesini önlemek amacıyla tüm MEN sendromlarında geçerlidir.\n\nBu nedenle boyun cerrahisinden önce mutlaka adrenalektomi tamamlanmalıdır. Perioperatif alfa blokaj (fenoksibenzamin veya doksazosin) en az 7–10 gün öncesinden başlanmalı; beta blokaj yalnızca alfa blokajdan sonra eklenmelidir.\n\n• **A:** Hiperkalseminin şiddeti burada önceliği değiştirmez; anestezi riski feokromositomadan kaynaklanır.\n• **C:** Feokromositoma cerrahisi her koşulda önce tamamlanmalıdır.\n• **D:** Asemptomatik feokromositoma da intraoperatif kriz tetikleyebilir; sıralama değişmez.",
+      "etiketler": [
+        "MEN1",
+        "MEN2",
+        "Feokromositoma",
+        "Bilateral Adrenalektomi",
+        "Cerrahi Öncelik",
+        "PHPT"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s18",
+      "metin": "MEN1 nedeniyle bilateral adrenalektomi geçirmiş 44 yaşında bir hasta gastroenterit nedeniyle acil servise başvurdu. KB: 80/50 mmHg, Na⁺: 127 mEq/L, K⁺: 5.6 mEq/L, kan şekeri: 52 mg/dL. Evde hidrokortizon ve fludrokortizon kullanmaktadır.\n\nAşağıdaki müdahalelerden hangisi hatalıdır?",
+      "secenekler": {
+        "A": "Hemen 100 mg hidrokortizon IV bolus uygulanmalıdır.",
+        "B": "Laboratuvar sonuçları beklenmeden tedavi başlanmalıdır.",
+        "C": "%0.9 NaCl + dekstroz içeren IV solüsyon başlanmalıdır.",
+        "D": "Akut fazda fludrokortizon 0.1 mg IV bolus verilmelidir.",
+        "E": "Kültürler alındıktan hemen sonra ampirik antibiyotik başlanmalıdır."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "Adrenal krizin akut yönetiminde mineralokortikoid eklenmesinin doğru zamanlamasını ve gerekçesini sorgulayan bir soru.",
+      "aciklama_detay": "Adrenal krizin akut fazında **fludrokortizon eklenmesine gerek yoktur**. Gerekçesi: >50 mg/gün dozundaki hidrokortizon mineralokortikoid reseptörlerini maksimum düzeyde uyarır — ek fludrokortizon gereksizdir. Ayrıca fludrokortizon'un IV formu yoktur; oral bir ajandır.\n\nFludrokortizon yalnızca hidrokortizon dozu <50 mg/güne düşürüldüğünde ve hasta oral beslenmeye geçtiğinde 0.05–0.1 mg/gün olarak eklenir.\n\n• **A:** Doğru — acil HC IV bolus ilk adımdır.\n• **B:** Doğru — klinik şüphede laboratuvar beklenmez, kriz geri dönüşümsüz seyredebilir.\n• **C:** Doğru — hipoglisemi eşlik ettiğinde dekstroz içeren izotonik solüsyon tercih edilir.\n• **E:** Doğru — tetikleyici enfeksiyon araştırılmalı ve ampirik antibiyotik başlanmalıdır.",
+      "etiketler": [
+        "MEN1",
+        "Adrenal Kriz",
+        "Hidrokortizon",
+        "Fludrokortizon",
+        "Bilateral Adrenalektomi"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s19",
+      "metin": "MEN1 mutasyon taşıyıcısı 42 yaşında asemptomatik kadın hasta rutin sürveyansa geliyor. Son mamografisi 3 yıl önce normal raporlanmış.\n\nGüncel 2025 uluslararası MEN1 Sürveyans Kılavuzlarına göre bu hastanın meme kanseri taraması için doğru yaklaşım hangisidir?",
+      "secenekler": {
+        "A": "50 yaşına kadar tarama gerekmez; genel popülasyon tarama programı yeterlidir.",
+        "B": "Her yıl mamografi çekilmelidir; 2 yıllık aralık yetersizdir.",
+        "C": "Mamografi yerine yalnızca meme MRG kullanılmalıdır; mamografinin kümülatif radyasyon yükü MEN1'de kontrendikasyon oluşturur.",
+        "D": "Her 2 yılda bir mamografi planlanmalıdır; dens meme veya ailesel öyküde ek ultrason veya MRG eklenebilir.",
+        "E": "BRCA taşıyıcılarındaki gibi profilaktik bilateral mastektomi önerilmelidir."
+      },
+      "dogru": "D",
+      "aciklama_kisa": "MEN1 kadın taşıyıcılarında meme kanseri tarama protokolünü ve güncel kılavuz değişimini sorgulayan bir sürveyans sorusu.",
+      "aciklama_detay": "Kadın MEN1 taşıyıcılarında meme kanseri riski genel popülasyona kıyasla **2–3 kat artmış**tır; tümörler belirgin biçimde daha erken yaşlarda ortaya çıkar. Fransız GTE (Goudet 2024) + Marburg protokolü ve **EJE 2025 MEN1 Sürveyans Kılavuzu** 40 yaşından itibaren her 2 yılda bir mamografiyi zorunlu endikasyon olarak kabul etmiştir.\n\nDens meme veya ailesel kalıtsal meme öyküsü varlığında bireysel risk analizine göre meme ultrasonografisi veya meme MRG eklenmesi önerilir. Bu tarama programının uzun dönem mortalite üzerindeki net etkinliğini kanıtlayan prospektif veriler henüz sınırlıdır — paylaşılan karar verme esastır.\n\n• **A:** Yanlış; tarama 40 yaşından başlar.\n• **B:** Kümülatif radyasyon yükü nedeniyle yıllık mamografi tercih edilmez; 2 yıllık aralık standarttır.\n• **C:** Mamografi kontrendike değildir; radyasyon yükü dikkate alınır ancak protokolden çıkarılmaz.\n• **E:** MEN1 riski BRCA riski ile karşılaştırılamaz; profilaktik mastektomi önerilmez.",
+      "etiketler": [
+        "MEN1",
+        "Meme Kanseri",
+        "Tarama",
+        "EJE 2025",
+        "GTE",
+        "Mamografi"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s20",
+      "metin": "MEN1 hastasından alınan meme kanseri doku örneğinde 11q13 lokusunda heterozigotluk kaybı (LOH) saptanmış ve menin ekspresyonu tamamen ortadan kalkmıştır.\n\nMenin kaybının meme karsinogenezini nasıl tetiklediğine ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+      "secenekler": {
+        "A": "Menin-MLL kompleksinin bozulması p21 ve p27 ekspresyonunu düşürerek G1/S geçişini kolaylaştırır.",
+        "B": "Menin, ER-α ile fiziksel etkileşime girerek östrojen bağımlı proliferatif gen transkripsiyonunu kontrol altında tutar.",
+        "C": "Menin kaybı BRCA1/2 mutasyonlarıyla aynı patogenetik yolağı aktive ederek karsinogenezi başlatır.",
+        "D": "Menin eksikliği tümör supresör genlerin promoter bölgelerindeki H3K4 trimetilasyon kalıplarını bozarak bu genleri susturur.",
+        "E": "İki darbeli (two-hit) mekanizma geçerlidir; germline mutasyona somatik vahşi tip allel kaybı eşlik eder."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "MEN1 meme kanserinin BRCA'dan bağımsız patogenezini ve menin'in epigenetik tümör supresör rolünü sorgulayan bir mekanizma sorusu.",
+      "aciklama_detay": "MEN1 zeminindeki meme kanseri, BRCA1/2 yolağından **tamamen bağımsız** bir patogenetik mekanizmaya sahiptir. Mevcut klinik verilerde MEN1 ile BRCA1/2 arasında doğrudan bir ilişki gösterilmemiştir. MEN1 ilişkili meme karsinogenezinin birincil sürücüsü menin'in tümör supresör fonksiyonunun yitirilmesidir — bu süreç BRCA'nın DNA tamir yolağından farklı, epigenetik ve transkripsiyonel bir düzlem üzerinde işler.\n\n• **A:** Doğru — menin MLL aracılığıyla p21/p27 transkripsiyonunu destekler; menin kaybında hücre döngüsü freni kalkar.\n• **B:** Doğru — menin ER-α ile fiziksel etkileşime girer, proliferatif gen transkripsiyonunu baskılar.\n• **D:** Doğru — menin H3K4me3'ü katalize eden MLL kompleksinin parçasıdır; kaybında tümör supresör gen promoterleri susturulur.\n• **E:** Doğru — Knudson two-hit hipoteziyle uyumlu LOH, MEN1 meme kanserlerinde gösterilmiştir.\n\n**💡 Pratik Not:** Sporadik pNET tanılı hastaların ~%17'sinde germline BRCA2/CHEK2/MEN1 mutasyonları saptanabilir — bu BRCA ve MEN1'in aynı karsinogenetik yolağı paylaştığı anlamına gelmez.",
+      "etiketler": [
+        "MEN1",
+        "Meme Kanseri",
+        "LOH",
+        "Menin",
+        "BRCA",
+        "Two-Hit",
+        "Epigenetik"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s21",
+      "metin": "MEN1 ilişkili pankreatik NET'lerde menin eksikliğinin sentetik ölümcül (synthetic lethal) hedef olarak DHODH'u nasıl oluşturduğu araştırılıyor. Araştırmacılar menin-defisyent tümör hücrelerinin leflunomide karşı selektif duyarlılık gösterdiğini, normal hücrelerin ise bunu tolere edebildiğini gözlemliyor.\n\nBu bulgu sentetik ölümcüllük kavramı açısından aşağıdakilerden hangisiyle en iyi açıklanır?",
+      "secenekler": {
+        "A": "DHODH blokajı mitokondriyal elektron transfer zincirini durdurarak tüm hücrelerde eşit apoptoz tetikler; MEN1 mutasyonu bu etkiyi artırır.",
+        "B": "MEN1 kaybı hücreyi DHODH'a bağımlı metabolik bir duruma yönlendirir; DHODH blokajı bu bağımlılığı selektif olarak ölümcül hale getirir.",
+        "C": "Leflunomid hem DHODH'u hem de menin proteinini eş zamanlı inhibe eden çift hedefli bir ajandır.",
+        "D": "DHODH inhibisyonu yalnızca pankreas beta hücrelerinde apoptoz yaratır; diğer hücre tiplerinde etkisizdir.",
+        "E": "Sentetik ölümcüllük iki sağlıklı genin birlikte inaktivasyonunu gerektirir; bu senaryo bu tanıma uymaz."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Sentetik ölümcüllük prensibini ve MEN1-DHODH eksenini sorgulayan translasyonel farmakoloji sorusu.",
+      "aciklama_detay": "**Sentetik ölümcüllük:** İki genden/yolaktan herhangi birinin tek başına kaybı hücreyi öldürmezken, ikisinin birlikte inaktivasyonu hücre ölümüne yol açar. MEN1 mutasyonu tek başına tümör hücresini yaşatır; DHODH blokajı normal hücrelerde tolere edilir. Ancak menin kaybı, hücreyi DHODH'a bağımlı bir metabolik duruma sürükler — bu arka planda DHODH blokajı **selektif olarak** menin-defisyent tümör hücrelerini apoptozise yönlendirir.\n\nBu prensip, Mayıs 2023'te başlatılan tek kollu **LUMEN1 Faz II klinik çalışması (NCT05605587)**'nın temelini oluşturmaktadır.\n\n• **A:** DHODH blokajı tüm hücrelerde eşit ölüm yaratmaz; selektivite MEN1 mutasyonundan kaynaklanır.\n• **C:** Leflunomid yalnızca DHODH inhibitörüdür; menin proteinini doğrudan inhibe etmez.\n• **D:** DHODH inhibisyonu pankreas beta hücrelerine özgü değildir.\n• **E:** Tanım yanlıştır; sentetik ölümcüllük gen ürünlerinin veya yolakların kombinatoryel inaktivasyonunu kapsar.",
+      "etiketler": [
+        "MEN1",
+        "Menin",
+        "DHODH",
+        "Sentetik Ölümcüllük",
+        "LUMEN1",
+        "Leflunomid",
+        "JunD"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s22",
+      "metin": "Menin-MLL inhibitörleri ile tedavi edilen MLL-r akut lösemi hastalarının bir kısmında tedaviye direnç gelişiyor ve genetik incelemede somatik MEN1 mutasyonları saptanıyor.\n\nBu direnç mekanizması menin'in lösemideki rolü açısından aşağıdakilerden hangisiyle en iyi açıklanır?",
+      "secenekler": {
+        "A": "Menin germline mutasyonları lösemi hücrelerine aktarılarak onkojenik MLL kompleksini bozar ve hücreler apoptozdan korunur.",
+        "B": "Somatik MEN1 mutasyonları, menin-inhibitörün bağlanma cebini bozerek inhibitörün menin-MLL köprüsünü bozmasını engeller.",
+        "C": "Menin, lösemi hücrelerinde tümör supresör görevi üstlenir; MEN1 mutasyonu onkojenik MLL kompleksini zaten bozmaktadır.",
+        "D": "MLL-r lösemide menin inhibisyonu diferansiasyon blokunu kaldırır; MEN1 mutasyonu aynı bloğu farklı bir mekanizmayla yeniden oluşturur.",
+        "E": "Somatik MEN1 mutasyonları menin-MLL etkileşimini güçlendirir; inhibitör bu artmış afiniteyi geçemez."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "Menin'in doku bağlamına göre değişen onkogen/tümör supresör ikili karakterini ve menin inhibitörü direncinin moleküler zeminini sorgulayan translasyonel onkoloji sorusu.",
+      "aciklama_detay": "Menin, endokrin dokularda klasik **tümör supresör** işlev görürken hematopoietik dokularda tam tersine **onkojenik** bir rol üstlenir. MLL-r lösemide menin, MLL füzyon proteinini kromatin üzerine çapalar (**LEDGF köprüsü**) ve diferansiasyon blokunu sürdürür. Menin-MLL inhibitörleri bu köprüyü kopararak diferansiasyonu yeniden başlatmayı hedefler.\n\nDirenç mekanizması: tedavi baskısı altında hücreler, menin proteininin **inhibitör bağlanma cebini değiştiren somatik MEN1 mutasyonları** kazanır. Bu mutasyonlar inhibitörün menin'e bağlanmasını engeller; menin-MLL köprüsü tekrar kurulur ve diferansiasyon bloku geri döner.\n\n• **A:** Germline mutasyonlar lösemi hücrelerine aktarılmaz; somatik edinimden söz edilmektedir.\n• **C:** Lösemide menin onkogeniktir; tümör supresör değildir.\n• **D:** Kısmen doğru yaklaşım ama direnç mekanizması farklı yolakla değil bağlanma bölgesindeki mutasyonla oluşur.\n• **E:** Somatik MEN1 mutasyonları etkileşimi güçlendirmez; inhibitörün bağlanmasını engeller.",
+      "etiketler": [
+        "MEN1",
+        "Menin",
+        "MLL",
+        "Lösemi",
+        "MLL-LEDGF",
+        "Onkojen",
+        "Menin İnhibitörü"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s23",
+      "metin": "MEN1 tanılı 31 yaşında kadın hasta açlık hipoglisemisi nedeniyle araştırılıyor. Süpervize açlık testi pozitif; C-peptid ve insülin uygunsuz yüksek. Endoskopik ultrason (EUS) birden fazla pankreas lezyonu saptıyor. 68Ga-DOTATATE PET/BT pankreas gövdesinde 1.8 cm tek odak gösteriyor; diğer lezyonlar görüntülenemiyor.\n\nCerrahi öncesinde doğru fonksiyonel lokalizasyon için sonraki en uygun adım hangisidir?",
+      "secenekler": {
+        "A": "68Ga-DOTATATE PET/BT tek odak tanımladığından cerrahi bu odağa yönelik planlanmalıdır.",
+        "B": "MEN1 insülinomalarında tek odak cerrahisi yeterlidir; multifokalitenin klinik önemi yoktur.",
+        "C": "68Ga-Exendin-4 PET/BT çekilmeli; insülinomalar GLP-1 reseptörünü aşırı eksprese ettiğinden somatostatin reseptör görüntülemesi yetersiz kalabilir.",
+        "D": "Portal ven örneklemesi (PVS) standart bir prosedür olup tüm MEN1 insülinoma vakalarında tercih edilmelidir.",
+        "E": "Kalsiyum uyarımlı hepatik venöz insülin örneklemesi (SACI) gereksizdir; EUS yeterli lokalizasyonu sağlamıştır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "MEN1 insülinomalarında somatostatin reseptör sintigrafisinin tuzağını ve alternatif fonksiyonel görüntülemenin yerini sorgulayan ileri düzey lokalizasyon sorusu.",
+      "aciklama_detay": "İnsülinomalar diğer pNET'lerin aksine **somatostatin reseptör-2 (SSTR2) ekspresyonunu düşük** düzeyde taşır. Bu nedenle 68Ga-DOTATATE PET/BT insülinomalarda **yetersiz duyarlılık** gösterir ve multifodal lezyonların bir kısmını görüntüleyemez — senaryodaki tek odak tuzağı tam olarak budur.\n\n**68Ga-Exendin-4 PET/BT**; insülinomalar GLP-1 reseptörünü (GLP-1R) aşırı eksprese ettiğinden bu hastalığa özgü fonksiyonel görüntüleme olarak üstün duyarlılık sağlar. MEN1 zeminindeki multifodal insülinomada hipoglisemiden sorumlu lezyonu saptamak için tercih edilmesi gereken görüntüleme yöntemidir.\n\nEUS sonucu yeterli olmadığında **SACI (kalsiyum uyarımlı arteriyal enjeksiyon + hepatik venöz insülin örneklemesi)** de bölgesel lokalizasyon için güçlü bir alternatif seçenektir.\n\n• **A:** 68Ga-DOTATATE tek odak göstermesi, diğer lezyonların olmadığı anlamına gelmez; SSTR2 düşük ekspresyonu nedeniyle diğer insülinomalar görüntülenememiş olabilir.\n• **B:** MEN1 insülinomalarında multifodalitenin saptanması cerrahi stratejiyi doğrudan değiştirir; göz ardı edilemez.\n• **D:** Portal ven örneklemesi (PVS) invazivdir ve rutin protokollerde yer almaz; SACI PVS'nin daha doğru bir alternatifidir.\n• **E:** EUS multifodal lezyonu saptamıştır; hangi odağın fonksiyonel sorumlu olduğu belirsizdir, SACI bu belirsizliği gidermede değerlidir.",
+      "etiketler": [
+        "MEN1",
+        "İnsülinoma",
+        "68Ga-Exendin-4",
+        "SACI",
+        "Lokalizasyon",
+        "68Ga-DOTATATE"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s24",
+      "metin": "MEN1 tanılı 46 yaşında erkek hastada yüksek doz PPI kullanımına karşın persistan ülser hastalığı mevcut. Açlık gastrin düzeyi 1240 pg/mL; sekretin uyarım testi pozitif; iyonize Ca²⁺ 1.48 mmol/L, PTH 198 pg/mL. Görüntülemede duodenal bölgede multifokal küçük lezyonlar izleniyor.\n\nBu hasta için en öncelikli cerrahi strateji hangisidir?",
+      "secenekler": {
+        "A": "Whipple (pankreatikoduodenektomi) uygulanmalıdır; duodenal gastrinoma tedavisinin tek küratif seçeneğidir.",
+        "B": "Önce paratiroidektomi yapılarak hiperkalsemi düzeltilmeli; gastrin düzeyleri bu işlemle dramatik düşüş gösterebilir.",
+        "C": "Gastrinoma önce rezeke edilmeli; ardından paratiroid değerlendirmesi yapılmalıdır.",
+        "D": "PPI dozu artırılmalı; MEN1 gastrinomalarında cerrahi biyokimyasal kür sağlayamaz.",
+        "E": "Somatostatin analogu başlanarak gastrin supresyonu sağlanmalı; cerrahi ertelenmelidir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "MEN1 gastrinoma yönetiminde kalsiyum-gastrin aksını ve cerrahi öncelik sıralamasını sorgulayan ileri düzey soru.",
+      "aciklama_detay": "MEN1 gastrinomalarında **hiperkalsemi gastrin salgısını doğrudan uyarır**. PTH fazlalığı → hiperkalsemi → gastrin hücreleri üzerinde sekretogog etki → serum gastrin yükselişi. Bu kalsiyum-gastrin aksı nedeniyle MEN1'de ZES tablosunun şiddetinin bir kısmı doğrudan hiperparatiroidizmden kaynaklanır.\n\nParatiroidektominin ardından gastrin düzeyleri belirgin biçimde düşebilir (%50–70 olguda). Bu nedenle **MEN1 gastrinomalarında önce paratiroidektomi, ardından gastrinoma cerrahisinin yeniden değerlendirilmesi** standart yaklaşımdır (GTE 2020, ENETS 2023).\n\n• **A:** MEN1 gastrinomalarında Whipple kontroversiyel ve tartışmalıdır; multifodal yapı ve kaçınılmaz morbidite nedeniyle çoğu merkezde tercih edilmez.\n• **C:** Gastrinomayı önce rezeke etmek kalsiyum-gastrin aksını görmezden gelir; yanlıştır.\n• **D:** Yüksek doz PPI asit kontrolü için değerlidir ancak cerrahi yönetimin sırasını belirlemez.\n• **E:** Somatostatin analogu ZES'te asit kontrolüne katkı sunabilir ancak önce paratiroidektomi kuralını değiştirmez.",
+      "etiketler": [
+        "MEN1",
+        "Gastrinoma",
+        "ZES",
+        "Paratiroidektomi",
+        "Kalsiyum-Gastrin Aksı",
+        "Whipple"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s25",
+      "metin": "MEN1 tanılı 39 yaşında erkek hastada rutin MR'da pankreasta 1.6 cm, 0.8 cm ve 0.4 cm çaplı üç ayrı NF-pNET odağı saptanıyor. Ki-67 biyopsi yapılabilecek konumdaki en büyük lezyondan alınıyor; %3 sonuçlanıyor. FDG-PET/BT negatif. Hasta asemptomatik.\n\nGüncel kanıta dayalı kılavuzlara göre yönetim hangisi olmalıdır?",
+      "secenekler": {
+        "A": "1.6 cm lezyon 2 cm eşiğine yakın olduğundan tüm üç odak için hemen pankreas rezeksiyonu planlanmalıdır.",
+        "B": "Tüm lezyonlar 2 cm altında, Ki-67 ≤%5, FDG-PET negatif; aktif izlem başlanmalı, ilk 12 ayda 6 aylık aralarla MR ile izlenmelidir.",
+        "C": "Pankreas rezeksiyonu kontrendikedir; tüm MEN1 NF-pNET'ler yalnızca medikal olarak tedavi edilmelidir.",
+        "D": "Ki-67 %3 yüksek risklidir; 1.6 cm eşik altında olsa bile hemen cerrahi uygulanmalıdır.",
+        "E": "FDG-PET negatif olduğundan NF-pNET ekarte edilmiştir; görüntüleme artefaktı olarak değerlendirilebilir."
+      },
+      "dogru": "B",
+      "aciklama_kisa": "MEN1 NF-pNET yönetiminde 2 cm eşiğini, risk sınıflamasını ve aktif izlem protokolünü sorgulayan kanıta dayalı soru.",
+      "aciklama_detay": "NF-pNET yönetiminde **2 cm eşiği** üç retrospektif kohorta (DutchMEN1 Study Group, Partelli ve ark., GTE meta-analizi) dayanan en güçlü kanıt düzeyini temsil etmektedir. Tüm lezyonlar <2 cm, Ki-67 ≤%10, FDG-PET negatif ve duktus obstrüksiyonu yok → hasta **düşük-orta risk** grubundadır; aktif izlem uygulanır.\n\n**Aktif izlem protokolü:**\n\n• Pankreas MR önce 6 ayda bir (ilk yıl)\n• Stabil seyirde 1–2 yıla seyrekleştir\n• Büyüme hızı >5 mm/yıl veya >%20/yıl → cerrahiye yeniden değerlendirme\n\nCerrahi endikasyon: ≥2 cm, Ki-67 >%10, FDG-PET pozitif, duktus obstrüksiyonu veya hızlı büyüme. Bu hastada hiçbiri yoktur.\n\n• **A:** Lezyonlar 2 cm altında; 1.6 cm lezyon eşiği geçmemiştir.\n• **C:** Cerrahi endikasyonu oluştuğunda pankreas rezeksiyonu uygulanır; kontrendike değildir.\n• **D:** Ki-67 %3, G1 tümörüdür; yüksek risk değildir (Ki-67 >%10 = yüksek risk).\n• **E:** FDG-PET, NF-pNET için yüksek sensitivitede değildir; negatif FDG-PET tanıyı dışlamaz.",
+      "etiketler": [
+        "MEN1",
+        "NF-pNET",
+        "2cm Eşiği",
+        "Cerrahi",
+        "Aktif İzlem",
+        "Ki-67",
+        "FDG-PET"
+      ],
+      "zorluk": "zor"
+    },
+    {
+      "id": "s26",
+      "metin": "MEN1 tarama programında 28 yaşında erkek hastada MR'da 22 mm hipofiz makroadenomu saptanıyor. Hasta el ve ayaklarda büyüme hissi tarif ediyor. GH ve IGF-1 ölçülüyor; her ikisi de yüksek.\n\nBu hastanın değerlendirmesinde atlanmaması gereken kritik endokrinolojik tuzak hangisidir?",
+      "secenekler": {
+        "A": "MEN1'de somatotropinomalar sporadik formlarla aynı klinik seyri gösterir; ek tetkik gerekmez.",
+        "B": "Makroadenom nedeniyle kortizol supresyon testi yapılmalıdır; GH tümörleri sıklıkla ko-sekrete ACTH üretir.",
+        "C": "Prolaktin düzeyi mutlaka ölçülmelidir; MEN1 somatotropinomalarının %4–11'i GH ile birlikte PRL ko-sekrete eden plürihormonoal tümörlerdir.",
+        "D": "IGF-1 yüksek bulunduğundan prolaktin ölçümüne gerek yoktur; klinik tablo GH fazlalığını açıklamaktadır.",
+        "E": "MEN1'de akromegali görülmez; bu tümör MEN1'den bağımsız sporadik bir somatotropinomalıdır."
+      },
+      "dogru": "C",
+      "aciklama_kisa": "MEN1 somatotropinomalarındaki plürihormonoal tuzağı ve ko-sekresyonun klinik önemini sorgulayan sürveyans sorusu.",
+      "aciklama_detay": "MEN1 zemininde gelişen hipofiz adenomları sporadik adenomlardan farklı davranır: daha büyük, daha invazif ve **plürihormonoal** olmaya daha yatkındır. MEN1 somatotropinomalarının **%4–11'i GH ile birlikte prolaktin (PRL) ko-sekrete** eder (sporadik akromegalide bu oran yaklaşık %25, ancak MEN1'de ayrı adenom olarak da görülebilir).\n\nProlaktin ko-sekresyonunun atlanması klinik açıdan önemlidir:\n\n• PRL yüksekliği hipogonadizm ve infertiliteye yol açar\n• Dopamin agonisti (kabergolin) tedavisi planlamasını etkiler\n• GH supresyonu sağlansa dahi PRL sorunu devam edebilir\n\nBu nedenle MEN1 hipofiz adenomlarında **her zaman PRL ve IGF-1 birlikte ölçülmeli**; tüm hipofiz aksenlerinin değerlendirilmesi atlanmamalıdır.\n\n• **A:** MEN1 somatotropinomalarında makroadenom ve invazivlik sporadik formlardan daha sık; tek başına GH/IGF-1 ölçümü yetmez.\n• **B:** ACTH ko-sekresyonu somatotropinomalarda nadirdir; kortizol supresyon testi bu tabloda öncelikli değildir.\n• **D:** IGF-1 yüksekliği prolaktin ölçümünü dışlamaz; tam tersi, ko-sekresyon açısından prolaktin değerlendirilmesi zorunludur.\n• **E:** Akromegali MEN1'de %8–8.8 görülür; bu hasta MEN1 tarama programındadır.",
+      "etiketler": [
+        "MEN1",
+        "Somatotropinoma",
+        "Akromegali",
+        "Plürihormonoal",
+        "Prolaktin",
+        "IGF-1",
+        "Tarama"
+      ],
+      "zorluk": "zor"
     }
   ]
 }
