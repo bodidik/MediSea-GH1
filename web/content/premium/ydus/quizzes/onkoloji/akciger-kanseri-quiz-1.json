@@ -450,6 +450,149 @@
       ],
       "zorluk": "orta",
       "kaynak": "ASCO 2021 immün ilişkili advers olay kılavuzu (Schneider BJ ve ark.); SITC 2022 akciğer kanseri ve mezotelyoma immünoterapi kılavuzu (Govindan R ve ark.)"
+    },
+    {
+      "id": "s16",
+      "metin": "59 yaşında sigara içmemiş kadın hasta, EGFR ekzon 19 delesyonu pozitif metastatik akciğer adenokarsinomu nedeniyle 18 aydır birinci basamak osimertinib almaktadır. Son kontrol tomografisinde akciğerdeki primer odakta büyüme ve yeni karaciğer metastazları saptanmıştır. Doku rebiyopsisi ve sıvı biyopside (cfDNA) küçük hücreli dönüşüm veya EGFR C797S mutasyonu izlenmemiş, ancak MET gen amplifikasyonu (MET/CEP7 oranı > 5) saptanmıştır. 3. kuşak EGFR-TKI direnci gelişen ve direnç mekanizması MET amplifikasyonu olarak doğrulanan bu hastada, klinik çalışmalarda ve güncel hedefe yönelik yaklaşımlarda önerilen en uygun tedavi stratejisi aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Osimertinib tedavisini kesip tek ajan dosetaksel başlanması",
+        "B": "Osimertinib tedavisine devam edilerek rejime bir MET inhibitörü (capmatinib / tepotinib / savolitinib) eklenmesi",
+        "C": "Birinci kuşak EGFR-TKI olan gefitinibe geçilmesi",
+        "D": "Yalnızca tek ajan pembrolizumab başlanması",
+        "E": "Tedaviye erlotinib + ramucirumab eklenmesi"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "MET amplifikasyonu EGFR-bağımsız bir bypass yoludur: osimertinib sürdürülür, MET inhibitörü eklenir.",
+      "aciklama_detay": "Osimertinib direnç spektrumu: Birinci basamak osimertinib altında direnç geliştiğinde mekanizmalar EGFR-bağımlı (ör. C797S mutasyonu) ve EGFR-bağımsız bypass yolları (en sık MET amplifikasyonu, HER2 amplifikasyonu, PIK3CA mutasyonları ve küçük hücreli nöroendokrin dönüşüm) olarak ikiye ayrılır. Bypass yolu blokajı: MET amplifikasyonu saptanan olgularda, EGFR sinyali osimertinib ile baskılanmaya devam ederken paralel olarak aktive olan MET/Akt/Snail yolağını bloke etmek için osimertinib + MET inhibitörü (ör. tepotinib, capmatinib veya savolitinib) kombinasyonu uygulanır. Yapılan çalışmalarda (INSIGHT 2, SACHI) bu kombinasyon kemoterapiye kıyasla belirgin progresyonsuz sağkalım (PFS) avantajı sağlamıştır. Gefitinib/erlotinib gibi 1. kuşak TKI'lar bu direnç tablosunu aşamaz. Tek ajan immünoterapi ise sürücü mutasyonlu olgularda etkisizdir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Direnç mekanizması hedeflenebilir (MET); EGFR baskısını kaldırıp tek ajan kemoterapiye geçmek tercih edilen yaklaşım değildir.",
+        "B": "DOGRU — EGFR baskısı sürerken aktive olan MET bypass yolu MET inhibitörüyle bloke edilir (INSIGHT 2, SACHI).",
+        "C": "YANLIS — 1. kuşak TKI'lar bu direnç tablosunu aşamaz.",
+        "D": "YANLIS — Tek ajan immünoterapi sürücü mutasyonlu olgularda etkisizdir.",
+        "E": "YANLIS — Erlotinib 1. kuşak TKI'dır; MET bypass yolunu bloke etmez."
+      },
+      "etiketler": [
+        "EGFR",
+        "Osimertinib Direnci",
+        "MET Amplifikasyonu"
+      ],
+      "zorluk": "zor",
+      "kaynak": "INSIGHT 2 (tepotinib + osimertinib); SACHI (savolitinib + osimertinib)"
+    },
+    {
+      "id": "s17",
+      "metin": "61 yaşında erkek hastada evreleme sonucunda T2b N2a M0 (Evre IIIA — TNM 9) resekte edilebilir nonskuamöz KHDAK saptanmıştır. Moleküler incelemede EGFR ve ALK yabani tip olup PD-L1 TPS %35'tir. Multidisipliner konsey kararıyla neoadjuvan 4 siklus sisplatin + pemetreksed + pembrolizumab uygulanmış, ardından lobektomi ve R0 rezeksiyon gerçekleştirilmiştir. Cerrahi spesimende tümör yatağında ve lenf nodlarında hiç canlı tümör hücresi izlenmemiştir (%0 rezidüel canlı tümör — patolojik tam yanıt, pCR). KEYNOTE-671 protokolü ve onaylı klinik kılavuzlar doğrultusunda, ameliyat sonrası sorunsuz iyileşen bu hastanın tedavisi nasıl devam etmelidir?",
+      "secenekler": {
+        "A": "13 siklusa (yaklaşık 1 yıl) tamamlanacak şekilde adjuvan pembrolizumab monoterapisine devam edilmelidir",
+        "B": "Postoperatif 12 siklus adjuvan platin-pemetreksed kemoterapisi verilmelidir",
+        "C": "pCR elde edildiği için tüm sistemik tedaviler sonlandırılmalı ve hasta takibe alınmalıdır",
+        "D": "Göğüs duvarına postoperatif radyoterapi (PORT) eklenmelidir",
+        "E": "Adjuvan atezolizumab + bevacizumab kombinasyonuna geçilmelidir"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "Perioperatif kemoimmünoterapide pCR elde edilsin ya da edilmesin adjuvan immünoterapi 1 yıla tamamlanır.",
+      "aciklama_detay": "KEYNOTE-671 ve perioperatif immünoterapi: Resektabl Evre II-IIIB KHDAK hastalarında neoadjuvan 4 siklus kemoterapi + pembrolizumabı takiben cerrahi ve sonrasında 13 siklus (1 yıl) adjuvan pembrolizumab idamesini değerlendiren KEYNOTE-671, neoadjuvan yalnız kemoterapiye kıyasla olaysız sağkalımda (EFS HR: 0.58) ve genel sağkalımda (3 yıllık OS %71 vs %64, HR: 0.72) anlamlı üstünlük göstermiştir. pCR ve adjuvan fazın değeri: Neoadjuvan kemoimmünoterapi ile pCR elde edilmesi (%18.1 vs %4.0) mümkün olan en yüksek sağkalım oranlarıyla (%95 üzeri 5 yıllık OS) ilişkilidir. Mevcut onaylı standart (KEYNOTE-671, CheckMate 77T, AEGEAN), pCR elde edilsin ya da edilmesin planlanan adjuvan immünoterapi idamesinin 1 yıla tamamlanması yönündedir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — KEYNOTE-671 protokolü: cerrahi sonrası 13 siklus (1 yıl) adjuvan pembrolizumab; pCR bu fazı kaldırmaz.",
+        "B": "YANLIS — Protokolün adjuvan fazı kemoterapi değil pembrolizumab monoterapisidir.",
+        "C": "YANLIS — Onaylı standart, pCR elde edilse de adjuvan immünoterapinin 1 yıla tamamlanmasıdır.",
+        "D": "YANLIS — Protokolde PORT yer almaz.",
+        "E": "YANLIS — Bu kombinasyon perioperatif KHDAK protokolünün parçası değildir."
+      },
+      "etiketler": [
+        "Perioperatif İmmünoterapi",
+        "KEYNOTE-671",
+        "Patolojik Tam Yanıt",
+        "Pembrolizumab"
+      ],
+      "zorluk": "orta",
+      "kaynak": "KEYNOTE-671; CheckMate 77T; AEGEAN"
+    },
+    {
+      "id": "s18",
+      "metin": "46 yaşında hiç sigara içmemiş hasta, metastatik EML4-ALK pozitif akciğer adenokarsinomu nedeniyle 2 yıldır birinci basamak alectinib kullanmaktadır. Son kontrolde ekstrakraniyal odaklarda progresyon ile birlikte kraniyal MRG'de iki yeni semptomsuz beyin metastazı saptanmıştır. Rebiyopside yapılan NGS analizinde solvent-front bölgesinde ALK G1202R direnç mutasyonu tespit edilmiştir. İkinci kuşak ALK inhibitörlerine (alectinib/brigatinib) direnç geliştiren ve mutasyon profili G1202R olarak doğrulanan bu hastada, yüksek SSS penetrasyonuna ve bu direnç mutasyonuna karşı kanıtlanmış etkinliğe sahip tercih edilecek 3. kuşak ALK-TKI aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Crizotinib",
+        "B": "Ceritinib",
+        "C": "Entrectinib",
+        "D": "Gefitinib",
+        "E": "Lorlatinib"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "G1202R solvent-front mutasyonunda yüksek SSS penetrasyonlu 3. kuşak lorlatinib etkindir.",
+      "aciklama_detay": "ALK direnç spektrumu ve G1202R: 2. kuşak ALK-TKI'lar (alectinib, ceritinib, brigatinib) altında gelişen ikincil ALK kinaz domain direnç mutasyonları arasında en sık ve en dirençli olanı solvent-front G1202R mutasyonudur. Lorlatinibin rolü: 3. kuşak ALK/ROS1 inhibitörü lorlatinib, G1202R dahil geniş bir ALK direnç mutasyon spektrumunu inhibe etmek ve kan-beyin engelini yüksek oranda geçmek (BOS/plazma oranı ~0.75) üzere tasarlanmıştır. Alectinib veya brigatinib sonrası progresyon gelişen olgularda lorlatinib belirgin sistemik ve intrakraniyal yanıt sağlar (intrakraniyal ORR %53-68). Crizotinib 1. kuşaktır, SSS penetrasyonu zayıftır ve G1202R'ye etkisizdir. Entrectinib ise ROS1/NTRK odaklıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — 1. kuşak; SSS penetrasyonu zayıf ve G1202R'ye etkisiz.",
+        "B": "YANLIS — 2. kuşak ALK-TKI; G1202R bu kuşak altında gelişen direnç mutasyonudur.",
+        "C": "YANLIS — ROS1/NTRK odaklıdır.",
+        "D": "YANLIS — EGFR-TKI'dır; ALK'ya etkisi yoktur.",
+        "E": "DOGRU — 3. kuşak ALK/ROS1 inhibitörü; G1202R'yi inhibe eder ve kan-beyin engelini yüksek oranda geçer."
+      },
+      "etiketler": [
+        "ALK",
+        "G1202R",
+        "Lorlatinib",
+        "Beyin Metastazı"
+      ],
+      "zorluk": "orta",
+      "kaynak": "Lorlatinib ALK direnç verileri"
+    },
+    {
+      "id": "s19",
+      "metin": "53 yaşında kadın hasta, metastatik nonskuamöz KHDAK tanısıyla birinci basamak karboplatin + pemetreksed + pembrolizumab almış, 10 ay sonra sistemik progresyon gelişmiştir. Dokudan yapılan NGS panelinde EGFR, ALK, ROS1, BRAF, KRAS, RET, MET negatif, ancak HER2 (ERBB2) ekzon 20 insersiyon mutasyonu pozitif saptanmıştır. Önceden sistemik tedavi almış, HER2 (ERBB2) mutasyonu pozitif metastatik KHDAK hastalarında FDA ve uluslararası kılavuzlarca birinci sırada önerilen antikor-ilaç konjugatı (ADC) aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Sacituzumab govitecan",
+        "B": "Datopotamab deruxtecan (Dato-DXd)",
+        "C": "Fam-trastuzumab deruxtecan (T-DXd)",
+        "D": "Telisotuzumab vedotin",
+        "E": "Enfortumab vedotin"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "Önceden tedavi almış HER2 mutant KHDAK'ta tercih edilen ADC trastuzumab deruxtecandır (DESTINY-Lung01/02).",
+      "aciklama_detay": "HER2 mutasyonu ve T-DXd: HER2 (ERBB2) mutasyonları (sıklıkla ekzon 20 insersiyonları) KHDAK olgularının %2-4'ünde izlenir ve sigara içmeyen adenokarsinomlu kadınlarda daha sık görülür. DESTINY-Lung01 ve DESTINY-Lung02: Anti-HER2 antikoru ile topoizomeraz I inhibitörü yükünün birleşiminden oluşan fam-trastuzumab deruxtecan (T-DXd), önceden tedavi almış HER2 mutant KHDAK hastalarında %49-55 objektif yanıt oranı (ORR) ve uzun yanıt süresi sağlayarak agnostik/spesifik onay almıştır. Datopotamab deruxtecan (Dato-DXd) Trop-2 hedefli ADC'dir. Telisotuzumab vedotin ise c-Met aşırı ekspresyonu gösteren olgularda kullanılan c-Met hedefli ADC'dir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — HER2 mutant KHDAK için önerilen ADC değildir.",
+        "B": "YANLIS — Trop-2 hedefli ADC'dir.",
+        "C": "DOGRU — Anti-HER2 antikoru + topoizomeraz I inhibitörü yükü; DESTINY-Lung01/02'de ORR %49-55.",
+        "D": "YANLIS — c-Met aşırı ekspresyonunda kullanılan c-Met hedefli ADC'dir.",
+        "E": "YANLIS — HER2 mutant KHDAK için önerilen ADC değildir."
+      },
+      "etiketler": [
+        "HER2",
+        "Antikor-İlaç Konjugatı",
+        "Trastuzumab Deruxtecan"
+      ],
+      "zorluk": "orta",
+      "kaynak": "DESTINY-Lung01; DESTINY-Lung02"
+    },
+    {
+      "id": "s20",
+      "metin": "64 yaşında anrezektabl Evre III KHDAK tanılı hastaya eşzamanlı kemoradyoterapi (cCRT) uygulanmış ve ardından konsolidasyon durvalumab (anti-PD-L1) başlanmıştır. Durvalumabın 3. ayında, tanı anında gönderilen ancak geciken genişletilmiş doku NGS sonucunda EGFR ekzon 19 delesyonu olduğu öğrenilmiştir. Tomografide yeni akciğer lezyonları saptanması üzerine TKI tedavisine geçilmesi planlanmaktadır. Yakın zamanda immün kontrol noktası inhibitörü almış bu hastada derhal osimertinib başlanmasının yol açabileceği majör klinik risk ve önerilen yaklaşım aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Yüksek nefrotoksisite riski nedeniyle doz yarıya düşürülerek hemen osimertinib başlanmalıdır",
+        "B": "İmmünoterapi sonrası TKI kullanımı kardiyotoksisiteyi engellediğinden ertelemeye gerek yoktur",
+        "C": "Durvalumab osimertinibin etkinliğini artırdığından hemen kombinasyon yapılmalıdır",
+        "D": "Şiddetli immün ilişkili toksisiteler (özellikle ağır interstisyel akciğer hastalığı/pnömonit ve ağır dermatit) riski nedeniyle osimertinib başlanması en az 3 ay (90 gün) ertelenmelidir",
+        "E": "TKI öncesi en az 1 yıl ara verilmeli, bu sürede radyoterapi tekrarlanmalıdır"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "ICI sonrası erken osimertinib ağır pnömonit/hepatotoksisite/cilt reaksiyonu riskini artırır; en az 3 aylık arınma süresi beklenir.",
+      "aciklama_detay": "ICI sonrası TKI toksisitesi: İmmün kontrol noktası inhibitörü (ICI) tedavisini (ör. durvalumab, pembrolizumab) izleyen ilk haftalarda/aylarda EGFR-TKI (özellikle osimertinib) başlanması, T hücre aktivasyonunun sürmesi nedeniyle şiddetli ve ölümcül seyredebilen immün ilişkili pnömonit, ciddi hepatotoksisite ve ağır cilt reaksiyonları riskini belirgin artırır. Klinik yönetim ve arınma (washout) süresi: ICI kesildikten sonra osimertinib başlanması gerekiyorsa, toksisite riskini en aza indirmek için en az 3 aylık (90 gün) arınma süresi beklenmesi önerilir. Bu geçiş döneminde hastalık kontrolü gerekiyorsa platin bazlı kemoterapi güvenli bir köprü tedavisidir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Majör risk nefrotoksisite değil, immün ilişkili toksisitedir; doz azaltma bu riski ortadan kaldırmaz.",
+        "B": "YANLIS — Sıralama toksisiteyi önlemez; tersine ICI sonrası erken TKI ağır toksisite riskini artırır.",
+        "C": "YANLIS — Kombinasyon etkinliği artırmaz, şiddetli pnömonit riskini artırır.",
+        "D": "DOGRU — En az 3 aylık arınma süresi; gerekirse köprü olarak platin bazlı kemoterapi.",
+        "E": "YANLIS — Önerilen arınma süresi en az 3 aydır; radyoterapi tekrarı yaklaşımın parçası değildir."
+      },
+      "etiketler": [
+        "EGFR",
+        "Osimertinib",
+        "İmmün İlişkili Pnömonit",
+        "Durvalumab"
+      ],
+      "zorluk": "zor",
+      "kaynak": "ICI sonrası osimertinib toksisitesi verileri"
     }
   ]
 }
