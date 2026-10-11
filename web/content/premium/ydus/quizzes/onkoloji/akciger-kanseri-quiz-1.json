@@ -593,6 +593,153 @@
       ],
       "zorluk": "zor",
       "kaynak": "ICI sonrası osimertinib toksisitesi verileri"
+    },
+    {
+      "id": "s21",
+      "metin": "52 yaşında hiç sigara içmemiş kadın hastaya metastatik akciğer adenokarsinomu tanısı konulmuştur. Geniş panel doku NGS analizinde EGFR, ALK, ROS1, BRAF, RET, MET ve KRAS negatif saptanmış, ancak NTRK3 gen rearanjmanı (NTRK füzyonu) tespit edilmiştir. KHDAK olgularının %1'inden azında görülen, ancak saptandığında tümör histolojisinden bağımsız (biyobelirteç-agnostik) yüksek sistemik ve intrakraniyal yanıt sağlayan bu anormalliğe karşı birinci basamakta tercih edilebilecek oral TRK inhibitörleri aşağıdakilerden hangisinde doğru verilmiştir?",
+      "secenekler": {
+        "A": "Sotorasib – Adagrasib",
+        "B": "Capmatinib – Tepotinib",
+        "C": "Larotrectinib – Entrectinib – Repotrectinib",
+        "D": "Dabrafenib – Trametinib",
+        "E": "Selpercatinib – Pralsetinib"
+      },
+      "dogru": "C",
+      "aciklama_kisa": "NTRK füzyonunda larotrectinib, entrectinib ve repotrectinib histolojiden bağımsız, intrakraniyal de etkili yanıt sağlar.",
+      "aciklama_detay": "TRK inhibitörlerinin etkinliği: Tropomiyozin reseptör kinaz (NTRK1/2/3) gen füzyonları KHDAK'ta nadirdir (%0,1–1). Oral TRK inhibitörleri larotrectinib, entrectinib ve repotrectinib, NTRK füzyon pozitif solid tümörlerde histolojiden bağımsız (biyobelirteç-agnostik) yüksek ve kalıcı objektif yanıt sağladığından birinci veya sonraki basamaklarda standart hedefe yönelik seçenektir. Diğer şıklardaki ajanlar farklı sürücü değişikliklerini hedefler.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sotorasib ve adagrasib KRAS G12C inhibitörleridir.",
+        "B": "YANLIS — Capmatinib ve tepotinib MET ekzon 14 atlama mutasyonu inhibitörleridir.",
+        "C": "DOGRU — Üçü de NTRK füzyonlarında biyobelirteç-agnostik onaylı oral TRK inhibitörüdür.",
+        "D": "YANLIS — Dabrafenib + trametinib BRAF V600E için BRAF + MEK kombinasyonudur.",
+        "E": "YANLIS — Selpercatinib ve pralsetinib RET füzyon inhibitörleridir."
+      },
+      "etiketler": [
+        "NTRK",
+        "Larotrectinib",
+        "Entrectinib",
+        "Repotrectinib",
+        "Biyobelirteç-agnostik"
+      ],
+      "zorluk": "orta",
+      "kaynak": "NTRK füzyonlu solid tümörlerde TRK inhibitörü verileri"
+    },
+    {
+      "id": "s22",
+      "metin": "48 yaşında sigara içmemiş erkek hastada kemik ve akciğer metastazlarıyla seyreden Evre IVB akciğer adenokarsinomu saptanmıştır. RNA tabanlı NGS analizinde KIF5B-RET füzyonu tespit edilmiştir. Faz III LIBRETTO-431 çalışması doğrultusunda, RET füzyonlu ileri evre KHDAK'ta birinci basamakta platin bazlı kemoterapi ± pembrolizumaba üstünlüğü gösterilmiş tedavi aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Atezolizumab monoterapisi",
+        "B": "Crizotinib",
+        "C": "Gefitinib + Bevacizumab",
+        "D": "Selpercatinib",
+        "E": "Sotorasib + Pemetrexed"
+      },
+      "dogru": "D",
+      "aciklama_kisa": "LIBRETTO-431: RET füzyonlu KHDAK'ta birinci basamak selpercatinib, kemoterapi ± pembrolizumaba göre PFS'i belirgin uzattı.",
+      "aciklama_detay": "RET füzyonları ve selpercatinib: RET gen rearanjmanları (en sık KIF5B-RET ve CCDC6-RET) KHDAK'ların yaklaşık %1–2'sinde görülür. Yüksek seçici RET inhibitörü selpercatinib, faz III LIBRETTO-431'de tedavi almamış metastatik RET füzyonlu hastalarda platin-pemetreksed ± pembrolizumaba kıyasla progresyonsuz sağkalımı ve intrakraniyal kontrolü belirgin iyileştirdi; birinci basamakta öncelikli seçenektir. Diğer seçici RET inhibitörü pralsetinib de ARROW faz I/II verisine dayanarak kullanılır; ancak kemoterapiyle karşılaştıran faz III AcceleRET-Lung sonuç vermeden sonlandırıldığından birinci basamakta kemoimmünoterapiye üstünlüğü kanıtlanmış değildir. Test yöntemi: füzyon genlerinin tespitinde RNA tabanlı NGS, DNA tabanlı panellere göre daha duyarlıdır.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Sürücü füzyonlu tümörlerde ICI monoterapisinin yanıtı düşüktür; birinci basamak tercih değildir.",
+        "B": "YANLIS — Crizotinib ALK/ROS1 (ve MET) inhibitörüdür; RET'te seçici ajanlar tercih edilir.",
+        "C": "YANLIS — Gefitinib EGFR-TKI'dır; RET füzyonunda yeri yoktur.",
+        "D": "DOGRU — LIBRETTO-431'de kemoterapi ± pembrolizumaba üstünlüğü gösterilen seçici RET inhibitörü.",
+        "E": "YANLIS — Sotorasib KRAS G12C inhibitörüdür."
+      },
+      "etiketler": [
+        "RET",
+        "Selpercatinib",
+        "LIBRETTO-431",
+        "KIF5B-RET"
+      ],
+      "zorluk": "orta",
+      "kaynak": "LIBRETTO-431 (Zhou C ve ark., N Engl J Med 2023)"
+    },
+    {
+      "id": "s23",
+      "metin": "68 yaşında kadın hasta nefes darlığı ve kilo kaybıyla başvuruyor. Biyopsi sonucu pulmoner sarkomatoid karsinom olarak raporlanıyor. Genomik profillemede MET ekzon 14 atlama (skipping) mutasyonu saptanıyor. Bu mutasyonun biyolojisi ve tedavisine ilişkin aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+      "secenekler": {
+        "A": "MET ekzon 14 atlama mutasyonu, MET proteininin ubikitinasyonla yıkımını azaltarak onkojenik sinyal artışına yol açar",
+        "B": "Sarkomatoid histolojili KHDAK olgularında sıklığı belirgin olarak daha yüksektir",
+        "C": "Birinci basamakta oral seçici MET inhibitörleri capmatinib veya tepotinib tercih edilmelidir",
+        "D": "Capmatinib ve tepotinib kullanımında en sık görülen karakteristik sınıf yan etkisi periferik ödemdir",
+        "E": "Onkojenik sürücü MET mutasyonu varlığında birinci basamakta tek ajan PD-1 inhibitörü, hedefe yönelik TKI'lardan daha uzun sağkalım sağlar"
+      },
+      "dogru": "E",
+      "aciklama_kisa": "Sürücü mutasyonlu tümörler ICI monoterapisine düşük yanıt verir; METex14'te birinci basamak capmatinib/tepotinibdir.",
+      "aciklama_detay": "METex14 biyolojisi: Mutasyon c-Cbl bağlanma bölgesinin (Y1003) kaybına yol açar; ubikitinasyon ve protein yıkımı azalır, MET sinyali artar. Klasik adenokarsinomlarda %3–4 oranında görülürken sarkomatoid karsinomlarda sıklığı artar. Tedavi: Birinci basamakta capmatinib veya tepotinib önerilir; en sık toksisite periferik ödemdir. Sürücü mutasyon ve immünoterapi: EGFR, ALK, ROS1 ve MET gibi sürücü değişiklik taşıyan tümörler ICI monoterapisine genel olarak düşük yanıt verir; bu grupta birinci basamakta hedefe yönelik TKI'lar tercih edilir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU İFADE — c-Cbl bağlanma bölgesi kaybı yıkımı azaltır.",
+        "B": "DOGRU İFADE — Sarkomatoid karsinomda sıklık belirgin artar.",
+        "C": "DOGRU İFADE — Birinci basamak seçici MET inhibitörüdür.",
+        "D": "DOGRU İFADE — Periferik ödem sınıfın karakteristik yan etkisidir.",
+        "E": "YANLIS İFADE (doğru cevap) — Sürücü mutasyonlu tümörlerde ICI monoterapisi TKI'dan üstün değildir."
+      },
+      "etiketler": [
+        "MET ekzon 14",
+        "Capmatinib",
+        "Tepotinib",
+        "Sarkomatoid karsinom"
+      ],
+      "zorluk": "orta",
+      "kaynak": "GEOMETRY mono-1 (capmatinib) ve VISION (tepotinib) verileri"
+    },
+    {
+      "id": "s24",
+      "metin": "63 yaşında, 40 paket-yıl sigara öyküsü olan hasta, metastatik akciğer adenokarsinomu nedeniyle birinci basamakta sisplatin + pemetreksed + pembrolizumab almış, 7. ayda sistemik progresyon gelişmiştir. Tanıdaki doku NGS panelinde KRAS G12C mutasyonu saptanmıştır. Önceden platin ve ICI almış KRAS G12C mutant KHDAK'ta kovalent KRAS G12C inhibitörünü dosetaksel ile karşılaştırıp progresyonsuz sağkalımı uzatan faz III çalışmalar aşağıdakilerden hangisinde doğru verilmiştir?",
+      "secenekler": {
+        "A": "CodeBreaK 200 – KRYSTAL-12",
+        "B": "LIBRETTO-431 – ARROW",
+        "C": "FLAURA – FLAURA2",
+        "D": "CheckMate 9LA – CheckMate 227",
+        "E": "VISION – GEOMETRY mono-1"
+      },
+      "dogru": "A",
+      "aciklama_kisa": "CodeBreaK 200 (sotorasib) ve KRYSTAL-12 (adagrasib), ikinci basamakta dosetaksele göre PFS'i uzattı.",
+      "aciklama_detay": "KRAS G12C epidemiyolojisi: KRAS mutasyonları akciğer adenokarsinomunda en sık sürücü değişikliktir (%20–30) ve sigarayla güçlü ilişkilidir; yaklaşık %40'ı G12C varyantıdır. Kovalent inhibitörler: Sotorasib ve adagrasib, mutant KRAS'ın sistein-12 kalıntısına kovalent bağlanarak proteini inaktif GDP bağlı durumda sabitler. Önceden platin ve/veya ICI almış olgularda dosetakselle karşılaştırılan faz III çalışmalarda (sotorasib: CodeBreaK 200; adagrasib: KRYSTAL-12) progresyonsuz sağkalım uzamış, genel sağkalımda anlamlı fark gösterilmemiştir; ikinci basamakta hedefe yönelik seçenektir.",
+      "secenekAciklamalari": {
+        "A": "DOGRU — CodeBreaK 200 sotorasib, KRYSTAL-12 adagrasib çalışmasıdır.",
+        "B": "YANLIS — RET füzyonunda selpercatinib (LIBRETTO-431) ve pralsetinib (ARROW) çalışmalarıdır.",
+        "C": "YANLIS — EGFR mutant KHDAK'ta osimertinib çalışmalarıdır.",
+        "D": "YANLIS — Sürücü mutasyonsuz KHDAK'ta nivolumab + ipilimumab çalışmalarıdır.",
+        "E": "YANLIS — MET ekzon 14 atlama mutasyonunda tepotinib ve capmatinib çalışmalarıdır."
+      },
+      "etiketler": [
+        "KRAS G12C",
+        "Sotorasib",
+        "Adagrasib",
+        "CodeBreaK 200",
+        "KRYSTAL-12"
+      ],
+      "zorluk": "zor",
+      "kaynak": "CodeBreaK 200 (Lancet 2023) · KRYSTAL-12 (Lancet 2024)"
+    },
+    {
+      "id": "s25",
+      "metin": "57 yaşında Evre IVB skuamöz hücreli akciğer kanseri tanısı alan hastanın biyobelirteç analizinde EGFR, ALK, ROS1, BRAF negatif ve PD-L1 TPS %0 saptanmıştır. Yüksek tümör yükü ve semptomatik hastalığı olan hastaya birinci basamakta nivolumab + ipilimumab + 2 kür platin bazlı ikili kemoterapi planlanmaktadır. CheckMate 9LA tasarımı ve klinik mantığı dikkate alındığında bu rejimin temel avantajı aşağıdakilerden hangisidir?",
+      "secenekler": {
+        "A": "Yalnızca PD-L1 %50 ve üzeri olan grupta kemoterapiye üstünlük sağlaması",
+        "B": "Erken dönemde kısa kemoterapiyle hızlı hastalık kontrolü sağlarken, uzun dönemde çift immünoterapi (anti-PD-1 + anti-CTLA-4) ile kalıcı yanıt elde edilmesi",
+        "C": "Kemoterapinin 6 küre tamamlanarak immünoterapiye ara verilmesi",
+        "D": "Yalnızca EGFR mutant olgularda TKI direnci sonrasında etkili olması",
+        "E": "SSS metastazı olan olgularda kemoterapinin tamamen kesilmesine imkan tanıması"
+      },
+      "dogru": "B",
+      "aciklama_kisa": "CheckMate 9LA: 2 kür kemoterapi erken progresyonu önler, nivolumab + ipilimumab kalıcı sağkalım yararı sağlar; PD-L1 ve histolojiden bağımsız.",
+      "aciklama_detay": "CheckMate 9LA mantığı: Nivolumab (anti-PD-1) + ipilimumab (anti-CTLA-4) kombinasyonuna yalnızca 2 kür platin bazlı kemoterapi eklenmesi, kemoterapinin hızlı erken hastalık kontrolünü (erken progresyonları önleme) çift immünoterapinin kalıcı genel sağkalım yararıyla birleştirir. PD-L1 ve histolojiden bağımsızlık: Rejim hem skuamöz hem nonskuamöz histolojide ve PD-L1 düzeyinden bağımsız olarak (PD-L1 <%1 dahil) yalnız kemoterapiye göre anlamlı genel sağkalım üstünlüğü göstermiştir.",
+      "secenekAciklamalari": {
+        "A": "YANLIS — Yarar PD-L1 düzeyinden bağımsızdır; PD-L1 <%1 alt grubunda da gösterilmiştir.",
+        "B": "DOGRU — Kısa kemoterapi erken kontrol, çift immünoterapi kalıcı yanıt sağlar.",
+        "C": "YANLIS — Rejimde yalnızca 2 kür kemoterapi verilir; immünoterapi sürdürülür.",
+        "D": "YANLIS — Sürücü mutasyonsuz KHDAK'ta birinci basamak rejimidir.",
+        "E": "YANLIS — Çalışmanın tasarımı ya da avantajı SSS metastazına özgü değildir."
+      },
+      "etiketler": [
+        "CheckMate 9LA",
+        "Nivolumab",
+        "İpilimumab",
+        "PD-L1 negatif"
+      ],
+      "zorluk": "orta",
+      "kaynak": "CheckMate 9LA (Paz-Ares L ve ark., Lancet Oncol 2021)"
     }
   ]
 }
