@@ -264,6 +264,9 @@
           "metin": "**CRH ve metirapon** testleri ACTH eksikliğinde sınırlılıkları nedeniyle TEMD kılavuzunda **önerilmemiştir**.",
           "sayfa": "93"
         }
+      ],
+      "notlar": [
+        "1 µg ACTH testi: ülkemiz çalışmalarının **12,5–14,5 µg/dl** eşikleri aktarılır (s. 95), kılavuz özeti ise iki ACTH testinde de **≥18 µg/dl**'yi normal kabul eder (s. 100)."
       ]
     },
     {
@@ -310,6 +313,9 @@
           "sayfa": "99–100",
           "fark": true
         }
+      ],
+      "notlar": [
+        "Glukagon testinde GH eşiği s. 97–98 metninde \"µg/dl\" yazılmıştır; kılavuzun sonucu ve özeti (s. 98, 100) **µg/l** kullanır — birim yazım hatası."
       ]
     },
     {
@@ -419,6 +425,9 @@
           "metin": "Anti-PIT-1 hipofizit (en çok timoma, lenfoma) **GH, PRL ve TSH** yetersizliği yapar; hipopitüitarizm geri dönmez.",
           "sayfa": "82–83"
         }
+      ],
+      "notlar": [
+        "IgG4 hipofizitinde Dİ: Tablo 5.3 \"**ender**\" der; metin vakaların **%20–40**'ında Dİ ile kombine ön hipofiz yetersizliği bildirir (s. 80–83)."
       ]
     },
     {

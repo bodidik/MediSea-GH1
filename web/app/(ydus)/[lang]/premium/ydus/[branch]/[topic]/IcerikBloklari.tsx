@@ -66,7 +66,7 @@ export type IcerikBlok =
    * `sayfa` kılavuzun BASILI sayfa numarası; `fark` uluslararası kılavuzdan
    * ayrılan ya da Türkiye koşullarına özgü (onay, bulunabilirlik, yerel norm) maddeyi işaretler.
    */
-  | { tip: 'temd'; konu?: string; kaynak: string; maddeler: TemdMadde[] };
+  | { tip: 'temd'; konu?: string; kaynak: string; maddeler: TemdMadde[]; notlar?: string[] };
 
 export type TemdMadde = { metin: string; sayfa?: string; kanit?: string; fark?: boolean };
 
@@ -374,6 +374,19 @@ function TemdKutusu({ blok }: { blok: Extract<IcerikBlok, { tip: 'temd' }> }) {
           </li>
         ))}
       </ul>
+      {/* Dip not: kılavuzun KENDİ İÇİNDE iki farklı değer verdiği yerler. Madde
+          tek değeri seçtiğinde öteki burada görünür kalsın — okuyucu kılavuzu
+          açıp öbür sayfayı görünce "yanlış aktarılmış" sanmasın. */}
+      {blok.notlar && blok.notlar.length > 0 && (
+        <div style={{ marginTop: '0.65rem', fontSize: '13px', lineHeight: 1.55, color: TEMD.ikincil }}>
+          <div style={{ fontWeight: 700, color: TEMD.vurgu, marginBottom: '2px' }}>Kılavuz içi tutarsızlık</div>
+          {blok.notlar.map((n, i) => (
+            <p key={i} style={{ margin: '2px 0 0' }}>
+              <span aria-hidden="true">* </span>{kalinIsle(n)}
+            </p>
+          ))}
+        </div>
+      )}
       <div style={{ fontSize: '12px', color: TEMD.ikincil, marginTop: '0.6rem', paddingTop: '0.4rem', borderTop: `1px dashed ${TEMD.kenar}` }}>
         Kaynak: {blok.kaynak}
       </div>
