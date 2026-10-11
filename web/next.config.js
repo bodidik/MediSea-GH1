@@ -142,6 +142,8 @@ module.exports = {
       //
       // `heart-score → heart` ile aynı karar: TAM olan tutuldu, eksik olan
       // buraya yönlendirildi. Adres kırılmıyor.
+      // 11 Eki: premium akciğer kanseri Göğüs'ten Tıbbi Onkoloji'ye taşındı (içerik birleştirildi).
+      { source: '/tr/premium/ydus/gogus-hastaliklari/akciger-kanseri', destination: '/tr/premium/ydus/onkoloji/akciger-kanseri', permanent: true },
       { source: '/tools/sledai2k', destination: '/tools/sle', permanent: true },
       //    DİKKAT 1: olumsuz ileri-bakış `(?!tr/)` biçiminde olmak zorunda.
       //    İlk yazımı `(?!tr$)` idi ve `$` segment sonuna değil TÜM yolun

@@ -1,8 +1,8 @@
 {
   "id": "fc-gogus-akcigerkanseri-001",
   "accessLevel": "premium",
-  "topic": "Akciğer Kanseri — Epidemiyoloji, Tanı ve Multidisipliner Yönetim",
-  "description": "YDUS Göğüs Hastalıkları serisi: Lung-RADS 2022, KHDAK/KHAK evreleme ve moleküler profilleme, tarama kriterleri ve tedavi algoritmalarını kapsayan hızlı tekrar seti.",
+  "topic": "Akciğer Kanserleri",
+  "description": "Lung-RADS 2022, KHDAK/KHAK evreleme ve moleküler profilleme, tarama kriterleri ve tedavi algoritmalarını kapsayan hızlı tekrar seti.",
   "cards": [
     {
       "id": "card-1",

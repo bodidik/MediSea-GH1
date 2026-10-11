@@ -55,6 +55,15 @@
             "SINAV SPOTU"
           ],
           "hazir": true
+        },
+        {
+          "id": "akciger-kanseri",
+          "baslik": "Akciğer Kanserleri",
+          "rozetler": [
+            "YENİ",
+            "SINAV SPOTU"
+          ],
+          "hazir": true
         }
       ]
     },

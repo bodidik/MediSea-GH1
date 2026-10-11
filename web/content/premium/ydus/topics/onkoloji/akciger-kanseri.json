@@ -1,0 +1,641 @@
+{
+  "meta": {
+    "kaynakca": "akciger-kanseri",
+    "id": "akciger-kanseri",
+    "branch": "onkoloji",
+    "baslik": "Akciğer Kanserleri",
+    "altbaslik": "Epidemiyoloji, LDCT taraması, klinik ve paraneoplastik tablo, TNM 9 ve EBUS/EUS evreleme, moleküler profilleme, perioperatif/adjuvan tedavi, anrezektabl evre III, sürücü mutasyonlara göre hedefe yönelik tedavi, PD-L1'e göre immünoterapi ve küçük hücreli akciğer kanseri",
+    "rozetler": [
+      "YENİ",
+      "SINAV SPOTU"
+    ],
+    "guncelleme": "2026-10"
+  },
+  "moduller": {
+    "flashcard": true,
+    "inciler": true,
+    "quiz": true,
+    "vaka": false,
+    "video": false
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Giriş",
+      "satirlar": [
+        {
+          "metin": "Akciğer kanseri, insidansı ve mortalite oranlarıyla dünya çapında en sık ölüme neden olan malignite olup, 2022 yılı verilerine göre küresel çapta yaklaşık 2.4-2.5 milyon yeni vaka ve 1.8 milyon ölüme yol açmıştır. Tüm akciğer kanserleri histopatolojik, moleküler ve klinik davranış farklılıkları temelinde iki ana gruba ayrılır: olguların yaklaşık **%85**'ini oluşturan **küçük hücreli dışı akciğer kanseri (KHDAK)** ve **%15**'ini oluşturan **küçük hücreli akciğer kanseri (KHAK)**."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Epidemiyoloji ve Etiyoloji",
+      "satirlar": [
+        {
+          "metin": "Hastalığın en temel etiyolojik faktörü tütün ve tütün ürünleri kullanımı olup, vakaların **%85-90**'ı sigara içiciliği ile doğrudan ilişkilidir. Gelişmiş ülkelerde erkeklerde tütün kullanımının azalmasıyla mortalite oranları düşme eğilimi gösterse de, kadınlarda ve gelişmekte olan ülkelerde insidans artışını sürdürmektedir."
+        },
+        {
+          "metin": "Sigara içmeyen bireylerde görülen akciğer kanseri (**LCINS**), farklı bir epidemiyolojik ve biyolojik antite olarak kabul edilmektedir ve özellikle Doğu Asya kökenli kadınlarda daha sık izlenmekte olup, bu grupta adenokarsinom alt tipi ve **EGFR mutasyonları** dominanttır."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tütün Dışı Risk Faktörleri",
+      "kolonlar": [
+        "Kategori",
+        "Faktörler"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Çevresel/Mesleki",
+            "Pasif içicilik, radon gazı, asbest, arsenik, nikel, PM2.5 hava kirliliği"
+          ]
+        },
+        {
+          "hucreler": [
+            "Benign Akciğer Hastalıkları",
+            "KOAH ve idiyopatik pulmoner fibrozis (sigaradan bağımsız risk faktörü)"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Genetik Yatkınlık",
+            "TP53 ve RB1 germline mutasyonları (ör. Li-Fraumeni sendromu)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Risk Faktörleri",
+      "satirlar": [
+        {
+          "metin": "Sigara dışı majör risk faktörleri: **radon gazı** (tütün dışı 1. neden), **asbest** (sigara ile multiplikatif/sinerjik risk artışı), mesleki ağır metaller (nikel, krom, arsenik) ve hava kirliliği (PM2.5)."
+        },
+        {
+          "metin": "Hiç sigara içmemiş akciğer kanserli hastalarda (LCINS) germline genetik yatkınlık (ör. *BRCA2, CHEK2, ATM, TP53*, germline *EGFR*) **%15** oranında izlenebilir."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Akciğer Kanseri Taraması (LDCT)",
+      "satirlar": [
+        {
+          "metin": "**NLST (National Lung Screening Trial):** 55-74 yaş arası, ≥30 paket-yıl sigara öyküsü olan ve aktif içici ya da son 15 yılda bırakmış bireylerde yıllık düşük doz bilgisayarlı tomografi (LDCT) taraması, akciğer grafisine kıyasla akciğer kanserine özgü mortalitede **%20**, tüm nedenli mortalitede **%6.7** azalma sağlamıştır."
+        },
+        {
+          "metin": "**NELSON (Hollanda-Belçika):** 50-74 yaş arası yüksek riskli grupta hacim tabanlı (volumetrik) LDCT taraması ile 10 yıllık takipte akciğer kanseri mortalitesinde **%24-26** bağıl risk azalması elde edilmiştir."
+        },
+        {
+          "metin": "**Güncel USPSTF ve kılavuz kriterleri:** Tarama yaşı **50-80** aralığına, sigara maruziyeti alt sınırı **≥20 paket-yıl** düzeyine indirilmiştir."
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "LDCT Tarama Kriterleri (ACR): 50-80 yaş + ≥20-30 paket-yıl sigara öyküsü + aktif içici veya bırakalı ≤15 yıl olan bireyler. Sigarayı bırakma danışmanlığı ve taramanın yarar/zararlarının (yanlış pozitiflik, radyasyon) tartışıldığı 'ortak karar verme' süreci taramanın zorunlu bileşenleridir. Kesit kalınlığı tercihen ≤1.5 mm, CTDIvol ≤3 mGy olmalıdır."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Prezentasyon ve Semptomatoloji",
+      "satirlar": [
+        {
+          "metin": "Akciğer kanseri tanısı alan hastaların yaklaşık dörtte üçü başvuru anında semptomatiktir. **Lokal/Bölgesel:** Yeni gelişen veya karakter değiştiren öksürük (%50-75), hemoptizi, obstrüktif dispne, plöretik/künt göğüs ağrısı. **Superior sulkus (Pancoast) tümörleri**, C8-T1/T2 sinir kökü invazyonu ile omuz/kol ağrısı ve stellat ganglion invazyonu ile ipsilateral **Horner sendromu** (pitozis, miyozis, anhidrozis) ile prezente olabilir. N. laryngeus recurrens tutulumu ses kısıklığına, VKS invazyonu ise fasiyal ödem/pletore ile **VKS sendromuna** yol açar."
+        },
+        {
+          "metin": "**Metastatik Semptomlar:** En sık metastaz yapılan organlar kemik, beyin, karaciğer ve adrenal bezlerdir. Baş ağrısı, fokal nörolojik defisit, kemik ağrısı ve istemsiz kilo kaybı ileri evre hastalığa işaret eder."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Paraneoplastik Sendromlar",
+      "kolonlar": [
+        "Sendrom",
+        "İlişkili Histoloji/Mekanizma"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Hiperkalsemi",
+            "Skuamöz hücreli karsinom — ektopik PTHrP üretimi"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "SIADH ★",
+            "KHAK — ektopik ADH sekresyonu"
+          ]
+        },
+        {
+          "hucreler": [
+            "Cushing Sendromu",
+            "KHAK — ektopik ACTH sekresyonu"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Lambert-Eaton Miyastenik Sendromu ★",
+            "KHAK — voltaj-kapılı kalsiyum kanallarına karşı antikorlar"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tanı ve Klinik Evreleme (Staging) Yaklaşımları",
+      "satirlar": [
+        {
+          "metin": "Değerlendirmede ilk adım İV kontrastlı toraks ve üst batın BT'dir; primer tümörün anatomik yayılımı (T), bölgesel nodal tutulum (N) ve olası karaciğer/adrenal metastazları (M) değerlendirilir. Erken evre hastalık izlenimi veren veya cerrahi planlanan hastalarda okült metastazı dışlamak için tüm vücut **FDG-PET/BT** ve kontrastlı kraniyal **MRI** standarttır."
+        },
+        {
+          "metin": "Doku biyopsisi ve mediastinal lenf nodu (N2/N3) evrelemesinde ilk tercih **EBUS ve/veya EUS eşliğinde iğne aspirasyonudur (TBNA/FNA)**. Periferik lezyonlarda BT eşliğinde transtorasik iğne biyopsisi (TTNB) tercih edilir. T2/T3 evresine neden olan plevral invazyonu, M1a evresine neden olan malign plevral efüzyondan ayırmak için torasentez veya plevral biyopsi zorunludur."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "TNM 8 → TNM 9 Değişiklikleri",
+      "kolonlar": [
+        "Kategori",
+        "TNM 9 Alt Grubu",
+        "Tanım"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "N2 ★",
+            "N2a",
+            "Tek ipsilateral mediastinal lenf nodu istasyonu (veya subkarinal tutulum)"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "N2 ★",
+            "N2b",
+            "Birden fazla ipsilateral mediastinal lenf nodu istasyonu tutulumu"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "M1c",
+            "M1c1",
+            "Tek organ sisteminde çoklu uzak metastaz"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "M1c",
+            "M1c2",
+            "Birden fazla organ sisteminde çoklu uzak metastaz"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Evreleme Prensipleri",
+      "satirlar": [
+        {
+          "metin": "TNM evreleme sistemi IASLC ve AJCC tarafından güncellenmiş, **TNM 9. edisyon** yürürlüğe girmiştir."
+        },
+        {
+          "metin": "**N2 ayrımı (en kritik değişiklik):** TNM 8'de tüm ipsilateral mediastinal/subkarinal tutulumlar homojen N2 kabul edilirken, TNM 9'da belgelenen sağkalım farkları nedeniyle **N2a** (tek istasyon/subkarinal) ve **N2b** (çoklu istasyon) olarak ayrılmıştır."
+        },
+        {
+          "metin": "**M1c alt sınıflaması:** Ekstratorasik çoklu metastazlar M1c1 ve M1c2 olarak ikiye ayrılmıştır; **her ikisi de Evre IVB** olarak kalır."
+        },
+        {
+          "metin": "**İnvaziv mediastinal evreleme:** PET/BT'de mediasten şüphesi olan ya da santral yerleşimli/cN1 tümörlerde ilk basamak, minimal invaziv doku örneklemesi sağlayan **EBUS-TBNA / EUS-FNA**'dır; servikal mediastinoskopi EBUS'un yetersiz veya uyumsuz olduğu durumlara saklanır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Patobiyoloji ve Moleküler Profilleme",
+      "satirlar": [
+        {
+          "metin": "**KHDAK:** Vakaların büyük çoğunluğunu adenokarsinom (TTF-1, Napsin-A pozitif; sitokeratin 7 pozitif), daha az kısmını skuamöz hücreli karsinom (p40, p63, sitokeratin 5/6 pozitif) ve büyük hücreli karsinom oluşturur. Evre IB ve ileri evre KHDAK (skuamöz dışı) tanısı alan TÜM hastalarda, **Yeni Nesil Dizileme (NGS)** tabanlı geniş gen panelleri zorunludur."
+        },
+        {
+          "metin": "**KHAK:** Yüksek proliferasyon indeksine (Ki-67) sahip, nöroendokrin belirteçler (kromogranin, sinaptofizin, CD56) eksprese eden ve **p53 ile RB1 inaktivasyonunun evrensel** olarak görüldüğü agresif seyirli nöroendokrin tümörlerdir. Hedeflenebilir spesifik mutasyonları bulunmadığından rutin NGS taraması, atipik klinik durumlar (hiç sigara içmeyenler) dışında zorunlu değildir."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "KHDAK'ta Standart Taranması Gereken Driver Mutasyonlar",
+      "kolonlar": [
+        "Mutasyon/Rearanjman",
+        "Not"
+      ],
+      "satirlar": [
+        {
+          "renk": "kirmizi",
+          "hucreler": [
+            "EGFR, ALK, ROS1, BRAF V600E, MET ekzon 14, RET, NTRK, KRAS G12C, HER2 ★",
+            "Tüm skuamöz dışı ileri evre KHDAK'ta NGS ile taranmalı; ayrıca tüm evrelerde PD-L1 TPS değerlendirilmelidir"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "KHDAK Erken Evre (I-II) Yönetimi",
+      "kolonlar": [
+        "Durum",
+        "Yaklaşım"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Cerrahi Rezektabl",
+            "VATS/RATS ile anatomik lobektomi/segmentektomi + sistematik mediastinal lenf nodu diseksiyonu"
+          ]
+        },
+        {
+          "hucreler": [
+            "Cerrahiye Uygun Olmayan",
+            "Stereotaktik Beden Radyoterapisi (SBRT) — küratif alternatif"
+          ]
+        },
+        {
+          "hucreler": [
+            "Yüksek Riskli Evre II / Bazı Evre IB (≥4cm)",
+            "Adjuvan platin bazlı kemoterapi"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Rezeke EGFR mutant (ekzon 19 del/L858R) ★",
+            "Adjuvan osimertinib"
+          ]
+        },
+        {
+          "hucreler": [
+            "Rezeke ALK Pozitif",
+            "Adjuvan alectinib"
+          ]
+        },
+        {
+          "hucreler": [
+            "Rezeke Evre II-IIIA (EGFR/ALK negatif)",
+            "Adjuvan atezolizumab (PD-L1≥%1) veya pembrolizumab"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "KHDAK Lokal İleri Evre (III) Yönetimi",
+      "kolonlar": [
+        "Durum",
+        "Yaklaşım"
+      ],
+      "satirlar": [
+        {
+          "hucreler": [
+            "Potansiyel Rezektabl (T3N1 veya seçilmiş N2)",
+            "Neoadjuvan kemoimmünoterapi (örn. nivolumab + platin ikili) sonrası cerrahi"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Anrezektabl (N3 veya bulky N2) ★",
+            "Eşzamanlı kemoradyoterapi → progresyon yoksa 1 yıl durvalumab konsolidasyon idamesi"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Resektabl ve Lokal İleri Evre KHDAK — Çalışmalar",
+      "kolonlar": [
+        "Çalışma",
+        "Hasta Grubu",
+        "Tedavi ve Sonuç"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "CheckMate 816",
+            "Resektabl, sürücü mutasyonsuz (EGFR/ALK negatif) Evre II-III",
+            "Neoadjuvan 3 siklus nivolumab + platinli ikili kemoterapi; pCR yalnız kemoterapiye göre belirgin yüksek (%24.0 vs %2.2)"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "KEYNOTE-671 / CheckMate 77T / AEGEAN",
+            "Resektabl, sürücü mutasyonsuz Evre II-III",
+            "Neoadjuvan kemoimmünoterapi (pembrolizumab, nivolumab veya durvalumab) → cerrahi → 1 yıl adjuvan immün kontrol noktası inhibitörü; EFS ve OS'de anlamlı kazanç"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "ADAURA ★",
+            "R0 rezeke Evre IB-IIIA (TNM 7), EGFR Ex19del / L858R",
+            "3 yıl adjuvan osimertinib; DFS HR 0.27, OS HR 0.49 (5 yıllık OS %88 vs %78), SSS koruyuculuğu"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "ALINA ★",
+            "Rezeke Evre IB-IIIA, ALK pozitif",
+            "2 yıl adjuvan alectinib, platin bazlı kemoterapiye karşı; DFS'de %76 risk azalması (HR 0.24)"
+          ]
+        },
+        {
+          "hucreler": [
+            "IMpower010 / KEYNOTE-091",
+            "Adjuvan kemoterapi sonrası Evre II-IIIA",
+            "1 yıl adjuvan atezolizumab (PD-L1 ≥%1) veya PD-L1'den bağımsız pembrolizumab"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "PACIFIC ★",
+            "Anrezektabl Evre III, cCRT sonrası progresyonsuz, EGFR/ALK wild-type",
+            "12 ay durvalumab (anti-PD-L1) konsolidasyonu; 5 yıllık OS %42.9 (HR 0.68)"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "LAURA ★",
+            "Anrezektabl Evre III, cCRT sonrası progresyonsuz, EGFR Ex19del / L858R",
+            "Osimertinib idamesi; medyan PFS 5.6 → 39.1 ay (HR 0.16) — yeni standart"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Sürücü mutasyonu olmayan (EGFR/ALK negatif) resektabl Evre II-III KHDAK'ta standart yaklaşım perioperatif/neoadjuvan kemoimmünoterapidir. Anrezektabl Evre III'te cCRT sonrası idame mutasyon durumuna göre ayrılır: wild-type → durvalumab (PACIFIC), EGFR mutant → osimertinib (LAURA)."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Metastatik KHDAK — Sürücü Mutasyonlara Göre Hedefe Yönelik Tedavi",
+      "kolonlar": [
+        "Genetik Anormallik",
+        "Sıklık",
+        "Birinci Basamak Tercih",
+        "Kritik Noktalar ve Direnç"
+      ],
+      "satirlar": [
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "EGFR klasik (Ex19del, L858R) ★",
+            "%15-50",
+            "Osimertinib monoterapisi · Osimertinib + kemoterapi (FLAURA2) · Amivantamab + lazertinib (MARIPOSA)",
+            "FLAURA2 ve MARIPOSA kombinasyonları tek ajan osimertinibe göre PFS avantajı sağlar. 1./2. kuşak TKI direncinin %50-60 nedeni T790M (tedavi: osimertinib). Osimertinib direnci: MET amplifikasyonu, C797S mutasyonu, küçük hücreli dönüşüm"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "EGFR ekzon 20 insersiyonu",
+            "%2-3",
+            "Amivantamab + kemoterapi",
+            "Klasik 1-3. kuşak TKI'lara dirençli; EGFR-MET bispesifik antikoru amivantamab tercih edilir"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "ALK rearanjmanı ★",
+            "%3-7",
+            "Alectinib · Brigatinib · Lorlatinib (CROWN)",
+            "3. kuşak lorlatinib CROWN'da 5 yıllık PFS'yi %60'ın üzerinde tutmuştur. G1202R direnç mutasyonunda lorlatinib etkindir"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "ROS1 rearanjmanı",
+            "%1-2",
+            "Repotrectinib · Taletrectinib · Entrectinib · Crizotinib",
+            "SSS penetrasyonu yüksek yeni nesil inhibitörler (repotrectinib/taletrectinib) crizotinibe tercih edilir"
+          ]
+        },
+        {
+          "hucreler": [
+            "BRAF V600E",
+            "%2-3",
+            "Dabrafenib + trametinib",
+            "BRAF + MEK kombinasyonu monoterapiye göre sinerjistik etki gösterir"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "KRAS G12C",
+            "%13 (adeno)",
+            "Sotorasib · Adagrasib (2. basamak)",
+            "Önceden platin/immünoterapi almış olgularda kovalent KRAS G12C inhibitörleri"
+          ]
+        },
+        {
+          "hucreler": [
+            "MET ekzon 14 atlama",
+            "%3-4",
+            "Capmatinib · Tepotinib",
+            "Sarkomatoid karsinomlarda sıklık %20'lere ulaşabilir"
+          ]
+        },
+        {
+          "hucreler": [
+            "RET füzyonu",
+            "%1-2",
+            "Selpercatinib · Pralsetinib",
+            "Selpercatinib RET pozitif olgularda kemoimmünoterapiye üstündür"
+          ]
+        },
+        {
+          "hucreler": [
+            "NTRK 1/2/3 füzyonu",
+            "<%1",
+            "Larotrectinib · Entrectinib",
+            "Tümörden bağımsız (agnostik) onaya sahiptir"
+          ]
+        },
+        {
+          "hucreler": [
+            "HER2 (ERBB2) mutasyonu",
+            "%2-4",
+            "Fam-trastuzumab deruxtecan (T-DXd)",
+            "Antikor-ilaç konjugatı (ADC)"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "metin": "Sürücü mutasyon varlığında biyobelirteçle eşleşmiş TKI birinci basamakta kemoterapi ve immünoterapinin önündedir. EGFR veya ALK pozitif metastatik KHDAK'ta birinci basamakta immünoterapi verilmez: etkisizdir ve TKI eklendiğinde şiddetli pnömonit/toksisite riski vardır."
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Sürücü Mutasyonsuz Metastatik KHDAK — PD-L1 TPS'ye Göre Birinci Basamak",
+      "kolonlar": [
+        "Durum",
+        "Seçenek",
+        "Dayanak"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "PD-L1 TPS ≥%50 (viseral kriz yoksa)",
+            "Monoterapi immünoterapi: pembrolizumab, atezolizumab, cemiplimab",
+            "KEYNOTE-024 / KEYNOTE-042 (pembrolizumab), IMpower110 (atezolizumab), EMPOWER-Lung 1 (cemiplimab) — kemoterapiye göre belirgin OS avantajı"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "PD-L1 TPS <%50 (veya yüksek tümör yükü / semptomatik)",
+            "Pembrolizumab + platinli ikili kemoterapi",
+            "KEYNOTE-189 (nonskuamöz: platin + pemetreksed + pembrolizumab) · KEYNOTE-407 (skuamöz: platin + taksan + pembrolizumab)"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "PD-L1 TPS <%50",
+            "Nivolumab + ipilimumab + 2 siklus kemoterapi",
+            "CheckMate 9LA — erken kemoterapi yanıtı ile uzun süreli çift immünoterapi avantajını birleştirir"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "PD-L1 TPS <%50",
+            "Tremelimumab + durvalumab + kemoterapi",
+            "POSEIDON"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "ek_bilgi",
+      "metin": "İzole oligometastatik hastalık: primer tümör ve oligometastazlara ablatif lokal tedavi (SBRT) progresyonsuz sağkalımı iyileştirebilir."
+    },
+    {
+      "tip": "metin",
+      "baslik": "Küçük Hücreli Akciğer Kanseri (KHAK) Yönetimi",
+      "satirlar": [
+        {
+          "metin": "KHAK, tütün ürünleriyle en güçlü ilişkiye sahip, santral yerleşimli nekrotik odaklar içeren ve erken metastaz yapma eğilimi gösteren alt tiptir. Evreleme genellikle VALSG kriterleri ile 'Sınırlı Evre (LS)' ve 'Yaygın Evre (ES)' olarak yapılır; AJCC TNM evrelemesi cerrahi adaylarını (T1-2N0) seçmek için özellikle faydalıdır."
+        }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Küçük Hücreli Akciğer Kanseri (KHAK)",
+      "satirlar": [
+        {
+          "metin": "KHAK; nöroendokrin kökenli, yüksek proliferatif indeksli (Ki-67), erken dönemde mikroskobik hematojen yayılım gösteren ve hemen tüm olgularda **TP53 ve RB1 inaktivasyonu** içeren gruptur."
+        }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "KHAK Tedavi Algoritması",
+      "kolonlar": [
+        "Evre / Basamak",
+        "Tedavi",
+        "Dayanak"
+      ],
+      "satirlar": [
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Sınırlı evre — standart",
+            "Eşzamanlı platin/etoposid + torasik RT (kemoradyoterapi)",
+            "—"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Sınırlı evre — konsolidasyon ★",
+            "2 yıla kadar durvalumab",
+            "ADRIATIC: medyan OS 33.4 → 55.9 ay (OS HR 0.73, PFS HR 0.76) — yeni standart"
+          ]
+        },
+        {
+          "renk": "yesil",
+          "hucreler": [
+            "Sınırlı evre — PCI",
+            "Profilaktik kraniyal ışınlama",
+            "cCRT sonrası tam/iyi parsiyel yanıtta beyin metastazı insidansını azaltır, genel sağkalımı artırır"
+          ]
+        },
+        {
+          "hucreler": [
+            "Erken evre I-IIA (T1-T2N0M0, <%5)",
+            "İnvaziv mediastinal evreleme negatifliği sonrası cerrahi rezeksiyon + adjuvan kemoterapi",
+            "—"
+          ]
+        },
+        {
+          "renk": "mavi",
+          "hucreler": [
+            "Yaygın evre — 1. basamak",
+            "Platin + etoposid + anti-PD-L1 (atezolizumab veya durvalumab)",
+            "IMpower133 (karboplatin + etoposid + atezolizumab), CASPIAN (platin + etoposid + durvalumab): medyan OS 10.3 → 12.3-13.0 ay"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Nüks/refrakter (2./3. basamak) ★",
+            "Tarlatamab (DLL3 hedefli BiTE) — tercih edilen",
+            "DeLLphi-301: önceden platin almış nüks yaygın evrede ORR %40, medyan OS 14.3 ay"
+          ]
+        },
+        {
+          "renk": "sari",
+          "hucreler": [
+            "Nüks/refrakter — alternatifler",
+            "Platin yeniden uygulama (platin duyarlılığına göre) · Lurbinectedin (RNA polimeraz II inhibitörü/alkilleyici) · Topotekan · İrinotekan",
+            "—"
+          ]
+        }
+      ]
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "uyari",
+      "baslik": "Tarlatamab — siyah kutu uyarısı",
+      "metin": "Tarlatamab, T hücresi CD3 kompleksini tümör hücresindeki Delta-like ligand 3 (DLL3) ile birleştiren bispesifik T hücresi bağlayıcı antikordur. Kullanım sırasında sitokin salınım sendromu (CRS) ve immün efektör hücre ilişkili nörotoksisite sendromu (ICANS) riski yakından izlenmelidir."
+    },
+    {
+      "tip": "bilgi_kutusu",
+      "tur": "pratik",
+      "metin": "Pratik özet: (1) KHDAK %85, KHAK %15; sigara ilişkisi %85-90. (2) LCINS→Doğu Asyalı kadın+adenokarsinom+EGFR mutasyonu profili. (3) LDCT taraması 50-80 yaş+≥20-30 paket-yıl+bırakalı ≤15 yıl'da mortaliteyi %20-26 azaltır. (4) Pancoast→Horner sendromu (C8-T1 invazyonu); SIADH/Cushing/Lambert-Eaton→KHAK. (5) N2/N3 evreleme için ilk tercih EBUS/EUS-TBNA. (6) Skuamöz dışı ileri evre KHDAK'ta NGS+PD-L1 TPS zorunlu. (7) Sürücü mutasyonu varsa TKI tercih edilir, immünoterapi bu grupta etkisiz/toksik. (8) PD-L1≥%50+sürücü yok→tek ajan immünoterapi; <%50→kemo+immünoterapi. (9) Anrezektabl Evre III KHDAK→eşzamanlı KRT+1 yıl durvalumab. (10) LS-KHAK→platin-etoposid+RT+durvalumab idame+PCI; ES-KHAK→platin-etoposid+atezolizumab/durvalumab, palyatif amaçlı."
+    }
+  ]
+}
