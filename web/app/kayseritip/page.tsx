@@ -19,7 +19,7 @@ export default async function KayseriTipHome() {
           {user?.name ?? 'Öğrenci'}
         </h1>
         <p style={{ fontSize: '14px', color: '#4a5a7a', margin: 0 }}>
-          Erciyes Üniversitesi Tıp Fakültesi — Özel Eğitim Alanı
+          SBÜ Kayseri Tıp Fakültesi — Özel Eğitim Alanı
         </p>
       </div>
 

@@ -28,7 +28,7 @@ export default function DuyurularPage() {
           📢 Duyurular
         </h1>
         <div style={{ fontSize: '12px', color: '#5a6a8a' }}>
-          KayseriTıp — Erciyes Üniversitesi Tıp Fakültesi
+          KayseriTıp — SBÜ Kayseri Tıp Fakültesi
         </div>
       </div>
 

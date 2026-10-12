@@ -100,7 +100,7 @@ export default function KtYetkiPage() {
             <div>
               <label style={{ fontSize: '11px', fontWeight: 600, color: '#4a5a7a', display: 'block', marginBottom: '3px' }}>E-posta</label>
               <input value={email} onChange={e => setEmail(e.target.value)} required type="email"
-                placeholder="kullanici@erciyes.edu.tr"
+                placeholder="kullanici@sbu.edu.tr"
                 style={{ width: '100%', padding: '8px 10px', fontSize: '13px', border: '0.5px solid #c0c8e8', borderRadius: '7px', outline: 'none', boxSizing: 'border-box' }} />
             </div>
             <div>
