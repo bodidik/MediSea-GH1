@@ -1,0 +1,49 @@
+{
+  "id": "pearl-enf-ife-001",
+  "accessLevel": "premium",
+  "topic": "İnvaziv Fungal Enfeksiyonlar (İFE) — İleri Kavramlar",
+  "pearls": [
+    {
+      "id": "p-enf-ife-001",
+      "level": "Klinik",
+      "title": "Olorofim: Candida ve Mucorales'e etkisiz",
+      "content": "<p>Orotomid sınıfının ilk üyesi olorofim mantara özgü <strong>DHODH</strong>'yi inhibe ederek pirimidin sentezini durdurur. Azol dirençli <em>A. fumigatus</em>, <em>L. prolificans</em>, <em>Scedosporium</em> ve dimorfik mantarlara çok güçlüdür; ancak <strong>mayalara (<em>Candida</em>, <em>Cryptococcus</em>) ve Mucorales'e etkisizdir.</strong></p>",
+      "trigger": "Yeni Antifungaller"
+    },
+    {
+      "id": "p-enf-ife-002",
+      "level": "Klinik",
+      "title": "Lomentospora prolificans için olorofim",
+      "content": "<p>Neredeyse tüm sınıflara dirençli <em>L. prolificans</em> ve <em>Scedosporium</em>'da olorofim oral seçenek olarak öne çıkar. Evre 3 çalışma (OASIS) sürmektedir; onaylı değildir.</p>",
+      "trigger": "Yeni Antifungaller"
+    },
+    {
+      "id": "p-enf-ife-003",
+      "level": "Klinik",
+      "title": "Fosmanogepiks: en geniş spektrum, C. krusei istisna",
+      "content": "<p>Ön ilaç fosmanogepiks → aktif manogepiks; <strong>Gwt1</strong> (GPI-çapa biyosentezi) inhibitörü, yeni sınıf. Çoklu dirençli <em>C. auris</em>, <em>Cryptococcus</em>, azol dirençli <em>Aspergillus</em>, <em>Scedosporium</em>, <em>Fusarium</em>'a etkili; Mucorales'e değişken. <strong><em>C. krusei</em>'ye etkisi sınırlı.</strong> IV/oral (biyoyararlanım &gt;%90), CYP3A4 etkileşimi düşük.</p>",
+      "trigger": "Yeni Antifungaller"
+    },
+    {
+      "id": "p-enf-ife-004",
+      "level": "Klinik",
+      "title": "Opelkonazol: akciğere inhale azol",
+      "content": "<p>Nebülize triazol; akciğerde yüksek lokal düzey, sistemik emilim çok az. Sistemik azollerin organ toksisitesi ve <strong>CYP450 ilaç etkileşimi riski en aza iner</strong>. Dirençli pulmoner aspergillozda ek tedavi ve akciğer naklinde profilaksi için araştırılıyor.</p>",
+      "trigger": "Yeni Antifungaller"
+    },
+    {
+      "id": "p-enf-ife-005",
+      "level": "Klinik",
+      "title": "Oral amfoterisin B: kokleat formül (MAT2203)",
+      "content": "<p>Amfoterisin B fosfolipid kokleat içinde oral verilir, fagositlerle odağa taşınır; çalışmalarda <strong>anlamlı nefrotoksisite görülmedi</strong>. Kriptokokal menenjitte oral indüksiyonda evre 2 etkinlik verisi var. SF001 ve AM-2-19 ise kolesterol yerine ergosterolü seçici çeken, böbrek dostu yeni polienlerdir.</p>",
+      "trigger": "Yeni Antifungaller"
+    },
+    {
+      "id": "p-enf-ife-006",
+      "level": "Klinik",
+      "title": "Yeni küf ajanlarının spektrum tablosu",
+      "content": "<table><thead><tr><th>Molekül</th><th>Candida</th><th>Aspergillus</th><th>Lomentospora / Scedosporium</th><th>Mucorales</th></tr></thead><tbody><tr><td><strong>Olorofim</strong> (DHODH)</td><td><strong>Yok</strong></td><td>Çok güçlü</td><td>Çok güçlü</td><td><strong>Yok</strong></td></tr><tr><td><strong>Fosmanogepiks</strong> (Gwt1)</td><td>Var (<em>C. krusei</em> zayıf)</td><td>Güçlü</td><td>Var</td><td>Kısmi</td></tr><tr><td><strong>Opelkonazol</strong> (inhale CYP51)</td><td>Hedef değil</td><td>Güçlü (lokal)</td><td>Sınırlı</td><td>Zayıf</td></tr><tr><td><strong>cAMB</strong> (oral polien)</td><td>Güçlü</td><td>Güçlü</td><td>Değişken</td><td>AmB spektrumu</td></tr></tbody></table>",
+      "trigger": "Yeni Antifungaller"
+    }
+  ]
+}

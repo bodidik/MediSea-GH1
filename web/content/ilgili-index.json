@@ -2891,11 +2891,28 @@
    "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler"
   }
  ],
+ "enfeksiyon/direncli-kuf-yeni-antifungaller": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "ekinokandinler",
+   "baslik": "Ekinokandinler: Böbrek Yetmezliği, Direnç ve Yeni Glukan Sentaz İnhibitörleri"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "invaziv-kandidiyazis",
+   "baslik": "İnvaziv Kandidiyazis ve Kandidemi"
+  }
+ ],
  "enfeksiyon/ekinokandinler": [
   {
    "brans": "enfeksiyon",
    "slug": "invaziv-kandidiyazis",
    "baslik": "İnvaziv Kandidiyazis ve Kandidemi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "direncli-kuf-yeni-antifungaller",
+   "baslik": "Dirençli Küf Enfeksiyonlarında Yeni Antifungaller"
   }
  ],
  "enfeksiyon/fidaksomisin-ileri-duzey": [
@@ -3123,6 +3140,11 @@
    "brans": "enfeksiyon",
    "slug": "ekinokandinler",
    "baslik": "Ekinokandinler: Böbrek Yetmezliği, Direnç ve Yeni Glukan Sentaz İnhibitörleri"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "direncli-kuf-yeni-antifungaller",
+   "baslik": "Dirençli Küf Enfeksiyonlarında Yeni Antifungaller"
   },
   {
    "brans": "enfeksiyon",
