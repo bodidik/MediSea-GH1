@@ -6978,5 +6978,65 @@
         "tur": "makale"
       }
     ]
+  },
+  "invaziv-kandidiyazis": {
+    "baslik": "İnvaziv Kandidiyazis",
+    "aciklama": "İnvaziv kandidiyazis ve kandidemi konusu bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref), UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konunun kaynakçasıdır; her künye her bölümün dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Bagga R, Kavanoor Sridhar K. The Silent Pandemic: Antifungal Resistance and the Future of Invasive Fungal Disease Management. Microorganisms 2026;14(3):599",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/microorganisms14030599",
+        "tur": "makale"
+      },
+      {
+        "ad": "Chowdhary A, Lionakis MS, Chauhan N. Candida auris: host interactions, antifungal drug resistance, and diagnostics. Microbiol Mol Biol Rev 2026;90(1):e00187-22",
+        "yil": 2026,
+        "url": "https://doi.org/10.1128/mmbr.00187-22",
+        "tur": "makale"
+      },
+      {
+        "ad": "Friedman DZP, Schwartz IS. Emerging Diagnostics and Therapeutics for Invasive Fungal Infections. Infect Dis Clin North Am 2023;37(3):593-616",
+        "yil": 2023,
+        "url": "https://doi.org/10.1016/j.idc.2023.05.001",
+        "tur": "makale"
+      },
+      {
+        "ad": "Johnson MD, Moore WJ. Current Antifungals and the Developing Pipeline. Infect Dis Clin North Am 2025;39(1):e1-e31",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.idc.2025.01.001",
+        "tur": "makale"
+      },
+      {
+        "ad": "Salmanton-García J, Nóbrega de Almeida J, Colombo AL. Candidozyma auris (formerly Candida auris): resistant, long lasting, and everywhere. Clin Microbiol Infect 2026;32(3):374-381",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.cmi.2025.12.022",
+        "tur": "makale"
+      },
+      {
+        "ad": "Santana DJ, Cauldron NC, Rogers PD, Cuomo CA. Deciphering the multidrug resistance paradigm in Candida auris. Antimicrob Agents Chemother 2026;70(4):e01062-24",
+        "yil": 2026,
+        "url": "https://doi.org/10.1128/aac.01062-24",
+        "tur": "makale"
+      },
+      {
+        "ad": "Vaccaro A, Cooper JF, Vazquez-Rodriguez A, ve ark. Candidozyma auris and the Perfect Storm of Fungal Pathogenicity: Adaptation, Persistence, and Resistance. J Fungi 2026;12(4):247",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/jof12040247",
+        "tur": "makale"
+      },
+      {
+        "ad": "Vazquez JA. Management of candidemia and invasive candidiasis in adults. UpToDate; son güncelleme 5 Eki 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/management-of-candidemia-and-invasive-candidiasis-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Wiederhold NP. Antifungal susceptibility testing. UpToDate; son güncelleme 27 May 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/antifungal-susceptibility-testing",
+        "tur": "uptodate"
+      }
+    ]
   }
 }
