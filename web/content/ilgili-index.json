@@ -2615,6 +2615,11 @@
   },
   {
    "brans": "enfeksiyon",
+   "slug": "okuler-kandidiyazis",
+   "baslik": "Oküler Kandidiyazis: Korioretinit ve Endoftalmi"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "cr-hvkp-endoftalmi-komplikasyonu",
    "baslik": "CR-hvKP ve hvKP: Yıkıcı Endoftalmi Komplikasyonu"
   },
@@ -2691,6 +2696,11 @@
   },
   {
    "brans": "enfeksiyon",
+   "slug": "okuler-kandidiyazis",
+   "baslik": "Oküler Kandidiyazis: Korioretinit ve Endoftalmi"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "candidozyma-auris-klinik",
    "baslik": "Candidozyma auris: Klinik Prezentasyon ve Pratik İpuçları"
   },
@@ -2727,6 +2737,11 @@
    "brans": "enfeksiyon",
    "slug": "crkp-enfeksiyonu",
    "baslik": "Karbapenem Dirençli Klebsiella pneumoni"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "okuler-kandidiyazis",
+   "baslik": "Oküler Kandidiyazis: Korioretinit ve Endoftalmi"
   },
   {
    "brans": "enfeksiyon",
@@ -3280,23 +3295,45 @@
  "enfeksiyon/mantar-enfeksiyon-ana-sayfa": [
   {
    "brans": "enfeksiyon",
-   "slug": "hucre-duvari-sentez-inhibitorleri",
-   "baslik": "Hücre Duvarı Sentez İnhibitörleri"
+   "slug": "antibiyotikler-ana-sayfa",
+   "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "linezolid-derleme",
-   "baslik": "Linezolid: Farmakolojik Özellikleri, Etki Spektrumu, Klinik Kullanımı ve Güvenlilik Profili"
+   "slug": "bruselloz",
+   "baslik": "Bruselloz: Epidemiyoloji, Mikrobiyoloji, Patogenez, Klinik Prezantasyon, Tanı ve Tedavi"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "prokalsitonin-genel",
-   "baslik": "Prokalsitonin (PCT) ve Klinik Kullanımı"
+   "slug": "candidozyma-auris-nozokomiyal-persistans",
+   "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "tigesiklin-derleme",
-   "baslik": "Tigesiklin (Tigecycline): İleri Düzey Derleme"
+   "slug": "cr-hvkp-hipervirulan-varyant",
+   "baslik": "CR-hvKP: Hipervirülan Varyant ve Kusursuz Fırtına"
+  }
+ ],
+ "enfeksiyon/okuler-kandidiyazis": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "candidozyma-auris-klinik",
+   "baslik": "Candidozyma auris: Klinik Prezentasyon ve Pratik İpuçları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "cr-hvkp-endoftalmi-komplikasyonu",
+   "baslik": "CR-hvKP ve hvKP: Yıkıcı Endoftalmi Komplikasyonu"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "cr-hvkp-metastatik-yayilim",
+   "baslik": "CR-hvKP: Metastatik Yayılımın Klinik İzlemi"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "yapisal-enfeksiyoz-ozofagus",
+   "baslik": "Yapısal ve Enfeksiyöz Özofagus Hastalıkları"
   }
  ],
  "enfeksiyon/prokalsitonin-biyobelirtec-karsilastirmasi": [
@@ -3307,11 +3344,6 @@
   }
  ],
  "enfeksiyon/prokalsitonin-genel": [
-  {
-   "brans": "enfeksiyon",
-   "slug": "tigesiklin-derleme",
-   "baslik": "Tigesiklin (Tigecycline): İleri Düzey Derleme"
-  },
   {
    "brans": "enfeksiyon",
    "slug": "vanco-bobrek",
@@ -3326,6 +3358,11 @@
    "brans": "enfeksiyon",
    "slug": "antibiyotikler-ana-sayfa",
    "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "bruselloz",
+   "baslik": "Bruselloz: Epidemiyoloji, Mikrobiyoloji, Patogenez, Klinik Prezantasyon, Tanı ve Tedavi"
   }
  ],
  "enfeksiyon/prokalsitonin-yukselme-paterni": [
@@ -4211,6 +4248,11 @@
    "brans": "enfeksiyon",
    "slug": "invaziv-kandidiyazis",
    "baslik": "İnvaziv Kandidiyazis ve Kandidemi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "okuler-kandidiyazis",
+   "baslik": "Oküler Kandidiyazis: Korioretinit ve Endoftalmi"
   }
  ],
  "genel-dahiliye/asamali-lenfodem-cerrahisi": [

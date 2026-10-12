@@ -163,6 +163,34 @@
       "title": "İbreksafunjerp: oral, farklı bağlanma, gebelikte kontrendike",
       "content": "<p>Triterpenoid glukan sentaz inhibitörü; bağlanma bölgesi ekinokandinlerle <strong>yalnızca kısmen örtüştüğü</strong> için ekinokandine dirençli <em>C. glabrata</em> ve <em>C. auris</em>'in çoğuna etkilidir (<em>FKS2</em> F659 delesyonu gibi bazı değişimler ikisini birden etkiler). <strong>CYP3A4 substratıdır</strong>, <strong>gebelikte kontrendikedir</strong>; onayı yalnız vulvovajinal kandidiyazis.</p>",
       "trigger": "Yeni Antifungaller"
+    },
+    {
+      "id": "p-enf-ik-024",
+      "level": "Klinik",
+      "title": "Göz taraması: IDSA herkese, AAO yalnız belirtiliye",
+      "content": "<p>IDSA/ESCMID kandidemili <strong>tüm erişkinlerde</strong> ilk hafta dilate fundus muayenesi önerir; AAO ise yalnız göz belirtisi olan ya da belirti ifade edemeyen hastada. Enfeksiyon tarafının gerekçesi: saptanan tutulum <strong>ilaç seçimini ve süreyi değiştirir</strong>. Entübe hastada belirtisizlik tutulum yokluğu değildir.</p>",
+      "trigger": "Oküler Kandidiyazis"
+    },
+    {
+      "id": "p-enf-ik-025",
+      "level": "Klinik",
+      "title": "Korioretinit mi endoftalmi mi?",
+      "content": "<p><strong>Korioretinit:</strong> koroid-retinada sınırlı, sarı-beyaz kabarık lezyonlar, çoğu kez belirtisiz. <strong>Endoftalmi:</strong> vitreusa taşmış, \"kartopu / inci dizisi\" opasiteleri; görmeyi tehdit eden acil.</p>",
+      "trigger": "Oküler Kandidiyazis"
+    },
+    {
+      "id": "p-enf-ik-026",
+      "level": "Klinik",
+      "title": "Oküler kandidiyaziste doz ve süre",
+      "content": "<p>Duyarlı izolatta <strong>flukonazol</strong> 800 mg yükleme → 400–800 mg/gün ya da <strong>vorikonazol</strong> 400 mg ×2 yükleme → 300 mg günde 2 kez; dirençlide <strong>L-AmB 3–5 mg/kg ± flusitozin</strong>. Makula tutulumu/vitritte intravitreal <strong>amfoterisin B 5–10 µg</strong> ya da <strong>vorikonazol 100 µg</strong> (0,1 mL), gerekirse vitrektomi. Süre <strong>en az 4–6 hafta</strong>, lezyonlar gerileyene dek.</p>",
+      "trigger": "Oküler Kandidiyazis"
+    },
+    {
+      "id": "p-enf-ik-027",
+      "level": "Klinik",
+      "title": "C. glabrata'da iki gen: FKS1 ve FKS2",
+      "content": "<p>Ekinokandin direnci <em>C. albicans</em>, <em>C. auris</em>, <em>C. tropicalis</em>, <em>C. krusei</em>'de esas olarak <em>FKS1</em>; <em>C. glabrata</em>'da hem <em>FKS1</em> hem <em>FKS2</em> sıcak nokta mutasyonlarıyla gelişir. GCN5 histon asetiltransferaz ve hücre duvarı stres yanıtları ikincil tolerans sağlar.</p>",
+      "trigger": "Tür ve Direnç"
     }
   ]
 }
