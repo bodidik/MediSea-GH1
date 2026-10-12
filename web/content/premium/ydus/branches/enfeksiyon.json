@@ -21,6 +21,14 @@
             "SINAV SPOTU"
           ],
           "hazir": true
+        },
+        {
+          "id": "invaziv-kandidiyazis",
+          "baslik": "İnvaziv Kandidiyazis ve Kandidemi",
+          "rozetler": [
+            "YENİ"
+          ],
+          "hazir": true
         }
       ]
     },

@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "kaynakca": "invaziv-kandidiyazis",
+    "id": "invaziv-kandidiyazis",
+    "branch": "enfeksiyon",
+    "baslik": "İnvaziv Kandidiyazis ve Kandidemi",
+    "altbaslik": "Tür epidemiyolojisi, risk faktörleri, klinik sendromlar (oküler, endokardit, SSS, hepatosplenik, osteoartiküler), BDG/T2Candida tanısı, ekinokandin başlangıcı ve flukonazole geçiş, direnç mekanizmaları ve yeni antifungaller",
+    "rozetler": ["YENİ"],
+    "guncelleme": "2026-10"
+  },
+  "moduller": {
+    "flashcard": false,
+    "inciler": true,
+    "quiz": false,
+    "vaka": false,
+    "video": false
+  },
+  "icerik": [
+    {
+      "tip": "metin",
+      "baslik": "Giriş ve Epidemiyoloji",
+      "satirlar": [
+        "İnvaziv kandidiyazis, Candida türlerinin kan dolaşımına (**kandidemi**) ya da steril doku ve organlara invazyonuyla seyreden, sağlık hizmeti ilişkili enfeksiyonlar arasında morbidite ve mortalitesi en yüksek olanlardan biridir. Hastane kaynaklı kan dolaşımı enfeksiyonlarının en sık nedenleri arasında 2.–4. sıradadır.",
+        "İlişkilendirilebilir mortalite yaklaşık **%30–40**; septik şokta ya da kaynak kontrolü sağlanamadığında %60'ın üzerine çıkabilir."
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "İnvaziv Hastalık Yapan Başlıca Türler",
+      "kolonlar": ["Tür", "Öne çıkan özellik", "Flukonazol"],
+      "satirlar": [
+        { "hucreler": ["C. albicans", "Tarihsel olarak en sık izole edilen tür", "Çoğunlukla duyarlı"] },
+        { "renk": "sari", "hucreler": ["C. glabrata (Nakaseomyces glabratus)", "Yaşlı, kanser, önceden azol maruziyeti; bazı merkezlerde 1. sırada. Ekinokandin direnci en sık bu türde", "Doza bağımlı duyarlı / kazanılmış direnç"] },
+        { "hucreler": ["C. parapsilosis", "Santral kateter, TPN, el yoluyla bulaş, biyofilm; yenidoğan YBÜ ve cerrahi hastası. Ekinokandin MİK'leri doğal olarak yüksek", "Çoğunlukla duyarlı; dirençli klonal salgınlar bildiriliyor"] },
+        { "hucreler": ["C. tropicalis", "Nötropeni, hematolojik malignite, GİS mukoza hasarı", "Bazı bölgelerde direnç artıyor"] },
+        { "renk": "kirmizi", "hucreler": ["C. krusei (Pichia kudriavzevii)", "Hematolojik hastalık, azol profilaksisi", "Doğal (intrinsik) dirençli"] },
+        { "renk": "kirmizi", "hucreler": ["C. auris (Candidozyma auris)", "Çoklu/pan-direnç, yüzeyde ve deride aylarca kalıcılık, klonal hastane salgınları", "İzolatların >%90'ı dirençli"] }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Patogenez ve Risk Faktörleri",
+      "satirlar": [
+        "Candida türleri GİS, deri ve genitoüriner mikrobiyotanın komensal üyeleridir. İnvazyon iki yoldan gelişir:",
+        "**Endojen translokasyon:** geniş spektrumlu antibiyotik bakteriyel florayı baskılar, Candida aşırı çoğalır; mukozal bariyer bozulunca (kemoterapi mukoziti, abdominal cerrahi, perforasyon) kana geçer.",
+        "**Eksojen inokülasyon / kateter yolu:** santral venöz kateter, kontamine infüzyon sıvısı veya personelin elleriyle doğrudan damar içine giriş."
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Majör Risk Faktörleri",
+      "kolonlar": ["Grup", "Örnekler"],
+      "satirlar": [
+        { "hucreler": ["Yoğun bakım", "Uzamış YBÜ yatışı (≥7–14 gün), mekanik ventilasyon, renal replasman tedavisi"] },
+        { "renk": "kirmizi", "hucreler": ["İnvaziv araçlar", "Santral venöz kateter (en önemli bağımsız risk faktörlerinden), TPN"] },
+        { "hucreler": ["Geniş spektrumlu antibiyotik", "Geniş spektrumlu sefalosporin, karbapenem, piperasilin-tazobaktam"] },
+        { "hucreler": ["Abdominal cerrahi", "GİS perforasyonu, anastomoz kaçağı, nekrotizan pankreatit, tekrarlayan laparotomi"] },
+        { "hucreler": ["İmmünsüpresyon", "Derin ve uzamış nötropeni (akut lösemi indüksiyonu), HKHN, solid organ nakli, yüksek doz kortikosteroid"] },
+        { "hucreler": ["Damar içi madde kullanımı", "C. albicans / C. parapsilosis kandidemisi, endokardit, osteomiyelit"] }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Klinik Tablolar ve Özel Sendromlar",
+      "satirlar": [
+        "Üç ana kategori: (1) doku tutulumsuz kandidemi, (2) viseral doku tutulumlu kandidemi, (3) kandidemisiz derin doku kandidiyazisi.",
+        "**Kandidemi ve akut dissemine kandidiyazis:** lokalize bulgusuz, antibiyotiğe yanıtsız ateş ya da bakteriyel sepsisten ayırt edilemeyen tablo. Derin nötropenide papülonodüler deri lezyonları ve kas apseleri görülebilir.",
+        "**İntraabdominal kandidiyazis:** cerrahi ve YBÜ hastasında en sık derin doku formu (perforasyon, anastomoz kaçağı, nekrotizan pankreatit, sekonder/tersiyer peritonit). Yarıdan fazlasında kan kültürü negatiftir; tanı ameliyatta ya da yeni perkütan drenle alınan steril örnekte üreme ve klinik-radyolojik uyumla konur.",
+        "**Oküler kandidiyazis:** kandidemili hastaların yaklaşık %4–15'inde. Korioretinitte enfeksiyon koroid ve retinada sınırlıdır (beyaz kabarık lezyonlar); endoftalmide vitreusa taşar (vitrit, \"kartopu / inci dizisi\" görünümü) ve görmeyi tehdit eder.",
+        "**Kardiyovasküler:** endokarditte nativ ya da protez kapakta büyük, kolay embolize olan vejetasyonlar (sıklıkla C. albicans, C. parapsilosis). Süpüratif tromboflebit kateter komşuluğundaki vende trombüs ve apsedir.",
+        "**SSS kandidiyazisi:** prematüre yenidoğanda dissemine hastalığın parçası ya da nöroşirürji, ventriküler drenaj/şant sonrası; çok sayıda mikroapse veya menenjit.",
+        "**Osteoartiküler:** kandidemiden haftalar–aylar sonra diskit/vertebral osteomiyelit ya da diz/kalça artriti. Ağrı yereldir; ateş ve lökositoz çoğu kez yoktur, ESH ve CRP yüksektir.",
+        "**Kronik dissemine (hepatosplenik) kandidiyazis:** nötropeniden çıkan hastada nötrofiller toparlanırken dirençli ateş, sağ üst kadran ağrısı ve ALP yüksekliği; BT/MR'de karaciğer ve dalakta \"boğa gözü\" lezyonlar.",
+        "**Renal ve ürogenital:** asemptomatik kandidüri sondalı hastada sıktır ve genellikle tedavi gerektirmez. Sistemik bulgu, böbrek nakli ya da nötropenide piyelonefrit ve mantar topu araştırılır."
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Tanı Yöntemleri",
+      "kolonlar": ["Yöntem", "Güçlü yanı", "Sınırlılık"],
+      "satirlar": [
+        { "hucreler": ["Kan kültürü", "Altın standart; tür ve duyarlılık verir", "İK'nin tümünde duyarlılık ≈%50; pozitifleşme 24–48 saat"] },
+        { "hucreler": ["(1,3)-β-D-glukan", "Pan-fungal (kriptokok ve mukor hariç); yüksek negatif prediktif değer", "Yanlış pozitif: hemodiyaliz (selüloz membran), IVIG/albümin, selüloz içeren cerrahi materyal, bakteriyemi, bazı eski beta-laktam formülasyonları"] },
+        { "hucreler": ["Mannan / anti-mannan", "Candida'ya özgü, birlikte kullanılınca duyarlılık artar", "Tek başına sınırlı duyarlılık"] },
+        { "hucreler": ["T2Candida", "Tam kandan kültürsüz, 3–5 saatte, beş tür üç grupta, çok düşük inokulumda", "Duyarlılık testi vermez"] },
+        { "hucreler": ["Multipleks PCR / hücresiz DNA (mNGS)", "Pozitif şişeden hızlı tür tanımı; kültür negatif derin dokuda yardımcı", "Erişim ve maliyet"] }
+      ]
+    },
+    {
+      "tip": "metin",
+      "baslik": "Tedavi",
+      "satirlar": [
+        "Nötropenik olsun olmasın erişkin kandidemisinde başlangıç tedavisinde ilk seçenek **ekinokandindir**. Ağır olmayan, azol almamış ve direnç olasılığı düşük seçilmiş hastada flukonazol alternatif olabilir.",
+        "**Akış:** kandidemi ya da kuvvetli şüphe → ekinokandin + takip kan kültürü + kateter değerlendirmesi → klinik iyileşme, negatif takip kültürleri ve flukonazole duyarlı izolat → oral flukonazol 400–800 mg/gün (6–12 mg/kg). Klinik stabil değilse ya da tür dirençliyse duyarlılığa göre düzelt; ekinokandin direnci/yanıtsızlığında L-AmB 3–5 mg/kg/gün.",
+        "**Süre:** metastatik odağı olmayan kandidemide ilk negatif kan kültürü gününden ve semptomların gerilemesinden itibaren en az **14 gün**."
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Ekinokandin Dozları",
+      "kolonlar": ["İlaç", "Yükleme", "İdame", "Not"],
+      "satirlar": [
+        { "hucreler": ["Kaspofungin", "70 mg IV (1. gün)", "50 mg/gün IV (>80 kg: 70 mg/gün)", "Child-Pugh B'de idame 35 mg/gün"] },
+        { "hucreler": ["Mikafungin", "Yok", "100 mg/gün IV", "Böbrek yetmezliğinde doz ayarı yok"] },
+        { "hucreler": ["Anidulafungin", "200 mg IV (1. gün)", "100 mg/gün IV", "Kendiliğinden kimyasal yıkım; karaciğer/böbrek ayarı yok"] },
+        { "hucreler": ["Rezafungin", "400 mg IV (1. gün)", "200 mg haftada bir IV (8. günden itibaren)", "Uzun yarı ömürlü yeni ekinokandin"] }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Özel Durumlarda Tedavi",
+      "kolonlar": ["Durum", "Yaklaşım"],
+      "satirlar": [
+        { "renk": "kirmizi", "hucreler": ["C. auris", "İlk tercih ekinokandin; yanıtsızlık/dirençte L-AmB 5 mg/kg/gün. Ampirik flukonazol yok; temas izolasyonu ve çevre temizliği tedavinin parçası"] },
+        { "hucreler": ["C. glabrata", "Başlangıç ekinokandin; basamakta duyarlıysa flukonazol 800 mg/gün (12 mg/kg) ya da vorikonazol 200–300 mg günde iki kez"] },
+        { "hucreler": ["C. krusei", "Başlangıç ekinokandin; basamakta (duyarlıysa) vorikonazol"] },
+        { "hucreler": ["C. parapsilosis", "Ekinokandinle yanıt veren ve kültürü negatifleşen hastada devam edilebilir; duyarlıysa flukonazole geçiş tercih edilir"] },
+        { "hucreler": ["Endokardit", "Kapak cerrahisi esas. Yüksek doz ekinokandin (kaspofungin 150, mikafungin 150, anidulafungin 200 mg/gün) ya da L-AmB 3–5 mg/kg/gün ± flusitozin 25 mg/kg günde 4 kez; duyarlıysa flukonazol 400–800 mg/gün ile devam. Cerrahi sonrası ≥6 hafta"] },
+        { "hucreler": ["SSS", "L-AmB 5 mg/kg/gün + flusitozin 25 mg/kg günde 4 kez, ardından flukonazol 400–800 mg/gün; enfekte cihaz mümkünse çıkarılır"] },
+        { "hucreler": ["Oküler", "Duyarlı izolatta flukonazol ya da vorikonazol; L-AmB ± flusitozin. Makula tehdidi ve vitritte intravitreal tedavi/vitrektomi"] }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Direnç Mekanizmaları",
+      "kolonlar": ["Sınıf", "Mekanizma"],
+      "satirlar": [
+        { "hucreler": ["Azoller", "ERG11 hedef mutasyonları (Y132F, K143R, F126L); CDR1, CDR2, MDR1 pompalarının aşırı ifadesi (TAC1b, MRR1 düzenleyici mutasyonları)"] },
+        { "hucreler": ["Ekinokandinler", "Glukan sentazı kodlayan FKS1 (C. glabrata'da FKS1/FKS2) sıcak nokta (HS1, HS2) nokta mutasyonları (C. auris'te S639F/Y)"] },
+        { "hucreler": ["Flusitozin", "FCY1, FCY2, FUR1 işlev kaybı; tek başına kullanımda direnç hızla gelişir"] }
+      ]
+    },
+    {
+      "tip": "tablo",
+      "baslik": "Yeni ve Geliştirme Aşamasındaki Antifungaller",
+      "kolonlar": ["Ajan", "Mekanizma / özellik", "Durum"],
+      "satirlar": [
+        { "renk": "yesil", "hucreler": ["Rezafungin", "Ekinokandin; yarı ömür ≈130 saat, haftada bir IV", "Kandidemi ve İK için FDA onaylı (2023)"] },
+        { "hucreler": ["İbreksafunjerp", "Triterpenoid, ilk oral glukan sentaz inhibitörü; farklı bağlanma bölgesi sayesinde bazı FKS mutantlarına ve C. auris'e etkili", "Onayı yalnız vulvovajinal kandidiyazis; İK'de araştırma"] },
+        { "hucreler": ["Fosmanogepiks", "Mantara özgü Gwt1 (GPI-çapa biyosentezi) inhibitörü; çoklu dirençli C. auris dahil (C. krusei hariç)", "IV/oral, klinik araştırma"] }
+      ]
+    }
+  ]
+}

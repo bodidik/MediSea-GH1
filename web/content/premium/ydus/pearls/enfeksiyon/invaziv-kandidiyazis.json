@@ -1,0 +1,119 @@
+{
+  "id": "pearl-enf-invaziv-kandidiyazis-001",
+  "accessLevel": "premium",
+  "topic": "İnvaziv Kandidiyazis ve Kandidemi",
+  "pearls": [
+    {
+      "id": "p-enf-ik-001",
+      "level": "Klinik",
+      "title": "Kan kültüründe Candida asla kontaminasyon değildir",
+      "content": "<p>Tek bir şişede bile Candida üremesi <strong>gerçek kandidemi</strong> kabul edilir ve tedavi gerektirir. Tedavi başladıktan sonra kültür negatifleşene dek günlük ya da gün aşırı takip kan kültürü alınır; tedavi süresi ilk negatif kültürden sayılır.</p>",
+      "trigger": "Tanı"
+    },
+    {
+      "id": "p-enf-ik-002",
+      "level": "Klinik",
+      "title": "Negatif kan kültürü invaziv kandidiyazisi dışlamaz",
+      "content": "<p>Kan kültürünün invaziv kandidiyazisin tümündeki duyarlılığı yalnızca <strong>≈%50</strong>'dir; intraabdominal kandidiyazisin yarıdan fazlası ve hepatosplenik kandidiyazis çoğunlukla kültür negatiftir. Yüksek riskli hastada BDG, T2Candida ve steril doku örneği tanıyı tamamlar.</p>",
+      "trigger": "Tanı"
+    },
+    {
+      "id": "p-enf-ik-003",
+      "level": "Klinik",
+      "title": "BDG: negatifi güçlü, pozitifi dikkat ister",
+      "content": "<p>(1,3)-β-D-glukanın <strong>negatif prediktif değeri yüksektir</strong>. Yanlış pozitiflik: selüloz membranlı hemodiyaliz, IVIG/albümin, selüloz içeren gazlı bez ve cerrahi materyal, bakteriyemi, bazı eski beta-laktam formülasyonları. Kriptokok ve mukorda hücre duvarı az glukan taşıdığından test negatif kalır.</p>",
+      "trigger": "Tanı"
+    },
+    {
+      "id": "p-enf-ik-004",
+      "level": "Klinik",
+      "title": "Drenden üreyen Candida kolonizasyon olabilir",
+      "content": "<p>İntraabdominal kandidiyazis tanısı <strong>ameliyatta ya da yeni yerleştirilen perkütan drenle</strong> alınan steril örneğe dayanır. Günlerdir yerinde duran dren torbasından alınan örnekte üreme kolonizasyonu yansıtabilir.</p>",
+      "trigger": "İntraabdominal Kandidiyazis"
+    },
+    {
+      "id": "p-enf-ik-005",
+      "level": "Kılavuz",
+      "title": "Her kandidemide ilk hafta dilate fundus muayenesi",
+      "content": "<p>Kandidemili erişkinde oküler tutulumu dışlamak için tanıdan sonraki <strong>ilk hafta içinde</strong> dilate fundus muayenesi yapılır. Nötropenide lezyonlar nötrofil toparlanınca belirginleşebildiğinden muayene toparlanma sonrasında yinelenir.</p>",
+      "trigger": "Oküler Kandidiyazis"
+    },
+    {
+      "id": "p-enf-ik-006",
+      "level": "Klinik",
+      "title": "Gözde ekinokandin yetmez",
+      "content": "<p>Ekinokandinlerin vitreusa geçişi zayıftır. Korioretinit ya da endoftalmide duyarlı izolatta <strong>flukonazol veya vorikonazol</strong>, ya da <strong>L-AmB ± flusitozin</strong> seçilir. Makulayı tehdit eden lezyon ve vitritte göz hekimiyle intravitreal tedavi/vitrektomi değerlendirilir.</p>",
+      "trigger": "Oküler Kandidiyazis"
+    },
+    {
+      "id": "p-enf-ik-007",
+      "level": "Klinik",
+      "title": "SSS'de ekinokandin değil L-AmB + flusitozin",
+      "content": "<p>Ekinokandinlerin molekül ağırlığı büyük ve proteine bağlanması yüksek olduğundan BOS geçişi yetersizdir. SSS kandidiyazisinde indüksiyon <strong>L-AmB 5 mg/kg/gün + flusitozin 25 mg/kg günde 4 kez</strong>, ardından flukonazol 400–800 mg/gün. Enfekte şant/dren mümkünse çıkarılır.</p>",
+      "trigger": "SSS Kandidiyazisi"
+    },
+    {
+      "id": "p-enf-ik-008",
+      "level": "Kılavuz",
+      "title": "Kandidemide başlangıç ekinokandin, devam flukonazol",
+      "content": "<p>Nötropenik olsun olmasın başlangıçta <strong>ekinokandin</strong>. Klinik stabil, takip kültürleri negatif ve izolat flukonazole duyarlıysa <strong>oral flukonazol 400–800 mg/gün (6–12 mg/kg)</strong> ile devam edilir; basamak tedavisinde yükleme dozu gerekmez. IDSA 2016 geçiş için genellikle 5–7 gün öngörür, yeni kılavuzlar ölçütler sağlanınca daha erken geçişe izin verir.</p>",
+      "trigger": "Tedavi"
+    },
+    {
+      "id": "p-enf-ik-009",
+      "level": "Kılavuz",
+      "title": "Süre: ilk negatif kültürden 14 gün; kateter çıkar",
+      "content": "<p>Metastatik odağı olmayan kandidemide tedavi <strong>ilk negatif kan kültürü gününden ve semptomların gerilemesinden itibaren en az 14 gün</strong> sürer. Santral venöz kateter kaynağı düşünülüyorsa kateter güvenle çıkarılabileceği ilk anda çıkarılır.</p>",
+      "trigger": "Tedavi"
+    },
+    {
+      "id": "p-enf-ik-010",
+      "level": "Klinik",
+      "title": "Tür adı ilacı seçtirir",
+      "content": "<p><strong>C. krusei</strong> flukonazole doğal dirençlidir (basamakta vorikonazol). <strong>C. glabrata</strong> doza bağımlı duyarlıdır ve ekinokandin direnci en sık bu türdedir (basamakta flukonazol 800 mg/gün ya da vorikonazol). <strong>C. parapsilosis</strong>'te ekinokandin MİK'leri doğal olarak yüksektir. <strong>C. auris</strong> izolatlarının &gt;%90'ı flukonazole dirençlidir.</p>",
+      "trigger": "Tür ve Direnç"
+    },
+    {
+      "id": "p-enf-ik-011",
+      "level": "Klinik",
+      "title": "C. auris: ekinokandin, olmazsa yüksek doz L-AmB",
+      "content": "<p>İlk tercih ekinokandin; yanıtsızlık ya da dirençte <strong>L-AmB 5 mg/kg/gün</strong>. Ampirik flukonazol kullanılmaz. Temas izolasyonu ve çevre temizliği tedavinin parçasıdır; kolonize hasta da salgın kaynağıdır.</p>",
+      "trigger": "Tür ve Direnç"
+    },
+    {
+      "id": "p-enf-ik-012",
+      "level": "Klinik",
+      "title": "Candida endokarditi cerrahi bir hastalıktır",
+      "content": "<p>Kapak replasmanı/rezeksiyonu esastır. Medikal tedavide <strong>yüksek doz ekinokandin</strong> (kaspofungin 150, mikafungin 150, anidulafungin 200 mg/gün) ya da <strong>L-AmB 3–5 mg/kg/gün ± flusitozin</strong>; cerrahi sonrası en az 6 hafta. Kapak değiştirilemeyenlerde ve protez kapakta uzun süreli flukonazol supresyonu.</p>",
+      "trigger": "Endokardit"
+    },
+    {
+      "id": "p-enf-ik-013",
+      "level": "Klinik",
+      "title": "Nötropeniden çıkarken ateş + ALP = hepatosplenik kandidiyazis",
+      "content": "<p>Akut lösemi indüksiyonu sonrası nötrofiller toparlanırken dirençli ateş, sağ üst kadran ağrısı ve <strong>ALP yüksekliği</strong>; BT/MR'de karaciğer ve dalakta \"boğa gözü\" lezyonlar. Kan kültürü genellikle negatiftir; tedavi lezyonlar gerileyene dek haftalar–aylar sürer ve sonraki kemoterapi ertelenmez.</p>",
+      "trigger": "Hepatosplenik Kandidiyazis"
+    },
+    {
+      "id": "p-enf-ik-014",
+      "level": "Klinik",
+      "title": "Aylar sonra gelen bel ağrısı: Candida spondilodiskiti",
+      "content": "<p>Kandidemiden haftalar–aylar sonra yerel bel ağrısı; ateş ve lökositoz çoğu kez yoktur, <strong>ESH ve CRP yüksektir</strong>. Kandidemi öyküsü sorulmazsa tanı gecikir.</p>",
+      "trigger": "Osteoartiküler Kandidiyazis"
+    },
+    {
+      "id": "p-enf-ik-015",
+      "level": "Klinik",
+      "title": "Asemptomatik kandidüri çoğunlukla tedavi edilmez",
+      "content": "<p>Sondalı hastada asemptomatik kandidüride önce sonda çıkarılır/değiştirilir. Tedavi istisnaları: <strong>nötropeni, düşük doğum ağırlıklı yenidoğan ve ürolojik girişim öncesi</strong>.</p>",
+      "trigger": "Ürogenital Kandidiyazis"
+    },
+    {
+      "id": "p-enf-ik-016",
+      "level": "Klinik",
+      "title": "Yeni antifungallerde onay durumu",
+      "content": "<p><strong>Rezafungin</strong> haftada bir IV, kandidemi ve İK için FDA onaylı (2023). <strong>İbreksafunjerp</strong> oral glukan sentaz inhibitörü; onayı yalnız vulvovajinal kandidiyazis. <strong>Fosmanogepiks</strong> Gwt1 inhibitörü, yeni sınıf; henüz araştırma aşamasında.</p>",
+      "trigger": "Yeni Antifungaller"
+    }
+  ]
+}
