@@ -114,6 +114,55 @@
       "title": "Yeni antifungallerde onay durumu",
       "content": "<p><strong>Rezafungin</strong> haftada bir IV, kandidemi ve İK için FDA onaylı (2023). <strong>İbreksafunjerp</strong> oral glukan sentaz inhibitörü; onayı yalnız vulvovajinal kandidiyazis. <strong>Fosmanogepiks</strong> Gwt1 inhibitörü, yeni sınıf; henüz araştırma aşamasında.</p>",
       "trigger": "Yeni Antifungaller"
+    },
+    {
+      "id": "p-enf-ik-017",
+      "level": "Klinik",
+      "title": "Böbrek yetmezliğinde ekinokandin dozu değişmez",
+      "content": "<p>Hafif yetmezlikten anüriye kadar <strong>hiçbir ekinokandinde renal doz ayarı yoktur</strong>. Proteine &gt;%95 bağlanma ve büyük molekül nedeniyle diyalizle uzaklaştırılmazlar; hemodiyaliz, periton diyalizi ve sürekli renal replasmanda seans sonrası ek doz gerekmez. Flukonazolde ise yüklemeden sonra CrCl ≤50 mL/dk'da idame %50 azaltılır.</p>",
+      "trigger": "Böbrek ve Diyaliz"
+    },
+    {
+      "id": "p-enf-ik-018",
+      "level": "Klinik",
+      "title": "Candida idrar yolu enfeksiyonunda ekinokandin seçilmez",
+      "content": "<p>Ekinokandinler idrara aktif formda çok az geçer. Böbrek işlevi ne olursa olsun <strong>Candida sistiti ve piyelonefritinde birincil seçenek değildir</strong>; flukonazol, dirençli türde amfoterisin B deoksikolat (± flusitozin) tercih edilir.</p>",
+      "trigger": "Böbrek ve Diyaliz"
+    },
+    {
+      "id": "p-enf-ik-019",
+      "level": "Klinik",
+      "title": "Ekinokandin direncinin adresi: FKS sıcak noktaları",
+      "content": "<p>Ana mekanizma glukan sentazı kodlayan <strong><em>FKS1</em></strong> (<em>C. glabrata</em>'da <em>FKS1</em>/<strong><em>FKS2</em></strong>) sıcak nokta mutasyonlarıdır; bağlanma afinitesi 10 ila binlerce kat düşer. HS1 en sık bölgedir (<em>C. auris</em>'te S639F/Y/P). Azol direncindeki efluks pompalarının (CDR1, MDR1) ekinokandin direncinde belirgin rolü yoktur.</p>",
+      "trigger": "Tür ve Direnç"
+    },
+    {
+      "id": "p-enf-ik-020",
+      "level": "Klinik",
+      "title": "Ekinokandin direnci tedavi altında seçilir",
+      "content": "<p>Kazanılmış direnç çoğunlukla yakın zamanda uzun süre ekinokandin almış ya da ekinokandin altındayken <strong>kırılma enfeksiyonu</strong> gelişen hastada görülür. İlaç düzeyinin düşük kaldığı bölgeler (idrar yolu, apse) mutant suşların rezervuarı olabilir.</p>",
+      "trigger": "Tür ve Direnç"
+    },
+    {
+      "id": "p-enf-ik-021",
+      "level": "Klinik",
+      "title": "Ekinokandine doğal dirençli mantarlar",
+      "content": "<p><strong><em>Cryptococcus</em>, Mucorales, <em>Trichosporon</em>, <em>Rhodotorula</em></strong> ekinokandinlere doğal dirençlidir. <em>C. parapsilosis</em> ve <em>C. guilliermondii</em>'de <em>FKS1</em>'deki doğal polimorfizm (prolin→alanin) bazal MİK değerlerini yükseltir.</p>",
+      "trigger": "Tür ve Direnç"
+    },
+    {
+      "id": "p-enf-ik-022",
+      "level": "Klinik",
+      "title": "Rezafungin: aşağı kalmayan, eşdeğer değil",
+      "content": "<p>Haftada bir IV (1. gün 400 mg, 8. günden itibaren 200 mg), yarı ömür ≈130–150 saat, renal ve diyalizde doz ayarı yok. ReSTORE'da günlük kaspofungine 30. gün mortalite ve 14. gün küresel iyileşmede <strong>aşağı kalmadığı (non-inferior)</strong> gösterildi. Aynı hedefi taşıdığı için <em>FKS</em> mutantlarında MİK yükselir.</p>",
+      "trigger": "Yeni Antifungaller"
+    },
+    {
+      "id": "p-enf-ik-023",
+      "level": "Klinik",
+      "title": "İbreksafunjerp: oral, farklı bağlanma, gebelikte kontrendike",
+      "content": "<p>Triterpenoid glukan sentaz inhibitörü; bağlanma bölgesi ekinokandinlerle <strong>yalnızca kısmen örtüştüğü</strong> için ekinokandine dirençli <em>C. glabrata</em> ve <em>C. auris</em>'in çoğuna etkilidir (<em>FKS2</em> F659 delesyonu gibi bazı değişimler ikisini birden etkiler). <strong>CYP3A4 substratıdır</strong>, <strong>gebelikte kontrendikedir</strong>; onayı yalnız vulvovajinal kandidiyazis.</p>",
+      "trigger": "Yeni Antifungaller"
     }
   ]
 }
