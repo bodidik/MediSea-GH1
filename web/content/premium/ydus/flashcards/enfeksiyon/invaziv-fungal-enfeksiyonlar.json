@@ -1,0 +1,68 @@
+{
+  "id": "fc-enf-ife-001",
+  "accessLevel": "premium",
+  "topic": "İnvaziv Fungal Enfeksiyonlar (İFE) — İleri Kavramlar",
+  "description": "YDUS Enfeksiyon serisi: aspergilloz, mukormikoz, biyobelirteçler ve tanı; 10 kartlık hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "ife-001",
+      "front": "İnvaziv aspergillozis tedavisinde birinci basamak (first-line) antifungal ajanlar hangileridir?",
+      "back": "Vorikonazol ve isavukonazol birinci basamak tedavide yer alır.",
+      "tag": "Enfeksiyon / İnvaziv Fungal Enfeksiyonlar"
+    },
+    {
+      "id": "ife-002",
+      "front": "İnvaziv aspergillozis tanısında serum ve bronkoalveoler lavajda takip edilen spesifik fungal antijen biyobelirteçi hangisidir?",
+      "back": "Galaktomannan antijen testidir.",
+      "tag": "Enfeksiyon / İnvaziv Fungal Enfeksiyonlar"
+    },
+    {
+      "id": "ife-003",
+      "front": "Mucorales (mukormikoz) enfeksiyonlarının ampirik ve hedefe yönelik tedavisinde ilk tercih antifungal ilaç nedir?",
+      "back": "Lipozomal Amfoterisin B parenteral formülasyonudur.",
+      "tag": "Enfeksiyon / İnvaziv Fungal Enfeksiyonlar"
+    },
+    {
+      "id": "ife-004",
+      "front": "Mukormikoz şüphesinde (1→3)-β-D-glukan ve galaktomannan testlerinin tanısal değeri nedir?",
+      "back": "Mucorales türleri bu hücre duvarı bileşenlerini üretmediğinden bu biyobelirteçler genellikle negatif sonuç verir.",
+      "tag": "Enfeksiyon / İnvaziv Fungal Enfeksiyonlar"
+    },
+    {
+      "id": "ife-005",
+      "front": "Aspergillus türlerinin ekinokandin duyarlılığını ölçmede MİK yerine hangi laboratuvar parametresi kullanılır?",
+      "back": "Minimum Etkili Konsantrasyon (MEC - Minimum Effective Concentration) parametresi kullanılır.",
+      "tag": "Enfeksiyon / İnvaziv Fungal Enfeksiyonlar"
+    },
+    {
+      "id": "ife-006",
+      "front": "Pan-fungal biyobelirteç (1→3)-β-D-glukan testi hangi invaziv mantar enfeksiyonlarının tanısında kullanılamaz?",
+      "back": "Mucorales (mukormikoz) ve Cryptococcus türlerinin neden olduğu enfeksiyonlarda negatif sonuç verir.",
+      "tag": "Enfeksiyon / İnvaziv Fungal Enfeksiyonlar"
+    },
+    {
+      "id": "ife-007",
+      "front": "Pneumocystis jirovecii mikroskobik tanısında fungal duvar yapılarını göstermede en hassas boyama yöntemi hangisidir?",
+      "back": "Gomori Metenamin Gümüş (GMS) veya Kalkafluor Beyazı (Calcofluor White) boyaması.",
+      "tag": "Enfeksiyon / İnvaziv Fungal Enfeksiyonlar"
+    },
+    {
+      "id": "ife-008",
+      "front": "Histoplazmozis ve Koksidioidomikozis tanısında idrar veya serum antijen testlerinin temel klinik avantajı nedir?",
+      "back": "Kültür sonuçları haftalar sürebileceğinden hızlı ve erken tanı imkanı sağlamasıdır.",
+      "tag": "Enfeksiyon / İnvaziv Fungal Enfeksiyonlar"
+    },
+    {
+      "id": "ife-009",
+      "front": "Rhinocerebral Mucormycosis tanısında biyopsi örneğinde karakteristik mikroskobik hif morfolojisi nasıldır?",
+      "back": "Geniş (5-20µm), septasız veya az septalı, dik açıya yakın dallanma gösteren kurdele benzeri hifler izlenir.",
+      "tag": "Enfeksiyon / İnvaziv Fungal Enfeksiyonlar"
+    },
+    {
+      "id": "ife-010",
+      "front": "Akut invaziv aspergillozis tanısında akciğer BT taramasında tipik olarak görülen radyolojik bulgu nedir?",
+      "back": "Buzlu cam halesiyle çevrili nodül ('halo işareti'); geç dönemde kavitasyonla 'hava hilali' (air crescent) bulgusu.",
+      "tag": "Enfeksiyon / İnvaziv Fungal Enfeksiyonlar"
+    }
+  ]
+}

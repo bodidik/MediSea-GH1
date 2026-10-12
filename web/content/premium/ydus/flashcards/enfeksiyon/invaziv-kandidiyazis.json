@@ -1,0 +1,440 @@
+{
+  "id": "fc-enf-ik-001",
+  "accessLevel": "premium",
+  "topic": "İnvaziv Kandidiyazis ve Kandidemi",
+  "description": "YDUS Enfeksiyon serisi: kandidemi yönetimi, ekinokandinler (anidulafungin ayrıntılı), C. auris biyolojisi ve direnci, yeni antifungaller; 72 kartlık hızlı tekrar seti.",
+  "cards": [
+    {
+      "id": "ik-001",
+      "front": "Anidulafungin hangi spesifik etki mekanizması ile antifungal aktivite gösterir?",
+      "back": "Fungal hücre duvarı sentezinde yer alan 1,3-β-D-glukan sentaz enziminin Fks1p alt birimine non-kompetitif bağlanarak enzimi inhibe eder.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-002",
+      "front": "Anidulafungin'in ekinokandin sınıfı içindeki en özgün farmakokinetik eliminasyon özelliği nedir?",
+      "back": "Karaciğerde metabolize edilmez; plazmada yavaş kimyasal yıkıma uğrayarak açılan halkalı peptit ürünlerine dönüşür ve esas olarak dışkı ile atılır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-003",
+      "front": "Anidulafungin ile Sitokrom P450 (CYP) izoenzimleri arasındaki etkileşim profili nasıldır?",
+      "back": "Anidulafungin CYP izoenzimlerinin substratı, inhibitörü veya indükleyicisi olmadığından klinik olarak anlamlı CYP ilaç etkileşimi oluşturmaz.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-004",
+      "front": "Anidulafungin kullanımında mutlak kontrendikasyon oluşturan kalıtsal metabolik hastalık hangisidir?",
+      "back": "İçeriğindeki fruktoz nedeniyle metabolik krizi tetikleyebileceğinden Kalıtsal Fruktoz İntoleransı (HFI) hastalarında kontrendikedir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-005",
+      "front": "Anidulafungin infüzyonuna bağlı histamin ilişkili reaksiyonları önlemek için uygulanması gereken maksimum infüzyon hızı nedir?",
+      "back": "İnfüzyon hızı dakikada 1,1 mg (1,1 mg/dakika) değerini aşmamalıdır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-006",
+      "front": "Yetişkinlerde kandidemi ve invaziv kandidiyazis tedavisinde Anidulafungin'in standart yükleme ve idame dozu nedir?",
+      "back": "1. günde 200 mg IV yükleme dozunu takiben günlük 100 mg IV idame dozu verilir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-007",
+      "front": "Yetişkinlerde özofagus kandidiyazisi tedavisinde Anidulafungin standart dozu nedir?",
+      "back": "1. günde 100 mg IV yükleme dozunu takiben günlük 50 mg IV idame dozu uygulanır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-008",
+      "front": "Böbrek yetmezliği olan veya hemodiyaliz alan hastalarda Anidulafungin doz ayarlaması nasıl yapılır?",
+      "back": "Anidulafungin diyalizle temizlenmediği için böbrek bozukluğunda veya hemodiyalizde doz ayarlaması gerekmez.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-009",
+      "front": "Karaciğer yetmezliği bulunan hastalarda Anidulafungin dozunda nasıl bir değişiklik yapılır?",
+      "back": "Hepatik metabolizmaya uğramadığı için karaciğer yetmezliğinde doz ayarlaması gerekmez.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-010",
+      "front": "Ekstrakorporeal Membran Oksijenasyonu (ECMO) desteğindeki hastalarda Anidulafungin farmakokinetiği nasıl etkilenir?",
+      "back": "ECMO altında ilaç maruziyeti düşebildiğinden yeterli kan düzeyi için daha yüksek doz gerekebilir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-011",
+      "front": "Ekinokandin sınıfı antifungallerin Candida türlerine karşı sergilediği antifungal etki tipi nedir?",
+      "back": "Candida türlerine karşı öldürücü (fungusidal) etki gösterirler.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-012",
+      "front": "Ekinokandinlerin Aspergillus türleri üzerindeki etki mekanizması ve tipi nasıldır?",
+      "back": "Aspergillus türlerine karşı fungustatik etki göstererek hiflerde düzensiz dallanma ve hücre genişlemesine yol açarlar.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-013",
+      "front": "Ekinokandinlerin hücresel etki spektrumu dışında kalan ve doğal direnç gösteren başlıca mantar grupları nelerdir?",
+      "back": "Mucorales, Cryptococcus, Fusarium, Rhizopus ve Trichosporon türleri ekinokandinlere doğal dirençlidir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-014",
+      "front": "Candida türlerinde ekinokandin direncinin birincil moleküler mekanizması nedir?",
+      "back": "Glukan sentaz enziminin Fks1p alt birimini kodlayan FKS1 (ve C. glabrata'da FKS2) genindeki nokta mutasyonlarıdır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-015",
+      "front": "Ekinokandin kullanımı sırasında azol veya amfoterisin B ile çapraz direnç gelişme olasılığı nedir?",
+      "back": "Ekinokandinlerin hedef yapısı ve etki mekanizması özgün olduğu için azoller veya amfoterisin B ile çapraz direnç beklenmez.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-016",
+      "front": "Candida auris'in genetik kodlama açısından diğer Candida türlerinden ayrılan temel moleküler özelliği nedir?",
+      "back": "CUG kladı üyesi olup CUG kodonunu lösin yerine serin amino asidi olarak çevirir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-017",
+      "front": "Candida auris'in hastane ortamında ve hasta cildinde uzun süre kalıcı olmasını sağlayan temel fizyolojik adaptasyonlar nelerdir?",
+      "back": "Termotolerans, osmotolerans, yüksek tuz toleransı ve güçlü biyofilm oluşturma yeteneğidir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-018",
+      "front": "Candida auris izolatlarında triazol direncine yol açan ERG11 genindeki en yaygın sıcak nokta (hotspot) mutasyonları nelerdir?",
+      "back": "Y132F, K143R ve F126L amino asit değişim mutasyonlarıdır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-019",
+      "front": "Candida auris'te azol direncini artıran efluks pompası gen ekspresyonlarını indükleyen transkripsiyon faktörü mutasyonu hangisidir?",
+      "back": "TAC1B gen mutasyonu, CDR1 ve MDR1 dışa atım pompalarının aşırı ifadesine neden olur.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-020",
+      "front": "Candida auris hücre duvarı mannan yapısını diğer Candida türlerinin mannanından ayıran özgün kimyasal yapı nedir?",
+      "back": "İki adet asite duyarlı mannoz α-1-fosfat (Manα1PO₄) yan zincirinin varlığıdır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-021",
+      "front": "Yalnızca Candida auris ve Candida haemulonii'de tanımlanan, katyonik yüzey etkileşimiyle cilde yapışmayı sağlayan adhesin proteini hangisidir?",
+      "back": "Scf1 adhesin proteinidir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-022",
+      "front": "Candida auris yüzey dezenfeksiyonunda standart kuaterner amonyum bileşiklerinin yetersiz kalma nedeni nedir?",
+      "back": "Organizmanın biyofilm yapısı, membran modifikasyonları ve enerji bağımlı efluks pompalarını aktive ederek tolerans geliştirmesidir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-023",
+      "front": "Yataklı tedavi kurumlarında Candida auris hastalarının cilt yükünü azaltmak için önerilen antiseptik banyo uygulaması hangisidir?",
+      "back": "Yüksek konsantrasyonlu klorheksidin banyoları kullanılır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-024",
+      "front": "Rezafungin ilacının ekinokandin sınıfı içindeki en büyük klinik kullanım avantajı nedir?",
+      "back": "Uzun eliminasyon yarı ömrü sayesinde haftada bir kez IV dozlama olanağı sağlamasıdır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-025",
+      "front": "İbreksafunjerp hangi antifungal sınıfa aittir ve uygulama yolu bakımından ne ilkidir?",
+      "back": "Triterpenoid sınıfı glukan sentaz inhibitörüdür ve oral yoldan kullanılabilen ilk glukan sentaz inhibitörüdür.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-026",
+      "front": "İbreksafunjerp'in FKS mutasyonu taşıyan Candida suşlarına karşı etkinlik gösterme nedeni nedir?",
+      "back": "Glukan sentaz enzimi üzerinde ekinokandinlerden farklı bir bağlanma bölgesine tutunmasıdır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-027",
+      "front": "Fosmanogepix ön ilacının aktif formu olan manogepix hangi fungal enzimi inhibe eder?",
+      "back": "Glikozilfosfatidilinositol (GPI) çapa biyosentezinde rol alan Gwt1 enzimini inhibe eder.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-028",
+      "front": "Olorofim ilacının etki mekanizması ve hedef enzimi nedir?",
+      "back": "Fungal dihidroorotat dehidrogenaz (DHODH) enzimini inhibe ederek pirimidin biyosentezini engeller.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-029",
+      "front": "Otesekonazol hangi antifungal ilaç sınıfında yer alır ve temel kullanım alanı nedir?",
+      "back": "Tetrazol yapılı, mantara seçici lanosterol 14-α-demetilaz (CYP51) inhibitörüdür; tekrarlayan vulvovajinal kandidiyaziste kullanılır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-030",
+      "front": "Nötropenik olmayan yetişkin hastalarda kandidemi tedavisinde ilk basamak antifungal seçenek hangisidir?",
+      "back": "Ekinokandin grubu (Anidulafungin, Kaspofungin veya Mikafungin) parenteral tedavisi.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-031",
+      "front": "Kandidemi tanısı alan tüm hastalarda metastatik organ tutulumunu dışlamak için ilk hafta içinde yapılması gereken şart muayene hangisidir?",
+      "back": "Candida endoftalmiti varlığını değerlendirmek için genişletilmiş göz dibi (fundus) muayenesi.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-032",
+      "front": "Santral venöz kateteri bulunan bir hastada kandidemi saptandığında kateter yönetimi nasıl olmalıdır?",
+      "back": "Santral venöz kateter klinik olarak mümkün olan en kısa sürede çıkarılmalıdır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-033",
+      "front": "Metastatik komplikasyonu bulunmayan kandidemide antifungal tedavi süresi ne kadardır?",
+      "back": "Kandan kültür temizlenmesi (negatifleşme) sağlandıktan ve semptomlar düzeldikten sonra en az 14 gün.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-034",
+      "front": "Kandidemi etkeni Candida parapsilosis olarak tanımlandığında antifungal tedavi yaklaşımı nasıl değiştirilmelidir?",
+      "back": "Ekinokandin MİK değerleri doğal olarak yüksek olduğundan izolat duyarlıysa flukonazole geçiş tercih edilir; ekinokandinle klinik yanıt veren ve kültürü negatifleşen hastada ekinokandine devam edilebilir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-035",
+      "front": "Candida glabrata ve Candida krusei kaynaklı invaziv enfeksiyonlarda neden ampirik flukonazol tercih edilmez?",
+      "back": "Bu türler flukonazol'e karşı intrinsik veya edinilmiş yüksek direnç oranlarına sahip olduğu için.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-036",
+      "front": "Candida auris'te Amfoterisin B direncinden sorumlu olduğu gösterilen gen mutasyonu hangisidir?",
+      "back": "ERG6 genindeki mutasyonlardır (ergosterol yerine başka sterollerin birikimi).",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-037",
+      "front": "Pediatrik hastalarda kandidemi için Anidulafungin yükleme ve idame dozlama şeması nasıldır?",
+      "back": "3 mg/kg IV yükleme dozu (maksimum 200 mg), ardından günlük 1,5 mg/kg IV idame dozu (maksimum 100 mg).",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-038",
+      "front": "Yenidoğan (neonatal) kandidiyazis tedavisinde ilk tercih edilmesi gereken antifungal ajanlar hangileridir?",
+      "back": "Amfoterisin B veya flukonazol tercih edilir (ekinokandin gerekirse Mikafungin önerilir).",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-039",
+      "front": "Candida osteomiyeliti tedavisinde önerilen başlangıç ve takip tedavi süresi nasıldır?",
+      "back": "En az 2 hafta ekinokandin tedavisini takiben 6 ila 12 ay oral flukonazol idamesi verilir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-040",
+      "front": "Protez kapak Kandida endokarditinde cerrahi müdahale sonrası IV antifungal tedavi süresi en az ne kadar olmalıdır?",
+      "back": "Kapak replasmanından sonra en az 6 hafta IV antifungal tedavi sürdürülmelidir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-041",
+      "front": "Kandida endokarditinde kapağın çıkarılamadığı veya ameliyatın yapılamadığı durumlarda uzun dönem süreç nasıl yönetilir?",
+      "back": "İç organ tutulumu temizlendikten sonra ömür boyu (kronik) oral flukonazol baskılama tedavisi verilir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-042",
+      "front": "Periton diyalizi ilişkili Kandida peritonitinde diyaliz kateteri çıkarıldıktan sonra antifungal tedaviye ne kadar devam edilir?",
+      "back": "Kateter çıkarıldıktan sonra en az 14 gün boyunca antifungal tedavi sürdürülür.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-043",
+      "front": "Nötropenik hastada idrar kültüründe Kandida saptandığında (kandidüri) klinik yaklaşım ne olmalıdır?",
+      "back": "Kandidüri dissemine kandidiyazis göstergesi olabileceğinden sistemik antifungal ile tedavi edilmeli ve idrar kateteri çekilmelidir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-044",
+      "front": "Anidulafungin sulandırılırken ve seyreltilirken hangi IV çözeltilerin kullanılması zorunludur?",
+      "back": "Seyreltme işlemi yalnızca %5 Dekstroz veya %0.9 Sodyum Klorür (SF) enjeksiyonluk çözeltileri ile yapılmalıdır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-045",
+      "front": "Anidulafungin'in 100 mg dozu için önerilen minimum IV infüzyon süresi ne kadardır?",
+      "back": "Minimum infüzyon süresi 90 dakikadır (200 mg dozu için 180 dakika).",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-046",
+      "front": "Anidulafungin'in yetişkinlerdeki ortalama dağılım hacmi (V_d) ne kadardır?",
+      "back": "Yaklaşık 30 ila 50 litre arasındadır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-047",
+      "front": "Anidulafungin plazma proteinlerine ne oranda bağlanma gösterir?",
+      "back": "%99'dan yüksek oranda plazma proteinlerine bağlanır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-048",
+      "front": "Anidulafungin'in insan vücudundaki terminal eliminasyon yarı ömrü yaklaşık kaç saattir?",
+      "back": "Yaklaşık 40 ila 50 saat arasındadır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-049",
+      "front": "Anidulafungin'in idrarla değişmeden atılan böbrek eliminasyon oranı yüzde kaçtır?",
+      "back": "Uygulanan dozun %1'inden daha azı idrarla değişmeden atılır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-050",
+      "front": "Anidulafungin ile eşzamanlı Siklosporin, Takrolimus veya Vorikonazol verildiğinde doz ayarlaması yapılır mı?",
+      "back": "Farmakokinetik etkileşim göstermedikleri için hiçbir ilaçta doz ayarlaması gerekmez.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-051",
+      "front": "Canlı maya içeren Saccharomyces boulardii probiyotiği alan bir hastada antifungal tedavi başlandığında ne gerçekleşir?",
+      "back": "Antifungal ilaç canlı maya olan S. boulardii'yi inaktive edeceğinden probiyotik etkisizleşir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-052",
+      "front": "Anidulafungin kullanan erişkin hastalarda klinik çalışmalarda en sık bildirilen metabolik laboratuvar bozukluğu hangisidir?",
+      "back": "Hipokalemi (%1 ila %10 sıklıkta) en sık bildirilen metabolik bozukluktur.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-053",
+      "front": "Anidulafungin flakonları sulandırıldıktan sonra hazırlanan çözelti hangi sıcaklıkta ve ne kadar süre stabildir?",
+      "back": "25 °C'ye kadar oda sıcaklığında 24 saat boyunca stabildir (dondurulmamalıdır).",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-054",
+      "front": "CLSI rehberine göre Candida albicans için Anidulafungin duyarlılık (susceptible) MİK kesim değeri nedir?",
+      "back": "0,25 mcg/mL veya daha düşük MİK değerleri duyarlı kabul edilir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-055",
+      "front": "CLSI standartlarında Candida glabrata için Anidulafungin duyarlılık MİK kesim değeri kaçtır?",
+      "back": "0,12 mcg/mL veya daha düşük MİK değerleri duyarlı kabul edilir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-056",
+      "front": "Candida parapsilosis türünün ekinokandin grubu ilaçlara karşı MİK kesim değerlerinin genel özelliği nedir?",
+      "back": "Genetik yapısı gereği diğer Candida türlerine kıyasla doğal olarak daha yüksek MİK kesim değerlerine (duyarlı ≤ 2 mcg/mL) sahiptir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-057",
+      "front": "Candida glabrata'da ekinokandin direnci gelişiminde FKS1 genine ek olarak hangi gen mutasyonu rol oynayabilir?",
+      "back": "FKS2 genindeki nokta mutasyonları direnç gelişimine yol açar.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-058",
+      "front": "Candida auris ilk kez hangi yılda ve hangi anatomik örnekten izole edilmiştir?",
+      "back": "2009 yılında Japonya'da bir hastanın dış kulak yolu salgısından izole edilmiştir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-059",
+      "front": "Candida auris'in insan cildinde en sık kolonize olduğu üç birincil anatomik bölge neresidir?",
+      "back": "Anterior nares (burun delikleri), aksilla (koltuk altı) ve kasık (groin) bölgeleridir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-060",
+      "front": "Candida auris biyofilm matris yapısında antifungal ilaçların geçişini engelleyen baskın bileşen nedir?",
+      "back": "Mannan-glukan polisakkarit kompleks yapısıdır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-061",
+      "front": "Candida auris'te hücresel aggregasyon (kümelenme) gösteren izolatların biyolojik sebebi nedir?",
+      "back": "Tomurcuklanma sonrası maya hücrelerinin ayrılamamasına neden olan hücre bölünmesi kusurudur.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-062",
+      "front": "Candida auris'te azol bileşiklerini hücre dışına pompalayan birincil ABC transporter geni hangisidir?",
+      "back": "CDR1 genidir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-063",
+      "front": "Candida auris izolatlarının sağlık tesislerinde hastalar arasında yayılmasını önlemek için uygulanan temel izolasyon sınıfı nedir?",
+      "back": "Temas Önlemleri (Contact Precautions) uygulanır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-064",
+      "front": "Inhalasyon yoluyla lokal olarak akciğer dokusuna uygulanmak üzere geliştirilen yeni triazol türevi antifungal ilaç hangisidir?",
+      "back": "Opelkonazol ilacıdır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-065",
+      "front": "Özofajiyal kandidiyazis şüphesi olan bir hastada kesin tanısal prosedür nedir?",
+      "back": "Üst gastrointestinal endoskopi ile mukozal lezyonlardan biyopsi ve fırça örneği alınmasıdır.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-066",
+      "front": "Kandidüri izlenen bir hastada idrar mikroskopisinde kümeleşmiş kütlelerin görülmesi hangi klinik komplikasyonu düşündürür?",
+      "back": "Böbrek toplayıcı sisteminde fungal kitle (fungus ball) varlığını düşündürür.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-067",
+      "front": "Kronik mukokutanöz kandidiyazis tablosunun karakteristik klinik lezyon özellikleri nelerdir?",
+      "back": "Deri, mukoza ve tırnaklarda uzun süreli, tekrarlayan, granülomatöz ve şekil bozucu edici lezyonlar ile seyreder.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-068",
+      "front": "Anidulafungin infüzyon reaksiyonunda hastada gelişebilen tipik vasküler ve solunumsal semptomlar nelerdir?",
+      "back": "Yüzde kızarma (flushing), döküntü, kaşıntı, bronkospazm, nefes darlığı ve hipotansiyon görülür.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-069",
+      "front": "Derin nötropenik hastada dissemine Candida enfeksiyonunun karakteristik deri lezyonu nasıldır?",
+      "back": "Yaygın, eritematöz papülonodüler lezyonlar (merkezi soluk ya da hemorajik olabilir); biyopsi ve kültür tanı koydurur.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-070",
+      "front": "flukonazol'ün santral sinir sistemine (SSS) ve BOS'a geçiş oranı yaklaşık yüzde kaçtır?",
+      "back": "Beyin omurilik sıvısına (BOS) serum konsantrasyonunun %70 ila %90'ı oranında yüksek geçiş gösterir.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-071",
+      "front": "Girişimsel abdominal cerrahi veya GİS perforasyonu geçiren hastalarda gelişen kandidemi ve intraabdominal kandidiyazis için önerilen ampirik tedavi nedir?",
+      "back": "Ekinokandin grubu (Anidulafungin, Kaspofungin veya Mikafungin) parenteral tedavisi.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    },
+    {
+      "id": "ik-072",
+      "front": "Polien grubu antifungal ilaç olan Amfoterisin B'nin fungal hücre üzerindeki temel etki hedefi nedir?",
+      "back": "Fungal hücre membranındaki ergosterole bağlanarak porlar oluşturur ve iyon sızıntısı ile hücre lizisine yol açar.",
+      "tag": "Enfeksiyon / İnvaziv Kandidiyazis"
+    }
+  ]
+}

@@ -359,6 +359,13 @@
         "eslesen": "Anafilaksi"
       }
     ],
+    "enfeksiyon/ekinokandinler": [
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      }
+    ],
     "enfeksiyon/fosfomisin-klinik-rehber": [
       {
         "slug": "potasyum-replasman",
@@ -5255,13 +5262,13 @@
     ],
     "child-pugh": [
       {
-        "yol": "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi",
-        "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)",
+        "yol": "enfeksiyon/antibiyotikler-ana-sayfa",
+        "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları",
         "eslesen": "Child-Pugh"
       },
       {
-        "yol": "enfeksiyon/antibiyotikler-ana-sayfa",
-        "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları",
+        "yol": "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi",
+        "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)",
         "eslesen": "Child-Pugh"
       },
       {
@@ -5275,13 +5282,13 @@
         "eslesen": "Child-Pugh Sınıflaması"
       },
       {
-        "yol": "gastroenteroloji/ascit-sıvısı",
-        "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri",
+        "yol": "enfeksiyon/dalbavansin-derleme",
+        "baslik": "Dalbavansin",
         "eslesen": "Child-Pugh"
       },
       {
-        "yol": "enfeksiyon/dalbavansin-derleme",
-        "baslik": "Dalbavansin",
+        "yol": "gastroenteroloji/ascit-sıvısı",
+        "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri",
         "eslesen": "Child-Pugh"
       },
       {
@@ -9035,9 +9042,9 @@
   "olcum": {
     "konu": 494,
     "arac": 281,
-    "araciOlanKonu": 355,
+    "araciOlanKonu": 356,
     "konusuOlanArac": 176,
-    "bag": 721,
+    "bag": 722,
     "kavramBag": 640
   }
 }
