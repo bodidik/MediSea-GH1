@@ -70,3 +70,10 @@ uploads/
 !.env.example
 !.env.*.example
 
+
+# Yerel sırlar ve ofis belgeleri — depoya girmez (12 Eki 2026: OAuth client_secret ve .docx sahneye alınmıştı)
+client_secret_*.json
+*.docx
+
+# Ek next dağıtım dizinleri (.next-verify, .next-kurulum, .next-premium …)
+web/.next-*/
