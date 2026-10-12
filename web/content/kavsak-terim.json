@@ -74,5 +74,7 @@
   "kronik obstrüktif akciğer hastalı": "gogus/koah-ana",
   "asetazolamid": "nefroloji/asetazolamid-etki-mekanizmasi",
   "ardışık nefron blokaj": "nefroloji/ardisik-nefron-blokaji-advor-clorotic",
-  "ekinokandin": "enfeksiyon/ekinokandinler"
+  "ekinokandin": "enfeksiyon/ekinokandinler",
+  "kandidemi": "enfeksiyon/invaziv-kandidiyazis",
+  "invaziv kandidiyazis": "enfeksiyon/invaziv-kandidiyazis"
 }

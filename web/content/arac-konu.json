@@ -366,6 +366,13 @@
         "eslesen": "Potasyum Replasmanı"
       }
     ],
+    "enfeksiyon/invaziv-kandidiyazis": [
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      }
+    ],
     "enfeksiyon/linezolid-derleme": [
       {
         "slug": "child-pugh",
@@ -9026,11 +9033,11 @@
     ]
   },
   "olcum": {
-    "konu": 492,
+    "konu": 493,
     "arac": 281,
-    "araciOlanKonu": 354,
+    "araciOlanKonu": 355,
     "konusuOlanArac": 176,
-    "bag": 720,
+    "bag": 721,
     "kavramBag": 640
   }
 }
