@@ -72,6 +72,7 @@ tam basım 120 saniyeyi aşıyordu; parça kipinde tek sayfa ~10 saniye.)
 | 34 | (endokrin) Prolaktinoma ve akromegali TEMD kutuları — kullanıcı isteği | — | TEMD 2022 kılavuzu (Bölüm 1a, 1b) | BİTTİ (o gün s. 114–117; şimdi s. 124–127) |
 | 35 | (endokrin) Tiroid kısımlarına "TEMD'de ne var" — kullanıcı isteği | — | TEMD 2025 tiroid kılavuzu (tiroid2025_11042025.pdf) | BİTTİ (s. 13–14, 24–25, 34–35, 87–89; bölüm 138 sayfa) |
 | 36 | (kardiyo) Lipidoloji genişletme — kullanılmayan kaynaklar, kullanıcı isteği | bempedoik-ezetimib-mace, lipid-ezetimibe-sakinca, statin-otoimmun-miyopati-imnm | klinik-lipidoloji-ascvd-quiz-1 (10 soru) | BİTTİ (kardiyo s. 23–24; kısım 13–26) |
+| 37 | (endokrin) Sayfalara "TEMD ne diyor" kutuları — kullanıcı isteği, 7 kılavuz | — | TEMD DM 2026 · HT 2022 · obezite 2024 · beslenme-egzersiz 2023 · diyabet teknolojileri 2025 · tiroid girişimsel 2026 · hipofiz 2022 | SÜRÜYOR (Kısım 7 ve 10 bitti) |
 
 **İkinci aday taraması (16 Eyl 03:18):** kuyruk yine bitti; açık + premium eşleşmesi olan yeni konular eklendi. Göğüs hastalıkları premiumunda TKP, HKP, VİP ve akciğer kanseri var ama açık tarafta `canonical/gogus` yalnız sarkoidoz üçlüsünü taşıyor (akciğer kanseri açık sayfası onkolojide) — bu yüzden yalnız sarkoidoz kuyruğa alındı. Erişkin Still hastalığı ve HFpEF premiumda dolu, açık eşleşme yok: elendi.
 
@@ -618,3 +619,38 @@ Ek düzeltme: tekrar sayfasının başlığı "Yirmi dört soruda lipidoloji" di
 - **IMPROVE-IT:** s.17 (Tur 12, açık sayfalar) "7 yılda MACE %6,4 rölatif, %2 mutlak"; `bempedoik-ezetimib-mace` "6 yıllık takipte ARR %2,2". Kitapta ikisi de kendi sayfasında, s.23'te "kaynakta" diye işaretli.
 - **Bempedoik asit monoterapi:** s.18 "%21–24"; yeni kaynak "SAMS'de %20–24".
 - **IMNM'de IVIG'in yeri (kaynak kendi içinde):** "8–12 haftada yanıt yoksa ya da ağırsa" ve aynı cümlede "1. basamak olarak da tercih edilebilir" — ikisi birlikte yazıldı.
+
+### Tur 37 — (endokrin) Sayfalara "TEMD ne diyor" kutuları · kullanıcı isteği (20 Eylül) · SÜRÜYOR
+Kullanıcı yedi TEMD kılavuzu verdi. Yeni sayfa açmak yerine **mevcut sayfaların altına küçük `.kutu.temd` ızgaraları** ekleniyor; her kutu "TEMD <yıl> · konu" etiketli.
+Önce bölüm boşluk haritası çıkarıldı (138 sayfa): en dolu Kısım 8 (tirzepatid/obezite, sayfa başına 0–22 mm), en ferah Kısım 4, 5, 6, 10.
+- **Kısım 7 · SGLT2 (s. 64, 65, 67, 68) — 10 kutu**, kaynak DM 2026 bölüm 7.7–7.8 ve 9.2: yeri ve öncelikli endikasyon · beklenen kazanç · Türkiye'deki dozlar (kanagliflozin ruhsatsız) · eGFR eşikleri (dapa/empa) · son dönem böbrekte yalnız insülin (D) · öneri düzeyi (A) · cerrahi/hastalıkta kesme · öglisemik DKA'da insülin kesilmez · kontrendikasyonlar · yan etki başlıkları.
+- **Kısım 10 · Feokromositoma (s. 92, 93, 96, 98, 99) — 10 kutu**, kaynak HT 2022 bölüm 4.4.1.2: kimi tarayalım · insidental kitlenin %5'i · terminoloji ve PNMT · ilk test ve duyarlılık-özgüllük · 3–4 kat kuralı · klonidin testi · görüntüleme sırası · fenoksibenzamin şeması · tuz ve refleks taşikardi · ajan seçimi (labetalol/karvedilol hazırlıkta tercih edilmez).
+Yerleşim ölçüldü: ilk turda s. 95 +15 mm, s. 98 +5,6 mm taştı. Metin kısaltmak **yetmedi** — ızgaranın yüksekliği en uzun kutuya bağlı; kutular daha ferah kardeş sayfalara taşındı (95 → 93, 98'in üçüncüsü → 99) ve iki sütuna alındı. Son ölçüm: **138 sayfada taşma yok**, folyo 138/138 tutuyor, kutu sayısı 186 → **196**.
+Tiroid 2026 dosyası 2025 tiroid kılavuzunun yeni baskısı DEĞİL: "Tiroid ve Paratiroid Lezyonlarında Girişimsel İşlemler ve Ablasyon Tedavileri Kılavuzu, 2. baskı Haziran 2026" — ayrı bir kılavuz, s. 88'deki ablasyon satırlarını besleyecek.
+
+**Tutarsızlıklar (kitapta mevcut metin ↔ TEMD kutusu):**
+- **SGLT2'yi ne zaman kesmeli:** s. 64 "cerrahiden **3–4 gün** önce kes"; TEMD DM 2026 "majör cerrahiden **1–3 gün** önce".
+- **Kilo ve kan basıncı etkisi:** s. 64 "2–3 kg" ve "3–5 mmHg sistolik"; TEMD "ortalama 2 kg" ve "2–4 mmHg".
+- **eGFR alt sınırı:** kitap boyunca "eGFR ≥20'de önerilir" (uluslararası); TEMD kontrendikasyon olarak "**eGFR &lt;20–25**" diyor ve antidiyabetik etkinin &lt;45'te azaldığını ekliyor.
+
+**Kalan plan:** Kısım 1–3 ve 9 (tiroid 2025 kutuları var; girişimsel 2026 için s. 88) · Kısım 4 Cushing ve Kısım 5 MEN (HT 2022 sekonder hipertansiyon) · **Kısım 8 diyabet-obezite**: sayfalar dolu (0–22 mm), obezite 2024 + beslenme-egzersiz 2023 + DM 2026 için yer açmak ya da sayfa eklemek gerekiyor — kullanıcı kararı. Kısım 6 ve 11 (osteoporoz) için bu sette kılavuz yok.
+
+**Tur 37 · ikinci parti (20 Eylül):**
+- **Kısım 9 · s. 88**, kaynak Tiroid ve Paratiroid Girişimsel İşlemler ve Ablasyon Kılavuzu 2026 (bölüm 2.1): otonom nodülde termal ablasyonun yeri (ikinci basamak, ≤3 cm, Graves ve toksik MNG uygun değil) + işlem öncesi ölçütler (sintigrafi, trombosit >60 × 10⁹/L, PT).
+- **Kısım 4 · s. 38–39**, kaynak HT 2022 (4.4.1.3): Cushing'in sekonder hipertansiyondaki yeri, hipertansifte şüphe üçlüsü, hipertansiyon yapan KAH (17-α ve 11-β eksikliği) ve tedavisi.
+- **Kullanıcı isteği 1 — renk:** `.kutu.temd` zemini beyazdan `--brans-acik`e, çerçevesi `--brans-orta`ya alındı; üst şerit aynı kaldı.
+- **Kullanıcı isteği 2 — dağıtım:** kutular sayfa sonundan alınıp ilgili bloğun hemen arkasına taşındı (s. 38, 39, 64, 65, 68, 88, 92, 96, 98). s. 64'te ızgara ikiye bölündü: "yeri/kazanç" 30 saniyeden sonra, "dozlar" Sayılarla'dan sonra.
+- **Kullanıcı isteği 3 — farkı da yaz:** TEMD önerisi kitaptaki kaynaklarla ayrışıyorsa fark kutuya yazıldı. **s. 68** SGLT2 (kesme 1–3 ↔ 3–4 gün · kilo 2 ↔ 2–3 kg · sistolik 2–4 ↔ 3–5 mmHg · eGFR <20–25 kontrendike ↔ ≥20 önerilir) · **s. 97** feokromositoma hazırlığı (TEMD ana şema fenoksibenzamin ↔ kitap doksazosini ilk tercih yapıyor; 7–10 gün ↔ 7–14 gün; doz 20–100 mg ve tavan 1 mg/kg ↔ 30–40 mg/gün, en çok 100) · **s. 2** fırtınada iyot zamanlaması (kılavuzun bölüm metni ≥30 dk, özeti ≥1 saat; kitabın altın kuralı 1 saat).
+
+Yerleşim ölçümü üç tur sürdü: ilk turda s. 88 (+38), 98 (+25), 68 (+1,8), 124 (+1,1) taştı. **Metin kısaltmak çoğu kez işe yaramadı** — `temd-izgara` satır yüksekliği en uzun kutuya göre belirleniyor ve kutular eşit yükseklikte uzuyor; çare kutuyu ferah kardeş sayfaya taşımak (89 → 2, 98'in farkı → 97) ya da **iki kutuyu tek tam genişlik kutuda birleştirmek** (s. 88). Son ölçüm: 138 sayfada taşma **yok**, folyo 138/138, TEMD kutusu **205**.
+Kendi hatam: s. 97'deki fark kutusu ilk yazımda kitabın fenoksibenzamin tavanını "30–40 mg/gün" diye aktarıyordu; sayfada "en çok 100" da yazıyor — önizlemede görülüp düzeltildi.
+
+### Tur 38 — kitap yazıldıktan sonra siteye giren bilgiyi kitaba yedirme · kullanıcı isteği (27 Eylül) · SÜRÜYOR
+Kapsam ölçüldü (10 Eylül'den bu yana, `git log --diff-filter=A`): açık sitede **57 yeni konu** (endokrinoloji 20 · nefroloji 10 · onkoloji 5 · genel dahiliye 5 · romatoloji 4 · palyatif 4 · kardiyoloji 4 · hematoloji 3 · gastro 2), premium'da **65 yeni dosya** (TEMD inci setleri dahil). Değişen (M) dosyaların çoğu kaynakça/sınav kelimesi süpürmesi, yeni bilgi değil.
+**Yöntem:** yeni konunun ayırt edici terim ve sayıları çıkarılıp kitap metniyle karşılaştırıldı (`fark-tarama.cjs`); yalnız kitapta GEÇMEYENLER kutuya girdi. Kitapta zaten olan (GREAT, apatetik tirotoksikoz, teprotumumab, kolestiramin, perklorat…) tekrar edilmedi.
+İlk parti — **Kısım 9**, üç `kutu inci`:
+- **s. 78** hipertiroidide kalp (`hipertiroidizmde-kardiyovaskuler-sistem`): SVR %50–70 düşüşü, kardiyak debide %250'ye varan artış, AF %5–15 (>70 yaş %15–25), TSH <0,1'de subklinikte 3 kat, başvuruda %6 kalp yetmezliği (%94'ünde AF), ötiroidiyle EF %85'te normale dönüyor, PH %50'ye varan, NT-proBNP.
+- **s. 80** GREAT → GREAT+ (`graves-nuks-ongorusu-great-skoru`): eklenen genotipler (HLA-DRB1*03, DQA1*05, DQB1*02, PTPN22 rs2476601) ve sınıf başına nüks oranları (I %12–34 … IV+ %85); orta risklilerin üçte birinde karar değişiyor.
+- **s. 83** dirençli Graves (`graves-atd-direnci-tedavi-algoritmalari`): 18. ayda TRAb ≥0,9 IU/L → kesmede %80–85 nüks; uzun süreli metimazol şeması ve 5. yıl sonucu; haftalık 10 mg metotreksat; kolestiramin; totale yakın tiroidektomide nüks %1.
+Ölçüm: s. 83 ilk yazımda +4,2 mm taştı, kutu yeniden yazılarak kısaldı. Son durum **138 sayfa, taşma yok, folyo 138/138**.
+**Kalan (sıradaki turlar):** hipofiz yetmezliği ailesi (7 yeni konu) → Kısım 12 · yaşlıda hipertiroidizm + subklinik/iyot indüklü (45 KB) → Kısım 9 · amiodaron ilişkili tirotoksikoz → s. 82 · gebelikte hipertiroidi kılavuz karşılaştırması → Kısım 3 · premium TEMD inci setleri (diyabet 1–2, obezite, beslenme-egzersiz) → Kısım 7–8 · hiperparatiroidizm ve paratiroid karsinomu (kitapta karşılık kısım YOK) · öteki branşlar (hematoloji, nefroloji, gastro, onkoloji).

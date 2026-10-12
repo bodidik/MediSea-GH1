@@ -52,12 +52,67 @@
       "port": 3200
     },
     {
+      "name": "dil",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "C:/Users/hucig/Medknowledge-dil/web",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3300"
+      ],
+      "port": 3300
+    },
+    {
       "name": "kitap-duzenleyici",
       "runtimeExecutable": "node",
       "runtimeArgs": [
         "kitap/duzenleyici-sunucu.cjs"
       ],
       "port": 3400
+    },
+    {
+      "name": "premium-olcum",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "web",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3600"
+      ],
+      "port": 3600,
+      "env": {
+        "MONGODB_URI": "mongodb://127.0.0.1:1/yok",
+        "NEXT_DIST_DIR": ".next-premium"
+      }
+    },
+    {
+      "name": "kurulum-olcum",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "web", "run", "dev", "--", "-p", "3700"],
+      "port": 3700,
+      "env": {
+        "NEXT_DIST_DIR": ".next-kurulum"
+      }
+    },
+    {
+      "name": "giris-olcum",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "web", "run", "dev", "--", "-p", "3710"],
+      "port": 3710,
+      "env": {
+        "NEXT_DIST_DIR": ".next-giris",
+        "MONGODB_URI": "mongodb://127.0.0.1:27099/medisea-olcum",
+        "AUTH_GOOGLE_ID": "sahte-olcum-id.apps.googleusercontent.com",
+        "AUTH_GOOGLE_SECRET": "sahte-olcum-secret",
+        "AUTH_URL": "http://localhost:3710",
+        "AUTH_SECRET": "2b55c997aeaff687c9332d875e1c7a3874df1dd86eafabfaa9a87834ea0042c9"
+      }
     }
   ]
 }
