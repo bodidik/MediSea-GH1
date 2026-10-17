@@ -231,13 +231,13 @@
         "E": "FDG-PET negatif olduğundan NF-pNET ekarte edilmiştir; görüntüleme artefaktı olarak değerlendirilebilir."
       },
       "dogru": "B",
-      "aciklama_kisa": "Tüm lezyonlar <2 cm, Ki-67 G1 (%3 ≤%10), FDG-PET negatif, duktus obstrüksiyonu yok → düşük-orta risk. Aktif izlem: ilk yıl 6 ayda bir pankreas MR, stabil seyirde 1–2 yıla seyrekleştirme. Büyüme hızı >5 mm/yıl veya >%20/yıl → cerrahiye yeniden değerlendirme.",
+      "aciklama_kisa": "Tüm lezyonlar <2 cm, Ki-67 %3 (DSÖ: G1 <%3, G2 %3–20 → sınırda G2, düşük proliferasyon), FDG-PET negatif, duktus obstrüksiyonu yok → düşük-orta risk. Aktif izlem: ilk yıl 6 ayda bir pankreas MR, stabil seyirde 1–2 yıla seyrekleştirme. Büyüme hızı >5 mm/yıl veya >%20/yıl → cerrahiye yeniden değerlendirme.",
       "aciklama_detay": "NF-pNET yönetiminde 2 cm eşiği üç retrospektif kohorta (DutchMEN1 Study Group, Partelli ve ark., GTE meta-analizi) dayanan en güçlü kanıt düzeyini temsil eder. Bu hasta düşük-orta risk grubundadır; aktif izlem uygulanır. Cerrahi endikasyon: ≥2 cm, Ki-67 >%10, FDG-PET pozitif, duktus obstrüksiyonu veya hızlı büyüme.",
       "secenekAciklamalari": {
         "A": "YANLIS — Lezyonlar 2 cm altında; 1.6 cm eşiği geçmemiştir.",
         "B": "DOGRU — Aktif izlem standart; ilk yıl 6 ayda bir MR.",
         "C": "YANLIS — Cerrahi endikasyon oluştuğunda rezeksiyon uygulanır; genel olarak kontrendike değildir.",
-        "D": "YANLIS — Ki-67 %3, G1 tümörüdür; yüksek risk değildir (Ki-67 >%10 = yüksek risk).",
+        "D": "YANLIS — Ki-67 %3 düşük proliferasyon indeksidir (DSÖ: G1 <%3, G2 %3–20 — sınırda G2); tek başına yüksek risk değildir (Ki-67 >%10 = yüksek risk).",
         "E": "YANLIS — FDG-PET NF-pNET için yüksek sensitivitede değildir; negatif sonuç tanıyı dışlamaz."
       },
       "etiketler": ["NF-pNET", "2cm Eşiği", "Aktif İzlem", "Ki-67", "FDG-PET"],

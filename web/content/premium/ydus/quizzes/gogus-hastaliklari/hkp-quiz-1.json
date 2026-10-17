@@ -94,7 +94,7 @@
     },
     {
       "id": "s5",
-      "metin": "Trakeal aspirat kültüründe dört farklı antibiyotik sınıfına dirençli Pseudomonas aeruginosa üreyen bir VAP hastasında kombine tedaviye rağmen klinikte kötüleşme devam ediyor.\n\nBu direnç tablosu hangi kategoriye girer ve hangi ajan öncelikle düşünülmelidir?",
+      "metin": "Trakeal aspirat kültüründe polimiksinler ve sefiderokol dışında test edilen tüm antibiyotik sınıflarına (antipsödomonal penisilinler, sefalosporinler, karbapenemler, florokinolonlar, aminoglikozidler) dirençli Pseudomonas aeruginosa üreyen bir VAP hastasında kombine tedaviye rağmen klinikte kötüleşme devam ediyor.\n\nBu direnç tablosu hangi kategoriye girer ve hangi ajan öncelikle düşünülmelidir?",
       "secenekler": {
         "A": "MDR (Çoklu dirençli) — piperasilin-tazobaktam",
         "B": "XDR (Yaygın dirençli) — kolistin veya sefiderokol",
@@ -102,12 +102,12 @@
         "D": "MDR (Çoklu dirençli) — levofloksasin monoterapisi"
       },
       "dogru": "B",
-      "aciklama_kisa": "Dört antibiyotik sınıfına direnç = XDR (en az 2 sınıf dışında tüm sınıflara direnç). PDR'dan farklıdır. XDR Pseudomonas'ta kolistin veya yeni siderophore-sefalosporin sefiderokol kullanılır.",
-      "aciklama_detay": "Direnç terminolojisi kritik: MDR = ≥3 farklı antibiyotik sınıfına direnç; XDR = en az 2 sınıf dışında tüm sınıflara direnç (yani son silah ajanlar dışında her şeye dirençli); PDR = kullanılabilecek hiçbir antibiyotik sınıfına duyarlılık yok (teorik olarak tedavi edilemez). Bu hastada 4 sınıfa direnç = XDR tanımını karşılar. XDR Pseudomonas aeruginosa tedavisinde seçenekler: (1) Kolistin/polimiksin B — eski ajan, nefrotoksisite sorunu var ama hâlâ aktif; (2) Sefiderokol — yeni nesil siderophore-sefalosporin, Pseudomonas ve Acinetobacter dahil XDR/PDR gram-negatiflere etkili; (3) Ceftolozane/tazobaktam — MDR Pseudomonas için onaylı, karbapenem üreten suşlara sınırlı etki. Tedaviye dirençli vakalarda sistemik ajana ek inhale kolistin adjuvan olarak düşünülebilir.",
+      "aciklama_kisa": "En fazla iki sınıf dışında tüm antibiyotik sınıflarına direnç = XDR (yalnızca birkaç sınıfa, ör. dört sınıfa direnç MDR'dir). PDR'dan farklıdır. XDR Pseudomonas'ta kolistin veya yeni siderophore-sefalosporin sefiderokol kullanılır.",
+      "aciklama_detay": "Direnç terminolojisi kritik: MDR = ≥3 farklı antibiyotik sınıfına direnç; XDR = en fazla 2 sınıf dışında tüm sınıflara direnç (yani son silah ajanlar dışında her şeye dirençli); PDR = kullanılabilecek hiçbir antibiyotik sınıfına duyarlılık yok (teorik olarak tedavi edilemez). Bu hastada polimiksinler ve sefiderokol dışındaki tüm sınıflara direnç XDR tanımını karşılar (dört sınıfa direnç tek başına MDR'dir). XDR Pseudomonas aeruginosa tedavisinde seçenekler: (1) Kolistin/polimiksin B — eski ajan, nefrotoksisite sorunu var ama hâlâ aktif; (2) Sefiderokol — yeni nesil siderophore-sefalosporin, Pseudomonas ve Acinetobacter dahil XDR/PDR gram-negatiflere etkili; (3) Ceftolozane/tazobaktam — MDR Pseudomonas için onaylı, karbapenem üreten suşlara sınırlı etki. Tedaviye dirençli vakalarda sistemik ajana ek inhale kolistin adjuvan olarak düşünülebilir.",
       "secenekAciklamalari": {
         "A": "YANLIŞ — Bu direnç tablosu MDR değil XDR'dir. Üstelik piperasilin-tazobaktam, birden fazla sınıfa dirençli suşlara karşı yeterli kapsam sağlayamaz.",
-        "B": "DOĞRU — 4 sınıfa direnç XDR tanımını karşılar. Kolistin ve sefiderokol XDR/PDR Pseudomonas için öncelikli kurtarma tedavisi seçenekleridir.",
-        "C": "YANLIŞ — PDR tanımı için tüm antibiyotik sınıflarına direnç gerekir. Dört sınıfa direnç XDR'yi tanımlar. Üstelik XDR Pseudomonas çoğunlukla karbapenemlere de dirençlidir; meropenem mantıklı değildir.",
+        "B": "DOĞRU — En fazla iki sınıf dışında tüm sınıflara direnç XDR tanımını karşılar. Kolistin ve sefiderokol XDR/PDR Pseudomonas için öncelikli kurtarma tedavisi seçenekleridir.",
+        "C": "YANLIŞ — PDR tanımı için tüm antibiyotik sınıflarına direnç gerekir. İki sınıfa duyarlılığı korunan bu tablo XDR'dir. Üstelik XDR Pseudomonas çoğunlukla karbapenemlere de dirençlidir; meropenem mantıklı değildir.",
         "D": "YANLIŞ — Bu direnç tablosu MDR değil XDR'dir. Levofloksasin monoterapisi XDR Pseudomonas için yetersiz kapsam sağlar ve VİP'te monoterapi önerilmez."
       },
       "etiketler": ["MDR", "XDR", "PDR", "Pseudomonas aeruginosa", "kolistin", "sefiderokol"],

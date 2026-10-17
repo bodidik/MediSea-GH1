@@ -160,7 +160,7 @@
     },
     {
       "id": "s8",
-      "metin": "Dört farklı antibiyotik sınıfına dirençli XDR Acinetobacter baumannii kaynaklı VİP tanısı alan bir hastada IV meropenem + IV kolistin başlanıyor. 72 saatte yanıt alınamıyor; oksijenayon bozuluyor.\n\nBu tabloda en uygun ek tedavi seçeneği hangisidir?",
+      "metin": "Yalnızca polimiksinlere ve sefiderokole duyarlılığı korunan, diğer tüm antibiyotik sınıflarına dirençli (XDR) Acinetobacter baumannii kaynaklı VİP tanısı alan bir hastada IV meropenem + IV kolistin başlanıyor. 72 saatte yanıt alınamıyor; oksijenayon bozuluyor.\n\nBu tabloda en uygun ek tedavi seçeneği hangisidir?",
       "secenekler": {
         "A": "İntravenöz aminoglikozid ekle (amikasin)",
         "B": "Sistemik tedaviye ek olarak inhale kolistin başla (adjuvan)",

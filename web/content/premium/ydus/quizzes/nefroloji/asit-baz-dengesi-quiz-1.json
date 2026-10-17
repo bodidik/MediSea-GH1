@@ -252,7 +252,7 @@
         "B": "Post-hiperkapnik alkaloz yalnızca teorik bir kavramdır, klinik pratikte hiçbir zaman gözlenmemiştir.",
         "C": "Hızlı PCO2 düzeltmesinin tek riski hipokalemi olup, alkaloz veya hücresel komplikasyonla ilgisi yoktur.",
         "D": "Bu hastada HCO3- düzeyi zaten normal olduğundan hızlı PCO2 düzeltmesinin herhangi bir alkaloz riski yoktur.",
-        "E": "Akut solunumsal asidozlarda PCO2 hızlıca normale düşürülürse 'post-hiperkapnik alkaloz' ve ciddi hücresel komplikasyonlar gelişebileceğinden yavaş düzeltme uygulanmalıdır — bu hastada kronik kompanzasyonla yükselmiş olan HCO3-, PCO2 hızla düşürüldüğünde göreceli olarak çok yüksek kalır ve belirgin bir metabolik alkaloz (post-hiperkapnik alkaloz) ortaya çıkar."
+        "E": "Kronik solunumsal asidozlarda PCO2 hızlıca normale düşürülürse 'post-hiperkapnik alkaloz' ve ciddi hücresel komplikasyonlar gelişebileceğinden yavaş düzeltme uygulanmalıdır — bu hastada kronik kompanzasyonla yükselmiş olan HCO3-, PCO2 hızla düşürüldüğünde göreceli olarak çok yüksek kalır ve belirgin bir metabolik alkaloz (post-hiperkapnik alkaloz) ortaya çıkar."
       },
       "dogru": "E",
       "aciklama_kisa": "Kronik respiratuvar asidozda renal kompansasyonla bikarbonat yükselmiştir (burada 34 mEq/L). Ventilatörle hızla normoventile edilirse PaCO₂ aniden normale döner ama böbreğin fazla bikarbonatı atması 48-72 saat sürer; bu geçiş döneminde iatrojenik metabolik alkaloz — nöbetler ve aritmiler — gelişir.",

@@ -465,7 +465,6 @@
         "E": "Abatacept"
       },
       "dogru": "C",
-      "aciklama_kisa": "Bu bir 'Dirençli/Kısmi Yanıtlı' Lupus Nefriti yönetimi sorusudur.",
       "aciklama_detay": "Doğru cevap **Voclosporin**'dir.\n\n• **Neden Voclosporin?** Yeni nesil bir Kalsinörin İnhibitörüdür (CNI). MMF + Steroid tedavisine eklendiğinde (Triple tedavi), renal yanıtı belirgin artırır ve steroid kümülatif dozunu azaltır. En büyük avantajı, Takrolimus gibi sıkı ilaç düzeyi takibi gerektirmemesidir.\n• **Tuzak Analizi:** Takrolimus (B şıkkı) da kullanılabilir (Multi-Target Therapy) ancak soruda özellikle 'düzey takibi gerektirmeyen' denilerek Voclosporin işaret edilmiştir.\n• **Diğer Şıklar:** Anifrolumab cilt lupusunda etkilidir, nefritte rutin değildir. Abatacept çalışmaları nefritte başarısız olmuştur.\n\n**💡 Klinik Not:** Voclosporin kullanırken GFR takibi yapılmalıdır, çünkü hemodinamik etkiyle GFR'yi hafif düşürebilir.",
       "etiketler": [
         "Lupus",
