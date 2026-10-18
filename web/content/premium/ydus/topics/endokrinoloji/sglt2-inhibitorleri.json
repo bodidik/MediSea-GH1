@@ -177,7 +177,7 @@
         {
           "hucreler": [
             "Kan Basıncı Doz-Yanıt",
-            "Ortalama 3-5 mmHg fayda sağlar; Bayes ağ meta-analizlerinde bu etki DOZDAN BAĞIMSIZDIR (örn. empagliflozin 10 mg ile 25 mg farksız)",
+            "TEMD Diabetes Mellitus 2026’ya göre ortalama 2-4 mmHg fayda sağlar; Bayes ağ meta-analizlerinde bu etki DOZDAN BAĞIMSIZDIR (örn. empagliflozin 10 mg ile 25 mg farksız)",
             "Doz artırmanın KB üzerinde ek fayda sağlamayacağı akılda tutulmalı"
           ]
         }
@@ -188,7 +188,7 @@
       "baslik": "Geriatrik / Sarkopenik (Frail) Hastalarda Kullanım",
       "satirlar": [
         {
-          "metin": "SGLT2 inhibitörleri kalori atılımı ile ortalama **2-3 kg kilo verdirir**. Yağ kütlesinde (özellikle visseral adipozite) belirgin kayıp yaşanırken, iskelet kası kütlesinde istatistiksel olarak anlamlı fakat yağ kaybına oranla klinik olarak minimal bir azalma görülür. Totalde \"iskelet kası/yağ\" oranı arttığından insülin direnci ve metabolik profil iyileşir. Yine de ileri sarkopenik yaşlılarda direnç egzersizi ve yeterli protein alımı ile desteklenmeleri önerilir."
+          "metin": "SGLT2 inhibitörleri kalori atılımı ile ortalama **2 kg kilo verdirir** (TEMD Diabetes Mellitus 2026). Yağ kütlesinde (özellikle visseral adipozite) belirgin kayıp yaşanırken, iskelet kası kütlesinde istatistiksel olarak anlamlı fakat yağ kaybına oranla klinik olarak minimal bir azalma görülür. Totalde \"iskelet kası/yağ\" oranı arttığından insülin direnci ve metabolik profil iyileşir. Yine de ileri sarkopenik yaşlılarda direnç egzersizi ve yeterli protein alımı ile desteklenmeleri önerilir."
         }
       ]
     },

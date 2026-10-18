@@ -2,7 +2,7 @@
   "title": "Büyüme Hormonu Patolojileri: Akromegali ve Gigantizm",
   "meta": {
     "kaynakca": "akromegali",
-    "updatedAt": "16 Mar 2026",
+    "updatedAt": "2026-10-18",
     "tags": ["Endokrinoloji", "Akromegali", "GH", "IGF-1", "OGTT", "Somatostatin Analogları"],
     "parent": "Ön-hipofiz-hastaliklari-giris",
     "order": 3
@@ -18,7 +18,7 @@
     },
     {
       "heading": "Klinik Spektrum: Sinsi İlerleme",
-      "html": "<p>Akromegali tanısı genellikle semptomlar başladıktan 7-10 yıl sonra konur. İpuçları şunlardır:</p><ul class=\"mb-4\"><li><strong>Yumuşak Doku ve İskelet:</strong> El ve ayaklarda büyüme (yüzük/ayakkabı numarasında artış), prognatizm (çene ilerlemesi), diş aralıklarının açılması (diastema), makroglossi.</li><li><strong>Metabolik:</strong> İnsülin direnci, DM (%25), hipertrigliseridemi.</li><li><strong>Sistemik:</strong> Uyku apnesi (en sık), karpal tünel sendromu, hipertansiyon ve <strong>Kolon Polipleri</strong> (kolon kanseri riski artmıştır).</li><li><strong>Kardiyak:</strong> Biventriküler hipertrofi ve restriktif kardiyomiyopati.</li></ul>"
+      "html": "<p>Akromegali tanısı genellikle semptomlar başladıktan ortalama 5 yıl (15 yıla dek; TEMD 2022) sonra konur. İpuçları şunlardır:</p><ul class=\"mb-4\"><li><strong>Yumuşak Doku ve İskelet:</strong> El ve ayaklarda büyüme (yüzük/ayakkabı numarasında artış), prognatizm (çene ilerlemesi), diş aralıklarının açılması (diastema), makroglossi.</li><li><strong>Metabolik:</strong> İnsülin direnci, DM (%25), hipertrigliseridemi.</li><li><strong>Sistemik:</strong> Uyku apnesi (en sık), karpal tünel sendromu, hipertansiyon ve <strong>Kolon Polipleri</strong> (kolon kanseri riski artmıştır).</li><li><strong>Kardiyak:</strong> Biventriküler hipertrofi ve restriktif kardiyomiyopati.</li></ul>"
     },
     {
       "heading": "Tanı Algoritması: Uzman Basamakları",

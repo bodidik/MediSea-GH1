@@ -2,7 +2,7 @@
   "title": "Dopamin Agonistleri ve Kardiyak Valvülopati Riski",
   "meta": {
     "kaynakca": "prolaktinoma",
-    "updatedAt": "28 Nis 2026",
+    "updatedAt": "2026-10-18",
     "tags": ["Farmakoloji", "Endokrinoloji", "Prolaktinoma", "Kabergolin", "Valvülopati", "Ekokardiyografi", "İleri Okuma"],
     "parent": "hiperprolaktinemi-ve-prolaktinoma",
     "order": 4
@@ -30,7 +30,7 @@
     },
     {
       "heading": "5. Uluslararası Kılavuzlara Göre Periyodik İzlem Sıklığı",
-      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Tedavi süresince kardiyak valvülopati riskini takip etmek amacıyla belirli aralıklarla EKO çekilmelidir. Ancak takip sıklığı doza ve uygulanan klinik kılavuza göre değişiklik gösterir:</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Endocrine Society Kılavuzu</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Taramanın özellikle yüksek doz kullananlarda, yani <strong>haftada 2 mg'dan daha fazla kabergolin alan hastalarda her 2 yılda bir</strong> yapılmasını önermektedir.</p></div></div><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">İngiliz Komitesi (UK) Kılavuzu</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Haftada <strong>2 mg'dan yüksek doz alan hastaların yıllık</strong> olarak, daha düşük doz alanların ise <strong>5 yılda bir</strong> EKO ile izlenmesini önerir. <em>(Not: Bazı merkezler alınan dozdan bağımsız olarak her yıl EKO çekmeyi klinik bir politika olarak benimsemiştir, bazı kaynaklar ise 6-12 ayı önerir).</em></p></div></div></div>"
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Tedavi süresince kardiyak valvülopati riskini takip etmek amacıyla belirli aralıklarla EKO çekilmelidir. Ancak takip sıklığı doza ve uygulanan klinik kılavuza göre değişiklik gösterir:</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Endocrine Society Kılavuzu</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Taramanın özellikle yüksek doz kullananlarda, yani <strong>haftada 2 mg'dan daha fazla kabergolin alan hastalarda her 2 yılda bir</strong> yapılmasını önermektedir.</p></div></div><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">İngiliz Komitesi (UK) Kılavuzu</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Haftada <strong>2 mg'dan yüksek doz alan hastaların yıllık</strong> olarak, daha düşük doz alanların ise <strong>5 yılda bir</strong> EKO ile izlenmesini önerir. <em>.</em></p></div></div></div>"
     },
     {
       "heading": "6. Kesin Karar Noktası: Tedaviyi Sonlandırma Kriteri",

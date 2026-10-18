@@ -368,7 +368,7 @@
       "baslik": "Tanı Adım 3 — Cushing Hastalığı vs Ektopik ACTH (Lokalizasyon)",
       "satirlar": [
         {
-          "metin": "**Hipofiz MRG:** Adenom >9 mm ise (bazı uzmanlar >6 mm'yi yeterli sayar; 6–9 mm'de IPSS konusunda fikir birliği yok) ve klinik/biyokimyasal uyum varsa (örn. Yüksek Doz [8mg] DST'de kortizolün %50'den fazla baskılanması veya CRH/Desmopressin testinde kortizol/ACTH artışı) doğrudan Cushing Hastalığı tanısı konur."
+          "metin": "**Hipofiz MRG:** Adenom >9 mm ise (TEMD Adrenal 2025: <6 mm'de IPSS gerekir, 6–9 mm'de fikir birliği yok) ve klinik/biyokimyasal uyum varsa (örn. Yüksek Doz [8mg] DST'de kortizolün %50'den fazla baskılanması veya CRH/Desmopressin testinde kortizol/ACTH artışı) doğrudan Cushing Hastalığı tanısı konur."
         },
         {
           "metin": "**BIPSS (Bilateral İnferior Petrozal Sinüs Örneklemesi) ★ — Altın Standart:** Hipofiz MRG normal veya lezyon <6 mm ise uygulanır. Merkez(petrozal)/Perifer ACTH oranı bazalde ≥2, veya CRH/Desmopressin uyarısı sonrası ≥3 ise Cushing Hastalığı kanıtlanır. Gradiyent yoksa Ektopik ACTH düşünülerek Toraks/Batın BT, Ga-68 DOTATATE veya FDG-PET çekilir."
@@ -381,7 +381,7 @@
       "kaynak": "TEMD Hipofiz Hastalıkları Tanı, Tedavi ve İzlem Kılavuzu 2022",
       "maddeler": [
         {
-          "metin": "1,5T MR mikroadenomların yalnız **%50'sini** net saptar. MR'da **>9 mm** tümör CH lehine düşünülür; bazı uzmanlar **>6 mm**'yi yeterli kabul eder.",
+          "metin": "1,5T MR mikroadenomların yalnız **%50'sini** net saptar. MR'da **>9 mm** tümör CH lehine düşünülür; TEMD Adrenal 2025'e göre **6–9 mm** arasında fikir birliği yoktur.",
           "sayfa": "27"
         },
         {

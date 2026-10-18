@@ -2,7 +2,7 @@
   "title": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri",
   "meta": {
     "kaynakca": "asit-baz",
-    "updatedAt": "20 Ağu 2026",
+    "updatedAt": "2026-10-18",
     "tags": ["Asit-Baz Dengesi", "Metabolik Asidoz", "Anyon Açığı", "GOLDMARK", "Renal Tübüler Asidoz", "İdrar Anyon Açığı", "Winters Formülü"],
     "parent": "asit-baz-denge-bozukluklari",
     "order": 2
@@ -10,7 +10,7 @@
   "sections": [
     {
       "heading": "🎯 Giriş ve Tanım",
-      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Metabolik asidoz; sistemik arteriyel kan pH değerinin <strong>&lt; 7.35</strong> ve plazma bikarbonat (HCO₃⁻) konsantrasyonunun <strong>&lt; 22 mEq/L</strong> (farklı kılavuzlarda &lt; 24 veya &lt; 23 mEq/L) olması ile karakterize; primer olarak <strong>hidrojen iyonu (H⁺) birikimi</strong> veya <strong>bikarbonat kaybı</strong> sonucu gelişen patolojik bir süreçtir.</p><div class=\"bg-slate-800 border border-slate-600 p-4 rounded-xl shadow-xl text-white\"><h4 class=\"font-black text-slate-300 text-[11px] uppercase mb-2\">Yönetimin Dört Adımı</h4><ol class=\"text-[11px] text-slate-100 space-y-1 list-decimal list-inside ml-1\"><li><strong>Anyon açığı temelli sınıflandırma</strong> — yüksek AG mi, normal AG (hiperkloremik) mi?</li><li><strong>Solunumsal ve renal kompanzasyon sınırlarının analizi</strong> — tablo basit mi, miks mi?</li><li><strong>İdrar elektrolitleri ile ayırıcı tanı</strong> — kayıp bağırsaktan mı, böbrekten mi?</li><li><strong>Patofizyolojiye özgü tedavi</strong> — akut mu kronik mi, organik mi hiperkloremik mi?</li></ol></div>"
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Metabolik asidoz; sistemik arteriyel kan pH değerinin <strong>&lt; 7.35</strong> ve plazma bikarbonat (HCO₃⁻) konsantrasyonunun <strong>&lt; 22 mEq/L</strong> olması ile karakterize; primer olarak <strong>hidrojen iyonu (H⁺) birikimi</strong> veya <strong>bikarbonat kaybı</strong> sonucu gelişen patolojik bir süreçtir.</p><div class=\"bg-slate-800 border border-slate-600 p-4 rounded-xl shadow-xl text-white\"><h4 class=\"font-black text-slate-300 text-[11px] uppercase mb-2\">Yönetimin Dört Adımı</h4><ol class=\"text-[11px] text-slate-100 space-y-1 list-decimal list-inside ml-1\"><li><strong>Anyon açığı temelli sınıflandırma</strong> — yüksek AG mi, normal AG (hiperkloremik) mi?</li><li><strong>Solunumsal ve renal kompanzasyon sınırlarının analizi</strong> — tablo basit mi, miks mi?</li><li><strong>İdrar elektrolitleri ile ayırıcı tanı</strong> — kayıp bağırsaktan mı, böbrekten mi?</li><li><strong>Patofizyolojiye özgü tedavi</strong> — akut mu kronik mi, organik mi hiperkloremik mi?</li></ol></div>"
     },
     {
       "heading": "⚗️ 1. Patofizyoloji ve Kompanzasyon Dinamikleri",

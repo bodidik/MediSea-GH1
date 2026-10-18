@@ -2,7 +2,7 @@
   "title": "Hiperprolaktinemi ve Prolaktinoma",
   "meta": {
     "kaynakca": "prolaktinoma",
-    "updatedAt": "16 Mar 2026",
+    "updatedAt": "2026-10-18",
     "tags": ["Endokrinoloji", "Prolaktin", "Dopamin Agonist", "Hook Effect", "Makroprolaktinemi"],
     "parent": "on-hipofiz-hastaliklari-giris","hidden": false,
     "order": 2
@@ -38,7 +38,7 @@
     },
     {
       "heading": "1. Prolaktin Ölçümü ve Doğrulanması",
-      "html": "<p class=\"text-sm leading-relaxed mb-4 text-slate-700\">Tanı, serum prolaktin seviyesinin laboratuvar referans değerlerinin üzerinde olmasıyla konur (genellikle erkeklerde ve postmenopozal kadınlarda <strong>>20 ng/mL</strong>, premenopozal kadınlarda <strong>>30 ng/mL</strong>).</p><div class=\"bg-slate-50 border-l-4 border-slate-400 p-4 shadow-sm mb-4\"><p class=\"text-xs text-slate-700 leading-relaxed\">Çoğu durumda, aşırı damar yolu açma stresi (venipuncture) olmadan alınan <strong>tek bir kan örneği</strong> ile yapılan ölçüm tanıyı doğrulamak için yeterlidir; dinamik (uyarı) testlerin yapılmasına gerek yoktur. Yemekler prolaktin sekresyonunu hafifçe artırabileceğinden, ilk ölçülen prolaktin seviyesi sınırda veya hafif yüksekse (21-40 ng/mL) testin aç karnına ve hasta stressiz bir durumdayken tekrarlanması önerilir.</p></div>"
+      "html": "<p class=\"text-sm leading-relaxed mb-4 text-slate-700\">Tanı, serum prolaktin seviyesinin laboratuvar referans değerlerinin üzerinde olmasıyla konur (genellikle erkeklerde ve postmenopozal kadınlarda <strong>>20 ng/mL</strong>, premenopozal kadınlarda <strong>>30 ng/mL</strong>; TEMD 2022 ise erkekte >20, kadında >25 ng/mL kullanır).</p><div class=\"bg-slate-50 border-l-4 border-slate-400 p-4 shadow-sm mb-4\"><p class=\"text-xs text-slate-700 leading-relaxed\">Çoğu durumda, aşırı damar yolu açma stresi (venipuncture) olmadan alınan <strong>tek bir kan örneği</strong> ile yapılan ölçüm tanıyı doğrulamak için yeterlidir; dinamik (uyarı) testlerin yapılmasına gerek yoktur. Yemekler prolaktin sekresyonunu hafifçe artırabileceğinden, ilk ölçülen prolaktin seviyesi sınırda veya hafif yüksekse (21-40 ng/mL) testin aç karnına ve hasta stressiz bir durumdayken tekrarlanması önerilir.</p></div>"
     },
     {
       "heading": "2. Sekonder ve Fizyolojik Nedenlerin Dışlanması",

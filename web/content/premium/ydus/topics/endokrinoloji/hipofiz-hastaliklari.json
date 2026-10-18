@@ -545,7 +545,7 @@
         {
           "hucreler": [
             "ACTH Eksikliği",
-            "Sabah Kortizol: >13-15: Normal · <3-5: Yetersiz",
+            "Sabah Kortizol (TEMD 2022): ≥15 Normal · <3 Yetersiz",
             "ITT/ACTH Testi: Pik Kortizol <18 µg/dL"
           ]
         },
@@ -580,10 +580,10 @@
           "metin": "**Açlık Sabah Kortizolü (08:00):**"
         },
         {
-          "metin": "• >13-15 µg/dL (>370-415 nmol/L): Adrenal aks sağlam kabul edilir."
+          "metin": "• ≥15 µg/dL: Adrenal aks sağlam kabul edilir (TEMD 2022; yaşlıda ≥18)."
         },
         {
-          "metin": "• <3-5 µg/dL (<80-140 nmol/L): Santral adrenal yetersizlik doğrulanır."
+          "metin": "• <3 µg/dL (TEMD 2022): Santral adrenal yetersizlik doğrulanır."
         },
         {
           "metin": "• 3 - 15 µg/dL Arası: Dinamik uyarım testi gerektirir."
@@ -604,7 +604,7 @@
           "metin": "• 250 µg IV/IM sentetik ACTH (1-24) enjeksiyonu sonrası 30 ve 60. dakikalarda kortizol ölçülür. **Pik kortizol <18 µg/dL** ise yetersizlik kanıtlanır."
         },
         {
-          "metin": "• **Önemli Kısıtlama:** Akut hipofiz hasarlarında (örneğin cerrahi veya travmayı takip eden ilk 4-6 hafta içinde) adrenal korteks henüz atrofiye uğramadığı için Cosyntropin testi **yalancı şekilde normal** sonuç verebilir."
+          "metin": "• **Önemli Kısıtlama:** Akut hipofiz hasarlarında (örneğin cerrahi veya travmayı takip eden ilk 4 hafta içinde (TEMD 2022)) adrenal korteks henüz atrofiye uğramadığı için Cosyntropin testi **yalancı şekilde normal** sonuç verebilir."
         }
       ]
     },
@@ -627,7 +627,7 @@
       "tip": "metin",
       "satirlar": [
         {
-          "metin": "**Tedavi Takibi:** Tedavi takibinde **TSH DÜZEYİ DİKKATE ALINMAZ**. Doz titrasyonu serum fT4 seviyesinin referans aralığın üst-orta diliminde tutulması ile yapılır."
+          "metin": "**Tedavi Takibi:** Tedavi takibinde **TSH DÜZEYİ DİKKATE ALINMAZ**. Doz titrasyonu serum fT4 seviyesinin referans aralığın üst yarısında (TEMD 2022) tutulması ile yapılır."
         }
       ]
     },
@@ -853,8 +853,8 @@
           "hucreler": [
             "**Santral Adrenal Yetersizlik**",
             "08:00 Açlık Kortizolü · ITT (Altın Standart) · Cosyntropin (ACTH) Testi",
-            "Kortizol <3-5 µg/dL (Yetersiz) · ITT / Cosyntropin Pik Kortizol <18 µg/dL",
-            "Erken dönemde (postop <4-6 hafta) Cosyntropin testi adrenal atrofi gelişmediği için **yanlış normal** verebilir."
+            "Kortizol <3 µg/dL (Yetersiz; TEMD 2022) · ITT / Cosyntropin Pik Kortizol <18 µg/dL",
+            "Erken dönemde (postop ilk 4 hafta, TEMD 2022) Cosyntropin testi adrenal atrofi gelişmediği için **yanlış normal** verebilir."
           ]
         },
         {
