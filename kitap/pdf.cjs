@@ -5,6 +5,7 @@
 //   üretilir; hem PDF hem PNG yalnız o aralığı içerir. Uzun dosyalarda (60+ sayfa)
 //   tam belgeyi basmak dakikalar sürdüğü için varsayılan davranış budur.
 // --tam: --sayfa verilse bile PDF'i belgenin tamamı için bas.
+// --cikti <dizin>: kitap/cikti yerine bu dizine bas (dergi düzenleyicisi kullanır).
 const { execFileSync } = require("child_process");
 const fs = require("fs");
 const path = require("path");
@@ -13,7 +14,8 @@ const { pathToFileURL } = require("url");
 const EDGE = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe";
 const kaynak = path.resolve(process.argv[2] || "");
 if (!fs.existsSync(kaynak)) { console.error("Girdi bulunamadı: " + kaynak); process.exit(1); }
-const cikti = path.join(__dirname, "cikti");
+const ci = process.argv.indexOf("--cikti");
+const cikti = ci > 0 ? path.resolve(process.argv[ci + 1]) : path.join(__dirname, "cikti");
 fs.mkdirSync(cikti, { recursive: true });
 
 // --sayfa verildiyse belgeden yalnız o aralığı içeren geçici bir kopya üret

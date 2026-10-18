@@ -10,8 +10,11 @@
   let SURUM = betik.getAttribute("data-surum") || "";
 
   /* ---------- yapılandırma ---------- */
+  // Varsayılanlar Hızlı Bakış kitabınındır. Başka bir kök (ör. dergi) kendi
+  // duzenleyici-ayar.js dosyasında window.DZ_AYAR ile bunları ezer.
+  const AYAR = window.DZ_AYAR || {};
   // Seçilebilen "bloklar": tıklanan yere en yakın olanı seçilir
-  const BLOK = [
+  const BLOK = AYAR.blok ? AYAR.blok.join(",") : [
     ".kutu", ".blok", ".agac", ".sayilar", ".bakis", ".organ", ".serit", ".adim",
     ".zincir", ".alinti", ".yolak", ".bw", ".protokol .p", ".dal", ".dal dl > div",
     "table.tb tr", "ul.madde li", ".spotlar p", ".icindekiler li",
@@ -19,11 +22,16 @@
     "h1.konu", ".giris", ".ust-etiket", ".sayilar > div", ".organ > div", ".serit > div",
     ".kenar-sutun", ".zaman", ".karar-izgara aside > *"
   ].join(",");
-  const DUZENLENEMEZ = ".folyo, .tirnak, [data-dz]";
-  const KUTU_TURLERI = { spot: "Sınav spotu", inci: "Klinik inci", tuzak: "Tuzak", kural: "Altın kural" };
-  const BOLUNUR = "p, li"; // Enter bu ögeleri ikiye böler
+  const DUZENLENEMEZ = AYAR.duzenlenemez || ".folyo, .tirnak, [data-dz]";
+  const KUTU_TURLERI = AYAR.kutuTurleri || { spot: "Sınav spotu", inci: "Klinik inci", tuzak: "Tuzak", kural: "Altın kural" };
+  const KUTU = AYAR.kutu || ".kutu";              // türü değiştirilebilen kutu
+  const KUTU_AD = AYAR.kutuAd || ":scope > .ad";   // kutunun etiketi
+  const SAYFA = AYAR.sayfa || "section.sayfa";     // sayfa (ya da akan düzende bölüm)
+  const SABIT_SAYFA = AYAR.sabitSayfa !== false;   // A4 sayfa: taşma denetimi + numaralama
+  const SATIR = AYAR.satir || "tr, li, .spotlar p, .dal dl > div, .sayilar > div, .organ > div, .serit > div";
+  const BOLUNUR = AYAR.bolunur || "p, li"; // Enter bu ögeleri ikiye böler
 
-  const SABLON = {
+  const SABLON = AYAR.sablon || {
     spot: '<div class="kutu spot"><div class="ad">Sınav spotu</div><p>Yeni spot.</p></div>',
     inci: '<div class="kutu inci"><div class="ad">Klinik inci</div><p>Yeni inci.</p></div>',
     tuzak: '<div class="kutu tuzak"><div class="ad">Tuzak</div><p>Yeni tuzak.</p></div>',
@@ -33,7 +41,7 @@
     liste: '<ul class="madde"><li>Yeni madde.</li></ul>',
     tablo: '<div class="blok"><table class="tb"><thead><tr><th>Başlık</th><th>Başlık</th></tr></thead><tbody><tr><td class="bas">Satır</td><td>Değer</td></tr><tr><td class="bas">Satır</td><td>Değer</td></tr></tbody></table></div>'
   };
-  const SAYFA_SABLON = {
+  const SAYFA_SABLON = AYAR.sayfaSablon || {
     anlati: `<section class="sayfa sol tur-anlati">
   <div class="tirnak">Endokrinoloji</div>
   <div class="kunye"><span>Hızlı Bakış · Endokrinoloji</span><span>Anlatı</span></div>
@@ -58,6 +66,10 @@
   <div class="folyo"><b>0</b><span>MediSea Hızlı Bakış · Endokrinoloji</span></div>
 </section>`
   };
+
+  const EKLE_AD = AYAR.ekleAd || { spot: "Sınav spotu", inci: "Klinik inci", tuzak: "Tuzak", kural: "Altın kural", paragraf: "Paragraf", baslik: "Ara başlık", liste: "Madde listesi", tablo: "Tablo" };
+  const SAYFA_AD = AYAR.sayfaAd || { anlati: "Ardına anlatı sayfası ekle", basvuru: "Ardına başvuru sayfası ekle" };
+  const secenek = (o) => Object.entries(o).map(([d, a]) => `<option value="${d}">${a}</option>`).join("");
 
   /* ---------- durum ---------- */
   let secili = null;
@@ -113,7 +125,7 @@
 
   /* ---------- üst panel ---------- */
   const panel = el(`<div data-dz data-dz-panel role="toolbar" aria-label="Düzenleyici">
-    <b class="dz-ad">Düzenleyici · ${DOSYA}</b>
+    <b class="dz-ad">${AYAR.ad || "Düzenleyici"} · ${DOSYA}</b>
     <button data-is="kaydet" class="dz-ana" title="Kaydet (Ctrl+S)">Kaydet</button>
     <button data-is="pdf">PDF üret</button>
     <span class="dz-ayrac"></span>
@@ -123,19 +135,15 @@
     <label style="display:flex;align-items:center;gap:6px">Ekle
       <select data-is="ekle" aria-label="Seçili bloğun ardına ekle">
         <option value="">seçili bloğun ardına…</option>
-        <option value="spot">Sınav spotu</option><option value="inci">Klinik inci</option>
-        <option value="tuzak">Tuzak</option><option value="kural">Altın kural</option>
-        <option value="paragraf">Paragraf</option><option value="baslik">Ara başlık</option>
-        <option value="liste">Madde listesi</option><option value="tablo">Tablo</option>
+        ${secenek(Object.fromEntries(Object.keys(SABLON).map((k) => [k, EKLE_AD[k] || k])))}
       </select></label>
     <label style="display:flex;align-items:center;gap:6px">Sayfa
       <select data-is="sayfa" aria-label="Sayfa işlemi">
         <option value="">işlem…</option>
-        <option value="anlati">Ardına anlatı sayfası ekle</option>
-        <option value="basvuru">Ardına başvuru sayfası ekle</option>
-        <option value="yukari">Sayfayı öne al</option>
-        <option value="asagi">Sayfayı arkaya al</option>
-        <option value="sil">Sayfayı sil</option>
+        ${secenek(Object.fromEntries(Object.keys(SAYFA_SABLON).map((k) => [k, SAYFA_AD[k] || k])))}
+        <option value="yukari">${SABIT_SAYFA ? "Sayfayı" : "Bölümü"} öne al</option>
+        <option value="asagi">${SABIT_SAYFA ? "Sayfayı" : "Bölümü"} arkaya al</option>
+        <option value="sil">${SABIT_SAYFA ? "Sayfayı" : "Bölümü"} sil</option>
       </select></label>
     <span class="dz-ayrac"></span>
     <button data-is="onizleme">Temiz görünüm</button>
@@ -151,7 +159,7 @@
       <li><b>Metin:</b> üzerine tıklayıp yazın. <kbd>Ctrl+B</kbd> kalın. Enter paragraf ya da maddeyi böler.</li>
       <li><b>Blok:</b> kutuya, tabloya, satıra ya da paragrafa tıklayınca üstünde araç çubuğu çıkar: taşı, çoğalt, kes/yapıştır, sil, kutu türü, not.</li>
       <li><b>Kes → yapıştır:</b> bloğu başka sütuna ya da başka sayfaya taşımanın yolu.</li>
-      <li><b>Sarı çerçeve:</b> metin alt boşluğa, sayfa numarasına yaklaşıyor. <b>Kırmızı:</b> baskıda kesilir. Rozet kaç mm olduğunu söyler; kesik çizgi güvenli sınırdır.</li>
+      <li ${SABIT_SAYFA ? "" : "hidden"}><b>Sarı çerçeve:</b> metin alt boşluğa, sayfa numarasına yaklaşıyor. <b>Kırmızı:</b> baskıda kesilir. Rozet kaç mm olduğunu söyler; kesik çizgi güvenli sınırdır.</li>
       <li><b>Not:</b> “Not” ile bir bloğa bana talimat bırakın; PDF’te görünmez, sonra ben uygularım.</li>
       <li><kbd>Ctrl+S</kbd> kaydet · <kbd>Ctrl+Z</kbd> geri al · <kbd>Esc</kbd> seçimi bırak. Her kayıttan önce yedek alınır.</li>
     </ul>
@@ -167,8 +175,7 @@
     <button data-is="kes">Kes</button>
     <button data-is="yapistir" disabled>Ardına yapıştır</button>
     <select data-is="tur" aria-label="Kutu türü" hidden>
-      <option value="spot">Sınav spotu</option><option value="inci">Klinik inci</option>
-      <option value="tuzak">Tuzak</option><option value="kural">Altın kural</option>
+      ${secenek(KUTU_TURLERI)}
     </select>
     <button data-is="not">Not</button>
     <button data-is="sil" style="color:#FF9C9C">Sil</button>
@@ -177,12 +184,12 @@
 
   /* ---------- yardımcılar ---------- */
   function el(html) { const t = document.createElement("template"); t.innerHTML = html.trim(); return t.content.firstElementChild; }
-  function sayfalar() { return Array.from(document.querySelectorAll("section.sayfa")); }
+  function sayfalar() { return Array.from(document.querySelectorAll(SAYFA)); }
   function durumYaz(metin, tur) { durum.textContent = metin; durum.className = "dz-durum" + (tur ? " dz-" + tur : ""); }
   function kirlet() { kirli = true; durumYaz("Kaydedilmemiş değişiklik var", "kirli"); }
 
   function duzenlenebilirYap() {
-    const adaylar = document.querySelectorAll("section.sayfa *");
+    const adaylar = document.querySelectorAll(SAYFA + " *");
     adaylar.forEach((d) => {
       if (d.closest(DUZENLENEMEZ)) return;
       if (d.parentElement && d.parentElement.closest('[contenteditable="true"]')) return;
@@ -227,7 +234,7 @@
     if (!b) { arac.hidden = true; return; }
     b.classList.add("dz-secili");
     const turSec = arac.querySelector('[data-is="tur"]');
-    const kutu = b.matches(".kutu");
+    const kutu = b.matches(KUTU);
     turSec.hidden = !kutu;
     if (kutu) turSec.value = Object.keys(KUTU_TURLERI).find((t) => b.classList.contains(t)) || "spot";
     arac.querySelector('[data-is="yapistir"]').disabled = !pano;
@@ -245,7 +252,7 @@
 
   document.addEventListener("click", (e) => {
     if (e.target.closest("[data-dz]")) return;
-    const sayfa = e.target.closest("section.sayfa");
+    const sayfa = e.target.closest(SAYFA);
     if (!sayfa) { secimBirak(); return; }
     const b = e.target.closest(BLOK);
     sec(b && sayfa.contains(b) ? b : null);
@@ -308,13 +315,13 @@
     if (d) blokIslem(d.dataset.is);
   });
   arac.querySelector('[data-is="tur"]').addEventListener("change", (e) => {
-    if (!secili || !secili.matches(".kutu")) return;
+    if (!secili || !secili.matches(KUTU)) return;
     kaydetGeri();
     const eskiTur = Object.keys(KUTU_TURLERI).find((t) => secili.classList.contains(t));
     const yeniTur = e.target.value;
     if (eskiTur) secili.classList.remove(eskiTur);
     secili.classList.add(yeniTur);
-    const ad = secili.querySelector(":scope > .ad");
+    const ad = secili.querySelector(KUTU_AD);
     if (ad && eskiTur && ad.textContent.trim().toLocaleLowerCase("tr").startsWith(KUTU_TURLERI[eskiTur].toLocaleLowerCase("tr"))) {
       ad.textContent = ad.textContent.trim().replace(new RegExp("^" + KUTU_TURLERI[eskiTur], "i"), KUTU_TURLERI[yeniTur]);
     }
@@ -332,7 +339,7 @@
     let yeni = el(SABLON[tur]);
     // Satır ya da madde seçiliyse kutuyu satırın içine değil, kapsayıcı bloğun ardına koy
     let hedef = secili;
-    if (hedef.matches("tr, li, .spotlar p, .dal dl > div, .sayilar > div, .organ > div, .serit > div")) hedef = hedef.parentElement.closest(BLOK) || hedef.parentElement;
+    if (hedef.matches(SATIR)) hedef = hedef.parentElement.closest(BLOK) || hedef.parentElement;
     hedef.after(yeni);
     duzenlenebilirYap();
     sec(yeni);
@@ -341,6 +348,7 @@
   });
 
   function sayfalariNumarala() {
+    if (!SABIT_SAYFA) return;
     sayfalar().forEach((s, i) => {
       const no = i + 1;
       const taraf = no % 2 === 1 ? "sag" : "sol";
@@ -359,7 +367,7 @@
     const is = e.target.value;
     e.target.value = "";
     if (!is) return;
-    const s = secili ? secili.closest("section.sayfa") : null;
+    const s = secili ? secili.closest(SAYFA) : null;
     if (!s) return durumYaz("Önce işlem yapılacak sayfada bir yere tıklayın.", "hata");
     if (is === "sil" && !window.confirm("Bu sayfa silinsin mi? (Geri al ile dönebilirsiniz.)")) return;
     kaydetGeri();
@@ -370,10 +378,10 @@
       yeni.scrollIntoView({ block: "start" });
     } else if (is === "yukari") {
       const k = s.previousElementSibling;
-      if (k && k.matches("section.sayfa")) k.before(s);
+      if (k && k.matches(SAYFA)) k.before(s);
     } else if (is === "asagi") {
       const k = s.nextElementSibling;
-      if (k && k.matches("section.sayfa")) k.after(s);
+      if (k && k.matches(SAYFA)) k.after(s);
     } else if (is === "sil") {
       s.remove();
       secimBirak();
@@ -387,6 +395,7 @@
   const MM = 96 / 25.4;
   function tasmaDenetle() {
     document.querySelectorAll("[data-dz-rozet], [data-dz-sinir]").forEach((x) => x.remove());
+    if (!SABIT_SAYFA) return;
     sayfalar().forEach((s, i) => {
       const pb = parseFloat(getComputedStyle(s).paddingBottom);
       const alt = Number.isFinite(pb) ? pb : 18 * MM; // açılış sayfasında 0 — meşru sıfır

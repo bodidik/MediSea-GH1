@@ -1,5 +1,8 @@
 // MediSea Hızlı Bakış — sayfa düzenleyici sunucusu (bağımlılıksız)
 // Kullanım: node kitap/duzenleyici-sunucu.cjs   →  http://localhost:3400
+//          node kitap/duzenleyici-sunucu.cjs --kok dergi --port 3410 --ad "YDUS Dergisi"
+//   --kok verilince o dizinin dosyaları sunulur ve düzenlenir; dizinde
+//   duzenleyici-ayar.js varsa düzenleyiciden ÖNCE yüklenir (seçiciler, kutu türleri, şablonlar).
 //
 // - kitap/ altındaki dosyaları sunar; bir bölüm .html'i ?duzenle ile açılınca
 //   düzenleyici betiğini sayfaya ekler (dosyaya YAZMAZ).
@@ -17,8 +20,12 @@ const { execFile } = require("child_process");
 const crypto = require("crypto");
 const surumAl = (dosya) => crypto.createHash("sha1").update(fs.readFileSync(dosya)).digest("hex").slice(0, 16);
 
-const KOK = __dirname;
-const PORT = Number(process.env.PORT) || 3400;
+const arg = (ad) => { const i = process.argv.indexOf("--" + ad); return i > 0 ? process.argv[i + 1] : null; };
+const KOK = arg("kok") ? path.resolve(process.cwd(), arg("kok")) : __dirname;
+const AD = arg("ad") || "Hızlı Bakış";
+const PORT = Number(arg("port") || process.env.PORT) || 3400;
+const CIKTI = path.join(KOK, "cikti");
+const AYAR = path.join(KOK, "duzenleyici-ayar.js");
 const YEDEK = path.join(KOK, ".yedek");
 const TUR = { ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".png": "image/png", ".pdf": "application/pdf", ".json": "application/json" };
 
@@ -31,7 +38,7 @@ function guvenliYol(goreli) {
 function bolumler() {
   const sonuc = [];
   for (const ad of fs.readdirSync(KOK, { withFileTypes: true })) {
-    if (!ad.isDirectory() || ["sablon", "cikti", ".yedek", "node_modules"].includes(ad.name)) continue;
+    if (!ad.isDirectory() || ["sablon", "cikti", ".yedek", "node_modules", "arac"].includes(ad.name)) continue;
     for (const f of fs.readdirSync(path.join(KOK, ad.name))) {
       if (f.endsWith(".html") && !f.startsWith("_")) sonuc.push(ad.name + "/" + f);
     }
@@ -60,7 +67,7 @@ const sunucu = http.createServer(async (req, res) => {
     if (req.method === "GET" && url.pathname === "/") {
       const liste = bolumler().map((b) => `<li><a href="/${b}?duzenle">${b}</a></li>`).join("");
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-      return res.end(`<!doctype html><meta charset="utf-8"><title>Hızlı Bakış düzenleyici</title><body style="font:16px system-ui;padding:40px"><h1>Hızlı Bakış · bölümler</h1><ul>${liste}</ul></body>`);
+      return res.end(`<!doctype html><meta charset="utf-8"><title>${AD} düzenleyici</title><body style="font:16px system-ui;padding:40px"><h1>${AD} · dosyalar</h1><ul>${liste}</ul></body>`);
     }
 
     if (req.method === "POST" && url.pathname === "/kaydet") {
@@ -72,9 +79,9 @@ const sunucu = http.createServer(async (req, res) => {
         fs.mkdirSync(YEDEK, { recursive: true });
         const ad = path.basename(dosya, ".html") + "-REDDEDILEN-" + new Date().toISOString().replace(/[:.]/g, "-") + ".html";
         fs.writeFileSync(path.join(YEDEK, ad), html, "utf8");
-        return json(res, 409, { hata: "Dosya siz açtıktan sonra değişti (Claude yeni sayfa eklemiş olabilir). Üzerine yazılmadı; düzenlemeleriniz kitap/.yedek/" + ad + " dosyasında saklandı. Sayfayı yenileyip yeniden düzenleyin." });
+        return json(res, 409, { hata: "Dosya siz açtıktan sonra değişti (Claude yeni sayfa eklemiş olabilir). Üzerine yazılmadı; düzenlemeleriniz " + path.relative(path.dirname(KOK), YEDEK).split(path.sep).join("/") + "/" + ad + " dosyasında saklandı. Sayfayı yenileyip yeniden düzenleyin." });
       }
-      const sayfa = (html.match(/<section class="sayfa/g) || []).length;
+      const sayfa = (html.match(/<section[\s>]/g) || []).length;
       // Boş ya da bozuk bir gövde dosyayı ezmesin
       if (sayfa === 0 || html.length < 2000 || !html.includes("</html>")) return json(res, 400, { hata: "Gelen içerik eksik görünüyor; dosyaya yazılmadı." });
       fs.mkdirSync(YEDEK, { recursive: true });
@@ -91,7 +98,7 @@ const sunucu = http.createServer(async (req, res) => {
       const dosya = guvenliYol(url.searchParams.get("dosya"));
       if (!dosya || !fs.existsSync(dosya)) return json(res, 400, { hata: "Dosya bulunamadı." });
       const bas = Date.now();
-      execFile(process.execPath, [path.join(KOK, "pdf.cjs"), dosya], { timeout: 180000 }, (hata, cikti, hataCikti) => {
+      execFile(process.execPath, [path.join(__dirname, "pdf.cjs"), dosya, "--cikti", CIKTI], { timeout: 180000 }, (hata, cikti, hataCikti) => {
         if (hata) return json(res, 500, { hata: (hataCikti || hata.message).slice(0, 500) });
         json(res, 200, { pdf: "/cikti/" + path.basename(dosya, ".html") + ".pdf", sure: Math.round((Date.now() - bas) / 1000) });
       });
@@ -99,12 +106,18 @@ const sunucu = http.createServer(async (req, res) => {
     }
 
     if (req.method === "GET") {
+      // Düzenleyici dosyaları her kökte aynı yoldan
+      if (url.pathname === "/_dz/duzenleyici.js" || url.pathname === "/_dz/ayar.js") {
+        const kaynak = url.pathname.endsWith("ayar.js") ? AYAR : path.join(__dirname, "sablon/duzenleyici.js");
+        res.writeHead(200, { "Content-Type": TUR[".js"], "Cache-Control": "no-store" });
+        return res.end(fs.existsSync(kaynak) ? fs.readFileSync(kaynak) : "");
+      }
       const dosya = guvenliYol(url.pathname);
       if (!dosya || !fs.existsSync(dosya) || fs.statSync(dosya).isDirectory()) { res.writeHead(404); return res.end("Bulunamadı"); }
       const uzanti = path.extname(dosya);
       if (uzanti === ".html" && url.searchParams.has("duzenle")) {
         const goreli = path.relative(KOK, dosya).split(path.sep).join("/");
-        const ek = `<script data-dz src="/sablon/duzenleyici.js" data-dosya="${goreli}" data-surum="${surumAl(dosya)}"></script>`;
+        const ek = (fs.existsSync(AYAR) ? `<script data-dz src="/_dz/ayar.js"></script>` : "") + `<script data-dz src="/_dz/duzenleyici.js" data-dosya="${goreli}" data-surum="${surumAl(dosya)}"></script>`;
         const html = fs.readFileSync(dosya, "utf8").replace("</body>", ek + "\n</body>");
         res.writeHead(200, { "Content-Type": TUR[".html"], "Cache-Control": "no-store" });
         return res.end(html);
@@ -119,4 +132,4 @@ const sunucu = http.createServer(async (req, res) => {
   }
 });
 
-sunucu.listen(PORT, "127.0.0.1", () => console.log(`Düzenleyici: http://localhost:${PORT}`));
+sunucu.listen(PORT, "127.0.0.1", () => console.log(`${AD} düzenleyici: http://localhost:${PORT}  (kök: ${KOK})`));

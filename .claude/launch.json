@@ -74,6 +74,20 @@
       "port": 3400
     },
     {
+      "name": "dergi-duzenleyici",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "kitap/duzenleyici-sunucu.cjs",
+        "--kok",
+        "dergi",
+        "--port",
+        "3410",
+        "--ad",
+        "YDUS Dergisi"
+      ],
+      "port": 3410
+    },
+    {
       "name": "premium-olcum",
       "runtimeExecutable": "npm",
       "runtimeArgs": [
@@ -94,7 +108,15 @@
     {
       "name": "kurulum-olcum",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "web", "run", "dev", "--", "-p", "3700"],
+      "runtimeArgs": [
+        "--prefix",
+        "web",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3700"
+      ],
       "port": 3700,
       "env": {
         "NEXT_DIST_DIR": ".next-kurulum"
@@ -103,7 +125,15 @@
     {
       "name": "giris-olcum",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "web", "run", "dev", "--", "-p", "3710"],
+      "runtimeArgs": [
+        "--prefix",
+        "web",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3710"
+      ],
       "port": 3710,
       "env": {
         "NEXT_DIST_DIR": ".next-giris",
