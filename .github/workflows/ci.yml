@@ -22,6 +22,8 @@ jobs:
       steps:
         - name: Checkout
           uses: actions/checkout@v5
+          with:
+            fetch-depth: 2
 
         - name: Setup Node.js
           uses: actions/setup-node@v5
@@ -184,6 +186,13 @@ jobs:
         # olan yorum körlüğü). Üçü de negatif kontrolle sınandı.
         - name: Denetimler iş görüyor mu (meta test)
           run: node scripts/yorum-korlugu-denetim.cjs
+
+        # Konu metni değişti ama "Güncelleme" tarihi ilerlemedi mi? (HEAD~1..HEAD)
+        - name: Konu güncelleme tarihi
+          run: node scripts/updatedat-denetim.cjs --kapi
+
+        - name: Konu güncelleme tarihi (negatif kontrol)
+          run: node scripts/updatedat-denetim.cjs --negatif
 
         - name: Build
           env:

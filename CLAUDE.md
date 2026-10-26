@@ -26,9 +26,9 @@ npm run build      # CI 4. kapı
 ### ⚠ CI ÜÇ ADIM DEĞİL — bu satır bir kez yanlış yazıldı ve 1,5 gün kırmızıya mal oldu
 
 Bu bölüm bir dönem *"CI sırayla `npm ci → lint → typecheck → build` çalıştırır"*
-diyordu. YANLIŞTI. `.github/workflows/ci.yml`in Web işi bugün (26 Eyl 2026)
-**yirmi yedi adım** çalıştırıyor: üçü kurulum (checkout · setup-node · npm ci),
-**yirmi dördü kapı**. Sıra şu ve `build` artık SON DEĞİL — arkasında
+diyordu. YANLIŞTI. `.github/workflows/ci.yml`in Web işi bugün (26 Eki 2026)
+**yirmi dokuz adım** çalıştırıyor: üçü kurulum (checkout · setup-node · npm ci),
+**yirmi altısı kapı**. Sıra şu ve `build` artık SON DEĞİL — arkasında
 derlenmiş HTML'i ölçen dil kapısı var:
 
 ```
@@ -43,6 +43,7 @@ npm ci → lint → typecheck
   → renk-cifti-denetim --kapi (+ --negatif)
   → dil-index --kontrol → dil-denetim (+ --negatif)
   → yorum-korlugu-denetim
+  → updatedat-denetim --kapi (+ --negatif)   # metin değişti, Güncelleme tarihi ilerlemedi mi
   → build
   → dil-denetim --cikti .next
 ```
@@ -791,7 +792,7 @@ belgeden kopyalanmadı.
 | premium başlık · soru | **51** · **568** | 44 · 454 |
 | premium kart · vaka · inci | 1492 · 11 · **13** | 1492 · 11 · (yok) |
 | araç ↔ konu bağı | **112 çift** · 95 konu · 31 araç | (yok) |
-| CI | Web işi **27 adım** (24 kapı) — 26 Eyl'de `kaynak-denetim`, sonra dört dil adımı eklendi | 21 / 18 |
+| CI | Web işi **29 adım** (26 kapı) — 26 Eki'de `updatedat-denetim` (+ negatif) eklendi; 26 Eyl'de `kaynak-denetim`, sonra dört dil adımı eklendi | 21 / 18 |
 | duyurusu olan araç | `SonucDuyuru` **108 / 136**; herhangi bir canlı bölge **128 / 136** (9 Eyl) | 105 |
 
 `arac-konu-index` 476 konu dosyası sayıyor, yüzeyler 430 diyor — fark
