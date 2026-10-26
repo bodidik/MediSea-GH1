@@ -7816,18 +7816,18 @@
   },
   {
    "brans": "palyatif",
-   "slug": "palyatif-bakimda-agri-yonetimi",
-   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
-  },
-  {
-   "brans": "palyatif",
    "slug": "opioid-toleransi-mekanizmalari",
    "baslik": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Toleransı Kırma Stratejileri"
   },
   {
    "brans": "palyatif",
-   "slug": "noropatik-agrida-koadjuvan-tedavi",
-   "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi"
+   "slug": "palyatif-bakimda-agri-yonetimi",
+   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "coklu-analjezik-sonrasi-ajan-geri-cekme",
+   "baslik": "İleri Okuma: Çoklu Analjezik Sonrası Hangi Ajan Geri Çekilir? (Tramadol, Fentanil Geçişi, Opioid Tatili)"
   }
  ],
  "onkoloji/febril-notropeni-cisne-indexi": [
@@ -7896,13 +7896,13 @@
   },
   {
    "brans": "palyatif",
-   "slug": "palyatif-bakimda-agri-yonetimi",
-   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
+   "slug": "coklu-analjezik-sonrasi-ajan-geri-cekme",
+   "baslik": "İleri Okuma: Çoklu Analjezik Sonrası Hangi Ajan Geri Çekilir? (Tramadol, Fentanil Geçişi, Opioid Tatili)"
   },
   {
    "brans": "palyatif",
-   "slug": "opioid-rotasyonu-ilkeleri",
-   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
+   "slug": "palyatif-bakimda-agri-yonetimi",
+   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
   },
   {
    "brans": "palyatif",
@@ -7969,18 +7969,18 @@
  "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik": [
   {
    "brans": "onkoloji",
-   "slug": "opioid-rotasyonu-2025-konsensus",
-   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
-  },
-  {
-   "brans": "onkoloji",
    "slug": "buprenorfin-rotasyonu-ve-induksiyon",
    "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
   },
   {
+   "brans": "onkoloji",
+   "slug": "opioid-rotasyonu-2025-konsensus",
+   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
+  },
+  {
    "brans": "palyatif",
-   "slug": "opioid-rotasyonu-ilkeleri",
-   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
+   "slug": "coklu-analjezik-sonrasi-ajan-geri-cekme",
+   "baslik": "İleri Okuma: Çoklu Analjezik Sonrası Hangi Ajan Geri Çekilir? (Tramadol, Fentanil Geçişi, Opioid Tatili)"
   },
   {
    "brans": "onkoloji",
@@ -7989,8 +7989,8 @@
   },
   {
    "brans": "palyatif",
-   "slug": "palyatif-bakimda-agri-yonetimi",
-   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
+   "slug": "opioid-rotasyonu-ilkeleri",
+   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
   },
   {
    "brans": "palyatif",
@@ -8038,6 +8038,11 @@
   },
   {
    "brans": "palyatif",
+   "slug": "coklu-analjezik-sonrasi-ajan-geri-cekme",
+   "baslik": "İleri Okuma: Çoklu Analjezik Sonrası Hangi Ajan Geri Çekilir? (Tramadol, Fentanil Geçişi, Opioid Tatili)"
+  },
+  {
+   "brans": "palyatif",
    "slug": "opioid-rotasyonu-ilkeleri",
    "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
   },
@@ -8045,11 +8050,6 @@
    "brans": "palyatif",
    "slug": "palyatif-bakimda-agri-yonetimi",
    "baslik": "Palyatif Bakımda Ağrı Yönetimi"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "opioidler-ve-solunum",
-   "baslik": "İleri Okuma: Opioidler ve Solunum — Solunum Depresyonu Mekanizmaları ve Yönetimi"
   }
  ],
  "onkoloji/opioidler-ve-solunum": [
@@ -8065,11 +8065,6 @@
   },
   {
    "brans": "palyatif",
-   "slug": "palyatif-bakimda-agri-yonetimi",
-   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
-  },
-  {
-   "brans": "palyatif",
    "slug": "opioid-toleransi-mekanizmalari",
    "baslik": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Toleransı Kırma Stratejileri"
   },
@@ -8079,9 +8074,14 @@
    "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları"
   },
   {
-   "brans": "onkoloji",
-   "slug": "opioid-rotasyonu-2025-konsensus",
-   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
+   "brans": "palyatif",
+   "slug": "palyatif-bakimda-agri-yonetimi",
+   "baslik": "Palyatif Bakımda Ağrı Yönetimi"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "coklu-analjezik-sonrasi-ajan-geri-cekme",
+   "baslik": "İleri Okuma: Çoklu Analjezik Sonrası Hangi Ajan Geri Çekilir? (Tramadol, Fentanil Geçişi, Opioid Tatili)"
   }
  ],
  "onkoloji/pankreas-kanseri-ana-sayfa": [
@@ -8272,6 +8272,38 @@
    "baslik": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu"
   }
  ],
+ "palyatif/coklu-analjezik-sonrasi-ajan-geri-cekme": [
+  {
+   "brans": "palyatif",
+   "slug": "opioid-rotasyonu-ilkeleri",
+   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "opioid-toleransi-mekanizmalari",
+   "baslik": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Toleransı Kırma Stratejileri"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "opioidler-ana-sayfa",
+   "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
+   "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "opioid-rotasyonu-2025-konsensus",
+   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "pankreas-agrisinda-tanisal-degerlendirme",
+   "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme"
+  }
+ ],
  "palyatif/noropatik-agrida-koadjuvan-tedavi": [
   {
    "brans": "onkoloji",
@@ -8309,9 +8341,19 @@
    "brans": "palyatif",
    "slug": "opioidler-ana-sayfa",
    "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "coklu-analjezik-sonrasi-ajan-geri-cekme",
+   "baslik": "İleri Okuma: Çoklu Analjezik Sonrası Hangi Ajan Geri Çekilir? (Tramadol, Fentanil Geçişi, Opioid Tatili)"
   }
  ],
  "palyatif/opioid-rotasyonu-ilkeleri": [
+  {
+   "brans": "palyatif",
+   "slug": "coklu-analjezik-sonrasi-ajan-geri-cekme",
+   "baslik": "İleri Okuma: Çoklu Analjezik Sonrası Hangi Ajan Geri Çekilir? (Tramadol, Fentanil Geçişi, Opioid Tatili)"
+  },
   {
    "brans": "palyatif",
    "slug": "opioid-toleransi-mekanizmalari",
@@ -8326,28 +8368,28 @@
    "brans": "onkoloji",
    "slug": "opioid-rotasyonu-2025-konsensus",
    "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "kanser-agrisi-yonetimi",
-   "baslik": "Kanser Ağrısı Yönetimi"
   }
  ],
  "palyatif/opioid-toleransi-mekanizmalari": [
+  {
+   "brans": "palyatif",
+   "slug": "coklu-analjezik-sonrasi-ajan-geri-cekme",
+   "baslik": "İleri Okuma: Çoklu Analjezik Sonrası Hangi Ajan Geri Çekilir? (Tramadol, Fentanil Geçişi, Opioid Tatili)"
+  },
   {
    "brans": "palyatif",
    "slug": "opioid-rotasyonu-ilkeleri",
    "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
   },
   {
-   "brans": "onkoloji",
-   "slug": "opioid-rotasyonu-2025-konsensus",
-   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
-  },
-  {
    "brans": "palyatif",
    "slug": "noropatik-agrida-koadjuvan-tedavi",
    "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "opioid-rotasyonu-2025-konsensus",
+   "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
   },
   {
    "brans": "onkoloji",
@@ -8358,11 +8400,6 @@
    "brans": "onkoloji",
    "slug": "buprenorfin-rotasyonu-ve-induksiyon",
    "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "metadon-rotasyonu-ve-kardiyak-guvenlik",
-   "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik"
   }
  ],
  "palyatif/opioidler-ana-sayfa": [
@@ -8370,6 +8407,11 @@
    "brans": "palyatif",
    "slug": "oih-ve-tolerans-ayirici-tani",
    "baslik": "İleri Okuma: OIH ve Toleransın Ayırıcı Tanısı"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "coklu-analjezik-sonrasi-ajan-geri-cekme",
+   "baslik": "İleri Okuma: Çoklu Analjezik Sonrası Hangi Ajan Geri Çekilir? (Tramadol, Fentanil Geçişi, Opioid Tatili)"
   },
   {
    "brans": "onkoloji",
@@ -8380,26 +8422,16 @@
  "palyatif/palyatif-bakim-ana-sayfa": [
   {
    "brans": "palyatif",
-   "slug": "oih-ve-tolerans-ayirici-tani",
-   "baslik": "İleri Okuma: OIH ve Toleransın Ayırıcı Tanısı"
-  },
-  {
-   "brans": "palyatif",
-   "slug": "opioid-rotasyonu-ilkeleri",
-   "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları"
-  },
-  {
-   "brans": "palyatif",
-   "slug": "opioid-toleransi-mekanizmalari",
-   "baslik": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Toleransı Kırma Stratejileri"
-  },
-  {
-   "brans": "palyatif",
-   "slug": "opioidler-ana-sayfa",
-   "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları"
+   "slug": "coklu-analjezik-sonrasi-ajan-geri-cekme",
+   "baslik": "İleri Okuma: Çoklu Analjezik Sonrası Hangi Ajan Geri Çekilir? (Tramadol, Fentanil Geçişi, Opioid Tatili)"
   }
  ],
  "palyatif/palyatif-bakimda-agri-yonetimi": [
+  {
+   "brans": "palyatif",
+   "slug": "coklu-analjezik-sonrasi-ajan-geri-cekme",
+   "baslik": "İleri Okuma: Çoklu Analjezik Sonrası Hangi Ajan Geri Çekilir? (Tramadol, Fentanil Geçişi, Opioid Tatili)"
+  },
   {
    "brans": "onkoloji",
    "slug": "buprenorfin-rotasyonu-ve-induksiyon",
@@ -8424,11 +8456,6 @@
    "brans": "onkoloji",
    "slug": "opioidler-ve-solunum",
    "baslik": "İleri Okuma: Opioidler ve Solunum — Solunum Depresyonu Mekanizmaları ve Yönetimi"
-  },
-  {
-   "brans": "palyatif",
-   "slug": "opioid-toleransi-mekanizmalari",
-   "baslik": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Toleransı Kırma Stratejileri"
   }
  ],
  "palyatif/pankreas-agrisinda-tanisal-degerlendirme": [
@@ -8443,6 +8470,11 @@
    "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi"
   },
   {
+   "brans": "palyatif",
+   "slug": "coklu-analjezik-sonrasi-ajan-geri-cekme",
+   "baslik": "İleri Okuma: Çoklu Analjezik Sonrası Hangi Ajan Geri Çekilir? (Tramadol, Fentanil Geçişi, Opioid Tatili)"
+  },
+  {
    "brans": "onkoloji",
    "slug": "buprenorfin-rotasyonu-ve-induksiyon",
    "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması"
@@ -8456,11 +8488,6 @@
    "brans": "onkoloji",
    "slug": "opioid-rotasyonu-2025-konsensus",
    "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "opioidler-ve-solunum",
-   "baslik": "İleri Okuma: Opioidler ve Solunum — Solunum Depresyonu Mekanizmaları ve Yönetimi"
   }
  ],
  "palyatif/pankreas-kanserinde-refrakter-agri": [
