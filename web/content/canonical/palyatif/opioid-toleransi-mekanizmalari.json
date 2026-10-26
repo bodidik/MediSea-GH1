@@ -2,7 +2,7 @@
   "title": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Toleransı Kırma Stratejileri",
   "meta": {
     "kaynakca": "opioid-kanser-agrisi",
-    "updatedAt": "6 Eki 2026",
+    "updatedAt": "26 Eki 2026",
     "tags": [
       "Farmakoloji",
       "Algoloji",
@@ -25,7 +25,7 @@
     },
     {
       "heading": "1. Mü-Opioid Reseptör (MOP/OPRM1) Sinyal Kompleksi ve Akut Yanıt",
-      "html": "<p class=\"mb-4\">Opioidler başlıca mu (MOP), kappa (KOP) ve delta (DOP) reseptörleri üzerinden etki gösterir. Mü-opioid reseptörü, inhibitör G<sub>i/o</sub> proteinleriyle kenetli, yedi transmembran sarmallı bir G-proteini kenetli reseptördür (GPCR). Akut uyarımda agonist reseptöre bağlandığında:</p><ul class=\"list-disc ml-5 space-y-2 mb-4\"><li><strong>Adenilat siklaz inhibisyonu:</strong> Siklik adenozin monofosfat (cAMP) üretimi baskılanır.</li><li><strong>Potasyum (GIRK) kanal aktivasyonu:</strong> Potasyum çıkışı nöronal membranı hiperpolarize eder.</li><li><strong>Kalsiyum kanal blokajı:</strong> Presinaptik voltaj kapılı N ve P/Q tipi kalsiyum kanalları inhibe edilir; primer afferentlerden glutamat ve P maddesi salınımı baskılanır.</li></ul><p class=\"mb-4\">Sonuçta ağrı iletimi hem presinaptik hem postsinaptik düzeyde engellenir.</p>"
+      "html": "<p class=\"mb-4\">Opioidler başlıca mu (MOP), kappa (KOP) ve delta (DOP) reseptörleri üzerinden etki gösterir. Mü-opioid reseptörü, inhibitör G<sub>i/o</sub> proteinleriyle kenetli, yedi transmembran sarmallı bir G-proteini kenetli reseptördür (GPCR). Akut uyarımda agonist reseptöre bağlandığında:</p><ul class=\"list-disc ml-5 space-y-2 mb-4\"><li><strong>Adenilat siklaz inhibisyonu:</strong> Siklik adenozin monofosfat (cAMP) üretimi baskılanır.</li><li><strong>Potasyum (GIRK) kanal aktivasyonu:</strong> Potasyum çıkışı nöronal membranı hiperpolarize eder.</li><li><strong>Kalsiyum kanal blokajı:</strong> Presinaptik voltaj kapılı N ve P/Q tipi kalsiyum kanalları inhibe edilir; primer afferentlerden glutamat ve P maddesi salınımı baskılanır.</li></ul><figure class=\"my-6\"><a href=\"/images/palyatif/mop-sinyal-kompleksi.svg\" target=\"_blank\" rel=\"noopener\" class=\"block\"><img src=\"/images/palyatif/mop-sinyal-kompleksi.svg\" width=\"640\" height=\"800\" loading=\"lazy\" alt=\"Spinal arka boynuz sinapsında mü-opioid reseptör sinyali. Presinaptik uçta opioid MOP'a bağlanır, Gi/o proteini adenilat siklazı baskılar (cAMP azalır) ve N ve P/Q tipi kalsiyum kanallarını inhibe eder; glutamat ve P maddesi salınımı azalır. Postsinaptik nöronda MOP ve Gi/o GIRK potasyum kanalını açar; potasyum çıkışı membranı hiperpolarize eder.\" class=\"w-full max-w-xl mx-auto rounded-xl border border-slate-200 bg-white\"></a><figcaption class=\"text-sm text-slate-600 mt-2 text-center\">Şekil 1. Mü-opioid reseptör sinyal kompleksi: akut yanıtın presinaptik ve postsinaptik kolu (şematik). Kaynak: Ribeiro H ve ark. Drugs Aging 2026;43(9):817–836. Büyütmek için şekle dokunun.</figcaption></figure><p class=\"mb-4\">Sonuçta ağrı iletimi hem presinaptik hem postsinaptik düzeyde engellenir.</p>"
     },
     {
       "heading": "2. Reseptör Düzeyinde Desensitizasyon ve İnternalizasyon",
