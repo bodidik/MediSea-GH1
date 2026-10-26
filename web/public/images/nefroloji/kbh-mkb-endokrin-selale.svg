@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 830" width="640" height="830" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">KBH-MKB: endokrin şelale ve kısır döngü</title>
+<desc id="d">GFR düşer, fosfor dengesi bozulur. Osteositler FGF-23 salgılar; FGF-23 böbrekte NaPi-IIa/c taşıyıcılarını baskılayarak fosfatüri yapar, bunun için Klotho gerekir. Klotho erken evrede azalır, FGF-23 direnci gelişir ve FGF-23 daha da artar. FGF-23 1-alfa-hidroksilazı baskılar, kalsitriol düşer, bağırsaktan kalsiyum ve fosfor emilimi azalır ve hipokalsemi gelişir. Hipokalsemi ve hiperfosfatemi paratiroidi uyarır: sekonder hiperparatiroidizm ve hiperplazi.</desc>
+<!-- 15 sn'lik döngü; son kare = statik şemanın tamamı. Hareket azaltmada animasyon çalışmaz. Üretici: kbh-sema.cjs -->
+<style>
+.a{animation-duration:15s;animation-iteration-count:infinite;animation-timing-function:ease-in-out;animation-fill-mode:both}
+.m{transform-box:fill-box;transform-origin:center}
+.ciz{stroke-dasharray:1}
+.s1{animation-name:s1}@keyframes s1{0%,0%{opacity:0;transform:translateY(8px)}3%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s1 .ciz{animation-name:c1}@keyframes c1{0%,0%{stroke-dashoffset:1}5%,100%{stroke-dashoffset:0}}
+.s2{animation-name:s2}@keyframes s2{0%,6%{opacity:0;transform:translateY(8px)}9%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s2 .ciz{animation-name:c2}@keyframes c2{0%,6%{stroke-dashoffset:1}11%,100%{stroke-dashoffset:0}}
+.s3{animation-name:s3}@keyframes s3{0%,12%{opacity:0;transform:translateY(8px)}15%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s3 .ciz{animation-name:c3}@keyframes c3{0%,12%{stroke-dashoffset:1}17%,100%{stroke-dashoffset:0}}
+.s4{animation-name:s4}@keyframes s4{0%,19%{opacity:0;transform:translateY(8px)}22%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s4 .ciz{animation-name:c4}@keyframes c4{0%,19%{stroke-dashoffset:1}24%,100%{stroke-dashoffset:0}}
+.s5{animation-name:s5}@keyframes s5{0%,27%{opacity:0;transform:translateY(8px)}30%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s5 .ciz{animation-name:c5}@keyframes c5{0%,27%{stroke-dashoffset:1}32%,100%{stroke-dashoffset:0}}
+.s6{animation-name:s6}@keyframes s6{0%,33%{opacity:0;transform:translateY(8px)}36%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s6 .ciz{animation-name:c6}@keyframes c6{0%,33%{stroke-dashoffset:1}38%,100%{stroke-dashoffset:0}}
+.s7{animation-name:s7}@keyframes s7{0%,39%{opacity:0;transform:translateY(8px)}42%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s7 .ciz{animation-name:c7}@keyframes c7{0%,39%{stroke-dashoffset:1}44%,100%{stroke-dashoffset:0}}
+.s8{animation-name:s8}@keyframes s8{0%,47%{opacity:0;transform:translateY(8px)}50%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s8 .ciz{animation-name:c8}@keyframes c8{0%,47%{stroke-dashoffset:1}52%,100%{stroke-dashoffset:0}}
+.s9{animation-name:s9}@keyframes s9{0%,53%{opacity:0;transform:translateY(8px)}56%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s9 .ciz{animation-name:c9}@keyframes c9{0%,53%{stroke-dashoffset:1}58%,100%{stroke-dashoffset:0}}
+.s10{animation-name:s10}@keyframes s10{0%,59%{opacity:0;transform:translateY(8px)}62%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s10 .ciz{animation-name:c10}@keyframes c10{0%,59%{stroke-dashoffset:1}64%,100%{stroke-dashoffset:0}}
+.s11{animation-name:s11}@keyframes s11{0%,65%{opacity:0;transform:translateY(8px)}68%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s11 .ciz{animation-name:c11}@keyframes c11{0%,65%{stroke-dashoffset:1}70%,100%{stroke-dashoffset:0}}
+.s12{animation-name:s12}@keyframes s12{0%,72%{opacity:0;transform:translateY(8px)}75%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s12 .ciz{animation-name:c12}@keyframes c12{0%,72%{stroke-dashoffset:1}77%,100%{stroke-dashoffset:0}}
+.s13{animation-name:s13}@keyframes s13{0%,79%{opacity:0;transform:translateY(8px)}82%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s13 .ciz{animation-name:c13}@keyframes c13{0%,79%{stroke-dashoffset:1}84%,100%{stroke-dashoffset:0}}
+.direnc{animation-name:direnc}@keyframes direnc{0%,33%{opacity:1}37%,94%{opacity:.25}100%{opacity:1}}
+.nabiz{animation-name:nabiz}@keyframes nabiz{0%,42%{transform:scale(1)}45%{transform:scale(1.08)}48%,100%{transform:scale(1)}}
+.nabiz2{animation-name:nabiz2}@keyframes nabiz2{0%,82%{transform:scale(1)}85%{transform:scale(1.06)}88%,100%{transform:scale(1)}}
+.carpi{animation-name:carpi}@keyframes carpi{0%,28%{opacity:0;transform:scale(.3)}31%{opacity:1;transform:scale(1.25)}33%,94%{opacity:1;transform:scale(1)}100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.a{animation:none!important}.direnc{opacity:.25}}
+</style>
+<defs>
+<marker id="ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+<marker id="okK" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+<marker id="tbar" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="11" markerHeight="11" orient="auto"><path d="M5,0 L5,10" stroke="#dc2626" stroke-width="2.6"/></marker>
+</defs>
+<rect width="640" height="830" fill="#ffffff"/>
+
+<g class="a s1"><rect x="210" y="24" width="220" height="52" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/><text x="320" y="46" font-size="15" font-weight="800" text-anchor="middle" fill="#1e293b">GFR ↓</text><text x="320" y="65" font-size="12.5" font-weight="500" text-anchor="middle" fill="#1e293b">böbrek işlevi azalır</text></g>
+<g class="a s2"><path class="a ciz" pathLength="1" d="M320,78 L320,108" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/><rect x="210" y="112" width="220" height="50" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/><text x="320" y="133" font-size="15" font-weight="800" text-anchor="middle" fill="#78350f">Fosfor ↑ eğilimi</text><text x="320" y="152" font-size="12.5" font-weight="500" text-anchor="middle" fill="#78350f">fosfor atılamaz</text></g>
+<g class="a s3"><path class="a ciz" pathLength="1" d="M260,164 L190,196" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/></g>
+<g class="a s3"><g class="a nabiz m"><rect x="30" y="198" width="250" height="62" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.6"/><text x="155" y="225" font-size="15" font-weight="800" text-anchor="middle" fill="#0c4a6e">Osteosit → FGF-23 ↑</text><text x="155" y="244" font-size="12.5" font-weight="500" text-anchor="middle" fill="#0c4a6e">en erken devreye giren yanıt</text></g></g>
+
+<g class="a s4"><rect x="330" y="186" width="280" height="150" rx="14" fill="#f8fafc" stroke="#94a3b8" stroke-dasharray="5 4"/>
+<text x="346" y="208" font-size="12.5" font-weight="800" fill="#475569">BÖBREK TÜBÜLÜ</text>
+<rect x="346" y="220" width="120" height="46" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/><text x="406" y="239" font-size="15" font-weight="800" text-anchor="middle" fill="#1e293b">NaPi-IIa/c</text><text x="406" y="258" font-size="12.5" font-weight="500" text-anchor="middle" fill="#1e293b">fosfor emilimi</text>
+</g>
+<g class="a s4"><g class="a direnc"><path class="a ciz" pathLength="1" d="M282,226 L338,238" stroke="#dc2626" stroke-width="2.2" fill="none" marker-end="url(#tbar)"/><text x="406" y="298" font-size="14" font-weight="800" text-anchor="middle" fill="#0369a1">Fosfatüri</text><text x="406" y="316" font-size="11.5" text-anchor="middle" fill="#0369a1">(FGF-23 etkisi Klotho ister)</text></g></g>
+<g class="a s5"><rect x="484" y="220" width="110" height="46" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.6"/><text x="539" y="239" font-size="15" font-weight="800" text-anchor="middle" fill="#4c1d95">Klotho ↓</text><text x="539" y="258" font-size="12.5" font-weight="500" text-anchor="middle" fill="#4c1d95">erken evrede</text></g>
+<g class="a carpi m"><path d="M584,206 L602,224 M602,206 L584,224" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/></g>
+<g class="a s6"><text x="539" y="298" font-size="13.5" font-weight="800" text-anchor="middle" fill="#dc2626">FGF-23</text><text x="539" y="315" font-size="13.5" font-weight="800" text-anchor="middle" fill="#dc2626">direnci</text></g>
+<g class="a s7"><path class="a ciz" pathLength="1" d="M520,338 Q470,382 300,372 Q180,364 168,264" stroke="#dc2626" stroke-width="2.2" fill="none" marker-end="url(#okK)"/><rect x="250" y="352" width="160" height="22" rx="11" fill="#fee2e2"/><text x="330" y="367.5" font-size="12.5" font-weight="800" text-anchor="middle" fill="#b91c1c">kısır döngü: FGF-23 ↑↑</text></g>
+
+<g class="a s8"><path class="a ciz" pathLength="1" d="M80,262 L80,438 L330,438" stroke="#dc2626" stroke-width="2.2" fill="none" marker-end="url(#tbar)"/><rect x="340" y="412" width="270" height="52" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/><text x="475" y="434" font-size="15" font-weight="800" text-anchor="middle" fill="#78350f">1α-hidroksilaz</text><text x="475" y="453" font-size="12.5" font-weight="500" text-anchor="middle" fill="#78350f">böbrekte</text></g>
+<g class="a s9"><path class="a ciz" pathLength="1" d="M475,466 L475,494" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/><rect x="340" y="498" width="270" height="52" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/><text x="475" y="520" font-size="15" font-weight="800" text-anchor="middle" fill="#7f1d1d">Kalsitriol ↓</text><text x="475" y="539" font-size="12.5" font-weight="500" text-anchor="middle" fill="#7f1d1d">aktif D vitamini</text></g>
+<g class="a s10"><path class="a ciz" pathLength="1" d="M338,524 L292,524" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/><rect x="30" y="498" width="260" height="52" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/><text x="160" y="529.5" font-size="15" font-weight="800" text-anchor="middle" fill="#1e293b">Bağırsak: Ca ve P emilimi ↓</text></g>
+<g class="a s11"><path class="a ciz" pathLength="1" d="M160,552 L160,586" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/><rect x="30" y="590" width="260" height="50" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/><text x="160" y="620.5" font-size="15" font-weight="800" text-anchor="middle" fill="#7f1d1d">Hipokalsemi</text><rect x="350" y="590" width="260" height="50" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/><text x="480" y="620.5" font-size="15" font-weight="800" text-anchor="middle" fill="#78350f">Hiperfosfatemi</text></g>
+<g class="a s12"><path class="a ciz" pathLength="1" d="M160,642 L250,676" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/><path class="a ciz" pathLength="1" d="M480,642 L390,676" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/><rect x="190" y="680" width="260" height="50" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.6"/><text x="320" y="701" font-size="15" font-weight="800" text-anchor="middle" fill="#0c4a6e">Paratiroid bezi</text><text x="320" y="720" font-size="12.5" font-weight="500" text-anchor="middle" fill="#0c4a6e">uyarılır (CaSR)</text></g>
+<g class="a s13"><path class="a ciz" pathLength="1" d="M320,732 L320,756" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/></g>
+<g class="a s13"><g class="a nabiz2 m"><rect x="110" y="760" width="420" height="58" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/><text x="320" y="785" font-size="15" font-weight="800" text-anchor="middle" fill="#7f1d1d">Sekonder hiperparatiroidizm (sHPT)</text><text x="320" y="804" font-size="12.5" font-weight="500" text-anchor="middle" fill="#7f1d1d">paratiroid hiperplazisi</text></g></g>
+</svg>
