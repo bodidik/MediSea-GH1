@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">SIADH tanı akışı</title>
+<desc id="d">Hiponatremide (serum sodyumu 135 mmol/L altı) önce efektif plazma osmolalitesinin 275 mOsm/kg altında olduğu, yani hipotonik hiponatremi doğrulanır. İdrar osmolalitesi 100 mOsm/kg altındaysa aşırı su alımı ya da düşük solüt alımı düşünülür; üstündeyse AVP etkisi vardır. Hacim durumu değerlendirilir: hipovolemi ya da ödemli durum değilse ve klinik övolemi varsa idrar sodyumu 30 mmol/L üstünde olmalıdır. Adrenal yetmezlik, ağır hipotiroidi, böbrek yetmezliği ve diüretik dışlanınca tanı SIADH'dır. Destekleyici bulgular: ürik asit 4 mg/dL altı, fraksiyonel ürat atılımı yüzde 12 üstü, düşük BUN.</desc>
+<!-- 13 sn, tek seferlik; son kare = statik şemanın tamamı. Hareket azaltmada animasyon çalışmaz. Üretici: di-semalar.cjs -->
+<style>
+.a{animation-duration:13s;animation-iteration-count:1;animation-timing-function:ease-in-out;animation-fill-mode:both}
+.m{transform-box:fill-box;transform-origin:center}
+.ciz{stroke-dasharray:1}
+.a{animation-name:a}@keyframes a{0%,0%{opacity:0;transform:translateY(7px)}3%,100%{opacity:1;transform:none}}
+.a .ciz{animation-name:ac}@keyframes ac{0%,0%{stroke-dashoffset:1}4%,100%{stroke-dashoffset:0}}
+.b{animation-name:b}@keyframes b{0%,10%{opacity:0;transform:translateY(7px)}13%,100%{opacity:1;transform:none}}
+.b .ciz{animation-name:bc}@keyframes bc{0%,10%{stroke-dashoffset:1}14%,100%{stroke-dashoffset:0}}
+.c{animation-name:c}@keyframes c{0%,20%{opacity:0;transform:translateY(7px)}23%,100%{opacity:1;transform:none}}
+.c .ciz{animation-name:cc}@keyframes cc{0%,20%{stroke-dashoffset:1}24%,100%{stroke-dashoffset:0}}
+.c2{animation-name:c2}@keyframes c2{0%,27%{opacity:0;transform:translateY(7px)}30%,100%{opacity:1;transform:none}}
+.c2 .ciz{animation-name:c2c}@keyframes c2c{0%,27%{stroke-dashoffset:1}31%,100%{stroke-dashoffset:0}}
+.d{animation-name:d}@keyframes d{0%,36%{opacity:0;transform:translateY(7px)}39%,100%{opacity:1;transform:none}}
+.d .ciz{animation-name:dc}@keyframes dc{0%,36%{stroke-dashoffset:1}40%,100%{stroke-dashoffset:0}}
+.d2{animation-name:d2}@keyframes d2{0%,43%{opacity:0;transform:translateY(7px)}46%,100%{opacity:1;transform:none}}
+.d2 .ciz{animation-name:d2c}@keyframes d2c{0%,43%{stroke-dashoffset:1}47%,100%{stroke-dashoffset:0}}
+.e{animation-name:e}@keyframes e{0%,52%{opacity:0;transform:translateY(7px)}55%,100%{opacity:1;transform:none}}
+.e .ciz{animation-name:ec}@keyframes ec{0%,52%{stroke-dashoffset:1}56%,100%{stroke-dashoffset:0}}
+.e2{animation-name:e2}@keyframes e2{0%,59%{opacity:0;transform:translateY(7px)}62%,100%{opacity:1;transform:none}}
+.e2 .ciz{animation-name:e2c}@keyframes e2c{0%,59%{stroke-dashoffset:1}63%,100%{stroke-dashoffset:0}}
+.f{animation-name:f}@keyframes f{0%,68%{opacity:0;transform:translateY(7px)}71%,100%{opacity:1;transform:none}}
+.f .ciz{animation-name:fc}@keyframes fc{0%,68%{stroke-dashoffset:1}72%,100%{stroke-dashoffset:0}}
+.g{animation-name:g}@keyframes g{0%,80%{opacity:0;transform:translateY(7px)}83%,100%{opacity:1;transform:none}}
+.g .ciz{animation-name:gc}@keyframes gc{0%,80%{stroke-dashoffset:1}84%,100%{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){.a{animation:none!important}.hareket{display:none}}
+</style>
+<defs>
+<marker id="ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+<marker id="okY" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker>
+<marker id="okM" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0284c7"/></marker>
+<marker id="okK" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+<marker id="tbar" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="11" markerHeight="11" orient="auto"><path d="M5,0 L5,10" stroke="#dc2626" stroke-width="2.6"/></marker>
+</defs>
+<rect width="640" height="600" fill="#ffffff"/>
+
+<g class="a a"><rect x="170" y="14" width="300" height="52" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/><text x="320" y="36.5" font-size="14" font-weight="800" text-anchor="middle" fill="#1e293b">Hiponatremi</text><text x="320" y="53.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">serum Na &lt;135 mmol/L</text></g>
+<g class="a b"><path class="a ciz" pathLength="1" d="M320,68 L320,90" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/><rect x="150" y="94" width="340" height="52" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.6"/><text x="320" y="116.5" font-size="14" font-weight="800" text-anchor="middle" fill="#0c4a6e">Efektif P<tspan font-size='9'>osm</tspan> &lt;275 mOsm/kg</text><text x="320" y="133.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#0c4a6e">hipotonik hiponatremi (psödo/hipertonik değil)</text></g>
+<g class="a c"><path class="a ciz" pathLength="1" d="M320,148 L320,170" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/><rect x="170" y="174" width="300" height="52" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.6"/><text x="320" y="196.5" font-size="14" font-weight="800" text-anchor="middle" fill="#0c4a6e">U<tspan font-size='9'>osm</tspan> &gt;100 mOsm/kg</text><text x="320" y="213.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#0c4a6e">AVP etkisi sürüyor</text></g>
+<g class="a c2"><path class="a ciz" pathLength="1" d="M170,200 L120,200" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/><rect x="10" y="174" width="108" height="52" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/><text x="64" y="196.5" font-size="12" font-weight="800" text-anchor="middle" fill="#1e293b">&lt;100 ise</text><text x="64" y="213.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">su / az solüt</text></g>
+<g class="a d"><path class="a ciz" pathLength="1" d="M320,228 L320,250" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/><rect x="170" y="254" width="300" height="52" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.6"/><text x="320" y="276.5" font-size="14" font-weight="800" text-anchor="middle" fill="#0c4a6e">Klinik övolemi</text><text x="320" y="293.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#0c4a6e">ödem yok · dehidratasyon yok</text></g>
+<g class="a d2"><path class="a ciz" pathLength="1" d="M470,280 L520,280" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/><rect x="522" y="254" width="108" height="52" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/><text x="576" y="276.5" font-size="12" font-weight="800" text-anchor="middle" fill="#1e293b">hipo/hipervolemi</text><text x="576" y="293.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">başka tanı</text></g>
+<g class="a e"><path class="a ciz" pathLength="1" d="M320,308 L320,330" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/><rect x="170" y="334" width="300" height="52" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.6"/><text x="320" y="356.5" font-size="14" font-weight="800" text-anchor="middle" fill="#0c4a6e">U<tspan font-size='9'>Na</tspan> &gt;30 mmol/L</text><text x="320" y="373.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#0c4a6e">normal tuz-su alımında</text></g>
+<g class="a e2"><path class="a ciz" pathLength="1" d="M170,360 L120,360" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/><rect x="10" y="334" width="108" height="52" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/><text x="64" y="356.5" font-size="12" font-weight="800" text-anchor="middle" fill="#1e293b">≤30 ise</text><text x="64" y="373.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">hipovolemi?</text></g>
+<g class="a f"><path class="a ciz" pathLength="1" d="M320,388 L320,410" stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#ok)"/><rect x="110" y="414" width="420" height="66" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/><text x="320" y="435" font-size="14" font-weight="800" text-anchor="middle" fill="#7f1d1d">Dışla: adrenal yetmezlik · ağır hipotiroidi</text><text x="320" y="452" font-size="11.5" font-weight="500" text-anchor="middle" fill="#7f1d1d">böbrek yetmezliği · yakın diüretik</text><text x="320" y="469" font-size="11.5" font-weight="500" text-anchor="middle" fill="#7f1d1d">kortizol eksikliği SIADH'ı birebir taklit eder</text></g>
+<g class="a g"><path class="a ciz" pathLength="1" d="M320,482 L320,504" stroke="#16a34a" stroke-width="2.2" fill="none" marker-end="url(#okY)"/><rect x="110" y="508" width="420" height="80" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="1.6"/><text x="320" y="527.5" font-size="14" font-weight="800" text-anchor="middle" fill="#14532d">SIADH</text><text x="320" y="544.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#14532d">destekleyici: ürik asit &lt;4 mg/dL · FE<tspan font-size='9'>ürat</tspan> &gt;%12</text><text x="320" y="561.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#14532d">düşük BUN · izotonik salinle düzelmez</text><text x="320" y="578.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#14532d">sıvı kısıtlamasıyla düzelir</text></g>
+
+</svg>
