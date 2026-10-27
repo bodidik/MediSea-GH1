@@ -3,39 +3,39 @@
 <desc id="d">GFR düşer, fosfor dengesi bozulur. Osteositler FGF-23 salgılar; FGF-23 böbrekte NaPi-IIa/c taşıyıcılarını baskılayarak fosfatüri yapar, bunun için Klotho gerekir. Klotho erken evrede azalır, FGF-23 direnci gelişir ve FGF-23 daha da artar. FGF-23 1-alfa-hidroksilazı baskılar, kalsitriol düşer, bağırsaktan kalsiyum ve fosfor emilimi azalır ve hipokalsemi gelişir. Hipokalsemi ve hiperfosfatemi paratiroidi uyarır: sekonder hiperparatiroidizm ve hiperplazi.</desc>
 <!-- 15 sn'lik döngü; son kare = statik şemanın tamamı. Hareket azaltmada animasyon çalışmaz. Üretici: kbh-sema.cjs -->
 <style>
-.a{animation-duration:15s;animation-iteration-count:infinite;animation-timing-function:ease-in-out;animation-fill-mode:both}
+.a{animation-duration:15s;animation-iteration-count: 1;animation-timing-function:ease-in-out;animation-fill-mode:both}
 .m{transform-box:fill-box;transform-origin:center}
 .ciz{stroke-dasharray:1}
-.s1{animation-name:s1}@keyframes s1{0%,0%{opacity:0;transform:translateY(8px)}3%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s1{animation-name:s1}@keyframes s1{0%,0%{opacity:0;transform:translateY(8px)}3%, 100%{opacity:1;transform:none}}
 .s1 .ciz{animation-name:c1}@keyframes c1{0%,0%{stroke-dashoffset:1}5%,100%{stroke-dashoffset:0}}
-.s2{animation-name:s2}@keyframes s2{0%,6%{opacity:0;transform:translateY(8px)}9%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s2{animation-name:s2}@keyframes s2{0%,6%{opacity:0;transform:translateY(8px)}9%, 100%{opacity:1;transform:none}}
 .s2 .ciz{animation-name:c2}@keyframes c2{0%,6%{stroke-dashoffset:1}11%,100%{stroke-dashoffset:0}}
-.s3{animation-name:s3}@keyframes s3{0%,12%{opacity:0;transform:translateY(8px)}15%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s3{animation-name:s3}@keyframes s3{0%,12%{opacity:0;transform:translateY(8px)}15%, 100%{opacity:1;transform:none}}
 .s3 .ciz{animation-name:c3}@keyframes c3{0%,12%{stroke-dashoffset:1}17%,100%{stroke-dashoffset:0}}
-.s4{animation-name:s4}@keyframes s4{0%,19%{opacity:0;transform:translateY(8px)}22%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s4{animation-name:s4}@keyframes s4{0%,19%{opacity:0;transform:translateY(8px)}22%, 100%{opacity:1;transform:none}}
 .s4 .ciz{animation-name:c4}@keyframes c4{0%,19%{stroke-dashoffset:1}24%,100%{stroke-dashoffset:0}}
-.s5{animation-name:s5}@keyframes s5{0%,27%{opacity:0;transform:translateY(8px)}30%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s5{animation-name:s5}@keyframes s5{0%,27%{opacity:0;transform:translateY(8px)}30%, 100%{opacity:1;transform:none}}
 .s5 .ciz{animation-name:c5}@keyframes c5{0%,27%{stroke-dashoffset:1}32%,100%{stroke-dashoffset:0}}
-.s6{animation-name:s6}@keyframes s6{0%,33%{opacity:0;transform:translateY(8px)}36%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s6{animation-name:s6}@keyframes s6{0%,33%{opacity:0;transform:translateY(8px)}36%, 100%{opacity:1;transform:none}}
 .s6 .ciz{animation-name:c6}@keyframes c6{0%,33%{stroke-dashoffset:1}38%,100%{stroke-dashoffset:0}}
-.s7{animation-name:s7}@keyframes s7{0%,39%{opacity:0;transform:translateY(8px)}42%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s7{animation-name:s7}@keyframes s7{0%,39%{opacity:0;transform:translateY(8px)}42%, 100%{opacity:1;transform:none}}
 .s7 .ciz{animation-name:c7}@keyframes c7{0%,39%{stroke-dashoffset:1}44%,100%{stroke-dashoffset:0}}
-.s8{animation-name:s8}@keyframes s8{0%,47%{opacity:0;transform:translateY(8px)}50%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s8{animation-name:s8}@keyframes s8{0%,47%{opacity:0;transform:translateY(8px)}50%, 100%{opacity:1;transform:none}}
 .s8 .ciz{animation-name:c8}@keyframes c8{0%,47%{stroke-dashoffset:1}52%,100%{stroke-dashoffset:0}}
-.s9{animation-name:s9}@keyframes s9{0%,53%{opacity:0;transform:translateY(8px)}56%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s9{animation-name:s9}@keyframes s9{0%,53%{opacity:0;transform:translateY(8px)}56%, 100%{opacity:1;transform:none}}
 .s9 .ciz{animation-name:c9}@keyframes c9{0%,53%{stroke-dashoffset:1}58%,100%{stroke-dashoffset:0}}
-.s10{animation-name:s10}@keyframes s10{0%,59%{opacity:0;transform:translateY(8px)}62%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s10{animation-name:s10}@keyframes s10{0%,59%{opacity:0;transform:translateY(8px)}62%, 100%{opacity:1;transform:none}}
 .s10 .ciz{animation-name:c10}@keyframes c10{0%,59%{stroke-dashoffset:1}64%,100%{stroke-dashoffset:0}}
-.s11{animation-name:s11}@keyframes s11{0%,65%{opacity:0;transform:translateY(8px)}68%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s11{animation-name:s11}@keyframes s11{0%,65%{opacity:0;transform:translateY(8px)}68%, 100%{opacity:1;transform:none}}
 .s11 .ciz{animation-name:c11}@keyframes c11{0%,65%{stroke-dashoffset:1}70%,100%{stroke-dashoffset:0}}
-.s12{animation-name:s12}@keyframes s12{0%,72%{opacity:0;transform:translateY(8px)}75%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s12{animation-name:s12}@keyframes s12{0%,72%{opacity:0;transform:translateY(8px)}75%, 100%{opacity:1;transform:none}}
 .s12 .ciz{animation-name:c12}@keyframes c12{0%,72%{stroke-dashoffset:1}77%,100%{stroke-dashoffset:0}}
-.s13{animation-name:s13}@keyframes s13{0%,79%{opacity:0;transform:translateY(8px)}82%,94%{opacity:1;transform:none}100%{opacity:0}}
+.s13{animation-name:s13}@keyframes s13{0%,79%{opacity:0;transform:translateY(8px)}82%, 100%{opacity:1;transform:none}}
 .s13 .ciz{animation-name:c13}@keyframes c13{0%,79%{stroke-dashoffset:1}84%,100%{stroke-dashoffset:0}}
-.direnc{animation-name:direnc}@keyframes direnc{0%,33%{opacity:1}37%,94%{opacity:.25}100%{opacity:1}}
+.direnc{animation-name:direnc}@keyframes direnc{0%,33%{opacity:1}37%, 100%{opacity:.25}}
 .nabiz{animation-name:nabiz}@keyframes nabiz{0%,42%{transform:scale(1)}45%{transform:scale(1.08)}48%,100%{transform:scale(1)}}
 .nabiz2{animation-name:nabiz2}@keyframes nabiz2{0%,82%{transform:scale(1)}85%{transform:scale(1.06)}88%,100%{transform:scale(1)}}
-.carpi{animation-name:carpi}@keyframes carpi{0%,28%{opacity:0;transform:scale(.3)}31%{opacity:1;transform:scale(1.25)}33%,94%{opacity:1;transform:scale(1)}100%{opacity:0}}
+.carpi{animation-name:carpi}@keyframes carpi{0%,28%{opacity:0;transform:scale(.3)}31%{opacity:1;transform:scale(1.25)}33%, 100%{opacity:1;transform:scale(1)}}
 @media (prefers-reduced-motion: reduce){.a{animation:none!important}.direnc{opacity:.25}}
 </style>
 <defs>

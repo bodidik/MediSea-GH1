@@ -12,6 +12,7 @@ import { basliklariDuzenle, bolumKimlikleri } from "@/app/lib/baslik";
 import { tabloKaydir } from "@/app/lib/tablo";
 import KaydirDurumu from "@/app/components/KaydirDurumu";
 import BasaDon from "@/app/components/BasaDon";
+import SekilOynat from "@/app/components/SekilOynat";
 import RotaCizgisi from "@/app/components/RotaCizgisi";
 import { DalgaCizgisi, DumenSimgesi } from "@/app/components/DenizSusu";
 import { gorunurlukRozeti } from "@/app/lib/gorunurluk";
@@ -750,6 +751,7 @@ export default async function TopicDetailPage({
                 Olculdu: 375px'te 14 kabin 13'u tasiyor ve hicbir gorsel ipucu yoktu. */}
             <KaydirDurumu />
             <BasaDon />
+            <SekilOynat />
             <RotaCizgisi />
 
             {/* data-readable: ReadingTools bu konteyner içindeki seçimleri
