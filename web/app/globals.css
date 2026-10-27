@@ -1247,3 +1247,17 @@ html {
 .kavsak-bag:focus-visible {
   text-decoration-style: solid;
 }
+
+/* DENİZ FİLİGRANI — ufuktaki gemiler (DenizFiligrani.tsx) gözle izlenemeyecek
+   kadar yavaş sürüklenir: ~40 birim / 6 dk. Hareket görülmez, bir süre sonra
+   geminin yer değiştirdiği fark edilir. Hareket azaltmada evrensel kural durdurur. */
+@keyframes deniz-surukle {
+  from { transform: translateX(-20px); }
+  to   { transform: translateX(20px); }
+}
+.deniz-surukle {
+  animation: deniz-surukle 360s ease-in-out infinite alternate;
+}
+.deniz-surukle-ters {
+  animation-direction: alternate-reverse;
+}

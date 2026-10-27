@@ -368,7 +368,7 @@ export default function DenizFiligrani() {
         {/* sayfaya göre değişen ufuk ayrıntısı */}
         {sahne === 0 && (
           <>
-            <Yelkenli x={L.a} s={k} />
+            <g className="deniz-surukle"><Yelkenli x={L.a} s={k} /></g>
             <Marti x={L.b} y={330} s={k} />
             <Marti x={L.b + 44 * k} y={306} s={0.7 * k} />
             <Marti x={L.b + 80 * k} y={344} s={0.55 * k} />
@@ -377,7 +377,7 @@ export default function DenizFiligrani() {
         {sahne === 1 && <FenerBurnu x={dar ? 600 : 220} s={0.8} />}
         {sahne === 2 && (
           <>
-            <Silep x={dar ? 620 : 230} s={dar ? 0.7 : 1} />
+            <g className="deniz-surukle deniz-surukle-ters"><Silep x={dar ? 620 : 230} s={dar ? 0.7 : 1} /></g>
             <Marti x={dar ? 540 : 120} y={350} s={0.8 * k} />
             <Marti x={dar ? 576 : 160} y={326} s={0.6 * k} />
           </>
@@ -385,19 +385,19 @@ export default function DenizFiligrani() {
         {sahne === 3 && (
           <>
             <Ada x={dar ? 620 : 230} s={dar ? 0.55 : 0.8} />
-            {!dar && <Yelkenli x={1380} s={0.7} />}
+            {!dar && <g className="deniz-surukle deniz-surukle-ters"><Yelkenli x={1380} s={0.7} /></g>}
           </>
         )}
         {sahne === 4 && (
           <>
-            <Kayik x={dar ? 600 : 250} y={680} s={dar ? 0.8 : 1} />
-            <Yelkenli x={dar ? 720 : 1340} s={0.6 * k} />
+            <g className="deniz-surukle"><Kayik x={dar ? 600 : 250} y={680} s={dar ? 0.8 : 1} /></g>
+            <g className="deniz-surukle deniz-surukle-ters"><Yelkenli x={dar ? 720 : 1340} s={0.6 * k} /></g>
           </>
         )}
         {sahne === 5 && (
           <>
             <UzakKiyi x0={L.x0} x1={L.x0 + (L.x1 - L.x0) * (dar ? 0.55 : 0.26)} />
-            <Silep x={dar ? 780 : 1340} s={dar ? 0.45 : 0.5} />
+            <g className="deniz-surukle deniz-surukle-ters"><Silep x={dar ? 780 : 1340} s={dar ? 0.45 : 0.5} /></g>
           </>
         )}
 
