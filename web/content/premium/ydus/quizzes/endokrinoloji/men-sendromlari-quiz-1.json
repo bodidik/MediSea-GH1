@@ -8,23 +8,23 @@
       "id": "s1",
       "metin": "MEN1 ilişkili Cushing sendromu için osilodrostat başlanan hasta, aynı zamanda bilateral adrenal tutulum nedeniyle DOC (deoksikortikosteron) fazlalığına bağlı hipertansiyon ve hipokalemi geliştiriyor. Potasyum replasmanına ek olarak hangi ilaç hem mineralokortikoid fazlalığını hem de hiperandrojenizmi hedefler?",
       "secenekler": {
-        "A": "Spironolakton — MR antagonizması ile DOC'u bloke eder, AR antagonizması ile hiperandrojenizmi baskılar; K⁺ kaybını önleyerek hERG-QTc riskini azaltır",
+        "A": "Spironolakton — MR antagonizması ile DOC'u bloke eder, AR antagonizması ile hiperandrojenizmi baskılar; K⁺ kaybını önleyerek QT riskini azaltır",
         "B": "Eplerenon — MR-selektif etki ile DOC'u bloke eder; AR antagonizması yoktur",
         "C": "Fludrokortizon — mineralokortikoid reseptörlerini aktive ederek hipertansiyonu ve hipokalemiyi düzeltir",
         "D": "Amilorid — epitelyal Na⁺ kanalını (ENaC) bloke ederek K⁺ kaybını önler; MR veya AR üzerinde etkisi yoktur",
         "E": "Deksametazon — GR aracılığıyla hiperandrojenizmi baskılar; mineralokortikoid etkisi yoktur"
       },
       "dogru": "A",
-      "aciklama_kisa": "Osilodrostat DOC'u yıkamayı keser; DOC MR'ı aktive eder → hipertansiyon + hipokalemi. Spironolakton hem MR'ı (DOC yolu) hem AR'ı (hiperandrojenizm) aynı anda bloke eden tek ajandır. K⁺ 4.5–5.0 hedeflenerek hERG-QTc sinerjik riski azaltılır.",
-      "aciklama_detay": "Osilodrostat CYP11B1 ve CYP11B2'yi inhibe ederek kortizol sentezini keser; ama DOC (bir mineralokortikoid öncülü) birikir ve MR'ı aktive eder. Bu tablo hipertansiyon + hipokalemi ile ortaya çıkar. Spironolakton'un iki mekanizması: (1) MR antagonizması → DOC kaynaklı Na⁺ retansiyonu bloke edilir; (2) AR antagonizması → hirsutizm/akne baskılanır. Eplerenon (B) MR-selektiftir, AR üzerine etkisi yoktur. Fludrokortizon (C) mineralokortikoid agonistidir — bu tabloyu ağırlaştırır. K⁺ 4.5–5.0 mmol/L hedeflenmesi hERG-QTc sinerjik riskini azaltır.",
+      "aciklama_kisa": "Osilodrostat DOC'u yıkamayı keser; DOC MR'ı aktive eder → hipertansiyon + hipokalemi. Spironolakton hem MR'ı (DOC yolu) hem AR'ı (hiperandrojenizm) aynı anda bloke eden tek ajandır. Hipokaleminin düzeltilmesi, osilodrostatın QT uzatıcı etkisiyle birleşen aritmi riskini azaltır.",
+      "aciklama_detay": "Osilodrostat CYP11B1 ve CYP11B2'yi inhibe ederek kortizol sentezini keser; ama DOC (bir mineralokortikoid öncülü) birikir ve MR'ı aktive eder. Bu tablo hipertansiyon + hipokalemi ile ortaya çıkar. Spironolakton'un iki mekanizması: (1) MR antagonizması → DOC kaynaklı Na⁺ retansiyonu bloke edilir; (2) AR antagonizması → hirsutizm/akne baskılanır. Eplerenon (B) MR-selektiftir, AR üzerine etkisi yoktur. Fludrokortizon (C) mineralokortikoid agonistidir — bu tabloyu ağırlaştırır. Osilodrostat QT uzatabilir (TEMD Hipofiz 2022); hipokaleminin düzeltilmesi bu riski azaltır.",
       "secenekAciklamalari": {
-        "A": "DOGRU — Spironolakton çift mekanizma: MR blokajı (DOC yolu) + AR blokajı (hiperandrojenizm). K⁺ korunması hERG-QTc riskini de azaltır.",
+        "A": "DOGRU — Spironolakton çift mekanizma: MR blokajı (DOC yolu) + AR blokajı (hiperandrojenizm). K⁺ korunması QT riskini de azaltır.",
         "B": "YANLIS — Eplerenon MR-selektiftir; hiperandrojenizmi hedeflemez.",
         "C": "YANLIS — Fludrokortizon mineralokortikoid agonistidir; bu tabloyu ağırlaştırır.",
         "D": "YANLIS — Amilorid K⁺ kaybını kısmen önler ama MR/AR üzerinde etkisi yoktur.",
         "E": "YANLIS — Deksametazon bu tabloda belirtilen mineralokortikoid etkisini hedeflemez."
       },
-      "etiketler": ["Osilodrostat", "DOC", "Spironolakton", "MR Antagonizması", "hERG-QTc"],
+      "etiketler": ["Osilodrostat", "DOC", "Spironolakton", "MR Antagonizması", "QTc"],
       "zorluk": "zor",
       "kaynak": "Feelders RA et al. NEJM Evid 2022; Bertagna X et al. Endocr Rev 2023"
     },

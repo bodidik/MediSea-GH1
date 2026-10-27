@@ -2,7 +2,7 @@
   "title": "Osilodrostat + Spironolakton: Çift Mekanizmalı Terapötik Koruma",
   "meta": {
     "kaynakca": "men1",
-    "updatedAt": "11 Ağu 2026",
+    "updatedAt": "27 Eki 2026",
     "tags": ["Endokrinoloji", "Spironolakton", "Osilodrostat", "DOC", "Mineralokortikoid", "Androjen", "MEN1"],
     "parent": "men1-osilodrostat-mineralokortikoid",
     "order": 1
@@ -18,7 +18,7 @@
     },
     {
       "heading": "2. Potasyum Homeostazisi ve Kardiyak Güvenlik",
-      "html": "<p>Spironolakton, potasyum tutucu bir diüretiktir. Bu özelliği MEN1 hastalarında iki sinerjik risk için kritiktir:</p><ul class=\"mb-4\"><li><strong>DOC Kaynaklı Hipokalemi:</strong> Renal K⁺ atılımını azaltarak serum K⁺ düzeyini yükseltir.</li><li><strong>Osilodrostatın hERG Blokajı:</strong> Osilodrostat kardiyak hERG kanallarını doğrudan inhibe ederek QTc intervalini uzatır. DOC kaynaklı hipokalemi bu etkiyle sinerjize olduğunda torsades de pointes ve VF riski dramatik artar.</li></ul><p>Spironolakton, MEN1 hastalarında hayati önem taşıyan <strong>K⁺ hedef aralığı 4.5–5.0 mmol/L</strong>'ye ulaşılmasını kolaylaştırarak aritmi eşiğini yükseltir.</p>"
+      "html": "<p>Spironolakton, potasyum tutucu bir diüretiktir. Bu özelliği MEN1 hastalarında iki sinerjik risk için kritiktir:</p><ul class=\"mb-4\"><li><strong>DOC Kaynaklı Hipokalemi:</strong> Renal K⁺ atılımını azaltarak serum K⁺ düzeyini yükseltir.</li><li><strong>Osilodrostatın QT Uzatıcı Etkisi:</strong> Osilodrostatın yan etkileri arasında QT uzaması bildirilmiştir (TEMD Hipofiz 2022); ilaca bağlı hipokalemi bu riski artırır. Torsades de pointes ve VF riski artar.</li></ul><p>Spironolakton, MEN1 hastalarında hipokaleminin düzeltilmesini kolaylaştırarak aritmi riskini azaltır.</p>"
     },
     {
       "heading": "3. Androjen Reseptör Antagonizması (Hiperandrojenizm Kontrolü)",

@@ -168,13 +168,6 @@
         "eslesen": "QTc"
       }
     ],
-    "endokrinoloji/men1-spironolakton-cift-mekanizma": [
-      {
-        "slug": "qtc",
-        "name": "QTc Hesaplayıcı",
-        "eslesen": "QTc"
-      }
-    ],
     "endokrinoloji/miksodem-psikozu": [
       {
         "slug": "status-epileptikus",
@@ -9052,9 +9045,9 @@
   "olcum": {
     "konu": 496,
     "arac": 281,
-    "araciOlanKonu": 356,
+    "araciOlanKonu": 355,
     "konusuOlanArac": 176,
-    "bag": 723,
+    "bag": 722,
     "kavramBag": 640
   }
 }
