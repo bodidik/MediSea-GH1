@@ -47,6 +47,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
                 Siroz ve Komplikasyonları
               </Link>
             </li>
+            <li>
+              <Link href="/topics/onkoloji/hepatosellular-karsinom-kapsamli-klinik-rehber" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Hepatosellüler Karsinom (HCC): Etiyoloji, Tanı, Evreleme ve Tedavi
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

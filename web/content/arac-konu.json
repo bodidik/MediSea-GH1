@@ -1663,9 +1663,14 @@
     ],
     "onkoloji/hepatosellular-karsinom-kapsamli-klinik-rehber": [
       {
+        "slug": "hrs-aki",
+        "name": "Hepatorenal Sendrom (HRS-AKI)",
+        "eslesen": "Hepatorenal Sendrom"
+      },
+      {
         "slug": "child-pugh",
         "name": "Child-Pugh Sınıflaması",
-        "eslesen": "Child-Pugh Sınıflaması"
+        "eslesen": "Child-Pugh"
       }
     ],
     "onkoloji/karaciger-kanserleri": [
@@ -5279,7 +5284,7 @@
       {
         "yol": "onkoloji/hepatosellular-karsinom-kapsamli-klinik-rehber",
         "baslik": "Hepatosellüler Karsinom (HCC): Etiyoloji, Tanı, Evreleme ve Tedavi",
-        "eslesen": "Child-Pugh Sınıflaması"
+        "eslesen": "Child-Pugh"
       },
       {
         "yol": "enfeksiyon/dalbavansin-derleme",
@@ -6121,6 +6126,19 @@
         "baslik": "Onkolojik Aciller",
         "eslesen": "onkolojik acil",
         "kaynak": "kavram"
+      }
+    ],
+    "hrs-aki": [
+      {
+        "yol": "gastroenteroloji/siroz-ve-komplikasyonlari",
+        "baslik": "Siroz ve Komplikasyonları",
+        "eslesen": "siroz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "onkoloji/hepatosellular-karsinom-kapsamli-klinik-rehber",
+        "baslik": "Hepatosellüler Karsinom (HCC): Etiyoloji, Tanı, Evreleme ve Tedavi",
+        "eslesen": "Hepatorenal Sendrom"
       }
     ],
     "esas": [
@@ -7285,14 +7303,6 @@
         "yol": "gastroenteroloji/hepatit-c",
         "baslik": "Hepatit C (HCV): Tanı ve Modern Tedavi",
         "eslesen": "hepatit C",
-        "kaynak": "kavram"
-      }
-    ],
-    "hrs-aki": [
-      {
-        "yol": "gastroenteroloji/siroz-ve-komplikasyonlari",
-        "baslik": "Siroz ve Komplikasyonları",
-        "eslesen": "siroz",
         "kaynak": "kavram"
       }
     ],
@@ -9044,7 +9054,7 @@
     "arac": 281,
     "araciOlanKonu": 356,
     "konusuOlanArac": 176,
-    "bag": 722,
+    "bag": 723,
     "kavramBag": 640
   }
 }
