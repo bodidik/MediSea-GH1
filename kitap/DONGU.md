@@ -870,3 +870,10 @@ Kaynak: MEN tip 1 defteri (13 madde, alıntıyla) + **TEMD Tiroid 2025 Bölüm 1
 - **KAYNAK YOK, çıkarıldı:** "Sipple" adı, "10. kromozom", MEN4 "12p13", GİS gangliyonöromatozisin "megakolon"u, dudak/dil/göz kapağı ayrıntısı, MTK "multifokal, bilateral".
 - Eklendi: Kendini sına (4 soru). Taşma yok (önizleme). Site taranmadı.
 - **Kalan:** s. 46–47 (Kısım 5 açık sayfa). Kısım 5'in s. 48–53'ü bitti.
+
+### Tur 54 — Sınav düzeni · Kısım 5 s. 46–47 açık sayfa (27 Ekim)
+Kaynak: MEN tip 1 defteri, tek soruda 18 madde (alıntıyla; pasajlar tek tek açılmadı).
+- **Birebir:** yaşam beklentisi 55 → en az 70 (Dtsch Arztebl 2024) · menin 610 aa iskele · iki vuruş/LOH · gastrinoma %30–40, insülinoma %10–30 · timik %2–8 (72_EJ25-0110), bronşiyal %5–35 (diagnostics-15-01164) · anjiyofibrom %85–90, kollajenom %70, lipom %30 · subtotal 3–3,5 bez · ECLoma · ailesel tanı ölçütü · NF-pNET %70–80 (Dtsch) / %90 (diagnostics) · gastrinoma %70–100 duodenum, <0,5 cm · insülinoma sporadik çoğul ~%10, nüks 20 yılda %7; MEN1 %30'a dek (UpToDate MEN1) ↔ %86 (UpToDate Insulinoma), nüks %21 · PHPT kadın = erkek, ~20 yıl erken, asimetrik/asenkron · önce paratiroidektomi · transservikal timektomi.
+- **Düzeltilen:** prevalans 2–20 kaynaklar arası sentez → "kaynaklar 2–10 ile 3–20 arasında" notu · DP-NET %30–80 → %30–70 (UpToDate), şekil altına Dtsch %70–100 · PHPT çubuğu %95–100 → >%90 (50–70 yaşa dek; Tur 49) · hipofiz %30–50 → %35–50, "makroadenom %85" çıktı (Tur 52 kaynak farkı) · adrenal %40–73 → %20–60 · şekil kaynağı "premium MEN1 sayfası" → UpToDate/derlemeler · Sayılarla "4,5–5,0 hedef potasyum" (osilodrostat genellemesi, Tur 52) → "≥70 yaş · yaşam beklentisi" · organ şeridi adrenal/mide (%15–70)/meme · genetik test "<30 yaşta multiglandüler" → "<30 yaşta PHPT ya da multiglandüler PHPT" (Brandi 2025, Papalou) · meme "<50 yaş" iki yerde → daha erken başlangıç.
+- Eklendi: s. 47 Kendini sına. Taşma yok (önizleme).
+- **KISIM 5 BİTTİ (s. 46–53).** Site karşılıkları (açık `men1-sendromu`, premium `men1-sendromu`) bu sayılar için taranmadı.
