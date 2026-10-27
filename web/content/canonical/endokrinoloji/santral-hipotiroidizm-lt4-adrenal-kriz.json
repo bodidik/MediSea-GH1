@@ -1,7 +1,7 @@
 {
   "title": "Santral Hipotiroidizmde LT4 Öncesi Adrenal Güvenlik Kuralı (İleri Analiz)",
   "meta": {
-    "updatedAt": "01 Jul 2026",
+    "updatedAt": "27 Eki 2026",
     "tags": ["Endokrinoloji", "Santral Hipotiroidi", "Adrenal Kriz", "Levotiroksin", "Miksödem Koması"],
     "parent": "santral-hipotiroidizm",
     "order": 1,
@@ -22,7 +22,7 @@
     },
     {
       "heading": "🆘 4. Acil Durum Yönetimi: Miksödem Koması Senaryosu",
-      "html": "<div class=\"bg-rose-950 border border-rose-800 p-5 rounded-2xl shadow-xl text-white mb-4\"><h4 class=\"font-black text-rose-400 text-[12px] uppercase tracking-widest mb-2\">Zaman Yoksa: Ampirik Kortikosteroid Şemsiyesi</h4><p class=\"text-[11px] text-rose-100 leading-relaxed\">Hastanın derin hipotiroidi ve bilinç bulanıklığı ile seyreden <strong>miksödem koması</strong> tablosunda acil servise başvurduğu senaryolarda, hipofizer-adrenal aksı test edecek zaman bulunmayabilir. Bu gibi acil durumlarda, eşlik eden olası bir adrenal yetmezlik ekarte edilene kadar, intravenöz (İ.V.) levotiroksin tedavisine ek olarak <strong>profilaktik dozda İ.V. hidrokortizon (genellikle 6-8 saatte bir 50-100 mg)</strong> ampirik olarak başlanması zorunludur.</p></div><div class=\"bg-slate-900 border border-slate-700 p-4 rounded-xl shadow-sm text-white\"><p class=\"text-[11px] text-emerald-400 font-bold mb-1 uppercase tracking-widest\">Özet</p><p class=\"text-[11px] text-slate-300 leading-relaxed\">Santral hipotiroidizmde tiroid hormonunun tek başına verilmesi metabolik hızı ve glukokortikoid tüketimini artırarak hastayı akut adrenal krize sokabileceğinden, tedaviye daima hipofizer-adrenal aksın güvenliğinden emin olunduktan sonra (veya gerekiyorsa glukokortikoid şemsiyesi altında) başlanmalıdır.</p></div>"
+      "html": "<div class=\"bg-rose-950 border border-rose-800 p-5 rounded-2xl shadow-xl text-white mb-4\"><h4 class=\"font-black text-rose-400 text-[12px] uppercase tracking-widest mb-2\">Zaman Yoksa: Ampirik Kortikosteroid Şemsiyesi</h4><p class=\"text-[11px] text-rose-100 leading-relaxed\">Hastanın derin hipotiroidi ve bilinç bulanıklığı ile seyreden <strong>miksödem koması</strong> tablosunda acil servise başvurduğu senaryolarda, hipofizer-adrenal aksı test edecek zaman bulunmayabilir. Bu gibi acil durumlarda, eşlik eden olası bir adrenal yetmezlik ekarte edilene kadar, intravenöz (İ.V.) levotiroksin tedavisine ek olarak <strong>stres dozunda İ.V. hidrokortizon (TEMD 2025; Harrison: 6 saatte bir 50 mg)</strong> ampirik olarak başlanması zorunludur.</p></div><div class=\"bg-slate-900 border border-slate-700 p-4 rounded-xl shadow-sm text-white\"><p class=\"text-[11px] text-emerald-400 font-bold mb-1 uppercase tracking-widest\">Özet</p><p class=\"text-[11px] text-slate-300 leading-relaxed\">Santral hipotiroidizmde tiroid hormonunun tek başına verilmesi metabolik hızı ve glukokortikoid tüketimini artırarak hastayı akut adrenal krize sokabileceğinden, tedaviye daima hipofizer-adrenal aksın güvenliğinden emin olunduktan sonra (veya gerekiyorsa glukokortikoid şemsiyesi altında) başlanmalıdır.</p></div>"
     }
   ]
 }

@@ -164,7 +164,7 @@
       },
       "dogru": "A",
       "aciklama_kisa": "Santral hipotiroidili gebede sT4 gebeliğe özgü referansın üst çeyreğinde tutulmalıdır (TSH kullanılmaz). sT4 1.05 ng/dL referansın alt yarısında → doz artışı gerekir.",
-      "aciklama_detay": "Gebelikte tiroid hormon ihtiyacı artar (plasental T4 metabolizması, anne-fetus T4 transferi); normal gebelerde de LT4 dozu yaklaşık %25–50 artırılır. Santral hipotiroidili gebelerde TSH kullanılamadığından doz ayarlaması yalnızca sT4'e göre yapılır. Hedef: sT4 gebeliğe özgü normal referans aralığının üst çeyreğinde (upper quartile). Bu hastada sT4 1.05 ng/dL, 0.80–1.60 aralığının alt yarısında; üst çeyrek >1.35 ng/dL. Fetal tiroid hormona bağımlı nörolojik gelişim için annenin sT4 yeterli düzeyde olmalı.",
+      "aciklama_detay": "Gebelikte tiroid hormon ihtiyacı artar (plasental T4 metabolizması, anne-fetus T4 transferi); normal gebelerde de LT4 dozu yaklaşık %25–50 artırılır. Santral hipotiroidili gebelerde TSH kullanılamadığından doz ayarlaması yalnızca sT4'e göre yapılır. Hedef: sT4 gebeliğe özgü normal referans aralığının üst çeyreğinde (upper quartile; TEMD 2025 de %25–50 doz artışıyla aynı hedefi verir, Johannsson ve Ragnarsson orta-üst bölüm der). Bu hastada sT4 1.05 ng/dL, 0.80–1.60 aralığının alt yarısında; üst çeyrek >1.35 ng/dL. Fetal tiroid hormona bağımlı nörolojik gelişim için annenin sT4 yeterli düzeyde olmalı.",
       "secenekAciklamalari": {
         "A": "DOGRU — Santral hipotiroidili gebede sT4 üst çeyrekte tutulması kılavuz önerisidir. sT4 1.05 ng/dL referansın altında — doz artırılmalıdır.",
         "B": "YANLIS — Gebelikte santral hipotiroidide TSH takibi kullanılmaz. TSH'ı normalize etmeye çalışmak dozu azaltır; bu fetüs için yetersiz T4 anlamına gelir.",

@@ -388,7 +388,7 @@
           "renk": "sari",
           "hucreler": [
             "Gebelikte Yönetim ★",
-            "LT4 dozu %25–50 artır; sT4'ü gebeliğe özgü referans aralığının üst çeyreğinde (upper quartile) tut",
+            "LT4 dozu %25–50 artır; sT4'ü gebeliğe özgü referans aralığının üst çeyreğinde (upper quartile) tut (TEMD 2025; Johannsson ve Ragnarsson: ~%25, orta-üst bölüm)",
             "TSH kullanılamaz; fetüs tiroid hormona muhtaç — doz yetersizliği nörolojik zarar riski taşır"
           ]
         }
@@ -420,7 +420,7 @@
     {
       "tip": "bilgi_kutusu",
       "tur": "pratik",
-      "metin": "Pratik Özet — Santral Hipotiroidide 5 Altın Kural: (1) sT4↓ + TSH düşük/normal/hafif↑ → santral hipotiroidi düşün; TSH'ı normal diye geçme. (2) LT4'ten önce adrenal yetmezliği dışla — yoksa ölümcül adrenal kriz. (3) Takipte TSH kullanma — sT4'ü üst yarıda tut. (4) Guatr yok + multiple hipofizer eksiklik → MRG al. (5) Gebelikte sT4 üst çeyreğinde tut, doz %25–50 artır."
+      "metin": "Pratik Özet — Santral Hipotiroidide 5 Altın Kural: (1) sT4↓ + TSH düşük/normal/hafif↑ → santral hipotiroidi düşün; TSH'ı normal diye geçme. (2) LT4'ten önce adrenal yetmezliği dışla — yoksa ölümcül adrenal kriz. (3) Takipte TSH kullanma — sT4'ü üst yarıda tut. (4) Guatr yok + multiple hipofizer eksiklik → MRG al. (5) Gebelikte sT4 üst çeyreğinde tut, doz %25–50 artır (TEMD 2025)."
     }
   ]
 }
