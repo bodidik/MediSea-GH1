@@ -75,6 +75,11 @@
     ],
     "endokrinoloji/hiperparatiroidizm": [
       {
+        "slug": "cccr",
+        "name": "Kalsiyum/Kreatinin Klirens Oranı",
+        "eslesen": "Kalsiyum/Kreatinin Klirens Oranı"
+      },
+      {
         "slug": "egfr",
         "name": "eGFR (CKD-EPI 2021)",
         "eslesen": "eGFR"
@@ -83,12 +88,6 @@
         "slug": "qtc",
         "name": "QTc Hesaplayıcı",
         "eslesen": "QTc"
-      },
-      {
-        "slug": "cccr",
-        "name": "Kalsiyum/Kreatinin Klirens Oranı",
-        "eslesen": "hiperparatiroid",
-        "kaynak": "kavram"
       },
       {
         "slug": "corrected-calcium",
@@ -5008,6 +5007,13 @@
         "eslesen": "Status Epileptikus"
       }
     ],
+    "cccr": [
+      {
+        "yol": "endokrinoloji/hiperparatiroidizm",
+        "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları",
+        "eslesen": "Kalsiyum/Kreatinin Klirens Oranı"
+      }
+    ],
     "egfr": [
       {
         "yol": "nefroloji/ardisik-nefron-blokaji-advor-clorotic",
@@ -6976,14 +6982,6 @@
         "yol": "nefroloji/kbh-mkb-kapsamli-inceleme",
         "baslik": "KBH-Mineral ve Kemik Bozukluğu (CKD-MBD): Kapsamlı İnceleme",
         "eslesen": "KBH",
-        "kaynak": "kavram"
-      }
-    ],
-    "cccr": [
-      {
-        "yol": "endokrinoloji/hiperparatiroidizm",
-        "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları",
-        "eslesen": "hiperparatiroid",
         "kaynak": "kavram"
       }
     ],
@@ -9048,6 +9046,6 @@
     "araciOlanKonu": 355,
     "konusuOlanArac": 176,
     "bag": 722,
-    "kavramBag": 640
+    "kavramBag": 639
   }
 }

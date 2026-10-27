@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 620" width="640" height="620" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Ameliyat sırası PTH ölçümü: neden 10. dakika?</title>
+<desc id="d">İntakt PTH'nin yarı ömrü 2–4 dakika olduğu için hasta bez çıkarılınca PTH dakikalar içinde düşer. Kabul edilen kür ölçütü, eksizyondan sonra bazal değere göre yüzde 50'den fazla düşüştür; bazı merkezler değerin normal aralığa inmesini de ister (ikili ölçüt). Kan 5. ve 10. dakikada alınır. Tek adenomda eğri hızla düşer; ilk bez çıkarıldıktan sonra PTH uygun düşmezse çoklu bez hastalığı tanısı konur ve odaklı girişim iki taraflı eksplorasyona çevrilir. İki taraflı eksplorasyonun kür oranı yüzde 95–99'dur.</desc>
+<!-- 14 sn, tek seferlik; son kare = statik şemanın tamamı. Hareket azaltmada animasyon çalışmaz. Üretici: hcc-semalar.cjs -->
+<style>
+.a{animation-duration:14s;animation-iteration-count:1;animation-timing-function:ease-in-out;animation-fill-mode:both}
+.m{transform-box:fill-box;transform-origin:center}
+.ciz{stroke-dasharray:1}
+.eks{animation-name:eks}@keyframes eks{0%,0%{opacity:0;transform:translateY(7px)}3%,100%{opacity:1;transform:none}}
+.eks .ciz{animation-name:eksc}@keyframes eksc{0%,0%{stroke-dashoffset:1}4%,100%{stroke-dashoffset:0}}
+.esik{animation-name:esik}@keyframes esik{0%,12%{opacity:0;transform:translateY(7px)}15%,100%{opacity:1;transform:none}}
+.esik .ciz{animation-name:esikc}@keyframes esikc{0%,12%{stroke-dashoffset:1}16%,100%{stroke-dashoffset:0}}
+.tek{animation-name:tek}@keyframes tek{0%,24%{opacity:0;transform:translateY(7px)}27%,100%{opacity:1;transform:none}}
+.tek .ciz{animation-name:tekc}@keyframes tekc{0%,24%{stroke-dashoffset:1}28%,100%{stroke-dashoffset:0}}
+.cok{animation-name:cok}@keyframes cok{0%,46%{opacity:0;transform:translateY(7px)}49%,100%{opacity:1;transform:none}}
+.cok .ciz{animation-name:cokc}@keyframes cokc{0%,46%{stroke-dashoffset:1}50%,100%{stroke-dashoffset:0}}
+.karar{animation-name:karar}@keyframes karar{0%,66%{opacity:0;transform:translateY(7px)}69%,100%{opacity:1;transform:none}}
+.karar .ciz{animation-name:kararc}@keyframes kararc{0%,66%{stroke-dashoffset:1}70%,100%{stroke-dashoffset:0}}
+.son{animation-name:son}@keyframes son{0%,82%{opacity:0;transform:translateY(7px)}85%,100%{opacity:1;transform:none}}
+.son .ciz{animation-name:sonc}@keyframes sonc{0%,82%{stroke-dashoffset:1}86%,100%{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){.a{animation:none!important}.hareket{display:none}}
+</style>
+<defs>
+<marker id="ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+<marker id="okY" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker>
+<marker id="okM" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0284c7"/></marker>
+<marker id="okK" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+<marker id="tbar" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="11" markerHeight="11" orient="auto"><path d="M5,0 L5,10" stroke="#dc2626" stroke-width="2.6"/></marker>
+</defs>
+<rect width="640" height="620" fill="#ffffff"/>
+
+<text x="320" y="26" font-size="13" font-weight="800" text-anchor="middle" fill="#0f172a">Eksizyon sonrası PTH (% bazal)</text>
+<g class="a eks"><line x1="90" y1="330" x2="600" y2="330" stroke="#475569" stroke-width="1.6"/><line x1="90" y1="330" x2="90" y2="60" stroke="#475569" stroke-width="1.6"/><text x="82" y="334" font-size="10.5" font-weight="500" text-anchor="end" fill="#64748b">%0</text><text x="82" y="225.66666666666666" font-size="10.5" font-weight="500" text-anchor="end" fill="#64748b">%50</text><text x="82" y="117.33333333333331" font-size="10.5" font-weight="500" text-anchor="end" fill="#64748b">%100</text><text x="90" y="348" font-size="10.5" font-weight="500" text-anchor="middle" fill="#64748b">0 dk</text><text x="217.5" y="348" font-size="10.5" font-weight="500" text-anchor="middle" fill="#64748b">5 dk</text><text x="345" y="348" font-size="10.5" font-weight="500" text-anchor="middle" fill="#64748b">10 dk</text><text x="472.5" y="348" font-size="10.5" font-weight="500" text-anchor="middle" fill="#64748b">15 dk</text><text x="600" y="348" font-size="10.5" font-weight="500" text-anchor="middle" fill="#64748b">20 dk</text><line x1="217.5" y1="330" x2="217.5" y2="70" stroke="#e2e8f0" stroke-dasharray="4 4"/><line x1="345" y1="330" x2="345" y2="70" stroke="#cbd5e1" stroke-dasharray="4 4"/><text x="345" y="66" font-size="10.5" font-weight="700" text-anchor="middle" fill="#475569">kan örneği: 5. ve 10. dk</text></g>
+<g class="a esik"><line x1="90" y1="221.66666666666666" x2="600" y2="221.66666666666666" stroke="#16a34a" stroke-width="2" stroke-dasharray="7 4"/><text x="596" y="215.66666666666666" font-size="11" font-weight="800" text-anchor="end" fill="#15803d">&gt;%50 düşüş = kür ölçütü</text></g>
+<g class="a tek"><path class="a ciz" pathLength="1" d="M90.0,113.3 L141.0,174.0 L192.0,221.7 L243.0,249.8 L294.0,267.2 L345.0,278.0 L447.0,286.7 L600.0,291.0" stroke="#16a34a" stroke-width="3.2" fill="none"/><text x="396" y="306.6666666666667" font-size="11.5" font-weight="800" text-anchor="middle" fill="#15803d">tek adenom çıkarıldı</text></g>
+<g class="a cok"><path class="a ciz" pathLength="1" d="M90.0,113.3 L141.0,130.7 L192.0,143.7 L243.0,152.3 L294.0,156.7 L345.0,161.0 L447.0,163.2 L600.0,165.3" stroke="#dc2626" stroke-width="3.2" fill="none"/><text x="421.5" y="153.16666666666666" font-size="11.5" font-weight="800" text-anchor="middle" fill="#b91c1c">düşmüyor → başka hasta bez var</text></g>
+<g class="a karar"><rect x="20" y="372" width="295" height="100" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="1.6"/><text x="167.5" y="401.5" font-size="13.5" font-weight="800" text-anchor="middle" fill="#14532d">Yeterli düşüş</text><text x="167.5" y="418.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#14532d">odaklı (seçici) paratiroidektomi biter</text><text x="167.5" y="435.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#14532d">bazı merkezler: değer normal</text><text x="167.5" y="452.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#14532d">aralıkta da olmalı (ikili ölçüt)</text><rect x="325" y="372" width="295" height="100" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/><text x="472.5" y="401.5" font-size="13.5" font-weight="800" text-anchor="middle" fill="#7f1d1d">Yetersiz düşüş</text><text x="472.5" y="418.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#7f1d1d">çoklu bez hastalığı</text><text x="472.5" y="435.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#7f1d1d">iki taraflı eksplorasyona</text><text x="472.5" y="452.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#7f1d1d">dönüştür · kür %95–99</text></g>
+<g class="a son"><rect x="20" y="486" width="600" height="120" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/><text x="320" y="525.5" font-size="13" font-weight="800" text-anchor="middle" fill="#1e293b">Mantık: PTH yarı ömrü 2–4 dk</text><text x="320" y="542.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">Kaynak bez çıkınca 10 dakikada birkaç yarı ömür geçer → değer yarıdan aşağı iner</text><text x="320" y="559.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">Tek pozitif görüntüleme çoklu bez hastalığını dışlamaz — özellikle yeniden ameliyatta</text><text x="320" y="576.5" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">Negatif görüntülemeli hastada deneyimli cerrahla iki taraflı eksplorasyon yine kür sağlayabilir</text></g>
+
+</svg>

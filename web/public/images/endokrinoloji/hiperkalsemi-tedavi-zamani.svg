@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 620" width="640" height="620" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Ağır hiperkalsemide tedavinin zaman çizelgesi</title>
+<desc id="d">Hiperkalsemi hafif (12 mg/dL altı), orta (12–14) ve ağır (14 mg/dL üstü) diye ayrılır. Ağır ya da semptomatik hiperkalsemide üç tedavi birlikte başlanır çünkü etki süreleri farklıdır. İzotonik salin saatte 200–300 mL ile başlanır, idrar 100–150 mL/saat tutulur. Kalsitonin 4 IU/kg kas içi ya da deri altı verilir, 4–6 saatte yanıt değerlendirilir, 12 saatte bir tekrarlanır; 48 saatten sonra taşifilaksi gelişir; burun yolu etkisizdir. Zoledronik asit 4 mg 15 dakikada damardan verilir, en yüksek etkisi 2–4. gündedir. Bifosfonat kontrendikeyse denosumab 60 mg; zoledronata dirençlide 120 mg, gerekirse 2–7 gün sonra tekrar. Kalsiyum 18–20 mg/dL ve nörolojik bulgu ya da sıvı verilemeyen böbrek veya kalp yetmezliğinde hemodiyaliz.</desc>
+<!-- 14 sn, tek seferlik; son kare = statik şemanın tamamı. Hareket azaltmada animasyon çalışmaz. Üretici: hcc-semalar.cjs -->
+<style>
+.a{animation-duration:14s;animation-iteration-count:1;animation-timing-function:ease-in-out;animation-fill-mode:both}
+.m{transform-box:fill-box;transform-origin:center}
+.ciz{stroke-dasharray:1}
+.eks{animation-name:eks}@keyframes eks{0%,0%{opacity:0;transform:translateY(7px)}3%,100%{opacity:1;transform:none}}
+.eks .ciz{animation-name:eksc}@keyframes eksc{0%,0%{stroke-dashoffset:1}4%,100%{stroke-dashoffset:0}}
+.s{animation-name:s}@keyframes s{0%,12%{opacity:0;transform:translateY(7px)}15%,100%{opacity:1;transform:none}}
+.s .ciz{animation-name:sc}@keyframes sc{0%,12%{stroke-dashoffset:1}16%,100%{stroke-dashoffset:0}}
+.k{animation-name:k}@keyframes k{0%,26%{opacity:0;transform:translateY(7px)}29%,100%{opacity:1;transform:none}}
+.k .ciz{animation-name:kc}@keyframes kc{0%,26%{stroke-dashoffset:1}30%,100%{stroke-dashoffset:0}}
+.z{animation-name:z}@keyframes z{0%,42%{opacity:0;transform:translateY(7px)}45%,100%{opacity:1;transform:none}}
+.z .ciz{animation-name:zc}@keyframes zc{0%,42%{stroke-dashoffset:1}46%,100%{stroke-dashoffset:0}}
+.d{animation-name:d}@keyframes d{0%,58%{opacity:0;transform:translateY(7px)}61%,100%{opacity:1;transform:none}}
+.d .ciz{animation-name:dc}@keyframes dc{0%,58%{stroke-dashoffset:1}62%,100%{stroke-dashoffset:0}}
+.h{animation-name:h}@keyframes h{0%,70%{opacity:0;transform:translateY(7px)}73%,100%{opacity:1;transform:none}}
+.h .ciz{animation-name:hc}@keyframes hc{0%,70%{stroke-dashoffset:1}74%,100%{stroke-dashoffset:0}}
+.son{animation-name:son}@keyframes son{0%,84%{opacity:0;transform:translateY(7px)}87%,100%{opacity:1;transform:none}}
+.son .ciz{animation-name:sonc}@keyframes sonc{0%,84%{stroke-dashoffset:1}88%,100%{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){.a{animation:none!important}.hareket{display:none}}
+</style>
+<defs>
+<marker id="ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+<marker id="okY" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker>
+<marker id="okM" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0284c7"/></marker>
+<marker id="okK" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+<marker id="tbar" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="11" markerHeight="11" orient="auto"><path d="M5,0 L5,10" stroke="#dc2626" stroke-width="2.6"/></marker>
+</defs>
+<rect width="640" height="620" fill="#ffffff"/>
+
+<text x="320" y="26" font-size="13" font-weight="800" text-anchor="middle" fill="#0f172a">Etkinin başlangıcı ve süresi (saat)</text>
+<g class="a eks"><line x1="90" y1="330" x2="600" y2="330" stroke="#475569" stroke-width="1.6"/><line x1="90" y1="60" x2="90" y2="330" stroke="#f1f5f9"/><text x="90" y="348" font-size="10.5" font-weight="500" text-anchor="middle" fill="#64748b">0 sa</text><line x1="217.5" y1="60" x2="217.5" y2="330" stroke="#f1f5f9"/><text x="217.5" y="348" font-size="10.5" font-weight="500" text-anchor="middle" fill="#64748b">24 sa</text><line x1="345" y1="60" x2="345" y2="330" stroke="#f1f5f9"/><text x="345" y="348" font-size="10.5" font-weight="500" text-anchor="middle" fill="#64748b">48 sa</text><line x1="472.5" y1="60" x2="472.5" y2="330" stroke="#f1f5f9"/><text x="472.5" y="348" font-size="10.5" font-weight="500" text-anchor="middle" fill="#64748b">72 sa</text><line x1="600" y1="60" x2="600" y2="330" stroke="#f1f5f9"/><text x="600" y="348" font-size="10.5" font-weight="500" text-anchor="middle" fill="#64748b">96 sa</text></g>
+<g class="a s"><rect x="90" y="70" width="510.0" height="26" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.6"/><text x="82" y="88" font-size="12" font-weight="800" text-anchor="end" fill="#0c4a6e">İzotonik salin</text><text x="96" y="88" font-size="10.5" font-weight="700" text-anchor="start" fill="#0c4a6e">200–300 mL/sa → idrar 100–150 mL/sa</text></g>
+<g class="a k"><rect x="111.25" y="124" width="233.8" height="26" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/><text x="82" y="142" font-size="12" font-weight="800" text-anchor="end" fill="#78350f">Kalsitonin</text><text x="117.25" y="142" font-size="10.5" font-weight="700" text-anchor="start" fill="#78350f">4 IU/kg IM/SC · 4–6 sa'te yanıt</text><text x="351" y="142" font-size="10.5" font-weight="800" text-anchor="start" fill="#b45309">48 sa: taşifilaksi</text></g>
+<g class="a z"><rect x="249.375" y="178" width="350.6" height="26" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.6"/><text x="82" y="196" font-size="12" font-weight="800" text-anchor="end" fill="#14532d">Zoledronat</text><text x="255.375" y="196" font-size="10.5" font-weight="700" text-anchor="start" fill="#14532d">4 mg IV / 15 dk · zirve 2–4. gün</text></g>
+<g class="a d"><rect x="345" y="232" width="255.0" height="26" rx="8" fill="#f3e8ff" stroke="#9333ea" stroke-width="1.6"/><text x="82" y="250" font-size="12" font-weight="800" text-anchor="end" fill="#581c87">Denosumab</text><text x="351" y="250" font-size="10.5" font-weight="700" text-anchor="start" fill="#581c87">60 mg (bifosfonat KE) · 120 mg (dirençli)</text></g>
+<g class="a h"><rect x="90" y="286" width="127.5" height="26" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/><text x="82" y="304" font-size="12" font-weight="800" text-anchor="end" fill="#7f1d1d">Hemodiyaliz</text><text x="96" y="304" font-size="10.5" font-weight="700" text-anchor="start" fill="#7f1d1d">Ca 18–20 + nörolojik</text><text x="223.5" y="304" font-size="10.5" font-weight="500" text-anchor="start" fill="#7f1d1d">ya da sıvı verilemiyorsa</text></g>
+<g class="a son"><rect x="20" y="372" width="600" height="232" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/><text x="320" y="425" font-size="13" font-weight="800" text-anchor="middle" fill="#1e293b">Ağırlık ve tedavi</text><text x="320" y="442" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">Hafif (&lt;12 mg/dL), asemptomatik: acil tedavi gerekmez — nedeni düzelt</text><text x="320" y="459" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">Orta (12–14): kronik ve hafif bulguda acil değil; ani yükselişte ağır gibi</text><text x="320" y="476" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">Ağır (&gt;14 mg/dL): salin + kalsitonin + IV bifosfonat birlikte</text><text x="320" y="493" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">Neden üçü birden? Hız farklı: kalsitonin saatler, bifosfonat günler</text><text x="320" y="510" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">Loop diüretiği yalnız sıvı yüklenince ve böbrek/kalp yetmezliğinde</text><text x="320" y="527" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">Kalsitonin burundan verilmez — hiperkalsemide etkisiz</text><text x="320" y="544" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">Denosumab böbrekten atılmaz ama hipokalsemi riski bifosfonattan yüksek</text><text x="320" y="561" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e293b">Paratiroid krizi: Ca genelde &gt;15 mg/dL + belirgin SSS bulguları → cerrahiye köprü</text></g>
+
+</svg>
