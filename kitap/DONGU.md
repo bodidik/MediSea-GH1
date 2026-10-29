@@ -1045,3 +1045,11 @@ Kaynak: TEMD 2025 Böl. 5 (5.5, 5.9.3, TEMD Önerileri) + UpToDate *Treatment of
 - s. 109: kemik ajanı ekleme eşiği "T ≤−2,5 + bir kırık" → TEMD (≥2 yıl TRT’ye rağmen T <−2,5 + risk; tek başına T <−3,5).
 - s. 110: denosumab "ileri KBY’de ilk basamak" → TEMD: bisfosfonat intoleransı, renal disfonksiyon, ADT (Sınıf B); anabolik → TEMD teriparatid ≥2 radyolojik kırık (Sınıf A) + UpToDate çok yüksek risk (T ≤−3,0; T ≤−2,5 + kırık; ağır/çoklu vertebra kırığı; tedavi altında kırık).
 - Doğrulanmadı ama bırakıldı: zoledronik 5 mg/yıl, denosumab 60 mg/6 ay (standart doz; ilgili UpToDate başlığı açılmadı).
+
+## Tur 77 — Kısım 11 s. 111–114 ADT, nakil, vaka, kırk soru (29 Eki 2026) → KISIM 11 TAMAM
+
+Kaynak: TEMD 2025 Böl. 5 + UpToDate *Prevention and treatment of osteoporosis after solid organ or stem cell transplantation* (defter).
+- s. 111: ilaç tatili "~5 yıl" → TEMD alendronat 5, zoledronik 3 yıl; "sınav gecesi %39" → %37,5.
+- s. 112 doğrulandı (UpToDate): kayıp ilk 3–6 ayda en hızlı; takrolimus siklosporinden hafif; MMF/rapamisin/azatiyoprin sıçanda etkisiz; kalp naklinde zoledronik +%1,6; kalsitriol 0,5 µg + Ca 1000 mg; 30 dk × 3/hafta egzersiz; KrKl <30–35’te bisfosfonat genellikle önerilmez (kitap "mutlak kontrendike" diyordu).
+- Düzeltildi/çıktı: "kreatinin >2 / GFR <%30 IV doz yarıya" (kaynaksız); Ca 1200–1500, D >30 ng/mL, 1500–2000 IU (kaynaksız) → UpToDate yaşa göre referans Ca (KBH’de 800–1000), D 800 IU, <20 ng/mL’de yüksek doz; "profilaksi ilk ay" çıktı; akciğer nakli → UpToDate: nakilden ±6 ay içinde zoledronik alanlarda 3 yılda KMY kazancı; "mTOR inhibitörleri kılavuzlarda riskli" UpToDate ile ÇELİŞİYORDU (rapamisin sıçanda etkisiz) → çıktı.
+- s. 113–114 senaryolar ve 40 sorudan 17’si eşitlendi.
