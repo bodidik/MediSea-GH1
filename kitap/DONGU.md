@@ -974,3 +974,10 @@ Kaynak: TEMD Tiroid 2025 — Bölüm 10 (tiroid fırtınası, s. 112) ve Bölüm
 - **Düzeltilen:** hidrokortizon yalnız UpToDate (300 → 100 mg/8 sa) yazıyordu → **TEMD: 50–100 mg IV, 6–8 saatte** önde, UpToDate yanında (s. 9 ve s. 84; Tur 44 notu s. 9'da uygulanmamış kalmıştı) · propranolol "4–6 saatte" → **TEMD: 60–80 mg, 6 saatte** · esmolol TEMD dozu (50–100 µg/kg/dk) eklendi (s. 84).
 - **Birebir:** PTU 500–1000 mg yükleme → 250 mg/4 sa; MMI 80–120 mg/gün (= 20 mg 4–6 saatte) · amiodaron Tip 1 ortalama 3,5 ay, Tip 2 ortalama 30 ay ve kesildikten sonra · Tip 2'de prednizolon 30–40 mg/gün.
 - Taşma yok. **Kalan Kısım 9:** s. 83 (TRAb ≥0,9 → %80–85 nüks; beta bloker dozları), 85–87.
+
+### Tur 68 — Sınav düzeni · Kısım 9 s. 83, 85 (+ s. 8) (29 Ekim)
+Kaynak: TEMD Tiroid 2025 (Graves tedavisi ve gebelik bölümleri; yerel metin).
+- **Birebir:** atenolol 25–50 mg/gün · PTU:MMI 15–20:1 · hCG zirvesi 10–12. hafta, GTT 14–18. haftada düzelir · MMI embriyopatisi bulguları (aplasia cutis, koanal/özofageal atrezi, karın duvarı defektleri, VSD) · gebe/emzirene iyot 100–150 µg/gün.
+- **Düzeltilen:** propranolol "40–160 mg/gün" → **TEMD 40–120 mg/gün** (s. 8 ve s. 83; 160 mg TEMD'de yalnız T4→T3 bağlamında) · gebelikte aşikâr hipertiroidi "%0,1–0,4" → **%0,1–1**.
+- **Çıkarılan (TEMD metninde yok; UpToDate gebelik metni bu turda açılmadı):** "18. ayda TRAb ≥0,9 IU/L → %80–85 nüks" (yerine niteliksel cümle) · Graves "%85–90" · "gebelerin %10–20'sinde TSH baskılanması" · embriyopati "6–10. hafta %2–4".
+- Taşma yok. **Kalan Kısım 9:** s. 86 (kırk soru — önceki düzeltmelerle tutarlılık), s. 87 (TEMD başvuru).
