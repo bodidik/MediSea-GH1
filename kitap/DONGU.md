@@ -959,3 +959,11 @@ Kaynak: TEMD Tiroid 2025 (yerel pdftotext) · UpToDate *Diagnosis of hyperthyroi
 - **Düzeltilen:** Graves'te orbitopati "%25–50" → **TEMD: klinik %26, radyolojik %70** · "12–18 ay sonrası relaps %50" → **TEMD: 1 yıl antitiroid sonrası ~yarısı remisyon (%30–70)**.
 - **Çıkarılan (yayın metninde görülmedi):** TRAb "duyarlılık %97,7 · özgüllük %99,5" — 5 yer (s. 4 rozet, s. 75 kapak, s. 76 Sayılarla, s. 79 spot, s. 86 soru). Yerlerine doğrulanmış bilgi (T3/T4 >20, TRAb'nin tiroidektomi sonrası kayboluşu, orbitopati %26). Defter sohbetine yol haritası sorusu soruldu ama sayfa dondu, yanıt alınamadı — kaynak bulunursa geri girer.
 - Taşma yok (s. 75–77). **Kalan Kısım 9:** s. 79–87 sayı denetimi.
+
+### Tur 66 — Sınav düzeni · Kısım 9 s. 79–81 (29 Ekim)
+Kaynak: TEMD Tiroid 2025 Bölüm 11 (Graves orbitopatisi; yerel metin) · ClinicalKey *Long-term thionamide antithyroid treatment of Graves' disease* (defter, yayın metni).
+- **TEMD'de birebir:** CAS ≥3/7 aktif · hafif aktif GO'da 6 ay selenyum · IVMP kümülatif 4,5 g, kür başına 8 g'ı geçmesin (aşılırsa nadiren akut karaciğer yetmezliği) · EUGOGO 2021: IVMP + mikofenolat · teprotumumab (anti-IGF-1R) · rituksimab ikinci basamak.
+- **Düzeltilen:** RAI profilaksisi "1–3 aylık düşük doz oral prednizon zorunlu" → **TEMD: yüksek riskte RAI'den 1–3 gün sonra prednizolon 0,3–0,5 mg/kg/gün, 3 ayda azaltarak; düşük riskte 0,1–0,2 mg/kg, 6 hafta**; RAI sonrası GO progresyonu %15–37 eklendi · DON "1 g/gün ardışık 3 gün, 2 haftada" → **500 mg–1 g, ardışık 3 gün ya da gün aşırı; 1–2 haftada yanıtsızlıkta acil dekompresyon** · orbitopati %25–50 → %26 / radyolojik %70 · "8 g üzeri ölümcül hepatotoksisite + KV risk" → TEMD ifadesi · uzun süreli MMI ">%80 remisyon" → ClinicalKey: "5 yıldan uzun tedavide hastaların çoğunda uzun süreli remisyon, ek büyük yan etki yok"; 1–2 yıl sonrası ~%50 nüks birebir.
+- **Çıkarılan (yayın metninde yok):** GREAT+ HLA/PTPN22 genotipleri ve sınıf nüks oranları (GREAT bileşenleri sayısız kaldı) · pediatrik relaps "%68" · Thy1⁻/Thy1⁺ fibroblast alt tipleri ve CD34⁺ fibrositler (s. 78'deki kararla tutarlı) · MG alt tip oranları (%41/%21, %27/%60, %36/%57) → yerine UpToDate MG %2–17.
+- **Doğrulanamadı, kaldı:** selenyum "200 µg/gün" dozu (TEMD yalnız süre veriyor) · metimazolde "≥30 mg/gün agranülositoz riski" · agranülositoz <500/µL.
+- Taşma yok. **Kalan Kısım 9:** s. 82–87.
