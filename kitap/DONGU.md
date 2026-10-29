@@ -952,3 +952,10 @@ Tirotoksikoz defteri `notebook/b12b0833-…` (43 kaynak: UpToDate başlıkları,
 - **Düzeltilen:** AF "70 yaş üstünde %15–25" → **70–79 yaşta %15** (UpToDate; Kısım 1'de JAMA 2023 %10–25 ayrıca adıyla duruyor) · kore "%1'den az" → **<%2** · MG "%2–17 birliktelik" → **MG hastalarında hipertiroidi %2–17** (yön düzeldi) · "TSH <0,1'de subklinikte bile 3 kat" → 60 yaş üstünde belirgin TSH baskısında ~3 kat.
 - **Çıkarılan (görülmedi):** HLA-DRB1*03/DQA1*05/DQB1*02 (derleme DRB1*08 vb. veriyor) · Th1 paterni · Thy1 fibroblast alt tipleri · damar direnci "%50–70" · NO · TR-α1/β, SERCA2a/fosfolamban ayrıntısı · pretibial miksödem/akropaki satırları · Doppler "inferno" spotu · TRAb–KMY incisi (Graves BMD derlemesi açılmadı).
 - Taşma yok. **Kalan Kısım 9:** 75 kapak, 76–77 açık, 79–87.
+
+### Tur 65 — Sınav düzeni · Kısım 9 s. 75–77 (+ Kısım 1 s. 4 ve s. 86) (29 Ekim)
+Kaynak: TEMD Tiroid 2025 (yerel pdftotext) · UpToDate *Diagnosis of hyperthyroidism*, *Thyroid storm* (defter, yayın metni).
+- **Birebir:** T3/T4 >20 ng/mcg Graves/toksik adenom (TEMD + UpToDate) · Burch-Wartofsky ≥45 "kuvvetle fırtına", <25 olası değil (UpToDate) · kümülatif 4,5 g IV metilprednizolon (TEMD) · biyotin 5–10 mg/gün, testten en az 2 gün önce kes (TEMD) · subklinik derece 1 TSH 0,1–0,4, derece 2 <0,1 (TEMD).
+- **Düzeltilen:** Graves'te orbitopati "%25–50" → **TEMD: klinik %26, radyolojik %70** · "12–18 ay sonrası relaps %50" → **TEMD: 1 yıl antitiroid sonrası ~yarısı remisyon (%30–70)**.
+- **Çıkarılan (yayın metninde görülmedi):** TRAb "duyarlılık %97,7 · özgüllük %99,5" — 5 yer (s. 4 rozet, s. 75 kapak, s. 76 Sayılarla, s. 79 spot, s. 86 soru). Yerlerine doğrulanmış bilgi (T3/T4 >20, TRAb'nin tiroidektomi sonrası kayboluşu, orbitopati %26). Defter sohbetine yol haritası sorusu soruldu ama sayfa dondu, yanıt alınamadı — kaynak bulunursa geri girer.
+- Taşma yok (s. 75–77). **Kalan Kısım 9:** s. 79–87 sayı denetimi.
