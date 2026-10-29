@@ -1002,3 +1002,11 @@ Kaynak: TEMD Adrenal ve Gonadal 2025 (yerel PDF, 4.5.1–4.5.2, Tablo 4.4) + Feo
 - Çıkarıldı (kaynakta yok): NPV >%99, kreatinin klirensi, 12 saat kısıtlama, BT duyarlılık >%90, "evre 4–5 KBH normetanefrin ~2 kat" (yerine UpToDate hemodiyaliz NE 3×, DA 2×), klonidin 0,3 mg/70 kg.
 - Sınırda yükseklik: TEMD 2025 "<2 kat → test tekrarı"; klonidin TEMD 2022 adıyla kaldı.
 - Açık: s. 93 "TEMD 2022 · 3–4 kat" ↔ TEMD 2025 "2 kat" — s. 93 turunda.
+
+## Tur 72 — s. 91–93 PPGL kapak, açık sayfa, epidemiyoloji (29 Eki 2026)
+
+Kaynak: TEMD Adrenal 2025 (4.1–4.4, Tablo 4.1) + UpToDate *Clinical presentation and diagnosis of pheochromocytoma* metni (defter).
+- Düzeltildi: HT %90–95 → TEMD %80–90; normotansif %5–15 → TEMD %15–40; klasik üçlü %20 → TEMD %40–50 (UpToDate: çoğunda üçü yok); insidans "milyonda 2–8" → TEMD 0,46–0,95/100.000 kişi-yılı; insidentalomada %5–7 → UpToDate ~%3 (TEMD 2022 ~%5); yaş "4.–5. dekat" → TEMD 30–50; "normal metanefrin güvenle dışlar" → TEMD "NPD yüksek, semptomatik hipertansifte büyük ölçüde uzaklaştırır".
+- Çıkarıldı (kaynakta yok): "kalıtsal geçişi en yüksek insan tümörü" (2 yer), mikrofeokromositoma <1 cm, triad bileşen yüzdeleri 80/70/60, paroksizm 15–20 dk (yarı ömür karışması, Tur 70), Geroula skoru, SDHB %35–75, rebound hipoglisemi %4–43. Yerine TEMD: metastaz tanıda %10–20, 5/10 yıl sağkalım %78/%31, fenotip→klinik (Tablo 4.1), "%10 kuralı geçersiz".
+- s. 93 "TEMD 2022 · 3–4 kat" kutusuna TEMD 2025 2 kat eşiği eklendi.
+- Kalan: 7–14 gün blokaj (s. 98 turunda TEMD 2025 ile).
