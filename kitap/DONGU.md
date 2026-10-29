@@ -944,3 +944,11 @@ Kaynak: tirzepatid ürün monografisi (defterde, kaynak görüntüleyici metni).
 - **s. 74:** OKS, parasetamol (AUC değişmez, tekrarlayan dozla etki azalır), kolelitiyaz %1,1 / kolesistit %0,6, +3 atım/dk, 4813 Da, gebelikten 1 ay önce kes, süt verisi yok, organogenezde malformasyon (hayvan) — monografiyle birebir. Değişiklik yalnız SURMOUNT-1 (Tur 62).
 - **s. 69 kapak:** altı kural monografiyle tutuyor (C20/Aib/~5 gün, doz ayarı yok, 2,5 mg tolerabilite, MTK/MEN2, aspirasyon, OKS 4 hafta).
 - Taşma yok. **KISIM 8 TAMAM (s. 69–74).**
+
+### Tur 64 — Sınav düzeni · Kısım 9 (hipertiroidi) s. 78 (29 Ekim)
+Tirotoksikoz defteri `notebook/b12b0833-…` (43 kaynak: UpToDate başlıkları, ClinicalKey ders kitabı bölümleri, Graves tanı kılavuzu, Best Pract Res 2023 derlemesi). Kaynak görüntüleyicide yayın metni okundu; sohbet kullanılmadı.
+- **Ölçüm tuzakları (yeni):** UpToDate metninde bazı sözcükler Kiril benzeri harflerle (homoglif) yazılı — "hуреrthуroiԁiѕm"; İngilizce sözcükle arama kaçırır, RAKAMLA ara. ClinicalKey bölümlerinde rakamlar yine düşmüş ("around __ pct").
+- s. 78 `tur-anlati` → `tur-sinav`. Yayın metninde görülen: TRAb IgG1, tiroidektomi sonrası 18 ayda %70–80'de kaybolur (UpToDate Pathogenesis) · ikiz ~%70, pediatrik risk lokusları HCP5/TNF/TSHR/CTLA4/PTPN22 (Best Pract Res 2023) · TSHR–IGF-1R β-arrestin 1 iskelesi (ClinicalKey GO) · debi %250'ye dek, AF %5–15, KY ~%6 (%94'ünde AF), 60 yaş üstü TSH baskısında AF ~3 kat (UpToDate CV effects) · HVA ↓, Basedow paraplejisi (UpToDate Neurologic).
+- **Düzeltilen:** AF "70 yaş üstünde %15–25" → **70–79 yaşta %15** (UpToDate; Kısım 1'de JAMA 2023 %10–25 ayrıca adıyla duruyor) · kore "%1'den az" → **<%2** · MG "%2–17 birliktelik" → **MG hastalarında hipertiroidi %2–17** (yön düzeldi) · "TSH <0,1'de subklinikte bile 3 kat" → 60 yaş üstünde belirgin TSH baskısında ~3 kat.
+- **Çıkarılan (görülmedi):** HLA-DRB1*03/DQA1*05/DQB1*02 (derleme DRB1*08 vb. veriyor) · Th1 paterni · Thy1 fibroblast alt tipleri · damar direnci "%50–70" · NO · TR-α1/β, SERCA2a/fosfolamban ayrıntısı · pretibial miksödem/akropaki satırları · Doppler "inferno" spotu · TRAb–KMY incisi (Graves BMD derlemesi açılmadı).
+- Taşma yok. **Kalan Kısım 9:** 75 kapak, 76–77 açık, 79–87.
