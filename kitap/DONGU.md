@@ -981,3 +981,8 @@ Kaynak: TEMD Tiroid 2025 (Graves tedavisi ve gebelik bölümleri; yerel metin).
 - **Düzeltilen:** propranolol "40–160 mg/gün" → **TEMD 40–120 mg/gün** (s. 8 ve s. 83; 160 mg TEMD'de yalnız T4→T3 bağlamında) · gebelikte aşikâr hipertiroidi "%0,1–0,4" → **%0,1–1**.
 - **Çıkarılan (TEMD metninde yok; UpToDate gebelik metni bu turda açılmadı):** "18. ayda TRAb ≥0,9 IU/L → %80–85 nüks" (yerine niteliksel cümle) · Graves "%85–90" · "gebelerin %10–20'sinde TSH baskılanması" · embriyopati "6–10. hafta %2–4".
 - Taşma yok. **Kalan Kısım 9:** s. 86 (kırk soru — önceki düzeltmelerle tutarlılık), s. 87 (TEMD başvuru).
+
+### Tur 69 — Sınav düzeni · Kısım 9 s. 86–87 (29 Ekim) — KISIM 9 TAMAM
+- **s. 87** baştan TEMD 2025'ten derlenmiş; Tur 64–68'de okunan TEMD metniyle tutuyor (orbitopati %26 / radyolojik %70, remisyon ~%50 (%30–70), MMI başlangıç dozları, 15–20:1, izlem aralıkları) — değişiklik yok.
+- **s. 86 (kırk soru)** önceki turların düzeltmeleriyle eşitlendi: "orbitopati %25–50" sorusu → "RAI sonrası GO progresyonu %15–37 (TEMD)" · DON yanıtı → 500 mg–1 g × 3 gün, 1–2 haftada dekompresyon · "Graves (%85–90)" → Graves · "embriyopati 6–10. hafta %2–4" → tipik bulgu sorusu.
+- **Kısım 9 açık kalanlar:** TRAb %97,7/%99,5 kaynağı (bulunursa geri girer) · selenyum 200 µg dozu · MMI ≥30 mg agranülositoz · gebelik sayıları (Graves %85–90, embriyopati %2–4) UpToDate gebelik metniyle sınanabilir · Jod-Basedow "2–12 hafta" (Tur 44: defterde "haftalar ya da aylar").
