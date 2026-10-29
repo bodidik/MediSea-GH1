@@ -1035,3 +1035,13 @@ Kaynak: Osteoporozis defteri → `OSTEPOROZ_nisan2025.pdf` (TEMD 2025, Bölüm 5
 - Doğrulandı: %40–60 sebep (TEMD; aynı bölüm %40–60’ında neden bulunamayabilir de diyor — ikisi de yazıldı), T <−3,5 / 2 yıl TRT + T <−2,5 (TEMD), FRAX %3/%20, kalsiyum 1000/1200, D vit 800–1500 IU (öneri; metin 600–800), 70 yaş KMY, TRT eşiği 200 ng/dL, genç kadın veritabanı (TEMD); östradiol 10–15 pg/mL, Testosterone Trials 91/64 HR 1,43, ~%60 bırakma (UpToDate).
 - Düzeltildi: "9 milyon kırığın %39’u erkekte" ve "kalça kırığı sonrası mortalite 2–3 kat" (kaynakta yok) → TEMD: ≥60 yaş kalça kırığı sonrası 1 yıllık ölüm erkek %37,5, kadın %28,2; E:K kalça kırığı 60–69 yaş 1:4,5. "Pik insidans ~10 yıl geç" çıktı. Boy kaybı "4–6 cm / 2–3 cm" → TEMD son 5 yılda >2–3 cm (UpToDate ≥1,5 inç KMY endikasyonu). <50 yaş "Z ≤−2,0" → TEMD: Z tek başına yetmez, kırık + risk faktörü. İzlem "1–2 yıl" → TEMD tedavide yılda bir, teriparatid 6 ay, GC 6–12 ay, tedavisiz >70 yaş 2 yıl (s. 105 ve 109’daki kopya). "Testosteron <200 → yıkım hızlanır" eşiği kaynakta kemik için değil TRT için; kemik eşiği yalnız östradiol. "En sık iyatrojenik GC" → TEMD’nin sık nedenler listesi. Giriş cümlesi "kırıkların büyük bölümü erkekte" çıktı.
 - Sıradaki: s. 107–114 (sekonder nedenler, tedavi, ADT, nakil, vaka, kırk soru).
+
+## Tur 76 — Kısım 11 s. 107–110 erkek osteoporozu laboratuvar/tanı/tedavi (29 Eki 2026)
+
+Kaynak: TEMD 2025 Böl. 5 (5.5, 5.9.3, TEMD Önerileri) + UpToDate *Treatment of osteoporosis in men*.
+- s. 107 panel TEMD 5.5’e çekildi: Ca, kreatinin, KCFT, 25(OH)D, TSH, PTH, TKS, total testosteron, **idrar kalsiyum atılımı** ilk panelde (kitap "şüpheye göre" diyordu); fosfor/albümin çıktı; kemik döngü belirteçleri tanıda önerilmez. "PSA sık çeldirici" → "TEMD listesinde yok". "En sık iyatrojenik GC", "senil/idiyopatik <70" kaynaksız → TEMD sık nedenler + "%40–60’ında neden bulunamayabilir".
+- TEMD İÇ ÇELİŞKİ: izlem — bölüm 5.10 "tedavide yılda bir", TEMD Önerileri "1–2 yıl arayla". Tur 75’in "yılda bir"i ikisini birlikte verecek şekilde düzeltildi (s. 105, 108).
+- s. 108: <50 yaş Z ≤−2,0 → TEMD; boy kaybı spotu → TEMD son 5 yılda >2–3 cm.
+- s. 109: kemik ajanı ekleme eşiği "T ≤−2,5 + bir kırık" → TEMD (≥2 yıl TRT’ye rağmen T <−2,5 + risk; tek başına T <−3,5).
+- s. 110: denosumab "ileri KBY’de ilk basamak" → TEMD: bisfosfonat intoleransı, renal disfonksiyon, ADT (Sınıf B); anabolik → TEMD teriparatid ≥2 radyolojik kırık (Sınıf A) + UpToDate çok yüksek risk (T ≤−3,0; T ≤−2,5 + kırık; ağır/çoklu vertebra kırığı; tedavi altında kırık).
+- Doğrulanmadı ama bırakıldı: zoledronik 5 mg/yıl, denosumab 60 mg/6 ay (standart doz; ilgili UpToDate başlığı açılmadı).
