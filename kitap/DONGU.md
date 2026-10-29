@@ -936,3 +936,11 @@ Tirzepatide defteri `notebook/0d7cc224-679b-4a6e-a3fb-86d429f93132`: PubMed öze
 - **Çıkarılan (yayın metninde görülmedi):** baş başa meta-analiz %−11,4 / %−7,3 / −4,84 kg (şekil çubukları ve altyazı) · SURMOUNT-1 "%50,1–56,7'si ≥%20 kayıp" · SC biyoyararlanım "~%80" (monografi cümlesi okunamadı) — Sayılarla'ya yerine +3 atım/dk ve OKS %55–66.
 - s. 72 `tur-anlati` → `tur-sinav` (molekül zinciri, mekanizma, SURPASS, SURMOUNT tablosu, Kendini sına). Taşma yok.
 - **Kalan Kısım 8:** s. 69 kapak, 71 (açık sayfa sağ), 73 karar yolu (perioperatif — "12 saat açlık, rezidü ~%0", taşifilaksi kaynakları: *Clinical consequences of delayed gastric emptying…*), 74 (çoğu monografiyle tutuyor; parasetamol "AUC değişmez" ifadesi monografide "tekrarlayan dozla etki azalır").
+
+### Tur 63 — Sınav düzeni · Kısım 8 s. 69, 71, 73, 74 (27 Ekim)
+Kaynak: tirzepatid ürün monografisi (defterde, kaynak görüntüleyici metni).
+- **s. 71:** kan basıncı "sistolik 5,1–7,2, diyastolik 3,2" → monografi tablosu: sistolik **6,3–7,2 mmHg** ↓ (plaseboya göre 5,2–6,2); diyastolik sayısı görülmedi, çıktı · trigliserit %24,8–27,2, non-HDL %5,9–9,7, HDL %8–9 birebir · SDBY'de "önerilmez" birebir · "MEN sendromları bkz. s. 45" → MEN2 s. 53.
+- **s. 73:** monografi: standart açlığa rağmen rezidüel mide içeriğiyle nadir aspirasyon; "açlığı uzatmanın ya da ilaca ara vermenin riski azaltıp azaltmadığını gösterecek veri yetersiz" → 2. adıma eklendi · "12 saat açlıkta rezidü ~%0" ve "12 saatlik açlık rezidüyü temizler" görülmedi → "etkinliği kanıtlanmamış seçenek" + monografi cümlesi. Taşifilaksi spotu doğrulanamadı (*Clinical consequences of delayed gastric emptying* kaynak listesi tıklamayla açılamadı), dokunulmadı.
+- **s. 74:** OKS, parasetamol (AUC değişmez, tekrarlayan dozla etki azalır), kolelitiyaz %1,1 / kolesistit %0,6, +3 atım/dk, 4813 Da, gebelikten 1 ay önce kes, süt verisi yok, organogenezde malformasyon (hayvan) — monografiyle birebir. Değişiklik yalnız SURMOUNT-1 (Tur 62).
+- **s. 69 kapak:** altı kural monografiyle tutuyor (C20/Aib/~5 gün, doz ayarı yok, 2,5 mg tolerabilite, MTK/MEN2, aspirasyon, OKS 4 hafta).
+- Taşma yok. **KISIM 8 TAMAM (s. 69–74).**
