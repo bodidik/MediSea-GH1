@@ -967,3 +967,10 @@ Kaynak: TEMD Tiroid 2025 Bölüm 11 (Graves orbitopatisi; yerel metin) · Clinic
 - **Çıkarılan (yayın metninde yok):** GREAT+ HLA/PTPN22 genotipleri ve sınıf nüks oranları (GREAT bileşenleri sayısız kaldı) · pediatrik relaps "%68" · Thy1⁻/Thy1⁺ fibroblast alt tipleri ve CD34⁺ fibrositler (s. 78'deki kararla tutarlı) · MG alt tip oranları (%41/%21, %27/%60, %36/%57) → yerine UpToDate MG %2–17.
 - **Doğrulanamadı, kaldı:** selenyum "200 µg/gün" dozu (TEMD yalnız süre veriyor) · metimazolde "≥30 mg/gün agranülositoz riski" · agranülositoz <500/µL.
 - Taşma yok. **Kalan Kısım 9:** s. 82–87.
+
+### Tur 67 — Sınav düzeni · Kısım 9 s. 82, 84 (+ Kısım 1 s. 9) (29 Ekim)
+Kaynak: TEMD Tiroid 2025 — Bölüm 10 (tiroid fırtınası, s. 112) ve Bölüm 28 (acil, s. 321–322), yerel metin.
+- **TEMD İÇ ÇELİŞKİ (iki bölüm ayrışıyor):** iyot tionamidden sonra — Böl. 28 "en az 1 saat", Böl. 10 "en az 30 dk" · kolestiramin — Böl. 28 "4 g günde 4 kez", Böl. 10 "1–4 g günde 2 kez" · SSKI — Böl. 28 "3–5 damla", Böl. 10 "5 damla". s. 84 ve s. 9'da ikisi bölüm adıyla yazıldı.
+- **Düzeltilen:** hidrokortizon yalnız UpToDate (300 → 100 mg/8 sa) yazıyordu → **TEMD: 50–100 mg IV, 6–8 saatte** önde, UpToDate yanında (s. 9 ve s. 84; Tur 44 notu s. 9'da uygulanmamış kalmıştı) · propranolol "4–6 saatte" → **TEMD: 60–80 mg, 6 saatte** · esmolol TEMD dozu (50–100 µg/kg/dk) eklendi (s. 84).
+- **Birebir:** PTU 500–1000 mg yükleme → 250 mg/4 sa; MMI 80–120 mg/gün (= 20 mg 4–6 saatte) · amiodaron Tip 1 ortalama 3,5 ay, Tip 2 ortalama 30 ay ve kesildikten sonra · Tip 2'de prednizolon 30–40 mg/gün.
+- Taşma yok. **Kalan Kısım 9:** s. 83 (TRAb ≥0,9 → %80–85 nüks; beta bloker dozları), 85–87.
