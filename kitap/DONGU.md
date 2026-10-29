@@ -1019,3 +1019,12 @@ Kaynak: TEMD Adrenal 2025 (4.4, 4.6 Medikal Tedavi, Şekil 4.2).
 - s. 92 "TEMD 2022 algoritması 7–14" → TEMD 2025 algoritması.
 - Kendini sına (s. 102) üç satırı eşitlendi.
 - KAYNAK BEKLİYOR: SDHD/SDHAF2 maternal damgalama ve soy ağacı spotu — TEMD 2025 ve defterdeki UpToDate tanı başlığında yok; doğru bilgi ama kaynak gösterilemedi, bırakıldı.
+
+## Tur 74 — s. 99–102 PPGL ameliyat, kriz, takip, kırk soru (29 Eki 2026) → KISIM 10 TAMAM
+
+Kaynak: TEMD Adrenal 2025 (4.6 cerrahi + IV tedavi, izlem, TEMD Önerileri, Tablo 4.2) + UpToDate tanı başlığı.
+- s. 99: laparoskopi sınırı "<5–6 cm" → TEMD: çoğu vakada laparoskopik, >6 cm invazivde açık; nitroprussid 0,5–5 → 0,5–1,5 µg/kg/dk; fentolamin "1 mg test + 2–5 mg" → 2,5–5 mg IV, 3–5 dk’da bir, infüzyon 20–100 mg/sa; nikardipin 5 mg/sa, lidokain/esmolol kaynaksız → TEMD ajan listesi (nikardipin, klevidipin, β-bloker, MgSO4, venöz vazodilatör); "kaçınılacak anestezikler (fentanil, ketamin, atropin, desfluran)" kaynaksız → TEMD Tablo 4.2 atak başlatan ilaçlar; rebound hipoglisemi %4–43 + %5 dekstroz → TEMD "nadir, geçici hipoglisemi, kan şekeri takibi"; kalıcı HT → TEMD 4–8 hafta; kür testi 2–6 hafta / 5–7 gün gecikme → TEMD 3–8 hafta, 6. ay ve 1. yıl; takip "en az 10 yıl" → TEMD ömür boyu.
+- s. 100: hipertermi ">40°C" sayısı çıktı.
+- s. 101: senaryolar aynı değerlere eşitlendi (indetermine → tekrar; TCA 5–14 gün/≥2 hafta; akut hastalık; %0,9 NaCl; nüks ilk 5 yılda %1–5). s. 95 test tablosundaki "Klonidin baskılama testi" hücresi de aynı metne çevrildi.
+- s. 102: 40 sorudan 22’si eşitlendi; kaynaksız sorular (triad yüzdeleri, Geroula, NPD >%99, KBY ~2 kat, klonidin dozu, kaçınılacak anestezikler, laparoskopi sınırı) TEMD/UpToDate değerli sorularla değişti.
+- Hâlâ KAYNAK BEKLİYOR: maternal damgalama (s. 97, 101), "TEMD 2022" etiketli kutular (2022 PDF yerelde yok, eski turda girildi).
