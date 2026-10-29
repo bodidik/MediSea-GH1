@@ -1010,3 +1010,12 @@ Kaynak: TEMD Adrenal 2025 (4.1–4.4, Tablo 4.1) + UpToDate *Clinical presentati
 - Çıkarıldı (kaynakta yok): "kalıtsal geçişi en yüksek insan tümörü" (2 yer), mikrofeokromositoma <1 cm, triad bileşen yüzdeleri 80/70/60, paroksizm 15–20 dk (yarı ömür karışması, Tur 70), Geroula skoru, SDHB %35–75, rebound hipoglisemi %4–43. Yerine TEMD: metastaz tanıda %10–20, 5/10 yıl sağkalım %78/%31, fenotip→klinik (Tablo 4.1), "%10 kuralı geçersiz".
 - s. 93 "TEMD 2022 · 3–4 kat" kutusuna TEMD 2025 2 kat eşiği eklendi.
 - Kalan: 7–14 gün blokaj (s. 98 turunda TEMD 2025 ile).
+
+## Tur 73 — s. 97–98 PPGL genetik ve preoperatif hazırlık (29 Eki 2026)
+
+Kaynak: TEMD Adrenal 2025 (4.4, 4.6 Medikal Tedavi, Şekil 4.2).
+- s. 97: SDHB "metastaz %35–75" (kaynakta yok) → TEMD: metastatik PPGL’nin %40–45’i SDHB; SDHx’te 2–3 yılda bir görüntüleme. "Görüntüleme seçimi" kartı Tablo 4.4’e çekildi. "TEMD 2022 · iki yüzü" → TEMD 2025 (aynı iç çelişki: metin prazosin/doksazosin, Şekil 4.2 "tercihen fenoksibenzamin"; süre 7–14 gün ayaktan + 1–3 gün yatış, metin ort. 10–14 gün).
+- s. 98 TEMD 2025’e çekildi: doksazosin 1–2 mg, 2–3 günde 1–2 mg artır, hedef <110–120/80 (eski "2×10–15 mg" kaynaksız); fenoksibenzamin 10 mg/12 sa → 10–40 mg/8 sa; BB 2.–3. günde propranolol 20/12 sa, metoprolol 25/12 sa, atenolol 25 (eski metoprolol 25–50, propranolol 10 mg 4–6 sa, nabız hedefi 60–80/70–100 kaynaksız); KKB amlodipin 5–10, nifedipin 30–60/12 sa, α-metil tirozin 250 mg/12 sa; hacim %0,9 NaCl. "≥5000 mg tuz, 2 L NaCl 12–24 sa" kaynaksız → çıktı (TEMD 2022 >5 g tuz adıyla kaldı). Yeni kutu: son doz operasyon sabahı, postop 4–8 hafta HT.
+- s. 92 "TEMD 2022 algoritması 7–14" → TEMD 2025 algoritması.
+- Kendini sına (s. 102) üç satırı eşitlendi.
+- KAYNAK BEKLİYOR: SDHD/SDHAF2 maternal damgalama ve soy ağacı spotu — TEMD 2025 ve defterdeki UpToDate tanı başlığında yok; doğru bilgi ama kaynak gösterilemedi, bırakıldı.
