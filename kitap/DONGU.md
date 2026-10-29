@@ -993,3 +993,12 @@ Kaynak: TEMD Adrenal ve Gonadal 2025 (yerel `Downloads/TEMD Adrenal ve gonadal 2
 - **Düzeltilen:** "Wang ve ark. 2023" → "2023 meta-analizi" (D. Wang sorumlu yazar; ilk yazar doğrulanmadı) · "ani başlayan 15–20 dakikalık ataklar" çıktı — TEMD'deki 15–20 dk katekolaminin YARI ÖMRÜ, atak süresi değil.
 - **Çıkarılan (görülmedi):** "PPGL kalıtsal geçişi en yüksek insan tümörü" incisi · PNMT'nin kortizolle yıkanan medullada çalıştığı ayrıntısı (PNMT yalnız sentez şemasında) · "küme 1 PNMT yok" ayrıntısı.
 - Taşma yok. **Kalan Kısım 10:** 91 kapak, 92–93 açık, 95–102.
+
+## Tur 71 — s. 95–96 PPGL biyokimya ve görüntüleme (29 Eki 2026)
+
+Kaynak: TEMD Adrenal ve Gonadal 2025 (yerel PDF, 4.5.1–4.5.2, Tablo 4.4) + Feokromastoma defterindeki UpToDate *Clinical presentation and diagnosis of pheochromocytoma* metni.
+- Doğrulandı: plazma %96–100 / %85–89 (60 yaş üstü %77), idrar %98/%98, dışlama eşikleri 0,3/0,66 ve 0,5/0,9 nmol/L (UpToDate); >10 HU (30–40), washout <%50, MIBG %83–100 / %53–60, metastatikte DOTA %93 (TEMD).
+- Düzeltildi: 20–30 dk dinlenme → TEMD ≥30 dk; ilaç kesme "2 hafta" → TEMD 5–14 gün · UpToDate ≥2 hafta; fonksiyonel eşik 5–8 cm → TEMD >5 cm · UpToDate ör. 8 cm; FDOPA "sporadikte en hassas" → TEMD Tablo 4.4: sporadikte DOTATATE ilk, FDOPA VHL/EPAS1/küme 2; "kontrast α-blokajsız güvenli" → TEMD α-blokaj ister, noniyonik güvenli olabilir (tuzak kutusu yeniden yazıldı).
+- Çıkarıldı (kaynakta yok): NPV >%99, kreatinin klirensi, 12 saat kısıtlama, BT duyarlılık >%90, "evre 4–5 KBH normetanefrin ~2 kat" (yerine UpToDate hemodiyaliz NE 3×, DA 2×), klonidin 0,3 mg/70 kg.
+- Sınırda yükseklik: TEMD 2025 "<2 kat → test tekrarı"; klonidin TEMD 2022 adıyla kaldı.
+- Açık: s. 93 "TEMD 2022 · 3–4 kat" ↔ TEMD 2025 "2 kat" — s. 93 turunda.
