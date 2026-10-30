@@ -1415,6 +1415,23 @@
         "eslesen": "eGFR"
       }
     ],
+    "nefroloji/diyaliz-tedavisi": [
+      {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "ktv",
+        "name": "Kt/V — Daugirdas II",
+        "eslesen": "Kt/V"
+      }
+    ],
     "nefroloji/farmakoloji-finerenon": [
       {
         "slug": "egfr",
@@ -4362,14 +4379,6 @@
         "kaynak": "kavram"
       }
     ],
-    "nefroloji/diyaliz-tedavisi": [
-      {
-        "slug": "ktv",
-        "name": "Kt/V — Daugirdas II",
-        "eslesen": "diyaliz",
-        "kaynak": "kavram"
-      }
-    ],
     "nefroloji/farmakoloji-finerenon-kalp-yetmezligi": [
       {
         "slug": "hiperkalemi-tedavi",
@@ -5332,6 +5341,11 @@
         "eslesen": "Anafilaksi"
       },
       {
+        "yol": "nefroloji/diyaliz-tedavisi",
+        "baslik": "Diyaliz (Renal Replasman Tedavisi)",
+        "eslesen": "Anafilaksi"
+      },
+      {
         "yol": "onkoloji/tls-rasburikaz-vs-allopurinol",
         "baslik": "TLS'de Farmakolojik Karşılaştırma: Rasburikaz vs Allopurinol",
         "eslesen": "Anafilaksi"
@@ -6064,8 +6078,7 @@
       {
         "yol": "nefroloji/diyaliz-tedavisi",
         "baslik": "Diyaliz (Renal Replasman Tedavisi)",
-        "eslesen": "diyaliz",
-        "kaynak": "kavram"
+        "eslesen": "Kt/V"
       }
     ],
     "aldosteron-renin": [
@@ -9059,7 +9072,7 @@
     "arac": 281,
     "araciOlanKonu": 355,
     "konusuOlanArac": 176,
-    "bag": 724,
-    "kavramBag": 638
+    "bag": 726,
+    "kavramBag": 637
   }
 }

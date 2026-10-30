@@ -59,6 +59,8 @@
   "kronik böbrek hastalık": "nefroloji/kronik-bobrek-hastaligi",
   "membranöz nefropati": "nefroloji/membranoz-nefropati-mn",
   "polikistik böbrek hastalık": "nefroloji/polikistik-bobrek-hastaligi-pkd",
+  "hemodiyaliz": "nefroloji/diyaliz-tedavisi",
+  "periton diyaliz": "nefroloji/diyaliz-tedavisi",
   "tümör lizis sendrom": "onkoloji/tumor-lizis-sendromu-kapsamli",
   "febril nötropeni": "onkoloji/febril-notropeni-konu",
   "pankreas kanser": "onkoloji/pankreas-kanseri-ana-sayfa",
