@@ -2304,6 +2304,11 @@
  ],
  "endokrinoloji/tirzepatid-kardiyorenal-koruma": [
   {
+   "brans": "nefroloji",
+   "slug": "akut-bobrek-hasari",
+   "baslik": "Akut Böbrek Hasarı (ABH)"
+  },
+  {
    "brans": "endokrinoloji",
    "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
    "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
@@ -6546,24 +6551,9 @@
  ],
  "nefroloji/akut-bobrek-hasari": [
   {
-   "brans": "nefroloji",
-   "slug": "membranoz-nefropati-mn",
-   "baslik": "Membranöz nefropati"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "polikistik-bobrek-ekstrarenal",
-   "baslik": "ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "polikistik-bobrek-hastaligi-pkd",
-   "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "polikistik-bobrek-tedavi",
-   "baslik": "ADPKD İleri Okuma: Uzman Düzeyi Tedavi ve Yönetim Kılavuzu"
+   "brans": "endokrinoloji",
+   "slug": "tirzepatid-kardiyorenal-koruma",
+   "baslik": "Tirzepatid: Kardiyorenal Koruma ve Pleiotropik Etkiler"
   }
  ],
  "nefroloji/akut-interstisiyel-nefrit-ain": [

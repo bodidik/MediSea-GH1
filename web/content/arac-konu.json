@@ -1330,6 +1330,30 @@
         "kaynak": "kavram"
       }
     ],
+    "nefroloji/akut-bobrek-hasari": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "ktv",
+        "name": "Kt/V — Daugirdas II",
+        "eslesen": "Kt/V"
+      },
+      {
+        "slug": "kdigo-aki",
+        "name": "KDIGO AKI Evrelemesi",
+        "eslesen": "akut böbrek",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "spot-urine",
+        "name": "Spot İdrar Hesaplamaları",
+        "eslesen": "akut böbrek",
+        "kaynak": "kavram"
+      }
+    ],
     "nefroloji/amilorid-spironolakton-karsilastirma": [
       {
         "slug": "aldosteron-renin",
@@ -4308,20 +4332,6 @@
         "kaynak": "kavram"
       }
     ],
-    "nefroloji/akut-bobrek-hasari": [
-      {
-        "slug": "kdigo-aki",
-        "name": "KDIGO AKI Evrelemesi",
-        "eslesen": "akut böbrek",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "spot-urine",
-        "name": "Spot İdrar Hesaplamaları",
-        "eslesen": "akut böbrek",
-        "kaynak": "kavram"
-      }
-    ],
     "nefroloji/akut-interstisiyel-nefrit-ain": [
       {
         "slug": "kdigo-aki",
@@ -5015,8 +5025,8 @@
     ],
     "egfr": [
       {
-        "yol": "nefroloji/ardisik-nefron-blokaji-advor-clorotic",
-        "baslik": "Ardışık Nefron Blokajı: ADVOR ve CLOROTIC",
+        "yol": "nefroloji/akut-bobrek-hasari",
+        "baslik": "Akut Böbrek Hasarı (ABH)",
         "eslesen": "eGFR"
       },
       {
@@ -5050,8 +5060,8 @@
         "eslesen": "eGFR"
       },
       {
-        "yol": "nefroloji/diuretik-direnci-basamakli-yonetim",
-        "baslik": "Diüretik Direnci: Erken Tanı ve Basamaklı Yönetim",
+        "yol": "nefroloji/ardisik-nefron-blokaji-advor-clorotic",
+        "baslik": "Ardışık Nefron Blokajı: ADVOR ve CLOROTIC",
         "eslesen": "eGFR"
       }
     ],
@@ -6042,6 +6052,19 @@
         "yol": "klinik-nutrisyon/klinik-nutrisyon-glim-kriterleri",
         "baslik": "GLIM Kriterleri: Malnütrisyon Tanısında Küresel Standart",
         "eslesen": "malnütrisyon",
+        "kaynak": "kavram"
+      }
+    ],
+    "ktv": [
+      {
+        "yol": "nefroloji/akut-bobrek-hasari",
+        "baslik": "Akut Böbrek Hasarı (ABH)",
+        "eslesen": "Kt/V"
+      },
+      {
+        "yol": "nefroloji/diyaliz-tedavisi",
+        "baslik": "Diyaliz (Renal Replasman Tedavisi)",
+        "eslesen": "diyaliz",
         "kaynak": "kavram"
       }
     ],
@@ -8732,14 +8755,6 @@
         "kaynak": "kavram"
       }
     ],
-    "ktv": [
-      {
-        "yol": "nefroloji/diyaliz-tedavisi",
-        "baslik": "Diyaliz (Renal Replasman Tedavisi)",
-        "eslesen": "diyaliz",
-        "kaynak": "kavram"
-      }
-    ],
     "hiperkalemi-tedavi": [
       {
         "yol": "nefroloji/mra-asi-hiperkalemi-sglt2-kombinasyonu",
@@ -9044,7 +9059,7 @@
     "arac": 281,
     "araciOlanKonu": 355,
     "konusuOlanArac": 176,
-    "bag": 722,
+    "bag": 724,
     "kavramBag": 638
   }
 }
