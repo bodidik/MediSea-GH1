@@ -1106,3 +1106,11 @@ Kaynak: yerel TEMD Hipofiz 2022 (apopleksi, Bölüm 8 DI, IgG4 hipofizit) + SIAD
 - Düzeltildi: apopleksi hidrokortizon 100 → 100–200 mg (TEMD); desmopressin yanıtı ">%50 santral" → TEMD ve UpToDate: >%100 tam santral, %15–50 kısmi (metin + tablo); poliüri ">3 L, <300 mOsm" → TEMD >50 mL/kg/gün (70 kg’da >3,5 L), idrar genellikle <100 mOsm/kg; IgG4’e "~%30’unda serum IgG4 normal (TEMD)" eklendi.
 - Çıkarıldı (kaynaklarda bulunamadı): apopleksi ACTH %50–100, BT duyarlılığı ~1/3, GKS <8; Sheehan hiponatremi %21–59 ve 7–19 yıl gecikme; lenfositik DI %50–80, ICI ~10./~27. hafta, izole <%2–3, MRG %81/%18/%25; IgG4 >135 mg/dL; nefrojenik %90/%10; su kısıtlama doğruluğu ~%76, kopeptin %96,5.
 - Bırakıldı, doğrulanmadı: SIADH idrar Na >40 mEq/L.
+
+## Tur 85 — Kısım 12 s. 137–138 vaka + kırk soru, s. 129 ve 135 ek düzeltme (30 Eki 2026) → KISIM 12 TAMAM
+
+Kaynak: yerel TEMD Hipofiz 2022 + önceki turların kaynakları.
+- s. 137 senaryoları ve s. 138’in 40 sorusu önceki turlardaki değerlere eşitlendi: kanca "1:100" → seyrelterek tekrar (TEMD); kabergolin EKO "haftada >2 mg" → TEMD (üfürüm, 5 yıldan uzun >3 mg/hafta, 50 yaş sonrası → en az 2 yılda bir); apopleksi 100 → 100–200 mg (iki yer); sap etkisi PRL "<150–200" → 25–150, nadiren >150 (TEMD); "PRL/hacim 0,04" senaryosu, ICI 8./27. hafta, ICI DI "<%2–3" çıktı.
+- s. 129 + Q29: İTT "kan şekeri <40 mg/dL" ve "monoklonal kitlerde ≥14,5–15" TEMD’de yok → TEMD: semptomatik hipoglisemi, 45. dakikada olmazsa doz tekrarı, pik kortizol ≥18 µg/dL. (Tur 82’de bu satır gözden kaçmıştı.)
+- s. 135: TEMD IgG4 hipofizit serolojik kriteri serum IgG4 >140 mg/dL eklendi (Tur 84’te kitaptaki >135 çıkarılmış, TEMD değeri konmamıştı).
+- Kısım 12’de bırakılan, doğrulanmamış: SIADH idrar Na >40; "akut dönemden sonra öteki akslar 3–6. ayda".
