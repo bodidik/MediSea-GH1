@@ -1098,3 +1098,11 @@ Kaynak: yerel TEMD Hipofiz 2022 (Bölüm 7, Tablo 7.3) + Pituitary Function deft
 Kaynak: yerel TEMD Hipofiz 2022 (Bölüm 7, Tablo 7.3, yaşlanma bölümü) + ESE/Endocrine Society 2024 GK-ilişkili adrenal yetmezlik kılavuzu (yerel PDF).
 - Doğrulandı (TEMD): IGF-1 ≤95 ng/mL + ≥3 eksiklikte olasılık >%95; 8 saat açlık; GHRH+arjinin 0,5 g/kg (en çok 35 g), eşik VKİ <25: 11, 25–30: 8, >30: 4; rhGH 0,2–0,3 / <30 yaş 0,4–0,5, 1–2 ayda 0,1–0,2 artış, idame 0,3–0,6, 6 ayda IGF-1, 1 yıl, ≥6 ay; 773 hasta, NFPA + Sheehan ikinci; TBH %10–20, 31/100.000; IgG4 Japonya %4; Tablo 7.3 dozları; yaşlıda L-T4 0,25–0,5 → 1,2–1,6 µg/kg, 3–4 haftada; son dozdan 12 saat.
 - Düzeltildi: glukagon eşiği "<1 µg/L (AACE: …)" → TEMD’nin kendisi VKİ <25’te 3, ≥25’te 1 µg/L der (AACE’ye dayanarak); yaşlı glukagon kutusu da buna göre. "Hipofiz apsesinde >%80" (bulunamadı, s. 128’den de çıkmıştı) çıktı. Steroid kesme tablosu ESE/ES metniyle: <5 µg/dL’de "dinamik test yapılmaz" değil, fizyolojik idameye devam + birkaç ay sonra tekrar; >10 ve 5–10 satırları doğrulandı.
+
+## Tur 84 — Kısım 12 s. 135–136 apopleksi/Sheehan/hipofizit, diabetes insipidus (29 Eki 2026)
+
+Kaynak: yerel TEMD Hipofiz 2022 (apopleksi, Bölüm 8 DI, IgG4 hipofizit) + SIADH ve D.insipidus defteri (c320c4e3-…; 19 kaynak, UpToDate *Evaluation of patients with polyuria* vd.).
+- Doğrulandı: TEMD apopleksi acili ve erken cerrahi (ilk 8 gün), izlem 4–6. hafta, MRG 3–6 ay / 5 yıl yıllık / sonra 2 yılda; IgG4 histolojisi (>%40, >10/HPF); kopeptin bazal >21,4 → AVP direnci, uyarılmış ≤4,9 → AVP eksikliği (UpToDate).
+- Düzeltildi: apopleksi hidrokortizon 100 → 100–200 mg (TEMD); desmopressin yanıtı ">%50 santral" → TEMD ve UpToDate: >%100 tam santral, %15–50 kısmi (metin + tablo); poliüri ">3 L, <300 mOsm" → TEMD >50 mL/kg/gün (70 kg’da >3,5 L), idrar genellikle <100 mOsm/kg; IgG4’e "~%30’unda serum IgG4 normal (TEMD)" eklendi.
+- Çıkarıldı (kaynaklarda bulunamadı): apopleksi ACTH %50–100, BT duyarlılığı ~1/3, GKS <8; Sheehan hiponatremi %21–59 ve 7–19 yıl gecikme; lenfositik DI %50–80, ICI ~10./~27. hafta, izole <%2–3, MRG %81/%18/%25; IgG4 >135 mg/dL; nefrojenik %90/%10; su kısıtlama doğruluğu ~%76, kopeptin %96,5.
+- Bırakıldı, doğrulanmadı: SIADH idrar Na >40 mEq/L.
