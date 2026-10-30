@@ -1976,16 +1976,6 @@
    "brans": "endokrinoloji",
    "slug": "adrenal-kriz",
    "baslik": "Akut Adrenal Kriz (Addison Krizi)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
-   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "polikistik-bobrek-yenilikci-tedaviler",
-   "baslik": "ADPKD İleri Okuma: Araştırılan Yenilikçi ve Rejeneratif Moleküler Tedaviler"
   }
  ],
  "endokrinoloji/sglt2-inhibitorleri-kardiyorenal-metabolik": [
@@ -1993,16 +1983,6 @@
    "brans": "endokrinoloji",
    "slug": "siadh-direncli-farmakoterapi",
    "baslik": "Modül 4: Dirençli SIADH ve Modern Farmakoterapi Seçenekleri"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "sglt2-hasta-gunler-kurali-sick-day",
-   "baslik": "SGLT2 İnhibitörleri: Hasta Günler Kuralı (Sick Day Rules)"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "polikistik-bobrek-yenilikci-tedaviler",
-   "baslik": "ADPKD İleri Okuma: Araştırılan Yenilikçi ve Rejeneratif Moleküler Tedaviler"
   }
  ],
  "endokrinoloji/sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler": [
@@ -2010,11 +1990,6 @@
    "brans": "endokrinoloji",
    "slug": "sevelamer-derleme",
    "baslik": "Sevelamer: KBH-Hiperfosfatemi"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "polikistik-bobrek-yenilikci-tedaviler",
-   "baslik": "ADPKD İleri Okuma: Araştırılan Yenilikçi ve Rejeneratif Moleküler Tedaviler"
   }
  ],
  "endokrinoloji/sheehan-sendromu-postpartum-felaket": [
@@ -2049,18 +2024,13 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "mra-asi-hiperkalemi-sglt2-kombinasyonu",
-   "baslik": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu"
-  },
-  {
-   "brans": "nefroloji",
    "slug": "diyaliz-tedavisi",
    "baslik": "Diyaliz (Renal Replasman Tedavisi)"
   },
   {
    "brans": "nefroloji",
-   "slug": "kronik-bobrek-hastaligi",
-   "baslik": "Kronik Böbrek Hastalığı (KBH)"
+   "slug": "mra-asi-hiperkalemi-sglt2-kombinasyonu",
+   "baslik": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu"
   },
   {
    "brans": "nefroloji",
@@ -5952,6 +5922,11 @@
    "brans": "nefroloji",
    "slug": "kbh-hiperfosfatemi-yonetimi",
    "baslik": "Kronik Böbrek Hastalığında Hiperfosfatemi Yönetimi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "kronik-bobrek-hastaligi",
+   "baslik": "Kronik Böbrek Hastalığı (KBH)"
   }
  ],
  "kardiyoloji/aprocitentan-kbh-ve-yasli": [
@@ -5966,11 +5941,6 @@
    "baslik": "Kardiyoloji-NEJM: Kalp Yetmezliği Çalışmalarında Oral Diüretik Yoğunlaştırması (ODI)"
   },
   {
-   "brans": "nefroloji",
-   "slug": "kbh-hiperfosfatemi-yonetimi",
-   "baslik": "Kronik Böbrek Hastalığında Hiperfosfatemi Yönetimi"
-  },
-  {
    "brans": "gastroenteroloji",
    "slug": "ascit-diuretik-tedavisi",
    "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
@@ -5979,6 +5949,16 @@
    "brans": "nefroloji",
    "slug": "kalitsal-tubulopatiler-tuz-kaybettiren",
    "baslik": "Kalıtsal Tübülopatiler (Tuz Kaybettiren Nefropatiler)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "kbh-hiperfosfatemi-yonetimi",
+   "baslik": "Kronik Böbrek Hastalığında Hiperfosfatemi Yönetimi"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "kronik-bobrek-hastaligi",
+   "baslik": "Kronik Böbrek Hastalığı (KBH)"
   }
  ],
  "kardiyoloji/aprocitentan-kombinasyon-stratejileri": [
@@ -6797,11 +6777,6 @@
    "brans": "endokrinoloji",
    "slug": "siadh-direncli-farmakoterapi",
    "baslik": "Modül 4: Dirençli SIADH ve Modern Farmakoterapi Seçenekleri"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "kronik-bobrek-hastaligi",
-   "baslik": "Kronik Böbrek Hastalığı (KBH)"
   }
  ],
  "nefroloji/enac-epitelyal-sodyum-kanali": [
@@ -6839,13 +6814,33 @@
  "nefroloji/farmakoloji-finerenon": [
   {
    "brans": "nefroloji",
-   "slug": "finerenon-aldosteron-sentaz-inhibitorleri",
-   "baslik": "Finerenon ve Aldosteron Sentaz İnhibitörleri: Karşılaştırma"
+   "slug": "aldosteron-mekanizmalari",
+   "baslik": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları"
   },
   {
    "brans": "nefroloji",
-   "slug": "mra-asi-hiperkalemi-sglt2-kombinasyonu",
-   "baslik": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu"
+   "slug": "amilorid-spironolakton-karsilastirma",
+   "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "ardisik-nefron-blokaji-advor-clorotic",
+   "baslik": "Ardışık Nefron Blokajı: ADVOR ve CLOROTIC"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "asetazolamid-etki-mekanizmasi",
+   "baslik": "Asetazolamid: Proksimal Tübülde Etki Mekanizması"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "diuretik-direnci-basamakli-yonetim",
+   "baslik": "Diüretik Direnci: Erken Tanı ve Basamaklı Yönetim"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "enac-epitelyal-sodyum-kanali",
+   "baslik": "Epitelyal Sodyum Kanalı (ENaC)"
   }
  ],
  "nefroloji/farmakoloji-finerenon-kalp-yetmezligi": [
@@ -6856,8 +6851,18 @@
   },
   {
    "brans": "nefroloji",
+   "slug": "kronik-bobrek-hastaligi",
+   "baslik": "Kronik Böbrek Hastalığı (KBH)"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "mra-asi-hiperkalemi-sglt2-kombinasyonu",
    "baslik": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "diuretikler",
+   "baslik": "Klinik Farmakoloji: Diüretikler ve Etki Mekanizmaları"
   }
  ],
  "nefroloji/farmakoloji-potasyum-tutucu-diuretikler": [
@@ -6897,16 +6902,6 @@
    "brans": "nefroloji",
    "slug": "zona-glomeruloza-steroid",
    "baslik": "Temel Bilimler: Zona Glomerulosa Neden Kortizol Üretemez?"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "farmakoloji-finerenon",
-   "baslik": "Yeni Nesil ns-MRA Finerenon"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "farmakoloji-finerenon-kalp-yetmezligi",
-   "baslik": "Finerenon ve Kalp Yetmezliği"
   }
  ],
  "nefroloji/fizyoloji-acth-adrenal-mekanizmalar": [
@@ -7140,6 +7135,11 @@
    "baslik": "Sevelamer: KBH-Hiperfosfatemi"
   },
   {
+   "brans": "endokrinoloji",
+   "slug": "kbh-osteoporoz-ckd-mbd",
+   "baslik": "KBH İlişkili Osteoporoz (CKD-MBD)"
+  },
+  {
    "brans": "kardiyoloji",
    "slug": "aprocitentan-direncsiz-kbh-kullanimi",
    "baslik": "Dirençli HT Olmayan KBH'da Aprocitentan Kullanımı"
@@ -7150,9 +7150,9 @@
    "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "kbh-osteoporoz-ckd-mbd",
-   "baslik": "KBH İlişkili Osteoporoz (CKD-MBD)"
+   "brans": "nefroloji",
+   "slug": "kronik-bobrek-hastaligi",
+   "baslik": "Kronik Böbrek Hastalığı (KBH)"
   }
  ],
  "nefroloji/kbh-mkb-bisfosfonat-kontrendikasyonu": [
@@ -7230,14 +7230,19 @@
    "baslik": "Adrenal Fizyoloji ve Steroidogenez"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "siadh-direncli-farmakoterapi",
-   "baslik": "Modül 4: Dirençli SIADH ve Modern Farmakoterapi Seçenekleri"
+   "brans": "kardiyoloji",
+   "slug": "aprocitentan-direncsiz-kbh-kullanimi",
+   "baslik": "Dirençli HT Olmayan KBH'da Aprocitentan Kullanımı"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "aprocitentan-kbh-ve-yasli",
+   "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)"
   },
   {
    "brans": "nefroloji",
-   "slug": "diyaliz-tedavisi",
-   "baslik": "Diyaliz (Renal Replasman Tedavisi)"
+   "slug": "kbh-hiperfosfatemi-yonetimi",
+   "baslik": "Kronik Böbrek Hastalığında Hiperfosfatemi Yönetimi"
   }
  ],
  "nefroloji/liddle-sendromu-mra-etkisizligi": [
@@ -7448,16 +7453,6 @@
    "brans": "onkoloji",
    "slug": "tumor-lizis-sendromu-kapsamli",
    "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "farmakoloji-finerenon",
-   "baslik": "Yeni Nesil ns-MRA Finerenon"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "farmakoloji-finerenon-kalp-yetmezligi",
-   "baslik": "Finerenon ve Kalp Yetmezliği"
   }
  ],
  "nefroloji/polikistik-bobrek-ekstrarenal": [
@@ -7584,21 +7579,6 @@
    "brans": "endokrinoloji",
    "slug": "akromegali-ve-gigantizm",
    "baslik": "Büyüme Hormonu Patolojileri: Akromegali ve Gigantizm"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "sglt2-hasta-gunler-kurali-sick-day",
-   "baslik": "SGLT2 İnhibitörleri: Hasta Günler Kuralı (Sick Day Rules)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
-   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler",
-   "baslik": "SGLT2 İnhibitörleri: Pleiotropik Etkiler ve Advers Profil"
   }
  ],
  "nefroloji/renal-arter-stenozu-ras": [

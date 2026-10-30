@@ -1468,6 +1468,31 @@
         "kaynak": "kavram"
       }
     ],
+    "nefroloji/kronik-bobrek-hastaligi": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "egfr-sistatin",
+        "name": "Sistatin C ile eGFR",
+        "eslesen": "kronik böbrek hastalı",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "kdigo-kbh",
+        "name": "KDIGO KBH Sınıflaması",
+        "eslesen": "kronik böbrek hastalı",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "kreatinin-klirensi-24s",
+        "name": "24 Saatlik Kreatinin Klirensi",
+        "eslesen": "kronik böbrek hastalı",
+        "kaynak": "kavram"
+      }
+    ],
     "nefroloji/membranoz-nefropati-klinik": [
       {
         "slug": "egfr",
@@ -4464,32 +4489,6 @@
         "slug": "kdigo-aki",
         "name": "KDIGO AKI Evrelemesi",
         "eslesen": "kolesterol emboli",
-        "kaynak": "kavram"
-      }
-    ],
-    "nefroloji/kronik-bobrek-hastaligi": [
-      {
-        "slug": "egfr",
-        "name": "eGFR (CKD-EPI 2021)",
-        "eslesen": "kronik böbrek hastalı",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "egfr-sistatin",
-        "name": "Sistatin C ile eGFR",
-        "eslesen": "kronik böbrek hastalı",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "kdigo-kbh",
-        "name": "KDIGO KBH Sınıflaması",
-        "eslesen": "kronik böbrek hastalı",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "kreatinin-klirensi-24s",
-        "name": "24 Saatlik Kreatinin Klirensi",
-        "eslesen": "kronik böbrek hastalı",
         "kaynak": "kavram"
       }
     ],
@@ -9046,6 +9045,6 @@
     "araciOlanKonu": 355,
     "konusuOlanArac": 176,
     "bag": 722,
-    "kavramBag": 639
+    "kavramBag": 638
   }
 }
