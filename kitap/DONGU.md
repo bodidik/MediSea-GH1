@@ -1114,3 +1114,10 @@ Kaynak: yerel TEMD Hipofiz 2022 + önceki turların kaynakları.
 - s. 129 + Q29: İTT "kan şekeri <40 mg/dL" ve "monoklonal kitlerde ≥14,5–15" TEMD’de yok → TEMD: semptomatik hipoglisemi, 45. dakikada olmazsa doz tekrarı, pik kortizol ≥18 µg/dL. (Tur 82’de bu satır gözden kaçmıştı.)
 - s. 135: TEMD IgG4 hipofizit serolojik kriteri serum IgG4 >140 mg/dL eklendi (Tur 84’te kitaptaki >135 çıkarılmış, TEMD değeri konmamıştı).
 - Kısım 12’de bırakılan, doğrulanmamış: SIADH idrar Na >40; "akut dönemden sonra öteki akslar 3–6. ayda".
+
+## Tur 86 — Kısım 13 s. 140–143 paratiroid açık sayfa, PHPT tanı/cerrahi, lokalizasyon/ilaç (30 Eki 2026)
+
+Kaynak (Chrome bağlantısı koptu → yerel PDF’ler, scratchpad/para/): TEMD *Paratiroid Hastalıkları* 2023 (Ed. B. Çakır; iki sütunlu, Türkçe harf için iconv latin1) + UpToDate PHPT başlıkları (Pathogenesis, Diagnosis, Management, Exploration, Preoperative localization) + *Secondary hyperparathyroidism in CKD* (makale) + UpToDate SHPT nondiyaliz.
+- Doğrulandı: %99 kemikte, %40 albümine bağlı, %10 kompleks (TEMD); düzeltilmiş Ca 0,8 × (4 − alb); Ca/Cr <0,01 FHH, >0,02 PHPT (TEMD, UpToDate); asemptomatik PHPT ölçütleri (TEMD: Ca üst sınır +1 mg/dL, T ≤−2,5 / vertebra kırığı, eGFR <60, taş; UpToDate: idrar Ca >250 K / >300 E); izlem yıllık Ca-kreatinin-eGFR, 1–2 yılda üç bölge DXA (UpToDate); Miami: 10. dk >%50 düşüş (TEMD); aktif D analoğu diyaliz dışı KBH’de PTH üst sınırın 2,3–3 katında (UpToDate).
+- Düzeltildi: tek adenom %76–85 → UpToDate %80–90; çift adenom %3–4 → ~%4; "%50 iyonize" çıktı (TEMD yalnız %40/%10 veriyor); kalıcı hipoparatiroidizm eşiği "12 ay" → KAYNAKLAR AYRIŞIYOR: TEMD 6. aydan sonra, 2022 uluslararası kılavuz 12 ay — dört yerde ikisi de yazıldı; TEMD kalıcı hipoPT sıklığı %0,8–3 eklendi.
+- Çıkarıldı (bulunamadı): çoklu bez hiperplazisi %10–15, intratiroidal ~%2, sinakalset CYP2D6, EVOLVE "kırık ve paratiroidektomi ↓" (makale: aterosklerotik olmayan KV olay azaldı, anlamlı değil), evokalset biyoyararlanım/CYP, etelkalsetid QTc, upasikalset %78–100 / CYP yok (makale: 2021’den beri Japonya’da, etkili ve güvenli).
