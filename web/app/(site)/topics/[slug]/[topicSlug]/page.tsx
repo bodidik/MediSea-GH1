@@ -28,6 +28,7 @@ import { kaynaklariAl, kaynakcaAl } from "@/lib/kaynaklar";
 import KaynakListesi from "@/app/components/KaynakListesi";
 import KaynakcaBlogu from "@/app/components/KaynakcaBlogu";
 import PdfIndir from "@/app/components/PdfIndir";
+import AmiralNisani, { amiralMi } from "@/app/components/AmiralNisani";
 import { hazirlaniyorMu } from "@/lib/hazirlaniyor";
 
 /**
@@ -671,6 +672,7 @@ export default async function TopicDetailPage({
                   </div>
                 ) : null;
               })()}
+              {amiralMi(rawData.meta) && <AmiralNisani />}
               <PdfIndir baslik={topicItem.title} />
             </div>
 
