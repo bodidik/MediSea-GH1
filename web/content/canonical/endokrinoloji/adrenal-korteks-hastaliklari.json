@@ -4,7 +4,8 @@
     "updatedAt": "14 Mar 2026",
     "tags": ["Endokrin", "Korteks", "Steroid"],
     "parent": "adrenal-bez-hastaliklari",
-    "order": 1
+    "order": 1,
+    "hidden": true
   },
   "sections": [
     {

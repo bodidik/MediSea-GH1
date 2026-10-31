@@ -3,7 +3,8 @@
   "meta": {
     "updatedAt": "10 Mar 2026",
     "tags": ["Hematoloji", "Pıhtılaşma", "Harrison"],
-    "order": 5
+    "order": 5,
+    "hidden": true
   },
   "sections": [
     {

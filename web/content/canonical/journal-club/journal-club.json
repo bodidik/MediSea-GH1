@@ -4,7 +4,8 @@
     "updatedAt": "29 Mar 2026",
     "tags": ["Literatür", "Güncel", "Faz 3", "Makale"],
     "parent": null,
-    "order": 1
+    "order": 1,
+    "hidden": true
   },
   "sections": [
     {

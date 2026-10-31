@@ -4,7 +4,8 @@
     "updatedAt": "13 Mar 2026",
     "tags": ["Anemi", "Matürasyon"],
     "parent": "anemiler",
-    "order": 2
+    "order": 2,
+    "hidden": true
   },
   "sections": [
     {

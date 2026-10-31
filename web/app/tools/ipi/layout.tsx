@@ -48,18 +48,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/hematoloji/nhl-genel" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Non-Hodgkin Lenfomalar (NHL)
-              </Link>
-            </li>
-            <li>
               <Link href="/topics/hematoloji/periferik-t-hucreli-lenfomalar" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Periferik T-Hücreli Lenfomalar (PTCL)
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/hematoloji/lenfomalar" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Lenfomalar (Hodgkin ve NHL)
               </Link>
             </li>
           </ul>

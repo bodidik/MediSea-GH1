@@ -10,7 +10,8 @@
       "Harrison"
     ],
     "parent": null,
-    "order": 1
+    "order": 1,
+    "hidden": true
   },
   "sections": []
 }

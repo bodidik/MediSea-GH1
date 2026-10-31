@@ -3,7 +3,8 @@
   "meta": {
     "updatedAt": "14 Mar 2026",
     "tags": ["Endokrin", "Adrenal", "Korteks", "Medulla"],
-    "order": 3
+    "order": 3,
+    "hidden": true
   },
   "sections": [
     {

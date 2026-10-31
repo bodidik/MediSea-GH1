@@ -43,11 +43,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/endokrinoloji/adrenal-korteks-hastaliklari" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Adrenal Korteks Hastalıkları
-              </Link>
-            </li>
-            <li>
               <Link href="/topics/nefroloji/amilorid-spironolakton-karsilastirma" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji
               </Link>
@@ -58,8 +53,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/endokrinoloji/adrenal-bez-hastaliklari" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Adrenal (Sürrenal) Bez Hastalıkları
+              <Link href="/topics/nefroloji/mineralokortikoid-fazlaligi-ayirici-tani" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı
               </Link>
             </li>
           </ul>

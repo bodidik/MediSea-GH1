@@ -2,7 +2,8 @@
   "title": "Lenfomalar (Hodgkin ve NHL)",
   "meta": {
     "parent": "hematolojik-maligniteler",
-    "order":5
+    "order":5,
+    "hidden": true
   },
   "sections": [
     {

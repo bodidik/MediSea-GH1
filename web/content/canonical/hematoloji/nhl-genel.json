@@ -2,7 +2,8 @@
   "title": "Non-Hodgkin Lenfomalar (NHL)",
   "meta": {
     "parent": "lenfomalar",
-    "order": 1
+    "order": 1,
+    "hidden": true
   },
   "sections": [
     {

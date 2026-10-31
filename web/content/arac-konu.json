@@ -1989,28 +1989,6 @@
         "kaynak": "kavram"
       }
     ],
-    "endokrinoloji/adrenal-bez-hastaliklari": [
-      {
-        "slug": "adrenal-yikanma",
-        "name": "Adrenal Kitle BT Yıkanma Hesabı",
-        "eslesen": "sürrenal",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "aldosteron-renin",
-        "name": "Aldosteron/Renin Oranı",
-        "eslesen": "sürrenal",
-        "kaynak": "kavram"
-      }
-    ],
-    "endokrinoloji/adrenal-korteks-hastaliklari": [
-      {
-        "slug": "aldosteron-renin",
-        "name": "Aldosteron/Renin Oranı",
-        "eslesen": "adrenal korteks",
-        "kaynak": "kavram"
-      }
-    ],
     "endokrinoloji/adrenal-kriz": [
       {
         "slug": "acth-stim",
@@ -3029,14 +3007,6 @@
         "kaynak": "kavram"
       }
     ],
-    "endokrinoloji/tiroid-hastaliklari-ana": [
-      {
-        "slug": "tft",
-        "name": "Tiroid Fonksiyon Testi (TFT)",
-        "eslesen": "tiroid hastalık",
-        "kaynak": "kavram"
-      }
-    ],
     "endokrinoloji/tiroid-yaslanmasi-fizyolojisi": [
       {
         "slug": "tft",
@@ -3809,14 +3779,6 @@
         "kaynak": "kavram"
       }
     ],
-    "hematoloji/kanama-bozukluklari": [
-      {
-        "slug": "isth-dic",
-        "name": "ISTH DIC Skoru",
-        "eslesen": "pıhtılaşma bozuklu",
-        "kaynak": "kavram"
-      }
-    ],
     "hematoloji/kml": [
       {
         "slug": "kml-risk",
@@ -3841,26 +3803,6 @@
         "kaynak": "kavram"
       }
     ],
-    "hematoloji/lenfomalar": [
-      {
-        "slug": "ann-arbor-lugano",
-        "name": "Ann Arbor / Lugano Evrelemesi",
-        "eslesen": "lenfoma",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "hodgkin-ips",
-        "name": "Hodgkin IPS",
-        "eslesen": "Hodgkin",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "ipi",
-        "name": "IPI Skoru",
-        "eslesen": "NHL",
-        "kaynak": "kavram"
-      }
-    ],
     "hematoloji/losemiler": [
       {
         "slug": "eln-2022-aml",
@@ -3881,14 +3823,6 @@
         "kaynak": "kavram"
       }
     ],
-    "hematoloji/megaloblastik-anemi": [
-      {
-        "slug": "retikulosit-indeksi",
-        "name": "Retikülosit Üretim İndeksi",
-        "eslesen": "anemi",
-        "kaynak": "kavram"
-      }
-    ],
     "hematoloji/miyeloproliferatif": [
       {
         "slug": "dipss",
@@ -3900,28 +3834,6 @@
         "slug": "mpn-tromboz",
         "name": "MPN Tromboz Riski",
         "eslesen": "miyeloproliferatif",
-        "kaynak": "kavram"
-      }
-    ],
-    "hematoloji/nhl-genel": [
-      {
-        "slug": "ipi",
-        "name": "IPI Skoru",
-        "eslesen": "non-Hodgkin",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "ann-arbor-lugano",
-        "name": "Ann Arbor / Lugano Evrelemesi",
-        "eslesen": "lenfoma",
-        "kaynak": "kavram"
-      }
-    ],
-    "hematoloji/olgunlasma-bozukluklari": [
-      {
-        "slug": "retikulosit-indeksi",
-        "name": "Retikülosit Üretim İndeksi",
-        "eslesen": "anemi",
         "kaynak": "kavram"
       }
     ],
@@ -3944,14 +3856,6 @@
         "slug": "ann-arbor-lugano",
         "name": "Ann Arbor / Lugano Evrelemesi",
         "eslesen": "lenfoma",
-        "kaynak": "kavram"
-      }
-    ],
-    "hematoloji/pernisiyoz-anemi": [
-      {
-        "slug": "retikulosit-indeksi",
-        "name": "Retikülosit Üretim İndeksi",
-        "eslesen": "anemi",
         "kaynak": "kavram"
       }
     ],
@@ -5775,21 +5679,9 @@
         "eslesen": "IPI Skoru"
       },
       {
-        "yol": "hematoloji/nhl-genel",
-        "baslik": "Non-Hodgkin Lenfomalar (NHL)",
-        "eslesen": "non-Hodgkin",
-        "kaynak": "kavram"
-      },
-      {
         "yol": "hematoloji/periferik-t-hucreli-lenfomalar",
         "baslik": "Periferik T-Hücreli Lenfomalar (PTCL)",
         "eslesen": "periferik T",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/lenfomalar",
-        "baslik": "Lenfomalar (Hodgkin ve NHL)",
-        "eslesen": "NHL",
         "kaynak": "kavram"
       }
     ],
@@ -6083,12 +5975,6 @@
     ],
     "aldosteron-renin": [
       {
-        "yol": "endokrinoloji/adrenal-korteks-hastaliklari",
-        "baslik": "Adrenal Korteks Hastalıkları",
-        "eslesen": "adrenal korteks",
-        "kaynak": "kavram"
-      },
-      {
         "yol": "nefroloji/amilorid-spironolakton-karsilastirma",
         "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji",
         "eslesen": "Aldosteron/Renin Oranı"
@@ -6097,12 +5983,6 @@
         "yol": "kardiyoloji/aprocitentan-direncli-hipertansiyon",
         "baslik": "Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA",
         "eslesen": "dirençli hipertansiyon",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/adrenal-bez-hastaliklari",
-        "baslik": "Adrenal (Sürrenal) Bez Hastalıkları",
-        "eslesen": "sürrenal",
         "kaynak": "kavram"
       },
       {
@@ -6375,14 +6255,6 @@
         "yol": "endokrinoloji/hipofiz-yetmezligi-ozel-klinik-durumlar",
         "baslik": "Hipofiz Yetmezliği: Özel Klinik Durumlar",
         "eslesen": "hipofiz yetmezli",
-        "kaynak": "kavram"
-      }
-    ],
-    "adrenal-yikanma": [
-      {
-        "yol": "endokrinoloji/adrenal-bez-hastaliklari",
-        "baslik": "Adrenal (Sürrenal) Bez Hastalıkları",
-        "eslesen": "sürrenal",
         "kaynak": "kavram"
       }
     ],
@@ -7137,12 +7009,6 @@
         "yol": "enfeksiyon/bruselloz-hematolojik-komplikasyonlar",
         "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK",
         "eslesen": "DİK",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/kanama-bozukluklari",
-        "baslik": "Hemostaz ve Pıhtılaşma Bozuklukları",
-        "eslesen": "pıhtılaşma bozuklu",
         "kaynak": "kavram"
       }
     ],
@@ -8142,18 +8008,6 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "hematoloji/lenfomalar",
-        "baslik": "Lenfomalar (Hodgkin ve NHL)",
-        "eslesen": "lenfoma",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/nhl-genel",
-        "baslik": "Non-Hodgkin Lenfomalar (NHL)",
-        "eslesen": "lenfoma",
-        "kaynak": "kavram"
-      },
-      {
         "yol": "hematoloji/periferik-t-hucreli-lenfomalar",
         "baslik": "Periferik T-Hücreli Lenfomalar (PTCL)",
         "eslesen": "lenfoma",
@@ -8326,12 +8180,6 @@
       {
         "yol": "hematoloji/hodgkin",
         "baslik": "Hodgkin Lenfoma (HL)",
-        "eslesen": "Hodgkin",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/lenfomalar",
-        "baslik": "Lenfomalar (Hodgkin ve NHL)",
         "eslesen": "Hodgkin",
         "kaynak": "kavram"
       }
@@ -9068,11 +8916,11 @@
     ]
   },
   "olcum": {
-    "konu": 496,
+    "konu": 485,
     "arac": 281,
-    "araciOlanKonu": 355,
-    "konusuOlanArac": 176,
-    "bag": 726,
-    "kavramBag": 637
+    "araciOlanKonu": 346,
+    "konusuOlanArac": 175,
+    "bag": 713,
+    "kavramBag": 624
   }
 }

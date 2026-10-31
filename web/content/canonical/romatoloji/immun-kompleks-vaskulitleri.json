@@ -4,7 +4,8 @@
     "updatedAt": "16 Mar 2026",
     "tags": ["Romatoloji", "HSP", "HCV", "Purpura"],
     "parent": "vaskulit-sendromlari",
-    "order": 4
+    "order": 4,
+    "hidden": true
   },
   "sections": [
     {

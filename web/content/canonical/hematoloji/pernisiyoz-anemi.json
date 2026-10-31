@@ -4,7 +4,8 @@
     "updatedAt": "13 Mar 2026",
     "tags": ["Anemi", "B12", "Otoimmün", "İntrinsik Faktör"],
     "parent": "megaloblastik-anemi",
-    "order": 1
+    "order": 1,
+    "hidden": true
   },
   "sections": [
     {

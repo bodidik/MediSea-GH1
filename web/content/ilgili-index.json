@@ -1,36 +1,9 @@
 {
  "endokrinoloji/addison": [
   {
-   "brans": "hematoloji",
-   "slug": "pernisiyoz-anemi",
-   "baslik": "Pernisiyöz Anemi"
-  },
-  {
    "brans": "kardiyoloji",
    "slug": "statin-otoimmun-miyopati-imnm",
    "baslik": "İmmün Aracılı Nekrotizan Miyopati (IMNM)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "adrenal-bez-hastaliklari",
-   "baslik": "Adrenal (Sürrenal) Bez Hastalıkları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "adrenal-korteks-hastaliklari",
-   "baslik": "Adrenal Korteks Hastalıkları"
-  }
- ],
- "endokrinoloji/adrenal-bez-hastaliklari": [
-  {
-   "brans": "endokrinoloji",
-   "slug": "addison",
-   "baslik": "Addison Hastalığı (Primer Adrenal Yetmezlik)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "adrenal-yetmezlik",
-   "baslik": "Adrenal Yetmezlik (Addison ve Santral)"
   }
  ],
  "endokrinoloji/adrenal-fizyoloji-ve-steroidogenez": [
@@ -48,13 +21,6 @@
    "brans": "nefroloji",
    "slug": "fizyoloji-acth-adrenal-mekanizmalar",
    "baslik": "ACTH, Adrenal bezde Aldesteron biyosentezini etkiler mi?"
-  }
- ],
- "endokrinoloji/adrenal-korteks-hastaliklari": [
-  {
-   "brans": "endokrinoloji",
-   "slug": "addison",
-   "baslik": "Addison Hastalığı (Primer Adrenal Yetmezlik)"
   }
  ],
  "endokrinoloji/adrenal-kriz": [
@@ -91,11 +57,6 @@
    "brans": "endokrinoloji",
    "slug": "men-adrenal-kriz-yonetimi",
    "baslik": "Akut Adrenal Kriz: Klinik Tablo ve Acil Müdahale Protokolü"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "adrenal-bez-hastaliklari",
-   "baslik": "Adrenal (Sürrenal) Bez Hastalıkları"
   }
  ],
  "endokrinoloji/adrenal-yetmezlik-tani": [
@@ -251,6 +212,21 @@
    "brans": "endokrinoloji",
    "slug": "tirzepatid-genel-profil",
    "baslik": "Tirzepatid: Genel Farmakolojik ve Klinik Profili"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "on-hipofiz-hastaliklari-giris",
+   "baslik": "Ön Hipofiz Hastalıklarına Giriş"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "karaciger-hastaliklari",
+   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "sistemik-hastaliklarda-glomeruler-tutulumlar",
+   "baslik": "Sistemik Hastalıklarda Glomerüler Tutulumlar"
   }
  ],
  "endokrinoloji/diyabet-farmakolojik-tedavi": [
@@ -712,6 +688,11 @@
  "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma": [
   {
    "brans": "endokrinoloji",
+   "slug": "sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler",
+   "baslik": "SGLT2 İnhibitörleri: Pleiotropik Etkiler ve Advers Profil"
+  },
+  {
+   "brans": "endokrinoloji",
    "slug": "siadh-nadir-onb-baglantisi",
    "baslik": "Modül 6: Nadir Paraneoplastik SIADH ve Olfaktör Nöroblastoma (ONB)"
   },
@@ -724,11 +705,6 @@
    "brans": "endokrinoloji",
    "slug": "siadh-sendromu",
    "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "tiroid-hastaliklari-ana",
-   "baslik": "Tiroid Hastalıkları"
   }
  ],
  "endokrinoloji/hipertiroidi": [
@@ -1597,28 +1573,18 @@
  "endokrinoloji/on-hipofiz-hastaliklari-giris": [
   {
    "brans": "endokrinoloji",
-   "slug": "arka-hipofiz-bozukluklari-di-ve-siadh",
-   "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH"
+   "slug": "diabetes-mellitus-ana",
+   "baslik": "Diabetes Mellitus"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "hipofiz-adenomlari",
-   "baslik": "Hipofiz Nöroendokrin Tümörleri"
+   "brans": "gastroenteroloji",
+   "slug": "karaciger-hastaliklari",
+   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
   },
   {
-   "brans": "endokrinoloji",
-   "slug": "hipofiz-hastaliklari-klinik-akademik-kilavuz",
-   "baslik": "Hipofiz Hastalıkları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipofiz-yetmezligi",
-   "baslik": "Hipofiz Yetmezliği (Anterior Hipofiz Yetersizliği / Hipopitüitarizm) Klinik ve Akademik Rehberi"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipopituitarizm-ve-sheehan-sendromu",
-   "baslik": "Hipopitüitarizm ve Sheehan Sendromu"
+   "brans": "nefroloji",
+   "slug": "sistemik-hastaliklarda-glomeruler-tutulumlar",
+   "baslik": "Sistemik Hastalıklarda Glomerüler Tutulumlar"
   }
  ],
  "endokrinoloji/osteoporoz-TEMDtedavi-ozet": [
@@ -1777,23 +1743,23 @@
  "endokrinoloji/paratiroid-karsinomu-histolojik-tuzaklar": [
   {
    "brans": "endokrinoloji",
-   "slug": "hipotiroidi-hashimoto-miksoedem",
-   "baslik": "Hashimoto Tiroiditi (Kronik Lenfositik Tiroidit)"
+   "slug": "prolaktinoma-yeni-biyobelirtecler",
+   "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "hipotiroidizm-anasayfa-sistemik-etkiler",
-   "baslik": "Hipotiroidizm"
+   "slug": "santral-hipotiroidizm",
+   "baslik": "Santral Hipotiroidizm"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "kalsiyum-homeostazi-fizyoloji",
-   "baslik": "Kalsiyum Homeostazı: PTH ve Vitamin D Fizyolojisi"
+   "slug": "sglt2-inhibitorleri-kardiyorenal-metabolik",
+   "baslik": "SGLT2 İnhibitörleri (Gliflozinler): Kardiyorenal ve Metabolik Devrim"
   },
   {
    "brans": "endokrinoloji",
-   "slug": "kbh-adinamizm-vaskuler-kalsifikasyon",
-   "baslik": "Adinamik Kemik Hastalığı: Vasküler Kalsifikasyon ve Kısır Döngü"
+   "slug": "sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler",
+   "baslik": "SGLT2 İnhibitörleri: Pleiotropik Etkiler ve Advers Profil"
   }
  ],
  "endokrinoloji/pbmah-genetik-temeller-ailevi-riskler": [
@@ -2249,28 +2215,6 @@
    "brans": "endokrinoloji",
    "slug": "yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
    "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi"
-  }
- ],
- "endokrinoloji/tiroid-hastaliklari-ana": [
-  {
-   "brans": "endokrinoloji",
-   "slug": "diabetes-mellitus-ana",
-   "baslik": "Diabetes Mellitus"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "on-hipofiz-hastaliklari-giris",
-   "baslik": "Ön Hipofiz Hastalıklarına Giriş"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "amiodaron-iliskili-tirotoksikoz",
-   "baslik": "Amiodaron İlişkili Tirotoksikoz (AİT)"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
-   "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
   }
  ],
  "endokrinoloji/tiroid-yaslanmasi-fizyolojisi": [
@@ -3919,11 +3863,6 @@
  ],
  "gastroenteroloji/hepatit-c": [
   {
-   "brans": "romatoloji",
-   "slug": "immun-kompleks-vaskulitleri",
-   "baslik": "IgA Vasküliti ve Kriyoglobülinemi"
-  },
-  {
    "brans": "gastroenteroloji",
    "slug": "ascit-diuretik-tedavisi",
    "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
@@ -3947,6 +3886,11 @@
    "brans": "gastroenteroloji",
    "slug": "karaciger-hastasina-yaklasim",
    "baslik": "Karaciğer Hastasına Yaklaşım: Anamnez ve Fizik Muayene"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "siroz-ve-komplikasyonlari",
+   "baslik": "Siroz ve Komplikasyonları"
   }
  ],
  "gastroenteroloji/karaciger-hastaliklari": [
@@ -3954,6 +3898,21 @@
    "brans": "enfeksiyon",
    "slug": "bruselloz-hepatobiliyer-tutulum",
    "baslik": "Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu: Patofizyoloji, Histopatoloji ve Klinik Yönetim"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "diabetes-mellitus-ana",
+   "baslik": "Diabetes Mellitus"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "on-hipofiz-hastaliklari-giris",
+   "baslik": "Ön Hipofiz Hastalıklarına Giriş"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "sistemik-hastaliklarda-glomeruler-tutulumlar",
+   "baslik": "Sistemik Hastalıklarda Glomerüler Tutulumlar"
   },
   {
    "brans": "gastroenteroloji",
@@ -3964,21 +3923,6 @@
    "brans": "gastroenteroloji",
    "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
    "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "ascit-sıvısı",
-   "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "hepatit-c",
-   "baslik": "Hepatit C (HCV): Tanı ve Modern Tedavi"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "tips-hasta-secimi",
-   "baslik": "TIPS Hasta Seçimi: Endikasyonlar, Adaylık Kriterleri ve Kontrendikasyonlar"
   }
  ],
  "gastroenteroloji/karaciger-hastasina-yaklasim": [
@@ -4719,18 +4663,18 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "olgunlasma-bozukluklari",
-   "baslik": "Olgunlaşma Bozukluğu Anemileri"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "trombosit-hastaliklari-genel-bakis",
-   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "allojenik-kok-hucre-nakli",
    "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "aml-tedavi-algoritmasi",
+   "baslik": "AML Tedavi Algoritması ve Klinik Yönetim"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "aml",
+   "baslik": "Akut Miyeloid Lösemi (AML)"
   }
  ],
  "hematoloji/dlbcl": [
@@ -4847,33 +4791,28 @@
    "brans": "hematoloji",
    "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
    "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "megaloblastik-anemi",
-   "baslik": "Megaloblastik Anemiler (Genel)"
   }
  ],
  "hematoloji/folikuler-lenfoma": [
   {
    "brans": "hematoloji",
-   "slug": "miyeloproliferatif",
-   "baslik": "Miyeloproliferatif Neoplazmlar (MPN)"
+   "slug": "gilteritinib-flt3-aml",
+   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
   },
   {
    "brans": "hematoloji",
-   "slug": "olgunlasma-bozukluklari",
-   "baslik": "Olgunlaşma Bozukluğu Anemileri"
+   "slug": "hematolojik-maligniteler",
+   "baslik": "Hematolojik Maligniteler"
   },
   {
    "brans": "hematoloji",
-   "slug": "trombosit-hastaliklari-genel-bakis",
-   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
+   "slug": "hemolitik-anemiler-genel-bakis",
+   "baslik": "Hemolitik Anemiler"
   },
   {
    "brans": "hematoloji",
-   "slug": "allojenik-kok-hucre-nakli",
-   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
+   "slug": "immun-trombositopeni-itp",
+   "baslik": "İmmün Trombositopeni (İTP) Tedavi ve Klinik Yönetimi"
   }
  ],
  "hematoloji/g6pd-eksikligi": [
@@ -4947,8 +4886,8 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "nhl-genel",
-   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
+   "slug": "allojenik-kok-hucre-nakli",
+   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
   }
  ],
  "hematoloji/hemofililer-ve-sekonder-hemostaz": [
@@ -4990,11 +4929,6 @@
    "brans": "hematoloji",
    "slug": "makrositer-anemiler",
    "baslik": "Makrositer Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "olgunlasma-bozukluklari",
-   "baslik": "Olgunlaşma Bozukluğu Anemileri"
   }
  ],
  "hematoloji/heparin-aracili-trombositopeni-hit": [
@@ -5007,8 +4941,23 @@
  "hematoloji/hodgkin": [
   {
    "brans": "hematoloji",
-   "slug": "nhl-genel",
-   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
+   "slug": "folikuler-lenfoma",
+   "baslik": "Foliküler Lenfoma"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "gilteritinib-flt3-aml",
+   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "hematolojik-maligniteler",
+   "baslik": "Hematolojik Maligniteler"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "hemolitik-anemiler-genel-bakis",
+   "baslik": "Hemolitik Anemiler"
   }
  ],
  "hematoloji/immun-trombositopeni-itp": [
@@ -5072,28 +5021,6 @@
    "brans": "hematoloji",
    "slug": "trombositopeni-itp",
    "baslik": "İmmün Trombositopeni (ITP)"
-  }
- ],
- "hematoloji/kanama-bozukluklari": [
-  {
-   "brans": "hematoloji",
-   "slug": "gilteritinib-flt3-aml",
-   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hematolojik-maligniteler",
-   "baslik": "Hematolojik Maligniteler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hemolitik-anemiler-genel-bakis",
-   "baslik": "Hemolitik Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "immun-trombositopeni-itp",
-   "baslik": "İmmün Trombositopeni (İTP) Tedavi ve Klinik Yönetimi"
   }
  ],
  "hematoloji/kanser-iliskili-tromboz": [
@@ -5274,18 +5201,6 @@
    "baslik": "G6PD (Glukoz-6-Fosfat Dehidrogenaz) Eksikliği"
   }
  ],
- "hematoloji/lenfomalar": [
-  {
-   "brans": "hematoloji",
-   "slug": "losemiler",
-   "baslik": "Lösemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "miyelodisplastik-sendrom-mds",
-   "baslik": "Miyelodisplastik Sendromlar (MDS)"
-  }
- ],
  "hematoloji/losemiler": [
   {
    "brans": "hematoloji",
@@ -5333,30 +5248,8 @@
  "hematoloji/makrositer-anemiler": [
   {
    "brans": "hematoloji",
-   "slug": "pernisiyoz-anemi",
-   "baslik": "Pernisiyöz Anemi"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
    "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "megaloblastik-anemi",
-   "baslik": "Megaloblastik Anemiler (Genel)"
-  }
- ],
- "hematoloji/megaloblastik-anemi": [
-  {
-   "brans": "hematoloji",
-   "slug": "folat-eksikligi",
-   "baslik": "Folat (B9 Vitamini) Eksikliği"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "makrositer-anemiler",
-   "baslik": "Makrositer Anemiler"
   }
  ],
  "hematoloji/mikrositer-anemiler": [
@@ -5379,11 +5272,6 @@
    "brans": "hematoloji",
    "slug": "makrositer-anemiler",
    "baslik": "Makrositer Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "olgunlasma-bozukluklari",
-   "baslik": "Olgunlaşma Bozukluğu Anemileri"
   }
  ],
  "hematoloji/miyelodisplastik-sendrom-mds": [
@@ -5408,11 +5296,6 @@
  "hematoloji/multiple-myelom": [
   {
    "brans": "hematoloji",
-   "slug": "lenfomalar",
-   "baslik": "Lenfomalar (Hodgkin ve NHL)"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "losemiler",
    "baslik": "Lösemiler"
   },
@@ -5420,50 +5303,6 @@
    "brans": "hematoloji",
    "slug": "miyelodisplastik-sendrom-mds",
    "baslik": "Miyelodisplastik Sendromlar (MDS)"
-  }
- ],
- "hematoloji/nhl-genel": [
-  {
-   "brans": "hematoloji",
-   "slug": "hemolitik-anemiler-genel-bakis",
-   "baslik": "Hemolitik Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "immun-trombositopeni-itp",
-   "baslik": "İmmün Trombositopeni (İTP) Tedavi ve Klinik Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "inme-sonrasi-gizli-af",
-   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "kanama-bozukluklari",
-   "baslik": "Hemostaz ve Pıhtılaşma Bozuklukları"
-  }
- ],
- "hematoloji/olgunlasma-bozukluklari": [
-  {
-   "brans": "hematoloji",
-   "slug": "aplastik-anemi",
-   "baslik": "Aplastik Anemi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
-   "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hemolitik-anemiler-genel-bakis",
-   "baslik": "Hemolitik Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "makrositer-anemiler",
-   "baslik": "Makrositer Anemiler"
   }
  ],
  "hematoloji/orak-hucreli-anemi": [
@@ -5483,23 +5322,6 @@
    "brans": "hematoloji",
    "slug": "folikuler-lenfoma",
    "baslik": "Foliküler Lenfoma"
-  }
- ],
- "hematoloji/pernisiyoz-anemi": [
-  {
-   "brans": "hematoloji",
-   "slug": "makrositer-anemiler",
-   "baslik": "Makrositer Anemiler"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "addison",
-   "baslik": "Addison Hastalığı (Primer Adrenal Yetmezlik)"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "statin-otoimmun-miyopati-imnm",
-   "baslik": "İmmün Aracılı Nekrotizan Miyopati (IMNM)"
   }
  ],
  "hematoloji/pod24-bispesifik-antikorlar": [
@@ -5576,23 +5398,23 @@
  "hematoloji/porfiriler-aip-pct": [
   {
    "brans": "hematoloji",
+   "slug": "immun-trombositopeni-itp",
+   "baslik": "İmmün Trombositopeni (İTP) Tedavi ve Klinik Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "inme-sonrasi-gizli-af",
+   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "losemiler",
+   "baslik": "Lösemiler"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "makrositer-anemiler",
    "baslik": "Makrositer Anemiler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "megaloblastik-anemi",
-   "baslik": "Megaloblastik Anemiler (Genel)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "miyeloproliferatif",
-   "baslik": "Miyeloproliferatif Neoplazmlar (MPN)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "nhl-genel",
-   "baslik": "Non-Hodgkin Lenfomalar (NHL)"
   }
  ],
  "hematoloji/primer-miyelofibrozis": [
@@ -5731,11 +5553,6 @@
  "hematoloji/waldenstrom-makroglobulinemisi-wm": [
   {
    "brans": "hematoloji",
-   "slug": "lenfomalar",
-   "baslik": "Lenfomalar (Hodgkin ve NHL)"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "losemiler",
    "baslik": "Lösemiler"
   },
@@ -5808,14 +5625,14 @@
    "baslik": "NEJM: FLAURA2 Faz 3 - EGFR-Mutant KHDAK'de Osimertinib ve Kemoterapi"
   },
   {
-   "brans": "onkoloji",
-   "slug": "khdak-tedavisi",
-   "baslik": "Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tedavisi: Erken Evreden Metastatik Hastalığa - Bölüm 3"
-  },
-  {
    "brans": "journal-club",
    "slug": "iptacopan-igan-faz3",
    "baslik": "Nefroloji-NEJM: APPLAUSE-IgAN Faz 3 ve İptacopan"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "khdak-tedavisi",
+   "baslik": "Küçük Hücreli Dışı Akciğer Kanseri (KHDAK) Tedavisi: Erken Evreden Metastatik Hastalığa - Bölüm 3"
   }
  ],
  "kardiyoloji/aks-oac-antitrombotik-yonetim": [
@@ -6455,11 +6272,6 @@
    "brans": "endokrinoloji",
    "slug": "addison",
    "baslik": "Addison Hastalığı (Primer Adrenal Yetmezlik)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "pernisiyoz-anemi",
-   "baslik": "Pernisiyöz Anemi"
   },
   {
    "brans": "kardiyoloji",
@@ -7665,29 +7477,19 @@
  ],
  "nefroloji/sistemik-hastaliklarda-glomeruler-tutulumlar": [
   {
-   "brans": "nefroloji",
-   "slug": "fokal-segmental-glomeruloskleroz-fsgs",
-   "baslik": "Fokal Segmental Glomeruloskleroz (FSGS)"
+   "brans": "endokrinoloji",
+   "slug": "diabetes-mellitus-ana",
+   "baslik": "Diabetes Mellitus"
   },
   {
-   "brans": "nefroloji",
-   "slug": "herediter-glomeruler-hastaliklar",
-   "baslik": "Herediter Glomerüler Hastalıklar"
+   "brans": "endokrinoloji",
+   "slug": "on-hipofiz-hastaliklari-giris",
+   "baslik": "Ön Hipofiz Hastalıklarına Giriş"
   },
   {
-   "brans": "nefroloji",
-   "slug": "hizli-ilerleyen-glomerulonefritler-rpgn",
-   "baslik": "Hızlı İlerleyen Glomerulonefritler (RPGN)"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "iga-nefropatisi-berger",
-   "baslik": "IgA Nefropatisi ve IgA Vasküliti (HSP)"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "membranoz-nefropati-mn",
-   "baslik": "Membranöz nefropati"
+   "brans": "gastroenteroloji",
+   "slug": "karaciger-hastaliklari",
+   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
   }
  ],
  "nefroloji/trombotik-mikroanjiyopatiler-tma": [
@@ -8575,11 +8377,6 @@
   },
   {
    "brans": "romatoloji",
-   "slug": "immun-kompleks-vaskulitleri",
-   "baslik": "IgA Vasküliti ve Kriyoglobülinemi"
-  },
-  {
-   "brans": "romatoloji",
    "slug": "nadir-vaskulitler",
    "baslik": "Nadir, Tek Organ ve Sekonder Vaskülitler"
   },
@@ -8611,13 +8408,6 @@
    "baslik": "Vaskülit Sendromları"
   }
  ],
- "romatoloji/immun-kompleks-vaskulitleri": [
-  {
-   "brans": "gastroenteroloji",
-   "slug": "hepatit-c",
-   "baslik": "Hepatit C (HCV): Tanı ve Modern Tedavi"
-  }
- ],
  "romatoloji/nadir-vaskulitler": [
   {
    "brans": "romatoloji",
@@ -8633,11 +8423,6 @@
    "brans": "romatoloji",
    "slug": "buyuk-damar-vaskulitleri",
    "baslik": "Dev Hücreli Arterit ve Takayasu"
-  },
-  {
-   "brans": "romatoloji",
-   "slug": "immun-kompleks-vaskulitleri",
-   "baslik": "IgA Vasküliti ve Kriyoglobülinemi"
   },
   {
    "brans": "romatoloji",
