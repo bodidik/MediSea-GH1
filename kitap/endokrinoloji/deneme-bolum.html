@@ -10131,10 +10131,10 @@ ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--bra
       <thead><tr><th style="width:44mm">Gösterge</th><th>Hedef / kural</th></tr></thead>
       <tbody>
         <tr><td class="bas">Rapor geçerliliği</td><td>14 gün, verinin <b>≥%70</b>’i; altındaki rapor değerlendirilmez</td></tr>
-        <tr><td class="bas">Hedefte geçen zaman</td><td>70–180 mg/dL <b>&gt;%70</b>; her %5 artış klinik kazanç</td></tr>
+        <tr><td class="bas">Hedefte geçen zaman</td><td>70–180 mg/dL <b>&gt;%70</b> (&gt;16 sa 48 dk); yaşlı/yüksek riskte &gt;%50</td></tr>
         <tr><td class="bas">Altında</td><td>Düzey 1: 54–69 · düzey 2: &lt;54. Yaşlıda &lt;70’te geçen zaman ≤%1, gençte ≤%4</td></tr>
         <tr><td class="bas">Üstünde</td><td>Düzey 1: 181–250 · düzey 2: &gt;250</td></tr>
-        <tr><td class="bas">Değişkenlik</td><td>%CV ≤36 (insülin/SU kullananda &lt;%33)</td></tr>
+        <tr><td class="bas">Değişkenlik</td><td>Stabil seyirde %CV 36; hedef &lt;%33 (TEMD)</td></tr>
         <tr><td class="bas">Gebelik</td><td>Aralık <b>63–140</b>; tip 1’de ≥%70. Parmak hedefleri: açlık &lt;95, 1. saat &lt;140, 2. saat &lt;120</td></tr>
       </tbody>
     </table>
@@ -10146,11 +10146,8 @@ ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--bra
     <h2>Sensörü yanıltanlar</h2>
     <table class="tb">
       <tbody>
-        <tr><td class="bas" style="width:44mm">C vitamini takviyesi</td><td>≥500 mg Libre 2/3’ü, ≥1000 mg plus sürümleri yalancı yüksek okutur (portakal suyu değil, takviye)</td></tr>
-        <tr><td class="bas">Parasetamol ≥4 g/gün</td><td>Dexcom G6/G7, Guardian’da yalancı yüksek; hidroksiüre de</td></tr>
-        <tr><td class="bas">Kompresyon</td><td>Üstüne yatılan sensör sahte gece hipoglisemisi</td></tr>
-        <tr><td class="bas">İkodekstrin (PD)</td><td>GDH-PQQ şeridinde maltoz yalancı yüksek → hipoglisemi maskelenir</td></tr>
-        <tr><td class="bas">Fark</td><td>Kapiller–interstisyel 5–10 dk gecikme: sensör hipoglisemi derse tedaviden önce <b>parmak ucu</b>. MARD &lt;%10 cihazda dozlama parmaksız yapılabilir</td></tr>
+        <tr><td class="bas" style="width:44mm">İlaçlar</td><td>Asetaminofen, askorbik asit (C vitamini), hidroksiüre, mannitol, sorbitol — çoğu kez <b>yalancı yüksek</b>; etki cihaza göre değişir (TEMD)</td></tr>
+                                <tr><td class="bas">Fark</td><td>Özellikle hipo/hiperglisemide sensör değeri klinikle uyuşmuyorsa <b>glukometreyle</b> doğrula; her SGM kullanıcısının glukometresi olmalı (TEMD)</td></tr>
       </tbody>
     </table>
   </div>
@@ -10158,16 +10155,16 @@ ol.tekrar li b { display: block; font: 600 8pt/1.3 var(--sans); color: var(--bra
   <div class="blok">
     <h2>Pompa hesapları</h2>
     <div class="bw" style="grid-template-columns:repeat(4,1fr)">
-      <div><b>Bazal</b><span>Toplamın %40–50’si; ~0,01–0,015 IU/kg/saat</span></div>
-      <div><b>Öğün atlama testi</b><span>Fark &gt;35 mg/dL ise o dilimin bazalı yanlış</span></div>
+      <div><b>Bazal</b><span>Saatlik hız = (pompa TİD × 0,5) / 24; 2–3 günde bir ayarla</span></div>
+      <div><b>Bazal yeterliliği</b><span>Bazal düzeyler arası fark &lt;35 mg/dL hedeflenir; aşarsa o dilimin bazalı ayarlanır</span></div>
       <div><b>KH/İ oranı</b><span>Dirençli 300/TİD, duyarlı 450/TİD</span></div>
-      <div><b>Düzeltme faktörü</b><span>1700/TİD (dirençte 1500, duyarlıda 1800)</span></div>
+      <div><b>Düzeltme faktörü</b><span>1700/TİD</span></div>
     </div>
   </div>
 
   <div class="iki-sutun">
-    <div class="kutu inci"><div class="ad">Klinik inci · hibrit kapalı döngü</div><p>Algoritma 5 dakikada bir mini bolus verir; <b>öğün bolusunu hâlâ hasta verir</b>. Öngörücü askıya alma hipoglisemiden 30 dk önce durdurur, en çok 2 saat.</p></div>
-    <div class="kutu tuzak"><div class="ad">Tuzak · pompa adayı</div><p>Günde ≥4 ölçüm ya da karbonhidrat sayımı yapamayan/istemeyen hasta pompa adayı değildir; endikasyon tip 1’le sınırlı da değildir.</p></div>
+    <div class="kutu inci"><div class="ad">Klinik inci · hibrit kapalı döngü</div><p>Sensör + algoritmayla programlanan kapalı devre pompalar hızla ilerliyor (TEMD); hibrit sistemde <b>öğün bolusunu hâlâ hasta verir</b>.</p></div>
+    <div class="kutu tuzak"><div class="ad">Tuzak · pompa adayı</div><p>Günde 4–6 kez ölçüme hazır olmayan, çoklu doz tedaviye uyumsuz hasta pompa adayı değildir (TEMD); endikasyon tip 1’le sınırlı da değildir.</p></div>
   </div>
 
   <div class="folyo"><b>156</b><span>MediSea Hızlı Bakış · Endokrinoloji</span></div>
