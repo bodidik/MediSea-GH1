@@ -1187,3 +1187,11 @@ Kullanıcı: "bu 5 sayıyı da defter kaynaklarıyla bilimsel olarak üst seviye
 - Kapılar: 16 adımın hepsi OK (link, soru, indeksler, kaynak, arayüz, iç bileşen, saydamlık, renk, dil, yorum körlüğü, updatedAt). Kitap önizlemeleri (gastro s. 7, hemato s. 21) taşmasız.
 - **Ölçüm notları:** (1) defterde arama `.source-panel` ile sınırlanmalı — `document.body` sohbet yanıtını da içeriyor, ilk turda sohbetteki vaka metni "kaynakta bulundu" gibi göründü. (2) UpToDate PDF'i şifreli yazı tipiyle dışa aktarılmışsa `pymupdf` ile sayfayı PNG'ye basıp oku (Read aracı PDF için pdftoppm istiyor, kurulu değil). (3) Dergi metninde dizgi hatası olabilir: Yang 2024'te "≥ 45 mg/dL" hem defterde hem dergi sitesinde aynı — kaynak sadakati sayıyı taşımayı değil, kullanılamaz olduğunu söylemeyi gerektirir.
 - **Açık:** asit-baz quiz'inin başka sorularında da ">1,6" eşiği geçebilir (yalnız 4, 20, 21 elden geçti).
+
+### Tur 93 ek — delta oranı ">1,6" eşiği her yerden kaldırıldı (31 Eki 2026)
+Kaynak: Asit-baz defterindeki UpToDate *The delta anion gap/delta HCO3 ratio* (<1 · 1:1 · 1–2 [laktik ort. 1,6; alkalozla da olur] · >2). ">1,6 → alkaloz" ve "1,0–1,6 saf" aralıkları kaynakta yok.
+- Premium quiz `asit-baz-dengesi-quiz-1`: soru 19 (KOAH zemini), soru 20 (tablo + şık A açıklaması), soru 21 (">1,6–2,0 olduğu durumlar" başlığı, şık E açıklaması). Dosyada ">1.6-2" / "1.0-1.6" kalmadı.
+- Açık site: `delta-anyon-acigi-delta-delta-orani` (tablo satırları; "<0,8" da kaynakta yok → UpToDate) ve `metabolik-asidoz` (iki kutu); updatedAt "31 Eki 2026" (metabolik-asidoz'un eski "2026-10-18" biçimi kancaya uymuyordu).
+- Premium konu `asit-baz-dengesi` (adım 4).
+- Nefroloji kitabı s. 31, 35 (tabloya 1:1 ve 1–2 satırı), 39. s. 35 taşmasız.
+- 12 kapı OK.
