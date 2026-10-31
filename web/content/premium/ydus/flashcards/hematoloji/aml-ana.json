@@ -325,7 +325,7 @@
     {
       "id": "card-54",
       "front": "HKHN öncesi Karnofsky performans skoru neyin altındaysa survi belirgin düşer?",
-      "back": "≤ %90 (veya bazen %70 eşiği kullanılır).",
+      "back": "<%90 (UpToDate; CIBMTR verisi). Tam remisyonda olmayan relaps/refrakter AML'de miyeloablatif nakil öncesi skorun beş ölçütünden biridir (en fazla 6 puan): ilk tam remisyon ≤6 ay (1) · nakil öncesi kötü riskli sitogenetik (1) · donör: uyumsuz akraba dışı (1), HLA-özdeş kardeş dışı akraba (2) · dolaşan blast (1) · Karnofsky <90 (1). 1673 hastada 3 yıllık genel sağkalım 0, 1, 2 ve 3 puanda %42, 28, 15 ve 6. Skor ≤2 ise ek indüksiyon yapılmadan nakle gidilebilir, ≥3 ise miyeloablatif nakilden yarar beklenmez. %70 ayrı bir eşiktir: Karnofsky <%70, aynı UpToDate bölümündeki organ işlevi ölçütleri listesinde yer alır.",
       "tag": "HCT / Nakil"
     },
     {
