@@ -11,6 +11,7 @@ import { JsonLd, kirintiSemasi } from "@/lib/jsonld";
 import { slugCoz } from "@/lib/slug";
 import { bransIcindekiler, roma, type TocBolum } from "@/lib/icindekiler";
 import BransArama from "./BransArama";
+import { AmiralRutbe } from "@/app/components/AmiralNisani";
 import { DalgaCizgisi, DumenSimgesi } from "@/app/components/DenizSusu";
 
 // Branş listesi de dosya sisteminden geliyor ve oturuma bağlı değil.
@@ -341,7 +342,7 @@ function BolumKarti({ bolum, brans, renk }: { bolum: TocBolum; brans: string; re
           <p className="mb-1.5 px-1 text-[11px] font-bold uppercase tracking-wider text-slate-600">Alt başlıklar</p>
           <ul className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 sm:gap-2">
             {ilk.map((c) => (
-              <AltSatir key={c.slug} slug={c.slug} baslik={c.baslik} alt={c.altToplam} brans={brans} />
+              <AltSatir key={c.slug} slug={c.slug} baslik={c.baslik} alt={c.altToplam} brans={brans} amiral={c.amiral} amiralAlt={c.amiralAlt} />
             ))}
           </ul>
           {kalan.length > 0 && (
@@ -352,7 +353,7 @@ function BolumKarti({ bolum, brans, renk }: { bolum: TocBolum; brans: string; re
               </summary>
               <ul className="mt-1.5 grid grid-cols-1 gap-1.5 sm:grid-cols-2 sm:gap-2">
                 {kalan.map((c) => (
-                  <AltSatir key={c.slug} slug={c.slug} baslik={c.baslik} alt={c.altToplam} brans={brans} />
+                  <AltSatir key={c.slug} slug={c.slug} baslik={c.baslik} alt={c.altToplam} brans={brans} amiral={c.amiral} amiralAlt={c.amiralAlt} />
                 ))}
               </ul>
             </details>
@@ -363,7 +364,7 @@ function BolumKarti({ bolum, brans, renk }: { bolum: TocBolum; brans: string; re
   );
 }
 
-function AltSatir({ slug, baslik, alt, brans }: { slug: string; baslik: string; alt: number; brans: string }) {
+function AltSatir({ slug, baslik, alt, brans, amiral, amiralAlt }: { slug: string; baslik: string; alt: number; brans: string; amiral?: string; amiralAlt: string[] }) {
   return (
     <li>
       <Link
@@ -372,6 +373,8 @@ function AltSatir({ slug, baslik, alt, brans }: { slug: string; baslik: string; 
       >
         <span aria-hidden="true" className="text-sky-500">›</span>
         <span className="min-w-0 flex-1">{baslik}</span>
+        {amiral && <AmiralRutbe isolar={[amiral]} sunucuAni={Date.now()} />}
+        {amiralAlt.length > 0 && <AmiralRutbe isolar={amiralAlt} alt sunucuAni={Date.now()} />}
         {alt > 0 && (
           <span className="shrink-0 rounded-full bg-slate-100 px-1.5 text-[11px] font-bold text-slate-600" title={`${alt} ileri okuma`}>
             +{alt}

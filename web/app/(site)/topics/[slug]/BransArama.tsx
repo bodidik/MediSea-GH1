@@ -3,8 +3,9 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { aramaNormalize } from "@/app/lib/arama";
+import { AmiralRutbe } from "@/app/components/AmiralNisani";
 
-export type BransAramaKaydi = { slug: string; baslik: string; yol: string };
+export type BransAramaKaydi = { slug: string; baslik: string; yol: string; amiral?: string };
 
 /**
  * Branş içi arama — İçindekiler'in derin katmanları için.
@@ -52,7 +53,7 @@ export default function BransArama({ konular, brans }: { konular: BransAramaKayd
               {sonuclar.map((k) => (
                 <li key={k.slug}>
                   <Link href={`/topics/${brans}/${k.slug}`} className="block rounded-xl px-3 py-2.5 transition hover:bg-slate-50">
-                    <span className="block text-[14px] font-bold leading-snug text-blue-950">{k.baslik}</span>
+                    <span className="flex items-baseline gap-2 text-[14px] font-bold leading-snug text-blue-950"><span className="min-w-0 flex-1">{k.baslik}</span>{k.amiral && <AmiralRutbe isolar={[k.amiral]} sunucuAni={Date.now()} />}</span>
                     <span className="mt-0.5 block text-[12px] text-slate-500">{k.yol}</span>
                   </Link>
                 </li>

@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import duzen from "@/content/brans-icindekiler.json";
 import { ebeveynleriCoz } from "@/lib/slug-eslestir";
+import { isoTarih } from "@/lib/jsonld";
 
 /**
  * Branş sayfasının "İçindekiler"i — ders kitabı düzeni.
@@ -27,6 +28,10 @@ import { ebeveynleriCoz } from "@/lib/slug-eslestir";
 export type TocKonu = {
   slug: string;
   baslik: string;
+  /** Amiral sayfasıysa güncelleme tarihi (ISO); rozet süreyi istemcide hesaplar. */
+  amiral?: string;
+  /** Bütün torunlardaki amiral sayfaların tarihleri. */
+  amiralAlt: string[];
   /** Doğrudan çocuklar (birincil ebeveyni bu konu olanlar). */
   cocuklar: TocKonu[];
   /** Bütün torunlar dahil alt konu sayısı. */
@@ -44,7 +49,7 @@ export type TocBolum = {
 
 export type TocKisim = { no: number; baslik: string; bolumler: TocBolum[] };
 
-export type DuzKonu = { slug: string; baslik: string; yol: string };
+export type DuzKonu = { slug: string; baslik: string; yol: string; amiral?: string };
 
 export type Icindekiler = {
   kisimlar: TocKisim[];
@@ -54,7 +59,7 @@ export type Icindekiler = {
   duz: DuzKonu[];
 };
 
-type Ham = { slug: string; baslik: string; order: number; ebeveynler: string[]; gizli: boolean };
+type Ham = { slug: string; baslik: string; order: number; ebeveynler: string[]; gizli: boolean; amiral?: string };
 
 type DuzenGirdisi = {
   kisimlar: { baslik: string; bolumler: string[] }[];
@@ -80,6 +85,7 @@ function konulariOku(brans: string): Ham[] {
         hamParent: veri.meta?.parent ?? null,
         ebeveynler: [],
         gizli: veri.meta?.hidden === true,
+        amiral: veri.meta?.nisan === "amiral" ? isoTarih(veri.meta?.updatedAt) : undefined,
       });
     } catch {
       // bozuk dosya listeyi düşürmesin
@@ -96,6 +102,9 @@ function konulariOku(brans: string): Ham[] {
   });
   return ham.map(({ hamParent: _h, ...k }) => k);
 }
+
+const amiralTopla = (l: TocKonu[]): string[] =>
+  l.flatMap((x) => (x.amiral ? [x.amiral, ...x.amiralAlt] : x.amiralAlt));
 
 export function bransIcindekiler(brans: string): Icindekiler {
   const tum = konulariOku(brans);
@@ -124,6 +133,8 @@ export function bransIcindekiler(brans: string): Icindekiler {
         return {
           slug: c.slug,
           baslik: c.baslik,
+          amiral: c.amiral,
+          amiralAlt: amiralTopla(cocuklar),
           cocuklar,
           altToplam: cocuklar.reduce((t, x) => t + 1 + x.altToplam, 0),
         };
@@ -163,7 +174,7 @@ export function bransIcindekiler(brans: string): Icindekiler {
       kullanilan.add(kimlik);
       const cocuklar: TocKonu[] = grup.map((k) => {
         const alt = agac(k.slug, new Set([k.slug]));
-        return { slug: k.slug, baslik: k.baslik, cocuklar: alt, altToplam: alt.reduce((t, x) => t + 1 + x.altToplam, 0) };
+        return { slug: k.slug, baslik: k.baslik, amiral: k.amiral, amiralAlt: amiralTopla(alt), cocuklar: alt, altToplam: alt.reduce((t, x) => t + 1 + x.altToplam, 0) };
       });
       return {
         slug: null,
@@ -210,7 +221,7 @@ export function bransIcindekiler(brans: string): Icindekiler {
   const duz: DuzKonu[] = [];
   const gez = (liste: TocKonu[], yol: string) => {
     for (const x of liste) {
-      duz.push({ slug: x.slug, baslik: x.baslik, yol });
+      duz.push({ slug: x.slug, baslik: x.baslik, yol, amiral: x.amiral });
       gez(x.cocuklar, yol);
     }
   };

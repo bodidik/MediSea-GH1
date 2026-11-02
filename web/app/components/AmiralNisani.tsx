@@ -83,12 +83,35 @@ export default function AmiralNisani({ iso, amiral, sunucuAni }: Props) {
   );
 }
 
-function AmiralSimgesi({ soluk }: { soluk: boolean }) {
+/**
+ * İndeksteki RÜTBE işareti — branş içindekiler ve arama listesinde amiral
+ * sayfanın yanında. Nişanla aynı süre kuralı: süresi dolmuşsa hiç çizilmez
+ * (askıdaki nişan listede övülmez). `alt`: satırın gizli alt sayfalarındaki
+ * amiral sayısı ("+N" içinde kalan torunlar görünmüyordu).
+ */
+export function AmiralRutbe({ isolar, alt = false, sunucuAni }: { isolar: string[]; alt?: boolean; sunucuAni: number }) {
+  const [simdi, setSimdi] = useState(sunucuAni);
+  useEffect(() => setSimdi(Date.now()), []);
+  const n = isolar.filter((iso) => {
+    const gun = gecenGun(iso, simdi);
+    return gun !== null && gun <= NISAN_SURESI_GUN;
+  }).length;
+  if (!n) return null;
+  const ad = alt ? `${n} amiral alt sayfa` : "Amiral sayfası";
+  return (
+    <span className="inline-flex shrink-0 items-center gap-1 self-center rounded-full border border-amber-300 bg-amber-50 py-0.5 pl-0.5 pr-1.5" title={ad} aria-label={ad} role="img">
+      <AmiralSimgesi soluk={false} boy="h-4 w-4" />
+      <span aria-hidden="true" className="text-[10px] font-black uppercase tracking-wider text-amber-900">{alt ? `${n} amiral` : "Amiral"}</span>
+    </span>
+  );
+}
+
+function AmiralSimgesi({ soluk, boy = "h-8 w-8" }: { soluk: boolean; boy?: string }) {
   const zemin = soluk ? "#78716c" : "#1e3a8a";
   const altin = soluk ? "#d6d3d1" : "#fbbf24";
   const halka = soluk ? "#a8a29e" : "#f59e0b";
   return (
-    <svg aria-hidden="true" viewBox="0 0 32 32" className="h-8 w-8 shrink-0" fill="none">
+    <svg aria-hidden="true" viewBox="0 0 32 32" className={boy + " shrink-0"} fill="none">
       <circle cx="16" cy="16" r="15" fill={zemin} />
       <circle cx="16" cy="16" r="13" stroke={halka} strokeWidth="1.5" />
       <path d="M16 4.5l1.3 2.7 3 .4-2.2 2 .5 2.9-2.6-1.4-2.6 1.4.5-2.9-2.2-2 3-.4z" fill={altin} />
