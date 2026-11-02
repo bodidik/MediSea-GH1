@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 610" width="640" height="610" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Subklinik hipotiroidide levotiroksinin randomize kanıtı: belirti ve yorgunlukta fark yok</title>
+<desc id="d">TRUST çalışmasında 65 yaş ve üstü 737 subklinik hipotiroidi hastası LT4 ya da plaseboya randomize edildi; 1 yılda TSH LT4 kolunda 3,63, plasebo kolunda 5,48'e indi, ama hipotiroidi belirti puanı farkı 0,0 (%95 GA −2,0 ile 2,1), yorgunluk puanı farkı 0,4 (−2,1 ile 2,9) idi; klinik olarak anlamlı en küçük fark 9 puandı. İki randomize çalışmanın 660 hastalık birleşik analizinde (Lyko 2022) TPO antikoru pozitif olanlarda belirti farkı −2,07 (−6,04 ile 1,90), negatif olanlarda 0,89 (−1,76 ile 3,54) idi; antikor durumu yanıtı değiştirmedi. 21 randomize çalışmanın meta-analizinde (Feller 2018, 2192 erişkin) LT4 TSH'yi normale indirdi ama genel yaşam kalitesinde (SMD −0,11) ya da tiroide özgü belirtilerde (SMD 0,01) fayda göstermedi.</desc>
+<!-- 16 sn, tek seferlik; son kare = statik şemanın tamamı. Hareket azaltmada animasyon çalışmaz. Üretici: kv-semalar.cjs -->
+<style>
+.a{animation-duration:16s;animation-iteration-count:1;animation-timing-function:ease-in-out;animation-fill-mode:both}
+.ciz{stroke-dasharray:1}
+.o0{animation-name:o0}@keyframes o0{0%,0%{opacity:0;transform:translateY(7px)}3%,100%{opacity:1;transform:none}}
+.o0 .ciz{animation-name:o0c}@keyframes o0c{0%,0%{stroke-dashoffset:1}4%,100%{stroke-dashoffset:0}}
+.o1{animation-name:o1}@keyframes o1{0%,13%{opacity:0;transform:translateY(7px)}16%,100%{opacity:1;transform:none}}
+.o1 .ciz{animation-name:o1c}@keyframes o1c{0%,13%{stroke-dashoffset:1}17%,100%{stroke-dashoffset:0}}
+.o2{animation-name:o2}@keyframes o2{0%,25%{opacity:0;transform:translateY(7px)}28%,100%{opacity:1;transform:none}}
+.o2 .ciz{animation-name:o2c}@keyframes o2c{0%,25%{stroke-dashoffset:1}29%,100%{stroke-dashoffset:0}}
+.o3{animation-name:o3}@keyframes o3{0%,38%{opacity:0;transform:translateY(7px)}41%,100%{opacity:1;transform:none}}
+.o3 .ciz{animation-name:o3c}@keyframes o3c{0%,38%{stroke-dashoffset:1}42%,100%{stroke-dashoffset:0}}
+.o4{animation-name:o4}@keyframes o4{0%,50%{opacity:0;transform:translateY(7px)}53%,100%{opacity:1;transform:none}}
+.o4 .ciz{animation-name:o4c}@keyframes o4c{0%,50%{stroke-dashoffset:1}54%,100%{stroke-dashoffset:0}}
+.o5{animation-name:o5}@keyframes o5{0%,63%{opacity:0;transform:translateY(7px)}66%,100%{opacity:1;transform:none}}
+.o5 .ciz{animation-name:o5c}@keyframes o5c{0%,63%{stroke-dashoffset:1}67%,100%{stroke-dashoffset:0}}
+.o6{animation-name:o6}@keyframes o6{0%,75%{opacity:0;transform:translateY(7px)}78%,100%{opacity:1;transform:none}}
+.o6 .ciz{animation-name:o6c}@keyframes o6c{0%,75%{stroke-dashoffset:1}79%,100%{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){.a{animation:none!important}}
+</style>
+<defs>
+<marker id="ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+<marker id="okK" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+<marker id="okY" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker>
+<marker id="okM" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0284c7"/></marker>
+<marker id="okP" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9333ea"/></marker>
+<marker id="okA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker>
+</defs>
+<rect width="640" height="610" fill="#ffffff"/>
+<g class="a o0"><text x="320" y="24" font-size="14" font-weight="800" text-anchor="middle" fill="#0f172a">LT4 ile plasebo arasındaki fark (puan, %95 GA)</text><rect x="176" y="44" width="288" height="280" fill="#f0fdf4" stroke="#86efac" stroke-dasharray="5 4"/><text x="320" y="62" font-size="10.5" font-weight="700" text-anchor="middle" fill="#15803d">klinik olarak anlamlı en küçük fark: ±9 puan</text><line x1="320" y1="70" x2="320" y2="320" stroke="#0f172a" stroke-width="1.5"/><text x="176" y="340" font-size="10.5" text-anchor="middle" fill="#64748b">−9</text><text x="224" y="340" font-size="10.5" text-anchor="middle" fill="#64748b">−6</text><text x="272" y="340" font-size="10.5" text-anchor="middle" fill="#64748b">−3</text><text x="320" y="340" font-size="10.5" text-anchor="middle" fill="#64748b">0</text><text x="368" y="340" font-size="10.5" text-anchor="middle" fill="#64748b">3</text><text x="416" y="340" font-size="10.5" text-anchor="middle" fill="#64748b">6</text><text x="464" y="340" font-size="10.5" text-anchor="middle" fill="#64748b">9</text><text x="220" y="358" font-size="10.5" font-weight="700" text-anchor="middle" fill="#475569">← LT4 lehine</text><text x="420" y="358" font-size="10.5" font-weight="700" text-anchor="middle" fill="#475569">plasebo lehine →</text></g>
+<g class="a o1"><text x="10" y="100" font-size="11.5" font-weight="800" fill="#0f172a">TRUST · belirti puanı</text><text x="10" y="115" font-size="10" fill="#475569">737 kişi · ≥65 yaş</text><line x1="288" y1="96" x2="353.6" y2="96" stroke="#1e3a8a" stroke-width="2.6"/><rect x="314" y="90" width="12" height="12" fill="#1e3a8a"/><text x="361.6" y="100" font-size="10.5" font-weight="700" fill="#1e3a8a">0</text></g>
+<g class="a o2"><text x="10" y="156" font-size="11.5" font-weight="800" fill="#0f172a">TRUST · yorgunluk puanı</text><line x1="286.4" y1="152" x2="366.4" y2="152" stroke="#1e3a8a" stroke-width="2.6"/><rect x="320.4" y="146" width="12" height="12" fill="#1e3a8a"/><text x="374.4" y="156" font-size="10.5" font-weight="700" fill="#1e3a8a">0,4</text></g>
+<g class="a o3"><text x="10" y="212" font-size="11.5" font-weight="800" fill="#0f172a">Lyko · belirti · TPO (+)</text><text x="10" y="227" font-size="10" fill="#475569">660 kişi · ≥65 yaş</text><line x1="223.36" y1="208" x2="350.4" y2="208" stroke="#1e3a8a" stroke-width="2.6"/><rect x="280.88" y="202" width="12" height="12" fill="#1e3a8a"/><text x="358.4" y="212" font-size="10.5" font-weight="700" fill="#1e3a8a">−2,07</text></g>
+<g class="a o4"><text x="10" y="268" font-size="11.5" font-weight="800" fill="#0f172a">Lyko · belirti · TPO (−)</text><line x1="291.84" y1="264" x2="376.64" y2="264" stroke="#1e3a8a" stroke-width="2.6"/><rect x="328.24" y="258" width="12" height="12" fill="#1e3a8a"/><text x="384.64" y="268" font-size="10.5" font-weight="700" fill="#1e3a8a">0,89</text></g>
+<g class="a o5"><rect x="10" y="380" width="620" height="92" rx="12" fill="#dbeafe" stroke="#1e3a8a" stroke-width="1.6"/><text x="320" y="413.75" font-size="13.5" font-weight="800" text-anchor="middle" fill="#1e3a8a">Feller 2018 · 21 RCT · 2192 erişkin</text><text x="320" y="432.75" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e3a8a">TSH normale indi, ama yaşam kalitesi SMD −0,11 (−0,25 – 0,03)</text><text x="320" y="448.75" font-size="11.5" font-weight="500" text-anchor="middle" fill="#1e3a8a">tiroide özgü belirtiler SMD 0,01 (−0,12 – 0,14) · kanıt orta–yüksek</text></g>
+<g class="a o6"><rect x="10" y="488" width="620" height="72" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/><text x="320" y="519.75" font-size="13.5" font-weight="800" text-anchor="middle" fill="#78350f">Sonuç: TSH düzeliyor, hasta değişmiyor</text><text x="320" y="538.75" font-size="11.5" font-weight="500" text-anchor="middle" fill="#78350f">TPO pozitifliği yaşlıda LT4 yanıtını artırmıyor (Lyko 2022)</text><text x="320" y="590" font-size="10.5" font-weight="500" text-anchor="middle" fill="#475569">Kaynak: Stott 2017 (NEJM, TRUST), Lyko 2022 (J Intern Med), Feller 2018 (JAMA)</text></g>
+</svg>
