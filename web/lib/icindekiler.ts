@@ -268,3 +268,29 @@ export function bransAmiral(brans: string): { sayfa: string[]; ileri: string[] }
   }
   return { sayfa, ileri };
 }
+
+/**
+ * Ana sayfa istatistik barı: ana konu (bölüm + doğrudan alt başlık) ile
+ * ileri okuma (daha derin) ayrı sayılır, ikisinin amiralleri ayrıca.
+ * Kaynak İçindekiler ağacı — branş sayfasında görünenle aynı sayı.
+ */
+export function katmanSayilari(branslar: string[]) {
+  let konu = 0;
+  let ileri = 0;
+  const amiralKonu: string[] = [];
+  const amiralIleri: string[] = [];
+  for (const brans of branslar) {
+    for (const k of bransIcindekiler(brans).kisimlar) {
+      for (const b of k.bolumler) {
+        if (b.slug) konu++;
+        for (const c of b.cocuklar) {
+          konu++;
+          ileri += c.altToplam;
+          if (c.amiral) amiralKonu.push(c.amiral);
+          amiralIleri.push(...c.amiralAlt);
+        }
+      }
+    }
+  }
+  return { konu, ileri, amiralKonu, amiralIleri };
+}

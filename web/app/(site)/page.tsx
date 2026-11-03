@@ -4,8 +4,8 @@ import { getTopicCounts, getToolCount } from "@/app/lib/topic-counts";
 import StudyStatus from "@/app/components/StudyStatus";
 import KurumRozeti from "@/app/components/KurumRozeti";
 import { SabahDenizi } from "@/app/components/DenizSusu";
-import { kisimAdlari, bransAmiral } from "@/lib/icindekiler";
-import { AmiralSayac } from "@/app/components/AmiralNisani";
+import { kisimAdlari, bransAmiral, katmanSayilari } from "@/lib/icindekiler";
+import { AmiralSayac, AmiralSayi } from "@/app/components/AmiralNisani";
 
 /**
  * ISR: ana sayfa artık istek başına üretilmiyor.
@@ -33,6 +33,7 @@ export default async function Home() {
   const totalBranches = SPECIALTIES.length;
   // Araç sayısı elle "6+" yazılıydı; gerçekte 114. Artık sayılıyor.
   const totalTools = getToolCount();
+  const katman = katmanSayilari(SPECIALTIES.map((s) => s.slug));
 
   // Kök öge div, main DEĞİL: AppShell zaten <main id="icerik"> basıyor.
   // İkincisi sayfada İKİ main landmark'ı üretiyordu — geçersiz, ve ekran
@@ -112,8 +113,14 @@ export default async function Home() {
                 <div className="text-[11px] font-bold text-slate-600 uppercase tracking-wider mt-1">Branş</div>
               </div>
               <div className="flex-1 text-center py-3">
-                <div className="text-xl font-black text-blue-950 leading-none">{totalTopics}</div>
+                <div className="text-xl font-black text-blue-950 leading-none">{katman.konu}</div>
                 <div className="text-[11px] font-bold text-slate-600 uppercase tracking-wider mt-1">Konu</div>
+                <AmiralSayi isolar={katman.amiralKonu} ad="konu" sunucuAni={Date.now()} />
+              </div>
+              <div className="flex-1 text-center py-3">
+                <div className="text-xl font-black text-blue-950 leading-none">{katman.ileri}</div>
+                <div className="text-[11px] font-bold text-slate-600 uppercase tracking-wider mt-1">İleri okuma</div>
+                <AmiralSayi isolar={katman.amiralIleri} ad="ileri okuma" sunucuAni={Date.now()} />
               </div>
               <div className="flex-1 text-center py-3">
                 <div className="text-xl font-black text-blue-950 leading-none">{totalTools}</div>

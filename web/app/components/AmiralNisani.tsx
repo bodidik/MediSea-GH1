@@ -106,6 +106,23 @@ export function AmiralRutbe({ isolar, alt = false, sunucuAni }: { isolar: string
   );
 }
 
+/** İstatistik barı hücresi altında "⚓ 3 amiral" — süresi dolan sayılmaz, sıfırsa çizilmez. */
+export function AmiralSayi({ isolar, ad, sunucuAni }: { isolar: string[]; ad: string; sunucuAni: number }) {
+  const [simdi, setSimdi] = useState(sunucuAni);
+  useEffect(() => setSimdi(Date.now()), []);
+  const n = isolar.filter((iso) => {
+    const gun = gecenGun(iso, simdi);
+    return gun !== null && gun <= NISAN_SURESI_GUN;
+  }).length;
+  if (!n) return null;
+  return (
+    <span role="img" aria-label={`${n} amiral ${ad}`} title={`${n} amiral ${ad}`} className="mt-1 inline-flex items-center gap-1 whitespace-nowrap">
+      <AmiralSimgesi soluk={false} boy="h-3.5 w-3.5" />
+      <span aria-hidden="true" className="text-[10px] font-bold text-amber-900">{n} amiral</span>
+    </span>
+  );
+}
+
 /** Ana sayfa branş kartı: "4 amiral sayfa · 7 amiral ileri okuma" — süresi dolan sayılmaz. */
 export function AmiralSayac({ sayfa, ileri, sunucuAni }: { sayfa: string[]; ileri: string[]; sunucuAni: number }) {
   const [simdi, setSimdi] = useState(sunucuAni);
