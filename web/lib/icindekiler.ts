@@ -249,3 +249,22 @@ export function roma(n: number): string {
   for (const [v, r] of t) while (n >= v) { s += r; n -= v; }
   return s;
 }
+
+/**
+ * Ana sayfa branş kartı için amiral sayımı: bölümün doğrudan alt başlığı
+ * "amiral sayfa", daha derindeki "amiral ileri okuma". Tarihler döner;
+ * süre (bir yıl) istemcide bugüne göre sayılır — SSG'de donmasın.
+ */
+export function bransAmiral(brans: string): { sayfa: string[]; ileri: string[] } {
+  const sayfa: string[] = [];
+  const ileri: string[] = [];
+  for (const k of bransIcindekiler(brans).kisimlar) {
+    for (const b of k.bolumler) {
+      for (const c of b.cocuklar) {
+        if (c.amiral) sayfa.push(c.amiral);
+        ileri.push(...c.amiralAlt);
+      }
+    }
+  }
+  return { sayfa, ileri };
+}

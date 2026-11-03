@@ -106,6 +106,29 @@ export function AmiralRutbe({ isolar, alt = false, sunucuAni }: { isolar: string
   );
 }
 
+/** Ana sayfa branş kartı: "4 amiral sayfa · 7 amiral ileri okuma" — süresi dolan sayılmaz. */
+export function AmiralSayac({ sayfa, ileri, sunucuAni }: { sayfa: string[]; ileri: string[]; sunucuAni: number }) {
+  const [simdi, setSimdi] = useState(sunucuAni);
+  useEffect(() => setSimdi(Date.now()), []);
+  const gecerli = (l: string[]) =>
+    l.filter((iso) => {
+      const gun = gecenGun(iso, simdi);
+      return gun !== null && gun <= NISAN_SURESI_GUN;
+    }).length;
+  const s = gecerli(sayfa);
+  const i = gecerli(ileri);
+  if (!s && !i) return null;
+  // Görünen metin kısa (rütbe simgesi "amiral"i söylüyor); tam ad ekran okuyucuya.
+  const kisa = [s ? `${s} sayfa` : "", i ? `${i} ileri okuma` : ""].filter(Boolean).join(" · ");
+  const tam = [s ? `${s} amiral sayfa` : "", i ? `${i} amiral ileri okuma` : ""].filter(Boolean).join(", ");
+  return (
+    <span role="img" aria-label={tam} title={tam} className="mt-1.5 inline-flex max-w-full items-center gap-1.5 whitespace-nowrap rounded-full border border-amber-300 bg-amber-50 py-0.5 pl-0.5 pr-2">
+      <AmiralSimgesi soluk={false} boy="h-4 w-4" />
+      <span aria-hidden="true" className="text-[11px] font-bold text-amber-900">{kisa}</span>
+    </span>
+  );
+}
+
 function AmiralSimgesi({ soluk, boy = "h-8 w-8" }: { soluk: boolean; boy?: string }) {
   const zemin = soluk ? "#78716c" : "#1e3a8a";
   const altin = soluk ? "#d6d3d1" : "#fbbf24";

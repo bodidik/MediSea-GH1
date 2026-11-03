@@ -4,7 +4,8 @@ import { getTopicCounts, getToolCount } from "@/app/lib/topic-counts";
 import StudyStatus from "@/app/components/StudyStatus";
 import KurumRozeti from "@/app/components/KurumRozeti";
 import { SabahDenizi } from "@/app/components/DenizSusu";
-import { kisimAdlari } from "@/lib/icindekiler";
+import { kisimAdlari, bransAmiral } from "@/lib/icindekiler";
+import { AmiralSayac } from "@/app/components/AmiralNisani";
 
 /**
  * ISR: ana sayfa artık istek başına üretilmiyor.
@@ -190,6 +191,7 @@ export default async function Home() {
                     {items.map((item) => {
                       const count = topicCounts[item.slug] || 0;
                       const kisimlar = kisimAdlari(item.slug);
+                      const amiral = bransAmiral(item.slug);
                       return (
                         <Link
                           key={item.slug}
@@ -209,6 +211,9 @@ export default async function Home() {
                             <p className="mt-1 text-[12px] leading-snug text-slate-600 line-clamp-3">
                               {kisimlar.length ? kisimlar.join(" · ") : item.desc}
                             </p>
+                            {(amiral.sayfa.length > 0 || amiral.ileri.length > 0) && (
+                              <AmiralSayac sayfa={amiral.sayfa} ileri={amiral.ileri} sunucuAni={Date.now()} />
+                            )}
                           </div>
                         </Link>
                       );
