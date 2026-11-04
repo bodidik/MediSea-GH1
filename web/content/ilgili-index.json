@@ -4194,6 +4194,11 @@
  ],
  "gogus/sarkoidoz-ana": [
   {
+   "brans": "romatoloji",
+   "slug": "romatoid-artrit",
+   "baslik": "Romatoid Artrit (RA)"
+  },
+  {
    "brans": "endokrinoloji",
    "slug": "osteoporoz-kalsinorin-inh-alternatifleri",
    "baslik": "Kalsinörin İnhibitörü Alternatifi İmmünsüpresif Stratejiler"
@@ -8261,19 +8266,9 @@
  ],
  "romatoloji/romatoid-artrit": [
   {
-   "brans": "romatoloji",
-   "slug": "vaskulit-sendromlari",
-   "baslik": "Vaskülit Sendromları"
-  },
-  {
-   "brans": "romatoloji",
-   "slug": "behcet-hastaligi-yonetimi",
-   "baslik": "Behçet Hastalığı: Patogenez, Klinik ve Yönetim Algoritması"
-  },
-  {
-   "brans": "romatoloji",
-   "slug": "behcet-vaskuler-tutulum",
-   "baslik": "Behçet Sendromunda Vasküler Tutulum ve Yönetimi"
+   "brans": "gogus",
+   "slug": "sarkoidoz-ana",
+   "baslik": "Sarkoidoz"
   }
  ],
  "romatoloji/romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi": [
