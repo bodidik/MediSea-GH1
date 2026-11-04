@@ -49,7 +49,7 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             </li>
             <li>
               <Link href="/topics/gogus/sarkoidoz-hiperkalsemi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Sarkoidozda ve hiperkalsemi
+                Sarkoidozda Kalsiyum Metabolizması ve Böbrek Tutulumu
               </Link>
             </li>
             <li>

@@ -58,8 +58,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/journal-club/iptacopan-igan-faz3" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Nefroloji-NEJM: APPLAUSE-IgAN Faz 3 ve İptacopan
+              <Link href="/topics/gogus/sarkoidoz-hiperkalsemi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Sarkoidozda Kalsiyum Metabolizması ve Böbrek Tutulumu
               </Link>
             </li>
           </ul>

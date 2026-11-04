@@ -664,7 +664,7 @@
   {
    "brans": "gogus",
    "slug": "sarkoidoz-hiperkalsemi",
-   "baslik": "Sarkoidozda ve hiperkalsemi"
+   "baslik": "Sarkoidozda Kalsiyum Metabolizması ve Böbrek Tutulumu"
   },
   {
    "brans": "endokrinoloji",
@@ -2308,14 +2308,9 @@
  ],
  "endokrinoloji/vitamin-d-bozukluklari": [
   {
-   "brans": "endokrinoloji",
-   "slug": "hiperparatiroidizm",
-   "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipokalsemi-ve-hipoparatiroidi",
-   "baslik": "Hipokalsemi ve Hipoparatiroidi"
+   "brans": "gogus",
+   "slug": "sarkoidoz-hiperkalsemi",
+   "baslik": "Sarkoidozda Kalsiyum Metabolizması ve Böbrek Tutulumu"
   }
  ],
  "endokrinoloji/yaslida-hipertiroidizm": [
@@ -4218,7 +4213,7 @@
   {
    "brans": "gogus",
    "slug": "sarkoidoz-hiperkalsemi",
-   "baslik": "Sarkoidozda ve hiperkalsemi"
+   "baslik": "Sarkoidozda Kalsiyum Metabolizması ve Böbrek Tutulumu"
   }
  ],
  "gogus/sarkoidoz-hiperkalsemi": [
@@ -4226,6 +4221,11 @@
    "brans": "endokrinoloji",
    "slug": "hiperparatiroidizm",
    "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "vitamin-d-bozukluklari",
+   "baslik": "Vitamin D Bozuklukları: Raşitizm ve Osteomalazi"
   }
  ],
  "hematoloji/FL-t1(4-18)": [
