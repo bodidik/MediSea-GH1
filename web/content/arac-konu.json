@@ -697,6 +697,19 @@
         "kaynak": "kavram"
       }
     ],
+    "gogus/sarkoidoz-hiperkalsemi": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "corrected-calcium",
+        "name": "Düzeltilmiş Kalsiyum",
+        "eslesen": "kalsiyum",
+        "kaynak": "kavram"
+      }
+    ],
     "hematoloji/akut-lenfoblastik-losemi-all": [
       {
         "slug": "ipss-r",
@@ -3623,14 +3636,6 @@
         "kaynak": "kavram"
       }
     ],
-    "gogus/sarkoidoz-hiperkalsemi": [
-      {
-        "slug": "corrected-calcium",
-        "name": "Düzeltilmiş Kalsiyum",
-        "eslesen": "hiperkalsemi",
-        "kaynak": "kavram"
-      }
-    ],
     "hematoloji/allojenik-kok-hucre-nakli": [
       {
         "slug": "karnofsky",
@@ -4953,6 +4958,11 @@
         "eslesen": "eGFR"
       },
       {
+        "yol": "gogus/sarkoidoz-hiperkalsemi",
+        "baslik": "Sarkoidozda Kalsiyum Metabolizması ve Böbrek Tutulumu",
+        "eslesen": "eGFR"
+      },
+      {
         "yol": "journal-club/iptacopan-igan-faz3",
         "baslik": "Nefroloji-NEJM: APPLAUSE-IgAN Faz 3 ve İptacopan",
         "eslesen": "eGFR"
@@ -4970,11 +4980,6 @@
       {
         "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
         "baslik": "Palyatif Bakımda Ağrı Yönetimi",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "nefroloji/ardisik-nefron-blokaji-advor-clorotic",
-        "baslik": "Ardışık Nefron Blokajı: ADVOR ve CLOROTIC",
         "eslesen": "eGFR"
       }
     ],
@@ -5029,8 +5034,8 @@
       },
       {
         "yol": "gogus/sarkoidoz-hiperkalsemi",
-        "baslik": "Sarkoidozda ve hiperkalsemi",
-        "eslesen": "hiperkalsemi",
+        "baslik": "Sarkoidozda Kalsiyum Metabolizması ve Böbrek Tutulumu",
+        "eslesen": "kalsiyum",
         "kaynak": "kavram"
       },
       {
@@ -8920,7 +8925,7 @@
     "arac": 281,
     "araciOlanKonu": 346,
     "konusuOlanArac": 175,
-    "bag": 713,
+    "bag": 714,
     "kavramBag": 624
   }
 }

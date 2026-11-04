@@ -7078,5 +7078,269 @@
         "tur": "uptodate"
       }
     ]
+  },
+  "sarkoidoz": {
+    "baslik": "Sarkoidoz",
+    "aciklama": "Sarkoidoz sayfaları bir kaynak defterinden hazırlandı. Burada defterin doğrulanabilen kaynakları listeleniyor: makaleler yayın kaydıyla (Crossref), UpToDate konuları başlık ve yazarıyla — UpToDate konusundaki tarih son güncellemedir. Liste konu ailesinin kaynakçasıdır; her künye her sayfanın dayanağı değildir.",
+    "kaynaklar": [
+      {
+        "ad": "Alnasralla MB, Subbaraman B. Granulomas in the Heart: Pathophysiology, Diagnosis, Management, and Outcomes in Cardiac Sarcoidosis. Cureus 2026",
+        "yil": 2026,
+        "url": "https://doi.org/10.7759/cureus.100565",
+        "tur": "makale"
+      },
+      {
+        "ad": "Antonaci S, Ismibayli Z, De Martino S, ve ark. Cardiac Sarcoidosis: Pathophysiology and Diagnostic–Therapeutic Processes. Rev. Cardiovasc. Med. 2026;27(1):43535",
+        "yil": 2026,
+        "url": "https://doi.org/10.31083/RCM43535",
+        "tur": "makale"
+      },
+      {
+        "ad": "Antoun I, Assadi J, Zakkar M, ve ark. Beyond the Biopsy: Imaging Frontiers in Cardiac Sarcoidosis. Cardiology Research and Practice 2026;2026(1):3738354",
+        "yil": 2026,
+        "url": "https://doi.org/10.1155/crp/3738354",
+        "tur": "makale"
+      },
+      {
+        "ad": "Bajec T, Harlander M, Pucelj Koren N, ve ark. Biomarkers and genetic determinants of cardiac sarcoidosis: current status, the unmet needs and future perspectives. Front. Cardiovasc. Med. 2026;13:1754375",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fcvm.2026.1754375",
+        "tur": "makale"
+      },
+      {
+        "ad": "Bez P, Chkolnaia Z, Aratari A, ve ark. Anti‐TNF Drug‐Induced Sarcoidosis in Inflammatory Bowel Diseases: Multicentric Case Series and Literature Review. BioMed Research International 2026;2026(1):7554982",
+        "yil": 2026,
+        "url": "https://doi.org/10.1155/bmri/7554982",
+        "tur": "makale"
+      },
+      {
+        "ad": "Carbone RG, Puppo F, Tapson VF. Gut microbiota and sarcoidosis: a concise review. Front. Med. 2026;13:1747012",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fmed.2026.1747012",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ciccarelli U, Ghelardini P, Pisciella MC, ve ark. Sarcoidosis and Obstructive Sleep Apnoea: An Intriguing Relationship. TORMJ 2026;20(1):e18743064450100",
+        "yil": 2026,
+        "url": "https://doi.org/10.2174/0118743064450100260420103730",
+        "tur": "makale"
+      },
+      {
+        "ad": "Donnelly R, Boyle N, McCarthy C, ve ark. FDG PET in pulmonary sarcoidosis: An update and future aspects. Seminars in Nuclear Medicine 2026;56(4):673-684",
+        "yil": 2026,
+        "url": "https://doi.org/10.1053/j.semnuclmed.2026.03.007",
+        "tur": "makale"
+      },
+      {
+        "ad": "Drakopanagiotakis F, Papanikolaou I, Panou T, ve ark. New Therapies for Sarcoidosis: Molecular and Pathophysiological Basis. IJMS 2026;27(12):5335",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/ijms27125335",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kahlmann V, Simon D, Wijsenbeek MS, ve ark. Optimizing patient-reported outcomes for sarcoidosis. Current Opinion in Immunology 2026;99:102720",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.coi.2025.102720",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kancerek J, Świerczek D, Baron W, ve ark. Unmasking Cardiac Sarcoidosis: Integrating Multimodal Imaging with Histochemical and Ultrastructural Analysis. IJMS 2026;27(7):2969",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/ijms27072969",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kobak J, Szymańczyk A, Liśkiewicz-Jankowska M, ve ark. The Impact of Nutritional Status on Survival and Development of Sarcoidosis: A Scoping Review of Current Evidence and Research Gaps. Nutrients 2026;18(2):209",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/nu18020209",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kostova J, Andreisek G, Müller MA. Pulmonary Sarcoidosis: Imaging and Diagnostic Limitations. Rofo 2026;198(06):746-757",
+        "yil": 2026,
+        "url": "https://doi.org/10.1055/a-2722-6934",
+        "tur": "makale"
+      },
+      {
+        "ad": "Kotti N, Kchaou A, Feki W, ve ark. Occupational exposure to toxic particles and risk of pulmonary sarcoidosis: a systematic review and meta-analysis. BMJ Open Resp Res 2026;13(1):e003961",
+        "yil": 2026,
+        "url": "https://doi.org/10.1136/bmjresp-2025-003961",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lee M, Cai Q, Wang J. Diagnosis and Management of Sarcoidosis-like Reaction in Adjuvant Immunotherapy: A Comprehensive Review and Clinical Implications. Biomedicines 2026;14(5):1082",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/biomedicines14051082",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lewandowska AA, Waśniowska D, Kołodziej M, ve ark. Asthma in Patients With Confirmed Pulmonary Sarcoidosis. Canadian Respiratory Journal 2026;2026(1):7829487",
+        "yil": 2026,
+        "url": "https://doi.org/10.1155/carj/7829487",
+        "tur": "makale"
+      },
+      {
+        "ad": "Lotana H, White T, Drake WP. Metabolomic signaling in sarcoidosis pathogenesis. Current Opinion in Immunology 2026;99:102715",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.coi.2025.102715",
+        "tur": "makale"
+      },
+      {
+        "ad": "Mahdi RA, Gunasekaran V, Singhal T, ve ark. Sarcoidosis on 18F-FDG PET/CT. Clinical Nuclear Medicine 2026;51(6):e375-e379",
+        "yil": 2026,
+        "url": "https://doi.org/10.1097/RLU.0000000000006000",
+        "tur": "makale"
+      },
+      {
+        "ad": "Miedema J, Nunes H, Dalm VA, ve ark. Sarcoidosis: Disease mechanisms, diagnostic pathway and treatment. Autoimmunity Reviews 2026;25(3):103993",
+        "yil": 2026,
+        "url": "https://doi.org/10.1016/j.autrev.2026.103993",
+        "tur": "makale"
+      },
+      {
+        "ad": "Ntiamoah P, Wireko F, Wagh A, ve ark. Scoping out sarcoidosis: the evolving role of bronchoscopy. Eur Respir Rev 2026;35(179):250122",
+        "yil": 2026,
+        "url": "https://doi.org/10.1183/16000617.0122-2025",
+        "tur": "makale"
+      },
+      {
+        "ad": "Pianigiani T, Perea B, Dilroba A, ve ark. Uncovering Sex and Gender Differences in Sarcoidosis: A Systematic Review of Current Evidence. JPM 2026;16(1):24",
+        "yil": 2026,
+        "url": "https://doi.org/10.3390/jpm16010024",
+        "tur": "makale"
+      },
+      {
+        "ad": "Rizzi L, Larizza G, Suppressa P. Exploring microbial signatures in sarcoidosis: etiological and therapeutic implications of host–microbiota interactions. Front. Immunol. 2026;17:1735877",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fimmu.2026.1735877",
+        "tur": "makale"
+      },
+      {
+        "ad": "Starshinova A, Fedotov P, Bulgun M, ve ark. Cardiac sarcoidosis: from clinical manifestations to heart transplantation. Front. Med. 2026;13:1723644",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fmed.2026.1723644",
+        "tur": "makale"
+      },
+      {
+        "ad": "Tersalvi G, Rossi VA, Hundertmark M, ve ark. Diagnostic challenges in isolated cardiac sarcoidosis. ESC Heart Failure 2026;13(3):xvag159",
+        "yil": 2026,
+        "url": "https://doi.org/10.1093/eschf/xvag159",
+        "tur": "makale"
+      },
+      {
+        "ad": "Weintraub NL, Guha A, Taskar V, ve ark. Cardiovascular Manifestations and Immunobiology of Sarcoidosis. ATVB 2026;46(2)",
+        "yil": 2026,
+        "url": "https://doi.org/10.1161/ATVBAHA.125.323111",
+        "tur": "makale"
+      },
+      {
+        "ad": "Zhao J, Ma L, Luan J. Diagnosis and treatment of sarcoidosis based on immunological etiology and mechanisms. Front. Med. 2026;13:1754491",
+        "yil": 2026,
+        "url": "https://doi.org/10.3389/fmed.2026.1754491",
+        "tur": "makale"
+      },
+      {
+        "ad": "Blankstein R, Stewart GC. Clinical manifestations and diagnosis of cardiac sarcoidosis. UpToDate; son güncelleme 5 Mar 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/clinical-manifestations-and-diagnosis-of-cardiac-sarcoidosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Culver DA. Clinical manifestations and diagnosis of sarcoidosis. UpToDate; son güncelleme 3 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/clinical-manifestations-and-diagnosis-of-sarcoidosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Prystowsky S, Sanchez M. Cutaneous manifestations of sarcoidosis. UpToDate; son güncelleme 16 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/cutaneous-manifestations-of-sarcoidosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Prystowsky S, Sanchez M. Cutaneous sarcoidosis: Management. UpToDate; son güncelleme 5 May 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/cutaneous-sarcoidosis-management",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Berman JS, Govender P. Gastrointestinal, hepatic, pancreatic, and peritoneal sarcoidosis. UpToDate; son güncelleme 12 Nis 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/gastrointestinal-hepatic-pancreatic-and-peritoneal-sarcoidosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Choukroun G. Kidney disease in sarcoidosis. UpToDate; son güncelleme 3 Şub 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/kidney-disease-in-sarcoidosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Blankstein R, Cooper LT. Management and prognosis of cardiac sarcoidosis. UpToDate; son güncelleme 1 Nis 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/management-and-prognosis-of-cardiac-sarcoidosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Stern BJ. Neurologic sarcoidosis. UpToDate; son güncelleme 9 May 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/neurologic-sarcoidosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Culver DA. Overview of extrapulmonary manifestations of sarcoidosis. UpToDate; son güncelleme 17 Tem 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/overview-of-extrapulmonary-manifestations-of-sarcoidosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Culver DA. Pathology and pathogenesis of sarcoidosis. UpToDate; son güncelleme 19 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/pathology-and-pathogenesis-of-sarcoidosis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Aggarwal R. Sarcoid arthritis. UpToDate; son güncelleme 30 Eyl 2024",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/sarcoid-arthritis",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Aggarwal R. Sarcoid myopathy. UpToDate; son güncelleme 22 May 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/sarcoid-myopathy",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Aggarwal R. Sarcoidosis of bone. UpToDate; son güncelleme 1 Nis 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/sarcoidosis-of-bone",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Govender P, Post MC. Sarcoidosis-associated pulmonary hypertension: Diagnostic evaluation in adults. UpToDate; son güncelleme 13 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/sarcoidosis-associated-pulmonary-hypertension-diagnostic-evaluation-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Govender P, Post MC. Sarcoidosis-associated pulmonary hypertension: Treatment and prognosis in adults. UpToDate; son güncelleme 13 Oca 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/sarcoidosis-associated-pulmonary-hypertension-treatment-and-prognosis-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Culver DA. Treatment of pulmonary sarcoidosis refractory to initial therapy. UpToDate; son güncelleme 23 Haz 2025",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/treatment-of-pulmonary-sarcoidosis-refractory-to-initial-therapy",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Culver DA. Treatment of pulmonary sarcoidosis: Initial approach. UpToDate; son güncelleme 3 Haz 2026",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-pulmonary-sarcoidosis-initial-approach",
+        "tur": "uptodate"
+      }
+    ]
   }
 }
