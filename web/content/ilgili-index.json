@@ -1042,14 +1042,19 @@
  ],
  "endokrinoloji/hipotiroidi-hashimoto-miksoedem": [
   {
-   "brans": "nefroloji",
-   "slug": "glomeruler-hastaliklar",
-   "baslik": "Glomerüler Hastalıklar"
-  },
-  {
    "brans": "endokrinoloji",
    "slug": "gebelikte-hipotiroidizm-yonetimi",
    "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "colyak",
+   "baslik": "Çölyak Hastalığı (Gluten Enteropatisi)"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "glomeruler-hastaliklar",
+   "baslik": "Glomerüler Hastalıklar"
   },
   {
    "brans": "endokrinoloji",
@@ -3609,14 +3614,29 @@
  ],
  "gastroenteroloji/colyak": [
   {
-   "brans": "gastroenteroloji",
-   "slug": "gastrointestinal-motilite-hastaliklari",
-   "baslik": "Gastrointestinal Motilite Hastalıkları"
+   "brans": "endokrinoloji",
+   "slug": "hipotiroidi-hashimoto-miksoedem",
+   "baslik": "Hashimoto Tiroiditi (Kronik Lenfositik Tiroidit)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "glomeruler-hastaliklar",
+   "baslik": "Glomerüler Hastalıklar"
   },
   {
    "brans": "gastroenteroloji",
-   "slug": "kisa-bagirsak-sendromu",
-   "baslik": "Kısa Bağırsak Sendromu (KBS)"
+   "slug": "colyak-akdeniz-beslenme",
+   "baslik": "Çölyak Hastalığında Akdeniz Tipi Glutensiz Beslenme"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "colyak-glutensiz-obezite",
+   "baslik": "Çölyak Hastalığında Glutensiz Diyet ve Obezite Paradoksu"
   }
  ],
  "gastroenteroloji/colyak-akdeniz-beslenme": [
@@ -3624,6 +3644,11 @@
    "brans": "gastroenteroloji",
    "slug": "colyak-glutensiz-obezite",
    "baslik": "Çölyak Hastalığında Glutensiz Diyet ve Obezite Paradoksu"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "colyak",
+   "baslik": "Çölyak Hastalığı (Gluten Enteropatisi)"
   }
  ],
  "gastroenteroloji/colyak-bebeklerde-gluten-baslama": [
@@ -3667,14 +3692,14 @@
    "baslik": "Çölyak Hastalığında Diyetsel Yağ Riski ve Akdeniz Modeli"
   },
   {
-   "brans": "hematoloji",
-   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
-   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
-  },
-  {
    "brans": "gastroenteroloji",
    "slug": "colyak-lif-alimi",
    "baslik": "Akdeniz Tipi Glutensiz Diyette Lif Alımının Artırılması"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
   },
   {
    "brans": "gastroenteroloji",
@@ -3714,6 +3739,11 @@
    "brans": "gastroenteroloji",
    "slug": "colyak-akdeniz-beslenme",
    "baslik": "Çölyak Hastalığında Akdeniz Tipi Glutensiz Beslenme"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "colyak",
+   "baslik": "Çölyak Hastalığı (Gluten Enteropatisi)"
   },
   {
    "brans": "gastroenteroloji",
@@ -5110,6 +5140,11 @@
   }
  ],
  "hematoloji/kisa-bagirsak-sendromunda-antikoagulasyon": [
+  {
+   "brans": "gastroenteroloji",
+   "slug": "colyak",
+   "baslik": "Çölyak Hastalığı (Gluten Enteropatisi)"
+  },
   {
    "brans": "gastroenteroloji",
    "slug": "colyak-beslenme",
@@ -6836,6 +6871,11 @@
    "brans": "endokrinoloji",
    "slug": "hipotiroidi-hashimoto-miksoedem",
    "baslik": "Hashimoto Tiroiditi (Kronik Lenfositik Tiroidit)"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "colyak",
+   "baslik": "Çölyak Hastalığı (Gluten Enteropatisi)"
   },
   {
    "brans": "nefroloji",
