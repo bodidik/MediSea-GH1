@@ -2555,6 +2555,11 @@
  ],
  "enfeksiyon/candidozyma-auris-nozokomiyal-persistans": [
   {
+   "brans": "gogus",
+   "slug": "pnomoni-hastane-kaynakli",
+   "baslik": "Hastane Kaynaklı Pnömoni"
+  },
+  {
    "brans": "enfeksiyon",
    "slug": "fosfomisin-daptomisin-biyofilm",
    "baslik": "Biyofilm İçi Sinerji ve Protez Eklem Enfeksiyonları"
@@ -2578,11 +2583,6 @@
    "brans": "enfeksiyon",
    "slug": "cr-hvkp-metastatik-yayilim",
    "baslik": "CR-hvKP: Metastatik Yayılımın Klinik İzlemi"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "crkp-enfeksiyonu",
-   "baslik": "Karbapenem Dirençli Klebsiella pneumoni"
   }
  ],
  "enfeksiyon/candidozyma-auris-tedavi-direnc-yeni-nesil": [
@@ -2818,6 +2818,11 @@
    "brans": "enfeksiyon",
    "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
    "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler"
+  },
+  {
+   "brans": "gogus",
+   "slug": "pnomoni-hastane-kaynakli",
+   "baslik": "Hastane Kaynaklı Pnömoni"
   }
  ],
  "enfeksiyon/direncli-kuf-yeni-antifungaller": [
@@ -4419,7 +4424,34 @@
    "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi"
   }
  ],
+ "gogus/pnomoni-hastane-kaynakli": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "candidozyma-auris-nozokomiyal-persistans",
+   "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
+  },
+  {
+   "brans": "gogus",
+   "slug": "pnomoni-toplum-kaynakli",
+   "baslik": "Toplum Kaynaklı Pnömoni"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "dalbavansin-derleme",
+   "baslik": "Dalbavansin"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "dalbavansin-mrsa-bakteriyemisi",
+   "baslik": "Dalbavansin: MRSA Bakteriyemisi ve Step-Down Stratejisi"
+  }
+ ],
  "gogus/pnomoni-toplum-kaynakli": [
+  {
+   "brans": "gogus",
+   "slug": "pnomoni-hastane-kaynakli",
+   "baslik": "Hastane Kaynaklı Pnömoni"
+  },
   {
    "brans": "onkoloji",
    "slug": "febril-notropeni-konu",

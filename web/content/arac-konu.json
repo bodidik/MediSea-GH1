@@ -697,6 +697,25 @@
         "kaynak": "kavram"
       }
     ],
+    "gogus/pnomoni-hastane-kaynakli": [
+      {
+        "slug": "sofa",
+        "name": "SOFA Skoru",
+        "eslesen": "SOFA"
+      },
+      {
+        "slug": "curb65",
+        "name": "CURB-65 Skoru",
+        "eslesen": "pnömoni",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "psi-port",
+        "name": "PSI/PORT Skoru",
+        "eslesen": "pnömoni",
+        "kaynak": "kavram"
+      }
+    ],
     "gogus/pnomoni-toplum-kaynakli": [
       {
         "slug": "curb65",
@@ -5298,6 +5317,11 @@
         "yol": "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi",
         "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)",
         "eslesen": "SOFA"
+      },
+      {
+        "yol": "gogus/pnomoni-hastane-kaynakli",
+        "baslik": "Hastane Kaynaklı Pnömoni",
+        "eslesen": "SOFA"
       }
     ],
     "qsofa": [
@@ -5447,6 +5471,12 @@
         "yol": "gogus/pnomoni-toplum-kaynakli",
         "baslik": "Toplum Kaynaklı Pnömoni",
         "eslesen": "CURB-65"
+      },
+      {
+        "yol": "gogus/pnomoni-hastane-kaynakli",
+        "baslik": "Hastane Kaynaklı Pnömoni",
+        "eslesen": "pnömoni",
+        "kaynak": "kavram"
       }
     ],
     "ipss-r": [
@@ -7869,6 +7899,12 @@
     ],
     "psi-port": [
       {
+        "yol": "gogus/pnomoni-hastane-kaynakli",
+        "baslik": "Hastane Kaynaklı Pnömoni",
+        "eslesen": "pnömoni",
+        "kaynak": "kavram"
+      },
+      {
         "yol": "gogus/pnomoni-toplum-kaynakli",
         "baslik": "Toplum Kaynaklı Pnömoni",
         "eslesen": "pnömoni",
@@ -8949,11 +8985,11 @@
     ]
   },
   "olcum": {
-    "konu": 486,
+    "konu": 487,
     "arac": 281,
-    "araciOlanKonu": 347,
+    "araciOlanKonu": 348,
     "konusuOlanArac": 177,
-    "bag": 716,
-    "kavramBag": 625
+    "bag": 719,
+    "kavramBag": 627
   }
 }
