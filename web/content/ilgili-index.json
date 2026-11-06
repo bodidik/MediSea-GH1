@@ -4419,6 +4419,23 @@
    "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi"
   }
  ],
+ "gogus/pnomoni-toplum-kaynakli": [
+  {
+   "brans": "onkoloji",
+   "slug": "febril-notropeni-konu",
+   "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "immun-trombositopeni-itp",
+   "baslik": "İmmün Trombositopeni (İTP) Tedavi ve Klinik Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "itp-tedavi",
+   "baslik": "İmmün Trombositopeni (İTP) Tedavi"
+  }
+ ],
  "gogus/sarkoidoz-ana": [
   {
    "brans": "romatoloji",
@@ -4967,6 +4984,11 @@
  ],
  "hematoloji/immun-trombositopeni-itp": [
   {
+   "brans": "gogus",
+   "slug": "pnomoni-toplum-kaynakli",
+   "baslik": "Toplum Kaynaklı Pnömoni"
+  },
+  {
    "brans": "hematoloji",
    "slug": "trombositopeni-itp",
    "baslik": "İmmün Trombositopeni (ITP)"
@@ -5021,6 +5043,11 @@
    "brans": "hematoloji",
    "slug": "itp-tanisal-yaklasim",
    "baslik": "İmmün Trombositopeni (İTP) Tanısal Yaklaşım ve Değerlendirme"
+  },
+  {
+   "brans": "gogus",
+   "slug": "pnomoni-toplum-kaynakli",
+   "baslik": "Toplum Kaynaklı Pnömoni"
   },
   {
    "brans": "hematoloji",
@@ -7615,6 +7642,11 @@
   }
  ],
  "onkoloji/febril-notropeni-konu": [
+  {
+   "brans": "gogus",
+   "slug": "pnomoni-toplum-kaynakli",
+   "baslik": "Toplum Kaynaklı Pnömoni"
+  },
   {
    "brans": "enfeksiyon",
    "slug": "fosfomisin-beta-laktam-sinerji",

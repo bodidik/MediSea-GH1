@@ -697,6 +697,19 @@
         "kaynak": "kavram"
       }
     ],
+    "gogus/pnomoni-toplum-kaynakli": [
+      {
+        "slug": "curb65",
+        "name": "CURB-65 Skoru",
+        "eslesen": "CURB-65"
+      },
+      {
+        "slug": "psi-port",
+        "name": "PSI/PORT Skoru",
+        "eslesen": "pnömoni",
+        "kaynak": "kavram"
+      }
+    ],
     "gogus/sarkoidoz-hiperkalsemi": [
       {
         "slug": "egfr",
@@ -5429,6 +5442,13 @@
         "kaynak": "kavram"
       }
     ],
+    "curb65": [
+      {
+        "yol": "gogus/pnomoni-toplum-kaynakli",
+        "baslik": "Toplum Kaynaklı Pnömoni",
+        "eslesen": "CURB-65"
+      }
+    ],
     "ipss-r": [
       {
         "yol": "hematoloji/akut-lenfoblastik-losemi-all",
@@ -7847,6 +7867,14 @@
         "kaynak": "kavram"
       }
     ],
+    "psi-port": [
+      {
+        "yol": "gogus/pnomoni-toplum-kaynakli",
+        "baslik": "Toplum Kaynaklı Pnömoni",
+        "eslesen": "pnömoni",
+        "kaynak": "kavram"
+      }
+    ],
     "eln-2022-aml": [
       {
         "yol": "hematoloji/aml",
@@ -8921,11 +8949,11 @@
     ]
   },
   "olcum": {
-    "konu": 485,
+    "konu": 486,
     "arac": 281,
-    "araciOlanKonu": 346,
-    "konusuOlanArac": 175,
-    "bag": 714,
-    "kavramBag": 624
+    "araciOlanKonu": 347,
+    "konusuOlanArac": 177,
+    "bag": 716,
+    "kavramBag": 625
   }
 }
