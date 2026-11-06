@@ -2411,7 +2411,7 @@
   {
    "brans": "enfeksiyon",
    "slug": "candidozyma-auris-nozokomiyal-persistans",
-   "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
+   "baslik": "Candidozyma auris (Candida auris)"
   },
   {
    "brans": "enfeksiyon",
@@ -2555,34 +2555,34 @@
  ],
  "enfeksiyon/candidozyma-auris-nozokomiyal-persistans": [
   {
+   "brans": "enfeksiyon",
+   "slug": "invaziv-kandidiyazis",
+   "baslik": "İnvaziv Kandidiyazis ve Kandidemi"
+  },
+  {
    "brans": "gogus",
    "slug": "pnomoni-hastane-kaynakli",
    "baslik": "Hastane Kaynaklı Pnömoni"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "fosfomisin-daptomisin-biyofilm",
-   "baslik": "Biyofilm İçi Sinerji ve Protez Eklem Enfeksiyonları"
+   "slug": "direncli-kuf-yeni-antifungaller",
+   "baslik": "Dirençli Küf Enfeksiyonlarında Yeni Antifungaller"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "fosfomisin-daptomisin-sinerji",
-   "baslik": "Fosfomisin ve Daptomisin Sinerjisi"
+   "slug": "ekinokandinler",
+   "baslik": "Ekinokandinler: Böbrek Yetmezliği, Direnç ve Yeni Glukan Sentaz İnhibitörleri"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "okuler-kandidiyazis",
+   "baslik": "Oküler Kandidiyazis: Korioretinit ve Endoftalmi"
   },
   {
    "brans": "enfeksiyon",
    "slug": "cr-hvkp-endoftalmi-komplikasyonu",
    "baslik": "CR-hvKP ve hvKP: Yıkıcı Endoftalmi Komplikasyonu"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "cr-hvkp-hipervirulan-varyant",
-   "baslik": "CR-hvKP: Hipervirülan Varyant ve Kusursuz Fırtına"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "cr-hvkp-metastatik-yayilim",
-   "baslik": "CR-hvKP: Metastatik Yayılımın Klinik İzlemi"
   }
  ],
  "enfeksiyon/candidozyma-auris-tedavi-direnc-yeni-nesil": [
@@ -2621,7 +2621,7 @@
   {
    "brans": "enfeksiyon",
    "slug": "candidozyma-auris-nozokomiyal-persistans",
-   "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
+   "baslik": "Candidozyma auris (Candida auris)"
   }
  ],
  "enfeksiyon/cr-hvkp-hipervirulan-varyant": [
@@ -2638,7 +2638,7 @@
   {
    "brans": "enfeksiyon",
    "slug": "candidozyma-auris-nozokomiyal-persistans",
-   "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
+   "baslik": "Candidozyma auris (Candida auris)"
   }
  ],
  "enfeksiyon/cr-hvkp-metastatik-yayilim": [
@@ -2665,7 +2665,7 @@
   {
    "brans": "enfeksiyon",
    "slug": "candidozyma-auris-nozokomiyal-persistans",
-   "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
+   "baslik": "Candidozyma auris (Candida auris)"
   }
  ],
  "enfeksiyon/crkp-enfeksiyonu": [
@@ -2692,7 +2692,7 @@
   {
    "brans": "enfeksiyon",
    "slug": "candidozyma-auris-nozokomiyal-persistans",
-   "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
+   "baslik": "Candidozyma auris (Candida auris)"
   }
  ],
  "enfeksiyon/dalbavansin-VISA-VRSA": [
@@ -2835,6 +2835,11 @@
    "brans": "enfeksiyon",
    "slug": "invaziv-kandidiyazis",
    "baslik": "İnvaziv Kandidiyazis ve Kandidemi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "candidozyma-auris-nozokomiyal-persistans",
+   "baslik": "Candidozyma auris (Candida auris)"
   }
  ],
  "enfeksiyon/ekinokandinler": [
@@ -2847,6 +2852,11 @@
    "brans": "enfeksiyon",
    "slug": "direncli-kuf-yeni-antifungaller",
    "baslik": "Dirençli Küf Enfeksiyonlarında Yeni Antifungaller"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "candidozyma-auris-nozokomiyal-persistans",
+   "baslik": "Candidozyma auris (Candida auris)"
   }
  ],
  "enfeksiyon/fidaksomisin-ileri-duzey": [
@@ -2913,11 +2923,6 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "candidozyma-auris-nozokomiyal-persistans",
-   "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
-  },
-  {
-   "brans": "enfeksiyon",
    "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
    "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler"
   },
@@ -2967,11 +2972,6 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "candidozyma-auris-nozokomiyal-persistans",
-   "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
-  },
-  {
-   "brans": "enfeksiyon",
    "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
    "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler"
   },
@@ -2989,6 +2989,11 @@
    "brans": "enfeksiyon",
    "slug": "glikopeptit-antibiyotikler",
    "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "hucre-duvari-sentez-inhibitorleri",
+   "baslik": "Hücre Duvarı Sentez İnhibitörleri"
   }
  ],
  "enfeksiyon/fosfomisin-hipokalemi": [
@@ -3077,18 +3082,23 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "direncli-kuf-yeni-antifungaller",
-   "baslik": "Dirençli Küf Enfeksiyonlarında Yeni Antifungaller"
+   "slug": "candidozyma-auris-nozokomiyal-persistans",
+   "baslik": "Candidozyma auris (Candida auris)"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "candidozyma-auris-klinik",
-   "baslik": "Candidozyma auris: Klinik Prezentasyon ve Pratik İpuçları"
+   "slug": "direncli-kuf-yeni-antifungaller",
+   "baslik": "Dirençli Küf Enfeksiyonlarında Yeni Antifungaller"
   },
   {
    "brans": "gastroenteroloji",
    "slug": "yapisal-enfeksiyoz-ozofagus",
    "baslik": "Yapısal ve Enfeksiyöz Özofagus Hastalıkları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "candidozyma-auris-klinik",
+   "baslik": "Candidozyma auris: Klinik Prezentasyon ve Pratik İpuçları"
   }
  ],
  "enfeksiyon/invazive-mantar-enfeksiyon": [
@@ -3225,7 +3235,7 @@
   {
    "brans": "enfeksiyon",
    "slug": "candidozyma-auris-nozokomiyal-persistans",
-   "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
+   "baslik": "Candidozyma auris (Candida auris)"
   },
   {
    "brans": "enfeksiyon",
@@ -3234,11 +3244,6 @@
   }
  ],
  "enfeksiyon/okuler-kandidiyazis": [
-  {
-   "brans": "enfeksiyon",
-   "slug": "candidozyma-auris-klinik",
-   "baslik": "Candidozyma auris: Klinik Prezentasyon ve Pratik İpuçları"
-  },
   {
    "brans": "enfeksiyon",
    "slug": "cr-hvkp-endoftalmi-komplikasyonu",
@@ -3253,6 +3258,16 @@
    "brans": "gastroenteroloji",
    "slug": "yapisal-enfeksiyoz-ozofagus",
    "baslik": "Yapısal ve Enfeksiyöz Özofagus Hastalıkları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "candidozyma-auris-klinik",
+   "baslik": "Candidozyma auris: Klinik Prezentasyon ve Pratik İpuçları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "candidozyma-auris-nozokomiyal-persistans",
+   "baslik": "Candidozyma auris (Candida auris)"
   }
  ],
  "enfeksiyon/prokalsitonin-biyobelirtec-karsilastirmasi": [
@@ -4428,7 +4443,7 @@
   {
    "brans": "enfeksiyon",
    "slug": "candidozyma-auris-nozokomiyal-persistans",
-   "baslik": "Candidozyma auris: Nozokomiyal Persistans ve Patogenez"
+   "baslik": "Candidozyma auris (Candida auris)"
   },
   {
    "brans": "gogus",
