@@ -624,42 +624,6 @@
         "kaynak": "kavram"
       }
     ],
-    "gogus/koah-ana": [
-      {
-        "slug": "anthonisen",
-        "name": "Anthonisen Kriterleri",
-        "eslesen": "Anthonisen"
-      },
-      {
-        "slug": "qtc",
-        "name": "QTc Hesaplayıcı",
-        "eslesen": "QTc"
-      },
-      {
-        "slug": "ado",
-        "name": "ADO İndeksi",
-        "eslesen": "kronik obstrüktif",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "bap65",
-        "name": "BAP-65",
-        "eslesen": "kronik obstrüktif",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "bode",
-        "name": "BODE İndeksi",
-        "eslesen": "kronik obstrüktif",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "capture-koah",
-        "name": "CAPTURE",
-        "eslesen": "kronik obstrüktif",
-        "kaynak": "kavram"
-      }
-    ],
     "gogus/koah-perioperatif-anestezi": [
       {
         "slug": "surucu-basinc",
@@ -3337,6 +3301,44 @@
         "kaynak": "kavram"
       }
     ],
+    "gogus/koah-ana": [
+      {
+        "slug": "ado",
+        "name": "ADO İndeksi",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "anthonisen",
+        "name": "Anthonisen Kriterleri",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bap65",
+        "name": "BAP-65",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "bode",
+        "name": "BODE İndeksi",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "capture-koah",
+        "name": "CAPTURE",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cat-copd",
+        "name": "CAT Skoru",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      }
+    ],
     "gogus/koah-asetazolamid": [
       {
         "slug": "ado",
@@ -4883,11 +4885,6 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "gogus/koah-ana",
-        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
-        "eslesen": "QTc"
-      },
-      {
         "yol": "hematoloji/gilteritinib-flt3-aml",
         "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi",
         "eslesen": "QTc"
@@ -4905,6 +4902,11 @@
       {
         "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
         "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
+        "eslesen": "QTc"
+      },
+      {
+        "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
+        "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
         "eslesen": "QTc"
       }
     ],
@@ -5420,55 +5422,6 @@
         "yol": "gogus/koah-perioperatif-anestezi",
         "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
         "eslesen": "Sürücü Basınç"
-      }
-    ],
-    "anthonisen": [
-      {
-        "yol": "gogus/koah-ana",
-        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
-        "eslesen": "Anthonisen"
-      },
-      {
-        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
-        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gogus/koah-asetazolamid",
-        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gogus/koah-cpet-ve-ebv",
-        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gogus/koah-fizyolojisi",
-        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gogus/koah-perioperatif-anestezi",
-        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gogus/koah-postoperatif-niv",
-        "baslik": "KOAH'ta Postoperatif Non-İnvaziv Ventilasyon (NIV)",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gogus/koah-postoperatif-niv-hfnc",
-        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
-        "eslesen": "KOAH",
-        "kaynak": "kavram"
       }
     ],
     "curb65": [
@@ -7324,6 +7277,56 @@
         "kaynak": "kavram"
       }
     ],
+    "anthonisen": [
+      {
+        "yol": "gogus/koah-ana",
+        "baslik": "Kronik Obstrüktif Akciğer Hastalığı (KOAH)",
+        "eslesen": "kronik obstrüktif",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-akciger-koruyucu-ventilasyon",
+        "baslik": "Akciğer Koruyucu Ventilasyon Kriterleri (KOAH)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-asetazolamid",
+        "baslik": "KOAH'ta Asetazolamid Tehlikesi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-cpet-ve-ebv",
+        "baslik": "KOAH'ta CPET Parametreleri ve Endobronşiyal Valf Fizyolojisi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-fizyolojisi",
+        "baslik": "KOAH Fizyolojisi: Havayolu Mekaniği, Hiperinflasyon ve Sistemik Etkiler",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-perioperatif-anestezi",
+        "baslik": "KOAH'ta Perioperatif Yönetim ve Anestezi",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv",
+        "baslik": "KOAH'ta Postoperatif Non-İnvaziv Ventilasyon (NIV)",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gogus/koah-postoperatif-niv-hfnc",
+        "baslik": "Postoperatif KOAH'ta NIV ve HFNC: Karşılaştırma ve Hibrit Protokol",
+        "eslesen": "KOAH",
+        "kaynak": "kavram"
+      }
+    ],
     "bap65": [
       {
         "yol": "gogus/koah-ana",
@@ -8995,6 +8998,6 @@
     "araciOlanKonu": 348,
     "konusuOlanArac": 177,
     "bag": 720,
-    "kavramBag": 627
+    "kavramBag": 628
   }
 }
