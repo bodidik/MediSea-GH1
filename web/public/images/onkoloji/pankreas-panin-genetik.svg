@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 500" width="640" height="500" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">PanIN'den invaziv karsinoma genetik basamaklar</title>
+<desc id="d">Normal duktal epitelden düşük dereceli PanIN'e geçişte ilk olay KRAS mutasyonudur; KRAS tümörlerin yüzde 90'ından fazlasında mutanttır. CDKN2A kaybı ara derece PanIN'de başlar ve tümörlerin yaklaşık yüzde 95'inde vardır. TP53 yüzde 75 ile 85, SMAD4 yaklaşık yüzde 50 sıklıkla yüksek dereceli PanIN'de ya da invaziv karsinomda ortaya çıkar. Paralel öncüller IPMN'de GNAS, RNF43, KRAS, TP53, SMAD4; müsinöz kistik neoplazide RNF43, KRAS, TP53, SMAD4 değişiklikleri görülür. Yatak başı karşılığı: KRAS yabanıl tümörde MSI, NTRK ve nadir füzyonlar aranır; homolog rekombinasyon onarım kusuru platin ve PARP inhibitörü duyarlılığını belirler.</desc>
+<style>
+.a{animation-duration:13s;animation-iteration-count:1;animation-timing-function:ease-in-out;animation-fill-mode:both}
+.ciz{stroke-dasharray:1}
+.s0{animation-name:s0}@keyframes s0{0%,0%{opacity:0;transform:translateY(7px)}3%,100%{opacity:1;transform:none}}
+.s0 .ciz{animation-name:s0c}@keyframes s0c{0%,0%{stroke-dashoffset:1}4%,100%{stroke-dashoffset:0}}
+.s1{animation-name:s1}@keyframes s1{0%,10%{opacity:0;transform:translateY(7px)}13%,100%{opacity:1;transform:none}}
+.s1 .ciz{animation-name:s1c}@keyframes s1c{0%,10%{stroke-dashoffset:1}14%,100%{stroke-dashoffset:0}}
+.s2{animation-name:s2}@keyframes s2{0%,21%{opacity:0;transform:translateY(7px)}24%,100%{opacity:1;transform:none}}
+.s2 .ciz{animation-name:s2c}@keyframes s2c{0%,21%{stroke-dashoffset:1}25%,100%{stroke-dashoffset:0}}
+.s3{animation-name:s3}@keyframes s3{0%,31%{opacity:0;transform:translateY(7px)}34%,100%{opacity:1;transform:none}}
+.s3 .ciz{animation-name:s3c}@keyframes s3c{0%,31%{stroke-dashoffset:1}35%,100%{stroke-dashoffset:0}}
+.s4{animation-name:s4}@keyframes s4{0%,41%{opacity:0;transform:translateY(7px)}44%,100%{opacity:1;transform:none}}
+.s4 .ciz{animation-name:s4c}@keyframes s4c{0%,41%{stroke-dashoffset:1}45%,100%{stroke-dashoffset:0}}
+.s5{animation-name:s5}@keyframes s5{0%,51%{opacity:0;transform:translateY(7px)}54%,100%{opacity:1;transform:none}}
+.s5 .ciz{animation-name:s5c}@keyframes s5c{0%,51%{stroke-dashoffset:1}55%,100%{stroke-dashoffset:0}}
+.s6{animation-name:s6}@keyframes s6{0%,62%{opacity:0;transform:translateY(7px)}65%,100%{opacity:1;transform:none}}
+.s6 .ciz{animation-name:s6c}@keyframes s6c{0%,62%{stroke-dashoffset:1}66%,100%{stroke-dashoffset:0}}
+.s7{animation-name:s7}@keyframes s7{0%,72%{opacity:0;transform:translateY(7px)}75%,100%{opacity:1;transform:none}}
+.s7 .ciz{animation-name:s7c}@keyframes s7c{0%,72%{stroke-dashoffset:1}76%,100%{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.a,.a .ciz{animation:none}.ciz{stroke-dasharray:none}}
+</style>
+<defs><marker id="uc" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect width="640" height="500" fill="#ffffff"/>
+<g class="a s0"><rect x="30" y="16" width="350" height="46" rx="9" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.6"/><text x="205" y="37" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b">Normal duktal epitel</text></g>
+<g class="a s1"><path class="ciz" pathLength="1" d="M205 62 L205 88" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#uc)"/><rect x="30" y="90" width="350" height="66" rx="9" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.6"/><text x="205" y="111" text-anchor="middle" font-size="14" font-weight="700" fill="#1e3a8a">PanIN-1 (düşük derece)</text><text x="205" y="131" text-anchor="middle" font-size="13" fill="#334155">KRAS: tümörlerin &gt;%90'ında, en erken olay</text></g>
+<g class="a s2"><path class="ciz" pathLength="1" d="M205 156 L205 182" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#uc)"/><rect x="30" y="184" width="350" height="66" rx="9" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.6"/><text x="205" y="205" text-anchor="middle" font-size="14" font-weight="700" fill="#4c1d95">PanIN-2 (ara derece)</text><text x="205" y="225" text-anchor="middle" font-size="13" fill="#334155">CDKN2A/p16 kaybı başlar (~%95)</text></g>
+<g class="a s3"><path class="ciz" pathLength="1" d="M205 250 L205 276" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#uc)"/><rect x="30" y="278" width="350" height="84" rx="9" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.6"/><text x="205" y="299" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f">PanIN-3 (yüksek derece)</text><text x="205" y="319" text-anchor="middle" font-size="13" fill="#334155">TP53 (%75–85) · SMAD4 (~%50)</text><text x="205" y="337" text-anchor="middle" font-size="13" fill="#334155">ya da daha geç, invaziv aşamada</text></g>
+<g class="a s4"><path class="ciz" pathLength="1" d="M205 362 L205 388" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#uc)"/><rect x="30" y="390" width="350" height="46" rx="9" fill="#fef2f2" stroke="#ef4444" stroke-width="1.6"/><text x="205" y="411" text-anchor="middle" font-size="14" font-weight="700" fill="#7f1d1d">İnvaziv PDAC, yoğun stroma</text></g>
+<g class="a s5"><rect x="400" y="90" width="216" height="160" rx="9" fill="#ecfdf5" stroke="#10b981" stroke-width="1.6"/><text x="508" y="111" text-anchor="middle" font-size="14" font-weight="700" fill="#064e3b">Paralel öncüller</text><text x="508" y="131" text-anchor="middle" font-size="13" fill="#334155">IPMN:</text><text x="508" y="149" text-anchor="middle" font-size="13" fill="#334155">GNAS, RNF43, KRAS,</text><text x="508" y="167" text-anchor="middle" font-size="13" fill="#334155">TP53, SMAD4</text><text x="508" y="185" text-anchor="middle" font-size="13" fill="#334155">Müsinöz kistik:</text><text x="508" y="203" text-anchor="middle" font-size="13" fill="#334155">RNF43, KRAS, TP53,</text><text x="508" y="221" text-anchor="middle" font-size="13" fill="#334155">SMAD4</text></g>
+<g class="a s6"><rect x="400" y="278" width="216" height="158" rx="9" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.6"/><text x="508" y="299" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b">Yatak başı</text><text x="508" y="319" text-anchor="middle" font-size="13" fill="#334155">KRAS yabanıl ise</text><text x="508" y="337" text-anchor="middle" font-size="13" fill="#334155">MSI, NTRK, füzyon ara</text><text x="508" y="355" text-anchor="middle" font-size="13" fill="#334155">HRR kusuru:</text><text x="508" y="373" text-anchor="middle" font-size="13" fill="#334155">platin + PARP duyarlılığı</text><text x="508" y="391" text-anchor="middle" font-size="13" fill="#334155">dMMR: ~%0,8</text></g>
+<g class="a s7"><rect x="30" y="450" width="586" height="40" rx="9" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.6"/><text x="323" y="471" text-anchor="middle" font-size="13" fill="#334155">Sıra morfolojik ilerlemeyle uyumlu bir modeldir; her tümörde birebir izlenmez.</text></g>
+</svg>

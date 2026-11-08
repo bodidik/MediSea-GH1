@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" width="640" height="430" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Lokal ileri ve perioperatif yeni yaklaşımlar</title>
+<desc id="d">TTFields, gemsitabin ve nab-paklitaksele eklendiğinde PANOVA-3'te lokal ileri pankreas kanserinde sağkalımı 14 aydan 16 aya, ağrısız sağkalımı 9 aydan 16 aya çıkarmış; progresyonsuz sağkalım ve yanıtı değiştirmemiş, deri tahrişi yüzde 76 olmuştur. Perioperatif alanda PAXG, CASSANDRA'da mFOLFIRINOX'a göre olaysız sağkalımı 10'dan 16 aya çıkarmıştır ancak araştırma aşamasındadır. NALIRIFOX'un rezektabl hastadaki faz 2 nITRO çalışmasında R0 oranı yüzde 65, ortanca sağkalım 32 aydır ve karşılaştırmalı değildir.</desc>
+<style>
+.a{animation-duration:13s;animation-iteration-count:1;animation-timing-function:ease-in-out;animation-fill-mode:both}
+.ciz{stroke-dasharray:1}
+.s0{animation-name:s0}@keyframes s0{0%,0%{opacity:0;transform:translateY(7px)}3%,100%{opacity:1;transform:none}}
+.s0 .ciz{animation-name:s0c}@keyframes s0c{0%,0%{stroke-dashoffset:1}4%,100%{stroke-dashoffset:0}}
+.s1{animation-name:s1}@keyframes s1{0%,21%{opacity:0;transform:translateY(7px)}24%,100%{opacity:1;transform:none}}
+.s1 .ciz{animation-name:s1c}@keyframes s1c{0%,21%{stroke-dashoffset:1}25%,100%{stroke-dashoffset:0}}
+.s2{animation-name:s2}@keyframes s2{0%,41%{opacity:0;transform:translateY(7px)}44%,100%{opacity:1;transform:none}}
+.s2 .ciz{animation-name:s2c}@keyframes s2c{0%,41%{stroke-dashoffset:1}45%,100%{stroke-dashoffset:0}}
+.s3{animation-name:s3}@keyframes s3{0%,62%{opacity:0;transform:translateY(7px)}65%,100%{opacity:1;transform:none}}
+.s3 .ciz{animation-name:s3c}@keyframes s3c{0%,62%{stroke-dashoffset:1}66%,100%{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.a,.a .ciz{animation:none}.ciz{stroke-dasharray:none}}
+</style>
+<defs><marker id="uc" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect width="640" height="430" fill="#ffffff"/>
+<g class="a s0"><rect x="16" y="12" width="608" height="150" rx="9" fill="#ecfdf5" stroke="#10b981" stroke-width="1.6"/><text x="320" y="33" text-anchor="middle" font-size="14" font-weight="700" fill="#064e3b">PANOVA-3 (lokal ileri, 571 hasta): GnP + TTFields</text><text x="320" y="53" text-anchor="middle" font-size="13" fill="#334155">Medyan OS 16 vs 14 ay (HR 0,82)</text><text x="320" y="71" text-anchor="middle" font-size="13" fill="#334155">Ağrısız sağkalım 16 vs 9 ay (HR 0,74)</text><text x="320" y="89" text-anchor="middle" font-size="13" fill="#334155">PFS ve ORR değişmedi</text><text x="320" y="107" text-anchor="middle" font-size="13" fill="#334155">Cilt tahrişi %76 (3. derece %8); günde &gt;%75 kullanım</text></g>
+<g class="a s1"><path class="ciz" pathLength="1" d="M320 162 L320 188" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#uc)"/><rect x="16" y="190" width="296" height="188" rx="9" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.6"/><text x="164" y="211" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f">PAXG (CASSANDRA)</text><text x="164" y="231" text-anchor="middle" font-size="13" fill="#334155">260 hasta · rezektabl/sınırda</text><text x="164" y="249" text-anchor="middle" font-size="13" fill="#334155">EFS 16 vs 10 ay</text><text x="164" y="267" text-anchor="middle" font-size="13" fill="#334155">(mFOLFIRINOX'a karşı)</text><text x="164" y="285" text-anchor="middle" font-size="13" fill="#334155">OS verisi olgun değil</text><text x="164" y="303" text-anchor="middle" font-size="13" fill="#334155">≥3. derece %66 vs %61</text></g>
+<g class="a s2"><rect x="328" y="190" width="296" height="188" rx="9" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.6"/><text x="476" y="211" text-anchor="middle" font-size="14" font-weight="700" fill="#4c1d95">NALIRIFOX (nITRO)</text><text x="476" y="231" text-anchor="middle" font-size="13" fill="#334155">107 hasta · yalnız rezektabl</text><text x="476" y="249" text-anchor="middle" font-size="13" fill="#334155">Faz 2, tek kollu</text><text x="476" y="267" text-anchor="middle" font-size="13" fill="#334155">R0 %65 · ortanca OS 32 ay</text><text x="476" y="285" text-anchor="middle" font-size="13" fill="#334155">Karşılaştırma yok,</text><text x="476" y="303" text-anchor="middle" font-size="13" fill="#334155">araştırma aşamasında</text></g>
+<g class="a s3"><rect x="16" y="392" width="608" height="30" rx="9" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.6"/><text x="320" y="413" text-anchor="middle" font-size="13" fill="#334155">İkisi de standart perioperatif seçenek değildir.</text></g>
+</svg>

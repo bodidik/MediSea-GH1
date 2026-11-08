@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 450" width="640" height="450" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Yeni başlayan diyabette pankreas değerlendirmesi</title>
+<desc id="d">Yeni başlayan diyabeti olan yetişkinde önce kişinin yüksek genetik riskte olup olmadığına bakılır. Yüksek riskli kişide iki hafta içinde EUS, MRCP ya da pankreas protokollü BT yapılır. Kanser semptomu olan kişi taramayla değil tanısal yolla araştırılır. Asemptomatik ortalama riskli yaşlı erişkinde USPSTF ve UpToDate tarama önermez; kilo kaybı ile birlikte yeni diyabette risk daha yüksek görünmekle birlikte tarama eşiği belirlenmemiştir.</desc>
+<style>
+.a{animation-duration:13s;animation-iteration-count:1;animation-timing-function:ease-in-out;animation-fill-mode:both}
+.ciz{stroke-dasharray:1}
+.s0{animation-name:s0}@keyframes s0{0%,0%{opacity:0;transform:translateY(7px)}3%,100%{opacity:1;transform:none}}
+.s0 .ciz{animation-name:s0c}@keyframes s0c{0%,0%{stroke-dashoffset:1}4%,100%{stroke-dashoffset:0}}
+.s1{animation-name:s1}@keyframes s1{0%,12%{opacity:0;transform:translateY(7px)}15%,100%{opacity:1;transform:none}}
+.s1 .ciz{animation-name:s1c}@keyframes s1c{0%,12%{stroke-dashoffset:1}16%,100%{stroke-dashoffset:0}}
+.s2{animation-name:s2}@keyframes s2{0%,23%{opacity:0;transform:translateY(7px)}26%,100%{opacity:1;transform:none}}
+.s2 .ciz{animation-name:s2c}@keyframes s2c{0%,23%{stroke-dashoffset:1}27%,100%{stroke-dashoffset:0}}
+.s3{animation-name:s3}@keyframes s3{0%,35%{opacity:0;transform:translateY(7px)}38%,100%{opacity:1;transform:none}}
+.s3 .ciz{animation-name:s3c}@keyframes s3c{0%,35%{stroke-dashoffset:1}39%,100%{stroke-dashoffset:0}}
+.s4{animation-name:s4}@keyframes s4{0%,47%{opacity:0;transform:translateY(7px)}50%,100%{opacity:1;transform:none}}
+.s4 .ciz{animation-name:s4c}@keyframes s4c{0%,47%{stroke-dashoffset:1}51%,100%{stroke-dashoffset:0}}
+.s5{animation-name:s5}@keyframes s5{0%,59%{opacity:0;transform:translateY(7px)}62%,100%{opacity:1;transform:none}}
+.s5 .ciz{animation-name:s5c}@keyframes s5c{0%,59%{stroke-dashoffset:1}63%,100%{stroke-dashoffset:0}}
+.s6{animation-name:s6}@keyframes s6{0%,70%{opacity:0;transform:translateY(7px)}73%,100%{opacity:1;transform:none}}
+.s6 .ciz{animation-name:s6c}@keyframes s6c{0%,70%{stroke-dashoffset:1}74%,100%{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.a,.a .ciz{animation:none}.ciz{stroke-dasharray:none}}
+</style>
+<defs><marker id="uc" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect width="640" height="450" fill="#ffffff"/>
+<g class="a s0"><rect x="150" y="12" width="340" height="48" rx="9" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.6"/><text x="320" y="33" text-anchor="middle" font-size="14" font-weight="700" fill="#1e3a8a">Yetişkinde yeni başlayan diyabet</text></g>
+<g class="a s1"><path class="ciz" pathLength="1" d="M230 60 L110 92" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#uc)"/><path class="ciz" pathLength="1" d="M320 60 L320 92" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#uc)"/><path class="ciz" pathLength="1" d="M410 60 L530 92" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#uc)"/><rect x="16" y="94" width="196" height="150" rx="9" fill="#fef2f2" stroke="#ef4444" stroke-width="1.6"/><text x="114" y="115" text-anchor="middle" font-size="14" font-weight="700" fill="#7f1d1d">Yüksek genetik risk</text><text x="114" y="135" text-anchor="middle" font-size="13" fill="#334155">Sendrom ya da</text><text x="114" y="153" text-anchor="middle" font-size="13" fill="#334155">ailesel küme</text><text x="114" y="171" text-anchor="middle" font-size="13" fill="#334155">2 hafta içinde</text><text x="114" y="189" text-anchor="middle" font-size="13" fill="#334155">EUS / MRCP / BT</text></g>
+<g class="a s2"><rect x="222" y="94" width="196" height="150" rx="9" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.6"/><text x="320" y="115" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f">Semptom var</text><text x="320" y="135" text-anchor="middle" font-size="13" fill="#334155">Sarılık, kilo kaybı,</text><text x="320" y="153" text-anchor="middle" font-size="13" fill="#334155">epigastrik ağrı:</text><text x="320" y="171" text-anchor="middle" font-size="13" fill="#334155">tanısal yol</text><text x="320" y="189" text-anchor="middle" font-size="13" fill="#334155">(tarama değil)</text></g>
+<g class="a s3"><rect x="428" y="94" width="196" height="150" rx="9" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.6"/><text x="526" y="115" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b">Asemptomatik</text><text x="526" y="135" text-anchor="middle" font-size="13" fill="#334155">Ortalama risk:</text><text x="526" y="153" text-anchor="middle" font-size="13" fill="#334155">tarama önerilmez</text><text x="526" y="171" text-anchor="middle" font-size="13" fill="#334155">(USPSTF)</text></g>
+<g class="a s4"><path class="ciz" pathLength="1" d="M526 244 L526 270" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#uc)"/><rect x="340" y="272" width="284" height="110" rx="9" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.6"/><text x="482" y="293" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f">Kilo kaybı + yeni diyabet</text><text x="482" y="313" text-anchor="middle" font-size="13" fill="#334155">Risk yüksek görünüyor;</text><text x="482" y="331" text-anchor="middle" font-size="13" fill="#334155">tarama eşiği belirlenmedi</text></g>
+<g class="a s5"><rect x="16" y="272" width="300" height="110" rx="9" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.6"/><text x="166" y="293" text-anchor="middle" font-size="14" font-weight="700" fill="#1e3a8a">Görüntüleme varsa</text><text x="166" y="313" text-anchor="middle" font-size="13" fill="#334155">Mayo: tanıda çekilen BT</text><text x="166" y="331" text-anchor="middle" font-size="13" fill="#334155">6 ay sonrakinden daha çok</text><text x="166" y="349" text-anchor="middle" font-size="13" fill="#334155">rezektabl lezyon gösterdi</text></g>
+<g class="a s6"><rect x="16" y="396" width="608" height="44" rx="9" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.6"/><text x="320" y="417" text-anchor="middle" font-size="13" fill="#334155">Bütün yaşlı yeni diyabetlilere BT taraması uygulanabilir değildir.</text></g>
+</svg>
