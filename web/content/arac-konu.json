@@ -789,14 +789,14 @@
     ],
     "hematoloji/antikoagulasyon-stratejileri": [
       {
-        "slug": "chads-vasc",
-        "name": "CHA₂DS₂-VASc Skoru",
-        "eslesen": "CHA2DS2-VASc Skoru"
-      },
-      {
         "slug": "khorana",
         "name": "Khorana Skoru",
         "eslesen": "Khorana Skoru"
+      },
+      {
+        "slug": "chads-vasc",
+        "name": "CHA₂DS₂-VASc Skoru",
+        "eslesen": "CHA2DS2-VASc"
       }
     ],
     "hematoloji/burkitt": [
@@ -5630,8 +5630,8 @@
     ],
     "chads-vasc": [
       {
-        "yol": "hematoloji/antikoagulasyon-stratejileri",
-        "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim",
+        "yol": "hematoloji/inme-sonrasi-gizli-af",
+        "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi",
         "eslesen": "CHA2DS2-VASc Skoru"
       },
       {
@@ -5640,9 +5640,9 @@
         "eslesen": "CHA2DS2-VASc Skoru"
       },
       {
-        "yol": "hematoloji/inme-sonrasi-gizli-af",
-        "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi",
-        "eslesen": "CHA2DS2-VASc Skoru"
+        "yol": "hematoloji/antikoagulasyon-stratejileri",
+        "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim",
+        "eslesen": "CHA2DS2-VASc"
       },
       {
         "yol": "kardiyoloji/kardiyak-amiloidoz",
