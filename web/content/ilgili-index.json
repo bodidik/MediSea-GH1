@@ -4633,8 +4633,8 @@
  "hematoloji/all": [
   {
    "brans": "hematoloji",
-   "slug": "aml",
-   "baslik": "Akut Miyeloid Lösemi (AML)"
+   "slug": "ezh2-yabanil-tip-tedavi",
+   "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
   }
  ],
  "hematoloji/allojenik-kok-hucre-nakli": [
@@ -4647,23 +4647,8 @@
  "hematoloji/aml": [
   {
    "brans": "hematoloji",
-   "slug": "esansiyel-trombositoz-tani",
-   "baslik": "ET Tanısal Yaklaşımı: DSÖ/ICC Kriterleri ve Morfolojik Diferansiyasyon"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hematolojik-maligniteler",
-   "baslik": "Hematolojik Maligniteler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "kml",
-   "baslik": "Kronik Miyeloid Lösemi (KML)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "allojenik-kok-hucre-nakli",
-   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
+   "slug": "all",
+   "baslik": "Akut Lenfoblastik Lösemi (ALL)"
   }
  ],
  "hematoloji/aml-geriatrik-degerlendirme": [
@@ -4779,8 +4764,13 @@
  "hematoloji/dlbcl": [
   {
    "brans": "hematoloji",
-   "slug": "folikuler-lenfoma",
-   "baslik": "Foliküler Lenfoma"
+   "slug": "ezh2-yabanil-tip-tedavi",
+   "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "all",
+   "baslik": "Akut Lenfoblastik Lösemi (ALL)"
   }
  ],
  "hematoloji/doac-warfarin-patofizyolojik-karsilastirma": [
@@ -4861,6 +4851,11 @@
   },
   {
    "brans": "hematoloji",
+   "slug": "all",
+   "baslik": "Akut Lenfoblastik Lösemi (ALL)"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "FL-t1(4-18)",
    "baslik": "t(14;18) Translokasyonunun Rolü"
   },
@@ -4878,11 +4873,6 @@
    "brans": "hematoloji",
    "slug": "kmt2d-t14-18-negatif",
    "baslik": "t(14;18) Negatif FL Vakalarında KMT2D Mutasyonu"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "m7-flipi-ngs-paneli",
-   "baslik": "m7-FLIPI Skoru İçin Gerekli NGS Paneli Özellikleri"
   }
  ],
  "hematoloji/folat-eksikligi": [
@@ -5174,6 +5164,11 @@
  "hematoloji/kll": [
   {
    "brans": "hematoloji",
+   "slug": "all",
+   "baslik": "Akut Lenfoblastik Lösemi (ALL)"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "aml",
    "baslik": "Akut Miyeloid Lösemi (AML)"
   }
@@ -5410,13 +5405,13 @@
  "hematoloji/multiple-myelom": [
   {
    "brans": "hematoloji",
-   "slug": "losemiler",
-   "baslik": "Lösemiler"
+   "slug": "all",
+   "baslik": "Akut Lenfoblastik Lösemi (ALL)"
   },
   {
    "brans": "hematoloji",
-   "slug": "miyelodisplastik-sendrom-mds",
-   "baslik": "Miyelodisplastik Sendromlar (MDS)"
+   "slug": "ezh2-yabanil-tip-tedavi",
+   "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
   }
  ],
  "hematoloji/orak-hucreli-anemi": [

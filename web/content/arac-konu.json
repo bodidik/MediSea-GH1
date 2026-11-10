@@ -855,42 +855,6 @@
         "kaynak": "kavram"
       }
     ],
-    "hematoloji/doac-warfarin-patofizyolojik-karsilastirma": [
-      {
-        "slug": "chads-vasc",
-        "name": "CHA₂DS₂-VASc Skoru",
-        "eslesen": "CHA2DS2-VASc"
-      },
-      {
-        "slug": "has-bled",
-        "name": "HAS-BLED Skoru",
-        "eslesen": "HAS-BLED"
-      },
-      {
-        "slug": "antikoagulan-geri-dondurme",
-        "name": "Antikoagülan Geri Döndürme",
-        "eslesen": "oral antikoagülan",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "orbit",
-        "name": "ORBIT Kanama Skoru",
-        "eslesen": "oral antikoagülan",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "same-tt2r2",
-        "name": "SAMe-TT₂R₂",
-        "eslesen": "warfarin",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "cockcroft-gault",
-        "name": "Cockcroft-Gault Kreatinin Klirensi",
-        "eslesen": "DOAC",
-        "kaynak": "kavram"
-      }
-    ],
     "hematoloji/folikuler-lenfoma": [
       {
         "slug": "flipi",
@@ -3743,6 +3707,44 @@
         "kaynak": "kavram"
       }
     ],
+    "hematoloji/doac-warfarin-patofizyolojik-karsilastirma": [
+      {
+        "slug": "antikoagulan-geri-dondurme",
+        "name": "Antikoagülan Geri Döndürme",
+        "eslesen": "oral antikoagülan",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "chads-vasc",
+        "name": "CHA₂DS₂-VASc Skoru",
+        "eslesen": "oral antikoagülan",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "has-bled",
+        "name": "HAS-BLED Skoru",
+        "eslesen": "oral antikoagülan",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "orbit",
+        "name": "ORBIT Kanama Skoru",
+        "eslesen": "oral antikoagülan",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "same-tt2r2",
+        "name": "SAMe-TT₂R₂",
+        "eslesen": "warfarin",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "cockcroft-gault",
+        "name": "Cockcroft-Gault Kreatinin Klirensi",
+        "eslesen": "DOAC",
+        "kaynak": "kavram"
+      }
+    ],
     "hematoloji/esansiyel-trombositoz": [
       {
         "slug": "mpn-tromboz",
@@ -5663,7 +5665,8 @@
       {
         "yol": "hematoloji/doac-warfarin-patofizyolojik-karsilastirma",
         "baslik": "Doğrudan Oral Antikoagülanlar (DOAC/NOAC) ve Warfarin’in Patofizyolojik, Farmakolojik ve Klinik Karşılaştırması",
-        "eslesen": "CHA2DS2-VASc"
+        "eslesen": "oral antikoagülan",
+        "kaynak": "kavram"
       }
     ],
     "khorana": [
@@ -5695,43 +5698,6 @@
         "yol": "hematoloji/periferik-t-hucreli-lenfomalar",
         "baslik": "Periferik T-Hücreli Lenfomalar (PTCL)",
         "eslesen": "periferik T",
-        "kaynak": "kavram"
-      }
-    ],
-    "has-bled": [
-      {
-        "yol": "hematoloji/doac-warfarin-patofizyolojik-karsilastirma",
-        "baslik": "Doğrudan Oral Antikoagülanlar (DOAC/NOAC) ve Warfarin’in Patofizyolojik, Farmakolojik ve Klinik Karşılaştırması",
-        "eslesen": "HAS-BLED"
-      },
-      {
-        "yol": "kardiyoloji/aritmiler-af-vt-vf",
-        "baslik": "Aritmiler (Atriyal Fibrilasyon, VT/VF)",
-        "eslesen": "atriyal fibrilasyon",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/chase-less-skoru",
-        "baslik": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli",
-        "eslesen": "atriyal fibrilasyon",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "kardiyoloji/aks-oac-antitrombotik-yonetim",
-        "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması",
-        "eslesen": "üçlü antitrombotik",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/inme-sonrasi-gizli-af",
-        "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi",
-        "eslesen": "atriyal fibrilasyon",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/vka-doac-karsilastirma",
-        "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri",
-        "eslesen": "DOAC",
         "kaynak": "kavram"
       }
     ],
@@ -8097,6 +8063,44 @@
         "kaynak": "kavram"
       }
     ],
+    "has-bled": [
+      {
+        "yol": "hematoloji/chase-less-skoru",
+        "baslik": "CHASE-LESS Skoru: İnme Sonrası Okült Atriyal Fibrilasyon Öngörü Modeli",
+        "eslesen": "atriyal fibrilasyon",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "kardiyoloji/aritmiler-af-vt-vf",
+        "baslik": "Aritmiler (Atriyal Fibrilasyon, VT/VF)",
+        "eslesen": "atriyal fibrilasyon",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "hematoloji/inme-sonrasi-gizli-af",
+        "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi",
+        "eslesen": "atriyal fibrilasyon",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "kardiyoloji/aks-oac-antitrombotik-yonetim",
+        "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması",
+        "eslesen": "üçlü antitrombotik",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "hematoloji/doac-warfarin-patofizyolojik-karsilastirma",
+        "baslik": "Doğrudan Oral Antikoagülanlar (DOAC/NOAC) ve Warfarin’in Patofizyolojik, Farmakolojik ve Klinik Karşılaştırması",
+        "eslesen": "oral antikoagülan",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "hematoloji/vka-doac-karsilastirma",
+        "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri",
+        "eslesen": "DOAC",
+        "kaynak": "kavram"
+      }
+    ],
     "orbit": [
       {
         "yol": "hematoloji/chase-less-skoru",
@@ -8998,6 +9002,6 @@
     "araciOlanKonu": 348,
     "konusuOlanArac": 177,
     "bag": 720,
-    "kavramBag": 628
+    "kavramBag": 630
   }
 }
