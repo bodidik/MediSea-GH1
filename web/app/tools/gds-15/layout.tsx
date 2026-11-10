@@ -43,18 +43,13 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/hematoloji/aml" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Akut Miyeloid Lösemi (AML)
+              <Link href="/topics/hematoloji/aml-geriatrik-degerlendirme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)
               </Link>
             </li>
             <li>
               <Link href="/topics/onkoloji/opioidler-ve-solunum" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 İleri Okuma: Opioidler ve Solunum — Solunum Depresyonu Mekanizmaları ve Yönetimi
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/hematoloji/aml-geriatrik-degerlendirme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)
               </Link>
             </li>
             <li>

@@ -710,7 +710,7 @@
       {
         "slug": "charlson",
         "name": "Charlson Komorbidite İndeksi",
-        "eslesen": "Charlson Komorbidite İndeksi"
+        "eslesen": "Charlson Komorbidite"
       },
       {
         "slug": "tumor-lizis",
@@ -721,11 +721,6 @@
         "slug": "karnofsky",
         "name": "Karnofsky (KPS)",
         "eslesen": "Karnofsky"
-      },
-      {
-        "slug": "gds-15",
-        "name": "GDS-15",
-        "eslesen": "GDS-15"
       },
       {
         "slug": "sppb",
@@ -5434,11 +5429,6 @@
     ],
     "charlson": [
       {
-        "yol": "hematoloji/aml",
-        "baslik": "Akut Miyeloid Lösemi (AML)",
-        "eslesen": "Charlson Komorbidite İndeksi"
-      },
-      {
         "yol": "hematoloji/aml-geriatrik-degerlendirme",
         "baslik": "Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)",
         "eslesen": "Charlson Komorbidite İndeksi"
@@ -5447,29 +5437,11 @@
         "yol": "hematoloji/hct-ci-geriatrik-degerlendirme",
         "baslik": "HCT-CI ve Kapsamlı Geriatrik Değerlendirme: Allo-HCT'de Hasta Seçimi",
         "eslesen": "Charlson Komorbidite İndeksi"
-      }
-    ],
-    "gds-15": [
+      },
       {
         "yol": "hematoloji/aml",
         "baslik": "Akut Miyeloid Lösemi (AML)",
-        "eslesen": "GDS-15"
-      },
-      {
-        "yol": "onkoloji/opioidler-ve-solunum",
-        "baslik": "İleri Okuma: Opioidler ve Solunum — Solunum Depresyonu Mekanizmaları ve Yönetimi",
-        "eslesen": "depresyon",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/aml-geriatrik-degerlendirme",
-        "baslik": "Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)",
-        "eslesen": "GDS-15"
-      },
-      {
-        "yol": "hematoloji/hct-ci-geriatrik-degerlendirme",
-        "baslik": "HCT-CI ve Kapsamlı Geriatrik Değerlendirme: Allo-HCT'de Hasta Seçimi",
-        "eslesen": "GDS-15"
+        "eslesen": "Charlson Komorbidite"
       }
     ],
     "karnofsky": [
@@ -5561,6 +5533,24 @@
         "baslik": "TLS'de Farmakolojik Karşılaştırma: Rasburikaz vs Allopurinol",
         "eslesen": "TLS",
         "kaynak": "kavram"
+      }
+    ],
+    "gds-15": [
+      {
+        "yol": "hematoloji/aml-geriatrik-degerlendirme",
+        "baslik": "Yaşlı AML Hastalarında Kapsamlı Geriatrik Değerlendirme (KGD)",
+        "eslesen": "GDS-15"
+      },
+      {
+        "yol": "onkoloji/opioidler-ve-solunum",
+        "baslik": "İleri Okuma: Opioidler ve Solunum — Solunum Depresyonu Mekanizmaları ve Yönetimi",
+        "eslesen": "depresyon",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "hematoloji/hct-ci-geriatrik-degerlendirme",
+        "baslik": "HCT-CI ve Kapsamlı Geriatrik Değerlendirme: Allo-HCT'de Hasta Seçimi",
+        "eslesen": "GDS-15"
       }
     ],
     "retikulosit-indeksi": [
@@ -8989,7 +8979,7 @@
     "arac": 281,
     "araciOlanKonu": 347,
     "konusuOlanArac": 177,
-    "bag": 719,
+    "bag": 718,
     "kavramBag": 630
   }
 }

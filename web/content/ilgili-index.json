@@ -4621,6 +4621,11 @@
  "hematoloji/all": [
   {
    "brans": "hematoloji",
+   "slug": "aml",
+   "baslik": "Akut Miyeloid Lösemi (AML)"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "ezh2-yabanil-tip-tedavi",
    "baslik": "EZH2 Yabanıl Tip R/R FL'de Hedefe Yönelik Tedaviler"
   }
@@ -4637,6 +4642,21 @@
    "brans": "hematoloji",
    "slug": "all",
    "baslik": "Akut Lenfoblastik Lösemi (ALL)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "aml-gilteritinib-ds-yonetimi",
+   "baslik": "AML: Gilteritinib ve Diferansiyasyon Sendromu Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "aml-gilteritinib-midostaurin",
+   "baslik": "AML: Gilteritinib ve Midostaurin Karşılaştırması"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "gilteritinib-flt3-aml",
+   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
   }
  ],
  "hematoloji/aml-geriatrik-degerlendirme": [
@@ -4651,6 +4671,11 @@
    "brans": "hematoloji",
    "slug": "aml-gilteritinib-midostaurin",
    "baslik": "AML: Gilteritinib ve Midostaurin Karşılaştırması"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "aml",
+   "baslik": "Akut Miyeloid Lösemi (AML)"
   }
  ],
  "hematoloji/aml-gilteritinib-midostaurin": [
@@ -4658,6 +4683,11 @@
    "brans": "hematoloji",
    "slug": "aml-gilteritinib-ds-yonetimi",
    "baslik": "AML: Gilteritinib ve Diferansiyasyon Sendromu Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "aml",
+   "baslik": "Akut Miyeloid Lösemi (AML)"
   }
  ],
  "hematoloji/aml-tedavi-algoritmasi": [
@@ -4929,8 +4959,8 @@
  "hematoloji/gilteritinib-flt3-aml": [
   {
    "brans": "hematoloji",
-   "slug": "allojenik-kok-hucre-nakli",
-   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
+   "slug": "aml",
+   "baslik": "Akut Miyeloid Lösemi (AML)"
   }
  ],
  "hematoloji/hct-ci-geriatrik-degerlendirme": [
@@ -5152,13 +5182,13 @@
  "hematoloji/kll": [
   {
    "brans": "hematoloji",
-   "slug": "all",
-   "baslik": "Akut Lenfoblastik Lösemi (ALL)"
+   "slug": "aml",
+   "baslik": "Akut Miyeloid Lösemi (AML)"
   },
   {
    "brans": "hematoloji",
-   "slug": "aml",
-   "baslik": "Akut Miyeloid Lösemi (AML)"
+   "slug": "aml-tedavi-algoritmasi",
+   "baslik": "AML Tedavi Algoritması ve Klinik Yönetim"
   }
  ],
  "hematoloji/kml": [
