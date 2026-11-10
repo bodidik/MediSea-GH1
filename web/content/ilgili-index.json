@@ -4618,18 +4618,6 @@
    "baslik": "KMT2D ve CREBBP Mutasyonlarının Prognostik Önemi"
   }
  ],
- "hematoloji/akut-lenfoblastik-losemi-all": [
-  {
-   "brans": "hematoloji",
-   "slug": "allojenik-kok-hucre-nakli",
-   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "miyelodisplastik-sendrom-mds",
-   "baslik": "Miyelodisplastik Sendromlar (MDS)"
-  }
- ],
  "hematoloji/all": [
   {
    "brans": "hematoloji",

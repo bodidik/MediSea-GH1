@@ -706,13 +706,6 @@
         "kaynak": "kavram"
       }
     ],
-    "hematoloji/akut-lenfoblastik-losemi-all": [
-      {
-        "slug": "ipss-r",
-        "name": "IPSS-R",
-        "eslesen": "IPSS-R"
-      }
-    ],
     "hematoloji/aml": [
       {
         "slug": "charlson",
@@ -5439,18 +5432,6 @@
         "kaynak": "kavram"
       }
     ],
-    "ipss-r": [
-      {
-        "yol": "hematoloji/akut-lenfoblastik-losemi-all",
-        "baslik": "Miyelodisplastik Sendromlar (MDS)",
-        "eslesen": "IPSS-R"
-      },
-      {
-        "yol": "hematoloji/miyelodisplastik-sendrom-mds",
-        "baslik": "Miyelodisplastik Sendromlar (MDS)",
-        "eslesen": "IPSS-R"
-      }
-    ],
     "charlson": [
       {
         "yol": "hematoloji/aml",
@@ -5788,6 +5769,13 @@
         "yol": "hematoloji/mikrositer-anemiler",
         "baslik": "Mikrositer Anemiler",
         "eslesen": "Mentzer İndeksi"
+      }
+    ],
+    "ipss-r": [
+      {
+        "yol": "hematoloji/miyelodisplastik-sendrom-mds",
+        "baslik": "Miyelodisplastik Sendromlar (MDS)",
+        "eslesen": "IPSS-R"
       }
     ],
     "r-iss": [
@@ -8997,11 +8985,11 @@
     ]
   },
   "olcum": {
-    "konu": 487,
+    "konu": 486,
     "arac": 281,
-    "araciOlanKonu": 348,
+    "araciOlanKonu": 347,
     "konusuOlanArac": 177,
-    "bag": 720,
+    "bag": 719,
     "kavramBag": 630
   }
 }

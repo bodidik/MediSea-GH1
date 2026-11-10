@@ -112,6 +112,8 @@ module.exports = {
       // kullanıcı ikisini de yer tutucu sayıp sildi — üst konu mikrositer anemiler (8 Eki 2026).
       { source: '/topics/hematoloji/demir-eksikligi', destination: '/topics/hematoloji/mikrositer-anemiler', permanent: true },
       { source: '/topics/hematoloji/demir-eksikligi-anemisi', destination: '/topics/hematoloji/mikrositer-anemiler', permanent: true },
+      // Adı ALL, içi MDS olan yanlış dosya silindi; içeriği MDS olduğu için MDS sayfasına (10 Kas 2026).
+      { source: '/topics/hematoloji/akut-lenfoblastik-losemi-all', destination: '/topics/hematoloji/miyelodisplastik-sendrom-mds', permanent: true },
       // Kalsiyum homeostazı iki kopya duruyordu; gizli kopya silindi, yayındaki kalsiyum-homeostazi-fizyoloji kaldı (11 Eki 2026).
       { source: '/topics/endokrinoloji/kalsiyum-metabolizmasi-ana', destination: '/topics/endokrinoloji/kalsiyum-homeostazi-fizyoloji', permanent: true },
       // Bilirubin metabolizması (sarılık) sayfası kullanıcı kararıyla Genel Dahiliye'ye taşındı (27 Eyl 2026).

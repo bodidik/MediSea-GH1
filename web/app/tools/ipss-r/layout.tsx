@@ -43,11 +43,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/hematoloji/akut-lenfoblastik-losemi-all" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Miyelodisplastik Sendromlar (MDS)
-              </Link>
-            </li>
-            <li>
               <Link href="/topics/hematoloji/miyelodisplastik-sendrom-mds" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Miyelodisplastik Sendromlar (MDS)
               </Link>
