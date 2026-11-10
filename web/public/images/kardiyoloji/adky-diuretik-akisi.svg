@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 620" width="640" height="620" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">ADKY'de diüretik titrasyonu ve ardışık nefron blokajı</title>
+<desc id="d">Evdeki dozun 2 ila 2,5 katı IV loop diüretiği ya da diüretik kullanmayan hastada furosemid 40 ila 100 mg. 1 ila 2 saat sonra spot idrar sodyumu ya da 2 ila 6 saatte idrar miktarı bakılır. İdrar sodyumu 50 ila 70 mmol/L'nin altında ya da idrar 100 ila 150 mL/saatin altındaysa doz ikiye katlanır. Furosemid eşdeğeri 300 mg'a karşın yanıt yoksa birinci basamak tiyazid ya da metolazon, ikinci basamak asetazolamid, amilorid ya da spironolakton. Hâlâ yanıt yoksa alternatif tanı, ileri KY, ultrafiltrasyon ya da diyaliz.</desc>
+<style>
+.a{animation-duration:12s;animation-iteration-count:1;animation-timing-function:ease-in-out;animation-fill-mode:both}
+.m{transform-box:fill-box;transform-origin:center}
+.ciz{stroke-dasharray:1}
+.s1{animation-name:s1}@keyframes s1{0%,0%{opacity:0;transform:translateY(8px)}3%,100%{opacity:1;transform:none}}
+.s2{animation-name:s2}@keyframes s2{0%,16%{opacity:0;transform:translateY(8px)}19%,100%{opacity:1;transform:none}}
+.s2 .ciz{animation-name:c2}@keyframes c2{0%,16%{stroke-dashoffset:1}21%,100%{stroke-dashoffset:0}}
+.s3{animation-name:s3}@keyframes s3{0%,33%{opacity:0;transform:translateY(8px)}36%,100%{opacity:1;transform:none}}
+.s3 .ciz{animation-name:c3}@keyframes c3{0%,33%{stroke-dashoffset:1}38%,100%{stroke-dashoffset:0}}
+.s4{animation-name:s4}@keyframes s4{0%,50%{opacity:0;transform:translateY(8px)}53%,100%{opacity:1;transform:none}}
+.s4 .ciz{animation-name:c4}@keyframes c4{0%,50%{stroke-dashoffset:1}55%,100%{stroke-dashoffset:0}}
+.s5{animation-name:s5}@keyframes s5{0%,67%{opacity:0;transform:translateY(8px)}70%,100%{opacity:1;transform:none}}
+.s5 .ciz{animation-name:c5}@keyframes c5{0%,67%{stroke-dashoffset:1}72%,100%{stroke-dashoffset:0}}
+.s6{animation-name:s6}@keyframes s6{0%,84%{opacity:0;transform:translateY(8px)}87%,100%{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.a{animation:none!important}}
+</style>
+<defs><marker id="ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect width="640" height="620" fill="#ffffff"/>
+<g class="a m s1"><rect x="60" y="14" width="520" height="80" rx="12" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/><text x="320" y="40" text-anchor="middle" font-size="15" font-weight="800" fill="#0f172a">IV loop diüretiği</text><text x="320" y="62" text-anchor="middle" font-size="13" fill="#0f172a">evdeki dozun 2–2,5 katı IV</text><text x="320" y="82" text-anchor="middle" font-size="13" fill="#0f172a">diüretik kullanmıyorsa furosemid 40–100 mg</text></g>
+<g class="a s2"><path class="a ciz" pathLength="1" d="M320,94 L320,120" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ok)"/></g>
+<g class="a m s2"><rect x="60" y="124" width="520" height="76" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/><text x="320" y="150" text-anchor="middle" font-size="15" font-weight="800" fill="#1e3a8a">Yanıtı ölç</text><text x="320" y="172" text-anchor="middle" font-size="13" fill="#1e3a8a">1–2. saatte spot idrar Na · ilk 6 saatte idrar miktarı</text><text x="320" y="190" text-anchor="middle" font-size="12" fill="#1e3a8a">hedef: UNa &gt;50–70 mmol/L · idrar 100–150 mL/saat</text></g>
+<g class="a s3"><path class="a ciz" pathLength="1" d="M220,200 L150,232" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ok)"/><path class="a ciz" pathLength="1" d="M420,200 L490,232" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ok)"/></g>
+<g class="a m s3"><rect x="15" y="236" width="295" height="90" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/><text x="162" y="264" text-anchor="middle" font-size="15" font-weight="800" fill="#064e3b">Yeterli</text><text x="162" y="288" text-anchor="middle" font-size="13" fill="#064e3b">aynı dozu 6–12 saatte bir</text><text x="162" y="308" text-anchor="middle" font-size="13" fill="#064e3b">yeniden ölçerek sürdür</text></g>
+<g class="a m s3"><rect x="330" y="236" width="295" height="90" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/><text x="477" y="264" text-anchor="middle" font-size="15" font-weight="800" fill="#78350f">Yetersiz</text><text x="477" y="288" text-anchor="middle" font-size="13" fill="#78350f">dozu ikiye katla</text><text x="477" y="308" text-anchor="middle" font-size="13" fill="#78350f">furosemid eşdeğeri 300 mg'a kadar</text></g>
+<g class="a s4"><path class="a ciz" pathLength="1" d="M477,326 L400,360" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ok)"/></g>
+<g class="a m s4"><rect x="60" y="364" width="520" height="110" rx="12" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/><text x="320" y="390" text-anchor="middle" font-size="15" font-weight="800" fill="#7f1d1d">Ardışık nefron blokajı</text><text x="320" y="414" text-anchor="middle" font-size="13" fill="#7f1d1d">1. basamak: tiyazid / metolazon (ilk doz loop'tan 30–60 dk önce)</text><text x="320" y="436" text-anchor="middle" font-size="13" fill="#7f1d1d">2. basamak: asetazolamid · amilorid · spironolakton</text><text x="320" y="458" text-anchor="middle" font-size="12" fill="#7f1d1d">izle: hipotansiyon · kreatinin · K⁺ ve Na⁺</text></g>
+<g class="a s5"><path class="a ciz" pathLength="1" d="M320,474 L320,502" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ok)"/></g>
+<g class="a m s5"><rect x="60" y="506" width="520" height="76" rx="12" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/><text x="320" y="532" text-anchor="middle" font-size="15" font-weight="800" fill="#4c1d95">Yine yanıt yok</text><text x="320" y="556" text-anchor="middle" font-size="13" fill="#4c1d95">alternatif tanı (DVT, PE, pnömoni) · ileri KY</text><text x="320" y="574" text-anchor="middle" font-size="12" fill="#4c1d95">ağır böbrek işlev bozukluğunda ultrafiltrasyon ya da diyaliz</text></g>
+<g class="a s6"><text x="320" y="606" text-anchor="middle" font-size="12" fill="#475569">Kaynak: Braunwald 13 (Felker, Teerlink, Şekil 57.10); UpToDate (Colucci, Vader).</text></g>
+</svg>

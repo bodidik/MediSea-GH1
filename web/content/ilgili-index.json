@@ -5776,6 +5776,11 @@
  ],
  "kardiyoloji/akut-kalp-yetersizligi": [
   {
+   "brans": "kardiyoloji",
+   "slug": "kalp-yetersizligi-hipotansiyon",
+   "baslik": "KY'de Hipotansiyon ve Şok Yönetimi (Soğuk ve Islak Profil)"
+  },
+  {
    "brans": "endokrinoloji",
    "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
    "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
@@ -6094,16 +6099,6 @@
    "brans": "kardiyoloji",
    "slug": "akut-kalp-yetersizligi",
    "baslik": "Akut Dekompanse Kalp Yetersizliği (ADKY): Kapsamlı Yönetim"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "kalp-yetersizligi-arni-tedavisi",
-   "baslik": "ARNI (Sakubitril/Valsartan) Tedavisi: Mekanizma, Kanıtlar ve Yönetim"
-  },
-  {
-   "brans": "kardiyoloji",
-   "slug": "kardiyak-amiloidoz",
-   "baslik": "Kardiyak Amiloidoz: Tanı ve Güncel Tedavi Yaklaşımı"
   }
  ],
  "kardiyoloji/kalp-yetmezligi": [
