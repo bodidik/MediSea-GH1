@@ -479,19 +479,6 @@
         "eslesen": "Asit Sıvısı Analizi"
       }
     ],
-    "gastroenteroloji/ascit-yonetimi": [
-      {
-        "slug": "child-pugh",
-        "name": "Child-Pugh Sınıflaması",
-        "eslesen": "Child-Pugh"
-      },
-      {
-        "slug": "asit-analizi",
-        "name": "Asit Sıvısı Analizi",
-        "eslesen": "asit yönetim",
-        "kaynak": "kavram"
-      }
-    ],
     "gastroenteroloji/colyak-akdeniz-beslenme": [
       {
         "slug": "metabolik-sendrom",
@@ -3160,6 +3147,14 @@
         "slug": "ranson",
         "name": "Ranson Kriterleri",
         "eslesen": "akut pankreatit",
+        "kaynak": "kavram"
+      }
+    ],
+    "gastroenteroloji/ascit-yonetimi": [
+      {
+        "slug": "asit-analizi",
+        "name": "Asit Sıvısı Analizi",
+        "eslesen": "asit yönetim",
         "kaynak": "kavram"
       }
     ],
@@ -8979,7 +8974,7 @@
     "arac": 281,
     "araciOlanKonu": 347,
     "konusuOlanArac": 177,
-    "bag": 718,
+    "bag": 717,
     "kavramBag": 630
   }
 }
