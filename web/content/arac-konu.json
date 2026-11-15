@@ -348,6 +348,11 @@
     ],
     "enfeksiyon/dalbavansin-derleme": [
       {
+        "slug": "bsa",
+        "name": "Vücut Yüzey Alanı (BSA)",
+        "eslesen": "Vücut Yüzey Alanı"
+      },
+      {
         "slug": "child-pugh",
         "name": "Child-Pugh Sınıflaması",
         "eslesen": "Child-Pugh"
@@ -5278,6 +5283,19 @@
         "eslesen": "Child-Pugh"
       }
     ],
+    "bsa": [
+      {
+        "yol": "enfeksiyon/dalbavansin-derleme",
+        "baslik": "Dalbavansin",
+        "eslesen": "Vücut Yüzey Alanı"
+      },
+      {
+        "yol": "journal-club/flaura2-osimertinib-kemoterapi-nejm",
+        "baslik": "NEJM: FLAURA2 Faz 3 - EGFR-Mutant KHDAK'de Osimertinib ve Kemoterapi",
+        "eslesen": "kemoterapi",
+        "kaynak": "kavram"
+      }
+    ],
     "sofa": [
       {
         "yol": "enfeksiyon/prokalsitonin-genel",
@@ -8326,14 +8344,6 @@
         "kaynak": "kavram"
       }
     ],
-    "bsa": [
-      {
-        "yol": "journal-club/flaura2-osimertinib-kemoterapi-nejm",
-        "baslik": "NEJM: FLAURA2 Faz 3 - EGFR-Mutant KHDAK'de Osimertinib ve Kemoterapi",
-        "eslesen": "kemoterapi",
-        "kaynak": "kavram"
-      }
-    ],
     "ctcae-laboratuvar": [
       {
         "yol": "journal-club/flaura2-osimertinib-kemoterapi-nejm",
@@ -8996,7 +9006,7 @@
     "arac": 281,
     "araciOlanKonu": 347,
     "konusuOlanArac": 177,
-    "bag": 720,
+    "bag": 721,
     "kavramBag": 631
   }
 }
