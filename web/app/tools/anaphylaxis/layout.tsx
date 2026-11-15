@@ -48,6 +48,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
+              <Link href="/topics/endokrinoloji/tirzepatid-genel-profil" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Tirzepatid: Genel Farmakolojik ve Klinik Profili
+              </Link>
+            </li>
+            <li>
               <Link href="/topics/hematoloji/sistemik-mastositoz-sm" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Sistemik Mastositoz (SM)
               </Link>
@@ -55,11 +60,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/topics/kardiyoloji/lipid-ezetimibe-sakinca" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/nefroloji/diyaliz-tedavisi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Diyaliz (Renal Replasman Tedavisi)
               </Link>
             </li>
           </ul>

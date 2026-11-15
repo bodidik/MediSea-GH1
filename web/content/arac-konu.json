@@ -289,6 +289,29 @@
         "kaynak": "kavram"
       }
     ],
+    "endokrinoloji/tirzepatid-genel-profil": [
+      {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
+      },
+      {
+        "slug": "bmi",
+        "name": "BMI & İdeal Vücut Ağırlığı",
+        "eslesen": "tirzepatid",
+        "kaynak": "kavram"
+      }
+    ],
     "endokrinoloji/tirzepatid-kardiyorenal-koruma": [
       {
         "slug": "egfr",
@@ -2983,14 +3006,6 @@
         "kaynak": "kavram"
       }
     ],
-    "endokrinoloji/tirzepatid-genel-profil": [
-      {
-        "slug": "bmi",
-        "name": "BMI & İdeal Vücut Ağırlığı",
-        "eslesen": "tirzepatid",
-        "kaynak": "kavram"
-      }
-    ],
     "endokrinoloji/tirzepatid-vs-semaglutid": [
       {
         "slug": "bmi",
@@ -4979,13 +4994,13 @@
         "eslesen": "eGFR"
       },
       {
-        "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
-        "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
+        "yol": "endokrinoloji/hiperparatiroidizm",
+        "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları",
         "eslesen": "eGFR"
       },
       {
-        "yol": "endokrinoloji/hiperparatiroidizm",
-        "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları",
+        "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
+        "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
         "eslesen": "eGFR"
       },
       {
@@ -5179,6 +5194,48 @@
         "kaynak": "kavram"
       }
     ],
+    "anaphylaxis": [
+      {
+        "yol": "enfeksiyon/dalbavansin-alerji-ve-capraz-duyarlilik",
+        "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alerji Yönetimi",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "endokrinoloji/tirzepatid-genel-profil",
+        "baslik": "Tirzepatid: Genel Farmakolojik ve Klinik Profili",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "hematoloji/sistemik-mastositoz-sm",
+        "baslik": "Sistemik Mastositoz (SM)",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "kardiyoloji/lipid-ezetimibe-sakinca",
+        "baslik": "Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "nefroloji/diyaliz-tedavisi",
+        "baslik": "Diyaliz (Renal Replasman Tedavisi)",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "onkoloji/tls-rasburikaz-vs-allopurinol",
+        "baslik": "TLS'de Farmakolojik Karşılaştırma: Rasburikaz vs Allopurinol",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "enfeksiyon/dalbavansin-kontrendikasyon-ve-alternatifler",
+        "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "yol": "enfeksiyon/dalbavansin-mrsa-bakteriyemisi",
+        "baslik": "Dalbavansin: MRSA Bakteriyemisi ve Step-Down Stratejisi",
+        "eslesen": "Anafilaksi"
+      }
+    ],
     "child-pugh": [
       {
         "yol": "enfeksiyon/antibiyotikler-ana-sayfa",
@@ -5219,48 +5276,6 @@
         "yol": "onkoloji/karaciger-kanserleri",
         "baslik": "Karaciğer Kanserleri",
         "eslesen": "Child-Pugh"
-      }
-    ],
-    "anaphylaxis": [
-      {
-        "yol": "enfeksiyon/dalbavansin-alerji-ve-capraz-duyarlilik",
-        "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alerji Yönetimi",
-        "eslesen": "Anafilaksi"
-      },
-      {
-        "yol": "hematoloji/sistemik-mastositoz-sm",
-        "baslik": "Sistemik Mastositoz (SM)",
-        "eslesen": "Anafilaksi"
-      },
-      {
-        "yol": "kardiyoloji/lipid-ezetimibe-sakinca",
-        "baslik": "Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi",
-        "eslesen": "Anafilaksi"
-      },
-      {
-        "yol": "nefroloji/diyaliz-tedavisi",
-        "baslik": "Diyaliz (Renal Replasman Tedavisi)",
-        "eslesen": "Anafilaksi"
-      },
-      {
-        "yol": "onkoloji/tls-rasburikaz-vs-allopurinol",
-        "baslik": "TLS'de Farmakolojik Karşılaştırma: Rasburikaz vs Allopurinol",
-        "eslesen": "Anafilaksi"
-      },
-      {
-        "yol": "enfeksiyon/dalbavansin-kontrendikasyon-ve-alternatifler",
-        "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler",
-        "eslesen": "Anafilaksi"
-      },
-      {
-        "yol": "enfeksiyon/dalbavansin-mrsa-bakteriyemisi",
-        "baslik": "Dalbavansin: MRSA Bakteriyemisi ve Step-Down Stratejisi",
-        "eslesen": "Anafilaksi"
-      },
-      {
-        "yol": "enfeksiyon/tigesiklin-uyarilar-yan-etkiler",
-        "baslik": "Tigesiklin Tedavisinde Kritik Uyarılar",
-        "eslesen": "Anafilaksi"
       }
     ],
     "sofa": [
@@ -8981,7 +8996,7 @@
     "arac": 281,
     "araciOlanKonu": 347,
     "konusuOlanArac": 177,
-    "bag": 717,
+    "bag": 720,
     "kavramBag": 631
   }
 }
