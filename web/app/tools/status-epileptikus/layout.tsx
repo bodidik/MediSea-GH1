@@ -48,6 +48,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
+              <Link href="/topics/endokrinoloji/he-vs-miksodem-psikozu" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Miksödem Psikozu ve Hashimoto Ensefalopatisi (HE/SREAT) Ayırıcı Tanısı
+              </Link>
+            </li>
+            <li>
               <Link href="/topics/endokrinoloji/miksodem-psikozu" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Miksödem Psikozu (Asher Çılgınlığı) Klinik ve Patofizyolojik Kılavuzu
               </Link>

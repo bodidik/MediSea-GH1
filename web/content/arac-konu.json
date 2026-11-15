@@ -73,6 +73,19 @@
         "kaynak": "kavram"
       }
     ],
+    "endokrinoloji/he-vs-miksodem-psikozu": [
+      {
+        "slug": "status-epileptikus",
+        "name": "Status Epileptikus",
+        "eslesen": "Status Epileptikus"
+      },
+      {
+        "slug": "tft",
+        "name": "Tiroid Fonksiyon Testi (TFT)",
+        "eslesen": "Hashimoto",
+        "kaynak": "kavram"
+      }
+    ],
     "endokrinoloji/hiperparatiroidizm": [
       {
         "slug": "cccr",
@@ -2213,14 +2226,6 @@
       }
     ],
     "endokrinoloji/hashimoto-ensefalopati-alfa-enolaz-otoantikor": [
-      {
-        "slug": "tft",
-        "name": "Tiroid Fonksiyon Testi (TFT)",
-        "eslesen": "Hashimoto",
-        "kaynak": "kavram"
-      }
-    ],
-    "endokrinoloji/he-vs-miksodem-psikozu": [
       {
         "slug": "tft",
         "name": "Tiroid Fonksiyon Testi (TFT)",
@@ -4947,6 +4952,11 @@
       {
         "yol": "endokrinoloji/hashimoto-ensefaliti",
         "baslik": "Hashimoto Ensefalopatisi (SREAT) ve Miksödem Psikozu Ayrımı",
+        "eslesen": "Status Epileptikus"
+      },
+      {
+        "yol": "endokrinoloji/he-vs-miksodem-psikozu",
+        "baslik": "Miksödem Psikozu ve Hashimoto Ensefalopatisi (HE/SREAT) Ayırıcı Tanısı",
         "eslesen": "Status Epileptikus"
       },
       {
@@ -8971,7 +8981,7 @@
     "arac": 281,
     "araciOlanKonu": 347,
     "konusuOlanArac": 177,
-    "bag": 716,
+    "bag": 717,
     "kavramBag": 631
   }
 }
