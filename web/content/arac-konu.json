@@ -1671,15 +1671,14 @@
     ],
     "onkoloji/febril-notropeni-konu": [
       {
-        "slug": "cisne",
-        "name": "CISNE Skoru",
-        "eslesen": "CISNE Skoru"
-      },
-      {
         "slug": "mascc",
         "name": "MASCC Risk İndeksi",
-        "eslesen": "febril nötropeni",
-        "kaynak": "kavram"
+        "eslesen": "MASCC Risk İndeksi"
+      },
+      {
+        "slug": "cisne",
+        "name": "CISNE Skoru",
+        "eslesen": "CISNE"
       },
       {
         "slug": "anc",
@@ -5999,8 +5998,8 @@
       },
       {
         "yol": "onkoloji/febril-notropeni-konu",
-        "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi",
-        "eslesen": "CISNE Skoru"
+        "baslik": "Febril Nötropeni: Tanı, Risk Sınıflaması ve Ampirik Tedavi",
+        "eslesen": "CISNE"
       },
       {
         "yol": "onkoloji/febril-notropeni-mascc-indexi",
@@ -6011,6 +6010,11 @@
     ],
     "mascc": [
       {
+        "yol": "onkoloji/febril-notropeni-konu",
+        "baslik": "Febril Nötropeni: Tanı, Risk Sınıflaması ve Ampirik Tedavi",
+        "eslesen": "MASCC Risk İndeksi"
+      },
+      {
         "yol": "onkoloji/febril-notropeni-mascc-indexi",
         "baslik": "MASCC Risk İndeksi ve Febril Nötropeni Risk Stratifikasyonu",
         "eslesen": "MASCC Risk İndeksi"
@@ -6018,12 +6022,6 @@
       {
         "yol": "onkoloji/febril-notropeni-cisne-indexi",
         "baslik": "CISNE Risk İndeksi ve Solid Tümörlerde Febril Nötropeni Yönetimi",
-        "eslesen": "febril nötropeni",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "onkoloji/febril-notropeni-konu",
-        "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi",
         "eslesen": "febril nötropeni",
         "kaynak": "kavram"
       },
@@ -8027,7 +8025,7 @@
       },
       {
         "yol": "onkoloji/febril-notropeni-konu",
-        "baslik": "Febril Nötropeni (FN) Tanı, Risk Stratifikasyonu ve Ampirik Yönetim Rehberi",
+        "baslik": "Febril Nötropeni: Tanı, Risk Sınıflaması ve Ampirik Tedavi",
         "eslesen": "nötropeni",
         "kaynak": "kavram"
       },
@@ -9007,6 +9005,6 @@
     "araciOlanKonu": 347,
     "konusuOlanArac": 177,
     "bag": 721,
-    "kavramBag": 631
+    "kavramBag": 630
   }
 }
