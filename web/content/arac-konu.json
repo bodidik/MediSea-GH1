@@ -1074,6 +1074,36 @@
         "eslesen": "eGFR"
       }
     ],
+    "kardiyoloji/aks-oac-antitrombotik-yonetim": [
+      {
+        "slug": "chads-vasc",
+        "name": "CHA₂DS₂-VASc Skoru",
+        "eslesen": "CHA2DS2-VASc"
+      },
+      {
+        "slug": "timi-ua",
+        "name": "TIMI Skoru (UA/NSTEMI)",
+        "eslesen": "TIMI"
+      },
+      {
+        "slug": "antikoagulan-geri-dondurme",
+        "name": "Antikoagülan Geri Döndürme",
+        "eslesen": "oral antikoagülan",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "has-bled",
+        "name": "HAS-BLED Skoru",
+        "eslesen": "oral antikoagülan",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "orbit",
+        "name": "ORBIT Kanama Skoru",
+        "eslesen": "oral antikoagülan",
+        "kaynak": "kavram"
+      }
+    ],
     "kardiyoloji/akut-koroner-sendromlar": [
       {
         "slug": "timi-stemi",
@@ -4062,32 +4092,6 @@
         "kaynak": "kavram"
       }
     ],
-    "kardiyoloji/aks-oac-antitrombotik-yonetim": [
-      {
-        "slug": "has-bled",
-        "name": "HAS-BLED Skoru",
-        "eslesen": "üçlü antitrombotik",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "antikoagulan-geri-dondurme",
-        "name": "Antikoagülan Geri Döndürme",
-        "eslesen": "oral antikoagülan",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "chads-vasc",
-        "name": "CHA₂DS₂-VASc Skoru",
-        "eslesen": "oral antikoagülan",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "orbit",
-        "name": "ORBIT Kanama Skoru",
-        "eslesen": "oral antikoagülan",
-        "kaynak": "kavram"
-      }
-    ],
     "kardiyoloji/akut-kalp-yetersizligi": [
       {
         "slug": "vazoaktif-infuzyon",
@@ -5652,8 +5656,8 @@
         "eslesen": "CHA2DS2-VASc"
       },
       {
-        "yol": "kardiyoloji/kardiyak-amiloidoz",
-        "baslik": "Kardiyak Amiloidoz: Tanı ve Güncel Tedavi Yaklaşımı",
+        "yol": "kardiyoloji/aks-oac-antitrombotik-yonetim",
+        "baslik": "AKS ve Oral Antikoagülan: Üçlü ve İkili Antitrombotik Tedavi",
         "eslesen": "CHA2DS2-VASc"
       },
       {
@@ -5662,10 +5666,9 @@
         "eslesen": "CHA2DS2-VASc"
       },
       {
-        "yol": "kardiyoloji/aks-oac-antitrombotik-yonetim",
-        "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması",
-        "eslesen": "oral antikoagülan",
-        "kaynak": "kavram"
+        "yol": "kardiyoloji/kardiyak-amiloidoz",
+        "baslik": "Kardiyak Amiloidoz: Tanı ve Güncel Tedavi Yaklaşımı",
+        "eslesen": "CHA2DS2-VASc"
       },
       {
         "yol": "hematoloji/doac-warfarin-patofizyolojik-karsilastirma",
@@ -5822,6 +5825,24 @@
         "kaynak": "kavram"
       }
     ],
+    "timi-ua": [
+      {
+        "yol": "kardiyoloji/aks-oac-antitrombotik-yonetim",
+        "baslik": "AKS ve Oral Antikoagülan: Üçlü ve İkili Antitrombotik Tedavi",
+        "eslesen": "TIMI"
+      },
+      {
+        "yol": "kardiyoloji/akut-koroner-sendromlar",
+        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
+        "eslesen": "TIMI"
+      },
+      {
+        "yol": "kardiyoloji/gebelikte-akut-koroner-sendrom",
+        "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi",
+        "eslesen": "akut koroner",
+        "kaynak": "kavram"
+      }
+    ],
     "grace": [
       {
         "yol": "kardiyoloji/akut-koroner-sendromlar",
@@ -5879,19 +5900,6 @@
         "yol": "kardiyoloji/akut-koroner-sendromlar",
         "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
         "eslesen": "TIMI Risk Skoru"
-      },
-      {
-        "yol": "kardiyoloji/gebelikte-akut-koroner-sendrom",
-        "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi",
-        "eslesen": "akut koroner",
-        "kaynak": "kavram"
-      }
-    ],
-    "timi-ua": [
-      {
-        "yol": "kardiyoloji/akut-koroner-sendromlar",
-        "baslik": "Akut Koroner Sendromlar (STEMI ve NSTEMI)",
-        "eslesen": "TIMI"
       },
       {
         "yol": "kardiyoloji/gebelikte-akut-koroner-sendrom",
@@ -8095,8 +8103,8 @@
       },
       {
         "yol": "kardiyoloji/aks-oac-antitrombotik-yonetim",
-        "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması",
-        "eslesen": "üçlü antitrombotik",
+        "baslik": "AKS ve Oral Antikoagülan: Üçlü ve İkili Antitrombotik Tedavi",
+        "eslesen": "oral antikoagülan",
         "kaynak": "kavram"
       },
       {
@@ -8133,7 +8141,7 @@
       },
       {
         "yol": "kardiyoloji/aks-oac-antitrombotik-yonetim",
-        "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması",
+        "baslik": "AKS ve Oral Antikoagülan: Üçlü ve İkili Antitrombotik Tedavi",
         "eslesen": "oral antikoagülan",
         "kaynak": "kavram"
       },
@@ -8167,7 +8175,7 @@
       },
       {
         "yol": "kardiyoloji/aks-oac-antitrombotik-yonetim",
-        "baslik": "AKS + Oral Antikoagülan: Üçlü Antitrombotik Tedavi Şeması",
+        "baslik": "AKS ve Oral Antikoagülan: Üçlü ve İkili Antitrombotik Tedavi",
         "eslesen": "oral antikoagülan",
         "kaynak": "kavram"
       },
@@ -9004,7 +9012,7 @@
     "arac": 281,
     "araciOlanKonu": 347,
     "konusuOlanArac": 177,
-    "bag": 721,
-    "kavramBag": 630
+    "bag": 722,
+    "kavramBag": 629
   }
 }

@@ -58,8 +58,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/kardiyoloji/kardiyak-amiloidoz" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Kardiyak Amiloidoz: Tanı ve Güncel Tedavi Yaklaşımı
+              <Link href="/topics/kardiyoloji/aks-oac-antitrombotik-yonetim" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                AKS ve Oral Antikoagülan: Üçlü ve İkili Antitrombotik Tedavi
               </Link>
             </li>
           </ul>
