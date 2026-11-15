@@ -1895,6 +1895,18 @@
         "eslesen": "Behçet"
       }
     ],
+    "romatoloji/eriskin-still-hastaligi": [
+      {
+        "slug": "yamaguchi",
+        "name": "Yamaguchi Kriterleri",
+        "eslesen": "Yamaguchi"
+      },
+      {
+        "slug": "hscore",
+        "name": "HScore",
+        "eslesen": "HScore"
+      }
+    ],
     "romatoloji/hughes-stovin-sendromu": [
       {
         "slug": "behcet",
@@ -6134,6 +6146,26 @@
         "eslesen": "Behçet"
       }
     ],
+    "hscore": [
+      {
+        "yol": "enfeksiyon/bruselloz-hematolojik-komplikasyonlar",
+        "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK",
+        "eslesen": "HLH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "romatoloji/eriskin-still-hastaligi",
+        "baslik": "Erişkin Still Hastalığı: Tanı, Tedavi ve Makrofaj Aktivasyon Sendromu",
+        "eslesen": "HScore"
+      }
+    ],
+    "yamaguchi": [
+      {
+        "yol": "romatoloji/eriskin-still-hastaligi",
+        "baslik": "Erişkin Still Hastalığı: Tanı, Tedavi ve Makrofaj Aktivasyon Sendromu",
+        "eslesen": "Yamaguchi"
+      }
+    ],
     "cdai": [
       {
         "yol": "romatoloji/romatoid-artrit",
@@ -6991,14 +7023,6 @@
         "yol": "nefroloji/FGF-23 vs PTH",
         "baslik": "FGF-23 ve PTH Arasındaki Moleküler Çapraz Konuşma (Crosstalk)",
         "eslesen": "FGF-23",
-        "kaynak": "kavram"
-      }
-    ],
-    "hscore": [
-      {
-        "yol": "enfeksiyon/bruselloz-hematolojik-komplikasyonlar",
-        "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK",
-        "eslesen": "HLH",
         "kaynak": "kavram"
       }
     ],
@@ -9008,11 +9032,11 @@
     ]
   },
   "olcum": {
-    "konu": 486,
+    "konu": 487,
     "arac": 281,
-    "araciOlanKonu": 347,
-    "konusuOlanArac": 177,
-    "bag": 722,
+    "araciOlanKonu": 348,
+    "konusuOlanArac": 178,
+    "bag": 724,
     "kavramBag": 629
   }
 }
