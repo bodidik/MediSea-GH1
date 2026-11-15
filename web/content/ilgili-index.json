@@ -8518,6 +8518,13 @@
    "baslik": "Poliarteritis Nodosa (PAN) ve Kawasaki"
   }
  ],
+ "romatoloji/eriskin-still-hastaligi": [
+  {
+   "brans": "romatoloji",
+   "slug": "romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi",
+   "baslik": "Romatoid Artritte Serum Ferritin: Anemi Ayırıcı Tanısı ve Eşik Değerler"
+  }
+ ],
  "romatoloji/hughes-stovin-sendromu": [
   {
    "brans": "romatoloji",
@@ -8589,6 +8596,11 @@
   }
  ],
  "romatoloji/romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi": [
+  {
+   "brans": "romatoloji",
+   "slug": "eriskin-still-hastaligi",
+   "baslik": "Erişkin Still Hastalığı: Tanı, Tedavi ve Makrofaj Aktivasyon Sendromu"
+  },
   {
    "brans": "romatoloji",
    "slug": "anti-ccp-negatif-romatoid-artrit",

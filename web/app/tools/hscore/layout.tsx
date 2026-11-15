@@ -47,6 +47,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
                 Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK
               </Link>
             </li>
+            <li>
+              <Link href="/topics/romatoloji/eriskin-still-hastaligi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Erişkin Still Hastalığı: Tanı, Tedavi ve Makrofaj Aktivasyon Sendromu
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
