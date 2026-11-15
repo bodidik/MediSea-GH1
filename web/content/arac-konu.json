@@ -409,6 +409,11 @@
     ],
     "enfeksiyon/tigesiklin-derleme": [
       {
+        "slug": "diyabetik-ayak",
+        "name": "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA)",
+        "eslesen": "Diyabetik Ayak Enfeksiyonu"
+      },
+      {
         "slug": "child-pugh",
         "name": "Child-Pugh Sınıflaması",
         "eslesen": "Child-Pugh"
@@ -416,14 +421,14 @@
     ],
     "enfeksiyon/tigesiklin-uyarilar-yan-etkiler": [
       {
+        "slug": "diyabetik-ayak",
+        "name": "Diyabetik Ayak Enfeksiyonu (IWGDF/IDSA)",
+        "eslesen": "Diyabetik Ayak Enfeksiyonu"
+      },
+      {
         "slug": "anaphylaxis",
         "name": "Anafilaksi Kriterleri",
         "eslesen": "Anafilaksi"
-      },
-      {
-        "slug": "child-pugh",
-        "name": "Child-Pugh Sınıflaması",
-        "eslesen": "Child-Pugh"
       }
     ],
     "gastroenteroloji/ascit-diuretik-tedavisi": [
@@ -5328,6 +5333,18 @@
         "eslesen": "SOFA"
       }
     ],
+    "diyabetik-ayak": [
+      {
+        "yol": "enfeksiyon/tigesiklin-derleme",
+        "baslik": "Tigesiklin (Tigecycline): İleri Düzey Derleme",
+        "eslesen": "Diyabetik Ayak Enfeksiyonu"
+      },
+      {
+        "yol": "enfeksiyon/tigesiklin-uyarilar-yan-etkiler",
+        "baslik": "Tigesiklin Tedavisinde Kritik Uyarılar",
+        "eslesen": "Diyabetik Ayak Enfeksiyonu"
+      }
+    ],
     "qsofa": [
       {
         "yol": "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi",
@@ -9035,8 +9052,8 @@
     "konu": 487,
     "arac": 281,
     "araciOlanKonu": 348,
-    "konusuOlanArac": 178,
-    "bag": 724,
+    "konusuOlanArac": 179,
+    "bag": 725,
     "kavramBag": 629
   }
 }
