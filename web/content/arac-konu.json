@@ -181,13 +181,6 @@
         "eslesen": "Makroprolaktin"
       }
     ],
-    "endokrinoloji/riedel-tiroiditi": [
-      {
-        "slug": "tft",
-        "name": "Tiroid Fonksiyon Testi (TFT)",
-        "eslesen": "Tiroid Fonksiyon"
-      }
-    ],
     "endokrinoloji/sglt2-hasta-gunler-kurali-sick-day": [
       {
         "slug": "egfr",
@@ -2775,6 +2768,14 @@
         "kaynak": "kavram"
       }
     ],
+    "endokrinoloji/riedel-tiroiditi": [
+      {
+        "slug": "tft",
+        "name": "Tiroid Fonksiyon Testi (TFT)",
+        "eslesen": "tiroidit",
+        "kaynak": "kavram"
+      }
+    ],
     "endokrinoloji/santral-adrenal-yetmezlik": [
       {
         "slug": "acth-stim",
@@ -4919,11 +4920,6 @@
         "eslesen": "Tiroid Fonksiyon"
       },
       {
-        "yol": "endokrinoloji/riedel-tiroiditi",
-        "baslik": "Riedel Tiroiditi",
-        "eslesen": "Tiroid Fonksiyon"
-      },
-      {
         "yol": "endokrinoloji/yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
         "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi",
         "eslesen": "Tiroid Fonksiyon"
@@ -4938,6 +4934,12 @@
         "yol": "endokrinoloji/subklinik-tiroid-hastaliklari",
         "baslik": "Subklinik Tiroid Hastalıkları",
         "eslesen": "tiroid hastalık",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/miksodem-komasi-acil-yonetim",
+        "baslik": "Miksödem Koması: Klinik Tablo ve Acil Yönetim",
+        "eslesen": "miksödem koma",
         "kaynak": "kavram"
       }
     ],
@@ -8970,6 +8972,6 @@
     "araciOlanKonu": 347,
     "konusuOlanArac": 177,
     "bag": 716,
-    "kavramBag": 630
+    "kavramBag": 631
   }
 }
