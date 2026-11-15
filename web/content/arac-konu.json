@@ -283,19 +283,6 @@
         "kaynak": "kavram"
       }
     ],
-    "endokrinoloji/subklinik-tiroid-hastaliklari": [
-      {
-        "slug": "metabolik-sendrom",
-        "name": "Metabolik Sendrom",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
-        "slug": "tft",
-        "name": "Tiroid Fonksiyon Testi (TFT)",
-        "eslesen": "tiroid hastalık",
-        "kaynak": "kavram"
-      }
-    ],
     "endokrinoloji/tirzepatid-kardiyorenal-koruma": [
       {
         "slug": "egfr",
@@ -2974,6 +2961,14 @@
         "kaynak": "kavram"
       }
     ],
+    "endokrinoloji/subklinik-tiroid-hastaliklari": [
+      {
+        "slug": "tft",
+        "name": "Tiroid Fonksiyon Testi (TFT)",
+        "eslesen": "tiroid hastalık",
+        "kaynak": "kavram"
+      }
+    ],
     "endokrinoloji/tiroid-yaslanmasi-fizyolojisi": [
       {
         "slug": "tft",
@@ -4941,7 +4936,7 @@
       },
       {
         "yol": "endokrinoloji/subklinik-tiroid-hastaliklari",
-        "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)",
+        "baslik": "Subklinik Tiroid Hastalıkları",
         "eslesen": "tiroid hastalık",
         "kaynak": "kavram"
       }
@@ -5172,49 +5167,6 @@
         "kaynak": "kavram"
       }
     ],
-    "metabolik-sendrom": [
-      {
-        "yol": "gastroenteroloji/colyak-akdeniz-beslenme",
-        "baslik": "Çölyak Hastalığında Akdeniz Tipi Glutensiz Beslenme",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
-        "yol": "endokrinoloji/subklinik-tiroid-hastaliklari",
-        "baslik": "Subklinik Tiroid Hastalıkları (Giriş Ünitesi)",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
-        "yol": "kardiyoloji/statin-intolerans-ezetimibe",
-        "baslik": "Statin İntoleransı (SAMS) Yönetimi ve Non-Statin Lipid Düşürücü Ajanlar",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
-        "yol": "nefroloji/polikistik-bobrek-metabolik-sendrom",
-        "baslik": "ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
-        "yol": "gastroenteroloji/colyak-beslenme",
-        "baslik": "Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
-        "yol": "endokrinoloji/tirzepatid-vs-semaglutid",
-        "baslik": "Tirzepatid ve Semaglutid Karşılaştırması: Obezite ve T2DM Yönetimi",
-        "eslesen": "obezite",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gastroenteroloji/colyak-diyetsel-yag-riski",
-        "baslik": "Çölyak Hastalığında Diyetsel Yağ Riski ve Akdeniz Modeli",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
-        "yol": "gastroenteroloji/colyak-glutensiz-obezite",
-        "baslik": "Çölyak Hastalığında Glutensiz Diyet ve Obezite Paradoksu",
-        "eslesen": "Metabolik Sendrom"
-      }
-    ],
     "child-pugh": [
       {
         "yol": "enfeksiyon/antibiyotikler-ana-sayfa",
@@ -5352,6 +5304,49 @@
         "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)",
         "eslesen": "asit sıvı",
         "kaynak": "kavram"
+      }
+    ],
+    "metabolik-sendrom": [
+      {
+        "yol": "gastroenteroloji/colyak-akdeniz-beslenme",
+        "baslik": "Çölyak Hastalığında Akdeniz Tipi Glutensiz Beslenme",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "endokrinoloji/tirzepatid-vs-semaglutid",
+        "baslik": "Tirzepatid ve Semaglutid Karşılaştırması: Obezite ve T2DM Yönetimi",
+        "eslesen": "obezite",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "kardiyoloji/statin-intolerans-ezetimibe",
+        "baslik": "Statin İntoleransı (SAMS) Yönetimi ve Non-Statin Lipid Düşürücü Ajanlar",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "nefroloji/polikistik-bobrek-metabolik-sendrom",
+        "baslik": "ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "gastroenteroloji/colyak-beslenme",
+        "baslik": "Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "gastroenteroloji/colyak-diyetsel-yag-riski",
+        "baslik": "Çölyak Hastalığında Diyetsel Yağ Riski ve Akdeniz Modeli",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "gastroenteroloji/colyak-glutensiz-obezite",
+        "baslik": "Çölyak Hastalığında Glutensiz Diyet ve Obezite Paradoksu",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "gastroenteroloji/colyak-lif-alimi",
+        "baslik": "Akdeniz Tipi Glutensiz Diyette Lif Alımının Artırılması",
+        "eslesen": "Metabolik Sendrom"
       }
     ],
     "anion-gap": [
@@ -8974,7 +8969,7 @@
     "arac": 281,
     "araciOlanKonu": 347,
     "konusuOlanArac": 177,
-    "bag": 717,
+    "bag": 716,
     "kavramBag": 630
   }
 }
