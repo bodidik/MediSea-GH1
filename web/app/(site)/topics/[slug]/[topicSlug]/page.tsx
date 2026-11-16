@@ -12,6 +12,7 @@ import { basliklariDuzenle, bolumKimlikleri } from "@/app/lib/baslik";
 import { tabloKaydir } from "@/app/lib/tablo";
 import KaydirDurumu from "@/app/components/KaydirDurumu";
 import BasaDon from "@/app/components/BasaDon";
+import OkumaGezgini from "@/app/components/OkumaGezgini";
 import SekilOynat from "@/app/components/SekilOynat";
 import RotaCizgisi from "@/app/components/RotaCizgisi";
 import { DalgaCizgisi, DumenSimgesi } from "@/app/components/DenizSusu";
@@ -383,6 +384,15 @@ export default async function TopicDetailPage({
     .trim().length;
   const icindekilerGoster = topicItem.sections.length >= 4 && govdeUzunlugu >= 6000;
 
+  /* Okuma süresi — gövde metninin kelime sayısından (dakikada 200 kelime).
+     Tahmindir, "≈" ile basılır; gövdesi olmayan sayfada hiç basılmaz. */
+  const kelimeSayisi = topicItem.sections
+    .map((s) => s.html.replace(/<[^>]*>/g, " "))
+    .join(" ")
+    .split(/\s+/)
+    .filter(Boolean).length;
+  const okumaDakikasi = kelimeSayisi >= 100 ? Math.max(1, Math.round(kelimeSayisi / 200)) : 0;
+
   /* Premium tanıtım şeridinin hedefi — dosyadan doğrulanıyor, açık branş
      slug'ından türetilmiyor (bkz. premiumBransSlug: 24 sayfa 404 veriyordu). */
   const premiumBrans = premiumBransSlug(slug);
@@ -413,6 +423,12 @@ export default async function TopicDetailPage({
   const tumSluglar = new Set(allTopics.map(t => t.slug));
   for (const t of allTopics) t.parentler = ebeveynleriCoz(t.hamParent, tumSluglar, t.slug);
 
+  type KonuKunyesi = (typeof allTopics)[number];
+  const konuSirasi = (a: KonuKunyesi, b: KonuKunyesi) =>
+    a.order - b.order ||
+    a.title.localeCompare(b.title, "tr", { sensitivity: "base" }) ||
+    (a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0);
+
   // Doğrudan çocukları bul ve sıraya (order) göre diz
   const childTopics = allTopics
     .filter(t => t.parentler.includes(topicSlug) && !t.hidden)
@@ -422,11 +438,7 @@ export default async function TopicDetailPage({
        97 koşum kırmış olan sınıfın ta kendisi (bkz. CLAUDE.md). Branş
        sayfası zaten başlığa göre kırıyordu; buna slug da eklendi, çünkü
        `sensitivity: "base"` iki başlığı eşit sayabiliyor. */
-    .sort((a, b) =>
-      a.order - b.order ||
-      a.title.localeCompare(b.title, "tr", { sensitivity: "base" }) ||
-      (a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0)
-    );
+    .sort(konuSirasi);
 
   // Her çocuğun KENDİ çocuğu var mı diye bak (dinamik: parent-child grafiğinden çıkarılır)
   // - Kendi çocuğu OLAN bir alt konu = "hub" (menü) -> Menü ızgarasında gösterilir, tıklanınca kendi menüsünü/içeriğini açar
@@ -499,6 +511,19 @@ export default async function TopicDetailPage({
    * üstelik her sayfa KENDİ ebeveynini gösterdiği için hiyerarşi tek tek
    * yürünebiliyor — zinciri her sayfada tekrarlamak fazlalık olurdu.
    */
+  /* ÖNCEKİ / SONRAKİ — aynı ebeveynin çocukları arasında, ebeveyn sayfasının
+     listelediği SIRAYLA (aynı `konuSirasi`). Üst düzey konuda basılmaz: onların
+     sırasını branş İçindekiler'i belirliyor, burada ikinci bir sıra uydurmak
+     iki gerçeklik olurdu. */
+  const enYakinAta = atalar[atalar.length - 1];
+  const kardesler = enYakinAta
+    ? allTopics.filter((t) => t.parentler.includes(enYakinAta.slug) && !t.hidden).sort(konuSirasi)
+    : [];
+  const kardesSirasi = kardesler.findIndex((t) => t.slug === topicSlug);
+  const oncekiKonu = kardesSirasi > 0 ? kardesler[kardesSirasi - 1] : null;
+  const sonrakiKonu =
+    kardesSirasi >= 0 && kardesSirasi < kardesler.length - 1 ? kardesler[kardesSirasi + 1] : null;
+
   const kirintiAdimlari = [
     { ad: "MediSea", yol: "/" },
     { ad: "Kütüphane", yol: "/topics" },
@@ -613,7 +638,7 @@ export default async function TopicDetailPage({
                 ust bosluk 32px, alt 8px — aksan cubugu icerigine gore 4 kat
                 asimetrik ve okuma govdesi 24px asagi itilmis. Ayni sizinti
                 asagidaki iki kart basliginda da var (32 ilan / 56 gercek). */}
-            <div className="border-l-8 border-blue-900 pl-6 py-2">
+            <div>
               {/* break-words: başlık büyük ve tıbbi terimler uzun. Ölçüldü —
                   H1'in KUTUSU 296px (sınır içinde) ama scrollWidth 353, yani
                   metin kutuyu taşıyor ve SAYFAYI yatay kaydırıyordu. Öge
@@ -631,7 +656,11 @@ export default async function TopicDetailPage({
                   kazanç verip başlığı daha çok küçültüyor, o yüzden seçilmedi.
                   sm ve üstünde 36px'e, md'de 48px'e dönüyor — masaüstü
                   görünümü DEĞİŞMEDİ. */}
-              <h1 className="text-[28px] sm:text-4xl md:text-5xl font-black text-blue-950 uppercase italic tracking-tighter leading-none mt-0 mb-3 break-words hyphens-auto">
+              {/* SAKİN BAŞLIK (15 Kas 2026, kullanıcı kararı): normal harf, dik
+                  serif. Büyük harf + italik + bant bu sayfadan kalktı; bant
+                  kuralı `h1.uppercase.italic`e bağlı olduğu için kendiliğinden
+                  düşüyor. Boyut basamakları yukarıdaki ölçümle aynı. */}
+              <h1 className="text-[28px] sm:text-4xl md:text-[2.75rem] font-bold text-blue-950 tracking-tight leading-[1.15] mt-0 mb-3 break-words hyphens-auto [text-wrap:balance]">
                 {topicItem.title}
               </h1>
               {/* TARİH UYDURULMAZ. Burada bir dönem `|| "06 MAR 2026"`
@@ -666,11 +695,15 @@ export default async function TopicDetailPage({
                   month: "short",
                   year: "numeric",
                 });
-                return yazi ? (
-                  <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
-                    Güncelleme: {yazi}
+                const sure = okumaDakikasi > 0 ? `≈ ${okumaDakikasi} dk okuma` : "";
+                if (!yazi && !sure) return null;
+                return (
+                  <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[13px] font-medium text-slate-600">
+                    {yazi && <span>{`Güncelleme: ${yazi}`}</span>}
+                    {yazi && sure && <span aria-hidden="true">·</span>}
+                    {sure && <span>{sure}</span>}
                   </div>
-                ) : null;
+                );
               })()}
               <AmiralNisani
                 iso={isoTarih(rawData.meta?.updatedAt)}
@@ -684,10 +717,10 @@ export default async function TopicDetailPage({
             {hubChildren.length > 0 && (
               <div className="overflow-hidden bg-white rounded-2xl border border-slate-200 shadow-sm">
                 <div className="flex items-center justify-between gap-3 border-l-4 border-sky-400 bg-sky-50 px-5 py-3.5 md:px-6">
-                  <h2 className="mt-0 mb-0 text-xs font-black text-blue-950 uppercase tracking-[0.2em]">
+                  <h2 className="font-sans mt-0 mb-0 text-base font-bold text-blue-950">
                     Alt Başlıklar
                   </h2>
-                  <span className="rounded-md bg-blue-950 px-2 py-0.5 text-[11px] font-bold text-white uppercase tracking-wider">
+                  <span className="rounded-full bg-white px-2.5 py-0.5 text-[12px] font-semibold text-blue-900 ring-1 ring-sky-200">
                     {hubChildren.length} kategori
                   </span>
                 </div>
@@ -726,11 +759,11 @@ export default async function TopicDetailPage({
               <nav
                 aria-labelledby="icindekiler-basligi"
                 data-baskida-goster
-                className="mb-5 bg-white rounded-[2rem] shadow-sm border border-slate-200 p-6 md:p-8"
+                className="mb-5 bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8"
               >
                 <h2
                   id="icindekiler-basligi"
-                  className="font-sans mt-0 text-[11px] font-black text-blue-900/80 uppercase tracking-[0.2em] mb-3 flex items-center gap-1.5"
+                  className="font-sans mt-0 text-base font-bold text-blue-950 mb-3 flex items-center gap-1.5"
                 >
                   <DumenSimgesi className="h-4 w-4 shrink-0 text-blue-900" />
                   Bu sayfada
@@ -757,6 +790,12 @@ export default async function TopicDetailPage({
                 Olculdu: 375px'te 14 kabin 13'u tasiyor ve hicbir gorsel ipucu yoktu. */}
             <KaydirDurumu />
             <BasaDon />
+            <OkumaGezgini
+              bolumler={topicItem.sections.map((s: any, i: number) => ({
+                id: bolumKimligi[i],
+                baslik: s.heading,
+              }))}
+            />
             <SekilOynat />
             <RotaCizgisi />
 
@@ -806,7 +845,7 @@ export default async function TopicDetailPage({
                 satır **94 karakter** çıkıyordu — küçük yazı + uzun satır,
                 en kötü bileşim. `globals.css`teki 14px kuralı 641px'ten
                 başlıyor; ikisi ayrışırsa bu kusur geri gelir. */}
-            <div data-readable className="bg-white rounded-[2.5rem] shadow-sm border border-slate-200 overflow-hidden p-5 sm:p-8 md:p-12 space-y-10">
+            <div data-readable className="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden p-5 sm:p-8 md:p-12 space-y-10">
               {/* Ziyaretçiye görünen hata kartı.
                   Eskiden site SAHİBİNE yazılmıştı: dosya yolu, "geçerli bir
                   JSON değil", "düzenleyici de kapalı" ve ham ayrıştırıcı
@@ -853,7 +892,7 @@ export default async function TopicDetailPage({
 
               {topicItem.summary && (
                 <div className="text-lg text-slate-700 font-medium leading-relaxed bg-blue-50/40 p-6 rounded-3xl border-l-4 border-blue-300">
-                  <span className="text-[11px] font-black text-blue-900/80 uppercase tracking-[0.2em] block mb-2">Hızlı Özet</span>
+                  <span className="text-[13px] font-bold text-blue-900 block mb-2">Hızlı Özet</span>
                   <div className="whitespace-pre-wrap">{topicItem.summary}</div>
                 </div>
               )}
@@ -894,7 +933,7 @@ export default async function TopicDetailPage({
                       <h2
                         id={bolumKimligi[idx]}
                         tabIndex={-1}
-                        className="focus:outline-none text-2xl font-black text-blue-950 mb-2 flex items-center gap-3"
+                        className="focus:outline-none text-2xl font-bold tracking-tight text-blue-950 mb-2 flex items-center gap-3"
                       >
                         {/*
                           Süsleme: ekran okuyucu bunu "kare" diye okuyup her
@@ -937,11 +976,11 @@ export default async function TopicDetailPage({
             {(kaynaklar.length > 0 || kaynakca) && (
               <section
                 aria-labelledby="kaynaklar-basligi"
-                className="mt-5 bg-white rounded-[2rem] shadow-sm border border-slate-200 p-6 md:p-8"
+                className="mt-5 bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8"
               >
                 <h2
                   id="kaynaklar-basligi"
-                  className="font-sans mt-0 text-[11px] font-black text-blue-900/80 uppercase tracking-[0.2em] mb-3"
+                  className="font-sans mt-0 text-base font-bold text-blue-950 mb-3"
                 >
                   Kaynaklar
                 </h2>
@@ -956,6 +995,39 @@ export default async function TopicDetailPage({
                 Dosya ayrıştırılamadıysa GÖSTERİLMEZ: editör elindeki `item`'ı
                 geri yazar, o da boş olduğu için kaydetmek diskteki asıl içeriği
                 silerdi. */}
+            {(oncekiKonu || sonrakiKonu) && (
+              <nav aria-label="Konu sırası" data-baskida-gizle className="grid gap-3 sm:grid-cols-2">
+                {oncekiKonu ? (
+                  <Link
+                    href={`/topics/${slug}/${oncekiKonu.slug}`}
+                    className="group rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-sm transition hover:border-sky-300 hover:bg-sky-50"
+                  >
+                    <span className="block text-[13px] font-medium text-slate-600">
+                      <span aria-hidden="true">← </span>Önceki
+                    </span>
+                    <span className="mt-1 block font-serif text-[15px] font-bold leading-snug text-blue-950 group-hover:text-blue-700">
+                      {oncekiKonu.title}
+                    </span>
+                  </Link>
+                ) : (
+                  <span className="hidden sm:block" />
+                )}
+                {sonrakiKonu && (
+                  <Link
+                    href={`/topics/${slug}/${sonrakiKonu.slug}`}
+                    className="group rounded-2xl border border-slate-200 bg-white px-5 py-4 text-right shadow-sm transition hover:border-sky-300 hover:bg-sky-50"
+                  >
+                    <span className="block text-[13px] font-medium text-slate-600">
+                      Sonraki<span aria-hidden="true"> →</span>
+                    </span>
+                    <span className="mt-1 block font-serif text-[15px] font-bold leading-snug text-blue-950 group-hover:text-blue-700">
+                      {sonrakiKonu.title}
+                    </span>
+                  </Link>
+                )}
+              </nav>
+            )}
+
             {!okumaHatasi && <YoneticiDuzenleyici item={topicItem} />}
           </div>
 
@@ -966,13 +1038,13 @@ export default async function TopicDetailPage({
               
               {/* İleri Okuma: SADECE kılcal (kendi çocuğu olmayan) alt konular */}
               {leafChildren.length > 0 && (
-                <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm">
+                <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
                   {/* h2, h3 DEĞİL: "Alt Başlıklar" ve içerik bölümleri de h2.
                       h3 kalınca taslakta bu bölüm son klinik bölümün ALT
                       başlığı gibi görünüyordu — düzey atlaması yok ama
                       yuvalama yanlıştı. Görünüm değişmiyor: globals.css
                       h1,h2,h3'e aynı kuralı veriyor (ölçüldü, mt 24px). */}
-                  <h2 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 mt-0 pb-4 mb-4 flex items-center gap-2">
+                  <h2 className="font-sans text-base font-bold text-blue-950 border-b border-slate-100 mt-0 pb-3 mb-3 flex items-center gap-2">
                     <span aria-hidden="true" className="text-base leading-none">⛵</span>
                     İleri Okuma
                   </h2>
@@ -1001,8 +1073,8 @@ export default async function TopicDetailPage({
                   buraya çıkar; bağ konu başına elle tutulmaz,
                   `scripts/arac-konu-index.cjs` okur. */}
               {ilgiliAraclar.length > 0 && (
-                <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm">
-                  <h2 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 mt-0 pb-4 mb-4 flex items-center gap-2">
+                <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+                  <h2 className="font-sans text-base font-bold text-blue-950 border-b border-slate-100 mt-0 pb-3 mb-3 flex items-center gap-2">
                     <span aria-hidden="true" className="text-base leading-none">🧭</span>
                     İlgili Hesaplayıcılar
                   </h2>
@@ -1028,8 +1100,8 @@ export default async function TopicDetailPage({
 
               {/* İlgili Konular — etiket akrabalığından, branş sınırı gözetmeden */}
               {ilgililer.length > 0 && (
-                <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm">
-                  <h2 className="text-sm font-black text-blue-950 uppercase tracking-widest border-b-2 border-slate-100 mt-0 pb-4 mb-4 flex items-center gap-2">
+                <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+                  <h2 className="font-sans text-base font-bold text-blue-950 border-b border-slate-100 mt-0 pb-3 mb-3 flex items-center gap-2">
                     <span aria-hidden="true" className="text-base leading-none">🪢</span>
                     İlgili Konular
                   </h2>
@@ -1077,10 +1149,10 @@ export default async function TopicDetailPage({
                 * çıkmaz bir bağlantı ile sessizce kaybolan bir dönüşüm yüzeyi
                 * arasındaki üçüncü yol.
                 */}
-              <Link href={premiumHedef} data-baskida-gizle className="block bg-gradient-to-br from-blue-950 to-slate-900 rounded-[2rem] p-8 border border-slate-800 shadow-xl text-white relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1 transition-all">
+              <Link href={premiumHedef} data-baskida-gizle className="block bg-gradient-to-br from-blue-950 to-slate-900 rounded-2xl p-6 border border-slate-800 shadow-xl text-white relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1 transition-all">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition-all"></div>
 
-                <span className="text-[11px] font-black text-amber-400 uppercase tracking-[0.25em] mb-4 block">
+                <span className="text-[13px] font-bold text-amber-400 block">
                   MediSea Premium
                 </span>
 
@@ -1091,7 +1163,7 @@ export default async function TopicDetailPage({
                     h2 -> h4 ATLAMASI üretiyordu. `mt-4` şart — globals.css
                     h4'e 1rem, h3'e 1.5rem üst boşluk veriyor; sınıf olmadan
                     tanıtım kartının başlığı 16px'ten 24px'e kayardı. */}
-                <h3 className="text-xl font-black italic uppercase leading-tight mb-3 mt-4">
+                <h3 className="font-serif text-xl font-bold leading-tight mb-3 mt-3">
                   {premiumBrans ? `YDUS ${getSpecialty(slug).title}` : "YDUS Hazırlık"}
                 </h3>
 
@@ -1101,7 +1173,7 @@ export default async function TopicDetailPage({
                     : "Çıkmış YDUS soruları, çözümlü vaka analizleri ve klinik inciler Premium abonelere özel. Bu branşın modülü henüz hazırlanıyor."}
                 </p>
 
-                <div className="inline-block bg-amber-500 text-slate-900 text-xs font-black uppercase tracking-widest px-5 py-3 rounded-full group-hover:bg-white transition-colors">
+                <div className="inline-block bg-amber-500 text-slate-900 text-sm font-bold px-5 py-2.5 rounded-full group-hover:bg-white transition-colors">
                   İncele →
                 </div>
               </Link>
