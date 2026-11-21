@@ -414,7 +414,7 @@
       {
         "slug": "sofa",
         "name": "SOFA Skoru",
-        "eslesen": "SOFA Skoru"
+        "eslesen": "SOFA"
       }
     ],
     "enfeksiyon/tigesiklin-derleme": [
@@ -5328,9 +5328,9 @@
     ],
     "sofa": [
       {
-        "yol": "enfeksiyon/prokalsitonin-genel",
-        "baslik": "Prokalsitonin (PCT) ve Klinik Kullanımı",
-        "eslesen": "SOFA Skoru"
+        "yol": "enfeksiyon/ekinokandinler",
+        "baslik": "Ekinokandinler: Farmakoloji, Doz, Direnç ve Yeni Glukan Sentaz İnhibitörleri",
+        "eslesen": "SOFA"
       },
       {
         "yol": "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi",
@@ -5343,8 +5343,8 @@
         "eslesen": "SOFA"
       },
       {
-        "yol": "enfeksiyon/ekinokandinler",
-        "baslik": "Ekinokandinler: Farmakoloji, Doz, Direnç ve Yeni Glukan Sentaz İnhibitörleri",
+        "yol": "enfeksiyon/prokalsitonin-genel",
+        "baslik": "Prokalsitonin (PCT) ve Klinik Kullanımı",
         "eslesen": "SOFA"
       }
     ],

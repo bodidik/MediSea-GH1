@@ -43,8 +43,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/enfeksiyon/prokalsitonin-genel" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Prokalsitonin (PCT) ve Klinik Kullanımı
+              <Link href="/topics/enfeksiyon/ekinokandinler" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Ekinokandinler: Farmakoloji, Doz, Direnç ve Yeni Glukan Sentaz İnhibitörleri
               </Link>
             </li>
             <li>
@@ -58,8 +58,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/enfeksiyon/ekinokandinler" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Ekinokandinler: Farmakoloji, Doz, Direnç ve Yeni Glukan Sentaz İnhibitörleri
+              <Link href="/topics/enfeksiyon/prokalsitonin-genel" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Prokalsitonin (PCT) ve Klinik Kullanımı
               </Link>
             </li>
           </ul>
