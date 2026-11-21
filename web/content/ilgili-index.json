@@ -2382,11 +2382,6 @@
    "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
   },
   {
-   "brans": "enfeksiyon",
-   "slug": "vankomisin-auc-dozlama",
-   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama ve Akademik Nüanslar"
-  },
-  {
    "brans": "gastroenteroloji",
    "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
    "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
@@ -2405,6 +2400,11 @@
    "brans": "enfeksiyon",
    "slug": "fosfomisin-daptomisin-sinerji",
    "baslik": "Fosfomisin ve Daptomisin Sinerjisi"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "vankomisin-master-rehber",
+   "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç"
   }
  ],
  "enfeksiyon/bruselloz": [
@@ -3227,6 +3227,11 @@
  "enfeksiyon/linezolid-vankomisin-tdm-rehberi": [
   {
    "brans": "enfeksiyon",
+   "slug": "vankomisin-auc-dozlama",
+   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "linezolid-ciddi-komplikasyonlar",
    "baslik": "Linezolid Tedavisinde Ciddi Komplikasyonlar ve Klinik Yönetim Stratejileri"
   },
@@ -3242,18 +3247,13 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "vanco-bobrek",
-   "baslik": "Vankomisin: Eliminasyon, Nefrotoksisite ve AUC Kılavuzluğunda Dozlama"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "vankomisin-auc-dozlama",
-   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama ve Akademik Nüanslar"
-  },
-  {
-   "brans": "enfeksiyon",
    "slug": "dalbavansin-VISA-VRSA",
    "baslik": "VISA ve VRSA: İleri Düzey Direnç Mekanizmaları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "glikopeptit-antibiyotikler",
+   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
   }
  ],
  "enfeksiyon/mantar-enfeksiyon-ana-sayfa": [
@@ -3316,7 +3316,7 @@
   {
    "brans": "enfeksiyon",
    "slug": "vanco-bobrek",
-   "baslik": "Vankomisin: Eliminasyon, Nefrotoksisite ve AUC Kılavuzluğunda Dozlama"
+   "baslik": "Vankomisin ve Böbrek: Klerens, Nefrotoksisite ve Böbrek İşlevine Göre Doz"
   },
   {
    "brans": "enfeksiyon",
@@ -3399,9 +3399,9 @@
  ],
  "enfeksiyon/vanco-bobrek": [
   {
-   "brans": "enfeksiyon",
-   "slug": "linezolid-vankomisin-tdm-rehberi",
-   "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi"
+   "brans": "nefroloji",
+   "slug": "kronik-bobrek-hastaligi",
+   "baslik": "Kronik Böbrek Hastalığı (KBH)"
   },
   {
    "brans": "enfeksiyon",
@@ -3417,13 +3417,18 @@
  "enfeksiyon/vankomisin-auc-dozlama": [
   {
    "brans": "enfeksiyon",
-   "slug": "antibiyotikler-ana-sayfa",
-   "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
-  },
-  {
-   "brans": "enfeksiyon",
    "slug": "linezolid-vankomisin-tdm-rehberi",
    "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "esansiyel-trombositoz-ARES-ASA",
+   "baslik": "ET'de Aspirin Formülasyonu: Plain vs. Enteric-Coated (EC) Farmakokinetiği"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipidoloji-statin-karsilastirmasi",
+   "baslik": "Statin Kıyaslaması"
   },
   {
    "brans": "enfeksiyon",
@@ -4857,14 +4862,19 @@
    "baslik": "ET'de Antiplatelet Optimizasyonu: Aspirin BID Stratejisi ve Farmakodinamik"
   },
   {
-   "brans": "kardiyoloji",
-   "slug": "lipidoloji-statin-karsilastirmasi",
-   "baslik": "Statin Kıyaslaması"
+   "brans": "enfeksiyon",
+   "slug": "vankomisin-auc-dozlama",
+   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama"
   },
   {
    "brans": "hematoloji",
    "slug": "miyeloproliferatif",
    "baslik": "Miyeloproliferatif Neoplazmlar (MPN)"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipidoloji-statin-karsilastirmasi",
+   "baslik": "Statin Kıyaslaması"
   }
  ],
  "hematoloji/esansiyel-trombositoz-ASA-direnci": [
@@ -6290,6 +6300,11 @@
  ],
  "kardiyoloji/lipidoloji-statin-karsilastirmasi": [
   {
+   "brans": "enfeksiyon",
+   "slug": "vankomisin-auc-dozlama",
+   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama"
+  },
+  {
    "brans": "hematoloji",
    "slug": "esansiyel-trombositoz-ARES-ASA",
    "baslik": "ET'de Aspirin Formülasyonu: Plain vs. Enteric-Coated (EC) Farmakokinetiği"
@@ -7187,6 +7202,11 @@
    "brans": "endokrinoloji",
    "slug": "adrenal-fizyoloji-ve-steroidogenez",
    "baslik": "Adrenal Fizyoloji ve Steroidogenez"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "vanco-bobrek",
+   "baslik": "Vankomisin ve Böbrek: Klerens, Nefrotoksisite ve Böbrek İşlevine Göre Doz"
   },
   {
    "brans": "kardiyoloji",

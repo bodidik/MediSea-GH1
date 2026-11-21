@@ -475,6 +475,25 @@
         "eslesen": "Anafilaksi"
       }
     ],
+    "enfeksiyon/vanco-bobrek": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "cockcroft-gault",
+        "name": "Cockcroft-Gault Kreatinin Klirensi",
+        "eslesen": "vankomisin",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "kdigo-aki",
+        "name": "KDIGO AKI Evrelemesi",
+        "eslesen": "nefrotoks",
+        "kaynak": "kavram"
+      }
+    ],
     "enfeksiyon/vankomisin-master-rehber": [
       {
         "slug": "anaphylaxis",
@@ -3219,20 +3238,6 @@
         "slug": "rass",
         "name": "RASS",
         "eslesen": "yoğun bakım",
-        "kaynak": "kavram"
-      }
-    ],
-    "enfeksiyon/vanco-bobrek": [
-      {
-        "slug": "cockcroft-gault",
-        "name": "Cockcroft-Gault Kreatinin Klirensi",
-        "eslesen": "vankomisin",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "kdigo-aki",
-        "name": "KDIGO AKI Evrelemesi",
-        "eslesen": "nefrotoks",
         "kaynak": "kavram"
       }
     ],
@@ -7141,13 +7146,13 @@
       },
       {
         "yol": "enfeksiyon/vanco-bobrek",
-        "baslik": "Vankomisin: Eliminasyon, Nefrotoksisite ve AUC Kılavuzluğunda Dozlama",
+        "baslik": "Vankomisin ve Böbrek: Klerens, Nefrotoksisite ve Böbrek İşlevine Göre Doz",
         "eslesen": "vankomisin",
         "kaynak": "kavram"
       },
       {
         "yol": "enfeksiyon/vankomisin-auc-dozlama",
-        "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama ve Akademik Nüanslar",
+        "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama",
         "eslesen": "vankomisin",
         "kaynak": "kavram"
       },
@@ -7191,7 +7196,7 @@
       },
       {
         "yol": "enfeksiyon/vanco-bobrek",
-        "baslik": "Vankomisin: Eliminasyon, Nefrotoksisite ve AUC Kılavuzluğunda Dozlama",
+        "baslik": "Vankomisin ve Böbrek: Klerens, Nefrotoksisite ve Böbrek İşlevine Göre Doz",
         "eslesen": "nefrotoks",
         "kaynak": "kavram"
       },
@@ -9116,7 +9121,7 @@
     "arac": 281,
     "araciOlanKonu": 351,
     "konusuOlanArac": 180,
-    "bag": 732,
+    "bag": 733,
     "kavramBag": 629
   }
 }
