@@ -384,13 +384,11 @@
         "slug": "anaphylaxis",
         "name": "Anafilaksi Kriterleri",
         "eslesen": "Anafilaksi"
-      }
-    ],
-    "enfeksiyon/dalbavansin-mrsa-bakteriyemisi": [
+      },
       {
-        "slug": "anaphylaxis",
-        "name": "Anafilaksi Kriterleri",
-        "eslesen": "Anafilaksi"
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
       }
     ],
     "enfeksiyon/ekinokandinler": [
@@ -5298,12 +5296,12 @@
       },
       {
         "yol": "enfeksiyon/dalbavansin-kontrendikasyon-ve-alternatifler",
-        "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler",
+        "baslik": "Dalbavansin: Kontrendikasyonlar, Uyarılar ve Alternatifler",
         "eslesen": "Anafilaksi"
       },
       {
-        "yol": "enfeksiyon/dalbavansin-mrsa-bakteriyemisi",
-        "baslik": "Dalbavansin: MRSA Bakteriyemisi ve Step-Down Stratejisi",
+        "yol": "enfeksiyon/ekinokandinler",
+        "baslik": "Ekinokandinler: Farmakoloji, Doz, Direnç ve Yeni Glukan Sentaz İnhibitörleri",
         "eslesen": "Anafilaksi"
       }
     ],
@@ -9119,7 +9117,7 @@
   "olcum": {
     "konu": 487,
     "arac": 281,
-    "araciOlanKonu": 351,
+    "araciOlanKonu": 350,
     "konusuOlanArac": 180,
     "bag": 733,
     "kavramBag": 629

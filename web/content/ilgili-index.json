@@ -2723,35 +2723,30 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "dalbavansin-mrsa-bakteriyemisi",
-   "baslik": "Dalbavansin: MRSA Bakteriyemisi ve Step-Down Stratejisi"
+   "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
+   "baslik": "Dalbavansin: Kontrendikasyonlar, Uyarılar ve Alternatifler"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "linezolid-vankomisin-tdm-rehberi",
-   "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi"
+   "slug": "dalbavansin-mrsa-bakteriyemisi",
+   "baslik": "Dalbavansin: S. aureus Bakteriyemisinde Tedaviyi Tamamlama"
   }
  ],
  "enfeksiyon/dalbavansin-alerji-ve-capraz-duyarlilik": [
-  {
-   "brans": "enfeksiyon",
-   "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
-   "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "dalbavansin-VISA-VRSA",
-   "baslik": "VISA ve VRSA: İleri Düzey Direnç Mekanizmaları"
-  },
   {
    "brans": "enfeksiyon",
    "slug": "glikopeptit-antibiyotikler",
    "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
   },
   {
+   "brans": "nefroloji",
+   "slug": "tubulointerstisiyel-hastaliklar",
+   "baslik": "Tübüler ve İnterstisiyel Hastalıklar"
+  },
+  {
    "brans": "enfeksiyon",
-   "slug": "dalbavansin-mrsa-bakteriyemisi",
-   "baslik": "Dalbavansin: MRSA Bakteriyemisi ve Step-Down Stratejisi"
+   "slug": "dalbavansin-VISA-VRSA",
+   "baslik": "VISA ve VRSA: İleri Düzey Direnç Mekanizmaları"
   }
  ],
  "enfeksiyon/dalbavansin-derleme": [
@@ -2788,32 +2783,15 @@
  ],
  "enfeksiyon/dalbavansin-kontrendikasyon-ve-alternatifler": [
   {
-   "brans": "enfeksiyon",
-   "slug": "dalbavansin-alerji-ve-capraz-duyarlilik",
-   "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alerji Yönetimi"
+   "brans": "kardiyoloji",
+   "slug": "gebelikte-akut-koroner-sendrom",
+   "baslik": "Gebelikte Akut Koroner Sendrom Yönetimi"
   },
   {
-   "brans": "enfeksiyon",
-   "slug": "fosfomisin-daptomisin-biyofilm",
-   "baslik": "Biyofilm İçi Sinerji ve Protez Eklem Enfeksiyonları"
+   "brans": "gogus",
+   "slug": "koah-yuksek-rakim-kontrendikasyonlar",
+   "baslik": "KOAH'ta 2500 m Üzeri Seyahat: Kontrendikasyonlar"
   },
-  {
-   "brans": "enfeksiyon",
-   "slug": "fosfomisin-daptomisin-mprf",
-   "baslik": "Daptomisin Direncinin Kırılması (mprF Mutasyon Baskılaması)"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "fosfomisin-daptomisin-sinerji",
-   "baslik": "Fosfomisin ve Daptomisin Sinerjisi"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "dalbavansin-mrsa-bakteriyemisi",
-   "baslik": "Dalbavansin: MRSA Bakteriyemisi ve Step-Down Stratejisi"
-  }
- ],
- "enfeksiyon/dalbavansin-mrsa-bakteriyemisi": [
   {
    "brans": "enfeksiyon",
    "slug": "dalbavansin-VISA-VRSA",
@@ -2821,23 +2799,35 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "glikopeptit-antibiyotikler",
-   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
+   "slug": "dalbavansin-mrsa-bakteriyemisi",
+   "baslik": "Dalbavansin: S. aureus Bakteriyemisinde Tedaviyi Tamamlama"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "dalbavansin-alerji-ve-capraz-duyarlilik",
-   "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alerji Yönetimi"
+   "slug": "glikopeptit-antibiyotikler",
+   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
+  }
+ ],
+ "enfeksiyon/dalbavansin-mrsa-bakteriyemisi": [
+  {
+   "brans": "kardiyoloji",
+   "slug": "infektif-endokardit",
+   "baslik": "İnfektif Endokardit"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "dalbavansin-VISA-VRSA",
+   "baslik": "VISA ve VRSA: İleri Düzey Direnç Mekanizmaları"
   },
   {
    "brans": "enfeksiyon",
    "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
-   "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler"
+   "baslik": "Dalbavansin: Kontrendikasyonlar, Uyarılar ve Alternatifler"
   },
   {
-   "brans": "gogus",
-   "slug": "pnomoni-hastane-kaynakli",
-   "baslik": "Hastane Kaynaklı Pnömoni"
+   "brans": "enfeksiyon",
+   "slug": "glikopeptit-antibiyotikler",
+   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
   }
  ],
  "enfeksiyon/direncli-kuf-yeni-antifungaller": [
@@ -2938,11 +2928,6 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
-   "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler"
-  },
-  {
-   "brans": "enfeksiyon",
    "slug": "fosfomisin-beta-laktam-sinerji",
    "baslik": "Fosfomisin ve Beta-Laktam Sinerjisi"
   }
@@ -2960,11 +2945,6 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
-   "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler"
-  },
-  {
-   "brans": "enfeksiyon",
    "slug": "fosfomisin-beta-laktam-sinerji",
    "baslik": "Fosfomisin ve Beta-Laktam Sinerjisi"
   },
@@ -2977,6 +2957,11 @@
    "brans": "enfeksiyon",
    "slug": "dalbavansin-derleme",
    "baslik": "Dalbavansin"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "glikopeptit-antibiyotikler",
+   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
   }
  ],
  "enfeksiyon/fosfomisin-daptomisin-sinerji": [
@@ -2984,11 +2969,6 @@
    "brans": "enfeksiyon",
    "slug": "fosfomisin-beta-laktam-sinerji",
    "baslik": "Fosfomisin ve Beta-Laktam Sinerjisi"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
-   "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alternatifler"
   },
   {
    "brans": "enfeksiyon",
@@ -3009,6 +2989,11 @@
    "brans": "enfeksiyon",
    "slug": "hucre-duvari-sentez-inhibitorleri",
    "baslik": "Hücre Duvarı Sentez İnhibitörleri"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "linezolid-derleme",
+   "baslik": "Linezolid: Farmakolojik Özellikleri, Etki Spektrumu, Klinik Kullanımı ve Güvenlilik Profili"
   }
  ],
  "enfeksiyon/fosfomisin-hipokalemi": [
@@ -3028,6 +3013,11 @@
  "enfeksiyon/glikopeptit-antibiyotikler": [
   {
    "brans": "enfeksiyon",
+   "slug": "dalbavansin-alerji-ve-capraz-duyarlilik",
+   "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alerji Yönetimi"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "antibiyotikler-ana-sayfa",
    "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
   },
@@ -3038,23 +3028,18 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "dalbavansin-alerji-ve-capraz-duyarlilik",
-   "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alerji Yönetimi"
-  },
-  {
-   "brans": "enfeksiyon",
    "slug": "linezolid-derleme",
    "baslik": "Linezolid: Farmakolojik Özellikleri, Etki Spektrumu, Klinik Kullanımı ve Güvenlilik Profili"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "dalbavansin-mrsa-bakteriyemisi",
-   "baslik": "Dalbavansin: MRSA Bakteriyemisi ve Step-Down Stratejisi"
+   "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
+   "baslik": "Dalbavansin: Kontrendikasyonlar, Uyarılar ve Alternatifler"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "linezolid-vankomisin-tdm-rehberi",
-   "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi"
+   "slug": "dalbavansin-mrsa-bakteriyemisi",
+   "baslik": "Dalbavansin: S. aureus Bakteriyemisinde Tedaviyi Tamamlama"
   }
  ],
  "enfeksiyon/hucre-duvari-sentez-inhibitorleri": [
@@ -3227,13 +3212,13 @@
  "enfeksiyon/linezolid-vankomisin-tdm-rehberi": [
   {
    "brans": "enfeksiyon",
-   "slug": "vankomisin-auc-dozlama",
-   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama"
+   "slug": "linezolid-ciddi-komplikasyonlar",
+   "baslik": "Linezolid Tedavisinde Ciddi Komplikasyonlar ve Klinik Yönetim Stratejileri"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "linezolid-ciddi-komplikasyonlar",
-   "baslik": "Linezolid Tedavisinde Ciddi Komplikasyonlar ve Klinik Yönetim Stratejileri"
+   "slug": "vankomisin-auc-dozlama",
+   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama"
   },
   {
    "brans": "enfeksiyon",
@@ -4472,19 +4457,9 @@
  ],
  "gogus/koah-yuksek-rakim-kontrendikasyonlar": [
   {
-   "brans": "gogus",
-   "slug": "koah-asetazolamid",
-   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
-  },
-  {
-   "brans": "gogus",
-   "slug": "koah-hast-testi",
-   "baslik": "Uçuş Öncesi Hipoksi Simülasyon Testi (HAST)"
-  },
-  {
-   "brans": "gogus",
-   "slug": "koah-ucus-oksijen-hesaplama",
-   "baslik": "KOAH'ta Uçuş İçi Oksijen İhtiyacının Hesaplanması"
+   "brans": "enfeksiyon",
+   "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
+   "baslik": "Dalbavansin: Kontrendikasyonlar, Uyarılar ve Alternatifler"
   }
  ],
  "gogus/koah-yuksek-rakim-seyahat": [
@@ -4519,11 +4494,6 @@
    "brans": "enfeksiyon",
    "slug": "dalbavansin-derleme",
    "baslik": "Dalbavansin"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "dalbavansin-mrsa-bakteriyemisi",
-   "baslik": "Dalbavansin: MRSA Bakteriyemisi ve Step-Down Stratejisi"
   }
  ],
  "gogus/pnomoni-toplum-kaynakli": [
@@ -6020,6 +5990,11 @@
  ],
  "kardiyoloji/gebelikte-akut-koroner-sendrom": [
   {
+   "brans": "enfeksiyon",
+   "slug": "dalbavansin-kontrendikasyon-ve-alternatifler",
+   "baslik": "Dalbavansin: Kontrendikasyonlar, Uyarılar ve Alternatifler"
+  },
+  {
    "brans": "kardiyoloji",
    "slug": "spontan-koroner-arter-disseksiyonu-scad",
    "baslik": "Spontan Koroner Arter Disseksiyonu (SCAD)"
@@ -6092,6 +6067,11 @@
   }
  ],
  "kardiyoloji/infektif-endokardit": [
+  {
+   "brans": "enfeksiyon",
+   "slug": "dalbavansin-mrsa-bakteriyemisi",
+   "baslik": "Dalbavansin: S. aureus Bakteriyemisinde Tedaviyi Tamamlama"
+  },
   {
    "brans": "kardiyoloji",
    "slug": "kapak-hastaliklari",
@@ -7693,24 +7673,9 @@
  ],
  "nefroloji/tubulointerstisiyel-hastaliklar": [
   {
-   "brans": "nefroloji",
-   "slug": "membranoz-nefropati-mn",
-   "baslik": "Membranöz nefropati"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "polikistik-bobrek-ekstrarenal",
-   "baslik": "ADPKD İleri Okuma: Ekstrarenal Sistemik Manifestasyonlar"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "polikistik-bobrek-hastaligi-pkd",
-   "baslik": "Polikistik Böbrek hastalığı (ADPKD)"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "polikistik-bobrek-tedavi",
-   "baslik": "ADPKD İleri Okuma: Uzman Düzeyi Tedavi ve Yönetim Kılavuzu"
+   "brans": "enfeksiyon",
+   "slug": "dalbavansin-alerji-ve-capraz-duyarlilik",
+   "baslik": "Dalbavansin: Çapraz Duyarlılık ve Alerji Yönetimi"
   }
  ],
  "nefroloji/zona-glomeruloza-steroid": [
