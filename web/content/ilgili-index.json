@@ -523,6 +523,11 @@
    "baslik": "DNMT3A ve DNMT3B de Novo Metiltransferazlarının Epigenetik ve Hücresel Etkileri"
   },
   {
+   "brans": "enfeksiyon",
+   "slug": "fidaksomisin-ileri-duzey",
+   "baslik": "Fidaksomisin: C. difficile Enfeksiyonunda Yeri ve Kanıtı"
+  },
+  {
    "brans": "endokrinoloji",
    "slug": "graves-hcp5-lncrna-ve-epigenetik",
    "baslik": "Graves Hastalığında HCP5 (lncRNA) Varyantı ve Epigenetik Mekanizmalar"
@@ -536,11 +541,6 @@
    "brans": "endokrinoloji",
    "slug": "gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
    "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "hipertiroidizmde-kardiyovaskuler-sistem",
-   "baslik": "Hipertiroidizmde Kardiyovasküler Sistem"
   }
  ],
  "endokrinoloji/hashimoto-ensefaliti": [
@@ -2511,7 +2511,7 @@
   {
    "brans": "enfeksiyon",
    "slug": "fidaksomisin-ileri-duzey",
-   "baslik": "Fidaksomisin: Clostridioides difficile Yönetiminde İleri Düzey Derleme"
+   "baslik": "Fidaksomisin: C. difficile Enfeksiyonunda Yeri ve Kanıtı"
   }
  ],
  "enfeksiyon/candidozyma-auris-deri-dekolonizasyonu": [
@@ -2868,7 +2868,12 @@
   {
    "brans": "enfeksiyon",
    "slug": "c-difficile-vankomisin-fidaksomisin",
-   "baslik": "Clostridioides difficile (CDI) Tedavisi: Vankomisin ve Fidaksomisin"
+   "baslik": "Clostridioides difficile Enfeksiyonu: Erişkinde Tedavi ve Korunma"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "graves-nuks-ongorusu-great-skoru",
+   "baslik": "Graves Hastalığında Nüks Öngörüsü: GREAT ve GREAT+ Skorları"
   }
  ],
  "enfeksiyon/fosfomisin-beta-laktam-sinerji": [
@@ -3340,7 +3345,7 @@
   {
    "brans": "enfeksiyon",
    "slug": "fidaksomisin-ileri-duzey",
-   "baslik": "Fidaksomisin: Clostridioides difficile Yönetiminde İleri Düzey Derleme"
+   "baslik": "Fidaksomisin: C. difficile Enfeksiyonunda Yeri ve Kanıtı"
   },
   {
    "brans": "enfeksiyon",
