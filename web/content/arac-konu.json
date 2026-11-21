@@ -475,6 +475,19 @@
         "eslesen": "Anafilaksi"
       }
     ],
+    "enfeksiyon/vankomisin-master-rehber": [
+      {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "slug": "cockcroft-gault",
+        "name": "Cockcroft-Gault Kreatinin Klirensi",
+        "eslesen": "vankomisin",
+        "kaynak": "kavram"
+      }
+    ],
     "gastroenteroloji/ascit-diuretik-tedavisi": [
       {
         "slug": "potasyum-replasman",
@@ -3224,14 +3237,6 @@
       }
     ],
     "enfeksiyon/vankomisin-auc-dozlama": [
-      {
-        "slug": "cockcroft-gault",
-        "name": "Cockcroft-Gault Kreatinin Klirensi",
-        "eslesen": "vankomisin",
-        "kaynak": "kavram"
-      }
-    ],
-    "enfeksiyon/vankomisin-master-rehber": [
       {
         "slug": "cockcroft-gault",
         "name": "Cockcroft-Gault Kreatinin Klirensi",
@@ -9111,7 +9116,7 @@
     "arac": 281,
     "araciOlanKonu": 351,
     "konusuOlanArac": 180,
-    "bag": 731,
+    "bag": 732,
     "kavramBag": 629
   }
 }
