@@ -415,6 +415,19 @@
         "eslesen": "Potasyum Replasmanı"
       }
     ],
+    "enfeksiyon/glikopeptit-antibiyotikler": [
+      {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
+      },
+      {
+        "slug": "cockcroft-gault",
+        "name": "Cockcroft-Gault Kreatinin Klirensi",
+        "eslesen": "glikopeptit",
+        "kaynak": "kavram"
+      }
+    ],
     "enfeksiyon/invaziv-kandidiyazis": [
       {
         "slug": "child-pugh",
@@ -3208,14 +3221,6 @@
         "slug": "potasyum-replasman",
         "name": "Potasyum Replasmanı",
         "eslesen": "hipokalemi",
-        "kaynak": "kavram"
-      }
-    ],
-    "enfeksiyon/glikopeptit-antibiyotikler": [
-      {
-        "slug": "cockcroft-gault",
-        "name": "Cockcroft-Gault Kreatinin Klirensi",
-        "eslesen": "glikopeptit",
         "kaynak": "kavram"
       }
     ],
@@ -9119,7 +9124,7 @@
     "arac": 281,
     "araciOlanKonu": 350,
     "konusuOlanArac": 180,
-    "bag": 733,
+    "bag": 734,
     "kavramBag": 629
   }
 }
