@@ -2534,6 +2534,11 @@
   },
   {
    "brans": "enfeksiyon",
+   "slug": "invazive-mantar-enfeksiyon",
+   "baslik": "İnvaziv Mantar Enfeksiyonları"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "okuler-kandidiyazis",
    "baslik": "Oküler Kandidiyazis: Korioretinit ve Endoftalmi"
   },
@@ -2551,23 +2556,18 @@
    "brans": "enfeksiyon",
    "slug": "cr-hvkp-metastatik-yayilim",
    "baslik": "CR-hvKP: Metastatik Yayılımın Klinik İzlemi"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "crkp-enfeksiyonu",
-   "baslik": "Karbapenem Dirençli Klebsiella pneumoniae (CRKP)"
   }
  ],
  "enfeksiyon/candidozyma-auris-nozokomiyal-persistans": [
   {
-   "brans": "enfeksiyon",
-   "slug": "invaziv-kandidiyazis",
-   "baslik": "İnvaziv Kandidiyazis ve Kandidemi"
-  },
-  {
    "brans": "gogus",
    "slug": "pnomoni-hastane-kaynakli",
    "baslik": "Hastane Kaynaklı Pnömoni"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "invaziv-kandidiyazis",
+   "baslik": "İnvaziv Kandidiyazis ve Kandidemi"
   },
   {
    "brans": "enfeksiyon",
@@ -3087,13 +3087,13 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "candidozyma-auris-nozokomiyal-persistans",
-   "baslik": "Candidozyma auris (Candida auris)"
+   "slug": "direncli-kuf-yeni-antifungaller",
+   "baslik": "Dirençli Küf Enfeksiyonlarında Yeni Antifungaller"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "direncli-kuf-yeni-antifungaller",
-   "baslik": "Dirençli Küf Enfeksiyonlarında Yeni Antifungaller"
+   "slug": "candidozyma-auris-nozokomiyal-persistans",
+   "baslik": "Candidozyma auris (Candida auris)"
   },
   {
    "brans": "gastroenteroloji",
@@ -3109,23 +3109,13 @@
  "enfeksiyon/invazive-mantar-enfeksiyon": [
   {
    "brans": "enfeksiyon",
-   "slug": "bruselloz",
-   "baslik": "Bruselloz: Epidemiyoloji, Mikrobiyoloji, Patogenez, Klinik Prezantasyon, Tanı ve Tedavi"
+   "slug": "candidozyma-auris-klinik",
+   "baslik": "Candidozyma auris: Klinik Prezentasyon ve Pratik İpuçları"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "bruselloz-hematolojik-komplikasyonlar",
-   "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "bruselloz-hepatobiliyer-tutulum",
-   "baslik": "Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu: Patofizyoloji, Histopatoloji ve Klinik Yönetim"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "bruselloz-intrasellular-patobiyoloji",
-   "baslik": "Brucella'nın İntrasellüler Yaşam Döngüsü: BCV Biyojenezi, T4SS Efektörleri ve Egress"
+   "slug": "okuler-kandidiyazis",
+   "baslik": "Oküler Kandidiyazis: Korioretinit ve Endoftalmi"
   }
  ],
  "enfeksiyon/linezolid-ciddi-komplikasyonlar": [
@@ -3293,6 +3283,11 @@
    "brans": "enfeksiyon",
    "slug": "candidozyma-auris-nozokomiyal-persistans",
    "baslik": "Candidozyma auris (Candida auris)"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "invazive-mantar-enfeksiyon",
+   "baslik": "İnvaziv Mantar Enfeksiyonları"
   }
  ],
  "enfeksiyon/prokalsitonin-biyobelirtec-karsilastirmasi": [
