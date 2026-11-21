@@ -339,6 +339,27 @@
         "eslesen": "Child-Pugh"
       }
     ],
+    "enfeksiyon/cr-hvkp-endoftalmi-komplikasyonu": [
+      {
+        "slug": "gcs",
+        "name": "Glasgow Koma Skalası",
+        "eslesen": "Glasgow Koma Skalası"
+      }
+    ],
+    "enfeksiyon/cr-hvkp-hipervirulan-varyant": [
+      {
+        "slug": "gcs",
+        "name": "Glasgow Koma Skalası",
+        "eslesen": "Glasgow Koma Skalası"
+      }
+    ],
+    "enfeksiyon/cr-hvkp-metastatik-yayilim": [
+      {
+        "slug": "gcs",
+        "name": "Glasgow Koma Skalası",
+        "eslesen": "Glasgow Koma Skalası"
+      }
+    ],
     "enfeksiyon/dalbavansin-alerji-ve-capraz-duyarlilik": [
       {
         "slug": "anaphylaxis",
@@ -408,6 +429,19 @@
         "slug": "child-pugh",
         "name": "Child-Pugh Sınıflaması",
         "eslesen": "Child-Pugh"
+      }
+    ],
+    "enfeksiyon/linezolid-vankomisin-tdm-rehberi": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "cockcroft-gault",
+        "name": "Cockcroft-Gault Kreatinin Klirensi",
+        "eslesen": "vankomisin",
+        "kaynak": "kavram"
       }
     ],
     "enfeksiyon/prokalsitonin-genel": [
@@ -3175,14 +3209,6 @@
         "kaynak": "kavram"
       }
     ],
-    "enfeksiyon/linezolid-vankomisin-tdm-rehberi": [
-      {
-        "slug": "cockcroft-gault",
-        "name": "Cockcroft-Gault Kreatinin Klirensi",
-        "eslesen": "vankomisin",
-        "kaynak": "kavram"
-      }
-    ],
     "enfeksiyon/vanco-bobrek": [
       {
         "slug": "cockcroft-gault",
@@ -5039,6 +5065,11 @@
         "eslesen": "eGFR"
       },
       {
+        "yol": "enfeksiyon/linezolid-vankomisin-tdm-rehberi",
+        "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi",
+        "eslesen": "eGFR"
+      },
+      {
         "yol": "gogus/sarkoidoz-hiperkalsemi",
         "baslik": "Sarkoidozda Kalsiyum Metabolizması ve Böbrek Tutulumu",
         "eslesen": "eGFR"
@@ -5056,11 +5087,6 @@
       {
         "yol": "onkoloji/buprenorfin-rotasyonu-ve-induksiyon",
         "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
-        "baslik": "Palyatif Bakımda Ağrı Yönetimi",
         "eslesen": "eGFR"
       }
     ],
@@ -5311,6 +5337,23 @@
         "yol": "onkoloji/karaciger-kanserleri",
         "baslik": "Karaciğer Kanserleri",
         "eslesen": "Child-Pugh"
+      }
+    ],
+    "gcs": [
+      {
+        "yol": "enfeksiyon/cr-hvkp-endoftalmi-komplikasyonu",
+        "baslik": "CR-hvKP ve hvKP: Yıkıcı Endoftalmi Komplikasyonu",
+        "eslesen": "Glasgow Koma Skalası"
+      },
+      {
+        "yol": "enfeksiyon/cr-hvkp-hipervirulan-varyant",
+        "baslik": "CR-hvKP: Hipervirülan Varyant ve Kusursuz Fırtına",
+        "eslesen": "Glasgow Koma Skalası"
+      },
+      {
+        "yol": "enfeksiyon/cr-hvkp-metastatik-yayilim",
+        "baslik": "CR-hvKP: Metastatik Yayılımın Klinik İzlemi",
+        "eslesen": "Glasgow Koma Skalası"
       }
     ],
     "bsa": [
@@ -9066,9 +9109,9 @@
   "olcum": {
     "konu": 487,
     "arac": 281,
-    "araciOlanKonu": 348,
-    "konusuOlanArac": 179,
-    "bag": 727,
+    "araciOlanKonu": 351,
+    "konusuOlanArac": 180,
+    "bag": 731,
     "kavramBag": 629
   }
 }

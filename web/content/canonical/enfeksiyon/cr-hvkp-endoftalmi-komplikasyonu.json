@@ -1,31 +1,71 @@
 {
   "title": "CR-hvKP ve hvKP: Yıkıcı Endoftalmi Komplikasyonu",
   "meta": {
-    "updatedAt": "29 Nis 2026",
-    "tags": ["Mikrobiyoloji", "Enfeksiyon Hastalıkları", "CR-hvKP", "Endoftalmi", "Metastatik Yayılım", "Hipopiyon", "İleri Okuma"],
+    "nisan": "amiral",
+    "updatedAt": "21 Kas 2026",
+    "tags": [
+      "Mikrobiyoloji",
+      "Enfeksiyon Hastalıkları",
+      "CR-hvKP",
+      "Endoftalmi",
+      "Metastatik Yayılım",
+      "Hipopiyon",
+      "İleri Okuma"
+    ],
     "parent": "cr-hvkp-metastatik-yayilim",
-    "order": 1
+    "order": 1,
+    "kaynaklar": [
+      {
+        "ad": "Yu WL. Clinical features, diagnosis, and treatment of Klebsiella pneumoniae infection. UpToDate (son güncelleme 1 Nis 2025)",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/clinical-features-diagnosis-and-treatment-of-klebsiella-pneumoniae-infection",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Sifri CD, Madoff LC. Infections of the Liver and Biliary System (Liver Abscess, Cholangitis, Cholecystitis). In: Mandell, Douglas, and Bennett's Principles and Practice of Infectious Diseases. Elsevier; Bölüm 75",
+        "yil": 2025,
+        "tur": "kitap"
+      },
+      {
+        "ad": "Durand ML. Treatment of endogenous endophthalmitis and chorioretinitis due to Candida species. UpToDate (son güncelleme 25 Mar 2026)",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-endogenous-endophthalmitis-and-chorioretinitis-due-to-candida-species",
+        "tur": "uptodate"
+      }
+    ]
   },
   "sections": [
     {
-      "heading": "👁️ Uzman Özeti: Fokal Odaktan Göze Sıçrama",
-      "html": "<p class=\"text-sm font-medium leading-relaxed text-slate-700 mb-2\">CR-hvKP ve klasik hipervirülan suşlarda (hvKP) göz tutulumu (endoftalmi), genellikle karaciğer apsesi gibi primer bir enfeksiyon odağından kan yoluyla (hematojen) yayılan, nadir ancak oldukça yıkıcı seyreden metastatik bir komplikasyondur.</p>"
+      "heading": "👁️ Uzman Özeti: Odaktan Göze",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Endojen <em>K. pneumoniae</em> endoftalmisi seyrek ama çoğu kez yıkıcı bir septik metastatik enfeksiyondur. En çok Doğu Asya'da, özellikle Tayvan'da birincil karaciğer apsesiyle birlikte tanımlandı; ABD'den de olgular var (UpToDate).</p>"
     },
     {
-      "heading": "1. Görülme Sıklığı (Risk Oranı) ve Primer Odaklar",
-      "html": "<div class=\"bg-indigo-50 border-l-4 border-indigo-500 p-5 shadow-sm mb-4\"><h4 class=\"font-black text-indigo-900 text-[12px] uppercase mb-2\">%6 Risk Faktörü</h4><p class=\"text-[11.5px] text-indigo-800 leading-relaxed mb-3\">Özellikle Tayvan gibi Doğu Asya ülkelerinde yapılan ve toplam 524 <em>K. pneumoniae</em> karaciğer apsesi hastasını içeren üç büyük çalışmada, hastaların %12'sinde metastatik enfeksiyon geliştiği ve bu metastazların yarısının <strong>(toplam hastaların %6'sının)</strong> endoftalmi olduğu saptanmıştır.</p><div class=\"bg-white p-3 rounded-xl border border-indigo-200\"><strong class=\"text-[11px] text-indigo-900 uppercase tracking-widest block mb-1\">Karaciğer Dışı Odaklar</strong><span class=\"text-[11px] text-slate-700\">Endoftalmi en çok karaciğer apsesi ile ilişkilendirilse de sadece bununla sınırlı değildir; <strong>perinefrik apse, piyelonefrit, prostatit, prostat apsesi ve akciğer enfeksiyonu (pnömoni)</strong> gibi diğer primer odaklardan da göze sıçrayabilir.</span></div></div>"
+      "heading": "📊 1. Sıklık ve Kaynak Odaklar",
+      "html": "<div class=\"bg-indigo-50 border border-indigo-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-indigo-900 text-[11px] uppercase mb-2\">UpToDate</h4><ul class=\"text-[11px] text-indigo-900 space-y-1.5 list-disc pl-4\"><li>Tayvan'dan üç seride (524 karaciğer apsesi hastası) metastatik enfeksiyon %12'ydi; bunların yarısı endoftalmi (<strong>toplamın %6'sı</strong>).</li><li>Karaciğer apsesine sınırlı değil: perinefrik apse, piyelonefrit, prostatit, prostat apsesi ve akciğer enfeksiyonundan da seyrek olarak bildirildi.</li><li>24 böbrek apsesi olgusunda metastatik enfeksiyon %13'tü ve endoftalmi olarak görülen olgular var.</li></ul></div>"
     },
     {
-      "heading": "2. Klinik Bulgular ve \"Hipopiyon\"",
-      "html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-4\"><div><div class=\"bg-white border border-slate-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Temel Şikayetler</h4><p class=\"text-[11px] text-slate-700 leading-relaxed\">Endoftalmi gelişen hastalar tipik olarak gözde ağrı, görmede bulanıklık/azalma ve gözde kızarıklık şikayetleriyle başvururlar. Hastalık genellikle tek veya çift taraflı olabilir, ancak <strong>tek taraflı (unilateral) tutulum daha sık</strong> görülmektedir.</p></div></div><div><div class=\"bg-rose-50 border border-rose-200 p-4 rounded-xl shadow-sm h-full\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-2 flex items-center gap-2\">Kötü Prognostik İşaret: Hipopiyon</h4><p class=\"text-[11px] text-rose-800 leading-relaxed\">Gözün ön kamarasında beyaz kan hücrelerinin (lökosit) tabakalaşması anlamına gelen <strong>hipopiyon, hastaların %72'sinde görülür</strong> ve klinik açıdan oldukça kötü bir prognostik işaret olarak kabul edilir.</p></div></div></div>"
+      "heading": "🩺 2. Belirtiler ve Hipopiyon",
+      "html": "<div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">UpToDate</h4><ul class=\"text-[11px] text-amber-900 space-y-1.5 list-disc pl-4\"><li>Göz ağrısı, bulanık görme, gözde kızarıklık. Tek taraflı tutulum iki taraflıdan sıktır.</li><li><strong>Hipopiyon</strong> (ön kamarada lökosit tabakası) sıktır (<strong>%72</strong>) ve kötü prognoz işaretidir.</li></ul></div>"
     },
     {
-      "heading": "3. Hastalığın İlerleme Hızı ve Kalıcı Hasar Riski",
-      "html": "<div class=\"bg-amber-50 border border-amber-200 p-5 rounded-2xl shadow-sm mb-4\"><h4 class=\"font-black text-amber-900 text-[12px] uppercase tracking-widest mb-2\">Zamanla Yarış: Fulminan Seyir</h4><p class=\"text-[11.5px] text-amber-800 leading-relaxed mb-3\">Bu enfeksiyon <strong>fulminan (çok hızlı ve şiddetli)</strong> bir seyir gösterir. Şikayetler başladıktan sonra tanı ve tedavinin 24 saatten fazla gecikmesi, durumun kalıcı görme kaybına hızla ilerlemesine yol açar.</p><ul class=\"text-[11.5px] text-amber-900 font-medium list-disc list-inside space-y-2 ml-1\"><li>61 hastalık retrospektif bir derlemede, hastaların <strong>%87'sinin başvuru anında görme keskinliğinin son derece düşük</strong> (4/200'den az) olduğu saptanmıştır.</li><li>Enfeksiyondan 3 ay sonra ise hastaların %76'sında zayıf görme keskinliği devam etmiş, <strong>%58'i ise ışık algısını tamamen kaybetmiştir.</strong></li></ul></div>"
+      "heading": "⏱️ 3. Seyir ve Görme Sonucu",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Enfeksiyon çoğu kez fulminan seyreder ve özellikle belirtilerden sonra <strong>24 saati aşan</strong> tanı ve tedavi gecikmesinde hızla kalıcı görme kaybına ilerler. 61 hastalık geriye dönük bir derlemede başvuruda hastaların <strong>%87</strong>'sinde görme keskinliği kötüydü (&lt;4/200); 3 ay sonra %76'sında kötü görme sürüyordu ve <strong>%58</strong>'inde ışık algısı yoktu. Başvuruda iyi görme ve tedaviye erken başlama görmenin korunma olasılığını artırır (UpToDate).</p><figure class=\"my-6\" data-hareketli><a href=\"/images/enfeksiyon/hvkp-metastaz-arama.svg\" target=\"_blank\" rel=\"noopener\" class=\"block\"><img src=\"/images/enfeksiyon/hvkp-metastaz-arama.svg\" width=\"640\" height=\"830\" loading=\"lazy\" alt=\"Toplumda gelişen Klebsiella pneumoniae karaciğer apsesinde ya da kaynağı bilinmeyen bakteriyemide hipervirülan suş düşünülür ve metastatik odaklar aranır. Gözde ağrı, bulanık görme ya da kızarıklık varsa hemen göz muayenesi yapılır; belirtilerden sonra 24 saati aşan gecikme kalıcı görme kaybına yol açar. Bilinç değişikliği, nöbet ya da ense sertliğinde beyin görüntülemesi ve beyin omurilik sıvısı incelemesi yapılır; Glasgow koma skalası 7 ve altı kötü sonucu öngörür. Uygun antibiyotiğe karşın ateş sürüyorsa karın ultrasonografisi ya da bilgisayarlı tomografiyle sessiz apse ve metastaz aranır. Akciğer apsesi ve ampiyem için göğüs grafisi ve toraks tomografisi; boyun ve psoas apseleri de görülebilir. Deri bulgusu olmadan dayanılmaz ağrı nekrotizan fasiiti düşündürür; piyomiyozit, spondilit ve septik artrit de gelişebilir. Tedavi duyarlılığa göre antibiyotik ve apse drenajıdır; endoftalmide intravitreal antibiyotik ve vitrektomi sistemik tedaviye eklenir. Klasik hipervirülan suşlar çoğu kez her kuşak sefalosporine duyarlıdır. Karbapenem direnci de varsa tedavi karbapeneme dirençli Enterobacterales gibi karbapenemaz türüne göre yeni ilaçlarla yapılır; drenaj ve kaynak kontrolü daha da belirleyicidir.\" class=\"w-full max-w-xl mx-auto rounded-xl border border-slate-200 bg-white\"></a><button type=\"button\" data-sekil-oynat class=\"mt-3 mx-auto flex items-center gap-1.5 min-h-[44px] px-4 rounded-full border border-sky-200 bg-sky-50 text-sm font-bold text-sky-800 hover:bg-sky-100\"><span aria-hidden=\"true\">▶</span> Tekrar oynat</button><figcaption class=\"text-sm text-slate-600 mt-2 text-center\">Şekil 1. Hipervirülan K. pneumoniae enfeksiyonunda metastatik odak nerede ve nasıl aranır (şematik; UpToDate, Mandell). Büyütmek için şekle dokunun.</figcaption></figure>"
     },
     {
-      "heading": "4. Çift Yönlü Klinik Takip Algoritması",
-      "html": "<div class=\"bg-slate-900 border border-slate-700 p-5 rounded-2xl shadow-xl text-white mb-4\"><h4 class=\"font-black text-sky-400 text-xs uppercase tracking-widest mb-3 flex items-center gap-2\">🔄 Klinik Refleks: Göz ve Batın Arası Tarama</h4><div class=\"space-y-3\"><div class=\"bg-slate-800 p-4 rounded-xl border border-slate-600\"><strong class=\"text-[12px] text-white block mb-1\">Senaryo A: Sistemik Enfeksiyondan Göze</strong><p class=\"text-[11.5px] text-slate-300 leading-relaxed\"><em>K. pneumoniae</em> enfeksiyonu olan herhangi bir hastada tek/çift taraflı görme azalması, bulanık görme veya göz ağrısı şikayeti ortaya çıktığında <strong>mutlaka endoftalmi düşünülmelidir.</strong></p></div><div class=\"bg-slate-800 p-4 rounded-xl border border-slate-600\"><strong class=\"text-[12px] text-white block mb-1\">Senaryo B: Gözden Sistemik Enfeksiyona</strong><p class=\"text-[11.5px] text-slate-300 leading-relaxed\">Bunun tam tersi bir senaryoda, endojen <em>K. pneumoniae</em> endoftalmisi tablosuyla başvuran hastalarda, enfeksiyonun ana kaynağını bulmak amacıyla başta <strong>karaciğer apsesi olmak üzere</strong> diğer odakların varlığı şiddetle şüphelenilerek araştırılmalıdır.</p></div></div></div>"
+      "heading": "🔄 4. Çift Yönlü Klinik Refleks ve Tedavi",
+      "html": "<div class=\"bg-emerald-50 border border-emerald-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase mb-2\">Klinik refleks (UpToDate)</h4><ul class=\"text-[11px] text-emerald-900 space-y-1.5 list-disc pl-4\"><li><strong>Sistemik enfeksiyondan göze:</strong> <em>K. pneumoniae</em> enfeksiyonu olan her hastada tek ya da iki gözde görme azalması, bulanık görme ya da göz ağrısı endoftalmiyi düşündürmeli.</li><li><strong>Gözden sistemik enfeksiyona:</strong> endojen <em>K. pneumoniae</em> endoftalmisiyle başvuran hastada ayrı bir odak, özellikle karaciğer apsesi aranmalı.</li></ul></div><div class=\"bg-rose-50 border border-rose-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-rose-900 text-[11px] uppercase mb-2\">Tedavi</h4><ul class=\"text-[11px] text-rose-900 space-y-1.5 list-disc pl-4\"><li>UpToDate: <em>K. pneumoniae</em> endoftalmisinde sistemik antibiyotiğe ek olarak <strong>intravitreal antibiyotik ve vitrektomi</strong> uygulanır. Antibiyotik duyarlılık sonucuna göre seçilir.</li><li>Karbapenem direnci varsa sistemik ilaç karbapenemaz türüne göre seçilir (<a href=\"/topics/enfeksiyon/crkp-enfeksiyonu\" class=\"text-indigo-700 underline\">CRKP</a>). Okunan kaynaklar karbapenem dirençli hipervirülan suşta göz içi ilaç seçimi için ayrı veri vermiyor.</li><li>Karşılaştırma için: Candida endoftalmisinde de sistemik tedaviye intravitreal ilaç ve yoğun vitritte erken vitrektomi eklenir (UpToDate, Durand); erken vitrektominin yararı küçük serilerde gösterildi. Bu bir benzetmedir, bakteri endoftalmisine ait veri değildir.</li></ul></div>"
+    },
+    {
+      "heading": "Çalışma Tablosu: Kanıtın Ağırlığı",
+      "html": "<div class=\"overflow-x-auto mb-4\" role=\"region\" aria-label=\"Klebsiella endoftalmisi verileri\" tabindex=\"0\"><table class=\"w-full min-w-[640px] text-[11px] border-collapse\"><thead><tr class=\"bg-slate-100\"><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Çalışma</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Tasarım</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Bulgu</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Klinikteki karşılığı</th></tr></thead><tbody class=\"text-slate-700\"><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Tayvan karaciğer apsesi serileri</td><td class=\"border border-slate-200 p-2 align-top\">3 seri, 524 hasta</td><td class=\"border border-slate-200 p-2 align-top\">Endoftalmi %6</td><td class=\"border border-slate-200 p-2 align-top\">Her karaciğer apsesi hastasına göz yakınması sorulur</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Endojen K. pneumoniae endoftalmisi derlemesi</td><td class=\"border border-slate-200 p-2 align-top\">Geriye dönük, 61 hasta</td><td class=\"border border-slate-200 p-2 align-top\">Başvuruda kötü görme %87; 3. ayda kötü görme %76, ışık algısı yok %58; hipopiyon %72</td><td class=\"border border-slate-200 p-2 align-top\">Erken tanı tek umut</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Böbrek apsesi serisi</td><td class=\"border border-slate-200 p-2 align-top\">24 hasta</td><td class=\"border border-slate-200 p-2 align-top\">Metastaz %13; endoftalmi olarak bildirildi</td><td class=\"border border-slate-200 p-2 align-top\">Karaciğer dışı kaynak da mümkün</td></tr></tbody></table></div>"
+    },
+    {
+      "heading": "Okurken Dikkat: Rakamların Arkası",
+      "html": "<div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">Sayıyı alırken</h4><ul class=\"text-[11px] text-amber-800 space-y-2 list-disc list-inside ml-1\"><li><strong>Veriler hipervirülan (çoğu duyarlı) K. pneumoniae'den.</strong> Sayfa başlığı CR-hvKP'yi de anıyor; ama karbapenem direncinin endoftalmi sıklığını ya da görme sonucunu değiştirdiğine dair veri yok.</li><li><strong>%58 ışık algısı kaybı</strong> geriye dönük ve seçilmiş bir seriden; hafif olgular yayımlanmamış olabilir.</li><li><strong>Önceki sürümle karşılaştırma:</strong> rakamların hepsi UpToDate'te birebir bulundu; bu sürüme yalnız tedavi ilkesi (intravitreal antibiyotik ve vitrektomi) ve kaynaklar eklendi.</li></ul></div>"
+    },
+    {
+      "heading": "Kaynaklar Arası Fark",
+      "html": "<div class=\"overflow-x-auto mb-4\" role=\"region\" aria-label=\"Kaynaklar arası fark\" tabindex=\"0\"><table class=\"w-full min-w-[640px] text-[11px] border-collapse\"><thead><tr class=\"bg-slate-100\"><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Konu</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Bir kaynak</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Öbür kaynak</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Pratik karşılığı</th></tr></thead><tbody class=\"text-slate-700\"><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Endoftalmi sıklığı</td><td class=\"border border-slate-200 p-2 align-top\">UpToDate: karaciğer apsesi hastalarının %6'sı</td><td class=\"border border-slate-200 p-2 align-top\">Mandell: menenjit ve endoftalmi gibi metastazlar birlikte %10–16</td><td class=\"border border-slate-200 p-2 align-top\">Her karaciğer apsesinde göz sorgusu</td></tr></tbody></table></div>"
     }
   ]
 }

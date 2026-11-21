@@ -1,8 +1,9 @@
 {
   "title": "Kritik Yoğun Bakım Hastasında Linezolidin Klinik Avantajları",
   "meta": {
+    "nisan": "amiral",
     "kaynakca": "linezolid",
-    "updatedAt": "28 Eyl 2026",
+    "updatedAt": "21 Kas 2026",
     "tags": [
       "Enfeksiyon",
       "Antibiyotikler",
@@ -14,40 +15,93 @@
       "Sürekli İnfüzyon"
     ],
     "parent": "linezolid-derleme",
-    "order": 2
+    "order": 2,
+    "kaynaklar": [
+      {
+        "ad": "Drew RH, Peel TN. Linezolid and tedizolid (oxazolidinones): An overview. UpToDate (son güncelleme 2 Haz 2025)",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/linezolid-and-tedizolid-oxazolidinones-an-overview",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Cox HL, Donowitz GR. Linezolid, Tedizolid, and Other Oxazolidinones. In: Mandell, Douglas, and Bennett's Principles and Practice of Infectious Diseases. 10. baskı. Elsevier; Bölüm 32, s. 428-434",
+        "yil": 2025,
+        "tur": "kitap"
+      },
+      {
+        "ad": "Heidari S, Khalili H. Linezolid pharmacokinetics: a systematic review for the best clinical practice. Eur J Clin Pharmacol 2023;79(2):195-206",
+        "yil": 2023,
+        "url": "https://doi.org/10.1007/s00228-022-03446-4",
+        "tur": "makale"
+      },
+      {
+        "ad": "Wunderink RG, Niederman MS, Kollef MH, ve ark. Linezolid in Methicillin-Resistant Staphylococcus aureus Nosocomial Pneumonia: A Randomized, Controlled Study. Clin Infect Dis 2012;54(5):621-629",
+        "yil": 2012,
+        "url": "https://doi.org/10.1093/cid/cir895",
+        "tur": "makale"
+      },
+      {
+        "ad": "Drew RH, Sakoulas G. Vancomycin: Parenteral dosing, monitoring, and adverse effects in adults. UpToDate (son güncelleme 14 Kas 2025)",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/vancomycin-parenteral-dosing-monitoring-and-adverse-effects-in-adults",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Lowy FD. Methicillin-resistant Staphylococcus aureus (MRSA) in adults: Treatment of bacteremia. UpToDate (son güncelleme 15 Eki 2025)",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/methicillin-resistant-staphylococcus-aureus-mrsa-in-adults-treatment-of-bacteremia",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Lino GM, Galvão PVM, Magalhães JJF, Conrado GAM. Adjunctive linezolid in patients with tuberculous meningitis for the prevention of mortality or neurologic disability: a meta-analysis of randomized controlled trials. BMC Infect Dis 2026;26(1):1320",
+        "yil": 2026,
+        "url": "https://doi.org/10.1186/s12879-026-13604-z",
+        "tur": "makale"
+      },
+      {
+        "ad": "Fei ZT, Huang W, Zhou DP, ve ark. Clinical efficacy of linezolid in the treatment of tuberculous meningitis: a retrospective analysis and literature review. BMC Infect Dis 2025;25(1):467",
+        "yil": 2025,
+        "url": "https://doi.org/10.1186/s12879-025-10874-x",
+        "tur": "makale"
+      }
+    ]
   },
   "sections": [
     {
       "heading": "Genel Bakış",
-      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Kritik yoğun bakım hastalarında linezolid kullanımı, ilacın kendine özgü farmakokinetik (PK), farmakodinamik (PK/PD) ve antimikrobiyal özellikleri sayesinde önemli klinik avantajlar sunmaktadır:</p>"
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Yoğun bakımda linezolidin yeri, farmakokinetik özelliklerinden (doku geçişi, ağızdan tam emilim, böbrekten bağımsız ana ilaç klirensi) ve toksin baskılayıcı etkisinden gelir. Ama bu üstünlüklerin çoğu klinik sonuca çevrilmemiştir: MRSA pnömonisi ve bakteriyemisinde vankomisinle karşılaştırmalar eşdeğer sonuç verir. Bu sayfa avantajları kaynağın söylediği güçte verir.</p>"
     },
     {
-      "heading": "1. Yüksek Doku Penetrasyonu ve Geniş Dağılım Hacmi",
-      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Düşük Plazma Protein Bağlanması ve Doku Geçişi:</strong> Linezolidin plazma proteinlerine bağlanma oranı düşük seviyededir (~%31) ve dağılım hacmi (V<sub>d</sub>) toplam vücut sıvısına yakındır (30–50 L). Sepsis veya periferik damar hastalığı varlığından olumsuz etkilenmeyen bu dağılım profili, ilacın perfüze dokulara hızla ve yüksek oranlarda geçmesini sağlar.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Akciğer Dokusu ve ELF Penetrasyonu:</strong> Akciğer epitel içi sıvısı (epithelial lining fluid - ELF) ve alveoler makrofajlarda plazma düzeylerinin üstünde konsantrasyonlara ulaşır. Bu durum, ventilatörle ilişkili pnömoni (VAP) ve hastane kaynaklı pnömonilerde (HAP) belirgin bir doku düzeyi avantajı yaratır.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Santral Sinir Sistemi (SSS) ve BOS Penetrasyonu:</strong> Kan-beyin engelini yüksek oranda aşarak beyin omurilik sıvısına (BOS) etkili biçimde geçer. Özellikle tüberküloz menenjiti (TBM) ve dirençli Gram-pozitif SSS enfeksiyonlarında BOS protein düzeylerini anlamlı seviyede düşürdüğü, nörolojik sekelleri kısıtladığı ve ağır kritik hastalarda sağkalım avantajı sağladığı gösterilmiştir.</li></ul></div>"
+      "heading": "🫁 1. Doku Geçişi",
+      "html": "<div class=\"bg-sky-50 border border-sky-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-sky-900 text-[11px] uppercase mb-2\">Farmakokinetik temel</h4><ul class=\"text-[11px] text-sky-900 space-y-1.5 list-disc pl-4\"><li>Proteine bağlanma %31; dağılım hacmi 30–50 L (toplam vücut suyu kadar). Sepsis, periferik damar hastalığı ve obezite doku dağılımını bozmaz (UpToDate). Yumuşak dokuda ve interstisyumda farmakokinetik sepsisin ağırlığına bağlı değil (Heidari 2023).</li><li><strong>Akciğer:</strong> epitel sıvısı ve alveol makrofajına geçiş iyidir; ventilatör pnömonisi olan kritik obez hastalarda da epitel sıvısına yeterli geçiş gösterildi (Heidari 2023). Karşılaştırma için vankomisinin akciğer dokusu/serum oranı yaklaşık 0,25'tir (UpToDate, vankomisin).</li><li><strong>BOS:</strong> beyin cerrahisi sonrası ve menenjitli hastalarda BOS/plazma oranı 0,7–1,49; menenjitte BOS tepe düzeyi 3,12–12,5 µg/mL (Mandell).</li><li><strong>Tüberküloz menenjiti:</strong> ölüme etkisi kanıtlanmadı. Üç RKÇ'lik meta-analizde ölüm RR 0,55 (%95 güvenilir aralık 0,23–1,31), kanıt düşük kesinlikte (Lino 2026); geriye dönük çalışmada BOS proteini daha çok düştü (Fei 2025).</li></ul></div>"
     },
     {
-      "heading": "2. Dirençli Gram-Pozitif Patojenlere Karşı Güçlü Etkinlik",
-      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Metisiline dirençli Staphylococcus aureus (MRSA), vankomisine dirençli enterokoklar (VRE - E. faecium, E. faecalis), vankomisine orta duyarlı veya dirençli suşlar (VISA/VRSA) ve penisiline dirençli Streptococcus pneumoniae gibi yoğun bakımda sık rastlanan dirençli patojenlere karşı yüksek klinik etkinlik sergiler.</li></ul></div>"
+      "heading": "🦠 2. Spektrum ve Toksin Baskılama",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">MRSA, VISA, VRSA, VRE (<em>E. faecium</em>, <em>E. faecalis</em>), penisiline dirençli <em>S. pneumoniae</em> ve koagülaz negatif stafilokoklara etkilidir; gram negatiflere etkisizdir. Spektrumun ayrıntısı <a href=\"/topics/enfeksiyon/linezolid-derleme\" class=\"text-indigo-700 underline\">linezolid derlemesinde</a>.</p><p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Panton-Valentine lökosidin, alfa-hemolizin ve toksik şok sendromu toksini-1 yapımını baskılar; UpToDate bu sınıfın toksin üreten suşlara karşı daha etkili olabileceğini söyler. Mandell, A grubu streptokok kaynaklı nekrotizan yumuşak doku enfeksiyonu ve toksik şokta klindamisine direnç varsa linezolidin ek ilaç olarak önerildiğini, ama klinik deneyimin sınırlı olduğunu yazar.</p>"
     },
     {
-      "heading": "3. Antitoksin Etki ve Ekzotoksin Üretiminin Baskılanması",
-      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Bakteriyel protein sentezini ribozomun 50S alt biriminde en erken aşamada inhibe ettiği için stafilokok ve streptokokların virülan suşlarında Panton-Valentine lökosidin (PVL), alfa-hemolizin ve toksik şok sendromu toksini-1 (TSST-1) gibi doku hasarına ve şoka yol açan bakteriyel ekzotoksinlerin sentezini baskılar. Bu özellik, toksik şok sendromu ve nekrotizan yumuşak doku enfeksiyonlarında kritik öneme sahiptir.</li></ul></div>"
+      "heading": "🫘 3. Böbrek ve Vankomisinle Karşılaştırma",
+      "html": "<div class=\"bg-emerald-50 border border-emerald-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-emerald-900 text-[11px] uppercase mb-2\">Böbrek</h4><ul class=\"text-[11px] text-emerald-900 space-y-1.5 list-disc pl-4\"><li>Etikette böbrek yetmezliğinde doz ayarı yok; linezolid böbreğe toksik değildir. Ama metabolitler birikir ve UpToDate'e göre linezolid de birikir; böbrek yetmezliğinde trombositopeni riski artar. \"Böbrek dostu\" demek kan toksisitesi riskini unutturmamalı.</li><li>MRSA hastane pnömonisinde dokuz RKÇ'lik meta-analizde etkinlik ve ölüm farkı yoktu; tek fark vankomisinde daha fazla böbrek toksisitesiydi (Mandell). ZEPHyR'de linezolidle klinik başarı daha yüksekti, 60 gün ölüm farkı yoktu (Wunderink 2012).</li><li>Vankomisinde böbrek hasarı dozlama yöntemine ve eş ilaçlara bağlı: 252 hastada çukur düzeye göre dozlamada %8, EAA'ya göre dozlamada %0–2; aminoglikozitle birlikte %20–30'a kadar; piperasilin-tazobaktamla birlikte bazı çalışmalarda OR 3,5'e kadar (UpToDate, vankomisin).</li><li>MRSA bakteriyemisinde 95 hastalık RKÇ'de klinik kür linezolidle %56, vankomisinle %50 (UpToDate, MRSA bakteriyemisi).</li></ul></div>"
     },
     {
-      "heading": "4. Renal Yetmezlikte Doz Ayarı Gerektirmemesi ve Düşük Nefrotoksisite",
-      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• <strong>Renal Klerensten Bağımsızlık:</strong> Ana ilacın klerensi böbrek yetmezliğinden doğrudan etkilenmediği için böbrek fonksiyon bozukluğu olan hastalarda rutin organa bağımlı doz ayarlaması önerilmez.</li><li class=\"bg-slate-50 p-2 rounded\">• <strong>Vankomisine Kıyasla Böbrek Güvenliliği:</strong> Yaklaşık %15 oranında akut böbrek hasarı riski taşıyan ve dar terapötik aralığı nedeniyle sık serum düzeyi takibi gerektiren vankomisin ile karşılaştırıldığında nefrotoksisite riski belirgin şekilde düşüktür.</li></ul></div>"
+      "heading": "💊 4. Ağızdan Geçiş",
+      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Biyoyararlanım yaklaşık %100; IV ile ağızdan doz birbirinin yerine geçer. Hasta stabilleşince ağızdan ya da enteral yola geçilebilir; komplikasyonsuz stafilokok bakteriyemisinde IV'den ağızdan linezolide geçiş IV tedavi kadar etkili görünüyor, ama hangi hastanın yararlanacağı belirlenmedi (Mandell). Kritik hastada bağırsak emiliminin güvenilir olup olmadığı ayrıca değerlendirilir.</p>"
     },
     {
-      "heading": "5. %100 Oral Biyoyararlanım ve Birebir (1:1) IV/Oral Geçiş Esnekliği",
-      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Mutlak oral biyoyararlanımı yaklaşık %100'dür. Yoğun bakım hastalarında klinik durum stabilize olduğunda intravenöz (IV) formdan oral veya enteral (nasogastrik/orogastrik tüp) forma 1:1 doz değişimi yapılabilir. Bu durum hem kateter ilişkili enfeksiyon riskini kısıtlar hem de taburculuk veya ardışık tedavi (step-down) sürecini kolaylaştırır.</li></ul></div>"
+      "heading": "⏱️ 5. Sürekli İnfüzyon ve Kritik Hasta Farmakokinetiği",
+      "html": "<div class=\"bg-violet-50 border border-violet-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-violet-900 text-[11px] uppercase mb-2\">Heidari 2023 ve UpToDate</h4><ul class=\"text-[11px] text-violet-900 space-y-1.5 list-disc pl-4\"><li>Kritik hastada, kistik fibrozda ve büyük yanıkta standart dozla <strong>yetersiz maruziyet</strong> riski var; artmış böbrek klirensi döneminde klirens artar.</li><li>Aralıklı infüzyon grubunda C<sub>min</sub> değerleri çok değişkendi ve duyarlılık sınırının altına düşebiliyordu; sürekli infüzyonda kararlı düzeyler daha tutarlı ve daha yüksekti, serbest ilacın MİK üstünde kaldığı süre daha uzundu ve EAA/MİK 80–120 hedefine daha sık ulaşıldı.</li><li>Heidari 2023'ün önerisi: kritik hastada sürekli IV infüzyon ve düzey izlemiyle doz artışı; özellikle MİK &gt;1 mg/L etken kuşkusunda.</li><li>ECMO'da: 8 saatte bir 600 mg ile de hedefe ulaşılamayan olgu bildirildi; 12 saatte bir 600 mg alan üç hastada EAA/MİK, MİK 1, 2 ve 4 için 106, 83 ve 50'ydi.</li><li>Bu öneriler farmakokinetik çalışmalara dayanır; sürekli infüzyonun klinik sonucu iyileştirdiğini gösteren RKÇ yok. Ayrıntı <a href=\"/topics/enfeksiyon/linezolid-vankomisin-tdm-rehberi\" class=\"text-indigo-700 underline\">ilaç düzeyi izlemi rehberinde</a>.</li></ul></div>"
     },
     {
-      "heading": "6. Solunum Yolu Cihazlarında Biyofilm Yükünü Azaltma",
-      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Endotrakeal tüpler üzerinde MRSA tarafından oluşturulan biyofilm birikimini ve bakteri yükünü kısıtlama potansiyeline sahiptir.</li></ul></div>"
+      "heading": "Çalışma Tablosu: Kanıtın Ağırlığı",
+      "html": "<div class=\"overflow-x-auto mb-4\" role=\"region\" aria-label=\"Kritik hastada linezolid kanıtı\" tabindex=\"0\"><table class=\"w-full min-w-[640px] text-[11px] border-collapse\"><thead><tr class=\"bg-slate-100\"><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Çalışma</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Tasarım · kişi</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Bulgu</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Klinikteki karşılığı</th></tr></thead><tbody class=\"text-slate-700\"><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">ZEPHyR (Wunderink 2012)</td><td class=\"border border-slate-200 p-2 align-top\">Çift kör RKÇ · MRSA hastane pnömonisi</td><td class=\"border border-slate-200 p-2 align-top\">Klinik başarı linezolidle yüksek; 60 gün ölüm farkı yok</td><td class=\"border border-slate-200 p-2 align-top\">Vankomisin dozu yetersizdi, tartışmalı</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Linezolid–vankomisin meta-analizi</td><td class=\"border border-slate-200 p-2 align-top\">9 RKÇ</td><td class=\"border border-slate-200 p-2 align-top\">Etkinlik ve ölüm farkı yok; vankomisinde daha çok böbrek toksisitesi</td><td class=\"border border-slate-200 p-2 align-top\">Böbrek riski seçimi belirler</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">MRSA bakteriyemisi RKÇ'si</td><td class=\"border border-slate-200 p-2 align-top\">95 erişkin</td><td class=\"border border-slate-200 p-2 align-top\">Klinik kür %56'ya karşı %50</td><td class=\"border border-slate-200 p-2 align-top\">Eşdeğer; küçük</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Sürekli ile aralıklı infüzyon karşılaştırmaları</td><td class=\"border border-slate-200 p-2 align-top\">Farmakokinetik çalışmalar</td><td class=\"border border-slate-200 p-2 align-top\">Sürekli infüzyonda düzey daha tutarlı, hedefe ulaşma daha sık</td><td class=\"border border-slate-200 p-2 align-top\">Klinik sonuç verisi yok</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Lino 2026</td><td class=\"border border-slate-200 p-2 align-top\">3 RKÇ · 104 tüberküloz menenjiti</td><td class=\"border border-slate-200 p-2 align-top\">Ölüm RR 0,55 (0,23–1,31)</td><td class=\"border border-slate-200 p-2 align-top\">BOS geçişi iyi, yarar kanıtlanmadı</td></tr></tbody></table></div>"
     },
     {
-      "heading": "7. Yoğun Bakımda Sürekli İnfüzyon (Continuous Infusion) Uygulama Olanağı",
-      "html": "<div class=\"border border-slate-200 p-4 rounded-xl bg-white shadow-sm mb-4\"><ul class=\"text-[11px] text-slate-600 space-y-2 list-none font-medium\"><li class=\"bg-slate-50 p-2 rounded\">• Yoğun bakım hastalarında gelişen artmış renal klerens (ARC) veya artmış dağılım hacmi durumlarında, ilacın sürekli IV infüzyon yöntemiyle verilmesi mümkündür. Sürekli infüzyon uygulaması, plazma düzeylerini daha stabil tutarak zaman ve konsantrasyon bağımlı PK/PD hedeflerine (AUC<sub>24</sub>/MIC ve T &gt; MIC) ulaşma oranını belirgin şekilde artırır.</li></ul></div>"
+      "heading": "Okurken Dikkat: Rakamların Arkası",
+      "html": "<div class=\"bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-amber-900 text-[11px] uppercase mb-2\">Sayıyı alırken</h4><ul class=\"text-[11px] text-amber-800 space-y-2 list-disc list-inside ml-1\"><li><strong>Önceki sürümden düzeltilenler:</strong> tüberküloz menenjitinde linezolidin \"nörolojik sekeli kısıtladığı ve sağkalım avantajı sağladığı gösterildi\" deniyordu; meta-analizde etki kanıtlanmış değil. Vankomisin için \"yaklaşık %15 akut böbrek hasarı\" kaynakta yok; UpToDate oranı dozlama yöntemine ve eş ilaçlara göre veriyor.</li><li><strong>Kaynağı bulunamayıp çıkarılanlar:</strong> endotrakeal tüpte MRSA biyofilmini azaltma, ağızdan tedavinin \"kateter enfeksiyonu riskini kısıtladığı\" ve sürekli infüzyonun hedefe ulaşmayı \"belirgin artırdığı\" yönündeki kesin ifade (kaynak farmakokinetik üstünlük bildiriyor, klinik değil).</li><li><strong>Doku geçişi ile klinik üstünlük aynı şey değil.</strong> Akciğer epitel sıvısında yüksek düzeye karşın pnömoni RKÇ'lerinde ölüm farkı çıkmadı.</li></ul></div>"
+    },
+    {
+      "heading": "Kaynaklar Arası Fark",
+      "html": "<div class=\"overflow-x-auto mb-4\" role=\"region\" aria-label=\"Kaynaklar arası fark\" tabindex=\"0\"><table class=\"w-full min-w-[640px] text-[11px] border-collapse\"><thead><tr class=\"bg-slate-100\"><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Konu</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Bir kaynak</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Öbür kaynak</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Pratik karşılığı</th></tr></thead><tbody class=\"text-slate-700\"><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">MRSA pnömonisinde linezolid mi vankomisin mi</td><td class=\"border border-slate-200 p-2 align-top\">ZEPHyR: linezolidle klinik başarı yüksek</td><td class=\"border border-slate-200 p-2 align-top\">Dokuz RKÇ'lik meta-analiz: fark yok, vankomisinde böbrek toksisitesi fazla · Elsevier MRSA özeti: ikisi de önerilir, bazı otoriteler linezolidi yeğler</td><td class=\"border border-slate-200 p-2 align-top\">Böbrek riski yüksekse linezolid öne çıkar</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Kritik hastada uygulama</td><td class=\"border border-slate-200 p-2 align-top\">Etiket ve UpToDate: doz ayarı yok</td><td class=\"border border-slate-200 p-2 align-top\">Heidari 2023: sürekli IV infüzyon önerilir</td><td class=\"border border-slate-200 p-2 align-top\">Düzey izlenebiliyorsa sürekli infüzyon makul</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Böbrek yetmezliğinde ana ilaç</td><td class=\"border border-slate-200 p-2 align-top\">Monograf: ana ilaç değişmez, metabolitler birikir</td><td class=\"border border-slate-200 p-2 align-top\">UpToDate: linezolid ve metabolitleri birikir</td><td class=\"border border-slate-200 p-2 align-top\">Doz ayarı yok ama kan sayımı yakın izlenir</td></tr></tbody></table></div>"
     }
   ]
 }
