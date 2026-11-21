@@ -2377,19 +2377,9 @@
  ],
  "enfeksiyon/antibiyotikler-ana-sayfa": [
   {
-   "brans": "enfeksiyon",
-   "slug": "glikopeptit-antibiyotikler",
-   "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler"
-  },
-  {
    "brans": "gastroenteroloji",
    "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
    "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "dalbavansin-derleme",
-   "baslik": "Dalbavansin"
   },
   {
    "brans": "enfeksiyon",
@@ -2403,8 +2393,18 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "vankomisin-master-rehber",
-   "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç"
+   "slug": "fosfomisin-daptomisin-biyofilm",
+   "baslik": "Biyofilm İçi Sinerji ve Protez Eklem Enfeksiyonları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "linezolid-kritik-hasta-avantajlari",
+   "baslik": "Kritik Yoğun Bakım Hastasında Linezolidin Klinik Avantajları"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "dalbavansin-derleme",
+   "baslik": "Dalbavansin"
   }
  ],
  "enfeksiyon/bruselloz": [
@@ -2933,6 +2933,11 @@
   },
   {
    "brans": "enfeksiyon",
+   "slug": "antibiyotikler-ana-sayfa",
+   "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "fosfomisin-beta-laktam-sinerji",
    "baslik": "Fosfomisin ve Beta-Laktam Sinerjisi"
   }
@@ -2950,13 +2955,13 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "fosfomisin-beta-laktam-sinerji",
-   "baslik": "Fosfomisin ve Beta-Laktam Sinerjisi"
+   "slug": "antibiyotikler-ana-sayfa",
+   "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "antibiyotikler-ana-sayfa",
-   "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
+   "slug": "fosfomisin-beta-laktam-sinerji",
+   "baslik": "Fosfomisin ve Beta-Laktam Sinerjisi"
   },
   {
    "brans": "enfeksiyon",
@@ -3023,11 +3028,6 @@
   },
   {
    "brans": "enfeksiyon",
-   "slug": "antibiyotikler-ana-sayfa",
-   "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
-  },
-  {
-   "brans": "enfeksiyon",
    "slug": "dalbavansin-VISA-VRSA",
    "baslik": "VISA ve VRSA: İleri Düzey Direnç Mekanizmaları"
   },
@@ -3045,6 +3045,11 @@
    "brans": "enfeksiyon",
    "slug": "dalbavansin-mrsa-bakteriyemisi",
    "baslik": "Dalbavansin: S. aureus Bakteriyemisinde Tedaviyi Tamamlama"
+  },
+  {
+   "brans": "enfeksiyon",
+   "slug": "linezolid-vankomisin-tdm-rehberi",
+   "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi"
   }
  ],
  "enfeksiyon/hucre-duvari-sentez-inhibitorleri": [
@@ -3185,6 +3190,11 @@
   },
   {
    "brans": "enfeksiyon",
+   "slug": "antibiyotikler-ana-sayfa",
+   "baslik": "Antimikrobiyal Tedavi ve Direnç Mekanizmaları"
+  },
+  {
+   "brans": "enfeksiyon",
    "slug": "dalbavansin-VISA-VRSA",
    "baslik": "VISA ve VRSA: İleri Düzey Direnç Mekanizmaları"
   },
@@ -3197,23 +3207,18 @@
    "brans": "enfeksiyon",
    "slug": "hucre-duvari-sentez-inhibitorleri",
    "baslik": "Hücre Duvarı Sentez İnhibitörleri"
-  },
-  {
-   "brans": "enfeksiyon",
-   "slug": "vankomisin-master-rehber",
-   "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç"
   }
  ],
  "enfeksiyon/linezolid-vankomisin-tdm-rehberi": [
   {
    "brans": "enfeksiyon",
-   "slug": "linezolid-ciddi-komplikasyonlar",
-   "baslik": "Linezolid Tedavisinde Ciddi Komplikasyonlar ve Klinik Yönetim Stratejileri"
+   "slug": "vankomisin-auc-dozlama",
+   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama"
   },
   {
    "brans": "enfeksiyon",
-   "slug": "vankomisin-auc-dozlama",
-   "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama"
+   "slug": "linezolid-ciddi-komplikasyonlar",
+   "baslik": "Linezolid Tedavisinde Ciddi Komplikasyonlar ve Klinik Yönetim Stratejileri"
   },
   {
    "brans": "enfeksiyon",
