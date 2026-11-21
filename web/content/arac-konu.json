@@ -374,9 +374,19 @@
     ],
     "enfeksiyon/ekinokandinler": [
       {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
+      },
+      {
         "slug": "child-pugh",
         "name": "Child-Pugh Sınıflaması",
         "eslesen": "Child-Pugh"
+      },
+      {
+        "slug": "sofa",
+        "name": "SOFA Skoru",
+        "eslesen": "SOFA"
       }
     ],
     "enfeksiyon/fosfomisin-klinik-rehber": [
@@ -5331,6 +5341,11 @@
         "yol": "gogus/pnomoni-hastane-kaynakli",
         "baslik": "Hastane Kaynaklı Pnömoni",
         "eslesen": "SOFA"
+      },
+      {
+        "yol": "enfeksiyon/ekinokandinler",
+        "baslik": "Ekinokandinler: Farmakoloji, Doz, Direnç ve Yeni Glukan Sentaz İnhibitörleri",
+        "eslesen": "SOFA"
       }
     ],
     "diyabetik-ayak": [
@@ -9053,7 +9068,7 @@
     "arac": 281,
     "araciOlanKonu": 348,
     "konusuOlanArac": 179,
-    "bag": 725,
+    "bag": 727,
     "kavramBag": 629
   }
 }
