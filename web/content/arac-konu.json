@@ -1678,6 +1678,25 @@
         "kaynak": "kavram"
       }
     ],
+    "nefroloji/metabolik-alkaloz": [
+      {
+        "slug": "anion-gap",
+        "name": "Anyon Açığı",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "slug": "spot-urine",
+        "name": "Spot İdrar Hesaplamaları",
+        "eslesen": "metabolik alkaloz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "abg",
+        "name": "Asit-Baz Analizi (ABG)",
+        "eslesen": "alkaloz",
+        "kaynak": "kavram"
+      }
+    ],
     "nefroloji/metabolik-asidoz": [
       {
         "slug": "anion-gap",
@@ -4576,20 +4595,6 @@
         "kaynak": "kavram"
       }
     ],
-    "nefroloji/metabolik-alkaloz": [
-      {
-        "slug": "spot-urine",
-        "name": "Spot İdrar Hesaplamaları",
-        "eslesen": "metabolik alkaloz",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "abg",
-        "name": "Asit-Baz Analizi (ABG)",
-        "eslesen": "alkaloz",
-        "kaynak": "kavram"
-      }
-    ],
     "nefroloji/mineralokortikoid-fazlaligi-ayirici-tani": [
       {
         "slug": "aldosteron-renin",
@@ -5542,6 +5547,11 @@
         "eslesen": "Anyon Açığı"
       },
       {
+        "yol": "nefroloji/metabolik-alkaloz",
+        "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim",
+        "eslesen": "Anyon Açığı"
+      },
+      {
         "yol": "nefroloji/metabolik-asidoz",
         "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri",
         "eslesen": "Anyon Açığı"
@@ -5550,12 +5560,6 @@
         "yol": "nefroloji/respiratuvar-alkaloz",
         "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim",
         "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "nefroloji/asit-baz-fizyopatoloji",
-        "baslik": "Asit-Baz Homeostazının Fizyopatolojik Temelleri",
-        "eslesen": "asit-baz",
-        "kaynak": "kavram"
       }
     ],
     "surucu-basinc": [
@@ -9139,7 +9143,7 @@
     "arac": 281,
     "araciOlanKonu": 350,
     "konusuOlanArac": 180,
-    "bag": 738,
+    "bag": 739,
     "kavramBag": 627
   }
 }
