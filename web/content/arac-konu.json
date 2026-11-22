@@ -40,13 +40,6 @@
         "kaynak": "kavram"
       }
     ],
-    "endokrinoloji/gebelik-ve-tiroid-yonetimi": [
-      {
-        "slug": "tft",
-        "name": "Tiroid Fonksiyon Testi (TFT)",
-        "eslesen": "Tiroid Fonksiyon"
-      }
-    ],
     "endokrinoloji/gebelikte-hipertiroidi-kilavuz-karsilastirmasi": [
       {
         "slug": "tft",
@@ -2366,6 +2359,14 @@
         "slug": "tft",
         "name": "Tiroid Fonksiyon Testi (TFT)",
         "eslesen": "tirotoksikoz",
+        "kaynak": "kavram"
+      }
+    ],
+    "endokrinoloji/gebelik-ve-tiroid-yonetimi": [
+      {
+        "slug": "tft",
+        "name": "Tiroid Fonksiyon Testi (TFT)",
+        "eslesen": "tiroid hastalık",
         "kaynak": "kavram"
       }
     ],
@@ -5021,8 +5022,8 @@
     ],
     "tft": [
       {
-        "yol": "endokrinoloji/gebelik-ve-tiroid-yonetimi",
-        "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi",
+        "yol": "endokrinoloji/gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+        "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları",
         "eslesen": "Tiroid Fonksiyon"
       },
       {
@@ -5031,8 +5032,8 @@
         "eslesen": "Tiroid Fonksiyon"
       },
       {
-        "yol": "endokrinoloji/gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
-        "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları",
+        "yol": "endokrinoloji/yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
+        "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi",
         "eslesen": "Tiroid Fonksiyon"
       },
       {
@@ -5041,9 +5042,10 @@
         "eslesen": "Tiroid Fonksiyon"
       },
       {
-        "yol": "endokrinoloji/yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
-        "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi",
-        "eslesen": "Tiroid Fonksiyon"
+        "yol": "endokrinoloji/gebelik-ve-tiroid-yonetimi",
+        "baslik": "Gebelikte Tiroid Hastalıkları Klinik Yönetimi",
+        "eslesen": "tiroid hastalık",
+        "kaynak": "kavram"
       },
       {
         "yol": "endokrinoloji/izole-maternal-hipotiroksinemi-yonetimi",
@@ -9150,6 +9152,6 @@
     "araciOlanKonu": 351,
     "konusuOlanArac": 180,
     "bag": 739,
-    "kavramBag": 629
+    "kavramBag": 630
   }
 }
