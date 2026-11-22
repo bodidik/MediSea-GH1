@@ -102,6 +102,13 @@
         "kaynak": "kavram"
       }
     ],
+    "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma": [
+      {
+        "slug": "makroprolaktin",
+        "name": "Makroprolaktin (PEG Geri Kazanımı)",
+        "eslesen": "Makroprolaktin"
+      }
+    ],
     "endokrinoloji/hipofiz-hastaliklari-ana": [
       {
         "slug": "dst",
@@ -2450,14 +2457,6 @@
         "slug": "kdigo-kbh",
         "name": "KDIGO KBH Sınıflaması",
         "eslesen": "KBH",
-        "kaynak": "kavram"
-      }
-    ],
-    "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma": [
-      {
-        "slug": "makroprolaktin",
-        "name": "Makroprolaktin (PEG Geri Kazanımı)",
-        "eslesen": "hiperprolaktinemi",
         "kaynak": "kavram"
       }
     ],
@@ -5127,6 +5126,36 @@
         "eslesen": "eGFR"
       }
     ],
+    "makroprolaktin": [
+      {
+        "yol": "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma",
+        "baslik": "Hiperprolaktinemi ve Prolaktinoma",
+        "eslesen": "Makroprolaktin"
+      },
+      {
+        "yol": "endokrinoloji/prolaktinoma-yeni-biyobelirtecler",
+        "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler",
+        "eslesen": "Makroprolaktin"
+      },
+      {
+        "yol": "endokrinoloji/hipofiz-adenomlari",
+        "baslik": "Hipofiz Nöroendokrin Tümörleri",
+        "eslesen": "hipofiz nöroendokrin",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/sf3b1-mutasyonu-metastatik-prolaktinoma",
+        "baslik": "SF3B1 Mutasyonu: Agresif ve Metastatik Prolaktinomalar",
+        "eslesen": "prolaktinoma",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/ektopik-prolaktin-salgisi",
+        "baslik": "Ektopik Prolaktin Salgısı",
+        "eslesen": "prolaktin",
+        "kaynak": "kavram"
+      }
+    ],
     "dst": [
       {
         "yol": "endokrinoloji/hipofiz-hastaliklari-ana",
@@ -5258,37 +5287,6 @@
         "yol": "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma",
         "baslik": "Şiddetli Cushing Sendromu (SCS): İleri Yönetim",
         "eslesen": "Potasyum Replasmanı"
-      }
-    ],
-    "makroprolaktin": [
-      {
-        "yol": "endokrinoloji/prolaktinoma-yeni-biyobelirtecler",
-        "baslik": "Prolaktinoma: Yeni Moleküler ve Genetik Biyobelirteçler",
-        "eslesen": "Makroprolaktin"
-      },
-      {
-        "yol": "endokrinoloji/hipofiz-adenomlari",
-        "baslik": "Hipofiz Nöroendokrin Tümörleri",
-        "eslesen": "hipofiz nöroendokrin",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/hiperprolaktinemi-ve-prolaktinoma",
-        "baslik": "Hiperprolaktinemi ve Prolaktinoma",
-        "eslesen": "hiperprolaktinemi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/sf3b1-mutasyonu-metastatik-prolaktinoma",
-        "baslik": "SF3B1 Mutasyonu: Agresif ve Metastatik Prolaktinomalar",
-        "eslesen": "prolaktinoma",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/ektopik-prolaktin-salgisi",
-        "baslik": "Ektopik Prolaktin Salgısı",
-        "eslesen": "prolaktin",
-        "kaynak": "kavram"
       }
     ],
     "anaphylaxis": [
@@ -9144,6 +9142,6 @@
     "araciOlanKonu": 350,
     "konusuOlanArac": 180,
     "bag": 739,
-    "kavramBag": 627
+    "kavramBag": 626
   }
 }
