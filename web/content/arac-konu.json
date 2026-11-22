@@ -180,6 +180,13 @@
         "eslesen": "QTc"
       }
     ],
+    "endokrinoloji/men1-sendromu": [
+      {
+        "slug": "corrected-calcium",
+        "name": "Düzeltilmiş Kalsiyum",
+        "eslesen": "Düzeltilmiş Kalsiyum"
+      }
+    ],
     "endokrinoloji/miksodem-psikozu": [
       {
         "slug": "status-epileptikus",
@@ -5170,6 +5177,11 @@
         "eslesen": "Düzeltilmiş Kalsiyum"
       },
       {
+        "yol": "endokrinoloji/men1-sendromu",
+        "baslik": "Multiple Endokrin Neoplazi Tip 1 (MEN1)",
+        "eslesen": "Düzeltilmiş Kalsiyum"
+      },
+      {
         "yol": "endokrinoloji/hiperparatiroidizm",
         "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları",
         "eslesen": "hiperparatiroid",
@@ -5184,12 +5196,6 @@
       {
         "yol": "endokrinoloji/cinacalcet-calisma-unitesi",
         "baslik": "Cinacalcet (Kalsimimetik): Çalışma Ünitesi",
-        "eslesen": "kalsimimetik",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/etelcalcetide-evocalcet-kalsimimetikler",
-        "baslik": "Etelcalcetide ve Evocalcet (Yeni Nesil Kalsimimetikler)",
         "eslesen": "kalsimimetik",
         "kaynak": "kavram"
       }
@@ -9122,9 +9128,9 @@
   "olcum": {
     "konu": 487,
     "arac": 281,
-    "araciOlanKonu": 350,
+    "araciOlanKonu": 351,
     "konusuOlanArac": 180,
-    "bag": 734,
+    "bag": 735,
     "kavramBag": 629
   }
 }
