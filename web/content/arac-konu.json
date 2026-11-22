@@ -116,13 +116,6 @@
         "eslesen": "Düzeltilmiş Kalsiyum"
       }
     ],
-    "endokrinoloji/men1-2025-kilavuz-degisimleri": [
-      {
-        "slug": "corrected-calcium",
-        "name": "Düzeltilmiş Kalsiyum",
-        "eslesen": "Düzeltilmiş Kalsiyum"
-      }
-    ],
     "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji": [
       {
         "slug": "potasyum-replasman",
@@ -5193,8 +5186,8 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "endokrinoloji/men1-2025-kilavuz-degisimleri",
-        "baslik": "MEN1: 2025 Kılavuz Değişimleri ve Yeni Paradigmalar",
+        "yol": "endokrinoloji/men1-sendromu",
+        "baslik": "Multiple Endokrin Neoplazi Tip 1 (MEN1)",
         "eslesen": "Düzeltilmiş Kalsiyum"
       },
       {
@@ -5202,11 +5195,6 @@
         "baslik": "Onkolojik Aciller",
         "eslesen": "onkolojik acil",
         "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/men1-sendromu",
-        "baslik": "Multiple Endokrin Neoplazi Tip 1 (MEN1)",
-        "eslesen": "Düzeltilmiş Kalsiyum"
       },
       {
         "yol": "endokrinoloji/hiperparatiroidizm",
@@ -5218,6 +5206,12 @@
         "yol": "endokrinoloji/hipokalsemi-ve-hipoparatiroidi",
         "baslik": "Hipokalsemi ve Hipoparatiroidi",
         "eslesen": "hipoparatiroid",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/cinacalcet-calisma-unitesi",
+        "baslik": "Cinacalcet (Kalsimimetik): Çalışma Ünitesi",
+        "eslesen": "kalsimimetik",
         "kaynak": "kavram"
       }
     ],
@@ -9149,9 +9143,9 @@
   "olcum": {
     "konu": 487,
     "arac": 281,
-    "araciOlanKonu": 351,
+    "araciOlanKonu": 350,
     "konusuOlanArac": 180,
-    "bag": 739,
+    "bag": 738,
     "kavramBag": 630
   }
 }
