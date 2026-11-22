@@ -4667,6 +4667,11 @@
    "brans": "hematoloji",
    "slug": "gilteritinib-flt3-aml",
    "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kll",
+   "baslik": "Kronik Lenfositik Lösemi (KLL)"
   }
  ],
  "hematoloji/aml-geriatrik-degerlendirme": [
@@ -4705,6 +4710,11 @@
    "brans": "hematoloji",
    "slug": "hct-ci-geriatrik-degerlendirme",
    "baslik": "HCT-CI ve Kapsamlı Geriatrik Değerlendirme: Allo-HCT'de Hasta Seçimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kll",
+   "baslik": "Kronik Lenfositik Lösemi (KLL)"
   }
  ],
  "hematoloji/anemiler": [

@@ -1068,8 +1068,7 @@
       {
         "slug": "cll-ipi",
         "name": "CLL-IPI",
-        "eslesen": "kronik lenfositik lösemi",
-        "kaynak": "kavram"
+        "eslesen": "CLL-IPI"
       },
       {
         "slug": "kll-evreleme",
@@ -5909,6 +5908,13 @@
         "eslesen": "HEP Skoru — HIT"
       }
     ],
+    "cll-ipi": [
+      {
+        "yol": "hematoloji/kll",
+        "baslik": "Kronik Lenfositik Lösemi (KLL)",
+        "eslesen": "CLL-IPI"
+      }
+    ],
     "eozinofil-sayisi": [
       {
         "yol": "hematoloji/kronik-eozinofilik-losemi-cel",
@@ -8418,14 +8424,6 @@
         "kaynak": "kavram"
       }
     ],
-    "cll-ipi": [
-      {
-        "yol": "hematoloji/kll",
-        "baslik": "Kronik Lenfositik Lösemi (KLL)",
-        "eslesen": "kronik lenfositik lösemi",
-        "kaynak": "kavram"
-      }
-    ],
     "kll-evreleme": [
       {
         "yol": "hematoloji/kll",
@@ -9147,6 +9145,6 @@
     "araciOlanKonu": 350,
     "konusuOlanArac": 180,
     "bag": 740,
-    "kavramBag": 626
+    "kavramBag": 625
   }
 }
