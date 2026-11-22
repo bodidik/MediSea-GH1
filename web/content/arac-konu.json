@@ -1078,6 +1078,19 @@
         "kaynak": "kavram"
       }
     ],
+    "hematoloji/kml": [
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
+      },
+      {
+        "slug": "kml-risk",
+        "name": "KML Risk Skoru (ELTS · Sokal)",
+        "eslesen": "kronik miyeloid",
+        "kaynak": "kavram"
+      }
+    ],
     "hematoloji/kronik-eozinofilik-losemi-cel": [
       {
         "slug": "eozinofil-sayisi",
@@ -3982,14 +3995,6 @@
         "kaynak": "kavram"
       }
     ],
-    "hematoloji/kml": [
-      {
-        "slug": "kml-risk",
-        "name": "KML Risk Skoru (ELTS · Sokal)",
-        "eslesen": "kronik miyeloid",
-        "kaynak": "kavram"
-      }
-    ],
     "hematoloji/kmt2d-t14-18-negatif": [
       {
         "slug": "flipi",
@@ -4977,13 +4982,13 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "gastroenteroloji/gastrointestinal-motilite-hastaliklari",
-        "baslik": "Gastrointestinal Motilite Hastalıkları",
+        "yol": "hematoloji/gilteritinib-flt3-aml",
+        "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi",
         "eslesen": "QTc"
       },
       {
-        "yol": "hematoloji/gilteritinib-flt3-aml",
-        "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi",
+        "yol": "gastroenteroloji/gastrointestinal-motilite-hastaliklari",
+        "baslik": "Gastrointestinal Motilite Hastalıkları",
         "eslesen": "QTc"
       },
       {
@@ -4997,13 +5002,13 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
-        "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
+        "yol": "hematoloji/kml",
+        "baslik": "Kronik Miyeloid Lösemi (KML)",
         "eslesen": "QTc"
       },
       {
-        "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
-        "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
+        "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
+        "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
         "eslesen": "QTc"
       }
     ],
@@ -9141,7 +9146,7 @@
     "arac": 281,
     "araciOlanKonu": 350,
     "konusuOlanArac": 180,
-    "bag": 739,
+    "bag": 740,
     "kavramBag": 626
   }
 }
