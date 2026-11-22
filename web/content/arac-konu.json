@@ -1920,9 +1920,19 @@
     ],
     "onkoloji/tumor-lizis-sendromu-kapsamli": [
       {
+        "slug": "corrected-calcium",
+        "name": "Düzeltilmiş Kalsiyum",
+        "eslesen": "Düzeltilmiş Kalsiyum"
+      },
+      {
         "slug": "tumor-lizis",
         "name": "Tümör Lizis Sendromu",
         "eslesen": "Tümör Lizis Sendromu"
+      },
+      {
+        "slug": "anaphylaxis",
+        "name": "Anafilaksi Kriterleri",
+        "eslesen": "Anafilaksi"
       }
     ],
     "palyatif/palyatif-bakimda-agri-yonetimi": [
@@ -5160,21 +5170,26 @@
         "eslesen": "Düzeltilmiş Kalsiyum"
       },
       {
+        "yol": "onkoloji/tumor-lizis-sendromu-kapsamli",
+        "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)",
+        "eslesen": "Düzeltilmiş Kalsiyum"
+      },
+      {
         "yol": "gogus/sarkoidoz-hiperkalsemi",
         "baslik": "Sarkoidozda Kalsiyum Metabolizması ve Böbrek Tutulumu",
         "eslesen": "kalsiyum",
         "kaynak": "kavram"
       },
       {
+        "yol": "endokrinoloji/men1-2025-kilavuz-degisimleri",
+        "baslik": "MEN1: 2025 Kılavuz Değişimleri ve Yeni Paradigmalar",
+        "eslesen": "Düzeltilmiş Kalsiyum"
+      },
+      {
         "yol": "onkoloji/onkolojik-aciller",
         "baslik": "Onkolojik Aciller",
         "eslesen": "onkolojik acil",
         "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/men1-2025-kilavuz-degisimleri",
-        "baslik": "MEN1: 2025 Kılavuz Değişimleri ve Yeni Paradigmalar",
-        "eslesen": "Düzeltilmiş Kalsiyum"
       },
       {
         "yol": "endokrinoloji/men1-sendromu",
@@ -5191,12 +5206,6 @@
         "yol": "endokrinoloji/hipokalsemi-ve-hipoparatiroidi",
         "baslik": "Hipokalsemi ve Hipoparatiroidi",
         "eslesen": "hipoparatiroid",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/cinacalcet-calisma-unitesi",
-        "baslik": "Cinacalcet (Kalsimimetik): Çalışma Ünitesi",
-        "eslesen": "kalsimimetik",
         "kaynak": "kavram"
       }
     ],
@@ -5281,6 +5290,11 @@
         "eslesen": "Anafilaksi"
       },
       {
+        "yol": "onkoloji/tls-rasburikaz-vs-allopurinol",
+        "baslik": "TLS'de Farmakolojik Karşılaştırma: Rasburikaz vs Allopurinol",
+        "eslesen": "Anafilaksi"
+      },
+      {
         "yol": "endokrinoloji/tirzepatid-genel-profil",
         "baslik": "Tirzepatid: Genel Farmakolojik ve Klinik Profili",
         "eslesen": "Anafilaksi"
@@ -5301,18 +5315,13 @@
         "eslesen": "Anafilaksi"
       },
       {
-        "yol": "onkoloji/tls-rasburikaz-vs-allopurinol",
-        "baslik": "TLS'de Farmakolojik Karşılaştırma: Rasburikaz vs Allopurinol",
-        "eslesen": "Anafilaksi"
-      },
-      {
         "yol": "enfeksiyon/dalbavansin-kontrendikasyon-ve-alternatifler",
         "baslik": "Dalbavansin: Kontrendikasyonlar, Uyarılar ve Alternatifler",
         "eslesen": "Anafilaksi"
       },
       {
-        "yol": "enfeksiyon/ekinokandinler",
-        "baslik": "Ekinokandinler: Farmakoloji, Doz, Direnç ve Yeni Glukan Sentaz İnhibitörleri",
+        "yol": "onkoloji/tumor-lizis-sendromu-kapsamli",
+        "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)",
         "eslesen": "Anafilaksi"
       }
     ],
@@ -9130,7 +9139,7 @@
     "arac": 281,
     "araciOlanKonu": 351,
     "konusuOlanArac": 180,
-    "bag": 735,
+    "bag": 737,
     "kavramBag": 629
   }
 }
