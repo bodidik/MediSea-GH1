@@ -1235,6 +1235,24 @@
         "eslesen": "TIMI"
       }
     ],
+    "kardiyoloji/aprocitentan-direncli-hipertansiyon": [
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "aldosteron-renin",
+        "name": "Aldosteron/Renin Oranı",
+        "eslesen": "dirençli hipertansiyon",
+        "kaynak": "kavram"
+      }
+    ],
     "kardiyoloji/aprocitentan-kbh-ve-yasli": [
       {
         "slug": "child-pugh",
@@ -4191,14 +4209,6 @@
         "kaynak": "kavram"
       }
     ],
-    "kardiyoloji/aprocitentan-direncli-hipertansiyon": [
-      {
-        "slug": "aldosteron-renin",
-        "name": "Aldosteron/Renin Oranı",
-        "eslesen": "dirençli hipertansiyon",
-        "kaynak": "kavram"
-      }
-    ],
     "kardiyoloji/aprocitentan-direncsiz-kbh-kullanimi": [
       {
         "slug": "egfr-sistatin",
@@ -5085,13 +5095,13 @@
         "eslesen": "eGFR"
       },
       {
-        "yol": "endokrinoloji/hiperparatiroidizm",
-        "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları",
+        "yol": "kardiyoloji/aprocitentan-direncli-hipertansiyon",
+        "baslik": "Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA",
         "eslesen": "eGFR"
       },
       {
-        "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
-        "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
+        "yol": "endokrinoloji/hiperparatiroidizm",
+        "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları",
         "eslesen": "eGFR"
       },
       {
@@ -5337,8 +5347,8 @@
         "eslesen": "Child-Pugh"
       },
       {
-        "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
-        "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
+        "yol": "kardiyoloji/aprocitentan-direncli-hipertansiyon",
+        "baslik": "Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA",
         "eslesen": "Child-Pugh"
       },
       {
@@ -5357,8 +5367,8 @@
         "eslesen": "Child-Pugh"
       },
       {
-        "yol": "kardiyoloji/lipid-ezetimibe-sakinca",
-        "baslik": "Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi",
+        "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
+        "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
         "eslesen": "Child-Pugh"
       },
       {
@@ -9139,7 +9149,7 @@
     "arac": 281,
     "araciOlanKonu": 351,
     "konusuOlanArac": 180,
-    "bag": 737,
+    "bag": 739,
     "kavramBag": 629
   }
 }
