@@ -1549,27 +1549,24 @@
     ],
     "nefroloji/hiponatremi": [
       {
+        "slug": "serbest-su-klirensi",
+        "name": "Elektrolitsiz Serbest Su Klirensi",
+        "eslesen": "Elektrolitsiz Serbest Su Klirensi"
+      },
+      {
+        "slug": "hiponatremi-algoritma",
+        "name": "Hiponatremi Tanı Algoritması",
+        "eslesen": "Hiponatremi Tanı Algoritması"
+      },
+      {
         "slug": "corrected-sodium",
         "name": "Düzeltilmiş Sodyum",
         "eslesen": "Düzeltilmiş Sodyum"
       },
       {
-        "slug": "hiponatremi-algoritma",
-        "name": "Hiponatremi Tanı Algoritması",
-        "eslesen": "hiponatremi",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "serbest-su-klirensi",
-        "name": "Elektrolitsiz Serbest Su Klirensi",
-        "eslesen": "hiponatremi",
-        "kaynak": "kavram"
-      },
-      {
         "slug": "sodium",
         "name": "Sodyum Yönetimi",
-        "eslesen": "hiponatremi",
-        "kaynak": "kavram"
+        "eslesen": "Sodyum Yönetimi"
       }
     ],
     "nefroloji/iga-nefropatisi-berger": [
@@ -6119,6 +6116,153 @@
         "eslesen": "Düzeltilmiş Sodyum"
       }
     ],
+    "hiponatremi-algoritma": [
+      {
+        "yol": "endokrinoloji/siadh-tedavi-protokolleri",
+        "baslik": "Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü",
+        "eslesen": "hiponatremi",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/hiponatremi",
+        "baslik": "Hiponatremi: Patofizyolojik Mekanizmalar, Etiyolojik Sınıflandırma, Tanısal Yaklaşım ve Tedavi Protokolleri",
+        "eslesen": "Hiponatremi Tanı Algoritması"
+      },
+      {
+        "yol": "endokrinoloji/arka-hipofiz-bozukluklari-di-ve-siadh",
+        "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/diabetes-insipidus",
+        "baslik": "Arginin Vazopressin Bozuklukları: AVP-D, SIADH ve Vaptan Tedavileri İleri Klinik Rehberi",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/sclc-paraneoplastik-siadh",
+        "baslik": "İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/siadh-direncli-farmakoterapi",
+        "baslik": "Modül 4: Dirençli SIADH ve Modern Farmakoterapi Seçenekleri",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/siadh-nadir-onb-baglantisi",
+        "baslik": "Modül 6: Nadir Paraneoplastik SIADH ve Olfaktör Nöroblastoma (ONB)",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/siadh-sendromu",
+        "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      }
+    ],
+    "serbest-su-klirensi": [
+      {
+        "yol": "endokrinoloji/siadh-tedavi-protokolleri",
+        "baslik": "Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü",
+        "eslesen": "hiponatremi",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/hiponatremi",
+        "baslik": "Hiponatremi: Patofizyolojik Mekanizmalar, Etiyolojik Sınıflandırma, Tanısal Yaklaşım ve Tedavi Protokolleri",
+        "eslesen": "Elektrolitsiz Serbest Su Klirensi"
+      },
+      {
+        "yol": "endokrinoloji/arka-hipofiz-bozukluklari-di-ve-siadh",
+        "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/diabetes-insipidus",
+        "baslik": "Arginin Vazopressin Bozuklukları: AVP-D, SIADH ve Vaptan Tedavileri İleri Klinik Rehberi",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/sclc-paraneoplastik-siadh",
+        "baslik": "İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/siadh-direncli-farmakoterapi",
+        "baslik": "Modül 4: Dirençli SIADH ve Modern Farmakoterapi Seçenekleri",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/siadh-nadir-onb-baglantisi",
+        "baslik": "Modül 6: Nadir Paraneoplastik SIADH ve Olfaktör Nöroblastoma (ONB)",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/siadh-sendromu",
+        "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      }
+    ],
+    "sodium": [
+      {
+        "yol": "endokrinoloji/arka-hipofiz-bozukluklari-di-ve-siadh",
+        "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH",
+        "eslesen": "diabetes insipidus",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/hiponatremi",
+        "baslik": "Hiponatremi: Patofizyolojik Mekanizmalar, Etiyolojik Sınıflandırma, Tanısal Yaklaşım ve Tedavi Protokolleri",
+        "eslesen": "Sodyum Yönetimi"
+      },
+      {
+        "yol": "endokrinoloji/siadh-tedavi-protokolleri",
+        "baslik": "Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü",
+        "eslesen": "hiponatremi",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/diabetes-insipidus",
+        "baslik": "Arginin Vazopressin Bozuklukları: AVP-D, SIADH ve Vaptan Tedavileri İleri Klinik Rehberi",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/sclc-paraneoplastik-siadh",
+        "baslik": "İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/siadh-direncli-farmakoterapi",
+        "baslik": "Modül 4: Dirençli SIADH ve Modern Farmakoterapi Seçenekleri",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/siadh-nadir-onb-baglantisi",
+        "baslik": "Modül 6: Nadir Paraneoplastik SIADH ve Olfaktör Nöroblastoma (ONB)",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/siadh-sendromu",
+        "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi",
+        "eslesen": "SIADH",
+        "kaynak": "kavram"
+      }
+    ],
     "cisne": [
       {
         "yol": "onkoloji/febril-notropeni-cisne-indexi",
@@ -6543,156 +6687,6 @@
       {
         "yol": "endokrinoloji/siadh-tani-algoritmasi",
         "baslik": "Modül 2: SIADH Tanı Kriterleri ve FE-Ürik Asit Analizi",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      }
-    ],
-    "hiponatremi-algoritma": [
-      {
-        "yol": "endokrinoloji/siadh-tedavi-protokolleri",
-        "baslik": "Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü",
-        "eslesen": "hiponatremi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/hiponatremi",
-        "baslik": "Hiponatremi: Patofizyolojik Mekanizmalar, Etiyolojik Sınıflandırma, Tanısal Yaklaşım ve Tedavi Protokolleri",
-        "eslesen": "hiponatremi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/arka-hipofiz-bozukluklari-di-ve-siadh",
-        "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/diabetes-insipidus",
-        "baslik": "Arginin Vazopressin Bozuklukları: AVP-D, SIADH ve Vaptan Tedavileri İleri Klinik Rehberi",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/sclc-paraneoplastik-siadh",
-        "baslik": "İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/siadh-direncli-farmakoterapi",
-        "baslik": "Modül 4: Dirençli SIADH ve Modern Farmakoterapi Seçenekleri",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/siadh-nadir-onb-baglantisi",
-        "baslik": "Modül 6: Nadir Paraneoplastik SIADH ve Olfaktör Nöroblastoma (ONB)",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/siadh-sendromu",
-        "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      }
-    ],
-    "serbest-su-klirensi": [
-      {
-        "yol": "endokrinoloji/siadh-tedavi-protokolleri",
-        "baslik": "Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü",
-        "eslesen": "hiponatremi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/hiponatremi",
-        "baslik": "Hiponatremi: Patofizyolojik Mekanizmalar, Etiyolojik Sınıflandırma, Tanısal Yaklaşım ve Tedavi Protokolleri",
-        "eslesen": "hiponatremi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/arka-hipofiz-bozukluklari-di-ve-siadh",
-        "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/diabetes-insipidus",
-        "baslik": "Arginin Vazopressin Bozuklukları: AVP-D, SIADH ve Vaptan Tedavileri İleri Klinik Rehberi",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/sclc-paraneoplastik-siadh",
-        "baslik": "İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/siadh-direncli-farmakoterapi",
-        "baslik": "Modül 4: Dirençli SIADH ve Modern Farmakoterapi Seçenekleri",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/siadh-nadir-onb-baglantisi",
-        "baslik": "Modül 6: Nadir Paraneoplastik SIADH ve Olfaktör Nöroblastoma (ONB)",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/siadh-sendromu",
-        "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      }
-    ],
-    "sodium": [
-      {
-        "yol": "endokrinoloji/arka-hipofiz-bozukluklari-di-ve-siadh",
-        "baslik": "Arka Hipofiz Bozuklukları: Diabetes İnsipidus ve SIADH",
-        "eslesen": "diabetes insipidus",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/hiponatremi",
-        "baslik": "Hiponatremi: Patofizyolojik Mekanizmalar, Etiyolojik Sınıflandırma, Tanısal Yaklaşım ve Tedavi Protokolleri",
-        "eslesen": "hiponatremi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/siadh-tedavi-protokolleri",
-        "baslik": "Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü",
-        "eslesen": "hiponatremi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/diabetes-insipidus",
-        "baslik": "Arginin Vazopressin Bozuklukları: AVP-D, SIADH ve Vaptan Tedavileri İleri Klinik Rehberi",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/sclc-paraneoplastik-siadh",
-        "baslik": "İleri Okuma: SCLC ve Paraneoplastik SIADH Bağlantısı",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/siadh-direncli-farmakoterapi",
-        "baslik": "Modül 4: Dirençli SIADH ve Modern Farmakoterapi Seçenekleri",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/siadh-nadir-onb-baglantisi",
-        "baslik": "Modül 6: Nadir Paraneoplastik SIADH ve Olfaktör Nöroblastoma (ONB)",
-        "eslesen": "SIADH",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/siadh-sendromu",
-        "baslik": "Uygunsuz Antidiürez Sendromu (SIAD/SIADH): Kapsamlı Uzmanlık Rehberi",
         "eslesen": "SIADH",
         "kaynak": "kavram"
       }
@@ -9146,6 +9140,6 @@
     "araciOlanKonu": 350,
     "konusuOlanArac": 180,
     "bag": 738,
-    "kavramBag": 630
+    "kavramBag": 627
   }
 }
