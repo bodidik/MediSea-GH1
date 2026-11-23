@@ -1428,6 +1428,13 @@
         "kaynak": "kavram"
       }
     ],
+    "kardiyoloji/lipidoloji-guncel-kilavuz": [
+      {
+        "slug": "ldl-hesaplama",
+        "name": "LDL Kolesterol Hesaplama",
+        "eslesen": "LDL Kolesterol Hesaplama"
+      }
+    ],
     "kardiyoloji/statin-intolerans-ezetimibe": [
       {
         "slug": "metabolik-sendrom",
@@ -4373,14 +4380,6 @@
         "kaynak": "kavram"
       }
     ],
-    "kardiyoloji/lipidoloji-guncel-kilavuz": [
-      {
-        "slug": "ldl-hesaplama",
-        "name": "LDL Kolesterol Hesaplama",
-        "eslesen": "dislipidemi",
-        "kaynak": "kavram"
-      }
-    ],
     "kardiyoloji/lipidoloji-pcsk9-lpa": [
       {
         "slug": "ldl-hesaplama",
@@ -6356,6 +6355,55 @@
         "yol": "kardiyoloji/kalp-yetmezligi",
         "baslik": "Kalp Yetersizliği: Kapsamlı Tanı ve Yönetim",
         "eslesen": "H2FPEF"
+      }
+    ],
+    "ldl-hesaplama": [
+      {
+        "yol": "kardiyoloji/lipidoloji-guncel-kilavuz",
+        "baslik": "Lipidoloji ve Dislipidemi Yönetimi",
+        "eslesen": "LDL Kolesterol Hesaplama"
+      },
+      {
+        "yol": "kardiyoloji/hiperlipidemi-dusuk-ldl-hedefleri",
+        "baslik": "Hiperlipidemi: Düşük LDL-C Hedeflerinin Klinik Rasyoneli",
+        "eslesen": "hiperlipidemi",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "kardiyoloji/lipidoloji-statin-karsilastirmasi",
+        "baslik": "Statin Kıyaslaması",
+        "eslesen": "statin kıyas",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "kardiyoloji/lipidoloji-pcsk9-lpa",
+        "baslik": "PCSK9 İnhibitörleri ve Lipoprotein(a) [Lp(a)]",
+        "eslesen": "lipoprotein",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "kardiyoloji/bempedoik-ezetimib-mace",
+        "baslik": "Bempedoik Asit + Ezetimib ve MACE Etkisi",
+        "eslesen": "bempedoik",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "kardiyoloji/lipidoloji-bempedoik-asit",
+        "baslik": "Bempedoik Asit ve CLEAR Outcomes",
+        "eslesen": "bempedoik",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "kardiyoloji/lipid-ezetimibe",
+        "baslik": "Ezetimib: Hücresel Mekanizma, Majör Klinik Çalışmalar ve ACC/AHA 2026",
+        "eslesen": "ezetimib",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "kardiyoloji/lipid-ezetimibe-sakinca",
+        "baslik": "Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi",
+        "eslesen": "ezetimib",
+        "kaynak": "kavram"
       }
     ],
     "glim": [
@@ -8749,56 +8797,6 @@
         "kaynak": "kavram"
       }
     ],
-    "ldl-hesaplama": [
-      {
-        "yol": "kardiyoloji/hiperlipidemi-dusuk-ldl-hedefleri",
-        "baslik": "Hiperlipidemi: Düşük LDL-C Hedeflerinin Klinik Rasyoneli",
-        "eslesen": "hiperlipidemi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "kardiyoloji/lipidoloji-statin-karsilastirmasi",
-        "baslik": "Statin Kıyaslaması",
-        "eslesen": "statin kıyas",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "kardiyoloji/lipidoloji-guncel-kilavuz",
-        "baslik": "Lipidoloji ve Dislipidemi Yönetimi",
-        "eslesen": "dislipidemi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "kardiyoloji/lipidoloji-pcsk9-lpa",
-        "baslik": "PCSK9 İnhibitörleri ve Lipoprotein(a) [Lp(a)]",
-        "eslesen": "lipoprotein",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "kardiyoloji/bempedoik-ezetimib-mace",
-        "baslik": "Bempedoik Asit + Ezetimib ve MACE Etkisi",
-        "eslesen": "bempedoik",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "kardiyoloji/lipidoloji-bempedoik-asit",
-        "baslik": "Bempedoik Asit ve CLEAR Outcomes",
-        "eslesen": "bempedoik",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "kardiyoloji/lipid-ezetimibe",
-        "baslik": "Ezetimib: Hücresel Mekanizma, Majör Klinik Çalışmalar ve ACC/AHA 2026",
-        "eslesen": "ezetimib",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "kardiyoloji/lipid-ezetimibe-sakinca",
-        "baslik": "Ezetimib: Mutlak Kontrendikasyonlar, Toksisite Yönetimi",
-        "eslesen": "ezetimib",
-        "kaynak": "kavram"
-      }
-    ],
     "nutrition-needs": [
       {
         "yol": "klinik-nutrisyon/klinik-nutrisyon-ana-unite",
@@ -9204,6 +9202,6 @@
     "araciOlanKonu": 352,
     "konusuOlanArac": 181,
     "bag": 749,
-    "kavramBag": 619
+    "kavramBag": 618
   }
 }

@@ -43,6 +43,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
+              <Link href="/topics/kardiyoloji/lipidoloji-guncel-kilavuz" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Lipidoloji ve Dislipidemi Yönetimi
+              </Link>
+            </li>
+            <li>
               <Link href="/topics/kardiyoloji/hiperlipidemi-dusuk-ldl-hedefleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Hiperlipidemi: Düşük LDL-C Hedeflerinin Klinik Rasyoneli
               </Link>
@@ -50,11 +55,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/topics/kardiyoloji/lipidoloji-statin-karsilastirmasi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Statin Kıyaslaması
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/kardiyoloji/lipidoloji-guncel-kilavuz" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Lipidoloji ve Dislipidemi Yönetimi
               </Link>
             </li>
             <li>

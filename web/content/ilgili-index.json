@@ -6306,6 +6306,11 @@
    "brans": "kardiyoloji",
    "slug": "pcsk9-inhibitorleri",
    "baslik": "PCSK9 İnhibisyonu"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipidoloji-pcsk9-lpa",
+   "baslik": "PCSK9 İnhibitörleri ve Lipoprotein(a) [Lp(a)]"
   }
  ],
  "kardiyoloji/lipidoloji-pcsk9-lpa": [
@@ -6313,6 +6318,11 @@
    "brans": "kardiyoloji",
    "slug": "bempedoik-ezetimib-mace",
    "baslik": "Bempedoik Asit + Ezetimib ve MACE Etkisi"
+  },
+  {
+   "brans": "kardiyoloji",
+   "slug": "lipidoloji-guncel-kilavuz",
+   "baslik": "Lipidoloji ve Dislipidemi Yönetimi"
   },
   {
    "brans": "kardiyoloji",
