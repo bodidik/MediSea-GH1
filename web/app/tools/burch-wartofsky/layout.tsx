@@ -43,6 +43,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
+              <Link href="/topics/endokrinoloji/hipertiroidi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Hipertiroidi ve Tirotoksikoz
+              </Link>
+            </li>
+            <li>
               <Link href="/topics/endokrinoloji/amiodaron-iliskili-tirotoksikoz" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Amiodaron İlişkili Tirotoksikoz (AİT)
               </Link>
@@ -55,11 +60,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/topics/endokrinoloji/gebelikte-hipertiroidi-kilavuz-karsilastirmasi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/endokrinoloji/gebelikte-hipertiroidizm-yonetimi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Gebelikte Hipertiroidizm
               </Link>
             </li>
           </ul>

@@ -109,6 +109,18 @@
         "eslesen": "Makroprolaktin"
       }
     ],
+    "endokrinoloji/hipertiroidi": [
+      {
+        "slug": "burch-wartofsky",
+        "name": "Burch-Wartofsky Skalası",
+        "eslesen": "Burch-Wartofsky Skalası"
+      },
+      {
+        "slug": "tft",
+        "name": "Tiroid Fonksiyon Testi (TFT)",
+        "eslesen": "Tiroid Fonksiyon Testi"
+      }
+    ],
     "endokrinoloji/hipofiz-hastaliklari-ana": [
       {
         "slug": "dst",
@@ -2498,20 +2510,6 @@
         "slug": "kdigo-kbh",
         "name": "KDIGO KBH Sınıflaması",
         "eslesen": "KBH",
-        "kaynak": "kavram"
-      }
-    ],
-    "endokrinoloji/hipertiroidi": [
-      {
-        "slug": "burch-wartofsky",
-        "name": "Burch-Wartofsky Skalası",
-        "eslesen": "tirotoksikoz",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "tft",
-        "name": "Tiroid Fonksiyon Testi (TFT)",
-        "eslesen": "hipertiroidi",
         "kaynak": "kavram"
       }
     ],
@@ -5023,9 +5021,9 @@
     ],
     "tft": [
       {
-        "yol": "endokrinoloji/gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
-        "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları",
-        "eslesen": "Tiroid Fonksiyon"
+        "yol": "endokrinoloji/hipertiroidi",
+        "baslik": "Hipertiroidi ve Tirotoksikoz",
+        "eslesen": "Tiroid Fonksiyon Testi"
       },
       {
         "yol": "hematoloji/gebelikte-immün-ITP-yonetimi",
@@ -5033,13 +5031,18 @@
         "eslesen": "Tiroid Fonksiyon"
       },
       {
-        "yol": "endokrinoloji/yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
-        "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi",
+        "yol": "endokrinoloji/gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+        "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları",
         "eslesen": "Tiroid Fonksiyon"
       },
       {
         "yol": "hematoloji/makrositer-anemiler",
         "baslik": "Makrositer Anemiler",
+        "eslesen": "Tiroid Fonksiyon"
+      },
+      {
+        "yol": "endokrinoloji/yaslida-subklinik-hipertiroidizm-ve-iyot-induklu-tirotoksikoz",
+        "baslik": "Yaşlı Popülasyonda Subklinik Hipertiroidizm ve Tiroid Otonomisinde İyot İndüklü Tirotoksikoz Yönetimi",
         "eslesen": "Tiroid Fonksiyon"
       },
       {
@@ -5058,12 +5061,6 @@
         "yol": "endokrinoloji/subklinik-tiroid-hastaliklari",
         "baslik": "Subklinik Tiroid Hastalıkları",
         "eslesen": "tiroid hastalık",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/miksodem-komasi-acil-yonetim",
-        "baslik": "Miksödem Koması: Klinik Tablo ve Acil Yönetim",
-        "eslesen": "miksödem koma",
         "kaynak": "kavram"
       }
     ],
@@ -5160,6 +5157,55 @@
         "yol": "endokrinoloji/ektopik-prolaktin-salgisi",
         "baslik": "Ektopik Prolaktin Salgısı",
         "eslesen": "prolaktin",
+        "kaynak": "kavram"
+      }
+    ],
+    "burch-wartofsky": [
+      {
+        "yol": "endokrinoloji/hipertiroidi",
+        "baslik": "Hipertiroidi ve Tirotoksikoz",
+        "eslesen": "Burch-Wartofsky Skalası"
+      },
+      {
+        "yol": "endokrinoloji/amiodaron-iliskili-tirotoksikoz",
+        "baslik": "Amiodaron İlişkili Tirotoksikoz (AİT)",
+        "eslesen": "tirotoksikoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/gebelik-transient-tirotoksikoz",
+        "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)",
+        "eslesen": "tirotoksikoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
+        "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları",
+        "eslesen": "hipertiroidi",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/gebelikte-hipertiroidizm-yonetimi",
+        "baslik": "Gebelikte Hipertiroidizm",
+        "eslesen": "hipertiroidi",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/graves-atd-direnci-tedavi-algoritmalari",
+        "baslik": "Antitiroid İlaç (ATD) Direnci veya Persistan Tirotoksikozda İzlenecek Tedavi Algoritmaları",
+        "eslesen": "tirotoksikoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/hipertiroidizmde-kardiyovaskuler-sistem",
+        "baslik": "Hipertiroidizmde Kardiyovasküler Sistem",
+        "eslesen": "hipertiroidi",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/yaslida-hipertiroidizm",
+        "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz",
+        "eslesen": "tirotoksikoz",
         "kaynak": "kavram"
       }
     ],
@@ -6702,56 +6748,6 @@
         "yol": "endokrinoloji/men1-somatotropinoma-akromegali",
         "baslik": "MEN1'de Akromegali ve Somatotropinoma: Tanısal Zorluklar ve Yönetim",
         "eslesen": "somatotropinoma",
-        "kaynak": "kavram"
-      }
-    ],
-    "burch-wartofsky": [
-      {
-        "yol": "endokrinoloji/amiodaron-iliskili-tirotoksikoz",
-        "baslik": "Amiodaron İlişkili Tirotoksikoz (AİT)",
-        "eslesen": "tirotoksikoz",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/gebelik-transient-tirotoksikoz",
-        "baslik": "Gestasyonel Geçici Tirotoksikoz (GTT)",
-        "eslesen": "tirotoksikoz",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/gebelikte-hipertiroidi-kilavuz-karsilastirmasi",
-        "baslik": "Gebelik ve Hipertiroidide Ulusal (TEMD) ve Uluslararası Kılavuz Yaklaşımları",
-        "eslesen": "hipertiroidi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/gebelikte-hipertiroidizm-yonetimi",
-        "baslik": "Gebelikte Hipertiroidizm",
-        "eslesen": "hipertiroidi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/graves-atd-direnci-tedavi-algoritmalari",
-        "baslik": "Antitiroid İlaç (ATD) Direnci veya Persistan Tirotoksikozda İzlenecek Tedavi Algoritmaları",
-        "eslesen": "tirotoksikoz",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/hipertiroidi",
-        "baslik": "Hipertiroidi ve Tirotoksikoz",
-        "eslesen": "tirotoksikoz",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/hipertiroidizmde-kardiyovaskuler-sistem",
-        "baslik": "Hipertiroidizmde Kardiyovasküler Sistem",
-        "eslesen": "hipertiroidi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/yaslida-hipertiroidizm",
-        "baslik": "Yaşlıda Hipertiroidizm ve Tirotoksikoz",
-        "eslesen": "tirotoksikoz",
         "kaynak": "kavram"
       }
     ],
@@ -9146,6 +9142,6 @@
     "araciOlanKonu": 350,
     "konusuOlanArac": 180,
     "bag": 741,
-    "kavramBag": 623
+    "kavramBag": 621
   }
 }
