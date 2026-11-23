@@ -1561,15 +1561,14 @@
     ],
     "nefroloji/asit-baz-denge-bozukluklari": [
       {
+        "slug": "abg",
+        "name": "Asit-Baz Analizi (ABG)",
+        "eslesen": "Asit-Baz Analizi (ABG)"
+      },
+      {
         "slug": "anion-gap",
         "name": "Anyon Açığı",
         "eslesen": "Anyon Açığı"
-      },
-      {
-        "slug": "abg",
-        "name": "Asit-Baz Analizi (ABG)",
-        "eslesen": "asit-baz",
-        "kaynak": "kavram"
       }
     ],
     "nefroloji/asit-baz-kompanzasyon-ilkeleri": [
@@ -6361,6 +6360,49 @@
         "eslesen": "Kt/V"
       }
     ],
+    "abg": [
+      {
+        "yol": "nefroloji/asit-baz-denge-bozukluklari",
+        "baslik": "Asit-Baz Denge Bozuklukları",
+        "eslesen": "Asit-Baz Analizi (ABG)"
+      },
+      {
+        "yol": "nefroloji/asit-baz-fizyopatoloji",
+        "baslik": "Asit-Baz Homeostazının Fizyopatolojik Temelleri",
+        "eslesen": "asit-baz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/asit-baz-kompanzasyon-ilkeleri",
+        "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi",
+        "eslesen": "asit-baz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/metabolik-alkaloz",
+        "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim",
+        "eslesen": "alkaloz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/respiratuvar-alkaloz",
+        "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim",
+        "eslesen": "alkaloz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/metabolik-asidoz",
+        "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri",
+        "eslesen": "asidoz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/respiratuvar-asidoz",
+        "baslik": "Respiratuvar Asidoz",
+        "eslesen": "asidoz",
+        "kaynak": "kavram"
+      }
+    ],
     "corrected-sodium": [
       {
         "yol": "nefroloji/hiponatremi",
@@ -8897,50 +8939,6 @@
         "kaynak": "kavram"
       }
     ],
-    "abg": [
-      {
-        "yol": "nefroloji/asit-baz-denge-bozukluklari",
-        "baslik": "Asit-Baz Denge Bozuklukları",
-        "eslesen": "asit-baz",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/asit-baz-fizyopatoloji",
-        "baslik": "Asit-Baz Homeostazının Fizyopatolojik Temelleri",
-        "eslesen": "asit-baz",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/asit-baz-kompanzasyon-ilkeleri",
-        "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi",
-        "eslesen": "asit-baz",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/metabolik-alkaloz",
-        "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim",
-        "eslesen": "alkaloz",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/respiratuvar-alkaloz",
-        "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim",
-        "eslesen": "alkaloz",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/metabolik-asidoz",
-        "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri",
-        "eslesen": "asidoz",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/respiratuvar-asidoz",
-        "baslik": "Respiratuvar Asidoz",
-        "eslesen": "asidoz",
-        "kaynak": "kavram"
-      }
-    ],
     "anca-vaskulit": [
       {
         "yol": "romatoloji/vaskulit-sendromlari",
@@ -9208,6 +9206,6 @@
     "araciOlanKonu": 352,
     "konusuOlanArac": 181,
     "bag": 749,
-    "kavramBag": 621
+    "kavramBag": 620
   }
 }
