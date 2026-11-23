@@ -10,8 +10,7 @@
       {
         "slug": "steroid-dose",
         "name": "Steroid Eşdeğer Doz",
-        "eslesen": "adrenal yetmezli",
-        "kaynak": "kavram"
+        "eslesen": "Steroid Eşdeğer Doz"
       }
     ],
     "endokrinoloji/cushing-sendromu-genetik-ve-inovasyonlar": [
@@ -5013,6 +5012,55 @@
         "kaynak": "kavram"
       }
     ],
+    "steroid-dose": [
+      {
+        "yol": "endokrinoloji/adrenal-yetmezlik",
+        "baslik": "Adrenal Yetmezlik (Addison ve Santral)",
+        "eslesen": "Steroid Eşdeğer Doz"
+      },
+      {
+        "yol": "endokrinoloji/addison",
+        "baslik": "Addison Hastalığı (Primer Adrenal Yetmezlik)",
+        "eslesen": "adrenal yetmezli",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/adrenal-yetmezlik-tani",
+        "baslik": "Adrenal Yetmezlik Tanısı",
+        "eslesen": "adrenal yetmezli",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/hipofiz-yetmezligi",
+        "baslik": "Hipofiz Yetmezliği (Anterior Hipofiz Yetersizliği / Hipopitüitarizm) Klinik ve Akademik Rehberi",
+        "eslesen": "hipofiz yetmezli",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/hipofiz-yetmezligi-etiyoloji-ve-patofizyoloji",
+        "baslik": "Hipofiz Yetmezliği: Etiyoloji ve Patofizyoloji",
+        "eslesen": "hipofiz yetmezli",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/hipofiz-yetmezligi-hormon-replasman-tedavisi",
+        "baslik": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri",
+        "eslesen": "hipofiz yetmezli",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/hipofiz-yetmezligi-klinik-tablo",
+        "baslik": "Hipofiz Yetmezliği: Klinik Tablo ve Hormonal Kayıp Hiyerarşisi",
+        "eslesen": "hipofiz yetmezli",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/hipofiz-yetmezligi-ozel-klinik-durumlar",
+        "baslik": "Hipofiz Yetmezliği: Özel Klinik Durumlar",
+        "eslesen": "hipofiz yetmezli",
+        "kaynak": "kavram"
+      }
+    ],
     "qtc": [
       {
         "yol": "endokrinoloji/cushing-sendromu-genetik-ve-inovasyonlar",
@@ -6839,56 +6887,6 @@
         "yol": "romatoloji/seropozitif-ra-antikor-takibi-ve-biyolojik-ajan-secimi",
         "baslik": "Seropozitif RA'da Antikor Titrelerinin Takibi ve Biyolojik Ajan Seçimi",
         "eslesen": "SDAI"
-      }
-    ],
-    "steroid-dose": [
-      {
-        "yol": "endokrinoloji/addison",
-        "baslik": "Addison Hastalığı (Primer Adrenal Yetmezlik)",
-        "eslesen": "adrenal yetmezli",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/adrenal-yetmezlik",
-        "baslik": "Adrenal Yetmezlik (Addison ve Santral)",
-        "eslesen": "adrenal yetmezli",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/adrenal-yetmezlik-tani",
-        "baslik": "Adrenal Yetmezlik Tanısı",
-        "eslesen": "adrenal yetmezli",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/hipofiz-yetmezligi",
-        "baslik": "Hipofiz Yetmezliği (Anterior Hipofiz Yetersizliği / Hipopitüitarizm) Klinik ve Akademik Rehberi",
-        "eslesen": "hipofiz yetmezli",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/hipofiz-yetmezligi-etiyoloji-ve-patofizyoloji",
-        "baslik": "Hipofiz Yetmezliği: Etiyoloji ve Patofizyoloji",
-        "eslesen": "hipofiz yetmezli",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/hipofiz-yetmezligi-hormon-replasman-tedavisi",
-        "baslik": "Hipofiz Yetmezliği: Hormon Replasman Tedavisi İlkeleri",
-        "eslesen": "hipofiz yetmezli",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/hipofiz-yetmezligi-klinik-tablo",
-        "baslik": "Hipofiz Yetmezliği: Klinik Tablo ve Hormonal Kayıp Hiyerarşisi",
-        "eslesen": "hipofiz yetmezli",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "endokrinoloji/hipofiz-yetmezligi-ozel-klinik-durumlar",
-        "baslik": "Hipofiz Yetmezliği: Özel Klinik Durumlar",
-        "eslesen": "hipofiz yetmezli",
-        "kaynak": "kavram"
       }
     ],
     "gh-test": [
@@ -9206,6 +9204,6 @@
     "araciOlanKonu": 352,
     "konusuOlanArac": 181,
     "bag": 749,
-    "kavramBag": 620
+    "kavramBag": 619
   }
 }
