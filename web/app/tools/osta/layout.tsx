@@ -43,6 +43,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
+              <Link href="/topics/endokrinoloji/osteoporoz-ana-sayfa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Osteoporoz ve Metabolik Kemik Hastalıkları
+              </Link>
+            </li>
+            <li>
               <Link href="/topics/endokrinoloji/erkek-osteoporozu-ana-sayfa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Erkek Osteoporozu
               </Link>
@@ -55,11 +60,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/topics/endokrinoloji/kbh-osteoporoz-ckd-mbd" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 KBH İlişkili Osteoporoz (CKD-MBD)
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/endokrinoloji/osteoporoz-ana-sayfa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Osteoporoz ve Metabolik Kemik Hastalıkları
               </Link>
             </li>
           </ul>
