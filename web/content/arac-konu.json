@@ -228,6 +228,28 @@
         "kaynak": "kavram"
       }
     ],
+    "endokrinoloji/primer-hiperaldosteronizm-conn": [
+      {
+        "slug": "aldosteron-renin",
+        "name": "Aldosteron/Renin Oranı",
+        "eslesen": "Aldosteron/Renin Oranı"
+      },
+      {
+        "slug": "hiperkalemi-tedavi",
+        "name": "Hiperkalemi Tedavisi",
+        "eslesen": "Hiperkalemi Tedavisi"
+      },
+      {
+        "slug": "potasyum-replasman",
+        "name": "Potasyum Replasmanı",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
+      }
+    ],
     "endokrinoloji/prolaktinoma-yeni-biyobelirtecler": [
       {
         "slug": "makroprolaktin",
@@ -5332,13 +5354,13 @@
         "eslesen": "Potasyum Replasmanı"
       },
       {
-        "yol": "endokrinoloji/siadh-tedavi-protokolleri",
-        "baslik": "Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü",
+        "yol": "endokrinoloji/primer-hiperaldosteronizm-conn",
+        "baslik": "Primer Hiperaldosteronizm (Conn Sendromu)",
         "eslesen": "Potasyum Replasmanı"
       },
       {
-        "yol": "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma",
-        "baslik": "Şiddetli Cushing Sendromu (SCS): İleri Yönetim",
+        "yol": "endokrinoloji/siadh-tedavi-protokolleri",
+        "baslik": "Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü",
         "eslesen": "Potasyum Replasmanı"
       }
     ],
@@ -5438,6 +5460,116 @@
         "baslik": "Osteoporoz Tedavisi: Farmakoterapi Endikasyonları, Modaliteler ve Yönetim Stratejileri",
         "eslesen": "osteoporoz",
         "kaynak": "kavram"
+      }
+    ],
+    "aldosteron-renin": [
+      {
+        "yol": "nefroloji/amilorid-spironolakton-karsilastirma",
+        "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji",
+        "eslesen": "Aldosteron/Renin Oranı"
+      },
+      {
+        "yol": "endokrinoloji/primer-hiperaldosteronizm-conn",
+        "baslik": "Primer Hiperaldosteronizm (Conn Sendromu)",
+        "eslesen": "Aldosteron/Renin Oranı"
+      },
+      {
+        "yol": "kardiyoloji/aprocitentan-direncli-hipertansiyon",
+        "baslik": "Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA",
+        "eslesen": "dirençli hipertansiyon",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/mineralokortikoid-fazlaligi-ayirici-tani",
+        "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı",
+        "eslesen": "hiperaldosteronizm",
+        "kaynak": "kavram"
+      }
+    ],
+    "hiperkalemi-tedavi": [
+      {
+        "yol": "nefroloji/mra-asi-hiperkalemi-sglt2-kombinasyonu",
+        "baslik": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu",
+        "eslesen": "hiperkalemi",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "endokrinoloji/primer-hiperaldosteronizm-conn",
+        "baslik": "Primer Hiperaldosteronizm (Conn Sendromu)",
+        "eslesen": "Hiperkalemi Tedavisi"
+      },
+      {
+        "yol": "nefroloji/farmakoloji-finerenon",
+        "baslik": "Yeni Nesil ns-MRA Finerenon",
+        "eslesen": "finerenon",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/farmakoloji-finerenon-kalp-yetmezligi",
+        "baslik": "Finerenon ve Kalp Yetmezliği",
+        "eslesen": "finerenon",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/finerenon-aldosteron-sentaz-inhibitorleri",
+        "baslik": "Finerenon ve Aldosteron Sentaz İnhibitörleri: Karşılaştırma",
+        "eslesen": "finerenon",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/farmakoloji-potasyum-tutucu-diuretikler",
+        "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi",
+        "eslesen": "MRA",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "nefroloji/liddle-sendromu-mra-etkisizligi",
+        "baslik": "Liddle Sendromunda MRA'ların Etkisizliği ve ENaC İnhibitörleri",
+        "eslesen": "MRA",
+        "kaynak": "kavram"
+      }
+    ],
+    "metabolik-sendrom": [
+      {
+        "yol": "gastroenteroloji/colyak-akdeniz-beslenme",
+        "baslik": "Çölyak Hastalığında Akdeniz Tipi Glutensiz Beslenme",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "endokrinoloji/primer-hiperaldosteronizm-conn",
+        "baslik": "Primer Hiperaldosteronizm (Conn Sendromu)",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "kardiyoloji/statin-intolerans-ezetimibe",
+        "baslik": "Statin İntoleransı (SAMS) Yönetimi ve Non-Statin Lipid Düşürücü Ajanlar",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "nefroloji/polikistik-bobrek-metabolik-sendrom",
+        "baslik": "ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "gastroenteroloji/colyak-beslenme",
+        "baslik": "Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "endokrinoloji/tirzepatid-vs-semaglutid",
+        "baslik": "Tirzepatid ve Semaglutid Karşılaştırması: Obezite ve T2DM Yönetimi",
+        "eslesen": "obezite",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gastroenteroloji/colyak-diyetsel-yag-riski",
+        "baslik": "Çölyak Hastalığında Diyetsel Yağ Riski ve Akdeniz Modeli",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
+        "yol": "gastroenteroloji/colyak-glutensiz-obezite",
+        "baslik": "Çölyak Hastalığında Glutensiz Diyet ve Obezite Paradoksu",
+        "eslesen": "Metabolik Sendrom"
       }
     ],
     "anaphylaxis": [
@@ -5624,49 +5756,6 @@
         "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)",
         "eslesen": "asit sıvı",
         "kaynak": "kavram"
-      }
-    ],
-    "metabolik-sendrom": [
-      {
-        "yol": "gastroenteroloji/colyak-akdeniz-beslenme",
-        "baslik": "Çölyak Hastalığında Akdeniz Tipi Glutensiz Beslenme",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
-        "yol": "endokrinoloji/tirzepatid-vs-semaglutid",
-        "baslik": "Tirzepatid ve Semaglutid Karşılaştırması: Obezite ve T2DM Yönetimi",
-        "eslesen": "obezite",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "kardiyoloji/statin-intolerans-ezetimibe",
-        "baslik": "Statin İntoleransı (SAMS) Yönetimi ve Non-Statin Lipid Düşürücü Ajanlar",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
-        "yol": "nefroloji/polikistik-bobrek-metabolik-sendrom",
-        "baslik": "ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
-        "yol": "gastroenteroloji/colyak-beslenme",
-        "baslik": "Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
-        "yol": "gastroenteroloji/colyak-diyetsel-yag-riski",
-        "baslik": "Çölyak Hastalığında Diyetsel Yağ Riski ve Akdeniz Modeli",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
-        "yol": "gastroenteroloji/colyak-glutensiz-obezite",
-        "baslik": "Çölyak Hastalığında Glutensiz Diyet ve Obezite Paradoksu",
-        "eslesen": "Metabolik Sendrom"
-      },
-      {
-        "yol": "gastroenteroloji/colyak-lif-alimi",
-        "baslik": "Akdeniz Tipi Glutensiz Diyette Lif Alımının Artırılması",
-        "eslesen": "Metabolik Sendrom"
       }
     ],
     "anion-gap": [
@@ -6248,25 +6337,6 @@
         "yol": "nefroloji/diyaliz-tedavisi",
         "baslik": "Diyaliz (Renal Replasman Tedavisi)",
         "eslesen": "Kt/V"
-      }
-    ],
-    "aldosteron-renin": [
-      {
-        "yol": "nefroloji/amilorid-spironolakton-karsilastirma",
-        "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji",
-        "eslesen": "Aldosteron/Renin Oranı"
-      },
-      {
-        "yol": "kardiyoloji/aprocitentan-direncli-hipertansiyon",
-        "baslik": "Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA",
-        "eslesen": "dirençli hipertansiyon",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/mineralokortikoid-fazlaligi-ayirici-tani",
-        "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı",
-        "eslesen": "hiperaldosteronizm",
-        "kaynak": "kavram"
       }
     ],
     "corrected-sodium": [
@@ -8837,44 +8907,6 @@
         "kaynak": "kavram"
       }
     ],
-    "hiperkalemi-tedavi": [
-      {
-        "yol": "nefroloji/mra-asi-hiperkalemi-sglt2-kombinasyonu",
-        "baslik": "Finerenon ve ASI Tedavisinde Hiperkalemi: SGLT2 İnhibitörü Kombinasyonu",
-        "eslesen": "hiperkalemi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/farmakoloji-finerenon",
-        "baslik": "Yeni Nesil ns-MRA Finerenon",
-        "eslesen": "finerenon",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/farmakoloji-finerenon-kalp-yetmezligi",
-        "baslik": "Finerenon ve Kalp Yetmezliği",
-        "eslesen": "finerenon",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/finerenon-aldosteron-sentaz-inhibitorleri",
-        "baslik": "Finerenon ve Aldosteron Sentaz İnhibitörleri: Karşılaştırma",
-        "eslesen": "finerenon",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/farmakoloji-potasyum-tutucu-diuretikler",
-        "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi",
-        "eslesen": "MRA",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "nefroloji/liddle-sendromu-mra-etkisizligi",
-        "baslik": "Liddle Sendromunda MRA'ların Etkisizliği ve ENaC İnhibitörleri",
-        "eslesen": "MRA",
-        "kaynak": "kavram"
-      }
-    ],
     "anca-vaskulit": [
       {
         "yol": "romatoloji/vaskulit-sendromlari",
@@ -9137,11 +9169,11 @@
     ]
   },
   "olcum": {
-    "konu": 487,
+    "konu": 488,
     "arac": 281,
-    "araciOlanKonu": 350,
+    "araciOlanKonu": 351,
     "konusuOlanArac": 180,
-    "bag": 741,
+    "bag": 745,
     "kavramBag": 621
   }
 }

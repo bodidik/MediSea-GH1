@@ -8,6 +8,11 @@
  ],
  "endokrinoloji/adrenal-fizyoloji-ve-steroidogenez": [
   {
+   "brans": "endokrinoloji",
+   "slug": "primer-hiperaldosteronizm-conn",
+   "baslik": "Primer Hiperaldosteronizm (Conn Sendromu)"
+  },
+  {
    "brans": "nefroloji",
    "slug": "kronik-bobrek-hastaligi",
    "baslik": "Kronik Böbrek Hastalığı (KBH)"
@@ -188,6 +193,11 @@
    "brans": "endokrinoloji",
    "slug": "ektopik-acth-sendromu",
    "baslik": "Ektopik ACTH Sendromu: Etiyopatogenez, Hücresel Tanı Kriterleri ve Tedavi Algoritmaları"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "primer-hiperaldosteronizm-conn",
+   "baslik": "Primer Hiperaldosteronizm (Conn Sendromu)"
   }
  ],
  "endokrinoloji/diabetes-insipidus": [
@@ -1794,6 +1804,23 @@
    "brans": "nefroloji",
    "slug": "polikistik-bobrek-metabolik-sendrom",
    "baslik": "ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu"
+  }
+ ],
+ "endokrinoloji/primer-hiperaldosteronizm-conn": [
+  {
+   "brans": "endokrinoloji",
+   "slug": "adrenal-fizyoloji-ve-steroidogenez",
+   "baslik": "Adrenal Fizyoloji ve Steroidogenez"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "meyan-koku-kazanilmis-ame",
+   "baslik": "Meyan Kökü ve Kazanılmış Görünür Mineralokortikoid Fazlalığı"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "mineralokortikoid-fazlaligi-ayirici-tani",
+   "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı"
   }
  ],
  "endokrinoloji/prolaktinoma-yeni-biyobelirtecler": [
@@ -6756,6 +6783,11 @@
   },
   {
    "brans": "nefroloji",
+   "slug": "amilorid-spironolakton-karsilastirma",
+   "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "aldosteron-bobrek-fizyolojisi",
    "baslik": "Aldosteron ve Böbrek Fizyolojisi"
   },
@@ -6763,11 +6795,6 @@
    "brans": "nefroloji",
    "slug": "aldosteron-mekanizmalari",
    "baslik": "Aldosteronun Nefrondaki Etkileri ve Sinyal Yolakları"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "amilorid-spironolakton-karsilastirma",
-   "baslik": "Amilorid ve Spironolakton: Karşılaştırmalı Farmakoloji"
   },
   {
    "brans": "nefroloji",
@@ -7371,18 +7398,23 @@
  "nefroloji/meyan-koku-kazanilmis-ame": [
   {
    "brans": "nefroloji",
-   "slug": "mineralokortikoid-fazlaligi-ayirici-tani",
-   "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı"
-  },
-  {
-   "brans": "nefroloji",
    "slug": "kortizol-mr-koruma-mekanizmalari",
    "baslik": "Kortizolün Mineralokortikoid Reseptöre Bağlanmasının Engellenmesi"
   },
   {
    "brans": "nefroloji",
+   "slug": "mineralokortikoid-fazlaligi-ayirici-tani",
+   "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı"
+  },
+  {
+   "brans": "nefroloji",
    "slug": "fizyoloji-mr-regulasyon-mekanizmalari",
    "baslik": "Mineralokortikoid Reseptör Regülasyonu"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "primer-hiperaldosteronizm-conn",
+   "baslik": "Primer Hiperaldosteronizm (Conn Sendromu)"
   }
  ],
  "nefroloji/mineralokortikoid-fazlaligi-ayirici-tani": [
@@ -7405,6 +7437,11 @@
    "brans": "nefroloji",
    "slug": "farmakoloji-potasyum-tutucu-diuretikler",
    "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "primer-hiperaldosteronizm-conn",
+   "baslik": "Primer Hiperaldosteronizm (Conn Sendromu)"
   }
  ],
  "nefroloji/mra-asi-hiperkalemi-sglt2-kombinasyonu": [
@@ -7695,14 +7732,14 @@
  ],
  "nefroloji/zona-glomeruloza-steroid": [
   {
-   "brans": "endokrinoloji",
-   "slug": "adrenal-fizyoloji-ve-steroidogenez",
-   "baslik": "Adrenal Fizyoloji ve Steroidogenez"
-  },
-  {
    "brans": "nefroloji",
    "slug": "finerenon-aldosteron-sentaz-inhibitorleri",
    "baslik": "Finerenon ve Aldosteron Sentaz İnhibitörleri: Karşılaştırma"
+  },
+  {
+   "brans": "endokrinoloji",
+   "slug": "adrenal-fizyoloji-ve-steroidogenez",
+   "baslik": "Adrenal Fizyoloji ve Steroidogenez"
   },
   {
    "brans": "nefroloji",

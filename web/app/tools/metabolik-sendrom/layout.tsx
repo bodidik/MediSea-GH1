@@ -48,8 +48,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/endokrinoloji/tirzepatid-vs-semaglutid" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Tirzepatid ve Semaglutid Karşılaştırması: Obezite ve T2DM Yönetimi
+              <Link href="/topics/endokrinoloji/primer-hiperaldosteronizm-conn" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Primer Hiperaldosteronizm (Conn Sendromu)
               </Link>
             </li>
             <li>
