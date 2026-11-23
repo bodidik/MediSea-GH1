@@ -5869,6 +5869,11 @@
  ],
  "kardiyoloji/akut-perikardit": [
   {
+   "brans": "romatoloji",
+   "slug": "gut-hastaligi",
+   "baslik": "Gut"
+  },
+  {
    "brans": "kardiyoloji",
    "slug": "aritmiler-af-vt-vf",
    "baslik": "Aritmiler (Atriyal Fibrilasyon, VT/VF)"
@@ -8234,6 +8239,11 @@
    "brans": "hematoloji",
    "slug": "g6pd-eksikligi",
    "baslik": "G6PD (Glukoz-6-Fosfat Dehidrogenaz) Eksikliği"
+  },
+  {
+   "brans": "romatoloji",
+   "slug": "gut-hastaligi",
+   "baslik": "Gut"
   }
  ],
  "onkoloji/tumor-lizis-sendromu-kapsamli": [
@@ -8590,6 +8600,18 @@
    "brans": "romatoloji",
    "slug": "romatoid-artritte-ferritin-ve-anemi-ayirici-tanisi",
    "baslik": "Romatoid Artritte Serum Ferritin: Anemi Ayırıcı Tanısı ve Eşik Değerler"
+  }
+ ],
+ "romatoloji/gut-hastaligi": [
+  {
+   "brans": "kardiyoloji",
+   "slug": "akut-perikardit",
+   "baslik": "Akut Perikardit"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "tls-rasburikaz-vs-allopurinol",
+   "baslik": "TLS'de Farmakolojik Karşılaştırma: Rasburikaz vs Allopurinol"
   }
  ],
  "romatoloji/hughes-stovin-sendromu": [

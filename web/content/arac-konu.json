@@ -2118,6 +2118,28 @@
         "eslesen": "HScore"
       }
     ],
+    "romatoloji/gut-hastaligi": [
+      {
+        "slug": "cockcroft-gault",
+        "name": "Cockcroft-Gault Kreatinin Klirensi",
+        "eslesen": "Cockcroft-Gault Kreatinin Klirensi"
+      },
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR (CKD-EPI 2021)"
+      },
+      {
+        "slug": "gout-acr",
+        "name": "Gut ACR 2015",
+        "eslesen": "Gut ACR 2015"
+      },
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      }
+    ],
     "romatoloji/hughes-stovin-sendromu": [
       {
         "slug": "behcet",
@@ -5636,6 +5658,11 @@
         "eslesen": "Child-Pugh"
       },
       {
+        "yol": "romatoloji/gut-hastaligi",
+        "baslik": "Gut",
+        "eslesen": "Child-Pugh"
+      },
+      {
         "yol": "enfeksiyon/dalbavansin-derleme",
         "baslik": "Dalbavansin",
         "eslesen": "Child-Pugh"
@@ -5648,11 +5675,6 @@
       {
         "yol": "kardiyoloji/aprocitentan-kbh-ve-yasli",
         "baslik": "Aprocitentan: İleri Yaş ve KBH (İleri Okuma)",
-        "eslesen": "Child-Pugh"
-      },
-      {
-        "yol": "onkoloji/karaciger-kanserleri",
-        "baslik": "Karaciğer Kanserleri",
         "eslesen": "Child-Pugh"
       }
     ],
@@ -6649,6 +6671,62 @@
         "eslesen": "Yamaguchi"
       }
     ],
+    "cockcroft-gault": [
+      {
+        "yol": "enfeksiyon/glikopeptit-antibiyotikler",
+        "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler",
+        "eslesen": "glikopeptit",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "hematoloji/doac-warfarin-patofizyolojik-karsilastirma",
+        "baslik": "Doğrudan Oral Antikoagülanlar (DOAC/NOAC) ve Warfarin’in Patofizyolojik, Farmakolojik ve Klinik Karşılaştırması",
+        "eslesen": "DOAC",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "romatoloji/gut-hastaligi",
+        "baslik": "Gut",
+        "eslesen": "Cockcroft-Gault Kreatinin Klirensi"
+      },
+      {
+        "yol": "enfeksiyon/linezolid-vankomisin-tdm-rehberi",
+        "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi",
+        "eslesen": "vankomisin",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "hematoloji/vka-doac-karsilastirma",
+        "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri",
+        "eslesen": "DOAC",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "enfeksiyon/vanco-bobrek",
+        "baslik": "Vankomisin ve Böbrek: Klerens, Nefrotoksisite ve Böbrek İşlevine Göre Doz",
+        "eslesen": "vankomisin",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "enfeksiyon/vankomisin-auc-dozlama",
+        "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama",
+        "eslesen": "vankomisin",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "enfeksiyon/vankomisin-master-rehber",
+        "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç",
+        "eslesen": "vankomisin",
+        "kaynak": "kavram"
+      }
+    ],
+    "gout-acr": [
+      {
+        "yol": "romatoloji/gut-hastaligi",
+        "baslik": "Gut",
+        "eslesen": "Gut ACR 2015"
+      }
+    ],
     "cdai": [
       {
         "yol": "romatoloji/romatoid-artrit",
@@ -7214,50 +7292,6 @@
         "yol": "enfeksiyon/bruselloz-hematolojik-komplikasyonlar",
         "baslik": "Brusellozun Hematolojik Komplikasyonları: Sitopeniler, OİHA, HLH ve DİK",
         "eslesen": "DİK",
-        "kaynak": "kavram"
-      }
-    ],
-    "cockcroft-gault": [
-      {
-        "yol": "enfeksiyon/glikopeptit-antibiyotikler",
-        "baslik": "Glikopeptit ve Lipoglikopeptit Antibiyotikler",
-        "eslesen": "glikopeptit",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/doac-warfarin-patofizyolojik-karsilastirma",
-        "baslik": "Doğrudan Oral Antikoagülanlar (DOAC/NOAC) ve Warfarin’in Patofizyolojik, Farmakolojik ve Klinik Karşılaştırması",
-        "eslesen": "DOAC",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "enfeksiyon/linezolid-vankomisin-tdm-rehberi",
-        "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi",
-        "eslesen": "vankomisin",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/vka-doac-karsilastirma",
-        "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri",
-        "eslesen": "DOAC",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "enfeksiyon/vanco-bobrek",
-        "baslik": "Vankomisin ve Böbrek: Klerens, Nefrotoksisite ve Böbrek İşlevine Göre Doz",
-        "eslesen": "vankomisin",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "enfeksiyon/vankomisin-auc-dozlama",
-        "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama",
-        "eslesen": "vankomisin",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "enfeksiyon/vankomisin-master-rehber",
-        "baslik": "Vankomisin: İleri Düzey Farmakoloji, Toksikoloji ve Direnç",
-        "eslesen": "vankomisin",
         "kaynak": "kavram"
       }
     ],
@@ -9169,11 +9203,11 @@
     ]
   },
   "olcum": {
-    "konu": 488,
+    "konu": 489,
     "arac": 281,
-    "araciOlanKonu": 351,
-    "konusuOlanArac": 180,
-    "bag": 745,
+    "araciOlanKonu": 352,
+    "konusuOlanArac": 181,
+    "bag": 749,
     "kavramBag": 621
   }
 }

@@ -68,6 +68,7 @@
   "romatoloji": {
     "kisimlar": [
       { "baslik": "Enflamatuvar Artritler", "bolumler": ["romatoid-artrit"] },
+      { "baslik": "Kristal Artropatileri", "bolumler": ["gut-hastaligi"] },
       { "baslik": "Vaskülitler", "bolumler": ["vaskulit-sendromlari"] }
     ]
   },
