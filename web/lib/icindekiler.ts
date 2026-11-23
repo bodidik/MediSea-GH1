@@ -43,6 +43,8 @@ export type TocBolum = {
   /** Gerçek konu slug'ı; sanal bölümde null (bağlantı yok). */
   slug: string | null;
   baslik: string;
+  /** Bölümün kendisi amiral ise tarihi (sanal bölümde yok). */
+  amiral?: string;
   cocuklar: TocKonu[];
   altToplam: number;
 };
@@ -165,6 +167,7 @@ export function bransIcindekiler(brans: string): Icindekiler {
       return {
         slug: kimlik,
         baslik: gercek.baslik,
+        amiral: gercek.amiral,
         cocuklar,
         altToplam: cocuklar.reduce((t, x) => t + 1 + x.altToplam, 0),
       };
@@ -260,6 +263,9 @@ export function bransAmiral(brans: string): { sayfa: string[]; ileri: string[] }
   const ileri: string[] = [];
   for (const k of bransIcindekiler(brans).kisimlar) {
     for (const b of k.bolumler) {
+      // Bölümün kendisi de ana konudur (osteoporoz, KOAH, kalp yetmezliği…);
+      // yalnız çocuklara bakınca 23 amiral ana sayfa hiç sayılmıyordu.
+      if (b.amiral) sayfa.push(b.amiral);
       for (const c of b.cocuklar) {
         if (c.amiral) sayfa.push(c.amiral);
         ileri.push(...c.amiralAlt);
@@ -283,6 +289,7 @@ export function katmanSayilari(branslar: string[]) {
     for (const k of bransIcindekiler(brans).kisimlar) {
       for (const b of k.bolumler) {
         if (b.slug) konu++;
+        if (b.amiral) amiralKonu.push(b.amiral);
         for (const c of b.cocuklar) {
           konu++;
           ileri += c.altToplam;
