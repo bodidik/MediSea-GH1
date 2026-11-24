@@ -8420,6 +8420,21 @@
    "brans": "palyatif",
    "slug": "coklu-analjezik-sonrasi-ajan-geri-cekme",
    "baslik": "İleri Okuma: Çoklu Analjezik Sonrası Hangi Ajan Geri Çekilir? (Tramadol, Fentanil Geçişi, Opioid Tatili)"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "noropatik-agrida-koadjuvan-tedavi",
+   "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "pankreas-agrisinda-tanisal-degerlendirme",
+   "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme"
+  },
+  {
+   "brans": "palyatif",
+   "slug": "pankreas-kanserinde-refrakter-agri",
+   "baslik": "Pankreas Kanserinde Refrakter Ağrı Yönetimi"
   }
  ],
  "palyatif/palyatif-bakimda-agri-yonetimi": [

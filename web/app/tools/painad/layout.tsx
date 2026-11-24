@@ -43,13 +43,18 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <li>
-              <Link href="/topics/palyatif/pankreas-agrisinda-tanisal-degerlendirme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Pankreas Kanseri Ağrısında Tanısal Değerlendirme
+              <Link href="/topics/palyatif/palyatif-bakim-ana-sayfa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Palyatif Bakım: Kapsamlı Bir Genel Bakış
               </Link>
             </li>
             <li>
               <Link href="/topics/onkoloji/kanser-agrisi-yonetimi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Kanser Ağrısı Yönetimi
+              </Link>
+            </li>
+            <li>
+              <Link href="/topics/palyatif/pankreas-agrisinda-tanisal-degerlendirme" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Pankreas Kanseri Ağrısında Tanısal Değerlendirme
               </Link>
             </li>
             <li>

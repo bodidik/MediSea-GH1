@@ -2064,6 +2064,40 @@
         "eslesen": "Anafilaksi"
       }
     ],
+    "palyatif/palyatif-bakim-ana-sayfa": [
+      {
+        "slug": "ppi",
+        "name": "Palyatif Prognostik İndeks (PPI)",
+        "eslesen": "Palyatif Prognostik İndeks"
+      },
+      {
+        "slug": "karnofsky",
+        "name": "Karnofsky (KPS)",
+        "eslesen": "Karnofsky"
+      },
+      {
+        "slug": "painad",
+        "name": "PAINAD",
+        "eslesen": "PAINAD"
+      },
+      {
+        "slug": "esas",
+        "name": "ESAS",
+        "eslesen": "ESAS"
+      },
+      {
+        "slug": "ecog",
+        "name": "ECOG Performans Durumu",
+        "eslesen": "palyatif bakım",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "pap-score",
+        "name": "PaP Score",
+        "eslesen": "palyatif bakım",
+        "kaynak": "kavram"
+      }
+    ],
     "palyatif/palyatif-bakimda-agri-yonetimi": [
       {
         "slug": "egfr",
@@ -4824,44 +4858,6 @@
         "kaynak": "kavram"
       }
     ],
-    "palyatif/palyatif-bakim-ana-sayfa": [
-      {
-        "slug": "ecog",
-        "name": "ECOG Performans Durumu",
-        "eslesen": "palyatif bakım",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "karnofsky",
-        "name": "Karnofsky (KPS)",
-        "eslesen": "palyatif bakım",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "pap-score",
-        "name": "PaP Score",
-        "eslesen": "palyatif bakım",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "ppi",
-        "name": "Palyatif Prognostik İndeks (PPI)",
-        "eslesen": "palyatif bakım",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "pps",
-        "name": "Palliative Performance Scale",
-        "eslesen": "palyatif bakım",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "rdos",
-        "name": "RDOS",
-        "eslesen": "palyatif bakım",
-        "kaynak": "kavram"
-      }
-    ],
     "romatoloji/anca-iliskili-vaskulitler": [
       {
         "slug": "anca-vaskulit",
@@ -5927,8 +5923,7 @@
       {
         "yol": "palyatif/palyatif-bakim-ana-sayfa",
         "baslik": "Palyatif Bakım: Kapsamlı Bir Genel Bakış",
-        "eslesen": "palyatif bakım",
-        "kaynak": "kavram"
+        "eslesen": "Karnofsky"
       },
       {
         "yol": "hematoloji/aml-geriatrik-degerlendirme",
@@ -6718,8 +6713,8 @@
     ],
     "esas": [
       {
-        "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
-        "baslik": "Palyatif Bakımda Ağrı Yönetimi",
+        "yol": "palyatif/palyatif-bakim-ana-sayfa",
+        "baslik": "Palyatif Bakım: Kapsamlı Bir Genel Bakış",
         "eslesen": "ESAS"
       },
       {
@@ -6728,8 +6723,8 @@
         "eslesen": "ESAS"
       },
       {
-        "yol": "palyatif/pankreas-agrisinda-tanisal-degerlendirme",
-        "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme",
+        "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
+        "baslik": "Palyatif Bakımda Ağrı Yönetimi",
         "eslesen": "ESAS"
       },
       {
@@ -6739,15 +6734,14 @@
         "kaynak": "kavram"
       },
       {
+        "yol": "palyatif/pankreas-agrisinda-tanisal-degerlendirme",
+        "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme",
+        "eslesen": "ESAS"
+      },
+      {
         "yol": "palyatif/noropatik-agrida-koadjuvan-tedavi",
         "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi",
         "eslesen": "kanser ağrı",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "palyatif/palyatif-bakim-ana-sayfa",
-        "baslik": "Palyatif Bakım: Kapsamlı Bir Genel Bakış",
-        "eslesen": "palyatif",
         "kaynak": "kavram"
       }
     ],
@@ -6790,8 +6784,8 @@
     ],
     "painad": [
       {
-        "yol": "palyatif/pankreas-agrisinda-tanisal-degerlendirme",
-        "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme",
+        "yol": "palyatif/palyatif-bakim-ana-sayfa",
+        "baslik": "Palyatif Bakım: Kapsamlı Bir Genel Bakış",
         "eslesen": "PAINAD"
       },
       {
@@ -6800,10 +6794,22 @@
         "eslesen": "PAINAD"
       },
       {
+        "yol": "palyatif/pankreas-agrisinda-tanisal-degerlendirme",
+        "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme",
+        "eslesen": "PAINAD"
+      },
+      {
         "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
         "baslik": "Palyatif Bakımda Ağrı Yönetimi",
         "eslesen": "palyatif bakımda ağrı",
         "kaynak": "kavram"
+      }
+    ],
+    "ppi": [
+      {
+        "yol": "palyatif/palyatif-bakim-ana-sayfa",
+        "baslik": "Palyatif Bakım: Kapsamlı Bir Genel Bakış",
+        "eslesen": "Palyatif Prognostik İndeks"
       }
     ],
     "behcet": [
@@ -9064,14 +9070,6 @@
         "kaynak": "kavram"
       }
     ],
-    "ppi": [
-      {
-        "yol": "palyatif/palyatif-bakim-ana-sayfa",
-        "baslik": "Palyatif Bakım: Kapsamlı Bir Genel Bakış",
-        "eslesen": "palyatif bakım",
-        "kaynak": "kavram"
-      }
-    ],
     "pps": [
       {
         "yol": "palyatif/palyatif-bakim-ana-sayfa",
@@ -9213,6 +9211,6 @@
     "araciOlanKonu": 352,
     "konusuOlanArac": 181,
     "bag": 751,
-    "kavramBag": 616
+    "kavramBag": 613
   }
 }
