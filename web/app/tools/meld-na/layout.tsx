@@ -48,6 +48,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
+              <Link href="/topics/onkoloji/karaciger-kanserleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Karaciğer Kanserleri
+              </Link>
+            </li>
+            <li>
               <Link href="/topics/gastroenteroloji/ascit-diuretik-tedavisi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi
               </Link>
@@ -55,11 +60,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/topics/gastroenteroloji/ascit-sıvısı" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/gastroenteroloji/siroz-ve-komplikasyonlari" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Siroz ve Komplikasyonları
               </Link>
             </li>
           </ul>
