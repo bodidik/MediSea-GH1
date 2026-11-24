@@ -48,8 +48,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/palyatif/opioid-rotasyonu-ilkeleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları
+              <Link href="/topics/palyatif/opioidler-ana-sayfa" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları
               </Link>
             </li>
             <li>
@@ -58,8 +58,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/palyatif/noropatik-agrida-koadjuvan-tedavi" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Kanser Ağrısında Nöropatik Koadjuvan Tedavi
+              <Link href="/topics/palyatif/opioid-rotasyonu-ilkeleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları
               </Link>
             </li>
           </ul>

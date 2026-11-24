@@ -2086,6 +2086,19 @@
         "eslesen": "Anafilaksi"
       }
     ],
+    "palyatif/opioidler-ana-sayfa": [
+      {
+        "slug": "opioid-donusum",
+        "name": "Opioid Eşdeğer Doz",
+        "eslesen": "Opioid Eşdeğer Doz"
+      },
+      {
+        "slug": "naloksan-infuzyon",
+        "name": "Naloksan İnfüzyonu",
+        "eslesen": "opioidler",
+        "kaynak": "kavram"
+      }
+    ],
     "palyatif/palyatif-bakim-ana-sayfa": [
       {
         "slug": "ppi",
@@ -4852,20 +4865,6 @@
         "kaynak": "kavram"
       }
     ],
-    "palyatif/opioidler-ana-sayfa": [
-      {
-        "slug": "naloksan-infuzyon",
-        "name": "Naloksan İnfüzyonu",
-        "eslesen": "opioidler",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "opioid-donusum",
-        "name": "Opioid Eşdeğer Doz",
-        "eslesen": "opioidler",
-        "kaynak": "kavram"
-      }
-    ],
     "romatoloji/anca-iliskili-vaskulitler": [
       {
         "slug": "anca-vaskulit",
@@ -6796,10 +6795,9 @@
         "eslesen": "Opioid Eşdeğer Doz"
       },
       {
-        "yol": "palyatif/opioid-rotasyonu-ilkeleri",
-        "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları",
-        "eslesen": "opioid rotasyon",
-        "kaynak": "kavram"
+        "yol": "palyatif/opioidler-ana-sayfa",
+        "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları",
+        "eslesen": "Opioid Eşdeğer Doz"
       },
       {
         "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
@@ -6808,9 +6806,9 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "palyatif/noropatik-agrida-koadjuvan-tedavi",
-        "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi",
-        "eslesen": "kanser ağrı",
+        "yol": "palyatif/opioid-rotasyonu-ilkeleri",
+        "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları",
+        "eslesen": "opioid rotasyon",
         "kaynak": "kavram"
       },
       {
@@ -6820,9 +6818,9 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "palyatif/opioidler-ana-sayfa",
-        "baslik": "Opioidler: Klinik Farmakoloji ve Reseptör Mekanizmaları",
-        "eslesen": "opioidler",
+        "yol": "palyatif/noropatik-agrida-koadjuvan-tedavi",
+        "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi",
+        "eslesen": "kanser ağrı",
         "kaynak": "kavram"
       }
     ],
@@ -9222,6 +9220,6 @@
     "araciOlanKonu": 352,
     "konusuOlanArac": 181,
     "bag": 753,
-    "kavramBag": 611
+    "kavramBag": 610
   }
 }
