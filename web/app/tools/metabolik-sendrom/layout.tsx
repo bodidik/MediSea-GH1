@@ -53,13 +53,13 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/kardiyoloji/statin-intolerans-ezetimibe" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Statin İntoleransı (SAMS) Yönetimi ve Non-Statin Lipid Düşürücü Ajanlar
+              <Link href="/topics/nefroloji/polikistik-bobrek-hastaligi-pkd" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Polikistik Böbrek hastalığı (ADPKD)
               </Link>
             </li>
             <li>
-              <Link href="/topics/nefroloji/polikistik-bobrek-metabolik-sendrom" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu
+              <Link href="/topics/kardiyoloji/statin-intolerans-ezetimibe" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Statin İntoleransı (SAMS) Yönetimi ve Non-Statin Lipid Düşürücü Ajanlar
               </Link>
             </li>
           </ul>

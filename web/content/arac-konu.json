@@ -1835,6 +1835,11 @@
     ],
     "nefroloji/polikistik-bobrek-hastaligi-pkd": [
       {
+        "slug": "metabolik-sendrom",
+        "name": "Metabolik Sendrom",
+        "eslesen": "Metabolik Sendrom"
+      },
+      {
         "slug": "egfr",
         "name": "eGFR (CKD-EPI 2021)",
         "eslesen": "eGFR"
@@ -5616,13 +5621,13 @@
         "eslesen": "Metabolik Sendrom"
       },
       {
-        "yol": "kardiyoloji/statin-intolerans-ezetimibe",
-        "baslik": "Statin İntoleransı (SAMS) Yönetimi ve Non-Statin Lipid Düşürücü Ajanlar",
+        "yol": "nefroloji/polikistik-bobrek-hastaligi-pkd",
+        "baslik": "Polikistik Böbrek hastalığı (ADPKD)",
         "eslesen": "Metabolik Sendrom"
       },
       {
-        "yol": "nefroloji/polikistik-bobrek-metabolik-sendrom",
-        "baslik": "ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu",
+        "yol": "kardiyoloji/statin-intolerans-ezetimibe",
+        "baslik": "Statin İntoleransı (SAMS) Yönetimi ve Non-Statin Lipid Düşürücü Ajanlar",
         "eslesen": "Metabolik Sendrom"
       },
       {
@@ -5637,13 +5642,13 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "gastroenteroloji/colyak-diyetsel-yag-riski",
-        "baslik": "Çölyak Hastalığında Diyetsel Yağ Riski ve Akdeniz Modeli",
+        "yol": "nefroloji/polikistik-bobrek-metabolik-sendrom",
+        "baslik": "ADPKD İleri Okuma: Metabolik Sendrom ve Hastalık Progresyonu",
         "eslesen": "Metabolik Sendrom"
       },
       {
-        "yol": "gastroenteroloji/colyak-glutensiz-obezite",
-        "baslik": "Çölyak Hastalığında Glutensiz Diyet ve Obezite Paradoksu",
+        "yol": "gastroenteroloji/colyak-diyetsel-yag-riski",
+        "baslik": "Çölyak Hastalığında Diyetsel Yağ Riski ve Akdeniz Modeli",
         "eslesen": "Metabolik Sendrom"
       }
     ],
@@ -9216,7 +9221,7 @@
     "arac": 281,
     "araciOlanKonu": 352,
     "konusuOlanArac": 181,
-    "bag": 752,
+    "bag": 753,
     "kavramBag": 611
   }
 }
