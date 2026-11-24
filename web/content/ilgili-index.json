@@ -3524,11 +3524,6 @@
    "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri"
   },
   {
-   "brans": "nefroloji",
-   "slug": "diuretikler",
-   "baslik": "Klinik Farmakoloji: Diüretikler ve Etki Mekanizmaları"
-  },
-  {
    "brans": "journal-club",
    "slug": "Kalp-yetm-ODI",
    "baslik": "Kardiyoloji-NEJM: Kalp Yetmezliği Çalışmalarında Oral Diüretik Yoğunlaştırması (ODI)"
@@ -3547,6 +3542,11 @@
    "brans": "gastroenteroloji",
    "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
    "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "hepatit-c",
+   "baslik": "Hepatit C (HCV): Tanı ve Modern Tedavi"
   }
  ],
  "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi": [
@@ -4404,6 +4404,11 @@
    "brans": "nefroloji",
    "slug": "asetazolamid-etki-mekanizmasi",
    "baslik": "Asetazolamid: Proksimal Tübülde Etki Mekanizması"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "diuretikler",
+   "baslik": "Klinik Farmakoloji: Diüretikler ve Etki Mekanizmaları"
   }
  ],
  "gogus/koah-cpet-ve-ebv": [
@@ -6652,14 +6657,14 @@
    "baslik": "Asetazolamid: Proksimal Tübülde Etki Mekanizması"
   },
   {
-   "brans": "gogus",
-   "slug": "koah-asetazolamid",
-   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
-  },
-  {
    "brans": "kardiyoloji",
    "slug": "akut-kalp-yetersizligi",
    "baslik": "Akut Dekompanse Kalp Yetersizliği (ADKY): Kapsamlı Yönetim"
+  },
+  {
+   "brans": "gogus",
+   "slug": "koah-asetazolamid",
+   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
   }
  ],
  "nefroloji/asetazolamid-etki-mekanizmasi": [
@@ -6773,9 +6778,9 @@
  ],
  "nefroloji/diuretikler": [
   {
-   "brans": "gastroenteroloji",
-   "slug": "ascit-diuretik-tedavisi",
-   "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
+   "brans": "gogus",
+   "slug": "koah-asetazolamid",
+   "baslik": "KOAH'ta Asetazolamid Tehlikesi"
   }
  ],
  "nefroloji/diyaliz-tedavisi": [
@@ -6867,8 +6872,8 @@
   },
   {
    "brans": "nefroloji",
-   "slug": "diuretikler",
-   "baslik": "Klinik Farmakoloji: Diüretikler ve Etki Mekanizmaları"
+   "slug": "farmakoloji-potasyum-tutucu-diuretikler",
+   "baslik": "MRA ve ENaC İnhibitörlerinin Karşılaştırmalı Analizi"
   }
  ],
  "nefroloji/farmakoloji-potasyum-tutucu-diuretikler": [
@@ -7413,13 +7418,13 @@
  "nefroloji/meyan-koku-kazanilmis-ame": [
   {
    "brans": "nefroloji",
-   "slug": "kortizol-mr-koruma-mekanizmalari",
-   "baslik": "Kortizolün Mineralokortikoid Reseptöre Bağlanmasının Engellenmesi"
+   "slug": "mineralokortikoid-fazlaligi-ayirici-tani",
+   "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı"
   },
   {
    "brans": "nefroloji",
-   "slug": "mineralokortikoid-fazlaligi-ayirici-tani",
-   "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı"
+   "slug": "kortizol-mr-koruma-mekanizmalari",
+   "baslik": "Kortizolün Mineralokortikoid Reseptöre Bağlanmasının Engellenmesi"
   },
   {
    "brans": "nefroloji",
@@ -7666,11 +7671,6 @@
  "nefroloji/renovaskuler-hastaliklar": [
   {
    "brans": "nefroloji",
-   "slug": "diuretikler",
-   "baslik": "Klinik Farmakoloji: Diüretikler ve Etki Mekanizmaları"
-  },
-  {
-   "brans": "nefroloji",
    "slug": "fizyoloji-mr-regulasyon-mekanizmalari",
    "baslik": "Mineralokortikoid Reseptör Regülasyonu"
   },
@@ -7683,6 +7683,11 @@
    "brans": "nefroloji",
    "slug": "meyan-koku-kazanilmis-ame",
    "baslik": "Meyan Kökü ve Kazanılmış Görünür Mineralokortikoid Fazlalığı"
+  },
+  {
+   "brans": "nefroloji",
+   "slug": "mineralokortikoid-fazlaligi-ayirici-tani",
+   "baslik": "Primer Hiperaldosteronizm, Meyan Kökü ve Liddle Sendromu: Ayırıcı Tanı"
   }
  ],
  "nefroloji/respiratuvar-alkaloz": [
