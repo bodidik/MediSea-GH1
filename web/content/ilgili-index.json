@@ -229,11 +229,6 @@
    "baslik": "Ön Hipofiz Hastalıklarına Giriş"
   },
   {
-   "brans": "gastroenteroloji",
-   "slug": "karaciger-hastaliklari",
-   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
-  },
-  {
    "brans": "nefroloji",
    "slug": "sistemik-hastaliklarda-glomeruler-tutulumlar",
    "baslik": "Sistemik Hastalıklarda Glomerüler Tutulumlar"
@@ -1587,11 +1582,6 @@
    "baslik": "Diabetes Mellitus"
   },
   {
-   "brans": "gastroenteroloji",
-   "slug": "karaciger-hastaliklari",
-   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
-  },
-  {
    "brans": "nefroloji",
    "slug": "sistemik-hastaliklarda-glomeruler-tutulumlar",
    "baslik": "Sistemik Hastalıklarda Glomerüler Tutulumlar"
@@ -2474,11 +2464,6 @@
   }
  ],
  "enfeksiyon/bruselloz-hepatobiliyer-tutulum": [
-  {
-   "brans": "gastroenteroloji",
-   "slug": "karaciger-hastaliklari",
-   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
-  },
   {
    "brans": "enfeksiyon",
    "slug": "bruselloz-hematolojik-komplikasyonlar",
@@ -3987,26 +3972,6 @@
  ],
  "gastroenteroloji/karaciger-hastaliklari": [
   {
-   "brans": "enfeksiyon",
-   "slug": "bruselloz-hepatobiliyer-tutulum",
-   "baslik": "Bruselloz Enfeksiyonunda Hepatobiliyer Sistem Tutulumu: Patofizyoloji, Histopatoloji ve Klinik Yönetim"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "diabetes-mellitus-ana",
-   "baslik": "Diabetes Mellitus"
-  },
-  {
-   "brans": "endokrinoloji",
-   "slug": "on-hipofiz-hastaliklari-giris",
-   "baslik": "Ön Hipofiz Hastalıklarına Giriş"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "sistemik-hastaliklarda-glomeruler-tutulumlar",
-   "baslik": "Sistemik Hastalıklarda Glomerüler Tutulumlar"
-  },
-  {
    "brans": "gastroenteroloji",
    "slug": "ascit-diuretik-tedavisi",
    "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi"
@@ -4015,6 +3980,21 @@
    "brans": "gastroenteroloji",
    "slug": "ascit-enfeksiyonu-antibiyotik-tedavisi",
    "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "ascit-sıvısı",
+   "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "hepatit-c",
+   "baslik": "Hepatit C (HCV): Tanı ve Modern Tedavi"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "tips-hasta-secimi",
+   "baslik": "TIPS Hasta Seçimi: Endikasyonlar, Adaylık Kriterleri ve Kontrendikasyonlar"
   }
  ],
  "gastroenteroloji/karaciger-hastasina-yaklasim": [
@@ -7704,11 +7684,6 @@
    "brans": "endokrinoloji",
    "slug": "on-hipofiz-hastaliklari-giris",
    "baslik": "Ön Hipofiz Hastalıklarına Giriş"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "karaciger-hastaliklari",
-   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
   }
  ],
  "nefroloji/trombotik-mikroanjiyopatiler-tma": [

@@ -729,6 +729,23 @@
         "eslesen": "QTc"
       }
     ],
+    "gastroenteroloji/karaciger-hastaliklari": [
+      {
+        "slug": "hrs-aki",
+        "name": "Hepatorenal Sendrom (HRS-AKI)",
+        "eslesen": "Hepatorenal Sendrom"
+      },
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "slug": "meld-na",
+        "name": "MELD-Na Skoru",
+        "eslesen": "MELD-Na"
+      }
+    ],
     "gastroenteroloji/kisa-bagirsak-sendromu": [
       {
         "slug": "anion-gap",
@@ -5840,6 +5857,66 @@
         "kaynak": "kavram"
       }
     ],
+    "hrs-aki": [
+      {
+        "yol": "gastroenteroloji/karaciger-hastaliklari",
+        "baslik": "Karaciğer ve Safra Yolu Hastalıkları",
+        "eslesen": "Hepatorenal Sendrom"
+      },
+      {
+        "yol": "onkoloji/hepatosellular-karsinom-kapsamli-klinik-rehber",
+        "baslik": "Hepatosellüler Karsinom (HCC): Etiyoloji, Tanı, Evreleme ve Tedavi",
+        "eslesen": "Hepatorenal Sendrom"
+      },
+      {
+        "yol": "gastroenteroloji/siroz-ve-komplikasyonlari",
+        "baslik": "Siroz ve Komplikasyonları",
+        "eslesen": "siroz",
+        "kaynak": "kavram"
+      }
+    ],
+    "meld-na": [
+      {
+        "yol": "gastroenteroloji/karaciger-hastaliklari",
+        "baslik": "Karaciğer ve Safra Yolu Hastalıkları",
+        "eslesen": "MELD-Na"
+      },
+      {
+        "yol": "onkoloji/karaciger-kanserleri",
+        "baslik": "Karaciğer Kanserleri",
+        "eslesen": "MELD-Na"
+      },
+      {
+        "yol": "gastroenteroloji/karaciger-hastasina-yaklasim",
+        "baslik": "Karaciğer Hastasına Yaklaşım: Anamnez ve Fizik Muayene",
+        "eslesen": "karaciğer hasta",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gastroenteroloji/ascit-diuretik-tedavisi",
+        "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi",
+        "eslesen": "sirotik",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gastroenteroloji/ascit-sıvısı",
+        "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri",
+        "eslesen": "sirotik",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gastroenteroloji/siroz-ve-komplikasyonlari",
+        "baslik": "Siroz ve Komplikasyonları",
+        "eslesen": "siroz",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "gastroenteroloji/tips-hasta-secimi",
+        "baslik": "TIPS Hasta Seçimi: Endikasyonlar, Adaylık Kriterleri ve Kontrendikasyonlar",
+        "eslesen": "TIPS",
+        "kaynak": "kavram"
+      }
+    ],
     "anion-gap": [
       {
         "yol": "nefroloji/asetazolamid-etki-mekanizmasi",
@@ -6749,19 +6826,6 @@
         "kaynak": "kavram"
       }
     ],
-    "hrs-aki": [
-      {
-        "yol": "gastroenteroloji/siroz-ve-komplikasyonlari",
-        "baslik": "Siroz ve Komplikasyonları",
-        "eslesen": "siroz",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "onkoloji/hepatosellular-karsinom-kapsamli-klinik-rehber",
-        "baslik": "Hepatosellüler Karsinom (HCC): Etiyoloji, Tanı, Evreleme ve Tedavi",
-        "eslesen": "Hepatorenal Sendrom"
-      }
-    ],
     "esas": [
       {
         "yol": "palyatif/palyatif-bakim-ana-sayfa",
@@ -6852,43 +6916,6 @@
         "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
         "baslik": "Palyatif Bakımda Ağrı Yönetimi",
         "eslesen": "palyatif bakımda ağrı",
-        "kaynak": "kavram"
-      }
-    ],
-    "meld-na": [
-      {
-        "yol": "gastroenteroloji/karaciger-hastasina-yaklasim",
-        "baslik": "Karaciğer Hastasına Yaklaşım: Anamnez ve Fizik Muayene",
-        "eslesen": "karaciğer hasta",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "onkoloji/karaciger-kanserleri",
-        "baslik": "Karaciğer Kanserleri",
-        "eslesen": "MELD-Na"
-      },
-      {
-        "yol": "gastroenteroloji/ascit-diuretik-tedavisi",
-        "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi",
-        "eslesen": "sirotik",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gastroenteroloji/ascit-sıvısı",
-        "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri",
-        "eslesen": "sirotik",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gastroenteroloji/siroz-ve-komplikasyonlari",
-        "baslik": "Siroz ve Komplikasyonları",
-        "eslesen": "siroz",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "gastroenteroloji/tips-hasta-secimi",
-        "baslik": "TIPS Hasta Seçimi: Endikasyonlar, Adaylık Kriterleri ve Kontrendikasyonlar",
-        "eslesen": "TIPS",
         "kaynak": "kavram"
       }
     ],
@@ -9225,9 +9252,9 @@
   "olcum": {
     "konu": 489,
     "arac": 281,
-    "araciOlanKonu": 352,
+    "araciOlanKonu": 353,
     "konusuOlanArac": 181,
-    "bag": 754,
+    "bag": 757,
     "kavramBag": 609
   }
 }
