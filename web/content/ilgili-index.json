@@ -3630,8 +3630,8 @@
  "gastroenteroloji/bagirsak-hastaliklari": [
   {
    "brans": "gastroenteroloji",
-   "slug": "colyak-akdeniz-beslenme",
-   "baslik": "Çölyak Hastalığında Akdeniz Tipi Glutensiz Beslenme"
+   "slug": "colyak-pseudotahil-mikrobesin",
+   "baslik": "Psödotahılların Mikrobesin Profili ve Klinik Değeri"
   },
   {
    "brans": "gastroenteroloji",
@@ -3639,14 +3639,9 @@
    "baslik": "Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları"
   },
   {
-   "brans": "gastroenteroloji",
-   "slug": "colyak-pseudotahillar",
-   "baslik": "Psödotahıllar ve Çölyak Diyetindeki Avantajları"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "karaciger-hastaliklari",
-   "baslik": "Karaciğer ve Safra Yolu Hastalıkları"
+   "brans": "hematoloji",
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
   }
  ],
  "gastroenteroloji/colyak": [
@@ -3654,11 +3649,6 @@
    "brans": "endokrinoloji",
    "slug": "hipotiroidi-hashimoto-miksoedem",
    "baslik": "Hashimoto Tiroiditi (Kronik Lenfositik Tiroidit)"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
-   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
   },
   {
    "brans": "gastroenteroloji",
@@ -3669,6 +3659,11 @@
    "brans": "gastroenteroloji",
    "slug": "colyak-glutensiz-obezite",
    "baslik": "Çölyak Hastalığında Glutensiz Diyet ve Obezite Paradoksu"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
+   "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
   }
  ],
  "gastroenteroloji/colyak-akdeniz-beslenme": [
@@ -3727,6 +3722,11 @@
    "brans": "gastroenteroloji",
    "slug": "colyak-lif-alimi",
    "baslik": "Akdeniz Tipi Glutensiz Diyette Lif Alımının Artırılması"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "bagirsak-hastaliklari",
+   "baslik": "Bağırsak Hastalıkları"
   },
   {
    "brans": "hematoloji",
@@ -3815,6 +3815,11 @@
    "brans": "gastroenteroloji",
    "slug": "colyak-vs-cdgh-karsilastirma",
    "baslik": "Ayırıcı Tanı: Çölyak Hastalığı vs Çölyak Dışı Gluten Hassasiyeti (ÇDGH)"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "bagirsak-hastaliklari",
+   "baslik": "Bağırsak Hastalıkları"
   },
   {
    "brans": "gastroenteroloji",
@@ -5171,16 +5176,6 @@
  ],
  "hematoloji/kisa-bagirsak-sendromunda-antikoagulasyon": [
   {
-   "brans": "gastroenteroloji",
-   "slug": "colyak",
-   "baslik": "Çölyak Hastalığı (Gluten Enteropatisi)"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "colyak-beslenme",
-   "baslik": "Çölyak Hastalığında Beslenme ve Güncel Kılavuz Yaklaşımları"
-  },
-  {
    "brans": "klinik-nutrisyon",
    "slug": "espen-enteral-beslenme-intoleransi",
    "baslik": "ESPEN Kılavuzu: Enteral Beslenme İntoleransı ve Yönetimi"
@@ -5199,6 +5194,16 @@
    "brans": "hematoloji",
    "slug": "vka-doac-karsilastirma",
    "baslik": "Vitamin K Antagonistleri ve DOAC'ların Karşılaştırması ve Geçiş Protokolleri"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "bagirsak-hastaliklari",
+   "baslik": "Bağırsak Hastalıkları"
+  },
+  {
+   "brans": "gastroenteroloji",
+   "slug": "colyak",
+   "baslik": "Çölyak Hastalığı (Gluten Enteropatisi)"
   }
  ],
  "hematoloji/kll": [
