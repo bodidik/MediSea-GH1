@@ -1052,19 +1052,14 @@
  ],
  "endokrinoloji/hipotiroidi-hashimoto-miksoedem": [
   {
-   "brans": "endokrinoloji",
-   "slug": "gebelikte-hipotiroidizm-yonetimi",
-   "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
-  },
-  {
    "brans": "gastroenteroloji",
    "slug": "colyak",
    "baslik": "Çölyak Hastalığı (Gluten Enteropatisi)"
   },
   {
-   "brans": "nefroloji",
-   "slug": "glomeruler-hastaliklar",
-   "baslik": "Glomerüler Hastalıklar"
+   "brans": "endokrinoloji",
+   "slug": "gebelikte-hipotiroidizm-yonetimi",
+   "baslik": "Gebelikte Hipotiroidizm ve Obstetrik Yönetimi"
   },
   {
    "brans": "endokrinoloji",
@@ -3679,11 +3674,6 @@
    "brans": "hematoloji",
    "slug": "kisa-bagirsak-sendromunda-antikoagulasyon",
    "baslik": "Kısa Bağırsak Sendromunda Antikoagülasyon: Emilim Kapasitesine Göre Tabakalama"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "glomeruler-hastaliklar",
-   "baslik": "Glomerüler Hastalıklar"
   },
   {
    "brans": "gastroenteroloji",
@@ -6973,14 +6963,9 @@
  ],
  "nefroloji/glomeruler-hastaliklar": [
   {
-   "brans": "endokrinoloji",
-   "slug": "hipotiroidi-hashimoto-miksoedem",
-   "baslik": "Hashimoto Tiroiditi (Kronik Lenfositik Tiroidit)"
-  },
-  {
-   "brans": "gastroenteroloji",
-   "slug": "colyak",
-   "baslik": "Çölyak Hastalığı (Gluten Enteropatisi)"
+   "brans": "nefroloji",
+   "slug": "iga-nefropatisi-mest-c-iskdc",
+   "baslik": "İleri Okuma: IgA Spektrumunda MEST-C ve ISKDC Skorlamaları"
   },
   {
    "brans": "nefroloji",
@@ -7111,13 +7096,8 @@
  "nefroloji/iga-nefropatisi-mest-c-iskdc": [
   {
    "brans": "nefroloji",
-   "slug": "iga-nefropatisi-guncel-tedavi",
-   "baslik": "İleri Okuma: IgA Nefropatisi -Tedavi"
-  },
-  {
-   "brans": "nefroloji",
-   "slug": "iga-nefropatisi-yeni-nesil-b-hucresi-tedavileri",
-   "baslik": "İleri Okuma: IgA Nefropatisinde Yeni Nesil B-Hücresi Tedavileri"
+   "slug": "glomeruler-hastaliklar",
+   "baslik": "Glomerüler Hastalıklar"
   }
  ],
  "nefroloji/iga-nefropatisi-yeni-nesil-b-hucresi-tedavileri": [
