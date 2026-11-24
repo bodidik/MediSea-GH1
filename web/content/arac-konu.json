@@ -1205,6 +1205,18 @@
         "eslesen": "IPSS-R"
       }
     ],
+    "hematoloji/miyeloproliferatif": [
+      {
+        "slug": "mpn-tromboz",
+        "name": "MPN Tromboz Riski",
+        "eslesen": "MPN Tromboz Riski"
+      },
+      {
+        "slug": "dipss",
+        "name": "DIPSS",
+        "eslesen": "DIPSS"
+      }
+    ],
     "hematoloji/multiple-myelom": [
       {
         "slug": "r-iss",
@@ -4141,20 +4153,6 @@
         "kaynak": "kavram"
       }
     ],
-    "hematoloji/miyeloproliferatif": [
-      {
-        "slug": "dipss",
-        "name": "DIPSS",
-        "eslesen": "miyeloproliferatif",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "mpn-tromboz",
-        "name": "MPN Tromboz Riski",
-        "eslesen": "miyeloproliferatif",
-        "kaynak": "kavram"
-      }
-    ],
     "hematoloji/orak-hucreli-anemi": [
       {
         "slug": "retikulosit-indeksi",
@@ -6248,24 +6246,60 @@
         "eslesen": "IPSS-R"
       }
     ],
+    "dipss": [
+      {
+        "yol": "hematoloji/miyeloproliferatif",
+        "baslik": "Miyeloproliferatif Neoplazmlar (MPN)",
+        "eslesen": "DIPSS"
+      },
+      {
+        "yol": "hematoloji/primer-miyelofibrozis",
+        "baslik": "Primer Miyelofibrozis (PMF)",
+        "eslesen": "DIPSS"
+      }
+    ],
+    "mpn-tromboz": [
+      {
+        "yol": "hematoloji/miyeloproliferatif",
+        "baslik": "Miyeloproliferatif Neoplazmlar (MPN)",
+        "eslesen": "MPN Tromboz Riski"
+      },
+      {
+        "yol": "hematoloji/esansiyel-trombositoz",
+        "baslik": "Esansiyel Trombositemi (ET)",
+        "eslesen": "esansiyel trombosit",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "hematoloji/polisitemia-vera",
+        "baslik": "Polisitemia Vera (PV) Kapsamlı Özeti",
+        "eslesen": "polisitemi",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "hematoloji/esansiyel-trombositoz-ARES-ASA",
+        "baslik": "ET'de Aspirin Formülasyonu: Plain vs. Enteric-Coated (EC) Farmakokinetiği",
+        "eslesen": "ET",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "hematoloji/esansiyel-trombositoz-ASA-direnci",
+        "baslik": "ET'de Antiplatelet Optimizasyonu: Aspirin BID Stratejisi ve Farmakodinamik",
+        "eslesen": "ET",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "hematoloji/esansiyel-trombositoz-tani",
+        "baslik": "ET Tanısal Yaklaşımı: DSÖ/ICC Kriterleri ve Morfolojik Diferansiyasyon",
+        "eslesen": "ET",
+        "kaynak": "kavram"
+      }
+    ],
     "r-iss": [
       {
         "yol": "hematoloji/multiple-myelom",
         "baslik": "Multipl Miyelom (MM)",
         "eslesen": "R-ISS"
-      }
-    ],
-    "dipss": [
-      {
-        "yol": "hematoloji/primer-miyelofibrozis",
-        "baslik": "Primer Miyelofibrozis (PMF)",
-        "eslesen": "DIPSS"
-      },
-      {
-        "yol": "hematoloji/miyeloproliferatif",
-        "baslik": "Miyeloproliferatif Neoplazmlar (MPN)",
-        "eslesen": "miyeloproliferatif",
-        "kaynak": "kavram"
       }
     ],
     "timi-ua": [
@@ -8594,44 +8628,6 @@
         "kaynak": "kavram"
       }
     ],
-    "mpn-tromboz": [
-      {
-        "yol": "hematoloji/esansiyel-trombositoz",
-        "baslik": "Esansiyel Trombositemi (ET)",
-        "eslesen": "esansiyel trombosit",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/miyeloproliferatif",
-        "baslik": "Miyeloproliferatif Neoplazmlar (MPN)",
-        "eslesen": "miyeloproliferatif",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/polisitemia-vera",
-        "baslik": "Polisitemia Vera (PV) Kapsamlı Özeti",
-        "eslesen": "polisitemi",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/esansiyel-trombositoz-ARES-ASA",
-        "baslik": "ET'de Aspirin Formülasyonu: Plain vs. Enteric-Coated (EC) Farmakokinetiği",
-        "eslesen": "ET",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/esansiyel-trombositoz-ASA-direnci",
-        "baslik": "ET'de Antiplatelet Optimizasyonu: Aspirin BID Stratejisi ve Farmakodinamik",
-        "eslesen": "ET",
-        "kaynak": "kavram"
-      },
-      {
-        "yol": "hematoloji/esansiyel-trombositoz-tani",
-        "baslik": "ET Tanısal Yaklaşımı: DSÖ/ICC Kriterleri ve Morfolojik Diferansiyasyon",
-        "eslesen": "ET",
-        "kaynak": "kavram"
-      }
-    ],
     "who-kanama": [
       {
         "yol": "hematoloji/gebelikte-immün-ITP-yonetimi",
@@ -9221,6 +9217,6 @@
     "araciOlanKonu": 352,
     "konusuOlanArac": 181,
     "bag": 752,
-    "kavramBag": 613
+    "kavramBag": 611
   }
 }

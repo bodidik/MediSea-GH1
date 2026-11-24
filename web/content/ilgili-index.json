@@ -4879,11 +4879,6 @@
    "baslik": "Vankomisin AUC Kılavuzluğunda Dozlama"
   },
   {
-   "brans": "hematoloji",
-   "slug": "miyeloproliferatif",
-   "baslik": "Miyeloproliferatif Neoplazmlar (MPN)"
-  },
-  {
    "brans": "kardiyoloji",
    "slug": "lipidoloji-statin-karsilastirmasi",
    "baslik": "Statin Kıyaslaması"
@@ -4894,11 +4889,6 @@
    "brans": "hematoloji",
    "slug": "esansiyel-trombositoz-ARES-ASA",
    "baslik": "ET'de Aspirin Formülasyonu: Plain vs. Enteric-Coated (EC) Farmakokinetiği"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "miyeloproliferatif",
-   "baslik": "Miyeloproliferatif Neoplazmlar (MPN)"
   }
  ],
  "hematoloji/esansiyel-trombositoz-tani": [
@@ -5463,13 +5453,23 @@
  "hematoloji/miyeloproliferatif": [
   {
    "brans": "hematoloji",
-   "slug": "esansiyel-trombositoz-ARES-ASA",
-   "baslik": "ET'de Aspirin Formülasyonu: Plain vs. Enteric-Coated (EC) Farmakokinetiği"
+   "slug": "inme-sonrasi-gizli-af",
+   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
   },
   {
    "brans": "hematoloji",
-   "slug": "esansiyel-trombositoz-ASA-direnci",
-   "baslik": "ET'de Antiplatelet Optimizasyonu: Aspirin BID Stratejisi ve Farmakodinamik"
+   "slug": "losemiler",
+   "baslik": "Lösemiler"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "makrositer-anemiler",
+   "baslik": "Makrositer Anemiler"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "trombosit-hastaliklari-genel-bakis",
+   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
   }
  ],
  "hematoloji/multiple-myelom": [
