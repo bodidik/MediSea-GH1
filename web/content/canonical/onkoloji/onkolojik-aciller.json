@@ -1,24 +1,88 @@
 {
   "title": "Onkolojik Aciller",
   "meta": {
-    "updatedAt": "16 Mar 2026",
+    "nisan": "amiral",
+    "updatedAt": "24 Kas 2026",
     "tags": [
       "Onkoloji",
       "Acil",
-      "Tümör Lizis",
-      "Nötropeni"
+      "Ateşli Nötropeni",
+      "Tümör Lizis Sendromu",
+      "MASCC",
+      "CISNE",
+      "Rasburikaz"
     ],
     "parent": null,
-    "order": 4
+    "order": 4,
+    "kaynaklar": [
+      {
+        "ad": "Wingard JR. Overview of neutropenic fever syndromes. UpToDate (son güncelleme 2 Nis 2026)",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/overview-of-neutropenic-fever-syndromes",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Wingard JR. Diagnostic approach to the adult cancer patient with neutropenic fever. UpToDate (son güncelleme 3 Oca 2025)",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/diagnostic-approach-to-the-adult-cancer-patient-with-neutropenic-fever",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Wingard JR. Treatment of neutropenic fever syndromes in adults with hematologic malignancies and hematopoietic cell transplant recipients (high-risk patients). UpToDate (son güncelleme 12 Mar 2026)",
+        "yil": 2026,
+        "url": "https://www.uptodate.com/contents/treatment-of-neutropenic-fever-syndromes-in-adults-with-hematologic-malignancies-and-hematopoietic-cell-transplant-recipients-high-risk-patients",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Wingard JR. Treatment and prevention of neutropenic fever syndromes in adult cancer patients at low risk for complications. UpToDate (son güncelleme 31 Tem 2025)",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/treatment-and-prevention-of-neutropenic-fever-syndromes-in-adult-cancer-patients-at-low-risk-for-complications",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Larson RA, Pui CH. Tumor lysis syndrome: Prevention and treatment. UpToDate (son güncelleme 24 Tem 2025)",
+        "yil": 2025,
+        "url": "https://www.uptodate.com/contents/tumor-lysis-syndrome-prevention-and-treatment",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Larson RA, Pui CH. Tumor lysis syndrome: Pathogenesis, clinical manifestations, definition, etiology and risk factors. UpToDate (son güncelleme 9 Şub 2024)",
+        "yil": 2024,
+        "url": "https://www.uptodate.com/contents/tumor-lysis-syndrome-pathogenesis-clinical-manifestations-definition-etiology-and-risk-factors",
+        "tur": "uptodate"
+      },
+      {
+        "ad": "Lindsay AB, Levy NJ, McAndrew ML. Tumor lysis syndrome. Emerg Med Clin North Am 2025;43:453–461",
+        "yil": 2025,
+        "url": "https://doi.org/10.1016/j.emc.2025.04.002",
+        "tur": "makale"
+      }
+    ]
   },
   "sections": [
     {
-      "heading": "Metabolik Aciller",
-      "text": "<div class='space-y-3'><div class='bg-red-50 p-3 rounded border-l-4 border-red-500'><strong class='text-red-900'>Tümör Lizis Sendromu:</strong> Hızlı hücre yıkımı sonucu Ürik Asit, Potasyum ve Fosfor artar; Kalsiyum düşer. Böbrek yetmezliği yapar. Tedavi: Hidrasyon + Rasburikaz/Allopurinol.</div><div class='bg-yellow-50 p-3 rounded border-l-4 border-yellow-500'><strong class='text-yellow-900'>Hiperkalsemi:</strong> En sık görülen metabolik acildir (Meme, Akciğer, Myeloma). Bilinç değişikliği yapar. Tedavi: Hidrasyon + Bifosfonat.</div></div>"
+      "heading": "Genel Bakış",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Bu ana sayfa, bu sitede kaynaklı olarak işlenmiş iki onkolojik acili bir araya getirir: <strong>ateşli nötropeni</strong> ve <strong>tümör lizis sendromu (TLS)</strong>. Her ikisi de saatler içinde karar gerektirir; ikisinde de riski önceden tanımak sonucu belirler.</p><figure class=\"my-6\" data-hareketli><a href=\"/images/onkoloji/onkolojik-acil-yol.svg\" target=\"_blank\" rel=\"noopener\" class=\"block\"><img src=\"/images/onkoloji/onkolojik-acil-yol.svg\" width=\"640\" height=\"700\" loading=\"lazy\" alt=\"İki sık onkolojik acil. Ateşli nötropeni: tek ölçümde ağızdan 38,3 derece ya da 1 saat süren 38,0 derece ateş ve mutlak nötrofil sayısı 500/µL altında; glukokortikoid ateşi baskılayabilir, taşikardi, takipne ya da hipotansiyon da uyarıdır. En az iki set kan kültüründen hemen sonra, başvurudan itibaren 60 dakika içinde ampirik antibiyotik. Risk MASCC ya da CISNE ile belirlenir: yüksek riskte yatış ve damardan antipsödomonal beta-laktam; düşük riskte ilk dozdan sonra en az 4 saat gözlem ve ağızdan siprofloksasin artı amoksisilin-klavulanat. Tümör lizis sendromu: hiperkalemi, hiperfosfatemi, ikincil hipokalsemi, hiperürisemi ve akut böbrek hasarı. Laboratuvar TLS kemoterapiden 3 gün önce ile 7 gün sonra arasında şunlardan en az ikisi: ürik asit 8, potasyum 6, fosfor 4,5 ve üstü, düzeltilmiş kalsiyum 7 ve altı ya da her biri için yüzde 25 değişim. Klinik TLS buna ek olarak kreatinin normalin 1,5 katı, aritmi ya da ani ölüm veya nöbet. Önleme riske göre: yüksek riskte (yüzde 5 üstü) damardan sıvı ve rasburikaz, orta riskte (yüzde 1–5) sıvı ve allopurinol; önlemlere karşın yaklaşık yüzde 3–5'inde TLS gelişir. Ateşli nötropeni düşük riskli solid tümörde yüzde 5–10, lösemi dışı hematolojik malignitede yüzde 20–25, akut lösemide yüzde 85–95 sıklıkta görülür; triyajda son 6 hafta içinde sistemik kanser tedavisi almış olmak nötropeni olasılığını gösterir. TLS yüksek risk örnekleri: Burkitt lösemi, ileri evre Burkitt lenfoma, beyaz küresi 100 binin üstünde ALL ya da AML, büyük lenf nodu ve yüksek lenfosit sayılı KLL'de venetoklaks. Tetikleyiciler: sitotoksik kemoterapi, sitolitik antikor, ışın, glukokortikoid, venetoklaks, obinutuzumab, CAR-T; bazen kendiliğinden.\" class=\"w-full h-auto rounded-xl border border-slate-200\" /></a><figcaption class=\"text-[11px] text-slate-600 mt-2\">Ateşli nötropeni ve TLS: tanım, ilk adım, risk. Kaynak: UpToDate (Wingard; Larson ve Pui).</figcaption></figure><p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Araçlar: <a href=\"/tools/mascc\" class=\"text-teal-700 underline font-semibold\">MASCC</a> · <a href=\"/tools/cisne\" class=\"text-teal-700 underline font-semibold\">CISNE</a>.</p><div class=\"bg-slate-50 border border-slate-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Ayrıntı sayfaları</h4><ul class=\"text-[11px] text-slate-800 space-y-1.5 list-disc pl-4\"><li><a href=\"/topics/onkoloji/febril-notropeni-konu\" class=\"text-teal-700 underline font-semibold\">Febril Nötropeni: Tanı, Risk Sınıflaması ve Ampirik Tedavi</a></li><li><a href=\"/topics/onkoloji/febril-notropeni-mascc-indexi\" class=\"text-teal-700 underline font-semibold\">MASCC İndeksi</a> · <a href=\"/topics/onkoloji/febril-notropeni-cisne-indexi\" class=\"text-teal-700 underline font-semibold\">CISNE İndeksi</a></li><li><a href=\"/topics/onkoloji/tumor-lizis-sendromu-kapsamli\" class=\"text-teal-700 underline font-semibold\">Tümör Lizis Sendromu</a></li><li><a href=\"/topics/onkoloji/tls-cairo-bishop-howard-guncellemesi\" class=\"text-teal-700 underline font-semibold\">Cairo-Bishop ve Howard</a> · <a href=\"/topics/onkoloji/tls-rasburikaz-vs-allopurinol\" class=\"text-teal-700 underline font-semibold\">Rasburikaz mı Allopurinol mü</a> · <a href=\"/topics/onkoloji/tls-elektrolit-diyaliz-yonetimi\" class=\"text-teal-700 underline font-semibold\">Elektrolit ve Diyaliz</a></li></ul></div>"
     },
     {
-      "heading": "Yapısal ve Enfeksiyöz Aciller",
-      "text": "<ul class='list-disc pl-5 space-y-2 mt-2'><li><strong>Febril Nötropeni:</strong> Nötrofil < 500 ve Ateş > 38.3°C. Acil geniş spektrumlu antibiyotik (Anti-psödomonal) başlanmalıdır.</li><li><strong>Vena Cava Superior Sendromu:</strong> Yüzde şişme, nefes darlığı. Genellikle akciğer kanserine bağlıdır.</li><li><strong>Spinal Kord Basısı:</strong> Sırtta bant tarzı ağrı, güçsüzlük. Acil MR ve Steroid/Radyoterapi gerekir.</li></ul>"
+      "heading": "1. Ateşli Nötropeni",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Sitotoksik tedavi kemik iliğini ve bağırsak mukozasını bozduğunda bağırsak florası invaziv enfeksiyon yapabilir; nötrofil yanıtı baskılandığı için ateş çoğu kez tek belirtidir. Erken tanınmazsa sepsise ve ölüme ilerleyebilir (UpToDate, Wingard).</p><div class=\"overflow-x-auto mb-4\" role=\"region\" aria-label=\"Ateşli nötropenide çekirdek kurallar\" tabindex=\"0\"><table class=\"w-full min-w-[600px] text-[11px] border-collapse\"><thead><tr class=\"bg-slate-100\"><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Konu</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Kural</th></tr></thead><tbody class=\"text-slate-700\"><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Ateş</td><td class=\"border border-slate-200 p-2 align-top\">Tek ölçümde ağızdan ≥38,3 °C ya da 1 saat süren ≥38,0 °C (IDSA). Glukokortikoid ateşi baskılar: ateşsiz ama taşikardik, takipneik ya da hipotansif hastada da enfeksiyon düşünülür</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Nötropeni</td><td class=\"border border-slate-200 p-2 align-top\">Klinik önemli enfeksiyon riski ANS 500/µL altında artar, 100/µL altında daha da artar</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Sıklık</td><td class=\"border border-slate-200 p-2 align-top\">Düşük riskli solid tümör %5–10 · lösemi dışı hematolojik malignite %20–25 · akut lösemi %85–95</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Triyaj</td><td class=\"border border-slate-200 p-2 align-top\">Son 6 hafta içinde sistemik kanser tedavisi almış olmak nötropenik olma olasılığını gösterir</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">İlk adım</td><td class=\"border border-slate-200 p-2 align-top\">En az iki set kan kültürü (santral kateter varsa biri kateterden); hemen ardından, başvurudan itibaren 60 dakika içinde ampirik antibiyotik; görüntüleme ve laboratuvar tedaviyi geciktirmez</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Risk</td><td class=\"border border-slate-200 p-2 align-top\">Talcott, MASCC ve CISNE geçerli; MASCC ≥21 ya da CISNE 0 düşük risk. Skorlar nötropeninin derinliğine ve süresine bakmaz</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Yüksek risk</td><td class=\"border border-slate-200 p-2 align-top\">Yatış ve IV antipsödomonal beta-laktam monoterapisi (sefepim, meropenem, imipenem, piperasilin-tazobaktam)</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Düşük risk</td><td class=\"border border-slate-200 p-2 align-top\">İlk dozdan sonra en az 4 saat gözlem; ağızdan siprofloksasin 750 mg günde iki + amoksisilin-klavulanat</td></tr></tbody></table></div><p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Ayrıntı ve tüm dozlar: <a href=\"/topics/onkoloji/febril-notropeni-konu\" class=\"text-teal-700 underline font-semibold\">Febril Nötropeni</a>.</p>"
+    },
+    {
+      "heading": "2. Tümör Lizis Sendromu",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">TLS, hızlı çoğalan, tümör yükü büyük ya da tedaviye çok duyarlı bir kanserde tümör hücrelerinin topluca yıkılıp potasyum, fosfat ve ürik aside dönüşen nükleik asitleri dolaşıma boşaltmasıyla oluşur: hiperkalemi, hiperfosfatemi, ikincil hipokalsemi, hiperürisemi ve akut böbrek hasarı. Çoğu kez sitotoksik kemoterapiden sonra gelir; sitolitik antikor, ışın, tek başına glukokortikoid ya da venetoklaks, obinutuzumab, CAR-T da tetikleyebilir; bazen kendiliğinden başlar (UpToDate, Larson ve Pui).</p><div class=\"overflow-x-auto mb-4\" role=\"region\" aria-label=\"TLS tanımı (Cairo-Bishop, Howard değişikliğiyle)\" tabindex=\"0\"><table class=\"w-full min-w-[480px] text-[11px] border-collapse\"><thead><tr class=\"bg-slate-100\"><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Bileşen</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Ölçüt (erişkin)</th></tr></thead><tbody class=\"text-slate-700\"><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Laboratuvar TLS</td><td class=\"border border-slate-200 p-2 align-top\">Kemoterapiden 3 gün önce ile 7 gün sonra arasında en az ikisi: ürik asit ≥8 mg/dL · potasyum ≥6 mEq/L · fosfor ≥4,5 mg/dL · düzeltilmiş kalsiyum ≤7 mg/dL — ya da her biri için bazale göre %25 değişim. Howard: anormallikler aynı anda (24 saat içinde) bulunmalı</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Klinik TLS</td><td class=\"border border-slate-200 p-2 align-top\">Laboratuvar TLS + biri: kreatinin ≥1,5 × normalin üst sınırı · aritmi ya da ani ölüm · nöbet</td></tr></tbody></table></div><div class=\"overflow-x-auto mb-4\" role=\"region\" aria-label=\"TLS riski ve önleme\" tabindex=\"0\"><table class=\"w-full min-w-[420px] text-[11px] border-collapse\"><thead><tr class=\"bg-slate-100\"><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Risk</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Önleme</th></tr></thead><tbody class=\"text-slate-700\"><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Yüksek (&gt;%5): ör. Burkitt lösemi, ileri evre Burkitt lenfoma, BK ≥100 bin ALL ya da AML</td><td class=\"border border-slate-200 p-2 align-top\">IV sıvı + rasburikaz</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Orta (%1–5)</td><td class=\"border border-slate-200 p-2 align-top\">IV sıvı + allopurinol</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Düşük (&lt;%1)</td><td class=\"border border-slate-200 p-2 align-top\">İzlem</td></tr></tbody></table></div><p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Uygun önlemlere karşın hastaların yaklaşık %3–5'inde laboratuvar ya da klinik TLS gelişir. Risk sınıflaması uzlaşıya dayanır, ileriye dönük doğrulanmamıştır. Ayrıntı: <a href=\"/topics/onkoloji/tumor-lizis-sendromu-kapsamli\" class=\"text-teal-700 underline font-semibold\">Tümör Lizis Sendromu</a>.</p>"
+    },
+    {
+      "heading": "Çalışma Tablosu",
+      "html": "<div class=\"overflow-x-auto mb-4\" role=\"region\" aria-label=\"Onkolojik aciller çalışma tablosu\" tabindex=\"0\"><table class=\"w-full min-w-[480px] text-[11px] border-collapse\"><thead><tr class=\"bg-slate-100\"><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Konu</th><th class=\"border border-slate-200 p-2 text-left font-black text-slate-900 align-top\">Akılda tutulacak</th></tr></thead><tbody class=\"text-slate-700\"><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Ateşli nötropeni ateşi</td><td class=\"border border-slate-200 p-2 align-top\">≥38,3 °C tek ya da 1 saat ≥38,0 °C</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Antibiyotik zamanı</td><td class=\"border border-slate-200 p-2 align-top\">Kan kültüründen hemen sonra, 60 dk içinde</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Düşük risk</td><td class=\"border border-slate-200 p-2 align-top\">MASCC ≥21 · CISNE 0</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Yüksek risk tedavisi</td><td class=\"border border-slate-200 p-2 align-top\">IV antipsödomonal beta-laktam</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Düşük risk tedavisi</td><td class=\"border border-slate-200 p-2 align-top\">Siprofloksasin + amoksisilin-klavulanat</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Laboratuvar TLS</td><td class=\"border border-slate-200 p-2 align-top\">Ürik asit ≥8 · K ≥6 · P ≥4,5 · Ca ≤7</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Klinik TLS</td><td class=\"border border-slate-200 p-2 align-top\">+ kreatinin ≥1,5×, aritmi, nöbet</td></tr><tr><td class=\"border border-slate-200 p-2 align-top font-bold\">Önleme</td><td class=\"border border-slate-200 p-2 align-top\">Yüksek: rasburikaz · orta: allopurinol</td></tr></tbody></table></div>"
+    },
+    {
+      "heading": "Okurken Dikkat",
+      "html": "<div class=\"bg-slate-50 border border-slate-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-slate-800 text-[11px] uppercase mb-2\">Önceki sürüm</h4><ul class=\"text-[11px] text-slate-800 space-y-1.5 list-disc pl-4\"><li>Önceki sürümde yalnız iki başlık (“Metabolik Aciller”, “Yapısal ve Enfeksiyöz Aciller”) vardı, içerik yoktu. Sayfa bu sitede kaynaklı olarak işlenmiş iki acille dolduruldu.</li><li><strong>Omurilik basısı, vena kava superior sendromu, malignite hiperkalsemisi</strong> gibi öteki onkolojik aciller için bu sayfanın kaynak klasöründe yayın yok; kaynaksız özet yazılmadı. Kaynaklar eklendiğinde bu sayfaya bölüm olarak girer. Kanser ağrısında omurilik basısının ilk yönetimi: <a href=\"/topics/onkoloji/kanser-agrisi-yonetimi\" class=\"text-teal-700 underline font-semibold\">kanser ağrısı</a>.</li></ul></div>"
+    },
+    {
+      "heading": "Kaynaklar Arası Fark",
+      "html": "<p class=\"text-sm leading-relaxed mb-3 text-slate-700\">Ana sayfa iki alt sayfanın doğrulanmış çekirdeğini özetler; kaynaklar arasındaki farklar (ör. antibiyotiğe başlama süresi, rasburikaz dozu) alt sayfaların kendi Kaynaklar Arası Fark bölümlerinde.</p>"
     }
   ]
 }

@@ -7982,23 +7982,8 @@
  "onkoloji/onkolojik-aciller": [
   {
    "brans": "onkoloji",
-   "slug": "akciger-kanseri-ana-sayfa",
-   "baslik": "Akciğer Kanseri Epidemiyolojisi, Tarama Protokolleri ve Klinik Semptomatoloji Rehberi - Bölüm 1"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "kanser-agrisi-yonetimi",
-   "baslik": "Kanser Ağrısı Yönetimi"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "karaciger-kanserleri",
-   "baslik": "Karaciğer Kanserleri"
-  },
-  {
-   "brans": "onkoloji",
-   "slug": "pankreas-kanseri-ana-sayfa",
-   "baslik": "Pankreas Kanseri"
+   "slug": "tls-rasburikaz-vs-allopurinol",
+   "baslik": "TLS'de Farmakolojik Karşılaştırma: Rasburikaz vs Allopurinol"
   }
  ],
  "onkoloji/opioid-rotasyonu-2025-konsensus": [
@@ -8249,6 +8234,11 @@
    "brans": "romatoloji",
    "slug": "gut-hastaligi",
    "baslik": "Gut"
+  },
+  {
+   "brans": "onkoloji",
+   "slug": "onkolojik-aciller",
+   "baslik": "Onkolojik Aciller"
   }
  ],
  "onkoloji/tumor-lizis-sendromu-kapsamli": [

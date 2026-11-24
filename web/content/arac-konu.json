@@ -2014,15 +2014,19 @@
     ],
     "onkoloji/onkolojik-aciller": [
       {
+        "slug": "corrected-calcium",
+        "name": "Düzeltilmiş Kalsiyum",
+        "eslesen": "Düzeltilmiş Kalsiyum"
+      },
+      {
         "slug": "tumor-lizis",
         "name": "Tümör Lizis Sendromu",
         "eslesen": "Tümör Lizis Sendromu"
       },
       {
-        "slug": "corrected-calcium",
-        "name": "Düzeltilmiş Kalsiyum",
-        "eslesen": "onkolojik acil",
-        "kaynak": "kavram"
+        "slug": "cisne",
+        "name": "CISNE Skoru",
+        "eslesen": "CISNE"
       },
       {
         "slug": "mascc",
@@ -5360,8 +5364,8 @@
         "eslesen": "Düzeltilmiş Kalsiyum"
       },
       {
-        "yol": "onkoloji/tumor-lizis-sendromu-kapsamli",
-        "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)",
+        "yol": "onkoloji/onkolojik-aciller",
+        "baslik": "Onkolojik Aciller",
         "eslesen": "Düzeltilmiş Kalsiyum"
       },
       {
@@ -5376,10 +5380,9 @@
         "eslesen": "Düzeltilmiş Kalsiyum"
       },
       {
-        "yol": "onkoloji/onkolojik-aciller",
-        "baslik": "Onkolojik Aciller",
-        "eslesen": "onkolojik acil",
-        "kaynak": "kavram"
+        "yol": "onkoloji/tumor-lizis-sendromu-kapsamli",
+        "baslik": "Tümör Lizis Sendromu (TLS) Kapsamlı Çalışma Ünitesi (Güncellenmiş)",
+        "eslesen": "Düzeltilmiş Kalsiyum"
       },
       {
         "yol": "endokrinoloji/hiperparatiroidizm",
@@ -6708,6 +6711,11 @@
       {
         "yol": "onkoloji/febril-notropeni-konu",
         "baslik": "Febril Nötropeni: Tanı, Risk Sınıflaması ve Ampirik Tedavi",
+        "eslesen": "CISNE"
+      },
+      {
+        "yol": "onkoloji/onkolojik-aciller",
+        "baslik": "Onkolojik Aciller",
         "eslesen": "CISNE"
       },
       {
@@ -9219,7 +9227,7 @@
     "arac": 281,
     "araciOlanKonu": 352,
     "konusuOlanArac": 181,
-    "bag": 753,
-    "kavramBag": 610
+    "bag": 754,
+    "kavramBag": 609
   }
 }
