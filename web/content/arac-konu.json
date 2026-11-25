@@ -951,7 +951,7 @@
       {
         "slug": "retikulosit-indeksi",
         "name": "Retikülosit Üretim İndeksi",
-        "eslesen": "Retikülosit Üretim İndeksi"
+        "eslesen": "Retikülosit Üretim"
       }
     ],
     "hematoloji/antikoagulasyon-stratejileri": [
@@ -6111,8 +6111,8 @@
     ],
     "retikulosit-indeksi": [
       {
-        "yol": "hematoloji/anemiler",
-        "baslik": "Anemiler",
+        "yol": "hematoloji/hemolitik-anemiler-genel-bakis",
+        "baslik": "Hemolitik Anemiler",
         "eslesen": "Retikülosit Üretim İndeksi"
       },
       {
@@ -6122,9 +6122,9 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "hematoloji/hemolitik-anemiler-genel-bakis",
-        "baslik": "Hemolitik Anemiler",
-        "eslesen": "Retikülosit Üretim İndeksi"
+        "yol": "hematoloji/anemiler",
+        "baslik": "Anemiler",
+        "eslesen": "Retikülosit Üretim"
       },
       {
         "yol": "hematoloji/aplastik-anemi",

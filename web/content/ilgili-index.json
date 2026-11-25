@@ -4732,11 +4732,6 @@
  "hematoloji/anemiler": [
   {
    "brans": "hematoloji",
-   "slug": "folat-eksikligi",
-   "baslik": "Folat (B9 Vitamini) Eksikliği"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "g6pd-eksikligi",
    "baslik": "G6PD (Glukoz-6-Fosfat Dehidrogenaz) Eksikliği"
   },
@@ -4747,8 +4742,8 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "kursun-zehirlenmesi-anemisi",
-   "baslik": "Kurşun Zehirlenmesi ve Anemi"
+   "slug": "orak-hucreli-anemi",
+   "baslik": "Orak Hücreli Anemi"
   }
  ],
  "hematoloji/antikoagulasyon-stratejileri": [
@@ -4797,18 +4792,18 @@
   },
   {
    "brans": "hematoloji",
-   "slug": "allojenik-kok-hucre-nakli",
-   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
+   "slug": "gilteritinib-flt3-aml",
+   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
   },
   {
    "brans": "hematoloji",
-   "slug": "aml-tedavi-algoritmasi",
-   "baslik": "AML Tedavi Algoritması ve Klinik Yönetim"
+   "slug": "hematolojik-maligniteler",
+   "baslik": "Hematolojik Maligniteler"
   },
   {
    "brans": "hematoloji",
-   "slug": "aml",
-   "baslik": "Akut Miyeloid Lösemi (AML)"
+   "slug": "hemolitik-anemiler-genel-bakis",
+   "baslik": "Hemolitik Anemiler"
   }
  ],
  "hematoloji/dlbcl": [
@@ -4930,23 +4925,23 @@
  "hematoloji/folikuler-lenfoma": [
   {
    "brans": "hematoloji",
-   "slug": "gilteritinib-flt3-aml",
-   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hematolojik-maligniteler",
-   "baslik": "Hematolojik Maligniteler"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hemolitik-anemiler-genel-bakis",
-   "baslik": "Hemolitik Anemiler"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "immun-trombositopeni-itp",
    "baslik": "İmmün Trombositopeni (İTP) Tedavi ve Klinik Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "inme-sonrasi-gizli-af",
+   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "losemiler",
+   "baslik": "Lösemiler"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "makrositer-anemiler",
+   "baslik": "Makrositer Anemiler"
   }
  ],
  "hematoloji/g6pd-eksikligi": [
@@ -4954,6 +4949,11 @@
    "brans": "onkoloji",
    "slug": "tls-rasburikaz-vs-allopurinol",
    "baslik": "TLS'de Farmakolojik Karşılaştırma: Rasburikaz vs Allopurinol"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "anemiler",
+   "baslik": "Anemiler"
   },
   {
    "brans": "hematoloji",
@@ -5039,6 +5039,11 @@
  "hematoloji/hemolitik-anemiler-aiha": [
   {
    "brans": "hematoloji",
+   "slug": "anemiler",
+   "baslik": "Anemiler"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "g6pd-eksikligi",
    "baslik": "G6PD (Glukoz-6-Fosfat Dehidrogenaz) Eksikliği"
   },
@@ -5075,23 +5080,23 @@
  "hematoloji/hodgkin": [
   {
    "brans": "hematoloji",
-   "slug": "folikuler-lenfoma",
-   "baslik": "Foliküler Lenfoma"
+   "slug": "trombosit-hastaliklari-genel-bakis",
+   "baslik": "Trombosit Hastalıkları (Genel Bakış)"
   },
   {
    "brans": "hematoloji",
-   "slug": "gilteritinib-flt3-aml",
-   "baslik": "Gilteritinib: Relaps/Refrakter FLT3 Mutasyonlu AML Yönetimi"
+   "slug": "allojenik-kok-hucre-nakli",
+   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
   },
   {
    "brans": "hematoloji",
-   "slug": "hematolojik-maligniteler",
-   "baslik": "Hematolojik Maligniteler"
+   "slug": "aml-tedavi-algoritmasi",
+   "baslik": "AML Tedavi Algoritması ve Klinik Yönetim"
   },
   {
    "brans": "hematoloji",
-   "slug": "hemolitik-anemiler-genel-bakis",
-   "baslik": "Hemolitik Anemiler"
+   "slug": "aml",
+   "baslik": "Akut Miyeloid Lösemi (AML)"
   }
  ],
  "hematoloji/immun-trombositopeni-itp": [
@@ -5336,6 +5341,11 @@
  "hematoloji/kursun-zehirlenmesi-anemisi": [
   {
    "brans": "hematoloji",
+   "slug": "anemiler",
+   "baslik": "Anemiler"
+  },
+  {
+   "brans": "hematoloji",
    "slug": "aplastik-anemi",
    "baslik": "Aplastik Anemi"
   },
@@ -5348,11 +5358,6 @@
    "brans": "hematoloji",
    "slug": "folat-eksikligi",
    "baslik": "Folat (B9 Vitamini) Eksikliği"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "g6pd-eksikligi",
-   "baslik": "G6PD (Glukoz-6-Fosfat Dehidrogenaz) Eksikliği"
   }
  ],
  "hematoloji/losemiler": [
@@ -5409,21 +5414,6 @@
  "hematoloji/mikrositer-anemiler": [
   {
    "brans": "hematoloji",
-   "slug": "aplastik-anemi",
-   "baslik": "Aplastik Anemi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "b12-vitamini-eksikligi-pernisiyoz-anemi",
-   "baslik": "B12 Vitamini Eksikliği ve Pernisiyöz Anemi"
-  },
-  {
-   "brans": "hematoloji",
-   "slug": "hemolitik-anemiler-genel-bakis",
-   "baslik": "Hemolitik Anemiler"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "makrositer-anemiler",
    "baslik": "Makrositer Anemiler"
   }
@@ -5438,11 +5428,6 @@
  "hematoloji/miyeloproliferatif": [
   {
    "brans": "hematoloji",
-   "slug": "inme-sonrasi-gizli-af",
-   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
-  },
-  {
-   "brans": "hematoloji",
    "slug": "losemiler",
    "baslik": "Lösemiler"
   },
@@ -5455,6 +5440,11 @@
    "brans": "hematoloji",
    "slug": "trombosit-hastaliklari-genel-bakis",
    "baslik": "Trombosit Hastalıkları (Genel Bakış)"
+  },
+  {
+   "brans": "hematoloji",
+   "slug": "allojenik-kok-hucre-nakli",
+   "baslik": "Allojenik Hematopoetik Kök Hücre Nakli (Allo-HCT) Yönetimi"
   }
  ],
  "hematoloji/multiple-myelom": [
@@ -5470,6 +5460,11 @@
   }
  ],
  "hematoloji/orak-hucreli-anemi": [
+  {
+   "brans": "hematoloji",
+   "slug": "anemiler",
+   "baslik": "Anemiler"
+  },
   {
    "brans": "hematoloji",
    "slug": "g6pd-eksikligi",
@@ -5562,23 +5557,23 @@
  "hematoloji/porfiriler-aip-pct": [
   {
    "brans": "hematoloji",
-   "slug": "immun-trombositopeni-itp",
-   "baslik": "İmmün Trombositopeni (İTP) Tedavi ve Klinik Yönetimi"
+   "slug": "aml",
+   "baslik": "Akut Miyeloid Lösemi (AML)"
   },
   {
    "brans": "hematoloji",
-   "slug": "inme-sonrasi-gizli-af",
-   "baslik": "İnme Sonrası Gizli Atriyal Fibrilasyon: Saptama ve Antikoagülasyon Yönetimi"
+   "slug": "anemiler",
+   "baslik": "Anemiler"
   },
   {
    "brans": "hematoloji",
-   "slug": "losemiler",
-   "baslik": "Lösemiler"
+   "slug": "antikoagulasyon-stratejileri",
+   "baslik": "Antikoagülasyon Stratejileri ve Klinik Yönetim"
   },
   {
    "brans": "hematoloji",
-   "slug": "makrositer-anemiler",
-   "baslik": "Makrositer Anemiler"
+   "slug": "esansiyel-trombositoz",
+   "baslik": "Esansiyel Trombositemi (ET)"
   }
  ],
  "hematoloji/primer-miyelofibrozis": [
