@@ -2174,11 +2174,6 @@
         "eslesen": "eGFR"
       },
       {
-        "slug": "esas",
-        "name": "ESAS",
-        "eslesen": "ESAS"
-      },
-      {
         "slug": "abbey",
         "name": "Abbey Ağrı Skalası",
         "eslesen": "palyatif bakımda ağrı",
@@ -2200,6 +2195,12 @@
         "slug": "spict",
         "name": "SPICT",
         "eslesen": "palyatif bakım",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "esas",
+        "name": "ESAS",
+        "eslesen": "palyatif",
         "kaynak": "kavram"
       }
     ],
@@ -6843,8 +6844,8 @@
         "eslesen": "ESAS"
       },
       {
-        "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
-        "baslik": "Palyatif Bakımda Ağrı Yönetimi",
+        "yol": "palyatif/pankreas-agrisinda-tanisal-degerlendirme",
+        "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme",
         "eslesen": "ESAS"
       },
       {
@@ -6854,14 +6855,15 @@
         "kaynak": "kavram"
       },
       {
-        "yol": "palyatif/pankreas-agrisinda-tanisal-degerlendirme",
-        "baslik": "Pankreas Kanseri Ağrısında Tanısal Değerlendirme",
-        "eslesen": "ESAS"
-      },
-      {
         "yol": "palyatif/noropatik-agrida-koadjuvan-tedavi",
         "baslik": "Kanser Ağrısında Nöropatik Koadjuvan Tedavi",
         "eslesen": "kanser ağrı",
+        "kaynak": "kavram"
+      },
+      {
+        "yol": "palyatif/palyatif-bakimda-agri-yonetimi",
+        "baslik": "Palyatif Bakımda Ağrı Yönetimi",
+        "eslesen": "palyatif",
         "kaynak": "kavram"
       }
     ],
@@ -9260,6 +9262,6 @@
     "araciOlanKonu": 353,
     "konusuOlanArac": 181,
     "bag": 758,
-    "kavramBag": 609
+    "kavramBag": 610
   }
 }
