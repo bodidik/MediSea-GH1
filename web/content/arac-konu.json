@@ -2107,6 +2107,19 @@
         "eslesen": "Anafilaksi"
       }
     ],
+    "palyatif/opioid-rotasyonu-ilkeleri": [
+      {
+        "slug": "qtc",
+        "name": "QTc Hesaplayıcı",
+        "eslesen": "QTc"
+      },
+      {
+        "slug": "opioid-donusum",
+        "name": "Opioid Eşdeğer Doz",
+        "eslesen": "opioid rotasyon",
+        "kaynak": "kavram"
+      }
+    ],
     "palyatif/opioidler-ana-sayfa": [
       {
         "slug": "opioid-donusum",
@@ -4878,14 +4891,6 @@
         "kaynak": "kavram"
       }
     ],
-    "palyatif/opioid-rotasyonu-ilkeleri": [
-      {
-        "slug": "opioid-donusum",
-        "name": "Opioid Eşdeğer Doz",
-        "eslesen": "opioid rotasyon",
-        "kaynak": "kavram"
-      }
-    ],
     "romatoloji/anca-iliskili-vaskulitler": [
       {
         "slug": "anca-vaskulit",
@@ -5114,6 +5119,11 @@
         "eslesen": "QTc"
       },
       {
+        "yol": "palyatif/opioid-rotasyonu-ilkeleri",
+        "baslik": "İleri Okuma: Opioid Rotasyonu ve Eşdeğer Doz Hesaplamaları",
+        "eslesen": "QTc"
+      },
+      {
         "yol": "endokrinoloji/hiperparatiroidizm",
         "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları",
         "eslesen": "QTc"
@@ -5126,11 +5136,6 @@
       {
         "yol": "hematoloji/kml",
         "baslik": "Kronik Miyeloid Lösemi (KML)",
-        "eslesen": "QTc"
-      },
-      {
-        "yol": "endokrinoloji/men1-hipokalemi-aritmojenik-sinerji",
-        "baslik": "MEN1'de Hipokalemi ve Aritmojenik Sinerji: Potasyum 4.5–5.0 mmol/L Kuralı",
         "eslesen": "QTc"
       }
     ],
@@ -9254,7 +9259,7 @@
     "arac": 281,
     "araciOlanKonu": 353,
     "konusuOlanArac": 181,
-    "bag": 757,
+    "bag": 758,
     "kavramBag": 609
   }
 }
