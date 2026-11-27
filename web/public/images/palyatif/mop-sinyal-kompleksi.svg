@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" role="img" aria-labelledby="t d">
   <title id="t">Mü-opioid reseptör sinyal kompleksi: akut yanıt</title>
-  <desc id="d">Spinal arka boynuz sinapsı. Presinaptik uçta opioidin bağlandığı MOP, Gi/o proteinini aktive eder; Gi/o adenilat siklazı baskılar (cAMP azalır) ve voltaj kapılı N ve P/Q tipi kalsiyum kanallarını inhibe eder, böylece glutamat ve P maddesi salınımı azalır. Postsinaptik nöronda MOP–Gi/o, GIRK potasyum kanallarını açar; potasyum çıkışı hiperpolarizasyon yapar ve nöron daha zor uyarılır.</desc>
+  <desc id="d">Spinal arka boynuz sinapsı. Presinaptik uçta opioidin bağlandığı MOP, Gi/o proteinini aktive eder; Gi/o adenilat siklazı baskılar (cAMP azalır) ve voltaj kapılı voltaj kapılı kalsiyum kanallarını inhibe eder, böylece glutamat ve P maddesi salınımı azalır. Postsinaptik nöronda MOP–Gi/o, GIRK potasyum kanallarını açar; potasyum çıkışı hiperpolarizasyon yapar ve nöron daha zor uyarılır.</desc>
   <!--
     Animasyon: 12 sn'lik tek döngü, sıra = sinyalin sırası.
     Son kare = statik şemanın tamamı; hareket azaltma tercihinde animasyon
@@ -170,7 +170,7 @@
   <g class="a g3">
     <path class="a ciz" pathLength="1" d="M104,160 Q300,150 462,272" stroke="#dc2626" stroke-width="2.2" fill="none" marker-end="url(#tbar)"/>
   </g>
-  <text x="510" y="258" font-size="13" fill="#4c1d95">N ve P/Q tipi</text>
+  <text x="510" y="258" font-size="13" fill="#4c1d95">Voltaj kapılı</text>
   <text x="510" y="274" font-size="13" fill="#4c1d95">Ca²⁺ kanalı</text>
   <!-- Ca girişi engelli -->
   <path d="M469,360 L469,240" stroke="#7c3aed" stroke-width="2" stroke-dasharray="5 4" fill="none" marker-end="url(#okK)"/>

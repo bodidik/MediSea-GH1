@@ -2120,6 +2120,13 @@
         "kaynak": "kavram"
       }
     ],
+    "palyatif/opioid-toleransi-mekanizmalari": [
+      {
+        "slug": "opioid-donusum",
+        "name": "Opioid Eşdeğer Doz",
+        "eslesen": "Opioid Eşdeğer Doz"
+      }
+    ],
     "palyatif/opioidler-ana-sayfa": [
       {
         "slug": "opioid-donusum",
@@ -6869,6 +6876,11 @@
     ],
     "opioid-donusum": [
       {
+        "yol": "palyatif/opioid-toleransi-mekanizmalari",
+        "baslik": "İleri Okuma: Opioid Toleransı — Mekanizmalar ve Klinik Yaklaşım",
+        "eslesen": "Opioid Eşdeğer Doz"
+      },
+      {
         "yol": "onkoloji/kanser-agrisi-yonetimi",
         "baslik": "Kanser Ağrısı Yönetimi",
         "eslesen": "Opioid Eşdeğer Doz"
@@ -9259,9 +9271,9 @@
   "olcum": {
     "konu": 489,
     "arac": 281,
-    "araciOlanKonu": 353,
+    "araciOlanKonu": 354,
     "konusuOlanArac": 181,
-    "bag": 758,
+    "bag": 759,
     "kavramBag": 610
   }
 }
