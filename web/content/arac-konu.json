@@ -753,6 +753,24 @@
         "eslesen": "Anyon Açığı"
       }
     ],
+    "gastroenteroloji/siroz-ve-komplikasyonlari": [
+      {
+        "slug": "hrs-aki",
+        "name": "Hepatorenal Sendrom (HRS-AKI)",
+        "eslesen": "Hepatorenal Sendrom"
+      },
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "Child-Pugh"
+      },
+      {
+        "slug": "meld-na",
+        "name": "MELD-Na Skoru",
+        "eslesen": "siroz",
+        "kaynak": "kavram"
+      }
+    ],
     "gastroenteroloji/tips-hasta-secimi": [
       {
         "slug": "child-pugh",
@@ -3568,26 +3586,6 @@
         "kaynak": "kavram"
       }
     ],
-    "gastroenteroloji/siroz-ve-komplikasyonlari": [
-      {
-        "slug": "child-pugh",
-        "name": "Child-Pugh Sınıflaması",
-        "eslesen": "siroz",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "hrs-aki",
-        "name": "Hepatorenal Sendrom (HRS-AKI)",
-        "eslesen": "siroz",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "meld-na",
-        "name": "MELD-Na Skoru",
-        "eslesen": "siroz",
-        "kaynak": "kavram"
-      }
-    ],
     "genel-dahiliye/kikuchi-fujimoto-sle": [
       {
         "slug": "sle",
@@ -5883,8 +5881,7 @@
       {
         "yol": "gastroenteroloji/siroz-ve-komplikasyonlari",
         "baslik": "Siroz ve Komplikasyonları",
-        "eslesen": "siroz",
-        "kaynak": "kavram"
+        "eslesen": "Hepatorenal Sendrom"
       }
     ],
     "meld-na": [
@@ -9272,6 +9269,6 @@
     "araciOlanKonu": 354,
     "konusuOlanArac": 181,
     "bag": 759,
-    "kavramBag": 609
+    "kavramBag": 607
   }
 }
