@@ -2026,7 +2026,7 @@
       {
         "slug": "qtc",
         "name": "QTc Hesaplayıcı",
-        "eslesen": "QTc"
+        "eslesen": "QTc Hesaplayıcı"
       }
     ],
     "onkoloji/onkolojik-aciller": [
@@ -5105,8 +5105,8 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
-        "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
+        "yol": "onkoloji/metadon-rotasyonu-ve-kardiyak-guvenlik",
+        "baslik": "Metadon Rotasyonu: 3 Gün Geçiş Yöntemi ve Kardiyak Güvenlik",
         "eslesen": "QTc Hesaplayıcı"
       },
       {
@@ -5130,9 +5130,9 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "onkoloji/buprenorfin-rotasyonu-ve-induksiyon",
-        "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması",
-        "eslesen": "QTc"
+        "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
+        "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
+        "eslesen": "QTc Hesaplayıcı"
       },
       {
         "yol": "hematoloji/kml",
