@@ -38,10 +38,6 @@
     {
       "heading": "Okurken Dikkat",
       "html": "<div class=\"bg-slate-50 border border-slate-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-slate-900 text-[11px] uppercase mb-2\">Önceki sürümden düzeltilenler</h4><ul class=\"text-[11px] text-slate-900 space-y-1.5 list-disc pl-4\"><li><strong>“Böbrek damarlarını tutar (hipertansiyon, infarkt)”:</strong> kaynakta böbrek tutulumu en sık hipertansiyon, böbrek yetmezliği ya da mikroanevrizma kanamasıdır; düzeltildi. Glomerülonefrit yokluğu doğru, korundu.</li><li><strong>“Düşük ayak” ve “tespih tanesi mikroanevrizmalar”:</strong> kaynak PAN'da periferik nöropati ve mononöritis multipleks ile 1 cm'ye kadar anevrizmal genişlemeleri yazar; “boncuk dizisi” benzetmesini Kawasaki'nin koroner arterleri için kullanır. Düzeltildi.</li><li><strong>Kawasaki “5 yaş altı çocuklarda”:</strong> kaynakta olguların %80'i 5 yaştan önce; tepe ≤2 yaş. Düzeltildi.</li><li><strong>CRASH kısaltması ve “5 günden uzun süren ateş”:</strong> elimizdeki kaynakta yok; çıkarıldı. Kaynağın saydığı bulgular kondu.</li><li><strong>“IVIG + aspirin”:</strong> dozlar ve zamanlama kaynaktan eklendi.</li><li><strong>Eklenenler:</strong> PAN patolojisi, HBV/HCV, tüylü hücreli lösemi ve DADA2 ilişkisi, organ tutulumu tablosu, laboratuvar, tanı, tedavi ve seyir; Kawasaki'de koroner seyir, cerrahi ve MIS-C.</li></ul></div>"
-    },
-    {
-      "heading": "Kaynaklar Arası Fark",
-      "html": "<p class=\"text-[11.5px] leading-relaxed mb-3 text-slate-700\">Bu sayfanın metni tek kaynaktan, Harrison 22. baskının vaskülit bölümünden alındı. Aşağıdaki fark aynı bölümün içindeki iki ifade arasındadır.</p><div class=\"bg-violet-50 border border-violet-200 p-4 rounded-xl shadow-sm mb-4\"><h4 class=\"font-black text-violet-900 text-[11px] uppercase mb-2\">Kawasaki'de ölüm oranı</h4><ul class=\"text-[11px] text-violet-900 space-y-1.5 list-disc pl-4\"><li><strong>Koroner paragrafı:</strong> genel olgu ölüm oranı %0,5–2,8.</li><li><strong>Tedavi paragrafı:</strong> “ölümcül komplikasyon gelişen %2,8'e kadar hasta” — yalnız üst sınır verilir. Tercih sizin.</li></ul></div>"
     }
   ]
 }
