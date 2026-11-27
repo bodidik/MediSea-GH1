@@ -2294,6 +2294,11 @@
     ],
     "romatoloji/romatoid-artrit": [
       {
+        "slug": "rapid3",
+        "name": "RAPID3",
+        "eslesen": "RAPID3"
+      },
+      {
         "slug": "das28",
         "name": "DAS28 (ESR/CRP)",
         "eslesen": "DAS28"
@@ -2311,12 +2316,6 @@
       {
         "slug": "haq-di",
         "name": "HAQ-DI",
-        "eslesen": "romatoid artrit (RA)",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "rapid3",
-        "name": "RAPID3",
         "eslesen": "romatoid artrit (RA)",
         "kaynak": "kavram"
       },
@@ -7113,6 +7112,13 @@
         "kaynak": "kavram"
       }
     ],
+    "rapid3": [
+      {
+        "yol": "romatoloji/romatoid-artrit",
+        "baslik": "Romatoid Artrit (RA)",
+        "eslesen": "RAPID3"
+      }
+    ],
     "sdai": [
       {
         "yol": "romatoloji/romatoid-artrit",
@@ -9258,14 +9264,6 @@
         "eslesen": "romatoid artrit (RA)",
         "kaynak": "kavram"
       }
-    ],
-    "rapid3": [
-      {
-        "yol": "romatoloji/romatoid-artrit",
-        "baslik": "Romatoid Artrit (RA)",
-        "eslesen": "romatoid artrit (RA)",
-        "kaynak": "kavram"
-      }
     ]
   },
   "olcum": {
@@ -9274,6 +9272,6 @@
     "araciOlanKonu": 354,
     "konusuOlanArac": 181,
     "bag": 759,
-    "kavramBag": 610
+    "kavramBag": 609
   }
 }
