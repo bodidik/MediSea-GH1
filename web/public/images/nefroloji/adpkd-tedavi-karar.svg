@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 820" width="640" height="820" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">ADPKD tedavisinde karar yolu</title>
+<desc id="d">Herkese: sodyum günde 2 g ve altı, sağlıklı kilo, haftada en az 150 dakika orta yoğunlukta egzersiz, eGFR 30 ve üstünde ve hiponatremi riski yoksa günde en az 2–3 litre su. Kan basıncı: ACE inhibitörü ya da ARB, kombinasyon yok; 18–49 yaş, KBH G1–G2 ve KB 130/85 üstünde ev ölçümüyle 110/75 ve altı; 50 yaş ve üstü ya da G3–G5'te ofis sistolik 120 altı. Hızlı ilerleme riski (Mayo 1C–1E ya da yılda 3 mL/dk üstü eGFR kaybı) ve eGFR 25 ve üstündeyse tolvaptan; 55 yaş üstünde ortak karar. Tolvaptan 45 + 15 mg ile başlar, karaciğer testleri ilk 18 ay aylık sonra 3 ayda bir. Önerilmeyenler: mTOR inhibitörü, diyabetsizde metformin, statin yalnız ilerleme için, SGLT2i ve GLP-1 RA, ketojenik diyet.</desc>
+<!-- 12 sn; son kare = statik şemanın tamamı. Hareket azaltmada animasyon çalışmaz. -->
+<style>
+.a{animation-duration:12s;animation-iteration-count:1;animation-timing-function:ease-in-out;animation-fill-mode:both}
+.ciz{stroke-dasharray:1}
+.s1{animation-name:s1}@keyframes s1{0%{opacity:0;transform:translateY(8px)}3%,100%{opacity:1;transform:none}}
+.s2{animation-name:s2}@keyframes s2{0%,17%{opacity:0;transform:translateY(8px)}20%,100%{opacity:1;transform:none}}
+.s3{animation-name:s3}@keyframes s3{0%,33%{opacity:0;transform:translateY(8px)}36%,100%{opacity:1;transform:none}}
+.s4{animation-name:s4}@keyframes s4{0%,50%{opacity:0;transform:translateY(8px)}53%,100%{opacity:1;transform:none}}
+.s5{animation-name:s5}@keyframes s5{0%,67%{opacity:0;transform:translateY(8px)}70%,100%{opacity:1;transform:none}}
+.s2 .ciz{animation-name:c2}@keyframes c2{0%,17%{stroke-dashoffset:1}22%,100%{stroke-dashoffset:0}}
+.s3 .ciz{animation-name:c3}@keyframes c3{0%,33%{stroke-dashoffset:1}38%,100%{stroke-dashoffset:0}}
+.s4 .ciz{animation-name:c4}@keyframes c4{0%,50%{stroke-dashoffset:1}55%,100%{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){.a{animation:none!important}}
+</style>
+<defs><marker id="ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect width="640" height="820" fill="#ffffff"/>
+<text x="320" y="30" text-anchor="middle" font-size="17" font-weight="800" fill="#0f172a">ADPKD tedavisinde karar yolu (KDIGO 2025)</text>
+
+<g class="a s1"><rect x="20" y="48" width="600" height="118" rx="10" fill="#ecfdf5" stroke="#059669"/>
+<text x="36" y="72" font-size="13" font-weight="800" fill="#064e3b">1. Herkese</text>
+<text x="36" y="94" font-size="12" fill="#065f46">Sodyum ≤2 g/gün (UpToDate) · sağlıklı kilo (böbrek ağırlığını BMI'dan düş)</text>
+<text x="36" y="114" font-size="12" fill="#065f46">Orta yoğunlukta egzersiz ≥150 dk/hafta + haftada ≥2 kuvvet</text>
+<text x="36" y="134" font-size="12" fill="#065f46">Su ≥2–3 L/gün: eGFR ≥30 ve hiponatremi riski yoksa</text>
+<text x="36" y="154" font-size="12" fill="#065f46">(SSRI, trisiklik, tiyazid kullananda dikkat)</text></g>
+
+<g class="a s2"><path class="a ciz" pathLength="1" d="M320,166 L320,190" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ok)"/>
+<rect x="20" y="192" width="600" height="118" rx="10" fill="#eff6ff" stroke="#2563eb"/>
+<text x="36" y="216" font-size="13" font-weight="800" fill="#1e3a8a">2. Kan basıncı: ACEi ya da ARB (ACEi + ARB + DRI kombinasyonu YOK)</text>
+<text x="36" y="240" font-size="12" fill="#1e40af">18–49 yaş · G1–G2 · KB &gt;130/85 → ev ölçümüyle ≤110/75</text>
+<text x="36" y="260" font-size="12" fill="#1e40af">18–49 yaş · G1–G2 · KB 110/75–130/85 arası → bireysel, ortak karar</text>
+<text x="36" y="280" font-size="12" fill="#1e40af">≥50 yaş ve/veya G3–G5 → standart ofis ölçümüyle sistolik &lt;120</text>
+<text x="36" y="300" font-size="12" fill="#1e40af">≥3 ilaca dirençli KB → uyum ve başka neden araştır</text></g>
+
+<g class="a s3"><path class="a ciz" pathLength="1" d="M320,310 L320,334" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ok)"/>
+<rect x="20" y="336" width="600" height="96" rx="10" fill="#fef3c7" stroke="#d97706"/>
+<text x="36" y="360" font-size="13" font-weight="800" fill="#78350f">3. Hızlı ilerleme riski var mı?</text>
+<text x="36" y="382" font-size="12" fill="#92400e">Mayo görüntüleme sınıfı 1C–1E (tercihen MR; düşük doz BT, yoksa USG elipsoid)</text>
+<text x="36" y="402" font-size="12" fill="#92400e">ya da 3–5 yılda yılda ≥3 mL/dk/1,73 m² eGFR kaybı · ya da PROPKD skoru &gt;6</text>
+<text x="36" y="422" font-size="12" fill="#92400e">Atipik görüntüleme (sınıf 2) bu sınıflamaya girmez</text></g>
+
+<g class="a s4"><path class="a ciz" pathLength="1" d="M320,432 L320,456" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ok)"/>
+<rect x="20" y="458" width="600" height="160" rx="10" fill="#fff1f2" stroke="#e11d48"/>
+<text x="36" y="482" font-size="13" font-weight="800" fill="#881337">4. Evet + eGFR ≥25 → tolvaptan (yaş &gt;55: ortak karar)</text>
+<text x="36" y="506" font-size="12" fill="#9f1239">Başlangıç: uyanınca 45 mg + 8 saat sonra 15 mg; tolerans içinde artır</text>
+<text x="36" y="526" font-size="12" fill="#9f1239">Mutlak kontrendikasyon: gebelik/planı, emzirme, susuzluğu algılayamama,</text>
+<text x="36" y="546" font-size="12" fill="#9f1239">hipernatremi, idrar yolu tıkanması, güçlü CYP3A inhibitörü, ciddi karaciğer hastalığı</text>
+<text x="36" y="570" font-size="12" font-weight="700" fill="#881337">KFT: ilk 18 ay AYLIK, sonra 3 ayda bir (ALT &gt;3×ÜSN: ~%5 ↔ plasebo %1)</text>
+<text x="36" y="594" font-size="12" fill="#9f1239">Hasta günü planı: sıvı kaybı riskinde doz atlanır</text>
+<text x="36" y="612" font-size="12" fill="#9f1239">İyi tolere ediliyorsa &gt;55 yaşta ya da eGFR &lt;25'te sürdürülebilir</text></g>
+
+<g class="a s5"><rect x="20" y="640" width="600" height="160" rx="10" fill="#f1f5f9" stroke="#64748b"/>
+<text x="36" y="664" font-size="13" font-weight="800" fill="#0f172a">İlerlemeyi yavaşlatmak için ÖNERİLMEYENLER</text>
+<text x="36" y="688" font-size="12" fill="#334155">mTOR inhibitörü · metformin (diyabetsizde) · statin (yalnız bu amaçla)</text>
+<text x="36" y="708" font-size="12" fill="#334155">SGLT2i ve GLP-1 RA (önerilmez, kanıt bekleniyor) · ketojenik diyet</text>
+<text x="36" y="732" font-size="12" fill="#334155">Somatostatin analoğu: yalnız eGFR için değil; dev böbreğe bağlı ağır</text>
+<text x="36" y="752" font-size="12" fill="#334155">belirtide, daha iyi seçenek yoksa düşünülebilir</text>
+<text x="36" y="780" font-size="12" fill="#334155">Diyabetli ADPKD'de: eGFR ≥30 metformin, &lt;30 GLP-1 RA (glisemi için)</text></g>
+</svg>
