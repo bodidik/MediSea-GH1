@@ -48,8 +48,8 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="/topics/onkoloji/buprenorfin-rotasyonu-ve-induksiyon" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Buprenorfin Rotasyonu ve İndüksiyon Şeması
+              <Link href="/topics/onkoloji/opioid-rotasyonu-2025-konsensus" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs
               </Link>
             </li>
             <li>

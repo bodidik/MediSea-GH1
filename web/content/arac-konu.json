@@ -2062,7 +2062,7 @@
       {
         "slug": "qtc",
         "name": "QTc Hesaplayıcı",
-        "eslesen": "QTc"
+        "eslesen": "QTc Hesaplayıcı"
       },
       {
         "slug": "opioid-donusum",
@@ -5105,9 +5105,9 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "onkoloji/buprenorfin-rotasyonu-ve-induksiyon",
-        "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması",
-        "eslesen": "QTc"
+        "yol": "onkoloji/opioid-rotasyonu-2025-konsensus",
+        "baslik": "Kanser Ağrısında Opioid Rotasyonu: 2025 Uluslararası Konsensüs",
+        "eslesen": "QTc Hesaplayıcı"
       },
       {
         "yol": "hematoloji/gilteritinib-flt3-aml",
@@ -5130,8 +5130,8 @@
         "eslesen": "QTc"
       },
       {
-        "yol": "onkoloji/kanser-agrisi-yonetimi",
-        "baslik": "Kanser Ağrısı Yönetimi",
+        "yol": "onkoloji/buprenorfin-rotasyonu-ve-induksiyon",
+        "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması",
         "eslesen": "QTc"
       },
       {
