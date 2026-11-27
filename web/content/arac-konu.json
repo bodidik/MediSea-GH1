@@ -227,6 +227,37 @@
         "kaynak": "kavram"
       }
     ],
+    "endokrinoloji/osteoporoz-tedavisi": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "dxa-skoru",
+        "name": "DXA T ve Z Skoru Yorumu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "genant-vertebra",
+        "name": "Genant Vertebral Kırık Derecesi",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "osta",
+        "name": "OSTA",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "temd-kirik-riski",
+        "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      }
+    ],
     "endokrinoloji/primer-hiperaldosteronizm-conn": [
       {
         "slug": "aldosteron-renin",
@@ -3097,32 +3128,6 @@
       }
     ],
     "endokrinoloji/osteoporoz-tedavi-kilavuz-karsilastirma": [
-      {
-        "slug": "dxa-skoru",
-        "name": "DXA T ve Z Skoru Yorumu",
-        "eslesen": "osteoporoz",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "genant-vertebra",
-        "name": "Genant Vertebral Kırık Derecesi",
-        "eslesen": "osteoporoz",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "osta",
-        "name": "OSTA",
-        "eslesen": "osteoporoz",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "temd-kirik-riski",
-        "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
-        "eslesen": "osteoporoz",
-        "kaynak": "kavram"
-      }
-    ],
-    "endokrinoloji/osteoporoz-tedavisi": [
       {
         "slug": "dxa-skoru",
         "name": "DXA T ve Z Skoru Yorumu",
@@ -9268,7 +9273,7 @@
     "arac": 281,
     "araciOlanKonu": 354,
     "konusuOlanArac": 181,
-    "bag": 759,
+    "bag": 760,
     "kavramBag": 607
   }
 }
