@@ -48,6 +48,11 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
               </Link>
             </li>
             <li>
+              <Link href="/topics/endokrinoloji/sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
+                SGLT2 İnhibitörleri: Pleiotropik Etkiler ve Advers Profil
+              </Link>
+            </li>
+            <li>
               <Link href="/topics/gastroenteroloji/kisa-bagirsak-sendromu" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Kısa Bağırsak Sendromu (KBS)
               </Link>
@@ -55,11 +60,6 @@ export default function AracDuzen({ children }: { children: ReactNode }) {
             <li>
               <Link href="/topics/nefroloji/asit-baz-denge-bozukluklari" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
                 Asit-Baz Denge Bozuklukları
-              </Link>
-            </li>
-            <li>
-              <Link href="/topics/nefroloji/asit-baz-kompanzasyon-ilkeleri" className="block rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm font-bold text-slate-600 hover:border-blue-900/30 hover:text-blue-900 transition-colors">
-                Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi
               </Link>
             </li>
           </ul>

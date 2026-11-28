@@ -334,6 +334,11 @@
     ],
     "endokrinoloji/sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler": [
       {
+        "slug": "anion-gap",
+        "name": "Anyon Açığı",
+        "eslesen": "Anyon Açığı"
+      },
+      {
         "slug": "egfr",
         "name": "eGFR (CKD-EPI 2021)",
         "eslesen": "eGFR"
@@ -5691,6 +5696,48 @@
         "eslesen": "Metabolik Sendrom"
       }
     ],
+    "anion-gap": [
+      {
+        "yol": "nefroloji/asetazolamid-etki-mekanizmasi",
+        "baslik": "Asetazolamid: Proksimal Tübülde Etki Mekanizması",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "endokrinoloji/sglt2-inhibitorleri-pleiotropik-ve-yan-etkiler",
+        "baslik": "SGLT2 İnhibitörleri: Pleiotropik Etkiler ve Advers Profil",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "gastroenteroloji/kisa-bagirsak-sendromu",
+        "baslik": "Kısa Bağırsak Sendromu (KBS)",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/asit-baz-denge-bozukluklari",
+        "baslik": "Asit-Baz Denge Bozuklukları",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/asit-baz-kompanzasyon-ilkeleri",
+        "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/delta-anyon-acigi-delta-delta-orani",
+        "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/metabolik-alkaloz",
+        "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim",
+        "eslesen": "Anyon Açığı"
+      },
+      {
+        "yol": "nefroloji/metabolik-asidoz",
+        "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri",
+        "eslesen": "Anyon Açığı"
+      }
+    ],
     "anaphylaxis": [
       {
         "yol": "enfeksiyon/dalbavansin-alerji-ve-capraz-duyarlilik",
@@ -5939,48 +5986,6 @@
         "baslik": "TIPS Hasta Seçimi: Endikasyonlar, Adaylık Kriterleri ve Kontrendikasyonlar",
         "eslesen": "TIPS",
         "kaynak": "kavram"
-      }
-    ],
-    "anion-gap": [
-      {
-        "yol": "nefroloji/asetazolamid-etki-mekanizmasi",
-        "baslik": "Asetazolamid: Proksimal Tübülde Etki Mekanizması",
-        "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "gastroenteroloji/kisa-bagirsak-sendromu",
-        "baslik": "Kısa Bağırsak Sendromu (KBS)",
-        "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "nefroloji/asit-baz-denge-bozukluklari",
-        "baslik": "Asit-Baz Denge Bozuklukları",
-        "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "nefroloji/asit-baz-kompanzasyon-ilkeleri",
-        "baslik": "Asit-Baz Dengesi ve Kompanzasyon İlkeleri: Uzman Klinik Rehberi",
-        "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "nefroloji/delta-anyon-acigi-delta-delta-orani",
-        "baslik": "Delta Anyon Açığı (Delta-Delta Oranı): Patofizyolojik Esaslar ve Klinik Yorumlama",
-        "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "nefroloji/metabolik-alkaloz",
-        "baslik": "Metabolik Alkaloz: Fizyopatoloji, Etiyoloji, Tanısal Değerlendirme ve Klinik Yönetim",
-        "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "nefroloji/metabolik-asidoz",
-        "baslik": "Metabolik Asidoz: Fizyopatolojik Esaslar, Tanısal Algoritmalar ve Tedavi İlkeleri",
-        "eslesen": "Anyon Açığı"
-      },
-      {
-        "yol": "nefroloji/respiratuvar-alkaloz",
-        "baslik": "Respiratuvar Alkaloz: Fizyopatoloji, Etiyoloji, Sistemik Etkiler ve Klinik Yönetim",
-        "eslesen": "Anyon Açığı"
       }
     ],
     "surucu-basinc": [
@@ -9283,7 +9288,7 @@
     "arac": 281,
     "araciOlanKonu": 354,
     "konusuOlanArac": 181,
-    "bag": 761,
+    "bag": 762,
     "kavramBag": 607
   }
 }
