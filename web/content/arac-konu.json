@@ -39,6 +39,37 @@
         "kaynak": "kavram"
       }
     ],
+    "endokrinoloji/erkek-osteoporozu-ana-sayfa": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "dxa-skoru",
+        "name": "DXA T ve Z Skoru Yorumu",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "genant-vertebra",
+        "name": "Genant Vertebral Kırık Derecesi",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "osta",
+        "name": "OSTA",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "temd-kirik-riski",
+        "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
+        "eslesen": "osteoporoz",
+        "kaynak": "kavram"
+      }
+    ],
     "endokrinoloji/gebelikte-hipertiroidi-kilavuz-karsilastirmasi": [
       {
         "slug": "tft",
@@ -2587,32 +2618,6 @@
         "kaynak": "kavram"
       }
     ],
-    "endokrinoloji/erkek-osteoporozu-ana-sayfa": [
-      {
-        "slug": "dxa-skoru",
-        "name": "DXA T ve Z Skoru Yorumu",
-        "eslesen": "osteoporoz",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "genant-vertebra",
-        "name": "Genant Vertebral Kırık Derecesi",
-        "eslesen": "osteoporoz",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "osta",
-        "name": "OSTA",
-        "eslesen": "osteoporoz",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "temd-kirik-riski",
-        "name": "Osteoporoz Kırık Riski Kategorisi (TEMD)",
-        "eslesen": "osteoporoz",
-        "kaynak": "kavram"
-      }
-    ],
     "endokrinoloji/erkek-osteoporozu-testosteron": [
       {
         "slug": "dxa-skoru",
@@ -5156,6 +5161,48 @@
         "eslesen": "DKA ve HHS"
       }
     ],
+    "egfr": [
+      {
+        "yol": "nefroloji/akut-bobrek-hasari",
+        "baslik": "Akut Böbrek Hasarı (ABH)",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "endokrinoloji/erkek-osteoporozu-ana-sayfa",
+        "baslik": "Erkek Osteoporozu",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "kardiyoloji/aprocitentan-direncli-hipertansiyon",
+        "baslik": "Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "enfeksiyon/linezolid-vankomisin-tdm-rehberi",
+        "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "gogus/sarkoidoz-hiperkalsemi",
+        "baslik": "Sarkoidozda Kalsiyum Metabolizması ve Böbrek Tutulumu",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "journal-club/iptacopan-igan-faz3",
+        "baslik": "Nefroloji-NEJM: APPLAUSE-IgAN Faz 3 ve İptacopan",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "klinik-nutrisyon/klinik-nutrisyon-ana-unite",
+        "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar",
+        "eslesen": "eGFR"
+      },
+      {
+        "yol": "onkoloji/buprenorfin-rotasyonu-ve-induksiyon",
+        "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması",
+        "eslesen": "eGFR"
+      }
+    ],
     "tft": [
       {
         "yol": "endokrinoloji/hipertiroidi",
@@ -5223,48 +5270,6 @@
         "yol": "endokrinoloji/hiperparatiroidizm",
         "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları",
         "eslesen": "Kalsiyum/Kreatinin Klirens Oranı"
-      }
-    ],
-    "egfr": [
-      {
-        "yol": "nefroloji/akut-bobrek-hasari",
-        "baslik": "Akut Böbrek Hasarı (ABH)",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "endokrinoloji/hiperparatiroidizm",
-        "baslik": "Hiperparatiroidizm ve Kalsiyum Metabolizması Bozuklukları",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "kardiyoloji/aprocitentan-direncli-hipertansiyon",
-        "baslik": "Aprocitentan: Dirençli Hipertansiyon Tedavisinde Yeni ERA",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "enfeksiyon/linezolid-vankomisin-tdm-rehberi",
-        "baslik": "Kritik Hastada Vankomisin ve Linezolid: Karşılaştırma ve TDM Pratik Rehberi",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "gogus/sarkoidoz-hiperkalsemi",
-        "baslik": "Sarkoidozda Kalsiyum Metabolizması ve Böbrek Tutulumu",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "journal-club/iptacopan-igan-faz3",
-        "baslik": "Nefroloji-NEJM: APPLAUSE-IgAN Faz 3 ve İptacopan",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "klinik-nutrisyon/klinik-nutrisyon-ana-unite",
-        "baslik": "Klinik Nütrisyon: Temel Prensipler ve Uygulamalar",
-        "eslesen": "eGFR"
-      },
-      {
-        "yol": "onkoloji/buprenorfin-rotasyonu-ve-induksiyon",
-        "baslik": "Buprenorfin Rotasyonu ve İndüksiyon Şeması",
-        "eslesen": "eGFR"
       }
     ],
     "makroprolaktin": [
@@ -9273,7 +9278,7 @@
     "arac": 281,
     "araciOlanKonu": 354,
     "konusuOlanArac": 181,
-    "bag": 760,
+    "bag": 761,
     "kavramBag": 607
   }
 }
