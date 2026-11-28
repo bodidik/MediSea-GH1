@@ -644,14 +644,14 @@
     ],
     "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi": [
       {
-        "slug": "qsofa",
-        "name": "qSOFA Skoru",
-        "eslesen": "qSOFA Skoru"
-      },
-      {
         "slug": "child-pugh",
         "name": "Child-Pugh Sınıflaması",
         "eslesen": "Child-Pugh"
+      },
+      {
+        "slug": "qsofa",
+        "name": "qSOFA Skoru",
+        "eslesen": "qSOFA"
       },
       {
         "slug": "sofa",
@@ -5838,7 +5838,7 @@
       {
         "yol": "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi",
         "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)",
-        "eslesen": "qSOFA Skoru"
+        "eslesen": "qSOFA"
       }
     ],
     "asit-analizi": [
