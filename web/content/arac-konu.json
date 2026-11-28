@@ -642,31 +642,6 @@
         "kaynak": "kavram"
       }
     ],
-    "gastroenteroloji/ascit-diuretik-tedavisi": [
-      {
-        "slug": "potasyum-replasman",
-        "name": "Potasyum Replasmanı",
-        "eslesen": "Potasyum Replasmanı"
-      },
-      {
-        "slug": "asit-analizi",
-        "name": "Asit Sıvısı Analizi",
-        "eslesen": "sirotik asit",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "child-pugh",
-        "name": "Child-Pugh Sınıflaması",
-        "eslesen": "sirotik",
-        "kaynak": "kavram"
-      },
-      {
-        "slug": "meld-na",
-        "name": "MELD-Na Skoru",
-        "eslesen": "sirotik",
-        "kaynak": "kavram"
-      }
-    ],
     "gastroenteroloji/ascit-enfeksiyonu-antibiyotik-tedavisi": [
       {
         "slug": "qsofa",
@@ -3532,6 +3507,26 @@
         "kaynak": "kavram"
       }
     ],
+    "gastroenteroloji/ascit-diuretik-tedavisi": [
+      {
+        "slug": "asit-analizi",
+        "name": "Asit Sıvısı Analizi",
+        "eslesen": "sirotik asit",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "child-pugh",
+        "name": "Child-Pugh Sınıflaması",
+        "eslesen": "sirotik",
+        "kaynak": "kavram"
+      },
+      {
+        "slug": "meld-na",
+        "name": "MELD-Na Skoru",
+        "eslesen": "sirotik",
+        "kaynak": "kavram"
+      }
+    ],
     "gastroenteroloji/ascit-yonetimi": [
       {
         "slug": "asit-analizi",
@@ -5452,11 +5447,6 @@
         "eslesen": "Potasyum Replasmanı"
       },
       {
-        "yol": "gastroenteroloji/ascit-diuretik-tedavisi",
-        "baslik": "Sirotik Asitte Diüretik Tedavisi: Titrasyon, İzlem ve Komplikasyon Yönetimi",
-        "eslesen": "Potasyum Replasmanı"
-      },
-      {
         "yol": "endokrinoloji/men1-osilodrostat-mineralokortikoid",
         "baslik": "Osilodrostat: Mineralokortikoid Yan Etkileri ve Yönetim Stratejisi",
         "eslesen": "Potasyum Replasmanı"
@@ -5480,6 +5470,11 @@
       {
         "yol": "endokrinoloji/siadh-tedavi-protokolleri",
         "baslik": "Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü",
+        "eslesen": "Potasyum Replasmanı"
+      },
+      {
+        "yol": "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma",
+        "baslik": "Şiddetli Cushing Sendromu (SCS): İleri Yönetim",
         "eslesen": "Potasyum Replasmanı"
       }
     ],
@@ -9278,7 +9273,7 @@
     "arac": 281,
     "araciOlanKonu": 354,
     "konusuOlanArac": 181,
-    "bag": 761,
+    "bag": 760,
     "kavramBag": 607
   }
 }
