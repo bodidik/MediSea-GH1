@@ -80,7 +80,7 @@ if (process.argv.includes("--negatif")) {
 
 const kapi = process.argv.includes("--kapi");
 const kok = git(["rev-parse", "--show-toplevel"]).trim();
-const aralik = kapi ? ["diff", "--name-only", "--diff-filter=AM", "HEAD~1", "HEAD"] : ["diff", "--cached", "--name-only", "--diff-filter=AM"];
+const aralik = kapi ? ["-c", "core.quotepath=false", "diff", "--name-only", "--diff-filter=AM", "HEAD~1", "HEAD"] : ["-c", "core.quotepath=false", "diff", "--cached", "--name-only", "--diff-filter=AM"];
 if (kapi && git(["rev-parse", "--verify", "HEAD~1"], true) === null) {
   console.log("updatedat-denetim: HEAD~1 yok (sığ checkout) — atlandı");
   process.exit(0);
