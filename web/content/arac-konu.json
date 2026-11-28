@@ -667,6 +667,11 @@
     ],
     "gastroenteroloji/ascit-sıvısı": [
       {
+        "slug": "hrs-aki",
+        "name": "Hepatorenal Sendrom (HRS-AKI)",
+        "eslesen": "Hepatorenal Sendrom"
+      },
+      {
         "slug": "child-pugh",
         "name": "Child-Pugh Sınıflaması",
         "eslesen": "Child-Pugh"
@@ -5761,7 +5766,7 @@
       },
       {
         "yol": "gastroenteroloji/ascit-sıvısı",
-        "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri",
+        "baslik": "Sirotik Asit: Patofizyoloji ve Dirençli Asit",
         "eslesen": "Child-Pugh"
       },
       {
@@ -5841,6 +5846,28 @@
         "eslesen": "qSOFA"
       }
     ],
+    "hrs-aki": [
+      {
+        "yol": "gastroenteroloji/ascit-sıvısı",
+        "baslik": "Sirotik Asit: Patofizyoloji ve Dirençli Asit",
+        "eslesen": "Hepatorenal Sendrom"
+      },
+      {
+        "yol": "onkoloji/hepatosellular-karsinom-kapsamli-klinik-rehber",
+        "baslik": "Hepatosellüler Karsinom (HCC): Etiyoloji, Tanı, Evreleme ve Tedavi",
+        "eslesen": "Hepatorenal Sendrom"
+      },
+      {
+        "yol": "gastroenteroloji/karaciger-hastaliklari",
+        "baslik": "Karaciğer ve Safra Yolu Hastalıkları",
+        "eslesen": "Hepatorenal Sendrom"
+      },
+      {
+        "yol": "gastroenteroloji/siroz-ve-komplikasyonlari",
+        "baslik": "Siroz ve Komplikasyonları",
+        "eslesen": "Hepatorenal Sendrom"
+      }
+    ],
     "asit-analizi": [
       {
         "yol": "gastroenteroloji/ascit-sivisi-analizi",
@@ -5855,7 +5882,7 @@
       },
       {
         "yol": "gastroenteroloji/ascit-sıvısı",
-        "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri",
+        "baslik": "Sirotik Asit: Patofizyoloji ve Dirençli Asit",
         "eslesen": "sirotik asit",
         "kaynak": "kavram"
       },
@@ -5870,23 +5897,6 @@
         "baslik": "Asit Sıvısı Enfeksiyonlarında Antibiyotik Tedavisi ve Profilaksi (SBP)",
         "eslesen": "asit sıvı",
         "kaynak": "kavram"
-      }
-    ],
-    "hrs-aki": [
-      {
-        "yol": "gastroenteroloji/karaciger-hastaliklari",
-        "baslik": "Karaciğer ve Safra Yolu Hastalıkları",
-        "eslesen": "Hepatorenal Sendrom"
-      },
-      {
-        "yol": "onkoloji/hepatosellular-karsinom-kapsamli-klinik-rehber",
-        "baslik": "Hepatosellüler Karsinom (HCC): Etiyoloji, Tanı, Evreleme ve Tedavi",
-        "eslesen": "Hepatorenal Sendrom"
-      },
-      {
-        "yol": "gastroenteroloji/siroz-ve-komplikasyonlari",
-        "baslik": "Siroz ve Komplikasyonları",
-        "eslesen": "Hepatorenal Sendrom"
       }
     ],
     "meld-na": [
@@ -5914,7 +5924,7 @@
       },
       {
         "yol": "gastroenteroloji/ascit-sıvısı",
-        "baslik": "Sirotik Asit Patofizyolojisi, Unkomplike ve Dirençli Asit Yönetim Protokolleri",
+        "baslik": "Sirotik Asit: Patofizyoloji ve Dirençli Asit",
         "eslesen": "sirotik",
         "kaynak": "kavram"
       },
@@ -9273,7 +9283,7 @@
     "arac": 281,
     "araciOlanKonu": 354,
     "konusuOlanArac": 181,
-    "bag": 760,
+    "bag": 761,
     "kavramBag": 607
   }
 }
