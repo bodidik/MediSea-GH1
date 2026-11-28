@@ -1511,6 +1511,19 @@
         "eslesen": "LDL Kolesterol Hesaplama"
       }
     ],
+    "kardiyoloji/lipidoloji-statin-karsilastirmasi": [
+      {
+        "slug": "egfr",
+        "name": "eGFR (CKD-EPI 2021)",
+        "eslesen": "eGFR"
+      },
+      {
+        "slug": "ldl-hesaplama",
+        "name": "LDL Kolesterol Hesaplama",
+        "eslesen": "statin kıyas",
+        "kaynak": "kavram"
+      }
+    ],
     "kardiyoloji/statin-intolerans-ezetimibe": [
       {
         "slug": "metabolik-sendrom",
@@ -4506,14 +4519,6 @@
         "slug": "ldl-hesaplama",
         "name": "LDL Kolesterol Hesaplama",
         "eslesen": "lipoprotein",
-        "kaynak": "kavram"
-      }
-    ],
-    "kardiyoloji/lipidoloji-statin-karsilastirmasi": [
-      {
-        "slug": "ldl-hesaplama",
-        "name": "LDL Kolesterol Hesaplama",
-        "eslesen": "statin kıyas",
         "kaynak": "kavram"
       }
     ],
@@ -9273,7 +9278,7 @@
     "arac": 281,
     "araciOlanKonu": 354,
     "konusuOlanArac": 181,
-    "bag": 760,
+    "bag": 761,
     "kavramBag": 607
   }
 }
