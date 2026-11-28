@@ -400,24 +400,6 @@
         "kaynak": "kavram"
       }
     ],
-    "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma": [
-      {
-        "slug": "potasyum-replasman",
-        "name": "Potasyum Replasmanı",
-        "eslesen": "Potasyum Replasmanı"
-      },
-      {
-        "slug": "qtc",
-        "name": "QTc Hesaplayıcı",
-        "eslesen": "QTc"
-      },
-      {
-        "slug": "dst",
-        "name": "Deksametazon Süpresyon Testi (DST)",
-        "eslesen": "Cushing",
-        "kaynak": "kavram"
-      }
-    ],
     "endokrinoloji/tirzepatid-genel-profil": [
       {
         "slug": "anaphylaxis",
@@ -3379,6 +3361,14 @@
         "kaynak": "kavram"
       }
     ],
+    "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma": [
+      {
+        "slug": "dst",
+        "name": "Deksametazon Süpresyon Testi (DST)",
+        "eslesen": "Cushing",
+        "kaynak": "kavram"
+      }
+    ],
     "endokrinoloji/subklinik-tiroid-hastaliklari": [
       {
         "slug": "tft",
@@ -5480,11 +5470,6 @@
       {
         "yol": "endokrinoloji/siadh-tedavi-protokolleri",
         "baslik": "Modül 3: Akut ve Kronik Hiponatremi Yönetimi ve ODS Protokolü",
-        "eslesen": "Potasyum Replasmanı"
-      },
-      {
-        "yol": "endokrinoloji/siddetli-cushing-sendromu-ileri-okuma",
-        "baslik": "Şiddetli Cushing Sendromu (SCS): İleri Yönetim",
         "eslesen": "Potasyum Replasmanı"
       }
     ],
@@ -9288,7 +9273,7 @@
     "arac": 281,
     "araciOlanKonu": 354,
     "konusuOlanArac": 181,
-    "bag": 762,
+    "bag": 760,
     "kavramBag": 607
   }
 }
